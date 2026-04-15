@@ -511,6 +511,155 @@
       .cta-strip p { margin: 0; font-size: 0.95rem; }
       .cta-strip-actions { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
 
+      /* ── Pricing ── */
+      .billing-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 32px;
+      }
+
+      .billing-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--muted);
+        font-family: inherit;
+        font-size: 0.88rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .billing-btn.active {
+        background: rgba(88, 214, 255, 0.1);
+        border-color: rgba(88, 214, 255, 0.4);
+        color: var(--text);
+      }
+
+      .save-badge {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(77, 255, 184, 0.14);
+        border: 1px solid rgba(77, 255, 184, 0.28);
+        color: var(--accent-2);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        align-items: start;
+      }
+
+      .pricing-card {
+        position: relative;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .pricing-card.featured {
+        border-color: rgba(88, 214, 255, 0.35);
+        background: rgba(88, 214, 255, 0.05);
+        box-shadow: var(--glow);
+      }
+
+      .best-value-badge {
+        position: absolute;
+        top: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px 16px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #041117;
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .plan-label {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 14px;
+      }
+
+      .plan-price {
+        margin-bottom: 14px;
+        line-height: 1;
+      }
+
+      .plan-price strong {
+        font-size: 2.6rem;
+        font-weight: 800;
+        color: var(--text);
+      }
+
+      .plan-price em {
+        font-style: normal;
+        color: var(--muted);
+        font-size: 1rem;
+        margin-left: 3px;
+      }
+
+      .plan-desc {
+        font-size: 0.88rem;
+        margin: 0 0 20px;
+        line-height: 1.65;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .plan-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.84rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .plan-features li::before {
+        content: "✓";
+        color: var(--accent-2);
+        font-weight: 700;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      .pricing-card.featured .plan-features li { color: var(--text); }
+
+      .plan-cta {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+      .price-annual { display: none; }
+
       /* ── Footer ── */
       .footer {
         padding: 24px 28px 34px;
@@ -526,7 +675,7 @@
       /* ── Responsive ── */
       @media (max-width: 1080px) {
         .hero { grid-template-columns: 1fr; gap: 40px; padding: 52px 36px 48px; }
-        .steps, .inclusion-grid, .compare-grid { grid-template-columns: 1fr; }
+        .steps, .inclusion-grid, .compare-grid, .pricing-grid { grid-template-columns: 1fr; }
         .detail-block, .detail-block.flip { grid-template-columns: 1fr; direction: ltr; }
         .main { padding: 0 36px 48px; }
         .section-head { flex-direction: column; gap: 12px; }
@@ -559,6 +708,7 @@
             <a href="/">Home</a>
             <a href="/projects/">Technology Solutions</a>
             <a href="/process/" class="active">How It Works</a>
+            <a href="/pricing/">Pricing</a>
             <a href="/reserve/">Silver Reserve</a>
           </div>
           <div>
