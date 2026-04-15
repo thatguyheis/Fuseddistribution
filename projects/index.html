@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fused Technology Solutions | Projects</title>
-    <meta name="description" content="Fused Technology Solutions provides website setup, troubleshooting, delivery integrations, AI systems, automation, and modern technical support for growing businesses." />
+    <title>Custom Web Design for Small Businesses | Fused Technology Solutions</title>
+    <meta name="description" content="Affordable custom web design and development for small businesses. See your site fully built before you pay — hosting, Google Business setup, local SEO, and ongoing management included." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fuseddistribution.com/projects/" />
-    <meta property="og:site_name" content="Fused Direct Distribution" />
-    <meta property="og:title" content="Fused Technology Solutions | Projects" />
-    <meta property="og:description" content="Website builds, delivery integrations, AI systems, and modern technical support for growing businesses." />
+    <meta property="og:site_name" content="Fused Technology Solutions" />
+    <meta property="og:title" content="Custom Web Design for Small Businesses | Fused Technology Solutions" />
+    <meta property="og:description" content="Affordable custom web design for small businesses. See your site built before you commit — hosting, Google Business, local SEO, and ongoing management all included." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Fused Technology Solutions | Projects" />
-    <meta name="twitter:description" content="Website builds, delivery integrations, AI systems, and modern technical support for growing businesses." />
+    <meta name="twitter:title" content="Custom Web Design for Small Businesses | Fused Technology Solutions" />
+    <meta name="twitter:description" content="Affordable custom web design for small businesses. See your site built before you commit — hosting, Google Business, local SEO, and ongoing management all included." />
     <style>
       :root {
         --bg: #07131a;
@@ -602,6 +602,84 @@
         font-size: 0.92rem;
       }
 
+      /* ── Device mockup ── */
+      .device-mockup {
+        display: flex;
+        flex-direction: column;
+        border-radius: 14px;
+        overflow: hidden;
+        background: linear-gradient(145deg, #22252c, #181b21);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow:
+          0 0 0 1px rgba(0, 0, 0, 0.3),
+          0 28px 56px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .device-camera-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9px 0 7px;
+        background: linear-gradient(180deg, #22252c, #1e2128);
+      }
+
+      .device-camera {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, #2e3138, #16181e);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35);
+      }
+
+      .device-screen {
+        margin: 0 8px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      .device-base {
+        height: 22px;
+        background: linear-gradient(180deg, #1e2128, #191c21);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .device-notch {
+        width: 50px;
+        height: 5px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .device-mockup .preview-frame {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        min-height: 460px;
+      }
+
+      /* ── Hover states ── */
+      .card,
+      .service-card,
+      .mini-card,
+      .summary-panel {
+        transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      }
+
+      .card:hover,
+      .service-card:hover,
+      .mini-card:hover,
+      .summary-panel:hover {
+        transform: translateY(-4px);
+        border-color: rgba(88, 214, 255, 0.26);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      }
+
       @media (max-width: 1080px) {
         .hero-grid,
         .two-up,
@@ -789,16 +867,26 @@
                     </p>
                   </div>
                 </div>
-                <div class="preview-frame">
-                  <div class="frame-topbar">
-                    <div class="frame-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="frame-url">fuseddistribution.com/plainsman/</div>
+                <div class="device-mockup">
+                  <div class="device-camera-bar">
+                    <div class="device-camera"></div>
                   </div>
-                  <iframe loading="lazy" title="Plainsman project preview" src="/plainsman/"></iframe>
+                  <div class="device-screen">
+                    <div class="preview-frame">
+                      <div class="frame-topbar">
+                        <div class="frame-dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="frame-url">fuseddistribution.com/plainsman/</div>
+                      </div>
+                      <iframe loading="lazy" title="Restaurant website design for The Plainsman, Vancouver WA" src="/plainsman/"></iframe>
+                    </div>
+                  </div>
+                  <div class="device-base">
+                    <div class="device-notch"></div>
+                  </div>
                 </div>
               </div>
             </article>
@@ -844,16 +932,26 @@
                     </p>
                   </div>
                 </div>
-                <div class="preview-frame">
-                  <div class="frame-topbar">
-                    <div class="frame-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="frame-url">fuseddistribution.com/cascade/</div>
+                <div class="device-mockup">
+                  <div class="device-camera-bar">
+                    <div class="device-camera"></div>
                   </div>
-                  <iframe loading="lazy" title="Cascade project preview" src="/cascade/"></iframe>
+                  <div class="device-screen">
+                    <div class="preview-frame">
+                      <div class="frame-topbar">
+                        <div class="frame-dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="frame-url">fuseddistribution.com/cascade/</div>
+                      </div>
+                      <iframe loading="lazy" title="Auto repair website design for Cascade Collision Repair, Vancouver WA" src="/cascade/"></iframe>
+                    </div>
+                  </div>
+                  <div class="device-base">
+                    <div class="device-notch"></div>
+                  </div>
                 </div>
               </div>
             </article>
