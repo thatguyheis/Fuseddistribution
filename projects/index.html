@@ -422,7 +422,8 @@
 
       .cards,
       .service-grid,
-      .support-grid {
+      .support-grid,
+      .preview-grid {
         display: grid;
         gap: 20px;
       }
@@ -432,17 +433,30 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
       .support-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .card,
       .service-card,
-      .summary-panel {
+      .summary-panel,
+      .project-card,
+      .preview-frame,
+      .mini-card {
         border-radius: 24px;
         border: 1px solid rgba(255, 255, 255, 0.06);
         background: var(--panel);
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      }
+
+      .card,
+      .service-card,
+      .summary-panel,
+      .mini-card {
         padding: 24px;
       }
 
@@ -465,6 +479,110 @@
         line-height: 1.8;
       }
 
+      .project-card {
+        overflow: hidden;
+      }
+
+      .project-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        padding: 26px 26px 14px;
+        align-items: start;
+      }
+
+      .project-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 12px 0 16px;
+      }
+
+      .pill {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .project-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .project-body {
+        display: grid;
+        grid-template-columns: 0.94fr 1.06fr;
+        gap: 22px;
+        padding: 0 26px 26px;
+      }
+
+      .mini-grid {
+        display: grid;
+        gap: 16px;
+        align-content: start;
+      }
+
+      .preview-frame {
+        overflow: hidden;
+        min-height: 420px;
+        background:
+          linear-gradient(180deg, rgba(7, 15, 23, 0.95), rgba(9, 18, 28, 0.9));
+      }
+
+      .frame-topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(7, 15, 23, 0.88);
+      }
+
+      .frame-dots {
+        display: flex;
+        gap: 8px;
+      }
+
+      .frame-dots span {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .frame-dots span:nth-child(1) {
+        background: #ff6f7f;
+      }
+
+      .frame-dots span:nth-child(2) {
+        background: #ffcc66;
+      }
+
+      .frame-dots span:nth-child(3) {
+        background: #4ff7b0;
+      }
+
+      .frame-url {
+        color: rgba(236, 248, 251, 0.74);
+        font-size: 0.86rem;
+        letter-spacing: 0.06em;
+      }
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: 500px;
+        border: 0;
+        background: #09121b;
+      }
+
       .two-up {
         display: grid;
         grid-template-columns: 1.05fr 0.95fr;
@@ -485,12 +603,14 @@
         .cards,
         .service-grid,
         .support-grid,
-        .hero-points {
+        .hero-points,
+        .project-body {
           grid-template-columns: 1fr;
         }
 
         .topbar,
-        .section-head {
+        .section-head,
+        .project-header {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -499,6 +619,12 @@
         .main {
           padding-left: 24px;
           padding-right: 24px;
+        }
+
+        .project-actions {
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
         }
       }
 
@@ -532,6 +658,10 @@
         .screen {
           left: 24px;
           right: 24px;
+        }
+
+        iframe {
+          height: 360px;
         }
       }
     </style>
@@ -599,6 +729,129 @@
       </section>
 
       <main class="main">
+        <section id="portfolio-previews">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Projects</div>
+              <h2>Customer Website Work-Up Previews</h2>
+            </div>
+            <p>
+              These live previews let customers quickly see examples of website work-ups
+              before diving into the full services list.
+            </p>
+          </div>
+
+          <div class="preview-grid">
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <div class="eyebrow">Preview One</div>
+                  <h2>The Plainsman Restaurant</h2>
+                  <div class="project-meta">
+                    <span class="pill">Live Preview</span>
+                    <span class="pill">Restaurant Demo</span>
+                    <span class="pill">Customer Work-Up</span>
+                  </div>
+                  <p>
+                    A polished business page for a restaurant concept, showing how layout,
+                    branding, and messaging can come together in a launch-ready work-up.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a class="btn btn-primary" href="/plainsman/" target="_blank" rel="noreferrer">Open Live Page</a>
+                  <a class="btn btn-secondary" href="/#contact">Request Similar Build</a>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="mini-grid">
+                  <div class="mini-card">
+                    <span>Purpose</span>
+                    <h3>Visual Demo</h3>
+                    <p>
+                      Useful for showing how a brand-specific restaurant page can look before
+                      a customer commits to a full build.
+                    </p>
+                  </div>
+                  <div class="mini-card">
+                    <span>What It Shows</span>
+                    <h3>Design + Messaging</h3>
+                    <p>
+                      This preview demonstrates polished presentation, clear sections, and a
+                      more immersive landing-page feel.
+                    </p>
+                  </div>
+                </div>
+                <div class="preview-frame">
+                  <div class="frame-topbar">
+                    <div class="frame-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="frame-url">fuseddistribution.com/plainsman/</div>
+                  </div>
+                  <iframe loading="lazy" title="Plainsman project preview" src="/plainsman/"></iframe>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <div class="eyebrow">Preview Two</div>
+                  <h2>Cascade Collision Repair</h2>
+                  <div class="project-meta">
+                    <span class="pill">Live Preview</span>
+                    <span class="pill">Service Business</span>
+                    <span class="pill">Customer Work-Up</span>
+                  </div>
+                  <p>
+                    A conversion-focused example for a local service business, showing how a
+                    work-up can be tailored to a different industry while keeping a premium feel.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a class="btn btn-primary" href="/cascade/" target="_blank" rel="noreferrer">Open Live Page</a>
+                  <a class="btn btn-secondary" href="/#contact">Talk About A Build</a>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="mini-grid">
+                  <div class="mini-card">
+                    <span>Purpose</span>
+                    <h3>Industry Flexibility</h3>
+                    <p>
+                      Shows that the same design system can support service businesses with a
+                      more operational and trust-focused message.
+                    </p>
+                  </div>
+                  <div class="mini-card">
+                    <span>What It Shows</span>
+                    <h3>Conversion Direction</h3>
+                    <p>
+                      This preview highlights how a work-up can be shaped to feel stronger,
+                      clearer, and more action-oriented for a local business.
+                    </p>
+                  </div>
+                </div>
+                <div class="preview-frame">
+                  <div class="frame-topbar">
+                    <div class="frame-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="frame-url">fuseddistribution.com/cascade/</div>
+                  </div>
+                  <iframe loading="lazy" title="Cascade project preview" src="/cascade/"></iframe>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section>
           <div class="section-head">
             <div>
