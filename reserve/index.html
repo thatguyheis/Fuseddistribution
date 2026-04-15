@@ -120,15 +120,40 @@
       .nav {
         display: flex;
         align-items: center;
-        gap: 26px;
+        gap: 14px;
+        flex-wrap: wrap;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 0.95rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+      }
+
+      .nav-pages,
+      .nav-sections {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(242, 198, 109, 0.18);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .nav-sections {
+        opacity: 0.88;
       }
 
       .nav a {
+        font-size: 0.95rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
         color: rgba(245, 247, 251, 0.85);
+      }
+
+      .nav-pages a {
+        padding: 9px 14px;
+        border-radius: 999px;
       }
 
       .nav a:hover,
@@ -634,13 +659,18 @@
           <span class="brand-mark">Fused Reserve</span>
         </a>
         <nav class="nav" aria-label="Primary navigation">
-          <a href="/">Home</a>
-          <a href="/projects/">Projects</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#plans">Plans</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#inventory">Inventory</a>
-          <a href="#join">Join</a>
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <a href="/projects/">Projects</a>
+            <a href="/reserve/">Silver</a>
+          </div>
+          <div class="nav-sections">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#plans">Plans</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#inventory">Inventory</a>
+            <a href="#join">Join</a>
+          </div>
         </nav>
         <div class="status-chip">Silver-first memberships</div>
       </header>
