@@ -1,3 +1,23 @@
+const SECURITY_HEADERS = {
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+  "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+  "Content-Security-Policy":
+    "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; frame-ancestors 'self'"
+};
+
+function withSecurityHeaders(response) {
+  const r = new Response(response.body, response);
+  for (const [k, v] of Object.entries(SECURITY_HEADERS)) {
+    r.headers.set(k, v);
+  }
+  return r;
+}
+
+const BLOCKED_PREFIXES = ["/.git", "/src/", "/node_modules/", "/wrangler.jsonc", "/cloudflare-upload/"];
+
 async function sendLeadToWebhook(payload, env) {
   const response = await fetch(env.LEAD_WEBHOOK_URL, {
     method: "POST",
@@ -116,10 +136,14 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (url.pathname === "/api/lead" && request.method === "POST") {
-      return handleLead(request, env);
+    if (BLOCKED_PREFIXES.some(p => url.pathname.startsWith(p))) {
+      return withSecurityHeaders(new Response("Not found.", { status: 404 }));
     }
 
-    return env.ASSETS.fetch(request);
+    if (url.pathname === "/api/lead" && request.method === "POST") {
+      return withSecurityHeaders(await handleLead(request, env));
+    }
+
+    return withSecurityHeaders(await env.ASSETS.fetch(request));
   }
 };
