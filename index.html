@@ -523,6 +523,83 @@
         color: var(--muted);
       }
 
+      .lead-form {
+        display: grid;
+        gap: 14px;
+        margin-top: 22px;
+      }
+
+      .lead-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .lead-field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .lead-field label {
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(239, 252, 255, 0.78);
+      }
+
+      .lead-field input,
+      .lead-field textarea {
+        width: 100%;
+        padding: 14px 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(97, 255, 215, 0.24);
+        background: rgba(7, 15, 23, 0.74);
+        color: var(--text);
+        font: inherit;
+        resize: vertical;
+      }
+
+      .lead-field input::placeholder,
+      .lead-field textarea::placeholder {
+        color: rgba(183, 212, 217, 0.5);
+      }
+
+      .lead-field input:focus,
+      .lead-field textarea:focus {
+        outline: 2px solid rgba(97, 255, 215, 0.34);
+        border-color: rgba(97, 255, 215, 0.55);
+      }
+
+      .lead-submit {
+        cursor: pointer;
+      }
+
+      .lead-submit[disabled] {
+        opacity: 0.6;
+        cursor: wait;
+      }
+
+      .form-note,
+      .form-status {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+
+      .form-note {
+        color: rgba(183, 212, 217, 0.72);
+      }
+
+      .form-status {
+        min-height: 1.5em;
+        color: var(--accent);
+      }
+
+      .form-status.error {
+        color: #ff8e9f;
+      }
+
       .footer {
         padding: 22px 28px 34px;
         color: rgba(183, 212, 217, 0.7);
@@ -558,7 +635,8 @@
         .cards,
         .process,
         .list-grid,
-        .stats {
+        .stats,
+        .lead-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -798,18 +876,52 @@
             </section>
 
             <aside class="contact-card" id="contact">
-              <div class="eyebrow">Contact</div>
-              <h2>Start a Direct Supply Conversation</h2>
+              <div class="eyebrow">Get Started</div>
+              <h2>Tell Us What You Need</h2>
               <p>
-                Use this area for inquiry details, sales outreach, quote requests, or a
-                simple embedded contact form in the next version.
+                Share a few details about your product, sourcing needs, or buyer request.
+                We will review it and reach out directly.
               </p>
-              <ul class="contact-list">
-                <li>Sales: sales@fuseddirectdistribution.com</li>
-                <li>Phone: (800) 555-0147</li>
-                <li>Hours: Monday to Friday, 8:00 AM to 6:00 PM</li>
-                <li>Coverage: Nationwide sourcing and logistics support</li>
-              </ul>
+              <form class="lead-form" id="lead-form">
+                <div class="lead-grid">
+                  <div class="lead-field">
+                    <label for="lead-name">Name</label>
+                    <input id="lead-name" name="name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div class="lead-field">
+                    <label for="lead-company">Company</label>
+                    <input id="lead-company" name="company" type="text" placeholder="Company name" />
+                  </div>
+                </div>
+                <div class="lead-grid">
+                  <div class="lead-field">
+                    <label for="lead-email">Email</label>
+                    <input id="lead-email" name="email" type="email" placeholder="name@company.com" required />
+                  </div>
+                  <div class="lead-field">
+                    <label for="lead-phone">Phone</label>
+                    <input id="lead-phone" name="phone" type="tel" placeholder="Best number to reach you" />
+                  </div>
+                </div>
+                <div class="lead-field">
+                  <label for="lead-message">How Can We Help?</label>
+                  <textarea
+                    id="lead-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us what you are looking for, what you sell, or what kind of support you need."
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn btn-primary lead-submit" id="lead-submit" type="submit">
+                  Send Request
+                </button>
+                <p class="form-note">
+                  Your contact information stays private on the site and is sent through a
+                  secure server-side endpoint.
+                </p>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+              </form>
             </aside>
           </div>
         </section>
@@ -819,5 +931,53 @@
         Fused Direct Distribution template. Built as a customizable HTML landing page.
       </footer>
     </div>
+    <script>
+      const leadForm = document.getElementById("lead-form");
+      const leadSubmit = document.getElementById("lead-submit");
+      const formStatus = document.getElementById("form-status");
+
+      if (leadForm && leadSubmit && formStatus) {
+        leadForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          formStatus.textContent = "Sending your request...";
+          formStatus.classList.remove("error");
+          leadSubmit.disabled = true;
+
+          const formData = new FormData(leadForm);
+          const payload = {
+            name: String(formData.get("name") || "").trim(),
+            company: String(formData.get("company") || "").trim(),
+            email: String(formData.get("email") || "").trim(),
+            phone: String(formData.get("phone") || "").trim(),
+            message: String(formData.get("message") || "").trim()
+          };
+
+          try {
+            const response = await fetch("/api/lead", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(payload)
+            });
+
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+              throw new Error(result.error || "We could not send your request right now.");
+            }
+
+            formStatus.textContent = "Thanks. Your request was sent successfully.";
+            leadForm.reset();
+          } catch (error) {
+            formStatus.textContent = error.message || "We could not send your request right now.";
+            formStatus.classList.add("error");
+          } finally {
+            leadSubmit.disabled = false;
+          }
+        });
+      }
+    </script>
   </body>
 </html>
