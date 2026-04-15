@@ -529,6 +529,10 @@
         margin-top: 22px;
       }
 
+      .lead-form.hidden {
+        display: none;
+      }
+
       .lead-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -598,6 +602,29 @@
 
       .form-status.error {
         color: #ff8e9f;
+      }
+
+      .thank-you {
+        display: none;
+        margin-top: 22px;
+        padding: 22px;
+        border: 1px solid rgba(97, 255, 215, 0.24);
+        border-radius: 20px;
+        background: rgba(97, 255, 215, 0.08);
+      }
+
+      .thank-you.visible {
+        display: block;
+      }
+
+      .thank-you h3 {
+        margin-bottom: 10px;
+        color: var(--text);
+      }
+
+      .thank-you p {
+        margin: 0;
+        color: var(--muted);
       }
 
       .footer {
@@ -922,6 +949,10 @@
                 </p>
                 <p class="form-status" id="form-status" aria-live="polite"></p>
               </form>
+              <div class="thank-you" id="thank-you" aria-live="polite">
+                <h3>Thank You</h3>
+                <p>Your request has been received. Someone from Fused Distribution will reach out to you soon.</p>
+              </div>
             </aside>
           </div>
         </section>
@@ -935,11 +966,13 @@
       const leadForm = document.getElementById("lead-form");
       const leadSubmit = document.getElementById("lead-submit");
       const formStatus = document.getElementById("form-status");
+      const thankYou = document.getElementById("thank-you");
 
-      if (leadForm && leadSubmit && formStatus) {
+      if (leadForm && leadSubmit && formStatus && thankYou) {
         leadForm.addEventListener("submit", async (event) => {
           event.preventDefault();
 
+          thankYou.classList.remove("visible");
           formStatus.textContent = "Sending your request...";
           formStatus.classList.remove("error");
           leadSubmit.disabled = true;
@@ -968,8 +1001,10 @@
               throw new Error(result.error || "We could not send your request right now.");
             }
 
-            formStatus.textContent = "Thanks. Your request was sent successfully.";
+            formStatus.textContent = "";
             leadForm.reset();
+            leadForm.classList.add("hidden");
+            thankYou.classList.add("visible");
           } catch (error) {
             formStatus.textContent = error.message || "We could not send your request right now.";
             formStatus.classList.add("error");
