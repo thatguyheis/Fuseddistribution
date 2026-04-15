@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fused Technology Solutions | Projects</title>
+    <title>Fused Technology Solutions</title>
     <meta
       name="description"
-      content="Fused Technology Solutions is the umbrella portfolio hub for live Fused branches, product sites, and launch-ready business pages."
+      content="Fused Technology Solutions provides website setup, troubleshooting, delivery integrations, AI systems, automation, and modern technical support for growing businesses."
     />
     <style>
       :root {
@@ -57,7 +57,7 @@
       }
 
       .shell {
-        width: min(1240px, calc(100% - 32px));
+        width: min(1220px, calc(100% - 32px));
         margin: 18px auto 40px;
         border-radius: 28px;
         overflow: hidden;
@@ -421,38 +421,33 @@
       }
 
       .cards,
-      .project-grid {
+      .service-grid,
+      .support-grid {
         display: grid;
         gap: 20px;
       }
 
-      .cards {
+      .cards,
+      .service-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .project-grid {
-        grid-template-columns: 1fr;
+      .support-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .card,
-      .project-card,
-      .summary-panel,
-      .preview-frame,
-      .mini-card {
+      .service-card,
+      .summary-panel {
         border-radius: 24px;
         border: 1px solid rgba(255, 255, 255, 0.06);
         background: var(--panel);
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-      }
-
-      .card,
-      .summary-panel,
-      .mini-card {
         padding: 24px;
       }
 
       .card span,
-      .mini-card span {
+      .service-card span {
         display: inline-block;
         margin-bottom: 12px;
         color: var(--accent);
@@ -462,128 +457,19 @@
         text-transform: uppercase;
       }
 
-      .project-card {
-        overflow: hidden;
-      }
-
-      .project-header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 24px;
-        padding: 26px 26px 14px;
-        align-items: start;
-      }
-
-      .project-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 12px 0 16px;
-      }
-
-      .pill {
-        padding: 8px 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(88, 214, 255, 0.18);
-        background: rgba(88, 214, 255, 0.08);
-        color: rgba(236, 248, 251, 0.88);
-        font-size: 0.78rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .project-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .project-body {
-        display: grid;
-        grid-template-columns: 0.94fr 1.06fr;
-        gap: 22px;
-        padding: 0 26px 26px;
-      }
-
-      .mini-grid {
-        display: grid;
-        gap: 16px;
-        align-content: start;
-      }
-
-      .preview-frame {
-        overflow: hidden;
-        min-height: 420px;
-        background:
-          linear-gradient(180deg, rgba(7, 15, 23, 0.95), rgba(9, 18, 28, 0.9));
-      }
-
-      .frame-topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 14px 18px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        background: rgba(7, 15, 23, 0.88);
-      }
-
-      .frame-dots {
-        display: flex;
-        gap: 8px;
-      }
-
-      .frame-dots span {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      .frame-dots span:nth-child(1) {
-        background: #ff6f7f;
-      }
-
-      .frame-dots span:nth-child(2) {
-        background: #ffcc66;
-      }
-
-      .frame-dots span:nth-child(3) {
-        background: #4ff7b0;
-      }
-
-      .frame-url {
-        color: rgba(236, 248, 251, 0.74);
-        font-size: 0.86rem;
-        letter-spacing: 0.06em;
-      }
-
-      iframe {
-        display: block;
-        width: 100%;
-        height: 500px;
-        border: 0;
-        background: #09121b;
-      }
-
-      .summary-panel p {
-        margin: 0;
-      }
-
-      .issue-list {
-        margin: 18px 0 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        gap: 12px;
-      }
-
-      .issue-list li {
-        padding: 14px 16px;
-        border-radius: 16px;
-        border: 1px solid rgba(88, 214, 255, 0.12);
-        background: rgba(255, 255, 255, 0.03);
+      .service-card ul,
+      .summary-panel ul {
+        margin: 14px 0 0;
+        padding-left: 18px;
         color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .two-up {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 22px;
+        margin-top: 28px;
       }
 
       .footer {
@@ -595,15 +481,16 @@
 
       @media (max-width: 1080px) {
         .hero-grid,
+        .two-up,
         .cards,
-        .hero-points,
-        .project-body {
+        .service-grid,
+        .support-grid,
+        .hero-points {
           grid-template-columns: 1fr;
         }
 
         .topbar,
-        .section-head,
-        .project-header {
+        .section-head {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -612,12 +499,6 @@
         .main {
           padding-left: 24px;
           padding-right: 24px;
-        }
-
-        .project-actions {
-          width: 100%;
-          flex-direction: row;
-          flex-wrap: wrap;
         }
       }
 
@@ -652,10 +533,6 @@
           left: 24px;
           right: 24px;
         }
-
-        iframe {
-          height: 360px;
-        }
       }
     </style>
   </head>
@@ -670,7 +547,7 @@
           <div class="nav-pages">
             <a href="/">Home</a>
             <a class="active" href="/projects/">Projects</a>
-            <a href="/reserve/">Silver</a>
+            <a href="/reserve/">Silver Reserve</a>
           </div>
           <div class="nav-actions">
             <a class="nav-cta" href="/#contact">Get Started</a>
@@ -681,29 +558,30 @@
       <section class="hero">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">Umbrella Platform</div>
-            <h1>Fused Technology Solutions Organizes Every Fused Branch Under One Future-Ready Portfolio Layer.</h1>
+            <div class="eyebrow">Technology Services</div>
+            <h1>Fused Technology Solutions Helps Businesses Build, Fix, Connect, And Automate The Systems That Keep Them Moving.</h1>
             <p>
-              This projects page now acts as the technology hub for Fused Direct Distribution.
-              It is the place where separate offers, branches, and business-specific websites
-              can live under one parent system while still feeling distinct and launch-ready.
+              Fused Technology Solutions is the service layer inside the Fused ecosystem.
+              We help businesses launch websites, fix technical problems, connect ordering
+              and delivery systems, and bring AI and automation into real-world operations
+              without making the process feel overwhelming.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#live-projects">View Live Branches</a>
-              <a class="btn btn-secondary" href="/#contact">Launch A New Branch</a>
+              <a class="btn btn-primary" href="#services">View Services</a>
+              <a class="btn btn-secondary" href="/#contact">Talk To Fused</a>
             </div>
             <div class="hero-points">
               <div class="point">
-                <strong>Multi-Brand</strong>
-                <span>One umbrella for product lines, campaigns, and standalone branch sites.</span>
+                <strong>Build</strong>
+                <span>Website setup, launch support, and digital foundations for growing businesses.</span>
               </div>
               <div class="point">
-                <strong>Live Portfolio</strong>
-                <span>Every project can stay visible, active, and easy to share from one hub.</span>
+                <strong>Connect</strong>
+                <span>Delivery platforms, ordering tools, automation flows, and system integrations.</span>
               </div>
               <div class="point">
-                <strong>Fast Expansion</strong>
-                <span>Future pages can slot into the same structure without rebuilding the system.</span>
+                <strong>Improve</strong>
+                <span>Troubleshooting, operational clean-up, and practical AI integration.</span>
               </div>
             </div>
           </div>
@@ -724,252 +602,215 @@
         <section>
           <div class="section-head">
             <div>
-              <div class="eyebrow">System View</div>
-              <h2>How This Branch Structure Works</h2>
+              <div class="eyebrow">Service Model</div>
+              <h2>Technology Support That Covers The Full Stack Of Everyday Business Needs</h2>
             </div>
             <p>
-              Fused Direct Distribution stays as the main umbrella, while Fused Technology
-              Solutions becomes the staging layer for future verticals, demos, and productized
-              branch websites.
+              This page is focused on services. Fused Technology Solutions exists to support
+              businesses with the technical setup, repair, and system integration work that
+              often slows growth down.
             </p>
           </div>
 
           <div class="cards">
             <article class="card">
-              <span>Umbrella Brand</span>
-              <h3>Fused Direct Distribution</h3>
+              <span>Launch Support</span>
+              <h3>Build the digital foundation correctly from the start</h3>
               <p>
-                The main site remains the anchor brand, with shared navigation, lead capture,
-                and portfolio access across the whole Fused ecosystem.
+                We help set up websites, landing pages, contact flows, and essential
+                business systems so new initiatives launch with fewer weak points.
               </p>
             </article>
             <article class="card">
-              <span>Technology Layer</span>
-              <h3>Fused Technology Solutions</h3>
+              <span>Operational Support</span>
+              <h3>Fix friction across the systems people use every day</h3>
               <p>
-                This hub organizes active projects and creates the framework for future
-                branches, offers, and client-facing launch pages under one structure.
+                From broken flows to disconnected tools, we troubleshoot operational issues
+                and tighten up the handoff between platforms.
               </p>
             </article>
             <article class="card">
-              <span>Future Branches</span>
-              <h3>Expandable Product Network</h3>
+              <span>Future Systems</span>
+              <h3>Layer in AI and automation where it creates real value</h3>
               <p>
-                New verticals can be added as live routes, each with their own look, message,
-                and conversion flow while still living under the parent system.
+                We focus on practical implementation, not hype, so AI and automation become
+                useful business tools instead of distracting add-ons.
               </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="services">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Core Services</div>
+              <h2>What Fused Technology Solutions Can Help With</h2>
+            </div>
+            <p>
+              The goal is to support businesses with both immediate technical fixes and
+              longer-term infrastructure improvements.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span>Websites</span>
+              <h3>Website setup and launch support</h3>
+              <ul>
+                <li>Static sites, landing pages, and business page setup</li>
+                <li>Domain and Cloudflare configuration</li>
+                <li>Contact forms, lead capture, and webhook routing</li>
+                <li>Navigation, conversion flow, and page structure cleanup</li>
+                <li>Ongoing content updates and page additions</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span>Troubleshooting</span>
+              <h3>Technical troubleshooting and problem solving</h3>
+              <ul>
+                <li>Fixing broken website behavior and deploy issues</li>
+                <li>Cleaning up confusing setups and misconfigured systems</li>
+                <li>Diagnosing routing, form, and integration problems</li>
+                <li>Improving reliability across small business tech stacks</li>
+                <li>Reducing friction in day-to-day digital operations</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span>Delivery Systems</span>
+              <h3>Connection to delivery and ordering services</h3>
+              <ul>
+                <li>Connecting websites to delivery and ordering platforms</li>
+                <li>Supporting restaurant and service-business order flows</li>
+                <li>Linking customer requests into operational systems</li>
+                <li>Helping make third-party service tools work together more cleanly</li>
+                <li>Reducing manual coordination between platforms</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span>AI Integration</span>
+              <h3>AI and technology integration</h3>
+              <ul>
+                <li>AI-assisted workflows for outreach, customer intake, and internal ops</li>
+                <li>Chat, lead qualification, and response handling systems</li>
+                <li>Automation tied to forms, spreadsheets, and notifications</li>
+                <li>Practical AI integration into existing business processes</li>
+                <li>Workflow design that keeps humans in control where needed</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span>Automation</span>
+              <h3>Process automation and business workflow support</h3>
+              <ul>
+                <li>Webhook setup across Cloudflare, Zapier, and Google Sheets</li>
+                <li>Automated lead capture and routing</li>
+                <li>Internal notification and follow-up workflows</li>
+                <li>Reducing repetitive admin tasks with lightweight systems</li>
+                <li>Creating repeatable operational flows for growing teams</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span>Technical Direction</span>
+              <h3>Advising on what to build next</h3>
+              <ul>
+                <li>Choosing simpler tools instead of overcomplicated stacks</li>
+                <li>Planning what should stay manual and what should be automated</li>
+                <li>Structuring new products, pages, and connected technical systems</li>
+                <li>Helping businesses prioritize the next highest-value improvement</li>
+                <li>Making modern technology easier to adopt with confidence</li>
+              </ul>
             </article>
           </div>
         </section>
 
         <section class="two-up">
           <article class="summary-panel">
-            <div class="eyebrow">What This Enables</div>
-            <h2>A cleaner path to many products under one umbrella</h2>
+            <div class="eyebrow">Who It Serves</div>
+            <h2>Built for businesses that need real technical help without a bloated agency process</h2>
             <p>
-              The goal is not just to show a portfolio. It is to build a scalable branch
-              architecture where multiple Fused products can coexist without making the main
-              site feel crowded or confused.
+              Fused Technology Solutions is a good fit for operators, founders, and local
+              businesses that need practical help getting systems running properly.
             </p>
-            <ul class="issue-list">
-              <li>Separate branch pages for different business concepts and target audiences.</li>
-              <li>Shared parent-brand trust while letting each branch keep its own identity.</li>
-              <li>One live hub where future pages can be previewed, reviewed, and launched.</li>
-              <li>Consistent navigation and lead capture across every branch in the network.</li>
+            <ul>
+              <li>Businesses launching a new website or offer</li>
+              <li>Owners dealing with broken or confusing technology setups</li>
+              <li>Teams wanting to connect websites with delivery or order platforms</li>
+              <li>Businesses exploring AI without wanting to overcomplicate operations</li>
+              <li>Operators who need a technical partner that can both build and troubleshoot</li>
             </ul>
           </article>
 
           <article class="summary-panel">
-            <div class="eyebrow">Portfolio Logic</div>
-            <h2>Projects Page As A Launch Deck</h2>
+            <div class="eyebrow">Approach</div>
+            <h2>Technology that feels useful, not inflated</h2>
             <p>
-              Instead of acting like a flat archive, this page works like a launch deck for the
-              Fused umbrella. Every card below is a live route, a visual proof point, and a slot
-              for future expansion.
+              The focus is on clarity, practical implementation, and systems that actually
+              help the business run better. That means fewer vague promises and more direct
+              support around the exact tools and processes that matter.
             </p>
+            <ul>
+              <li>Clear setup and cleaner structure</li>
+              <li>Fast troubleshooting when something is off</li>
+              <li>Integration work that reduces handoffs and manual work</li>
+              <li>Automation that supports people rather than replacing judgment</li>
+              <li>Technology decisions tied to operations, not just appearance</li>
+            </ul>
           </article>
         </section>
 
-        <section id="live-projects">
+        <section>
           <div class="section-head">
             <div>
-              <div class="eyebrow">Live Branches</div>
-              <h2>Current Fused Technology Solutions Portfolio</h2>
+              <div class="eyebrow">Additional Support</div>
+              <h2>More Ways Fused Can Help</h2>
             </div>
             <p>
-              These are the current live branches and demo pages under the Fused umbrella.
-              Each preview is embedded directly so the portfolio feels active and current.
+              These supporting services often sit alongside website work and systems setup.
             </p>
           </div>
 
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-header">
-                <div>
-                  <div class="eyebrow">Branch One</div>
-                  <h2>Fused Reserve</h2>
-                  <div class="project-meta">
-                    <span class="pill">Live Preview</span>
-                    <span class="pill">Silver Brand</span>
-                    <span class="pill">Subscription Concept</span>
-                  </div>
-                  <p>
-                    A premium silver-first branch showing how a specialized offer can live under
-                    the larger Fused structure while keeping its own tone and market focus.
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a class="btn btn-primary" href="/reserve/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Build Similar Branch</a>
-                </div>
-              </div>
-
-              <div class="project-body">
-                <div class="mini-grid">
-                  <div class="mini-card">
-                    <span>Use Case</span>
-                    <h3>Independent Product Branch</h3>
-                    <p>
-                      Ideal for offers that need their own audience, visuals, and messaging while
-                      still remaining part of the Fused network.
-                    </p>
-                  </div>
-                  <div class="mini-card">
-                    <span>Value</span>
-                    <h3>Branch-Specific Identity</h3>
-                    <p>
-                      Demonstrates how future products can feel standalone without fragmenting the
-                      parent brand.
-                    </p>
-                  </div>
-                </div>
-                <div class="preview-frame">
-                  <div class="frame-topbar">
-                    <div class="frame-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="frame-url">fuseddistribution.com/reserve/</div>
-                  </div>
-                  <iframe loading="lazy" title="Fused Reserve project preview" src="/reserve/"></iframe>
-                </div>
-              </div>
+          <div class="support-grid">
+            <article class="summary-panel">
+              <h3>Content And Structure</h3>
+              <p>
+                Rewriting page copy, clarifying messaging, improving layouts, and helping
+                pages feel more intentional and easier to navigate.
+              </p>
             </article>
 
-            <article class="project-card">
-              <div class="project-header">
-                <div>
-                  <div class="eyebrow">Branch Two</div>
-                  <h2>The Plainsman Restaurant</h2>
-                  <div class="project-meta">
-                    <span class="pill">Live Preview</span>
-                    <span class="pill">Local Business</span>
-                    <span class="pill">Restaurant Demo</span>
-                  </div>
-                  <p>
-                    A business-specific sample page showing how Fused Technology Solutions can
-                    build polished standalone pages for local brands and targeted outreach.
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a class="btn btn-primary" href="/plainsman/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Launch A Demo Like This</a>
-                </div>
-              </div>
-
-              <div class="project-body">
-                <div class="mini-grid">
-                  <div class="mini-card">
-                    <span>Use Case</span>
-                    <h3>Vertical-Specific Demo</h3>
-                    <p>
-                      Good for showing prospects what a tailored business page can look like
-                      before a live engagement starts.
-                    </p>
-                  </div>
-                  <div class="mini-card">
-                    <span>Value</span>
-                    <h3>Portfolio Proof</h3>
-                    <p>
-                      Adds industry range to the Fused umbrella while keeping the experience
-                      curated and consistent.
-                    </p>
-                  </div>
-                </div>
-                <div class="preview-frame">
-                  <div class="frame-topbar">
-                    <div class="frame-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="frame-url">fuseddistribution.com/plainsman/</div>
-                  </div>
-                  <iframe loading="lazy" title="Plainsman project preview" src="/plainsman/"></iframe>
-                </div>
-              </div>
+            <article class="summary-panel">
+              <h3>Lead Handling</h3>
+              <p>
+                Form flows, private intake systems, spreadsheet routing, and lightweight
+                CRM-style workflows that keep leads organized without heavy software.
+              </p>
             </article>
 
-            <article class="project-card">
-              <div class="project-header">
-                <div>
-                  <div class="eyebrow">Branch Three</div>
-                  <h2>Cascade Collision Repair</h2>
-                  <div class="project-meta">
-                    <span class="pill">Live Preview</span>
-                    <span class="pill">Service Business</span>
-                    <span class="pill">Conversion Page</span>
-                  </div>
-                  <p>
-                    A conversion-oriented project page for a collision repair business, showing
-                    how the umbrella can support both product branches and local-service launches.
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a class="btn btn-primary" href="/cascade/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Add Another Vertical</a>
-                </div>
-              </div>
+            <article class="summary-panel">
+              <h3>Platform Cleanup</h3>
+              <p>
+                Simplifying fragmented setups where too many disconnected tools create
+                confusion, duplication, or unnecessary maintenance.
+              </p>
+            </article>
 
-              <div class="project-body">
-                <div class="mini-grid">
-                  <div class="mini-card">
-                    <span>Use Case</span>
-                    <h3>Local Service Launch Page</h3>
-                    <p>
-                      A strong example of how service-business pages can live in the same
-                      framework without feeling generic.
-                    </p>
-                  </div>
-                  <div class="mini-card">
-                    <span>Value</span>
-                    <h3>Scalable Vertical Range</h3>
-                    <p>
-                      Confirms that the Fused umbrella can handle more than one category while
-                      still presenting a unified technology layer.
-                    </p>
-                  </div>
-                </div>
-                <div class="preview-frame">
-                  <div class="frame-topbar">
-                    <div class="frame-dots">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="frame-url">fuseddistribution.com/cascade/</div>
-                  </div>
-                  <iframe loading="lazy" title="Cascade project preview" src="/cascade/"></iframe>
-                </div>
-              </div>
+            <article class="summary-panel">
+              <h3>Ongoing Iteration</h3>
+              <p>
+                Adding new pages, expanding services, improving workflows, and evolving the
+                technical system over time as the business grows.
+              </p>
             </article>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        Fused Technology Solutions projects hub. Built to organize live branches, product demos, and future Fused launches.
+        Fused Technology Solutions. Website setup, troubleshooting, delivery integrations, AI systems, and practical business technology support.
       </footer>
     </div>
   </body>
