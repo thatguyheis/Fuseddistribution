@@ -3,39 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fused Distribution | Projects</title>
+    <title>Fused Technology Solutions | Projects</title>
     <meta
       name="description"
-      content="Explore active Fused Distribution project pages and live landing page previews."
+      content="Fused Technology Solutions is the umbrella portfolio hub for live Fused branches, product sites, and launch-ready business pages."
     />
     <style>
       :root {
-        --bg: #07111a;
-        --bg-soft: #0d1b27;
-        --panel: rgba(10, 20, 30, 0.78);
-        --panel-strong: rgba(8, 15, 24, 0.92);
-        --line: rgba(93, 255, 221, 0.22);
-        --text: #eefcff;
-        --muted: #b7d4d9;
-        --accent: #61ffd7;
-        --accent-2: #83b7ff;
-        --glow: 0 0 30px rgba(97, 255, 215, 0.18);
+        --bg: #07131a;
+        --bg-soft: #0d1f29;
+        --panel: rgba(11, 24, 32, 0.82);
+        --panel-strong: rgba(9, 18, 24, 0.94);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+        --glow: 0 0 34px rgba(88, 214, 255, 0.18);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
-        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         background:
-          radial-gradient(circle at 20% 18%, rgba(91, 255, 214, 0.12), transparent 28%),
-          radial-gradient(circle at 82% 14%, rgba(131, 183, 255, 0.1), transparent 24%),
-          radial-gradient(circle at 50% 55%, rgba(193, 92, 255, 0.08), transparent 32%),
-          linear-gradient(180deg, #051019 0%, #07111a 45%, #04090f 100%);
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
       }
 
       body::before {
@@ -43,8 +46,8 @@
         position: fixed;
         inset: 0;
         background:
-          linear-gradient(115deg, rgba(97, 255, 215, 0.08), transparent 30%, transparent 60%, rgba(131, 183, 255, 0.06)),
-          repeating-linear-gradient(90deg, transparent 0, transparent 79px, rgba(97, 255, 215, 0.03) 80px);
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
         pointer-events: none;
       }
 
@@ -55,12 +58,12 @@
 
       .shell {
         width: min(1240px, calc(100% - 32px));
-        margin: 20px auto 48px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 26px;
+        margin: 18px auto 40px;
+        border-radius: 28px;
         overflow: hidden;
-        background: linear-gradient(180deg, rgba(9, 18, 28, 0.95), rgba(5, 12, 18, 0.94));
-        box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
         position: relative;
       }
 
@@ -69,14 +72,14 @@
         position: absolute;
         inset: 0;
         background:
-          radial-gradient(circle at 65% 18%, rgba(97, 255, 215, 0.13), transparent 18%),
-          radial-gradient(circle at 20% 48%, rgba(176, 92, 255, 0.08), transparent 26%);
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
         pointer-events: none;
       }
 
       .topbar,
       .hero,
-      .content,
+      .main,
       .footer {
         position: relative;
         z-index: 1;
@@ -86,10 +89,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 16px;
-        padding: 18px 28px;
-        background: rgba(7, 15, 23, 0.88);
-        backdrop-filter: blur(18px);
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.04);
       }
 
@@ -100,18 +103,19 @@
       }
 
       .brand-mark {
-        font-size: 2rem;
+        color: var(--accent);
+        font-size: 1.95rem;
         font-weight: 900;
         letter-spacing: 0.08em;
-        color: var(--accent);
         text-transform: uppercase;
-        text-shadow: 0 0 18px rgba(97, 255, 215, 0.35);
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
       }
 
       .brand-sub {
-        font-size: 0.72rem;
-        letter-spacing: 0.22em;
-        color: rgba(231, 251, 255, 0.68);
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
         text-transform: uppercase;
       }
 
@@ -133,15 +137,15 @@
       .nav-pages {
         padding: 8px 10px;
         border-radius: 999px;
-        border: 1px solid rgba(97, 255, 215, 0.16);
+        border: 1px solid rgba(88, 214, 255, 0.18);
         background: rgba(7, 15, 23, 0.56);
       }
 
       .nav a {
+        font-size: 0.95rem;
         font-weight: 700;
-        letter-spacing: 0.04em;
-        color: rgba(239, 252, 255, 0.9);
-        transition: color 0.2s ease, text-shadow 0.2s ease;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
       }
 
       .nav-pages a {
@@ -153,7 +157,6 @@
       .nav a:focus-visible,
       .nav a.active {
         color: var(--accent);
-        text-shadow: 0 0 12px rgba(97, 255, 215, 0.35);
       }
 
       .nav-cta {
@@ -163,27 +166,33 @@
         min-width: 160px;
         padding: 12px 18px;
         border-radius: 14px;
-        border: 1px solid rgba(97, 255, 215, 0.38);
-        color: var(--text);
-        background: rgba(97, 255, 215, 0.08);
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
       }
 
       .hero {
-        padding: 72px 54px 26px;
+        padding: 70px 54px 44px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 28px;
+        align-items: center;
       }
 
       .eyebrow {
         display: inline-block;
-        margin-bottom: 18px;
         padding: 8px 14px;
-        border: 1px solid var(--line);
         border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
         color: var(--accent);
         font-size: 0.82rem;
-        font-weight: 700;
-        letter-spacing: 0.15em;
+        font-weight: 800;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
-        background: rgba(97, 255, 215, 0.08);
       }
 
       h1,
@@ -196,75 +205,261 @@
       }
 
       h1 {
-        max-width: 900px;
-        font-size: clamp(2.8rem, 6vw, 5.2rem);
-        line-height: 1.02;
+        margin-top: 18px;
+        font-size: clamp(2.8rem, 6vw, 5.1rem);
+        line-height: 0.98;
       }
 
       p {
         color: var(--muted);
-        line-height: 1.6;
-      }
-
-      .hero-copy {
-        max-width: 930px;
+        line-height: 1.72;
       }
 
       .hero-copy p {
-        max-width: 760px;
-        margin-top: 18px;
-        font-size: 1.18rem;
+        max-width: 720px;
+        margin: 18px 0 0;
+        font-size: 1.14rem;
       }
 
-      .hero-stats {
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: var(--glow);
+      }
+
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(88, 214, 255, 0.05);
+      }
+
+      .hero-points {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin-top: 34px;
+        gap: 14px;
+        margin-top: 26px;
       }
 
-      .hero-stat,
-      .project-card,
-      .preview-frame,
-      .mini-card {
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 24px;
-        background: var(--panel);
-        backdrop-filter: blur(12px);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      .point {
+        padding: 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.03);
       }
 
-      .hero-stat {
-        padding: 20px;
-      }
-
-      .hero-stat strong {
+      .point strong {
         display: block;
-        margin-bottom: 8px;
-        color: var(--text);
-        font-size: 1.8rem;
+        font-size: 1.1rem;
       }
 
-      .content {
-        padding: 8px 54px 54px;
+      .point span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.5;
       }
 
-      .section-heading {
+      .hero-visual {
+        position: relative;
+        min-height: 460px;
+        border-radius: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background:
+          radial-gradient(circle at center, rgba(88, 214, 255, 0.18), transparent 24%),
+          linear-gradient(145deg, rgba(17, 31, 40, 0.94), rgba(8, 17, 24, 0.98));
+        overflow: hidden;
+      }
+
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 24px;
+        border-radius: 24px;
+        border: 1px solid rgba(88, 214, 255, 0.16);
+      }
+
+      .screen,
+      .node,
+      .beam,
+      .signal {
+        position: absolute;
+      }
+
+      .screen {
+        top: 64px;
+        left: 56px;
+        right: 56px;
+        height: 170px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background:
+          linear-gradient(180deg, rgba(88, 214, 255, 0.1), rgba(77, 255, 184, 0.04)),
+          rgba(4, 13, 18, 0.88);
+        box-shadow: inset 0 0 28px rgba(88, 214, 255, 0.08);
+      }
+
+      .screen::before,
+      .screen::after {
+        content: "";
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        height: 10px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(88, 214, 255, 0.2), rgba(77, 255, 184, 0.34), transparent);
+      }
+
+      .screen::before {
+        top: 28px;
+      }
+
+      .screen::after {
+        top: 54px;
+      }
+
+      .node {
+        width: 92px;
+        height: 92px;
+        border-radius: 24px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: linear-gradient(145deg, rgba(88, 214, 255, 0.18), rgba(77, 255, 184, 0.05));
+        box-shadow: 0 0 26px rgba(88, 214, 255, 0.12);
+      }
+
+      .node.a {
+        left: 46px;
+        bottom: 64px;
+      }
+
+      .node.b {
+        left: 188px;
+        bottom: 42px;
+      }
+
+      .node.c {
+        right: 52px;
+        bottom: 74px;
+      }
+
+      .beam {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(88, 214, 255, 0.64), transparent);
+        box-shadow: 0 0 14px rgba(88, 214, 255, 0.24);
+      }
+
+      .beam.one {
+        width: 58%;
+        left: 20%;
+        top: 250px;
+      }
+
+      .beam.two {
+        width: 44%;
+        left: 24%;
+        top: 312px;
+        transform: rotate(14deg);
+      }
+
+      .signal {
+        top: 36px;
+        right: 42px;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        border: 1px solid rgba(77, 255, 184, 0.18);
+        box-shadow: inset 0 0 22px rgba(77, 255, 184, 0.1);
+      }
+
+      .signal::before,
+      .signal::after {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        border: 1px solid rgba(77, 255, 184, 0.2);
+      }
+
+      .signal::after {
+        inset: 28px;
+      }
+
+      .main {
+        padding: 0 54px 60px;
+      }
+
+      .section-head {
         display: flex;
-        align-items: end;
         justify-content: space-between;
+        align-items: end;
         gap: 24px;
-        margin: 30px 0 22px;
+        margin: 42px 0 22px;
       }
 
-      .section-heading p {
-        max-width: 520px;
+      .section-head p {
+        max-width: 580px;
         margin: 0;
       }
 
-      .projects-grid {
+      .cards,
+      .project-grid {
         display: grid;
-        gap: 22px;
+        gap: 20px;
+      }
+
+      .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card,
+      .project-card,
+      .summary-panel,
+      .preview-frame,
+      .mini-card {
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      }
+
+      .card,
+      .summary-panel,
+      .mini-card {
+        padding: 24px;
+      }
+
+      .card span,
+      .mini-card span {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
       }
 
       .project-card {
@@ -275,7 +470,7 @@
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 24px;
-        padding: 26px 26px 12px;
+        padding: 26px 26px 14px;
         align-items: start;
       }
 
@@ -289,9 +484,9 @@
       .pill {
         padding: 8px 12px;
         border-radius: 999px;
-        border: 1px solid var(--line);
-        background: rgba(97, 255, 215, 0.08);
-        color: rgba(239, 252, 255, 0.88);
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
         font-size: 0.78rem;
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -304,39 +499,9 @@
         gap: 12px;
       }
 
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 20px;
-        border-radius: 14px;
-        border: 1px solid transparent;
-        font-weight: 800;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-      }
-
-      .btn:hover,
-      .btn:focus-visible {
-        transform: translateY(-1px);
-      }
-
-      .btn-primary {
-        background: linear-gradient(135deg, var(--accent), #2ec3ff);
-        color: #031018;
-        box-shadow: var(--glow);
-      }
-
-      .btn-secondary {
-        border-color: var(--line);
-        background: rgba(97, 255, 215, 0.05);
-        color: var(--text);
-      }
-
       .project-body {
         display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
+        grid-template-columns: 0.94fr 1.06fr;
         gap: 22px;
         padding: 0 26px 26px;
       }
@@ -345,15 +510,6 @@
         display: grid;
         gap: 16px;
         align-content: start;
-      }
-
-      .mini-card {
-        padding: 18px;
-      }
-
-      .mini-card h3 {
-        margin-bottom: 10px;
-        font-size: 1.2rem;
       }
 
       .preview-frame {
@@ -397,7 +553,7 @@
       }
 
       .frame-url {
-        color: rgba(239, 252, 255, 0.74);
+        color: rgba(236, 248, 251, 0.74);
         font-size: 0.86rem;
         letter-spacing: 0.06em;
       }
@@ -410,21 +566,52 @@
         background: #09121b;
       }
 
+      .summary-panel p {
+        margin: 0;
+      }
+
+      .issue-list {
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 12px;
+      }
+
+      .issue-list li {
+        padding: 14px 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.12);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--muted);
+      }
+
       .footer {
-        padding: 22px 28px 34px;
-        color: rgba(183, 212, 217, 0.7);
-        font-size: 0.92rem;
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
         text-align: center;
+        font-size: 0.92rem;
       }
 
       @media (max-width: 1080px) {
-        .project-body,
-        .project-header,
-        .section-heading,
-        .topbar {
+        .hero-grid,
+        .cards,
+        .hero-points,
+        .project-body {
           grid-template-columns: 1fr;
+        }
+
+        .topbar,
+        .section-head,
+        .project-header {
           flex-direction: column;
           align-items: flex-start;
+        }
+
+        .hero,
+        .main {
+          padding-left: 24px;
+          padding-right: 24px;
         }
 
         .project-actions {
@@ -432,29 +619,38 @@
           flex-direction: row;
           flex-wrap: wrap;
         }
-
-        .hero-stats {
-          grid-template-columns: 1fr;
-        }
       }
 
-      @media (max-width: 720px) {
+      @media (max-width: 680px) {
         .shell {
           width: calc(100% - 16px);
-          margin: 8px auto 24px;
-          border-radius: 20px;
+          margin: 8px auto 18px;
+          border-radius: 22px;
         }
 
-        .topbar,
-        .hero,
-        .content {
-          padding-left: 20px;
-          padding-right: 20px;
+        .hero {
+          padding-top: 44px;
         }
 
-        .nav {
-          flex-wrap: wrap;
-          gap: 14px;
+        h1 {
+          font-size: 2.45rem;
+        }
+
+        .hero-copy p {
+          font-size: 1rem;
+        }
+
+        .topbar {
+          padding: 16px;
+        }
+
+        .hero-visual {
+          min-height: 380px;
+        }
+
+        .screen {
+          left: 24px;
+          right: 24px;
         }
 
         iframe {
@@ -466,9 +662,9 @@
   <body>
     <div class="shell">
       <header class="topbar">
-        <a class="brand" href="/" aria-label="Fused Distribution home">
+        <a class="brand" href="/">
           <span class="brand-mark">Fused</span>
-          <span class="brand-sub">Direct Distribution</span>
+          <span class="brand-sub">Technology Solutions</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <div class="nav-pages">
@@ -483,50 +679,134 @@
       </header>
 
       <section class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow">Active Portfolio</div>
-          <h1>Live Fused Project Pages Built For Outreach, Conversion, And Fast Customization.</h1>
-          <p>
-            This portfolio route gives prospects a fast way to see landing-page work in motion.
-            Each project card links to a live page and includes an embedded preview so the
-            portfolio feels active, current, and production-ready.
-          </p>
-        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Umbrella Platform</div>
+            <h1>Fused Technology Solutions Organizes Every Fused Branch Under One Future-Ready Portfolio Layer.</h1>
+            <p>
+              This projects page now acts as the technology hub for Fused Direct Distribution.
+              It is the place where separate offers, branches, and business-specific websites
+              can live under one parent system while still feeling distinct and launch-ready.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#live-projects">View Live Branches</a>
+              <a class="btn btn-secondary" href="/#contact">Launch A New Branch</a>
+            </div>
+            <div class="hero-points">
+              <div class="point">
+                <strong>Multi-Brand</strong>
+                <span>One umbrella for product lines, campaigns, and standalone branch sites.</span>
+              </div>
+              <div class="point">
+                <strong>Live Portfolio</strong>
+                <span>Every project can stay visible, active, and easy to share from one hub.</span>
+              </div>
+              <div class="point">
+                <strong>Fast Expansion</strong>
+                <span>Future pages can slot into the same structure without rebuilding the system.</span>
+              </div>
+            </div>
+          </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong>2</strong>
-            <p>Live project pages currently published and ready to share.</p>
-          </div>
-          <div class="hero-stat">
-            <strong>Rapid</strong>
-            <p>New client pages can be cloned, tailored, and deployed quickly.</p>
-          </div>
-          <div class="hero-stat">
-            <strong>Direct</strong>
-            <p>Every portfolio page can route traffic into the same private lead workflow.</p>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="screen"></div>
+            <div class="signal"></div>
+            <div class="beam one"></div>
+            <div class="beam two"></div>
+            <div class="node a"></div>
+            <div class="node b"></div>
+            <div class="node c"></div>
           </div>
         </div>
       </section>
 
-      <main class="content">
+      <main class="main">
         <section>
-          <div class="section-heading">
+          <div class="section-head">
             <div>
-              <div class="eyebrow">Portfolio Grid</div>
-              <h2>Current Projects</h2>
+              <div class="eyebrow">System View</div>
+              <h2>How This Branch Structure Works</h2>
             </div>
             <p>
-              Use this hub as a simple project selector for sales demos, outreach campaigns,
-              and future client showcases.
+              Fused Direct Distribution stays as the main umbrella, while Fused Technology
+              Solutions becomes the staging layer for future verticals, demos, and productized
+              branch websites.
             </p>
           </div>
 
-          <div class="projects-grid">
+          <div class="cards">
+            <article class="card">
+              <span>Umbrella Brand</span>
+              <h3>Fused Direct Distribution</h3>
+              <p>
+                The main site remains the anchor brand, with shared navigation, lead capture,
+                and portfolio access across the whole Fused ecosystem.
+              </p>
+            </article>
+            <article class="card">
+              <span>Technology Layer</span>
+              <h3>Fused Technology Solutions</h3>
+              <p>
+                This hub organizes active projects and creates the framework for future
+                branches, offers, and client-facing launch pages under one structure.
+              </p>
+            </article>
+            <article class="card">
+              <span>Future Branches</span>
+              <h3>Expandable Product Network</h3>
+              <p>
+                New verticals can be added as live routes, each with their own look, message,
+                and conversion flow while still living under the parent system.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="two-up">
+          <article class="summary-panel">
+            <div class="eyebrow">What This Enables</div>
+            <h2>A cleaner path to many products under one umbrella</h2>
+            <p>
+              The goal is not just to show a portfolio. It is to build a scalable branch
+              architecture where multiple Fused products can coexist without making the main
+              site feel crowded or confused.
+            </p>
+            <ul class="issue-list">
+              <li>Separate branch pages for different business concepts and target audiences.</li>
+              <li>Shared parent-brand trust while letting each branch keep its own identity.</li>
+              <li>One live hub where future pages can be previewed, reviewed, and launched.</li>
+              <li>Consistent navigation and lead capture across every branch in the network.</li>
+            </ul>
+          </article>
+
+          <article class="summary-panel">
+            <div class="eyebrow">Portfolio Logic</div>
+            <h2>Projects Page As A Launch Deck</h2>
+            <p>
+              Instead of acting like a flat archive, this page works like a launch deck for the
+              Fused umbrella. Every card below is a live route, a visual proof point, and a slot
+              for future expansion.
+            </p>
+          </article>
+        </section>
+
+        <section id="live-projects">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Live Branches</div>
+              <h2>Current Fused Technology Solutions Portfolio</h2>
+            </div>
+            <p>
+              These are the current live branches and demo pages under the Fused umbrella.
+              Each preview is embedded directly so the portfolio feels active and current.
+            </p>
+          </div>
+
+          <div class="project-grid">
             <article class="project-card">
               <div class="project-header">
                 <div>
-                  <div class="eyebrow">Project Zero</div>
+                  <div class="eyebrow">Branch One</div>
                   <h2>Fused Reserve</h2>
                   <div class="project-meta">
                     <span class="pill">Live Preview</span>
@@ -534,31 +814,32 @@
                     <span class="pill">Subscription Concept</span>
                   </div>
                   <p>
-                    A polished silver-first brand page focused on memberships, inventory
-                    flexibility, and premium positioning. This route gives the site a
-                    dedicated branch for the precious-metals concept.
+                    A premium silver-first branch showing how a specialized offer can live under
+                    the larger Fused structure while keeping its own tone and market focus.
                   </p>
                 </div>
                 <div class="project-actions">
                   <a class="btn btn-primary" href="/reserve/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Ask About This Build</a>
+                  <a class="btn btn-secondary" href="/#contact">Build Similar Branch</a>
                 </div>
               </div>
 
               <div class="project-body">
                 <div class="mini-grid">
                   <div class="mini-card">
-                    <h3>Use Case</h3>
+                    <span>Use Case</span>
+                    <h3>Independent Product Branch</h3>
                     <p>
-                      Premium concept page for a silver subscription and sourcing brand,
-                      built to look distinct while still fitting into the Fused network.
+                      Ideal for offers that need their own audience, visuals, and messaging while
+                      still remaining part of the Fused network.
                     </p>
                   </div>
                   <div class="mini-card">
-                    <h3>Why It Matters</h3>
+                    <span>Value</span>
+                    <h3>Branch-Specific Identity</h3>
                     <p>
-                      Shows how the portfolio can support standalone brand branches with
-                      their own offer, audience, and visual tone.
+                      Demonstrates how future products can feel standalone without fragmenting the
+                      parent brand.
                     </p>
                   </div>
                 </div>
@@ -579,39 +860,40 @@
             <article class="project-card">
               <div class="project-header">
                 <div>
-                  <div class="eyebrow">Project One</div>
+                  <div class="eyebrow">Branch Two</div>
                   <h2>The Plainsman Restaurant</h2>
                   <div class="project-meta">
                     <span class="pill">Live Preview</span>
-                    <span class="pill">Sales Landing Page</span>
-                    <span class="pill">Direct Outreach</span>
+                    <span class="pill">Local Business</span>
+                    <span class="pill">Restaurant Demo</span>
                   </div>
                   <p>
-                    A live restaurant showcase page for The Plainsman, demonstrating how
-                    Fused can build polished, business-specific landing pages that still
-                    fit into one active portfolio system.
+                    A business-specific sample page showing how Fused Technology Solutions can
+                    build polished standalone pages for local brands and targeted outreach.
                   </p>
                 </div>
                 <div class="project-actions">
                   <a class="btn btn-primary" href="/plainsman/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Build One Like This</a>
+                  <a class="btn btn-secondary" href="/#contact">Launch A Demo Like This</a>
                 </div>
               </div>
 
               <div class="project-body">
                 <div class="mini-grid">
                   <div class="mini-card">
-                    <h3>Use Case</h3>
+                    <span>Use Case</span>
+                    <h3>Vertical-Specific Demo</h3>
                     <p>
-                      Restaurant landing page built as a high-touch sample, showing how a
-                      local business can get a premium web presence quickly.
+                      Good for showing prospects what a tailored business page can look like
+                      before a live engagement starts.
                     </p>
                   </div>
                   <div class="mini-card">
-                    <h3>Preview Style</h3>
+                    <span>Value</span>
+                    <h3>Portfolio Proof</h3>
                     <p>
-                      Embedded live frame below shows the project in real time, turning the
-                      portfolio into a working demonstration instead of a static gallery.
+                      Adds industry range to the Fused umbrella while keeping the experience
+                      curated and consistent.
                     </p>
                   </div>
                 </div>
@@ -632,39 +914,40 @@
             <article class="project-card">
               <div class="project-header">
                 <div>
-                  <div class="eyebrow">Project Two</div>
+                  <div class="eyebrow">Branch Three</div>
                   <h2>Cascade Collision Repair</h2>
                   <div class="project-meta">
                     <span class="pill">Live Preview</span>
-                    <span class="pill">Local Business Demo</span>
+                    <span class="pill">Service Business</span>
                     <span class="pill">Conversion Page</span>
                   </div>
                   <p>
-                    A bold conversion-focused project page for a collision repair client,
-                    showing how the portfolio can expand beyond one industry while keeping a
-                    premium presentation.
+                    A conversion-oriented project page for a collision repair business, showing
+                    how the umbrella can support both product branches and local-service launches.
                   </p>
                 </div>
                 <div class="project-actions">
                   <a class="btn btn-primary" href="/cascade/" target="_blank" rel="noreferrer">Open Live Page</a>
-                  <a class="btn btn-secondary" href="/#contact">Request A Custom Build</a>
+                  <a class="btn btn-secondary" href="/#contact">Add Another Vertical</a>
                 </div>
               </div>
 
               <div class="project-body">
                 <div class="mini-grid">
                   <div class="mini-card">
-                    <h3>Use Case</h3>
+                    <span>Use Case</span>
+                    <h3>Local Service Launch Page</h3>
                     <p>
-                      Industry-specific landing page built to look polished and immediately
-                      credible for a local service business.
+                      A strong example of how service-business pages can live in the same
+                      framework without feeling generic.
                     </p>
                   </div>
                   <div class="mini-card">
-                    <h3>Portfolio Value</h3>
+                    <span>Value</span>
+                    <h3>Scalable Vertical Range</h3>
                     <p>
-                      Shows range across business types while still feeling curated under the
-                      same Fused portfolio system.
+                      Confirms that the Fused umbrella can handle more than one category while
+                      still presenting a unified technology layer.
                     </p>
                   </div>
                 </div>
@@ -686,7 +969,7 @@
       </main>
 
       <footer class="footer">
-        Fused Distribution projects hub. Built to showcase live client-facing pages in one place.
+        Fused Technology Solutions projects hub. Built to organize live branches, product demos, and future Fused launches.
       </footer>
     </div>
   </body>
