@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education | Books, Coaching & Training | Fused Technology Solutions</title>
+    <meta name="description" content="Learn alongside Fused — coming soon books on wealth and technology, plus group coaching and 1:1 sessions available alongside your Technology Solutions subscription." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fuseddistribution.com/education/" />
+    <meta property="og:site_name" content="Fused Technology Solutions" />
+    <meta property="og:title" content="Education | Books, Coaching & Training | Fused" />
+    <meta property="og:description" content="Coming soon books on wealth and technology, plus group coaching and 1:1 sessions available through Fused Technology Solutions." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Education | Fused Technology Solutions" />
+    <meta name="twitter:description" content="Coming soon books on wealth and technology, plus group coaching and 1:1 sessions available through Fused Technology Solutions." />
+    <style>
+      :root {
+        --bg: #07131a;
+        --bg-soft: #0d1f29;
+        --panel: rgba(11, 24, 32, 0.82);
+        --panel-strong: rgba(9, 18, 24, 0.94);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+        --gold: #f5c842;
+        --gold-dim: rgba(245, 200, 66, 0.14);
+        --glow: 0 0 34px rgba(88, 214, 255, 0.18);
+        --glow-gold: 0 0 40px rgba(245, 200, 66, 0.14);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .hero, .main, .footer { position: relative; z-index: 1; }
+
+      /* ── Nav ── */
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      /* ── Hero ── */
+      .hero {
+        padding: 70px 54px 54px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0 auto 18px;
+        max-width: 820px;
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.02;
+      }
+
+      h2 {
+        margin: 0;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 1.35rem;
+      }
+
+      p { margin: 0; color: var(--muted); line-height: 1.75; }
+
+      .hero-sub {
+        max-width: 580px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      /* ── Main ── */
+      .main { padding: 60px 54px 72px; }
+
+      /* ── Section head ── */
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 24px;
+        margin-bottom: 32px;
+      }
+
+      .section-head p {
+        max-width: 500px;
+        margin: 0;
+        font-size: 0.96rem;
+      }
+
+      .section-divider {
+        height: 1px;
+        background: var(--line);
+        margin: 60px 0;
+      }
+
+      /* ── Book card ── */
+      .book-card {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 40px;
+        align-items: start;
+        padding: 40px;
+        border-radius: 26px;
+        border: 1px solid rgba(245, 200, 66, 0.2);
+        background: linear-gradient(145deg, rgba(245, 200, 66, 0.04), rgba(7, 15, 23, 0.9));
+        box-shadow: var(--glow-gold);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .book-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 8% 12%, rgba(245, 200, 66, 0.08), transparent 38%);
+        pointer-events: none;
+      }
+
+      /* ── Book spine visual ── */
+      .book-cover {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 300px;
+        background: linear-gradient(160deg, #1a1200, #0d0900);
+        border: 1px solid rgba(245, 200, 66, 0.3);
+        box-shadow:
+          6px 6px 0 rgba(0,0,0,0.5),
+          0 0 40px rgba(245, 200, 66, 0.1);
+      }
+
+      .book-cover-inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 28px 20px;
+        text-align: center;
+        gap: 14px;
+      }
+
+      .book-icon {
+        font-size: 2.2rem;
+        line-height: 1;
+      }
+
+      .book-cover-title {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.15rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--gold);
+        line-height: 1.2;
+        text-shadow: 0 0 20px rgba(245, 200, 66, 0.4);
+      }
+
+      .book-cover-sub {
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(245, 200, 66, 0.55);
+      }
+
+      .book-cover-footer {
+        padding: 14px 20px;
+        border-top: 1px solid rgba(245, 200, 66, 0.15);
+        background: rgba(245, 200, 66, 0.05);
+        text-align: center;
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(245, 200, 66, 0.45);
+      }
+
+      /* ── Book content ── */
+      .book-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .book-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .badge {
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .badge-coming {
+        border: 1px solid rgba(245, 200, 66, 0.36);
+        background: rgba(245, 200, 66, 0.1);
+        color: var(--gold);
+      }
+
+      .badge-genre {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--muted);
+      }
+
+      .book-title {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        line-height: 1.05;
+        color: var(--text);
+      }
+
+      .book-title span {
+        color: var(--gold);
+        text-shadow: 0 0 24px rgba(245, 200, 66, 0.3);
+      }
+
+      .book-blurb {
+        font-size: 0.97rem;
+        line-height: 1.8;
+        color: var(--muted);
+        border-left: 2px solid rgba(245, 200, 66, 0.3);
+        padding-left: 18px;
+      }
+
+      .book-themes {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .theme-pill {
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.03);
+        font-size: 0.8rem;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+
+      .theme-pill strong {
+        display: block;
+        color: var(--text);
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+        margin-bottom: 2px;
+      }
+
+      .book-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      /* ── Coaching grid ── */
+      .coaching-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+      }
+
+      .coaching-card {
+        padding: 32px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel);
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      }
+
+      .coaching-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(88, 214, 255, 0.26);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+      }
+
+      .coaching-card.featured {
+        border-color: rgba(88, 214, 255, 0.28);
+        background: linear-gradient(160deg, rgba(88, 214, 255, 0.06), rgba(88, 214, 255, 0.02));
+        box-shadow: var(--glow);
+      }
+
+      .coaching-label {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .coaching-price {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        line-height: 1;
+      }
+
+      .coaching-price strong {
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: var(--text);
+      }
+
+      .coaching-price em {
+        font-style: normal;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .coaching-included {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(77, 255, 184, 0.08);
+        border: 1px solid rgba(77, 255, 184, 0.22);
+        color: var(--accent-2);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .coaching-desc {
+        font-size: 0.94rem;
+        line-height: 1.72;
+        flex-grow: 1;
+      }
+
+      .coaching-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .coaching-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.86rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .coaching-list li::before {
+        content: "✓";
+        color: var(--accent-2);
+        font-weight: 800;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      /* ── Plan note ── */
+      .plan-note {
+        margin-top: 22px;
+        padding: 22px 28px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(7, 15, 23, 0.56);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .plan-note p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .plan-note strong {
+        color: var(--text);
+      }
+
+      /* ── Buttons ── */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: var(--glow);
+      }
+
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(88, 214, 255, 0.05);
+      }
+
+      .btn-gold {
+        color: #1a1000;
+        background: linear-gradient(135deg, var(--gold), #e8a500);
+        box-shadow: var(--glow-gold);
+      }
+
+      .btn-gold-outline {
+        border-color: rgba(245, 200, 66, 0.3);
+        background: rgba(245, 200, 66, 0.06);
+        color: var(--gold);
+      }
+
+      /* ── CTA strip ── */
+      .cta-strip {
+        margin-top: 60px;
+        background: linear-gradient(135deg, rgba(88, 214, 255, 0.07), rgba(77, 255, 184, 0.05));
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        border-radius: 20px;
+        padding: 52px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .cta-strip h2 { font-size: 1.7rem; margin: 0 0 10px; }
+      .cta-strip p { margin: 0; font-size: 0.95rem; }
+      .cta-strip-actions { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
+
+      /* ── Footer ── */
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .footer a { color: inherit; opacity: 0.7; text-decoration: underline; }
+
+      /* ── Responsive ── */
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .hero, .main { padding-left: 26px; padding-right: 26px; }
+        .book-card { grid-template-columns: 1fr; }
+        .book-cover { min-height: 200px; }
+        .book-cover-inner { flex-direction: row; justify-content: flex-start; padding: 20px 24px; }
+        .coaching-grid { grid-template-columns: 1fr; }
+        .section-head { flex-direction: column; align-items: flex-start; }
+        .cta-strip { flex-direction: column; align-items: flex-start; }
+        .plan-note { flex-direction: column; align-items: flex-start; }
+      }
+
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        h1 { font-size: 2.2rem; }
+        .hero { padding: 44px 20px 40px; }
+        .main { padding: 36px 20px 52px; }
+        .book-card { padding: 24px; gap: 24px; }
+        .book-themes { grid-template-columns: 1fr 1fr; }
+        .cta-strip { padding: 36px 24px; }
+        .coaching-card { padding: 24px; }
+        .topbar { padding: 16px 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <a href="/projects/">Technology Solutions</a>
+            <a href="/process/">How It Works</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/faq/">FAQ</a>
+            <a class="active" href="/education/">Education</a>
+            <a href="/reserve/">Silver Reserve</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="eyebrow">Education</div>
+        <h1>Learn. Apply. Build.</h1>
+        <p class="hero-sub">
+          Books, coaching, and training built around real-world technology and financial
+          principles — for people who want to actually understand what they're doing.
+        </p>
+      </section>
+
+      <main class="main">
+
+        <!-- ── Books ── -->
+        <section id="books">
+          <div class="section-head">
+            <div>
+              <div style="display:inline-block;margin-bottom:14px;padding:6px 14px;border-radius:999px;border:1px solid rgba(87,219,255,0.16);background:rgba(88,214,255,0.06);color:var(--accent);font-size:0.76rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;">Books</div>
+              <h2>Coming Soon</h2>
+            </div>
+            <p>Original titles on wealth, technology, and the principles that actually matter — written for the era we're in.</p>
+          </div>
+
+          <div class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-inner">
+                <div class="book-icon">&#9651;</div>
+                <div class="book-cover-title">The Richest Dev in The Valley</div>
+                <div class="book-cover-sub">Five Laws of Bitcoin</div>
+              </div>
+              <div class="book-cover-footer">Coming Soon</div>
+            </div>
+
+            <div class="book-content">
+              <div class="book-badges">
+                <span class="badge badge-coming">Coming Soon</span>
+                <span class="badge badge-genre">Wealth &amp; Finance</span>
+                <span class="badge badge-genre">Bitcoin</span>
+                <span class="badge badge-genre">Modern Parable</span>
+              </div>
+
+              <div class="book-title">The Richest Dev<br><span>in The Valley</span></div>
+
+              <p class="book-blurb">
+                Five thousand years ago, a man named Arkad sat in the city of Babylon and
+                explained, very patiently, why some people get rich and most people don't.
+                Nobody listened then either.<br><br>
+                <em>The Richest Dev in The Valley</em> is that same story, rebuilt from the
+                ground up for the era of Bitcoin, AI agents, DeFi protocols, and gig economy
+                hustle. The rules of wealth haven't changed in five millennia — but the
+                opportunity is right now.
+              </p>
+
+              <div class="book-themes">
+                <div class="theme-pill">
+                  <strong>Archie Musk</strong>
+                  A self-made dev who figured it out the hard way
+                </div>
+                <div class="theme-pill">
+                  <strong>Dazz</strong>
+                  Digging out of $43K in debt one blockchain record at a time
+                </div>
+                <div class="theme-pill">
+                  <strong>Banzar</strong>
+                  A cybersecurity vet who realized firewalls and emergency funds are the same idea
+                </div>
+                <div class="theme-pill">
+                  <strong>Kal B</strong>
+                  Learning the Five Laws of Bitcoin from a man who survived two crypto winters
+                </div>
+                <div class="theme-pill">
+                  <strong>Pay Yourself First</strong>
+                  The oldest rule that still gets ignored
+                </div>
+                <div class="theme-pill">
+                  <strong>The Valley</strong>
+                  Has wealth enough for everyone — the question is whether you know how to hold it
+                </div>
+              </div>
+
+              <div class="book-actions">
+                <a class="btn btn-gold" href="/#contact">Get Notified at Launch</a>
+                <a class="btn btn-gold-outline" href="/#contact">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ── Coaching ── -->
+        <section id="coaching">
+          <div class="section-head">
+            <div>
+              <div style="display:inline-block;margin-bottom:14px;padding:6px 14px;border-radius:999px;border:1px solid rgba(87,219,255,0.16);background:rgba(88,214,255,0.06);color:var(--accent);font-size:0.76rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;">Coaching &amp; Training</div>
+              <h2>Learn Directly from Fused</h2>
+            </div>
+            <p>Group sessions and 1:1 coaching are built into Technology Solutions subscriptions — and available to book independently when you need more time.</p>
+          </div>
+
+          <div class="coaching-grid">
+
+            <!-- Group Coaching -->
+            <div class="coaching-card">
+              <div class="coaching-label">Group Coaching</div>
+              <h3>Shared Sessions.<br>Real Answers.</h3>
+              <p class="coaching-desc">
+                Live group coaching sessions cover practical topics — technology decisions,
+                digital operations, AI tools, and the questions small business owners
+                actually deal with every day. No fluff, no pitch decks.
+              </p>
+              <ul class="coaching-list">
+                <li>Live sessions with direct Q&amp;A</li>
+                <li>Topics drawn from what members are working through</li>
+                <li>Quarterly sessions included in Standard plan</li>
+                <li>Monthly sessions included in Expansion plan</li>
+                <li>Practical focus — real tools, real decisions</li>
+              </ul>
+              <span class="coaching-included">Included in Standard &amp; Expansion</span>
+            </div>
+
+            <!-- 1:1 Session -->
+            <div class="coaching-card featured">
+              <div class="coaching-label">1:1 Session</div>
+              <h3>Dedicated Time.<br>Your Agenda.</h3>
+              <div class="coaching-price">
+                <strong>$150</strong>
+                <em>/ hour</em>
+              </div>
+              <p class="coaching-desc">
+                Book a private session to dig into whatever you're working on — a specific
+                technical problem, a strategy question, an AI workflow you want to build,
+                or a decision you want a second set of eyes on. Fully focused on you.
+              </p>
+              <ul class="coaching-list">
+                <li>One full hour, focused on your specific situation</li>
+                <li>Technical troubleshooting, planning, or system review</li>
+                <li>AI strategy and workflow design</li>
+                <li>Available as a standalone booking or add-on</li>
+                <li>30-min sessions included in Standard plan</li>
+                <li>60-min sessions included in Expansion plan</li>
+              </ul>
+              <a class="btn btn-primary" href="/#contact">Book a Session</a>
+            </div>
+
+          </div>
+
+          <div class="plan-note">
+            <p>
+              <strong>Already a Technology Solutions subscriber?</strong> Group coaching
+              and 1:1 sessions are included in your plan at no additional cost. Additional
+              hours beyond what your plan covers can be booked at <strong>$150/hr</strong>.
+            </p>
+            <a class="btn btn-secondary" href="/pricing/">View Plans</a>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-strip">
+          <div>
+            <h2>Ready to get started?</h2>
+            <p>Whether you want to book a session, get notified when the book drops, or just have a question — reach out directly.</p>
+          </div>
+          <div class="cta-strip-actions">
+            <a class="btn btn-primary" href="/#contact">Talk To Fused</a>
+            <a class="btn btn-secondary" href="/pricing/">See Pricing</a>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        © 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy/">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
