@@ -222,7 +222,7 @@
       /* ── Book card ── */
       .book-card {
         display: grid;
-        grid-template-columns: 220px 1fr;
+        grid-template-columns: 280px 1fr;
         gap: 40px;
         align-items: start;
         padding: 40px;
@@ -242,64 +242,22 @@
         pointer-events: none;
       }
 
-      /* ── Book spine visual ── */
+      /* ── Book cover image ── */
       .book-cover {
         position: relative;
         z-index: 1;
-        display: flex;
-        flex-direction: column;
         border-radius: 10px;
         overflow: hidden;
-        min-height: 300px;
-        background: linear-gradient(160deg, #1a1200, #0d0900);
-        border: 1px solid rgba(245, 200, 66, 0.3);
         box-shadow:
-          6px 6px 0 rgba(0,0,0,0.5),
-          0 0 40px rgba(245, 200, 66, 0.1);
+          8px 8px 0 rgba(0,0,0,0.55),
+          0 0 50px rgba(245, 200, 66, 0.12);
       }
 
-      .book-cover-inner {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 28px 20px;
-        text-align: center;
-        gap: 14px;
-      }
-
-      .book-icon {
-        font-size: 2.2rem;
-        line-height: 1;
-      }
-
-      .book-cover-title {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 1.15rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--gold);
-        line-height: 1.2;
-        text-shadow: 0 0 20px rgba(245, 200, 66, 0.4);
-      }
-
-      .book-cover-sub {
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: rgba(245, 200, 66, 0.55);
-      }
-
-      .book-cover-footer {
-        padding: 14px 20px;
-        border-top: 1px solid rgba(245, 200, 66, 0.15);
-        background: rgba(245, 200, 66, 0.05);
-        text-align: center;
-        font-size: 0.68rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: rgba(245, 200, 66, 0.45);
+      .book-cover img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
       }
 
       /* ── Book content ── */
@@ -657,12 +615,7 @@
 
           <div class="book-card">
             <div class="book-cover">
-              <div class="book-cover-inner">
-                <div class="book-icon">&#9651;</div>
-                <div class="book-cover-title">The Richest Dev in The Valley</div>
-                <div class="book-cover-sub">Five Laws of Bitcoin</div>
-              </div>
-              <div class="book-cover-footer">Coming Soon</div>
+              <img src="/education/book-cover.png" alt="The Richest Dev in The Valley by Archie Musk — book cover" />
             </div>
 
             <div class="book-content">
