@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anoush Deli & International Foods - Vancouver's premier international market and deli. Skip the line with our mobile ordering.">
+    <title>Anoush Deli & International Foods | Skip the Line</title>
+    <style>
+        :root {
+            --bg-body: #080a0c;
+            --bg-panel: #111418;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --text-main: #f8f9fa;
+            --text-muted: #8b949e;
+            --accent: #d4af37;
+            --accent-glow: rgba(212, 175, 55, 0.15);
+            --nav-bg: rgba(8, 10, 12, 0.75);
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Abstract Dynamic Background */
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-body);
+            background-image: 
+                radial-gradient(circle at 100% 150%, var(--bg-panel) 24%, transparent 24%),
+                radial-gradient(circle at 0% 150%, var(--bg-panel) 24%, transparent 24%),
+                radial-gradient(circle at 50% 100%, rgba(212, 175, 55, 0.05) 10%, transparent 50%),
+                linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bg-grid {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            /* Tessellating Honeycomb / Hexagon Pattern */
+            background:
+                radial-gradient(circle farthest-side at 0% 50%, transparent 23.5%, rgba(255,255,255,0.03) 24%, rgba(255,255,255,0.03) 26%, transparent 26.5%) 25px 25.5px,
+                radial-gradient(circle farthest-side at 0% 50%, transparent 23.5%, rgba(255,255,255,0.03) 24%, rgba(255,255,255,0.03) 26%, transparent 26.5%) 75px 75px,
+                radial-gradient(circle farthest-side at 100% 50%, transparent 23.5%, rgba(255,255,255,0.03) 24%, rgba(255,255,255,0.03) 26%, transparent 26.5%) 25px 25.5px,
+                radial-gradient(circle farthest-side at 100% 50%, transparent 23.5%, rgba(255,255,255,0.03) 24%, rgba(255,255,255,0.03) 26%, transparent 26.5%) 75px 75px,
+                linear-gradient(90deg, transparent 48%, rgba(255,255,255,0.03) 49%, rgba(255,255,255,0.03) 51%, transparent 52%) 50px 0,
+                linear-gradient(90deg, transparent 48%, rgba(255,255,255,0.03) 49%, rgba(255,255,255,0.03) 51%, transparent 52%) 100px 50px;
+            background-size: 100px 100px;
+            z-index: -2;
+            opacity: 0.6;
+        }
+        .glow {
+            position: fixed;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px; right: -200px;
+            z-index: -1;
+            filter: blur(40px);
+            animation: pulse 8s infinite alternate;
+        }
+        @keyframes pulse { 0% { opacity: 0.5; transform: scale(1); } 100% { opacity: 1; transform: scale(1.1); } }
+
+        /* Typography */
+        h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; }
+        .eyebrow {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        /* Shell Container */
+        .shell {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 5%;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            padding: 1.5rem 5%;
+            background: var(--nav-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .logo { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 1px; color: var(--accent); text-transform: uppercase; }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a { color: var(--text-main); text-decoration: none; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg-body);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-subtle);
+        }
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 12rem 0 6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); max-width: 800px; }
+        .hero-actions { display: flex; gap: 1rem; }
+
+        /* Complex Grid */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .panel {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .panel-large {
+            aspect-ratio: 16/9;
+        }
+        
+        .panel-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: opacity 0.5s;
+        }
+        .panel-large:hover img { opacity: 1; }
+
+        .panel-list {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .list-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .list-item:last-child { border-bottom: none; }
+        .list-item h3 { font-family: var(--font-body); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .list-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Sections */
+        .content-section {
+            padding: 6rem 0;
+        }
+
+        .section-header { margin-bottom: 3rem; }
+        .section-header h2 { font-size: 2.8rem; }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card-img-wrap {
+            aspect-ratio: 4/3;
+            margin: -2.5rem -2.5rem 2rem -2.5rem;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .card-img-wrap img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+
+        /* Abstract Node Animation */
+        .node-container {
+            position: absolute;
+            top: 20px; right: 20px;
+            width: 60px; height: 60px;
+            display: flex;
+            gap: 8px;
+        }
+        .node {
+            width: 4px; height: 100%;
+            background: var(--accent);
+            opacity: 0.5;
+            animation: pulse-height 1.5s infinite ease-in-out;
+        }
+        .node:nth-child(2) { animation-delay: 0.2s; }
+        .node:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes pulse-height {
+            0%, 100% { transform: scaleY(0.3); }
+            50% { transform: scaleY(1); }
+        }
+
+        footer {
+            width: 100%;
+            padding: 4rem 5%;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            background: var(--bg-panel);
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .hero-top { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+
+    <nav aria-label="Primary">
+        <div class="logo">Anoush</div>
+        <div class="nav-links">
+            <a href="#menu">Daily Menu</a>
+            <a href="#market">The Market</a>
+        </div>
+        <a href="#order" class="btn btn-primary">Start Order</a>
+    </nav>
+
+    <main class="shell">
+        <section class="hero">
+            <div class="hero-top reveal">
+                <div>
+                    <div class="eyebrow">Local. Authentic. Fast.</div>
+                    <h1>The International<br>Market & Deli.</h1>
+                </div>
+                <div class="hero-actions">
+                    <a href="#order" class="btn btn-primary">Mobile Order</a>
+                    <a href="#visit" class="btn btn-secondary">Get Directions</a>
+                </div>
+            </div>
+
+            <div class="hero-grid">
+                <div class="panel panel-large reveal">
+                    <img src="./landscape1.jpg" alt="Interior view of Anoush Deli aisles" width="800" height="450" fetchpriority="high">
+                </div>
+                <div class="panel panel-list reveal" style="transition-delay: 0.1s;">
+                    <div class="list-item">
+                        <h3>Skip the Line</h3>
+                        <p>Order ahead online. Ready in 15 minutes.</p>
+                    </div>
+                    <div class="list-item">
+                        <h3>Fresh Daily</h3>
+                        <p>Authentic recipes, prepared every morning.</p>
+                    </div>
+                    <div class="list-item" style="border:none;">
+                        <h3>Curbside Handoff</h3>
+                        <p>Pull up to Fourth Plain, we bring it to you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="content-section">
+            <div class="section-header reveal">
+                <div class="eyebrow">Featured Selection</div>
+                <h2>The Market Catalog</h2>
+            </div>
+            
+            <div class="cards">
+                <article class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="./detail1.jpg" alt="Fresh deli selections" width="400" height="300" loading="lazy">
+                    </div>
+                    <h3>Fresh Deli Meats</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Premium cuts and authentic international sausages sliced to order.</p>
+                    <a href="#order" style="display:inline-block; margin-top:1.5rem; color:var(--accent); font-weight:600; text-decoration:none; text-transform:uppercase; font-size:0.85rem; letter-spacing:1px;">View Selection &rarr;</a>
+                </article>
+
+                <article class="card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrap">
+                        <img src="./detail2.jpg" alt="Market groceries and imported goods" width="400" height="300" loading="lazy">
+                    </div>
+                    <h3>Imported Groceries</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">A curated selection of hard-to-find international ingredients and pantry staples.</p>
+                    <a href="#market" style="display:inline-block; margin-top:1.5rem; color:var(--accent); font-weight:600; text-decoration:none; text-transform:uppercase; font-size:0.85rem; letter-spacing:1px;">Browse Aisles &rarr;</a>
+                </article>
+
+                <article class="card reveal" style="transition-delay: 0.2s;">
+                    <div class="node-container">
+                        <div class="node"></div><div class="node"></div><div class="node"></div>
+                    </div>
+                    <h3 style="font-size: 2rem; margin-top: 1rem;">Express<br>Pickup</h3>
+                    <p style="color: var(--text-muted); margin-top: 1.5rem;">Our systems are engineered for speed. Place your order on your phone and skip the lunch rush entirely.</p>
+                    <div style="margin-top: 2.5rem;">
+                        <a href="#order" class="btn btn-primary" style="width: 100%; text-align: center;">Start Mobile Order</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2 style="font-family: var(--font-display); color: var(--text-main); margin-bottom: 0.5rem;">Anoush Deli</h2>
+        <address style="font-style: normal; margin-bottom: 1rem;">
+            6808 NE Fourth Plain Blvd, Vancouver, WA 98661<br>
+            <a href="tel:3606934359" style="color: var(--text-muted); text-decoration: none;">(360) 693-4359</a>
+        </address>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-muted);">Prototype conceptualized by Fused Technical Solutions.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.2, 0, 0, 1)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
