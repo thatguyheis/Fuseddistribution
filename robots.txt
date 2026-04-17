@@ -1,5 +1,43 @@
+# Fused Distribution — robots.txt
+# Updated 2026-04-17
+
+# Default: allow all standard crawlers
 User-agent: *
+Allow: /
 Disallow: /api/
+Disallow: /.wrangler/
+Disallow: /cloudflare-upload/
+
+# AI answer engines — explicitly allowed to index and cite
+# (these drive real referral traffic from ChatGPT Search, Perplexity, Claude, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://fuseddistribution.com/sitemap.xml
