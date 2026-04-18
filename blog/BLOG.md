@@ -53,6 +53,36 @@ Copy the structure from `blog/welcome-to-fused/index.html` and update:
 
 ---
 
+## Writing style rules — follow these every post
+
+The goal is to sound like a knowledgeable local person talking to a business owner, not a marketing team or a chatbot.
+
+**Never use em dashes (—).** Use a comma, a period, or rewrite the sentence instead.
+
+**Never use these words or phrases:**
+- leverage, utilize, streamline, robust, seamlessly, cutting-edge, game-changing
+- dive in, delve into, it's important to note, it's worth noting
+- in today's digital landscape, in the modern era, at the end of the day
+- first and foremost, in conclusion, to summarize, to recap
+- unlock, empower, harness, elevate, transform
+- comprehensive, holistic, synergy, ecosystem
+
+**Write like a person:**
+- Short sentences work. Mix them with longer ones.
+- Use "you" and "your business" directly.
+- Be specific. "Most small business websites load in 6 seconds on a phone" beats "slow load times hurt conversions."
+- Say what something actually does, not what it "enables" or "allows."
+- If a sentence sounds like it came from a brochure, rewrite it.
+- Never start a post with a rhetorical question as a hook.
+- Avoid passive voice when active voice is clearer.
+
+**Tone:**
+- Helpful and direct, not enthusiastic
+- No hype, no urgency tricks
+- Treat the reader like they're smart and busy
+
+---
+
 ## Slug naming convention
 
 - Lowercase, hyphens only: `how-to-set-up-google-business`
