@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the Fused Blog | Fused Technology Solutions</title>
+    <meta name="description" content="A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/welcome-to-fused/" />
+    <meta property="og:title" content="Welcome to the Fused Blog" />
+    <meta property="og:description" content="A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time." />
+    <meta property="og:image" content="https://fuseddistribution.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/og-image.png" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/welcome-to-fused/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Welcome to the Fused Blog",
+      "datePublished": "2026-04-18",
+      "author": { "@type": "Organization", "name": "Fused Team" },
+      "publisher": { "@type": "Organization", "name": "Fused Technology Solutions", "url": "https://fuseddistribution.com/" },
+      "url": "https://fuseddistribution.com/blog/welcome-to-fused/",
+      "description": "A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time."
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+
+      .article-wrap {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+
+      .article-body p { margin: 0 0 20px; }
+
+      .article-body ul {
+        margin: 0 0 20px;
+        padding-left: 20px;
+      }
+
+      .article-body ul li { margin-bottom: 8px; }
+
+      .article-body strong { color: var(--text); }
+
+      .article-body a {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+
+      .article-cta p {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <a href="/projects/">Technology Solutions</a>
+            <a href="/process/">How It Works</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/education/">Education</a>
+            <a href="/reserve/">Silver Reserve</a>
+            <a class="active" href="/blog/">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">News &middot; Updates</div>
+
+          <h1>Welcome to the Fused Blog</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-04-18">April 18, 2026</time>
+            <span class="pill">News</span>
+            <span class="pill">Updates</span>
+          </div>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+            <p>
+              Technology should work for your business — not the other way around. That's
+              the idea behind everything Fused does, and it's the same idea behind this blog.
+            </p>
+
+            <h2>What this blog is for</h2>
+            <p>
+              Most technology advice online is written for developers, large companies, or
+              people who already have a technical background. That leaves out a huge group
+              of business owners and operators who just need practical answers to practical
+              questions.
+            </p>
+            <p>
+              This blog is written specifically for local businesses, small operators, and
+              anyone who wants to use technology better without needing to become an expert
+              in it. Posts will cover:
+            </p>
+            <ul>
+              <li><strong>Websites</strong> — what works, what doesn't, what to prioritize first</li>
+              <li><strong>AI tools</strong> — practical ways to save time without overcomplicating things</li>
+              <li><strong>Ordering and delivery systems</strong> — how to set them up and keep them connected</li>
+              <li><strong>Local SEO and visibility</strong> — getting found by the right people</li>
+              <li><strong>Business systems</strong> — CRM, booking, follow-up, and workflow basics</li>
+            </ul>
+
+            <h2>How posts are structured</h2>
+            <p>
+              Every post will lead with the main point. No long preambles, no unnecessary
+              background — just the information you need to make a decision or take an action.
+              Supporting detail follows for those who want it.
+            </p>
+
+            <h2>Getting started</h2>
+            <p>
+              If you're new to Fused, the best starting point is the
+              <a href="/projects/">Technology Solutions page</a>, which shows real examples
+              of what we build. The <a href="/process/">How It Works</a> page explains the
+              engagement model, and <a href="/pricing/">Pricing</a> breaks down what things cost.
+            </p>
+            <p>
+              New posts will publish regularly. If you have a specific topic you want covered,
+              reach out through the contact section on the home page.
+            </p>
+          </div>
+
+          <div class="article-cta">
+            <p>Ready to improve how your business uses technology?</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
