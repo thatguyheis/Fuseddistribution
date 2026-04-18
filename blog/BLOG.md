@@ -91,6 +91,38 @@ The goal is to sound like a knowledgeable local person talking to a business own
 
 ---
 
+## Adding a hero image
+
+Each post should include a hero image saved as `blog/[slug]/hero.jpg`.
+
+Download from the Unsplash CDN using curl (no API key needed):
+```
+curl -s "https://images.unsplash.com/photo-[PHOTO_ID]?auto=format&fit=crop&w=1200&q=82" -o blog/[slug]/hero.jpg
+```
+
+Known relevant photo IDs by topic:
+- Websites / analytics: `1460925895917-afdab827c52f` (laptop with analytics dashboard, by Isaac Smith)
+- Local business / retail: `1556742049-0cfed4f6a45d` (business owner with customer)
+- Office / tech work: `1551434678-e076c223a692` (person working on laptop)
+- AI / automation: pick a relevant one from Unsplash
+
+In the post HTML, add this block between `.article-meta` and `.article-divider`:
+```html
+<figure class="article-hero">
+  <img src="hero.jpg" alt="[Descriptive alt text]" width="1200" height="630" />
+  <figcaption>Photo by <a href="https://unsplash.com/@[handle]" target="_blank" rel="noreferrer">[Photographer Name]</a> on <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a></figcaption>
+</figure>
+```
+
+Also update the `og:image` and `twitter:image` meta tags to point to the hosted image:
+```
+https://fuseddistribution.com/blog/[slug]/hero.jpg
+```
+
+Copy the `.article-hero` CSS from `blog/why-your-website-isnt-getting-customers/index.html` into each new post's `<style>` block.
+
+---
+
 ## After adding a post
 
 Commit both files and push:
