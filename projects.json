@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "plainsman",
+    "name": "The Plainsman Restaurant",
+    "tags": ["Restaurant Demo", "Customer Work-Up"],
+    "description": "A full restaurant website built for The Plainsman in Vancouver, WA — warm branding, clear sections, and a structure built for local search and walk-in traffic.",
+    "scope_label": "Scope",
+    "scope_title": "Full restaurant page",
+    "scope_body": "Branding, menu layout, hours, location, and a contact section built for a local audience finding them through search.",
+    "detail_label": "Ready to launch",
+    "detail_title": "Drop in and go live",
+    "detail_body": "The business can take this page, swap in their own photos, and have a live site the same day.",
+    "cta1": "Open Live Page",
+    "cta2": "Request Similar Build",
+    "iframe_title": "Restaurant website design for The Plainsman, Vancouver WA"
+  },
+  {
+    "slug": "cascade",
+    "name": "Cascade Collision Repair",
+    "tags": ["Service Business", "Customer Work-Up"],
+    "description": "A conversion-focused page built for Cascade Collision Repair — designed to generate calls and estimate requests from local drivers who need fast, trustworthy repair service.",
+    "scope_label": "Scope",
+    "scope_title": "Local service business page",
+    "scope_body": "Trust signals, services listed clearly, and a direct path to calling or requesting an estimate — built for urgency.",
+    "detail_label": "Ready to launch",
+    "detail_title": "Built to get the phone ringing",
+    "detail_body": "Every section is structured to move a visitor from \"found the site\" to \"called the shop\" as fast as possible.",
+    "cta1": "Open Live Page",
+    "cta2": "Talk About A Build",
+    "iframe_title": "Auto repair website design for Cascade Collision Repair, Vancouver WA"
+  },
+  {
+    "slug": "anoush-deli",
+    "name": "Anoush Deli & International Foods",
+    "tags": ["Restaurant / Market", "Customer Work-Up"],
+    "description": "A digital presence built for Anoush Deli in Vancouver, WA — an authentic international market and deli capturing commuter lunch traffic with mobile ordering and a clear \"Skip the Line\" experience.",
+    "scope_label": "Scope",
+    "scope_title": "International deli and market",
+    "scope_body": "Digital menu, mobile ordering integration, and a design that reflects the fast-paced, diverse character of the business.",
+    "detail_label": "Opportunity",
+    "detail_title": "Zero web presence to full launch",
+    "detail_body": "High-traffic location with no website — a single page and ordering link captures significant commuter lunch revenue.",
+    "cta1": "Open Live Page",
+    "cta2": "Request Similar Build",
+    "iframe_title": "Restaurant website design for Anoush Deli, Vancouver WA"
+  },
+  {
+    "slug": "boba-tree",
+    "name": "Boba Tree",
+    "tags": ["Café / Beverage", "Customer Work-Up"],
+    "description": "A visual-first site built for Boba Tree in Vancouver, WA — designed for a younger demographic with a high-resolution gallery, bright branding, and a direct path from social media traffic to online orders.",
+    "scope_label": "Scope",
+    "scope_title": "Trendy boba and café site",
+    "scope_body": "Aesthetic gallery, menu display, and ordering integration — built to convert social media followers into direct customers.",
+    "detail_label": "Opportunity",
+    "detail_title": "Social media to direct orders",
+    "detail_body": "Currently social-only with no centralized home base — this page consolidates traffic and drives order volume.",
+    "cta1": "Open Live Page",
+    "cta2": "Request Similar Build",
+    "iframe_title": "Boba shop website design for Boba Tree, Vancouver WA"
+  }
+]
