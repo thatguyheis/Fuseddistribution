@@ -414,35 +414,55 @@
         position: absolute;
         left: 58px;
         bottom: 72px;
-        width: 240px;
+        width: 252px;
         padding: 20px;
         border-radius: 22px;
         border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(8, 10, 14, 0.78);
+        background: rgba(8, 10, 14, 0.82);
         backdrop-filter: blur(12px);
       }
 
       .spot-card h3 {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 0.84rem;
-        letter-spacing: 0.14em;
+        font-size: 0.78rem;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
         color: var(--accent);
+        margin-bottom: 12px;
       }
 
-      .spot-card strong {
-        display: block;
-        margin-top: 12px;
+      .spot-metals {
+        display: flex;
+        gap: 18px;
+        align-items: flex-end;
+        margin-bottom: 10px;
+      }
+
+      .spot-metal { display: flex; flex-direction: column; gap: 2px; }
+
+      .spot-metal-label {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 2rem;
-        color: var(--silver);
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
       }
 
-      .spot-card p {
-        margin: 10px 0 0;
-        color: var(--muted);
-        line-height: 1.6;
-        font-size: 0.95rem;
+      .spot-metal-price {
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: var(--silver);
+        line-height: 1;
+      }
+
+      .spot-metal-price.gold { color: var(--accent); font-size: 1.25rem; }
+
+      .spot-meta {
+        margin: 0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.75rem;
+        color: rgba(183, 191, 203, 0.6);
       }
 
       .main {
@@ -756,12 +776,18 @@
                 <span></span>
               </div>
               <div class="spot-card">
-                <h3>Why it works</h3>
-                <strong>Silver, simplified</strong>
-                <p>
-                  Subscribe monthly, unlock curated inventory, and choose low-premium
-                  bullion or unusual pieces sourced through a local network.
-                </p>
+                <h3>Today's Spot Price</h3>
+                <div class="spot-metals">
+                  <div class="spot-metal">
+                    <span class="spot-metal-label">Silver</span>
+                    <span class="spot-metal-price" id="live-silver">—</span>
+                  </div>
+                  <div class="spot-metal">
+                    <span class="spot-metal-label">Gold</span>
+                    <span class="spot-metal-price gold" id="live-gold">—</span>
+                  </div>
+                </div>
+                <p class="spot-meta" id="live-meta">per troy oz · loading&hellip;</p>
               </div>
             </div>
           </div>
@@ -854,6 +880,7 @@
               you're just getting started or adding to an existing stack. Pick the monthly
               amount that fits your pace and grow from there.
             </p>
+            <p id="plan-spot-est" style="margin:8px 0 0;font-size:0.92rem;color:var(--accent);font-family:'Trebuchet MS','Segoe UI',sans-serif;"></p>
           </div>
           <div class="plans">
             <article class="plan">
@@ -1025,5 +1052,52 @@
         <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
       </footer>
     </div>
+    <script>
+    (function () {
+      const API_KEY = 'YOUR_METALPRICEAPI_KEY'; // sign up free at metalpriceapi.com
+      const API_URL = 'https://api.metalpriceapi.com/v1/latest?api_key=' + API_KEY + '&base=USD&currencies=XAG,XAU';
+      const PREMIUM  = 0.05; // ~5% sourcing premium used for estimates
+
+      function usd(n) {
+        return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      async function loadSpot() {
+        if (API_KEY === 'YOUR_METALPRICEAPI_KEY') return; // key not set yet
+        try {
+          const res  = await fetch(API_URL);
+          const data = await res.json();
+          if (!data.success) return;
+
+          const silver = data.rates.USDXAG; // USD per troy oz
+          const gold   = data.rates.USDXAU;
+
+          const elS = document.getElementById('live-silver');
+          const elG = document.getElementById('live-gold');
+          const elM = document.getElementById('live-meta');
+          if (elS) elS.textContent = usd(silver);
+          if (elG) elG.textContent = usd(gold);
+          if (elM) elM.textContent = 'per troy oz · ' + new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+          // Dynamic estimate in plans section
+          const oz100  = 100  / (silver * (1 + PREMIUM));
+          const oz250  = 250  / (silver * (1 + PREMIUM));
+          const oz500  = 500  / (silver * (1 + PREMIUM));
+          const elEst  = document.getElementById('plan-spot-est');
+          if (elEst) {
+            elEst.textContent =
+              'At today\u2019s spot (' + usd(silver) + '/oz): ' +
+              'Starter \u2248 ' + oz100.toFixed(1) + ' oz \u00b7 ' +
+              'Stacker \u2248 ' + oz250.toFixed(1) + ' oz \u00b7 ' +
+              'Collector Access \u2248 ' + oz500.toFixed(1) + ' oz';
+          }
+        } catch (e) {
+          // fail silently — static card remains
+        }
+      }
+
+      loadSpot();
+    })();
+    </script>
   </body>
 </html>
