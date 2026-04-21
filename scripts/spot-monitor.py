@@ -19,7 +19,7 @@ import sys
 from datetime import datetime, date, timedelta
 
 # ── Config ───────────────────────────────────────────────────────────────────
-API_KEY = os.environ.get("METALPRICEAPI_KEY", "YOUR_KEY_HERE")
+API_KEY = os.environ.get("METALPRICEAPI_KEY", "44bba4c50848bc4a1207f00beca7434f")
 API_URL = (
     "https://api.metalpriceapi.com/v1/latest"
     f"?api_key={API_KEY}&base=USD&currencies=XAG,XAU"

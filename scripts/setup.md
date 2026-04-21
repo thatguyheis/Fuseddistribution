@@ -16,12 +16,12 @@ pip3 install requests
 
 Option A — environment variable (recommended):
 ```bash
-export METALPRICEAPI_KEY="your_key_here"
+export METALPRICEAPI_KEY="44bba4c50848bc4a1207f00beca7434f"
 ```
 
 Option B — paste directly into `spot-monitor.py` line:
 ```python
-API_KEY = "your_key_here"
+API_KEY = "44bba4c50848bc4a1207f00beca7434f"
 ```
 
 ## 4. Test It
@@ -52,7 +52,7 @@ Create the file `~/Library/LaunchAgents/com.fused.spotmonitor.plist`:
   <key>EnvironmentVariables</key>
   <dict>
     <key>METALPRICEAPI_KEY</key>
-    <string>your_key_here</string>
+    <string>44bba4c50848bc4a1207f00beca7434f</string>
   </dict>
   <key>StartCalendarInterval</key>
   <dict>
