@@ -108,7 +108,11 @@
         pointer-events: none;
       }
 
-      .topbar,
+      .topbar {
+        position: relative;
+        z-index: 50;
+      }
+
       .hero,
       .main {
         position: relative;
@@ -238,12 +242,12 @@
         background: rgba(13, 16, 22, 0.97);
         backdrop-filter: blur(18px);
         box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
-        z-index: 100;
-        animation: dropIn 0.18s ease;
+        z-index: 200;
       }
 
       .nav-item.open .nav-dropdown {
         display: flex;
+        animation: dropIn 0.18s ease forwards;
       }
 
       @keyframes dropIn {
@@ -731,7 +735,11 @@
           transform: none;
         }
 
-        @keyframes dropIn {
+        .nav-item.open .nav-dropdown {
+          animation: dropInMobile 0.18s ease forwards;
+        }
+
+        @keyframes dropInMobile {
           from { opacity: 0; transform: translateY(-6px); }
           to   { opacity: 1; transform: translateY(0); }
         }
