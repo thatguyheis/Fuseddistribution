@@ -568,11 +568,12 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
       }
 
       .nav-item:hover .nav-dropdown,
       .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -609,6 +610,7 @@
         }
         .nav-item:hover .nav-dropdown,
         .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
           transform: translateY(0);
         }
       }
