@@ -218,15 +218,20 @@
         display: inline-block;
       }
 
-      .nav-item.open .nav-caret { transform: rotate(180deg); }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
 
       .nav-dropdown {
-        display: none;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
         flex-direction: column;
         position: absolute;
         top: calc(100% + 8px);
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-6px);
         min-width: 210px;
         padding: 8px;
         border-radius: 16px;
@@ -237,13 +242,13 @@
         z-index: 200;
       }
 
-      .nav-item.open .nav-dropdown {
-        display: flex;
-        animation: navDropIn 0.18s ease forwards;
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
       }
-
-      @keyframes navDropIn {
-        from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
         to   { opacity: 1; transform: translateX(-50%) translateY(0); }
       }
 
@@ -493,9 +498,13 @@
         .hero, .main { padding-left: 26px; padding-right: 26px; }
         .cta-strip { flex-direction: column; align-items: flex-start; }
         .nav-dropdown { left: 0; transform: none; }
-        .nav-item.open .nav-dropdown { animation: navDropInMobile 0.18s ease forwards; }
-        @keyframes navDropInMobile {
-          from { opacity: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
           to   { opacity: 1; transform: translateY(0); }
         }
       }
@@ -897,41 +906,6 @@
           }
         });
       });
-    </script>
-    <script>
-    /* Dropdown nav */
-    (function () {
-      var items = document.querySelectorAll('.nav-item');
-      items.forEach(function (item) {
-        var btn = item.querySelector('.nav-toggle');
-        btn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          var isOpen = item.classList.contains('open');
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-      document.addEventListener('click', function () {
-        items.forEach(function (i) {
-          i.classList.remove('open');
-          i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-        });
-      });
-      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-        });
-      });
-    })();
     </script>
   </body>
 </html>

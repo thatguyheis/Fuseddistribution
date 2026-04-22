@@ -224,17 +224,20 @@
         display: inline-block;
       }
 
-      .nav-item.open .nav-caret {
-        transform: rotate(180deg);
-      }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
 
       .nav-dropdown {
-        display: none;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
         flex-direction: column;
         position: absolute;
         top: calc(100% + 8px);
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-6px);
         min-width: 200px;
         padding: 8px;
         border-radius: 16px;
@@ -245,13 +248,13 @@
         z-index: 200;
       }
 
-      .nav-item.open .nav-dropdown {
-        display: flex;
-        animation: dropIn 0.18s ease forwards;
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
       }
-
-      @keyframes dropIn {
-        from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
         to   { opacity: 1; transform: translateX(-50%) translateY(0); }
       }
 
@@ -732,12 +735,16 @@
 
         .nav-dropdown {
           left: 0;
-          transform: none;
+          transform: translateY(-6px);
         }
 
-        .nav-item.open .nav-dropdown {
-          animation: dropInMobile 0.18s ease forwards;
-        }
+        .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
 
         @keyframes dropInMobile {
           from { opacity: 0; transform: translateY(-6px); }
@@ -1170,44 +1177,6 @@
         <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
       </footer>
     </div>
-    <script>
-    // Dropdown nav toggle
-    (function () {
-      const items = document.querySelectorAll('.nav-item');
-      items.forEach(function (item) {
-        const btn = item.querySelector('.nav-toggle');
-        btn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          const isOpen = item.classList.contains('open');
-          // Close all others
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-      // Close when clicking outside
-      document.addEventListener('click', function () {
-        items.forEach(function (i) {
-          i.classList.remove('open');
-          i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-        });
-      });
-      // Close when a dropdown link is clicked
-      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-        });
-      });
-    })();
-    </script>
     <script>
     (function () {
       const API_KEY = '44bba4c50848bc4a1207f00beca7434f';

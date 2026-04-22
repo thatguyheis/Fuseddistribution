@@ -427,6 +427,107 @@
         .faq-question { font-size: 0.93rem; padding: 18px 20px; }
         .faq-answer p { padding: 0 20px 20px; }
       }
+
+      /* ── Dropdown navigation ── */
+      .nav-item { position: relative; }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle {
+        color: var(--accent);
+        outline: none;
+      }
+
+      .nav-caret {
+        font-size: 0.68rem;
+        transition: transform 0.2s ease;
+        display: inline-block;
+      }
+
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+      }
+
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active {
+        background: rgba(97, 255, 215, 0.08);
+        color: var(--accent);
+        text-shadow: none;
+      }
+
+      .nav-dropdown-divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.07);
+        margin: 4px 6px;
+      }
+
+      @media (max-width: 900px) {
+        .nav-dropdown {
+          left: 0;
+          transform: translateY(-6px);
+        }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown {
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   <body>
@@ -1032,41 +1133,6 @@
           }
         });
       });
-    </script>
-    <script>
-    /* Dropdown nav */
-    (function () {
-      var items = document.querySelectorAll('.nav-item');
-      items.forEach(function (item) {
-        var btn = item.querySelector('.nav-toggle');
-        btn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          var isOpen = item.classList.contains('open');
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-      document.addEventListener('click', function () {
-        items.forEach(function (i) {
-          i.classList.remove('open');
-          i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-        });
-      });
-      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          items.forEach(function (i) {
-            i.classList.remove('open');
-            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-          });
-        });
-      });
-    })();
     </script>
   </body>
 </html>
