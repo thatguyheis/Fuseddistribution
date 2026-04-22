@@ -122,7 +122,7 @@
         margin: 20px auto 48px;
         border: 1px solid rgba(255, 255, 255, 0.05);
         border-radius: 26px;
-        overflow: hidden;
+        overflow: visible;
         background: linear-gradient(180deg, rgba(9, 18, 28, 0.95), rgba(5, 12, 18, 0.94));
         box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45);
         position: relative;
@@ -141,7 +141,7 @@
       .topbar {
         position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 500;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -854,12 +854,39 @@
         <nav class="nav" aria-label="Primary">
           <div class="nav-pages">
             <a href="/">Home</a>
-            <a href="/projects/">Technology Solutions</a>
-            <a href="/process/">How It Works</a>
-            <a href="/pricing/">Pricing</a>
-            <a href="/faq/">FAQ</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/faq/#technology" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/faq/#silver" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
             <a href="/education/">Education</a>
-            <a href="/reserve/">Silver Reserve</a>
             <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
@@ -1226,6 +1253,41 @@
           }
         });
       }
+    </script>
+    <script>
+    /* Dropdown nav */
+    (function () {
+      var items = document.querySelectorAll('.nav-item');
+      items.forEach(function (item) {
+        var btn = item.querySelector('.nav-toggle');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var isOpen = item.classList.contains('open');
+          items.forEach(function (i) {
+            i.classList.remove('open');
+            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      document.addEventListener('click', function () {
+        items.forEach(function (i) {
+          i.classList.remove('open');
+          i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+        });
+      });
+      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          items.forEach(function (i) {
+            i.classList.remove('open');
+            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+          });
+        });
+      });
+    })();
     </script>
   </body>
 </html>
