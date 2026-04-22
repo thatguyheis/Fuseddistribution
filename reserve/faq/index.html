@@ -494,6 +494,53 @@
 
       .footer a { color: inherit; opacity: 0.7; text-decoration: underline; }
 
+      /* ── Canada tax table ── */
+      .tax-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0 10px;
+        font-size: 0.88rem;
+      }
+
+      .tax-table th {
+        padding: 10px 14px;
+        text-align: left;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border-bottom: 1px solid rgba(242, 198, 109, 0.22);
+      }
+
+      .tax-table td {
+        padding: 10px 14px;
+        color: var(--muted);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        vertical-align: top;
+        line-height: 1.5;
+      }
+
+      .tax-table tr:last-child td { border-bottom: none; }
+
+      .tax-table td:first-child {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .tax-exempt { color: #6ee7b7; font-weight: 700; }
+      .tax-applies { color: #fca5a5; font-weight: 700; }
+
+      .canada-note {
+        margin: 14px 0 0;
+        padding: 12px 16px;
+        border-left: 2px solid rgba(242, 198, 109, 0.4);
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.65;
+      }
+
       @media (max-width: 1080px) {
         .topbar { flex-direction: column; align-items: flex-start; }
         .hero, .main { padding-left: 26px; padding-right: 26px; }
@@ -866,6 +913,97 @@
               <div class="faq-answer" role="region">
                 <div class="faq-answer-inner">
                   <p>Month-to-month — cancel any time with no penalty. Any silver already sourced or held for you will be shipped before the account closes. Reach out directly and we'll handle it cleanly.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="faq-group">
+          <div class="category-label">Canadian Orders</div>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Do you ship to Canada?
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Yes — we ship to Canada. The process works the same as US orders, but pricing and shipping costs will vary slightly due to customs and duties. We calculate these on a per-shipment basis and will walk you through the numbers before your order goes out.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What duties and taxes apply to silver shipped to Canada?
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Canadian import taxes on silver depend on purity and how the item is classified at the border:</p>
+                  <table class="tax-table">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Purity</th>
+                        <th>GST/HST</th>
+                        <th>Duty</th>
+                        <th>Fees</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Investment-Grade Silver<br><small style="font-weight:400;color:var(--muted);">Bars, rounds, bullion coins tied to metal value</small></td>
+                        <td>≥ 99.9% (.999)</td>
+                        <td><span class="tax-exempt">0% Exempt</span></td>
+                        <td>0%</td>
+                        <td>$5–$15 handling</td>
+                      </tr>
+                      <tr>
+                        <td>Non-Investment Silver<br><small style="font-weight:400;color:var(--muted);">Jewelry, sterling (.925), decorative items</small></td>
+                        <td>&lt; 99.9%</td>
+                        <td><span class="tax-applies">5%–15%</span></td>
+                        <td>0%</td>
+                        <td>$5–$25 brokerage</td>
+                      </tr>
+                      <tr>
+                        <td>Collectible / Numismatic<br><small style="font-weight:400;color:var(--muted);">May be taxed if classified as collectible, not bullion</small></td>
+                        <td>Varies</td>
+                        <td><span class="tax-applies">Often 5%–15%</span></td>
+                        <td>0%</td>
+                        <td>$5–$25 brokerage</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="canada-note"><strong>Important:</strong> .999 silver is tax-exempt only when declared as investment-grade bullion at the border. Classification matters — the same coin can be taxed differently depending on how it's declared.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What's the recommended approach for Canadian subscribers?
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Two things work well for Canadian orders:</p>
+                  <p style="margin:10px 0 0;padding-left:16px;border-left:2px solid rgba(242,198,109,0.3);">
+                    <strong>1. Hold and batch shipments.</strong> Rather than shipping every month, accumulate your silver and ship larger orders less frequently. This spreads the per-shipment handling and brokerage fees across more ounces, lowering your effective cost per oz.<br><br>
+                    <strong>2. Prioritize .999 investment-grade silver.</strong> Bullion, rounds, and bars at .999 purity are GST/HST exempt when declared as investment-grade bullion — the most tax-efficient format for Canadian delivery. Junk silver and numismatic coins fall into non-investment or collectible categories and may incur GST/HST.
+                  </p>
+                  <p style="margin:12px 0 0;">We'll work through the specifics with you before your first shipment. Reach out and we'll make sure you have a clear picture of the landed cost before anything ships.</p>
                 </div>
               </div>
             </div>
