@@ -157,23 +157,15 @@
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
       }
 
-      .nav-pages,
-      .nav-sections {
+      .nav-pages {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 4px;
         flex-wrap: wrap;
-      }
-
-      .nav-pages {
         padding: 8px 10px;
         border-radius: 999px;
         border: 1px solid rgba(242, 198, 109, 0.18);
         background: rgba(255, 255, 255, 0.03);
-      }
-
-      .nav-sections {
-        opacity: 0.88;
       }
 
       .nav a {
@@ -183,7 +175,7 @@
         color: rgba(245, 247, 251, 0.85);
       }
 
-      .nav-pages a {
+      .nav-pages > a {
         padding: 9px 14px;
         border-radius: 999px;
       }
@@ -191,6 +183,94 @@
       .nav a:hover,
       .nav a:focus-visible {
         color: var(--accent);
+      }
+
+      /* Dropdown nav items */
+      .nav-item {
+        position: relative;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.95rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(245, 247, 251, 0.85);
+        transition: color 0.15s;
+      }
+
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-item.open .nav-toggle {
+        color: var(--accent);
+        outline: none;
+      }
+
+      .nav-caret {
+        font-size: 0.7rem;
+        transition: transform 0.2s ease;
+        display: inline-block;
+      }
+
+      .nav-item.open .nav-caret {
+        transform: rotate(180deg);
+      }
+
+      .nav-dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 200px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(13, 16, 22, 0.97);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        animation: dropIn 0.18s ease;
+      }
+
+      .nav-item.open .nav-dropdown {
+        display: flex;
+      }
+
+      @keyframes dropIn {
+        from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+        to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+      }
+
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: rgba(245, 247, 251, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible {
+        background: rgba(242, 198, 109, 0.1);
+        color: var(--accent);
+      }
+
+      .nav-dropdown-divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.07);
+        margin: 4px 6px;
       }
 
       .status-chip {
@@ -646,6 +726,16 @@
           gap: 14px;
         }
 
+        .nav-dropdown {
+          left: 0;
+          transform: none;
+        }
+
+        @keyframes dropIn {
+          from { opacity: 0; transform: translateY(-6px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
         .hero,
         .main {
           padding-left: 26px;
@@ -713,20 +803,40 @@
         <nav class="nav" aria-label="Primary navigation">
           <div class="nav-pages">
             <a href="/">Home</a>
-            <a href="/projects/">Technology Solutions</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/faq/#technology" role="menuitem">FAQ — Technology</a>
+              </div>
+            </div>
+
             <a href="/process/">How It Works</a>
             <a href="/pricing/">Pricing</a>
-            <a href="/faq/">FAQ</a>
             <a href="/education/">Education</a>
-            <a href="/reserve/">Silver Reserve</a>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="#how-it-works" role="menuitem">How It Works</a>
+                <a href="#plans" role="menuitem">Plans</a>
+                <a href="#benefits" role="menuitem">Benefits</a>
+                <a href="#inventory" role="menuitem">Inventory</a>
+                <a href="#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/faq/#silver" role="menuitem">FAQ — Silver Reserve</a>
+              </div>
+            </div>
+
             <a href="/blog/">Blog</a>
-          </div>
-          <div class="nav-sections">
-            <a href="#how-it-works">How It Works</a>
-            <a href="#plans">Plans</a>
-            <a href="#benefits">Benefits</a>
-            <a href="#inventory">Inventory</a>
-            <a href="#join">Join</a>
           </div>
         </nav>
         <div class="status-chip">Silver-first memberships</div>
@@ -1052,6 +1162,44 @@
         <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
       </footer>
     </div>
+    <script>
+    // Dropdown nav toggle
+    (function () {
+      const items = document.querySelectorAll('.nav-item');
+      items.forEach(function (item) {
+        const btn = item.querySelector('.nav-toggle');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const isOpen = item.classList.contains('open');
+          // Close all others
+          items.forEach(function (i) {
+            i.classList.remove('open');
+            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      // Close when clicking outside
+      document.addEventListener('click', function () {
+        items.forEach(function (i) {
+          i.classList.remove('open');
+          i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+        });
+      });
+      // Close when a dropdown link is clicked
+      document.querySelectorAll('.nav-dropdown a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          items.forEach(function (i) {
+            i.classList.remove('open');
+            i.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+          });
+        });
+      });
+    })();
+    </script>
     <script>
     (function () {
       const API_KEY = '44bba4c50848bc4a1207f00beca7434f';
