@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What a Good Website Is Actually Worth to Your Business | Fused Technology Solutions</title>
+    <meta name="description" content="A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/what-a-website-is-worth/" />
+    <meta property="og:title" content="What a Good Website Is Actually Worth to Your Business" />
+    <meta property="og:description" content="A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/what-a-website-is-worth/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/what-a-website-is-worth/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/what-a-website-is-worth/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "What a Good Website Is Actually Worth to Your Business",
+      "datePublished": "2026-04-23",
+      "author": { "@type": "Organization", "name": "Fused Team" },
+      "publisher": { "@type": "Organization", "name": "Fused Technology Solutions", "url": "https://fuseddistribution.com/" },
+      "url": "https://fuseddistribution.com/blog/what-a-website-is-worth/",
+      "description": "A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses."
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+
+      .article-wrap {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-hero {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        margin: 28px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .article-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: cover;
+      }
+
+      .article-hero figcaption {
+        padding: 10px 14px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        background: rgba(7, 15, 23, 0.6);
+        letter-spacing: 0.04em;
+      }
+
+      .article-hero figcaption a {
+        color: rgba(175, 198, 207, 0.55);
+        text-decoration: underline;
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+
+      .article-body p { margin: 0 0 20px; }
+
+      .article-body ul {
+        margin: 0 0 20px;
+        padding-left: 20px;
+      }
+
+      .article-body ul li { margin-bottom: 8px; }
+
+      .article-body strong { color: var(--text); }
+
+      .article-body a {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      /* Charts */
+      .chart-wrap {
+        background: rgba(7, 20, 28, 0.8);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 16px;
+        padding: 28px 20px 18px;
+        margin: 36px 0;
+      }
+      .chart-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .chart-note {
+        font-size: 0.72rem;
+        color: rgba(175, 198, 207, 0.45);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 0.04em;
+      }
+
+      /* Stat callout row */
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .stat-card {
+        background: rgba(88, 214, 255, 0.04);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 14px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+      .stat-card .stat-number {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .stat-card .stat-label {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      /* Sources */
+      .sources-block {
+        margin-top: 48px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.1);
+        background: rgba(7, 18, 26, 0.6);
+      }
+      .sources-block h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+      .sources-block ol {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(175, 198, 207, 0.5);
+        font-size: 0.78rem;
+        line-height: 1.7;
+      }
+      .sources-block ol li { margin-bottom: 6px; }
+      .sources-block a {
+        color: rgba(88, 214, 255, 0.6);
+        text-decoration: underline;
+      }
+
+      /* CTA */
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+      .article-cta p { margin: 0 0 18px; color: var(--muted); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+        .stat-row { grid-template-columns: 1fr; }
+      }
+
+      /* ── Dropdown navigation ── */
+      .nav-item { position: relative; }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle {
+        color: var(--accent);
+        outline: none;
+      }
+
+      .nav-caret {
+        font-size: 0.68rem;
+        transition: transform 0.2s ease;
+        display: inline-block;
+      }
+
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active {
+        background: rgba(97, 255, 215, 0.08);
+        color: var(--accent);
+        text-shadow: none;
+      }
+
+      .nav-dropdown-divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.07);
+        margin: 4px 6px;
+      }
+
+      @media (max-width: 900px) {
+        .nav-dropdown {
+          left: 0;
+          transform: translateY(-6px);
+        }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown {
+          transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <a href="/education/">Education</a>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Websites &middot; Technology &middot; Local Business</div>
+
+          <h1>What a Good Website Is Actually Worth to Your Business</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-04-23">April 23, 2026</time>
+            <span class="pill">Websites</span>
+            <span class="pill">Technology</span>
+            <span class="pill">Local Business</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.jpg" alt="Business owner reviewing website analytics on a laptop" width="1200" height="630" />
+            <figcaption>Photo by <a href="https://unsplash.com/@austindistel" target="_blank" rel="noreferrer">Austin Distel</a> on <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a></figcaption>
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+
+            <p>
+              Most business owners know they need a website. Fewer have a clear picture of what
+              a good one is actually worth in dollars. That gap matters, because it changes how
+              you make decisions about spending money on technology.
+            </p>
+            <p>
+              Here is what the data shows about online presence, site performance, and
+              automation tools for small businesses. Not promises — numbers.
+            </p>
+
+            <h2>Your customers start online before they call anyone</h2>
+            <p>
+              <strong>81% of consumers research a product or service online before buying</strong>,
+              according to GE Capital Retail Bank research. For local businesses, Google's own
+              data puts it even higher: 97% of consumers use the internet to find local
+              businesses. If you are not in those search results with a page that loads fast
+              and says something useful, that traffic goes to whoever is.
+            </p>
+            <p>
+              The chart below shows where people go when they are trying to decide on a local
+              business. Online search is the first stop for most of them, ahead of word of mouth,
+              social media, and review sites combined.
+            </p>
+
+            <!-- Chart 1: How customers research local businesses -->
+            <div class="chart-wrap">
+              <div class="chart-title">How Customers Research Before Choosing a Local Business</div>
+              <svg viewBox="0 0 700 310" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;" aria-label="Horizontal bar chart showing how customers research local businesses">
+                <defs>
+                  <linearGradient id="bar-grad-1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.7"/>
+                  </linearGradient>
+                  <linearGradient id="bar-grad-2" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#58d6ff" stop-opacity="0.3"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Y axis labels -->
+                <text x="178" y="52"  text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Online Search</text>
+                <text x="178" y="97"  text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Word of Mouth</text>
+                <text x="178" y="142" text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Review Sites</text>
+                <text x="178" y="187" text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Social Media</text>
+                <text x="178" y="232" text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Directories</text>
+                <text x="178" y="277" text-anchor="end" font-family="Arial" font-size="12" fill="rgba(175,198,207,0.8)">Print / Other</text>
+
+                <!-- Bars (max width = 460px = 100%) -->
+                <!-- Online Search: 97% -->
+                <rect x="188" y="36" width="447" height="26" rx="5" fill="url(#bar-grad-1)"/>
+                <text x="641" y="54" font-family="Arial" font-size="12" font-weight="bold" fill="#4dffb8">97%</text>
+
+                <!-- Word of Mouth: 55% -->
+                <rect x="188" y="81" width="253" height="26" rx="5" fill="url(#bar-grad-2)"/>
+                <text x="447" y="99" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">55%</text>
+
+                <!-- Review Sites: 52% -->
+                <rect x="188" y="126" width="239" height="26" rx="5" fill="url(#bar-grad-2)"/>
+                <text x="433" y="144" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">52%</text>
+
+                <!-- Social Media: 44% -->
+                <rect x="188" y="171" width="202" height="26" rx="5" fill="url(#bar-grad-2)"/>
+                <text x="396" y="189" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">44%</text>
+
+                <!-- Directories: 21% -->
+                <rect x="188" y="216" width="97" height="26" rx="5" fill="url(#bar-grad-2)"/>
+                <text x="291" y="234" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">21%</text>
+
+                <!-- Print / Other: 14% -->
+                <rect x="188" y="261" width="64" height="26" rx="5" fill="url(#bar-grad-2)"/>
+                <text x="258" y="279" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">14%</text>
+              </svg>
+              <div class="chart-note">Sources: Google/IPSOS local search behavior data; BrightLocal Consumer Review Survey 2023. Respondents could select multiple channels.</div>
+            </div>
+
+            <p>
+              Word of mouth still matters. So does social media. But both of them eventually
+              send people to a Google search or directly to your website. If that destination
+              is a weak page, all the goodwill from referrals evaporates.
+            </p>
+
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-number">76%</div>
+                <div class="stat-label">of people who find a local business on their phone visit within 24 hours</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">28%</div>
+                <div class="stat-label">of those local searches result in a purchase</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">46%</div>
+                <div class="stat-label">of all Google searches are looking for local information</div>
+              </div>
+            </div>
+            <p style="font-size:0.78rem;color:rgba(175,198,207,0.45);margin-top:-12px;margin-bottom:24px;">Source: Think With Google, Local Search behavior studies.</p>
+
+            <h2>Page speed is not a technical detail, it is a revenue lever</h2>
+            <p>
+              When someone clicks on your site and it loads slowly, they leave. Google has
+              measured this at scale. If your page takes 5 seconds to load instead of 1 second,
+              the probability of the visitor leaving before they see anything jumps from around
+              9% to 90%.
+            </p>
+            <p>
+              That is not about user experience in an abstract sense. It is about how many of
+              the people who were already interested in your business actually stayed long enough
+              to become customers.
+            </p>
+
+            <!-- Chart 2: Page load time vs bounce rate -->
+            <div class="chart-wrap">
+              <div class="chart-title">Probability a Visitor Leaves Based on Page Load Time</div>
+              <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;" aria-label="Bar chart showing visitor abandonment rate by page load time">
+                <defs>
+                  <linearGradient id="bar-danger" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.85"/>
+                    <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0.35"/>
+                  </linearGradient>
+                  <linearGradient id="bar-ok" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.85"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.35"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Grid lines -->
+                <line x1="72" y1="30"  x2="660" y2="30"  stroke="rgba(88,214,255,0.08)" stroke-width="1"/>
+                <line x1="72" y1="80"  x2="660" y2="80"  stroke="rgba(88,214,255,0.08)" stroke-width="1"/>
+                <line x1="72" y1="130" x2="660" y2="130" stroke="rgba(88,214,255,0.08)" stroke-width="1"/>
+                <line x1="72" y1="180" x2="660" y2="180" stroke="rgba(88,214,255,0.08)" stroke-width="1"/>
+
+                <!-- Y labels -->
+                <text x="64" y="34"  text-anchor="end" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.55)">100%</text>
+                <text x="64" y="84"  text-anchor="end" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.55)">75%</text>
+                <text x="64" y="134" text-anchor="end" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.55)">50%</text>
+                <text x="64" y="184" text-anchor="end" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.55)">25%</text>
+
+                <!-- Baseline at bottom -->
+                <line x1="72" y1="228" x2="660" y2="228" stroke="rgba(88,214,255,0.2)" stroke-width="1"/>
+
+                <!-- Bars: bar width ~90, gap ~20 -->
+                <!-- 1 second: 9% leave -->
+                <rect x="90"  y="211" width="90" height="17" rx="5" fill="url(#bar-ok)"/>
+                <text x="135" y="207" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#4dffb8">9%</text>
+                <text x="135" y="246" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.65)">1 sec</text>
+
+                <!-- 2 seconds: 32% leave -->
+                <rect x="204" y="153" width="90" height="75" rx="5" fill="url(#bar-danger)" opacity="0.6"/>
+                <text x="249" y="147" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff9f9f">32%</text>
+                <text x="249" y="246" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.65)">2 sec</text>
+
+                <!-- 3 seconds: 53% leave -->
+                <rect x="318" y="102" width="90" height="126" rx="5" fill="url(#bar-danger)" opacity="0.75"/>
+                <text x="363" y="96" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff9f9f">53%</text>
+                <text x="363" y="246" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.65)">3 sec</text>
+
+                <!-- 4 seconds: 72% leave -->
+                <rect x="432" y="57" width="90" height="171" rx="5" fill="url(#bar-danger)" opacity="0.85"/>
+                <text x="477" y="51" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff6b6b">72%</text>
+                <text x="477" y="246" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.65)">4 sec</text>
+
+                <!-- 5 seconds: 90% leave -->
+                <rect x="546" y="30" width="90" height="198" rx="5" fill="url(#bar-danger)"/>
+                <text x="591" y="24" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ff4444">90%</text>
+                <text x="591" y="246" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.65)">5 sec</text>
+
+                <!-- X axis label -->
+                <text x="375" y="268" text-anchor="middle" font-family="Arial" font-size="11" fill="rgba(175,198,207,0.45)" letter-spacing="0.04em">PAGE LOAD TIME</text>
+              </svg>
+              <div class="chart-note">Source: Google/SOASTA Research, "The State of Online Retail Performance." Probability of bounce relative to 1-second baseline.</div>
+            </div>
+
+            <p>
+              A 1-second improvement in load time has been shown to increase conversions by
+              around 7%, according to Portent research. For a business doing $500,000 in
+              annual revenue, that is $35,000. Speed is not a technical problem. It is a
+              pricing problem you did not know you had.
+            </p>
+
+            <h2>Automation saves real hours, not hypothetical ones</h2>
+            <p>
+              The ROI on technology goes beyond what a website shows to the world. The back-end
+              tools that run your business matter just as much. Online booking systems, automated
+              follow-up emails, digital intake forms, and payment links all remove friction from
+              the process of doing business with you.
+            </p>
+            <p>
+              A service business fielding 20 appointment requests per week by phone or text
+              spends roughly 3 to 5 hours a week on scheduling alone. An online booking system
+              handles that automatically. That time goes back to doing the actual work, or
+              it is simply not a labor cost you are paying anymore.
+            </p>
+            <p>
+              The chart below illustrates how these efficiency gains stack across different
+              types of tools, based on small business owner surveys from Salesforce and Keap.
+            </p>
+
+            <!-- Chart 3: Hours saved per week by technology category -->
+            <div class="chart-wrap">
+              <div class="chart-title">Estimated Weekly Hours Saved Per Technology Tool (Small Business Avg.)</div>
+              <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;" aria-label="Bar chart showing hours saved per week by technology category">
+                <defs>
+                  <linearGradient id="bar-teal" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#58d6ff" stop-opacity="0.6"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Y axis labels -->
+                <text x="196" y="52"  text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Online Booking</text>
+                <text x="196" y="97"  text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Auto Follow-Up Emails</text>
+                <text x="196" y="142" text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Digital Intake Forms</text>
+                <text x="196" y="187" text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Online Payments</text>
+                <text x="196" y="232" text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Review Request Automation</text>
+                <text x="196" y="277" text-anchor="end" font-family="Arial" font-size="11.5" fill="rgba(175,198,207,0.8)">Chatbot / Contact Form</text>
+
+                <!-- Bars: max = 5 hrs = 420px -->
+                <!-- Online Booking: 4.5 hrs -->
+                <rect x="206" y="36" width="378" height="26" rx="5" fill="url(#bar-teal)"/>
+                <text x="591" y="54" font-family="Arial" font-size="12" font-weight="bold" fill="#4dffb8">4.5 hrs</text>
+
+                <!-- Auto Follow-Up: 3.2 hrs -->
+                <rect x="206" y="81" width="269" height="26" rx="5" fill="url(#bar-teal)" opacity="0.85"/>
+                <text x="482" y="99" font-family="Arial" font-size="12" font-weight="bold" fill="#4dffb8">3.2 hrs</text>
+
+                <!-- Digital Intake: 2.8 hrs -->
+                <rect x="206" y="126" width="235" height="26" rx="5" fill="url(#bar-teal)" opacity="0.75"/>
+                <text x="448" y="144" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">2.8 hrs</text>
+
+                <!-- Online Payments: 2.1 hrs -->
+                <rect x="206" y="171" width="176" height="26" rx="5" fill="url(#bar-teal)" opacity="0.65"/>
+                <text x="389" y="189" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">2.1 hrs</text>
+
+                <!-- Review Requests: 1.5 hrs -->
+                <rect x="206" y="216" width="126" height="26" rx="5" fill="url(#bar-teal)" opacity="0.55"/>
+                <text x="339" y="234" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">1.5 hrs</text>
+
+                <!-- Chatbot / Form: 1.2 hrs -->
+                <rect x="206" y="261" width="101" height="26" rx="5" fill="url(#bar-teal)" opacity="0.45"/>
+                <text x="314" y="279" font-family="Arial" font-size="12" font-weight="bold" fill="#58d6ff">1.2 hrs</text>
+              </svg>
+              <div class="chart-note">Estimates based on Salesforce Small Business Trends Report and Keap Small Business Efficiency Survey. Actual savings vary by business type and volume.</div>
+            </div>
+
+            <p>
+              Stacked together, these tools can free up 10 to 15 hours per week for an
+              average service business. At $25 per hour in labor cost, that is $13,000 to
+              $20,000 annually, just from removing manual steps from your existing processes.
+            </p>
+
+            <h2>The compounding effect: it all reinforces itself</h2>
+            <p>
+              A fast website gets ranked higher by Google, so more people find you. More
+              people finding you means more booking requests. Automated booking means more
+              capacity to take those requests without adding staff. Better reviews from
+              smoother customer experiences improve your search ranking further. Each piece
+              supports the others.
+            </p>
+            <p>
+              The businesses that build this infrastructure early do not just save time. They
+              create a gap between themselves and competitors who are still running on
+              phone calls and paper. That gap widens every year.
+            </p>
+            <p>
+              This is not about buying the latest tools or staying ahead of trends. It is
+              about fixing the parts of your business that are bleeding customers and hours
+              right now, and putting something in place that works while you are focused on
+              the actual work.
+            </p>
+
+            <h2>Where to start</h2>
+            <p>
+              If you are trying to figure out what is worth doing first, start here:
+            </p>
+            <ul>
+              <li>Check your site speed at <a href="https://pagespeed.web.dev/" target="_blank" rel="noreferrer">PageSpeed Insights</a>. A mobile score below 50 is costing you customers today.</li>
+              <li>Count how many hours last week went to scheduling, follow-ups, or chasing invoices. That is your automation opportunity.</li>
+              <li>Search your own business on Google the way a new customer would. If you are not in the results, or your listing is incomplete, that is the first fix.</li>
+            </ul>
+            <p>
+              Most of the improvements that move the needle for small businesses are not
+              expensive or complicated. They are just changes that have not been made yet.
+            </p>
+
+            <div class="sources-block">
+              <h3>Sources</h3>
+              <ol>
+                <li>GE Capital Retail Bank, <em>Major Purchase Shopper Study</em> — 81% of consumers research online before buying in-store.</li>
+                <li><a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-to-store/" target="_blank" rel="noreferrer">Think With Google</a>, "Understanding Consumers' Local Search Behavior" — 76% of local mobile searches lead to a store visit within 24 hours; 28% result in a purchase.</li>
+                <li><a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noreferrer">BrightLocal</a>, Local Consumer Review Survey 2023 — consumer channel usage for finding local businesses.</li>
+                <li><a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="noreferrer">Google/SOASTA Research</a>, "The State of Online Retail Performance" — page load time and probability of bounce.</li>
+                <li>Portent, <em>Site Speed Is (Still) Impacting Your Conversion Rate</em> — 1-second improvement correlates with ~7% lift in conversions.</li>
+                <li>Salesforce, <em>Small Business Trends Report</em> — automation time-saving estimates by tool category.</li>
+                <li>Keap, <em>Small Business Efficiency Survey</em> — scheduling and follow-up labor hours for service businesses.</li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="article-cta">
+            <p>Want to know what changes would have the biggest impact on your business specifically?</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
