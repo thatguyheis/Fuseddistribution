@@ -338,35 +338,29 @@
         line-height: 1.65;
       }
 
-      /* Photo placeholder */
-      .photo-slot {
-        width: 100%;
-        border-radius: 16px;
-        border: 1px dashed rgba(88, 214, 255, 0.22);
-        background: rgba(88, 214, 255, 0.03);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 36px 24px;
+      /* Article photos */
+      .article-photo {
         margin: 32px 0;
-        text-align: center;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
       }
 
-      .photo-slot .photo-icon {
-        font-size: 2rem;
-        opacity: 0.4;
+      .article-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: center;
       }
 
-      .photo-slot .photo-caption {
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: rgba(88, 214, 255, 0.5);
-        max-width: 400px;
-        line-height: 1.5;
+      .article-photo figcaption {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        letter-spacing: 0.04em;
+        background: rgba(7, 16, 22, 0.6);
       }
 
       /* CTA */
@@ -597,10 +591,10 @@
               the most useful things a new buyer can learn.
             </p>
 
-            <div class="photo-slot" aria-hidden="true">
-              <div class="photo-icon">&#9788;</div>
-              <div class="photo-caption">Photo: A spread of circulated pre-1965 US coins on a dark surface &mdash; dimes, quarters, and a Morgan dollar</div>
-            </div>
+            <figure class="article-photo">
+              <img src="images/coins-spread.jpg" alt="Morgan dollars, a Peace dollar, half dollars, and a Valcambi silver bar stack spread out on a dark galaxy desk mat" loading="lazy" />
+              <figcaption>Morgan dollars (1901, 1896), a 1922 Peace dollar, circulated half dollars, and a Valcambi .999 fine silver bar stack &mdash; a mix of junk silver and bullion from Fused Reserve inventory.</figcaption>
+            </figure>
 
             <h2>The Name Has Nothing to Do With Quality</h2>
 
@@ -666,10 +660,10 @@
               that difference matters.
             </p>
 
-            <div class="photo-slot" aria-hidden="true">
-              <div class="photo-icon">&#9788;</div>
-              <div class="photo-caption">Photo: Close up of a coin dealer sorting through a tray of silver coins at a coin show table</div>
-            </div>
+            <figure class="article-photo">
+              <img src="images/junk-silver-lot.jpg" alt="Silver dimes in paper coin holders alongside a mixed loose lot of half dollars, quarters, and war nickels" loading="lazy" />
+              <figcaption>A typical junk silver lot: Roosevelt dimes in 2x2 holders, a coin roll, and a loose mix of 90% silver half dollars, quarters, and war nickels. Image: Wikimedia Commons (public domain).</figcaption>
+            </figure>
 
             <h2>How the Math Works</h2>
 
@@ -718,10 +712,10 @@
               </div>
             </div>
 
-            <div class="photo-slot" aria-hidden="true">
-              <div class="photo-icon">&#9788;</div>
-              <div class="photo-caption">Photo: Side view of a clad quarter showing the copper edge, placed next to a pre-1965 silver quarter on a light background</div>
-            </div>
+            <figure class="article-photo">
+              <img src="images/junk-silver-bags.jpg" alt="Two sealed bags of 90% silver US coins including quarters and dimes" loading="lazy" />
+              <figcaption>Two bags of 90% silver coins ready for fulfillment &mdash; dimes on the left, quarters on the right. This is how junk silver typically moves between dealers and buyers.</figcaption>
+            </figure>
 
             <h2>Building a Position Over Time</h2>
 
@@ -742,10 +736,10 @@
               shipping costs and higher premiums that eat into the value of what you are buying.
             </p>
 
-            <div class="photo-slot" aria-hidden="true">
-              <div class="photo-icon">&#9788;</div>
-              <div class="photo-caption">Photo: A small collection of junk silver coins in a person's open hand, shot from above</div>
-            </div>
+            <figure class="article-photo">
+              <img src="images/american-silver-coinage.jpg" alt="Various types of American silver coinage including Morgan dollars, Walking Liberty halves, Mercury dimes, and silver rounds" loading="lazy" />
+              <figcaption>A cross section of American silver coinage types: Morgan dollars, Walking Liberty halves, Mercury dimes, and modern .999 rounds. Each fills a different role in a silver position. Image: Wikimedia Commons (CC BY-SA 4.0).</figcaption>
+            </figure>
 
             <h2>How Fused Reserve Fits In</h2>
 
