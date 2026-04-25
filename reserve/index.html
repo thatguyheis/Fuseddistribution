@@ -706,12 +706,78 @@
         color: var(--silver);
       }
 
+      /* Past inventory gallery */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .gallery-card {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel-soft);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .gallery-card img {
+        display: block;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .gallery-card-body {
+        padding: 14px 16px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .gallery-label {
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .gallery-caption {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.88rem;
+        color: var(--muted);
+        line-height: 1.55;
+        margin: 0;
+      }
+
       .footer {
         padding: 22px 28px 34px;
         color: rgba(183, 191, 203, 0.72);
         text-align: center;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.92rem;
+      }
+
+      @media (max-width: 1080px) {
+        .hero-grid,
+        .two-up,
+        .grid-3,
+        .grid-4,
+        .plans,
+        .gallery-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       @media (max-width: 1080px) {
@@ -846,6 +912,7 @@
                 <a href="#plans" role="menuitem">Plans</a>
                 <a href="#benefits" role="menuitem">Benefits</a>
                 <a href="#inventory" role="menuitem">Inventory</a>
+                <a href="#past-inventory" role="menuitem">Past Inventory</a>
                 <a href="#join" role="menuitem">Join</a>
                 <div class="nav-dropdown-divider"></div>
                 <a href="/reserve/faq/" role="menuitem">FAQ</a>
@@ -1128,6 +1195,95 @@
                 from our sourcing network and pass the value directly to you.
               </p>
             </article>
+          </div>
+        </section>
+
+        <section id="past-inventory">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Past Inventory</div>
+              <h2>Real products from past subscriber orders</h2>
+            </div>
+            <p>
+              These are actual coins and silver sourced through the Fused Reserve network.
+              Every order is different depending on your preferences and what we find that
+              month. This is a sample of what has moved through past orders.
+            </p>
+          </div>
+          <div class="gallery-grid">
+
+            <article class="gallery-card">
+              <img src="images/morgan-dollar-lot.jpg" alt="Large lot of Morgan silver dollars in coin flips and holders spread on a wood table" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Silver Dollars</div>
+                <p class="gallery-caption">A Morgan dollar lot sourced from a local coin show — various dates and circulated grades, priced by silver content.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/mixed-silver-lot.jpg" alt="Morgan dollars, Peace dollar, half dollars, and a Valcambi silver bar stack on a dark mat" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Mixed Lot</div>
+                <p class="gallery-caption">Morgan dollars (1901, 1896), a 1922 Peace dollar, circulated half dollars, and a Valcambi .999 fine silver bar stack from a single sourcing run.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/walking-liberty-halves.jpg" alt="Seven Walking Liberty half dollar coins showing reverses on a galaxy desk mat" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Junk Silver</div>
+                <p class="gallery-caption">Walking Liberty half dollars — 90% silver, each containing 0.3617 oz. A classic junk silver find from a secondary market pick.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/1964-kennedy-bag.jpg" alt="Sealed bag labeled $100 Face 1964 Mint full of Kennedy half dollars" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Junk Silver</div>
+                <p class="gallery-caption">$100 face value bag of 1964 Kennedy halves — 90% silver, fresh from a coin dealer. Roughly 71.5 troy ounces of silver content.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/junk-silver-bags.jpg" alt="Two bags of 90% silver US coins including quarters and dimes" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Junk Silver</div>
+                <p class="gallery-caption">Bags of 90% silver Washington quarters and Roosevelt dimes ready for subscriber fulfillment. Sourced at or near spot.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/quarters-peace-eagle.jpg" alt="Washington quarters, Peace dollar, PCGS First Strike Silver Eagle, and silver rounds on a galaxy mat" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Mixed Lot</div>
+                <p class="gallery-caption">Washington quarters, a Peace dollar, a PCGS MS69 First Strike 2021 Silver Eagle Type 1, and silver rounds from a single sourcing session.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/silver-bars-rounds.jpg" alt="Silver bars in plastic sleeves, silver rounds, and a small gold bar on a dark mat" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Bullion</div>
+                <p class="gallery-caption">.999 fine silver bars and rounds alongside a 1g IBR fine gold bar. Bullion sourced through our dealer network for subscribers on the Best Price preference.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/silver-eagles-mixed.jpg" alt="American Silver Eagles in capsules including an NGC MS69 Early Releases graded coin and a mixed lot" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Bullion</div>
+                <p class="gallery-caption">American Silver Eagles in capsules, including an NGC MS69 Early Releases graded example. Mix of raw and certified coins from a secondary market find.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="images/pcgs-graded-slabs.jpg" alt="PCGS graded coin slabs including Silver Eagles MS70 and a Kennedy half PR69 DCAM" loading="lazy" />
+              <div class="gallery-card-body">
+                <div class="gallery-label">Numismatic</div>
+                <p class="gallery-caption">PCGS certified slabs: Silver Eagles graded MS70 and MS69, a Kennedy half PR69 DCAM, and a 1998-P Eagle PR69. Available to Collector Access subscribers.</p>
+              </div>
+            </article>
+
           </div>
         </section>
 
