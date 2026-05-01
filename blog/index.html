@@ -448,7 +448,85 @@
 
       <main class="main">
         <div id="post-list" class="post-grid">
-          <div class="empty-state">Loading posts&hellip;</div>
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-05-01">May 1, 2026</time>
+              <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
+            </div>
+            <h2><a href="/blog/silver-to-gold-ratio/">The Silver-to-Gold Ratio Explained</a></h2>
+            <p>Divide the gold spot price by silver's and you get the ratio. Right now it sits at roughly 60:1. Here is what that number means and how investors use it.</p>
+            <a class="read-more" href="/blog/silver-to-gold-ratio/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-30">April 30, 2026</time>
+              <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
+            </div>
+            <h2><a href="/blog/google-business-profile-setup/">How to Get Your Business Listed on Google</a></h2>
+            <p>Google Business Profile is free and takes 20 minutes. It is the fastest way to start showing up when someone nearby searches for what you do. Here is how to set it up right.</p>
+            <a class="read-more" href="/blog/google-business-profile-setup/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-25">April 25, 2026</time>
+              <div class="post-tags"><span class="pill">Silver</span><span class="pill">Buying Guide</span><span class="pill">Beginners</span></div>
+            </div>
+            <h2><a href="/blog/what-is-junk-silver/">What Is Junk Silver and Why Do So Many Stackers Start There?</a></h2>
+            <p>Junk silver sounds like something you'd find in a shoebox at a garage sale. The name is misleading. Here's what it actually means, how the math works, and why so many new silver buyers start here.</p>
+            <a class="read-more" href="/blog/what-is-junk-silver/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-23">April 23, 2026</time>
+              <div class="post-tags"><span class="pill">Websites</span><span class="pill">Technology</span><span class="pill">Local Business</span></div>
+            </div>
+            <h2><a href="/blog/what-a-website-is-worth/">What a Good Website Is Actually Worth to Your Business</a></h2>
+            <p>A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses.</p>
+            <a class="read-more" href="/blog/what-a-website-is-worth/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-22">April 22, 2026</time>
+              <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
+            </div>
+            <h2><a href="/blog/what-a-website-does-for-your-business/">What a Website Actually Does for Your Business</a></h2>
+            <p>Most customers search online before they ever call or walk in. Here is what having a website and a Google presence actually means for a local business, backed by real numbers.</p>
+            <a class="read-more" href="/blog/what-a-website-does-for-your-business/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-21">April 21, 2026</time>
+              <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
+            </div>
+            <h2><a href="/blog/dollar-cost-averaging-silver/">Why Dollar Cost Averaging Is the Smartest Way to Buy Silver</a></h2>
+            <p>Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time — less stress, better results, and no market-watching required.</p>
+            <a class="read-more" href="/blog/dollar-cost-averaging-silver/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-18">April 18, 2026</time>
+              <div class="post-tags"><span class="pill">Websites</span><span class="pill">Local Business</span></div>
+            </div>
+            <h2><a href="/blog/why-your-website-isnt-getting-customers/">Why Your Business Website Isn't Getting You Customers</a></h2>
+            <p>Having a website and having a website that brings in business are two different things. Here are the most common reasons local sites fall flat.</p>
+            <a class="read-more" href="/blog/why-your-website-isnt-getting-customers/">Read Article &rarr;</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="2026-04-18">April 18, 2026</time>
+              <div class="post-tags"><span class="pill">News</span><span class="pill">Updates</span></div>
+            </div>
+            <h2><a href="/blog/welcome-to-fused/">Welcome to the Fused Blog</a></h2>
+            <p>A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time.</p>
+            <a class="read-more" href="/blog/welcome-to-fused/">Read Article &rarr;</a>
+          </article>
         </div>
       </main>
 
@@ -465,32 +543,27 @@
         return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
       }
 
-      async function loadPosts() {
-        const list = document.getElementById('post-list');
-        try {
-          const res = await fetch('/blog/posts.json');
-          const posts = await res.json();
-          if (!posts.length) {
-            list.innerHTML = '<div class="empty-state">No posts yet — check back soon.</div>';
-            return;
-          }
-          list.innerHTML = posts.map(post => `
-            <article class="post-card">
-              <div class="post-meta">
-                <time datetime="${post.date}">${formatDate(post.date)}</time>
-                <div class="post-tags">${post.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
-              </div>
-              <h2><a href="/blog/${post.slug}/">${post.title}</a></h2>
-              <p>${post.excerpt}</p>
-              <a class="read-more" href="/blog/${post.slug}/">Read Article &rarr;</a>
-            </article>
-          `).join('');
-        } catch (e) {
-          list.innerHTML = '<div class="empty-state">Could not load posts. Please try again shortly.</div>';
-        }
+      function renderPosts(posts) {
+        return posts.map(post => `
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="${post.date}">${formatDate(post.date)}</time>
+              <div class="post-tags">${post.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
+            </div>
+            <h2><a href="/blog/${post.slug}/">${post.title}</a></h2>
+            <p>${post.excerpt}</p>
+            <a class="read-more" href="/blog/${post.slug}/">Read Article &rarr;</a>
+          </article>
+        `).join('');
       }
 
-      loadPosts();
+      // Silently refresh from posts.json — static HTML above is the SEO-visible baseline.
+      fetch('/blog/posts.json')
+        .then(r => r.json())
+        .then(posts => {
+          if (posts.length) document.getElementById('post-list').innerHTML = renderPosts(posts);
+        })
+        .catch(() => {});
     </script>
   </body>
 </html>
