@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authority Self-Assessment | Education | Fused Technology Solutions</title>
+    <meta name="description" content="Take the Hughes Authority Self-Assessment to discover where you stand across Confidence, Discipline, Leadership, Gratitude, and Enjoyment — and learn how self-awareness drives real business and personal growth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fuseddistribution.com/education/authority-assessment/" />
+    <meta property="og:site_name" content="Fused Technology Solutions" />
+    <meta property="og:title" content="Authority Self-Assessment | Fused Education" />
+    <meta property="og:description" content="Discover your behavioral baseline across 5 core traits. Built on Chase Hughes' Authority Assessment Matrix — the first step to intentional growth." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Authority Self-Assessment | Fused Education" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/og-image.png" />
+    <meta property="og:image" content="https://fuseddistribution.com/og-image.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#07131a" />
+    <meta name="author" content="Fused Distribution" />
+    <link rel="canonical" href="https://fuseddistribution.com/education/authority-assessment/" />
+    <style>
+      :root {
+        --bg: #07131a;
+        --bg-soft: #0d1f29;
+        --panel: rgba(11, 24, 32, 0.82);
+        --panel-strong: rgba(9, 18, 24, 0.94);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+        --gold: #f5c842;
+        --gold-dim: rgba(245, 200, 66, 0.14);
+        --glow: 0 0 34px rgba(88, 214, 255, 0.18);
+        --glow-gold: 0 0 40px rgba(245, 200, 66, 0.14);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+        border-radius: 28px;
+      }
+
+      .topbar, .hero, .main, .footer { position: relative; z-index: 1; }
+
+      /* ── Nav ── */
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        position: sticky;
+        top: 0;
+        z-index: 500;
+        border-radius: 28px 28px 0 0;
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover, .nav-toggle:focus-visible, .nav-toggle.active,
+      .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1; visibility: visible; pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover, .nav-dropdown a:focus-visible, .nav-dropdown a.active {
+        background: rgba(97, 255, 215, 0.08);
+        color: var(--accent);
+      }
+      .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+
+      /* ── Hero ── */
+      .hero {
+        padding: 70px 54px 54px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0 auto 18px;
+        max-width: 820px;
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.02;
+      }
+
+      h2 {
+        margin: 0;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 1.35rem;
+      }
+
+      p { margin: 0; color: var(--muted); line-height: 1.75; }
+
+      .hero-sub {
+        max-width: 600px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      /* ── Main ── */
+      .main { padding: 60px 54px 72px; }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 24px;
+        margin-bottom: 32px;
+      }
+      .section-head p { max-width: 500px; margin: 0; font-size: 0.96rem; }
+
+      .section-divider { height: 1px; background: var(--line); margin: 60px 0; }
+
+      .section-label {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(87, 219, 255, 0.16);
+        background: rgba(88, 214, 255, 0.06);
+        color: var(--accent);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      /* ── Why it matters ── */
+      .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        margin-top: 32px;
+      }
+
+      .intro-card {
+        padding: 32px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel);
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .intro-card .icon {
+        font-size: 1.8rem;
+        line-height: 1;
+      }
+
+      .intro-card h3 { font-size: 1.1rem; }
+
+      .intro-card p { font-size: 0.92rem; line-height: 1.75; }
+
+      /* ── Traits explainer ── */
+      .traits-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .trait-card {
+        padding: 24px 20px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .trait-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(88, 214, 255, 0.2);
+      }
+
+      .trait-icon { font-size: 1.6rem; line-height: 1; }
+
+      .trait-name {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.05rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .trait-card p { font-size: 0.84rem; line-height: 1.65; }
+
+      .trait-business {
+        font-size: 0.78rem;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background: rgba(88, 214, 255, 0.06);
+        border: 1px solid rgba(88, 214, 255, 0.12);
+        color: var(--accent);
+        line-height: 1.5;
+      }
+
+      /* ── Scale explainer ── */
+      .scale-row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      .scale-step {
+        padding: 20px 16px;
+        border-radius: 18px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .scale-num {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      .scale-name {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .scale-desc { font-size: 0.8rem; line-height: 1.55; }
+
+      .step-1 { background: rgba(192, 57, 43, 0.1); border: 1px solid rgba(192, 57, 43, 0.25); }
+      .step-1 .scale-num, .step-1 .scale-name { color: #e74c3c; }
+      .step-2 { background: rgba(211, 84, 0, 0.1); border: 1px solid rgba(211, 84, 0, 0.25); }
+      .step-2 .scale-num, .step-2 .scale-name { color: #e67e22; }
+      .step-3 { background: rgba(212, 172, 13, 0.1); border: 1px solid rgba(212, 172, 13, 0.25); }
+      .step-3 .scale-num, .step-3 .scale-name { color: #d4ac0d; }
+      .step-4 { background: rgba(39, 174, 96, 0.1); border: 1px solid rgba(39, 174, 96, 0.25); }
+      .step-4 .scale-num, .step-4 .scale-name { color: #2ecc71; }
+      .step-5 { background: rgba(41, 128, 185, 0.1); border: 1px solid rgba(41, 128, 185, 0.25); }
+      .step-5 .scale-num, .step-5 .scale-name { color: #3498db; }
+
+      /* ── Assessment ── */
+      .assessment-wrap {
+        margin-top: 40px;
+      }
+
+      .trait-section {
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 24px;
+        padding: 36px;
+        margin-bottom: 22px;
+      }
+
+      .trait-title {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .question { margin-bottom: 28px; }
+      .question:last-child { margin-bottom: 0; }
+
+      .question p {
+        font-weight: 700;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: var(--text);
+      }
+
+      .options label {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--muted);
+        transition: background 0.15s, color 0.15s;
+        margin-bottom: 4px;
+        border: 1px solid transparent;
+      }
+
+      .options label:hover {
+        background: rgba(88, 214, 255, 0.06);
+        border-color: rgba(88, 214, 255, 0.14);
+        color: var(--text);
+      }
+
+      .options input[type=radio] {
+        margin-top: 3px;
+        accent-color: var(--accent);
+        flex-shrink: 0;
+      }
+
+      .options input[type=radio]:checked + span { color: var(--text); font-weight: 600; }
+
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 18px 22px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #041117;
+        border: none;
+        border-radius: 18px;
+        font-size: 1.05rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 32px;
+        box-shadow: var(--glow);
+        transition: opacity 0.2s;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
+      .submit-btn:hover { opacity: 0.85; }
+
+      /* ── Results ── */
+      #results { display: none; margin-top: 3rem; }
+
+      #results h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 28px;
+      }
+
+      .result-card {
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 20px;
+        padding: 28px;
+        margin-bottom: 16px;
+      }
+
+      .result-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .result-trait {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+      }
+
+      .result-level {
+        font-size: 0.76rem;
+        font-weight: 800;
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .level-1 { background: rgba(192, 57, 43, 0.2); color: #e74c3c; }
+      .level-2 { background: rgba(211, 84, 0, 0.2); color: #e67e22; }
+      .level-3 { background: rgba(212, 172, 13, 0.2); color: #d4ac0d; }
+      .level-4 { background: rgba(39, 174, 96, 0.2); color: #2ecc71; }
+      .level-5 { background: rgba(41, 128, 185, 0.2); color: #3498db; }
+
+      .score-label { font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; }
+
+      .score-bar-container {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 4px;
+        height: 8px;
+        margin-bottom: 12px;
+      }
+
+      .score-bar { height: 100%; border-radius: 4px; transition: width 1s ease; }
+
+      .result-description { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+
+      .overall-box {
+        text-align: center;
+        margin-top: 28px;
+        padding: 40px;
+        background: linear-gradient(135deg, rgba(88, 214, 255, 0.07), rgba(77, 255, 184, 0.05));
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        border-radius: 24px;
+        box-shadow: var(--glow);
+      }
+
+      .big-score {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 5rem;
+        font-weight: 800;
+        color: var(--accent);
+        line-height: 1;
+        text-shadow: 0 0 40px rgba(88, 214, 255, 0.35);
+      }
+
+      .overall-box p { color: var(--muted); font-size: 0.9rem; margin-top: 12px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+      /* ── Next steps ── */
+      .next-steps-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 18px;
+        margin-top: 32px;
+      }
+
+      .next-step {
+        padding: 26px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: var(--panel);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .next-step .step-num {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2rem;
+        color: var(--accent);
+        opacity: 0.4;
+        line-height: 1;
+      }
+
+      .next-step h3 { font-size: 1rem; }
+      .next-step p { font-size: 0.86rem; line-height: 1.7; }
+
+      /* ── Buttons ── */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: var(--glow);
+      }
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(88, 214, 255, 0.05);
+        color: var(--text);
+      }
+
+      /* ── CTA strip ── */
+      .cta-strip {
+        margin-top: 60px;
+        background: linear-gradient(135deg, rgba(88, 214, 255, 0.07), rgba(77, 255, 184, 0.05));
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        border-radius: 20px;
+        padding: 52px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .cta-strip h2 { font-size: 1.7rem; margin: 0 0 10px; }
+      .cta-strip p { margin: 0; font-size: 0.95rem; }
+      .cta-strip-actions { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
+
+      /* ── Footer ── */
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        position: relative;
+        z-index: 1;
+      }
+      .footer a { color: inherit; opacity: 0.7; text-decoration: underline; }
+
+      .breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+        color: var(--muted);
+        justify-content: center;
+      }
+      .breadcrumb a { color: var(--muted); }
+      .breadcrumb a:hover { color: var(--accent); }
+      .breadcrumb span { opacity: 0.4; }
+
+      .reset-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 22px;
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        border-radius: 10px;
+        font-size: 0.84rem;
+        cursor: pointer;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        transition: background 0.15s;
+      }
+      .reset-btn:hover { background: rgba(88, 214, 255, 0.08); }
+
+      /* ── Responsive ── */
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .hero, .main { padding-left: 26px; padding-right: 26px; }
+        .traits-grid { grid-template-columns: 1fr 1fr; }
+        .scale-row { grid-template-columns: 1fr 1fr; }
+        .intro-grid { grid-template-columns: 1fr; }
+        .next-steps-grid { grid-template-columns: 1fr 1fr; }
+        .cta-strip { flex-direction: column; align-items: flex-start; }
+        .section-head { flex-direction: column; align-items: flex-start; }
+      }
+
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { border-radius: 22px 22px 0 0; }
+        h1 { font-size: 2.2rem; }
+        .hero { padding: 44px 20px 40px; }
+        .main { padding: 36px 20px 52px; }
+        .traits-grid { grid-template-columns: 1fr; }
+        .scale-row { grid-template-columns: 1fr 1fr; }
+        .next-steps-grid { grid-template-columns: 1fr; }
+        .trait-section { padding: 24px; }
+        .cta-strip { padding: 36px 24px; }
+        .topbar { padding: 16px 20px; }
+      }
+
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle active" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem" class="active">Authority Assessment</a>
+              </div>
+            </div>
+
+            <a href="/blog/">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ── Hero ── -->
+      <section class="hero">
+        <div class="breadcrumb">
+          <a href="/education/">Education</a>
+          <span>›</span>
+          <span style="color: var(--accent);">Authority Assessment</span>
+        </div>
+        <div class="eyebrow">Self-Assessment Tool</div>
+        <h1>Know Your Authority.<br>Build Your Influence.</h1>
+        <p class="hero-sub">
+          Most people assume they're operating at a higher level than they actually are.
+          The Hughes Authority Self-Assessment gives you a measurable baseline across the
+          five behavioral traits that determine how much influence you carry — in business
+          and in life.
+        </p>
+      </section>
+
+      <main class="main">
+
+        <!-- ── Why It Matters ── -->
+        <section id="why">
+          <div class="section-head">
+            <div>
+              <div class="section-label">Why This Matters</div>
+              <h2>Self-Awareness Is a<br>Business Advantage</h2>
+            </div>
+            <p>You can't improve what you haven't measured. Knowing your actual behavioral baseline — not the one you imagine — is the foundation of intentional growth, both personally and professionally.</p>
+          </div>
+
+          <div class="intro-grid">
+            <div class="intro-card">
+              <div class="icon">🎯</div>
+              <h3>The Gap Between Intention and Impact</h3>
+              <p>
+                Most operators and leaders believe they're communicating confidence, inspiring their teams, and handling stress well. The data says otherwise. The gap between how we intend to show up and how we actually do is where businesses stall, relationships erode, and momentum dies.
+              </p>
+              <p style="margin-top: 12px;">
+                Self-assessment doesn't just reveal weaknesses — it reveals your <em>real</em> strengths, the ones worth building on. Knowing exactly where you stand makes every coaching conversation, every goal you set, and every habit you try to build dramatically more effective.
+              </p>
+            </div>
+
+            <div class="intro-card">
+              <div class="icon">📈</div>
+              <h3>Behavioral Traits Compound Like Assets</h3>
+              <p>
+                The five traits in this assessment — Confidence, Discipline, Leadership, Gratitude, and Enjoyment — aren't soft skills. They are the invisible infrastructure of every business relationship, every sale, every hire, every client retained. People buy from and stay loyal to people they trust, enjoy, and are inspired by.
+              </p>
+              <p style="margin-top: 12px;">
+                When these traits are operating at the Inspirational or Contagious level, they generate compounding returns: referrals come unsolicited, teams self-organize, clients renew without being asked. That's not luck — it's behavioral leverage.
+              </p>
+            </div>
+
+            <div class="intro-card">
+              <div class="icon">🔁</div>
+              <h3>A Baseline You Can Return To</h3>
+              <p>
+                Growth without measurement is guesswork. This assessment gives you a snapshot of where you are today across five dimensions that directly influence your output as a business owner, operator, or leader. Retake it in 90 days and you'll have real evidence of progress — or an honest signal that something needs to shift.
+              </p>
+              <p style="margin-top: 12px;">
+                Most people never take this step. They operate on assumptions about themselves, then wonder why results stay flat. A 10-minute assessment today can change the direction of the next 90 days.
+              </p>
+            </div>
+
+            <div class="intro-card">
+              <div class="icon">🌐</div>
+              <h3>Authority Is Contagious — In Both Directions</h3>
+              <p>
+                Chase Hughes built the Authority framework around a core insight: your behavioral traits don't stay with you. They spread. A leader operating at Level 1 in Confidence pulls everyone around them down. A leader at Level 5 lifts the entire room — employees, clients, partners — without trying.
+              </p>
+              <p style="margin-top: 12px;">
+                For business owners, this is the highest-leverage thing you can work on. Your team, your brand voice, your client experience — all of it is downstream of how you show up. The assessment tells you exactly where to start.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ── The 5 Traits ── -->
+        <section id="traits">
+          <div class="section-head">
+            <div>
+              <div class="section-label">The Framework</div>
+              <h2>Five Traits. One Profile.</h2>
+            </div>
+            <p>Each trait maps directly to outcomes in your business and personal life. Low scores are starting points, not judgments — the framework is built to show you exactly what to work on next.</p>
+          </div>
+
+          <div class="traits-grid">
+            <div class="trait-card">
+              <div class="trait-icon">💪</div>
+              <div class="trait-name">Confidence</div>
+              <p>How you carry yourself in social and professional situations. Not arrogance — the quiet, settled certainty that lets you engage anyone, take action without hesitation, and receive feedback without crumbling.</p>
+              <div class="trait-business">Business impact: client trust, sales conversations, negotiation, networking</div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">⚙️</div>
+              <div class="trait-name">Discipline</div>
+              <p>Your ability to build systems around yourself — habits, routines, financial plans, goals — and execute them consistently regardless of how enjoyable they are in the moment.</p>
+              <div class="trait-business">Business impact: delivery consistency, financial health, team reliability, execution</div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">🧭</div>
+              <div class="trait-name">Leadership</div>
+              <p>How you show up when things go wrong, how you treat the people around you, and whether your behavior inspires others to operate at a higher level — even when you're not in the room.</p>
+              <div class="trait-business">Business impact: team culture, retention, delegation, client relationships</div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">🌱</div>
+              <div class="trait-name">Gratitude</div>
+              <p>Your baseline orientation toward what you have versus what's missing. Genuine gratitude isn't just a mindset — it's a social signal that generates loyalty, resilience, and long-term thinking.</p>
+              <div class="trait-business">Business impact: customer retention, team morale, resilience in downturns, reputation</div>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon">⚡</div>
+              <div class="trait-name">Enjoyment</div>
+              <p>Whether you experience life as something that happens to you or something you bring energy to. High-enjoyment operators are magnetic — their momentum is visible, and it draws people in.</p>
+              <div class="trait-business">Business impact: personal brand, creative output, sustainability, referral generation</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ── The Scale ── -->
+        <section id="scale">
+          <div class="section-head">
+            <div>
+              <div class="section-label">The Scale</div>
+              <h2>From Burden to Contagious</h2>
+            </div>
+            <p>Each trait is measured on a five-point scale. The goal isn't to be at Level 5 everywhere — it's to know where you are and move deliberately.</p>
+          </div>
+
+          <div class="scale-row">
+            <div class="scale-step step-1">
+              <div class="scale-num">1</div>
+              <div class="scale-name">Burden</div>
+              <p class="scale-desc">These behaviors are creating drag — for you and the people around you. The first and hardest step is honest recognition.</p>
+            </div>
+            <div class="scale-step step-2">
+              <div class="scale-num">2</div>
+              <div class="scale-name">Developing</div>
+              <p class="scale-desc">You're aware of the gap and beginning to shift, but old patterns still dominate. Progress here is visible and fast when targeted.</p>
+            </div>
+            <div class="scale-step step-3">
+              <div class="scale-num">3</div>
+              <div class="scale-name">Positive</div>
+              <p class="scale-desc">You're operating at a healthy, constructive level. Others respond well to you. Intentional deepening is what moves the needle now.</p>
+            </div>
+            <div class="scale-step step-4">
+              <div class="scale-num">4</div>
+              <div class="scale-name">Inspirational</div>
+              <p class="scale-desc">You actively lift others. Your behavior sets a standard people around you begin emulating. Consistency across all conditions is the frontier.</p>
+            </div>
+            <div class="scale-step step-5">
+              <div class="scale-num">5</div>
+              <div class="scale-name">Contagious</div>
+              <p class="scale-desc">This quality spreads automatically. People become better just by being around you. Rare, and the most powerful position to operate from.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ── Assessment ── -->
+        <section id="assessment">
+          <div class="section-head">
+            <div>
+              <div class="section-label">The Assessment</div>
+              <h2>25 Questions. Honest Answers.</h2>
+            </div>
+            <p>Answer based on how you actually behave — not how you'd like to. The results are only useful if the input is honest. Takes about 8–10 minutes.</p>
+          </div>
+
+          <div class="assessment-wrap">
+            <form id="assessment-form">
+
+              <!-- CONFIDENCE -->
+              <div class="trait-section">
+                <div class="trait-title"><span>💪</span> Confidence</div>
+
+                <div class="question">
+                  <p>1. When you're in a social situation with people you don't know...</p>
+                  <div class="options">
+                    <label><input type="radio" name="c1" value="1"><span>I feel panic or actively avoid engaging.</span></label>
+                    <label><input type="radio" name="c1" value="2"><span>I can manage if the setting feels safe, but it's uncomfortable.</span></label>
+                    <label><input type="radio" name="c1" value="3"><span>I start conversations comfortably and become genuinely curious about people.</span></label>
+                    <label><input type="radio" name="c1" value="4"><span>I engage strangers naturally and encourage others' confidence in the process.</span></label>
+                    <label><input type="radio" name="c1" value="5"><span>I engage anyone, anywhere — my confidence is visibly contagious in the room.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>2. When you receive criticism from others...</p>
+                  <div class="options">
+                    <label><input type="radio" name="c2" value="1"><span>It hits hard — I take it very personally and it lingers.</span></label>
+                    <label><input type="radio" name="c2" value="2"><span>It stings, and I often doubt my own judgment afterward.</span></label>
+                    <label><input type="radio" name="c2" value="3"><span>I can receive it and use it constructively most of the time.</span></label>
+                    <label><input type="radio" name="c2" value="4"><span>I thank people for respectful criticism and apply it right away.</span></label>
+                    <label><input type="radio" name="c2" value="5"><span>I receive it well regardless of the source — it never shakes my self-image.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>3. Where does your sense of self-worth primarily come from?</p>
+                  <div class="options">
+                    <label><input type="radio" name="c3" value="1"><span>What others think of me and how I compare to them.</span></label>
+                    <label><input type="radio" name="c3" value="2"><span>A mix — I rely on validation but I'm somewhat aware of it.</span></label>
+                    <label><input type="radio" name="c3" value="3"><span>Mostly my own standards, though I sometimes reassure myself with accomplishments.</span></label>
+                    <label><input type="radio" name="c3" value="4"><span>My internal compass — I rarely need reassurance from others.</span></label>
+                    <label><input type="radio" name="c3" value="5"><span>Nowhere in particular — I have no need for reassurance whatsoever.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>4. When you disagree with someone...</p>
+                  <div class="options">
+                    <label><input type="radio" name="c4" value="1"><span>I back down or go silent to avoid conflict.</span></label>
+                    <label><input type="radio" name="c4" value="2"><span>I want to say something, but I usually hold back.</span></label>
+                    <label><input type="radio" name="c4" value="3"><span>I can voice my view, though it sometimes feels uncomfortable.</span></label>
+                    <label><input type="radio" name="c4" value="4"><span>I disagree tactfully while keeping the relationship intact.</span></label>
+                    <label><input type="radio" name="c4" value="5"><span>I model calm, confident disagreement — others learn from watching me do it.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>5. How would you describe your social presence and body language day-to-day?</p>
+                  <div class="options">
+                    <label><input type="radio" name="c5" value="1"><span>I often slouch, check my phone, or feel inferior around strangers.</span></label>
+                    <label><input type="radio" name="c5" value="2"><span>I'm mostly present but overthink what others think of me.</span></label>
+                    <label><input type="radio" name="c5" value="3"><span>I can be fully in the moment and genuinely interested in people.</span></label>
+                    <label><input type="radio" name="c5" value="4"><span>My presence influences and encourages the people around me.</span></label>
+                    <label><input type="radio" name="c5" value="5"><span>Others emulate my behavior and personality traits.</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DISCIPLINE -->
+              <div class="trait-section">
+                <div class="trait-title"><span>⚙️</span> Discipline</div>
+
+                <div class="question">
+                  <p>6. How consistent is your daily routine?</p>
+                  <div class="options">
+                    <label><input type="radio" name="d1" value="1"><span>I have no routine. Tasks and personal upkeep are frequently neglected.</span></label>
+                    <label><input type="radio" name="d1" value="2"><span>I do what's enjoyable; everything else tends to get skipped.</span></label>
+                    <label><input type="radio" name="d1" value="3"><span>I get the important things done most days and wake up mostly on time.</span></label>
+                    <label><input type="radio" name="d1" value="4"><span>I follow a schedule, plan ahead, and keep a neat environment and appearance.</span></label>
+                    <label><input type="radio" name="d1" value="5"><span>My discipline is automatic and consistent — others are inspired watching me.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>7. How do you approach goals?</p>
+                  <div class="options">
+                    <label><input type="radio" name="d2" value="1"><span>I don't set goals, or I set them and abandon them quickly.</span></label>
+                    <label><input type="radio" name="d2" value="2"><span>I set goals but frequently neglect them or give up after setbacks.</span></label>
+                    <label><input type="radio" name="d2" value="3"><span>I set goals with intent and make reasonable plans to reach them.</span></label>
+                    <label><input type="radio" name="d2" value="4"><span>I consistently accomplish goals and their milestones; others follow my lead.</span></label>
+                    <label><input type="radio" name="d2" value="5"><span>My goal discipline creates a desire for self-discipline in those around me.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>8. When a task isn't fun or enjoyable...</p>
+                  <div class="options">
+                    <label><input type="radio" name="d3" value="1"><span>I avoid it or give up entirely.</span></label>
+                    <label><input type="radio" name="d3" value="2"><span>I might get to it eventually, but with a lot of internal resistance.</span></label>
+                    <label><input type="radio" name="d3" value="3"><span>I get it done, though electronics or distractions sometimes pull me off track.</span></label>
+                    <label><input type="radio" name="d3" value="4"><span>I prioritize it over enjoyment — I say "no" when priorities don't align.</span></label>
+                    <label><input type="radio" name="d3" value="5"><span>I model doing hard things without complaint — it's visibly contagious.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>9. How are your financial habits?</p>
+                  <div class="options">
+                    <label><input type="radio" name="d4" value="1"><span>Impulsive spending, poor budgeting, no real financial plan.</span></label>
+                    <label><input type="radio" name="d4" value="2"><span>Somewhat impulsive — I'm aware of it but don't fully control it.</span></label>
+                    <label><input type="radio" name="d4" value="3"><span>Reasonable — I make mostly sensible decisions and avoid needless spending.</span></label>
+                    <label><input type="radio" name="d4" value="4"><span>I budget, plan financially, and make responsible choices consistently.</span></label>
+                    <label><input type="radio" name="d4" value="5"><span>I manage finances on a disciplined plan and inspire others to do the same.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>10. When it comes to forming new habits...</p>
+                  <div class="options">
+                    <label><input type="radio" name="d5" value="1"><span>I try and quit quickly — new habits rarely stick.</span></label>
+                    <label><input type="radio" name="d5" value="2"><span>I start strong but get distracted and fall off within weeks.</span></label>
+                    <label><input type="radio" name="d5" value="3"><span>I can form habits with deliberate, consistent effort.</span></label>
+                    <label><input type="radio" name="d5" value="4"><span>I form habits reliably, maintain my environment, and keep a neat appearance.</span></label>
+                    <label><input type="radio" name="d5" value="5"><span>I form habits easily without distraction — and it rubs off on others.</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LEADERSHIP -->
+              <div class="trait-section">
+                <div class="trait-title"><span>🧭</span> Leadership</div>
+
+                <div class="question">
+                  <p>11. When something goes wrong in your work or life...</p>
+                  <div class="options">
+                    <label><input type="radio" name="l1" value="1"><span>I blame others or my circumstances.</span></label>
+                    <label><input type="radio" name="l1" value="2"><span>I know it's partly on me, but I struggle to fully own it or communicate it clearly.</span></label>
+                    <label><input type="radio" name="l1" value="3"><span>I take responsibility, communicate clearly, and set a positive example.</span></label>
+                    <label><input type="radio" name="l1" value="4"><span>I own it, credit others generously, and am genuinely concerned with their development.</span></label>
+                    <label><input type="radio" name="l1" value="5"><span>My composure under failure is contagious — it builds trust automatically.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>12. How do you treat the people around you (team, family, friends)?</p>
+                  <div class="options">
+                    <label><input type="radio" name="l2" value="1"><span>I sometimes put others down or take credit for their contributions.</span></label>
+                    <label><input type="radio" name="l2" value="2"><span>I'm mostly focused on myself — not actively invested in others' growth.</span></label>
+                    <label><input type="radio" name="l2" value="3"><span>I make people feel comfortable and set a mostly positive example.</span></label>
+                    <label><input type="radio" name="l2" value="4"><span>I'm genuinely invested in others' development and make them feel significant and interesting.</span></label>
+                    <label><input type="radio" name="l2" value="5"><span>My leadership spreads — the people I lead start leading others the same way.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>13. Under pressure or stress, you...</p>
+                  <div class="options">
+                    <label><input type="radio" name="l3" value="1"><span>Lose composure — outbursts or shutdowns are common.</span></label>
+                    <label><input type="radio" name="l3" value="2"><span>Handle some stress but let some of it leak onto the people around me.</span></label>
+                    <label><input type="radio" name="l3" value="3"><span>Stay composed most of the time and communicate through difficult moments.</span></label>
+                    <label><input type="radio" name="l3" value="4"><span>Persevere — others notice and are inspired by how I handle it.</span></label>
+                    <label><input type="radio" name="l3" value="5"><span>My composure under stress is contagious and builds automatic trust.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>14. How honest and direct are you in communication?</p>
+                  <div class="options">
+                    <label><input type="radio" name="l4" value="1"><span>I frequently exaggerate, inflate stories, or avoid hard conversations entirely.</span></label>
+                    <label><input type="radio" name="l4" value="2"><span>I'm mostly honest but soften things too much or talk around hard topics.</span></label>
+                    <label><input type="radio" name="l4" value="3"><span>I communicate clearly and display humility when I can.</span></label>
+                    <label><input type="radio" name="l4" value="4"><span>I'm honest and tactful even with bad news — I display humility always.</span></label>
+                    <label><input type="radio" name="l4" value="5"><span>I never take credit for team work and always look for the best in others.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>15. Over time, how do others respond to your example?</p>
+                  <div class="options">
+                    <label><input type="radio" name="l5" value="1"><span>I set a low bar — others don't look to me for guidance.</span></label>
+                    <label><input type="radio" name="l5" value="2"><span>People follow my lead occasionally, usually when I'm in a good mood.</span></label>
+                    <label><input type="radio" name="l5" value="3"><span>I set a positive example and most people respond well to it.</span></label>
+                    <label><input type="radio" name="l5" value="4"><span>I inspire genuine growth in the people around me.</span></label>
+                    <label><input type="radio" name="l5" value="5"><span>My leadership is self-replicating — it spreads well beyond me.</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GRATITUDE -->
+              <div class="trait-section">
+                <div class="trait-title"><span>🌱</span> Gratitude</div>
+
+                <div class="question">
+                  <p>16. How would you describe your general daily outlook?</p>
+                  <div class="options">
+                    <label><input type="radio" name="g1" value="1"><span>Mostly negative — depression or worry about the future dominates my days.</span></label>
+                    <label><input type="radio" name="g1" value="2"><span>I worry even when things are okay; positivity requires a significant trigger.</span></label>
+                    <label><input type="radio" name="g1" value="3"><span>I can see the positive side most of the time, especially when reminded.</span></label>
+                    <label><input type="radio" name="g1" value="4"><span>I feel grateful throughout the day for small things, without prompting.</span></label>
+                    <label><input type="radio" name="g1" value="5"><span>My sense of gratitude is socially magnetic — others catch it just by being around me.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>17. How often do you express appreciation to others?</p>
+                  <div class="options">
+                    <label><input type="radio" name="g2" value="1"><span>Rarely or never — I don't thank people or try to repay favors.</span></label>
+                    <label><input type="radio" name="g2" value="2"><span>Mostly not — only when something major happens.</span></label>
+                    <label><input type="radio" name="g2" value="3"><span>When it's needed or appropriate.</span></label>
+                    <label><input type="radio" name="g2" value="4"><span>Openly and regularly — I consciously look for the best in others.</span></label>
+                    <label><input type="radio" name="g2" value="5"><span>Through both words and actions, daily — it's automatic and contagious.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>18. When setbacks or hardships occur...</p>
+                  <div class="options">
+                    <label><input type="radio" name="g3" value="1"><span>They overwhelm me and ruin most of my day or week.</span></label>
+                    <label><input type="radio" name="g3" value="2"><span>I'm easily shut down — recovery takes a long time.</span></label>
+                    <label><input type="radio" name="g3" value="3"><span>I can get through it and eventually find the positive angle.</span></label>
+                    <label><input type="radio" name="g3" value="4"><span>I feel thoroughly thankful and point out positives even in "negative" events.</span></label>
+                    <label><input type="radio" name="g3" value="5"><span>I appreciate what others grow bitter about — and others notice and follow.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>19. How do you relate to what you have in life (shelter, health, relationships)?</p>
+                  <div class="options">
+                    <label><input type="radio" name="g4" value="1"><span>I have a strong sense of entitlement and rarely notice what I have.</span></label>
+                    <label><input type="radio" name="g4" value="2"><span>I sometimes feel entitled and don't often appreciate life's basics.</span></label>
+                    <label><input type="radio" name="g4" value="3"><span>I feel grateful when reminded to count my blessings.</span></label>
+                    <label><input type="radio" name="g4" value="4"><span>I count my blessings without needing a reminder — consistently.</span></label>
+                    <label><input type="radio" name="g4" value="5"><span>I create grateful people around me through my behavior alone.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>20. When others are succeeding or happy...</p>
+                  <div class="options">
+                    <label><input type="radio" name="g5" value="1"><span>I compare myself to them and often feel worse.</span></label>
+                    <label><input type="radio" name="g5" value="2"><span>I can feel happy for them, but it takes effort.</span></label>
+                    <label><input type="radio" name="g5" value="3"><span>I can genuinely share in their happiness most of the time.</span></label>
+                    <label><input type="radio" name="g5" value="4"><span>I experience genuine gratitude for others' happiness.</span></label>
+                    <label><input type="radio" name="g5" value="5"><span>My gratitude for others is contagious and creates a thankful environment.</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ENJOYMENT -->
+              <div class="trait-section">
+                <div class="trait-title"><span>⚡</span> Enjoyment</div>
+
+                <div class="question">
+                  <p>21. What most determines whether you have a good day?</p>
+                  <div class="options">
+                    <label><input type="radio" name="e1" value="1"><span>External events — other people, traffic, what happened at work.</span></label>
+                    <label><input type="radio" name="e1" value="2"><span>Mostly external, though I try to manage my attitude.</span></label>
+                    <label><input type="radio" name="e1" value="3"><span>A mix — I experience a mostly positive life but the outside world affects me.</span></label>
+                    <label><input type="radio" name="e1" value="4"><span>I need no environmental event to enjoy the moment.</span></label>
+                    <label><input type="radio" name="e1" value="5"><span>My well-being is magnetic — I'm the "rock" that others anchor to in any situation.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>22. How do you handle difficult or unpleasant situations?</p>
+                  <div class="options">
+                    <label><input type="radio" name="e2" value="1"><span>I criticize others, complain frequently, or feel like something is working against me.</span></label>
+                    <label><input type="radio" name="e2" value="2"><span>I have frequent self-doubt and sometimes spread my stress to others.</span></label>
+                    <label><input type="radio" name="e2" value="3"><span>I can overcome negative thoughts most of the time and avoid negative discussions.</span></label>
+                    <label><input type="radio" name="e2" value="4"><span>I complain only when absolutely necessary — I very rarely criticize others.</span></label>
+                    <label><input type="radio" name="e2" value="5"><span>I endure hardships without overwhelm — seen by all as the example of composure.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>23. What motivates your goals?</p>
+                  <div class="options">
+                    <label><input type="radio" name="e3" value="1"><span>Avoiding pain or discomfort — if I set any goals at all.</span></label>
+                    <label><input type="radio" name="e3" value="2"><span>Mostly avoidance, with some positive goals mixed in.</span></label>
+                    <label><input type="radio" name="e3" value="3"><span>A mix — some avoidance, some positive aspiration.</span></label>
+                    <label><input type="radio" name="e3" value="4"><span>Positive outcomes — I set positive goals and share them openly.</span></label>
+                    <label><input type="radio" name="e3" value="5"><span>Encouraging and contributing to others in their goals, dreams, and lives.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>24. What kind of impact do you have on the people around you?</p>
+                  <div class="options">
+                    <label><input type="radio" name="e4" value="1"><span>Negative — my attitude brings people down.</span></label>
+                    <label><input type="radio" name="e4" value="2"><span>Neutral to slightly positive, depending on my mood.</span></label>
+                    <label><input type="radio" name="e4" value="3"><span>Mostly positive — people generally enjoy being around me.</span></label>
+                    <label><input type="radio" name="e4" value="4"><span>I create positive experiences for others in conversation and during stressful times.</span></label>
+                    <label><input type="radio" name="e4" value="5"><span>I measurably contribute to others' lives — sometimes just through my presence.</span></label>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <p>25. How do you approach situations or tasks you don't enjoy?</p>
+                  <div class="options">
+                    <label><input type="radio" name="e5" value="1"><span>I start and stop as soon as it stops being enjoyable.</span></label>
+                    <label><input type="radio" name="e5" value="2"><span>I endure them only as long as I have to.</span></label>
+                    <label><input type="radio" name="e5" value="3"><span>I get through them and avoid complaining or negative discussion.</span></label>
+                    <label><input type="radio" name="e5" value="4"><span>I encourage others even in hard moments and stay consistently positive.</span></label>
+                    <label><input type="radio" name="e5" value="5"><span>I see the best in others and support their goals without exception — it's magnetic.</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">Calculate My Authority Profile</button>
+            </form>
+
+            <!-- Results -->
+            <div id="results">
+              <h2>Your Authority Profile</h2>
+              <div id="result-cards"></div>
+              <div class="overall-box">
+                <div class="big-score" id="overall-num"></div>
+                <div id="overall-badge" style="margin-top:12px;"></div>
+                <p id="overall-desc" style="margin-top:14px;"></p>
+                <button class="reset-btn" onclick="resetAssessment()">Retake Assessment</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ── What To Do Next ── -->
+        <section id="next-steps">
+          <div class="section-head">
+            <div>
+              <div class="section-label">What To Do With Your Results</div>
+              <h2>A Score Is a Starting Point,<br>Not a Verdict</h2>
+            </div>
+            <p>Your profile is most useful when you act on it. Here's how to translate your results into real change.</p>
+          </div>
+
+          <div class="next-steps-grid">
+            <div class="next-step">
+              <div class="step-num">01</div>
+              <h3>Target Your Lowest Trait</h3>
+              <p>Don't try to improve everything at once. Find your lowest-scoring trait and treat it as your primary focus for the next 30 days. Small, consistent actions in one area compound faster than scattered effort across five.</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">02</div>
+              <h3>Identify One Specific Behavior</h3>
+              <p>Look at the descriptions for your current level and the one above it. Pick one concrete behavior that marks the difference — one thing you could actually do differently this week. Broad resolutions don't move the needle; specific behavioral targets do.</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">03</div>
+              <h3>Retake in 90 Days</h3>
+              <p>Bookmark this page and set a reminder to retake the assessment in 90 days. Growth without measurement is just hoping. Comparing your scores across time gives you real evidence — and real motivation to keep going.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <div class="cta-strip">
+          <div>
+            <h2>Want To Move the Needle Faster?</h2>
+            <p>1:1 coaching through Fused gives you a focused session built around your specific profile, your business situation, and what's actually holding you back — not a generic growth plan.</p>
+          </div>
+          <div class="cta-strip-actions">
+            <a class="btn btn-primary" href="/#contact">Book a Session</a>
+            <a class="btn btn-secondary" href="/education/">All Education</a>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        © 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy/">Privacy Policy</a>
+        &nbsp;·&nbsp;
+        Assessment based on the Hughes Authority Matrix by Chase Hughes
+      </footer>
+    </div>
+
+    <script>
+      const traits = [
+        { label: 'Confidence', keys: ['c1','c2','c3','c4','c5'] },
+        { label: 'Discipline',  keys: ['d1','d2','d3','d4','d5'] },
+        { label: 'Leadership',  keys: ['l1','l2','l3','l4','l5'] },
+        { label: 'Gratitude',   keys: ['g1','g2','g3','g4','g5'] },
+        { label: 'Enjoyment',   keys: ['e1','e2','e3','e4','e5'] },
+      ];
+
+      const levels = [
+        { max: 1.9, name: 'Burden',        cls: 'level-1', color: '#c0392b',
+          desc: 'These behaviors are currently creating friction for you and the people around you. Awareness is the starting line — recognizing this honestly puts you ahead of most.' },
+        { max: 2.9, name: 'Developing',    cls: 'level-2', color: '#d35400',
+          desc: 'You\'re building awareness but old patterns still dominate. Small, consistent actions here move the needle faster than you\'d expect — this is an exciting place to be.' },
+        { max: 3.9, name: 'Positive',      cls: 'level-3', color: '#d4ac0d',
+          desc: 'You\'re operating at a healthy, constructive level and others respond well to you. Deepening your intentionality will push you into the next tier.' },
+        { max: 4.4, name: 'Inspirational', cls: 'level-4', color: '#27ae60',
+          desc: 'You actively lift others. Your behavior sets a standard that people around you begin to emulate. Consistency across all conditions — especially hard ones — is the frontier.' },
+        { max: 5.0, name: 'Contagious',    cls: 'level-5', color: '#2980b9',
+          desc: 'This quality spreads automatically. People become better versions of themselves just by being around you. This is the rarest and most socially powerful position to operate from.' },
+      ];
+
+      function getLevel(score) {
+        return levels.find(l => score <= l.max) || levels[levels.length - 1];
+      }
+
+      document.getElementById('assessment-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const scores = {};
+        let missing = false;
+
+        traits.forEach(trait => {
+          let sum = 0;
+          trait.keys.forEach(k => {
+            const el = form.querySelector(`input[name="${k}"]:checked`);
+            if (!el) { missing = true; return; }
+            sum += parseInt(el.value);
+          });
+          scores[trait.label] = +(sum / trait.keys.length).toFixed(2);
+        });
+
+        if (missing) {
+          alert('Please answer all 25 questions before submitting.');
+          return;
+        }
+
+        const vals = Object.values(scores);
+        const overall = +(vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(2);
+        const overallLevel = getLevel(overall);
+
+        const cards = document.getElementById('result-cards');
+        cards.innerHTML = '';
+
+        traits.forEach(trait => {
+          const score = scores[trait.label];
+          const level = getLevel(score);
+          const pct = Math.round(((score - 1) / 4) * 100);
+          cards.innerHTML += `
+            <div class="result-card">
+              <div class="result-header">
+                <span class="result-trait">${trait.label}</span>
+                <span class="result-level ${level.cls}">${level.name}</span>
+              </div>
+              <div class="score-label">${score.toFixed(1)} / 5.0</div>
+              <div class="score-bar-container">
+                <div class="score-bar" style="width:${pct}%;background:${level.color}"></div>
+              </div>
+              <div class="result-description">${level.desc}</div>
+            </div>`;
+        });
+
+        document.getElementById('overall-num').textContent = overall.toFixed(1);
+        document.getElementById('overall-badge').innerHTML =
+          `<span class="result-level ${overallLevel.cls}" style="font-size:0.9rem;padding:6px 16px;">${overallLevel.name}</span>`;
+        document.getElementById('overall-desc').textContent =
+          `Overall Authority Score — ${overallLevel.desc}`;
+
+        const results = document.getElementById('results');
+        results.style.display = 'block';
+        results.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      function resetAssessment() {
+        document.getElementById('assessment-form').reset();
+        document.getElementById('results').style.display = 'none';
+        document.getElementById('assessment').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>
