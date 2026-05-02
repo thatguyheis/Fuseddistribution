@@ -253,6 +253,46 @@
         border: 1px dashed rgba(88, 214, 255, 0.14);
       }
 
+      /* ── Category filter tabs ── */
+      .filter-bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        padding: 9px 22px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: transparent;
+        color: var(--muted);
+        font-family: inherit;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.18s, border-color 0.18s, color 0.18s;
+      }
+
+      .filter-btn:hover { border-color: rgba(88, 214, 255, 0.38); color: var(--text); }
+
+      .filter-btn.active {
+        background: rgba(88, 214, 255, 0.1);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .filter-btn[data-filter="silver"].active {
+        background: rgba(77, 255, 184, 0.08);
+        border-color: var(--accent-2);
+        color: var(--accent-2);
+      }
+
+      .post-card[hidden] { display: none; }
+
       .footer {
         padding: 24px 28px 34px;
         color: rgba(175, 198, 207, 0.74);
@@ -447,8 +487,14 @@
       </div>
 
       <main class="main">
+        <div class="filter-bar" role="tablist" aria-label="Filter posts by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="silver" role="tab" aria-selected="false">Silver Reserve</button>
+          <button class="filter-btn" data-filter="tech" role="tab" aria-selected="false">Technology</button>
+        </div>
+
         <div id="post-list" class="post-grid">
-          <article class="post-card">
+          <article class="post-card" data-cat="silver">
             <div class="post-meta">
               <time datetime="2026-05-01">May 1, 2026</time>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
@@ -458,7 +504,7 @@
             <a class="read-more" href="/blog/silver-to-gold-ratio/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-30">April 30, 2026</time>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
@@ -468,7 +514,7 @@
             <a class="read-more" href="/blog/google-business-profile-setup/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="silver">
             <div class="post-meta">
               <time datetime="2026-04-25">April 25, 2026</time>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Buying Guide</span><span class="pill">Beginners</span></div>
@@ -478,7 +524,7 @@
             <a class="read-more" href="/blog/what-is-junk-silver/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-23">April 23, 2026</time>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Technology</span><span class="pill">Local Business</span></div>
@@ -488,7 +534,7 @@
             <a class="read-more" href="/blog/what-a-website-is-worth/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-22">April 22, 2026</time>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
@@ -498,7 +544,7 @@
             <a class="read-more" href="/blog/what-a-website-does-for-your-business/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="silver">
             <div class="post-meta">
               <time datetime="2026-04-21">April 21, 2026</time>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
@@ -508,7 +554,7 @@
             <a class="read-more" href="/blog/dollar-cost-averaging-silver/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-18">April 18, 2026</time>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Local Business</span></div>
@@ -518,7 +564,7 @@
             <a class="read-more" href="/blog/why-your-website-isnt-getting-customers/">Read Article &rarr;</a>
           </article>
 
-          <article class="post-card">
+          <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-18">April 18, 2026</time>
               <div class="post-tags"><span class="pill">News</span><span class="pill">Updates</span></div>
@@ -543,9 +589,13 @@
         return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
       }
 
+      function postCategory(tags) {
+        return tags.includes('Silver') ? 'silver' : 'tech';
+      }
+
       function renderPosts(posts) {
         return posts.map(post => `
-          <article class="post-card">
+          <article class="post-card" data-cat="${postCategory(post.tags)}">
             <div class="post-meta">
               <time datetime="${post.date}">${formatDate(post.date)}</time>
               <div class="post-tags">${post.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
@@ -557,11 +607,31 @@
         `).join('');
       }
 
+      function applyFilter(filter) {
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          const active = btn.dataset.filter === filter;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-selected', active);
+        });
+        document.querySelectorAll('#post-list .post-card').forEach(card => {
+          card.hidden = filter !== 'all' && card.dataset.cat !== filter;
+        });
+      }
+
+      document.querySelector('.filter-bar').addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (btn) applyFilter(btn.dataset.filter);
+      });
+
       // Silently refresh from posts.json — static HTML above is the SEO-visible baseline.
       fetch('/blog/posts.json')
         .then(r => r.json())
         .then(posts => {
-          if (posts.length) document.getElementById('post-list').innerHTML = renderPosts(posts);
+          if (!posts.length) return;
+          document.getElementById('post-list').innerHTML = renderPosts(posts);
+          // Re-apply the active filter after content refresh
+          const active = document.querySelector('.filter-btn.active');
+          if (active && active.dataset.filter !== 'all') applyFilter(active.dataset.filter);
         })
         .catch(() => {});
     </script>
