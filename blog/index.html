@@ -186,6 +186,47 @@
         box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
       }
 
+      .featured-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.3);
+        background: rgba(88, 214, 255, 0.1);
+        color: var(--accent);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        width: fit-content;
+      }
+
+      .post-card.featured {
+        grid-column: 1 / -1;
+        padding: 36px 40px;
+        border-color: rgba(88, 214, 255, 0.2);
+        box-shadow:
+          0 0 0 1px rgba(88, 214, 255, 0.08),
+          0 24px 64px rgba(0, 0, 0, 0.32),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05),
+          0 0 56px rgba(88, 214, 255, 0.05);
+      }
+
+      .post-card.featured h2 {
+        font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+        line-height: 1.08;
+      }
+
+      .post-card.featured p {
+        font-size: 1.05rem;
+        max-width: 700px;
+      }
+
+      @media (max-width: 680px) {
+        .post-card.featured { padding: 24px 20px; }
+        .post-card.featured h2 { font-size: 1.7rem; }
+      }
+
       .post-meta {
         display: flex;
         align-items: center;
@@ -494,7 +535,8 @@
         </div>
 
         <div id="post-list" class="post-grid">
-          <article class="post-card" data-cat="silver">
+          <article class="post-card featured" data-cat="silver">
+            <span class="featured-label">Featured</span>
             <div class="post-meta">
               <time datetime="2026-05-01">May 1, 2026</time>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
@@ -594,8 +636,9 @@
       }
 
       function renderPosts(posts) {
-        return posts.map(post => `
-          <article class="post-card" data-cat="${postCategory(post.tags)}">
+        return posts.map((post, i) => `
+          <article class="post-card${i === 0 ? ' featured' : ''}" data-cat="${postCategory(post.tags)}">
+            ${i === 0 ? '<span class="featured-label">Featured</span>' : ''}
             <div class="post-meta">
               <time datetime="${post.date}">${formatDate(post.date)}</time>
               <div class="post-tags">${post.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
