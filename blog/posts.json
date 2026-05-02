@@ -6,7 +6,8 @@
     "excerpt": "Divide the gold spot price by silver's and you get the ratio. Right now it sits at roughly 60:1. Here is what that number means and how investors use it.",
     "tags": ["Silver", "Investing"],
     "author": "Fused Team",
-    "readTime": 5
+    "readTime": 5,
+    "image": null
   },
   {
     "slug": "google-business-profile-setup",
@@ -15,7 +16,9 @@
     "excerpt": "Google Business Profile is free and takes 20 minutes. It is the fastest way to start showing up when someone nearby searches for what you do. Here is how to set it up right.",
     "tags": ["Websites", "Google", "Local Business"],
     "author": "Fused Team",
-    "readTime": 7
+    "readTime": 7,
+    "image": "/blog/google-business-profile-setup/hero.jpg",
+    "imageAlt": "Person reviewing business analytics on a laptop"
   },
   {
     "slug": "what-is-junk-silver",
@@ -24,7 +27,9 @@
     "excerpt": "Junk silver sounds like something you'd find in a shoebox at a garage sale. The name is misleading. Here's what it actually means, how the math works, and why so many new silver buyers start here.",
     "tags": ["Silver", "Buying Guide", "Beginners"],
     "author": "Fused Team",
-    "readTime": 7
+    "readTime": 7,
+    "image": "/blog/what-is-junk-silver/images/coins-spread.jpg",
+    "imageAlt": "Morgan dollars and mixed silver coins spread out on a dark surface"
   },
   {
     "slug": "what-a-website-is-worth",
@@ -33,7 +38,9 @@
     "excerpt": "A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses.",
     "tags": ["Websites", "Technology", "Local Business"],
     "author": "Fused Team",
-    "readTime": 6
+    "readTime": 6,
+    "image": "/blog/what-a-website-is-worth/hero.jpg",
+    "imageAlt": "Business owner reviewing website analytics on a laptop"
   },
   {
     "slug": "what-a-website-does-for-your-business",
@@ -42,7 +49,8 @@
     "excerpt": "Most customers search online before they ever call or walk in. Here is what having a website and a Google presence actually means for a local business, backed by real numbers.",
     "tags": ["Websites", "Google", "Local Business"],
     "author": "Fused Team",
-    "readTime": 8
+    "readTime": 8,
+    "image": null
   },
   {
     "slug": "dollar-cost-averaging-silver",
@@ -51,7 +59,8 @@
     "excerpt": "Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time — less stress, better results, and no market-watching required.",
     "tags": ["Silver", "Investing"],
     "author": "Fused Team",
-    "readTime": 5
+    "readTime": 5,
+    "image": null
   },
   {
     "slug": "why-your-website-isnt-getting-customers",
@@ -60,7 +69,9 @@
     "excerpt": "Having a website and having a website that brings in business are two different things. Here are the most common reasons local sites fall flat.",
     "tags": ["Websites", "Local Business"],
     "author": "Fused Team",
-    "readTime": 5
+    "readTime": 5,
+    "image": "/blog/why-your-website-isnt-getting-customers/hero.jpg",
+    "imageAlt": "Laptop displaying a website analytics dashboard"
   },
   {
     "slug": "welcome-to-fused",
@@ -69,6 +80,7 @@
     "excerpt": "A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time.",
     "tags": ["News", "Updates"],
     "author": "Fused Team",
-    "readTime": 2
+    "readTime": 2,
+    "image": null
   }
 ]
