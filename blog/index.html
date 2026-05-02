@@ -242,6 +242,20 @@
         text-transform: uppercase;
       }
 
+      .read-time {
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .read-time::before {
+        content: "·";
+        margin-right: 8px;
+        opacity: 0.5;
+      }
+
       .post-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 
       .pill {
@@ -539,6 +553,7 @@
             <span class="featured-label">Featured</span>
             <div class="post-meta">
               <time datetime="2026-05-01">May 1, 2026</time>
+              <span class="read-time">5 min read</span>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
             </div>
             <h2><a href="/blog/silver-to-gold-ratio/">The Silver-to-Gold Ratio Explained</a></h2>
@@ -549,6 +564,7 @@
           <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-30">April 30, 2026</time>
+              <span class="read-time">7 min read</span>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
             </div>
             <h2><a href="/blog/google-business-profile-setup/">How to Get Your Business Listed on Google</a></h2>
@@ -559,6 +575,7 @@
           <article class="post-card" data-cat="silver">
             <div class="post-meta">
               <time datetime="2026-04-25">April 25, 2026</time>
+              <span class="read-time">7 min read</span>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Buying Guide</span><span class="pill">Beginners</span></div>
             </div>
             <h2><a href="/blog/what-is-junk-silver/">What Is Junk Silver and Why Do So Many Stackers Start There?</a></h2>
@@ -569,6 +586,7 @@
           <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-23">April 23, 2026</time>
+              <span class="read-time">6 min read</span>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Technology</span><span class="pill">Local Business</span></div>
             </div>
             <h2><a href="/blog/what-a-website-is-worth/">What a Good Website Is Actually Worth to Your Business</a></h2>
@@ -579,6 +597,7 @@
           <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-22">April 22, 2026</time>
+              <span class="read-time">8 min read</span>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Google</span><span class="pill">Local Business</span></div>
             </div>
             <h2><a href="/blog/what-a-website-does-for-your-business/">What a Website Actually Does for Your Business</a></h2>
@@ -589,6 +608,7 @@
           <article class="post-card" data-cat="silver">
             <div class="post-meta">
               <time datetime="2026-04-21">April 21, 2026</time>
+              <span class="read-time">5 min read</span>
               <div class="post-tags"><span class="pill">Silver</span><span class="pill">Investing</span></div>
             </div>
             <h2><a href="/blog/dollar-cost-averaging-silver/">Why Dollar Cost Averaging Is the Smartest Way to Buy Silver</a></h2>
@@ -599,6 +619,7 @@
           <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-18">April 18, 2026</time>
+              <span class="read-time">5 min read</span>
               <div class="post-tags"><span class="pill">Websites</span><span class="pill">Local Business</span></div>
             </div>
             <h2><a href="/blog/why-your-website-isnt-getting-customers/">Why Your Business Website Isn't Getting You Customers</a></h2>
@@ -609,6 +630,7 @@
           <article class="post-card" data-cat="tech">
             <div class="post-meta">
               <time datetime="2026-04-18">April 18, 2026</time>
+              <span class="read-time">2 min read</span>
               <div class="post-tags"><span class="pill">News</span><span class="pill">Updates</span></div>
             </div>
             <h2><a href="/blog/welcome-to-fused/">Welcome to the Fused Blog</a></h2>
@@ -641,6 +663,7 @@
             ${i === 0 ? '<span class="featured-label">Featured</span>' : ''}
             <div class="post-meta">
               <time datetime="${post.date}">${formatDate(post.date)}</time>
+              ${post.readTime ? `<span class="read-time">${post.readTime} min read</span>` : ''}
               <div class="post-tags">${post.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
             </div>
             <h2><a href="/blog/${post.slug}/">${post.title}</a></h2>

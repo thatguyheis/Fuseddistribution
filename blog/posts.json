@@ -5,7 +5,8 @@
     "date": "2026-05-01",
     "excerpt": "Divide the gold spot price by silver's and you get the ratio. Right now it sits at roughly 60:1. Here is what that number means and how investors use it.",
     "tags": ["Silver", "Investing"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 5
   },
   {
     "slug": "google-business-profile-setup",
@@ -13,7 +14,8 @@
     "date": "2026-04-30",
     "excerpt": "Google Business Profile is free and takes 20 minutes. It is the fastest way to start showing up when someone nearby searches for what you do. Here is how to set it up right.",
     "tags": ["Websites", "Google", "Local Business"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 7
   },
   {
     "slug": "what-is-junk-silver",
@@ -21,7 +23,8 @@
     "date": "2026-04-25",
     "excerpt": "Junk silver sounds like something you'd find in a shoebox at a garage sale. The name is misleading. Here's what it actually means, how the math works, and why so many new silver buyers start here.",
     "tags": ["Silver", "Buying Guide", "Beginners"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 7
   },
   {
     "slug": "what-a-website-is-worth",
@@ -29,7 +32,8 @@
     "date": "2026-04-23",
     "excerpt": "A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses.",
     "tags": ["Websites", "Technology", "Local Business"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 6
   },
   {
     "slug": "what-a-website-does-for-your-business",
@@ -37,7 +41,8 @@
     "date": "2026-04-22",
     "excerpt": "Most customers search online before they ever call or walk in. Here is what having a website and a Google presence actually means for a local business, backed by real numbers.",
     "tags": ["Websites", "Google", "Local Business"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 8
   },
   {
     "slug": "dollar-cost-averaging-silver",
@@ -45,7 +50,8 @@
     "date": "2026-04-21",
     "excerpt": "Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time — less stress, better results, and no market-watching required.",
     "tags": ["Silver", "Investing"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 5
   },
   {
     "slug": "why-your-website-isnt-getting-customers",
@@ -53,7 +59,8 @@
     "date": "2026-04-18",
     "excerpt": "Having a website and having a website that brings in business are two different things. Here are the most common reasons local sites fall flat.",
     "tags": ["Websites", "Local Business"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 5
   },
   {
     "slug": "welcome-to-fused",
@@ -61,6 +68,7 @@
     "date": "2026-04-18",
     "excerpt": "A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time.",
     "tags": ["News", "Updates"],
-    "author": "Fused Team"
+    "author": "Fused Team",
+    "readTime": 2
   }
 ]
