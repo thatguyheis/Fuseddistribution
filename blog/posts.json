@@ -74,7 +74,7 @@
     "author": "Fused Team",
     "readTime": 5,
     "image": "/blog/why-your-website-isnt-getting-customers/hero.jpg",
-    "imageAlt": "Laptop displaying a website analytics dashboard"
+    "imageAlt": "Customer browsing products in a local retail shop"
   },
   {
     "slug": "welcome-to-fused",
@@ -84,7 +84,7 @@
     "tags": ["News", "Updates"],
     "author": "Fused Team",
     "readTime": 2,
-    "image": "/blog/welcome-to-fused/hero.jpg",
-    "imageAlt": "Analytics charts and data on paper, representing research and business insights"
+    "image": "/blog/welcome-to-fused/hero.svg",
+    "imageAlt": "Fused Distribution brand mark with Silver Reserve and Technology Solutions content pillars"
   }
 ]

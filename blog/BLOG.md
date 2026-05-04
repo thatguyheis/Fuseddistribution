@@ -28,12 +28,15 @@ Insert a new object at the **top** of the array (newest first):
   "date": "YYYY-MM-DD",
   "excerpt": "One or two sentences. Shown on the blog listing page. Under 160 characters.",
   "tags": ["Tag One", "Tag Two"],
-  "author": "Fused Team"
+  "author": "Fused Team",
+  "image": "/blog/your-slug-here/hero.jpg",
+  "imageAlt": "Descriptive alt text for the card thumbnail"
 }
 ```
 
 - `slug` must match the folder name exactly
 - Tags: Title Case, pick from existing ones or add new ones
+- `image` is required — every post must have a card image. No two posts may share the same `image` path. Before setting a value, scan `posts.json` to confirm the path is not already in use.
 
 ---
 
@@ -950,6 +953,8 @@ Always include at the end of any research-backed post. Put it inside `.article-b
 
 ## 7. Hero Image (Tech Posts)
 
+**Every post must have a unique card image. Before selecting a photo ID or creating an SVG, check `posts.json` and confirm no existing post uses the same image path. Two cards showing the same photo is not acceptable.**
+
 Fetch from Unsplash CDN — no API key needed:
 
 ```bash
@@ -957,15 +962,19 @@ curl -s "https://images.unsplash.com/photo-[PHOTO_ID]?auto=format&fit=crop&w=120
   -o "blog/[slug]/hero.jpg"
 ```
 
-Known photo IDs by topic:
+Known photo IDs by topic — **each ID may only be used once across all posts:**
 
-| Topic | Unsplash Photo ID | Photographer |
-|---|---|---|
-| Analytics / data | `1460925895917-afdab827c52f` | Isaac Smith |
-| Local business / retail | `1556742049-0cfed4f6a45d` | Blake Wisz |
-| Office / tech work | `1551434678-e076c223a692` | Bench Accounting |
-| AI / automation | Search Unsplash for relevant image |  |
-| Finance / money | `1579621970563-ebec7560ff3e` | Precondo CA |
+| Topic | Unsplash Photo ID | Photographer | In use |
+|---|---|---|---|
+| Analytics / data | `1460925895917-afdab827c52f` | Isaac Smith | what-a-website-is-worth |
+| Local business / retail | `1556742049-0cfed4f6a45d` | Blake Wisz | why-your-website-isnt-getting-customers |
+| Office / tech work | `1551434678-e076c223a692` | Bench Accounting | what-a-website-does-for-your-business |
+| AI / automation | Search Unsplash for a relevant image | — | — |
+| Finance / money | `1579621970563-ebec7560ff3e` | Precondo CA | — |
+
+When you add a new post, update the "In use" column above so the next post author knows what is already taken. If all suitable IDs for a topic are in use, search Unsplash for a new photo rather than reusing one.
+
+For silver posts that use custom SVGs instead of photos, the same rule applies: each SVG must be purpose-built for its specific post topic and visually distinct from every other SVG in the blog.
 
 Update `og:image` and `twitter:image` meta tags to:
 ```
