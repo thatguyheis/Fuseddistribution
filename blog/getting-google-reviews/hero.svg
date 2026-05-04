@@ -1,0 +1,149 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g-center" cx="600" cy="315" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#58d6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-corner" cx="0" cy="0" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  stop-color="#4dffb8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rating-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+    <!-- Small star (r=7, inner r=3) centered at origin -->
+    <path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+    <!-- Large star (r=26, inner r=11) centered at origin -->
+    <path id="star-lg" d="M 0,-26 L 6.47,-8.90 L 24.73,-8.03 L 10.46,3.40 L 15.28,21.03 L 0,11 L -15.28,21.03 L -10.46,3.40 L -24.73,-8.03 L -6.47,-8.90 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#g-center)"/>
+  <rect width="1200" height="630" fill="url(#g-corner)"/>
+
+  <!-- Subtle vertical grid lines -->
+  <line x1="170"  y1="0" x2="170"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340"  y1="0" x2="340"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510"  y1="0" x2="510"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680"  y1="0" x2="680"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850"  y1="0" x2="850"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Decorative concentric rings -->
+  <circle cx="600" cy="315" r="258" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="172" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Texture dots -->
+  <circle cx="148" cy="84"  r="1.5" fill="#58d6ff" opacity="0.28"/>
+  <circle cx="318" cy="52"  r="1"   fill="#4dffb8" opacity="0.32"/>
+  <circle cx="974" cy="68"  r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="1085" cy="138" r="1"  fill="#4dffb8" opacity="0.26"/>
+  <circle cx="206" cy="494" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="1048" cy="518" r="1"  fill="#4dffb8" opacity="0.22"/>
+  <circle cx="428" cy="582" r="1.5" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="794" cy="574" r="1"   fill="#4dffb8" opacity="0.20"/>
+  <circle cx="88"  cy="310" r="1"   fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1112" cy="300" r="1"  fill="#4dffb8" opacity="0.18"/>
+
+  <!-- ============================================ -->
+  <!-- REVIEW CARDS                                 -->
+  <!-- ============================================ -->
+
+  <!-- Card 1: top-left -->
+  <rect x="42" y="138" width="295" height="162" rx="16"
+        fill="rgba(11,24,32,0.90)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="70" y="176"
+        font-family="Arial, sans-serif" font-size="13" font-weight="700"
+        fill="rgba(236,248,251,0.90)">Sarah M.</text>
+  <use href="#star-sm" transform="translate(70,  199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(88,  199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(106, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(124, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(142, 199)" fill="#4dffb8"/>
+  <text x="70" y="226" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">"Showed up same day and fixed</text>
+  <text x="70" y="244" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">the issue in under an hour."</text>
+  <text x="70" y="268" font-family="Arial, sans-serif" font-size="10" fill="rgba(88,214,255,0.40)" letter-spacing="1.5">3 MONTHS AGO</text>
+
+  <!-- Card 2: top-right -->
+  <rect x="863" y="138" width="295" height="162" rx="16"
+        fill="rgba(11,24,32,0.90)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="891" y="176"
+        font-family="Arial, sans-serif" font-size="13" font-weight="700"
+        fill="rgba(236,248,251,0.90)">James R.</text>
+  <use href="#star-sm" transform="translate(891, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(909, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(927, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(945, 199)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(963, 199)" fill="#4dffb8"/>
+  <text x="891" y="226" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">"Professional and fair pricing.</text>
+  <text x="891" y="244" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">Will definitely use again."</text>
+  <text x="891" y="268" font-family="Arial, sans-serif" font-size="10" fill="rgba(88,214,255,0.40)" letter-spacing="1.5">2 MONTHS AGO</text>
+
+  <!-- Card 3: bottom-left -->
+  <rect x="55" y="420" width="268" height="120" rx="14"
+        fill="rgba(11,24,32,0.84)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="82" y="454"
+        font-family="Arial, sans-serif" font-size="13" font-weight="700"
+        fill="rgba(236,248,251,0.88)">Maria L.</text>
+  <use href="#star-sm" transform="translate(82,  474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(100, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(118, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(136, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(154, 474)" fill="#4dffb8"/>
+  <text x="82" y="502" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">"Great communication start to finish."</text>
+
+  <!-- Card 4: bottom-right -->
+  <rect x="877" y="420" width="268" height="120" rx="14"
+        fill="rgba(11,24,32,0.84)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="906" y="454"
+        font-family="Arial, sans-serif" font-size="13" font-weight="700"
+        fill="rgba(236,248,251,0.88)">Tom K.</text>
+  <use href="#star-sm" transform="translate(906, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(924, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(942, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(960, 474)" fill="#4dffb8"/>
+  <use href="#star-sm" transform="translate(978, 474)" fill="#4dffb8"/>
+  <text x="906" y="502" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">"Called Tuesday, done Thursday."</text>
+
+  <!-- ============================================ -->
+  <!-- CENTER DISPLAY                               -->
+  <!-- ============================================ -->
+
+  <!-- "GOOGLE REVIEWS" eyebrow label -->
+  <text x="600" y="188"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        font-weight="800"
+        letter-spacing="5"
+        fill="#4dffb8"
+        opacity="0.88">GOOGLE REVIEWS</text>
+  <line x1="468" y1="197" x2="732" y2="197" stroke="#4dffb8" stroke-width="0.5" stroke-opacity="0.22"/>
+
+  <!-- Large "4.9" rating number -->
+  <text x="600" y="342"
+        text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif"
+        font-size="200"
+        fill="url(#rating-grad)"
+        opacity="0.94">4.9</text>
+
+  <!-- Five large stars -->
+  <use href="#star-lg" transform="translate(464, 382)" fill="#4dffb8"/>
+  <use href="#star-lg" transform="translate(532, 382)" fill="#4dffb8"/>
+  <use href="#star-lg" transform="translate(600, 382)" fill="#4dffb8"/>
+  <use href="#star-lg" transform="translate(668, 382)" fill="#4dffb8"/>
+  <use href="#star-lg" transform="translate(736, 382)" fill="#4dffb8"/>
+
+  <!-- Review count label -->
+  <text x="600" y="452"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="rgba(175,198,207,0.50)"
+        letter-spacing="2.5">94 VERIFIED REVIEWS</text>
+
+</svg>

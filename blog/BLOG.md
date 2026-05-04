@@ -953,43 +953,91 @@ Always include at the end of any research-backed post. Put it inside `.article-b
 
 ## 7. Hero Image (Tech Posts)
 
-**Every post must have a unique card image. Before selecting a photo ID or creating an SVG, check `posts.json` and confirm no existing post uses the same image path. Two cards showing the same photo is not acceptable.**
+**All new tech posts use a custom SVG hero — not stock photos.** Stock photos risk reuse across posts, which looks bad on the blog listing page. Custom SVGs are unique, brand-consistent, and require no licensing.
 
-Fetch from Unsplash CDN — no API key needed:
+**Every post must have a unique hero. Before creating one, check `posts.json` and confirm no existing post uses the same image path.**
 
-```bash
-curl -s "https://images.unsplash.com/photo-[PHOTO_ID]?auto=format&fit=crop&w=1200&q=82" \
-  -o "blog/[slug]/hero.jpg"
+---
+
+### Creating the SVG hero
+
+File: `blog/[slug]/hero.svg`
+Canvas size: `width="1200" height="630" viewBox="0 0 1200 630"`
+
+**Design rules:**
+- Background: `#041018` base, cyan radial glow at center, green radial glow at top-left corner
+- Grid lines: 6 vertical lines at x=170,340,510,680,850,1020 — stroke rgba(255,255,255,0.022)
+- Decorative rings: two `<circle>` outlines centered at (600,315), r=255 and r=170, stroke `#58d6ff` at 0.07 and 0.11 opacity
+- Texture: 8–12 scatter dots (r=1 to 1.5) at varied positions, `#58d6ff` or `#4dffb8`, opacity 0.15–0.30
+- All text: `font-family="Arial, sans-serif"` for body; `font-family="Impact, 'Arial Narrow Bold', sans-serif"` for display numbers
+- Colors: `--accent: #58d6ff`, `--accent-2: #4dffb8`, muted text `rgba(175,198,207,0.75)`
+
+**Centering the main display element:**
+- Place the primary visual (large number, icon, or chart) in the center zone: x=340 to x=860, y=180 to y=450
+- Flanking content (cards, stats, callouts) in the left zone (x=42 to x=337) and right zone (x=863 to x=1158)
+
+**Reusable SVG star shapes (define in `<defs>`):**
+
+```svg
+<!-- Small star (r=7, inner r=3) — use for review cards -->
+<path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+
+<!-- Large star (r=26, inner r=11) — use for display ratings -->
+<path id="star-lg" d="M 0,-26 L 6.47,-8.90 L 24.73,-8.03 L 10.46,3.40 L 15.28,21.03 L 0,11 L -15.28,21.03 L -10.46,3.40 L -24.73,-8.03 L -6.47,-8.90 Z"/>
 ```
 
-Known photo IDs by topic — **each ID may only be used once across all posts:**
+Place them with `<use href="#star-sm" transform="translate(cx, cy)" fill="#4dffb8"/>`. Spacing for 5 small stars: 18px between centers. Spacing for 5 large stars: 68px between centers, centered at x=600 → centers at x=464,532,600,668,736.
 
-| Topic | Unsplash Photo ID | Photographer | In use |
-|---|---|---|---|
-| Analytics / data | `1460925895917-afdab827c52f` | Isaac Smith | what-a-website-is-worth |
-| Local business / retail | `1556742049-0cfed4f6a45d` | Blake Wisz | why-your-website-isnt-getting-customers |
-| Office / tech work | `1551434678-e076c223a692` | Bench Accounting | what-a-website-does-for-your-business |
-| Customer / reviews | `1516321318423-f06f85e504b3` | John Schnobrich | getting-google-reviews |
-| AI / automation | Search Unsplash for a relevant image | — | — |
-| Finance / money | `1579621970563-ebec7560ff3e` | Precondo CA | — |
+**Rating number math (large display):**
+- Use `font-size="200"` Impact, baseline at y≈342, centered at x=600
+- Apply a gradient fill: `fill="url(#rating-grad)"` where rating-grad goes `#58d6ff` → `#4dffb8` horizontally
 
-When you add a new post, update the "In use" column above so the next post author knows what is already taken. If all suitable IDs for a topic are in use, search Unsplash for a new photo rather than reusing one.
-
-For silver posts that use custom SVGs instead of photos, the same rule applies: each SVG must be purpose-built for its specific post topic and visually distinct from every other SVG in the blog.
-
-Update `og:image` and `twitter:image` meta tags to:
+**Floating review card pattern:**
+```svg
+<rect x="[x]" y="[y]" width="295" height="162" rx="16"
+      fill="rgba(11,24,32,0.90)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+<text x="[x+28]" y="[y+38]" font-family="Arial, sans-serif" font-size="13" font-weight="700"
+      fill="rgba(236,248,251,0.90)">[Name]</text>
+<!-- 5 stars at y+61, starting at x+28, spacing 18 -->
+<text x="[x+28]" y="[y+88]" font-family="Arial, sans-serif" font-size="12"
+      fill="rgba(175,198,207,0.78)">"[Review text line 1]</text>
+<text x="[x+28]" y="[y+106]" font-family="Arial, sans-serif" font-size="12"
+      fill="rgba(175,198,207,0.78)">[line 2]"</text>
+<text x="[x+28]" y="[y+130]" font-family="Arial, sans-serif" font-size="10"
+      fill="rgba(88,214,255,0.40)" letter-spacing="1.5">[N MONTHS AGO]</text>
 ```
-https://fuseddistribution.com/blog/[slug]/hero.jpg
-```
 
-HTML placement — between `.article-meta` and `.article-divider`:
+4-card layout positions: top-left (42,138), top-right (863,138), bottom-left (55,420), bottom-right (877,420).
+
+---
+
+### HTML placement
+
+Between `.article-meta` and `.article-divider`. No figcaption needed for custom SVGs.
 
 ```html
 <figure class="article-hero">
-  <img src="hero.jpg" alt="[Descriptive alt text]" width="1200" height="630" />
-  <figcaption>Photo by <a href="https://unsplash.com/@[handle]" target="_blank" rel="noreferrer">[Name]</a> on <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a></figcaption>
+  <img src="hero.svg" alt="[Descriptive alt text]" width="1200" height="630" />
 </figure>
 ```
+
+Update `og:image`, `twitter:image`, and JSON-LD to:
+```
+https://fuseddistribution.com/blog/[slug]/hero.svg
+```
+
+---
+
+### Existing posts that still use Unsplash JPGs
+
+These older posts pre-date the SVG standard. Do not replace them unless redesigning the post.
+
+| Post slug | Image file | Source |
+|---|---|---|
+| what-a-website-is-worth | hero.jpg | Unsplash / Isaac Smith |
+| why-your-website-isnt-getting-customers | hero.jpg | Unsplash / Blake Wisz |
+| what-a-website-does-for-your-business | hero.jpg | Unsplash / Bench Accounting |
+| google-business-profile-setup | hero.jpg | Unsplash |
 
 ---
 
