@@ -7,7 +7,8 @@
     "tags": ["Silver", "Investing"],
     "author": "Fused Team",
     "readTime": 5,
-    "image": null
+    "image": "/blog/silver-to-gold-ratio/hero.svg",
+    "imageAlt": "Visual showing 88 ounces of silver equal to 1 ounce of gold"
   },
   {
     "slug": "google-business-profile-setup",
@@ -50,7 +51,8 @@
     "tags": ["Websites", "Google", "Local Business"],
     "author": "Fused Team",
     "readTime": 8,
-    "image": null
+    "image": "/blog/what-a-website-does-for-your-business/hero.jpg",
+    "imageAlt": "Person working at a laptop in a tidy office environment"
   },
   {
     "slug": "dollar-cost-averaging-silver",
@@ -60,7 +62,8 @@
     "tags": ["Silver", "Investing"],
     "author": "Fused Team",
     "readTime": 5,
-    "image": null
+    "image": "/blog/dollar-cost-averaging-silver/hero.svg",
+    "imageAlt": "Chart showing silver price fluctuations with consistent dollar cost averaging buy points"
   },
   {
     "slug": "why-your-website-isnt-getting-customers",
@@ -81,6 +84,7 @@
     "tags": ["News", "Updates"],
     "author": "Fused Team",
     "readTime": 2,
-    "image": null
+    "image": "/blog/welcome-to-fused/hero.jpg",
+    "imageAlt": "Analytics charts and data on paper, representing research and business insights"
   }
 ]

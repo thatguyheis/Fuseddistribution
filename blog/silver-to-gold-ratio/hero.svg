@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGoldGlow" cx="22%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#d4a843" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#d4a843" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgSilverGlow" cx="78%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#f5d97a"/>
+      <stop offset="45%" stop-color="#d4a843"/>
+      <stop offset="100%" stop-color="#8a6010"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#ddeef5"/>
+      <stop offset="45%" stop-color="#a8c8d6"/>
+      <stop offset="100%" stop-color="#527888"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="30%" y1="10%" x2="70%" y2="50%">
+      <stop offset="0%" stop-color="#fffbe0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fffbe0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#07131a"/>
+  <rect width="1200" height="630" fill="url(#bgGoldGlow)"/>
+  <rect width="1200" height="630" fill="url(#bgSilverGlow)"/>
+
+  <!-- Subtle grid overlay -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1" stroke-dasharray="8,8"/>
+
+  <!-- Outer decorative rings behind gold circle -->
+  <circle cx="248" cy="315" r="195" fill="none" stroke="rgba(212,168,67,0.07)" stroke-width="1"/>
+  <circle cx="248" cy="315" r="168" fill="none" stroke="rgba(212,168,67,0.1)" stroke-width="1"/>
+
+  <!-- Gold circle shadow/glow -->
+  <circle cx="248" cy="318" r="138" fill="rgba(180,130,20,0.18)" filter="url(#glow)"/>
+
+  <!-- Gold coin -->
+  <circle cx="248" cy="315" r="135" fill="url(#goldGrad)"/>
+  <circle cx="248" cy="315" r="135" fill="none" stroke="rgba(245,215,100,0.25)" stroke-width="2.5"/>
+  <circle cx="248" cy="315" r="118" fill="none" stroke="rgba(245,215,100,0.12)" stroke-width="1"/>
+  <!-- Highlight -->
+  <ellipse cx="210" cy="260" rx="62" ry="38" fill="url(#goldHighlight)"/>
+
+  <!-- AU symbol -->
+  <text x="248" y="300" text-anchor="middle" font-family="Impact, 'Arial Narrow Bold', Arial, sans-serif" font-size="60" fill="rgba(8,6,1,0.72)" letter-spacing="0.1em">AU</text>
+  <text x="248" y="352" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="17" fill="rgba(8,6,1,0.58)" font-weight="800" letter-spacing="0.26em">GOLD</text>
+
+  <!-- "1 oz" badge below gold -->
+  <rect x="200" y="468" width="96" height="28" rx="14" fill="rgba(212,168,67,0.14)" stroke="rgba(212,168,67,0.28)" stroke-width="1"/>
+  <text x="248" y="487" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="13" fill="rgba(212,168,67,0.8)" font-weight="800" letter-spacing="0.18em">1 OZ</text>
+
+  <!-- Center ratio section -->
+  <!-- Ratio number -->
+  <text x="600" y="295" text-anchor="middle" font-family="Impact, 'Arial Narrow Bold', Arial, sans-serif" font-size="170" fill="url(#accentGrad)" letter-spacing="-0.02em" opacity="0.92">88</text>
+
+  <!-- "TO 1" sub-text -->
+  <text x="600" y="368" text-anchor="middle" font-family="Impact, 'Arial Narrow Bold', Arial, sans-serif" font-size="34" fill="rgba(88,214,255,0.55)" letter-spacing="0.12em">TO 1</text>
+
+  <!-- Labels below ratio -->
+  <text x="600" y="415" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="13" fill="rgba(175,198,207,0.45)" letter-spacing="0.22em" font-weight="700">OZ OF SILVER = 1 OZ OF GOLD</text>
+
+  <!-- Bottom label strip -->
+  <rect x="420" y="540" width="360" height="38" rx="19" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="600" y="565" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="12" fill="rgba(88,214,255,0.7)" font-weight="800" letter-spacing="0.2em">SILVER-TO-GOLD RATIO</text>
+
+  <!-- Right: Silver coin cluster -->
+  <!-- Decorative rings behind silver coins -->
+  <circle cx="952" cy="315" r="195" fill="none" stroke="rgba(88,214,255,0.05)" stroke-width="1"/>
+  <circle cx="952" cy="315" r="168" fill="none" stroke="rgba(88,214,255,0.07)" stroke-width="1"/>
+
+  <!-- Silver coin glow -->
+  <circle cx="952" cy="318" r="138" fill="rgba(40,120,170,0.12)" filter="url(#glow)"/>
+
+  <!-- Silver coin -->
+  <circle cx="952" cy="315" r="135" fill="url(#silverGrad)"/>
+  <circle cx="952" cy="315" r="135" fill="none" stroke="rgba(180,210,225,0.22)" stroke-width="2.5"/>
+  <circle cx="952" cy="315" r="118" fill="none" stroke="rgba(180,210,225,0.1)" stroke-width="1"/>
+  <!-- Highlight -->
+  <ellipse cx="912" cy="260" rx="62" ry="38" fill="url(#goldHighlight)"/>
+
+  <!-- AG symbol -->
+  <text x="952" y="300" text-anchor="middle" font-family="Impact, 'Arial Narrow Bold', Arial, sans-serif" font-size="60" fill="rgba(4,10,14,0.65)" letter-spacing="0.1em">AG</text>
+  <text x="952" y="352" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="17" fill="rgba(4,10,14,0.52)" font-weight="800" letter-spacing="0.22em">SILVER</text>
+
+  <!-- "×88" badge below silver -->
+  <rect x="898" y="468" width="108" height="28" rx="14" fill="rgba(88,214,255,0.1)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="952" y="487" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="13" fill="rgba(88,214,255,0.8)" font-weight="800" letter-spacing="0.12em">×88 OZ</text>
+
+  <!-- Top eyebrow label -->
+  <text x="600" y="78" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.35)" letter-spacing="0.28em" font-weight="700">FUSED DISTRIBUTION · SILVER INVESTING</text>
+
+  <!-- Subtle horizontal rule lines flanking the "88" -->
+  <line x1="68" y1="195" x2="380" y2="195" stroke="rgba(212,168,67,0.12)" stroke-width="1"/>
+  <line x1="820" y1="195" x2="1132" y2="195" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
+  <line x1="68" y1="435" x2="380" y2="435" stroke="rgba(212,168,67,0.12)" stroke-width="1"/>
+  <line x1="820" y1="435" x2="1132" y2="435" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
+</svg>
