@@ -969,6 +969,7 @@ Known photo IDs by topic — **each ID may only be used once across all posts:**
 | Analytics / data | `1460925895917-afdab827c52f` | Isaac Smith | what-a-website-is-worth |
 | Local business / retail | `1556742049-0cfed4f6a45d` | Blake Wisz | why-your-website-isnt-getting-customers |
 | Office / tech work | `1551434678-e076c223a692` | Bench Accounting | what-a-website-does-for-your-business |
+| Customer / reviews | `1516321318423-f06f85e504b3` | John Schnobrich | getting-google-reviews |
 | AI / automation | Search Unsplash for a relevant image | — | — |
 | Finance / money | `1579621970563-ebec7560ff3e` | Precondo CA | — |
 
