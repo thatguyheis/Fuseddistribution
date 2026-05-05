@@ -746,6 +746,7 @@
                 <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
               </div>
             </div>
+            <a href="/about/">About</a>
             <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
@@ -777,7 +778,11 @@
 
           <div class="book-card">
             <div class="book-cover">
-              <img src="/education/book-cover.png" alt="The Richest Dev in The Valley by Archie Musk — book cover" />
+              <picture>
+                <source srcset="/education/book-cover.avif" type="image/avif" />
+                <source srcset="/education/book-cover.jpg" type="image/jpeg" />
+                <img src="/education/book-cover.png" alt="The Richest Dev in The Valley by Archie Musk — book cover" loading="lazy" decoding="async" />
+              </picture>
             </div>
 
             <div class="book-content">
