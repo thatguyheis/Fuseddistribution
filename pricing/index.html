@@ -407,6 +407,159 @@
         color: var(--text);
       }
 
+      /* ── Plan risk / annual cost lines ── */
+      .plan-risk {
+        margin: 10px 0 4px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--accent-2);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .plan-annual-cost {
+        margin: 0;
+        text-align: center;
+        font-size: 0.76rem;
+        color: rgba(175, 198, 207, 0.6);
+      }
+
+      /* ── Comparison table ── */
+      .comparison-wrap {
+        margin-top: 52px;
+      }
+
+      .comparison-label {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.06);
+        color: var(--accent);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      .comparison-table th {
+        padding: 14px 18px;
+        text-align: left;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.04);
+      }
+
+      .comparison-table th:first-child { border-radius: 14px 0 0 0; }
+      .comparison-table th:last-child { border-radius: 0 14px 0 0; }
+
+      .comparison-table td {
+        padding: 13px 18px;
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+        color: var(--muted);
+        vertical-align: top;
+      }
+
+      .comparison-table td:first-child {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .comparison-table tr:last-child td { border-bottom: none; }
+
+      .comparison-table .fused-col {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .check { color: var(--accent-2); font-weight: 700; }
+      .cross { color: rgba(255,100,100,0.7); }
+
+      /* ── Pricing FAQ ── */
+      .pricing-faq {
+        margin-top: 52px;
+      }
+
+      .pricing-faq-label {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.06);
+        color: var(--accent);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .pfaq-list { display: flex; flex-direction: column; gap: 10px; }
+
+      .pfaq-item {
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.06);
+        background: var(--panel);
+        overflow: hidden;
+        transition: border-color 0.2s;
+      }
+
+      .pfaq-item.open { border-color: rgba(88,214,255,0.22); }
+
+      .pfaq-question {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px 22px;
+        background: transparent;
+        border: none;
+        color: var(--text);
+        font-family: inherit;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-align: left;
+        cursor: pointer;
+        letter-spacing: 0.02em;
+        transition: color 0.15s;
+      }
+
+      .pfaq-question:hover, .pfaq-item.open .pfaq-question { color: var(--accent); }
+
+      .pfaq-icon {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid rgba(88,214,255,0.2);
+        background: rgba(88,214,255,0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.22s, background 0.18s;
+      }
+
+      .pfaq-item.open .pfaq-icon { transform: rotate(45deg); background: rgba(88,214,255,0.12); }
+
+      .pfaq-icon svg { width: 12px; height: 12px; stroke: var(--accent); stroke-width: 2.5; fill: none; }
+
+      .pfaq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.25s ease; }
+      .pfaq-item.open .pfaq-answer { grid-template-rows: 1fr; }
+      .pfaq-answer-inner { overflow: hidden; }
+      .pfaq-answer p { margin: 0; padding: 0 22px 18px; color: var(--muted); font-size: 0.92rem; line-height: 1.72; }
+
       /* ── FAQ / note strip ── */
       .note-strip {
         margin-top: 36px;
@@ -669,6 +822,7 @@
                 <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
               </div>
             </div>
+            <a href="/about/">About</a>
             <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
@@ -726,6 +880,8 @@
               <li>Uptime monitoring & technical maintenance</li>
             </ul>
             <a class="plan-cta secondary" href="/#contact">Get Started</a>
+            <p class="plan-risk">No charge until you approve the build.</p>
+            <p class="plan-annual-cost">First-year total: <strong>$1,188</strong> (monthly) · <strong>$1,000</strong> (annual)</p>
           </div>
 
           <!-- Standard -->
@@ -755,6 +911,8 @@
               <li>Quarterly site review & improvement recommendations</li>
             </ul>
             <a class="plan-cta secondary" href="/#contact">Get Started</a>
+            <p class="plan-risk">No charge until you approve the build.</p>
+            <p class="plan-annual-cost">First-year total: <strong>$3,600</strong> (monthly) · <strong>$3,000</strong> (annual)</p>
           </div>
 
           <!-- Expansion -->
@@ -788,6 +946,8 @@
               <li>Custom automation tied to your existing tools</li>
             </ul>
             <a class="plan-cta primary" href="/#contact">Get Started</a>
+            <p class="plan-risk">No charge until you approve the build.</p>
+            <p class="plan-annual-cost">First-year total: <strong>$6,000</strong> (monthly) · <strong>$5,000</strong> (annual)</p>
           </div>
 
         </div>
@@ -804,6 +964,151 @@
           <div class="note-item">
             <strong>Everything included</strong>
             <p>Hosting, Google, management, and support are all in the subscription. No separate bills or hidden fees.</p>
+          </div>
+        </div>
+
+        <!-- Comparison table -->
+        <div class="comparison-wrap">
+          <div class="comparison-label">Fused vs. The Alternatives</div>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>What you get</th>
+                <th class="fused-col">Fused Technology Solutions</th>
+                <th>Wix / Squarespace</th>
+                <th>GoDaddy Website Builder</th>
+                <th>Freelancer / Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Custom design (not a template)</td>
+                <td class="fused-col check">✓ Fully custom</td>
+                <td>Templates only</td>
+                <td>Templates only</td>
+                <td>✓ Varies</td>
+              </tr>
+              <tr>
+                <td>Site built before you pay</td>
+                <td class="fused-col check">✓ Always</td>
+                <td class="cross">✗ Pay first</td>
+                <td class="cross">✗ Pay first</td>
+                <td class="cross">✗ Deposit required</td>
+              </tr>
+              <tr>
+                <td>Hosting included</td>
+                <td class="fused-col check">✓ Cloudflare global CDN</td>
+                <td>Shared hosting included</td>
+                <td>Shared hosting included</td>
+                <td class="cross">✗ Usually separate</td>
+              </tr>
+              <tr>
+                <td>Google Business setup</td>
+                <td class="fused-col check">✓ Standard &amp; Expansion</td>
+                <td class="cross">✗ DIY</td>
+                <td class="cross">✗ DIY</td>
+                <td>Extra cost</td>
+              </tr>
+              <tr>
+                <td>Ongoing content updates</td>
+                <td class="fused-col check">✓ Included every plan</td>
+                <td class="cross">✗ Do it yourself</td>
+                <td class="cross">✗ Do it yourself</td>
+                <td>Hourly rate</td>
+              </tr>
+              <tr>
+                <td>No lock-in contract</td>
+                <td class="fused-col check">✓ Month-to-month</td>
+                <td>Annual commitment for best price</td>
+                <td>Annual commitment for best price</td>
+                <td>Varies</td>
+              </tr>
+              <tr>
+                <td>Starting price</td>
+                <td class="fused-col">$99/mo — fully managed</td>
+                <td>$16–$59/mo — you manage it</td>
+                <td>$10–$30/mo — you manage it</td>
+                <td>$1,500–$10,000 upfront</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pricing FAQ -->
+        <div class="pricing-faq">
+          <div class="pricing-faq-label">Quick Answers</div>
+          <div class="pfaq-list">
+
+            <div class="pfaq-item">
+              <button class="pfaq-question" aria-expanded="false">
+                What if I want to cancel?
+                <span class="pfaq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="pfaq-answer">
+                <div class="pfaq-answer-inner">
+                  <p>Monthly plans are month-to-month — cancel any time, no penalty, no questions. Annual plans are billed upfront at a discount; we'll be clear about what that covers before you commit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pfaq-item">
+              <button class="pfaq-question" aria-expanded="false">
+                Can I upgrade my plan later?
+                <span class="pfaq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="pfaq-answer">
+                <div class="pfaq-answer-inner">
+                  <p>Yes — upgrade at any time. Many clients start on Foundation to see the results, then move to Standard or Expansion once they see the traction. We handle the transition.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pfaq-item">
+              <button class="pfaq-question" aria-expanded="false">
+                Is there a setup fee?
+                <span class="pfaq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="pfaq-answer">
+                <div class="pfaq-answer-inner">
+                  <p>No. We build your site first, show it to you, and you subscribe only when you love what you see. The first month of your chosen plan is the only payment you make to get live.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pfaq-item">
+              <button class="pfaq-question" aria-expanded="false">
+                What happens to my site if I stop paying?
+                <span class="pfaq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="pfaq-answer">
+                <div class="pfaq-answer-inner">
+                  <p>If you cancel, we'll help you export your content and migrate to another host so you're never left without options. Your domain is always yours — we never hold it.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pfaq-item">
+              <button class="pfaq-question" aria-expanded="false">
+                Do you build e-commerce sites?
+                <span class="pfaq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg>
+                </span>
+              </button>
+              <div class="pfaq-answer">
+                <div class="pfaq-answer-inner">
+                  <p>Not currently. We focus on lead-generation and informational sites — built to get the phone ringing and the form filled. If you need a full shopping cart, we'll tell you upfront and point you in the right direction.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -834,6 +1139,21 @@
           const billing = btn.dataset.billing;
           billingBtns.forEach(b => b.classList.toggle("active", b === btn));
           document.body.classList.toggle("annual", billing === "annual");
+        });
+      });
+
+      document.querySelectorAll(".pfaq-question").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".pfaq-item");
+          const isOpen = item.classList.contains("open");
+          document.querySelectorAll(".pfaq-item.open").forEach(el => {
+            el.classList.remove("open");
+            el.querySelector(".pfaq-question").setAttribute("aria-expanded", "false");
+          });
+          if (!isOpen) {
+            item.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
         });
       });
     </script>

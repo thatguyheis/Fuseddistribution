@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Fused Distribution | Operator-Led Ventures</title>
+    <meta name="description" content="Fused Distribution is an operator-led company building custom small-business websites, running silver subscriptions, and developing education products. Learn who we are and how we work." />
+    <link rel="canonical" href="https://fuseddistribution.com/about/" />
+    <meta name="theme-color" content="#07111a" />
+    <meta name="author" content="Fused Distribution" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fuseddistribution.com/about/" />
+    <meta property="og:site_name" content="Fused Distribution" />
+    <meta property="og:title" content="About Fused Distribution | Operator-Led Ventures" />
+    <meta property="og:description" content="Fused Distribution is an operator-led company running multiple ventures: custom websites, silver subscriptions, and education products. Meet the people behind the work." />
+    <meta property="og:image" content="https://fuseddistribution.com/og-image.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Fused Distribution" />
+    <meta name="twitter:description" content="Operator-led. Multi-venture. We build websites, run silver subscriptions, and teach operators how to grow." />
+    <meta name="twitter:image" content="https://fuseddistribution.com/og-image.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://fuseddistribution.com/about/#founder",
+          "name": "Nick",
+          "jobTitle": "Founder & Operator",
+          "worksFor": { "@id": "https://fuseddistribution.com/#organization" },
+          "url": "https://fuseddistribution.com/about/"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fuseddistribution.com/#organization",
+          "name": "Fused Distribution",
+          "url": "https://fuseddistribution.com/",
+          "logo": "https://fuseddistribution.com/og-image.png",
+          "description": "Operator-led hub running custom small-business website subscriptions (Fused Technology Solutions), silver subscriptions (Fused Reserve), and books and coaching (Fused Education).",
+          "founder": { "@id": "https://fuseddistribution.com/about/#founder" },
+          "areaServed": "US",
+          "subOrganization": [
+            { "@type": "Organization", "name": "Fused Technology Solutions", "url": "https://fuseddistribution.com/pricing/" },
+            { "@type": "Organization", "name": "Fused Reserve", "url": "https://fuseddistribution.com/reserve/" },
+            { "@type": "Organization", "name": "Fused Education", "url": "https://fuseddistribution.com/education/" }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fuseddistribution.com/about/#webpage",
+          "url": "https://fuseddistribution.com/about/",
+          "name": "About Fused Distribution",
+          "isPartOf": { "@id": "https://fuseddistribution.com/#organization" },
+          "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fuseddistribution.com/" },
+            { "@type": "ListItem", "position": 2, "name": "About", "item": "https://fuseddistribution.com/about/" }
+          ] }
+        }
+      ]
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07111a;
+        --bg-soft: #0d1b27;
+        --panel: rgba(10, 20, 30, 0.78);
+        --panel-strong: rgba(8, 15, 24, 0.92);
+        --line: rgba(97, 255, 215, 0.16);
+        --text: #eefcff;
+        --muted: #b7d4d9;
+        --accent: #61ffd7;
+        --accent-2: #83b7ff;
+        --glow: 0 0 30px rgba(97, 255, 215, 0.18);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 18% 14%, rgba(97, 255, 215, 0.11), transparent 22%),
+          radial-gradient(circle at 80% 12%, rgba(131, 183, 255, 0.08), transparent 20%),
+          linear-gradient(180deg, #051019 0%, #07111a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          repeating-linear-gradient(90deg, transparent 0, transparent 79px, rgba(97, 255, 215, 0.02) 80px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 20px auto 48px;
+        border-radius: 26px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(9, 18, 28, 0.95), rgba(5, 12, 18, 0.94));
+        box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 70% 16%, rgba(97, 255, 215, 0.1), transparent 18%),
+          radial-gradient(circle at 22% 52%, rgba(131, 183, 255, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .hero, .main, .footer { position: relative; z-index: 1; }
+
+      /* Nav */
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 28px;
+        background: rgba(7, 15, 23, 0.88);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+        position: sticky;
+        top: 0;
+        z-index: 500;
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark { font-size: 2rem; font-weight: 900; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; text-shadow: 0 0 18px rgba(97,255,215,0.3); }
+      .brand-sub { font-size: 0.72rem; letter-spacing: 0.22em; color: rgba(231,251,255,0.68); text-transform: uppercase; margin-top: 3px; }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages { padding: 8px 10px; border-radius: 999px; border: 1px solid rgba(97,255,215,0.16); background: rgba(7,15,23,0.56); }
+      .nav a { font-weight: 700; letter-spacing: 0.04em; color: rgba(239,252,255,0.9); transition: color 0.2s; font-size: 0.95rem; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta { display: inline-flex; align-items: center; justify-content: center; min-width: 160px; padding: 12px 18px; border-radius: 14px; border: 1px solid rgba(97,255,215,0.38); color: var(--text); background: rgba(97,255,215,0.08); }
+
+      /* Hero */
+      .hero {
+        padding: 68px 54px 52px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 7px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(97,255,215,0.08);
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0 auto 16px;
+        max-width: 760px;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.04;
+      }
+
+      h2 {
+        margin: 0;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .hero-sub {
+        max-width: 580px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.06rem;
+        line-height: 1.72;
+      }
+
+      /* Main */
+      .main { padding: 52px 54px 72px; display: flex; flex-direction: column; gap: 52px; }
+
+      /* Founder card */
+      .founder-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 36px;
+        align-items: start;
+        padding: 36px;
+        border-radius: 24px;
+        border: 1px solid rgba(255,255,255,0.07);
+        background: var(--panel);
+      }
+
+      .founder-avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 2px solid rgba(97,255,215,0.3);
+        background: linear-gradient(135deg, rgba(97,255,215,0.12), rgba(131,183,255,0.08));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        flex-shrink: 0;
+      }
+
+      .founder-name {
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: var(--text);
+        margin: 0 0 4px;
+        letter-spacing: 0.02em;
+      }
+
+      .founder-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 16px;
+      }
+
+      .founder-bio {
+        color: var(--muted);
+        line-height: 1.78;
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      /* Division grid */
+      .division-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .division-card {
+        padding: 26px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.06);
+        background: rgba(8,18,28,0.7);
+      }
+
+      .division-badge {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 4px 11px;
+        border-radius: 999px;
+        border: 1px solid rgba(97,255,215,0.2);
+        background: rgba(97,255,215,0.06);
+        color: var(--accent);
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .division-card h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+      }
+
+      .division-card p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.68;
+      }
+
+      .division-link {
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      /* Values section */
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .value-item {
+        padding: 22px 24px;
+        border-radius: 18px;
+        border: 1px solid rgba(255,255,255,0.05);
+        background: rgba(7,15,23,0.65);
+      }
+
+      .value-item strong {
+        display: block;
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+
+      .value-item p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+
+      /* CTA strip */
+      .cta-strip {
+        background: linear-gradient(135deg, rgba(97,255,215,0.07), rgba(131,183,255,0.05));
+        border: 1px solid rgba(97,255,215,0.2);
+        border-radius: 20px;
+        padding: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 36px;
+        flex-wrap: wrap;
+      }
+
+      .cta-strip h2 { font-size: 1.65rem; margin: 0 0 10px; }
+      .cta-strip p { margin: 0; font-size: 0.95rem; color: var(--muted); }
+      .cta-strip-actions { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: var(--glow);
+      }
+
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(97,255,215,0.05);
+      }
+
+      /* Footer */
+      .footer {
+        padding: 22px 28px 34px;
+        color: rgba(183,212,217,0.7);
+        font-size: 0.92rem;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.04);
+      }
+
+      .footer a { color: inherit; opacity: 0.7; text-decoration: underline; }
+
+      /* Nav dropdown */
+      .nav-item { position: relative; }
+      .nav-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px; border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; letter-spacing: 0.04em; color: rgba(239,252,255,0.9); transition: color 0.15s; }
+      .nav-toggle:hover, .nav-toggle:focus-visible, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s; display: inline-block; }
+      .nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown { display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); background: rgba(8,16,24,0.97); backdrop-filter: blur(20px); box-shadow: 0 16px 48px rgba(0,0,0,0.55); z-index: 200; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s; }
+      .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s; opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+      .nav-dropdown a { padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em; color: rgba(220,240,248,0.78); transition: background 0.12s, color 0.12s; }
+      .nav-dropdown a:hover, .nav-dropdown a:focus-visible { background: rgba(97,255,215,0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 4px 6px; }
+
+      @media (max-width: 980px) {
+        .division-grid { grid-template-columns: 1fr; }
+        .founder-grid { grid-template-columns: 1fr; }
+        .founder-avatar { width: 80px; height: 80px; font-size: 1.8rem; }
+      }
+
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 24px; border-radius: 20px; }
+        .hero { padding: 44px 20px 38px; }
+        .main { padding: 36px 20px 52px; gap: 36px; }
+        .values-grid { grid-template-columns: 1fr; }
+        .cta-strip { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
+        .topbar { padding: 14px 20px; flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Distribution</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+              </div>
+            </div>
+
+            <a href="/about/" class="active">About</a>
+            <a href="/blog/">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="eyebrow">About</div>
+        <h1>Built by Operators. Run by Operators.</h1>
+        <p class="hero-sub">
+          Fused Distribution is a hands-on operator group running multiple ventures under one roof.
+          We don't manage from a distance — we build, source, sell, and ship ourselves.
+        </p>
+      </section>
+
+      <main class="main">
+
+        <!-- Founder -->
+        <div class="founder-grid">
+          <div class="founder-avatar" aria-hidden="true">👤</div>
+          <div>
+            <p class="founder-name">Nick</p>
+            <p class="founder-title">Founder &amp; Operator</p>
+            <p class="founder-bio">
+              Fused Distribution was built on a simple idea: operators who own the full stack move
+              faster than agencies, brokers, or middlemen. I started by building websites for small
+              businesses — restaurants, repair shops, contractors — and kept adding ventures as new
+              sourcing advantages opened up. Today Fused runs a web design subscription, a silver
+              distribution arm, and an education division. The roster grows every month.
+            </p>
+            <p class="founder-bio" style="margin-top:14px;">
+              Every client gets my direct attention. There's no account coordinator between you and
+              the person doing the actual work. That's not a selling point — it's just how the
+              business is structured.
+            </p>
+          </div>
+        </div>
+
+        <!-- Divisions -->
+        <div>
+          <div style="margin-bottom:20px;">
+            <div class="eyebrow" style="display:inline-block;margin-bottom:10px;">Three Divisions</div>
+            <h2 style="font-size:1.7rem;">One Roof. Multiple Ventures.</h2>
+          </div>
+          <div class="division-grid">
+            <div class="division-card">
+              <div class="division-badge">Primary Revenue</div>
+              <h3>Fused Technology Solutions</h3>
+              <p>Custom websites for small businesses. Built before you pay. Hosting, Google Business, local SEO, and ongoing management in one monthly subscription. From $99/month.</p>
+              <a class="division-link" href="/pricing/">See pricing →</a>
+            </div>
+            <div class="division-card">
+              <div class="division-badge">Hard Assets</div>
+              <h3>Fused Reserve</h3>
+              <p>Monthly silver subscriptions with low-premium bullion and curated inventory through direct sourcing relationships. Ship it or hold it — your call.</p>
+              <a class="division-link" href="/reserve/">Explore Reserve →</a>
+            </div>
+            <div class="division-card">
+              <div class="division-badge">Education</div>
+              <h3>Fused Education</h3>
+              <p>Books, 1:1 coaching, and group training for operators building wealth through technology. Starting with "The Richest Dev In The Valley" — coming soon.</p>
+              <a class="division-link" href="/education/">Explore Education →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values -->
+        <div>
+          <div style="margin-bottom:20px;">
+            <div class="eyebrow" style="display:inline-block;margin-bottom:10px;">How We Work</div>
+            <h2 style="font-size:1.7rem;">What Operator-Led Actually Means</h2>
+          </div>
+          <div class="values-grid">
+            <div class="value-item">
+              <strong>Built before you pay</strong>
+              <p>We deliver the finished product first. You see the site fully built and live on a preview URL before committing to anything. This is not a demo — it is your actual site.</p>
+            </div>
+            <div class="value-item">
+              <strong>No middlemen</strong>
+              <p>Direct producer relationships on silver. Direct client relationships on websites. No broker markup, no account coordinator layer, no agency margin built in.</p>
+            </div>
+            <div class="value-item">
+              <strong>Month-to-month by default</strong>
+              <p>We do not offer lock-in contracts as a retention strategy. If the service is working, you stay. If it isn't, you leave. That keeps us honest every single month.</p>
+            </div>
+            <div class="value-item">
+              <strong>Always expanding</strong>
+              <p>New verticals, new sourcing advantages, new products. The Fused roster grows continuously as the team finds underserved needs and operational advantages to exploit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-strip">
+          <div>
+            <h2>Ready to work with Fused?</h2>
+            <p>Tell us about your business and we'll show you what we can build — before you pay a dollar.</p>
+          </div>
+          <div class="cta-strip-actions">
+            <a class="btn btn-primary" href="/#contact">Get Started</a>
+            <a class="btn btn-secondary" href="/pricing/">See Pricing</a>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        © 2026 Fused Distribution. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy/">Privacy Policy</a>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelectorAll(".nav-toggle").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+          document.querySelectorAll(".nav-toggle").forEach(b => b.setAttribute("aria-expanded", "false"));
+          btn.setAttribute("aria-expanded", String(!expanded));
+        });
+      });
+    </script>
+  </body>
+</html>
