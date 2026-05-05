@@ -30,11 +30,11 @@
             { "@type": "ListItem", "position": 2, "name": "How It Works", "item": "https://fuseddistribution.com/process/" }
           ] }
         },
-        { "@type": "HowTo", "name": "How Fused Builds a Small-Business Website", "description": "Three-step process from first conversation to a live, fully managed small-business website — with the site fully built before the client pays a dollar.",
+        { "@type": "HowTo", "name": "How Fused Builds a Small-Business Website", "description": "Three-step process from first conversation to a live, fully managed small-business website — with the site fully built before the client pays a dollar.", "totalTime": "P10D",
           "step": [
-            { "@type": "HowToStep", "position": 1, "name": "Kickoff conversation", "text": "We talk through your business, what you want the site to do, and what customers should walk away knowing. No contracts at this stage — just alignment." },
-            { "@type": "HowToStep", "position": 2, "name": "Custom build, no payment", "text": "We design and build a full custom site on your brand, using your content, within 5–10 business days. You preview it live before a dollar changes hands." },
-            { "@type": "HowToStep", "position": 3, "name": "Subscribe and launch", "text": "If you love it, you pick a plan, we launch to your domain on Cloudflare hosting, and ongoing updates, SEO, and support are handled inside the subscription." }
+            { "@type": "HowToStep", "position": 1, "name": "Kickoff conversation", "text": "We talk through your business, what you want the site to do, and what customers should walk away knowing. No contracts at this stage — just alignment. Completed on Day 1.", "timeRequired": "P1D" },
+            { "@type": "HowToStep", "position": 2, "name": "Custom build, no payment", "text": "We design and build a full custom site on your brand, using your content, within 5–10 business days. You preview it live before a dollar changes hands.", "timeRequired": "P9D" },
+            { "@type": "HowToStep", "position": 3, "name": "Subscribe and launch", "text": "If you love it, you pick a plan, we launch to your domain on Cloudflare hosting, and ongoing updates, SEO, and support are handled inside the subscription. Site goes live same day you subscribe.", "timeRequired": "P1D" }
           ]
         }
       ]
@@ -520,6 +520,47 @@
       .compare-card.fused li::before { content: "✓"; color: var(--accent-2); position: absolute; left: 0; }
       .compare-card.fused li { color: var(--text); }
 
+      /* ── Comparison table ── */
+      .compare-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 36px;
+        font-size: 0.88rem;
+      }
+
+      .compare-table th {
+        padding: 13px 18px;
+        text-align: left;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.04);
+        color: var(--muted);
+      }
+
+      .compare-table th.fused-col { color: var(--accent); background: rgba(88, 214, 255, 0.08); }
+      .compare-table th:first-child { border-radius: 14px 0 0 0; }
+      .compare-table th:last-child { border-radius: 0 14px 0 0; }
+
+      .compare-table td {
+        padding: 12px 18px;
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+        color: var(--muted);
+        vertical-align: top;
+        line-height: 1.5;
+      }
+
+      .compare-table td:first-child { color: var(--text); font-weight: 600; }
+      .compare-table td.fused-col { color: var(--accent-2); font-weight: 600; background: rgba(88, 214, 255, 0.03); }
+      .compare-table tr:last-child td { border-bottom: none; }
+
+      @media (max-width: 860px) {
+        .compare-table { font-size: 0.8rem; }
+        .compare-table th, .compare-table td { padding: 10px 12px; }
+      }
+
       /* ── CTA strip ── */
       .cta-strip {
         margin-top: 64px;
@@ -878,6 +919,7 @@
                 <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
               </div>
             </div>
+            <a href="/about/">About</a>
             <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
@@ -940,7 +982,7 @@
           <div class="steps">
             <div class="step-card">
               <div class="step-num">01</div>
-              <div class="step-tag">Free</div>
+              <div class="step-tag">Day 1 — Free</div>
               <h3>We build your work-up</h3>
               <p>
                 After a short conversation about your business, we design and build a
@@ -951,18 +993,18 @@
             </div>
             <div class="step-card">
               <div class="step-num">02</div>
-              <div class="step-tag">Review</div>
+              <div class="step-tag">Days 1–10 — Review</div>
               <h3>You review the live page</h3>
               <p>
                 Open the link. Walk through it on your phone, your laptop, share it
                 with your team. This isn't a mockup or a screenshot — it's a real
                 working site. Give us feedback and we'll make adjustments until it's
-                exactly right.
+                exactly right. Most builds are preview-ready within 5–10 business days.
               </p>
             </div>
             <div class="step-card">
               <div class="step-num">03</div>
-              <div class="step-tag">Go Live</div>
+              <div class="step-tag">Day 10+ — Go Live</div>
               <h3>Subscribe and we handle everything</h3>
               <p>
                 When you're ready, we point your domain, go fully live, and activate
@@ -1247,41 +1289,60 @@
             </p>
           </div>
 
-          <div class="compare-grid">
-            <div class="compare-card them">
-              <div class="compare-label">Traditional Agency</div>
-              <h3>Big results promised. Long timelines. High upfront cost.</h3>
-              <ul>
-                <li>$3,000–$15,000 upfront before you see anything</li>
-                <li>Weeks of discovery calls before a pixel is designed</li>
-                <li>Maintenance billed separately at hourly rates</li>
-                <li>Hosting is your problem after handoff</li>
-                <li>Google presence not typically included</li>
-              </ul>
-            </div>
-            <div class="compare-card them">
-              <div class="compare-label">DIY Builder (Wix / Squarespace)</div>
-              <h3>Low cost. High time investment. Limited results.</h3>
-              <ul>
-                <li>You spend hours learning a platform you'll resent</li>
-                <li>Template designs that look like every competitor's site</li>
-                <li>No Google Business setup, no local SEO guidance</li>
-                <li>Support is a chatbot and a help article</li>
-                <li>Ongoing updates are still on you</li>
-              </ul>
-            </div>
-            <div class="compare-card fused">
-              <div class="compare-label">Fused Technology Solutions</div>
-              <h3>Custom site built first. You subscribe only if you love it.</h3>
-              <ul>
-                <li>See your real site before paying anything</li>
-                <li>Hosting, Google presence, and management included</li>
-                <li>Updates handled for you — just ask</li>
-                <li>One monthly subscription covers everything</li>
-                <li>Local SEO foundation built in from day one</li>
-              </ul>
-            </div>
-          </div>
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>What you get</th>
+                <th>Traditional Agency</th>
+                <th>Wix / Squarespace</th>
+                <th class="fused-col">Fused Technology Solutions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Upfront cost</td>
+                <td>$3,000–$15,000 before you see anything</td>
+                <td>$0 upfront — but you do all the work</td>
+                <td class="fused-col">$0 — site built first, pay only if you love it</td>
+              </tr>
+              <tr>
+                <td>Time to preview</td>
+                <td>Weeks of discovery calls before a pixel is designed</td>
+                <td>Hours or days — if you build it yourself</td>
+                <td class="fused-col">5–10 business days — we build it for you</td>
+              </tr>
+              <tr>
+                <td>Custom design</td>
+                <td>Yes — high quality but high cost</td>
+                <td>Templates only — looks like every competitor</td>
+                <td class="fused-col">Fully custom — no templates</td>
+              </tr>
+              <tr>
+                <td>Hosting included</td>
+                <td>Usually not — extra bill after handoff</td>
+                <td>Shared hosting included</td>
+                <td class="fused-col">Cloudflare CDN — fast, global, included</td>
+              </tr>
+              <tr>
+                <td>Google Business setup</td>
+                <td>Rarely included — extra cost</td>
+                <td>DIY — you figure it out</td>
+                <td class="fused-col">Included on Standard &amp; Expansion</td>
+              </tr>
+              <tr>
+                <td>Ongoing updates</td>
+                <td>Hourly billing — adds up fast</td>
+                <td>You do it yourself every time</td>
+                <td class="fused-col">Included — just ask us</td>
+              </tr>
+              <tr>
+                <td>Monthly cost</td>
+                <td>Retainer $1,000–$5,000+/mo or hourly</td>
+                <td>$16–$59/mo — self-managed</td>
+                <td class="fused-col">From $99/mo — fully managed</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <!-- CTA strip -->
