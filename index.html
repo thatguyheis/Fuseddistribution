@@ -1382,24 +1382,25 @@
                 the details and we will reach out directly.
               </p>
               <form class="lead-form" id="lead-form">
+                <input type="text" name="website" style="display:none;position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <div class="lead-grid">
                   <div class="lead-field">
                     <label for="lead-name">Name</label>
-                    <input id="lead-name" name="name" type="text" placeholder="Your name" required />
+                    <input id="lead-name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
                   </div>
                   <div class="lead-field">
                     <label for="lead-company">Company</label>
-                    <input id="lead-company" name="company" type="text" placeholder="Company name" />
+                    <input id="lead-company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
                   </div>
                 </div>
                 <div class="lead-grid">
                   <div class="lead-field">
                     <label for="lead-email">Email</label>
-                    <input id="lead-email" name="email" type="email" placeholder="name@company.com" required />
+                    <input id="lead-email" name="email" type="email" placeholder="name@company.com" autocomplete="email" required />
                   </div>
                   <div class="lead-field">
                     <label for="lead-phone">Phone</label>
-                    <input id="lead-phone" name="phone" type="tel" placeholder="Best number to reach you" />
+                    <input id="lead-phone" name="phone" type="tel" placeholder="Best number to reach you" autocomplete="tel" />
                   </div>
                 </div>
                 <div class="lead-field">
@@ -1461,7 +1462,8 @@
             company: String(formData.get("company") || "").trim(),
             email: String(formData.get("email") || "").trim(),
             phone: String(formData.get("phone") || "").trim(),
-            message: String(formData.get("message") || "").trim()
+            message: String(formData.get("message") || "").trim(),
+            website: String(formData.get("website") || "").trim()
           };
 
           try {

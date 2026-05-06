@@ -78,6 +78,10 @@ function validateLead(payload) {
     return "Invalid request.";
   }
 
+  if (payload.website) {
+    return "Invalid request.";
+  }
+
   if (!payload.name || !payload.email || !payload.message) {
     return "Name, email, and message are required.";
   }
