@@ -1137,6 +1137,7 @@
       billingBtns.forEach(btn => {
         btn.addEventListener("click", () => {
           const billing = btn.dataset.billing;
+          if (!["monthly", "annual"].includes(billing)) return;
           billingBtns.forEach(b => b.classList.toggle("active", b === btn));
           document.body.classList.toggle("annual", billing === "annual");
         });
