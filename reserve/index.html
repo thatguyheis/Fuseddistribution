@@ -1398,23 +1398,20 @@
     </div>
     <script>
     (function () {
-      const API_KEY = '44bba4c50848bc4a1207f00beca7434f';
-      const API_URL = 'https://api.metalpriceapi.com/v1/latest?api_key=' + API_KEY + '&base=USD&currencies=XAG,XAU';
-      const PREMIUM  = 0.05; // ~5% sourcing premium used for estimates
+      const PREMIUM = 0.05;
 
       function usd(n) {
         return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
       }
 
       async function loadSpot() {
-        if (API_KEY === 'YOUR_METALPRICEAPI_KEY') return; // key not set yet
         try {
-          const res  = await fetch(API_URL);
+          const res  = await fetch('/api/spot');
           const data = await res.json();
-          if (!data.success) return;
+          if (!data.silver) return;
 
-          const silver = data.rates.USDXAG; // USD per troy oz
-          const gold   = data.rates.USDXAU;
+          const silver = data.silver;
+          const gold   = data.gold;
 
           const elS = document.getElementById('live-silver');
           const elG = document.getElementById('live-gold');

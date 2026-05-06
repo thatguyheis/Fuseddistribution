@@ -85,6 +85,23 @@ function validateLead(payload) {
   return null;
 }
 
+async function handleSpot(env) {
+  if (!env.METAL_PRICE_API_KEY) {
+    return json({ error: "Spot price not configured." }, { status: 503 });
+  }
+  try {
+    const upstream = await fetch(
+      `https://api.metalpriceapi.com/v1/latest?api_key=${env.METAL_PRICE_API_KEY}&base=USD&currencies=XAG,XAU`,
+      { cf: { cacheTtl: 3600, cacheEverything: true } }
+    );
+    const data = await upstream.json();
+    if (!data.success) return json({ error: "Upstream error." }, { status: 502 });
+    return json({ silver: data.rates.USDXAG, gold: data.rates.USDXAU });
+  } catch {
+    return json({ error: "Could not fetch spot price." }, { status: 502 });
+  }
+}
+
 async function handleLead(request, env) {
   const payload = await request.json().catch(() => null);
   const validationError = validateLead(payload);
@@ -138,6 +155,10 @@ export default {
 
     if (BLOCKED_PREFIXES.some(p => url.pathname.startsWith(p))) {
       return withSecurityHeaders(new Response("Not found.", { status: 404 }));
+    }
+
+    if (url.pathname === "/api/spot" && request.method === "GET") {
+      return withSecurityHeaders(await handleSpot(env));
     }
 
     if (url.pathname === "/api/lead" && request.method === "POST") {
