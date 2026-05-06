@@ -1292,51 +1292,51 @@
           <table class="compare-table">
             <thead>
               <tr>
-                <th>What you get</th>
-                <th>Traditional Agency</th>
-                <th>Wix / Squarespace</th>
-                <th class="fused-col">Fused Technology Solutions</th>
+                <th scope="col">What you get</th>
+                <th scope="col">Traditional Agency</th>
+                <th scope="col">Wix / Squarespace</th>
+                <th scope="col" class="fused-col">Fused Technology Solutions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Upfront cost</td>
+                <th scope="row">Upfront cost</th>
                 <td>$3,000–$15,000 before you see anything</td>
                 <td>$0 upfront, but you do all the work</td>
                 <td class="fused-col">$0. Site built first. Pay only if you love it.</td>
               </tr>
               <tr>
-                <td>Time to preview</td>
+                <th scope="row">Time to preview</th>
                 <td>Weeks of discovery calls before a pixel is designed</td>
                 <td>Hours or days if you build it yourself</td>
                 <td class="fused-col">5 to 10 business days. We build it for you.</td>
               </tr>
               <tr>
-                <td>Custom design</td>
+                <th scope="row">Custom design</th>
                 <td>Yes. High quality but high cost.</td>
                 <td>Templates only. Looks like every competitor.</td>
                 <td class="fused-col">Fully custom. No templates.</td>
               </tr>
               <tr>
-                <td>Hosting included</td>
+                <th scope="row">Hosting included</th>
                 <td>Usually not. Extra bill after handoff.</td>
                 <td>Shared hosting included</td>
                 <td class="fused-col">Cloudflare CDN. Fast, global, included.</td>
               </tr>
               <tr>
-                <td>Google Business setup</td>
+                <th scope="row">Google Business setup</th>
                 <td>Rarely included. Extra cost.</td>
                 <td>DIY. You figure it out.</td>
                 <td class="fused-col">Included on Standard &amp; Expansion</td>
               </tr>
               <tr>
-                <td>Ongoing updates</td>
+                <th scope="row">Ongoing updates</th>
                 <td>Hourly billing. Adds up fast.</td>
                 <td>You do it yourself every time</td>
                 <td class="fused-col">Included. Just ask us.</td>
               </tr>
               <tr>
-                <td>Monthly cost</td>
+                <th scope="row">Monthly cost</th>
                 <td>Retainer $1,000–$5,000+/mo or hourly</td>
                 <td>$16 to $59/mo, self-managed</td>
                 <td class="fused-col">From $99/mo, fully managed</td>
@@ -1368,5 +1368,28 @@
         <a href="/privacy/">Privacy Policy</a>
       </footer>
     </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
   </body>
 </html>

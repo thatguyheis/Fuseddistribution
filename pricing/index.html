@@ -484,7 +484,7 @@
       }
 
       .check { color: var(--accent-2); font-weight: 700; }
-      .cross { color: rgba(255,100,100,0.7); }
+      .cross { color: #ff6b6b; }
 
       /* ── Pricing FAQ ── */
       .pricing-faq {
@@ -1157,6 +1157,29 @@
           }
         });
       });
+    </script>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
     </script>
   </body>
 </html>
