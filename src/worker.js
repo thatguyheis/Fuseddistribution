@@ -1,19 +1,54 @@
-const SECURITY_HEADERS = {
+const SECURITY_HEADERS_BASE = {
   "X-Frame-Options": "SAMEORIGIN",
   "X-Content-Type-Options": "nosniff",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
   "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
-  "Content-Security-Policy":
-    "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; frame-ancestors 'self'"
 };
 
-function withSecurityHeaders(response) {
+function buildCSP(nonce) {
+  const scriptSrc = nonce ? `'self' 'nonce-${nonce}'` : `'self'`;
+  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc}; img-src 'self' data:; connect-src 'self'; form-action 'self'; frame-ancestors 'self'`;
+}
+
+function withSecurityHeaders(response, nonce) {
   const r = new Response(response.body, response);
-  for (const [k, v] of Object.entries(SECURITY_HEADERS)) {
+  for (const [k, v] of Object.entries(SECURITY_HEADERS_BASE)) {
     r.headers.set(k, v);
   }
+  r.headers.set("Content-Security-Policy", buildCSP(nonce));
   return r;
+}
+
+function generateNonce() {
+  const arr = new Uint8Array(16);
+  crypto.getRandomValues(arr);
+  return btoa(String.fromCharCode(...arr)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "");
+}
+
+async function applyNonce(response, nonce) {
+  const contentType = response.headers.get("content-type") || "";
+  if (!contentType.includes("text/html")) return response;
+  return new HTMLRewriter()
+    .on("script", { element(el) { el.setAttribute("nonce", nonce); } })
+    .transform(response);
+}
+
+// In-memory rate limiter (per isolate; resets on isolate restart)
+const rateLimitStore = new Map();
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const entry = rateLimitStore.get(ip);
+  if (!entry || now > entry.reset) {
+    rateLimitStore.set(ip, { count: 1, reset: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return true;
+  entry.count++;
+  return false;
 }
 
 const BLOCKED_PREFIXES = ["/.git", "/src/", "/node_modules/", "/wrangler.jsonc", "/cloudflare-upload/"];
@@ -156,19 +191,41 @@ async function handleLead(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const nonce = generateNonce();
 
     if (BLOCKED_PREFIXES.some(p => url.pathname.startsWith(p))) {
-      return withSecurityHeaders(new Response("Not found.", { status: 404 }));
+      return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
     }
 
     if (url.pathname === "/api/spot" && request.method === "GET") {
-      return withSecurityHeaders(await handleSpot(env));
+      return withSecurityHeaders(await handleSpot(env), null);
     }
 
     if (url.pathname === "/api/lead" && request.method === "POST") {
-      return withSecurityHeaders(await handleLead(request, env));
+      const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+      if (isRateLimited(ip)) {
+        return withSecurityHeaders(
+          json({ error: "Too many requests. Try again in a minute." }, { status: 429 }),
+          null
+        );
+      }
+      return withSecurityHeaders(await handleLead(request, env), null);
     }
 
-    return withSecurityHeaders(await env.ASSETS.fetch(request));
+    const assetResponse = await env.ASSETS.fetch(request);
+    if (assetResponse.status === 404) {
+      try {
+        const notFound = await env.ASSETS.fetch(
+          new Request(new URL("/404.html", request.url).toString())
+        );
+        if (notFound.ok) {
+          const r404 = new Response(notFound.body, { status: 404, headers: notFound.headers });
+          return withSecurityHeaders(await applyNonce(r404, nonce), nonce);
+        }
+      } catch {}
+      return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
+    }
+
+    return withSecurityHeaders(await applyNonce(assetResponse, nonce), nonce);
   }
 };
