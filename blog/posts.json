@@ -1,11 +1,22 @@
 [
   {
+    "slug": "silver-premiums-explained",
+    "title": "Understanding Silver Premiums: Why You Pay More Than Spot",
+    "date": "2026-05-06",
+    "excerpt": "Every silver purchase costs more than the spot price. Here is why that premium exists, what drives it higher or lower, and how to buy smarter by knowing what you are actually paying.",
+    "tags": ["Silver", "Buying Guide"],
+    "author": "Nick",
+    "readTime": 7,
+    "image": "/blog/silver-premiums-explained/hero.svg",
+    "imageAlt": "Horizontal bar chart comparing silver premiums by product type from junk silver at 3 to 8 percent to proof coins at 30 to 80 percent above spot"
+  },
+  {
     "slug": "getting-google-reviews",
     "title": "How to Get More Google Reviews From Your Customers",
     "date": "2026-05-04",
     "excerpt": "If your business has five reviews or fewer, a lot of potential customers are choosing someone else. Here is a practical system for getting more Google reviews and what to do with them.",
     "tags": ["Google", "Local Business", "Reputation"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 6,
     "image": "/blog/getting-google-reviews/hero.svg",
     "imageAlt": "Google Reviews dashboard showing a 4.9 star rating with 94 verified reviews and four customer review cards"
@@ -16,7 +27,7 @@
     "date": "2026-05-01",
     "excerpt": "Divide the gold spot price by silver's and you get the ratio. Right now it sits at roughly 60:1. Here is what that number means and how investors use it.",
     "tags": ["Silver", "Investing"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 5,
     "image": "/blog/silver-to-gold-ratio/hero.svg",
     "imageAlt": "Visual showing 88 ounces of silver equal to 1 ounce of gold"
@@ -27,7 +38,7 @@
     "date": "2026-04-30",
     "excerpt": "Google Business Profile is free and takes 20 minutes. It is the fastest way to start showing up when someone nearby searches for what you do. Here is how to set it up right.",
     "tags": ["Websites", "Google", "Local Business"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 7,
     "image": "/blog/google-business-profile-setup/hero.jpg",
     "imageAlt": "Person reviewing business analytics on a laptop"
@@ -38,7 +49,7 @@
     "date": "2026-04-25",
     "excerpt": "Junk silver sounds like something you'd find in a shoebox at a garage sale. The name is misleading. Here's what it actually means, how the math works, and why so many new silver buyers start here.",
     "tags": ["Silver", "Buying Guide", "Beginners"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 7,
     "image": "/blog/what-is-junk-silver/images/coins-spread.jpg",
     "imageAlt": "Morgan dollars and mixed silver coins spread out on a dark surface"
@@ -49,7 +60,7 @@
     "date": "2026-04-23",
     "excerpt": "A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses.",
     "tags": ["Websites", "Technology", "Local Business"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 6,
     "image": "/blog/what-a-website-is-worth/hero.jpg",
     "imageAlt": "Business owner reviewing website analytics on a laptop"
@@ -60,7 +71,7 @@
     "date": "2026-04-22",
     "excerpt": "Most customers search online before they ever call or walk in. Here is what having a website and a Google presence actually means for a local business, backed by real numbers.",
     "tags": ["Websites", "Google", "Local Business"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 8,
     "image": "/blog/what-a-website-does-for-your-business/hero.jpg",
     "imageAlt": "Person working at a laptop in a tidy office environment"
@@ -71,7 +82,7 @@
     "date": "2026-04-21",
     "excerpt": "Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time — less stress, better results, and no market-watching required.",
     "tags": ["Silver", "Investing"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 5,
     "image": "/blog/dollar-cost-averaging-silver/hero.svg",
     "imageAlt": "Chart showing silver price fluctuations with consistent dollar cost averaging buy points"
@@ -82,7 +93,7 @@
     "date": "2026-04-18",
     "excerpt": "Having a website and having a website that brings in business are two different things. Here are the most common reasons local sites fall flat.",
     "tags": ["Websites", "Local Business"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 5,
     "image": "/blog/why-your-website-isnt-getting-customers/hero.jpg",
     "imageAlt": "Customer browsing products in a local retail shop"
@@ -93,7 +104,7 @@
     "date": "2026-04-18",
     "excerpt": "A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time.",
     "tags": ["News", "Updates"],
-    "author": "Fused Team",
+    "author": "Nick",
     "readTime": 2,
     "image": "/blog/welcome-to-fused/hero.svg",
     "imageAlt": "Fused Distribution brand mark with Silver Reserve and Technology Solutions content pillars"

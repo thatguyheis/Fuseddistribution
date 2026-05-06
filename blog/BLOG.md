@@ -28,7 +28,7 @@ Insert a new object at the **top** of the array (newest first):
   "date": "YYYY-MM-DD",
   "excerpt": "One or two sentences. Shown on the blog listing page. Under 160 characters.",
   "tags": ["Tag One", "Tag Two"],
-  "author": "Fused Team",
+  "author": "Nick",
   "image": "/blog/your-slug-here/hero.jpg",
   "imageAlt": "Descriptive alt text for the card thumbnail"
 }
@@ -46,8 +46,9 @@ Insert a new object at the **top** of the array (newest first):
 blog/
   [slug]/
     index.html
-    hero.jpg          ← tech posts only (one Unsplash image)
-    images/           ← silver posts only (multiple inline photos)
+    hero.svg          ← preferred for all new posts (custom SVG, unique per post)
+    hero.jpg          ← legacy tech posts only (Unsplash; do not add new ones)
+    images/           ← silver posts with inline coin/bar photos
       photo-name.jpg
 ```
 
@@ -66,6 +67,8 @@ Copy the full HTML template from section 4 below. Do not copy from an existing p
     <title>[POST TITLE] | Fused [Distribution OR Technology Solutions]</title>
     <meta name="description" content="[SEO description, 140-160 chars]" />
     <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="YYYY-MM-DDT00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
     <meta property="og:url" content="https://fuseddistribution.com/blog/[slug]/" />
     <meta property="og:title" content="[POST TITLE]" />
     <meta property="og:description" content="[Short og description]" />
@@ -78,11 +81,29 @@ Copy the full HTML template from section 4 below. Do not copy from an existing p
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "[POST TITLE]",
-      "datePublished": "YYYY-MM-DD",
-      "author": { "@type": "Organization", "name": "Fused Team" },
-      "publisher": { "@type": "Organization", "name": "Fused [Distribution OR Technology Solutions]", "url": "https://fuseddistribution.com/" },
+      "description": "[SEO description]",
       "url": "https://fuseddistribution.com/blog/[slug]/",
-      "description": "[SEO description]"
+      "datePublished": "YYYY-MM-DD",
+      "dateModified": "YYYY-MM-DD",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fuseddistribution.com/og-image.png"
+        }
+      },
+      "image": "https://fuseddistribution.com/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fuseddistribution.com/blog/[slug]/"
+      }
     }
     </script>
     <style>
@@ -131,7 +152,16 @@ Copy the full HTML template from section 4 below. Do not copy from an existing p
               </div>
             </div>
 
-            <a href="/education/">Education</a>
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
             <a href="/blog/" class="active">Blog</a>
           </div>
           <div class="nav-actions">
@@ -158,10 +188,18 @@ Copy the full HTML template from section 4 below. Do not copy from an existing p
           </div>
 
           <!-- HERO IMAGE (tech posts only) — insert between article-meta and article-divider -->
+          <!-- SVG hero (preferred for all new posts): -->
           <figure class="article-hero">
-            <img src="hero.jpg" alt="[Descriptive alt text]" width="1200" height="630" />
+            <img src="hero.svg" alt="[Descriptive alt text]" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <!-- Legacy JPG hero (older tech posts only): -->
+          <!--
+          <figure class="article-hero">
+            <img src="hero.jpg" alt="[Descriptive alt text]" width="1200" height="630" fetchpriority="high" />
             <figcaption>Photo by <a href="https://unsplash.com/@[handle]" target="_blank" rel="noreferrer">[Photographer Name]</a> on <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a></figcaption>
           </figure>
+          -->
 
           <div class="article-divider"></div>
 
@@ -189,6 +227,29 @@ Copy the full HTML template from section 4 below. Do not copy from an existing p
         <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
       </footer>
     </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
   </body>
 </html>
 ```
@@ -951,9 +1012,9 @@ Always include at the end of any research-backed post. Put it inside `.article-b
 
 ---
 
-## 7. Hero Image (Tech Posts)
+## 7. Hero Image
 
-**All new tech posts use a custom SVG hero — not stock photos.** Stock photos risk reuse across posts, which looks bad on the blog listing page. Custom SVGs are unique, brand-consistent, and require no licensing.
+**All new posts use a custom SVG hero — not stock photos.** Stock photos risk reuse across posts, which looks bad on the blog listing page. Custom SVGs are unique, brand-consistent, and require no licensing. This applies to both tech and silver posts.
 
 **Every post must have a unique hero. Before creating one, check `posts.json` and confirm no existing post uses the same image path.**
 
