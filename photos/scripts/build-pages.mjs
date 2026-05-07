@@ -20,6 +20,16 @@ async function readCollections() {
   return JSON.parse(raw).filter((collection) => collection.slug !== "uncategorized").sort(bySortOrder);
 }
 
+function publicLicenseLabel(record) {
+  if (record.license_type === "free-use") {
+    return "Free Use";
+  }
+  if (record.license_status === "commercial-safe") {
+    return "Commercial-Safe";
+  }
+  return record.license_status || "Unspecified";
+}
+
 function pageShell({
   title,
   description,
@@ -192,7 +202,7 @@ function pageShell({
       </header>
       ${body}
       <footer class="footer">
-        <small>Fused Photos is a Fused Distribution venture built for licensing, editorial support, and website-ready visual assets.</small>
+        <small>Fused Photos is a Fused Distribution venture built to share commercially cleared, free-use visuals for websites, editorial support, and brand content.</small>
       </footer>
     </div>
   </body>
@@ -289,12 +299,12 @@ function buildCollectionPage(collection, records) {
               ${escapeHtml(hero.location || "Mixed or unspecified")}
             </div>
             <div class="side-item">
-              <strong>Licensing</strong>
-              All images in this set are marked commercial-safe in the current catalog.
+              <strong>Usage</strong>
+              All images in this set are published as commercially cleared free-use images in the current catalog.
             </div>
           </div>
           <div class="actions">
-            <a class="btn btn-primary" href="../../../index.html#contact">Ask About Licensing</a>
+            <a class="btn btn-primary" href="../../index.html">Browse Free Images</a>
             <a class="btn" href="../../index.html">Browse All Photos</a>
           </div>
         </article>
@@ -354,7 +364,7 @@ function buildDetailPage(record, collection, related) {
       <p>${escapeHtml(record.description)}</p>
       <div class="meta-row">
         <span class="pill">${escapeHtml(record.orientation)}</span>
-        <span class="pill">${escapeHtml(record.license_status)}</span>
+        <span class="pill">${escapeHtml(publicLicenseLabel(record))}</span>
         ${collection ? `<span class="pill">${escapeHtml(collection.name)}</span>` : ""}
       </div>
     </section>
@@ -381,13 +391,13 @@ function buildDetailPage(record, collection, related) {
               ${escapeHtml(record.date_captured || "Unknown")}
             </div>
             <div class="side-item">
-              <strong>License Status</strong>
-              ${escapeHtml(record.license_status)}
+              <strong>Usage License</strong>
+              ${escapeHtml(publicLicenseLabel(record))}
             </div>
           </div>
           <div class="tag-list">${tags}</div>
           <div class="actions">
-            <a class="btn btn-primary" href="../../../index.html#contact">License This Image</a>
+            <a class="btn btn-primary" href="../../index.html">Browse More Free Images</a>
             ${collection ? `<a class="btn" href="${localCollectionHrefFromDetail(collection)}">View Collection</a>` : `<a class="btn" href="../../index.html">Browse Photos</a>`}
           </div>
         </aside>

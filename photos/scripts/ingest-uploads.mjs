@@ -68,14 +68,14 @@ async function main() {
       title,
       alt_text: `${title} outdoor photograph`,
       caption: `${title}.`,
-      description: "Outdoor photograph imported for review and licensing preparation.",
+      description: "Outdoor photograph imported for review and free-use publishing.",
       location: "",
       state_region: "",
       country: "",
       tags,
       orientation,
       license_status: "commercial-safe",
-      license_type: "direct",
+      license_type: "free-use",
       model_release: "no",
       property_release: "no",
       collection: "uncategorized",
@@ -83,7 +83,7 @@ async function main() {
       published: "no",
       date_captured: captureDate,
       date_published: "",
-      notes: "Imported by photos:ingest. Defaulted to commercial-safe per workflow policy. Review metadata before publishing.",
+      notes: "Imported by photos:ingest. Defaulted to commercial-safe free-use publishing per workflow policy. Review metadata before publishing.",
     };
 
     workingRecords.push(record);

@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fused Photos | Original Photography for Licensing, Editorial and Brand Use</title>
+    <title>Fused Photos | Free Use Photography for Web, Editorial and Brand Use</title>
     <meta
       name="description"
-      content="Original photography from Fused Photos — residential architecture, waterside sunsets, suburban atmosphere, and nature details available for commercial use, editorial placement, and brand storytelling."
+      content="Original photography from Fused Photos — residential architecture, waterside sunsets, suburban atmosphere, and nature details available as commercially cleared free-use images for websites, editorial placement, and brand storytelling."
     />
     <link rel="canonical" href="https://fuseddistribution.com/photos/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fuseddistribution.com/photos/" />
     <meta property="og:site_name" content="Fused Distribution" />
-    <meta property="og:title" content="Fused Photos | Original Photography for Licensing, Editorial and Brand Use" />
+    <meta property="og:title" content="Fused Photos | Free Use Photography for Web, Editorial and Brand Use" />
     <meta
       property="og:description"
-      content="Browse original photography from Fused — built for licensing, editorial use, brand storytelling, and website-ready visual assets."
+      content="Browse original photography from Fused — built as a commercially cleared free-use library for editorial use, brand storytelling, and website-ready visual assets."
     />
     <meta property="og:image" content="https://fuseddistribution.com/photos/derived/web/img-0018-img-0519.jpg" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Fused Photos | Original Photography for Licensing, Editorial and Brand Use"
+      content="Fused Photos | Free Use Photography for Web, Editorial and Brand Use"
     />
     <meta
       name="twitter:description"
-      content="Original photography from Fused — residential architecture, waterside sunsets, suburban atmosphere, and nature details."
+      content="Original photography from Fused — a commercially cleared free-use library of residential architecture, waterside sunsets, suburban atmosphere, and nature details."
     />
     <meta name="twitter:image" content="https://fuseddistribution.com/photos/derived/web/img-0018-img-0519.jpg" />
     <meta name="theme-color" content="#07131a" />
@@ -47,7 +47,7 @@
           "@id": "https://fuseddistribution.com/photos/#webpage",
           "url": "https://fuseddistribution.com/photos/",
           "name": "Fused Photos",
-          "description": "Original photography for licensing, editorial use, brand storytelling, and website-ready visual assets.",
+          "description": "Original photography shared as commercially cleared free-use visuals for editorial use, brand storytelling, and website-ready assets.",
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -226,6 +226,108 @@
       .nav a:focus-visible,
       .nav a.active {
         color: var(--accent);
+      }
+
+      /* ── Dropdown navigation ── */
+      .nav-item { position: relative; }
+
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle {
+        color: var(--accent);
+        outline: none;
+      }
+
+      .nav-caret {
+        font-size: 0.68rem;
+        transition: transform 0.2s ease;
+        display: inline-block;
+      }
+
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        text-transform: none;
+        transition: background 0.12s, color 0.12s;
+      }
+
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active {
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .nav-dropdown-divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.07);
+        margin: 4px 6px;
+      }
+
+      @media (max-width: 900px) {
+        .nav-dropdown {
+          left: 0;
+          transform: translateY(-6px);
+        }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown {
+          transform: translateY(0);
+        }
       }
 
       .nav-cta {
@@ -609,20 +711,62 @@
   <body>
     <div class="shell">
       <header class="topbar">
-        <a class="brand" href="../index.html">
+        <a class="brand" href="/" aria-label="Fused Distribution home">
           <span class="brand-mark">Fused</span>
-          <span class="brand-sub">Original Photo Library</span>
+          <span class="brand-sub">Distribution</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <div class="nav-pages">
-            <a href="../index.html">Home</a>
-            <a href="../projects/index.html">Projects</a>
-            <a class="active" href="./">Photos</a>
-            <a href="../education/index.html">Education</a>
-            <a href="../blog/index.html">Blog</a>
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+
+            <a class="active" href="/photos/">Photos</a>
+            <a href="/about/">About</a>
+            <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
-            <a class="nav-cta" href="../index.html#contact">License A Set</a>
+            <a class="nav-cta" href="/#contact">Get Started</a>
           </div>
         </nav>
       </header>
@@ -630,25 +774,25 @@
       <section class="hero">
         <div class="hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Commercial-Safe Photo Library</span>
-            <h1>Original Photography For Sites, Editorial, Campaigns And Brand Assets</h1>
+            <span class="eyebrow">Commercial-Safe Free-Use Library</span>
+            <h1>Original Photography Free To Use Across Sites, Editorial And Brand Assets</h1>
             <p>
               Fused Photos is the image side of the Fused ecosystem: a growing library of original
-              photography built for licensing, website builds, editorial use, and visual storytelling.
-              Every image here can support your next page, campaign, article, or brand refresh.
+              photography built as a free-use resource for website builds, editorial use, and visual storytelling.
+              Every image here is presented as commercially cleared for reuse across your next page, campaign, article, or brand refresh.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#collections">Browse Collections</a>
-              <a class="btn btn-secondary" href="../index.html#contact">Ask About Licensing</a>
+              <a class="btn btn-secondary" href="#featured">See Featured Images</a>
             </div>
             <div class="hero-stats">
               <div class="stat">
                 <strong>20</strong>
-                <span>Prepared image assets live in the catalog</span>
+                <span>Prepared free-use image assets live in the catalog</span>
               </div>
               <div class="stat">
                 <strong>4</strong>
-                <span>Initial collection directions already organized</span>
+                <span>Initial free-use collections already organized</span>
               </div>
               <div class="stat">
                 <strong>1</strong>
@@ -659,14 +803,14 @@
 
           <div class="hero-visual" aria-hidden="true">
             <div class="feature-shot">
-              <img src="derived/web/img-0018-img-0519.jpg" alt="Low sun over calm shoreline water" loading="eager" />
+              <img src="derived/web/img-0018-img-0519.jpg" alt="Low sun over calm shoreline water" loading="eager" fetchpriority="high" width="2400" height="2010" />
             </div>
             <div class="stack">
               <div class="stack-shot">
-                <img src="derived/web/img-0004-img-0055.jpg" alt="Modern hillside home exterior" loading="lazy" />
+                <img src="derived/web/img-0004-img-0055.jpg" alt="Modern hillside home exterior" loading="lazy" width="2400" height="1800" />
               </div>
               <div class="stack-shot">
-                <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow crab spider macro" loading="lazy" />
+                <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow crab spider macro" loading="lazy" width="1800" height="2400" />
               </div>
             </div>
           </div>
@@ -689,7 +833,7 @@
           <div class="collection-grid">
             <article class="collection-card">
               <div class="collection-thumb">
-                <img src="derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior in Lake Oswego, Oregon" loading="lazy" />
+                <img src="derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior in Lake Oswego, Oregon" loading="lazy" width="2400" height="1800" />
               </div>
               <div>
                 <h3><a href="collections/residential-architecture-event/">Residential Architecture Event</a></h3>
@@ -700,14 +844,14 @@
                 <div class="pill-row">
                   <span class="pill">13 Images</span>
                   <span class="pill">Lake Oswego</span>
-                  <span class="pill">Commercial-Safe</span>
+                  <span class="pill">Free Use</span>
                 </div>
               </div>
             </article>
 
             <article class="collection-card">
               <div class="collection-thumb">
-                <img src="derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water" loading="lazy" />
+                <img src="derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water" loading="lazy" width="2400" height="2010" />
               </div>
               <div>
                 <h3><a href="collections/waterside-sunsets/">Waterside Sunsets</a></h3>
@@ -725,7 +869,7 @@
 
             <article class="collection-card">
               <div class="collection-thumb">
-                <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro" loading="lazy" />
+                <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro" loading="lazy" width="1800" height="2400" />
               </div>
               <div>
                 <h3><a href="collections/nature-details/">Nature Details</a></h3>
@@ -736,14 +880,14 @@
                 <div class="pill-row">
                   <span class="pill">Macro</span>
                   <span class="pill">Texture</span>
-                  <span class="pill">Commercial-Safe</span>
+                  <span class="pill">Free Use</span>
                 </div>
               </div>
             </article>
 
             <article class="collection-card">
               <div class="collection-thumb">
-                <img src="derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood" loading="lazy" />
+                <img src="derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood" loading="lazy" width="2400" height="1800" />
               </div>
               <div>
                 <h3><a href="collections/suburban-atmosphere/">Suburban Atmosphere</a></h3>
@@ -761,7 +905,7 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="featured" class="section">
           <div class="section-head">
             <div>
               <span class="eyebrow">Featured Frames</span>
@@ -775,22 +919,22 @@
 
           <div class="mini-gallery">
             <article class="mini-card">
-              <img src="derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water in shoreline light" loading="lazy" />
+              <img src="derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water in shoreline light" loading="lazy" width="2400" height="2010" />
               <a href="images/img-0018-img-0519/"><strong>Low Sun Over Quiet Water</strong></a>
               <span>Waterside sunset</span>
             </article>
             <article class="mini-card">
-              <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro close-up" loading="lazy" />
+              <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro close-up" loading="lazy" width="1800" height="2400" />
               <a href="images/img-0017-img-0500/"><strong>Yellow Crab Spider Macro</strong></a>
               <span>Nature detail</span>
             </article>
             <article class="mini-card">
-              <img src="derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior in Lake Oswego" loading="lazy" />
+              <img src="derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior in Lake Oswego" loading="lazy" width="2400" height="1800" />
               <a href="images/img-0004-img-0055/"><strong>Modern Hillside Home Exterior</strong></a>
               <span>Residential architecture</span>
             </article>
             <article class="mini-card">
-              <img src="derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood roadway scene" loading="lazy" />
+              <img src="derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood roadway scene" loading="lazy" width="2400" height="1800" />
               <a href="images/img-0016-img-0259/"><strong>Twilight Drive Through Neighborhood</strong></a>
               <span>Suburban atmosphere</span>
             </article>
@@ -803,8 +947,8 @@
             <h2>Connected To The Existing Site, Not Competing With It</h2>
             <p>
               This photo venture strengthens the larger Fused property by supplying original imagery for projects,
-              blog content, education pages, and future client work. It also creates a separate monetization lane
-              through licensing and curated image packs.
+              blog content, education pages, and future client work. It also creates a reusable media layer
+              that strengthens the broader Fused content ecosystem.
             </p>
             <div class="steps">
               <div class="step">
@@ -816,32 +960,32 @@
                 Collection pages and photo essays give the domain more topical depth and natural internal links.
               </div>
               <div class="step">
-                <strong>Separate revenue lane</strong>
-                The library can license images directly without diluting the core web-services offer.
+                <strong>Open distribution</strong>
+                A free-use library makes it easier to share, cite, reuse, and circulate the images across partner and owned properties.
               </div>
             </div>
           </article>
 
           <article class="panel">
-            <span class="eyebrow">Launch Guidance</span>
-            <h2>What To Publish First</h2>
+            <span class="eyebrow">How To Use It</span>
+            <h2>Grab What You Need And Use It</h2>
             <p>
-              Start with a tight front door. The strongest move is a clean landing page, a small number of collection pages,
-              and a handful of image-detail pages with licensing CTAs. Do not launch a bloated archive before the best work
-              is curated.
+              Every image in Fused Photos is presented as commercially cleared and free to use
+              across your website, editorial content, and brand campaigns. No attribution required.
+              No licensing hoops.
             </p>
             <div class="steps">
               <div class="step">
-                <strong>Phase 1</strong>
-                Landing page, 4 collections, and 8 to 12 featured image pages.
+                <strong>Browse a collection</strong>
+                Pick the category that fits your project — architecture, atmosphere, waterside, or nature.
               </div>
               <div class="step">
-                <strong>Phase 2</strong>
-                Add location-led journal posts and curated packs for business buyers.
+                <strong>Download the image</strong>
+                Full-resolution files available on each image detail page, ready to drop into your layout.
               </div>
               <div class="step">
-                <strong>Phase 3</strong>
-                Expand into filters, public collection pages, and direct inquiry workflows.
+                <strong>Library grows monthly</strong>
+                New shoots and collections added on a rolling basis as the Fused catalog expands.
               </div>
             </div>
           </article>
@@ -849,15 +993,14 @@
 
         <section class="section">
           <div class="cta-band">
-            <span class="eyebrow">Licensing And Custom Use</span>
+            <span class="eyebrow">Free Use Library</span>
             <h2>Need Original Imagery For A Site, Campaign Or Editorial Feature?</h2>
             <p>
               Use Fused Photos when you need commercially cleared visuals that feel original, specific, and usable.
-              This library can support direct licensing, curated image packs, and future custom content for businesses
-              already working with the Fused ecosystem.
+              This library is presented as free-use media for web, editorial, and brand-support applications inside and alongside the Fused ecosystem.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="../index.html#contact">Ask About Licensing</a>
+              <a class="btn btn-primary" href="#collections">Browse Free Images</a>
               <a class="btn btn-secondary" href="../projects/index.html">See Fused Projects</a>
             </div>
           </div>
@@ -866,10 +1009,33 @@
 
       <footer class="footer">
         <div class="footer-grid">
-          <small>Fused Photos is a Fused Distribution venture built to support licensing, brand visuals, and original web-ready media.</small>
-          <small><a href="../index.html">Back to FusedDistribution.com</a></small>
+          <small>Fused Photos is a Fused Distribution venture built to share commercially cleared free-use visuals for websites, editorials, and original web-ready media.</small>
+          <small><a href="/">Back to FusedDistribution.com</a></small>
         </div>
       </footer>
     </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
   </body>
 </html>

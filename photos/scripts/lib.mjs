@@ -99,7 +99,7 @@ export function slugify(value) {
 export const DEFAULT_IMPORT_DEFAULTS = {
   global: {
     license_status: "commercial-safe",
-    license_type: "direct",
+    license_type: "free-use",
     model_release: "no",
     property_release: "no",
     country: "United States",
