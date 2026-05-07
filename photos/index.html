@@ -571,12 +571,12 @@
       .mini-gallery {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
+        gap: 10px;
       }
 
       .mini-card {
         position: relative;
-        border-radius: 20px;
+        border-radius: 14px;
         border: 1px solid rgba(255,255,255,0.06);
         overflow: hidden;
         background: rgba(8, 18, 26, 0.8);
@@ -584,7 +584,7 @@
 
       .mini-card img {
         width: 100%;
-        aspect-ratio: 4/3;
+        aspect-ratio: 16/9;
         object-fit: cover;
         display: block;
         transition: transform 0.45s ease;
@@ -600,23 +600,23 @@
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 22px 20px 20px;
+        padding: 14px 14px 12px;
         background: linear-gradient(to top, rgba(4, 10, 16, 0.94) 0%, rgba(4, 10, 16, 0.55) 55%, transparent 100%);
       }
 
       .mini-card strong {
         display: block;
         color: var(--text);
-        font-size: 1rem;
+        font-size: 0.85rem;
         font-weight: 700;
         line-height: 1.2;
       }
 
       .mini-card span {
         display: block;
-        margin-top: 5px;
+        margin-top: 3px;
         color: var(--accent);
-        font-size: 0.75rem;
+        font-size: 0.68rem;
         font-weight: 800;
         letter-spacing: 0.1em;
         text-transform: uppercase;

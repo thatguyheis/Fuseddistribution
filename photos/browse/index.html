@@ -255,12 +255,12 @@
         .main { padding: 32px 40px 64px; position: relative; z-index: 1; }
         .gallery-count { margin-bottom: 20px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
         .gallery-count strong { color: var(--text); }
-        .gallery-grid { columns: 3; column-gap: 16px; }
-        .photo-card { break-inside: avoid; margin-bottom: 16px; position: relative; border-radius: 18px; border: 1px solid rgba(255,255,255,0.06); overflow: hidden; background: rgba(8,18,26,0.8); display: block; transition: border-color 0.2s, box-shadow 0.2s; }
+        .gallery-grid { columns: 4; column-gap: 12px; }
+        .photo-card { break-inside: avoid; margin-bottom: 12px; position: relative; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); overflow: hidden; background: rgba(8,18,26,0.8); display: block; transition: border-color 0.2s, box-shadow 0.2s; }
         .photo-card:hover, .photo-card:focus-within { border-color: rgba(88,214,255,0.24); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
         .photo-card img { width: 100%; display: block; object-fit: cover; transition: transform 0.45s ease; }
-        .photo-card.landscape img { aspect-ratio: 4/3; }
-        .photo-card.portrait img { aspect-ratio: 3/4; }
+        .photo-card.landscape img { aspect-ratio: 3/2; }
+        .photo-card.portrait img { aspect-ratio: 2/3; }
         .photo-card.square img { aspect-ratio: 1; }
         .photo-card:hover img, .photo-card:focus-within img { transform: scale(1.04); }
         .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 16px; background: linear-gradient(to top, rgba(4,10,16,0.95) 0%, rgba(4,10,16,0.6) 55%, transparent 100%); transform: translateY(4px); opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; }
@@ -271,10 +271,10 @@
         .photo-card.hidden { display: none; }
         .gallery-empty { display: none; text-align: center; padding: 64px 0; color: var(--muted); }
         .gallery-empty.visible { display: block; }
-        @media (max-width: 1100px) { .gallery-grid { columns: 2; } }
+        @media (max-width: 1100px) { .gallery-grid { columns: 3; } }
         @media (max-width: 820px) {
           .page-hero, .filter-bar, .main { padding-left: 22px; padding-right: 22px; }
-          .gallery-grid { columns: 1; }
+          .gallery-grid { columns: 2; }
           .hero-row { flex-direction: column; align-items: flex-start; }
         }
         @media (max-width: 640px) { h1 { font-size: 1.8rem; } }
