@@ -242,39 +242,46 @@
         .breadcrumb a { color: var(--accent); }
         .breadcrumb span { opacity: 0.5; }
         .hero-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-        .hero-meta { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 4px; }
+        .hero-meta { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 4px; }
         .meta-stat { display: flex; flex-direction: column; gap: 2px; }
-        .meta-stat strong { font-size: 1.5rem; font-weight: 900; color: var(--text); line-height: 1; }
+        .meta-stat strong { font-size: 1.6rem; font-weight: 900; color: var(--text); line-height: 1; }
         .meta-stat span { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
-        .filter-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 20px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(6,14,20,0.6); position: relative; z-index: 1; }
-        .filter-btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.08); background: transparent; color: var(--muted); font-family: inherit; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: border-color 0.18s, color 0.18s, background 0.18s; }
-        .filter-btn:hover { border-color: rgba(88,214,255,0.3); color: var(--text); }
-        .filter-btn.active { border-color: var(--accent); background: rgba(88,214,255,0.1); color: var(--accent); }
-        .filter-count { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: rgba(255,255,255,0.08); font-size: 0.7rem; font-weight: 900; }
-        .filter-btn.active .filter-count { background: rgba(88,214,255,0.2); }
-        .main { padding: 32px 40px 64px; position: relative; z-index: 1; }
-        .gallery-count { margin-bottom: 20px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
+        .filter-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 22px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(5,12,18,0.7); backdrop-filter: blur(12px); position: sticky; top: 72px; z-index: 100; }
+        .filter-btn { display: inline-flex; align-items: center; gap: 7px; padding: 10px 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.09); background: rgba(255,255,255,0.03); color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; cursor: pointer; transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s; }
+        .filter-btn:hover { border-color: rgba(88,214,255,0.35); color: var(--text); background: rgba(88,214,255,0.06); }
+        .filter-btn.active { border-color: rgba(88,214,255,0.6); background: rgba(88,214,255,0.12); color: var(--accent); box-shadow: 0 0 16px rgba(88,214,255,0.12), inset 0 1px 0 rgba(88,214,255,0.1); }
+        .filter-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: rgba(255,255,255,0.07); font-size: 0.68rem; font-weight: 900; }
+        .filter-btn.active .filter-count { background: rgba(88,214,255,0.22); color: var(--accent); }
+        .collection-desc-bar { padding: 0 54px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.3s ease; opacity: 0; background: linear-gradient(135deg, rgba(88,214,255,0.04), rgba(77,255,184,0.02)); border-bottom: 1px solid transparent; }
+        .collection-desc-bar.visible { max-height: 120px; padding: 18px 54px; opacity: 1; border-bottom-color: rgba(88,214,255,0.08); }
+        .collection-desc-bar p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+        .collection-desc-bar strong { color: var(--accent); font-weight: 800; margin-right: 10px; }
+        .main { padding: 36px 40px 80px; position: relative; z-index: 1; }
+        .gallery-count { margin-bottom: 24px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
         .gallery-count strong { color: var(--text); }
-        .gallery-grid { columns: 4; column-gap: 12px; }
-        .photo-card { break-inside: avoid; margin-bottom: 12px; position: relative; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); overflow: hidden; background: rgba(8,18,26,0.8); display: block; transition: border-color 0.2s, box-shadow 0.2s; }
-        .photo-card:hover, .photo-card:focus-within { border-color: rgba(88,214,255,0.24); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
-        .photo-card img { width: 100%; display: block; object-fit: cover; aspect-ratio: 3/2; transition: transform 0.45s ease; }
-        .photo-card:hover img, .photo-card:focus-within img { transform: scale(1.04); }
-        .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 16px; background: linear-gradient(to top, rgba(4,10,16,0.95) 0%, rgba(4,10,16,0.6) 55%, transparent 100%); transform: translateY(4px); opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; }
-        .photo-card:hover .photo-overlay, .photo-card:focus-within .photo-overlay { opacity: 1; transform: translateY(0); }
-        .photo-collection-tag { display: inline-block; margin-bottom: 6px; padding: 3px 9px; border-radius: 999px; border: 1px solid rgba(88,214,255,0.3); background: rgba(88,214,255,0.1); color: var(--accent); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-        .photo-title { display: block; color: var(--text); font-size: 0.92rem; font-weight: 700; line-height: 1.3; }
-        .photo-badge { position: absolute; top: 12px; left: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.1); background: rgba(4,10,16,0.75); backdrop-filter: blur(8px); color: rgba(236,248,251,0.75); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; pointer-events: none; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 18px; }
+        .photo-card { position: relative; border-radius: 20px; border: 1px solid rgba(255,255,255,0.07); overflow: hidden; background: #040c12; display: block; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), border-color 0.3s ease, box-shadow 0.35s ease; }
+        .photo-card:hover, .photo-card:focus-visible { transform: scale(1.025); border-color: rgba(88,214,255,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(88,214,255,0.1), 0 0 40px rgba(88,214,255,0.07); outline: none; }
+        .photo-card img { width: 100%; height: 500px; object-fit: cover; display: block; transition: transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+        .photo-card:hover img, .photo-card:focus-visible img { transform: scale(1.07); }
+        .photo-shine { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 50%, rgba(88,214,255,0.03) 100%); opacity: 0; transition: opacity 0.3s ease; pointer-events: none; border-radius: 20px; }
+        .photo-card:hover .photo-shine { opacity: 1; }
+        .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 56px 22px 22px; background: linear-gradient(to top, rgba(4,10,16,0.97) 0%, rgba(4,10,16,0.72) 42%, transparent 100%); transform: translateY(8px); opacity: 0; transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.22,1,0.36,1); }
+        .photo-card:hover .photo-overlay, .photo-card:focus-visible .photo-overlay { opacity: 1; transform: translateY(0); }
+        .photo-collection-tag { display: inline-block; margin-bottom: 9px; padding: 4px 11px; border-radius: 999px; border: 1px solid rgba(88,214,255,0.38); background: rgba(88,214,255,0.13); color: var(--accent); font-size: 0.67rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+        .photo-title { display: block; color: var(--text); font-size: 1.05rem; font-weight: 700; line-height: 1.3; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
         .photo-card.hidden { display: none; }
-        .gallery-empty { display: none; text-align: center; padding: 64px 0; color: var(--muted); }
+        .gallery-empty { display: none; text-align: center; padding: 80px 0; color: var(--muted); }
         .gallery-empty.visible { display: block; }
-        @media (max-width: 1100px) { .gallery-grid { columns: 3; } }
+        @media (max-width: 1100px) { .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); } .photo-card img { height: 400px; } }
         @media (max-width: 820px) {
-          .page-hero, .filter-bar, .main { padding-left: 22px; padding-right: 22px; }
-          .gallery-grid { columns: 2; }
+          .page-hero, .filter-bar, .collection-desc-bar, .main { padding-left: 22px; padding-right: 22px; }
+          .gallery-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+          .photo-card img { height: 280px; }
+          .filter-bar { top: 60px; }
           .hero-row { flex-direction: column; align-items: flex-start; }
         }
-        @media (max-width: 640px) { h1 { font-size: 1.8rem; } }
+        @media (max-width: 520px) { .gallery-grid { grid-template-columns: 1fr; } .photo-card img { height: 320px; } h1 { font-size: 1.8rem; } }
       </style>
       <script>
         (function(){
@@ -282,11 +289,20 @@
           var cards=document.querySelectorAll('.photo-card');
           var countEl=document.getElementById('gallery-count');
           var emptyEl=document.getElementById('gallery-empty');
+          var descBar=document.getElementById('collection-desc-bar');
           btns.forEach(function(btn){
             btn.addEventListener('click',function(){
               var f=btn.getAttribute('data-filter');
+              var desc=btn.getAttribute('data-desc')||'';
+              var name=btn.textContent.replace(/[0-9]+/g,'').trim();
               btns.forEach(function(b){b.classList.remove('active');});
               btn.classList.add('active');
+              if(desc){
+                descBar.innerHTML='<p><strong>'+name+'</strong>'+desc+'</p>';
+                descBar.classList.add('visible');
+              } else {
+                descBar.classList.remove('visible');
+              }
               var v=0;
               cards.forEach(function(c){
                 var m=f==='all'||c.getAttribute('data-collection')===f;
@@ -319,519 +335,521 @@
       </section>
 
       <div class="filter-bar" role="group" aria-label="Filter by collection">
-        <button class="filter-btn active" data-filter="all">All <span class="filter-count">63</span></button>
-        <button class="filter-btn" data-filter="residential-architecture-event">Residential Architecture Event <span class="filter-count">13</span></button>
-        <button class="filter-btn" data-filter="suburban-atmosphere">Suburban Atmosphere <span class="filter-count">5</span></button>
-        <button class="filter-btn" data-filter="nature-details">Nature Details <span class="filter-count">3</span></button>
-        <button class="filter-btn" data-filter="waterside-sunsets">Waterside Sunsets <span class="filter-count">1</span></button>
-        <button class="filter-btn" data-filter="seasonal-details">Seasonal Details <span class="filter-count">4</span></button>
-        <button class="filter-btn" data-filter="coastal-long-beach">Long Beach Coast <span class="filter-count">13</span></button>
-        <button class="filter-btn" data-filter="quiet-shorelines">Quiet Shorelines <span class="filter-count">12</span></button>
-        <button class="filter-btn" data-filter="astoria-overlooks">Astoria Overlooks <span class="filter-count">12</span></button>
+        <button class="filter-btn active" data-filter="all" data-desc="">All Photos <span class="filter-count">63</span></button>
+        <button class="filter-btn" data-filter="residential-architecture-event" data-desc="Editorial-style images of private residential architecture, interiors, and landscaping captured during what appears to be a luxury home event or showing.">Residential Architecture Event <span class="filter-count">13</span></button>
+        <button class="filter-btn" data-filter="suburban-atmosphere" data-desc="Atmospheric suburban scenes including smoky skies, twilight roads, and neighborhood-adjacent moments.">Suburban Atmosphere <span class="filter-count">5</span></button>
+        <button class="filter-btn" data-filter="nature-details" data-desc="Close studies of natural textures and small outdoor subjects.">Nature Details <span class="filter-count">3</span></button>
+        <button class="filter-btn" data-filter="waterside-sunsets" data-desc="Minimal shoreline and waterside light studies captured near sunset.">Waterside Sunsets <span class="filter-count">1</span></button>
+        <button class="filter-btn" data-filter="seasonal-details" data-desc="Garden, harvest, and homey seasonal studies ranging from produce and vines to simple food moments.">Seasonal Details <span class="filter-count">4</span></button>
+        <button class="filter-btn" data-filter="coastal-long-beach" data-desc="Long Beach, Washington shoreline scenes including beach sunsets, promenade views, kites, dunes, and landmark coastal moments.">Long Beach Coast <span class="filter-count">13</span></button>
+        <button class="filter-btn" data-filter="quiet-shorelines" data-desc="Calm estuary and shoreline studies with driftwood, branch frames, reflective water, and low-key coastal stillness.">Quiet Shorelines <span class="filter-count">12</span></button>
+        <button class="filter-btn" data-filter="astoria-overlooks" data-desc="Astoria, Oregon vantage points centered on the Astoria-Megler Bridge, harbor, hillsides, and panoramic estuary views.">Astoria Overlooks <span class="filter-count">12</span></button>
       </div>
+
+      <div class="collection-desc-bar" id="collection-desc-bar" aria-live="polite"></div>
 
       <main class="main">
         <p class="gallery-count" id="gallery-count">Showing <strong>63</strong> images</p>
         <div class="gallery-grid" id="gallery-grid">
-          <a class="photo-card landscape" href="/photos/images/img-0001-img-0044/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0001-img-0044/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0001-img-0044.jpg" alt="Tree Canopy Over Modern Courtyard" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Tree Canopy Over Modern Courtyard</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0002-img-0053/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0002-img-0053/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0002-img-0053.jpg" alt="Living Room Patio View" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Living Room Patio View</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0003-img-0054/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0003-img-0054/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0003-img-0054.jpg" alt="Wine Cellar Display" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Wine Cellar Display</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0004-img-0055/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0004-img-0055/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Modern Hillside Home Exterior</span>
             </div>
           </a>
-          <a class="photo-card portrait" href="/photos/images/img-0005-img-0057/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0005-img-0057/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0005-img-0057.jpg" alt="Reflective Glass Facade and Water Feature" loading="lazy" width="1800" height="2400" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Reflective Glass Facade and Water Feature</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0006-img-0059/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0006-img-0059/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0006-img-0059.jpg" alt="Kitchen View With Tall Windows" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Kitchen View With Tall Windows</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0007-img-0060/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0007-img-0060/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0007-img-0060.jpg" alt="Covered Patio Dining Area" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Covered Patio Dining Area</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0008-img-0063/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0008-img-0063/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0008-img-0063.jpg" alt="Covered Outdoor Lounge and Grill" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Covered Outdoor Lounge and Grill</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0009-img-0070/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0009-img-0070/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0009-img-0070.jpg" alt="Sunlit Entry Hall From Above" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Sunlit Entry Hall From Above</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0010-img-0078/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0010-img-0078/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0010-img-0078.jpg" alt="Bedroom With Patio Window" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Bedroom With Patio Window</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0011-img-0084/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0011-img-0084/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0011-img-0084.jpg" alt="Decorative Garage Doors" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Decorative Garage Doors</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0012-img-0085/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0012-img-0085/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0012-img-0085.jpg" alt="Stone Facade and Arched Entry" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Stone Facade and Arched Entry</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0013-img-0087/" data-collection="residential-architecture-event">
+          <a class="photo-card" href="/photos/images/img-0013-img-0087/" data-collection="residential-architecture-event">
             <img src="/photos/derived/web/img-0013-img-0087.jpg" alt="Backyard Waterfall Garden" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Architecture</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Residential Architecture Event</span>
               <span class="photo-title">Backyard Waterfall Garden</span>
             </div>
           </a>
-          <a class="photo-card portrait" href="/photos/images/img-0014-img-0156/" data-collection="suburban-atmosphere">
+          <a class="photo-card" href="/photos/images/img-0014-img-0156/" data-collection="suburban-atmosphere">
             <img src="/photos/derived/web/img-0014-img-0156.jpg" alt="Hazy Sun Over Empty Parking Lot" loading="lazy" width="1800" height="2400" />
-            <span class="photo-badge">Atmosphere</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Suburban Atmosphere</span>
               <span class="photo-title">Hazy Sun Over Empty Parking Lot</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0015-img-0157/" data-collection="suburban-atmosphere">
+          <a class="photo-card" href="/photos/images/img-0015-img-0157/" data-collection="suburban-atmosphere">
             <img src="/photos/derived/web/img-0015-img-0157.jpg" alt="Sun Through Smoke and Trees" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Atmosphere</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Suburban Atmosphere</span>
               <span class="photo-title">Sun Through Smoke and Trees</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0016-img-0259/" data-collection="suburban-atmosphere">
+          <a class="photo-card" href="/photos/images/img-0016-img-0259/" data-collection="suburban-atmosphere">
             <img src="/photos/derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Atmosphere</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Suburban Atmosphere</span>
               <span class="photo-title">Twilight Drive Through Neighborhood</span>
             </div>
           </a>
-          <a class="photo-card portrait" href="/photos/images/img-0017-img-0500/" data-collection="nature-details">
+          <a class="photo-card" href="/photos/images/img-0017-img-0500/" data-collection="nature-details">
             <img src="/photos/derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro" loading="lazy" width="1800" height="2400" />
-            <span class="photo-badge">Nature</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Nature Details</span>
               <span class="photo-title">Yellow Crab Spider Macro</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0018-img-0519/" data-collection="waterside-sunsets">
+          <a class="photo-card" href="/photos/images/img-0018-img-0519/" data-collection="waterside-sunsets">
             <img src="/photos/derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Waterside</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Waterside Sunsets</span>
               <span class="photo-title">Low Sun Over Quiet Water</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0019-img-0541/" data-collection="nature-details">
+          <a class="photo-card" href="/photos/images/img-0019-img-0541/" data-collection="nature-details">
             <img src="/photos/derived/web/img-0019-img-0541.jpg" alt="Sunlight Through Evergreens" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Nature</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Nature Details</span>
               <span class="photo-title">Sunlight Through Evergreens</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0020-img-1128/" data-collection="suburban-atmosphere">
+          <a class="photo-card" href="/photos/images/img-0020-img-1128/" data-collection="suburban-atmosphere">
             <img src="/photos/derived/web/img-0020-img-1128.jpg" alt="Motorcycle At Dusk Under Transmission Towers" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Atmosphere</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Suburban Atmosphere</span>
               <span class="photo-title">Motorcycle At Dusk Under Transmission Towers</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0021-img-1366/" data-collection="seasonal-details">
+          <a class="photo-card" href="/photos/images/img-0021-img-1366/" data-collection="seasonal-details">
             <img src="/photos/derived/web/img-0021-img-1366.jpg" alt="Backyard Grapevine Arbor" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Seasonal</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Seasonal Details</span>
               <span class="photo-title">Backyard Grapevine Arbor</span>
             </div>
           </a>
-          <a class="photo-card square" href="/photos/images/img-0022-img-1922/" data-collection="seasonal-details">
+          <a class="photo-card" href="/photos/images/img-0022-img-1922/" data-collection="seasonal-details">
             <img src="/photos/derived/web/img-0022-img-1922.jpg" alt="Pumpkins on Garden Soil" loading="lazy" width="2400" height="2400" />
-            <span class="photo-badge">Seasonal</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Seasonal Details</span>
               <span class="photo-title">Pumpkins on Garden Soil</span>
             </div>
           </a>
-          <a class="photo-card square" href="/photos/images/img-0023-img-1932/" data-collection="seasonal-details">
+          <a class="photo-card" href="/photos/images/img-0023-img-1932/" data-collection="seasonal-details">
             <img src="/photos/derived/web/img-0023-img-1932.jpg" alt="Pumpkin Pair Close-Up" loading="lazy" width="2400" height="2400" />
-            <span class="photo-badge">Seasonal</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Seasonal Details</span>
               <span class="photo-title">Pumpkin Pair Close-Up</span>
             </div>
           </a>
-          <a class="photo-card square" href="/photos/images/img-0024-img-2238/" data-collection="seasonal-details">
+          <a class="photo-card" href="/photos/images/img-0024-img-2238/" data-collection="seasonal-details">
             <img src="/photos/derived/web/img-0024-img-2238.jpg" alt="Fresh-Baked Fruit Crumble" loading="lazy" width="2400" height="2400" />
-            <span class="photo-badge">Seasonal</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Seasonal Details</span>
               <span class="photo-title">Fresh-Baked Fruit Crumble</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0025-img-2346/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0025-img-2346/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0025-img-2346.jpg" alt="Astoria Waterfront Under Cloud Cover" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Waterfront Under Cloud Cover</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0026-img-2742/" data-collection="nature-details">
+          <a class="photo-card" href="/photos/images/img-0026-img-2742/" data-collection="nature-details">
             <img src="/photos/derived/web/img-0026-img-2742.jpg" alt="Perched Songbird on Bare Branch" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Nature</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Nature Details</span>
               <span class="photo-title">Perched Songbird on Bare Branch</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0027-img-3521/" data-collection="suburban-atmosphere">
+          <a class="photo-card" href="/photos/images/img-0027-img-3521/" data-collection="suburban-atmosphere">
             <img src="/photos/derived/web/img-0027-img-3521.jpg" alt="Rainy Road Through the Windshield" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Atmosphere</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Suburban Atmosphere</span>
               <span class="photo-title">Rainy Road Through the Windshield</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0028-img-3616/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0028-img-3616/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0028-img-3616.jpg" alt="Long Beach Sunset Reflections" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Long Beach Sunset Reflections</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0029-img-3617/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0029-img-3617/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0029-img-3617.jpg" alt="Dune Edge at Dusk" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Dune Edge at Dusk</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0030-img-3618/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0030-img-3618/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0030-img-3618.jpg" alt="Beach Access Toward Sea Stacks" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Beach Access Toward Sea Stacks</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0031-img-3620/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0031-img-3620/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0031-img-3620.jpg" alt="Sea Stacks Across the Flats" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Sea Stacks Across the Flats</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0032-img-3621/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0032-img-3621/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0032-img-3621.jpg" alt="Last Light on Wet Sand" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Last Light on Wet Sand</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0033-img-3637/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0033-img-3637/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0033-img-3637.jpg" alt="Promenade View Toward the Shore" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Promenade View Toward the Shore</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0034-img-3659/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0034-img-3659/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0034-img-3659.jpg" alt="Overcast Promenade Rail" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Overcast Promenade Rail</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0035-img-3661/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0035-img-3661/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0035-img-3661.jpg" alt="Wide Promenade Coastline" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Wide Promenade Coastline</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0036-img-3679/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0036-img-3679/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0036-img-3679.jpg" alt="Worlds Longest Beach Arch" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Worlds Longest Beach Arch</span>
             </div>
           </a>
-          <a class="photo-card portrait" href="/photos/images/img-0037-img-3681/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0037-img-3681/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0037-img-3681.jpg" alt="Kite Above the Beach" loading="lazy" width="1800" height="2400" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Kite Above the Beach</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0038-img-3683/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0038-img-3683/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0038-img-3683.jpg" alt="Beach Homes and Kite" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Beach Homes and Kite</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0039-img-3762/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0039-img-3762/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0039-img-3762.jpg" alt="Flat Sand and Rolling Surf" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Flat Sand and Rolling Surf</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0040-img-3788/" data-collection="coastal-long-beach">
+          <a class="photo-card" href="/photos/images/img-0040-img-3788/" data-collection="coastal-long-beach">
             <img src="/photos/derived/web/img-0040-img-3788.jpg" alt="Wet Sand Along the Surf" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Long Beach</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Long Beach Coast</span>
               <span class="photo-title">Wet Sand Along the Surf</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0041-img-3790/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0041-img-3790/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0041-img-3790.jpg" alt="Kayak View Across Quiet Water" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Kayak View Across Quiet Water</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0042-img-3832/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0042-img-3832/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0042-img-3832.jpg" alt="Sunlit Water from the Shore" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Sunlit Water from the Shore</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0043-img-3890/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0043-img-3890/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0043-img-3890.jpg" alt="Calm Channel in Afternoon Light" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Calm Channel in Afternoon Light</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0044-img-3895/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0044-img-3895/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0044-img-3895.jpg" alt="Shoreline Tree Frame" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Shoreline Tree Frame</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0045-img-3896/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0045-img-3896/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0045-img-3896.jpg" alt="Sparkling Water Beneath Branches" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Sparkling Water Beneath Branches</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0046-img-3907/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0046-img-3907/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0046-img-3907.jpg" alt="Driftwood Over the Water" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Driftwood Over the Water</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0047-img-3908/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0047-img-3908/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0047-img-3908.jpg" alt="Roadside Driftwood View" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Roadside Driftwood View</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0048-img-3909/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0048-img-3909/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0048-img-3909.jpg" alt="Astoria Bridge From the Hillside" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Bridge From the Hillside</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0049-img-3910/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0049-img-3910/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0049-img-3910.jpg" alt="Closer View of the Astoria-Megler Bridge" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Closer View of the Astoria-Megler Bridge</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0050-img-3934/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0050-img-3934/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0050-img-3934.jpg" alt="Astoria Panorama Across the Bay" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Panorama Across the Bay</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0051-img-3935/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0051-img-3935/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0051-img-3935.jpg" alt="Estuary Panorama from the High Viewpoint" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Estuary Panorama from the High Viewpoint</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0052-img-3936/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0052-img-3936/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0052-img-3936.jpg" alt="Bright Water and Branch Canopy" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Bright Water and Branch Canopy</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0053-img-3937/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0053-img-3937/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0053-img-3937.jpg" alt="Sun Glare Over the Shoreline" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Sun Glare Over the Shoreline</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0054-img-3938/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0054-img-3938/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0054-img-3938.jpg" alt="Open Water and Driftwood" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Open Water and Driftwood</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0055-img-3939/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0055-img-3939/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0055-img-3939.jpg" alt="Low Tide Driftwood Edge" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Low Tide Driftwood Edge</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0056-img-3940/" data-collection="quiet-shorelines">
+          <a class="photo-card" href="/photos/images/img-0056-img-3940/" data-collection="quiet-shorelines">
             <img src="/photos/derived/web/img-0056-img-3940.jpg" alt="Driftwood Foreground on the Estuary" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Shorelines</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Quiet Shorelines</span>
               <span class="photo-title">Driftwood Foreground on the Estuary</span>
             </div>
           </a>
-          <a class="photo-card square" href="/photos/images/img-0057-img-3951/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0057-img-3951/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0057-img-3951.jpg" alt="Astoria Column Stairwell" loading="lazy" width="2400" height="2400" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Column Stairwell</span>
             </div>
           </a>
-          <a class="photo-card square" href="/photos/images/img-0058-img-3952/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0058-img-3952/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0058-img-3952.jpg" alt="Astoria Bridge and Hillside Overlook" loading="lazy" width="2400" height="2400" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Bridge and Hillside Overlook</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0059-img-3953/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0059-img-3953/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0059-img-3953.jpg" alt="Bridge Detail Above Town" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Bridge Detail Above Town</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0060-img-3955/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0060-img-3955/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0060-img-3955.jpg" alt="Astoria Harbor and Cargo Ship" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Astoria Harbor and Cargo Ship</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0061-img-3957/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0061-img-3957/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0061-img-3957.jpg" alt="Wide Astoria Bay Panorama" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">Wide Astoria Bay Panorama</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0062-img-3958/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0062-img-3958/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0062-img-3958.jpg" alt="River Bend Beyond the Ridge" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">River Bend Beyond the Ridge</span>
             </div>
           </a>
-          <a class="photo-card landscape" href="/photos/images/img-0063-img-3959/" data-collection="astoria-overlooks">
+          <a class="photo-card" href="/photos/images/img-0063-img-3959/" data-collection="astoria-overlooks">
             <img src="/photos/derived/web/img-0063-img-3959.jpg" alt="High Overlook Above the Estuary" loading="lazy" width="2400" height="1800" />
-            <span class="photo-badge">Astoria</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">Astoria Overlooks</span>
               <span class="photo-title">High Overlook Above the Estuary</span>

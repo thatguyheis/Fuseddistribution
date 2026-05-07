@@ -517,30 +517,21 @@ function buildBrowsePage(collections, records) {
   const total = records.length;
 
   const filterBtns = [
-    `<button class="filter-btn active" data-filter="all">All <span class="filter-count">${total}</span></button>`,
+    `<button class="filter-btn active" data-filter="all" data-desc="">All Photos <span class="filter-count">${total}</span></button>`,
     ...collections.map((col) => {
       const count = records.filter((r) => r.collection === col.slug).length;
       if (count === 0) return "";
-      return `<button class="filter-btn" data-filter="${escapeHtml(col.slug)}">${escapeHtml(col.name)} <span class="filter-count">${count}</span></button>`;
+      return `<button class="filter-btn" data-filter="${escapeHtml(col.slug)}" data-desc="${escapeHtml(col.description || "")}">${escapeHtml(col.name)} <span class="filter-count">${count}</span></button>`;
     }).filter(Boolean),
   ].join("\n        ");
 
   const cards = records.map((record) => {
     const col = collections.find((c) => c.slug === record.collection);
     const colName = col ? col.name : record.collection;
-    const colLabel = colName.replace(/Residential Architecture Event/, "Architecture")
-      .replace(/Suburban Atmosphere/, "Atmosphere")
-      .replace(/Nature Details/, "Nature")
-      .replace(/Waterside Sunsets/, "Waterside")
-      .replace(/Seasonal Details/, "Seasonal")
-      .replace(/Long Beach Coast/, "Long Beach")
-      .replace(/Quiet Shorelines/, "Shorelines")
-      .replace(/Astoria Overlooks/, "Astoria");
-
     return `
-          <a class="photo-card ${orientationClass(record)}" href="/photos/images/${record.slug}/" data-collection="${escapeHtml(record.collection)}">
+          <a class="photo-card" href="/photos/images/${record.slug}/" data-collection="${escapeHtml(record.collection)}">
             <img src="/photos/derived/web/${record.slug}.jpg" alt="${escapeHtml(record.title)}" loading="lazy" ${imgDimensions(record)} />
-            <span class="photo-badge">${escapeHtml(colLabel)}</span>
+            <div class="photo-shine"></div>
             <div class="photo-overlay">
               <span class="photo-collection-tag">${escapeHtml(colName)}</span>
               <span class="photo-title">${escapeHtml(record.title)}</span>
@@ -572,6 +563,8 @@ function buildBrowsePage(collections, records) {
         ${filterBtns}
       </div>
 
+      <div class="collection-desc-bar" id="collection-desc-bar" aria-live="polite"></div>
+
       <main class="main">
         <p class="gallery-count" id="gallery-count">Showing <strong>${total}</strong> images</p>
         <div class="gallery-grid" id="gallery-grid">${cards}
@@ -586,39 +579,46 @@ function buildBrowsePage(collections, records) {
         .breadcrumb a { color: var(--accent); }
         .breadcrumb span { opacity: 0.5; }
         .hero-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-        .hero-meta { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 4px; }
+        .hero-meta { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 4px; }
         .meta-stat { display: flex; flex-direction: column; gap: 2px; }
-        .meta-stat strong { font-size: 1.5rem; font-weight: 900; color: var(--text); line-height: 1; }
+        .meta-stat strong { font-size: 1.6rem; font-weight: 900; color: var(--text); line-height: 1; }
         .meta-stat span { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
-        .filter-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 20px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(6,14,20,0.6); position: relative; z-index: 1; }
-        .filter-btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.08); background: transparent; color: var(--muted); font-family: inherit; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: border-color 0.18s, color 0.18s, background 0.18s; }
-        .filter-btn:hover { border-color: rgba(88,214,255,0.3); color: var(--text); }
-        .filter-btn.active { border-color: var(--accent); background: rgba(88,214,255,0.1); color: var(--accent); }
-        .filter-count { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: rgba(255,255,255,0.08); font-size: 0.7rem; font-weight: 900; }
-        .filter-btn.active .filter-count { background: rgba(88,214,255,0.2); }
-        .main { padding: 32px 40px 64px; position: relative; z-index: 1; }
-        .gallery-count { margin-bottom: 20px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
+        .filter-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 22px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(5,12,18,0.7); backdrop-filter: blur(12px); position: sticky; top: 72px; z-index: 100; }
+        .filter-btn { display: inline-flex; align-items: center; gap: 7px; padding: 10px 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.09); background: rgba(255,255,255,0.03); color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; cursor: pointer; transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s; }
+        .filter-btn:hover { border-color: rgba(88,214,255,0.35); color: var(--text); background: rgba(88,214,255,0.06); }
+        .filter-btn.active { border-color: rgba(88,214,255,0.6); background: rgba(88,214,255,0.12); color: var(--accent); box-shadow: 0 0 16px rgba(88,214,255,0.12), inset 0 1px 0 rgba(88,214,255,0.1); }
+        .filter-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: rgba(255,255,255,0.07); font-size: 0.68rem; font-weight: 900; }
+        .filter-btn.active .filter-count { background: rgba(88,214,255,0.22); color: var(--accent); }
+        .collection-desc-bar { padding: 0 54px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.3s ease; opacity: 0; background: linear-gradient(135deg, rgba(88,214,255,0.04), rgba(77,255,184,0.02)); border-bottom: 1px solid transparent; }
+        .collection-desc-bar.visible { max-height: 120px; padding: 18px 54px; opacity: 1; border-bottom-color: rgba(88,214,255,0.08); }
+        .collection-desc-bar p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+        .collection-desc-bar strong { color: var(--accent); font-weight: 800; margin-right: 10px; }
+        .main { padding: 36px 40px 80px; position: relative; z-index: 1; }
+        .gallery-count { margin-bottom: 24px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
         .gallery-count strong { color: var(--text); }
-        .gallery-grid { columns: 4; column-gap: 12px; }
-        .photo-card { break-inside: avoid; margin-bottom: 12px; position: relative; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); overflow: hidden; background: rgba(8,18,26,0.8); display: block; transition: border-color 0.2s, box-shadow 0.2s; }
-        .photo-card:hover, .photo-card:focus-within { border-color: rgba(88,214,255,0.24); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
-        .photo-card img { width: 100%; display: block; object-fit: cover; aspect-ratio: 3/2; transition: transform 0.45s ease; }
-        .photo-card:hover img, .photo-card:focus-within img { transform: scale(1.04); }
-        .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 16px; background: linear-gradient(to top, rgba(4,10,16,0.95) 0%, rgba(4,10,16,0.6) 55%, transparent 100%); transform: translateY(4px); opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; }
-        .photo-card:hover .photo-overlay, .photo-card:focus-within .photo-overlay { opacity: 1; transform: translateY(0); }
-        .photo-collection-tag { display: inline-block; margin-bottom: 6px; padding: 3px 9px; border-radius: 999px; border: 1px solid rgba(88,214,255,0.3); background: rgba(88,214,255,0.1); color: var(--accent); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-        .photo-title { display: block; color: var(--text); font-size: 0.92rem; font-weight: 700; line-height: 1.3; }
-        .photo-badge { position: absolute; top: 12px; left: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.1); background: rgba(4,10,16,0.75); backdrop-filter: blur(8px); color: rgba(236,248,251,0.75); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; pointer-events: none; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); gap: 18px; }
+        .photo-card { position: relative; border-radius: 20px; border: 1px solid rgba(255,255,255,0.07); overflow: hidden; background: #040c12; display: block; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), border-color 0.3s ease, box-shadow 0.35s ease; }
+        .photo-card:hover, .photo-card:focus-visible { transform: scale(1.025); border-color: rgba(88,214,255,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(88,214,255,0.1), 0 0 40px rgba(88,214,255,0.07); outline: none; }
+        .photo-card img { width: 100%; height: 500px; object-fit: cover; display: block; transition: transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+        .photo-card:hover img, .photo-card:focus-visible img { transform: scale(1.07); }
+        .photo-shine { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 50%, rgba(88,214,255,0.03) 100%); opacity: 0; transition: opacity 0.3s ease; pointer-events: none; border-radius: 20px; }
+        .photo-card:hover .photo-shine { opacity: 1; }
+        .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 56px 22px 22px; background: linear-gradient(to top, rgba(4,10,16,0.97) 0%, rgba(4,10,16,0.72) 42%, transparent 100%); transform: translateY(8px); opacity: 0; transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.22,1,0.36,1); }
+        .photo-card:hover .photo-overlay, .photo-card:focus-visible .photo-overlay { opacity: 1; transform: translateY(0); }
+        .photo-collection-tag { display: inline-block; margin-bottom: 9px; padding: 4px 11px; border-radius: 999px; border: 1px solid rgba(88,214,255,0.38); background: rgba(88,214,255,0.13); color: var(--accent); font-size: 0.67rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+        .photo-title { display: block; color: var(--text); font-size: 1.05rem; font-weight: 700; line-height: 1.3; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
         .photo-card.hidden { display: none; }
-        .gallery-empty { display: none; text-align: center; padding: 64px 0; color: var(--muted); }
+        .gallery-empty { display: none; text-align: center; padding: 80px 0; color: var(--muted); }
         .gallery-empty.visible { display: block; }
-        @media (max-width: 1100px) { .gallery-grid { columns: 3; } }
+        @media (max-width: 1100px) { .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); } .photo-card img { height: 400px; } }
         @media (max-width: 820px) {
-          .page-hero, .filter-bar, .main { padding-left: 22px; padding-right: 22px; }
-          .gallery-grid { columns: 2; }
+          .page-hero, .filter-bar, .collection-desc-bar, .main { padding-left: 22px; padding-right: 22px; }
+          .gallery-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+          .photo-card img { height: 280px; }
+          .filter-bar { top: 60px; }
           .hero-row { flex-direction: column; align-items: flex-start; }
         }
-        @media (max-width: 640px) { h1 { font-size: 1.8rem; } }
+        @media (max-width: 520px) { .gallery-grid { grid-template-columns: 1fr; } .photo-card img { height: 320px; } h1 { font-size: 1.8rem; } }
       </style>
       <script>
         (function(){
@@ -626,11 +626,20 @@ function buildBrowsePage(collections, records) {
           var cards=document.querySelectorAll('.photo-card');
           var countEl=document.getElementById('gallery-count');
           var emptyEl=document.getElementById('gallery-empty');
+          var descBar=document.getElementById('collection-desc-bar');
           btns.forEach(function(btn){
             btn.addEventListener('click',function(){
               var f=btn.getAttribute('data-filter');
+              var desc=btn.getAttribute('data-desc')||'';
+              var name=btn.textContent.replace(/[0-9]+/g,'').trim();
               btns.forEach(function(b){b.classList.remove('active');});
               btn.classList.add('active');
+              if(desc){
+                descBar.innerHTML='<p><strong>'+name+'</strong>'+desc+'</p>';
+                descBar.classList.add('visible');
+              } else {
+                descBar.classList.remove('visible');
+              }
               var v=0;
               cards.forEach(function(c){
                 var m=f==='all'||c.getAttribute('data-collection')===f;
