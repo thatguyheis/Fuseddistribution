@@ -570,37 +570,56 @@
 
       .mini-gallery {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
       }
 
       .mini-card {
-        padding: 12px;
+        position: relative;
         border-radius: 20px;
         border: 1px solid rgba(255,255,255,0.06);
+        overflow: hidden;
         background: rgba(8, 18, 26, 0.8);
       }
 
       .mini-card img {
         width: 100%;
-        aspect-ratio: 1;
+        aspect-ratio: 4/3;
         object-fit: cover;
-        border-radius: 14px;
         display: block;
+        transition: transform 0.45s ease;
+      }
+
+      .mini-card:hover img,
+      .mini-card:focus-within img {
+        transform: scale(1.04);
+      }
+
+      .mini-card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 22px 20px 20px;
+        background: linear-gradient(to top, rgba(4, 10, 16, 0.94) 0%, rgba(4, 10, 16, 0.55) 55%, transparent 100%);
       }
 
       .mini-card strong {
         display: block;
-        margin-top: 12px;
         color: var(--text);
+        font-size: 1rem;
+        font-weight: 700;
         line-height: 1.2;
       }
 
       .mini-card span {
         display: block;
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 0.9rem;
+        margin-top: 5px;
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
       }
 
       .split-panel {
@@ -912,31 +931,38 @@
               <h2>First Images Ready To Show</h2>
             </div>
             <p>
-              These are the strongest samples from the current batch for a launch-stage landing page. They show the
-              range of the library without forcing visitors into a huge archive on day one.
+              Four subjects, four moods. Every image is commercially cleared and ready to drop into your next page, campaign, or editorial layout.
             </p>
           </div>
 
           <div class="mini-gallery">
             <article class="mini-card">
               <img src="derived/web/img-0018-img-0519.jpg" alt="Low Sun Over Quiet Water in shoreline light" loading="lazy" width="2400" height="2010" />
-              <a href="images/img-0018-img-0519/"><strong>Low Sun Over Quiet Water</strong></a>
-              <span>Waterside sunset</span>
+              <div class="mini-card-overlay">
+                <a href="images/img-0018-img-0519/"><strong>Low Sun Over Quiet Water</strong></a>
+                <span>Waterside sunset</span>
+              </div>
             </article>
             <article class="mini-card">
               <img src="derived/web/img-0017-img-0500.jpg" alt="Yellow Crab Spider Macro close-up" loading="lazy" width="1800" height="2400" />
-              <a href="images/img-0017-img-0500/"><strong>Yellow Crab Spider Macro</strong></a>
-              <span>Nature detail</span>
+              <div class="mini-card-overlay">
+                <a href="images/img-0017-img-0500/"><strong>Yellow Crab Spider Macro</strong></a>
+                <span>Nature detail</span>
+              </div>
             </article>
             <article class="mini-card">
               <img src="derived/web/img-0004-img-0055.jpg" alt="Modern Hillside Home Exterior in Lake Oswego" loading="lazy" width="2400" height="1800" />
-              <a href="images/img-0004-img-0055/"><strong>Modern Hillside Home Exterior</strong></a>
-              <span>Residential architecture</span>
+              <div class="mini-card-overlay">
+                <a href="images/img-0004-img-0055/"><strong>Modern Hillside Home Exterior</strong></a>
+                <span>Residential architecture</span>
+              </div>
             </article>
             <article class="mini-card">
               <img src="derived/web/img-0016-img-0259.jpg" alt="Twilight Drive Through Neighborhood roadway scene" loading="lazy" width="2400" height="1800" />
-              <a href="images/img-0016-img-0259/"><strong>Twilight Drive Through Neighborhood</strong></a>
-              <span>Suburban atmosphere</span>
+              <div class="mini-card-overlay">
+                <a href="images/img-0016-img-0259/"><strong>Twilight Drive Through Neighborhood</strong></a>
+                <span>Suburban atmosphere</span>
+              </div>
             </article>
           </div>
         </section>
