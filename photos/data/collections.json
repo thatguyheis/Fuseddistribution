@@ -1,19 +1,15 @@
 [
   {
-    "slug": "uncategorized",
-    "name": "Uncategorized",
-    "description": "Images that have been imported but not yet assigned to a final collection.",
-    "hero_image_id": "",
-    "tags": [],
-    "featured": false,
-    "sort_order": 999
-  },
-  {
     "slug": "residential-architecture-event",
     "name": "Residential Architecture Event",
     "description": "Editorial-style images of private residential architecture, interiors, and landscaping captured during what appears to be a luxury home event or showing.",
     "hero_image_id": "img-0004",
-    "tags": ["architecture", "interior", "exterior", "residential"],
+    "tags": [
+      "architecture",
+      "interior",
+      "exterior",
+      "residential"
+    ],
     "featured": false,
     "sort_order": 1
   },
@@ -22,7 +18,12 @@
     "name": "Suburban Atmosphere",
     "description": "Atmospheric suburban scenes including smoky skies, twilight roads, and neighborhood-adjacent moments.",
     "hero_image_id": "img-0014",
-    "tags": ["suburban", "atmosphere", "twilight", "smoke"],
+    "tags": [
+      "suburban",
+      "atmosphere",
+      "twilight",
+      "smoke"
+    ],
     "featured": false,
     "sort_order": 2
   },
@@ -31,7 +32,12 @@
     "name": "Nature Details",
     "description": "Close studies of natural textures and small outdoor subjects.",
     "hero_image_id": "img-0017",
-    "tags": ["nature", "detail", "macro", "trees"],
+    "tags": [
+      "nature",
+      "detail",
+      "macro",
+      "trees"
+    ],
     "featured": false,
     "sort_order": 3
   },
@@ -40,8 +46,77 @@
     "name": "Waterside Sunsets",
     "description": "Minimal shoreline and waterside light studies captured near sunset.",
     "hero_image_id": "img-0018",
-    "tags": ["sunset", "water", "shoreline"],
+    "tags": [
+      "sunset",
+      "water",
+      "shoreline"
+    ],
     "featured": true,
     "sort_order": 4
+  },
+  {
+    "slug": "seasonal-details",
+    "name": "Seasonal Details",
+    "description": "Garden, harvest, and homey seasonal studies ranging from produce and vines to simple food moments.",
+    "hero_image_id": "img-0022",
+    "tags": [
+      "seasonal",
+      "harvest",
+      "garden",
+      "food"
+    ],
+    "featured": false,
+    "sort_order": 5
+  },
+  {
+    "slug": "coastal-long-beach",
+    "name": "Long Beach Coast",
+    "description": "Long Beach, Washington shoreline scenes including beach sunsets, promenade views, kites, dunes, and landmark coastal moments.",
+    "hero_image_id": "img-0028",
+    "tags": [
+      "long beach",
+      "washington coast",
+      "beach",
+      "sunset"
+    ],
+    "featured": true,
+    "sort_order": 6
+  },
+  {
+    "slug": "quiet-shorelines",
+    "name": "Quiet Shorelines",
+    "description": "Calm estuary and shoreline studies with driftwood, branch frames, reflective water, and low-key coastal stillness.",
+    "hero_image_id": "img-0046",
+    "tags": [
+      "shoreline",
+      "estuary",
+      "driftwood",
+      "calm water"
+    ],
+    "featured": false,
+    "sort_order": 7
+  },
+  {
+    "slug": "astoria-overlooks",
+    "name": "Astoria Overlooks",
+    "description": "Astoria, Oregon vantage points centered on the Astoria-Megler Bridge, harbor, hillsides, and panoramic estuary views.",
+    "hero_image_id": "img-0048",
+    "tags": [
+      "astoria",
+      "bridge",
+      "overlook",
+      "columbia estuary"
+    ],
+    "featured": true,
+    "sort_order": 8
+  },
+  {
+    "slug": "uncategorized",
+    "name": "Uncategorized",
+    "description": "Images that have been imported but not yet assigned to a final collection.",
+    "hero_image_id": "",
+    "tags": [],
+    "featured": false,
+    "sort_order": 999
   }
 ]
