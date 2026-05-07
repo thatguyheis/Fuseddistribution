@@ -283,38 +283,6 @@
         }
         @media (max-width: 520px) { .gallery-grid { grid-template-columns: 1fr; } .photo-card img { height: 320px; } h1 { font-size: 1.8rem; } }
       </style>
-      <script>
-        (function(){
-          var btns=document.querySelectorAll('.filter-btn');
-          var cards=document.querySelectorAll('.photo-card');
-          var countEl=document.getElementById('gallery-count');
-          var emptyEl=document.getElementById('gallery-empty');
-          var descBar=document.getElementById('collection-desc-bar');
-          btns.forEach(function(btn){
-            btn.addEventListener('click',function(){
-              var f=btn.getAttribute('data-filter');
-              var desc=btn.getAttribute('data-desc')||'';
-              var name=btn.textContent.replace(/[0-9]+/g,'').trim();
-              btns.forEach(function(b){b.classList.remove('active');});
-              btn.classList.add('active');
-              if(desc){
-                descBar.innerHTML='<p><strong>'+name+'</strong>'+desc+'</p>';
-                descBar.classList.add('visible');
-              } else {
-                descBar.classList.remove('visible');
-              }
-              var v=0;
-              cards.forEach(function(c){
-                var m=f==='all'||c.getAttribute('data-collection')===f;
-                c.classList.toggle('hidden',!m);
-                if(m)v++;
-              });
-              countEl.innerHTML='Showing <strong>'+v+'</strong> image'+(v!==1?'s':'');
-              emptyEl.classList.toggle('visible',v===0);
-            });
-          });
-        })();
-      </script>
       <section class="page-hero">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/photos/">Photos</a>
@@ -858,6 +826,38 @@
         </div>
         <p class="gallery-empty" id="gallery-empty">No images in this collection yet.</p>
       </main>
+      <script>
+        (function(){
+          var btns=document.querySelectorAll('.filter-btn');
+          var cards=document.querySelectorAll('.photo-card');
+          var countEl=document.getElementById('gallery-count');
+          var emptyEl=document.getElementById('gallery-empty');
+          var descBar=document.getElementById('collection-desc-bar');
+          btns.forEach(function(btn){
+            btn.addEventListener('click',function(){
+              var f=btn.getAttribute('data-filter');
+              var desc=btn.getAttribute('data-desc')||'';
+              var name=btn.textContent.replace(/\s*\d+\s*$/,'').trim();
+              btns.forEach(function(b){b.classList.remove('active');});
+              btn.classList.add('active');
+              if(desc){
+                descBar.innerHTML='<p><strong>'+name+'</strong> — '+desc+'</p>';
+                descBar.classList.add('visible');
+              } else {
+                descBar.classList.remove('visible');
+              }
+              var v=0;
+              cards.forEach(function(c){
+                var m=f==='all'||c.getAttribute('data-collection')===f;
+                c.classList.toggle('hidden',!m);
+                if(m)v++;
+              });
+              countEl.innerHTML='Showing <strong>'+v+'</strong> image'+(v!==1?'s':'');
+              emptyEl.classList.toggle('visible',v===0);
+            });
+          });
+        })();
+      </script>
       <footer class="footer">
         <small>Fused Photos — commercially cleared free-use photography. <a href="/photos/" style="color:var(--accent);">Browse all images</a></small>
       </footer>

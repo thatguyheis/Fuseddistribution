@@ -619,7 +619,9 @@ function buildBrowsePage(collections, records) {
           .hero-row { flex-direction: column; align-items: flex-start; }
         }
         @media (max-width: 520px) { .gallery-grid { grid-template-columns: 1fr; } .photo-card img { height: 320px; } h1 { font-size: 1.8rem; } }
-      </style>
+      </style>`;
+
+  const filterScript = `
       <script>
         (function(){
           var btns=document.querySelectorAll('.filter-btn');
@@ -631,11 +633,11 @@ function buildBrowsePage(collections, records) {
             btn.addEventListener('click',function(){
               var f=btn.getAttribute('data-filter');
               var desc=btn.getAttribute('data-desc')||'';
-              var name=btn.textContent.replace(/[0-9]+/g,'').trim();
+              var name=btn.textContent.replace(/\\s*\\d+\\s*$/,'').trim();
               btns.forEach(function(b){b.classList.remove('active');});
               btn.classList.add('active');
               if(desc){
-                descBar.innerHTML='<p><strong>'+name+'</strong>'+desc+'</p>';
+                descBar.innerHTML='<p><strong>'+name+'</strong> — '+desc+'</p>';
                 descBar.classList.add('visible');
               } else {
                 descBar.classList.remove('visible');
@@ -651,14 +653,14 @@ function buildBrowsePage(collections, records) {
             });
           });
         })();
-      </script>`;
+      <\/script>`;
 
   return pageShell({
     title: "Browse All Photos | Fused Photos Free-Use Library",
     description: `Browse all ${total} original free-use photographs from Fused Photos — ${collections.map((c) => c.name).join(", ")}. Commercially cleared for web, editorial, and brand use.`,
     canonical: "https://fuseddistribution.com/photos/browse/",
     ogImage: "https://fuseddistribution.com/photos/derived/web/img-0048-img-3909.jpg",
-    body: browseStyles + body,
+    body: browseStyles + body + filterScript,
   });
 }
 
