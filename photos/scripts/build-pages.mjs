@@ -36,19 +36,8 @@ function pageShell({
   canonical,
   ogImage,
   body,
-  photoRootHref = "/photos/",
-  activeNav = "photos",
-  siteHrefs = {},
+  activeCollection = "",
 }) {
-  const hrefs = {
-    home: "/",
-    projects: "/projects/",
-    photos: photoRootHref,
-    education: "/education/",
-    blog: "/blog/",
-    ...siteHrefs,
-  };
-
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -116,13 +105,14 @@ function pageShell({
         display: flex; align-items: center; justify-content: space-between; gap: 18px;
         padding: 20px 30px; background: rgba(7, 16, 22, 0.92); backdrop-filter: blur(16px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        position: sticky; top: 0; z-index: 500;
       }
       .brand { display: flex; flex-direction: column; line-height: 1; }
       .brand-mark { color: var(--accent); font-size: 1.95rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
       .brand-sub { margin-top: 4px; color: rgba(236, 248, 251, 0.72); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; }
       .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
       .nav-pages {
-        display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
         padding: 8px 10px; border-radius: 999px; border: 1px solid rgba(88, 214, 255, 0.18);
         background: rgba(7, 15, 23, 0.56);
       }
@@ -131,6 +121,44 @@ function pageShell({
         padding: 9px 14px; border-radius: 999px;
       }
       .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-width: 140px; padding: 12px 18px; border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+        font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      }
+      /* Dropdown nav */
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px;
+        border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: 0.95rem;
+        font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(239,252,255,0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown {
+        display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%;
+        transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08); background: rgba(8,16,24,0.97); backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0,0,0,0.55); z-index: 200; opacity: 0; visibility: hidden;
+        pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em;
+        color: rgba(220,240,248,0.78); text-transform: none; transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover, .nav-dropdown a:focus-visible { background: rgba(88,214,255,0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 4px 6px; }
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
       .hero { padding: 56px 54px 36px; border-bottom: 1px solid rgba(255,255,255,0.04); }
       .eyebrow {
         display: inline-block; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line);
@@ -170,15 +198,21 @@ function pageShell({
       .shot { display: block; width: 100%; border-radius: 18px; overflow: hidden; background: rgba(255,255,255,0.02); }
       .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
       .thumb-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-      .thumb-card { padding: 12px; border-radius: 18px; border: 1px solid rgba(255,255,255,0.06); background: rgba(8, 18, 26, 0.8); }
-      .thumb-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; display: block; }
-      .thumb-card strong { display: block; margin-top: 10px; color: var(--text); }
-      .thumb-card span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.9rem; }
+      .thumb-card { border-radius: 18px; border: 1px solid rgba(255,255,255,0.06); background: rgba(8,18,26,0.8); overflow: hidden; }
+      .thumb-card a { display: block; }
+      .thumb-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform 0.3s ease; }
+      .thumb-card:hover img { transform: scale(1.04); }
+      .thumb-card-info { padding: 12px 14px 14px; }
+      .thumb-card strong { display: block; color: var(--text); font-size: 0.9rem; line-height: 1.3; }
+      .thumb-card-collection { display: block; margin-top: 5px; color: var(--accent); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
       .detail-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 26px; }
       .side-list { display: grid; gap: 14px; margin-top: 18px; }
       .side-item { padding: 14px 16px; border-radius: 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); }
       .side-item strong { display: block; color: var(--text); margin-bottom: 5px; }
       .back-link { display: inline-flex; margin-bottom: 18px; color: var(--accent); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .related-section { margin-top: 42px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.05); }
+      .related-section h2 { margin-bottom: 8px; }
+      .related-section > p { margin-bottom: 22px; margin-top: 8px; }
       @media (max-width: 980px) { .grid-2, .detail-layout, .thumb-grid { grid-template-columns: 1fr; } }
       @media (max-width: 820px) { .topbar, .hero, .main, .footer { padding-left: 22px; padding-right: 22px; } }
     </style>
@@ -186,25 +220,80 @@ function pageShell({
   <body>
     <div class="shell">
       <header class="topbar">
-        <a class="brand" href="${photoRootHref}">
+        <a class="brand" href="/" aria-label="Fused Distribution home">
           <span class="brand-mark">Fused</span>
-          <span class="brand-sub">Original Photo Library</span>
+          <span class="brand-sub">Distribution</span>
         </a>
         <nav class="nav" aria-label="Primary">
           <div class="nav-pages">
-            <a href="${hrefs.home}">Home</a>
-            <a href="${hrefs.projects}">Projects</a>
-            <a class="${activeNav === "photos" ? "active" : ""}" href="${hrefs.photos}">Photos</a>
-            <a href="${hrefs.education}">Education</a>
-            <a href="${hrefs.blog}">Blog</a>
+            <a href="/">Home</a>
+            <div class="nav-item">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dd-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dd-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dd-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dd-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dd-edu">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dd-edu" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a class="active" href="/photos/">Photos</a>
+            <a href="/about/">About</a>
+            <a href="/blog/">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
           </div>
         </nav>
       </header>
       ${body}
       <footer class="footer">
-        <small>Fused Photos is a Fused Distribution venture built to share commercially cleared, free-use visuals for websites, editorial support, and brand content.</small>
+        <small>Fused Photos — commercially cleared free-use photography. <a href="/photos/" style="color:var(--accent);">Browse all images</a></small>
       </footer>
     </div>
+    <script>
+      (function(){
+        var toggles=document.querySelectorAll('.nav-toggle');
+        function closeAll(e){toggles.forEach(function(b){if(b!==e)b.setAttribute('aria-expanded','false');});}
+        toggles.forEach(function(btn){
+          btn.addEventListener('click',function(){
+            var x=btn.getAttribute('aria-expanded')==='true';
+            closeAll(btn);btn.setAttribute('aria-expanded',x?'false':'true');
+          });
+        });
+        document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+        document.addEventListener('click',function(e){if(!e.target.closest('.nav-item'))closeAll(null);});
+      })();
+    </script>
   </body>
 </html>`;
 }
@@ -254,10 +343,12 @@ function buildCollectionPage(collection, records) {
   const thumbs = records
     .map((record) => `
       <article class="thumb-card">
-        <a href="${localImageHrefFromCollection(record)}">
-          <img src="${localImageSrcFromCollection(record)}" alt="${escapeHtml(record.alt_text)}" loading="lazy" />
-          <strong>${escapeHtml(record.title)}</strong>
-          <span>${escapeHtml(record.location || "Photo library image")}</span>
+        <a href="/photos/images/${record.slug}/">
+          <img src="/photos/derived/web/${record.slug}.jpg" alt="${escapeHtml(record.title)}" loading="lazy" />
+          <div class="thumb-card-info">
+            <strong>${escapeHtml(record.title)}</strong>
+            <span class="thumb-card-collection">${escapeHtml(collection.name)}</span>
+          </div>
         </a>
       </article>
     `)
@@ -267,51 +358,45 @@ function buildCollectionPage(collection, records) {
 
   const body = `
     <section class="hero">
-      <a class="back-link" href="../../index.html">Back To Photos</a>
+      <a class="back-link" href="/photos/">← Back To Photos</a>
       <span class="eyebrow">Collection</span>
       <h1>${escapeHtml(collection.name)}</h1>
       <p>${escapeHtml(collection.description)}</p>
       <div class="meta-row">
         <span class="pill">${records.length} Image${records.length === 1 ? "" : "s"}</span>
+        <span class="pill">Free Use</span>
         ${pills}
       </div>
     </section>
     <main class="main">
       <section class="grid-2">
         <article class="card">
-          <a class="shot" href="${localImageHrefFromCollection(hero)}">
-            <img src="${localImageSrcFromCollection(hero)}" alt="${escapeHtml(hero.alt_text)}" loading="eager" />
+          <a class="shot" href="/photos/images/${hero.slug}/">
+            <img src="/photos/derived/web/${hero.slug}.jpg" alt="${escapeHtml(hero.title)}" loading="eager" />
           </a>
         </article>
         <article class="card">
-          <h2>How This Set Works</h2>
-          <p>
-            This collection groups images that share the same visual use case. Start here if you need a tighter
-            look and feel for a page, article, editorial package, or branded visual set.
-          </p>
+          <h2>About This Collection</h2>
+          <p>${escapeHtml(collection.description)}</p>
           <div class="side-list">
             <div class="side-item">
-              <strong>Best For</strong>
-              ${escapeHtml(collection.description)}
-            </div>
-            <div class="side-item">
-              <strong>Primary Location Signal</strong>
-              ${escapeHtml(hero.location || "Mixed or unspecified")}
+              <strong>Images</strong>
+              ${records.length} photograph${records.length === 1 ? "" : "s"} in this set
             </div>
             <div class="side-item">
               <strong>Usage</strong>
-              All images in this set are published as commercially cleared free-use images in the current catalog.
+              All images are commercially cleared free-use. No attribution required.
             </div>
           </div>
           <div class="actions">
-            <a class="btn btn-primary" href="../../index.html">Browse Free Images</a>
-            <a class="btn" href="../../index.html">Browse All Photos</a>
+            <a class="btn btn-primary" href="/photos/browse/">Browse Full Library</a>
+            <a class="btn" href="/photos/">Fused Photos Home</a>
           </div>
         </article>
       </section>
       <section style="margin-top: 34px;">
-        <h2>Images In This Collection</h2>
-        <p style="margin-top: 14px; margin-bottom: 22px;">Open any image for a cleaner view, more detail, and collection-aware navigation.</p>
+        <h2>All Images In This Collection</h2>
+        <p style="margin-top: 8px; margin-bottom: 22px;">Click any image to open the full detail page.</p>
         <div class="thumb-grid">${thumbs}</div>
       </section>
     </main>
@@ -323,15 +408,13 @@ function buildCollectionPage(collection, records) {
     canonical: `https://fuseddistribution.com/photos/collections/${collection.slug}/`,
     ogImage: `https://fuseddistribution.com${websiteImageUrl(hero)}`,
     body,
-    photoRootHref: "../../index.html",
-    siteHrefs: {
-      home: "../../../index.html",
-      projects: "../../../projects/index.html",
-      photos: "../../index.html",
-      education: "../../../education/index.html",
-      blog: "../../../blog/index.html",
-    },
   });
+}
+
+function cleanLocation(loc) {
+  if (!loc) return null;
+  if (loc.toLowerCase().startsWith("unspecified")) return null;
+  return loc;
 }
 
 function buildDetailPage(record, collection, related) {
@@ -339,10 +422,12 @@ function buildDetailPage(record, collection, related) {
     .slice(0, 6)
     .map((item) => `
       <article class="thumb-card">
-        <a href="${localImageHrefFromDetail(item)}">
-          <img src="${localImageSrcFromDetail(item)}" alt="${escapeHtml(item.alt_text)}" loading="lazy" />
-          <strong>${escapeHtml(item.title)}</strong>
-          <span>${escapeHtml(item.location || collection?.name || "Photo library image")}</span>
+        <a href="/photos/images/${item.slug}/">
+          <img src="/photos/derived/web/${item.slug}.jpg" alt="${escapeHtml(item.title)}" loading="lazy" />
+          <div class="thumb-card-info">
+            <strong>${escapeHtml(item.title)}</strong>
+            ${collection ? `<span class="thumb-card-collection">${escapeHtml(collection.name)}</span>` : ""}
+          </div>
         </a>
       </article>
     `)
@@ -356,75 +441,56 @@ function buildDetailPage(record, collection, related) {
     .map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`)
     .join("");
 
+  const location = cleanLocation(record.location);
+
   const body = `
     <section class="hero">
-      <a class="back-link" href="${collection ? localCollectionHrefFromDetail(collection) : "../../index.html"}">Back To ${escapeHtml(collection?.name || "Photos")}</a>
-      <span class="eyebrow">Image Detail</span>
+      <a class="back-link" href="${collection ? `/photos/collections/${collection.slug}/` : "/photos/"}">← Back To ${escapeHtml(collection?.name || "Photos")}</a>
+      <span class="eyebrow">${collection ? escapeHtml(collection.name) : "Image Detail"}</span>
       <h1>${escapeHtml(record.title)}</h1>
-      <p>${escapeHtml(record.description)}</p>
       <div class="meta-row">
         <span class="pill">${escapeHtml(record.orientation)}</span>
         <span class="pill">${escapeHtml(publicLicenseLabel(record))}</span>
-        ${collection ? `<span class="pill">${escapeHtml(collection.name)}</span>` : ""}
+        ${location ? `<span class="pill">${escapeHtml(location)}</span>` : ""}
       </div>
     </section>
     <main class="main">
       <section class="detail-layout">
         <article class="card">
-          <a class="shot" href="${localImageSrcFromDetail(record)}">
-            <img src="${localImageSrcFromDetail(record)}" alt="${escapeHtml(record.alt_text)}" loading="eager" />
+          <a class="shot" href="/photos/derived/web/${record.slug}.jpg" title="Open full image">
+            <img src="/photos/derived/web/${record.slug}.jpg" alt="${escapeHtml(record.title)}" loading="eager" fetchpriority="high" />
           </a>
         </article>
         <aside class="card">
-          <h2>Image Overview</h2>
+          <h2>Image Details</h2>
           <div class="side-list">
-            <div class="side-item">
-              <strong>Caption</strong>
-              ${escapeHtml(record.caption)}
-            </div>
-            <div class="side-item">
-              <strong>Location</strong>
-              ${escapeHtml(record.location || "Unspecified")}
-            </div>
-            <div class="side-item">
-              <strong>Date Captured</strong>
-              ${escapeHtml(record.date_captured || "Unknown")}
-            </div>
-            <div class="side-item">
-              <strong>Usage License</strong>
-              ${escapeHtml(publicLicenseLabel(record))}
-            </div>
+            ${location ? `<div class="side-item"><strong>Location</strong>${escapeHtml(location)}</div>` : ""}
+            ${record.date_captured ? `<div class="side-item"><strong>Date Captured</strong>${escapeHtml(record.date_captured)}</div>` : ""}
+            <div class="side-item"><strong>Usage</strong>Free Use — commercially cleared. No attribution required.</div>
+            <div class="side-item"><strong>Collection</strong>${collection ? escapeHtml(collection.name) : "General"}</div>
           </div>
-          <div class="tag-list">${tags}</div>
+          ${tags ? `<div class="tag-list" style="margin-top:18px;">${tags}</div>` : ""}
           <div class="actions">
-            <a class="btn btn-primary" href="../../index.html">Browse More Free Images</a>
-            ${collection ? `<a class="btn" href="${localCollectionHrefFromDetail(collection)}">View Collection</a>` : `<a class="btn" href="../../index.html">Browse Photos</a>`}
+            <a class="btn btn-primary" href="/photos/browse/">Browse Full Library</a>
+            ${collection ? `<a class="btn" href="/photos/collections/${collection.slug}/">View Collection</a>` : `<a class="btn" href="/photos/">All Photos</a>`}
           </div>
         </aside>
       </section>
       ${relatedMarkup ? `
-      <section style="margin-top: 34px;">
-        <h2>More From This Collection</h2>
-        <p style="margin-top: 14px; margin-bottom: 22px;">Keep the visual direction consistent by browsing related images from the same set.</p>
-        <div class="thumb-grid">${relatedMarkup}</div>
+      <section class="related-section">
+        <h2>More From ${escapeHtml(collection?.name || "This Collection")}</h2>
+        <p>Other images in this collection, cleared for the same free use.</p>
+        <div class="thumb-grid" style="margin-top:22px;">${relatedMarkup}</div>
       </section>` : ""}
     </main>
   `;
 
   return pageShell({
     title: `${record.title} | Fused Photos`,
-    description: record.description,
+    description: `${record.title} — free-use original photograph${location ? ` from ${location}` : ""}. Commercially cleared for web, editorial, and brand use.`,
     canonical: `https://fuseddistribution.com/photos/images/${record.slug}/`,
     ogImage: `https://fuseddistribution.com${websiteImageUrl(record)}`,
     body,
-    photoRootHref: "../../index.html",
-    siteHrefs: {
-      home: "../../../index.html",
-      projects: "../../../projects/index.html",
-      photos: "../../index.html",
-      education: "../../../education/index.html",
-      blog: "../../../blog/index.html",
-    },
   });
 }
 
