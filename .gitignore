@@ -7,3 +7,14 @@ cloudflare-upload/
 !.dev.vars.example
 .env*
 !.env.example
+
+# photo workflow local/source assets
+photos/.DS_Store
+photos/uploads/*
+!photos/uploads/.gitkeep
+photos/originals/*
+!photos/originals/.gitkeep
+photos/derived/social/*
+!photos/derived/social/.gitkeep
+photos/derived/marketplace/*
+!photos/derived/marketplace/.gitkeep
