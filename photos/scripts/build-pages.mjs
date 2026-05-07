@@ -499,6 +499,163 @@ async function writePage(outputDir, html) {
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
 }
 
+function orientationClass(record) {
+  const o = String(record.orientation ?? "").toLowerCase().trim();
+  if (o === "portrait") return "portrait";
+  if (o === "square") return "square";
+  return "landscape";
+}
+
+function imgDimensions(record) {
+  const o = String(record.orientation ?? "").toLowerCase().trim();
+  if (o === "portrait") return 'width="1800" height="2400"';
+  if (o === "square") return 'width="2400" height="2400"';
+  return 'width="2400" height="1800"';
+}
+
+function buildBrowsePage(collections, records) {
+  const total = records.length;
+
+  const filterBtns = [
+    `<button class="filter-btn active" data-filter="all">All <span class="filter-count">${total}</span></button>`,
+    ...collections.map((col) => {
+      const count = records.filter((r) => r.collection === col.slug).length;
+      if (count === 0) return "";
+      return `<button class="filter-btn" data-filter="${escapeHtml(col.slug)}">${escapeHtml(col.name)} <span class="filter-count">${count}</span></button>`;
+    }).filter(Boolean),
+  ].join("\n        ");
+
+  const cards = records.map((record) => {
+    const col = collections.find((c) => c.slug === record.collection);
+    const colName = col ? col.name : record.collection;
+    const colLabel = colName.replace(/Residential Architecture Event/, "Architecture")
+      .replace(/Suburban Atmosphere/, "Atmosphere")
+      .replace(/Nature Details/, "Nature")
+      .replace(/Waterside Sunsets/, "Waterside")
+      .replace(/Seasonal Details/, "Seasonal")
+      .replace(/Long Beach Coast/, "Long Beach")
+      .replace(/Quiet Shorelines/, "Shorelines")
+      .replace(/Astoria Overlooks/, "Astoria");
+
+    return `
+          <a class="photo-card ${orientationClass(record)}" href="/photos/images/${record.slug}/" data-collection="${escapeHtml(record.collection)}">
+            <img src="/photos/derived/web/${record.slug}.jpg" alt="${escapeHtml(record.title)}" loading="lazy" ${imgDimensions(record)} />
+            <span class="photo-badge">${escapeHtml(colLabel)}</span>
+            <div class="photo-overlay">
+              <span class="photo-collection-tag">${escapeHtml(colName)}</span>
+              <span class="photo-title">${escapeHtml(record.title)}</span>
+            </div>
+          </a>`;
+  }).join("");
+
+  const body = `
+      <section class="page-hero">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/photos/">Photos</a>
+          <span aria-hidden="true">›</span>
+          <span>Full Library</span>
+        </nav>
+        <div class="hero-row">
+          <div>
+            <div class="eyebrow">Free-Use Library</div>
+            <h1>Full Photo Library</h1>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-stat"><strong>${total}</strong><span>Images</span></div>
+            <div class="meta-stat"><strong>${collections.length}</strong><span>Collections</span></div>
+            <div class="meta-stat"><strong>Free</strong><span>Commercial use</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-bar" role="group" aria-label="Filter by collection">
+        ${filterBtns}
+      </div>
+
+      <main class="main">
+        <p class="gallery-count" id="gallery-count">Showing <strong>${total}</strong> images</p>
+        <div class="gallery-grid" id="gallery-grid">${cards}
+        </div>
+        <p class="gallery-empty" id="gallery-empty">No images in this collection yet.</p>
+      </main>`;
+
+  const browseStyles = `
+      <style>
+        .page-hero { padding: 48px 54px 36px; border-bottom: 1px solid rgba(255,255,255,0.04); position: relative; z-index: 1; }
+        .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+        .breadcrumb a { color: var(--accent); }
+        .breadcrumb span { opacity: 0.5; }
+        .hero-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+        .hero-meta { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 4px; }
+        .meta-stat { display: flex; flex-direction: column; gap: 2px; }
+        .meta-stat strong { font-size: 1.5rem; font-weight: 900; color: var(--text); line-height: 1; }
+        .meta-stat span { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+        .filter-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 20px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(6,14,20,0.6); position: relative; z-index: 1; }
+        .filter-btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.08); background: transparent; color: var(--muted); font-family: inherit; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: border-color 0.18s, color 0.18s, background 0.18s; }
+        .filter-btn:hover { border-color: rgba(88,214,255,0.3); color: var(--text); }
+        .filter-btn.active { border-color: var(--accent); background: rgba(88,214,255,0.1); color: var(--accent); }
+        .filter-count { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: rgba(255,255,255,0.08); font-size: 0.7rem; font-weight: 900; }
+        .filter-btn.active .filter-count { background: rgba(88,214,255,0.2); }
+        .main { padding: 32px 40px 64px; position: relative; z-index: 1; }
+        .gallery-count { margin-bottom: 20px; font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
+        .gallery-count strong { color: var(--text); }
+        .gallery-grid { columns: 3; column-gap: 16px; }
+        .photo-card { break-inside: avoid; margin-bottom: 16px; position: relative; border-radius: 18px; border: 1px solid rgba(255,255,255,0.06); overflow: hidden; background: rgba(8,18,26,0.8); display: block; transition: border-color 0.2s, box-shadow 0.2s; }
+        .photo-card:hover, .photo-card:focus-within { border-color: rgba(88,214,255,0.24); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+        .photo-card img { width: 100%; display: block; object-fit: cover; transition: transform 0.45s ease; }
+        .photo-card.landscape img { aspect-ratio: 4/3; }
+        .photo-card.portrait img { aspect-ratio: 3/4; }
+        .photo-card.square img { aspect-ratio: 1; }
+        .photo-card:hover img, .photo-card:focus-within img { transform: scale(1.04); }
+        .photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 16px; background: linear-gradient(to top, rgba(4,10,16,0.95) 0%, rgba(4,10,16,0.6) 55%, transparent 100%); transform: translateY(4px); opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; }
+        .photo-card:hover .photo-overlay, .photo-card:focus-within .photo-overlay { opacity: 1; transform: translateY(0); }
+        .photo-collection-tag { display: inline-block; margin-bottom: 6px; padding: 3px 9px; border-radius: 999px; border: 1px solid rgba(88,214,255,0.3); background: rgba(88,214,255,0.1); color: var(--accent); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+        .photo-title { display: block; color: var(--text); font-size: 0.92rem; font-weight: 700; line-height: 1.3; }
+        .photo-badge { position: absolute; top: 12px; left: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.1); background: rgba(4,10,16,0.75); backdrop-filter: blur(8px); color: rgba(236,248,251,0.75); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; pointer-events: none; }
+        .photo-card.hidden { display: none; }
+        .gallery-empty { display: none; text-align: center; padding: 64px 0; color: var(--muted); }
+        .gallery-empty.visible { display: block; }
+        @media (max-width: 1100px) { .gallery-grid { columns: 2; } }
+        @media (max-width: 820px) {
+          .page-hero, .filter-bar, .main { padding-left: 22px; padding-right: 22px; }
+          .gallery-grid { columns: 1; }
+          .hero-row { flex-direction: column; align-items: flex-start; }
+        }
+        @media (max-width: 640px) { h1 { font-size: 1.8rem; } }
+      </style>
+      <script>
+        (function(){
+          var btns=document.querySelectorAll('.filter-btn');
+          var cards=document.querySelectorAll('.photo-card');
+          var countEl=document.getElementById('gallery-count');
+          var emptyEl=document.getElementById('gallery-empty');
+          btns.forEach(function(btn){
+            btn.addEventListener('click',function(){
+              var f=btn.getAttribute('data-filter');
+              btns.forEach(function(b){b.classList.remove('active');});
+              btn.classList.add('active');
+              var v=0;
+              cards.forEach(function(c){
+                var m=f==='all'||c.getAttribute('data-collection')===f;
+                c.classList.toggle('hidden',!m);
+                if(m)v++;
+              });
+              countEl.innerHTML='Showing <strong>'+v+'</strong> image'+(v!==1?'s':'');
+              emptyEl.classList.toggle('visible',v===0);
+            });
+          });
+        })();
+      </script>`;
+
+  return pageShell({
+    title: "Browse All Photos | Fused Photos Free-Use Library",
+    description: `Browse all ${total} original free-use photographs from Fused Photos — ${collections.map((c) => c.name).join(", ")}. Commercially cleared for web, editorial, and brand use.`,
+    canonical: "https://fuseddistribution.com/photos/browse/",
+    ogImage: "https://fuseddistribution.com/photos/derived/web/img-0048-img-3909.jpg",
+    body: browseStyles + body,
+  });
+}
+
 async function main() {
   await ensureDirectories(REQUIRED_DIRS);
   const collections = await readCollections();
@@ -519,7 +676,10 @@ async function main() {
     await writePage(path.join(PUBLIC_IMAGES_DIR, record.slug), buildDetailPage(record, collection, related));
   }
 
-  console.log(`Built ${collections.length} collection page(s) and ${pageRecords.length} image detail page(s).`);
+  const browsePath = path.resolve("photos/browse");
+  await writePage(browsePath, buildBrowsePage(collections, pageRecords));
+
+  console.log(`Built ${collections.length} collection page(s), ${pageRecords.length} image detail page(s), and browse page.`);
 }
 
 main().catch((error) => {
