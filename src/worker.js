@@ -79,21 +79,47 @@ async function sendLeadWithResend(payload, env) {
     payload.message
   ];
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${env.RESEND_API_KEY}`
-    },
-    body: JSON.stringify({
-      from: env.LEAD_FROM_EMAIL,
-      to: [env.LEAD_DESTINATION_EMAIL],
-      subject,
-      text: lines.join("\n")
-    })
-  });
+  const confirmationLines = [
+    `Hi ${payload.name},`,
+    "",
+    "We received your message and will follow up shortly.",
+    "",
+    "If you have anything to add, just reply to this email.",
+    "",
+    "Fused Distribution",
+    "help@fuseddistribution.com"
+  ];
 
-  if (!response.ok) {
+  const [internalRes, confirmRes] = await Promise.all([
+    fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${env.RESEND_API_KEY}`
+      },
+      body: JSON.stringify({
+        from: env.LEAD_FROM_EMAIL,
+        to: [env.LEAD_DESTINATION_EMAIL],
+        subject,
+        text: lines.join("\n")
+      })
+    }),
+    fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${env.RESEND_API_KEY}`
+      },
+      body: JSON.stringify({
+        from: env.LEAD_FROM_EMAIL,
+        to: [payload.email],
+        subject: "We received your request",
+        text: confirmationLines.join("\n")
+      })
+    })
+  ]);
+
+  if (!internalRes.ok || !confirmRes.ok) {
     throw new Error("Email delivery failed.");
   }
 }
