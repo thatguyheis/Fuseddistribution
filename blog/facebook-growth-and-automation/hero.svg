@@ -108,7 +108,7 @@
 
   <text x="600" y="512" text-anchor="middle"
         font-family="Arial, sans-serif" font-size="12"
-        fill="rgba(175,198,207,0.52)" letter-spacing="2">SCHEDULE &nbsp; · &nbsp; AUTOMATE &nbsp; · &nbsp; MONETIZE</text>
+        fill="rgba(175,198,207,0.52)" letter-spacing="2">SCHEDULE  ·  AUTOMATE  ·  MONETIZE</text>
 
   <!-- ── TOP-LEFT CARD (42, 95) ── -->
   <rect x="42" y="95" width="295" height="168" rx="16"
