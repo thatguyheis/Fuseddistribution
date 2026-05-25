@@ -197,6 +197,18 @@
         line-height: 1.6;
       }
 
+      .error-msg {
+        display: none;
+        padding: 12px 16px;
+        background: rgba(255, 80, 80, 0.10);
+        border: 1px solid rgba(255, 80, 80, 0.30);
+        border-radius: 10px;
+        color: #ff9090;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.88rem;
+        text-align: center;
+      }
+
       .footer {
         padding: 20px 32px;
         text-align: center;
@@ -244,6 +256,7 @@
               <input class="form-input" id="sr-email" type="email" placeholder="you@example.com" autocomplete="email" required />
             </div>
             <button class="form-btn" id="sr-btn" type="submit">Claim free shipping</button>
+            <div class="error-msg" id="sr-error">Something went wrong. Please try again.</div>
             <p class="form-note">No spam. Unsubscribe any time.</p>
           </form>
         </div>
@@ -284,13 +297,18 @@
             body: JSON.stringify({ email: email, groups: [GROUP_ID] })
           })
             .then(function (res) {
-              if (!res.ok) throw new Error('bad response');
+              if (!res.ok) {
+                return res.text().then(function (body) {
+                  throw new Error('HTTP ' + res.status + ': ' + body);
+                });
+              }
               document.getElementById('sr-form-wrap').style.display = 'none';
               document.getElementById('sr-success').style.display = 'block';
             })
             .catch(function (err) {
               console.error('MailerLite subscribe error:', err);
               btn.disabled = false;
+              document.getElementById('sr-error').style.display = 'block';
             });
         });
       })();
