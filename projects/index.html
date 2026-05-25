@@ -1706,6 +1706,8 @@
 
       function close() {
         document.getElementById('ts-popup-overlay').classList.remove('ts-open');
+        document.getElementById('ts-popup-form-wrap').style.display = '';
+        document.getElementById('ts-popup-success').style.display = '';
         dismiss();
       }
 
@@ -1758,7 +1760,7 @@
           body: JSON.stringify({ email: email, name: name, list_uuids: [LIST_UUID] })
         })
           .then(function (res) { if (!res.ok) throw new Error('bad response'); })
-          .catch(function () {})
+          .catch(function (err) { console.error('Listmonk subscribe error:', err); })
           .finally(function () { showSuccess(); });
       });
     })();
