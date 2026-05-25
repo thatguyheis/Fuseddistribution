@@ -1461,5 +1461,192 @@
         });
       })();
     </script>
+
+  <!-- MAILING LIST POPUP — FUSED RESERVE -->
+  <style>
+    #rv-popup-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.72);
+      z-index: 9000;
+      align-items: center;
+      justify-content: center;
+    }
+    #rv-popup-overlay.rv-open { display: flex; }
+    #rv-popup {
+      background: linear-gradient(160deg, #13181f 0%, #0b0e14 100%);
+      border: 1px solid rgba(242,198,109,0.22);
+      border-radius: 14px;
+      padding: 36px 32px 28px;
+      width: min(420px, calc(100vw - 32px));
+      box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+      position: relative;
+    }
+    #rv-popup-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: none;
+      border: none;
+      color: #b7bfcb;
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+    }
+    #rv-popup-close:hover { color: #f5f7fb; }
+    #rv-popup h2 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f2c66d;
+      letter-spacing: 0.01em;
+    }
+    #rv-popup p {
+      margin: 0 0 20px;
+      font-size: 0.9rem;
+      color: #b7bfcb;
+      line-height: 1.55;
+    }
+    #rv-popup-form { display: flex; flex-direction: column; gap: 10px; }
+    #rv-popup-email {
+      padding: 11px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(242,198,109,0.28);
+      background: rgba(255,255,255,0.05);
+      color: #f5f7fb;
+      font-size: 0.92rem;
+      outline: none;
+    }
+    #rv-popup-email:focus { border-color: rgba(242,198,109,0.65); }
+    #rv-popup-btn {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: #f2c66d;
+      color: #0b0e14;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    #rv-popup-btn:hover { opacity: 0.88; }
+    #rv-popup-dismiss {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: #6b7480;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 100%;
+    }
+    #rv-popup-dismiss:hover { color: #b7bfcb; }
+    #rv-popup-success { display: none; text-align: center; }
+    #rv-popup-success p {
+      color: #f2c66d;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  </style>
+
+  <div id="rv-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="rv-popup-heading">
+    <div id="rv-popup">
+      <button id="rv-popup-close" aria-label="Close">&#x2715;</button>
+      <div id="rv-popup-form-wrap">
+        <h2 id="rv-popup-heading">Get free shipping on your first order</h2>
+        <p>Join The Silver Report. We send updates on silver prices, deals, and what is worth buying. No noise.</p>
+        <form id="rv-popup-form" novalidate>
+          <input id="rv-popup-email" type="email" placeholder="Your email address" autocomplete="email" required />
+          <button id="rv-popup-btn" type="submit">Claim free shipping</button>
+        </form>
+        <button id="rv-popup-dismiss" type="button">No thanks</button>
+      </div>
+      <div id="rv-popup-success">
+        <p>Check your email to confirm your spot. Your free shipping code is on its way.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Phase 2: replace empty string with your Listmonk subscription URL
+      // e.g. 'https://lists.fuseddistribution.com/api/public/subscription'
+      var LISTMONK_URL = '';
+      var LIST_UUID = 'RESERVE_LIST_UUID'; // replace with real UUID from Listmonk
+
+      var STORAGE_KEY = 'rv_popup_dismissed';
+      var DELAY_MS = 30000;
+
+      function isDismissed() {
+        try {
+          var ts = localStorage.getItem(STORAGE_KEY);
+          if (!ts) return false;
+          return Date.now() - parseInt(ts, 10) < 7 * 24 * 60 * 60 * 1000;
+        } catch (e) { return false; }
+      }
+
+      function dismiss() {
+        try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
+      }
+
+      function open() {
+        document.getElementById('rv-popup-overlay').classList.add('rv-open');
+      }
+
+      function close() {
+        document.getElementById('rv-popup-overlay').classList.remove('rv-open');
+        dismiss();
+      }
+
+      function showSuccess() {
+        document.getElementById('rv-popup-form-wrap').style.display = 'none';
+        document.getElementById('rv-popup-success').style.display = 'block';
+        setTimeout(function () { close(); }, 3000);
+      }
+
+      if (isDismissed()) return;
+
+      setTimeout(open, DELAY_MS);
+
+      document.getElementById('rv-popup-close').addEventListener('click', close);
+      document.getElementById('rv-popup-dismiss').addEventListener('click', close);
+
+      document.getElementById('rv-popup-overlay').addEventListener('click', function (e) {
+        if (e.target === this) close();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+
+      document.getElementById('rv-popup-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var email = document.getElementById('rv-popup-email').value.trim();
+        if (!email || !email.includes('@')) {
+          document.getElementById('rv-popup-email').focus();
+          return;
+        }
+        dismiss();
+
+        if (!LISTMONK_URL) {
+          // Transition period: no server yet, show success optimistically
+          showSuccess();
+          return;
+        }
+
+        fetch(LISTMONK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, list_uuids: [LIST_UUID] })
+        })
+          .then(function (res) { if (!res.ok) throw new Error('bad response'); })
+          .catch(function () {})
+          .finally(function () { showSuccess(); });
+      });
+    })();
+  </script>
   </body>
 </html>
