@@ -1,0 +1,77 @@
+{
+  "slug": "how-to-win-friends-and-influence-people",
+  "source": {
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "year": 1936,
+    "summary": "A relationship-focused self-development book about rapport, persuasion, and influence.",
+    "corePromise": "Help readers improve relationships and influence through empathy and disciplined communication."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "communication and trust-building for founders, operators, and sellers"
+  },
+  "rights": {
+    "us": {
+      "status": "needs-review",
+      "confirmedPublicDomain": false,
+      "verificationDate": "2026-04-22",
+      "evidence": "Research candidate only. Do not adapt until a documented U.S. public-domain determination exists."
+    },
+    "sourceAvailability": {
+      "verified": false,
+      "location": "Blocked pending rights review."
+    }
+  },
+  "scoring": {
+    "timelessness": 9,
+    "modernRelevance": 9,
+    "searchDemand": 10,
+    "businessUsefulness": 9,
+    "adaptationPotential": 8,
+    "rightsViability": 1,
+    "totalScore": 8.22,
+    "rank": 4
+  },
+  "status": "researched",
+  "review": {
+    "pending": null,
+    "blueprintApprovedAt": null,
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/how-to-win-friends-and-influence-people/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/how-to-win-friends-and-influence-people/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/how-to-win-friends-and-influence-people/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/how-to-win-friends-and-influence-people/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "How to Build Trust and Influence",
+    "titleConcepts": [
+      "How to Build Trust and Influence",
+      "How Builders Win People",
+      "Modern Influence for Founders and Operators"
+    ],
+    "subtitleOptions": [
+      "A Builder-Focused Rewrite of a Relationship Classic",
+      "Trust, Persuasion, and Communication for Modern Work",
+      "How to Earn Attention Without Manipulation"
+    ],
+    "modernWorld": "Sales calls, customer conversations, team leadership, and online reputation",
+    "toneRules": [
+      "Keep the advice ethical and specific.",
+      "Use contemporary communication examples.",
+      "Avoid manipulative framing."
+    ],
+    "prohibitedChanges": [
+      "Do not generate manuscripts while rights are unresolved."
+    ],
+    "coreLessons": [
+      "Trust and influence are earned socially.",
+      "Curiosity and empathy outperform ego.",
+      "People cooperate faster when they feel seen and respected."
+    ],
+    "chapterPlan": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "global": {
+    "license_status": "commercial-safe",
+    "license_type": "free-use",
+    "model_release": "no",
+    "property_release": "no",
+    "country": "United States",
+    "published": "no",
+    "featured": "no"
+  },
+  "collectionRules": [
+    {
+      "matchTagsAny": ["sunset", "waterside", "shoreline", "calm water", "sun flare"],
+      "collection": "waterside-sunsets"
+    },
+    {
+      "matchTagsAny": ["spider", "macro", "insect", "arthropod", "evergreens", "woodland", "trees"],
+      "collection": "nature-details"
+    },
+    {
+      "matchTagsAny": ["architecture", "interior", "residential exterior", "garage doors", "patio", "backyard"],
+      "collection": "residential-architecture-event"
+    },
+    {
+      "matchTagsAny": ["twilight", "smoky sky", "suburban road", "parking lot", "utility corridor"],
+      "collection": "suburban-atmosphere"
+    }
+  ],
+  "batchRules": [
+    {
+      "name": "lake-oswego-residential-2015-08-19",
+      "match": {
+        "fileDateFrom": "2015-08-19",
+        "fileDateTo": "2015-08-19"
+      },
+      "apply": {
+        "location": "Lake Oswego, Oregon",
+        "state_region": "Oregon",
+        "country": "United States",
+        "collection": "residential-architecture-event",
+        "add_tags": ["lake oswego", "oregon", "pacific northwest"]
+      }
+    }
+  ]
+}

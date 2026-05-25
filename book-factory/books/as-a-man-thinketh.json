@@ -1,0 +1,142 @@
+{
+  "slug": "as-a-man-thinketh",
+  "source": {
+    "title": "As a Man Thinketh",
+    "author": "James Allen",
+    "year": 1903,
+    "summary": "A short philosophical work about mindset, character, and the link between thought and results.",
+    "corePromise": "Show how disciplined thought shapes conduct, reputation, and outcomes."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "mental discipline and self-command for creators, founders, and operators"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-04-22",
+      "evidence": "Early twentieth-century publication with a documented public-domain record."
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Public-domain editions available for editorial source review."
+    }
+  },
+  "scoring": {
+    "timelessness": 9,
+    "modernRelevance": 8,
+    "searchDemand": 7,
+    "businessUsefulness": 8,
+    "adaptationPotential": 8,
+    "rightsViability": 10,
+    "totalScore": 8.3,
+    "rank": 2
+  },
+  "status": "ready-for-kdp",
+  "review": {
+    "pending": null,
+    "blueprintApprovedAt": "2026-04-22T15:45:04.138Z",
+    "draftApprovedAt": "2026-04-22T15:45:25.162Z"
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/as-a-man-thinketh/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/as-a-man-thinketh/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/as-a-man-thinketh/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/as-a-man-thinketh/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "As You Think",
+    "titleConcepts": [
+      "As You Think",
+      "The Discipline of Thought",
+      "How You Think Is How You Live"
+    ],
+    "subtitleOptions": [
+      "A Modern Guide to Thought, Character, and Self-Command",
+      "Mental Discipline for Founders, Creators, and Operators",
+      "Self-Command for the Age of Noise, Drift, and Ambition"
+    ],
+    "modernWorld": "Founder psychology, personal operating systems, and everyday decision hygiene",
+    "toneRules": [
+      "Keep the prose sharper and more concrete than the original.",
+      "Translate moral abstractions into habit and behavior language.",
+      "Avoid vague manifestation language."
+    ],
+    "prohibitedChanges": [
+      "Do not reduce the book to generic positivity.",
+      "Do not make claims that thoughts alone create outcomes.",
+      "Do not imply endorsement by the original author."
+    ],
+    "coreLessons": [
+      "Thought patterns shape conduct and reputation over time.",
+      "Circumstances often reveal repeated thought and habit rather than random fate.",
+      "The body and the nervous system are influenced by mental hygiene.",
+      "Purpose organizes thought and protects effort from drift.",
+      "Achievement depends on disciplined thought translated into action.",
+      "Vision enlarges character when it is paired with work.",
+      "Serenity is a practical advantage, not a decorative virtue."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "Thought and Character",
+        "focus": "Show that repeated thinking patterns harden into behavior, reputation, and self-command.",
+        "modernFrame": "The hidden operating system behind a builder's decisions"
+      },
+      {
+        "number": 2,
+        "title": "Thought and Circumstances",
+        "focus": "Argue that external conditions are often shaped by repeated internal habits, standards, and choices.",
+        "modernFrame": "How drift, avoidance, and standards alter a modern career or company"
+      },
+      {
+        "number": 3,
+        "title": "Thought and Health",
+        "focus": "Connect mental disorder or discipline to energy, posture, resilience, and basic physical maintenance.",
+        "modernFrame": "Nervous system health for founders, creators, and knowledge workers"
+      },
+      {
+        "number": 4,
+        "title": "Thought and Purpose",
+        "focus": "Make purpose the organizing principle that keeps effort from scattering.",
+        "modernFrame": "Focus in a distracted digital economy"
+      },
+      {
+        "number": 5,
+        "title": "The Thought-Factor in Achievement",
+        "focus": "Explain how disciplined thought becomes execution, persistence, and eventual results.",
+        "modernFrame": "Execution and consistency in modern work"
+      },
+      {
+        "number": 6,
+        "title": "Visions and Ideals",
+        "focus": "Show how imagination and ideals elevate work when tied to craft and sacrifice.",
+        "modernFrame": "Ambition, taste, and long-term building"
+      },
+      {
+        "number": 7,
+        "title": "Serenity",
+        "focus": "Present calm as a form of maturity and leverage under pressure.",
+        "modernFrame": "Composure as an operator advantage"
+      }
+    ],
+    "marketingAngles": [
+      "A practical rewrite of a classic mindset book for modern builders",
+      "A sharper modern title for a timeless book on self-command",
+      "Self-command for founders, creators, and operators overwhelmed by noise",
+      "A concise book on thought discipline, purpose, and calm execution"
+    ],
+    "kdpKeywords": [
+      "as you think book",
+      "as a man thinketh modern adaptation",
+      "mindset for founders",
+      "self discipline for entrepreneurs",
+      "mental discipline for creators",
+      "focus and purpose book",
+      "calm leadership mindset",
+      "personal operating system"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+name = "Book Draft Pipeline"
+status = "ACTIVE"
+schedule = "Daily at 10:00 AM America/Los_Angeles"
+cwd = "/Users/nick/Documents/New project"
+
+prompt = """
+Advance approved book records through the Book Factory workflow in /Users/nick/Documents/New project.
+For any title that is rights-cleared, generate the adaptation blueprint and stop for editorial review.
+For any title with blueprint approval, generate manuscript assets and stop for editorial review.
+For any title approved for packaging, assemble the KDP package.
+Do not move unresolved-rights titles forward.
+Open an inbox item summarizing what advanced, what is blocked, and the next human approval needed.
+"""

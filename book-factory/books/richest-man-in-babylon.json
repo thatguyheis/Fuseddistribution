@@ -1,0 +1,173 @@
+{
+  "slug": "richest-man-in-babylon",
+  "source": {
+    "title": "The Richest Man in Babylon",
+    "author": "George S. Clason",
+    "year": 1926,
+    "summary": "A parable-driven personal finance book about saving, compounding, prudent investing, and wealth habits.",
+    "corePromise": "Teach durable wealth principles through memorable stories and direct rules.",
+    "sourceAvailabilityNote": "Working adaptation samples and source-study notes exist for this title."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "narrative wealth parables for founders, operators, creators, developers, and freelancers"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-04-22",
+      "evidence": "Published in 1926. Maintain the rights note and source-edition record with the manuscript assets."
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "User-provided sample adaptation files and source-study materials."
+    }
+  },
+  "scoring": {
+    "timelessness": 10,
+    "modernRelevance": 10,
+    "searchDemand": 9,
+    "businessUsefulness": 10,
+    "adaptationPotential": 10,
+    "rightsViability": 10,
+    "totalScore": 9.86,
+    "rank": 1
+  },
+  "status": "ready-for-kdp",
+  "review": {
+    "pending": null,
+    "blueprintApprovedAt": "2026-04-22T15:42:10.055Z",
+    "draftApprovedAt": "2026-04-22T15:42:10.128Z"
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/richest-man-in-babylon/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/richest-man-in-babylon/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/richest-man-in-babylon/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/richest-man-in-babylon/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "The Richest Dev in the Valley",
+    "titleConcepts": [
+      "The Richest Dev in the Valley",
+      "The Richest Man in Silicon Valley",
+      "The Richest Builder in the Valley"
+    ],
+    "subtitleOptions": [
+      "Ancient Wealth Laws Rewritten for the Age of Startups, AI, and Bitcoin",
+      "A Modern Retelling of a Classic Wealth Parable",
+      "Timeless Money Rules for Builders, Creators, and the Internet Economy"
+    ],
+    "modernWorld": "Silicon Valley, startup life, freelancing, software work, creator income, and digital investing",
+    "toneRules": [
+      "Use clean, direct prose with dry humor where it sharpens the point.",
+      "Keep the lesson practical and financial, not mystical.",
+      "Anchor abstract advice in recognizable modern work and spending behavior."
+    ],
+    "prohibitedChanges": [
+      "Do not reverse the source lesson order.",
+      "Do not imply the original author wrote this adaptation.",
+      "Do not turn financial principles into speculative get-rich-quick promises."
+    ],
+    "coreLessons": [
+      "A part of all you earn is yours to keep.",
+      "Control spending before lifestyle inflation consumes new income.",
+      "Put savings to work in understandable, durable assets.",
+      "Protect wealth from bad operators, bad advice, and unforced risks.",
+      "Increase earning power and turn skill growth into long-term income.",
+      "Act promptly when real opportunity appears instead of waiting for luck to rescue you.",
+      "Work, responsibility, and consistency build more durable wealth than status or hype."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "Foreword",
+        "focus": "Frame the adaptation and restate the enduring money laws.",
+        "modernFrame": "Contemporary builder economics and the Valley's wealth paradox"
+      },
+      {
+        "number": 2,
+        "title": "An Historical Sketch of the Valley",
+        "focus": "Explain why a modern wealth capital still produces financially unstable people.",
+        "modernFrame": "Silicon Valley as a modern Babylon"
+      },
+      {
+        "number": 3,
+        "title": "The Dev Who Wanted Bitcoin",
+        "focus": "Introduce the seeker who works hard but retains little.",
+        "modernFrame": "A capable software contractor trapped by overhead and drift"
+      },
+      {
+        "number": 4,
+        "title": "The Richest Man in the Valley",
+        "focus": "Deliver the core law to keep part of every dollar earned.",
+        "modernFrame": "A quietly wealthy founder explains his system"
+      },
+      {
+        "number": 5,
+        "title": "Seven Cures For a Lean Wallet",
+        "focus": "Lay out the practical seven-part system for saving, budgeting, investing, and increasing earning power.",
+        "modernFrame": "Archie teaches a hundred workers at a major tech campus"
+      },
+      {
+        "number": 6,
+        "title": "Meet the Goddess of Good Luck",
+        "focus": "Show that opportunity favors prepared people who move decisively.",
+        "modernFrame": "Archie's private Discord debates luck, timing, and hesitation"
+      },
+      {
+        "number": 7,
+        "title": "The Five Laws of Bitcoin",
+        "focus": "Translate the five laws of gold into modern digital-asset and investing behavior.",
+        "modernFrame": "A blockchain elder tells Noah Musk's story on a desert road trip"
+      },
+      {
+        "number": 8,
+        "title": "The DeFi Lender",
+        "focus": "Illustrate how trustworthy lending and prudent judgment multiply wealth.",
+        "modernFrame": "A modern lender teaches the difference between yield and delusion"
+      },
+      {
+        "number": 9,
+        "title": "The Walls of the Valley",
+        "focus": "Frame protection, insurance, and preparation as the walls that preserve wealth.",
+        "modernFrame": "Cybersecurity becomes the parable for financial defenses"
+      },
+      {
+        "number": 10,
+        "title": "The Gig Worker",
+        "focus": "Tell the debt-repayment and self-respect story through a modern worker who stops running.",
+        "modernFrame": "Dazz rebuilds his life through a strict percentages plan"
+      },
+      {
+        "number": 11,
+        "title": "The Blockchain Records From the Valley",
+        "focus": "Use recovered digital records to prove that the system works across time.",
+        "modernFrame": "A future scholar decodes Dazz's onchain financial discipline"
+      },
+      {
+        "number": 12,
+        "title": "The Luckiest Dev in the Valley",
+        "focus": "End by tying luck, work, and earned competence together.",
+        "modernFrame": "A convoy lesson about craft, humility, and inherited advantage"
+      }
+    ],
+    "marketingAngles": [
+      "Financial discipline for high-income but low-wealth professionals",
+      "A narrative alternative to generic personal finance books",
+      "A modern Silicon Valley parable told with fictionalized contemporary characters",
+      "Builder-focused adaptation of a classic title with modern examples"
+    ],
+    "kdpKeywords": [
+      "richest dev in the valley",
+      "wealth building for entrepreneurs",
+      "personal finance for freelancers",
+      "money habits for founders",
+      "modern rich man in babylon",
+      "financial discipline for creators",
+      "startup money management",
+      "bitcoin and wealth lessons"
+    ]
+  }
+}

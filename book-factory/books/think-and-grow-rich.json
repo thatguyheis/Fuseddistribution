@@ -1,0 +1,77 @@
+{
+  "slug": "think-and-grow-rich",
+  "source": {
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "year": 1937,
+    "summary": "A success literature classic about desire, persistence, planning, and belief.",
+    "corePromise": "Convert ambition into tangible results through disciplined focus and organized effort."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "success principles for builders and sales-oriented readers"
+  },
+  "rights": {
+    "us": {
+      "status": "needs-review",
+      "confirmedPublicDomain": false,
+      "verificationDate": "2026-04-22",
+      "evidence": "Research candidate only. Do not adapt until a documented U.S. public-domain determination exists."
+    },
+    "sourceAvailability": {
+      "verified": false,
+      "location": "Blocked pending rights review."
+    }
+  },
+  "scoring": {
+    "timelessness": 8,
+    "modernRelevance": 8,
+    "searchDemand": 10,
+    "businessUsefulness": 8,
+    "adaptationPotential": 8,
+    "rightsViability": 1,
+    "totalScore": 7.58,
+    "rank": 5
+  },
+  "status": "researched",
+  "review": {
+    "pending": null,
+    "blueprintApprovedAt": null,
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/think-and-grow-rich/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/think-and-grow-rich/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/think-and-grow-rich/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/think-and-grow-rich/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "Think and Build Rich",
+    "titleConcepts": [
+      "Think and Build Rich",
+      "Think and Scale",
+      "Persistent Thinking for Builders"
+    ],
+    "subtitleOptions": [
+      "A Modern Builder's Rewrite of a Success Classic",
+      "Focus, Desire, and Organized Action for Operators",
+      "Turning Ambition into Business Execution"
+    ],
+    "modernWorld": "Sales systems, startup execution, and ambitious operators",
+    "toneRules": [
+      "Keep the rewrite practical and skeptical.",
+      "Translate abstract success language into repeatable systems.",
+      "Avoid hype."
+    ],
+    "prohibitedChanges": [
+      "Do not generate manuscripts while rights are unresolved."
+    ],
+    "coreLessons": [
+      "Strong intention matters when paired with execution.",
+      "Persistence is a compounding advantage.",
+      "Organized plans beat vague ambition."
+    ],
+    "chapterPlan": []
+  }
+}

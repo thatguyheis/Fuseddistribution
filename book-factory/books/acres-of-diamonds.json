@@ -1,0 +1,139 @@
+{
+  "slug": "acres-of-diamonds",
+  "source": {
+    "title": "Acres of Diamonds",
+    "author": "Russell H. Conwell",
+    "year": 1890,
+    "summary": "A classic speech about recognizing opportunity close at hand instead of chasing distant fantasies.",
+    "corePromise": "Train readers to spot value in the people, skills, and markets already around them."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "a narrative business parable about finding overlooked opportunity in ordinary markets"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-04-22",
+      "evidence": "Nineteenth-century publication with a documented public-domain record."
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Public-domain editions available for editorial source review."
+    }
+  },
+  "scoring": {
+    "timelessness": 8,
+    "modernRelevance": 9,
+    "searchDemand": 6,
+    "businessUsefulness": 8,
+    "adaptationPotential": 9,
+    "rightsViability": 10,
+    "totalScore": 8.24,
+    "rank": 3
+  },
+  "status": "ready-for-kdp",
+  "review": {
+    "pending": null,
+    "blueprintApprovedAt": "2026-04-25T09:00:00.000Z",
+    "draftApprovedAt": "2026-04-25T09:30:00.000Z"
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/acres-of-diamonds/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/acres-of-diamonds/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/acres-of-diamonds/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/acres-of-diamonds/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "Hidden Gold in Plain Sight",
+    "titleConcepts": [
+      "Hidden Gold in Plain Sight",
+      "The Opportunity Next Door",
+      "Built From the Ground Beneath You"
+    ],
+    "subtitleOptions": [
+      "A Modern Builder's Guide to Finding Wealth Where Others See Nothing",
+      "Why the Best Opportunity Is Usually Closer Than You Think",
+      "A Narrative Guide to Finding Real Markets Before You Chase New Ones"
+    ],
+    "modernWorld": "Service businesses, overlooked local markets, creator ecosystems, logistics, home services, and ignored operational niches",
+    "toneRules": [
+      "Write with human warmth, practical intelligence, and low-ego clarity.",
+      "Use grounded examples from local and online business without sounding like a lecture.",
+      "Keep the book story-led, energetic, and concrete."
+    ],
+    "prohibitedChanges": [
+      "Do not promise effortless wins.",
+      "Do not imply the original author wrote this adaptation.",
+      "Do not detach the book from practical action.",
+      "Do not use real public figures or real company names."
+    ],
+    "coreLessons": [
+      "Opportunity is often hidden in familiar ground.",
+      "Most people overlook value because familiarity makes them blind.",
+      "Disciplined observation turns ordinary markets into wealth.",
+      "The person willing to solve unglamorous problems sees value before the crowd does.",
+      "Most people chase glamour because they do not understand boring demand."
+    ],
+    "chapterPlan": [
+      {
+        "number": 0,
+        "title": "Foreword",
+        "focus": "Frame the adaptation around opportunity blindness in modern work.",
+        "modernFrame": "Builders chasing distant upside while ignoring nearby demand"
+      },
+      {
+        "number": 1,
+        "title": "The Man Who Left Home",
+        "focus": "Tell the story of a modern seeker who leaves familiar ground looking for bigger opportunity and loses money, confidence, and time.",
+        "modernFrame": "A talented operator abandons a practical business to chase startup glamour"
+      },
+      {
+        "number": 2,
+        "title": "The Gold Under the Asphalt",
+        "focus": "Show that real opportunity often sits inside ordinary local problems.",
+        "modernFrame": "Service businesses, neglected markets, and under-loved trades"
+      },
+      {
+        "number": 3,
+        "title": "What People Ignore, Markets Reward",
+        "focus": "Explain why overlooked work can produce extraordinary returns when done well.",
+        "modernFrame": "Unsexy businesses, infrastructure, logistics, maintenance, and trust"
+      },
+      {
+        "number": 4,
+        "title": "The Trade in Front of You",
+        "focus": "Argue that skill, observation, and proximity matter more than novelty.",
+        "modernFrame": "Builders learning to see demand where they already stand"
+      },
+      {
+        "number": 5,
+        "title": "The People Already Near You",
+        "focus": "Turn the reader's attention to their current network, customers, and geography.",
+        "modernFrame": "Clients, neighbors, coworkers, vendors, and the hidden map of unmet need"
+      },
+      {
+        "number": 6,
+        "title": "Build Where You Stand",
+        "focus": "Push the reader from inspiration into practical action and disciplined observation.",
+        "modernFrame": "A field manual for spotting and building opportunity in plain sight"
+      }
+    ],
+    "marketingAngles": [
+      "A modern parable about overlooked opportunity for founders and operators",
+      "A business book for people tired of chasing glamorous but empty markets",
+      "A practical guide to seeing value in local and under-loved work"
+    ],
+    "kdpKeywords": [
+      "hidden gold in plain sight",
+      "acres of diamonds modern adaptation",
+      "opportunity for entrepreneurs",
+      "overlooked business ideas",
+      "local market opportunity",
+      "service business book",
+      "modern business parable"
+    ]
+  }
+}

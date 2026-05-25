@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "uncategorized",
+    "name": "Uncategorized",
+    "description": "Images that have been imported but not yet assigned to a final collection.",
+    "hero_image_id": "",
+    "tags": [],
+    "featured": false,
+    "sort_order": 999
+  },
+  {
+    "slug": "residential-architecture-event",
+    "name": "Residential Architecture Event",
+    "description": "Editorial-style images of private residential architecture, interiors, and landscaping captured during what appears to be a luxury home event or showing.",
+    "hero_image_id": "img-0004",
+    "tags": ["architecture", "interior", "exterior", "residential"],
+    "featured": false,
+    "sort_order": 1
+  },
+  {
+    "slug": "suburban-atmosphere",
+    "name": "Suburban Atmosphere",
+    "description": "Atmospheric suburban scenes including smoky skies, twilight roads, and neighborhood-adjacent moments.",
+    "hero_image_id": "img-0014",
+    "tags": ["suburban", "atmosphere", "twilight", "smoke"],
+    "featured": false,
+    "sort_order": 2
+  },
+  {
+    "slug": "nature-details",
+    "name": "Nature Details",
+    "description": "Close studies of natural textures and small outdoor subjects.",
+    "hero_image_id": "img-0017",
+    "tags": ["nature", "detail", "macro", "trees"],
+    "featured": false,
+    "sort_order": 3
+  },
+  {
+    "slug": "waterside-sunsets",
+    "name": "Waterside Sunsets",
+    "description": "Minimal shoreline and waterside light studies captured near sunset.",
+    "hero_image_id": "img-0018",
+    "tags": ["sunset", "water", "shoreline"],
+    "featured": true,
+    "sort_order": 4
+  }
+]
