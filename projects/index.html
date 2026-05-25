@@ -1569,5 +1569,199 @@
         });
       })();
     </script>
+  <!-- MAILING LIST POPUP — FUSED TECH SOLUTIONS -->
+  <style>
+    #ts-popup-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.72);
+      z-index: 9000;
+      align-items: center;
+      justify-content: center;
+    }
+    #ts-popup-overlay.ts-open { display: flex; }
+    #ts-popup {
+      background: linear-gradient(160deg, #0d1f29 0%, #07131a 100%);
+      border: 1px solid rgba(88,214,255,0.22);
+      border-radius: 14px;
+      padding: 36px 32px 28px;
+      width: min(420px, calc(100vw - 32px));
+      box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+      position: relative;
+    }
+    #ts-popup-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: none;
+      border: none;
+      color: #afc6cf;
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+    }
+    #ts-popup-close:hover { color: #ecf8fb; }
+    #ts-popup h2 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #58d6ff;
+      letter-spacing: 0.01em;
+    }
+    #ts-popup p {
+      margin: 0 0 20px;
+      font-size: 0.9rem;
+      color: #afc6cf;
+      line-height: 1.55;
+    }
+    #ts-popup-form { display: flex; flex-direction: column; gap: 10px; }
+    #ts-popup-name,
+    #ts-popup-email {
+      padding: 11px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(88,214,255,0.25);
+      background: rgba(255,255,255,0.05);
+      color: #ecf8fb;
+      font-size: 0.92rem;
+      outline: none;
+    }
+    #ts-popup-name:focus,
+    #ts-popup-email:focus { border-color: rgba(88,214,255,0.6); }
+    #ts-popup-btn {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: #58d6ff;
+      color: #07131a;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    #ts-popup-btn:hover { opacity: 0.88; }
+    #ts-popup-dismiss {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: #5a7a87;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 100%;
+    }
+    #ts-popup-dismiss:hover { color: #afc6cf; }
+    #ts-popup-success { display: none; text-align: center; }
+    #ts-popup-success p {
+      color: #58d6ff;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  </style>
+
+  <div id="ts-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="ts-popup-heading">
+    <div id="ts-popup">
+      <button id="ts-popup-close" aria-label="Close">&#x2715;</button>
+      <div id="ts-popup-form-wrap">
+        <h2 id="ts-popup-heading">Get a free 15-minute call</h2>
+        <p>Join The Tech Brief. Practical guides on AI tools and new tech, straight to your inbox.</p>
+        <form id="ts-popup-form" novalidate>
+          <input id="ts-popup-name" type="text" placeholder="Your name" autocomplete="given-name" required />
+          <input id="ts-popup-email" type="email" placeholder="Your email address" autocomplete="email" required />
+          <button id="ts-popup-btn" type="submit">Claim free session</button>
+        </form>
+        <button id="ts-popup-dismiss" type="button">No thanks</button>
+      </div>
+      <div id="ts-popup-success">
+        <p>Check your email to confirm. We will reach out to schedule your call.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var LISTMONK_URL = '';
+      var LIST_UUID = 'TECHSOLUTIONS_LIST_UUID';
+
+      var STORAGE_KEY = 'ts_popup_dismissed';
+      var DELAY_MS = 30000;
+
+      function isDismissed() {
+        try {
+          var ts = localStorage.getItem(STORAGE_KEY);
+          if (!ts) return false;
+          return Date.now() - parseInt(ts, 10) < 7 * 24 * 60 * 60 * 1000;
+        } catch (e) { return false; }
+      }
+
+      function dismiss() {
+        try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
+      }
+
+      function open() {
+        document.getElementById('ts-popup-overlay').classList.add('ts-open');
+      }
+
+      function close() {
+        document.getElementById('ts-popup-overlay').classList.remove('ts-open');
+        dismiss();
+      }
+
+      function showSuccess() {
+        document.getElementById('ts-popup-name').value = '';
+        document.getElementById('ts-popup-email').value = '';
+        document.getElementById('ts-popup-form-wrap').style.display = 'none';
+        document.getElementById('ts-popup-success').style.display = 'block';
+        setTimeout(function () { close(); }, 3000);
+      }
+
+      if (isDismissed()) return;
+
+      var timer = setTimeout(open, DELAY_MS);
+      window.addEventListener('beforeunload', function () { clearTimeout(timer); });
+
+      document.getElementById('ts-popup-close').addEventListener('click', close);
+      document.getElementById('ts-popup-dismiss').addEventListener('click', close);
+
+      document.getElementById('ts-popup-overlay').addEventListener('click', function (e) {
+        if (e.target === this) close();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+
+      document.getElementById('ts-popup-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('ts-popup-name').value.trim();
+        var email = document.getElementById('ts-popup-email').value.trim();
+        if (!name) {
+          document.getElementById('ts-popup-name').focus();
+          return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          document.getElementById('ts-popup-email').focus();
+          return;
+        }
+        dismiss();
+
+        if (!LISTMONK_URL) {
+          showSuccess();
+          return;
+        }
+
+        fetch(LISTMONK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, name: name, list_uuids: [LIST_UUID] })
+        })
+          .then(function (res) { if (!res.ok) throw new Error('bad response'); })
+          .catch(function () {})
+          .finally(function () { showSuccess(); });
+      });
+    })();
+  </script>
   </body>
 </html>
