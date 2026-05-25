@@ -805,6 +805,53 @@
         margin: 0;
       }
 
+      .nl-cta {
+        padding: 48px 28px;
+        border-top: 1px solid var(--line);
+        background: rgba(242,198,109,0.04);
+      }
+
+      .nl-cta-inner {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .nl-cta-heading {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .nl-cta-body {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.6;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        max-width: 480px;
+      }
+
+      .nl-cta-btn {
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #0b0e14;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        transition: opacity 0.15s;
+      }
+
+      .nl-cta-btn:hover { opacity: 0.88; }
+
       .footer {
         padding: 22px 28px 34px;
         color: rgba(183, 191, 203, 0.72);
@@ -1388,6 +1435,14 @@
           </aside>
         </section>
       </main>
+
+      <section class="nl-cta" aria-label="Newsletter signup">
+        <div class="nl-cta-inner">
+          <h2 class="nl-cta-heading">Stay in the loop</h2>
+          <p class="nl-cta-body">The Silver Report goes out when something worth knowing happens. Sign up and get free shipping on your first order.</p>
+          <a class="nl-cta-btn" href="/newsletter/silver/">Join The Silver Report</a>
+        </div>
+      </section>
 
       <footer class="footer">
         © 2026 Fused Reserve. All rights reserved.
