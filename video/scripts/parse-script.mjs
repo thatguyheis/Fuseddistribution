@@ -54,21 +54,23 @@ export function parseReelScript(md, slug) {
         const titleM2 = body.match(/Title:\s*(.+)/);
         const barsM = body.match(/Bars:\n([\s\S]*?)(?=Narration:|$)/);
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
+        const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
         segments.push({
           type: 'chart',
           startSec, endSec,
           title: titleM2 ? titleM2[1].trim() : '',
           bars: barsM ? parseBars(barsM[1]) : [],
-          narration: narrM ? narrM[1].trim() : null,
+          narration: narrM ? cleanNarr(narrM[1]) : null,
         });
       } else {
         const type = label.includes('stat') ? 'stat' : 'overlay';
         const textM = body.match(/Text:\s*(.+)/);
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
+        const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
         segments.push({
           type, startSec, endSec,
           text: textM ? textM[1].trim() : '',
-          narration: narrM ? narrM[1].trim() : null,
+          narration: narrM ? cleanNarr(narrM[1]) : null,
         });
       }
     }
