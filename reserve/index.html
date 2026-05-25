@@ -1602,6 +1602,7 @@
       }
 
       function showSuccess() {
+        document.getElementById('rv-popup-email').value = '';
         document.getElementById('rv-popup-form-wrap').style.display = 'none';
         document.getElementById('rv-popup-success').style.display = 'block';
         setTimeout(function () { close(); }, 3000);
@@ -1609,7 +1610,8 @@
 
       if (isDismissed()) return;
 
-      setTimeout(open, DELAY_MS);
+      var timer = setTimeout(open, DELAY_MS);
+      window.addEventListener('beforeunload', function () { clearTimeout(timer); });
 
       document.getElementById('rv-popup-close').addEventListener('click', close);
       document.getElementById('rv-popup-dismiss').addEventListener('click', close);
@@ -1625,7 +1627,7 @@
       document.getElementById('rv-popup-form').addEventListener('submit', function (e) {
         e.preventDefault();
         var email = document.getElementById('rv-popup-email').value.trim();
-        if (!email || !email.includes('@')) {
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
           document.getElementById('rv-popup-email').focus();
           return;
         }
