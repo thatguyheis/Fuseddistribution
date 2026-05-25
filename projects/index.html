@@ -1740,10 +1740,12 @@
       var GROUP_ID = '188458016342804399';
 
       var STORAGE_KEY = 'ts_popup_dismissed';
+      var SUBSCRIBED_KEY = 'ts_popup_subscribed';
       var DELAY_MS = 30000;
 
       function isDismissed() {
         try {
+          if (localStorage.getItem(SUBSCRIBED_KEY) === '1') return true;
           var ts = localStorage.getItem(STORAGE_KEY);
           if (!ts) return false;
           return Date.now() - parseInt(ts, 10) < 60 * 60 * 1000;
@@ -1752,6 +1754,10 @@
 
       function dismiss() {
         try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
+      }
+
+      function subscribeForever() {
+        try { localStorage.setItem(SUBSCRIBED_KEY, '1'); } catch (e) {}
       }
 
       function open() {
@@ -1801,7 +1807,7 @@
           document.getElementById('ts-popup-email').focus();
           return;
         }
-        dismiss();
+        subscribeForever();
 
         fetch('https://connect.mailerlite.com/api/subscribers', {
           method: 'POST',
