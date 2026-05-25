@@ -16,6 +16,12 @@
     "books:draft": "node book-factory/scripts/book-factory.mjs draft",
     "books:package": "node book-factory/scripts/book-factory.mjs package",
     "books:status": "node book-factory/scripts/book-factory.mjs status",
-    "test": "node --test book-factory/tests/book-factory.test.mjs"
+    "test": "node --test book-factory/tests/book-factory.test.mjs",
+    "video:parse":    "node video/scripts/parse-script.mjs",
+    "video:audio":    "node video/scripts/generate-audio.mjs",
+    "video:render":   "node video/scripts/render.mjs",
+    "video:feedback": "node video/scripts/feedback.mjs",
+    "video:test":     "cd video && npm test",
+    "video":          "node video/scripts/render.mjs"
   }
 }
