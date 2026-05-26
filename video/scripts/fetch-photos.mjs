@@ -12,6 +12,27 @@ import { get as httpsGet } from 'node:https';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
 
+function loadReelDataQueries(slug) {
+  const reelDataPath = join(videoDir, '..', 'blog', slug, 'reel-data.md');
+  if (!existsSync(reelDataPath)) return {};
+  const md = readFileSync(reelDataPath, 'utf8');
+  const queries = {};
+  const sectionMatch = md.match(/## pexels_queries\n([\s\S]*?)(?=\n##|$)/);
+  if (!sectionMatch) return queries;
+  const lines = sectionMatch[1].split('\n');
+  let currentSegment = null;
+  for (const line of lines) {
+    const segMatch = line.match(/^-\s+segment:\s*(\d+)/);
+    const queryMatch = line.match(/^\s+query:\s*"(.+?)"/);
+    if (segMatch) currentSegment = parseInt(segMatch[1], 10);
+    if (queryMatch && currentSegment !== null) {
+      queries[currentSegment] = queryMatch[1];
+      currentSegment = null;
+    }
+  }
+  return queries;
+}
+
 function segmentKeywords(seg) {
   switch (seg.type) {
     case 'hook':    return extractKeywords(seg.text) + ' business';
@@ -82,10 +103,11 @@ export async function fetchPhotos(slug) {
 
   const photos = {};
   const usedIds = new Set();
+  const reelQueries = loadReelDataQueries(slug);
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
-    const query = encodeURIComponent(segmentKeywords(seg));
+    const query = encodeURIComponent(reelQueries[i] ?? segmentKeywords(seg));
     const url = `https://api.pexels.com/v1/search?query=${query}&orientation=portrait&per_page=15&size=large`;
 
     try {
