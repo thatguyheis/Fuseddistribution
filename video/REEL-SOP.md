@@ -140,7 +140,31 @@ cp blog/<slug>/images/hero.jpg video/public/photos/<slug>/segment-0.jpg
 cp blog/<slug>/images/chart-screenshot.jpg video/public/photos/<slug>/segment-3.jpg
 ```
 
-The photo fetcher skips any segment that already has a file in `public/photos/<slug>/`.
+The photo fetcher skips any segment that already has a valid file (>1 KB) in `public/photos/<slug>/`.
+
+**Pexels rate limits and corrupt files**
+
+Pexels occasionally returns `concurrency_exceeded` as the image body instead of an HTTP error. This writes a ~20-byte file that renders as a black frame. The scripts now detect and skip files under 1 KB automatically — but if a run produces black frames on specific segments, check for corrupt stubs:
+
+```bash
+# Find any suspiciously small segment photos
+find video/public/photos/<slug>/ -name "*.jpg" -size -1k
+
+# Delete corrupt stubs and re-run fetch
+rm video/public/photos/<slug>/segment-N.jpg
+cd video && export $(cat .env | xargs) && node scripts/fetch-photos.mjs --post=<slug>
+```
+
+If rate limits persist across a full run, copy a valid sibling photo as a placeholder and render directly (skipping the full `render.mjs` pipeline which re-fetches every run):
+
+```bash
+# Use a sibling photo as fallback for the corrupt segment
+cp video/public/photos/<slug>/segment-0.jpg video/public/photos/<slug>/segment-N.jpg
+
+# Then render directly without re-fetching
+cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
+  --props='{"slug":"<slug>"}'
+```
 
 ### Step 4 — Render
 ```bash

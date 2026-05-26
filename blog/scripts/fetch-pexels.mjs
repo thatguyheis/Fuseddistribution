@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, createWriteStream, readFileSync } from 'node:fs';
+import { existsSync, mkdirSync, createWriteStream, readFileSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { get as httpsGet } from 'node:https';
@@ -65,7 +65,7 @@ export async function fetchBlogPhotos(slug, queries, orientation = 'landscape') 
 
   for (let i = 0; i < queries.length; i++) {
     const dest = join(imgDir, `pexels-${i}.jpg`);
-    if (existsSync(dest)) {
+    if (existsSync(dest) && statSync(dest).size > 1024) {
       console.log(`  ↷  pexels-${i}.jpg already exists — skipping`);
       results.push({ index: i, file: `pexels-${i}.jpg`, skipped: true });
       continue;
@@ -86,6 +86,12 @@ export async function fetchBlogPhotos(slug, queries, orientation = 'landscape') 
 
       const imgUrl = photo.src.large2x ?? photo.src.large;
       await downloadFile(imgUrl, dest);
+
+      if (statSync(dest).size < 1024) {
+        console.warn(`  ⚠  pexels-${i}.jpg suspiciously small (${statSync(dest).size}B) — likely Pexels rate limit response, skipping`);
+        results.push({ index: i, file: null });
+        continue;
+      }
 
       const attribution = `Photo by ${photo.photographer} on Pexels (${photo.url})`;
       console.log(`  ✓  pexels-${i}.jpg — ${attribution}`);

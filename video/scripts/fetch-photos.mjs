@@ -4,7 +4,7 @@
  * Photos saved to public/photos/<slug>/segment-N.jpg
  * Writes out/<slug>/photos.json with index → staticFile path mapping.
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { get as httpsGet } from 'node:https';
@@ -108,18 +108,37 @@ export async function fetchPhotos(slug) {
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
+    const dest = join(photoDir, `segment-${i}.jpg`);
+
+    // Skip if a valid file already exists (>1 KB — guards against corrupt concurrency_exceeded responses)
+    if (existsSync(dest) && statSync(dest).size > 1024) {
+      photos[i] = `photos/${slug}/segment-${i}.jpg`;
+      console.log(`  ↷  segment-${i}.jpg already exists — skipping`);
+      continue;
+    }
+
     const query = encodeURIComponent(reelQueries[i] ?? segmentKeywords(seg));
     const url = `https://api.pexels.com/v1/search?query=${query}&orientation=portrait&per_page=15&size=large`;
 
     try {
       const data = await fetchJson(url, { Authorization: apiKey });
-      const photo = data.photos?.find(p => !usedIds.has(p.id));
+      if (!data.photos) {
+        console.warn(`  ⚠  segment-${i}: unexpected Pexels response (no photos field) — skipping`);
+        continue;
+      }
+      const photo = data.photos.find(p => !usedIds.has(p.id));
       if (!photo) { console.log(`  ⚠  No unused photo for segment ${i} (${seg.type})`); continue; }
       usedIds.add(photo.id);
 
       const imgUrl = photo.src.large2x ?? photo.src.large;
-      const dest = join(photoDir, `segment-${i}.jpg`);
       await downloadFile(imgUrl, dest);
+
+      // Verify download isn't a corrupt stub (concurrency_exceeded writes ~20 bytes)
+      if (statSync(dest).size < 1024) {
+        console.warn(`  ⚠  segment-${i}.jpg suspiciously small (${statSync(dest).size}B) — likely Pexels rate limit response, skipping`);
+        continue;
+      }
+
       photos[i] = `photos/${slug}/segment-${i}.jpg`;
       console.log(`  ✓ segment-${i}.jpg (${seg.type} — "${photo.alt ?? query}")`);
     } catch (err) {
