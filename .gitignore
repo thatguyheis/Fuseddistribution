@@ -7,6 +7,7 @@ cloudflare-upload/
 !.dev.vars.example
 .env*
 !.env.example
+!video/.env.cron
 
 # photo workflow local/source assets
 photos/.DS_Store
