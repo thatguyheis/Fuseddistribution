@@ -14,7 +14,7 @@
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "Organization", "@id": "https://fuseddistribution.com/#organization", "name": "Fused Distribution", "url": "https://fuseddistribution.com/", "logo": "https://fuseddistribution.com/og-image.png" },
-        { "@type": "WebPage", "@id": "https://fuseddistribution.com/privacy/#webpage", "url": "https://fuseddistribution.com/privacy/", "name": "Privacy Policy", "dateModified": "2026-05-25",
+        { "@type": "WebPage", "@id": "https://fuseddistribution.com/privacy/#webpage", "url": "https://fuseddistribution.com/privacy/", "name": "Privacy Policy", "dateModified": "2026-05-26",
           "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fuseddistribution.com/" },
             { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://fuseddistribution.com/privacy/" }
@@ -127,6 +127,31 @@
 
       li { margin-bottom: 6px; }
 
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 16px;
+        font-size: 0.9rem;
+      }
+
+      th {
+        text-align: left;
+        color: var(--accent);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      td {
+        color: var(--muted);
+        padding: 8px 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+        vertical-align: top;
+        line-height: 1.6;
+      }
+
       .footer {
         text-align: center;
         padding: 20px 32px;
@@ -139,6 +164,8 @@
       @media (max-width: 600px) {
         .content { padding: 32px 24px 40px; }
         .topbar { padding: 16px 20px; }
+        table { font-size: 0.82rem; }
+        th, td { padding: 6px 8px; }
       }
     </style>
   </head>
@@ -151,115 +178,222 @@
 
       <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: May 25, 2026</p>
+        <p class="updated">Last updated: May 26, 2026</p>
 
         <p>
-          This Privacy Policy describes how Fused Direct Distribution ("we", "us", or "our")
-          collects, uses, and handles information you provide when you use this website
-          (fuseddistribution.com), including its sub-pages at /reserve/ and /projects/.
+          This Privacy Policy describes how Fused Direct Distribution ("we", "us", or "our") collects, uses, shares, and protects personal information when you use our website at <a href="https://fuseddistribution.com">fuseddistribution.com</a>, including all sub-pages, contact forms, and email newsletter subscriptions.
+        </p>
+        <p>
+          By using this site or submitting any form, you acknowledge that you have read and understood this policy. If you do not agree with any part of this policy, please do not use this site or submit your information.
         </p>
 
-        <h2>Information We Collect</h2>
-        <p>We only collect information you voluntarily submit through our contact form, which includes:</p>
+        <h2>1. Information We Collect</h2>
+        <p><strong>Information you provide directly:</strong></p>
         <ul>
           <li>Full name</li>
           <li>Company name</li>
           <li>Email address</li>
           <li>Phone number</li>
-          <li>Your message or inquiry</li>
+          <li>Message or inquiry content</li>
         </ul>
-        <p>
-          We do not use cookies, tracking pixels, or third-party analytics tools. We do not
-          collect information passively as you browse this site.
-        </p>
-
-        <h2>How We Use Your Information</h2>
-        <p>Information submitted through our contact form is used solely to:</p>
+        <p><strong>Information collected when you subscribe to a mailing list:</strong></p>
         <ul>
-          <li>Respond to your business inquiry</li>
-          <li>Follow up on sourcing or distribution requests</li>
-          <li>Contact you about the specific service or product you asked about</li>
+          <li>Email address</li>
+          <li>First name (where requested)</li>
+          <li>Subscription source (which form or page you used)</li>
+          <li>Date and time of subscription</li>
+          <li>IP address at time of subscription (collected by MailerLite for fraud and compliance purposes)</li>
         </ul>
-        <p>We do not use contact form submissions for marketing or advertising. If you sign up for one of our mailing lists, that is covered separately in the Email List section below.</p>
-
-        <h2>How Your Information Is Transmitted</h2>
+        <p><strong>Information collected automatically:</strong></p>
         <p>
-          Form submissions are delivered to us by email via
-          <a href="https://resend.com" target="_blank" rel="noopener">Resend</a>,
-          a third-party email delivery service. Your submitted data is transmitted securely
-          over HTTPS and processed by Resend solely for the purpose of delivering it to us.
-          Resend's privacy policy is available at
-          <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a>.
+          We do not use cookies, third-party analytics scripts, or tracking pixels on this website. We do not build behavioral profiles of site visitors. Email newsletters sent through MailerLite may include standard email tracking such as open-rate pixels and link-click tracking. You can disable image loading in your email client to prevent open tracking.
         </p>
 
-        <h2>Email Lists</h2>
-        <p>
-          We run two optional mailing lists: The Silver Report (Fused Reserve) and The Tech Brief (Fused Technology Solutions).
-          You sign up for these separately via forms on the site. We will never add you without your opt-in.
-        </p>
-        <p>What we collect when you sign up:</p>
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
         <ul>
-          <li>Your email address (both lists)</li>
-          <li>Your name (Tech Brief only, used to address your consultation email)</li>
+          <li>To respond to contact form submissions and business inquiries</li>
+          <li>To deliver newsletters and email content you opted into</li>
+          <li>To send the signup offer or lead magnet associated with your subscription</li>
+          <li>To send occasional related updates from the brand you subscribed to</li>
+          <li>To maintain subscriber records and process unsubscribe requests</li>
+          <li>To comply with applicable laws and regulations (including CAN-SPAM and GDPR)</li>
+          <li>To protect against fraud, abuse, and unauthorized use</li>
+        </ul>
+        <p>We do not use contact form data to add you to any mailing list. Newsletter subscribers are only added through explicit opt-in forms.</p>
+
+        <h2>3. Our Mailing Lists</h2>
+        <p>We operate two email newsletters:</p>
+        <ul>
+          <li><strong>The Silver Report</strong> — published under Fused Reserve. Covers silver investing, market updates, and buying guides.</li>
+          <li><strong>The Tech Brief</strong> — published under Fused Technology Solutions. Covers website performance, local SEO, and digital marketing for local businesses.</li>
         </ul>
         <p>
-          We use this information to send you the newsletter you signed up for, deliver your signup offer,
-          and send related updates. We do not use it for anything else.
+          Subscription to either list is entirely optional. You will only be added if you complete a signup form and confirm your intent. We will never add you from a contact form submission, purchase, or any other source without a separate, explicit opt-in.
         </p>
         <p>
-          Your subscriber data is stored on a self-hosted server we operate. It is not sent to third-party
-          marketing platforms. We use
-          <a href="https://resend.com" target="_blank" rel="noopener">Resend</a>
-          to deliver emails.
+          <strong>Unsubscribing:</strong> Every email we send includes a one-click unsubscribe link at the bottom. You may also contact us directly to request removal. We will process all unsubscribe requests within 10 business days. Once removed, your email address is not retained for marketing purposes.
         </p>
         <p>
-          Every email includes an unsubscribe link. You can opt out at any time. We will remove you within
-          10 business days of your request. Once removed, we do not retain your email address and we do
-          not sell or share subscriber data with any third party.
+          <strong>CAN-SPAM compliance:</strong> All commercial emails include our physical mailing address, a clear identification as commercial communication, and a functional unsubscribe mechanism, as required by the US CAN-SPAM Act.
         </p>
         <p>
-          All marketing emails include a physical mailing address as required by US law (CAN-SPAM Act).
-        </p>
-        <h2>Data Retention</h2>
-        <p>
-          We retain contact form inquiry information only as long as necessary to respond to and manage
-          your request. For email list subscribers, we retain your data until you unsubscribe or request
-          deletion. We do not add contact form submissions to our mailing lists.
+          <strong>GDPR compliance (EU/EEA subscribers):</strong> If you are located in the European Union or European Economic Area, we process your email subscription data under the lawful basis of consent. You may withdraw consent at any time by unsubscribing. See Section 9 for your full rights.
         </p>
 
-        <h2>We Do Not Sell Your Data</h2>
+        <h2>4. Third-Party Service Providers</h2>
+        <p>We share your information only with the following service providers, strictly for the purposes described:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>Purpose</th>
+              <th>Data shared</th>
+              <th>Privacy policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://www.mailerlite.com" target="_blank" rel="noopener">MailerLite</a></td>
+              <td>Email newsletter platform — stores subscriber lists, sends newsletters, tracks opens and clicks</td>
+              <td>Email address, name, subscription date, IP address, email engagement data</td>
+              <td><a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank" rel="noopener">mailerlite.com/legal/privacy-policy</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://resend.com" target="_blank" rel="noopener">Resend</a></td>
+              <td>Transactional email delivery — transmits contact form submissions to us and delivers signup confirmation emails</td>
+              <td>Name, email address, phone number, message content (contact forms); email address (transactional confirmations)</td>
+              <td><a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></td>
+              <td>Website hosting, CDN, and DDoS protection — all site traffic passes through Cloudflare's network</td>
+              <td>IP address, request metadata (handled per Cloudflare's service agreement)</td>
+              <td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td>
+            </tr>
+          </tbody>
+        </table>
+
         <p>
-          We do not sell, rent, trade, or share your personal information with any third
-          party for their marketing or commercial purposes.
+          We do not sell, rent, trade, or share your personal information with any other third party for their own marketing or commercial purposes. We do not use data brokers. We do not operate affiliate tracking on this site.
+        </p>
+        <p>
+          Each provider listed above is contractually bound to process data only as directed and in accordance with applicable privacy laws. MailerLite is a registered data processor under GDPR and maintains Standard Contractual Clauses for international data transfers.
         </p>
 
-        <h2>Your Rights</h2>
+        <h2>5. Data Transmission and Security</h2>
         <p>
-          Depending on where you are located, you may have rights to access, correct, or
-          request deletion of personal information we hold about you. To exercise any of
-          these rights, contact us using the form on the
-          <a href="/#contact">main page</a>.
+          All data submitted through this site is transmitted over HTTPS using TLS encryption. We implement standard HTTP security headers including Content Security Policy, X-Frame-Options, and Strict-Transport-Security to protect against common web vulnerabilities.
+        </p>
+        <p>
+          Access to subscriber data is limited to authorized personnel with a business need. No method of electronic transmission or storage is 100% secure. While we take commercially reasonable steps to protect your information, we cannot guarantee absolute security against all possible threats.
+        </p>
+        <p>
+          In the event of a data breach that affects your personal information, we will notify affected individuals and relevant authorities as required by applicable law.
         </p>
 
-        <h2>Security</h2>
+        <h2>6. Data Retention</h2>
+        <ul>
+          <li><strong>Contact form submissions:</strong> Retained only as long as necessary to respond to and close out your inquiry. Typically no longer than 12 months from last contact.</li>
+          <li><strong>Newsletter subscribers:</strong> Retained in MailerLite until you unsubscribe or request deletion. Suppression records (to prevent re-adding unsubscribed addresses) may be retained indefinitely as required by anti-spam regulations.</li>
+          <li><strong>Transactional email logs:</strong> Resend retains delivery logs per their own retention policy. We do not separately archive transactional email content.</li>
+        </ul>
+        <p>You may request deletion of your data at any time. See Section 9 for how to submit a request.</p>
+
+        <h2>7. Cookies and Tracking</h2>
         <p>
-          All traffic to this site is encrypted via HTTPS. We implement standard security
-          measures including HTTP security headers to protect against common web
-          vulnerabilities. No method of transmission over the internet is 100% secure,
-          and we cannot guarantee absolute security.
+          This website does not use cookies, localStorage tracking, or third-party analytics scripts (such as Google Analytics, Facebook Pixel, or similar). No tracking data is collected as you browse the site.
+        </p>
+        <p>
+          Email newsletters sent via MailerLite may include a tracking pixel (a small transparent image) that records whether the email was opened, and may track clicks on links within the email. This is standard practice for email marketing and helps us understand engagement with our content. If you do not want this tracked, you can disable automatic image loading in your email client, or unsubscribe from the newsletter.
         </p>
 
-        <h2>Changes to This Policy</h2>
+        <h2>8. Children's Privacy</h2>
         <p>
-          We may update this policy from time to time. Changes will be reflected by the
-          "Last updated" date at the top of this page. Continued use of the site after
-          changes constitutes acceptance of the updated policy.
+          This website is not directed at children under the age of 13. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and believe your child has submitted information to us, please contact us immediately using the contact form at <a href="/#contact">fuseddistribution.com/#contact</a> and we will delete it promptly.
         </p>
 
-        <h2>Contact</h2>
+        <h2>9. Your Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+
+        <p><strong>All users:</strong></p>
+        <ul>
+          <li>Right to unsubscribe from any mailing list at any time</li>
+          <li>Right to request access to the personal information we hold about you</li>
+          <li>Right to request correction of inaccurate information</li>
+          <li>Right to request deletion of your personal information</li>
+        </ul>
+
+        <p><strong>California residents (CCPA):</strong></p>
+        <ul>
+          <li>Right to know what personal information is collected, used, disclosed, or sold</li>
+          <li>Right to delete personal information we have collected (subject to certain exceptions)</li>
+          <li>Right to opt out of the sale of personal information — <strong>we do not sell personal information</strong></li>
+          <li>Right to non-discrimination for exercising your privacy rights</li>
+        </ul>
+
+        <p><strong>EU/EEA residents (GDPR):</strong></p>
+        <ul>
+          <li>Right to access your personal data</li>
+          <li>Right to rectification of inaccurate data</li>
+          <li>Right to erasure ("right to be forgotten")</li>
+          <li>Right to restriction of processing</li>
+          <li>Right to data portability</li>
+          <li>Right to object to processing based on legitimate interests</li>
+          <li>Right to withdraw consent at any time (where processing is based on consent)</li>
+          <li>Right to lodge a complaint with your local supervisory authority</li>
+        </ul>
+
         <p>
-          For questions about this policy or how we handle your information, use the contact
-          form at <a href="/#contact">fuseddistribution.com/#contact</a>.
+          To exercise any of these rights, contact us using the form at <a href="/#contact">fuseddistribution.com/#contact</a>. We will respond within 30 days. We may need to verify your identity before fulfilling a request.
+        </p>
+
+        <h2>10. Do Not Track</h2>
+        <p>
+          Some browsers include a "Do Not Track" (DNT) signal. Because we do not engage in behavioral tracking on this website, we do not need to respond to DNT signals — no tracking occurs regardless of whether DNT is enabled.
+        </p>
+
+        <h2>11. International Data Transfers</h2>
+        <p>
+          We are based in the United States. If you are accessing this site from the European Union, European Economic Area, United Kingdom, or other regions with privacy laws that differ from US law, please be aware that your information will be transferred to and processed in the United States.
+        </p>
+        <p>
+          For EU/EEA subscribers, MailerLite (our email platform) is incorporated in the EU and maintains Standard Contractual Clauses and GDPR-compliant data processing agreements. Resend operates under a Data Processing Agreement compliant with applicable data transfer frameworks.
+        </p>
+
+        <h2>12. Third-Party Links</h2>
+        <p>
+          This website may contain links to third-party websites, including those operated by clients, partners, or referenced resources. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policy of any third-party site you visit.
+        </p>
+
+        <h2>13. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, Fused Direct Distribution shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to the collection, use, or disclosure of your personal information, including but not limited to unauthorized access to our systems by third parties. Our total liability in connection with privacy-related matters shall not exceed the amount paid by you to us in the twelve months preceding the claim, or $100, whichever is greater.
+        </p>
+
+        <h2>14. Governing Law</h2>
+        <p>
+          This Privacy Policy is governed by the laws of the United States and the state in which Fused Direct Distribution is incorporated, without regard to its conflict of law provisions. Any disputes arising under this policy shall be resolved in the courts of competent jurisdiction in that state, and you consent to personal jurisdiction in those courts.
+        </p>
+
+        <h2>15. Changes to This Policy</h2>
+        <p>
+          We may update this policy from time to time to reflect changes in our practices, services, or legal requirements. Material changes will be reflected by an updated "Last updated" date at the top of this page. For significant changes, we may also notify active email subscribers directly. Continued use of this site or our email lists after any changes constitutes your acceptance of the updated policy.
+        </p>
+        <p>
+          We encourage you to review this page periodically.
+        </p>
+
+        <h2>16. Contact Us</h2>
+        <p>
+          For questions about this policy, to exercise your data rights, or to report a privacy concern, please contact us using the form at:
+        </p>
+        <p>
+          <a href="/#contact">fuseddistribution.com/#contact</a>
+        </p>
+        <p>
+          We will acknowledge your request within 5 business days and provide a full response within 30 days.
         </p>
       </div>
 
