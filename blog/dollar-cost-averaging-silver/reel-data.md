@@ -10,17 +10,6 @@ hook: Stop trying to time the silver market. The investors who consistently buil
 - text: "Silver Starts at $30–$50/Month"
   narration: You can start building a physical silver position for 30 to 50 dollars a month, making dollar cost averaging practical at any budget level. No large upfront commitment, no need to time anything — just a fixed amount on a regular schedule.
 
-## chart
-title: Silver Spot Price & Monthly DCA Entry Points — 2020 to 2025 (Illustrative)
-bars:
-  - "2020 (~$17)": 17
-  - "2021 Peak (~$29)": 29
-  - "2022 (~$22)": 22
-  - "2023 (~$24)": 24
-  - "2024 (~$28)": 28
-  - "2025 (~$32)": 32
-narration: The silver price chart from 2020 to 2025 shows major swings in both directions. A monthly DCA buyer hits some entries near peaks and some near valleys, but the average cost across all those purchases smooths out well below the final price — showing the power of consistency over timing.
-
 ## cta
 text: See Fused Reserve Plans — link in comments.
 narration: See how Fused Reserve makes monthly silver accumulation automatic — link in comments.

@@ -10,16 +10,6 @@ hook: One number tells you when silver is cheap relative to gold — and right n
 - text: "125:1 — All-Time High in March 2020"
   narration: The all-time modern peak came in March 2020 when COVID caused silver to collapse alongside industrial metals while gold held up. Investors who saw that 125 to 1 extreme and bought silver over the following months rode a major recovery back toward the long-term average.
 
-## chart
-title: Gold-to-Silver Ratio at Key Historical Moments
-bars:
-  - "1980": 17
-  - "1991": 100
-  - "2020": 125
-  - "2024": 83
-  - "May '26": 60
-narration: The ratio swung from an extreme low of 17 in 1980 to an all-time high of 125 in 2020, then compressed back toward the average by 2026. Investors who recognized the 2020 extreme built significant positions as silver recovered. The current 60 to 1 reading reflects fair relative value.
-
 ## cta
 text: See Fused Reserve Plans — link in comments.
 narration: Build your silver position on a consistent monthly schedule regardless of where the ratio sits — link in comments.
