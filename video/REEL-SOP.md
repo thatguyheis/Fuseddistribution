@@ -59,7 +59,8 @@ Before writing a single line of reel-script.md, map out the segments on paper:
 2. If reel-data.md has a `## chart`, include a Chart segment — required unless explicitly absent.
 3. Group related numbers together. Never split a stat across two segments — the number and its label belong on the same slide.
 4. Aim for 4–6 body segments total. If you have too many stats, merge two weaker ones into one Overlay.
-5. Total duration target: 45–55 seconds.
+5. **Set segment duration from narration length, not the other way around.** Read the narration aloud mentally and count seconds. A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
+6. Total duration target: 60–90 seconds. Maximum: 2 minutes (120s). There is no minimum — do not rush content to hit a short target.
 
 ### Step 3 — Write the reel script
 Create `blog/<slug>/reel-script.md`:
@@ -105,15 +106,30 @@ Narration: [One sentence driving to the link]
 [Notes on which blog images to use for which segments]
 ```
 
-**Critical rules for Text: fields — violations cause visual bugs:**
+**Critical rules — violations cause visual or audio bugs:**
+
+**Text: fields**
 - NEVER wrap Text values in quotes. Write: `Text: 42% MORE REVENUE` not `Text: "42% MORE REVENUE"`
 - Stat label (the words after the number) must be 5 words or fewer. Long labels wrap badly on screen.
-- If you have a stat like `"35% More Revenue for Businesses That Respond to Reviews"` — shorten the label: `35% MORE REVENUE FROM RESPONDING`
+- If a stat is wordy — `"35% More Revenue for Businesses That Respond to Reviews"` — shorten the label: `35% MORE REVENUE FROM RESPONDING`
 - Chart is REQUIRED if reel-data.md has a `## chart` section. Do not omit it.
 - Stat segments auto-animate the number (count-up effect). Use them for all percentage/number stats.
 
+**Timing and sync — subtitles and voice must stay aligned**
+- Segment end time must be ≥ narration end time. The narration plays inside the segment window — if the segment ends before narration finishes, audio gets cut off and subtitles desync.
+- Rule of thumb: 1 sentence ≈ 4–5 seconds at Zoe's pace. Count sentences, multiply, add 2s buffer.
+  - 2 sentences → 10–12s minimum
+  - 3 sentences → 14–17s minimum
+  - 4 sentences → 18–22s minimum
+- Chart segments have no voice narration timed to bars — allow 13–18s for bar animation + narration.
+- HOOK is spoken text only (no graphic animation delay) — 3–5s is fine for one punchy sentence.
+- CTA narration is typically 1 sentence — allow 6–8s minimum.
+- When in doubt, add 3s to your estimate. A reel that breathes is better than one that cuts off.
+
+**Total duration**
+- Target: 60–90 seconds. Maximum: 2 minutes. No hard minimum — never rush content.
+
 Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`. Mix and match.
-Keep total duration under 60 seconds — 45–55s is the sweet spot.
 
 ### Step 3 — Place blog images (optional but recommended)
 If the blog post has strong images, use them instead of Pexels stock:
@@ -141,13 +157,14 @@ Output: `video/out/<slug>/<slug>.mp4`
 ### Step 5 — Review checklist
 - [ ] Numbers animate and count up correctly
 - [ ] Chart bars fully visible and centered (not cut off)
-- [ ] Subtitles match what Zoe is saying
-- [ ] Narration timing fits each segment — nothing rushed or trailing off
+- [ ] Subtitles match what Zoe is saying and stay in sync throughout
+- [ ] No narration gets cut off — audio completes before the segment ends
+- [ ] No segment feels rushed — voice, subtitle, and slide all finish together
 - [ ] Background photos don't overpower the text
 - [ ] CTA glow is visible and readable
 - [ ] Blog data matches reel data exactly
 
-If timing feels off, adjust the `(Xs–Ys)` timestamps in `reel-script.md` and re-render.
+**If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. Re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
 
 ### Step 6 — Post
 Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels, TikTok, or Facebook Reels.
