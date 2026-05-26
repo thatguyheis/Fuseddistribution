@@ -1,0 +1,81 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sm-glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sm-glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <ellipse cx="600" cy="315" rx="520" ry="340" fill="url(#sm-glow-c)"/>
+  <ellipse cx="0" cy="0" rx="440" ry="310" fill="url(#sm-glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-opacity="0.11" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="148" cy="68" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="388" cy="44" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="762" cy="38" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1058" cy="112" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="224" cy="508" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="966" cy="546" r="1" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="632" cy="576" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1092" cy="374" r="1" fill="#4dffb8" opacity="0.15"/>
+  <circle cx="86" cy="292" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="462" cy="586" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="310" cy="150" r="1" fill="#58d6ff" opacity="0.18"/>
+
+  <!-- Left stat cards -->
+  <rect x="42" y="165" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="178" y="221" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="48" fill="#58d6ff" letter-spacing="1">1.24B oz</text>
+  <text x="178" y="258" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">2023 SILVER DEMAND</text>
+  <text x="178" y="275" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.6)" letter-spacing="1">ALL-TIME RECORD</text>
+
+  <rect x="42" y="315" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(77,255,184,0.22)" stroke-width="1"/>
+  <text x="178" y="372" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#4dffb8" letter-spacing="2">200M</text>
+  <text x="178" y="408" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">OZ SUPPLY DEFICIT</text>
+
+  <!-- Center content -->
+  <text x="600" y="205" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="22" fill="rgba(88,214,255,0.55)" letter-spacing="8">SILVER MARKET</text>
+  <text x="600" y="260" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="68" fill="#ecf8fb" letter-spacing="4">2026</text>
+
+  <!-- Mini demand bar chart -->
+  <rect x="390" y="288" width="220" height="6" rx="3" fill="#58d6ff" opacity="0.85"/>
+  <text x="390" y="306" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#afc6cf">Industrial</text>
+  <text x="602" y="306" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" font-weight="bold">58%</text>
+
+  <rect x="390" y="318" width="95" height="6" rx="3" fill="#58d6ff" opacity="0.62"/>
+  <text x="390" y="336" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#afc6cf">Investment</text>
+  <text x="602" y="336" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" font-weight="bold">22%</text>
+
+  <rect x="390" y="348" width="61" height="6" rx="3" fill="#4dffb8" opacity="0.7"/>
+  <text x="390" y="366" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#afc6cf">Jewelry</text>
+  <text x="602" y="366" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#4dffb8" font-weight="bold">14%</text>
+
+  <text x="496" y="400" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.4)" letter-spacing="1">DEMAND BY SECTOR</text>
+
+  <!-- Right stat cards -->
+  <rect x="886" y="165" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="1022" y="221" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#58d6ff" letter-spacing="2">58%</text>
+  <text x="1022" y="258" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">INDUSTRIAL DEMAND</text>
+  <text x="1022" y="275" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.6)" letter-spacing="1">OF TOTAL CONSUMPTION</text>
+
+  <rect x="886" y="315" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(77,255,184,0.22)" stroke-width="1"/>
+  <text x="1022" y="372" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="48" fill="#4dffb8" letter-spacing="1">140M oz</text>
+  <text x="1022" y="408" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">SOLAR SECTOR 2023</text>
+</svg>

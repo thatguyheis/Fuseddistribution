@@ -1,5 +1,25 @@
 [
   {
+    "slug": "instagram-local-business",
+    "title": "How to Use Instagram to Get Local Customers",
+    "date": "2026-05-26",
+    "excerpt": "Instagram has 2 billion users and 90% follow at least one business. Here is how local businesses set up their profile, post the right content, and turn followers into paying customers.",
+    "tags": ["Social Media", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/instagram-local-business/hero.svg",
+    "imageAlt": "Instagram for local business stat cards showing 2B+ monthly active users, 90% follow a business, 4x reach with daily posts, and 38% higher reach with Reels"
+  },
+  {
+    "slug": "silver-market-outlook-2026",
+    "title": "The Silver Market in 2026: What Buyers Should Know",
+    "date": "2026-05-26",
+    "excerpt": "Silver demand hit 1.24 billion ounces in 2023 and industrial use now drives 58% of it. Here is what is pushing the market, where supply stands, and what it means for buyers in 2026.",
+    "tags": ["Silver", "Market"],
+    "author": "Nick",
+    "image": "/blog/silver-market-outlook-2026/hero.svg",
+    "imageAlt": "Silver market data cards showing 1.24 billion ounce demand record, 58% industrial share, 200 million ounce supply deficit, and solar sector consuming 140 million ounces annually"
+  },
+  {
     "slug": "email-marketing-local-business",
     "title": "How to Build an Email List That Actually Brings Customers Back",
     "date": "2026-05-26",

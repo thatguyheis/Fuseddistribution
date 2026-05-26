@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ig-glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ig-glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <ellipse cx="600" cy="315" rx="520" ry="340" fill="url(#ig-glow-c)"/>
+  <ellipse cx="0" cy="0" rx="420" ry="300" fill="url(#ig-glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-opacity="0.11" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="128" cy="72" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="362" cy="48" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="748" cy="40" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1068" cy="108" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="210" cy="510" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="970" cy="542" r="1" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="628" cy="572" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1088" cy="370" r="1" fill="#4dffb8" opacity="0.15"/>
+  <circle cx="82" cy="286" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="458" cy="582" r="1" fill="#4dffb8" opacity="0.28"/>
+
+  <!-- Left stat cards -->
+  <rect x="42" y="175" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="178" y="232" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#58d6ff" letter-spacing="2">2B+</text>
+  <text x="178" y="270" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">MONTHLY ACTIVE USERS</text>
+
+  <rect x="42" y="325" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="178" y="382" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#4dffb8" letter-spacing="2">90%</text>
+  <text x="178" y="420" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">FOLLOW A BUSINESS</text>
+
+  <!-- Center content -->
+  <text x="600" y="210" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="22" fill="rgba(88,214,255,0.55)" letter-spacing="8">INSTAGRAM FOR</text>
+  <text x="600" y="268" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="56" fill="#ecf8fb" letter-spacing="4">LOCAL BUSINESS</text>
+
+  <!-- Phone outline -->
+  <rect x="548" y="292" width="104" height="178" rx="18" fill="rgba(88,214,255,0.04)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="560" y="308" width="80" height="140" rx="4" fill="rgba(88,214,255,0.03)"/>
+  <!-- Notch -->
+  <rect x="578" y="299" width="44" height="5" rx="2.5" fill="#58d6ff" fill-opacity="0.28"/>
+  <!-- Home button -->
+  <circle cx="600" cy="455" r="7" fill="none" stroke="#58d6ff" stroke-width="1.2" stroke-opacity="0.45"/>
+
+  <!-- Phone screen engagement icons -->
+  <text x="600" y="358" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="26" fill="#4dffb8" opacity="0.9">4x</text>
+  <text x="600" y="378" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" fill="#afc6cf" letter-spacing="1">ENGAGEMENT</text>
+  <!-- Heart icon on screen -->
+  <text x="572" y="410" font-family="Trebuchet MS,sans-serif" font-size="14" fill="#58d6ff" opacity="0.6">&#9825;</text>
+  <text x="594" y="410" font-family="Trebuchet MS,sans-serif" font-size="14" fill="#4dffb8" opacity="0.6">&#9992;</text>
+  <text x="614" y="410" font-family="Trebuchet MS,sans-serif" font-size="14" fill="#58d6ff" opacity="0.6">&#9829;</text>
+
+  <!-- Right stat cards -->
+  <rect x="886" y="175" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="1022" y="232" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#58d6ff" letter-spacing="2">4x</text>
+  <text x="1022" y="270" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">MORE REACH: DAILY POSTS</text>
+
+  <rect x="886" y="325" width="272" height="118" rx="16" fill="rgba(11,24,32,0.88)" stroke="rgba(88,214,255,0.24)" stroke-width="1"/>
+  <text x="1022" y="382" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" fill="#4dffb8" letter-spacing="2">38%</text>
+  <text x="1022" y="420" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#afc6cf" letter-spacing="2">HIGHER REACH WITH REELS</text>
+</svg>
