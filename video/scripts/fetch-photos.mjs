@@ -75,6 +75,7 @@ function downloadFile(url, dest) {
     const follow = (u) => {
       httpsGet(u, res => {
         if (res.statusCode === 301 || res.statusCode === 302) {
+          res.destroy();
           follow(res.headers.location);
           return;
         }
