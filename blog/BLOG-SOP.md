@@ -197,10 +197,12 @@ topic: silver|tech
 hook: One punchy line — stat or bold claim from post opening
 
 ## stats
-- text: "Stat as shown in the post (one line)"
+- text: 42% Label In 5 Words Max
   narration: 2–4 sentences. Match blog wording closely.
-- text: "Second stat"
+- text: 73% Short Label Here
   narration: 2–3 sentences.
+
+**Rules for stat text:** No quotes. Number first, then a label of 5 words or fewer. The reel renderer splits on the number — long labels wrap badly on screen.
 
 ## chart
 title: Chart heading — copy from blog chart exactly

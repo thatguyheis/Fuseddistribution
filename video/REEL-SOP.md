@@ -51,7 +51,17 @@ The reel script maps directly from reel-data.md sections:
 - `## cta` → CTA segment
 - `## pexels_queries` → passed to fetch-photos.mjs automatically
 
-### Step 2 — Write the reel script
+### Step 2 — Plan segment layout before writing
+
+Before writing a single line of reel-script.md, map out the segments on paper:
+
+1. Count the stats from reel-data.md. Each stat = one Stat segment.
+2. If reel-data.md has a `## chart`, include a Chart segment — required unless explicitly absent.
+3. Group related numbers together. Never split a stat across two segments — the number and its label belong on the same slide.
+4. Aim for 4–6 body segments total. If you have too many stats, merge two weaker ones into one Overlay.
+5. Total duration target: 45–55 seconds.
+
+### Step 3 — Write the reel script
 Create `blog/<slug>/reel-script.md`:
 
 ```markdown
@@ -68,25 +78,25 @@ Target length: XX seconds
 
 ## BODY
 
-**Overlay 1** (3–13s)
-Text: [Stat from the blog — keep to one line]
+**Stat 1** (3–13s)
+Text: 42% LABEL IN 5 WORDS OR FEWER
 Narration: [2–4 sentences. Match what the blog says verbatim or close to it.]
 
 **Chart** (13–26s)
-Title: [Chart heading — copy from the blog chart]
+Title: Chart Heading Here
 Bars:
 - Label: XX%
 - Label: XX%
 Narration: [Explain the data the same way the blog does]
 
-**Overlay 2** (26–36s)
-Text: [Second key stat or claim]
+**Overlay 1** (26–36s)
+Text: SHORT PUNCHY CLAIM HERE
 Narration: [2–3 sentences]
 
 ---
 
 ## CTA (46–52s)
-Text: [Call to action]
+Text: Full breakdown — link in comments.
 Narration: [One sentence driving to the link]
 
 ---
@@ -94,6 +104,13 @@ Narration: [One sentence driving to the link]
 ## VISUAL DIRECTION
 [Notes on which blog images to use for which segments]
 ```
+
+**Critical rules for Text: fields — violations cause visual bugs:**
+- NEVER wrap Text values in quotes. Write: `Text: 42% MORE REVENUE` not `Text: "42% MORE REVENUE"`
+- Stat label (the words after the number) must be 5 words or fewer. Long labels wrap badly on screen.
+- If you have a stat like `"35% More Revenue for Businesses That Respond to Reviews"` — shorten the label: `35% MORE REVENUE FROM RESPONDING`
+- Chart is REQUIRED if reel-data.md has a `## chart` section. Do not omit it.
+- Stat segments auto-animate the number (count-up effect). Use them for all percentage/number stats.
 
 Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`. Mix and match.
 Keep total duration under 60 seconds — 45–55s is the sweet spot.

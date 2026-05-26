@@ -67,9 +67,10 @@ export function parseReelScript(md, slug) {
         const textM = body.match(/Text:\s*(.+)/);
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
         const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
+        const stripQuotes = (s) => s ? s.replace(/^["']+|["']+$/g, '').trim() : s;
         segments.push({
           type, startSec, endSec,
-          text: textM ? textM[1].trim() : '',
+          text: textM ? stripQuotes(textM[1].trim()) : '',
           narration: narrM ? cleanNarr(narrM[1]) : null,
         });
       }
@@ -86,7 +87,7 @@ export function parseReelScript(md, slug) {
       type: 'cta',
       startSec: parseInt(ctaM[1], 10),
       endSec: parseInt(ctaM[2], 10),
-      text: textM ? textM[1].trim() : body.trim(),
+      text: textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim(),
       narration: narrM ? narrM[1].trim() : null,
     });
   }
