@@ -190,10 +190,27 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 **If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. Re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
 
-### Step 6 — Post
-Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels, TikTok, or Facebook Reels.
-Copy the `## FACEBOOK CAPTION` and `## HASHTAGS` from the reel script.
-Add the blog post URL in the first comment.
+### Step 6 — Commit, deploy, and post
+
+**Commit reel files:**
+```bash
+git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md video/out/<slug>/
+git commit -m "feat(reel): [Post Title]"
+git push origin main
+```
+
+**Deploy blog to Cloudflare** (push does NOT auto-deploy):
+```bash
+npx wrangler deploy
+```
+
+Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before posting.
+
+**Post the reel manually:**
+- Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
+- Caption: copy `## caption` from `blog/<slug>/reel-data.md`
+- Hashtags: copy `## hashtags` from `blog/<slug>/reel-data.md`
+- First comment: paste the live blog URL
 
 ### Step 7 — Log performance
 After 48–72 hours, log results:

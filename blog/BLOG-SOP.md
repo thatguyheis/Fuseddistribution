@@ -236,10 +236,25 @@ Rules:
 
 ---
 
-## 12. Publish to GitHub
+## 12. Publish
 
+### Step 1 — Commit and push to GitHub
 ```bash
-git add blog/posts.json blog/[slug]/
+git add blog/posts.json blog/[slug]/ blog/topic-history.md
 git commit -m "feat(blog): [Post Title]"
 git push origin main
 ```
+
+### Step 2 — Deploy to Cloudflare
+Push does NOT auto-deploy. Run wrangler after every push:
+```bash
+npx wrangler deploy
+```
+
+Verify the post is live at `https://fuseddistribution.com/blog/[slug]/` before posting to social media.
+
+### Step 3 — Post to social media
+- Copy `## caption` from `blog/[slug]/reel-data.md` for the Facebook/Instagram caption
+- Copy `## hashtags` from `blog/[slug]/reel-data.md`
+- Upload `video/out/[slug]/[slug].mp4` as the Reel (done manually)
+- Add the blog post URL as the first comment
