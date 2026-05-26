@@ -9,7 +9,7 @@
 - [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
 - [ ] Add entry to `posts.json` (top of array)
 - [ ] Create `blog/[slug]/` folder
-- [ ] Write `index.html` — HTML from BLOG-REF.md §1, CSS from BLOG-REF.md §2, fill all [SLOTS]
+- [ ] Write `index.html` — HTML from BLOG-REF.md "Section 1", CSS from BLOG-REF.md "Section 2", fill all [SLOTS]
 - [ ] Write `hero.svg` — design rules in §7
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
@@ -69,7 +69,7 @@ Silver posts with coin photos: add `images/coins-spread.jpg` etc. alongside Pexe
 
 ## 4. HTML Template
 
-Copy the full template from **BLOG-REF.md §1** and fill every `[SLOT]`:
+Copy the full template from **BLOG-REF.md "Section 1"** and fill every `[SLOT]`:
 
 | Slot | Fill with |
 |------|-----------|
@@ -89,7 +89,7 @@ Copy the full template from **BLOG-REF.md §1** and fill every `[SLOT]`:
 
 ## 5. CSS
 
-Copy the full CSS block from **BLOG-REF.md §2** verbatim into `<style>`. Post-specific styles (`.coin-grid`, `.math-box`, `.watch-list`) go at the bottom before `</style>`.
+Copy the full CSS block from **BLOG-REF.md "Section 2"** verbatim into `<style>`. Post-specific styles (`.coin-grid`, `.math-box`, `.watch-list`) go at the bottom before `</style>`.
 
 ---
 
@@ -165,7 +165,7 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 
 ## 9. Writing Style
 
-**Never use em dashes (—).** Rewrite with comma or period.
+**Never use em dashes (—) in blog post body content.** Rewrite with comma or period.
 
 **Banned words:** leverage, utilize, streamline, robust, seamlessly, cutting-edge, game-changing, dive in, delve into, it's important to note, in today's digital landscape, first and foremost, in conclusion, unlock, empower, harness, elevate, transform, comprehensive, holistic, synergy, ecosystem.
 
