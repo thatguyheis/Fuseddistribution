@@ -43,9 +43,11 @@ Steps:
 6. Append new entries to blog/topic-history.md under the correct section:
    | YYYY-MM-DD | [slug] | [Broad Category] | [one-line angle description] |
 
-7. Git commit (no push — requires explicit permission):
+7. Git commit, push, and deploy:
    git add blog/ video/out/ blog/topic-history.md
-   git commit -m "feat: [tech-title] + [silver-title] + reels"' \
+   git commit -m "feat: [tech-title] + [silver-title] + reels"
+   git push origin main
+   npx wrangler deploy' \
   --allowedTools "Bash,Read,Write,Edit,Glob,Grep" \
   >> "$LOG_FILE" 2>&1
 
