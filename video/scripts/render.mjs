@@ -2,6 +2,7 @@ import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchPhotos } from './fetch-photos.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -31,14 +32,18 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3') {
   // 2. Audio
   run(`node scripts/generate-audio.mjs --post=${slug}`);
 
-  // 3. Music check
+  // 3. Photos (requires PEXELS_API_KEY env var; skips silently if not set)
+  console.log('\n→ fetch-photos.mjs');
+  const photos = await fetchPhotos(slug);
+
+  // 4. Music check
   const musicPath = join(videoDir, 'public', 'music', musicTrack);
   if (!existsSync(musicPath)) {
     console.warn(`\n⚠  Music not found: public/music/${musicTrack}`);
     console.warn('   See public/music/README.md. Rendering without music.\n');
   }
 
-  // 4. Write render-meta (for performance feedback)
+  // 5. Write render-meta (for performance feedback)
   const hookText = script.segments.find(s => s.type === 'hook')?.text ?? '';
   const meta = {
     slug, renderedAt: new Date().toISOString(),
@@ -46,15 +51,16 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3') {
     segmentCount: script.segments.length,
     totalDuration: script.totalDuration,
     musicTrack,
+    photosUsed: Object.keys(photos).length,
   };
   writeFileSync(join(videoDir, 'out', slug, 'render-meta.json'), JSON.stringify(meta, null, 2));
 
-  // 5. Render — write props to file to avoid shell escaping issues
+  // 6. Render — write props to file to avoid shell escaping issues
   const outDir = join(videoDir, 'out', slug);
   mkdirSync(outDir, { recursive: true });
   const outFile = join(outDir, `${slug}.mp4`);
   const propsFile = join(outDir, 'render-props.json');
-  writeFileSync(propsFile, JSON.stringify({ script, musicTrack }));
+  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, photos }));
   run(`npx remotion render src/Root.tsx BlogReel --props="${propsFile}" "${outFile}"`);
 
   console.log(`\n✓ Render complete: ${outFile}\n`);

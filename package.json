@@ -20,6 +20,7 @@
     "video:parse":    "node video/scripts/parse-script.mjs",
     "video:audio":    "node video/scripts/generate-audio.mjs",
     "video:render":   "node video/scripts/render.mjs",
+    "video:photos":   "node video/scripts/fetch-photos.mjs",
     "video:feedback": "node video/scripts/feedback.mjs",
     "video:test":     "cd video && npm test",
     "video":          "node video/scripts/render.mjs"

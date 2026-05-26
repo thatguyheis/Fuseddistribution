@@ -1,10 +1,16 @@
-import { MsEdgeTTS, OUTPUT_FORMAT } from 'msedge-tts';
-import { readFileSync, mkdirSync, existsSync, createWriteStream } from 'node:fs';
+import { readFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { pipeline } from 'node:stream/promises';
+import { execSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const VOICE = 'Zoe (Premium)';
+
+function sayToM4a(text, outPath) {
+  const escaped = text.replace(/'/g, "'\\''");
+  execSync(`say -v "${VOICE}" --data-format=aac --file-format=m4af -o "${outPath}" '${escaped}'`);
+}
 
 async function generateAudio(slug) {
   const scriptPath = join(__dirname, '../out', slug, 'script.json');
@@ -17,20 +23,16 @@ async function generateAudio(slug) {
   const audioDir = join(__dirname, '../public/audio', slug);
   mkdirSync(audioDir, { recursive: true });
 
-  const tts = new MsEdgeTTS();
-  await tts.setMetadata('en-US-GuyNeural', OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
-
   let generated = 0;
   let skipped = 0;
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
     if (!seg.narration) { skipped++; continue; }
-    const outPath = join(audioDir, `segment-${i}.mp3`);
+    const outPath = join(audioDir, `segment-${i}.m4a`);
     try {
-      const audioStream = tts.toStream(seg.narration);
-      await pipeline(audioStream, createWriteStream(outPath));
-      console.log(`  ✓ segment-${i}.mp3 (${seg.type})`);
+      sayToM4a(seg.narration, outPath);
+      console.log(`  ✓ segment-${i}.m4a (${seg.type})`);
       generated++;
     } catch (err) {
       console.error(`  ✗ segment-${i} failed: ${err.message}`);
