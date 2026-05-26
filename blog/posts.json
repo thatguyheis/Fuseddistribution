@@ -1,5 +1,25 @@
 [
   {
+    "slug": "email-marketing-local-business",
+    "title": "How to Build an Email List That Actually Brings Customers Back",
+    "date": "2026-05-26",
+    "excerpt": "Email marketing returns $42 for every $1 spent. Here is how local businesses build a list, set up simple automations, and turn past customers into repeat buyers.",
+    "tags": ["Marketing", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/email-marketing-local-business/hero.svg",
+    "imageAlt": "Email marketing ROI dashboard showing $42 return per dollar spent, 25% average open rate, and 40x advantage over social media for customer acquisition"
+  },
+  {
+    "slug": "silver-history-as-money",
+    "title": "Silver's 4,000-Year Run as Money",
+    "date": "2026-05-26",
+    "excerpt": "Silver has served as money for over 4,000 years, from Lydian coins to the US silver standard. Here is the history behind the metal and what it means for buyers today.",
+    "tags": ["Silver", "History"],
+    "author": "Nick",
+    "image": "/blog/silver-history-as-money/hero.svg",
+    "imageAlt": "Four data cards showing key facts in silver's monetary history: first coins around 600 BC in Lydia, Roman denarius debasement from 95 to 5 percent silver, US silver standard from 1878 to 1964, and pre-1965 US coins containing 90 percent silver"
+  },
+  {
     "slug": "silver-storage-guide",
     "title": "How to Store Silver Without Losing It",
     "date": "2026-05-22",
