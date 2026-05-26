@@ -38,6 +38,7 @@ function downloadFile(url, dest) {
     const follow = (u) => {
       httpsGet(u, res => {
         if (res.statusCode === 301 || res.statusCode === 302) {
+          res.destroy();
           follow(res.headers.location);
           return;
         }
@@ -78,6 +79,7 @@ export async function fetchBlogPhotos(slug, queries, orientation = 'landscape') 
       const photo = data.photos?.find(p => !usedIds.has(p.id));
       if (!photo) {
         console.warn(`  ⚠  No unused photo for: "${queries[i]}"`);
+        results.push({ index: i, file: null });
         continue;
       }
       usedIds.add(photo.id);
