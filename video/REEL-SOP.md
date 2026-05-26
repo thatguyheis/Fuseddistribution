@@ -38,13 +38,18 @@ Add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3` a
 
 ## Per-Post Workflow
 
-### Step 1 — Gather blog graphics
-Before writing the reel script, open the blog post and collect:
-- **Charts and data graphics** — the blog already has SVG charts with the exact data. Mirror these in the reel script as `Chart` segments. Use the same labels, values, and title.
-- **Hero images or photos** — if the blog has a strong header image, copy it to `video/public/photos/<slug>/segment-N.jpg` to use it as a background on the hook or a key segment. This takes priority over Pexels.
-- **Key statistics** — pull the headline numbers directly from the blog. These become `Overlay` or `Stat` segments with number counter animations.
+### Step 1 — Read reel-data.md
 
-**The reel is a motion version of content already in the blog — not new content.** Every stat, chart, and claim should already exist in the post.
+Every blog post has a `blog/<slug>/reel-data.md` companion file with the hook, stats, chart data, CTA, and Pexels queries pre-extracted. Read this file — do not re-read `index.html`.
+
+If `reel-data.md` is missing (legacy posts only), fall back to reading the blog HTML and create the reel-data.md before proceeding.
+
+The reel script maps directly from reel-data.md sections:
+- `hook` → HOOK segment
+- `## stats` entries → Overlay segments (one per stat)
+- `## chart` → Chart segment (omit if absent)
+- `## cta` → CTA segment
+- `## pexels_queries` → passed to fetch-photos.mjs automatically
 
 ### Step 2 — Write the reel script
 Create `blog/<slug>/reel-script.md`:

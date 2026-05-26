@@ -1,3 +1,8 @@
+> **DEPRECATED** — Use `blog/BLOG-SOP.md` for instructions and `blog/BLOG-REF.md` for HTML/CSS templates.
+> This file is kept for historical reference only. Do not use for new posts.
+
+---
+
 # Blog Post Skill — Fused Distribution
 
 Complete procedure for writing, building, and publishing a blog post at fuseddistribution.com/blog/.
