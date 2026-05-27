@@ -13,13 +13,13 @@
 
 *The five archived wallets and the accompanying transaction metadata from your recent excavation of the SV-001 data vault arrived via encrypted transfer yesterday, along with your brief message. I have spent the better part of three sleepless nights going through them. I must admit: I did not expect this.*
 
-*One expects digital archaeology to turn up brand decks, pitch decks, and the embarrassing early tweets of men who later became famous. What I found instead was a complete personal financial record. The blockchain diary of a man named Dazz, apparently a logistics entrepreneur who documented his debt repayment journey onchain with a methodical precision that puts most modern fintech tools to shame. Every transaction timestamped, immutable, verifiable. The kind of accountability that most people would find terrifying and that he appears to have found clarifying.*
+*One expects digital archaeology to turn up brand decks, pitch decks, and the embarrassing early tweets of men who later became famous. What I found instead was a complete personal financial record. The blockchain diary of a man named Dabasir, apparently a logistics entrepreneur who documented his debt repayment journey onchain with a methodical precision that puts most modern fintech tools to shame. Every transaction timestamped, immutable, verifiable. The kind of accountability that most people would find terrifying and that he appears to have found clarifying.*
 
 *I've spent my career at the intersection of behavioral economics and digital history. And yet here comes this record from nearly a decade ago to offer a system for paying off debts and building savings that I have never seen explained so clearly. Straightforward. Actionable. And, this is the part that is mildly humiliating for me, directly applicable to the financial situation my husband Carlos and I have been quietly struggling with for the past three years.*
 
 *We have not told anyone about our situation. Two academics with good salaries who somehow managed to accumulate a significant amount of consumer debt and a very small amount of savings. The kind of situation that is mostly invisible and entirely exhausting. The kind that doesn't show up in any external metric. The kind you stop thinking about directly because thinking about it directly is too uncomfortable.*
 
-*The plan in these wallets is so clear. Dazz documented everything. His income each period. His ten percent saved off the top. His seventy percent living expenses. His twenty percent debt repayment, distributed pro rata across creditors. His conversations with those creditors. His setbacks. His recoveries. All of it onchain, verifiable, permanent. He could not lie to himself. The ledger would not allow it.*
+*The plan in these wallets is so clear. Dabasir documented everything. His income each period. His ten percent saved off the top. His seventy percent living expenses. His twenty percent debt repayment, distributed pro rata across creditors. His conversations with those creditors. His setbacks. His recoveries. All of it onchain, verifiable, permanent. He could not lie to himself. The ledger would not allow it.*
 
 *Carlos and I intend to follow it precisely.*
 
@@ -31,13 +31,13 @@
 
 ---
 
-## The Wallet Records of Dazz
+## The Wallet Records of Dabasir
 
 *Wallet No. I*
 
-Now, in this block, I, Dazz, recently returned from Phoenix with the determination to pay every legitimate debt and build something real, do hereby record my financial position and my intentions onchain for accountability to myself and to any future version of me who forgets why he started.
+Now, in this block, I, Dabasir, recently returned from Phoenix with the determination to pay every legitimate debt and build something real, do hereby record my financial position and my intentions onchain for accountability to myself and to any future version of me who forgets why he started.
 
-Under the guidance of my mentor and friend Max Thornton of the lending protocol, I follow this plan exactly:
+Under the guidance of my mentor and friend Mathon Thorne of the lending protocol, I follow this plan exactly:
 
 **First purpose:** Build my future.
 One tenth of everything I earn, transferred immediately upon receipt to a cold wallet I have labeled *Not For Spending.* This is mine. It grows. I do not touch it. When I have enough, I will begin investing it. The goal is not to look at the number and feel rich. The goal is to never touch it until it is working.
@@ -125,9 +125,9 @@ The system that got me out of debt is the same system that will build my wealth.
 
 *What I did not expect: the ten percent we had been saving all along, for two years, through lean months and frustrating months and months where I wanted to give up, had quietly become a meaningful sum. We had started investing it at month six, in boring diversified index funds. It was already compounding. Slowly, as it always starts. But the direction was clear, and the direction does not reverse as long as you follow the system.*
 
-*I keep thinking about the man who recorded these transactions. Dazz, alone in a Phoenix parking lot at five-thirty in the morning, deciding to stop running. He did not have a finance degree. He did not have a mentor with a formal credential. He had a plan and the willingness to follow it with the kind of consistency that most people find boring until they see the results.*
+*I keep thinking about the man who recorded these transactions. Dabasir, alone in a Phoenix parking lot at five-thirty in the morning, deciding to stop running. He did not have a finance degree. He did not have a mentor with a formal credential. He had a plan and the willingness to follow it with the kind of consistency that most people find boring until they see the results.*
 
-*The old camel trader from Babylon had his clay tablets. Dazz had his blockchain records. Neither of them invented the principle. The principle appears to be older than civilization itself.*
+*The old camel trader from Babylon had his clay tablets. Dabasir had his blockchain records. Neither of them invented the principle. The principle appears to be older than civilization itself.*
 
 *Pay yourself first. Live on less than you earn. Repay your debts systematically. Let the surplus compound.*
 

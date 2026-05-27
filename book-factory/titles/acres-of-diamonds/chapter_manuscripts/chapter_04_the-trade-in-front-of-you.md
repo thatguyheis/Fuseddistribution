@@ -8,7 +8,7 @@ They stand inside a field of information no outsider has and somehow treat that 
 
 Luke spent several weeks rediscovering this.
 
-He went back through service logs, customer histories, dispatch notes, and unresolved complaint threads from the previous two years. He noticed patterns he would once have missed because he had been too close to them for too long. Small restaurant groups were not simply calling for repairs. They were asking, indirectly, for better reporting and budget predictability. Multi-site operators were not merely buying labor. They were trying to purchase calm. Landlords were not angry about invoices alone. They were exhausted by having to personally bridge the gap between five mediocre vendors who did not speak to each other.
+He went back through service logs, customer histories, dispatch notes, and unresolved complaint threads from the previous two years. He noticed patterns he had once been too bored to see. Small restaurant groups were not simply calling for repairs. They were asking, indirectly, for better reporting and budget predictability. Multi-site operators were not merely buying labor. They were trying to purchase calm. Landlords were not angry about invoices alone. They were exhausted by having to personally bridge the gap between five mediocre vendors who did not speak to each other.
 
 The trade in front of Luke was no longer "maintenance."
 
@@ -16,7 +16,7 @@ It was operational reassurance.
 
 That realization changed everything.
 
-Once you understand the deeper trade you are actually in, the market opens up. The business stops looking like a commodity and starts looking like a system. New offers become visible. Recurring contracts make sense. Better reporting becomes valuable. Training, documentation, scheduling discipline, and response standards cease to be overhead and become product features in disguise.
+Once you understand the deeper trade you are actually in, the market opens up. The business stops looking like a commodity and starts looking like a system. New offers become visible. Recurring contracts make sense. Better reporting becomes valuable. Training, documentation, scheduling discipline, and response standards stop looking like overhead and become product features in disguise.
 
 Luke met Nora again and tried out the new framing.
 
@@ -58,7 +58,7 @@ Many builders leave just before that advantage becomes monetizable.
 
 They interpret boredom as completion. They assume they have extracted all the value from a field simply because it no longer stimulates their vanity. In reality they are often standing inches from the point where nuance turns into margin.
 
-The trade in front of you is often not smaller than the fantasy trade. It is merely less decorated.
+The trade in front of you is often not smaller than the fantasy trade. It is just less decorated.
 
 That difference costs people years.
 

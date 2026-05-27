@@ -10,13 +10,13 @@ It was in strip centers with deferred maintenance and overworked property manage
 
 One morning Carmen asked Luke to ride along on three calls because the new dispatch coordinator was still learning which customers were chronic and which were merely loud.
 
-The first stop was a pediatric dental office in Elk Grove. The place looked calm from the waiting room. Cartoon sea creatures on the wall. A fish tank in the corner. A receptionist using the bright voice of a person who had already had a terrible morning. In the back, an autoclave had failed, which meant sterilization was backed up, appointments were stacking, and the office manager was one delayed fix away from canceling half the afternoon.
+The first stop was a pediatric dental office in Elk Grove. The place looked calm from the waiting room. Cartoon sea creatures on the wall. A fish tank in the corner. A receptionist using the bright voice of a person who had already had a terrible morning. In the back, an autoclave had failed, which meant sterilization was backed up, appointments were stacking, and the office manager was one delayed repair away from canceling half the afternoon.
 
 Luke watched the scene unfold and felt his Austin brain trying to interpret it in prestigious language. Healthcare workflow. Critical equipment uptime. Revenue-preservation systems. He nearly laughed. Those phrases were not wrong. They were simply inflated. What mattered here was much cleaner. A real business had a real bottleneck and would pay real money to a person who could remove it quickly and reliably.
 
 The second stop was less polished and more profitable. A regional meal-prep company had a refrigeration issue in a production facility near an industrial park no venture capitalist would voluntarily visit. Inside were stainless-steel tables, prep stations, pallets, labels, and a founder in rubber boots trying to hide the fact that his whole day was collapsing. A temperature swing in one section of the facility could destroy inventory, disrupt deliveries, and force refund decisions before dinner.
 
-Luke saw it all at once: the urgency, the dependence, the budget, and the larger opportunity behind the single repair. This company did not merely need a technician. It needed a preventative protocol, monitoring, vendor coordination, documentation, and someone who could think one layer higher than the wrench in his hand. In Austin, Luke had spent months trying to invent software categories. Here, standing beside an annoyed operations manager in a cold room, he could see the shape of a better business without trying.
+Luke saw it all at once: the urgency, the dependence, the budget, and the larger opportunity behind the single repair. This company did not merely need a technician. It needed a preventive protocol, monitoring, vendor coordination, documentation, and someone who could think one layer higher than the wrench in his hand. In Austin, Luke had spent months trying to invent software categories. Here, standing beside an annoyed operations manager in a cold room, he could see the shape of a better business without forcing it.
 
 The third stop was the one that settled him.
 
@@ -56,7 +56,7 @@ That night he walked through an older commercial district near where he grew up.
 
 Under every ordinary block sat a layer of ignored economic reality.
 
-The asphalt was not glamorous. The gold was underneath.
+The asphalt was not glamorous. The value was underneath.
 
 This is one of the oldest investment truths and one of the hardest for ambitious people to accept: familiarity hides value. We become so accustomed to certain categories that we stop asking what the pain inside them is worth. The market does not share our boredom. Customers do not pay less because a problem sounds unsexy at dinner. In many cases they pay more, and pay more reliably, because the need is continuous and the alternatives are poor.
 

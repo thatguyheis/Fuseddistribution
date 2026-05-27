@@ -24,15 +24,15 @@ Sarge looked at the data she slid across the table. "Why does this keep happenin
 
 Rhonda didn't need to think about it.
 
-"Archie Musk."
+"Arkad Morrow."
 
 ---
 
-CEO Sarge called Archie in and asked him to teach a cohort of one hundred people, employees, contractors, gig workers, developers, baristas with software side projects, the exact system by which he had built his wealth.
+CEO Sarge called Arkad in and asked him to teach a cohort of one hundred people, employees, contractors, gig workers, developers, baristas with software side projects, the exact system by which he had built his wealth.
 
-Archie showed up the following Tuesday to a large conference room in the company's HQ. A hundred people on folding chairs. Nervous energy. Someone had put a bowl of kombucha on ice, which was a very Valley touch.
+Arkad showed up the following Tuesday to a large conference room in the company's HQ. A hundred people on folding chairs. Nervous energy. Someone had put a bowl of kombucha on ice, which was a very Valley touch.
 
-Archie sat on a stool at the front.
+Arkad sat on a stool at the front.
 
 "I'm not going to give you a motivational speech," he said. "I'm going to give you a system. Seven steps. Each one builds on the last. Try to poke holes in them. I welcome it. These aren't theories. They're the things I actually did."
 
@@ -87,9 +87,9 @@ Every hand went up.
 
 "If you're building AI tools, running automation side hustles, freelancing with AI agents, that income counts too. Every dollar from every stream, ten percent off the top, put to work. The source of the income is irrelevant. The discipline is everything.
 
-"My first investment went sideways. I gave my savings to Aziz the Crypto Bro to put into an NFT scheme. He was a brickmaker trying to sell me jewels. I lost everything. Learned a lot.
+"My first investment went sideways. I gave my savings to Azmur the Crypto Bro to put into an NFT scheme. He was a brickmaker trying to sell me jewels. I lost everything. Learned a lot.
 
-"My second investment went to Aggie, who ran a legitimate DeFi lending protocol with real revenue. He paid back promptly, every time. I reinvested the returns. That compounding machine is still running ten years later.
+"My second investment went to Agar, who ran a legitimate DeFi lending protocol with real revenue. He paid back promptly, every time. I reinvested the returns. That compounding machine is still running ten years later.
 
 "This is the Third Cure: **put every saved dollar to work in legitimate, compounding investments.**"
 
@@ -159,7 +159,7 @@ Every hand went up.
 
 ---
 
-Archie stepped back from the front of the room.
+Arkad stepped back from the front of the room.
 
 "Seven cures. One system. It works. Not because it's clever, but because it's consistent. Most people try it for three months and abandon it. The people who stick with it for three years look back and can't believe the difference.
 

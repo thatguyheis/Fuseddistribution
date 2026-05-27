@@ -44,7 +44,8 @@
     "candidateBrief": "book-factory/titles/acres-of-diamonds/candidate_brief.md",
     "adaptationBlueprint": "book-factory/titles/acres-of-diamonds/adaptation_blueprint.md",
     "chapterManuscripts": "book-factory/titles/acres-of-diamonds/chapter_manuscripts",
-    "publishingPackage": "book-factory/titles/acres-of-diamonds/publishing_package"
+    "publishingPackage": "book-factory/titles/acres-of-diamonds/publishing_package",
+    "printPackage": "book-factory/titles/acres-of-diamonds/print_package"
   },
   "adaptation": {
     "workingTitle": "Hidden Gold in Plain Sight",
@@ -119,6 +120,12 @@
         "title": "Build Where You Stand",
         "focus": "Push the reader from inspiration into practical action and disciplined observation.",
         "modernFrame": "A field manual for spotting and building opportunity in plain sight"
+      },
+      {
+        "number": 7,
+        "title": "The Map Beneath Your Feet",
+        "focus": "Turn the story into a practical method readers can use to find overlooked opportunity in their own lives.",
+        "modernFrame": "A reader-facing operating system for mapping pain, trust, proximity, and demand"
       }
     ],
     "marketingAngles": [

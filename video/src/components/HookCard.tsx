@@ -13,10 +13,11 @@ export const HookCard: React.FC<{ segment: HookSegment; photoPath?: string }> = 
     durationInFrames: Math.round(fps * 0.6) });
   const translateY = interpolate(slideProgress, [0, 1], [80, 0]);
 
+  // Start at full opacity so frame 0 is thumbnail-ready. Fade out only at end.
   const opacity = interpolate(
     frame,
-    [0, fi, durationInFrames - fi, durationInFrames],
-    [0, 1, 1, 0],
+    [durationInFrames - fi, durationInFrames],
+    [1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
   );
 

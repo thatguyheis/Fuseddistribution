@@ -3,12 +3,17 @@ topic: silver
 hook: Stop trying to time the silver market. The investors who consistently build wealth aren't smarter — they just stopped guessing.
 
 ## stats
-- text: "DCA Investor Earns $2,630 More Over 5 Years"
+- text: $2,630 MORE OVER 5 YEARS
   narration: In an illustrative comparison of two investors each putting in 100 dollars a month over five years, the DCA investor ended at 9,840 dollars while the market timer reached only 7,210. The market timer wasn't making bad guesses — hesitation, missed windows, and emotional buying at the wrong moments compounded against them.
-- text: "Average Cost: ~$24.20/oz Across 2020–2025"
+- text: $24.20 AVG COST PER OZ
   narration: A monthly buyer over 2020 to 2025 would have averaged roughly 24.20 per ounce regardless of the price swings along the way. Some purchases hit peaks, some hit valleys, but the average lands comfortably below where the market sits today.
-- text: "Silver Starts at $30–$50/Month"
-  narration: You can start building a physical silver position for 30 to 50 dollars a month, making dollar cost averaging practical at any budget level. No large upfront commitment, no need to time anything — just a fixed amount on a regular schedule.
+
+## chart
+title: DCA vs Market Timing — 5-Year Portfolio Value
+bars:
+  - DCA Investor: 100%
+  - Market Timer: 73%
+narration: The DCA investor finished with 9,840 dollars. The market timer, despite making deliberate entry decisions, ended at 7,210 — 27 percent less. Trying to time the market cost more than it saved.
 
 ## cta
 text: See Fused Reserve Plans — link in comments.

@@ -10,7 +10,7 @@ He started calling former customers, vendors, and even a few people he had not s
 
 A restaurant owner mentioned that his brother-in-law managed a group of boutique hotels and could not find a facilities partner who responded consistently across locations. A roofing subcontractor said several of his commercial clients complained constantly about fragmented vendor communication. A property manager confessed that the hardest part of her week was not any single repair. It was chasing status updates from six different people who all had a habit of sounding reassuring until the deadline passed.
 
-A friend from high school who now ran a small chain of fitness studios told Luke that every expansion decision felt harder than it should because maintenance across locations was "held together by apologies." An insurance broker said half her commercial clients asked for contractor recommendations with the defeated tone people use when they have already been burned twice. Even Luke's aunt, who managed a church campus, had a list of recurring vendor frustrations long enough to sound like a grievance committee.
+A friend from high school who now ran a small chain of fitness studios told Luke that every expansion decision felt harder than it should because maintenance across locations was "held together by apologies." An insurance broker said half her commercial clients asked for contractor recommendations with the defeated tone people use when they have already been burned twice. Even Luke's aunt, who managed a church campus, had a list of vendor frustrations long enough to sound like a grievance committee.
 
 Luke began writing the comments down in categories.
 
@@ -20,7 +20,7 @@ Lack of preventive planning.
 Reporting confusion.
 No ownership of the whole problem.
 
-Everywhere he looked, the same thing was happening. The people already near him were handing him a better business model in fragments, not because they were trying to be generous, but because real unmet need leaks into ordinary conversation. Customers describe it as frustration. Vendors describe it as chaos. Friends describe it as "you know who could really help with this?" Builders who know how to listen hear market demand before it ever becomes a formal request for proposal.
+Everywhere he looked, the same thing was happening. The people already near him were handing him a better business model in fragments, not because they were trying to be generous, but because unmet need leaks into ordinary conversation. Customers describe it as frustration. Vendors describe it as chaos. Friends describe it as "you know who could really help with this?" Builders who know how to listen hear market demand before it ever becomes a formal request for proposal.
 
 This is why proximity matters.
 
@@ -52,7 +52,7 @@ The builder who ignores these people in order to chase distant access is often a
 
 There is no glamour in this. That is one reason it works. Most people would still rather post a hot take about market gaps than quietly ask ten practical adults what keeps breaking in their businesses. One approach produces engagement. The other sometimes produces a company.
 
-Luke had once believed the next chapter of his life would arrive through a dramatic introduction in a better room. Instead it arrived through familiar voices saying versions of the same thing:
+Luke had once believed the next chapter of his life would arrive through a dramatic introduction in a better room. Instead, it arrived through familiar voices saying versions of the same thing:
 
 If someone competent would just own this properly, we'd pay.
 

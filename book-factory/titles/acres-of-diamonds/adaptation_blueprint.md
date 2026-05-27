@@ -53,6 +53,7 @@ Service businesses, local markets, creator ecosystems, operational bottlenecks, 
 | 4 | The Trade in Front of You | Argue that proximity plus skill beats novelty plus distance. | Luke realizes the best market is often adjacent to work he already understands |
 | 5 | The People Already Near You | Show the reader how opportunity is embedded in current relationships. | Existing clients, vendors, and neighbors reveal hidden demand networks |
 | 6 | Build Where You Stand | Move from insight into a repeatable way of seeing and acting. | Luke stops admiring the lesson and starts building on it |
+| 7 | The Map Beneath Your Feet | Turn the story into a practical method readers can use. | A reader-facing operating system for mapping pain, trust, proximity, and demand |
 
 ## Prohibited Changes
 

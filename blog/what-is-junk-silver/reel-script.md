@@ -1,49 +1,42 @@
-# Reel Script: It's Called "Junk" Silver — But the Math Usually Works in Your Favor
-Generated: 2026-05-26
-Target length: 41 seconds
+# Reel Script: What Is Junk Silver?
+Generated: 2026-05-27
+Target length: 37 seconds
+Audio durations: seg1=15.64s seg2=11.34s cta=3.94s
+Format: Express
+Hook type: contrarian_stat
 
 ---
 
 ## HOOK (0–3s)
-It's called "junk" silver — but the silver inside is exactly the same as any modern bar or round. And the math usually works in your favor.
+3%. That's the premium on 90% pure US silver. no brand name, no markup.
 
 ---
 
 ## BODY
 
-**Overlay 1** (3–13s)
-Text: "$1 Face Value = ~0.715 Troy Oz of Silver"
-Narration: One dollar in face value of 90 percent silver coins contains about 0.715 troy ounces of silver. At 30 dollar spot, that dollar face bag is worth roughly 21.45 in melt value before any premium. Most dealers use this shortcut constantly.
+**Stat 1** (3–20s)
+Text: 3-8% PREMIUM VS 18-28% EAGLES
+Narration: Pre-1965 dimes, quarters, and halves are 90 percent pure silver. same metal as any Eagle or bar. Junk silver trades at 3 to 8 percent above spot. American Silver Eagles run 18 to 28 percent. Same silver. The difference is the brand.
 
-**Overlay 2** (13–23s)
-Text: "3–8% Premium vs 18–28% for Eagles"
-Narration: Junk silver trades close to melt value, which keeps premiums at the lowest end of the market — typically 3 to 8 percent above spot. Compare that to 18 to 28 percent for American Silver Eagles. You are buying silver content, not a brand name.
-
-**Overlay 3** (23–33s)
-Text: "Morgan or Peace Dollar = 0.7734 Troy Oz"
-Narration: A Morgan or Peace dollar contains 0.7734 troy ounces of silver — almost a full troy ounce per coin. These are the heaviest standard junk silver coins and among the most recognizable US coins ever minted.
+**Stat 2** (20–32s)
+Text: $1 FACE = 0.715 OZ SILVER
+Narration: One dollar in face value of junk silver holds 0.715 troy ounces. At 30 dollar spot, that is about 21.45 in melt value. Every dealer uses this shortcut.
 
 ---
 
-## CTA (33–41s)
-Text: See Fused Reserve Plans — link in comments.
-Narration: Start building a junk silver position every month without hunting for deals yourself — link in comments.
+## CTA (32–37s)
+Text: Save this before your next silver buy.
+Narration: Save this before your next silver purchase. full breakdown linked in comments.
+
+---
+
+## DISCUSSION QUESTION
+What was the first silver you bought. or are you still deciding?
 
 ---
 
 ## VISUAL DIRECTION
-Hook: Dark background (#041018), white Impact text, large, centered, 3-second hold.
-Overlays: Dark bg, stat text in cyan (#58d6ff) Impact, label below in white. Slide up on entry.
-Chart: Animated horizontal bars growing left to right. Cyan bars, white labels, dark bg.
-CTA: Dark bg, white Impact text, cyan sub-text. Simple fade in.
-Style: Dark background (#041018), white Impact text, cyan accent (#58d6ff). Ambient music only.
-
----
-
-## FACEBOOK CAPTION
-"Junk silver" sounds like something you'd find in a garage sale box. It isn't. It's pre-1965 US coins — dimes, quarters, half dollars — that contain 90 percent silver. Every coin's content is a matter of public record. Liquidity is high. Premiums are low. It's why so many new buyers start here. Here's everything you need to know before your first purchase.
-
-Link in comments.
-
-## HASHTAGS
-#JunkSilver #SilverStacking #PreciousMetals #SilverCoins #FusedReserve
+Segment 0 (hook): Large cyan "3%" Impact text centered on dark bg (#041018). Sub-line in white below. Static. 3s hold. No animation delay. Must read cleanly muted.
+Segment 1 (stat 1): Stat segment. Count-up animates "3" → "8%" for junk silver side. Comparison text "VS 18-28% EAGLES" in white below. Background: coins-spread photo or pexels-0.jpg.
+Segment 2 (stat 2): Stat segment. Count-up animates "0.715". Label "$1 FACE =" above in white, "OZ SILVER" below. Background: pexels-1.jpg (bag/dealer shot).
+Segment 3 (CTA): Standard CTA card, cyan glow. "Save this" text large. pexels-2.jpg or dark bg.

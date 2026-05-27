@@ -2,25 +2,25 @@
 
 *"A hardware wallet heavy with Bitcoin, or a Notion doc carved with financial wisdom — if you had the choice, which would you choose?"*
 
-The autonomous vehicle glided silently along I-10 at 3am, cutting through the Arizona desert toward Los Angeles. In the back seat, an older man named Kal B, blockchain OG, former protocol architect, current semi-retired crypto philosopher, told stories to the small crew of engineers and logistics coordinators who had worked his cross-country supply chain run.
+The autonomous vehicle glided silently along I-10 at 3am, cutting through the Arizona desert toward Los Angeles. In the back seat, an older man named Kalabab, blockchain OG, former protocol architect, current semi-retired crypto philosopher, told stories to the small crew of engineers and logistics coordinators who had worked his cross-country supply chain run.
 
 They were young. They were tired. Outside, the desert was total darkness cut only by the highway. Nobody was reaching for their phones.
 
 "You said Bitcoin," said the chief coordinator, Priya. "Not gold, not real estate, not index funds. Bitcoin."
 
-"I said wisdom," Kal corrected. "The bag of Bitcoin represents what most people chase. The wisdom doc is what creates it. Most people pick the bag. Most people then promptly lose the bag, because they had no wisdom to protect it."
+"I said wisdom," Kalabab corrected. "The bag of Bitcoin represents what most people chase. The wisdom doc is what creates it. Most people pick the bag. Most people then promptly lose the bag, because they had no wisdom to protect it."
 
 He adjusted his seat, pulling his hoodie tighter against the frigid cabin air. He had the unhurried quality of a man who had made peace with everything he'd done in the 2022 bear market and come out the other side.
 
-"I'm going to tell you about Archie Musk. Not the version from the press. The real version. Told to me by his son Noah, many years ago, over a very long dinner in Austin."
+"I'm going to tell you about Arkad Morrow. Not the version from the press. The real version. Told to me by his son Nomas, many years ago, over a very long dinner in Austin."
 
 ---
 
-Archie had a son, Noah Musk, who had grown up watching his father build an empire but had not, as a young man, fully understood how. Most rich kids don't. They see the results without the mechanism, and they often assume the mechanism was personality or luck or timing rather than a specific, repeatable system.
+Arkad had a son, Nomas Morrow, who had grown up watching his father build an empire but had not, as a young man, fully understood how. Most rich kids don't. They see the results without the mechanism, and they often assume the mechanism was personality or luck or timing rather than a specific, repeatable system.
 
-When Noah was in his early twenties, Archie sat him down.
+When Nomas was in his early twenties, Arkad sat him down.
 
-"In this city," Archie said, "the tradition is for children of successful founders to stay close to home, join the family office, and eventually inherit the business. I don't like that tradition. It produces children who are good at enjoying wealth and terrible at creating it."
+"In this city," Arkad said, "the tradition is for children of successful founders to stay close to home, join the family office, and eventually inherit the business. I don't like that tradition. It produces children who are good at enjoying wealth and terrible at creating it."
 
 He slid two things across the table.
 
@@ -28,35 +28,35 @@ The first was a hardware wallet. Cold storage, the safest kind. "Fifty thousand 
 
 The second was a printed document. "The Five Laws of Bitcoin. If you follow them, this is worth more than the wallet. In fact, if you understand them deeply, you can make Bitcoin from nothing. If you ignore them, the wallet will be empty within five years."
 
-"Ten years from now," Archie said, "come back and tell me what you did with both."
+"Ten years from now," Arkad said, "come back and tell me what you did with both."
 
 ---
 
-Noah headed to Austin, where a new tech scene was building itself into something real. He joined a startup caravan heading that direction, a group of young entrepreneurs making their way to the same city.
+Nomas headed to Austin, where a new tech scene was building itself into something real. He joined a startup caravan heading that direction, a group of young entrepreneurs making their way to the same city.
 
 Within the first month, he had been scammed twice.
 
 First: two persuasive guys introduced him to a trading bot that "could never lose." He invested forty percent of his Bitcoin. The bot's creators were the liquidity. The bot was the exit. His Bitcoin vanished into a wallet he'd never see again. He recognized the playbook only in retrospect, because it was dressed so well.
 
-Second: a fellow traveler with a charming pitch, a commerce partnership, equal investment, guaranteed returns, convinced him to fund the venture. The partner turned out to be a talented spender and a terrible operator. By the time Noah cut ties, there was only unsellable inventory and no capital remaining.
+Second: a fellow traveler with a charming pitch, a commerce partnership, equal investment, guaranteed returns, convinced him to fund the venture. The partner turned out to be a talented spender and a terrible operator. By the time Nomas cut ties, there was only unsellable inventory and no capital remaining.
 
 He was broke. In a new city. No income, no contacts, no credibility.
 
-Those were, as Noah later described them, "the worst months of my life and the best education I ever got."
+Those were, as Nomas later described them, "the worst months of my life and the best education I ever got."
 
-He remembered the document Archie had given him. He retrieved it from the bottom of his bag. He read it. And this time, with an empty wallet and an empty stomach, he finally understood what his father had been trying to tell him.
+He remembered the document Arkad had given him. He retrieved it from the bottom of his bag. He read it. And this time, with an empty wallet and an empty stomach, he finally understood what his father had been trying to tell him.
 
 He found work managing logistics for a construction crew working on a new mixed-use development. Unglamorous work. Steady pay. He began saving aggressively, ten percent off every check, into a new cold wallet he set up himself, seed phrase memorized and written nowhere.
 
 One day his site supervisor mentioned a city contract coming for a new bridge. It required a specific type of structural cable that no local supplier had in stock. A small group of operators were pooling capital to import the materials directly and sell at a premium to the city. They needed trustworthy partners.
 
-Noah recognized it immediately. The Third Law at work. He invested his small stack under the guidance of people who had done this before. The deal closed. His return was significant.
+Nomas recognized it immediately. The Third Law at work. He invested his small stack under the guidance of people who had done this before. The deal closed. His return was significant.
 
-He repeated the pattern. Again. Again. Every investment vetted by people with experience. Every dollar compounded back into the next opportunity. Never chasing 100x. Always protecting the principal. He DCA'd his Bitcoin savings through every month, up markets and down markets, because Kal B had taught him that the price on any given Tuesday was irrelevant to the man with a ten-year horizon.
+He repeated the pattern. Again. Again. Every investment vetted by people with experience. Every dollar compounded back into the next opportunity. Never chasing 100x. Always protecting the principal. He DCA'd his Bitcoin savings through every month, up markets and down markets, because Kalabab had taught him that the price on any given Tuesday was irrelevant to the man with a ten-year horizon.
 
-When ten years had passed, Noah returned to The Valley.
+When ten years had passed, Nomas returned to The Valley.
 
-He arrived at his parents' house for a dinner that had grown into something of an event. Archie had invited the inner circle. Noah stood at the front of the room, next to his father and his mother, who was smiling in the way of someone who had known the ending for a long time.
+He arrived at his parents' house for a dinner that had grown into something of an event. Arkad had invited the inner circle. Nomas stood at the front of the room, next to his father and his mother, who was smiling in the way of someone who had known the ending for a long time.
 
 He placed three hardware wallets on the table.
 
@@ -64,11 +64,11 @@ He placed three hardware wallets on the table.
 
 "Here are two more wallets." He pushed the other two. "These represent the value of the document you gave me. Because the wisdom in that document was worth at least three times the capital. Without the wisdom, the capital would have been gone in three months. With the wisdom, the capital multiplied many times over."
 
-Archie put his hand on his son's shoulder. He did not say much. He did not need to.
+Arkad put his hand on his son's shoulder. He did not say much. He did not need to.
 
 ---
 
-Kal B looked around the van. Everyone was very awake now.
+Kalabab looked around the van. Everyone was very awake now.
 
 "Want to hear the Five Laws?"
 
@@ -100,7 +100,7 @@ Put it to work. Then leave it alone and let it compound.
 **The Third Law**
 *Bitcoin stays with and grows for the cautious owner who invests under the guidance of people who have actually done it.*
 
-This is the law Noah violated first and learned hardest. Don't take investing advice from someone who has not successfully invested. Don't put your money into deals run by people without a track record. Find operators who have done the thing before. Learn from them. Invest alongside them.
+This is the law Nomas violated first and learned hardest. Don't take investing advice from someone who has not successfully invested. Don't put your money into deals run by people without a track record. Find operators who have done the thing before. Learn from them. Invest alongside them.
 
 Wisdom is collateral. Trust it more than charm.
 
@@ -126,17 +126,17 @@ Excitement is not analysis. FOMO is not strategy.
 
 ---
 
-Kal B sat back. Outside, the first pale wash of Los Angeles was appearing on the horizon.
+Kalabab sat back. Outside, the first pale wash of Los Angeles was appearing on the horizon.
 
 "That's it. That's the whole system. If every person who has ever lost money in crypto had followed those five laws, ninety percent of those losses would not have happened."
 
 "Why doesn't everyone know this?" asked one of the engineers.
 
-"Everyone does know it," said Kal. "They just keep hoping there's a shortcut. There isn't one. The laws work slowly and then impressively. The shortcuts work impressively and then not at all."
+"Everyone does know it," said Kalabab. "They just keep hoping there's a shortcut. There isn't one. The laws work slowly and then impressively. The shortcuts work impressively and then not at all."
 
 The van hummed on through the dark desert.
 
-"Which would you choose now?" Kal asked. "The wallet or the wisdom?"
+"Which would you choose now?" Kalabab asked. "The wallet or the wisdom?"
 
 Nobody hesitated.
 

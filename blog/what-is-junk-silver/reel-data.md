@@ -1,33 +1,33 @@
 # Reel Data: what-is-junk-silver
 topic: silver
-hook: It's called "junk" silver — but the silver inside is exactly the same as any modern bar or round. And the math usually works in your favor.
+hook: 3%. That's the premium on 90% pure US silver. no brand name, no markup.
+hook_type: contrarian_stat
 
 ## stats
-- text: "$1 Face Value = ~0.715 Troy Oz of Silver"
-  narration: One dollar in face value of 90 percent silver coins contains about 0.715 troy ounces of silver. At 30 dollar spot, that dollar face bag is worth roughly 21.45 in melt value before any premium. Most dealers use this shortcut constantly.
-- text: "3–8% Premium vs 18–28% for Eagles"
-  narration: Junk silver trades close to melt value, which keeps premiums at the lowest end of the market — typically 3 to 8 percent above spot. Compare that to 18 to 28 percent for American Silver Eagles. You are buying silver content, not a brand name.
-- text: "Morgan or Peace Dollar = 0.7734 Troy Oz"
-  narration: A Morgan or Peace dollar contains 0.7734 troy ounces of silver — almost a full troy ounce per coin. These are the heaviest standard junk silver coins and among the most recognizable US coins ever minted.
+- text: 3-8% PREMIUM VS 18-28% FOR EAGLES
+  narration: Pre-1965 dimes, quarters, and halves are 90 percent pure silver. same metal as any Eagle or bar. Junk silver trades at 3 to 8 percent above spot. American Silver Eagles run 18 to 28 percent. Same silver. The difference is the brand.
+- text: $1 FACE = 0.715 OZ SILVER
+  narration: One dollar in face value of junk silver holds 0.715 troy ounces. At 30 dollar spot, that is about 21.45 in melt value. Every dealer uses this shortcut.
 
 ## cta
-text: See Fused Reserve Plans — link in comments.
-narration: Start building a junk silver position every month without hunting for deals yourself — link in comments.
+text: Save this before your next silver buy.
+narration: Save this before your next silver purchase. full breakdown linked in comments.
+
+## discussion_question
+What was the first silver you bought. or are you still deciding?
 
 ## caption
-"Junk silver" sounds like something you'd find in a garage sale box. It isn't. It's pre-1965 US coins — dimes, quarters, half dollars — that contain 90 percent silver. Every coin's content is a matter of public record. Liquidity is high. Premiums are low. It's why so many new buyers start here. Here's everything you need to know before your first purchase.
+Pre-1965 US coins. dimes, quarters, half dollars. contain 90% pure silver. Dealers call them "junk" because they have no collector premium above the metal. That is exactly why new buyers start here. Premiums are the lowest in the market and every coin dealer in the country knows what they are worth.
 
 ## hashtags
 #JunkSilver #SilverStacking #PreciousMetals #SilverCoins #FusedReserve
 
 ## pexels_queries
 - segment: 0
-  query: "old us silver coins dimes quarters collection"
+  query: "old silver dimes quarters coins close up pile"
 - segment: 1
-  query: "morgan dollar silver coin close up detail"
+  query: "coin shop silver coins premium price dealer"
 - segment: 2
-  query: "coin roll bag silver bullion dealer"
+  query: "silver coins bag face value bullion"
 - segment: 3
-  query: "silver coins spread pile precious metals"
-- segment: 4
-  query: "junk silver lot coins mixed 90 percent"
+  query: "silver coins collection precious metals stacking"

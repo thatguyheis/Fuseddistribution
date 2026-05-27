@@ -34,15 +34,35 @@ export const Subtitle: React.FC<{ narration: string }> = ({ narration }) => {
   const { durationInFrames } = useVideoConfig();
 
   const sentences = splitSentences(narration);
-  const framesEach = durationInFrames / sentences.length;
-  const currentIndex = Math.min(Math.floor(frame / framesEach), sentences.length - 1);
-  const sentence = sentences[currentIndex];
 
-  const frameInSlot = frame - currentIndex * framesEach;
-  const fadeFrames = 6;
+  // Proportional timing: longer sentences get more screen time (speech rate ∝ char count)
+  const totalChars = sentences.reduce((sum, s) => sum + s.length, 0);
+  const frameCounts = sentences.map(s => Math.round((s.length / totalChars) * durationInFrames));
+  // Fix rounding drift so frameCounts sum exactly equals durationInFrames
+  const drift = durationInFrames - frameCounts.reduce((a, b) => a + b, 0);
+  frameCounts[frameCounts.length - 1] += drift;
+
+  // Cumulative start frame per sentence
+  const frameStarts: number[] = [0];
+  for (let i = 1; i < sentences.length; i++) {
+    frameStarts.push(frameStarts[i - 1] + frameCounts[i - 1]);
+  }
+
+  // Find which sentence we're currently in
+  let currentIndex = sentences.length - 1;
+  for (let i = 0; i < frameStarts.length - 1; i++) {
+    if (frame < frameStarts[i + 1]) { currentIndex = i; break; }
+  }
+
+  const sentence = sentences[currentIndex];
+  const slotStart = frameStarts[currentIndex];
+  const slotDuration = frameCounts[currentIndex];
+  const frameInSlot = frame - slotStart;
+  const fadeFrames = Math.min(6, Math.floor(slotDuration * 0.2));
+
   const opacity = interpolate(
     frameInSlot,
-    [0, fadeFrames, framesEach - fadeFrames, framesEach],
+    [0, fadeFrames, slotDuration - fadeFrames, slotDuration],
     [0, 1, 1, 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
   );

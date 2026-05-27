@@ -9,7 +9,7 @@ The startup founder wants the lucky break, the right investor in the room at the
 
 And once or twice a year, we see it happen to someone. The app that blows up overnight. The tweet thread that lands a book deal. The token bought at the bottom. We think: why not me?
 
-That exact conversation was happening one evening in the private Discord server that Archie Musk kept for his inner circle, a group of regulars who gathered most evenings to debate ideas, share opportunities, and generally argue about whether AI was going to eat the world.
+That exact conversation was happening one evening in the private Discord server that Arkad Morrow kept for his inner circle, a group of regulars who gathered most evenings to debate ideas, share opportunities, and generally argue about whether AI was going to eat the world.
 
 "I want to talk about luck," typed one user, a developer named Dev (his handle, obviously), who had recently found a forgotten paper wallet containing twelve ETH he'd bought for forty dollars each in 2017. He had been sitting on a small fortune without knowing it. The seed phrase was written in the back of an old notebook. He'd found it while cleaning.
 
@@ -23,7 +23,7 @@ The server lit up.
 
 "You absolutely can attract it."
 
-Archie watched the thread spin for a while. Then he wrote:
+Arkad watched the thread spin for a while. Then he wrote:
 
 "Let's think carefully about this. Has anyone here built lasting wealth from pure luck, found money, lottery winnings, unexpected inheritance? Anyone got a good story?"
 
@@ -31,13 +31,13 @@ Long pause.
 
 Someone typed: "Does a casino count?"
 
-Archie: "Does the casino count as lasting wealth?"
+Arkad: "Does the casino count as lasting wealth?"
 
 Another pause.
 
 "...no."
 
-"Because here's what I've observed," Archie continued. "Gaming tables, prediction markets, meme stocks, sports betting apps. I can't name a single person I respect financially who built their foundation there. The math is stacked against you. The house always takes its cut. Consistent losers? Plenty. Consistent winners? The house."
+"Because here's what I've observed," Arkad continued. "Gaming tables, prediction markets, meme stocks, sports betting apps. I can't name a single person I respect financially who built their foundation there. The math is stacked against you. The house always takes its cut. Consistent losers? Plenty. Consistent winners? The house."
 
 Someone pushed back: "But some people DO win. Like, significantly."
 
@@ -45,7 +45,7 @@ Someone pushed back: "But some people DO win. Like, significantly."
 
 The server went quiet.
 
-"I thought so," Archie typed. "Windfall money without financial skill evaporates. Every time. The skill has to come first."
+"I thought so," Arkad typed. "Windfall money without financial skill evaporates. Every time. The skill has to come first."
 
 Another username appeared, one of the quieter people in the server, a designer named Lia who rarely posted but read everything.
 
@@ -59,7 +59,7 @@ The replies came quickly.
 
 "Dog-logo diversification is not a portfolio strategy."
 
-Archie responded with a single line first.
+Arkad responded with a single line first.
 
 "Thank you. That's exactly the point."
 
@@ -73,7 +73,7 @@ A DM popped up. Marcus, a merch brand founder who had been listening, wanted to 
 
 "Can I share something embarrassing?"
 
-"Always," said Archie.
+"Always," said Arkad.
 
 "When I was starting my brand, there was a friend of my dad's who offered me a spot in a real estate syndication. Early stage, great location, ten percent of my income for eighteen months, then proportional returns on a sale he projected would happen within three years. I looked at it. The numbers made sense. The guy was legitimate. My dad vouched for him.
 
@@ -85,7 +85,7 @@ A DM popped up. Marcus, a merch brand founder who had been listening, wanted to 
 
 A reaction emoji from someone: 😬
 
-"That," Archie typed, "is what I would call opportunity dressed in a boring outfit. Not gambling. Not a rug pull. A real, solid opportunity, presented by someone credible, evaluated by Marcus's own brain, and then passed up because the moment demanded spending instead of investing."
+"That," Arkad typed, "is what I would call opportunity dressed in a boring outfit. Not gambling. Not a rug pull. A real, solid opportunity, presented by someone credible, evaluated by Marcus's own brain, and then passed up because the moment demanded spending instead of investing."
 
 ---
 
@@ -97,11 +97,11 @@ Someone else jumped in. Ray, a logistics startup founder:
 
 "By morning, three other buyers had come through. He sold it at full price. I missed a profit that would have funded my next six months of operations."
 
-"Classic," said Archie. "What would have been the wise move?"
+"Classic," said Arkad. "What would have been the wise move?"
 
 "Pay immediately when the deal makes sense," Ray said. "Don't wait. Don't hedge. Make the decision and lock it in before your brain talks you out of it."
 
-"Or before someone else moves faster," Archie added. "Good deals don't wait for procrastinators."
+"Or before someone else moves faster," Arkad added. "Good deals don't wait for procrastinators."
 
 A fintech founder named Sami jumped in. He was Syrian, based in London, and he lived for moments exactly like this one.
 
@@ -115,7 +115,7 @@ The server erupted in laughing emojis.
 
 "I have one more thing," Sami continued. "My cousin, very smart man, he built an AI automation tool in 2024. Nothing fancy. It handled customer support tickets for small ecommerce shops. He had five paying clients. He was making real money. But he didn't raise his prices. He didn't tell anyone about it. He was scared. He kept saying 'maybe later I will promote it.' Later he saw three other people launch almost exactly the same tool and charge double what he charged and they got press coverage and he got nothing. He had the product first. He did not act."
 
-"Same principle," Archie typed. "Luck doesn't reward the passive. It rewards people who are ready to move when the moment comes."
+"Same principle," Arkad typed. "Luck doesn't reward the passive. It rewards people who are ready to move when the moment comes."
 
 By then the server had shifted moods. The tone was no longer abstract or philosophical. People were confessing missed chances the way people confess old relationship mistakes, half embarrassed, half relieved to finally say them plainly.
 
@@ -131,17 +131,17 @@ That got the biggest reaction of the night.
 
 "I know," Omar said. "I have been punished enough."
 
-Archie let them keep going for a while. Then he brought the conversation back to earth.
+Arkad let them keep going for a while. Then he brought the conversation back to earth.
 
 "Notice the pattern," he wrote. "No one in this thread missed opportunity because the opportunity was invisible. They missed it because it arrived requiring one of three uncomfortable things: speed, discipline, or courage. Sometimes all three."
 
 "So how do you fix that?" Dev asked.
 
-"You build a life that can move," Archie said. "Cash reserve. Competence. Relationships. Decisiveness. The average person thinks luck is about external randomness. Most of what people call luck is just readiness made visible at the right moment."
+"You build a life that can move," Arkad said. "Cash reserve. Competence. Relationships. Decisiveness. The average person thinks luck is about external randomness. Most of what people call luck is just readiness made visible at the right moment."
 
 ---
 
-Archie let the energy settle. Then he wrote:
+Arkad let the energy settle. Then he wrote:
 
 "Here is what I've concluded after watching hundreds of people succeed and fail at building wealth. Good luck is not something that happens to you. It is the moment when preparation meets an opportunity you are ready to act on.
 
@@ -155,7 +155,7 @@ One of the newer members, a teenager building automations for local businesses, 
 
 "So the goal isn't to become lucky. The goal is to become the kind of person luck can use."
 
-Archie answered first.
+Arkad answered first.
 
 "Exactly."
 

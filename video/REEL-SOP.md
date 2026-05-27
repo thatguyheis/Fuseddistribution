@@ -17,7 +17,19 @@ One command per blog post produces a finished 1080×1920 MP4 with:
 Zoe (Premium) must be installed:
 > System Settings → Accessibility → Spoken Content → System Voice → Customize → download **Zoe (Premium)**
 
-### 2. Pexels API key (enables background photos when no blog image exists)
+### 2. Voice (cloned — one-time setup)
+
+Custom voice uses Coqui XTTS v2 (free, local, no cloud). Auto-activates when `voice-sample/voice-reference.wav` exists.
+
+**Record your voice sample:**
+1. Open QuickTime → File → New Audio Recording
+2. Read for 15–20 seconds naturally (see `voice-sample/README.md` for the script)
+3. Export as WAV → save to `video/voice-sample/voice-reference.wav`
+4. Test: `node scripts/test-voice.mjs` (first run downloads ~1.8 GB model)
+
+Until the WAV file exists, renders fall back to macOS Zoe (Premium).
+
+### 3. Pexels API key (enables background photos when no blog image exists)
 Key is stored in `video/.env` (gitignored). Already configured.
 
 To render with photos active:
@@ -30,9 +42,31 @@ Or add to your shell profile so it's always set:
 echo 'export PEXELS_API_KEY=your_key_here' >> ~/.zprofile
 ```
 
-### 3. Music
-CC0 ambient track lives at `video/public/music/ambient-01.mp3`.
-Add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3` at render time.
+### 4. Music
+10 CC0 ambient tracks live at `video/public/music/`. All are public domain (CC0) from the "Peaceful Instrumental Background Music" collection on Internet Archive (`peaceful-tracks`).
+
+| File | Approx length |
+|------|--------------|
+| ambient-01.mp3 | 46s (short loop) |
+| ambient-02.mp3 | 16 min |
+| ambient-03.mp3 | 10 min |
+| ambient-04.mp3 | 6 min |
+| ambient-05.mp3 | 5 min |
+| ambient-06.mp3 | 8 min |
+| ambient-07.mp3 | 6.5 min |
+| ambient-08.mp3 | 7.8 min |
+| ambient-09.mp3 | 5.6 min |
+| ambient-10.mp3 | 6.3 min |
+
+**Pick rule:** Use the day-of-year mod 10 to pick a track deterministically: `N = ($(date +%j) % 10) + 1`, zero-pad to two digits. Example: day 27 → `(27 % 10) + 1 = 8` → `ambient-08.mp3`. Run this in the shell before the render command:
+
+```bash
+TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 10) + 1 )))
+```
+
+Then pass `--music=$TRACK`. Never default to `ambient-01` every time.
+
+To add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3` at render time.
 
 ---
 
@@ -53,14 +87,23 @@ The reel script maps directly from reel-data.md sections:
 
 ### Step 2 — Plan segment layout before writing
 
-Before writing a single line of reel-script.md, map out the segments on paper:
+**Pick a format first:**
 
+| Format | Target length | Best for |
+|--------|--------------|----------|
+| **Express** | 25–40s | Maximum reach — highest completion rates; 1 stat + chart or 2 stats; no sub-topics |
+| **Standard** | 60–90s | Depth posts with 3+ stats and chart |
+| **Extended** | 90–120s | Only if retention data supports it — never default to this |
+
+Prefer Express when the blog post has one dominant stat or a single strong chart. Shorter = higher completion rate = more algorithm distribution.
+
+**Segment planning:**
 1. Count the stats from reel-data.md. Each stat = one Stat segment.
 2. If reel-data.md has a `## chart`, include a Chart segment — required unless explicitly absent.
 3. Group related numbers together. Never split a stat across two segments — the number and its label belong on the same slide.
-4. Aim for 4–6 body segments total. If you have too many stats, merge two weaker ones into one Overlay.
+4. Aim for 4–6 body segments (Standard) or 2–3 (Express). If you have too many stats, merge two weaker ones into one Overlay.
 5. **Set segment duration from narration length, not the other way around.** Read the narration aloud mentally and count seconds. A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
-6. Total duration target: 60–90 seconds. Maximum: 2 minutes (120s). There is no minimum — do not rush content to hit a short target.
+6. Total duration target: Express 25–40s, Standard 60–90s. Maximum: 2 minutes (120s).
 
 ### Step 3 — Write the reel script
 Create `blog/<slug>/reel-script.md`:
@@ -69,11 +112,13 @@ Create `blog/<slug>/reel-script.md`:
 # Reel Script: [Title]
 Generated: YYYY-MM-DD
 Target length: XX seconds
+Format: Express|Standard
+Hook type: [see types below]
 
 ---
 
 ## HOOK (0–3s)
-[One punchy line — stat, question, or bold claim pulled from the blog opening]
+[Pick ONE hook type — see §Hook Formulas below]
 
 ---
 
@@ -98,7 +143,12 @@ Narration: [2–3 sentences]
 
 ## CTA (46–52s)
 Text: Full breakdown — link in comments.
-Narration: [One sentence driving to the link]
+Narration: [One sentence driving to the link. End with a save/share ask OR a direct question — see §CTA Rules.]
+
+---
+
+## DISCUSSION QUESTION
+[One direct question to viewers — short, debatable, or opinion-inviting. This goes in the caption, NOT spoken aloud. Example: "What page do most visitors skip on your site?"]
 
 ---
 
@@ -127,9 +177,69 @@ Narration: [One sentence driving to the link]
 - When in doubt, add 3s to your estimate. A reel that breathes is better than one that cuts off.
 
 **Total duration**
-- Target: 60–90 seconds. Maximum: 2 minutes. No hard minimum — never rush content.
+- Express format: 25–40s. Standard: 60–90s. Maximum: 2 minutes. No hard minimum — never rush content.
+
+**No em dashes — ever**
+- Never use `—` in any Text: field or Narration. Rewrite with a comma, period, or short new sentence.
+- Wrong: `"Same metal as any Eagle or bar — just no brand name."`
+- Right: `"Same metal as any Eagle or bar. No brand name."`
+- This applies to hook text, stat labels, overlay text, CTA text, and all narration.
+
+**Sound-off design — critical (80% of viewers watch muted)**
+- The hook Text: must communicate the whole point without audio. A viewer who watches silently must understand what the reel is about from the text on screen alone.
+- Every Stat Text: must be self-explanatory without narration. "42% MORE REVENUE" works. "42% IMPROVEMENT" does not.
+- Every segment must have a Text: value — never leave a segment with only narration and no on-screen text.
 
 Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`. Mix and match.
+
+---
+
+### Hook Formulas
+
+Every reel hook must use one of these four patterns. Log the type in `Hook type:` at the top of the script so the optimization loop can track what works.
+
+**1. Contradiction** — challenge a common belief
+> "Everyone says [common advice] — but the data says the opposite."
+> Silver: "Everyone says gold is the safe haven — silver has outperformed it 3 of the last 5 years."
+> Tech: "Everyone says social media drives local customers — but 76% check your website first."
+
+**2. Pain Point** — name a specific frustration the viewer has right now
+> "If you [specific relatable situation], this is the reason why."
+> Silver: "If you've been watching silver prices and still haven't bought, here's what you're actually waiting on."
+> Tech: "If your phone rings less than it used to, your contact page might be the reason."
+
+**3. Immediate Value** — promise a specific result in a specific time
+> "[Number] things that [specific outcome] in [short time]."
+> "3 pages every local business website needs — and why most sites skip two of them."
+
+**4. Contrarian Stat** — lead with the most surprising number from the post, no context
+> "[Shocking number]. [Label]."
+> "76%. That's how many people check your site before they call."
+
+**Hooks to avoid:**
+- Rhetorical questions with no implied answer ("Have you ever wondered about silver?")
+- Vague openers ("Here's something interesting...")
+- Starting with "I" or the brand name
+- Hooks that only work with audio — must land silently
+
+---
+
+### CTA Rules
+
+The default CTA text ("Full breakdown — link in comments") stays. The narration must end with ONE of these:
+
+**Save ask** (best for algorithm):
+> "Save this if you're thinking about [topic]."
+
+**Share ask** (second best):
+> "Send this to someone who [relatable situation]."
+
+**Discussion question** (best for comments):
+> "What [specific choice/opinion related to post] — let me know in the comments."
+
+Pick the one that fits the post. Save asks work best for silver/investing content. Share asks work best for tech/business content. Do not use all three — pick one.
+
+The `## DISCUSSION QUESTION` field in the script becomes the last line of the Facebook/Instagram caption (separate from the CTA). It should be one short, opinion-inviting question that a real viewer would actually answer.
 
 ### Step 3 — Place blog images (optional but recommended)
 If the blog post has strong images, use them instead of Pexels stock:
@@ -167,13 +277,16 @@ cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
 ```
 
 ### Step 4 — Render
+
+Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
+
 ```bash
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug>
+cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
 ```
 
-With different music:
+Example (ambient-05):
 ```bash
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-02.mp3
+cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
@@ -208,9 +321,14 @@ Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before p
 
 **Post the reel manually:**
 - Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
-- Caption: copy `## caption` from `blog/<slug>/reel-data.md`
+- Caption: copy `## caption` from `blog/<slug>/reel-data.md`, then add a blank line, then paste the `## discussion_question` on its own line
 - Hashtags: copy `## hashtags` from `blog/<slug>/reel-data.md`
 - First comment: paste the live blog URL
+
+**Timing matters — first 6 hours are the algorithm's testing window:**
+- Post when your audience is active (Facebook: Tue–Thu 9am–1pm local; Instagram: M/W/F 9–11am)
+- Respond to every comment within the first hour — each reply counts as a new engagement signal
+- Do not post again on the same platform within 3 hours of this reel — dilutes the testing window
 
 ### Step 7 — Log performance
 After 48–72 hours, log results:
@@ -261,12 +379,32 @@ PEXELS_API_KEY=... node video/scripts/fetch-photos.mjs --post=<slug>
 
 ---
 
+## Performance Targets
+
+Use these as pass/fail benchmarks for the finance and local business niche:
+
+| Metric | Target | Strong |
+|--------|--------|--------|
+| Intro retention (0–3s) | >50% | >70% |
+| Overall completion rate | >35% | >50% |
+| Save rate | >1% | >3% |
+| Share rate | >0.5% | >1% |
+| Comment rate | >0.5% | meaningful replies |
+
+If intro retention is low → the hook isn't working. Try a different hook type next post.
+If overall completion is low → reel is too long, or a mid-reel segment is losing people. Check the retention graph drop-off point.
+If save/share is low → content is good to watch but not worth keeping. Increase stat density or improve the CTA ask.
+
+---
+
 ## Optimization Loop
 
 After 5+ posts in `performance.json`, review the report:
 - Which hook types get the most views? → write more of those
-- Which duration buckets perform best? → target that length
+- Contradiction and Pain Point hooks consistently outperform generic stat hooks for business/silver content
+- Which duration buckets perform best? → Express vs Standard
 - Which music tracks correlate with engagement? → use those
-- Drop-off on long segments? → shorten or cut
+- Which CTA type (save vs share vs question) drives the most saves/comments? → standardize on it
+- Drop-off on long segments? → shorten or cut; never pad narration
 
 The report auto-ranks top posts and averages by hook type, duration, and music.

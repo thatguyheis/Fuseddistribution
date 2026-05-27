@@ -6,4 +6,6 @@ This adaptation is not presented as text by the original author, and it should n
 
 Any named characters, businesses, and scenes in this edition are fictionalized devices created to carry the lesson into a modern setting. They are not depictions of real individuals or real companies.
 
+The original lecture also connects opportunity with service, self-improvement, and practical usefulness. This adaptation preserves that current by treating market opportunity as something earned through attention, competence, and real service to people close at hand.
+
 Rights record: Nineteenth-century publication with a documented public-domain record.

@@ -1,8 +1,8 @@
 # Chapter 4: The Richest Man in the Valley
 
-In the Valley there lived a man named Archie Musk, and everyone knew his name.
+In the Valley there lived a man named Arkad Morrow, and everyone knew his name.
 
-Not because he was loud about it. Archie was remarkably understated for a man of his means. He didn't own a mega yacht. He drove a seven-year-old Model X with a cracked bumper he kept meaning to fix. He wore the same style of gray hoodie in approximately fourteen different colors. His office was a renovated warehouse in Palo Alto that looked like a WeWork if WeWork actually had good taste.
+Not because he was loud about it. Arkad was remarkably understated for a man of his means. He didn't own a mega yacht. He drove a seven-year-old Model X with a cracked bumper he kept meaning to fix. He wore the same style of gray hoodie in approximately fourteen different colors. His office was a renovated warehouse in Palo Alto that looked like a WeWork if WeWork actually had good taste.
 
 Everyone knew his name because his results were undeniable.
 
@@ -10,15 +10,15 @@ He had started his first company, a logistics software tool, at twenty-four and 
 
 Through all of it, every year, his net worth went up. Not just in the good years. Every year.
 
-One afternoon, Benzo and Koby arrived at Archie's office with six others from their old crew, Marcus, Pete, and four others who had all, in their own way, spent years in the tech world and arrived at the same uncomfortable conclusion. They were very good at making money for other people and inexplicably bad at keeping any for themselves.
+One afternoon, Bansir and Kobbi arrived at Arkad's office with six others from their old crew, Marcus, Pete, and four others who had all, in their own way, spent years in the tech world and arrived at the same uncomfortable conclusion. They were very good at making money for other people and inexplicably bad at keeping any for themselves.
 
-Archie met them in a big open room with a long communal table, a very good espresso machine, and a floor-to-ceiling whiteboard that looked like it had recently hosted a very intense strategy session. He shook everyone's hand. Seemed genuinely pleased to see them.
+Arkad met them in a big open room with a long communal table, a very good espresso machine, and a floor-to-ceiling whiteboard that looked like it had recently hosted a very intense strategy session. He shook everyone's hand. Seemed genuinely pleased to see them.
 
-When they were all seated, Benzo spoke first.
+When they were all seated, Bansir spoke first.
 
-"Archie. We went to school together. Some of us have known you for fifteen years. And none of us, not one of us at this table, has been able to figure out how you built what you built. We're not asking you to give us anything. We're asking you to tell us."
+"Arkad. We went to school together. Some of us have known you for fifteen years. And none of us, not one of us at this table, has been able to figure out how you built what you built. We're not asking you to give us anything. We're asking you to tell us."
 
-Archie leaned back in his chair and looked around the table. Then he smiled. It was the particular smile of a man who has waited for someone to ask this question.
+Arkad leaned back in his chair and looked around the table. Then he smiled. It was the particular smile of a man who has waited for someone to ask this question.
 
 "Okay," he said. "But first I want to say something. I can already see it in your faces. That idea that maybe I got lucky, or that I had some advantage you didn't." He held up a finger. "I was the son of a mid-level accountant in Fresno. No inheritance. No trust fund. No rich uncle who slipped me a check. I got a scholarship to community college, transferred to a state school, graduated with fifty thousand dollars in student loans. I was the least likely person in my graduating class to end up here."
 
@@ -28,13 +28,13 @@ The room was quiet.
 
 He stood and walked to the whiteboard.
 
-"The big shift happened because of someone named Al Gainsworth."
+"The big shift happened because of someone named Algamish Gains."
 
 ---
 
-"Al was a DeFi pioneer before anyone was calling it that," Archie said. "Back in the early days of crypto, he had already figured out onchain lending, yield farming, compounding. The whole architecture of what would eventually become a trillion-dollar sector. I was twenty-one. I was working a coding job at a startup that paid me enough to survive and not a dollar more. Every month I earned, every month I spent it. Nothing.
+"Algamish was a DeFi pioneer before anyone was calling it that," Arkad said. "Back in the early days of crypto, he had already figured out onchain lending, yield farming, compounding. The whole architecture of what would eventually become a trillion-dollar sector. I was twenty-one. I was working a coding job at a startup that paid me enough to survive and not a dollar more. Every month I earned, every month I spent it. Nothing.
 
-"One night Al came into the office needing a dev for a rush job. A complex smart contract integration that three other engineers had already said was impossible on the timeline. I said I'd do it if he told me something valuable in return.
+"One night Algamish came into the office needing a dev for a rush job. A complex smart contract integration that three other engineers had already said was impossible on the timeline. I said I'd do it if he told me something valuable in return.
 
 "He laughed at me. Called me a cheeky kid. But we made the deal.
 
@@ -44,7 +44,7 @@ He stood and walked to the whiteboard.
 
 "'You want to know the secret?' he said. 'Here it is. I found the path to wealth the day I understood that a portion of everything I earned belonged to me.'"
 
-Archie paused. Let it land.
+Arkad paused. Let it land.
 
 "I stared at him. I said, 'What are you talking about? All of it belongs to me. I earn it.'
 
@@ -58,17 +58,17 @@ Archie paused. Let it land.
 
 ---
 
-Archie turned back to the table.
+Arkad turned back to the table.
 
 "I tried it. Skeptical, but I tried it. I set up an automatic transfer the day I got paid. Ten percent, straight to a separate account I called 'Not For You.' And here's what they don't tell you: I didn't miss it. Genuinely did not notice it was gone. I just adjusted. Within a few months I had a small but real stack of cash that was *mine*. Not owed to anyone. Not earmarked for anything. Just mine.
 
-"That feeling changed something. I started wanting to learn about investing. Al taught me not to put that savings into random speculations. Don't hand your money to someone promising 100x returns in two weeks. Don't invest in things you don't understand. Find wise people who have actually done it and learn from them. Start safe and simple. Let it compound. Time is the real asset."
+"That feeling changed something. I started wanting to learn about investing. Algamish taught me not to put that savings into random speculations. Don't hand your money to someone promising 100x returns in two weeks. Don't invest in things you don't understand. Find wise people who have actually done it and learn from them. Start safe and simple. Let it compound. Time is the real asset."
 
 He stopped. Looked around the room.
 
-"I made mistakes. First year, I gave my savings to a guy I trusted. Aziz the Crypto Bro. He put it into some NFT scheme he swore was a sure thing. I lost everything. Al was not surprised. He told me: 'If you want advice about yield farming, ask someone who actually farms yield. Don't ask Aziz.' The lesson cost me one full year of savings. I earned it back in a year. The lesson stayed forever.
+"I made mistakes. First year, I gave my savings to a guy I trusted. Azmur the Crypto Bro. He put it into some NFT scheme he swore was a sure thing. I lost everything. Algamish was not surprised. He told me: 'If you want advice about yield farming, ask someone who actually farms yield. Don't ask Azmur.' The lesson cost me one full year of savings. I earned it back in a year. The lesson stayed forever.
 
-"I found a DeFi protocol founder named Aggie who actually generated real yield from real assets. I lent him my savings at a fair rate. He paid it back. And kept paying. I reinvested the returns. Those returns compounded. Slowly, not overnight, the machine began to run by itself.
+"I found a DeFi protocol founder named Agar who actually generated real yield from real assets. I lent him my savings at a fair rate. He paid it back. And kept paying. I reinvested the returns. Those returns compounded. Slowly, not overnight, the machine began to run by itself.
 
 "You want to know how I became the richest man in the Valley? That's how. Not a secret. Not luck. Consistency. One tenth off the top, always. Never invest in what you don't understand. Find good operators and invest alongside them. Let compound interest do the heavy lifting. Whether you're putting that ten percent into Bitcoin and dollar-cost averaging through every cycle, or into index funds and real estate, or into a DeFi protocol with a real track record, the mechanism is the same. You give your money a job and then you leave it alone."
 
@@ -76,13 +76,13 @@ He capped the marker.
 
 "Who at this table is going to start this week?"
 
-Benzo was the first to raise his hand.
+Bansir was the first to raise his hand.
 
 He was not the only one.
 
 ---
 
-Years later, the people in that room who had raised their hands became the ones Archie most enjoyed helping. He coached them. Pointed them toward good investments. Protected them from bad ones. And watched, with the satisfaction of a man who has passed something on, as their stacks grew.
+Years later, the people in that room who had raised their hands became the ones Arkad most enjoyed helping. He coached them. Pointed them toward good investments. Protected them from bad ones. And watched, with the satisfaction of a man who has passed something on, as their stacks grew.
 
 The ones who nodded politely and went back to their old habits remained, as they had always been, very good at what they did and very confused about why they had nothing to show for it.
 

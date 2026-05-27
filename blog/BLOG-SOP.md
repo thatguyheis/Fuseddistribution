@@ -165,17 +165,66 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 
 ## 9. Writing Style
 
-**Never use em dashes (—) in blog post body content.** Rewrite with comma or period.
+### Hard formatting rules (violations = rewrite, no exceptions)
 
-**Banned words:** leverage, utilize, streamline, robust, seamlessly, cutting-edge, game-changing, dive in, delve into, it's important to note, in today's digital landscape, first and foremost, in conclusion, unlock, empower, harness, elevate, transform, comprehensive, holistic, synergy, ecosystem.
+- **No em dashes (—).** Replace with a comma, period, or two sentences. Never use an em dash to parenthetically expand a clause.
+- **No rhetorical question hooks.** Never open a post or section with a question like "Have you ever wondered...?"
+- **No passive voice** when active is clearer.
+- **Lead with the main point.** No long warm-up intros.
 
-**Write like a person:**
-- Short sentences. Mix with longer ones.
-- Use "you" and "your business" directly.
-- Numbers beat generalizations.
-- No rhetorical question hooks.
-- No passive voice when active is clearer.
-- Lead with the main point — no long intros.
+---
+
+### Banned words and phrases
+
+Every item below is a hard ban. If any appear in a draft, rewrite the sentence from scratch.
+
+**AI buzzwords — inflated verbs:**
+leverage, utilize, streamline, facilitate, foster, harness, empower, elevate, transform, optimize, spearhead, navigate, unlock, revolutionize, embark, pave the way, capitalize on, lay the groundwork, drive synergies
+
+**AI buzzwords — dramatic nouns:**
+tapestry, landscape, realm, journey, beacon, cornerstone, catalyst, nuance, ecosystem, synergy, paradigm, testament, watershed, nexus
+
+**Corporate filler:**
+robust, seamlessly, cutting-edge, game-changing, best-in-class, unparalleled, scalable, holistic, comprehensive, end-to-end, value-add, best practices
+
+**Significance inflation:**
+crucial, vital, significant, intricate, paramount, transformative, impactful, groundbreaking, innovative, dynamic, vibrant
+
+**Hedging phrases (sounds like a disclaimer, not a person):**
+it's important to note, it's worth noting, it should be mentioned, it's worth mentioning, one might argue, it could be suggested, it is important to understand, needless to say, as a matter of fact, in light of the fact that
+
+**Filler transitions (AI's crutch words):**
+moreover, furthermore, additionally, consequently, subsequently, accordingly, notably, thus, indeed, certainly, undoubtedly, in conclusion, to summarize, to recap, first and foremost, last but not least
+
+**Polished openers (instant AI tell):**
+In today's digital landscape, In an era of, In the modern era, When it comes to, At the end of the day, In today's world, As we navigate, In recent years
+
+**Specific banned phrases (full strings):**
+dive in, delve into, delve deeper, unlock the power, unleash the potential, take it to the next level, push the boundaries, bridge the gap, a testament to, embark on a journey, master the art of, in this article, in this blog post, in this guide
+
+---
+
+### Write like a person
+
+- Short sentences. Mix with longer ones. Vary deliberately — same length every sentence is an AI tell.
+- Use "you" and "your" directly. No third-person distance.
+- Numbers beat vague claims. "76% of visitors check your contact page" beats "most visitors look for contact info."
+- Say what something does, not what it "enables" or "allows."
+- Use contractions where natural: "it's" not "it is," "you're" not "you are."
+- If a sentence could appear in a brochure or press release, rewrite it.
+- No filler at the start of sentences: "Basically," "Simply," "Just," "Really," "Essentially," "Actually" — cut them.
+- One idea per sentence when making a key point. Do not stack three clauses with commas.
+- Opinions are allowed. "This approach works better" beats "this approach may be considered more effective."
+
+---
+
+### Tone
+
+- Helpful and direct. Not enthusiastic, not corporate.
+- Treat the reader as smart and busy.
+- No hype, no urgency tricks, no scarcity language.
+- Silver/investing posts: matter-of-fact, like a knowledgeable buyer talking to a new buyer.
+- Tech/website posts: like a local contractor who has seen what works and what doesn't.
 
 ---
 
@@ -194,7 +243,8 @@ File path: `blog/[slug]/reel-data.md`
 ```markdown
 # Reel Data: [slug]
 topic: silver|tech
-hook: One punchy line — stat or bold claim from post opening
+hook: One punchy line — use Contradiction / Pain Point / Immediate Value / Contrarian Stat formula (see REEL-SOP.md §Hook Formulas). Must land without audio.
+hook_type: contradiction|pain_point|immediate_value|contrarian_stat
 
 ## stats
 - text: 42% Label In 5 Words Max
@@ -216,7 +266,10 @@ text: Full breakdown — link in comments.
 narration: One sentence driving to the link.
 
 ## caption
-Facebook caption. 2–4 sentences. No hashtags.
+Facebook caption. 2–4 sentences. No hashtags. Do NOT include the discussion_question here — it gets appended separately at post time.
+
+## discussion_question
+One short opinion-inviting question for caption close. Example: "Which of these pages does your site actually have?"
 
 ## hashtags
 #Tag1 #Tag2 #Tag3
@@ -236,7 +289,37 @@ Rules:
 
 ---
 
-## 12. Publish
+## 12. topic-history.md
+
+File path: `blog/topic-history.md` — shared file, committed with every new post.
+
+**Purpose:** The cron agent reads this before picking a topic to avoid repeating angles. You append after each post.
+
+**Format:**
+
+```markdown
+## Tech Posts
+
+| Date | Slug | Broad Category | Angle |
+|------|------|----------------|-------|
+| YYYY-MM-DD | slug-here | Category | One-line angle description |
+
+## Silver Posts
+
+| Date | Slug | Broad Category | Angle |
+|------|------|----------------|-------|
+| YYYY-MM-DD | slug-here | Category | One-line angle description |
+```
+
+**Rules:**
+- Append to the correct section (Tech Posts or Silver Posts) after each post
+- `Broad Category` is a short label: `Websites`, `Google`, `Marketing`, `Social Media`, `General` (tech) or `Buying`, `Storing`, `Pricing`, `Types`, `General` (silver)
+- `Angle` is one sentence — specific enough to detect near-duplicates
+- No post same angle within 180 days; no post same broad category within 7 days
+
+---
+
+## 13. Publish
 
 ### Step 1 — Commit and push to GitHub
 ```bash

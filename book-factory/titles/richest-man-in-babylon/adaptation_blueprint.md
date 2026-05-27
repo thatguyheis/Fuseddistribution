@@ -24,6 +24,25 @@ Silicon Valley, startup life, freelancing, software work, creator income, digita
 - Use fictionalized names and modern parodies that echo contemporary culture without depicting real people.
 - Let the humor stay dry and occasional; the financial lesson must always remain clear.
 
+## Source-Aligned Cast Map
+
+| Source character | Adapted character | Direction |
+| --- | --- | --- |
+| Bansir | Bansir | Keep the craftsman seeker close to the original name while making him a modern app developer. |
+| Kobbi | Kobbi | Keep the musician friend close to the source and frame him as a producer in the streaming economy. |
+| Arkad | Arkad Morrow | Preserve the central wealthy teacher's name; add a fictional modern surname with high-profile founder energy. |
+| Algamish | Algamish Gains | Keep the mentor's ancient shape while giving him a modern finance-builder edge. |
+| Nomasir | Nomas Morrow | Keep Arkad's son aligned to the source while making the family connection clear. |
+| Kalabab | Kalabab | Keep the traveling storyteller's source name and position him as a blockchain veteran. |
+| Mathon | Mathon Thorne | Preserve the lender's name shape while giving him a polished modern creditor persona. |
+| Dabasir | Dabasir | Keep the debt-recovery figure close to the source and modernize his circumstances. |
+| Tarkad | Tarkad | Preserve the cautionary debtor's name exactly. |
+| Sharru Nada | Sharru Nader | Keep the work-and-reputation figure close to the source with a modernized surname. |
+| Hadan Gula | Hadan Gray | Keep the privileged grandson close to source while removing direct ancient phrasing. |
+| Arad Gula | Arad Gray | Keep the grandfather/mentor figure source-aligned and fully fictional. |
+| Azmur | Azmur the Crypto Bro | Keep the bad-advice investor close to source while making the risk legible to modern readers. |
+| Agar | Agar | Keep the productive operator close to source and recast him through legitimate DeFi lending. |
+
 ## Core Lesson Map
 
 1. A part of all you earn is yours to keep.
@@ -42,13 +61,13 @@ Silicon Valley, startup life, freelancing, software work, creator income, digita
 | 2 | An Historical Sketch of the Valley | Explain why a modern wealth capital still produces financially unstable people. | Silicon Valley as a modern Babylon |
 | 3 | The Dev Who Wanted Bitcoin | Introduce the seeker who works hard but retains little. | A capable software contractor trapped by overhead and drift |
 | 4 | The Richest Man in the Valley | Deliver the core law to keep part of every dollar earned. | A quietly wealthy founder explains his system |
-| 5 | Seven Cures For a Lean Wallet | Lay out the practical seven-part system for saving, budgeting, investing, and increasing earning power. | Archie teaches a hundred workers at a major tech campus |
-| 6 | Meet the Goddess of Good Luck | Show that opportunity favors prepared people who move decisively. | Archie's private Discord debates luck, timing, and hesitation |
-| 7 | The Five Laws of Bitcoin | Translate the five laws of gold into modern digital-asset and investing behavior. | A blockchain elder tells Noah Musk's story on a desert road trip |
+| 5 | Seven Cures For a Lean Wallet | Lay out the practical seven-part system for saving, budgeting, investing, and increasing earning power. | Arkad teaches a hundred workers at a major tech campus |
+| 6 | Meet the Goddess of Good Luck | Show that opportunity favors prepared people who move decisively. | Arkad's private Discord debates luck, timing, and hesitation |
+| 7 | The Five Laws of Bitcoin | Translate the five laws of gold into modern digital-asset and investing behavior. | A blockchain elder tells Nomas Morrow's story on a desert road trip |
 | 8 | The DeFi Lender | Illustrate how trustworthy lending and prudent judgment multiply wealth. | A modern lender teaches the difference between yield and delusion |
 | 9 | The Walls of the Valley | Frame protection, insurance, and preparation as the walls that preserve wealth. | Cybersecurity becomes the parable for financial defenses |
-| 10 | The Gig Worker | Tell the debt-repayment and self-respect story through a modern worker who stops running. | Dazz rebuilds his life through a strict percentages plan |
-| 11 | The Blockchain Records From the Valley | Use recovered digital records to prove that the system works across time. | A future scholar decodes Dazz's onchain financial discipline |
+| 10 | The Gig Worker | Tell the debt-repayment and self-respect story through a modern worker who stops running. | Dabasir rebuilds his life through a strict percentages plan |
+| 11 | The Blockchain Records From the Valley | Use recovered digital records to prove that the system works across time. | A future scholar decodes Dabasir's onchain financial discipline |
 | 12 | The Luckiest Dev in the Valley | End by tying luck, work, and earned competence together. | A convoy lesson about craft, humility, and inherited advantage |
 
 ## Prohibited Changes

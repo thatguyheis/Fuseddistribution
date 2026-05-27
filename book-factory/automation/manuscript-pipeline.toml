@@ -7,7 +7,8 @@ prompt = """
 Advance approved book records through the Book Factory workflow in /Users/nick/Documents/New project.
 For any title that is rights-cleared, generate the adaptation blueprint and stop for editorial review.
 For any title with blueprint approval, generate manuscript assets and stop for editorial review.
-For any title approved for packaging, assemble the KDP package.
+For any title approved for packaging, first confirm source-fidelity review, AI publication compliance, public-domain differentiation evidence, and real-person/brand risk review.
+Only assemble the KDP package after those checks are clear.
 Do not move unresolved-rights titles forward.
 Open an inbox item summarizing what advanced, what is blocked, and the next human approval needed.
 """

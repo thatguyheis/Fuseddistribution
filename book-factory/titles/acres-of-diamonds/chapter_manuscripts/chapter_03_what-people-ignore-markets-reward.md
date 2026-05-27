@@ -90,7 +90,7 @@ Before they left, Nora offered him one final distinction.
 
 On the drive back, Luke repeated the line to himself until it became too sharp to ignore.
 
-On the drive back, Eli glanced at Luke and grinned.
+Eli glanced over and grinned.
 
 "You look offended."
 
@@ -100,7 +100,7 @@ On the drive back, Eli glanced at Luke and grinned.
 
 "By how solvable this all seems now that someone competent explained it."
 
-That is another reason hidden gold remains hidden. The lesson sounds obvious after you finally accept it. Before then, pride keeps the mind foggy. We tell ourselves that if an opportunity were truly valuable, more sophisticated people would already be there. Often the reverse is true. The more image-conscious the ambitious class becomes, the more value gets stranded inside markets they consider beneath them.
+That is another reason hidden gold remains hidden. The lesson sounds obvious after you finally accept it. Before then, pride keeps the mind foggy. We tell ourselves that if an opportunity were truly valuable, more sophisticated people would already be there. Often the reverse is true. The more image-conscious ambitious people become, the more value gets stranded inside markets they consider beneath them.
 
 The market does not care whether a business sounds elegant on a podcast. It cares whether the problem hurts, repeats, and gets funded.
 

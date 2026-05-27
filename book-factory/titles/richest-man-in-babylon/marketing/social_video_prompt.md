@@ -20,7 +20,7 @@ The tone should be:
 - aspirational without looking fake
 - modern, premium, and algorithm-friendly
 
-Use fictional characters only. Keep the parody energy of Silicon Valley wealth culture, but do not depict real public figures or real companies. The character `Archie` should feel like a fictional larger-than-life tech billionaire archetype, with no resemblance to any specific real person.
+Use fictional characters only. Keep the parody energy of Silicon Valley wealth culture, but do not depict real public figures or real companies. The character `Arkad` should feel like a fictional larger-than-life tech billionaire archetype, with no resemblance to any specific real person.
 
 ## Nano Banana Master Prompt
 
@@ -29,12 +29,12 @@ Create a 9:16 vertical, ultra-cinematic social video trailer for a modern narrat
 
 The trailer should feel like a cross between a prestige startup drama, a viral motivational short film, and a luxury finance movie teaser. The visual world is modern Silicon Valley: glass office buildings, Palo Alto coffee shops, glowing laptop screens at night, expensive electric cars, startup warehouses, clean coworking spaces, group chats buzzing, crypto charts, rent bills, credit card statements, and tense late-night ambition.
 
-Center the story on a fictional broke-but-talented app developer named Benzo. He is smart, exhausted, behind on bills, and surrounded by signs of wealth he does not actually possess. He watches richer people glide through the Valley while he is drowning in overdue payments, unfinished code, and quiet financial panic. Then he hears about Archie, a fictional wealthy tech operator with an almost mythic reputation for understanding money. Archie should feel calm, understated, precise, and quietly powerful. He is not flashy. He is the man who understands the rules.
+Center the story on a fictional broke-but-talented app developer named Bansir. He is smart, exhausted, behind on bills, and surrounded by signs of wealth he does not actually possess. He watches richer people glide through the Valley while he is drowning in overdue payments, unfinished code, and quiet financial panic. Then he hears about Arkad, a fictional wealthy tech operator with an almost mythic reputation for understanding money. Arkad should feel calm, understated, precise, and quietly powerful. He is not flashy. He is the man who understands the rules.
 
 The trailer should escalate like a movie preview:
 1. Open with money stress, tech ambition, and lifestyle illusion
-2. Show Benzo and his friends realizing they are earning but not building wealth
-3. Introduce Archie like a legend
+2. Show Bansir and his friends realizing they are earning but not building wealth
+3. Introduce Arkad like a legend
 4. Reveal that ancient laws of money still control modern wealth
 5. Land on a powerful transformation promise
 6. End with the book title as a prestige reveal
@@ -46,9 +46,9 @@ Visual motifs:
 - code on a laptop at 2 a.m.
 - a white luxury EV rolling past modest apartments
 - coffee shop conversations with startup founders
-- a quiet, powerful entrance for Archie
+- a quiet, powerful entrance for Arkad
 - crypto charts, stock graphs, banking apps, legal pads with numbers
-- Benzo and his friends walking with purpose through Palo Alto or San Jose
+- Bansir and his friends walking with purpose through Palo Alto or San Jose
 - moody conference-room scenes, polished warehouse office, city lights at dusk
 - text-message stress, payment notifications, silent panic
 - then a shift into control, discipline, compounding, financial clarity
@@ -99,7 +99,7 @@ Use this pacing and script energy:
 
 0:00 - 0:03
 Hook with rapid, high-status stress images:
-overdue bills, glowing code editor, rent note, luxury EV outside, crypto chart down, Benzo staring at numbers.
+overdue bills, glowing code editor, rent note, luxury EV outside, crypto chart down, Bansir staring at numbers.
 On-screen text:
 "You live in the richest place on earth..."
 
@@ -110,7 +110,7 @@ Voiceover:
 "In the Valley, everyone looks rich. Few actually are."
 
 0:08 - 0:14
-Show Benzo and his crew:
+Show Bansir and his crew:
 smart, talented, overworked, still broke, sitting on front steps, talking late at night, frustrated but hungry.
 Voiceover:
 "They could build apps. Raise money. Ship products. But they still couldn't keep a dollar."
@@ -118,12 +118,12 @@ On-screen text:
 "Earning isn't wealth."
 
 0:14 - 0:21
-Introduce Archie like a legend:
+Introduce Arkad like a legend:
 quiet entrance, understated power, clean warehouse office, calm face, everyone watching him.
 Voiceover:
 "Then they went looking for the one man who understood the rules."
 On-screen text:
-"Archie"
+"Arkad"
 
 0:21 - 0:31
 Escalate into the philosophy:
@@ -138,7 +138,7 @@ On-screen text flashes:
 
 0:31 - 0:37
 Shift into transformation:
-Benzo walking with purpose, cleaner workspace, stronger posture, better decisions, calm power, golden light entering the frame.
+Bansir walking with purpose, cleaner workspace, stronger posture, better decisions, calm power, golden light entering the frame.
 Voiceover:
 "The game was never about making more. It was about keeping what mattered... and putting it to work."
 
@@ -184,5 +184,5 @@ Use any of these as the opening line:
 - Favor realism over fantasy.
 - The first five seconds matter most.
 - Keep the financial pain emotionally clear before the wealth lesson lands.
-- Archie should feel mysterious, disciplined, and authoritative, not loud.
+- Arkad should feel mysterious, disciplined, and authoritative, not loud.
 - The ending should sell a transformation, not just a book.

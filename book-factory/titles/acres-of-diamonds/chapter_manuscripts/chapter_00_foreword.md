@@ -14,11 +14,11 @@ Modern business culture makes the problem worse. We live in a time that glamoriz
 
 This book is not anti-growth, anti-scale, or anti-ambition. It is anti-self-deception.
 
-It argues for something much simpler and much harder: see clearly before you run. Inspect your ground before you abandon it. Look at your current field of view with enough honesty to notice what real customers repeatedly pay to solve, what practical frustrations go unserved, what ordinary businesses are badly run, what hidden trust you already have access to, and what work you have dismissed simply because it does not produce social excitement.
+It argues for something much simpler and much harder: see clearly before you run. Inspect your ground before you abandon it. Look at your current field of view with enough honesty to notice what real customers repeatedly pay to solve, what practical frustrations go unserved, what ordinary businesses are badly run, where trust already exists, and what work you have dismissed because it does not produce social excitement.
 
 Hidden gold rarely announces itself in language the ego enjoys.
 
-It looks like a tedious service call. A broken handoff. A vendor nobody trusts. A category smart people ignore because the brand is ugly. A local market with stale operators, sloppy standards, and customers who have learned to expect disappointment. Underneath that disappointment there is often money. Not glamorous money. Better. Durable money.
+It looks like a tedious service call. A broken handoff. A vendor nobody trusts. A category smart people ignore because the brand is ugly. A local market with stale operators, sloppy standards, and customers who have learned to expect disappointment. Underneath that disappointment there is often money. Not glamorous money. Durable money.
 
 The pages that follow tell that lesson through a modern story. Luke Mercer is not a genius, a victim, or a fool. He is something more useful than any of those. He is a recognizable ambitious person. He has talent. He has taste. He has energy. He also has the modern disease of wanting his opportunity to look impressive before he has made it profitable. That disease costs him dearly.
 

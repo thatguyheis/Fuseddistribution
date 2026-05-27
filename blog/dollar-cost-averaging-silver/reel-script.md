@@ -1,6 +1,6 @@
 # Reel Script: Stop Trying to Time the Silver Market
 Generated: 2026-05-26
-Target length: 41 seconds
+Target length: 52 seconds
 
 ---
 
@@ -11,21 +11,24 @@ Stop trying to time the silver market. The investors who consistently build weal
 
 ## BODY
 
-**Overlay 1** (3–13s)
-Text: "DCA Investor Earns $2,630 More Over 5 Years"
+**Stat 1** (3–13s)
+Text: $2,630 MORE OVER 5 YEARS
 Narration: In an illustrative comparison of two investors each putting in 100 dollars a month over five years, the DCA investor ended at 9,840 dollars while the market timer reached only 7,210. The market timer wasn't making bad guesses — hesitation, missed windows, and emotional buying at the wrong moments compounded against them.
 
-**Overlay 2** (13–23s)
-Text: "Average Cost: ~$24.20/oz Across 2020–2025"
+**Stat 2** (13–23s)
+Text: $24.20 AVG COST PER OZ
 Narration: A monthly buyer over 2020 to 2025 would have averaged roughly 24.20 per ounce regardless of the price swings along the way. Some purchases hit peaks, some hit valleys, but the average lands comfortably below where the market sits today.
 
-**Overlay 3** (23–33s)
-Text: "Silver Starts at $30–$50/Month"
-Narration: You can start building a physical silver position for 30 to 50 dollars a month, making dollar cost averaging practical at any budget level. No large upfront commitment, no need to time anything — just a fixed amount on a regular schedule.
+**Chart** (23–38s)
+Title: DCA vs Market Timing — 5-Year Portfolio Value
+Bars:
+- DCA Investor: 100%
+- Market Timer: 73%
+Narration: The DCA investor finished with 9,840 dollars. The market timer, despite making deliberate entry decisions, ended at 7,210 — 27 percent less. Trying to time the market cost more than it saved.
 
 ---
 
-## CTA (33–41s)
+## CTA (38–52s)
 Text: See Fused Reserve Plans — link in comments.
 Narration: See how Fused Reserve makes monthly silver accumulation automatic — link in comments.
 
@@ -33,8 +36,8 @@ Narration: See how Fused Reserve makes monthly silver accumulation automatic —
 
 ## VISUAL DIRECTION
 Hook: Dark background (#041018), white Impact text, large, centered, 3-second hold.
-Overlays: Dark bg, stat text in cyan (#58d6ff) Impact, label below in white. Slide up on entry.
-Chart: Animated horizontal bars growing left to right. Cyan bars, white labels, dark bg.
+Stats: Dark bg, number in cyan (#58d6ff) Impact with count-up animation, short label below in white.
+Chart: Animated horizontal bars growing left to right. Cyan bars, white labels, dark bg. Two bars only — clean and readable.
 CTA: Dark bg, white Impact text, cyan sub-text. Simple fade in.
 Style: Dark background (#041018), white Impact text, cyan accent (#58d6ff). Ambient music only.
 

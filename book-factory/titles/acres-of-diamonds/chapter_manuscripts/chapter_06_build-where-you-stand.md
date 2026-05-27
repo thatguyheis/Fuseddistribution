@@ -6,7 +6,7 @@ Luke had learned the lesson intellectually. Now he had to behave as if he believ
 
 He did not grandly relaunch himself. He did something better. He rebuilt the business from the ground he actually had. He tightened dispatch standards. He created preventive-service tiers around the patterns customers kept describing. He improved reporting so owners could see open issues, completed work, likely risks, and scheduled maintenance without chasing three different people. He repositioned the company around clarity, coordination, and response rather than random heroics at the point of emergency.
 
-He also changed smaller things that serious businesses are secretly built on. Phone calls got answered faster. Follow-up notes became consistent. Vendors who generated repeat confusion were cut loose. Service recommendations had to be written clearly enough that a tired owner could understand them in one pass. Carmen pushed for a dashboard showing which accounts were stuck in reactive chaos and which were moving into preventative order. Eli reworked field processes so the team was not merely solving the issue in front of them but documenting the next issue likely to follow.
+He also changed smaller things that serious businesses are quietly built on. Phone calls got answered faster. Follow-up notes became consistent. Vendors who generated repeat confusion were cut loose. Service recommendations had to be written clearly enough that a tired owner could understand them in one pass. Carmen pushed for a dashboard showing which accounts were stuck in reactive chaos and which were moving into preventive order. Eli reworked field processes so the team was not merely solving the issue in front of them but documenting the next issue likely to follow.
 
 None of this looked dramatic from the outside. That is another reason most people never get rich from ordinary opportunity. They want the turning point to feel cinematic. In practice, fortunes often begin as a sequence of disciplined operational decisions that would bore a lazy observer.
 
@@ -16,7 +16,7 @@ That internal shift altered the whole enterprise. When he no longer carried priv
 
 Customers responded immediately.
 
-Not because the language was poetic. Because it matched the pain in their lives.
+Not because the language was poetic, but because it matched the pain in their lives.
 
 One six-location restaurant group moved from sporadic emergency calls into a standing agreement within sixty days. Denise referred him to another landlord who had spent two years rotating through vendors and blaming the whole city. The meal-prep company signed for monitoring, preventive service, and quarterly planning after one refrigeration scare too many. A small gym chain came in through a referral and stayed because, as the owner told Luke, "you people behave like my stress counts as part of the job."
 
@@ -24,7 +24,7 @@ That was it. That was the product.
 
 Within a year, the business looked different. Average contract value rose. Emergency work remained important, but preventive agreements began smoothing revenue. Referrals increased because customers could finally explain the company to one another in a sentence that meant something. Carmen spent less time translating panic into action because expectations were clearer. Eli stopped joking that Luke had paid tuition to the church of needless abstraction.
 
-Luke's life changed in quieter ways too. He no longer felt that humiliating split between useful work and impressive identity. The split had been false all along. He slept better because his plans no longer depended on theatrical upside. He listened better because he was not constantly trying to bend every conversation toward some more glamorous future. He noticed, with a mixture of relief and embarrassment, that reality had become easier to respect once he stopped using status as a measuring device.
+Luke's life changed in quieter ways too. He no longer felt that humiliating split between useful work and impressive identity. The split had been false all along. He slept better because his plans no longer depended on theatrical upside. He listened better because he was not constantly trying to bend every conversation toward a more glamorous future. He noticed, with a mixture of relief and embarrassment, that reality became easier to respect once he stopped using status as a measuring device.
 
 Nora, hearing the progress, offered a summary Luke never forgot.
 
