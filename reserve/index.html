@@ -16,7 +16,7 @@
     <meta name="twitter:image" content="https://fuseddistribution.com/og-image.png" />
     <meta property="og:image" content="https://fuseddistribution.com/og-image.png" />
     <meta property="og:locale" content="en_US" />
-    <meta name="theme-color" content="#090b0f" />
+    <meta name="theme-color" content="#060708" />
     <meta name="author" content="Fused Distribution" />
     <link rel="canonical" href="https://fuseddistribution.com/reserve/" />
     <script type="application/ld+json">
@@ -34,158 +34,149 @@
           "@type": "Product",
           "@id": "https://fuseddistribution.com/reserve/#starter",
           "name": "Fused Reserve — Starter",
-          "description": "Entry-level monthly silver subscription. $100/month recurring. 1 preference slot — choose from junk silver, bullion, silver dollars, numismatic, world coins, or best price. Ship when ready or hold in allocated storage. Access to low-premium silver through direct sourcing.",
+          "description": "Entry-level monthly silver subscription. $100/month recurring. 1 preference slot.",
           "brand": { "@id": "https://fuseddistribution.com/#organization" },
           "url": "https://fuseddistribution.com/reserve/#plans",
-          "offers": {
-            "@type": "Offer",
-            "name": "Starter — Monthly Silver Subscription",
-            "price": "100.00",
-            "priceCurrency": "USD",
-            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "100.00", "priceCurrency": "USD", "unitText": "MONTH" },
-            "availability": "https://schema.org/InStock",
-            "seller": { "@id": "https://fuseddistribution.com/#organization" },
-            "url": "https://fuseddistribution.com/reserve/#plans"
-          }
+          "offers": { "@type": "Offer", "name": "Starter", "price": "100.00", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "100.00", "priceCurrency": "USD", "unitText": "MONTH" }, "availability": "https://schema.org/InStock", "seller": { "@id": "https://fuseddistribution.com/#organization" }, "url": "https://fuseddistribution.com/reserve/#plans" }
         },
         {
           "@type": "Product",
           "@id": "https://fuseddistribution.com/reserve/#stacker",
           "name": "Fused Reserve — Stacker",
-          "description": "Core monthly silver subscription for repeat buyers. $250/month recurring. 2 preference slots with equal-split fulfillment. Priority access to curated silver drops. Diversify across silver types each month.",
+          "description": "Core monthly silver subscription. $250/month recurring. 2 preference slots.",
           "brand": { "@id": "https://fuseddistribution.com/#organization" },
           "url": "https://fuseddistribution.com/reserve/#plans",
-          "offers": {
-            "@type": "Offer",
-            "name": "Stacker — Monthly Silver Subscription",
-            "price": "250.00",
-            "priceCurrency": "USD",
-            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "250.00", "priceCurrency": "USD", "unitText": "MONTH" },
-            "availability": "https://schema.org/InStock",
-            "seller": { "@id": "https://fuseddistribution.com/#organization" },
-            "url": "https://fuseddistribution.com/reserve/#plans"
-          }
+          "offers": { "@type": "Offer", "name": "Stacker", "price": "250.00", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "250.00", "priceCurrency": "USD", "unitText": "MONTH" }, "availability": "https://schema.org/InStock", "seller": { "@id": "https://fuseddistribution.com/#organization" }, "url": "https://fuseddistribution.com/reserve/#plans" }
         },
         {
           "@type": "Product",
           "@id": "https://fuseddistribution.com/reserve/#collector-access",
           "name": "Fused Reserve — Collector Access",
-          "description": "Premium monthly silver subscription for serious stackers and collectors. $500/month recurring. 3 preference slots with fully custom split control (e.g. 50% junk / 30% bullion / 20% best price). Early access to vintage and unusual finds. Priority fulfillment and higher-budget sourcing.",
+          "description": "Premium monthly silver subscription. $500/month recurring. 3 preference slots with custom split.",
           "brand": { "@id": "https://fuseddistribution.com/#organization" },
           "url": "https://fuseddistribution.com/reserve/#plans",
-          "offers": {
-            "@type": "Offer",
-            "name": "Collector Access — Monthly Silver Subscription",
-            "price": "500.00",
-            "priceCurrency": "USD",
-            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "500.00", "priceCurrency": "USD", "unitText": "MONTH" },
-            "availability": "https://schema.org/InStock",
-            "seller": { "@id": "https://fuseddistribution.com/#organization" },
-            "url": "https://fuseddistribution.com/reserve/#plans"
-          }
+          "offers": { "@type": "Offer", "name": "Collector Access", "price": "500.00", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "500.00", "priceCurrency": "USD", "unitText": "MONTH" }, "availability": "https://schema.org/InStock", "seller": { "@id": "https://fuseddistribution.com/#organization" }, "url": "https://fuseddistribution.com/reserve/#plans" }
         }
       ]
     }
     </script>
     <style>
       :root {
-        --bg: #090b0f;
-        --bg-2: #11151b;
-        --panel: rgba(21, 26, 34, 0.88);
-        --panel-soft: rgba(29, 35, 44, 0.7);
-        --line: rgba(209, 217, 230, 0.16);
-        --text: #f5f7fb;
-        --muted: #b7bfcb;
-        --silver: #dde3ec;
-        --silver-dark: #8d97a5;
+        --bg: #060708;
+        --panel: rgba(14, 12, 10, 0.86);
+        --panel-soft: rgba(18, 16, 13, 0.68);
+        --line: rgba(200, 185, 140, 0.1);
+        --text: #f0ece4;
+        --muted: #96917f;
+        --silver: #d0d8e4;
+        --silver-dark: #7e8a96;
         --accent: #f2c66d;
-        --accent-soft: rgba(242, 198, 109, 0.14);
-        --shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+        --accent-dark: #c9922a;
+        --shadow: 0 32px 90px rgba(0, 0, 0, 0.72);
+        --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+        --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
       }
 
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
 
       body {
         margin: 0;
         min-height: 100vh;
         color: var(--text);
         font-family: Georgia, "Times New Roman", serif;
-        background:
-          radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 26%),
-          radial-gradient(circle at 85% 18%, rgba(242, 198, 109, 0.09), transparent 20%),
-          linear-gradient(180deg, #06080b 0%, #0c1015 40%, #080a0e 100%);
+        background: var(--bg);
+        overflow-x: hidden;
       }
 
+      /* Vault interior — warm amber overhead lighting */
       body::before {
         content: "";
         position: fixed;
         inset: 0;
         background:
-          radial-gradient(circle at 20% 26%, rgba(221, 227, 236, 0.06), transparent 18%),
-          linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.02) 50%, transparent 100%);
+          radial-gradient(ellipse 65% 35% at 50% 0%,   rgba(195, 150, 55, 0.11), transparent),
+          radial-gradient(ellipse 40% 50% at 92% 15%,  rgba(210, 165, 60, 0.09), transparent),
+          radial-gradient(ellipse 50% 40% at 8%  80%,  rgba(170, 135, 55, 0.07), transparent),
+          radial-gradient(ellipse 80% 30% at 50% 100%, rgba(140, 110, 40, 0.05), transparent),
+          linear-gradient(180deg, #060708 0%, #090a08 55%, #060707 100%);
         pointer-events: none;
+        z-index: 0;
       }
 
-      a {
-        color: inherit;
-        text-decoration: none;
+      /* Vault door concentric rings — top-right corner */
+      body::after {
+        content: "";
+        position: fixed;
+        width: 560px;
+        height: 560px;
+        top: -90px;
+        right: -90px;
+        border-radius: 50%;
+        border: 1px solid rgba(200, 170, 85, 0.055);
+        box-shadow:
+          0 0 0  55px rgba(200, 170, 80, 0.032),
+          0 0 0 110px rgba(200, 170, 80, 0.022),
+          0 0 0 165px rgba(200, 170, 80, 0.015),
+          0 0 0 220px rgba(200, 170, 80, 0.009),
+          0 0 0 275px rgba(200, 170, 80, 0.005);
+        pointer-events: none;
+        z-index: 0;
       }
+
+      a { color: inherit; text-decoration: none; }
 
       .page {
         width: min(1220px, calc(100% - 32px));
         margin: 18px auto 42px;
         border-radius: 30px;
         overflow: visible;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        background:
-          linear-gradient(180deg, rgba(14, 18, 24, 0.96), rgba(7, 9, 13, 0.98));
-        box-shadow: var(--shadow);
-        position: relative;
-      }
-
-      .page::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.05), transparent 15%),
-          radial-gradient(circle at 82% 28%, rgba(242, 198, 109, 0.08), transparent 16%);
-        pointer-events: none;
-      }
-
-      .topbar {
-        position: relative;
-        z-index: 50;
-      }
-
-      .hero,
-      .main {
+        border: 1px solid rgba(200, 175, 100, 0.08);
+        background: linear-gradient(180deg, rgba(12, 11, 9, 0.94), rgba(7, 6, 5, 0.97));
+        box-shadow: var(--shadow), 0 0 120px rgba(180, 140, 50, 0.055);
         position: relative;
         z-index: 1;
       }
 
+      /* Inner vault light from above */
+      .page::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 30px;
+        background:
+          radial-gradient(ellipse 70% 18% at 50% 0%,   rgba(210, 165, 60, 0.07), transparent),
+          radial-gradient(circle    at 88% 12%,         rgba(210, 165, 60, 0.05), transparent 28%),
+          radial-gradient(ellipse 60% 15% at 50% 100%,  rgba(170, 130, 45, 0.04), transparent);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* ── TOPBAR ─────────────────────────────────────── */
       .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 18px;
-        padding: 20px 30px;
-        background: rgba(13, 16, 22, 0.9);
-        backdrop-filter: blur(14px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 30px;
+        background: rgba(9, 8, 7, 0.9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(200, 175, 100, 0.07);
+        border-radius: 30px 30px 0 0;
+        transition: background 0.3s var(--ease-out), border-radius 0.3s var(--ease-out);
       }
 
-      .brand {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+      .topbar.scrolled {
+        border-radius: 0;
+        background: rgba(7, 6, 5, 0.96);
+        border-bottom-color: rgba(200, 175, 100, 0.1);
       }
+
+      .brand { display: flex; flex-direction: column; gap: 4px; }
 
       .brand-kicker {
         color: var(--accent);
@@ -204,6 +195,36 @@
         color: var(--silver);
       }
 
+      /* Mobile hamburger */
+      .nav-hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 9px 10px;
+        background: none;
+        border: 1px solid rgba(200, 175, 100, 0.12);
+        border-radius: 12px;
+        cursor: pointer;
+        transition: border-color 0.18s;
+      }
+
+      .nav-hamburger span {
+        display: block;
+        width: 20px;
+        height: 1.5px;
+        background: var(--silver);
+        border-radius: 2px;
+        transition: transform 0.22s var(--ease-out), opacity 0.18s;
+      }
+
+      .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+      .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+      @media (hover: hover) and (pointer: fine) {
+        .nav-hamburger:hover { border-color: rgba(242, 198, 109, 0.35); }
+      }
+
       .nav {
         display: flex;
         align-items: center;
@@ -219,31 +240,25 @@
         flex-wrap: wrap;
         padding: 8px 10px;
         border-radius: 999px;
-        border: 1px solid rgba(242, 198, 109, 0.18);
-        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(200, 175, 100, 0.12);
+        background: rgba(255, 255, 255, 0.02);
       }
 
       .nav a {
         font-size: 0.95rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: rgba(245, 247, 251, 0.85);
+        color: rgba(240, 236, 228, 0.76);
+        transition: color 0.15s;
       }
 
-      .nav-pages > a {
-        padding: 9px 14px;
-        border-radius: 999px;
+      .nav-pages > a { padding: 9px 14px; border-radius: 999px; }
+
+      @media (hover: hover) and (pointer: fine) {
+        .nav a:hover, .nav a:focus-visible { color: var(--accent); }
       }
 
-      .nav a:hover,
-      .nav a:focus-visible {
-        color: var(--accent);
-      }
-
-      /* Dropdown nav items */
-      .nav-item {
-        position: relative;
-      }
+      .nav-item { position: relative; }
 
       .nav-toggle {
         display: inline-flex;
@@ -258,20 +273,15 @@
         font-size: 0.95rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: rgba(245, 247, 251, 0.85);
+        color: rgba(240, 236, 228, 0.76);
         transition: color 0.15s;
       }
 
-      .nav-toggle:hover,
-      .nav-toggle:focus-visible,
-      .nav-item.open .nav-toggle {
-        color: var(--accent);
-        outline: none;
-      }
+      .nav-toggle:hover, .nav-toggle:focus-visible { color: var(--accent); outline: none; }
 
       .nav-caret {
         font-size: 0.7rem;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s var(--ease-out);
         display: inline-block;
       }
 
@@ -283,26 +293,27 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+        transition: opacity 0.22s var(--ease-out) 0.3s, visibility 0.22s ease 0.3s, transform 0.22s var(--ease-out) 0.3s;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: calc(100% + 8px);
         left: 50%;
-        transform: translateX(-50%) translateY(-6px);
+        transform: translateX(-50%) translateY(-8px);
         min-width: 200px;
         padding: 8px;
-        padding-top: 16px;
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(13, 16, 22, 0.97);
-        backdrop-filter: blur(18px);
-        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+        padding-top: 12px;
+        border-radius: 18px;
+        border: 1px solid rgba(200, 175, 100, 0.1);
+        background: rgba(10, 9, 7, 0.97);
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(180, 140, 50, 0.06);
         z-index: 200;
       }
 
       .nav-item:hover .nav-dropdown,
       .nav-item:focus-within .nav-dropdown {
-        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        transition: opacity 0.18s var(--ease-out), visibility 0.18s, transform 0.18s var(--ease-out);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -315,27 +326,26 @@
         font-size: 0.88rem;
         letter-spacing: 0.07em;
         text-transform: uppercase;
-        color: rgba(245, 247, 251, 0.78);
+        color: rgba(240, 236, 228, 0.68);
         transition: background 0.12s, color 0.12s;
       }
 
-      .nav-dropdown a:hover,
-      .nav-dropdown a:focus-visible {
-        background: rgba(242, 198, 109, 0.1);
+      .nav-dropdown a:hover, .nav-dropdown a:focus-visible {
+        background: rgba(242, 198, 109, 0.09);
         color: var(--accent);
       }
 
       .nav-dropdown-divider {
         height: 1px;
-        background: rgba(255, 255, 255, 0.07);
+        background: rgba(200, 175, 100, 0.08);
         margin: 4px 6px;
       }
 
       .status-chip {
         padding: 11px 16px;
         border-radius: 999px;
-        border: 1px solid rgba(242, 198, 109, 0.28);
-        background: rgba(242, 198, 109, 0.08);
+        border: 1px solid rgba(242, 198, 109, 0.24);
+        background: rgba(242, 198, 109, 0.06);
         color: var(--accent);
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.8rem;
@@ -344,9 +354,9 @@
         text-transform: uppercase;
       }
 
-      .hero {
-        padding: 64px 54px 42px;
-      }
+      /* ── HERO ────────────────────────────────────────── */
+      .hero { padding: 64px 54px 42px; position: relative; z-index: 1; }
+      .main { padding: 0 54px 58px; position: relative; z-index: 1; }
 
       .eyebrow {
         display: inline-flex;
@@ -354,8 +364,8 @@
         gap: 10px;
         padding: 8px 14px;
         border-radius: 999px;
-        border: 1px solid var(--line);
-        background: rgba(221, 227, 236, 0.05);
+        border: 1px solid rgba(200, 185, 140, 0.14);
+        background: rgba(200, 185, 140, 0.04);
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.8rem;
         font-weight: 700;
@@ -364,13 +374,21 @@
         color: var(--silver);
       }
 
+      /* Silver coin dot */
       .eyebrow::before {
         content: "";
         width: 9px;
         height: 9px;
         border-radius: 50%;
-        background: radial-gradient(circle at 35% 35%, #fff, #bbc3d0 60%, #768190 100%);
-        box-shadow: 0 0 0 4px rgba(221, 227, 236, 0.08);
+        background: radial-gradient(circle at 35% 35%, #fff, #c8d4e0 55%, #7e8a96 100%);
+        box-shadow: 0 0 0 3px rgba(200, 210, 230, 0.08);
+        flex-shrink: 0;
+        animation: coin-glint 4s ease-in-out infinite;
+      }
+
+      @keyframes coin-glint {
+        0%, 100% { box-shadow: 0 0 0 3px rgba(200, 210, 230, 0.07); }
+        40%       { box-shadow: 0 0 0 5px rgba(200, 210, 230, 0.04), 0 0 10px rgba(220, 200, 140, 0.3); }
       }
 
       .hero-grid {
@@ -380,11 +398,7 @@
         align-items: center;
       }
 
-      h1,
-      h2,
-      h3 {
-        margin: 0;
-      }
+      h1, h2, h3 { margin: 0; }
 
       h1 {
         margin-top: 18px;
@@ -401,13 +415,9 @@
         line-height: 1.75;
       }
 
-      .hero-actions {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-top: 28px;
-      }
+      .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
 
+      /* ── BUTTONS ─────────────────────────────────────── */
       .btn {
         display: inline-flex;
         align-items: center;
@@ -420,64 +430,77 @@
         font-weight: 800;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+        transition: transform 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
+        cursor: pointer;
       }
 
+      .btn:active { transform: scale(0.97); }
+
       .btn-primary {
-        color: #120f08;
-        background: linear-gradient(135deg, #f7d896, #cfa24b);
-        box-shadow: 0 10px 30px rgba(207, 162, 75, 0.22);
+        color: #120f06;
+        background: linear-gradient(135deg, #f7d896, #c9922a);
+        box-shadow: 0 10px 30px rgba(180, 130, 40, 0.25);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .btn-primary:hover {
+          box-shadow: 0 14px 42px rgba(210, 165, 60, 0.42), 0 0 24px rgba(210, 165, 60, 0.2);
+          transform: translateY(-1px);
+        }
       }
 
       .btn-secondary {
         color: var(--silver);
-        border-color: var(--line);
-        background: rgba(221, 227, 236, 0.05);
+        border-color: rgba(200, 185, 140, 0.16);
+        background: rgba(200, 185, 140, 0.04);
       }
 
-      .hero-metrics {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 28px;
+      @media (hover: hover) and (pointer: fine) {
+        .btn-secondary:hover {
+          border-color: rgba(200, 185, 140, 0.28);
+          background: rgba(200, 185, 140, 0.07);
+        }
       }
+
+      /* ── METRICS ─────────────────────────────────────── */
+      .hero-metrics { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
 
       .metric {
         min-width: 150px;
         padding: 16px 18px;
         border-radius: 18px;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(200, 185, 140, 0.08);
+        transition: border-color 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
       }
 
-      .metric strong {
-        display: block;
-        color: var(--silver);
-        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 1.3rem;
+      @media (hover: hover) and (pointer: fine) {
+        .metric:hover {
+          border-color: rgba(210, 175, 80, 0.18);
+          box-shadow: 0 0 22px rgba(210, 165, 60, 0.07);
+        }
       }
 
-      .metric span {
-        display: block;
-        margin-top: 4px;
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
+      .metric strong { display: block; color: var(--silver); font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 1.3rem; }
+      .metric span   { display: block; margin-top: 4px; color: var(--muted); font-size: 0.92rem; }
 
-      .hero-visual {
-        position: relative;
-        min-height: 520px;
-      }
+      /* ── HERO VISUAL / VAULT ─────────────────────────── */
+      .hero-visual { position: relative; min-height: 520px; }
 
       .vault {
         position: absolute;
         inset: 18px 0 0 0;
         border-radius: 34px;
-        border: 1px solid rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(200, 175, 90, 0.1);
         background:
-          radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.08), transparent 30%),
-          linear-gradient(145deg, rgba(56, 64, 76, 0.9), rgba(17, 20, 26, 0.96));
+          radial-gradient(ellipse 80% 30% at 50% 0%,   rgba(210, 165, 60, 0.14), transparent),
+          radial-gradient(circle       at 35% 32%,      rgba(255, 240, 190, 0.06), transparent 28%),
+          radial-gradient(circle       at 68% 68%,      rgba(160, 125, 50, 0.08), transparent 35%),
+          linear-gradient(160deg, rgba(26, 22, 16, 0.9), rgba(10, 9, 7, 0.97));
         overflow: hidden;
-        box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.03);
+        box-shadow:
+          inset 0 0 80px rgba(0, 0, 0, 0.5),
+          inset 0 0 30px rgba(200, 160, 55, 0.05);
       }
 
       .vault::before {
@@ -485,18 +508,39 @@
         position: absolute;
         inset: 24px;
         border-radius: 30px;
-        border: 1px solid rgba(221, 227, 236, 0.12);
+        border: 1px solid rgba(200, 175, 90, 0.08);
       }
 
+      /* Vault door ring motif */
+      .vault::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 1px solid rgba(200, 175, 90, 0.055);
+        box-shadow:
+          0 0 0 28px rgba(200, 175, 80, 0.028),
+          0 0 0 56px rgba(200, 175, 80, 0.018),
+          0 0 0 84px rgba(200, 175, 80, 0.01);
+        pointer-events: none;
+      }
+
+      /* Coin rings */
       .coin-ring {
         position: absolute;
         border-radius: 50%;
-        border: 14px solid rgba(214, 220, 229, 0.18);
+        border: 14px solid rgba(200, 185, 130, 0.2);
         background:
-          radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.72), rgba(173, 182, 196, 0.2) 55%, rgba(38, 43, 51, 0.05) 70%);
+          radial-gradient(circle at 35% 35%, rgba(255, 252, 230, 0.65), rgba(195, 185, 140, 0.2) 55%, rgba(45, 40, 25, 0.04) 72%);
         box-shadow:
-          inset 0 0 26px rgba(255, 255, 255, 0.18),
-          0 12px 40px rgba(0, 0, 0, 0.35);
+          inset 0 0 24px rgba(255, 240, 160, 0.14),
+          inset -4px -4px 12px rgba(0, 0, 0, 0.18),
+          0 12px 40px rgba(0, 0, 0, 0.45),
+          0 0 28px rgba(200, 165, 60, 0.08);
       }
 
       .coin-ring::before {
@@ -504,7 +548,7 @@
         position: absolute;
         inset: 12px;
         border-radius: 50%;
-        border: 1px dashed rgba(255, 255, 255, 0.18);
+        border: 1px dashed rgba(200, 180, 110, 0.16);
       }
 
       .coin-ring.large {
@@ -512,6 +556,7 @@
         height: 280px;
         top: 70px;
         left: 48px;
+        animation: coin-float-a 9s ease-in-out infinite;
       }
 
       .coin-ring.small {
@@ -519,15 +564,20 @@
         height: 170px;
         right: 48px;
         bottom: 68px;
+        animation: coin-float-b 7s ease-in-out infinite 2s;
       }
 
-      .coin-stack {
-        position: absolute;
-        right: 86px;
-        top: 84px;
-        width: 170px;
-        height: 220px;
+      @keyframes coin-float-a {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50%       { transform: translateY(-13px) rotate(1.5deg); }
       }
+
+      @keyframes coin-float-b {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50%       { transform: translateY(-9px) rotate(-1.8deg); }
+      }
+
+      .coin-stack { position: absolute; right: 86px; top: 84px; width: 170px; height: 220px; }
 
       .coin-stack span {
         position: absolute;
@@ -536,9 +586,9 @@
         height: 26px;
         border-radius: 50%;
         background:
-          radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.88), rgba(182, 191, 203, 0.62) 58%, rgba(92, 101, 115, 0.68) 100%);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.22);
+          radial-gradient(circle at 35% 35%, rgba(255, 252, 225, 0.88), rgba(190, 185, 145, 0.58) 58%, rgba(100, 90, 60, 0.65) 100%);
+        border: 1px solid rgba(220, 200, 130, 0.22);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.32), 0 2px 0 rgba(255, 240, 160, 0.12);
       }
 
       .coin-stack span:nth-child(1) { top: 0; }
@@ -555,9 +605,11 @@
         width: 252px;
         padding: 20px;
         border-radius: 22px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(8, 10, 14, 0.82);
-        backdrop-filter: blur(12px);
+        border: 1px solid rgba(200, 175, 90, 0.12);
+        background: rgba(8, 7, 5, 0.9);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(180, 140, 50, 0.06);
       }
 
       .spot-card h3 {
@@ -569,14 +621,8 @@
         margin-bottom: 12px;
       }
 
-      .spot-metals {
-        display: flex;
-        gap: 18px;
-        align-items: flex-end;
-        margin-bottom: 10px;
-      }
-
-      .spot-metal { display: flex; flex-direction: column; gap: 2px; }
+      .spot-metals { display: flex; gap: 18px; align-items: flex-end; margin-bottom: 10px; }
+      .spot-metal  { display: flex; flex-direction: column; gap: 2px; }
 
       .spot-metal-label {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
@@ -600,13 +646,10 @@
         margin: 0;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.75rem;
-        color: rgba(183, 191, 203, 0.6);
+        color: rgba(150, 145, 127, 0.6);
       }
 
-      .main {
-        padding: 0 54px 58px;
-      }
-
+      /* ── SECTIONS ────────────────────────────────────── */
       .section-head {
         display: flex;
         justify-content: space-between;
@@ -615,49 +658,39 @@
         margin: 40px 0 20px;
       }
 
-      .section-head p {
-        max-width: 560px;
-        margin: 0;
-        color: var(--muted);
-        line-height: 1.75;
-      }
+      .section-head p { max-width: 560px; margin: 0; color: var(--muted); line-height: 1.75; }
 
-      .grid-3,
-      .grid-4,
-      .plans {
-        display: grid;
-        gap: 20px;
-      }
+      .grid-3, .grid-4, .plans { display: grid; gap: 20px; }
+      .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .plans  { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-      .grid-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .grid-4 {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .plans {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
+      /* ── CARDS ───────────────────────────────────────── */
       .card,
       .plan,
       .highlight-panel,
       .cta-panel {
         border-radius: 26px;
-        border: 1px solid rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(200, 185, 130, 0.08);
         background: var(--panel);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+        box-shadow: inset 0 1px 0 rgba(220, 200, 140, 0.025);
+        transition: border-color 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out), transform 0.28s var(--ease-out);
       }
 
-      .card,
-      .plan {
-        padding: 24px;
+      @media (hover: hover) and (pointer: fine) {
+        .card:hover {
+          border-color: rgba(210, 185, 100, 0.16);
+          box-shadow:
+            inset 0 1px 0 rgba(220, 200, 140, 0.04),
+            0 0 44px rgba(190, 155, 50, 0.1),
+            0 8px 32px rgba(0, 0, 0, 0.45);
+          transform: translateY(-2px);
+        }
       }
 
-      .card span,
-      .plan span {
+      .card, .plan { padding: 24px; }
+
+      .card span, .plan span {
         display: inline-block;
         margin-bottom: 12px;
         color: var(--accent);
@@ -668,20 +701,26 @@
         text-transform: uppercase;
       }
 
-      .card p,
-      .plan p,
-      .step p,
-      .highlight-panel p,
-      .cta-panel p {
+      .card p, .plan p, .step p, .highlight-panel p, .cta-panel p {
         color: var(--muted);
         line-height: 1.72;
       }
 
+      /* ── STEPS ───────────────────────────────────────── */
       .step {
         padding: 22px;
         border-radius: 24px;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(200, 185, 130, 0.09);
         background: var(--panel-soft);
+        transition: border-color 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out), transform 0.28s var(--ease-out);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .step:hover {
+          border-color: rgba(242, 198, 109, 0.16);
+          box-shadow: 0 0 32px rgba(200, 160, 55, 0.08);
+          transform: translateY(-2px);
+        }
       }
 
       .step strong {
@@ -693,70 +732,59 @@
         text-transform: uppercase;
       }
 
+      /* ── FEATURED PLAN ───────────────────────────────── */
       .plan.featured {
         background:
-          linear-gradient(180deg, rgba(40, 33, 18, 0.72), rgba(24, 19, 12, 0.9)),
+          linear-gradient(180deg, rgba(40, 30, 10, 0.78), rgba(20, 15, 5, 0.94)),
           var(--panel);
         border-color: rgba(242, 198, 109, 0.22);
+        animation: featured-glow 3.5s ease-in-out infinite;
       }
 
-      .price {
-        display: flex;
-        align-items: baseline;
-        gap: 8px;
-        margin: 8px 0 10px;
+      @keyframes featured-glow {
+        0%, 100% {
+          border-color: rgba(242, 198, 109, 0.22);
+          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.03), 0 0 30px rgba(200, 155, 40, 0.06);
+        }
+        50% {
+          border-color: rgba(242, 198, 109, 0.44);
+          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.05), 0 0 65px rgba(200, 155, 40, 0.15), 0 0 22px rgba(200, 155, 40, 0.08);
+        }
       }
 
-      .price strong {
-        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 2rem;
-        color: var(--silver);
+      @media (hover: hover) and (pointer: fine) {
+        .plan.featured:hover {
+          box-shadow: 0 0 75px rgba(210, 165, 55, 0.16), 0 8px 36px rgba(0, 0, 0, 0.55) !important;
+          transform: translateY(-3px);
+          animation-play-state: paused;
+        }
       }
 
-      .price em {
-        font-style: normal;
-        color: var(--muted);
-      }
+      /* ── PRICE ───────────────────────────────────────── */
+      .price { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 10px; }
+      .price strong { font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 2rem; color: var(--silver); }
+      .price em { font-style: normal; color: var(--muted); }
+      .plan ul { margin: 14px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.8; }
 
-      .plan ul {
-        margin: 14px 0 0;
-        padding-left: 18px;
-        color: var(--muted);
-        line-height: 1.8;
-      }
+      /* ── PANELS ──────────────────────────────────────── */
+      .highlight-panel, .cta-panel { padding: 28px; }
 
-      .highlight-panel,
-      .cta-panel {
-        padding: 28px;
-      }
+      .two-up { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 22px; margin-top: 28px; }
 
-      .two-up {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 22px;
-        margin-top: 28px;
-      }
-
-      .mini-compare {
-        margin-top: 18px;
-        display: grid;
-        gap: 12px;
-      }
+      .mini-compare { margin-top: 18px; display: grid; gap: 12px; }
 
       .compare-row {
         display: flex;
         justify-content: space-between;
         gap: 16px;
         padding: 14px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        border-bottom: 1px solid rgba(200, 185, 130, 0.07);
         color: var(--muted);
       }
 
-      .compare-row strong {
-        color: var(--silver);
-      }
+      .compare-row strong { color: var(--silver); }
 
-      /* Past inventory gallery */
+      /* ── GALLERY ─────────────────────────────────────── */
       .gallery-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -767,10 +795,21 @@
       .gallery-card {
         border-radius: 20px;
         overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(200, 185, 130, 0.08);
         background: var(--panel-soft);
         display: flex;
         flex-direction: column;
+        transition: border-color 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out), transform 0.28s var(--ease-out);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .gallery-card:hover {
+          border-color: rgba(210, 185, 100, 0.18);
+          box-shadow: 0 0 44px rgba(190, 155, 50, 0.1), 0 8px 28px rgba(0, 0, 0, 0.5);
+          transform: translateY(-3px);
+        }
+
+        .gallery-card:hover img { transform: scale(1.04); }
       }
 
       .gallery-card img {
@@ -779,14 +818,10 @@
         height: 220px;
         object-fit: cover;
         object-position: center;
+        transition: transform 0.4s var(--ease-out);
       }
 
-      .gallery-card-body {
-        padding: 14px 16px 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
+      .gallery-card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; }
 
       .gallery-label {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
@@ -805,10 +840,21 @@
         margin: 0;
       }
 
+      /* ── NEWSLETTER CTA ──────────────────────────────── */
       .nl-cta {
         padding: 48px 28px;
-        border-top: 1px solid var(--line);
-        background: rgba(242,198,109,0.04);
+        border-top: 1px solid rgba(200, 175, 90, 0.07);
+        background: rgba(160, 120, 40, 0.04);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .nl-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 100% at 50% 110%, rgba(180, 140, 50, 0.08), transparent);
+        pointer-events: none;
       }
 
       .nl-cta-inner {
@@ -819,14 +865,10 @@
         flex-direction: column;
         align-items: center;
         gap: 16px;
+        position: relative;
       }
 
-      .nl-cta-heading {
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--text);
-      }
+      .nl-cta-heading { margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--text); }
 
       .nl-cta-body {
         margin: 0;
@@ -842,134 +884,134 @@
         padding: 12px 28px;
         border-radius: 999px;
         background: var(--accent);
-        color: #0b0e14;
+        color: #0b0a06;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.88rem;
         font-weight: 700;
         letter-spacing: 0.04em;
-        transition: opacity 0.15s;
+        transition: opacity 0.15s, transform 0.15s var(--ease-out), box-shadow 0.15s;
       }
 
-      .nl-cta-btn:hover { opacity: 0.88; }
+      @media (hover: hover) and (pointer: fine) {
+        .nl-cta-btn:hover {
+          opacity: 0.9;
+          transform: translateY(-1px);
+          box-shadow: 0 8px 28px rgba(200, 155, 50, 0.32);
+        }
+      }
 
+      .nl-cta-btn:active { transform: scale(0.97); }
+
+      /* ── FOOTER ──────────────────────────────────────── */
       .footer {
         padding: 22px 28px 34px;
-        color: rgba(183, 191, 203, 0.72);
+        color: rgba(150, 145, 127, 0.55);
         text-align: center;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
         font-size: 0.92rem;
       }
 
-      @media (max-width: 1080px) {
-        .hero-grid,
-        .two-up,
-        .grid-3,
-        .grid-4,
-        .plans,
-        .gallery-grid {
-          grid-template-columns: 1fr 1fr;
-        }
+      /* ── SCROLL REVEAL ───────────────────────────────── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
       }
 
-      @media (max-width: 680px) {
-        .gallery-grid {
-          grid-template-columns: 1fr;
-        }
-      }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
 
+      /* ── RESPONSIVE ──────────────────────────────────── */
       @media (max-width: 1080px) {
-        .hero-grid,
-        .two-up,
-        .grid-3,
-        .grid-4,
-        .plans {
-          grid-template-columns: 1fr;
-        }
-
-        .section-head,
-        .topbar {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .nav {
-          flex-wrap: wrap;
-          gap: 14px;
-        }
-
-        .nav-dropdown {
-          left: 0;
-          transform: translateY(-6px);
-        }
-
+        .hero-grid, .two-up, .grid-3, .grid-4, .plans { grid-template-columns: 1fr; }
+        .section-head { flex-direction: column; align-items: flex-start; }
+        .topbar { flex-wrap: wrap; }
+        .nav-dropdown { left: 0; transform: translateY(-8px); }
         .nav-item:hover .nav-dropdown,
-      .nav-item:focus-within .nav-dropdown {
-        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        transform: translateX(-50%) translateY(0);
-      }
-
-        @keyframes dropInMobile {
-          from { opacity: 0; transform: translateY(-6px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero,
-        .main {
-          padding-left: 26px;
-          padding-right: 26px;
-        }
+        .nav-item:focus-within .nav-dropdown { transform: translateY(0); left: 0; }
+        .hero, .main { padding-left: 28px; padding-right: 28px; }
+        .gallery-grid { grid-template-columns: 1fr 1fr; }
       }
 
       @media (max-width: 700px) {
-        .page {
-          width: calc(100% - 16px);
-          margin: 8px auto 20px;
-          border-radius: 22px;
+        .page { width: calc(100% - 16px); margin: 8px auto 20px; border-radius: 22px; }
+        .topbar { padding: 16px 20px; border-radius: 22px 22px 0 0; flex-wrap: nowrap; align-items: center; }
+        .topbar.scrolled { border-radius: 0; }
+
+        .nav-hamburger { display: flex; }
+
+        .nav {
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+          padding: 12px 0 4px;
+          border-top: 1px solid rgba(200, 175, 90, 0.07);
+          margin-top: 6px;
+          order: 99;
+          flex-basis: 100%;
         }
 
-        .hero {
-          padding-top: 44px;
+        .nav.open { display: flex; }
+
+        .nav-pages {
+          flex-direction: column;
+          align-items: flex-start;
+          border-radius: 16px;
+          width: 100%;
+          padding: 6px;
+          gap: 2px;
         }
 
-        h1 {
-          font-size: 2.45rem;
+        .nav-pages > a { width: 100%; }
+        .nav-toggle { width: 100%; justify-content: space-between; }
+
+        .nav-dropdown {
+          position: static;
+          transform: none !important;
+          left: 0 !important;
+          opacity: 1;
+          visibility: hidden;
+          pointer-events: none;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s var(--ease-out), visibility 0.3s, padding 0.3s;
+          background: rgba(255, 255, 255, 0.025);
+          border-radius: 12px;
+          border: none;
+          box-shadow: none;
+          backdrop-filter: none;
+          padding: 0 8px;
+          margin-top: 4px;
+          width: 100%;
         }
 
-        .hero-copy p {
-          font-size: 1rem;
+        .nav-toggle[aria-expanded="true"] + .nav-dropdown {
+          visibility: visible;
+          pointer-events: auto;
+          max-height: 320px;
+          padding: 8px;
         }
 
-        .hero-visual {
-          min-height: 420px;
-        }
+        .status-chip { display: none; }
+        .hero { padding-top: 44px; }
+        h1 { font-size: 2.45rem; }
+        .hero-copy p { font-size: 1rem; }
+        .hero-visual { min-height: 420px; }
+        .coin-ring.large { width: 220px; height: 220px; left: 20px; }
+        .coin-ring.small { width: 130px; height: 130px; right: 20px; }
+        .coin-stack { right: 32px; top: 74px; width: 120px; }
+        .spot-card { left: 20px; right: 20px; width: auto; bottom: 24px; }
+        .gallery-grid { grid-template-columns: 1fr; }
+      }
 
-        .coin-ring.large {
-          width: 220px;
-          height: 220px;
-          left: 20px;
-        }
-
-        .coin-ring.small {
-          width: 130px;
-          height: 130px;
-          right: 20px;
-        }
-
-        .coin-stack {
-          right: 32px;
-          top: 74px;
-          width: 120px;
-        }
-
-        .spot-card {
-          left: 20px;
-          right: 20px;
-          width: auto;
-          bottom: 24px;
-        }
+      /* ── REDUCED MOTION ──────────────────────────────── */
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; transform: none; transition: none; }
+        .coin-ring.large, .coin-ring.small { animation: none; }
+        .eyebrow::before { animation: none; }
+        .plan.featured { animation: none; }
+        .btn, .card, .step, .gallery-card, .plan, .metric { transition: none; }
       }
     </style>
   </head>
@@ -980,6 +1022,11 @@
           <span class="brand-kicker">Local sourcing network</span>
           <span class="brand-mark">Fused Reserve</span>
         </a>
+        <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav class="nav" aria-label="Primary navigation">
           <div class="nav-pages">
             <a href="/">Home</a>
@@ -1069,12 +1116,8 @@
               <div class="coin-ring large"></div>
               <div class="coin-ring small"></div>
               <div class="coin-stack">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
               </div>
               <div class="spot-card">
                 <h3>Today's Spot Price</h3>
@@ -1102,11 +1145,7 @@
               <div class="eyebrow">How It Works</div>
               <h2>A smoother path into physical silver</h2>
             </div>
-            <p>
-              The model combines subscription convenience with direct sourcing logic, so
-              buyers can accumulate silver over time without locking themselves into one
-              rigid product.
-            </p>
+            <p>The model combines subscription convenience with direct sourcing logic, so buyers can accumulate silver over time without locking themselves into one rigid product.</p>
           </div>
           <div class="grid-4">
             <article class="step">
@@ -1134,38 +1173,23 @@
               <div class="eyebrow">Subscriber Benefits</div>
               <h2>Built for both experienced stackers and people just getting started</h2>
             </div>
-            <p>
-              The strongest advantage is flexibility: buyers gain recurring access without
-              being trapped in a one-product subscription.
-            </p>
+            <p>The strongest advantage is flexibility: buyers gain recurring access without being trapped in a one-product subscription.</p>
           </div>
           <div class="grid-3">
             <article class="card">
               <span>Flexible Choice</span>
               <h3>You choose the silver. We source it.</h3>
-              <p>
-                Set your preferences at signup: junk silver, bullion, silver dollars,
-                numismatic, world coins, or best price. Update them any time before your
-                billing date.
-              </p>
+              <p>Set your preferences at signup: junk silver, bullion, silver dollars, numismatic, world coins, or best price. Update them any time before your billing date.</p>
             </article>
             <article class="card">
               <span>Smarter Sourcing</span>
               <h3>Local network buying means better pricing for you</h3>
-              <p>
-                We source through local dealer relationships, coin shows, and secondary
-                markets, which creates more opportunities to buy near or below spot and
-                pass that value directly to subscribers.
-              </p>
+              <p>We source through local dealer relationships, coin shows, and secondary markets, which creates more opportunities to buy near or below spot and pass that value directly to subscribers.</p>
             </article>
             <article class="card">
               <span>Collector Appeal</span>
               <h3>Stack value and find pieces you won't see at the chain dealer</h3>
-              <p>
-                From cull Morgan dollars pulled from a coin show junk box to .999 generic
-                rounds. Fused Reserve blends everyday stacking with finds that make
-                building a reserve genuinely interesting.
-              </p>
+              <p>From cull Morgan dollars pulled from a coin show junk box to .999 generic rounds. Fused Reserve blends everyday stacking with finds that make building a reserve genuinely interesting.</p>
             </article>
           </div>
         </section>
@@ -1176,25 +1200,15 @@
               <div class="eyebrow">Membership Plans</div>
               <h2>Simple tiers for recurring silver accumulation</h2>
             </div>
-            <p>
-              Every tier is a good starting point for building a silver position, whether
-              you are just getting started or adding to an existing stack. Pick the monthly
-              amount that fits your pace and grow from there.
-            </p>
+            <p>Every tier is a good starting point for building a silver position, whether you are just getting started or adding to an existing stack. Pick the monthly amount that fits your pace and grow from there.</p>
             <p id="plan-spot-est" style="margin:8px 0 0;font-size:0.92rem;color:var(--accent);font-family:'Trebuchet MS','Segoe UI',sans-serif;"></p>
           </div>
           <div class="plans">
             <article class="plan">
               <span>Starter</span>
               <h3>Easy entry into physical silver</h3>
-              <div class="price">
-                <strong>$100</strong>
-                <em>/ month</em>
-              </div>
-              <p>
-                Best for people new to buying silver who want consistent progress and a
-                simple introduction to stacking.
-              </p>
+              <div class="price"><strong>$100</strong><em>/ month</em></div>
+              <p>Best for people new to buying silver who want consistent progress and a simple introduction to stacking.</p>
               <ul>
                 <li>Recurring monthly balance</li>
                 <li>1 preference slot. Choose your silver type.</li>
@@ -1205,14 +1219,8 @@
             <article class="plan featured">
               <span>Stacker</span>
               <h3>The core plan for repeat buyers</h3>
-              <div class="price">
-                <strong>$250</strong>
-                <em>/ month</em>
-              </div>
-              <p>
-                A balanced plan for buyers who want recurring silver exposure plus more
-                frequent access to featured inventory.
-              </p>
+              <div class="price"><strong>$250</strong><em>/ month</em></div>
+              <p>A balanced plan for buyers who want recurring silver exposure plus more frequent access to featured inventory.</p>
               <ul>
                 <li>Priority access to curated silver drops</li>
                 <li>2 preference slots. Diversify across silver types.</li>
@@ -1223,14 +1231,8 @@
             <article class="plan">
               <span>Collector Access</span>
               <h3>Built for unique inventory and larger orders</h3>
-              <div class="price">
-                <strong>$500</strong>
-                <em>/ month</em>
-              </div>
-              <p>
-                Geared toward buyers who want premium sourcing access, the highest variety,
-                and full control over their monthly mix.
-              </p>
+              <div class="price"><strong>$500</strong><em>/ month</em></div>
+              <p>Geared toward buyers who want premium sourcing access, the highest variety, and full control over their monthly mix.</p>
               <ul>
                 <li>Early access to vintage and unusual finds</li>
                 <li>3 preference slots with custom split control</li>
@@ -1247,60 +1249,38 @@
               <div class="eyebrow">Preference Options</div>
               <h2>Choose what silver you receive each month</h2>
             </div>
-            <p>
-              When you subscribe, you set your preferences. We source to match them. Your
-              plan determines how many preferences you hold. Collector Access members
-              can weight their own split.
-            </p>
+            <p>When you subscribe, you set your preferences. We source to match them. Your plan determines how many preferences you hold. Collector Access members can weight their own split.</p>
           </div>
           <div class="grid-3">
             <article class="card">
               <span>Junk Silver</span>
               <h3>Pre-1965 US 90% silver coins</h3>
-              <p>
-                Dimes, quarters, and half-dollars. The most liquid and recognizable form of
-                constitutional silver. A stacking staple.
-              </p>
+              <p>Dimes, quarters, and half-dollars. The most liquid and recognizable form of constitutional silver. A stacking staple.</p>
             </article>
             <article class="card">
               <span>Bullion</span>
               <h3>Modern .999 silver rounds, bars, and ingots</h3>
-              <p>
-                Pure silver by weight. Easy to price, easy to trade, and ideal for
-                buyers focused on accumulating raw silver content.
-              </p>
+              <p>Pure silver by weight. Easy to price, easy to trade, and ideal for buyers focused on accumulating raw silver content.</p>
             </article>
             <article class="card">
               <span>Silver Dollars</span>
               <h3>Morgan, Peace, and large-format US silver dollars</h3>
-              <p>
-                Sourced as cull, junk, or found inventory. The value is in the silver
-                content (~0.77 oz per coin), not the grade. Iconic pieces at honest prices.
-              </p>
+              <p>Sourced as cull, junk, or found inventory. The value is in the silver content (~0.77 oz per coin), not the grade. Iconic pieces at honest prices.</p>
             </article>
             <article class="card">
               <span>Numismatic</span>
               <h3>Collectible US coins with value above melt</h3>
-              <p>
-                Key dates, proof sets, and graded coins where condition and rarity add a
-                premium. Best for collectors building beyond a pure silver stack.
-              </p>
+              <p>Key dates, proof sets, and graded coins where condition and rarity add a premium. Best for collectors building beyond a pure silver stack.</p>
             </article>
             <article class="card">
               <span>World Coins</span>
               <h3>Foreign silver coins from global mints</h3>
-              <p>
-                Often undervalued relative to silver content. A variety-focused preference
-                that adds history and geographic diversity to your reserve.
-              </p>
+              <p>Often undervalued relative to silver content. A variety-focused preference that adds history and geographic diversity to your reserve.</p>
             </article>
             <article class="card">
               <span>Best Price</span>
               <h3>We source whatever is closest to spot that month</h3>
-              <p>
-                No category restriction. We use this slot to find the best available deal
-                from our sourcing network and pass the value directly to you.
-              </p>
+              <p>No category restriction. We use this slot to find the best available deal from our sourcing network and pass the value directly to you.</p>
             </article>
           </div>
         </section>
@@ -1311,14 +1291,9 @@
               <div class="eyebrow">Past Inventory</div>
               <h2>Real products from past subscriber orders</h2>
             </div>
-            <p>
-              These are actual coins and silver sourced through the Fused Reserve network.
-              Every order is different depending on your preferences and what we find that
-              month. This is a sample of what has moved through past orders.
-            </p>
+            <p>These are actual coins and silver sourced through the Fused Reserve network. Every order is different depending on your preferences and what we find that month. This is a sample of what has moved through past orders.</p>
           </div>
           <div class="gallery-grid">
-
             <article class="gallery-card">
               <img src="images/morgan-dollar-lot.jpg" alt="Large lot of Morgan silver dollars in coin flips and holders spread on a wood table" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1326,7 +1301,6 @@
                 <p class="gallery-caption">A Morgan dollar lot sourced from a local coin show. Various dates and circulated grades, priced by silver content.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/mixed-silver-lot.jpg" alt="Morgan dollars, Peace dollar, half dollars, and a Valcambi silver bar stack on a dark mat" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1334,7 +1308,6 @@
                 <p class="gallery-caption">Morgan dollars (1901, 1896), a 1922 Peace dollar, circulated half dollars, and a Valcambi .999 fine silver bar stack from a single sourcing run.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/walking-liberty-halves.jpg" alt="Seven Walking Liberty half dollar coins showing reverses on a galaxy desk mat" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1342,7 +1315,6 @@
                 <p class="gallery-caption">Walking Liberty half dollars. 90% silver, each containing 0.3617 oz. A classic junk silver find from a secondary market pick.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/1964-kennedy-bag.jpg" alt="Sealed bag labeled $100 Face 1964 Mint full of Kennedy half dollars" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1350,7 +1322,6 @@
                 <p class="gallery-caption">$100 face value bag of 1964 Kennedy halves. 90% silver, fresh from a coin dealer. Roughly 71.5 troy ounces of silver content.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/junk-silver-bags.jpg" alt="Two bags of 90% silver US coins including quarters and dimes" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1358,7 +1329,6 @@
                 <p class="gallery-caption">Bags of 90% silver Washington quarters and Roosevelt dimes ready for subscriber fulfillment. Sourced at or near spot.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/quarters-peace-eagle.jpg" alt="Washington quarters, Peace dollar, PCGS First Strike Silver Eagle, and silver rounds on a galaxy mat" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1366,7 +1336,6 @@
                 <p class="gallery-caption">Washington quarters, a Peace dollar, a PCGS MS69 First Strike 2021 Silver Eagle Type 1, and silver rounds from a single sourcing session.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/silver-bars-rounds.jpg" alt="Silver bars in plastic sleeves, silver rounds, and a small gold bar on a dark mat" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1374,7 +1343,6 @@
                 <p class="gallery-caption">.999 fine silver bars and rounds alongside a 1g IBR fine gold bar. Bullion sourced through our dealer network for subscribers on the Best Price preference.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/silver-eagles-mixed.jpg" alt="American Silver Eagles in capsules including an NGC MS69 Early Releases graded coin and a mixed lot" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1382,7 +1350,6 @@
                 <p class="gallery-caption">American Silver Eagles in capsules, including an NGC MS69 Early Releases graded example. Mix of raw and certified coins from a secondary market find.</p>
               </div>
             </article>
-
             <article class="gallery-card">
               <img src="images/pcgs-graded-slabs.jpg" alt="PCGS graded coin slabs including Silver Eagles MS70 and a Kennedy half PR69 DCAM" width="800" height="220" loading="lazy" />
               <div class="gallery-card-body">
@@ -1390,7 +1357,6 @@
                 <p class="gallery-caption">PCGS certified slabs: Silver Eagles graded MS70 and MS69, a Kennedy half PR69 DCAM, and a 1998-P Eagle PR69. Available to Collector Access subscribers.</p>
               </div>
             </article>
-
           </div>
         </section>
 
@@ -1398,12 +1364,7 @@
           <article class="highlight-panel">
             <div class="eyebrow">Why this model is different</div>
             <h2>Similar convenience to bullion subscriptions, with more room to choose</h2>
-            <p>
-              Fused Reserve is positioned as a more flexible alternative to single-product
-              precious metals subscriptions. Instead of forcing every customer into the same
-              gold bar or limited format, it can route demand across multiple silver
-              products and sourcing channels.
-            </p>
+            <p>Fused Reserve is positioned as a more flexible alternative to single-product precious metals subscriptions. Instead of forcing every customer into the same gold bar or limited format, it can route demand across multiple silver products and sourcing channels.</p>
             <div class="mini-compare">
               <div class="compare-row">
                 <strong>More product variety</strong>
@@ -1423,11 +1384,7 @@
           <aside class="cta-panel" id="join">
             <div class="eyebrow">Join The List</div>
             <h2>Launch a silver subscription with a cleaner buying experience</h2>
-            <p>
-              Reserve is in early access. Submit a request to get on the list, ask about
-              current inventory, or find out how the subscription model works for your
-              buying pace.
-            </p>
+            <p>Reserve is in early access. Submit a request to get on the list, ask about current inventory, or find out how the subscription model works for your buying pace.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="/#contact">Request Access</a>
               <a class="btn btn-secondary" href="/#contact">Ask About Inventory</a>
@@ -1445,167 +1402,148 @@
       </section>
 
       <footer class="footer">
-        © 2026 Fused Reserve. All rights reserved.
-        &nbsp;·&nbsp;
+        &copy; 2026 Fused Reserve. All rights reserved.
+        &nbsp;&middot;&nbsp;
         <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
       </footer>
     </div>
+
+    <!-- Topbar scroll state + scroll reveal -->
     <script>
     (function () {
-      const PREMIUM = 0.05;
+      var topbar = document.querySelector('.topbar');
+      window.addEventListener('scroll', function () {
+        if (topbar) topbar.classList.toggle('scrolled', window.scrollY > 55);
+      }, { passive: true });
 
-      function usd(n) {
-        return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        var selectors = ['.grid-4 .step', '.grid-3 .card', '.plans .plan', '.gallery-grid .gallery-card', '.highlight-panel', '.cta-panel'];
+        selectors.forEach(function (sel) {
+          document.querySelectorAll(sel).forEach(function (el, i) {
+            el.classList.add('reveal');
+            el.style.transitionDelay = (i * 55) + 'ms';
+          });
+        });
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
       }
+    })();
+    </script>
 
+    <!-- Mobile hamburger -->
+    <script>
+    (function () {
+      var hamburger = document.querySelector('.nav-hamburger');
+      var nav = document.querySelector('.nav');
+      if (!hamburger || !nav) return;
+      hamburger.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-expanded', open);
+      });
+    })();
+    </script>
+
+    <!-- Spot prices -->
+    <script>
+    (function () {
+      var PREMIUM = 0.05;
+      function usd(n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
       async function loadSpot() {
         try {
-          const res  = await fetch('/api/spot');
-          const data = await res.json();
+          var res = await fetch('/api/spot');
+          var data = await res.json();
           if (!data.silver) return;
-
-          const silver = data.silver;
-          const gold   = data.gold;
-
-          const elS = document.getElementById('live-silver');
-          const elG = document.getElementById('live-gold');
-          const elM = document.getElementById('live-meta');
+          var silver = data.silver, gold = data.gold;
+          var elS = document.getElementById('live-silver');
+          var elG = document.getElementById('live-gold');
+          var elM = document.getElementById('live-meta');
           if (elS) elS.textContent = usd(silver);
           if (elG) elG.textContent = usd(gold);
           if (elM) elM.textContent = 'per troy oz · ' + new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-
-          // Dynamic estimate in plans section
-          const oz100  = 100  / (silver * (1 + PREMIUM));
-          const oz250  = 250  / (silver * (1 + PREMIUM));
-          const oz500  = 500  / (silver * (1 + PREMIUM));
-          const elEst  = document.getElementById('plan-spot-est');
-          if (elEst) {
-            elEst.textContent =
-              'At today\u2019s spot (' + usd(silver) + '/oz): ' +
-              'Starter \u2248 ' + oz100.toFixed(1) + ' oz \u00b7 ' +
-              'Stacker \u2248 ' + oz250.toFixed(1) + ' oz \u00b7 ' +
-              'Collector Access \u2248 ' + oz500.toFixed(1) + ' oz';
-          }
-        } catch (e) {
-          // fail silently — static card remains
-        }
+          var oz100 = 100 / (silver * (1 + PREMIUM));
+          var oz250 = 250 / (silver * (1 + PREMIUM));
+          var oz500 = 500 / (silver * (1 + PREMIUM));
+          var elEst = document.getElementById('plan-spot-est');
+          if (elEst) elEst.textContent = 'At today’s spot (' + usd(silver) + '/oz): Starter ≈ ' + oz100.toFixed(1) + ' oz · Stacker ≈ ' + oz250.toFixed(1) + ' oz · Collector Access ≈ ' + oz500.toFixed(1) + ' oz';
+        } catch (e) {}
       }
-
       loadSpot();
     })();
     </script>
+
+    <!-- Nav dropdowns -->
     <script>
-      (function () {
-        var toggles = document.querySelectorAll('.nav-toggle');
-        function closeAll(except) {
-          toggles.forEach(function (btn) {
-            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
-          });
-        }
-        toggles.forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            var expanded = btn.getAttribute('aria-expanded') === 'true';
-            closeAll(btn);
-            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-          });
+    (function () {
+      var toggles = document.querySelectorAll('.nav-toggle');
+      function closeAll(except) {
+        toggles.forEach(function (btn) { if (btn !== except) btn.setAttribute('aria-expanded', 'false'); });
+      }
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          closeAll(btn);
+          btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') closeAll(null);
-        });
-        document.addEventListener('click', function (e) {
-          if (!e.target.closest('.nav-item')) closeAll(null);
-        });
-      })();
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(null); });
+      document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeAll(null); });
+    })();
     </script>
 
-  <!-- MAILING LIST POPUP — FUSED RESERVE -->
+  <!-- MAILING LIST POPUP -->
   <style>
     #rv-popup-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.72);
-      z-index: 9000;
-      align-items: center;
-      justify-content: center;
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.8); z-index: 9000;
+      align-items: center; justify-content: center;
+      backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
     }
     #rv-popup-overlay.rv-open { display: flex; }
     #rv-popup {
-      background: linear-gradient(160deg, #13181f 0%, #0b0e14 100%);
-      border: 1px solid rgba(242,198,109,0.22);
-      border-radius: 14px;
-      padding: 36px 32px 28px;
+      background: linear-gradient(160deg, rgba(16, 14, 10, 0.99) 0%, rgba(9, 8, 6, 1) 100%);
+      border: 1px solid rgba(200, 175, 90, 0.18);
+      border-radius: 20px; padding: 36px 32px 28px;
       width: min(420px, calc(100vw - 32px));
-      box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+      box-shadow: 0 28px 80px rgba(0,0,0,0.75), 0 0 80px rgba(180,140,50,0.07);
       position: relative;
     }
     #rv-popup-close {
-      position: absolute;
-      top: 14px;
-      right: 18px;
-      background: none;
-      border: none;
-      color: #b7bfcb;
-      font-size: 1.3rem;
-      cursor: pointer;
-      line-height: 1;
-      padding: 4px;
+      position: absolute; top: 14px; right: 18px;
+      background: none; border: none; color: #96917f;
+      font-size: 1.3rem; cursor: pointer; line-height: 1; padding: 4px; transition: color 0.15s;
     }
-    #rv-popup-close:hover { color: #f5f7fb; }
-    #rv-popup h2 {
-      margin: 0 0 8px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #f2c66d;
-      letter-spacing: 0.01em;
-    }
-    #rv-popup p {
-      margin: 0 0 20px;
-      font-size: 0.9rem;
-      color: #b7bfcb;
-      line-height: 1.55;
-    }
+    #rv-popup-close:hover { color: #f0ece4; }
+    #rv-popup h2 { margin: 0 0 8px; font-size: 1.25rem; font-weight: 700; color: #f2c66d; letter-spacing: 0.01em; }
+    #rv-popup p  { margin: 0 0 20px; font-size: 0.9rem; color: #96917f; line-height: 1.55; }
     #rv-popup-form { display: flex; flex-direction: column; gap: 10px; }
     #rv-popup-email {
-      padding: 11px 14px;
-      border-radius: 8px;
-      border: 1px solid rgba(242,198,109,0.28);
-      background: rgba(255,255,255,0.05);
-      color: #f5f7fb;
-      font-size: 0.92rem;
-      outline: none;
+      padding: 11px 14px; border-radius: 10px;
+      border: 1px solid rgba(200,175,90,0.22);
+      background: rgba(255,255,255,0.035);
+      color: #f0ece4; font-size: 0.92rem; outline: none; transition: border-color 0.15s;
     }
-    #rv-popup-email:focus { border-color: rgba(242,198,109,0.65); }
+    #rv-popup-email:focus { border-color: rgba(242,198,109,0.55); }
     #rv-popup-btn {
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      background: #f2c66d;
-      color: #0b0e14;
-      font-size: 0.92rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: opacity 0.15s;
+      padding: 12px; border-radius: 10px; border: none;
+      background: #f2c66d; color: #0b0a06;
+      font-size: 0.92rem; font-weight: 700; cursor: pointer;
+      transition: opacity 0.15s, transform 0.15s;
     }
-    #rv-popup-btn:hover { opacity: 0.88; }
+    #rv-popup-btn:hover  { opacity: 0.9; }
+    #rv-popup-btn:active { transform: scale(0.97); }
     #rv-popup-dismiss {
-      display: block;
-      text-align: center;
-      margin-top: 12px;
-      font-size: 0.8rem;
-      color: #6b7480;
-      cursor: pointer;
-      background: none;
-      border: none;
-      width: 100%;
+      display: block; text-align: center; margin-top: 12px;
+      font-size: 0.8rem; color: #5a5448; cursor: pointer;
+      background: none; border: none; width: 100%; transition: color 0.15s;
     }
-    #rv-popup-dismiss:hover { color: #b7bfcb; }
+    #rv-popup-dismiss:hover { color: #96917f; }
     #rv-popup-success { display: none; text-align: center; }
-    #rv-popup-success p {
-      color: #f2c66d;
-      font-size: 0.95rem;
-      margin: 0;
-    }
+    #rv-popup-success p { color: #f2c66d; font-size: 0.95rem; margin: 0; }
   </style>
 
   <div id="rv-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="rv-popup-heading">
@@ -1630,11 +1568,7 @@
     (function () {
       var MAILERLITE_API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMjNmOTAyYWMwYjg5M2Q4ZmRmYTZiMzFiNDQ1ZDYxY2JhM2VlZTc0MDVmMzU1M2JjNTZkYTZlMGY0NzA0OTFhNjE5ZTllYjE5MDViOTljMWQiLCJpYXQiOjE3Nzk3MzUyNzUuNDk0MDUxLCJuYmYiOjE3Nzk3MzUyNzUuNDk0MDU0LCJleHAiOjQ5MzU0MDg4NzUuNDg4ODM5LCJzdWIiOiIyMzk3MjYzIiwic2NvcGVzIjpbXX0.Boypi1kWa4EB6ndel3nXRWdxYwoXe4krWBISfNFrjU6mia19yKLNikQJb0cHxh7bpMeMAhGRKODSh3sQq9ZDkYOX_B1ModSjG2aEGhvmwFOjTN5_ci_3vdhrWRilOyEtcGQ5YnQqDtylKq8XUeRxVsPXF2CFycrBfCV2k-GkMEGfsS6eLjXqfLHzOY-RKRhBuwDHt3Na96tk8zH3KwCCGtkhmZB4xAxPV4kDljE8nmW2eSoFDbPu0fa5pNYNzYsyA2qFNRO6-t53kvytaTW_p5aKzP0YJgV4-VHtzz48pLPCJzANaL5dXuNpvKuXt99-COt7JCEYVlnJuelFGxpQkei763ADyWP1LeQsPI1E24LNJLG__uSy8ppL1uKswt9Gx09X5NX9Stc-K6z8hvws7GT08rR8od4QsnXobHdlri4zYW9tV6LU-VQJ3WtJeZxSAecyftcYtmMNpy7IcBA8tt3-Xi9veiaS6fizIGj43E4Wp22rJ_YPXvGAQYxuonjFoGnmLMYFS02F-2IEWZKdKs_p7BO1XYOX4TZtY-tY_HOhbHG80KB9gUpEph1uRkVmUSU_i-RxVU4zmyAr0Zv_FPIFF8wkHPw4GVRInfyLKwgFeXktMmDVcFVsnUu1NYHJ0md6GqEs4uyupexE33bkWloT6FqRmVp84I516AFrltw';
       var GROUP_ID = '188457997474727782';
-
-      var STORAGE_KEY = 'rv_popup_dismissed';
-      var SUBSCRIBED_KEY = 'rv_popup_subscribed';
-      var DELAY_MS = 30000;
-
+      var STORAGE_KEY = 'rv_popup_dismissed', SUBSCRIBED_KEY = 'rv_popup_subscribed', DELAY_MS = 30000;
       function isDismissed() {
         try {
           if (localStorage.getItem(SUBSCRIBED_KEY) === '1') return true;
@@ -1643,65 +1577,36 @@
           return Date.now() - parseInt(ts, 10) < 60 * 60 * 1000;
         } catch (e) { return false; }
       }
-
-      function dismiss() {
-        try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
-      }
-
-      function subscribeForever() {
-        try { localStorage.setItem(SUBSCRIBED_KEY, '1'); } catch (e) {}
-      }
-
-      function open() {
-        document.getElementById('rv-popup-overlay').classList.add('rv-open');
-      }
-
+      function dismiss() { try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {} }
+      function subscribeForever() { try { localStorage.setItem(SUBSCRIBED_KEY, '1'); } catch (e) {} }
+      function open()  { document.getElementById('rv-popup-overlay').classList.add('rv-open'); }
       function close() {
         document.getElementById('rv-popup-overlay').classList.remove('rv-open');
         document.getElementById('rv-popup-form-wrap').style.display = '';
         document.getElementById('rv-popup-success').style.display = '';
         dismiss();
       }
-
       function showSuccess() {
         document.getElementById('rv-popup-email').value = '';
         document.getElementById('rv-popup-form-wrap').style.display = 'none';
         document.getElementById('rv-popup-success').style.display = 'block';
         setTimeout(function () { close(); }, 3000);
       }
-
       if (isDismissed()) return;
-
       var timer = setTimeout(open, DELAY_MS);
       window.addEventListener('beforeunload', function () { clearTimeout(timer); });
-
       document.getElementById('rv-popup-close').addEventListener('click', close);
       document.getElementById('rv-popup-dismiss').addEventListener('click', close);
-
-      document.getElementById('rv-popup-overlay').addEventListener('click', function (e) {
-        if (e.target === this) close();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') close();
-      });
-
+      document.getElementById('rv-popup-overlay').addEventListener('click', function (e) { if (e.target === this) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
       document.getElementById('rv-popup-form').addEventListener('submit', function (e) {
         e.preventDefault();
         var email = document.getElementById('rv-popup-email').value.trim();
-        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          document.getElementById('rv-popup-email').focus();
-          return;
-        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { document.getElementById('rv-popup-email').focus(); return; }
         subscribeForever();
-
         fetch('https://connect.mailerlite.com/api/subscribers', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'Authorization': 'Bearer ' + MAILERLITE_API_KEY
-          },
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Bearer ' + MAILERLITE_API_KEY },
           body: JSON.stringify({ email: email, groups: [GROUP_ID] })
         })
           .then(function (res) { if (!res.ok) throw new Error('bad response'); })
