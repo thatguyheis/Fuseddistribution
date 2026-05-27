@@ -1,0 +1,122 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g-center" cx="600" cy="315" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#58d6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-corner" cx="0" cy="0" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  stop-color="#4dffb8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#g-center)"/>
+  <rect width="1200" height="630" fill="url(#g-corner)"/>
+
+  <!-- Grid lines -->
+  <line x1="170"  y1="0" x2="170"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340"  y1="0" x2="340"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510"  y1="0" x2="510"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680"  y1="0" x2="680"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850"  y1="0" x2="850"  y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142"  cy="88"  r="1.5" fill="#58d6ff" opacity="0.26"/>
+  <circle cx="310"  cy="54"  r="1"   fill="#4dffb8" opacity="0.22"/>
+  <circle cx="978"  cy="72"  r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="1080" cy="142" r="1"   fill="#4dffb8" opacity="0.26"/>
+  <circle cx="210"  cy="490" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1044" cy="510" r="1"   fill="#4dffb8" opacity="0.20"/>
+  <circle cx="434"  cy="578" r="1.5" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="788"  cy="570" r="1"   fill="#4dffb8" opacity="0.18"/>
+  <circle cx="90"   cy="308" r="1"   fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1110" cy="302" r="1"   fill="#4dffb8" opacity="0.18"/>
+
+  <!-- Left card 1: COINS — 22% premium -->
+  <rect x="42" y="106" width="295" height="192" rx="16"
+        fill="rgba(11,24,32,0.90)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="189" y="152" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" font-weight="800"
+        letter-spacing="4" fill="#4dffb8" opacity="0.80">SILVER COINS</text>
+  <text x="189" y="228" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="82"
+        fill="url(#accent-grad)" opacity="0.94">22%</text>
+  <text x="189" y="260" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">typical premium over spot</text>
+  <text x="189" y="278" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.50)">(Eagles, Maple Leafs)</text>
+
+  <!-- Left card 2: ROUNDS — 5% premium -->
+  <rect x="42" y="360" width="295" height="172" rx="16"
+        fill="rgba(11,24,32,0.86)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="189" y="400" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" font-weight="800"
+        letter-spacing="4" fill="#4dffb8" opacity="0.72">SILVER ROUNDS</text>
+  <text x="189" y="466" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="78"
+        fill="#4dffb8" opacity="0.88">5%</text>
+  <text x="189" y="498" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">typical premium over spot</text>
+  <text x="189" y="516" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.50)">(generic 1 oz rounds)</text>
+
+  <!-- Right card 1: BARS — 2% premium -->
+  <rect x="863" y="106" width="295" height="192" rx="16"
+        fill="rgba(11,24,32,0.90)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="1010" y="152" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" font-weight="800"
+        letter-spacing="4" fill="#4dffb8" opacity="0.80">SILVER BARS</text>
+  <text x="1010" y="228" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="82"
+        fill="url(#accent-grad)" opacity="0.94">2%</text>
+  <text x="1010" y="260" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">lowest premium over spot</text>
+  <text x="1010" y="278" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.50)">(10 oz+ silver bars)</text>
+
+  <!-- Right card 2: 99.9% fine silver -->
+  <rect x="863" y="360" width="295" height="172" rx="16"
+        fill="rgba(11,24,32,0.86)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="1010" y="400" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" font-weight="800"
+        letter-spacing="4" fill="#4dffb8" opacity="0.72">ALL PRODUCT TYPES</text>
+  <text x="1010" y="463" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="64"
+        fill="#4dffb8" opacity="0.90">.999</text>
+  <text x="1010" y="494" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.78)">fine silver purity</text>
+  <text x="1010" y="514" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.50)">(coins, rounds, and bars)</text>
+
+  <!-- Center content -->
+  <text x="600" y="200" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="11" font-weight="800"
+        letter-spacing="5" fill="#4dffb8" opacity="0.80">SILVER BUYING GUIDE</text>
+  <line x1="436" y1="208" x2="764" y2="208" stroke="#4dffb8" stroke-width="0.5" stroke-opacity="0.22"/>
+
+  <text x="600" y="290" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52"
+        fill="url(#accent-grad)" opacity="0.94">COINS</text>
+  <text x="600" y="338" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52"
+        fill="rgba(236,248,251,0.88)">ROUNDS</text>
+  <text x="600" y="386" text-anchor="middle"
+        font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52"
+        fill="rgba(236,248,251,0.88)">BARS</text>
+
+  <text x="600" y="436" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="12"
+        fill="rgba(175,198,207,0.50)">Which should you buy first?</text>
+</svg>

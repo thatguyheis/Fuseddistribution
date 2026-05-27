@@ -1,5 +1,25 @@
 [
   {
+    "slug": "local-business-website-pages",
+    "title": "What Pages Every Local Business Website Needs",
+    "date": "2026-05-27",
+    "excerpt": "76% of people check a website before contacting a business. Here are the 5 pages every local site needs and what to put on each one to turn visitors into customers.",
+    "tags": ["Websites", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/local-business-website-pages/hero.svg",
+    "imageAlt": "Four stat cards showing 76% check website before calling, 3x more inquiries with Contact page, 74% visit Services page, and 58% of traffic is mobile"
+  },
+  {
+    "slug": "silver-coins-rounds-bars",
+    "title": "Silver Coins, Rounds, and Bars: Which Should You Buy First",
+    "date": "2026-05-27",
+    "excerpt": "Coins, rounds, and bars all hold silver but they're not the same buy. Here is how premiums, liquidity, and storage differ across the three so you can decide what to buy first.",
+    "tags": ["Silver", "Buying Guide"],
+    "author": "Nick",
+    "image": "/blog/silver-coins-rounds-bars/hero.svg",
+    "imageAlt": "Four data cards comparing silver product types: coins at 22% premium, rounds at 5% premium, bars at 2% premium, and all types at .999 fine silver purity"
+  },
+  {
     "slug": "instagram-local-business",
     "title": "How to Use Instagram to Get Local Customers",
     "date": "2026-05-26",
