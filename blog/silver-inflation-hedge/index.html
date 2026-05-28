@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silver as an Inflation Hedge: What the Data Actually Shows | Fused Distribution</title>
+    <meta name="description" content="Silver gained 270% during the 1970s inflation surge and doubled in value from 2020 to 2022. Here is what three decades of data show about silver during high inflation periods." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-05-28T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/silver-inflation-hedge/" />
+    <meta property="og:title" content="Silver as an Inflation Hedge: What the Data Actually Shows" />
+    <meta property="og:description" content="Silver rose 270% in the 1970s and doubled in 2020-2022. Here is what the historical data shows." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/silver-inflation-hedge/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/silver-inflation-hedge/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/silver-inflation-hedge/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Silver as an Inflation Hedge: What the Data Actually Shows",
+      "description": "Silver gained 270% during the 1970s inflation surge and doubled in value from 2020 to 2022. Here is what three decades of data show about silver during high inflation periods.",
+      "url": "https://fuseddistribution.com/blog/silver-inflation-hedge/",
+      "datePublished": "2026-05-28",
+      "dateModified": "2026-05-28",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fuseddistribution.com/og-image.png"
+        }
+      },
+      "image": "https://fuseddistribution.com/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fuseddistribution.com/blog/silver-inflation-hedge/"
+      }
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+
+      .article-wrap { max-width: 760px; margin: 0 auto; }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-hero {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        margin: 28px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: cover;
+      }
+      .article-hero figcaption {
+        padding: 10px 14px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        background: rgba(7, 15, 23, 0.6);
+        letter-spacing: 0.04em;
+      }
+
+      .article-photo {
+        margin: 32px 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .article-photo figcaption {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        letter-spacing: 0.04em;
+        background: rgba(7, 16, 22, 0.6);
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+
+      .article-body p { margin: 0 0 20px; }
+      .article-body ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-body ul li { margin-bottom: 8px; }
+      .article-body strong { color: var(--text); }
+      .article-body a { color: var(--accent); text-decoration: underline; }
+
+      .chart-wrap {
+        background: rgba(7, 20, 28, 0.8);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 16px;
+        padding: 28px 20px 18px;
+        margin: 36px 0;
+      }
+      .chart-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .chart-note {
+        font-size: 0.72rem;
+        color: rgba(175, 198, 207, 0.45);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 0.04em;
+      }
+
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .stat-card {
+        background: rgba(88, 214, 255, 0.04);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 14px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+      .stat-card .stat-number {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+      .sources-block {
+        margin-top: 48px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.1);
+        background: rgba(7, 18, 26, 0.6);
+      }
+      .sources-block h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+      .sources-block ol {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(175, 198, 207, 0.5);
+        font-size: 0.78rem;
+        line-height: 1.7;
+      }
+      .sources-block ol li { margin-bottom: 6px; }
+      .sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+      .article-cta p { margin: 0 0 18px; color: var(--muted); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+        .stat-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Distribution</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/reserve/">Reserve Silver</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Silver &middot; Investing</div>
+
+          <h1>Silver as an Inflation Hedge: What the Data Actually Shows</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-05-28">May 28, 2026</time>
+            <span class="pill">Silver</span>
+            <span class="pill">Investing</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.svg" alt="Three stat cards showing silver's 270% gain in the 1970s, 173% gain from 2008 to 2011, and 107% rise from 2020 to 2022" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+
+            <p>When inflation runs hot, a savings account earning 0.5% loses real value at 8% annual inflation. $10,000 becomes worth about $9,250 in purchasing power after one year. Silver has historically moved in the opposite direction during these periods.</p>
+
+            <p>This is not guaranteed. Silver is volatile. But the pattern is consistent enough across three separate inflationary cycles that a lot of buyers add it specifically for inflation exposure.</p>
+
+            <h2>What Three Inflationary Cycles Show</h2>
+
+            <p>The clearest case is the 1970s stagflation period. From 1972 to 1980, silver moved from roughly $1.80 to $49.45 per ounce. That is a gain of about 270%. Over the same period, cumulative US inflation was 117%. Silver outpaced inflation by more than 2 to 1 in the most severe inflationary episode in modern US history.</p>
+
+            <p>The 2008 to 2011 period followed a similar pattern. During the post-financial-crisis money printing era, silver went from a low around $8.50 to a high of $49.51. A 173% gain in three years, driven largely by investors moving into hard assets as central banks expanded their balance sheets.</p>
+
+            <p>The most recent episode: from March 2020 to February 2022, as US inflation hit a 40-year high, silver moved from $14 to $29. About a 107% gain over 23 months.</p>
+
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-number">270%</div>
+                <div class="stat-label">Silver gain during 1970s inflation surge</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">173%</div>
+                <div class="stat-label">Silver gain during 2008 to 2011 rally</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">107%</div>
+                <div class="stat-label">Silver rise during 2020 to 2022 cycle</div>
+              </div>
+            </div>
+
+            <div class="chart-wrap">
+              <div class="chart-title">Silver Gain During Major Inflation Periods</div>
+              <svg viewBox="0 0 640 268" width="100%" role="img" aria-label="Horizontal bar chart showing silver's percentage gain during three major inflation periods">
+                <defs>
+                  <linearGradient id="sbar-1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff"/>
+                    <stop offset="100%" stop-color="#4dffb8"/>
+                  </linearGradient>
+                  <linearGradient id="sbar-2" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.7"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.7"/>
+                  </linearGradient>
+                  <linearGradient id="sbar-3" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.45"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Row 1: 1970s 270% — bar width 402 (270/300*447) -->
+                <text x="0" y="30" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">1972-1980 (CPI peaked at 14%)</text>
+                <rect x="0" y="38" width="402" height="22" rx="4" fill="url(#sbar-1)"/>
+                <text x="408" y="54" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">+270%</text>
+
+                <!-- Row 2: 2008-2011 173% — bar width 258 (173/300*447) -->
+                <text x="0" y="96" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">2008-2011 (QE expansion era)</text>
+                <rect x="0" y="104" width="258" height="22" rx="4" fill="url(#sbar-2)"/>
+                <text x="264" y="120" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700">+173%</text>
+
+                <!-- Row 3: 2020-2022 107% — bar width 159 (107/300*447) -->
+                <text x="0" y="162" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">2020-2022 (40-year inflation high)</text>
+                <rect x="0" y="170" width="159" height="22" rx="4" fill="url(#sbar-3)"/>
+                <text x="165" y="186" fill="rgba(175,198,207,0.7)" font-family="Impact, sans-serif" font-size="15" font-weight="700">+107%</text>
+
+                <text x="0" y="230" fill="rgba(175,198,207,0.45)" font-family="Trebuchet MS, sans-serif" font-size="11">Source: Kitco historical silver prices; US Bureau of Labor Statistics CPI data</text>
+              </svg>
+            </div>
+
+            <h2>Why Silver Tends to Move With Inflation</h2>
+
+            <p>Three mechanics drive it.</p>
+
+            <p>Silver is priced in dollars. When the dollar loses purchasing power, more dollars are required to buy the same ounce. This automatic repricing happens regardless of what silver's industrial or investment demand is doing.</p>
+
+            <p>Silver has industrial demand that responds to economic cycles. In inflationary periods, the cost of raw materials rises broadly, and silver rises with them. Industrial buyers front-load purchases when they expect prices to increase. More buying pressure pushes prices up.</p>
+
+            <p>Investor demand for hard assets increases during inflationary periods. Gold gets most of the attention, but silver costs far less per ounce. Retail investors moving money out of cash tend to buy both, and silver's lower price per ounce means more buyers can participate.</p>
+
+            <figure class="article-photo">
+              <img src="images/pexels-0.jpg" alt="Silver coins and bars arranged on a dark surface" loading="lazy" />
+              <figcaption>Photo by merwak. raw on <a href="https://www.pexels.com/photo/collectible-coins-and-bar-20979926/" target="_blank" rel="noreferrer">Pexels</a></figcaption>
+            </figure>
+
+            <h2>What It Doesn't Do</h2>
+
+            <p>Silver does not move in a straight line during inflation. During the early 2020s inflation spike, silver gave back a significant portion of its gains before the inflationary cycle peaked. Prices can drop sharply in the short term even when inflation is still running high.</p>
+
+            <p>It also does not track inflation the way Treasury Inflation-Protected Securities (TIPS) do. TIPS are designed to match inflation precisely, adjusting their principal with the CPI. Silver is a bet on a larger repricing, not a mechanical match.</p>
+
+            <p>If you want to protect purchasing power with precision, TIPS are the right tool. Silver suits buyers who think the repricing will exceed what the official inflation index captures, or who want exposure to the physical metal itself.</p>
+
+            <h2>How Much Makes Sense</h2>
+
+            <p>Most buyers who hold silver as an inflation hedge keep it at 5% to 15% of their total savings. Below 5%, it barely moves the needle on portfolio-level performance. Above 20%, the volatility of silver becomes a larger factor than the inflation protection it provides.</p>
+
+            <p>A small position added consistently over time builds meaningful exposure without concentration risk. The buyers who came into 2020 with 10% of savings in silver and held through the cycle came out ahead of inflation by a significant margin. Timing perfect entries is harder than just owning the metal steadily.</p>
+
+            <div class="sources-block">
+              <h3>Sources</h3>
+              <ol>
+                <li>Kitco. "Historical Silver Price Charts." kitco.com</li>
+                <li>US Bureau of Labor Statistics. "Consumer Price Index Historical Data." bls.gov</li>
+                <li>Silver Institute. "World Silver Survey." silverinstitute.org</li>
+                <li>Federal Reserve Bank of St. Louis. "Silver Spot Price (SLVPRUSD)." fred.stlouisfed.org</li>
+                <li>US Treasury. "Treasury Inflation-Protected Securities." treasurydirect.gov</li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="article-cta">
+            <p>Ready to start building a silver position? Fused Reserve makes it straightforward with flexible monthly plans.</p>
+            <a class="btn btn-primary" href="https://fuseddistribution.com/reserve/">See Fused Reserve Plans</a>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Distribution. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
+  </body>
+</html>

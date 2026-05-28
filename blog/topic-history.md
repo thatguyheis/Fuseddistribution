@@ -23,6 +23,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-15 | facebook-growth-and-automation | Social Media | Facebook growth and automation for local business |
 | 2026-05-27 | local-business-website-pages | Websites | Essential pages every local business website needs to convert visitors |
 | 2026-05-26 | email-marketing-local-business | Marketing | Email marketing ROI for local businesses |
+| 2026-05-28 | local-seo-near-me | Google | How to rank in Google's Map Pack with local SEO |
 
 ---
 
@@ -37,3 +38,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-22 | silver-storage-guide | Storage | How to store silver |
 | 2026-05-27 | silver-coins-rounds-bars | Buying Guide | Silver coins vs rounds vs bars — which to buy first |
 | 2026-05-26 | silver-history-as-money | History | Silver's 4,000-year history as money |
+| 2026-05-28 | silver-inflation-hedge | Investing | Silver's performance as an inflation hedge across three major cycles |

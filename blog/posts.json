@@ -1,5 +1,25 @@
 [
   {
+    "slug": "local-seo-near-me",
+    "title": "How Local SEO Gets Your Business Into Google's Top 3 Results",
+    "date": "2026-05-28",
+    "excerpt": "46% of Google searches have local intent and 75% of clicks go to the top 3 Map Pack results. Here is how local SEO works and what moves your business into those spots.",
+    "tags": ["Google", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/local-seo-near-me/hero.svg",
+    "imageAlt": "Three stat cards showing 46% local search intent, 75% Map Pack click share, and 42% more direction requests for businesses with photos"
+  },
+  {
+    "slug": "silver-inflation-hedge",
+    "title": "Silver as an Inflation Hedge: What the Data Actually Shows",
+    "date": "2026-05-28",
+    "excerpt": "Silver gained 270% during the 1970s inflation surge and doubled in value from 2020 to 2022. Here is what three decades of data show about silver during high inflation periods.",
+    "tags": ["Silver", "Investing"],
+    "author": "Nick",
+    "image": "/blog/silver-inflation-hedge/hero.svg",
+    "imageAlt": "Three stat cards showing silver's 270% gain in the 1970s, 173% gain from 2008 to 2011, and 107% rise from 2020 to 2022"
+  },
+  {
     "slug": "local-business-website-pages",
     "title": "What Pages Every Local Business Website Needs",
     "date": "2026-05-27",

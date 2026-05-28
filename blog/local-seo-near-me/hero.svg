@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar-a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1e2a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-center)"/>
+  <rect width="1200" height="630" fill="url(#glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="388" cy="52" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="724" cy="78" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="945" cy="112" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1088" cy="64" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="223" cy="510" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="830" cy="548" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1050" cy="490" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="488" cy="580" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="660" cy="88" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- LEFT STAT CARD: 46% -->
+  <rect x="42" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="178" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#58d6ff" opacity="0.7">LOCAL SEARCH</text>
+  <text x="178" y="323" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" letter-spacing="0.02em" fill="#58d6ff">46%</text>
+  <text x="178" y="362" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">of all Google searches</text>
+  <text x="178" y="380" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">have local intent</text>
+
+  <!-- CENTER: Map Pin + Headline -->
+  <!-- Map pin shape -->
+  <path d="M 600 155 C 560 155 528 188 528 228 C 528 278 600 355 600 355 C 600 355 672 278 672 228 C 672 188 640 155 600 155 Z" fill="none" stroke="#58d6ff" stroke-width="2.5" opacity="0.55"/>
+  <circle cx="600" cy="228" r="22" fill="rgba(88,214,255,0.14)" stroke="#58d6ff" stroke-width="1.5" opacity="0.7"/>
+  <text x="600" y="234" text-anchor="middle" font-family="Impact, sans-serif" font-size="18" fill="#58d6ff" opacity="0.9">1</text>
+
+  <!-- Center headline -->
+  <text x="600" y="408" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="42" letter-spacing="0.06em" fill="#ecf8fb">TOP 3 MAP PACK</text>
+  <text x="600" y="448" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="15" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">GET FOUND OR GET SKIPPED</text>
+
+  <!-- Divider line under center text -->
+  <line x1="480" y1="468" x2="720" y2="468" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+
+  <!-- Three numbered rank rows -->
+  <rect x="460" y="480" width="280" height="32" rx="8" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="476" y="501" font-family="Impact, sans-serif" font-size="14" fill="#58d6ff">#1</text>
+  <text x="500" y="501" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)" letter-spacing="0.04em">YOUR BUSINESS HERE</text>
+  <rect x="460" y="518" width="280" height="32" rx="8" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.08)" stroke-width="1"/>
+  <text x="476" y="539" font-family="Impact, sans-serif" font-size="14" fill="rgba(88,214,255,0.5)">#2</text>
+  <text x="500" y="539" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.35)" letter-spacing="0.04em">Competitor</text>
+  <rect x="460" y="556" width="280" height="32" rx="8" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.06)" stroke-width="1"/>
+  <text x="476" y="577" font-family="Impact, sans-serif" font-size="14" fill="rgba(88,214,255,0.35)">#3</text>
+  <text x="500" y="577" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.25)" letter-spacing="0.04em">Competitor</text>
+
+  <!-- RIGHT STAT CARD: 75% -->
+  <rect x="886" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#4dffb8" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="1022" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#4dffb8" opacity="0.7">MAP PACK CLICKS</text>
+  <text x="1022" y="323" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" letter-spacing="0.02em" fill="#4dffb8">75%</text>
+  <text x="1022" y="362" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">of local search clicks</text>
+  <text x="1022" y="380" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">go to top 3 results</text>
+</svg>
