@@ -13,6 +13,18 @@ One command per blog post produces a finished 1080×1920 MP4 with:
 
 ## Setup (one-time)
 
+### 0. Remotion skill (Claude Code)
+
+The `remotion-best-practices` skill is installed globally (`~/.agents/skills/remotion-best-practices`). It teaches Claude correct Remotion patterns — `useCurrentFrame()`, `interpolate()`, `spring()`, `<Sequence>`, `<Composition>`. Without it, Claude defaults to web animation patterns that break during rendering.
+
+To reinstall or update: `npx skills add remotion-dev/skills --global`
+
+**Remotion version:** 4.0.469. Packages in use: `remotion`, `@remotion/cli`, `@remotion/transitions`, `@remotion/google-fonts`. All must stay at the same major.minor.patch — mismatches cause `HtmlInCanvas` import errors at render time.
+
+**Transitions between segments:** `@remotion/transitions` provides slide/fade/wipe between every segment boundary via `TransitionSeries` (replaces `Series`). Transition type is auto-selected by segment pair in `BlogReel.tsx`.
+
+**Background photos:** Ken Burns slow zoom (1.0→1.08 scale) applied to every photo over its segment duration. Transform origin rotates per segment index (center → top-left → bottom-right).
+
 ### 1. Voice
 Zoe (Premium) must be installed:
 > System Settings → Accessibility → Spoken Content → System Voice → Customize → download **Zoe (Premium)**
@@ -288,6 +300,26 @@ cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
   --props='{"slug":"<slug>"}'
 ```
 
+### Step 3.5 — Timing validation (REQUIRED before render)
+
+Do this before running render. For every segment in `reel-script.md`:
+
+1. Count the words in the `Narration:` field
+2. Divide by 2.5 → minimum seconds required
+3. Verify the segment window (end − start) ≥ that value + 2s buffer
+
+```
+words ÷ 2.5 + 2 = minimum window (seconds)
+```
+
+Examples:
+- "Returning customers spend 67 percent more than new ones." = 9 words → 9 ÷ 2.5 + 2 = **5.6s minimum** → a 5s window fails
+- 4-sentence narration ~40 words → 40 ÷ 2.5 + 2 = **18s minimum**
+
+**If any segment fails:** extend its window and shift all subsequent timestamps. Never shorten the narration. Do not proceed to render until all segments pass.
+
+HOOK is highest risk — it often has 2 sentences crammed into 5s. Keep HOOK narration to 1 short sentence (≤12 words) or extend the window to 10s+.
+
 ### Step 4 — Render
 
 Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
@@ -387,7 +419,7 @@ PEXELS_API_KEY=... node video/scripts/fetch-photos.mjs --post=<slug>
 | Background | `#041018` (dark navy) |
 | Accent | `#58d6ff` (cyan) |
 | Text | `#ffffff` white / `#afc6cf` muted |
-| Font | Impact (stats/titles), Trebuchet MS (chart labels) |
+| Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 1080×1920 portrait @ 30fps |
 | Voice | Zoe (Premium) via macOS `say` |
 | Music | Ambient MP3 at 15% volume |
