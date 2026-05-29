@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { BRAND } from '../brand';
+import { POPPINS } from '../fonts';
 
 function splitSentences(text: string): string[] {
   // Split on sentence-ending punctuation, keep each chunk short
@@ -77,7 +78,7 @@ export const Subtitle: React.FC<{ narration: string }> = ({ narration }) => {
       textAlign: 'center',
     }}>
       <span style={{
-        fontFamily: '"Trebuchet MS", Arial, sans-serif',
+        fontFamily: POPPINS,
         fontSize: 36,
         fontWeight: 600,
         color: BRAND.white,

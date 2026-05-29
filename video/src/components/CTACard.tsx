@@ -1,20 +1,24 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
+import { BEBAS } from '../fonts';
 import { PhotoBg } from './PhotoBg';
 import type { CTASegment } from '../types';
 
-export const CTACard: React.FC<{ segment: CTASegment; photoPath?: string }> = ({ segment, photoPath }) => {
+export const CTACard: React.FC<{
+  segment: CTASegment;
+  photoPath?: string;
+  segmentIndex?: number;
+}> = ({ segment, photoPath, segmentIndex = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const slideProgress = spring({ frame, fps, config: { damping: 18, stiffness: 90 },
+  const slideProgress = spring({ frame, fps, config: { damping: 30, stiffness: 160 },
     durationInFrames: Math.round(fps * 0.5) });
   const translateY = interpolate(slideProgress, [0, 1], [50, 0]);
   const opacity = interpolate(frame, [0, Math.round(fps * 0.3)], [0, 1],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  // Glow pulse — subtle breathing effect on the border
   const glowOpacity = interpolate(
     frame % Math.round(fps * 1.5),
     [0, Math.round(fps * 0.75), Math.round(fps * 1.5)],
@@ -31,9 +35,7 @@ export const CTACard: React.FC<{ segment: CTASegment; photoPath?: string }> = ({
       alignItems: 'center', justifyContent: 'center',
       padding: '80px 60px', overflow: 'hidden', opacity,
     }}>
-      <PhotoBg photoPath={photoPath} overlayOpacity={0.72} />
-
-      {/* Glowing cyan border card */}
+      <PhotoBg photoPath={photoPath} overlayOpacity={0.72} segmentIndex={segmentIndex} />
       <div style={{
         position: 'relative', padding: '60px 48px', borderRadius: 24,
         border: `3px solid rgba(88,214,255,${glowOpacity})`,
@@ -44,7 +46,7 @@ export const CTACard: React.FC<{ segment: CTASegment; photoPath?: string }> = ({
         backdropFilter: 'blur(2px)',
       }}>
         <p style={{
-          fontFamily: 'Impact, "Arial Narrow Bold", sans-serif',
+          fontFamily: BEBAS,
           fontSize: 88, color: BRAND.white, textTransform: 'uppercase',
           letterSpacing: '0.02em', lineHeight: 1.1, textAlign: 'center',
           margin: 0, textShadow: '0 4px 24px rgba(0,0,0,0.8)',
@@ -53,7 +55,7 @@ export const CTACard: React.FC<{ segment: CTASegment; photoPath?: string }> = ({
         </p>
         {subText && (
           <p style={{
-            fontFamily: 'Impact, "Arial Narrow Bold", sans-serif',
+            fontFamily: BEBAS,
             fontSize: 54, color: BRAND.cyan, textTransform: 'uppercase',
             letterSpacing: '0.06em', textAlign: 'center', margin: 0,
             textShadow: `0 0 20px ${BRAND.cyan}88`,
