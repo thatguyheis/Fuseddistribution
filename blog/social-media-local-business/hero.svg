@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1e2a" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-c)"/>
+  <rect width="1200" height="630" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="280" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="315" r="180" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="128" cy="76" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="412" cy="48" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="748" cy="82" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="960" cy="108" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1074" cy="58" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="218" cy="522" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="88" cy="388" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="1108" cy="420" r="1.5" fill="#4dffb8" opacity="0.18"/>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="42" fill="#58d6ff" letter-spacing="3" text-transform="uppercase" opacity="0.9">SOCIAL MEDIA FOR LOCAL BUSINESS</text>
+  <text x="600" y="118" text-anchor="middle" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="26" fill="rgba(236,248,251,0.55)" letter-spacing="2">WHAT ACTUALLY WORKS IN 2026</text>
+
+  <!-- Divider -->
+  <rect x="480" y="134" width="240" height="2" rx="1" fill="url(#bar-grad)" opacity="0.6"/>
+
+  <!-- Card 1 -->
+  <rect x="64" y="170" width="320" height="200" rx="18" fill="url(#card-bg)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="224" y="232" text-anchor="middle" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="72" fill="#58d6ff" letter-spacing="2">1.65%</text>
+  <rect x="104" y="252" width="240" height="2" rx="1" fill="rgba(88,214,255,0.22)"/>
+  <text x="224" y="286" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.8)" letter-spacing="1">FACEBOOK ORGANIC REACH</text>
+  <text x="224" y="308" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.5)" letter-spacing="0.5">per post (avg)</text>
+  <text x="224" y="348" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(88,214,255,0.5)" letter-spacing="1">Sprout Social, 2026</text>
+
+  <!-- Card 2 -->
+  <rect x="440" y="170" width="320" height="200" rx="18" fill="url(#card-bg)" stroke="rgba(88,214,255,0.22)" stroke-width="1.5"/>
+  <text x="600" y="232" text-anchor="middle" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="72" fill="#4dffb8" letter-spacing="2">$8.17</text>
+  <rect x="480" y="252" width="240" height="2" rx="1" fill="rgba(77,255,184,0.22)"/>
+  <text x="600" y="286" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.8)" letter-spacing="1">RETURN PER $1 ON FB ADS</text>
+  <text x="600" y="308" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.5)" letter-spacing="0.5">small business avg</text>
+  <text x="600" y="348" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(77,255,184,0.5)" letter-spacing="1">XtendedView, 2026</text>
+
+  <!-- Card 3 -->
+  <rect x="816" y="170" width="320" height="200" rx="18" fill="url(#card-bg)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="976" y="232" text-anchor="middle" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="72" fill="#58d6ff" letter-spacing="2">70%</text>
+  <rect x="856" y="252" width="240" height="2" rx="1" fill="rgba(88,214,255,0.22)"/>
+  <text x="976" y="286" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.8)" letter-spacing="1">MORE LOCATION VISITS</text>
+  <text x="976" y="308" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.5)" letter-spacing="0.5">with complete GBP</text>
+  <text x="976" y="348" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(88,214,255,0.5)" letter-spacing="1">Google, 2026</text>
+
+  <!-- Organic Reach Bar Chart -->
+  <text x="600" y="415" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(88,214,255,0.7)" letter-spacing="2" font-weight="bold">ORGANIC REACH PER POST</text>
+
+  <!-- Facebook bar -->
+  <text x="200" y="448" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.7)">Facebook</text>
+  <rect x="210" y="434" width="320" height="20" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <rect x="210" y="434" width="94" height="20" rx="4" fill="url(#bar-grad)" opacity="0.7"/>
+  <text x="316" y="448" font-family="Impact,sans-serif" font-size="15" fill="rgba(236,248,251,0.8)" dx="6">1.65%</text>
+
+  <!-- Instagram bar -->
+  <text x="200" y="488" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.7)">Instagram</text>
+  <rect x="210" y="474" width="320" height="20" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <rect x="210" y="474" width="200" height="20" rx="4" fill="url(#bar-grad)" opacity="0.85"/>
+  <text x="422" y="488" font-family="Impact,sans-serif" font-size="15" fill="rgba(236,248,251,0.8)" dx="6">3.5%</text>
+
+  <!-- Bottom label -->
+  <text x="600" y="570" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(88,214,255,0.35)" letter-spacing="2">FUSEDDISTRIBUTION.COM</text>
+</svg>

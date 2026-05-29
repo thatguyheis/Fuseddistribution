@@ -1,10 +1,26 @@
 [
   {
+    "slug": "social-media-local-business",
+    "title": "How Local Businesses Should Use Social Media in 2026 (Without Wasting Time)",
+    "date": "2026-05-29",
+    "excerpt": "Facebook organic reach averages 1.65 percent per post in 2026. Here is where local businesses should actually spend their time on social media, and what the data shows about Google Business Profile, paid ads, and organic content.",
+    "tags": [
+      "Social Media",
+      "Local Business"
+    ],
+    "author": "Nick",
+    "image": "/blog/social-media-local-business/hero.svg",
+    "imageAlt": "Three stat cards showing Facebook organic reach 1.65 percent per post, 8.17 dollar return per dollar on Facebook ads, and 70 percent more location visits with a complete Google Business Profile"
+  },
+  {
     "slug": "local-business-repeat-customers",
     "title": "How to Turn One-Time Customers Into Repeat Buyers",
     "date": "2026-05-29",
     "excerpt": "Returning customers spend 67% more than new ones and cost 5x less to reach. Here is a simple three-step follow-up system that turns first-time buyers into regulars who send referrals.",
-    "tags": ["Local Business", "Marketing"],
+    "tags": [
+      "Local Business",
+      "Marketing"
+    ],
     "author": "Nick",
     "image": "/blog/local-business-repeat-customers/hero.svg",
     "imageAlt": "Three stat cards showing returning customers spend 67% more, cost 5x less to acquire, and 65% of revenue comes from existing customers"
@@ -14,7 +30,10 @@
     "title": "Home Safe, Bank Vault, or Third-Party Storage: Where to Keep Your Silver",
     "date": "2026-05-29",
     "excerpt": "Your silver storage choice affects cost, access, and insurance in different ways. Here is what home safes, safe deposit boxes, and third-party vaults each offer and when each one makes sense.",
-    "tags": ["Silver", "Storage"],
+    "tags": [
+      "Silver",
+      "Storage"
+    ],
     "author": "Nick",
     "image": "/blog/silver-storage-options/hero.svg",
     "imageAlt": "Three storage option cards showing home safe, bank safe deposit box at $75 per year, and third-party vault at $20 per month with security and access comparison"
@@ -24,7 +43,10 @@
     "title": "How Local SEO Gets Your Business Into Google's Top 3 Results",
     "date": "2026-05-28",
     "excerpt": "46% of Google searches have local intent and 75% of clicks go to the top 3 Map Pack results. Here is how local SEO works and what moves your business into those spots.",
-    "tags": ["Google", "Local Business"],
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/local-seo-near-me/hero.svg",
     "imageAlt": "Three stat cards showing 46% local search intent, 75% Map Pack click share, and 42% more direction requests for businesses with photos"
@@ -34,7 +56,10 @@
     "title": "Silver as an Inflation Hedge: What the Data Actually Shows",
     "date": "2026-05-28",
     "excerpt": "Silver gained 270% during the 1970s inflation surge and doubled in value from 2020 to 2022. Here is what three decades of data show about silver during high inflation periods.",
-    "tags": ["Silver", "Investing"],
+    "tags": [
+      "Silver",
+      "Investing"
+    ],
     "author": "Nick",
     "image": "/blog/silver-inflation-hedge/hero.svg",
     "imageAlt": "Three stat cards showing silver's 270% gain in the 1970s, 173% gain from 2008 to 2011, and 107% rise from 2020 to 2022"
@@ -44,7 +69,10 @@
     "title": "What Pages Every Local Business Website Needs",
     "date": "2026-05-27",
     "excerpt": "76% of people check a website before contacting a business. Here are the 5 pages every local site needs and what to put on each one to turn visitors into customers.",
-    "tags": ["Websites", "Local Business"],
+    "tags": [
+      "Websites",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/local-business-website-pages/hero.svg",
     "imageAlt": "Four stat cards showing 76% check website before calling, 3x more inquiries with Contact page, 74% visit Services page, and 58% of traffic is mobile"
@@ -54,7 +82,10 @@
     "title": "Silver Coins, Rounds, and Bars: Which Should You Buy First",
     "date": "2026-05-27",
     "excerpt": "Coins, rounds, and bars all hold silver but they're not the same buy. Here is how premiums, liquidity, and storage differ across the three so you can decide what to buy first.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/silver-coins-rounds-bars/hero.svg",
     "imageAlt": "Four data cards comparing silver product types: coins at 22% premium, rounds at 5% premium, bars at 2% premium, and all types at .999 fine silver purity"
@@ -64,7 +95,10 @@
     "title": "How to Use Instagram to Get Local Customers",
     "date": "2026-05-26",
     "excerpt": "Instagram has 2 billion users and 90% follow at least one business. Here is how local businesses set up their profile, post the right content, and turn followers into paying customers.",
-    "tags": ["Social Media", "Local Business"],
+    "tags": [
+      "Social Media",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/instagram-local-business/hero.svg",
     "imageAlt": "Instagram for local business stat cards showing 2B+ monthly active users, 90% follow a business, 4x reach with daily posts, and 38% higher reach with Reels"
@@ -74,7 +108,10 @@
     "title": "The Silver Market in 2026: What Buyers Should Know",
     "date": "2026-05-26",
     "excerpt": "Silver demand hit 1.24 billion ounces in 2023 and industrial use now drives 58% of it. Here is what is pushing the market, where supply stands, and what it means for buyers in 2026.",
-    "tags": ["Silver", "Market"],
+    "tags": [
+      "Silver",
+      "Market"
+    ],
     "author": "Nick",
     "image": "/blog/silver-market-outlook-2026/hero.svg",
     "imageAlt": "Silver market data cards showing 1.24 billion ounce demand record, 58% industrial share, 200 million ounce supply deficit, and solar sector consuming 140 million ounces annually"
@@ -84,7 +121,10 @@
     "title": "How to Build an Email List That Actually Brings Customers Back",
     "date": "2026-05-26",
     "excerpt": "Email marketing returns $42 for every $1 spent. Here is how local businesses build a list, set up simple automations, and turn past customers into repeat buyers.",
-    "tags": ["Marketing", "Local Business"],
+    "tags": [
+      "Marketing",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/email-marketing-local-business/hero.svg",
     "imageAlt": "Email marketing ROI dashboard showing $42 return per dollar spent, 25% average open rate, and 40x advantage over social media for customer acquisition"
@@ -94,7 +134,10 @@
     "title": "Silver's 4,000-Year Run as Money",
     "date": "2026-05-26",
     "excerpt": "Silver has served as money for over 4,000 years, from Lydian coins to the US silver standard. Here is the history behind the metal and what it means for buyers today.",
-    "tags": ["Silver", "History"],
+    "tags": [
+      "Silver",
+      "History"
+    ],
     "author": "Nick",
     "image": "/blog/silver-history-as-money/hero.svg",
     "imageAlt": "Four data cards showing key facts in silver's monetary history: first coins around 600 BC in Lydia, Roman denarius debasement from 95 to 5 percent silver, US silver standard from 1878 to 1964, and pre-1965 US coins containing 90 percent silver"
@@ -104,7 +147,10 @@
     "title": "How to Store Silver Without Losing It",
     "date": "2026-05-22",
     "excerpt": "Silver faces four real threats in home storage: theft, fire, moisture, and accidental discovery. Here is what each one means in practice and how to protect against it.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/silver-storage-guide/hero.svg",
     "imageAlt": "Four risk stat cards showing silver storage threats: theft at 10 to 12 minutes, fire at 1763 degrees Fahrenheit, discovery at 65 percent known persons, and moisture tarnish warning"
@@ -114,7 +160,11 @@
     "title": "How to Grow Your Facebook Following and Actually Make Money From It",
     "date": "2026-05-15",
     "excerpt": "Most business Facebook pages post inconsistently and earn nothing from their followers. Here is how scheduling, automation, and a clear monetization path change that.",
-    "tags": ["Social Media", "Marketing", "Local Business"],
+    "tags": [
+      "Social Media",
+      "Marketing",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/facebook-growth-and-automation/hero.svg",
     "imageAlt": "Follower growth chart with data cards showing Facebook's 3 billion monthly users, 6x reach lift from daily posting, 12% Lead Ad conversion rate, and 365-day retargeting window"
@@ -124,17 +174,23 @@
     "title": "Why Giving Something Away Free Brings More Customers Than Most Ads",
     "date": "2026-05-07",
     "excerpt": "The research on free offers goes back to 2007 and it's consistent. Businesses that lower the barrier to zero before asking for money consistently outperform those that lead with price.",
-    "tags": ["Marketing", "Local Business"],
+    "tags": [
+      "Marketing",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/why-free-offers-work/hero.svg",
-    "imageAlt": "Data visualization showing the zero price effect — 69% chose the free item versus 27% at one cent, with research cards from Ariely 2007, Amazon Prime, in-store sampling, and loss leader math"
+    "imageAlt": "Data visualization showing the zero price effect \u2014 69% chose the free item versus 27% at one cent, with research cards from Ariely 2007, Amazon Prime, in-store sampling, and loss leader math"
   },
   {
     "slug": "silver-premiums-explained",
     "title": "Understanding Silver Premiums: Why You Pay More Than Spot",
     "date": "2026-05-06",
     "excerpt": "Every silver purchase costs more than the spot price. Here is why that premium exists, what drives it higher or lower, and how to buy smarter by knowing what you are actually paying.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "readTime": 7,
     "image": "/blog/silver-premiums-explained/hero.svg",
@@ -145,7 +201,11 @@
     "title": "How to Get More Google Reviews From Your Customers",
     "date": "2026-05-04",
     "excerpt": "If your business has five reviews or fewer, a lot of potential customers are choosing someone else. Here is a practical system for getting more Google reviews and what to do with them.",
-    "tags": ["Google", "Local Business", "Reputation"],
+    "tags": [
+      "Google",
+      "Local Business",
+      "Reputation"
+    ],
     "author": "Nick",
     "readTime": 6,
     "image": "/blog/getting-google-reviews/hero.svg",
@@ -156,7 +216,10 @@
     "title": "The Silver-to-Gold Ratio Explained",
     "date": "2026-05-01",
     "excerpt": "Divide the gold spot price by silver's and you get the ratio. Right now it sits at roughly 60:1. Here is what that number means and how investors use it.",
-    "tags": ["Silver", "Investing"],
+    "tags": [
+      "Silver",
+      "Investing"
+    ],
     "author": "Nick",
     "readTime": 5,
     "image": "/blog/silver-to-gold-ratio/hero.svg",
@@ -167,7 +230,11 @@
     "title": "How to Get Your Business Listed on Google",
     "date": "2026-04-30",
     "excerpt": "Google Business Profile is free and takes 20 minutes. It is the fastest way to start showing up when someone nearby searches for what you do. Here is how to set it up right.",
-    "tags": ["Websites", "Google", "Local Business"],
+    "tags": [
+      "Websites",
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "readTime": 7,
     "image": "/blog/google-business-profile-setup/hero.jpg",
@@ -178,7 +245,11 @@
     "title": "What Is Junk Silver and Why Do So Many Stackers Start There?",
     "date": "2026-04-25",
     "excerpt": "Junk silver sounds like something you'd find in a shoebox at a garage sale. The name is misleading. Here's what it actually means, how the math works, and why so many new silver buyers start here.",
-    "tags": ["Silver", "Buying Guide", "Beginners"],
+    "tags": [
+      "Silver",
+      "Buying Guide",
+      "Beginners"
+    ],
     "author": "Nick",
     "readTime": 7,
     "image": "/blog/what-is-junk-silver/images/coins-spread.jpg",
@@ -189,7 +260,11 @@
     "title": "What a Good Website Is Actually Worth to Your Business",
     "date": "2026-04-23",
     "excerpt": "A real look at the numbers behind websites and technology. What the data says about online discovery, conversion rates, and automation savings for small businesses.",
-    "tags": ["Websites", "Technology", "Local Business"],
+    "tags": [
+      "Websites",
+      "Technology",
+      "Local Business"
+    ],
     "author": "Nick",
     "readTime": 6,
     "image": "/blog/what-a-website-is-worth/hero.jpg",
@@ -200,7 +275,11 @@
     "title": "What a Website Actually Does for Your Business",
     "date": "2026-04-22",
     "excerpt": "Most customers search online before they ever call or walk in. Here is what having a website and a Google presence actually means for a local business, backed by real numbers.",
-    "tags": ["Websites", "Google", "Local Business"],
+    "tags": [
+      "Websites",
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "readTime": 8,
     "image": "/blog/what-a-website-does-for-your-business/hero.jpg",
@@ -210,8 +289,11 @@
     "slug": "dollar-cost-averaging-silver",
     "title": "Why Dollar Cost Averaging Is the Smartest Way to Buy Silver",
     "date": "2026-04-21",
-    "excerpt": "Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time — less stress, better results, and no market-watching required.",
-    "tags": ["Silver", "Investing"],
+    "excerpt": "Stop trying to time the silver market. Dollar cost averaging lets you build a real position over time \u2014 less stress, better results, and no market-watching required.",
+    "tags": [
+      "Silver",
+      "Investing"
+    ],
     "author": "Nick",
     "readTime": 5,
     "image": "/blog/dollar-cost-averaging-silver/hero.svg",
@@ -222,7 +304,10 @@
     "title": "Why Your Business Website Isn't Getting You Customers",
     "date": "2026-04-18",
     "excerpt": "Having a website and having a website that brings in business are two different things. Here are the most common reasons local sites fall flat.",
-    "tags": ["Websites", "Local Business"],
+    "tags": [
+      "Websites",
+      "Local Business"
+    ],
     "author": "Nick",
     "readTime": 5,
     "image": "/blog/why-your-website-isnt-getting-customers/hero.jpg",
@@ -232,8 +317,11 @@
     "slug": "welcome-to-fused",
     "title": "Welcome to the Fused Blog",
     "date": "2026-04-18",
-    "excerpt": "A practical resource for local businesses navigating technology — from website basics to AI tools that actually save time.",
-    "tags": ["News", "Updates"],
+    "excerpt": "A practical resource for local businesses navigating technology \u2014 from website basics to AI tools that actually save time.",
+    "tags": [
+      "News",
+      "Updates"
+    ],
     "author": "Nick",
     "readTime": 2,
     "image": "/blog/welcome-to-fused/hero.svg",

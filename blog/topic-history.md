@@ -24,6 +24,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-27 | local-business-website-pages | Websites | Essential pages every local business website needs to convert visitors |
 | 2026-05-26 | email-marketing-local-business | Marketing | Email marketing ROI for local businesses |
 | 2026-05-28 | local-seo-near-me | Google | How to rank in Google's Map Pack with local SEO |
+| 2026-05-29 | social-media-local-business | Social Media | How local businesses should use social media in 2026 without wasting time |
 | 2026-05-29 | local-business-repeat-customers | Local Business | Simple three-step follow-up system that turns first-time buyers into repeat customers |
 
 ---
