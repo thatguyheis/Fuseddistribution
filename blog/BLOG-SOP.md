@@ -27,6 +27,9 @@ echo $PEXELS_API_KEY
 - [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
 - [ ] Add entry to `posts.json` (top of array)
 - [ ] Create `blog/[slug]/` folder
+- [ ] **Use `blog-write` skill** to draft post body — enforces E-E-A-T, sourced stats, 5-gate delivery contract, and all §9 writing rules automatically
+- [ ] **Use `blog-seo-check` skill** after draft — validates on-page SEO signals before building HTML
+- [ ] **Use `seo-local` skill** if post covers local business, Google, or map pack topics
 - [ ] Write `index.html` — HTML from BLOG-REF.md "Section 1", CSS from BLOG-REF.md "Section 2", fill all [SLOTS]
 - [ ] Write `hero.svg` — design rules in §7
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
@@ -187,6 +190,8 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 ---
 
 ## 9. Writing Style
+
+> **Skills:** `blog-write` enforces all rules in this section via a 5-gate 100-point delivery contract. It blocks any draft scoring below 90 and iterates up to 3× automatically. `blog-seo-check` validates on-page signals after the draft passes. Use both before building the HTML.
 
 ### Hard formatting rules (violations = rewrite, no exceptions)
 
