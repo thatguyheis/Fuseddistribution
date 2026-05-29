@@ -2,6 +2,7 @@ import React from 'react';
 import { Composition, registerRoot } from 'remotion';
 import { BlogReel } from './compositions/BlogReel';
 import { BRAND } from './brand';
+import './fonts';
 import type { ReelScript } from './types';
 
 const defaultScript: ReelScript = {
