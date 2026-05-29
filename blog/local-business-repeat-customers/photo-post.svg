@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="460" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="600" r="310" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="128" cy="92" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="418" cy="64" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="748" cy="84" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="964" cy="122" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1074" cy="72" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="218" cy="1080" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="844" cy="1104" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1048" cy="1052" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="484" cy="1148" r="1" fill="#4dffb8" opacity="0.20"/>
+
+  <!-- TOP ZONE: eyebrow + brand -->
+  <text x="600" y="100" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.18em" fill="#58d6ff" opacity="0.8">LOCAL BUSINESS</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.12em" fill="#ecf8fb" opacity="0.95">FUSED</text>
+  <line x1="300" y1="168" x2="900" y2="168" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- CENTER ZONE: Key stat + title -->
+  <text x="600" y="360" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="220" letter-spacing="-0.01em" fill="#58d6ff">67%</text>
+
+  <text x="600" y="420" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="24" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">MORE SPENT BY REPEAT CUSTOMERS</text>
+
+  <line x1="200" y1="460" x2="1000" y2="460" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- Post title -->
+  <text x="600" y="540" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="58" letter-spacing="0.04em" fill="#ecf8fb">HOW TO TURN ONE-TIME</text>
+  <text x="600" y="606" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="58" letter-spacing="0.04em" fill="#ecf8fb">BUYERS INTO REGULARS</text>
+
+  <!-- Supporting stats row -->
+  <rect x="100" y="650" width="290" height="120" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="245" y="700" text-anchor="middle" font-family="Impact, sans-serif" font-size="44" fill="#58d6ff">5x</text>
+  <text x="245" y="730" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">more to acquire</text>
+  <text x="245" y="748" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">vs retain</text>
+
+  <rect x="455" y="650" width="290" height="120" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="700" text-anchor="middle" font-family="Impact, sans-serif" font-size="44" fill="#4dffb8">65%</text>
+  <text x="600" y="730" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">of revenue from</text>
+  <text x="600" y="748" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">existing customers</text>
+
+  <rect x="810" y="650" width="290" height="120" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="955" y="700" text-anchor="middle" font-family="Impact, sans-serif" font-size="44" fill="#58d6ff">3</text>
+  <text x="955" y="730" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">steps to build</text>
+  <text x="955" y="748" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">a follow-up system</text>
+
+  <!-- BOTTOM ZONE: excerpt + CTA -->
+  <text x="600" y="840" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">A simple follow-up system pays better than most paid ads.</text>
+  <text x="600" y="872" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">Here is how to build one in three steps.</text>
+
+  <!-- CTA button shape -->
+  <rect x="250" y="920" width="700" height="72" rx="20" fill="rgba(88,214,255,0.06)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="600" y="963" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.08em" fill="rgba(88,214,255,0.85)">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Brand watermark -->
+  <text x="600" y="1080" text-anchor="middle" font-family="Impact, sans-serif" font-size="28" letter-spacing="0.14em" fill="rgba(88,214,255,0.25)">FUSED TECHNOLOGY SOLUTIONS</text>
+</svg>

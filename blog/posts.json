@@ -1,5 +1,25 @@
 [
   {
+    "slug": "local-business-repeat-customers",
+    "title": "How to Turn One-Time Customers Into Repeat Buyers",
+    "date": "2026-05-29",
+    "excerpt": "Returning customers spend 67% more than new ones and cost 5x less to reach. Here is a simple three-step follow-up system that turns first-time buyers into regulars who send referrals.",
+    "tags": ["Local Business", "Marketing"],
+    "author": "Nick",
+    "image": "/blog/local-business-repeat-customers/hero.svg",
+    "imageAlt": "Three stat cards showing returning customers spend 67% more, cost 5x less to acquire, and 65% of revenue comes from existing customers"
+  },
+  {
+    "slug": "silver-storage-options",
+    "title": "Home Safe, Bank Vault, or Third-Party Storage: Where to Keep Your Silver",
+    "date": "2026-05-29",
+    "excerpt": "Your silver storage choice affects cost, access, and insurance in different ways. Here is what home safes, safe deposit boxes, and third-party vaults each offer and when each one makes sense.",
+    "tags": ["Silver", "Storage"],
+    "author": "Nick",
+    "image": "/blog/silver-storage-options/hero.svg",
+    "imageAlt": "Three storage option cards showing home safe, bank safe deposit box at $75 per year, and third-party vault at $20 per month with security and access comparison"
+  },
+  {
     "slug": "local-seo-near-me",
     "title": "How Local SEO Gets Your Business Into Google's Top 3 Results",
     "date": "2026-05-28",

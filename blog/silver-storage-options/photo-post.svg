@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="460" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="600" r="310" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="132" cy="96" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="408" cy="68" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="756" cy="78" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="956" cy="116" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1078" cy="66" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="212" cy="1084" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="848" cy="1108" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1044" cy="1056" r="1" fill="#58d6ff" opacity="0.16"/>
+
+  <!-- TOP ZONE -->
+  <text x="600" y="100" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.18em" fill="#58d6ff" opacity="0.8">SILVER STORAGE</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.12em" fill="#ecf8fb" opacity="0.95">FUSED</text>
+  <line x1="300" y1="168" x2="900" y2="168" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- CENTER ZONE: Key stat + title -->
+  <text x="600" y="360" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="180" letter-spacing="-0.01em" fill="#4dffb8">$20/MO</text>
+
+  <text x="600" y="418" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="24" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">PROFESSIONAL VAULT STORAGE FOR SILVER</text>
+
+  <line x1="200" y1="458" x2="1000" y2="458" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- Post title -->
+  <text x="600" y="536" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.04em" fill="#ecf8fb">HOME SAFE, BANK BOX,</text>
+  <text x="600" y="598" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.04em" fill="#ecf8fb">OR VAULT STORAGE?</text>
+
+  <!-- 3 option comparison rows -->
+  <rect x="100" y="644" width="300" height="118" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="250" y="692" text-anchor="middle" font-family="Impact, sans-serif" font-size="28" fill="#58d6ff">HOME SAFE</text>
+  <text x="250" y="720" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.65)">~$50/yr amortized</text>
+  <text x="250" y="742" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.45)">Best under $10K</text>
+
+  <rect x="450" y="644" width="300" height="118" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="692" text-anchor="middle" font-family="Impact, sans-serif" font-size="28" fill="#58d6ff">BANK BOX</text>
+  <text x="600" y="720" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.65)">~$75/yr average</text>
+  <text x="600" y="742" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.45)">Best $2K-$25K</text>
+
+  <rect x="800" y="644" width="300" height="118" rx="16" fill="rgba(77,255,184,0.06)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="950" y="692" text-anchor="middle" font-family="Impact, sans-serif" font-size="28" fill="#4dffb8">VAULT</text>
+  <text x="950" y="720" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.65)">~$240/yr insured</text>
+  <text x="950" y="742" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.45)">Best $25K+</text>
+
+  <!-- BOTTOM ZONE -->
+  <text x="600" y="848" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">Each option trades off on cost, access, and insurance.</text>
+  <text x="600" y="880" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">Here is how to choose the right one for your stack.</text>
+
+  <!-- CTA button -->
+  <rect x="250" y="922" width="700" height="72" rx="20" fill="rgba(88,214,255,0.06)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="600" y="965" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.08em" fill="rgba(88,214,255,0.85)">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Brand watermark -->
+  <text x="600" y="1080" text-anchor="middle" font-family="Impact, sans-serif" font-size="28" letter-spacing="0.14em" fill="rgba(88,214,255,0.25)">FUSED DISTRIBUTION</text>
+</svg>
