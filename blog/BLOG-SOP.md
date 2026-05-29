@@ -2,6 +2,24 @@
 
 > Reference material (CSS, HTML template): **BLOG-REF.md** — copy verbatim, never re-read.
 
+
+## Setup (one-time)
+
+**Pexels API key** — required for blog images and reel backgrounds.
+
+Key is exported from `~/.zprofile` automatically in every new shell. No manual export needed.
+
+If the key is ever missing, add it to `~/.zprofile`:
+```bash
+echo 'export PEXELS_API_KEY=your_key_here' >> ~/.zprofile
+source ~/.zprofile
+```
+
+To verify it is active:
+```bash
+echo $PEXELS_API_KEY
+```
+
 ---
 
 ## 0. Quick Checklist
