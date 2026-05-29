@@ -14,7 +14,9 @@
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Paste attributions into `<figcaption>` tags
-- [ ] Write `reel-data.md` (§11)
+- [ ] Write `reel-data.md` with 3 reel sections (§11)
+- [ ] Write `photo-post.svg` (§15)
+- [ ] Write `social-copy.json` (§14)
 - [ ] `git add blog/posts.json blog/[slug]/` then commit
 
 ---
@@ -57,7 +59,10 @@ blog/
   [slug]/
     index.html
     hero.svg
-    reel-data.md        ← required (§11)
+    reel-data.md        ← required (§11) — 3 reel sections
+    reel-script.md      ← written by REEL-SOP workflow
+    photo-post.svg      ← required (§15) — 1200×1200 square
+    social-copy.json    ← required (§14) — captions per platform
     images/
       pexels-0.jpg      ← from fetch-pexels script
       pexels-1.jpg
@@ -237,55 +242,92 @@ Lowercase, hyphens only. Short and descriptive. No dates. Example: `how-to-set-u
 ## 11. reel-data.md
 
 **Required.** Create this file before git commit. The reel renderer reads it — never re-reads index.html.
+Contains **3 independent reel sections** (reel-1, reel-2, reel-3), each a different hook angle from the same blog post.
 
 File path: `blog/[slug]/reel-data.md`
 
 ```markdown
 # Reel Data: [slug]
 topic: silver|tech
-hook: One punchy line — use Contradiction / Pain Point / Immediate Value / Contrarian Stat formula (see REEL-SOP.md §Hook Formulas). Must land without audio.
-hook_type: contradiction|pain_point|immediate_value|contrarian_stat
 
-## stats
-- text: 42% Label In 5 Words Max
+## reel-1
+angle: lead_stat
+hook: Strongest number from the post. Contrarian Stat or Pain Point formula (see REEL-SOP.md §Hook Formulas). Must land without audio.
+hook_type: contrarian_stat|pain_point
+
+### stats
+- text: 42% LABEL IN 5 WORDS MAX
   narration: 2–4 sentences. Match blog wording closely.
-- text: 73% Short Label Here
+- text: 73% SHORT LABEL HERE
   narration: 2–3 sentences.
 
-**Rules for stat text:** No quotes. Number first, then a label of 5 words or fewer. The reel renderer splits on the number — long labels wrap badly on screen.
-
-## chart
+### chart
 title: Chart heading — copy from blog chart exactly
 bars:
   - Label: XX%
   - Label: XX%
 narration: Explain the data the same way the blog does.
 
-## cta
+### cta
 text: Full breakdown — link in comments.
-narration: One sentence driving to the link.
+narration: One sentence. End with save ask or share ask.
 
-## caption
-Facebook caption. 2–4 sentences. No hashtags. Do NOT include the discussion_question here — it gets appended separately at post time.
+---
 
-## discussion_question
-One short opinion-inviting question for caption close. Example: "Which of these pages does your site actually have?"
+## reel-2
+angle: concept
+hook: "How it works" or "why this matters" angle. Immediate Value or Contradiction formula.
+hook_type: immediate_value|contradiction
 
-## hashtags
-#Tag1 #Tag2 #Tag3
+### stats
+- text: [Different stat from post — not reused from reel-1]
+  narration: 2–4 sentences.
+
+### cta
+text: Full breakdown — link in comments.
+narration: One sentence. End with discussion question ask.
+
+---
+
+## reel-3
+angle: cta_direct
+hook: Direct offer/action angle. Pain Point or Immediate Value formula.
+hook_type: pain_point|immediate_value
+
+### stats
+- text: [Third angle stat or takeaway from post]
+  narration: 2–4 sentences.
+
+### cta
+text: Full breakdown — link in comments.
+narration: One sentence. End with share ask.
+
+---
+
+## shared
+discussion_question: One short opinion-inviting question for caption close.
+hashtags: #Tag1 #Tag2 #Tag3
 
 ## pexels_queries
-- segment: 0
+- reel: 1
+  segment: 0
   query: "specific pexels search query"
-- segment: 2
+- reel: 2
+  segment: 0
   query: "second specific query"
+- reel: 3
+  segment: 0
+  query: "third specific query"
 ```
 
 Rules:
-- `## chart` — omit if post has no chart
-- `## stats` — 2–3 entries max, pulled from post stat-cards or key numbers
-- `pexels_queries` — segment index matches the reel segment order (0=hook, 1=overlay1, etc.)
-- Target 30–40 lines total
+- Each reel must use a **different stat or angle** — no repeated numbers across reels
+- `### chart` — include in reel-1 only if post has a chart; omit from reel-2 and reel-3
+- `### stats` — 2–3 entries max per reel
+- All 3 reels target Express format (25–40s) unless content clearly needs Standard
+- `## shared` block — one discussion_question and hashtag set, shared across all 3 reels
+- pexels_queries — one entry per reel minimum, segment 0 (hook background)
+- Target 60–80 lines total
 
 ---
 
@@ -336,8 +378,101 @@ npx wrangler deploy
 
 Verify the post is live at `https://fuseddistribution.com/blog/[slug]/` before posting to social media.
 
-### Step 3 — Post to social media
-- Copy `## caption` from `blog/[slug]/reel-data.md` for the Facebook/Instagram caption
-- Copy `## hashtags` from `blog/[slug]/reel-data.md`
-- Upload `video/out/[slug]/[slug].mp4` as the Reel (done manually)
-- Add the blog post URL as the first comment
+### Step 3 — Social media (automated via Postiz — see SOCIAL-SOP.md)
+
+Postiz reads `social-copy.json` and schedules all posts at optimal times. Nothing to do manually.
+
+Assets consumed by Postiz:
+- `video/out/[slug]/[slug]-reel-1.mp4`, `-reel-2.mp4`, `-reel-3.mp4`
+- `blog/[slug]/photo-post.svg`
+- `blog/[slug]/social-copy.json`
+
+> **Postiz not yet configured:** Until Postiz is set up on the Windows PC, skip this step.
+> Manually post reels using captions from `social-copy.json`.
+
+---
+
+## 14. social-copy.json
+
+**Required.** Claude writes this during pipeline run. Consumed by Postiz when scheduling posts.
+
+File path: `blog/[slug]/social-copy.json`
+
+```json
+{
+  "slug": "post-slug",
+  "topic": "silver|tech",
+  "blog_url": "https://fuseddistribution.com/blog/post-slug/",
+  "reels": {
+    "reel-1": {
+      "angle": "lead_stat",
+      "facebook": "2-4 sentences. No hashtags. Ends with discussion_question on its own line.",
+      "instagram": "Punchier version. Hashtags at end.",
+      "linkedin": "Professional tone. 2-3 sentences. Include blog URL.",
+      "x": "Under 280 chars including blog URL. Direct and punchy."
+    },
+    "reel-2": {
+      "angle": "concept",
+      "facebook": "...",
+      "instagram": "...",
+      "linkedin": "...",
+      "x": "..."
+    },
+    "reel-3": {
+      "angle": "cta_direct",
+      "facebook": "...",
+      "instagram": "...",
+      "linkedin": "...",
+      "x": "..."
+    }
+  },
+  "photo": {
+    "facebook": "3-5 sentences. Longer-form. No hashtags. Include discussion_question.",
+    "instagram": "Caption + hashtags block.",
+    "linkedin": "Professional framing. 2-3 sentences. Blog link."
+  },
+  "hashtags": "#Tag1 #Tag2 #Tag3",
+  "discussion_question": "One opinion-inviting question for caption close."
+}
+```
+
+**Caption rules by platform:**
+- **Facebook:** Conversational, 2-5 sentences, no hashtags in body, discussion question at end
+- **Instagram:** Punchy opener, 2-3 sentences, hashtags block at end (8-12 tags max)
+- **LinkedIn:** Professional, lead with insight not hype, include blog link, 2-3 sentences
+- **X:** Under 280 chars total including URL, direct claim or stat, blog link at end
+
+Do NOT use em dashes in any caption. Follow same writing style rules as blog posts.
+
+---
+
+## 15. photo-post.svg
+
+**Required.** One per blog post. Posted to Facebook + Instagram + LinkedIn as a feed photo.
+
+File path: `blog/[slug]/photo-post.svg`
+Canvas: `width="1200" height="1200" viewBox="0 0 1200 1200"`
+
+**Design rules:**
+- Same dark brand theme as hero SVG: `#041018` background, cyan/green accent palette
+- Same radial glows, grid lines, and scatter dots as hero SVG
+- Top zone (y=0-200): post category eyebrow + brand mark "FUSED"
+- Center zone (y=200-850): post title (large Impact font) + one key stat (very large number)
+- Bottom zone (y=850-1200): short excerpt (1 sentence) + blog URL CTA button shape
+- No profile photos, no stock imagery — pure SVG graphic
+
+**Key stat display:**
+- Pull the single strongest stat from the blog post
+- Display number in Impact at ~180px, centered
+- Short label below in Arial at ~24px, muted color
+
+**CTA shape:**
+- Rounded rect at bottom center, cyan border, dark fill
+- Text: "Full breakdown at fuseddistribution.com"
+
+**Color rules — identical to hero SVG:**
+- Background: `#041018`
+- Accent cyan: `#58d6ff`
+- Accent green: `#4dffb8`
+- Muted text: `rgba(175,198,207,0.75)`
+- Body text: `#ecf8fb`

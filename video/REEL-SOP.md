@@ -280,16 +280,23 @@ cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
 
 Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
 
+Each blog post produces **3 reels**. Render them in sequence — one per reel-data section.
+
 ```bash
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
+cd video && export $(cat .env | xargs) && \
+  node scripts/render.mjs --post=<slug> --reel=1 --music=ambient-XX.mp3 && \
+  node scripts/render.mjs --post=<slug> --reel=2 --music=ambient-XX.mp3 && \
+  node scripts/render.mjs --post=<slug> --reel=3 --music=ambient-XX.mp3
 ```
 
-Example (ambient-05):
-```bash
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
-```
+Use same `ambient-XX.mp3` for all 3 reels in a session (consistent feel per day).
 
-Output: `video/out/<slug>/<slug>.mp4`
+Output:
+```
+video/out/<slug>/<slug>-reel-1.mp4
+video/out/<slug>/<slug>-reel-2.mp4
+video/out/<slug>/<slug>-reel-3.mp4
+```
 
 ### Step 5 — Review checklist
 - [ ] Numbers animate and count up correctly
@@ -307,7 +314,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 **Commit reel files:**
 ```bash
-git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md video/out/<slug>/
+git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/<slug>/photo-post.svg blog/<slug>/social-copy.json blog/topic-history.md video/out/<slug>/
 git commit -m "feat(reel): [Post Title]"
 git push origin main
 ```
@@ -319,11 +326,12 @@ npx wrangler deploy
 
 Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before posting.
 
-**Post the reel manually:**
-- Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
-- Caption: copy `## caption` from `blog/<slug>/reel-data.md`, then add a blank line, then paste the `## discussion_question` on its own line
-- Hashtags: copy `## hashtags` from `blog/<slug>/reel-data.md`
-- First comment: paste the live blog URL
+**Post reels (automated via Postiz — see SOCIAL-SOP.md):**
+Assets: `video/out/<slug>/[slug]-reel-1.mp4`, `-reel-2.mp4`, `-reel-3.mp4`
+Captions: `blog/<slug>/social-copy.json` → `reels.reel-1` through `reels.reel-3`
+
+> **Postiz not yet configured:** Until Postiz is running on the Windows PC, post manually.
+> Upload each MP4 and use captions from `social-copy.json` for each reel.
 
 **Timing matters — first 6 hours are the algorithm's testing window:**
 - Post when your audience is active (Facebook: Tue–Thu 9am–1pm local; Instagram: M/W/F 9–11am)
