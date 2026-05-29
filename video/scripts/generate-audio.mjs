@@ -40,6 +40,13 @@ function coquiToM4a(text, outPath) {
   execSync(`rm "${tmpWav}"`);
 }
 
+function normalizeForTTS(text) {
+  return text
+    .replace(/\bUS\b/g, 'USA')           // "US" → "USA" so it's not read as the word "us"
+    .replace(/(\d)%/g, '$1 percent')     // "42%" → "42 percent"
+    .replace(/^%/g, 'percent ');         // leading % edge case
+}
+
 async function generateAudio(slug) {
   const scriptPath = join(ROOT, 'out', slug, 'script.json');
   if (!existsSync(scriptPath)) {
@@ -58,11 +65,12 @@ async function generateAudio(slug) {
     const seg = script.segments[i];
     if (!seg.narration) { skipped++; continue; }
     const outPath = join(audioDir, `segment-${i}.m4a`);
+    const ttsText = normalizeForTTS(seg.narration);
     try {
       if (USE_COQUI) {
-        coquiToM4a(seg.narration, outPath);
+        coquiToM4a(ttsText, outPath);
       } else {
-        sayToM4a(seg.narration, outPath);
+        sayToM4a(ttsText, outPath);
       }
       console.log(`  ✓ segment-${i}.m4a (${seg.type})`);
       generated++;

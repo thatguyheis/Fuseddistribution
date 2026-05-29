@@ -30,12 +30,17 @@ export function parseReelScript(md, slug) {
   // HOOK
   const hookM = md.match(/## HOOK \((\d+)[–\-](\d+)s\)\n([\s\S]*?)(?=\n---|\n## )/);
   if (hookM) {
+    const hookBody = hookM[3];
+    const hookTextM = hookBody.match(/Text:\s*(.+)/);
+    const hookNarrM = hookBody.match(/Narration:\s*([\s\S]*?)$/);
+    const stripQuotes = (s) => s ? s.replace(/^["']+|["']+$/g, '').trim() : s;
+    const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
     segments.push({
       type: 'hook',
       startSec: parseInt(hookM[1], 10),
       endSec: parseInt(hookM[2], 10),
-      text: hookM[3].trim(),
-      narration: null,
+      text: hookTextM ? stripQuotes(hookTextM[1].trim()) : hookBody.trim(),
+      narration: hookNarrM ? cleanNarr(hookNarrM[1]) : null,
     });
   }
 

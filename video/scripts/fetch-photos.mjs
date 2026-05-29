@@ -89,10 +89,6 @@ function downloadFile(url, dest) {
 
 export async function fetchPhotos(slug) {
   const apiKey = process.env.PEXELS_API_KEY;
-  if (!apiKey) {
-    console.log('  ℹ  PEXELS_API_KEY not set — skipping photos (dark bg will be used)');
-    return {};
-  }
 
   const scriptPath = join(videoDir, 'out', slug, 'script.json');
   if (!existsSync(scriptPath)) {
@@ -110,10 +106,16 @@ export async function fetchPhotos(slug) {
     const seg = script.segments[i];
     const dest = join(photoDir, `segment-${i}.jpg`);
 
-    // Skip if a valid file already exists (>1 KB — guards against corrupt concurrency_exceeded responses)
+    // Always pick up existing valid files — this preserves previously-fetched photos
+    // even when PEXELS_API_KEY is not set (e.g. re-renders after initial fetch).
     if (existsSync(dest) && statSync(dest).size > 1024) {
       photos[i] = `photos/${slug}/segment-${i}.jpg`;
       console.log(`  ↷  segment-${i}.jpg already exists — skipping`);
+      continue;
+    }
+
+    if (!apiKey) {
+      // No key and no existing file — nothing to do for this segment
       continue;
     }
 
@@ -143,6 +145,15 @@ export async function fetchPhotos(slug) {
       console.log(`  ✓ segment-${i}.jpg (${seg.type} — "${photo.alt ?? query}")`);
     } catch (err) {
       console.warn(`  ⚠  segment-${i} photo failed: ${err.message}`);
+    }
+  }
+
+  if (!apiKey) {
+    const count = Object.keys(photos).length;
+    if (count > 0) {
+      console.log(`  ℹ  PEXELS_API_KEY not set — using ${count} existing photo(s) from disk`);
+    } else {
+      console.log('  ℹ  PEXELS_API_KEY not set and no existing photos — dark bg will be used');
     }
   }
 

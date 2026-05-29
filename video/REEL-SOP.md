@@ -117,8 +117,9 @@ Hook type: [see types below]
 
 ---
 
-## HOOK (0–3s)
-[Pick ONE hook type — see §Hook Formulas below]
+## HOOK (0–5s)
+Text: YOUR HOOK STAT OR CLAIM IN CAPS
+Narration: [One punchy sentence. No em dashes. See §Hook Formulas below for patterns.]
 
 ---
 
@@ -185,6 +186,13 @@ Narration: [One sentence driving to the link. End with a save/share ask OR a dir
 - Right: `"Same metal as any Eagle or bar. No brand name."`
 - This applies to hook text, stat labels, overlay text, CTA text, and all narration.
 
+**TTS pronunciation rules — apply to all Narration fields**
+- Write `USA` not `US` when referring to the United States. TTS reads `US` as the word "us".
+- Write the word `percent` not the symbol `%`. TTS reads `%` literally or skips it.
+- Wrong: `"US inflation hit a 40-year high. Silver gained 107%."`
+- Right: `"USA inflation hit a 40-year high. Silver gained 107 percent."`
+- The normalization script also handles these automatically, but write them correctly in the source too.
+
 **Sound-off design — critical (80% of viewers watch muted)**
 - The hook Text: must communicate the whole point without audio. A viewer who watches silently must understand what the reel is about from the text on screen alone.
 - Every Stat Text: must be self-explanatory without narration. "42% MORE REVENUE" works. "42% IMPROVEMENT" does not.
@@ -241,16 +249,20 @@ Pick the one that fits the post. Save asks work best for silver/investing conten
 
 The `## DISCUSSION QUESTION` field in the script becomes the last line of the Facebook/Instagram caption (separate from the CTA). It should be one short, opinion-inviting question that a real viewer would actually answer.
 
-### Step 3 — Place blog images (optional but recommended)
-If the blog post has strong images, use them instead of Pexels stock:
+### Step 3 — Place blog images (required for segment-0 / thumbnail)
+
+Segment-0 is the **reel thumbnail** — the first frame viewers see before pressing play. Always place a blog image there. Pexels stock can cover remaining segments.
 
 ```bash
-# Copy a blog image to use as a specific segment background
-cp blog/<slug>/images/hero.jpg video/public/photos/<slug>/segment-0.jpg
-cp blog/<slug>/images/chart-screenshot.jpg video/public/photos/<slug>/segment-3.jpg
+# Segment-0 = thumbnail. Use the blog's strongest image here.
+mkdir -p video/public/photos/<slug>
+cp blog/<slug>/images/pexels-0.jpg video/public/photos/<slug>/segment-0.jpg
+
+# Optional: place a second blog image for another segment
+cp blog/<slug>/images/pexels-1.jpg video/public/photos/<slug>/segment-2.jpg
 ```
 
-The photo fetcher skips any segment that already has a valid file (>1 KB) in `public/photos/<slug>/`.
+The photo fetcher skips any segment that already has a valid file (>1 KB) in `public/photos/<slug>/`, so manually placed images are never overwritten by Pexels fetches.
 
 **Pexels rate limits and corrupt files**
 
@@ -280,23 +292,18 @@ cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
 
 Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
 
-Each blog post produces **3 reels**. Render them in sequence — one per reel-data section.
+**Always source `.env` before rendering** — sets `PEXELS_API_KEY` so Pexels fetches work. Without it, existing photos on disk are preserved but new segments won't get photos.
 
 ```bash
-cd video && export $(cat .env | xargs) && \
-  node scripts/render.mjs --post=<slug> --reel=1 --music=ambient-XX.mp3 && \
-  node scripts/render.mjs --post=<slug> --reel=2 --music=ambient-XX.mp3 && \
-  node scripts/render.mjs --post=<slug> --reel=3 --music=ambient-XX.mp3
+cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
 ```
 
-Use same `ambient-XX.mp3` for all 3 reels in a session (consistent feel per day).
+Example (ambient-05):
+```bash
+cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
+```
 
-Output:
-```
-video/out/<slug>/<slug>-reel-1.mp4
-video/out/<slug>/<slug>-reel-2.mp4
-video/out/<slug>/<slug>-reel-3.mp4
-```
+Output: `video/out/<slug>/<slug>.mp4`
 
 ### Step 5 — Review checklist
 - [ ] Numbers animate and count up correctly
@@ -304,6 +311,8 @@ video/out/<slug>/<slug>-reel-3.mp4
 - [ ] Subtitles match what Zoe is saying and stay in sync throughout
 - [ ] No narration gets cut off — audio completes before the segment ends
 - [ ] No segment feels rushed — voice, subtitle, and slide all finish together
+- [ ] Background photos visible on all segments (not dark/black frames)
+- [ ] Segment-0 (thumbnail) has a strong blog or Pexels image
 - [ ] Background photos don't overpower the text
 - [ ] CTA glow is visible and readable
 - [ ] Blog data matches reel data exactly
@@ -314,7 +323,7 @@ video/out/<slug>/<slug>-reel-3.mp4
 
 **Commit reel files:**
 ```bash
-git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/<slug>/photo-post.svg blog/<slug>/social-copy.json blog/topic-history.md video/out/<slug>/
+git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md video/out/<slug>/
 git commit -m "feat(reel): [Post Title]"
 git push origin main
 ```
@@ -326,12 +335,11 @@ npx wrangler deploy
 
 Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before posting.
 
-**Post reels (automated via Postiz — see SOCIAL-SOP.md):**
-Assets: `video/out/<slug>/[slug]-reel-1.mp4`, `-reel-2.mp4`, `-reel-3.mp4`
-Captions: `blog/<slug>/social-copy.json` → `reels.reel-1` through `reels.reel-3`
-
-> **Postiz not yet configured:** Until Postiz is running on the Windows PC, post manually.
-> Upload each MP4 and use captions from `social-copy.json` for each reel.
+**Post the reel manually:**
+- Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
+- Caption: copy `## caption` from `blog/<slug>/reel-data.md`, then add a blank line, then paste the `## discussion_question` on its own line
+- Hashtags: copy `## hashtags` from `blog/<slug>/reel-data.md`
+- First comment: paste the live blog URL
 
 **Timing matters — first 6 hours are the algorithm's testing window:**
 - Post when your audience is active (Facebook: Tue–Thu 9am–1pm local; Instagram: M/W/F 9–11am)
