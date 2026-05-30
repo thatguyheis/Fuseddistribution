@@ -103,12 +103,15 @@ export function parseReelScript(md, slug) {
 // CLI
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const postArg = process.argv.find(a => a.startsWith('--post='));
-  if (!postArg) { console.error('Usage: node parse-script.mjs --post=<slug>'); process.exit(1); }
+  const reelArg = process.argv.find(a => a.startsWith('--reel='));
+  if (!postArg) { console.error('Usage: node parse-script.mjs --post=<slug> [--reel=N]'); process.exit(1); }
   const slug = postArg.replace('--post=', '');
-  const mdPath = join(__dirname, '../../blog', slug, 'reel-script.md');
+  const reelN = reelArg ? reelArg.replace('--reel=', '') : null;
+  const scriptFile = reelN ? `reel-script-${reelN}.md` : 'reel-script.md';
+  const mdPath = join(__dirname, '../../blog', slug, scriptFile);
   let md;
   try { md = readFileSync(mdPath, 'utf8'); }
-  catch { console.error(`reel-script.md not found: ${mdPath}`); process.exit(1); }
+  catch { console.error(`${scriptFile} not found: ${mdPath}`); process.exit(1); }
   const script = parseReelScript(md, slug);
   const outDir = join(__dirname, '../out', slug);
   mkdirSync(outDir, { recursive: true });

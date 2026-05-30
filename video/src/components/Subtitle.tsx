@@ -4,18 +4,15 @@ import { BRAND } from '../brand';
 import { POPPINS } from '../fonts';
 
 function splitSentences(text: string): string[] {
-  // Split on sentence-ending punctuation, keep each chunk short
   const raw = text.match(/[^.!?]+[.!?]+/g) ?? [text];
-  // If a sentence is very long, split further at commas
   const out: string[] = [];
   for (const s of raw) {
     const trimmed = s.trim();
-    if (trimmed.length > 80) {
+    if (trimmed.length > 120) {
       const parts = trimmed.split(/,\s+/);
-      // Recombine into chunks of ≤ 80 chars
       let buf = '';
       for (const p of parts) {
-        if (buf && (buf + ', ' + p).length > 80) {
+        if (buf && (buf + ', ' + p).length > 120) {
           out.push(buf.trim());
           buf = p;
         } else {
@@ -79,16 +76,16 @@ export const Subtitle: React.FC<{ narration: string }> = ({ narration }) => {
     }}>
       <span style={{
         fontFamily: POPPINS,
-        fontSize: 36,
+        fontSize: 28,
         fontWeight: 600,
         color: BRAND.white,
-        lineHeight: 1.4,
+        lineHeight: 1.5,
         textShadow: '0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)',
-        background: 'rgba(4,16,24,0.55)',
-        padding: '8px 20px',
-        borderRadius: 8,
+        background: 'rgba(4,16,24,0.6)',
+        padding: '10px 24px',
+        borderRadius: 10,
         display: 'inline-block',
-        maxWidth: '90%',
+        maxWidth: '94%',
       }}>
         {sentence}
       </span>

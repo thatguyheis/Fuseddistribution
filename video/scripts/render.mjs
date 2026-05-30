@@ -18,11 +18,13 @@ function detectHookType(text) {
   return 'statement';
 }
 
-async function renderPost(slug, musicTrack = 'ambient-01.mp3') {
-  console.log(`\n=== Blog Reel Renderer: ${slug} ===\n`);
+async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null) {
+  const reelLabel = reelN ? ` (reel ${reelN})` : '';
+  console.log(`\n=== Blog Reel Renderer: ${slug}${reelLabel} ===\n`);
 
   // 1. Parse
-  run(`node scripts/parse-script.mjs --post=${slug}`);
+  const reelFlag = reelN ? ` --reel=${reelN}` : '';
+  run(`node scripts/parse-script.mjs --post=${slug}${reelFlag}`);
   const scriptPath = join(videoDir, 'out', slug, 'script.json');
   if (!existsSync(scriptPath)) {
     console.error('Parse failed — script.json not found.'); process.exit(1);
@@ -58,7 +60,8 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3') {
   // 6. Render — write props to file to avoid shell escaping issues
   const outDir = join(videoDir, 'out', slug);
   mkdirSync(outDir, { recursive: true });
-  const outFile = join(outDir, `${slug}.mp4`);
+  const outFileName = reelN ? `${slug}-reel${reelN}.mp4` : `${slug}.mp4`;
+  const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
   writeFileSync(propsFile, JSON.stringify({ script, musicTrack, photos }));
   run(`npx remotion render src/Root.tsx BlogReel --props="${propsFile}" "${outFile}"`);
@@ -68,5 +71,6 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3') {
 
 const postArg = process.argv.find(a => a.startsWith('--post='));
 const musicArg = process.argv.find(a => a.startsWith('--music='));
-if (!postArg) { console.error('Usage: node render.mjs --post=<slug> [--music=ambient-02.mp3]'); process.exit(1); }
-renderPost(postArg.replace('--post=', ''), musicArg?.replace('--music=', ''));
+const reelArg = process.argv.find(a => a.startsWith('--reel='));
+if (!postArg) { console.error('Usage: node render.mjs --post=<slug> [--reel=N] [--music=ambient-02.mp3]'); process.exit(1); }
+renderPost(postArg.replace('--post=', ''), musicArg?.replace('--music=', ''), reelArg?.replace('--reel=', '') ?? null);
