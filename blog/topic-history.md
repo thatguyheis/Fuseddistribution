@@ -26,6 +26,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-28 | local-seo-near-me | Google | How to rank in Google's Map Pack with local SEO |
 | 2026-05-29 | social-media-local-business | Social Media | How local businesses should use social media in 2026 without wasting time |
 | 2026-05-29 | local-business-repeat-customers | Local Business | Simple three-step follow-up system that turns first-time buyers into repeat customers |
+| 2026-05-30 | word-of-mouth-referrals | Marketing | How local businesses build a referral system using timing, direct ask, and tracking |
 
 ---
 
@@ -42,3 +43,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-26 | silver-history-as-money | History | Silver's 4,000-year history as money |
 | 2026-05-28 | silver-inflation-hedge | Investing | Silver's performance as an inflation hedge across three major cycles |
 | 2026-05-29 | silver-storage-options | Storage | Comparing home safe, bank safe deposit box, and third-party vault for silver storage |
+| 2026-05-30 | what-moves-silver-price | Market | What drives silver spot price volatility: futures markets, gold-silver ratio, and ETF flows |

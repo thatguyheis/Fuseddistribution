@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="200" y1="0" x2="200" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1000" y1="0" x2="1000" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="440" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="122" cy="90" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="450" cy="58" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="816" cy="84" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1058" cy="108" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="148" cy="1086" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="886" cy="1118" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1036" cy="984" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="494" cy="1138" r="1" fill="#4dffb8" opacity="0.20"/>
+
+  <!-- TOP ZONE: eyebrow + brand -->
+  <text x="600" y="110" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.25em" fill="#58d6ff" opacity="0.75">SILVER · MARKET ANALYSIS</text>
+  <line x1="200" y1="132" x2="1000" y2="132" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="600" y="178" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.18em" fill="#58d6ff">FUSED</text>
+
+  <!-- CENTER ZONE: big stat + title -->
+  <text x="600" y="400" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="220" letter-spacing="0.01em" fill="#58d6ff">124:1</text>
+  <text x="600" y="448" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.65)" letter-spacing="0.1em">GOLD-SILVER RATIO PEAK (MARCH 2020)</text>
+
+  <!-- Title text -->
+  <text x="600" y="540" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="62" letter-spacing="0.04em" fill="#ecf8fb">WHAT MOVES</text>
+  <text x="600" y="612" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="62" letter-spacing="0.04em" fill="#ecf8fb">SILVER'S PRICE</text>
+  <text x="600" y="672" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="24" fill="rgba(175,198,207,0.65)" letter-spacing="0.08em">AND WHY IT SWINGS MORE THAN GOLD</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="710" x2="1040" y2="710" stroke="rgba(88,214,255,0.2)" stroke-width="1"/>
+
+  <!-- Excerpt -->
+  <text x="600" y="768" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="25" fill="rgba(175,198,207,0.72)" letter-spacing="0.03em">Futures markets, ETF flows, and the</text>
+  <text x="600" y="804" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="25" fill="rgba(175,198,207,0.72)" letter-spacing="0.03em">gold-silver ratio all drive the swings.</text>
+
+  <!-- Stat cards row -->
+  <rect x="80" y="852" width="320" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="240" y="892" text-anchor="middle" font-family="Impact, sans-serif" font-size="32" fill="#58d6ff">~30% VOL</text>
+  <text x="240" y="920" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">SILVER ANNUAL VOLATILITY</text>
+
+  <rect x="440" y="852" width="320" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="892" text-anchor="middle" font-family="Impact, sans-serif" font-size="32" fill="#4dffb8">~15% VOL</text>
+  <text x="600" y="920" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">GOLD ANNUAL VOLATILITY</text>
+
+  <rect x="800" y="852" width="320" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="960" y="892" text-anchor="middle" font-family="Impact, sans-serif" font-size="32" fill="#58d6ff">58%</text>
+  <text x="960" y="920" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">INDUSTRIAL DEMAND FLOOR</text>
+
+  <!-- BOTTOM ZONE: CTA button -->
+  <rect x="220" y="1060" width="760" height="72" rx="20" fill="rgba(88,214,255,0.08)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.35"/>
+  <text x="600" y="1104" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="20" font-weight="800" letter-spacing="0.12em" fill="rgba(175,198,207,0.8)">Full breakdown at fuseddistribution.com</text>
+</svg>

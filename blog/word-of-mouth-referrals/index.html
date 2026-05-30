@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Word-of-Mouth Referrals Work for Local Businesses | Fused Technology Solutions</title>
+    <meta name="description" content="92% of people trust recommendations from friends and family more than any ad. Here is how local businesses build a simple referral system that brings in new customers every month." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-05-30T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/word-of-mouth-referrals/" />
+    <meta property="og:title" content="How Word-of-Mouth Referrals Work for Local Businesses" />
+    <meta property="og:description" content="92% trust referrals from people they know. Here is how to build a referral system that works for local businesses." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/word-of-mouth-referrals/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/word-of-mouth-referrals/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/word-of-mouth-referrals/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How Word-of-Mouth Referrals Work for Local Businesses",
+      "description": "92% of people trust recommendations from friends and family more than any ad. Here is how local businesses build a simple referral system that brings in new customers every month.",
+      "url": "https://fuseddistribution.com/blog/word-of-mouth-referrals/",
+      "datePublished": "2026-05-30",
+      "dateModified": "2026-05-30",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fuseddistribution.com/og-image.png"
+        }
+      },
+      "image": "https://fuseddistribution.com/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fuseddistribution.com/blog/word-of-mouth-referrals/"
+      }
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+      .article-wrap { max-width: 760px; margin: 0 auto; }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-hero {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        margin: 28px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: cover;
+      }
+
+      .article-photo {
+        margin: 32px 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .article-photo figcaption {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        letter-spacing: 0.04em;
+        background: rgba(7, 16, 22, 0.6);
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+      .article-body p { margin: 0 0 20px; }
+      .article-body ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-body ul li { margin-bottom: 8px; }
+      .article-body strong { color: var(--text); }
+      .article-body a { color: var(--accent); text-decoration: underline; }
+
+      .chart-wrap {
+        background: rgba(7, 20, 28, 0.8);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 16px;
+        padding: 28px 20px 18px;
+        margin: 36px 0;
+      }
+      .chart-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .chart-note {
+        font-size: 0.72rem;
+        color: rgba(175, 198, 207, 0.45);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 0.04em;
+      }
+
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .stat-card {
+        background: rgba(88, 214, 255, 0.04);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 14px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+      .stat-card .stat-number {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+      .sources-block {
+        margin-top: 48px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.1);
+        background: rgba(7, 18, 26, 0.6);
+      }
+      .sources-block h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+      .sources-block ol {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(175, 198, 207, 0.5);
+        font-size: 0.78rem;
+        line-height: 1.7;
+      }
+      .sources-block ol li { margin-bottom: 6px; }
+      .sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+      .article-cta p { margin: 0 0 18px; color: var(--muted); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+        .stat-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Marketing &middot; Local Business</div>
+
+          <h1>How Word-of-Mouth Referrals Work for Local Businesses</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-05-30">May 30, 2026</time>
+            <span class="pill">Marketing</span>
+            <span class="pill">Local Business</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.svg" alt="Three stat cards showing 92% trust referrals from people they know, 37% higher retention for referred customers, and referred customers are 4x more likely to refer others" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+
+            <p>92% of people trust recommendations from friends and family more than any form of advertising. That number comes from Nielsen's Global Trust in Advertising study and it has barely moved in a decade. No ad budget, no social post, and no Google ranking gets close to that level of trust before the first conversation even happens.</p>
+
+            <p>For local businesses, this matters more than it does for national brands. Your customer base is smaller, people talk to each other, and a single referral from a satisfied customer is worth more than months of paid ads to a cold audience.</p>
+
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-number">92%</div>
+                <div class="stat-label">of consumers trust recommendations from people they know</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">37%</div>
+                <div class="stat-label">higher retention rate for customers acquired through referrals</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">4x</div>
+                <div class="stat-label">more likely to refer others if they were referred themselves</div>
+              </div>
+            </div>
+
+            <h2>Why Referred Customers Are Different</h2>
+
+            <p>A referred customer arrives already sold on two things: that you're trustworthy, and that you solve the problem they have. The person who sent them already handled the skepticism stage. You skip the first half of the sales process entirely.</p>
+
+            <p>Wharton School research found that referred customers have a 16% higher lifetime value than non-referred ones. They also stay longer, with a 37% higher retention rate on average. The reason isn't complicated: someone who showed up because a friend recommended you has a stronger reason to stay than someone who found you through a cold search result.</p>
+
+            <p>And the compounding effect matters too. Referred customers are 4x more likely to refer others themselves. One good referral can generate another, and another. The businesses with the strongest word-of-mouth aren't doing anything magical. They're just not leaving the ask on the table.</p>
+
+            <h2>When to Ask for a Referral</h2>
+
+            <p>The timing is the most important part, and most businesses get it wrong.</p>
+
+            <p>Asking right when you finish a job is too early. The customer's attention is on what they just paid, whether everything looks right, and getting on with their day. They're not in a headspace to think about who else they know who needs you.</p>
+
+            <p>The right moment is 2 to 4 weeks after the job, when they've lived with the result and are satisfied with it. That's when the outcome is concrete in their mind. A quick check-in message at that point, which you're already sending if you follow the <a href="/blog/local-business-repeat-customers/">repeat customer follow-up system</a>, is the perfect setup for a referral ask.</p>
+
+            <p>Add one line at the end of that message: "If you know anyone who could use what we did for you, I'd really appreciate the recommendation." That's all it takes. No incentive needed, no awkward pitch. It works because it sounds like a person, not a funnel.</p>
+
+            <h2>What Actually Works for Incentives</h2>
+
+            <p>Research on referral programs consistently shows that small, tangible rewards outperform large cash incentives. A $25 credit toward their next service or a small gift performs better than a $100 cash payout for a successful referral.</p>
+
+            <p>The reason is psychological. A cash reward makes the referral feel like a transaction, which undermines the authentic trust that made the referral valuable in the first place. A small gesture of appreciation doesn't carry that cost. The customer still tells their friends because they genuinely want to help them, not because they're angling for money.</p>
+
+            <p>For most local service businesses, the best incentive program is no formal program at all. Ask directly. Thank the person who sent you a referral when the new customer comes in. A personal thank-you text or small gift carries more weight than an automated reward system.</p>
+
+            <div class="chart-wrap">
+              <div class="chart-title">Consumer Trust by Source Type (% who trust "completely" or "somewhat")</div>
+              <svg viewBox="0 0 640 300" width="100%" role="img" aria-label="Horizontal bar chart: recommendations from people I know 92%, online consumer reviews 68%, brand websites 54%, ads on social networks 39%">
+                <defs>
+                  <linearGradient id="wom-bar-1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff"/>
+                    <stop offset="100%" stop-color="#4dffb8"/>
+                  </linearGradient>
+                  <linearGradient id="wom-bar-2" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.6"/>
+                  </linearGradient>
+                  <linearGradient id="wom-bar-3" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.4"/>
+                  </linearGradient>
+                  <linearGradient id="wom-bar-4" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.22"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.22"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Row 1: Recommendations from people I know — 92% -->
+                <text x="0" y="24" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">RECOMMENDATIONS FROM PEOPLE I KNOW</text>
+                <rect x="0" y="32" width="411" height="22" rx="4" fill="url(#wom-bar-1)"/>
+                <text x="417" y="48" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">92%</text>
+
+                <!-- Row 2: Online consumer reviews — 68% -->
+                <text x="0" y="90" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">ONLINE CONSUMER REVIEWS</text>
+                <rect x="0" y="98" width="304" height="22" rx="4" fill="url(#wom-bar-2)"/>
+                <text x="310" y="114" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700">68%</text>
+
+                <!-- Row 3: Brand websites — 54% -->
+                <text x="0" y="156" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">BRAND WEBSITES</text>
+                <rect x="0" y="164" width="241" height="22" rx="4" fill="url(#wom-bar-3)"/>
+                <text x="247" y="180" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700" opacity="0.8">54%</text>
+
+                <!-- Row 4: Ads on social networks — 39% -->
+                <text x="0" y="222" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">ADS ON SOCIAL NETWORKS</text>
+                <rect x="0" y="230" width="174" height="22" rx="4" fill="url(#wom-bar-4)"/>
+                <text x="180" y="246" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700" opacity="0.55">39%</text>
+
+                <text x="0" y="290" fill="rgba(175,198,207,0.45)" font-family="Trebuchet MS, sans-serif" font-size="11">Source: Nielsen Global Trust in Advertising 2023</text>
+              </svg>
+            </div>
+
+            <h2>Keeping Track of Who Sends You Referrals</h2>
+
+            <p>You don't need referral software. A simple note in your phone's contacts works. When a new customer calls, ask: "How did you hear about us?" Then add a note to the referring customer's contact: "Referred [Name] in May 2026."</p>
+
+            <p>Two things that come from tracking this. First, you can thank the person who sent you business. Second, over a few months you'll notice the same two or three names come up repeatedly. Those customers are actively promoting your business. They deserve your attention and appreciation more than anyone else on your list.</p>
+
+            <p>Some businesses send a small gift when they notice someone has sent multiple referrals. Not as a formal program, just as a genuine thank-you. That kind of personal recognition tends to create even more referrals because now the customer feels like part of your business's story.</p>
+
+            <figure class="article-photo">
+              <img src="images/pexels-0.jpg" alt="Two business owners shaking hands, representing a word-of-mouth referral relationship" loading="lazy" />
+              <figcaption>Photo by <a href="https://www.pexels.com/@yankrukau" target="_blank" rel="noreferrer">Yan Krukau</a> on <a href="https://www.pexels.com/photo/close-up-shot-of-2-person-shake-hands-7792841/" target="_blank" rel="noreferrer">Pexels</a></figcaption>
+            </figure>
+
+            <h2>The Referral System in Practice</h2>
+
+            <p>Here is the full system condensed to three steps:</p>
+
+            <p><strong>1. Finish every job well and collect contact info.</strong> Every satisfied customer is a potential referral source. You can't work with people you have no way to reach.</p>
+
+            <p><strong>2. Check in at 30 days.</strong> One short message asking if everything is still working well. This is the moment that separates businesses that get referrals from those that don't. Most businesses go completely silent after the job. A 30-day check-in sets you apart and creates the right context for a referral ask.</p>
+
+            <p><strong>3. Ask once, directly.</strong> "If you know anyone who needs what we did for you, I'd really appreciate the recommendation." End of sentence. No pressure, no incentive offer needed. Most people who are happy with your work are willing to refer you. They just need to be asked.</p>
+
+            <p>Businesses that consistently generate referrals aren't doing anything complicated. They're finishing the job well and staying in contact. That's the whole system.</p>
+
+            <div class="sources-block">
+              <h3>Sources</h3>
+              <ol>
+                <li>Nielsen. "Global Trust in Advertising." Nielsen Holdings, 2023. nielsen.com</li>
+                <li>Kumar, V., Petersen, J.A., and Leone, R.P. "How Valuable Is Word of Mouth?" Harvard Business Review, 2007. hbr.org</li>
+                <li>Schmitt, P., Skiera, B., and Van den Bulte, C. "Referral Programs and Customer Value." Journal of Marketing, 2011. ama.org</li>
+                <li>Wharton School. "Customer Referral Programs: More Than Just Acquisition." University of Pennsylvania. knowledge.wharton.upenn.edu</li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="article-cta">
+            <p>A follow-up system and a website that converts turn referrals into booked jobs. Fused builds both for local businesses.</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
+  </body>
+</html>

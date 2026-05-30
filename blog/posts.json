@@ -1,5 +1,25 @@
 [
   {
+    "slug": "word-of-mouth-referrals",
+    "title": "How Word-of-Mouth Referrals Work for Local Businesses",
+    "date": "2026-05-30",
+    "excerpt": "92% of people trust recommendations from friends and family more than any ad. Here is how local businesses build a simple referral system that consistently brings in new customers.",
+    "tags": ["Marketing", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/word-of-mouth-referrals/hero.svg",
+    "imageAlt": "Three stat cards showing 92% trust referrals from people they know, 37% higher retention for referred customers, and referred customers are 4x more likely to refer others"
+  },
+  {
+    "slug": "what-moves-silver-price",
+    "title": "What Moves the Silver Spot Price (And Why It Swings More Than Gold)",
+    "date": "2026-05-30",
+    "excerpt": "Silver's annual volatility averages 30 percent, roughly twice gold's. Here is what drives those swings: futures markets, the gold-silver ratio, ETF flows, and industrial demand floors.",
+    "tags": ["Silver", "Market"],
+    "author": "Nick",
+    "image": "/blog/what-moves-silver-price/hero.svg",
+    "imageAlt": "Three stat cards showing silver's 2x volatility vs gold, gold-silver ratio peaked at 124 to 1 in 2020, and 58% industrial demand floor"
+  },
+  {
     "slug": "social-media-local-business",
     "title": "How Local Businesses Should Use Social Media in 2026 (Without Wasting Time)",
     "date": "2026-05-29",

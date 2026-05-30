@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1e2a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-center)"/>
+  <rect width="1200" height="630" fill="url(#glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="124" cy="88" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="402" cy="46" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="762" cy="84" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="948" cy="104" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1068" cy="58" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="214" cy="524" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="850" cy="556" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1040" cy="476" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="466" cy="572" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="658" cy="94" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- LEFT STAT CARD: 2x volatility -->
+  <rect x="42" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="178" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#58d6ff" opacity="0.7">PRICE VOLATILITY</text>
+  <text x="178" y="323" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" letter-spacing="0.02em" fill="#58d6ff">2x</text>
+  <text x="178" y="362" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">silver vs gold annual</text>
+  <text x="178" y="380" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">volatility (~30% vs ~15%)</text>
+
+  <!-- CENTER: volatility chart bars visual -->
+  <text x="600" y="192" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" letter-spacing="0.1em">VOLATILITY DRIVERS</text>
+
+  <!-- Mini bar chart in center -->
+  <!-- FUTURES label -->
+  <text x="464" y="222" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" letter-spacing="0.06em">FUTURES MARKET</text>
+  <rect x="464" y="228" width="196" height="14" rx="3" fill="rgba(88,214,255,0.25)" stroke="rgba(88,214,255,0.3)" stroke-width="0.5"/>
+  <!-- RATIO label -->
+  <text x="464" y="256" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" letter-spacing="0.06em">GOLD-SILVER RATIO</text>
+  <rect x="464" y="262" width="150" height="14" rx="3" fill="rgba(88,214,255,0.18)" stroke="rgba(88,214,255,0.2)" stroke-width="0.5"/>
+  <!-- ETF label -->
+  <text x="464" y="290" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" letter-spacing="0.06em">ETF FLOWS</text>
+  <rect x="464" y="296" width="110" height="14" rx="3" fill="rgba(77,255,184,0.18)" stroke="rgba(77,255,184,0.2)" stroke-width="0.5"/>
+  <!-- INDUSTRIAL label -->
+  <text x="464" y="324" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" letter-spacing="0.06em">INDUSTRIAL DEMAND FLOOR</text>
+  <rect x="464" y="330" width="80" height="14" rx="3" fill="rgba(77,255,184,0.12)" stroke="rgba(77,255,184,0.14)" stroke-width="0.5"/>
+
+  <!-- Center headline -->
+  <text x="600" y="382" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="30" letter-spacing="0.06em" fill="#ecf8fb">WHAT MOVES SILVER</text>
+  <text x="600" y="412" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">FUTURES · RATIO · ETFS · INDUSTRY</text>
+
+  <!-- Divider -->
+  <line x1="452" y1="430" x2="748" y2="430" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+
+  <!-- Key insight row -->
+  <rect x="452" y="442" width="296" height="30" rx="8" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="600" y="462" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.65)" letter-spacing="0.04em">PAPER MARKET 1B+ oz OPEN INTEREST</text>
+
+  <!-- RIGHT STAT CARD: 124:1 -->
+  <rect x="886" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#4dffb8" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="1022" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#4dffb8" opacity="0.7">GOLD-SILVER RATIO PEAK</text>
+  <text x="1022" y="316" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="62" letter-spacing="0.02em" fill="#4dffb8">124:1</text>
+  <text x="1022" y="348" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">March 2020 extreme</text>
+  <text x="1022" y="366" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.45)" letter-spacing="0.04em">avg 60-70:1 over 20 yrs</text>
+  <text x="1022" y="400" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="20" letter-spacing="0.04em" fill="rgba(88,214,255,0.5)">SILVER +140% AFTER</text>
+</svg>

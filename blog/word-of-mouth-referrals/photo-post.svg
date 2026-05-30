@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="200" y1="0" x2="200" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1000" y1="0" x2="1000" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="440" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="118" cy="94" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="440" cy="62" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="820" cy="88" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1060" cy="110" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="156" cy="1080" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="880" cy="1120" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1040" cy="980" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="500" cy="1140" r="1" fill="#4dffb8" opacity="0.20"/>
+
+  <!-- TOP ZONE: eyebrow + brand -->
+  <text x="600" y="110" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.25em" fill="#58d6ff" opacity="0.75">MARKETING · LOCAL BUSINESS</text>
+  <line x1="200" y1="132" x2="1000" y2="132" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="600" y="178" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.18em" fill="#58d6ff">FUSED</text>
+
+  <!-- CENTER ZONE: big stat + title -->
+  <text x="600" y="420" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="290" letter-spacing="0.01em" fill="#58d6ff">92%</text>
+  <text x="600" y="468" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.65)" letter-spacing="0.1em">OF PEOPLE TRUST REFERRALS FROM PEOPLE THEY KNOW</text>
+
+  <!-- Title text -->
+  <text x="600" y="560" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="68" letter-spacing="0.04em" fill="#ecf8fb">WORD-OF-MOUTH</text>
+  <text x="600" y="630" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="68" letter-spacing="0.04em" fill="#ecf8fb">REFERRALS</text>
+  <text x="600" y="694" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="26" fill="rgba(175,198,207,0.65)" letter-spacing="0.08em">FOR LOCAL BUSINESSES</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="730" x2="1040" y2="730" stroke="rgba(88,214,255,0.2)" stroke-width="1"/>
+
+  <!-- Excerpt -->
+  <text x="600" y="790" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="26" fill="rgba(175,198,207,0.72)" letter-spacing="0.03em">Referred customers have 37% higher retention</text>
+  <text x="600" y="828" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="26" fill="rgba(175,198,207,0.72)" letter-spacing="0.03em">and are 4x more likely to refer others.</text>
+
+  <!-- Stat cards row -->
+  <rect x="100" y="874" width="290" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="245" y="912" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#58d6ff">37%</text>
+  <text x="245" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">HIGHER RETENTION</text>
+
+  <rect x="455" y="874" width="290" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="912" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#4dffb8">4x</text>
+  <text x="600" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">REFERRAL MULTIPLIER</text>
+
+  <rect x="810" y="874" width="290" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="955" y="912" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#58d6ff">16%</text>
+  <text x="955" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.06em">HIGHER LIFETIME VALUE</text>
+
+  <!-- BOTTOM ZONE: CTA button -->
+  <rect x="220" y="1060" width="760" height="72" rx="20" fill="rgba(88,214,255,0.08)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.35"/>
+  <text x="600" y="1104" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="20" font-weight="800" letter-spacing="0.12em" fill="rgba(175,198,207,0.8)">Full breakdown at fuseddistribution.com</text>
+</svg>
