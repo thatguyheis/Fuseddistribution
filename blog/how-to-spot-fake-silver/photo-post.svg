@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="pp-glow-center" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pp-glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pp-cta-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-center)"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="500" r="380" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="500" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="118" cy="96" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="392" cy="72" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="764" cy="88" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="948" cy="118" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1076" cy="78" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="224" cy="1082" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="840" cy="1062" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1044" cy="1022" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="472" cy="1108" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="662" cy="104" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- TOP ZONE: eyebrow + brand -->
+  <text x="600" y="96" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" font-weight="800" letter-spacing="0.2em" fill="#58d6ff" opacity="0.7">SILVER BUYING GUIDE</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.14em" fill="#ecf8fb" opacity="0.18">FUSED</text>
+
+  <!-- Divider top -->
+  <line x1="200" y1="170" x2="1000" y2="170" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- CENTER ZONE: main stat -->
+  <text x="600" y="345" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="20" font-weight="700" letter-spacing="0.14em" fill="rgba(175,198,207,0.55)">SILVER THERMAL CONDUCTIVITY</text>
+
+  <!-- BIG STAT: 429 W/mK -->
+  <text x="600" y="560" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="230" letter-spacing="0.02em" fill="#58d6ff" opacity="0.95">429</text>
+  <text x="600" y="640" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="72" letter-spacing="0.10em" fill="rgba(88,214,255,0.65)">W/mK</text>
+
+  <!-- Stat label -->
+  <text x="600" y="682" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="20" letter-spacing="0.06em" fill="rgba(175,198,207,0.55)">HIGHEST THERMAL CONDUCTIVITY OF ANY ELEMENT</text>
+
+  <!-- Divider mid -->
+  <line x1="200" y1="710" x2="1000" y2="710" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- POST TITLE -->
+  <text x="600" y="778" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="60" letter-spacing="0.04em" fill="#ecf8fb">HOW TO SPOT FAKE SILVER</text>
+  <text x="600" y="840" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="44" letter-spacing="0.04em" fill="rgba(236,248,251,0.75)">SIX TESTS FOR NEW BUYERS</text>
+
+  <!-- Supporting stats row -->
+  <rect x="120" y="878" width="300" height="76" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="270" y="910" text-anchor="middle" font-family="Impact, sans-serif" font-size="30" fill="#58d6ff">31.103g</text>
+  <text x="270" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">EXACT ASE WEIGHT (GENUINE)</text>
+
+  <rect x="450" y="878" width="300" height="76" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="910" text-anchor="middle" font-family="Impact, sans-serif" font-size="30" fill="#4dffb8">40.6mm</text>
+  <text x="600" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">ASE DIAMETER (GENUINE)</text>
+
+  <rect x="780" y="878" width="300" height="76" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="930" y="910" text-anchor="middle" font-family="Impact, sans-serif" font-size="30" fill="#58d6ff">6 TESTS</text>
+  <text x="930" y="938" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">NO LAB EQUIPMENT NEEDED</text>
+
+  <!-- BOTTOM ZONE: CTA -->
+  <rect x="120" y="994" width="960" height="72" rx="18" fill="url(#pp-cta-bg)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="1034" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="19" font-weight="700" fill="rgba(175,198,207,0.7)" letter-spacing="0.06em">FULL BREAKDOWN AT</text>
+  <text x="600" y="1054" text-anchor="middle" font-family="Impact, sans-serif" font-size="20" fill="#58d6ff" letter-spacing="0.05em">fuseddistribution.com/blog/how-to-spot-fake-silver</text>
+
+  <!-- Brand watermark -->
+  <text x="600" y="1125" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="28" letter-spacing="0.14em" fill="#ecf8fb" opacity="0.10">FUSED DISTRIBUTION</text>
+</svg>

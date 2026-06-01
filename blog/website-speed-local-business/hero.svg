@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1e2a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+    <linearGradient id="bar-dim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-center)"/>
+  <rect width="1200" height="630" fill="url(#glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="122" cy="74" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="394" cy="56" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="762" cy="82" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="946" cy="108" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1074" cy="66" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="218" cy="524" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="844" cy="542" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1048" cy="492" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="468" cy="572" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="664" cy="98" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- LEFT STAT CARD: 43% -->
+  <rect x="42" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="178" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#58d6ff" opacity="0.7">MOBILE PASS RATE</text>
+  <text x="178" y="323" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" letter-spacing="0.02em" fill="#58d6ff">43%</text>
+  <text x="178" y="362" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">pass all Core Web</text>
+  <text x="178" y="380" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">Vitals (2024)</text>
+
+  <!-- CENTER: Speed gauge and headline -->
+  <!-- Browser frame icon -->
+  <rect x="468" y="176" width="264" height="168" rx="12" fill="rgba(7,20,28,0.85)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <!-- Browser top bar -->
+  <rect x="468" y="176" width="264" height="32" rx="12" fill="rgba(11,30,42,0.9)"/>
+  <rect x="468" y="192" width="264" height="16" fill="rgba(11,30,42,0.9)"/>
+  <!-- Browser dots -->
+  <circle cx="490" cy="192" r="5" fill="rgba(88,214,255,0.25)"/>
+  <circle cx="508" cy="192" r="5" fill="rgba(88,214,255,0.15)"/>
+  <circle cx="526" cy="192" r="5" fill="rgba(88,214,255,0.09)"/>
+  <!-- URL bar -->
+  <rect x="542" y="183" width="178" height="18" rx="9" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="631" y="196" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.4)" letter-spacing="0.04em">yourbusiness.com</text>
+
+  <!-- Progress bars inside browser (LCP / INP / CLS) -->
+  <text x="484" y="232" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" font-weight="700" letter-spacing="0.08em">LCP</text>
+  <rect x="510" y="222" width="196" height="10" rx="5" fill="rgba(88,214,255,0.07)"/>
+  <rect x="510" y="222" width="116" height="10" rx="5" fill="url(#bar-grad)"/>
+
+  <text x="484" y="258" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" font-weight="700" letter-spacing="0.08em">INP</text>
+  <rect x="510" y="248" width="196" height="10" rx="5" fill="rgba(88,214,255,0.07)"/>
+  <rect x="510" y="248" width="145" height="10" rx="5" fill="url(#bar-dim)"/>
+
+  <text x="484" y="284" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.5)" font-weight="700" letter-spacing="0.08em">CLS</text>
+  <rect x="510" y="274" width="196" height="10" rx="5" fill="rgba(88,214,255,0.07)"/>
+  <rect x="510" y="274" width="153" height="10" rx="5" fill="url(#bar-dim)"/>
+
+  <!-- "SLOW" badge -->
+  <rect x="512" y="316" width="52" height="20" rx="6" fill="rgba(255,88,88,0.15)" stroke="rgba(255,100,100,0.3)" stroke-width="1"/>
+  <text x="538" y="330" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="10" font-weight="800" fill="rgba(255,130,130,0.8)" letter-spacing="0.08em">SLOW</text>
+
+  <!-- Center headline -->
+  <text x="600" y="390" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="34" letter-spacing="0.06em" fill="#ecf8fb">WEBSITE SPEED</text>
+  <text x="600" y="418" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">FOR LOCAL BUSINESS</text>
+
+  <!-- Divider -->
+  <line x1="456" y1="438" x2="744" y2="438" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+
+  <!-- Key fact rows -->
+  <rect x="448" y="450" width="304" height="28" rx="8" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="464" y="469" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)" letter-spacing="0.03em">1 sec faster = 13% more conversions</text>
+
+  <rect x="448" y="484" width="304" height="28" rx="8" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.10)" stroke-width="1"/>
+  <text x="464" y="503" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.45)" letter-spacing="0.03em">mobile = 52.8% of all web traffic</text>
+
+  <!-- RIGHT STAT CARD: 10% -->
+  <rect x="886" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#4dffb8" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="1022" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#4dffb8" opacity="0.7">USER LOSS</text>
+  <text x="1022" y="323" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" letter-spacing="0.02em" fill="#4dffb8">10%</text>
+  <text x="1022" y="362" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">more users leave per</text>
+  <text x="1022" y="380" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">extra second (BBC)</text>
+</svg>

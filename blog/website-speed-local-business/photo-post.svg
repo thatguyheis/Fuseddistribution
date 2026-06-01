@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="pp-glow-center" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pp-glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pp-cta-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-center)"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="500" r="380" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="500" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="118" cy="96" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="392" cy="72" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="764" cy="88" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="948" cy="118" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1076" cy="78" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="224" cy="1082" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="840" cy="1062" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1044" cy="1022" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="472" cy="1108" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="662" cy="104" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- TOP ZONE: eyebrow + brand -->
+  <text x="600" y="96" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" font-weight="800" letter-spacing="0.2em" fill="#58d6ff" opacity="0.7">WEBSITES &amp; PERFORMANCE</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.14em" fill="#ecf8fb" opacity="0.18">FUSED</text>
+
+  <!-- Divider top -->
+  <line x1="200" y1="170" x2="1000" y2="170" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- CENTER ZONE: main stat -->
+  <text x="600" y="360" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" font-weight="700" letter-spacing="0.16em" fill="rgba(175,198,207,0.55)">MOBILE WEBSITES THAT PASS</text>
+  <text x="600" y="396" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" font-weight="700" letter-spacing="0.16em" fill="rgba(175,198,207,0.55)">ALL CORE WEB VITALS (2024)</text>
+
+  <!-- BIG STAT: 43% -->
+  <text x="600" y="590" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="280" letter-spacing="0.02em" fill="#58d6ff" opacity="0.95">43%</text>
+
+  <!-- Stat label -->
+  <text x="600" y="648" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" letter-spacing="0.06em" fill="rgba(175,198,207,0.65)">Source: HTTP Archive Web Almanac 2024</text>
+
+  <!-- Divider mid -->
+  <line x1="200" y1="686" x2="1000" y2="686" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- POST TITLE -->
+  <text x="600" y="758" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="64" letter-spacing="0.04em" fill="#ecf8fb">WHY YOUR WEBSITE</text>
+  <text x="600" y="826" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="64" letter-spacing="0.04em" fill="#ecf8fb">IS LOSING CUSTOMERS</text>
+
+  <!-- Supporting stats row -->
+  <rect x="120" y="860" width="300" height="80" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="270" y="895" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#58d6ff">10%</text>
+  <text x="270" y="922" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">MORE USERS LOST / SECOND</text>
+
+  <rect x="450" y="860" width="300" height="80" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="895" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#4dffb8">13%</text>
+  <text x="600" y="922" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">MORE CONVERSIONS / SEC FASTER</text>
+
+  <rect x="780" y="860" width="300" height="80" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="930" y="895" text-anchor="middle" font-family="Impact, sans-serif" font-size="36" fill="#58d6ff">52.8%</text>
+  <text x="930" y="922" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">OF TRAFFIC IS MOBILE (2026)</text>
+
+  <!-- BOTTOM ZONE: CTA -->
+  <rect x="120" y="980" width="960" height="72" rx="18" fill="url(#pp-cta-bg)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="1022" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="19" font-weight="700" fill="rgba(175,198,207,0.7)" letter-spacing="0.06em">FULL BREAKDOWN AT</text>
+  <text x="600" y="1042" text-anchor="middle" font-family="Impact, sans-serif" font-size="22" fill="#58d6ff" letter-spacing="0.06em">fuseddistribution.com/blog/website-speed-local-business</text>
+
+  <!-- Brand watermark -->
+  <text x="600" y="1110" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="28" letter-spacing="0.14em" fill="#ecf8fb" opacity="0.10">FUSED TECHNOLOGY SOLUTIONS</text>
+</svg>

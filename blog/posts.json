@@ -1,5 +1,25 @@
 [
   {
+    "slug": "how-to-spot-fake-silver",
+    "title": "How to Spot Fake Silver: Six Tests Every New Buyer Should Know",
+    "date": "2026-05-31",
+    "excerpt": "Silver has the highest thermal conductivity of any metal at 429 W/mK. Here are six at-home tests that reliably catch silver-plated fakes, tungsten cores, and wrong-purity coins.",
+    "tags": ["Silver", "Buying Guide"],
+    "author": "Nick",
+    "image": "/blog/how-to-spot-fake-silver/hero.svg",
+    "imageAlt": "Thermal conductivity chart showing silver at 429 W/mK compared to tungsten at 173 W/mK, with six fake-detection test icons"
+  },
+  {
+    "slug": "website-speed-local-business",
+    "title": "Why Your Local Business Website Is Losing Customers to Slow Load Times",
+    "date": "2026-05-31",
+    "excerpt": "Only 43% of mobile websites pass all Core Web Vitals in 2024. Here's how slow load times cut conversions, hurt Google rankings, and what to check first on your local business site.",
+    "tags": ["Websites", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/website-speed-local-business/hero.svg",
+    "imageAlt": "Three stat cards: 43% of mobile websites pass all Core Web Vitals, 10% more users lost per extra second, 13% more conversions per second faster"
+  },
+  {
     "slug": "word-of-mouth-referrals",
     "title": "How Word-of-Mouth Referrals Work for Local Businesses",
     "date": "2026-05-30",

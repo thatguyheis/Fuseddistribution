@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Your Local Business Website Is Losing Customers to Slow Load Times | Fused Technology Solutions</title>
+    <meta name="description" content="Only 43% of mobile websites pass Core Web Vitals in 2024. Here's how slow load times cut conversions, hurt Google rankings, and what to fix first on your local business site." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-05-31T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/website-speed-local-business/" />
+    <meta property="og:title" content="Why Your Local Business Website Is Losing Customers to Slow Load Times" />
+    <meta property="og:description" content="Only 43% of mobile websites pass Core Web Vitals. Slow pages lose customers before they see your phone number." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/website-speed-local-business/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/website-speed-local-business/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/website-speed-local-business/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Why Your Local Business Website Is Losing Customers to Slow Load Times",
+      "description": "Only 43% of mobile websites pass Core Web Vitals in 2024. Here's how slow load times cut conversions, hurt Google rankings, and what to fix first on your local business site.",
+      "url": "https://fuseddistribution.com/blog/website-speed-local-business/",
+      "datePublished": "2026-05-31",
+      "dateModified": "2026-05-31",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fuseddistribution.com/og-image.png"
+        }
+      },
+      "image": "https://fuseddistribution.com/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fuseddistribution.com/blog/website-speed-local-business/"
+      }
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+
+      .article-wrap { max-width: 760px; margin: 0 auto; }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-hero {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        margin: 28px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: cover;
+      }
+
+      .article-photo {
+        margin: 32px 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .article-photo figcaption {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        letter-spacing: 0.04em;
+        background: rgba(7, 16, 22, 0.6);
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+
+      .article-body p { margin: 0 0 20px; }
+      .article-body ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-body ul li { margin-bottom: 8px; }
+      .article-body strong { color: var(--text); }
+      .article-body a { color: var(--accent); text-decoration: underline; }
+
+      .chart-wrap {
+        background: rgba(7, 20, 28, 0.8);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 16px;
+        padding: 28px 20px 18px;
+        margin: 36px 0;
+      }
+      .chart-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .chart-note {
+        font-size: 0.72rem;
+        color: rgba(175, 198, 207, 0.45);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 0.04em;
+      }
+
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .stat-card {
+        background: rgba(88, 214, 255, 0.04);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 14px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+      .stat-card .stat-number {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+      .sources-block {
+        margin-top: 48px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.1);
+        background: rgba(7, 18, 26, 0.6);
+      }
+      .sources-block h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+      .sources-block ol {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(175, 198, 207, 0.5);
+        font-size: 0.78rem;
+        line-height: 1.7;
+      }
+      .sources-block ol li { margin-bottom: 6px; }
+      .sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+      .article-cta p { margin: 0 0 18px; color: var(--muted); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+        .stat-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Websites &middot; Local Business</div>
+
+          <h1>Why Your Local Business Website Is Losing Customers to Slow Load Times</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-05-31">May 31, 2026</time>
+            <span class="pill">Websites</span>
+            <span class="pill">Local Business</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.svg" alt="Three stat cards: 43% of mobile websites pass all Core Web Vitals, 10% more users lost per extra second, 13% more conversions per second faster" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+
+            <p>In 2026, 54% of local consumers visit a business's website after reading reviews online (<a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noreferrer">BrightLocal Local Consumer Review Survey</a>, 2026). Most of them are on a phone. If your site doesn't load quickly, they leave before they ever see your hours, your phone number, or what you do.</p>
+
+            <p>This isn't a tech problem. It's a revenue problem. A single second of improvement in how quickly your page's main content appears produced <strong>13% more conversions</strong> for Renault across 10 million visits in 33 countries (<a href="https://web.dev/case-studies/renault" target="_blank" rel="noreferrer">Google web.dev case study</a>, 2021). The pattern holds for businesses far smaller than Renault.</p>
+
+            <p>Here's what website speed actually means, how it affects your Google ranking, and what to check first if you suspect your site is losing customers.</p>
+
+            <blockquote style="background:rgba(88,214,255,0.05);border-left:3px solid #58d6ff;margin:24px 0;padding:16px 20px;border-radius:0 12px 12px 0;">
+              <strong style="color:#ecf8fb;display:block;margin-bottom:8px;">Key Takeaways</strong>
+              <ul style="margin:0;padding-left:18px;color:#afc6cf;font-size:0.95rem;">
+                <li>Only 43% of mobile websites pass all Core Web Vitals in 2024 (HTTP Archive Web Almanac, 2024)</li>
+                <li>One second of LCP improvement produces 13% more conversions on average (Renault case study, Google web.dev, 2021)</li>
+                <li>Mobile accounts for 52.8% of global web traffic as of April 2026 (StatCounter, 2026)</li>
+              </ul>
+            </blockquote>
+
+            <h2>What Core Web Vitals Are and Why They Apply to Your Site</h2>
+
+            <p>As of September 2025, Google measures website performance through three Core Web Vitals: LCP must be 2.5 seconds or faster, INP must be 200 milliseconds or faster, and CLS must score 0.1 or lower (<a href="https://web.dev/articles/vitals" target="_blank" rel="noreferrer">Google web.dev, Core Web Vitals</a>, updated September 2025). LCP stands for Largest Contentful Paint, which is how long until your main image or headline appears on screen. INP is how fast your page responds when someone taps a button. CLS measures whether elements shift around as the page loads.</p>
+
+            <p>In 2024, only 43% of mobile websites passed all three metrics at once (<a href="https://almanac.httparchive.org/en/2024/performance" target="_blank" rel="noreferrer">HTTP Archive Web Almanac 2024</a>). That means more than half of mobile sites have a documented speed problem. Google includes these metrics as part of its page experience ranking signal, which gives your speed score a direct effect on where you appear in search results.</p>
+
+            <!-- [UNIQUE INSIGHT] -->
+            <p>Most local business owners have never run a Core Web Vitals test on their own site. Google's <a href="https://pagespeed.web.dev" target="_blank" rel="noreferrer">PageSpeed Insights tool</a> shows your score for free in under 30 seconds. If you haven't checked, your site may be failing without your knowledge.</p>
+
+            <div class="chart-wrap">
+              <div class="chart-title">Core Web Vitals Mobile Pass Rates (2024)</div>
+              <svg viewBox="0 0 640 290" width="100%" role="img" aria-label="Horizontal bar chart: all three Core Web Vitals 43%, LCP page load speed 59%, INP interactivity 74%, CLS visual stability 79%">
+                <defs>
+                  <linearGradient id="cwv-bar-1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff"/>
+                    <stop offset="100%" stop-color="#4dffb8"/>
+                  </linearGradient>
+                  <linearGradient id="cwv-bar-2" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.65"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.65"/>
+                  </linearGradient>
+                  <linearGradient id="cwv-bar-3" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.45"/>
+                  </linearGradient>
+                  <linearGradient id="cwv-bar-4" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.28"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.28"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Row 1: All Three Core Web Vitals — 43% (worst, brightest to draw attention) -->
+                <text x="0" y="24" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">ALL THREE CORE WEB VITALS (THE BAR YOU MUST CLEAR)</text>
+                <rect x="0" y="32" width="192" height="22" rx="4" fill="url(#cwv-bar-1)"/>
+                <text x="198" y="48" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">43%</text>
+
+                <!-- Row 2: LCP — 59% -->
+                <text x="0" y="90" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">LCP — PAGE LOAD SPEED</text>
+                <rect x="0" y="98" width="264" height="22" rx="4" fill="url(#cwv-bar-2)"/>
+                <text x="270" y="114" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700">59%</text>
+
+                <!-- Row 3: INP — 74% -->
+                <text x="0" y="156" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">INP — INTERACTIVITY</text>
+                <rect x="0" y="164" width="331" height="22" rx="4" fill="url(#cwv-bar-3)"/>
+                <text x="337" y="180" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700" opacity="0.8">74%</text>
+
+                <!-- Row 4: CLS — 79% -->
+                <text x="0" y="222" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">CLS — VISUAL STABILITY</text>
+                <rect x="0" y="230" width="353" height="22" rx="4" fill="url(#cwv-bar-4)"/>
+                <text x="359" y="246" fill="#afc6cf" font-family="Impact, sans-serif" font-size="15" font-weight="700" opacity="0.55">79%</text>
+
+                <text x="0" y="282" fill="rgba(175,198,207,0.45)" font-family="Trebuchet MS, sans-serif" font-size="11">Source: HTTP Archive Web Almanac 2024 — mobile websites, 75th percentile</text>
+              </svg>
+            </div>
+
+            <h2>How Slow Load Times Affect Your Conversion Rate</h2>
+
+            <p>Farfetch found that for every 100 milliseconds added to LCP, conversion rate dropped 1.3% (<a href="https://web.dev/case-studies/farfetch" target="_blank" rel="noreferrer">Google web.dev case study</a>, 2021). These aren't rounding errors. At 500ms of extra load time, that's a 6.5% conversion drop on mobile. At one full second, it's 13%.</p>
+
+            <p>Swappie, a refurbished phone retailer, cut average page load time by 23% and watched mobile revenue jump 42% while mobile conversion rate climbed from 24% to 34% (<a href="https://web.dev/case-studies/swappie" target="_blank" rel="noreferrer">Google web.dev case study</a>, 2021). BBC measured a simpler pattern: they lost 10% more users for every additional second their site took to load (<a href="https://web.dev/articles/why-speed-matters" target="_blank" rel="noreferrer">Google web.dev, Why Speed Matters</a>, 2023).</p>
+
+            <!-- [CITATION CAPSULE] -->
+            <p>In 2021, Swappie reduced average page load time by 23% and recorded a 42% increase in mobile revenue, with mobile conversion rate rising from 24% to 34%, per Google's web.dev case study. The finding matches Farfetch's controlled measurement: every 100ms added to LCP cost 1.3% in conversions.</p>
+
+            <p>Your local business site isn't an e-commerce platform with thousands of SKUs, but the pattern holds at every scale. A visitor who can't get your phone number to load in two seconds will call your competitor instead.</p>
+
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-number">42%</div>
+                <div class="stat-label">more mobile revenue after Swappie cut load time 23%</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">10%</div>
+                <div class="stat-label">extra users lost for every additional second (BBC)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">13%</div>
+                <div class="stat-label">more conversions per 1-second LCP improvement (Renault)</div>
+              </div>
+            </div>
+
+            <h2>Does Google Rank Faster Websites Higher?</h2>
+
+            <p>Google confirmed that Core Web Vitals are a ranking factor. Their own documentation states: "Having a great page experience can contribute to success in Search" (<a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noreferrer">Google Search Central, Page Experience</a>, 2024). Google's John Mueller described it as "more than a tie-breaker" for rankings but noted that relevance still comes first.</p>
+
+            <p>For local businesses, relevance is rarely the differentiator. Two plumbers in the same town often have nearly identical content about the same services. Page experience becomes a real deciding factor when content is a wash. Google replaced the FID interaction metric with INP on March 12, 2024 (<a href="https://web.dev/blog/inp-cwv-march-12" target="_blank" rel="noreferrer">Google web.dev</a>, 2024), making responsiveness to user taps and clicks the new standard.</p>
+
+            <p>If your competitor's site loads faster and answers the same question, they're likely ranking higher. Not because their content is better, but because their page delivers it faster. <a href="/blog/local-seo-near-me/">Local SEO and Google Maps rankings</a> depend on a separate set of signals, but your organic website position is directly tied to how fast your pages load.</p>
+
+            <h2>Why Mobile Speed Matters More Than Desktop Speed</h2>
+
+            <p>As of April 2026, mobile accounts for 52.8% of global web traffic, versus 45.6% for desktop (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/" target="_blank" rel="noreferrer">StatCounter Global Stats</a>, April 2026). Local business searches skew even more mobile. When someone types "plumber near me" or "best pizza downtown," they're almost always on their phone.</p>
+
+            <p>The performance gap between mobile and desktop is stark. In 2024, 97% of desktop pages achieved good INP scores, but only 74% of mobile pages did (HTTP Archive Web Almanac 2024). LCP pass rates were 72% on desktop versus 59% on mobile. Mobile devices have slower processors, inconsistent cellular connections, and less memory than desktop computers.</p>
+
+            <!-- [UNIQUE INSIGHT] -->
+            <p>Google's PageSpeed Insights shows separate mobile and desktop scores. Most business owners who do test their site check only the desktop number and stop there. Your mobile score is almost always lower. It's also almost always more important.</p>
+
+            <figure class="article-photo">
+              <img src="images/pexels-0.jpg" alt="Person using a smartphone outside a local business, illustrating mobile web browsing for local search" loading="lazy" />
+              <figcaption>Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noreferrer">RDNE Stock project</a> on <a href="https://www.pexels.com/photo/a-woman-in-floral-dress-using-her-cellphone-5699167/" target="_blank" rel="noreferrer">Pexels</a></figcaption>
+            </figure>
+
+            <h2>Three Things You Can Check Right Now</h2>
+
+            <p>You don't need a developer to start diagnosing your site. Here's where to start.</p>
+
+            <p><strong>Run a PageSpeed Insights test.</strong> Go to <a href="https://pagespeed.web.dev" target="_blank" rel="noreferrer">pagespeed.web.dev</a> and enter your website URL. It completes in about 30 seconds and gives you a score from 0 to 100 for both mobile and desktop. A mobile score below 50 means you have a documented problem that Google and your visitors both notice. The report identifies the specific elements causing the slowest load.</p>
+
+            <p><strong>Find your largest image.</strong> LCP is usually caused by one large, unoptimized image, often your hero photo or banner. That JPG file probably hasn't been compressed since the site launched. The PageSpeed report will name the exact element causing the delay. Converting it to WebP format and compressing it can cut LCP by 30-60% in many cases.</p>
+
+            <p><strong>Check your server response time.</strong> If your site is on cheap shared hosting, the server itself may be slow before a single byte reaches your visitor's phone. A slow TTFB (Time to First Byte) score, anything over 600ms, often points here. Many hosting providers offer plans with faster server response for an additional $5-10 per month.</p>
+
+            <p>These three checks take less than an hour. If your mobile score is below 50 and your TTFB is over 600ms, you've found the problem. Fixing the largest image and upgrading hosting often moves the needle enough to clear Google's thresholds without touching a line of code.</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>What is a good Core Web Vitals score for a local business website?</h3>
+            <p>Google's Good threshold is LCP at 2.5 seconds or faster, INP at 200 milliseconds or faster, and CLS at 0.1 or lower (Google web.dev, September 2025). Clearing all three puts your site in the top 43% of mobile websites measured in 2024 (Web Almanac 2024). Aim to pass all three, not just one or two.</p>
+
+            <h3>Does website speed affect Google Business Profile rankings?</h3>
+            <p>Core Web Vitals affect organic search rankings directly. The Google Maps pack and Business Profile rankings use a different set of local signals including relevance, distance, and prominence. But page speed affects conversion rate on visits from any source, including GBP clicks, so a slow site costs you whether the visitor finds you in maps or organic search.</p>
+
+            <h3>How much does improving website speed typically cost?</h3>
+            <p>Basic fixes like compressing images, enabling caching, and switching to faster hosting cost little or nothing if you do them yourself. A developer doing a targeted speed audit and fix for a local business site typically charges $300-$800. Based on documented conversion lift data from Google's case studies, faster pages usually pay back that cost quickly.</p>
+
+            <h3>What causes most local business websites to load slowly?</h3>
+            <p>The most common causes are large unoptimized images, slow shared hosting, unminified CSS and JavaScript files, and too many third-party scripts like chat widgets or ad trackers. Most local business sites have at least two of these. Google's PageSpeed Insights identifies all of them by name, so you know exactly what to fix.</p>
+
+            <div class="sources-block">
+              <h3>Sources</h3>
+              <ol>
+                <li>Google web.dev. "Core Web Vitals." Updated September 2025. <a href="https://web.dev/articles/vitals" target="_blank" rel="noreferrer">web.dev/articles/vitals</a></li>
+                <li>Google Search Central. "Page Experience in Google Search." 2024. <a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noreferrer">developers.google.com/search/docs/appearance/page-experience</a></li>
+                <li>Google web.dev. "The Business Impact of Core Web Vitals — Renault Case Study." 2021. <a href="https://web.dev/case-studies/renault" target="_blank" rel="noreferrer">web.dev/case-studies/renault</a></li>
+                <li>Google web.dev. "Swappie Case Study." 2021. <a href="https://web.dev/case-studies/swappie" target="_blank" rel="noreferrer">web.dev/case-studies/swappie</a></li>
+                <li>Google web.dev. "Farfetch Case Study." 2021. <a href="https://web.dev/case-studies/farfetch" target="_blank" rel="noreferrer">web.dev/case-studies/farfetch</a></li>
+                <li>Google web.dev. "Vodafone Case Study." 2021. <a href="https://web.dev/case-studies/vodafone" target="_blank" rel="noreferrer">web.dev/case-studies/vodafone</a></li>
+                <li>Google web.dev. "Why Speed Matters — BBC." 2023. <a href="https://web.dev/articles/why-speed-matters" target="_blank" rel="noreferrer">web.dev/articles/why-speed-matters</a></li>
+                <li>Google web.dev. "INP Becomes a Core Web Vital." March 2024. <a href="https://web.dev/blog/inp-cwv-march-12" target="_blank" rel="noreferrer">web.dev/blog/inp-cwv-march-12</a></li>
+                <li>HTTP Archive. "Web Almanac 2024 — Performance." 2024. <a href="https://almanac.httparchive.org/en/2024/performance" target="_blank" rel="noreferrer">almanac.httparchive.org/en/2024/performance</a></li>
+                <li>StatCounter Global Stats. "Platform Market Share — Desktop vs Mobile." April 2026. <a href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/" target="_blank" rel="noreferrer">gs.statcounter.com</a></li>
+                <li>BrightLocal. "Local Consumer Review Survey 2026." 2026. <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noreferrer">brightlocal.com</a></li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="article-cta">
+            <p>If your local business website is slow, it's costing you customers every day. We build and optimize sites that pass Core Web Vitals and convert visitors into calls.</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
+  </body>
+</html>

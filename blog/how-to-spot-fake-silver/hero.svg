@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-topleft" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1e2a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071318" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="bar-top" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-center)"/>
+  <rect width="1200" height="630" fill="url(#glow-topleft)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="118" cy="76" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="386" cy="54" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="758" cy="80" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="950" cy="110" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1080" cy="64" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="222" cy="516" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="840" cy="544" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="1046" cy="490" r="1" fill="#58d6ff" opacity="0.16"/>
+  <circle cx="470" cy="566" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="662" cy="94" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- LEFT STAT CARD: 429 W/mK -->
+  <rect x="42" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="178" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#58d6ff" opacity="0.7">THERMAL CONDUCTIVITY</text>
+  <text x="178" y="310" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="72" letter-spacing="0.02em" fill="#58d6ff">429</text>
+  <text x="178" y="340" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="22" letter-spacing="0.06em" fill="rgba(88,214,255,0.65)">W/mK</text>
+  <text x="178" y="368" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">highest of any element</text>
+  <text x="178" y="386" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">ice melts faster on real silver</text>
+  <text x="178" y="426" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="10" fill="rgba(175,198,207,0.35)" letter-spacing="0.06em">vs. TUNGSTEN (FAKE): 173 W/mK</text>
+
+  <!-- CENTER: Authentication checklist -->
+  <text x="600" y="200" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.14em" fill="rgba(175,198,207,0.45)">AUTHENTICATION TESTS</text>
+  <text x="600" y="240" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="34" letter-spacing="0.06em" fill="#ecf8fb">SPOT FAKE SILVER</text>
+  <text x="600" y="268" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.65)" letter-spacing="0.06em">SIX TESTS FOR NEW BUYERS</text>
+
+  <!-- Divider -->
+  <line x1="456" y1="285" x2="744" y2="285" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+
+  <!-- Test list -->
+  <rect x="448" y="298" width="304" height="30" rx="8" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="464" y="318" font-family="Impact, sans-serif" font-size="13" fill="#4dffb8">1</text>
+  <text x="482" y="318" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.85)" letter-spacing="0.03em">ICE TEST (429 W/mK)</text>
+
+  <rect x="448" y="334" width="304" height="30" rx="8" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="464" y="354" font-family="Impact, sans-serif" font-size="13" fill="rgba(88,214,255,0.75)">2</text>
+  <text x="482" y="354" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.65)" letter-spacing="0.03em">MAGNET / DIAMAGNETIC SLIDE</text>
+
+  <rect x="448" y="370" width="304" height="30" rx="8" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.09)" stroke-width="1"/>
+  <text x="464" y="390" font-family="Impact, sans-serif" font-size="13" fill="rgba(88,214,255,0.55)">3</text>
+  <text x="482" y="390" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.48)" letter-spacing="0.03em">WEIGHT + DIMENSIONS</text>
+
+  <rect x="448" y="406" width="304" height="30" rx="8" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.07)" stroke-width="1"/>
+  <text x="464" y="426" font-family="Impact, sans-serif" font-size="13" fill="rgba(88,214,255,0.38)">4</text>
+  <text x="482" y="426" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.34)" letter-spacing="0.03em">HALLMARK / PURITY STAMP</text>
+
+  <rect x="448" y="442" width="304" height="30" rx="8" fill="rgba(88,214,255,0.03)" stroke="rgba(88,214,255,0.06)" stroke-width="1"/>
+  <text x="464" y="462" font-family="Impact, sans-serif" font-size="13" fill="rgba(88,214,255,0.28)">5</text>
+  <text x="482" y="462" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.24)" letter-spacing="0.03em">PING TEST + ACID TEST</text>
+
+  <rect x="448" y="478" width="304" height="30" rx="8" fill="rgba(88,214,255,0.02)" stroke="rgba(88,214,255,0.05)" stroke-width="1"/>
+  <text x="464" y="498" font-family="Impact, sans-serif" font-size="13" fill="rgba(88,214,255,0.18)">6</text>
+  <text x="482" y="498" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.16)" letter-spacing="0.03em">XRF MACHINE (DEALER-LEVEL)</text>
+
+  <!-- RIGHT STAT CARD: 31.103g -->
+  <rect x="886" y="180" width="272" height="270" rx="18" fill="url(#card-bg)" stroke="#4dffb8" stroke-width="1" stroke-opacity="0.18"/>
+  <text x="1022" y="236" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" font-weight="800" letter-spacing="0.12em" fill="#4dffb8" opacity="0.7">1 OZ SILVER EAGLE</text>
+  <text x="1022" y="306" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="64" letter-spacing="0.02em" fill="#4dffb8">31.1g</text>
+  <text x="1022" y="338" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">exact weight (31.103g)</text>
+  <text x="1022" y="358" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">40.6mm diameter</text>
+  <text x="1022" y="378" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.72)" letter-spacing="0.04em">2.98mm thick</text>
+  <text x="1022" y="408" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.35)" letter-spacing="0.05em">&gt;0.1g or &gt;0.5mm off = RED FLAG</text>
+</svg>

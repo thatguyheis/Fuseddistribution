@@ -27,6 +27,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-29 | social-media-local-business | Social Media | How local businesses should use social media in 2026 without wasting time |
 | 2026-05-29 | local-business-repeat-customers | Local Business | Simple three-step follow-up system that turns first-time buyers into repeat customers |
 | 2026-05-30 | word-of-mouth-referrals | Marketing | How local businesses build a referral system using timing, direct ask, and tracking |
+| 2026-05-31 | website-speed-local-business | Websites | How slow page load times cost local businesses customers and what Core Web Vitals to check first |
 
 ---
 
@@ -44,3 +45,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-28 | silver-inflation-hedge | Investing | Silver's performance as an inflation hedge across three major cycles |
 | 2026-05-29 | silver-storage-options | Storage | Comparing home safe, bank safe deposit box, and third-party vault for silver storage |
 | 2026-05-30 | what-moves-silver-price | Market | What drives silver spot price volatility: futures markets, gold-silver ratio, and ETF flows |
+| 2026-05-31 | how-to-spot-fake-silver | Buying Guide | Six at-home tests to detect silver-plated fakes and tungsten-core coins using thermal conductivity, weight, and dimensions |
