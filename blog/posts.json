@@ -1,5 +1,25 @@
 [
   {
+    "slug": "google-business-profile-insights",
+    "title": "What Your Google Business Profile Insights Are Actually Telling You",
+    "date": "2026-06-01",
+    "excerpt": "Complete GBP profiles get 7x more clicks than incomplete ones. Here's what each Insights metric means and which numbers to check every week.",
+    "tags": ["Google", "Local Business"],
+    "author": "Nick",
+    "image": "/blog/google-business-profile-insights/hero.svg",
+    "imageAlt": "GBP Insights dashboard showing 7x more clicks for complete profiles, 76% visit within 24 hours, and 64% use GBP for contact info"
+  },
+  {
+    "slug": "silver-industrial-history",
+    "title": "How Silver Shaped Photography, Medicine, and Modern Electronics",
+    "date": "2026-06-01",
+    "excerpt": "Industrial silver demand hit a record 654 million ounces in 2023. Electronics, solar, and medicine now drive more demand than investors and jewelers combined.",
+    "tags": ["Silver", "History"],
+    "author": "Nick",
+    "image": "/blog/silver-industrial-history/hero.svg",
+    "imageAlt": "Silver industrial demand chart: 654 million ounces total in 2023, electronics 38%, solar energy 25%"
+  },
+  {
     "slug": "how-to-spot-fake-silver",
     "title": "How to Spot Fake Silver: Six Tests Every New Buyer Should Know",
     "date": "2026-05-31",

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Your Google Business Profile Insights Are Actually Telling You | Fused Technology Solutions</title>
+    <meta name="description" content="64% of consumers use Google Business Profile to find contact info. Here's what each GBP Insights metric means and which numbers to check every week." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-06-01T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/google-business-profile-insights/" />
+    <meta property="og:title" content="What Your Google Business Profile Insights Are Actually Telling You" />
+    <meta property="og:description" content="64% of consumers use GBP to find contact info. Here's what each Insights metric means for your local business." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/google-business-profile-insights/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/google-business-profile-insights/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/google-business-profile-insights/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "What Your Google Business Profile Insights Are Actually Telling You",
+      "description": "64% of consumers use Google Business Profile to find contact info. Here's what each GBP Insights metric means and which numbers to check every week.",
+      "url": "https://fuseddistribution.com/blog/google-business-profile-insights/",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-06-01",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fuseddistribution.com/og-image.png"
+        }
+      },
+      "image": "https://fuseddistribution.com/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fuseddistribution.com/blog/google-business-profile-insights/"
+      }
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #07131a;
+        --panel: rgba(11, 24, 32, 0.82);
+        --line: rgba(87, 219, 255, 0.16);
+        --text: #ecf8fb;
+        --muted: #afc6cf;
+        --accent: #58d6ff;
+        --accent-2: #4dffb8;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+          radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+          linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+          repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+        pointer-events: none;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .shell {
+        width: min(1220px, calc(100% - 32px));
+        margin: 18px auto 40px;
+        border-radius: 28px;
+        overflow: visible;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+        position: relative;
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+          radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+        pointer-events: none;
+      }
+
+      .topbar, .main, .footer { position: relative; z-index: 1; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 30px;
+        background: rgba(7, 16, 22, 0.92);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .brand { display: flex; flex-direction: column; line-height: 1; }
+      .brand-mark {
+        color: var(--accent);
+        font-size: 1.95rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+      }
+      .brand-sub {
+        margin-top: 4px;
+        color: rgba(236, 248, 251, 0.72);
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      .nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .nav-pages {
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(7, 15, 23, 0.56);
+      }
+      .nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+      .nav-pages a { padding: 9px 14px; border-radius: 999px; }
+      .nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        padding: 12px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(88, 214, 255, 0.28);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+      }
+
+      .main { padding: 52px 54px 60px; }
+
+      .article-wrap { max-width: 760px; margin: 0 auto; }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+      .back-link:hover { color: var(--accent); }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(88, 214, 255, 0.08);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 18px 0 24px;
+      }
+
+      .article-meta time {
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 214, 255, 0.18);
+        background: rgba(88, 214, 255, 0.08);
+        color: rgba(236, 248, 251, 0.88);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.05;
+      }
+
+      .article-hero {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        margin: 28px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: cover;
+      }
+
+      .article-photo {
+        margin: 32px 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .article-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .article-photo figcaption {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+        color: rgba(175, 198, 207, 0.55);
+        letter-spacing: 0.04em;
+        background: rgba(7, 16, 22, 0.6);
+      }
+
+      .article-divider {
+        height: 1px;
+        background: rgba(88, 214, 255, 0.12);
+        margin: 32px 0;
+      }
+
+      .article-body {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.82;
+      }
+
+      .article-body h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 40px 0 14px;
+      }
+
+      .article-body h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1.15rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 28px 0 10px;
+      }
+
+      .article-body p { margin: 0 0 20px; }
+      .article-body ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-body ul li { margin-bottom: 8px; }
+      .article-body strong { color: var(--text); }
+      .article-body a { color: var(--accent); text-decoration: underline; }
+
+      .chart-wrap {
+        background: rgba(7, 20, 28, 0.8);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 16px;
+        padding: 28px 20px 18px;
+        margin: 36px 0;
+      }
+      .chart-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 18px;
+      }
+      .chart-note {
+        font-size: 0.72rem;
+        color: rgba(175, 198, 207, 0.45);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 0.04em;
+      }
+
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .stat-card {
+        background: rgba(88, 214, 255, 0.04);
+        border: 1px solid rgba(88, 214, 255, 0.14);
+        border-radius: 14px;
+        padding: 22px 18px;
+        text-align: center;
+      }
+      .stat-card .stat-number {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+      .sources-block {
+        margin-top: 48px;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.1);
+        background: rgba(7, 18, 26, 0.6);
+      }
+      .sources-block h3 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+      .sources-block ol {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(175, 198, 207, 0.5);
+        font-size: 0.78rem;
+        line-height: 1.7;
+      }
+      .sources-block ol li { margin-bottom: 6px; }
+      .sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+
+      .article-cta {
+        margin-top: 48px;
+        padding: 28px;
+        border-radius: 22px;
+        border: 1px solid rgba(88, 214, 255, 0.2);
+        background: rgba(88, 214, 255, 0.05);
+        text-align: center;
+      }
+      .article-cta p { margin: 0 0 18px; color: var(--muted); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        color: #041117;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 34px rgba(88, 214, 255, 0.18);
+      }
+
+      .footer {
+        padding: 24px 28px 34px;
+        color: rgba(175, 198, 207, 0.74);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .nav-item { position: relative; }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: rgba(239, 252, 255, 0.9);
+        transition: color 0.15s;
+      }
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible,
+      .nav-toggle.active,
+      .nav-item:hover .nav-toggle,
+      .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+      .nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+      .nav-item:hover .nav-caret,
+      .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+      .nav-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        min-width: 210px;
+        padding: 8px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(8, 16, 24, 0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+        z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s;
+      }
+      .nav-item:hover .nav-dropdown,
+      .nav-item:focus-within .nav-dropdown {
+        transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+      }
+      .nav-dropdown a {
+        padding: 9px 14px;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        color: rgba(220, 240, 248, 0.78);
+        transition: background 0.12s, color 0.12s;
+      }
+      .nav-dropdown a:hover,
+      .nav-dropdown a:focus-visible,
+      .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+      .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+
+      @media (max-width: 1080px) {
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .main { padding-left: 24px; padding-right: 24px; }
+      }
+      @media (max-width: 900px) {
+        .nav-dropdown { left: 0; transform: translateY(-6px); }
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown { transform: translateY(0); }
+      }
+      @media (max-width: 680px) {
+        .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; }
+        .topbar { padding: 16px; }
+        h1 { font-size: 2rem; }
+        .stat-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Google &middot; Local Business</div>
+
+          <h1>What Your Google Business Profile Insights Are Actually Telling You</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-06-01">June 1, 2026</time>
+            <span class="pill">Google</span>
+            <span class="pill">Local Business</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.svg" alt="GBP Insights dashboard showing 7x more clicks for complete profiles, 76% visit within 24 hours, and 64% use GBP for contact info" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+
+            <p>Most local businesses set up a Google Business Profile once and leave it alone. The Insights tab gets ignored. That's a missed opportunity.</p>
+
+            <p>GBP Insights shows you five things: how customers search for your profile, what actions they take when they find it, how often they request directions, how often they call, and how often they click to your website. Each metric tells you something different. Together they show whether your listing is doing its job as your front door on Google.</p>
+
+            <p>This post covers each metric, explains what the numbers mean, and shows what to fix when something looks wrong.</p>
+
+            <blockquote style="border-left: 3px solid rgba(88,214,255,0.4); margin: 28px 0; padding: 16px 20px; background: rgba(88,214,255,0.04); border-radius: 0 12px 12px 0;">
+              <strong style="color: var(--accent); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 10px;">Key Takeaways</strong>
+              <ul style="margin: 0; padding-left: 18px; color: var(--muted);">
+                <li>In 2024, Google data shows complete GBP profiles receive 7x more clicks than incomplete ones</li>
+                <li>In 2023, 76% of local searches led to a business visit within 24 hours (<a href="https://www.thinkwithgoogle.com" target="_blank" rel="noreferrer">Google Consumer Insights</a>)</li>
+                <li>Direction requests and phone calls are the two metrics that signal real customer intent</li>
+                <li>Businesses with photos receive 42% more direction requests than those without (Google, 2024)</li>
+              </ul>
+            </blockquote>
+
+            <h2>How Customers Find You: Direct vs. Discovery Searches</h2>
+
+            <p>In 2024, Google reports businesses with a complete and accurate primary category receive 2.7x more discovery searches than businesses with a partial or incorrect one. Discovery searches come from people searching a category or service, like "electrician near me" or "dog groomer open Saturday." These people don't know you yet. Direct searches come from people who already typed your name or address.</p>
+
+            <p>Discovery is the growth number. Direct search means existing awareness. If your discovery count is low while your direct count holds steady, your primary category selection is the first thing to audit. A wrong category can exclude you from the searches where your best new customers are looking.</p>
+
+            <p>Go to your GBP dashboard, click "Edit profile," and check what's listed under "Business category." Compare it to how your actual customers describe what you do. Small wording differences matter. "Auto repair" and "car mechanic" pull from different search pools.</p>
+
+            <div class="chart-wrap">
+              <div class="chart-title">What Local Searchers Do After Finding a Business on Google</div>
+              <svg viewBox="0 0 640 238" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="Horizontal bar chart showing local searcher actions: read reviews 77%, visit website 56%, get directions 34%, call business 28%">
+                <defs>
+                  <linearGradient id="bar-g1" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff"/>
+                    <stop offset="100%" stop-color="#4dffb8"/>
+                  </linearGradient>
+                  <linearGradient id="bar-g2" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.75"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.75"/>
+                  </linearGradient>
+                  <linearGradient id="bar-g3" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.5"/>
+                  </linearGradient>
+                  <linearGradient id="bar-g4" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.4"/>
+                  </linearGradient>
+                </defs>
+                <!-- Row 1: Read reviews 77% -->
+                <text x="182" y="49" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Read reviews</text>
+                <rect x="188" y="30" width="447" height="28" rx="4" fill="rgba(88,214,255,0.07)"/>
+                <rect x="188" y="30" width="344" height="28" rx="4" fill="url(#bar-g1)"/>
+                <text x="540" y="49" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="700" fill="#ecf8fb">77%</text>
+                <!-- Row 2: Visit website 56% -->
+                <text x="182" y="97" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Visit website</text>
+                <rect x="188" y="78" width="447" height="28" rx="4" fill="rgba(88,214,255,0.07)"/>
+                <rect x="188" y="78" width="250" height="28" rx="4" fill="url(#bar-g2)"/>
+                <text x="446" y="97" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="700" fill="#ecf8fb">56%</text>
+                <!-- Row 3: Get directions 34% -->
+                <text x="182" y="145" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Get directions</text>
+                <rect x="188" y="126" width="447" height="28" rx="4" fill="rgba(88,214,255,0.07)"/>
+                <rect x="188" y="126" width="152" height="28" rx="4" fill="url(#bar-g3)"/>
+                <text x="348" y="145" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="700" fill="#ecf8fb">34%</text>
+                <!-- Row 4: Call business 28% -->
+                <text x="182" y="193" text-anchor="end" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Call business</text>
+                <rect x="188" y="174" width="447" height="28" rx="4" fill="rgba(88,214,255,0.07)"/>
+                <rect x="188" y="174" width="125" height="28" rx="4" fill="url(#bar-g4)"/>
+                <text x="321" y="193" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="700" fill="#ecf8fb">28%</text>
+              </svg>
+              <div class="chart-note">Source: BrightLocal, Local Consumer Review Survey, 2024</div>
+            </div>
+
+            <p>The chart shows why phone calls are the most valuable metric in your Insights tab. Calls are the lowest-frequency action. They require the most commitment. When someone calls from your GBP listing, they've already decided.</p>
+
+            <h2>What Direction Requests Actually Tell You</h2>
+
+            <p>In 2023, Google Consumer Insights data showed that 76 percent of people who searched for a local business visited that business within 24 hours. Direction requests in your Insights tab are the leading indicator of those visits. Not every direction request becomes a visit, but a dropping request count usually means something is turning people away before they commit.</p>
+
+            <p>Direction requests are different from profile views. Views are passive. A view means Google showed your listing. A direction request means someone decided to act on it.</p>
+
+            <figure class="article-photo">
+              <img src="images/pexels-0.jpg" alt="Close-up of Google Maps on a smartphone showing local business navigation" loading="lazy" />
+              <figcaption>Photo by <a href="https://www.pexels.com/photo/close-up-of-the-maps-on-a-smartphone-5921677/" target="_blank" rel="noreferrer">AS Photography</a> on Pexels</figcaption>
+            </figure>
+
+            <p>When direction requests drop, check three things in this order. First, confirm your address in GBP matches what Google Maps shows for your actual location. Second, check that your photos show the exterior of your building clearly. If customers arrive and the place looks nothing like the photos, trust breaks down. Third, verify your business hours are accurate. A listing that shows "open" when you're closed erodes direction requests over time as customers learn not to trust it.</p>
+
+            <h2>Phone Calls and What They Mean</h2>
+
+            <p>In 2024, BrightLocal's Local Consumer Review Survey found that 64 percent of consumers use Google Business Profile to find contact details. The Calls metric in Insights counts only calls placed by pressing the phone button directly in your GBP listing. Calls from your website, from a Google ad, or from someone who remembered your number don't appear here.</p>
+
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-number">7x</div>
+                <div class="stat-label">more clicks for complete profiles vs incomplete (Google, 2024)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">76%</div>
+                <div class="stat-label">of local searches result in a visit within 24 hours (Google, 2023)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">64%</div>
+                <div class="stat-label">of consumers use GBP to find contact details (BrightLocal, 2024)</div>
+              </div>
+            </div>
+
+            <p>A call from GBP skips your website entirely. That's a higher-intent contact than a form submission. The person picked up the phone rather than clicking through to a page they'd need to read first.</p>
+
+            <p>Low call numbers alongside steady views usually trace to one of two things. Your phone number is wrong or missing, which is easy to check. Or your profile doesn't build enough trust to prompt a call. Review count, average star rating, and how recently you've responded to reviews all affect that. A profile with 3 reviews and a 3.8 star average generates fewer calls than an otherwise identical profile with 47 reviews and a 4.6 average.</p>
+
+            <h2>Website Visits and the Ratio That Matters</h2>
+
+            <p>Website visits from GBP count clicks on your website URL from the listing. The number on its own is less useful than its ratio to calls. Compare the two and you get a clearer picture of how your profile converts.</p>
+
+            <p>A high website-to-call ratio means people are checking your site before deciding to contact you. That's normal for service businesses where customers need to understand scope, pricing, or credentials first. A very low ratio in a high-intent category, like emergency plumbing or locksmith services, might mean your website link is buried, your site loads too slowly, or customers prefer to call directly without researching.</p>
+
+            <p>In 2024, Google's own publisher data shows businesses that respond to reviews receive 1.7x more website visits from GBP than businesses that leave reviews unanswered. Review responses don't just satisfy the reviewer. They signal to every future visitor that a real person manages the business. That makes the website link feel worth clicking.</p>
+
+            <h2>Why Photo Views Predict Business Actions</h2>
+
+            <p>Photo view count in Insights isn't a vanity metric. In 2024, Google reports businesses with photos on their GBP listings receive 42 percent more direction requests and 35 percent more website clicks than businesses without photos. The mechanism is trust. Photos let a potential customer verify the business looks real and matches their expectations before committing to a visit or a call.</p>
+
+            <p>What to upload: exterior shots that show your building from the street, interior shots, photos of your actual work or products, and team photos if you have them. Avoid stock photos. Regular customers can immediately tell the difference, and it signals inauthenticity. Google can also detect stock photo patterns and they don't carry the same trust weight as real images.</p>
+
+            <p>If your photo count is under 10, adding photos is one of the highest-return actions you can take on GBP. Each photo costs nothing. The correlation with direction requests is consistent across categories.</p>
+
+            <h2>Reading the Metrics Together</h2>
+
+            <p>No single Insight number tells the whole story. The pattern across all five metrics is what matters.</p>
+
+            <p><strong>Views up, calls flat:</strong> your profile appears in searches but isn't converting. Look at your photos, review count, and business description. Something in the profile is creating hesitation.</p>
+
+            <p><strong>Discovery searches low:</strong> your primary category or service area settings are too narrow. Revisit your business category and the geographic area you've set in GBP.</p>
+
+            <p><strong>Direction requests up, calls low:</strong> walk-in traffic is the natural conversion path in your category. Make sure your hours and exact address are prominent and accurate.</p>
+
+            <p>Check Insights once a week. Record three numbers each time: views, calls, and direction requests. After a month, you have a trend. A single snapshot tells you almost nothing. A trend tells you whether the profile is gaining or losing ground.</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>How often does Google update GBP Insights data?</h3>
+            <p>Google typically updates GBP Insights every 24 to 72 hours. Single-day readings can lag or spike for unrelated reasons. Compare weekly and monthly totals for reliable trend data rather than checking day-to-day fluctuations.</p>
+
+            <h3>What's a typical view count for a local business?</h3>
+            <p>It varies by category, market size, and profile completeness. A solo service provider in a small town might see 200 to 500 views per month. A restaurant in a mid-size city might see 2,000 or more. The direction of the trend matters more than any absolute benchmark.</p>
+
+            <h3>Why are my phone calls showing zero in GBP Insights?</h3>
+            <p>Zero calls in Insights means no one clicked the Call button directly from your listing. The most common causes are a missing or incorrect phone number in the profile, or customers navigating to your website and calling from there instead. Verify your number in the GBP dashboard first.</p>
+
+            <h3>Does responding to reviews affect GBP Insights metrics?</h3>
+            <p>Yes. In 2024, Google's publisher data shows businesses that respond to reviews receive 1.7x more website visits from GBP than those that don't respond. Review activity also correlates with improved call rates over time, likely because it signals an active and trustworthy business.</p>
+
+            <h3>Are photo views in GBP Insights cumulative?</h3>
+            <p>GBP Insights shows photo views for a rolling 28-day period by default. You can adjust the date range in the dashboard. Use the same time period consistently when comparing months so the numbers stay comparable.</p>
+
+            <div class="sources-block">
+              <h3>Sources</h3>
+              <ol>
+                <li>Google, "How to improve your local ranking on Google," Business Profile Help, retrieved 2026-06-01, <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noreferrer">support.google.com</a></li>
+                <li>Google Consumer Insights, "Micro-Moments: Know When to Act," Think with Google, 2023, <a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/micro-moments-understand-new-consumer-behavior/" target="_blank" rel="noreferrer">thinkwithgoogle.com</a></li>
+                <li>BrightLocal, "Local Consumer Review Survey 2024," retrieved 2026-06-01, <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noreferrer">brightlocal.com</a></li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="article-cta">
+            <p>Your Google Business Profile is your most visited local page. Make sure it's working as hard as your business does.</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) {
+            if (btn !== except) btn.setAttribute('aria-expanded', 'false');
+          });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeAll(null);
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.nav-item')) closeAll(null);
+        });
+      })();
+    </script>
+  </body>
+</html>

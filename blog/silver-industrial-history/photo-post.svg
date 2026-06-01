@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="pp-glow-c" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pp-glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#pp-glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="420" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.06"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.09"/>
+
+  <!-- Scatter dots -->
+  <circle cx="116" cy="82" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="386" cy="68" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="754" cy="88" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="948" cy="118" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="1068" cy="76" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="232" cy="1062" r="1" fill="#4dffb8" opacity="0.19"/>
+  <circle cx="838" cy="1084" r="1.5" fill="#58d6ff" opacity="0.21"/>
+  <circle cx="470" cy="1118" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="664" cy="98" r="1" fill="#58d6ff" opacity="0.15"/>
+
+  <!-- TOP ZONE: category + brand mark -->
+  <text x="600" y="92" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="18" font-weight="800" letter-spacing="0.18em" fill="rgba(88,214,255,0.65)">SILVER · HISTORY</text>
+  <line x1="200" y1="112" x2="1000" y2="112" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+  <text x="600" y="160" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="52" letter-spacing="0.12em" fill="#58d6ff">FUSED</text>
+
+  <!-- CENTER ZONE: big number + title -->
+  <text x="600" y="390" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="160" letter-spacing="0.02em" fill="#58d6ff">654M</text>
+  <text x="600" y="450" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.65)" letter-spacing="0.08em">TROY OUNCES — 2023 INDUSTRIAL DEMAND</text>
+
+  <line x1="160" y1="482" x2="1040" y2="482" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- Post title -->
+  <text x="600" y="552" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="44" letter-spacing="0.04em" fill="#ecf8fb">HOW SILVER SHAPED</text>
+  <text x="600" y="606" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="44" letter-spacing="0.04em" fill="#ecf8fb">PHOTOGRAPHY, MEDICINE</text>
+  <text x="600" y="660" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="44" letter-spacing="0.04em" fill="#ecf8fb">AND ELECTRONICS</text>
+
+  <!-- Supporting stats row -->
+  <rect x="80" y="700" width="320" height="100" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+  <text x="240" y="744" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="42" letter-spacing="0.02em" fill="#4dffb8">38%</text>
+  <text x="240" y="774" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">electronics share</text>
+
+  <rect x="440" y="700" width="320" height="100" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+  <text x="600" y="744" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="42" letter-spacing="0.02em" fill="#58d6ff">25%</text>
+  <text x="600" y="774" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">solar energy, growing</text>
+
+  <rect x="800" y="700" width="320" height="100" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+  <text x="960" y="744" text-anchor="middle" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="42" letter-spacing="0.02em" fill="#4dffb8">2%</text>
+  <text x="960" y="774" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="rgba(175,198,207,0.6)" letter-spacing="0.04em">photography (was 30%)</text>
+
+  <!-- Excerpt line -->
+  <text x="600" y="858" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.55)" letter-spacing="0.04em">Industrial demand is at a record high.</text>
+  <text x="600" y="888" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="22" fill="rgba(175,198,207,0.55)" letter-spacing="0.04em">Here's how we got here.</text>
+
+  <!-- BOTTOM ZONE: CTA button -->
+  <rect x="200" y="966" width="800" height="72" rx="18" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.28)" stroke-width="1.5"/>
+  <text x="600" y="1012" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="20" font-weight="800" letter-spacing="0.1em" fill="rgba(88,214,255,0.85)">Full breakdown at fuseddistribution.com</text>
+
+  <text x="600" y="1112" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="16" fill="rgba(175,198,207,0.35)" letter-spacing="0.08em">FUSED DISTRIBUTION</text>
+</svg>
