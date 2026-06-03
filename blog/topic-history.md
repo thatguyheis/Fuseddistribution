@@ -30,6 +30,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-31 | website-speed-local-business | Websites | How slow page load times cost local businesses customers and what Core Web Vitals to check first |
 | 2026-06-01 | google-business-profile-insights | Google | How to read GBP Insights metrics: what views, calls, direction requests, and discovery searches mean for a local business |
 | 2026-06-02 | online-review-management-local-business | Local Business | How to respond to negative online reviews using a 5-step formula that protects reputation and converts future customers |
+| 2026-06-03 | instagram-stories-local-business | Social Media | How Instagram Stories features (polls, questions, countdowns, link stickers) convert local followers into booked customers |
 
 ---
 
@@ -50,3 +51,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-05-31 | how-to-spot-fake-silver | Buying Guide | Six at-home tests to detect silver-plated fakes and tungsten-core coins using thermal conductivity, weight, and dimensions |
 | 2026-06-01 | silver-industrial-history | History | Silver's industrial evolution from photography (1839) to solar panels and 5G electronics, with 2023 demand data |
 | 2026-06-02 | silver-portfolio-allocation | Investing | How to determine the right silver allocation percentage using risk tolerance, the gold-silver ratio signal, and a simple position-sizing formula |
+| 2026-06-03 | silver-insurance-storage | Storage | What standard HO-3 homeowner's insurance covers for silver and precious metals, how the $1,500 theft sublimit creates a gap, and how a scheduled floater closes it |
