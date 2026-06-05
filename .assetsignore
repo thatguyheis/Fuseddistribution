@@ -8,3 +8,14 @@ cloudflare-upload
 fused-reserve.html
 squarespace-code-block.html
 squarespace-custom.css
+video/out
+video/.env
+video/.env.*
+video/scripts
+video/src
+video/public/audio
+video/public/photos
+video/.superpowers
+video/package.json
+video/package-lock.json
+video/node_modules
