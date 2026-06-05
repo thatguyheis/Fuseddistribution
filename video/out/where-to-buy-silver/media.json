@@ -1,0 +1,62 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-0.jpg",
+    "source": "cached"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-1.jpg",
+    "source": "cached"
+  },
+  "2": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-2.jpg",
+    "source": "cached"
+  },
+  "3": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-3.jpg",
+    "source": "cached"
+  },
+  "4": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-4.jpg",
+    "source": "cached"
+  },
+  "5": {
+    "type": "video",
+    "src": "videos/where-to-buy-silver/segment-5.mp4",
+    "thumb": "photos/where-to-buy-silver/segment-5.jpg",
+    "source": "cached"
+  },
+  "6": {
+    "type": "video",
+    "src": "videos/where-to-buy-silver/segment-6.mp4",
+    "thumb": "photos/where-to-buy-silver/segment-6.jpg",
+    "source": "cached"
+  },
+  "7": {
+    "type": "video",
+    "src": "videos/where-to-buy-silver/segment-7.mp4",
+    "thumb": "photos/where-to-buy-silver/segment-7.jpg",
+    "source": "cached"
+  },
+  "8": {
+    "type": "video",
+    "src": "videos/where-to-buy-silver/segment-8.mp4",
+    "thumb": "photos/where-to-buy-silver/segment-8.jpg",
+    "source": "cached"
+  },
+  "9": {
+    "type": "video",
+    "src": "videos/where-to-buy-silver/segment-9.mp4",
+    "thumb": "photos/where-to-buy-silver/segment-9.jpg",
+    "source": "cached"
+  },
+  "10": {
+    "type": "photo",
+    "src": "photos/where-to-buy-silver/segment-10.jpg",
+    "source": "cached"
+  }
+}

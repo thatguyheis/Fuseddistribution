@@ -1,0 +1,142 @@
+{
+  "slug": "where-to-buy-silver",
+  "title": "Where to Buy Silver: Online Dealers, Coin Shops, and Private Sales Compared",
+  "totalDuration": 212,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 8,
+      "text": "8-12% OVER SPOT FOR AN EAGLE",
+      "narration": "American Silver Eagles sell online for 8 to 12 percent over spot."
+    },
+    {
+      "type": "stat",
+      "startSec": 8,
+      "endSec": 30,
+      "text": "COIN SHOPS COST 12-18% OVER SPOT",
+      "narration": "Walk into most local coin shops and that same Eagle is 12 to 18 percent over spot. On a 100-ounce order, the difference between buying online and a coin shop can be 160 to 230 dollars. The channel you choose matters every single time you buy.",
+      "explanation": "Local coin shops charge more for the same product than major online dealers",
+      "graphic_type": "gap",
+      "graphic": {
+        "type": "gap",
+        "a_label": "Online Eagles",
+        "a_value": 11,
+        "b_label": "Coin Shop Eagles",
+        "b_value": 16,
+        "unit": "percent over spot"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 49,
+      "text": "1.2 BILLION OZ ANNUAL DEMAND",
+      "narration": "The Silver Institute's 2025 World Silver Survey estimated global silver demand at over 1.2 billion ounces. That sustains three distinct retail channels in the USA. Each has a different premium structure, and knowing which fits your goal saves real money per ounce.",
+      "explanation": "Global silver demand sustains three distinct retail purchase channels in the USA",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 49,
+      "endSec": 70,
+      "title": "Typical Premium Over Spot by Product (Online Dealers, 2026 Est.)",
+      "bars": [],
+      "narration": "The premium varies heavily by product, not just channel. A 100-ounce bar from the same dealer that charges 11 percent on Eagles costs only 3 percent over spot. The silver content is identical. Bars and rounds are the smarter buy for stackers focused on weight."
+    },
+    {
+      "type": "stat",
+      "startSec": 70,
+      "endSec": 90,
+      "text": "12.9% EBAY SELLER FEE",
+      "narration": "In 2025, eBay charged precious metals sellers a 12.9 percent final value fee. That gets priced into every listing. A seller wanting 2 dollars over spot must list at 4.50 over spot to net their target. Most eBay silver deals are not actually deals.",
+      "explanation": "eBay's fee structure forces sellers to price well above what they actually want for the silver",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 13,
+        "label": "eBay Fee",
+        "remainder_label": "Seller Keeps"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 90,
+      "endSec": 112,
+      "text": "3-4% SAVED PAYING BY CHECK",
+      "narration": "Every major online dealer charges 3 to 4 percent more for credit card purchases. On a 3,200 dollar order of 100 ounces, that is 96 to 128 dollars saved by using a check or bank transfer. Set up ACH with your bank and cut your premium without any other change.",
+      "explanation": "ACH or personal check instead of credit card is the easiest way to reduce your cost per ounce",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 4,
+        "label": "CC Surcharge",
+        "remainder_label": "Check Rate"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 112,
+      "endSec": 132,
+      "text": "REDDIT DEALS: AT-SPOT OR CLOSE",
+      "narration": "Reddit's r/pmsforsale runs with no platform fee. Verified sellers regularly list silver at spot or 50 cents over for generic rounds and junk silver. The risk is real. Use sellers with confirmed flair and always test every piece before you pay.",
+      "explanation": "r/pmsforsale connects verified buyers and sellers with no platform fee",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 132,
+      "endSec": 152,
+      "text": "ROUNDS: 5-8% CHEAPER THAN EAGLES",
+      "narration": "An American Silver Eagle and a one-ounce generic round contain identical .999 fine silver. The Eagle carries a higher premium because of legal tender status and collector appeal. If silver content is your only goal, the round saves 5 to 8 percent per ounce.",
+      "explanation": "Generic rounds and Eagles contain identical .999 fine silver but carry very different premiums",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth",
+        "from_value": 11,
+        "from_label": "Eagles Premium",
+        "to_value": 5,
+        "to_label": "Rounds Premium",
+        "unit": "percent over spot"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 152,
+      "endSec": 175,
+      "text": "COIN SHOP RELATIONSHIP MATTERS",
+      "narration": "Local coin shops charge more per ounce, but they offer three things online dealers cannot: immediate possession, visual inspection before buying, and a seller relationship for when you exit. A shop you have bought from multiple times will give you a better exit price than one that does not know you.",
+      "explanation": "A coin shop you buy from regularly offers better buyback pricing when you eventually sell",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 175,
+      "endSec": 197,
+      "text": "START WITH 5-10 OZ ONLINE",
+      "narration": "If you have never bought silver before, start with 5 to 10 ounces in generic rounds from JM Bullion or SD Bullion. Both carry lower premiums on rounds than APMEX and have straightforward checkout. Use a credit card for your first order to keep chargeback protection in place.",
+      "explanation": "A small first order from JM Bullion or SD Bullion tests the process at low cost and low risk",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 197,
+      "endSec": 212,
+      "text": "COIN SHOP OR ONLINE: WHERE DO YOU BUY?",
+      "narration": "Follow for more silver news.",
+      "subtext": "TYPE YOUR ANSWER BELOW"
+    }
+  ]
+}

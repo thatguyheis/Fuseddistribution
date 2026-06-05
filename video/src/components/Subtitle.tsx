@@ -2,6 +2,7 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { BRAND } from '../brand';
 import { POPPINS } from '../fonts';
+import type { CaptionChunk } from '../types';
 
 function splitSentences(text: string): string[] {
   const raw = text.match(/[^.!?]+[.!?]+/g) ?? [text];
@@ -27,43 +28,62 @@ function splitSentences(text: string): string[] {
   return out.filter(Boolean);
 }
 
-export const Subtitle: React.FC<{ narration: string }> = ({ narration }) => {
+export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[] }> = ({ narration, captions }) => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const { durationInFrames, fps } = useVideoConfig();
 
-  const sentences = splitSentences(narration);
+  let sentence: string;
+  let opacity: number;
 
-  // Proportional timing: longer sentences get more screen time (speech rate ∝ char count)
-  const totalChars = sentences.reduce((sum, s) => sum + s.length, 0);
-  const frameCounts = sentences.map(s => Math.round((s.length / totalChars) * durationInFrames));
-  // Fix rounding drift so frameCounts sum exactly equals durationInFrames
-  const drift = durationInFrames - frameCounts.reduce((a, b) => a + b, 0);
-  frameCounts[frameCounts.length - 1] += drift;
+  if (captions && captions.length > 0) {
+    // Whisper-verified timestamps — frame-accurate
+    const currentSec = frame / fps;
+    const idx = captions.findIndex((c, i) => {
+      const next = captions[i + 1];
+      return currentSec >= c.startSec && (next ? currentSec < next.startSec : true);
+    });
+    const chunk = captions[Math.max(0, idx)];
+    sentence = chunk.text;
 
-  // Cumulative start frame per sentence
-  const frameStarts: number[] = [0];
-  for (let i = 1; i < sentences.length; i++) {
-    frameStarts.push(frameStarts[i - 1] + frameCounts[i - 1]);
+    const chunkStartFrame = Math.round(chunk.startSec * fps);
+    const chunkEndFrame = Math.round(chunk.endSec * fps);
+    const chunkDuration = Math.max(chunkEndFrame - chunkStartFrame, 1);
+    const frameInChunk = frame - chunkStartFrame;
+    const fadeFrames = Math.max(1, Math.min(4, Math.floor(chunkDuration * 0.15)));
+    const safeEnd = chunkDuration - fadeFrames;
+
+    opacity = safeEnd > fadeFrames
+      ? interpolate(frameInChunk, [0, fadeFrames, safeEnd, chunkDuration], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+      : 1;
+  } else {
+    // Fallback: proportional timing by char count
+    const sentences = splitSentences(narration);
+    const totalChars = sentences.reduce((sum, s) => sum + s.length, 0);
+    const frameCounts = sentences.map(s => Math.round((s.length / totalChars) * durationInFrames));
+    const drift = durationInFrames - frameCounts.reduce((a, b) => a + b, 0);
+    frameCounts[frameCounts.length - 1] += drift;
+
+    const frameStarts: number[] = [0];
+    for (let i = 1; i < sentences.length; i++) {
+      frameStarts.push(frameStarts[i - 1] + frameCounts[i - 1]);
+    }
+
+    let currentIndex = sentences.length - 1;
+    for (let i = 0; i < frameStarts.length - 1; i++) {
+      if (frame < frameStarts[i + 1]) { currentIndex = i; break; }
+    }
+
+    sentence = sentences[currentIndex];
+    const slotStart = frameStarts[currentIndex];
+    const slotDuration = frameCounts[currentIndex];
+    const frameInSlot = frame - slotStart;
+    const fadeFrames = Math.max(1, Math.min(6, Math.floor(slotDuration * 0.2)));
+    const safeEnd = slotDuration - fadeFrames;
+
+    opacity = safeEnd > fadeFrames
+      ? interpolate(frameInSlot, [0, fadeFrames, safeEnd, slotDuration], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+      : 1;
   }
-
-  // Find which sentence we're currently in
-  let currentIndex = sentences.length - 1;
-  for (let i = 0; i < frameStarts.length - 1; i++) {
-    if (frame < frameStarts[i + 1]) { currentIndex = i; break; }
-  }
-
-  const sentence = sentences[currentIndex];
-  const slotStart = frameStarts[currentIndex];
-  const slotDuration = frameCounts[currentIndex];
-  const frameInSlot = frame - slotStart;
-  const fadeFrames = Math.min(6, Math.floor(slotDuration * 0.2));
-
-  const opacity = interpolate(
-    frameInSlot,
-    [0, fadeFrames, slotDuration - fadeFrames, slotDuration],
-    [0, 1, 1, 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
-  );
 
   return (
     <div style={{

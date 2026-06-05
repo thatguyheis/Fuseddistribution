@@ -80,13 +80,13 @@ Both keys load automatically when you run: `cd video && export $(cat .env | xarg
 | ambient-09.mp3 | 5.6 min |
 | ambient-10.mp3 | 6.3 min |
 
-**Pick rule:** Use the day-of-year mod 10 to pick a track deterministically: `N = ($(date +%j) % 10) + 1`, zero-pad to two digits. Example: day 27 → `(27 % 10) + 1 = 8` → `ambient-08.mp3`. Run this in the shell before the render command:
+**Pick rule:** Use the day-of-year mod 9 + 2 to pick a track, skipping `ambient-01` (only 46s — loops too visibly on Long Form reels): `N = ($(date +%j) % 9) + 2`, zero-pad to two digits. Example: day 27 → `(27 % 9) + 2 = 2` → `ambient-02.mp3`. Run this in the shell before the render command:
 
 ```bash
-TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 10) + 1 )))
+TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 9) + 2 )))
 ```
 
-Then pass `--music=$TRACK`. Never default to `ambient-01` every time.
+Then pass `--music=$TRACK`. Never use `ambient-01` for Long Form — it is too short and loops noticeably.
 
 To add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3` at render time.
 
@@ -175,20 +175,16 @@ The reel script maps directly from reel-data.md sections:
 - `hook` → HOOK segment
 - `## stats` entries → Overlay segments (one per stat)
 - `## chart` → Chart segment (omit if absent)
-- `## cta` → CTA segment
-- `## pexels_queries` → passed to fetch-photos.mjs automatically
+- `## question` → QUESTION closing segment (Long Form always ends here — no `## cta`)
+- `## media_queries` → passed to fetch-photos.mjs automatically
 
 ### Step 2 — Plan segment layout before writing
 
-**Default format: Long Form. Always use Long Form unless explicitly overridden.**
-
-> Short-form (Express/Standard) is documented in `REEL-SOP-SHORTFORM.md` for reference only.
+**Only format: Long Form. Short-form is archived.**
 
 | Format | Target length | Status |
 |--------|--------------|--------|
-| **Long Form** | 180–240s | **Primary — use this** |
-| Standard | 60–90s | Backup only — see REEL-SOP-SHORTFORM.md |
-| Express | 25–40s | Backup only — see REEL-SOP-SHORTFORM.md |
+| **Long Form** | 180–240s | **Only format — always use this** |
 
 Long Form covers the full blog post arc. Facebook/Instagram group research shows 3–4 min outperforms short clips for engagement and comments with invested audiences.
 
@@ -239,13 +235,9 @@ Narration: [2–3 sentences]
 ---
 
 ## QUESTION (XX–XXs)
-Text: [THE QUESTION IN ALL CAPS — 8 WORDS MAX — displayed big on screen]
-Narration: Follow for more silver news.
-
----
-
-## DISCUSSION QUESTION
-[Same question as above — goes in the caption too]
+Text: [THE QUESTION IN ALL CAPS (8 WORDS MAX) displayed big on screen]
+Subtext: [ENGAGEMENT DIRECTIVE (5 WORDS MAX)]
+Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow for more tips to grow your business."]
 
 ---
 
@@ -303,9 +295,9 @@ Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`, `Question`. Mix and 
 Every reel hook must use one of these four patterns. Log the type in `Hook type:` at the top of the script so the optimization loop can track what works.
 
 **1. Contradiction** — challenge a common belief
-> "Everyone says [common advice] — but the data says the opposite."
-> Silver: "Everyone says gold is the safe haven — silver has outperformed it 3 of the last 5 years."
-> Tech: "Everyone says social media drives local customers — but 76% check your website first."
+> "Everyone says [common advice]. The data says the opposite."
+> Silver: "Everyone says gold is the safe haven. Silver has outperformed it 3 of the last 5 years."
+> Tech: "Everyone says social media drives local customers. But 76 percent check your website first."
 
 **2. Pain Point** — name a specific frustration the viewer has right now
 > "If you [specific relatable situation], this is the reason why."
@@ -423,14 +415,14 @@ Use when the post compares two options.
 > Text: `BUY NOW OR WAIT FOR A DIP?`
 > Subtext: `TYPE A FOR NOW, B FOR WAIT`
 
-> Text: `SILVER OR GOLD — WHICH DO YOU STACK?`
+> Text: `SILVER OR GOLD: WHICH DO YOU STACK?`
 > Subtext: `TYPE A FOR SILVER, B FOR GOLD`
 
 *Local business / tech:*
-> Text: `ORGANIC TRAFFIC OR PAID ADS — WHAT WORKS FOR YOU?`
-> Subtext: `ORGANIC OR PAID — COMMENT BELOW`
+> Text: `ORGANIC OR PAID ADS: WHAT WORKS FOR YOU?`
+> Subtext: `ORGANIC OR PAID. COMMENT BELOW`
 
-> Text: `GOOGLE OR FACEBOOK — WHERE DO YOU GET CUSTOMERS?`
+> Text: `GOOGLE OR FACEBOOK: WHERE DO CUSTOMERS FIND YOU?`
 > Subtext: `TYPE G FOR GOOGLE, F FOR FACEBOOK`
 
 > Text: `DO YOU RESPOND TO EVERY GOOGLE REVIEW?`
@@ -515,20 +507,24 @@ Use when you want volume over depth. One-word answers flood comment section.
 - Branded/salesy: "Visit FusedDistribution.com" — kills engagement, feels like an ad
 - Mismatched to audience: asking a silver question on a local business post
 
-**Standard/Express reels** may still use `## CTA` with a save or share ask if preferred. Long Form always ends with `## QUESTION`.
+Long Form always ends with `## QUESTION`. Never use `## CTA` as the closing segment.
 
-The `## DISCUSSION QUESTION` field in the script = same question as the QUESTION Text field. It goes in the Facebook/Instagram caption.
+The discussion question for captions is sourced from `social-copy.json` → `discussion_question` field — set during blog creation via `reel-data.md` `## shared`. Do not duplicate it in `reel-script.md`.
 
-### Step 3 — Place blog images (required for segment-0 / thumbnail)
+### Step 3a — Place blog images (required for segment-0 / thumbnail)
 
-Segment-0 is the **reel thumbnail** — the first frame viewers see before pressing play. Always place a blog image there. Pexels stock can cover remaining segments.
+**Segment-0 = hero graphic.** Use `hero.jpg` (the branded blog header image) as the HOOK background. It is already sized 1200×630, renders with Ken Burns zoom, and makes the reel open with the same branded graphic as the blog post.
+
+Blog `pexels-*.jpg` images are already downloaded during blog creation — copy them into reel slots to avoid redundant API fetches.
 
 ```bash
-# Segment-0 = thumbnail. Use the blog's strongest image here.
 mkdir -p video/public/photos/<slug>
-cp blog/<slug>/images/pexels-0.jpg video/public/photos/<slug>/segment-0.jpg
 
-# Optional: place a second blog image for another segment
+# Segment-0 = HOOK thumbnail — always use hero.jpg
+cp blog/<slug>/hero.jpg video/public/photos/<slug>/segment-0.jpg
+
+# Reuse blog pexels images for early body segments
+cp blog/<slug>/images/pexels-0.jpg video/public/photos/<slug>/segment-1.jpg
 cp blog/<slug>/images/pexels-1.jpg video/public/photos/<slug>/segment-2.jpg
 ```
 
@@ -558,6 +554,54 @@ cd video && npx remotion render src/Root.tsx BlogReel out/<slug>/<slug>.mp4 \
   --props='{"slug":"<slug>"}'
 ```
 
+### Step 3.4 — Script validation gate (REQUIRED before timing check)
+
+Run these checks on every `reel-script.md` before proceeding. Any failure = fix it before render.
+
+**Automated checks — run all. Any non-zero result = fix before render:**
+
+```bash
+# No em dashes anywhere (must return 0)
+grep -c "—" blog/<slug>/reel-script.md
+
+# QUESTION segment present (must return ≥ 1)
+grep -c "## QUESTION" blog/<slug>/reel-script.md
+
+# No bare % in Narration — write "percent" (must return 0)
+grep -c "Narration:.*%" blog/<slug>/reel-script.md
+
+# No bare "US" in Narration — write "USA" (must return 0)
+grep -cE "Narration:.*\bUS\b" blog/<slug>/reel-script.md
+
+# Chart segment required when reel-data.md has ## chart (must return ≥ 1 if applicable)
+if grep -q "^## chart" blog/<slug>/reel-data.md 2>/dev/null; then
+  grep -cE "^\*\*Chart|\*\*Chart " blog/<slug>/reel-script.md
+fi
+```
+
+**Manual checks:**
+- [ ] Hook narration ≤ 12 words, OR segment window ≥ 10s
+- [ ] Every segment has a `Text:` field — no narration-only segments
+- [ ] Segment count is 8-14 body segments (Long Form)
+- [ ] Stat Text labels are 5 words or fewer after the number
+- [ ] Chart segment present if `reel-data.md` has a `## chart` section
+- [ ] QUESTION segment has Text + Subtext + Narration — silver posts: "Follow for more silver news." / tech posts: "Follow for more tips to grow your business."
+- [ ] No segment references unverified stats not in `reel-data.md`
+- [ ] If `reel-data.md` has `## chart`, a Chart segment exists in the script
+
+**Post-render output check:**
+```bash
+# Verify output file is not corrupt
+ls -lh video/out/<slug>/<slug>.mp4   # size column must show > 5M for typical Long Form
+# If near the threshold, verify with ffprobe:
+ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 video/out/<slug>/<slug>.mp4
+# Duration must match declared target (within 10s). Zero duration = silent render failure.
+```
+
+If output is < 5 MB OR ffprobe shows zero/wrong duration, the render silently failed. Re-run.
+
+---
+
 ### Step 3.5 — Timing validation (REQUIRED before render)
 
 Do this before running render. For every segment in `reel-script.md`:
@@ -582,18 +626,26 @@ HOOK is highest risk — it often has 2 sentences crammed into 5s. Keep HOOK nar
 
 Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
 
-**Always source `.env` before rendering** — sets `PEXELS_API_KEY` so Pexels fetches work. Without it, existing photos on disk are preserved but new segments won't get photos.
+**Always source `.env` before rendering** — sets `PEXELS_API_KEY` so Pexels fetches work. Guard against missing file first:
 
 ```bash
+[ -f video/.env ] || { echo "ERROR: video/.env missing — render aborted"; exit 1; }
 cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
 ```
 
 Example (ambient-05):
 ```bash
+[ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
 cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
+
+> **CRITICAL — Do NOT skip or narrate this step.** You MUST execute the render command above via Bash. Do not describe the render as "running" or "in progress" without having called it. The command takes 10–15 minutes and blocks — wait for it to complete. After it exits, immediately verify:
+> ```bash
+> ls -lh "video/out/<slug>/<slug>.mp4"
+> ```
+> The file must exist and be larger than 10 MB. If it does not exist or is under 10 MB, the render failed — do not proceed to commit. Do not report success until this check passes.
 
 ### Step 5 — Review checklist
 - [ ] Numbers animate and count up correctly
@@ -609,7 +661,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 - [ ] Subtitles match audio — scrub 3 random points, subtitle appears with or just before spoken word
 - [ ] Video clips playing on hook and stat segments (not static photos where video was expected)
 
-**If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. Re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
+**If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. After shifting timestamps, re-run Step 3.5 timing validation on all segments — a shift in one propagates to all following segments. Then re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
 
 ### Step 6 — Commit, deploy, and post
 
@@ -629,8 +681,8 @@ Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before p
 
 **Post the reel manually:**
 - Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
-- Caption: copy `## caption` from `blog/<slug>/reel-data.md`, then add a blank line, then paste the `## discussion_question` on its own line
-- Hashtags: copy `## hashtags` from `blog/<slug>/reel-data.md`
+- Caption: copy the platform caption from `blog/<slug>/social-copy.json` → `reel.[platform]` field. Add a blank line, then paste `discussion_question` on its own line.
+- Hashtags: copy `hashtags` field from `blog/<slug>/social-copy.json` (5 max — already correct in the file)
 - First comment: paste the live blog URL
 
 **Timing matters — first 6 hours are the algorithm's testing window:**
@@ -785,7 +837,9 @@ Re-run any step individually:
 ```bash
 node video/scripts/parse-script.mjs --post=<slug>
 node video/scripts/generate-audio.mjs --post=<slug>
-PEXELS_API_KEY=... node video/scripts/fetch-photos.mjs --post=<slug>
+# Steps using external APIs require .env:
+[ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
+cd video && export $(cat .env | xargs) && node scripts/fetch-photos.mjs --post=<slug>
 ```
 
 ---
@@ -809,28 +863,41 @@ PEXELS_API_KEY=... node video/scripts/fetch-photos.mjs --post=<slug>
 
 Use these as pass/fail benchmarks for the finance and local business niche:
 
-| Metric | Target | Strong |
-|--------|--------|--------|
-| Intro retention (0–3s) | >50% | >70% |
-| Overall completion rate | >35% | >50% |
-| Save rate | >1% | >3% |
-| Share rate | >0.5% | >1% |
-| Comment rate | >0.5% | meaningful replies |
+| Metric | Target | Strong | Notes |
+|--------|--------|--------|-------|
+| **Sends per Reach** | >1% | >3% | **#1 signal** — DM shares weighted 3-5x over likes by Instagram algorithm |
+| Save rate | >1% | >3% | #2 signal — educational finance content saves well |
+| Intro retention (0–3s) | >50% | >70% | Low = hook failing |
+| Overall completion rate | >35% | >50% | Low = too long or mid-reel drop-off |
+| Comment rate | >0.5% | meaningful replies | QUESTION slide drives this |
+| Like rate | any | — | Lowest-weight signal — optimize last |
 
-If intro retention is low → the hook isn't working. Try a different hook type next post.
-If overall completion is low → reel is too long, or a mid-reel segment is losing people. Check the retention graph drop-off point.
-If save/share is low → content is good to watch but not worth keeping. Increase stat density or improve the CTA ask.
+**Tracking sends:** Instagram Insights → Reach → Sends. Export weekly — most dashboards don't surface this automatically.
+
+**What to fix based on metric:**
+- Low Sends per Reach → caption CTA not triggering shares; rewrite to "Send this to someone who needs to hear it."
+- Low saves → increase stat density or make content more reference-worthy
+- Low intro retention → hook isn't working; try different hook type next post
+- Low completion → reel is too long, or a mid-reel segment is losing people; check retention graph drop-off point
 
 ---
 
 ## Optimization Loop
 
 After 5+ posts in `performance.json`, review the report:
-- Which hook types get the most views? → write more of those
-- Contradiction and Pain Point hooks consistently outperform generic stat hooks for business/silver content
-- Which duration buckets perform best? → Express vs Standard
+- **Sends per Reach first** — which hook types drive the most DM shares? Optimize for this above all else.
+- Which hook types get the most views? → Contradiction and Pain Point consistently outperform generic stat hooks for business/silver content
+- Which duration buckets perform best?
 - Which music tracks correlate with engagement? → use those
-- Which CTA type (save vs share vs question) drives the most saves/comments? → standardize on it
+- Which CTA question type drives most comments? → standardize on it
 - Drop-off on long segments? → shorten or cut; never pad narration
+- Which captions have highest send rate? → use that CTA phrasing pattern going forward
 
 The report auto-ranks top posts and averages by hook type, duration, and music.
+
+**log sends when running feedback.mjs:**
+```bash
+node video/scripts/feedback.mjs --post=<slug> --platform=instagram \
+  --views=1200 --likes=85 --shares=12 --comments=6 --saves=24 --dm_shares=18
+```
+`--dm_shares` = DM send count from Instagram Insights → Reach → Sends.

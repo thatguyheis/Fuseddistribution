@@ -1,0 +1,152 @@
+{
+  "slug": "local-business-website-analytics",
+  "title": "How to Track Your Local Business Website With Google Analytics 4",
+  "totalDuration": 200,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 8,
+      "text": "39% TRACK WEBSITE ANALYTICS",
+      "narration": "Only 39 percent of small businesses check their website analytics."
+    },
+    {
+      "type": "stat",
+      "startSec": 8,
+      "endSec": 30,
+      "text": "61% HAVE NO VISIBILITY",
+      "narration": "A 2024 Clutch survey found only 39 percent of small business owners checked their website analytics regularly. The other 61 percent have no idea which pages generate calls or whether Google is sending them customers. That is where competitors quietly pull ahead.",
+      "explanation": "Most local business owners cannot see which pages drive calls or whether Google is sending customers",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 39,
+        "label": "Track Analytics",
+        "remainder_label": "No Tracking"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 49,
+      "text": "98% FIND BUSINESSES ONLINE",
+      "narration": "BrightLocal's 2024 survey found 98 percent of consumers used the internet to find local business information last year. Your website is not optional. Two free tools tell you whether it is actually working.",
+      "explanation": "Nearly all consumers research local businesses on the internet before visiting or calling",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 98,
+        "label": "Use Internet",
+        "remainder_label": "Do Not"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 49,
+      "endSec": 70,
+      "title": "Where Local Website Visitors Come From",
+      "bars": [
+        {
+          "label": "Google Organic Search",
+          "value": 68
+        },
+        {
+          "label": "Direct / Bookmarks",
+          "value": 18
+        },
+        {
+          "label": "Google Paid Ads",
+          "value": 9
+        },
+        {
+          "label": "Social Media",
+          "value": 5
+        }
+      ],
+      "narration": "For a typical local service business, 68 percent of visitors come through organic Google search. Direct is 18 percent, social media just 5 percent. If your organic share is well below 60 percent, there is a local SEO gap to address."
+    },
+    {
+      "type": "stat",
+      "startSec": 70,
+      "endSec": 88,
+      "text": "58% OF VISITORS ON MOBILE",
+      "narration": "Statista's 2024 data shows 58 percent of web visits come from mobile. For local businesses it is often higher. If your phone number is not a tappable link, you lose calls every single day.",
+      "explanation": "More than half of local website visits come from phones, not desktops",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 58,
+        "label": "Mobile",
+        "remainder_label": "Desktop"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 88,
+      "endSec": 107,
+      "text": "GA4 SETUP IN 15 MINUTES",
+      "narration": "Setting up GA4 takes under 15 minutes. Create a free account, get the measurement ID, and paste it into your site settings. WordPress, Squarespace, and Wix each have a dedicated field for it. No code required.",
+      "explanation": "Creating a GA4 property and adding it to your site requires no code on most popular platforms",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 107,
+      "endSec": 126,
+      "text": "PHONE CLICKS ARE REAL LEADS",
+      "narration": "Page views do not pay bills. Phone calls do. Mark phone number click events as conversions in GA4. After that, you see exactly how many people tapped your number each month instead of just how many visited.",
+      "explanation": "Marking phone link taps as conversions reveals exactly how many leads your site produced each month",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 126,
+      "endSec": 145,
+      "text": "SEARCH CONSOLE = FREE KEYWORDS",
+      "narration": "Search Console is free and shows the exact keywords people typed before landing on your site. Connecting it to GA4 takes five minutes. You will find queries you rank for that you never knew about.",
+      "explanation": "Connecting Search Console reveals which search queries bring visitors to your site",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 145,
+      "endSec": 164,
+      "text": "4-QUESTION MONTHLY REVIEW",
+      "narration": "A monthly review covering four questions takes 15 minutes: did organic sessions change, how many people hit the contact page, how many conversions happened, and what device were they on. Four answers, one clear direction.",
+      "explanation": "A focused 15-minute monthly check covers every data point a local business needs to act on",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 164,
+      "endSec": 184,
+      "text": "LOW CLICKS ON PAGE ONE?",
+      "narration": "If Search Console shows 2,000 impressions but GA4 shows 140 sessions from Google, your click-through rate is too low. That almost always means your page title or description needs to be more specific. Search Console makes that problem visible for free.",
+      "explanation": "High impressions with low click-through means your title or description needs rewriting",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 184,
+      "endSec": 200,
+      "text": "DO YOU TRACK YOUR WEBSITE ANALYTICS?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "YES OR NO BELOW"
+    }
+  ]
+}
