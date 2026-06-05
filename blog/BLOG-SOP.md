@@ -32,6 +32,16 @@ echo $PEXELS_API_KEY
 - [ ] **Use `seo-local` skill** if post covers local business, Google, or map pack topics
 - [ ] Write `index.html` — HTML from BLOG-REF.md "Section 1", CSS from BLOG-REF.md "Section 2", fill all [SLOTS]
 - [ ] Write `hero.svg` — design rules in §7
+- [ ] Generate `hero.jpg` from `hero.svg` (required for OG/social preview — social platforms don't support SVG):
+  ```bash
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --headless=new --disable-gpu \
+    --screenshot=/tmp/hero-tmp.png \
+    --window-size=1200,630 \
+    "file://$(pwd)/blog/[slug]/hero.svg" 2>/dev/null && \
+  sips -s format jpeg /tmp/hero-tmp.png --out blog/[slug]/hero.jpg -s formatOptions 85 && \
+  rm /tmp/hero-tmp.png
+  ```
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Paste attributions into `<figcaption>` tags
