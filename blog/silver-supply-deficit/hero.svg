@@ -1,0 +1,73 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-c)"/>
+  <rect width="1200" height="630" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="54" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="920" cy="120" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1060" cy="72" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="220" cy="510" r="1" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="980" cy="490" r="1.5" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="740" cy="570" r="1" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="460" cy="560" r="1.5" fill="#4dffb8" opacity="0.15"/>
+  <circle cx="108" cy="330" r="1" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1098" cy="390" r="1" fill="#4dffb8" opacity="0.18"/>
+
+  <!-- Left stat card: 3 consecutive deficits -->
+  <rect x="42" y="220" width="270" height="190" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="177" y="260" text-anchor="middle" font-family="Impact,sans-serif" font-size="15" fill="#4dffb8" letter-spacing="0.10em">CONSECUTIVE DEFICITS</text>
+  <text x="177" y="326" text-anchor="middle" font-family="Impact,sans-serif" font-size="82" fill="#4dffb8" letter-spacing="0.02em">3</text>
+  <text x="177" y="356" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="rgba(175,198,207,0.75)">annual years running</text>
+  <text x="177" y="378" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.55)">2021 · 2022 · 2023</text>
+
+  <!-- Right stat card: mine supply flat -->
+  <rect x="888" y="220" width="270" height="190" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="1023" y="260" text-anchor="middle" font-family="Impact,sans-serif" font-size="15" fill="#58d6ff" letter-spacing="0.10em">MINE PRODUCTION</text>
+  <text x="1023" y="326" text-anchor="middle" font-family="Impact,sans-serif" font-size="52" fill="#58d6ff" letter-spacing="0.02em">820M oz</text>
+  <text x="1023" y="356" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="rgba(175,198,207,0.75)">2023 global output</text>
+  <text x="1023" y="378" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.55)">flat for 5 years</text>
+
+  <!-- Central hero: 211M deficit -->
+  <text x="600" y="195" text-anchor="middle" font-family="Impact,sans-serif" font-size="22" fill="#58d6ff" letter-spacing="0.18em" opacity="0.9">SILVER SUPPLY DEFICIT</text>
+
+  <text x="600" y="340" text-anchor="middle" font-family="Impact,sans-serif" font-size="130" fill="#58d6ff" letter-spacing="0.02em">211M oz</text>
+
+  <text x="600" y="386" text-anchor="middle" font-family="Impact,sans-serif" font-size="26" fill="#ecf8fb" letter-spacing="0.08em">2023 ANNUAL DEFICIT</text>
+
+  <!-- Comparison line -->
+  <rect x="380" y="412" width="440" height="2" rx="1" fill="rgba(88,214,255,0.15)"/>
+
+  <text x="600" y="444" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="17" fill="rgba(175,198,207,0.80)">Demand: <tspan font-weight="700" fill="#ecf8fb">1,209 Moz</tspan> &nbsp;·&nbsp; Supply: <tspan font-weight="700" fill="#ecf8fb">998 Moz</tspan></text>
+
+  <text x="600" y="478" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.55)" letter-spacing="0.04em">Source: Silver Institute, World Silver Survey 2024</text>
+
+  <!-- Bottom brand bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(4,16,24,0.85)"/>
+  <text x="600" y="616" text-anchor="middle" font-family="Impact,sans-serif" font-size="16" fill="#58d6ff" letter-spacing="0.3em" opacity="0.7">FUSEDDISTRIBUTION.COM</text>
+</svg>

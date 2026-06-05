@@ -1,0 +1,70 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow-c2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl2" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c2)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl2)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="420" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.10"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="140" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="90" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="920" cy="180" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1060" cy="110" r="1" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="220" cy="1060" r="1" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="980" cy="1030" r="1.5" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="740" cy="1100" r="1" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="460" cy="1080" r="1.5" fill="#4dffb8" opacity="0.15"/>
+  <circle cx="108" cy="600" r="1" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1098" cy="640" r="1" fill="#4dffb8" opacity="0.18"/>
+
+  <!-- Top zone: category + brand -->
+  <text x="600" y="100" text-anchor="middle" font-family="Impact,sans-serif" font-size="22" fill="#58d6ff" letter-spacing="0.22em" opacity="0.85">SILVER MARKET</text>
+  <text x="600" y="160" text-anchor="middle" font-family="Impact,sans-serif" font-size="48" fill="#ecf8fb" letter-spacing="0.14em">FUSED</text>
+  <rect x="460" y="178" width="280" height="2" rx="1" fill="rgba(88,214,255,0.25)"/>
+
+  <!-- Center zone: title + stat -->
+  <text x="600" y="310" text-anchor="middle" font-family="Impact,sans-serif" font-size="58" fill="#ecf8fb" letter-spacing="0.04em">SILVER SUPPLY</text>
+  <text x="600" y="376" text-anchor="middle" font-family="Impact,sans-serif" font-size="58" fill="#ecf8fb" letter-spacing="0.04em">DEFICIT</text>
+  <text x="600" y="440" text-anchor="middle" font-family="Impact,sans-serif" font-size="40" fill="rgba(175,198,207,0.75)" letter-spacing="0.04em">3 CONSECUTIVE YEARS</text>
+
+  <!-- Big stat number -->
+  <text x="600" y="650" text-anchor="middle" font-family="Impact,sans-serif" font-size="220" fill="#58d6ff" letter-spacing="0.02em">211M</text>
+  <text x="600" y="714" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="28" fill="rgba(175,198,207,0.75)" letter-spacing="0.08em">OUNCE ANNUAL DEFICIT</text>
+  <text x="600" y="756" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.50)">demand 1,209 Moz vs supply 998 Moz · Silver Institute 2024</text>
+
+  <!-- Divider -->
+  <rect x="200" y="800" width="800" height="1" rx="0.5" fill="rgba(88,214,255,0.15)"/>
+
+  <!-- Bottom zone: excerpt + CTA -->
+  <text x="600" y="858" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="27" fill="rgba(175,198,207,0.82)">Mine production can't keep up with solar,</text>
+  <text x="600" y="896" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="27" fill="rgba(175,198,207,0.82)">EV, and electronics demand growth.</text>
+
+  <!-- CTA button shape -->
+  <rect x="260" y="960" width="680" height="80" rx="20" fill="rgba(7,20,28,0.9)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="600" y="1008" text-anchor="middle" font-family="Impact,sans-serif" font-size="22" fill="#58d6ff" letter-spacing="0.12em">FULL BREAKDOWN AT FUSEDDISTRIBUTION.COM</text>
+
+  <!-- Date -->
+  <text x="600" y="1120" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.40)" letter-spacing="0.08em">JUNE 2026</text>
+</svg>
