@@ -2,14 +2,15 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
-import { PhotoBg } from './PhotoBg';
-import type { CTASegment } from '../types';
+import { MediaBg } from './MediaBg';
+import type { CTASegment, MediaEntry } from '../types';
 
 export const CTACard: React.FC<{
   segment: CTASegment;
+  mediaEntry?: MediaEntry;
   photoPath?: string;
   segmentIndex?: number;
-}> = ({ segment, photoPath, segmentIndex = 0 }) => {
+}> = ({ segment, mediaEntry, photoPath, segmentIndex = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -35,7 +36,7 @@ export const CTACard: React.FC<{
       alignItems: 'center', justifyContent: 'center',
       padding: '80px 60px', overflow: 'hidden', opacity,
     }}>
-      <PhotoBg photoPath={photoPath} overlayOpacity={0.72} segmentIndex={segmentIndex} />
+      <MediaBg media={mediaEntry} photoPath={photoPath} overlayOpacity={0.72} segmentIndex={segmentIndex} />
       <div style={{
         position: 'relative', padding: '60px 48px', borderRadius: 24,
         border: `3px solid rgba(88,214,255,${glowOpacity})`,

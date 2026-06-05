@@ -2,14 +2,15 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
-import { PhotoBg } from './PhotoBg';
-import type { HookSegment } from '../types';
+import { MediaBg } from './MediaBg';
+import type { HookSegment, MediaEntry } from '../types';
 
 export const HookCard: React.FC<{
   segment: HookSegment;
+  mediaEntry?: MediaEntry;
   photoPath?: string;
   segmentIndex?: number;
-}> = ({ segment, photoPath, segmentIndex = 0 }) => {
+}> = ({ segment, mediaEntry, photoPath, segmentIndex = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -27,7 +28,7 @@ export const HookCard: React.FC<{
       background: BRAND.bg, display: 'flex', alignItems: 'center',
       justifyContent: 'center', padding: '80px 60px', overflow: 'hidden',
     }}>
-      <PhotoBg photoPath={photoPath} overlayOpacity={0.7} segmentIndex={segmentIndex} />
+      <MediaBg media={mediaEntry} photoPath={photoPath} overlayOpacity={0.7} segmentIndex={segmentIndex} />
       <div style={{
         position: 'relative', display: 'flex', flexDirection: 'column',
         alignItems: 'center', transform: `translateY(${translateY}px)`,

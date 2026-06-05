@@ -10,27 +10,29 @@ import { OverlayCard } from '../components/OverlayCard';
 import { StatCard } from '../components/StatCard';
 import { ChartCard } from '../components/ChartCard';
 import { CTACard } from '../components/CTACard';
+import { QuestionCard } from '../components/QuestionCard';
 import { Subtitle } from '../components/Subtitle';
-import type { ReelScript, Segment } from '../types';
+import type { ReelScript, Segment, CaptionChunk, MediaEntry } from '../types';
 
-type PhotoMap = Record<number, string>;
+type MediaMap = Record<number, MediaEntry>;
 
 const SegmentCard: React.FC<{
   segment: Segment;
-  photoPath?: string;
+  mediaEntry?: MediaEntry;
   segmentIndex: number;
-}> = ({ segment, photoPath, segmentIndex }) => {
+}> = ({ segment, mediaEntry, segmentIndex }) => {
   switch (segment.type) {
-    case 'hook':    return <HookCard segment={segment} photoPath={photoPath} segmentIndex={segmentIndex} />;
-    case 'overlay': return <OverlayCard segment={segment} photoPath={photoPath} segmentIndex={segmentIndex} />;
-    case 'stat':    return <StatCard segment={segment} photoPath={photoPath} segmentIndex={segmentIndex} />;
+    case 'hook':    return <HookCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
+    case 'overlay': return <OverlayCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
+    case 'stat':    return <StatCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
     case 'chart':   return <ChartCard segment={segment} segmentIndex={segmentIndex} />;
-    case 'cta':     return <CTACard segment={segment} photoPath={photoPath} segmentIndex={segmentIndex} />;
+    case 'cta':      return <CTACard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
+    case 'question': return <QuestionCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
   }
 };
 
 function getTransition(currentType: string, nextType: string) {
-  if (nextType === 'cta') {
+  if (nextType === 'cta' || nextType === 'question') {
     return { presentation: fade(), timing: linearTiming({ durationInFrames: 10 }) };
   }
   if (currentType === 'hook') {
@@ -45,11 +47,14 @@ function getTransition(currentType: string, nextType: string) {
   return { presentation: slide({ direction: 'from-bottom' }), timing: springTiming({ durationInFrames: 15, config: { damping: 200 } }) };
 }
 
+type CaptionMap = Record<number, CaptionChunk[]>;
+
 export const BlogReel: React.FC<{
   script: ReelScript;
   musicTrack?: string;
-  photos?: PhotoMap;
-}> = ({ script, musicTrack = 'ambient-01.mp3', photos = {} }) => (
+  media?: MediaMap;
+  captions?: CaptionMap;
+}> = ({ script, musicTrack = 'ambient-01.mp3', media = {}, captions = {} }) => (
   <AbsoluteFill style={{ background: BRAND.bg }}>
     <Audio src={staticFile(`music/${musicTrack}`)} volume={0.15} loop />
     <TransitionSeries>
@@ -64,8 +69,8 @@ export const BlogReel: React.FC<{
                 {segment.narration && (
                   <Audio src={staticFile(`audio/${script.slug}/segment-${i}.m4a`)} />
                 )}
-                <SegmentCard segment={segment} photoPath={photos[i]} segmentIndex={i} />
-                {segment.narration && <Subtitle narration={segment.narration} />}
+                <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} />
+                {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} />}
               </AbsoluteFill>
             </TransitionSeries.Sequence>
             {transition && (

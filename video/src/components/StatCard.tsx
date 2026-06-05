@@ -2,9 +2,9 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS, POPPINS } from '../fonts';
-import { PhotoBg } from './PhotoBg';
+import { MediaBg } from './MediaBg';
 import { InlineGraphic } from './InlineGraphic';
-import type { StatSegment } from '../types';
+import type { StatSegment, MediaEntry } from '../types';
 
 const CountUp: React.FC<{ target: number; suffix: string; countFrames: number }> = ({
   target, suffix, countFrames,
@@ -24,9 +24,10 @@ function parseStatFromText(text: string): { number: number; suffix: string; rest
 
 export const StatCard: React.FC<{
   segment: StatSegment;
+  mediaEntry?: MediaEntry;
   photoPath?: string;
   segmentIndex?: number;
-}> = ({ segment, photoPath, segmentIndex = 0 }) => {
+}> = ({ segment, mediaEntry, photoPath, segmentIndex = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const fi = Math.round(fps * 0.3);
@@ -45,7 +46,7 @@ export const StatCard: React.FC<{
       justifyContent: 'center', padding: '80px 60px',
       overflow: 'hidden', opacity: fadeIn,
     }}>
-      <PhotoBg photoPath={photoPath} segmentIndex={segmentIndex} />
+      <MediaBg media={mediaEntry} photoPath={photoPath} segmentIndex={segmentIndex} />
       <div style={{
         position: 'relative', display: 'flex', flexDirection: 'column',
         alignItems: 'center', gap: 12, width: '100%',

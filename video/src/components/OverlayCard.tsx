@@ -2,8 +2,8 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
-import { PhotoBg } from './PhotoBg';
-import type { OverlaySegment } from '../types';
+import { MediaBg } from './MediaBg';
+import type { OverlaySegment, MediaEntry } from '../types';
 
 const CountUp: React.FC<{ target: number; suffix: string; countFrames: number }> = ({
   target, suffix, countFrames,
@@ -23,9 +23,10 @@ function parseStatFromText(text: string): { prefix: string; number: number; suff
 
 export const OverlayCard: React.FC<{
   segment: OverlaySegment;
+  mediaEntry?: MediaEntry;
   photoPath?: string;
   segmentIndex?: number;
-}> = ({ segment, photoPath, segmentIndex = 0 }) => {
+}> = ({ segment, mediaEntry, photoPath, segmentIndex = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const countFrames = Math.round(fps * 0.9);
@@ -42,7 +43,7 @@ export const OverlayCard: React.FC<{
       background: BRAND.bg, display: 'flex', alignItems: 'center',
       justifyContent: 'center', padding: '80px 60px', overflow: 'hidden',
     }}>
-      <PhotoBg photoPath={photoPath} overlayOpacity={0.65} segmentIndex={segmentIndex} />
+      <MediaBg media={mediaEntry} photoPath={photoPath} overlayOpacity={0.65} segmentIndex={segmentIndex} />
       <div style={{
         position: 'relative', transform: `translateY(${translateY}px)`,
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16,
