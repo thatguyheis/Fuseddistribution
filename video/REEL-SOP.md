@@ -665,9 +665,12 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 ### Step 6 — Commit, deploy, and post
 
-**Commit reel files:**
+> **IMPORTANT: Do NOT commit mp4 files.** `video/out/**/*.mp4` is in `.gitignore`. GitHub blocks files over 100 MB and warns on files over 50 MB. The mp4 is for manual upload only — it is never pushed to the repo or deployed via Cloudflare.
+
+**Commit reel files (metadata only — no mp4):**
 ```bash
-git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md video/out/<slug>/
+git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md
+git add video/out/<slug>/script.json video/out/<slug>/render-meta.json video/out/<slug>/captions.json
 git commit -m "feat(reel): [Post Title]"
 git push origin main
 ```

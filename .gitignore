@@ -19,3 +19,6 @@ photos/derived/social/*
 !photos/derived/social/.gitkeep
 photos/derived/marketplace/*
 !photos/derived/marketplace/.gitkeep
+
+# Rendered video files — too large for GitHub
+video/out/**/*.mp4
