@@ -63,7 +63,7 @@
   <!-- Comparison line -->
   <rect x="380" y="412" width="440" height="2" rx="1" fill="rgba(88,214,255,0.15)"/>
 
-  <text x="600" y="444" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="17" fill="rgba(175,198,207,0.80)">Demand: <tspan font-weight="700" fill="#ecf8fb">1,209 Moz</tspan> &nbsp;·&nbsp; Supply: <tspan font-weight="700" fill="#ecf8fb">998 Moz</tspan></text>
+  <text x="600" y="444" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="17" fill="rgba(175,198,207,0.80)">Demand: <tspan font-weight="700" fill="#ecf8fb">1,209 Moz</tspan> &#160;·&#160; Supply: <tspan font-weight="700" fill="#ecf8fb">998 Moz</tspan></text>
 
   <text x="600" y="478" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.55)" letter-spacing="0.04em">Source: Silver Institute, World Silver Survey 2024</text>
 

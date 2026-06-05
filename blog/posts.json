@@ -26,7 +26,7 @@
     "excerpt": "Standard HO-3 policies cap precious metals theft at $1,500. A 100oz stack is worth $3,200. Here's how a scheduled floater closes the gap for under $2 per $100 per year.",
     "tags": ["Silver", "Storage", "Insurance"],
     "author": "Nick",
-    "image": "/blog/silver-insurance-storage/hero.svg",
+    "image": "/blog/silver-insurance-storage/hero.jpg",
     "imageAlt": "Silver insurance coverage guide showing $1,500 standard HO-3 theft sublimit and how a scheduled floater provides full replacement value"
   },
   {
@@ -36,7 +36,7 @@
     "excerpt": "500M people watch Instagram Stories daily. Here's how polls, question boxes, countdown stickers, and link stickers turn local followers into booked customers.",
     "tags": ["Social Media", "Local Business"],
     "author": "Nick",
-    "image": "/blog/instagram-stories-local-business/hero.svg",
+    "image": "/blog/instagram-stories-local-business/hero.jpg",
     "imageAlt": "Instagram Stories for local business showing 500M daily viewers stat and four story features that drive bookings"
   },
   {
@@ -46,7 +46,7 @@
     "excerpt": "Most advisors recommend 5-15% in precious metals. Here's how to size your silver position using risk tolerance, the gold-silver ratio, and a simple allocation formula.",
     "tags": ["Silver", "Investing"],
     "author": "Nick",
-    "image": "/blog/silver-portfolio-allocation/hero.svg",
+    "image": "/blog/silver-portfolio-allocation/hero.jpg",
     "imageAlt": "Silver portfolio allocation guide showing 5-15% precious metals range and gold-silver ratio reference chart"
   },
   {
@@ -56,7 +56,7 @@
     "excerpt": "89% of consumers read how businesses respond to negative reviews. Here's a proven 5-step formula to protect your reputation and turn bad reviews into new customers.",
     "tags": ["Local Business", "Reputation"],
     "author": "Nick",
-    "image": "/blog/online-review-management-local-business/hero.svg",
+    "image": "/blog/online-review-management-local-business/hero.jpg",
     "imageAlt": "Negative review response guide showing 45% more likely to visit stat and 89% read responses stat"
   },
   {
@@ -66,7 +66,7 @@
     "excerpt": "Complete GBP profiles get 7x more clicks than incomplete ones. Here's what each Insights metric means and which numbers to check every week.",
     "tags": ["Google", "Local Business"],
     "author": "Nick",
-    "image": "/blog/google-business-profile-insights/hero.svg",
+    "image": "/blog/google-business-profile-insights/hero.jpg",
     "imageAlt": "GBP Insights dashboard showing 7x more clicks for complete profiles, 76% visit within 24 hours, and 64% use GBP for contact info"
   },
   {
@@ -76,7 +76,7 @@
     "excerpt": "Industrial silver demand hit a record 654 million ounces in 2023. Electronics, solar, and medicine now drive more demand than investors and jewelers combined.",
     "tags": ["Silver", "History"],
     "author": "Nick",
-    "image": "/blog/silver-industrial-history/hero.svg",
+    "image": "/blog/silver-industrial-history/hero.jpg",
     "imageAlt": "Silver industrial demand chart: 654 million ounces total in 2023, electronics 38%, solar energy 25%"
   },
   {
@@ -86,7 +86,7 @@
     "excerpt": "Silver has the highest thermal conductivity of any metal at 429 W/mK. Here are six at-home tests that reliably catch silver-plated fakes, tungsten cores, and wrong-purity coins.",
     "tags": ["Silver", "Buying Guide"],
     "author": "Nick",
-    "image": "/blog/how-to-spot-fake-silver/hero.svg",
+    "image": "/blog/how-to-spot-fake-silver/hero.jpg",
     "imageAlt": "Thermal conductivity chart showing silver at 429 W/mK compared to tungsten at 173 W/mK, with six fake-detection test icons"
   },
   {
@@ -96,7 +96,7 @@
     "excerpt": "Only 43% of mobile websites pass all Core Web Vitals in 2024. Here's how slow load times cut conversions, hurt Google rankings, and what to check first on your local business site.",
     "tags": ["Websites", "Local Business"],
     "author": "Nick",
-    "image": "/blog/website-speed-local-business/hero.svg",
+    "image": "/blog/website-speed-local-business/hero.jpg",
     "imageAlt": "Three stat cards: 43% of mobile websites pass all Core Web Vitals, 10% more users lost per extra second, 13% more conversions per second faster"
   },
   {
@@ -106,7 +106,7 @@
     "excerpt": "92% of people trust recommendations from friends and family more than any ad. Here is how local businesses build a simple referral system that consistently brings in new customers.",
     "tags": ["Marketing", "Local Business"],
     "author": "Nick",
-    "image": "/blog/word-of-mouth-referrals/hero.svg",
+    "image": "/blog/word-of-mouth-referrals/hero.jpg",
     "imageAlt": "Three stat cards showing 92% trust referrals from people they know, 37% higher retention for referred customers, and referred customers are 4x more likely to refer others"
   },
   {
@@ -116,7 +116,7 @@
     "excerpt": "Silver's annual volatility averages 30 percent, roughly twice gold's. Here is what drives those swings: futures markets, the gold-silver ratio, ETF flows, and industrial demand floors.",
     "tags": ["Silver", "Market"],
     "author": "Nick",
-    "image": "/blog/what-moves-silver-price/hero.svg",
+    "image": "/blog/what-moves-silver-price/hero.jpg",
     "imageAlt": "Three stat cards showing silver's 2x volatility vs gold, gold-silver ratio peaked at 124 to 1 in 2020, and 58% industrial demand floor"
   },
   {
@@ -129,7 +129,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/social-media-local-business/hero.svg",
+    "image": "/blog/social-media-local-business/hero.jpg",
     "imageAlt": "Three stat cards showing Facebook organic reach 1.65 percent per post, 8.17 dollar return per dollar on Facebook ads, and 70 percent more location visits with a complete Google Business Profile"
   },
   {
@@ -142,7 +142,7 @@
       "Marketing"
     ],
     "author": "Nick",
-    "image": "/blog/local-business-repeat-customers/hero.svg",
+    "image": "/blog/local-business-repeat-customers/hero.jpg",
     "imageAlt": "Three stat cards showing returning customers spend 67% more, cost 5x less to acquire, and 65% of revenue comes from existing customers"
   },
   {
@@ -155,7 +155,7 @@
       "Storage"
     ],
     "author": "Nick",
-    "image": "/blog/silver-storage-options/hero.svg",
+    "image": "/blog/silver-storage-options/hero.jpg",
     "imageAlt": "Three storage option cards showing home safe, bank safe deposit box at $75 per year, and third-party vault at $20 per month with security and access comparison"
   },
   {
@@ -168,7 +168,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/local-seo-near-me/hero.svg",
+    "image": "/blog/local-seo-near-me/hero.jpg",
     "imageAlt": "Three stat cards showing 46% local search intent, 75% Map Pack click share, and 42% more direction requests for businesses with photos"
   },
   {
@@ -181,7 +181,7 @@
       "Investing"
     ],
     "author": "Nick",
-    "image": "/blog/silver-inflation-hedge/hero.svg",
+    "image": "/blog/silver-inflation-hedge/hero.jpg",
     "imageAlt": "Three stat cards showing silver's 270% gain in the 1970s, 173% gain from 2008 to 2011, and 107% rise from 2020 to 2022"
   },
   {
@@ -194,7 +194,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/local-business-website-pages/hero.svg",
+    "image": "/blog/local-business-website-pages/hero.jpg",
     "imageAlt": "Four stat cards showing 76% check website before calling, 3x more inquiries with Contact page, 74% visit Services page, and 58% of traffic is mobile"
   },
   {
@@ -207,7 +207,7 @@
       "Buying Guide"
     ],
     "author": "Nick",
-    "image": "/blog/silver-coins-rounds-bars/hero.svg",
+    "image": "/blog/silver-coins-rounds-bars/hero.jpg",
     "imageAlt": "Four data cards comparing silver product types: coins at 22% premium, rounds at 5% premium, bars at 2% premium, and all types at .999 fine silver purity"
   },
   {
@@ -220,7 +220,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/instagram-local-business/hero.svg",
+    "image": "/blog/instagram-local-business/hero.jpg",
     "imageAlt": "Instagram for local business stat cards showing 2B+ monthly active users, 90% follow a business, 4x reach with daily posts, and 38% higher reach with Reels"
   },
   {
@@ -233,7 +233,7 @@
       "Market"
     ],
     "author": "Nick",
-    "image": "/blog/silver-market-outlook-2026/hero.svg",
+    "image": "/blog/silver-market-outlook-2026/hero.jpg",
     "imageAlt": "Silver market data cards showing 1.24 billion ounce demand record, 58% industrial share, 200 million ounce supply deficit, and solar sector consuming 140 million ounces annually"
   },
   {
@@ -246,7 +246,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/email-marketing-local-business/hero.svg",
+    "image": "/blog/email-marketing-local-business/hero.jpg",
     "imageAlt": "Email marketing ROI dashboard showing $42 return per dollar spent, 25% average open rate, and 40x advantage over social media for customer acquisition"
   },
   {
@@ -259,7 +259,7 @@
       "History"
     ],
     "author": "Nick",
-    "image": "/blog/silver-history-as-money/hero.svg",
+    "image": "/blog/silver-history-as-money/hero.jpg",
     "imageAlt": "Four data cards showing key facts in silver's monetary history: first coins around 600 BC in Lydia, Roman denarius debasement from 95 to 5 percent silver, US silver standard from 1878 to 1964, and pre-1965 US coins containing 90 percent silver"
   },
   {
@@ -272,7 +272,7 @@
       "Buying Guide"
     ],
     "author": "Nick",
-    "image": "/blog/silver-storage-guide/hero.svg",
+    "image": "/blog/silver-storage-guide/hero.jpg",
     "imageAlt": "Four risk stat cards showing silver storage threats: theft at 10 to 12 minutes, fire at 1763 degrees Fahrenheit, discovery at 65 percent known persons, and moisture tarnish warning"
   },
   {
@@ -286,7 +286,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/facebook-growth-and-automation/hero.svg",
+    "image": "/blog/facebook-growth-and-automation/hero.jpg",
     "imageAlt": "Follower growth chart with data cards showing Facebook's 3 billion monthly users, 6x reach lift from daily posting, 12% Lead Ad conversion rate, and 365-day retargeting window"
   },
   {
@@ -299,7 +299,7 @@
       "Local Business"
     ],
     "author": "Nick",
-    "image": "/blog/why-free-offers-work/hero.svg",
+    "image": "/blog/why-free-offers-work/hero.jpg",
     "imageAlt": "Data visualization showing the zero price effect \u2014 69% chose the free item versus 27% at one cent, with research cards from Ariely 2007, Amazon Prime, in-store sampling, and loss leader math"
   },
   {
@@ -313,7 +313,7 @@
     ],
     "author": "Nick",
     "readTime": 7,
-    "image": "/blog/silver-premiums-explained/hero.svg",
+    "image": "/blog/silver-premiums-explained/hero.jpg",
     "imageAlt": "Horizontal bar chart comparing silver premiums by product type from junk silver at 3 to 8 percent to proof coins at 30 to 80 percent above spot"
   },
   {
@@ -328,7 +328,7 @@
     ],
     "author": "Nick",
     "readTime": 6,
-    "image": "/blog/getting-google-reviews/hero.svg",
+    "image": "/blog/getting-google-reviews/hero.jpg",
     "imageAlt": "Google Reviews dashboard showing a 4.9 star rating with 94 verified reviews and four customer review cards"
   },
   {
@@ -342,7 +342,7 @@
     ],
     "author": "Nick",
     "readTime": 5,
-    "image": "/blog/silver-to-gold-ratio/hero.svg",
+    "image": "/blog/silver-to-gold-ratio/hero.jpg",
     "imageAlt": "Visual showing 88 ounces of silver equal to 1 ounce of gold"
   },
   {
@@ -416,7 +416,7 @@
     ],
     "author": "Nick",
     "readTime": 5,
-    "image": "/blog/dollar-cost-averaging-silver/hero.svg",
+    "image": "/blog/dollar-cost-averaging-silver/hero.jpg",
     "imageAlt": "Chart showing silver price fluctuations with consistent dollar cost averaging buy points"
   },
   {
@@ -444,7 +444,7 @@
     ],
     "author": "Nick",
     "readTime": 2,
-    "image": "/blog/welcome-to-fused/hero.svg",
+    "image": "/blog/welcome-to-fused/hero.jpg",
     "imageAlt": "Fused Distribution brand mark with Silver Reserve and Technology Solutions content pillars"
   }
 ]

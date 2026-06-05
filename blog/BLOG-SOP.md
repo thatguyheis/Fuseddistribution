@@ -154,6 +154,11 @@ Chart math:
 
 File: `blog/[slug]/hero.svg` — `width="1200" height="630" viewBox="0 0 1200 630"`
 
+**SVG XML rules (critical — browser will show parse error if violated):**
+- NEVER use `&nbsp;` — SVG is XML, HTML entities are not defined. Use `&#160;` for non-breaking space.
+- NEVER use `&middot;`, `&bull;`, `&mdash;`, etc. Use numeric entities: `&#183;`, `&#8226;`, `&#8212;`
+- Only valid XML entities are: `&amp;` `&lt;` `&gt;` `&quot;` `&apos;` — everything else must be numeric (`&#NNN;`)
+
 **Required elements:**
 - Background: `#041018` fill + cyan radial glow center + green radial glow top-left
 - Grid: 6 vertical lines at x=170,340,510,680,850,1020 — `rgba(255,255,255,0.022)`

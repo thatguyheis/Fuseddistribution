@@ -63,7 +63,7 @@
   <!-- Comparison bar -->
   <rect x="420" y="420" width="360" height="2" rx="1" fill="rgba(88,214,255,0.15)"/>
 
-  <text x="600" y="454" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.80)">vs <tspan font-weight="700" fill="#ecf8fb">22%</tspan> for email &nbsp;·&nbsp; <tspan font-weight="700" fill="#ecf8fb">5%</tspan> for social</text>
+  <text x="600" y="454" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.80)">vs <tspan font-weight="700" fill="#ecf8fb">22%</tspan> for email &#160;·&#160; <tspan font-weight="700" fill="#ecf8fb">5%</tspan> for social</text>
 
   <text x="600" y="495" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.55)" letter-spacing="0.04em">Source: SimpleTexting 2024 · Mailchimp 2024 · Hootsuite 2024</text>
 
