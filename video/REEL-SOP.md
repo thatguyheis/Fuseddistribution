@@ -54,7 +54,17 @@ Or add to your shell profile so it's always set:
 echo 'export PEXELS_API_KEY=your_key_here' >> ~/.zprofile
 ```
 
-### 4. Music
+### 4. Pixabay API key (second video + photo source)
+Key is stored in `video/.env` alongside the Pexels key. Already configured.
+
+To verify:
+```bash
+grep PIXABAY_API_KEY video/.env
+```
+
+Both keys load automatically when you run: `cd video && export $(cat .env | xargs)`
+
+### 5. Music
 10 CC0 ambient tracks live at `video/public/music/`. All are public domain (CC0) from the "Peaceful Instrumental Background Music" collection on Internet Archive (`peaceful-tracks`).
 
 | File | Approx length |
@@ -84,6 +94,77 @@ To add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3
 
 ## Per-Post Workflow
 
+### Step 0 — Sub-Agent Review Procedure (REQUIRED when auditing AI-generated scripts)
+
+Every reel script produced by a sub-agent must pass this review before render. This step exists because sub-agents compress work — they miss timing bugs, fabricate stats, drop chart data, and drift from the blog source. Nick audits every long-form reel before it goes to render.
+
+---
+
+#### Pre-render script audit checklist
+
+**Fact accuracy (highest priority)**
+- [ ] Every stat in the script exists verbatim or close in the blog HTML or reel-data.md — no invented numbers
+- [ ] Narration matches what the blog actually says — no reworded claims that change meaning
+- [ ] Chart bars match the reel-data.md `## chart` section exactly — correct labels, correct percentages
+- [ ] Hook stat is sourced from the post — verify the exact number appears in reel-data.md or blog body
+
+**Timing validation (run the formula on every segment)**
+- [ ] For every segment: words in narration ÷ 2.5 + 2 ≤ segment window (endSec − startSec)
+- [ ] HOOK narration is 1 sentence, ≤12 words, or window is ≥10s
+- [ ] Chart segment window is ≥18s (bar animation + narration)
+- [ ] QUESTION segment window is ≥10s (narration is short but visual needs time)
+- [ ] No segment has narration cut off by a window that is too tight
+- [ ] Total duration is within the declared format range (Long Form: 180–240s)
+
+**Subtitle sync (verify after render)**
+- [ ] Scrub to 3 random mid-video points — subtitle text matches spoken word within 0.5 seconds
+- [ ] If subtitles lag: re-run `node scripts/generate-captions.mjs --post=<slug>` and re-render
+
+**Script format rules**
+- [ ] No em dashes (`—`) anywhere in Text or Narration fields
+- [ ] All Text fields are written without surrounding quotes
+- [ ] Stat Text labels are 5 words or fewer after the number
+- [ ] Narration writes "percent" not "%", "USA" not "US"
+- [ ] Every segment has a Text field — no narration-only segments
+- [ ] QUESTION segment has Text + Subtext + Narration = "Follow for more silver news."
+
+**Content quality**
+- [ ] Hook uses one of the four approved hook formulas (Contradiction / Pain Point / Immediate Value / Contrarian Stat)
+- [ ] Segment count: 8–14 body segments (Long Form default)
+- [ ] Content covers the full blog post arc — not just the top stats
+- [ ] No filler segments — every slide earns its place with a distinct fact or angle
+- [ ] QUESTION CTA type matches post topic (see taxonomy table)
+
+---
+
+#### Post-render audit checklist (in addition to Step 5 checklist)
+
+- [ ] Scrub to 3 random points mid-video — subtitles match audio
+- [ ] Watch the HOOK at full speed — text lands before narration ends
+- [ ] Scrub to QUESTION slide — question text is large, readable, Subtext visible in cyan
+- [ ] No black frames anywhere — all segments have photo or chart
+- [ ] Audio does not cut off on any segment — listen through every segment end
+- [ ] Chart bars all visible — none clipped by frame edge
+- [ ] Total runtime matches declared target (within 10s)
+
+---
+
+#### Quality scoring rubric (use after post-render audit)
+
+Score the reel 1–5 on each dimension before posting:
+
+| Dimension | 1 | 3 | 5 |
+|-----------|---|---|---|
+| Hook strength | Generic opener | Clear hook, weak data | Stops scroll, stat or contradiction lands instantly |
+| Fact density | Mostly filler | 2–3 strong stats | Every segment teaches something specific |
+| Timing sync | Cutoffs present | Minor rushes | Every segment breathes, no cutoffs |
+| Visual quality | Black frames, bad crop | Photos present, not ideal | Strong imagery, chart reads cleanly |
+| CTA quality | Generic or missing | Question present | Controversial, specific, irresistible to answer |
+
+**Minimum to post:** all dimensions ≥ 3. Any dimension scoring 1 = block and fix before posting.
+
+---
+
 ### Step 1 — Read reel-data.md
 
 Every blog post has a `blog/<slug>/reel-data.md` companion file with the hook, stats, chart data, CTA, and Pexels queries pre-extracted. Read this file — do not re-read `index.html`.
@@ -99,23 +180,26 @@ The reel script maps directly from reel-data.md sections:
 
 ### Step 2 — Plan segment layout before writing
 
-**Pick a format first:**
+**Default format: Long Form. Always use Long Form unless explicitly overridden.**
 
-| Format | Target length | Best for |
-|--------|--------------|----------|
-| **Express** | 25–40s | Maximum reach — highest completion rates; 1 stat + chart or 2 stats; no sub-topics |
-| **Standard** | 60–90s | Depth posts with 3+ stats and chart |
-| **Extended** | 90–120s | Only if retention data supports it — never default to this |
+> Short-form (Express/Standard) is documented in `REEL-SOP-SHORTFORM.md` for reference only.
 
-Prefer Express when the blog post has one dominant stat or a single strong chart. Shorter = higher completion rate = more algorithm distribution.
+| Format | Target length | Status |
+|--------|--------------|--------|
+| **Long Form** | 180–240s | **Primary — use this** |
+| Standard | 60–90s | Backup only — see REEL-SOP-SHORTFORM.md |
+| Express | 25–40s | Backup only — see REEL-SOP-SHORTFORM.md |
 
-**Segment planning:**
-1. Count the stats from reel-data.md. Each stat = one Stat segment.
+Long Form covers the full blog post arc. Facebook/Instagram group research shows 3–4 min outperforms short clips for engagement and comments with invested audiences.
+
+**Segment planning (Long Form):**
+1. Count every stat from reel-data.md. Each stat = one Stat segment.
 2. If reel-data.md has a `## chart`, include a Chart segment — required unless explicitly absent.
-3. Group related numbers together. Never split a stat across two segments — the number and its label belong on the same slide.
-4. Aim for 4–6 body segments (Standard) or 2–3 (Express). If you have too many stats, merge two weaker ones into one Overlay.
-5. **Set segment duration from narration length, not the other way around.** Read the narration aloud mentally and count seconds. A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
-6. Total duration target: Express 25–40s, Standard 60–90s. Maximum: 2 minutes (120s).
+3. Group related numbers together. Never split a stat across two segments.
+4. Plan 8–14 body segments covering every major section of the blog post. If you have fewer than 8, add Overlay segments with supporting context from the blog.
+5. **Set segment duration from narration length, not the other way around.** A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
+6. Total duration target: 180–240s. No hard maximum — let content determine length. Never pad with filler.
+7. Close with a `## QUESTION` segment (not CTA). See §Closing Segment Rules below.
 
 ### Step 3 — Write the reel script
 Create `blog/<slug>/reel-script.md`:
@@ -124,7 +208,7 @@ Create `blog/<slug>/reel-script.md`:
 # Reel Script: [Title]
 Generated: YYYY-MM-DD
 Target length: XX seconds
-Format: Express|Standard
+Format: Long Form
 Hook type: [see types below]
 
 ---
@@ -154,14 +238,14 @@ Narration: [2–3 sentences]
 
 ---
 
-## CTA (46–52s)
-Text: Full breakdown — link in comments.
-Narration: [One sentence driving to the link. End with a save/share ask OR a direct question — see §CTA Rules.]
+## QUESTION (XX–XXs)
+Text: [THE QUESTION IN ALL CAPS — 8 WORDS MAX — displayed big on screen]
+Narration: Follow for more silver news.
 
 ---
 
 ## DISCUSSION QUESTION
-[One direct question to viewers — short, debatable, or opinion-inviting. This goes in the caption, NOT spoken aloud. Example: "What page do most visitors skip on your site?"]
+[Same question as above — goes in the caption too]
 
 ---
 
@@ -190,7 +274,7 @@ Narration: [One sentence driving to the link. End with a save/share ask OR a dir
 - When in doubt, add 3s to your estimate. A reel that breathes is better than one that cuts off.
 
 **Total duration**
-- Express format: 25–40s. Standard: 60–90s. Maximum: 2 minutes. No hard minimum — never rush content.
+- Long Form: 180–240s. No hard maximum — never rush content. Always the default format.
 
 **No em dashes — ever**
 - Never use `—` in any Text: field or Narration. Rewrite with a comma, period, or short new sentence.
@@ -210,7 +294,7 @@ Narration: [One sentence driving to the link. End with a save/share ask OR a dir
 - Every Stat Text: must be self-explanatory without narration. "42% MORE REVENUE" works. "42% IMPROVEMENT" does not.
 - Every segment must have a Text: value — never leave a segment with only narration and no on-screen text.
 
-Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`. Mix and match.
+Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`, `Question`. Mix and match. Use `Question` as the closing segment for Long Form reels.
 
 ---
 
@@ -244,22 +328,196 @@ Every reel hook must use one of these four patterns. Log the type in `Hook type:
 
 ---
 
-### CTA Rules
+### Closing Segment Rules
 
-The default CTA text ("Full breakdown — link in comments") stays. The narration must end with ONE of these:
+**Long Form reels use `## QUESTION` (not `## CTA`).**
 
-**Save ask** (best for algorithm):
-> "Save this if you're thinking about [topic]."
+The QUESTION segment is the last slide. Goal: drive comments directly on the video. The algorithm counts every comment as a re-engagement signal — more comments in the first hour = wider distribution.
 
-**Share ask** (second best):
-> "Send this to someone who [relatable situation]."
+**Narration** — match the content pillar:
+- Silver posts: "Follow for more silver news."
+- Local business / tech posts: "Follow for more tips to grow your business."
 
-**Discussion question** (best for comments):
-> "What [specific choice/opinion related to post] — let me know in the comments."
+No link ask. No "link in comments." Goal is followers and comments, not clicks.
 
-Pick the one that fits the post. Save asks work best for silver/investing content. Share asks work best for tech/business content. Do not use all three — pick one.
+---
 
-The `## DISCUSSION QUESTION` field in the script becomes the last line of the Facebook/Instagram caption (separate from the CTA). It should be one short, opinion-inviting question that a real viewer would actually answer.
+#### QUESTION segment format
+
+```markdown
+## QUESTION (XXX–XXXs)
+Text: [THE QUESTION — 8 WORDS MAX — all caps]
+Subtext: [ENGAGEMENT DIRECTIVE — 5 WORDS MAX — shown in cyan below]
+Narration: Follow for more silver news.
+```
+
+`Subtext` is optional but recommended. It tells muted viewers exactly what to do. Examples:
+- `DROP YOUR ANSWER BELOW`
+- `COMMENT YOUR FIRST PURCHASE`
+- `TYPE YES OR NO BELOW`
+- `TELL ME IN THE COMMENTS`
+
+---
+
+#### CTA Type Taxonomy — pick ONE per reel
+
+**1. Controversial take** (highest comment volume — people feel compelled to correct or agree)
+Use when the post has a strong counterintuitive claim.
+
+*Silver:*
+> Text: `IS SILVER MORE MANIPULATED THAN GOLD?`
+> Subtext: `AGREE OR DISAGREE BELOW`
+
+> Text: `SILVER WILL OUTPERFORM GOLD THIS DECADE`
+> Subtext: `AGREE OR DISAGREE BELOW`
+
+> Text: `PAPER SILVER IS WORTHLESS. ONLY PHYSICAL COUNTS`
+> Subtext: `HOT TAKE — TELL ME YOURS`
+
+*Local business / tech:*
+> Text: `SOCIAL MEDIA IS OVERRATED FOR LOCAL BUSINESS`
+> Subtext: `AGREE OR DISAGREE BELOW`
+
+> Text: `YOUR GOOGLE REVIEWS MATTER MORE THAN YOUR WEBSITE`
+> Subtext: `HOT TAKE — COMMENT BELOW`
+
+> Text: `MOST LOCAL BUSINESS WEBSITES ARE A WASTE OF MONEY`
+> Subtext: `AGREE OR DISAGREE`
+
+> Text: `WORD OF MOUTH BEATS PAID ADS FOR LOCAL BUSINESS`
+> Subtext: `AGREE OR DISAGREE BELOW`
+
+**2. Personal story prompt** (high comment quality — people share their own experience, thread builds)
+Use for any post about first steps, mistakes, or wins.
+
+*Silver:*
+> Text: `WHAT WAS YOUR FIRST SILVER PURCHASE?`
+> Subtext: `COMMENT YOUR STORY BELOW`
+
+> Text: `WHERE DID YOU BUY YOUR FIRST OUNCE?`
+> Subtext: `SHARE YOUR STORY`
+
+> Text: `WHEN DID YOU START STACKING SILVER?`
+> Subtext: `DROP THE YEAR IN THE COMMENTS`
+
+*Local business / tech:*
+> Text: `WHAT BROUGHT YOUR FIRST CUSTOMER TO YOUR DOOR?`
+> Subtext: `COMMENT YOUR STORY BELOW`
+
+> Text: `HOW DID YOU GET YOUR FIRST GOOGLE REVIEW?`
+> Subtext: `SHARE YOUR EXPERIENCE`
+
+> Text: `WHAT WAS YOUR BIGGEST WEBSITE MISTAKE?`
+> Subtext: `COMMENT BELOW — HELP OTHERS AVOID IT`
+
+> Text: `WHEN DID YOU REALIZE YOUR WEBSITE WAS HURTING YOU?`
+> Subtext: `TELL YOUR STORY BELOW`
+
+**3. Binary choice** (easiest to comment — one word answer, maximum participation)
+Use when the post compares two options.
+
+*Silver:*
+> Text: `SILVER COINS OR SILVER BARS?`
+> Subtext: `TYPE YOUR CHOICE BELOW`
+
+> Text: `BUY NOW OR WAIT FOR A DIP?`
+> Subtext: `TYPE A FOR NOW, B FOR WAIT`
+
+> Text: `SILVER OR GOLD — WHICH DO YOU STACK?`
+> Subtext: `TYPE A FOR SILVER, B FOR GOLD`
+
+*Local business / tech:*
+> Text: `ORGANIC TRAFFIC OR PAID ADS — WHAT WORKS FOR YOU?`
+> Subtext: `ORGANIC OR PAID — COMMENT BELOW`
+
+> Text: `GOOGLE OR FACEBOOK — WHERE DO YOU GET CUSTOMERS?`
+> Subtext: `TYPE G FOR GOOGLE, F FOR FACEBOOK`
+
+> Text: `DO YOU RESPOND TO EVERY GOOGLE REVIEW?`
+> Subtext: `YES OR NO — COMMENT BELOW`
+
+> Text: `WEBSITE OR SOCIAL MEDIA — WHERE DO YOU INVEST?`
+> Subtext: `COMMENT YOUR ANSWER`
+
+**4. Prediction ask** (drives repeat engagement — people return to check if they were right)
+Use for trend, market, or future-facing posts.
+
+*Silver:*
+> Text: `WHERE WILL SILVER BE END OF 2025?`
+> Subtext: `DROP YOUR PRICE PREDICTION`
+
+> Text: `WILL SILVER HIT $50 THIS YEAR?`
+> Subtext: `YES OR NO — COMMENT BELOW`
+
+*Local business / tech:*
+> Text: `WILL AI REPLACE LOCAL BUSINESS WEBSITES?`
+> Subtext: `YES, NO, OR MAYBE — COMMENT`
+
+> Text: `WILL GOOGLE REVIEWS MATTER MORE IN 5 YEARS?`
+> Subtext: `DROP YOUR PREDICTION BELOW`
+
+> Text: `WILL FACEBOOK STILL DRIVE LOCAL CUSTOMERS IN 2030?`
+> Subtext: `YES OR NO BELOW`
+
+**5. Completion prompt / identity signal** (drives algorithm comment signal fast — low friction)
+Use when you want volume over depth. One-word answers flood comment section.
+
+*Silver:*
+> Text: `ARE YOU A SILVER STACKER?`
+> Subtext: `TYPE STACKER IF YOU STACK`
+
+> Text: `HOW MANY OUNCES DO YOU OWN?`
+> Subtext: `DROP YOUR NUMBER BELOW`
+
+> Text: `COMMENT SILVER IF YOU HOLD PHYSICAL`
+> Subtext: `LET'S SEE HOW MANY STACKERS ARE HERE`
+
+*Local business / tech:*
+> Text: `DO YOU HAVE A WEBSITE FOR YOUR BUSINESS?`
+> Subtext: `TYPE YES OR NO BELOW`
+
+> Text: `HOW MANY GOOGLE REVIEWS DO YOU HAVE?`
+> Subtext: `DROP YOUR NUMBER BELOW`
+
+> Text: `COMMENT YOUR BUSINESS TYPE BELOW`
+> Subtext: `LET'S SEE WHO IS IN HERE`
+
+> Text: `ARE YOU GETTING CUSTOMERS FROM GOOGLE?`
+> Subtext: `YES OR NO — COMMENT BELOW`
+
+---
+
+#### Picking the right type
+
+| Post topic | Pillar | Best CTA type |
+|-----------|--------|--------------|
+| Price analysis / market outlook | Silver | Prediction ask |
+| Coins vs rounds vs bars | Silver | Binary choice |
+| Buying guide / first steps | Silver | Personal story |
+| Manipulation, suppression, banking | Silver | Controversial take |
+| General silver stacking | Silver | Completion prompt |
+| Historical price / performance | Silver | Controversial take or prediction |
+| Website tips / what a site does | Tech | Controversial take or personal story |
+| Google reviews / reputation | Tech | Binary choice or personal story |
+| Google Business Profile / local SEO | Tech | Completion prompt or binary choice |
+| Social media for local business | Tech | Controversial take |
+| Word of mouth / referrals | Tech | Personal story |
+| Paid ads vs organic | Tech | Binary choice |
+| Future of local marketing | Tech | Prediction ask |
+
+---
+
+#### What makes a CTA fail
+
+- Too open-ended: "What do you think?" — no friction, no reason to answer
+- Requires knowledge the viewer doesn't have: "What's your DCA basis?" — intimidates beginners
+- Rhetorical: "Isn't silver amazing?" — no debate, no story to share
+- Branded/salesy: "Visit FusedDistribution.com" — kills engagement, feels like an ad
+- Mismatched to audience: asking a silver question on a local business post
+
+**Standard/Express reels** may still use `## CTA` with a save or share ask if preferred. Long Form always ends with `## QUESTION`.
+
+The `## DISCUSSION QUESTION` field in the script = same question as the QUESTION Text field. It goes in the Facebook/Instagram caption.
 
 ### Step 3 — Place blog images (required for segment-0 / thumbnail)
 
@@ -348,6 +606,8 @@ Output: `video/out/<slug>/<slug>.mp4`
 - [ ] Background photos don't overpower the text
 - [ ] CTA glow is visible and readable
 - [ ] Blog data matches reel data exactly
+- [ ] Subtitles match audio — scrub 3 random points, subtitle appears with or just before spoken word
+- [ ] Video clips playing on hook and stat segments (not static photos where video was expected)
 
 **If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. Re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
 
@@ -390,6 +650,124 @@ cd video && node scripts/feedback.mjs
 ```
 
 Review the auto-generated report at `video/data/performance-report.md`.
+
+---
+
+## 11b. Inline Graphic Types (required for all stat segments)
+
+Every stat entry in `reel-data.md` must include an `explanation:` line and a `graphic_type:`. These render as an explanation line and an animated graphic below the stat number on screen, making stats readable without audio.
+
+### explanation: field
+
+One plain sentence (no em dashes) explaining what the number means or why it matters. Appears in muted cyan below the stat label.
+
+```markdown
+- text: 72% BYPRODUCT MINING
+  explanation: Silver output tied to copper, gold, zinc production decisions
+```
+
+### graphic_type: field + graphic: block
+
+Pick the type that best fits the stat shape. Use `none` if no type fits — the explanation line still renders.
+
+| Type | Use when | Required graphic: fields |
+|------|----------|--------------------------|
+| `gap` | Two values with a meaningful difference (supply vs demand, revenue vs cost) | `a_label`, `a_value`, `b_label`, `b_value`, `unit` |
+| `percent_fill` | Single percentage, split with complement | `value`, `label`, `remainder_label` |
+| `percent_pie` | Single percentage shown as donut chart | `value`, `label`, `remainder_label` |
+| `growth` | Before/after comparison (year-over-year, then vs now) | `from_value`, `from_label`, `to_value`, `to_label`, `unit` |
+| `timeline` | Duration range (e.g. 8–12 years to build a mine) | `min`, `max`, `unit`, `label` |
+| `streak` | Consecutive count ("3rd straight year") — `count` = total dots shown, `current` = which is active (1-based) | `count`, `current`, `unit` |
+| `drain` | Depleting inventory or reserve | `peak_value`, `peak_label`, `current_value`, `current_label`, `unit` |
+| `gauge` | Position on a low→high scale | `value`, `min`, `max`, `low_label`, `high_label` |
+| `none` | No graphic fits — renders explanation only | — |
+
+### Full stat block example
+
+```markdown
+- text: 211M OZ ANNUAL DEFICIT
+  explanation: More consumed than mined. Third straight year.
+  graphic_type: gap
+  graphic:
+    a_label: Supply
+    a_value: 998
+    b_label: Demand
+    b_value: 1209
+    unit: M oz
+  narration: Silver's global market ran a 211 million ounce deficit in 2023...
+
+- text: 72% BYPRODUCT MINING
+  explanation: Silver output tied to copper, gold, zinc production decisions
+  graphic_type: percent_fill
+  graphic:
+    value: 72
+    label: Byproduct
+    remainder_label: Primary
+  narration: Roughly 72 percent of mine supply comes as a byproduct...
+
+- text: 3RD STRAIGHT YEAR IN DEFICIT
+  explanation: Consecutive annual deficits signal a structural imbalance
+  graphic_type: streak
+  graphic:
+    count: 3
+    current: 3
+    unit: years
+  narration: The deficits in 2021 and 2022 were smaller...
+```
+
+### reel-script.md format for stat segments
+
+When writing `reel-script.md`, include the same fields using `Graphic_type:` and individual `Graphic_fieldname:` lines:
+
+```markdown
+**Stat 1** (5–20s)
+Text: 72% BYPRODUCT MINING
+Explanation: Silver output tied to copper, gold, zinc production decisions
+Graphic_type: percent_fill
+Graphic_value: 72
+Graphic_label: Byproduct
+Graphic_remainder_label: Primary
+Narration: Roughly 72 percent of mine supply comes as a byproduct of gold, copper, zinc, and lead mining...
+```
+
+---
+
+## 11c. Media Strategy — Video Clips and Photos
+
+Every segment background is sourced in this priority order:
+
+1. **Pixabay video** (portrait MP4, slow cinematic playback at 0.75x)
+2. **Pexels video** (portrait MP4 fallback)
+3. **Pixabay photo** (large, portrait)
+4. **Pexels photo** (large, portrait fallback)
+
+Chart, CTA, and Question segments always get a photo — clean background needed for readability.
+
+### media_queries section in reel-data.md
+
+Replaces `pexels_queries`. Add `prefer: video` (default) or `prefer: photo` per segment:
+
+```markdown
+## media_queries
+- segment: 0
+  query: "silver bullion bars dramatic lighting"
+  prefer: video
+- segment: 2
+  query: "solar panels photovoltaic field aerial"
+  prefer: video
+- segment: 5
+  query: "silver coins collection close up"
+  prefer: photo
+```
+
+- `prefer:` defaults to `video` if omitted
+- Write specific, visual queries — avoid abstract words
+- Aim for one entry per segment (hook + all stat segments at minimum)
+- The old `pexels_queries` name still works for legacy posts
+
+### Video clip behavior
+
+Video clips play at 0.75x speed for a cinematic slow-motion feel. They loop if the segment is longer than the clip. A dark overlay keeps text readable.
 
 ---
 
