@@ -45,7 +45,7 @@ export function parseReelScript(md, slug) {
   }
 
   // BODY segments
-  const bodyM = md.match(/## BODY\n([\s\S]*?)(?=\n---\n## CTA|\n## CTA)/);
+  const bodyM = md.match(/## BODY\n([\s\S]*?)(?=\n---\n## CTA|\n## CTA|\n---\n## QUESTION|\n## QUESTION)/);
   if (bodyM) {
     const blockRe = /\*\*([^*]+)\*\*\s*\((\d+)[–\-](\d+)s\)([\s\S]*?)(?=\n\*\*[^*]+\*\*\s*\(\d|$)/g;
     let m;
@@ -73,17 +73,34 @@ export function parseReelScript(md, slug) {
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
         const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
         const stripQuotes = (s) => s ? s.replace(/^["']+|["']+$/g, '').trim() : s;
-        segments.push({
+        const explanationM = body.match(/Explanation:\s*(.+)/);
+        const graphicTypeM = body.match(/Graphic_type:\s*(\S+)/i);
+
+        let graphicData = undefined;
+        const graphicFieldRe = /Graphic_([a-z_]+):\s*(.+)/gi;
+        let gm;
+        while ((gm = graphicFieldRe.exec(body)) !== null) {
+          const key = gm[1].toLowerCase();
+          const raw = gm[2].trim();
+          if (!graphicData) graphicData = {};
+          graphicData[key] = isNaN(Number(raw)) ? raw : Number(raw);
+        }
+
+        const seg = {
           type, startSec, endSec,
           text: textM ? stripQuotes(textM[1].trim()) : '',
           narration: narrM ? cleanNarr(narrM[1]) : null,
-        });
+        };
+        if (explanationM) seg.explanation = explanationM[1].trim();
+        if (graphicTypeM) seg.graphic_type = graphicTypeM[1].trim().toLowerCase();
+        if (graphicData) seg.graphic = graphicData;
+        segments.push(seg);
       }
     }
   }
 
-  // CTA
-  const ctaM = md.match(/## CTA \((\d+)[–\-](\d+)s\)\n([\s\S]*?)(?=\n---|\n## VISUAL|$)/);
+  // CTA (legacy — keep for backward compat)
+  const ctaM = md.match(/## CTA \((\d+)[–\-](\d+)s\)\n([\s\S]*?)(?=\n---|\n## VISUAL|\n## QUESTION|$)/);
   if (ctaM) {
     const body = ctaM[3];
     const textM = body.match(/Text:\s*(.+)/);
@@ -95,6 +112,24 @@ export function parseReelScript(md, slug) {
       text: textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim(),
       narration: narrM ? narrM[1].trim() : null,
     });
+  }
+
+  // QUESTION (new closing segment — replaces CTA for long-form reels)
+  const questionM = md.match(/## QUESTION \((\d+)[–\-](\d+)s\)\n([\s\S]*?)(?=\n---|\n## VISUAL|$)/);
+  if (questionM) {
+    const body = questionM[3];
+    const textM = body.match(/Text:\s*(.+)/);
+    const subtextM = body.match(/Subtext:\s*(.+)/);
+    const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
+    const seg = {
+      type: 'question',
+      startSec: parseInt(questionM[1], 10),
+      endSec: parseInt(questionM[2], 10),
+      text: textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim(),
+      narration: narrM ? narrM[1].trim() : null,
+    };
+    if (subtextM) seg.subtext = subtextM[1].trim().replace(/^["']+|["']+$/g, '');
+    segments.push(seg);
   }
 
   return { slug, title, totalDuration, segments };
