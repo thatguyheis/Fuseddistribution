@@ -25,15 +25,17 @@ echo $PEXELS_API_KEY
 ## 0. Quick Checklist
 
 - [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
-- [ ] Add entry to `posts.json` (top of array)
+- [ ] **Use `seo-plan` skill** to identify target keyword, search intent, and top-3 competitor angles — run FIRST before anything else (see §7a). Slug derives from keyword.
+- [ ] Add entry to `posts.json` (top of array) — slug comes from keyword research
 - [ ] Create `blog/[slug]/` folder
-- [ ] **Use `blog-write` skill** to draft post body — enforces E-E-A-T, sourced stats, 5-gate delivery contract, and all §9 writing rules automatically
+- [ ] **Use `blog-write` skill** to draft post body — pass the target keyword from seo-plan; enforces E-E-A-T, sourced stats, 5-gate delivery contract, and all §9 writing rules automatically
 - [ ] **Use `blog-seo-check` skill** after draft — validates on-page SEO signals before building HTML
 - [ ] **Use `seo-local` skill** if post covers local business, Google, or map pack topics
 - [ ] Write `index.html` — HTML from BLOG-REF.md "Section 1", CSS from BLOG-REF.md "Section 2", fill all [SLOTS]
 - [ ] Write `hero.svg` — design rules in §7
-- [ ] Generate `hero.jpg` from `hero.svg` (required for OG/social preview — social platforms don't support SVG):
+- [ ] Generate `hero.jpg` from `hero.svg` (required for OG/social preview AND reel HOOK thumbnail — social platforms don't support SVG, and the reel pipeline copies this as segment-0):
   ```bash
+  # Run from repo root — verify first: pwd should end in "New project"
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
     --headless=new --disable-gpu \
     --screenshot=/tmp/hero-tmp.png \
@@ -41,12 +43,16 @@ echo $PEXELS_API_KEY
     "file://$(pwd)/blog/[slug]/hero.svg" 2>/dev/null && \
   sips -s format jpeg /tmp/hero-tmp.png --out blog/[slug]/hero.jpg -s formatOptions 85 && \
   rm /tmp/hero-tmp.png
+  # Verify: ls -lh blog/[slug]/hero.jpg — must exist and be > 50 KB
   ```
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Paste attributions into `<figcaption>` tags
 - [ ] Write `reel-data.md` with single long-form section (§11)
 - [ ] Write `photo-post.svg` (§15)
+- [ ] Generate `photo-post.jpg` from `photo-post.svg` — same Chrome headless step as hero.jpg but `--window-size=1200,1200` (§15)
+- [ ] Add FAQ block (3+ Q&As) near end of article body + FAQPage JSON-LD in `<head>` (§1b in BLOG-REF.md) — only if post has genuine FAQ content
+- [ ] Add internal links to 2-3 related posts from `posts.json` (see §9 Internal Linking)
 - [ ] Write `social-copy.json` (§14)
 - [ ] `git add blog/posts.json blog/[slug]/` then commit
 
@@ -90,9 +96,11 @@ blog/
   [slug]/
     index.html
     hero.svg
+    hero.jpg            ← generated from hero.svg (Chrome headless) — OG tags + reel segment-0
     reel-data.md        ← required (§11) — single long-form section
     reel-script.md      ← written by REEL-SOP workflow
     photo-post.svg      ← required (§15) — 1200×1200 square
+    photo-post.jpg      ← generated from photo-post.svg (Chrome headless) — Postiz/social upload
     social-copy.json    ← required (§14) — captions per platform
     images/
       pexels-0.jpg      ← from fetch-pexels script
@@ -179,6 +187,26 @@ HTML placement: between `.article-meta` and `.article-divider`. No figcaption.
 
 ---
 
+## 7a. Keyword Research (Required Before Drafting)
+
+Before invoking `blog-write`, identify the post's target keyword using the `seo-plan` skill.
+
+**What to produce:**
+- **Primary keyword:** One specific search phrase (e.g., "how to buy silver coins" not "silver")
+- **Search intent:** Informational / Navigational / Commercial / Transactional
+- **Competitor gap:** One angle that top-ranking pages don't fully cover — this is the post's information gain
+- **Secondary keywords:** 2-4 related phrases to work into headers and body naturally
+
+**Rules:**
+- Target keywords with clear informational intent for silver posts and local search intent for tech posts
+- Pick keywords with realistic competition for a domain at this authority level — broad finance terms are unwinnable
+- The primary keyword must appear in: `<title>`, `<h1>`, meta description, first paragraph, and at least one `<h2>`
+- Do not keyword-stuff — one natural placement per element is enough
+
+**Pass to `blog-write`:** "Target keyword: [keyword]. Intent: [intent]. Competitor gap: [gap]."
+
+---
+
 ## 8. Inline Images
 
 **Rule:** every post must have **min 1 custom graphic** AND **min 1 Pexels photo**. Max **5 total** visuals.
@@ -201,6 +229,8 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
    </figure>
    ```
 5. Record the same queries in `reel-data.md` under `## media_queries` (§11)
+
+**If fetch-pexels returns 0 images for any query:** re-run with a shorter 3-word query. Never leave empty `<figcaption>` or placeholder `<img src>` tags — these break layout and will confuse the reel pipeline.
 
 ---
 
@@ -271,6 +301,22 @@ dive in, delve into, delve deeper, unlock the power, unleash the potential, take
 
 ---
 
+### Internal Linking
+
+Every post links to 2-3 existing posts from `posts.json`. Do not publish islands.
+
+- **Intro link:** In the first or second body paragraph, link to a related post that provides context. Anchor text = descriptive phrase, not "click here" or "read more."
+- **Body link:** Mid-article, link to a post in the same broad category covering a closely related angle.
+- **Next-read link:** Just before or inside the CTA block, add: `<p>Read next: <a href="/blog/[related-slug]/">[Related Post Title]</a></p>`
+
+Process:
+1. Read `posts.json` — scan `title`, `tags`, `slug` fields for topically related entries
+2. Pick 2-3 most relevant (same broad category or shared keyword)
+3. Add anchor links inline — only where the link reads naturally; never force-fit
+4. Only link to posts already live — verify: `curl -o /dev/null -s -w "%{http_code}" https://fuseddistribution.com/blog/[slug]/` must return 200. Never link to any slug committed in the same pipeline run.
+
+---
+
 ## 10. Slug Rules
 
 Lowercase, hyphens only. Short and descriptive. No dates. Example: `how-to-set-up-google-business`.
@@ -328,8 +374,8 @@ subtext: Optional short line below the question text (cyan, 2–5 words).
 narration: Follow for more silver news.
 
 ## shared
-discussion_question: One short opinion-inviting question for caption close.
-hashtags: #Tag1 #Tag2 #Tag3
+discussion_question: One short opinion-inviting question for caption close. THIS IS THE SINGLE SOURCE OF TRUTH — the pipeline copies this value into social-copy.json. Do not create a separate "## DISCUSSION QUESTION" in reel-script.md.
+hashtags: #Tag1 #Tag2 #Tag3 #Tag4 #Tag5
 
 ## media_queries
 - segment: 0
@@ -349,7 +395,7 @@ Rules:
 - Target 80–120 lines total
 - Every stat entry requires `explanation:`, `graphic_type:`, and `graphic:` block — see REEL-SOP.md §11b for all 8 graphic types and their fields
 - Use `graphic_type: none` only when no type fits — `explanation:` is always required on every stat
-- `media_queries` replaces `pexels_queries` — add `prefer: video` (default) or `prefer: photo` per segment
+- Use `media_queries` (not the legacy `pexels_queries`) — add `prefer: video` (default) or `prefer: photo` per segment
 
 ---
 
@@ -400,13 +446,15 @@ npx wrangler deploy
 
 Verify the post is live at `https://fuseddistribution.com/blog/[slug]/` before posting to social media.
 
+Also verify `https://fuseddistribution.com/sitemap.xml` includes the new slug. If the slug is absent, the sitemap is static — log the gap and notify Nick to add sitemap generation to the build pipeline.
+
 ### Step 3 — Social media (automated via Postiz — see SOCIAL-SOP.md)
 
 Postiz reads `social-copy.json` and schedules all posts at optimal times. Nothing to do manually.
 
 Assets consumed by Postiz:
-- `video/out/[slug]/[slug]-reel-1.mp4`, `-reel-2.mp4`, `-reel-3.mp4`
-- `blog/[slug]/photo-post.svg`
+- `video/out/[slug]/[slug].mp4` (single long-form reel)
+- `blog/[slug]/photo-post.jpg` (not the SVG — social platforms reject SVG)
 - `blog/[slug]/social-copy.json`
 
 > **Postiz not yet configured:** Until Postiz is set up on the Windows PC, skip this step.
@@ -425,46 +473,43 @@ File path: `blog/[slug]/social-copy.json`
   "slug": "post-slug",
   "topic": "silver|tech",
   "blog_url": "https://fuseddistribution.com/blog/post-slug/",
-  "reels": {
-    "reel-1": {
-      "angle": "lead_stat",
-      "facebook": "2-4 sentences. No hashtags. Ends with discussion_question on its own line.",
-      "instagram": "Punchier version. Hashtags at end.",
-      "linkedin": "Professional tone. 2-3 sentences. Include blog URL.",
-      "x": "Under 280 chars including blog URL. Direct and punchy."
-    },
-    "reel-2": {
-      "angle": "concept",
-      "facebook": "...",
-      "instagram": "...",
-      "linkedin": "...",
-      "x": "..."
-    },
-    "reel-3": {
-      "angle": "cta_direct",
-      "facebook": "...",
-      "instagram": "...",
-      "linkedin": "...",
-      "x": "..."
-    }
+  "reel": {
+    "facebook": "2-4 sentences. Lead with the hook stat from the reel. Close with: 'Send this to someone who needs to hear it.' No hashtags.",
+    "instagram": "Punchy opener matching reel hook. 2-3 sentences. Close with: 'Send this to someone who needs to hear it.' 5 hashtags max at end — separated by line breaks.",
+    "linkedin": "Professional framing. Lead with the data insight. 2-3 sentences. Include blog URL. Close with share CTA adapted for professional context.",
+    "x": "Under 280 chars including blog URL. Lead stat or claim. Blog link at end."
   },
   "photo": {
-    "facebook": "3-5 sentences. Longer-form. No hashtags. Include discussion_question.",
-    "instagram": "Caption + hashtags block.",
-    "linkedin": "Professional framing. 2-3 sentences. Blog link."
+    "facebook": "3-5 sentences. Longer-form context. Close with discussion_question on its own line. No hashtags.",
+    "instagram": "2-3 sentences. 5 hashtags max at end.",
+    "linkedin": "Professional. 2-3 sentences. Blog link."
   },
-  "hashtags": "#Tag1 #Tag2 #Tag3",
-  "discussion_question": "One opinion-inviting question for caption close."
+  "hashtags": "#Tag1 #Tag2 #Tag3 #Tag4 #Tag5",
+  "discussion_question": "One opinion-inviting question for caption close.",
+  "disclaimer": "Silver and precious metals markets involve risk. This content is for informational purposes only and is not financial advice."
 }
 ```
 
-**Caption rules by platform:**
-- **Facebook:** Conversational, 2-5 sentences, no hashtags in body, discussion question at end
-- **Instagram:** Punchy opener, 2-3 sentences, hashtags block at end (8-12 tags max)
-- **LinkedIn:** Professional, lead with insight not hype, include blog link, 2-3 sentences
-- **X:** Under 280 chars total including URL, direct claim or stat, blog link at end
+**Platform rules (hard limits):**
 
-Do NOT use em dashes in any caption. Follow same writing style rules as blog posts.
+| Platform | Hashtag max | CTA | Notes |
+|----------|------------|-----|-------|
+| Instagram | **5 max** | "Send this to someone who needs to hear it." | Hashtags below fold, separated by 3 line breaks |
+| Facebook | 0 in body | "Send this to someone who needs to hear it." | Hashtags suppress organic reach on FB |
+| LinkedIn | 3-5 | Share CTA adapted to professional context | Always include blog URL |
+| X | 2 max | None — URL carries the CTA | Under 280 chars total including URL |
+
+**Share CTA rule:** Every reel caption on Facebook and Instagram must close with "Send this to someone who needs to hear it." or a direct variant ("Share this with someone who stacks silver." for silver posts). DM shares are the #1 Instagram distribution signal — outweigh likes 5:1.
+
+**Finance disclaimer rule:** If any caption mentions price, return, gain, profit, or performance, append the `disclaimer` field as the last line of that caption. Always include it in the `disclaimer` JSON field regardless. **Exception for X:** X captions are capped at 280 chars including URL — if adding the disclaimer would exceed 280 chars, omit it from the X field only.
+
+**No em dashes anywhere.** Same writing style rules as blog posts apply to all captions.
+
+**Instagram hashtag set (silver posts — rotate and test):**
+`#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge`
+
+**Instagram hashtag set (tech/local business posts):**
+`#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign`
 
 ---
 
@@ -474,6 +519,11 @@ Do NOT use em dashes in any caption. Follow same writing style rules as blog pos
 
 File path: `blog/[slug]/photo-post.svg`
 Canvas: `width="1200" height="1200" viewBox="0 0 1200 1200"`
+
+**SVG XML rules (identical to §7 — critical):**
+- NEVER use `&nbsp;` — SVG is XML, HTML entities are not defined. Use `&#160;` for non-breaking space.
+- NEVER use `&middot;`, `&bull;`, `&mdash;`, etc. Use numeric entities: `&#183;`, `&#8226;`, `&#8212;`
+- Only valid XML entities: `&amp;` `&lt;` `&gt;` `&quot;` `&apos;` — everything else must be numeric (`&#NNN;`)
 
 **Design rules:**
 - Same dark brand theme as hero SVG: `#041018` background, cyan/green accent palette
@@ -498,3 +548,36 @@ Canvas: `width="1200" height="1200" viewBox="0 0 1200 1200"`
 - Accent green: `#4dffb8`
 - Muted text: `rgba(175,198,207,0.75)`
 - Body text: `#ecf8fb`
+
+**JPEG conversion (required — social platforms don't accept SVG):**
+
+After writing `photo-post.svg`, generate `photo-post.jpg`:
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless=new --disable-gpu \
+  --screenshot=/tmp/photo-post-tmp.png \
+  --window-size=1200,1200 \
+  "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
+sips -s format jpeg /tmp/photo-post-tmp.png --out blog/[slug]/photo-post.jpg -s formatOptions 85 && \
+rm /tmp/photo-post-tmp.png
+```
+
+Postiz reads `photo-post.jpg` — not the SVG.
+
+---
+
+## 16. Content Refresh
+
+Finance and silver content goes stale. Quarterly refresh keeps YMYL ranking signals active.
+
+**Trigger:** Any post where Google Search Console shows declining impressions month-over-month, or where prices/stats in the body are more than 6 months old.
+
+**Refresh steps:**
+1. Update any price references, stats, or data points to current values
+2. Add a visible "Last updated: [Month YYYY]" line in the article meta block (below the date `<time>` element):
+   ```html
+   <span class="article-updated">Updated [Month YYYY]</span>
+   ```
+3. Update `dateModified` in the JSON-LD schema. Add or update `<meta property="article:modified_time" content="YYYY-MM-DDT00:00:00Z" />` in `<head>` — this tag is not in the base template, insert it manually after `article:published_time`. Do NOT change `article:published_time` — that is the original publish date and must stay unchanged.
+4. Commit with message: `"refresh([slug]): update stats to [Month YYYY]"`
+5. Push + deploy — Google re-crawls on `dateModified` change

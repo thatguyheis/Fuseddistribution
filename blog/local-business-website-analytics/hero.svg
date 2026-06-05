@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-c)"/>
+  <rect width="1200" height="630" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88" r="1.2" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="52" r="1.5" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="890" cy="74" r="1.2" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1060" cy="120" r="1.4" fill="#4dffb8" opacity="0.24"/>
+  <circle cx="220" cy="520" r="1.3" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="740" cy="580" r="1.5" fill="#4dffb8" opacity="0.26"/>
+  <circle cx="1100" cy="480" r="1.2" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="96" cy="310" r="1.4" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="480" cy="596" r="1.3" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="960" cy="268" r="1.1" fill="#4dffb8" opacity="0.17"/>
+
+  <!-- Left card: stat -->
+  <rect x="42" y="160" width="260" height="310" rx="16" fill="rgba(7,20,28,0.72)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="172" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="rgba(88,214,255,0.7)" text-transform="uppercase">ANALYTICS ADOPTION</text>
+  <text x="172" y="294" text-anchor="middle" font-family="Impact,sans-serif" font-size="96" fill="#58d6ff" opacity="0.95">39%</text>
+  <text x="172" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="rgba(175,198,207,0.8)">of small businesses</text>
+  <text x="172" y="343" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="rgba(175,198,207,0.8)">check analytics regularly</text>
+  <text x="172" y="368" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(175,198,207,0.45)">Clutch, 2024</text>
+  <!-- Mini bar chart visual inside left card -->
+  <rect x="72" y="400" width="180" height="6" rx="3" fill="rgba(88,214,255,0.12)"/>
+  <rect x="72" y="400" width="70" height="6" rx="3" fill="rgba(88,214,255,0.6)"/>
+  <rect x="72" y="416" width="180" height="6" rx="3" fill="rgba(88,214,255,0.12)"/>
+  <rect x="72" y="416" width="120" height="6" rx="3" fill="rgba(77,255,184,0.55)"/>
+  <rect x="72" y="432" width="180" height="6" rx="3" fill="rgba(88,214,255,0.12)"/>
+  <rect x="72" y="432" width="44" height="6" rx="3" fill="rgba(88,214,255,0.4)"/>
+
+  <!-- Center content -->
+  <text x="600" y="196" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="rgba(88,214,255,0.65)">FREE TOOLS FOR LOCAL BUSINESS</text>
+  <text x="600" y="276" text-anchor="middle" font-family="Impact,sans-serif" font-size="68" letter-spacing="2" fill="#ecf8fb">WEBSITE</text>
+  <text x="600" y="348" text-anchor="middle" font-family="Impact,sans-serif" font-size="68" letter-spacing="2" fill="#58d6ff">ANALYTICS</text>
+  <text x="600" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="rgba(175,198,207,0.85)">Track what brings customers. Fix what doesn't.</text>
+
+  <!-- Two tool badges -->
+  <rect x="456" y="420" width="130" height="38" rx="8" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.30)" stroke-width="1"/>
+  <text x="521" y="444" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#58d6ff">GA4</text>
+  <rect x="614" y="420" width="130" height="38" rx="8" fill="rgba(77,255,184,0.08)" stroke="rgba(77,255,184,0.28)" stroke-width="1"/>
+  <text x="679" y="444" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#4dffb8">SEARCH CONSOLE</text>
+
+  <!-- Bottom label -->
+  <text x="600" y="520" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" letter-spacing="1" fill="rgba(175,198,207,0.50)">BOTH FREE &#160;&#183;&#160; SETUP IN 15 MIN &#160;&#183;&#160; NO LIMITS</text>
+
+  <!-- Right card: conversion tracking -->
+  <rect x="898" y="160" width="260" height="310" rx="16" fill="rgba(7,20,28,0.72)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="1028" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="rgba(77,255,184,0.7)">METRICS THAT MATTER</text>
+  <!-- Phone icon placeholder lines -->
+  <rect x="950" y="226" width="156" height="28" rx="6" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="1028" y="246" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#ecf8fb">&#128222;&#160; Phone Clicks</text>
+  <rect x="950" y="266" width="156" height="28" rx="6" fill="rgba(77,255,184,0.07)" stroke="rgba(77,255,184,0.16)" stroke-width="1"/>
+  <text x="1028" y="286" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#ecf8fb">&#9993;&#160; Form Submits</text>
+  <rect x="950" y="306" width="156" height="28" rx="6" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="1028" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#ecf8fb">&#128205;&#160; Contact Page Views</text>
+  <rect x="950" y="346" width="156" height="28" rx="6" fill="rgba(77,255,184,0.05)" stroke="rgba(77,255,184,0.13)" stroke-width="1"/>
+  <text x="1028" y="366" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#ecf8fb">&#128269;&#160; Organic Sessions</text>
+  <text x="1028" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="rgba(77,255,184,0.75)">58% of visitors are mobile</text>
+  <text x="1028" y="438" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(175,198,207,0.45)">Statista, 2024</text>
+  <text x="1028" y="460" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="rgba(175,198,207,0.6)">Track every phone tap</text>
+
+  <!-- Brand tag -->
+  <text x="600" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="900" letter-spacing="4" fill="rgba(88,214,255,0.35)">FUSEDDISTRIBUTION.COM</text>
+</svg>

@@ -1,24 +1,24 @@
 # Reel Script: How to Turn One-Time Customers Into Repeat Buyers
 Generated: 2026-05-29
-Target length: 38 seconds
-Format: Express
+Target length: 58 seconds
+Format: Standard
 Hook type: contrarian_stat
 
 ---
 
 ## HOOK (0–5s)
 Text: 67% MORE PER VISIT
-Narration: Returning customers spend 67 percent more than new ones. And they cost five times less to reach.
+Narration: Returning customers spend 67 percent more than new ones.
 
 ---
 
 ## BODY
 
-**Stat 1** (5–18s)
+**Stat 1** (5–28s)
 Text: 5x ACQUISITION COST
-Narration: Getting a new customer costs five times more than keeping one. Every dollar spent chasing new leads would go five times further if you spent it on the customers who already paid you. Most local businesses have this completely backwards.
+Narration: And they cost five times less to reach. Getting a new customer costs five times more than keeping one. Every dollar spent chasing new leads would go five times further if you spent it on the customers who already paid you. Most local businesses have this completely backwards.
 
-**Chart** (18–33s)
+**Chart** (28–50s)
 Title: Probability of a Sale by Customer Type
 Bars:
 - Existing Customer: 65%
@@ -28,7 +28,7 @@ Narration: The probability of selling to an existing customer is 65 percent. For
 
 ---
 
-## CTA (33–40s)
+## CTA (50–58s)
 Text: Full breakdown — link in comments.
 Narration: Send this to a business owner who spends all their budget on ads and nothing on follow-up.
 

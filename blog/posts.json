@@ -1,5 +1,25 @@
 [
   {
+    "slug": "where-to-buy-silver",
+    "title": "Where to Buy Silver: Online Dealers, Coin Shops, and Private Sales Compared",
+    "date": "2026-06-05",
+    "excerpt": "Premiums range from 2% to 18% over spot depending on where you buy. A practical comparison of online dealers, local coin shops, and private sales so you pay less per ounce.",
+    "tags": ["Silver", "Buying Guide"],
+    "author": "Nick",
+    "image": "/blog/where-to-buy-silver/hero.jpg",
+    "imageAlt": "Where to buy silver comparison showing online dealers at 3-8% premium, coin shops at 8-18%, and private sales at 1-5% over spot"
+  },
+  {
+    "slug": "local-business-website-analytics",
+    "title": "How to Track Your Local Business Website With Google Analytics 4 (Free)",
+    "date": "2026-06-05",
+    "excerpt": "Only 39% of small businesses check their website analytics regularly. Here's how to set up GA4 and Search Console free in under 15 minutes and find what's actually working.",
+    "tags": ["Websites", "Analytics"],
+    "author": "Nick",
+    "image": "/blog/local-business-website-analytics/hero.jpg",
+    "imageAlt": "Google Analytics 4 dashboard for local business showing traffic sources, contact page views, and phone click conversion tracking"
+  },
+  {
     "slug": "silver-supply-deficit",
     "title": "Silver's Supply Deficit: Why Mine Production Can't Keep Up With Growing Demand",
     "date": "2026-06-04",

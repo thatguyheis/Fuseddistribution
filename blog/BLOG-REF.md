@@ -16,6 +16,8 @@
     <meta name="description" content="[SEO description, 140-160 chars]" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="YYYY-MM-DDT00:00:00Z" />
+    <!-- On content refresh only — add this tag (do NOT include on initial publish): -->
+    <!-- <meta property="article:modified_time" content="YYYY-MM-DDT00:00:00Z" /> -->
     <meta property="article:author" content="https://fuseddistribution.com/about/" />
     <meta property="og:url" content="https://fuseddistribution.com/blog/[slug]/" />
     <meta property="og:title" content="[POST TITLE]" />
@@ -36,7 +38,12 @@
       "author": {
         "@type": "Person",
         "name": "Nick",
-        "url": "https://fuseddistribution.com/about/"
+        "url": "https://fuseddistribution.com/about/",
+        "sameAs": [
+          "https://www.facebook.com/fuseddistribution",
+          "https://www.instagram.com/fuseddistribution"
+        ],
+        "knowsAbout": ["silver investing", "precious metals", "web design", "local business marketing", "inflation hedging"]
       },
       "publisher": {
         "@type": "Organization",
@@ -54,6 +61,8 @@
       }
     }
     </script>
+    <!-- FAQPage JSON-LD: DO NOT add here by default. Only add when post has a FAQ section.
+         Copy the block from Section 1b below and paste it here, filling in real Q&A content. -->
     <style>
       /* ── PASTE THE FULL CSS BLOCK FROM SECTION 5 HERE ── */
     </style>
@@ -201,6 +210,88 @@
   </body>
 </html>
 ```
+
+---
+
+## Section 1b — FAQ HTML Component
+
+Add inside `.article-body` when the post includes FAQ content (3+ questions). Place near the end of the body, before the sources block.
+
+```html
+<h2>Frequently Asked Questions</h2>
+<div class="faq-block">
+  <div class="faq-item">
+    <div class="faq-q">[Question 1]</div>
+    <div class="faq-a">[Answer 1 — 2-4 sentences, plain language]</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">[Question 2]</div>
+    <div class="faq-a">[Answer 2]</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">[Question 3]</div>
+    <div class="faq-a">[Answer 3]</div>
+  </div>
+</div>
+```
+
+CSS to add at bottom of `<style>` when using FAQ:
+
+```css
+.faq-block { display: flex; flex-direction: column; gap: 12px; margin: 32px 0; }
+.faq-item {
+  padding: 20px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(88, 214, 255, 0.12);
+  background: rgba(7, 18, 26, 0.6);
+}
+.faq-q {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.faq-a { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+```
+
+**FAQ questions must match the JSON-LD FAQPage schema verbatim.** Copy the same questions and answers to both the HTML block AND the JSON-LD block. Paste the JSON-LD into `<head>` directly before `<style>`:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "[FAQ Question 1 — exact match to .faq-q text]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer 1 — plain text only, no HTML tags]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "[FAQ Question 2]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer 2]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "[FAQ Question 3]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer 3]"
+      }
+    }
+  ]
+}
+</script>
+```
+
+Only add this block when the post genuinely has FAQ content. Never leave placeholder text like "[FAQ Question 1]" in production HTML.
 
 ---
 
