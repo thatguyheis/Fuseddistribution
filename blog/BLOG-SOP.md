@@ -35,7 +35,7 @@ echo $PEXELS_API_KEY
 - [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Paste attributions into `<figcaption>` tags
-- [ ] Write `reel-data.md` with 3 reel sections (§11)
+- [ ] Write `reel-data.md` with single long-form section (§11)
 - [ ] Write `photo-post.svg` (§15)
 - [ ] Write `social-copy.json` (§14)
 - [ ] `git add blog/posts.json blog/[slug]/` then commit
@@ -80,7 +80,7 @@ blog/
   [slug]/
     index.html
     hero.svg
-    reel-data.md        ← required (§11) — 3 reel sections
+    reel-data.md        ← required (§11) — single long-form section
     reel-script.md      ← written by REEL-SOP workflow
     photo-post.svg      ← required (§15) — 1200×1200 square
     social-copy.json    ← required (§14) — captions per platform
@@ -185,7 +185,7 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
      <figcaption>Photo by Jane Smith on Pexels</figcaption>
    </figure>
    ```
-5. Record the same queries in `reel-data.md` under `## pexels_queries` (§11)
+5. Record the same queries in `reel-data.md` under `## media_queries` (§11)
 
 ---
 
@@ -265,92 +265,76 @@ Lowercase, hyphens only. Short and descriptive. No dates. Example: `how-to-set-u
 ## 11. reel-data.md
 
 **Required.** Create this file before git commit. The reel renderer reads it — never re-reads index.html.
-Contains **3 independent reel sections** (reel-1, reel-2, reel-3), each a different hook angle from the same blog post.
+Contains **one long-form section** covering the full blog post arc (180–240s, 8–14 body segments).
+
+> **Short-form (3-reel) format** is documented in `video/REEL-SOP-SHORTFORM.md` for reference only. Do not use it unless explicitly instructed.
 
 File path: `blog/[slug]/reel-data.md`
 
 ```markdown
 # Reel Data: [slug]
 topic: silver|tech
+format: long-form
 
-## reel-1
-angle: lead_stat
-hook: Strongest number from the post. Contrarian Stat or Pain Point formula (see REEL-SOP.md §Hook Formulas). Must land without audio.
-hook_type: contrarian_stat|pain_point
+hook: Strongest number or claim from the post. Must land without audio. Use Contrarian Stat or Pain Point formula.
+hook_type: contrarian_stat|pain_point|immediate_value|contradiction
 
-### stats
+## stats
+List every significant stat from the post — each becomes one Stat segment.
 - text: 42% LABEL IN 5 WORDS MAX
+  explanation: One plain sentence — what this number means without audio
+  graphic_type: percent_fill
+  graphic:
+    value: 42
+    label: Category
+    remainder_label: Other
   narration: 2–4 sentences. Match blog wording closely.
 - text: 73% SHORT LABEL HERE
+  explanation: One plain sentence context
+  graphic_type: percent_fill
+  graphic:
+    value: 73
+    label: Category
+    remainder_label: Other
   narration: 2–3 sentences.
+[continue for all major stats — aim for 5–10 entries covering the full post]
 
-### chart
+## chart
 title: Chart heading — copy from blog chart exactly
 bars:
   - Label: XX%
   - Label: XX%
 narration: Explain the data the same way the blog does.
+[omit this section if the post has no chart]
 
-### cta
-text: Full breakdown — link in comments.
-narration: One sentence. End with save ask or share ask.
-
----
-
-## reel-2
-angle: concept
-hook: "How it works" or "why this matters" angle. Immediate Value or Contradiction formula.
-hook_type: immediate_value|contradiction
-
-### stats
-- text: [Different stat from post — not reused from reel-1]
-  narration: 2–4 sentences.
-
-### cta
-text: Full breakdown — link in comments.
-narration: One sentence. End with discussion question ask.
-
----
-
-## reel-3
-angle: cta_direct
-hook: Direct offer/action angle. Pain Point or Immediate Value formula.
-hook_type: pain_point|immediate_value
-
-### stats
-- text: [Third angle stat or takeaway from post]
-  narration: 2–4 sentences.
-
-### cta
-text: Full breakdown — link in comments.
-narration: One sentence. End with share ask.
-
----
+## question
+text: One controversial or opinion-inviting question that closes the long-form reel.
+subtext: Optional short line below the question text (cyan, 2–5 words).
+narration: Follow for more silver news.
 
 ## shared
 discussion_question: One short opinion-inviting question for caption close.
 hashtags: #Tag1 #Tag2 #Tag3
 
-## pexels_queries
-- reel: 1
-  segment: 0
-  query: "specific pexels search query"
-- reel: 2
-  segment: 0
-  query: "second specific query"
-- reel: 3
-  segment: 0
-  query: "third specific query"
+## media_queries
+- segment: 0
+  query: "hook background query"
+  prefer: video
+- segment: 2
+  query: "query for this stat segment"
+  prefer: video
+[one entry per major segment — prefer video for hook/stats, photo for chart/question]
 ```
 
 Rules:
-- Each reel must use a **different stat or angle** — no repeated numbers across reels
-- `### chart` — include in reel-1 only if post has a chart; omit from reel-2 and reel-3
-- `### stats` — 2–3 entries max per reel
-- All 3 reels target Express format (25–40s) unless content clearly needs Standard
-- `## shared` block — one discussion_question and hashtag set, shared across all 3 reels
-- pexels_queries — one entry per reel minimum, segment 0 (hook background)
-- Target 60–80 lines total
+- Cover the **full blog post arc** — every major section, not just top stats
+- Include the chart if the post has one — required
+- End with `## question` (not cta) — long-form always closes with the Question slide
+- pexels_queries — one entry per segment recommended; hook (segment 0) required
+- Target 80–120 lines total
+- Every stat entry requires `explanation:`, `graphic_type:`, and `graphic:` block — see REEL-SOP.md §11b for all 8 graphic types and their fields
+- Use `graphic_type: none` only when no type fits — `explanation:` is always required on every stat
+- `media_queries` replaces `pexels_queries` — add `prefer: video` (default) or `prefer: photo` per segment
 
 ---
 
