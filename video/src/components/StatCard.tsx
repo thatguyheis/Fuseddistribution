@@ -1,8 +1,9 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
-import { BEBAS } from '../fonts';
+import { BEBAS, POPPINS } from '../fonts';
 import { PhotoBg } from './PhotoBg';
+import { InlineGraphic } from './InlineGraphic';
 import type { StatSegment } from '../types';
 
 const CountUp: React.FC<{ target: number; suffix: string; countFrames: number }> = ({
@@ -35,6 +36,7 @@ export const StatCard: React.FC<{
   });
 
   const parsed = parseStatFromText(segment.text);
+  const hasGraphic = segment.graphic_type && segment.graphic_type !== 'none' && segment.graphic;
 
   return (
     <div style={{
@@ -44,13 +46,16 @@ export const StatCard: React.FC<{
       overflow: 'hidden', opacity: fadeIn,
     }}>
       <PhotoBg photoPath={photoPath} segmentIndex={segmentIndex} />
-      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column',
-        alignItems: 'center', gap: 16 }}>
+      <div style={{
+        position: 'relative', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', gap: 12, width: '100%',
+      }}>
         {parsed ? (
           <>
             <p style={{
               fontFamily: BEBAS,
-              fontSize: 128, color: BRAND.cyan, textTransform: 'uppercase',
+              fontSize: hasGraphic ? 108 : 128,
+              color: BRAND.cyan, textTransform: 'uppercase',
               letterSpacing: '0.02em', lineHeight: 1, margin: 0,
               textShadow: `0 0 40px ${BRAND.cyan}66`,
             }}>
@@ -59,7 +64,8 @@ export const StatCard: React.FC<{
             {parsed.rest && (
               <p style={{
                 fontFamily: BEBAS,
-                fontSize: 56, color: BRAND.white, textTransform: 'uppercase',
+                fontSize: hasGraphic ? 46 : 56,
+                color: BRAND.white, textTransform: 'uppercase',
                 letterSpacing: '0.04em', lineHeight: 1.2, margin: 0, textAlign: 'center',
                 textShadow: '0 2px 16px rgba(0,0,0,0.8)',
               }}>
@@ -70,12 +76,31 @@ export const StatCard: React.FC<{
         ) : (
           <p style={{
             fontFamily: BEBAS,
-            fontSize: 80, color: BRAND.white, textAlign: 'center',
+            fontSize: hasGraphic ? 64 : 80,
+            color: BRAND.white, textAlign: 'center',
             textTransform: 'uppercase', letterSpacing: '0.02em',
             lineHeight: 1.2, margin: 0,
           }}>
             {segment.text}
           </p>
+        )}
+
+        {segment.explanation && (
+          <p style={{
+            fontFamily: POPPINS,
+            fontSize: 18, fontWeight: 400,
+            color: `${BRAND.cyan}cc`,
+            textAlign: 'center', margin: 0, lineHeight: 1.4,
+            maxWidth: 800,
+          }}>
+            {segment.explanation}
+          </p>
+        )}
+
+        {hasGraphic && (
+          <div style={{ width: '100%', maxWidth: 860 }}>
+            <InlineGraphic type={segment.graphic_type!} data={segment.graphic!} />
+          </div>
         )}
       </div>
     </div>
