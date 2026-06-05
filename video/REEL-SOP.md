@@ -207,6 +207,10 @@ Target length: XX seconds
 Format: Long Form
 Hook type: [see types below]
 
+> **Timestamp rules (parser enforces these):**
+> - All timestamps MUST be whole integers — no decimals. `(23–38s)` ✓ · `(23–38.5s)` ✗ — decimal timestamps cause the segment to be silently dropped.
+> - The `Target length:` value must equal the last segment's end time exactly. If the last segment ends at 198s, write `Target length: 198 seconds` — not 200 or 210. Any value higher than the last endSec creates a black gap at the end of the video.
+
 ---
 
 ## HOOK (0–5s)
@@ -283,6 +287,7 @@ Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow f
 
 **Sound-off design — critical (80% of viewers watch muted)**
 - The hook Text: must communicate the whole point without audio. A viewer who watches silently must understand what the reel is about from the text on screen alone.
+- **No decimals or mid-word breaks in HOOK Text.** Numbers like `78.9%` or `1.2M` cause unexpected line breaks in the overlay renderer. Round to whole numbers (`79%`, `1M`) or spell out (`over 1 million`). This applies to all `Text:` fields but is most visible on the HOOK where text is large.
 - Every Stat Text: must be self-explanatory without narration. "42% MORE REVENUE" works. "42% IMPROVEMENT" does not.
 - Every segment must have a Text: value — never leave a segment with only narration and no on-screen text.
 
@@ -621,6 +626,8 @@ Examples:
 **If any segment fails:** extend its window and shift all subsequent timestamps. Never shorten the narration. Do not proceed to render until all segments pass.
 
 HOOK is highest risk — it often has 2 sentences crammed into 5s. Keep HOOK narration to 1 short sentence (≤12 words) or extend the window to 10s+.
+
+**Final check — no black gap:** After all timing passes, confirm `Target length:` equals the last segment's `endSec` exactly. Black gap = `Target length > last endSec`. Fix by updating `Target length:` to match.
 
 ### Step 4 — Render
 

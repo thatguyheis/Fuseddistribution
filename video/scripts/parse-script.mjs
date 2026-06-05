@@ -132,7 +132,11 @@ export function parseReelScript(md, slug) {
     segments.push(seg);
   }
 
-  return { slug, title, totalDuration, segments };
+  // Derive totalDuration from last segment so composition ends exactly when content ends.
+  // Never use the "Target length:" header value — it may exceed actual segment end, causing a black gap.
+  const lastSeg = segments[segments.length - 1];
+  const derivedDuration = lastSeg ? lastSeg.endSec : totalDuration;
+  return { slug, title, totalDuration: derivedDuration, segments };
 }
 
 // CLI

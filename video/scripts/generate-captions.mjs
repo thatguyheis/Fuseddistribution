@@ -21,7 +21,7 @@ function runWhisper(wavPath) {
   if (!existsSync(WHISPER_MAIN) || !existsSync(WHISPER_MODEL)) return null;
   try {
     const out = execSync(
-      `"${WHISPER_MAIN}" -ml 1 -m "${WHISPER_MODEL}" -f "${wavPath}"`,
+      `"${WHISPER_MAIN}" -ml 40 -m "${WHISPER_MODEL}" -f "${wavPath}"`,
       { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }
     );
     const lines = out.match(/\[[0-9:.]+\s-->\s[0-9:.]+\]\s+\S.*/g);
