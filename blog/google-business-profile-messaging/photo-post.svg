@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="65%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="520" r="340" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="520" r="220" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="100" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="68" r="1" fill="#4dffb8" opacity="0.28"/>
+  <circle cx="900" cy="88" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1080" cy="250" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="88" cy="600" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1100" cy="700" r="1" fill="#4dffb8" opacity="0.16"/>
+  <circle cx="200" cy="900" r="1.5" fill="#58d6ff" opacity="0.14"/>
+  <circle cx="1050" cy="950" r="1" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="450" cy="1100" r="1.5" fill="#4dffb8" opacity="0.15"/>
+  <circle cx="780" cy="1080" r="1" fill="#58d6ff" opacity="0.17"/>
+
+  <!-- TOP ZONE: Eyebrow + brand -->
+  <rect x="300" y="60" width="600" height="38" rx="19" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="85" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="#58d6ff">GOOGLE BUSINESS PROFILE &#183; LOCAL BUSINESS</text>
+
+  <text x="600" y="145" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="28" letter-spacing="6" fill="rgba(88,214,255,0.6)">FUSED</text>
+
+  <!-- CENTER ZONE: Big stat -->
+  <text x="600" y="370" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="200" letter-spacing="2" fill="#58d6ff">45%</text>
+
+  <text x="600" y="430" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="32" letter-spacing="2" fill="#ecf8fb">CHAT RESPONSE RATE</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="20" fill="rgba(175,198,207,0.7)">vs. 6% for email</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="510" x2="1000" y2="510" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- Title block -->
+  <text x="600" y="580" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="52" letter-spacing="1.5" fill="#ecf8fb">GBP MESSAGING:</text>
+  <text x="600" y="638" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="52" letter-spacing="1.5" fill="#ecf8fb">TURN SEARCHES</text>
+  <text x="600" y="696" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="52" letter-spacing="1.5" fill="#58d6ff">INTO BOOKINGS</text>
+
+  <!-- Excerpt line -->
+  <text x="600" y="770" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">Free to enable. 3 minutes to set up.</text>
+  <text x="600" y="800" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.75)">Converts Google visitors into booked customers.</text>
+
+  <!-- Three mini stats -->
+  <rect x="80" y="850" width="310" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="235" y="887" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="34" fill="#58d6ff">3 MIN</text>
+  <text x="235" y="913" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.7)">to enable</text>
+
+  <rect x="445" y="850" width="310" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="887" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="34" fill="#58d6ff">24 HR</text>
+  <text x="600" y="913" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.7)">response window</text>
+
+  <rect x="810" y="850" width="310" height="90" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="965" y="887" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="34" fill="#4dffb8">FREE</text>
+  <text x="965" y="913" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.7)">no cost, no app</text>
+
+  <!-- BOTTOM ZONE: CTA -->
+  <rect x="200" y="990" width="800" height="60" rx="14" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.25)" stroke-width="1.5"/>
+  <text x="600" y="1027" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="18" font-weight="700" fill="#58d6ff" letter-spacing="1">Full breakdown at fuseddistribution.com</text>
+
+  <text x="600" y="1100" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="rgba(175,198,207,0.45)">fuseddistribution.com/blog/google-business-profile-messaging/</text>
+</svg>
