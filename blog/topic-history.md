@@ -32,6 +32,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-02 | online-review-management-local-business | Local Business | How to respond to negative online reviews using a 5-step formula that protects reputation and converts future customers |
 | 2026-06-03 | instagram-stories-local-business | Social Media | How Instagram Stories features (polls, questions, countdowns, link stickers) convert local followers into booked customers |
 | 2026-06-05 | local-business-website-analytics | Websites | How to set up GA4 and Google Search Console free, which 4 metrics matter for local businesses, and how to track phone clicks as conversions |
+| 2026-06-06 | google-business-profile-messaging | Google | How to enable GBP messaging, write a welcome message, and convert Google chat inquiries into booked appointments |
+| 2026-06-07 | online-booking-local-business | Local Business | How local service businesses set up online booking to capture after-hours leads and reduce no-shows by 29% |
 | 2026-06-04 | text-message-marketing-local-business | Marketing | SMS open rates (98% vs 22% email), TCPA opt-in rules, 3-message follow-up sequence, and tools under $30/month for local businesses |
 
 ---
@@ -55,4 +57,6 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-02 | silver-portfolio-allocation | Investing | How to determine the right silver allocation percentage using risk tolerance, the gold-silver ratio signal, and a simple position-sizing formula |
 | 2026-06-03 | silver-insurance-storage | Storage | What standard HO-3 homeowner's insurance covers for silver and precious metals, how the $1,500 theft sublimit creates a gap, and how a scheduled floater closes it |
 | 2026-06-05 | where-to-buy-silver | Buying Guide | Comparing APMEX/JM Bullion/SD Bullion vs local coin shops vs private sales (eBay, Reddit) on premiums, risk, and payment method savings |
+| 2026-06-06 | hunt-brothers-silver-squeeze | History | The Hunt Brothers' 1980 silver squeeze: how two brothers cornered 100 million oz of silver, drove prices to $49.45, and Silver Thursday |
+| 2026-06-07 | silver-etf-vs-physical | Investing | Silver ETF (SLV, PSLV) vs physical silver comparison on counterparty risk, 28% IRS collectibles tax, 0.50% annual fees, and 10-year cost breakeven |
 | 2026-06-04 | silver-supply-deficit | Market | Silver's 211 million ounce annual deficit: mine production vs. 1.2 billion ounce demand, solar/EV/industrial demand growth, and COMEX inventory drawdown |

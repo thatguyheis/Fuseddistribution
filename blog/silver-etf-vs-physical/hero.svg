@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-c)"/>
+  <rect width="1200" height="630" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="100" cy="120" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="290" cy="500" r="1" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="480" cy="55" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="760" cy="570" r="1" fill="#4dffb8" fill-opacity="0.25"/>
+  <circle cx="950" cy="85" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="1090" cy="410" r="1" fill="#4dffb8" fill-opacity="0.22"/>
+  <circle cx="220" cy="310" r="1.2" fill="#58d6ff" fill-opacity="0.15"/>
+  <circle cx="1010" cy="260" r="1" fill="#58d6ff" fill-opacity="0.20"/>
+
+  <!-- Brand mark -->
+  <text x="60" y="64" font-family="Impact, Arial Narrow, sans-serif" font-size="22" letter-spacing="0.14em" fill="#58d6ff" opacity="0.85">FUSED</text>
+  <text x="60" y="84" font-family="Trebuchet MS, sans-serif" font-size="11" letter-spacing="0.18em" fill="rgba(175,198,207,0.55)">DISTRIBUTION</text>
+
+  <!-- Left card: SLV -->
+  <rect x="42" y="170" width="276" height="160" rx="16" fill="rgba(7,20,28,0.75)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="180" y="215" font-family="Impact, Arial Narrow, sans-serif" font-size="30" letter-spacing="0.06em" fill="#58d6ff" text-anchor="middle">SLV</text>
+  <text x="180" y="240" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle">iShares Silver Trust</text>
+  <line x1="60" y1="252" x2="300" y2="252" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="70" y="273" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Annual fee:</text>
+  <text x="295" y="273" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="#58d6ff" text-anchor="end">0.50%</text>
+  <text x="70" y="293" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Redemption:</text>
+  <text x="295" y="293" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="end">Institutional only</text>
+  <text x="70" y="313" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Custodian:</text>
+  <text x="295" y="313" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="end">JP Morgan</text>
+
+  <!-- Left card 2: PSLV -->
+  <rect x="42" y="350" width="276" height="160" rx="16" fill="rgba(7,20,28,0.75)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="180" y="395" font-family="Impact, Arial Narrow, sans-serif" font-size="30" letter-spacing="0.06em" fill="#4dffb8" text-anchor="middle">PSLV</text>
+  <text x="180" y="420" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle">Sprott Physical Silver</text>
+  <line x1="60" y1="432" x2="300" y2="432" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="70" y="453" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Annual fee:</text>
+  <text x="295" y="453" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="#4dffb8" text-anchor="end">0.35%</text>
+  <text x="70" y="473" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Redemption:</text>
+  <text x="295" y="473" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="end">10,000+ oz min</text>
+  <text x="70" y="493" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Custodian:</text>
+  <text x="295" y="493" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="end">Royal Canadian Mint</text>
+
+  <!-- Center: Main headline -->
+  <text x="600" y="215" font-family="Impact, Arial Narrow, sans-serif" font-size="52" letter-spacing="0.04em" fill="#ecf8fb" text-anchor="middle">SILVER ETF</text>
+  <text x="600" y="268" font-family="Impact, Arial Narrow, sans-serif" font-size="34" letter-spacing="0.06em" fill="rgba(175,198,207,0.7)" text-anchor="middle">VS</text>
+  <text x="600" y="326" font-family="Impact, Arial Narrow, sans-serif" font-size="52" letter-spacing="0.04em" fill="#58d6ff" text-anchor="middle">PHYSICAL SILVER</text>
+
+  <!-- Center: Key fact -->
+  <rect x="400" y="348" width="400" height="60" rx="12" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="600" y="374" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.8)" text-anchor="middle">Both taxed at 28% max (IRS collectibles rule)</text>
+  <text x="600" y="396" font-family="Trebuchet MS, sans-serif" font-size="13" fill="rgba(175,198,207,0.8)" text-anchor="middle">in taxable accounts &#183; ETF fees compound annually</text>
+
+  <!-- Right card: Physical silver -->
+  <rect x="882" y="170" width="276" height="160" rx="16" fill="rgba(7,20,28,0.75)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="1020" y="215" font-family="Impact, Arial Narrow, sans-serif" font-size="26" letter-spacing="0.04em" fill="#58d6ff" text-anchor="middle">PHYSICAL</text>
+  <text x="1020" y="240" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle">Coins, rounds, bars</text>
+  <line x1="900" y1="252" x2="1140" y2="252" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="910" y="273" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Annual fee:</text>
+  <text x="1135" y="273" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="#4dffb8" text-anchor="end">$0</text>
+  <text x="910" y="293" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Premium over spot:</text>
+  <text x="1135" y="293" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="end">3&#8211;15%</text>
+  <text x="910" y="313" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Counterparty:</text>
+  <text x="1135" y="313" font-family="Impact, Arial Narrow, sans-serif" font-size="13" fill="#4dffb8" text-anchor="end">NONE</text>
+
+  <!-- Right card 2: Tax -->
+  <rect x="882" y="350" width="276" height="160" rx="16" fill="rgba(7,20,28,0.75)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="1020" y="395" font-family="Impact, Arial Narrow, sans-serif" font-size="26" letter-spacing="0.04em" fill="#58d6ff" text-anchor="middle">TAX RATE</text>
+  <text x="1020" y="420" font-family="Trebuchet MS, sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle">Long-term gains (IRS)</text>
+  <line x1="900" y1="432" x2="1140" y2="432" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
+  <text x="910" y="455" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Stock ETF max:</text>
+  <text x="1135" y="455" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="rgba(175,198,207,0.75)" text-anchor="end">20%</text>
+  <text x="910" y="477" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">SLV / PSLV max:</text>
+  <text x="1135" y="477" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="#58d6ff" text-anchor="end">28%</text>
+  <text x="910" y="499" font-family="Trebuchet MS, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Physical silver max:</text>
+  <text x="1135" y="499" font-family="Impact, Arial Narrow, sans-serif" font-size="14" fill="#58d6ff" text-anchor="end">28%</text>
+
+  <!-- Bottom URL bar -->
+  <rect x="360" y="530" width="480" height="46" rx="12" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="559" font-family="Trebuchet MS, sans-serif" font-size="14" letter-spacing="0.06em" fill="rgba(175,198,207,0.7)" text-anchor="middle">fuseddistribution.com/blog/silver-etf-vs-physical</text>
+</svg>
