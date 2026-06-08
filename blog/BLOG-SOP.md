@@ -24,35 +24,44 @@ echo $PEXELS_API_KEY
 
 ## 0. Quick Checklist
 
+**Skill order matters — run in this sequence:**
+
 - [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
-- [ ] **Use `seo-plan` skill** to identify target keyword, search intent, and top-3 competitor angles — run FIRST before anything else (see §7a). Slug derives from keyword.
-- [ ] Add entry to `posts.json` (top of array) — slug comes from keyword research
-- [ ] Create `blog/[slug]/` folder
-- [ ] **Use `blog-write` skill** to draft post body — pass the target keyword from seo-plan; enforces E-E-A-T, sourced stats, 5-gate delivery contract, and all §9 writing rules automatically
-- [ ] **Use `blog-seo-check` skill** after draft — validates on-page SEO signals before building HTML
-- [ ] **Use `seo-local` skill** if post covers local business, Google, or map pack topics
-- [ ] Write `index.html` — HTML from BLOG-REF.md "Section 1", CSS from BLOG-REF.md "Section 2", fill all [SLOTS]
-- [ ] Write `hero.svg` — design rules in §7
-- [ ] Generate `hero.jpg` from `hero.svg` (required for OG/social preview AND reel HOOK thumbnail — social platforms don't support SVG, and the reel pipeline copies this as segment-0):
+- [ ] **`seo-plan` skill** — target keyword, search intent, competitor gap. Slug comes from keyword. Run FIRST.
+- [ ] **`blog-write` skill** — pass "Target keyword: [kw]. Intent: [intent]. Competitor gap: [gap]." Enforces E-E-A-T, sourced stats, 5-gate delivery, all §9 writing rules.
+- [ ] **`blog-seo-check` skill** — on-page signals: title, meta, H1, H2s, canonical, OG tags.
+- [ ] **`seo-schema` skill** — validate/generate FAQPage + Article JSON-LD schema.
+- [ ] **`seo-local` skill** — only for local business, Google, or map pack posts.
+- [ ] Create `blog/[slug]/` folder, write `index.html` from BLOG-REF.md template
+- [ ] Write `hero.svg` (§7 — numeric XML entities only, no HTML entities)
+- [ ] Generate `hero.jpg`:
   ```bash
-  # Run from repo root — verify first: pwd should end in "New project"
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-    --headless=new --disable-gpu \
-    --screenshot=/tmp/hero-tmp.png \
-    --window-size=1200,630 \
+    --headless=new --disable-gpu --screenshot=/tmp/hero-tmp.png --window-size=1200,630 \
     "file://$(pwd)/blog/[slug]/hero.svg" 2>/dev/null && \
   sips -s format jpeg /tmp/hero-tmp.png --out blog/[slug]/hero.jpg -s formatOptions 85 && \
   rm /tmp/hero-tmp.png
-  # Verify: ls -lh blog/[slug]/hero.jpg — must exist and be > 50 KB
+  # Verify: ls -lh blog/[slug]/hero.jpg — must be > 50 KB
   ```
-- [ ] Body: min 1 custom graphic + min 1 Pexels photo, max 5 total (§8)
 - [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
-- [ ] Paste attributions into `<figcaption>` tags
-- [ ] Write `reel-data.md` with single long-form section (§11)
-- [ ] Write `photo-post.svg` (§15)
-- [ ] Generate `photo-post.jpg` from `photo-post.svg` — same Chrome headless step as hero.jpg but `--window-size=1200,1200` (§15)
-- [ ] Add FAQ block (3+ Q&As) near end of article body + FAQPage JSON-LD in `<head>` (§1b in BLOG-REF.md) — only if post has genuine FAQ content
-- [ ] Add internal links to 2-3 related posts from `posts.json` (see §9 Internal Linking)
+- [ ] Write `reel-data.md` (§11) — all stats, chart if present, question, media_queries
+- [ ] Write `reel-script.md` (REEL-SOP §3) — Long Form, 8-14 segments, QUESTION close, timing validated
+- [ ] Write `photo-post.svg` (§15 — 1200×1200 canvas)
+- [ ] Generate `photo-post.jpg`:
+  ```bash
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --headless=new --disable-gpu --screenshot=/tmp/photo-post-tmp.png --window-size=1200,1200 \
+    "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
+  sips -s format jpeg /tmp/photo-post-tmp.png --out blog/[slug]/photo-post.jpg -s formatOptions 85 && \
+  rm /tmp/photo-post-tmp.png
+  ```
+- [ ] Write `social-copy.json` (§14) — apply §9 writing rules to every caption field
+- [ ] Add entry to `posts.json` top of array — `"image"` must use `.jpg` not `.svg`
+- [ ] Add internal links to 2-3 related posts (§9 Internal Linking)
+- [ ] Append to `blog/topic-history.md`
+- [ ] Validate reel-script.md (§3.4 checks) + social-copy.json (no em dashes)
+- [ ] Run `node blog/scripts/generate-sitemap.mjs`
+- [ ] `git add blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
 - [ ] Write `social-copy.json` (§14)
 - [ ] `git add blog/posts.json blog/[slug]/` then commit
 
