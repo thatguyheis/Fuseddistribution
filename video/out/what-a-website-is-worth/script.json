@@ -1,0 +1,75 @@
+{
+  "slug": "what-a-website-is-worth",
+  "title": "97% of People Search Online Before Choosing a Local Business",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "97% of people search online before choosing a local business. If your site is slow or incomplete, that traffic goes to whoever isn't.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "76% Visit Within 24 Hours of a Local Search",
+      "narration": "76 percent of people who find a local business on their phone visit within 24 hours. 28 percent make a purchase from that search. The window between someone finding you online and walking through your door is less than a day."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "90% of Visitors Leave a 5-Second Page",
+      "narration": "When a page takes five seconds to load, 90 percent of visitors leave before seeing anything. At one second, only 9 percent leave. That's not a technical problem — it's a revenue leak hiding in plain sight."
+    },
+    {
+      "type": "overlay",
+      "startSec": 23,
+      "endSec": 33,
+      "text": "4.5 hrs/week Saved With Online Booking",
+      "narration": "The average service business saves 4.5 hours per week by switching to online booking alone. Stacked with automated follow-up emails, digital intake forms, and online payments, that compounds to 10 to 15 hours per week — 13 to 20 thousand dollars annually in labor costs."
+    },
+    {
+      "type": "chart",
+      "startSec": 33,
+      "endSec": 46,
+      "title": "How Customers Research Before Choosing a Local Business",
+      "bars": [
+        {
+          "label": "Online Search",
+          "value": 97
+        },
+        {
+          "label": "Word of Mouth",
+          "value": 55
+        },
+        {
+          "label": "Review Sites",
+          "value": 52
+        },
+        {
+          "label": "Social Media",
+          "value": 44
+        },
+        {
+          "label": "Directories",
+          "value": 21
+        },
+        {
+          "label": "Print / Other",
+          "value": 14
+        }
+      ],
+      "narration": "Online search leads by a massive margin — 97 percent. Word of mouth and social media trail at 55 and 44 percent — and both of those eventually send people to a Google search or directly to your website. If that destination is a weak page, all the goodwill from referrals evaporates."
+    },
+    {
+      "type": "cta",
+      "startSec": 46,
+      "endSec": 52,
+      "text": "Full breakdown — link in comments.",
+      "narration": "See the full breakdown on what a good website is actually worth in dollars — link in comments."
+    }
+  ]
+}

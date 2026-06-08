@@ -1,0 +1,67 @@
+{
+  "slug": "facebook-growth-and-automation",
+  "title": "Facebook Has 3 Billion Users — And Most Local Business Pages Get Almost None of Them",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Facebook has 3 billion users — and most local business pages get almost none of them.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "3B+ Monthly Active Users",
+      "narration": "Facebook still has over 3 billion monthly active users. It remains the most-used social platform for local business discovery. The opportunity is real — the problem is most pages operate without a system."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "6x More Reach — Daily vs Weekly Posting",
+      "narration": "Pages that post daily get six times more organic reach per post than pages that post weekly. The algorithm rewards consistency, not occasional great content."
+    },
+    {
+      "type": "overlay",
+      "startSec": 23,
+      "endSec": 33,
+      "text": "~12% Lead Ad Conversion Rate",
+      "narration": "Facebook Lead Ads convert at around 12 percent on average, compared to just 2.4 percent for a standard landing page. The form is built into the ad — no separate website needed."
+    },
+    {
+      "type": "chart",
+      "startSec": 33,
+      "endSec": 46,
+      "title": "Relative Organic Reach by Posting Frequency",
+      "bars": [
+        {
+          "label": "Daily",
+          "value": 100
+        },
+        {
+          "label": "3-4x / week",
+          "value": 60
+        },
+        {
+          "label": "1-2x / week",
+          "value": 35
+        },
+        {
+          "label": "< Weekly",
+          "value": 15
+        }
+      ],
+      "narration": "Pages posting daily index at 100 percent reach. Drop to three or four times a week and you're at 60. Post less than weekly and you're down to 15. The algorithm decides based on your consistency, not your content quality alone."
+    },
+    {
+      "type": "cta",
+      "startSec": 46,
+      "endSec": 52,
+      "text": "Full breakdown — link in comments.",
+      "narration": "See exactly how to set up the scheduling system and automation — link in comments."
+    }
+  ]
+}

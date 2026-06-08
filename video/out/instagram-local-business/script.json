@@ -1,0 +1,60 @@
+{
+  "slug": "instagram-local-business",
+  "title": "How to Use Instagram to Get Local Customers",
+  "totalDuration": 50,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "90% of Instagram users follow at least one business. Is yours showing up?",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "2 Billion Monthly Active Users",
+      "narration": "Instagram has over 2 billion people using it every month. Nine out of ten of them follow at least one business. For a local shop or restaurant, that is your neighborhood on a single app waiting to find you."
+    },
+    {
+      "type": "chart",
+      "startSec": 13,
+      "endSec": 26,
+      "title": "Instagram Content Reach by Format",
+      "bars": [
+        {
+          "label": "Reels",
+          "value": 38
+        },
+        {
+          "label": "Carousels",
+          "value": 28
+        },
+        {
+          "label": "Stories",
+          "value": 21
+        },
+        {
+          "label": "Static Posts",
+          "value": 13
+        }
+      ],
+      "narration": "Reels reach the most people, including people who have never heard of your business. Instagram pushes Reels to non-followers because it competes with TikTok. That is free local exposure for your business with every video you post."
+    },
+    {
+      "type": "overlay",
+      "startSec": 26,
+      "endSec": 38,
+      "text": "4x More Reach with Daily Posts",
+      "narration": "Accounts that post every day reach 4 times more people than those posting once a week. You do not need more followers. Post Reels of your work, Stories behind the scenes, and tag your location on every single post."
+    },
+    {
+      "type": "cta",
+      "startSec": 38,
+      "endSec": 50,
+      "text": "Full guide — link in comments.",
+      "narration": "See the full breakdown on setting up your profile, picking the right content types, and turning Instagram followers into actual paying customers."
+    }
+  ]
+}

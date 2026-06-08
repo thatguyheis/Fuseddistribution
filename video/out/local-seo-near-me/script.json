@@ -1,0 +1,49 @@
+{
+  "slug": "local-seo-near-me",
+  "title": "How Local SEO Gets Your Business Into Google's Top 3 Results",
+  "totalDuration": 43,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 5,
+      "text": "75% OF LOCAL SEARCHERS",
+      "narration": "75% of people searching locally click one of Google's top 3 results. If you're not in those 3 spots, most searchers never see you."
+    },
+    {
+      "type": "stat",
+      "startSec": 5,
+      "endSec": 20,
+      "text": "46% LOCAL SEARCH INTENT",
+      "narration": "Nearly half of all Google searches have local intent. Someone typing \"electrician near me\" is ready to contact a business. They are not browsing. They want to act right now."
+    },
+    {
+      "type": "chart",
+      "startSec": 20,
+      "endSec": 35,
+      "title": "Where Clicks Go in a Local Search",
+      "bars": [
+        {
+          "label": "Map Pack",
+          "value": 75
+        },
+        {
+          "label": "Organic Results",
+          "value": 19
+        },
+        {
+          "label": "Paid Ads",
+          "value": 6
+        }
+      ],
+      "narration": "Three listings sit at the top of local results and capture 75% of clicks. Organic results and paid ads split the remaining 25%. If your business is not in the Map Pack, most searchers will never find you."
+    },
+    {
+      "type": "cta",
+      "startSec": 35,
+      "endSec": 43,
+      "text": "Full breakdown — link in comments.",
+      "narration": "Send this to a local business owner who doesn't know about the Map Pack."
+    }
+  ]
+}

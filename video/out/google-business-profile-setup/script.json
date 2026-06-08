@@ -1,0 +1,75 @@
+{
+  "slug": "google-business-profile-setup",
+  "title": "Most Local Businesses Are Invisible on Google — Nobody Set Up the Listing",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Most local businesses are invisible on Google right now — not because of anything they did wrong. Nobody set up the listing.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "97% of Consumers Search Online for Local Businesses",
+      "narration": "97 percent of consumers use the internet to find local businesses. Your Google Business Profile is free, takes 20 minutes to set up, and it's the fastest way to start showing up when someone nearby searches for what you do."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "86% Check Google Maps Before Visiting",
+      "narration": "86 percent of people look up a business location on Google Maps before visiting in person. That map card showing your hours, phone number, and reviews appears before your website — before your social pages — and before paid ads."
+    },
+    {
+      "type": "overlay",
+      "startSec": 23,
+      "endSec": 33,
+      "text": "42% More Direction Requests With Photos",
+      "narration": "Profiles that include photos get 42 percent more direction requests and 35 percent more website clicks than profiles without. Filling out every field completely isn't optional — it's the difference between showing up and staying invisible."
+    },
+    {
+      "type": "chart",
+      "startSec": 33,
+      "endSec": 46,
+      "title": "What Customers Check on a Local Business Listing Before Contacting",
+      "bars": [
+        {
+          "label": "Business Hours",
+          "value": 80
+        },
+        {
+          "label": "Phone Number",
+          "value": 74
+        },
+        {
+          "label": "Address / Directions",
+          "value": 72
+        },
+        {
+          "label": "Customer Reviews",
+          "value": 66
+        },
+        {
+          "label": "Photos of Business",
+          "value": 60
+        },
+        {
+          "label": "Website Link",
+          "value": 54
+        }
+      ],
+      "narration": "Before someone calls or walks in, they check your profile. Business hours, phone number, and address are the top three — 80, 74, and 72 percent respectively. Missing any of them doesn't make customers curious. It sends them to a competitor who has the information."
+    },
+    {
+      "type": "cta",
+      "startSec": 46,
+      "endSec": 52,
+      "text": "Full breakdown — link in comments.",
+      "narration": "See the full step-by-step guide to setting up and completing your Google Business Profile — link in comments."
+    }
+  ]
+}

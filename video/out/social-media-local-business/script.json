@@ -1,0 +1,35 @@
+{
+  "slug": "social-media-local-business",
+  "title": "Social Media for Local Business — Reel 3",
+  "totalDuration": 51,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 9,
+      "text": "$8.17 PER $1 SPENT",
+      "narration": "Facebook ads return $8.17 for every dollar spent for small businesses on average."
+    },
+    {
+      "type": "stat",
+      "startSec": 9,
+      "endSec": 31,
+      "text": "LOCAL ADS WIN",
+      "narration": "That number comes from 2026 small business ad data across real accounts. Instagram returns $5.78 per dollar. Both beat almost every other paid channel for local reach. And running ads from your local business page outperforms national brands using radius targeting in your area."
+    },
+    {
+      "type": "stat",
+      "startSec": 31,
+      "endSec": 43,
+      "text": "$5 PER DAY WORKS",
+      "narration": "Start with $5 to $10 per day. One ad. Five to ten mile radius. Two weeks before you change anything."
+    },
+    {
+      "type": "cta",
+      "startSec": 43,
+      "endSec": 51,
+      "text": "Full breakdown — link in comments.",
+      "narration": "Send this to a business owner who keeps saying social media doesn't work."
+    }
+  ]
+}

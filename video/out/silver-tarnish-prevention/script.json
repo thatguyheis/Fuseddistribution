@@ -1,0 +1,142 @@
+{
+  "slug": "silver-tarnish-prevention",
+  "title": "How to Prevent Silver Tarnish in Long-Term Storage",
+  "totalDuration": 211,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 7,
+      "text": "RUBBER BANDS RUIN SILVER FAST",
+      "narration": "Rubber bands cause tarnish on silver coins within hours of contact."
+    },
+    {
+      "type": "stat",
+      "startSec": 7,
+      "endSec": 29,
+      "text": "RUBBER RUINS SILVER FAST",
+      "narration": "Natural rubber contains sulfur as a vulcanizing agent. Direct contact with rubber causes fast, deep tarnish on silver, sometimes within hours. Yet most new collectors wrap their coins with rubber bands or store them in rubber-lined cases, and wonder why their silver keeps turning black.",
+      "explanation": "Natural rubber contains sulfur, causing rapid deep tarnish directly on silver surfaces",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 29,
+      "endSec": 51,
+      "text": "KEEP HUMIDITY BELOW 50 PERCENT",
+      "narration": "Relative humidity below 50 percent is the target for silver storage, per the American Numismatic Association's guidelines. Above 60 percent, tarnish rates accelerate sharply. The chemical reaction that forms silver sulfide needs both hydrogen sulfide gas and moisture. Eliminate the moisture and you cut the reaction rate dramatically.",
+      "explanation": "Tarnish rate accelerates sharply above 50 percent relative humidity",
+      "graphic_type": "gauge",
+      "graphic": {
+        "type": "gauge",
+        "value": 50,
+        "min": 0,
+        "max": 100,
+        "low_label": "Safe Zone",
+        "high_label": "Danger Zone"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 51,
+      "endSec": 73,
+      "text": "5 MATERIALS TO NEVER USE",
+      "narration": "There are five storage materials that actively accelerate silver tarnish. Rubber bands emit sulfur. Newspaper contains sulfur compounds from ink. Standard cardboard off-gasses in humid environments. Wood releases acetic acid. PVC coin flips deposit green residue over time. All five are commonly used and none should touch your silver.",
+      "explanation": "Five common storage materials all off-gas sulfur compounds that accelerate silver tarnish",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 73,
+      "endSec": 93,
+      "text": "6-12 MONTHS PER STRIP",
+      "narration": "3M anti-tarnish strips absorb sulfur dioxide and hydrogen sulfide from enclosed air before those gases reach the silver surface. Each strip lasts 6 to 12 months in a sealed container. Replace them when they discolor. A saturated strip stops working entirely.",
+      "explanation": "3M anti-tarnish strips absorb hydrogen sulfide for 6 to 12 months in sealed containers",
+      "graphic_type": "timeline",
+      "graphic": {
+        "type": "timeline",
+        "min": 6,
+        "max": 12,
+        "unit": "months",
+        "label": "Strip Lifespan"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 93,
+      "endSec": 115,
+      "text": ".999 SILVER TARNISHES SLOWER",
+      "narration": "Fine silver at .999 purity tarnishes more slowly than sterling at .925 because sterling's copper content provides additional reaction sites for tarnish. But .999 fine silver, including American Silver Eagles and Canadian Maples, will still tarnish without protection. Higher purity gives you more time. It doesn't stop the reaction.",
+      "explanation": "Fine silver has less copper than sterling, giving fewer reaction sites for silver sulfide formation",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 99.9,
+        "label": "Fine Silver",
+        "remainder_label": "Alloy Content"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 115,
+      "endSec": 135,
+      "text": "VCI PROTECTION 12-24 MONTHS",
+      "narration": "VCI stands for Volatile Corrosion Inhibitor. These products release a vapor that deposits a protective layer on metal surfaces, blocking tarnish reactions. According to Cortec Corporation's technical data, silver-specific VCI emitters maintain protection in enclosed spaces for 12 to 24 months before replacement.",
+      "explanation": "Volatile Corrosion Inhibitor emitters protect silver surfaces for up to 24 months when sealed",
+      "graphic_type": "timeline",
+      "graphic": {
+        "type": "timeline",
+        "min": 12,
+        "max": 24,
+        "unit": "months",
+        "label": "VCI Protection"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 135,
+      "endSec": 156,
+      "title": "Relative Tarnish Rate by Storage Condition (Lower Is Better)",
+      "bars": [],
+      "narration": "Rubber contact produces the fastest tarnish rate of any common storage approach. An airtight capsule alone cuts that rate by 90 percent. Add an anti-tarnish strip inside and you're down to 5 percent of the worst case. That's a 20-to-1 difference, and it costs about $1.50 per coin."
+    },
+    {
+      "type": "stat",
+      "startSec": 156,
+      "endSec": 177,
+      "text": "SILICA GEL HOLDS HUMIDITY",
+      "narration": "A color-indicating silica gel canister rated for your container's volume holds humidity below 50 percent for 6 to 12 months. When it turns pink, bake it at 250 degrees for two hours to regenerate. One canister, an airtight container, and anti-tarnish paper costs under $20 total.",
+      "explanation": "Color-indicating silica gel keeps sealed containers below 50 percent RH for 6 to 12 months",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 177,
+      "endSec": 199,
+      "text": "CHECK HUMIDITY INSIDE YOUR SAFE",
+      "narration": "If you store silver in a home safe, check the humidity inside the safe independently. Many fire-rated safes trap moisture inside their insulation layer, creating higher humidity inside even when the room humidity is controlled. A small digital hygrometer placed inside confirms whether your setup is actually working.",
+      "explanation": "Fire-rated safes trap moisture in insulation, creating higher humidity inside than the surrounding room",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 199,
+      "endSec": 211,
+      "text": "ANTI-TARNISH STRIPS OR JUST CAPSULES?",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP YOUR SETUP BELOW"
+    }
+  ]
+}

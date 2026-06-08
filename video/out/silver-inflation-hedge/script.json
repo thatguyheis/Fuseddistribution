@@ -1,0 +1,56 @@
+{
+  "slug": "silver-inflation-hedge",
+  "title": "Silver as an Inflation Hedge: What the Data Actually Shows",
+  "totalDuration": 68,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 5,
+      "text": "270% — SILVER IN THE 1970S",
+      "narration": "270%. That's how much silver gained during the 1970s inflation surge. It beat inflation by more than 2 to 1 that decade."
+    },
+    {
+      "type": "stat",
+      "startSec": 5,
+      "endSec": 22,
+      "text": "270% GAIN IN 1970S",
+      "narration": "From 1972 to 1980, silver went from $1.80 to $49.45 per ounce. Cumulative US inflation over that same period was 117%. Silver outpaced it by more than 2 to 1 in the worst inflation cycle in modern US history."
+    },
+    {
+      "type": "stat",
+      "startSec": 22,
+      "endSec": 38,
+      "text": "107% RISE 2020-2022",
+      "narration": "The most recent cycle: silver moved from $14 in March 2020 to $29 in early 2022. A 107% gain in 23 months as US inflation hit a 40-year high. The same pattern repeated again."
+    },
+    {
+      "type": "chart",
+      "startSec": 38,
+      "endSec": 58,
+      "title": "Silver Gain During Major Inflation Periods",
+      "bars": [
+        {
+          "label": "1972-1980",
+          "value": 270
+        },
+        {
+          "label": "2008-2011",
+          "value": 173
+        },
+        {
+          "label": "2020-2022",
+          "value": 107
+        }
+      ],
+      "narration": "Three separate inflationary cycles. Three major silver rallies. Silver is priced in dollars, and when the dollar loses purchasing power, the price of silver gets repriced higher. That mechanic does not require any special conditions to work."
+    },
+    {
+      "type": "cta",
+      "startSec": 58,
+      "endSec": 68,
+      "text": "Full breakdown — link in comments.",
+      "narration": "Save this if you're thinking about adding silver as part of your inflation strategy."
+    }
+  ]
+}

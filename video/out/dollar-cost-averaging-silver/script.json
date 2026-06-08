@@ -1,0 +1,52 @@
+{
+  "slug": "dollar-cost-averaging-silver",
+  "title": "Stop Trying to Time the Silver Market",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Stop trying to time the silver market. The investors who consistently build wealth aren't smarter — they just stopped guessing.",
+      "narration": null
+    },
+    {
+      "type": "stat",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "$2,630 MORE OVER 5 YEARS",
+      "narration": "In an illustrative comparison of two investors each putting in 100 dollars a month over five years, the DCA investor ended at 9,840 dollars while the market timer reached only 7,210. The market timer wasn't making bad guesses — hesitation, missed windows, and emotional buying at the wrong moments compounded against them."
+    },
+    {
+      "type": "stat",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "$24.20 AVG COST PER OZ",
+      "narration": "A monthly buyer over 2020 to 2025 would have averaged roughly 24.20 per ounce regardless of the price swings along the way. Some purchases hit peaks, some hit valleys, but the average lands comfortably below where the market sits today."
+    },
+    {
+      "type": "chart",
+      "startSec": 23,
+      "endSec": 38,
+      "title": "DCA vs Market Timing — 5-Year Portfolio Value",
+      "bars": [
+        {
+          "label": "DCA Investor",
+          "value": 100
+        },
+        {
+          "label": "Market Timer",
+          "value": 73
+        }
+      ],
+      "narration": "The DCA investor finished with 9,840 dollars. The market timer, despite making deliberate entry decisions, ended at 7,210 — 27 percent less. Trying to time the market cost more than it saved."
+    },
+    {
+      "type": "cta",
+      "startSec": 38,
+      "endSec": 52,
+      "text": "See Fused Reserve Plans — link in comments.",
+      "narration": "See how Fused Reserve makes monthly silver accumulation automatic — link in comments."
+    }
+  ]
+}

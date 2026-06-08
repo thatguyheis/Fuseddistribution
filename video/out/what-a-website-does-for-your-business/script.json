@@ -1,0 +1,71 @@
+{
+  "slug": "what-a-website-does-for-your-business",
+  "title": "What a Website Actually Does for Your Business",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "30% of customers won't even consider you if you have no website.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "97% search online before they call.",
+      "narration": "Before anyone calls you, walks in, or places an order, they look you up. Ninety-seven percent of people search online to find local businesses. If you're not showing up, you're not in the running."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "76% visit within 24 hours of searching.",
+      "narration": "Three out of four people who search for a local business visit within one day. Twenty-eight percent of those visits end in a purchase. That funnel runs entirely online before a customer ever contacts you."
+    },
+    {
+      "type": "chart",
+      "startSec": 23,
+      "endSec": 36,
+      "title": "How customers research before visiting",
+      "bars": [
+        {
+          "label": "Online search",
+          "value": 87
+        },
+        {
+          "label": "Online reviews",
+          "value": 76
+        },
+        {
+          "label": "Business website",
+          "value": 69
+        },
+        {
+          "label": "Social media",
+          "value": 48
+        },
+        {
+          "label": "Word of mouth",
+          "value": 40
+        }
+      ],
+      "narration": "This is how people actually research before buying local. Search first, then reviews, then your website. Social media is fourth. Word of mouth is last. The decision is mostly made before you even know they were looking."
+    },
+    {
+      "type": "overlay",
+      "startSec": 36,
+      "endSec": 46,
+      "text": "Facebook reach ≠ search intent.",
+      "narration": "Your Facebook page reaches people already following you. It does not reach the person who just typed emergency plumber near me at nine in the morning ready to spend money. Search captures that moment. Social does not. And your website is yours — no algorithm can take it away."
+    },
+    {
+      "type": "cta",
+      "startSec": 46,
+      "endSec": 52,
+      "text": "Full breakdown — link in comments.",
+      "narration": "What your site actually needs to rank, load fast, and convert — full breakdown linked in the comments."
+    }
+  ]
+}

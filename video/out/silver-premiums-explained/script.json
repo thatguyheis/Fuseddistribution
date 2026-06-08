@@ -1,0 +1,42 @@
+{
+  "slug": "silver-premiums-explained",
+  "title": "The Spot Price Is What Silver Costs — The Premium Is What You Actually Pay",
+  "totalDuration": 41,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "The spot price is what silver costs. The premium is what you actually pay. Knowing the difference determines how much silver you get for your money.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "3–8% Premium — Junk Silver",
+      "narration": "Junk silver — pre-1965 US coins — carries the lowest premiums in the market, typically three to eight percent. There's no fabrication cost, just melt value plus a dealer margin. It's the best value for pure silver exposure."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "18–28% Premium — Silver Eagles",
+      "narration": "American Silver Eagles carry an 18 to 28 percent premium above spot. You get US Mint quality, legal tender status, and high liquidity anywhere in the country — but you pay for that reputation."
+    },
+    {
+      "type": "overlay",
+      "startSec": 23,
+      "endSec": 33,
+      "text": "~15% Average Premium Saved vs Eagles",
+      "narration": "Buying generic rounds or junk silver instead of Eagles saves roughly 15 percent in premium costs. Over a long accumulation period, that difference means meaningfully more silver for the same dollars spent."
+    },
+    {
+      "type": "cta",
+      "startSec": 33,
+      "endSec": 41,
+      "text": "See Fused Reserve Plans — link in comments.",
+      "narration": "See how Fused Reserve sources silver at competitive premiums every month — link in comments."
+    }
+  ]
+}

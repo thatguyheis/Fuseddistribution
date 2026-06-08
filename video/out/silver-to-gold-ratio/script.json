@@ -1,0 +1,42 @@
+{
+  "slug": "silver-to-gold-ratio",
+  "title": "One Number Tells You When Silver Is Cheap Relative to Gold",
+  "totalDuration": 41,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "One number tells you when silver is cheap relative to gold — and right now it's sitting at its 50-year average.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "~60:1 Ratio — May 2026",
+      "narration": "The gold-to-silver ratio in May 2026 sits at roughly 60 to 1, meaning one ounce of gold buys about 60 ounces of silver. That's right at the 50-year historical average — neither a screaming buy signal nor a warning."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 23,
+      "text": "17:1 — Historic Low in 1980",
+      "narration": "The modern era low of 17 to 1 was reached in 1980 during the Hunt Brothers silver squeeze. At that level, silver had dramatically outpaced gold and the relative value gap had essentially closed."
+    },
+    {
+      "type": "overlay",
+      "startSec": 23,
+      "endSec": 33,
+      "text": "125:1 — All-Time High in March 2020",
+      "narration": "The all-time modern peak came in March 2020 when COVID caused silver to collapse alongside industrial metals while gold held up. Investors who saw that 125 to 1 extreme and bought silver over the following months rode a major recovery back toward the long-term average."
+    },
+    {
+      "type": "cta",
+      "startSec": 33,
+      "endSec": 41,
+      "text": "See Fused Reserve Plans — link in comments.",
+      "narration": "Build your silver position on a consistent monthly schedule regardless of where the ratio sits — link in comments."
+    }
+  ]
+}

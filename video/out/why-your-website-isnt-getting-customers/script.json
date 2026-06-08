@@ -1,0 +1,35 @@
+{
+  "slug": "why-your-website-isnt-getting-customers",
+  "title": "Having a Website and Having a Website That Brings in Business Are Two Different Things",
+  "totalDuration": 35,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Having a website and having a website that brings in business are two different things. Most local businesses have one but not the other.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 15,
+      "text": "60%+ of Local Site Traffic Comes From Mobile",
+      "narration": "More than 60 percent of local business website traffic comes from mobile devices. If your site takes more than three seconds to load on a phone, a large portion of visitors leave before they see anything. Google also ranks slow sites lower in local search results — so a slow site hurts you twice."
+    },
+    {
+      "type": "overlay",
+      "startSec": 15,
+      "endSec": 27,
+      "text": "Score Below 50 on Mobile = Losing Customers Now",
+      "narration": "You can check your site speed for free at PageSpeed Insights. A mobile score below 50 means real customers are bouncing right now. The usual culprits are uncompressed images, cheap shared hosting, and page builders that load far more code than the page needs."
+    },
+    {
+      "type": "cta",
+      "startSec": 27,
+      "endSec": 35,
+      "text": "Full breakdown — link in comments.",
+      "narration": "See the full breakdown on the most common reasons local business sites don't convert — link in comments."
+    }
+  ]
+}

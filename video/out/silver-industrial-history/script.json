@@ -1,0 +1,57 @@
+{
+  "slug": "silver-industrial-history",
+  "title": "How Silver Shaped Photography, Medicine, and Modern Electronics",
+  "totalDuration": 60,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 9,
+      "text": "654 MILLION OUNCES",
+      "narration": "654 million ounces. That was silver's industrial demand in 2023, a record high.\n\nTiming check: 14 words / 2.5 = 5.6s + 2s = 7.6s minimum → window is 9s. PASS."
+    },
+    {
+      "type": "stat",
+      "startSec": 9,
+      "endSec": 30,
+      "text": "MORE INDUSTRIAL THAN INVESTMENT DEMAND",
+      "narration": "More than half of all silver mined worldwide went to industrial uses in 2023, according to the Silver Institute's World Silver Survey. Electronics alone consumed 248 million ounces. That's more silver than all coins and bars bought by investors globally in the same year.\n\nTiming check: 46 words / 2.5 = 18.4s + 2s = 20.4s minimum → window is 21s. PASS."
+    },
+    {
+      "type": "chart",
+      "startSec": 30,
+      "endSec": 52,
+      "title": "Silver Industrial Demand by Application, 2023",
+      "bars": [
+        {
+          "label": "Electronics",
+          "value": 38
+        },
+        {
+          "label": "Other industrial",
+          "value": 25
+        },
+        {
+          "label": "Solar energy",
+          "value": 25
+        },
+        {
+          "label": "Brazing/soldering",
+          "value": 10
+        },
+        {
+          "label": "Photography",
+          "value": 2
+        }
+      ],
+      "narration": "Electronics lead at 38 percent. Solar is at 25 percent and the fastest growing. Photography, which once used 30 percent of all silver mined each year, is now at 2 percent. That shift tells you exactly where the metal is going.\n\nTiming check: 44 words / 2.5 = 17.6s + 2s = 19.6s minimum → window is 22s. PASS."
+    },
+    {
+      "type": "cta",
+      "startSec": 52,
+      "endSec": 60,
+      "text": "Full breakdown — link in comments.",
+      "narration": "Save this if you're researching silver as part of a long-term plan.\n\nTiming check: 13 words / 2.5 = 5.2s + 2s = 7.2s minimum → window is 8s. PASS.\n\nTotal: 60s — Standard format."
+    }
+  ]
+}

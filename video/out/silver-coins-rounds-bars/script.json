@@ -1,0 +1,56 @@
+{
+  "slug": "silver-coins-rounds-bars",
+  "title": "Silver Coins, Rounds, and Bars — Which Should You Buy First",
+  "totalDuration": 65,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4,
+      "text": "Three ways to buy silver. The one you pick changes how much you pay.",
+      "narration": null
+    },
+    {
+      "type": "stat",
+      "startSec": 4,
+      "endSec": 20,
+      "text": "22% COIN PREMIUM SPOT",
+      "narration": "American Silver Eagles and Canadian Maple Leafs are the most recognizable silver you can buy. That recognition comes with a price — typically 18 to 25 percent above spot. You are paying for the government mint, the guaranteed purity, and the fact that any dealer in the country will buy them back on the spot."
+    },
+    {
+      "type": "stat",
+      "startSec": 20,
+      "endSec": 36,
+      "text": "5% ROUNDS PREMIUM SPOT",
+      "narration": "Generic silver rounds are privately minted, one troy ounce, 99.9 percent fine silver. The only thing missing is the government stamp — and the premium reflects that. At 4 to 8 percent above spot, rounds give you more silver for the same money with nearly the same storage and stacking properties as coins."
+    },
+    {
+      "type": "chart",
+      "startSec": 36,
+      "endSec": 56,
+      "title": "Typical Premium Over Spot Price by Silver Product",
+      "bars": [
+        {
+          "label": "Silver Eagles/Maples",
+          "value": 22
+        },
+        {
+          "label": "Generic 1oz Rounds",
+          "value": 5
+        },
+        {
+          "label": "10oz Silver Bars",
+          "value": 2
+        }
+      ],
+      "narration": "Bars take premiums even lower — 2 to 3 percent on 10-ounce bars in normal market conditions. The tradeoff is divisibility. A 10-ounce bar is one piece you cannot split. So the lowest-premium option is not always the most flexible one, especially if you might need to sell part of your position later."
+    },
+    {
+      "type": "cta",
+      "startSec": 56,
+      "endSec": 65,
+      "text": "Full breakdown — link in comments.",
+      "narration": "The full comparison of all three — including which to buy first — is linked in the comments."
+    }
+  ]
+}

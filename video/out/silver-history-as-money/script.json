@@ -1,0 +1,42 @@
+{
+  "slug": "silver-history-as-money",
+  "title": "Silver's 4,000-Year Run as Money",
+  "totalDuration": 48,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Silver has been money for 4,000 years. Longer than any nation has existed.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "~600 BC: first silver coins",
+      "narration": "The first silver coins were minted in Lydia, in what is now western Turkey, around 600 BC. Silver was money before the Roman Empire, before most written languages. And it held its value through all of it."
+    },
+    {
+      "type": "overlay",
+      "startSec": 13,
+      "endSec": 26,
+      "text": "Roman denarius: 95% to 5% silver",
+      "narration": "At its peak, the Roman denarius was 95 percent silver. By 268 AD it had been debased to just 5 percent. Inflation followed. The economy fractured. The empire began to collapse. The pattern was not unique to Rome."
+    },
+    {
+      "type": "overlay",
+      "startSec": 26,
+      "endSec": 36,
+      "text": "Pre-1965 US coins: 90% silver",
+      "narration": "Every US dime, quarter, and dollar minted before 1965 was 90 percent real silver. In 1965, the US removed silver from all circulating coins. Those old coins are worth far more than face value today."
+    },
+    {
+      "type": "cta",
+      "startSec": 36,
+      "endSec": 48,
+      "text": "Full history — link in comments.",
+      "narration": "The full post covers every era from ancient Lydia to 1965 and what it means for silver buyers today."
+    }
+  ]
+}

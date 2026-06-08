@@ -1,0 +1,60 @@
+{
+  "slug": "silver-market-outlook-2026",
+  "title": "The Silver Market in 2026: What Buyers Should Know",
+  "totalDuration": 52,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "Silver demand hit a record 1.24 billion ounces in 2023. The market ran short for the second year in a row.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 13,
+      "text": "1.24 Billion Ounces Demanded in 2023",
+      "narration": "Global silver demand hit a new all-time record in 2023 at 1.24 billion ounces. This was not driven by retail speculators. Industrial applications now account for 58% of all silver consumed worldwide, and that share keeps climbing each year."
+    },
+    {
+      "type": "chart",
+      "startSec": 13,
+      "endSec": 27,
+      "title": "Global Silver Demand by Sector (2023)",
+      "bars": [
+        {
+          "label": "Industrial",
+          "value": 58
+        },
+        {
+          "label": "Investment",
+          "value": 22
+        },
+        {
+          "label": "Jewelry",
+          "value": 14
+        },
+        {
+          "label": "Other",
+          "value": 6
+        }
+      ],
+      "narration": "Industrial demand now drives more than half of all silver consumption. Solar panels alone consumed around 140 million ounces in 2023. Electric vehicles add 25 to 50 grams of silver per car. Both sectors are growing fast and neither is slowing down."
+    },
+    {
+      "type": "overlay",
+      "startSec": 27,
+      "endSec": 40,
+      "text": "200 Million Ounce Supply Deficit",
+      "narration": "In 2023 the world used 200 million more ounces of silver than it mined. That was the second consecutive year of a major supply deficit. Global mine production has been flat for years. The gap gets filled by above-ground stockpiles, and those stockpiles are finite."
+    },
+    {
+      "type": "cta",
+      "startSec": 40,
+      "endSec": 52,
+      "text": "Full market breakdown — link in comments.",
+      "narration": "See where supply stands, what the solar boom means for prices, and what physical buyers should know going into 2026."
+    }
+  ]
+}

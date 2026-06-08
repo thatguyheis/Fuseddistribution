@@ -1,0 +1,60 @@
+{
+  "slug": "silver-portfolio-allocation",
+  "title": "How Much Silver Should You Own?",
+  "totalDuration": 66,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "5-15% RULE FOR PRECIOUS METALS",
+      "narration": "Most financial advisors say 5 to 15 percent of your portfolio should be in precious metals.\n\nTiming check: 16 words / 2.5 = 6.4s + 2s = 8.4s minimum. Window is 10s. PASS."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 32,
+      "text": "5-15% PRECIOUS METALS",
+      "narration": "Standard financial guidance puts precious metals at 5 to 15 percent of total portfolio value. Silver typically takes 20 to 40 percent of that slice, depending on your risk tolerance. Most new buyers have no target at all. They buy when they feel like it and end up with a position that has no relationship to their actual financial picture.\n\nTiming check: 56 words / 2.5 = 22.4s + 2s = 24.4s minimum. Window is 22s. FAIL — extend window."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 36,
+      "text": "5-15% PRECIOUS METALS",
+      "narration": "Standard financial guidance puts precious metals at 5 to 15 percent of total portfolio value. Silver typically takes 20 to 40 percent of that slice, depending on your risk tolerance. Most new buyers have no target at all. They buy when they feel like it and end up with a position that has no relationship to their actual financial picture.\n\nTiming check: 56 words / 2.5 = 22.4s + 2s = 24.4s minimum. Window is 26s. PASS."
+    },
+    {
+      "type": "chart",
+      "startSec": 36,
+      "endSec": 57,
+      "title": "Silver Allocation by Portfolio Risk Profile",
+      "bars": [
+        {
+          "label": "Conservative (3-5%)",
+          "value": 33
+        },
+        {
+          "label": "Balanced (5-8%)",
+          "value": 53
+        },
+        {
+          "label": "Growth (8-12%)",
+          "value": 80
+        },
+        {
+          "label": "Speculative (12-15%+)",
+          "value": 100
+        }
+      ],
+      "narration": "This is how silver allocation scales with risk tolerance. A conservative buyer holds 3 to 5 percent. A growth-oriented buyer runs 8 to 12 percent. Anything above 15 percent is a concentrated position, not a diversification strategy.\n\nTiming check: 37 words / 2.5 = 14.8s + 2s = 16.8s minimum. Window is 21s. PASS."
+    },
+    {
+      "type": "cta",
+      "startSec": 57,
+      "endSec": 66,
+      "text": "Full breakdown — link in comments.",
+      "narration": "Save this if you've been buying silver without a target allocation in mind.\n\nTiming check: 14 words / 2.5 = 5.6s + 2s = 7.6s minimum. Window is 9s. PASS.\n\nTotal: 66s — Standard format."
+    }
+  ]
+}

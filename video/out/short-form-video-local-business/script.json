@@ -1,0 +1,134 @@
+{
+  "slug": "short-form-video-local-business",
+  "title": "How Local Businesses Use Short-Form Video to Get More Customers in 2026",
+  "totalDuration": 229,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 7,
+      "text": "22% MORE REACH ON REELS",
+      "narration": "Instagram Reels reach 22 percent more accounts than standard posts."
+    },
+    {
+      "type": "stat",
+      "startSec": 7,
+      "endSec": 30,
+      "text": "22% MORE REACH ON REELS",
+      "narration": "In 2024, Instagram Reels reached up to 22 percent more accounts than standard video posts, according to Socialinsider's Instagram Benchmark Report. That gap matters most for local businesses that don't yet have large follower counts. Those extra accounts are people in your service area seeing your work for the first time.",
+      "explanation": "Instagram Reels reach more non-followers than standard video posts",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 22,
+        "label": "Extra Reach",
+        "remainder_label": "Standard"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 50,
+      "text": "91% WANT MORE VIDEO",
+      "narration": "According to Wyzowl's 2024 State of Video Marketing Report, 91 percent of consumers say they want more video from businesses they consider buying from. That's not a preference. For local businesses, it's a clear demand signal most aren't meeting yet.",
+      "explanation": "Consumers want more video from brands they consider buying from",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 91,
+        "label": "Want More Video",
+        "remainder_label": "Don't"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 50,
+      "endSec": 72,
+      "text": "170M TIKTOK USA USERS",
+      "narration": "TikTok has 170 million monthly active users in the USA as of 2024, according to TikTok's Congressional disclosure. Unlike Instagram, its algorithm sends new creators' content to non-followers by default. A local business with zero followers can reach thousands of people in their area on the first video posted.",
+      "explanation": "TikTok sends new content to non-followers by default, giving zero-follower accounts immediate reach",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 72,
+      "endSec": 93,
+      "text": "2.5X MORE ENGAGEMENT",
+      "narration": "Short-form video generates 2.5 times more engagement than long-form for service businesses, according to Sprout Social's 2024 Content Strategy Report. Not all video converts the same way. The five types that bring in local customers are specific and simple, and none of them require a production crew.",
+      "explanation": "Short-form video outperforms long-form video for service businesses on engagement metrics",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth",
+        "from_value": 1,
+        "from_label": "Long-form",
+        "to_value": 2.5,
+        "to_label": "Short-form",
+        "unit": "x engagement"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 93,
+      "endSec": 115,
+      "text": "BEFORE/AFTER VIDEOS EARN SAVES",
+      "narration": "Before and after content earns the highest save rate of any format for service businesses. Viewers save it to show a partner or reference it later. A flooring installer or landscaper who posts consistent before and afters builds a portfolio that keeps finding new customers long after each job is done.",
+      "explanation": "Before and after content gets the highest save rate of any video format for service businesses",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 115,
+      "endSec": 133,
+      "text": "FAQ VIDEOS DRIVE SHARES",
+      "narration": "FAQ videos are the second strongest type. Film a 30-to-60-second answer to the question your customers ask every week. These videos get shared because they're genuinely useful, and people share useful things.",
+      "explanation": "Answering common questions in short clips generates consistent shares and new discovery",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 133,
+      "endSec": 154,
+      "title": "Instagram Engagement Rate by Content Format (2024)",
+      "bars": [],
+      "narration": "Socialinsider's 2024 Instagram Benchmark Report shows that Reels generate nearly twice the engagement of carousels and more than four times the engagement of standard photos. For a local business deciding where to put 15 minutes a week, these numbers tell you exactly where to spend it."
+    },
+    {
+      "type": "overlay",
+      "startSec": 154,
+      "endSec": 175,
+      "text": "TIKTOK OR REELS - WHERE TO START?",
+      "narration": "If you've never posted video, start with Instagram Reels. It connects to your existing profile and booking links. For fast discovery on a brand new account, TikTok's algorithm advantage is real. Film once in vertical format and post to both."
+    },
+    {
+      "type": "overlay",
+      "startSec": 175,
+      "endSec": 195,
+      "text": "YOUR PHONE IS ENOUGH",
+      "narration": "You don't need a production budget. Natural window light beats a ring light because it's directional. Your phone, a $10 tripod, and a window is a complete studio. Clarity in the first two seconds matters more than any piece of equipment."
+    },
+    {
+      "type": "overlay",
+      "startSec": 195,
+      "endSec": 217,
+      "text": "5 VIDEOS THIS WEEK - START HERE",
+      "narration": "Most local businesses never post because they try to plan 30 days at once and give up. Five videos this week beats that. An intro, a before and after, your most-asked question, a day-in-the-life clip, and one customer reaction. That's week one done."
+    },
+    {
+      "type": "question",
+      "startSec": 217,
+      "endSec": 229,
+      "text": "SOCIAL MEDIA OR WEBSITE: WHICH BRINGS MORE LOCAL CUSTOMERS?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "COMMENT YOUR ANSWER BELOW"
+    }
+  ]
+}

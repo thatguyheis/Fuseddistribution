@@ -1,0 +1,49 @@
+{
+  "slug": "silver-storage-guide",
+  "title": "How to Store Silver Without Losing It",
+  "totalDuration": 50,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3,
+      "text": "65% of burglars were personally known to the victim.",
+      "narration": null
+    },
+    {
+      "type": "overlay",
+      "startSec": 3,
+      "endSec": 12,
+      "text": "A hiding spot is not protection.",
+      "narration": "Burglars spend 10 to 12 minutes inside a home. That's enough time to find the shoebox, check the closet, and be gone. Without a locked safe, you're just making them work slightly harder."
+    },
+    {
+      "type": "overlay",
+      "startSec": 12,
+      "endSec": 22,
+      "text": "Silver melts at 1,763°F.",
+      "narration": "House fires regularly hit that range. The metal might survive. The plastic holders around it won't. A UL-rated fire safe keeps the interior below 350°F."
+    },
+    {
+      "type": "overlay",
+      "startSec": 22,
+      "endSec": 32,
+      "text": "Moisture doesn't kill value — but it matters.",
+      "narration": "Tarnish doesn't reduce melt value, but it damages collectible coins. Airtight containers and silica gel packs fix this completely."
+    },
+    {
+      "type": "overlay",
+      "startSec": 32,
+      "endSec": 42,
+      "text": "At $15,000, one theft = 25 years of vault fees.",
+      "narration": "A professional vault runs $5 to $20 a month. At a certain stack size, home storage stops making financial sense. That's when Fused Reserve is worth looking at."
+    },
+    {
+      "type": "cta",
+      "startSec": 42,
+      "endSec": 50,
+      "text": "Full storage guide — link in comments.",
+      "narration": "Full breakdown with safe specs, stack size thresholds, and what to avoid — link in comments."
+    }
+  ]
+}
