@@ -1,0 +1,137 @@
+{
+  "slug": "silver-etf-vs-physical",
+  "title": "Silver ETF vs Physical Silver",
+  "totalDuration": 217,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 8,
+      "text": "SILVER ETFS ARE TAXED AT 28% TOO",
+      "narration": "Most investors think ETFs avoid the collectibles tax. The IRS disagrees."
+    },
+    {
+      "type": "stat",
+      "startSec": 8,
+      "endSec": 32,
+      "text": "28% IRS COLLECTIBLES RATE",
+      "narration": "The IRS classifies physical silver as a collectible under Section 408(m). Long-term gains are taxed at a maximum 28 percent. SLV gets the same treatment in taxable accounts. The underlying asset's classification passes through to the ETF shareholder. You don't get the 20 percent stock rate just because you bought a fund.",
+      "explanation": "Both SLV and physical silver face the same 28 percent max tax rate",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 28,
+        "label": "Collectibles rate",
+        "remainder_label": "Remaining"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 32,
+      "endSec": 56,
+      "text": "0.50% SLV ANNUAL FEE",
+      "narration": "The iShares Silver Trust charges 0.50 percent per year, paid by gradually reducing the silver backing per share. After 10 years, you have paid about 5 percent of your investment in fees without a single trade. The silver per share has declined from 1.0 ounce at inception to about 0.96 ounces in 2026.",
+      "explanation": "SLV deducts its fee by reducing the silver per share each year",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 50,
+        "label": "Annual drag",
+        "remainder_label": "Held"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 56,
+      "endSec": 80,
+      "text": "PSLV HAS A TAX ADVANTAGE",
+      "narration": "PSLV is a Canadian trust and qualifies as a PFIC for USA investors. With a Qualified Electing Fund election, PSLV gains can use long-term capital gains rates of 0, 15, or 20 percent, not 28 percent. This is a real structural advantage over SLV. The election is filed with your annual tax return.",
+      "explanation": "PSLV with QEF election gets long-term capital gains rates, not 28 percent",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 80,
+      "endSec": 101,
+      "text": "3-15% PHYSICAL PREMIUM",
+      "narration": "Physical silver trades at a premium over spot. With silver spot near $68 per ounce in 2026, generic rounds run 4 to 12 percent over spot. One-ounce bars carry about 13 percent. Silver Eagles carry 20 to 30 percent premiums due to the USA Mint's distribution system and collector demand.",
+      "explanation": "What you pay above spot depends on the product type",
+      "graphic_type": "gauge",
+      "graphic": {
+        "type": "gauge",
+        "value": 8,
+        "min": 3,
+        "max": 20,
+        "low_label": "Generic rounds",
+        "high_label": "Silver Eagles"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 101,
+      "endSec": 122,
+      "text": "$0 ANNUAL FEE PHYSICAL",
+      "narration": "Physical silver held at home has zero annual fees. A good fireproof safe costs $150 to $500 as a one-time purchase. Third-party vault storage runs about 0.50 percent per year. Home storage beats both ETFs over a 10-year hold even after counting the purchase premium.",
+      "explanation": "Home-stored physical silver has no ongoing fees after the safe purchase",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 122,
+      "endSec": 142,
+      "text": "NO COUNTERPARTY PHYSICAL",
+      "narration": "SLV involves a chain: your brokerage, the trust, JP Morgan, and potentially sub-custodians. Physical silver in a home safe has no counterparty at all. You can sell it at a coin shop or privately for cash without a brokerage account or functioning financial system.",
+      "explanation": "Physical silver in your safe has no bank or fund between you and the metal",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 142,
+      "endSec": 165,
+      "title": "10-Year Total Cost Per $10,000 Position",
+      "bars": [],
+      "narration": "Over 10 years, SLV costs about $500 per $10,000 invested in fees. PSLV is nearly identical at $510. Physical generic rounds cost $400 to $1,200 upfront with zero annual cost after. A 100-ounce bar has the lowest total cost. Silver Eagles have the highest upfront cost but no ongoing fees."
+    },
+    {
+      "type": "overlay",
+      "startSec": 165,
+      "endSec": 185,
+      "text": "ETF OR PHYSICAL: HOW TO CHOOSE",
+      "narration": "Silver ETFs work best for active traders wanting price exposure in a standard brokerage. Physical makes sense for long-term holders who want no counterparty or ongoing fees. Many buyers do both. SLV for trading, physical for the long-term core position.",
+      "explanation": "Choose based on time horizon, tax situation, and why you own silver",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 185,
+      "endSec": 205,
+      "text": "HOLD IN IRA: TAX ISSUE DISAPPEARS",
+      "narration": "If you hold silver in a self-directed IRA, the 28 percent collectibles question disappears because gains are tax-deferred. In a Roth IRA, they're completely tax-free. This is one of the strongest arguments for holding physical silver through a retirement account.",
+      "explanation": "Inside a self-directed IRA gains are tax-deferred or tax-free in a Roth",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 205,
+      "endSec": 217,
+      "text": "ETF OR PHYSICAL: WHICH DO YOU HOLD?",
+      "narration": "Follow for more silver news.",
+      "subtext": "TYPE ETF OR PHYSICAL BELOW"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "hunt-brothers-silver-squeeze",
+  "title": "The Hunt Brothers' Silver Squeeze of 1980",
+  "totalDuration": 215,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "TWO BROTHERS OWNED 1/3 OF WORLD SILVER",
+      "narration": "Two brothers owned one third of the world's silver supply. Then the market changed the rules."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 30,
+      "text": "$49 JAN 1980 SILVER PEAK",
+      "narration": "Silver started the 1970s at about one dollar and fifty cents an ounce. By January 18th, 1980, it hit $49.45. That is a 33-times increase in seven years. Not because demand exploded. Because two brothers from Texas decided to own most of the world's silver supply.",
+      "explanation": "Silver rose 33x from $1.50 to $49.45 during the Hunt accumulation",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth",
+        "from_value": 1.5,
+        "from_label": "1973 Start",
+        "to_value": 49,
+        "to_label": "Jan 1980 Peak",
+        "unit": "$/oz"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 48,
+      "text": "100M OZ ACCUMULATED",
+      "narration": "Nelson Bunker Hunt and William Herbert Hunt, working with Arab partners, accumulated over 100 million ounces of silver through physical holdings and futures contracts. That was approximately one third of all non-government silver in the world. No single entity had ever controlled that share of a global commodity.",
+      "explanation": "The Hunt family controlled roughly 1/3 of all non-government silver",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 33,
+        "label": "Hunt Control",
+        "remainder_label": "Rest of Market"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 48,
+      "endSec": 70,
+      "text": "STARTED IN 1973 AT $1.50",
+      "narration": "The brothers started accumulating in 1973 when silver was around one dollar and fifty cents per ounce. They were convinced paper money would collapse. The 1970s brought real inflation and currency pain. But they made the mistake of thinking they could force the outcome they expected. Markets do not cooperate with anyone that long.",
+      "explanation": "The Hunts began buying silver when it was historically cheap",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 70,
+      "endSec": 90,
+      "text": "SILVER RULE 7 CHANGED EVERYTHING",
+      "narration": "In January 1980, the COMEX exchange implemented what became known as Silver Rule 7. Traders could only close existing silver positions. They could not open new long contracts. This removed the buying pressure that had driven prices up. Prices began falling immediately. The mechanism sustaining the squeeze was gone.",
+      "explanation": "COMEX restricted new silver long positions, removing buying pressure",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 90,
+      "endSec": 118,
+      "text": "$10.80 SILVER THURSDAY",
+      "narration": "On March 27th, 1980, the Hunt brothers could not meet a $135 million margin call from their broker Bache Group. Bache liquidated their positions on the open market. Silver fell from roughly $21 to $10.80 in a single session. Brokerage firms nearly collapsed. The Federal Reserve coordinated a $1.1 billion emergency loan from a consortium of banks to prevent a broader financial crisis.",
+      "explanation": "March 27, 1980: silver fell from $21 to $10.80 in a single trading session",
+      "graphic_type": "gap",
+      "graphic": {
+        "type": "gap",
+        "a_label": "Morning Open",
+        "a_value": 21,
+        "b_label": "Day Close",
+        "b_value": 11,
+        "unit": "$/oz"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 118,
+      "endSec": 142,
+      "title": "Silver Spot Price at Key Dates During the Hunt Squeeze (USD per oz)",
+      "bars": [],
+      "narration": "The chart tells the story. Seven years of gradual accumulation, a vertical spike to $49 in early 1980, then a single-session collapse back to $10. The spike was artificial. The collapse was structural. Markets are very good at correcting artificial price levels once the mechanism sustaining them breaks."
+    },
+    {
+      "type": "stat",
+      "startSec": 142,
+      "endSec": 157,
+      "text": "$134M CIVIL SETTLEMENT",
+      "narration": "The Hunt brothers avoided criminal charges. In 1989 they settled civil claims brought by the CFTC and a Peruvian mining company called Minpeco for a combined $134 million. Nelson Hunt filed for personal bankruptcy in 1988, listing $2.5 billion in liabilities.",
+      "explanation": "The Hunts settled CFTC and civil charges in 1989 without criminal prosecution",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 157,
+      "endSec": 180,
+      "text": "31 YEARS TO REVISIT $49",
+      "narration": "After the 1980 collapse, silver traded between $4 and $10 for most of the next two decades. The metal did not revisit $49 until April 2011, 31 years later. That time the move was driven by real industrial demand from electronics and solar panels. A completely different story underneath.",
+      "explanation": "Silver did not return to the 1980 nominal peak until April 2011",
+      "graphic_type": "timeline",
+      "graphic": {
+        "type": "timeline",
+        "min": 1980,
+        "max": 2011,
+        "unit": "years",
+        "label": "Return to $49"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 180,
+      "endSec": 202,
+      "text": "PHYSICAL HELD. PAPER WIPED OUT.",
+      "narration": "Investors holding physical silver at the 1980 peak took losses when the price collapsed. But they still held the metal. Traders who held leveraged futures contracts faced margin calls they could not meet and lost everything. The difference between a physical position and a paper position was the difference between a loss and a total wipeout.",
+      "explanation": "Physical holders took losses; leveraged futures traders were completely wiped out",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 202,
+      "endSec": 215,
+      "text": "IS SILVER MORE MANIPULATED THAN GOLD?",
+      "narration": "Follow for more silver news.",
+      "subtext": "AGREE OR DISAGREE BELOW"
+    }
+  ]
+}

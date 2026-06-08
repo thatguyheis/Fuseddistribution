@@ -1,0 +1,173 @@
+{
+  "slug": "google-business-profile-messaging",
+  "title": "How Google Business Profile Messaging Turns Visitors Into Paying Customers",
+  "totalDuration": 212,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "45% VS 6% RESPONSE RATE",
+      "narration": "Business chat gets 45 percent response rate. Email gets 6 percent."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 30,
+      "text": "45% CHAT RESPONSE RATE",
+      "narration": "Research from Gartner shows business chat and text messages achieve a 45 percent average response rate from customers. Email sits at just 6 percent. That gap is not about the message. It is about the channel. Customers messaging from a Google search are actively looking for your service right now.",
+      "explanation": "Customers are 7x more likely to reply to a business chat than an email",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 45,
+        "label": "Chat/Text",
+        "remainder_label": "No Response"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 48,
+      "text": "6% EMAIL RESPONSE RATE",
+      "narration": "Email open rates for local businesses average around 20 percent, but even opened emails rarely get a reply. A customer tapping a Message button from your Google listing is in a completely different headspace. Chat sits in their hand. Email sits in an inbox getting buried.",
+      "explanation": "Email gets buried even when opened by the customer",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 6,
+        "label": "Email",
+        "remainder_label": "No Response"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 48,
+      "endSec": 63,
+      "text": "3 MIN TO ENABLE GBP CHAT",
+      "narration": "Enabling Google Business Profile messaging takes about 3 minutes. Open the Google Maps app, go to your Business Profile, tap Messages, and toggle it on. Your listing shows a Message button within minutes. No cost. No third-party app.",
+      "explanation": "GBP messaging is free and takes under 5 minutes to activate",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 63,
+      "endSec": 83,
+      "title": "Average Response Rates by Business Communication Channel",
+      "bars": [
+        {
+          "label": "Chat / Text",
+          "value": 45
+        },
+        {
+          "label": "Phone Call",
+          "value": 38
+        },
+        {
+          "label": "Social DM",
+          "value": 31
+        },
+        {
+          "label": "Email",
+          "value": 6
+        }
+      ],
+      "narration": "Chat converts at nearly 8 times the rate of email. Phone sits in the middle at 38 percent. Social direct messages land around 31 percent. The channel gap is real. And Google gives you the highest-converting channel for free on your listing."
+    },
+    {
+      "type": "overlay",
+      "startSec": 83,
+      "endSec": 98,
+      "text": "24 HR RESPONSE REQUIRED",
+      "narration": "Google requires a 24-hour average response time to keep messaging active. If your average creeps above that, Google turns the feature off automatically. You lose the Message button on your listing. Checking messages once in the morning and once in the evening keeps you well inside the limit.",
+      "explanation": "Google disables messaging if average response time exceeds 24 hours",
+      "graphic_type": "timeline",
+      "graphic": {
+        "type": "timeline",
+        "min": 0,
+        "max": 24,
+        "unit": "hours",
+        "label": "Max Response Window"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 98,
+      "endSec": 120,
+      "text": "WRITE A WELCOME MESSAGE",
+      "narration": "When a customer starts a chat, your welcome message fires automatically. A good welcome message asks one qualifying question. Service businesses ask for the service needed and zip code. Appointment businesses ask for a preferred day. One question gets you the information you need before you even type a reply.",
+      "explanation": "An automated qualifying question reduces back-and-forth before booking",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 120,
+      "endSec": 136,
+      "text": "38% PHONE RESPONSE RATE",
+      "narration": "Phone call response rates for business inquiries sit at 38 percent. Many customers avoid calling for a quick question, especially on mobile. A Message button removes that friction entirely. The customer gets an answer without committing to a full call. You get a lead without playing phone tag.",
+      "explanation": "Phone sits between chat and email for business inquiry response rates",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 38,
+        "label": "Phone",
+        "remainder_label": "No Response"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 136,
+      "endSec": 157,
+      "text": "2 TIME SLOTS GET BOOKINGS",
+      "narration": "When you reply to a chat, do not ask if the customer is free. Offer two specific time slots. Tuesday at 2pm or Wednesday at 10am. Two choices produce decisions. Open-ended scheduling questions produce maybes. Confirm the booking in the chat itself with the date, time, and service. That reduces no-shows.",
+      "explanation": "Two specific options produce decisions instead of maybes",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth",
+        "from_value": 1,
+        "from_label": "Open invite",
+        "to_value": 2,
+        "to_label": "Two slots",
+        "unit": "options"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 157,
+      "endSec": 176,
+      "text": "REPLY WITHIN 2 HOURS",
+      "narration": "Treat GBP messaging like a text from a customer. Reply within 2 hours and you are still in their buying window. Reply the next day and they have already called someone else. Set a daily reminder if needed. Three check-ins per day is enough to stay fast without watching the app constantly.",
+      "explanation": "A 2-hour reply window captures customers still actively searching",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 176,
+      "endSec": 195,
+      "text": "100 PERCENT FREE TO USE",
+      "narration": "No monthly fee. No third-party platform. Google Business Profile messaging is part of your free listing. If your listing is verified and you have the Google Maps app, you can have this feature live in the next 5 minutes. Most local businesses have not done this yet.",
+      "explanation": "No fees, no subscriptions, no third-party app required",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 195,
+      "endSec": 212,
+      "text": "DO YOU USE GBP MESSAGING?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "YES OR NO BELOW"
+    }
+  ]
+}

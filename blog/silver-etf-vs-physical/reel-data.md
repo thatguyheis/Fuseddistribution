@@ -24,14 +24,10 @@ hook_type: contrarian_stat
     remainder_label: Held
   narration: The iShares Silver Trust charges 0.50 percent per year. That fee gets paid by gradually reducing the silver backing per share. A new SLV share represented 1.0 ounce at inception and represents roughly 0.927 ounces in 2026. After 10 years, you have paid about 5 percent of your original investment in fees without a single trade.
 
-- text: 0.35% PSLV ANNUAL FEE
-  explanation: Sprott's trust charges less and stores at the Royal Canadian Mint
-  graphic_type: percent_fill
-  graphic:
-    value: 35
-    label: Annual drag
-    remainder_label: Held
-  narration: The Sprott Physical Silver Trust charges 0.35 percent annually, lower than SLV, and stores silver at the Royal Canadian Mint rather than a private bank. PSLV offers direct physical redemption, but the minimum is roughly 10,000 ounces, which is approximately $300,000 at current prices. This is an institutional feature, not a retail one.
+- text: PSLV PFIC TAX ADVANTAGE
+  explanation: PSLV with QEF election gets standard long-term capital gains rates, not the 28% collectibles rate
+  graphic_type: none
+  narration: PSLV is a Canadian trust and qualifies as a Passive Foreign Investment Company for USA investors. With a Qualified Electing Fund election, gains from PSLV are taxed at standard long-term capital gains rates of 0, 15, or 20 percent, not the 28 percent collectibles rate that applies to both physical silver and SLV. This is the one area where PSLV has a structural tax advantage. It requires an election with your annual tax return.
 
 - text: 3-15% PHYSICAL PREMIUM
   explanation: What you pay above spot price depends on the product type

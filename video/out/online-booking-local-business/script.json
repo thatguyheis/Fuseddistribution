@@ -1,0 +1,139 @@
+{
+  "slug": "online-booking-local-business",
+  "title": "How to Add Online Booking to Your Local Business",
+  "totalDuration": 212,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "40% OF BOOKINGS HAPPEN AFTER YOU CLOSE",
+      "narration": "Your phone can't answer at 9 PM. But that's when customers are booking."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 31,
+      "text": "40% AFTER-HOURS BOOKINGS",
+      "narration": "About 40 percent of service appointments are booked outside business hours, according to Square's 2024 data. When you close for the night, customers don't wait until morning. They find someone with a Book Now button and fill a slot before you open.",
+      "explanation": "Nearly half of customers book when no one picks up the phone",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 40,
+        "label": "After hours",
+        "remainder_label": "Business hours"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 31,
+      "endSec": 52,
+      "text": "67% PREFER ONLINE BOOKING",
+      "narration": "Acuity Scheduling's 2023 consumer research found that 67 percent of people prefer booking online rather than calling. The main reason is simple: they want to confirm the time immediately without playing phone tag. That preference runs even higher for customers under 45.",
+      "explanation": "Two out of three customers choose online booking over calling",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 67,
+        "label": "Online preferred",
+        "remainder_label": "Phone preferred"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 52,
+      "endSec": 72,
+      "text": "29% FEWER NO-SHOWS",
+      "narration": "Square's 2024 data shows reminders cut no-show rates by 29 percent on average. The two-reminder sequence works best: one 24 hours out, one 1 hour before. Most customers who would have forgotten simply show up when they get that text.",
+      "explanation": "Automated reminders cut missed appointments by nearly one in three",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 29,
+        "label": "Reduction",
+        "remainder_label": "Baseline rate"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 72,
+      "endSec": 92,
+      "text": "FREE FOR SOLO PROVIDERS",
+      "narration": "Square Appointments is free for solo service providers. It includes automated reminders, a bookable website link you can add to your Google Business Profile, and optional deposit collection. For businesses with employees, pricing starts at $29 per month.",
+      "explanation": "Square Appointments costs zero dollars for single-operator service businesses",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 92,
+      "endSec": 115,
+      "title": "Booking Tool Monthly Cost",
+      "bars": [],
+      "narration": "Square and Calendly offer free tiers. Square is the stronger choice for service trades. Acuity runs $20 a month for solo operators and is worth it for businesses needing more customization. Booksy and GlossGenius serve salons and beauty businesses and include marketplace listings."
+    },
+    {
+      "type": "stat",
+      "startSec": 115,
+      "endSec": 136,
+      "text": "1 HOUR SETUP",
+      "narration": "Most local service businesses have a live booking page within an hour. Sign up, list your services, add buffer time between appointments, require a phone number for reminders, and paste the booking link into your Google Business Profile. That is the full setup.",
+      "explanation": "A functional booking page with reminders takes under 60 minutes",
+      "graphic_type": "timeline",
+      "graphic": {
+        "type": "timeline",
+        "min": 30,
+        "max": 60,
+        "unit": "minutes",
+        "label": "Setup time"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 136,
+      "endSec": 158,
+      "text": "24HR + 1HR REMINDER SEQUENCE",
+      "narration": "The timing of reminders matters more than most owners realize. A 24-hour reminder combined with a 1-hour reminder outperforms either message alone. Both go out automatically once you configure the schedule. You set it once and it runs on every booking going forward.",
+      "explanation": "Two messages outperform any single reminder",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 158,
+      "endSec": 178,
+      "text": "ADD LINK EVERYWHERE",
+      "narration": "Once your booking page is live, add the link everywhere a customer might find you. Your Google Business Profile, your website header, your Instagram bio, and your email signature. Every placement captures a customer who would otherwise have had to call.",
+      "explanation": "Booking link in GBP, website, email signature, and social bio",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 178,
+      "endSec": 200,
+      "text": "BOOKING DATA SHOWS PATTERNS",
+      "narration": "After a few months, your booking dashboard shows patterns you can't see from memory. Which services fill fastest. Which day gets the most last-minute requests. If one service has a high no-show rate, check the description and price. Vague names and no price are the most common cause.",
+      "explanation": "After 90 days you can see which services, times, and days drive your business",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 200,
+      "endSec": 212,
+      "text": "DO YOU TAKE ONLINE BOOKINGS?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "YES OR NO BELOW"
+    }
+  ]
+}
