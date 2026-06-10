@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "fuseddistribution",
+  "account_id": "904933a9a5d8c62b3b9506cb697ce080",
   "main": "src/worker.js",
   "compatibility_date": "2026-04-15",
   "observability": {

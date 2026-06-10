@@ -68,6 +68,7 @@ echo $PEXELS_API_KEY
   ```
   Must return zero matches. If any found: replace with numeric entity (`&middot;`→`&#183;`, `&nbsp;`→`&#160;`, `&bull;`→`&#8226;`, `&mdash;`→`&#8212;`, `&ndash;`→`&#8211;`) then regenerate the `.jpg`.
 - [ ] Run `node blog/scripts/generate-sitemap.mjs`
+- [ ] **Secret check** — no literal tokens/keys in any staged file, env var references only (§17). Pre-commit hook enforces.
 - [ ] `git add blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
 - [ ] Write `social-copy.json` (§14)
 - [ ] `git add blog/posts.json blog/[slug]/` then commit
@@ -632,3 +633,40 @@ Finance and silver content goes stale. Quarterly refresh keeps YMYL ranking sign
 3. Update `dateModified` in the JSON-LD schema. Add or update `<meta property="article:modified_time" content="YYYY-MM-DDT00:00:00Z" />` in `<head>` — this tag is not in the base template, insert it manually after `article:published_time`. Do NOT change `article:published_time` — that is the original publish date and must stay unchanged.
 4. Commit with message: `"refresh([slug]): update stats to [Month YYYY]"`
 5. Push + deploy — Google re-crawls on `dateModified` change
+
+---
+
+## 17. Secrets & Deploy Failure Recovery (Proactive Fix Protocol)
+
+### Secrets — hard rules
+1. **Never write literal API tokens, keys, or passwords into any tracked file** — including plan docs, specs, SOPs, and code comments. Always reference env vars: `CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN"`.
+2. A pre-commit hook at `.git/hooks/pre-commit` scans staged changes for credential patterns and blocks the commit. Do not bypass with `--no-verify` unless the match is a verified false positive.
+3. If a secret reaches a commit: it lives in EVERY subsequent commit's tree, not just the one that introduced it.
+
+### Recovery — secret in unpushed commits (no force push needed)
+```bash
+# 1. Confirm the bad commit is unpushed
+git log --oneline origin/main..main
+# 2. Scrub across all unpushed commits (script seds the file, exits 0)
+git stash push -m pre-scrub
+FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --tree-filter /path/to/scrub.sh -- <last-pushed-sha>..main
+git stash pop
+# 3. Verify zero hits, then normal push
+git log -p origin/main..main | grep -c '<token-pattern>'
+git push origin main
+```
+If the secret was ALREADY pushed: rotate it immediately, then decide on history rewrite (force push — requires Nick's explicit approval).
+Either way, **rotate the leaked credential** — it was transmitted even if the push was blocked.
+
+### Recovery — wrangler deploy auth failure
+Symptom: `Failed to automatically retrieve account IDs` / `Authentication error [code: 10000]`.
+1. Check the real error: latest log in `~/Library/Preferences/.wrangler/logs/`.
+2. Code 10000 on API calls = OAuth session revoked server-side, even if `~/Library/Preferences/.wrangler/config/default.toml` shows a future `expiration_time`.
+3. Fix: `npx wrangler login` (interactive — Nick must complete in browser). Then re-run `npx wrangler deploy`.
+4. `account_id` is pinned in `wrangler.jsonc` so account lookup can't block deploys.
+
+### Pipeline blocker policy
+When the 9 AM pipeline hits a blocker (push rejected, deploy auth, render fail):
+1. Attempt automated recovery first (this section + render log review).
+2. If recovery requires Nick (browser auth, force push, secret rotation): log exact one-line instruction to `~/Library/Logs/daily-blog-reel.log` and stop that step only — continue all steps that don't depend on it.
+3. Never leave posts in "committed but not deployed" state silently — the log must state which slugs are NOT live.
