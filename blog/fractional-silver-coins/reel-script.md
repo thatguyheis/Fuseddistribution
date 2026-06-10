@@ -74,6 +74,6 @@ Narration: When you do buy fractional, stick to recognized government mints. Ame
 ## QUESTION (183-194s)
 Text: DO YOU HOLD FRACTIONAL SILVER IN YOUR STACK?
 Subtext: BARTER RESERVE OR PASS?
-Narration: Follow for more silver stacking breakdowns.
+Narration: Follow for more silver news.
 
 ---

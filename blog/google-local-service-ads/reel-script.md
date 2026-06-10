@@ -75,6 +75,6 @@ Narration: You don't have to pick one. LSAs give you the top position with a sim
 ## QUESTION (185-196s)
 Text: WOULD YOU PAY $20 PER LEAD FOR THE #1 SPOT ON GOOGLE?
 Subtext: LSA OR STANDARD ADS?
-Narration: Follow for more local marketing breakdowns.
+Narration: Follow for more tips to grow your business.
 
 ---
