@@ -49,8 +49,6 @@ The daily blog + reel pipeline should detect, diagnose, and fix its own failures
 - Log rotation for `~/Library/Logs/daily-blog-reel.log`
 - Alert channel: failures push a message via OpenClaw so Nick sees blockers on his phone same-day
 
-## Open decision for Nick
+## Decision — RESOLVED 2026-06-10
 
-Phase 2 item 1 includes autonomous `git push` during pipeline runs. Current hard rule says never push without explicit permission. Options:
-1. Grant standing permission for pipeline-originated pushes to `main` (content commits only) — recommended, otherwise daily automation can't complete.
-2. Keep manual approval; pipeline stages commits and logs "ready to push".
+Nick granted standing permission for pipeline-originated pushes to `main`, **content commits only** (blog posts, reels, sitemap, posts.json, topic-history, social-copy). Recorded in `~/.claude/CLAUDE.md` hard rules. Force pushes, rewrites of pushed history, and non-content pushes still require explicit permission each time.
