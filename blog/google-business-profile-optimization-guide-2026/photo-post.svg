@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="5%" cy="5%" r="55%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-c)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <circle cx="600" cy="600" r="420" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-opacity="0.10" stroke-width="1"/>
+
+  <circle cx="90" cy="110" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="265" cy="78" r="1.2" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="525" cy="92" r="1" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="825" cy="65" r="1.5" fill="#4dffb8" fill-opacity="0.17"/>
+  <circle cx="1055" cy="102" r="1.2" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="145" cy="1082" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="705" cy="1098" r="1.2" fill="#4dffb8" fill-opacity="0.15"/>
+  <circle cx="1085" cy="1062" r="1" fill="#58d6ff" fill-opacity="0.20"/>
+
+  <text x="600" y="100" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="18" letter-spacing="5" fill="rgba(88,214,255,0.55)">GOOGLE &#183; LOCAL BUSINESS &#183; 2026</text>
+  <text x="600" y="158" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="44" letter-spacing="6" fill="rgba(88,214,255,0.90)">FUSED</text>
+
+  <line x1="200" y1="180" x2="1000" y2="180" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+
+  <text x="600" y="276" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="56" letter-spacing="2" fill="#ecf8fb">OPTIMIZE YOUR</text>
+  <text x="600" y="345" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="56" letter-spacing="2" fill="#58d6ff">GOOGLE BUSINESS</text>
+  <text x="600" y="414" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="56" letter-spacing="2" fill="#4dffb8">PROFILE</text>
+
+  <line x1="300" y1="440" x2="900" y2="440" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+
+  <text x="600" y="560" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="170" fill="#58d6ff" letter-spacing="2">35%</text>
+  <text x="600" y="616" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="24" letter-spacing="3" fill="rgba(175,198,207,0.85)">MORE CLICKS WITH REVIEW RESPONSES</text>
+  <text x="600" y="654" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="16" letter-spacing="2" fill="rgba(175,198,207,0.50)">Businesses that respond to all reviews</text>
+
+  <rect x="200" y="686" width="250" height="60" rx="10" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="325" y="712" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="22" fill="#4dffb8">1/WEEK</text>
+  <text x="325" y="735" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">Post Minimum</text>
+
+  <rect x="475" y="686" width="250" height="60" rx="10" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="600" y="712" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="22" fill="#58d6ff">Q&amp;A</text>
+  <text x="600" y="735" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">Seed It Yourself</text>
+
+  <rect x="750" y="686" width="250" height="60" rx="10" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="875" y="712" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="22" fill="#4dffb8">VIDEO</text>
+  <text x="875" y="735" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">Add to Media Tab</text>
+
+  <text x="600" y="812" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">Post weekly. Respond to every review.</text>
+  <text x="600" y="842" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">Seed your Q&amp;A section. Update photos</text>
+  <text x="600" y="872" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">monthly. That is the weekly system.</text>
+
+  <rect x="280" y="912" width="640" height="72" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.30)" stroke-width="1.5"/>
+  <text x="600" y="956" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="22" letter-spacing="2" fill="rgba(88,214,255,0.90)">Full guide at fuseddistribution.com</text>
+
+  <line x1="200" y1="1060" x2="1000" y2="1060" stroke="rgba(88,214,255,0.10)" stroke-width="1"/>
+  <text x="600" y="1100" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="15" letter-spacing="4" fill="rgba(88,214,255,0.35)">FUSEDDISTRIBUTION.COM/BLOG</text>
+</svg>

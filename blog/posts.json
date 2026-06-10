@@ -1,10 +1,66 @@
 [
   {
+    "slug": "google-business-profile-optimization-guide-2026",
+    "title": "Google Business Profile Optimization Guide 2026",
+    "date": "2026-06-09",
+    "excerpt": "Optimize your Google Business Profile in 2026. Covers AI Overviews content, weekly posts, Q&A management, photo geo-tagging, video, and review response strategy for local ranking.",
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
+    "author": "Nick",
+    "image": "/blog/google-business-profile-optimization-guide-2026/hero.jpg",
+    "imageAlt": "Google Business Profile optimization guide 2026 showing weekly posting, Q&A management, and photo strategy for local ranking"
+  },
+  {
+    "slug": "how-to-set-up-google-business-profile-step-by-step",
+    "title": "How to Set Up Google Business Profile Step by Step (2026 Guide)",
+    "date": "2026-06-09",
+    "excerpt": "Set up Google Business Profile correctly in 2026. Step-by-step guide: account creation, category selection, verification, photos, and review setup for local businesses.",
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
+    "author": "Nick",
+    "image": "/blog/how-to-set-up-google-business-profile-step-by-step/hero.jpg",
+    "imageAlt": "Google Business Profile setup guide showing 7x more clicks for complete profiles and step-by-step verification process"
+  },
+  {
+    "slug": "where-to-buy-silver-online-safely",
+    "title": "Where to Buy Silver Online Safely: Dealer Verification Guide",
+    "date": "2026-06-09",
+    "excerpt": "The safest online silver dealers use SSL checkout, publish buy-back programs, and carry verifiable track records. Here's how to verify any dealer fast before sending money.",
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
+    "author": "Nick",
+    "image": "/blog/where-to-buy-silver-online-safely/hero.jpg",
+    "imageAlt": "Where to buy silver online safely showing dealer verification checklist and relative fraud risk by purchase channel"
+  },
+  {
+    "slug": "how-to-buy-silver-for-the-first-time",
+    "title": "How to Buy Silver for the First Time: A Step-by-Step Guide",
+    "date": "2026-06-09",
+    "excerpt": "Buy your first ounce of silver correctly. Learn which product type to start with, which dealers to trust, and how to calculate your true cost per ounce.",
+    "tags": [
+      "Silver",
+      "Buying Guide",
+      "Beginners"
+    ],
+    "author": "Nick",
+    "image": "/blog/how-to-buy-silver-for-the-first-time/hero.jpg",
+    "imageAlt": "How to buy silver for the first time guide showing 1 oz starting size, .999 purity standard, and premium ranges by product type"
+  },
+  {
     "slug": "short-form-video-local-business",
     "title": "How Local Businesses Use Short-Form Video to Get More Customers in 2026",
     "date": "2026-06-08",
     "excerpt": "Short-form video delivers the highest ROI of any content format for 4 straight years. Here's the 5 video types and starter plan that turn TikTok and Reels into local customer sources.",
-    "tags": ["Social Media", "Video Marketing"],
+    "tags": [
+      "Social Media",
+      "Video Marketing"
+    ],
     "author": "Nick",
     "image": "/blog/short-form-video-local-business/hero.jpg",
     "imageAlt": "Short-form video for local business showing 22% more reach on Instagram Reels and 170 million TikTok USA users"
@@ -14,7 +70,10 @@
     "title": "How to Prevent Silver Tarnish in Long-Term Storage: Anti-Tarnish Strips, VCI Capsules, and What to Avoid",
     "date": "2026-06-08",
     "excerpt": "Silver tarnishes from hydrogen sulfide gas. Rubber, cardboard, and wood all accelerate it. Here's the layered storage system that keeps .999 silver clean for years.",
-    "tags": ["Silver", "Storage"],
+    "tags": [
+      "Silver",
+      "Storage"
+    ],
     "author": "Nick",
     "image": "/blog/silver-tarnish-prevention/hero.jpg",
     "imageAlt": "Silver tarnish prevention guide showing anti-tarnish strips, VCI capsules, and 50% relative humidity rule"
@@ -24,7 +83,10 @@
     "title": "Silver ETF vs Physical Silver: Which Is Right for Your Portfolio?",
     "date": "2026-06-07",
     "excerpt": "SLV charges 0.50% annually and both silver ETFs and physical silver face the same 28% IRS collectibles tax. Here's how to decide which fits your situation.",
-    "tags": ["Silver", "Investing"],
+    "tags": [
+      "Silver",
+      "Investing"
+    ],
     "author": "Nick",
     "image": "/blog/silver-etf-vs-physical/hero.jpg",
     "imageAlt": "Silver ETF vs physical silver comparison: SLV 0.50% annual fee, 28% collectibles tax rate on both, PSLV 0.35% fee"
@@ -34,7 +96,10 @@
     "title": "How to Add Online Booking to Your Local Business (And Stop Losing After-Hours Leads)",
     "date": "2026-06-07",
     "excerpt": "40% of service appointments are booked after hours. Free tools like Square Appointments take under an hour to set up and cut no-shows by 29% with automated reminders.",
-    "tags": ["Local Business", "Websites"],
+    "tags": [
+      "Local Business",
+      "Websites"
+    ],
     "author": "Nick",
     "image": "/blog/online-booking-local-business/hero.jpg",
     "imageAlt": "Online booking for local business: 40% of appointments booked after hours, automated reminders cut no-shows by 29%"
@@ -44,7 +109,11 @@
     "title": "The Hunt Brothers' Silver Squeeze of 1980: What Happened and What Investors Learn",
     "date": "2026-06-06",
     "excerpt": "Two brothers accumulated 100 million ounces of silver and drove prices to $49.45/oz in 1980. Here's the full story of Silver Thursday and what it means for buyers holding physical silver today.",
-    "tags": ["Silver", "History", "Market"],
+    "tags": [
+      "Silver",
+      "History",
+      "Market"
+    ],
     "author": "Nick",
     "image": "/blog/hunt-brothers-silver-squeeze/hero.jpg",
     "imageAlt": "Silver price chart showing the Hunt Brothers squeeze peak of $49.45 per ounce in January 1980 and the Silver Thursday collapse to $10.80"
@@ -54,7 +123,10 @@
     "title": "How Google Business Profile Messaging Turns Visitors Into Paying Customers",
     "date": "2026-06-06",
     "excerpt": "GBP messaging is free and takes 3 minutes to enable. Here's how to set it up, write a welcome message, and convert Google chat inquiries into booked appointments.",
-    "tags": ["Google", "Local Business"],
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/google-business-profile-messaging/hero.jpg",
     "imageAlt": "Google Business Profile messaging showing 45% chat response rate versus 6% email and a step-by-step enable toggle"
@@ -64,7 +136,10 @@
     "title": "Where to Buy Silver: Online Dealers, Coin Shops, and Private Sales Compared",
     "date": "2026-06-05",
     "excerpt": "Premiums range from 2% to 18% over spot depending on where you buy. A practical comparison of online dealers, local coin shops, and private sales so you pay less per ounce.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/where-to-buy-silver/hero.jpg",
     "imageAlt": "Where to buy silver comparison showing online dealers at 3-8% premium, coin shops at 8-18%, and private sales at 1-5% over spot"
@@ -74,7 +149,10 @@
     "title": "How to Track Your Local Business Website With Google Analytics 4 (Free)",
     "date": "2026-06-05",
     "excerpt": "Only 39% of small businesses check their website analytics regularly. Here's how to set up GA4 and Search Console free in under 15 minutes and find what's actually working.",
-    "tags": ["Websites", "Analytics"],
+    "tags": [
+      "Websites",
+      "Analytics"
+    ],
     "author": "Nick",
     "image": "/blog/local-business-website-analytics/hero.jpg",
     "imageAlt": "Google Analytics 4 dashboard for local business showing traffic sources, contact page views, and phone click conversion tracking"
@@ -84,7 +162,11 @@
     "title": "Silver's Supply Deficit: Why Mine Production Can't Keep Up With Growing Demand",
     "date": "2026-06-04",
     "excerpt": "Silver demand exceeded mine supply by 211 million ounces in 2023, the third consecutive annual deficit. Here's where the demand is coming from and what it means for physical holders.",
-    "tags": ["Silver", "Market", "Investing"],
+    "tags": [
+      "Silver",
+      "Market",
+      "Investing"
+    ],
     "author": "Nick",
     "image": "/blog/silver-supply-deficit/hero.jpg",
     "imageAlt": "Silver supply deficit showing 211 million ounce gap between 1.2 billion ounce demand and 998 million ounce supply in 2023"
@@ -94,7 +176,11 @@
     "title": "Text Message Marketing for Local Businesses: The 3-Message Follow-Up System That Brings Customers Back",
     "date": "2026-06-04",
     "excerpt": "SMS open rates average 98% vs 22% for email. A 3-message follow-up sequence with legal opt-in guidance and tools starting at $24/month that any local business can run.",
-    "tags": ["Marketing", "Local Business", "SMS"],
+    "tags": [
+      "Marketing",
+      "Local Business",
+      "SMS"
+    ],
     "author": "Nick",
     "image": "/blog/text-message-marketing-local-business/hero.jpg",
     "imageAlt": "Text message marketing for local businesses showing 98% SMS open rate vs 22% email open rate comparison"
@@ -104,7 +190,11 @@
     "title": "Does Your Homeowner's Insurance Cover Silver? What the Policy Fine Print Actually Says",
     "date": "2026-06-03",
     "excerpt": "Standard HO-3 policies cap precious metals theft at $1,500. A 100oz stack is worth $3,200. Here's how a scheduled floater closes the gap for under $2 per $100 per year.",
-    "tags": ["Silver", "Storage", "Insurance"],
+    "tags": [
+      "Silver",
+      "Storage",
+      "Insurance"
+    ],
     "author": "Nick",
     "image": "/blog/silver-insurance-storage/hero.jpg",
     "imageAlt": "Silver insurance coverage guide showing $1,500 standard HO-3 theft sublimit and how a scheduled floater provides full replacement value"
@@ -114,7 +204,10 @@
     "title": "How Instagram Stories Convert Local Followers Into Paying Customers",
     "date": "2026-06-03",
     "excerpt": "500M people watch Instagram Stories daily. Here's how polls, question boxes, countdown stickers, and link stickers turn local followers into booked customers.",
-    "tags": ["Social Media", "Local Business"],
+    "tags": [
+      "Social Media",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/instagram-stories-local-business/hero.jpg",
     "imageAlt": "Instagram Stories for local business showing 500M daily viewers stat and four story features that drive bookings"
@@ -124,7 +217,10 @@
     "title": "How Much Silver Should You Own? A Practical Allocation Guide",
     "date": "2026-06-02",
     "excerpt": "Most advisors recommend 5-15% in precious metals. Here's how to size your silver position using risk tolerance, the gold-silver ratio, and a simple allocation formula.",
-    "tags": ["Silver", "Investing"],
+    "tags": [
+      "Silver",
+      "Investing"
+    ],
     "author": "Nick",
     "image": "/blog/silver-portfolio-allocation/hero.jpg",
     "imageAlt": "Silver portfolio allocation guide showing 5-15% precious metals range and gold-silver ratio reference chart"
@@ -134,7 +230,10 @@
     "title": "How to Respond to Negative Reviews: A Local Business Owner's Playbook",
     "date": "2026-06-02",
     "excerpt": "89% of consumers read how businesses respond to negative reviews. Here's a proven 5-step formula to protect your reputation and turn bad reviews into new customers.",
-    "tags": ["Local Business", "Reputation"],
+    "tags": [
+      "Local Business",
+      "Reputation"
+    ],
     "author": "Nick",
     "image": "/blog/online-review-management-local-business/hero.jpg",
     "imageAlt": "Negative review response guide showing 45% more likely to visit stat and 89% read responses stat"
@@ -144,7 +243,10 @@
     "title": "What Your Google Business Profile Insights Are Actually Telling You",
     "date": "2026-06-01",
     "excerpt": "Complete GBP profiles get 7x more clicks than incomplete ones. Here's what each Insights metric means and which numbers to check every week.",
-    "tags": ["Google", "Local Business"],
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/google-business-profile-insights/hero.jpg",
     "imageAlt": "GBP Insights dashboard showing 7x more clicks for complete profiles, 76% visit within 24 hours, and 64% use GBP for contact info"
@@ -154,7 +256,10 @@
     "title": "How Silver Shaped Photography, Medicine, and Modern Electronics",
     "date": "2026-06-01",
     "excerpt": "Industrial silver demand hit a record 654 million ounces in 2023. Electronics, solar, and medicine now drive more demand than investors and jewelers combined.",
-    "tags": ["Silver", "History"],
+    "tags": [
+      "Silver",
+      "History"
+    ],
     "author": "Nick",
     "image": "/blog/silver-industrial-history/hero.jpg",
     "imageAlt": "Silver industrial demand chart: 654 million ounces total in 2023, electronics 38%, solar energy 25%"
@@ -164,7 +269,10 @@
     "title": "How to Spot Fake Silver: Six Tests Every New Buyer Should Know",
     "date": "2026-05-31",
     "excerpt": "Silver has the highest thermal conductivity of any metal at 429 W/mK. Here are six at-home tests that reliably catch silver-plated fakes, tungsten cores, and wrong-purity coins.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/how-to-spot-fake-silver/hero.jpg",
     "imageAlt": "Thermal conductivity chart showing silver at 429 W/mK compared to tungsten at 173 W/mK, with six fake-detection test icons"
@@ -174,7 +282,10 @@
     "title": "Why Your Local Business Website Is Losing Customers to Slow Load Times",
     "date": "2026-05-31",
     "excerpt": "Only 43% of mobile websites pass all Core Web Vitals in 2024. Here's how slow load times cut conversions, hurt Google rankings, and what to check first on your local business site.",
-    "tags": ["Websites", "Local Business"],
+    "tags": [
+      "Websites",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/website-speed-local-business/hero.jpg",
     "imageAlt": "Three stat cards: 43% of mobile websites pass all Core Web Vitals, 10% more users lost per extra second, 13% more conversions per second faster"
@@ -184,7 +295,10 @@
     "title": "How Word-of-Mouth Referrals Work for Local Businesses",
     "date": "2026-05-30",
     "excerpt": "92% of people trust recommendations from friends and family more than any ad. Here is how local businesses build a simple referral system that consistently brings in new customers.",
-    "tags": ["Marketing", "Local Business"],
+    "tags": [
+      "Marketing",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/word-of-mouth-referrals/hero.jpg",
     "imageAlt": "Three stat cards showing 92% trust referrals from people they know, 37% higher retention for referred customers, and referred customers are 4x more likely to refer others"
@@ -194,7 +308,10 @@
     "title": "What Moves the Silver Spot Price (And Why It Swings More Than Gold)",
     "date": "2026-05-30",
     "excerpt": "Silver's annual volatility averages 30 percent, roughly twice gold's. Here is what drives those swings: futures markets, the gold-silver ratio, ETF flows, and industrial demand floors.",
-    "tags": ["Silver", "Market"],
+    "tags": [
+      "Silver",
+      "Market"
+    ],
     "author": "Nick",
     "image": "/blog/what-moves-silver-price/hero.jpg",
     "imageAlt": "Three stat cards showing silver's 2x volatility vs gold, gold-silver ratio peaked at 124 to 1 in 2020, and 58% industrial demand floor"

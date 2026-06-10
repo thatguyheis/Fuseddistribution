@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="8%" cy="10%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-c)"/>
+  <rect width="1200" height="630" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-opacity="0.11" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="88" cy="62" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="245" cy="48" r="1.2" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="430" cy="78" r="1" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="770" cy="55" r="1.5" fill="#4dffb8" fill-opacity="0.15"/>
+  <circle cx="940" cy="88" r="1.2" fill="#58d6ff" fill-opacity="0.25"/>
+  <circle cx="1105" cy="44" r="1" fill="#4dffb8" fill-opacity="0.20"/>
+  <circle cx="155" cy="540" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="480" cy="575" r="1.2" fill="#4dffb8" fill-opacity="0.15"/>
+  <circle cx="855" cy="555" r="1" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="1080" cy="520" r="1.5" fill="#4dffb8" fill-opacity="0.17"/>
+
+  <!-- Left card: starting size -->
+  <rect x="42" y="170" width="272" height="180" rx="12" fill="rgba(4,16,24,0.78)" stroke="#58d6ff" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="178" y="210" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="2" fill="rgba(88,214,255,0.70)">BEST STARTING SIZE</text>
+  <text x="178" y="272" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="60" fill="#58d6ff" letter-spacing="1">1 OZ</text>
+  <text x="178" y="300" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.70)" letter-spacing="1">Silver Round</text>
+  <text x="178" y="320" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="11" fill="rgba(175,198,207,0.50)" letter-spacing="1">Investment Grade .999</text>
+
+  <!-- Right card: purity standard -->
+  <rect x="886" y="170" width="272" height="180" rx="12" fill="rgba(4,16,24,0.78)" stroke="#4dffb8" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="1022" y="210" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="2" fill="rgba(77,255,184,0.70)">PURITY STANDARD</text>
+  <text x="1022" y="272" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="60" fill="#4dffb8" letter-spacing="1">.999</text>
+  <text x="1022" y="300" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.75)" letter-spacing="1">Fine Silver</text>
+  <text x="1022" y="320" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="11" fill="rgba(175,198,207,0.50)" letter-spacing="1">99.9% Pure Silver</text>
+
+  <!-- Center main content -->
+  <text x="600" y="188" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="17" letter-spacing="4" fill="rgba(88,214,255,0.60)">FUSED DISTRIBUTION</text>
+  <text x="600" y="252" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="46" letter-spacing="2" fill="#ecf8fb">BUY SILVER FOR</text>
+  <text x="600" y="302" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="46" letter-spacing="2" fill="#58d6ff">THE FIRST TIME</text>
+
+  <!-- Divider -->
+  <line x1="380" y1="322" x2="820" y2="322" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+
+  <!-- Subtitle badges -->
+  <rect x="380" y="338" width="175" height="30" rx="8" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="467" y="358" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" letter-spacing="2" fill="rgba(88,214,255,0.85)">PREMIUM GUIDE</text>
+
+  <rect x="565" y="338" width="175" height="30" rx="8" fill="rgba(77,255,184,0.08)" stroke="rgba(77,255,184,0.18)" stroke-width="1"/>
+  <text x="652" y="358" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" letter-spacing="2" fill="rgba(77,255,184,0.85)">DEALER CHECKLIST</text>
+
+  <!-- Premium range note -->
+  <text x="600" y="415" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(175,198,207,0.60)" letter-spacing="1">Eagles 18-28% premium &middot; Rounds 5-10% &middot; Junk silver 3-8%</text>
+
+  <!-- Bottom brand bar -->
+  <rect x="42" y="540" width="1116" height="1" fill="rgba(88,214,255,0.10)"/>
+  <text x="600" y="580" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="3" fill="rgba(88,214,255,0.40)">FUSEDDISTRIBUTION.COM</text>
+</svg>

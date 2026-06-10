@@ -36,6 +36,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-07 | online-booking-local-business | Local Business | How local service businesses set up online booking to capture after-hours leads and reduce no-shows by 29% |
 | 2026-06-08 | short-form-video-local-business | Social Media | TikTok and Instagram Reels for local service businesses: 5 video types that drive customers, TikTok vs Reels platform comparison, and 5-video starter plan |
 | 2026-06-04 | text-message-marketing-local-business | Marketing | SMS open rates (98% vs 22% email), TCPA opt-in rules, 3-message follow-up sequence, and tools under $30/month for local businesses |
+| 2026-06-09 | how-to-set-up-google-business-profile-step-by-step | Google | Step-by-step GBP setup: account creation, category selection, 5 verification methods, photo requirements, and review collection system |
+| 2026-06-09 | google-business-profile-optimization-guide-2026 | Google | GBP ongoing optimization: weekly posts, review response strategy for 35% click lift, Q&A seeding, photo geo-tagging, and AI Overviews content |
 
 ---
 
@@ -62,3 +64,5 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-07 | silver-etf-vs-physical | Investing | Silver ETF (SLV, PSLV) vs physical silver comparison on counterparty risk, 28% IRS collectibles tax, 0.50% annual fees, and 10-year cost breakeven |
 | 2026-06-08 | silver-tarnish-prevention | Storage | How to prevent silver sulfide tarnish: materials to avoid (rubber, cardboard, wood), anti-tarnish strips, VCI capsules, and humidity control below 50% RH |
 | 2026-06-04 | silver-supply-deficit | Market | Silver's 211 million ounce annual deficit: mine production vs. 1.2 billion ounce demand, solar/EV/industrial demand growth, and COMEX inventory drawdown |
+| 2026-06-09 | how-to-buy-silver-for-the-first-time | Buying Guide | First silver purchase guide: 1 oz starting size, .999 purity, American Silver Eagles vs rounds vs bars, dealer selection, and true cost-per-ounce calculation |
+| 2026-06-09 | where-to-buy-silver-online-safely | Buying Guide | Safe online silver buying: 7-point dealer verification checklist, fraud red flags, SSL checkout, buy-back programs, and track record verification |
