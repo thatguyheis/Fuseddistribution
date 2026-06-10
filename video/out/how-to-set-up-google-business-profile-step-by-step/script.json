@@ -1,0 +1,114 @@
+{
+  "slug": "how-to-set-up-google-business-profile-step-by-step",
+  "title": "How to Set Up Google Business Profile Step by Step",
+  "totalDuration": 196,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 9,
+      "text": "46% OF SEARCHES HAVE LOCAL INTENT",
+      "narration": "46 percent of Google searches have local intent. No profile means none of that traffic can find you."
+    },
+    {
+      "type": "stat",
+      "startSec": 9,
+      "endSec": 30,
+      "text": "7x MORE CLICKS FOR COMPLETE PROFILES",
+      "narration": "Complete Google Business Profiles get 7 times more clicks than incomplete ones. That gap is between a profile with every field filled in and one that only has a name and address. The difference costs nothing to close.",
+      "explanation": "Complete Google Business Profiles get 7x more clicks than incomplete ones",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 30,
+      "endSec": 52,
+      "text": "FREE AT BUSINESS.GOOGLE.COM",
+      "narration": "Google Business Profile is completely free. No subscription, no listing fee, and no charge to respond to reviews. You create and manage it at business dot google dot com using any Google account. Start there before doing anything else.",
+      "explanation": "Google Business Profile is completely free to create, verify, and manage",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 52,
+      "endSec": 74,
+      "text": "PRIMARY CATEGORY: MOST IMPORTANT FIELD",
+      "narration": "The primary business category is the most important field in your entire profile. It determines which search queries you are eligible to appear in. Choose the most specific category that accurately describes your main service. You can add secondary categories for everything else you offer.",
+      "explanation": "Primary business category is the single highest-weight ranking field in GBP",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 74,
+      "endSec": 98,
+      "text": "NAP CONSISTENCY ACROSS THE WEB",
+      "narration": "NAP stands for Name, Address, and Phone. Those three fields must match exactly across your website, your GBP, Yelp, Facebook, and every directory listing. Even small differences, like Street versus St., suppress local ranking. Inconsistencies signal distrust to Google even when the rest of your profile is complete.",
+      "explanation": "Name, Address, Phone must match exactly across GBP, your website, and every directory listing",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 98,
+      "endSec": 121,
+      "text": "VERIFICATION: 5 METHODS AVAILABLE",
+      "narration": "Google offers five verification methods. Postcard arrives in 5 to 14 days. Phone or text verification is immediate when available. Video recording resolves in 3 to 5 business days. Instant verification is available if your website is already in Google Search Console under the same account. Choose the fastest option available.",
+      "explanation": "GBP offers five verification methods. Postcard takes 5-14 days. Phone and text are immediate. Video takes 3-5 days. Instant verification available with Search Console",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 121,
+      "endSec": 143,
+      "text": "42% MORE DIRECTION REQUESTS WITH PHOTOS",
+      "narration": "Profiles with photos receive 42 percent more requests for directions than profiles without any. Add at least 10 photos before your profile goes fully live. Exterior shots, interior shots, team photos, and examples of your work. Update with new photos monthly to signal an active profile.",
+      "explanation": "Profiles with photos receive 42 percent more direction requests than those without",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 143,
+      "endSec": 165,
+      "text": "REVIEW LINK FROM YOUR DASHBOARD",
+      "narration": "Once verification is complete, open your GBP dashboard and find the Get More Reviews section. Copy that short link. Send it in follow-up emails and text messages. The best time to ask is 24 to 48 hours after service.",
+      "explanation": "GBP provides a short review link to send customers directly to your review page",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 165,
+      "endSec": 187,
+      "title": "Relative Impact on Local Search Ranking by GBP Factor",
+      "bars": [],
+      "narration": "Primary category selection carries the most ranking weight of any field in Google Business Profile. Review count and responses rank second. Complete NAP information is third. Adding 10 or more photos provides a meaningful lift. Regular posts carry moderate weight and signal an actively managed business."
+    },
+    {
+      "type": "question",
+      "startSec": 187,
+      "endSec": 196,
+      "text": "HOW LONG DID YOUR VERIFICATION TAKE?",
+      "narration": "Follow for more local business tips.",
+      "subtext": "DROP YOUR ANSWER BELOW"
+    }
+  ]
+}
