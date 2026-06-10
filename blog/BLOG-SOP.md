@@ -662,8 +662,13 @@ Either way, **rotate the leaked credential** — it was transmitted even if the 
 Symptom: `Failed to automatically retrieve account IDs` / `Authentication error [code: 10000]`.
 1. Check the real error: latest log in `~/Library/Preferences/.wrangler/logs/`.
 2. Code 10000 on API calls = OAuth session revoked server-side, even if `~/Library/Preferences/.wrangler/config/default.toml` shows a future `expiration_time`.
-3. Fix: `npx wrangler login` (interactive — Nick must complete in browser). Then re-run `npx wrangler deploy`.
-4. `account_id` is pinned in `wrangler.jsonc` so account lookup can't block deploys.
+3. First fallback (automated): API token stored in macOS Keychain under service `cloudflare-api-token`:
+   ```bash
+   CLOUDFLARE_API_TOKEN=$(security find-generic-password -s cloudflare-api-token -w) npx wrangler deploy
+   ```
+   Never echo this token or write it to any file. To rotate: roll the "Edit Cloudflare Workers" token in the Cloudflare dashboard, then `security add-generic-password -U -s cloudflare-api-token -a wrangler -w` (interactive prompt).
+4. Second fallback (manual): `npx wrangler login` (interactive — Nick must complete in browser). Then re-run `npx wrangler deploy`.
+5. `account_id` is pinned in `wrangler.jsonc` so account lookup can't block deploys.
 
 ### Pipeline blocker policy
 When the 9 AM pipeline hits a blocker (push rejected, deploy auth, render fail):
