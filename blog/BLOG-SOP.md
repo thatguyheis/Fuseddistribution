@@ -60,6 +60,11 @@ echo $PEXELS_API_KEY
 - [ ] Add internal links to 2-3 related posts (§9 Internal Linking)
 - [ ] Append to `blog/topic-history.md`
 - [ ] Validate reel-script.md (§3.4 checks) + social-copy.json (no em dashes)
+- [ ] **SVG entity check** — run for EVERY slug before commit:
+  ```bash
+  grep -En "&[a-zA-Z]+;" blog/[slug]/hero.svg blog/[slug]/photo-post.svg
+  ```
+  Must return zero matches. If any found: replace with numeric entity (`&middot;`→`&#183;`, `&nbsp;`→`&#160;`, `&bull;`→`&#8226;`, `&mdash;`→`&#8212;`, `&ndash;`→`&#8211;`) then regenerate the `.jpg`.
 - [ ] Run `node blog/scripts/generate-sitemap.mjs`
 - [ ] `git add blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
 - [ ] Write `social-copy.json` (§14)
@@ -439,6 +444,29 @@ File path: `blog/topic-history.md` — shared file, committed with every new pos
 ---
 
 ## 13. Publish
+
+### Step 0 — SVG entity validation (run BEFORE commit — blocks deploy on failure)
+
+Check every SVG for illegal named HTML entities:
+```bash
+grep -En "&[a-zA-Z]+;" blog/[slug]/hero.svg blog/[slug]/photo-post.svg
+```
+Zero matches required. Named entities (`&middot;`, `&nbsp;`, `&bull;`, `&mdash;`, `&ndash;`, etc.) are not defined in XML/SVG — browsers throw a parse error and the image won't render.
+
+Replace any matches with their numeric equivalents:
+
+| Named entity | Numeric |
+|---|---|
+| `&middot;` | `&#183;` |
+| `&nbsp;` | `&#160;` |
+| `&bull;` | `&#8226;` |
+| `&mdash;` | `&#8212;` |
+| `&ndash;` | `&#8211;` |
+| `&copy;` | `&#169;` |
+| `&trade;` | `&#8482;` |
+| `&reg;` | `&#174;` |
+
+After fixing, regenerate the `.jpg` for any SVG that changed (Chrome headless, same command as §7/§15).
 
 ### Step 1 — Commit and push to GitHub
 ```bash
