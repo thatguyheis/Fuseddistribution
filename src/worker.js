@@ -41,6 +41,12 @@ const RATE_LIMIT_WINDOW_MS = 60_000;
 
 function isRateLimited(ip) {
   const now = Date.now();
+  // Evict expired entries when the map grows, so it can't grow unbounded
+  if (rateLimitStore.size > 1000) {
+    for (const [k, v] of rateLimitStore) {
+      if (now > v.reset) rateLimitStore.delete(k);
+    }
+  }
   const entry = rateLimitStore.get(ip);
   if (!entry || now > entry.reset) {
     rateLimitStore.set(ip, { count: 1, reset: now + RATE_LIMIT_WINDOW_MS });
@@ -244,8 +250,13 @@ export default {
         const notFound = await env.ASSETS.fetch(
           new Request(new URL("/404.html", request.url).toString())
         );
-        if (notFound.ok) {
-          const r404 = new Response(notFound.body, { status: 404, headers: notFound.headers });
+        if (notFound.status === 200) {
+          // Copy only safe headers — content-encoding/content-length from the
+          // asset response describe the compressed stream and corrupt the reply.
+          const h = new Headers(notFound.headers);
+          h.delete("content-encoding");
+          h.delete("content-length");
+          const r404 = new Response(notFound.body, { status: 404, headers: h });
           return withSecurityHeaders(await applyNonce(r404, nonce), nonce);
         }
       } catch {}

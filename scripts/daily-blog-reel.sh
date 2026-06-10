@@ -6,6 +6,9 @@ LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 
 echo "\n=== $(date) ===" >> "$LOG_FILE"
 
+# Anchor: line count at run start, so end-of-run scans only THIS run's output
+RUN_START_LINE=$(wc -l < "$LOG_FILE" | tr -d ' ')
+
 cd "$PROJECT_DIR" || exit 1
 
 # Guard: .env must exist before pipeline starts
@@ -120,6 +123,32 @@ Steps:
 CLAUDE_EXIT=$?
 echo "Claude exit code: $CLAUDE_EXIT" >> "$LOG_FILE"
 
+# ── Session-limit auto-retry ────────────────────────────────────────────────
+# "You've hit your session limit · resets 1pm" killed 3 of the last 6 morning
+# runs. Parse the reset time, sleep until reset + 10 min, re-exec once.
+if [ -z "$DAILY_BLOG_RETRY" ]; then
+  RUN_LOG=$(tail -n +"$((RUN_START_LINE + 1))" "$LOG_FILE")
+  if echo "$RUN_LOG" | grep -q "session limit"; then
+    RESET_RAW=$(echo "$RUN_LOG" | grep -oE "resets [0-9]{1,2}(:[0-9]{2})?(am|pm)" | head -1 | sed 's/resets //')
+    if [ -n "$RESET_RAW" ]; then
+      H=$(echo "$RESET_RAW" | grep -oE "^[0-9]{1,2}")
+      M=$(echo "$RESET_RAW" | grep -oE ":[0-9]{2}" | tr -d ':'); M=${M:-0}
+      AP=$(echo "$RESET_RAW" | grep -oE "(am|pm)")
+      [ "$AP" = "pm" ] && [ "$H" -ne 12 ] && H=$((H + 12))
+      [ "$AP" = "am" ] && [ "$H" -eq 12 ] && H=0
+      TARGET=$(date -j -f "%H:%M:%S" "$(printf "%02d:%02d:00" "$H" "$M")" +%s 2>/dev/null)
+      NOW=$(date +%s)
+      WAIT=$((TARGET - NOW + 600))
+      if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 28800 ]; then
+        echo "Session limit — sleeping ${WAIT}s until $RESET_RAW + 10 min, then retrying once" >> "$LOG_FILE"
+        sleep "$WAIT"
+        DAILY_BLOG_RETRY=1 exec "$0"
+      fi
+    fi
+    echo "Session limit hit but reset time unparseable or out of range — no retry" >> "$LOG_FILE"
+  fi
+fi
+
 # ── Post-run MP4 verification ──────────────────────────────────────────────
 # Read slugs written by Claude during the run
 SLUG_FILE="/tmp/reel-pipeline-slugs.txt"
@@ -164,8 +193,8 @@ notify() {
   osascript -e "display notification \"$1\" with title \"Daily Blog Pipeline\" sound name \"Basso\"" 2>/dev/null
 }
 
-# Scan this run's log tail for blocker keywords Claude may have written
-RUN_ERRORS=$(tail -80 "$LOG_FILE" | grep -cE "DEPLOY FAILED|NOT LIVE|BLOCKED|session limit|PIPELINE WARNING|RETRY FAILED")
+# Scan only THIS run's log lines for blocker keywords Claude may have written
+RUN_ERRORS=$(tail -n +"$((RUN_START_LINE + 1))" "$LOG_FILE" | grep -cE "DEPLOY FAILED|NOT LIVE|BLOCKED|session limit|PIPELINE WARNING|RETRY FAILED")
 
 if [ "$MISSING_RENDERS" -gt 0 ]; then
   echo "PIPELINE INCOMPLETE: $MISSING_RENDERS render(s) failed — check log" >> "$LOG_FILE"

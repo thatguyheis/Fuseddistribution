@@ -78,4 +78,4 @@ const postArg = process.argv.find(a => a.startsWith('--post='));
 const musicArg = process.argv.find(a => a.startsWith('--music='));
 const reelArg = process.argv.find(a => a.startsWith('--reel='));
 if (!postArg) { console.error('Usage: node render.mjs --post=<slug> [--reel=N] [--music=ambient-02.mp3]'); process.exit(1); }
-renderPost(postArg.replace('--post=', ''), musicArg?.replace('--music=', ''), reelArg?.replace('--reel=', '') ?? null);
+renderPost(postArg.replace('--post=', ''), musicArg?.replace('--music=', '') || undefined, reelArg?.replace('--reel=', '') ?? null);
