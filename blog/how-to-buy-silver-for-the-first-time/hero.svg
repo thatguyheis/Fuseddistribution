@@ -70,7 +70,7 @@
   <text x="652" y="358" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" letter-spacing="2" fill="rgba(77,255,184,0.85)">DEALER CHECKLIST</text>
 
   <!-- Premium range note -->
-  <text x="600" y="415" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(175,198,207,0.60)" letter-spacing="1">Eagles 18-28% premium &middot; Rounds 5-10% &middot; Junk silver 3-8%</text>
+  <text x="600" y="415" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(175,198,207,0.60)" letter-spacing="1">Eagles 18-28% premium &#183; Rounds 5-10% &#183; Junk silver 3-8%</text>
 
   <!-- Bottom brand bar -->
   <rect x="42" y="540" width="1116" height="1" fill="rgba(88,214,255,0.10)"/>
