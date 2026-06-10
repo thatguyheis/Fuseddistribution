@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#bg-glow)"/>
+
+  <!-- Outer frame -->
+  <rect x="50" y="60" width="1100" height="1080" rx="28" fill="#0f1e28" stroke="rgba(88,214,255,0.12)" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="60" width="1100" height="72" rx="28" fill="#0a1820"/>
+  <rect x="50" y="108" width="1100" height="24" fill="#0a1820"/>
+
+  <!-- Google colored logo -->
+  <text x="100" y="108" font-family="'Trebuchet MS',sans-serif" font-size="36" font-weight="700">
+    <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+  </text>
+
+  <!-- Search bar -->
+  <rect x="180" y="78" width="820" height="52" rx="26" fill="#1a2d3a" stroke="rgba(88,214,255,0.22)" stroke-width="1.5"/>
+  <text x="210" y="111" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="#e8f4f8">google local service ads cost</text>
+  <!-- Search icon -->
+  <circle cx="970" cy="104" r="12" fill="none" stroke="rgba(175,198,207,0.60)" stroke-width="2.5"/>
+  <line x1="979" y1="113" x2="990" y2="124" stroke="rgba(175,198,207,0.60)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Results count -->
+  <text x="100" y="170" font-family="'Trebuchet MS',sans-serif" font-size="18" fill="rgba(175,198,207,0.45)">About 87,200 results (0.51 seconds)</text>
+
+  <!-- RESULT CARD 1 (highlighted) -->
+  <rect x="72" y="192" width="1056" height="240" rx="14" fill="rgba(88,214,255,0.04)" stroke="#58d6ff" stroke-opacity="0.30" stroke-width="1.5"/>
+
+  <circle cx="108" cy="226" r="14" fill="#1a2d3a" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="108" y="231" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" font-weight="700" fill="#4dffb8">F</text>
+
+  <text x="134" y="222" font-family="'Trebuchet MS',sans-serif" font-size="17" fill="#4dffb8">fuseddistribution.com</text>
+  <text x="134" y="243" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(77,255,184,0.55)">fuseddistribution.com/blog/google-local-service-ads/</text>
+
+  <text x="100" y="288" font-family="'Trebuchet MS',sans-serif" font-size="28" font-weight="700" fill="#e8f4f8">Google Local Service Ads: Pay Per Lead, Not Per Click</text>
+
+  <text x="100" y="326" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">Home service trades pay $10-25 per lead. Google Guaranteed badge</text>
+  <text x="100" y="355" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">covers up to $2,000 per job. Verification guide and CPL breakdown.</text>
+  <text x="100" y="384" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="rgba(175,198,207,0.80)">Appears above all Google Ads and organic results.</text>
+
+  <!-- RESULT CARD 2 -->
+  <rect x="72" y="450" width="1056" height="210" rx="14" fill="rgba(7,18,26,0.60)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <circle cx="108" cy="484" r="14" fill="#1a2d3a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="108" y="489" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="11" font-weight="700" fill="rgba(175,198,207,0.70)">W</text>
+
+  <text x="134" y="480" font-family="'Trebuchet MS',sans-serif" font-size="17" fill="rgba(77,255,184,0.45)">wordstream.com</text>
+  <text x="134" y="501" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(77,255,184,0.28)">wordstream.com/google-local-services-ads</text>
+
+  <text x="100" y="544" font-family="'Trebuchet MS',sans-serif" font-size="26" font-weight="700" fill="rgba(232,244,248,0.70)">Google Local Services Ads: How They Work (2026)</text>
+  <text x="100" y="578" font-family="'Trebuchet MS',sans-serif" font-size="21" fill="rgba(175,198,207,0.55)">Learn how Google Local Services Ads differ from standard search ads,</text>
+  <text x="100" y="606" font-family="'Trebuchet MS',sans-serif" font-size="21" fill="rgba(175,198,207,0.55)">who qualifies, and how to set up your first campaign.</text>
+
+  <!-- RESULT CARD 3 -->
+  <rect x="72" y="678" width="1056" height="210" rx="14" fill="rgba(7,18,26,0.60)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <circle cx="108" cy="712" r="14" fill="#1a2d3a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="108" y="717" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="11" font-weight="700" fill="rgba(175,198,207,0.70)">S</text>
+
+  <text x="134" y="708" font-family="'Trebuchet MS',sans-serif" font-size="17" fill="rgba(77,255,184,0.45)">searchengineland.com</text>
+  <text x="134" y="729" font-family="'Trebuchet MS',sans-serif" font-size="14" fill="rgba(77,255,184,0.28)">searchengineland.com/local-service-ads-guide</text>
+
+  <text x="100" y="772" font-family="'Trebuchet MS',sans-serif" font-size="26" font-weight="700" fill="rgba(232,244,248,0.70)">Local Service Ads: Complete Guide for Service Businesses</text>
+  <text x="100" y="806" font-family="'Trebuchet MS',sans-serif" font-size="21" fill="rgba(175,198,207,0.55)">Everything you need to know about getting the Google Guaranteed</text>
+  <text x="100" y="834" font-family="'Trebuchet MS',sans-serif" font-size="21" fill="rgba(175,198,207,0.55)">badge and running pay-per-lead ads for your service business.</text>
+
+  <!-- Bottom brand watermark -->
+  <text x="1150" y="1160" text-anchor="end" font-family="'Trebuchet MS',sans-serif"
+    font-size="22" fill="rgba(88,214,255,0.40)">fuseddistribution.com</text>
+</svg>

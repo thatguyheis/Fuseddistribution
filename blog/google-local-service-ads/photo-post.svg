@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="pp-cyan" cx="65%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pp-green" cx="20%" cy="15%" r="40%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <path id="star-sm2" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#pp-cyan)"/>
+  <rect width="1200" height="1200" fill="url(#pp-green)"/>
+
+  <!-- Grid lines -->
+  <line x1="170"  y1="0" x2="170"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340"  y1="0" x2="340"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510"  y1="0" x2="510"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680"  y1="0" x2="680"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850"  y1="0" x2="850"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="600" r="320" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="155"  r="1.4" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="90"   r="1.5" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="520" cy="240"  r="1"   fill="#58d6ff" opacity="0.25"/>
+  <circle cx="760" cy="115"  r="1.4" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="920" cy="195"  r="1.2" fill="#4dffb8" opacity="0.16"/>
+  <circle cx="1070" cy="105" r="1"   fill="#58d6ff" opacity="0.22"/>
+  <circle cx="188" cy="1050" r="1.3" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="440" cy="1090" r="1.2" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="820" cy="1060" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="1080" cy="980" r="1"   fill="#4dffb8" opacity="0.22"/>
+
+  <!-- Top zone: eyebrow + brand -->
+  <text x="600" y="95"  text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="14" letter-spacing="5" fill="#4dffb8" opacity="0.75">FUSED TECHNOLOGY SOLUTIONS</text>
+  <text x="600" y="135" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="14" letter-spacing="4" fill="rgba(88,214,255,0.55)">GOOGLE ADVERTISING GUIDE</text>
+
+  <!-- Thin top accent line -->
+  <rect x="340" y="148" width="520" height="1" rx="1" fill="#58d6ff" opacity="0.2"/>
+
+  <!-- Main title -->
+  <text x="600" y="280" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="80" letter-spacing="2" fill="#ecf8fb">GOOGLE LOCAL</text>
+  <text x="600" y="368" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="80" letter-spacing="2" fill="#ecf8fb">SERVICE ADS</text>
+
+  <!-- Key stat -->
+  <text x="600" y="540" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="200" letter-spacing="-4" fill="#58d6ff">$10</text>
+  <text x="600" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="4" fill="rgba(175,198,207,0.65)">TO $25 AVG COST PER LEAD</text>
+
+  <!-- Divider -->
+  <rect x="200" y="675" width="800" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
+
+  <!-- Three key points -->
+  <text x="600" y="726" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Pay per lead, not per click</text>
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Appears #1 above all Google Ads</text>
+  <text x="600" y="802" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Google Guaranteed badge up to $2,000 coverage</text>
+
+  <!-- Divider -->
+  <rect x="200" y="840" width="800" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
+
+  <!-- Excerpt text -->
+  <text x="600" y="895" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="rgba(175,198,207,0.6)">Get the badge. Skip the click waste.</text>
+  <text x="600" y="924" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="rgba(175,198,207,0.6)">Full verification guide and CPL breakdown.</text>
+
+  <!-- CTA button shape -->
+  <rect x="310" y="980" width="580" height="68" rx="16" fill="rgba(88,214,255,0.06)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="600" y="1023" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="17" letter-spacing="3" fill="rgba(88,214,255,0.8)">FULL BREAKDOWN AT FUSEDDISTRIBUTION.COM</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="1160" width="1200" height="40" fill="rgba(4,16,24,0.9)"/>
+  <text x="600" y="1184" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="12" letter-spacing="4" fill="rgba(88,214,255,0.4)">FUSEDDISTRIBUTION.COM/BLOG/GOOGLE-LOCAL-SERVICE-ADS</text>
+</svg>

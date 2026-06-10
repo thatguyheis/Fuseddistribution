@@ -38,6 +38,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-04 | text-message-marketing-local-business | Marketing | SMS open rates (98% vs 22% email), TCPA opt-in rules, 3-message follow-up sequence, and tools under $30/month for local businesses |
 | 2026-06-09 | how-to-set-up-google-business-profile-step-by-step | Google | Step-by-step GBP setup: account creation, category selection, 5 verification methods, photo requirements, and review collection system |
 | 2026-06-09 | google-business-profile-optimization-guide-2026 | Google | GBP ongoing optimization: weekly posts, review response strategy for 35% click lift, Q&A seeding, photo geo-tagging, and AI Overviews content |
+| 2026-06-10 | google-local-service-ads | Advertising | Google Local Service Ads pay-per-lead model: Google Guaranteed badge ($2,000 per job), Google Screened for professionals, CPL $10-25 for home services, 2-6 week verification process |
 
 ---
 
@@ -66,3 +67,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-04 | silver-supply-deficit | Market | Silver's 211 million ounce annual deficit: mine production vs. 1.2 billion ounce demand, solar/EV/industrial demand growth, and COMEX inventory drawdown |
 | 2026-06-09 | how-to-buy-silver-for-the-first-time | Buying Guide | First silver purchase guide: 1 oz starting size, .999 purity, American Silver Eagles vs rounds vs bars, dealer selection, and true cost-per-ounce calculation |
 | 2026-06-09 | where-to-buy-silver-online-safely | Buying Guide | Safe online silver buying: 7-point dealer verification checklist, fraud red flags, SSL checkout, buy-back programs, and track record verification |
+| 2026-06-10 | fractional-silver-coins | Types | Fractional silver coin premiums: 1/10 oz at 130% over spot vs 1 oz at 12%, minting economics, barter/gifting use cases, and when to skip fractional sizes |

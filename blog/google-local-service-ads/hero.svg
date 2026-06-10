@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow-cyan" cx="60%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-green" cx="15%" cy="20%" r="35%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+    <path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#glow-cyan)"/>
+  <rect width="1200" height="630" fill="url(#glow-green)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88"  r="1.2" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="54"  r="1.5" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="520" cy="142" r="1"   fill="#58d6ff" opacity="0.25"/>
+  <circle cx="760" cy="72"  r="1.4" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="920" cy="118" r="1.2" fill="#4dffb8" opacity="0.16"/>
+  <circle cx="1055" cy="58" r="1"   fill="#58d6ff" opacity="0.22"/>
+  <circle cx="188" cy="510" r="1.3" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="440" cy="560" r="1.2" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="820" cy="540" r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="1080" cy="490" r="1"  fill="#4dffb8" opacity="0.22"/>
+
+  <!-- Left card: verification info -->
+  <rect x="42" y="210" width="270" height="200" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <rect x="42" y="210" width="270" height="4" rx="2" fill="#4dffb8" opacity="0.6"/>
+  <text x="177" y="248" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#4dffb8" opacity="0.8">GOOGLE GUARANTEED</text>
+  <!-- Checkmark shield shape -->
+  <text x="177" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#4dffb8" opacity="0.75">&#10003;</text>
+  <text x="177" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Background checked</text>
+  <text x="177" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Licensed &#183; Insured</text>
+  <text x="177" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.55)">Up to $2,000 guarantee</text>
+
+  <!-- Center: main headline -->
+  <text x="600" y="186" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="#4dffb8" opacity="0.85">PAY PER LEAD &#183; NOT PER CLICK</text>
+  <text x="600" y="268" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="68" letter-spacing="2" fill="#ecf8fb">GOOGLE LOCAL</text>
+  <text x="600" y="338" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="68" letter-spacing="2" fill="#ecf8fb">SERVICE ADS</text>
+
+  <!-- Big stat -->
+  <text x="600" y="432" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="100" letter-spacing="-2" fill="#58d6ff">$10-25</text>
+  <text x="600" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="rgba(175,198,207,0.65)">AVG COST PER LEAD &#183; HOME SERVICES</text>
+
+  <!-- Stars row below stat -->
+  <use href="#star-sm" transform="translate(564,498)" fill="#4dffb8" opacity="0.7"/>
+  <use href="#star-sm" transform="translate(582,498)" fill="#4dffb8" opacity="0.7"/>
+  <use href="#star-sm" transform="translate(600,498)" fill="#4dffb8" opacity="0.7"/>
+  <use href="#star-sm" transform="translate(618,498)" fill="#4dffb8" opacity="0.7"/>
+  <use href="#star-sm" transform="translate(636,498)" fill="#4dffb8" opacity="0.35"/>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(175,198,207,0.5)" letter-spacing="1">4.8 STARS DRIVES HIGHER LSA PLACEMENT</text>
+
+  <!-- Right card: position info -->
+  <rect x="888" y="210" width="270" height="200" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <rect x="888" y="210" width="270" height="4" rx="2" fill="#58d6ff" opacity="0.6"/>
+  <text x="1023" y="248" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#58d6ff" opacity="0.8">SEARCH PLACEMENT</text>
+  <text x="1023" y="314" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="72" letter-spacing="-2" fill="#58d6ff">#1</text>
+  <text x="1023" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Above all Google Ads</text>
+  <text x="1023" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.7)">Above all organic results</text>
+  <text x="1023" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.55)">Verification required</text>
+
+  <!-- Bottom brand bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(4,16,24,0.9)"/>
+  <text x="600" y="614" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="rgba(88,214,255,0.5)">FUSEDDISTRIBUTION.COM</text>
+</svg>
