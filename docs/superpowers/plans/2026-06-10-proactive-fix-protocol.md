@@ -47,7 +47,7 @@ The daily blog + reel pipeline should detect, diagnose, and fix its own failures
 - gitleaks (brew) replacing grep hook for better pattern coverage
 - Weekly wrangler auth canary: `npx wrangler whoami` in a Monday pre-flight; alert before the 9 AM run fails
 - Log rotation for `~/Library/Logs/daily-blog-reel.log`
-- Alert channel: failures push a message via OpenClaw so Nick sees blockers on his phone same-day
+- Alert channel: failures surface same-day (OpenClaw no longer installed — pick: macOS notification via osascript, email, or SMS/messaging service; TBD)
 
 ## Decision — RESOLVED 2026-06-10
 

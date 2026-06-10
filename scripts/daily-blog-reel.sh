@@ -159,10 +159,23 @@ fi
 # Kill any Remotion processes left over from this run
 pkill -f "chrome-headless-shell" 2>/dev/null
 
+# ── Failure alert (macOS notification) ─────────────────────────────────────
+notify() {
+  osascript -e "display notification \"$1\" with title \"Daily Blog Pipeline\" sound name \"Basso\"" 2>/dev/null
+}
+
+# Scan this run's log tail for blocker keywords Claude may have written
+RUN_ERRORS=$(tail -80 "$LOG_FILE" | grep -cE "DEPLOY FAILED|NOT LIVE|BLOCKED|session limit|PIPELINE WARNING|RETRY FAILED")
+
 if [ "$MISSING_RENDERS" -gt 0 ]; then
   echo "PIPELINE INCOMPLETE: $MISSING_RENDERS render(s) failed — check log" >> "$LOG_FILE"
+  notify "FAILED: $MISSING_RENDERS render(s) incomplete. Check daily-blog-reel.log"
   echo "Exit code: 1" >> "$LOG_FILE"
   exit 1
+fi
+
+if [ "$CLAUDE_EXIT" -ne 0 ] || [ "$RUN_ERRORS" -gt 0 ]; then
+  notify "Completed with warnings ($RUN_ERRORS flagged lines). Check daily-blog-reel.log"
 fi
 
 echo "Exit code: 0" >> "$LOG_FILE"
