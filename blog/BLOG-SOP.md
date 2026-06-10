@@ -56,6 +56,8 @@ echo $PEXELS_API_KEY
   rm /tmp/photo-post-tmp.png
   ```
 - [ ] Write `social-copy.json` (§14) — apply §9 writing rules to every caption field
+- [ ] Run `social-ad` skill — generates 2 SVG ad templates -> JPEG, updates `organic_ads[]` in social-copy.json
+- [ ] Run `ugc-script` skill — writes 2 A/B UGC script variants to `ugc-script.md`, validated
 - [ ] Add entry to `posts.json` top of array — `"image"` must use `.jpg` not `.svg`
 - [ ] Add internal links to 2-3 related posts (§9 Internal Linking)
 - [ ] Append to `blog/topic-history.md`
@@ -113,6 +115,9 @@ blog/
     hero.jpg            ← generated from hero.svg (Chrome headless) — OG tags + reel segment-0
     reel-data.md        ← required (§11) — single long-form section
     reel-script.md      ← written by REEL-SOP workflow
+    ugc-script.md           ← 2 A/B UGC script variants for real-person filming
+    ad-stat-card.svg/.jpg   ← generated organic ad (stat-card template)
+    ad-google-search.svg/.jpg ← generated organic ad (google-search template)
     photo-post.svg      ← required (§15) — 1200×1200 square
     photo-post.jpg      ← generated from photo-post.svg (Chrome headless) — Postiz/social upload
     social-copy.json    ← required (§14) — captions per platform
@@ -539,6 +544,15 @@ File path: `blog/[slug]/social-copy.json`
 **Share CTA rule:** Every reel caption on Facebook and Instagram must close with "Send this to someone who needs to hear it." or a direct variant ("Share this with someone who stacks silver." for silver posts). DM shares are the #1 Instagram distribution signal — outweigh likes 5:1.
 
 **Finance disclaimer rule:** If any caption mentions price, return, gain, profit, or performance, append the `disclaimer` field as the last line of that caption. Always include it in the `disclaimer` JSON field regardless. **Exception for X:** X captions are capped at 280 chars including URL — if adding the disclaimer would exceed 280 chars, omit it from the X field only.
+
+The `organic_ads` key is added by the `social-ad` skill after post build. It is additive — existing platform keys (facebook, instagram, twitter, linkedin) are not modified.
+
+```json
+"organic_ads": [
+  { "type": "stat-card",     "file": "/blog/[slug]/ad-stat-card.jpg" },
+  { "type": "google-search", "file": "/blog/[slug]/ad-google-search.jpg" }
+]
+```
 
 **No em dashes anywhere.** Same writing style rules as blog posts apply to all captions.
 
