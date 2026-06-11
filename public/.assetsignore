@@ -1,0 +1,8 @@
+*.md
+*.log
+*.bak
+.DS_Store
+.assetsignore
+blog/scripts
+blog/research
+blog/*/social-copy.json
