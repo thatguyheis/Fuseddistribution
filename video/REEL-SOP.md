@@ -94,6 +94,20 @@ To add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3
 
 ## Per-Post Workflow
 
+### Step 0a — Pre-render environment check (REQUIRED in automated pipeline)
+
+Before running any render, kill stale Remotion chrome processes from previous runs. Zombie processes consume render worker slots and cause silent failures where the MP4 is written but empty or < 5 MB.
+
+```bash
+# Kill any leftover chrome-headless-shell from prior Remotion runs
+pkill -f "chrome-headless-shell" 2>/dev/null
+echo "Cleared zombie Remotion processes"
+```
+
+Run this once before the first render of the session. If a previous pipeline run was interrupted (rate limit, crash), there will almost certainly be stale processes.
+
+---
+
 ### Step 0 — Sub-Agent Review Procedure (REQUIRED when auditing AI-generated scripts)
 
 Every reel script produced by a sub-agent must pass this review before render. This step exists because sub-agents compress work — they miss timing bugs, fabricate stats, drop chart data, and drift from the blog source. Nick audits every long-form reel before it goes to render.
@@ -167,7 +181,7 @@ Score the reel 1–5 on each dimension before posting:
 
 ### Step 1 — Read reel-data.md
 
-Every blog post has a `blog/<slug>/reel-data.md` companion file with the hook, stats, chart data, CTA, and Pexels queries pre-extracted. Read this file — do not re-read `index.html`.
+Every blog post has a `public/blog/<slug>/reel-data.md` companion file with the hook, stats, chart data, CTA, and Pexels queries pre-extracted. Read this file — do not re-read `index.html`.
 
 If `reel-data.md` is missing (legacy posts only), fall back to reading the blog HTML and create the reel-data.md before proceeding.
 
@@ -198,7 +212,7 @@ Long Form covers the full blog post arc. Facebook/Instagram group research shows
 7. Close with a `## QUESTION` segment (not CTA). See §Closing Segment Rules below.
 
 ### Step 3 — Write the reel script
-Create `blog/<slug>/reel-script.md`:
+Create `public/blog/<slug>/reel-script.md`:
 
 ```markdown
 # Reel Script: [Title]
@@ -526,11 +540,11 @@ Blog `pexels-*.jpg` images are already downloaded during blog creation — copy 
 mkdir -p video/public/photos/<slug>
 
 # Segment-0 = HOOK thumbnail — always use hero.jpg
-cp blog/<slug>/hero.jpg video/public/photos/<slug>/segment-0.jpg
+cp public/blog/<slug>/hero.jpg video/public/photos/<slug>/segment-0.jpg
 
 # Reuse blog pexels images for early body segments
-cp blog/<slug>/images/pexels-0.jpg video/public/photos/<slug>/segment-1.jpg
-cp blog/<slug>/images/pexels-1.jpg video/public/photos/<slug>/segment-2.jpg
+cp public/blog/<slug>/images/pexels-0.jpg video/public/photos/<slug>/segment-1.jpg
+cp public/blog/<slug>/images/pexels-1.jpg video/public/photos/<slug>/segment-2.jpg
 ```
 
 The photo fetcher skips any segment that already has a valid file (>1 KB) in `public/photos/<slug>/`, so manually placed images are never overwritten by Pexels fetches.
@@ -567,20 +581,20 @@ Run these checks on every `reel-script.md` before proceeding. Any failure = fix 
 
 ```bash
 # No em dashes anywhere (must return 0)
-grep -c "—" blog/<slug>/reel-script.md
+grep -c "—" public/blog/<slug>/reel-script.md
 
 # QUESTION segment present (must return ≥ 1)
-grep -c "## QUESTION" blog/<slug>/reel-script.md
+grep -c "## QUESTION" public/blog/<slug>/reel-script.md
 
 # No bare % in Narration — write "percent" (must return 0)
-grep -c "Narration:.*%" blog/<slug>/reel-script.md
+grep -c "Narration:.*%" public/blog/<slug>/reel-script.md
 
 # No bare "US" in Narration — write "USA" (must return 0)
-grep -cE "Narration:.*\bUS\b" blog/<slug>/reel-script.md
+grep -cE "Narration:.*\bUS\b" public/blog/<slug>/reel-script.md
 
 # Chart segment required when reel-data.md has ## chart (must return ≥ 1 if applicable)
-if grep -q "^## chart" blog/<slug>/reel-data.md 2>/dev/null; then
-  grep -cE "^\*\*Chart|\*\*Chart " blog/<slug>/reel-script.md
+if grep -q "^## chart" public/blog/<slug>/reel-data.md 2>/dev/null; then
+  grep -cE "^\*\*Chart|\*\*Chart " public/blog/<slug>/reel-script.md
 fi
 ```
 
@@ -604,6 +618,16 @@ ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 vi
 ```
 
 If output is < 5 MB OR ffprobe shows zero/wrong duration, the render silently failed. Re-run.
+
+**REQUIRED after a successful render — write slug to pipeline tracker:**
+```bash
+# tech post render:
+echo "tech=<slug>" >> /tmp/reel-pipeline-slugs.txt
+# silver post render:
+echo "silver=<slug>" >> /tmp/reel-pipeline-slugs.txt
+```
+
+This file is read by the shell wrapper after Claude exits to verify both MP4s were produced. If the file is missing or a slug entry is absent, the wrapper treats it as a render failure and attempts a direct remotion fallback render. Do not skip this step — it is how the pipeline detects rate-limit-induced aborted runs.
 
 ---
 
@@ -676,7 +700,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 **Commit reel files (metadata only — no mp4):**
 ```bash
-git add blog/<slug>/reel-data.md blog/<slug>/reel-script.md blog/topic-history.md
+git add public/blog/<slug>/reel-data.md public/blog/<slug>/reel-script.md public/blog/topic-history.md
 git add video/out/<slug>/script.json video/out/<slug>/render-meta.json video/out/<slug>/captions.json
 git commit -m "feat(reel): [Post Title]"
 git push origin main
@@ -691,8 +715,8 @@ Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before p
 
 **Post the reel manually:**
 - Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
-- Caption: copy the platform caption from `blog/<slug>/social-copy.json` → `reel.[platform]` field. Add a blank line, then paste `discussion_question` on its own line.
-- Hashtags: copy `hashtags` field from `blog/<slug>/social-copy.json` (5 max — already correct in the file)
+- Caption: copy the platform caption from `public/blog/<slug>/social-copy.json` → `reel.[platform]` field. Add a blank line, then paste `discussion_question` on its own line.
+- Hashtags: copy `hashtags` field from `public/blog/<slug>/social-copy.json` (5 max — already correct in the file)
 - First comment: paste the live blog URL
 
 **Timing matters — first 6 hours are the algorithm's testing window:**

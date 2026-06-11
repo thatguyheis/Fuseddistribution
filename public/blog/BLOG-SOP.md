@@ -32,18 +32,18 @@ echo $PEXELS_API_KEY
 - [ ] **`blog-seo-check` skill** — on-page signals: title, meta, H1, H2s, canonical, OG tags.
 - [ ] **`seo-schema` skill** — validate/generate FAQPage + Article JSON-LD schema.
 - [ ] **`seo-local` skill** — only for local business, Google, or map pack posts.
-- [ ] Create `blog/[slug]/` folder, write `index.html` from BLOG-REF.md template
+- [ ] Create `public/blog/[slug]/` folder, write `index.html` from BLOG-REF.md template
 - [ ] Write `hero.svg` (§7 — numeric XML entities only, no HTML entities)
 - [ ] Generate `hero.jpg`:
   ```bash
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
     --headless=new --disable-gpu --screenshot=/tmp/hero-tmp.png --window-size=1200,630 \
     "file://$(pwd)/blog/[slug]/hero.svg" 2>/dev/null && \
-  sips -s format jpeg /tmp/hero-tmp.png --out blog/[slug]/hero.jpg -s formatOptions 85 && \
+  sips -s format jpeg /tmp/hero-tmp.png --out public/blog/[slug]/hero.jpg -s formatOptions 85 && \
   rm /tmp/hero-tmp.png
-  # Verify: ls -lh blog/[slug]/hero.jpg — must be > 50 KB
+  # Verify: ls -lh public/blog/[slug]/hero.jpg — must be > 50 KB
   ```
-- [ ] Run: `node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
+- [ ] Run: `node public/blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Write `reel-data.md` (§11) — all stats, chart if present, question, media_queries
 - [ ] Write `reel-script.md` (REEL-SOP §3) — Long Form, 8-14 segments, QUESTION close, timing validated
 - [ ] Write `photo-post.svg` (§15 — 1200×1200 canvas)
@@ -52,7 +52,7 @@ echo $PEXELS_API_KEY
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
     --headless=new --disable-gpu --screenshot=/tmp/photo-post-tmp.png --window-size=1200,1200 \
     "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
-  sips -s format jpeg /tmp/photo-post-tmp.png --out blog/[slug]/photo-post.jpg -s formatOptions 85 && \
+  sips -s format jpeg /tmp/photo-post-tmp.png --out public/blog/[slug]/photo-post.jpg -s formatOptions 85 && \
   rm /tmp/photo-post-tmp.png
   ```
 - [ ] Write `social-copy.json` (§14) — apply §9 writing rules to every caption field
@@ -60,18 +60,18 @@ echo $PEXELS_API_KEY
 - [ ] Run `ugc-script` skill — writes 2 A/B UGC script variants to `ugc-script.md`, validated
 - [ ] Add entry to `posts.json` top of array — `"image"` must use `.jpg` not `.svg`
 - [ ] Add internal links to 2-3 related posts (§9 Internal Linking)
-- [ ] Append to `blog/topic-history.md`
+- [ ] Append to `public/blog/topic-history.md`
 - [ ] Validate reel-script.md (§3.4 checks) + social-copy.json (no em dashes)
 - [ ] **SVG entity check** — run for EVERY slug before commit:
   ```bash
-  grep -En "&[a-zA-Z]+;" blog/[slug]/hero.svg blog/[slug]/photo-post.svg
+  grep -En "&[a-zA-Z]+;" public/blog/[slug]/hero.svg public/blog/[slug]/photo-post.svg
   ```
   Must return zero matches. If any found: replace with numeric entity (`&middot;`→`&#183;`, `&nbsp;`→`&#160;`, `&bull;`→`&#8226;`, `&mdash;`→`&#8212;`, `&ndash;`→`&#8211;`) then regenerate the `.jpg`.
-- [ ] Run `node blog/scripts/generate-sitemap.mjs`
+- [ ] Run `node public/blog/scripts/generate-sitemap.mjs`
 - [ ] **Secret check** — no literal tokens/keys in any staged file, env var references only (§17). Pre-commit hook enforces.
-- [ ] `git add blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
+- [ ] `git add public/blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
 - [ ] Write `social-copy.json` (§14)
-- [ ] `git add blog/posts.json blog/[slug]/` then commit
+- [ ] `git add public/blog/posts.json public/blog/[slug]/` then commit
 
 ---
 
@@ -109,7 +109,7 @@ Insert at **top** of array (newest first):
 ## 3. Folder Structure
 
 ```
-blog/
+public/blog/
   [slug]/
     index.html
     hero.svg
@@ -180,7 +180,7 @@ Chart math:
 
 ## 7. Hero SVG
 
-File: `blog/[slug]/hero.svg` — `width="1200" height="630" viewBox="0 0 1200 630"`
+File: `public/blog/[slug]/hero.svg` — `width="1200" height="630" viewBox="0 0 1200 630"`
 
 **SVG XML rules (critical — browser will show parse error if violated):**
 - NEVER use `&nbsp;` — SVG is XML, HTML entities are not defined. Use `&#160;` for non-breaking space.
@@ -239,7 +239,7 @@ Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 2. Write a 5–7 word search query per photo, specific to that paragraph's content
 3. Run the fetch script:
    ```bash
-   node blog/scripts/fetch-pexels.mjs --post=[slug] --queries="query one|query two"
+   node public/blog/scripts/fetch-pexels.mjs --post=[slug] --queries="query one|query two"
    ```
 4. Copy printed attribution lines into each `<figcaption>`:
    ```html
@@ -350,7 +350,7 @@ Contains **one long-form section** covering the full blog post arc (180–240s, 
 
 > **Short-form (3-reel) format** is documented in `video/REEL-SOP-SHORTFORM.md` for reference only. Do not use it unless explicitly instructed.
 
-File path: `blog/[slug]/reel-data.md`
+File path: `public/blog/[slug]/reel-data.md`
 
 ```markdown
 # Reel Data: [slug]
@@ -421,7 +421,7 @@ Rules:
 
 ## 12. topic-history.md
 
-File path: `blog/topic-history.md` — shared file, committed with every new post.
+File path: `public/blog/topic-history.md` — shared file, committed with every new post.
 
 **Purpose:** The cron agent reads this before picking a topic to avoid repeating angles. You append after each post.
 
@@ -455,7 +455,7 @@ File path: `blog/topic-history.md` — shared file, committed with every new pos
 
 Check every SVG for illegal named HTML entities:
 ```bash
-grep -En "&[a-zA-Z]+;" blog/[slug]/hero.svg blog/[slug]/photo-post.svg
+grep -En "&[a-zA-Z]+;" public/blog/[slug]/hero.svg public/blog/[slug]/photo-post.svg
 ```
 Zero matches required. Named entities (`&middot;`, `&nbsp;`, `&bull;`, `&mdash;`, `&ndash;`, etc.) are not defined in XML/SVG — browsers throw a parse error and the image won't render.
 
@@ -476,7 +476,7 @@ After fixing, regenerate the `.jpg` for any SVG that changed (Chrome headless, s
 
 ### Step 1 — Commit and push to GitHub
 ```bash
-git add blog/posts.json blog/[slug]/ blog/topic-history.md
+git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md
 git commit -m "feat(blog): [Post Title]"
 git push origin main
 ```
@@ -497,8 +497,8 @@ Postiz reads `social-copy.json` and schedules all posts at optimal times. Nothin
 
 Assets consumed by Postiz:
 - `video/out/[slug]/[slug].mp4` (single long-form reel)
-- `blog/[slug]/photo-post.jpg` (not the SVG — social platforms reject SVG)
-- `blog/[slug]/social-copy.json`
+- `public/blog/[slug]/photo-post.jpg` (not the SVG — social platforms reject SVG)
+- `public/blog/[slug]/social-copy.json`
 
 > **Postiz not yet configured:** Until Postiz is set up on the Windows PC, skip this step.
 > Manually post reels using captions from `social-copy.json`.
@@ -509,7 +509,7 @@ Assets consumed by Postiz:
 
 **Required.** Claude writes this during pipeline run. Consumed by Postiz when scheduling posts.
 
-File path: `blog/[slug]/social-copy.json`
+File path: `public/blog/[slug]/social-copy.json`
 
 ```json
 {
@@ -569,7 +569,7 @@ The `organic_ads` key is added by the `social-ad` skill after post build. It is 
 
 **Required.** One per blog post. Posted to Facebook + Instagram + LinkedIn as a feed photo.
 
-File path: `blog/[slug]/photo-post.svg`
+File path: `public/blog/[slug]/photo-post.svg`
 Canvas: `width="1200" height="1200" viewBox="0 0 1200 1200"`
 
 **SVG XML rules (identical to §7 — critical):**
@@ -610,7 +610,7 @@ After writing `photo-post.svg`, generate `photo-post.jpg`:
   --screenshot=/tmp/photo-post-tmp.png \
   --window-size=1200,1200 \
   "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
-sips -s format jpeg /tmp/photo-post-tmp.png --out blog/[slug]/photo-post.jpg -s formatOptions 85 && \
+sips -s format jpeg /tmp/photo-post-tmp.png --out public/blog/[slug]/photo-post.jpg -s formatOptions 85 && \
 rm /tmp/photo-post-tmp.png
 ```
 

@@ -1,4 +1,4 @@
-> **DEPRECATED** — Use `blog/BLOG-SOP.md` for instructions and `blog/BLOG-REF.md` for HTML/CSS templates.
+> **DEPRECATED** — Use `public/blog/BLOG-SOP.md` for instructions and `public/blog/BLOG-REF.md` for HTML/CSS templates.
 > This file is kept for historical reference only. Do not use for new posts.
 
 ---
@@ -48,7 +48,7 @@ Insert a new object at the **top** of the array (newest first):
 ## 3. Create the post folder and file
 
 ```
-blog/
+public/blog/
   [slug]/
     index.html
     hero.svg          ← preferred for all new posts (custom SVG, unique per post)
@@ -856,7 +856,7 @@ Put photos inside `.article-body`, placed between paragraphs. Load the first one
 </figure>
 ```
 
-Images go in `blog/[slug]/images/`. Filename should be descriptive (`coins-spread.jpg`, not `IMG_4521.jpg`).
+Images go in `public/blog/[slug]/images/`. Filename should be descriptive (`coins-spread.jpg`, not `IMG_4521.jpg`).
 
 For Wikimedia Commons images, credit as: `Image: Wikimedia Commons (public domain)` or `(CC BY-SA 4.0)`.
 
@@ -1027,7 +1027,7 @@ Always include at the end of any research-backed post. Put it inside `.article-b
 
 ### Creating the SVG hero
 
-File: `blog/[slug]/hero.svg`
+File: `public/blog/[slug]/hero.svg`
 Canvas size: `width="1200" height="630" viewBox="0 0 1200 630"`
 
 **Design rules:**
@@ -1157,7 +1157,7 @@ After creating all files:
 
 ```bash
 # Stage new post files
-git add blog/posts.json blog/[slug]/
+git add public/blog/posts.json public/blog/[slug]/
 
 # Commit
 git commit -m "Add blog post: [Post Title]"
