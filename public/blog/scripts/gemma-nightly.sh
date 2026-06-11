@@ -33,8 +33,8 @@ mkdir -p "$RESEARCH_DIR"
 # hit kern.maxfiles) caused by stale chrome-headless-shell / workerd processes
 # left over from crashed renders. Clean them up and verify headroom before work.
 ulimit -n 65536 2>/dev/null || true
-pkill -f "chrome-headless-shell" 2>/dev/null
-pkill -x workerd 2>/dev/null
+pkill -f "chrome-headless-shell" 2>/dev/null || true
+pkill -x workerd 2>/dev/null || true
 sleep 2
 FD_USED=$(sysctl -n kern.num_files)
 FD_MAX=$(sysctl -n kern.maxfiles)
