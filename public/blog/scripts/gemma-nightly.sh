@@ -14,10 +14,34 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 RESEARCH_DIR="$BLOG_DIR/research"
 TODAY=$(date '+%Y-%m-%d')
+# Queue is consumed by the NEXT 9 AM run. When this script runs at night
+# (>= noon), date the queue for tomorrow; morning manual runs date it today.
+# Fixes the mismatch where 23:00 runs wrote ${TODAY}-queue.json that the next
+# morning's pipeline (which looks for its own date) never found.
+if [[ $(date '+%H') -ge 12 ]]; then
+  QUEUE_DATE=$(date -v+1d '+%Y-%m-%d')
+else
+  QUEUE_DATE=$TODAY
+fi
 INDEX_FILE="$RESEARCH_DIR/topic-index.json"
-QUEUE_FILE="$RESEARCH_DIR/${TODAY}-queue.json"
+QUEUE_FILE="$RESEARCH_DIR/${QUEUE_DATE}-queue.json"
 
 mkdir -p "$RESEARCH_DIR"
+
+# ── FD pre-flight ─────────────────────────────────────────────────────────────
+# 2026-06-10 23:03 run died on system-wide "Too many open files" (kern.num_files
+# hit kern.maxfiles) caused by stale chrome-headless-shell / workerd processes
+# left over from crashed renders. Clean them up and verify headroom before work.
+ulimit -n 65536 2>/dev/null || true
+pkill -f "chrome-headless-shell" 2>/dev/null
+pkill -x workerd 2>/dev/null
+sleep 2
+FD_USED=$(sysctl -n kern.num_files)
+FD_MAX=$(sysctl -n kern.maxfiles)
+if (( FD_USED * 100 / FD_MAX > 80 )); then
+  echo "WARN: system file table ${FD_USED}/${FD_MAX} (>80%) even after stale-process cleanup. Top FD consumers:"
+  lsof -n 2>/dev/null | awk '{print $1}' | sort | uniq -c | sort -rn | head -5
+fi
 
 # ── Topic seed pools ──────────────────────────────────────────────────────────
 
@@ -513,7 +537,7 @@ for line in '''$(printf '%s\n' "${QUEUE_ENTRIES[@]}")'''.strip().split('\n'):
             'ugc_angle': ugc_angle
         })
 
-queue = {'date': '$TODAY', 'posts': entries}
+queue = {'date': '$QUEUE_DATE', 'posts': entries}
 with open('$QUEUE_FILE', 'w') as f:
     json.dump(queue, f, indent=2)
 print(f'Queue written: {len(entries)} posts')
