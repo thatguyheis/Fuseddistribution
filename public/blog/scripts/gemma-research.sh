@@ -4,7 +4,7 @@
 #
 # Reads topics from a file (one per line) OR uses built-in seed list.
 # Runs overnight: generates keyword angles, competitor gaps, H2 outlines.
-# Output: blog/research/YYYY-MM-DD-[topic].md per topic
+# Output: public/blog/research/YYYY-MM-DD-[topic].md per topic
 #
 # Schedule via launchd or run manually before bed.
 

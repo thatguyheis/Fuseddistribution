@@ -4,9 +4,9 @@
 # Claude's 9 AM run. Claude skips seo-plan + blog-write — just polish + build.
 #
 # Output per topic:
-#   blog/[slug]/gemma_draft.md        — full article draft
-#   blog/research/YYYY-MM-DD-[slug].md — research brief
-#   blog/research/YYYY-MM-DD-queue.json — today's 4 posts for Claude to consume
+#   public/blog/[slug]/gemma_draft.md        — full article draft
+#   public/blog/research/YYYY-MM-DD-[slug].md — research brief
+#   public/blog/research/YYYY-MM-DD-queue.json — today's 4 posts for Claude to consume
 
 set -euo pipefail
 
@@ -508,7 +508,7 @@ for line in '''$(printf '%s\n' "${QUEUE_ENTRIES[@]}")'''.strip().split('\n'):
             'slug': slug,
             'keyword': keyword,
             'brand': brand,
-            'draft': f'blog/{slug}/gemma_draft.md',
+            'draft': f'public/blog/{slug}/gemma_draft.md',
             'ad_formats': ad_formats,
             'ugc_angle': ugc_angle
         })

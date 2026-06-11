@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # gemma-draft.sh — generate a free first-draft via local Gemma 4 E2B
 # Usage: ./gemma-draft.sh "target keyword" "silver|tech" [slug]
-# Output: blog/[slug]/gemma_draft.md
+# Output: public/blog/[slug]/gemma_draft.md
 #
 # Run this BEFORE the Claude blog-write skill to pre-draft content at $0 cost.
 # Review the draft, then pass it as context to blog-write for final polish.
