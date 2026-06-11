@@ -10,15 +10,15 @@ cloudflare-upload/
 !video/.env.cron
 
 # photo workflow local/source assets
-photos/.DS_Store
-photos/uploads/*
-!photos/uploads/.gitkeep
-photos/originals/*
-!photos/originals/.gitkeep
-photos/derived/social/*
-!photos/derived/social/.gitkeep
-photos/derived/marketplace/*
-!photos/derived/marketplace/.gitkeep
+public/photos/.DS_Store
+public/photos/uploads/*
+!public/photos/uploads/.gitkeep
+public/photos/originals/*
+!public/photos/originals/.gitkeep
+public/photos/derived/social/*
+!public/photos/derived/social/.gitkeep
+public/photos/derived/marketplace/*
+!public/photos/derived/marketplace/.gitkeep
 
 # Rendered video files — too large for GitHub
 video/out/**/*.mp4

@@ -8,7 +8,7 @@
     "enabled": true
   },
   "assets": {
-    "directory": "./public",
+    "directory": "./public/reserve",
     "binding": "ASSETS"
   },
   "compatibility_flags": [
