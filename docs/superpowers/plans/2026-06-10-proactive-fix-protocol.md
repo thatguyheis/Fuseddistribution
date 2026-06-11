@@ -1,7 +1,7 @@
 # Proactive Fix Protocol — Pipeline Self-Healing
 
 Date: 2026-06-10
-Status: Phase 1 implemented, Phase 2-3 planned
+Status: Phases 1-3 implemented 2026-06-11 (see Implementation Log below)
 
 ## Goal
 
@@ -48,6 +48,25 @@ The daily blog + reel pipeline should detect, diagnose, and fix its own failures
 - Weekly wrangler auth canary: `npx wrangler whoami` in a Monday pre-flight; alert before the 9 AM run fails
 - Log rotation for `~/Library/Logs/daily-blog-reel.log`
 - Alert channel: failures surface same-day (OpenClaw no longer installed — pick: macOS notification via osascript, email, or SMS/messaging service; TBD)
+
+## Implementation Log — 2026-06-11
+
+**Phase 2 (in `~/bin/daily-blog-reel.sh`):**
+- 2.1 Push/deploy remediation: post-run shell block pushes unpushed commits (secret-scan block → logged scrub instruction + macOS alert, no auto-scrub — too risky unattended), retries `wrangler deploy` once if any slug 404s.
+- 2.2 Render decoupling: already satisfied by `render-missing-reels.sh` at 11 AM (renders anything with reel-script.md + no MP4, independent of 9 AM outcome).
+- 2.3 Post-run verification: curls every queue slug live (PASS/FAIL per slug), live-vs-local sitemap `<loc>` parity, `RESULT:` summary as last log lines, macOS alert on any FAIL.
+- 2.4 Session-limit retry: parses "resets N(am|pm)" from Claude output, schedules one-shot retry at reset + 10 min (6h fallback).
+
+**Phase 3:**
+- gitleaks 8.30.1 installed; pre-commit hook uses it (`protect --staged --redact`) with the old grep as fallback; grep gained `cfut_` pattern. KNOWN LIMIT: gitleaks default rules missed a low-entropy `cfut_` test token — custom rule TODO below.
+- Auth canary: daily script verifies CLOUDFLARE_API_TOKEN against `/user/tokens/verify` (curl, 30s cap) before the run; alert + continue on failure.
+- Log rotation: daily-blog-reel.log rotates at 5 MB (one generation).
+- Alert channel: macOS notifications via `osascript` (`notify()` in both `~/bin` scripts) — render fails, push fails, deploy fails, auth canary, FD pressure, verification fails.
+- FD guard: `render.mjs` `assertFdHeadroom()` fails fast when kern.num_files > 80% of kern.maxfiles (Node ≥ 24 self-raises per-proc limits, so kernel table is the real failure mode; matches 2026-06-10 crash signatures). `--concurrency=4` cap on remotion render. gemma-nightly has the same pre-flight + stale chrome/workerd cleanup.
+
+**TODO (open):**
+- [x] Custom gitleaks rules in `.gitleaks.toml` (cfut_ prefix + known credential var assignments) — hook re-tested, blocks correctly.
+- [ ] TCC: keep Full Disk Access granted for /bin/bash + /bin/zsh (Jun 8 exit-126 cause).
 
 ## Decision — RESOLVED 2026-06-10
 

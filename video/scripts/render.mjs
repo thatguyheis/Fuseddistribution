@@ -13,6 +13,24 @@ function run(cmd) {
   execSync(cmd, { stdio: 'inherit', cwd: videoDir });
 }
 
+// FD-exhaustion guard. Node >= 24 raises its own per-process soft limit to the
+// hard max, so per-process ulimit is not the failure mode — the SYSTEM-WIDE
+// kernel file table (kern.num_files vs kern.maxfiles) is. When stale
+// chrome-headless-shell / workerd processes fill it, renders die mid-encode
+// (signature: render-meta.json written, no MP4 — happened 2026-06-10 18:46).
+// Fail fast with the fix instead of wasting a 20-minute render.
+function assertFdHeadroom() {
+  try {
+    const used = parseInt(execSync('sysctl -n kern.num_files').toString().trim(), 10);
+    const max = parseInt(execSync('sysctl -n kern.maxfiles').toString().trim(), 10);
+    if (Number.isFinite(used) && Number.isFinite(max) && used / max > 0.8) {
+      console.error(`✗ System file table at ${used}/${max} (>80%) — render will crash mid-encode.`);
+      console.error('  Fix: pkill -f chrome-headless-shell; pkill -x workerd; then retry. Reboot if still high.');
+      process.exit(1);
+    }
+  } catch { /* sysctl unavailable — proceed */ }
+}
+
 function detectHookType(text) {
   if (/\?/.test(text)) return 'question';
   if (/^\d|[\d,]+%/.test(text)) return 'stat';
@@ -22,6 +40,7 @@ function detectHookType(text) {
 async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null) {
   const reelLabel = reelN ? ` (reel ${reelN})` : '';
   console.log(`\n=== Blog Reel Renderer: ${slug}${reelLabel} ===\n`);
+  assertFdHeadroom();
 
   // 1. Parse
   const reelFlag = reelN ? ` --reel=${reelN}` : '';
@@ -69,7 +88,7 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null) {
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
   writeFileSync(propsFile, JSON.stringify({ script, musicTrack, media, captions }));
-  run(`npx remotion render src/Root.tsx BlogReel --props="${propsFile}" "${outFile}"`);
+  run(`npx remotion render src/Root.tsx BlogReel --concurrency=4 --props="${propsFile}" "${outFile}"`);
 
   console.log(`\n✓ Render complete: ${outFile}\n`);
 }

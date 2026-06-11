@@ -1,0 +1,25 @@
+# Repo-specific gitleaks config — extends the default ruleset.
+# Added because default rules missed a low-entropy Cloudflare user token (cfut_) in testing.
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "cloudflare-user-token-cfut"
+description = "Cloudflare user API token (cfut_ prefix)"
+regex = '''cfut_[A-Za-z0-9_\-]{20,}'''
+keywords = ["cfut_"]
+
+[[rules]]
+id = "generic-env-token-assignment"
+description = "Literal token assigned to a known credential variable"
+regex = '''(?i)(CLOUDFLARE_API_TOKEN|PEXELS_API_KEY|PIXABAY_API_KEY|RESEND_API_KEY|METAL_PRICE_API_KEY)\s*[=:]\s*["']?[A-Za-z0-9_\-]{20,}'''
+keywords = ["CLOUDFLARE_API_TOKEN", "PEXELS_API_KEY", "PIXABAY_API_KEY", "RESEND_API_KEY", "METAL_PRICE_API_KEY"]
+
+[allowlist]
+description = "Placeholders and env-var references"
+regexes = [
+  '''<[a-z-]*token[a-z-]*>''',
+  '''\$\{?[A-Z_]+\}?''',
+  '''YOUR_|PLACEHOLDER|REDACTED|ROTATE_ME|example|xxxx|FAKEFAKE''',
+]

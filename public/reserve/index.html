@@ -95,10 +95,10 @@
         position: fixed;
         inset: 0;
         background:
-          radial-gradient(ellipse 65% 35% at 50% 0%,   rgba(195, 150, 55, 0.11), transparent),
-          radial-gradient(ellipse 40% 50% at 92% 15%,  rgba(210, 165, 60, 0.09), transparent),
-          radial-gradient(ellipse 50% 40% at 8%  80%,  rgba(170, 135, 55, 0.07), transparent),
-          radial-gradient(ellipse 80% 30% at 50% 100%, rgba(140, 110, 40, 0.05), transparent),
+          radial-gradient(ellipse 65% 35% at 50% 0%,   rgba(195, 150, 55, 0.28), transparent),
+          radial-gradient(ellipse 40% 50% at 92% 15%,  rgba(210, 165, 60, 0.22), transparent),
+          radial-gradient(ellipse 50% 40% at 8%  80%,  rgba(170, 135, 55, 0.16), transparent),
+          radial-gradient(ellipse 80% 30% at 50% 100%, rgba(140, 110, 40, 0.12), transparent),
           linear-gradient(180deg, #060708 0%, #090a08 55%, #060707 100%);
         pointer-events: none;
         z-index: 0;
@@ -113,15 +113,22 @@
         top: -90px;
         right: -90px;
         border-radius: 50%;
-        border: 1px solid rgba(200, 170, 85, 0.055);
+        border: 1.5px solid rgba(200, 170, 85, 0.22);
         box-shadow:
-          0 0 0  55px rgba(200, 170, 80, 0.032),
-          0 0 0 110px rgba(200, 170, 80, 0.022),
-          0 0 0 165px rgba(200, 170, 80, 0.015),
-          0 0 0 220px rgba(200, 170, 80, 0.009),
-          0 0 0 275px rgba(200, 170, 80, 0.005);
+          0 0 0  55px rgba(200, 170, 80, 0.10),
+          0 0 0 110px rgba(200, 170, 80, 0.07),
+          0 0 0 165px rgba(200, 170, 80, 0.045),
+          0 0 0 220px rgba(200, 170, 80, 0.026),
+          0 0 0 275px rgba(200, 170, 80, 0.012),
+          0 0 80px rgba(200, 165, 60, 0.15);
+        animation: vault-rings-breathe 8s ease-in-out infinite;
         pointer-events: none;
         z-index: 0;
+      }
+
+      @keyframes vault-rings-breathe {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0.65; }
       }
 
       a { color: inherit; text-decoration: none; }
@@ -131,9 +138,9 @@
         margin: 18px auto 42px;
         border-radius: 30px;
         overflow: visible;
-        border: 1px solid rgba(200, 175, 100, 0.08);
-        background: linear-gradient(180deg, rgba(12, 11, 9, 0.94), rgba(7, 6, 5, 0.97));
-        box-shadow: var(--shadow), 0 0 120px rgba(180, 140, 50, 0.055);
+        border: 1px solid rgba(200, 175, 100, 0.2);
+        background: linear-gradient(180deg, rgba(12, 11, 9, 0.97), rgba(7, 6, 5, 0.99));
+        box-shadow: var(--shadow), 0 0 120px rgba(180, 140, 50, 0.18), inset 0 1px 0 rgba(220, 190, 90, 0.08);
         position: relative;
         z-index: 1;
       }
@@ -162,12 +169,13 @@
         justify-content: space-between;
         gap: 18px;
         padding: 18px 30px;
-        background: rgba(9, 8, 7, 0.9);
+        background: rgba(9, 8, 7, 0.92);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(200, 175, 100, 0.07);
+        border-bottom: 1px solid rgba(200, 175, 100, 0.18);
         border-radius: 30px 30px 0 0;
         transition: background 0.3s var(--ease-out), border-radius 0.3s var(--ease-out);
+        box-shadow: 0 1px 0 rgba(220, 185, 80, 0.08), 0 4px 24px rgba(0,0,0,0.3);
       }
 
       .topbar.scrolled {
@@ -192,7 +200,10 @@
         font-weight: 700;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: var(--silver);
+        background: linear-gradient(135deg, #e8d8a0, #f2c66d 45%, #c9922a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
 
       /* Mobile hamburger */
@@ -405,6 +416,10 @@
         font-size: clamp(2.9rem, 6vw, 5.3rem);
         line-height: 0.98;
         letter-spacing: -0.03em;
+        background: linear-gradient(135deg, #f7e8b0 0%, #f2c66d 35%, #e8a030 65%, #f0d080 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
 
       .hero-copy p {
@@ -491,16 +506,17 @@
         position: absolute;
         inset: 18px 0 0 0;
         border-radius: 34px;
-        border: 1px solid rgba(200, 175, 90, 0.1);
+        border: 1px solid rgba(200, 175, 90, 0.22);
         background:
-          radial-gradient(ellipse 80% 30% at 50% 0%,   rgba(210, 165, 60, 0.14), transparent),
-          radial-gradient(circle       at 35% 32%,      rgba(255, 240, 190, 0.06), transparent 28%),
-          radial-gradient(circle       at 68% 68%,      rgba(160, 125, 50, 0.08), transparent 35%),
-          linear-gradient(160deg, rgba(26, 22, 16, 0.9), rgba(10, 9, 7, 0.97));
+          radial-gradient(ellipse 80% 50% at 50% 50%,  rgba(210, 165, 60, 0.18), transparent),
+          radial-gradient(circle       at 35% 32%,      rgba(255, 240, 190, 0.10), transparent 28%),
+          radial-gradient(circle       at 68% 68%,      rgba(160, 125, 50, 0.14), transparent 35%),
+          linear-gradient(160deg, rgba(22, 18, 10, 0.96), rgba(8, 7, 5, 0.99));
         overflow: hidden;
         box-shadow:
           inset 0 0 80px rgba(0, 0, 0, 0.5),
-          inset 0 0 30px rgba(200, 160, 55, 0.05);
+          inset 0 0 60px rgba(200, 160, 55, 0.12),
+          0 0 40px rgba(180, 140, 50, 0.12);
       }
 
       .vault::before {
@@ -508,47 +524,87 @@
         position: absolute;
         inset: 24px;
         border-radius: 30px;
-        border: 1px solid rgba(200, 175, 90, 0.08);
+        border: 1px solid rgba(200, 175, 90, 0.14);
+        box-shadow: inset 0 0 40px rgba(180, 140, 50, 0.06);
       }
 
-      /* Vault door ring motif */
+      /* Vault door — rotating outer ring */
       .vault::after {
         content: "";
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        border: 1px solid rgba(200, 175, 90, 0.055);
+        border: 2px solid rgba(210, 175, 80, 0.28);
         box-shadow:
-          0 0 0 28px rgba(200, 175, 80, 0.028),
-          0 0 0 56px rgba(200, 175, 80, 0.018),
-          0 0 0 84px rgba(200, 175, 80, 0.01);
+          0 0 0 18px rgba(200, 175, 80, 0.06),
+          0 0 0 36px rgba(200, 175, 80, 0.08),
+          0 0 0 54px rgba(200, 175, 80, 0.055),
+          0 0 0 72px rgba(200, 175, 80, 0.035),
+          0 0 0 90px rgba(200, 175, 80, 0.018),
+          0 0 40px rgba(210, 175, 60, 0.2),
+          inset 0 0 40px rgba(0, 0, 0, 0.4);
+        animation: vault-door-rotate 30s linear infinite;
         pointer-events: none;
+      }
+
+      @keyframes vault-door-rotate {
+        from { transform: translate(-50%, -50%) rotate(0deg); }
+        to   { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+
+      /* Vault lock hub — centered in .vault */
+      .vault-hub {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 38% 38%, rgba(255, 240, 160, 0.7), rgba(200, 155, 50, 0.85) 55%, rgba(100, 75, 20, 0.95) 100%);
+        border: 3px solid rgba(230, 200, 100, 0.55);
+        box-shadow:
+          0 0 0 8px rgba(200, 165, 60, 0.12),
+          0 0 0 16px rgba(200, 165, 60, 0.07),
+          0 0 32px rgba(220, 175, 60, 0.4),
+          inset 0 2px 4px rgba(255, 245, 180, 0.3);
+        z-index: 2;
+      }
+
+      .vault-hub::after {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 40% 40%, rgba(255, 235, 140, 0.5), rgba(140, 100, 25, 0.9));
+        border: 1px solid rgba(230, 200, 100, 0.3);
       }
 
       /* Coin rings */
       .coin-ring {
         position: absolute;
         border-radius: 50%;
-        border: 14px solid rgba(200, 185, 130, 0.2);
+        border: 16px solid rgba(210, 190, 110, 0.42);
         background:
-          radial-gradient(circle at 35% 35%, rgba(255, 252, 230, 0.65), rgba(195, 185, 140, 0.2) 55%, rgba(45, 40, 25, 0.04) 72%);
+          radial-gradient(circle at 35% 35%, rgba(255, 252, 215, 0.85), rgba(210, 195, 130, 0.45) 50%, rgba(80, 65, 25, 0.55) 80%);
         box-shadow:
-          inset 0 0 24px rgba(255, 240, 160, 0.14),
-          inset -4px -4px 12px rgba(0, 0, 0, 0.18),
-          0 12px 40px rgba(0, 0, 0, 0.45),
-          0 0 28px rgba(200, 165, 60, 0.08);
+          inset 0 0 24px rgba(255, 240, 140, 0.22),
+          inset -6px -6px 18px rgba(0, 0, 0, 0.35),
+          inset 4px 4px 12px rgba(255, 245, 180, 0.15),
+          0 16px 50px rgba(0, 0, 0, 0.55),
+          0 0 40px rgba(210, 170, 55, 0.18);
       }
 
       .coin-ring::before {
         content: "";
         position: absolute;
-        inset: 12px;
+        inset: 14px;
         border-radius: 50%;
-        border: 1px dashed rgba(200, 180, 110, 0.16);
+        border: 1px dashed rgba(220, 195, 100, 0.32);
       }
 
       .coin-ring.large {
@@ -743,12 +799,12 @@
 
       @keyframes featured-glow {
         0%, 100% {
-          border-color: rgba(242, 198, 109, 0.22);
-          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.03), 0 0 30px rgba(200, 155, 40, 0.06);
+          border-color: rgba(242, 198, 109, 0.38);
+          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.06), 0 0 40px rgba(200, 155, 40, 0.18), 0 8px 32px rgba(0,0,0,0.45);
         }
         50% {
-          border-color: rgba(242, 198, 109, 0.44);
-          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.05), 0 0 65px rgba(200, 155, 40, 0.15), 0 0 22px rgba(200, 155, 40, 0.08);
+          border-color: rgba(242, 198, 109, 0.7);
+          box-shadow: inset 0 1px 0 rgba(255, 220, 100, 0.10), 0 0 90px rgba(210, 165, 40, 0.35), 0 0 35px rgba(200, 155, 40, 0.22), 0 8px 32px rgba(0,0,0,0.45);
         }
       }
 
@@ -1011,6 +1067,8 @@
         .coin-ring.large, .coin-ring.small { animation: none; }
         .eyebrow::before { animation: none; }
         .plan.featured { animation: none; }
+        .vault::after { animation: none; }
+        body::after { animation: none; }
         .btn, .card, .step, .gallery-card, .plan, .metric { transition: none; }
       }
     </style>
@@ -1115,6 +1173,7 @@
             <div class="vault">
               <div class="coin-ring large"></div>
               <div class="coin-ring small"></div>
+              <div class="vault-hub"></div>
               <div class="coin-stack">
                 <span></span><span></span><span></span>
                 <span></span><span></span><span></span>
@@ -1615,5 +1674,5 @@
       });
     })();
   </script>
-  </body>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0a16dd4aca4ff16',t:'MTc4MTE4OTQzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
