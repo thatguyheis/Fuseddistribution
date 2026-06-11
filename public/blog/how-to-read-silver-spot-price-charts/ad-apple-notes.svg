@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="an-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#an-glow)"/>
+
+  <!-- Notes card -->
+  <rect x="110" y="130" width="980" height="940" rx="36" fill="#fffdf7"/>
+  <rect x="110" y="130" width="980" height="940" rx="36" fill="none" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+
+  <!-- Notes icon -->
+  <rect x="170" y="190" width="84" height="84" rx="18" fill="#ffd60a"/>
+  <rect x="170" y="190" width="84" height="26" rx="13" fill="#f5c400"/>
+  <line x1="188" y1="236" x2="236" y2="236" stroke="#8a7200" stroke-width="4" stroke-linecap="round"/>
+  <line x1="188" y1="252" x2="224" y2="252" stroke="#8a7200" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Note date line -->
+  <text x="290" y="225" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#9a9486">June 11, 2026 at 9:14 AM</text>
+
+  <!-- Title -->
+  <text x="170" y="350" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#1c1b17">Silver chart notes</text>
+  <text x="170" y="412" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#5f5a4e">(what I wish I knew before buying)</text>
+
+  <!-- Bullets -->
+  <text x="170" y="500" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1c1b17">&#9989;  Spot price = silver delivered today</text>
+  <text x="170" y="572" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1c1b17">&#9989;  Futures are NOT your number</text>
+  <text x="170" y="644" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1c1b17">&#9989;  Silver swings ~30% a year. Twice gold. Normal.</text>
+  <text x="170" y="716" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1c1b17">&#9989;  Watch the 1-year trend, skip the daily noise</text>
+  <text x="170" y="788" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1c1b17">&#9989;  Ratio above 80 = silver cheap vs gold</text>
+  <text x="170" y="860" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#1c1b17">&#9989;  Total paid &#247; ounces = your TRUE cost</text>
+
+  <!-- Footer -->
+  <line x1="170" y1="920" x2="1030" y2="920" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+  <text x="170" y="985" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#9a9486">shared from Notes</text>
+  <text x="1030" y="985" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#b3ada0">fuseddistribution.com</text>
+
+  <!-- Bottom brand -->
+  <text x="600" y="1150" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="20" fill="rgba(88,214,255,0.45)">FUSED RESERVE &#183; fuseddistribution.com/blog</text>
+</svg>
