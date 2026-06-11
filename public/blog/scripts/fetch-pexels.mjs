@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const blogDir = join(__dirname, '..');
 
 function loadApiKey() {
-  const envPath = join(__dirname, '../../video/.env');
+  const envPath = join(__dirname, '../../../video/.env');
   if (existsSync(envPath)) {
     const lines = readFileSync(envPath, 'utf8').split('\n');
     for (const line of lines) {

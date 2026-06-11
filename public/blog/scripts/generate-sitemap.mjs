@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generates sitemap.xml from static pages + all entries in posts.json
-// Run from repo root: node blog/scripts/generate-sitemap.mjs
+// Run from repo root: node public/blog/scripts/generate-sitemap.mjs
 
 import { readFileSync, writeFileSync } from 'fs';
 import { resolve, dirname } from 'path';

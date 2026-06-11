@@ -147,7 +147,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const slug = postArg.replace('--post=', '');
   const reelN = reelArg ? reelArg.replace('--reel=', '') : null;
   const scriptFile = reelN ? `reel-script-${reelN}.md` : 'reel-script.md';
-  const mdPath = join(__dirname, '../../blog', slug, scriptFile);
+  const mdPath = join(__dirname, '../../public/blog', slug, scriptFile);
   let md;
   try { md = readFileSync(mdPath, 'utf8'); }
   catch { console.error(`${scriptFile} not found: ${mdPath}`); process.exit(1); }

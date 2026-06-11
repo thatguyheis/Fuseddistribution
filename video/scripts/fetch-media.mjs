@@ -14,7 +14,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
 
 function loadMediaQueries(slug) {
-  const reelDataPath = join(videoDir, '..', 'blog', slug, 'reel-data.md');
+  const reelDataPath = join(videoDir, '..', 'public', 'blog', slug, 'reel-data.md');
   if (!existsSync(reelDataPath)) return {};
   const md = readFileSync(reelDataPath, 'utf8');
   const queries = {};
