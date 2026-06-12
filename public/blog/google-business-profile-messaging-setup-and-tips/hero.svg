@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg-glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="card-glow-r" cx="78%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d6ff"/>
+      <stop offset="100%" stop-color="#4dffb8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#bg-glow)"/>
+  <rect width="1200" height="630" fill="url(#card-glow-r)"/>
+
+  <line x1="150" y1="0" x2="150" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="750" y1="0" x2="750" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+  <line x1="1050" y1="0" x2="1050" y2="630" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+
+  <circle cx="80"  cy="58"  r="1.4" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="220" cy="40"  r="1.2" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="975" cy="48"  r="1.4" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="1118" cy="68" r="1.2" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="95"  cy="574" r="1.2" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="1105" cy="568" r="1.4" fill="#4dffb8" fill-opacity="0.15"/>
+
+  <text x="600" y="62" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="16" letter-spacing="5" fill="rgba(88,214,255,0.60)">GOOGLE BUSINESS PROFILE &#183; MESSAGING</text>
+
+  <line x1="140" y1="82" x2="1060" y2="82" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- Left stat card: 24HR -->
+  <rect x="58" y="100" width="240" height="210" rx="18" fill="rgba(7,18,26,0.85)" stroke="rgba(88,214,255,0.20)" stroke-width="1.2"/>
+  <text x="178" y="148" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="3" fill="rgba(88,214,255,0.65)">RESPOND WITHIN</text>
+  <text x="178" y="224" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="90" fill="#4dffb8">24H</text>
+  <text x="178" y="258" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="15" letter-spacing="2" fill="rgba(175,198,207,0.75)">OR LOSE BADGE</text>
+  <text x="178" y="290" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.50)">Google's response requirement</text>
+
+  <!-- Left stat card 2: 57% -->
+  <rect x="58" y="328" width="240" height="150" rx="18" fill="rgba(7,18,26,0.85)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+  <text x="178" y="368" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="3" fill="rgba(88,214,255,0.55)">PREFER MESSAGING</text>
+  <text x="178" y="438" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="75" fill="#58d6ff">57%</text>
+  <text x="178" y="464" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.50)">over calling a business</text>
+
+  <!-- Center headline -->
+  <text x="600" y="200" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="62" letter-spacing="2" fill="#ecf8fb">SET UP GBP</text>
+  <text x="600" y="272" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="62" letter-spacing="2" fill="url(#accent-grad)">MESSAGING</text>
+  <text x="600" y="330" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="20" fill="rgba(175,198,207,0.80)">Enable &#183; Welcome Message &#183; Auto-Reply</text>
+
+  <line x1="340" y1="360" x2="860" y2="360" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+
+  <!-- Steps row -->
+  <rect x="345" y="378" width="154" height="76" rx="12" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="422" y="406" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="2" fill="rgba(88,214,255,0.80)">STEP 1</text>
+  <text x="422" y="427" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Turn On</text>
+  <text x="422" y="444" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Messaging</text>
+
+  <rect x="514" y="378" width="154" height="76" rx="12" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="591" y="406" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="2" fill="rgba(88,214,255,0.80)">STEP 2</text>
+  <text x="591" y="427" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Write Welcome</text>
+  <text x="591" y="444" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Message</text>
+
+  <rect x="683" y="378" width="154" height="76" rx="12" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="760" y="406" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="2" fill="rgba(88,214,255,0.80)">STEP 3</text>
+  <text x="760" y="427" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Set Auto</text>
+  <text x="760" y="444" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="13" fill="rgba(175,198,207,0.85)">Replies</text>
+
+  <!-- Right stat card: 60% mobile -->
+  <rect x="902" y="100" width="240" height="210" rx="18" fill="rgba(7,18,26,0.85)" stroke="rgba(77,255,184,0.18)" stroke-width="1.2"/>
+  <text x="1022" y="148" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="3" fill="rgba(77,255,184,0.65)">MOBILE SEARCHES</text>
+  <text x="1022" y="220" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="90" fill="#4dffb8">60%</text>
+  <text x="1022" y="256" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="15" letter-spacing="2" fill="rgba(175,198,207,0.75)">ON GOOGLE</text>
+  <text x="1022" y="288" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.50)">one tap from your listing</text>
+
+  <!-- Right lower card -->
+  <rect x="902" y="328" width="240" height="150" rx="18" fill="rgba(7,18,26,0.85)" stroke="rgba(77,255,184,0.12)" stroke-width="1"/>
+  <text x="1022" y="368" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="13" letter-spacing="3" fill="rgba(77,255,184,0.55)">MESSAGE BUTTON</text>
+  <text x="1022" y="418" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="28" fill="rgba(175,198,207,0.85)">IN SEARCH</text>
+  <text x="1022" y="450" text-anchor="middle" font-family="Impact,'Arial Narrow Bold',sans-serif" font-size="28" fill="rgba(175,198,207,0.85)">+ MAPS</text>
+  <text x="1022" y="470" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="12" fill="rgba(175,198,207,0.50)">visible to all searchers</text>
+
+  <!-- Bottom bar -->
+  <line x1="140" y1="510" x2="1060" y2="510" stroke="rgba(88,214,255,0.10)" stroke-width="1"/>
+  <text x="600" y="538" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="15" fill="rgba(175,198,207,0.55)">fuseddistribution.com &#183; Technology Solutions</text>
+</svg>

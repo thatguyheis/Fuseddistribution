@@ -4,17 +4,49 @@
     "title": "How to Compare Silver Premiums Across Dealers",
     "date": "2026-06-12",
     "excerpt": "Calculate cost per ounce to compare silver dealers fairly. Premium formula, typical ranges by product type, hidden fees, and a step-by-step comparison method.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/how-to-compare-silver-premiums-across-dealers/hero.jpg",
     "imageAlt": "Silver premium comparison showing cost-per-ounce formula and dealer markup ranges from 3% on bars to 22% on Silver Eagles"
+  },
+  {
+    "slug": "google-business-profile-messaging-setup-and-tips",
+    "title": "How to Set Up Google Business Profile Messaging",
+    "date": "2026-06-11",
+    "excerpt": "Turn on GBP messaging, write a welcome message, set auto-replies, and stay within Google's 24-hour response window. Step-by-step setup guide.",
+    "tags": [
+      "Google",
+      "Local SEO"
+    ],
+    "author": "Nick",
+    "image": "/blog/google-business-profile-messaging-setup-and-tips/hero.jpg",
+    "imageAlt": "Google Business Profile messaging setup guide showing 24-hour response requirement and auto-reply configuration"
+  },
+  {
+    "slug": "google-business-profile-insights-explained",
+    "title": "Google Business Profile Insights Explained",
+    "date": "2026-06-11",
+    "excerpt": "GBP Insights explained: Discovery vs Direct searches, customer action metrics, and the five numbers to review every week to grow local visibility.",
+    "tags": [
+      "Google",
+      "Local SEO"
+    ],
+    "author": "Nick",
+    "image": "/blog/google-business-profile-insights-explained/hero.jpg",
+    "imageAlt": "GBP Insights dashboard showing Discovery vs Direct searches, direction requests, and key metrics for local businesses"
   },
   {
     "slug": "google-business-profile-q-and-a-how-to-use-it",
     "title": "Google Business Profile Q&A: How to Use It",
     "date": "2026-06-11",
     "excerpt": "Google Business Profile Q and A: how to use it to win local customers. Seed your own questions, answer before competitors do, and turn questions into calls.",
-    "tags": ["Google", "Local Business"],
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/google-business-profile-q-and-a-how-to-use-it/hero.jpg",
     "imageAlt": "Google Business Profile Q&A guide showing how to seed questions, answer them, and convert searchers into calls"
@@ -24,7 +56,10 @@
     "title": "Google Business Profile Posts: What to Write",
     "date": "2026-06-11",
     "excerpt": "Google Business Profile posts: what to write to get local calls. Post types, service post examples, offer formulas, and a 4-week posting plan for local businesses.",
-    "tags": ["Google", "Local Business"],
+    "tags": [
+      "Google",
+      "Local Business"
+    ],
     "author": "Nick",
     "image": "/blog/google-business-profile-posts-what-to-write/hero.jpg",
     "imageAlt": "Google Business Profile posts guide showing what to write, post types, and a 4-week content calendar for local businesses"
@@ -34,7 +69,10 @@
     "title": "Silver Premiums Explained for Beginners",
     "date": "2026-06-11",
     "excerpt": "Silver premiums explained for beginners: why dealers charge over spot, typical premiums for bars, rounds, and Eagles, and how to figure your true cost.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/silver-premiums-explained-for-beginners/hero.jpg",
     "imageAlt": "Silver premiums explained for beginners showing dealer markup over spot price for bars, rounds, and Eagles"
@@ -44,7 +82,10 @@
     "title": "Fractional Silver Coins: Premiums, Uses, and When to Buy",
     "date": "2026-06-10",
     "excerpt": "Fractional silver coins carry 15-40% higher premiums per ounce than 1 oz coins. Learn when that extra cost is worth paying and which sizes make the most sense.",
-    "tags": ["Silver", "Buying Guide"],
+    "tags": [
+      "Silver",
+      "Buying Guide"
+    ],
     "author": "Nick",
     "image": "/blog/fractional-silver-coins/hero.jpg",
     "imageAlt": "Fractional silver coins guide showing premium comparison by size and use cases for 1/10 oz, 1/4 oz, and 1/2 oz silver coins"
@@ -54,7 +95,10 @@
     "title": "Google Local Service Ads: Get the Google Guaranteed Badge and Pay Per Lead",
     "date": "2026-06-10",
     "excerpt": "Google Local Service Ads charge per lead, not per click. Learn how LSA verification works, which service categories qualify, and what cost per lead to expect in 2026.",
-    "tags": ["Google", "Advertising"],
+    "tags": [
+      "Google",
+      "Advertising"
+    ],
     "author": "Nick",
     "image": "/blog/google-local-service-ads/hero.jpg",
     "imageAlt": "Google Local Service Ads guide showing pay-per-lead model, Google Guaranteed badge, and average cost per lead by service category"
