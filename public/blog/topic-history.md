@@ -68,3 +68,4 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-09 | how-to-buy-silver-for-the-first-time | Buying Guide | First silver purchase guide: 1 oz starting size, .999 purity, American Silver Eagles vs rounds vs bars, dealer selection, and true cost-per-ounce calculation |
 | 2026-06-09 | where-to-buy-silver-online-safely | Buying Guide | Safe online silver buying: 7-point dealer verification checklist, fraud red flags, SSL checkout, buy-back programs, and track record verification |
 | 2026-06-10 | fractional-silver-coins | Types | Fractional silver coin premiums: 1/10 oz at 130% over spot vs 1 oz at 12%, minting economics, barter/gifting use cases, and when to skip fractional sizes |
+| 2026-06-12 | how-to-compare-silver-premiums-across-dealers | Buying Guide | Step-by-step dealer comparison method: cost-per-ounce formula, premium ranges by product type (3% bars to 22% Eagles), hidden fees checklist, and volume discount tiers |
