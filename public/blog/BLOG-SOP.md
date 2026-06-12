@@ -96,7 +96,7 @@ Insert at **top** of array (newest first):
   "excerpt": "One or two sentences. Under 160 characters.",
   "tags": ["Tag One", "Tag Two"],
   "author": "Nick",
-  "image": "/blog/your-slug-here/hero.svg",
+  "image": "/blog/your-slug-here/hero.jpg",
   "imageAlt": "Descriptive alt text"
 }
 ```
@@ -474,20 +474,35 @@ Replace any matches with their numeric equivalents:
 
 After fixing, regenerate the `.jpg` for any SVG that changed (Chrome headless, same command as §7/§15).
 
-### Step 1 — Commit and push to GitHub
+### Step 1 — Verify posts.json entry exists (REQUIRED before commit)
+
 ```bash
-git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md
+grep -q '"slug": "[slug]"' public/blog/posts.json && echo "OK" || echo "MISSING — add entry before committing"
+```
+
+If missing: add entry at top of array per §2. Do not commit until this passes.
+`"image"` must reference `hero.jpg` (not `hero.svg`).
+
+### Step 2 — Commit and push to GitHub
+```bash
+git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md public/sitemap.xml
 git commit -m "feat(blog): [Post Title]"
 git push origin main
 ```
 
-### Step 2 — Deploy to Cloudflare
+### Step 3 — Deploy to Cloudflare
 Push does NOT auto-deploy. Run wrangler after every push:
 ```bash
 npx wrangler deploy
 ```
 
-Verify the post is live at `https://fuseddistribution.com/blog/[slug]/` before posting to social media.
+### Step 4 — Verify live
+```bash
+curl -s -o /dev/null -w "%{http_code}" https://fuseddistribution.com/blog/[slug]/
+# Must return 200 before declaring publish complete
+```
+
+"Pushing" a blog post = all 4 steps above complete + 200 verified. Git push alone is not a publish.
 
 Also verify `https://fuseddistribution.com/sitemap.xml` includes the new slug. If the slug is absent, the sitemap is static — log the gap and notify Nick to add sitemap generation to the build pipeline.
 
