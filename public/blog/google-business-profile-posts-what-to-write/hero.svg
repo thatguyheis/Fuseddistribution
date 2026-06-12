@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="gw-cyan" cx="58%" cy="48%" r="42%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gw-green" cx="12%" cy="18%" r="36%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#gw-cyan)"/>
+  <rect width="1200" height="630" fill="url(#gw-green)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="128" cy="95"   r="1.3" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="355" cy="62"   r="1.5" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="490" cy="148"  r="1"   fill="#58d6ff" opacity="0.25"/>
+  <circle cx="745" cy="78"   r="1.4" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="935" cy="122"  r="1.2" fill="#4dffb8" opacity="0.16"/>
+  <circle cx="1068" cy="65"  r="1"   fill="#58d6ff" opacity="0.22"/>
+  <circle cx="195" cy="505"  r="1.3" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="462" cy="555"  r="1.2" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="812" cy="535"  r="1.5" fill="#58d6ff" opacity="0.17"/>
+  <circle cx="1072" cy="498" r="1"   fill="#4dffb8" opacity="0.22"/>
+
+  <!-- Left card: the post formula -->
+  <rect x="42" y="185" width="272" height="240" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <rect x="42" y="185" width="272" height="4" rx="2" fill="#58d6ff" opacity="0.6"/>
+  <text x="178" y="222" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#58d6ff" opacity="0.8">THE WEEKLY POST FORMULA</text>
+  <text x="178" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="rgba(175,198,207,0.8)">1 service</text>
+  <text x="178" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="rgba(175,198,207,0.8)">+ 1 real job photo</text>
+  <text x="178" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="rgba(175,198,207,0.8)">+ 1 reason to call</text>
+  <rect x="66" y="352" width="224" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
+  <text x="178" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(88,214,255,0.6)">15 minutes, once a week</text>
+  <text x="178" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(175,198,207,0.5)">Beats company news every time</text>
+
+  <!-- Center: main content -->
+  <text x="600" y="170" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="#4dffb8" opacity="0.85">LOCAL BUSINESS GUIDE &#183; 2026</text>
+  <text x="600" y="246" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="55" letter-spacing="2" fill="#ecf8fb">GOOGLE BUSINESS PROFILE</text>
+  <text x="600" y="312" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="55" letter-spacing="2" fill="#ecf8fb">POSTS: WHAT TO WRITE</text>
+
+  <!-- Big stat -->
+  <text x="600" y="424" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="104" letter-spacing="-2" fill="#58d6ff">7 DAYS</text>
+  <text x="600" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="rgba(175,198,207,0.65)">BEFORE YOUR POST ROTATES OUT OF VIEW</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.5)" letter-spacing="1">SERVICES &#183; PROOF &#183; OFFERS &#183; AVAILABILITY</text>
+
+  <!-- Right card: what searchers do -->
+  <rect x="886" y="185" width="272" height="240" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <rect x="886" y="185" width="272" height="4" rx="2" fill="#4dffb8" opacity="0.6"/>
+  <text x="1022" y="222" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#4dffb8" opacity="0.8">WHAT SEARCHERS DO</text>
+  <text x="910" y="258" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Read reviews</text>
+  <rect x="910" y="266" width="224" height="12" rx="4" fill="#58d6ff" opacity="0.8"/>
+  <text x="1134" y="258" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#58d6ff">77%</text>
+  <text x="910" y="306" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Visit website</text>
+  <rect x="910" y="314" width="163" height="12" rx="4" fill="#58d6ff" opacity="0.55"/>
+  <text x="1134" y="306" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#58d6ff">56%</text>
+  <text x="910" y="354" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.75)">Call business</text>
+  <rect x="910" y="362" width="81" height="12" rx="4" fill="#4dffb8" opacity="0.6"/>
+  <text x="1134" y="354" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4dffb8">28%</text>
+  <text x="1022" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.5)">Calls pay you. Impressions don't.</text>
+
+  <!-- Bottom brand bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(4,16,24,0.9)"/>
+  <text x="600" y="614" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="rgba(88,214,255,0.5)">FUSEDDISTRIBUTION.COM</text>
+</svg>
