@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glowC2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowG2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+
+  <!-- Radial glows -->
+  <ellipse cx="600" cy="600" rx="560" ry="560" fill="url(#glowC2)"/>
+  <ellipse cx="140" cy="140" rx="300" ry="300" fill="url(#glowG2)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="420" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.10"/>
+
+  <!-- Scatter dots -->
+  <circle cx="88" cy="200" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="234" cy="120" r="1" fill="#4dffb8" fill-opacity="0.28"/>
+  <circle cx="412" cy="80" r="1.2" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="760" cy="60" r="1.5" fill="#4dffb8" fill-opacity="0.20"/>
+  <circle cx="942" cy="180" r="1" fill="#58d6ff" fill-opacity="0.25"/>
+  <circle cx="1100" cy="140" r="1.3" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="1048" cy="1020" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="166" cy="980" r="1" fill="#4dffb8" fill-opacity="0.20"/>
+  <circle cx="318" cy="1140" r="1.2" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="874" cy="1100" r="1" fill="#4dffb8" fill-opacity="0.16"/>
+  <circle cx="600" cy="90" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="1150" cy="600" r="1.2" fill="#4dffb8" fill-opacity="0.18"/>
+
+  <!-- TOP ZONE: Eyebrow + Brand -->
+  <text x="600" y="100" font-family="Impact,sans-serif" font-size="18" fill="#afc6cf" text-anchor="middle" letter-spacing="8">SILVER BUYING GUIDE</text>
+  <text x="600" y="150" font-family="Impact,sans-serif" font-size="36" fill="#58d6ff" text-anchor="middle" letter-spacing="5">FUSED</text>
+  <text x="600" y="176" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.6)" text-anchor="middle" letter-spacing="4">DISTRIBUTION</text>
+
+  <!-- Divider -->
+  <line x1="100" y1="196" x2="1100" y2="196" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+
+  <!-- CENTER ZONE: Title -->
+  <text x="600" y="290" font-family="Impact,sans-serif" font-size="62" fill="#ecf8fb" text-anchor="middle" letter-spacing="1">MAPLE LEAF</text>
+  <text x="600" y="360" font-family="Impact,sans-serif" font-size="36" fill="#afc6cf" text-anchor="middle" letter-spacing="6">VS</text>
+  <text x="600" y="440" font-family="Impact,sans-serif" font-size="62" fill="#ecf8fb" text-anchor="middle" letter-spacing="1">SILVER EAGLE</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="468" x2="1000" y2="468" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+
+  <!-- KEY STAT: premium gap -->
+  <text x="600" y="540" font-family="Trebuchet MS,sans-serif" font-size="20" fill="#afc6cf" text-anchor="middle" letter-spacing="1">TYPICAL PREMIUM GAP</text>
+  <text x="600" y="650" font-family="Impact,sans-serif" font-size="180" fill="#4dffb8" text-anchor="middle">$2</text>
+  <text x="600" y="700" font-family="Trebuchet MS,sans-serif" font-size="22" fill="#afc6cf" text-anchor="middle" letter-spacing="2">PER OUNCE AVERAGE</text>
+
+  <!-- Purity comparison blocks -->
+  <rect x="100" y="740" width="450" height="140" rx="16" fill="rgba(7,18,26,0.85)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="325" y="790" font-family="Impact,sans-serif" font-size="20" fill="#afc6cf" text-anchor="middle" letter-spacing="2">MAPLE LEAF</text>
+  <text x="325" y="840" font-family="Impact,sans-serif" font-size="48" fill="#58d6ff" text-anchor="middle">.9999</text>
+  <text x="325" y="868" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.55)" text-anchor="middle">FINE SILVER &#183; $3&#8211;6/oz PREMIUM</text>
+
+  <rect x="650" y="740" width="450" height="140" rx="16" fill="rgba(7,18,26,0.85)" stroke="rgba(77,255,184,0.18)" stroke-width="1"/>
+  <text x="875" y="790" font-family="Impact,sans-serif" font-size="20" fill="#afc6cf" text-anchor="middle" letter-spacing="2">SILVER EAGLE</text>
+  <text x="875" y="840" font-family="Impact,sans-serif" font-size="48" fill="#4dffb8" text-anchor="middle">.999</text>
+  <text x="875" y="868" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.55)" text-anchor="middle">FINE SILVER &#183; $4&#8211;8/oz PREMIUM</text>
+
+  <!-- Key insight line -->
+  <text x="600" y="940" font-family="Trebuchet MS,sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Same 1 troy oz of silver. Different price at checkout.</text>
+  <text x="600" y="972" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.7)" text-anchor="middle">Calculate true cost per oz before you buy either coin.</text>
+
+  <!-- BOTTOM ZONE: CTA button shape -->
+  <rect x="250" y="1040" width="700" height="80" rx="18" fill="rgba(7,18,26,0.9)" stroke="#58d6ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="600" y="1086" font-family="Impact,sans-serif" font-size="20" fill="#58d6ff" text-anchor="middle" letter-spacing="3">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Site URL -->
+  <text x="600" y="1152" font-family="Trebuchet MS,sans-serif" font-size="14" fill="rgba(175,198,207,0.4)" text-anchor="middle" letter-spacing="2">Silver and precious metals markets involve risk. Not financial advice.</text>
+
+</svg>

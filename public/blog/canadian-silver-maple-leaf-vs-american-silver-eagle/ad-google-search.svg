@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628">
+  <defs>
+    <radialGradient id="gs-glow" cx="40%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="628" fill="#041018"/>
+  <rect width="1200" height="628" fill="url(#gs-glow)"/>
+
+  <!-- Subtle grid -->
+  <line x1="300" y1="0" x2="300" y2="628" stroke="rgba(255,255,255,0.018)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="628" stroke="rgba(255,255,255,0.018)" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="628" stroke="rgba(255,255,255,0.018)" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="90" cy="70" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="1120" cy="100" r="1" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="55" cy="550" r="1.5" fill="#58d6ff" fill-opacity="0.15"/>
+  <circle cx="1160" cy="500" r="1" fill="#4dffb8" fill-opacity="0.15"/>
+
+  <!-- BRAND HEADER BAR -->
+  <rect x="0" y="0" width="1200" height="70" fill="rgba(7,16,22,0.70)"/>
+  <text x="50" y="44" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="28" fill="#58d6ff" letter-spacing="4">FUSED</text>
+  <text x="116" y="44" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" letter-spacing="3"> DISTRIBUTION</text>
+  <text x="1150" y="44" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="rgba(88,214,255,0.60)" text-anchor="end" letter-spacing="2">fuseddistribution.com</text>
+
+  <!-- GOOGLE SEARCH BAR MOCK -->
+  <rect x="120" y="100" width="960" height="58" rx="29" fill="rgba(255,255,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1.5"/>
+  <text x="168" y="135" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="rgba(175,198,207,0.55)">canadian silver maple leaf vs american silver eagle</text>
+  <!-- Search icon -->
+  <circle cx="1040" cy="129" r="12" fill="none" stroke="#58d6ff" stroke-opacity="0.50" stroke-width="1.5"/>
+  <line x1="1049" y1="138" x2="1058" y2="147" stroke="#58d6ff" stroke-opacity="0.50" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- SPONSORED RESULT CARD -->
+  <rect x="120" y="185" width="760" height="300" rx="16" fill="rgba(11,24,32,0.85)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- Sponsored badge -->
+  <rect x="142" y="205" width="82" height="22" rx="4" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.25)" stroke-width="1"/>
+  <text x="183" y="221" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="#58d6ff" text-anchor="middle" letter-spacing="2">SPONSORED</text>
+
+  <!-- Display URL -->
+  <text x="142" y="252" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="rgba(175,198,207,0.65)">fuseddistribution.com &#187; blog &#187; maple-leaf-vs-silver-eagle</text>
+
+  <!-- Ad headline -->
+  <text x="142" y="296" font-family="'Trebuchet MS', sans-serif" font-size="24" fill="#58d6ff" font-weight="700">Maple Leaf vs. Silver Eagle | Which Costs Less Per Oz?</text>
+
+  <!-- Ad description -->
+  <text x="142" y="334" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="rgba(175,198,207,0.80)">Both hold 1 troy oz of silver. Maple Leafs are .9999 fine at $3-6 over spot.</text>
+  <text x="142" y="358" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="rgba(175,198,207,0.80)">Eagles run $4-8 over spot. Full breakdown at the link.</text>
+
+  <!-- Sitelink chips -->
+  <rect x="142" y="388" width="130" height="30" rx="15" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="207" y="408" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" text-anchor="middle">Purity Compared</text>
+
+  <rect x="284" y="388" width="130" height="30" rx="15" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="349" y="408" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" text-anchor="middle">Premium Guide</text>
+
+  <rect x="426" y="388" width="130" height="30" rx="15" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="491" y="408" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" text-anchor="middle">Reserve Plans</text>
+
+  <!-- RIGHT SIDE STAT PANEL -->
+  <rect x="920" y="185" width="260" height="300" rx="16" fill="rgba(11,24,32,0.85)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <text x="1050" y="232" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(175,198,207,0.50)" text-anchor="middle" letter-spacing="3">PREMIUM GAP</text>
+  <text x="1050" y="286" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="68" fill="#58d6ff" text-anchor="middle" letter-spacing="2">$1-3</text>
+  <text x="1050" y="308" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(175,198,207,0.50)" text-anchor="middle" letter-spacing="2">per ounce avg</text>
+
+  <line x1="944" y1="330" x2="1156" y2="330" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+
+  <text x="1050" y="362" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(175,198,207,0.50)" text-anchor="middle" letter-spacing="3">MAPLE LEAF PURITY</text>
+  <text x="1050" y="430" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="46" fill="#4dffb8" text-anchor="middle" letter-spacing="2">.9999</text>
+  <text x="1050" y="455" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(175,198,207,0.50)" text-anchor="middle" letter-spacing="2">four nines fine silver</text>
+
+  <!-- BOTTOM BAR -->
+  <rect x="0" y="558" width="1200" height="70" fill="rgba(7,16,22,0.70)"/>
+  <text x="600" y="600" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="rgba(88,214,255,0.50)" text-anchor="middle" letter-spacing="3">FULL COMPARISON AT FUSEDDISTRIBUTION.COM</text>
+</svg>
