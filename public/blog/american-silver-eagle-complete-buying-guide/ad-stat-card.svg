@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628">
+  <defs>
+    <radialGradient id="sc-glow-c" cx="55%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-glow-tr" cx="90%" cy="10%" r="40%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="628" fill="#041018"/>
+  <rect width="1200" height="628" fill="url(#sc-glow-tr)"/>
+  <rect width="1200" height="628" fill="url(#sc-glow-c)"/>
+
+  <!-- Grid lines -->
+  <line x1="200" y1="0" x2="200" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="1000" y1="0" x2="1000" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+
+  <!-- Ring accent -->
+  <circle cx="850" cy="314" r="260" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="120" cy="80" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="1080" cy="55" r="1" fill="#4dffb8" fill-opacity="0.20"/>
+  <circle cx="70" cy="400" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="1140" cy="520" r="1" fill="#4dffb8" fill-opacity="0.15"/>
+  <circle cx="600" cy="590" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
+
+  <!-- LEFT CONTENT ZONE -->
+
+  <!-- Eyebrow label -->
+  <rect x="50" y="68" width="230" height="34" rx="17" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="165" y="90" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="#58d6ff" text-anchor="middle" letter-spacing="4">SILVER BUYING GUIDE</text>
+
+  <!-- Large stat: "1986" -->
+  <text x="50" y="250" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="190" fill="rgba(88,214,255,0.10)" letter-spacing="4">1986</text>
+  <text x="50" y="248" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="160" fill="#58d6ff" letter-spacing="4">1986</text>
+
+  <!-- Label below stat -->
+  <text x="50" y="288" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="rgba(175,198,207,0.65)" letter-spacing="3">YEAR THE SILVER EAGLE WAS FIRST MINTED</text>
+
+  <!-- Divider -->
+  <line x1="50" y1="312" x2="520" y2="312" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+
+  <!-- Headline -->
+  <text x="50" y="368" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="48" fill="#ecf8fb" letter-spacing="2">AMERICAN SILVER EAGLE</text>
+
+  <!-- Supporting text lines -->
+  <text x="50" y="410" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="rgba(175,198,207,0.80)">1 troy oz &#183; .999 fine silver &#183; $1 face value</text>
+  <text x="50" y="442" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="rgba(175,198,207,0.60)">Bullion premiums: $4-8 over spot</text>
+
+  <!-- CTA -->
+  <rect x="50" y="478" width="310" height="54" rx="12" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.32)" stroke-width="1.5"/>
+  <text x="205" y="510" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#58d6ff" text-anchor="middle" letter-spacing="2">fuseddistribution.com/reserve</text>
+
+  <!-- BRAND MARK (bottom right) -->
+  <text x="1150" y="596" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="28" fill="rgba(88,214,255,0.70)" text-anchor="end" letter-spacing="3">FUSED</text>
+  <text x="1150" y="618" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(88,214,255,0.35)" text-anchor="end" letter-spacing="3">DISTRIBUTION</text>
+
+  <!-- RIGHT STAT CARDS (three small cards) -->
+  <rect x="660" y="110" width="490" height="116" rx="14" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="905" y="148" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">BULLION PREMIUM</text>
+  <text x="905" y="204" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="50" fill="#58d6ff" text-anchor="middle" letter-spacing="2">$4-8 / OZ</text>
+
+  <rect x="660" y="240" width="490" height="116" rx="14" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="905" y="278" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">PROOF PREMIUM</text>
+  <text x="905" y="334" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="50" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">$30+ / OZ</text>
+
+  <rect x="660" y="370" width="490" height="116" rx="14" fill="rgba(77,255,184,0.04)" stroke="rgba(77,255,184,0.12)" stroke-width="1"/>
+  <text x="905" y="408" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">SILVER CONTENT</text>
+  <text x="905" y="464" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="50" fill="#4dffb8" text-anchor="middle" letter-spacing="2">1 OZ .999</text>
+</svg>
