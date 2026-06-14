@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow-center" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tl" cx="10%" cy="10%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow-center)"/>
+  <rect width="1200" height="1200" fill="url(#glow-tl)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="430" fill="none" stroke="#58d6ff" stroke-opacity="0.06" stroke-width="1"/>
+  <circle cx="600" cy="600" r="290" fill="none" stroke="#58d6ff" stroke-opacity="0.10" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="100" cy="120" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="350" cy="80" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="780" cy="60" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="1050" cy="140" r="1" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="1140" cy="90" r="1.5" fill="#58d6ff" opacity="0.15"/>
+  <circle cx="55" cy="700" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="1155" cy="680" r="1.5" fill="#58d6ff" opacity="0.20"/>
+  <circle cx="900" cy="1100" r="1" fill="#4dffb8" opacity="0.22"/>
+  <circle cx="180" cy="1080" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="490" cy="1140" r="1" fill="#58d6ff" opacity="0.16"/>
+
+  <!-- Top zone: category + brand -->
+  <text x="600" y="108"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="22"
+    fill="#58d6ff"
+    opacity="0.70"
+    letter-spacing="6"
+    text-anchor="middle">FUSED DISTRIBUTION</text>
+
+  <text x="600" y="148"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="14"
+    fill="rgba(175,198,207,0.55)"
+    letter-spacing="4"
+    text-anchor="middle">SILVER EDUCATION SERIES</text>
+
+  <!-- Title -->
+  <text x="600" y="240"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="78"
+    fill="#ecf8fb"
+    letter-spacing="3"
+    text-anchor="middle">SILVER ROUNDS</text>
+  <text x="600" y="318"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="54"
+    fill="rgba(175,198,207,0.70)"
+    letter-spacing="3"
+    text-anchor="middle">VS.</text>
+  <text x="600" y="400"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="78"
+    fill="#ecf8fb"
+    letter-spacing="3"
+    text-anchor="middle">SILVER COINS</text>
+
+  <!-- Divider line -->
+  <line x1="140" y1="430" x2="1060" y2="430" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- Left stat: ROUNDS ~5% -->
+  <rect x="72" y="458" width="480" height="280" rx="20"
+    fill="rgba(7,20,28,0.85)"
+    stroke="#4dffb8"
+    stroke-opacity="0.25"
+    stroke-width="1"/>
+  <text x="312" y="510"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="13"
+    fill="rgba(175,198,207,0.60)"
+    letter-spacing="3"
+    text-anchor="middle">PRIVATE MINT ROUNDS</text>
+  <text x="312" y="640"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="148"
+    fill="#4dffb8"
+    text-anchor="middle">~5%</text>
+  <text x="312" y="685"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="14"
+    fill="rgba(175,198,207,0.70)"
+    text-anchor="middle">premium over spot</text>
+  <text x="312" y="710"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="13"
+    fill="rgba(175,198,207,0.50)"
+    text-anchor="middle">(typical range: 3-8%)</text>
+
+  <!-- VS separator -->
+  <rect x="560" y="555" width="80" height="80" rx="16"
+    fill="rgba(4,16,24,0.95)"
+    stroke="rgba(88,214,255,0.30)"
+    stroke-width="1"/>
+  <text x="600" y="613"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="44"
+    fill="#ecf8fb"
+    text-anchor="middle">VS</text>
+
+  <!-- Right stat: COINS ~20% -->
+  <rect x="648" y="458" width="480" height="280" rx="20"
+    fill="rgba(7,20,28,0.85)"
+    stroke="#58d6ff"
+    stroke-opacity="0.25"
+    stroke-width="1"/>
+  <text x="888" y="510"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="13"
+    fill="rgba(175,198,207,0.60)"
+    letter-spacing="3"
+    text-anchor="middle">GOVERNMENT COINS (ASE)</text>
+  <text x="888" y="640"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="148"
+    fill="#58d6ff"
+    text-anchor="middle">~20%</text>
+  <text x="888" y="685"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="14"
+    fill="rgba(175,198,207,0.70)"
+    text-anchor="middle">premium over spot</text>
+  <text x="888" y="710"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="13"
+    fill="rgba(175,198,207,0.50)"
+    text-anchor="middle">(typical range: 15-25%)</text>
+
+  <!-- Key insight block -->
+  <rect x="72" y="770" width="1056" height="90" rx="16"
+    fill="rgba(88,214,255,0.06)"
+    stroke="rgba(88,214,255,0.18)"
+    stroke-width="1"/>
+  <text x="600" y="807"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="18"
+    fill="#58d6ff"
+    letter-spacing="3"
+    text-anchor="middle">SAME .999 FINE SILVER INSIDE BOTH</text>
+  <text x="600" y="840"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="16"
+    fill="rgba(175,198,207,0.80)"
+    text-anchor="middle">Rounds give you 15-20% more metal per dollar than government coins.</text>
+
+  <!-- Excerpt -->
+  <text x="600" y="920"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="19"
+    fill="rgba(175,198,207,0.85)"
+    text-anchor="middle">At 100 oz, buying Eagles over rounds costs</text>
+  <text x="600" y="952"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="19"
+    fill="rgba(175,198,207,0.85)"
+    text-anchor="middle">$300-$600 more for identical silver content.</text>
+
+  <!-- CTA button shape -->
+  <rect x="300" y="990" width="600" height="68" rx="20"
+    fill="rgba(88,214,255,0.05)"
+    stroke="#58d6ff"
+    stroke-opacity="0.45"
+    stroke-width="1.5"/>
+  <text x="600" y="1033"
+    font-family="Impact,Haettenschweiler,sans-serif"
+    font-size="20"
+    fill="#58d6ff"
+    letter-spacing="3"
+    text-anchor="middle">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Bottom brand -->
+  <text x="600" y="1140"
+    font-family="Trebuchet MS,sans-serif"
+    font-size="13"
+    fill="rgba(88,214,255,0.45)"
+    letter-spacing="3"
+    text-anchor="middle">fuseddistribution.com/blog</text>
+</svg>
