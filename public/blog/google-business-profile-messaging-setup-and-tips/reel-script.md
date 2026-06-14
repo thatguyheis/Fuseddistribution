@@ -1,8 +1,8 @@
 # Reel Script: How to Set Up Google Business Profile Messaging
-Generated: 2026-06-11
-Target length: 182 seconds
+Generated: 2026-06-13
+Target length: 202 seconds
 Format: Long Form
-Hook type: Missed Opportunity
+Hook type: Contrarian Stat
 
 > **Timestamp rules (parser enforces these):**
 > - All timestamps MUST be whole integers, no decimals.
@@ -10,61 +10,68 @@ Hook type: Missed Opportunity
 
 ---
 
-## HOOK (0-9s)
-Text: YOUR COMPETITORS DON'T HAVE MESSAGING ON
-Narration: Most local businesses never turn on Google Business Profile messaging. That means your listing can have a contact button theirs doesn't.
+## HOOK (0-10s)
+Text: 57% PREFER MESSAGING OVER CALLING
+Narration: More than half your customers prefer to message your business, not call it.
 
 ---
 
 ## BODY
 
-**Stat 1** (9-32s)
-Text: 57% PREFER TO MESSAGE OVER CALLING
-Explanation: BrightLocal 2024 found 57 percent of consumers prefer messaging a business to calling
+**Stat 1** (10-37s)
+Text: 57% PREFER MESSAGING OVER CALLING
+Explanation: BrightLocal 2024 found 57 percent of consumers prefer to message a business rather than call
 Graphic_type: percent_fill
-Narration: 57 percent of consumers prefer to message a business rather than call, according to BrightLocal 2024. Your phone rings during business hours. Your GBP message inbox is open all day. Customers who would not call after hours will send a message instead.
+Graphic_value: 57
+Graphic_label: Prefer Messaging
+Graphic_remainder_label: Prefer Calling
+Narration: 57 percent of consumers prefer to message a business rather than call it. That shift already happened. The customers who want to contact you without picking up the phone are already on Google. The question is whether your listing gives them a way to do it.
 
-**Stat 2** (32-54s)
-Text: 60% OF GOOGLE SEARCHES ARE ON MOBILE
-Explanation: Over 60 percent of all Google searches happen on mobile, where the Message button is one tap from your listing
+**Stat 2** (37-65s)
+Text: 60% OF SEARCHES ARE ON MOBILE
+Explanation: 60 percent of all Google searches happen on mobile, where the GBP Message button is one tap from your listing
 Graphic_type: percent_fill
-Narration: Over 60 percent of Google searches happen on mobile, according to StatCounter. On mobile, the Message button sits right next to Call and Website on your GBP listing. It requires one tap. That is lower friction than a phone call, especially outside business hours.
+Graphic_value: 60
+Graphic_label: Mobile Searches
+Graphic_remainder_label: Desktop Searches
+Narration: 60 percent of all Google searches happen on mobile. When a mobile user finds your listing, the Message button sits directly next to the Call and Website buttons. One tap starts a conversation. Most businesses have a call button and a website button. Very few have a message button. That gap is an opening.
 
-**Stat 3** (54-76s)
-Text: RESPOND WITHIN 24 HOURS OR GOOGLE TURNS IT OFF
-Explanation: Google's policy requires a response within 24 hours. Consistent non-response leads to messaging being disabled on your profile
-Graphic_type: none
-Narration: Google requires a response to every message within 24 hours. Miss that window consistently and Google auto-disables messaging on your profile. You will see a warning first. The fix is simple: turn on push notifications in the Google Maps app so messages alert you immediately.
+**Stat 3** (65-98s)
+Text: 24H RESPONSE REQUIREMENT
+Explanation: Google requires a response within 24 hours to keep the messaging feature and badge active on your listing
+Graphic_type: percent_fill
+Graphic_value: 24
+Graphic_label: Hours to Respond
+Graphic_remainder_label: Remaining Day
+Narration: Google requires a response within 24 hours to keep the messaging feature active. If your response rate drops below what Google considers acceptable, you get a warning in your GBP dashboard. If it keeps dropping, Google turns off messaging automatically. You keep your ranking, but you lose the contact channel. The 24-hour window is strict. Build a system around it, not around your schedule.
 
-**Stat 4** (76-100s)
-Text: SET A WELCOME MESSAGE THAT SENDS AUTOMATICALLY
-Explanation: A welcome message sends the moment a customer opens a chat, buying response time and confirming they reached the right business
-Graphic_type: none
-Narration: Set a welcome message in your GBP dashboard. It sends automatically the moment someone opens a chat with your business. Include your name, confirm you got their message, and set a realistic response time expectation. That alone prevents a customer from leaving because they think no one saw their message.
+**Chart** (98-127s)
+Title: Most Common GBP Customer Message Topics
+Bars:
+- Business Hours: 95%
+- Service Area: 80%
+- Pricing Estimates: 68%
+- Availability: 55%
+- Appointment Booking: 45%
+Narration: These are the most common topics customers message local businesses about. Business hours and holiday schedules top the list. Service area and pricing estimates come next. Set auto-replies for the top two or three categories that apply to your business. Auto-replies count toward your response rate. Google tracks whether messages are answered, not whether a human answered them.
 
-**Stat 5** (100-124s)
-Text: AUTO-REPLIES ANSWER COMMON QUESTIONS INSTANTLY
-Explanation: GBP supports keyword-triggered auto-replies for up to three common questions, protecting response rate outside business hours
+**Overlay 1** (127-158s)
+Text: WRITE A SPECIFIC WELCOME MESSAGE
+Explanation: Welcome messages that confirm receipt and set a reply time expectation build more trust than generic greetings
 Graphic_type: none
-Narration: Google lets you set keyword-triggered auto-replies for your three most common questions. Hours, service area, pricing. When a customer asks one of those, they get an instant answer. You don't need to be at your phone. Auto-replies count toward your response rate, so they also protect you from Google disabling the feature on nights and weekends.
+Narration: The welcome message sends automatically the moment a customer opens a chat with your business. Write it to confirm you received the message and set a reply time expectation. A good welcome message says something like: Hi, thanks for reaching out. We got your message and typically reply within a few hours during business hours. That builds trust. A generic welcome message says nothing.
 
-**Stat 6** (124-148s)
-Text: KEEP REPLIES SHORT AND SPECIFIC
-Explanation: Customers messaging from Google Maps are in research mode. Short, direct answers move them to action faster than long paragraphs
+**Overlay 2** (158-190s)
+Text: AUTO-REPLIES PROTECT YOUR RESPONSE RATE
+Explanation: Keyword-triggered auto-replies for common questions count toward your response rate and protect your messaging badge outside business hours
 Graphic_type: none
-Narration: When you reply manually, keep it under four sentences. Answer the specific question first. Add your name so it feels personal. If the question leads to a booking or a quote, give one clear next step. Do not start with "Great question" or "Thanks so much for reaching out." That is a signal that a template answered instead of a person.
-
-**Stat 7** (148-168s)
-Text: TURN IT OFF IF YOU CAN'T KEEP UP
-Explanation: Intentionally turning off messaging is better than Google auto-disabling it due to poor response rate
-Graphic_type: none
-Narration: If you cannot check messages at least once per day, turn messaging off. A profile with messaging disabled is better than one where Google disabled it for poor response rate. You can re-enable it in two minutes whenever your capacity allows. The setup takes the same amount of time.
+Narration: Auto-replies are keyword-triggered responses for your most common questions. If most of your incoming messages ask about your hours or service area, an auto-reply can answer those before you need to respond manually. This protects your response rate outside business hours. Google does not care if a human answered. It cares if the message was answered.
 
 ---
 
-## QUESTION (168-182s)
-Text: DO YOU HAVE GBP MESSAGING TURNED ON?
-Subtext: DROP YOUR ANSWER BELOW
-Narration: Follow for more local business tips.
+## QUESTION (190-202s)
+Text: DO YOU HAVE GBP MESSAGING ON?
+Subtext: TYPE YES OR NO BELOW
+Narration: Follow for more tips to grow your business.
 
 ---

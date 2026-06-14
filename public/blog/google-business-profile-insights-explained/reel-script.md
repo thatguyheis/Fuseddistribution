@@ -1,8 +1,8 @@
 # Reel Script: Google Business Profile Insights Explained
-Generated: 2026-06-11
-Target length: 188 seconds
+Generated: 2026-06-13
+Target length: 202 seconds
 Format: Long Form
-Hook type: Knowledge Gap
+Hook type: Contrarian Stat
 
 > **Timestamp rules (parser enforces these):**
 > - All timestamps MUST be whole integers, no decimals.
@@ -10,65 +10,68 @@ Hook type: Knowledge Gap
 
 ---
 
-## HOOK (0-9s)
-Text: MOST BUSINESS OWNERS IGNORE GBP INSIGHTS
-Narration: Your Google Business Profile Insights tab is full of data. Most local business owners never open it. Here is what you're missing.
+## HOOK (0-10s)
+Text: 84% FROM DISCOVERY SEARCHES
+Narration: 84 percent of Google Business Profile views come from Discovery searches. Not from people who know your name.
 
 ---
 
 ## BODY
 
-**Stat 1** (9-32s)
-Text: 84% OF YOUR GBP VIEWS COME FROM NEW CUSTOMERS
-Explanation: Google data shows 84 percent of GBP profile views come from Discovery searches, not people who already know the business
+**Stat 1** (10-38s)
+Text: 84% FROM DISCOVERY SEARCHES
+Explanation: Google 2019 data shows 84 percent of GBP profile views come from Discovery searches, not Direct searches from people who know the business
 Graphic_type: percent_fill
-Narration: 84 percent of GBP profile views come from Discovery searches. That means people who searched a category, like plumber near me or best dentist downtown, not people who typed your name. Discovery is new customer acquisition. If that number is falling, your profile is losing ground in service-based queries.
+Graphic_value: 84
+Graphic_label: Discovery Views
+Graphic_remainder_label: Direct Views
+Narration: 84 percent of GBP profile views come from Discovery searches. Discovery means someone searched a service category, like electrician near me or best pizza downtown, and your profile appeared. They did not search your name. They did not know your business. Discovery searches are new customer acquisition. Direct searches are people who already know you. Watch Discovery. That is where growth lives.
 
-**Stat 2** (32-54s)
-Text: DISCOVERY VS DIRECT: WHAT THE SPLIT MEANS
-Explanation: Discovery searches show how many new customers found you by category. Direct searches show people who already know your business name
-Graphic_type: none
-Narration: Insights splits your searches into Discovery and Direct. Discovery is people who searched a service and found you. Direct is people who searched your name. A healthy profile grows its Discovery count over time. If your Direct searches are high but Discovery is low, your existing customers know you but new people can't find you.
+**Stat 2** (38-68s)
+Text: 2.7X MORE WITH RIGHT CATEGORY
+Explanation: Google 2024 data shows businesses with an accurate primary category get 2.7 times more Discovery searches than incomplete profiles
+Graphic_type: percent_fill
+Graphic_value: 73
+Graphic_label: Category Advantage
+Graphic_remainder_label: Without Category
+Narration: Google 2024 data shows businesses with an accurate and complete primary category receive 2.7 times more Discovery searches than businesses with a partial or incorrect one. That is not a small edge. That is nearly three times more reach from a single profile field. If your Discovery count is low, the first thing to check is your primary category and your secondary category list.
 
-**Stat 3** (54-76s)
-Text: 2.7X MORE DISCOVERY WITH THE RIGHT CATEGORY
-Explanation: Google 2024 data shows profiles with an accurate primary category get 2.7 times more Discovery searches than those with incomplete category settings
-Graphic_type: none
-Narration: In 2024, Google reported that businesses with an accurate primary category get 2.7 times more Discovery searches than those with a partial or incorrect one. If your Discovery numbers are low, your primary category is the first thing to check. Go to your profile settings and confirm your primary category matches what customers actually search for.
-
-**Stat 4** (76-100s)
-Text: DIRECTION REQUESTS ARE THE HIGHEST INTENT SIGNAL
-Explanation: Direction requests mean a customer is actively planning to visit your business location. It is the strongest action metric in GBP Insights
-Graphic_type: none
-Narration: The most valuable number in GBP Insights is direction requests. Someone requesting directions has moved from browsing to planning to visit. A flat or falling direction count while views hold steady means customers are seeing your profile but something is stopping them from committing. That is usually reviews, photos, or outdated information.
-
-**Stat 5** (100-122s)
-Text: CALLS IN INSIGHTS ONLY COUNT GBP BUTTON TAPS
-Explanation: The Calls metric only counts calls placed by tapping the phone button directly in your GBP listing, not calls from your website or from memory
-Graphic_type: none
-Narration: The Calls number in GBP Insights only counts calls placed by tapping the phone button directly in your listing. Calls from your website, your Google ad, or from someone who remembered your number don't appear here. If your Calls count drops but your website call volume holds, the problem is specific to your GBP listing, not your business overall.
-
-**Stat 6** (122-146s)
-Text: SEARCH VIEWS VS MAPS VIEWS TELL DIFFERENT STORIES
-Explanation: A drop in Maps views suggests a Maps-specific ranking issue. A drop in Search views suggests a broader local algorithm change affecting your listing
-Graphic_type: none
-Narration: Insights splits your views into Google Search and Google Maps. A drop in Maps views means your pin is appearing less frequently when people navigate in Google Maps. A drop in Search views is a broader ranking signal. Track both separately each week. They often move independently and the cause is different in each case.
-
-**Chart** (146-168s)
+**Chart** (68-98s)
 Title: GBP Insights Metrics by Conversion Strength
 Bars:
-- Direction Requests: 95
-- Phone Calls: 82
-- Website Clicks: 65
-- Photo Views: 40
-- Profile Views: 20
-Narration: Direction requests carry the highest intent of any action in GBP Insights. Calls are second. Website clicks indicate interest but not commitment. Photo views and profile views show awareness. Build your weekly review around the top two. If calls and directions are growing, the profile is working.
+- Direction Requests: 95%
+- Phone Calls: 85%
+- Website Clicks: 65%
+- Photo Views: 35%
+- Profile Views: 20%
+Narration: This chart ranks GBP Insights metrics by conversion strength. Direction requests and phone calls are the highest-intent actions. Someone who requests directions plans to walk in. Someone who calls is ready to buy or book. Website clicks are medium intent. Photo views and profile views are awareness signals. Track the high-intent metrics first.
+
+**Stat 3** (98-128s)
+Text: DIRECTION REQUESTS = HIGHEST INTENT
+Explanation: Direction requests are the highest-intent action in GBP Insights, signaling a customer ready to visit in person
+Graphic_type: none
+Narration: Direction requests are the highest-intent signal in GBP Insights. When someone taps Get Directions on your listing, they plan to visit. A high direction count relative to your view count is healthy for physical location businesses. A falling direction count while views stay flat usually means something changed in your listing or in your local competition, not in your traffic.
+
+**Stat 4** (128-158s)
+Text: 42% MORE DIRECTIONS WITH PHOTOS
+Explanation: Businesses with photos receive 42 percent more direction requests than businesses without photos, according to Google
+Graphic_type: percent_fill
+Graphic_value: 42
+Graphic_label: Directions Lift
+Graphic_remainder_label: No Photo Lift
+Narration: Businesses with photos receive 42 percent more direction requests than businesses without photos, according to Google. Photo quantity matters even when individual photo views are low. Add at least one new photo per month. Google prioritizes recently uploaded photos in certain search displays. Name your photo files descriptively before uploading. File names are readable by Google indexing.
+
+**Overlay 1** (158-190s)
+Text: 5 METRICS TO CHECK EVERY WEEK
+Explanation: Weekly review of Discovery searches, total views, direction requests, phone calls, and website clicks keeps you on top of local visibility changes
+Graphic_type: none
+Narration: Review these five metrics every week in this order: Discovery searches first, because that is your new customer reach. Total views next, to see if your visibility held. Direction requests, because high intent matters. Phone calls, to check if your listing is converting. Website clicks last, to see if your GBP is driving traffic. Five numbers. Ten minutes. That is your weekly local SEO check.
 
 ---
 
-## QUESTION (168-188s)
-Text: WHEN DID YOU LAST CHECK YOUR GBP INSIGHTS?
-Subtext: DROP YOUR ANSWER BELOW
-Narration: Follow for more local business tips.
+## QUESTION (190-202s)
+Text: WHEN DID YOU LAST CHECK GBP INSIGHTS?
+Subtext: DROP THE DATE IN COMMENTS
+Narration: Follow for more tips to grow your business.
 
 ---
