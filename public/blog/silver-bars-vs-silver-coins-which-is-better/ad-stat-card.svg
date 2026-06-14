@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <radialGradient id="sc-glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-glow-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#041018"/>
+
+  <!-- Radial glows -->
+  <ellipse cx="540" cy="540" rx="460" ry="460" fill="url(#sc-glow-c)" opacity="0.70"/>
+  <ellipse cx="140" cy="140" rx="280" ry="280" fill="url(#sc-glow-g)" opacity="0.75"/>
+
+  <!-- Grid lines -->
+  <line x1="155" y1="0" x2="155" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="310" y1="0" x2="310" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="465" y1="0" x2="465" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="620" y1="0" x2="620" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="775" y1="0" x2="775" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="930" y1="0" x2="930" y2="1080" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="540" cy="540" r="400" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="540" cy="540" r="265" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="130" cy="100" r="1.3" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="380" cy="65" r="1.5" fill="#4dffb8" opacity="0.25"/>
+  <circle cx="780" cy="88" r="1.1" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1000" cy="190" r="1.4" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="1020" cy="540" r="1.2" fill="#58d6ff" opacity="0.15"/>
+  <circle cx="70" cy="700" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="210" cy="960" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="890" cy="920" r="1.2" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="430" cy="1020" r="1.3" fill="#4dffb8" opacity="0.19"/>
+
+  <!-- Top: brand + category -->
+  <text x="540" y="90" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="32" fill="#58d6ff" letter-spacing="8" text-anchor="middle" opacity="0.90">FUSED</text>
+  <text x="540" y="112" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" letter-spacing="4" text-anchor="middle">DISTRIBUTION</text>
+
+  <rect x="350" y="132" width="380" height="36" rx="18" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="540" y="156" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#4dffb8" letter-spacing="4" text-anchor="middle">SILVER BUYING GUIDE</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="184" x2="1000" y2="184" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+
+  <!-- Main stat: $48 saved -->
+  <text x="540" y="310" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.60)" letter-spacing="4" text-anchor="middle">BUY 10 OZ. BARS INSTEAD OF EAGLES</text>
+  <text x="540" y="310" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.60)" letter-spacing="4" text-anchor="middle">BUY 10 OZ. BARS INSTEAD OF EAGLES</text>
+
+  <text x="540" y="490" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="220" fill="#4dffb8" text-anchor="middle">$48</text>
+  <text x="540" y="540" font-family="Trebuchet MS,sans-serif" font-size="20" fill="rgba(175,198,207,0.70)" letter-spacing="3" text-anchor="middle">SAVED PER 10 OZ AT $30/OZ SPOT</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="578" x2="1000" y2="578" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+
+  <!-- Comparison row -->
+  <rect x="80" y="612" width="420" height="130" rx="14" fill="rgba(77,255,184,0.06)" stroke="rgba(77,255,184,0.20)" stroke-width="1"/>
+  <text x="290" y="654" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" letter-spacing="3" text-anchor="middle">SILVER BARS</text>
+  <text x="290" y="712" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="60" fill="#4dffb8" text-anchor="middle">3&#8211;5%</text>
+  <text x="290" y="735" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" letter-spacing="2" text-anchor="middle">OVER SPOT</text>
+
+  <rect x="580" y="612" width="420" height="130" rx="14" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.20)" stroke-width="1"/>
+  <text x="790" y="654" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" letter-spacing="3" text-anchor="middle">SILVER EAGLES</text>
+  <text x="790" y="712" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="60" fill="#58d6ff" text-anchor="middle">15&#8211;22%</text>
+  <text x="790" y="735" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" letter-spacing="2" text-anchor="middle">OVER SPOT</text>
+
+  <!-- CTA -->
+  <rect x="200" y="782" width="680" height="60" rx="14" fill="rgba(7,18,28,0.90)" stroke="rgba(88,214,255,0.32)" stroke-width="1.5"/>
+  <text x="540" y="819" font-family="Trebuchet MS,sans-serif" font-size="13" fill="#58d6ff" letter-spacing="3" text-anchor="middle">FULL BREAKDOWN AT FUSEDDISTRIBUTION.COM</text>
+
+  <!-- Subtext -->
+  <text x="540" y="910" font-family="Trebuchet MS,sans-serif" font-size="20" fill="rgba(175,198,207,0.70)" text-anchor="middle">Silver Bars vs. Silver Coins: Which Is Better</text>
+  <text x="540" y="940" font-family="Trebuchet MS,sans-serif" font-size="20" fill="rgba(175,198,207,0.70)" text-anchor="middle">for Your Reserve?</text>
+
+  <!-- Bottom URL -->
+  <text x="540" y="1020" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(88,214,255,0.40)" letter-spacing="3" text-anchor="middle">FUSEDDISTRIBUTION.COM</text>
+</svg>

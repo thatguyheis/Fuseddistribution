@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="gs-glow" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <ellipse cx="360" cy="200" rx="400" ry="300" fill="url(#gs-glow)" opacity="0.8"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88" r="1.2" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="1070" cy="140" r="1.4" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="80" cy="500" r="1.2" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1100" cy="520" r="1" fill="#4dffb8" opacity="0.17"/>
+
+  <!-- Brand mark top-left -->
+  <text x="50" y="56" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="22" fill="#58d6ff" letter-spacing="6" opacity="0.9">FUSED</text>
+  <text x="50" y="74" font-family="Trebuchet MS,sans-serif" font-size="9" fill="rgba(175,198,207,0.55)" letter-spacing="3">DISTRIBUTION</text>
+
+  <!-- Search box simulation -->
+  <rect x="50" y="110" width="700" height="52" rx="26" fill="rgba(255,255,255,0.06)" stroke="rgba(88,214,255,0.28)" stroke-width="1.5"/>
+  <text x="80" y="143" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.80)">silver bars vs silver coins which is better</text>
+  <!-- Search icon -->
+  <circle cx="720" cy="136" r="10" fill="none" stroke="#58d6ff" stroke-width="2" opacity="0.60"/>
+  <line x1="727" y1="143" x2="734" y2="150" stroke="#58d6ff" stroke-width="2" opacity="0.60"/>
+
+  <!-- "About X results" -->
+  <text x="50" y="185" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.40)">About 2,840,000 results</text>
+
+  <!-- Search result card -->
+  <rect x="50" y="204" width="760" height="280" rx="12" fill="rgba(7,18,28,0.80)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+
+  <!-- Favicon + URL line -->
+  <rect x="74" y="226" width="16" height="16" rx="4" fill="#58d6ff" opacity="0.80"/>
+  <text x="98" y="239" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.60)">fuseddistribution.com</text>
+  <text x="258" y="239" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(88,214,255,0.50)"> &#9660;</text>
+
+  <!-- Result title -->
+  <text x="74" y="268" font-family="Arial,sans-serif" font-size="20" fill="#58d6ff">Silver Bars vs. Silver Coins: Which Is Better</text>
+  <text x="74" y="292" font-family="Arial,sans-serif" font-size="20" fill="#58d6ff">for Your Reserve?</text>
+
+  <!-- Description snippet -->
+  <text x="74" y="324" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.75)">Jun 14, 2026 &#8212; Silver bars carry 3-5% premiums. Silver Eagles run 15-22%.</text>
+  <text x="74" y="344" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.75)">Here is the practical breakdown on cost, liquidity, and storage</text>
+  <text x="74" y="364" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.75)">so you can choose right for your silver reserve.</text>
+
+  <!-- Sitelinks -->
+  <rect x="74" y="390" width="160" height="36" rx="8" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="154" y="413" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" text-anchor="middle">Premium Math</text>
+
+  <rect x="250" y="390" width="160" height="36" rx="8" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="330" y="413" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" text-anchor="middle">Storage Guide</text>
+
+  <rect x="426" y="390" width="160" height="36" rx="8" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="506" y="413" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" text-anchor="middle">FAQ</text>
+
+  <!-- Right panel: key stat -->
+  <rect x="850" y="110" width="300" height="394" rx="16" fill="rgba(7,18,28,0.85)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
+  <text x="1000" y="158" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.60)" letter-spacing="3" text-anchor="middle">PREMIUM OVER SPOT</text>
+  <line x1="880" y1="172" x2="1120" y2="172" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+
+  <text x="1000" y="220" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.60)" letter-spacing="2" text-anchor="middle">SILVER BARS</text>
+  <text x="1000" y="284" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="72" fill="#4dffb8" text-anchor="middle">4%</text>
+
+  <line x1="900" y1="305" x2="1100" y2="305" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <text x="1000" y="352" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.60)" letter-spacing="2" text-anchor="middle">SILVER EAGLES</text>
+  <text x="1000" y="420" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="72" fill="#58d6ff" text-anchor="middle">20%</text>
+
+  <rect x="882" y="440" width="236" height="46" rx="10" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.25)" stroke-width="1"/>
+  <text x="1000" y="469" font-family="Trebuchet MS,sans-serif" font-size="11" fill="#58d6ff" letter-spacing="2" text-anchor="middle">See Reserve Plans</text>
+
+  <!-- Bottom brand line -->
+  <text x="600" y="598" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(88,214,255,0.35)" letter-spacing="3" text-anchor="middle">FUSEDDISTRIBUTION.COM</text>
+</svg>
