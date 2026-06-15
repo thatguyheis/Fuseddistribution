@@ -87,11 +87,18 @@ async function generateAudio(slug) {
 
   let generated = 0;
   let skipped = 0;
+  let needed = 0;
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
     if (!seg.narration) { skipped++; continue; }
     const outPath = join(audioDir, `segment-${i}.m4a`);
+    if (existsSync(outPath)) {
+      console.log(`  ↷  segment-${i}.m4a exists — skipping`);
+      skipped++;
+      continue;
+    }
+    needed++;
     const ttsText = normalizeForTTS(seg.narration);
     try {
       if (USE_CHATTERBOX) {
@@ -107,7 +114,11 @@ async function generateAudio(slug) {
       console.error(`  ✗ segment-${i} failed: ${err.message}`);
     }
   }
-  console.log(`Done. Generated: ${generated}, skipped (no narration): ${skipped}`);
+  console.log(`Done. Generated: ${generated}, skipped: ${skipped}`);
+  if (needed > 0 && generated === 0) {
+    console.error(`ERROR: All ${needed} segments failed TTS — aborting render`);
+    process.exit(1);
+  }
 }
 
 const postArg = process.argv.find(a => a.startsWith('--post='));
