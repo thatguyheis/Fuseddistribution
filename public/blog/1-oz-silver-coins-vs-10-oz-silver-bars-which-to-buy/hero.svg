@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="cg" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#0d3a54" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gg" cx="8%" cy="12%" r="40%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#041018"/>
+  <rect width="1200" height="630" fill="url(#cg)"/>
+  <rect width="1200" height="630" fill="url(#gg)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.11"/>
+
+  <!-- Scatter dots -->
+  <circle cx="120" cy="80" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
+  <circle cx="240" cy="200" r="1" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="380" cy="520" r="1.5" fill="#58d6ff" fill-opacity="0.15"/>
+  <circle cx="560" cy="58" r="1" fill="#4dffb8" fill-opacity="0.25"/>
+  <circle cx="780" cy="575" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="950" cy="90" r="1" fill="#4dffb8" fill-opacity="0.22"/>
+  <circle cx="1085" cy="320" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
+  <circle cx="440" cy="440" r="1" fill="#58d6ff" fill-opacity="0.15"/>
+  <circle cx="820" cy="160" r="1.5" fill="#4dffb8" fill-opacity="0.20"/>
+  <circle cx="160" cy="445" r="1" fill="#58d6ff" fill-opacity="0.25"/>
+
+  <!-- LEFT CARD: 1 oz coin -->
+  <rect x="42" y="128" width="295" height="320" rx="18" fill="rgba(11,28,42,0.78)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+
+  <!-- Left eyebrow pill -->
+  <rect x="82" y="146" width="215" height="26" rx="13" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.25)" stroke-width="1"/>
+  <text x="189" y="164" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#58d6ff">1 OZ COIN</text>
+
+  <!-- Left big number -->
+  <text x="189" y="265" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="88" fill="#ecf8fb">12</text>
+  <text x="189" y="302" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="22" letter-spacing="2" fill="#58d6ff">TO 22% PREMIUM</text>
+  <text x="189" y="328" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.70)">over spot price</text>
+
+  <!-- Left divider -->
+  <line x1="68" y1="348" x2="310" y2="348" stroke="rgba(88,214,255,0.10)" stroke-width="1"/>
+
+  <!-- Left bottom detail -->
+  <text x="189" y="374" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" letter-spacing="2">SILVER EAGLE EXAMPLE</text>
+  <text x="189" y="398" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="#ecf8fb" font-weight="700">$35.84 &#8211; $39.04 / oz</text>
+  <text x="189" y="420" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.45)">at $32 spot</text>
+
+  <!-- CENTER ZONE -->
+  <!-- Center label top -->
+  <text x="600" y="178" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="22" letter-spacing="5" fill="rgba(175,198,207,0.40)">1 OZ COINS</text>
+
+  <!-- VS -->
+  <text x="600" y="290" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="96" letter-spacing="6" fill="#58d6ff">VS</text>
+
+  <!-- Center label bottom -->
+  <text x="600" y="342" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="22" letter-spacing="5" fill="rgba(175,198,207,0.40)">10 OZ BARS</text>
+
+  <!-- Savings badge -->
+  <rect x="468" y="400" width="264" height="68" rx="14" fill="rgba(77,255,184,0.08)" stroke="rgba(77,255,184,0.22)" stroke-width="1"/>
+  <text x="600" y="429" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="30" fill="#4dffb8">~$416 DIFFERENCE</text>
+  <text x="600" y="454" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.55)">on 100 oz at same spot price</text>
+
+  <!-- RIGHT CARD: 10 oz bar -->
+  <rect x="863" y="128" width="295" height="320" rx="18" fill="rgba(11,28,42,0.78)" stroke="rgba(77,255,184,0.18)" stroke-width="1"/>
+
+  <!-- Right eyebrow pill -->
+  <rect x="903" y="146" width="215" height="26" rx="13" fill="rgba(77,255,184,0.10)" stroke="rgba(77,255,184,0.25)" stroke-width="1"/>
+  <text x="1010" y="164" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#4dffb8">10 OZ BAR</text>
+
+  <!-- Right big number -->
+  <text x="1010" y="265" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="88" fill="#ecf8fb">4</text>
+  <text x="1010" y="302" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="22" letter-spacing="2" fill="#4dffb8">TO 6% PREMIUM</text>
+  <text x="1010" y="328" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.70)">over spot price</text>
+
+  <!-- Right divider -->
+  <line x1="889" y1="348" x2="1131" y2="348" stroke="rgba(77,255,184,0.10)" stroke-width="1"/>
+
+  <!-- Right bottom detail -->
+  <text x="1010" y="374" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" letter-spacing="2">GENERIC BULLION BAR</text>
+  <text x="1010" y="398" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="#ecf8fb" font-weight="700">$33.28 &#8211; $33.92 / oz</text>
+  <text x="1010" y="420" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.45)">at $32 spot</text>
+
+  <!-- Bottom brand -->
+  <text x="600" y="592" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="800" letter-spacing="4" fill="rgba(175,198,207,0.35)">FUSEDDISTRIBUTION.COM</text>
+</svg>
