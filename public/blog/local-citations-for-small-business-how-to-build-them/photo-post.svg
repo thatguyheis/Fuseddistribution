@@ -1,0 +1,90 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <ellipse cx="600" cy="600" rx="560" ry="500" fill="url(#glow-c)"/>
+  <ellipse cx="100" cy="120" rx="380" ry="280" fill="url(#glow-g)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="440" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="600" r="300" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.10"/>
+
+  <!-- Scatter dots -->
+  <circle cx="142" cy="88" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="388" cy="52" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="756" cy="74" r="1.5" fill="#58d6ff" opacity="0.25"/>
+  <circle cx="1021" cy="118" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="224" cy="1040" r="1.5" fill="#58d6ff" opacity="0.15"/>
+  <circle cx="968" cy="1080" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="84" cy="640" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1132" cy="580" r="1" fill="#4dffb8" opacity="0.20"/>
+
+  <!-- Top zone: category + brand -->
+  <text x="600" y="90" fill="rgba(175,198,207,0.55)" font-size="14" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.24em" text-anchor="middle">LOCAL SEO &#183; CITATIONS</text>
+  <text x="600" y="142" fill="#58d6ff" font-size="52" font-family="Impact,Haettenschweiler,sans-serif" font-weight="900" letter-spacing="0.1em" text-anchor="middle">FUSED</text>
+  <line x1="200" y1="160" x2="1000" y2="160" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+
+  <!-- Center: title -->
+  <text x="600" y="262" fill="#ecf8fb" font-size="72" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.04em" text-anchor="middle">LOCAL</text>
+  <text x="600" y="346" fill="#ecf8fb" font-size="68" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.04em" text-anchor="middle">CITATIONS</text>
+  <text x="600" y="418" fill="#58d6ff" font-size="46" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.06em" text-anchor="middle">FOR SMALL BUSINESS</text>
+
+  <!-- Key stat -->
+  <rect x="180" y="448" width="840" height="120" rx="20" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="500" fill="#4dffb8" font-size="18" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.14em" text-anchor="middle">KEY STAT</text>
+  <text x="600" y="540" fill="#ecf8fb" font-size="76" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.06em" text-anchor="middle">46%</text>
+  <text x="600" y="556" fill="#afc6cf" font-size="18" font-family="Trebuchet MS,sans-serif" text-anchor="middle">of Google searches have local intent</text>
+
+  <!-- Three pillars -->
+  <rect x="80" y="616" width="320" height="180" rx="16" fill="rgba(7,18,26,0.82)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
+  <text x="240" y="654" fill="#58d6ff" font-size="11" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.12em" text-anchor="middle">STEP 1</text>
+  <text x="240" y="692" fill="#ecf8fb" font-size="32" font-family="Impact,sans-serif" letter-spacing="0.04em" text-anchor="middle">BUILD GBP</text>
+  <text x="240" y="720" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Complete every field.</text>
+  <text x="240" y="740" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Add photos. Go live.</text>
+  <text x="240" y="776" fill="#4dffb8" font-size="20" font-family="Impact,sans-serif" letter-spacing="0.06em" text-anchor="middle">FREE &#183; #1 SIGNAL</text>
+
+  <rect x="440" y="616" width="320" height="180" rx="16" fill="rgba(7,18,26,0.82)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="600" y="654" fill="#4dffb8" font-size="11" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.12em" text-anchor="middle">STEP 2</text>
+  <text x="600" y="692" fill="#ecf8fb" font-size="32" font-family="Impact,sans-serif" letter-spacing="0.04em" text-anchor="middle">LOCK NAP</text>
+  <text x="600" y="720" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Name. Address. Phone.</text>
+  <text x="600" y="740" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Identical everywhere.</text>
+  <text x="600" y="776" fill="#58d6ff" font-size="20" font-family="Impact,sans-serif" letter-spacing="0.06em" text-anchor="middle">CONSISTENCY WINS</text>
+
+  <rect x="800" y="616" width="320" height="180" rx="16" fill="rgba(7,18,26,0.82)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="960" y="654" fill="#58d6ff" font-size="11" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.12em" text-anchor="middle">STEP 3</text>
+  <text x="960" y="692" fill="#ecf8fb" font-size="32" font-family="Impact,sans-serif" letter-spacing="0.04em" text-anchor="middle">LIST + REVIEW</text>
+  <text x="960" y="720" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Top 7 directories first.</text>
+  <text x="960" y="740" fill="rgba(175,198,207,0.75)" font-size="13" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Then get reviews weekly.</text>
+  <text x="960" y="776" fill="#4dffb8" font-size="20" font-family="Impact,sans-serif" letter-spacing="0.06em" text-anchor="middle">87% READ REVIEWS</text>
+
+  <!-- Excerpt -->
+  <text x="600" y="848" fill="rgba(175,198,207,0.82)" font-size="20" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Google uses citations to verify your business is real</text>
+  <text x="600" y="874" fill="rgba(175,198,207,0.82)" font-size="20" font-family="Trebuchet MS,sans-serif" text-anchor="middle">and located where you say it is. Get them right.</text>
+
+  <!-- Bottom CTA -->
+  <rect x="200" y="918" width="800" height="64" rx="18" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.32)" stroke-width="1.5"/>
+  <text x="600" y="958" fill="#58d6ff" font-size="18" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.1em" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Bottom brand -->
+  <line x1="200" y1="1010" x2="1000" y2="1010" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
+  <text x="600" y="1048" fill="rgba(88,214,255,0.45)" font-size="13" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.22em" text-anchor="middle">FUSEDDISTRIBUTION.COM</text>
+  <text x="600" y="1074" fill="rgba(175,198,207,0.35)" font-size="12" font-family="Trebuchet MS,sans-serif" letter-spacing="0.08em" text-anchor="middle">TECHNOLOGY SOLUTIONS</text>
+</svg>

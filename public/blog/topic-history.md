@@ -39,6 +39,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-09 | how-to-set-up-google-business-profile-step-by-step | Google | Step-by-step GBP setup: account creation, category selection, 5 verification methods, photo requirements, and review collection system |
 | 2026-06-09 | google-business-profile-optimization-guide-2026 | Google | GBP ongoing optimization: weekly posts, review response strategy for 35% click lift, Q&A seeding, photo geo-tagging, and AI Overviews content |
 | 2026-06-10 | google-local-service-ads | Advertising | Google Local Service Ads pay-per-lead model: Google Guaranteed badge ($2,000 per job), Google Screened for professionals, CPL $10-25 for home services, 2-6 week verification process |
+| 2026-06-13 | local-citations-for-small-business-how-to-build-them | Local SEO | How to build local citations: top 7 directories in build order, NAP consistency rules, citation audit process, reviews as amplifier |
+| 2026-06-13 | local-seo-ranking-factors-2026 | Local SEO | 5 local SEO ranking factors with share of influence: GBP 36%, reviews 17%, on-page 14%, citations 11%, behavioral 9% per Whitespark/Moz 2023 |
 
 ---
 

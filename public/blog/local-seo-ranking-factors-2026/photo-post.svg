@@ -1,0 +1,94 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#041018"/>
+  <ellipse cx="600" cy="600" rx="560" ry="500" fill="url(#glow-c)"/>
+  <ellipse cx="100" cy="120" rx="380" ry="280" fill="url(#glow-g)"/>
+
+  <!-- Grid lines -->
+  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
+
+  <!-- Rings -->
+  <circle cx="600" cy="600" r="440" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
+  <circle cx="600" cy="600" r="300" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.10"/>
+
+  <!-- Scatter dots -->
+  <circle cx="148" cy="94" r="1.5" fill="#58d6ff" opacity="0.22"/>
+  <circle cx="394" cy="58" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="762" cy="82" r="1.5" fill="#58d6ff" opacity="0.25"/>
+  <circle cx="1018" cy="122" r="1" fill="#4dffb8" opacity="0.20"/>
+  <circle cx="230" cy="1048" r="1.5" fill="#58d6ff" opacity="0.15"/>
+  <circle cx="974" cy="1084" r="1" fill="#4dffb8" opacity="0.18"/>
+  <circle cx="88" cy="644" r="1.5" fill="#58d6ff" opacity="0.18"/>
+  <circle cx="1128" cy="578" r="1" fill="#4dffb8" opacity="0.20"/>
+
+  <!-- Top zone -->
+  <text x="600" y="90" fill="rgba(175,198,207,0.55)" font-size="14" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.24em" text-anchor="middle">LOCAL SEO &#183; RANKINGS</text>
+  <text x="600" y="142" fill="#58d6ff" font-size="52" font-family="Impact,Haettenschweiler,sans-serif" font-weight="900" letter-spacing="0.1em" text-anchor="middle">FUSED</text>
+  <line x1="200" y1="160" x2="1000" y2="160" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="600" y="256" fill="#ecf8fb" font-size="66" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.04em" text-anchor="middle">LOCAL SEO</text>
+  <text x="600" y="328" fill="#58d6ff" font-size="54" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.05em" text-anchor="middle">RANKING FACTORS</text>
+  <text x="600" y="390" fill="#4dffb8" font-size="72" font-family="Impact,Haettenschweiler,sans-serif" letter-spacing="0.08em" text-anchor="middle">2026</text>
+
+  <!-- Key stat box -->
+  <rect x="180" y="414" width="840" height="100" rx="18" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
+  <text x="600" y="458" fill="#4dffb8" font-size="14" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.14em" text-anchor="middle">TOP FACTOR</text>
+  <text x="600" y="494" fill="#ecf8fb" font-size="22" font-family="Trebuchet MS,sans-serif" font-weight="700" text-anchor="middle">GBP Signals = 36% of Map Pack ranking</text>
+
+  <!-- 5 factor list -->
+  <rect x="80" y="538" width="1040" height="340" rx="16" fill="rgba(7,18,26,0.82)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
+  <text x="600" y="576" fill="#58d6ff" font-size="11" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.16em" text-anchor="middle">5 RANKING FACTORS &#8212; WHITESPARK + MOZ 2023</text>
+
+  <!-- Factor rows -->
+  <rect x="100" y="590" width="1000" height="40" rx="8" fill="rgba(88,214,255,0.10)"/>
+  <text x="120" y="616" fill="#58d6ff" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800">1. GBP Signals</text>
+  <text x="1080" y="616" fill="#58d6ff" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800" text-anchor="end">36%</text>
+
+  <rect x="100" y="638" width="1000" height="40" rx="8" fill="rgba(77,255,184,0.06)"/>
+  <text x="120" y="664" fill="#afc6cf" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="700">2. Review Signals (velocity + recency)</text>
+  <text x="1080" y="664" fill="#4dffb8" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800" text-anchor="end">17%</text>
+
+  <rect x="100" y="686" width="1000" height="40" rx="8" fill="rgba(88,214,255,0.04)"/>
+  <text x="120" y="712" fill="#afc6cf" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="700">3. On-Page Signals (title, H1, NAP)</text>
+  <text x="1080" y="712" fill="#58d6ff" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800" text-anchor="end">14%</text>
+
+  <rect x="100" y="734" width="1000" height="40" rx="8" fill="rgba(77,255,184,0.04)"/>
+  <text x="120" y="760" fill="#afc6cf" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="700">4. Citation Signals (NAP consistency)</text>
+  <text x="1080" y="760" fill="#4dffb8" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800" text-anchor="end">11%</text>
+
+  <rect x="100" y="782" width="1000" height="40" rx="8" fill="rgba(88,214,255,0.03)"/>
+  <text x="120" y="808" fill="#afc6cf" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="700">5. Behavioral Signals (clicks, calls)</text>
+  <text x="1080" y="808" fill="#58d6ff" font-size="16" font-family="Trebuchet MS,sans-serif" font-weight="800" text-anchor="end">9%</text>
+
+  <text x="600" y="856" fill="rgba(175,198,207,0.45)" font-size="12" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Source: Moz Local Search Ranking Factors 2023 &#183; Whitespark Local Search Ranking Factors 2023</text>
+
+  <!-- Excerpt -->
+  <text x="600" y="926" fill="rgba(175,198,207,0.82)" font-size="20" font-family="Trebuchet MS,sans-serif" text-anchor="middle">GBP signals alone outweigh every other category.</text>
+  <text x="600" y="952" fill="rgba(175,198,207,0.82)" font-size="20" font-family="Trebuchet MS,sans-serif" text-anchor="middle">Set it up right. Keep it active.</text>
+
+  <!-- Bottom CTA -->
+  <rect x="200" y="982" width="800" height="64" rx="18" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.32)" stroke-width="1.5"/>
+  <text x="600" y="1022" fill="#58d6ff" font-size="18" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.1em" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
+
+  <!-- Brand -->
+  <line x1="200" y1="1074" x2="1000" y2="1074" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
+  <text x="600" y="1112" fill="rgba(88,214,255,0.45)" font-size="13" font-family="Trebuchet MS,sans-serif" font-weight="800" letter-spacing="0.22em" text-anchor="middle">FUSEDDISTRIBUTION.COM</text>
+  <text x="600" y="1138" fill="rgba(175,198,207,0.35)" font-size="12" font-family="Trebuchet MS,sans-serif" letter-spacing="0.08em" text-anchor="middle">TECHNOLOGY SOLUTIONS</text>
+</svg>
