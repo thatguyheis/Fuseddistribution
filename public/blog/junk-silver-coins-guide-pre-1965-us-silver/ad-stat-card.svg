@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628">
+  <defs>
+    <radialGradient id="sc-glow-c" cx="35%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-glow-tr" cx="90%" cy="10%" r="40%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="628" fill="#041018"/>
+  <rect width="1200" height="628" fill="url(#sc-glow-tr)"/>
+  <rect width="1200" height="628" fill="url(#sc-glow-c)"/>
+
+  <line x1="200" y1="0" x2="200" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+  <line x1="1000" y1="0" x2="1000" y2="628" stroke="rgba(255,255,255,0.020)" stroke-width="1"/>
+
+  <circle cx="850" cy="314" r="260" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
+
+  <circle cx="120" cy="80" r="1.5" fill="#4dffb8" fill-opacity="0.22"/>
+  <circle cx="1080" cy="55" r="1" fill="#58d6ff" fill-opacity="0.20"/>
+  <circle cx="70" cy="400" r="1.5" fill="#4dffb8" fill-opacity="0.18"/>
+  <circle cx="1140" cy="520" r="1" fill="#58d6ff" fill-opacity="0.15"/>
+  <circle cx="600" cy="590" r="1.5" fill="#4dffb8" fill-opacity="0.20"/>
+
+  <rect x="50" y="68" width="270" height="34" rx="17" fill="rgba(77,255,184,0.08)" stroke="rgba(77,255,184,0.22)" stroke-width="1"/>
+  <text x="185" y="90" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="#4dffb8" text-anchor="middle" letter-spacing="3">PRE-1965 SILVER GUIDE</text>
+
+  <text x="50" y="270" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="200" fill="rgba(77,255,184,0.10)" letter-spacing="2">90%</text>
+  <text x="50" y="268" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="170" fill="#4dffb8" letter-spacing="2">90%</text>
+
+  <text x="50" y="302" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="rgba(175,198,207,0.65)" letter-spacing="3">SILVER CONTENT IN PRE-1965 US COINS</text>
+
+  <line x1="50" y1="326" x2="530" y2="326" stroke="rgba(77,255,184,0.20)" stroke-width="1"/>
+
+  <text x="50" y="382" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="44" fill="#ecf8fb" letter-spacing="2">JUNK SILVER, EXPLAINED</text>
+
+  <text x="50" y="422" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="rgba(175,198,207,0.80)">Dimes &#183; Quarters &#183; Halves minted before 1965</text>
+  <text x="50" y="452" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="rgba(175,198,207,0.60)">Real silver. Real face value. No numismatic markup.</text>
+
+  <rect x="50" y="490" width="340" height="54" rx="12" fill="rgba(77,255,184,0.08)" stroke="rgba(77,255,184,0.30)" stroke-width="1.5"/>
+  <text x="220" y="522" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#4dffb8" text-anchor="middle" letter-spacing="2">fuseddistribution.com/reserve</text>
+
+  <text x="1150" y="596" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="28" fill="rgba(88,214,255,0.70)" text-anchor="end" letter-spacing="3">FUSED</text>
+  <text x="1150" y="618" font-family="'Trebuchet MS', sans-serif" font-size="10" fill="rgba(88,214,255,0.35)" text-anchor="end" letter-spacing="3">DISTRIBUTION</text>
+
+  <rect x="660" y="100" width="490" height="120" rx="14" fill="rgba(77,255,184,0.05)" stroke="rgba(77,255,184,0.16)" stroke-width="1"/>
+  <text x="905" y="142" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">TYPICAL PREMIUM</text>
+  <text x="905" y="200" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52" fill="#4dffb8" text-anchor="middle" letter-spacing="2">10-20% OVER MELT</text>
+
+  <rect x="660" y="236" width="490" height="120" rx="14" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="905" y="278" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">SILVER PER $1 FACE VALUE</text>
+  <text x="905" y="336" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52" fill="#58d6ff" text-anchor="middle" letter-spacing="2">~0.715 TROY OZ</text>
+
+  <rect x="660" y="372" width="490" height="120" rx="14" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
+  <text x="905" y="414" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">SILVER SPOT &#183; JAN 2026</text>
+  <text x="905" y="472" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="52" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">$121.67/OZ</text>
+</svg>
