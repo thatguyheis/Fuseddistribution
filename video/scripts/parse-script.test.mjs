@@ -93,3 +93,37 @@ test('excludes VISUAL DIRECTION, FACEBOOK CAPTION, HASHTAGS from segments', () =
   const { segments } = parseReelScript(MD, 'test-post');
   assert.equal(segments.length, 4); // hook + overlay + chart + cta
 });
+
+
+const LONG_FORM_MD = `# Reel Script: Compact
+format: long-form
+segments: 2
+
+---
+
+## HOOK
+
+**Visual:** Topic intro shot
+**Duration:** 5s minimum (7 words / 2.5 + 2)
+
+Narration: Clean hook narration.
+
+---
+
+## QUESTION
+
+**Visual:** Question card
+**Duration:** 5s minimum (6 words / 2.5 + 2)
+
+Text: WHAT WOULD YOU DO
+Subtext: COMMENT BELOW
+Narration: Follow for more silver news.
+`;
+
+test('parses compact long-form question text and subtext', () => {
+  const { segments } = parseReelScript(LONG_FORM_MD, 'compact-post', 'hook: Clean hook text');
+  const question = segments[segments.length - 1];
+  assert.equal(question.type, 'question');
+  assert.equal(question.text, 'WHAT WOULD YOU DO');
+  assert.equal(question.subtext, 'COMMENT BELOW');
+});

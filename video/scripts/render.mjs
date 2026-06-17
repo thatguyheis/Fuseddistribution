@@ -4,6 +4,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fetchMedia } from './fetch-media.mjs';
 import { generateCaptions } from './generate-captions.mjs';
+import { formatValidationResult, validateReelScript } from './validate-reel.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -50,6 +51,14 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null) {
     console.error('Parse failed — script.json not found.'); process.exit(1);
   }
   const script = JSON.parse(readFileSync(scriptPath, 'utf8'));
+
+  const validation = validateReelScript(script);
+  const validationOutput = formatValidationResult(validation);
+  if (validationOutput) console.log(`\n${validationOutput}`);
+  if (validation.errors.length > 0) {
+    console.error('\nReel validation failed — fix reel-script.md before audio/render.');
+    process.exit(1);
+  }
 
   // 2. Audio
   run(`node scripts/generate-audio.mjs --post=${slug}`);

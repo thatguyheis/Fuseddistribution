@@ -22,3 +22,6 @@ public/photos/derived/marketplace/*
 
 # Rendered video files — too large for GitHub
 video/out/**/*.mp4
+
+# Local quarantine for QA-failed generated blog artifacts
+.workflow-blocked/
