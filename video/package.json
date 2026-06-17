@@ -8,7 +8,7 @@
     "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.469",
+    "@remotion/cli": "^4.0.479",
     "@remotion/google-fonts": "^4.0.469",
     "@remotion/transitions": "^4.0.469",
     "msedge-tts": "^1.3.3",
