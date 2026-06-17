@@ -49,6 +49,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-17 | proof-silver-coins-worth-buying-or-not | General | proof silver coins worth buying or not |
 | 2026-04-21 | dollar-cost-averaging-silver | Investing | Dollar-cost averaging silver |
 | 2026-04-25 | what-is-junk-silver | Buying Guide | What is junk silver |
 | 2026-05-01 | silver-to-gold-ratio | Investing | Silver-to-gold ratio |
