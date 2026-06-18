@@ -16,18 +16,15 @@ pip3 install requests
 
 Option A — environment variable (recommended):
 ```bash
-export METALPRICEAPI_KEY="44bba4c50848bc4a1207f00beca7434f"
+export METALPRICEAPI_KEY="your_key_here"
 ```
 
-Option B — paste directly into `spot-monitor.py` line:
-```python
-API_KEY = "44bba4c50848bc4a1207f00beca7434f"
-```
+Do not paste the key into `spot-monitor.py` or any tracked file.
 
 ## 4. Test It
 
 ```bash
-python3 "/Users/nick/Documents/New project/scripts/spot-monitor.py"
+python3 "/Users/nick/projects/fuseddistribution/scripts/spot-monitor.py"
 ```
 
 First run creates `data/spot-log.csv` automatically.
@@ -46,14 +43,10 @@ Create the file `~/Library/LaunchAgents/com.fused.spotmonitor.plist`:
   <string>com.fused.spotmonitor</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/nick/Documents/New project/scripts/spot-monitor.py</string>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>exec /usr/bin/python3 /Users/nick/projects/fuseddistribution/scripts/spot-monitor.py</string>
   </array>
-  <key>EnvironmentVariables</key>
-  <dict>
-    <key>METALPRICEAPI_KEY</key>
-    <string>44bba4c50848bc4a1207f00beca7434f</string>
-  </dict>
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key>
@@ -62,9 +55,9 @@ Create the file `~/Library/LaunchAgents/com.fused.spotmonitor.plist`:
     <integer>0</integer>
   </dict>
   <key>StandardOutPath</key>
-  <string>/Users/nick/Documents/New project/data/spot-monitor.log</string>
+  <string>/Users/nick/projects/fuseddistribution/data/spot-monitor.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/nick/Documents/New project/data/spot-monitor-err.log</string>
+  <string>/Users/nick/projects/fuseddistribution/data/spot-monitor-err.log</string>
 </dict>
 </plist>
 ```

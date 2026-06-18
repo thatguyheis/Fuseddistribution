@@ -6,7 +6,6 @@ SOP Section 2: Spot Monitoring automation
 Setup:
   pip install requests
   export METALPRICEAPI_KEY="your_key_here"
-  (or paste your key directly into API_KEY below)
 
 Run manually:  python3 scripts/spot-monitor.py
 Run daily via cron/launchd — see scripts/setup.md
@@ -19,18 +18,21 @@ import sys
 from datetime import datetime, date, timedelta
 
 # ── Config ───────────────────────────────────────────────────────────────────
-API_KEY = os.environ.get("METALPRICEAPI_KEY", "44bba4c50848bc4a1207f00beca7434f")
-API_URL = (
-    "https://api.metalpriceapi.com/v1/latest"
-    f"?api_key={API_KEY}&base=USD&currencies=XAG,XAU"
-)
+API_KEY = os.environ.get("METALPRICEAPI_KEY")
+API_URL = "https://api.metalpriceapi.com/v1/latest"
 LOG_FILE = os.path.join(os.path.dirname(__file__), "../data/spot-log.csv")
 BUY_WINDOW_PCT = 0.02   # alert when spot is ≥2% below 30-day average
 PREMIUM_EST    = 0.05   # ~5% sourcing premium for at-a-glance estimates
 
 # ── Fetch ─────────────────────────────────────────────────────────────────────
 def fetch_spot():
-    r = requests.get(API_URL, timeout=10)
+    if not API_KEY:
+        raise RuntimeError("METALPRICEAPI_KEY is not set")
+    r = requests.get(
+        API_URL,
+        params={"api_key": API_KEY, "base": "USD", "currencies": "XAG,XAU"},
+        timeout=10,
+    )
     r.raise_for_status()
     data = r.json()
     if not data.get("success"):
@@ -112,8 +114,8 @@ def main():
         silver = float(log[-1]["silver_usd_oz"])
         gold   = float(log[-1]["gold_usd_oz"])
     else:
-        if API_KEY == "YOUR_KEY_HERE":
-            print("ERROR: Set your MetalpriceAPI key in METALPRICEAPI_KEY env var or in this script.")
+        if not API_KEY:
+            print("ERROR: Set METALPRICEAPI_KEY in the environment.")
             print("Sign up free (no CC) at https://metalpriceapi.com")
             sys.exit(1)
         print(f"Fetching spot prices for {today}...")

@@ -8,12 +8,13 @@
     "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.469",
-    "@remotion/google-fonts": "^4.0.469",
-    "@remotion/transitions": "^4.0.469",
+    "@remotion/cli": "4.0.479",
+    "@remotion/google-fonts": "4.0.479",
+    "@remotion/layout-utils": "4.0.479",
+    "@remotion/transitions": "4.0.479",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "remotion": "^4.0.469"
+    "remotion": "4.0.479"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

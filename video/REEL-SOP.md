@@ -19,7 +19,9 @@ The `remotion-best-practices` skill is installed globally (`~/.agents/skills/rem
 
 To reinstall or update: `npx skills add remotion-dev/skills --global`
 
-**Remotion version:** 4.0.469. Packages in use: `remotion`, `@remotion/cli`, `@remotion/transitions`, `@remotion/google-fonts`. All must stay at the same major.minor.patch — mismatches cause `HtmlInCanvas` import errors at render time.
+**Remotion version:** 4.0.479. Packages in use: `remotion`, `@remotion/cli`, `@remotion/transitions`, `@remotion/google-fonts`, `@remotion/layout-utils`. All must stay at the exact same version. Version drift is a render blocker.
+
+**Text fitting:** Variable display text must use `fitText`, `measureText`, or `fillTextBox` from `@remotion/layout-utils` after fonts load. Measurement properties must match rendered font properties. Never hide overflow as a substitute for fitting text.
 
 **Transitions between segments:** `@remotion/transitions` provides slide/fade/wipe between every segment boundary via `TransitionSeries` (replaces `Series`). Transition type is auto-selected by segment pair in `BlogReel.tsx`.
 
@@ -46,7 +48,7 @@ Key is stored in `video/.env` (gitignored). Already configured.
 
 To render with photos active:
 ```bash
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug>
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug>
 ```
 
 Or add to your shell profile so it's always set:
@@ -62,7 +64,7 @@ To verify:
 grep PIXABAY_API_KEY video/.env
 ```
 
-Both keys load automatically when you run: `cd video && export $(cat .env | xargs)`
+Both keys load automatically when you run: `cd video && set -a && source .env && set +a`
 
 ### 5. Music
 10 CC0 ambient tracks live at `video/public/music/`. All are public domain (CC0) from the "Peaceful Instrumental Background Music" collection on Internet Archive (`peaceful-tracks`).
@@ -110,7 +112,7 @@ Run this once before the first render of the session. If a previous pipeline run
 
 ### Step 0 — Sub-Agent Review Procedure (REQUIRED when auditing AI-generated scripts)
 
-Every reel script produced by a sub-agent must pass this review before render. This step exists because sub-agents compress work — they miss timing bugs, fabricate stats, drop chart data, and drift from the blog source. Nick audits every long-form reel before it goes to render.
+Every reel script produced by an agent must pass this review before render. This step exists because agents compress work: they miss timing bugs, fabricate stats, drop chart data, and drift from the blog source. Nick or the Codex workflow owner audits every long-form reel before it goes to render.
 
 ---
 
@@ -559,7 +561,7 @@ find video/public/photos/<slug>/ -name "*.jpg" -size -1k
 
 # Delete corrupt stubs and re-run fetch
 rm video/public/photos/<slug>/segment-N.jpg
-cd video && export $(cat .env | xargs) && node scripts/fetch-photos.mjs --post=<slug>
+cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --post=<slug>
 ```
 
 If rate limits persist across a full run, copy a valid sibling photo as a placeholder and render directly (skipping the full `render.mjs` pipeline which re-fetches every run):
@@ -661,13 +663,13 @@ Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music)
 
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing — render aborted"; exit 1; }
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
 ```
 
 Example (ambient-05):
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
-cd video && export $(cat .env | xargs) && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
@@ -873,7 +875,7 @@ node video/scripts/parse-script.mjs --post=<slug>
 node video/scripts/generate-audio.mjs --post=<slug>
 # Steps using external APIs require .env:
 [ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
-cd video && export $(cat .env | xargs) && node scripts/fetch-photos.mjs --post=<slug>
+cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --post=<slug>
 ```
 
 ---
