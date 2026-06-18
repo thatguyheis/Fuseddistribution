@@ -1,0 +1,10 @@
+{
+  "hook": "Coin versus bar: Calculate the real cost per ounce.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$91,",
+    "label": "the highest issue price"
+  },
+  "discussion_question": "Which path makes your silver investment the smartest choice?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
