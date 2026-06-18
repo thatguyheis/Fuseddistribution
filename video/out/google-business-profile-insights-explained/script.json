@@ -1,0 +1,120 @@
+{
+  "slug": "google-business-profile-insights-explained",
+  "title": "Google Business Profile Insights Explained",
+  "totalDuration": 202,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "84% FROM DISCOVERY SEARCHES",
+      "narration": "84 percent of Google Business Profile views come from Discovery searches. Not from people who know your name."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 38,
+      "text": "84% FROM DISCOVERY SEARCHES",
+      "narration": "84 percent of GBP profile views come from Discovery searches. Discovery means someone searched a service category, like electrician near me or best pizza downtown, and your profile appeared. They did not search your name. They did not know your business. Discovery searches are new customer acquisition. Direct searches are people who already know you. Watch Discovery. That is where growth lives.",
+      "explanation": "Google 2019 data shows 84 percent of GBP profile views come from Discovery searches, not Direct searches from people who know the business",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 84,
+        "label": "Discovery Views",
+        "remainder_label": "Direct Views"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 38,
+      "endSec": 68,
+      "text": "2.7X MORE WITH RIGHT CATEGORY",
+      "narration": "Google 2024 data shows businesses with an accurate and complete primary category receive 2.7 times more Discovery searches than businesses with a partial or incorrect one. That is not a small edge. That is nearly three times more reach from a single profile field. If your Discovery count is low, the first thing to check is your primary category and your secondary category list.",
+      "explanation": "Google 2024 data shows businesses with an accurate primary category get 2.7 times more Discovery searches than incomplete profiles",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 73,
+        "label": "Category Advantage",
+        "remainder_label": "Without Category"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 68,
+      "endSec": 98,
+      "title": "GBP Insights Metrics by Conversion Strength",
+      "bars": [
+        {
+          "label": "Direction Requests",
+          "value": 95
+        },
+        {
+          "label": "Phone Calls",
+          "value": 85
+        },
+        {
+          "label": "Website Clicks",
+          "value": 65
+        },
+        {
+          "label": "Photo Views",
+          "value": 35
+        },
+        {
+          "label": "Profile Views",
+          "value": 20
+        }
+      ],
+      "narration": "This chart ranks GBP Insights metrics by conversion strength. Direction requests and phone calls are the highest-intent actions. Someone who requests directions plans to walk in. Someone who calls is ready to buy or book. Website clicks are medium intent. Photo views and profile views are awareness signals. Track the high-intent metrics first."
+    },
+    {
+      "type": "stat",
+      "startSec": 98,
+      "endSec": 128,
+      "text": "DIRECTION REQUESTS = HIGHEST INTENT",
+      "narration": "Direction requests are the highest-intent signal in GBP Insights. When someone taps Get Directions on your listing, they plan to visit. A high direction count relative to your view count is healthy for physical location businesses. A falling direction count while views stay flat usually means something changed in your listing or in your local competition, not in your traffic.",
+      "explanation": "Direction requests are the highest-intent action in GBP Insights, signaling a customer ready to visit in person",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 128,
+      "endSec": 158,
+      "text": "42% MORE DIRECTIONS WITH PHOTOS",
+      "narration": "Businesses with photos receive 42 percent more direction requests than businesses without photos, according to Google. Photo quantity matters even when individual photo views are low. Add at least one new photo per month. Google prioritizes recently uploaded photos in certain search displays. Name your photo files descriptively before uploading. File names are readable by Google indexing.",
+      "explanation": "Businesses with photos receive 42 percent more direction requests than businesses without photos, according to Google",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 42,
+        "label": "Directions Lift",
+        "remainder_label": "No Photo Lift"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 158,
+      "endSec": 190,
+      "text": "5 METRICS TO CHECK EVERY WEEK",
+      "narration": "Review these five metrics every week in this order: Discovery searches first, because that is your new customer reach. Total views next, to see if your visibility held. Direction requests, because high intent matters. Phone calls, to check if your listing is converting. Website clicks last, to see if your GBP is driving traffic. Five numbers. Ten minutes. That is your weekly local SEO check.",
+      "explanation": "Weekly review of Discovery searches, total views, direction requests, phone calls, and website clicks keeps you on top of local visibility changes",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 190,
+      "endSec": 202,
+      "text": "WHEN DID YOU LAST CHECK GBP INSIGHTS?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "DROP THE DATE IN COMMENTS"
+    }
+  ]
+}
