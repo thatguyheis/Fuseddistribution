@@ -7,7 +7,7 @@ cloudflare-upload/
 !.dev.vars.example
 .env*
 !.env.example
-!video/.env.cron
+!video/.env.cron.example
 
 # photo workflow local/source assets
 public/photos/.DS_Store
@@ -25,3 +25,6 @@ video/out/**/*.mp4
 
 # Local quarantine for QA-failed generated blog artifacts
 .workflow-blocked/
+
+# Local Claude/Codex worktrees can contain copied env files
+.claude/worktrees/
