@@ -1,0 +1,127 @@
+{
+  "slug": "local-seo-ranking-factors-2026",
+  "title": "local-seo-ranking-factors-2026",
+  "totalDuration": 214,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 11,
+      "text": "MOST BUSINESSES FOCUS ON THE WRONG THING",
+      "narration": "Most local businesses focus on their website. Google barely weighs it. Here's what actually ranks you in 2026."
+    },
+    {
+      "type": "stat",
+      "startSec": 11,
+      "endSec": 36,
+      "text": "GBP = 36% OF YOUR RANKING",
+      "narration": "Your Google Business Profile accounts for 36 percent of your local Map Pack ranking. That's Whitespark's 2023 data. One platform, free to use, carries more weight than reviews, citations, your website, and backlinks combined. If you're spending time anywhere else before your GBP is complete, you're working in the wrong order.",
+      "explanation": "Google Business Profile signals account for 36 percent of local Map Pack ranking weight",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 36,
+      "endSec": 62,
+      "text": "REVIEW VELOCITY BEATS REVIEW COUNT",
+      "narration": "Review signals account for 17 percent of your local ranking. But the number that matters isn't how many reviews you have. It's how fast you're getting new ones. Two reviews a week will consistently outrank 50 old ones with no recent activity. Google interprets new reviews as confirmation that your business is currently operating and currently being chosen by customers.",
+      "explanation": "Recency of reviews matters more than total number of reviews for local ranking",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 62,
+      "endSec": 88,
+      "text": "WEBSITE IS 3RD, NOT 1ST",
+      "narration": "Your website ranks third in local influence at 14 percent. The three signals that matter: your city and service keyword in your title tag and H1, your business name, address, and phone number in the footer, and a contact page that matches your GBP exactly. That's it. No complex strategy. Just those three things, done correctly and consistently.",
+      "explanation": "On-page signals from your website account for 14 percent of local ranking, behind GBP and reviews",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 88,
+      "endSec": 112,
+      "text": "NAP CONSISTENCY IS NON-NEGOTIABLE",
+      "narration": "Citation signals account for 11 percent of your local ranking. Your name, address, and phone number must be identical across your GBP, website, Yelp, Facebook, Apple Maps, and every other directory. Not close. Identical. Variations confuse Google's data parser and act as a drag on everything else you're doing right.",
+      "explanation": "Citation signals including NAP consistency account for 11 percent of local ranking",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 112,
+      "endSec": 142,
+      "text": "SERVICE AREA BUSINESSES: SET SPECIFIC CITIES",
+      "narration": "If you serve customers at their location rather than a fixed address, your service area settings in GBP are the primary geographic signal Google uses to match you with local searches. Don't set a radius. Don't claim an entire county. Set the specific cities where you actually work. A plumber who names five specific towns will rank better in those towns than one who claims an entire state.",
+      "explanation": "SABs must define specific service cities in GBP, not broad radii",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 142,
+      "endSec": 170,
+      "text": "RESPOND TO EVERY REVIEW IN 24 HOURS",
+      "narration": "Responding to reviews is both a ranking signal and a closing tool. Businesses that respond to all reviews get 35 percent more website clicks than those that don't, according to Google. Respond within 24 hours. For negative reviews, acknowledge, apologize, and offer to resolve. Future customers read your responses before calling. A professional response to a one-star review often converts more than the review loses.",
+      "explanation": "Review response rate is a direct ranking signal and conversion signal for new customers",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 170,
+      "endSec": 195,
+      "title": "Local Map Pack Ranking Factors by Share of Influence",
+      "bars": [
+        {
+          "label": "GBP Signals",
+          "value": 36
+        },
+        {
+          "label": "Review Signals",
+          "value": 17
+        },
+        {
+          "label": "On-Page Signals",
+          "value": 14
+        },
+        {
+          "label": "Citation Signals",
+          "value": 11
+        },
+        {
+          "label": "Behavioral",
+          "value": 9
+        },
+        {
+          "label": "Link Signals",
+          "value": 6
+        }
+      ],
+      "narration": "GBP signals lead at 36 percent. Reviews are second at 17. On-page website signals third at 14. Citations fourth at 11. Behavioral signals like clicks and calls add 9 percent. Links contribute 6. The message in this chart: optimize your GBP before anything else. It's not even close."
+    },
+    {
+      "type": "question",
+      "startSec": 195,
+      "endSec": 214,
+      "text": "WHEN DID YOU LAST UPDATE YOUR GOOGLE BUSINESS PROFILE?",
+      "narration": "Follow for more local business tips.",
+      "subtext": "BE HONEST"
+    }
+  ]
+}

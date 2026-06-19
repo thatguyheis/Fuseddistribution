@@ -1,0 +1,125 @@
+{
+  "slug": "junk-silver-coins-guide-pre-1965-us-silver",
+  "title": "Junk Silver Coins Guide Pre-1965 USA Silver",
+  "totalDuration": 163,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 12,
+      "text": "JUNK SILVER IS NOT JUNK",
+      "narration": "Silver hits record highs and these old coins are worth multiples of what you paid."
+    },
+    {
+      "type": "stat",
+      "startSec": 12,
+      "endSec": 24,
+      "text": "2026 SILVER NEAR RECORD HIGHS",
+      "narration": "With silver near record highs in 2026, holding pre-1965 USA silver coins, often called junk silver, is more attractive than ever.",
+      "explanation": "With silver near record highs in 2026, holding pre-1965 USA silver coins is more attractive than ever.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 24,
+      "endSec": 33,
+      "text": "1965 THE CUTOFF YEAR",
+      "narration": "Junk silver refers to coins minted in the USA before 1965.",
+      "explanation": "Junk silver refers to coins minted in the USA before 1965.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 33,
+      "endSec": 45,
+      "text": "90% SILVER CONTENT BY WEIGHT",
+      "narration": "These coins were made with 90 percent silver and 10 percent copper, and they circulated as everyday money.",
+      "explanation": "These coins were made with 90 percent silver and 10 percent copper.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 90,
+        "label": "SILVER CONTENT",
+        "remainder_label": "Copper"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 45,
+      "endSec": 54,
+      "text": "1965 GOVERNMENT STOPPED SILVER COINS",
+      "narration": "After 1965, the USA government stopped minting silver coins for general circulation.",
+      "explanation": "After 1965, the USA government stopped minting silver coins for general circulation.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 54,
+      "endSec": 68,
+      "text": "WORN OR DAMAGED STILL COUNTS",
+      "narration": "Today it is a broader term for pre-1965 USA silver coins, including those that were heavily worn or damaged. The silver content is what matters, not the grade.",
+      "explanation": "Today junk silver is a broader term for pre-1965 USA silver coins, including those that were heavily worn or damaged.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 68,
+      "endSec": 86,
+      "text": "$121 ALL-TIME HIGH IN JANUARY 2026",
+      "narration": "Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026. That makes junk silver coins worth multiples of their face value. Citi projected prices could reach 150 dollars per ounce later in 2026.",
+      "explanation": "Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026, making junk silver coins worth multiples of face value.",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 86,
+      "endSec": 101,
+      "text": "DIMES QUARTERS HALVES AND DOLLARS",
+      "narration": "The most common junk silver coins are dimes, quarters, half dollars, and silver dollars minted before 1965. All of them carry that same 90 percent silver content."
+    },
+    {
+      "type": "overlay",
+      "startSec": 101,
+      "endSec": 117,
+      "text": "FACE VALUE VS MELT VALUE",
+      "narration": "A pre-1965 USA quarter has a face value of 25 cents. At 2026 silver prices, its melt value is many times higher. That gap is exactly why collectors and investors seek them out."
+    },
+    {
+      "type": "overlay",
+      "startSec": 117,
+      "endSec": 132,
+      "text": "POST-1964 COINS ARE COPPER CLAD",
+      "narration": "Coins dated 1965 and later were switched to a copper-nickel clad composition. They look similar but contain no silver. Checking the date is the fastest way to tell them apart."
+    },
+    {
+      "type": "overlay",
+      "startSec": 132,
+      "endSec": 149,
+      "text": "EASY TO BUY AND EASY TO SELL",
+      "narration": "Junk silver trades at a small premium over spot price and is widely available from coin dealers, pawn shops, and online markets. Because the coins are recognizable, they are also easy to resell when you need liquidity."
+    },
+    {
+      "type": "question",
+      "startSec": 149,
+      "endSec": 163,
+      "text": "HAVE YOU BOUGHT JUNK SILVER YET?",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP YOUR STACK BELOW"
+    }
+  ]
+}
