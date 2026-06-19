@@ -97,7 +97,7 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null) {
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
   writeFileSync(propsFile, JSON.stringify({ script, musicTrack, media, captions }));
-  run(`npx remotion render src/Root.tsx BlogReel --concurrency=4 --props="${propsFile}" "${outFile}"`);
+  run(`npx remotion render src/Root.tsx BlogReel --concurrency=1 --props="${propsFile}" "${outFile}"`);
 
   console.log(`\n✓ Render complete: ${outFile}\n`);
 }

@@ -1,0 +1,131 @@
+{
+  "slug": "silver-rounds-vs-silver-coins-differences",
+  "title": "Silver Rounds vs Silver Coins Differences",
+  "totalDuration": 220,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 21,
+      "text": "SAME SILVER, DIFFERENT PRICE",
+      "narration": "Silver rounds and silver coins look identical. Both are one troy ounce of .999 fine silver. The only difference is who minted them, and that one fact can cost you 20 percent more."
+    },
+    {
+      "type": "stat",
+      "startSec": 21,
+      "endSec": 43,
+      "text": "3-8% ROUND PREMIUM OVER SPOT",
+      "narration": "Silver rounds from private mints carry the lowest premiums of any one-ounce silver product. You are looking at 3 to 8 percent over spot in normal market conditions. No government program overhead, no dealer exclusivity, no collector markup baked in.",
+      "explanation": "Generic silver rounds from private mints typically cost 3 to 8 percent above spot, the lowest markup for any one-ounce silver piece.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 5,
+        "label": "Round Premium (typ.)",
+        "remainder_label": "Spot Price"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 43,
+      "endSec": 67,
+      "text": "15-25% SILVER EAGLE PREMIUM",
+      "narration": "The American Silver Eagle is the most recognized silver coin in the USA. It is also the most expensive to buy. In normal markets you are paying 15 to 25 percent over spot. During supply crunches like 2021 and 2022, that premium climbed above 50 percent. Same silver. Much higher cost.",
+      "explanation": "American Silver Eagles trade at 15 to 25 percent over spot in typical conditions, up to 50 percent during supply crunches.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 20,
+        "label": "ASE Premium (typ.)",
+        "remainder_label": "Spot Price"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 67,
+      "endSec": 87,
+      "text": "14% MAPLE LEAF PREMIUM",
+      "narration": "Canadian Silver Maple Leafs cost less than American Silver Eagles but more than rounds. Typical premiums run 10 to 18 percent over spot. They are universally recognized, .9999 fine silver, and resell easily worldwide. The premium is the tradeoff you pay for that recognition.",
+      "explanation": "Canadian Silver Maple Leafs run at 10 to 18 percent over spot, cheaper than ASEs but still far above generic rounds.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 14,
+        "label": "Maple Leaf Premium (typ.)",
+        "remainder_label": "Spot Price"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 87,
+      "endSec": 113,
+      "text": ".999 FINE SILVER SAME PURITY",
+      "narration": "Here is the part most buyers do not realize. Silver rounds and silver coins contain the same metal. Both are .999 fine silver. The Canadian Maple Leaf hits .9999, slightly higher, but the difference is negligible for a physical reserve. You are not getting better silver by paying a 20 percent premium on an Eagle versus a round.",
+      "explanation": "Both silver rounds and silver coins are .999 fine silver. The metal inside is identical regardless of who minted it.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 113,
+      "endSec": 139,
+      "text": "$300-$600 PREMIUM GAP AT 100 OZ",
+      "narration": "Let us do the math. At a 30 dollar spot price, rounds cost about 31 to 32 dollars per ounce. An American Silver Eagle costs 34 to 37 dollars. Over 100 ounces, that gap is 300 to 600 dollars in extra premiums for the exact same amount of silver. That is real money for any serious reserve builder.",
+      "explanation": "Buying 100 oz of silver as ASEs versus generic rounds costs $300 to $600 more in premiums alone at a $30 spot price, for identical silver content.",
+      "graphic_type": "gap",
+      "graphic": {
+        "type": "gap"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 139,
+      "endSec": 159,
+      "title": "TYPICAL SILVER PREMIUM OVER SPOT",
+      "bars": [
+        {
+          "label": "Generic Silver Round",
+          "value": 5
+        },
+        {
+          "label": "Canadian Maple Leaf",
+          "value": 14
+        },
+        {
+          "label": "American Silver Eagle",
+          "value": 20
+        }
+      ],
+      "narration": "This chart shows where your money actually goes when you choose a format. Rounds sit at 5 percent. Maple Leafs at 14. Eagles at 20 or higher. Same silver inside every bar. Different wrapper cost."
+    },
+    {
+      "type": "stat",
+      "startSec": 159,
+      "endSec": 184,
+      "text": "ZERO NUMISMATIC VALUE FOR ROUNDS",
+      "narration": "Silver rounds will never develop collector value. Their price tracks spot price and nothing more. Government coins are different. Rare American Silver Eagle proof sets and low-mintage years sell for far above their silver melt value. If you want numismatic upside alongside physical silver, rounds are not your answer.",
+      "explanation": "Silver rounds have zero collector value. They trade purely on silver content. Government coins can develop numismatic premiums worth multiples of the silver melt value.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 184,
+      "endSec": 208,
+      "text": "WHICH FORMAT FITS YOUR GOAL",
+      "narration": "Building a reserve efficiently? Buy rounds. More silver per dollar, no premium overhead. Gifting recognizable silver? Buy government coins. Collecting? Coins only, rounds have no collector upside. Most serious buyers hold both. Rounds for bulk weight. A few rolls of Eagles for liquidity and gifting."
+    },
+    {
+      "type": "question",
+      "startSec": 208,
+      "endSec": 220,
+      "text": "ROUNDS OR EAGLES FOR YOUR RESERVE",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP YOUR ANSWER"
+    }
+  ]
+}

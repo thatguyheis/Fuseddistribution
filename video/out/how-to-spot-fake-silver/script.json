@@ -1,35 +1,137 @@
 {
   "slug": "how-to-spot-fake-silver",
-  "title": "How to Spot Fake Silver — Reel 3",
-  "totalDuration": 62,
+  "title": "How to Spot Fake Silver",
+  "totalDuration": 224,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
       "endSec": 10,
-      "text": "SIX TESTS. NO LAB EQUIPMENT.",
-      "narration": "Six at-home tests catch 99 percent of fake silver. Here are the two most buyers skip."
+      "text": "SILVER BEATS EVERY METAL ON EARTH",
+      "narration": "Most people test silver wrong and still get burned."
     },
     {
       "type": "stat",
       "startSec": 10,
-      "endSec": 33,
-      "text": "KNOW YOUR PURITY STAMPS",
-      "narration": "Pure bullion is stamped 999, meaning 99.9 percent silver. The Maple Leaf runs at 9999. Sterling silver, used in jewelry, is 925. Pre-1964 USA coins are 900 silver, called junk silver. A fake coin can carry any of these stamps. The hallmark is a starting point, not proof."
+      "endSec": 30,
+      "text": "429 W/mK SILVER THERMAL CONDUCTIVITY",
+      "narration": "Silver has the highest thermal conductivity of any element at 429 watts per meter-kelvin. Tungsten, the most common fake-silver core material, is only 173. That gap is large enough to detect at home using nothing but a piece of ice and 30 seconds.",
+      "explanation": "Silver has the highest thermal conductivity of any element, 429 watts per meter-kelvin.",
+      "graphic_type": "gap",
+      "graphic": {
+        "type": "gap"
+      }
     },
     {
       "type": "stat",
-      "startSec": 33,
-      "endSec": 54,
-      "text": "XRF CATCHES WHAT OTHER TESTS MISS",
-      "narration": "Handheld XRF machines identify the full elemental composition of a coin without damage. Most coin dealers have one. Ask them to run a test on your sample before a large purchase. It's the only test that catches a tungsten core that passes everything else."
+      "startSec": 30,
+      "endSec": 52,
+      "text": "ICE MELTS IN SECONDS ON REAL SILVER",
+      "narration": "Place a small piece of ice on a coin or bar. On real silver it melts almost immediately because the metal pulls heat from your surroundings so fast. On a plated fake the base metal underneath insulates and the ice barely moves. This test takes 30 seconds and costs nothing.",
+      "explanation": "Real silver's heat transfer melts ice almost instantly; base metal fakes insulate and stall the melt.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
     },
     {
-      "type": "cta",
-      "startSec": 54,
-      "endSec": 62,
-      "text": "Full breakdown — link in comments.",
-      "narration": "Send this to someone who is buying silver for the first time."
+      "type": "stat",
+      "startSec": 52,
+      "endSec": 74,
+      "text": "MAGNET TEST MISSES MOST FAKES",
+      "narration": "Real silver is diamagnetic and will not stick to a neodymium magnet. But the most common fake materials, tungsten, zinc, and copper, are also non-magnetic. The magnet test only rules out cheap ferrous fakes. It does not confirm silver. Sellers who push the magnet test as proof are misleading buyers.",
+      "explanation": "The magnet test only rules out ferrous metals; common substitutes like tungsten and zinc are also non-magnetic.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 74,
+      "endSec": 95,
+      "text": "31.103g EXACT - 40.6mm DIAMETER",
+      "narration": "The American Silver Eagle has published specs: 31.103 grams, 40.6 millimeters across, and 2.98 millimeters thick. A digital scale under 20 dollars catches most weight-based fakes. Tungsten-core counterfeits can match the weight but fail on diameter because tungsten is nearly twice as dense as silver. Measure both.",
+      "explanation": "Published specs for the American Silver Eagle let a digital scale expose most weight-based and dimension-based fakes.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 95,
+      "endSec": 127,
+      "title": "THERMAL CONDUCTIVITY RELATIVE TO SILVER",
+      "bars": [
+        {
+          "label": "Silver",
+          "value": 100
+        },
+        {
+          "label": "Copper",
+          "value": 93
+        },
+        {
+          "label": "Gold",
+          "value": 74
+        },
+        {
+          "label": "Tungsten",
+          "value": 40
+        },
+        {
+          "label": "Lead",
+          "value": 8
+        }
+      ],
+      "narration": "Silver sits at the top of this chart and it is not close. Copper and gold are within range but still below silver. Tungsten, which fakers use as a core because it is cheap and heavy, conducts at less than half of silver's rate. Lead, another substitute, is barely measurable on this scale. Ice does not care about stamps or color. It measures heat transfer directly and that number cannot be faked with plating."
+    },
+    {
+      "type": "overlay",
+      "startSec": 127,
+      "endSec": 152,
+      "text": "KNOW YOUR PURITY STAMPS BEFORE YOU BUY",
+      "narration": ".999 means 99.9 percent silver, the standard for most bullion coins and bars. .9999 is the Royal Canadian Mint standard used on Maple Leafs. .925 is sterling, used in jewelry. .900 is junk silver from pre-1964 USA coins. A fake can carry any of these stamps. The stamp is a starting point, not proof of purity."
+    },
+    {
+      "type": "stat",
+      "startSec": 152,
+      "endSec": 178,
+      "text": "XRF CATCHES FAKES EVERY OTHER TEST MISSES",
+      "narration": "A handheld XRF machine identifies every element in a coin without scratching or damaging it. Most coin dealers and precious metals shops have one on site. Ask them to run a test before any large purchase. It is the only method that reliably catches a tungsten core that passes the ice test, the weight test, and the magnet test.",
+      "explanation": "Handheld XRF machines read full elemental composition without damaging the coin or bar.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 178,
+      "endSec": 200,
+      "text": "SIX TESTS - USE AT LEAST THREE",
+      "narration": "Ice, weight, diameter, magnet, stamp, and XRF each catch different categories of fake. Ice catches thin-plated base metal. Weight and diameter together catch dense substitutes. XRF catches everything. Relying on one test is how buyers lose money. Stack at least three tests on any piece above a single coin purchase.",
+      "explanation": "No single test is definitive; stacking multiple methods closes the gaps fakers exploit.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 200,
+      "endSec": 212,
+      "text": "SAVE THIS BEFORE YOUR NEXT SILVER PURCHASE",
+      "narration": "Secondary market silver is where most fakes show up. Run these tests every time, not just on expensive pieces."
+    },
+    {
+      "type": "question",
+      "startSec": 212,
+      "endSec": 224,
+      "text": "WHICH TEST DO YOU ALREADY USE?",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP IT BELOW"
     }
   ]
 }

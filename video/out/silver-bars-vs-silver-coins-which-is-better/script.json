@@ -1,0 +1,146 @@
+{
+  "slug": "silver-bars-vs-silver-coins-which-is-better",
+  "title": "Silver Bars vs Silver Coins Which Is Better",
+  "totalDuration": 234,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 16,
+      "text": "SILVER EAGLES COST 5X MORE IN PREMIUM THAN BARS",
+      "narration": "Silver Eagles carry a 20 percent premium over spot. A 10 oz bar runs about 4 percent. On a 100 oz position, that gap costs you 480 dollars before silver moves a single penny."
+    },
+    {
+      "type": "stat",
+      "startSec": 16,
+      "endSec": 33,
+      "text": "3-5% BAR PREMIUM OVER SPOT",
+      "narration": "When you buy a 10 oz silver bar, you typically pay just 3 to 5 percent above the spot price. That covers minting and dealer margin. It is one of the lowest premiums in the silver market.",
+      "explanation": "Silver bars cost only 3 to 5 percent above the spot price, compared to much higher premiums on coins",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 4,
+        "label": "Bar Premium",
+        "remainder_label": "Spot Price"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 33,
+      "endSec": 53,
+      "text": "15-22% SILVER EAGLE PREMIUM",
+      "narration": "A 1 oz American Silver Eagle costs 15 to 22 percent above spot at most dealers. That is 4 to 5 times the premium on a bar. You are paying extra for the legal tender status, the mint guarantee, and the brand recognition.",
+      "explanation": "American Silver Eagles carry a 15 to 22 percent premium over spot price at most dealers",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 20,
+        "label": "Eagle Premium",
+        "remainder_label": "Spot Price"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 53,
+      "endSec": 73,
+      "text": "$48 SAVED PER 10 OZ",
+      "narration": "At 30 dollars per ounce spot price, a 10 oz bar costs around 312 dollars. Ten individual Silver Eagles cost around 360 dollars. That is 48 dollars saved by choosing bars. On a 100 oz position, the savings grow to roughly 480 dollars.",
+      "explanation": "At $30 per ounce spot price, buying a 10 oz bar saves $48 compared to buying ten individual Silver Eagles",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 16,
+        "label": "Premium Saved",
+        "remainder_label": "Bar Cost"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 73,
+      "endSec": 94,
+      "text": "$480 SAVED ON 100 OZ POSITION",
+      "narration": "Scale the math to 100 ounces and the savings are real money. At 30 dollars spot, buying bars instead of Eagles puts roughly 480 dollars more silver in your hand for the same dollar outlay. That is nearly 16 more ounces of silver.",
+      "explanation": "The 15 to 17 percent premium difference on a 100 oz silver position saves around $480 when choosing bars over Eagles",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 16,
+        "label": "Savings Rate",
+        "remainder_label": "Metal Value"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 94,
+      "endSec": 116,
+      "text": "BARS WIN FOR LONG-TERM RESERVE BUILDING",
+      "narration": "Bars work best when you are building a long-term reserve. Lower premiums mean more silver per dollar spent. They stack cleanly in a safe without individual capsules. If you are adding 10 or more ounces at a time, bars almost always give you more metal for your money."
+    },
+    {
+      "type": "overlay",
+      "startSec": 116,
+      "endSec": 139,
+      "text": "COINS WIN ON FLEXIBILITY AND RECOGNITION",
+      "narration": "Coins win when you need to sell in small amounts. You can sell one 1 oz coin without dividing a larger bar. Local coin shops recognize a Silver Eagle or Maple Leaf on sight with no assay required. They are also the better starting point if you are new to buying silver."
+    },
+    {
+      "type": "overlay",
+      "startSec": 139,
+      "endSec": 159,
+      "text": "STORAGE DIFFERS BETWEEN BARS AND COINS",
+      "narration": "Coins need individual capsules or plastic tubes to prevent milk spotting. That is the white cloudy patches from moisture and handling. Silver Eagles are particularly prone to this. Bars are simpler. A hard plastic slab or tray keeps them stable with no capsules needed."
+    },
+    {
+      "type": "stat",
+      "startSec": 159,
+      "endSec": 180,
+      "text": "70-30 BAR TO COIN MIX",
+      "narration": "Many experienced buyers split their position. Around 70 to 80 percent bars for cost efficiency. Around 20 to 30 percent coins for small-lot flexibility. There is no rule. The right split depends on how you expect to sell over time.",
+      "explanation": "Many silver buyers hold 70 to 80 percent of their position in bars for cost efficiency and 20 to 30 percent in coins for liquidity",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 75,
+        "label": "Bars",
+        "remainder_label": "Coins"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 180,
+      "endSec": 204,
+      "title": "TYPICAL PREMIUM OVER SPOT BY SILVER PRODUCT TYPE",
+      "bars": [
+        {
+          "label": "10 oz Silver Bar",
+          "value": 4
+        },
+        {
+          "label": "1 oz Silver Round",
+          "value": 6
+        },
+        {
+          "label": "1 oz Silver Eagle",
+          "value": 20
+        }
+      ],
+      "narration": "The chart shows three product types side by side. A 10 oz bar at 4 percent premium. A 1 oz round at 6 percent. A 1 oz Silver Eagle at 20 percent. The gap between bars and Eagles is the most important number. That gap is what you pay just for the product form."
+    },
+    {
+      "type": "overlay",
+      "startSec": 204,
+      "endSec": 222,
+      "text": "BARS FOR RESERVES, COINS FOR FLEXIBILITY",
+      "narration": "For building a long-term reserve, bars are the better financial choice. Lower premiums mean more silver per dollar. For flexibility and starting small, coins give you easier selling options and wider recognition. You do not have to pick just one."
+    },
+    {
+      "type": "question",
+      "startSec": 222,
+      "endSec": 234,
+      "text": "DO YOU BUY SILVER BARS, COINS, OR BOTH?",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP YOUR SPLIT"
+    }
+  ]
+}

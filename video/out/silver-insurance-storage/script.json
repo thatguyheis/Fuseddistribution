@@ -1,0 +1,115 @@
+{
+  "slug": "silver-insurance-storage",
+  "title": "Your Silver Stack Is Probably Underinsured",
+  "totalDuration": 210,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "YOUR SILVER ISN'T FULLY INSURED",
+      "narration": "Your homeowner's policy probably won't cover your full silver stack."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 32,
+      "text": "$1,500 THEFT SUBLIMIT",
+      "narration": "Standard HO-3 homeowner's policies cap theft coverage for precious metals, jewelry, and silverware at $1,500, according to the Insurance Information Institute. A 100-ounce silver stack at current spot prices is worth around $3,200. If it's stolen, you'd recover less than half.",
+      "explanation": "Standard HO-3 policies cap theft coverage for precious metals and silverware at $1,500.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 32,
+      "endSec": 58,
+      "text": "47% RECOVERED BASIC HO-3",
+      "narration": "That $1,500 sublimit works out to 47 percent of a $3,200 stack. Not 47 percent off. 47 percent total. The other 53 percent is just gone. This isn't a rare edge case. It's the default for most homeowner's policies written in the USA.",
+      "explanation": "That $1,500 sublimit is only 47 percent of a $3,200 stack.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 58,
+      "endSec": 90,
+      "title": "RECOVERY BY POLICY TYPE",
+      "bars": [
+        {
+          "label": "Basic HO-3 only",
+          "value": 47
+        },
+        {
+          "label": "HO-3 + blanket endorsement",
+          "value": 78
+        },
+        {
+          "label": "Scheduled personal floater",
+          "value": 94
+        }
+      ],
+      "narration": "A basic policy gets you 47 percent back. A blanket endorsement gets you to 78 percent. A scheduled personal property floater gets you to 94 percent after a standard deductible. The floater costs $1 to $2 per $100 of coverage annually. On a $3,200 stack that's $32 to $64 per year."
+    },
+    {
+      "type": "stat",
+      "startSec": 90,
+      "endSec": 118,
+      "text": "FIRE = FULL VALUE COVERED",
+      "narration": "Under a standard HO-3, fire is a named peril with no sublimit on precious metals at most carriers. If your home burns down, your silver pays out at market value up to your personal property limit. That's the scenario most people assume covers everything. It doesn't.",
+      "explanation": "Fire is a named peril with no sublimit on precious metals at most carriers.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 118,
+      "endSec": 148,
+      "text": "MISSING SILVER = $0 PAYOUT",
+      "narration": "Mysterious disappearance is specifically excluded from standard HO-3 language. If your silver is missing and you can't prove a break-in, most carriers will deny the claim outright. No police report, no forced entry, no payout. A scheduled floater covers this scenario. The base policy does not.",
+      "explanation": "Mysterious disappearance is specifically excluded from standard HO-3 language.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 148,
+      "endSec": 172,
+      "text": "$1-2 PER $100 FLOATER COST",
+      "narration": "A scheduled personal property floater for precious metals costs $1 to $2 per $100 of insured value annually. That's $32 to $64 per year to fully cover a $3,200 silver stack. Less than the cost of 2 ounces of silver at current spot prices.",
+      "explanation": "A scheduled personal property floater costs $1 to $2 per $100 of insured value per year.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 172,
+      "endSec": 198,
+      "text": "DOCUMENT EVERY PIECE",
+      "narration": "Photograph each coin or bar individually. Log weight, mint, year, and purchase price in a spreadsheet. Save a copy to cloud storage, not just your home computer. That record is what your insurer will ask for when you file. Have it ready before you need it, not after.",
+      "explanation": "A complete inventory record is what your insurer will ask for when you file.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 198,
+      "endSec": 210,
+      "text": "DO YOU HAVE A SCHEDULED FLOATER?",
+      "narration": "Follow for more silver news.",
+      "subtext": "DROP YOUR ANSWER BELOW"
+    }
+  ]
+}

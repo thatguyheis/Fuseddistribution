@@ -1,0 +1,101 @@
+{
+  "slug": "what-is-nap-consistency-and-why-it-matters",
+  "title": "What Is NAP Consistency and Why It Matters",
+  "totalDuration": 229,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "73% LOSE TRUST FROM WRONG BUSINESS INFO",
+      "narration": "A phone number listed wrong on Yelp is costing you customers right now."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 34,
+      "text": "73% OF CONSUMERS LOSE TRUST",
+      "narration": "73 percent of consumers lose confidence in a business when they find conflicting information online, according to BrightLocal 2024. That trust loss happens before they ever call you or visit your location. They see two different phone numbers, they question which one is right, and they move on to a competitor who looks more reliable.",
+      "explanation": "73 percent of consumers lose confidence in a business when they find conflicting information online, according to BrightLocal 2024.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 73,
+        "label": "LOSE TRUST",
+        "remainder_label": "Still Trust"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 34,
+      "endSec": 61,
+      "text": "NAP MEANS NAME ADDRESS PHONE - ALL THREE MUST MATCH",
+      "narration": "NAP stands for Name, Address, and Phone number. NAP consistency means these three pieces of information are identical on every platform where your business appears. Your Google Business Profile, your website, Yelp, Facebook, Apple Maps, Bing Places, and every local directory must show the same exact data. When they conflict, Google cannot reliably confirm your business location and reduces your local ranking."
+    },
+    {
+      "type": "stat",
+      "startSec": 61,
+      "endSec": 85,
+      "text": "5 PLATFORMS TO FIX FIRST",
+      "narration": "Five platforms carry the most weight for local search: Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook. Fix them in that order. Google is the master record. Apple Maps powers Siri searches. Bing serves a larger share of desktop searches than most businesses realize. Yelp and Facebook appear prominently in branded search results.",
+      "explanation": "Five platforms carry the most local SEO weight: Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 85,
+      "endSec": 116,
+      "text": "INCONSISTENCIES ARE SMALLER THAN YOU THINK",
+      "narration": "The most common NAP inconsistencies are smaller than most business owners expect. An old phone number still listed on Apple Maps after a number change. An address that says Street on one platform and St. on another. A business name that includes LLC on some platforms and not others. A listing created during business registration that was never claimed or updated. Each of these creates a data conflict in Google's systems."
+    },
+    {
+      "type": "stat",
+      "startSec": 116,
+      "endSec": 141,
+      "text": "30-60 MIN AUDIT - NO PAID TOOLS NEEDED",
+      "narration": "A complete NAP audit across all priority platforms takes 30 to 60 minutes with no paid tools required. Search your business name on Google. Open each listing result on page one. Compare the name, address, and phone number against your Google Business Profile exactly, including abbreviations and punctuation. Claim any unclaimed listings and update them to match.",
+      "explanation": "A complete NAP audit across all priority platforms takes 30 to 60 minutes using only free searches and direct platform logins.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 141,
+      "endSec": 169,
+      "text": "YOUR GBP IS THE MASTER RECORD - MATCH IT EVERYWHERE",
+      "narration": "Pick your Google Business Profile as the master record for all NAP data. Write down your exact business name, address format, and phone number from your GBP. Use that exact format when claiming or updating every other platform. Decide right now whether your address uses Street or St. and whether your name includes a legal suffix. Do not deviate from that standard anywhere."
+    },
+    {
+      "type": "stat",
+      "startSec": 169,
+      "endSec": 193,
+      "text": "FIXING NAP REMOVES A RANKING BARRIER",
+      "narration": "NAP inconsistency is rarely the only reason a business ranks poorly, but it is one of the most common avoidable problems. Fixing it removes a negative signal from Google's location confidence score. Combined with a complete GBP and active review collection, a clean citation profile gives Google fewer reasons to reduce your local visibility.",
+      "explanation": "NAP inconsistency is one of the most common avoidable local SEO problems; fixing it removes a negative signal from Google's location confidence score.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 193,
+      "endSec": 217,
+      "text": "AFTER THE TOP 5 CHECK INDUSTRY DIRECTORIES",
+      "narration": "After fixing the top five platforms, check industry-specific directories. If you are a contractor, check HomeAdvisor and Angi. If you are a restaurant, check TripAdvisor and OpenTable. Any platform that references your business information is a potential source of conflicting data. Fixing them in priority order gives you the highest return per hour of work."
+    },
+    {
+      "type": "question",
+      "startSec": 217,
+      "endSec": 229,
+      "text": "DOES YOUR NAP MATCH ON EVERY PLATFORM?",
+      "narration": "Follow for more local SEO tips.",
+      "subtext": "CHECK IT TODAY"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "what-moves-silver-price",
+  "title": "What Moves The Silver Price",
+  "totalDuration": 218,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "SILVER FELL 35 PERCENT THEN GAINED 140 PERCENT",
+      "narration": "Silver crashed 35 percent then gained 140 percent in five months."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 38,
+      "text": "2x GOLD'S VOLATILITY",
+      "narration": "Silver's annualized price volatility averages around 30 percent. Gold's averages around 15 percent. Both respond to the same macro environment, but silver amplifies the move in both directions. When metals rally, silver tends to rally harder. When they sell off, silver drops further.",
+      "explanation": "Silver's annualized volatility runs around 30 percent while gold's runs around 15 percent.",
+      "graphic_type": "gap",
+      "graphic": {
+        "type": "gap"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 38,
+      "endSec": 72,
+      "text": "124:1 RATIO PEAK",
+      "narration": "The gold-silver ratio tells you how many ounces of silver it takes to buy one ounce of gold. In March 2020 it hit 124 to 1, one of the most extreme readings in recorded history. Over the next 18 months it fell back toward 65 to 1 as silver outperformed gold sharply.",
+      "explanation": "The gold-silver ratio hit 124 to 1 in March 2020, one of the most extreme readings ever recorded.",
+      "graphic_type": "gauge",
+      "graphic": {
+        "type": "gauge"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 72,
+      "endSec": 96,
+      "title": "ANNUALIZED PRICE VOLATILITY BY ASSET CLASS",
+      "bars": [
+        {
+          "label": "Silver",
+          "value": 30
+        },
+        {
+          "label": "S&P 500",
+          "value": 18
+        },
+        {
+          "label": "Gold",
+          "value": 15
+        },
+        {
+          "label": "10-yr Treasury",
+          "value": 5
+        }
+      ],
+      "narration": "Silver's volatility is roughly twice gold's and nearly twice the stock market's. That's what makes it both more rewarding in bull markets and more stressful in corrections for investors who don't understand what is driving the price."
+    },
+    {
+      "type": "stat",
+      "startSec": 96,
+      "endSec": 128,
+      "text": "1B+ oz PAPER MARKET",
+      "narration": "COMEX open interest, the total active futures contracts on silver, routinely exceeds 1 billion ounces. Annual global mine supply runs around 800 to 850 million ounces. Most COMEX participants never take delivery of physical metal. They are traders using silver futures to hedge or speculate.",
+      "explanation": "COMEX open interest on silver routinely exceeds 1 billion ounces while annual mine supply runs around 825 million ounces.",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 128,
+      "endSec": 158,
+      "text": "58 PERCENT INDUSTRIAL FLOOR",
+      "narration": "58 percent of all silver demand is industrial. Solar panels, electric vehicles, semiconductors, and medical devices consume silver that cannot be easily substituted. That industrial demand creates a structural price floor that pure financial assets do not have. Deep selloffs driven by paper markets tend to be shorter lived because industrial buyers step in.",
+      "explanation": "58 percent of all silver demand is industrial, creating a structural price floor that paper selloffs cannot easily overcome.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 158,
+      "endSec": 195,
+      "text": "ETF 550M oz PEAK",
+      "narration": "iShares Silver Trust alone held over 550 million ounces of physical silver at its 2021 peak. That is roughly 65 percent of annual mine supply in one fund. When large ETF inflows happen, custodians must buy physical silver. When money leaves, they sell. Those flows amplify whatever price move is already happening.",
+      "explanation": "iShares Silver Trust held over 550 million ounces at its 2021 peak, roughly 65 percent of annual mine supply in one fund.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 195,
+      "endSec": 218,
+      "text": "DO YOU WATCH THE GOLD-SILVER RATIO?",
+      "narration": "Follow for more silver news.",
+      "subtext": "TELL ME BELOW"
+    }
+  ]
+}

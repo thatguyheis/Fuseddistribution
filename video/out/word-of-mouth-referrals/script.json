@@ -1,0 +1,119 @@
+{
+  "slug": "word-of-mouth-referrals",
+  "title": "Word of Mouth Referrals",
+  "totalDuration": 192,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "92% TRUST A REFERRAL MORE THAN YOUR ADS",
+      "narration": "Most ads get ignored. A referral from a friend never does."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 34,
+      "text": "92% TRUST REFERRALS",
+      "narration": "92 percent of consumers trust recommendations from friends and family more than any form of advertising. That's from Nielsen's Global Trust in Advertising study. No ad budget, no social post, and no Google ranking comes close to that level of trust before the first conversation even happens.",
+      "explanation": "92 percent of consumers trust recommendations from people they know more than any form of advertising, according to Nielsen's Global Trust in Advertising study.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 34,
+      "endSec": 56,
+      "text": "4x REFERRAL MULTIPLIER",
+      "narration": "Referred customers are 4 times more likely to refer others themselves. One strong referral can generate another, and another. Businesses that consistently generate referrals are not doing anything complicated. They are just not leaving the ask on the table.",
+      "explanation": "Referred customers are 4 times more likely to refer others, creating a compounding chain of new business.",
+      "graphic_type": "growth",
+      "graphic": {
+        "type": "growth"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 56,
+      "endSec": 82,
+      "title": "Consumer Trust by Source Type",
+      "bars": [
+        {
+          "label": "Recommendations from people I know",
+          "value": 92
+        },
+        {
+          "label": "Online consumer reviews",
+          "value": 68
+        },
+        {
+          "label": "Brand websites",
+          "value": 54
+        },
+        {
+          "label": "Ads on social networks",
+          "value": 39
+        }
+      ],
+      "narration": "The gap between a personal recommendation and any other marketing channel is massive. 92 percent versus 39 percent for social ads. Trust is what closes sales before the conversation even starts. No other channel produces that kind of advantage for free."
+    },
+    {
+      "type": "stat",
+      "startSec": 82,
+      "endSec": 104,
+      "text": "37% HIGHER RETENTION",
+      "narration": "Referred customers have a 37 percent higher retention rate than customers you find through cold marketing. They arrived already trusting you. Trust takes time to build from scratch, but it comes pre-installed with a referral.",
+      "explanation": "Referred customers have a 37 percent higher retention rate than customers acquired through cold marketing channels.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 104,
+      "endSec": 126,
+      "text": "16% HIGHER LIFETIME VALUE",
+      "narration": "A referred customer's average lifetime value is 16 percent higher than a non-referred one. They buy more, stay longer, and cost nothing to find. That is not a coincidence. It is a trust premium that compounds over the life of the relationship.",
+      "explanation": "A referred customer's average lifetime value is 16 percent higher than a non-referred customer.",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 126,
+      "endSec": 158,
+      "text": "ASK AT 30 DAYS",
+      "narration": "The right time to ask for a referral is 2 to 4 weeks after the job, when the customer has lived with the result. That is the check-in message you are already sending if you have a follow-up system. Add one line: if you know anyone who could use what we did for you, I would really appreciate the recommendation. That is the entire system.",
+      "explanation": "The optimal time to request a referral is 2 to 4 weeks after completing a job, when the customer has experienced the results.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 158,
+      "endSec": 178,
+      "text": "ZERO AD SPEND REQUIRED",
+      "narration": "Referrals are the cheapest customer acquisition channel a local business has access to. The only cost is asking. Most businesses skip the ask and spend money on cold audiences instead. Satisfied customers will refer you. You just have to give them the prompt.",
+      "explanation": "A structured referral ask costs nothing and activates the highest-trust channel available to a local business.",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 178,
+      "endSec": 192,
+      "text": "WHATS THE MOST REFERRALS FROM ONE CUSTOMER?",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "DROP IT BELOW"
+    }
+  ]
+}
