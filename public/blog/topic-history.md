@@ -13,6 +13,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-19 | google-review-strategy-that-actually-works | General | google review strategy that actually works |
 | 2026-06-16 | local-backlinks-how-to-get-them-for-free | General | local backlinks how to get them for free |
 | 2026-04-18 | welcome-to-fused | General | Brand intro / welcome post |
 | 2026-04-18 | why-your-website-isnt-getting-customers | Websites | Why local business websites don't convert |

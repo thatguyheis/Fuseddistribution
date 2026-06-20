@@ -1,0 +1,48 @@
+{
+  "slug": "google-review-strategy-that-actually-works",
+  "keyword": "google review strategy that actually works",
+  "angle": "A data-backed system for generating, responding to, and leveraging Google reviews to rank higher in local search and win more customers.",
+  "secondary_kw": [
+    "how to get more google reviews",
+    "google business profile reviews",
+    "local seo reviews"
+  ],
+  "stats": [
+    {
+      "claim": "97% of consumers read online reviews when evaluating local businesses",
+      "value": "97%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "68% of consumers require a 4-star rating or higher before choosing a business \u2014 up from 55% in 2025 \u2014 and 31% now demand 4.5+ stars",
+      "value": "68%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "80% of consumers are more likely to visit a business that responds to every review; 42% actively avoid businesses that never respond",
+      "value": "80%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "Review signals account for 20% of local pack ranking weight \u2014 the second-largest ranking category after Google Business Profile signals (32%)",
+      "value": "20%",
+      "source_url": "https://www.brightlocal.com/learn/google-local-algorithm-and-ranking-factors/",
+      "source_name": "Whitespark / BrightLocal Local Search Ranking Factors 2026"
+    },
+    {
+      "claim": "Businesses see a measurable Maps ranking increase when they cross from 9 to 10 Google reviews \u2014 a threshold not repeated at higher counts",
+      "value": "10 reviews",
+      "source_url": "https://www.sterlingsky.ca/number-of-reviews-impact-ranking/",
+      "source_name": "Sterling Sky Case Study (April 2025)"
+    },
+    {
+      "claim": "Analysis of 50.4 million search results shows top-3 local pack businesses average 4.8\u20134.9 stars; a minimum of 4.3\u20134.5 stars is needed just to compete, with median review counts ranging from 28 (general contractor) to 976 (breakfast restaurant)",
+      "value": "4.3\u20134.5 stars minimum",
+      "source_url": "https://www.localfalcon.com/blog/whitepaper-google-reviews-ratings--location-what-50-million-search-results-reveal-about-ranking-in-the-local-3pack",
+      "source_name": "Local Falcon Whitepaper: 50 Million Search Results Study (January 2026)"
+    }
+  ]
+}
