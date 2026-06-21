@@ -2,46 +2,58 @@
 topic: tech
 format: long-form
 
-hook: Ten reviews boost your local search ranking immediately.
+hook: Get 20 reviews to unlock massive revenue growth.
 hook_type: contrarian_stat
 
 ## stats
-- text: 24 THE BUSINESSES THAT WIN LOCAL
-  explanation: The businesses that win local search do three things consistently: they ask every customer, they ask with a direct link, and they respond to every review within 24 hours.
-  graphic_type: none
-  narration: The businesses that win local search do three things consistently: they ask every customer, they ask with a direct link, and they respond to every review within 24 hours.
-- text: 2026 IN OF CONSUMERS READ ONLINE
-  explanation: In 2026, 97% of consumers read online reviews before choosing a local business (Source: BrightLocal Local Consumer Review Survey 2026).
-  graphic_type: none
-  narration: In 2026, 97% of consumers read online reviews before choosing a local business (Source: BrightLocal Local Consumer Review Survey 2026).
-- text: 2025 IN STERLING SKY TRACKED LOCAL
-  explanation: In 2025, Sterling Sky tracked Local Pack rankings across dozens of small business categories and found that businesses see a measurable ranking boost when they hit 10 Google reviews, with the effect plateauing immediately after that threshold (Source: Sterling Sky case study 2025).
-  graphic_type: none
-  narration: In 2025, Sterling Sky tracked Local Pack rankings across dozens of small business categories and found that businesses see a measurable ranking boost when they hit 10 Google reviews, with the effect plateauing immediately after that threshold (Source: Sterling Sky case study 2025).
-- text: 10 THAT MAKES THE SPRINT TO
-  explanation: That makes the sprint to 10 the most productive thing you can do for local search visibility right now.
-  graphic_type: none
-  narration: That makes the sprint to 10 the most productive thing you can do for local search visibility right now.
-- text: 79.4% GOOGLE CONTROLS OF ALL REVIEWS
-  explanation: Google controls 79.4% of all reviews per business location, with review volume growing 29.3% year over year (Source: BirdEye State of Online Reviews 2026).
+- text: 97% OF CONSUMERS READ ONLINE REVIEWS
+  explanation: 97% of consumers read online reviews when making local business decisions, and 41% say they always read reviews before choosing a business, up sharply from 29% in 2025.
   graphic_type: percent_fill
   graphic:
-    value: 79.4
-    label: Google Controls Of All R
+    value: 97
+    label: Of Consumers Read Online
     remainder_label: Other
-  narration: Google controls 79.4% of all reviews per business location, with review volume growing 29.3% year over year (Source: BirdEye State of Online Reviews 2026).
-- text: 10 HERE'S HOW TO HIT FAST
-  explanation: Here's how to hit 10 fast: 1.
+  narration: 97% of consumers read online reviews when making local business decisions, and 41% say they always read reviews before choosing a business, up sharply from 29% in 2025.
+- text: 2026 SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
+  explanation: (Source: BrightLocal Local Consumer Review Survey 2026) That means nearly every person searching for your service is checking your reviews.
   graphic_type: none
-  narration: Here's how to hit 10 fast: 1.
+  narration: (Source: BrightLocal Local Consumer Review Survey 2026) That means nearly every person searching for your service is checking your reviews.
+- text: 68% OF CONSUMERS REQUIRE AT LEAST
+  explanation: 68% of consumers require at least a 4-star rating before they will use a business, and 31% require 4.5 stars or higher.
+  graphic_type: percent_fill
+  graphic:
+    value: 68
+    label: Of Consumers Require At 
+    remainder_label: Other
+  narration: 68% of consumers require at least a 4-star rating before they will use a business, and 31% require 4.5 stars or higher.
+- text: 2026 SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
+  explanation: (Source: BrightLocal Local Consumer Review Survey 2026) If you're sitting at 3.8 stars with 11 reviews, a significant share of the people searching for you are quietly ruling you out before they ever click your name.
+  graphic_type: none
+  narration: (Source: BrightLocal Local Consumer Review Survey 2026) If you're sitting at 3.8 stars with 11 reviews, a significant share of the people searching for you are quietly ruling you out before they ever click your name.
+- text: 9% A HARVARD BUSINESS SCHOOL STUDY
+  explanation: A Harvard Business School study found that a one-star increase in a Yelp rating leads to a 5 to 9% revenue increase, driven mostly by independent businesses where online reputation substitutes for brand familiarity.
+  graphic_type: percent_fill
+  graphic:
+    value: 9
+    label: A Harvard Business Schoo
+    remainder_label: Other
+  narration: A Harvard Business School study found that a one-star increase in a Yelp rating leads to a 5 to 9% revenue increase, driven mostly by independent businesses where online reputation substitutes for brand familiarity.
+- text: 47% OF CONSUMERS WILL NOT USE
+  explanation: 47% of consumers will not use a business that has fewer than 20 reviews.
+  graphic_type: percent_fill
+  graphic:
+    value: 47
+    label: Of Consumers Will Not Us
+    remainder_label: Other
+  narration: 47% of consumers will not use a business that has fewer than 20 reviews.
 
 ## question
-text: READY TO TURN YOUR REVIEWS INTO REAL LOCAL
+text: READY TO TURN YOUR GOOGLE REVIEWS INTO REAL
 subtext: COMMENT BELOW
 narration: Follow for more tips to grow your business.
 
 ## shared
-discussion_question: Ready to turn your reviews into real local search power?
+discussion_question: Ready to turn your Google reviews into real revenue?
 hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
 
 ## media_queries
@@ -49,20 +61,20 @@ hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness 
   query: "google review strategy that actually works"
   prefer: video
 - segment: 1
-  query: "google review strategy that actually works the"
+  query: "google review strategy that actually works of"
   prefer: video
 - segment: 2
-  query: "google review strategy that actually works in"
+  query: "google review strategy that actually works source"
   prefer: video
 - segment: 3
-  query: "google review strategy that actually works in"
+  query: "google review strategy that actually works of"
   prefer: video
 - segment: 4
-  query: "google review strategy that actually works that"
+  query: "google review strategy that actually works source"
   prefer: video
 - segment: 5
-  query: "google review strategy that actually works google"
+  query: "google review strategy that actually works a"
   prefer: video
 - segment: 6
-  query: "google review strategy that actually works here's"
+  query: "google review strategy that actually works of"
   prefer: video

@@ -9,61 +9,61 @@ segments: 8
 **Visual:** Topic intro shot
 **Duration:** 8s minimum (15 words / 2.5 + 2)
 
-Narration: Ten reviews boost your local search ranking immediately. Getting more Google reviews is not complicated.
+Narration: Get 20 reviews to unlock massive revenue growth. Getting more Google reviews is not complicated.
 
 ---
 
-## STAT: THE BUSINESSES THAT WIN LOCAL
+## STAT: OF CONSUMERS READ ONLINE REVIEWS
 
 **Visual:** Supporting graphic
-**Duration:** 14s minimum (29 words / 2.5 + 2)
+**Duration:** 15s minimum (31 words / 2.5 + 2)
 
-Narration: The businesses that win local search do three things consistently: they ask every customer, they ask with a direct link, and they respond to every review within 24 hours.
+Narration: 97 percent of consumers read online reviews when making local business decisions, and 41 percent say they always read reviews before choosing a business, up sharply from 29 percent in 2025.
 
 ---
 
-## STAT: IN OF CONSUMERS READ ONLINE
+## STAT: SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
 
 **Visual:** Supporting graphic
-**Duration:** 11s minimum (21 words / 2.5 + 2)
+**Duration:** 10s minimum (20 words / 2.5 + 2)
 
-Narration: In 2026, 97 percent of consumers read online reviews before choosing a local business (Source: BrightLocal Local Consumer Review Survey 2026).
+Narration: (Source: BrightLocal Local Consumer Review Survey 2026) That means nearly every person searching for your service is checking your reviews.
 
 ---
 
-## STAT: IN STERLING SKY TRACKED LOCAL
+## STAT: OF CONSUMERS REQUIRE AT LEAST
 
 **Visual:** Supporting graphic
-**Duration:** 20s minimum (43 words / 2.5 + 2)
+**Duration:** 12s minimum (24 words / 2.5 + 2)
 
-Narration: In 2025, Sterling Sky tracked Local Pack rankings across dozens of small business categories and found that businesses see a measurable ranking boost when they hit 10 Google reviews, with the effect plateauing immediately after that threshold (Source: Sterling Sky case study 2025).
+Narration: 68 percent of consumers require at least a 4-star rating before they will use a business, and 31 percent require 4.5 stars or higher.
 
 ---
 
-## STAT: THAT MAKES THE SPRINT TO
+## STAT: SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
 
 **Visual:** Supporting graphic
-**Duration:** 10s minimum (19 words / 2.5 + 2)
+**Duration:** 17s minimum (36 words / 2.5 + 2)
 
-Narration: That makes the sprint to 10 the most productive thing you can do for local search visibility right now.
+Narration: (Source: BrightLocal Local Consumer Review Survey 2026) If you're sitting at 3.8 stars with 11 reviews, a significant share of the people searching for you are quietly ruling you out before they ever click your name.
 
 ---
 
-## STAT: GOOGLE CONTROLS OF ALL REVIEWS
+## STAT: A HARVARD BUSINESS SCHOOL STUDY
 
 **Visual:** Supporting graphic
-**Duration:** 13s minimum (26 words / 2.5 + 2)
+**Duration:** 16s minimum (35 words / 2.5 + 2)
 
-Narration: Google controls 79.4 percent of all reviews per business location, with review volume growing 29.3 percent year over year (Source: BirdEye State of Online Reviews 2026).
+Narration: A Harvard Business School study found that a one-star increase in a Yelp rating leads to a 5 to 9 percent revenue increase, driven mostly by independent businesses where online reputation substitutes for brand familiarity.
 
 ---
 
-## STAT: HERE'S HOW TO HIT FAST
+## STAT: OF CONSUMERS WILL NOT USE
 
 **Visual:** Supporting graphic
-**Duration:** 5s minimum (7 words / 2.5 + 2)
+**Duration:** 8s minimum (15 words / 2.5 + 2)
 
-Narration: Here's how to hit 10 fast: 1.
+Narration: 47 percent of consumers will not use a business that has fewer than 20 reviews.
 
 ---
 
@@ -72,6 +72,6 @@ Narration: Here's how to hit 10 fast: 1.
 **Visual:** Question card
 **Duration:** 6s minimum (8 words / 2.5 + 2)
 
-Text: READY TO TURN YOUR REVIEWS INTO REAL LOCAL
+Text: READY TO TURN YOUR GOOGLE REVIEWS INTO REAL
 Subtext: COMMENT BELOW
 Narration: Follow for more tips to grow your business.

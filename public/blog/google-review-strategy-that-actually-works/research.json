@@ -1,48 +1,47 @@
 {
   "slug": "google-review-strategy-that-actually-works",
   "keyword": "google review strategy that actually works",
-  "angle": "A data-backed system for generating, responding to, and leveraging Google reviews to rank higher in local search and win more customers.",
+  "angle": "A step-by-step system for earning, responding to, and leveraging Google reviews so local businesses convert more searchers into paying customers.",
   "secondary_kw": [
-    "how to get more google reviews",
-    "google business profile reviews",
-    "local seo reviews"
+    "how to get more Google reviews",
+    "Google review response strategy"
   ],
   "stats": [
     {
-      "claim": "97% of consumers read online reviews when evaluating local businesses",
+      "claim": "97% of consumers read online reviews when making local business decisions, and 41% say they always read reviews before choosing a business \u2014 up sharply from 29% in 2025.",
       "value": "97%",
       "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
       "source_name": "BrightLocal Local Consumer Review Survey 2026"
     },
     {
-      "claim": "68% of consumers require a 4-star rating or higher before choosing a business \u2014 up from 55% in 2025 \u2014 and 31% now demand 4.5+ stars",
+      "claim": "68% of consumers now require a business to have at least a 4-star rating before they will use it, and 31% specifically require 4.5 stars or higher \u2014 both figures significantly higher than in 2025.",
       "value": "68%",
       "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
       "source_name": "BrightLocal Local Consumer Review Survey 2026"
     },
     {
-      "claim": "80% of consumers are more likely to visit a business that responds to every review; 42% actively avoid businesses that never respond",
-      "value": "80%",
+      "claim": "74% of consumers only trust reviews written within the last 3 months, and 32% want reviews no older than two weeks \u2014 making review recency a critical trust signal.",
+      "value": "74%",
       "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
       "source_name": "BrightLocal Local Consumer Review Survey 2026"
     },
     {
-      "claim": "Review signals account for 20% of local pack ranking weight \u2014 the second-largest ranking category after Google Business Profile signals (32%)",
-      "value": "20%",
-      "source_url": "https://www.brightlocal.com/learn/google-local-algorithm-and-ranking-factors/",
-      "source_name": "Whitespark / BrightLocal Local Search Ranking Factors 2026"
+      "claim": "47% of consumers will not use a business that has fewer than 20 reviews, signaling that review volume is a hard threshold for credibility.",
+      "value": "47%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
     },
     {
-      "claim": "Businesses see a measurable Maps ranking increase when they cross from 9 to 10 Google reviews \u2014 a threshold not repeated at higher counts",
-      "value": "10 reviews",
-      "source_url": "https://www.sterlingsky.ca/number-of-reviews-impact-ranking/",
-      "source_name": "Sterling Sky Case Study (April 2025)"
+      "claim": "A one-star increase in a business's Yelp rating leads to a 5\u20139% increase in revenue, driven primarily by independent (non-chain) businesses where online reputation substitutes for brand familiarity.",
+      "value": "5\u20139%",
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1928601",
+      "source_name": "Harvard Business School \u2014 Michael Luca, \"Reviews, Reputation, and Revenue: The Case of Yelp.com\""
     },
     {
-      "claim": "Analysis of 50.4 million search results shows top-3 local pack businesses average 4.8\u20134.9 stars; a minimum of 4.3\u20134.5 stars is needed just to compete, with median review counts ranging from 28 (general contractor) to 976 (breakfast restaurant)",
-      "value": "4.3\u20134.5 stars minimum",
-      "source_url": "https://www.localfalcon.com/blog/whitepaper-google-reviews-ratings--location-what-50-million-search-results-reveal-about-ranking-in-the-local-3pack",
-      "source_name": "Local Falcon Whitepaper: 50 Million Search Results Study (January 2026)"
+      "claim": "Businesses that respond to at least 25% of their reviews average 35% more revenue than businesses that do not respond, yet only about 5% of businesses actively respond to their reviews.",
+      "value": "35%",
+      "source_url": "https://www.podium.com/article/online-review-statistics",
+      "source_name": "Podium Online Review Statistics"
     }
   ]
 }
