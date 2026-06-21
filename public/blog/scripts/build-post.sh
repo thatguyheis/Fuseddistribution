@@ -50,7 +50,7 @@ if [[ $CLAUDE_OK -eq 1 ]]; then
   if [[ -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
     log "T5 write: verified.md exists and lint passes — skipping rewrite"
     mark write
-  elif "$SD/write-article.sh" "$SLUG" 2>&1 | sed 's/^/  /'; then mark write; else log "write lint-failed (verified.md written, continue)"; mark write-warn; fi
+  elif "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'; then mark write; else log "write lint-failed (verified.md written, continue)"; mark write-warn; fi
 else
   log "T5 degraded: gemma draft -> verified.md + lint (claude unavailable)"
   cp "$DIR/gemma_draft.md" "$DIR/verified.md"

@@ -10,14 +10,16 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 LINT="$SCRIPT_DIR/lint-draft.mjs"
 
-SLUG=""
+SLUG="" KEYWORD_ARG="" BRAND_ARG=""
 for a in "$@"; do
   case "$a" in
+    --keyword=*) KEYWORD_ARG="${a#--keyword=}" ;;
+    --brand=*) BRAND_ARG="${a#--brand=}" ;;
     --*) echo "unknown flag: $a" >&2; exit 2 ;;
     *) SLUG="$a" ;;
   esac
 done
-[[ -n "$SLUG" ]] || { echo "usage: write-article.sh <slug>" >&2; exit 2; }
+[[ -n "$SLUG" ]] || { echo "usage: write-article.sh <slug> [--brand=silver|tech] [--keyword=...]" >&2; exit 2; }
 
 DIR="$BLOG_DIR/$SLUG"
 META="$DIR/meta.json"
@@ -26,11 +28,15 @@ DRAFT="$DIR/gemma_draft.md"
 OUT="$DIR/verified.md"
 LINT_OUT="$DIR/lint.json"
 
-[[ -f "$META" ]] || { echo "error: meta.json not found — run meta stage first" >&2; exit 1; }
-
-KEYWORD=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('description','')[:120])" 2>/dev/null || echo "$SLUG")
-TITLE=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('title',''))" 2>/dev/null || echo "")
-BRAND=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('brand','silver'))" 2>/dev/null || echo "silver")
+if [[ -f "$META" ]]; then
+  KEYWORD=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('description','')[:120])" 2>/dev/null || echo "$SLUG")
+  TITLE=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('title',''))" 2>/dev/null || echo "")
+  BRAND=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('brand','silver'))" 2>/dev/null || echo "silver")
+else
+  KEYWORD="${KEYWORD_ARG:-$(echo "$SLUG" | tr '-' ' ')}"
+  TITLE=$(echo "$KEYWORD" | python3 -c "import sys; print(sys.stdin.read().strip().title())")
+  BRAND="${BRAND_ARG:-silver}"
+fi
 
 if [[ "$BRAND" == "silver" ]]; then
   BRAND_VOICE="Silver and precious metals investing. Fused Distribution sells silver. First-person business voice (\"we stock\", \"we recommend\"). Audience: US retail buyers, beginner to intermediate investors."
@@ -90,6 +96,7 @@ REQUIREMENTS:
 - No banned phrases: dive in, delve into, bridge the gap, a testament to, in this article, master the art of
 - Second person (you/your) throughout
 - No conclusion section titled "Conclusion" — end with a forward-looking action paragraph
+- No placeholder syntax of any kind: do NOT write [INTERNAL-LINK: ...], [LINK: ...], [INSERT: ...], or any bracketed placeholders — write real sentences with no placeholders; internal links are added by a separate automated stage
 
 Output ONLY the markdown article. Start with # Title. No preamble, no commentary, no code fences.
 PROMPT

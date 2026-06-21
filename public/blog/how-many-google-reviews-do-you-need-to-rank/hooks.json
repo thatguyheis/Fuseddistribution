@@ -1,0 +1,10 @@
+{
+  "hook": "Ten reviews is the first algorithm threshold for local ranking.",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "21%",
+    "label": "more reviews than businesses"
+  },
+  "discussion_question": "What's your business's review goal right now?",
+  "hashtags": "#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign"
+}

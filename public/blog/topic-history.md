@@ -80,3 +80,11 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-06-13 | american-silver-eagle-complete-buying-guide | Types | American Silver Eagle complete buying guide: three formats (bullion $4-8, proof $30-50, burnished limited), where to buy, storage capsules and monster boxes, FAQ |
 | 2026-06-14 | silver-bars-vs-silver-coins-which-is-better | Buying Guide | Bars vs. coins premium comparison: 3-5% bar premium vs 15-22% Eagle premium, $480 savings on 100 oz position, storage differences, and when each product type wins |
 | 2026-06-14 | silver-rounds-vs-silver-coins-differences | Types | Rounds vs. coins key differences: 3-8% round premium vs 15-25% Eagle premium, same .999 silver purity, liquidity tradeoffs, numismatic value, and which format wins for building a reserve |
+
+## Local Business Marketing
+
+- **2026-06-21** — [How Many Google Reviews Do You Need To Rank](/blog/how-many-google-reviews-do-you-need-to-rank/)
+
+## Silver Investing
+
+- **2026-06-21** — [Silver Rounds Complete Buyer Guide](/blog/silver-rounds-complete-buyer-guide/)

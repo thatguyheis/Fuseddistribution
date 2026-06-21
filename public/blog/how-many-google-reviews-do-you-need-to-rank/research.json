@@ -1,0 +1,50 @@
+{
+  "slug": "how-many-google-reviews-do-you-need-to-rank",
+  "keyword": "how many google reviews do you need to rank",
+  "angle": "Specific review count thresholds that separate ranked local businesses from invisible ones, backed by 2025-2026 industry data.",
+  "secondary_kw": [
+    "google maps review count ranking",
+    "minimum reviews for local 3 pack",
+    "how many reviews does a business need",
+    "google reviews local SEO ranking factor",
+    "review velocity local search"
+  ],
+  "stats": [
+    {
+      "claim": "47% of consumers won't use a business that has fewer than 20 reviews, and only 9% will use one with 5 or fewer reviews \u2014 making 20 reviews a hard trust floor for local businesses.",
+      "value": "47% of consumers require 20+ reviews",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "74% of consumers only care about reviews written in the last three months, meaning review velocity \u2014 not just total count \u2014 is a critical trust and ranking signal.",
+      "value": "74% of consumers only trust reviews from the last 3 months",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "Businesses ranking in Google local positions 1\u20133 have approximately 21% more reviews than profiles ranked 4\u201310, demonstrating a direct correlation between review volume and top-pack placement.",
+      "value": "21% more reviews for top-3 vs positions 4\u201310",
+      "source_url": "https://www.soci.ai/insights/state-of-google-reviews/",
+      "source_name": "SOCi State of Google Reviews"
+    },
+    {
+      "claim": "A Sterling Sky case study found that crossing 10 reviews produced a measurable local ranking lift across three tested businesses; gains plateaued immediately after, suggesting 10 reviews is a meaningful algorithm threshold \u2014 not a linear one.",
+      "value": "10 reviews is the inflection point for ranking improvement",
+      "source_url": "https://www.sterlingsky.ca/number-of-reviews-impact-ranking/",
+      "source_name": "Sterling Sky Case Study (2025 update)"
+    },
+    {
+      "claim": "Local Falcon's analysis of 50.4 million search results across 1,993 categories found median review counts vary enormously by category \u2014 from 28 for general contractors to 976 for breakfast restaurants \u2014 and metro areas require 1.5\u20132x as many reviews as rural areas to compete.",
+      "value": "Median reviews range from 28 (contractors) to 976 (restaurants) by category",
+      "source_url": "https://www.localfalcon.com/blog/whitepaper-google-reviews-ratings--location-what-50-million-search-results-reveal-about-ranking-in-the-local-3pack",
+      "source_name": "Local Falcon Whitepaper: 50 Million Search Results"
+    },
+    {
+      "claim": "For every 10 new reviews a business earns, Google Business Profile conversion rate improves by 2.8%, and businesses with above-average review counts generate 82% more annual revenue than those below average.",
+      "value": "2.8% conversion lift per 10 reviews; 82% more revenue above average review count",
+      "source_url": "https://www.soci.ai/insights/state-of-google-reviews/",
+      "source_name": "SOCi State of Google Reviews"
+    }
+  ]
+}
