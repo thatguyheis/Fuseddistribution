@@ -1,0 +1,43 @@
+{
+  "slug": "review-generation-tools-for-small-business",
+  "title": "review-generation-tools-for-small-business",
+  "totalDuration": 35,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 10,
+      "text": "Reviews are the real engine for local business growth.",
+      "narration": "Reviews are the real engine for local business growth. --- Review generation tools for small business are free."
+    },
+    {
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 16,
+      "text": "REVIEW GENERATION TOOLS FOR SMALL",
+      "narration": "--- Review generation tools for small business are free."
+    },
+    {
+      "type": "stat",
+      "startSec": 16,
+      "endSec": 21,
+      "text": "MOST PEOPLE SET THEM UP",
+      "narration": "Most people set them up wrong."
+    },
+    {
+      "type": "stat",
+      "startSec": 21,
+      "endSec": 29,
+      "text": "IF YOU RUN A SERVICE",
+      "narration": "If you run a service business and nobody calls your website, you're invisible."
+    },
+    {
+      "type": "question",
+      "startSec": 29,
+      "endSec": 35,
+      "text": "STOP WAITING FOR LEADS READY TO GET NOTICED",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

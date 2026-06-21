@@ -1,0 +1,43 @@
+{
+  "slug": "fake-google-reviews-how-to-handle-them",
+  "title": "fake-google-reviews-how-to-handle-them",
+  "totalDuration": 35,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 7,
+      "text": "Real activity beats fake numbers every time.",
+      "narration": "Real activity beats fake numbers every time. --- Fake Google reviews."
+    },
+    {
+      "type": "stat",
+      "startSec": 7,
+      "endSec": 11,
+      "text": "FAKE GOOGLE REVIEWS",
+      "narration": "--- Fake Google reviews."
+    },
+    {
+      "type": "stat",
+      "startSec": 11,
+      "endSec": 19,
+      "text": "HERE S HOW YOU STOP",
+      "narration": "Here’s how you stop wasting time chasing empty promises and start getting real local customers."
+    },
+    {
+      "type": "stat",
+      "startSec": 19,
+      "endSec": 29,
+      "text": "YOU HAVE A SERVICE BUT",
+      "narration": "You have a service, but if nobody's finding you on Google, you're invisible to the people who need your work."
+    },
+    {
+      "type": "question",
+      "startSec": 29,
+      "endSec": 35,
+      "text": "STOP CHASING FAKE SCORES AND START BUILDING REAL",
+      "narration": "Follow for more tips to grow your business.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}
