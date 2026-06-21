@@ -51,6 +51,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-21 | silver-as-a-percentage-of-net-worth-how-much | General | silver as a percentage of net worth how much |
 | 2026-06-21 | how-much-silver-should-you-own-in-your-portfolio | General | how much silver should you own in your portfolio |
 | 2026-06-18 | silver-numismatic-coins-vs-bullion-coins | General | silver numismatic coins vs bullion coins |
 | 2026-06-17 | proof-silver-coins-worth-buying-or-not | General | proof silver coins worth buying or not |
