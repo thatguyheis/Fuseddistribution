@@ -1,0 +1,47 @@
+{
+  "slug": "does-responding-to-reviews-improve-local-seo",
+  "keyword": "does responding to reviews improve local SEO",
+  "angle": "Responding to Google reviews signals active engagement to both consumers and Google's local algorithm, directly improving visibility, trust, and conversions for local businesses.",
+  "secondary_kw": [
+    "Google Business Profile review responses",
+    "local SEO review signals"
+  ],
+  "stats": [
+    {
+      "claim": "80% of consumers say they're likely to use a business that responds to all of its reviews, compared to just 45% who say the same for businesses that only respond to positive reviews.",
+      "value": "80%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "89% of consumers expect business owners to respond to reviews, yet only 7% say they don't expect any response at all.",
+      "value": "89%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "Google officially states that responding to reviews shows you value customer feedback, and that 'more reviews and positive ratings can help your business's local ranking' \u2014 framing review engagement as part of its prominence signal.",
+      "value": "Prominence signal",
+      "source_url": "https://support.google.com/business/answer/7091",
+      "source_name": "Google Business Profile Help \u2014 Tips to Improve Your Local Ranking"
+    },
+    {
+      "claim": "Review signals (volume, velocity, rating, recency, keywords in reviews, and owner responses) account for approximately 16% of local pack ranking factors, making them the second most influential signal category after Google Business Profile optimization.",
+      "value": "16%",
+      "source_url": "https://whitespark.ca/local-search-ranking-factors/",
+      "source_name": "Whitespark Local Search Ranking Factors 2026 (published November 2025)"
+    },
+    {
+      "claim": "65% of consumers say they are more likely to choose a business that actively responds to reviews, according to SOCi's 2025 Consumer Behavior Index of over 1,000 U.S. consumers.",
+      "value": "65%",
+      "source_url": "https://www.soci.ai/blog/local-seo-statistics/",
+      "source_name": "SOCi 2025 Consumer Behavior Index"
+    },
+    {
+      "claim": "19% of consumers now expect a same-day response to their review \u2014 up sharply from 6% in 2025 \u2014 and 81% expect a reply within one week, raising the operational bar for local businesses.",
+      "value": "19%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    }
+  ]
+}
