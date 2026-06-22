@@ -13,6 +13,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-22 | how-to-turn-bad-reviews-into-better-outcomes | General | how to turn bad reviews into better outcomes |
 | 2026-06-22 | yelp-vs-google-reviews-which-matters-more | General | yelp vs google reviews which matters more |
 | 2026-06-21 | review-generation-tools-for-small-business | General | review generation tools for small business |
 | 2026-06-21 | fake-google-reviews-how-to-handle-them | General | fake google reviews how to handle them |
