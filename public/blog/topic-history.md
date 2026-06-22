@@ -53,6 +53,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-22 | how-to-build-a-silver-stacking-portfolio-from-scratch | General | how to build a silver stacking portfolio from scratch |
 | 2026-06-21 | dollar-cost-averaging-silver-strategy-explained | General | dollar cost averaging silver strategy explained |
 | 2026-06-21 | silver-as-a-percentage-of-net-worth-how-much | General | silver as a percentage of net worth how much |
 | 2026-06-21 | how-much-silver-should-you-own-in-your-portfolio | General | how much silver should you own in your portfolio |
