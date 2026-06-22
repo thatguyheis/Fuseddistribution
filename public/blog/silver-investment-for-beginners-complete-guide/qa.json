@@ -1,0 +1,9 @@
+{
+  "slug": "silver-investment-for-beginners-complete-guide",
+  "score": 87,
+  "pass": true,
+  "blockers": [
+    "social-copy.json reel.x: typo '205' should be '2025'",
+    "meta description truncated mid-word ('toda') \u2014 likely cut at 155 chars without word boundary check"
+  ]
+}
