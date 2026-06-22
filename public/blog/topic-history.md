@@ -6,6 +6,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 - Do not repeat the same specific angle if it was posted within the last 6 months (180 days).
 - Do not post two posts on the same broad category within 7 days.
 - After each run, append new entries to the correct section below.
+- AI Posts is a separate section from Tech Posts — same 7-day broad category rule applies within each section independently.
 
 ---
 
@@ -96,3 +97,10 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 ## Silver Investing
 
 - **2026-06-21** — [Silver Rounds Complete Buyer Guide](/blog/silver-rounds-complete-buyer-guide/)
+
+---
+
+## AI Posts
+
+| Date | Slug | Broad Category | Angle |
+|------|------|----------------|-------|

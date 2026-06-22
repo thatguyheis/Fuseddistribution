@@ -81,6 +81,9 @@ echo $PEXELS_API_KEY
 |---|---|---|---|
 | Silver / investing / Reserve | `Distribution` | Reserve Silver → `/reserve/` | `/reserve/` |
 | Websites / tech / local business | `Technology Solutions` | Get Started → `/#contact` | `/#contact` |
+| AI / artificial intelligence / AI tools / automation | `Technology Solutions` | Get Started → `/#contact` | `/#contact` |
+
+**AI topic examples:** how to start with AI, AI tools for small business, ChatGPT for business owners, AI prompting basics, how to use AI for customer service, AI writing tools, AI scheduling tools, what AI can and can't do for your business, AI training for teams, automating repetitive tasks with AI.
 
 ---
 
@@ -318,6 +321,7 @@ dive in, delve into, delve deeper, unlock the power, unleash the potential, take
 - No hype, no urgency tricks, no scarcity language.
 - Silver/investing posts: matter-of-fact, like a knowledgeable buyer talking to a new buyer.
 - Tech/website posts: like a local contractor who has seen what works and what doesn't.
+- AI posts: patient and plain. The reader is a business owner who has heard AI hype and is skeptical. Skip the excitement. Focus on what the tool actually does, what the limitation is, and what a realistic first step looks like. No "revolutionary" or "game-changing" framing.
 
 ---
 
@@ -439,13 +443,23 @@ File path: `public/blog/topic-history.md` — shared file, committed with every 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
 | YYYY-MM-DD | slug-here | Category | One-line angle description |
+
+## AI Posts
+
+| Date | Slug | Broad Category | Angle |
+|------|------|----------------|-------|
+| YYYY-MM-DD | slug-here | Category | One-line angle description |
 ```
 
 **Rules:**
-- Append to the correct section (Tech Posts or Silver Posts) after each post
-- `Broad Category` is a short label: `Websites`, `Google`, `Marketing`, `Social Media`, `General` (tech) or `Buying`, `Storing`, `Pricing`, `Types`, `General` (silver)
+- Append to the correct section (Tech Posts, Silver Posts, or AI Posts) after each post
+- `Broad Category` is a short label:
+  - Tech: `Websites`, `Google`, `Marketing`, `Social Media`, `General`
+  - Silver: `Buying`, `Storing`, `Pricing`, `Types`, `General`
+  - AI: `Getting Started`, `Tools`, `Automation`, `Business Use Cases`, `Prompting`, `General`
 - `Angle` is one sentence — specific enough to detect near-duplicates
 - No post same angle within 180 days; no post same broad category within 7 days
+- AI posts count separately from Tech posts for the 7-day same-category rule
 
 ---
 
@@ -577,6 +591,9 @@ The `organic_ads` key is added by the `social-ad` skill after post build. It is 
 
 **Instagram hashtag set (tech/local business posts):**
 `#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign`
+
+**Instagram hashtag set (AI posts):**
+`#AIForBusiness #ArtificialIntelligence #AITools #SmallBusiness #AITips`
 
 ---
 
