@@ -87,6 +87,32 @@ echo $PEXELS_API_KEY
 
 ---
 
+## 1b. Live Spot Price — Required for All Silver Posts
+
+**Before writing any silver post**, fetch current spot price from the site API:
+
+```bash
+curl -s https://fuseddistribution.com/api/spot
+# Returns: {"silver": 64.85, "gold": 4155.60}
+```
+
+**Rules (hard — no exceptions):**
+- Every price used as a hypothetical example in a silver post MUST use current spot, not a round number or assumed price.
+- Always quote the date alongside the price: `"$64.85/oz as of June 22, 2026"` or `"at current spot ($64.85/oz, June 22, 2026)"`.
+- Round to 2 decimal places. Do NOT round to a "nice" number like $65 — use the actual fetched value.
+- For **premium examples** (e.g., "$X above spot"): keep the premium range accurate ($4–$8, $1–$3), but compute the example dollar amount from actual spot. e.g. "at $64.85 spot, an American Silver Eagle runs about $68–$73."
+- For **position-size examples** (e.g., "at $X/oz, $5,000 buys Y oz"): compute Y from actual spot.
+- For **gold-silver ratio** mentions: compute from actual fetched gold and silver prices.
+- Historical prices (2024 averages, record highs, etc.) stay unchanged — only forward-looking/hypothetical values use the live price.
+- Do NOT quote spot price in the article title, h1, or meta description — prices change and those are indexed.
+
+**In body text, use this phrasing pattern:**
+> "At today's spot of $64.85 per ounce (June 22, 2026), a $5,000 position buys approximately 77 ounces."
+
+**Content refresh trigger:** If spot price moves more than 15% from the quoted price, refresh the post per §16.
+
+---
+
 ## 1a. Silver Topic Expansion
 
 Silver posts should rotate through ALL categories below — not just Buying/Storage/Types. The cron agent must check topic-history.md and pick from underrepresented categories.

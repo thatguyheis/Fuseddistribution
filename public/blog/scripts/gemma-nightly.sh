@@ -471,11 +471,31 @@ process_topic() {
     fi
   fi
 
+  # ── Fetch live spot price for silver posts ──
+  local SPOT_LINE=""
+  if [[ "$BRAND" == "silver" ]]; then
+    local SPOT_JSON
+    SPOT_JSON=$(curl -s --max-time 10 "https://fuseddistribution.com/api/spot" 2>/dev/null)
+    if [[ -n "$SPOT_JSON" ]]; then
+      local SILVER_SPOT GOLD_SPOT
+      SILVER_SPOT=$(echo "$SPOT_JSON" | python3 -c "import json,sys; d=json.load(sys.stdin); print(f\"{d['silver']:.2f}\")" 2>/dev/null)
+      GOLD_SPOT=$(echo "$SPOT_JSON" | python3 -c "import json,sys; d=json.load(sys.stdin); print(f\"{d['gold']:.2f}\")" 2>/dev/null)
+      if [[ -n "$SILVER_SPOT" ]]; then
+        SPOT_LINE="LIVE SPOT PRICES (fetched $TODAY): Silver = \$$SILVER_SPOT/oz | Gold = \$$GOLD_SPOT/oz
+Use these EXACT values for all hypothetical price examples (not round numbers).
+Always cite the date: e.g. 'at \$$SILVER_SPOT/oz as of $TODAY'."
+        echo "    Spot: silver=\$$SILVER_SPOT gold=\$$GOLD_SPOT"
+      fi
+    fi
+  fi
+
   # ── Step 1: Research brief ──
   echo "    [1/2] Research brief..."
   local BRIEF_PROMPT="You are a content strategist for $BRAND_CTX
 
-Target keyword: \"$KEYWORD\"
+${SPOT_LINE:+$SPOT_LINE
+
+}Target keyword: \"$KEYWORD\"
 
 Write a structured content brief. Sections:
 
@@ -562,6 +582,7 @@ $BRIEF" 200)
   local INTRO
   INTRO=$(ollama_call "Write the opening paragraph (3-4 sentences) of a blog post for $BRAND_CTX
 Keyword: \"$KEYWORD\". Answer the keyword question directly in the first sentence (answer-first). No heading.
+${SPOT_LINE:+$SPOT_LINE}
 $STYLE" 260)
 
   # 2c. One section per heading.
