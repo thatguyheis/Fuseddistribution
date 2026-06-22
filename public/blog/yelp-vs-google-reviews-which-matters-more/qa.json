@@ -1,0 +1,10 @@
+{
+  "slug": "yelp-vs-google-reviews-which-matters-more",
+  "score": 87,
+  "pass": true,
+  "blockers": [
+    "MINOR: Missing twitter:title and twitter:description meta tags",
+    "MINOR: Instagram social copy grammar error \u2014 'Google reviews are the dominant for local search visibility' (missing noun after 'dominant')",
+    "MINOR: Hero image lacks figcaption; inline photo captions give no descriptive context beyond photographer credit"
+  ]
+}
