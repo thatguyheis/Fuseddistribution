@@ -30,7 +30,7 @@ LINT_OUT="$DIR/lint.json"
 
 if [[ -f "$META" ]]; then
   KEYWORD=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('description','')[:120])" 2>/dev/null || echo "$SLUG")
-  TITLE=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('title',''))" 2>/dev/null || echo "")
+  TITLE=$(python3 -c "import json,sys,re; d=json.load(open('$META')); t=d.get('title',''); print(re.sub(r'^GEMMA DRAFT\s*[—-]\s*','',t,flags=re.I))" 2>/dev/null || echo "")
   BRAND=$(python3 -c "import json,sys; d=json.load(open('$META')); print(d.get('brand','silver'))" 2>/dev/null || echo "silver")
 else
   KEYWORD="${KEYWORD_ARG:-$(echo "$SLUG" | tr '-' ' ')}"

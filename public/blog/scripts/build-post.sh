@@ -53,7 +53,10 @@ if [[ $CLAUDE_OK -eq 1 ]]; then
   elif "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'; then mark write; else log "write lint-failed (verified.md written, continue)"; mark write-warn; fi
 else
   log "T5 degraded: gemma draft -> verified.md + lint (claude unavailable)"
-  cp "$DIR/gemma_draft.md" "$DIR/verified.md"
+  # Strip gemma header (everything through first ---) then prepend proper title
+  awk 'BEGIN{p=0} /^---$/{if(!p){p=1;next}} p{print}' "$DIR/gemma_draft.md" > "$DIR/verified.md"
+  CLEAN_TITLE=$(echo "$KEYWORD" | python3 -c "import sys; t=sys.stdin.read().strip(); print(' '.join(w.capitalize() for w in t.split()))")
+  { printf '# %s\n\n' "$CLEAN_TITLE"; cat "$DIR/verified.md"; } > "$DIR/verified.md.tmp" && mv "$DIR/verified.md.tmp" "$DIR/verified.md"
   node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet || log "  lint flagged violations (degraded)"
 fi
 [[ -s "$DIR/verified.md" ]] || { log "FATAL: no verified.md"; exit 1; }
@@ -61,7 +64,7 @@ fi
 # ── meta.json (derive if absent) ──
 if [[ ! -f "$DIR/meta.json" ]]; then
   log "meta.json: deriving"
-  TITLE=$(grep -m1 '^# ' "$DIR/verified.md" | sed 's/^# *//' | tr -d '\r')
+  TITLE=$(grep -m1 '^# ' "$DIR/verified.md" | sed 's/^# *//' | sed 's/^GEMMA DRAFT[[:space:]]*—[[:space:]]*//' | tr -d '\r')
   [[ -z "$TITLE" ]] && TITLE=$(echo "$KEYWORD" | sed 's/.*/\u&/')
   DESC=$(GEMMA_MAX_TOKENS=60 bash -c "echo \"Write a 150-character SEO meta description for an article titled '$TITLE'. One line, no quotes.\" | '$GEMMA'" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-160)
   ALT=$(GEMMA_MAX_TOKENS=30 bash -c "echo \"Write 6-word alt text for the hero image of an article titled '$TITLE'. No quotes.\" | '$GEMMA'" 2>/dev/null | tr -d '\n"' | cut -c1-90)

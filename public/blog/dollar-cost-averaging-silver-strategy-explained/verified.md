@@ -1,9 +1,5 @@
-<!-- gemma_draft: 2026-06-20 | keyword: dollar cost averaging silver strategy explained | brand: silver -->
-# GEMMA DRAFT — dollar cost averaging silver strategy explained
-> Generated: 2026-06-20 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
-> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
+# Dollar Cost Averaging Silver Strategy Explained
 
----
 
 You want to build a physical silver reserve. Fused Distribution offers a straightforward way to do that. We cut out the dealer markups and confusing premiums. You get clear pricing. You get a plan. Reserve your silver today at /reserve/.
 
@@ -65,9 +61,8 @@ Stop guessing about premiums. Reserve your silver straightforwardly at /reserve/
 
 ## Related
 
-- [GEMMA DRAFT — silver as a percentage of net worth how much](/blog/silver-as-a-percentage-of-net-worth-how-much/)
+- [Silver as a Percentage of Net Worth: How Much Is Right?](/blog/silver-as-a-percentage-of-net-worth-how-much/)
 - [Silver Rounds Complete Buyer Guide](/blog/silver-rounds-complete-buyer-guide/)
 - [How Much Silver Should You Own In Your Portfolio](/blog/how-much-silver-should-you-own-in-your-portfolio/)
 
-Read next: [GEMMA DRAFT — silver as a percentage of net worth how much](/blog/silver-as-a-percentage-of-net-worth-how-much/)
-
+Read next: [Silver as a Percentage of Net Worth: How Much Is Right?](/blog/silver-as-a-percentage-of-net-worth-how-much/)

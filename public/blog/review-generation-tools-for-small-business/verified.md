@@ -1,9 +1,5 @@
-<!-- gemma_draft: 2026-06-20 | keyword: review generation tools for small business | brand: tech -->
-# GEMMA DRAFT — review generation tools for small business
-> Generated: 2026-06-20 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
-> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
+# Review Generation Tools for Small Business
 
----
 
 Review generation tools for small business are free. Most people set them up wrong. If you run a service business and nobody calls your website, you're invisible. We cut the noise and focus only on getting you found by the people who actually need your service right now. Ready to stop waiting for leads and start getting calls? Contact us at /#contact.
 
@@ -51,9 +47,8 @@ Stop paying for marketing talk. See how we get your business found on Google, si
 
 ## Related
 
-- [GEMMA DRAFT — fake google reviews how to handle them](/blog/fake-google-reviews-how-to-handle-them/)
+- [Fake Google Reviews: How to Handle Them](/blog/fake-google-reviews-how-to-handle-them/)
 - [How Many Google Reviews Do You Need To Rank](/blog/how-many-google-reviews-do-you-need-to-rank/)
 - [Does Responding to Reviews Improve Local SEO?](/blog/does-responding-to-reviews-improve-local-seo/)
 
-Read next: [GEMMA DRAFT — fake google reviews how to handle them](/blog/fake-google-reviews-how-to-handle-them/)
-
+Read next: [Fake Google Reviews: How to Handle Them](/blog/fake-google-reviews-how-to-handle-them/)

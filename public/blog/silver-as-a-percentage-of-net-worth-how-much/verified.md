@@ -1,9 +1,5 @@
-<!-- gemma_draft: 2026-06-20 | keyword: silver as a percentage of net worth how much | brand: silver -->
-# GEMMA DRAFT — silver as a percentage of net worth how much
-> Generated: 2026-06-20 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
-> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
+# Silver as a Percentage of Net Worth: How Much Is Right?
 
----
 
 You need a straightforward way to build a physical silver reserve. Fused Distribution cuts through the noise. We show you how to buy silver without dealer markup games or confusing premiums. You get clear pricing and no pressure. Ready to see how simple it is? Reserve your first step at /reserve/.
 
@@ -72,4 +68,3 @@ Stop guessing about premiums. Reserve your silver straightforwardly at /reserve/
 - [Silver Numismatic Coins vs Bullion Coins](/blog/silver-numismatic-coins-vs-bullion-coins/)
 
 Read next: [Silver Rounds Complete Buyer Guide](/blog/silver-rounds-complete-buyer-guide/)
-

@@ -1,9 +1,5 @@
-<!-- gemma_draft: 2026-06-20 | keyword: fake google reviews how to handle them | brand: tech -->
-# GEMMA DRAFT — fake google reviews how to handle them
-> Generated: 2026-06-20 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
-> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
+# Fake Google Reviews: How to Handle Them
 
----
 
 Fake Google reviews. Here’s how you stop wasting time chasing empty promises and start getting real local customers. You have a service, but if nobody's finding you on Google, you're invisible to the people who need your work. We cut the noise. We focus only on what actually gets you calls and shows up when people search for your business. If you're ready to stop guessing and start getting found, check out our contact page.
 
@@ -68,4 +64,3 @@ Stop wasting money on website fluff that doesn't get calls. See how we actually 
 - [A Google Review Strategy That Actually Works](/blog/google-review-strategy-that-actually-works/)
 
 Read next: [How Many Google Reviews Do You Need To Rank](/blog/how-many-google-reviews-do-you-need-to-rank/)
-
