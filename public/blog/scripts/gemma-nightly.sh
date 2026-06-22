@@ -157,6 +157,71 @@ SILVER_TOPICS=(
   "silver reserve plan what it is and how it works"
   "building a silver reserve on a monthly budget"
   "silver reserve vs 401k which makes more sense"
+  # News and outlook
+  "silver price prediction 2026 what analysts expect"
+  "why silver price dropped this month explained"
+  "silver vs gold performance comparison 2025 2026"
+  "COMEX silver inventory what declining stockpiles mean for price"
+  "solar panel demand silver price impact 2026"
+  "silver price all-time high when will it happen again"
+  "is now a good time to buy silver 2026"
+  "silver price chart analysis support and resistance levels"
+  # Tax and legal
+  "silver capital gains tax how it works in the US"
+  "do you have to report silver coin purchases to IRS"
+  "IRS rules for selling silver coins 1099-B reporting"
+  "state sales tax on silver coins which states charge it"
+  "how to keep records of silver purchases for taxes"
+  "silver coins gift tax rules what you need to know"
+  "silver in an LLC vs personal ownership tax differences"
+  # Retirement
+  "silver IRA how to set one up step by step"
+  "can you put physical silver in an IRA"
+  "self-directed IRA approved silver coins and bars list"
+  "silver IRA vs physical silver at home which is better"
+  "best silver IRA custodians compared 2026"
+  "rolling over 401k into silver IRA what to know"
+  # COMEX and paper silver
+  "what is COMEX silver and how does it affect spot price"
+  "paper silver vs physical silver the key difference"
+  "silver short squeeze 2026 is it possible"
+  "how silver futures work explained for stackers"
+  "COMEX silver delivery process explained"
+  "why COMEX price and physical silver price diverge"
+  # Dealer reviews
+  "APMEX review 2026 premiums selection and service"
+  "JM Bullion vs SD Bullion which dealer is better"
+  "Gainesville Coins review 2026"
+  "Provident Metals review is it legit"
+  "APMEX vs JM Bullion premium comparison 2026"
+  "best silver dealers in the US ranked"
+  # Tools and tracking
+  "best apps to track your silver portfolio value"
+  "how to set silver spot price alerts for free"
+  "silver premium calculator how to build one"
+  "how to build a silver inventory spreadsheet"
+  "CoinStats vs Delta for precious metals tracking"
+  "how to calculate your average cost per ounce silver"
+  # Estate and inheritance
+  "what to do when you inherit silver coins and bars"
+  "how to value inherited silver for estate purposes"
+  "selling inherited silver coins taxes and process"
+  "how to divide silver in an estate fairly"
+  "inherited junk silver what to do with it"
+  # Mining and stocks
+  "silver mining stocks vs physical silver which is better"
+  "best silver mining stocks to watch in 2026"
+  "First Majestic Silver vs physical silver investment"
+  "silver royalty companies explained Wheaton Precious Metals"
+  "how silver mine production affects spot price"
+  # Coin guides - specific
+  "Morgan silver dollar complete buying guide"
+  "Peace silver dollar value and history"
+  "Perth Mint silver Kangaroo buying guide"
+  "Mexican silver Libertad coins guide"
+  "silver panda coins from China complete guide"
+  "Engelhard silver bars history and collector value"
+  "Johnson Matthee silver bars guide"
 )
 
 TECH_TOPICS=(
@@ -269,6 +334,24 @@ TECH_TOPICS=(
   "bing places for business setup guide"
   # AI and tools
   "AI tools for small business marketing in 2026"
+  "how to start using AI in your small business"
+  "ChatGPT for small business owners beginners guide"
+  "best free AI tools for small business 2026"
+  "how to use AI to write better business emails"
+  "AI for customer service small business how to set it up"
+  "how to use AI to create social media content faster"
+  "AI scheduling tools for small business"
+  "what AI can and cannot do for your small business"
+  "how to build AI prompts that actually work"
+  "AI writing tools comparison for small business"
+  "how to automate repetitive business tasks with AI"
+  "AI chatbot for small business website setup guide"
+  "using AI to respond to Google reviews automatically"
+  "AI tools for restaurant ordering and menu management"
+  "how to train your team on AI tools step by step"
+  "AI for bookkeeping small business tools compared"
+  "Claude vs ChatGPT for small business which is better"
+  # General tech
   "website speed for local business why it matters"
   "how to speed up your small business website"
   "instagram marketing for local business"
@@ -317,16 +400,28 @@ slugify() {
 }
 
 ollama_call() {
+  # Migrated 2026-06-16: gemma4:e2b gguf (7.7 GB) removed — swapped to death on
+  # this 8 GB Mac. Now calls the LiteRT serve leaf endpoint (gemma-4-E2B, ~2 GB,
+  # Metal GPU) at :9379. Service: com.nick.litert-serve. Helper: ~/bin/gemma.sh.
+  # NOTE: model context = 4096 tokens — keep prompt + max_tokens under that.
   local prompt="$1"
   local max_tokens="${2:-1400}"
-  curl -s --max-time 180 http://localhost:11434/api/generate \
-    -H "Content-Type: application/json" \
-    -d "{
-      \"model\": \"gemma4:e2b\",
-      \"prompt\": $(echo "$prompt" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))'),
-      \"stream\": false,
-      \"options\": { \"temperature\": 0.65, \"num_predict\": $max_tokens }
-    }" 2>/dev/null | python3 -c 'import json,sys; d=json.loads(sys.stdin.read()); print(d.get("response",""))' 2>/dev/null
+  M="gemma-e2b,gpu" N="$max_tokens" python3 -c '
+import json, os, sys, urllib.request
+body = json.dumps({
+    "model": os.environ["M"],
+    "messages": [{"role": "user", "content": sys.stdin.read()}],
+    "max_tokens": int(os.environ["N"]),
+    "temperature": 0.65,
+}).encode()
+req = urllib.request.Request("http://localhost:9379/v1/chat/completions",
+                             data=body, headers={"Content-Type": "application/json"})
+try:
+    d = json.load(urllib.request.urlopen(req, timeout=300))
+    print(d["choices"][0]["message"]["content"])
+except Exception as e:
+    sys.stderr.write(f"litert call failed: {e}\n")
+' <<<"$prompt" 2>/dev/null
 }
 
 # ── Process one topic ─────────────────────────────────────────────────────────
@@ -413,7 +508,7 @@ Output sections only. No preamble."
   cat > "$BRIEF_FILE" <<EOF
 # Research Brief — $KEYWORD
 **Date:** $TODAY | **Brand:** $BRAND | **Slug:** $SLUG
-**Model:** gemma4:e2b
+**Model:** gemma-e2b (litert)
 
 ---
 
@@ -423,33 +518,86 @@ $BRIEF
 EOF
   echo "    Brief saved."
 
-  # ── Step 2: Full article draft ──
-  echo "    [2/2] Article draft..."
-  local DRAFT_PROMPT="You are writing a blog post for $BRAND_CTX
+  # ── Step 2: Full article draft (CHUNKED) ──
+  # Generate section-by-section instead of one big call. Each gemma call stays
+  # well under the model's 4096-token context: intro, then one call per H2,
+  # then a templated CTA. Smaller focused prompts = better quality + no truncation.
+  echo "    [2/2] Article draft (chunked)..."
 
-Target keyword: \"$KEYWORD\"
+  # Shared style rules — kept short to save context budget.
+  local STYLE="Rules: plain direct tone, second person (you/your), short sentences, use contractions.
+No em dashes or en dashes (use a comma or two sentences).
+No buzzwords: leverage, utilize, streamline, facilitate, foster, harness, empower, elevate, revolutionize, embark, robust, seamlessly, cutting-edge, holistic, paradigm, ecosystem, synergy, cornerstone, testament, landscape, realm, beacon, catalyst, transformative, groundbreaking.
+No hedging: 'it is important to note', 'it is worth mentioning', 'needless to say'.
+No filler transitions: moreover, furthermore, additionally, consequently, notably, thus, indeed.
+No filler openers: 'In today's landscape', 'When it comes to', 'In an era of', 'In recent years'.
+No banned phrases: dive in, delve into, bridge the gap, a testament to, in this article, master the art of.
+Mark any uncertain stat with [VERIFY]. Output prose only, no headings, no preamble, no meta-commentary."
 
-Research brief:
-$BRIEF
+  # Brand CTA URL
+  local CTA_URL
+  if [[ "$BRAND" == "silver" ]]; then CTA_URL="https://fuseddistribution.com/reserve/"; else CTA_URL="https://fuseddistribution.com/#contact"; fi
 
-Write a 700-900 word article. Rules:
-- First paragraph answers the keyword question directly (answer-first)
-- Use the H2 structure from the brief
-- Include 3-4 specific stats or facts (mark uncertain ones [VERIFY])
-- Plain, direct tone. Second person (you/your). Short sentences.
-- No em dashes. No buzzwords (leverage, utilize, streamline, empower, transform, revolutionize, seamlessly, robust, cutting-edge, comprehensive, holistic).
-- No filler openers: 'In today's landscape', 'When it comes to', 'In an era of'
-- No filler transitions: moreover, furthermore, additionally, notably
-- End with a 2-sentence CTA pointing to the brand URL above
-- Output article markdown only. No preamble, no meta-commentary."
+  # 2a. Extract H2 headings (one per line) from the brief.
+  local HEADINGS_RAW
+  HEADINGS_RAW=$(ollama_call "From the research brief below, list ONLY the 4-5 H2 section headings, one per line. No numbers, no markdown symbols (#, -, *), no extra text.
 
-  local DRAFT
-  DRAFT=$(ollama_call "$DRAFT_PROMPT" 1400)
+Brief:
+$BRIEF" 200)
+
+  local HEADINGS=()
+  while IFS= read -r h; do
+    h=$(echo "$h" | sed -E 's/^[[:space:]]*[#>*-]+[[:space:]]*//; s/^[[:space:]]*[0-9]+[.)][[:space:]]*//; s/^[[:space:]]+//; s/[[:space:]]+$//')
+    [[ -n "$h" && ${#h} -le 80 ]] && HEADINGS+=("$h")
+  done <<< "$HEADINGS_RAW"
+  # Fallback if parsing yielded nothing
+  if (( ${#HEADINGS[@]} == 0 )); then
+    HEADINGS=("Overview" "What to Know" "How to Get Started" "Common Mistakes")
+  fi
+  # Cap at 6 sections
+  HEADINGS=("${HEADINGS[@]:0:6}")
+  echo "      sections: ${#HEADINGS[@]} — ${HEADINGS[*]}"
+
+  # 2b. Intro (answer-first).
+  local INTRO
+  INTRO=$(ollama_call "Write the opening paragraph (3-4 sentences) of a blog post for $BRAND_CTX
+Keyword: \"$KEYWORD\". Answer the keyword question directly in the first sentence (answer-first). No heading.
+$STYLE" 260)
+
+  # 2c. One section per heading.
+  local SECTIONS=""
+  local KEYPOINTS
+  KEYPOINTS=$(echo "$BRIEF" | sed -n '/Key Points/,/H2 Structure/p' | head -20)
+  local H
+  for H in "${HEADINGS[@]}"; do
+    echo "      section: $H"
+    local SEC
+    SEC=$(ollama_call "Blog post for $BRAND_CTX. Keyword: \"$KEYWORD\".
+Write the body for the section titled \"$H\" (2-3 short paragraphs). Do not repeat the heading. Stay specific to this section.
+Relevant points:
+$KEYPOINTS
+$STYLE" 320)
+    SECTIONS+="## $H
+
+$SEC
+
+"
+  done
+
+  # 2d. CTA (templated — reliable URL).
+  local CTA
+  CTA=$(ollama_call "Write a 2-sentence call to action for $BRAND_CTX ending by pointing readers to $CTA_URL. Keyword context: \"$KEYWORD\".
+$STYLE" 120)
+
+  # Assemble
+  local DRAFT="$INTRO
+
+$SECTIONS$CTA"
 
   cat > "$DRAFT_FILE" <<EOF
 <!-- gemma_draft: $TODAY | keyword: $KEYWORD | brand: $BRAND -->
 # GEMMA DRAFT — $KEYWORD
-> Generated: $TODAY | Model: gemma4:e2b | Status: NEEDS POLISH
+> Generated: $TODAY | Model: gemma-e2b (litert) | Status: NEEDS POLISH
 > Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
 
 ---

@@ -124,8 +124,22 @@ updated: 2026-06-10
 
 ---
 
+## Content Categories (for topic rotation)
+
+Silver posts must rotate across all categories — see §1a in BLOG-SOP.md for full list. Priority fill order for underrepresented: News & Outlook → Tax & Legal → Selling → Retirement → COMEX & Futures → Dealer Reviews → Tools & Tracking → Estate & Inheritance → Mining & Stocks → Coin Guides → then Investing / Storage / Types / History.
+
+**Tone by category:**
+- Tax & Legal: factual, not alarmist. Acknowledge complexity, point to IRS source, recommend CPA for edge cases.
+- News & Outlook: report what's happening, not predictions. "Analysts expect X" not "silver will go to $50."
+- Selling: practical, no drama. Help people get the best price without making it feel like a crisis.
+- COMEX: educational, skeptical but not conspiratorial. Explain how paper silver works without going full doom.
+- Dealer Reviews: honest, comparison-focused. Use real data (premiums, selection, buy-back rates).
+
+---
+
 ## Changelog
 
 | Date | Change | Why |
 |------|--------|-----|
 | 2026-06-10 | Initial creation | New UGC ad creative system |
+| 2026-06-22 | Added content category rotation guide | Expanding beyond Buying Guide / General defaults |

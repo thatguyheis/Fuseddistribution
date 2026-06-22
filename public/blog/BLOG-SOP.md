@@ -87,6 +87,98 @@ echo $PEXELS_API_KEY
 
 ---
 
+## 1a. Silver Topic Expansion
+
+Silver posts should rotate through ALL categories below — not just Buying/Storage/Types. The cron agent must check topic-history.md and pick from underrepresented categories.
+
+### Broad Categories for Silver Posts (topic-history `Broad Category` values)
+
+| Category | When to use |
+|---|---|
+| `Buying Guide` | How to buy, where to buy, product comparisons, premiums |
+| `Investing` | DCA, portfolio allocation, gold-silver ratio, ETF vs physical |
+| `Storage` | Home safe, vault, insurance, tarnish, organization |
+| `Types` | Coin/round/bar deep dives, specific product guides |
+| `History` | Silver's monetary history, historical events, famous squeezes |
+| `Market` | Spot price drivers, supply/demand, COMEX, futures |
+| `News & Outlook` | Current silver price moves, recent industry news, price forecasts |
+| `Tax & Legal` | Capital gains, IRS reporting, 1099-B rules, state taxes on silver |
+| `Selling` | When/how/where to sell silver, buy-back programs, private sale vs dealer |
+| `Mining & Stocks` | Silver mining stocks vs physical, top miners, royalty companies |
+| `Retirement` | Silver IRA, self-directed IRA, 401k rollover to precious metals |
+| `Coin Guides` | Morgan dollars, Peace dollars, Britannias, Kangaroos, Philharmonics, Maple Leafs |
+| `COMEX & Futures` | Paper silver, short positions, COMEX delivery, manipulation claims |
+| `Dealer Reviews` | APMEX, JM Bullion, SD Bullion, Gainesville Coins, Provident Metals |
+| `Tools & Tracking` | Portfolio trackers, apps, spot price alerts, premium calculators |
+| `International` | Buying silver abroad, VAT on silver, international mints |
+| `Estate & Inheritance` | Inheriting silver, what to do, valuation, selling inherited coins |
+| `General` | Beginner overviews, mindset, anything that doesn't fit above |
+
+### Silver Topic Seeds (ready to use — verify not already posted)
+
+**News & Outlook (zero coverage):**
+- silver price prediction 2026 what analysts expect
+- why silver price dropped this month explained
+- silver vs gold performance comparison 2025-2026
+- COMEX silver inventory update what it means for stackers
+- solar panel demand driving silver prices higher in 2026
+
+**Tax & Legal (zero coverage):**
+- silver capital gains tax how it works
+- IRS rules for selling silver coins and reporting
+- do you have to report silver coin purchases to IRS
+- state sales tax on silver coins by state
+- silver in an LLC vs personal name tax implications
+- 1099-B rules when does your dealer have to report your silver sale
+
+**Selling (zero coverage):**
+- best places to sell silver coins for highest price
+- how to sell silver coins without getting ripped off
+- APMEX sell-back price vs local coin shop which pays more
+- when should you sell your silver stack
+- how to sell inherited silver coins and bars
+- private silver sale vs dealer buy-back pros and cons
+
+**Retirement (zero coverage):**
+- silver IRA how to set one up step by step
+- can you put physical silver in an IRA
+- self-directed IRA for silver what you need to know
+- silver IRA vs physical silver at home comparison
+- best silver IRA custodians compared
+
+**Coin Guides — specific coins (underrepresented):**
+- Morgan silver dollar complete buying guide
+- Peace silver dollar value and buying guide
+- Austrian silver Philharmonic complete guide
+- Perth Mint silver Kangaroo buying guide
+- British silver Britannia vs American Eagle comparison
+- Mexican silver Libertad coins buying guide
+
+**COMEX & Futures (zero coverage):**
+- what is COMEX silver and how does it affect spot price
+- paper silver vs physical silver the difference explained
+- silver short squeeze is it possible in 2026
+- how silver futures work for physical stackers
+
+**Dealer Reviews (zero coverage):**
+- APMEX review 2026 is it worth buying from
+- JM Bullion vs SD Bullion which is better
+- Gainesville Coins review premiums and selection
+- Provident Metals review 2026
+
+**Tools & Tracking (zero coverage):**
+- best apps to track silver portfolio value
+- how to set silver spot price alerts for free
+- silver premium calculator how to use one
+- CoinTracking vs Delta for silver portfolio tracking
+
+**Estate & Inheritance (zero coverage):**
+- what to do when you inherit silver coins
+- how to value inherited silver for estate purposes
+- selling inherited silver coins probate and tax basics
+
+---
+
 ## 2. posts.json Entry
 
 Insert at **top** of array (newest first):
