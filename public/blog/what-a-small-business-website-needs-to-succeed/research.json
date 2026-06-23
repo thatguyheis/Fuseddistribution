@@ -1,0 +1,41 @@
+{
+  "slug": "what-a-small-business-website-needs-to-succeed",
+  "keyword": "what a small business website needs to succeed",
+  "angle": "Small businesses without a fast, trustworthy website lose customers before a single conversation starts.",
+  "secondary_kw": [
+    "small business website tips",
+    "website features for small business"
+  ],
+  "stats": [
+    {
+      "claim": "31% of shoppers have decided against supporting a small business because it lacked a website",
+      "value": "31%",
+      "source_url": "https://www.adobe.com/express/learn/blog/small-business-support",
+      "source_name": "Adobe Express Blog"
+    },
+    {
+      "claim": "87% of consumers used Google to evaluate local business reviews in 2025",
+      "value": "87%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey-2025/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2025"
+    },
+    {
+      "claim": "42% of consumers trust online reviews as much as personal recommendations",
+      "value": "42%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey-2025/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2025"
+    },
+    {
+      "claim": "A B2C e-commerce site loading in 1 second has a 3.05% conversion rate; at 3 seconds it drops to 1.12% \u2014 a 63% decline",
+      "value": "63% drop",
+      "source_url": "https://portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm",
+      "source_name": "Portent"
+    },
+    {
+      "claim": "53% of mobile users abandon a site if it takes longer than 3 seconds to load",
+      "value": "53%",
+      "source_url": "https://support.google.com/adsense/answer/7450973",
+      "source_name": "Google / Think with Google"
+    }
+  ]
+}
