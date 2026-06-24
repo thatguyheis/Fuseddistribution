@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-24 | small-business-website-mistakes-to-avoid | General | small business website mistakes to avoid |
 | 2026-06-23 | what-a-small-business-website-needs-to-succeed | General | what a small business website needs to succeed |
 | 2026-06-22 | how-to-turn-bad-reviews-into-better-outcomes | General | how to turn bad reviews into better outcomes |
 | 2026-06-22 | yelp-vs-google-reviews-which-matters-more | General | yelp vs google reviews which matters more |
