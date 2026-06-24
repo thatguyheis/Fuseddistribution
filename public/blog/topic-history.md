@@ -57,6 +57,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-24 | physical-silver-vs-silver-etf-pros-and-cons | General | physical silver vs silver ETF pros and cons |
 | 2026-06-24 | silver-vs-gold-which-is-better-investment-in-2026 | General | silver vs gold which is better investment in 2026 |
 | 2026-06-23 | self-directed-ira-for-silver-step-by-step | General | self-directed IRA for silver step by step |
 | 2026-06-23 | silver-ira-what-it-is-and-how-to-open-one | General | silver IRA what it is and how to open one |
