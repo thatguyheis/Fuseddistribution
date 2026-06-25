@@ -1,0 +1,47 @@
+{
+  "slug": "silver-etf-vs-physical-silver-tax-differences",
+  "keyword": "silver ETF vs physical silver tax differences",
+  "angle": "Both silver ETFs like SLV and physical silver bullion hit the 28% collectibles tax ceiling, but reporting, sales tax, and 1099 mechanics diverge sharply.",
+  "secondary_kw": [
+    "SLV tax treatment",
+    "physical silver capital gains tax"
+  ],
+  "stats": [
+    {
+      "claim": "Long-term gains on collectibles, including physical silver and physically-backed silver ETFs, are capped at a 28% maximum federal tax rate versus 15-20% for stocks.",
+      "value": "28%",
+      "source_url": "https://www.kiplinger.com/taxes/how-collectibles-are-taxed",
+      "source_name": "Kiplinger"
+    },
+    {
+      "claim": "The iShares Silver Trust (SLV) is structured as a grantor trust, so shareholders are treated as directly owning a pro rata share of the underlying silver and taxed as collectibles.",
+      "value": "grantor trust",
+      "source_url": "https://www.ishares.com/us/literature/annual-report/slv-20241231.pdf",
+      "source_name": "iShares Silver Trust 2024 Annual Report"
+    },
+    {
+      "claim": "Short-term physical silver gains (held one year or less) are taxed as ordinary income at rates up to 37%.",
+      "value": "37%",
+      "source_url": "https://investingnews.com/daily/resource-investing/precious-metals-investing/gold-investing/tax-on-gold-silver-investments/",
+      "source_name": "Investing News Network"
+    },
+    {
+      "claim": "Dealer 1099-B reporting is triggered on physical silver sales of 1,000 troy ounces or more of .999 fine bars in a single transaction.",
+      "value": "1,000 oz",
+      "source_url": "https://www.jmbullion.com/investing-guide/taxes-reporting-iras/1099b-forms/",
+      "source_name": "JM Bullion"
+    },
+    {
+      "claim": "Washington state repealed its 40-year precious-metals sales tax exemption under ESSB 5794, imposing sales tax on bullion starting January 1, 2026.",
+      "value": "January 1, 2026",
+      "source_url": "https://findbullionprices.com/blog/bullion-sales-tax-by-state/",
+      "source_name": "FindBullionPrices.com"
+    },
+    {
+      "claim": "Silver spot price reached $61.70 per ounce on 2026-06-25, raising the practical impact of the collectibles-rate spread between ETF and physical silver gains.",
+      "value": "$61.70/oz",
+      "source_url": "https://www.kitco.com/price/precious-metals",
+      "source_name": "Kitco (spot price 2026-06-25)"
+    }
+  ]
+}
