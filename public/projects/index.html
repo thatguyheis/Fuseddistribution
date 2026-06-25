@@ -1836,24 +1836,26 @@
           document.getElementById('ts-popup-email').focus();
           return;
         }
-        var btn = document.getElementById('ts-popup-btn');
-        btn.disabled = true;
         fetch('/api/newsletter', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
           },
-          body: JSON.stringify({ email: email, name: name, newsletter: 'tech' })
+          body: JSON.stringify({
+            newsletter: 'tech',
+            name: name,
+            email: email,
+            source: 'projects-popup',
+            website: ''
+          })
         })
           .then(function (res) { if (!res.ok) throw new Error('bad response'); })
           .then(function () {
             subscribeForever();
             showSuccess();
           })
-          .catch(function (err) {
-            console.error('Newsletter signup failed:', err);
-            btn.disabled = false;
-          });
+          .catch(function (err) { console.error('Newsletter subscribe error:', err); });
       });
     })();
   </script>

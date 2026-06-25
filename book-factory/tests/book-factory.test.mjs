@@ -4,8 +4,9 @@ import { cp, mkdtemp, readFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
+import { fileURLToPath } from "node:url";
 
-const repoRoot = "/Users/nick/Documents/New project";
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const scriptPath = path.join(repoRoot, "book-factory/scripts/book-factory.mjs");
 
 async function makeFixture() {

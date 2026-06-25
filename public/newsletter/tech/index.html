@@ -270,9 +270,16 @@
           fetch('/api/newsletter', {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
             },
-            body: JSON.stringify({ email: email, name: name, newsletter: 'tech' })
+            body: JSON.stringify({
+              newsletter: 'tech',
+              name: name,
+              email: email,
+              source: 'tech-newsletter-page',
+              website: ''
+            })
           })
             .then(function (res) {
               if (!res.ok) throw new Error('bad response');
@@ -280,7 +287,7 @@
               document.getElementById('tb-success').style.display = 'block';
             })
             .catch(function (err) {
-              console.error('Newsletter signup failed:', err);
+              console.error('MailerLite subscribe error:', err);
               btn.disabled = false;
             });
         });
