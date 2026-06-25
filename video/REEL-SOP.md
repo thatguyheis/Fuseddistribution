@@ -3,7 +3,7 @@
 ## Overview
 
 One command per blog post produces a finished 1080×1920 MP4 with:
-- Narration via Zoe (Premium) macOS voice
+- Narration via Chatterbox using Nick's local voice reference
 - Subtitles cycling through the spoken text
 - Animated graphics — number counters, chart bars, glowing CTA
 - Background photos: **blog images first, Pexels as fallback**
@@ -27,21 +27,21 @@ To reinstall or update: `npx skills add remotion-dev/skills --global`
 
 **Background photos:** Ken Burns slow zoom (1.0→1.08 scale) applied to every photo over its segment duration. Transform origin rotates per segment index (center → top-left → bottom-right).
 
-### 1. Voice
-Zoe (Premium) must be installed:
-> System Settings → Accessibility → Spoken Content → System Voice → Customize → download **Zoe (Premium)**
+**Hardware media budget:** Use video for the hook only. Use photos for body and question segments. Body clips with the current stock profiles can more than double render time on this Mac; Ken Burns photo motion is the reliable production default.
 
-### 2. Voice (cloned — one-time setup)
+### 1. Voice (cloned, required)
 
-Custom voice uses Coqui XTTS v2 (free, local, no cloud). Auto-activates when `voice-sample/voice-reference.wav` exists.
+Production narration uses Chatterbox locally with `voice-sample/voice-reference.wav`. The renderer defaults to `--voice=chatterbox` and fails clearly if the runtime or sample is unavailable. It never silently changes speakers.
+
+Chatterbox processes all stale segments in one batch and loads the model once per reel. A 3-4 minute reel can spend 15-25 minutes in local synthesis on this Mac before Remotion starts. Quiet output during that batch is normal; progress can be checked by counting `video/public/audio/<slug>/segment-*_tmp.wav` files.
 
 **Record your voice sample:**
 1. Open QuickTime → File → New Audio Recording
 2. Read for 15–20 seconds naturally (see `voice-sample/README.md` for the script)
 3. Export as WAV → save to `video/voice-sample/voice-reference.wav`
-4. Test: `node scripts/test-voice.mjs` (first run downloads ~1.8 GB model)
+4. Test a real segment with `node scripts/generate-audio.mjs --post=<slug> --voice=chatterbox --force`
 
-Until the WAV file exists, renders fall back to macOS Zoe (Premium).
+Zoe is an opt-in recovery voice only: `--voice=zoe`. Use it only with Nick's approval.
 
 ### 3. Pexels API key (enables background photos when no blog image exists)
 Key is stored in `video/.env` (gitignored). Already configured.
@@ -144,11 +144,11 @@ Every reel script produced by an agent must pass this review before render. This
 - [ ] Narration writes "percent" not "%", "USA" not "US"
 - [ ] Every segment has a Text field — no narration-only segments
 - [ ] QUESTION Text is a complete question ending in "?" (parser voices it aloud)
-- [ ] QUESTION segment has Text + Subtext + Narration = "Follow for more silver news."
+- [ ] QUESTION segment has Text + Subtext, and the generated narration speaks the complete question before the follow line
 
 **Content quality**
 - [ ] Hook uses one of the four approved hook formulas (Contradiction / Pain Point / Immediate Value / Contrarian Stat)
-- [ ] Segment count: 8–14 body segments (Long Form default)
+- [ ] Segment count: 8–12 body segments (Long Form default)
 - [ ] Content covers the full blog post arc — not just the top stats
 - [ ] No filler segments — every slide earns its place with a distinct fact or angle
 - [ ] QUESTION CTA type matches post topic (see taxonomy table)
@@ -210,9 +210,9 @@ Long Form covers the full blog post arc. Facebook/Instagram group research shows
 1. Count every stat from reel-data.md. Each stat = one Stat segment.
 2. If reel-data.md has a `## chart`, include a Chart segment — required unless explicitly absent.
 3. Group related numbers together. Never split a stat across two segments.
-4. Plan 8–14 body segments covering every major section of the blog post. If you have fewer than 8, add Overlay segments with supporting context from the blog.
+4. Plan 8–12 body segments covering every major section of the blog post. If the article cannot support 8 distinct segments without filler, block the reel and improve the article source.
 5. **Set segment duration from narration length, not the other way around.** A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
-6. Total duration target: 180–240s. No hard maximum — let content determine length. Never pad with filler.
+6. Total duration must be 180–240s. Never pad with filler or exceed the range in the automated workflow.
 7. Close with a `## QUESTION` segment (not CTA). See §Closing Segment Rules below.
 
 ### Step 3 — Write the reel script
@@ -284,7 +284,7 @@ Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow f
 
 **Timing and sync — subtitles and voice must stay aligned**
 - Segment end time must be ≥ narration end time. The narration plays inside the segment window — if the segment ends before narration finishes, audio gets cut off and subtitles desync.
-- Rule of thumb: 1 sentence ≈ 4–5 seconds at Zoe's pace. Count sentences, multiply, add 2s buffer.
+- Rule of thumb: use `words / 2.5 + 2` seconds as the minimum planning window, then verify against the generated Chatterbox audio.
   - 2 sentences → 10–12s minimum
   - 3 sentences → 14–17s minimum
   - 4 sentences → 18–22s minimum
@@ -294,7 +294,7 @@ Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow f
 - When in doubt, add 3s to your estimate. A reel that breathes is better than one that cuts off.
 
 **Total duration**
-- Long Form: 180–240s. No hard maximum — never rush content. Always the default format.
+- Long Form: 180–240s. This is a hard automated range. Never rush content or pad with filler.
 
 **No em dashes — ever**
 - Never use `—` in any Text: field or Narration. Rewrite with a comma, period, or short new sentence.
@@ -612,7 +612,7 @@ fi
 **Manual checks:**
 - [ ] Hook narration ≤ 12 words, OR segment window ≥ 10s
 - [ ] Every segment has a `Text:` field — no narration-only segments
-- [ ] Segment count is 8-14 body segments (Long Form)
+- [ ] Segment count is 8-12 body segments (Long Form)
 - [ ] Stat Text labels are 5 words or fewer after the number
 - [ ] Chart segment present if `reel-data.md` has a `## chart` section
 - [ ] QUESTION segment has Text + Subtext + Narration — silver posts: "Follow for more silver news." / tech posts: "Follow for more tips to grow your business."
@@ -630,15 +630,7 @@ ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 vi
 
 If output is < 5 MB OR ffprobe shows zero/wrong duration, the render silently failed. Re-run.
 
-**REQUIRED after a successful render — write slug to pipeline tracker:**
-```bash
-# tech post render:
-echo "tech=<slug>" >> /tmp/reel-pipeline-slugs.txt
-# silver post render:
-echo "silver=<slug>" >> /tmp/reel-pipeline-slugs.txt
-```
-
-This file is read by the shell wrapper after Claude exits to verify both MP4s were produced. If the file is missing or a slug entry is absent, the wrapper treats it as a render failure and attempts a direct remotion fallback render. Do not skip this step — it is how the pipeline detects rate-limit-induced aborted runs.
+The source controlled 11 AM worker detects stale renders from the MP4, source modification time, and `render-meta.json`. Do not create or depend on `/tmp` tracker files.
 
 ---
 
@@ -672,13 +664,13 @@ Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music)
 
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing — render aborted"; exit 1; }
-cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3 --voice=chatterbox
 ```
 
 Example (ambient-05):
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
-cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3 --voice=chatterbox
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
@@ -692,7 +684,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 ### Step 5 — Review checklist
 - [ ] Numbers animate and count up correctly
 - [ ] Chart bars fully visible and centered (not cut off)
-- [ ] Subtitles match what Zoe is saying and stay in sync throughout
+- [ ] Subtitles match the Chatterbox narration and stay in sync throughout
 - [ ] No narration gets cut off — audio completes before the segment ends
 - [ ] No segment feels rushed — voice, subtitle, and slide all finish together
 - [ ] Background photos visible on all segments (not dark/black frames)
@@ -712,7 +704,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 **Commit reel files (metadata only — no mp4):**
 ```bash
 git add public/blog/<slug>/reel-data.md public/blog/<slug>/reel-script.md public/blog/topic-history.md
-git add video/out/<slug>/script.json video/out/<slug>/render-meta.json video/out/<slug>/captions.json
+git add video/out/<slug>/script.json video/out/<slug>/render-meta.json video/out/<slug>/captions.json video/out/<slug>/captions-meta.json
 git commit -m "feat(reel): [Post Title]"
 git push origin main
 ```
@@ -873,15 +865,15 @@ Video clips play at 0.75x speed for a cinematic slow-motion feel. They loop if t
 | Step | Script | Output |
 |------|--------|--------|
 | 1. Parse script | `parse-script.mjs` | `out/<slug>/script.json` |
-| 2. Narration audio | `generate-audio.mjs` | `public/audio/<slug>/segment-N.m4a` |
-| 3. Background photos | `fetch-photos.mjs` | `public/photos/<slug>/segment-N.jpg` + `out/<slug>/photos.json` |
-| 4. Render video | Remotion | `out/<slug>/<slug>.mp4` |
-| 5. Log feedback | `feedback.mjs` | `data/performance.json` + `data/performance-report.md` |
+| 2. Narration audio | `generate-audio.mjs --voice=chatterbox` | `public/audio/<slug>/segment-N.m4a` + cache manifest |
+| 3. Background media | `fetch-media.mjs` | `public/photos/<slug>/` + media map |
+| 4. Captions | `generate-captions.mjs` | `captions.json` + `captions-meta.json` |
+| 5. Render video | Remotion | `out/<slug>/<slug>.mp4` + verified `render-meta.json` |
 
 Re-run any step individually:
 ```bash
 node video/scripts/parse-script.mjs --post=<slug>
-node video/scripts/generate-audio.mjs --post=<slug>
+node video/scripts/generate-audio.mjs --post=<slug> --voice=chatterbox
 # Steps using external APIs require .env:
 [ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
 cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --post=<slug>
@@ -898,7 +890,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Text | `#ffffff` white / `#afc6cf` muted |
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 1080×1920 portrait @ 30fps |
-| Voice | Zoe (Premium) via macOS `say` |
+| Voice | Chatterbox using Nick's local voice reference |
 | Music | Ambient MP3 at 15% volume |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio, staticFile } from 'remotion';
+import { AbsoluteFill, Audio, staticFile, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming, springTiming } from '@remotion/transitions';
 import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
@@ -14,6 +14,11 @@ import { CTACard } from '../components/CTACard';
 import { QuestionCard } from '../components/QuestionCard';
 import { Subtitle } from '../components/Subtitle';
 import type { ReelScript, Segment, CaptionChunk, MediaEntry } from '../types';
+import {
+  compositionFramesForSegments,
+  totalTransitionFrames as sumTransitionFrames,
+  transitionDurationFrames,
+} from '../../scripts/transition-timing.mjs';
 
 type MediaMap = Record<number, MediaEntry>;
 
@@ -39,27 +44,28 @@ type TransitionChoice = {
 };
 
 function transitionSpec(currentType: string, nextType: string, index: number): TransitionChoice {
-  const lin = (f: number) => ({ timing: linearTiming({ durationInFrames: f }), durationInFrames: f });
-  const spr = (f: number) => ({ timing: springTiming({ durationInFrames: f, config: { damping: 200 } }), durationInFrames: f });
+  const durationInFrames = transitionDurationFrames(currentType, nextType, index);
+  const lin = () => ({ timing: linearTiming({ durationInFrames }), durationInFrames });
+  const spr = () => ({ timing: springTiming({ durationInFrames, config: { damping: 200 } }), durationInFrames });
   if (nextType === 'cta' || nextType === 'question') {
-    return { presentation: fade(), ...lin(16) };
+    return { presentation: fade(), ...lin() };
   }
   if (currentType === 'hook') {
-    return { presentation: slide({ direction: 'from-bottom' }), ...spr(18) };
+    return { presentation: slide({ direction: 'from-bottom' }), ...spr() };
   }
   if (currentType === 'stat' && nextType === 'chart') {
-    return { presentation: fade(), ...lin(14) };
+    return { presentation: fade(), ...lin() };
   }
   if (currentType === 'chart') {
-    return { presentation: wipe({ direction: 'from-left' }), ...spr(16) };
+    return { presentation: wipe({ direction: 'from-left' }), ...spr() };
   }
   // stat -> stat (and any other body-to-body): rotate variants so repeated
   // segments don't all use the same move (fixes monotonous transitions).
   const variants = [
-    { presentation: slide({ direction: 'from-bottom' }), ...spr(16) },
-    { presentation: slide({ direction: 'from-right' }), ...spr(16) },
-    { presentation: wipe({ direction: 'from-left' }), ...spr(18) },
-    { presentation: fade(), ...lin(15) },
+    { presentation: slide({ direction: 'from-bottom' }), ...spr() },
+    { presentation: slide({ direction: 'from-right' }), ...spr() },
+    { presentation: wipe({ direction: 'from-left' }), ...spr() },
+    { presentation: fade(), ...lin() },
   ];
   return variants[index % variants.length];
 }
@@ -68,18 +74,12 @@ function transitionSpec(currentType: string, nextType: string, index: number): T
 // length must subtract these, otherwise Remotion renders a frozen tail after the
 // last segment (sum of sequences > actual TransitionSeries timeline).
 export function totalTransitionFrames(segments: Segment[]): number {
-  let total = 0;
-  for (let i = 0; i < segments.length - 1; i++) {
-    total += transitionSpec(segments[i].type, segments[i + 1].type, i).durationInFrames;
-  }
-  return total;
+  return sumTransitionFrames(segments);
 }
 
 // Exact rendered length = sum of sequence frames minus overlapped transition frames.
 export function compositionFrames(script: { segments: Segment[] }): number {
-  const seqFrames = script.segments.reduce(
-    (sum, s) => sum + secsToFrames(s.endSec - s.startSec), 0);
-  return Math.max(1, seqFrames - totalTransitionFrames(script.segments));
+  return compositionFramesForSegments(script.segments, BRAND.fps);
 }
 
 type CaptionMap = Record<number, CaptionChunk[]>;
@@ -89,8 +89,9 @@ export const BlogReel: React.FC<{
   musicTrack?: string;
   media?: MediaMap;
   captions?: CaptionMap;
-}> = ({ script, musicTrack = 'ambient-01.mp3', media = {}, captions = {} }) => (
-  <AbsoluteFill style={{ background: BRAND.bg }}>
+}> = ({ script, musicTrack = 'ambient-01.mp3', media = {}, captions = {} }) => {
+  const {fps} = useVideoConfig();
+  return <AbsoluteFill style={{ background: BRAND.bg }}>
     <Audio src={staticFile(`music/${musicTrack}`)} volume={0.15} loop />
     <TransitionSeries>
       {script.segments.map((segment, i) => {
@@ -99,7 +100,7 @@ export const BlogReel: React.FC<{
         const transition = nextSegment ? transitionSpec(segment.type, nextSegment.type, i) : null;
         return (
           <React.Fragment key={i}>
-            <TransitionSeries.Sequence durationInFrames={durationInFrames}>
+            <TransitionSeries.Sequence durationInFrames={durationInFrames} premountFor={fps}>
               <AbsoluteFill>
                 {segment.narration && (
                   <Audio src={staticFile(`audio/${script.slug}/segment-${i}.m4a`)} />
@@ -118,5 +119,5 @@ export const BlogReel: React.FC<{
         );
       })}
     </TransitionSeries>
-  </AbsoluteFill>
-);
+  </AbsoluteFill>;
+};

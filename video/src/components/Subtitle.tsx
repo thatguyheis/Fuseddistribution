@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { BRAND } from '../brand';
 import { POPPINS } from '../fonts';
 import type { CaptionChunk } from '../types';
+import { FittedText } from './FittedText';
 
 function splitSentences(text: string): string[] {
   const raw = text.match(/[^.!?]+[.!?]+/g) ?? [text];
@@ -94,21 +95,23 @@ export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[] }
       opacity,
       textAlign: 'center',
     }}>
-      <span style={{
-        fontFamily: POPPINS,
-        fontSize: 28,
-        fontWeight: 600,
-        color: BRAND.white,
-        lineHeight: 1.5,
-        textShadow: '0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)',
-        background: 'rgba(4,16,24,0.6)',
-        padding: '10px 24px',
-        borderRadius: 10,
-        display: 'inline-block',
-        maxWidth: '94%',
-      }}>
-        {sentence}
-      </span>
+      <FittedText
+        text={sentence}
+        fontFamily={POPPINS}
+        fontWeight={600}
+        maxFontSize={28}
+        maxLines={3}
+        maxWidth={920}
+        lineHeight={1.5}
+        color={BRAND.white}
+        textShadow="0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)"
+        style={{
+          background: 'rgba(4,16,24,0.6)',
+          padding: '10px 24px',
+          borderRadius: 10,
+          display: 'inline-block',
+        }}
+      />
     </div>
   );
 };

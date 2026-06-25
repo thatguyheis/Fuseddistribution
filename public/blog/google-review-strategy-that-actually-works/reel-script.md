@@ -1,77 +1,96 @@
 # Reel Script: google-review-strategy-that-actually-works
 format: long-form
-segments: 8
+segments: 10
+target-duration: 193s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 8s minimum (15 words / 2.5 + 2)
+**Duration:** 6s minimum
 
-Narration: Get 20 reviews to unlock massive revenue growth. Getting more Google reviews is not complicated.
-
----
-
-## STAT: 97% READ ONLINE REVIEWS
-
-**Visual:** Supporting graphic
-**Duration:** 15s minimum (31 words / 2.5 + 2)
-
-Narration: 97 percent of consumers read online reviews when making local business decisions, and 41 percent say they always read reviews before choosing a business, up sharply from 29 percent in 2025.
+Narration: Get 20 reviews to unlock massive revenue growth.
 
 ---
 
-## STAT: NEARLY ALL CHECK REVIEWS
+## OVERLAY: GETTING MORE GOOGLE REVIEWS IS
 
-**Visual:** Supporting graphic
-**Duration:** 10s minimum (20 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
 
-Narration: (Source: BrightLocal Local Consumer Review Survey 2026) That means nearly every person searching for your service is checking your reviews.
-
----
-
-## STAT: 68% WANT 4 STARS MINIMUM
-
-**Visual:** Supporting graphic
-**Duration:** 12s minimum (24 words / 2.5 + 2)
-
-Narration: 68 percent of consumers require at least a 4-star rating before they will use a business, and 31 percent require 4.5 stars or higher.
+Narration: Getting more Google reviews is not complicated. They wait for reviews to trickle in naturally, glance at their rating once in a while, and wonder why the phone isn't ringing. The businesses showing up at the top of local search aren't lucky.
 
 ---
 
-## STAT: UNDER 4 STARS LOSES SALES
+## STAT: 68% OF CONSUMERS REQUIRE AT LEAST
 
-**Visual:** Supporting graphic
-**Duration:** 17s minimum (36 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
 
-Narration: (Source: BrightLocal Local Consumer Review Survey 2026) If you're sitting at 3.8 stars with 11 reviews, a significant share of the people searching for you are quietly ruling you out before they ever click your name.
-
----
-
-## STAT: 1 STAR LIFTS REVENUE 9%
-
-**Visual:** Supporting graphic
-**Duration:** 16s minimum (35 words / 2.5 + 2)
-
-Narration: A Harvard Business School study found that a one-star increase in a Yelp rating leads to a 5 to 9 percent revenue increase, driven mostly by independent businesses where online reputation substitutes for brand familiarity.
+Narration: The question is whether what they find sends them to you or to your competitor down the street. The bar is higher than most owners realize. 68 percent of consumers require at least a 4-star rating before they will use a business, and 31 percent require 4.5 stars or higher.
 
 ---
 
-## STAT: 47% SKIP UNDER 20 REVIEWS
+## OVERLAY: THE FASTEST WAY TO CLOSE
 
-**Visual:** Supporting graphic
-**Duration:** 8s minimum (15 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
 
-Narration: 47 percent of consumers will not use a business that has fewer than 20 reviews.
+Narration: The fastest way to close that gap is to go through your last six months of completed jobs and contact every customer you didn't already hear from. Send each one a direct link to your Google review page with a short message like this: "Hi there, thanks again for the work.
+
+---
+
+## STAT: 20 REVIEWS IS ONLY HALF THE
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: Run it through a free link shortener like bit.ly so you have a clean, short link to paste into texts. Getting to 20 reviews is only half the problem. 74 percent of consumers only trust reviews written within the last three months, and 32 percent want reviews no older than two weeks.
+
+---
+
+## OVERLAY: GIVE THEM THE MESSAGE TEMPLATE
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Give them the message template and the short link. Track it in a simple spreadsheet: customer name, job date, request sent, review received. If requests are going out but reviews aren't coming back, your message or timing needs to change. Most business owners skip the ask because it feels awkward.
+
+---
+
+## OVERLAY: ADD ONE LINE AT THE
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: Add one line at the bottom: "Happy with the work? Leave us a review on Google." Link it if the invoice is digital. Customers reading their receipt are already thinking about the experience. This is the highest-converting moment because the job is still top of mind and they haven't moved on yet.
+
+---
+
+## OVERLAY: DON'T ARGUE DON'T DENY AND
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: Don't argue, don't deny, and don't post personal details. A thoughtful response to a bad review often wins over skeptical readers better than a wall of five-star ratings, because it shows you're a real business that takes accountability. A one-time push will spike your reviews for a month and then stall.
+
+---
+
+## OVERLAY: BUILD REVIEW REQUESTS INTO EVERY
+
+**Visual:** Supporting article visual
+**Duration:** 24s minimum
+
+Narration: Build review requests into every job close, not just the good ones. Even customers who had a minor hiccup but got it resolved are often your best reviewers. If you want your Google Business Profile set up correctly and a review system that runs without constant attention, that's exactly what we build for local businesses.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 6s minimum (8 words / 2.5 + 2)
+**Duration:** 8s minimum
 
-Text: READY FOR MORE GOOGLE REVIEWS?
+Text: Ready to turn your Google reviews into real revenue?
 Subtext: COMMENT BELOW
-Narration: Follow for more tips to grow your business.
+Narration: Ready to turn your Google reviews into real revenue? Follow for more practical business tips.

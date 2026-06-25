@@ -1,63 +1,77 @@
 {
   "slug": "google-review-strategy-that-actually-works",
   "title": "google-review-strategy-that-actually-works",
-  "totalDuration": 94,
+  "totalDuration": 193,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 8,
+      "endSec": 6,
       "text": "Get 20 reviews to unlock massive revenue growth.",
-      "narration": "Get 20 reviews to unlock massive revenue growth. Getting more Google reviews is not complicated."
+      "narration": "Get 20 reviews to unlock massive revenue growth."
+    },
+    {
+      "type": "overlay",
+      "startSec": 6,
+      "endSec": 25,
+      "text": "GETTING MORE GOOGLE REVIEWS IS",
+      "narration": "Getting more Google reviews is not complicated. They wait for reviews to trickle in naturally, glance at their rating once in a while, and wonder why the phone isn't ringing. The businesses showing up at the top of local search aren't lucky."
     },
     {
       "type": "stat",
-      "startSec": 8,
-      "endSec": 23,
-      "text": "97% READ ONLINE REVIEWS",
-      "narration": "97 percent of consumers read online reviews when making local business decisions, and 41 percent say they always read reviews before choosing a business, up sharply from 29 percent in 2025."
+      "startSec": 25,
+      "endSec": 47,
+      "text": "68% OF CONSUMERS REQUIRE AT LEAST",
+      "narration": "The question is whether what they find sends them to you or to your competitor down the street. The bar is higher than most owners realize. 68 percent of consumers require at least a 4-star rating before they will use a business, and 31 percent require 4.5 stars or higher."
+    },
+    {
+      "type": "overlay",
+      "startSec": 47,
+      "endSec": 70,
+      "text": "THE FASTEST WAY TO CLOSE",
+      "narration": "The fastest way to close that gap is to go through your last six months of completed jobs and contact every customer you didn't already hear from. Send each one a direct link to your Google review page with a short message like this: \"Hi there, thanks again for the work."
     },
     {
       "type": "stat",
-      "startSec": 23,
-      "endSec": 33,
-      "text": "NEARLY ALL CHECK REVIEWS",
-      "narration": "(Source: BrightLocal Local Consumer Review Survey 2026) That means nearly every person searching for your service is checking your reviews."
+      "startSec": 70,
+      "endSec": 93,
+      "text": "20 REVIEWS IS ONLY HALF THE",
+      "narration": "Run it through a free link shortener like bit.ly so you have a clean, short link to paste into texts. Getting to 20 reviews is only half the problem. 74 percent of consumers only trust reviews written within the last three months, and 32 percent want reviews no older than two weeks."
     },
     {
-      "type": "stat",
-      "startSec": 33,
-      "endSec": 45,
-      "text": "68% WANT 4 STARS MINIMUM",
-      "narration": "68 percent of consumers require at least a 4-star rating before they will use a business, and 31 percent require 4.5 stars or higher."
+      "type": "overlay",
+      "startSec": 93,
+      "endSec": 115,
+      "text": "GIVE THEM THE MESSAGE TEMPLATE",
+      "narration": "Give them the message template and the short link. Track it in a simple spreadsheet: customer name, job date, request sent, review received. If requests are going out but reviews aren't coming back, your message or timing needs to change. Most business owners skip the ask because it feels awkward."
     },
     {
-      "type": "stat",
-      "startSec": 45,
-      "endSec": 62,
-      "text": "UNDER 4 STARS LOSES SALES",
-      "narration": "(Source: BrightLocal Local Consumer Review Survey 2026) If you're sitting at 3.8 stars with 11 reviews, a significant share of the people searching for you are quietly ruling you out before they ever click your name."
+      "type": "overlay",
+      "startSec": 115,
+      "endSec": 138,
+      "text": "ADD ONE LINE AT THE",
+      "narration": "Add one line at the bottom: \"Happy with the work? Leave us a review on Google.\" Link it if the invoice is digital. Customers reading their receipt are already thinking about the experience. This is the highest-converting moment because the job is still top of mind and they haven't moved on yet."
     },
     {
-      "type": "stat",
-      "startSec": 62,
-      "endSec": 78,
-      "text": "1 STAR LIFTS REVENUE 9%",
-      "narration": "A Harvard Business School study found that a one-star increase in a Yelp rating leads to a 5 to 9 percent revenue increase, driven mostly by independent businesses where online reputation substitutes for brand familiarity."
+      "type": "overlay",
+      "startSec": 138,
+      "endSec": 161,
+      "text": "DON'T ARGUE DON'T DENY AND",
+      "narration": "Don't argue, don't deny, and don't post personal details. A thoughtful response to a bad review often wins over skeptical readers better than a wall of five-star ratings, because it shows you're a real business that takes accountability. A one-time push will spike your reviews for a month and then stall."
     },
     {
-      "type": "stat",
-      "startSec": 78,
-      "endSec": 86,
-      "text": "47% SKIP UNDER 20 REVIEWS",
-      "narration": "47 percent of consumers will not use a business that has fewer than 20 reviews."
+      "type": "overlay",
+      "startSec": 161,
+      "endSec": 185,
+      "text": "BUILD REVIEW REQUESTS INTO EVERY",
+      "narration": "Build review requests into every job close, not just the good ones. Even customers who had a minor hiccup but got it resolved are often your best reviewers. If you want your Google Business Profile set up correctly and a review system that runs without constant attention, that's exactly what we build for local businesses."
     },
     {
       "type": "question",
-      "startSec": 86,
-      "endSec": 94,
-      "text": "READY FOR MORE GOOGLE REVIEWS?",
-      "narration": "READY FOR MORE GOOGLE REVIEWS? Follow for more tips to grow your business.",
+      "startSec": 185,
+      "endSec": 193,
+      "text": "Ready to turn your Google reviews into real revenue?",
+      "narration": "Ready to turn your Google reviews into real revenue? Follow for more practical business tips.",
       "subtext": "COMMENT BELOW"
     }
   ]

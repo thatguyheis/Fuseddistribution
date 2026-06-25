@@ -56,7 +56,7 @@ Before reporting success:
 
 ## Resource And Safety Rules
 
-- Default automated voice is macOS Zoe. Use Chatterbox only for an explicitly requested premium/manual render.
+- Default automated voice is Chatterbox using Nick's local voice reference. Pass `--voice=chatterbox` explicitly. Zoe is an opt-in recovery voice only when Nick approves it.
 - Optional Claude creative stages must never block the core blog publish path.
 - Never put credentials in tracked files, prompts, logs, launchd plists, or generated content.
 - Never publish QA-failed artifacts. Preserve them outside `public/` in `.workflow-blocked/`.

@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
 import { MediaBg } from './MediaBg';
+import { FittedText } from './FittedText';
 import type { CTASegment, MediaEntry } from '../types';
 
 export const CTACard: React.FC<{
@@ -46,23 +47,30 @@ export const CTACard: React.FC<{
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20,
         backdropFilter: 'blur(2px)',
       }}>
-        <p style={{
-          fontFamily: BEBAS,
-          fontSize: 88, color: BRAND.white, textTransform: 'uppercase',
-          letterSpacing: '0.02em', lineHeight: 1.1, textAlign: 'center',
-          margin: 0, textShadow: '0 4px 24px rgba(0,0,0,0.8)',
-        }}>
-          {mainText}
-        </p>
+        <FittedText
+          text={mainText}
+          fontFamily={BEBAS}
+          maxFontSize={88}
+          maxLines={4}
+          maxWidth={820}
+          letterSpacing="0.02em"
+          lineHeight={1.1}
+          color={BRAND.white}
+          textTransform="uppercase"
+          textShadow="0 4px 24px rgba(0,0,0,0.8)"
+        />
         {subText && (
-          <p style={{
-            fontFamily: BEBAS,
-            fontSize: 54, color: BRAND.cyan, textTransform: 'uppercase',
-            letterSpacing: '0.06em', textAlign: 'center', margin: 0,
-            textShadow: `0 0 20px ${BRAND.cyan}88`,
-          }}>
-            {subText}
-          </p>
+          <FittedText
+            text={subText}
+            fontFamily={BEBAS}
+            maxFontSize={54}
+            maxLines={2}
+            maxWidth={780}
+            letterSpacing="0.06em"
+            color={BRAND.cyan}
+            textTransform="uppercase"
+            textShadow={`0 0 20px ${BRAND.cyan}88`}
+          />
         )}
       </div>
     </div>

@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
 import { MediaBg } from './MediaBg';
+import { FittedText } from './FittedText';
 import type { QuestionSegment, MediaEntry } from '../types';
 
 export const QuestionCard: React.FC<{
@@ -54,34 +55,30 @@ export const QuestionCard: React.FC<{
         }}>
           ?
         </p>
-        <p style={{
-          fontFamily: BEBAS,
-          fontSize: 82,
-          color: BRAND.white,
-          textTransform: 'uppercase',
-          letterSpacing: '0.02em',
-          lineHeight: 1.15,
-          textAlign: 'center',
-          margin: 0,
-          textShadow: '0 4px 24px rgba(0,0,0,0.9)',
-          maxWidth: 900,
-        }}>
-          {segment.text}
-        </p>
+        <FittedText
+          text={segment.text}
+          fontFamily={BEBAS}
+          maxFontSize={82}
+          maxLines={4}
+          maxWidth={900}
+          letterSpacing="0.02em"
+          lineHeight={1.15}
+          color={BRAND.white}
+          textTransform="uppercase"
+          textShadow="0 4px 24px rgba(0,0,0,0.9)"
+        />
         {segment.subtext && (
-          <p style={{
-            fontFamily: BEBAS,
-            fontSize: 52,
-            color: BRAND.cyan,
-            textTransform: 'uppercase',
-            letterSpacing: '0.08em',
-            textAlign: 'center',
-            margin: 0,
-            textShadow: `0 0 24px ${BRAND.cyan}88`,
-            maxWidth: 860,
-          }}>
-            {segment.subtext}
-          </p>
+          <FittedText
+            text={segment.subtext}
+            fontFamily={BEBAS}
+            maxFontSize={52}
+            maxLines={2}
+            maxWidth={860}
+            letterSpacing="0.08em"
+            color={BRAND.cyan}
+            textTransform="uppercase"
+            textShadow={`0 0 24px ${BRAND.cyan}88`}
+          />
         )}
       </div>
     </div>

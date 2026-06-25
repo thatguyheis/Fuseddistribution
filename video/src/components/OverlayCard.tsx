@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
 import { MediaBg } from './MediaBg';
+import { FittedText } from './FittedText';
 import type { OverlaySegment, MediaEntry } from '../types';
 
 const CountUp: React.FC<{ target: number; suffix: string; countFrames: number }> = ({
@@ -58,24 +59,32 @@ export const OverlayCard: React.FC<{
             }}>
               <CountUp target={parsed.number} suffix={parsed.suffix} countFrames={countFrames} />
             </p>
-            <p style={{
-              fontFamily: BEBAS,
-              fontSize: 56, color: BRAND.white, textTransform: 'uppercase',
-              letterSpacing: '0.04em', lineHeight: 1.2, margin: 0, textAlign: 'center',
-              textShadow: '0 2px 16px rgba(0,0,0,0.8)',
-            }}>
-              {parsed.rest || parsed.prefix}
-            </p>
+            <FittedText
+              text={parsed.rest || parsed.prefix}
+              fontFamily={BEBAS}
+              maxFontSize={56}
+              maxLines={3}
+              maxWidth={900}
+              letterSpacing="0.04em"
+              lineHeight={1.2}
+              color={BRAND.white}
+              textTransform="uppercase"
+              textShadow="0 2px 16px rgba(0,0,0,0.8)"
+            />
           </>
         ) : (
-          <p style={{
-            fontFamily: BEBAS,
-            fontSize: 96, color: BRAND.cyan, textTransform: 'uppercase',
-            letterSpacing: '0.02em', lineHeight: 1.15, textAlign: 'center', margin: 0,
-            textShadow: `0 0 40px ${BRAND.cyan}66`,
-          }}>
-            {segment.text}
-          </p>
+          <FittedText
+            text={segment.text}
+            fontFamily={BEBAS}
+            maxFontSize={96}
+            maxLines={4}
+            maxWidth={920}
+            letterSpacing="0.02em"
+            lineHeight={1.15}
+            color={BRAND.cyan}
+            textTransform="uppercase"
+            textShadow={`0 0 40px ${BRAND.cyan}66`}
+          />
         )}
       </div>
     </div>

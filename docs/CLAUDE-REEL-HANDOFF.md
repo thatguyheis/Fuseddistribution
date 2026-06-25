@@ -23,6 +23,7 @@ Active standard:
 - End with a QUESTION segment with readable Text, Subtext, and pillar-correct follow narration.
 - Use frame-driven Remotion animation only. No CSS animations, transitions, or Tailwind animation classes.
 - Use @remotion/layout-utils for variable text. Text must fit at 1080x1920 without clipping or overlap.
+- Use Chatterbox with Nick's cloned voice. Do not substitute Zoe unless Nick explicitly approves the recovery path.
 
 Required execution:
 1. Audit reel-script.md against reel-data.md and the approved blog.
@@ -31,10 +32,10 @@ Required execution:
 4. Run node scripts/validate-reel.mjs --script=out/<slug>/script.json.
 5. Fix source content until validation passes. Never weaken the validator.
 6. Source video/.env without printing secrets.
-7. Choose ambient-02.mp3 through ambient-10.mp3 and run node scripts/render.mjs --post=<slug> --music=<track>.
+7. Choose ambient-02.mp3 through ambient-10.mp3 and run node scripts/render.mjs --post=<slug> --music=<track> --voice=chatterbox.
 8. Verify the output with ls -lh and ffprobe.
 9. Inspect hook, body/stat, chart, and question frames for clipping, overlap, black frames, and poor crops.
 10. Check subtitle/audio sync at three points.
 
-Do not claim success until commands complete. Report the output path, duration, test result, validator result, visual QA, caption QA, and unresolved warnings.
+Do not push during the first pass. Commit the reviewed changes locally so Nick can approve the push. Do not claim success until commands complete. Report the output path, duration, voice, caption mode, test result, validator result, visual QA, and unresolved warnings.
 ```

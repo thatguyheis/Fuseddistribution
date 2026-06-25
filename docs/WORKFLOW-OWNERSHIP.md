@@ -30,10 +30,19 @@ Remotion is a downstream renderer. It should run only after blog assets, reel da
 4. Use AI image generation selectively for hook slides, thumbnails, hero visuals, and ad creatives where stock assets are weak.
 5. Keep the workflow simple enough to run daily on the MacBook without babysitting.
 
+## Current Production Standard
+
+- The 9 AM job builds, validates, publishes, and deploys approved blog posts. It does not render video.
+- The 11 AM job renders at most two stale registered reels per run and commits metadata locally for Claude review.
+- A global render lock prevents launchd, Claude, and Codex from starting concurrent Remotion jobs on the Mac.
+- Chatterbox with Nick's voice reference is the required production voice. Zoe is opt-in recovery only.
+- Remotion variable text uses measured fitting. Script validation blocks missing or mismatched stat figures.
+- Audio cache entries are keyed by narration and voice so changed scripts cannot reuse stale speech.
+- Chatterbox loads once per reel and generates stale segments as a batch to reduce MPS startup overhead.
+- Caption metadata records `whisper`, `proportional`, `mixed`, or `none`; proportional captions are not described as Whisper verified.
+
 ## Near-Term Backlog
 
-- Rotate exposed API tokens and remove secrets from launchd plists.
-- Add text fitting to Remotion cards with measured font sizing.
-- Add `--voice=zoe|chatterbox` so automation defaults to reliable Zoe and Chatterbox becomes a premium/manual render path.
-- Add one-frame still checks for hook, mid-stat, chart, and question frames before full render.
-- Add AI-generated hook/thumbnail assets as an optional fallback when Pexels/Pixabay media is weak.
+- Rotate the deployment token that was previously stored in a launchd plist.
+- Add one-frame still checks for hook, mid-body, chart, and question frames before full render.
+- Add AI-generated hook and thumbnail assets as an optional fallback when licensed stock media is weak.

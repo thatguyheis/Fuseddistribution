@@ -4,6 +4,7 @@ import { BRAND } from '../brand';
 import { BEBAS, POPPINS } from '../fonts';
 import { MediaBg } from './MediaBg';
 import { InlineGraphic } from './InlineGraphic';
+import { FittedText } from './FittedText';
 import type { StatSegment, MediaEntry } from '../types';
 
 const CountUp: React.FC<{ target: number; suffix: string; countFrames: number }> = ({
@@ -63,27 +64,32 @@ export const StatCard: React.FC<{
               <CountUp target={parsed.number} suffix={parsed.suffix} countFrames={countFrames} />
             </p>
             {parsed.rest && (
-              <p style={{
-                fontFamily: BEBAS,
-                fontSize: hasGraphic ? 46 : 56,
-                color: BRAND.white, textTransform: 'uppercase',
-                letterSpacing: '0.04em', lineHeight: 1.2, margin: 0, textAlign: 'center',
-                textShadow: '0 2px 16px rgba(0,0,0,0.8)',
-              }}>
-                {parsed.rest}
-              </p>
+              <FittedText
+                text={parsed.rest}
+                fontFamily={BEBAS}
+                maxFontSize={hasGraphic ? 46 : 56}
+                maxLines={3}
+                maxWidth={900}
+                letterSpacing="0.04em"
+                lineHeight={1.2}
+                color={BRAND.white}
+                textTransform="uppercase"
+                textShadow="0 2px 16px rgba(0,0,0,0.8)"
+              />
             )}
           </>
         ) : (
-          <p style={{
-            fontFamily: BEBAS,
-            fontSize: hasGraphic ? 64 : 80,
-            color: BRAND.white, textAlign: 'center',
-            textTransform: 'uppercase', letterSpacing: '0.02em',
-            lineHeight: 1.2, margin: 0,
-          }}>
-            {segment.text}
-          </p>
+          <FittedText
+            text={segment.text}
+            fontFamily={BEBAS}
+            maxFontSize={hasGraphic ? 64 : 80}
+            maxLines={4}
+            maxWidth={900}
+            letterSpacing="0.02em"
+            lineHeight={1.2}
+            color={BRAND.white}
+            textTransform="uppercase"
+          />
         )}
 
         {segment.explanation && (

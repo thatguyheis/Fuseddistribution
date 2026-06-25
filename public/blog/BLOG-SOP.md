@@ -45,7 +45,7 @@ echo $PEXELS_API_KEY
   ```
 - [ ] Run: `node public/blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
 - [ ] Write `reel-data.md` (§11) — all stats, chart if present, question, media_queries
-- [ ] Write `reel-script.md` (REEL-SOP §3) — Long Form, 8-14 segments, QUESTION close, timing validated
+- [ ] Run `public/blog/scripts/build-reel.sh [slug] --brand=silver|tech --keyword="..."` to write `reel-data.md` and `reel-script.md (Long Form, 8-12 body segments, QUESTION close, 180-240s)
 - [ ] Write `photo-post.svg` (§15 — 1200×1200 canvas)
 - [ ] Generate `photo-post.jpg`:
   ```bash
@@ -468,7 +468,7 @@ Lowercase, hyphens only. Short and descriptive. No dates. Example: `how-to-set-u
 ## 11. reel-data.md
 
 **Required.** Create this file before git commit. The reel renderer reads it — never re-reads index.html.
-Contains **one long-form section** covering the full blog post arc (180–240s, 8–14 body segments).
+Contains **one long-form section** covering the full blog post arc (180–240s, 8–12 body segments).
 
 > **Short-form (3-reel) format** is documented in `video/REEL-SOP-SHORTFORM.md` for reference only. Do not use it unless explicitly instructed.
 
@@ -821,7 +821,7 @@ Symptom: `Failed to automatically retrieve account IDs` / `Authentication error 
 5. `account_id` is pinned in `wrangler.jsonc` so account lookup can't block deploys.
 
 ### Pipeline blocker policy
-When the 9 AM pipeline hits a blocker (push rejected, deploy auth, render fail):
+When the 9 AM pipeline hits a blocker (push rejected, deploy auth, blog QA fail):
 1. Attempt automated recovery first (this section + render log review).
 2. If recovery requires Nick (browser auth, force push, secret rotation): log exact one-line instruction to `~/Library/Logs/daily-blog-reel.log` and stop that step only — continue all steps that don't depend on it.
 3. Never leave posts in "committed but not deployed" state silently — the log must state which slugs are NOT live.

@@ -20,7 +20,8 @@ function generateReport(records) {
   const byHook = {}, byDur = { '0-30s': [], '30-60s': [], '60s+': [] }, byMusic = {}, byPlatform = {};
   for (const r of records) {
     (byHook[r.hookType] ??= []).push(r.views);
-    (r.totalDuration <= 30 ? byDur['0-30s'] : r.totalDuration <= 60 ? byDur['30-60s'] : byDur['60s+']).push(r.views);
+    const duration = r.renderedDuration ?? r.totalDuration;
+    (duration <= 30 ? byDur['0-30s'] : duration <= 60 ? byDur['30-60s'] : byDur['60s+']).push(r.views);
     (byMusic[r.musicTrack] ??= []).push(r.views);
     (byPlatform[r.platform] ??= []).push(r.views);
   }
@@ -69,7 +70,9 @@ async function run() {
     shares: parseInt(shares ?? '0', 10), comments: parseInt(comments ?? '0', 10),
     watchTimePct: watchtime ? parseInt(watchtime, 10) : null,
     hookType: meta.hookType, segmentCount: meta.segmentCount,
-    totalDuration: meta.totalDuration, musicTrack: meta.musicTrack,
+    totalDuration: meta.renderedDuration ?? meta.totalDuration ?? meta.scriptDuration,
+    renderedDuration: meta.renderedDuration,
+    musicTrack: meta.musicTrack,
   };
 
   const records = JSON.parse(readFileSync(dataPath, 'utf8'));

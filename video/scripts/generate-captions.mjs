@@ -60,7 +60,7 @@ function splitIntoChunks(text, maxChars = 100) {
   const sentences = text.match(/[^.!?]+[.!?]*/g) ?? [text];
   const chunks = [];
   for (const s of sentences) {
-    const trimmed = s.trim();
+    const trimmed = s.trim().replace(/^["']+|["']+$/g, '').trim();
     if (!trimmed) continue;
     if (trimmed.length <= maxChars) {
       chunks.push(trimmed);
@@ -100,7 +100,7 @@ function proportionalFallback(narration, actualDuration) {
 
 export async function generateCaptions(slug) {
   const scriptPath = join(ROOT, 'out', slug, 'script.json');
-  if (!existsSync(scriptPath)) return {};
+  if (!existsSync(scriptPath)) return {captions: {}, meta: {mode: 'none', whisperSegments: 0, proportionalSegments: 0}};
 
   const script = JSON.parse(readFileSync(scriptPath, 'utf8'));
   const audioDir = join(ROOT, 'public/audio', slug);
@@ -108,13 +108,21 @@ export async function generateCaptions(slug) {
   mkdirSync(outDir, { recursive: true });
 
   const captions = {};
+  const whisperAvailable = existsSync(WHISPER_MAIN) && existsSync(WHISPER_MODEL);
+  let whisperSegments = 0;
+  let proportionalSegments = 0;
+  let missingAudioSegments = 0;
+
+  if (!whisperAvailable) {
+    console.warn('  ⚠  whisper runtime/model unavailable — captions will use proportional timing');
+  }
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
     if (!seg.narration) continue;
 
     const m4aPath = join(audioDir, `segment-${i}.m4a`);
-    if (!existsSync(m4aPath)) continue;
+    if (!existsSync(m4aPath)) { missingAudioSegments++; continue; }
 
     const actualDuration = getAudioDuration(m4aPath);
 
@@ -124,7 +132,10 @@ export async function generateCaptions(slug) {
       execSync(`ffmpeg -y -i "${m4aPath}" -ar 16000 -ac 1 "${wavPath}" 2>/dev/null`);
     } catch {
       console.warn(`  ⚠  caption segment-${i}: ffmpeg wav conversion failed — using proportional fallback`);
-      if (actualDuration) captions[i] = proportionalFallback(seg.narration, actualDuration);
+      if (actualDuration) {
+        captions[i] = proportionalFallback(seg.narration, actualDuration);
+        proportionalSegments++;
+      }
       continue;
     }
 
@@ -137,15 +148,24 @@ export async function generateCaptions(slug) {
         startSec: tsToSec(r.start),
         endSec: tsToSec(r.end),
       })).filter(c => c.text);
+      whisperSegments++;
       console.log(`  ✓ captions segment-${i}: ${captions[i].length} chunk(s) [whisper]`);
     } else {
-      console.warn(`  ⚠  caption segment-${i}: whisper failed — using proportional fallback`);
-      if (actualDuration) captions[i] = proportionalFallback(seg.narration, actualDuration);
+      if (whisperAvailable) console.warn(`  ⚠  caption segment-${i}: whisper failed — using proportional fallback`);
+      if (actualDuration) {
+        captions[i] = proportionalFallback(seg.narration, actualDuration);
+        proportionalSegments++;
+      }
     }
   }
 
   writeFileSync(join(outDir, 'captions.json'), JSON.stringify(captions, null, 2));
-  return captions;
+  const mode = whisperSegments > 0
+    ? (proportionalSegments > 0 ? 'mixed' : 'whisper')
+    : (proportionalSegments > 0 ? 'proportional' : 'none');
+  const meta = {mode, whisperAvailable, whisperSegments, proportionalSegments, missingAudioSegments};
+  writeFileSync(join(outDir, 'captions-meta.json'), JSON.stringify(meta, null, 2));
+  return {captions, meta};
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -153,7 +173,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (!postArg) { console.error('Usage: node generate-captions.mjs --post=<slug>'); process.exit(1); }
   const slug = postArg.replace('--post=', '');
   console.log(`\nGenerating captions for: ${slug}\n`);
-  generateCaptions(slug).then(c => {
-    console.log(`\nDone. ${Object.keys(c).length} segment(s) with captions.`);
+  generateCaptions(slug).then(({captions, meta}) => {
+    console.log(`\nDone. ${Object.keys(captions).length} segment(s) with captions (${meta.mode}).`);
   });
 }

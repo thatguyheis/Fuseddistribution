@@ -1,9 +1,13 @@
 {
   "slug": "google-review-strategy-that-actually-works",
-  "renderedAt": "2026-06-24T20:15:05.050Z",
+  "renderedAt": "2026-06-25T18:12:55.593Z",
   "hookType": "statement",
-  "segmentCount": 8,
-  "totalDuration": 94,
-  "musicTrack": "ambient-06.mp3",
-  "photosUsed": 8
+  "segmentCount": 10,
+  "scriptDuration": 193,
+  "renderedDuration": 188.117333,
+  "scriptHash": "78784343e7b674ec74380202d0bcecea07487a5e80571fe25e1bb0099199660e",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-05.mp3",
+  "photosUsed": 10
 }

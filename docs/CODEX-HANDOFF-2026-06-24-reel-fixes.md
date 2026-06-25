@@ -85,3 +85,20 @@ Findings reproduced across 3 reels (also `how-many-google-reviews-do-you-need-to
 ## Rollback
 All changes are additive/local. Revert the 5 files above to restore prior behavior; no
 data migrations, no state changes.
+
+---
+
+## Codex Resolution (2026-06-25)
+
+The eight production issues from this handoff are now addressed in the workflow:
+
+1. Transition overlap uses shared tested duration math, removing the frozen tail.
+2. Question cards speak the complete on-screen question before the follow line.
+3. Stat validation requires a displayed figure that matches spoken narration.
+4. Variable hook, stat, overlay, chart, question, CTA, and subtitle text uses measured fitting.
+5. Audio cache validity includes narration text and voice, preventing stale speech reuse.
+6. Chatterbox with Nick's voice reference is the production default; Zoe is opt-in recovery only.
+7. Caption metadata reports Whisper, proportional, mixed, or none instead of overstating timestamp quality.
+8. The deterministic reel builder now creates an ordered 8-12 segment article arc and blocks output outside 180-240 seconds.
+
+The source controlled 11 AM render worker processes at most two registered stale reels per run, validates before TTS, commits metadata locally, and does not push or deploy.

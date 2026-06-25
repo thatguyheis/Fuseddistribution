@@ -41,3 +41,17 @@ test('rejects narration windows that are shorter than the timing rule', () => {
   const result = validateReelScript(script);
   assert(result.errors.some((error) => error.includes('shorter than narration minimum')));
 });
+
+test('rejects a stat with no displayed figure', () => {
+  const script = structuredClone(validScript);
+  script.segments[1].text = 'CUSTOMERS RESPOND';
+  const result = validateReelScript(script);
+  assert(result.errors.some((error) => error.includes('must include its figure')));
+});
+
+test('rejects a displayed stat figure that does not match narration', () => {
+  const script = structuredClone(validScript);
+  script.segments[1].text = '5 PERCENT RESPOND';
+  const result = validateReelScript(script);
+  assert(result.errors.some((error) => error.includes('does not match')));
+});

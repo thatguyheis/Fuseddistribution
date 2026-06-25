@@ -38,6 +38,27 @@ function durationFromNarration(narration) {
   return Math.ceil(narration.split(/\s+/).filter(Boolean).length / 2.5) + 2;
 }
 
+function cleanNarration(value) {
+  if (!value) return null;
+  const cleaned = value
+    .replace(/^\s*-{3,}\s*$/gm, '')
+    .replace(/\s*-{3,}\s*/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return cleaned || null;
+}
+
+function voiceQuestion(text, narration) {
+  const cleanText = String(text ?? '').trim();
+  let spokenNarration = cleanNarration(narration);
+  const cannedOnly = !spokenNarration || /^follow for more\b/i.test(spokenNarration);
+  if (cleanText && cannedOnly) {
+    const spoken = /[?!.]$/.test(cleanText) ? cleanText : `${cleanText}?`;
+    spokenNarration = spokenNarration ? `${spoken} ${spokenNarration}` : spoken;
+  }
+  return spokenNarration;
+}
+
 // New long-form format: ## HOOK / ## STAT: label / ## CHART: label / ## SEGMENT N: label / ## QUESTION
 // May or may not have **Duration:** Xs minimum fields; falls back to word-count timing
 function parseNewLongFormScript(md, slug, reelDataMd) {
@@ -60,16 +81,7 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
     if (narrIdx >= 0) {
       const raw = s.slice(narrIdx + '\nNarration: '.length);
       const stop = raw.search(/\n\n\S/);
-      narration = (stop >= 0 ? raw.slice(0, stop) : raw).trim();
-    }
-    // Strip leaked section delimiters ("---") that corrupt narration/TTS.
-    if (narration) {
-      narration = narration
-        .replace(/^\s*-{3,}\s*$/gm, '')   // standalone delimiter lines
-        .replace(/\s*-{3,}\s*/g, ' ')      // inline delimiter leaks
-        .replace(/\s{2,}/g, ' ')
-        .trim();
-      if (!narration) narration = null;
+      narration = cleanNarration(stop >= 0 ? raw.slice(0, stop) : raw);
     }
 
     // Duration: explicit **Duration:** field, or compute from word count
@@ -88,6 +100,9 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
     } else if (/^## STAT:/m.test(s)) {
       const labelM = s.match(/^## STAT:\s*(.+)/m);
       segments.push({ type: 'stat', startSec, endSec, text: labelM ? labelM[1].trim() : '', narration });
+    } else if (/^## OVERLAY:/m.test(s)) {
+      const labelM = s.match(/^## OVERLAY:\s*(.+)/m);
+      segments.push({type: 'overlay', startSec, endSec, text: labelM ? labelM[1].trim() : '', narration});
     } else if (/^## SEGMENT\s+\d+:/m.test(s)) {
       const labelM = s.match(/^## SEGMENT\s+\d+:\s*(.+)/m);
       const label = labelM ? labelM[1].trim() : '';
@@ -106,12 +121,7 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
       // Voice the on-screen question: if narration is empty or only the canned
       // "Follow for more..." CTA, prepend the spoken question so the displayed
       // question is actually read aloud (audio matches the card).
-      let qNarr = narration;
-      const cannedOnly = !qNarr || /^follow for more\b/i.test(qNarr.trim());
-      if (qText && cannedOnly) {
-        const spoken = /[?!.]$/.test(qText) ? qText : `${qText}?`;
-        qNarr = qNarr ? `${spoken} ${qNarr}` : spoken;
-      }
+      const qNarr = voiceQuestion(qText, narration);
       // Recompute the window so the (now longer) narration still fits.
       endSec = startSec + Math.max(dur, durationFromNarration(qNarr));
       const seg = { type: 'question', startSec, endSec, text: qText, narration: qNarr };
@@ -164,7 +174,7 @@ export function parseReelScript(md, slug, reelDataMd = null) {
     const hookTextM = hookBody.match(/Text:\s*(.+)/);
     const hookNarrM = hookBody.match(/Narration:\s*([\s\S]*?)$/);
     const stripQuotes = (s) => s ? s.replace(/^["']+|["']+$/g, '').trim() : s;
-    const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
+    const cleanNarr = cleanNarration;
     segments.push({
       type: 'hook',
       startSec: parseInt(hookM[1], 10),
@@ -189,7 +199,7 @@ export function parseReelScript(md, slug, reelDataMd = null) {
         const titleM2 = body.match(/Title:\s*(.+)/);
         const barsM = body.match(/Bars:\n([\s\S]*?)(?=Narration:|$)/);
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
-        const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
+        const cleanNarr = cleanNarration;
         segments.push({
           type: 'chart',
           startSec, endSec,
@@ -201,7 +211,7 @@ export function parseReelScript(md, slug, reelDataMd = null) {
         const type = label.includes('stat') ? 'stat' : 'overlay';
         const textM = body.match(/Text:\s*(.+)/);
         const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
-        const cleanNarr = (s) => s ? s.trim().replace(/\s*\n---\s*$/, '').trim() : null;
+        const cleanNarr = cleanNarration;
         const stripQuotes = (s) => s ? s.replace(/^["']+|["']+$/g, '').trim() : s;
         const explanationM = body.match(/Explanation:\s*(.+)/);
         const graphicTypeM = body.match(/Graphic_type:\s*(\S+)/i);
@@ -240,7 +250,7 @@ export function parseReelScript(md, slug, reelDataMd = null) {
       startSec: parseInt(ctaM[1], 10),
       endSec: parseInt(ctaM[2], 10),
       text: textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim(),
-      narration: narrM ? narrM[1].trim() : null,
+      narration: narrM ? cleanNarration(narrM[1]) : null,
     });
   }
 
@@ -251,12 +261,16 @@ export function parseReelScript(md, slug, reelDataMd = null) {
     const textM = body.match(/Text:\s*(.+)/);
     const subtextM = body.match(/Subtext:\s*(.+)/);
     const narrM = body.match(/Narration:\s*([\s\S]*?)$/);
+    const questionText = textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim();
+    const questionNarration = voiceQuestion(questionText, narrM ? narrM[1] : null);
+    const startSec = parseInt(questionM[1], 10);
+    const declaredEndSec = parseInt(questionM[2], 10);
     const seg = {
       type: 'question',
-      startSec: parseInt(questionM[1], 10),
-      endSec: parseInt(questionM[2], 10),
-      text: textM ? textM[1].trim().replace(/^["']+|["']+$/g, '') : body.trim(),
-      narration: narrM ? narrM[1].trim() : null,
+      startSec,
+      endSec: Math.max(declaredEndSec, startSec + durationFromNarration(questionNarration)),
+      text: questionText,
+      narration: questionNarration,
     };
     if (subtextM) seg.subtext = subtextM[1].trim().replace(/^["']+|["']+$/g, '');
     segments.push(seg);

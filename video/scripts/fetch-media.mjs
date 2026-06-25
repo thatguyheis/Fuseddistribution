@@ -13,34 +13,53 @@ import { execSync } from 'node:child_process';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
 
-function loadMediaQueries(slug) {
-  const reelDataPath = join(videoDir, '..', 'public', 'blog', slug, 'reel-data.md');
-  if (!existsSync(reelDataPath)) return {};
-  const md = readFileSync(reelDataPath, 'utf8');
+export function parseMediaQueries(md) {
   const queries = {};
   const sectionMatch = md.match(/## (?:media_queries|pexels_queries)\n([\s\S]*?)(?=\n##|$)/);
   if (!sectionMatch) return queries;
-  const lines = sectionMatch[1].split('\n');
   let seg = null;
   let prefer = 'video';
-  for (const line of lines) {
+  let query = null;
+  const flush = () => {
+    if (seg !== null && query) queries[seg] = {query, prefer};
+  };
+  for (const line of sectionMatch[1].split('\n')) {
     const segM = line.match(/^-\s+segment:\s*(\d+)/);
     const queryM = line.match(/^\s+query:\s*"(.+?)"/);
     const preferM = line.match(/^\s+prefer:\s*(\S+)/);
-    if (segM) { seg = parseInt(segM[1], 10); prefer = 'video'; }
-    if (preferM && seg !== null) prefer = preferM[1].toLowerCase();
-    if (queryM && seg !== null) {
-      queries[seg] = { query: queryM[1], prefer };
-      seg = null;
+    if (segM) {
+      flush();
+      seg = parseInt(segM[1], 10);
+      prefer = 'video';
+      query = null;
     }
+    if (queryM && seg !== null) query = queryM[1];
+    if (preferM && seg !== null) prefer = preferM[1].toLowerCase();
   }
+  flush();
   return queries;
 }
 
-function segmentKeywords(seg) {
+function loadReelData(slug) {
+  const reelDataPath = join(videoDir, '..', 'public', 'blog', slug, 'reel-data.md');
+  if (!existsSync(reelDataPath)) return {queries: {}, topic: 'tech'};
+  const md = readFileSync(reelDataPath, 'utf8');
+  const topic = md.match(/^topic:\s*(silver|tech)\s*$/m)?.[1] ?? 'tech';
+  return {queries: parseMediaQueries(md), topic};
+}
+
+function segmentKeywords(seg, topic) {
   const text = seg.text ?? seg.title ?? '';
   return text.replace(/\d+%?/g, '').replace(/[^a-zA-Z\s]/g, ' ')
-    .split(/\s+/).filter(w => w.length > 3).slice(0, 4).join(' ') + ' silver';
+    .split(/\s+/).filter(w => w.length > 3).slice(0, 4).join(' ') + (topic === 'silver' ? ' silver' : ' business');
+}
+
+export function mediaCacheKey(query, prefer, segmentType) {
+  return JSON.stringify({query, prefer, segmentType});
+}
+
+function loadManifest(path) {
+  try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return {version: 1, segments: {}}; }
 }
 
 function fetchJson(url, headers) {
@@ -152,32 +171,35 @@ export async function fetchMedia(slug) {
   const media = {};
   const usedVideoIds = new Set();
   const usedPhotoIds = new Set();
-  const mediaQueries = loadMediaQueries(slug);
+  const {queries: mediaQueries, topic} = loadReelData(slug);
+  const manifestPath = join(videoDir, 'out', slug, 'media-manifest.json');
+  const manifest = loadManifest(manifestPath);
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
     const jpgDest = join(photoDir, `segment-${i}.jpg`);
     const mp4Dest = join(clipDir, `segment-${i}.mp4`);
+    const qEntry = mediaQueries[i];
+    const rawQuery = qEntry?.query ?? segmentKeywords(seg, topic);
+    const prefer = qEntry?.prefer ?? 'video';
+    const skipVideo = ['chart', 'cta', 'question'].includes(seg.type) || prefer === 'photo';
+    const cacheKey = mediaCacheKey(rawQuery, prefer, seg.type);
+    const cacheValid = manifest.segments?.[i]?.key === cacheKey;
 
     const hasVideo = existsSync(mp4Dest) && statSync(mp4Dest).size > 10240;
     const hasPhoto = existsSync(jpgDest) && statSync(jpgDest).size > 1024;
-    if (hasVideo) {
+    if (cacheValid && hasVideo && !skipVideo) {
       media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: hasPhoto ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'cached' };
       console.log(`  ↷  segment-${i} video exists — skipping`);
       continue;
     }
-    if (hasPhoto) {
+    if (cacheValid && hasPhoto) {
       media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'cached' };
       console.log(`  ↷  segment-${i} photo exists — skipping`);
       continue;
     }
 
     if (!pexelsKey && !pixabayKey) continue;
-
-    const qEntry = mediaQueries[i];
-    const rawQuery = qEntry?.query ?? segmentKeywords(seg);
-    const prefer = qEntry?.prefer ?? 'video';
-    const skipVideo = ['chart', 'cta', 'question'].includes(seg.type) || prefer === 'photo';
 
     let fetched = false;
 
@@ -187,6 +209,7 @@ export async function fetchMedia(slug) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
         media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: existsSync(jpgDest) ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'pixabay' };
         console.log(`  ✓ segment-${i} video (pixabay): "${rawQuery}"`);
+        manifest.segments[i] = {key: cacheKey};
         fetched = true;
       }
     }
@@ -197,6 +220,7 @@ export async function fetchMedia(slug) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
         media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: existsSync(jpgDest) ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'pexels' };
         console.log(`  ✓ segment-${i} video (pexels): "${rawQuery}"`);
+        manifest.segments[i] = {key: cacheKey};
         fetched = true;
       }
     }
@@ -206,6 +230,7 @@ export async function fetchMedia(slug) {
       if (ok) {
         media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'pixabay' };
         console.log(`  ✓ segment-${i} photo (pixabay): "${rawQuery}"`);
+        manifest.segments[i] = {key: cacheKey};
         fetched = true;
       }
     }
@@ -215,11 +240,13 @@ export async function fetchMedia(slug) {
       if (ok) {
         media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'pexels' };
         console.log(`  ✓ segment-${i} photo (pexels): "${rawQuery}"`);
+        manifest.segments[i] = {key: cacheKey};
       }
     }
   }
 
   writeFileSync(join(videoDir, 'out', slug, 'media.json'), JSON.stringify(media, null, 2));
+  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
   const photosCompat = {};
   for (const [k, v] of Object.entries(media)) {
     photosCompat[k] = v.thumb ?? v.src;

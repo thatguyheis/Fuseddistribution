@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS, POPPINS } from '../fonts';
 import type { ChartSegment } from '../types';
+import { FittedText } from './FittedText';
 
 const LABEL_W = 220;
 const BAR_W   = 580;
@@ -23,14 +24,16 @@ const Bar: React.FC<{ label: string; value: number; index: number; fps: number }
 
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
-      <span style={{
-        fontFamily: POPPINS,
-        fontWeight: 600,
-        fontSize: 34,
-        color: BRAND.muted, width: LABEL_W, textAlign: 'right', flexShrink: 0,
-      }}>
-        {label}
-      </span>
+      <FittedText
+        text={label}
+        fontFamily={POPPINS}
+        fontWeight={600}
+        maxFontSize={34}
+        maxLines={2}
+        maxWidth={LABEL_W}
+        color={BRAND.muted}
+        style={{textAlign: 'right', flexShrink: 0}}
+      />
       <div style={{
         width: BAR_W, height: 18, borderRadius: 999,
         background: 'rgba(255,255,255,0.06)', overflow: 'hidden', flexShrink: 0,
@@ -70,14 +73,17 @@ export const ChartCard: React.FC<{
       justifyContent: 'center', padding: '80px 60px',
       opacity: fadeIn,
     }}>
-      <p style={{
-        fontFamily: BEBAS,
-        fontSize: 48, color: BRAND.cyan,
-        textTransform: 'uppercase', letterSpacing: '0.1em',
-        marginBottom: 52, textAlign: 'center',
-      }}>
-        {segment.title}
-      </p>
+      <FittedText
+        text={segment.title}
+        fontFamily={BEBAS}
+        maxFontSize={48}
+        maxLines={3}
+        maxWidth={920}
+        letterSpacing="0.1em"
+        color={BRAND.cyan}
+        textTransform="uppercase"
+        style={{marginBottom: 52}}
+      />
       <div style={{ width: LABEL_W + 16 + BAR_W + 16 + VALUE_W }}>
         {segment.bars.map((bar, i) => (
           <Bar key={bar.label} label={bar.label} value={bar.value} index={i} fps={fps} />

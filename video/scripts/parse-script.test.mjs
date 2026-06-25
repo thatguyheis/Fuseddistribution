@@ -126,4 +126,12 @@ test('parses compact long-form question text and subtext', () => {
   assert.equal(question.type, 'question');
   assert.equal(question.text, 'WHAT WOULD YOU DO');
   assert.equal(question.subtext, 'COMMENT BELOW');
+  assert.equal(question.narration, 'WHAT WOULD YOU DO? Follow for more silver news.');
+});
+
+test('strips delimiter leaks and parses explicit overlay segments', () => {
+  const md = `# Reel Script: Clean\nformat: long-form\n\n---\n\n## OVERLAY: THREE PRACTICAL STEPS\n\n**Duration:** 8s minimum\n\nNarration: --- Start with the first step. ---\n\n---\n\n## QUESTION\n\n**Duration:** 6s minimum\n\nText: READY TO START?\nNarration: Follow for more tips to grow your business.`;
+  const {segments} = parseReelScript(md, 'clean', 'hook: Start here');
+  assert.equal(segments[0].type, 'overlay');
+  assert.equal(segments[0].narration, 'Start with the first step.');
 });

@@ -1,210 +1,394 @@
 #!/bin/zsh
-# Daily blog + reel pipeline — runs via launchd at 9 AM
+# Daily blog pipeline — runs via launchd at 9 AM.
+# Per-post mode: each post is a separate claude call with immediate commit+deploy.
+# Pre-flight session probe before each post prevents wasted runs on limit hits.
 
-PROJECT_DIR="/Users/nick/Documents/New project"
+PROJECT_DIR="/Users/nick/projects/fuseddistribution"
 LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 
+export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
+
+# ── Retry plist cleanup ────────────────────────────────────────────────────────
+launchctl bootout "gui/$(id -u)/com.nick.daily-blog-reel.retry" 2>/dev/null
+rm -f "$HOME/Library/LaunchAgents/com.nick.daily-blog-reel.retry.plist"
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+notify() { osascript -e "display notification \"$2\" with title \"Blog pipeline: $1\"" 2>/dev/null || true }
+
+log_rotate() {
+  if [[ -f "$LOG_FILE" && $(stat -f%z "$LOG_FILE" 2>/dev/null || echo 0) -gt 5242880 ]]; then
+    mv "$LOG_FILE" "${LOG_FILE}.1"
+  fi
+}
+
+probe_session() {
+  local out
+  out=$(claude -p "respond with ok" 2>&1)
+  if echo "$out" | grep -qi "session limit\|usage limit\|rate limit"; then
+    echo "$out"
+    return 1
+  fi
+  return 0
+}
+
+schedule_retry() {
+  local reset_raw="$1"
+  local sleep_secs=21600
+  if [[ -n "$reset_raw" ]]; then
+    local reset_epoch
+    reset_epoch=$(date -j -f '%I:%M%p' \
+      "$(echo "$reset_raw" | tr -d ' ' | sed -E 's/^([0-9]{1,2})(am|pm)$/\1:00\2/')" \
+      '+%s' 2>/dev/null)
+    local now_epoch
+    now_epoch=$(date '+%s')
+    if [[ -n "$reset_epoch" ]]; then
+      (( reset_epoch <= now_epoch )) && reset_epoch=$(( reset_epoch + 86400 ))
+      sleep_secs=$(( reset_epoch - now_epoch + 600 ))
+    fi
+  fi
+  local retry_epoch=$(( $(date '+%s') + sleep_secs ))
+  local retry_hour=$(( 10#$(date -r "$retry_epoch" '+%H') ))
+  local retry_min=$(( 10#$(date -r "$retry_epoch" '+%M') ))
+  local retry_label="com.nick.daily-blog-reel.retry"
+  local retry_plist="$HOME/Library/LaunchAgents/${retry_label}.plist"
+  cat > "$retry_plist" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>${retry_label}</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/nick/bin/daily-blog-reel.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>${retry_hour}</integer>
+    <key>Minute</key><integer>${retry_min}</integer>
+  </dict>
+  <key>StandardOutPath</key><string>/Users/nick/Library/Logs/daily-blog-reel.log</string>
+  <key>StandardErrorPath</key><string>/Users/nick/Library/Logs/daily-blog-reel.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>SoftResourceLimits</key>
+  <dict><key>NumberOfFiles</key><integer>65536</integer></dict>
+  <key>HardResourceLimits</key>
+  <dict><key>NumberOfFiles</key><integer>65536</integer></dict>
+</dict>
+</plist>
+PLIST
+  launchctl bootout "gui/$(id -u)/${retry_label}" 2>/dev/null
+  launchctl bootstrap "gui/$(id -u)" "$retry_plist"
+  echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now)" >> "$LOG_FILE"
+}
+
+write_pending() {
+  local pending_file="$1"
+  shift
+  local arr_json=""
+  for s in "$@"; do
+    arr_json+="\"$s\","
+  done
+  arr_json="[${arr_json%,}]"
+  cat > "$pending_file" <<JSON
+{
+  "date": "$(date +%Y-%m-%d)",
+  "remaining": $arr_json,
+  "interrupted_at": "$(date -u +%Y-%m-%dT%H:%M:%S)"
+}
+JSON
+}
+
+remaining_from() {
+  # remaining_from CURRENT_SLUG SLUG1 SLUG2 ... — returns all slugs from CURRENT_SLUG onward
+  local target="$1"; shift
+  local found=false
+  local result=()
+  for s in "$@"; do
+    [[ "$s" == "$target" ]] && found=true
+    $found && result+=("$s")
+  done
+  echo "${result[@]}"
+}
+
+quarantine_post_dir() {
+  local slug="$1"
+  local src="public/blog/$slug"
+  [[ -d "$src" ]] || return 0
+  local dest_root=".workflow-blocked/$(date +%Y-%m-%d)"
+  local dest="$dest_root/$slug-$(date +%H%M%S)"
+  mkdir -p "$dest_root"
+  mv "$src" "$dest"
+  echo "QUARANTINED: $slug artifacts moved to $dest" >> "$LOG_FILE"
+}
+
+# ── Log rotation + header ─────────────────────────────────────────────────────
+log_rotate
 echo "\n=== $(date) ===" >> "$LOG_FILE"
 
-# Anchor: line count at run start, so end-of-run scans only THIS run's output
-RUN_START_LINE=$(wc -l < "$LOG_FILE" | tr -d ' ')
+# ── Environment ───────────────────────────────────────────────────────────────
+set -o allexport
+source "$PROJECT_DIR/video/.env"
+set +o allexport
 
-cd "$PROJECT_DIR" || exit 1
-
-# Guard: .env must exist before pipeline starts
-[ -f video/.env ] || { echo "ERROR: video/.env missing — pipeline aborted" >> "$LOG_FILE"; exit 1; }
-
-# Guard: topic-history.md must exist (create from template if missing)
-[ -f blog/topic-history.md ] || { echo "## Tech Posts\n\n| Date | Slug | Broad Category | Angle |\n|------|------|----------------|-------|\n\n## Silver Posts\n\n| Date | Slug | Broad Category | Angle |\n|------|------|----------------|-------|" > blog/topic-history.md && echo "Created topic-history.md from template" >> "$LOG_FILE"; }
-
-# Kill any stale Remotion chrome-headless-shell processes from previous runs
-ZOMBIE_COUNT=$(pgrep -f "chrome-headless-shell" | wc -l | tr -d ' ')
-if [ "$ZOMBIE_COUNT" -gt 0 ]; then
-  pkill -f "chrome-headless-shell" 2>/dev/null
-  echo "Killed $ZOMBIE_COUNT stale Remotion chrome processes" >> "$LOG_FILE"
+if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+  echo "WARN: CLOUDFLARE_API_TOKEN not set in video/.env — deploy will fail." | tee -a "$LOG_FILE"
+  notify "config" "CLOUDFLARE_API_TOKEN missing from video/.env"
 fi
 
-# Pre-compute deterministic music track — mod 9 + 2 skips ambient-01 (46s, too short for Long Form)
-MUSIC_TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 9) + 2 )))
-[ -n "$MUSIC_TRACK" ] || { echo "ERROR: MUSIC_TRACK not computed" >> "$LOG_FILE"; exit 1; }
-
-/Users/nick/.local/bin/claude -p \
-"Follow the blog+reel pipeline in blog/BLOG-SOP.md and video/REEL-SOP.md.
-
-Run: one tech post + one silver post + two reels.
-
-IMPORTANT: This is a fully automated pipeline. Do NOT ask for confirmation, approval, or direction at any point. Pick the angles yourself and execute all steps without stopping. The only acceptable output is completed work and a git commit.
-
-Today's music track: ${MUSIC_TRACK} — pass this as --music=${MUSIC_TRACK} on every render command.
-
-Steps:
-1. Read blog/topic-history.md to see all covered angles with dates. Apply these rules:
-   - Do NOT repeat any angle posted within the last 180 days.
-   - Do NOT pick two posts in the same broad category if one was posted within the last 7 days.
-   - After a topic is 180+ days old, it may be revisited with a fresh angle.
-   Tech: pick from Websites / Local Business / Marketing / Google / Social Media.
-   Silver: rotate through — Buying Guide → Investing → Storage → History → Market.
-   Choose immediately and proceed. Do not propose or ask.
-
-2. Write TECH post:
-   - FIRST: Use the seo-plan skill to identify target keyword, search intent, and top competitor gap for the chosen angle. Record the target keyword.
-   - Use the blog-write skill to draft the post body — pass target keyword from seo-plan; enforces E-E-A-T and sourced stats
-   - Use the blog-seo-check skill after drafting to validate on-page SEO signals
-   - Use the seo-local skill if the post covers local business, Google, or map pack topics
-   - Read blog/BLOG-SOP.md (instructions) and blog/BLOG-REF.md (HTML/CSS templates)
-   - Create blog/[slug-tech]/index.html + hero.svg following the SOP
-   - Target keyword must appear in: title, h1, meta description, first paragraph, and at least one h2
-   - Add FAQ block (3+ questions) near end of article body + matching FAQPage JSON-LD in head
-   - Internal linking: read posts.json, pick 2-3 topically related existing posts, add anchor links inline (intro, body, next-read before CTA)
-   - Generate hero.jpg from hero.svg (required for OG tags and reel segment-0 thumbnail):
-     \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" \\
-       --headless=new --disable-gpu \\
-       --screenshot=/tmp/hero-tmp.png \\
-       --window-size=1200,630 \\
-       \"file://\$(pwd)/blog/[slug-tech]/hero.svg\" 2>/dev/null && \\
-     sips -s format jpeg /tmp/hero-tmp.png --out blog/[slug-tech]/hero.jpg -s formatOptions 85 && \\
-     rm /tmp/hero-tmp.png
-   - Run: node blog/scripts/fetch-pexels.mjs --post=[slug-tech] --queries=\"q1|q2\"
-   - Create blog/[slug-tech]/reel-data.md following §11, §11b, and §11c of the SOP (include graphic_type, graphic: fields, and media_queries per segment)
-   - Write blog/[slug-tech]/photo-post.svg following §15 of the SOP (1200x1200 square)
-   - Generate photo-post.jpg from photo-post.svg:
-     \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" \\
-       --headless=new --disable-gpu \\
-       --screenshot=/tmp/photo-post-tmp.png \\
-       --window-size=1200,1200 \\
-       \"file://\$(pwd)/blog/[slug-tech]/photo-post.svg\" 2>/dev/null && \\
-     sips -s format jpeg /tmp/photo-post-tmp.png --out blog/[slug-tech]/photo-post.jpg -s formatOptions 85 && \\
-     rm /tmp/photo-post-tmp.png
-   - Write blog/[slug-tech]/social-copy.json following §14 of the SOP (single reel schema, 5-hashtag max, share CTA, disclaimer)
-   - Prepend entry to blog/posts.json
-
-3. Write SILVER post (same as step 2, use silver brand routing from §1 of the SOP).
-
-4. Render TECH reel:
-   - Read blog/[slug-tech]/reel-data.md
-   - Write blog/[slug-tech]/reel-script.md following video/REEL-SOP.md
-   - REQUIRED script validation gate — if any check fails, fix reel-script.md before render, do not skip:
-     grep -c \"—\" blog/[slug-tech]/reel-script.md        # MUST BE 0 — no em dashes
-     grep -c \"## QUESTION\" blog/[slug-tech]/reel-script.md  # MUST BE ≥ 1
-     grep -cE \"Narration:.*\bUS\b\" blog/[slug-tech]/reel-script.md  # MUST BE 0 — use USA
-     grep -c \"Narration:.*%\" blog/[slug-tech]/reel-script.md   # MUST BE 0 — use \"percent\"
-     if grep -q \"^## chart\" blog/[slug-tech]/reel-data.md 2>/dev/null; then grep -cE \"^\*\*Chart\" blog/[slug-tech]/reel-script.md; fi  # MUST BE ≥ 1 if chart exists
-   - REQUIRED: Run timing validation on every segment (words ÷ 2.5 + 2 = minimum window seconds). Fix failures by extending window, never shortening narration.
-   - Run: cd video && export \$(cat .env | xargs) && node scripts/render.mjs --post=[slug-tech] --music=${MUSIC_TRACK}
-   - Verify output: ls -lh video/out/[slug-tech]/[slug-tech].mp4 — must be > 5 MB. If smaller, render silently failed. Re-run.
-   - If near 5 MB threshold, run: ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 video/out/[slug-tech]/[slug-tech].mp4 — duration must match declared target within 10s.
-   - AFTER render completes, write the slug to /tmp/reel-pipeline-slugs.txt — one line per slug, format: tech=[slug-tech]
-
-5. Render SILVER reel (same as step 4, using [slug-silver]).
-   Note: QUESTION narration for silver = \"Follow for more silver news.\" / tech = \"Follow for more tips to grow your business.\" — verify correct variant is in reel-script.md before render.
-   - AFTER render completes, write the slug to /tmp/reel-pipeline-slugs.txt — append: silver=[slug-silver]
-
-6. Append new entries to blog/topic-history.md under the correct section:
-   | YYYY-MM-DD | [slug] | [Broad Category] | [one-line angle description] |
-
-7. Git commit, push, and deploy:
-   git add blog/ video/out/ blog/topic-history.md
-   git commit -m \"feat: [tech-title] + [silver-title] + reels\"
-   git push origin main
-   npx wrangler deploy || CLOUDFLARE_API_TOKEN=\$(security find-generic-password -s cloudflare-api-token -w) npx wrangler deploy
-   (Fallback: if OAuth fails, the second command pulls the API token from macOS Keychain at runtime. Never echo or write the token anywhere. If BOTH fail, log \"DEPLOY FAILED — slugs NOT LIVE: [slugs]\" and continue with remaining steps.)
-   Then verify sitemap (wait 10s after deploy for Cloudflare propagation, then retry up to 3 times):
-   sleep 10 && for slug in [slug-tech] [slug-silver]; do
-     found=0; for i in 1 2 3; do
-       curl -s https://fuseddistribution.com/sitemap.xml | grep -q \"\$slug\" && found=1 && break
-       sleep 5
-     done
-     [ \$found -eq 0 ] && echo \"SITEMAP MISSING: \$slug\" >> blog/SITEMAP_GAPS.log
-   done" \
-  --allowedTools "Bash,Read,Write,Edit,Glob,Grep,Skill" \
-  --max-turns 120 \
-  >> "$LOG_FILE" 2>&1
-
-CLAUDE_EXIT=$?
-echo "Claude exit code: $CLAUDE_EXIT" >> "$LOG_FILE"
-
-# ── Session-limit auto-retry ────────────────────────────────────────────────
-# "You've hit your session limit · resets 1pm" killed 3 of the last 6 morning
-# runs. Parse the reset time, sleep until reset + 10 min, re-exec once.
-if [ -z "$DAILY_BLOG_RETRY" ]; then
-  RUN_LOG=$(tail -n +"$((RUN_START_LINE + 1))" "$LOG_FILE")
-  if echo "$RUN_LOG" | grep -q "session limit"; then
-    RESET_RAW=$(echo "$RUN_LOG" | grep -oE "resets [0-9]{1,2}(:[0-9]{2})?(am|pm)" | head -1 | sed 's/resets //')
-    if [ -n "$RESET_RAW" ]; then
-      H=$(echo "$RESET_RAW" | grep -oE "^[0-9]{1,2}")
-      M=$(echo "$RESET_RAW" | grep -oE ":[0-9]{2}" | tr -d ':'); M=${M:-0}
-      AP=$(echo "$RESET_RAW" | grep -oE "(am|pm)")
-      [ "$AP" = "pm" ] && [ "$H" -ne 12 ] && H=$((H + 12))
-      [ "$AP" = "am" ] && [ "$H" -eq 12 ] && H=0
-      TARGET=$(date -j -f "%H:%M:%S" "$(printf "%02d:%02d:00" "$H" "$M")" +%s 2>/dev/null)
-      NOW=$(date +%s)
-      WAIT=$((TARGET - NOW + 600))
-      if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 28800 ]; then
-        echo "Session limit — sleeping ${WAIT}s until $RESET_RAW + 10 min, then retrying once" >> "$LOG_FILE"
-        sleep "$WAIT"
-        DAILY_BLOG_RETRY=1 exec "$0"
-      fi
-    fi
-    echo "Session limit hit but reset time unparseable or out of range — no retry" >> "$LOG_FILE"
+if [[ -n "$CLOUDFLARE_API_TOKEN" ]]; then
+  if ! curl -s --max-time 30 -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      "https://api.cloudflare.com/client/v4/user/tokens/verify" | grep -q '"status":"active"'; then
+    echo "WARN: Cloudflare token verify failed — deploy will fail. Roll token at dash.cloudflare.com." | tee -a "$LOG_FILE"
+    notify "auth" "Cloudflare token canary failed — deploy at risk"
   fi
 fi
 
-# ── Post-run MP4 verification ──────────────────────────────────────────────
-# Read slugs written by Claude during the run
-SLUG_FILE="/tmp/reel-pipeline-slugs.txt"
-MISSING_RENDERS=0
+pkill -f "chrome-headless-shell" 2>/dev/null || true
+FD_USED=$(sysctl -n kern.num_files)
+FD_MAX=$(sysctl -n kern.maxfiles)
+if (( FD_USED * 100 / FD_MAX > 80 )); then
+  echo "WARN: kernel file table at ${FD_USED}/${FD_MAX} (>80%)" | tee -a "$LOG_FILE"
+  notify "fd" "kernel file table ${FD_USED}/${FD_MAX}"
+fi
+ulimit -n 65536 2>/dev/null || true
 
-if [ ! -f "$SLUG_FILE" ]; then
-  echo "PIPELINE WARNING: slug file not written — Claude may have been rate-limited before render step" >> "$LOG_FILE"
-  MISSING_RENDERS=1
-else
-  while IFS='=' read -r TYPE SLUG; do
-    MP4="$PROJECT_DIR/video/out/$SLUG/$SLUG.mp4"
-    SIZE=$(stat -f%z "$MP4" 2>/dev/null || echo 0)
-    if [ "$SIZE" -lt 5000000 ]; then
-      echo "RENDER FAILED: $SLUG ($SIZE bytes) — attempting direct render" >> "$LOG_FILE"
-      MISSING_RENDERS=1
-      # Fallback: render directly via remotion (skips re-fetch, uses existing assets)
-      cd "$PROJECT_DIR/video" && \
-        export $(cat .env | xargs) && \
-        npx remotion render src/Root.tsx BlogReel "out/$SLUG/$SLUG.mp4" \
-          --props="{\"slug\":\"$SLUG\"}" \
-          >> "$LOG_FILE" 2>&1
-      RENDER_EXIT=$?
-      NEW_SIZE=$(stat -f%z "$MP4" 2>/dev/null || echo 0)
-      if [ "$NEW_SIZE" -gt 5000000 ]; then
-        echo "RENDER RETRY OK: $SLUG ($NEW_SIZE bytes)" >> "$LOG_FILE"
-        MISSING_RENDERS=$((MISSING_RENDERS - 1))
-      else
-        echo "RENDER RETRY FAILED: $SLUG — manual intervention required" >> "$LOG_FILE"
-      fi
+cd "$PROJECT_DIR" || exit 1
+
+TODAY=$(date '+%Y-%m-%d')
+QUEUE_FILE="public/blog/research/${TODAY}-queue.json"
+PENDING_FILE="public/blog/research/${TODAY}-pending.json"
+
+# ── Initial session probe ─────────────────────────────────────────────────────
+echo "Probe: checking session availability..." >> "$LOG_FILE"
+PROBE_OUT=$(probe_session 2>&1)
+if [[ $? -ne 0 ]]; then
+  RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
+    | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+  echo "Session limit at start. Reset: ${RESET_RAW:-unknown}. Scheduling retry." >> "$LOG_FILE"
+  notify "session limit" "Detected before run — retry scheduled"
+  schedule_retry "$RESET_RAW"
+  exit 0
+fi
+echo "Probe: session OK" >> "$LOG_FILE"
+
+# ── Build slug list ───────────────────────────────────────────────────────────
+QUEUE_MODE=false
+ALL_SLUGS=()
+
+if [[ -f "$QUEUE_FILE" ]]; then
+  QUEUE_MODE=true
+  ALL_SLUGS=($(python3 -c \
+    "import json; [print(p['slug']) for p in json.load(open('$QUEUE_FILE'))['posts']]" 2>/dev/null))
+fi
+
+if (( ${#ALL_SLUGS[@]} == 0 )); then
+  echo "No queue or empty — self-directed fallback" >> "$LOG_FILE"
+  QUEUE_MODE=false
+fi
+
+# ── Apply pending filter ──────────────────────────────────────────────────────
+SLUGS=("${ALL_SLUGS[@]}")
+if [[ -f "$PENDING_FILE" ]]; then
+  REMAINING=($(python3 -c \
+    "import json; [print(s) for s in json.load(open('$PENDING_FILE'))['remaining']]" 2>/dev/null))
+  if (( ${#REMAINING[@]} > 0 )); then
+    echo "Pending file found — resuming ${#REMAINING[@]} slug(s): ${REMAINING[*]}" >> "$LOG_FILE"
+    SLUGS=("${REMAINING[@]}")
+  fi
+fi
+
+# ── Per-post loop ─────────────────────────────────────────────────────────────
+FAILS=0
+BUILT=()
+
+if ! $QUEUE_MODE; then
+  # ── Fallback: self-directed single claude call ────────────────────────────
+  echo "Running self-directed mode (1 silver + 1 tech-or-AI)..." >> "$LOG_FILE"
+  SELF_TMPOUT=$(mktemp)
+  claude -p \
+"Follow the blog pipeline in public/blog/BLOG-SOP.md. Read public/blog/BLOG-REF.md for templates (copy verbatim).
+IMPORTANT: Fully automated pipeline. Do NOT ask for confirmation. Rendering happens at 11 AM — do NOT render.
+
+## NO GEMMA QUEUE FOUND FOR TODAY
+Fall back to self-directed mode: write ONE silver post + ONE tech/AI post.
+
+For the tech/AI post: alternate between local business / website / marketing topics (brand=tech) and AI topics (how to use AI tools, AI for small business, AI training for business owners, getting started with AI, AI prompting, AI automation — also brand=tech). Check public/blog/topic-history.md to see what was last posted and pick the other category to avoid repetition. If last tech post was AI, do a tech/local-business post and vice versa.
+
+For the silver post: FIRST run `curl -s https://fuseddistribution.com/api/spot` to get live silver and gold spot prices. Use the returned values for ALL price examples — never use assumed round numbers. Quote the price with today's date (e.g. "spot: $64.85/oz as of June 22, 2026"). See §1b in BLOG-SOP.md for exact rules.
+
+Rotate through ALL available silver categories — do NOT default to Buying Guide or General every time. Check topic-history.md Silver Posts section and pick an underrepresented category. Priority order for underrepresented categories: News & Outlook, Tax & Legal, Selling, Retirement, COMEX & Futures, Dealer Reviews, Tools & Tracking, Estate & Inheritance, Mining & Stocks, Coin Guides, then Investing/Storage/Types/History if all others recently used. See §1a in public/blog/BLOG-SOP.md for full category list and topic seeds.
+
+Use seo-plan skill to pick keywords, then blog-write skill for the draft.
+Follow public/blog/BLOG-SOP.md fully including §1 Brand Routing for AI posts.
+Do NOT commit, push, deploy, or regenerate the sitemap — shell handles that." \
+    --allowedTools "Bash,Read,Write,Edit,Glob,Grep,Skill" 2>&1 | tee -a "$LOG_FILE" "$SELF_TMPOUT" > /dev/null
+  SELF_EXIT=$pipestatus[1]
+
+  if [[ $SELF_EXIT -ne 0 ]] && grep -qi "session limit\|usage limit" "$SELF_TMPOUT"; then
+    RESET_RAW=$(grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" "$SELF_TMPOUT" \
+      | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+    echo "Session limit in self-directed mode. Reset: ${RESET_RAW:-unknown}." >> "$LOG_FILE"
+    notify "session limit" "Self-directed mode hit limit — retry scheduled"
+    schedule_retry "$RESET_RAW"
+    rm -f "$SELF_TMPOUT"
+    exit 0
+  fi
+  rm -f "$SELF_TMPOUT"
+
+  # Discover slugs built by self-directed claude
+  SLUGS=($(git log --since=midnight --diff-filter=A --name-only --pretty=format: \
+    -- 'public/blog/*/index.html' 2>/dev/null \
+    | sed -E 's|public/blog/([^/]+)/index.html|\1|' | sort -u))
+fi
+
+for SLUG in "${SLUGS[@]}"; do
+  echo "\n--- Post: $SLUG ---" >> "$LOG_FILE"
+
+  # Skip only fully registered posts. Partial QA-failed folders must be rebuilt or blocked.
+  if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]]      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    echo "SKIP: $SLUG already built and registered" >> "$LOG_FILE"
+    BUILT+=("$SLUG")
+    continue
+  fi
+
+  # Pre-flight probe before this post
+  PROBE_OUT=$(probe_session 2>&1)
+  if [[ $? -ne 0 ]]; then
+    REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
+    RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
+      | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+    write_pending "$PENDING_FILE" "${REMAINING_SLUGS[@]}"
+    echo "Session limit before $SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
+    notify "session limit" "$SLUG pending — retry scheduled"
+    schedule_retry "$RESET_RAW"
+    exit 0
+  fi
+
+  # Build single-post context from queue JSON
+  POST_DATA=$(python3 -c "
+import json, sys
+posts = json.load(open('$QUEUE_FILE'))['posts']
+p = next((p for p in posts if p['slug'] == '$SLUG'), None)
+if p: print(json.dumps(p, indent=2))
+else: print('{}')
+" 2>/dev/null)
+
+  # Extract brand + keyword from queue post data
+  BRAND=$(echo "$POST_DATA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('brand','silver'))" 2>/dev/null)
+  KW=$(echo "$POST_DATA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('keyword',''))" 2>/dev/null)
+
+  # Run the decoupled pipeline (gemma leaf + claude brain + deterministic scripts).
+  # Covers polish, internal links, hooks, svg, html, reel-data, social, social-ad,
+  # ugc, assets, qa, posts.json, topic-history. Degrades gracefully on claude limit.
+  POST_TMPOUT=$(mktemp)
+  public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
+    | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
+  POST_EXIT=$pipestatus[1]
+
+  echo "Post $SLUG exit: $POST_EXIT" >> "$LOG_FILE"
+
+  # Session limit mid-post — schedule retry for remaining slugs
+  if grep -qi "session limit\|usage limit\|hit your limit" "$POST_TMPOUT" && ! grep -q "\[build-post:$SLUG\] DONE\." "$POST_TMPOUT"; then
+    REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
+    RESET_RAW=$(grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" "$POST_TMPOUT" \
+      | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+    write_pending "$PENDING_FILE" "${REMAINING_SLUGS[@]}"
+    echo "Session limit mid-$SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
+    notify "session limit" "$SLUG interrupted — retry scheduled"
+    schedule_retry "$RESET_RAW"
+    rm -f "$POST_TMPOUT"
+    exit 0
+  fi
+  rm -f "$POST_TMPOUT"
+
+  # Validate required output files. Missing artifacts mean this slug is not publishable.
+  MISSING=()
+  for F in \
+    "public/blog/$SLUG/index.html" \
+    "public/blog/$SLUG/hero.jpg" \
+    "public/blog/$SLUG/reel-data.md" \
+    "public/blog/$SLUG/reel-script.md" \
+    "public/blog/$SLUG/social-copy.json"; do
+    [[ ! -f "$F" ]] && MISSING+=("$F")
+  done
+  if (( ${#MISSING[@]} > 0 )); then
+    echo "BLOCKED: $SLUG missing required files: ${MISSING[*]} — skipping commit/deploy" >> "$LOG_FILE"
+    notify "publish blocked" "$SLUG: ${#MISSING[@]} required file(s) absent"
+    FAILS=$(( FAILS + 1 ))
+    quarantine_post_dir "$SLUG"
+    continue
+  fi
+
+  # build-post registers posts.json only after QA passes. If absent, do not publish.
+  if ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    echo "BLOCKED: $SLUG missing from posts.json — QA failed or registration skipped; skipping commit/deploy" >> "$LOG_FILE"
+    notify "publish blocked" "$SLUG not in posts.json — QA/registration failed"
+    FAILS=$(( FAILS + 1 ))
+    quarantine_post_dir "$SLUG"
+    continue
+  fi
+
+  # Regenerate sitemap
+  node public/blog/scripts/generate-sitemap.mjs >> "$LOG_FILE" 2>&1
+
+  # Commit this post
+  git add \
+    "public/blog/$SLUG/" \
+    public/sitemap.xml \
+    public/blog/posts.json \
+    public/blog/topic-history.md 2>/dev/null
+  git commit -m "feat: $SLUG" >> "$LOG_FILE" 2>&1
+
+  # Push
+  PUSH_ERR=$(git push origin main 2>&1)
+  if [[ $? -ne 0 ]]; then
+    echo "$PUSH_ERR" >> "$LOG_FILE"
+    if echo "$PUSH_ERR" | grep -qi "secret"; then
+      echo "BLOCKED: GitHub secret scanning. Fix per BLOG-SOP.md §17, then: git push origin main && npx wrangler deploy" >> "$LOG_FILE"
+      notify "push blocked" "secret scanning — see log for scrub recipe"
     else
-      echo "RENDER OK: $SLUG ($SIZE bytes)" >> "$LOG_FILE"
+      notify "push failed" "see daily-blog-reel.log"
     fi
-  done < "$SLUG_FILE"
-  rm -f "$SLUG_FILE"
+  fi
+
+  # Deploy
+  npx wrangler deploy >> "$LOG_FILE" 2>&1
+
+  # Wait for CDN propagation before verify
+  sleep 45
+
+  # Verify live
+  CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
+  if [[ "$CODE" == "200" ]]; then
+    echo "VERIFY PASS: /blog/$SLUG/ (200)" >> "$LOG_FILE"
+    BUILT+=("$SLUG")
+  else
+    echo "VERIFY FAIL: /blog/$SLUG/ ($CODE) — NOT LIVE" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    notify "verify fail" "$SLUG returned $CODE"
+  fi
+
+done
+
+# ── Cleanup + final summary ────────────────────────────────────────────────────
+rm -f "$PENDING_FILE"
+
+LIVE_LOCS=$(curl -s --max-time 20 "https://fuseddistribution.com/sitemap.xml" | grep -c "<loc>")
+LOCAL_LOCS=$(grep -c "<loc>" public/sitemap.xml 2>/dev/null || echo 0)
+if [[ "$LIVE_LOCS" == "$LOCAL_LOCS" ]]; then
+  echo "VERIFY PASS: sitemap ($LIVE_LOCS URLs live = $LOCAL_LOCS local)" >> "$LOG_FILE"
+else
+  echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
+  FAILS=$(( FAILS + 1 ))
 fi
 
-# Kill any Remotion processes left over from this run
-pkill -f "chrome-headless-shell" 2>/dev/null
-
-# ── Failure alert (macOS notification) ─────────────────────────────────────
-notify() {
-  osascript -e "display notification \"$1\" with title \"Daily Blog Pipeline\" sound name \"Basso\"" 2>/dev/null
-}
-
-# Scan only THIS run's log lines for blocker keywords Claude may have written
-RUN_ERRORS=$(tail -n +"$((RUN_START_LINE + 1))" "$LOG_FILE" | grep -cE "DEPLOY FAILED|NOT LIVE|BLOCKED|session limit|PIPELINE WARNING|RETRY FAILED")
-
-if [ "$MISSING_RENDERS" -gt 0 ]; then
-  echo "PIPELINE INCOMPLETE: $MISSING_RENDERS render(s) failed — check log" >> "$LOG_FILE"
-  notify "FAILED: $MISSING_RENDERS render(s) incomplete. Check daily-blog-reel.log"
-  echo "Exit code: 1" >> "$LOG_FILE"
-  exit 1
+if (( FAILS > 0 )); then
+  notify "verification" "$FAILS check(s) FAILED — see daily-blog-reel.log"
+  echo "RESULT: $FAILS verification failure(s) — built: ${BUILT[*]:-none}" >> "$LOG_FILE"
+else
+  echo "RESULT: all verifications passed (${#BUILT[@]} slugs + sitemap)" >> "$LOG_FILE"
 fi
-
-if [ "$CLAUDE_EXIT" -ne 0 ] || [ "$RUN_ERRORS" -gt 0 ]; then
-  notify "Completed with warnings ($RUN_ERRORS flagged lines). Check daily-blog-reel.log"
-fi
-
-echo "Exit code: 0" >> "$LOG_FILE"

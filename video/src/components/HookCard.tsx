@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { BRAND } from '../brand';
 import { BEBAS } from '../fonts';
 import { MediaBg } from './MediaBg';
+import { FittedText } from './FittedText';
 import type { HookSegment, MediaEntry } from '../types';
 
 export const HookCard: React.FC<{
@@ -33,15 +34,19 @@ export const HookCard: React.FC<{
         position: 'relative', display: 'flex', flexDirection: 'column',
         alignItems: 'center', transform: `translateY(${translateY}px)`,
       }}>
-        <p style={{
-          fontFamily: BEBAS,
-          fontSize: 96, color: BRAND.white, textAlign: 'center',
-          textTransform: 'uppercase', letterSpacing: '0.02em',
-          lineHeight: 1.1, margin: '0 0 24px',
-          textShadow: '0 4px 24px rgba(0,0,0,0.8)',
-        }}>
-          {segment.text}
-        </p>
+        <FittedText
+          text={segment.text}
+          fontFamily={BEBAS}
+          maxFontSize={96}
+          maxLines={4}
+          maxWidth={920}
+          letterSpacing="0.02em"
+          lineHeight={1.1}
+          color={BRAND.white}
+          textTransform="uppercase"
+          textShadow="0 4px 24px rgba(0,0,0,0.8)"
+          style={{marginBottom: 24}}
+        />
         <div style={{
           width: barWidth, height: 5, borderRadius: 999,
           background: BRAND.cyan, boxShadow: `0 0 16px ${BRAND.cyan}`,

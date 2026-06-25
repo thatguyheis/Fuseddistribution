@@ -34,6 +34,32 @@ function displayTextFor(segment) {
   return segment.text;
 }
 
+const SMALL_NUMBER_WORDS = new Map([
+  ['zero', 0], ['one', 1], ['two', 2], ['three', 3], ['four', 4], ['five', 5],
+  ['six', 6], ['seven', 7], ['eight', 8], ['nine', 9], ['ten', 10], ['eleven', 11],
+  ['twelve', 12], ['thirteen', 13], ['fourteen', 14], ['fifteen', 15], ['sixteen', 16],
+  ['seventeen', 17], ['eighteen', 18], ['nineteen', 19], ['twenty', 20], ['thirty', 30],
+  ['forty', 40], ['fifty', 50], ['sixty', 60], ['seventy', 70], ['eighty', 80], ['ninety', 90],
+]);
+
+function extractFigures(value) {
+  const text = String(value ?? '').toLowerCase().replace(/-/g, ' ');
+  const figures = [...text.matchAll(/\d[\d,]*(?:\.\d+)?/g)]
+    .map((match) => Number(match[0].replace(/,/g, '')))
+    .filter((number) => Number.isFinite(number) && !(Number.isInteger(number) && number >= 1900 && number <= 2100));
+  const words = text.match(/[a-z]+/g) ?? [];
+  for (let i = 0; i < words.length; i++) {
+    if (!SMALL_NUMBER_WORDS.has(words[i])) continue;
+    let total = SMALL_NUMBER_WORDS.get(words[i]);
+    if (i + 1 < words.length && SMALL_NUMBER_WORDS.has(words[i + 1]) && total >= 20 && total % 10 === 0) {
+      total += SMALL_NUMBER_WORDS.get(words[i + 1]);
+      i++;
+    }
+    if (!(Number.isInteger(total) && total >= 1900 && total <= 2100)) figures.push(total);
+  }
+  return figures;
+}
+
 function checkDisplayText(segment, index, errors, warnings) {
   const text = displayTextFor(segment);
   const label = `segment ${index} (${segment.type})`;
@@ -71,14 +97,12 @@ function checkDisplayText(segment, index, errors, warnings) {
   }
 
   if (segment.type === 'stat') {
-    // SOP: every stat Text must carry its figure ("42% MORE REVENUE", not
-    // "MORE REVENUE"). Flag when narration states a number but the on-screen
-    // text drops it. Years (1900-2100) are ignored so source/date cards pass.
-    const figures = (String(segment.narration ?? '').match(/\d[\d,.]*/g) || [])
-      .map((n) => parseFloat(n.replace(/,/g, '')))
-      .filter((v) => !(Number.isInteger(v) && v >= 1900 && v <= 2100));
-    if (figures.length > 0 && !/\d/.test(String(text))) {
-      errors.push(`${label}: narration states a figure (${figures[0]}) but on-screen text has no number — put the figure in the Text (SOP: "42% MORE REVENUE", not "MORE REVENUE")`);
+    const displayFigures = extractFigures(text);
+    const narrationFigures = extractFigures(segment.narration);
+    if (displayFigures.length === 0) {
+      errors.push(`${label}: stat on-screen text must include its figure; use an overlay for non-numeric context`);
+    } else if (narrationFigures.length > 0 && !displayFigures.some((figure) => narrationFigures.includes(figure))) {
+      errors.push(`${label}: displayed figure (${displayFigures[0]}) does not match any spoken figure (${narrationFigures.join(', ')})`);
     }
   }
 
