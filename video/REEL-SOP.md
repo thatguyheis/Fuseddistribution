@@ -140,8 +140,10 @@ Every reel script produced by an agent must pass this review before render. This
 - [ ] No em dashes (`—`) anywhere in Text or Narration fields
 - [ ] All Text fields are written without surrounding quotes
 - [ ] Stat Text labels are 5 words or fewer after the number
+- [ ] Stat Text keeps its figure (e.g. "97% READ REVIEWS") — validate-reel errors if narration has a number but Text has none
 - [ ] Narration writes "percent" not "%", "USA" not "US"
 - [ ] Every segment has a Text field — no narration-only segments
+- [ ] QUESTION Text is a complete question ending in "?" (parser voices it aloud)
 - [ ] QUESTION segment has Text + Subtext + Narration = "Follow for more silver news."
 
 **Content quality**
@@ -255,9 +257,15 @@ Narration: [2–3 sentences]
 ---
 
 ## QUESTION (XX–XXs)
-Text: [THE QUESTION IN ALL CAPS (8 WORDS MAX) displayed big on screen]
+Text: [THE QUESTION IN ALL CAPS (8 WORDS MAX, must read as a complete question) displayed big on screen]
 Subtext: [ENGAGEMENT DIRECTIVE (5 WORDS MAX)]
 Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow for more tips to grow your business."]
+
+> The parser now **voices the on-screen question**: when Narration is empty or only
+> the canned "Follow for more…" line, it prepends the spoken question so the displayed
+> question is read aloud (audio matches the card). Therefore the `Text:` must be a
+> complete, self-contained question — not a truncated fragment. validate-reel.mjs warns
+> if the question text does not end with "?".
 
 ---
 
@@ -305,6 +313,7 @@ Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow f
 - The hook Text: must communicate the whole point without audio. A viewer who watches silently must understand what the reel is about from the text on screen alone.
 - **No decimals or mid-word breaks in HOOK Text.** Numbers like `78.9%` or `1.2M` cause unexpected line breaks in the overlay renderer. Round to whole numbers (`79%`, `1M`) or spell out (`over 1 million`). This applies to all `Text:` fields but is most visible on the HOOK where text is large.
 - Every Stat Text: must be self-explanatory without narration. "42% MORE REVENUE" works. "42% IMPROVEMENT" does not.
+- **The figure must stay in the Stat Text.** If the narration states a number (e.g. "97 percent…", "10 reviews"), the on-screen Text must include that number. `validate-reel.mjs` now **errors and blocks render** on a stat whose narration has a figure but whose Text has none (years 1900–2100 are ignored). Stripping the number out of the title — "OF CONSUMERS READ REVIEWS" instead of "97% READ REVIEWS" — was the #1 defect found in the 2026-06-24 audit.
 - Every segment must have a Text: value — never leave a segment with only narration and no on-screen text.
 
 Supported segment types: `Overlay`, `Stat`, `Chart`, `CTA`, `Question`. Mix and match. Use `Question` as the closing segment for Long Form reels.

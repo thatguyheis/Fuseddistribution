@@ -1,6 +1,6 @@
 import React from 'react';
 import { Composition, registerRoot } from 'remotion';
-import { BlogReel } from './compositions/BlogReel';
+import { BlogReel, compositionFrames } from './compositions/BlogReel';
 import { BRAND } from './brand';
 import './fonts';
 import type { ReelScript } from './types';
@@ -22,7 +22,9 @@ const Root: React.FC = () => (
     height={BRAND.height}
     defaultProps={{ script: defaultScript, musicTrack: 'ambient-01.mp3' }}
     calculateMetadata={({ props }) => ({
-      durationInFrames: props.script.totalDuration * BRAND.fps,
+      // Match the TransitionSeries timeline (sequences minus overlapped
+      // transitions) so no frozen tail is rendered after the last segment.
+      durationInFrames: compositionFrames(props.script),
     })}
   />
 );

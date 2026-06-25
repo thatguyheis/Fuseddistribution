@@ -70,9 +70,24 @@ function checkDisplayText(segment, index, errors, warnings) {
     warnings.push(`${label}: on-screen text is ${String(text).length} chars; risk of wrapping/overlap`);
   }
 
+  if (segment.type === 'stat') {
+    // SOP: every stat Text must carry its figure ("42% MORE REVENUE", not
+    // "MORE REVENUE"). Flag when narration states a number but the on-screen
+    // text drops it. Years (1900-2100) are ignored so source/date cards pass.
+    const figures = (String(segment.narration ?? '').match(/\d[\d,.]*/g) || [])
+      .map((n) => parseFloat(n.replace(/,/g, '')))
+      .filter((v) => !(Number.isInteger(v) && v >= 1900 && v <= 2100));
+    if (figures.length > 0 && !/\d/.test(String(text))) {
+      errors.push(`${label}: narration states a figure (${figures[0]}) but on-screen text has no number — put the figure in the Text (SOP: "42% MORE REVENUE", not "MORE REVENUE")`);
+    }
+  }
+
   if (segment.type === 'question') {
     if (String(segment.text ?? '').split(/\s+/).filter(Boolean).length > 10) {
       warnings.push(`${label}: question text is over 10 words; shorten for comment-card readability`);
+    }
+    if (!/[?]$/.test(String(segment.text ?? '').trim())) {
+      warnings.push(`${label}: question text does not end with "?" — may be truncated or not phrased as a question`);
     }
     if (segment.subtext && String(segment.subtext).length > DISPLAY_LIMITS.subtext) {
       warnings.push(`${label}: subtext is ${String(segment.subtext).length} chars; risk of wrapping/overlap`);

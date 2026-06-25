@@ -13,7 +13,7 @@ Narration: Get 20 reviews to unlock massive revenue growth. Getting more Google 
 
 ---
 
-## STAT: OF CONSUMERS READ ONLINE REVIEWS
+## STAT: 97% READ ONLINE REVIEWS
 
 **Visual:** Supporting graphic
 **Duration:** 15s minimum (31 words / 2.5 + 2)
@@ -22,7 +22,7 @@ Narration: 97 percent of consumers read online reviews when making local busines
 
 ---
 
-## STAT: SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
+## STAT: NEARLY ALL CHECK REVIEWS
 
 **Visual:** Supporting graphic
 **Duration:** 10s minimum (20 words / 2.5 + 2)
@@ -31,7 +31,7 @@ Narration: (Source: BrightLocal Local Consumer Review Survey 2026) That means ne
 
 ---
 
-## STAT: OF CONSUMERS REQUIRE AT LEAST
+## STAT: 68% WANT 4 STARS MINIMUM
 
 **Visual:** Supporting graphic
 **Duration:** 12s minimum (24 words / 2.5 + 2)
@@ -40,7 +40,7 @@ Narration: 68 percent of consumers require at least a 4-star rating before they 
 
 ---
 
-## STAT: SOURCE BRIGHTLOCAL LOCAL CONSUMER REVIEW
+## STAT: UNDER 4 STARS LOSES SALES
 
 **Visual:** Supporting graphic
 **Duration:** 17s minimum (36 words / 2.5 + 2)
@@ -49,7 +49,7 @@ Narration: (Source: BrightLocal Local Consumer Review Survey 2026) If you're sit
 
 ---
 
-## STAT: A HARVARD BUSINESS SCHOOL STUDY
+## STAT: 1 STAR LIFTS REVENUE 9%
 
 **Visual:** Supporting graphic
 **Duration:** 16s minimum (35 words / 2.5 + 2)
@@ -58,7 +58,7 @@ Narration: A Harvard Business School study found that a one-star increase in a Y
 
 ---
 
-## STAT: OF CONSUMERS WILL NOT USE
+## STAT: 47% SKIP UNDER 20 REVIEWS
 
 **Visual:** Supporting graphic
 **Duration:** 8s minimum (15 words / 2.5 + 2)
@@ -72,6 +72,6 @@ Narration: 47 percent of consumers will not use a business that has fewer than 2
 **Visual:** Question card
 **Duration:** 6s minimum (8 words / 2.5 + 2)
 
-Text: READY TO TURN YOUR GOOGLE REVIEWS INTO REAL
+Text: READY FOR MORE GOOGLE REVIEWS?
 Subtext: COMMENT BELOW
 Narration: Follow for more tips to grow your business.

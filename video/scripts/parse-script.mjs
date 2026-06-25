@@ -62,12 +62,21 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
       const stop = raw.search(/\n\n\S/);
       narration = (stop >= 0 ? raw.slice(0, stop) : raw).trim();
     }
+    // Strip leaked section delimiters ("---") that corrupt narration/TTS.
+    if (narration) {
+      narration = narration
+        .replace(/^\s*-{3,}\s*$/gm, '')   // standalone delimiter lines
+        .replace(/\s*-{3,}\s*/g, ' ')      // inline delimiter leaks
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+      if (!narration) narration = null;
+    }
 
     // Duration: explicit **Duration:** field, or compute from word count
     const durM = s.match(/\*\*Duration:\*\*\s*(\d+)s/);
     const dur = durM ? parseInt(durM[1], 10) : durationFromNarration(narration);
     const startSec = currentSec;
-    const endSec = currentSec + dur;
+    let endSec = currentSec + dur;
 
     if (/^## HOOK\b/m.test(s)) {
       segments.push({
@@ -93,11 +102,19 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
     } else if (/^## QUESTION\b/m.test(s)) {
       const textM = s.match(/^Text(?:\s+on\s+screen)?:\s*(.+)/m);
       const subtextM = s.match(/^Subtext:\s*(.+)/m);
-      const seg = {
-        type: 'question', startSec, endSec,
-        text: textM ? stripQ(textM[1].trim()) : '',
-        narration,
-      };
+      const qText = textM ? stripQ(textM[1].trim()) : '';
+      // Voice the on-screen question: if narration is empty or only the canned
+      // "Follow for more..." CTA, prepend the spoken question so the displayed
+      // question is actually read aloud (audio matches the card).
+      let qNarr = narration;
+      const cannedOnly = !qNarr || /^follow for more\b/i.test(qNarr.trim());
+      if (qText && cannedOnly) {
+        const spoken = /[?!.]$/.test(qText) ? qText : `${qText}?`;
+        qNarr = qNarr ? `${spoken} ${qNarr}` : spoken;
+      }
+      // Recompute the window so the (now longer) narration still fits.
+      endSec = startSec + Math.max(dur, durationFromNarration(qNarr));
+      const seg = { type: 'question', startSec, endSec, text: qText, narration: qNarr };
       if (subtextM) seg.subtext = stripQ(subtextM[1].trim());
       segments.push(seg);
     } else {
