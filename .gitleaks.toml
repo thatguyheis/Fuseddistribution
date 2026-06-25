@@ -13,13 +13,25 @@ keywords = ["cfut_"]
 [[rules]]
 id = "generic-env-token-assignment"
 description = "Literal token assigned to a known credential variable"
-regex = '''(?i)(CLOUDFLARE_API_TOKEN|PEXELS_API_KEY|PIXABAY_API_KEY|RESEND_API_KEY|METAL_PRICE_API_KEY)\s*[=:]\s*["']?[A-Za-z0-9_\-]{20,}'''
-keywords = ["CLOUDFLARE_API_TOKEN", "PEXELS_API_KEY", "PIXABAY_API_KEY", "RESEND_API_KEY", "METAL_PRICE_API_KEY"]
+regex = '''(?i)(CLOUDFLARE_API_TOKEN|PEXELS_API_KEY|PIXABAY_API_KEY|RESEND_API_KEY|METAL_PRICE_API_KEY|MAILERLITE_API_KEY)\s*[=:]\s*["']?[A-Za-z0-9_\-]{20,}'''
+keywords = ["CLOUDFLARE_API_TOKEN", "PEXELS_API_KEY", "PIXABAY_API_KEY", "RESEND_API_KEY", "METAL_PRICE_API_KEY", "MAILERLITE_API_KEY"]
 
-[allowlist]
+[[rules]]
+id = "mailerlite-browser-authorization"
+description = "MailerLite bearer credential embedded in browser code"
+regex = '''(?i)authorization\s*:\s*["'`]bearer\s+[A-Za-z0-9_\-]{20,}'''
+keywords = ["Authorization", "Bearer"]
+
+[[allowlists]]
 description = "Placeholders and env-var references"
+regexTarget = "secret"
 regexes = [
   '''<[a-z-]*token[a-z-]*>''',
   '''\$\{?[A-Z_]+\}?''',
   '''YOUR_|PLACEHOLDER|REDACTED|ROTATE_ME|example|xxxx|FAKEFAKE''',
 ]
+
+[[allowlists]]
+description = "ReviewTrackers publication name is not a LinkedIn client ID"
+regexTarget = "match"
+regexes = ['''(?i)linkedin":\s*"ReviewTrackers\s''']

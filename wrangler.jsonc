@@ -11,6 +11,20 @@
     "directory": "./public",
     "binding": "ASSETS"
   },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SUBMISSION_RATE_LIMITER",
+        "class_name": "SubmissionRateLimiter"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["SubmissionRateLimiter"]
+    }
+  ],
   "compatibility_flags": [
     "nodejs_compat"
   ]

@@ -16,13 +16,21 @@
     "books:draft": "node book-factory/scripts/book-factory.mjs draft",
     "books:package": "node book-factory/scripts/book-factory.mjs package",
     "books:status": "node book-factory/scripts/book-factory.mjs status",
-    "test": "node --test book-factory/tests/book-factory.test.mjs",
-    "video:parse":    "node video/scripts/parse-script.mjs",
-    "video:audio":    "node video/scripts/generate-audio.mjs",
-    "video:render":   "node video/scripts/render.mjs",
-    "video:photos":   "node video/scripts/fetch-photos.mjs",
+    "test": "npm run test:book && npm run test:worker",
+    "test:book": "node --test book-factory/tests/book-factory.test.mjs",
+    "test:worker": "vitest run",
+    "video:parse": "node video/scripts/parse-script.mjs",
+    "video:audio": "node video/scripts/generate-audio.mjs",
+    "video:render": "node video/scripts/render.mjs",
+    "video:photos": "node video/scripts/fetch-photos.mjs",
     "video:feedback": "node video/scripts/feedback.mjs",
-    "video:test":     "cd video && npm test",
-    "video":          "node video/scripts/render.mjs"
+    "video:test": "cd video && npm test",
+    "video": "node video/scripts/render.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.16.17",
+    "@types/node": "^25.9.3",
+    "vitest": "^4.1.9",
+    "wrangler": "^4.102.0"
   }
 }

@@ -280,24 +280,14 @@
       border-radius: var(--radius);
       border: 1px solid var(--border);
     }
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    .estimate-action {
       margin-top: 40px;
+      text-align: center;
     }
-    .form-group.full { grid-column: span 2; }
-    .form-control {
-      width: 100%;
-      padding: 16px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-family: var(--sans);
-      border-radius: var(--radius);
+    .estimate-action p {
+      color: var(--text-mid);
+      margin-bottom: 24px;
     }
-    .form-control:focus { outline: none; border-color: var(--primary); }
-    textarea.form-control { height: 120px; resize: vertical; }
 
     /* ─── Footer ─────────────────────────────────────────────── */
     footer {
@@ -334,7 +324,6 @@
       .service-grid { grid-template-columns: 1fr; gap: 40px; }
       .service-grid:nth-child(even) .service-content { order: 1; }
       .service-grid:nth-child(even) .service-image { order: 2; }
-      .form-grid { grid-template-columns: 1fr; }
       .form-group.full { grid-column: span 1; }
       .footer-grid { grid-template-columns: 1fr; }
       .nav-links { display: none; }
@@ -433,22 +422,15 @@
   <div class="container">
     <div class="estimate-container reveal">
       <div style="text-align: center;">
-        <p class="section-label">Fast & Easy</p>
-        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 8px;">Request an Estimate</h2>
-        <p style="color: var(--text-mid);">Send us the details of the damage, and our estimators will contact you within 24 hours.</p>
+        <p class="section-label">Portfolio Concept</p>
+        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 8px;">Need a site like this?</h2>
+        <p style="color: var(--text-mid);">This demonstration page does not accept collision estimate requests.</p>
       </div>
-      
-      <form class="form-grid">
-        <div class="form-group"><input type="text" class="form-control" placeholder="First Name" required></div>
-        <div class="form-group"><input type="text" class="form-control" placeholder="Last Name" required></div>
-        <div class="form-group"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
-        <div class="form-group"><input type="email" class="form-control" placeholder="Email Address"></div>
-        <div class="form-group full"><input type="text" class="form-control" placeholder="Vehicle Year, Make, & Model" required></div>
-        <div class="form-group full"><textarea class="form-control" placeholder="Describe the damage (e.g., Rear bumper and trunk lid damaged in collision)..."></textarea></div>
-        <div class="form-group full">
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
-        </div>
-      </form>
+
+      <div class="estimate-action">
+        <p>Talk with Fused Distribution about a website and lead capture flow built for your business.</p>
+        <a href="/#contact" class="btn btn-primary">Request a Similar Build</a>
+      </div>
     </div>
   </div>
 </section>

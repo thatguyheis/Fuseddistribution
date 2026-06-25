@@ -1625,8 +1625,6 @@
 
   <script>
     (function () {
-      var MAILERLITE_API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMjNmOTAyYWMwYjg5M2Q4ZmRmYTZiMzFiNDQ1ZDYxY2JhM2VlZTc0MDVmMzU1M2JjNTZkYTZlMGY0NzA0OTFhNjE5ZTllYjE5MDViOTljMWQiLCJpYXQiOjE3Nzk3MzUyNzUuNDk0MDUxLCJuYmYiOjE3Nzk3MzUyNzUuNDk0MDU0LCJleHAiOjQ5MzU0MDg4NzUuNDg4ODM5LCJzdWIiOiIyMzk3MjYzIiwic2NvcGVzIjpbXX0.Boypi1kWa4EB6ndel3nXRWdxYwoXe4krWBISfNFrjU6mia19yKLNikQJb0cHxh7bpMeMAhGRKODSh3sQq9ZDkYOX_B1ModSjG2aEGhvmwFOjTN5_ci_3vdhrWRilOyEtcGQ5YnQqDtylKq8XUeRxVsPXF2CFycrBfCV2k-GkMEGfsS6eLjXqfLHzOY-RKRhBuwDHt3Na96tk8zH3KwCCGtkhmZB4xAxPV4kDljE8nmW2eSoFDbPu0fa5pNYNzYsyA2qFNRO6-t53kvytaTW_p5aKzP0YJgV4-VHtzz48pLPCJzANaL5dXuNpvKuXt99-COt7JCEYVlnJuelFGxpQkei763ADyWP1LeQsPI1E24LNJLG__uSy8ppL1uKswt9Gx09X5NX9Stc-K6z8hvws7GT08rR8od4QsnXobHdlri4zYW9tV6LU-VQJ3WtJeZxSAecyftcYtmMNpy7IcBA8tt3-Xi9veiaS6fizIGj43E4Wp22rJ_YPXvGAQYxuonjFoGnmLMYFS02F-2IEWZKdKs_p7BO1XYOX4TZtY-tY_HOhbHG80KB9gUpEph1uRkVmUSU_i-RxVU4zmyAr0Zv_FPIFF8wkHPw4GVRInfyLKwgFeXktMmDVcFVsnUu1NYHJ0md6GqEs4uyupexE33bkWloT6FqRmVp84I516AFrltw';
-      var GROUP_ID = '188457997474727782';
       var STORAGE_KEY = 'rv_popup_dismissed', SUBSCRIBED_KEY = 'rv_popup_subscribed', DELAY_MS = 30000;
       function isDismissed() {
         try {
@@ -1662,17 +1660,24 @@
         e.preventDefault();
         var email = document.getElementById('rv-popup-email').value.trim();
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { document.getElementById('rv-popup-email').focus(); return; }
-        subscribeForever();
-        fetch('https://connect.mailerlite.com/api/subscribers', {
+        var btn = document.getElementById('rv-popup-btn');
+        btn.disabled = true;
+        fetch('/api/newsletter', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Bearer ' + MAILERLITE_API_KEY },
-          body: JSON.stringify({ email: email, groups: [GROUP_ID] })
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, newsletter: 'silver' })
         })
           .then(function (res) { if (!res.ok) throw new Error('bad response'); })
-          .catch(function (err) { console.error('MailerLite subscribe error:', err); })
-          .finally(function () { showSuccess(); });
+          .then(function () {
+            subscribeForever();
+            showSuccess();
+          })
+          .catch(function (err) {
+            console.error('Newsletter signup failed:', err);
+            btn.disabled = false;
+          });
       });
     })();
   </script>
-  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0a16dd4aca4ff16',t:'MTc4MTE4OTQzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  </body>
 </html>
