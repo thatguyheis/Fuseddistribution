@@ -1,0 +1,10 @@
+{
+  "hook": "Silver hedges inflation when CPI exceeds 5%.",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "5%",
+    "label": "where it has shown"
+  },
+  "discussion_question": "Should you prioritize silver for inflation hedging now?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

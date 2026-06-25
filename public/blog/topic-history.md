@@ -58,6 +58,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-25 | is-silver-a-good-hedge-against-inflation | General | is silver a good hedge against inflation |
 | 2026-06-25 | silver-etf-vs-physical-silver-tax-differences | General | silver ETF vs physical silver tax differences |
 | 2026-06-24 | physical-silver-vs-silver-etf-pros-and-cons | General | physical silver vs silver ETF pros and cons |
 | 2026-06-24 | silver-vs-gold-which-is-better-investment-in-2026 | General | silver vs gold which is better investment in 2026 |
