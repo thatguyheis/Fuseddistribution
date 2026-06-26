@@ -32,7 +32,7 @@ Remotion is a downstream renderer. It should run only after blog assets, reel da
 
 ## Current Production Standard
 
-- The 9 AM job builds, validates, publishes, and deploys approved blog posts. It does not render video.
+- The 9 AM job builds, validates, and commits approved blog posts locally for Claude review. It does not render video, push, or deploy by default.
 - The 11 AM job renders at most two stale registered reels per run and commits metadata locally for Claude review.
 - A global render lock prevents launchd, Claude, and Codex from starting concurrent Remotion jobs on the Mac.
 - Chatterbox with Nick's voice reference is the required production voice. Zoe is opt-in recovery only.

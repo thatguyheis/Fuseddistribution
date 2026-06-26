@@ -108,6 +108,8 @@ echo "Cleared zombie Remotion processes"
 
 Run this once before the first render of the session. If a previous pipeline run was interrupted (rate limit, crash), there will almost certainly be stale processes.
 
+**Global render lock.** A single render lock prevents launchd, Claude, and Codex from starting concurrent Remotion jobs on the Mac. Do not bypass it or launch a second render while one is held — concurrent renders contend for MPS/Chrome and produce silent failures. If a render aborts and leaves a stale lock, clear it only after confirming no Remotion process is running (`pgrep -f remotion`).
+
 ---
 
 ### Step 0 — Sub-Agent Review Procedure (REQUIRED when auditing AI-generated scripts)
@@ -697,24 +699,29 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 **If timing is off:** extend the segment's end timestamp in `reel-script.md` (e.g. `(23–38s)` → `(23–43s)`) and adjust all subsequent start times to match. After shifting timestamps, re-run Step 3.5 timing validation on all segments — a shift in one propagates to all following segments. Then re-render. Never shorten narration to fit a timestamp — always extend the timestamp instead.
 
-### Step 6 — Commit, deploy, and post
+**Required completion report.** Do not claim success until commands actually completed and results were checked. Report all of:
+- Output path and verified MP4 duration (ffprobe).
+- Voice used (`chatterbox`, or `zoe` only with Nick's approval).
+- Caption mode from `captions-meta.json`: `whisper`, `proportional`, `mixed`, or `none`. State the real mode — never describe proportional captions as Whisper verified.
+- `npm test` result and `validate-reel.mjs` result.
+- Visual QA findings (hook/stat/chart/question frames, sync at three points).
+- Any unresolved warnings (e.g. question text not ending in "?").
+
+### Step 6 — Commit locally, then post (no auto push/deploy)
 
 > **IMPORTANT: Do NOT commit mp4 files.** `video/out/**/*.mp4` is in `.gitignore`. GitHub blocks files over 100 MB and warns on files over 50 MB. The mp4 is for manual upload only — it is never pushed to the repo or deployed via Cloudflare.
 
-**Commit reel files (metadata only — no mp4):**
+> **Ownership rule (2026-06-25):** the reel pass **commits metadata locally only**. It does **not** `git push` and does **not** `wrangler deploy`. The source-controlled 11 AM worker validates before TTS, commits locally for review, and never pushes or deploys. Claude reviews and pushes after Nick approval. Do not push reel commits on the first pass.
+
+**Commit reel files locally (metadata only — no mp4, no push):**
 ```bash
 git add public/blog/<slug>/reel-data.md public/blog/<slug>/reel-script.md public/blog/topic-history.md
 git add video/out/<slug>/script.json video/out/<slug>/render-meta.json video/out/<slug>/captions.json video/out/<slug>/captions-meta.json
 git commit -m "feat(reel): [Post Title]"
-git push origin main
+# STOP. Do not push. Hand the local commit to Nick/Codex for approval.
 ```
 
-**Deploy blog to Cloudflare** (push does NOT auto-deploy):
-```bash
-npx wrangler deploy
-```
-
-Verify the post is live at `https://fuseddistribution.com/blog/<slug>/` before posting.
+The blog itself is committed by the separate 9 AM blog job, then pushed and deployed after Claude review. Do not run `wrangler deploy` from the reel workflow. Verify the post is already live at `https://fuseddistribution.com/blog/<slug>/` before posting the reel; if it is not live, the blog pass still needs review, push, or deploy. Stop and flag it rather than deploying from the reel workflow.
 
 **Post the reel manually:**
 - Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
@@ -866,6 +873,8 @@ Video clips play at 0.75x speed for a cinematic slow-motion feel. They loop if t
 |------|--------|--------|
 | 1. Parse script | `parse-script.mjs` | `out/<slug>/script.json` |
 | 2. Narration audio | `generate-audio.mjs --voice=chatterbox` | `public/audio/<slug>/segment-N.m4a` + cache manifest |
+
+> **Audio cache invalidation.** Cache entries are keyed by **narration text + voice**. A changed script line regenerates that segment's speech; it can never reuse stale audio from a prior narration. You do not need `--force` after editing narration — the key change handles it. Use `--force` only to rebuild unchanged segments (e.g. after a voice-sample swap).
 | 3. Background media | `fetch-media.mjs` | `public/photos/<slug>/` + media map |
 | 4. Captions | `generate-captions.mjs` | `captions.json` + `captions-meta.json` |
 | 5. Render video | Remotion | `out/<slug>/<slug>.mp4` + verified `render-meta.json` |

@@ -1,12 +1,13 @@
 #!/bin/zsh
 # Daily blog pipeline — runs via launchd at 9 AM.
-# Per-post mode: each post is a separate claude call with immediate commit+deploy.
+# Per-post mode: each post is a separate Claude call with local commit handoff.
 # Pre-flight session probe before each post prevents wasted runs on limit hits.
 
 PROJECT_DIR="/Users/nick/projects/fuseddistribution"
 LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 
 export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
+AUTO_DEPLOY="${BLOG_AUTO_DEPLOY:-0}"
 
 # ── Retry plist cleanup ────────────────────────────────────────────────────────
 launchctl bootout "gui/$(id -u)/com.nick.daily-blog-reel.retry" 2>/dev/null
@@ -134,16 +135,16 @@ set -o allexport
 source "$PROJECT_DIR/video/.env"
 set +o allexport
 
-if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
-  echo "WARN: CLOUDFLARE_API_TOKEN not set in video/.env — deploy will fail." | tee -a "$LOG_FILE"
+if [[ "$AUTO_DEPLOY" == "1" && -z "$CLOUDFLARE_API_TOKEN" ]]; then
+  echo "WARN: CLOUDFLARE_API_TOKEN not set in video/.env - auto deploy will fail." | tee -a "$LOG_FILE"
   notify "config" "CLOUDFLARE_API_TOKEN missing from video/.env"
 fi
 
-if [[ -n "$CLOUDFLARE_API_TOKEN" ]]; then
+if [[ "$AUTO_DEPLOY" == "1" && -n "$CLOUDFLARE_API_TOKEN" ]]; then
   if ! curl -s --max-time 30 -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
       "https://api.cloudflare.com/client/v4/user/tokens/verify" | grep -q '"status":"active"'; then
-    echo "WARN: Cloudflare token verify failed — deploy will fail. Roll token at dash.cloudflare.com." | tee -a "$LOG_FILE"
-    notify "auth" "Cloudflare token canary failed — deploy at risk"
+    echo "WARN: Cloudflare token verify failed - auto deploy will fail. Roll token at dash.cloudflare.com." | tee -a "$LOG_FILE"
+    notify "auth" "Cloudflare token canary failed - auto deploy at risk"
   fi
 fi
 
@@ -316,7 +317,7 @@ else: print('{}')
     [[ ! -f "$F" ]] && MISSING+=("$F")
   done
   if (( ${#MISSING[@]} > 0 )); then
-    echo "BLOCKED: $SLUG missing required files: ${MISSING[*]} — skipping commit/deploy" >> "$LOG_FILE"
+    echo "BLOCKED: $SLUG missing required files: ${MISSING[*]} - skipping local commit" >> "$LOG_FILE"
     notify "publish blocked" "$SLUG: ${#MISSING[@]} required file(s) absent"
     FAILS=$(( FAILS + 1 ))
     quarantine_post_dir "$SLUG"
@@ -325,7 +326,7 @@ else: print('{}')
 
   # build-post registers posts.json only after QA passes. If absent, do not publish.
   if ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
-    echo "BLOCKED: $SLUG missing from posts.json — QA failed or registration skipped; skipping commit/deploy" >> "$LOG_FILE"
+    echo "BLOCKED: $SLUG missing from posts.json - QA failed or registration skipped; skipping local commit" >> "$LOG_FILE"
     notify "publish blocked" "$SLUG not in posts.json — QA/registration failed"
     FAILS=$(( FAILS + 1 ))
     quarantine_post_dir "$SLUG"
@@ -343,7 +344,13 @@ else: print('{}')
     public/blog/topic-history.md 2>/dev/null
   git commit -m "feat: $SLUG" >> "$LOG_FILE" 2>&1
 
-  # Push
+  if [[ "$AUTO_DEPLOY" != "1" ]]; then
+    echo "PUBLISH PENDING: $SLUG committed locally. Claude must review, push, deploy, and verify live." >> "$LOG_FILE"
+    BUILT+=("$SLUG")
+    continue
+  fi
+
+  # Push + deploy is opt-in only. Default automation stops at local commit.
   PUSH_ERR=$(git push origin main 2>&1)
   if [[ $? -ne 0 ]]; then
     echo "$PUSH_ERR" >> "$LOG_FILE"
@@ -353,15 +360,13 @@ else: print('{}')
     else
       notify "push failed" "see daily-blog-reel.log"
     fi
+    FAILS=$(( FAILS + 1 ))
+    continue
   fi
 
-  # Deploy
   npx wrangler deploy >> "$LOG_FILE" 2>&1
-
-  # Wait for CDN propagation before verify
   sleep 45
 
-  # Verify live
   CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
   if [[ "$CODE" == "200" ]]; then
     echo "VERIFY PASS: /blog/$SLUG/ (200)" >> "$LOG_FILE"
@@ -377,13 +382,17 @@ done
 # ── Cleanup + final summary ────────────────────────────────────────────────────
 rm -f "$PENDING_FILE"
 
-LIVE_LOCS=$(curl -s --max-time 20 "https://fuseddistribution.com/sitemap.xml" | grep -c "<loc>")
-LOCAL_LOCS=$(grep -c "<loc>" public/sitemap.xml 2>/dev/null || echo 0)
-if [[ "$LIVE_LOCS" == "$LOCAL_LOCS" ]]; then
-  echo "VERIFY PASS: sitemap ($LIVE_LOCS URLs live = $LOCAL_LOCS local)" >> "$LOG_FILE"
+if [[ "$AUTO_DEPLOY" == "1" ]]; then
+  LIVE_LOCS=$(curl -s --max-time 20 "https://fuseddistribution.com/sitemap.xml" | grep -c "<loc>")
+  LOCAL_LOCS=$(grep -c "<loc>" public/sitemap.xml 2>/dev/null || echo 0)
+  if [[ "$LIVE_LOCS" == "$LOCAL_LOCS" ]]; then
+    echo "VERIFY PASS: sitemap ($LIVE_LOCS URLs live = $LOCAL_LOCS local)" >> "$LOG_FILE"
+  else
+    echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+  fi
 else
-  echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
-  FAILS=$(( FAILS + 1 ))
+  echo "AUTO_DEPLOY=0: skipped git push, wrangler deploy, and live sitemap verification." >> "$LOG_FILE"
 fi
 
 if (( FAILS > 0 )); then

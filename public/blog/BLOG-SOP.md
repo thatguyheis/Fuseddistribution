@@ -69,9 +69,8 @@ echo $PEXELS_API_KEY
   Must return zero matches. If any found: replace with numeric entity (`&middot;`→`&#183;`, `&nbsp;`→`&#160;`, `&bull;`→`&#8226;`, `&mdash;`→`&#8212;`, `&ndash;`→`&#8211;`) then regenerate the `.jpg`.
 - [ ] Run `node public/blog/scripts/generate-sitemap.mjs`
 - [ ] **Secret check** — no literal tokens/keys in any staged file, env var references only (§17). Pre-commit hook enforces.
-- [ ] `git add public/blog/ sitemap.xml && git commit && git push && npx wrangler deploy`
-- [ ] Write `social-copy.json` (§14)
-- [ ] `git add public/blog/posts.json public/blog/[slug]/` then commit
+- [ ] Commit locally only: `git add public/blog/ public/sitemap.xml && git commit -m "feat(blog): [Post Title]"`
+- [ ] Claude reviews the local commit, then pushes, deploys, and verifies live status after approval.
 
 ---
 
@@ -615,15 +614,21 @@ grep -q '"slug": "[slug]"' public/blog/posts.json && echo "OK" || echo "MISSING 
 If missing: add entry at top of array per §2. Do not commit until this passes.
 `"image"` must reference `hero.jpg` (not `hero.svg`).
 
-### Step 2 — Commit and push to GitHub
+### Step 2 — Commit locally for review
 ```bash
 git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md public/sitemap.xml
 git commit -m "feat(blog): [Post Title]"
+```
+
+The 9 AM automation stops here by default. It writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log`; Claude reviews the commit before any push or deploy.
+
+### Step 3 — Claude push and deploy after approval
+Push does NOT auto-deploy. After Claude review and approval:
+```bash
 git push origin main
 ```
 
-### Step 3 — Deploy to Cloudflare
-Push does NOT auto-deploy. Run wrangler after every push:
+Then deploy:
 ```bash
 npx wrangler deploy
 ```
@@ -634,7 +639,7 @@ curl -s -o /dev/null -w "%{http_code}" https://fuseddistribution.com/blog/[slug]
 # Must return 200 before declaring publish complete
 ```
 
-"Pushing" a blog post = all 4 steps above complete + 200 verified. Git push alone is not a publish.
+"Published" means all 4 steps above complete + 200 verified. Git push alone is not a publish.
 
 Also verify `https://fuseddistribution.com/sitemap.xml` includes the new slug. If the slug is absent, the sitemap is static — log the gap and notify Nick to add sitemap generation to the build pipeline.
 

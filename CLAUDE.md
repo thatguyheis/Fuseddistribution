@@ -52,7 +52,9 @@ Before reporting success:
 2. Verify the MP4 and non-zero duration with `ffprobe`.
 3. Inspect hook, body/stat, chart, and question frames for clipping or overlap.
 4. Confirm captions match narration at three points.
-5. Report commands, output path, validation result, and unresolved warnings.
+5. Report commands, output path, verified duration, voice, caption mode (`whisper`/`proportional`/`mixed`/`none`), validation result, and unresolved warnings.
+
+Reels commit metadata locally only. Do not `git push` or `wrangler deploy` from the reel pass. Claude reviews and pushes after Nick approval.
 
 ## Resource And Safety Rules
 
