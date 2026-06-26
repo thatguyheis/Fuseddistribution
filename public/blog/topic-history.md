@@ -59,6 +59,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-26 | silver-portfolio-allocation-beginner-vs-advanced | General | silver portfolio allocation beginner vs advanced |
 | 2026-06-26 | silver-as-emergency-money-why-it-works | General | silver as emergency money why it works |
 | 2026-06-25 | is-silver-a-good-hedge-against-inflation | General | is silver a good hedge against inflation |
 | 2026-06-25 | silver-etf-vs-physical-silver-tax-differences | General | silver ETF vs physical silver tax differences |
