@@ -1,0 +1,47 @@
+{
+  "slug": "contact-page-best-practices-for-local-business",
+  "keyword": "contact page best practices for local business",
+  "angle": "A high-converting local business contact page combines fast response times, click-to-call, trust signals, and short forms to turn visitors into booked customers.",
+  "secondary_kw": [
+    "local business contact page design",
+    "click to call best practices"
+  ],
+  "stats": [
+    {
+      "claim": "Of consumers who read positive reviews about a local business, 20% then contact the business directly, making the contact page a critical conversion point.",
+      "value": "20%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "54% of consumers visit a business's website after reading positive reviews, underscoring the need for a clear contact path on-site.",
+      "value": "54%",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026"
+    },
+    {
+      "claim": "61% of callers to businesses actually speak with a person, meaning nearly 4 in 10 inbound calls go unanswered or unreturned.",
+      "value": "61%",
+      "source_url": "https://www.invoca.com/reports/the-invoca-call-conversion-industry-benchmarks-report-2025",
+      "source_name": "Invoca Call Conversion Industry Benchmarks Report 2025"
+    },
+    {
+      "claim": "37% of phone leads from digital marketing convert during the call itself, far above typical web form close rates.",
+      "value": "37%",
+      "source_url": "https://www.invoca.com/reports/the-invoca-call-conversion-industry-benchmarks-report-2025",
+      "source_name": "Invoca Call Conversion Industry Benchmarks Report 2025"
+    },
+    {
+      "claim": "Contact forms with 3 fields convert at the highest rate (over 25%), while forms with 10 or more fields drop to roughly 15%.",
+      "value": "25%",
+      "source_url": "https://blog.hubspot.com/marketing/optimize-conversion-forms",
+      "source_name": "HubSpot Marketing Blog"
+    },
+    {
+      "claim": "78% of customers buy from the business that responds first to their inquiry, making fast contact-page response the single biggest lever for local conversions.",
+      "value": "78%",
+      "source_url": "https://www.leadangel.com/blog/operations/lead-response-time/",
+      "source_name": "LeadAngel Lead Response Time Report 2025"
+    }
+  ]
+}
