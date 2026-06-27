@@ -59,6 +59,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-27 | silver-alongside-stocks-and-bonds-diversification-guide | General | silver alongside stocks and bonds diversification guide |
 | 2026-06-27 | how-to-use-silver-to-protect-against-currency-devaluati | General | how to use silver to protect against currency devaluation |
 | 2026-06-26 | silver-portfolio-allocation-beginner-vs-advanced | General | silver portfolio allocation beginner vs advanced |
 | 2026-06-26 | silver-as-emergency-money-why-it-works | General | silver as emergency money why it works |
