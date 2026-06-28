@@ -55,7 +55,7 @@ def fig(i):
     photographer=names.get(i,"")
     # Use photographer name in alt when available to make each alt unique
     if photographer:
-        alt=H.escape(f"{kw} — photo by {photographer}")
+        alt=H.escape(f"{kw}, photo by {photographer}")
     else:
         alt=H.escape(SUFFIXES[i] if i < len(SUFFIXES) else base_alt)
     return (f'<figure class="article-photo"><img src="images/pexels-{i}.jpg" '
