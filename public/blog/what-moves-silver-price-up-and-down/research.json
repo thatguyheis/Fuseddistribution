@@ -1,0 +1,53 @@
+{
+  "slug": "what-moves-silver-price-up-and-down",
+  "keyword": "what moves silver price up and down",
+  "angle": "Silver prices are driven by a tug-of-war between record industrial demand (solar, EVs, AI), a five-year structural supply deficit, investment flows via ETFs, and macro forces like the gold-silver ratio and Fed policy.",
+  "secondary_kw": [
+    "silver price drivers",
+    "what affects silver prices"
+  ],
+  "stats": [
+    {
+      "claim": "Global silver industrial demand reached a record high in 2024, driven by solar PV, EVs, and electronics",
+      "value": "680.5 million ounces",
+      "source_url": "https://silverinstitute.org/silver-industrial-demand-reached-a-record-680-5-moz-in-2024/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "The silver market posted a structural supply deficit in 2024, the fourth consecutive annual shortfall",
+      "value": "148.9 million ounces",
+      "source_url": "https://silverinstitute.org/wp-content/uploads/2025/04/World_Silver_Survey-2025.pdf",
+      "source_name": "World Silver Survey 2025 (Silver Institute / Metals Focus)"
+    },
+    {
+      "claim": "Solar photovoltaic manufacturing consumed roughly 19% of total silver demand in 2024, up from 5% a decade earlier",
+      "value": "232 million ounces",
+      "source_url": "https://silverinstitute.org/wp-content/uploads/2025/04/World_Silver_Survey-2025.pdf",
+      "source_name": "World Silver Survey 2025 (Silver Institute)"
+    },
+    {
+      "claim": "Global silver mine production is forecast to rise to a seven-year high in 2025",
+      "value": "844 million ounces (+2% YoY)",
+      "source_url": "https://silverinstitute.org/global-silver-market-forecast-to-remain-in-a-sizeable-deficit-in-2025/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "The gold-silver ratio briefly spiked above 100:1 in April 2025 before compressing back toward its long-term average near 60:1 as silver outperformed",
+      "value": "100:1 peak, ~57-60:1 currently",
+      "source_url": "https://www.cbsnews.com/news/80-50-rule-for-silver-why-it-should-matter-to-investors-now/",
+      "source_name": "CBS News"
+    },
+    {
+      "claim": "Silver ETFs saw massive inflows in 2025 amid Fed rate cuts, pushing iShares Silver Trust (SLV) holdings to record levels",
+      "value": "517 million ounces / ~$33.97B AUM",
+      "source_url": "https://www.etf.com/sections/features/silver-hits-new-record-high-etf-flows-turn-sharply-positive",
+      "source_name": "ETF.com"
+    },
+    {
+      "claim": "US silver mine production reported by USGS for 2024",
+      "value": "USGS Mineral Commodity Summaries 2025",
+      "source_url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-silver.pdf",
+      "source_name": "U.S. Geological Survey"
+    }
+  ]
+}
