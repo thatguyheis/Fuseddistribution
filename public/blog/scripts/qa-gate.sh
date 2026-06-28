@@ -27,8 +27,26 @@ $(cat "$HTML")
 --- social-copy.json ---
 $( [[ -f "$SOCIAL" ]] && cat "$SOCIAL" || echo '{}' )"
 
-run_claude() { claude -p "$(cat)" --allowedTools "" 2>/dev/null; }
-RAW=$(echo "$PROMPT" | run_claude || true)
+DEBUG="$BLOG_DIR/$SLUG/.qa-claude.log"
+: > "$DEBUG"
+# Retry transient empty/no-JSON claude output (intermittent rate/overload). Capture stderr.
+run_claude_retry() {
+  local tries="${1:-3}" raw="" i=0
+  while (( i < tries )); do
+    i=$((i+1))
+    raw=$(printf '%s' "$PROMPT" | claude -p "$(cat)" --allowedTools "" 2>>"$DEBUG")
+    if printf '%s' "$raw" | grep -q '{'; then printf '%s' "$raw"; return 0; fi
+    echo "[qa-gate] attempt $i/$tries: empty or no-JSON claude output" >> "$DEBUG"
+    (( i < tries )) && sleep $(( i * 5 ))
+  done
+  printf '%s' "$raw"; return 1
+}
+RAW=$(run_claude_retry 3 || true)
+# Distinguish brain-stage outage (could not judge) from a real quality verdict.
+if ! printf '%s' "$RAW" | grep -q '{'; then
+  echo "qa: claude produced no JSON after retries — brain-stage outage, NOT a quality verdict. See $DEBUG" >&2
+  exit 3
+fi
 echo "$RAW" | python3 -c '
 import json,sys,re
 raw=re.sub(r"^```[a-z]*|```$","",sys.stdin.read().strip(),flags=re.M)

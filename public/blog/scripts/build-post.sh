@@ -50,7 +50,15 @@ if [[ $CLAUDE_OK -eq 1 ]]; then
   if [[ -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
     log "T5 write: verified.md exists and lint passes — skipping rewrite"
     mark write
-  elif "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'; then mark write; else log "write lint-failed (verified.md written, continue)"; mark write-warn; fi
+  else
+    "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+    WRC=${PIPESTATUS[0]}
+    case "$WRC" in
+      0) mark write;;
+      4) log "T5 write DEFERRED -> claude limit/empty, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
+      *) log "write lint-failed (verified.md written, continue)"; mark write-warn;;
+    esac
+  fi
 else
   log "T5 degraded: gemma draft -> verified.md + lint (claude unavailable)"
   # Strip gemma header (everything through first ---) then prepend proper title
@@ -70,9 +78,21 @@ if [[ ! -f "$DIR/meta.json" ]]; then
   ALT=$(GEMMA_MAX_TOKENS=30 bash -c "echo \"Write 6-word alt text for the hero image of an article titled '$TITLE'. No quotes.\" | '$GEMMA'" 2>/dev/null | tr -d '\n"' | cut -c1-90)
   if [[ "$BRAND" == "silver" ]]; then T1="Silver"; T2="Investing"; else T1="Local Business"; T2="Marketing"; fi
   BLOGDIR="$BLOG_DIR" TITLE="$TITLE" DESC="${DESC:-$TITLE}" ALT="${ALT:-$TITLE}" SLUG="$SLUG" BRAND="$BRAND" T1="$T1" T2="$T2" python3 -c '
-import json, os, datetime
-d = {"title":os.environ["TITLE"], "slug":os.environ["SLUG"], "description":os.environ["DESC"],
-     "alt":os.environ["ALT"], "date":datetime.date.today().isoformat(),
+import json, os, datetime, re
+def clean(s, fallback):
+    s = re.sub(r"\*+", "", s)                       # strip markdown bold/italic
+    s = re.sub(r"(?i)option\s*\d+\s*\([^)]*\)\s*:?", "", s)  # strip "Option N (...):"
+    s = re.sub(r"(?i)\b(here( is|s)|sure|alt text|option)\b[: ]*", "", s)
+    s = re.sub(r"\.\s*\d.*$", ".", s)               # drop trailing ".2 (F" style junk
+    s = re.sub(r"\s*\([^)]*$", "", s)               # drop trailing unclosed "(..."
+    s = s.strip(" \t:-—\"" + "‘’")
+    s = re.sub(r"\s{2,}", " ", s)
+    return s if (len(s) >= 8 and re.search(r"[A-Za-z]", s)) else fallback
+title = os.environ["TITLE"]
+d = {"title":title, "slug":os.environ["SLUG"],
+     "description":clean(os.environ["DESC"], title),
+     "alt":clean(os.environ["ALT"], title),
+     "date":datetime.date.today().isoformat(),
      "tags":[os.environ["T1"], os.environ["T2"]], "brand":os.environ["BRAND"]}
 json.dump(d, open(os.path.join(os.environ["BLOGDIR"], os.environ["SLUG"], "meta.json"), "w"), indent=2)
 '
@@ -144,7 +164,13 @@ fi
 PUBLISH_OK=1
 if [[ $CLAUDE_OK -eq 1 && -f "$DIR/index.html" ]]; then
   log "T12 qa-gate"
-  if "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'; then mark qa-pass; else log "qa FAILED -> not registering for publish"; mark qa-fail; PUBLISH_OK=0; fi
+  "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'
+  QA_RC=${PIPESTATUS[0]}
+  case "$QA_RC" in
+    0) mark qa-pass;;
+    3) log "qa DEFERRED -> claude brain-stage outage, NOT a quality failure. Keep for retry."; mark qa-deferred; PUBLISH_OK=0;;
+    *) log "qa FAILED -> not registering for publish"; mark qa-fail; PUBLISH_OK=0;;
+  esac
 fi
 
 # ── register for publish (posts.json + topic-history) — only if qa passed/degraded ──

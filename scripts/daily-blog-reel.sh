@@ -204,6 +204,7 @@ fi
 
 # ── Per-post loop ─────────────────────────────────────────────────────────────
 FAILS=0
+DEFERRED=0
 BUILT=()
 
 if ! $QUEUE_MODE; then
@@ -306,6 +307,16 @@ else: print('{}')
   fi
   rm -f "$POST_TMPOUT"
 
+  # Deferred = a claude brain-stage outage (write or QA), NOT a quality failure.
+  # Keep artifacts in place for the next run; do not quarantine, do not count as FAIL.
+  if grep -q -- '-deferred"' "public/blog/$SLUG/_status.json" 2>/dev/null \
+     && ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    echo "DEFERRED: $SLUG — claude brain-stage outage, left in place for retry." >> "$LOG_FILE"
+    notify "qa deferred" "$SLUG — claude outage, will retry"
+    DEFERRED=$(( DEFERRED + 1 ))
+    continue
+  fi
+
   # Validate required output files. Missing artifacts mean this slug is not publishable.
   MISSING=()
   for F in \
@@ -395,9 +406,11 @@ else
   echo "AUTO_DEPLOY=0: skipped git push, wrangler deploy, and live sitemap verification." >> "$LOG_FILE"
 fi
 
+DEFERRED_NOTE=""
+(( DEFERRED > 0 )) && DEFERRED_NOTE=" — $DEFERRED deferred (claude outage, retry pending)"
 if (( FAILS > 0 )); then
   notify "verification" "$FAILS check(s) FAILED — see daily-blog-reel.log"
-  echo "RESULT: $FAILS verification failure(s) — built: ${BUILT[*]:-none}" >> "$LOG_FILE"
+  echo "RESULT: $FAILS verification failure(s)${DEFERRED_NOTE} — built: ${BUILT[*]:-none}" >> "$LOG_FILE"
 else
-  echo "RESULT: all verifications passed (${#BUILT[@]} slugs + sitemap)" >> "$LOG_FILE"
+  echo "RESULT: all verifications passed (${#BUILT[@]} slugs + sitemap)${DEFERRED_NOTE}" >> "$LOG_FILE"
 fi

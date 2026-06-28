@@ -40,7 +40,17 @@ Use web search to find 4-6 specific, recent (2025-2026) statistics with real sou
 Output ONLY valid JSON (no code fences, no commentary) in exactly this shape:
 {\"slug\":\"$SLUG\",\"keyword\":\"$KEYWORD\",\"angle\":\"one sentence\",\"secondary_kw\":[\"\",\"\"],\"stats\":[{\"claim\":\"\",\"value\":\"42%\",\"source_url\":\"https://...\",\"source_name\":\"\"}]}"
 
-RAW=$(echo "$PROMPT" | claude -p "$(cat)" --allowedTools "WebSearch,WebFetch" 2>/dev/null || true)
+DEBUG="$BLOG_DIR/$SLUG/.research-claude.log"
+: > "$DEBUG"
+# Retry transient empty/no-JSON claude output. Capture stderr for diagnosis.
+RAW=""; i=0
+while (( i < 3 )); do
+  i=$((i+1))
+  RAW=$(printf '%s' "$PROMPT" | claude -p "$(cat)" --allowedTools "WebSearch,WebFetch" 2>>"$DEBUG" || true)
+  printf '%s' "$RAW" | grep -q '{' && break
+  echo "[research] attempt $i/3: empty or no-JSON claude output" >> "$DEBUG"
+  (( i < 3 )) && sleep $(( i * 5 ))
+done
 
 # strip code fences if any, extract first {...} block, validate JSON
 echo "$RAW" | python3 -c '

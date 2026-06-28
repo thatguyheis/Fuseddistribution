@@ -69,6 +69,11 @@ run_claude() {
   claude -p "$(cat)" --allowedTools "" 2>/dev/null
 }
 
+# Sentinels that mean Claude returned a limit/error message instead of an article.
+# Exit 4 = limit hit -> caller should DEFER, never write this text into the post.
+LIMIT_RE="hit your limit|usage limit|session limit|rate limit|your limit has been reached|limit reached|resets [0-9]"
+is_limit() { grep -qiE "$LIMIT_RE"; }
+
 echo "[write-article] writing: $SLUG"
 
 {
@@ -100,9 +105,17 @@ REQUIREMENTS:
 
 Output ONLY the markdown article. Start with # Title. No preamble, no commentary, no code fences.
 PROMPT
-} | run_claude > "$OUT"
+} | run_claude > "$OUT.raw"
 
-[[ -s "$OUT" ]] || { echo "error: claude produced empty output" >&2; exit 1; }
+if [[ ! -s "$OUT.raw" ]]; then
+  rm -f "$OUT.raw"; echo "error: claude produced empty output" >&2; exit 4
+fi
+if head -40 "$OUT.raw" | is_limit; then
+  rm -f "$OUT.raw"
+  echo "error: claude returned a limit/error message, not an article — DEFER (not writing $OUT)" >&2
+  exit 4
+fi
+mv "$OUT.raw" "$OUT"
 
 # Lint gate + fix loop (max 2 passes)
 for attempt in 1 2 3; do
@@ -126,7 +139,12 @@ print(", ".join(extra+terms))' || echo "")
     echo ""
     echo "--- MARKDOWN ---"
     cat "$OUT"
-  } | run_claude > "$OUT.tmp" && [[ -s "$OUT.tmp" ]] && mv "$OUT.tmp" "$OUT"
+  } | run_claude > "$OUT.tmp"
+  if [[ -s "$OUT.tmp" ]] && ! head -40 "$OUT.tmp" | is_limit; then
+    mv "$OUT.tmp" "$OUT"
+  else
+    rm -f "$OUT.tmp"; echo "[write-article] fix pass hit limit/empty — keeping prior draft" >&2
+  fi
 done
 
 echo "[write-article] WARNING: lint still failing after fixes. Violations: $VIOLATIONS" >&2
