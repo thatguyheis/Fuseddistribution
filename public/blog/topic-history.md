@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-27 | call-to-action-best-practices-for-small-business-websit | General | call to action best practices for small business websites |
+| 2026-06-27 | website-conversion-rate-what-it-means-and-how-to-improv | General | website conversion rate |
 | 2026-06-27 | contact-page-best-practices-for-local-business | General | contact page best practices for local business |
 | 2026-06-25 | mobile-website-speed-why-it-matters-for-local-business | General | mobile website speed why it matters for local business |
 | 2026-06-24 | small-business-website-mistakes-to-avoid | General | small business website mistakes to avoid |

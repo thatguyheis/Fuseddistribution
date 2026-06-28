@@ -1,0 +1,47 @@
+{
+  "slug": "website-conversion-rate-what-it-means-and-how-to-improv",
+  "keyword": "website conversion rate what it means and how to improv",
+  "angle": "Explain what a website conversion rate is, what counts as good by industry, and which levers (speed, mobile UX, friction reduction) measurably lift it.",
+  "secondary_kw": [
+    "average conversion rate by industry",
+    "how to improve conversion rate"
+  ],
+  "stats": [
+    {
+      "claim": "Average ecommerce website conversion rate in 2025",
+      "value": "1.8%",
+      "source_url": "https://www.smartinsights.com/ecommerce/ecommerce-analytics/ecommerce-conversion-rates/",
+      "source_name": "Smart Insights (IRP Commerce data)"
+    },
+    {
+      "claim": "Desktop still converts higher than mobile despite mobile traffic dominance",
+      "value": "4.8% desktop vs 2.9% mobile",
+      "source_url": "https://www.landbase.com/blog/conversion-rate-statistics",
+      "source_name": "Landbase"
+    },
+    {
+      "claim": "A 1-second delay in page load time reduces conversions",
+      "value": "7.2%",
+      "source_url": "https://www.roastweb.com/blog/mobile-conversion-rate-optimization-site-speed",
+      "source_name": "RoastWeb"
+    },
+    {
+      "claim": "Share of mobile users who abandon a site taking longer than 3 seconds to load",
+      "value": "53%",
+      "source_url": "https://www.roastweb.com/blog/mobile-conversion-rate-optimization-site-speed",
+      "source_name": "RoastWeb"
+    },
+    {
+      "claim": "Pages loading under 2.5 seconds convert higher than slower pages",
+      "value": "31% higher",
+      "source_url": "https://www.roastweb.com/blog/mobile-conversion-rate-optimization-site-speed",
+      "source_name": "RoastWeb"
+    },
+    {
+      "claim": "Email is the highest-converting channel by average conversion rate",
+      "value": "~15%",
+      "source_url": "https://www.landbase.com/blog/conversion-rate-statistics",
+      "source_name": "Landbase"
+    }
+  ]
+}
