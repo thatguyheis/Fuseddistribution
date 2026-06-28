@@ -1,0 +1,55 @@
+{
+  "slug": "silver-spot-price-explained-what-it-means",
+  "keyword": "silver spot price explained what it means",
+  "angle": "Demystify how the silver spot price is set, what drives it, and how retail buyers should interpret it when paying premiums over spot.",
+  "secondary_kw": [
+    "how silver spot price is set",
+    "LBMA silver price benchmark",
+    "silver premium over spot",
+    "gold silver ratio 2026"
+  ],
+  "stats": [
+    {
+      "claim": "The LBMA Silver Price is set daily at 12:00 noon London time in US dollars per troy ounce via 30-second auction rounds administered by ICE Benchmark Administration",
+      "value": "12:00 London / 30-second rounds",
+      "source_url": "https://www.lbma.org.uk/prices-and-data/lbma-silver-price",
+      "source_name": "LBMA"
+    },
+    {
+      "claim": "Global silver market is forecast to record a sixth consecutive annual deficit in 2026",
+      "value": "117.6 Moz deficit (2026 forecast)",
+      "source_url": "https://silverinstitute.org/global-silver-investment-to-remain-strong-in-2026-against-the-backdrop-of-a-sixth-consecutive-annual-market-deficit/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "Industrial applications account for more than half of total silver demand, led by solar PV, EVs and electronics",
+      "value": ">50% of demand is industrial",
+      "source_url": "https://silverinstitute.org/silver-supply-demand/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "iShares Silver Trust (SLV) holds roughly 14,947 tonnes of physical silver in trust as of mid-2026, the largest silver ETF in the world",
+      "value": "~14,947 tonnes (~480 Moz)",
+      "source_url": "https://www.ishares.com/us/products/239855/ishares-silver-trust-fund",
+      "source_name": "BlackRock iShares"
+    },
+    {
+      "claim": "Silver futures posted year-to-date gains capping a stellar year for precious metals in 2025",
+      "value": "+166% YTD (Dec 2025)",
+      "source_url": "https://www.cnbc.com/2025/12/30/silver-price-soars-capping-stellar-year-precious-metals.html",
+      "source_name": "CNBC"
+    },
+    {
+      "claim": "Gold-to-silver ratio in mid-2026 sits well below its modern historical average near 65:1, signaling silver outperformance",
+      "value": "~67:1 (Jun 2026) vs ~65:1 avg",
+      "source_url": "https://goldprice.org/gold-silver-ratio.html",
+      "source_name": "GoldPrice.org"
+    },
+    {
+      "claim": "Silver spot price reference for retail premium comparisons",
+      "value": "$59.16/oz on 2026-06-28",
+      "source_url": "https://www.lbma.org.uk/prices-and-data/precious-metal-prices/",
+      "source_name": "LBMA Precious Metal Prices"
+    }
+  ]
+}

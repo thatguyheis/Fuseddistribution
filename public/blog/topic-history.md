@@ -63,6 +63,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-28 | silver-spot-price-explained-what-it-means | General | silver spot price explained what it means |
 | 2026-06-28 | what-moves-silver-price-up-and-down | General | what moves silver price up and down |
 | 2026-06-28 | junk-silver-coins-guide-pre-1965-us-silver | General | junk silver coins pre-1965 |
 | 2026-06-28 | 1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy | General | 1 oz silver coins vs 10 oz silver bars |
