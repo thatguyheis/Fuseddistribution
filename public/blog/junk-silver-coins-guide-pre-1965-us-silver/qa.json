@@ -1,10 +1,6 @@
 {
   "slug": "junk-silver-coins-guide-pre-1965-us-silver",
-  "score": 78,
-  "pass": false,
-  "blockers": [
-    "Facebook reel caption is just a generic CTA fragment with no hook or context",
-    "Facebook photo caption is nearly empty (only a question)",
-    "Intro is not strictly answer-first - opens with market commentary instead of defining junk silver"
-  ]
+  "score": 88,
+  "pass": true,
+  "blockers": []
 }

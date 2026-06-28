@@ -32,7 +32,7 @@ Here's a breakdown of where to find junk silver:
 
 Determining the value of your junk silver coins involves several factors:
 
-*   **Coin Type:** Different coin types carry different premiums. Some popular pre-1965 coins include Morgan dollars, Peace dollars, and Walking Liberty dollars.
+*   **Coin Type:** Different coin types carry different premiums. Junk silver is 90% silver pre-1965 US dimes, quarters, and half dollars: Mercury and Roosevelt dimes, Washington quarters, and Walking Liberty, Franklin, and Kennedy half dollars (1964 and earlier).
 *   **Condition:** The condition of the coin heavily impacts its value. Graded coins (e.g., Mint State, About Uncirculated) command higher premiums.
 *   **Mint Mark:** Mint marks indicate where the coin was minted. Certain mint marks (e.g., Carson City) are highly sought after and command higher premiums.
 *   **Year:** The year of minting also influences value.
@@ -58,7 +58,7 @@ Consider these strategies for building a junk silver collection:
 *   **Taxes:** Consult with a tax advisor about the tax implications of buying and selling silver.
 *   **Research:** Thoroughly research any coin before you buy.
 
-**Disclaimer:** *I am an AI Chatbot and not a financial advisor. This information is for general knowledge and informational purposes only, and does not constitute financial advice. Investing in silver involves risk, and you should consult with a qualified financial advisor before making any investment decisions.*
+**Disclaimer:** *This guide is for general information only and is not financial advice. Investing in silver involves risk. Consult a qualified financial advisor before making any investment decisions.*
 
 ## Related
 

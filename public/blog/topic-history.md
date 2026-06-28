@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-28 | landing-page-vs-website-which-do-you-need | General | landing page vs website |
 | 2026-06-27 | call-to-action-best-practices-for-small-business-websit | General | call to action best practices for small business websites |
 | 2026-06-27 | website-conversion-rate-what-it-means-and-how-to-improv | General | website conversion rate |
 | 2026-06-27 | contact-page-best-practices-for-local-business | General | contact page best practices for local business |
@@ -62,6 +63,9 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-28 | junk-silver-coins-guide-pre-1965-us-silver | General | junk silver coins pre-1965 |
+| 2026-06-28 | 1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy | General | 1 oz silver coins vs 10 oz silver bars |
+| 2026-06-28 | how-to-read-silver-spot-price-charts | General | how to read silver spot price charts |
 | 2026-06-27 | silver-alongside-stocks-and-bonds-diversification-guide | General | silver alongside stocks and bonds diversification guide |
 | 2026-06-27 | how-to-use-silver-to-protect-against-currency-devaluati | General | how to use silver to protect against currency devaluation |
 | 2026-06-26 | silver-portfolio-allocation-beginner-vs-advanced | General | silver portfolio allocation beginner vs advanced |
