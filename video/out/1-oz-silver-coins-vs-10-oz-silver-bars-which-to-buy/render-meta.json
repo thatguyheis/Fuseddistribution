@@ -1,9 +1,13 @@
 {
   "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
-  "renderedAt": "2026-06-18T20:33:17.862Z",
+  "renderedAt": "2026-06-28T14:43:52.282Z",
   "hookType": "statement",
   "segmentCount": 10,
-  "totalDuration": 183,
-  "musicTrack": "ambient-09.mp3",
+  "scriptDuration": 183,
+  "renderedDuration": 178.154667,
+  "scriptHash": "109936bd93283417527d639c59cfbc265a02f36969fae416453d2903e71f8f43",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-10.mp3",
   "photosUsed": 10
 }

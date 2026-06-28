@@ -1,0 +1,78 @@
+{
+  "slug": "call-to-action-best-practices-for-small-business-websit",
+  "title": "call-to-action-best-practices-for-small-business-websit",
+  "totalDuration": 187,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 7,
+      "text": "Personalized calls to action convert 20% better than generic ones.",
+      "narration": "Personalized calls to action convert 20 percent better than generic ones."
+    },
+    {
+      "type": "overlay",
+      "startSec": 7,
+      "endSec": 23,
+      "text": "YOUR CALL TO ACTION TELLS",
+      "narration": "Your call to action tells a visitor exactly what to do next: call now, book a quote, add to cart, sign up. If that instruction is vague, buried, or missing, people leave without acting."
+    },
+    {
+      "type": "stat",
+      "startSec": 23,
+      "endSec": 43,
+      "text": "371% COMPARED TO EMAILS PACKED WITH",
+      "narration": "WordStream found that emails with a single call to action increased clicks by 371 percent compared to emails packed with competing links. The same logic holds on web pages. You can still include a secondary, quieter option for people who are not ready."
+    },
+    {
+      "type": "overlay",
+      "startSec": 43,
+      "endSec": 66,
+      "text": "BUY NOW FEELS HEAVIER THAN",
+      "narration": "\"Buy Now\" feels heavier than \"Get Started.\" \"Register\" feels like a chore next to \"Claim My Spot.\" Small wording shifts change how risky the click feels. People do not read web pages top to bottom. They scan in an F shape, hitting the top, the left, and the headline area first."
+    },
+    {
+      "type": "overlay",
+      "startSec": 66,
+      "endSec": 90,
+      "text": "GIVE YOUR PRIMARY BUTTON A",
+      "narration": "Give your primary button a color that appears nowhere else on the page. If your brand palette is blue and gray, an orange or green button jumps out. The button should be one of the largest clickable elements on screen, with padding around the text so it reads as a button, not a link."
+    },
+    {
+      "type": "stat",
+      "startSec": 90,
+      "endSec": 112,
+      "text": "60% OF GLOBAL WEBSITE VISITS SO",
+      "narration": "Match the ask to where the visitor sits, and more of them say yes. More than half of web traffic now comes from phones. Statista reports mobile accounts for roughly 60 percent of global website visits, so your call to action has to work with a thumb, not a mouse."
+    },
+    {
+      "type": "stat",
+      "startSec": 112,
+      "endSec": 131,
+      "text": "30 TIE URGENCY TO YOUR REAL",
+      "narration": "Use real limits you actually have: \"Booking now for next month, two slots remain this week.\" \"Free quotes through Friday.\" \"Spring service special ends June 30.\" Tie urgency to your real calendar, inventory, or promotion. State the deadline plainly near the button."
+    },
+    {
+      "type": "overlay",
+      "startSec": 131,
+      "endSec": 151,
+      "text": "USE A FREE ANALYTICS TOOL",
+      "narration": "Use a free analytics tool to record clicks on each call to action and completions of each form or call. Watch three numbers: Click rate: how many people who see the button click it. Conversion rate: how many who click finish the action."
+    },
+    {
+      "type": "overlay",
+      "startSec": 151,
+      "endSec": 179,
+      "text": "OPEN YOUR THREE MOST VISITED",
+      "narration": "Open your three most-visited pages today and ask one question of each: if a visitor does exactly one thing here, what should it be? Rewrite the primary button to say that, move it where people look first, then watch your analytics for two weeks. Small, measured changes to your calls to action compound into more calls, more forms, and more customers over the months ahead."
+    },
+    {
+      "type": "question",
+      "startSec": 179,
+      "endSec": 187,
+      "text": "What's your website's biggest conversion challenge right now?",
+      "narration": "What's your website's biggest conversion challenge right now? Follow for more practical business tips.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}
