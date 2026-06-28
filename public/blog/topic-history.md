@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-28 | facebook-page-vs-facebook-group-for-business | General | facebook page vs facebook group for business |
 | 2026-06-28 | landing-page-vs-website-which-do-you-need | General | landing page vs website |
 | 2026-06-27 | call-to-action-best-practices-for-small-business-websit | General | call to action best practices for small business websites |
 | 2026-06-27 | website-conversion-rate-what-it-means-and-how-to-improv | General | website conversion rate |
