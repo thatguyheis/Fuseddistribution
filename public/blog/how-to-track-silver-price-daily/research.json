@@ -1,0 +1,49 @@
+{
+  "slug": "how-to-track-silver-price-daily",
+  "keyword": "how to track silver price daily",
+  "angle": "A practical guide to monitoring silver prices in real time, covering the LBMA benchmark fix, COMEX futures, ETF flows, and the daily volatility that makes tracking essential in 2025-2026.",
+  "secondary_kw": [
+    "silver spot price",
+    "LBMA silver fix",
+    "COMEX silver futures",
+    "silver price today"
+  ],
+  "stats": [
+    {
+      "claim": "LBMA Silver Price benchmark auction runs daily at 12:00 noon London time in 30-second rounds",
+      "value": "12:00 noon",
+      "source_url": "https://www.lbma.org.uk/prices-and-data/lbma-silver-price/lbma-silver-price-faq",
+      "source_name": "London Bullion Market Association"
+    },
+    {
+      "claim": "Silver averaged $41.18 per ounce in 2025 based on LBMA London fix data, the strongest annual performance since 1983",
+      "value": "$41.18",
+      "source_url": "https://silverinstitute.org/wp-content/uploads/2025/11/Silver_Institute_Silver_Interim_2025.pdf",
+      "source_name": "Silver Institute / Metals Focus"
+    },
+    {
+      "claim": "Silver hit a record high above $49.95 per ounce in October 2025 before extreme daily volatility took prices into the $80-$117 range late in the year",
+      "value": "$49.95",
+      "source_url": "https://investingnews.com/daily/resource-investing/precious-metals-investing/silver-investing/silver-forecast/",
+      "source_name": "Investing News Network"
+    },
+    {
+      "claim": "Silver industrial demand hit a record 680.5 million ounces in 2024, the fourth consecutive annual record",
+      "value": "680.5 million oz",
+      "source_url": "https://silverinstitute.org/wp-content/uploads/2025/04/World_Silver_Survey-2025.pdf",
+      "source_name": "Silver Institute World Silver Survey 2025"
+    },
+    {
+      "claim": "The global silver market posted a 148.9 million-ounce deficit in 2024, its fifth consecutive annual shortfall",
+      "value": "148.9 million oz",
+      "source_url": "https://silverinstitute.org/silver-supply-demand/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "iShares Silver Trust (SLV) reported net assets of $15.25 billion as of March 31, 2025 in its 10-Q SEC filing",
+      "value": "$15.25 billion",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001330568/000143774925015169/slv20250331_10q.htm",
+      "source_name": "SEC EDGAR / iShares Silver Trust 10-Q"
+    }
+  ]
+}

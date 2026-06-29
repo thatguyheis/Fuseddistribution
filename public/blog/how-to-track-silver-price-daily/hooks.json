@@ -1,0 +1,10 @@
+{
+  "hook": "Track three feeds to stop overpaying for silver.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$49.95",
+    "label": "per ounce in October"
+  },
+  "discussion_question": "How will this method change your silver buying strategy?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
