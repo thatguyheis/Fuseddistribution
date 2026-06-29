@@ -14,6 +14,9 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-29 | what-pages-every-small-business-website-needs | General | what pages every small business website needs |
+| 2026-06-28 | how-much-does-a-small-business-website-cost | General | how much does a small business website cost |
+| 2026-06-28 | instagram-for-local-business-complete-guide | General | instagram for local business |
 | 2026-06-28 | facebook-page-vs-facebook-group-for-business | General | facebook page vs facebook group for business |
 | 2026-06-28 | landing-page-vs-website-which-do-you-need | General | landing page vs website |
 | 2026-06-27 | call-to-action-best-practices-for-small-business-websit | General | call to action best practices for small business websites |
