@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-06-29 | tiktok-for-local-business-does-it-work | General |  |
 | 2026-06-29 | how-often-to-post-on-social-media-for-small-business | General | how often to post on social media for small business |
 | 2026-06-29 | what-pages-every-small-business-website-needs | General | what pages every small business website needs |
 | 2026-06-28 | how-much-does-a-small-business-website-cost | General | how much does a small business website cost |
