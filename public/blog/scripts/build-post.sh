@@ -53,10 +53,19 @@ if [[ $CLAUDE_OK -eq 1 ]]; then
   else
     "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
     WRC=${PIPESTATUS[0]}
+    LIMIT_RE="hit your limit|usage limit|session limit|rate limit|your limit has been reached|limit reached|resets [0-9]"
     case "$WRC" in
       0) mark write;;
       4) log "T5 write DEFERRED -> claude limit/empty, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
-      *) log "write lint-failed (verified.md written, continue)"; mark write-warn;;
+      *) # Non-zero, non-4. Only a lint-warn if a REAL article landed. If verified.md is
+         # missing/empty or holds a limit message, this is an outage -> DEFER, never warn
+         # (warn -> FATAL no-verified.md -> parent quarantines as a quality fault).
+         if [[ ! -s "$DIR/verified.md" ]] || head -40 "$DIR/verified.md" 2>/dev/null | grep -qiE "$LIMIT_RE"; then
+           rm -f "$DIR/verified.md"
+           log "T5 write DEFERRED -> exit $WRC with no usable article (claude limit/outage). Keep for retry."
+           mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0
+         fi
+         log "write lint-failed (verified.md written, continue)"; mark write-warn;;
     esac
   fi
 else

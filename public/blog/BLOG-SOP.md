@@ -830,3 +830,49 @@ When the 9 AM pipeline hits a blocker (push rejected, deploy auth, blog QA fail)
 1. Attempt automated recovery first (this section + render log review).
 2. If recovery requires Nick (browser auth, force push, secret rotation): log exact one-line instruction to `~/Library/Logs/daily-blog-reel.log` and stop that step only — continue all steps that don't depend on it.
 3. Never leave posts in "committed but not deployed" state silently — the log must state which slugs are NOT live.
+
+## 18. Claude usage-limit handling (DEFER, never quarantine)
+
+A claude usage/session limit is an **outage**, not a quality failure. The pipeline
+must DEFER the post (leave artifacts in place, schedule a retry) — never move it to
+`.workflow-blocked/` and never count it as a FAIL. Quarantining a limit-hit is the
+historical cause of "tech posts stopped appearing": the silver post runs first, burns
+the quota, then the tech post hits the limit and gets thrown away.
+
+**The hard rule:** any stage that shells out to `claude -p` and runs under
+`set -e`/`set -o pipefail` MUST neutralize the pipeline exit so the limit-detect guard
+can run. `claude -p` exits **non-zero** on a limit, so an un-guarded
+`... | claude -p ... > out` aborts the whole script *before* the guard, leaving the
+limit message on disk and returning a generic failure that the caller mislabels.
+
+```bash
+# WRONG — set -e aborts here on a limit, guard below never runs:
+{ prompt; } | run_claude > "$OUT.raw"
+if head -40 "$OUT.raw" | is_limit; then exit 4; fi   # unreachable on a limit
+
+# RIGHT — keep going so the guard classifies and DEFERS (exit 4):
+{ prompt; } | run_claude > "$OUT.raw" || true
+if head -40 "$OUT.raw" | is_limit; then rm -f "$OUT.raw"; exit 4; fi
+```
+
+**Status contract (`_status.json` `stages[]`):**
+- `write-deferred` / `qa-deferred` = claude outage. Caller keeps artifacts, retries. NOT a fail.
+- `write-warn` = a real lint-failing article exists on disk (`verified.md` present, no limit
+  text). Only legitimate when content was actually written. A `write-warn` with no usable
+  `verified.md` is a bug — `build-post.sh` reclassifies it to `write-deferred`.
+
+**Limit sentinels** (keep `write-article.sh` and `build-post.sh` in sync):
+`hit your limit | usage limit | session limit | rate limit | your limit has been reached | limit reached | resets [0-9]`
+
+**After ANY change to the claude-calling stages**, prove the defer guard is still
+reachable before relying on it:
+```bash
+bash -n public/blog/scripts/write-article.sh
+# repro: a `set -euo pipefail` script with a non-zero pipeline + `|| true` must still
+# reach the line after the pipeline. If it doesn't, the defer path is dead code.
+```
+
+**Recovering a wrongly-quarantined post:** dirs in `.workflow-blocked/<date>/<slug>-HHMMSS/`
+whose `_status.json` shows `write-warn`/`qa-fail` with a `verified.md.raw` containing a
+limit message were outages, not quality failures. Re-run the post once quota resets:
+`public/blog/scripts/build-post.sh <slug> --brand=tech --keyword="..."` then publish per §13.

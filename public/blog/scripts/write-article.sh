@@ -105,7 +105,12 @@ REQUIREMENTS:
 
 Output ONLY the markdown article. Start with # Title. No preamble, no commentary, no code fences.
 PROMPT
-} | run_claude > "$OUT.raw"
+} | run_claude > "$OUT.raw" || true
+# NOTE: `|| true` is REQUIRED. claude -p exits non-zero on a usage/session limit.
+# With `set -euo pipefail`, an un-guarded pipeline would abort the script HERE,
+# before the is_limit defer guard below — leaving a limit message in $OUT.raw and
+# returning a generic failure that the caller mislabels as a quality fault
+# (write-warn) and quarantines. Keep going so the guard can DEFER (exit 4) instead.
 
 if [[ ! -s "$OUT.raw" ]]; then
   rm -f "$OUT.raw"; echo "error: claude produced empty output" >&2; exit 4
@@ -139,7 +144,7 @@ print(", ".join(extra+terms))' || echo "")
     echo ""
     echo "--- MARKDOWN ---"
     cat "$OUT"
-  } | run_claude > "$OUT.tmp"
+  } | run_claude > "$OUT.tmp" || true   # see note above: don't let a limit abort before the guard
   if [[ -s "$OUT.tmp" ]] && ! head -40 "$OUT.tmp" | is_limit; then
     mv "$OUT.tmp" "$OUT"
   else
