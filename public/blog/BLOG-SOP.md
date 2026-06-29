@@ -620,10 +620,12 @@ git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md 
 git commit -m "feat(blog): [Post Title]"
 ```
 
-The 9 AM automation stops here by default. It writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log`; Claude reviews the commit before any push or deploy.
+**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run does Steps 3–4 automatically: after each local commit it runs `git push origin main`, `npx wrangler deploy`, and curl-verifies each slug returns 200. QA-failed or deferred posts (e.g. Claude brain-stage outage) are still NOT registered and NOT pushed — they stay local for retry.
 
-### Step 3 — Claude push and deploy after approval
-Push does NOT auto-deploy. After Claude review and approval:
+To revert to manual review, remove `BLOG_AUTO_DEPLOY` from the plist (or set to `0`) and reload: `launchctl bootout gui/$(id -u)/com.nick.daily-blog-reel && launchctl bootstrap gui/$(id -u) <plist>`. With it off, the run stops after local commit and writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log` for Claude review.
+
+### Step 3 — Push and deploy (auto when BLOG_AUTO_DEPLOY=1; else Claude after approval)
+When auto-deploy is off, push does NOT auto-deploy. Run manually after review and approval:
 ```bash
 git push origin main
 ```
