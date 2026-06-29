@@ -1,0 +1,79 @@
+# Reel Data: how-often-to-post-on-social-media-for-small-business
+topic: tech
+format: long-form
+
+hook: Consistency drives five times more engagement than irregular posting.
+hook_type: contrarian_stat
+
+## segments
+- type: stat
+  text: 3 TO TIMES PER WEEK ON
+  narration: Post 3 to 5 times per week on your main platform, then add daily Google Business Profile activity on top. That single rule covers most local small businesses, from plumbers to bakeries to dental offices. You do not need to post every day on every channel.
+- type: stat
+  text: 2 B SERVICES CONSULTANTS ACCOUNTANTS COMMERCIAL
+  narration: B2B services, consultants, accountants, commercial trades: LinkedIn. Visual trades like landscaping, remodeling, auto detailing: Instagram. Younger demographics, food, fitness, fashion: TikTok or Instagram Reels. Once you pick, commit to 3 to 5 posts per week on that platform for 90 days.
+- type: stat
+  text: 11 OR MORE TIMES PER WEEK
+  narration: The data on posting more often is real, but it favors businesses that already have a content engine. You should know the numbers before you decide where to push. Accounts posting 11 or more times per week earn nearly 17,000 more impressions per post and 3x more engagement than accounts posting once a week .
+- type: stat
+  text: 400 LOCAL FOLLOWERS AND ONE STRONG
+  narration: A roofer with 400 local followers and one strong testimonial reel per week will out-earn a roofer with 8,000 random followers and daily fluff. A VerticalResponse survey found that 43 percent of small business owners spend about 6 hours per week on social media marketing .
+- type: stat
+  text: 30 MINUTES POST A GOOGLE BUSINESS
+  narration: Saturday, 30 minutes: Post a Google Business Profile update. A photo from a recent job with two sentences of context. Note which post got the most saves, comments, or DMs. That becomes the template for next week.
+- type: stat
+  text: 30 SECONDS BEHIND THE SCENES SHOW
+  narration: One question, one answer: Pick a question you get every week and answer it on camera in 30 seconds. Behind the scenes: Show your team setting up, prepping a job site, or restocking shelves. Day in the life: 4 to 6 clips of 5 seconds each, stitched together with a single caption.
+- type: overlay
+  text: SKIP THESE COMPLETELY GENERIC MOTIVATIONAL
+  narration: Skip these completely: generic motivational quotes, stock photos with text overlays, holiday graphics with no connection to your business, reposts of other people's content with no commentary, anything that mentions politics, and any post that does not include a clear next step.
+- type: stat
+  text: 30 PHOTOS OF FINISHED WORK YOUR
+  narration: Shoot 30 photos of finished work, your team, your space. That stockpile carries you through the next 4 to 5 weeks of posting, even when the job calendar fills up. Use Buffer, Later, Metricool, or Meta Business Suite. Free tiers cover everything a small business needs.
+- type: overlay
+  text: BY THE END OF NEXT
+  narration: By the end of next month, you will have a posting habit that survives your busiest season, a Google Business Profile that ranks above your competitors, and the only metric that matters going in the right direction.
+
+## question
+text: What's your biggest social media posting challenge right now?
+subtext: COMMENT BELOW
+narration: What's your biggest social media posting challenge right now? Follow for more practical business tips.
+
+## shared
+discussion_question: What's your biggest social media posting challenge right now?
+hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
+
+## media_queries
+- segment: 0
+  query: "how often to post on social media for small business"
+  prefer: video
+- segment: 1
+  query: "how often to post on social media for small business 3 to times"
+  prefer: photo
+- segment: 2
+  query: "how often to post on social media for small business 2 b services"
+  prefer: photo
+- segment: 3
+  query: "how often to post on social media for small business 11 or more"
+  prefer: photo
+- segment: 4
+  query: "how often to post on social media for small business 400 local followers"
+  prefer: photo
+- segment: 5
+  query: "how often to post on social media for small business 30 minutes post"
+  prefer: photo
+- segment: 6
+  query: "how often to post on social media for small business 30 seconds behind"
+  prefer: photo
+- segment: 7
+  query: "how often to post on social media for small business skip these completely"
+  prefer: photo
+- segment: 8
+  query: "how often to post on social media for small business 30 photos of"
+  prefer: photo
+- segment: 9
+  query: "how often to post on social media for small business by the end"
+  prefer: photo
+- segment: 10
+  query: "how often to post on social media for small business customer feedback"
+  prefer: photo
