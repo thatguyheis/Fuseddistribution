@@ -1,0 +1,10 @@
+{
+  "hook": "Buy silver below the $25 median for historical value.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$1.29",
+    "label": "per ounce for most"
+  },
+  "discussion_question": "Should you buy silver now, or wait for the next historical dip?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
