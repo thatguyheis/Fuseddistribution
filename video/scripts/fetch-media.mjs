@@ -8,7 +8,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, 
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { get as httpsGet } from 'node:https';
-import { execSync } from 'node:child_process';
+import { execSync, spawnSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -54,12 +54,103 @@ function segmentKeywords(seg, topic) {
     .split(/\s+/).filter(w => w.length > 3).slice(0, 4).join(' ') + (topic === 'silver' ? ' silver' : ' business');
 }
 
+function cleanStockQuery(value, fallback) {
+  const cleaned = String(value ?? '')
+    .replace(/[`"'{}[\]]/g, ' ')
+    .replace(/[^a-zA-Z0-9\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .slice(0, 7)
+    .join(' ');
+  return cleaned.length >= 4 && cleaned.length <= 80 ? cleaned : fallback;
+}
+
+function refineMediaQueriesWithLocalLlm(slug, script, mediaQueries, topic) {
+  if (process.env.HERMES_MEDIA_QUERY_LLM === '0') return {};
+  const helper = process.env.LOCAL_LLM || '/Users/nick/bin/hermes-local.sh';
+  if (!existsSync(helper)) return {};
+
+  const items = script.segments.map((seg, index) => {
+    const qEntry = mediaQueries[index];
+    const fallback = qEntry?.query ?? segmentKeywords(seg, topic);
+    return {index, type: seg.type, prefer: qEntry?.prefer ?? 'video', text: seg.text ?? seg.title ?? '', fallback};
+  });
+  const prompt = `Return only compact JSON mapping segment indexes to stock media search queries. Each query must be 2-6 plain English words, visual, concrete, safe for Pexels/Pixabay, no punctuation. Topic: ${topic}. Slug: ${slug}. Segments: ${JSON.stringify(items)}`;
+  const result = spawnSync(helper, [prompt], {
+    encoding: 'utf8',
+    timeout: Number(process.env.HERMES_MEDIA_QUERY_TIMEOUT_MS || 20000),
+    env: {
+      ...process.env,
+      HERMES_LOCAL_MAX_TOKENS: process.env.HERMES_MEDIA_QUERY_MAX_TOKENS || '180',
+      HERMES_LOCAL_TIMEOUT: process.env.HERMES_MEDIA_QUERY_HTTP_TIMEOUT || '8',
+    },
+  });
+  if (result.status !== 0 || !result.stdout?.trim()) {
+    console.warn('  ⚠  local LLM media query refinement unavailable — using deterministic queries');
+    return {};
+  }
+
+  try {
+    const match = result.stdout.match(/\{[\s\S]*\}/);
+    if (!match) throw new Error('no JSON object');
+    const parsed = JSON.parse(match[0]);
+    const refined = {};
+    for (const item of items) {
+      const value = parsed[item.index] ?? parsed[String(item.index)];
+      if (value) refined[item.index] = cleanStockQuery(value, item.fallback);
+    }
+    if (Object.keys(refined).length > 0) console.log(`  ✓ local LLM refined ${Object.keys(refined).length} media querie(s)`);
+    return refined;
+  } catch {
+    console.warn('  ⚠  local LLM media query output invalid — using deterministic queries');
+    return {};
+  }
+}
+
 export function mediaCacheKey(query, prefer, segmentType) {
   return JSON.stringify({query, prefer, segmentType});
 }
 
 function loadManifest(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return {version: 1, segments: {}}; }
+}
+
+function setManifestSegment(manifest, index, key, details = {}) {
+  manifest.segments[index] = {
+    key,
+    ...details,
+    updatedAt: new Date().toISOString(),
+  };
+}
+
+function cachedSource(manifest, index, fallback) {
+  const source = manifest.segments?.[index]?.source;
+  return source && source !== 'cached' ? source : fallback;
+}
+
+function validFile(path, minBytes) {
+  try {
+    return existsSync(path) && statSync(path).size > minBytes;
+  } catch {
+    return false;
+  }
+}
+
+function photoSrc(slug, index) {
+  return `photos/${slug}/segment-${index}.jpg`;
+}
+
+function videoSrc(slug, index) {
+  return `videos/${slug}/segment-${index}.mp4`;
+}
+
+function listFallbackPhotoIndexes(photoDir, segmentCount) {
+  const indexes = [];
+  for (let i = 0; i < segmentCount; i++) {
+    if (validFile(join(photoDir, `segment-${i}.jpg`), 1024)) indexes.push(i);
+  }
+  return indexes;
 }
 
 function fetchJson(url, headers) {
@@ -70,6 +161,9 @@ function fetchJson(url, headers) {
       res.on('end', () => { try { resolve(JSON.parse(data)); } catch { reject(new Error(`Bad JSON: ${url}`)); } });
     });
     req.on('error', reject);
+    req.setTimeout(Number(process.env.MEDIA_FETCH_TIMEOUT_MS || 15000), () => {
+      req.destroy(new Error(`Timed out fetching JSON: ${url}`));
+    });
   });
 }
 
@@ -77,14 +171,18 @@ function downloadFile(url, dest) {
   return new Promise((resolve, reject) => {
     const file = createWriteStream(dest);
     const follow = (u) => {
-      httpsGet(u, res => {
+      const req = httpsGet(u, res => {
         if (res.statusCode === 301 || res.statusCode === 302) {
           file.close(); return follow(res.headers.location);
         }
         res.pipe(file);
         file.on('finish', () => file.close(resolve));
         file.on('error', reject);
-      }).on('error', reject);
+      });
+      req.on('error', reject);
+      req.setTimeout(Number(process.env.MEDIA_FETCH_TIMEOUT_MS || 15000), () => {
+        req.destroy(new Error(`Timed out downloading media: ${u}`));
+      });
     };
     follow(url);
   });
@@ -172,75 +270,104 @@ export async function fetchMedia(slug) {
   const usedVideoIds = new Set();
   const usedPhotoIds = new Set();
   const {queries: mediaQueries, topic} = loadReelData(slug);
+  const refinedQueries = refineMediaQueriesWithLocalLlm(slug, script, mediaQueries, topic);
   const manifestPath = join(videoDir, 'out', slug, 'media-manifest.json');
   const manifest = loadManifest(manifestPath);
+  manifest.segments ??= {};
+  if (!pexelsKey && !pixabayKey) {
+    console.warn('  ⚠  PEXELS_API_KEY and PIXABAY_API_KEY unset — using local copied media only');
+  } else {
+    console.log('  ✓ stock media API keys available — API fetch enabled for missing segments');
+  }
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
     const jpgDest = join(photoDir, `segment-${i}.jpg`);
     const mp4Dest = join(clipDir, `segment-${i}.mp4`);
     const qEntry = mediaQueries[i];
-    const rawQuery = qEntry?.query ?? segmentKeywords(seg, topic);
+    const deterministicQuery = qEntry?.query ?? segmentKeywords(seg, topic);
+    const rawQuery = refinedQueries[i] ?? deterministicQuery;
     const prefer = qEntry?.prefer ?? 'video';
     const skipVideo = ['chart', 'cta', 'question'].includes(seg.type) || prefer === 'photo';
     const cacheKey = mediaCacheKey(rawQuery, prefer, seg.type);
     const cacheValid = manifest.segments?.[i]?.key === cacheKey;
 
-    const hasVideo = existsSync(mp4Dest) && statSync(mp4Dest).size > 10240;
-    const hasPhoto = existsSync(jpgDest) && statSync(jpgDest).size > 1024;
-    if (cacheValid && hasVideo && !skipVideo) {
-      media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: hasPhoto ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'cached' };
-      console.log(`  ↷  segment-${i} video exists — skipping`);
+    const hasVideo = validFile(mp4Dest, 10240);
+    const hasPhoto = validFile(jpgDest, 1024);
+    if (hasVideo && !skipVideo) {
+      const source = cacheValid ? cachedSource(manifest, i, 'local-video') : 'local-video';
+      media[i] = { type: 'video', src: videoSrc(slug, i), thumb: hasPhoto ? photoSrc(slug, i) : undefined, source };
+      setManifestSegment(manifest, i, cacheKey, {source: media[i].source, query: rawQuery, prefer});
+      console.log(`  ↷  segment-${i} video exists — using local file${cacheValid ? '' : ' (cache refreshed)'}`);
       continue;
     }
-    if (cacheValid && hasPhoto) {
-      media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'cached' };
-      console.log(`  ↷  segment-${i} photo exists — skipping`);
+    if (hasPhoto) {
+      const source = cacheValid ? cachedSource(manifest, i, 'local-photo') : 'local-photo';
+      media[i] = { type: 'photo', src: photoSrc(slug, i), source };
+      setManifestSegment(manifest, i, cacheKey, {source: media[i].source, query: rawQuery, prefer});
+      console.log(`  ↷  segment-${i} photo exists — using local file${cacheValid ? '' : ' (cache refreshed)'}`);
       continue;
     }
-
-    if (!pexelsKey && !pixabayKey) continue;
 
     let fetched = false;
+    const attempts = [];
 
     if (!skipVideo && pixabayKey) {
+      attempts.push('pixabay-video');
       const ok = await fetchPixabayVideo(rawQuery, mp4Dest, usedVideoIds, pixabayKey);
       if (ok) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
-        media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: existsSync(jpgDest) ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'pixabay' };
+        media[i] = { type: 'video', src: videoSrc(slug, i), thumb: validFile(jpgDest, 1024) ? photoSrc(slug, i) : undefined, source: 'pixabay' };
         console.log(`  ✓ segment-${i} video (pixabay): "${rawQuery}"`);
-        manifest.segments[i] = {key: cacheKey};
+        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-video', query: rawQuery, prefer, attempts});
         fetched = true;
       }
     }
 
     if (!fetched && !skipVideo && pexelsKey) {
+      attempts.push('pexels-video');
       const ok = await fetchPexelsVideo(rawQuery, mp4Dest, usedVideoIds, pexelsKey);
       if (ok) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
-        media[i] = { type: 'video', src: `videos/${slug}/segment-${i}.mp4`, thumb: existsSync(jpgDest) ? `photos/${slug}/segment-${i}.jpg` : undefined, source: 'pexels' };
+        media[i] = { type: 'video', src: videoSrc(slug, i), thumb: validFile(jpgDest, 1024) ? photoSrc(slug, i) : undefined, source: 'pexels' };
         console.log(`  ✓ segment-${i} video (pexels): "${rawQuery}"`);
-        manifest.segments[i] = {key: cacheKey};
+        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-video', query: rawQuery, prefer, attempts});
         fetched = true;
       }
     }
 
     if (!fetched && pixabayKey) {
+      attempts.push('pixabay-photo');
       const ok = await fetchPixabayPhoto(rawQuery, jpgDest, usedPhotoIds, pixabayKey);
       if (ok) {
-        media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'pixabay' };
+        media[i] = { type: 'photo', src: photoSrc(slug, i), source: 'pixabay' };
         console.log(`  ✓ segment-${i} photo (pixabay): "${rawQuery}"`);
-        manifest.segments[i] = {key: cacheKey};
+        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-photo', query: rawQuery, prefer, attempts});
         fetched = true;
       }
     }
 
     if (!fetched && pexelsKey) {
+      attempts.push('pexels-photo');
       const ok = await fetchPexelsPhoto(rawQuery, jpgDest, usedPhotoIds, pexelsKey);
       if (ok) {
-        media[i] = { type: 'photo', src: `photos/${slug}/segment-${i}.jpg`, source: 'pexels' };
+        media[i] = { type: 'photo', src: photoSrc(slug, i), source: 'pexels' };
         console.log(`  ✓ segment-${i} photo (pexels): "${rawQuery}"`);
-        manifest.segments[i] = {key: cacheKey};
+        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-photo', query: rawQuery, prefer, attempts});
+        fetched = true;
+      }
+    }
+
+    if (!fetched) {
+      const fallbackIndexes = listFallbackPhotoIndexes(photoDir, script.segments.length);
+      if (fallbackIndexes.length > 0) {
+        const fallbackIndex = fallbackIndexes[i % fallbackIndexes.length];
+        media[i] = { type: 'photo', src: photoSrc(slug, fallbackIndex), source: 'local-fallback' };
+        setManifestSegment(manifest, i, cacheKey, {source: 'local-fallback', query: rawQuery, prefer, fallback: fallbackIndex, attempts});
+        const attemptSummary = attempts.length > 0 ? ` after ${attempts.join(', ')}` : '';
+        console.log(`  ↷  segment-${i} media fallback${attemptSummary} -> segment-${fallbackIndex}.jpg`);
+      } else {
+        console.warn(`  ⚠  segment-${i} has no media: "${rawQuery}"`);
       }
     }
   }

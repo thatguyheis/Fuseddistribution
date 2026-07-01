@@ -1,6 +1,6 @@
 {
   "slug": "how-to-target-local-customers-with-facebook-ads",
-  "renderedAt": "2026-07-01T19:05:44.777Z",
+  "renderedAt": "2026-07-01T20:53:22.722Z",
   "hookType": "statement",
   "segmentCount": 10,
   "scriptDuration": 196,
@@ -9,5 +9,12 @@
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "ambient-04.mp3",
-  "photosUsed": 0
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay-photo": 7
+  }
 }

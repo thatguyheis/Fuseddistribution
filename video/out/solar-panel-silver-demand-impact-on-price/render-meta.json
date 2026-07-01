@@ -1,6 +1,6 @@
 {
   "slug": "solar-panel-silver-demand-impact-on-price",
-  "renderedAt": "2026-07-01T19:44:16.782Z",
+  "renderedAt": "2026-07-01T21:06:20.788Z",
   "hookType": "statement",
   "segmentCount": 10,
   "scriptDuration": 187,
@@ -9,5 +9,12 @@
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "ambient-04.mp3",
-  "photosUsed": 0
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay-photo": 7
+  }
 }

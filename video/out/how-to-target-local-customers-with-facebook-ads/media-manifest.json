@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to target local customers with facebook ads\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to target local customers with facebook ads",
+      "prefer": "video",
+      "updatedAt": "2026-07-01T20:43:45.092Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 1 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to target local customers with facebook ads 1 to 5",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 4 miles never\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to target local customers with facebook ads 4 miles never",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 18 to 24\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads 18 to 24",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "4": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 15 minute inspection\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads 15 minute inspection",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "5": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 48 hours budget\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads 48 hours budget",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "6": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 1 out landing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads 1 out landing",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.099Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "7": {
+      "key": "{\"query\":\"how to target local customers with facebook ads viewers qualified clickers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads viewers qualified clickers",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.100Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "8": {
+      "key": "{\"query\":\"how to target local customers with facebook ads 15 second vertical\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads 15 second vertical",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.100Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    },
+    "9": {
+      "key": "{\"query\":\"how to target local customers with facebook ads customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to target local customers with facebook ads customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-07-01T20:43:45.100Z",
+      "attempts": [
+        "pixabay-photo"
+      ]
+    }
+  }
+}

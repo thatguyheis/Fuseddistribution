@@ -24,6 +24,13 @@ fi
 ulimit -n 65536 2>/dev/null || true
 cd "$PROJECT_DIR" || exit 1
 
+if [[ -f "$VIDEO_DIR/.env" ]]; then
+  set -o allexport
+  source "$VIDEO_DIR/.env"
+  set +o allexport
+fi
+log "Media env: PEXELS_API_KEY=$([[ -n "${PEXELS_API_KEY:-}" ]] && echo set || echo unset) PIXABAY_API_KEY=$([[ -n "${PIXABAY_API_KEY:-}" ]] && echo set || echo unset)"
+
 pkill -f "chrome-headless-shell" 2>/dev/null || true
 find "$VIDEO_DIR/public/audio" -name "*_tmp.wav" -delete 2>/dev/null || true
 TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 9) + 2 )))
@@ -109,12 +116,18 @@ if (( ${#COMMITTED[@]} > 0 )); then
   for SLUG in "${COMMITTED[@]}"; do
     git add -f \
       "video/out/$SLUG/script.json" \
+      "video/out/$SLUG/media.json" \
+      "video/out/$SLUG/photos.json" \
+      "video/out/$SLUG/media-manifest.json" \
       "video/out/$SLUG/render-meta.json" \
       "video/out/$SLUG/captions.json" \
       "video/out/$SLUG/captions-meta.json" 2>/dev/null || true
     git add "public/blog/$SLUG/reel-script.md" "public/blog/$SLUG/reel-data.md" 2>/dev/null || true
     COMMIT_PATHS+=(
       "video/out/$SLUG/script.json"
+      "video/out/$SLUG/media.json"
+      "video/out/$SLUG/photos.json"
+      "video/out/$SLUG/media-manifest.json"
       "video/out/$SLUG/render-meta.json"
       "video/out/$SLUG/captions.json"
       "video/out/$SLUG/captions-meta.json"
@@ -123,7 +136,7 @@ if (( ${#COMMITTED[@]} > 0 )); then
     )
   done
   git commit -m "feat: render Chatterbox reels - ${(j:, :)COMMITTED}" -- "${COMMIT_PATHS[@]}" >> "$LOG_FILE" 2>&1 || log "No render metadata changes to commit"
-  log "Committed render metadata locally. Claude must review and push."
+  log "Committed render metadata locally. Hermes/Codex owner must review and push."
 fi
 
 log "Complete: rendered=$RENDERED failed=$FAILED"

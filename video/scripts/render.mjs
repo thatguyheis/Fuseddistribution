@@ -62,6 +62,20 @@ function detectHookType(text) {
   return 'statement';
 }
 
+function summarizeMedia(media) {
+  const entries = Object.values(media);
+  const sourceCounts = {};
+  for (const entry of entries) {
+    sourceCounts[entry.source ?? 'unknown'] = (sourceCounts[entry.source ?? 'unknown'] ?? 0) + 1;
+  }
+  return {
+    mediaUsed: entries.length,
+    photoCount: entries.filter((entry) => entry.type === 'photo').length,
+    videoCount: entries.filter((entry) => entry.type === 'video').length,
+    mediaSources: sourceCounts,
+  };
+}
+
 async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voice = 'chatterbox') {
   const reelLabel = reelN ? ` (reel ${reelN})` : '';
   console.log(`\n=== Blog Reel Renderer: ${slug}${reelLabel} ===\n`);
@@ -87,9 +101,17 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
   // 2. Audio
   run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice}`);
 
-  // 3. Media (requires PEXELS_API_KEY env var; skips silently if not set)
+  // 3. Media. Stock APIs are best-effort; local copied blog images are the
+  // required fallback. Rendering without media is a production failure.
   console.log('\n→ fetch-media.mjs');
   const media = await fetchMedia(slug);
+  const missingMedia = script.segments
+    .map((_, index) => index)
+    .filter((index) => !media[index]);
+  if (missingMedia.length > 0) {
+    throw new Error(`Missing media for segment(s): ${missingMedia.join(', ')}`);
+  }
+  const mediaSummary = summarizeMedia(media);
 
   // 3b. Captions. Uses Whisper when installed, otherwise records proportional fallback mode.
   console.log('\n→ generate-captions.mjs');
@@ -138,7 +160,8 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
     voice,
     captionMode: captionResult.meta.mode,
     musicTrack,
-    photosUsed: Object.keys(media).length,
+    photosUsed: mediaSummary.mediaUsed,
+    ...mediaSummary,
   };
   writeFileSync(join(videoDir, 'out', slug, 'render-meta.json'), JSON.stringify(meta, null, 2));
 
