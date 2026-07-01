@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-01 | how-to-target-local-customers-with-facebook-ads | General | how to target local customers with facebook ads |
 | 2026-06-30 | instagram-stories-for-local-business-how-to-use | General | instagram stories for local business how to use |
 | 2026-06-30 | social-media-content-ideas-for-small-business | General | social media content ideas for small business |
 | 2026-06-29 | tiktok-for-local-business-does-it-work | General |  |
