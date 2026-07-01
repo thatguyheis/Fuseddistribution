@@ -71,6 +71,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-01 | why-silver-has-industrial-demand-driving-price | General | why silver has industrial demand driving price |
 | 2026-06-30 | silver-price-history-and-long-term-trends | General | silver price history and long term trends |
 | 2026-06-29 | how-to-track-silver-price-daily | General | how to track silver price daily |
 | 2026-06-29 | silver-to-gold-ratio-explained-how-to-use-it | General | silver to gold ratio explained how to use it |
