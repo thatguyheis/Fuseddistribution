@@ -1,0 +1,53 @@
+{
+  "slug": "solar-panel-silver-demand-impact-on-price",
+  "keyword": "solar panel silver demand impact on price",
+  "angle": "Solar PV is now the largest single driver of industrial silver demand, but thrifting and record installations are pulling the price in opposite directions heading into 2026.",
+  "secondary_kw": [
+    "silver photovoltaic demand 2026",
+    "silver price solar industrial demand"
+  ],
+  "stats": [
+    {
+      "claim": "Silver spot price on July 1, 2026",
+      "value": "$58.30/oz",
+      "source_url": "https://silverinstitute.org/silver-supply-demand/",
+      "source_name": "Silver Institute (live spot reference)"
+    },
+    {
+      "claim": "Silver demand from PV producers in 2025",
+      "value": "186.6 million ounces",
+      "source_url": "https://www.pv-magazine.com/2026/04/15/silver-demand-from-pv-industry-expected-to-drop-19-this-year/",
+      "source_name": "pv magazine / World Silver Survey 2026"
+    },
+    {
+      "claim": "Forecast decline in PV silver demand in 2026 due to thrifting",
+      "value": "-19% to ~151 Moz",
+      "source_url": "https://silverinstitute.org/wp-content/uploads/2026/04/World-Silver-Survey-2026.pdf",
+      "source_name": "Silver Institute, World Silver Survey 2026"
+    },
+    {
+      "claim": "Solar's share of total silver industrial demand in 2024 vs 2014",
+      "value": "29% vs 11%",
+      "source_url": "https://silverinstitute.org/silver-demand-forecast-to-expand-across-key-technology-sectors/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "Silver's share of total solar panel production cost in 2025 (up from 5% in 2023)",
+      "value": "~14%",
+      "source_url": "https://www.nasdaq.com/articles/solar-panel-makers-look-sub-copper-silver-price-hits-record-levels",
+      "source_name": "BloombergNEF via Nasdaq"
+    },
+    {
+      "claim": "Structural silver market deficit forecast for 2025 (fifth consecutive year)",
+      "value": "95 million ounces",
+      "source_url": "https://silverinstitute.org/the-silver-market-is-on-course-for-fifth-successive-structural-market-deficit/",
+      "source_name": "The Silver Institute"
+    },
+    {
+      "claim": "Global solar capacity growth in 2025 offsetting per-cell thrifting",
+      "value": "~15% YoY",
+      "source_url": "https://goldsilver.com/industry-news/article/silver-supply-deficit-solar-thrifting/",
+      "source_name": "GoldSilver citing World Silver Survey 2026"
+    }
+  ]
+}
