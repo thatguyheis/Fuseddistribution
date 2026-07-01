@@ -14,7 +14,7 @@ Narration: Solar demand drives silver price action, creating a structural floor.
 
 ---
 
-## STAT: 232 million OUNCES OF SILVER IN AND
+## STAT: 232 MILLION OUNCES SOLAR PANEL SILVER SINGLE
 
 **Visual:** Supporting article visual
 **Duration:** 14s minimum
@@ -23,7 +23,7 @@ Narration: Solar panel manufacturing pulled roughly 232 million ounces of silver
 
 ---
 
-## STAT: 5% IN TO OVER IN THAT
+## STAT: 5% SHARE SILVER DEMAND FOUR
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
@@ -32,7 +32,7 @@ Narration: Ten years later it is the biggest single line item. Solar's share of 
 
 ---
 
-## OVERLAY: THEY REDESIGN PASTE FORMULAS SWITCH
+## OVERLAY: REDESIGN PASTE FORMULAS SWITCH
 
 **Visual:** Supporting article visual
 **Duration:** 23s minimum
@@ -41,7 +41,7 @@ Narration: They redesign paste formulas, switch to copper-plated contacts on som
 
 ---
 
-## STAT: 14% OF YOUR COST STACK TWO
+## STAT: $58 TO $75 SILVER COST STACK WRECKS
 
 **Visual:** Supporting article visual
 **Duration:** 24s minimum
@@ -50,7 +50,7 @@ Narration: That is a line item their CFOs argue about. When silver becomes 14 pe
 
 ---
 
-## OVERLAY: THE SILVER INSTITUTE PROJECTS WILL
+## OVERLAY: SILVER INSTITUTE PROJECTS MARK
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
@@ -59,7 +59,7 @@ Narration: The Silver Institute projects 2025 will mark the fifth consecutive ye
 
 ---
 
-## STAT: 80, SILVER IS HISTORICALLY CHEAP RELATIVE
+## STAT: 80, SILVER HISTORICALLY CHEAP RELATIVE
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
@@ -68,7 +68,7 @@ Narration: If you want lower volatility, tilt heavier to gold. Use the gold-silv
 
 ---
 
-## STAT: 1 OUNCE ROUNDS FROM A REPUTABLE
+## STAT: 1 OUNCE ROUNDS REPUTABLE PRIVATE MINT
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
@@ -77,7 +77,7 @@ Narration: If you want fractional flexibility, buy 1 ounce rounds from a reputab
 
 ---
 
-## STAT: 10 OUNCE BAR OR A TUBE
+## STAT: 10 OUNCE SILVER BAR TUBE AMERICAN
 
 **Visual:** Supporting article visual
 **Duration:** 27s minimum

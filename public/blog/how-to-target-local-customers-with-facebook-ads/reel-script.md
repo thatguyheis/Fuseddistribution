@@ -14,7 +14,7 @@ Narration: Target local customers with a tight radius and video strategy.
 
 ---
 
-## STAT: 1 TO MILES AROUND YOUR BUSINESS
+## STAT: 1 TO 5 MILES RADIUS BUSINESS ADDRESS TARGET
 
 **Visual:** Supporting article visual
 **Duration:** 16s minimum
@@ -23,7 +23,7 @@ Narration: Set your Facebook ad radius to 1 to 5 miles around your business addr
 
 ---
 
-## STAT: 4 MILES SHOULD NEVER RUN ADS
+## STAT: 4 MILES NEVER RUN ADS MILE
 
 **Visual:** Supporting article visual
 **Duration:** 23s minimum
@@ -32,7 +32,7 @@ Narration: A pizza shop that delivers within 4 miles should never run ads to a 2
 
 ---
 
-## STAT: 6 MONTHS AND RECENTLY ENGAGED A
+## STAT: 18 TO 24 YEAR OLDS
 
 **Visual:** Supporting article visual
 **Duration:** 24s minimum
@@ -41,7 +41,7 @@ Narration: A wedding photographer adds "engaged (6 months)" and "recently engage
 
 ---
 
-## STAT: 555 FOR A FREE MINUTE INSPECTION
+## STAT: 15 MINUTE INSPECTION WEEK GETS
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
@@ -50,7 +50,7 @@ Narration: The important stuff has to come first. End with a specific offer and 
 
 ---
 
-## STAT: 48 hours KILL THE LOSERS THEN MAKE
+## STAT: 48 HOURS BUDGET KILL LOSERS MAKE
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
@@ -59,7 +59,7 @@ Narration: Free tools like CapCut or Descript will auto-caption in a few minutes
 
 ---
 
-## STAT: 1 OUT OF YOUR LANDING PAGE
+## STAT: 1 OUT LANDING PAGE OFFER
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
@@ -68,7 +68,7 @@ Narration: If you are getting 1 out of 100, your landing page or your offer is b
 
 ---
 
-## OVERLAY: THOSE VIEWERS ARE MORE QUALIFIED
+## OVERLAY: VIEWERS QUALIFIED CLICKERS SHOW
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
@@ -77,7 +77,7 @@ Narration: Those viewers are more qualified than random clickers. Show them a ve
 
 ---
 
-## STAT: 15 SECOND VERTICAL VIDEO ON YOUR
+## STAT: 15 SECOND VERTICAL VIDEO PHONE
 
 **Visual:** Supporting article visual
 **Duration:** 33s minimum
