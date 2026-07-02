@@ -98,30 +98,156 @@ def segment_duration(value: str) -> int:
 
 
 FIGURE_PATTERN = re.compile(
-    r"(?:[$£€]\s*)?\d[\d,]*(?:\.\d+)?\s*(?:%|percent|million|billion|trillion|x|years?|days?|hours?)?",
+    r"(?:[$£€]\s*)?\d[\d,]*(?:\.\d+)?\s*(?:%|percent|million(?:\s+ounces?)?|billion(?:\s+ounces?)?|trillion(?:\s+ounces?)?|ounces?|grams?|x|years?|days?|hours?|minutes?|miles?)?",
     flags=re.I,
 )
+RANGE_FIGURE_PATTERN = re.compile(
+    r"(?:[$£€]\s*)?\d[\d,]*(?:\.\d+)?\s*(?:to|-)\s*(?:[$£€]\s*)?\d[\d,]*(?:\.\d+)?\s*(?:%|percent|x|years?|days?|hours?|minutes?|miles?)?",
+    flags=re.I,
+)
+PHONE_PATTERN = re.compile(r"\b\d{3}[-.\s]\d{4}\b")
+LABEL_STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "around",
+    "as",
+    "at",
+    "be",
+    "because",
+    "but",
+    "by",
+    "can",
+    "for",
+    "from",
+    "get",
+    "has",
+    "have",
+    "if",
+    "in",
+    "into",
+    "is",
+    "it",
+    "its",
+    "just",
+    "more",
+    "not",
+    "of",
+    "on",
+    "or",
+    "over",
+    "per",
+    "should",
+    "so",
+    "than",
+    "that",
+    "the",
+    "their",
+    "they",
+    "then",
+    "this",
+    "those",
+    "to",
+    "will",
+    "when",
+    "which",
+    "with",
+    "within",
+    "without",
+    "you",
+    "your",
+    "need",
+    "random",
+}
+PRIORITY_LABEL_WORDS = {
+    "ADDRESS",
+    "BARS",
+    "BUDGET",
+    "BUSINESS",
+    "CALLS",
+    "COST",
+    "CUSTOMERS",
+    "DEMAND",
+    "EV",
+    "GROWTH",
+    "INSPECTION",
+    "LEADS",
+    "MARGINS",
+    "METAL",
+    "MILES",
+    "OUNCES",
+    "PANEL",
+    "PANELS",
+    "PRICE",
+    "RADIUS",
+    "SHARE",
+    "SILVER",
+    "SOLAR",
+    "SPOT",
+    "STACK",
+    "TARGET",
+    "VIDEO",
+}
 
 
 def find_figure(value: str) -> re.Match[str] | None:
-    for match in FIGURE_PATTERN.finditer(value):
+    masked = PHONE_PATTERN.sub(lambda match: " " * len(match.group(0)), value)
+    range_match = RANGE_FIGURE_PATTERN.search(masked)
+    if range_match:
+        return range_match
+    for match in FIGURE_PATTERN.finditer(masked):
         raw = match.group(0).strip()
         digits = re.sub(r"\D", "", raw)
-        has_unit = bool(re.search(r"[$£€%]|percent|million|billion|trillion|x|years?|days?|hours?", raw, flags=re.I))
+        has_unit = bool(re.search(r"[$£€%]|percent|million|billion|trillion|ounces?|grams?|x|years?|days?|hours?|minutes?|miles?", raw, flags=re.I))
         if digits and 1900 <= int(digits) <= 2100 and not has_unit:
             continue
         return match
     return None
 
 
+def normalize_figure_label(value: str) -> str:
+    figure = re.sub(r"\s+", " ", value.strip())
+    figure = re.sub(r"\bpercent\b", "%", figure, flags=re.I)
+    figure = re.sub(r"\s*-\s*", " TO ", figure)
+    figure = re.sub(r"\s+to\s+", " TO ", figure, flags=re.I)
+    figure = re.sub(r"\s+", " ", figure)
+    return figure.upper()
+
+
+def content_words(value: str) -> list[str]:
+    words = []
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9']*", value):
+        word = raw.lower().strip("'")
+        if len(word) < 3 or word in LABEL_STOPWORDS:
+            continue
+        words.append(word.upper())
+    return words
+
+
 def display_label(value: str, include_figure: bool) -> str:
     clean = scrub(value)
     figure_match = find_figure(clean)
-    figure = figure_match.group(0).strip() if include_figure and figure_match else ""
-    remainder = clean[figure_match.end():] if figure_match else clean
-    words = re.findall(r"[A-Za-z][A-Za-z0-9']*", remainder)
-    context = " ".join(words[:5]).upper()
+    figure = normalize_figure_label(figure_match.group(0)) if include_figure and figure_match else ""
+    if figure_match:
+        before_words = content_words(clean[: figure_match.start()])
+        after_words = content_words(clean[figure_match.end() :])
+        priority = [word for word in before_words if word in PRIORITY_LABEL_WORDS][-3:]
+        words = priority + after_words[:5]
+    else:
+        words = content_words(clean)
+    figure_words = set(content_words(figure))
+    deduped: list[str] = []
+    for word in words:
+        if word in figure_words or word in deduped:
+            continue
+        deduped.append(word)
+        if len(deduped) >= 4:
+            break
+    words = deduped
+    context = " ".join(words[:4])
     label = f"{figure} {context}".strip()
+    label = re.sub(r"\s+", " ", label)
     return label[:52] or "KEY TAKEAWAY"
 
 

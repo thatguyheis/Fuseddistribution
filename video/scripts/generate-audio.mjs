@@ -18,6 +18,7 @@ const VOICE_SAMPLE = join(ROOT, 'voice-sample/voice-reference.wav');
 
 const HAS_CHATTERBOX = existsSync(CHATTERBOX_PY) && existsSync(CHATTERBOX_SCRIPT) && existsSync(VOICE_SAMPLE);
 const HAS_COQUI = existsSync(VOICE_SAMPLE) && existsSync(TTS_BIN);
+const CHATTERBOX_BATCH_TIMEOUT_MS = Number(process.env.CHATTERBOX_BATCH_TIMEOUT_MS || 45 * 60 * 1000);
 
 function sayToM4a(text, outPath) {
   const escaped = text.replace(/'/g, "'\\''");
@@ -35,9 +36,12 @@ function chatterboxBatchToM4a(slug, jobs) {
     CHATTERBOX_SCRIPT,
     `--manifest=${batchPath}`,
     `--speaker_wav=${VOICE_SAMPLE}`,
-  ], { stdio: ['ignore', 'ignore', 'pipe'] });
+  ], { stdio: ['ignore', 'ignore', 'pipe'], timeout: CHATTERBOX_BATCH_TIMEOUT_MS });
   rmSync(batchPath, {force: true});
 
+  if (result.signal === 'SIGTERM') {
+    throw new Error(`Chatterbox TTS timed out after ${Math.round(CHATTERBOX_BATCH_TIMEOUT_MS / 1000)}s`);
+  }
   if (result.status !== 0) {
     throw new Error(result.stderr?.toString() || 'Chatterbox TTS failed');
   }

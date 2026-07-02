@@ -14,7 +14,7 @@ Narration: Industrial demand drives silver, locking in demand for a decade.
 
 ---
 
-## STAT: 59% OF TOTAL GLOBAL SILVER DEMAND
+## STAT: 59% PRICE TOTAL GLOBAL SILVER
 
 **Visual:** Supporting article visual
 **Duration:** 17s minimum
@@ -23,7 +23,7 @@ Narration: Silver's price floor comes from factories, not vaults. Industrial app
 
 ---
 
-## STAT: 20 GRAMS OF SILVER ARE GONE
+## STAT: 20 GRAMS SILVER SOLAR PANEL GONE
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
@@ -32,7 +32,7 @@ Narration: When a jeweler melts down old chains, silver returns to the market. W
 
 ---
 
-## OVERLAY: WHEN THOSE VAULTS GET THIN
+## OVERLAY: VAULTS THIN ENOUGH LARGE
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
@@ -41,7 +41,7 @@ Narration: When those vaults get thin enough that a large industrial buyer canno
 
 ---
 
-## OVERLAY: EVEN WITH THRIFTING PV CONSUMES
+## OVERLAY: EVEN THRIFTING CONSUMES SILVER
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
@@ -50,7 +50,7 @@ Narration: Even with thrifting, PV consumes more silver than every camera and X-
 
 ---
 
-## STAT: 23 million OUNCES PER YEAR JUST FROM
+## STAT: 23 MILLION OUNCES YEAR GROWTH ICE SILVER
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
@@ -59,7 +59,7 @@ Narration: Convert that to ounces and you get roughly 23 million ounces per year
 
 ---
 
-## STAT: 30% GENERIC OUNCE OR OUNCE BARS
+## STAT: 30% GENERIC OUNCE BARS LOWER
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
@@ -68,7 +68,7 @@ Narration: Premiums are higher but liquidity is unmatched. Any dealer in the cou
 
 ---
 
-## STAT: 40% YEAR OVER YEAR INDUSTRIAL SILVER
+## STAT: 40% SILVER SOLAR YEAR INDUSTRIAL
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
@@ -77,7 +77,7 @@ Narration: Watch for announcements from JinkoSolar, LONGi, or Tesla about produc
 
 ---
 
-## OVERLAY: YOU DO NOT NEED TO
+## OVERLAY: RIGHT NEXT MONTH'S SPOT
 
 **Visual:** Supporting article visual
 **Duration:** 24s minimum

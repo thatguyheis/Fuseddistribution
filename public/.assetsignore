@@ -6,3 +6,5 @@
 blog/scripts
 blog/research
 blog/*/social-copy.json
+blog/*/posting-pack.json
+blog/*/posting-pack.md

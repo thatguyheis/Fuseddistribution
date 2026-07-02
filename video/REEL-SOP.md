@@ -709,7 +709,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 ### Step 6 — Commit locally, then post (no auto push/deploy)
 
-> **IMPORTANT: Do NOT commit mp4 files.** `video/out/**/*.mp4` is in `.gitignore`. GitHub blocks files over 100 MB and warns on files over 50 MB. The mp4 is for manual upload only — it is never pushed to the repo or deployed via Cloudflare.
+> **IMPORTANT: Do NOT commit source mp4 files.** `video/out/**/*.mp4` is in `.gitignore`. GitHub blocks files over 100 MB and warns on files over 50 MB. Buffer-safe public copies may be generated under `public/reels/` and `public/reels-x/` for Cloudflare deployment, but those files are local deployment artifacts and are also gitignored.
 
 > **Ownership rule (2026-06-25):** the reel pass **commits metadata locally only**. It does **not** `git push` and does **not** `wrangler deploy`. The source-controlled 11 AM worker validates before TTS, commits locally for review, and never pushes or deploys. Claude reviews and pushes after Nick approval. Do not push reel commits on the first pass.
 
@@ -723,11 +723,37 @@ git commit -m "feat(reel): [Post Title]"
 
 The blog itself is committed by the separate 9 AM blog job, then pushed and deployed after Claude review. Do not run `wrangler deploy` from the reel workflow. Verify the post is already live at `https://fuseddistribution.com/blog/<slug>/` before posting the reel; if it is not live, the blog pass still needs review, push, or deploy. Stop and flag it rather than deploying from the reel workflow.
 
-**Post the reel manually:**
-- Upload `video/out/<slug>/<slug>.mp4` to Instagram Reels / Facebook Reels / TikTok
-- Caption: copy the platform caption from `public/blog/<slug>/social-copy.json` → `reel.[platform]` field. Add a blank line, then paste `discussion_question` on its own line.
-- Hashtags: copy `hashtags` field from `public/blog/<slug>/social-copy.json` (5 max — already correct in the file)
-- First comment: paste the live blog URL
+**Prepare posting handoff:**
+```bash
+npm run social:pack -- <slug>
+```
+
+This writes `public/blog/<slug>/posting-pack.md` and `posting-pack.json`.
+
+For Facebook Professional Mode browser posting, prepare a 7-item manual batch:
+
+```bash
+npm run social:facebook:batch
+```
+
+This writes `.facebook-reels-batch.md` and `.facebook-reels-batch.json` with the Facebook text, matching blog URL, and a short reel text sample for each selected video. After the batch is live, mark the posted slugs with `npm run social:facebook:batch -- --mark-posted=slug-one,slug-two` so the next batch skips completed slugs.
+
+For automatic YouTube queue planning, first generate the Buffer-safe public copy, deploy it, then plan from the verified hosted URL:
+
+```bash
+npm run social:buffer:youtube:media -- --slugs=<slug>
+npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
+```
+
+This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open for today's new reels, blocks YouTube API media over 179 seconds or 25 MiB, verifies each selected MP4 URL returns `200 video/mp4`, and writes `.buffer-youtube-queue.json` with custom scheduled Buffer payloads between 1:00 PM and 7:00 PM `America/Los_Angeles`.
+
+**Post the reel manually or through Buffer:**
+- YouTube: use Buffer channel `Nick` (`6a3e63375ab6d2f1067461b2`). If `public/blog/<slug>/posting-pack.json` includes a stable HTTPS `assets.public_media_url`, schedule through the Buffer API with `mode: customScheduled`, `schedulingType: automatic`, a `dueAt` between 1:00 PM and 7:00 PM `America/Los_Angeles`, the Buffer-safe MP4 as a video asset, and `metadata.youtube.title` plus `metadata.youtube.categoryId`. If there is no public media URL, upload `public/reels/<slug>/<slug>.mp4` manually in Buffer, then paste the YouTube title and description from the posting pack.
+- YouTube AI disclosure: set the AI content disclosure/tag to `Yes` in Buffer or YouTube Studio for AI-assisted reels. The Buffer API tool does not expose this field today, so verify it manually after API scheduling.
+- X: use Buffer channel `thatguyheis` (`6a3e73fb5ab6d2f10674b516`) through the Buffer API only when the reel is X-eligible. Use `npm run social:buffer:x:plan` and schedule only selected jobs. The working payload is top-level `assets: [{ video: { url } }]`. The post must be 280 characters or fewer and the MP4 must be at most 140 seconds. After `create_post`, call `get_post`; do not log an X reel as scheduled unless the returned post still has a video asset. Long-form reels over 140 seconds need an X cutdown before scheduling.
+- Facebook Professional Mode profile: use Facebook native tools only. Upload the MP4 through the Facebook app or Professional Dashboard, then paste the Facebook caption from the posting pack.
+- Instagram / LinkedIn: use the platform caption from `public/blog/<slug>/social-copy.json` if posting manually.
+- First comment: paste the live blog URL.
 
 **Timing matters — first 6 hours are the algorithm's testing window:**
 - Post when your audience is active (Facebook: Tue–Thu 9am–1pm local; Instagram: M/W/F 9–11am)

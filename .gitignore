@@ -23,6 +23,25 @@ public/photos/derived/marketplace/*
 
 # Rendered video files — too large for GitHub
 video/out/**/*.mp4
+public/reels/**/*.mp4
+public/reels-x/**/*.mp4
+
+# Local social posting handoff files include machine-specific asset paths
+public/blog/*/posting-pack.json
+public/blog/*/posting-pack.md
+.buffer-media-urls.json
+.buffer-x-media-urls.json
+.buffer-youtube-queue.json
+.buffer-youtube-queue*.json
+.buffer-x-queue.json
+.buffer-x-queue*.json
+.buffer-youtube-scheduled.json
+.buffer-x-scheduled.json
+.facebook-reels-batch.json
+.facebook-reels-batch.md
+.facebook-reels-batch*.json
+.facebook-reels-batch*.md
+.facebook-reels-posted.json
 
 # Local quarantine for QA-failed generated blog artifacts
 .workflow-blocked/

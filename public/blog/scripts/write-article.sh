@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# T5 write-article — Claude writes the full article from keyword + research.
-# Replaces polish-draft.sh. Gemma draft used as structural reference only.
+# T5 write-article — writes the full article from keyword + research.
+# Hermes takeover mode uses the configured local LLM helper. Claude remains available
+# when CLAUDE_ENABLED=1 and HERMES_TAKEOVER is not set.
+# Replaces polish-draft.sh. Local drafts are used as structural reference only.
 # Output: verified.md (lint-clean) + lint.json
 #
 # Usage: write-article.sh <slug>
@@ -9,6 +11,12 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 LINT="$SCRIPT_DIR/lint-draft.mjs"
+LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+if [[ ! -x "$LOCAL_LLM" ]]; then
+  LOCAL_LLM="$HOME/bin/gemma.sh"
+fi
+HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
+CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
 
 SLUG="" KEYWORD_ARG="" BRAND_ARG=""
 for a in "$@"; do
@@ -65,8 +73,12 @@ $(head -80 "$DRAFT")
 "
 fi
 
-run_claude() {
-  claude -p "$(cat)" --allowedTools "" 2>/dev/null
+run_writer() {
+  if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
+    HERMES_LOCAL_MAX_TOKENS="${HERMES_ARTICLE_MAX_TOKENS:-4096}" "$LOCAL_LLM" "$(cat)" 2>/dev/null
+  else
+    claude -p "$(cat)" --allowedTools "" 2>/dev/null
+  fi
 }
 
 # Sentinels that mean Claude returned a limit/error message instead of an article.
@@ -105,7 +117,7 @@ REQUIREMENTS:
 
 Output ONLY the markdown article. Start with # Title. No preamble, no commentary, no code fences.
 PROMPT
-} | run_claude > "$OUT.raw" || true
+} | run_writer > "$OUT.raw" || true
 # NOTE: `|| true` is REQUIRED. claude -p exits non-zero on a usage/session limit.
 # With `set -euo pipefail`, an un-guarded pipeline would abort the script HERE,
 # before the is_limit defer guard below — leaving a limit message in $OUT.raw and
@@ -113,11 +125,11 @@ PROMPT
 # (write-warn) and quarantines. Keep going so the guard can DEFER (exit 4) instead.
 
 if [[ ! -s "$OUT.raw" ]]; then
-  rm -f "$OUT.raw"; echo "error: claude produced empty output" >&2; exit 4
+  rm -f "$OUT.raw"; echo "error: writer produced empty output" >&2; exit 4
 fi
 if head -40 "$OUT.raw" | is_limit; then
   rm -f "$OUT.raw"
-  echo "error: claude returned a limit/error message, not an article — DEFER (not writing $OUT)" >&2
+  echo "error: writer returned a limit/error message, not an article — DEFER (not writing $OUT)" >&2
   exit 4
 fi
 mv "$OUT.raw" "$OUT"
@@ -144,7 +156,7 @@ print(", ".join(extra+terms))' || echo "")
     echo ""
     echo "--- MARKDOWN ---"
     cat "$OUT"
-  } | run_claude > "$OUT.tmp" || true   # see note above: don't let a limit abort before the guard
+  } | run_writer > "$OUT.tmp" || true   # see note above: don't let a limit abort before the guard
   if [[ -s "$OUT.tmp" ]] && ! head -40 "$OUT.tmp" | is_limit; then
     mv "$OUT.tmp" "$OUT"
   else

@@ -1,18 +1,24 @@
 #!/usr/bin/env bash
 # Orchestrator — runs the decoupled per-slug pipeline. File -> file, each stage a
-# separate process. Gemma = leaf (cheap), claude -p = brain (research/polish/qa).
+# separate process. Hermes/local LLM owns the normal path; Claude is optional
+# only when Hermes takeover is disabled and Claude is explicitly enabled.
 # Replaces the monolith claude call in daily-blog-reel.sh.
 #
 # Usage: build-post.sh <slug> --brand=silver|tech [--keyword="..."] [--gap="..."]
 #                              [--degraded]   # skip all claude stages
 #
-# Requires: gemma_draft.md present (from gemma-nightly.sh) OR --keyword to draft.
+# Requires: gemma_draft.md present (from nightly local draft) OR --keyword to draft.
 # Stages: T1 research -> T5 polish -> meta -> T6 hooks -> T8 svg -> T7 html
 #         -> T9 reel -> T10 social -> assets(jpg) -> T12 qa. Publish handled separately.
 set -uo pipefail
 SD="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SD")"
-GEMMA="$HOME/bin/gemma.sh"
+LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+if [[ ! -x "$LOCAL_LLM" ]]; then
+  LOCAL_LLM="$HOME/bin/gemma.sh"
+fi
+HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
+CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
 
 SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0
 for a in "$@"; do case "$a" in
@@ -25,26 +31,41 @@ log(){ echo "[build-post:$SLUG] $*"; }
 STATUS="$DIR/_status.json"; declare -a DONE=()
 mark(){ DONE+=("$1"); printf '{"slug":"%s","stages":[%s],"degraded":%s,"ts":"%s"}\n' "$SLUG" "$(printf '"%s",' "${DONE[@]}" | sed 's/,$//')" "$DEGRADED" "$(date -u +%FT%TZ)" > "$STATUS"; }
 
-# claude availability probe (once)
+# Claude availability probe (once). Hermes takeover intentionally avoids Claude
+# so the scheduled path can run without external API quota.
 CLAUDE_OK=0
-if [[ $DEGRADED -eq 0 ]]; then
+if [[ $DEGRADED -eq 0 && "$HERMES_TAKEOVER" != "1" && "$CLAUDE_ENABLED" != "0" ]]; then
   if echo "ok" | claude -p "reply ok" --allowedTools "" 2>/dev/null | grep -qi ok; then CLAUDE_OK=1; else log "claude unavailable -> degraded"; fi
 fi
 
-# ── T1 research (claude, optional) ──
+# ── T1 research (Claude only outside Hermes takeover, optional) ──
 if [[ $CLAUDE_OK -eq 1 ]]; then
   log "T1 research"; "$SD/research.sh" "$SLUG" --keyword="$KEYWORD" --gap="$GAP" --out="$DIR/research.json" 2>&1 | sed 's/^/  /' && mark research || log "research failed (continue)"
 fi
 
 # ── ensure a draft exists ──
 if [[ ! -f "$DIR/gemma_draft.md" ]]; then
-  log "no gemma_draft.md — generating outline via gemma (structural reference only)"
-  { echo "Write a 10-bullet outline for an article titled \"$KEYWORD\". Each bullet = one H2 section topic. Plain text, no prose, no sentences. One line per bullet."; } | "$GEMMA" > "$DIR/gemma_draft.md" 2>/dev/null || true
+  log "no gemma_draft.md — generating outline via local model (structural reference only)"
+  { echo "Write a 10-bullet outline for an article titled \"$KEYWORD\". Each bullet = one H2 section topic. Plain text, no prose, no sentences. One line per bullet."; } | "$LOCAL_LLM" > "$DIR/gemma_draft.md" 2>/dev/null || true
 fi
-# gemma_draft.md is structural reference; Claude writes the real article
+# gemma_draft.md is structural reference; write-article writes the real article
 
-# ── T5 write (claude) or degraded copy ──
-if [[ $CLAUDE_OK -eq 1 ]]; then
+# ── T5 write (local Phi-4 first in Hermes takeover, otherwise Claude) or degraded copy ──
+if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
+  log "T5 write via local Phi-4"
+  HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+    "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+  WRC=${PIPESTATUS[0]}
+  case "$WRC" in
+    0) mark write-local;;
+    4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
+    *) if [[ ! -s "$DIR/verified.md" ]]; then
+         log "T5 local write DEFERRED -> exit $WRC with no usable article. Keep for retry."
+         mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0
+       fi
+       log "local write lint-failed (verified.md written, continue)"; mark write-warn;;
+  esac
+elif [[ $CLAUDE_OK -eq 1 ]]; then
   log "T5 write"
   # Skip if verified.md already exists and passes lint (e.g. pre-written by a manual run)
   if [[ -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
@@ -83,8 +104,8 @@ if [[ ! -f "$DIR/meta.json" ]]; then
   log "meta.json: deriving"
   TITLE=$(grep -m1 '^# ' "$DIR/verified.md" | sed 's/^# *//' | sed 's/^GEMMA DRAFT[[:space:]]*—[[:space:]]*//' | tr -d '\r')
   [[ -z "$TITLE" ]] && TITLE=$(echo "$KEYWORD" | sed 's/.*/\u&/')
-  DESC=$(GEMMA_MAX_TOKENS=60 bash -c "echo \"Write a 150-character SEO meta description for an article titled '$TITLE'. One line, no quotes.\" | '$GEMMA'" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-160)
-  ALT=$(GEMMA_MAX_TOKENS=30 bash -c "echo \"Write 6-word alt text for the hero image of an article titled '$TITLE'. No quotes.\" | '$GEMMA'" 2>/dev/null | tr -d '\n"' | cut -c1-90)
+  DESC=$(HERMES_LOCAL_MAX_TOKENS=60 GEMMA_MAX_TOKENS=60 bash -c "echo \"Write a 150-character SEO meta description for an article titled '$TITLE'. One line, no quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-160)
+  ALT=$(HERMES_LOCAL_MAX_TOKENS=30 GEMMA_MAX_TOKENS=30 bash -c "echo \"Write 6-word alt text for the hero image of an article titled '$TITLE'. No quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr -d '\n"' | cut -c1-90)
   if [[ "$BRAND" == "silver" ]]; then T1="Silver"; T2="Investing"; else T1="Local Business"; T2="Marketing"; fi
   BLOGDIR="$BLOG_DIR" TITLE="$TITLE" DESC="${DESC:-$TITLE}" ALT="${ALT:-$TITLE}" SLUG="$SLUG" BRAND="$BRAND" T1="$T1" T2="$T2" python3 -c '
 import json, os, datetime, re
@@ -138,7 +159,7 @@ run_claude() { # $1=prompt $2=timeout_secs
 }
 RUN_CLAUDE_ENHANCEMENTS="${RUN_CLAUDE_ENHANCEMENTS:-0}"
 CLAUDE_ENHANCEMENT_TIMEOUT="${CLAUDE_ENHANCEMENT_TIMEOUT:-180}"
-if [[ $CLAUDE_OK -eq 1 && "$RUN_CLAUDE_ENHANCEMENTS" == "1" ]]; then
+if [[ $CLAUDE_OK -eq 1 && "$RUN_CLAUDE_ENHANCEMENTS" == "1" && "$CLAUDE_ENABLED" != "0" ]]; then
   log "social-ad skill"
   run_claude "Run the social-ad skill for blog post slug $SLUG (folder public/blog/$SLUG). Read public/blog/MASTER_CONTEXT-$BRAND.md for brand context. Generate 2 organic ad SVG templates, convert to JPG via Chrome headless, run the named-entity check, and append the file paths to public/blog/$SLUG/social-copy.json under organic_ads[]. Do not commit or deploy." "$CLAUDE_ENHANCEMENT_TIMEOUT" \
     | tail -2 | sed 's/^/  /' && mark social-ad || log "social-ad failed (continue)"
@@ -169,15 +190,32 @@ if grep -lEn "&[a-zA-Z]+;" "$DIR"/*.svg >/dev/null 2>&1; then
   log "WARN: named entity in an SVG — fix before publish"
 fi
 
-# ── T12 qa-gate (claude) ──
+# ── T11 deterministic artifact gate ──
 PUBLISH_OK=1
-if [[ $CLAUDE_OK -eq 1 && -f "$DIR/index.html" ]]; then
-  log "T12 qa-gate"
+log "T11 deterministic artifact QA"
+if node "$SD/qa-local.mjs" --slug="$SLUG" --out="$DIR/qa.json" 2>&1 | sed 's/^/  /'; then
+  mark qa-local-pass
+else
+  log "qa FAILED -> deterministic artifact gate blocked publish"
+  mark qa-local-fail
+  PUBLISH_OK=0
+fi
+
+# ── T12 brain QA (Hermes first, Claude optional) ──
+if [[ $PUBLISH_OK -eq 1 && -f "$DIR/index.html" && ( "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" || $CLAUDE_OK -eq 1 ) ]]; then
+  log "T12 brain qa-gate"
   "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'
   QA_RC=${PIPESTATUS[0]}
   case "$QA_RC" in
-    0) mark qa-pass;;
-    3) log "qa DEFERRED -> claude brain-stage outage, NOT a quality failure. Keep for retry."; mark qa-deferred; PUBLISH_OK=0;;
+    0) mark qa-brain-pass;;
+    3) if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
+         log "qa brain unavailable -> deterministic gate already passed; continuing"
+         mark qa-brain-skipped
+       else
+         log "qa DEFERRED -> brain-stage outage, NOT a quality failure. Keep for retry."
+         mark qa-deferred
+         PUBLISH_OK=0
+       fi;;
     *) log "qa FAILED -> not registering for publish"; mark qa-fail; PUBLISH_OK=0;;
   esac
 fi

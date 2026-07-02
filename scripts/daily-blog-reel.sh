@@ -8,6 +8,10 @@ LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 
 export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
 AUTO_DEPLOY="${BLOG_AUTO_DEPLOY:-0}"
+HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
+CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
+LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM
 
 # ── Retry plist cleanup ────────────────────────────────────────────────────────
 launchctl bootout "gui/$(id -u)/com.nick.daily-blog-reel.retry" 2>/dev/null
@@ -23,6 +27,10 @@ log_rotate() {
 }
 
 probe_session() {
+  if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
+    "$LOCAL_LLM" "reply ok" >/dev/null 2>&1
+    return $?
+  fi
   local out
   out=$(claude -p "respond with ok" 2>&1)
   if echo "$out" | grep -qi "session limit\|usage limit\|rate limit"; then
@@ -129,6 +137,9 @@ quarantine_post_dir() {
 # ── Log rotation + header ─────────────────────────────────────────────────────
 log_rotate
 echo "\n=== $(date) ===" >> "$LOG_FILE"
+if [[ "$HERMES_TAKEOVER" == "1" ]]; then
+  echo "Mode: HERMES_TAKEOVER=1, local LLM=$LOCAL_LLM" >> "$LOG_FILE"
+fi
 
 # ── Environment ───────────────────────────────────────────────────────────────
 set -o allexport
@@ -207,6 +218,12 @@ FAILS=0
 DEFERRED=0
 BUILT=()
 
+if ! $QUEUE_MODE && [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
+  echo "No queue found and Hermes takeover is active. Skipping old self-directed Claude fallback." >> "$LOG_FILE"
+  notify "no queue" "Hermes takeover active; old Claude fallback skipped"
+  exit 0
+fi
+
 if ! $QUEUE_MODE; then
   # ── Fallback: self-directed single claude call ────────────────────────────
   echo "Running self-directed mode (1 silver + 1 tech-or-AI)..." >> "$LOG_FILE"
@@ -283,11 +300,12 @@ else: print('{}')
   BRAND=$(echo "$POST_DATA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('brand','silver'))" 2>/dev/null)
   KW=$(echo "$POST_DATA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('keyword',''))" 2>/dev/null)
 
-  # Run the decoupled pipeline (gemma leaf + claude brain + deterministic scripts).
-  # Covers polish, internal links, hooks, svg, html, reel-data, social, social-ad,
-  # ugc, assets, qa, posts.json, topic-history. Degrades gracefully on claude limit.
+  # Run the decoupled pipeline (local LLM + optional Claude brain + deterministic scripts).
+  # Covers write/polish, internal links, hooks, svg, html, reel-data, social,
+  # optional enhancements, assets, qa, posts.json, topic-history.
   POST_TMPOUT=$(mktemp)
-  public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
+  HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+    public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
 
@@ -311,8 +329,8 @@ else: print('{}')
   # Keep artifacts in place for the next run; do not quarantine, do not count as FAIL.
   if grep -q -- '-deferred"' "public/blog/$SLUG/_status.json" 2>/dev/null \
      && ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
-    echo "DEFERRED: $SLUG — claude brain-stage outage, left in place for retry." >> "$LOG_FILE"
-    notify "qa deferred" "$SLUG — claude outage, will retry"
+    echo "DEFERRED: $SLUG — brain-stage outage, left in place for retry." >> "$LOG_FILE"
+    notify "qa deferred" "$SLUG — brain QA outage, will retry"
     DEFERRED=$(( DEFERRED + 1 ))
     continue
   fi
@@ -356,7 +374,7 @@ else: print('{}')
   git commit -m "feat: $SLUG" >> "$LOG_FILE" 2>&1
 
   if [[ "$AUTO_DEPLOY" != "1" ]]; then
-    echo "PUBLISH PENDING: $SLUG committed locally. Claude must review, push, deploy, and verify live." >> "$LOG_FILE"
+    echo "PUBLISH PENDING: $SLUG committed locally. Hermes/Codex owner must review, push, deploy, and verify live." >> "$LOG_FILE"
     BUILT+=("$SLUG")
     continue
   fi
@@ -407,7 +425,7 @@ else
 fi
 
 DEFERRED_NOTE=""
-(( DEFERRED > 0 )) && DEFERRED_NOTE=" — $DEFERRED deferred (claude outage, retry pending)"
+(( DEFERRED > 0 )) && DEFERRED_NOTE=" — $DEFERRED deferred (brain QA outage, retry pending)"
 if (( FAILS > 0 )); then
   notify "verification" "$FAILS check(s) FAILED — see daily-blog-reel.log"
   echo "RESULT: $FAILS verification failure(s)${DEFERRED_NOTE} — built: ${BUILT[*]:-none}" >> "$LOG_FILE"

@@ -25,7 +25,14 @@
     "video:photos": "node video/scripts/fetch-photos.mjs",
     "video:feedback": "node video/scripts/feedback.mjs",
     "video:test": "cd video && npm test",
-    "video": "node video/scripts/render.mjs"
+    "video": "node video/scripts/render.mjs",
+    "social:pack": "node public/blog/scripts/prepare-posting-pack.mjs",
+    "social:buffer:verify-media": "node public/blog/scripts/verify-buffer-media-urls.mjs",
+    "social:buffer:youtube:media": "node public/blog/scripts/prepare-buffer-youtube-media.mjs",
+    "social:buffer:plan": "node public/blog/scripts/prepare-buffer-youtube-queue.mjs",
+    "social:buffer:x:media": "node public/blog/scripts/prepare-buffer-x-media.mjs",
+    "social:buffer:x:plan": "node public/blog/scripts/prepare-buffer-x-queue.mjs",
+    "social:facebook:batch": "node public/blog/scripts/prepare-facebook-reel-batch.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.16.17",

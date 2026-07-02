@@ -11,7 +11,7 @@
       "narration": "Silver hits record highs and these old coins are worth multiples of what you paid."
     },
     {
-      "type": "stat",
+      "type": "overlay",
       "startSec": 12,
       "endSec": 24,
       "text": "2026 SILVER NEAR RECORD HIGHS",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "type": "stat",
+      "type": "overlay",
       "startSec": 24,
       "endSec": 33,
       "text": "1965 THE CUTOFF YEAR",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "type": "stat",
+      "type": "overlay",
       "startSec": 45,
       "endSec": 54,
       "text": "1965 GOVERNMENT STOPPED SILVER COINS",
@@ -62,7 +62,7 @@
       }
     },
     {
-      "type": "stat",
+      "type": "overlay",
       "startSec": 54,
       "endSec": 68,
       "text": "WORN OR DAMAGED STILL COUNTS",
@@ -77,7 +77,7 @@
       "type": "stat",
       "startSec": 68,
       "endSec": 86,
-      "text": "$121 ALL-TIME HIGH IN JANUARY 2026",
+      "text": "$121.67 ALL-TIME HIGH JAN 2026",
       "narration": "Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026. That makes junk silver coins worth multiples of their face value. Citi projected prices could reach 150 dollars per ounce later in 2026.",
       "explanation": "Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026, making junk silver coins worth multiples of face value.",
       "graphic_type": "growth",
@@ -118,7 +118,7 @@
       "startSec": 149,
       "endSec": 163,
       "text": "HAVE YOU BOUGHT JUNK SILVER YET?",
-      "narration": "Follow for more silver news.",
+      "narration": "HAVE YOU BOUGHT JUNK SILVER YET? Follow for more silver news.",
       "subtext": "DROP YOUR STACK BELOW"
     }
   ]

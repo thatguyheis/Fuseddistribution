@@ -14,7 +14,7 @@ Narration: Silver hits record highs and these old coins are worth multiples of w
 
 ## BODY
 
-**Stat 1** (12–24s)
+**Overlay 5** (12–24s)
 Text: 2026 SILVER NEAR RECORD HIGHS
 Explanation: With silver near record highs in 2026, holding pre-1965 USA silver coins is more attractive than ever.
 Graphic_type: none
@@ -22,7 +22,7 @@ Narration: With silver near record highs in 2026, holding pre-1965 USA silver co
 
 ---
 
-**Stat 2** (24–33s)
+**Overlay 6** (24–33s)
 Text: 1965 THE CUTOFF YEAR
 Explanation: Junk silver refers to coins minted in the USA before 1965.
 Graphic_type: none
@@ -41,7 +41,7 @@ Narration: These coins were made with 90 percent silver and 10 percent copper, a
 
 ---
 
-**Stat 4** (45–54s)
+**Overlay 7** (45–54s)
 Text: 1965 GOVERNMENT STOPPED SILVER COINS
 Explanation: After 1965, the USA government stopped minting silver coins for general circulation.
 Graphic_type: none
@@ -49,7 +49,7 @@ Narration: After 1965, the USA government stopped minting silver coins for gener
 
 ---
 
-**Stat 5** (54–68s)
+**Overlay 8** (54–68s)
 Text: WORN OR DAMAGED STILL COUNTS
 Explanation: Today junk silver is a broader term for pre-1965 USA silver coins, including those that were heavily worn or damaged.
 Graphic_type: none
@@ -58,7 +58,7 @@ Narration: Today it is a broader term for pre-1965 USA silver coins, including t
 ---
 
 **Stat 6** (68–86s)
-Text: $121 ALL-TIME HIGH IN JANUARY 2026
+Text: $121.67 ALL-TIME HIGH JAN 2026
 Explanation: Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026, making junk silver coins worth multiples of face value.
 Graphic_type: growth
 Narration: Silver hit a nominal all-time high of 121.67 dollars per ounce in January 2026. That makes junk silver coins worth multiples of their face value. Citi projected prices could reach 150 dollars per ounce later in 2026.
