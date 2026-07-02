@@ -620,6 +620,61 @@
         background: #09121b;
       }
 
+      /* ── Click-to-open sample ── */
+      .frame-view {
+        position: relative;
+      }
+
+      .frame-view iframe {
+        pointer-events: none;
+      }
+
+      .frame-open {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .frame-open::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(4, 18, 26, 0);
+        transition: background 0.25s ease;
+      }
+
+      .frame-view:hover .frame-open::before {
+        background: rgba(4, 18, 26, 0.22);
+      }
+
+      .frame-open-hint {
+        position: relative;
+        margin-bottom: 22px;
+        padding: 11px 20px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #04121a;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      }
+
+      .frame-view:hover .frame-open-hint,
+      .frame-open:focus-visible .frame-open-hint {
+        opacity: 1;
+        transform: none;
+      }
+
       .two-up {
         display: grid;
         grid-template-columns: 1.05fr 0.95fr;
@@ -1102,7 +1157,10 @@
                         </div>
                         <div class="frame-url">fuseddistribution.com/plainsman/</div>
                       </div>
-                      <iframe loading="lazy" title="Restaurant website design for The Plainsman, Vancouver WA" src="/plainsman/"></iframe>
+                      <div class="frame-view">
+                        <iframe loading="lazy" title="Restaurant website design for The Plainsman, Vancouver WA" src="/plainsman/"></iframe>
+                        <a class="frame-open" href="/plainsman/" target="_blank" rel="noreferrer" aria-label="Open full The Plainsman Restaurant page"><span class="frame-open-hint">Open Full Page &#8599;</span></a>
+                      </div>
                     </div>
                   </div>
                   <div class="device-base">
@@ -1167,7 +1225,10 @@
                         </div>
                         <div class="frame-url">fuseddistribution.com/cascade/</div>
                       </div>
-                      <iframe loading="lazy" title="Auto repair website design for Cascade Collision Repair, Vancouver WA" src="/cascade/"></iframe>
+                      <div class="frame-view">
+                        <iframe loading="lazy" title="Auto repair website design for Cascade Collision Repair, Vancouver WA" src="/cascade/"></iframe>
+                        <a class="frame-open" href="/cascade/" target="_blank" rel="noreferrer" aria-label="Open full Cascade Collision Repair page"><span class="frame-open-hint">Open Full Page &#8599;</span></a>
+                      </div>
                     </div>
                   </div>
                   <div class="device-base">
@@ -1232,7 +1293,10 @@
                         </div>
                         <div class="frame-url">fuseddistribution.com/anoush-deli/</div>
                       </div>
-                      <iframe loading="lazy" title="Restaurant website design for Anoush Deli, Vancouver WA" src="/anoush-deli/"></iframe>
+                      <div class="frame-view">
+                        <iframe loading="lazy" title="Restaurant website design for Anoush Deli, Vancouver WA" src="/anoush-deli/"></iframe>
+                        <a class="frame-open" href="/anoush-deli/" target="_blank" rel="noreferrer" aria-label="Open full Anoush Deli page"><span class="frame-open-hint">Open Full Page &#8599;</span></a>
+                      </div>
                     </div>
                   </div>
                   <div class="device-base">
@@ -1297,7 +1361,10 @@
                         </div>
                         <div class="frame-url">fuseddistribution.com/boba-tree/</div>
                       </div>
-                      <iframe loading="lazy" title="Boba shop website design for Boba Tree, Vancouver WA" src="/boba-tree/"></iframe>
+                      <div class="frame-view">
+                        <iframe loading="lazy" title="Boba shop website design for Boba Tree, Vancouver WA" src="/boba-tree/"></iframe>
+                        <a class="frame-open" href="/boba-tree/" target="_blank" rel="noreferrer" aria-label="Open full Boba Tree page"><span class="frame-open-hint">Open Full Page &#8599;</span></a>
+                      </div>
                     </div>
                   </div>
                   <div class="device-base">
@@ -1618,7 +1685,12 @@
                         + '<div class="frame-dots"><span></span><span></span><span></span></div>'
                         + '<div class="frame-url">fuseddistribution.com/' + esc(p.slug) + '/</div>'
                       + '</div>'
-                      + '<iframe loading="lazy" title="' + esc(p.iframe_title) + '" src="/' + esc(p.slug) + '/"></iframe>'
+                      + '<div class="frame-view">'
+                        + '<iframe loading="lazy" title="' + esc(p.iframe_title) + '" src="/' + esc(p.slug) + '/"></iframe>'
+                        + '<a class="frame-open" href="/' + esc(p.slug) + '/" target="_blank" rel="noreferrer" aria-label="Open full ' + esc(p.name) + ' page">'
+                          + '<span class="frame-open-hint">Open Full Page &#8599;</span>'
+                        + '</a>'
+                      + '</div>'
                     + '</div>'
                   + '</div>'
                   + '<div class="device-base"><div class="device-notch"></div></div>'
