@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "social media analytics what metrics actually matter",
+      "prefer": "video",
+      "updatedAt": "2026-07-02T20:09:10.065Z"
+    },
+    "1": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter getting calls frustrated\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "social media analytics what metrics actually matter getting calls frustrated",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T20:09:10.080Z"
+    },
+    "2": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter spending time resources\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "social media analytics what metrics actually matter spending time resources",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T20:09:10.080Z"
+    },
+    "3": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter 12 hours calls\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter 12 hours calls",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:13.419Z"
+    },
+    "4": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter healthy acquisition rate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter healthy acquisition rate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:16.899Z"
+    },
+    "5": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter 24 hours\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter 24 hours",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:19.246Z"
+    },
+    "6": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter monitor search results\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter monitor search results",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:22.306Z"
+    },
+    "7": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter got website people\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter got website people",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:24.071Z"
+    },
+    "8": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter ready see what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter ready see what",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:28.929Z"
+    },
+    "9": {
+      "key": "{\"query\":\"social media analytics what metrics actually matter customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "social media analytics what metrics actually matter customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:09:31.205Z"
+    }
+  }
+}

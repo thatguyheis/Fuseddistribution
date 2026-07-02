@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver market outlook 2026 what analysts say",
+      "prefer": "video",
+      "updatedAt": "2026-07-02T20:55:59.246Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say 58 55 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver market outlook 2026 what analysts say 58 55 silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T20:55:59.261Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say conversely declining ratio\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver market outlook 2026 what analysts say conversely declining ratio",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T20:55:59.262Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say 1 prevailing view\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say 1 prevailing view",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:02.919Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say price pay silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say price pay silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:04.828Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say 1 silver check\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say 1 silver check",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:07.182Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say 500 to 1\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say 500 to 1",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:08.990Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say clear well defined\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say clear well defined",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:10.483Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say don wait perfect\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say don wait perfect",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:11.962Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver market outlook 2026 what analysts say customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver market outlook 2026 what analysts say customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T20:56:13.519Z"
+    }
+  }
+}

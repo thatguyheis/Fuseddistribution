@@ -1,0 +1,20 @@
+{
+  "slug": "electric-vehicle-silver-demand-explained",
+  "renderedAt": "2026-07-02T21:45:03.186Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 200,
+  "renderedDuration": 195.114667,
+  "scriptHash": "245548ccbc9b811e11860b027cf6051c040ca23cf0dc0ab32c47348db22ec442",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-05.mp3",
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

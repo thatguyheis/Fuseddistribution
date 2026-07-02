@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"electric vehicle silver demand explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "electric vehicle silver demand explained",
+      "prefer": "video",
+      "updatedAt": "2026-07-02T21:34:55.381Z"
+    },
+    "1": {
+      "key": "{\"query\":\"electric vehicle silver demand explained silver rising importance\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "electric vehicle silver demand explained silver rising importance",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T21:34:55.404Z"
+    },
+    "2": {
+      "key": "{\"query\":\"electric vehicle silver demand explained specifically silver used\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "electric vehicle silver demand explained specifically silver used",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T21:34:55.404Z"
+    },
+    "3": {
+      "key": "{\"query\":\"electric vehicle silver demand explained while sales increasing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained while sales increasing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:34:57.083Z"
+    },
+    "4": {
+      "key": "{\"query\":\"electric vehicle silver demand explained these contracts include\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained these contracts include",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:34:58.236Z"
+    },
+    "5": {
+      "key": "{\"query\":\"electric vehicle silver demand explained difference reflects different\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained difference reflects different",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:34:59.417Z"
+    },
+    "6": {
+      "key": "{\"query\":\"electric vehicle silver demand explained global demand silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained global demand silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:35:00.790Z"
+    },
+    "7": {
+      "key": "{\"query\":\"electric vehicle silver demand explained 1 research suppliers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained 1 research suppliers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:35:02.301Z"
+    },
+    "8": {
+      "key": "{\"query\":\"electric vehicle silver demand explained stock wide range\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained stock wide range",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:35:04.015Z"
+    },
+    "9": {
+      "key": "{\"query\":\"electric vehicle silver demand explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "electric vehicle silver demand explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T21:35:05.729Z"
+    }
+  }
+}
