@@ -420,6 +420,35 @@ if [[ "$AUTO_DEPLOY" == "1" ]]; then
     echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
     FAILS=$(( FAILS + 1 ))
   fi
+
+  # posts.json content verify — a wrangler deploy can race the file writes and
+  # ship a stale asset manifest (2026-07-02: listing missed 4 posts while the
+  # post URLs were live). Compare newest live slug against local; one redeploy
+  # retry, then re-check with a propagation wait.
+  LOCAL_NEWEST=$(python3 -c "import json; print(json.load(open('public/blog/posts.json'))[0]['slug'])" 2>/dev/null || echo "")
+  verify_posts_json() {
+    LIVE_NEWEST=$(curl -s --max-time 20 "https://fuseddistribution.com/blog/posts.json" \
+      | python3 -c "import json,sys; print(json.load(sys.stdin)[0]['slug'])" 2>/dev/null || echo "")
+    [[ -n "$LOCAL_NEWEST" && "$LIVE_NEWEST" == "$LOCAL_NEWEST" ]]
+  }
+  if verify_posts_json; then
+    echo "VERIFY PASS: posts.json (newest live slug = $LOCAL_NEWEST)" >> "$LOG_FILE"
+  else
+    echo "VERIFY WARN: posts.json stale (live=$LIVE_NEWEST local=$LOCAL_NEWEST) — redeploying once" >> "$LOG_FILE"
+    npx wrangler deploy >> "$LOG_FILE" 2>&1
+    PJ_OK=0
+    for wait_round in 1 2 3 4 5 6; do
+      sleep 120
+      if verify_posts_json; then PJ_OK=1; break; fi
+    done
+    if [[ "$PJ_OK" == "1" ]]; then
+      echo "VERIFY PASS: posts.json fresh after redeploy (newest=$LOCAL_NEWEST)" >> "$LOG_FILE"
+    else
+      echo "VERIFY FAIL: posts.json still stale after redeploy + 12 min (live=$LIVE_NEWEST local=$LOCAL_NEWEST)" >> "$LOG_FILE"
+      notify "posts.json stale" "blog listing missing new posts — manual check needed"
+      FAILS=$(( FAILS + 1 ))
+    fi
+  fi
 else
   echo "AUTO_DEPLOY=0: skipped git push, wrangler deploy, and live sitemap verification." >> "$LOG_FILE"
 fi

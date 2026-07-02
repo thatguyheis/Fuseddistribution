@@ -134,8 +134,24 @@ if head -40 "$OUT.raw" | is_limit; then
 fi
 mv "$OUT.raw" "$OUT"
 
+# Deterministic dash sanitizer — local models keep emitting em/en dashes and the
+# LLM fix loop cannot reliably remove them (root cause of 2026-06-25..07-02
+# quarantines). Numeric ranges become hyphens; every other em/en dash becomes a
+# spaced hyphen. Runs before every lint pass so the fix loop only handles wording.
+sanitize_dashes() {
+  python3 - "$1" <<'PY'
+import re, sys
+p = sys.argv[1]
+t = open(p, encoding="utf-8").read()
+t = re.sub(r'(?<=\d)\s*[–—]\s*(?=\d)', '-', t)   # 180–240 -> 180-240
+t = re.sub(r'\s*[–—]\s*', ' - ', t)               # word—word -> word - word
+open(p, "w", encoding="utf-8").write(t)
+PY
+}
+
 # Lint gate + fix loop (max 2 passes)
 for attempt in 1 2 3; do
+  sanitize_dashes "$OUT"
   if node "$LINT" "$OUT" --out="$LINT_OUT" --quiet; then
     echo "[write-article] lint PASS (attempt $attempt) -> $OUT"
     exit 0
