@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-02 | social-media-analytics-what-metrics-actually-matter | General | social media analytics metrics that matter |
+| 2026-07-02 | best-time-to-post-on-instagram-for-local-business | General | best time to post on instagram for local business |
 | 2026-07-01 | how-to-target-local-customers-with-facebook-ads | General | how to target local customers with facebook ads |
 | 2026-06-30 | instagram-stories-for-local-business-how-to-use | General | instagram stories for local business how to use |
 | 2026-06-30 | social-media-content-ideas-for-small-business | General | social media content ideas for small business |
@@ -72,6 +74,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-02 | silver-market-outlook-2026-what-analysts-say | General | silver market outlook 2026 |
+| 2026-07-02 | electric-vehicle-silver-demand-explained | General | electric vehicle silver demand |
 | 2026-07-01 | solar-panel-silver-demand-impact-on-price | General | solar panel silver demand impact on price |
 | 2026-07-01 | why-silver-has-industrial-demand-driving-price | General | why silver has industrial demand driving price |
 | 2026-06-30 | silver-price-history-and-long-term-trends | General | silver price history and long term trends |
