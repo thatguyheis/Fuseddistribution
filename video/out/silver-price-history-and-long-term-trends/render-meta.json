@@ -1,0 +1,20 @@
+{
+  "slug": "silver-price-history-and-long-term-trends",
+  "renderedAt": "2026-07-02T19:21:05.370Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 186,
+  "renderedDuration": 181.12,
+  "scriptHash": "c0b9f1844d352afa74478fd3b8e52b8313b4d1cee2499309784d3db753ab1cac",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-05.mp3",
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

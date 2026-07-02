@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver price history and long term trends\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver price history and long term trends",
+      "prefer": "video",
+      "updatedAt": "2026-07-02T19:12:29.938Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver price history and long term trends 1 29 per\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver price history and long term trends 1 29 per",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T19:12:29.960Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver price history and long term trends 100 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver price history and long term trends 100 million ounces",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T19:12:29.961Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver price history and long term trends 182 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 182 million ounces",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:32.707Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver price history and long term trends 125 in march\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 125 in march",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:34.545Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver price history and long term trends 22 for a\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 22 for a",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:36.518Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver price history and long term trends 28 you buy\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 28 you buy",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:38.821Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver price history and long term trends 50 plus years\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 50 plus years",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:40.443Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver price history and long term trends 50 year silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends 50 year silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:41.863Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver price history and long term trends customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver price history and long term trends customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T19:12:44.936Z"
+    }
+  }
+}

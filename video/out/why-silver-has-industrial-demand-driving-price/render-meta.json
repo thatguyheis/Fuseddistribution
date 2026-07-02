@@ -1,0 +1,20 @@
+{
+  "slug": "why-silver-has-industrial-demand-driving-price",
+  "renderedAt": "2026-07-02T18:37:56.883Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 180,
+  "renderedDuration": 175.125333,
+  "scriptHash": "56e169696fb0d8138b80a6abc438a2401363faafaa04439642c74c03256036ac",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-05.mp3",
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

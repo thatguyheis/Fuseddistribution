@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"why silver has industrial demand driving price\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "why silver has industrial demand driving price",
+      "prefer": "video",
+      "updatedAt": "2026-07-02T18:26:42.745Z"
+    },
+    "1": {
+      "key": "{\"query\":\"why silver has industrial demand driving price 59 price total\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "why silver has industrial demand driving price 59 price total",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T18:26:42.783Z"
+    },
+    "2": {
+      "key": "{\"query\":\"why silver has industrial demand driving price 20 grams silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "why silver has industrial demand driving price 20 grams silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-02T18:26:42.798Z"
+    },
+    "3": {
+      "key": "{\"query\":\"why silver has industrial demand driving price vaults thin enough\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price vaults thin enough",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:44.126Z"
+    },
+    "4": {
+      "key": "{\"query\":\"why silver has industrial demand driving price even thrifting consumes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price even thrifting consumes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:44.877Z"
+    },
+    "5": {
+      "key": "{\"query\":\"why silver has industrial demand driving price 23 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price 23 million ounces",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:45.625Z"
+    },
+    "6": {
+      "key": "{\"query\":\"why silver has industrial demand driving price 30 generic ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price 30 generic ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:46.626Z"
+    },
+    "7": {
+      "key": "{\"query\":\"why silver has industrial demand driving price 40 silver solar\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price 40 silver solar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:55.867Z"
+    },
+    "8": {
+      "key": "{\"query\":\"why silver has industrial demand driving price right next month\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price right next month",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:26:58.779Z"
+    },
+    "9": {
+      "key": "{\"query\":\"why silver has industrial demand driving price customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "why silver has industrial demand driving price customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-02T18:27:03.071Z"
+    }
+  }
+}
