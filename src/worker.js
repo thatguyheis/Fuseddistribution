@@ -72,7 +72,7 @@ export class SubmissionRateLimiter extends DurableObject {
 
 function buildCSP(nonce) {
   const scriptSrc = nonce ? `'self' 'nonce-${nonce}'` : `'self'`;
-  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc}; img-src 'self' data:; connect-src 'self'; form-action 'self'; frame-ancestors 'self'`;
+  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc}; img-src 'self' data: https://images.pexels.com; connect-src 'self'; form-action 'self'; frame-ancestors 'self'`;
 }
 
 function withSecurityHeaders(response, nonce) {
