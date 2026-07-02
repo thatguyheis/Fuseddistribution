@@ -637,11 +637,12 @@
         pointer-events: none;
         display: block;
         width: 390px;
-        height: 844px;
+        height: 1500px;
         border: 0;
         background: #09121b;
-        transform: scale(var(--frame-scale, 1));
+        transform: scale(var(--frame-scale, 1)) translateY(var(--frame-scroll, 0px));
         transform-origin: top left;
+        will-change: transform;
       }
 
       .frame-open {
@@ -842,10 +843,23 @@
         }
 
         .topbar,
-        .section-head,
-        .project-header {
+        .section-head {
           flex-direction: column;
           align-items: flex-start;
+        }
+
+        .project-header {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+
+        .device-mockup {
+          order: -1;
+        }
+
+        .project-actions .btn {
+          flex: 1;
+          text-align: center;
         }
 
         .hero,
@@ -896,13 +910,41 @@
         .device-mockup {
           max-width: 330px;
         }
-      }
 
-      /* Touch devices get no hover, keep hint visible */
-      @media (hover: none) {
-        .frame-open-hint {
-          opacity: 1;
-          transform: none;
+        .project-header {
+          padding: 20px 18px 6px;
+        }
+
+        .project-header h2 {
+          font-size: 1.45rem;
+          line-height: 1.2;
+        }
+
+        .project-body {
+          padding: 0 18px 20px;
+          gap: 16px;
+        }
+
+        .project-meta {
+          gap: 8px;
+          margin: 10px 0 12px;
+        }
+
+        .pill {
+          padding: 5px 10px;
+          font-size: 0.68rem;
+        }
+
+        .mini-card {
+          padding: 18px;
+        }
+
+        .mini-card h3 {
+          font-size: 1.02rem;
+        }
+
+        .mini-card p {
+          font-size: 0.9rem;
         }
       }
 
@@ -1804,12 +1846,45 @@
           });
         }
 
-        window.addEventListener('resize', fitFrames);
+        // Scroll parallax: embedded page drifts while its preview is in view
+        var IFRAME_HEIGHT = 1500;
+        var VISIBLE_HEIGHT = 844;
+        var SCROLL_RANGE = IFRAME_HEIGHT - VISIBLE_HEIGHT;
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var ticking = false;
+
+        function updateParallax() {
+          ticking = false;
+          if (reduceMotion) return;
+          var vh = window.innerHeight;
+          document.querySelectorAll('.frame-view').forEach(function (view) {
+            var r = view.getBoundingClientRect();
+            if (r.bottom < 0 || r.top > vh) return;
+            var progress = (vh - r.top) / (vh + r.height);
+            progress = Math.max(0, Math.min(1, progress));
+            view.style.setProperty('--frame-scroll', (-progress * SCROLL_RANGE).toFixed(1) + 'px');
+          });
+        }
+
+        function requestParallax() {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(updateParallax);
+          }
+        }
+
+        function refreshFrames() {
+          fitFrames();
+          requestParallax();
+        }
+
+        window.addEventListener('scroll', requestParallax, { passive: true });
+        window.addEventListener('resize', refreshFrames);
         var grid = document.getElementById('project-list');
         if (grid && 'MutationObserver' in window) {
-          new MutationObserver(fitFrames).observe(grid, { childList: true });
+          new MutationObserver(refreshFrames).observe(grid, { childList: true });
         }
-        fitFrames();
+        refreshFrames();
 
         var popup = document.getElementById('frame-popup');
         var goLink = document.getElementById('frame-popup-go');
