@@ -568,7 +568,8 @@
 
       .preview-frame {
         overflow: hidden;
-        min-height: 420px;
+        display: flex;
+        flex-direction: column;
         background:
           linear-gradient(180deg, rgba(7, 15, 23, 0.95), rgba(9, 18, 28, 0.9));
       }
@@ -577,7 +578,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 14px 18px;
+        gap: 10px;
+        min-width: 0;
+        padding: 12px 16px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         background: rgba(7, 15, 23, 0.88);
       }
@@ -608,25 +611,37 @@
 
       .frame-url {
         color: rgba(236, 248, 251, 0.74);
-        font-size: 0.86rem;
-        letter-spacing: 0.06em;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        min-width: 0;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: right;
       }
 
-      iframe {
-        display: block;
-        width: 100%;
-        height: 500px;
-        border: 0;
-        background: #09121b;
+      .frame-dots {
+        flex-shrink: 0;
       }
 
       /* ── Click-to-open sample ── */
       .frame-view {
         position: relative;
+        aspect-ratio: 390 / 844;
+        overflow: hidden;
+        background: #09121b;
       }
 
       .frame-view iframe {
         pointer-events: none;
+        display: block;
+        width: 390px;
+        height: 844px;
+        border: 0;
+        background: #09121b;
+        transform: scale(var(--frame-scale, 1));
+        transform-origin: top left;
       }
 
       .frame-open {
@@ -738,7 +753,11 @@
       .device-mockup {
         display: flex;
         flex-direction: column;
-        border-radius: 14px;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        align-self: start;
+        border-radius: 30px;
         overflow: hidden;
         background: linear-gradient(145deg, #22252c, #181b21);
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -767,7 +786,7 @@
 
       .device-screen {
         margin: 0 8px;
-        border-radius: 4px;
+        border-radius: 14px;
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0.5);
       }
@@ -792,7 +811,6 @@
         border-radius: 0;
         border: none;
         box-shadow: none;
-        min-height: 460px;
       }
 
       /* ── Hover states ── */
@@ -875,9 +893,68 @@
           right: 24px;
         }
 
-        iframe {
-          height: 360px;
+        .device-mockup {
+          max-width: 330px;
         }
+      }
+
+      /* Touch devices get no hover, keep hint visible */
+      @media (hover: none) {
+        .frame-open-hint {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* ── Open full site popup ── */
+      #frame-popup {
+        position: fixed;
+        inset: 0;
+        z-index: 9500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+
+      #frame-popup[hidden] {
+        display: none;
+      }
+
+      .frame-popup-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.72);
+      }
+
+      .frame-popup-card {
+        position: relative;
+        width: min(380px, 100%);
+        padding: 30px 28px 26px;
+        border-radius: 16px;
+        border: 1px solid rgba(88, 214, 255, 0.22);
+        background: linear-gradient(160deg, #0d1f29 0%, #07131a 100%);
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+        text-align: center;
+      }
+
+      .frame-popup-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.25rem;
+      }
+
+      .frame-popup-card p {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .frame-popup-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
       /* ── Dropdown navigation ── */
@@ -1704,6 +1781,74 @@
       }
 
       loadProjects();
+    </script>
+    <div id="frame-popup" role="dialog" aria-modal="true" aria-labelledby="frame-popup-title" hidden>
+      <div class="frame-popup-backdrop"></div>
+      <div class="frame-popup-card">
+        <h3 id="frame-popup-title">Open the full site?</h3>
+        <p>You are previewing <strong id="frame-popup-name">this project</strong>. Open the full page in a new tab?</p>
+        <div class="frame-popup-actions">
+          <a id="frame-popup-go" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">Open Full Site</a>
+          <button id="frame-popup-cancel" class="btn btn-secondary" type="button">Stay Here</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var IPHONE_WIDTH = 390;
+
+        function fitFrames() {
+          document.querySelectorAll('.frame-view').forEach(function (view) {
+            var w = view.clientWidth;
+            if (w > 0) view.style.setProperty('--frame-scale', (w / IPHONE_WIDTH).toFixed(4));
+          });
+        }
+
+        window.addEventListener('resize', fitFrames);
+        var grid = document.getElementById('project-list');
+        if (grid && 'MutationObserver' in window) {
+          new MutationObserver(fitFrames).observe(grid, { childList: true });
+        }
+        fitFrames();
+
+        var popup = document.getElementById('frame-popup');
+        var goLink = document.getElementById('frame-popup-go');
+        var nameEl = document.getElementById('frame-popup-name');
+
+        function openPopup(href, label) {
+          goLink.setAttribute('href', href);
+          nameEl.textContent = label;
+          popup.hidden = false;
+          goLink.focus();
+        }
+
+        function closePopup() {
+          popup.hidden = true;
+        }
+
+        document.addEventListener('click', function (e) {
+          var open = e.target.closest('.frame-open');
+          if (open) {
+            e.preventDefault();
+            var card = open.closest('.project-card');
+            var title = card ? card.querySelector('h2') : null;
+            openPopup(open.getAttribute('href'), title ? title.textContent.trim() : 'this project');
+            return;
+          }
+          if (popup.hidden) return;
+          if (e.target.closest('#frame-popup-cancel') || e.target.classList.contains('frame-popup-backdrop')) {
+            closePopup();
+          }
+        });
+
+        goLink.addEventListener('click', function () {
+          closePopup();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closePopup();
+        });
+      })();
     </script>
     <script>
       (function () {
