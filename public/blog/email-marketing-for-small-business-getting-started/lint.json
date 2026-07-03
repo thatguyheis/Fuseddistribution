@@ -1,0 +1,21 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/email-marketing-for-small-business-getting-started/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 0,
+  "banned": [
+    {
+      "term": "streamline",
+      "count": 1
+    },
+    {
+      "term": "paramount",
+      "count": 1
+    }
+  ],
+  "hedging": [],
+  "filler_transitions": [],
+  "openers": [],
+  "total_violations": 2
+}
