@@ -3,7 +3,7 @@
 **Date:** 2026-07-02
 **Owner:** Nick
 **Prepared by:** Claude (editorial/QA pass)
-**Status:** 4 new posts live and verified. 4 long-form reels rendered, validated, and committed locally. Buffer-safe YouTube and X cutdowns generated. Posting packs written. Hosted media is NOT yet deployed — publish step below is required before any Buffer scheduling.
+**Status (updated 2026-07-02 ~15:20 PDT):** 4 new posts live and verified. 4 long-form reels rendered, validated, committed, and pushed (`aad588c`, `b7eaeeb`). Hosted media DEPLOYED — all 8 MP4 URLs (`/reels/` x4, `/reels-x/` x4) verified `200 video/mp4` on fuseddistribution.com. Publish blocker CLEARED. Ready for Buffer scheduling (start at "Buffer Scheduling Rules").
 
 ## Today's Slugs (4)
 
