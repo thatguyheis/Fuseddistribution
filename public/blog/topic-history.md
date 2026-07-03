@@ -74,6 +74,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-03 | how-to-store-silver-at-home-safely | General | how to store silver at home safely |
 | 2026-07-02 | silver-market-outlook-2026-what-analysts-say | General | silver market outlook 2026 |
 | 2026-07-02 | electric-vehicle-silver-demand-explained | General | electric vehicle silver demand |
 | 2026-07-01 | solar-panel-silver-demand-impact-on-price | General | solar panel silver demand impact on price |
