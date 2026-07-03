@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"email marketing for small business getting started\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "email marketing for small business getting started",
+      "prefer": "video",
+      "updatedAt": "2026-07-03T18:47:38.359Z"
+    },
+    "1": {
+      "key": "{\"query\":\"email marketing for small business getting started want website actually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "email marketing for small business getting started want website actually",
+      "prefer": "photo",
+      "updatedAt": "2026-07-03T18:47:38.390Z"
+    },
+    "2": {
+      "key": "{\"query\":\"email marketing for small business getting started optional foundation local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "email marketing for small business getting started optional foundation local",
+      "prefer": "photo",
+      "updatedAt": "2026-07-03T18:47:38.390Z"
+    },
+    "3": {
+      "key": "{\"query\":\"email marketing for small business getting started includes business name\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started includes business name",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:39.727Z"
+    },
+    "4": {
+      "key": "{\"query\":\"email marketing for small business getting started 92 consumers say\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started 92 consumers say",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:40.502Z"
+    },
+    "5": {
+      "key": "{\"query\":\"email marketing for small business getting started share tips advice\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started share tips advice",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:41.114Z"
+    },
+    "6": {
+      "key": "{\"query\":\"email marketing for small business getting started 85 consumers read\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started 85 consumers read",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:41.683Z"
+    },
+    "7": {
+      "key": "{\"query\":\"email marketing for small business getting started example email sequence\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started example email sequence",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:42.636Z"
+    },
+    "8": {
+      "key": "{\"query\":\"email marketing for small business getting started contact today free\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started contact today free",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:43.167Z"
+    },
+    "9": {
+      "key": "{\"query\":\"email marketing for small business getting started customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "email marketing for small business getting started customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-03T18:47:43.833Z"
+    }
+  }
+}
