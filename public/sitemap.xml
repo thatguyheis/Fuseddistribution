@@ -548,9 +548,15 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/home-safe-vs-safety-deposit-box-for-silver/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/how-to-build-an-email-list-for-your-local-business/</loc>

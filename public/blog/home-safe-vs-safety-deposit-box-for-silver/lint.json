@@ -1,0 +1,22 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/home-safe-vs-safety-deposit-box-for-silver/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 0,
+  "banned": [
+    {
+      "term": "robust",
+      "count": 3
+    }
+  ],
+  "hedging": [],
+  "filler_transitions": [
+    {
+      "term": "furthermore",
+      "count": 2
+    }
+  ],
+  "openers": [],
+  "total_violations": 2
+}
