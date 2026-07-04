@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-04 | best-email-marketing-tools-for-small-business-2026 | General | best email marketing tools for small business 2026 |
 | 2026-07-04 | email-newsletter-ideas-for-small-business | General | email newsletter ideas for small business |
 | 2026-07-03 | how-to-build-an-email-list-for-your-local-business | General | how to build an email list for your local business |
 | 2026-07-03 | email-marketing-for-small-business-getting-started | General | email marketing for small business getting started |
