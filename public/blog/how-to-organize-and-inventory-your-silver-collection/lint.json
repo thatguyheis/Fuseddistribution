@@ -1,0 +1,22 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/how-to-organize-and-inventory-your-silver-collection/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 0,
+  "banned": [
+    {
+      "term": "best practices",
+      "count": 1
+    }
+  ],
+  "hedging": [],
+  "filler_transitions": [
+    {
+      "term": "furthermore",
+      "count": 1
+    }
+  ],
+  "openers": [],
+  "total_violations": 2
+}
