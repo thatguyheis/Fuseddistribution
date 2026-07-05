@@ -1,0 +1,21 @@
+{
+  "slug": "automated-email-sequences-for-local-business",
+  "renderedAt": "2026-07-05T18:27:38.354Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 188,
+  "renderedDuration": 183.125333,
+  "scriptHash": "2bd118ad395fc61df2d27c881bcaa00c9ac1866733228d72c6d730e978529323",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-08.mp3",
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 6,
+    "pexels": 1
+  }
+}

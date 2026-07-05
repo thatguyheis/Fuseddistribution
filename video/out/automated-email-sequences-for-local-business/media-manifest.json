@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"automated email sequences for local business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business",
+      "prefer": "video",
+      "updatedAt": "2026-07-05T18:17:10.654Z"
+    },
+    "1": {
+      "key": "{\"query\":\"automated email sequences for local business local business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business local business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-05T18:17:10.702Z"
+    },
+    "2": {
+      "key": "{\"query\":\"automated email sequences for local business don say serving\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business don say serving",
+      "prefer": "photo",
+      "updatedAt": "2026-07-05T18:17:10.703Z"
+    },
+    "3": {
+      "key": "{\"query\":\"automated email sequences for local business google prioritizes websites\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business google prioritizes websites",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:17:26.038Z"
+    },
+    "4": {
+      "key": "{\"query\":\"automated email sequences for local business recent study found\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business recent study found",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:17:33.352Z"
+    },
+    "5": {
+      "key": "{\"query\":\"automated email sequences for local business skip setup you\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "automated email sequences for local business skip setup you",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-05T18:18:00.172Z"
+    },
+    "6": {
+      "key": "{\"query\":\"automated email sequences for local business google find locally\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business google find locally",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:18:22.119Z"
+    },
+    "7": {
+      "key": "{\"query\":\"automated email sequences for local business localize website ensure\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business localize website ensure",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:18:44.561Z"
+    },
+    "8": {
+      "key": "{\"query\":\"automated email sequences for local business source brightlocal local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business source brightlocal local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:19:05.234Z"
+    },
+    "9": {
+      "key": "{\"query\":\"automated email sequences for local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "automated email sequences for local business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:19:13.706Z"
+    }
+  }
+}

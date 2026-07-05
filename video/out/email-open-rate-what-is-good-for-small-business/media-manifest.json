@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"email open rate what is good for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "email open rate what is good for small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-05T18:48:57.267Z"
+    },
+    "1": {
+      "key": "{\"query\":\"email open rate what is good for small business emails landing digital\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "email open rate what is good for small business emails landing digital",
+      "prefer": "photo",
+      "updatedAt": "2026-07-05T18:48:57.287Z"
+    },
+    "2": {
+      "key": "{\"query\":\"email open rate what is good for small business low email open\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "email open rate what is good for small business low email open",
+      "prefer": "photo",
+      "updatedAt": "2026-07-05T18:48:57.287Z"
+    },
+    "3": {
+      "key": "{\"query\":\"email open rate what is good for small business 15 to 25\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business 15 to 25",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:01.796Z"
+    },
+    "4": {
+      "key": "{\"query\":\"email open rate what is good for small business 1 claim verify\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business 1 claim verify",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:05.073Z"
+    },
+    "5": {
+      "key": "{\"query\":\"email open rate what is good for small business 1 ask don\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business 1 ask don",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:07.977Z"
+    },
+    "6": {
+      "key": "{\"query\":\"email open rate what is good for small business 1 specific avoid\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business 1 specific avoid",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:12.285Z"
+    },
+    "7": {
+      "key": "{\"query\":\"email open rate what is good for small business send two versions\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business send two versions",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:15.068Z"
+    },
+    "8": {
+      "key": "{\"query\":\"email open rate what is good for small business don t offer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business don t offer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:17.663Z"
+    },
+    "9": {
+      "key": "{\"query\":\"email open rate what is good for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "email open rate what is good for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-05T18:49:21.349Z"
+    }
+  }
+}

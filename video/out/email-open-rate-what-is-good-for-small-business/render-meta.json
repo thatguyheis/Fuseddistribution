@@ -1,0 +1,20 @@
+{
+  "slug": "email-open-rate-what-is-good-for-small-business",
+  "renderedAt": "2026-07-05T18:56:43.922Z",
+  "hookType": "stat",
+  "segmentCount": 10,
+  "scriptDuration": 193,
+  "renderedDuration": 188.117333,
+  "scriptHash": "918c99020825fce6cd9d2768ff14b9c88c8e8520da045dad31c0b64de93277dd",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-08.mp3",
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}
