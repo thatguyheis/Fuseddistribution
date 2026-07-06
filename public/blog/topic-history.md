@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-06 | welcome-email-sequence-for-new-customers | General | welcome email sequence for new customers |
 | 2026-07-05 | automated-email-sequences-for-local-business | General | automated email sequences for local business |
 | 2026-07-05 | email-open-rate-what-is-good-for-small-business | General | email open rate what is good for small business |
 | 2026-07-04 | best-email-marketing-tools-for-small-business-2026 | General | best email marketing tools for small business 2026 |

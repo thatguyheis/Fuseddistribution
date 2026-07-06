@@ -1,0 +1,7 @@
+{
+  "slug": "welcome-email-sequence-for-new-customers",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "deterministic-local"
+}
