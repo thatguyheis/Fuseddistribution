@@ -80,6 +80,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-06 | does-tarnished-silver-lose-value | General | does tarnished silver lose value |
 | 2026-07-05 | silver-tarnish-why-it-happens-and-how-to-prevent-it | General | silver tarnish why it happens and how to prevent it |
 | 2026-07-05 | how-to-organize-and-inventory-your-silver-collection | General | how to organize and inventory your silver collection |
 | 2026-07-04 | home-safe-vs-safety-deposit-box-for-silver | General | home safe vs safety deposit box for silver |
