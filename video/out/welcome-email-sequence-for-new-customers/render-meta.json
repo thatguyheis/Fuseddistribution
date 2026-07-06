@@ -1,0 +1,20 @@
+{
+  "slug": "welcome-email-sequence-for-new-customers",
+  "renderedAt": "2026-07-06T18:54:49.770Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 195,
+  "renderedDuration": 189.589333,
+  "scriptHash": "7384c8a2742ecf451064c5c99575d0829312d4c2fd7cacaf50f8c45cceddd892",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "ambient-09.mp3",
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}
