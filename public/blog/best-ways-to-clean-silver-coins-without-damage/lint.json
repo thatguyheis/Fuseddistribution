@@ -1,0 +1,17 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/best-ways-to-clean-silver-coins-without-damage/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 0,
+  "banned": [],
+  "hedging": [],
+  "filler_transitions": [
+    {
+      "term": "furthermore",
+      "count": 1
+    }
+  ],
+  "openers": [],
+  "total_violations": 1
+}
