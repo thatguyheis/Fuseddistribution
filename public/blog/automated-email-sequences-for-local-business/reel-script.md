@@ -1,88 +1,88 @@
 # Reel Script: automated-email-sequences-for-local-business
 format: long-form
 segments: 10
-target-duration: 188s
+target-duration: 203s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 8s minimum
+**Duration:** 6s minimum
 
-Narration: Get at least 50 Google reviews , it’s the key to local success.
+Narration: Businesses using email marketing generate 3x more leads.
 
 ---
 
-## OVERLAY: LOCAL BUSINESS OWNER STRUGGLING
+## OVERLAY: SMALL BUSINESS OWNER FEELING
 
 **Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Duration:** 24s minimum
 
-Narration: Are you a local business owner struggling to keep customers coming back? Do you feel like you’re constantly chasing new leads, while valuable existing customers slip through the cracks? The truth is, most local businesses lose customers simply because they don’t have a consistent, automated way to nurture those relationships.
+Narration: Are you a small business owner feeling overwhelmed by marketing? Many local businesses struggle to consistently reach their customers and grow their revenue. The good news is, there’s a powerful, relatively simple solution: automated email sequences. These sequences allow you to nurture leads, build relationships, and drive sales - all without constantly sending individual emails.
 
 ---
 
-## OVERLAY: DON SAY SERVING GREATER
+## STAT: 3X LEADS DON
 
 **Visual:** Supporting article visual
 **Duration:** 23s minimum
 
-Narration: Don’t just say “Serving the Greater Seattle Area.” Be specific: “Serving Seattle, Bellevue, and Redmond.” This helps Google understand where you operate and ensures you’re showing up for searches in the right locations. People want to see what you look like, what your space is like, and what your team looks like.
+Narration: For example, a local bakery might focus on a welcome sequence to introduce their brand and special offers, while a landscaping company could use an abandoned cart sequence to recover lost sales of lawn care packages. According to HubSpot, businesses that use email marketing generate 3x more leads than those that don’t.
 
 ---
 
-## OVERLAY: GOOGLE PRIORITIZES WEBSITES CONSISTENT
+## STAT: 3 TO 5 BUSINESS EMAIL WELCOME SEQUENCE
 
 **Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Duration:** 24s minimum
 
-Narration: Google prioritizes websites with consistent NAP information. It’s the foundation upon which your entire local marketing strategy is built. Don’t try to do everything at once. Focusing on getting your GBP and website optimized for local search is far more impactful than constantly posting on social media.
-
----
-
-## OVERLAY: RECENT STUDY FOUND BUSINESSES
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: A recent study found that businesses with more reviews tend to rank higher in local search results. People don’t type complicated phrases into Google. They type what they need right now. If you’re a plumber, use “plumber near me.” Don’t try to sound smart or use industry jargon.
+Narration: Start with basic segmentation and refine it as you gather more data. Your welcome email series is your first impression. This series should introduce your business, its values, and what you offer. Here’s a suggested structure for a 3-5 email welcome sequence: Email 1 (Immediately): Thank them for subscribing and introduce your business.
 
 ---
 
-## OVERLAY: SKIP SETUP YOU'RE LEAVING
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: If you skip that setup, you're leaving money on the table. Stop waiting for customers to write about you. You need to ask happy clients for reviews. A simple request after a job is done - “We’re so glad you’re happy with the results!
-
----
-
-## OVERLAY: GOOGLE FIND LOCALLY WEBSITE
+## STAT: 10% BUSINESS OFF FIRST VISIT
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: If Google can’t find you locally, your website is just a pretty brochure. You spend time building a nice site, but if you don’t show up when someone searches for your service, you’re invisible. It doesn’t matter how good your content is if Google can’t connect you to local customers.
+Narration: Example subject lines: “Welcome to {Your Business Name}!,” “Get 10 percent Off Your First Visit,” “Discover the Best Your Product/Service in {Your City}.” Promotional emails are great for driving sales, but they need to be strategic. Instead, focus on creating targeted campaigns around specific events, holidays, or promotions.
 
 ---
 
-## OVERLAY: LOCALIZE WEBSITE ENSURE NAP
+## STAT: 1 HOUR GENTLE REMINDER ABOUT
 
 **Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Duration:** 22s minimum
 
-Narration: Localize Your Website: Ensure your NAP (name, address, phone number) is consistent across your website and all online directories. Your Google Business Profile is free, and it’s a powerful tool. Most businesses set it up incorrectly, missing key details that show up in local map searches.
+Narration: Here’s a basic sequence: Email 1 (1 hour): Gentle reminder about the items left in their cart. Email 2 (24 hours): Offer a small discount or free shipping to incentivize them to complete the purchase. Email 3 (3 days): Address potential concerns they might have about the purchase.
 
 ---
 
-## OVERLAY: SOURCE BRIGHTLOCAL LOCAL SEO
+## OVERLAY: CRAFT PERSONALIZED SEQUENCE SEND
 
 **Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Duration:** 25s minimum
 
-Narration: Source: BrightLocal, "Local SEO Rankings Report 2023" (Example - Replace with actual source) Source: Yelp, "The Impact of Reviews on Business Success" (Example - Replace with actual source) Source: Moz, "Local SEO: How Reviews Impact Your Rankings" (Example - Replace with actual source)
+Narration: Craft a Personalized Sequence: Send a series of emails that address their inactivity and offer them something of value. This could be a discount, a free gift, or exclusive content. Example subject lines: “We Miss You!”, “Exclusive Offer Just For You,” “Come Back and See What’s New.” Don’t just send emails and hope for the best.
+
+---
+
+## OVERLAY: PERSONALIZE EMAILS USE RECIPIENT
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: Personalize Your Emails: Use the recipient’s name and tailor your content to their interests. Mobile Optimization: Ensure your emails are responsive and look good on mobile devices. Clean Your Email List Regularly: Remove inactive subscribers to improve your deliverability. Comply with Email Marketing Regulations: Follow CAN-SPAM Act guidelines and GDPR regulations.
+
+---
+
+## OVERLAY: LOOKING AHEAD EXPLORING ADVANCED
+
+**Visual:** Supporting article visual
+**Duration:** 25s minimum
+
+Narration: Looking ahead, we’ll be exploring more advanced automation techniques, such as dynamic content and behavioral triggers. Stay tuned for more tips and strategies to help you grow your local business. Schedule a free consultation with us at INSERT: Your Website Link Here to discuss your email marketing goals and how we can help you achieve them.
 
 ---
 
@@ -91,6 +91,6 @@ Narration: Source: BrightLocal, "Local SEO Rankings Report 2023" (Example - Repl
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: Considering all these tips, what’s one small change you could?
+Text: Do you think automating email sequences would be a worthwhile?
 Subtext: COMMENT BELOW
-Narration: Considering all these tips, what’s one small change you could? Follow for more practical business tips.
+Narration: Do you think automating email sequences would be a worthwhile? Follow for more practical business tips.

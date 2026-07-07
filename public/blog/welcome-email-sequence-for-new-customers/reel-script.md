@@ -1,7 +1,7 @@
 # Reel Script: welcome-email-sequence-for-new-customers
 format: long-form
 segments: 11
-target-duration: 195s
+target-duration: 205s
 
 ---
 
@@ -10,88 +10,88 @@ target-duration: 195s
 **Visual:** Topic intro shot
 **Duration:** 8s minimum
 
-Narration: Get at least 25 Google reviews , it’s the fastest way to grow.
+Narration: 70 percent of marketing leads never convert , that’s a massive opportunity cost.
 
 ---
 
-## OVERLAY: POUR HEART SOUL CRAFT
-
-**Visual:** Supporting article visual
-**Duration:** 19s minimum
-
-Narration: You pour your heart and soul into your craft, your service, and your community. You want to grow, but the digital world feels…complicated. You’re tired of marketing that doesn’t deliver results and spending money on strategies that leave you feeling confused.
-
----
-
-## OVERLAY: WHAT TOLD THERE FAR
-
-**Visual:** Supporting article visual
-**Duration:** 14s minimum
-
-Narration: But what if I told you there’s a far more immediate and effective way to capture local customers searching for your services? It starts with your Google Business Profile (GBP).
-
----
-
-## OVERLAY: EXAMPLE INSTEAD AUSTIN USE
-
-**Visual:** Supporting article visual
-**Duration:** 25s minimum
-
-Narration: For example, instead of “Austin, TX,” use “Austin, TX - Service Area Code.” Category Selection: Choose the most relevant categories for your business. This helps Google understand what you do and shows it to the right people. Don’t just say “Plumber”; say “Residential Plumbing” or “Commercial Plumbing.” Description: Write a concise, compelling description of your business.
-
----
-
-## OVERLAY: BUSINESS HIGH AVERAGE RATING
+## OVERLAY: SMALL BUSINESS OWNER FEELING
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: A business with a high average rating and plenty of reviews is far more likely to appear at the top of search results than a business with few or no reviews. Think of it this way: potential customers trust the opinions of other customers more than they trust marketing claims.
+Narration: Are you a small business owner feeling overwhelmed by the digital world? Building a strong online presence can seem daunting, especially when you’re already juggling a million other things. That’s where a well-crafted welcome email sequence comes in. It’s your secret weapon for turning new website visitors into loyal customers.
 
 ---
 
-## OVERLAY: PEOPLE MOST LIKELY REMEMBER
+## OVERLAY: BODY HEY CLIENT NAME
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: People are most likely to remember the experience and are more inclined to leave a review while it’s fresh in their minds. Keep it Short: Don’t ask for lengthy reviews. A simple, three-minute comment is often enough. Focus on prompting them to share their overall experience.
+Narration: Body: Hey {Client Name}, Welcome to Fused Distribution! We’re thrilled to have you join our community of local businesses. We know starting a new website can feel a little like jumping into the deep end, so we’re here to guide you every step of the way.
 
 ---
 
-## OVERLAY: SOMEONE SEARCHES SERVICE CITY
+## STAT: 2 TO 3 MINUTE VIDEO SHOWING STEPS ANY
 
 **Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Duration:** 23s minimum
 
-Narration: If someone searches for “Your Service in Your City” and you don’t show up in the results, you’re missing out on potential customers. Your Google Business Profile is a great starting point, but your website needs to complement it and drive further engagement.
+Narration: {Video Link - 2-3 minute video showing the steps}. If you have any questions, don’t hesitate to reply to this email. Best, The Fused Distribution Team CTA: Reply to this email with any questions! Reel Source Material: Short video showing the three steps outlined above, filmed in a friendly, approachable style.
 
 ---
 
-## OVERLAY: INCLUDE PHONE NUMBER EMAIL
+## OVERLAY: WANT DIVE DEEPER SPECIFICS
 
 **Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Duration:** 24s minimum
 
-Narration: Include your phone number, email address, and a contact form. Ensure this information is consistent with your GBP. Call-to-Action Buttons: Use clear call-to-action buttons, such as “Get a Quote,” “Schedule an Appointment,” or “Call Us Today.” Make it easy for visitors to take the next step.
-
----
-
-## OVERLAY: FOCUSING THESE FIVE AREAS
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Focusing on these five areas will make a significant difference in your local search rankings and your ability to attract new customers. You’ve invested time and energy into your business, and you deserve to be found by the customers who need your services.
+Narration: Want to dive deeper into the specifics of your package? {Link to Package Details Page} CTA: Explore your package details here. Social Source Material: A graphic showcasing the key components of the Fused Distribution package, with icons representing each element. Body: {Client Name}, You've probably seen a lot of web design and SEO companies.
 
 ---
 
-## OVERLAY: DON'T LET COMPETITORS STEAL
+## OVERLAY: TRANSPARENT COMMUNICATION KEEP INFORMED
 
 **Visual:** Supporting article visual
 **Duration:** 16s minimum
 
-Narration: Don't let your competitors steal your customers - let’s get you found. --- Note: Replace "Your Service", "Your City", "Your Neighborhood", and "Link to Scheduling Tool" with the relevant information for the business.
+Narration: Transparent Communication: We’ll keep you informed every step of the way. We’re not just selling a service; we’re partnering with you to achieve your business goals. CTA: Schedule a quick call to discuss your goals.
+
+---
+
+## STAT: 3 TO 5 MINUTE VIDEO BODY CLIENT NAME
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: We’ve created a short video walkthrough to help you through each step: {Video Link - 3-5 minute video}. Body: {Client Name}, You’re now part of the Fused Distribution community! We’re a group of local business owners who are committed to helping each other succeed online.
+
+---
+
+## OVERLAY: HERE SIMPLE STEP TAKE
+
+**Visual:** Supporting article visual
+**Duration:** 24s minimum
+
+Narration: Here’s a simple step you can take today: Test Your Website on Your Phone: Open your website in a mobile browser and see how it looks. Adjust Images: Make sure your images are optimized for mobile devices. Ensure Easy Navigation: Make it easy for users to find what they’re looking for on their phones.
+
+---
+
+## OVERLAY: DON TAKE OUR WORD
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Don’t just take our word for it - see how we’ve helped other local businesses thrive. Subject: A Special Gift for New Clients Body: {Client Name}, As a thank you for choosing Fused Distribution, we’d like to offer you {Discount Percentage} percent off your next SEO service package.
+
+---
+
+## OVERLAY: NEXT FEW WEEKS FOCUSING
+
+**Visual:** Supporting article visual
+**Duration:** 16s minimum
+
+Narration: Over the next few weeks, we’ll be focusing on mention a specific upcoming initiative or service. Let’s schedule a quick call to discuss your goals and how we can help you achieve them.
 
 ---
 
@@ -100,6 +100,6 @@ Narration: Don't let your competitors steal your customers - let’s get you fou
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: So, with all this information about getting found online, what’s?
+Text: Considering all this, what’s one small thing new business owners?
 Subtext: COMMENT BELOW
-Narration: So, with all this information about getting found online, what’s? Follow for more practical business tips.
+Narration: Considering all this, what’s one small thing new business owners? Follow for more practical business tips.

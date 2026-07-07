@@ -1,6 +1,7 @@
 {
   "slug": "automated-email-sequences-for-local-business",
-  "score": 92,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "deterministic-local"
 }
