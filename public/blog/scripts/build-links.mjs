@@ -49,6 +49,73 @@ if (chosen.length === 0) { console.log("build-links: no live related posts found
 let body = readFileSync(verifiedPath, "utf8");
 if (/##\s*Related/i.test(body)) { console.log("build-links: Related section already present — skipping"); process.exit(0); }
 
+// ── Linkify bare internal paths (gate check 4: no bare paths in prose) ───
+// The local writer emits literal "/reserve/" and "/blog/x/" as plain text.
+// Wrap them as markdown links; already-linked occurrences ("](/reserve/)")
+// are preceded by "(" so the leading \s|^ guard skips them.
+body = body.replace(/(^|\s)\/reserve\/(?=$|[\s.,;:!?)])/gm, "$1[our reserve page](/reserve/)");
+body = body.replace(/(^|\s)\/blog\/([a-z0-9-]+)\/(?=$|[\s.,;:!?)])/gm,
+  (_, pre, s) => `${pre}[${s.replace(/-/g, " ")}](/blog/${s}/)`);
+
+// ── Inline injection (SOP §9: 2-3 links INSIDE body paragraphs) ──────────
+// For each of the first two chosen posts, find a body paragraph containing a
+// significant word from that post's title and wrap the first occurrence in a
+// markdown link. Fallback: append a pointer sentence to a mid-article paragraph.
+const STOP = new Set(["about","after","best","business","businesses","complete",
+  "does","explained","from","getting","guide","into","local","more","need",
+  "needs","small","that","their","them","they","this","what","when","where",
+  "which","while","with","without","your","silver","how","why","for","and",
+  "the","you"]);
+
+function titleAnchors(title) {
+  return (title.toLowerCase().match(/[a-z][a-z'-]{4,}/g) || [])
+    .filter((w) => !STOP.has(w));
+}
+
+function injectInline(body, post) {
+  const lines = body.split("\n");
+  // paragraph line indexes: non-empty, not heading, not list, not image/table
+  const paraIdx = lines
+    .map((l, i) => ({ l, i }))
+    .filter(({ l }) => l.trim() && !/^#|^[-*>]|^\d+\.|^!\[|^\|/.test(l.trim()))
+    .map(({ i }) => i);
+  if (paraIdx.length === 0) return { body, how: "none" };
+
+  for (const anchor of titleAnchors(post.title)) {
+    const re = new RegExp(`\\b(${anchor})\\b`, "i");
+    for (const i of paraIdx.slice(1)) { // slice(1): keep the very first paragraph clean for the hook
+      const line = lines[i];
+      if (line.includes(`](/blog/`)) continue;          // one inline link per paragraph
+      const m = line.match(re);
+      if (!m) continue;
+      // never wrap text that is already inside a markdown link
+      const before = line.slice(0, m.index);
+      const opens = (before.match(/\[/g) || []).length;
+      const closes = (before.match(/\]/g) || []).length;
+      if (opens > closes) continue;
+      lines[i] = line.slice(0, m.index) +
+        `[${m[0]}](/blog/${post.slug}/)` + line.slice(m.index + m[0].length);
+      return { body: lines.join("\n"), how: `anchor "${m[0]}" para ${i}` };
+    }
+  }
+  // fallback: append a pointer sentence to a middle paragraph without links
+  const mid = paraIdx.filter((i) => !lines[i].includes(`](/blog/`));
+  if (mid.length) {
+    const i = mid[Math.floor(mid.length / 2)];
+    lines[i] = lines[i].replace(/\s*$/, "") +
+      ` For more on this, see [${post.title}](/blog/${post.slug}/).`;
+    return { body: lines.join("\n"), how: `fallback sentence para ${i}` };
+  }
+  return { body, how: "none" };
+}
+
+let inlineCount = 0;
+for (const p of chosen.slice(0, 2)) {
+  const r = injectInline(body, p);
+  if (r.how !== "none") { body = r.body; inlineCount += 1; console.log(`build-links: inline -> ${p.slug} (${r.how})`); }
+}
+if (inlineCount < 2) console.error(`build-links: WARNING only ${inlineCount} inline links injected`);
+
 const block = "\n\n## Related\n\n" +
   chosen.map((p) => `- [${p.title}](/blog/${p.slug}/)`).join("\n") +
   `\n\nRead next: [${chosen[0].title}](/blog/${chosen[0].slug}/)\n`;

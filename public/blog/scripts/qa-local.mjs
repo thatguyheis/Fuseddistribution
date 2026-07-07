@@ -203,7 +203,36 @@ function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers) {
   }
 }
 
-function validateHtml(htmlPath, blockers) {
+function validateInlineLinks(html, blockers, slugDirRoot, selfSlug) {
+  // NB: the T7 template has no </article>; fall back to </body> (always present)
+  const bodyMatch = html.match(/<div class="article-body">([\s\S]*?)(?=<h2\b[^>]*>\s*Related\s*<\/h2>|<\/article>|<\/body>)/i);
+  if (!bodyMatch) { blockers.push('inline links: article-body not found'); return; }
+  const body = bodyMatch[1];
+
+  // Check 1: >=2 inline internal links before the Related block
+  const inline = (body.match(/href="\/blog\/[a-z0-9-]+\/"/g) || []);
+  pushIf(inline.length < 2, blockers, `inline internal links: ${inline.length} found, need >=2`);
+
+  // Check 2: Related block with >=2 items + Read next line
+  const relatedBlock = html.match(/<h2\b[^>]*>\s*Related\s*<\/h2>([\s\S]*?)(?=<h2\b|<\/div>)/i)?.[1] ?? '';
+  const relatedLinks = (relatedBlock.match(/href="\/blog\//g) || []).length;
+  pushIf(relatedLinks < 2, blockers, `related block: ${relatedLinks} links, need >=2`);
+  pushIf(!/Read next:/i.test(html), blockers, 'missing Read next line');
+
+  // Check 3: every internal blog link target exists locally (HTTP would be
+  // flaky mid-pipeline; the current post is not deployed yet)
+  const targets = [...html.matchAll(/href="\/blog\/([a-z0-9-]+)\/"/g)].map((m) => m[1]);
+  for (const t of new Set(targets)) {
+    if (t === selfSlug) continue;
+    pushIf(!existsSync(join(slugDirRoot, t, 'index.html')), blockers, `link target missing: /blog/${t}/`);
+  }
+
+  // Check 4: bare internal paths in prose (text nodes, not attributes)
+  const text = textFromHtml(body);
+  pushIf(/(^|[^\w"'=\/])\/(reserve|blog\/[a-z0-9-]+)\/(\s|[.,)]|$)/.test(text), blockers, 'bare internal path in prose');
+}
+
+function validateHtml(htmlPath, blockers, slug) {
   const html = readText(htmlPath);
   pushIf(!html, blockers, 'missing index.html');
   validateTextSurface('index.html', html, blockers);
@@ -211,6 +240,7 @@ function validateHtml(htmlPath, blockers) {
   if (html) {
     validateTopicCoherence(html, blockers);
     validateSectionRepetition(html, blockers);
+    validateInlineLinks(html, blockers, BLOG_DIR, slug);
   }
 }
 
@@ -225,7 +255,7 @@ function main() {
   const outPath = argValue('--out', join(dir, 'qa.json'));
   const blockers = [];
 
-  validateHtml(join(dir, 'index.html'), blockers);
+  validateHtml(join(dir, 'index.html'), blockers, slug);
   validateSocial(join(dir, 'social-copy.json'), blockers);
   validateReelMarkdown(join(dir, 'reel-script.md'), join(dir, 'reel-data.md'), slug, blockers);
 
