@@ -157,6 +157,7 @@ PY
 # Lint gate + fix loop (max 2 passes)
 for attempt in 1 2 3; do
   sanitize_dashes "$OUT"
+  python3 "$SCRIPT_DIR/sanitize-draft.py" "$OUT"
   if node "$LINT" "$OUT" --out="$LINT_OUT" --quiet; then
     echo "[write-article] lint PASS (attempt $attempt) -> $OUT"
     exit 0
