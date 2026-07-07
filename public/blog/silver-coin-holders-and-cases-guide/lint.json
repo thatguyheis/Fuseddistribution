@@ -1,0 +1,17 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/silver-coin-holders-and-cases-guide/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 0,
+  "banned": [
+    {
+      "term": "delve deeper",
+      "count": 1
+    }
+  ],
+  "hedging": [],
+  "filler_transitions": [],
+  "openers": [],
+  "total_violations": 1
+}

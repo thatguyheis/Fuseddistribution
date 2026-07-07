@@ -82,6 +82,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-07 | silver-coin-holders-and-cases-guide | General | silver coin holders and cases guide |
 | 2026-07-06 | best-ways-to-clean-silver-coins-without-damage | General | best ways to clean silver coins without damage |
 | 2026-07-06 | does-tarnished-silver-lose-value | General | does tarnished silver lose value |
 | 2026-07-05 | silver-tarnish-why-it-happens-and-how-to-prevent-it | General | silver tarnish why it happens and how to prevent it |
