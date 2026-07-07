@@ -20,9 +20,8 @@
 - First change chips appear only after first cron run writes a snapshot AND a day passes (or seed a `spot:<yesterday>` key in prod KV at deploy).
 - FAQ page 1080px media block has a pre-existing malformed CSS fragment (stray `to { ... }` around line 558) — harmless but worth cleaning.
 
-## Deploy checklist (when approved)
-1. `git push origin main` (needs explicit OK — non-content).
-2. Verify no cron-pipeline race (memory: deploy_cron_race) — check newest version after deploy.
-3. `npx wrangler deploy`; confirm `SPOT_KV` binding + cron trigger in output.
-4. Optionally seed yesterday: `npx wrangler kv key put --binding SPOT_KV --remote "spot:$(date -u -v-1d +%F)" '{"silver":<val>,"gold":<val>}'`
-5. `curl https://fuseddistribution.com/api/spot` — expect prices (+ `prev` once seeded/next day).
+## Deployed 2026-07-07 ~6:18 AM PDT (approved by Nick)
+- Pushed main (00ed8fb..0557578), `wrangler deploy` version `f419b52c-0b45-44ec-a140-187cbec9e11d`; SPOT_KV binding + `5 0 * * *` cron confirmed in output.
+- Seeded `spot:2026-07-06` = `{"silver":62.00,"gold":4154.90}` (Jul 6 close per CNBC/Yahoo Finance). Note: `--expiration-ttl` flag failed on wrangler 4.102 (yargs error); seeded without TTL — one permanent key, harmless.
+- Verified: `/api/spot` returns prev; production screenshot shows plaque (▲ +$0.62 · 1.0% silver, ▲ +$21.49 · 0.5% gold) and header ticker; FAQ markup live; /reserve/ 200.
+- No cron race (deployed 6:15am, pipeline runs 9am PDT).
