@@ -8,3 +8,8 @@ blog/research
 blog/*/social-copy.json
 blog/*/posting-pack.json
 blog/*/posting-pack.md
+blog/*/qa.json
+blog/*/lint.json
+blog/*/meta.json
+blog/*/hooks.json
+blog/*/_status.json
