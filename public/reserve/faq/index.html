@@ -184,6 +184,39 @@
         text-transform: uppercase;
       }
 
+      .spot-ticker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+      }
+
+      .ticker-sep { color: rgba(200, 185, 140, 0.35); }
+
+      .t-arrow { font-size: 0.62rem; }
+      .t-arrow.up   { -webkit-text-fill-color: #8fc9a0; color: #8fc9a0; }
+      .t-arrow.down { -webkit-text-fill-color: #d99a8f; color: #d99a8f; }
+
+      .metal-ag {
+        background: linear-gradient(180deg, #eef2f8 0%, #d0d8e4 45%, #8d99a6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      .metal-au {
+        background: linear-gradient(180deg, #ffe9b8 0%, #f2c66d 45%, #c9922a 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
       /* ── Dropdown navigation ── */
       .nav-item { position: relative; }
 
@@ -544,6 +577,7 @@
 
       @media (max-width: 1080px) {
         .topbar { flex-direction: column; align-items: flex-start; }
+        .spot-ticker { order: 3; }
         .hero, .main { padding-left: 26px; padding-right: 26px; }
         .cta-strip { flex-direction: column; align-items: flex-start; }
         .nav-dropdown { left: 0; transform: none; }
@@ -627,6 +661,11 @@
             <a href="/blog/">Blog</a>
           </div>
           <div class="nav-actions">
+            <div class="spot-ticker" id="spot-ticker" hidden aria-label="Live spot prices">
+              <span class="metal-ag">Ag <span id="tick-silver"></span><span class="t-arrow" id="tick-silver-arrow"></span></span>
+              <span class="ticker-sep">·</span>
+              <span class="metal-au">Au <span id="tick-gold"></span><span class="t-arrow" id="tick-gold-arrow"></span></span>
+            </div>
             <div class="status-chip">Silver-first memberships</div>
           </div>
         </nav>
@@ -1056,6 +1095,36 @@
           }
         });
       });
+    </script>
+
+    <!-- Spot ticker -->
+    <script>
+    (function () {
+      function usd(n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+      function setArrow(id, diff) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = diff >= 0 ? ' ▲' : ' ▼';
+        el.className = 't-arrow ' + (diff >= 0 ? 'up' : 'down');
+      }
+      async function loadSpot() {
+        try {
+          var res = await fetch('/api/spot');
+          var data = await res.json();
+          if (!data.silver) return;
+          var ts = document.getElementById('tick-silver');
+          var tg = document.getElementById('tick-gold');
+          if (ts) ts.textContent = usd(data.silver);
+          if (tg) tg.textContent = '$' + Math.round(data.gold).toLocaleString('en-US');
+          if (data.prev) {
+            setArrow('tick-silver-arrow', data.silver - data.prev.silver);
+            setArrow('tick-gold-arrow', data.gold - data.prev.gold);
+          }
+          document.getElementById('spot-ticker').hidden = false;
+        } catch (e) {}
+      }
+      loadSpot();
+    })();
     </script>
   </body>
 </html>
