@@ -321,17 +321,23 @@ npm run social:buffer:x:media -- --slugs=slug-one,slug-two
 
 2. Confirm each selected YouTube slug has `public/reels/<slug>/<slug>.mp4`, is 179 seconds or shorter, is 25 MiB or smaller, uses H.264/AAC, and has a long edge no larger than 1280px. Confirm each selected X slug has `public/reels-x/<slug>/<slug>.mp4`, is 140 seconds or shorter, and is 25 MiB or smaller.
 3. Deploy `public/` so the reels go live. The reels are served from the same worker on both `fuseddistribution.com/reels/...` and the `*.workers.dev/reels/...` route. Deploy is outward-facing; get Nick's explicit go before running it.
-4. Verify every selected MP4 URL returns HTTP 200 over HTTPS with `content-type: video/mp4`. Do not start Buffer scheduling until all return 200:
+4. Confirm the active deployment is the asset-upload deployment. If `npx wrangler deploy` uploads MP4 assets but the live MP4 URLs still return a Cloudflare 404, run `npx wrangler deployments status --name fuseddistribution` and compare the active version to the version printed immediately after the asset upload. If a later trigger-sync deployment is active, route traffic back to the asset-upload version before scheduling:
+
+```bash
+npx wrangler versions deploy <asset-upload-version-id>@100 --name fuseddistribution -y
+```
+
+5. Verify every selected MP4 URL returns HTTP 200 over HTTPS with `content-type: video/mp4`. Do not start Buffer scheduling until all return 200:
 
 ```bash
 npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slugs=slug-one,slug-two
 ```
 
-5. Query Buffer org `6a3e62cb6adcaa97fe293a7d` for live `scheduled`, `sending`, `sent`, and `error` posts. Reconcile past-due local scheduled-log entries before using the logs to skip a slug. Do not trust the local `.buffer-*-scheduled.json` logs for capacity; past `dueAt` entries may already have published, errored, or dropped off.
-6. Recompute capacity: limit 10, reserve 2, fill at most 8 slots. Each slug uses 1 YouTube post plus 1 X post, so cap slug pairs accordingly.
-7. Schedule YouTube first through the Buffer API or Buffer UI (channel `6a3e63375ab6d2f1067461b2`). Immediately call `get_post`; append to `.buffer-youtube-scheduled.json` only if the post is not in `error` and still has the video asset.
-8. Schedule X through the Buffer API only for `.buffer-x-queue.json` `selected` jobs. Verify each created X post with `get_post`; if the video asset is missing, delete the post and do not log it.
-9. Do not push unless the run is a content commit covered by standing push permission.
+6. Query Buffer org `6a3e62cb6adcaa97fe293a7d` for live `scheduled`, `sending`, `sent`, and `error` posts. Reconcile past-due local scheduled-log entries before using the logs to skip a slug. Do not trust the local `.buffer-*-scheduled.json` logs for capacity; past `dueAt` entries may already have published, errored, or dropped off.
+7. Recompute capacity: limit 10, reserve 2, fill at most 8 slots. Each slug uses 1 YouTube post plus 1 X post, so cap slug pairs accordingly.
+8. Schedule YouTube first through the Buffer API or Buffer UI (channel `6a3e63375ab6d2f1067461b2`). Immediately call `get_post`; append to `.buffer-youtube-scheduled.json` only if the post is not in `error` and still has the video asset.
+9. Schedule X through the Buffer API only for `.buffer-x-queue.json` `selected` jobs. Verify each created X post with `get_post`; if the video asset is missing, delete the post and do not log it.
+10. Do not push unless the run is a content commit covered by standing push permission.
 
 ### Scheduled Queue Maintenance Task
 
