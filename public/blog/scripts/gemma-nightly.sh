@@ -497,10 +497,10 @@ ${SPOT_LINE:+$SPOT_LINE
 
 }Target keyword: \"$KEYWORD\"
 
-Write a structured content brief. Sections:
+Write a structured content brief for the exact keyword/title candidate below. Do not drift to an adjacent topic.
 
 ## Search Intent
-One sentence: what does someone searching this actually want?
+One sentence: what does someone searching this exact keyword actually want?
 
 ## Best Angle
 One sentence: what angle makes this post stand out from generic results?
@@ -508,14 +508,17 @@ One sentence: what angle makes this post stand out from generic results?
 ## Competitor Gap
 Two sentences: what do most articles on this topic miss?
 
+## Topic Contract
+One sentence confirming the slug, SEO title, search intent, H2 plan, and body all answer the same reader problem. Name 3-6 required topic terms and 2-4 forbidden drift topics.
+
 ## Key Points (5 bullets)
-Specific, factual, non-obvious. Mark uncertain stats [VERIFY].
+Specific, factual, non-obvious points that directly satisfy the keyword. Mark uncertain stats [VERIFY].
 
 ## H2 Structure
-4-5 H2 headings in logical order.
+4-5 H2 headings in logical order. At least half must include the keyword's core terms or close synonyms.
 
 ## SEO Title
-One title, 55 chars max, includes keyword.
+One title, 55 chars max, includes the keyword's core terms and matches the search intent. Do not substitute a different topic.
 
 ## Internal Links
 2 slugs from: dollar-cost-averaging-silver, silver-coins-rounds-bars, silver-etf-vs-physical, silver-inflation-hedge, silver-portfolio-allocation, silver-premiums-explained, silver-storage-guide, silver-supply-deficit, silver-to-gold-ratio, what-is-junk-silver, where-to-buy-silver, getting-google-reviews, google-business-profile-setup, local-seo-near-me, what-a-website-does-for-your-business, word-of-mouth-referrals

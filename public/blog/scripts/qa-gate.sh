@@ -27,6 +27,21 @@ REEL="${REEL:-$BLOG_DIR/$SLUG/reel-script.md}"
 ARTICLE_TEXT="$(head -c "${HERMES_LOCAL_QA_ARTICLE_CHARS:-4500}" "$ARTICLE" 2>/dev/null || true)"
 SOCIAL_TEXT="$(head -c "${HERMES_LOCAL_QA_SOCIAL_CHARS:-3200}" "$SOCIAL" 2>/dev/null || echo '{}')"
 REEL_TEXT="$(grep -E '^## (HOOK|STAT|OVERLAY|QUESTION)|^Text:|^Subtext:' "$REEL" 2>/dev/null | head -c "${HERMES_LOCAL_QA_REEL_CHARS:-2600}" || true)"
+ARTICLE_TITLE="$(python3 - "$HTML" <<'PY' 2>/dev/null || true
+from pathlib import Path
+import html as html_mod
+import re, sys
+text = Path(sys.argv[1]).read_text(errors="ignore")
+for pattern in (r"<h1\b[^>]*>(.*?)</h1>", r"<title\b[^>]*>(.*?)</title>"):
+    m = re.search(pattern, text, re.S | re.I)
+    if m:
+        title = re.sub(r"<[^>]+>", " ", m.group(1))
+        title = html_mod.unescape(re.sub(r"\s+", " ", title)).strip()
+        title = re.sub(r"\s*\|\s*Fused.*$", "", title).strip()
+        print(title)
+        break
+PY
+)"
 HTML_HEAD="$(python3 - "$HTML" <<'PY' 2>/dev/null || true
 from pathlib import Path
 import re, sys
@@ -37,9 +52,14 @@ PY
 )"
 
 PROMPT="You are the final QA gate for a production blog-to-reel workflow. Judge these artifacts together.
-Score 0-100 on: useful answer-first writing, factual/numeric sanity, no AI filler, no em dashes, complete metadata/schema, caption quality, and reel script coherence.
-Block publish for malformed years/numbers, placeholders, broken JSON, thin generic copy, off-topic reel segments, or awkward/truncated reel labels.
-pass = score >= 85 AND no critical blocker (broken/empty content, leftover [SLOT]/[VERIFY] in body, em dash).
+Title promise: $ARTICLE_TITLE
+Slug: $SLUG
+
+Score 0-100 on: title/body topic coherence, useful answer-first writing, factual/numeric sanity, no AI filler, no em dashes, complete metadata/schema, caption quality, and reel script coherence.
+Block publish for malformed years/numbers, placeholders, broken JSON, thin generic copy, title/body mismatch, repeated sections, off-topic reel segments, or awkward/truncated reel labels.
+Topic coherence is a critical gate: the article must answer the exact reader problem promised by the title/slug. Mark each H2 mentally as on-topic, supporting, or drift. If fewer than half are on-topic, or if the body mainly answers another query, fail. Clean grammar and complete metadata cannot compensate for drift.
+Repetition is a critical gate: fail if the same 3-5 talking points are repeated under different H2s instead of adding new information.
+pass = score >= 85 AND no critical blocker (broken/empty content, title/body drift, repeated sections, leftover [SLOT]/[VERIFY] in body, em dash).
 Output ONLY valid JSON (no fences, no commentary): {\"slug\":\"$SLUG\",\"score\":0,\"pass\":true,\"blockers\":[]}
 
 --- article markdown ---

@@ -46,7 +46,7 @@ fi
 # ── ensure a draft exists ──
 if [[ ! -f "$DIR/gemma_draft.md" ]]; then
   log "no gemma_draft.md — generating outline via local model (structural reference only)"
-  { echo "Write a 10-bullet outline for an article titled \"$KEYWORD\". Each bullet = one H2 section topic. Plain text, no prose, no sentences. One line per bullet."; } | "$LOCAL_LLM" > "$DIR/gemma_draft.md" 2>/dev/null || true
+  { echo "Write a 10-bullet outline for an article titled \"$KEYWORD\". Stay on the exact title promise; do not substitute an adjacent topic. Each bullet = one H2 section topic. At least half the bullets must include the title's core terms or close synonyms. Plain text, no prose, no sentences. One line per bullet."; } | "$LOCAL_LLM" > "$DIR/gemma_draft.md" 2>/dev/null || true
 fi
 # gemma_draft.md is structural reference; write-article writes the real article
 

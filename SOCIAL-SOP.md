@@ -136,13 +136,50 @@ npm run social:buffer:verify-media -- --url=https://example.com/reels/slug/slug.
 
 - Each MP4 is no longer than 179 seconds for Buffer YouTube API scheduling. In the 2026-06-30 repair, 181-182 second files returned generic Buffer `Invalid post` errors, while 175-179 second files scheduled cleanly.
 - Each MP4 is at most 25 MiB. Cloudflare Workers static assets (`assets.directory=./public`) reject any single file over 25 MiB, so larger reels never go live and Buffer cannot fetch them. Re-encode oversize reels under 25 MiB before deploy, or skip them for the run.
+- Each Buffer-safe YouTube copy must be H.264 video with AAC audio and a long edge no larger than 1280px. Buffer's YouTube Shorts spec allows portrait videos up to 3 minutes, but Buffer's video troubleshooting guidance is stricter for reliable processing; the local prep script downscales 1080x1920 sources to 720x1280.
 - `assets.blog_url` and the YouTube description use the matching canonical website URL: `https://fuseddistribution.com/blog/[slug]/`.
 - The post uses the exact YouTube Buffer channel ID `6a3e63375ab6d2f1067461b2`.
 - The Buffer `create_post` payload includes `metadata.youtube.title` and `metadata.youtube.categoryId`, because YouTube requires both.
 - Default to Buffer custom scheduling (`mode: customScheduled`) in the 1:00 PM-7:00 PM `America/Los_Angeles` window. Use the correct local offset for the date (`-07:00` during PDT, `-08:00` during PST).
 - For a specific scheduled time, resolve it in the Buffer account timezone, `America/Los_Angeles`, and make sure it is in the future.
+- A generated `.buffer-*-queue.json` expires after 30 minutes. Never reuse a queue file from a prior session or a prior day. Re-run the planner, then validate the fresh queue immediately before calling Buffer `create_post`.
 
 If any requirement is missing, create the posting pack and stop for handoff instead of publishing.
+
+Before creating any YouTube Buffer post, run:
+
+```bash
+npm run social:buffer:validate -- --queue=.buffer-youtube-queue.json
+```
+
+This must pass in the same terminal session as scheduling. It blocks stale queue files, past `dueAt` values, skipped media verification, malformed video payloads, and channel/payload mismatches.
+
+### Buffer Failure Recovery And Reconciliation
+
+On 2026-07-02, Buffer status reported the Buffer Web App, Buffer API, and Buffer MCP as operational. The local investigation found the current four hosted YouTube and X MP4 URLs returned `200 video/mp4`, so the active failure pattern is not a broad Buffer outage and not a missing hosted MP4 for those files. Treat future failures as post-level Buffer/platform handoff errors until proven otherwise.
+
+Common failure patterns:
+
+- `Please update the media URL to be publicly accessible before retrying the post`: the exact URL sent to Buffer was not fetchable when Buffer tried to create or publish the post. Re-run `npm run social:buffer:verify-media` against that exact URL, deploy assets if needed, then delete or update the failed Buffer post before retrying.
+- Generic `Invalid post` on YouTube: usually duration or media eligibility. Rebuild the YouTube Buffer copy with `npm run social:buffer:youtube:media -- --slugs=<slug>` and confirm the output is 179 seconds or shorter, 25 MiB or smaller, H.264/AAC, and capped at a 1280px long edge.
+- X post created but publishes text-only: Buffer stripped or rejected the video asset. Delete the false-positive post before it publishes, rebuild the X cutdown, and retry only if `get_post` returns a top-level video asset.
+- Local `.buffer-*-scheduled.json` says `scheduled`, but Buffer later shows `error`, `failed`, text-only, or no live post after `dueAt`: update the local log entry to `status: "error"` with the Buffer error message. Do not let stale local logs block a retry.
+
+Recovery order:
+
+1. Check Buffer live posts for `scheduled`, `sending`, `sent`, and `error` statuses on both connected channels.
+2. For every local scheduled-log entry whose `dueAt` is in the past, reconcile it against Buffer. Mark it `sent` only if Buffer confirms delivery. Mark it `error` if Buffer has an error, stripped the video asset, or the post is missing after its due time.
+3. Re-run media verification for the exact selected URLs:
+
+```bash
+npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slugs=<slug>
+npm run social:buffer:verify-media -- --media-map=.buffer-x-media-urls.json --slugs=<slug>
+```
+
+4. Re-run the relevant planner. The planner is the source of truth for the next retry payload; do not hand-edit due times, channel IDs, assets, or metadata.
+5. Run `npm run social:buffer:validate -- --queue=<fresh queue file>` and stop if it fails.
+6. After `create_post`, immediately call `get_post`. For YouTube, the post must not be `error` and must retain the video asset. For X, `assets[0].type` must be `video`. Only then append or update the local scheduled log.
+7. After the scheduled `dueAt` passes, check Buffer again. If it did not send, reconcile the log before scheduling anything else.
 
 ### X Buffer Scheduling Requirements
 
@@ -184,6 +221,14 @@ npm run social:buffer:x:plan -- --current-scheduled=<count> --limit=10 --reserve
 ```
 
 The X planner verifies media URLs by default. Use `--skip-media-url-verification` only for offline planning, never for production scheduling. If any selected X media URL fails verification, do not create the Buffer post.
+
+Before creating any X Buffer post, run:
+
+```bash
+npm run social:buffer:validate -- --queue=.buffer-x-queue.json
+```
+
+This must pass in the same terminal session as scheduling. A queue generated yesterday, or even earlier the same day outside the 30-minute window, is not valid for publishing.
 
 Schedule only `.buffer-x-queue.json` `selected` jobs. Each job includes this payload shape:
 
@@ -242,12 +287,16 @@ The YouTube planner blocks posts before Buffer if any media gate fails:
 
 - `youtube_video_too_long`: run `npm run social:buffer:youtube:media -- --slugs=<slug>`.
 - `media_too_large_for_cloudflare_assets`: re-encode through the YouTube media prep script or lower the render bitrate.
+- `media_too_large`: the hosted URL reports a file over the Buffer/Cloudflare size gate. Rebuild the platform-safe copy and redeploy.
 - `public_media_url_not_ok` or `public_media_url_fetch_failed`: deploy the assets, then rerun the planner.
 - `public_media_url_not_mp4`: fix the Worker/static asset route before scheduling.
+- `stale_scheduled_log_needs_buffer_reconcile`: the local log says Buffer accepted the post, but `dueAt` is more than 60 minutes in the past and the entry still says `scheduled`. Check Buffer by `postId` and update the local log to `sent` or `error` before retrying.
 
 Schedule only the `selected` jobs. Each job includes the exact `createPostPayload` for Buffer. Do not schedule `blocked`, `skipped`, or `readyOverflow` entries.
 
 After scheduling a selected job, call `get_post` for the returned Buffer post ID. Append the slug and Buffer post ID to `.buffer-youtube-scheduled.json` only if the post is not in `error`, has no media accessibility error, and still has a video asset. The planner reads this local log and skips already scheduled slugs so the daily automation does not duplicate backlog posts. If a logged Buffer post later fails, update that local log entry to `status: "error"` so the planner can pick the slug up again after the media URL is fixed.
+
+Do not trust a local scheduled-log entry whose `dueAt` is already in the past until it has been reconciled against Buffer. Past-due entries with `status: "scheduled"` mean "needs verification", not "done".
 
 Every selected YouTube job must include the matching blog URL in its description:
 
@@ -270,7 +319,7 @@ npm run social:buffer:youtube:media -- --slugs=slug-one,slug-two
 npm run social:buffer:x:media -- --slugs=slug-one,slug-two
 ```
 
-2. Confirm each selected YouTube slug has `public/reels/<slug>/<slug>.mp4`, is 179 seconds or shorter, and is 25 MiB or smaller. Confirm each selected X slug has `public/reels-x/<slug>/<slug>.mp4`, is 140 seconds or shorter, and is 25 MiB or smaller.
+2. Confirm each selected YouTube slug has `public/reels/<slug>/<slug>.mp4`, is 179 seconds or shorter, is 25 MiB or smaller, uses H.264/AAC, and has a long edge no larger than 1280px. Confirm each selected X slug has `public/reels-x/<slug>/<slug>.mp4`, is 140 seconds or shorter, and is 25 MiB or smaller.
 3. Deploy `public/` so the reels go live. The reels are served from the same worker on both `fuseddistribution.com/reels/...` and the `*.workers.dev/reels/...` route. Deploy is outward-facing; get Nick's explicit go before running it.
 4. Verify every selected MP4 URL returns HTTP 200 over HTTPS with `content-type: video/mp4`. Do not start Buffer scheduling until all return 200:
 
@@ -278,26 +327,26 @@ npm run social:buffer:x:media -- --slugs=slug-one,slug-two
 npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slugs=slug-one,slug-two
 ```
 
-5. Query Buffer org `6a3e62cb6adcaa97fe293a7d` for live `scheduled` plus `sending` count. Do not trust the local `.buffer-*-scheduled.json` logs for capacity; past `dueAt` entries may already have published or dropped off.
+5. Query Buffer org `6a3e62cb6adcaa97fe293a7d` for live `scheduled`, `sending`, `sent`, and `error` posts. Reconcile past-due local scheduled-log entries before using the logs to skip a slug. Do not trust the local `.buffer-*-scheduled.json` logs for capacity; past `dueAt` entries may already have published, errored, or dropped off.
 6. Recompute capacity: limit 10, reserve 2, fill at most 8 slots. Each slug uses 1 YouTube post plus 1 X post, so cap slug pairs accordingly.
-7. Schedule YouTube first through the Buffer API or Buffer UI (channel `6a3e63375ab6d2f1067461b2`), then append to `.buffer-youtube-scheduled.json`.
+7. Schedule YouTube first through the Buffer API or Buffer UI (channel `6a3e63375ab6d2f1067461b2`). Immediately call `get_post`; append to `.buffer-youtube-scheduled.json` only if the post is not in `error` and still has the video asset.
 8. Schedule X through the Buffer API only for `.buffer-x-queue.json` `selected` jobs. Verify each created X post with `get_post`; if the video asset is missing, delete the post and do not log it.
-9. Verify YouTube AI disclosure manually in Buffer or YouTube Studio for each reel.
-10. Do not push unless the run is a content commit covered by standing push permission.
+9. Do not push unless the run is a content commit covered by standing push permission.
 
 ### Scheduled Queue Maintenance Task
 
 Codex automation `buffer-youtube-queue-maintenance` runs once per day after the reel render window at 1:15 PM local time. It schedules ready hosted reels to YouTube and X while respecting the shared Buffer limit. The task should:
 
-1. Query Buffer organization `6a3e62cb6adcaa97fe293a7d` for `scheduled` and `sending` posts.
-2. Count those posts and export the count as `BUFFER_CURRENT_SCHEDULED`.
+1. Query Buffer organization `6a3e62cb6adcaa97fe293a7d` for `scheduled`, `sending`, `sent`, and `error` posts.
+2. Reconcile `.buffer-youtube-scheduled.json` and `.buffer-x-scheduled.json`: any past-due entry still marked `scheduled` must be confirmed as sent or marked `error` before planning. Count only live `scheduled` and `sending` posts as `BUFFER_CURRENT_SCHEDULED`.
 3. Run `npm run social:buffer:youtube:media` for any newly rendered slugs before planning. This keeps public YouTube Buffer assets under 179 seconds and 25 MiB.
 4. Run `scripts/plan-buffer-youtube-queue.sh` with `BUFFER_RESERVE_SLOTS=2`, or run `npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
 5. Schedule only `.buffer-youtube-queue.json` `selected` jobs through Buffer for YouTube.
 6. Run `npm run social:buffer:x:plan` with the same `BUFFER_CURRENT_SCHEDULED`, reserve slots, media map, scheduled log, and 13:00-19:00 schedule window.
 7. Schedule only `.buffer-x-queue.json` `selected` X jobs through Buffer API. Verify every created X post with `get_post`; if the video asset is missing, delete the post before it publishes.
-8. Append successful YouTube posts to `.buffer-youtube-scheduled.json` only after `get_post` confirms no Buffer error. Append X posts to `.buffer-x-scheduled.json` only after `get_post` proves the video asset is present.
-9. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
+8. Append successful YouTube posts to `.buffer-youtube-scheduled.json` only after `get_post` confirms no Buffer error and the video asset is present. Append X posts to `.buffer-x-scheduled.json` only after `get_post` proves the video asset is present.
+9. After scheduling, re-query each created Buffer post ID and report any `error` object, media accessibility warning, missing asset, or status mismatch.
+10. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
 
 The reserve is intentional. With a 10-post Buffer limit, the automation should fill at most 8 slots so today’s fresh reels still have room.
 
@@ -321,7 +370,7 @@ All captions written by Claude during pipeline. Same writing style rules as blog
 - Hashtags: specific tags only, no generic stuffing
 - First line must explain why the viewer should keep watching
 - Avoid platform promises that cannot be verified, such as "viral" or guaranteed results
-- AI disclosure: set YouTube/Buffer AI content disclosure to `Yes` for all AI-assisted reels unless the reel is confirmed to be entirely human-recorded, non-realistic, and only uses minor AI assistance. The current Buffer API tool does not expose this field, so verify it manually in Buffer or YouTube Studio after scheduling.
+- AI disclosure: do not block Buffer scheduling on this field. If YouTube exposes an AI disclosure control in a future supported tool or manual follow-up flow, handle it as a non-blocking post scheduling cleanup item.
 
 ### Instagram
 - Punchy opener (first sentence must hook before the "more" cutoff)
@@ -398,11 +447,10 @@ Full spec in BLOG-SOP.md §15. Quick reference:
 2. Generate Buffer-safe public media with `npm run social:buffer:youtube:media -- --slugs=<slug>` and `npm run social:buffer:x:media -- --slugs=<slug>`, then deploy.
 3. Query Buffer scheduled/sending count, then run `npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
 4. YouTube: schedule every `.buffer-youtube-queue.json` `selected` job through Buffer API to channel `6a3e63375ab6d2f1067461b2`; otherwise open Buffer, select the connected YouTube channel, upload the MP4, paste the title/description/tags from the posting pack, verify the description links to `https://fuseddistribution.com/blog/[slug]/`, and schedule.
-5. YouTube AI disclosure: confirm the scheduled post is marked with the AI content disclosure/tag in Buffer or YouTube Studio.
-6. X: run `npm run social:buffer:x:plan -- --current-scheduled=<count>` and schedule only eligible selected X jobs through Buffer API on channel `6a3e73fb5ab6d2f10674b516`. Confirm the copy stays under 280 characters, the video is at most 140 seconds, and `get_post` shows a persisted video asset before logging success.
-7. Facebook Professional Mode: use the Facebook reel batch pack below, then open Facebook native composer or Professional Dashboard, upload the MP4, paste the Facebook caption, and publish or schedule with native controls.
-8. After the Facebook reel is live, paste the blog URL as the first comment.
-9. Log performance after 48-72 hours with `video/scripts/feedback.mjs`.
+5. X: run `npm run social:buffer:x:plan -- --current-scheduled=<count>` and schedule only eligible selected X jobs through Buffer API on channel `6a3e73fb5ab6d2f10674b516`. Confirm the copy stays under 280 characters, the video is at most 140 seconds, and `get_post` shows a persisted video asset before logging success.
+6. Facebook Professional Mode: use the Facebook reel batch pack below, then open Facebook native composer or Professional Dashboard, upload the MP4, paste the Facebook caption, and publish or schedule with native controls.
+7. After the Facebook reel is live, paste the blog URL as the first comment.
+8. Log performance after 48-72 hours with `video/scripts/feedback.mjs`.
 
 ### Future Postiz workflow
 

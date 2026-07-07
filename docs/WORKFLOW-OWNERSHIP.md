@@ -33,7 +33,7 @@ Remotion is a downstream renderer. It should run only after blog assets, reel da
 ## Current Production Standard
 
 - The 9 AM job builds, validates, commits, then pushes and deploys approved blog posts automatically (`BLOG_AUTO_DEPLOY=1` in the launchd plist, enabled 2026-06-29) and curl-verifies each slug returns 200. It does not render video. QA-failed or deferred posts are not registered, not pushed, and stay local for retry. To restore manual review, unset `BLOG_AUTO_DEPLOY` in the plist and reload.
-- The 11 AM job renders at most two stale registered reels per run and commits metadata locally for Claude review.
+- The 11 AM job renders at most four stale registered reels per run and commits metadata locally for Claude review. Keep this aligned with the daily blog publish target; if four posts publish per day, rendering only two guarantees a reel backlog and starves Buffer.
 - A global render lock prevents launchd, Claude, and Codex from starting concurrent Remotion jobs on the Mac.
 - Chatterbox with Nick's voice reference is the required production voice. Zoe is opt-in recovery only.
 - Remotion variable text uses measured fitting. Script validation blocks missing or mismatched stat figures.

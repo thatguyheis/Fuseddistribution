@@ -28,6 +28,7 @@ echo $PEXELS_API_KEY
 
 - [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
 - [ ] **`seo-plan` skill** — target keyword, search intent, competitor gap. Slug comes from keyword. Run FIRST.
+- [ ] **Topic contract check (§7b)** — title, slug, keyword, search intent, H2 plan, and draft must all answer the same reader problem. If they disagree, stop and rewrite the brief before generating.
 - [ ] **`blog-write` skill** — pass "Target keyword: [kw]. Intent: [intent]. Competitor gap: [gap]." Enforces E-E-A-T, sourced stats, 5-gate delivery, all §9 writing rules.
 - [ ] **`blog-seo-check` skill** — on-page signals: title, meta, H1, H2s, canonical, OG tags.
 - [ ] **`seo-schema` skill** — validate/generate FAQPage + Article JSON-LD schema.
@@ -344,6 +345,45 @@ Before invoking `blog-write`, identify the post's target keyword using the `seo-
 - Do not keyword-stuff — one natural placement per element is enough
 
 **Pass to `blog-write`:** "Target keyword: [keyword]. Intent: [intent]. Competitor gap: [gap]."
+
+---
+
+## 7b. Topic Contract And Drift Gate
+
+Every post needs a topic contract before drafting. This prevents the failure mode where the folder/title says one thing, but the body answers a different query.
+
+**Topic contract fields:**
+- `slug`: the committed URL promise
+- `title`: the reader-facing promise
+- `primary keyword`: the search query being answered
+- `search intent`: what the reader is trying to do
+- `angle`: the specific business value or information gain
+- `required terms`: 3-6 concrete terms that must appear naturally in H2s and body
+- `forbidden drift`: adjacent topics that may be mentioned only as context, not as the main article
+
+**Hard rules:**
+- The SEO title, H1, slug, brief search intent, H2 plan, article body, reel data, and social copy must all answer the same reader problem.
+- If the research brief's SEO title or search intent does not match the slug/title, stop. Rewrite the brief. Do not let the writer "make it work."
+- At least half of H2 headings must directly deliver part of the title promise or a clear synonym. Supporting topics can appear, but they cannot become the article.
+- The first 250 words must name the title topic and answer the reader's expected question directly.
+- Every H2 must pass this question: "Would this section belong in an article with this exact title?" If no, cut or rewrite it.
+- Repeated advice under different H2s is a QA failure, even when each paragraph is individually polished.
+
+**Examples:**
+- Title: `Welcome Email Sequence For New Customers`
+  - Required terms: welcome email, sequence, new customer, first email, follow-up, onboarding
+  - Forbidden drift: Google Business Profile setup, review generation, generic website SEO
+- Title: `Email Marketing For Small Business Getting Started`
+  - Required terms: email list, signup form, newsletter, campaign, consent, first send
+  - Forbidden drift: local SEO checklists, GBP photos, Google review strategy
+
+**QA prompt requirements:**
+- State the title promise in one sentence.
+- List the H2s and mark each `on-topic`, `supporting`, or `drift`.
+- Block publish if fewer than half of H2s are `on-topic`.
+- Block publish if the body primarily answers a different query than the title.
+- Block publish if the same 3-5 points appear repeatedly under different headings.
+- Do not award a passing score for clean grammar, nice tone, or complete metadata when topic coherence fails.
 
 ---
 

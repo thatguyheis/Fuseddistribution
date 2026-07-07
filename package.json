@@ -32,6 +32,7 @@
     "social:buffer:plan": "node public/blog/scripts/prepare-buffer-youtube-queue.mjs",
     "social:buffer:x:media": "node public/blog/scripts/prepare-buffer-x-media.mjs",
     "social:buffer:x:plan": "node public/blog/scripts/prepare-buffer-x-queue.mjs",
+    "social:buffer:validate": "node public/blog/scripts/validate-buffer-queue.mjs",
     "social:facebook:batch": "node public/blog/scripts/prepare-facebook-reel-batch.mjs"
   },
   "devDependencies": {

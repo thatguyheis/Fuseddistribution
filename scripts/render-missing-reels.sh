@@ -7,7 +7,7 @@ VIDEO_DIR="$PROJECT_DIR/video"
 BLOG_DIR="$PROJECT_DIR/public/blog"
 LOG_FILE="$HOME/Library/Logs/render-missing-reels.log"
 MAX_RETRIES="${MAX_RETRIES:-2}"
-MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-2}"
+MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-4}"
 VOICE="${REEL_VOICE:-chatterbox}"
 GLOBAL_RENDER_LOCK="/tmp/fused-remotion-render.lock"
 

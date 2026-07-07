@@ -99,6 +99,11 @@ $DRAFT_BLOCK
 
 REQUIREMENTS:
 - 1200-1800 words total
+- Topic contract is mandatory: the title, slug, keyword, H2s, body, examples, CTA, reel source material, and social source material must all answer the same reader problem
+- If the rough draft or research reference conflicts with the title/keyword, ignore the conflicting reference and write to the title/keyword
+- The first 250 words must name the title topic directly and answer the reader's expected question
+- At least half of H2 headings must directly deliver part of the title promise or a clear synonym
+- Supporting topics can appear only when they help the title topic; do not let local SEO, Google Business Profile, reviews, website design, or silver investing take over an unrelated article
 - Answer-first opening: lead with the most useful information, not context-setting
 - H2 headings that deliver on the title promise (no generic headings like "Introduction")
 - Every H2 section must have unique content — no repeated sentences or paragraphs across sections
