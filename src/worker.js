@@ -319,21 +319,52 @@ async function sendLeadWithResend(payload, env) {
   }
 }
 
+async function fetchSpotRates(env) {
+  const upstream = await fetch(
+    `https://api.metalpriceapi.com/v1/latest?api_key=${env.METAL_PRICE_API_KEY}&base=USD&currencies=XAG,XAU`,
+    { cf: { cacheTtl: 3600, cacheEverything: true } },
+  );
+  const data = await upstream.json();
+  if (!upstream.ok || !data.success) return null;
+  return { silver: data.rates.USDXAG, gold: data.rates.USDXAU };
+}
+
+function utcDateString(offsetDays = 0) {
+  return new Date(Date.now() + offsetDays * 86_400_000).toISOString().slice(0, 10);
+}
+
+async function readPreviousSpot(env) {
+  if (!env.SPOT_KV) return null;
+  for (let i = 1; i <= 7; i++) {
+    const date = utcDateString(-i);
+    const raw = await env.SPOT_KV.get(`spot:${date}`);
+    if (raw) {
+      try {
+        const parsed = JSON.parse(raw);
+        if (typeof parsed.silver === "number" && typeof parsed.gold === "number") {
+          return { silver: parsed.silver, gold: parsed.gold, date };
+        }
+      } catch {
+        return null;
+      }
+      return null;
+    }
+  }
+  return null;
+}
+
 async function handleSpot(env) {
   if (!env.METAL_PRICE_API_KEY) {
     return json({ error: "Spot price not configured." }, { status: 503 });
   }
 
   try {
-    const upstream = await fetch(
-      `https://api.metalpriceapi.com/v1/latest?api_key=${env.METAL_PRICE_API_KEY}&base=USD&currencies=XAG,XAU`,
-      { cf: { cacheTtl: 3600, cacheEverything: true } },
-    );
-    const data = await upstream.json();
-    if (!upstream.ok || !data.success) {
+    const rates = await fetchSpotRates(env);
+    if (!rates) {
       return json({ error: "Upstream error." }, { status: 502 });
     }
-    return json({ silver: data.rates.USDXAG, gold: data.rates.USDXAU });
+    const prev = await readPreviousSpot(env);
+    return json(prev ? { ...rates, prev } : rates);
   } catch {
     return json({ error: "Could not fetch spot price." }, { status: 502 });
   }
@@ -469,6 +500,19 @@ export default {
       }
       console.error(JSON.stringify({ event: "worker_request_failed", error: String(error) }));
       return withSecurityHeaders(json({ error: "Internal server error." }, { status: 500 }), null);
+    }
+  },
+
+  async scheduled(event, env) {
+    if (!env.METAL_PRICE_API_KEY || !env.SPOT_KV) return;
+    try {
+      const rates = await fetchSpotRates(env);
+      if (!rates) return;
+      await env.SPOT_KV.put(`spot:${utcDateString()}`, JSON.stringify(rates), {
+        expirationTtl: 60 * 60 * 24 * 40,
+      });
+    } catch (error) {
+      console.error(JSON.stringify({ event: "spot_snapshot_failed", error: String(error) }));
     }
   },
 };
