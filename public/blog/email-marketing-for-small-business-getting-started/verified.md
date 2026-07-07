@@ -15,13 +15,13 @@ Your Google Business Profile is your free storefront. If it’s set up wrong, yo
 
 **Step 1: Claim Your Profile.** Go to Google Business Profile (now called Google My Business) and claim your business. You’ll need to verify your ownership through a phone call or postcard. Don’t skip this step - it’s the foundation.
 
-**Step 2: Complete Your Details.** Fill out *every* section of your profile. This includes your business name, address, phone number, website URL, and hours of operation. Accuracy is paramount. A single typo can hurt your ranking.
+**Step 2: Complete Your Details.** Fill out *every* section of your profile. This includes your business name, address, phone number, website URL, and hours of operation. Accuracy is essential. A single typo can hurt your ranking.
 
 **Step 3: Take Good Photos.** Show off your shop, your office, or your work in progress. Don’t just use a generic picture. Show what you actually do. Add photos of your team, your products, and your services. Aim for at least 10 high-quality photos. Google prioritizes businesses with visually appealing profiles.
 
 **Step 4: Respond to Every Review.** When people leave a review, you need to reply. Answer every review, good or bad, in a quick, professional way. It tells Google you pay attention. A simple “Thank you for your feedback!” or “We’re sorry to hear about your experience and would like to discuss this further” can make a big difference. Aim to respond within 24-48 hours.
 
-**Step 5: Start Asking for Feedback.** Ask your happy customers for reviews directly. Make it easy for them to leave a review. You can send a follow-up email, include a link on your website, or even ask in person. Consider using a service like Podium to streamline the process. Consistent feedback builds trust with search engines. According to a report by Trustpilot, 92% of consumers say that online reviews influence their purchasing decisions. Don't ignore this powerful tool.
+**Step 5: Start Asking for Feedback.** Ask your happy customers for reviews directly. Make it easy for them to leave a review. You can send a follow-up email, include a link on your website, or even ask in person. Consider using a service like Podium to simplify the process. Consistent feedback builds trust with search engines. According to a report by Trustpilot, 92% of consumers say that online reviews influence their purchasing decisions. Don't ignore this powerful tool.
 
 ## What to Post to Get Found (Beyond Just a Static Page)
 Your Google Business Profile is your free storefront. If it’s set up wrong, you’re invisible. This is your first step to getting found when someone searches for your service in your area. Claim your business name, address, and phone number right now. This is the basic stuff that tells Google you exist. Don't skip this.

@@ -14,7 +14,7 @@ Finally, think about where you store your silver. Safety matters for long term. 
 
 ## Decoding Silver Premiums and Costs
 
-Let’s delve deeper into the components of a silver price. You’ll see premium, dealer markup, and intrinsic value. Know what each number means. This stops confusion. Premium is the added cost beyond the silver’s pure value, reflecting the dealer’s profit and the coin’s rarity or condition. Dealer markup is the dealer’s profit margin, often expressed as a percentage. Intrinsic value is the current market price of the silver itself.
+Let’s go deeper into the components of a silver price. You’ll see premium, dealer markup, and intrinsic value. Know what each number means. This stops confusion. Premium is the added cost beyond the silver’s pure value, reflecting the dealer’s profit and the coin’s rarity or condition. Dealer markup is the dealer’s profit margin, often expressed as a percentage. Intrinsic value is the current market price of the silver itself.
 
 For instance, a 1 oz American Silver Eagle coin might sell for around $30 per ounce. However, the actual price you pay will include a premium of, say, $5, bringing the total cost to $35. This premium covers the dealer’s costs, their profit, and the coin’s desirability. A good dealer will clearly break down the cost components, showing you the intrinsic value, the premium, and the dealer markup.
 
