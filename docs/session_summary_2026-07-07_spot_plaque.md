@@ -16,7 +16,7 @@
 - Claude in Chrome extension not connected; used headless Chromium instead.
 
 ## Needs review / follow-ups
-- Pre-existing horizontal overflow at 390px on reserve + FAQ pages (hero text clips right; confirmed identical on production). Ticker on FAQ mobile clips with it. Separate fix recommended.
+- ~~Pre-existing horizontal overflow at 390px~~ RETRACTED 2026-07-07: false alarm. Playwright mobile emulation (390px, DPR 2) measured zero overflowing elements on both live pages; layout is clean, FAQ ticker fully visible on its own row. The "clipping" was an artifact of bare `chrome --headless --screenshot` CLI captures, not real rendering.
 - First change chips appear only after first cron run writes a snapshot AND a day passes (or seed a `spot:<yesterday>` key in prod KV at deploy).
 - FAQ page 1080px media block has a pre-existing malformed CSS fragment (stray `to { ... }` around line 558) — harmless but worth cleaning.
 
