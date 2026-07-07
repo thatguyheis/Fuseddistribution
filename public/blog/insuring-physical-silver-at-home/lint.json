@@ -1,0 +1,26 @@
+{
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/insuring-physical-silver-at-home/verified.md",
+  "pass": false,
+  "em_dash": 0,
+  "en_dash": 0,
+  "verify_tags": 3,
+  "banned": [
+    {
+      "term": "robust",
+      "count": 1
+    },
+    {
+      "term": "paramount",
+      "count": 1
+    }
+  ],
+  "hedging": [],
+  "filler_transitions": [
+    {
+      "term": "furthermore",
+      "count": 1
+    }
+  ],
+  "openers": [],
+  "total_violations": 3
+}
