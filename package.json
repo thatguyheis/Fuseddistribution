@@ -29,6 +29,7 @@
     "social:pack": "node public/blog/scripts/prepare-posting-pack.mjs",
     "social:buffer:verify-media": "node public/blog/scripts/verify-buffer-media-urls.mjs",
     "social:buffer:youtube:media": "node public/blog/scripts/prepare-buffer-youtube-media.mjs",
+    "social:buffer:sync-media": "node public/blog/scripts/sync-buffer-media-kv.mjs",
     "social:buffer:plan": "node public/blog/scripts/prepare-buffer-youtube-queue.mjs",
     "social:buffer:x:media": "node public/blog/scripts/prepare-buffer-x-media.mjs",
     "social:buffer:x:plan": "node public/blog/scripts/prepare-buffer-x-queue.mjs",

@@ -1,4 +1,4 @@
-import { SELF } from "cloudflare:test";
+import { SELF, env } from "cloudflare:test";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 const ORIGIN = "https://fuseddistribution.com";
@@ -132,5 +132,27 @@ describe("API routing", () => {
     expect(await response.json()).toEqual({
       error: "Name, a valid email, and message are required.",
     });
+  });
+});
+
+describe("reel media routing", () => {
+  it("serves MP4 media from REELS_KV before static assets", async () => {
+    const key = "reels/test-reel/test-reel.mp4";
+    const bytes = new Uint8Array([0, 1, 2, 3, 4, 5]);
+    await env.REELS_KV.put(key, bytes.buffer);
+
+    const head = await SELF.fetch(`${ORIGIN}/${key}`, { method: "HEAD" });
+    expect(head.status).toBe(200);
+    expect(head.headers.get("content-type")).toBe("video/mp4");
+    expect(head.headers.get("content-length")).toBe("6");
+    expect(head.headers.get("accept-ranges")).toBe("bytes");
+    expect(head.headers.get("x-fused-media-source")).toBe("reels-kv");
+
+    const ranged = await SELF.fetch(`${ORIGIN}/${key}`, {
+      headers: { Range: "bytes=2-4" },
+    });
+    expect(ranged.status).toBe(206);
+    expect(ranged.headers.get("content-range")).toBe("bytes 2-4/6");
+    expect([...new Uint8Array(await ranged.arrayBuffer())]).toEqual([2, 3, 4]);
   });
 });

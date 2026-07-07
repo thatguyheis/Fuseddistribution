@@ -24,6 +24,10 @@
     {
       "binding": "SPOT_KV",
       "id": "68478afd1bca48a88ecf25ea907a0bc8"
+    },
+    {
+      "binding": "REELS_KV",
+      "id": "20cd4e65773842deb15b8a12356c8e96"
     }
   ],
   "triggers": {

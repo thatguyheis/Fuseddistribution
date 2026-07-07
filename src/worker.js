@@ -14,6 +14,8 @@ const MAILERLITE_GROUPS = {
   tech: "188458016342804399",
 };
 const MAX_JSON_BODY_BYTES = 4096;
+const REEL_MEDIA_PREFIXES = ["/reels/", "/reels-x/"];
+const MP4_CACHE_CONTROL = "public, max-age=31536000, immutable";
 
 class RequestError extends Error {
   constructor(message, status = 400) {
@@ -447,6 +449,82 @@ function methodNotAllowed(allowedMethod) {
   );
 }
 
+function isReelMediaPath(pathname) {
+  return REEL_MEDIA_PREFIXES.some((prefix) => pathname.startsWith(prefix)) && pathname.endsWith(".mp4");
+}
+
+function parseByteRange(rangeHeader, size) {
+  if (!rangeHeader) return null;
+  const match = rangeHeader.match(/^bytes=(\d*)-(\d*)$/);
+  if (!match) return "invalid";
+
+  const [, startText, endText] = match;
+  if (!startText && !endText) return "invalid";
+
+  if (!startText) {
+    const suffixLength = Number(endText);
+    if (!Number.isInteger(suffixLength) || suffixLength <= 0) return "invalid";
+    const start = Math.max(size - suffixLength, 0);
+    return { start, end: size - 1 };
+  }
+
+  const start = Number(startText);
+  const end = endText ? Number(endText) : size - 1;
+  if (
+    !Number.isInteger(start) ||
+    !Number.isInteger(end) ||
+    start < 0 ||
+    end < start ||
+    start >= size
+  ) {
+    return "invalid";
+  }
+
+  return { start, end: Math.min(end, size - 1) };
+}
+
+async function handleReelMediaRequest(request, env, url) {
+  if (!isReelMediaPath(url.pathname) || !env.REELS_KV) return null;
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    return methodNotAllowed("GET, HEAD");
+  }
+
+  const key = decodeURIComponent(url.pathname.slice(1));
+  const media = await env.REELS_KV.get(key, "arrayBuffer");
+  if (!media) return null;
+
+  const size = media.byteLength;
+  const headers = new Headers({
+    "Accept-Ranges": "bytes",
+    "Cache-Control": MP4_CACHE_CONTROL,
+    "Content-Type": "video/mp4",
+    "Content-Length": String(size),
+    "X-Fused-Media-Source": "reels-kv",
+  });
+
+  const range = parseByteRange(request.headers.get("Range"), size);
+  if (range === "invalid") {
+    return new Response(null, {
+      status: 416,
+      headers: {
+        "Accept-Ranges": "bytes",
+        "Content-Range": `bytes */${size}`,
+        "Cache-Control": MP4_CACHE_CONTROL,
+        "X-Fused-Media-Source": "reels-kv",
+      },
+    });
+  }
+
+  if (range) {
+    const body = request.method === "HEAD" ? null : media.slice(range.start, range.end + 1);
+    headers.set("Content-Length", String(range.end - range.start + 1));
+    headers.set("Content-Range", `bytes ${range.start}-${range.end}/${size}`);
+    return new Response(body, { status: 206, headers });
+  }
+
+  return new Response(request.method === "HEAD" ? null : media, { headers });
+}
+
 async function handleApiRequest(request, env, url) {
   if (url.pathname === "/api/spot") {
     return request.method === "GET" ? handleSpot(env) : methodNotAllowed("GET");
@@ -472,6 +550,11 @@ export default {
 
       if (url.pathname.startsWith("/api/")) {
         return withSecurityHeaders(await handleApiRequest(request, env, url), null);
+      }
+
+      const reelMediaResponse = await handleReelMediaRequest(request, env, url);
+      if (reelMediaResponse) {
+        return withSecurityHeaders(reelMediaResponse, null);
       }
 
       const assetResponse = await env.ASSETS.fetch(request);

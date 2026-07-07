@@ -91,6 +91,12 @@ public/reels-x/[slug]/[slug].mp4  ← X Buffer API copy, default 135s
 .buffer-x-media-urls.json         ← X media URL map
 ```
 
+Immediately sync the generated MP4s to remote `REELS_KV`. Buffer media URLs must be backed by KV, not only by the Workers static asset manifest:
+
+```bash
+npm run social:buffer:sync-media -- --slugs=slug-one,slug-two
+```
+
 Do not send `video/out/[slug]/[slug].mp4` directly through the Buffer API unless it already passes the platform gates. Use the generated `public/reels` or `public/reels-x` copies for automation.
 
 After the MP4 exists, generate the posting pack:
@@ -124,8 +130,8 @@ Hard stops:
 - Do not schedule any slug whose title, `reel-data.md`, `reel-script.md`, and `social-copy.json` are not clearly about the same topic. A technically valid MP4 is still blocked if the content drifted.
 - Do not use a queue file older than 30 minutes. Regenerate and revalidate instead.
 - Do not trust local `.buffer-*-scheduled.json` for capacity. Query Buffer live first.
-- Do not call Buffer `createPost` unless every selected MP4 URL returns `200 video/mp4` after the final deploy/version selection.
-- Do not run another `wrangler deploy` between media verification and Buffer `createPost`. Any deploy can change the active Worker version and make reel MP4s return 404 again. If any deploy happens, re-run the active deployment check and media verification.
+- Do not call Buffer `createPost` unless every selected MP4 URL returns `200 video/mp4` from the deployed Worker.
+- Do not rely on Workers static assets alone for Buffer media. Static MP4s are gitignored and can disappear from the active asset manifest after a normal deploy. `REELS_KV` is the durable source.
 - Do not log a scheduled post until a post read-back confirms `status: scheduled` or `sending` and at least one retained `video/mp4` asset.
 
 Daily execution order:
@@ -141,43 +147,49 @@ npm run social:buffer:youtube:media -- --slugs=slug-one,slug-two
 npm run social:buffer:x:media -- --slugs=slug-one,slug-two
 ```
 
-6. Deploy `public/` only after the media files exist and pass local size/duration gates. Record the Worker version printed immediately after the asset upload.
-7. Confirm the active deployment is the asset-upload version. If a later trigger-sync or unrelated deploy is active and MP4s return 404, restore the asset-upload version:
+6. Sync the generated MP4s to remote `REELS_KV`:
+
+```bash
+npm run social:buffer:sync-media -- --slugs=slug-one,slug-two
+```
+
+7. Deploy the Worker after the KV sync. The Worker serves `/reels/` and `/reels-x/` from `REELS_KV` before falling back to static assets, so future deploys no longer remove Buffer media URLs.
+8. If a deploy happened before the KV-backed Worker route was live and MP4s still return 404, temporarily restore the asset-upload version while deploying the KV fix:
 
 ```bash
 npx wrangler deployments status --name fuseddistribution
 npx wrangler versions deploy <asset-upload-version-id>@100 --name fuseddistribution -y
 ```
 
-8. Verify both media maps for the exact slugs:
+9. Verify both media maps for the exact slugs:
 
 ```bash
 npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slugs=slug-one,slug-two
 npm run social:buffer:verify-media -- --media-map=.buffer-x-media-urls.json --slugs=slug-one,slug-two
 ```
 
-9. Plan YouTube with the live Buffer scheduled/sending count:
+10. Plan YouTube with the live Buffer scheduled/sending count:
 
 ```bash
 npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
 ```
 
-10. Count the YouTube selected jobs. Plan X with `BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT`, because the X posts consume the same 10-post Buffer limit:
+11. Count the YouTube selected jobs. Plan X with `BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT`, because the X posts consume the same 10-post Buffer limit:
 
 ```bash
 npm run social:buffer:x:plan -- --current-scheduled=$((BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT)) --limit=10 --reserve-slots=2 --media-map=.buffer-x-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00
 ```
 
-11. Validate both fresh queue files in the same session that will create the posts:
+12. Validate both fresh queue files in the same session that will create the posts:
 
 ```bash
 npm run social:buffer:validate -- --queue=.buffer-youtube-queue.json
 npm run social:buffer:validate -- --queue=.buffer-x-queue.json
 ```
 
-12. Immediately before the first Buffer `createPost`, re-run the two media verification commands if any deploy, branch switch, queue regeneration, or 10+ minute delay happened after step 8.
-13. Create posts sequentially through Buffer GraphQL using each selected job's `createPostPayload`. After each create, query the post by ID. Append the local scheduled log only when read-back confirms the video asset is still present.
-14. After the batch, query Buffer live scheduled/sending posts again and confirm the count and video assets match what was just created.
+13. Immediately before the first Buffer `createPost`, re-run the two media verification commands if any deploy, branch switch, queue regeneration, or 10+ minute delay happened after step 9.
+14. Create posts sequentially through Buffer GraphQL using each selected job's `createPostPayload`. After each create, query the post by ID. Append the local scheduled log only when read-back confirms the video asset is still present.
+15. After the batch, query Buffer live scheduled/sending posts again and confirm the count and video assets match what was just created.
 
 The normal daily fill target is at most 8 scheduled posts total: 4 YouTube + 4 X, or fewer if live Buffer capacity is lower. Keep 2 open Buffer slots reserved for newly rendered reels or urgent corrections.
 
@@ -386,14 +398,14 @@ npm run social:buffer:x:media -- --slugs=slug-one,slug-two
 ```
 
 2. Confirm each selected YouTube slug has `public/reels/<slug>/<slug>.mp4`, is 179 seconds or shorter, is 25 MiB or smaller, uses H.264/AAC, and has a long edge no larger than 1280px. Confirm each selected X slug has `public/reels-x/<slug>/<slug>.mp4`, is 140 seconds or shorter, and is 25 MiB or smaller.
-3. Deploy `public/` so the reels go live. The reels are served from the same worker on both `fuseddistribution.com/reels/...` and the `*.workers.dev/reels/...` route. Deploy is outward-facing; get Nick's explicit go before running it.
-4. Confirm the active deployment is the asset-upload deployment. If `npx wrangler deploy` uploads MP4 assets but the live MP4 URLs still return a Cloudflare 404, run `npx wrangler deployments status --name fuseddistribution` and compare the active version to the version printed immediately after the asset upload. If a later trigger-sync deployment is active, route traffic back to the asset-upload version before scheduling:
+3. Upload the exact generated MP4s to remote `REELS_KV`. This is the durable Buffer media source; do not rely on the Workers static asset manifest for MP4 availability:
 
 ```bash
-npx wrangler versions deploy <asset-upload-version-id>@100 --name fuseddistribution -y
+npm run social:buffer:sync-media -- --slugs=slug-one,slug-two
 ```
 
-5. Verify every selected MP4 URL returns HTTP 200 over HTTPS with `content-type: video/mp4`. Do not start Buffer scheduling until all return 200:
+4. Deploy the Worker if the KV-backed `/reels/` route or any related source/config changes are not already live. Deploy is outward-facing; get Nick's explicit go before running it. The route serves `fuseddistribution.com/reels/...`, `*.workers.dev/reels/...`, `/reels-x/...`, and `/reels/...` from `REELS_KV` before falling back to static assets.
+5. Verify every selected MP4 URL returns HTTP 200 over HTTPS with `content-type: video/mp4` and `x-fused-media-source: reels-kv`. Do not start Buffer scheduling until all return 200:
 
 ```bash
 npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slugs=slug-one,slug-two
@@ -413,16 +425,17 @@ Codex automation `buffer-youtube-queue-maintenance` runs once per day after the 
 2. Reconcile `.buffer-youtube-scheduled.json` and `.buffer-x-scheduled.json`: any past-due entry still marked `scheduled` must be confirmed as sent or marked `error` before planning. Count only live `scheduled` and `sending` posts as `BUFFER_CURRENT_SCHEDULED`.
 3. Run a coherence screen before media prep. Skip any slug whose title, `reel-data.md`, rendered reel, or social copy drifted to a different topic.
 4. Run `npm run social:buffer:youtube:media` and `npm run social:buffer:x:media` for the exact selected slugs before planning. This keeps public YouTube Buffer assets under 179 seconds and X assets under 140 seconds.
-5. Deploy `public/`, then verify the active Cloudflare deployment serves the MP4 asset manifest. If MP4 URLs return 404 after deploy, restore the asset-upload version with `npx wrangler versions deploy <asset-upload-version-id>@100 --name fuseddistribution -y`.
-6. Verify every selected YouTube and X MP4 URL returns `200 video/mp4` after the final active deployment selection. If any URL fails, stop before planning.
-7. Run `scripts/plan-buffer-youtube-queue.sh` with `BUFFER_RESERVE_SLOTS=2`, or run `npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
-8. Count `.buffer-youtube-queue.json` `selected` jobs as `YOUTUBE_SELECTED_COUNT`.
-9. Run `npm run social:buffer:x:plan` with `--current-scheduled=$((BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT))`, the same reserve slots, media map, and 13:00-19:00 schedule window. Do not reuse the original live count for X planning.
-10. Validate both queue files immediately before scheduling. If either queue is stale, expired, or invalid, regenerate and revalidate instead of posting.
-11. Schedule only `.buffer-youtube-queue.json` `selected` jobs through Buffer for YouTube. After every create, read the post back and append to `.buffer-youtube-scheduled.json` only if the post has no Buffer error and still has a video asset.
-12. Schedule only `.buffer-x-queue.json` `selected` X jobs through Buffer API. After every create, read the post back and append to `.buffer-x-scheduled.json` only if the video asset is present. If the video asset is missing, delete the post before it publishes.
-13. After scheduling, re-query Buffer live scheduled/sending posts and report any `error` object, media accessibility warning, missing asset, count mismatch, or status mismatch.
-14. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
+5. Run `npm run social:buffer:sync-media -- --slugs=<slugs>` so the exact MP4s are present in remote `REELS_KV`.
+6. Deploy the Worker if the KV-backed `/reels/` route or other source changes have not been deployed yet. Do not depend on the static asset manifest for Buffer media.
+7. Verify every selected YouTube and X MP4 URL returns `200 video/mp4` from the deployed Worker. If any URL fails, stop before planning.
+8. Run `scripts/plan-buffer-youtube-queue.sh` with `BUFFER_RESERVE_SLOTS=2`, or run `npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
+9. Count `.buffer-youtube-queue.json` `selected` jobs as `YOUTUBE_SELECTED_COUNT`.
+10. Run `npm run social:buffer:x:plan` with `--current-scheduled=$((BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT))`, the same reserve slots, media map, and 13:00-19:00 schedule window. Do not reuse the original live count for X planning.
+11. Validate both queue files immediately before scheduling. If either queue is stale, expired, or invalid, regenerate and revalidate instead of posting.
+12. Schedule only `.buffer-youtube-queue.json` `selected` jobs through Buffer for YouTube. After every create, read the post back and append to `.buffer-youtube-scheduled.json` only if the post has no Buffer error and still has a video asset.
+13. Schedule only `.buffer-x-queue.json` `selected` X jobs through Buffer API. After every create, read the post back and append to `.buffer-x-scheduled.json` only if the video asset is present. If the video asset is missing, delete the post before it publishes.
+14. After scheduling, re-query Buffer live scheduled/sending posts and report any `error` object, media accessibility warning, missing asset, count mismatch, or status mismatch.
+15. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
 
 The reserve is intentional. With a 10-post Buffer limit, the automation should fill at most 8 slots so today’s fresh reels still have room.
 
