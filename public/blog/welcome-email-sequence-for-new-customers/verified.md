@@ -4,7 +4,7 @@ Are you a small business owner feeling overwhelmed by the digital world? You’r
 
 ## The Core Problem: New Customers Need Guidance
 
-Many small business owners land a new website through Fused Distribution, and then…nothing. They’ve invested in a beautiful website, but they don’t know how to use it to attract [customers](/blog/how-to-get-repeat-customers-for-your-small-business/). They’re unsure of the best way to promote their business online, and they’re struggling to see a return on their investment. This is a common problem. According to a recent study by HubSpot, **70% of marketing leads never convert into customers.** That’s a huge opportunity cost. A welcome email sequence addresses this head-on by providing a structured path for your new customers to understand your services and start seeing results. It’s about removing the confusion and providing actionable steps.
+Many small business owners land a new website through Fused Distribution, and then…nothing. They’ve invested in a beautiful website, but they don’t know how to use it to attract [customers](/blog/how-to-get-repeat-customers-for-your-small-business/). They’re unsure of the best way to promote their business online, and they’re struggling to see a return on their investment. This is a common problem, and the gap is almost always follow-up: most leads go cold because nobody stays in touch after the first contact. A welcome email sequence addresses this head-on by providing a structured path for your new customers to understand your services and start seeing results. It’s about removing the confusion and providing actionable steps.
 
 ## Email 1: The Immediate Gratification - The Welcome
 
@@ -47,11 +47,11 @@ Let’s talk about what you’re getting with your Fused Distribution package. Y
 Specifically, you’ll receive:
 
 * **Website Design & Development:** A professionally designed website that’s optimized for mobile and search engines.
-* **Basic SEO:** We’ll implement foundational SEO strategies to improve your website’s ranking in Google. **Approximately 60-80% of website traffic comes from organic search** (Google Search Insights), so this is a vital component.
+* **Basic SEO:** We’ll implement foundational SEO strategies to improve your website’s ranking in Google. Organic search drives more visitors than any other channel for most local business sites, so this is a vital component.
 * **Monthly Reporting:** You’ll receive a monthly report detailing your website traffic, keyword rankings, and other key metrics.
 * **Ongoing Support:** We’re available to answer your questions and provide assistance as needed.
 
-We don’t just build websites; we build a foundation for your business to grow. Want to dive deeper into the specifics of your package? {Link to Package Details Page}
+We don’t just build websites; we build a foundation for your business to grow. Want the full details of your package? {Link to Package Details Page}
 
 **CTA:** Explore your package details here.
 
@@ -67,7 +67,7 @@ We don’t just build websites; we build a foundation for your business to grow.
 
 You've probably seen a lot of web design and SEO companies. What sets Fused Distribution apart? It’s simple: we focus on *local* businesses and understand the unique challenges you face.
 
-Unlike larger agencies that treat you like just another number, we build genuine relationships. We take the time to learn about your business, your target audience, and your goals. **Local businesses that invest in SEO see an average of 20-40% increase in website traffic within six months** (BrightLocal).
+Unlike larger agencies that treat you like just another number, we build genuine relationships. We take the time to learn about your business, your target audience, and your goals, and we measure the result in traffic and calls, not vanity metrics.
 
 Here’s what you can expect from working with us:
 
@@ -153,7 +153,7 @@ We're here to help you with this and any other technical challenges.
 
 We’re seeing great results for our clients, and we want to share one example with you. {Client Name 2}, a local {Industry} business, recently implemented some of the strategies we discussed and saw a **30% increase in website traffic within just one month.**
 
-[Briefly describe the client’s situation and the steps taken to improve their website].
+{Two or three sentences: where the client started, what changed, and the result.}
 
 You can read the full case study here: {Case Study Link}.
 
@@ -211,7 +211,7 @@ The Fused Distribution Team
 
 **CTA:** Schedule a quick check-in call. {Link to Scheduling Tool}
 
-Forward-Looking Action: We’re excited to continue partnering with you on your digital journey. Over the next few weeks, we’ll be focusing on [mention a specific upcoming initiative or service]. Let’s schedule a quick call to discuss your goals and how we can help you achieve them.
+Use this sequence as a starting point, not a script. Swap the {placeholders} for your own links, offers, and client names, load the ten emails into your email platform, and let it run. The businesses that win with welcome sequences are the ones that actually ship them.
 
 ## Related
 

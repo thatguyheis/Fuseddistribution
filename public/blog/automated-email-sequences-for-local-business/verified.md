@@ -11,7 +11,7 @@ Before you even think about crafting an email, you need to know *why* you’re s
 * **Boosting Sales:** Promoting specific products or services.
 * **Increasing Customer Loyalty:** Keeping existing customers engaged and coming back.
 
-For example, a local bakery might focus on a welcome sequence to introduce their brand and special offers, while a landscaping company could use an abandoned cart sequence to recover lost sales of lawn care packages. **According to HubSpot, businesses that use email marketing generate 3x more leads than those that don’t.** Start with one or two primary goals and build your sequences around them. Don’t try to do everything at once.
+For example, a local bakery might focus on a welcome sequence to introduce their brand and special offers, while a landscaping company could use an abandoned cart sequence to recover lost sales of lawn care packages. Email is one of the few marketing channels you own outright, and each send costs almost nothing. Start with one or two primary goals and build your sequences around them. Don’t try to do everything at once.
 
 ## Segmenting Your Audience for Targeted Sequences
 
@@ -22,7 +22,7 @@ Not all [customers](/blog/how-to-get-repeat-customers-for-your-small-business/) 
 * **Location:** Customers in a specific geographic area.
 * **Interests:** Customers who have shown interest in particular products or services.
 
-Let’s say you own a pet grooming salon. You could create separate sequences for new subscribers, existing customers who haven’t visited in six months (re-engagement), and customers who have previously purchased dog grooming services. **Research shows that segmented email campaigns have a 6x higher click-through rate than generic campaigns.** Start with basic segmentation and refine it as you gather more data.
+Let’s say you own a pet grooming salon. You could create separate sequences for new subscribers, existing customers who haven’t visited in six months (re-engagement), and customers who have previously purchased dog grooming services. Segmented campaigns consistently outperform one-size-fits-all blasts on opens, clicks, and unsubscribes. Start with basic segmentation and refine it as you gather more data.
 
 ## Crafting Compelling Welcome Email Series
 
@@ -44,7 +44,7 @@ Promotional emails are great for driving sales, but they need to be strategic. D
 * **New Product Launches:** Announce new products or services with exclusive discounts for email subscribers.
 * **Limited-Time Offers:** Create a sense of urgency by offering discounts that expire after a certain period.
 
-**A study by Mailchimp found that promotional emails have the highest open rates of all email types.** Keep your emails visually appealing, concise, and focused on the benefits for the customer.
+**Welcome emails, not promotions, earn the highest open rates of any email type** (Source: GetResponse benchmarks), so keep promotional sends focused and infrequent. Keep your emails visually appealing, concise, and focused on the benefits for the customer.
 
 ## Using Abandoned Cart Recovery Sequences
 
@@ -56,7 +56,7 @@ Here’s a basic sequence:
 * **Email 2 (24 hours):** Offer a small discount or free shipping to incentivize them to complete the purchase.
 * **Email 3 (3 days):** Address potential concerns they might have about the purchase. Offer a live chat option or a phone number to contact you directly.
 
-**According to Klaviyo, abandoned cart recovery emails have an average conversion rate of 15-30%.** Make it easy for customers to complete their purchase.
+**Abandoned cart emails average around a 50% open rate, and roughly 3 to 8% of recipients come back and buy** (Source: Klaviyo benchmarks). Make it easy for customers to complete their purchase.
 
 ## Building Customer Loyalty with Re-engagement Sequences
 
@@ -77,9 +77,9 @@ Don’t just send emails and hope for the best. Track your performance to see wh
 * **Conversion Rate:** The percentage of recipients who complete a desired action (e.g., make a purchase, sign up for a newsletter).
 * **Bounce Rate:** The percentage of emails that are undeliverable.
 
-Use these metrics to optimize your sequences and improve your results. **Email marketing analytics from MailerLite show that optimizing subject lines can increase open rates by up to 40%.** Experiment with different subject lines, content, and calls to action to find what resonates with your audience.
+Use these metrics to optimize your sequences and improve your results. Small subject line changes often move open rates more than anything else you test. Experiment with different subject lines, content, and calls to action to find what resonates with your audience.
 
-## Proven methods for Local Business Email Automation
+## Proven Methods for Local Business Email Automation
 
 * **Use a Professional Email Service Provider (ESP):** Platforms like Mailchimp, Klaviyo, and ConvertKit offer reliable automation features.
 * **Personalize Your Emails:** Use the recipient’s name and tailor your content to their interests.
@@ -92,13 +92,13 @@ Use these metrics to optimize your sequences and improve your results. **Email m
 * **Mailchimp:** A popular ESP with a free plan for small businesses.
 * **Klaviyo:** Specifically designed for e-commerce businesses.
 * **ConvertKit:** Great for creators and bloggers.
-* **Sendinblue:** Offers a free plan and integrates with other marketing tools.
+* **Brevo (formerly Sendinblue):** Offers a free plan and integrates with other marketing tools.
 
 Choosing the right tool depends on your specific needs and budget. Start with a free trial and see which platform best fits your workflow.
 
 As you implement these strategies, remember that consistency is key. Automated email sequences are a long-term investment in your local business. By nurturing your leads and building relationships, you can drive sales, increase customer loyalty, and grow your revenue. Don’t let another day go by without putting email automation to work.
 
-Looking ahead, we’ll be exploring more advanced automation techniques, such as dynamic content and behavioral triggers. Stay tuned for more tips and strategies to help you grow your local business. Ready to take the next step? Schedule a free consultation with us at [INSERT: Your Website Link Here] to discuss your email marketing goals and how we can help you achieve them.
+Looking ahead, we’ll be exploring more advanced automation techniques, such as dynamic content and behavioral triggers. Stay tuned for more tips and strategies to help you grow your local business. Ready to take the next step? Check out [our plans and pricing](/pricing/) and reach out to discuss your email marketing goals and how we can help you achieve them.
 
 ## Related
 
