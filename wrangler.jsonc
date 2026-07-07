@@ -20,6 +20,15 @@
       }
     ]
   },
+  "kv_namespaces": [
+    {
+      "binding": "SPOT_KV",
+      "id": "68478afd1bca48a88ecf25ea907a0bc8"
+    }
+  ],
+  "triggers": {
+    "crons": ["5 0 * * *"]
+  },
   "migrations": [
     {
       "tag": "v1",
