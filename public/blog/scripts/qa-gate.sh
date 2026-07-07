@@ -79,9 +79,11 @@ DEBUG="$BLOG_DIR/$SLUG/.qa-brain.log"
 run_brain_once() {
   if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
     [[ -x "$LOCAL_LLM" ]] || { echo "qa: local LLM helper missing: $LOCAL_LLM" >&2; return 127; }
+    # gemma3:4b on this machine evals ~40 tok/s; the full QA prompt is ~3.5k
+    # tokens, so a single attempt needs ~150s. 30s/75s caps guaranteed outage.
     HERMES_LOCAL_MAX_TOKENS="${HERMES_LOCAL_QA_MAX_TOKENS:-220}" \
-      HERMES_LOCAL_TIMEOUT="${HERMES_LOCAL_QA_TIMEOUT:-30}" \
-      perl -e 'alarm shift; exec @ARGV or exit 127' "${HERMES_LOCAL_QA_WALL_TIMEOUT:-75}" "$LOCAL_LLM" "$PROMPT"
+      HERMES_LOCAL_TIMEOUT="${HERMES_LOCAL_QA_TIMEOUT:-240}" \
+      perl -e 'alarm shift; exec @ARGV or exit 127' "${HERMES_LOCAL_QA_WALL_TIMEOUT:-520}" "$LOCAL_LLM" "$PROMPT"
   else
     claude -p "$PROMPT" --allowedTools ""
   fi
