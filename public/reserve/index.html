@@ -365,6 +365,23 @@
         text-transform: uppercase;
       }
 
+      .spot-ticker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+      }
+
+      .ticker-sep { color: rgba(200, 185, 140, 0.35); }
+
+      .t-arrow { font-size: 0.62rem; }
+      .t-arrow.up   { -webkit-text-fill-color: #8fc9a0; color: #8fc9a0; }
+      .t-arrow.down { -webkit-text-fill-color: #d99a8f; color: #d99a8f; }
+
       /* ── HERO ────────────────────────────────────────── */
       .hero { padding: 64px 54px 42px; position: relative; z-index: 1; }
       .main { padding: 0 54px 58px; position: relative; z-index: 1; }
@@ -658,51 +675,111 @@
         position: absolute;
         left: 58px;
         bottom: 72px;
-        width: 252px;
-        padding: 20px;
-        border-radius: 22px;
-        border: 1px solid rgba(200, 175, 90, 0.12);
-        background: rgba(8, 7, 5, 0.9);
+        width: 300px;
+        padding: 18px 22px 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(200, 170, 85, 0.28);
+        background: linear-gradient(160deg, rgba(30, 27, 22, 0.95), rgba(13, 12, 10, 0.95));
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(180, 140, 50, 0.06);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 18px 40px rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 250ms var(--ease-out), transform 250ms var(--ease-out);
+      }
+
+      @starting-style {
+        .spot-card { opacity: 0; transform: translateY(8px); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .spot-card { transition: opacity 200ms ease; }
+        @starting-style {
+          .spot-card { transform: none; }
+        }
+      }
+
+      .spot-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid rgba(200, 185, 140, 0.14);
+        padding-bottom: 8px;
+        margin-bottom: 12px;
       }
 
       .spot-card h3 {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 0.78rem;
-        letter-spacing: 0.16em;
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
         text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 12px;
+        color: var(--muted);
+        margin: 0;
       }
 
-      .spot-metals { display: flex; gap: 18px; align-items: flex-end; margin-bottom: 10px; }
-      .spot-metal  { display: flex; flex-direction: column; gap: 2px; }
+      .spot-live {
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.6rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #8fc9a0;
+      }
+
+      .metal-ag {
+        background: linear-gradient(180deg, #eef2f8 0%, #d0d8e4 45%, #8d99a6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      .metal-au {
+        background: linear-gradient(180deg, #ffe9b8 0%, #f2c66d 45%, #c9922a 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      .spot-metals { display: flex; gap: 24px; margin-bottom: 10px; }
+      .spot-metal  { display: flex; flex-direction: column; gap: 3px; flex: 1; }
 
       .spot-metal-label {
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
+        font-size: 0.68rem;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
-        color: var(--muted);
       }
 
       .spot-metal-price {
-        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 1.7rem;
+        font-size: 1.55rem;
         font-weight: 700;
-        color: var(--silver);
-        line-height: 1;
+        line-height: 1.1;
       }
 
-      .spot-metal-price.gold { color: var(--accent); font-size: 1.25rem; }
+      .spot-delta {
+        align-self: flex-start;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        font-size: 0.68rem;
+        letter-spacing: 0.03em;
+        border-radius: 999px;
+        padding: 2px 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+        margin-top: 3px;
+      }
+
+      .spot-delta.up   { color: #8fc9a0; }
+      .spot-delta.down { color: #d99a8f; }
 
       .spot-meta {
         margin: 0;
         font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        font-style: italic;
         color: rgba(150, 145, 127, 0.6);
+        border-top: 1px solid rgba(200, 185, 140, 0.1);
+        padding-top: 8px;
       }
 
       /* ── SECTIONS ────────────────────────────────────── */
@@ -1090,6 +1167,7 @@
         .nav-item:focus-within .nav-dropdown { transform: translateY(0); left: 0; }
         .hero, .main { padding-left: 28px; padding-right: 28px; }
         .gallery-grid { grid-template-columns: 1fr 1fr; }
+        .spot-ticker { display: none; }
       }
 
       @media (max-width: 700px) {
@@ -1240,6 +1318,11 @@
             <a href="/blog/">Blog</a>
           </div>
         </nav>
+        <div class="spot-ticker" id="spot-ticker" hidden aria-label="Live spot prices">
+          <span class="metal-ag">Ag <span id="tick-silver"></span><span class="t-arrow" id="tick-silver-arrow"></span></span>
+          <span class="ticker-sep">·</span>
+          <span class="metal-au">Au <span id="tick-gold"></span><span class="t-arrow" id="tick-gold-arrow"></span></span>
+        </div>
         <div class="status-chip">Early access open</div>
       </header>
 
@@ -1284,15 +1367,20 @@
                 <span></span><span></span><span></span>
               </div>
               <div class="spot-card">
-                <h3>Today's Spot Price</h3>
+                <div class="spot-head">
+                  <h3>Today's Spot · Troy Oz</h3>
+                  <span class="spot-live" id="spot-live" hidden>● Live</span>
+                </div>
                 <div class="spot-metals">
                   <div class="spot-metal">
-                    <span class="spot-metal-label">Silver</span>
-                    <span class="spot-metal-price" id="live-silver">...</span>
+                    <span class="spot-metal-label metal-ag">Silver</span>
+                    <span class="spot-metal-price metal-ag" id="live-silver">...</span>
+                    <span class="spot-delta" id="delta-silver" hidden></span>
                   </div>
                   <div class="spot-metal">
-                    <span class="spot-metal-label">Gold</span>
-                    <span class="spot-metal-price gold" id="live-gold">...</span>
+                    <span class="spot-metal-label metal-au">Gold</span>
+                    <span class="spot-metal-price metal-au" id="live-gold">...</span>
+                    <span class="spot-delta" id="delta-gold" hidden></span>
                   </div>
                 </div>
                 <p class="spot-meta" id="live-meta">per troy oz | loading...</p>
@@ -1676,6 +1764,38 @@
     (function () {
       var PREMIUM = 0.05;
       function usd(n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+      function yesterdayUTC() {
+        return new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      }
+      function renderDelta(id, current, prevValue) {
+        var el = document.getElementById(id);
+        if (!el || !prevValue) return;
+        var diff = current - prevValue;
+        var up = diff >= 0;
+        var pct = Math.abs((diff / prevValue) * 100);
+        el.hidden = false;
+        el.classList.add(up ? 'up' : 'down');
+        el.textContent = (up ? '▲ +$' : '▼ −$') + Math.abs(diff).toFixed(2) + ' · ' + pct.toFixed(1) + '%';
+      }
+      function setArrow(id, diff) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = diff >= 0 ? ' ▲' : ' ▼';
+        el.className = 't-arrow ' + (diff >= 0 ? 'up' : 'down');
+      }
+      function renderTicker(silver, gold, prev) {
+        var ticker = document.getElementById('spot-ticker');
+        if (!ticker) return;
+        var ts = document.getElementById('tick-silver');
+        var tg = document.getElementById('tick-gold');
+        if (ts) ts.textContent = usd(silver);
+        if (tg) tg.textContent = '$' + Math.round(gold).toLocaleString('en-US');
+        if (prev) {
+          setArrow('tick-silver-arrow', silver - prev.silver);
+          setArrow('tick-gold-arrow', gold - prev.gold);
+        }
+        ticker.hidden = false;
+      }
       async function loadSpot() {
         try {
           var res = await fetch('/api/spot');
@@ -1685,9 +1805,18 @@
           var elS = document.getElementById('live-silver');
           var elG = document.getElementById('live-gold');
           var elM = document.getElementById('live-meta');
+          var elLive = document.getElementById('spot-live');
           if (elS) elS.textContent = usd(silver);
           if (elG) elG.textContent = usd(gold);
-          if (elM) elM.textContent = 'per troy oz | ' + new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+          if (elLive) elLive.hidden = false;
+          if (data.prev) {
+            renderDelta('delta-silver', silver, data.prev.silver);
+            renderDelta('delta-gold', gold, data.prev.gold);
+            if (elM) elM.textContent = 'vs ' + (data.prev.date === yesterdayUTC() ? "yesterday's close" : data.prev.date) + ' · updated ' + new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+          } else if (elM) {
+            elM.textContent = 'per troy oz | ' + new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+          }
+          renderTicker(silver, gold, data.prev);
           var oz100 = 100 / (silver * (1 + PREMIUM));
           var oz250 = 250 / (silver * (1 + PREMIUM));
           var oz500 = 500 / (silver * (1 + PREMIUM));
