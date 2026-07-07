@@ -59,7 +59,7 @@ echo $PEXELS_API_KEY
 - [ ] Run `social-ad` skill — generates 2 SVG ad templates -> JPEG, updates `organic_ads[]` in social-copy.json
 - [ ] Run `ugc-script` skill — writes 2 A/B UGC script variants to `ugc-script.md`, validated
 - [ ] Add entry to `posts.json` top of array — `"image"` must use `.jpg` not `.svg`
-- [ ] Add internal links to 2-3 related posts (§9 Internal Linking)
+- [ ] Add 2-3 INLINE links inside body paragraphs + Related block + Read next (§9 Internal Linking — Related block alone does NOT pass)
 - [ ] Append to `public/blog/topic-history.md`
 - [ ] Validate reel-script.md (§3.4 checks) + social-copy.json (no em dashes)
 - [ ] **SVG entity check** — run for EVERY slug before commit:
@@ -446,15 +446,43 @@ dive in, delve into, delve deeper, unlock the power, unleash the potential, take
 
 Every post links to 2-3 existing posts from `posts.json`. Do not publish islands.
 
-- **Intro link:** In the first or second body paragraph, link to a related post that provides context. Anchor text = descriptive phrase, not "click here" or "read more."
-- **Body link:** Mid-article, link to a post in the same broad category covering a closely related angle.
+**HARD REQUIREMENT: 2-3 links must be INLINE, inside `<p>` body paragraphs, wrapping natural anchor text. A bottom "Related" list or "Read next" line does NOT count toward this. A post with zero `href="/blog/..."` links before the `<h2>Related</h2>` heading FAILS this section.**
+
+Three required placements:
+
+- **Intro link (inline):** In the first or second body paragraph, link to a related post that provides context. Anchor text = descriptive phrase, not "click here" or "read more."
+- **Body link (inline):** Mid-article, link to a post in the same broad category covering a closely related angle. Example of correct form:
+  ```html
+  <p>We recommend <a href="/blog/how-to-store-silver-at-home-safely/">storing your silver</a> in airtight containers.</p>
+  ```
+  Wrong form (does not satisfy this section): appending the same link to the Related list at the bottom.
 - **Next-read link:** Just before or inside the CTA block, add: `<p>Read next: <a href="/blog/[related-slug]/">[Related Post Title]</a></p>`
+
+**Related block (bottom of article, after body, before CTA):** Keep the existing site-wide format — this is IN ADDITION to the inline links above, never a substitute:
+
+```html
+<h2>Related</h2>
+<ul>
+<li><a href="/blog/[slug-1]/">[Title 1]</a></li>
+<li><a href="/blog/[slug-2]/">[Title 2]</a></li>
+<li><a href="/blog/[slug-3]/">[Title 3]</a></li>
+</ul>
+<p>Read next: <a href="/blog/[slug-1]/">[Title 1]</a></p>
+```
 
 Process:
 1. Read `posts.json` — scan `title`, `tags`, `slug` fields for topically related entries
 2. Pick 2-3 most relevant (same broad category or shared keyword)
-3. Add anchor links inline — only where the link reads naturally; never force-fit
+3. Weave anchor links into existing body sentences — only where the link reads naturally; never force-fit; never bolt a bare URL or slug into prose
 4. Only link to posts already live — verify: `curl -o /dev/null -s -w "%{http_code}" https://fuseddistribution.com/blog/[slug]/` must return 200. Never link to any slug committed in the same pipeline run.
+5. Self-check before commit — must return 2 or more:
+   ```bash
+   sed -n '/<div class="article-body">/,/<h2>Related<\/h2>/p' public/blog/[slug]/index.html | grep -c 'href="/blog/'
+   ```
+6. Also verify no bare internal paths in prose (e.g. literal `/reserve/` as plain text) — every internal reference in body text must be an `<a>` tag:
+   ```bash
+   sed -n '/<div class="article-body">/,/<\/article>/p' public/blog/[slug]/index.html | grep -n '[^"=]/reserve/\|\[Link to' && echo "FAIL: bare path or placeholder" || echo "OK"
+   ```
 
 ---
 
