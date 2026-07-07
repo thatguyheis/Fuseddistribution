@@ -212,7 +212,12 @@ def repair_banned(text):
     text = re.sub(r"\s+,", ",", text)
     text = re.sub(r",\s*,", ",", text)
     text = re.sub(r"[ \t]{2,}", " ", text)
-    text = re.sub(r"(^|[.!?]\s+)([a-z])", lambda m: m.group(1) + m.group(2).upper(), text)
+    # never capitalize the start of a URL (e.g. "... more. https://example.com")
+    text = re.sub(
+        r"(^|[.!?]\s+)([a-z])(?![a-z]*://)",
+        lambda m: m.group(1) + m.group(2).upper(),
+        text,
+    )
     return text
 
 
