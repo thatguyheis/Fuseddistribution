@@ -19,7 +19,7 @@ It’s important to note that these are just averages. Your specific open rate w
 
 ## Step 1: Building a Solid Foundation - Your Google Business Profile
 
-Before you even think about email open rates, you need to ensure your online presence is strong, particularly your Google Business Profile (GBP). This is your digital storefront and the first impression many potential customers will have of your business.  According to Google, 70% of consumers use Google Business Profile to find local businesses.  If your profile is incomplete or outdated, you’re missing out on a huge opportunity.
+Before you even think about email open rates, you need to ensure your online presence is strong, particularly your Google Business Profile (GBP). This is your digital storefront and the first impression many potential customers will have of your business.  BrightLocal's Local Consumer Review Survey found 64% of consumers use Google Business Profile to find a business's contact details.  If your profile is incomplete or outdated, you’re missing out on a huge opportunity.
 
 Here’s what you need to do:
 
@@ -42,7 +42,7 @@ Here’s how to get more reviews:
 3.  **Follow Up:** After a service is completed, send a follow-up email thanking the customer and providing a link to leave a review.  Don’t be pushy, but gently remind them.
 4.  **Respond to All Reviews:** Whether it’s a positive or negative review, respond promptly and professionally. This shows you’re engaged and care about your customers’ feedback.
 
-Studies show that businesses with at least 50 Google reviews are significantly more likely to be found in local search results.  Focusing on reviews is a strategic investment in your online visibility and, ultimately, your email success.
+Review count and recency are known local ranking signals, so a steady review flow directly improves your visibility.  Focusing on reviews is a strategic investment in your online visibility and, ultimately, your email success.
 
 ## Step 3: Crafting Compelling Subject Lines - The Key to Opening Emails
 

@@ -8,7 +8,7 @@ Your Google Business Profile is your free storefront. If it’s set up wrong, yo
 
 Use real photos. Show people what you do. Post pictures of your shop, your office, or a project you finished. Don’t just use stock photos. People want to see you, the people behind the business. A blurry logo doesn’t build trust. High-quality images do. Invest in taking clear, well-lit photos - they’re worth it.
 
-Also, reply to every review. Good or bad. Quick and professional. This shows Google, and more importantly, potential customers, that you care about your customers’ experiences. A prompt, thoughtful response demonstrates you’re actively listening and committed to service. Start asking people for feedback. That builds trust fast. A recent study by BrightLocal found that 88% of consumers trust online reviews as much as personal recommendations. Don't ignore this powerful tool.
+Also, reply to every review. Good or bad. Quick and professional. This shows Google, and more importantly, potential customers, that you care about your customers’ experiences. A prompt, thoughtful response demonstrates you’re actively listening and committed to service. Start asking people for feedback. That builds trust fast. BrightLocal's 2026 Local Consumer Review Survey found 49% of consumers trust online reviews as much as personal recommendations. Don't ignore this powerful tool.
 
 ## The 5 Steps to a Google Business Profile That Works
 Your Google Business Profile is your free storefront. If it’s set up wrong, you’re invisible. Think of it like your physical sign, but online. If you’re not showing up when someone searches for your service in your area, you don’t exist to them. Claiming your profile is the first step. It’s the most important.
@@ -21,7 +21,7 @@ Your Google Business Profile is your free storefront. If it’s set up wrong, yo
 
 **Step 4: Respond to Every Review.** When people leave a review, you need to reply. Answer every review, good or bad, in a quick, professional way. It tells Google you pay attention. A simple “Thank you for your feedback!” or “We’re sorry to hear about your experience and would like to discuss this further” can make a big difference. Aim to respond within 24-48 hours.
 
-**Step 5: Start Asking for Feedback.** Ask your happy customers for reviews directly. Make it easy for them to leave a review. You can send a follow-up email, include a link on your website, or even ask in person. Consider using a service like Podium to simplify the process. Consistent feedback builds trust with search engines. According to a report by Trustpilot, 92% of consumers say that online reviews influence their purchasing decisions. Don't ignore this powerful tool.
+**Step 5: Start Asking for Feedback.** Ask your happy customers for reviews directly. Make it easy for them to leave a review. You can send a follow-up email, include a link on your website, or even ask in person. Consider using a service like Podium to simplify the process. Consistent feedback builds trust with search engines. The same BrightLocal survey found 97% of consumers read online reviews for local businesses. Don't ignore this powerful tool.
 
 ## What to Post to Get Found (Beyond Just a Static Page)
 Your Google Business Profile is your free storefront. If it’s set up wrong, you’re invisible. This is your first step to getting found when someone searches for your service in your area. Claim your business name, address, and phone number right now. This is the basic stuff that tells Google you exist. Don't skip this.
@@ -47,7 +47,7 @@ Turn positive reviews into testimonials. Share positive reviews on your website 
 
 Use reviews to improve your business. Identify common themes in your reviews and use them to make improvements to your products, services, or customer experience.
 
-A study by KlientBoost found that 85% of consumers read online reviews before visiting a business. That’s a huge number. Your reviews are your reputation online.
+Nearly all of your potential customers will read your reviews before they ever contact you. That’s a huge number. Your reviews are your reputation online.
 
 ## Email Marketing: The Next Level
 Okay, you’ve got your Google Business Profile nailed. Now it’s time to build a relationship with those customers. Email marketing is still one of the most effective ways to do that. But it’s not about blasting everyone with sales emails. It’s about providing value.

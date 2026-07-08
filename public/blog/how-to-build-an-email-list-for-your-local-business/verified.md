@@ -20,7 +20,7 @@ Reviews matter *significantly* more than your website for local search. Google s
 
 Use the exact phrases people actually type. Don’t try to sound smart or use fancy terms. Use phrases like “Plumber in [Your City]” on your site and your profile. Don’t use vague terms like “water heater repair.”  People search for specific solutions to their problems.  If you don’t match what people search for, you won’t show up.
 
-On your website, make it incredibly simple. Put one clear, easy-to-find “Call Now” button somewhere prominent on every page. It should be visually distinct and easy to click. Don’t hide it in a footer or bury it in a navigation menu.  Consider using a contrasting color to make it stand out.  A study by BrightLocal found that businesses with more than 50 reviews are 2.5 times more likely to rank on the first page of Google Maps.
+On your website, make it incredibly simple. Put one clear, easy-to-find “Call Now” button somewhere prominent on every page. It should be visually distinct and easy to click. Don’t hide it in a footer or bury it in a navigation menu.  Consider using a contrasting color to make it stand out.  Review volume is a real local ranking signal; businesses with a steady flow of recent reviews consistently outrank those without.
 
 Stop trying to post daily on social media. Showing up consistently in local searches beats daily noise. Focus your time on getting found by the people ready to call you.
 
@@ -38,7 +38,7 @@ Your website should load quickly - ideally under 3 seconds.  Slow loading times 
 
 Let’s break this down into actionable steps. First, treat your Google Business Profile like your storefront. Double-check your hours, photos, and service areas. Make sure that information is 100% correct. This is your first stop for people looking for what you do right now.  Don’t rely on assumptions; verify everything.
 
-Next, reviews matter more than you might think. Ask happy clients for 5-star reviews that mention your service and where you are.  A simple email or text message can go a long way.  You can even create a template for clients to use.  A survey by Yelp found that 86% of consumers read online reviews before visiting a business.
+Next, reviews matter more than you might think. Ask happy clients for 5-star reviews that mention your service and where you are.  A simple email or text message can go a long way.  You can even create a template for clients to use.  BrightLocal's 2026 Local Consumer Review Survey found 97% of consumers read online reviews for local businesses.
 
 Use the exact phrases people actually type. If they search for “Plumber in [Your City],” use that exact phrase on your site and your profile. Don’t use fancy, vague terms. Use what your customers say.  Pay attention to the language they use when describing their needs.
 

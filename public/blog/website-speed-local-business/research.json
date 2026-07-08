@@ -1,0 +1,26 @@
+{
+  "slug": "website-speed-local-business",
+  "keyword": "website speed local business",
+  "angle": "Legacy citation allowlist backfilled during 2026-07-08 uncited-citation audit; sources correspond to the article's existing Sources section / inline citations.",
+  "secondary_kw": [],
+  "stats": [
+    {
+      "claim": "cited in article body (audited 2026-07-08)",
+      "value": "",
+      "source_url": "https://web.dev/articles/vitals",
+      "source_name": "Google"
+    },
+    {
+      "claim": "cited in article body (audited 2026-07-08)",
+      "value": "",
+      "source_url": "https://almanac.httparchive.org",
+      "source_name": "HTTP Archive"
+    },
+    {
+      "claim": "cited in article body (audited 2026-07-08)",
+      "value": "",
+      "source_url": "https://gs.statcounter.com",
+      "source_name": "StatCounter"
+    }
+  ]
+}

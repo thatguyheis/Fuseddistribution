@@ -42,6 +42,30 @@
       "value": "~15%",
       "source_url": "https://www.landbase.com/blog/conversion-rate-statistics",
       "source_name": "Landbase"
+    },
+    {
+      "claim": "average cart abandonment 70.19%; checkout redesign lifts conversion 35.26% (verified 2026-07-08)",
+      "value": "",
+      "source_url": "https://baymard.com/lists/cart-abandonment-rate",
+      "source_name": "Baymard Institute"
+    },
+    {
+      "claim": "each second of load time 0-5s drops conversions ~4.42%",
+      "value": "",
+      "source_url": "https://www.portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm",
+      "source_name": "Portent"
+    },
+    {
+      "claim": "pages over 3s load lose most visitors",
+      "value": "",
+      "source_url": "https://www.cloudflare.com/learning/performance/more/website-performance-conversion-rates/",
+      "source_name": "Cloudflare"
+    },
+    {
+      "claim": "A/B tested landing pages ~30% revenue lift",
+      "value": "",
+      "source_url": "https://www.convert.com",
+      "source_name": "Convert.com"
     }
   ]
 }
