@@ -1,0 +1,10 @@
+{
+  "slug": "automated-email-sequences-for-local-business",
+  "keyword": "automated email sequences for local business",
+  "angle": "Goal-first automated sequences (welcome, promo, cart recovery, re-engagement) for non-technical local business owners.",
+  "secondary_kw": ["email automation small business", "abandoned cart emails"],
+  "stats": [
+    {"claim": "Welcome emails earn the highest open rates of any email type", "value": "highest of all types", "source_url": "https://www.getresponse.com/resources/reports/email-marketing-benchmarks", "source_name": "GetResponse"},
+    {"claim": "Abandoned cart emails average around a 50% open rate with roughly 3 to 8% of recipients converting", "value": "~50% open, 3-8% conversion", "source_url": "https://www.klaviyo.com/blog/abandoned-cart-benchmarks", "source_name": "Klaviyo"}
+  ]
+}
