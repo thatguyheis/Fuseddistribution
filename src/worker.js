@@ -355,15 +355,39 @@ async function readPreviousSpot(env) {
   return null;
 }
 
-async function handleSpot(env) {
-  if (!env.METAL_PRICE_API_KEY) {
-    return json({ error: "Spot price not configured." }, { status: 503 });
-  }
-
+async function readTodaySpot(env) {
+  if (!env.SPOT_KV) return null;
+  const raw = await env.SPOT_KV.get(`spot:${utcDateString()}`);
+  if (!raw) return null;
   try {
-    const rates = await fetchSpotRates(env);
+    const parsed = JSON.parse(raw);
+    if (typeof parsed.silver === "number" && typeof parsed.gold === "number") {
+      return { silver: parsed.silver, gold: parsed.gold };
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+async function handleSpot(env) {
+  // Serve today's KV snapshot; hit the metered upstream API only on a miss
+  // (metalpriceapi free tier allows ~80 calls/month).
+  try {
+    let rates = await readTodaySpot(env);
     if (!rates) {
-      return json({ error: "Upstream error." }, { status: 502 });
+      if (!env.METAL_PRICE_API_KEY) {
+        return json({ error: "Spot price not configured." }, { status: 503 });
+      }
+      rates = await fetchSpotRates(env);
+      if (!rates) {
+        return json({ error: "Upstream error." }, { status: 502 });
+      }
+      if (env.SPOT_KV) {
+        await env.SPOT_KV.put(`spot:${utcDateString()}`, JSON.stringify(rates), {
+          expirationTtl: 60 * 60 * 24 * 40,
+        });
+      }
     }
     const prev = await readPreviousSpot(env);
     return json(prev ? { ...rates, prev } : rates);

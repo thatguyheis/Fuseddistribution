@@ -156,3 +156,56 @@ describe("reel media routing", () => {
     expect([...new Uint8Array(await ranged.arrayBuffer())]).toEqual([2, 3, 4]);
   });
 });
+
+describe("GET /api/spot", () => {
+  function utcDate(offsetDays = 0) {
+    return new Date(Date.now() + offsetDays * 86_400_000).toISOString().slice(0, 10);
+  }
+
+  it("serves today's KV snapshot without calling the upstream API", async () => {
+    await env.SPOT_KV.put(`spot:${utcDate()}`, JSON.stringify({ silver: 64.85, gold: 4155.6 }));
+    const upstreamFetch = vi.fn();
+    vi.stubGlobal("fetch", upstreamFetch);
+
+    const response = await SELF.fetch(`${ORIGIN}/api/spot`);
+
+    expect(response.status).toBe(200);
+    const body = await response.json();
+    expect(body.silver).toBe(64.85);
+    expect(body.gold).toBe(4155.6);
+    expect(upstreamFetch).not.toHaveBeenCalled();
+  });
+
+  it("includes prev from an earlier snapshot", async () => {
+    await env.SPOT_KV.put(`spot:${utcDate()}`, JSON.stringify({ silver: 64.85, gold: 4155.6 }));
+    await env.SPOT_KV.put(`spot:${utcDate(-1)}`, JSON.stringify({ silver: 63.1, gold: 4100.2 }));
+    vi.stubGlobal("fetch", vi.fn());
+
+    const response = await SELF.fetch(`${ORIGIN}/api/spot`);
+
+    expect(response.status).toBe(200);
+    expect((await response.json()).prev).toEqual({ silver: 63.1, gold: 4100.2, date: utcDate(-1) });
+  });
+
+  it("falls back to the upstream API on KV miss and stores the snapshot", async () => {
+    await env.SPOT_KV.delete(`spot:${utcDate()}`);
+    // Plain object instead of Response: workerd forbids reading a body stream
+    // created in the test's I/O context from inside the handler.
+    const upstreamFetch = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({ success: true, rates: { USDXAG: 65.2, USDXAU: 4200.1 } }),
+    });
+    vi.stubGlobal("fetch", upstreamFetch);
+
+    const response = await SELF.fetch(`${ORIGIN}/api/spot`);
+
+    expect(response.status).toBe(200);
+    const body = await response.json();
+    expect(body.silver).toBe(65.2);
+    expect(body.gold).toBe(4200.1);
+    expect(upstreamFetch).toHaveBeenCalledOnce();
+
+    const stored = JSON.parse(await env.SPOT_KV.get(`spot:${utcDate()}`));
+    expect(stored).toEqual({ silver: 65.2, gold: 4200.1 });
+  });
+});

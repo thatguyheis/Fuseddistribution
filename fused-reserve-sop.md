@@ -31,15 +31,16 @@ This SOP governs how Fused Reserve sources, qualifies, stores, and fulfills phys
 **Frequency:** Daily on business days
 
 **Process:**
-1. Check spot price via one of: [Kitco](https://kitco.com), [APMEX spot](https://apmex.com), or Metals-API (if automated)
+1. Check spot price via `curl -s https://fuseddistribution.com/api/spot` (cached daily snapshot, no API quota cost), or manually via [Kitco](https://kitco.com) / [APMEX spot](https://apmex.com)
 2. Log in the Sourcing Tracker: date, spot price (USD/oz), 30-day average, % vs. 30-day average
 3. If spot is ≥2% below the 30-day average → flag as **Buy Window**
 4. During a Buy Window, prioritize sourcing ahead of fulfillment need (buy for buffer inventory)
 
 **Reference spot sources (in order of preference):**
+- `https://fuseddistribution.com/api/spot` — site's own cached daily snapshot; free to call, never spends metalpriceapi quota
 - Kitco silver spot (live, free)
 - APMEX spot price page
-- Metals-API (for future automation — JSON endpoint, free tier available)
+- Do NOT call metalpriceapi.com directly — free tier is ~80 calls/month, reserved for the site's daily cron only
 
 ---
 

@@ -96,6 +96,8 @@ curl -s https://fuseddistribution.com/api/spot
 # Returns: {"silver": 64.85, "gold": 4155.60}
 ```
 
+**API quota rule (hard):** `/api/spot` serves a cached daily KV snapshot, so calling it does NOT consume metalpriceapi quota — call it freely. NEVER call metalpriceapi.com (or any other metals price API) directly from any script, agent, or workflow step. The free tier allows only ~80 calls/month and the site's daily 00:05 UTC cron is the only thing allowed to spend it.
+
 **Rules (hard — no exceptions):**
 - Every price used as a hypothetical example in a silver post MUST use current spot, not a round number or assumed price.
 - Always quote the date alongside the price: `"$64.85/oz as of June 22, 2026"` or `"at current spot ($64.85/oz, June 22, 2026)"`.

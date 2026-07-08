@@ -8,7 +8,8 @@
     "enabled": true
   },
   "vars": {
-    "MAILERLITE_API_KEY": "test-value"
+    "MAILERLITE_API_KEY": "test-value",
+    "METAL_PRICE_API_KEY": "test-metal-key"
   },
   "assets": {
     "directory": "./public/reserve",
