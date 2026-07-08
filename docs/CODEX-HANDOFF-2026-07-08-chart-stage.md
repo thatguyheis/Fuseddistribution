@@ -43,7 +43,7 @@ Their already-rendered reels do NOT have chart segments; the `## chart` section 
 1. **Stage placement/ownership** — T8b sits between pexels and reel inside build-post.sh; confirm placement and the `mark chart` status semantics fit the gate model.
 2. **Gemma JSON reliability** — daily runs use gemma for extraction. Validator makes bad output safe (chart just skipped) but if gemma rarely emits valid JSON the stage is dead weight; consider whether the chart brain deserves the qa-brain treatment or a claude carve-out.
 3. **qa-gate interaction** — injector edits index.html after html/pexels stages; confirm qa-gate.sh ordering still sees the final DOM.
-4. **Known content gap** — 7 of 10 recent posts are stat-thin (0-2 sourced numbers), so they legitimately get no chart. Real fix is research-backed rewrites (anti-fabrication gate work from 2026-07-07/08 applies). Proposed follow-up, not started.
+4. **Known content gap — RESOLVED same day** (`50ef7c93`): all 7 stat-thin posts received researched, sourced stat paragraphs (GoldSilver, Invesp, Bain/Gorgias, GetResponse/Mailchimp/Litmus/HubSpot, EmailToolTester/StackScored), Sources blocks, research.json, chart.json, body charts, `## chart` reel sections, and chart heroes. All values validator-passed and live-verified. SOP §8 now carries a chart-first rule: every draft must include 3+ comparable same-unit sourced stats (write-article.sh and research.sh prompts updated to match), so future posts arrive chartable. Fallback for genuinely numberless topics: another custom graphic; zero custom graphics = QA failure.
 
 ## Files touched
 
