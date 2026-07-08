@@ -6,7 +6,7 @@ You’re pouring your heart and soul into your local business, offering great se
 
 Traditional loyalty programs - those with points, tiers, and endless rules - often overwhelm customers and feel transactional. They’re complex to manage and rarely deliver the emotional connection you crave. Instead of investing in a system that feels like a chore for both you and your customers, let’s focus on building a genuine relationship. The most effective loyalty programs aren’t about rewards; they’re about remembering and valuing your customers. You don’t need a fancy digital system to build loyalty; you need to be present and attentive.
 
-You can automate getting reviews too. Don't wait for people to ask. Set up a simple trigger. After a successful appointment, prompt them for a review. Make it easy for them. This gets you the feedback you need when it matters most. A study by BrightLocal found that 92% of consumers trust online reviews as much as personal recommendations (BrightLocal, 2023). That’s a powerful motivator.
+You can automate getting reviews too. Don't wait for people to ask. Set up a simple trigger. After a successful appointment, prompt them for a review. Make it easy for them. This gets you the feedback you need when it matters most. BrightLocal's 2026 Local Consumer Review Survey found that 49% of consumers trust online reviews as much as personal recommendations. That’s a powerful motivator.
 
 Keep rewards simple. Don’t make it a massive points chart. Offer small, quick things based on how often they come back. For example, after five visits, give them a free small add-on. Keep it tangible. People like seeing a real benefit right away. Consider offering a small discount on their next service or a complimentary upgrade.
 
@@ -24,7 +24,7 @@ The first step is to just ask. You need a simple follow-up. After someone finish
 
 **Step 2: Get Reviews Where They Matter Most**
 
-Don't wait for people to remember to leave feedback. Prompt them right after a successful appointment. This makes it easy for them to share their experience when they remember it. Tie it to the specific service they just got. This gets you the kind of local proof that matters to customers. A good trigger message might be: “We’re so glad you enjoyed your {Service}! Would you mind taking a quick moment to share your experience on [Google/Facebook]? It really helps other local customers find us.” Make the link directly to your Google Business Profile or Facebook page. According to Yelp, 86% of consumers read online reviews before visiting a business (Yelp, 2022).
+Don't wait for people to remember to leave feedback. Prompt them right after a successful appointment. This makes it easy for them to share their experience when they remember it. Tie it to the specific service they just got. This gets you the kind of local proof that matters to customers. A good trigger message might be: “We’re so glad you enjoyed your {Service}! Would you mind taking a quick moment to share your experience on [Google/Facebook]? It really helps other local customers find us.” Make the link directly to your Google Business Profile or Facebook page. The same BrightLocal survey found that 97% of consumers read online reviews for local businesses.
 
 **Step 3: Rewards Should Be Easy to Understand**
 
@@ -54,7 +54,7 @@ Rewards shouldn’t be complicated. Keep it small and direct. Skip the confusing
 
 ## Building a Brand Around Relationships
 
-Customer loyalty isn’t just about repeat business; it’s about building a brand that people connect with. When you prioritize genuine relationships, you create a community around your business. People are more likely to support businesses they feel connected to, even if the rewards aren’t extravagant. Consider hosting small local events, sponsoring a community initiative, or simply being a visible and engaged member of your neighborhood. A local business directory listing, like Yelp, can also help you build local awareness (Yelp, 2022).
+Customer loyalty isn’t just about repeat business; it’s about building a brand that people connect with. When you prioritize genuine relationships, you create a community around your business. People are more likely to support businesses they feel connected to, even if the rewards aren’t extravagant. Consider hosting small local events, sponsoring a community initiative, or simply being a visible and engaged member of your neighborhood. A local business directory listing, like Yelp, can also help you build local awareness.
 
 ## The Power of Personalization
 
@@ -70,8 +70,7 @@ Ready to see how we actually get your business found on Google? Contact us at /#
 
 **Sources:**
 
-* BrightLocal. (2023). *Review Statistics*. [https://www.brightlocal.com/reviews/review-statistics/](https://www.brightlocal.com/reviews/review-statistics/)
-* Yelp. (2022). *The Power of Reviews*. [https://www.yelp.com/insights/review-statistics](https://www.yelp.com/insights/review-statistics)
+* BrightLocal. (2026). *Local Consumer Review Survey*. [https://www.brightlocal.com/research/local-consumer-review-survey/](https://www.brightlocal.com/research/local-consumer-review-survey/)
 * Salesforce. (2021). *Personalization Statistics*. [https://www.salesforce.com/resources/research/personalization-statistics/](https://www.salesforce.com/resources/research/personalization-statistics/)
 
 ## Related

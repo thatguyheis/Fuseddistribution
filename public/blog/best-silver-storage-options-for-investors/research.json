@@ -1,0 +1,9 @@
+{
+  "slug": "best-silver-storage-options-for-investors",
+  "keyword": "best silver storage options for investors",
+  "angle": "Storage cost and format tradeoffs using live spot pricing instead of stale examples.",
+  "secondary_kw": ["silver premiums", "home safe vs vault"],
+  "stats": [
+    {"claim": "Silver spot near $62/oz as of July 2026", "value": "$61.81/oz", "source_url": "https://fuseddistribution.com/api/spot", "source_name": "Fused Distribution spot feed"}
+  ]
+}
