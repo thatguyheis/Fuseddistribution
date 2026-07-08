@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-08 | how-to-follow-up-with-customers-after-a-sale | General | how to follow up with customers after a sale |
 | 2026-07-07 | how-to-get-repeat-customers-for-your-small-business | General | how to get repeat customers for your small business (recovered) |
 | 2026-07-07 | customer-loyalty-program-ideas-for-small-business | General | customer loyalty program ideas for small business (recovered) |
 | 2026-07-06 | email-marketing-vs-social-media-which-is-better | General | email marketing vs social media which is better |
