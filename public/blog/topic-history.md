@@ -84,6 +84,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-08 | how-to-sell-silver-for-the-best-price | General | how to sell silver for the best price |
 | 2026-07-07 | best-silver-storage-options-for-investors | General | best silver storage options for investors (recovered) |
 | 2026-07-07 | insuring-physical-silver-at-home | General | insuring physical silver at home (recovered) |
 | 2026-07-07 | silver-coin-holders-and-cases-guide | General | silver coin holders and cases guide |
