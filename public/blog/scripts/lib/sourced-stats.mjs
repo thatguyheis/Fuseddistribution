@@ -64,7 +64,12 @@ export function findUncitedSources(text, researchPath) {
   const hits = new Map();
 
   const flag = (raw) => {
-    const name = raw.replace(/\s+benchmarks?$/i, "").trim();
+    // ORG allows '.' for names like GoldSilver.com, so a run can jump a
+    // sentence boundary ("Google. Photo") — cut at ". " + drop possessives.
+    const name = raw.split(/\.\s/)[0]
+      .replace(/['’]s$/, "")
+      .replace(/\s+benchmarks?$/i, "")
+      .trim();
     if (!isAllowed(name, allowed)) hits.set(name, (hits.get(name) || 0) + 1);
   };
 
@@ -72,15 +77,26 @@ export function findUncitedSources(text, researchPath) {
     for (const m of text.matchAll(re)) flag(m[1]);
   }
 
+  // A word that also appears lowercase somewhere in the document is ordinary
+  // English ("still", "over", "spot"), not an org name — org names like
+  // Statista or BrightLocal never show up lowercased. Parentheticals are
+  // stripped first so a candidate can't vouch for itself.
+  const textLower = text.replace(/\([^)]*\)/g, " ").toLowerCase();
+  const isCommonWord = (w) =>
+    new RegExp(`\\b${w.toLowerCase().replace(/[^a-z0-9]/g, "")}\\b`).test(textLower);
+
   for (const sentence of text.split(/(?<=[.!?])\s+/)) {
     if (!NUMERIC_SENTENCE.test(sentence)) continue;
     for (const m of sentence.matchAll(BARE_PAREN_ORG)) {
-      // skip pure-acronym parentheticals like "(CTR)"
-      if (/^[A-Z]{2,6}$/.test(m[1])) continue;
-      // skip single common words ("(Immediately)") and -ly adverbs
-      const words = m[1].trim().split(/\s+/);
+      const candidate = m[1].trim();
+      // skip pure-acronym parentheticals like "(CTR)" and ALL-CAPS shouting
+      if (/^[A-Z]{2,6}$/.test(candidate)) continue;
+      if (/^[A-Z0-9 ]+$/.test(candidate) && candidate.includes(" ")) continue;
+      const words = candidate.split(/\s+/);
       if (words.length === 1 && (PAREN_STOPWORDS.has(words[0].toLowerCase()) || /ly$/i.test(words[0]))) continue;
-      flag(m[1]);
+      // skip phrases made entirely of ordinary words (years exempt)
+      if (words.filter((w) => !/^\d{4}$/.test(w)).every(isCommonWord)) continue;
+      flag(candidate);
     }
   }
 
