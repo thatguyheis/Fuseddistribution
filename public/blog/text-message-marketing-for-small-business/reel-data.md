@@ -31,6 +31,15 @@ hook_type: contrarian_stat
   text: READY TRANSFORM LOCAL BUSINESS
   narration: Ready to transform your local business with text message marketing? Let's schedule a quick call to discuss your specific needs and how we can help you build a winning strategy. Click here to book a consultation: {Link to Scheduling Tool}. We’ll help you move beyond just a website and start generating real leads and bookings through the power of text.
 
+## chart
+title: Text vs Email: The Engagement Gap
+bars:
+  - Consumers who prefer opted-in texts: 90%
+  - Prefer texts from businesses they use: 68%
+  - Emails that get opened: 9.5%
+  - Email opens that get clicked: 3%
+narration: The chart shows why text beats email for local outreach. Ninety percent of consumers prefer to receive marketing texts once they have opted in, and sixty-eight percent prefer texts from businesses they already use. Compare that to email, where only nine and a half percent of messages get opened and just three percent of those get clicked.
+
 ## question
 text: So, what’s one thing you’d actually want to receive via?
 subtext: COMMENT BELOW

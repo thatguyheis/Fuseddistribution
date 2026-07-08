@@ -1,0 +1,12 @@
+{
+  "title": "Text vs Email: The Engagement Gap",
+  "source": "",
+  "bars": [
+    { "label": "Consumers who prefer opted-in texts", "value": "90%" },
+    { "label": "Prefer texts from businesses they use", "value": "68%" },
+    { "label": "Emails that get opened", "value": "9.5%" },
+    { "label": "Email opens that get clicked", "value": "3%" }
+  ],
+  "hero_stat": { "value": "90%", "label": "of consumers prefer opted-in texts" },
+  "narration": "The chart shows why text beats email for local outreach. Ninety percent of consumers prefer to receive marketing texts once they have opted in, and sixty-eight percent prefer texts from businesses they already use. Compare that to email, where only nine and a half percent of messages get opened and just three percent of those get clicked."
+}

@@ -31,6 +31,15 @@ hook_type: contrarian_stat
   text: DON'T OFFER COMPLEX SOLUTIONS
   narration: We don't offer complex solutions or empty promises. We build simple, effective websites and SEO strategies that get you found online and start generating real results. Ready to stop guessing and start seeing a return on your marketing investment? Contact us today for a free consultation. Let’s discuss how we can help you boost your email open rates and grow your business.
 
+## chart
+title: Email Open Rate Benchmarks
+bars:
+  - E-commerce, top of healthy range: 35%
+  - Excellent open rate: 30%
+  - All-industry average: 20%
+  - Red flag threshold: 15%
+narration: The chart shows email open rate benchmarks. A truly excellent open rate is thirty percent or higher, and healthy e-commerce lists reach as high as thirty-five. The average across all industries sits around twenty percent, and anything below fifteen percent is a red flag that needs immediate attention.
+
 ## question
 text: Considering your local business’s email open rates , what percentage?
 subtext: COMMENT BELOW

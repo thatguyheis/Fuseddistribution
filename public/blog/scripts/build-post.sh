@@ -144,6 +144,22 @@ log "T7 html"; node "$SD/build-html.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && 
 # ── Pexels photos (SOP §8) — inject figures into index.html ──
 log "pexels"; "$SD/build-pexels.sh" "$SLUG" --keyword="$KEYWORD" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark pexels || log "pexels skipped/failed (continue)"
 
+# ── T8b chart (brain + deterministic validator) — body chart, reel-data ## chart,
+#    hero key_stat sync. Enhancement stage: never blocks publish. Runs before reel
+#    so reel-data picks up the chart, and re-runs svg so the hero gets the mini chart. ──
+log "T8b chart"
+if HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}" CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}" LOCAL_LLM="${LOCAL_LLM:-}" \
+   "$SD/build-chart.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /'; then
+  if [[ -f "$DIR/chart.json" ]] && ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
+    node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed (hero keeps stat card)"
+    mark chart
+  else
+    log "chart: no chartable data — post ships without chart"
+  fi
+else
+  log "chart failed (continue — enhancement only)"
+fi
+
 # ── T9 reel (deterministic+) ──
 log "T9 reel"; "$SD/build-reel.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /' && mark reel || log "reel failed"
 

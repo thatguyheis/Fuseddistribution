@@ -1,0 +1,12 @@
+{
+  "title": "Email Open Rate Benchmarks",
+  "source": "",
+  "bars": [
+    { "label": "E-commerce, top of healthy range", "value": "35%" },
+    { "label": "Excellent open rate", "value": "30%" },
+    { "label": "All-industry average", "value": "20%" },
+    { "label": "Red flag threshold", "value": "15%" }
+  ],
+  "hero_stat": { "value": "20%", "label": "average email open rate across industries" },
+  "narration": "The chart shows email open rate benchmarks. A truly excellent open rate is thirty percent or higher, and healthy e-commerce lists reach as high as thirty-five. The average across all industries sits around twenty percent, and anything below fifteen percent is a red flag that needs immediate attention."
+}

@@ -15,17 +15,21 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => {
 const BLOG_DIR = dirname(dirname(fileURLToPath(import.meta.url)));
 
 let title = args.title, stat = args.stat, statLabel = args.statLabel, dir = args.dir;
+let chart = null;
 if (args.slug) {
   dir = dir || join(BLOG_DIR, args.slug);
-  const mp = join(dir, "meta.json"), hp = join(dir, "hooks.json");
+  const mp = join(dir, "meta.json"), hp = join(dir, "hooks.json"), cp = join(dir, "chart.json");
   if (existsSync(mp)) title = title || JSON.parse(readFileSync(mp, "utf8")).title;
   if (existsSync(hp)) { const h = JSON.parse(readFileSync(hp, "utf8")); stat = stat ?? h.key_stat?.value; statLabel = statLabel ?? h.key_stat?.label; }
+  if (existsSync(cp)) {
+    try { const c = JSON.parse(readFileSync(cp, "utf8")); if (!c.skipped && Array.isArray(c.bars) && c.bars.length >= 3) chart = c; } catch { /* chart optional */ }
+  }
 }
 if (!title || !dir) { console.error("error: need --slug or (--title and --dir)"); process.exit(1); }
 stat = stat || ""; statLabel = statLabel || "";
 
 // XML-safe: escape & < > " and force ASCII (numeric entities for non-ASCII)
-const xml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+const xml = (s) => String(s).replace(/&/g, "&#38;").replace(/</g, "&#60;").replace(/>/g, "&#62;").replace(/"/g, "&#34;")
   .replace(/[-￿]/g, (c) => `&#${c.charCodeAt(0)};`);
 
 function wrap(text, max) {
@@ -53,14 +57,36 @@ function bgLayer(w, h) {
   ${dots}`;
 }
 
+// ── hero mini-chart (top 3 bars from chart.json) ──
+function heroChart() {
+  const numOf = (v) => { const m = String(v).replace(/,/g, "").match(/-?\d+(?:\.\d+)?/); return m ? parseFloat(m[0]) : 0; };
+  const bars = [...chart.bars].map((b) => ({ ...b, n: numOf(b.value) })).sort((a, b) => b.n - a.n).slice(0, 3);
+  const maxN = Math.max(...bars.map((b) => Math.abs(b.n))) || 1;
+  const x0 = 340, maxW = 430, rowH = 56, y0 = 424;
+  const OP = [1, 0.55, 0.3];
+  let out = `<text x="${x0}" y="${y0 - 14}" font-family="Arial, sans-serif" font-size="17" fill="${C.cyan}" letter-spacing="3">${xml(String(chart.title).toUpperCase().slice(0, 52))}</text>
+  <linearGradient id="hbar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="${C.cyan}"/><stop offset="100%" stop-color="${C.green}"/></linearGradient>`;
+  bars.forEach((b, i) => {
+    const w = Math.max(8, Math.round((Math.abs(b.n) / maxN) * maxW));
+    const y = y0 + i * rowH;
+    out += `
+  <text x="${x0}" y="${y + 14}" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="${C.muted}">${xml(String(b.label).toUpperCase().slice(0, 40))}</text>
+  <rect x="${x0}" y="${y + 22}" width="${w}" height="16" rx="4" fill="url(#hbar)" opacity="${OP[i]}"/>
+  <text x="${x0 + w + 10}" y="${y + 36}" font-family="Impact, sans-serif" font-size="19" fill="${C.cyan}">${xml(b.value)}</text>`;
+  });
+  return out;
+}
+
 // ── hero.svg 1200x630 ──
 function hero() {
   const lines = wrap(title, 22).slice(0, 3);
-  const fs = lines.length >= 3 ? 64 : 76;
-  const startY = 300 - ((lines.length - 1) * fs) / 2;
+  const fs = lines.length >= 3 ? 60 : 72;
+  // With a chart, lift the title so bars get the lower half
+  const centerY = chart ? 250 : 300;
+  const startY = centerY - ((lines.length - 1) * fs) / 2;
   const titleT = lines.map((l, i) => `<text x="600" y="${startY + i * (fs + 8)}" font-family="Impact, Haettenschweiler, sans-serif" font-size="${fs}" fill="${C.text}" text-anchor="middle" letter-spacing="2">${xml(l)}</text>`).join("\n  ");
-  const statT = stat ? `<text x="600" y="470" font-family="Impact, sans-serif" font-size="84" fill="${C.cyan}" text-anchor="middle">${xml(stat)}</text>
-  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="${C.muted}" text-anchor="middle">${xml(statLabel.toUpperCase())}</text>` : "";
+  const statT = chart ? heroChart() : (stat ? `<text x="600" y="470" font-family="Impact, sans-serif" font-size="84" fill="${C.cyan}" text-anchor="middle">${xml(stat)}</text>
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="${C.muted}" text-anchor="middle">${xml(statLabel.toUpperCase())}</text>` : "");
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   ${bgLayer(1200, 630)}
   <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="${C.cyan}" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>

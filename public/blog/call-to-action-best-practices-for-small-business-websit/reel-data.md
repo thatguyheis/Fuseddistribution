@@ -31,6 +31,14 @@ hook_type: contrarian_stat
   text: OPEN YOUR THREE MOST VISITED
   narration: Open your three most-visited pages today and ask one question of each: if a visitor does exactly one thing here, what should it be? Rewrite the primary button to say that, move it where people look first, then watch your analytics for two weeks. Small, measured changes to your calls to action compound into more calls, more forms, and more customers over the months ahead.
 
+## chart
+title: CTA Numbers Worth Knowing
+bars:
+  - Click lift from a single CTA per email: 371%
+  - Conversion lift, personalized CTAs: 202%
+  - Share of web visits on mobile: 60%
+narration: The chart shows the call to action numbers that move real money. Emails with a single call to action increased clicks by three hundred seventy-one percent compared to emails packed with competing links. Personalized calls to action convert two hundred two percent better than generic ones, and with mobile at roughly sixty percent of web visits, every button has to work with a thumb.
+
 ## question
 text: What's your website's biggest conversion challenge right now?
 subtext: COMMENT BELOW

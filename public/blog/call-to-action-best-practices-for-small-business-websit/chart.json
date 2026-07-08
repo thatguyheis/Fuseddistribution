@@ -1,0 +1,11 @@
+{
+  "title": "CTA Numbers Worth Knowing",
+  "source": "HubSpot, WordStream, Statista",
+  "bars": [
+    { "label": "Click lift from a single CTA per email", "value": "371%" },
+    { "label": "Conversion lift, personalized CTAs", "value": "202%" },
+    { "label": "Share of web visits on mobile", "value": "60%" }
+  ],
+  "hero_stat": { "value": "202%", "label": "better conversion from personalized CTAs" },
+  "narration": "The chart shows the call to action numbers that move real money. Emails with a single call to action increased clicks by three hundred seventy-one percent compared to emails packed with competing links. Personalized calls to action convert two hundred two percent better than generic ones, and with mobile at roughly sixty percent of web visits, every button has to work with a thumb."
+}

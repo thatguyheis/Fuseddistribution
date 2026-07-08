@@ -297,6 +297,16 @@ Chart math:
 - Horizontal bar: `width = round(pct / 100 * 447)`, label x = `188 + width + 6`
 - Vertical bar: `height = round(pct / 100 * 198)`, bar top y = `228 - height`
 
+**Automated chart stage (T8b):** `scripts/build-chart.sh <slug>` extracts 3-6 comparable
+sourced stats from `verified.md`/`research.json` into `chart.json`, then
+`scripts/build-chart-inject.mjs` validates every value against the post's own text
+(fabricated numbers reject the whole chart), injects a `chart-wrap` bar chart into
+`index.html`, appends `## chart` to `reel-data.md` (picked up by the reel render),
+and syncs `hooks.json` `key_stat` so the hero stat is on-topic. When `chart.json`
+exists, `build-svg.mjs` renders a mini bar chart on `hero.svg` instead of the plain
+stat card. Runs inside `build-post.sh` after pexels, before reel. Enhancement stage:
+a post without chartable data ships without a chart — never blocks publish.
+
 ---
 
 ## 7. Hero SVG
