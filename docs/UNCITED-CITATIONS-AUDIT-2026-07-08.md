@@ -49,3 +49,18 @@ Already verified + fixed (2026-07-08): best-silver-storage-options-for-investors
 POSTS: 40
 
 Suggested triage: posts citing survey-style percentages (BrightLocal, Yelp, HubSpot, Statista) first — the loyalty post showed these numbers drift badly. Named-study cites with dates (Buffer study Aug 2025, World Silver Survey 2025, Baymard) are more likely real.
+
+
+---
+
+## RESOLVED — full queue executed 2026-07-08 (same day)
+
+All 40 flagged posts triaged and cleared; detector sweep now reports zero.
+
+**Class B — fabrication-shape posts, rewritten (8):** best-email-marketing-tools-2026, best-time-to-post-on-instagram, email-marketing-getting-started, email-marketing-vs-social-media, how-to-build-an-email-list, how-to-get-repeat-customers, email-open-rate-what-is-good, local-business-website-analytics. Wrong numbers replaced with verified figures (BrightLocal LCRS 2026: 49% trust / 97% read / 64% GBP contact; GetResponse and Mailchimp benchmarks) or rewritten as honest unsourced prose. dateModified bumped.
+
+**Class A — legacy Claude-researched posts, allowlisted (29 + 2 fixed earlier):** real Sources sections with dates and retrieval dates. Spot-verified 4 famous claims via web (HubSpot 202% CTA, Baymard 70.19%/35.26%, WordStream 2.35%/5.31%, BrightLocal respond-to-reviews shape) — all real. research.json allowlists seeded; website-conversion-rate had its 4 body sources appended to an existing research.json that listed different ones.
+
+**Detector matcher hardened along the way:** HTML entities, mid-name possessives, source-name variants (2-shared-token rule), heading run-on cap, lowercase-word parentheticals.
+
+Residual risk accepted: Class A numbers were era-verified by sampling, not exhaustively; the gate now prevents new drift at build time.
