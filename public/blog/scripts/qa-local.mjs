@@ -4,6 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseReelScript } from '../../../video/scripts/parse-script.mjs';
 import { validateReelScript } from '../../../video/scripts/validate-reel.mjs';
+import { findUncitedSources } from './lib/sourced-stats.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_DIR = resolve(__dirname, '..');
@@ -232,6 +233,16 @@ function validateInlineLinks(html, blockers, slugDirRoot, selfSlug) {
   pushIf(/(^|[^\w"'=\/])\/(reserve|blog\/[a-z0-9-]+)\/(\s|[.,)]|$)/.test(text), blockers, 'bare internal path in prose');
 }
 
+function validateSourcedStats(html, blockers, slug) {
+  // Fabricated stat attributions: any named-source claim in body prose must
+  // trace to research.json (see lib/sourced-stats.mjs).
+  const bodyMatch = html.match(/<div class="article-body">([\s\S]*?)(?=<\/article>|<\/body>)/i);
+  const text = textFromHtml(bodyMatch ? bodyMatch[1] : html);
+  for (const { source, count } of findUncitedSources(text, join(BLOG_DIR, slug, 'research.json'))) {
+    blockers.push(`uncited stat attribution: "${source}" (${count}x) not in research.json`);
+  }
+}
+
 function validateHtml(htmlPath, blockers, slug) {
   const html = readText(htmlPath);
   pushIf(!html, blockers, 'missing index.html');
@@ -241,6 +252,7 @@ function validateHtml(htmlPath, blockers, slug) {
     validateTopicCoherence(html, blockers);
     validateSectionRepetition(html, blockers);
     validateInlineLinks(html, blockers, BLOG_DIR, slug);
+    validateSourcedStats(html, blockers, slug);
   }
 }
 

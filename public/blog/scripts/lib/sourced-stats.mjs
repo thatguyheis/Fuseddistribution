@@ -1,0 +1,88 @@
+// Deterministic uncited-attribution detector. Local writer models fabricate
+// stat attributions ("According to HubSpot...", "(Source: Google Search
+// Insights)") whenever research.json is absent — which is every Hermes-takeover
+// build, since T1 research only runs with Claude available. This flags any
+// named-source claim whose source is not in research.json, so the lint fix
+// loop strips it and qa-local blocks anything that slips through.
+
+import { readFileSync, existsSync } from "node:fs";
+
+const SELF_NAMES = ["fused distribution", "fused"];
+
+function normalize(name) {
+  return name.toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+}
+
+export function loadAllowedSources(researchPath) {
+  const allowed = new Set(SELF_NAMES);
+  if (researchPath && existsSync(researchPath)) {
+    try {
+      const research = JSON.parse(readFileSync(researchPath, "utf8"));
+      for (const stat of research.stats || []) {
+        const n = normalize(stat.source_name || "");
+        if (n) allowed.add(n);
+      }
+    } catch {
+      // unreadable research.json = no allowlist beyond self
+    }
+  }
+  return allowed;
+}
+
+function isAllowed(candidate, allowed) {
+  const n = normalize(candidate);
+  if (!n || n.length < 3) return true; // too short to be a real org claim
+  for (const a of allowed) {
+    if (n.includes(a) || a.includes(n)) return true;
+  }
+  return false;
+}
+
+// Org-name capture: capitalized word run, e.g. "HubSpot", "Google Search Insights".
+// No `i` flag on patterns using ORG — case-insensitivity would let the run
+// swallow lowercase words and capture whole sentences.
+const ORG = "([A-Z][A-Za-z0-9.&'-]*(?:\\s+[A-Z][A-Za-z0-9.&'-]*)*)";
+const PATTERNS = [
+  new RegExp(`\\b[Aa]ccording to\\s+${ORG}`, "g"),
+  new RegExp(`\\b(?:[Ss]tudy|[Rr]eport|[Ss]urvey|[Aa]nalysis|[Rr]esearch)\\s+(?:by|from)\\s+${ORG}`, "g"),
+  new RegExp(`\\b(?:[Dd]ata|[Aa]nalytics|[Rr]esearch|[Bb]enchmarks?|[Ss]tatistics)\\s+from\\s+${ORG}`, "g"),
+  new RegExp(`\\b${ORG}\\s+(?:data|benchmarks?|research|analytics|statistics)\\s+(?:show|shows|found|reveals?|puts?)`, "g"),
+  /\(\s*Source:\s*([^)]+?)\s*\)/gi,
+];
+
+// Bare parenthetical org right after a numeric claim: "...60% of traffic (Statista)."
+const NUMERIC_SENTENCE = /\d+(?:\.\d+)?\s*(?:%|percent)/i;
+const BARE_PAREN_ORG = /\(([A-Z][A-Za-z0-9.&' -]{2,40})\)/g;
+// Single-word parentheticals that are timing/labels, not sources
+const PAREN_STOPWORDS = new Set([
+  "example", "optional", "recommended", "important", "note", "free", "bonus",
+  "new", "updated", "immediately", "later", "finally", "optionally",
+]);
+
+export function findUncitedSources(text, researchPath) {
+  const allowed = loadAllowedSources(researchPath);
+  const hits = new Map();
+
+  const flag = (raw) => {
+    const name = raw.replace(/\s+benchmarks?$/i, "").trim();
+    if (!isAllowed(name, allowed)) hits.set(name, (hits.get(name) || 0) + 1);
+  };
+
+  for (const re of PATTERNS) {
+    for (const m of text.matchAll(re)) flag(m[1]);
+  }
+
+  for (const sentence of text.split(/(?<=[.!?])\s+/)) {
+    if (!NUMERIC_SENTENCE.test(sentence)) continue;
+    for (const m of sentence.matchAll(BARE_PAREN_ORG)) {
+      // skip pure-acronym parentheticals like "(CTR)"
+      if (/^[A-Z]{2,6}$/.test(m[1])) continue;
+      // skip single common words ("(Immediately)") and -ly adverbs
+      const words = m[1].trim().split(/\s+/);
+      if (words.length === 1 && (PAREN_STOPWORDS.has(words[0].toLowerCase()) || /ly$/i.test(words[0]))) continue;
+      flag(m[1]);
+    }
+  }
+
+  return [...hits.entries()].map(([source, count]) => ({ source, count }));
+}

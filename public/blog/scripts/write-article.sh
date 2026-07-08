@@ -108,6 +108,7 @@ REQUIREMENTS:
 - H2 headings that deliver on the title promise (no generic headings like "Introduction")
 - Every H2 section must have unique content — no repeated sentences or paragraphs across sections
 - Include at least 3 of the sourced stats above, cited inline
+- Never attribute a number, statistic, or claim to a named organization, study, platform, or publication unless it appears in the SOURCED STATS list above; if that list is empty, make no named-source claims at all (no "According to X", no "(Source: X)", no "X data shows")
 - Specific, actionable advice (scripts, numbers, timing, exact steps — not vague guidance)
 - Short sentences, varied length, plain language
 - No em dashes or en dashes (use commas or periods instead)
@@ -166,7 +167,7 @@ for attempt in 1 2 3; do
   VIOLATIONS=$(node "$LINT" "$OUT" 2>/dev/null | python3 -c '
 import json,sys
 d=json.load(sys.stdin)
-terms=[t["term"] for t in d["banned"]+d["hedging"]+d["filler_transitions"]+d["openers"]]
+terms=[t["term"] for t in d["banned"]+d["hedging"]+d["filler_transitions"]+d["openers"]+d.get("uncited_sources",[])]
 extra=[]
 if d["em_dash"]: extra.append("em dash")
 if d["en_dash"]: extra.append("en dash")
@@ -174,6 +175,7 @@ print(", ".join(extra+terms))' || echo "")
   [[ $attempt -ge 3 ]] && break
   {
     echo "Fix these style violations in the markdown below. Remove/replace ONLY these, keep everything else identical. Output ONLY the corrected markdown, no commentary, no code fences."
+    echo "For any 'uncited stat attribution' violation: rewrite that sentence as a general claim with no named source and no invented number. Do not substitute a different source name."
     echo "Violations to remove: $VIOLATIONS"
     echo ""
     echo "--- MARKDOWN ---"

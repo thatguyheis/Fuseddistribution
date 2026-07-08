@@ -10,6 +10,8 @@
 // Exit code: 0 = pass (no violations), 1 = violations found, 2 = usage error.
 
 import { readFileSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { findUncitedSources } from "./lib/sourced-stats.mjs";
 
 const argv = process.argv.slice(2);
 const file = argv.find((a) => !a.startsWith("--"));
@@ -86,8 +88,13 @@ const hedging = collect(HEDGING);
 const filler = collect(FILLER_TRANSITIONS);
 const openers = collect(OPENERS);
 
+// Stat attributions must trace to research.json (sits next to the draft).
+const uncitedSources = findUncitedSources(text, join(dirname(file), "research.json"))
+  .map(({ source, count }) => ({ term: `uncited stat attribution "${source}"`, count }));
+
 const totalViolations =
-  emDash + enDash + banned.length + hedging.length + filler.length + openers.length;
+  emDash + enDash + banned.length + hedging.length + filler.length + openers.length +
+  uncitedSources.length;
 
 const report = {
   file,
@@ -99,6 +106,7 @@ const report = {
   hedging: hedging,
   filler_transitions: filler,
   openers: openers,
+  uncited_sources: uncitedSources,
   total_violations: totalViolations,
 };
 
