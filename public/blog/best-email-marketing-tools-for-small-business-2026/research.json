@@ -1,20 +1,33 @@
 {
   "slug": "best-email-marketing-tools-for-small-business-2026",
   "keyword": "best email marketing tools for small business 2026",
-  "angle": "Legacy citation allowlist backfilled during 2026-07-08 uncited-citation audit; sources correspond to the article's existing Sources section / inline citations.",
+  "angle": "",
   "secondary_kw": [],
   "stats": [
     {
-      "claim": "cited in article body (audited 2026-07-08)",
-      "value": "",
-      "source_url": "https://www.getresponse.com/resources/reports/email-marketing-benchmarks",
-      "source_name": "GetResponse"
+      "claim": "GetResponse Email Marketing plan starts at $19/month",
+      "value": "$19",
+      "source_url": "https://www.emailtooltester.com/en/blog/brevo-vs-mailchimp/",
+      "source_name": "EmailToolTester"
     },
     {
-      "claim": "cited in article body (audited 2026-07-08)",
-      "value": "",
-      "source_url": "https://mailchimp.com/resources/email-marketing-benchmarks/",
-      "source_name": "Mailchimp"
+      "claim": "Mailchimp Essentials starts at $13/month for 500 contacts",
+      "value": "$13",
+      "source_url": "https://www.stackscored.com/pricing/email-marketing/compare/constant-contact-vs-mailchimp/",
+      "source_name": "StackScored"
+    },
+    {
+      "claim": "Constant Contact Lite is $12/month at 500 contacts",
+      "value": "$12",
+      "source_url": "https://www.stackscored.com/pricing/email-marketing/compare/constant-contact-vs-mailchimp/",
+      "source_name": "StackScored"
+    },
+    {
+      "claim": "Brevo paid plans start at $9/month",
+      "value": "$9",
+      "source_url": "https://www.emailtooltester.com/en/blog/brevo-vs-mailchimp/",
+      "source_name": "EmailToolTester"
     }
-  ]
+  ],
+  "retrofit_date": "2026-07-08"
 }

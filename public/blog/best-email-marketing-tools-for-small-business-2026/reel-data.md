@@ -31,6 +31,15 @@ hook_type: contrarian_stat
   text: SPECIALIZE BUILDING BEAUTIFUL EFFECTIVE
   narration: We specialize in building beautiful, effective websites and driving targeted traffic through SEO, ensuring your local business thrives in the digital age. Let's discuss how a tailored marketing strategy can transform your business.
 
+## chart
+title: Starting Paid Plan, Per Month
+bars:
+  - GetResponse: $19
+  - Mailchimp Essentials: $13
+  - Constant Contact Lite: $12
+  - Brevo starter: $9
+narration: The chart compares 2026 starting prices for the major email tools. GetResponse opens at nineteen dollars a month, Mailchimp Essentials at thirteen, Constant Contact Lite at twelve, and Brevo at nine. Brevo charges by emails sent rather than contacts stored, which changes the math for big lists.
+
 ## question
 text: So, what’s one specific action you’d take to boost local?
 subtext: COMMENT BELOW

@@ -1,0 +1,23 @@
+{
+  "title": "Repeat Customers Punch Above Their Weight",
+  "source": "Gorgias (2026)",
+  "bars": [
+    {
+      "label": "Share of all orders",
+      "value": "46%"
+    },
+    {
+      "label": "Share of revenue",
+      "value": "44%"
+    },
+    {
+      "label": "Share of customer base",
+      "value": "21%"
+    }
+  ],
+  "hero_stat": {
+    "value": "44%",
+    "label": "of revenue comes from repeat customers"
+  },
+  "narration": "The chart shows how much weight repeat customers pull. They make up just twenty-one percent of a typical store's customer base, yet they generate forty-four percent of revenue and forty-six percent of all orders."
+}

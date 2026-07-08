@@ -1,0 +1,23 @@
+{
+  "title": "Where Coin Sellers Keep the Most",
+  "source": "GoldSilver (2026)",
+  "bars": [
+    {
+      "label": "Online bullion dealer",
+      "value": "95%"
+    },
+    {
+      "label": "Local coin shop",
+      "value": "85%"
+    },
+    {
+      "label": "Pawn shop, often below",
+      "value": "50%"
+    }
+  ],
+  "hero_stat": {
+    "value": "95%",
+    "label": "of spot paid by online bullion dealers"
+  },
+  "narration": "The chart compares what coin sellers keep at each venue. Online bullion dealers commonly pay around ninety-five percent of spot for recognizable coins. Local coin shops offer close to eighty-five percent after their margin. Pawn shops frequently come in under fifty percent of the metal value."
+}

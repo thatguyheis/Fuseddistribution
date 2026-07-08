@@ -404,6 +404,17 @@ Every post needs a topic contract before drafting. This prevents the failure mod
 Custom graphics count: chart-wrap, stat-row, math-box, coin-grid, watch-list.
 Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 
+**Chart-first rule (added 2026-07-08):** the preferred custom graphic is a data
+chart (`chart-wrap`), because the reel pipeline animates it. To make this possible,
+every draft MUST include **at least 3 comparable, same-unit, sourced statistics**
+(all %, all $, or all plain numbers) in the body — this is a writing requirement,
+not a nice-to-have. The T8b chart stage (§6) then produces the body chart, the
+hero mini-chart, and the `## chart` section in `reel-data.md` that the reel render
+animates (REEL-SOP: chart segment is REQUIRED when `## chart` exists). Only when a
+topic genuinely has no comparable numbers may the post fall back to another custom
+graphic (stat-row, math-box, coin-grid, watch-list) — and the reel then ships
+without a chart segment. A post with zero custom graphics is a QA failure.
+
 **Workflow:**
 1. Decide how many Pexels photos (1–4, leaving room for at least 1 graphic within the 5-total cap)
 2. Write a 5–7 word search query per photo, specific to that paragraph's content

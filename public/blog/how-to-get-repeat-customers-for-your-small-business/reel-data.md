@@ -31,6 +31,14 @@ hook_type: contrarian_stat
   text: DOESN'T PHONE CALL YOU'RE
   narration: If it doesn't get a phone call, you're missing something simple. If you want people to call you, you gotta show up where they're looking. contact Stop wasting money on website fluff that doesn't get calls. Click here to see exactly how we get local businesses found on Google.
 
+## chart
+title: Repeat Customers Punch Above Their Weight
+bars:
+  - Share of all orders: 46%
+  - Share of revenue: 44%
+  - Share of customer base: 21%
+narration: The chart shows how much weight repeat customers pull. They make up just twenty-one percent of a typical store's customer base, yet they generate forty-four percent of revenue and forty-six percent of all orders.
+
 ## question
 text: So, what’s one thing you’ll tackle first to boost local?
 subtext: COMMENT BELOW

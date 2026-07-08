@@ -1,14 +1,27 @@
 {
   "slug": "how-to-build-an-email-list-for-your-local-business",
   "keyword": "how to build an email list for your local business",
-  "angle": "Legacy citation allowlist backfilled during 2026-07-08 uncited-citation audit; sources correspond to the article's existing Sources section / inline citations.",
+  "angle": "",
   "secondary_kw": [],
   "stats": [
     {
-      "claim": "cited in article body (audited 2026-07-08)",
-      "value": "",
-      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
-      "source_name": "BrightLocal"
+      "claim": "Welcome emails average 82% open rate",
+      "value": "82%",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "GetResponse Welcome Email Report 2026"
+    },
+    {
+      "claim": "Average open rate across all industries is 21.5%",
+      "value": "21.5%",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "Mailchimp Benchmarks 2026"
+    },
+    {
+      "claim": "75% of marketers use at least one form of email automation",
+      "value": "75%",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "Searchlab"
     }
-  ]
+  ],
+  "retrofit_date": "2026-07-08"
 }

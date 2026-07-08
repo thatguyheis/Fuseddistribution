@@ -1,14 +1,27 @@
 {
   "slug": "how-to-get-repeat-customers-for-your-small-business",
   "keyword": "how to get repeat customers for your small business",
-  "angle": "Legacy citation allowlist backfilled during 2026-07-08 uncited-citation audit; sources correspond to the article's existing Sources section / inline citations.",
+  "angle": "",
   "secondary_kw": [],
   "stats": [
     {
-      "claim": "cited in article body (audited 2026-07-08)",
-      "value": "",
-      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
-      "source_name": "BrightLocal"
+      "claim": "Repeat customers are 21% of customer base",
+      "value": "21%",
+      "source_url": "https://www.ringly.io/blog/customer-retention-statistics-2026",
+      "source_name": "Gorgias via Ringly"
+    },
+    {
+      "claim": "Repeat customers generate 44% of revenue",
+      "value": "44%",
+      "source_url": "https://www.ringly.io/blog/customer-retention-statistics-2026",
+      "source_name": "Gorgias via Ringly"
+    },
+    {
+      "claim": "Repeat customers generate 46% of orders",
+      "value": "46%",
+      "source_url": "https://www.ringly.io/blog/customer-retention-statistics-2026",
+      "source_name": "Gorgias via Ringly"
     }
-  ]
+  ],
+  "retrofit_date": "2026-07-08"
 }

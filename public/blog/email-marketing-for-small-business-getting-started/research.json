@@ -1,14 +1,33 @@
 {
   "slug": "email-marketing-for-small-business-getting-started",
   "keyword": "email marketing for small business getting started",
-  "angle": "Legacy citation allowlist backfilled during 2026-07-08 uncited-citation audit; sources correspond to the article's existing Sources section / inline citations.",
+  "angle": "",
   "secondary_kw": [],
   "stats": [
     {
-      "claim": "cited in article body (audited 2026-07-08)",
-      "value": "",
-      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
-      "source_name": "BrightLocal"
+      "claim": "Email marketing returns $42 per $1 spent",
+      "value": "$42",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "Litmus 2026"
+    },
+    {
+      "claim": "Social media returns $10 per $1 spent",
+      "value": "$10",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "HubSpot State of Marketing 2026"
+    },
+    {
+      "claim": "Paid search returns $8 per $1 spent",
+      "value": "$8",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "HubSpot State of Marketing 2026"
+    },
+    {
+      "claim": "Display ads return $5 per $1 spent",
+      "value": "$5",
+      "source_url": "https://searchlab.nl/en/statistics/email-marketing-statistics-2026",
+      "source_name": "HubSpot State of Marketing 2026"
     }
-  ]
+  ],
+  "retrofit_date": "2026-07-08"
 }

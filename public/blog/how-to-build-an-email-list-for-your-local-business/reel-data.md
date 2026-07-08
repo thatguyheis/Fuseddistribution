@@ -34,6 +34,14 @@ hook_type: contrarian_stat
   text: HELP OPTIMIZE GBP BUILD
   narration: We’ll help you optimize your GBP, build a simple, effective website, and implement a strategy to attract more local customers. Ready to stop guessing and start getting calls?
 
+## chart
+title: Email Benchmarks Worth Knowing
+bars:
+  - Welcome email open rate: 82%
+  - Marketers using email automation: 75%
+  - Average open rate, all industries: 21.5%
+narration: The chart shows why the first email matters most. Welcome emails open at eighty-two percent, nearly four times the twenty-one and a half percent average across all industries. Seventy-five percent of marketers already automate at least one email, so a welcome message is table stakes.
+
 ## question
 text: So, which of these simple steps are you most excited?
 subtext: COMMENT BELOW

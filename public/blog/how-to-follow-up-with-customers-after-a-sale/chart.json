@@ -1,0 +1,23 @@
+{
+  "title": "Why Follow-Up Pays",
+  "source": "Invesp; Bain & Company (2026)",
+  "bars": [
+    {
+      "label": "Odds of selling to existing customer",
+      "value": "70%"
+    },
+    {
+      "label": "Extra spend from existing customers",
+      "value": "67%"
+    },
+    {
+      "label": "Odds of selling to new prospect",
+      "value": "20%"
+    }
+  ],
+  "hero_stat": {
+    "value": "67%",
+    "label": "more spent by existing customers"
+  },
+  "narration": "The chart shows why follow-up pays. The probability of selling to an existing customer runs as high as seventy percent, while a brand new prospect converts at twenty percent at best. Existing customers also spend sixty-seven percent more on average than new ones."
+}

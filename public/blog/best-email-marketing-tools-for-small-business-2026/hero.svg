@@ -7,9 +7,18 @@
   <circle cx="600" cy="315" r="170.10000000000002" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
   <circle cx="757" cy="285" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="365" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="445" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="525" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="55" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="135" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="215" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="295" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="375" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="455" r="1.5" fill="#4dffb8" opacity="0.19"/>
   <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>
-  <text x="600" y="236" font-family="Impact, Haettenschweiler, sans-serif" font-size="64" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BEST EMAIL MARKETING</text>
-  <text x="600" y="308" font-family="Impact, Haettenschweiler, sans-serif" font-size="64" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">TOOLS FOR SMALL</text>
-  <text x="600" y="380" font-family="Impact, Haettenschweiler, sans-serif" font-size="64" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BUSINESS 2026</text>
-  <text x="600" y="470" font-family="Impact, sans-serif" font-size="84" fill="#58d6ff" text-anchor="middle">60%</text>
-  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="rgba(175,198,207,0.75)" text-anchor="middle">MORE LIKELY TO BE</text>
+  <text x="600" y="190" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BEST EMAIL MARKETING</text>
+  <text x="600" y="258" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">TOOLS FOR SMALL</text>
+  <text x="600" y="326" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BUSINESS 2026</text>
+  <text x="340" y="410" font-family="Arial, sans-serif" font-size="17" fill="#58d6ff" letter-spacing="3">STARTING PAID PLAN, PER MONTH</text>
+  <linearGradient id="hbar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#58d6ff"/><stop offset="100%" stop-color="#4dffb8"/></linearGradient>
+  <text x="340" y="438" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">GETRESPONSE</text>
+  <rect x="340" y="446" width="430" height="16" rx="4" fill="url(#hbar)" opacity="1"/>
+  <text x="780" y="460" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">$19</text>
+  <text x="340" y="494" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">MAILCHIMP ESSENTIALS</text>
+  <rect x="340" y="502" width="294" height="16" rx="4" fill="url(#hbar)" opacity="0.55"/>
+  <text x="644" y="516" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">$13</text>
+  <text x="340" y="550" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">CONSTANT CONTACT LITE</text>
+  <rect x="340" y="558" width="272" height="16" rx="4" fill="url(#hbar)" opacity="0.3"/>
+  <text x="622" y="572" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">$12</text>
 </svg>

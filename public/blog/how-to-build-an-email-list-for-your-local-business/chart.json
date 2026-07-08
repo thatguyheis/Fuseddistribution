@@ -1,0 +1,23 @@
+{
+  "title": "Email Benchmarks Worth Knowing",
+  "source": "GetResponse; Mailchimp (2026)",
+  "bars": [
+    {
+      "label": "Welcome email open rate",
+      "value": "82%"
+    },
+    {
+      "label": "Marketers using email automation",
+      "value": "75%"
+    },
+    {
+      "label": "Average open rate, all industries",
+      "value": "21.5%"
+    }
+  ],
+  "hero_stat": {
+    "value": "82%",
+    "label": "open rate on welcome emails"
+  },
+  "narration": "The chart shows why the first email matters most. Welcome emails open at eighty-two percent, nearly four times the twenty-one and a half percent average across all industries. Seventy-five percent of marketers already automate at least one email, so a welcome message is table stakes."
+}

@@ -31,6 +31,14 @@ hook_type: contrarian_stat
   text: STOP WASTING TIME MARKETING
   narration: Stop wasting time on marketing that doesn’t get calls. See how we get local businesses found on Google, starting with a simple chat at contact link.
 
+## chart
+title: Why Follow-Up Pays
+bars:
+  - Odds of selling to existing customer: 70%
+  - Extra spend from existing customers: 67%
+  - Odds of selling to new prospect: 20%
+narration: The chart shows why follow-up pays. The probability of selling to an existing customer runs as high as seventy percent, while a brand new prospect converts at twenty percent at best. Existing customers also spend sixty-seven percent more on average than new ones.
+
 ## question
 text: How do you think this approach would impact your business’s?
 subtext: COMMENT BELOW

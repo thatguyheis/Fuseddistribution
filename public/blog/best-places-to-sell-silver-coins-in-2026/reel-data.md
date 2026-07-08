@@ -31,6 +31,14 @@ hook_type: contrarian_stat
   text: FUSED DISTRIBUTION REMAINS COMMITTED
   narration: Fused Distribution remains committed to providing our customers with transparent pricing, reliable service, and expert advice. We’ll continue to adapt to the changing market and offer innovative solutions for selling your silver coins. Reserve your silver straightforwardly at our reserve page. Let us help you navigate the world of silver sales and achieve your financial goals.
 
+## chart
+title: Where Coin Sellers Keep the Most
+bars:
+  - Online bullion dealer: 95%
+  - Local coin shop: 85%
+  - Pawn shop, often below: 50%
+narration: The chart compares what coin sellers keep at each venue. Online bullion dealers commonly pay around ninety-five percent of spot for recognizable coins. Local coin shops offer close to eighty-five percent after their margin. Pawn shops frequently come in under fifty percent of the metal value.
+
 ## question
 text: So, which selling channel do you think offers the best?
 subtext: COMMENT BELOW

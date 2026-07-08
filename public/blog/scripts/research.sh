@@ -37,6 +37,7 @@ ${SPOT_CONTEXT:+
 $SPOT_CONTEXT
 }
 Use web search to find 4-6 specific, recent (2025-2026) statistics with real source URLs.
+At least 3 of the stats must be COMPARABLE and SAME-UNIT (all percentages, or all dollar amounts) so a bar chart can be built from them downstream.
 Output ONLY valid JSON (no code fences, no commentary) in exactly this shape:
 {\"slug\":\"$SLUG\",\"keyword\":\"$KEYWORD\",\"angle\":\"one sentence\",\"secondary_kw\":[\"\",\"\"],\"stats\":[{\"claim\":\"\",\"value\":\"42%\",\"source_url\":\"https://...\",\"source_name\":\"\"}]}"
 

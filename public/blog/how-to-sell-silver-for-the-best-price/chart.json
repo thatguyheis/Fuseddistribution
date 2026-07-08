@@ -1,0 +1,23 @@
+{
+  "title": "Typical Payout as a Share of Spot Price",
+  "source": "GoldSilver (2026)",
+  "bars": [
+    {
+      "label": "Online bullion dealer",
+      "value": "95%"
+    },
+    {
+      "label": "Local coin shop",
+      "value": "85%"
+    },
+    {
+      "label": "Pawn shop, often below",
+      "value": "50%"
+    }
+  ],
+  "hero_stat": {
+    "value": "95%",
+    "label": "of spot from reputable bullion dealers"
+  },
+  "narration": "The chart shows what sellers typically keep at each venue. Reputable online bullion dealers pay about ninety-five percent of the spot price. Local coin shops usually land around eighty-five percent once their margin comes out. Pawn shops often pay under fifty percent of the metal value, which makes them a last resort."
+}

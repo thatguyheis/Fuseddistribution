@@ -31,6 +31,14 @@ hook_type: immediate_value
   text: CONSIDER DIVERSIFYING PORTFOLIO REDUCE
   narration: Consider diversifying your portfolio to reduce your overall risk. And remember, silver remains a valuable asset that can provide a hedge against inflation and economic uncertainty. See the straightforward way to build your silver reserve at LINK: /reserve/. Don’t hesitate to contact us with any questions. We’re here to help you navigate the world of precious metals investing. Let’s work together to achieve your financial goals.
 
+## chart
+title: Typical Payout as a Share of Spot Price
+bars:
+  - Online bullion dealer: 95%
+  - Local coin shop: 85%
+  - Pawn shop, often below: 50%
+narration: The chart shows what sellers typically keep at each venue. Reputable online bullion dealers pay about ninety-five percent of the spot price. Local coin shops usually land around eighty-five percent once their margin comes out. Pawn shops often pay under fifty percent of the metal value, which makes them a last resort.
+
 ## question
 text: Considering all these factors, what’s your biggest concern when selling?
 subtext: COMMENT BELOW

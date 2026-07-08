@@ -1,0 +1,27 @@
+{
+  "title": "Starting Paid Plan, Per Month",
+  "source": "Vendor pricing comparisons (2026)",
+  "bars": [
+    {
+      "label": "GetResponse",
+      "value": "$19"
+    },
+    {
+      "label": "Mailchimp Essentials",
+      "value": "$13"
+    },
+    {
+      "label": "Constant Contact Lite",
+      "value": "$12"
+    },
+    {
+      "label": "Brevo starter",
+      "value": "$9"
+    }
+  ],
+  "hero_stat": {
+    "value": "$9",
+    "label": "per month for the cheapest starter plan"
+  },
+  "narration": "The chart compares 2026 starting prices for the major email tools. GetResponse opens at nineteen dollars a month, Mailchimp Essentials at thirteen, Constant Contact Lite at twelve, and Brevo at nine. Brevo charges by emails sent rather than contacts stored, which changes the math for big lists."
+}

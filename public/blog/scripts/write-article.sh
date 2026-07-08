@@ -108,6 +108,7 @@ REQUIREMENTS:
 - H2 headings that deliver on the title promise (no generic headings like "Introduction")
 - Every H2 section must have unique content — no repeated sentences or paragraphs across sections
 - Include at least 3 of the sourced stats above, cited inline
+- Of the stats you include, at least 3 must be COMPARABLE and SAME-UNIT (all percentages, or all dollar amounts) so the automated chart stage can turn them into a bar chart; quote each value exactly as given (no rounding, no reformatting)
 - Never attribute a number, statistic, or claim to a named organization, study, platform, or publication unless it appears in the SOURCED STATS list above; if that list is empty, make no named-source claims at all (no "According to X", no "(Source: X)", no "X data shows")
 - Specific, actionable advice (scripts, numbers, timing, exact steps — not vague guidance)
 - Short sentences, varied length, plain language

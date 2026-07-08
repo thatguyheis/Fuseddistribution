@@ -31,6 +31,15 @@ hook_type: contrarian_stat
   text: CONTACT TODAY FREE CONSULTATION
   narration: Contact us today for a free consultation and let’s build a digital marketing strategy that drives real results for your business. We’ll help you claim your Google Business Profile, optimize it for local search, and create an email marketing campaign that connects you with your ideal customers.
 
+## chart
+title: Return per $1 Spent by Channel
+bars:
+  - Email marketing: $42
+  - Social media: $10
+  - Paid search: $8
+  - Display ads: $5
+narration: The chart compares what each marketing channel returns for every dollar spent. Email marketing leads at forty-two dollars back per dollar. Social media returns about ten dollars, paid search eight, and display ads five. That gap is why a small business should build the list first.
+
 ## question
 text: Considering all these tips, what’s one thing you’d prioritize to?
 subtext: COMMENT BELOW
