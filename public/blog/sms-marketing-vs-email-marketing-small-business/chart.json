@@ -1,0 +1,35 @@
+{
+  "title": "SMS vs Email Engagement for Small Businesses",
+  "source": "Survey Data (2023)",
+  "bars": [
+    {
+      "label": "Text Message Open Rate",
+      "value": "98%"
+    },
+    {
+      "label": "Email Open Rate",
+      "value": "20%"
+    },
+    {
+      "label": "Text Lead Generation Increase",
+      "value": "28%"
+    },
+    {
+      "label": "Cost per Text Lead",
+      "value": "$0.10"
+    },
+    {
+      "label": "Cost per Email Lead",
+      "value": "$0.05"
+    },
+    {
+      "label": "Text Preference",
+      "value": "69%"
+    }
+  ],
+  "hero_stat": {
+    "value": "98%",
+    "label": "Daily Text Message Check Rate"
+  },
+  "narration": "This chart compares the engagement rates of SMS and email marketing for small businesses. A significant majority (98%) of consumers check their text messages daily, while only 20% open emails. Businesses utilizing SMS marketing experienced a 28% increase in lead generation compared to those solely relying on email, with a cost of $0.10 per lead versus $0.05 for email.  69% of consumers prefer promotional messages via text, highlighting the immediacy and directness of SMS."
+}
