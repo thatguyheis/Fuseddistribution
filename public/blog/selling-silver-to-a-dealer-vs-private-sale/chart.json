@@ -1,0 +1,35 @@
+{
+  "title": "Dealer vs. Private Silver Sales: Premium Comparison",
+  "source": "Fused Distribution (2024)",
+  "bars": [
+    {
+      "label": "Dealer Premium (%)",
+      "value": "5% - 15%"
+    },
+    {
+      "label": "Private Sale Premium (%)",
+      "value": "3% - 7%"
+    },
+    {
+      "label": "Dealer Fees (per oz)",
+      "value": "$10"
+    },
+    {
+      "label": "Dealer Fees (per oz)",
+      "value": "$5 - $15"
+    },
+    {
+      "label": "Dealer Premium (99.9% coin)",
+      "value": "7%"
+    },
+    {
+      "label": "Total Dealer Cost (vs. Spot)",
+      "value": "10% - 20%"
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Typical Dealer Premium"
+  },
+  "narration": "This chart compares the typical premium charged by dealers versus the potential premium achievable through a private sale. Dealers generally add a premium of 5% to 15%, with potential fees like assaying and handling costs adding up to $10 per ounce. Private sales can offer a lower premium of 3% to 7%, but require more effort to find a buyer. The total cost of a dealer transaction can easily exceed the spot price by 10% to 20%."
+}

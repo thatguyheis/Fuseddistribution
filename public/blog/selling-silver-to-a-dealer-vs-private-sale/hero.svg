@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#041018"/>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="630" fill="url(#g1)"/><rect width="1200" height="630" fill="url(#g2)"/>
+  <circle cx="600" cy="315" r="252" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170.10000000000002" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="285" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="365" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="445" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="525" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="55" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="135" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="215" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="295" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="375" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="455" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="600" y="214" font-family="Impact, Haettenschweiler, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SELLING SILVER TO A</text>
+  <text x="600" y="294" font-family="Impact, Haettenschweiler, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">DEALER VS PRIVATE SALE</text>
+  <text x="340" y="410" font-family="Arial, sans-serif" font-size="17" fill="#58d6ff" letter-spacing="3">DEALER VS. PRIVATE SILVER SALES: PREMIUM COMPARISON</text>
+  <linearGradient id="hbar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#58d6ff"/><stop offset="100%" stop-color="#4dffb8"/></linearGradient>
+  <text x="340" y="438" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">DEALER FEES (PER OZ)</text>
+  <rect x="340" y="446" width="430" height="16" rx="4" fill="url(#hbar)" opacity="1"/>
+  <text x="780" y="460" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">$10</text>
+  <text x="340" y="494" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">TOTAL DEALER COST (VS. SPOT)</text>
+  <rect x="340" y="502" width="430" height="16" rx="4" fill="url(#hbar)" opacity="0.55"/>
+  <text x="780" y="516" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">10% - 20%</text>
+  <text x="340" y="550" font-family="Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="rgba(175,198,207,0.75)">DEALER PREMIUM (99.9% COIN)</text>
+  <rect x="340" y="558" width="301" height="16" rx="4" fill="url(#hbar)" opacity="0.3"/>
+  <text x="651" y="572" font-family="Impact, sans-serif" font-size="19" fill="#58d6ff">7%</text>
+</svg>
