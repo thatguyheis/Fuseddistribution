@@ -1,0 +1,10 @@
+{
+  "hook": "A 10% premium can cost you $3.",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "5%",
+    "label": "on a per ounce"
+  },
+  "discussion_question": "Considering all these factors, what\u2019s *your* biggest concern when selling your silver?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

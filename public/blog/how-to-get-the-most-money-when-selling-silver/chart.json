@@ -1,0 +1,35 @@
+{
+  "title": "CHART TITLE UNDER 90 CHARS",
+  "source": "Article - 2024",
+  "bars": [
+    {
+      "label": "5% Premium on $30 Coin",
+      "value": "1.50"
+    },
+    {
+      "label": "10% Premium on $30 Coin",
+      "value": "3.00"
+    },
+    {
+      "label": "Cost of $30 Coin",
+      "value": "30.00"
+    },
+    {
+      "label": "Selling Price for $30 Coin",
+      "value": "31.50"
+    },
+    {
+      "label": "Profit with 5% Premium",
+      "value": "2.00"
+    },
+    {
+      "label": "Profit with 10% Premium",
+      "value": "1.50"
+    }
+  ],
+  "hero_stat": {
+    "value": "1.50",
+    "label": "Premium Cost on $30 Coin"
+  },
+  "narration": "This chart illustrates the impact of different premium percentages on the final sale price of a $30 silver coin. A 5% premium adds $1.50 to the cost, while a 10% premium adds $3.00.  Understanding these costs is crucial for maximizing profit when selling silver."
+}

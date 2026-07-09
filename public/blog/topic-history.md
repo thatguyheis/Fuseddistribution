@@ -86,6 +86,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-09 | how-to-get-the-most-money-when-selling-silver | General | how to get the most money when selling silver |
 | 2026-07-09 | selling-silver-to-a-dealer-vs-private-sale | General | selling silver to a dealer vs private sale |
 | 2026-07-08 | best-places-to-sell-silver-coins-in-2026 | General | best places to sell silver coins in 2026 |
 | 2026-07-08 | how-to-sell-silver-for-the-best-price | General | how to sell silver for the best price |
