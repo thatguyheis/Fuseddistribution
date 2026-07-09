@@ -1,0 +1,31 @@
+{
+  "title": "POS Contact Info Chart",
+  "source": "Study 1 (2023)",
+  "bars": [
+    {
+      "label": "68%",
+      "value": "68%"
+    },
+    {
+      "label": "60%",
+      "value": "60%"
+    },
+    {
+      "label": "72%",
+      "value": "72%"
+    },
+    {
+      "label": "47%",
+      "value": "47%"
+    },
+    {
+      "label": "20%",
+      "value": "20%"
+    }
+  ],
+  "hero_stat": {
+    "value": "68%",
+    "label": "Consumer Return Likelihood"
+  },
+  "narration": "This chart highlights key statistics demonstrating the importance of collecting customer contact information at the point of sale.  A significant 68% of consumers are more likely to return to a business if they receive a personalized offer, while 60% of businesses with active data collection experience revenue growth.  Furthermore, 72% are willing to share their information for value, and 47% prefer text updates, showcasing the potential of digital channels."
+}
