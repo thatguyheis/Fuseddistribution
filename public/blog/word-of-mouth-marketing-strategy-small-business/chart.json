@@ -1,0 +1,19 @@
+{
+  "title": "Word-Of-Mouth Marketing ROI",
+  "source": "Research (2023)",
+  "bars": [
+    {
+      "label": "Return on Investment",
+      "value": "$5 to $10"
+    },
+    {
+      "label": "Consumer Trust",
+      "value": "92%"
+    }
+  ],
+  "hero_stat": {
+    "value": "92%",
+    "label": "Consumer Trust in Recommendations"
+  },
+  "narration": "This chart highlights the significant return on investment associated with word-of-mouth marketing \u2013 potentially generating $5 to $10 for every dollar spent. Furthermore, research indicates that a substantial 92% of consumers trust recommendations from friends and family over online advertisements, demonstrating the power of genuine connections in driving business growth."
+}
