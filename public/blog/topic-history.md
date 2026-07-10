@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-10 | customer-referral-program-how-to-start-one | General | customer referral program how to start one |
 | 2026-07-09 | how-to-collect-customer-contact-info-at-point-of-sale | General | how to collect customer contact info at point of sale |
 | 2026-07-09 | sms-marketing-vs-email-marketing-small-business | General | SMS marketing vs email marketing small business |
 | 2026-07-08 | text-message-marketing-for-small-business | General | text message marketing for small business |

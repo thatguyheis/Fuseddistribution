@@ -1,0 +1,19 @@
+{
+  "title": "Referral Program Growth Rate",
+  "source": "Studies show that referral programs generate 2x more qualified leads than traditional advertising",
+  "bars": [
+    {
+      "label": "2x Qualified Leads",
+      "value": "2x"
+    },
+    {
+      "label": "30% Referral Rate",
+      "value": "30%"
+    }
+  ],
+  "hero_stat": {
+    "value": "2x",
+    "label": "Referral Program Effectiveness"
+  },
+  "narration": "This chart highlights the significant advantage of referral programs over traditional advertising, demonstrating that they generate twice as many qualified leads. Furthermore, the article emphasizes a target referral rate of 30%, indicating a key metric for program success."
+}
