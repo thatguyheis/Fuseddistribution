@@ -1,0 +1,35 @@
+{
+  "title": "Silver IRS Reporting Thresholds",
+  "source": "IRS (2023)",
+  "bars": [
+    {
+      "label": "Transaction Threshold - Sale to Dealer",
+      "value": "$10,000"
+    },
+    {
+      "label": "Transaction Threshold - Sale to Individual",
+      "value": "$20,000"
+    },
+    {
+      "label": "Transaction Threshold - Year Total",
+      "value": "20,000"
+    },
+    {
+      "label": "Transaction Threshold - Year Total",
+      "value": "20,000"
+    },
+    {
+      "label": "1099-K Transactions",
+      "value": "30 million"
+    },
+    {
+      "label": "Average Tax Prep Cost",
+      "value": "268"
+    }
+  ],
+  "hero_stat": {
+    "value": "20,000",
+    "label": "Annual Sale Threshold"
+  },
+  "narration": "This chart highlights the key thresholds for reporting silver sales to the IRS.  A sale exceeding $10,000 to a dealer or $20,000 in total sales during a year triggers reporting requirements.  The IRS issued over 30 million 1099-K forms in 2023, and the average cost of tax preparation is $268, emphasizing the importance of accurate record-keeping."
+}
