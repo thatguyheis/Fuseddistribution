@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver IRS reporting requirements what you need to know",
+      "prefer": "video",
+      "updatedAt": "2026-07-10T21:25:55.783Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know investing silver wondering\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver IRS reporting requirements what you need to know investing silver wondering",
+      "prefer": "photo",
+      "updatedAt": "2026-07-10T21:25:55.876Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know rules designed track\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver IRS reporting requirements what you need to know rules designed track",
+      "prefer": "photo",
+      "updatedAt": "2026-07-10T21:25:55.877Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know 1099 silver reports\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know 1099 silver reports",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:25:59.654Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know 30 million businesses\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know 30 million businesses",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:00.404Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know remember irs wants\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know remember irs wants",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:01.935Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know sell silver through\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know sell silver through",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:02.874Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know 1099 report information\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know 1099 report information",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:03.554Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know after buy first\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know after buy first",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:04.315Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know 550 silver taxable\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know 550 silver taxable",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:05.037Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver IRS reporting requirements what you need to know customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRS reporting requirements what you need to know customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T21:26:05.684Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-10T18:35:11.211Z"
+    },
+    "1": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy small business small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-10T18:35:11.314Z"
+    },
+    "2": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business brightly colored banner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy small business brightly colored banner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-10T18:35:11.315Z"
+    },
+    "3": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business 5 to 10\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business 5 to 10",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:13.152Z"
+    },
+    "4": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business 1 trigger set\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business 1 trigger set",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:13.887Z"
+    },
+    "5": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business 2 share ask\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business 2 share ask",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:14.930Z"
+    },
+    "6": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business 10 to 20\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business 10 to 20",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:15.882Z"
+    },
+    "7": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business avoid phrases like\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business avoid phrases like",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:16.980Z"
+    },
+    "8": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business where real word\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business where real word",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:17.955Z"
+    },
+    "9": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business start today focusing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business start today focusing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:19.267Z"
+    },
+    "10": {
+      "key": "{\"query\":\"word of mouth marketing strategy small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-10T18:35:19.982Z"
+    }
+  }
+}
