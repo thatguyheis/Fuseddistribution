@@ -90,6 +90,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-11 | silver-as-money-throughout-history | General | silver as money throughout history |
 | 2026-07-11 | selling-junk-silver-coins-where-and-how | General | selling junk silver coins where and how |
 | 2026-07-10 | silver-irs-reporting-requirements-what-you-need-to-know | General | silver IRS reporting requirements what you need to know |
 | 2026-07-09 | how-to-get-the-most-money-when-selling-silver | General | how to get the most money when selling silver |

@@ -1,0 +1,35 @@
+{
+  "title": "Silver\u2019s Value Over Time: A Historical Perspective",
+  "source": "Fused Distribution (2024)",
+  "bars": [
+    {
+      "label": "1900 Silver Price",
+      "value": "$0.90"
+    },
+    {
+      "label": "Today\u2019s Silver Price",
+      "value": "$24"
+    },
+    {
+      "label": "S&P 500 Annual Return",
+      "value": "10%"
+    },
+    {
+      "label": "Silver Value Increase (100 years)",
+      "value": "266%"
+    },
+    {
+      "label": "Total Silver Mined Value",
+      "value": "$3.7 trillion"
+    },
+    {
+      "label": "Silver\u2019s Share of Precious Metals (Ancient)",
+      "value": "30%"
+    }
+  ],
+  "hero_stat": {
+    "value": "266%",
+    "label": "Silver\u2019s Value Increase (100 years)"
+  },
+  "narration": "This chart illustrates the remarkable increase in silver's value over the past century, significantly outpacing the performance of the S&P 500.  The staggering total value of silver ever mined\u2014over $3.7 trillion\u2014demonstrates its enduring significance as a commodity and a potential investment.  Silver's consistent appreciation, particularly during times of economic uncertainty, provides a compelling alternative to traditional assets."
+}
