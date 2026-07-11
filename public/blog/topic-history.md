@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-11 | online-booking-system-for-small-business-guide | General | online booking system for small business guide |
 | 2026-07-11 | thank-you-card-marketing-for-local-business | General | thank you card marketing for local business |
 | 2026-07-10 | word-of-mouth-marketing-strategy-small-business | General | word of mouth marketing strategy small business |
 | 2026-07-10 | customer-referral-program-how-to-start-one | General | customer referral program how to start one |

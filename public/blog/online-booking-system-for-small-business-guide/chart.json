@@ -1,0 +1,31 @@
+{
+  "title": "Online Booking System Revenue Growth",
+  "source": "Survey (2023)",
+  "bars": [
+    {
+      "label": "Revenue Growth (Systems)",
+      "value": "15%"
+    },
+    {
+      "label": "Consumer Preference",
+      "value": "74%"
+    },
+    {
+      "label": "No-Show Rate",
+      "value": "20%"
+    },
+    {
+      "label": "Annual No-Show Cost",
+      "value": "$26 billion"
+    },
+    {
+      "label": "Review Trust",
+      "value": "92%"
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Average Revenue Growth"
+  },
+  "narration": "This chart highlights key statistics demonstrating the value of implementing an online booking system. Businesses using these systems experience an average 15% higher revenue growth compared to those relying on manual scheduling. A significant 74% of consumers prefer online booking, and a concerning 20% of appointments are missed due to no-shows, costing businesses an estimated $26 billion annually.  Furthermore, 92% of consumers trust online reviews as much as personal recommendations."
+}
