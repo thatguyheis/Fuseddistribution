@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"online booking system for small business guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-11T19:14:24.587Z"
+    },
+    "1": {
+      "key": "{\"query\":\"online booking system for small business guide spending days building\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business guide spending days building",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T19:14:24.674Z"
+    },
+    "2": {
+      "key": "{\"query\":\"online booking system for small business guide 74 consumers prefer\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business guide 74 consumers prefer",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T19:14:24.675Z"
+    },
+    "3": {
+      "key": "{\"query\":\"online booking system for small business guide start something simple\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide start something simple",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:27.438Z"
+    },
+    "4": {
+      "key": "{\"query\":\"online booking system for small business guide 20 appointments missed\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide 20 appointments missed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:28.238Z"
+    },
+    "5": {
+      "key": "{\"query\":\"online booking system for small business guide well configured system\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide well configured system",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:29.281Z"
+    },
+    "6": {
+      "key": "{\"query\":\"online booking system for small business guide many booking systems\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide many booking systems",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:30.193Z"
+    },
+    "7": {
+      "key": "{\"query\":\"online booking system for small business guide keeps setup quick\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide keeps setup quick",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:31.265Z"
+    },
+    "8": {
+      "key": "{\"query\":\"online booking system for small business guide 92 customers consumers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide 92 customers consumers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:32.310Z"
+    },
+    "9": {
+      "key": "{\"query\":\"online booking system for small business guide appointment reminders via\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide appointment reminders via",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:33.221Z"
+    },
+    "10": {
+      "key": "{\"query\":\"online booking system for small business guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T19:14:34.435Z"
+    }
+  }
+}

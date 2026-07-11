@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"selling junk silver coins where and how\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "selling junk silver coins where and how",
+      "prefer": "video",
+      "updatedAt": "2026-07-11T21:37:05.316Z"
+    },
+    "1": {
+      "key": "{\"query\":\"selling junk silver coins where and how sitting pile coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "selling junk silver coins where and how sitting pile coins",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T21:37:05.343Z"
+    },
+    "2": {
+      "key": "{\"query\":\"selling junk silver coins where and how 90 silver key\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "selling junk silver coins where and how 90 silver key",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T21:37:05.344Z"
+    },
+    "3": {
+      "key": "{\"query\":\"selling junk silver coins where and how 10 silver where\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how 10 silver where",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:06.483Z"
+    },
+    "4": {
+      "key": "{\"query\":\"selling junk silver coins where and how however dealer premiums\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how however dealer premiums",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:07.092Z"
+    },
+    "5": {
+      "key": "{\"query\":\"selling junk silver coins where and how 10 spot price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how 10 spot price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:08.191Z"
+    },
+    "6": {
+      "key": "{\"query\":\"selling junk silver coins where and how contact dealers reach\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how contact dealers reach",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:08.852Z"
+    },
+    "7": {
+      "key": "{\"query\":\"selling junk silver coins where and how 110 value cover\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how 110 value cover",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:09.493Z"
+    },
+    "8": {
+      "key": "{\"query\":\"selling junk silver coins where and how 12 spot price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how 12 spot price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:10.507Z"
+    },
+    "9": {
+      "key": "{\"query\":\"selling junk silver coins where and how continue adapt our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how continue adapt our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:11.814Z"
+    },
+    "10": {
+      "key": "{\"query\":\"selling junk silver coins where and how customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "selling junk silver coins where and how customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:37:12.455Z"
+    }
+  }
+}

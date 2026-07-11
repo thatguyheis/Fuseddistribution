@@ -1,0 +1,53 @@
+{
+  "slug": "selling-junk-silver-coins-where-and-how",
+  "renderedAt": "2026-07-11T21:44:21.983Z",
+  "hookType": "stat",
+  "segmentCount": 11,
+  "scriptDuration": 177.885,
+  "renderedDuration": 172.48,
+  "scriptHash": "089aa371cdb5375d177fb402bb79e823e4f3c2692eff27ed7e98521748435948",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -7.9,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.031335021402162974
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.68,
+      "1": 15.36,
+      "2": 17.24,
+      "3": 21.2,
+      "4": 21.64,
+      "5": 18.52,
+      "6": 19.08,
+      "7": 20,
+      "8": 19.96,
+      "9": 7.92,
+      "10": 5.32
+    },
+    "totalNarrationSeconds": 169.92
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

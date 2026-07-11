@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver as money throughout history\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver as money throughout history",
+      "prefer": "video",
+      "updatedAt": "2026-07-11T21:04:51.741Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver as money throughout history looking reliable store\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver as money throughout history looking reliable store",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T21:04:51.777Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver as money throughout history let explore how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver as money throughout history let explore how",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T21:04:51.778Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver as money throughout history 30 silver total\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history 30 silver total",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:53.121Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver as money throughout history 14 silver centuries\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history 14 silver centuries",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:54.663Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver as money throughout history vast quantities silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history vast quantities silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:55.387Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver as money throughout history 500 years silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history 500 years silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:56.157Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver as money throughout history 1870 to 1914\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history 1870 to 1914",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:57.453Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver as money throughout history during periods rising\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history during periods rising",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:58.015Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver as money throughout history ready take control\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history ready take control",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:58.596Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver as money throughout history customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver as money throughout history customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T21:04:59.464Z"
+    }
+  }
+}

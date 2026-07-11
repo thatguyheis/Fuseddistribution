@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"thank you card marketing for local business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "thank you card marketing for local business",
+      "prefer": "video",
+      "updatedAt": "2026-07-11T20:33:03.209Z"
+    },
+    "1": {
+      "key": "{\"query\":\"thank you card marketing for local business tired pouring money\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "thank you card marketing for local business tired pouring money",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T20:33:03.244Z"
+    },
+    "2": {
+      "key": "{\"query\":\"thank you card marketing for local business let dive how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "thank you card marketing for local business let dive how",
+      "prefer": "photo",
+      "updatedAt": "2026-07-11T20:33:03.245Z"
+    },
+    "3": {
+      "key": "{\"query\":\"thank you card marketing for local business 35 customers likely\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business 35 customers likely",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:08.553Z"
+    },
+    "4": {
+      "key": "{\"query\":\"thank you card marketing for local business happy work leaving\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business happy work leaving",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:09.108Z"
+    },
+    "5": {
+      "key": "{\"query\":\"thank you card marketing for local business something like thank\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business something like thank",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:09.956Z"
+    },
+    "6": {
+      "key": "{\"query\":\"thank you card marketing for local business offer helpful resource\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business offer helpful resource",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:10.696Z"
+    },
+    "7": {
+      "key": "{\"query\":\"thank you card marketing for local business tool carefully designed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business tool carefully designed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:11.354Z"
+    },
+    "8": {
+      "key": "{\"query\":\"thank you card marketing for local business thank card say\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business thank card say",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:12.285Z"
+    },
+    "9": {
+      "key": "{\"query\":\"thank you card marketing for local business maybe link book\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business maybe link book",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:12.993Z"
+    },
+    "10": {
+      "key": "{\"query\":\"thank you card marketing for local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "thank you card marketing for local business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-11T20:33:13.531Z"
+    }
+  }
+}
