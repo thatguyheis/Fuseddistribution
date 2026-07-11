@@ -1,0 +1,35 @@
+{
+  "title": "Junk Silver Coin Premiums and Volume",
+  "source": "Fused Distribution (2024)",
+  "bars": [
+    {
+      "label": "Dealer Premium Range",
+      "value": "20%"
+    },
+    {
+      "label": "Dealer Premium (Example)",
+      "value": "15%"
+    },
+    {
+      "label": "Transaction Volume",
+      "value": "1500"
+    },
+    {
+      "label": "Premium Offered (Fused)",
+      "value": "12%"
+    },
+    {
+      "label": "Silver Content (Dimes)",
+      "value": "0.77344"
+    },
+    {
+      "label": "Silver Content (Quarters)",
+      "value": "0.36144"
+    }
+  ],
+  "hero_stat": {
+    "value": "12%",
+    "label": "Fused Distribution Premium"
+  },
+  "narration": "This chart highlights key numbers related to selling junk silver coins. The average dealer premium ranges from 10% to 20%, though Fused Distribution offers a competitive 12% premium.  The platform processes an average of 1500 ounces of silver per month, demonstrating its scale and efficiency. These figures illustrate the potential returns and the streamlined process of selling with Fused Distribution."
+}
