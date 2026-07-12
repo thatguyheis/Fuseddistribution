@@ -91,6 +91,6 @@ Narration: Ready to transform your local business with text message marketing? L
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: So, what’s one thing you’d actually want to receive via?
+Text: What is one useful text your customers would want to receive?
 Subtext: COMMENT BELOW
-Narration: So, what’s one thing you’d actually want to receive via? Follow for more practical business tips.
+Narration: What is one useful text your customers would want to receive? Follow for more practical business tips.

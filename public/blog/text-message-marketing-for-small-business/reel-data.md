@@ -41,9 +41,9 @@ bars:
 narration: The chart shows why text beats email for local outreach. Ninety percent of consumers prefer to receive marketing texts once they have opted in, and sixty-eight percent prefer texts from businesses they already use. Compare that to email, where only nine and a half percent of messages get opened and just three percent of those get clicked.
 
 ## question
-text: So, what’s one thing you’d actually want to receive via?
+text: What is one useful text your customers would want to receive?
 subtext: COMMENT BELOW
-narration: So, what’s one thing you’d actually want to receive via? Follow for more practical business tips.
+narration: What is one useful text your customers would want to receive? Follow for more practical business tips.
 
 ## shared
 discussion_question: So, what’s one thing you’d actually want to receive via?

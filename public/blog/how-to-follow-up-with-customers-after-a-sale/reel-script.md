@@ -91,6 +91,6 @@ Narration: Stop wasting time on marketing that doesn’t get calls. See how we g
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: How do you think this approach would impact your business’s?
+Text: How could a simple post-sale follow-up improve your repeat business?
 Subtext: COMMENT BELOW
-Narration: How do you think this approach would impact your business’s? Follow for more practical business tips.
+Narration: How could a simple post-sale follow-up improve your repeat business? Follow for more practical business tips.

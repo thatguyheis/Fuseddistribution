@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"customer referral program how to start one\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "customer referral program how to start one",
+      "prefer": "video",
+      "updatedAt": "2026-07-12T18:41:20.088Z"
+    },
+    "1": {
+      "key": "{\"query\":\"customer referral program how to start one want know how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "customer referral program how to start one want know how",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T18:41:20.120Z"
+    },
+    "2": {
+      "key": "{\"query\":\"customer referral program how to start one fused distribution build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "customer referral program how to start one fused distribution build",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T18:41:20.122Z"
+    },
+    "3": {
+      "key": "{\"query\":\"customer referral program how to start one building trust key\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one building trust key",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:21.417Z"
+    },
+    "4": {
+      "key": "{\"query\":\"customer referral program how to start one crystal clear about\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one crystal clear about",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:22.445Z"
+    },
+    "5": {
+      "key": "{\"query\":\"customer referral program how to start one 30 referral rate\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one 30 referral rate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:23.755Z"
+    },
+    "6": {
+      "key": "{\"query\":\"customer referral program how to start one focusing rewarding most\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one focusing rewarding most",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:24.402Z"
+    },
+    "7": {
+      "key": "{\"query\":\"customer referral program how to start one make referral link\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one make referral link",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:24.973Z"
+    },
+    "8": {
+      "key": "{\"query\":\"customer referral program how to start one about turning customers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one about turning customers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:25.517Z"
+    },
+    "9": {
+      "key": "{\"query\":\"customer referral program how to start one contact today schedule\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one contact today schedule",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:26.899Z"
+    },
+    "10": {
+      "key": "{\"query\":\"customer referral program how to start one customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "customer referral program how to start one customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T18:41:27.658Z"
+    }
+  }
+}

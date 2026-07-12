@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to get the most money when selling silver\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to get the most money when selling silver",
+      "prefer": "video",
+      "updatedAt": "2026-07-12T19:51:40.284Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to get the most money when selling silver want build physical\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to get the most money when selling silver want build physical",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T19:51:40.343Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to get the most money when selling silver 5 ounce silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to get the most money when selling silver 5 ounce silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T19:51:40.344Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to get the most money when selling silver track actual profit\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver track actual profit",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:42.009Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to get the most money when selling silver track actual profit\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver track actual profit",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:42.577Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to get the most money when selling silver number everything else\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver number everything else",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:43.141Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to get the most money when selling silver choosing right path\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver choosing right path",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:43.859Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to get the most money when selling silver number matters most\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver number matters most",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:44.495Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to get the most money when selling silver reserve silver straightforwardly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver reserve silver straightforwardly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:45.386Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to get the most money when selling silver customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to get the most money when selling silver customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T19:51:46.199Z"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"text message marketing for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "text message marketing for small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-12T20:09:28.671Z"
+    },
+    "1": {
+      "key": "{\"query\":\"text message marketing for small business tired website sitting\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "text message marketing for small business tired website sitting",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T20:09:28.703Z"
+    },
+    "2": {
+      "key": "{\"query\":\"text message marketing for small business 150 times day\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "text message marketing for small business 150 times day",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T20:09:28.703Z"
+    },
+    "3": {
+      "key": "{\"query\":\"text message marketing for small business getting people opt\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business getting people opt",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:29.974Z"
+    },
+    "4": {
+      "key": "{\"query\":\"text message marketing for small business connect text messages\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business connect text messages",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:30.757Z"
+    },
+    "5": {
+      "key": "{\"query\":\"text message marketing for small business people annoyed spam\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business people annoyed spam",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:31.409Z"
+    },
+    "6": {
+      "key": "{\"query\":\"text message marketing for small business don yes spam\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business don yes spam",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:32.128Z"
+    },
+    "7": {
+      "key": "{\"query\":\"text message marketing for small business how figure out\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business how figure out",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:32.909Z"
+    },
+    "8": {
+      "key": "{\"query\":\"text message marketing for small business ready transform local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business ready transform local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:34.162Z"
+    },
+    "9": {
+      "key": "{\"query\":\"text message marketing for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "text message marketing for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:09:34.727Z"
+    }
+  }
+}

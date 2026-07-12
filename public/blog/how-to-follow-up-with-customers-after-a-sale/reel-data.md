@@ -40,9 +40,9 @@ bars:
 narration: The chart shows why follow-up pays. The probability of selling to an existing customer runs as high as seventy percent, while a brand new prospect converts at twenty percent at best. Existing customers also spend sixty-seven percent more on average than new ones.
 
 ## question
-text: How do you think this approach would impact your business’s?
+text: How could a simple post-sale follow-up improve your repeat business?
 subtext: COMMENT BELOW
-narration: How do you think this approach would impact your business’s? Follow for more practical business tips.
+narration: How could a simple post-sale follow-up improve your repeat business? Follow for more practical business tips.
 
 ## shared
 discussion_question: How do you think this approach would impact your business’s?

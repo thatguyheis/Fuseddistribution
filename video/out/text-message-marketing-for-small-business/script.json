@@ -1,0 +1,78 @@
+{
+  "slug": "text-message-marketing-for-small-business",
+  "title": "text-message-marketing-for-small-business",
+  "totalDuration": 118.272,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4.2,
+      "text": "90% of consumers prefer text marketing with permission.",
+      "narration": "90 percent of consumers prefer text marketing with permission."
+    },
+    {
+      "type": "overlay",
+      "startSec": 4.2,
+      "endSec": 18.853,
+      "text": "TIRED WEBSITE SITTING IDLE",
+      "narration": "Are you tired of your website sitting idle, collecting dust while potential customers slip through your fingers? You’ve invested time and money into a digital presence, but it’s not translating into calls, appointments, or sales. You’re frustrated because you have a website that just sits there, collecting dust instead of bringing in new customers."
+    },
+    {
+      "type": "stat",
+      "startSec": 18.853,
+      "endSec": 29.533,
+      "text": "150 TIMES DAY ASK THEM",
+      "narration": "They cut through the noise because people check their phones constantly. The average person checks their phone over 150 times a day. Ask them directly if they want to hear from you. That’s how you stay on the right side of the line."
+    },
+    {
+      "type": "overlay",
+      "startSec": 29.533,
+      "endSec": 43.153,
+      "text": "GETTING PEOPLE OPT RECEIVE",
+      "narration": "Getting people to opt-in to receive text messages from you is the foundation of any successful campaign. It’s not about mass texting; it’s about building a targeted list of interested customers. You have to ask them directly if they want to hear from you."
+    },
+    {
+      "type": "overlay",
+      "startSec": 43.153,
+      "endSec": 58.886,
+      "text": "CONNECT TEXT MESSAGES SOFTWARE",
+      "narration": "Connect your text messages to the software you already use for booking or managing your customers. Many popular scheduling platforms like Calendly and Acuity Scheduling offer built-in text message integration. Text a few happy customers about something new. Measure the reply rate, not just how many texts you sent out."
+    },
+    {
+      "type": "overlay",
+      "startSec": 58.886,
+      "endSec": 70.459,
+      "text": "PEOPLE ANNOYED SPAM THEM",
+      "narration": "People get annoyed if you just spam them with sales pitches. Get their number and tell them you want to send them updates. That’s the only way to avoid getting blocked as spam. Offer a quick, helpful tip related to their business."
+    },
+    {
+      "type": "overlay",
+      "startSec": 70.459,
+      "endSec": 83.179,
+      "text": "DON YES SPAM THINK",
+      "narration": "If you don’t get that yes, you’re spam. Think about sending texts for appointment reminders or a quick heads up about a new service. Don’t try to sell everything at once. Maybe it's a reminder about their upcoming service or a small, limited-time deal."
+    },
+    {
+      "type": "overlay",
+      "startSec": 83.179,
+      "endSec": 95.079,
+      "text": "HOW FIGURE OUT WHAT",
+      "narration": "That’s how you figure out what works for your business. If you don’t ask, you’ll get blocked. You need a clear way for them to say yes. That’s the only way to keep your messages in their inbox. Use it for stuff that actually helps."
+    },
+    {
+      "type": "overlay",
+      "startSec": 95.079,
+      "endSec": 111.372,
+      "text": "READY TRANSFORM LOCAL BUSINESS",
+      "narration": "Ready to transform your local business with text message marketing? Let's schedule a quick call to discuss your specific needs and how we can help you build a winning strategy. Click here to book a consultation: {Link to Scheduling Tool}. We’ll help you move beyond just a website and start generating real leads and bookings through the power of text."
+    },
+    {
+      "type": "question",
+      "startSec": 111.372,
+      "endSec": 118.272,
+      "text": "What is one useful text your customers would want to receive?",
+      "narration": "What is one useful text your customers would want to receive? Follow for more practical business tips.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

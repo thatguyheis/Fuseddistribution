@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to follow up with customers after a sale\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to follow up with customers after a sale",
+      "prefer": "video",
+      "updatedAt": "2026-07-12T20:26:33.580Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to follow up with customers after a sale don let end\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to follow up with customers after a sale don let end",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T20:26:33.599Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to follow up with customers after a sale 86 customers willing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to follow up with customers after a sale 86 customers willing",
+      "prefer": "photo",
+      "updatedAt": "2026-07-12T20:26:33.599Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to follow up with customers after a sale consider script hey\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale consider script hey",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:34.410Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to follow up with customers after a sale show actually care\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale show actually care",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:35.146Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to follow up with customers after a sale 24 hours sale\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale 24 hours sale",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:35.821Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to follow up with customers after a sale got haircut suggest\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale got haircut suggest",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:36.513Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to follow up with customers after a sale next don ask\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale next don ask",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:36.977Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to follow up with customers after a sale stop wasting time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale stop wasting time",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:37.558Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to follow up with customers after a sale customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to follow up with customers after a sale customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-12T20:26:38.074Z"
+    }
+  }
+}
