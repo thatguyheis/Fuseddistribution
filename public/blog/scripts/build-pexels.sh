@@ -26,7 +26,7 @@ echo "$OUT" | sed 's/^/  /'
 
 # Parse "pexels-N.jpg — Photo by NAME on Pexels (URL)" -> inject figures
 ATTR=$(echo "$OUT" | grep -oE "pexels-[0-9]+\.jpg — Photo by .* on Pexels" || true)
-[[ -z "$ATTR" ]] && { echo "build-pexels: no photos downloaded — skipping injection" >&2; exit 0; }
+[[ -z "$ATTR" ]] && echo "build-pexels: no new downloads; reusing valid local photos for injection" >&2
 
 HTML="$HTML" KEYWORD="$KEYWORD" N="$N" FETCH_OUT="$OUT" python3 - <<'PY'
 import os, re, html as H

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // posts.json entry — prepend a newest-first entry from meta.json. Idempotent
-// (skips if slug already present). image uses hero.jpg (SOP §2).
+// and refreshes an existing entry after recovery edits. image uses hero.jpg (SOP §2).
 // Usage: node scripts/add-to-posts.mjs --slug=my-slug
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -16,8 +16,6 @@ const meta = JSON.parse(readFileSync(join(BLOG_DIR, slug, "meta.json"), "utf8"))
 const postsPath = join(BLOG_DIR, "posts.json");
 const posts = existsSync(postsPath) ? JSON.parse(readFileSync(postsPath, "utf8")) : [];
 
-if (posts.some((p) => p.slug === slug)) { console.log(`add-to-posts: ${slug} already present — skipping`); process.exit(0); }
-
 let excerpt = (meta.description || "").trim();
 if (excerpt.length > 160) excerpt = excerpt.slice(0, 157).replace(/\s+\S*$/, "") + "...";
 
@@ -26,6 +24,11 @@ const entry = {
   tags: meta.tags || [], author: "Nick",
   image: `/blog/${slug}/hero.jpg`, imageAlt: meta.alt || meta.title,
 };
-posts.unshift(entry);
+const existingIndex = posts.findIndex((post) => post.slug === slug);
+if (existingIndex >= 0) {
+  posts[existingIndex] = entry;
+} else {
+  posts.unshift(entry);
+}
 writeFileSync(postsPath, JSON.stringify(posts, null, 2) + "\n");
-console.log(`add-to-posts: prepended ${slug} (${posts.length} total)`);
+console.log(`add-to-posts: ${existingIndex >= 0 ? "refreshed" : "prepended"} ${slug} (${posts.length} total)`);

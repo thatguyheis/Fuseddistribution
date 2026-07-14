@@ -8,10 +8,16 @@ LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 
 export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
 AUTO_DEPLOY="${BLOG_AUTO_DEPLOY:-0}"
+GIT_SYNC="${BLOG_GIT_SYNC:-0}"
 HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
 CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM
+HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-granite4.1:3b}"
+PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
+VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
+VERIFY_DELAY_SECONDS="${BLOG_VERIFY_DELAY_SECONDS:-15}"
+RUN_DATE_OVERRIDE="${BLOG_RUN_DATE:-}"
+export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM HERMES_LOCAL_MODEL
 
 # ── Retry plist cleanup ────────────────────────────────────────────────────────
 launchctl bootout "gui/$(id -u)/com.nick.daily-blog-reel.retry" 2>/dev/null
@@ -28,7 +34,24 @@ log_rotate() {
 
 probe_session() {
   if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-    "$LOCAL_LLM" "reply ok" >/dev/null 2>&1
+    python3 - "$PROBE_TIMEOUT_SECONDS" "$LOCAL_LLM" <<'PY'
+import subprocess
+import sys
+
+timeout = int(sys.argv[1])
+try:
+    result = subprocess.run(
+        [sys.argv[2], "reply ok"],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        timeout=timeout,
+        check=False,
+    )
+except subprocess.TimeoutExpired:
+    print(f"local model probe timed out after {timeout}s", file=sys.stderr)
+    raise SystemExit(124)
+raise SystemExit(result.returncode)
+PY
     return $?
   fi
   local out
@@ -42,7 +65,7 @@ probe_session() {
 
 schedule_retry() {
   local reset_raw="$1"
-  local sleep_secs=21600
+  local sleep_secs="${2:-21600}"
   if [[ -n "$reset_raw" ]]; then
     local reset_epoch
     reset_epoch=$(date -j -f '%I:%M%p' \
@@ -81,6 +104,11 @@ schedule_retry() {
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>BLOG_AUTO_DEPLOY</key><string>${AUTO_DEPLOY}</string>
+    <key>BLOG_RUN_DATE</key><string>${TODAY}</string>
+    <key>CLAUDE_ENABLED</key><string>${CLAUDE_ENABLED}</string>
+    <key>HERMES_TAKEOVER</key><string>${HERMES_TAKEOVER}</string>
+    <key>LOCAL_LLM</key><string>${LOCAL_LLM}</string>
   </dict>
   <key>SoftResourceLimits</key>
   <dict><key>NumberOfFiles</key><integer>65536</integer></dict>
@@ -104,7 +132,7 @@ write_pending() {
   arr_json="[${arr_json%,}]"
   cat > "$pending_file" <<JSON
 {
-  "date": "$(date +%Y-%m-%d)",
+  "date": "${TODAY:-$(date +%Y-%m-%d)}",
   "remaining": $arr_json,
   "interrupted_at": "$(date -u +%Y-%m-%dT%H:%M:%S)"
 }
@@ -121,6 +149,24 @@ remaining_from() {
     $found && result+=("$s")
   done
   echo "${result[@]}"
+}
+
+verify_live_slug() {
+  local slug="$1"
+  local code="000"
+  local attempt=1
+  while (( attempt <= VERIFY_ATTEMPTS )); do
+    code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$slug/")
+    if [[ "$code" == "200" ]]; then
+      echo "$code"
+      return 0
+    fi
+    echo "VERIFY WAIT: /blog/$slug/ returned $code (attempt $attempt/$VERIFY_ATTEMPTS)" >> "$LOG_FILE"
+    (( attempt < VERIFY_ATTEMPTS )) && sleep "$VERIFY_DELAY_SECONDS"
+    attempt=$(( attempt + 1))
+  done
+  echo "$code"
+  return 1
 }
 
 quarantine_post_dir() {
@@ -162,7 +208,7 @@ fi
 pkill -f "chrome-headless-shell" 2>/dev/null || true
 FD_USED=$(sysctl -n kern.num_files)
 FD_MAX=$(sysctl -n kern.maxfiles)
-if (( FD_USED * 100 / FD_MAX > 80 )); then
+if [[ "$FD_USED" == <-> && "$FD_MAX" == <-> && "$FD_MAX" -gt 0 ]] && (( FD_USED * 100 / FD_MAX > 80 )); then
   echo "WARN: kernel file table at ${FD_USED}/${FD_MAX} (>80%)" | tee -a "$LOG_FILE"
   notify "fd" "kernel file table ${FD_USED}/${FD_MAX}"
 fi
@@ -170,22 +216,37 @@ ulimit -n 65536 2>/dev/null || true
 
 cd "$PROJECT_DIR" || exit 1
 
-TODAY=$(date '+%Y-%m-%d')
+# Checkpoint today's queue before selecting an older pending day. Without this,
+# backlog recovery can consume the only daily launch and silently skip today.
+CALENDAR_TODAY=$(date '+%Y-%m-%d')
+CALENDAR_QUEUE="public/blog/research/${CALENDAR_TODAY}-queue.json"
+CALENDAR_PENDING="public/blog/research/${CALENDAR_TODAY}-pending.json"
+CALENDAR_COMPLETE="public/blog/research/${CALENDAR_TODAY}-complete.json"
+if [[ -f "$CALENDAR_QUEUE" && ! -f "$CALENDAR_PENDING" && ! -f "$CALENDAR_COMPLETE" ]]; then
+  TODAY="$CALENDAR_TODAY"
+  CURRENT_SLUGS=($(python3 -c \
+    "import json; [print(p['slug']) for p in json.load(open('$CALENDAR_QUEUE'))['posts']]" 2>/dev/null))
+  if (( ${#CURRENT_SLUGS[@]} > 0 )); then
+    write_pending "$CALENDAR_PENDING" "${CURRENT_SLUGS[@]}"
+    echo "Recovery: checkpointed today's queue before backlog selection: $CALENDAR_PENDING" >> "$LOG_FILE"
+  fi
+fi
+
+if [[ -n "$RUN_DATE_OVERRIDE" ]]; then
+  TODAY="$RUN_DATE_OVERRIDE"
+else
+  OLDEST_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null | sort | head -1)
+  if [[ -n "$OLDEST_PENDING" ]]; then
+    PENDING_NAME="${OLDEST_PENDING:t:r}"
+    TODAY="${PENDING_NAME%-pending}"
+    echo "Recovery: resuming oldest pending blog date $TODAY" >> "$LOG_FILE"
+  else
+    TODAY=$(date '+%Y-%m-%d')
+  fi
+fi
 QUEUE_FILE="public/blog/research/${TODAY}-queue.json"
 PENDING_FILE="public/blog/research/${TODAY}-pending.json"
-
-# ── Initial session probe ─────────────────────────────────────────────────────
-echo "Probe: checking session availability..." >> "$LOG_FILE"
-PROBE_OUT=$(probe_session 2>&1)
-if [[ $? -ne 0 ]]; then
-  RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
-    | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
-  echo "Session limit at start. Reset: ${RESET_RAW:-unknown}. Scheduling retry." >> "$LOG_FILE"
-  notify "session limit" "Detected before run — retry scheduled"
-  schedule_retry "$RESET_RAW"
-  exit 0
-fi
-echo "Probe: session OK" >> "$LOG_FILE"
+COMPLETE_FILE="public/blog/research/${TODAY}-complete.json"
 
 # ── Build slug list ───────────────────────────────────────────────────────────
 QUEUE_MODE=false
@@ -213,10 +274,48 @@ if [[ -f "$PENDING_FILE" ]]; then
   fi
 fi
 
+# Write recovery state before the first model call. This survives a power loss,
+# where traps and cleanup handlers cannot run.
+if $QUEUE_MODE && (( ${#SLUGS[@]} > 0 )); then
+  write_pending "$PENDING_FILE" "${SLUGS[@]}"
+fi
+
+# ── Initial session probe ─────────────────────────────────────────────────────
+# Deployment recovery does not require model credits. Probe only when at least
+# one queued item still needs content work; completed artifacts must remain
+# deployable while Claude or the local model service is unavailable.
+NEEDS_MODEL=0
+for PROBE_SLUG in "${SLUGS[@]}"; do
+  if [[ ! -f "public/blog/$PROBE_SLUG/index.html" || ! -f "public/blog/$PROBE_SLUG/hero.jpg" ]] \
+     || ! grep -q "\"slug\": \"$PROBE_SLUG\"" public/blog/posts.json 2>/dev/null; then
+    NEEDS_MODEL=1
+    break
+  fi
+done
+if (( NEEDS_MODEL == 1 )); then
+  echo "Probe: checking session availability for blog date $TODAY..." >> "$LOG_FILE"
+  PROBE_OUT=$(probe_session 2>&1)
+  if [[ $? -ne 0 ]]; then
+    RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
+      | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+    echo "Session probe failed at start (${PROBE_OUT:-no detail}). Scheduling retry for $TODAY." >> "$LOG_FILE"
+    notify "session unavailable" "$TODAY preserved; retry scheduled"
+    schedule_retry "$RESET_RAW"
+    exit 0
+  fi
+  echo "Probe: session OK" >> "$LOG_FILE"
+else
+  echo "Probe: skipped; all pending slugs are registered deployment checkpoints" >> "$LOG_FILE"
+fi
+
 # ── Per-post loop ─────────────────────────────────────────────────────────────
 FAILS=0
 DEFERRED=0
+QUALITY_BLOCKED=0
+SYNC_FAILS=0
 BUILT=()
+RETRY_SLUGS=()
+typeset -U RETRY_SLUGS
 
 if ! $QUEUE_MODE && [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
   echo "No queue found and Hermes takeover is active. Skipping old self-directed Claude fallback." >> "$LOG_FILE"
@@ -265,11 +364,35 @@ Do NOT commit, push, deploy, or regenerate the sitemap — shell handles that." 
 fi
 
 for SLUG in "${SLUGS[@]}"; do
+  REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
+  write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
   echo "\n--- Post: $SLUG ---" >> "$LOG_FILE"
 
   # Skip only fully registered posts. Partial QA-failed folders must be rebuilt or blocked.
   if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]]      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
-    echo "SKIP: $SLUG already built and registered" >> "$LOG_FILE"
+    if [[ "$AUTO_DEPLOY" == "1" ]]; then
+      CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
+      if [[ "$CODE" != "200" ]]; then
+        echo "RESUME: $SLUG is registered but not live ($CODE); redeploying checkpointed artifacts" >> "$LOG_FILE"
+        if ! npx wrangler deploy >> "$LOG_FILE" 2>&1; then
+          echo "DEPLOY FAIL: $SLUG retained for retry" >> "$LOG_FILE"
+          FAILS=$(( FAILS + 1 ))
+          RETRY_SLUGS+=("$SLUG")
+          continue
+        fi
+        CODE=$(verify_live_slug "$SLUG")
+      fi
+      if [[ "$CODE" != "200" ]]; then
+        echo "VERIFY FAIL: /blog/$SLUG/ ($CODE) - retained for retry" >> "$LOG_FILE"
+        FAILS=$(( FAILS + 1 ))
+        RETRY_SLUGS+=("$SLUG")
+        continue
+      fi
+      echo "VERIFY PASS: /blog/$SLUG/ (200, recovered)" >> "$LOG_FILE"
+    else
+      echo "SKIP: $SLUG already built and registered" >> "$LOG_FILE"
+      RETRY_SLUGS+=("$SLUG")
+    fi
     BUILT+=("$SLUG")
     continue
   fi
@@ -280,7 +403,7 @@ for SLUG in "${SLUGS[@]}"; do
     REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
     RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
       | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
-    write_pending "$PENDING_FILE" "${REMAINING_SLUGS[@]}"
+    write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
     echo "Session limit before $SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
     notify "session limit" "$SLUG pending — retry scheduled"
     schedule_retry "$RESET_RAW"
@@ -305,6 +428,7 @@ else: print('{}')
   # optional enhancements, assets, qa, posts.json, topic-history.
   POST_TMPOUT=$(mktemp)
   HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+    BLOG_PUBLISH_DATE="$TODAY" \
     public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
@@ -316,7 +440,7 @@ else: print('{}')
     REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
     RESET_RAW=$(grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" "$POST_TMPOUT" \
       | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
-    write_pending "$PENDING_FILE" "${REMAINING_SLUGS[@]}"
+    write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
     echo "Session limit mid-$SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
     notify "session limit" "$SLUG interrupted — retry scheduled"
     schedule_retry "$RESET_RAW"
@@ -332,6 +456,7 @@ else: print('{}')
     echo "DEFERRED: $SLUG — brain-stage outage, left in place for retry." >> "$LOG_FILE"
     notify "qa deferred" "$SLUG — brain QA outage, will retry"
     DEFERRED=$(( DEFERRED + 1 ))
+    RETRY_SLUGS+=("$SLUG")
     continue
   fi
 
@@ -346,18 +471,42 @@ else: print('{}')
     [[ ! -f "$F" ]] && MISSING+=("$F")
   done
   if (( ${#MISSING[@]} > 0 )); then
-    echo "BLOCKED: $SLUG missing required files: ${MISSING[*]} - skipping local commit" >> "$LOG_FILE"
-    notify "publish blocked" "$SLUG: ${#MISSING[@]} required file(s) absent"
+    echo "DEFERRED: $SLUG missing required files: ${MISSING[*]} - artifacts retained for recovery" >> "$LOG_FILE"
+    notify "publish deferred" "$SLUG: ${#MISSING[@]} required file(s) will retry"
     FAILS=$(( FAILS + 1 ))
-    quarantine_post_dir "$SLUG"
+    DEFERRED=$(( DEFERRED + 1 ))
+    RETRY_SLUGS+=("$SLUG")
     continue
   fi
 
   # build-post registers posts.json only after QA passes. If absent, do not publish.
   if ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    # A same-batch internal link can point to a later queue item whose HTML does
+    # not exist yet. This is an ordering dependency, not a content defect. Keep
+    # the post in place and retry it after the rest of the batch has built.
+    if python3 - "$PROJECT_DIR/public/blog/$SLUG/qa.json" "$PROJECT_DIR/public/blog" <<'PY'
+import json, re, sys
+from pathlib import Path
+qa_path, blog_dir = Path(sys.argv[1]), Path(sys.argv[2])
+try:
+    blockers = json.loads(qa_path.read_text()).get("blockers", [])
+except Exception:
+    raise SystemExit(1)
+messages = [b if isinstance(b, str) else str(b.get("description", "")) for b in blockers]
+targets = [re.search(r"link target missing: /blog/([a-z0-9-]+)/", m) for m in messages]
+retryable = bool(messages) and all(targets) and all((blog_dir / m.group(1) / "verified.md").exists() for m in targets)
+raise SystemExit(0 if retryable else 1)
+PY
+    then
+      echo "DEFERRED: $SLUG — same-batch link target is not built yet; retry retained." >> "$LOG_FILE"
+      DEFERRED=$(( DEFERRED + 1 ))
+      RETRY_SLUGS+=("$SLUG")
+      continue
+    fi
     echo "BLOCKED: $SLUG missing from posts.json - QA failed or registration skipped; skipping local commit" >> "$LOG_FILE"
     notify "publish blocked" "$SLUG not in posts.json — QA/registration failed"
     FAILS=$(( FAILS + 1 ))
+    QUALITY_BLOCKED=$(( QUALITY_BLOCKED + 1 ))
     quarantine_post_dir "$SLUG"
     continue
   fi
@@ -376,40 +525,43 @@ else: print('{}')
   if [[ "$AUTO_DEPLOY" != "1" ]]; then
     echo "PUBLISH PENDING: $SLUG committed locally. Hermes/Codex owner must review, push, deploy, and verify live." >> "$LOG_FILE"
     BUILT+=("$SLUG")
+    RETRY_SLUGS+=("$SLUG")
     continue
   fi
 
-  # Push + deploy is opt-in only. Default automation stops at local commit.
-  PUSH_ERR=$(git push origin main 2>&1)
-  if [[ $? -ne 0 ]]; then
-    echo "$PUSH_ERR" >> "$LOG_FILE"
-    if echo "$PUSH_ERR" | grep -qi "secret"; then
-      echo "BLOCKED: GitHub secret scanning. Fix per BLOG-SOP.md §17, then: git push origin main && npx wrangler deploy" >> "$LOG_FILE"
-      notify "push blocked" "secret scanning — see log for scrub recipe"
-    else
-      notify "push failed" "see daily-blog-reel.log"
+  # Website publication is independent of GitHub synchronization. A GitHub
+  # credential outage must not prevent an approved post from reaching the site.
+  if [[ "$GIT_SYNC" == "1" ]]; then
+    PUSH_ERR=$(git push origin main 2>&1)
+    if [[ $? -ne 0 ]]; then
+      echo "$PUSH_ERR" >> "$LOG_FILE"
+      echo "SYNC WARN: GitHub push failed; continuing Cloudflare deployment" >> "$LOG_FILE"
+      notify "source sync failed" "website deploy is continuing; see log"
+      SYNC_FAILS=$(( SYNC_FAILS + 1 ))
     fi
-    FAILS=$(( FAILS + 1 ))
-    continue
+  else
+    echo "SYNC PENDING: local commit retained for Claude review; website deployment continues" >> "$LOG_FILE"
   fi
 
-  npx wrangler deploy >> "$LOG_FILE" 2>&1
-  sleep 45
-
-  CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
+  if ! npx wrangler deploy >> "$LOG_FILE" 2>&1; then
+    echo "DEPLOY FAIL: $SLUG retained for retry" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    RETRY_SLUGS+=("$SLUG")
+    notify "deploy failed" "$SLUG retained for retry"
+    continue
+  fi
+  CODE=$(verify_live_slug "$SLUG")
   if [[ "$CODE" == "200" ]]; then
     echo "VERIFY PASS: /blog/$SLUG/ (200)" >> "$LOG_FILE"
     BUILT+=("$SLUG")
   else
     echo "VERIFY FAIL: /blog/$SLUG/ ($CODE) — NOT LIVE" >> "$LOG_FILE"
     FAILS=$(( FAILS + 1 ))
+    RETRY_SLUGS+=("$SLUG")
     notify "verify fail" "$SLUG returned $CODE"
   fi
 
 done
-
-# ── Cleanup + final summary ────────────────────────────────────────────────────
-rm -f "$PENDING_FILE"
 
 if [[ "$AUTO_DEPLOY" == "1" ]]; then
   LIVE_LOCS=$(curl -s --max-time 20 "https://fuseddistribution.com/sitemap.xml" | grep -c "<loc>")
@@ -419,6 +571,7 @@ if [[ "$AUTO_DEPLOY" == "1" ]]; then
   else
     echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
     FAILS=$(( FAILS + 1 ))
+    RETRY_SLUGS+=("${BUILT[@]}")
   fi
 
   # posts.json content verify — a wrangler deploy can race the file writes and
@@ -447,10 +600,37 @@ if [[ "$AUTO_DEPLOY" == "1" ]]; then
       echo "VERIFY FAIL: posts.json still stale after redeploy + 12 min (live=$LIVE_NEWEST local=$LOCAL_NEWEST)" >> "$LOG_FILE"
       notify "posts.json stale" "blog listing missing new posts — manual check needed"
       FAILS=$(( FAILS + 1 ))
+      RETRY_SLUGS+=("${BUILT[@]}")
     fi
   fi
 else
   echo "AUTO_DEPLOY=0: skipped git push, wrangler deploy, and live sitemap verification." >> "$LOG_FILE"
+fi
+
+# Clear recovery state only after every approved post and the global listing
+# checks are live. QA-blocked posts are terminal and recorded separately.
+if (( ${#RETRY_SLUGS[@]} > 0 )); then
+  write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}"
+  echo "Recovery marker retained: $PENDING_FILE (${#RETRY_SLUGS[@]} retryable)" >> "$LOG_FILE"
+  schedule_retry ""
+else
+  rm -f "$PENDING_FILE"
+  cat > "$COMPLETE_FILE" <<JSON
+{
+  "date": "$TODAY",
+  "completed_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+  "live": ${#BUILT[@]},
+  "quality_blocked": $QUALITY_BLOCKED,
+  "source_sync_warnings": $SYNC_FAILS
+}
+JSON
+  if [[ "$TODAY" != "$CALENDAR_TODAY" && -f "$CALENDAR_PENDING" ]]; then
+    PREVIOUS_TODAY="$TODAY"
+    TODAY="$CALENDAR_TODAY"
+    schedule_retry "" 300
+    TODAY="$PREVIOUS_TODAY"
+    echo "Recovery: current-day follow-up scheduled after completing $PREVIOUS_TODAY" >> "$LOG_FILE"
+  fi
 fi
 
 DEFERRED_NOTE=""

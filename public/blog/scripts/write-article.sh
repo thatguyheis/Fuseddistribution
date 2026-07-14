@@ -17,6 +17,8 @@ if [[ ! -x "$LOCAL_LLM" ]]; then
 fi
 HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
 CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
+ARTICLE_MAX_TOKENS="${HERMES_ARTICLE_MAX_TOKENS:-2200}"
+ARTICLE_TIMEOUT_SECONDS="${HERMES_ARTICLE_TIMEOUT_SECONDS:-900}"
 
 SLUG="" KEYWORD_ARG="" BRAND_ARG=""
 for a in "$@"; do
@@ -75,7 +77,30 @@ fi
 
 run_writer() {
   if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-    HERMES_LOCAL_MAX_TOKENS="${HERMES_ARTICLE_MAX_TOKENS:-4096}" "$LOCAL_LLM" "$(cat)" 2>/dev/null
+    HERMES_LOCAL_MAX_TOKENS="$ARTICLE_MAX_TOKENS" \
+      HERMES_LOCAL_TIMEOUT="$(( ARTICLE_TIMEOUT_SECONDS - 30 ))" \
+      python3 -c '
+import os
+import subprocess
+import sys
+
+helper, timeout = sys.argv[1], int(sys.argv[2])
+prompt = sys.stdin.read()
+try:
+    result = subprocess.run(
+        [helper, prompt],
+        env=os.environ,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+        timeout=timeout,
+        check=False,
+    )
+except subprocess.TimeoutExpired:
+    raise SystemExit(124)
+sys.stdout.write(result.stdout)
+raise SystemExit(result.returncode)
+' "$LOCAL_LLM" "$ARTICLE_TIMEOUT_SECONDS"
   else
     claude -p "$(cat)" --allowedTools "" 2>/dev/null
   fi

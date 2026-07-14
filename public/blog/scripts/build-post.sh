@@ -20,11 +20,11 @@ fi
 HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
 CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
 
-SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0
+SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0 FORCE=0
 for a in "$@"; do case "$a" in
   --brand=*) BRAND="${a#--brand=}";; --keyword=*) KEYWORD="${a#--keyword=}";; --gap=*) GAP="${a#--gap=}";;
-  --degraded) DEGRADED=1;; --*) echo "unknown flag $a">&2; exit 2;; *) SLUG="$a";; esac; done
-[[ -n "$SLUG" && -n "$BRAND" ]] || { echo "usage: build-post.sh <slug> --brand=silver|tech [--keyword=] [--degraded]">&2; exit 2; }
+  --degraded) DEGRADED=1;; --force) FORCE=1;; --*) echo "unknown flag $a">&2; exit 2;; *) SLUG="$a";; esac; done
+[[ -n "$SLUG" && -n "$BRAND" ]] || { echo "usage: build-post.sh <slug> --brand=silver|tech [--keyword=] [--degraded] [--force]">&2; exit 2; }
 KEYWORD="${KEYWORD:-$(echo "$SLUG" | tr '-' ' ')}"
 DIR="$BLOG_DIR/$SLUG"; mkdir -p "$DIR"
 log(){ echo "[build-post:$SLUG] $*"; }
@@ -52,19 +52,24 @@ fi
 
 # ── T5 write (local Phi-4 first in Hermes takeover, otherwise Claude) or degraded copy ──
 if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-  log "T5 write via local Phi-4"
-  HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
-    "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
-  WRC=${PIPESTATUS[0]}
-  case "$WRC" in
-    0) mark write-local;;
-    4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
-    *) if [[ ! -s "$DIR/verified.md" ]]; then
-         log "T5 local write DEFERRED -> exit $WRC with no usable article. Keep for retry."
-         mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0
-       fi
-       log "local write lint-failed (verified.md written, continue)"; mark write-warn;;
-  esac
+  if [[ $FORCE -eq 0 && -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
+    log "T5 local write: verified.md exists and lint passes — resuming downstream stages"
+    mark write-local-resume
+  else
+    log "T5 write via local model"
+    HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+      "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+    WRC=${PIPESTATUS[0]}
+    case "$WRC" in
+      0) mark write-local;;
+      4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
+      *) if [[ ! -s "$DIR/verified.md" ]]; then
+           log "T5 local write DEFERRED -> exit $WRC with no usable article. Keep for retry."
+           mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0
+         fi
+         log "local write lint-failed (verified.md written, continue)"; mark write-warn;;
+    esac
+  fi
 elif [[ $CLAUDE_OK -eq 1 ]]; then
   log "T5 write"
   # Skip if verified.md already exists and passes lint (e.g. pre-written by a manual run)
@@ -100,7 +105,7 @@ fi
 [[ -s "$DIR/verified.md" ]] || { log "FATAL: no verified.md"; exit 1; }
 
 # ── meta.json (derive if absent) ──
-if [[ ! -f "$DIR/meta.json" ]]; then
+if [[ $FORCE -eq 1 || ! -f "$DIR/meta.json" ]]; then
   log "meta.json: deriving"
   TITLE=$(grep -m1 '^# ' "$DIR/verified.md" | sed 's/^# *//' | sed 's/^GEMMA DRAFT[[:space:]]*—[[:space:]]*//' | tr -d '\r')
   [[ -z "$TITLE" ]] && TITLE=$(echo "$KEYWORD" | sed 's/.*/\u&/')
@@ -111,6 +116,7 @@ if [[ ! -f "$DIR/meta.json" ]]; then
 import json, os, datetime, re
 def clean(s, fallback):
     s = re.sub(r"\*+", "", s)                       # strip markdown bold/italic
+    s = re.sub(r"\s*[–—]\s*", " - ", s)            # keep metadata inside the deterministic style gate
     s = re.sub(r"(?i)option\s*\d+\s*\([^)]*\)\s*:?", "", s)  # strip "Option N (...):"
     s = re.sub(r"(?i)\b(here( is|s)|sure|alt text|option)\b[: ]*", "", s)
     s = re.sub(r"\.\s*\d.*$", ".", s)               # drop trailing ".2 (F" style junk
@@ -122,7 +128,7 @@ title = os.environ["TITLE"]
 d = {"title":title, "slug":os.environ["SLUG"],
      "description":clean(os.environ["DESC"], title),
      "alt":clean(os.environ["ALT"], title),
-     "date":datetime.date.today().isoformat(),
+     "date":os.environ.get("BLOG_PUBLISH_DATE") or datetime.date.today().isoformat(),
      "tags":[os.environ["T1"], os.environ["T2"]], "brand":os.environ["BRAND"]}
 json.dump(d, open(os.path.join(os.environ["BLOGDIR"], os.environ["SLUG"], "meta.json"), "w"), indent=2)
 '
@@ -133,7 +139,12 @@ mark meta
 log "internal links"; node "$SD/build-links.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && mark links || log "links failed (continue)"
 
 # ── T6 hooks (gemma) ──
-log "T6 hooks"; "$SD/build-hooks.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' >/dev/null && mark hooks || log "hooks failed"
+if [[ $FORCE -eq 0 ]] && jq -e '.hook and .discussion_question and .hashtags' "$DIR/hooks.json" >/dev/null 2>&1; then
+  log "T6 hooks: valid checkpoint exists — resuming"
+  mark hooks-resume
+else
+  log "T6 hooks"; "$SD/build-hooks.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' >/dev/null && mark hooks || log "hooks failed"
+fi
 
 # ── T8 svg (deterministic) ──
 log "T8 svg"; node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && mark svg || log "svg failed"
@@ -148,7 +159,13 @@ log "pexels"; "$SD/build-pexels.sh" "$SLUG" --keyword="$KEYWORD" --brand="$BRAND
 #    hero key_stat sync. Enhancement stage: never blocks publish. Runs before reel
 #    so reel-data picks up the chart, and re-runs svg so the hero gets the mini chart. ──
 log "T8b chart"
-if HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}" CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}" LOCAL_LLM="${LOCAL_LLM:-}" \
+if [[ $FORCE -eq 0 ]] && jq -e 'type == "object" and (has("skipped") or has("type") or has("series"))' "$DIR/chart.json" >/dev/null 2>&1; then
+  log "chart: valid checkpoint exists — resuming"
+  if ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
+    node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed"
+    mark chart-resume
+  fi
+elif HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}" CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}" LOCAL_LLM="${LOCAL_LLM:-}" \
    "$SD/build-chart.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /'; then
   if [[ -f "$DIR/chart.json" ]] && ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
     node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed (hero keeps stat card)"
@@ -164,7 +181,12 @@ fi
 log "T9 reel"; "$SD/build-reel.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /' && mark reel || log "reel failed"
 
 # ── T10 social (gemma) ──
-log "T10 social"; "$SD/build-social.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark social || log "social failed"
+if [[ $FORCE -eq 0 ]] && jq -e --arg slug "$SLUG" '.slug == $slug and (.reel.x | type == "string" and length <= 280) and (.discussion_question | endswith("?"))' "$DIR/social-copy.json" >/dev/null 2>&1; then
+  log "T10 social: valid checkpoint exists — resuming"
+  mark social-resume
+else
+  log "T10 social"; "$SD/build-social.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark social || log "social failed"
+fi
 
 # ── Optional Claude enhancement stages ──
 # These are useful, but they are not production-critical. They can consume plan quota
@@ -240,7 +262,7 @@ fi
 if [[ $PUBLISH_OK -eq 1 ]]; then
   log "posts.json entry"; node "$SD/add-to-posts.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && mark postsjson || log "posts.json failed"
   log "topic-history append"
-  BLOGDIR="$BLOG_DIR" SLUG="$SLUG" BRAND="$BRAND" KEYWORD="$KEYWORD" TODAY="$(date +%F)" python3 - <<'PY' && mark topic-history || log "topic-history failed"
+  BLOGDIR="$BLOG_DIR" SLUG="$SLUG" BRAND="$BRAND" KEYWORD="$KEYWORD" TODAY="${BLOG_PUBLISH_DATE:-$(date +%F)}" python3 - <<'PY' && mark topic-history || log "topic-history failed"
 import os
 bd=os.environ["BLOGDIR"]; slug=os.environ["SLUG"]; brand=os.environ["BRAND"]
 today=os.environ["TODAY"]; kw=os.environ["KEYWORD"]

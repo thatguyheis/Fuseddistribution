@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-14 | google-analytics-for-small-business-what-to-track | General | google analytics for small business what to track |
+| 2026-07-14 | website-analytics-for-local-business-beginner-guide | General | website analytics for local business beginner guide |
 | 2026-07-13 | online-booking-vs-phone-calls-for-appointments | General | online booking vs phone calls for appointments |
 | 2026-07-13 | calendar-booking-link-how-to-add-to-google-business-pro | General | calendar booking link how to add to google business profile |
 | 2026-07-12 | best-appointment-booking-tools-for-small-business-2026 | General | best appointment booking tools for small business 2026 |
@@ -96,6 +98,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-14 | silver-price-all-time-highs-what-drove-them | General | silver price all-time highs what drove them |
 | 2026-07-14 | the-hunt-brothers-silver-squeeze-of-1980 | General | the Hunt Brothers silver squeeze of 1980 |
 | 2026-07-13 | how-inflation-erodes-purchasing-power-and-silver-protec | General | how inflation erodes purchasing power and silver protects it |
 | 2026-07-12 | silver-standard-vs-gold-standard-explained | General | silver standard vs gold standard explained |

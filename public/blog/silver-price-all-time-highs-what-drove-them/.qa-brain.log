@@ -1,0 +1,4 @@
+gemma.sh: prompt ~3365 tok; capping max_tokens 2048 -> 667 to fit 4096 window.
+gemma.sh: empty/error (attempt 1) — retrying
+gemma.sh: empty/error (attempt 2) — retrying
+[qa-gate] attempt 1/1: empty or no-JSON brain output

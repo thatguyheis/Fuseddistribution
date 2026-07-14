@@ -73,6 +73,48 @@ echo $PEXELS_API_KEY
 - [ ] Commit locally only: `git add public/blog/ public/sitemap.xml && git commit -m "feat(blog): [Post Title]"`
 - [ ] Claude reviews the local commit, then pushes, deploys, and verifies live status after approval.
 
+### Automated crash recovery
+
+The 9 AM runner writes `public/blog/research/YYYY-MM-DD-pending.json` before its
+first model call. It also checkpoints the current day's queue before selecting
+an older pending date, so backlog recovery cannot silently consume and skip the
+current day. A later launch resumes the oldest pending date first, writes an
+explicit `YYYY-MM-DD-complete.json` only after every approved slug is live, then
+schedules the checkpointed current day. Do not delete a pending marker to silence
+a failure.
+
+- Use `BLOG_RUN_DATE=YYYY-MM-DD /Users/nick/bin/daily-blog-reel.sh` to replay a
+  specific missed day.
+- Local model probes are bounded by `BLOG_PROBE_TIMEOUT_SECONDS` and a failed
+  probe retains the pending marker. The probe is skipped when all pending slugs
+  are already registered deployment checkpoints, so exhausted model credits or
+  a stopped local model cannot block deployment recovery.
+- Full local article calls are bounded by `HERMES_ARTICLE_TIMEOUT_SECONDS` and
+  sized with `HERMES_ARTICLE_MAX_TOKENS`; timeout or empty output defers the slug
+  with its pending checkpoint intact instead of retrying indefinitely.
+- If a valid but undersized article passes lint and later fails the reel/content
+  completeness gate, rerun `build-post.sh ... --force`. Force mode rebuilds the
+  writer and dependent metadata, hooks, chart, and social checkpoints instead of
+  resuming a stale lint-only checkpoint. Existing Pexels files are reused and
+  reinjected into rebuilt HTML.
+- Retry launch agents must preserve `BLOG_RUN_DATE`, `BLOG_AUTO_DEPLOY`,
+  `HERMES_TAKEOVER`, `CLAUDE_ENABLED`, and `LOCAL_LLM`.
+- A run is complete only when every selected slug is either live and verified,
+  explicitly quality-blocked, or retained in the pending marker for retry.
+- Required-artifact failures such as a missing rendered JPG are infrastructure
+  deferrals, not content failures. Keep the post directory intact and retain the
+  slug in the pending marker; never quarantine it for a renderer outage.
+- Production slug verification uses bounded propagation retries controlled by
+  `BLOG_VERIFY_ATTEMPTS` and `BLOG_VERIFY_DELAY_SECONDS`. A first-check 404 does
+  not mark a successful deployment failed, but an exhausted retry window keeps
+  the slug pending.
+- GitHub synchronization and website deployment are separate outcomes. A GitHub
+  authentication failure is logged as a source-sync warning but must not block
+  Cloudflare deployment of an approved post. Codex does not push; Claude reviews
+  and pushes the local commits.
+- Downstream reel and Buffer jobs must not treat an absent `posts.json` entry as
+  "no work" without checking for an older blog pending marker first.
+
 ---
 
 ## 1. Brand Routing
@@ -711,7 +753,7 @@ git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md 
 git commit -m "feat(blog): [Post Title]"
 ```
 
-**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run does Steps 3–4 automatically: after each local commit it runs `git push origin main`, `npx wrangler deploy`, and curl-verifies each slug returns 200. QA-failed or deferred posts (e.g. Claude brain-stage outage) are still NOT registered and NOT pushed — they stay local for retry.
+**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run deploys each approved local commit with `npx wrangler deploy` and curl-verifies the slug returns 200. Website deployment does not depend on GitHub authentication. Codex leaves Git synchronization pending for Claude review and push. QA-failed posts are terminal quality blocks; deferred or deployment-failed posts remain in the dated pending marker for retry.
 
 To revert to manual review, remove `BLOG_AUTO_DEPLOY` from the plist (or set to `0`) and reload: `launchctl bootout gui/$(id -u)/com.nick.daily-blog-reel && launchctl bootstrap gui/$(id -u) <plist>`. With it off, the run stops after local commit and writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log` for Claude review.
 

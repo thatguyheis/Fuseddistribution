@@ -36,6 +36,7 @@ function validateTextSurface(label, text, blockers) {
   pushIf(/\[SLOT]|\[VERIFY]/i.test(text), blockers, `${label}: leftover placeholder`);
   pushIf(/\[[A-Z][A-Za-z0-9 _-]{2,}\]/.test(text), blockers, `${label}: unreplaced bracket placeholder`);
   pushIf(/\bNote:\s*Replace\b/i.test(text), blockers, `${label}: leftover replacement instruction`);
+  pushIf(/\b(?:REQUIREMENTS:|Output ONLY the markdown article|Claude: apply writing rules|Topic contract is mandatory)\b/i.test(text), blockers, `${label}: model prompt leaked into publishable content`);
   pushIf(/[—–]/.test(text), blockers, `${label}: contains em/en dash`);
   pushIf(/\b(?:19|20|21)\d{3,}\b/.test(text), blockers, `${label}: suspicious malformed year`);
   pushIf(/\b20[3-9]\d\b/.test(text), blockers, `${label}: future year needs manual source check`);
