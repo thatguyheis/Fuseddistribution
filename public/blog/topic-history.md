@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-12 | best-appointment-booking-tools-for-small-business-2026 | General | best appointment booking tools for small business 2026 |
+| 2026-07-12 | how-online-booking-reduces-no-shows | General | how online booking reduces no-shows |
 | 2026-07-11 | online-booking-system-for-small-business-guide | General | online booking system for small business guide |
 | 2026-07-11 | thank-you-card-marketing-for-local-business | General | thank you card marketing for local business |
 | 2026-07-10 | word-of-mouth-marketing-strategy-small-business | General | word of mouth marketing strategy small business |
@@ -92,6 +94,9 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-13 | how-inflation-erodes-purchasing-power-and-silver-protec | General | how inflation erodes purchasing power and silver protects it |
+| 2026-07-12 | silver-standard-vs-gold-standard-explained | General | silver standard vs gold standard explained |
+| 2026-07-12 | why-silver-was-used-as-currency-for-5000-years | General | why silver was used as currency for 5000 years |
 | 2026-07-11 | silver-as-money-throughout-history | General | silver as money throughout history |
 | 2026-07-11 | selling-junk-silver-coins-where-and-how | General | selling junk silver coins where and how |
 | 2026-07-10 | silver-irs-reporting-requirements-what-you-need-to-know | General | silver IRS reporting requirements what you need to know |
