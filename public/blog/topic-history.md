@@ -96,6 +96,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-14 | the-hunt-brothers-silver-squeeze-of-1980 | General | the Hunt Brothers silver squeeze of 1980 |
 | 2026-07-13 | how-inflation-erodes-purchasing-power-and-silver-protec | General | how inflation erodes purchasing power and silver protects it |
 | 2026-07-12 | silver-standard-vs-gold-standard-explained | General | silver standard vs gold standard explained |
 | 2026-07-12 | why-silver-was-used-as-currency-for-5000-years | General | why silver was used as currency for 5000 years |

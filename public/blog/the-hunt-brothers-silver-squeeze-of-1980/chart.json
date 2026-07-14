@@ -1,0 +1,27 @@
+{
+  "title": "Silver Price Surge: 1218% Increase",
+  "source": "Article - 1980 Silver Squeeze",
+  "bars": [
+    {
+      "label": "Initial Silver Price (Jan 29, 1980)",
+      "value": "$3.87"
+    },
+    {
+      "label": "Peak Silver Price (Mar 27, 1980)",
+      "value": "$48.56"
+    },
+    {
+      "label": "Hunt Brothers Purchase",
+      "value": "20 million ounces"
+    },
+    {
+      "label": "NYSE Market Cap (1980)",
+      "value": "$1.2 trillion"
+    }
+  ],
+  "hero_stat": {
+    "value": "1,218%",
+    "label": "Dramatic Price Increase"
+  },
+  "narration": "This chart illustrates the extraordinary price surge of silver during the 1980 Hunt Brothers squeeze. The price skyrocketed from $3.87 to $48.56 in just over two months, representing a massive 1,218% increase. This event highlights the potential impact of concentrated buying pressure and investor psychology on a market, demonstrating the importance of understanding supply and demand dynamics."
+}
