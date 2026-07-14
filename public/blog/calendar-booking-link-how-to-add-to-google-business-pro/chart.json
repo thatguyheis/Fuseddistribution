@@ -1,0 +1,23 @@
+{
+  "title": "Booking Link Conversion Rate",
+  "source": "Article (2024)",
+  "bars": [
+    {
+      "label": "Mobile Booking Rate",
+      "value": "80%"
+    },
+    {
+      "label": "Google Business Profile Views",
+      "value": "150"
+    },
+    {
+      "label": "Website Traffic",
+      "value": "92%"
+    }
+  ],
+  "hero_stat": {
+    "value": "80%",
+    "label": "Mobile Booking Preference"
+  },
+  "narration": "This chart highlights the significant preference for mobile users to book services directly through a booking link\u201480% versus simply calling.  Furthermore, the article emphasizes the importance of Google Business Profile views (150) and website traffic (92%) as key metrics for driving bookings.  These numbers demonstrate the direct impact of a streamlined booking process on customer engagement and conversion."
+}

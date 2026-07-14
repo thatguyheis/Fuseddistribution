@@ -1,0 +1,10 @@
+{
+  "hook": "**80% more likely to book directly.**",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "80%",
+    "label": "more likely to book"
+  },
+  "discussion_question": "Do you think adding a booking link is a worthwhile investment for your business?",
+  "hashtags": "#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign"
+}
