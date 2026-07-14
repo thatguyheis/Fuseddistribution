@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-13 | online-booking-vs-phone-calls-for-appointments | General | online booking vs phone calls for appointments |
 | 2026-07-13 | calendar-booking-link-how-to-add-to-google-business-pro | General | calendar booking link how to add to google business profile |
 | 2026-07-12 | best-appointment-booking-tools-for-small-business-2026 | General | best appointment booking tools for small business 2026 |
 | 2026-07-12 | how-online-booking-reduces-no-shows | General | how online booking reduces no-shows |
