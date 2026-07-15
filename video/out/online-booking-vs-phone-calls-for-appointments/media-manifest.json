@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "online booking vs phone calls for appointments",
+      "prefer": "video",
+      "updatedAt": "2026-07-15T20:27:12.613Z"
+    },
+    "1": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments spending hours answering\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online booking vs phone calls for appointments spending hours answering",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T20:27:12.739Z"
+    },
+    "2": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments creates bottleneck prevents\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online booking vs phone calls for appointments creates bottleneck prevents",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T20:27:12.740Z"
+    },
+    "3": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments require dedicated phone\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments require dedicated phone",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:13.931Z"
+    },
+    "4": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments choose time works\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments choose time works",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:14.791Z"
+    },
+    "5": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments enough simply phone\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments enough simply phone",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:15.743Z"
+    },
+    "6": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments 24 customers see\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments 24 customers see",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:16.574Z"
+    },
+    "7": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments essentially limiting reach\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments essentially limiting reach",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:17.174Z"
+    },
+    "8": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments consider offering free\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments consider offering free",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:18.077Z"
+    },
+    "9": {
+      "key": "{\"query\":\"online booking vs phone calls for appointments customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "online booking vs phone calls for appointments customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T20:27:18.695Z"
+    }
+  }
+}

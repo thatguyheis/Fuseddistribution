@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"google search console for small business explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "google search console for small business explained",
+      "prefer": "video",
+      "updatedAt": "2026-07-15T18:34:43.049Z"
+    },
+    "1": {
+      "key": "{\"query\":\"google search console for small business explained small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google search console for small business explained small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T18:34:43.075Z"
+    },
+    "2": {
+      "key": "{\"query\":\"google search console for small business explained google search console\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google search console for small business explained google search console",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T18:34:43.076Z"
+    },
+    "3": {
+      "key": "{\"query\":\"google search console for small business explained designed help identify\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained designed help identify",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:44.460Z"
+    },
+    "4": {
+      "key": "{\"query\":\"google search console for small business explained sign google search\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained sign google search",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:45.094Z"
+    },
+    "5": {
+      "key": "{\"query\":\"google search console for small business explained offer several verification\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained offer several verification",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:46.441Z"
+    },
+    "6": {
+      "key": "{\"query\":\"google search console for small business explained about plumber near\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained about plumber near",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:47.058Z"
+    },
+    "7": {
+      "key": "{\"query\":\"google search console for small business explained search console isn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained search console isn",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:47.671Z"
+    },
+    "8": {
+      "key": "{\"query\":\"google search console for small business explained even small typo\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained even small typo",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:48.244Z"
+    },
+    "9": {
+      "key": "{\"query\":\"google search console for small business explained monitor performance regularly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained monitor performance regularly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:48.898Z"
+    },
+    "10": {
+      "key": "{\"query\":\"google search console for small business explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "google search console for small business explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T18:34:49.904Z"
+    }
+  }
+}

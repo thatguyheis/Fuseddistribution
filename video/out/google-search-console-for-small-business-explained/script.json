@@ -1,0 +1,85 @@
+{
+  "slug": "google-search-console-for-small-business-explained",
+  "title": "google-search-console-for-small-business-explained",
+  "totalDuration": 199.765,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 5.32,
+      "text": "Google Search Console reveals 90% of local businesses miss crucial search visibility.",
+      "narration": "Google Search Console reveals 90 percent of local businesses miss crucial search visibility."
+    },
+    {
+      "type": "overlay",
+      "startSec": 5.32,
+      "endSec": 22.513,
+      "text": "SMALL BUSINESS OWNER STRUGGLING",
+      "narration": "Are you a small business owner struggling to get found on Google? Most local businesses spend a lot of time and money on marketing without seeing the results they hoped for. The problem isn’t necessarily what you’re doing, but how you’re doing it. You’ve probably set up your Google Business Profile - great! But are you truly leveraging it to its full potential?"
+    },
+    {
+      "type": "overlay",
+      "startSec": 22.513,
+      "endSec": 40.213,
+      "text": "GOOGLE SEARCH CONSOLE GSC",
+      "narration": "Google Search Console (GSC) is a free web-based tool provided by Google that helps you understand how Google sees your website and local business. It’s not a fancy marketing platform, but it’s absolutely critical for local SEO. Think of it as your direct line to Google, giving you insights into your website’s performance in search results."
+    },
+    {
+      "type": "overlay",
+      "startSec": 40.213,
+      "endSec": 58.913,
+      "text": "DESIGNED HELP IDENTIFY FIX",
+      "narration": "It’s designed to help you identify and fix technical issues that might be preventing your business from ranking as high as it could. It’s also a fantastic way to see what people are actually searching for when they’re looking for your type of business. Because simply having a website and a Google Business Profile isn’t enough. Google needs to trust that your information is accurate and up-to-date."
+    },
+    {
+      "type": "overlay",
+      "startSec": 58.913,
+      "endSec": 78.686,
+      "text": "SIGN GOOGLE SEARCH CONSOLE",
+      "narration": "Sign in to Google Search Console: Go to and sign in with the Google account you use for your Google Business Profile. Add Your Property: Click “Add Property.” You’ll have two options: “Website” or “Business Profile.” Choose “Business Profile” and follow the prompts to select your Google Business Profile. Verify Your Property: Google needs to verify that you own the business."
+    },
+    {
+      "type": "overlay",
+      "startSec": 78.686,
+      "endSec": 100.239,
+      "text": "OFFER SEVERAL VERIFICATION METHODS",
+      "narration": "They’ll offer several verification methods, including: Phone Verification: You’ll receive a text message with a verification code. Email Verification: You’ll receive an email with a verification link. Uploading an Image: You’ll need to upload a clear photo of your business signage. Using Google Prompt: If you’ve previously used Google services with your account, Google might automatically prompt you to verify."
+    },
+    {
+      "type": "overlay",
+      "startSec": 100.239,
+      "endSec": 122.039,
+      "text": "ABOUT PLUMBER NEAR SPECIFIC",
+      "narration": "It’s not just about “plumber near me”; it’s about the specific phrases they’re using. For example, if you own a bakery, you might see searches like “best cupcakes downtown,” “custom birthday cakes {Your City},” or “gluten-free bread near me.” This information is invaluable for optimizing your website and Google Business Profile. You can tailor your content to match what people are actually searching for."
+    },
+    {
+      "type": "overlay",
+      "startSec": 122.039,
+      "endSec": 140.739,
+      "text": "SEARCH CONSOLE ISN ABOUT",
+      "narration": "Search Console isn’t just about finding what people are searching for; it’s also about fixing any issues that might be preventing your business from ranking. It’s like a detective, flagging potential problems and giving you the tools to resolve them. Here are some common issues you might find: Incorrect Address: Double-check your address on your website and Google Business Profile."
+    },
+    {
+      "type": "overlay",
+      "startSec": 140.739,
+      "endSec": 162.772,
+      "text": "EVEN SMALL TYPO HURT",
+      "narration": "Even a small typo can hurt your ranking. Missing or Incorrect Phone Number: Make sure your phone number is accurate and prominently displayed. Service Area Issues: Clearly define your service area. Don’t just say “Serving the Tri-State Area” - be specific. Map Pin Issues: Ensure your map pin is accurately placed and shows the correct location. Use Google’s Mobile-Friendly Test to check your site."
+    },
+    {
+      "type": "overlay",
+      "startSec": 162.772,
+      "endSec": 193.745,
+      "text": "MONITOR PERFORMANCE REGULARLY CHECK",
+      "narration": "Monitor Your Performance: Regularly check the “Queries” report to see what people are searching for. Fix Technical Issues: Address any errors flagged by Search Console. Optimize Your Website: Create content that matches the search terms you’re seeing in Search Console. Don’t just guess what gets your local customers. See how we get you found on Google without any of the confusing jargon. We focus on delivering real, actionable results. Ready to take control of your local search visibility? Contact us today for a free consultation!"
+    },
+    {
+      "type": "question",
+      "startSec": 193.745,
+      "endSec": 199.765,
+      "text": "So, are you ready to start seeing more local customers?",
+      "narration": "So, are you ready to start seeing more local customers? Follow for more practical business tips.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

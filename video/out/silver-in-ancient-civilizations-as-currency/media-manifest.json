@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver in ancient civilizations as currency",
+      "prefer": "video",
+      "updatedAt": "2026-07-15T19:49:06.753Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency wondering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver in ancient civilizations as currency wondering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T19:49:06.786Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency these weights often\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver in ancient civilizations as currency these weights often",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T19:49:06.787Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency concept silver medium\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency concept silver medium",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:09.276Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency also use silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency also use silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:10.727Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency precision fostered trust\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency precision fostered trust",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:11.368Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency consistent demand silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency consistent demand silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:12.240Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency 13 5 grams\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency 13 5 grams",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:12.962Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency value silver even\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency value silver even",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:13.628Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency value silver even\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency value silver even",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:14.400Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver in ancient civilizations as currency customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver in ancient civilizations as currency customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T19:49:14.957Z"
+    }
+  }
+}
