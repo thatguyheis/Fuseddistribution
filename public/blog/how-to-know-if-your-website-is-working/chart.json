@@ -1,0 +1,31 @@
+{
+  "title": "Website Performance Metrics",
+  "source": "Fused Distribution (2024)",
+  "bars": [
+    {
+      "label": "Google Business Profile Engagement",
+      "value": "35%"
+    },
+    {
+      "label": "Contact Form Conversion Rate",
+      "value": "15%"
+    },
+    {
+      "label": "Google Reviews Source",
+      "value": "92%"
+    },
+    {
+      "label": "Call Tracking Increase",
+      "value": "92%"
+    },
+    {
+      "label": "Local Ranking Improvement",
+      "value": "92%"
+    }
+  ],
+  "hero_stat": {
+    "value": "92%",
+    "label": "Website Engagement"
+  },
+  "narration": "This chart highlights key metrics demonstrating a website\u2019s effectiveness in driving local business.  Specifically, Google Business Profile engagement has increased by 35% year over year, indicating improved local visibility. Furthermore, a streamlined contact form can boost lead generation by up to 15%, while a consistent 92% of calls originate from website visits. These figures underscore the importance of tracking and optimizing your online presence for tangible results."
+}

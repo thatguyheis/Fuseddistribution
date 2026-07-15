@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-15 | how-to-know-if-your-website-is-working | General | how to know if your website is working |
 | 2026-07-14 | google-analytics-for-small-business-what-to-track | General | google analytics for small business what to track |
 | 2026-07-14 | website-analytics-for-local-business-beginner-guide | General | website analytics for local business beginner guide |
 | 2026-07-13 | online-booking-vs-phone-calls-for-appointments | General | online booking vs phone calls for appointments |
