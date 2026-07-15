@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980",
+      "prefer": "video",
+      "updatedAt": "2026-07-15T04:24:52.445Z"
+    },
+    "1": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 wondering how seemingly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 wondering how seemingly",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T04:24:52.503Z"
+    },
+    "2": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 3 silver ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 3 silver ounce",
+      "prefer": "photo",
+      "updatedAt": "2026-07-15T04:24:52.504Z"
+    },
+    "3": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 rapid escalation caught\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 rapid escalation caught",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:53.998Z"
+    },
+    "4": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 volatility showcased market\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 volatility showcased market",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:54.758Z"
+    },
+    "5": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 3 to 48\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 3 to 48",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:55.664Z"
+    },
+    "6": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 while current market\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 while current market",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:56.426Z"
+    },
+    "7": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 hunt brothers success\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 hunt brothers success",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:57.265Z"
+    },
+    "8": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 1 2 trillion\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 1 2 trillion",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:57.875Z"
+    },
+    "9": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 focusing clear buying\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 focusing clear buying",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:58.554Z"
+    },
+    "10": {
+      "key": "{\"query\":\"the Hunt Brothers silver squeeze of 1980 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "the Hunt Brothers silver squeeze of 1980 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T04:24:59.215Z"
+    }
+  }
+}

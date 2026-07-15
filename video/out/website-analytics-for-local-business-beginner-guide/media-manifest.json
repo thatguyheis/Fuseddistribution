@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"website analytics for local business beginner guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "website analytics for local business beginner guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-15T02:43:19.621Z"
+    },
+    "1": {
+      "key": "{\"query\":\"website analytics for local business beginner guide website analytics tells\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide website analytics tells",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:20.807Z"
+    },
+    "2": {
+      "key": "{\"query\":\"website analytics for local business beginner guide 4 successful request\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide 4 successful request",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:22.786Z"
+    },
+    "3": {
+      "key": "{\"query\":\"website analytics for local business beginner guide also look duplicate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide also look duplicate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:23.882Z"
+    },
+    "4": {
+      "key": "{\"query\":\"website analytics for local business beginner guide traffic acquisition report\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide traffic acquisition report",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:25.076Z"
+    },
+    "5": {
+      "key": "{\"query\":\"website analytics for local business beginner guide 1 business\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide 1 business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:25.787Z"
+    },
+    "6": {
+      "key": "{\"query\":\"website analytics for local business beginner guide test one likely\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide test one likely",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:27.247Z"
+    },
+    "7": {
+      "key": "{\"query\":\"website analytics for local business beginner guide google supports linking\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide google supports linking",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:28.334Z"
+    },
+    "8": {
+      "key": "{\"query\":\"website analytics for local business beginner guide mobile results trail\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide mobile results trail",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:29.276Z"
+    },
+    "9": {
+      "key": "{\"query\":\"website analytics for local business beginner guide best beginner dashboard\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide best beginner dashboard",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:30.807Z"
+    },
+    "10": {
+      "key": "{\"query\":\"website analytics for local business beginner guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "website analytics for local business beginner guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-15T02:43:32.902Z"
+    }
+  }
+}

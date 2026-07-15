@@ -1,0 +1,279 @@
+{
+  "0": [
+    {
+      "text": "A busy website is not always a useful website.",
+      "startSec": 0,
+      "endSec": 2.52
+    }
+  ],
+  "1": [
+    {
+      "text": "Website analytics tells a local business how people find the site, which pages they enter through",
+      "startSec": 0,
+      "endSec": 4.8366391184573
+    },
+    {
+      "text": "and whether they take a useful next step.",
+      "startSec": 4.6866391184572995,
+      "endSec": 6.73099173553719
+    },
+    {
+      "text": "You do not need dozens of reports to begin.",
+      "startSec": 6.73099173553719,
+      "endSec": 8.875068870523416
+    },
+    {
+      "text": "You need a working analytics tag, a small list of customer actions",
+      "startSec": 8.875068870523416,
+      "endSec": 12.165977961432507
+    },
+    {
+      "text": "and a weekly habit of turning one finding into one improvement.",
+      "startSec": 12.165977961432507,
+      "endSec": 15.307300275482094
+    },
+    {
+      "text": "A plumber may want estimate requests and phone calls.",
+      "startSec": 15.307300275482094,
+      "endSec": 18.1
+    }
+  ],
+  "2": [
+    {
+      "text": "Give each important action a clear name.",
+      "startSec": 0,
+      "endSec": 2.3134615384615387
+    },
+    {
+      "text": "In Google Analytics 4, a successful request form can use Google's recommended generatelead event.",
+      "startSec": 2.1634615384615388,
+      "endSec": 7.77360576923077
+    },
+    {
+      "text": "Important events can then be marked as key events so they appear alongside traffic and landing-page data.",
+      "startSec": 7.77360576923077,
+      "endSec": 13.846442307692307
+    },
+    {
+      "text": "Google's guides explain recommended events and how key events work.",
+      "startSec": 13.846442307692307,
+      "endSec": 17.721490384615382
+    },
+    {
+      "text": "Before interpreting any chart, make sure data collection works.",
+      "startSec": 17.721490384615382,
+      "endSec": 21.365192307692304
+    },
+    {
+      "text": "Visit the site from your phone and computer.",
+      "startSec": 21.365192307692304,
+      "endSec": 24.06
+    }
+  ],
+  "3": [
+    {
+      "text": "Also look for duplicate tags",
+      "startSec": 0,
+      "endSec": 1.5728
+    },
+    {
+      "text": "which can inflate counts and make performance appear stronger than it is.",
+      "startSec": 1.4228,
+      "endSec": 5.523314285714285
+    },
+    {
+      "text": "Document who owns the account, property, tag manager container, and website access.",
+      "startSec": 5.523314285714285,
+      "endSec": 10.185542857142856
+    },
+    {
+      "text": "Use individual accounts with appropriate permissions instead of a shared password.",
+      "startSec": 10.185542857142856,
+      "endSec": 14.791599999999999
+    },
+    {
+      "text": "That small step lowers the risk of losing access when an employee or vendor changes.",
+      "startSec": 14.791599999999999,
+      "endSec": 19.66
+    }
+  ],
+  "4": [
+    {
+      "text": "The Traffic acquisition report groups visits from sources such as organic search, paid search",
+      "startSec": 0,
+      "endSec": 5.640353982300884
+    },
+    {
+      "text": "referrals, email, social, and direct traffic.",
+      "startSec": 5.490353982300884,
+      "endSec": 8.219557522123893
+    },
+    {
+      "text": "Google's Traffic acquisition documentation explains that it is session-scoped and can include sessions",
+      "startSec": 8.219557522123893,
+      "endSec": 14.40575221238938
+    },
+    {
+      "text": "engagement, key events, and session key event rate.",
+      "startSec": 14.40575221238938,
+      "endSec": 17.498849557522124
+    },
+    {
+      "text": "Compare sources using both traffic and outcomes.",
+      "startSec": 17.498849557522124,
+      "endSec": 20.56
+    }
+  ],
+  "5": [
+    {
+      "text": "Treat it as a useful bucket, not a complete explanation.",
+      "startSec": 0,
+      "endSec": 3.1139884393063584
+    },
+    {
+      "text": "A landing page is the first page a visitor sees in a session.",
+      "startSec": 2.9639884393063585,
+      "endSec": 6.356011560693641
+    },
+    {
+      "text": "For a local business, it may be the home page, a service page, a location page, or a blog article.",
+      "startSec": 6.356011560693641,
+      "endSec": 11.805491329479768
+    },
+    {
+      "text": "The Google Analytics Landing page report shows sessions and key events by entry page.",
+      "startSec": 11.805491329479768,
+      "endSec": 16.53208092485549
+    },
+    {
+      "text": "Review each important page for four things: 1.",
+      "startSec": 16.53208092485549,
+      "endSec": 19.24
+    }
+  ],
+  "6": [
+    {
+      "text": "Test one likely cause, such as a confusing headline, a hidden call button",
+      "startSec": 0,
+      "endSec": 3.9588461538461543
+    },
+    {
+      "text": "or a form that asks for too much information.",
+      "startSec": 3.8088461538461544,
+      "endSec": 6.2492307692307705
+    },
+    {
+      "text": "Measure the final action and the steps immediately before it.",
+      "startSec": 6.2492307692307705,
+      "endSec": 9.557307692307694
+    },
+    {
+      "text": "For a form, track successful submission rather than a click on the submit button.",
+      "startSec": 9.557307692307694,
+      "endSec": 13.950000000000003
+    },
+    {
+      "text": "A button click can occur even when validation fails.",
+      "startSec": 13.950000000000003,
+      "endSec": 16.92
+    }
+  ],
+  "7": [
+    {
+      "text": "Google supports linking a Business Profile with Google Analytics.",
+      "startSec": 0,
+      "endSec": 3.711879049676026
+    },
+    {
+      "text": "Available shared metrics can include website clicks, calls, directions, messages, bookings, menus",
+      "startSec": 3.561879049676026,
+      "endSec": 9.101144708423327
+    },
+    {
+      "text": "and total interactions.",
+      "startSec": 9.101144708423327,
+      "endSec": 10.414578833693305
+    },
+    {
+      "text": "The official connection guide notes that the data is aggregated and limited to the most recent six months.",
+      "startSec": 10.414578833693305,
+      "endSec": 16.4677969762419
+    },
+    {
+      "text": "Use profile and website data as related signals, not as a perfect person-by-person journey.",
+      "startSec": 16.4677969762419,
+      "endSec": 21.664427645788336
+    },
+    {
+      "text": "A customer may see the profile on one device and visit the site later on another.",
+      "startSec": 21.664427645788336,
+      "endSec": 26.44
+    }
+  ],
+  "8": [
+    {
+      "text": "Mobile results trail desktop: test page speed, tap targets, forms",
+      "startSec": 0,
+      "endSec": 4.065336658354115
+    },
+    {
+      "text": "and phone links on an actual phone.",
+      "startSec": 3.9153366583541147,
+      "endSec": 6.1043640897755616
+    },
+    {
+      "text": "Do not declare a winner from a tiny sample.",
+      "startSec": 6.1043640897755616,
+      "endSec": 8.793740648379053
+    },
+    {
+      "text": "Compare consistent date ranges and account for promotions, holidays, weather",
+      "startSec": 8.793740648379053,
+      "endSec": 13.54705735660848
+    },
+    {
+      "text": "or other events that change local demand.",
+      "startSec": 13.54705735660848,
+      "endSec": 16.11134663341646
+    },
+    {
+      "text": "First, verify that important events still work.",
+      "startSec": 16.11134663341646,
+      "endSec": 19.050897755610972
+    },
+    {
+      "text": "Next, record sessions, key events, session key event rate, top landing pages, and top sources.",
+      "startSec": 19.050897755610972,
+      "endSec": 25.08
+    }
+  ],
+  "9": [
+    {
+      "text": "The best beginner dashboard is the one the business uses.",
+      "startSec": 0,
+      "endSec": 3.245322580645161
+    },
+    {
+      "text": "Keep it tied to calls, appointments, and sales, and collect only the customer data you truly need.",
+      "startSec": 3.095322580645161,
+      "endSec": 8.674999999999999
+    },
+    {
+      "text": "If you want help turning your site into a measurable lead source, contact Fused Distribution.",
+      "startSec": 8.674999999999999,
+      "endSec": 14.12
+    }
+  ],
+  "10": [
+    {
+      "text": "Can you connect your website traffic to the calls and?",
+      "startSec": 0,
+      "endSec": 3.492765957446809
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 3.342765957446809,
+      "endSec": 6.08
+    }
+  ]
+}
