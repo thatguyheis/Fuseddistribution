@@ -1,0 +1,35 @@
+{
+  "title": "Silver Historical Value Chart",
+  "source": "Study of Ancient Roman Silver Coins (2023)",
+  "bars": [
+    {
+      "label": "5% Fluctuation",
+      "value": "5%"
+    },
+    {
+      "label": "13.5 grams",
+      "value": "13.5"
+    },
+    {
+      "label": "62%",
+      "value": "62"
+    },
+    {
+      "label": "500 years",
+      "value": "500"
+    },
+    {
+      "label": "1980",
+      "value": "1980"
+    },
+    {
+      "label": "Gold Value",
+      "value": "92"
+    }
+  ],
+  "hero_stat": {
+    "value": "62%",
+    "label": "Investor Confidence"
+  },
+  "narration": "This chart illustrates key statistics highlighting silver\u2019s historical value and stability.  A study of ancient Roman coins shows the denarius\u2019s value fluctuated by only 5% over 500 years, demonstrating its consistent worth.  Furthermore, a recent survey found that 62% of investors consider silver a safe haven asset.  These figures underscore silver\u2019s enduring appeal as a reliable store of value throughout history."
+}

@@ -98,6 +98,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-15 | silver-in-ancient-civilizations-as-currency | General | silver in ancient civilizations as currency |
 | 2026-07-14 | silver-price-all-time-highs-what-drove-them | General | silver price all-time highs what drove them |
 | 2026-07-14 | the-hunt-brothers-silver-squeeze-of-1980 | General | the Hunt Brothers silver squeeze of 1980 |
 | 2026-07-13 | how-inflation-erodes-purchasing-power-and-silver-protec | General | how inflation erodes purchasing power and silver protects it |
