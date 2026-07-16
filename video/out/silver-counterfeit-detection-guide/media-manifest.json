@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver counterfeit detection guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver counterfeit detection guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-16T19:27:37.111Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver counterfeit detection guide serious about building\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver counterfeit detection guide serious about building",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T19:27:37.567Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver counterfeit detection guide 10 49 grams\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver counterfeit detection guide 10 49 grams",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T19:27:37.567Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver counterfeit detection guide 99 9 inspection\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide 99 9 inspection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:39.407Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver counterfeit detection guide let deeper specifics\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide let deeper specifics",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:40.577Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver counterfeit detection guide counterfeiters don usually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide counterfeiters don usually",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:41.641Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver counterfeit detection guide also scrutinize markings\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide also scrutinize markings",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:42.846Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver counterfeit detection guide see silver ancient\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide see silver ancient",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:44.249Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver counterfeit detection guide before committing purchase\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide before committing purchase",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:45.239Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver counterfeit detection guide american numismatic association\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide american numismatic association",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:46.453Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver counterfeit detection guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver counterfeit detection guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T19:27:47.179Z"
+    }
+  }
+}

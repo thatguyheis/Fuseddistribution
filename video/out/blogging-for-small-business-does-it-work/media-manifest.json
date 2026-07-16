@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"blogging for small business does it work\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "blogging for small business does it work",
+      "prefer": "video",
+      "updatedAt": "2026-07-16T18:21:58.392Z"
+    },
+    "1": {
+      "key": "{\"query\":\"blogging for small business does it work small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "blogging for small business does it work small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T18:21:58.443Z"
+    },
+    "2": {
+      "key": "{\"query\":\"blogging for small business does it work let honest most\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "blogging for small business does it work let honest most",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T18:21:58.444Z"
+    },
+    "3": {
+      "key": "{\"query\":\"blogging for small business does it work about answering specific\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work about answering specific",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:21:59.840Z"
+    },
+    "4": {
+      "key": "{\"query\":\"blogging for small business does it work well written blog\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work well written blog",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:01.006Z"
+    },
+    "5": {
+      "key": "{\"query\":\"blogging for small business does it work steady stream relevant\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work steady stream relevant",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:01.733Z"
+    },
+    "6": {
+      "key": "{\"query\":\"blogging for small business does it work don write generic\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work don write generic",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:02.515Z"
+    },
+    "7": {
+      "key": "{\"query\":\"blogging for small business does it work don caught chasing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work don caught chasing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:03.315Z"
+    },
+    "8": {
+      "key": "{\"query\":\"blogging for small business does it work however blogging offers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work however blogging offers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:04.082Z"
+    },
+    "9": {
+      "key": "{\"query\":\"blogging for small business does it work track results monitor\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work track results monitor",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:04.743Z"
+    },
+    "10": {
+      "key": "{\"query\":\"blogging for small business does it work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "blogging for small business does it work customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:22:05.358Z"
+    }
+  }
+}

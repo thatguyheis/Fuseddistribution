@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"tracking phone calls from your website how to\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "tracking phone calls from your website how to",
+      "prefer": "video",
+      "updatedAt": "2026-07-16T18:50:40.059Z"
+    },
+    "1": {
+      "key": "{\"query\":\"tracking phone calls from your website how to tired beautiful website\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "tracking phone calls from your website how to tired beautiful website",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T18:50:40.110Z"
+    },
+    "2": {
+      "key": "{\"query\":\"tracking phone calls from your website how to people actively search\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "tracking phone calls from your website how to people actively search",
+      "prefer": "photo",
+      "updatedAt": "2026-07-16T18:50:40.111Z"
+    },
+    "3": {
+      "key": "{\"query\":\"tracking phone calls from your website how to setting call notifications\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to setting call notifications",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:41.928Z"
+    },
+    "4": {
+      "key": "{\"query\":\"tracking phone calls from your website how to identifying trigger essential\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to identifying trigger essential",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:42.666Z"
+    },
+    "5": {
+      "key": "{\"query\":\"tracking phone calls from your website how to like having security\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to like having security",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:43.345Z"
+    },
+    "6": {
+      "key": "{\"query\":\"tracking phone calls from your website how to breaks mobile already\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to breaks mobile already",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:44.034Z"
+    },
+    "7": {
+      "key": "{\"query\":\"tracking phone calls from your website how to know exactly what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to know exactly what",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:44.858Z"
+    },
+    "8": {
+      "key": "{\"query\":\"tracking phone calls from your website how to tell form send\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to tell form send",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:45.551Z"
+    },
+    "9": {
+      "key": "{\"query\":\"tracking phone calls from your website how to can t see\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to can t see",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:46.760Z"
+    },
+    "10": {
+      "key": "{\"query\":\"tracking phone calls from your website how to customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "tracking phone calls from your website how to customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-16T18:50:47.842Z"
+    }
+  }
+}
