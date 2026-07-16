@@ -1,0 +1,31 @@
+{
+  "title": "Website Call Tracking Performance",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "60% Mobile Searches",
+      "value": "60%"
+    },
+    {
+      "label": "Google Business Profile Call Notifications",
+      "value": "absolutely critical"
+    },
+    {
+      "label": "Simple Contact Form",
+      "value": "simple"
+    },
+    {
+      "label": "Mobile Tracking Test",
+      "value": "perfectly"
+    },
+    {
+      "label": "Trigger for Tracking",
+      "value": "form submit"
+    }
+  ],
+  "hero_stat": {
+    "value": "60%",
+    "label": "Mobile Search Dominance"
+  },
+  "narration": "This chart highlights key statistics related to tracking phone calls from a website.  A significant 60% of local searches occur on mobile devices, emphasizing the importance of mobile-friendly contact forms. Setting up call notifications within your Google Business Profile is absolutely critical, and using a simple contact form, tested on mobile, is a foundational step.  By understanding these elements, businesses can effectively capture leads generated through their websites."
+}
