@@ -1,0 +1,23 @@
+{
+  "title": "Local Search Engagement",
+  "source": "Article (2023)",
+  "bars": [
+    {
+      "label": "70%",
+      "value": "70%"
+    },
+    {
+      "label": "1-2",
+      "value": "1-2"
+    },
+    {
+      "label": "3",
+      "value": "3"
+    }
+  ],
+  "hero_stat": {
+    "value": "70%",
+    "label": "Local Search Calls"
+  },
+  "narration": "This chart highlights the significant percentage of local searches that result in phone calls (70%), emphasizing the importance of optimizing blog content for voice searches. The article recommends publishing 1-2 high-quality local blog posts per week, and a consistent stream of content to maintain visibility in local search results.  It also suggests tracking calls as the key metric for measuring success."
+}
