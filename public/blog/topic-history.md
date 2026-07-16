@@ -100,6 +100,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-16 | silver-counterfeit-detection-guide | General | silver counterfeit detection guide |
 | 2026-07-16 | how-to-spot-fake-silver-coins-and-bars | General | how to spot fake silver coins and bars |
 | 2026-07-15 | silver-in-ancient-civilizations-as-currency | General | silver in ancient civilizations as currency |
 | 2026-07-14 | silver-price-all-time-highs-what-drove-them | General | silver price all-time highs what drove them |

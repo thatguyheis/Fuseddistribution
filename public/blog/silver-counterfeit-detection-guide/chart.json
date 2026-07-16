@@ -1,0 +1,23 @@
+{
+  "title": "Silver Density Chart",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "10.49 g/cm\u00b3",
+      "value": "10.49"
+    },
+    {
+      "label": "99.9%",
+      "value": "99.9"
+    },
+    {
+      "label": "99.95%",
+      "value": "99.95"
+    }
+  ],
+  "hero_stat": {
+    "value": "10.49",
+    "label": "Standard Silver Density"
+  },
+  "narration": "This chart highlights key figures for silver authenticity. The standard density of genuine silver is 10.49 g/cm\u00b3, a critical factor in density tests.  Furthermore, most silver bars are .999 or .9995 fine, representing 99.9% or 99.95% purity respectively. These figures are essential for verifying the silver's composition."
+}
