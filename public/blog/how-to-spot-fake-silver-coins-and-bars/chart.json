@@ -1,0 +1,31 @@
+{
+  "title": "CHART TITLE UNDER 90 CHARS",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "31.103 grams",
+      "value": "31.103"
+    },
+    {
+      "label": "10.49 grams/cm3",
+      "value": "10.49"
+    },
+    {
+      "label": "99.9%",
+      "value": "99.9"
+    },
+    {
+      "label": "99.99%",
+      "value": "99.99"
+    },
+    {
+      "label": "31.103 grams",
+      "value": "31.103"
+    }
+  ],
+  "hero_stat": {
+    "value": "31.103",
+    "label": "U.S. Silver Eagle Weight"
+  },
+  "narration": "This chart highlights key numeric values used to assess silver authenticity. The standard weight of a U.S. Silver Eagle is 31.103 grams, and the density of genuine silver bars is approximately 10.49 grams per cubic centimeter. These figures are crucial for detecting counterfeit products."
+}
