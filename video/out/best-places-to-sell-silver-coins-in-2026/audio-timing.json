@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "dialogueGapSeconds": 0.2,
+  "finalCardPadSeconds": 0.5,
+  "audioDurations": {
+    "0": 2.84,
+    "1": 17.66,
+    "2": 15.14,
+    "3": 18.38,
+    "4": 15.42,
+    "5": 13.62,
+    "6": 15.54,
+    "7": 18.42,
+    "8": 20.76,
+    "9": 4.76
+  },
+  "totalNarrationSeconds": 142.54
+}

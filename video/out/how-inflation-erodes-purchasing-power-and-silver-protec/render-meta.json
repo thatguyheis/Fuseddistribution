@@ -1,0 +1,52 @@
+{
+  "slug": "how-inflation-erodes-purchasing-power-and-silver-protec",
+  "renderedAt": "2026-07-17T18:44:23.099Z",
+  "hookType": "stat",
+  "segmentCount": 10,
+  "scriptDuration": 198.192,
+  "renderedDuration": 193.322667,
+  "scriptHash": "abc7b6761c52ba43e16ef7200d8b8275518afdd3c77f3847164dd2ce78ec9118",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.12,
+      "1": 20.62,
+      "2": 22.66,
+      "3": 22.14,
+      "4": 21.72,
+      "5": 24.38,
+      "6": 22.52,
+      "7": 22.44,
+      "8": 25.88,
+      "9": 4.48
+    },
+    "totalNarrationSeconds": 190.96
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how inflation erodes purchasing power and silver protects it",
+      "prefer": "video",
+      "updatedAt": "2026-07-17T18:37:16.522Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it inflation stealing money\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how inflation erodes purchasing power and silver protects it inflation stealing money",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:37:16.594Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it 2 today inflation\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how inflation erodes purchasing power and silver protects it 2 today inflation",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:37:16.595Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it 3 1 price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it 3 1 price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:18.018Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it doesn t rely\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it doesn t rely",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:18.587Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it 4 9 price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it 4 9 price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:19.221Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it 500 to 1\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it 500 to 1",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:19.799Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it 6 5 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it 6 5 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:21.583Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it finally store silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it finally store silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:22.207Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how inflation erodes purchasing power and silver protects it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how inflation erodes purchasing power and silver protects it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:37:22.853Z"
+    }
+  }
+}

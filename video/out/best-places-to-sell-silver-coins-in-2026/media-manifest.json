@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "best places to sell silver coins in 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-17T18:56:57.992Z"
+    },
+    "1": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 looking turn silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best places to sell silver coins in 2026 looking turn silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:56:58.170Z"
+    },
+    "2": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 online platforms example\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best places to sell silver coins in 2026 online platforms example",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:56:58.171Z"
+    },
+    "3": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 don rely advertisements\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 don rely advertisements",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:56:59.739Z"
+    },
+    "4": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 evaluating local dealers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 evaluating local dealers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:00.489Z"
+    },
+    "5": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 don simply accept\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 don simply accept",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:01.412Z"
+    },
+    "6": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 some online platforms\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 some online platforms",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:02.602Z"
+    },
+    "7": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 segment collection based\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 segment collection based",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:03.171Z"
+    },
+    "8": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 fused distribution remains\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 fused distribution remains",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:03.935Z"
+    },
+    "9": {
+      "key": "{\"query\":\"best places to sell silver coins in 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "best places to sell silver coins in 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:57:04.995Z"
+    }
+  }
+}

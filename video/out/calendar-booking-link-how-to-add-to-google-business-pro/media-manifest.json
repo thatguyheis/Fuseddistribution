@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "calendar booking link how to add to google business profile",
+      "prefer": "video",
+      "updatedAt": "2026-07-17T18:14:20.967Z"
+    },
+    "1": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile want know how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "calendar booking link how to add to google business profile want know how",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:14:21.038Z"
+    },
+    "2": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile someone ready book\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "calendar booking link how to add to google business profile someone ready book",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T18:14:21.039Z"
+    },
+    "3": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile 80 likely book\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile 80 likely book",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:22.897Z"
+    },
+    "4": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile inconsistency messes how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile inconsistency messes how",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:23.750Z"
+    },
+    "5": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile link site match\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile link site match",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:24.589Z"
+    },
+    "6": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile put website description\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile put website description",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:25.821Z"
+    },
+    "7": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile point straight booking\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile point straight booking",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:26.529Z"
+    },
+    "8": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile make sure profile\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile make sure profile",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:27.212Z"
+    },
+    "9": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile put booking link\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile put booking link",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:27.915Z"
+    },
+    "10": {
+      "key": "{\"query\":\"calendar booking link how to add to google business profile customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "calendar booking link how to add to google business profile customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T18:14:28.580Z"
+    }
+  }
+}

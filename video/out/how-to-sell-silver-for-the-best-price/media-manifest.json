@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to sell silver for the best price\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to sell silver for the best price",
+      "prefer": "video",
+      "updatedAt": "2026-07-17T19:15:27.000Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to sell silver for the best price want know exactly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to sell silver for the best price want know exactly",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T19:15:27.082Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to sell silver for the best price 7 silver trading\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to sell silver for the best price 7 silver trading",
+      "prefer": "photo",
+      "updatedAt": "2026-07-17T19:15:27.082Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to sell silver for the best price circulated silver dollar\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price circulated silver dollar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:30.322Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to sell silver for the best price looking liquidate large\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price looking liquidate large",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:30.978Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to sell silver for the best price storage fees storing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price storage fees storing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:32.125Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to sell silver for the best price see insuring physical\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price see insuring physical",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:32.925Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to sell silver for the best price why designed our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price why designed our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:33.574Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to sell silver for the best price consider diversifying portfolio\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price consider diversifying portfolio",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:34.140Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to sell silver for the best price customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to sell silver for the best price customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-17T19:15:34.812Z"
+    }
+  }
+}
