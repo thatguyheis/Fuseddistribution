@@ -12,7 +12,7 @@ GIT_SYNC="${BLOG_GIT_SYNC:-0}"
 HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
 CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-granite4.1:3b}"
+HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
 PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
 VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
 VERIFY_DELAY_SECONDS="${BLOG_VERIFY_DELAY_SECONDS:-15}"
@@ -109,6 +109,9 @@ schedule_retry() {
     <key>CLAUDE_ENABLED</key><string>${CLAUDE_ENABLED}</string>
     <key>HERMES_TAKEOVER</key><string>${HERMES_TAKEOVER}</string>
     <key>LOCAL_LLM</key><string>${LOCAL_LLM}</string>
+    <key>HERMES_LOCAL_MODEL</key><string>${HERMES_LOCAL_MODEL}</string>
+    <key>HERMES_LOCAL_BASE_URL</key><string>${HERMES_LOCAL_BASE_URL:-http://localhost:11434/v1}</string>
+    <key>HERMES_LOCAL_MAX_TOKENS</key><string>${HERMES_LOCAL_MAX_TOKENS:-256}</string>
   </dict>
   <key>SoftResourceLimits</key>
   <dict><key>NumberOfFiles</key><integer>65536</integer></dict>
@@ -118,8 +121,20 @@ schedule_retry() {
 </plist>
 PLIST
   launchctl bootout "gui/$(id -u)/${retry_label}" 2>/dev/null
-  launchctl bootstrap "gui/$(id -u)" "$retry_plist"
-  echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now)" >> "$LOG_FILE"
+  local bootstrap_err bootstrap_rc
+  bootstrap_err=$(launchctl bootstrap "gui/$(id -u)" "$retry_plist" 2>&1)
+  bootstrap_rc=$?
+  if [[ $bootstrap_rc -ne 0 ]]; then
+    echo "RETRY SCHEDULE FAILED: bootstrap rc=$bootstrap_rc: $bootstrap_err" >> "$LOG_FILE"
+    notify "retry failed" "Could not schedule ${retry_hour}:$(printf '%02d' "$retry_min") catch-up run — check daily-blog-reel.log"
+    return 1
+  fi
+  if ! launchctl list "$retry_label" >/dev/null 2>&1; then
+    echo "RETRY SCHEDULE FAILED: bootstrap returned 0 but ${retry_label} is not in launchctl list" >> "$LOG_FILE"
+    notify "retry failed" "Catch-up job did not register with launchd — check daily-blog-reel.log"
+    return 1
+  fi
+  echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now) — confirmed loaded" >> "$LOG_FILE"
 }
 
 write_pending() {
@@ -605,6 +620,12 @@ if [[ "$AUTO_DEPLOY" == "1" ]]; then
   fi
 else
   echo "AUTO_DEPLOY=0: skipped git push, wrangler deploy, and live sitemap verification." >> "$LOG_FILE"
+fi
+
+UNPUSHED=$(git log origin/main..HEAD --oneline 2>/dev/null | wc -l | tr -d ' ')
+if [[ "$UNPUSHED" -ge 8 ]]; then
+  echo "NOTICE: $UNPUSHED commits unpushed to origin/main — Claude review/push overdue" >> "$LOG_FILE"
+  notify "git backlog" "$UNPUSHED commits awaiting push to GitHub — ask Claude to review and push"
 fi
 
 # Clear recovery state only after every approved post and the global listing

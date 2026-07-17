@@ -37,11 +37,10 @@ echo $PEXELS_API_KEY
 - [ ] Write `hero.svg` (§7 — numeric XML entities only, no HTML entities)
 - [ ] Generate `hero.jpg`:
   ```bash
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-    --headless=new --disable-gpu --screenshot=/tmp/hero-tmp.png --window-size=1200,630 \
-    "file://$(pwd)/blog/[slug]/hero.svg" 2>/dev/null && \
-  sips -s format jpeg /tmp/hero-tmp.png --out public/blog/[slug]/hero.jpg -s formatOptions 85 && \
-  rm /tmp/hero-tmp.png
+  node public/blog/scripts/render-svg-jpg.mjs \
+    --input=public/blog/[slug]/hero.svg \
+    --output=public/blog/[slug]/hero.jpg \
+    --width=1200 --height=630 --quality=85
   # Verify: ls -lh public/blog/[slug]/hero.jpg — must be > 50 KB
   ```
 - [ ] Run: `node public/blog/scripts/fetch-pexels.mjs --post=[slug] --queries="q1|q2"`
@@ -50,11 +49,10 @@ echo $PEXELS_API_KEY
 - [ ] Write `photo-post.svg` (§15 — 1200×1200 canvas)
 - [ ] Generate `photo-post.jpg`:
   ```bash
-  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-    --headless=new --disable-gpu --screenshot=/tmp/photo-post-tmp.png --window-size=1200,1200 \
-    "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
-  sips -s format jpeg /tmp/photo-post-tmp.png --out public/blog/[slug]/photo-post.jpg -s formatOptions 85 && \
-  rm /tmp/photo-post-tmp.png
+  node public/blog/scripts/render-svg-jpg.mjs \
+    --input=public/blog/[slug]/photo-post.svg \
+    --output=public/blog/[slug]/photo-post.jpg \
+    --width=1200 --height=1200 --quality=85
   ```
 - [ ] Write `social-copy.json` (§14) — apply §9 writing rules to every caption field
 - [ ] Run `social-ad` skill — generates 2 SVG ad templates -> JPEG, updates `organic_ads[]` in social-copy.json
@@ -98,7 +96,11 @@ a failure.
   resuming a stale lint-only checkpoint. Existing Pexels files are reused and
   reinjected into rebuilt HTML.
 - Retry launch agents must preserve `BLOG_RUN_DATE`, `BLOG_AUTO_DEPLOY`,
-  `HERMES_TAKEOVER`, `CLAUDE_ENABLED`, and `LOCAL_LLM`.
+  `HERMES_TAKEOVER`, `CLAUDE_ENABLED`, `LOCAL_LLM`, `HERMES_LOCAL_MODEL`,
+  `HERMES_LOCAL_BASE_URL`, and `HERMES_LOCAL_MAX_TOKENS`. A retry that drops
+  the model override silently falls back to whichever model
+  `HERMES_LOCAL_MODEL`'s script default points at — verify that default is
+  still the validated production writer before changing it.
 - A run is complete only when every selected slug is either live and verified,
   explicitly quality-blocked, or retained in the pending marker for retry.
 - Required-artifact failures such as a missing rendered JPG are infrastructure
@@ -895,14 +897,17 @@ Canvas: `width="1200" height="1200" viewBox="0 0 1200 1200"`
 
 After writing `photo-post.svg`, generate `photo-post.jpg`:
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-  --headless=new --disable-gpu \
-  --screenshot=/tmp/photo-post-tmp.png \
-  --window-size=1200,1200 \
-  "file://$(pwd)/blog/[slug]/photo-post.svg" 2>/dev/null && \
-sips -s format jpeg /tmp/photo-post-tmp.png --out public/blog/[slug]/photo-post.jpg -s formatOptions 85 && \
-rm /tmp/photo-post-tmp.png
+node public/blog/scripts/render-svg-jpg.mjs \
+  --input=public/blog/[slug]/photo-post.svg \
+  --output=public/blog/[slug]/photo-post.jpg \
+  --width=1200 --height=1200 --quality=85
 ```
+
+Do not launch the full Google Chrome macOS application for this conversion.
+When the workflow runs inside an automation sandbox, Chrome aborts during
+LaunchServices registration before headless rendering begins. The Sharp/libvips
+renderer is deterministic, does not need a GUI session, and writes the JPG
+atomically.
 
 Postiz reads `photo-post.jpg` — not the SVG.
 
