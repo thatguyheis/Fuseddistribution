@@ -1,6 +1,12 @@
 {
   "slug": "magnet-test-for-silver-does-it-work",
-  "score": 88,
-  "pass": true,
-  "blockers": []
+  "score": 41,
+  "pass": false,
+  "blockers": [
+    "ARTICLE_TRUNCATED: body cuts off mid-sentence \u2014 'A fake silver American' \u2014 H2 'What Passes the Magnet Test But Is Still Fake' has no body content",
+    "SOCIAL_COPY_BROKEN: all platform captions (facebook/instagram/linkedin) contain raw LLM meta-commentary ('Here\u2019s a 3-sentence Facebook caption for the article...') instead of actual copy \u2014 unpublishable",
+    "REEL_QUESTION_TRUNCATED: QUESTION text reads 'what\u2019s the one thing you should absolutely?' \u2014 sentence incomplete, missing predicate",
+    "REEL_SCRIPT_NO_NARRATION: segments have label lines only (## OVERLAY / ## STAT) with no spoken text \u2014 cannot generate TTS",
+    "META_DESCRIPTION_HASHTAGS: description field contains '#silvertesting #magnettest' \u2014 hashtags do not belong in HTML meta description"
+  ]
 }
