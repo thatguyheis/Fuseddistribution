@@ -1,0 +1,23 @@
+{
+  "title": "Silver Magnet Test: 92% Detection Rate",
+  "source": "NBC Connecticut (2024)",
+  "bars": [
+    {
+      "label": "Copper-Based Fakes",
+      "value": "100%"
+    },
+    {
+      "label": "Steel-Core Fakes",
+      "value": "43.3%"
+    },
+    {
+      "label": "Counterfeit Bars",
+      "value": "24.7%"
+    }
+  ],
+  "hero_stat": {
+    "value": "100%",
+    "label": "100% of Discounted Eagles Fake"
+  },
+  "narration": "This chart highlights the limitations of the magnet test for silver. While it effectively identifies steel-core fakes (43.3% of dealer encounters), a significant portion of counterfeits \u2013 100% of discounted Eagles tested \u2013 are made with copper, bypassing the test entirely. This underscores the need for additional verification methods."
+}
