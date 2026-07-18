@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"content marketing ideas for local business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "content marketing ideas for local business",
+      "prefer": "video",
+      "updatedAt": "2026-07-18T18:37:37.308Z"
+    },
+    "1": {
+      "key": "{\"query\":\"content marketing ideas for local business local business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "content marketing ideas for local business local business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T18:37:37.378Z"
+    },
+    "2": {
+      "key": "{\"query\":\"content marketing ideas for local business 100 customers business\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "content marketing ideas for local business 100 customers business",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T18:37:37.378Z"
+    },
+    "3": {
+      "key": "{\"query\":\"content marketing ideas for local business plumber denver someone\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business plumber denver someone",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:40.248Z"
+    },
+    "4": {
+      "key": "{\"query\":\"content marketing ideas for local business 10 positive reviews\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business 10 positive reviews",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:41.175Z"
+    },
+    "5": {
+      "key": "{\"query\":\"content marketing ideas for local business right first make\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business right first make",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:41.894Z"
+    },
+    "6": {
+      "key": "{\"query\":\"content marketing ideas for local business these reviews push\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business these reviews push",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:42.583Z"
+    },
+    "7": {
+      "key": "{\"query\":\"content marketing ideas for local business people trust what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business people trust what",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:43.749Z"
+    },
+    "8": {
+      "key": "{\"query\":\"content marketing ideas for local business post photos quick\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business post photos quick",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:44.380Z"
+    },
+    "9": {
+      "key": "{\"query\":\"content marketing ideas for local business post photos short\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business post photos short",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:45.098Z"
+    },
+    "10": {
+      "key": "{\"query\":\"content marketing ideas for local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "content marketing ideas for local business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:37:45.471Z"
+    }
+  }
+}

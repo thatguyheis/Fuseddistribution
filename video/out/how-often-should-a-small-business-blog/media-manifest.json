@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how often should a small business blog\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how often should a small business blog",
+      "prefer": "video",
+      "updatedAt": "2026-07-18T18:15:17.477Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how often should a small business blog short answer once\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how often should a small business blog short answer once",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T18:15:17.533Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how often should a small business blog post every tuesday\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how often should a small business blog post every tuesday",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T18:15:17.534Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how often should a small business blog 76 likely report\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog 76 likely report",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:20.901Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how often should a small business blog 16 blog posts\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog 16 blog posts",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:21.550Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how often should a small business blog 16 posts week\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog 16 posts week",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:22.194Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how often should a small business blog 1 cost publish\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog 1 cost publish",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:23.036Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how often should a small business blog use search console\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog use search console",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:24.286Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how often should a small business blog these posts rank\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog these posts rank",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:24.811Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how often should a small business blog 90 days calls\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog 90 days calls",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:25.459Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how often should a small business blog businesses rank local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog businesses rank local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:26.194Z"
+    },
+    "11": {
+      "key": "{\"query\":\"how often should a small business blog customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how often should a small business blog customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T18:15:26.836Z"
+    }
+  }
+}

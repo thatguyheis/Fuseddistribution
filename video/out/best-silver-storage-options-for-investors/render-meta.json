@@ -1,0 +1,52 @@
+{
+  "slug": "best-silver-storage-options-for-investors",
+  "renderedAt": "2026-07-18T19:25:10.832Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 142.152,
+  "renderedDuration": 137.28,
+  "scriptHash": "2a03284d63924335d75a16a3947170495a71e630a4e26fe961d60fc254eac538",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-relax-beat-292.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -30.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.4226978079673294
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 5,
+      "1": 15.18,
+      "2": 19.22,
+      "3": 14.94,
+      "4": 17.22,
+      "5": 11.3,
+      "6": 12.58,
+      "7": 12.7,
+      "8": 21.62,
+      "9": 5.16
+    },
+    "totalNarrationSeconds": 134.92
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relax-beat-292/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

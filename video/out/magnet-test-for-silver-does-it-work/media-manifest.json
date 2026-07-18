@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"magnet test for silver does it work\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "magnet test for silver does it work",
+      "prefer": "video",
+      "updatedAt": "2026-07-18T19:00:11.334Z"
+    },
+    "1": {
+      "key": "{\"query\":\"magnet test for silver does it work magnet test silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "magnet test for silver does it work magnet test silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T19:00:11.397Z"
+    },
+    "2": {
+      "key": "{\"query\":\"magnet test for silver does it work 100 below market\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "magnet test for silver does it work 100 below market",
+      "prefer": "photo",
+      "updatedAt": "2026-07-18T19:00:11.404Z"
+    },
+    "3": {
+      "key": "{\"query\":\"magnet test for silver does it work magnet moves generates\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work magnet moves generates",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:13.079Z"
+    },
+    "4": {
+      "key": "{\"query\":\"magnet test for silver does it work 300 websites actively\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work 300 websites actively",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:13.749Z"
+    },
+    "5": {
+      "key": "{\"query\":\"magnet test for silver does it work 1 silver content\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work 1 silver content",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:15.274Z"
+    },
+    "6": {
+      "key": "{\"query\":\"magnet test for silver does it work catches coins right\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work catches coins right",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:16.275Z"
+    },
+    "7": {
+      "key": "{\"query\":\"magnet test for silver does it work silver moves through\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work silver moves through",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:17.166Z"
+    },
+    "8": {
+      "key": "{\"query\":\"magnet test for silver does it work run magnet test\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work run magnet test",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:17.873Z"
+    },
+    "9": {
+      "key": "{\"query\":\"magnet test for silver does it work every item passed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work every item passed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:18.496Z"
+    },
+    "10": {
+      "key": "{\"query\":\"magnet test for silver does it work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "magnet test for silver does it work customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-18T19:00:19.847Z"
+    }
+  }
+}
