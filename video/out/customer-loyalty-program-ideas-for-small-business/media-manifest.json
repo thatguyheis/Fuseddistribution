@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"online reviews trust\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "online reviews trust",
+      "prefer": "video",
+      "updatedAt": "2026-07-19T19:13:26.927Z"
+    },
+    "1": {
+      "key": "{\"query\":\"pouring heart soul\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "pouring heart soul",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T19:13:26.950Z"
+    },
+    "2": {
+      "key": "{\"query\":\"consumers trust reviews\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "consumers trust reviews",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T19:13:26.950Z"
+    },
+    "3": {
+      "key": "{\"query\":\"branded item handwritten\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "branded item handwritten",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:28.018Z"
+    },
+    "4": {
+      "key": "{\"query\":\"tie specific service\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tie specific service",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:28.579Z"
+    },
+    "5": {
+      "key": "{\"query\":\"getting reviews matter\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "getting reviews matter",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:29.220Z"
+    },
+    "6": {
+      "key": "{\"query\":\"shows care person\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "shows care person",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:29.964Z"
+    },
+    "7": {
+      "key": "{\"query\":\"handwritten note small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "handwritten note small",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:30.578Z"
+    },
+    "8": {
+      "key": "{\"query\":\"creating positive experience\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "creating positive experience",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:31.112Z"
+    },
+    "9": {
+      "key": "{\"query\":\"customer feedback less\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "customer feedback less",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T19:13:31.996Z"
+    }
+  }
+}

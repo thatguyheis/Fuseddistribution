@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"evergreen content ideas for small business website\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "evergreen content ideas for small business website",
+      "prefer": "video",
+      "updatedAt": "2026-07-19T18:39:34.504Z"
+    },
+    "1": {
+      "key": "{\"query\":\"evergreen content ideas for small business website small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "evergreen content ideas for small business website small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:39:34.538Z"
+    },
+    "2": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 65 website visitors\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "evergreen content ideas for small business website 65 website visitors",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:39:34.539Z"
+    },
+    "3": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 70 consumers prefer\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 70 consumers prefer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:35.449Z"
+    },
+    "4": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 4 2 billion\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 4 2 billion",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:35.964Z"
+    },
+    "5": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 67 customers consumers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 67 customers consumers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:36.517Z"
+    },
+    "6": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 30 using our\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 30 using our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:37.129Z"
+    },
+    "7": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 10 free social\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 10 free social",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:37.809Z"
+    },
+    "8": {
+      "key": "{\"query\":\"evergreen content ideas for small business website 80 consumers use\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website 80 consumers use",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:38.432Z"
+    },
+    "9": {
+      "key": "{\"query\":\"evergreen content ideas for small business website let continue building\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website let continue building",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:38.928Z"
+    },
+    "10": {
+      "key": "{\"query\":\"evergreen content ideas for small business website customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "evergreen content ideas for small business website customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:39:39.943Z"
+    }
+  }
+}

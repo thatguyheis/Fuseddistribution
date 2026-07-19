@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"short form video\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "short form video",
+      "prefer": "video",
+      "updatedAt": "2026-07-19T18:15:18.862Z"
+    },
+    "1": {
+      "key": "{\"query\":\"small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:15:18.902Z"
+    },
+    "2": {
+      "key": "{\"query\":\"tiktok competition\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "tiktok competition",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:15:18.903Z"
+    },
+    "3": {
+      "key": "{\"query\":\"instagram reels direct\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "instagram reels direct",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:20.432Z"
+    },
+    "4": {
+      "key": "{\"query\":\"youtube shorts reach\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "youtube shorts reach",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:20.971Z"
+    },
+    "5": {
+      "key": "{\"query\":\"youtube watch time\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "youtube watch time",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:21.601Z"
+    },
+    "6": {
+      "key": "{\"query\":\"local gym filming\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "local gym filming",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:22.169Z"
+    },
+    "7": {
+      "key": "{\"query\":\"text overlays video\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "text overlays video",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:22.831Z"
+    },
+    "8": {
+      "key": "{\"query\":\"video marketing stats\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "video marketing stats",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:23.424Z"
+    },
+    "9": {
+      "key": "{\"query\":\"short form video\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "short form video",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:15:23.950Z"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"google business profile\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "google business profile",
+      "prefer": "video",
+      "updatedAt": "2026-07-19T18:57:22.617Z"
+    },
+    "1": {
+      "key": "{\"query\":\"pouring money website\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "pouring money website",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:57:22.674Z"
+    },
+    "2": {
+      "key": "{\"query\":\"store sign display\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "store sign display",
+      "prefer": "photo",
+      "updatedAt": "2026-07-19T18:57:22.674Z"
+    },
+    "3": {
+      "key": "{\"query\":\"online customer reviews\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online customer reviews",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:24.202Z"
+    },
+    "4": {
+      "key": "{\"query\":\"google business listing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "google business listing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:24.877Z"
+    },
+    "5": {
+      "key": "{\"query\":\"google needs know\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google needs know",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:25.593Z"
+    },
+    "6": {
+      "key": "{\"query\":\"website calls working\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website calls working",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:25.974Z"
+    },
+    "7": {
+      "key": "{\"query\":\"tell people exactly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tell people exactly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:26.582Z"
+    },
+    "8": {
+      "key": "{\"query\":\"don t phone calls\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "don t phone calls",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:27.118Z"
+    },
+    "9": {
+      "key": "{\"query\":\"customer feedback boost\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "customer feedback boost",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-19T18:57:27.760Z"
+    }
+  }
+}
