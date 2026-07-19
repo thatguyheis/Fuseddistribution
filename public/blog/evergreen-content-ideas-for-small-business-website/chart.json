@@ -1,0 +1,35 @@
+{
+  "title": "Evergreen Content Stats for Small Businesses",
+  "source": "HubSpot (2023), Forbes (2023), Statista (2023), Zendesk (2023), Nielsen (2023), Content Marketing Institute (2023)",
+  "bars": [
+    {
+      "label": "Information Seekers",
+      "value": "65%"
+    },
+    {
+      "label": "Local Business Support",
+      "value": "70%"
+    },
+    {
+      "label": "YouTube Searches",
+      "value": "4.2 billion"
+    },
+    {
+      "label": "FAQ Usage",
+      "value": "80%"
+    },
+    {
+      "label": "Review Influence",
+      "value": "67%"
+    },
+    {
+      "label": "Recommendation Trust",
+      "value": "92%"
+    }
+  ],
+  "hero_stat": {
+    "value": "65%",
+    "label": "Website Visitors Seeking Information"
+  },
+  "narration": "This chart highlights key statistics demonstrating the value of evergreen content for small businesses.  65% of website visitors are primarily looking for information, not immediate sales, showcasing the importance of providing valuable resources. Supporting local businesses is also a strong trend, with 70% of consumers preferring to support local businesses. These figures underscore the need for content that establishes authority and builds trust, driving long-term customer relationships."
+}
