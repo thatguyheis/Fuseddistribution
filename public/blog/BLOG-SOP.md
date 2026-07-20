@@ -76,10 +76,31 @@ echo $PEXELS_API_KEY
 The 9 AM runner writes `public/blog/research/YYYY-MM-DD-pending.json` before its
 first model call. It also checkpoints the current day's queue before selecting
 an older pending date, so backlog recovery cannot silently consume and skip the
-current day. A later launch resumes the oldest pending date first, writes an
+current day. Every launch resumes the oldest pending date first, writes an
 explicit `YYYY-MM-DD-complete.json` only after every approved slug is live, then
-schedules the checkpointed current day. Do not delete a pending marker to silence
+schedules the oldest remaining pending date. Do not jump directly to the calendar
+day while an older pending marker exists. Do not delete a pending marker to silence
 a failure.
+
+**A scheduled retry is not a completed retry.** The retry launch agent must remain
+loaded until its due time and the retry process must not unload its own launchd
+label at startup. Cleanup of `com.nick.daily-blog-reel.retry` is allowed only from
+the primary runner before creating a replacement, or after the retry process has
+finished its recovery work. A `.plist` file on disk is not evidence that launchd
+still owns the job.
+
+After any run logs `Retry scheduled`, verify the handoff:
+
+```bash
+launchctl print gui/$(id -u)/com.nick.daily-blog-reel.retry
+tail -n 80 ~/Library/Logs/daily-blog-reel.log
+```
+
+Before the due time, `launchctl print` must show the retry service loaded. Within
+two minutes after the due time, the log must contain a new run header and the
+target pending marker must have a newer `interrupted_at` value or be replaced by
+its dated complete marker. If the service disappears with no new run header, the
+retry failed even if the earlier log said `confirmed loaded`.
 
 - Use `BLOG_RUN_DATE=YYYY-MM-DD /Users/nick/bin/daily-blog-reel.sh` to replay a
   specific missed day.
@@ -101,8 +122,15 @@ a failure.
   the model override silently falls back to whichever model
   `HERMES_LOCAL_MODEL`'s script default points at — verify that default is
   still the validated production writer before changing it.
+- Before scheduling a follow-up, resolve the next date from the oldest remaining
+  `????-??-??-pending.json` file. The retry's `BLOG_RUN_DATE` must match that date.
+  Re-evaluate after every completed day until no pending markers remain.
 - A run is complete only when every selected slug is either live and verified,
   explicitly quality-blocked, or retained in the pending marker for retry.
+- A recovered day is complete only when all of these are true: every approved URL
+  returns 200, live and local `posts.json` agree on the newest slug, live and local
+  sitemap counts agree, the dated pending marker is gone, and the dated complete
+  marker exists.
 - Required-artifact failures such as a missing rendered JPG are infrastructure
   deferrals, not content failures. Keep the post directory intact and retain the
   slug in the pending marker; never quarantine it for a renderer outage.
@@ -116,6 +144,27 @@ a failure.
   and pushes the local commits.
 - Downstream reel and Buffer jobs must not treat an absent `posts.json` entry as
   "no work" without checking for an older blog pending marker first.
+
+### Recovery status checklist
+
+Use all of these checks before reporting that the 9 AM recovery and follow-ups
+worked:
+
+```bash
+launchctl print gui/$(id -u)/com.nick.daily-blog-reel
+find public/blog/research -maxdepth 1 -name '????-??-??-pending.json' -print | sort
+find public/blog/research -maxdepth 1 -name '????-??-??-complete.json' -print | sort
+tail -n 120 ~/Library/Logs/daily-blog-reel.log
+```
+
+- The primary service must show a successful run and exit code 0.
+- The log must end with `RESULT: all verifications passed` for the completed date.
+- Any promised follow-up must produce its own later run header. A scheduling log
+  line by itself is insufficient.
+- Pending dates must move oldest first. A newer date must not begin while an older
+  pending marker remains, unless the older date is explicitly quality blocked.
+- `NOTICE: ... commits unpushed` is a separate source-control handoff. It does not
+  mean the website deployment failed, but Claude must review and push the commits.
 
 ---
 
@@ -280,14 +329,14 @@ public/blog/
   [slug]/
     index.html
     hero.svg
-    hero.jpg            ← generated from hero.svg (Chrome headless) — OG tags + reel segment-0
+    hero.jpg            ← generated from hero.svg (Sharp/libvips) — OG tags + reel segment-0
     reel-data.md        ← required (§11) — single long-form section
     reel-script.md      ← written by REEL-SOP workflow
     ugc-script.md           ← 2 A/B UGC script variants for real-person filming
     ad-stat-card.svg/.jpg   ← generated organic ad (stat-card template)
     ad-google-search.svg/.jpg ← generated organic ad (google-search template)
     photo-post.svg      ← required (§15) — 1200×1200 square
-    photo-post.jpg      ← generated from photo-post.svg (Chrome headless) — Postiz/social upload
+    photo-post.jpg      ← generated from photo-post.svg (Sharp/libvips) — social upload
     social-copy.json    ← required (§14) — captions per platform
     images/
       pexels-0.jpg      ← from fetch-pexels script
@@ -738,7 +787,8 @@ Replace any matches with their numeric equivalents:
 | `&trade;` | `&#8482;` |
 | `&reg;` | `&#174;` |
 
-After fixing, regenerate the `.jpg` for any SVG that changed (Chrome headless, same command as §7/§15).
+After fixing, regenerate the `.jpg` for any SVG that changed with the
+Sharp/libvips command from §7 or §15.
 
 ### Step 1 — Verify posts.json entry exists (REQUIRED before commit)
 
@@ -780,23 +830,59 @@ curl -s -o /dev/null -w "%{http_code}" https://fuseddistribution.com/blog/[slug]
 
 Also verify `https://fuseddistribution.com/sitemap.xml` includes the new slug. If the slug is absent, the sitemap is static — log the gap and notify Nick to add sitemap generation to the build pipeline.
 
-### Step 3 — Social media (automated via Postiz — see SOCIAL-SOP.md)
+### Step 5 - Reel release and social handoff
 
-Postiz reads `social-copy.json` and schedules all posts at optimal times. Nothing to do manually.
+Blog publication does not mean the reel is ready or scheduled. Reel rendering,
+caption review, media hosting, Buffer planning, and Buffer confirmation are
+separate downstream gates. See `video/REEL-SOP.md` and `SOCIAL-SOP.md`.
 
-Assets consumed by Postiz:
+Assets consumed by the social workflow:
 - `video/out/[slug]/[slug].mp4` (single long-form reel)
 - `public/blog/[slug]/photo-post.jpg` (not the SVG — social platforms reject SVG)
 - `public/blog/[slug]/social-copy.json`
 
-> **Postiz not yet configured:** Until Postiz is set up on the Windows PC, skip this step.
-> Manually post reels using captions from `social-copy.json`.
+Rendering success alone is not posting readiness. Check the release gate:
+
+```bash
+cd video
+npm run release -- --post=[slug]
+```
+
+If `release-qa.json` reports proportional or mixed captions, scrub the rendered
+MP4 at three points and confirm the subtitle matches the spoken word within 0.5
+seconds. Only after that manual review may the readiness flag be recorded:
+
+```bash
+cd video
+npm run release -- --post=[slug] --manual-caption-review
+```
+
+Do not send the reel to media preparation or Buffer unless
+`release-qa.json` contains both `"pass": true` and
+`"readyForPosting": true`.
+
+The Buffer maintenance workflow is not part of the 9 AM launchd blog job. It must
+independently complete all of these steps:
+
+1. Reconcile live Buffer `scheduled`, `sending`, `sent`, and `error` posts.
+2. Regenerate platform-safe YouTube and X media for the selected ready slugs.
+3. Upload the exact MP4s to `REELS_KV` and verify each HTTPS URL returns
+   `200 video/mp4` with `x-fused-media-source: reels-kv`.
+4. Regenerate and validate `.buffer-youtube-queue.json` and
+   `.buffer-x-queue.json`. Queue files from a previous day are stale evidence.
+5. Publish only `selected` jobs, read each post back from Buffer, and write the
+   scheduled log only after Buffer confirms the video asset.
+
+Social completion requires a current queue timestamp and Buffer-confirmed post
+IDs. Existing MP4 files, old queue JSON, or a renderer commit do not prove that a
+social post was scheduled.
 
 ---
 
 ## 14. social-copy.json
 
-**Required.** Claude writes this during pipeline run. Consumed by Postiz when scheduling posts.
+**Required.** Claude writes this during the pipeline run. The Buffer planning and
+posting workflow consumes it after reel release QA passes.
 
 File path: `public/blog/[slug]/social-copy.json`
 
@@ -909,7 +995,7 @@ LaunchServices registration before headless rendering begins. The Sharp/libvips
 renderer is deterministic, does not need a GUI session, and writes the JPG
 atomically.
 
-Postiz reads `photo-post.jpg` — not the SVG.
+The social workflow reads `photo-post.jpg` - not the SVG.
 
 ---
 
