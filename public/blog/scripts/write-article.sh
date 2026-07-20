@@ -124,6 +124,7 @@ $DRAFT_BLOCK
 
 REQUIREMENTS:
 - 1200-1800 words total
+- 8-12 substantive H2 sections so the article can produce a complete long form reel
 - Topic contract is mandatory: the title, slug, keyword, H2s, body, examples, CTA, reel source material, and social source material must all answer the same reader problem
 - If the rough draft or research reference conflicts with the title/keyword, ignore the conflicting reference and write to the title/keyword
 - The first 250 words must name the title topic directly and answer the reader's expected question
@@ -162,6 +163,46 @@ fi
 if head -40 "$OUT.raw" | is_limit; then
   rm -f "$OUT.raw"
   echo "error: writer returned a limit/error message, not an article — DEFER (not writing $OUT)" >&2
+  exit 4
+fi
+
+# The style linter intentionally does not enforce article size. Without this
+# structural gate, a short but clean local-model response becomes a permanent
+# resume checkpoint, then fails the required reel stage on every later run.
+article_shape_ok() {
+  python3 - "$1" <<'PY'
+import re
+import sys
+
+text = open(sys.argv[1], encoding="utf-8").read()
+word_count = len(re.findall(r"\b[\w'-]+\b", text))
+h2_count = len(re.findall(r"^##\s+\S", text, flags=re.M))
+raise SystemExit(0 if word_count >= 1100 and 8 <= h2_count <= 12 else 1)
+PY
+}
+
+for shape_attempt in 1 2; do
+  article_shape_ok "$OUT.raw" && break
+  echo "[write-article] article is undersized; requesting structural rewrite (attempt $shape_attempt)" >&2
+  {
+    echo "Rewrite the markdown below as a complete 1200-1800 word article with 8-12 substantive H2 sections."
+    echo "Keep the exact title and topic. Preserve only sourced claims and citations already present."
+    echo "Add specific, useful detail without repetition, filler, invented statistics, or new named sources."
+    echo "Use no em dashes or en dashes. Output only the full corrected markdown."
+    echo ""
+    echo "--- MARKDOWN ---"
+    cat "$OUT.raw"
+  } | run_writer > "$OUT.expanded" || true
+  if [[ -s "$OUT.expanded" ]] && ! head -40 "$OUT.expanded" | is_limit; then
+    mv "$OUT.expanded" "$OUT.raw"
+  else
+    rm -f "$OUT.expanded"
+  fi
+done
+
+if ! article_shape_ok "$OUT.raw"; then
+  rm -f "$OUT.raw" "$OUT.expanded"
+  echo "error: writer did not produce 1100+ words with 8-12 H2 sections; deferring post" >&2
   exit 4
 fi
 mv "$OUT.raw" "$OUT"

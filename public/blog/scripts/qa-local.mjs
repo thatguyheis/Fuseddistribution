@@ -32,14 +32,16 @@ function collectStrings(value, path = []) {
   return [];
 }
 
-function validateTextSurface(label, text, blockers) {
+function validateTextSurface(label, text, blockers, allowedFutureYears = new Set()) {
   pushIf(/\[SLOT]|\[VERIFY]/i.test(text), blockers, `${label}: leftover placeholder`);
   pushIf(/\[[A-Z][A-Za-z0-9 _-]{2,}\]/.test(text), blockers, `${label}: unreplaced bracket placeholder`);
   pushIf(/\bNote:\s*Replace\b/i.test(text), blockers, `${label}: leftover replacement instruction`);
   pushIf(/\b(?:REQUIREMENTS:|Output ONLY the markdown article|Claude: apply writing rules|Topic contract is mandatory)\b/i.test(text), blockers, `${label}: model prompt leaked into publishable content`);
+  pushIf(/\bHere (?:are|is) (?:six-word|6-word).*(?:alt texts?|options?)\b/i.test(text), blockers, `${label}: model option preamble leaked into publishable content`);
   pushIf(/[—–]/.test(text), blockers, `${label}: contains em/en dash`);
   pushIf(/\b(?:19|20|21)\d{3,}\b/.test(text), blockers, `${label}: suspicious malformed year`);
-  pushIf(/\b20[3-9]\d\b/.test(text), blockers, `${label}: future year needs manual source check`);
+  const futureYears = [...text.matchAll(/\b20[3-9]\d\b/g)].map((match) => match[0]);
+  pushIf(futureYears.some((year) => !allowedFutureYears.has(year)), blockers, `${label}: future year needs manual source check`);
   pushIf(/\$\s*\d+(?:\.\d{2})?\s+(?:to|-)\s+\$\s*\d+\.\d{2}\b/i.test(text), blockers, `${label}: budget range uses cents; likely numeric typo`);
 }
 
@@ -173,7 +175,7 @@ const STOP_LABEL_ENDINGS = new Set([
   'OR', 'THE', 'THEN', 'TO', 'WITH', 'WITHOUT', 'YOUR',
 ]);
 
-function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers) {
+function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers, allowedFutureYears) {
   if (!existsSync(reelScriptPath)) {
     blockers.push('missing reel-script.md');
     return;
@@ -181,7 +183,7 @@ function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers) {
 
   const md = readText(reelScriptPath);
   const reelData = readText(reelDataPath);
-  validateTextSurface('reel-script.md', md, blockers);
+  validateTextSurface('reel-script.md', md, blockers, allowedFutureYears);
 
   let script;
   try {
@@ -244,10 +246,10 @@ function validateSourcedStats(html, blockers, slug) {
   }
 }
 
-function validateHtml(htmlPath, blockers, slug) {
+function validateHtml(htmlPath, blockers, slug, allowedFutureYears) {
   const html = readText(htmlPath);
   pushIf(!html, blockers, 'missing index.html');
-  validateTextSurface('index.html', html, blockers);
+  validateTextSurface('index.html', html, blockers, allowedFutureYears);
   pushIf(html && !/<script type="application\/ld\+json">/i.test(html), blockers, 'index.html missing JSON-LD schema');
   if (html) {
     validateTopicCoherence(html, blockers);
@@ -267,10 +269,12 @@ function main() {
   const dir = join(BLOG_DIR, slug);
   const outPath = argValue('--out', join(dir, 'qa.json'));
   const blockers = [];
+  const researchText = readText(join(dir, 'research.json'));
+  const allowedFutureYears = new Set(researchText.match(/\b20[3-9]\d\b/g) ?? []);
 
-  validateHtml(join(dir, 'index.html'), blockers, slug);
+  validateHtml(join(dir, 'index.html'), blockers, slug, allowedFutureYears);
   validateSocial(join(dir, 'social-copy.json'), blockers);
-  validateReelMarkdown(join(dir, 'reel-script.md'), join(dir, 'reel-data.md'), slug, blockers);
+  validateReelMarkdown(join(dir, 'reel-script.md'), join(dir, 'reel-data.md'), slug, blockers, allowedFutureYears);
 
   const pass = blockers.length === 0;
   const qa = {

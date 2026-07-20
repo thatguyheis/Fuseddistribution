@@ -61,6 +61,7 @@ export function validateChart(chart, sourceText) {
 
 // ── SVG render (SOP §6 horizontal bar, word-of-mouth layout) ────────────────
 const xml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const displayText = value => String(value).replace(/[—–]/g, "-");
 
 export function renderChartHtml(chart, slug) {
   const bars = [...chart.bars].map(b => ({ ...b, n: parseFloat(numericToken(b.value)) }))
@@ -79,9 +80,9 @@ export function renderChartHtml(chart, slug) {
     const y = i * rowH;
     return `        <text x="0" y="${y + 24}" fill="#afc6cf" font-family="Trebuchet MS, sans-serif" font-size="12" font-weight="700">${xml(String(b.label).toUpperCase())}</text>
         <rect x="0" y="${y + 32}" width="${w}" height="22" rx="4" fill="url(#${gid}-${i})"/>
-        <text x="${w + 6}" y="${y + 48}" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">${xml(b.value)}</text>`;
+        <text x="${w + 6}" y="${y + 48}" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">${xml(displayText(b.value))}</text>`;
   }).join("\n");
-  const aria = "Horizontal bar chart: " + bars.map(b => `${b.label} ${b.value}`).join(", ");
+  const aria = "Horizontal bar chart: " + bars.map(b => `${b.label} ${displayText(b.value)}`).join(", ");
   const note = chart.source ? `\n              <div class="chart-note">Source: ${xml(chart.source)}</div>` : "";
   return `            <div class="chart-wrap">
               <div class="chart-title">${xml(chart.title)}</div>

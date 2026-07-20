@@ -117,6 +117,8 @@ import json, os, datetime, re
 def clean(s, fallback):
     s = re.sub(r"\*+", "", s)                       # strip markdown bold/italic
     s = re.sub(r"\s*[–—]\s*", " - ", s)            # keep metadata inside the deterministic style gate
+    s = re.sub(r"(?i)^here (?:are|is)\s+(?:six-word|6-word)?\s*(?:alt texts?|options?)\s+(?:for\s+)?(?:the\s+)?(?:hero\s+)?image\s*:\s*(?:\d+[.)]?\s*)?", "", s)
+    s = re.sub(r"^\s*\d+[.)]\s*", "", s)           # keep only the first clean option
     s = re.sub(r"(?i)option\s*\d+\s*\([^)]*\)\s*:?", "", s)  # strip "Option N (...):"
     s = re.sub(r"(?i)\b(here( is|s)|sure|alt text|option)\b[: ]*", "", s)
     s = re.sub(r"\.\s*\d.*$", ".", s)               # drop trailing ".2 (F" style junk
@@ -162,6 +164,7 @@ log "T8b chart"
 if [[ $FORCE -eq 0 ]] && jq -e 'type == "object" and (has("skipped") or has("type") or has("series"))' "$DIR/chart.json" >/dev/null 2>&1; then
   log "chart: valid checkpoint exists — resuming"
   if ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
+    node "$SD/build-chart-inject.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: checkpoint reinjection failed"
     node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed"
     mark chart-resume
   fi

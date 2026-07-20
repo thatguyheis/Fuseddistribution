@@ -1,0 +1,27 @@
+{
+  "title": "Silver Coin Certification Premium Comparison",
+  "source": "CoinWeek, Coin Identifier, SD Bullion, Silver Eagle Guide",
+  "bars": [
+    {
+      "label": "MS70 Eagle premium over raw bullion",
+      "value": "156%"
+    },
+    {
+      "label": "Top 2024 auctions won by PCGS coins",
+      "value": "93%"
+    },
+    {
+      "label": "NGC Silver Eagles graded MS70",
+      "value": "34%"
+    },
+    {
+      "label": "PCGS price premium over NGC (typical)",
+      "value": "5\u201315%"
+    }
+  ],
+  "hero_stat": {
+    "value": "156%",
+    "label": "MS70 Silver Eagle premium over raw bullion"
+  },
+  "narration": "Certification grade drives real price differences. An MS70-graded Silver Eagle commands a 156% premium over an uncertified bullion coin. Meanwhile, 93% of the top 30 auction results in 2024 went to PCGS-certified coins, and only about 34% of all NGC-graded Silver Eagles achieve a perfect MS70 score."
+}

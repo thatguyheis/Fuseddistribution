@@ -448,6 +448,19 @@ else: print('{}')
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
 
+  # A clean but undersized article can pass the style lint and become a stale
+  # resume checkpoint while the required reel stage fails forever. Rebuild the
+  # writer and dependent artifacts once before retaining the post for retry.
+  if [[ $POST_EXIT -eq 0 && -s "public/blog/$SLUG/verified.md" ]] \
+     && [[ ! -s "public/blog/$SLUG/reel-data.md" || ! -s "public/blog/$SLUG/reel-script.md" ]]; then
+    echo "RECOVERY: $SLUG is missing required reel artifacts; forcing one full content rebuild" >> "$LOG_FILE"
+    HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+      BLOG_PUBLISH_DATE="$TODAY" \
+      public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" --force 2>&1 \
+      | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
+    POST_EXIT=$pipestatus[1]
+  fi
+
   echo "Post $SLUG exit: $POST_EXIT" >> "$LOG_FILE"
 
   # Session limit mid-post — schedule retry for remaining slugs

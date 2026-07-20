@@ -70,7 +70,7 @@ const BARE_PAREN_ORG = /\(([A-Z][A-Za-z0-9.&' -]{2,40})\)/g;
 // Single-word parentheticals that are timing/labels, not sources
 const PAREN_STOPWORDS = new Set([
   "example", "optional", "recommended", "important", "note", "free", "bonus",
-  "new", "updated", "immediately", "later", "finally", "optionally",
+  "new", "updated", "immediately", "later", "finally", "optionally", "typical",
 ]);
 
 export function findUncitedSources(text, researchPath) {

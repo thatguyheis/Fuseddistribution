@@ -106,6 +106,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-18 | pcgs-ngc-certified-silver-coins-guide | General | PCGS NGC certified silver coins guide |
+| 2026-07-18 | how-to-verify-silver-purity-at-home | General | how to verify silver purity at home |
 | 2026-07-17 | magnet-test-for-silver-does-it-work | General | magnet test for silver does it work |
 | 2026-07-16 | silver-counterfeit-detection-guide | General | silver counterfeit detection guide |
 | 2026-07-16 | how-to-spot-fake-silver-coins-and-bars | General | how to spot fake silver coins and bars |

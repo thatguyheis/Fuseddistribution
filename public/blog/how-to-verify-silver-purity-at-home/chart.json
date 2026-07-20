@@ -1,0 +1,27 @@
+{
+  "title": "Silver Counterfeiting: How Widespread Is The Problem?",
+  "source": "CoinWeek (ICTA Anti-Counterfeiting Task Force Survey)",
+  "bars": [
+    {
+      "label": "Dealers seeing more fakes (5 yrs)",
+      "value": "80%+"
+    },
+    {
+      "label": "Dealers encounter fake Silver Eagles",
+      "value": "43.3%"
+    },
+    {
+      "label": "Silver Eagles confirmed fake (2024)",
+      "value": "~21%"
+    },
+    {
+      "label": "Dealers encounter fake Morgan dollars",
+      "value": "71.7%"
+    }
+  ],
+  "hero_stat": {
+    "value": "~21%",
+    "label": "Silver Eagles confirmed counterfeit in 2024"
+  },
+  "narration": "Counterfeiting in the silver market is more widespread than most buyers realize. In 2024, roughly 1 in 5 Silver Eagles tested were confirmed fakes. More than 80% of coin dealers say counterfeits entering the market have increased over the past five years."
+}
