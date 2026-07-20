@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver coin holders and cases guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver coin holders and cases guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-20T19:47:24.527Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver coin holders and cases guide researched potential precious\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver coin holders and cases guide researched potential precious",
+      "prefer": "photo",
+      "updatedAt": "2026-07-20T19:47:24.614Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver coin holders and cases guide see actual cost\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver coin holders and cases guide see actual cost",
+      "prefer": "photo",
+      "updatedAt": "2026-07-20T19:47:24.614Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver coin holders and cases guide beyond price itself\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide beyond price itself",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:26.326Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver coin holders and cases guide premium covers dealer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide premium covers dealer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:26.952Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver coin holders and cases guide dodge these questions\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide dodge these questions",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:27.645Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver coin holders and cases guide right silver coin\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide right silver coin",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:28.335Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver coin holders and cases guide consider number coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide consider number coins",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:28.941Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver coin holders and cases guide know where money\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide know where money",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:29.693Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver coin holders and cases guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver coin holders and cases guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:47:30.355Z"
+    }
+  }
+}

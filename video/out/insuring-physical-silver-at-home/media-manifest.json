@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"insuring physical silver at home\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "insuring physical silver at home",
+      "prefer": "video",
+      "updatedAt": "2026-07-20T19:24:04.069Z"
+    },
+    "1": {
+      "key": "{\"query\":\"insuring physical silver at home want simple secure\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "insuring physical silver at home want simple secure",
+      "prefer": "photo",
+      "updatedAt": "2026-07-20T19:24:04.099Z"
+    },
+    "2": {
+      "key": "{\"query\":\"insuring physical silver at home however buy silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "insuring physical silver at home however buy silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-20T19:24:04.099Z"
+    },
+    "3": {
+      "key": "{\"query\":\"insuring physical silver at home isn about blindly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home isn about blindly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:04.729Z"
+    },
+    "4": {
+      "key": "{\"query\":\"insuring physical silver at home clear straightforward return\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home clear straightforward return",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:05.398Z"
+    },
+    "5": {
+      "key": "{\"query\":\"insuring physical silver at home don leave countertop\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home don leave countertop",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:05.940Z"
+    },
+    "6": {
+      "key": "{\"query\":\"insuring physical silver at home periodically check silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home periodically check silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:06.784Z"
+    },
+    "7": {
+      "key": "{\"query\":\"insuring physical silver at home 10 price ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home 10 price ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:08.106Z"
+    },
+    "8": {
+      "key": "{\"query\":\"insuring physical silver at home don afraid ask\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home don afraid ask",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:08.768Z"
+    },
+    "9": {
+      "key": "{\"query\":\"insuring physical silver at home customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "insuring physical silver at home customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-20T19:24:09.177Z"
+    }
+  }
+}
