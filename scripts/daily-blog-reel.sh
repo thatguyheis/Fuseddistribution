@@ -658,12 +658,14 @@ else
   "source_sync_warnings": $SYNC_FAILS
 }
 JSON
-  if [[ "$TODAY" != "$CALENDAR_TODAY" && -f "$CALENDAR_PENDING" ]]; then
+  NEXT_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null | sort | head -1)
+  if [[ -n "$NEXT_PENDING" ]]; then
     PREVIOUS_TODAY="$TODAY"
-    TODAY="$CALENDAR_TODAY"
+    NEXT_PENDING_NAME="${NEXT_PENDING:t:r}"
+    TODAY="${NEXT_PENDING_NAME%-pending}"
     schedule_retry "" 300
     TODAY="$PREVIOUS_TODAY"
-    echo "Recovery: current-day follow-up scheduled after completing $PREVIOUS_TODAY" >> "$LOG_FILE"
+    echo "Recovery: next pending date ${NEXT_PENDING_NAME%-pending} scheduled after completing $PREVIOUS_TODAY" >> "$LOG_FILE"
   fi
 fi
 
