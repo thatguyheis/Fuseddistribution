@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "best ways to clean silver coins without damage",
+      "prefer": "video",
+      "updatedAt": "2026-07-21T18:45:31.379Z"
+    },
+    "1": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage want build physical\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best ways to clean silver coins without damage want build physical",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T18:45:31.463Z"
+    },
+    "2": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage proper cleaning restore\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best ways to clean silver coins without damage proper cleaning restore",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T18:45:31.464Z"
+    },
+    "3": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage far difficult remove\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage far difficult remove",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:34.858Z"
+    },
+    "4": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage work small overlapping\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage work small overlapping",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:36.028Z"
+    },
+    "5": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage even gentle scrubbing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage even gentle scrubbing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:36.918Z"
+    },
+    "6": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage desiccant packet such\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage desiccant packet such",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:37.516Z"
+    },
+    "7": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage regularly inspect coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage regularly inspect coins",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:38.385Z"
+    },
+    "8": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage ditch dealer markup\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage ditch dealer markup",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:39.230Z"
+    },
+    "9": {
+      "key": "{\"query\":\"best ways to clean silver coins without damage customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "best ways to clean silver coins without damage customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:45:39.782Z"
+    }
+  }
+}

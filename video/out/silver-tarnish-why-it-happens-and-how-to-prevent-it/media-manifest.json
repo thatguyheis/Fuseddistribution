@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver tarnish why it happens and how to prevent it",
+      "prefer": "video",
+      "updatedAt": "2026-07-21T19:35:01.575Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it silver tarnish isn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver tarnish why it happens and how to prevent it silver tarnish isn",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T19:35:01.594Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it specific color texture\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver tarnish why it happens and how to prevent it specific color texture",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T19:35:01.594Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it industrial processes particularly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it industrial processes particularly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:02.756Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it high purity silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it high purity silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:03.950Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it dehumidifier beneficial areas\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it dehumidifier beneficial areas",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:04.559Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it good starting point\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it good starting point",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:05.313Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it industrial processes release\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it industrial processes release",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:05.871Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it let put newfound\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it let put newfound",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:06.674Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it stock diverse selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it stock diverse selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:07.283Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver tarnish why it happens and how to prevent it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver tarnish why it happens and how to prevent it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:35:07.926Z"
+    }
+  }
+}

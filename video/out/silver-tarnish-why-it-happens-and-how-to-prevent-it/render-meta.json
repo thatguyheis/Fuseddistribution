@@ -1,0 +1,53 @@
+{
+  "slug": "silver-tarnish-why-it-happens-and-how-to-prevent-it",
+  "renderedAt": "2026-07-21T19:42:33.296Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 155.305,
+  "renderedDuration": 149.952,
+  "scriptHash": "053f28adfc173298c7a2ba7ebd10799c6f976bfde4d59d0ca5dab5d5c2e25766",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.52,
+      "1": 14.18,
+      "2": 14.26,
+      "3": 19.58,
+      "4": 15.42,
+      "5": 17.62,
+      "6": 16.22,
+      "7": 17.52,
+      "8": 16.14,
+      "9": 7.72,
+      "10": 5.16
+    },
+    "totalNarrationSeconds": 147.34
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

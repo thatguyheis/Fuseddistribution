@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"does tarnished silver lose value\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "does tarnished silver lose value",
+      "prefer": "video",
+      "updatedAt": "2026-07-21T19:11:36.089Z"
+    },
+    "1": {
+      "key": "{\"query\":\"does tarnished silver lose value tarnished silver common\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "does tarnished silver lose value tarnished silver common",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T19:11:36.113Z"
+    },
+    "2": {
+      "key": "{\"query\":\"does tarnished silver lose value core metal remains\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "does tarnished silver lose value core metal remains",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T19:11:36.113Z"
+    },
+    "3": {
+      "key": "{\"query\":\"does tarnished silver lose value market values based\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value market values based",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:37.318Z"
+    },
+    "4": {
+      "key": "{\"query\":\"does tarnished silver lose value furthermore store silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value furthermore store silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:38.009Z"
+    },
+    "5": {
+      "key": "{\"query\":\"does tarnished silver lose value conversely heavily circulated\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value conversely heavily circulated",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:38.675Z"
+    },
+    "6": {
+      "key": "{\"query\":\"does tarnished silver lose value don forget factor\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value don forget factor",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:39.322Z"
+    },
+    "7": {
+      "key": "{\"query\":\"does tarnished silver lose value tarnished item might\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value tarnished item might",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:40.291Z"
+    },
+    "8": {
+      "key": "{\"query\":\"does tarnished silver lose value let help build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value let help build",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:41.748Z"
+    },
+    "9": {
+      "key": "{\"query\":\"does tarnished silver lose value customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "does tarnished silver lose value customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T19:11:42.194Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "troy ounce vs regular ounce silver explained",
+      "prefer": "video",
+      "updatedAt": "2026-07-21T18:20:00.418Z"
+    },
+    "1": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained looking build physical\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "troy ounce vs regular ounce silver explained looking build physical",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T18:20:00.447Z"
+    },
+    "2": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained troy ounce specific\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "troy ounce vs regular ounce silver explained troy ounce specific",
+      "prefer": "photo",
+      "updatedAt": "2026-07-21T18:20:00.447Z"
+    },
+    "3": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained 28 35 grams\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained 28 35 grams",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:01.559Z"
+    },
+    "4": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained fundamental factor determining\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained fundamental factor determining",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:02.407Z"
+    },
+    "5": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained 100 ounces silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained 100 ounces silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:03.925Z"
+    },
+    "6": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained these products specifically\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained these products specifically",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:04.486Z"
+    },
+    "7": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained always factor unit\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained always factor unit",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:05.097Z"
+    },
+    "8": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained 30 00 price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained 30 00 price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:05.753Z"
+    },
+    "9": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained thoroughly understanding distinction\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained thoroughly understanding distinction",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:06.481Z"
+    },
+    "10": {
+      "key": "{\"query\":\"troy ounce vs regular ounce silver explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "troy ounce vs regular ounce silver explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-21T18:20:07.368Z"
+    }
+  }
+}
