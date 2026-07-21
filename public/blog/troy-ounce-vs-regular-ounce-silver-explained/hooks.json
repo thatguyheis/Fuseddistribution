@@ -1,0 +1,10 @@
+{
+  "hook": "Buying silver in troy ounces can save you $3 per ounce.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "30.00",
+    "label": "Silver Price Per Troy Ounce"
+  },
+  "discussion_question": "Considering the weight differences, which unit of measurement do you find most confusing?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

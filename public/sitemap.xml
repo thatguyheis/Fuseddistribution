@@ -548,9 +548,15 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/troy-ounce-vs-regular-ounce-silver-explained/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/pcgs-ngc-certified-silver-coins-guide/</loc>

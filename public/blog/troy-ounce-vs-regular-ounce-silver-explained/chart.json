@@ -1,0 +1,27 @@
+{
+  "title": "Silver Price Comparison: Troy Ounce vs. Regular Ounce",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "$30.00 (Troy Ounce)",
+      "value": "30.00"
+    },
+    {
+      "label": "$27.00 (Regular Ounce)",
+      "value": "27.00"
+    },
+    {
+      "label": "$930.00 (1 Kilogram - Troy Ounce)",
+      "value": "930.00"
+    },
+    {
+      "label": "$810.00 (1 Kilogram - Regular Ounce)",
+      "value": "810.00"
+    }
+  ],
+  "hero_stat": {
+    "value": "30.00",
+    "label": "Silver Price Per Troy Ounce"
+  },
+  "narration": "This chart illustrates the significant price difference between silver sold in troy ounces and regular ounces. As of October 26, 2023, a troy ounce costs $30.00, while a regular ounce is priced at $27.00. This difference becomes even more pronounced when purchasing larger quantities, highlighting the importance of verifying the unit of weight before making a purchase. Understanding this distinction can save you considerable money."
+}
