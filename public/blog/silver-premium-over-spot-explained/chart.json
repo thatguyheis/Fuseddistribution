@@ -1,0 +1,35 @@
+{
+  "title": "Silver Premium vs. Spot Price",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "Premium on American Eagle Coin",
+      "value": "$4.00"
+    },
+    {
+      "label": "Premium on American Eagle Coin",
+      "value": "$3.50"
+    },
+    {
+      "label": "Premium on American Eagle Coin",
+      "value": "$4.50"
+    },
+    {
+      "label": "Premium for 10 Coins",
+      "value": "$40.00"
+    },
+    {
+      "label": "Premium for 10 Coins",
+      "value": "$20.00"
+    },
+    {
+      "label": "Storage Costs",
+      "value": "$50-$200"
+    }
+  ],
+  "hero_stat": {
+    "value": "16.3%",
+    "label": "Premium Percentage"
+  },
+  "narration": "This chart illustrates the impact of silver premiums on your investment cost. A premium of $4.00 on a one-ounce American Eagle coin results in a total cost of $27.78, representing a 16.3% premium over the spot price. Comparing different dealer premiums can significantly affect your overall return."
+}
