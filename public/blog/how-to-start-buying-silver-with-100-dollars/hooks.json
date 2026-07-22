@@ -1,0 +1,10 @@
+{
+  "hook": "$100 buys you roughly 1.78 ounces of silver \u2013 start building your reserve today.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$100",
+    "label": "Goal What Silver Can"
+  },
+  "discussion_question": "Considering all this, what\u2019s *your* initial plan for investing just $100 in silver?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Silver Purchase with $100: Charting Your Start",
+  "source": "Fused Distribution (2026-07-20)",
+  "bars": [
+    {
+      "label": "Silver Price (Spot)",
+      "value": "$56.08"
+    },
+    {
+      "label": "Ounces Purchased",
+      "value": "1.78"
+    },
+    {
+      "label": "Premium (Small Coin)",
+      "value": "10-20%"
+    },
+    {
+      "label": "Premium (Large Bar)",
+      "value": "5-10%"
+    },
+    {
+      "label": "Coin Premium",
+      "value": "$5-$10"
+    },
+    {
+      "label": "Bar Premium",
+      "value": "$2-$5"
+    }
+  ],
+  "hero_stat": {
+    "value": "1.78",
+    "label": "Ounces of Silver Purchased"
+  },
+  "narration": "This chart illustrates the key numbers involved in buying silver with $100. Starting with a spot price of $56.08 per ounce, you can acquire approximately 1.78 ounces of silver. Premiums, typically ranging from 5% to 20% depending on the type of silver, add to the overall cost. This chart provides a clear starting point for your silver investment journey."
+}
