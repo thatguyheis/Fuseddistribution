@@ -1,0 +1,35 @@
+{
+  "title": "Silver vs. Cash: A Tangible Hedge",
+  "source": "Bureau of Labor Statistics (2024), National Insurance Crime Bureau (2023), World Gold Council (2020)",
+  "bars": [
+    {
+      "label": "3.1% CPI Increase",
+      "value": "3.1%"
+    },
+    {
+      "label": "34.4 Ounces of Silver",
+      "value": "34.4"
+    },
+    {
+      "label": "$29.36 per Ounce",
+      "value": "29.36"
+    },
+    {
+      "label": "1.5 Billion Jewelry Losses",
+      "value": "1.5"
+    },
+    {
+      "label": "2% Target Inflation",
+      "value": "2"
+    },
+    {
+      "label": "20% Burglaries Involve Valuables",
+      "value": "20"
+    }
+  ],
+  "hero_stat": {
+    "value": "3.1%",
+    "label": "Inflation Rate Increase"
+  },
+  "narration": "This chart illustrates the eroding purchasing power of cash due to inflation, highlighted by a 3.1% increase in the Consumer Price Index.  It then compares this to the potential return of investing in silver, showing that $1,000 in cash buys approximately 34.4 ounces of silver based on the current spot price of $29.36 per ounce.  The chart also demonstrates the importance of secure storage, with a significant percentage of burglaries targeting valuable items like jewelry."
+}
