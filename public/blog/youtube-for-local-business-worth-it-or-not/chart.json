@@ -1,0 +1,35 @@
+{
+  "title": "YouTube Marketing for Local Businesses: Key Stats",
+  "source": "YouTube Creator Blog (2023), HubSpot (2023), Wyzowl (2023), WordStream (2023)",
+  "bars": [
+    {
+      "label": "68% of YouTube Viewers Use Platform for Local Discovery",
+      "value": "68%"
+    },
+    {
+      "label": "76% of YouTube Viewers Research Products/Services",
+      "value": "76%"
+    },
+    {
+      "label": "62% Consumers Prefer Businesses Seen on YouTube",
+      "value": "62%"
+    },
+    {
+      "label": "2.70 Dollars - Average Cost Per Click (YouTube Ads)",
+      "value": "2.70"
+    },
+    {
+      "label": "50% Average Watch Time",
+      "value": "50%"
+    },
+    {
+      "label": "70% of viewers watch videos on mobile devices",
+      "value": "70%"
+    }
+  ],
+  "hero_stat": {
+    "value": "68%",
+    "label": "Local Discovery Rate"
+  },
+  "narration": "This chart highlights key statistics demonstrating the effectiveness of YouTube marketing for local businesses.  A significant 68% of YouTube viewers use the platform to discover local businesses, and 76% research products and services before purchasing.  Furthermore, a recent survey found that 62% of consumers are more likely to buy from a business they\u2019ve seen on YouTube.  These figures illustrate YouTube\u2019s potential to drive local sales and build brand awareness."
+}

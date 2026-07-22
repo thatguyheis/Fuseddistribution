@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-20 | youtube-for-local-business-worth-it-or-not | General | youtube for local business worth it or not |
 | 2026-07-18 | short-form-video-for-local-business-complete-guide | General | short form video for local business complete guide |
 | 2026-07-18 | evergreen-content-ideas-for-small-business-website | General | evergreen content ideas for small business website |
 | 2026-07-17 | how-often-should-a-small-business-blog | General | how often should a small business blog |
