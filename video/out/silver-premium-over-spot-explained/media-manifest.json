@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver premium over spot explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver premium over spot explained",
+      "prefer": "video",
+      "updatedAt": "2026-07-22T19:48:26.072Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver premium over spot explained understanding difference between\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver premium over spot explained understanding difference between",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T19:48:26.097Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver premium over spot explained 2 price cost\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver premium over spot explained 2 price cost",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T19:48:26.097Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver premium over spot explained 23 78 spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained 23 78 spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:27.203Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver premium over spot explained 10 price cost\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained 10 price cost",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:27.771Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver premium over spot explained believe honesty clarity\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained believe honesty clarity",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:28.373Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver premium over spot explained while spot price\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained while spot price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:29.027Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver premium over spot explained 10 one ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained 10 one ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:29.818Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver premium over spot explained stock wide selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained stock wide selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:30.959Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver premium over spot explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver premium over spot explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:48:31.908Z"
+    }
+  }
+}

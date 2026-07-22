@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "facebook ads budget for local business how much to spend",
+      "prefer": "video",
+      "updatedAt": "2026-07-22T18:17:34.692Z"
+    },
+    "1": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend probably frustrated website\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "facebook ads budget for local business how much to spend probably frustrated website",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T18:17:34.730Z"
+    },
+    "2": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend 50 to 100\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "facebook ads budget for local business how much to spend 50 to 100",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T18:17:34.730Z"
+    },
+    "3": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend 5 mile radius\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend 5 mile radius",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:35.810Z"
+    },
+    "4": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend 10 budget business\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend 10 budget business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:36.458Z"
+    },
+    "5": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend match same address\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend match same address",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:37.064Z"
+    },
+    "6": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend only looking how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend only looking how",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:37.779Z"
+    },
+    "7": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend once identified high\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend once identified high",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:38.473Z"
+    },
+    "8": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend it s better\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend it s better",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:39.173Z"
+    },
+    "9": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend fused distribution technology\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend fused distribution technology",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:39.842Z"
+    },
+    "10": {
+      "key": "{\"query\":\"facebook ads budget for local business how much to spend customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "facebook ads budget for local business how much to spend customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:17:40.603Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"google ads for small business is it worth it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "google ads for small business is it worth it",
+      "prefer": "video",
+      "updatedAt": "2026-07-22T18:47:48.079Z"
+    },
+    "1": {
+      "key": "{\"query\":\"google ads for small business is it worth it small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google ads for small business is it worth it small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T18:47:48.125Z"
+    },
+    "2": {
+      "key": "{\"query\":\"google ads for small business is it worth it someone town searching\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google ads for small business is it worth it someone town searching",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T18:47:48.125Z"
+    },
+    "3": {
+      "key": "{\"query\":\"google ads for small business is it worth it well optimized gbp\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it well optimized gbp",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:49.006Z"
+    },
+    "4": {
+      "key": "{\"query\":\"google ads for small business is it worth it where real value\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it where real value",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:49.832Z"
+    },
+    "5": {
+      "key": "{\"query\":\"google ads for small business is it worth it someone searches plumber\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it someone searches plumber",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:50.696Z"
+    },
+    "6": {
+      "key": "{\"query\":\"google ads for small business is it worth it pick one specific\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it pick one specific",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:51.246Z"
+    },
+    "7": {
+      "key": "{\"query\":\"google ads for small business is it worth it google ads local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it google ads local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:51.780Z"
+    },
+    "8": {
+      "key": "{\"query\":\"google ads for small business is it worth it ads work much\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it ads work much",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:52.342Z"
+    },
+    "9": {
+      "key": "{\"query\":\"google ads for small business is it worth it 5 cost less\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it 5 cost less",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:53.100Z"
+    },
+    "10": {
+      "key": "{\"query\":\"google ads for small business is it worth it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "google ads for small business is it worth it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T18:47:53.662Z"
+    }
+  }
+}

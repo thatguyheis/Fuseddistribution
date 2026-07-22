@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to start buying silver with 100 dollars",
+      "prefer": "video",
+      "updatedAt": "2026-07-22T19:18:37.819Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars want build physical\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to start buying silver with 100 dollars want build physical",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T19:18:37.845Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars quickly see real\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to start buying silver with 100 dollars quickly see real",
+      "prefer": "photo",
+      "updatedAt": "2026-07-22T19:18:37.845Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars want seller who\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars want seller who",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:38.738Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars 10 to 20\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars 10 to 20",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:39.325Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars 5 to 10\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars 5 to 10",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:40.330Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars 2026 to 07\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars 2026 to 07",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:41.006Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars 5 to 10\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars 5 to 10",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:41.617Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars keep eye these\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars keep eye these",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:42.136Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars staying informed about\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars staying informed about",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:42.812Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars stock wide selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars stock wide selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:43.762Z"
+    },
+    "11": {
+      "key": "{\"query\":\"how to start buying silver with 100 dollars customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to start buying silver with 100 dollars customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-22T19:18:44.490Z"
+    }
+  }
+}

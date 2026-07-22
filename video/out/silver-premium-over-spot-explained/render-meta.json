@@ -1,0 +1,52 @@
+{
+  "slug": "silver-premium-over-spot-explained",
+  "renderedAt": "2026-07-22T19:57:46.503Z",
+  "hookType": "stat",
+  "segmentCount": 10,
+  "scriptDuration": 197.352,
+  "renderedDuration": 192.490667,
+  "scriptHash": "a73da00ff358132180120c8fcd0f16d43c99bd23e93d985a3c5074762d97583b",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -7.9,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.031335021402162974
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.96,
+      "1": 22.2,
+      "2": 26.28,
+      "3": 22.9,
+      "4": 22.2,
+      "5": 23.12,
+      "6": 16.94,
+      "7": 24.32,
+      "8": 23,
+      "9": 5.2
+    },
+    "totalNarrationSeconds": 190.12
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}
