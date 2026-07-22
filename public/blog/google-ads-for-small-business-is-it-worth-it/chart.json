@@ -1,0 +1,23 @@
+{
+  "title": "Google Ads Cost Per Call",
+  "source": "Study (2023)",
+  "bars": [
+    {
+      "label": "68%",
+      "value": "68%"
+    },
+    {
+      "label": "2.5x",
+      "value": "2.5x"
+    },
+    {
+      "label": "$5 or Less",
+      "value": "5"
+    }
+  ],
+  "hero_stat": {
+    "value": "68%",
+    "label": "Local Search Conversion Rate"
+  },
+  "narration": "This chart highlights key statistics related to Google Ads for local businesses. A recent study found that 68% of local searches lead to a purchase within 24 hours, demonstrating the immediate impact of targeted online advertising. Businesses with complete Google Business Profiles receive 2.5 times more calls than those with incomplete profiles.  A cost per call of $5 or less is generally considered excellent for local businesses, showcasing the potential for a strong return on investment."
+}
