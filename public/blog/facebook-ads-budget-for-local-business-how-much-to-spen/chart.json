@@ -1,0 +1,31 @@
+{
+  "title": "Facebook Ads Budget for Local Businesses",
+  "source": "Fused Distribution Technology Solutions (2023)",
+  "bars": [
+    {
+      "label": "$50 - $100",
+      "value": "50"
+    },
+    {
+      "label": "$10",
+      "value": "10"
+    },
+    {
+      "label": "92%",
+      "value": "92"
+    },
+    {
+      "label": "5-mile radius",
+      "value": "5"
+    },
+    {
+      "label": "100",
+      "value": "100"
+    }
+  ],
+  "hero_stat": {
+    "value": "92",
+    "label": "Ad Conversion Rate"
+  },
+  "narration": "This chart illustrates key budget and performance metrics for local businesses using Facebook ads. Starting with a small weekly budget of $50 to $100 allows for targeted testing, while aiming for a cost per lead of $10 or less is crucial for efficient spending. A conversion rate of 92% demonstrates the effectiveness of focused, action-oriented campaigns."
+}
