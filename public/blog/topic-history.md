@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-23 | online-directories-for-small-business-which-ones-matter | General | online directories for small business which ones matter |
 | 2026-07-21 | facebook-ads-budget-for-local-business-how-much-to-spen | General | facebook ads budget for local business how much to spend |
 | 2026-07-21 | google-ads-for-small-business-is-it-worth-it | General | google ads for small business is it worth it |
 | 2026-07-20 | youtube-for-local-business-worth-it-or-not | General | youtube for local business worth it or not |
