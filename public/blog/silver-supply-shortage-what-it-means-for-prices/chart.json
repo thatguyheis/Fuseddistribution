@@ -1,0 +1,35 @@
+{
+  "title": "Silver Supply Shortage: Key Metrics",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "Refinery Capacity Drop",
+      "value": "15%"
+    },
+    {
+      "label": "Current Supply Shortfall",
+      "value": "8%"
+    },
+    {
+      "label": "Spot Price Increase",
+      "value": "$31.25"
+    },
+    {
+      "label": "Price Increase (6 Months)",
+      "value": "$31.25"
+    },
+    {
+      "label": "Global Silver Demand",
+      "value": "850"
+    },
+    {
+      "label": "Price per Ounce (Current)",
+      "value": "$31.25"
+    }
+  ],
+  "hero_stat": {
+    "value": "8%",
+    "label": "Current Supply Shortfall"
+  },
+  "narration": "This chart highlights key numbers driving the current silver market. Refinery capacity has dropped by 15% in the last quarter, leading to an 8% supply shortfall compared to the previous year.  The spot price has increased significantly, currently at $31.25 per ounce, reflecting the imbalance between supply and demand.  These figures underscore the challenges and opportunities for investors looking to build a silver reserve."
+}
