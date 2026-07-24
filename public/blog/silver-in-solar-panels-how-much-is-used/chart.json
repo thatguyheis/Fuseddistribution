@@ -1,0 +1,15 @@
+{
+  "title": "Solar Panel Silver Content",
+  "source": "Article (2023)",
+  "bars": [
+    {
+      "label": "Silver Content",
+      "value": "15%"
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Silver Content in Solar Panels"
+  },
+  "narration": "This chart shows the percentage of silver used in solar panel manufacturing. According to the article, this content is a component cost, separate from the silver you might buy for investment. It's a key factor in understanding solar panel pricing."
+}
