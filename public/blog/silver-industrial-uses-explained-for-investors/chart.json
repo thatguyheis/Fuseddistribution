@@ -1,0 +1,23 @@
+{
+  "title": "Solar Panel Efficiency",
+  "source": "Article",
+  "bars": [
+    {
+      "label": "Panel Efficiency",
+      "value": "92%"
+    },
+    {
+      "label": "Panel Efficiency",
+      "value": "85%"
+    },
+    {
+      "label": "Panel Efficiency",
+      "value": "95%"
+    }
+  ],
+  "hero_stat": {
+    "value": "92%",
+    "label": "Solar Panel Efficiency"
+  },
+  "narration": "The article highlights silver's crucial role in boosting solar panel efficiency, with panels achieving up to 95% efficiency thanks to silver's conductivity and corrosion resistance. This directly impacts the value of silver in industrial applications."
+}

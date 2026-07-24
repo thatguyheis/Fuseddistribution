@@ -110,6 +110,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-23 | silver-industrial-uses-explained-for-investors | General | silver industrial uses explained for investors |
 | 2026-07-22 | silver-vs-cash-which-holds-value-better | General | silver vs cash which holds value better |
 | 2026-07-21 | how-to-start-buying-silver-with-100-dollars | General | how to start buying silver with 100 dollars |
 | 2026-07-21 | silver-premium-over-spot-explained | General | silver premium over spot explained |
