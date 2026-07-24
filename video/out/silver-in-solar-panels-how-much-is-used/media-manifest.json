@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver in solar panels how much is used\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver in solar panels how much is used",
+      "prefer": "video",
+      "updatedAt": "2026-07-24T19:39:34.391Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver in solar panels how much is used how much silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver in solar panels how much is used how much silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T19:39:34.407Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver in solar panels how much is used specifically used extensively\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver in solar panels how much is used specifically used extensively",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T19:39:34.407Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver in solar panels how much is used 0 3 to\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used 0 3 to",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:35.311Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver in solar panels how much is used 15 to 20\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used 15 to 20",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:36.181Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver in solar panels how much is used monocrystalline cells generally\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used monocrystalline cells generally",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:37.078Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver in solar panels how much is used illustrates scale silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used illustrates scale silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:38.189Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver in solar panels how much is used silver used solar\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used silver used solar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:38.843Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver in solar panels how much is used while silver currently\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used while silver currently",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:39.441Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver in solar panels how much is used essential scrutinize specifications\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used essential scrutinize specifications",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:40.471Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver in solar panels how much is used also advancements recycling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used also advancements recycling",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:41.313Z"
+    },
+    "11": {
+      "key": "{\"query\":\"silver in solar panels how much is used customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver in solar panels how much is used customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:39:41.899Z"
+    }
+  }
+}

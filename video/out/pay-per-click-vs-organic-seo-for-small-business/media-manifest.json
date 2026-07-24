@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "pay per click vs organic SEO for small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-24T19:11:03.001Z"
+    },
+    "1": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "pay per click vs organic SEO for small business small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T19:11:03.082Z"
+    },
+    "2": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business pay click ppc\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "pay per click vs organic SEO for small business pay click ppc",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T19:11:03.082Z"
+    },
+    "3": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business significant investment disappears\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business significant investment disappears",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:04.389Z"
+    },
+    "4": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business 500 to 1000\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business 500 to 1000",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:05.210Z"
+    },
+    "5": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business make sure gbp\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business make sure gbp",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:05.915Z"
+    },
+    "6": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business example run ppc\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business example run ppc",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:06.681Z"
+    },
+    "7": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business use data refine\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business use data refine",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:07.320Z"
+    },
+    "8": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business add photos videos\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business add photos videos",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:08.009Z"
+    },
+    "9": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business focus delivering value\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business focus delivering value",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:08.694Z"
+    },
+    "10": {
+      "key": "{\"query\":\"pay per click vs organic SEO for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "pay per click vs organic SEO for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T19:11:09.357Z"
+    }
+  }
+}

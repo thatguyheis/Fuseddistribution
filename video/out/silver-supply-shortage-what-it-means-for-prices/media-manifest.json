@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver supply shortage what it means for prices",
+      "prefer": "video",
+      "updatedAt": "2026-07-24T18:44:54.894Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices wondering what happening\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver supply shortage what it means for prices wondering what happening",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T18:44:54.915Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices 15 silver last\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver supply shortage what it means for prices 15 silver last",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T18:44:54.915Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices think like limited\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices think like limited",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:55.705Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices factor investment plans\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices factor investment plans",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:56.429Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices here step strategy\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices here step strategy",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:57.107Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices tangible asset provides\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices tangible asset provides",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:57.825Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices prioritize sourcing our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices prioritize sourcing our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:58.410Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices pride ourselves our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices pride ourselves our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:58.948Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices silver market remains\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices silver market remains",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:44:59.601Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver supply shortage what it means for prices customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply shortage what it means for prices customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:45:00.368Z"
+    }
+  }
+}

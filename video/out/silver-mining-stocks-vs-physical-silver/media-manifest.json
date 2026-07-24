@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver mining stocks vs physical silver",
+      "prefer": "video",
+      "updatedAt": "2026-07-24T18:17:48.858Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver mining stocks vs physical silver considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T18:17:48.883Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver however there two\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver mining stocks vs physical silver however there two",
+      "prefer": "photo",
+      "updatedAt": "2026-07-24T18:17:48.884Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver value directly tied\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver mining stocks vs physical silver value directly tied",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:05.196Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver 13 68 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver 13 68 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:06.242Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver however also comes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver mining stocks vs physical silver however also comes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:21.877Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver 29 to 30\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver 29 to 30",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:24.296Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver 5 to 10\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver 5 to 10",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:27.312Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver diversify investments across\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver diversify investments across",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:32.047Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver 3 1 demand\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver 3 1 demand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:44.245Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver recommend starting small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver recommend starting small",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:45.297Z"
+    },
+    "11": {
+      "key": "{\"query\":\"silver mining stocks vs physical silver customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver mining stocks vs physical silver customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-24T18:18:46.079Z"
+    }
+  }
+}

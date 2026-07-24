@@ -1,0 +1,54 @@
+{
+  "slug": "silver-in-solar-panels-how-much-is-used",
+  "renderedAt": "2026-07-24T19:49:12.574Z",
+  "hookType": "stat",
+  "segmentCount": 12,
+  "scriptDuration": 230.418,
+  "renderedDuration": 224.448,
+  "scriptHash": "41a2d817a73916f4916aa6bcdfdfe7c21f371d4c0760a9f4cec97db31fedf03e",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-valley-sunset-127.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09463025179229612
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.32,
+      "1": 20.44,
+      "2": 18.28,
+      "3": 20.32,
+      "4": 26.58,
+      "5": 21.48,
+      "6": 21.34,
+      "7": 23.16,
+      "8": 17.94,
+      "9": 23.44,
+      "10": 18.5,
+      "11": 5.92
+    },
+    "totalNarrationSeconds": 221.72
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/valley-sunset-127/"
+  },
+  "photosUsed": 12,
+  "mediaUsed": 12,
+  "photoCount": 12,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 9
+  }
+}
