@@ -111,6 +111,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-24 | silver-mining-stocks-vs-physical-silver | General | silver mining stocks vs physical silver |
 | 2026-07-24 | silver-supply-shortage-what-it-means-for-prices | General | silver supply shortage what it means for prices |
 | 2026-07-23 | silver-in-solar-panels-how-much-is-used | General | silver in solar panels how much is used |
 | 2026-07-23 | silver-industrial-uses-explained-for-investors | General | silver industrial uses explained for investors |

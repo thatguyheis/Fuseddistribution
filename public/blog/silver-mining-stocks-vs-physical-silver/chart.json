@@ -1,0 +1,35 @@
+{
+  "title": "Silver Mining Stocks vs. Physical Silver",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "Mining Stock Return (10yr avg)",
+      "value": "6.8%"
+    },
+    {
+      "label": "S&P 500 Return (10yr avg)",
+      "value": "10.5%"
+    },
+    {
+      "label": "Silver Spot Price (Nov 2023)",
+      "value": "$29.16"
+    },
+    {
+      "label": "Bullion Premium (Approx)",
+      "value": "$29 - $30"
+    },
+    {
+      "label": "Spread (Retail - Spot)",
+      "value": "5-10%"
+    },
+    {
+      "label": "Global Mine Production (2023)",
+      "value": "683.7 million ounces"
+    }
+  ],
+  "hero_stat": {
+    "value": "6.8%",
+    "label": "Silver Mining Stock Average Return (10 years)"
+  },
+  "narration": "This chart compares the historical returns of silver mining stocks to the S&P 500, highlighting the potential for higher gains but also increased risk. It also shows the current spot price of silver and the typical premium buyers pay for physical bullion, illustrating the trade-offs between these two investment approaches."
+}
