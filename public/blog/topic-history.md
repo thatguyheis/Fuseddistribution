@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-24 | apple-maps-business-listing-how-to-claim-it | General | apple maps business listing how to claim it |
 | 2026-07-23 | pay-per-click-vs-organic-seo-for-small-business | General | pay per click vs organic SEO for small business |
 | 2026-07-23 | online-directories-for-small-business-which-ones-matter | General | online directories for small business which ones matter |
 | 2026-07-21 | facebook-ads-budget-for-local-business-how-much-to-spen | General | facebook ads budget for local business how much to spend |

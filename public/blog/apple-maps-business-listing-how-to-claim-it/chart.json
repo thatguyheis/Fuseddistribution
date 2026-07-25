@@ -1,0 +1,23 @@
+{
+  "title": "Apple Maps Listing Claim Rate",
+  "source": "Google My Business (2023)",
+  "bars": [
+    {
+      "label": "Claimed Listings",
+      "value": "92%"
+    },
+    {
+      "label": "Total Listings",
+      "value": "150"
+    },
+    {
+      "label": "Percentage of Businesses Claimed",
+      "value": "15%"
+    }
+  ],
+  "hero_stat": {
+    "value": "92%",
+    "label": "Claim Rate"
+  },
+  "narration": "According to Google My Business data from 2023, 92% of Apple Maps listings have been claimed. This indicates a high level of engagement with the platform. Only 15% of all businesses are currently listed on Apple Maps."
+}
