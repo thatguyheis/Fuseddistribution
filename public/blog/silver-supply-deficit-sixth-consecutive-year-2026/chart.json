@@ -1,0 +1,35 @@
+{
+  "title": "Silver Supply Deficit: 76.2 Million Ounces Short",
+  "source": "Industry Analysts (2026)",
+  "bars": [
+    {
+      "label": "2023 Mine Production (Million Ounces)",
+      "value": "583.8"
+    },
+    {
+      "label": "2026 Projected Shortfall (Million Ounces)",
+      "value": "100"
+    },
+    {
+      "label": "2022 Deficit (Million Ounces)",
+      "value": "58.7"
+    },
+    {
+      "label": "Silver Production Cost Increase (Percentage)",
+      "value": "30"
+    },
+    {
+      "label": "2026 Price Increase Prediction (Percentage)",
+      "value": "25"
+    },
+    {
+      "label": "Gold Price (USD)",
+      "value": "2380"
+    }
+  ],
+  "hero_stat": {
+    "value": "100",
+    "label": "Projected 2026 Silver Supply Deficit"
+  },
+  "narration": "This chart illustrates the growing silver supply deficit, projected to reach over 100 million ounces by 2026.  Driven by reduced mine production, rising production costs, and slowed new discoveries \u2013 with a significant drop in new silver discoveries of 75% over the last decade \u2013 this deficit is fueling upward pressure on silver prices.  The gap between supply and demand is widening, presenting investors with an opportunity to strategically position themselves."
+}
