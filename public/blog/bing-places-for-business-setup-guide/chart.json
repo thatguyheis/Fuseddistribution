@@ -1,0 +1,31 @@
+{
+  "title": "Bing Places Listing Engagement Stats",
+  "source": "Analysis (2023)",
+  "bars": [
+    {
+      "label": "Bing Search Share",
+      "value": "16%"
+    },
+    {
+      "label": "Recommended Photos",
+      "value": "10"
+    },
+    {
+      "label": "Video Engagement Boost",
+      "value": "40%"
+    },
+    {
+      "label": "Review Trust",
+      "value": "93%"
+    },
+    {
+      "label": "Description Length",
+      "value": "150-200 words"
+    }
+  ],
+  "hero_stat": {
+    "value": "16%",
+    "label": "Bing's Market Share"
+  },
+  "narration": "This chart highlights key statistics related to optimizing your Bing Places for Business listing.  Bing holds 16% of the US search market, and businesses with high-quality visuals, like 10 photos and videos, see a 40% boost in engagement.  Furthermore, 93% of consumers trust online reviews, emphasizing the importance of actively managing your listing's reputation. These numbers demonstrate the potential impact of a well-maintained profile."
+}
