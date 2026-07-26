@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver supply deficit sixth consecutive year 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-26T18:44:05.226Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 silver pretty metal\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 silver pretty metal",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T18:44:05.319Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 current deficit projected\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 current deficit projected",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T18:44:05.320Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 75 silver last\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 75 silver last",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:07.925Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 15 to 25\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 15 to 25",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:11.549Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 20 panel silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 20 panel silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:13.800Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 2 380 price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 2 380 price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:14.939Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 proper storage essential\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 proper storage essential",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:16.905Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 own research understand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 own research understand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:18.355Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 world transitions sustainable\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 world transitions sustainable",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:19.663Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver supply deficit sixth consecutive year 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver supply deficit sixth consecutive year 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T18:44:20.914Z"
+    }
+  }
+}

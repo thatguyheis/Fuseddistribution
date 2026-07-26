@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver industrial uses explained for investors\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver industrial uses explained for investors",
+      "prefer": "video",
+      "updatedAt": "2026-07-26T19:38:47.307Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver industrial uses explained for investors silver investor looking\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver industrial uses explained for investors silver investor looking",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T19:38:47.407Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver industrial uses explained for investors silver unique properties\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver industrial uses explained for investors silver unique properties",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T19:38:47.407Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver industrial uses explained for investors efficiency solar panels\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver industrial uses explained for investors efficiency solar panels",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:03.570Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver industrial uses explained for investors miniaturization electronics dramatically\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver industrial uses explained for investors miniaturization electronics dramatically",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:27.964Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver industrial uses explained for investors 10 bars silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors 10 bars silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:28.854Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver industrial uses explained for investors automotive industry increasing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors automotive industry increasing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:29.567Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver industrial uses explained for investors investment grade silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors investment grade silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:30.616Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver industrial uses explained for investors don look price\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors don look price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:45.540Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver industrial uses explained for investors our transparent pricing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors our transparent pricing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:52.910Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver industrial uses explained for investors customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver industrial uses explained for investors customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:39:53.338Z"
+    }
+  }
+}

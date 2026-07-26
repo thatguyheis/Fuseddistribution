@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"apple maps business listing how to claim it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "apple maps business listing how to claim it",
+      "prefer": "video",
+      "updatedAt": "2026-07-26T19:11:29.519Z"
+    },
+    "1": {
+      "key": "{\"query\":\"apple maps business listing how to claim it small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "apple maps business listing how to claim it small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T19:11:29.571Z"
+    },
+    "2": {
+      "key": "{\"query\":\"apple maps business listing how to claim it large number smartphone\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "apple maps business listing how to claim it large number smartphone",
+      "prefer": "photo",
+      "updatedAt": "2026-07-26T19:11:29.571Z"
+    },
+    "3": {
+      "key": "{\"query\":\"apple maps business listing how to claim it 1 business download\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it 1 business download",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:30.453Z"
+    },
+    "4": {
+      "key": "{\"query\":\"apple maps business listing how to claim it 4 claim listing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it 4 claim listing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:31.956Z"
+    },
+    "5": {
+      "key": "{\"query\":\"apple maps business listing how to claim it category select most\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it category select most",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:33.185Z"
+    },
+    "6": {
+      "key": "{\"query\":\"apple maps business listing how to claim it here some common\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it here some common",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:33.890Z"
+    },
+    "7": {
+      "key": "{\"query\":\"apple maps business listing how to claim it here few tips\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it here few tips",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:34.573Z"
+    },
+    "8": {
+      "key": "{\"query\":\"apple maps business listing how to claim it creates cohesive recognizable\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it creates cohesive recognizable",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:36.038Z"
+    },
+    "9": {
+      "key": "{\"query\":\"apple maps business listing how to claim it apple continues invest\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it apple continues invest",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:36.898Z"
+    },
+    "10": {
+      "key": "{\"query\":\"apple maps business listing how to claim it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "apple maps business listing how to claim it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-26T19:11:37.833Z"
+    }
+  }
+}
