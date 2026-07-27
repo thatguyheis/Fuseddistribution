@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver reserve vs 401k which makes more sense",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T18:12:03.988Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 401 silver common\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver reserve vs 401k which makes more sense 401 silver common",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T18:12:04.008Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 401 generally designed\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver reserve vs 401k which makes more sense 401 generally designed",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T18:12:04.008Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 401 investments vary\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense 401 investments vary",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:06.700Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 50 to 500\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense 50 to 500",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:08.348Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense inflation hedge silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense inflation hedge silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:09.923Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 401 silver plan\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense 401 silver plan",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:10.959Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense create account provide\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense create account provide",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:12.187Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense 12 silver acknowledging\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense 12 silver acknowledging",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:12.833Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense don treat either\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense don treat either",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:13.735Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver reserve vs 401k which makes more sense customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve vs 401k which makes more sense customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:12:14.739Z"
+    }
+  }
+}

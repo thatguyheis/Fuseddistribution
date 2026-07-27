@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"best free AI tools for small business 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "best free AI tools for small business 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T17:45:17.466Z"
+    },
+    "1": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 run small business\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 run small business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:20.325Z"
+    },
+    "2": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 before sign anything\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 before sign anything",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:22.458Z"
+    },
+    "3": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 main problem social\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 main problem social",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:24.186Z"
+    },
+    "4": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 stronger prompt looks\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 stronger prompt looks",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:25.933Z"
+    },
+    "5": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 canva free remains\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 canva free remains",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:27.417Z"
+    },
+    "6": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 use fast starting\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 use fast starting",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:27.981Z"
+    },
+    "7": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 300 transcription minutes\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 300 transcription minutes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:28.913Z"
+    },
+    "8": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 lot calls quotes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 lot calls quotes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:30.918Z"
+    },
+    "9": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 ask chatgpt turn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 ask chatgpt turn",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:32.208Z"
+    },
+    "10": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 businesses value ones\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 businesses value ones",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:33.253Z"
+    },
+    "11": {
+      "key": "{\"query\":\"best free AI tools for small business 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "best free AI tools for small business 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:45:33.673Z"
+    }
+  }
+}

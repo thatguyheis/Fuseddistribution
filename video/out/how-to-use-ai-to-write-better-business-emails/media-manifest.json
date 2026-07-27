@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to use AI to write better business emails\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to use AI to write better business emails",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T17:22:44.212Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to use AI to write better business emails writing business email\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to use AI to write better business emails writing business email",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T17:22:44.253Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to use AI to write better business emails still earlier process\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to use AI to write better business emails still earlier process",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T17:22:44.253Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to use AI to write better business emails turn bullet points\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails turn bullet points",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:45.361Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to use AI to write better business emails pick tool matches\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails pick tool matches",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:48.033Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to use AI to write better business emails facts must included\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails facts must included",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:50.586Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to use AI to write better business emails especially helpful follow\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails especially helpful follow",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:52.023Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to use AI to write better business emails 120 words draft\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails 120 words draft",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:53.184Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to use AI to write better business emails message short enough\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails message short enough",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:54.094Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to use AI to write better business emails does remove judgment\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails does remove judgment",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:54.975Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to use AI to write better business emails customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to write better business emails customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T17:22:55.654Z"
+    }
+  }
+}

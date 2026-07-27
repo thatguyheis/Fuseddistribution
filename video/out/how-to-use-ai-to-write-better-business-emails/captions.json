@@ -1,0 +1,259 @@
+{
+  "0": [
+    {
+      "text": "AI can generate emails with a 20 percent higher ROI.",
+      "startSec": 0,
+      "endSec": 3.24
+    }
+  ],
+  "1": [
+    {
+      "text": "Writing business email is easy to delay and hard to do well when you are juggling calls, estimates",
+      "startSec": 0,
+      "endSec": 5.311188811188811
+    },
+    {
+      "text": "customer service, and actual delivery work.",
+      "startSec": 5.1611888111888105,
+      "endSec": 7.491608391608391
+    },
+    {
+      "text": "AI can help",
+      "startSec": 7.491608391608391,
+      "endSec": 8.087762237762238
+    },
+    {
+      "text": "but only if you use it as a drafting and editing assistant instead of a substitute for judgment.",
+      "startSec": 8.087762237762238,
+      "endSec": 13.290559440559441
+    },
+    {
+      "text": "The goal is not to sound more robotic.",
+      "startSec": 13.290559440559441,
+      "endSec": 15.5
+    }
+  ],
+  "2": [
+    {
+      "text": "If you are still earlier in the process",
+      "startSec": 0,
+      "endSec": 2.2460240963855425
+    },
+    {
+      "text": "How to Start Using AI in Your Small Business is the better first step.",
+      "startSec": 2.0960240963855425,
+      "endSec": 6.127349397590363
+    },
+    {
+      "text": "Email is still where quotes are approved, meetings are confirmed, complaints are handled",
+      "startSec": 6.127349397590363,
+      "endSec": 11.19530120481928
+    },
+    {
+      "text": "and next steps are documented.",
+      "startSec": 11.19530120481928,
+      "endSec": 12.923012048192774
+    },
+    {
+      "text": "A weak email slows down a sale or creates confusion.",
+      "startSec": 12.923012048192774,
+      "endSec": 15.917710843373497
+    },
+    {
+      "text": "A clear email can move a lead forward in two minutes.",
+      "startSec": 15.917710843373497,
+      "endSec": 19.12
+    }
+  ],
+  "3": [
+    {
+      "text": "It can: turn bullet points into a polished draft rewrite a message to sound friendlier or firmer shorten a long reply generate subject line options summarize a thread before you answer It is weak at judgment.",
+      "startSec": 0,
+      "endSec": 10.775257731958764
+    },
+    {
+      "text": "It does not know whether you should offer a refund, push for the close",
+      "startSec": 10.625257731958763,
+      "endSec": 14.251546391752578
+    },
+    {
+      "text": "or avoid making a promise you cannot keep.",
+      "startSec": 14.251546391752578,
+      "endSec": 16.427319587628865
+    },
+    {
+      "text": "You still need to review every important message before it goes out.",
+      "startSec": 16.427319587628865,
+      "endSec": 20.1
+    }
+  ],
+  "4": [
+    {
+      "text": "Pick the tool that matches the job: use a chat assistant when you need ideas, structure",
+      "startSec": 0,
+      "endSec": 4.62
+    },
+    {
+      "text": "or a first draft use an inbox assistant when you already work inside Gmail and want to draft in place use a writing assistant when your draft is mostly done and needs cleanup If you are new to AI",
+      "startSec": 4.47,
+      "endSec": 14.825172413793105
+    },
+    {
+      "text": "start with one tool and one use case.",
+      "startSec": 14.825172413793105,
+      "endSec": 16.94
+    }
+  ],
+  "5": [
+    {
+      "text": "the facts that must be included 5.",
+      "startSec": 0,
+      "endSec": 1.9143291139240506
+    },
+    {
+      "text": "the length you want Here is a stronger example: Write a follow up email to a customer who received a fencing estimate yesterday.",
+      "startSec": 1.7643291139240507,
+      "endSec": 8.971215189873417
+    },
+    {
+      "text": "Mention the quoted timeline, remind them that installation slots are filling",
+      "startSec": 8.971215189873417,
+      "endSec": 13.250303797468355
+    },
+    {
+      "text": "and end with one direct call to reply by Friday if they want to move forward.",
+      "startSec": 13.250303797468355,
+      "endSec": 17.585696202531647
+    },
+    {
+      "text": "That prompt gives the model enough context to produce something close to usable.",
+      "startSec": 17.585696202531647,
+      "endSec": 22.24
+    }
+  ],
+  "6": [
+    {
+      "text": "AI can be especially helpful with: follow up emails after estimates or consultations introductory emails to new prospects appointment reminders proposal recap emails thank you emails after a sale internal recap emails after meetings These are repetitive enough that AI saves time",
+      "startSec": 0,
+      "endSec": 15.328965517241377
+    },
+    {
+      "text": "but important enough that a cleaner draft improves business results.",
+      "startSec": 15.178965517241377,
+      "endSec": 18.915057471264365
+    },
+    {
+      "text": "Here are two examples of how to use AI to create business emails that still sound human.",
+      "startSec": 18.915057471264365,
+      "endSec": 23.9
+    }
+  ],
+  "7": [
+    {
+      "text": "Introduce me as the owner of Fused Distribution, mention website design and SEO",
+      "startSec": 0,
+      "endSec": 4.949183098591549
+    },
+    {
+      "text": "and keep it under 120 words.",
+      "startSec": 4.7991830985915485,
+      "endSec": 6.553323943661971
+    },
+    {
+      "text": "Draft: Subject: Introduction from Fused Distribution Dear David, My name is Nick",
+      "startSec": 6.553323943661971,
+      "endSec": 11.565154929577464
+    },
+    {
+      "text": "and I run Fused Distribution, a local web design and SEO business.",
+      "startSec": 11.565154929577464,
+      "endSec": 15.699915492957745
+    },
+    {
+      "text": "We help small businesses improve how they show up online and turn more visits into real conversations.",
+      "startSec": 15.699915492957745,
+      "endSec": 22.24
+    }
+  ],
+  "8": [
+    {
+      "text": "Is the message short enough to read quickly?",
+      "startSec": 0,
+      "endSec": 2.8688544891640864
+    },
+    {
+      "text": "Did the draft add anything you did not approve?",
+      "startSec": 2.7188544891640865,
+      "endSec": 5.783312693498451
+    },
+    {
+      "text": "If the answer is no on any one of those, revise before you send.",
+      "startSec": 5.783312693498451,
+      "endSec": 9.956191950464396
+    },
+    {
+      "text": "This review step is what keeps AI useful instead of risky.",
+      "startSec": 9.956191950464396,
+      "endSec": 13.737863777089782
+    },
+    {
+      "text": "Do not judge AI by whether the draft sounds impressive.",
+      "startSec": 13.737863777089782,
+      "endSec": 17.32393188854489
+    },
+    {
+      "text": "Judge it by whether it saves time and improves results.",
+      "startSec": 17.32393188854489,
+      "endSec": 21.06
+    }
+  ],
+  "9": [
+    {
+      "text": "That does not remove the need for judgment.",
+      "startSec": 0,
+      "endSec": 2.1656531049250534
+    },
+    {
+      "text": "Your advantage is still knowing the customer, the offer, and the right next move.",
+      "startSec": 2.0156531049250535,
+      "endSec": 6.095139186295503
+    },
+    {
+      "text": "AI just helps you get the words on the page faster.",
+      "startSec": 6.095139186295503,
+      "endSec": 8.663704496788009
+    },
+    {
+      "text": "Start with one email type this week, such as estimate follow ups, appointment reminders",
+      "startSec": 8.663704496788009,
+      "endSec": 13.045374732334047
+    },
+    {
+      "text": "or proposal replies.",
+      "startSec": 13.045374732334047,
+      "endSec": 14.052655246252677
+    },
+    {
+      "text": "Build one prompt that works, improve it over a few real messages, and keep the final review human.",
+      "startSec": 14.052655246252677,
+      "endSec": 18.98832976445396
+    },
+    {
+      "text": "That is how you use AI to write better business emails without sounding like a machine.",
+      "startSec": 18.98832976445396,
+      "endSec": 23.52
+    }
+  ],
+  "10": [
+    {
+      "text": "How would you personally improve these emails using AI?",
+      "startSec": 0,
+      "endSec": 3.4042105263157896
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 3.2542105263157897,
+      "endSec": 5.88
+    }
+  ]
+}

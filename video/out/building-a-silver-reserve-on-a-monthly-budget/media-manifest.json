@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "building a silver reserve on a monthly budget",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T18:41:14.319Z"
+    },
+    "1": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget silver investing seem\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "building a silver reserve on a monthly budget silver investing seem",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T18:41:14.343Z"
+    },
+    "2": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget silver prices subject\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "building a silver reserve on a monthly budget silver prices subject",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T18:41:14.343Z"
+    },
+    "3": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget consider investment long\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget consider investment long",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:15.484Z"
+    },
+    "4": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget strategy known dollar\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget strategy known dollar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:16.121Z"
+    },
+    "5": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget 10 to 15\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget 10 to 15",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:17.217Z"
+    },
+    "6": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget don succumb panic\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget don succumb panic",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:18.063Z"
+    },
+    "7": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget evaluate quality silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget evaluate quality silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:18.698Z"
+    },
+    "8": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget physically own metal\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget physically own metal",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:19.327Z"
+    },
+    "9": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget also concerns regarding\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "building a silver reserve on a monthly budget also concerns regarding",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:35.323Z"
+    },
+    "10": {
+      "key": "{\"query\":\"building a silver reserve on a monthly budget customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "building a silver reserve on a monthly budget customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T18:41:36.216Z"
+    }
+  }
+}
