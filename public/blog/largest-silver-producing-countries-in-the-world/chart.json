@@ -1,0 +1,31 @@
+{
+  "title": "Silver Production by Country 2023",
+  "source": "U.S. Geological Survey (2024)",
+  "bars": [
+    {
+      "label": "Mexico",
+      "value": "1,330,000 oz"
+    },
+    {
+      "label": "Peru",
+      "value": "770,000 oz"
+    },
+    {
+      "label": "China",
+      "value": "610,000 oz"
+    },
+    {
+      "label": "Australia",
+      "value": "530,000 oz"
+    },
+    {
+      "label": "United States",
+      "value": "150,000 oz"
+    }
+  ],
+  "hero_stat": {
+    "value": "1,330,000",
+    "label": "Mexico's Production"
+  },
+  "narration": "Mexico led silver production in 2023, reaching 1,330,000 ounces. Peru followed with 770,000 ounces, demonstrating a significant regional disparity in silver mining output. The United States produced the smallest amount at 150,000 ounces."
+}
