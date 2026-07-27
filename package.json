@@ -28,13 +28,19 @@
     "video": "node video/scripts/render.mjs",
     "social:pack": "node public/blog/scripts/prepare-posting-pack.mjs",
     "social:buffer:verify-media": "node public/blog/scripts/verify-buffer-media-urls.mjs",
+    "social:buffer:live": "node public/blog/scripts/buffer-live.mjs",
+    "social:buffer:instagram:plan": "node public/blog/scripts/prepare-buffer-instagram-queue.mjs",
+    "social:buffer:metrics": "node scripts/buffer-performance-snapshot.mjs",
     "social:buffer:youtube:media": "node public/blog/scripts/prepare-buffer-youtube-media.mjs",
     "social:buffer:sync-media": "node public/blog/scripts/sync-buffer-media-kv.mjs",
     "social:buffer:plan": "node public/blog/scripts/prepare-buffer-youtube-queue.mjs",
     "social:buffer:x:media": "node public/blog/scripts/prepare-buffer-x-media.mjs",
     "social:buffer:x:plan": "node public/blog/scripts/prepare-buffer-x-queue.mjs",
     "social:buffer:validate": "node public/blog/scripts/validate-buffer-queue.mjs",
-    "social:facebook:batch": "node public/blog/scripts/prepare-facebook-reel-batch.mjs"
+    "social:facebook:batch": "node public/blog/scripts/prepare-facebook-reel-batch.mjs",
+    "profit:audit": "node scripts/profit-sop-audit.mjs audit",
+    "profit:record": "node scripts/profit-sop-audit.mjs record",
+    "profit:test": "node --test tests/profit-sop-audit.test.mjs tests/buffer-capacity.test.mjs tests/buffer-instagram-queue.test.mjs tests/buffer-performance-snapshot.test.mjs tests/social-copy-quality.test.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.16.17",

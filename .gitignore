@@ -35,8 +35,11 @@ public/blog/*/posting-pack.md
 .buffer-youtube-queue*.json
 .buffer-x-queue.json
 .buffer-x-queue*.json
+.buffer-instagram-queue.json
+.buffer-instagram-queue*.json
 .buffer-youtube-scheduled.json
 .buffer-x-scheduled.json
+.buffer-instagram-scheduled.json
 .facebook-reels-batch.json
 .facebook-reels-batch.md
 .facebook-reels-batch*.json

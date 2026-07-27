@@ -4,6 +4,8 @@ import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
+import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
+import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -15,7 +17,8 @@ const BUFFER_ORGANIZATION_ID = '6a3e62cb6adcaa97fe293a7d';
 const X_CHANNEL_ID = '6a3e73fb5ab6d2f10674b516';
 const X_CHANNEL_NAME = 'thatguyheis';
 const DEFAULT_LIMIT = 10;
-const DEFAULT_RESERVE_SLOTS = 2;
+const DEFAULT_RESERVE_SLOTS = 1;
+const DEFAULT_PLATFORM_COUNT = 3;
 const DEFAULT_MAX_DURATION_SECONDS = 140;
 const MAX_CLOUDFLARE_ASSET_BYTES = 25 * 1024 * 1024;
 const MAX_X_CHARS = 280;
@@ -35,7 +38,8 @@ Plans X video posts for Buffer API scheduling.
 Options:
   --current-scheduled=N          Current scheduled/sending posts across the Buffer org. Required.
   --limit=N                      Buffer scheduled post limit. Default: 10.
-  --reserve-slots=N              Slots to leave open for today's new reels. Default: 2.
+  --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
+  --platform-count=N             Platforms sharing capacity. Default: 3.
   --max-duration-seconds=N       Maximum X video duration. Default: 140.
   --max-bytes=N                  Maximum local MP4 size for Cloudflare assets. Default: 26214400.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
@@ -60,6 +64,7 @@ function parseArgs(argv) {
     currentScheduled: null,
     limit: DEFAULT_LIMIT,
     reserveSlots: DEFAULT_RESERVE_SLOTS,
+    platformCount: DEFAULT_PLATFORM_COUNT,
     maxDurationSeconds: DEFAULT_MAX_DURATION_SECONDS,
     maxBytes: MAX_CLOUDFLARE_ASSET_BYTES,
     slugs: [],
@@ -77,6 +82,7 @@ function parseArgs(argv) {
     else if (arg.startsWith('--current-scheduled=')) args.currentScheduled = parseNonNegativeInt(arg, '--current-scheduled');
     else if (arg.startsWith('--limit=')) args.limit = parseNonNegativeInt(arg, '--limit');
     else if (arg.startsWith('--reserve-slots=')) args.reserveSlots = parseNonNegativeInt(arg, '--reserve-slots');
+    else if (arg.startsWith('--platform-count=')) args.platformCount = parsePositiveInt(arg, '--platform-count');
     else if (arg.startsWith('--max-duration-seconds=')) args.maxDurationSeconds = parsePositiveNumber(arg, '--max-duration-seconds');
     else if (arg.startsWith('--max-bytes=')) args.maxBytes = parsePositiveInt(arg, '--max-bytes');
     else if (arg.startsWith('--slugs=')) args.slugs = parseSlugList(arg.slice('--slugs='.length));
@@ -351,6 +357,30 @@ function socialCopyPath(slug) {
   return join(blogRoot, slug, 'social-copy.json');
 }
 
+function releaseQaPath(slug) {
+  return join(videoOutRoot, slug, 'release-qa.json');
+}
+
+function releaseQaBlocker(slug) {
+  const path = releaseQaPath(slug);
+  if (!existsSync(path)) return { reason: 'missing_release_qa', path };
+  let releaseQa;
+  try {
+    releaseQa = readJson(path);
+  } catch (error) {
+    return { reason: 'invalid_release_qa', path, detail: error.message };
+  }
+  if (releaseQa.readyForPosting) return null;
+  return {
+    reason: 'release_qa_not_ready_for_posting',
+    path,
+    pass: Boolean(releaseQa.pass),
+    manualCaptionReview: Boolean(releaseQa.manualCaptionReview),
+    errors: releaseQa.errors || [],
+    warnings: releaseQa.warnings || [],
+  };
+}
+
 function renderedBacklogFromPosts() {
   const posts = readJson(join(blogRoot, 'posts.json'));
   return posts
@@ -403,7 +433,7 @@ function applyDueAt(job, dueAtDate) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const capacity = Math.max(0, args.limit - args.currentScheduled - args.reserveSlots);
+  const { sharedCapacity, perPlatformCapacity: capacity } = calculatePlatformCapacity(args);
   const mediaMap = readMediaMap(args.mediaMap);
   const scheduledState = readScheduledState(args.scheduledLog);
   const scheduledSlugs = scheduledState.activeSlugs;
@@ -441,6 +471,12 @@ async function main() {
     const copyPath = socialCopyPath(slug);
     if (!existsSync(copyPath)) {
       skipped.push({ slug, reason: 'missing_social_copy', path: copyPath });
+      continue;
+    }
+
+    const releaseBlocker = releaseQaBlocker(slug);
+    if (releaseBlocker) {
+      blocked.push({ slug, ...releaseBlocker });
       continue;
     }
 
@@ -512,6 +548,12 @@ async function main() {
     }
 
     const copy = readJson(copyPath);
+    try {
+      assertSocialCopyQuality(copy, slug);
+    } catch (error) {
+      blocked.push({ slug, reason: 'social_copy_quality_failed', detail: error.message, path: copyPath });
+      continue;
+    }
     const text = cleanText(copy?.reel?.x);
     if (!text) {
       blocked.push({ slug, reason: 'missing_reel_x_copy', path: copyPath });
@@ -541,6 +583,8 @@ async function main() {
       currentScheduled: args.currentScheduled,
       limit: args.limit,
       reserveSlots: args.reserveSlots,
+      platformCount: args.platformCount,
+      sharedCapacity,
       capacity,
     },
     x: {

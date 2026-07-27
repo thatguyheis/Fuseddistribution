@@ -4,6 +4,9 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
+import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
+import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
+import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -14,6 +17,8 @@ const BUFFER_ORGANIZATION_ID = '6a3e62cb6adcaa97fe293a7d';
 const BUFFER_CHANNEL_ID = '6a3e63375ab6d2f1067461b2';
 const BUFFER_CHANNEL_NAME = 'Nick';
 const DEFAULT_LIMIT = 10;
+const DEFAULT_PLATFORM_COUNT = 3;
+const DEFAULT_RESERVE_SLOTS = 1;
 const DEFAULT_CATEGORY_ID = '27';
 const SCHEDULE_TIME_ZONE = 'America/Los_Angeles';
 const DEFAULT_SCHEDULE_WINDOW_START = '13:00';
@@ -33,7 +38,8 @@ Plans the next YouTube posts for Buffer without exceeding the scheduled-post lim
 Options:
   --current-scheduled=N          Current scheduled/sending posts in Buffer. Required for production runs.
   --limit=N                      Buffer scheduled post limit. Default: 10.
-  --reserve-slots=N              Slots to leave open for today's new reels. Default: 0.
+  --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
+  --platform-count=N             Platforms sharing capacity. Default: 3.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
   --media-map=path               JSON map of slug to public MP4 URL.
   --scheduled-log=path           JSON log of already scheduled slugs. Default: .buffer-youtube-scheduled.json.
@@ -62,7 +68,8 @@ function parseArgs(argv) {
   const args = {
     currentScheduled: null,
     limit: DEFAULT_LIMIT,
-    reserveSlots: 0,
+    reserveSlots: DEFAULT_RESERVE_SLOTS,
+    platformCount: DEFAULT_PLATFORM_COUNT,
     slugs: [],
     mediaMap: '',
     scheduledLog: join(repoRoot, '.buffer-youtube-scheduled.json'),
@@ -85,6 +92,7 @@ function parseArgs(argv) {
     else if (arg.startsWith('--current-scheduled=')) args.currentScheduled = parseNonNegativeInt(arg, '--current-scheduled');
     else if (arg.startsWith('--limit=')) args.limit = parseNonNegativeInt(arg, '--limit');
     else if (arg.startsWith('--reserve-slots=')) args.reserveSlots = parseNonNegativeInt(arg, '--reserve-slots');
+    else if (arg.startsWith('--platform-count=')) args.platformCount = parsePositiveInt(arg, '--platform-count');
     else if (arg.startsWith('--slugs=')) args.slugs = arg.slice('--slugs='.length).split(',').map((slug) => slug.trim()).filter(Boolean);
     else if (arg.startsWith('--media-map=')) args.mediaMap = resolve(arg.slice('--media-map='.length));
     else if (arg.startsWith('--scheduled-log=')) args.scheduledLog = resolve(arg.slice('--scheduled-log='.length));
@@ -368,6 +376,21 @@ function bufferVideoPath(slug) {
   return existsSync(publicPath) ? publicPath : localVideoPath(slug);
 }
 
+function stalePublicReelCopy(slug) {
+  const sourcePath = localVideoPath(slug);
+  const publicPath = publicReelPath(slug);
+  if (!existsSync(sourcePath) || !existsSync(publicPath)) return null;
+  const sourceStat = statSync(sourcePath);
+  const publicStat = statSync(publicPath);
+  if (publicStat.mtimeMs + 1000 >= sourceStat.mtimeMs) return null;
+  return {
+    sourcePath,
+    publicPath,
+    sourceMtime: sourceStat.mtime.toISOString(),
+    publicMtime: publicStat.mtime.toISOString(),
+  };
+}
+
 function durationSeconds(path) {
   const result = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', path], {
     cwd: repoRoot,
@@ -388,6 +411,30 @@ function fileSizeBytes(path) {
 
 function socialCopyPath(slug) {
   return join(blogRoot, slug, 'social-copy.json');
+}
+
+function releaseQaPath(slug) {
+  return join(videoRoot, slug, 'release-qa.json');
+}
+
+function releaseQaBlocker(slug) {
+  const path = releaseQaPath(slug);
+  if (!existsSync(path)) return { reason: 'missing_release_qa', path };
+  let releaseQa;
+  try {
+    releaseQa = readJson(path);
+  } catch (error) {
+    return { reason: 'invalid_release_qa', path, detail: error.message };
+  }
+  if (releaseQa.readyForPosting) return null;
+  return {
+    reason: 'release_qa_not_ready_for_posting',
+    path,
+    pass: Boolean(releaseQa.pass),
+    manualCaptionReview: Boolean(releaseQa.manualCaptionReview),
+    errors: releaseQa.errors || [],
+    warnings: releaseQa.warnings || [],
+  };
 }
 
 function renderedBacklogFromPosts() {
@@ -466,7 +513,7 @@ function writePostingPack(slug, mediaUrl) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const capacity = Math.max(0, args.limit - args.currentScheduled - args.reserveSlots);
+  const { sharedCapacity, perPlatformCapacity: capacity } = calculatePlatformCapacity(args);
   const mediaMap = readMediaMap(args.mediaMap);
   const scheduledState = readScheduledState(args.scheduledLog);
   const scheduledSlugs = scheduledState.activeSlugs;
@@ -507,6 +554,30 @@ async function main() {
     }
     if (!existsSync(copyPath)) {
       skipped.push({ slug, reason: 'missing_social_copy', path: copyPath });
+      continue;
+    }
+
+    const releaseBlocker = releaseQaBlocker(slug);
+    if (releaseBlocker) {
+      blocked.push({ slug, ...releaseBlocker });
+      continue;
+    }
+
+    try {
+      assertRenderedReelAudioCleared(slug, { repoRoot });
+    } catch (error) {
+      blocked.push({ slug, reason: 'source_render_audio_rights_blocked', detail: error.message, localVideo: videoPath });
+      continue;
+    }
+
+    const stalePublicCopy = stalePublicReelCopy(slug);
+    if (stalePublicCopy) {
+      blocked.push({
+        slug,
+        reason: 'stale_public_reel_copy_older_than_source_render',
+        action: `Regenerate with npm run social:buffer:youtube:media -- --slugs=${slug}`,
+        ...stalePublicCopy,
+      });
       continue;
     }
 
@@ -572,6 +643,12 @@ async function main() {
     }
 
     const copy = readJson(copyPath);
+    try {
+      assertSocialCopyQuality(copy, slug);
+    } catch (error) {
+      blocked.push({ slug, reason: 'social_copy_quality_failed', detail: error.message, path: copyPath });
+      continue;
+    }
     ready.push(buildJob(slug, copy, mediaUrl, args.categoryId));
   }
 
@@ -594,6 +671,8 @@ async function main() {
       currentScheduled: args.currentScheduled,
       limit: args.limit,
       reserveSlots: args.reserveSlots,
+      platformCount: args.platformCount,
+      sharedCapacity,
       capacity,
       mediaUrlVerification: args.verifyMediaUrls ? 'required' : 'not_run',
     },

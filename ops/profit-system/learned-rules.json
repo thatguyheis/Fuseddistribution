@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "social-copy-meta-instruction-block",
+      "state": "active",
+      "createdAt": "2026-07-27",
+      "evidenceFingerprints": ["youtube-description-meta-leak"],
+      "sampleCount": 2,
+      "expectedProfitMechanism": "Prevent customer-facing model instructions from reducing trust, click-through, and conversion.",
+      "leadingMetric": "social_copy_quality_failed count before scheduling",
+      "laggingMetric": "qualified leads and attributed gross profit per distributed post",
+      "guardrails": [
+        "Do not block legitimate customer-facing copy that mentions AI.",
+        "Do not weaken release QA or authoritative Buffer readback."
+      ],
+      "control": "Block posting-pack and Buffer queue generation when outbound social-copy fields contain model meta-instructions.",
+      "verification": "tests/social-copy-quality.test.mjs",
+      "reviewAfter": "2026-08-27",
+      "rollbackCondition": "False-positive rate exceeds 5% of reviewed social-copy files."
+    },
+    {
+      "id": "youtube-silver-decision-story-topic-test",
+      "state": "experiment",
+      "createdAt": "2026-07-27",
+      "evidenceFingerprints": ["buffer-2026-07-27-silver-topic-split"],
+      "sampleCount": 5,
+      "expectedProfitMechanism": "Decision-oriented and monetary-history silver reels may attract more high-intent Fused Reserve attention than broad industrial or outlook topics, creating more opportunities for qualified site visits and later conversions.",
+      "leadingMetric": "Matched YouTube D+3 and D+7 views per hour, followed by engagement rate",
+      "laggingMetric": "Attributed Fused Reserve clicks, qualified leads, conversions, and gross profit",
+      "guardrails": [
+        "Do not claim causality from the initial five-post sample.",
+        "Do not compare posts at different age buckets or use lifetime totals.",
+        "Do not reduce research accuracy, financial disclaimers, or the separate tech publishing cadence."
+      ],
+      "control": "For the next three comparable silver publishing days, include one accurate decision-oriented, selling, or monetary-history reel and measure it at D+3 and D+7 against industrial/outlook silver reels. Change only the topic/hook family where practical.",
+      "verification": "ops/profit-system/buffer-metrics/2026-07-27.json; initial mature YouTube sample: decision/monetary posts 85, 54, and 25 views versus industrial/outlook posts 0 and 0 views.",
+      "reviewAfter": "2026-08-10",
+      "rollbackCondition": "Retire or revise if three matched samples fail to improve median D+3 views per hour by 15%, or if downstream clicks/qualified demand regress."
+    }
+  ]
+}

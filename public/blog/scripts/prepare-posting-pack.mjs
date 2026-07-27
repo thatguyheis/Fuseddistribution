@@ -2,6 +2,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -150,14 +151,22 @@ function main() {
   const postDir = join(blogRoot, slug);
   const socialCopyPath = join(postDir, 'social-copy.json');
   const localVideoPath = join(videoRoot, slug, `${slug}.mp4`);
+  const releaseQaPath = join(videoRoot, slug, 'release-qa.json');
   const defaultOut = join(postDir, 'posting-pack.json');
   const outPath = args.out ? resolve(args.out) : defaultOut;
   const markdownPath = outPath.replace(/\.json$/i, '.md');
 
   requireFile(socialCopyPath, 'social-copy.json');
   requireFile(localVideoPath, 'rendered reel MP4');
+  requireFile(releaseQaPath, 'reel release QA');
+
+  const releaseQa = readJson(releaseQaPath);
+  if (!releaseQa.readyForPosting) {
+    throw new Error(`Reel is not cleared for posting. Run the release check and complete its required review: ${releaseQaPath}`);
+  }
 
   const copy = readJson(socialCopyPath);
+  assertSocialCopyQuality(copy, slug);
   const hashtags = cleanText(copy.hashtags || '')
     .split(/\s+/)
     .map((tag) => tag.replace(/^#/, '').trim())

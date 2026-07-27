@@ -1,6 +1,6 @@
 # Social Media SOP - Fused Distribution
 
-Governs content creation and posting handoff for social media. The active production path is YouTube through Buffer plus Facebook Professional Mode through native Facebook tools. Postiz remains a future option for Page-based channels, but it is not the active workflow.
+Governs content creation and posting handoff for social media. The active automated production path is YouTube, X, and Instagram through the Buffer API, plus Facebook Professional Mode through native Facebook tools. Postiz remains a future option for Page-based channels, but it is not the active workflow.
 
 **Platforms:** YouTube, Facebook Professional Mode profile, Instagram, LinkedIn, X
 **Content types:** Reels (video), Photo posts (SVG/image)
@@ -14,7 +14,7 @@ Governs content creation and posting handoff for social media. The active produc
 | YouTube | Buffer | Active test path | Buffer supports the connected YouTube channel and can be API-driven after media hosting is solved. |
 | X | Buffer | Active test path | Buffer supports the connected X profile and can reuse the hosted reel MP4s with short platform copy. |
 | Facebook Professional Mode profile | Facebook native tools | Manual handoff only | Third-party tools generally do not publish reliably to professional personal profiles. Use the Facebook app or Professional Dashboard. |
-| Instagram | Manual or future scheduler | Pending | Keep captions ready. Do not assume profile/page API permissions until connected and tested. |
+| Instagram | Buffer | Active API path | The connected professional account accepts automatic Instagram Reel payloads with the verified hosted MP4. |
 | LinkedIn | Manual or future scheduler | Pending | Keep captions ready. |
 
 Do not use unofficial APIs or credential-scraping automation to post to the Facebook professional personal profile. Browser-assisted manual posting is allowed when Nick controls the session and the batch file is used only as a handoff checklist.
@@ -44,6 +44,21 @@ Use this exact Buffer channel for X posting:
 | Buffer channel ID | `6a3e73fb5ab6d2f10674b516` |
 | X profile URL | `https://twitter.com/thatguyheis` |
 | Timezone | `America/Los_Angeles` |
+
+Use this exact Buffer channel for Instagram posting:
+
+| Field | Value |
+|---|---|
+| Buffer organization | `My Organization` |
+| Buffer organization ID | `6a3e62cb6adcaa97fe293a7d` |
+| Buffer channel name | `ahueman303` |
+| Buffer channel ID | `6a67c5d64b2d03035f4f0228` |
+| Instagram profile URL | `https://instagram.com/ahueman303` |
+| Account type | Professional / business |
+| Timezone | `America/Los_Angeles` |
+
+Before changing a channel ID, run `npm run social:buffer:live -- channels` and
+require `isDisconnected: false`, `isLocked: false`, and `isQueuePaused: false`.
 
 ## Daily Output
 
@@ -125,9 +140,15 @@ The pack is credential-free by design. It prepares copy, asset paths, checklists
 
 Use this procedure for the normal daily Buffer fill. Do not mix steps from old handoff docs unless this section says to.
 
+Before media planning, check `public/blog/research/*-pending.json`. If an older
+blog date is pending, report the upstream gap and do not describe the social day
+as complete. Resume blog publication first, then render and release those exact
+registered slugs before planning Buffer posts.
+
 Hard stops:
 
 - Do not schedule any slug whose title, `reel-data.md`, `reel-script.md`, and `social-copy.json` are not clearly about the same topic. A technically valid MP4 is still blocked if the content drifted.
+- Do not schedule newly rendered reels unless the current local reference library passes `npm run video:audio-rights`. As of 2026-07-07, new renders should use the approved two-track Mixkit cycle; old bundled ambient tracks are blocked pending re-clearance.
 - Do not use a queue file older than 30 minutes. Regenerate and revalidate instead.
 - Do not trust local `.buffer-*-scheduled.json` for capacity. Query Buffer live first.
 - Do not call Buffer `createPost` unless every selected MP4 URL returns `200 video/mp4` from the deployed Worker.
@@ -137,7 +158,11 @@ Hard stops:
 Daily execution order:
 
 1. Confirm the Buffer token is available locally without printing it. It must live in ignored `.env.local` as `BUFFER_ACCESS_TOKEN=<real API key>`, with no quotes and no `Bearer ` prefix.
-2. Query Buffer GraphQL at `https://api.buffer.com` for organization `6a3e62cb6adcaa97fe293a7d`, channels `6a3e63375ab6d2f1067461b2` and `6a3e73fb5ab6d2f10674b516`, and live posts with status `scheduled` or `sending`. This live count is `BUFFER_CURRENT_SCHEDULED`.
+2. Query Buffer GraphQL for both channels with the checked-in live-status command. Its `count` is `BUFFER_CURRENT_SCHEDULED`; never derive capacity from local logs:
+
+```bash
+npm run social:buffer:live -- status
+```
 3. Reconcile local scheduled logs only after the live query. Past-due local entries still marked `scheduled` are not proof of success.
 4. Pick only coherent slugs. If a fresh slug drifted, skip it and use a coherent backlog slug rather than filling Buffer with bad content.
 5. Generate or refresh Buffer-safe media for those exact slugs:
@@ -168,30 +193,37 @@ npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slug
 npm run social:buffer:verify-media -- --media-map=.buffer-x-media-urls.json --slugs=slug-one,slug-two
 ```
 
-10. Plan YouTube with the live Buffer scheduled/sending count:
+10. Capture one live Buffer scheduled/sending count. All three planners must use
+that same snapshot, limit 10, reserve 1, and platform count 3. Do not increment
+the count between planners; the shared allocation already divides capacity:
 
 ```bash
-npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
+npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
+npm run social:buffer:x:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-x-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00
+npm run social:buffer:instagram:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=3 --source-queue=.buffer-youtube-queue.json
 ```
 
-11. Count the YouTube selected jobs. Plan X with `BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT`, because the X posts consume the same 10-post Buffer limit:
-
-```bash
-npm run social:buffer:x:plan -- --current-scheduled=$((BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT)) --limit=10 --reserve-slots=2 --media-map=.buffer-x-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00
-```
-
-12. Validate both fresh queue files in the same session that will create the posts:
+11. Validate all three fresh queue files in the same session that will create the posts:
 
 ```bash
 npm run social:buffer:validate -- --queue=.buffer-youtube-queue.json
 npm run social:buffer:validate -- --queue=.buffer-x-queue.json
+npm run social:buffer:validate -- --queue=.buffer-instagram-queue.json
 ```
 
 13. Immediately before the first Buffer `createPost`, re-run the two media verification commands if any deploy, branch switch, queue regeneration, or 10+ minute delay happened after step 9.
-14. Create posts sequentially through Buffer GraphQL using each selected job's `createPostPayload`. After each create, query the post by ID. Append the local scheduled log only when read-back confirms the video asset is still present.
-15. After the batch, query Buffer live scheduled/sending posts again and confirm the count and video assets match what was just created.
+14. Publish each validated queue with the resumable executor. It creates sequentially, reads the live queue back after every create, and checkpoints the Buffer ID only after `scheduled`/`sending`, channel, and video-asset verification pass:
 
-The normal daily fill target is at most 8 scheduled posts total: 4 YouTube + 4 X, or fewer if live Buffer capacity is lower. Keep 2 open Buffer slots reserved for newly rendered reels or urgent corrections.
+```bash
+npm run social:buffer:live -- publish --queue=.buffer-youtube-queue.json
+npm run social:buffer:live -- publish --queue=.buffer-x-queue.json
+npm run social:buffer:live -- publish --queue=.buffer-instagram-queue.json
+```
+
+   If the computer or process crashes, rerun the same command while the queue is still valid. Confirmed live IDs are skipped; unconfirmed jobs resume. If the queue expired, regenerate and validate it before rerunning.
+15. After the batch, run `npm run social:buffer:live -- status` again and confirm the count and video assets match what was just created.
+
+The normal fill target is at most 9 scheduled posts total: up to 3 YouTube + 3 X + 3 Instagram when the live count is zero. One slot remains as safety headroom. The live publisher queries Buffer immediately before every mutation and refuses to create when the organization already has 10 scheduled/sending posts, even if a stale queue says capacity exists.
 
 ### YouTube Buffer API Scheduling Requirements
 
@@ -259,6 +291,8 @@ npm run social:buffer:verify-media -- --media-map=.buffer-x-media-urls.json --sl
 6. After `create_post`, immediately call `get_post`. For YouTube, the post must not be `error` and must retain the video asset. For X, `assets[0].type` must be `video`. Only then append or update the local scheduled log.
 7. After the scheduled `dueAt` passes, check Buffer again. If it did not send, reconcile the log before scheduling anything else.
 
+For crash recovery before `dueAt`, rerun `npm run social:buffer:live -- publish --queue=<validated queue>`. The executor uses Buffer readback plus the confirmed `postId` checkpoint, so it does not treat an interrupted create call or stale local state as success.
+
 ### X Buffer Scheduling Requirements
 
 Buffer API scheduling is supported for X video posts when the MP4 passes X eligibility gates.
@@ -295,7 +329,7 @@ Do not schedule long-form reels to X through Buffer API. Create an X-safe cutdow
 Plan eligible X posts after querying the live Buffer scheduled/sending count:
 
 ```bash
-npm run social:buffer:x:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-x-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00
+npm run social:buffer:x:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-x-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00
 ```
 
 The X planner verifies media URLs by default. Use `--skip-media-url-verification` only for offline planning, never for production scheduling. If any selected X media URL fails verification, do not create the Buffer post.
@@ -334,14 +368,42 @@ Schedule only `.buffer-x-queue.json` `selected` jobs. Each job includes this pay
 
 After `create_post` returns, immediately call `get_post(postId)`. Append the slug to `.buffer-x-scheduled.json` only if the returned post has a video asset. If `assets` is empty, delete the post before it publishes and treat the slug as blocked.
 
+### Instagram Buffer Scheduling Requirements
+
+Instagram is an active automatic Buffer API path for professional account
+`ahueman303` (`6a67c5d64b2d03035f4f0228`). Instagram jobs reuse the verified
+YouTube-safe hosted MP4 and the `reel.instagram` caption. The payload must use a
+top-level video asset plus `metadata.instagram.type: "reel"`,
+`shouldShareToFeed: true`, and `schedulingType: "automatic"`.
+
+Generate and validate the Instagram queue only after the YouTube queue exists:
+
+```bash
+npm run social:buffer:instagram:plan -- --current-scheduled=<same-live-count> --limit=10 --reserve-slots=1 --platform-count=3 --source-queue=.buffer-youtube-queue.json
+npm run social:buffer:validate -- --queue=.buffer-instagram-queue.json
+npm run social:buffer:live -- publish --queue=.buffer-instagram-queue.json
+```
+
+Production requirements:
+
+- The source YouTube queue is unexpired and its media URL passed verification.
+- `social-copy.json` passes the outbound-copy validator and contains a nonempty
+  Instagram caption no longer than 2,200 characters.
+- The Instagram post uses the exact connected business channel above and is a
+  feed-sharing Reel, not a reminder-only Story.
+- The live readback remains `scheduled` or `sending` and retains a video asset
+  before `.buffer-instagram-scheduled.json` is updated.
+- Crash retries reuse the same queue and checkpoint. A confirmed post is skipped;
+  it is never recreated merely because the local process stopped.
+
 ### Automatic YouTube Queue Planning
 
-Before scheduling, query Buffer for posts with status `scheduled` or `sending`. Subtract that count from the organization plan limit of 10, then reserve 2 open slots for reels created today. YouTube and X posts both consume this same Buffer scheduled-post limit.
+Before scheduling, query Buffer for posts with status `scheduled` or `sending`. Subtract that count and one safety slot from the organization limit of 10, then divide the remainder evenly across YouTube, X, and Instagram. All three consume the same enforced organization-wide budget in this SOP.
 
 Plan the next queue from the rendered backlog:
 
 ```bash
-npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
+npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
 ```
 
 This writes selected jobs with `mode: customScheduled` and `dueAt` values in the 1:00 PM-7:00 PM `America/Los_Angeles` window. The YouTube planner verifies media URLs by default. Use `--skip-media-url-verification` only for offline planning, never for production scheduling. `.buffer-media-urls.json` is a local, gitignored map of slug to hosted MP4 URL:
@@ -412,32 +474,32 @@ npm run social:buffer:verify-media -- --media-map=.buffer-media-urls.json --slug
 ```
 
 6. Query Buffer org `6a3e62cb6adcaa97fe293a7d` for live `scheduled`, `sending`, `sent`, and `error` posts. Reconcile past-due local scheduled-log entries before using the logs to skip a slug. Do not trust the local `.buffer-*-scheduled.json` logs for capacity; past `dueAt` entries may already have published, errored, or dropped off.
-7. Recompute capacity: limit 10, reserve 2, fill at most 8 slots. Each slug uses 1 YouTube post plus 1 X post, so cap slug pairs accordingly.
+7. Recompute capacity from one live snapshot: limit 10, reserve 1, platform count 3. Each selected slug can consume one YouTube, one X, and one Instagram slot. The common per-platform allocation is `floor((10 - live - 1) / 3)`.
 8. Schedule YouTube first through the Buffer API or Buffer UI (channel `6a3e63375ab6d2f1067461b2`). Immediately call `get_post`; append to `.buffer-youtube-scheduled.json` only if the post is not in `error` and still has the video asset.
 9. Schedule X through the Buffer API only for `.buffer-x-queue.json` `selected` jobs. Verify each created X post with `get_post`; if the video asset is missing, delete the post and do not log it.
-10. Do not push unless the run is a content commit covered by standing push permission.
+10. Schedule Instagram through the Buffer API only for `.buffer-instagram-queue.json` `selected` jobs and checkpoint successful video readback in `.buffer-instagram-scheduled.json`.
+11. Do not push unless the run is a content commit covered by standing push permission.
 
 ### Scheduled Queue Maintenance Task
 
-Codex automation `buffer-youtube-queue-maintenance` runs once per day after the reel render window at 1:15 PM local time. It schedules ready hosted reels to YouTube and X while respecting the shared Buffer limit. The task should:
+The Buffer recovery automation runs after the reel render window. It schedules ready hosted reels to YouTube, X, and Instagram while respecting the shared Buffer limit. The task should:
 
 1. Query Buffer organization `6a3e62cb6adcaa97fe293a7d` for `scheduled`, `sending`, `sent`, and `error` posts.
-2. Reconcile `.buffer-youtube-scheduled.json` and `.buffer-x-scheduled.json`: any past-due entry still marked `scheduled` must be confirmed as sent or marked `error` before planning. Count only live `scheduled` and `sending` posts as `BUFFER_CURRENT_SCHEDULED`.
+2. Reconcile `.buffer-youtube-scheduled.json`, `.buffer-x-scheduled.json`, and `.buffer-instagram-scheduled.json`: any past-due entry still marked `scheduled` must be confirmed as sent or marked `error` before planning. Count only live `scheduled` and `sending` posts as `BUFFER_CURRENT_SCHEDULED`.
 3. Run a coherence screen before media prep. Skip any slug whose title, `reel-data.md`, rendered reel, or social copy drifted to a different topic.
 4. Run `npm run social:buffer:youtube:media` and `npm run social:buffer:x:media` for the exact selected slugs before planning. This keeps public YouTube Buffer assets under 179 seconds and X assets under 140 seconds.
 5. Run `npm run social:buffer:sync-media -- --slugs=<slugs>` so the exact MP4s are present in remote `REELS_KV`.
 6. Deploy the Worker if the KV-backed `/reels/` route or other source changes have not been deployed yet. Do not depend on the static asset manifest for Buffer media.
-7. Verify every selected YouTube and X MP4 URL returns `200 video/mp4` from the deployed Worker. If any URL fails, stop before planning.
-8. Run `scripts/plan-buffer-youtube-queue.sh` with `BUFFER_RESERVE_SLOTS=2`, or run `npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
-9. Count `.buffer-youtube-queue.json` `selected` jobs as `YOUTUBE_SELECTED_COUNT`.
-10. Run `npm run social:buffer:x:plan` with `--current-scheduled=$((BUFFER_CURRENT_SCHEDULED + YOUTUBE_SELECTED_COUNT))`, the same reserve slots, media map, and 13:00-19:00 schedule window. Do not reuse the original live count for X planning.
-11. Validate both queue files immediately before scheduling. If either queue is stale, expired, or invalid, regenerate and revalidate instead of posting.
-12. Schedule only `.buffer-youtube-queue.json` `selected` jobs through Buffer for YouTube. After every create, read the post back and append to `.buffer-youtube-scheduled.json` only if the post has no Buffer error and still has a video asset.
-13. Schedule only `.buffer-x-queue.json` `selected` X jobs through Buffer API. After every create, read the post back and append to `.buffer-x-scheduled.json` only if the video asset is present. If the video asset is missing, delete the post before it publishes.
-14. After scheduling, re-query Buffer live scheduled/sending posts and report any `error` object, media accessibility warning, missing asset, count mismatch, or status mismatch.
-15. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
+7. Verify every selected YouTube/X MP4 URL returns `200 video/mp4` from the deployed Worker. Instagram reuses the verified YouTube MP4. If any URL fails, stop before planning.
+8. Run all three planners with the same `BUFFER_CURRENT_SCHEDULED`, `--limit=10`, `--reserve-slots=1`, and `--platform-count=3`. Generate YouTube first, X second, and Instagram from the YouTube queue third.
+9. Validate all three queue files immediately before scheduling. If any queue is stale, expired, or invalid, regenerate and revalidate instead of posting.
+12. Run `npm run social:buffer:live -- publish --queue=.buffer-youtube-queue.json`. The resumable executor schedules only selected YouTube jobs and checkpoints only Buffer-confirmed video posts.
+13. Run `npm run social:buffer:live -- publish --queue=.buffer-x-queue.json`. It applies the same live readback and checkpoint rule to selected X jobs.
+14. Run `npm run social:buffer:live -- publish --queue=.buffer-instagram-queue.json` and require confirmed video readback.
+15. Run `npm run social:buffer:live -- status` and report any media warning, missing asset, count mismatch, status mismatch, or cap refusal.
+16. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
 
-The reserve is intentional. With a 10-post Buffer limit, the automation should fill at most 8 slots so today’s fresh reels still have room.
+The reserve is intentional. With a 10-post organization limit, the automation fills at most 9 slots from an empty queue and the executor independently refuses an eleventh scheduled/sending post.
 
 ---
 
@@ -534,12 +596,13 @@ Full spec in BLOG-SOP.md §15. Quick reference:
 
 1. Generate or verify `video/out/[slug]/[slug].mp4`.
 2. Generate Buffer-safe public media with `npm run social:buffer:youtube:media -- --slugs=<slug>` and `npm run social:buffer:x:media -- --slugs=<slug>`, then deploy.
-3. Query Buffer scheduled/sending count, then run `npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs`.
+3. Query Buffer scheduled/sending once. Run the YouTube and X planners plus `social:buffer:instagram:plan` with that same count, `--limit=10 --reserve-slots=1 --platform-count=3`.
 4. YouTube: schedule every `.buffer-youtube-queue.json` `selected` job through Buffer API to channel `6a3e63375ab6d2f1067461b2`; otherwise open Buffer, select the connected YouTube channel, upload the MP4, paste the title/description/tags from the posting pack, verify the description links to `https://fuseddistribution.com/blog/[slug]/`, and schedule.
 5. X: run `npm run social:buffer:x:plan -- --current-scheduled=<count>` and schedule only eligible selected X jobs through Buffer API on channel `6a3e73fb5ab6d2f10674b516`. Confirm the copy stays under 280 characters, the video is at most 140 seconds, and `get_post` shows a persisted video asset before logging success.
-6. Facebook Professional Mode: use the Facebook reel batch pack below, then open Facebook native composer or Professional Dashboard, upload the MP4, paste the Facebook caption, and publish or schedule with native controls.
-7. After the Facebook reel is live, paste the blog URL as the first comment.
-8. Log performance after 48-72 hours with `video/scripts/feedback.mjs`.
+6. Instagram: generate `.buffer-instagram-queue.json` from the verified YouTube queue, publish selected jobs through channel `6a67c5d64b2d03035f4f0228`, and require persisted video readback before logging success.
+7. Facebook Professional Mode: use the Facebook reel batch pack below, then open Facebook native composer or Professional Dashboard, upload the MP4, paste the Facebook caption, and publish or schedule with native controls.
+8. After the Facebook reel is live, paste the blog URL as the first comment.
+9. Log Buffer performance with the API snapshot and Facebook performance after 48-72 hours with `video/scripts/feedback.mjs`.
 
 ### Future Postiz workflow
 
@@ -556,9 +619,10 @@ Post manually using the generated assets:
 1. Open `public/blog/[slug]/posting-pack.md`.
 2. YouTube via Buffer API: use `.buffer-youtube-queue.json` selected jobs only. For manual Buffer upload, use `public/reels/[slug]/[slug].mp4` if Buffer rejects the full source duration.
 3. X via Buffer API: use `.buffer-x-queue.json` selected jobs only. Long-form reels over 140 seconds must be cut down before X scheduling. Do not log an X reel as scheduled until `get_post` shows the video asset.
-4. Facebook Professional Mode: upload the same MP4 through Facebook native tools, then paste the Facebook caption from the pack.
-5. For photo posts on supported manual channels, upload `public/blog/[slug]/photo-post.svg` and use the photo caption from `social-copy.json`.
-6. First comment on each post: paste the live blog URL.
+4. Instagram via Buffer API: use `.buffer-instagram-queue.json` selected jobs only and require the Reel video asset on readback.
+5. Facebook Professional Mode: upload the same MP4 through Facebook native tools, then paste the Facebook caption from the pack.
+6. For photo posts on supported manual channels, upload `public/blog/[slug]/photo-post.svg` and use the photo caption from `social-copy.json`.
+7. First comment on each post: paste the live blog URL.
 
 Do not paste Buffer API keys, Facebook credentials, or access tokens into repo files, chat prompts, screenshots, or generated posting packs.
 
@@ -604,3 +668,26 @@ npm run social:facebook:batch -- --include-posted
 | Captions | `blog/[slug]/social-copy.json` | JSON |
 | Posting pack | `blog/[slug]/posting-pack.md` and `blog/[slug]/posting-pack.json` | Markdown + JSON |
 | Facebook reel batch | `.facebook-reels-batch.md` and `.facebook-reels-batch.json` | Markdown + JSON |
+
+---
+
+## Daily profit and learning control
+
+Social completion feeds the comparison-driven loop in
+`docs/PROFIT-IMPROVEMENT-SOP.md`. Record delivery only after authoritative
+platform readback confirms the expected channel, status, schedule, text, and
+media asset. Record quality escapes, text-only posts, duplicate posts, missed
+checkpoints, and manual rework as penalties with stable fingerprints.
+
+Views and posting volume are not profit. Promote a creative or distribution
+pattern only when it has sufficient comparable samples and improves a declared
+leading metric without hurting qualified leads, conversion, attributable gross
+profit, trust, or platform compliance. Outbound copy must pass the deterministic
+meta-instruction check before posting-pack or Buffer queue generation.
+## Performance feedback
+
+After Buffer distribution, run `npm run social:buffer:metrics -- --date=YYYY-MM-DD`.
+Use API readback only. Judge posts in D+1, D+3, and D+7 cohorts because Buffer's
+metrics refresh can lag by about 24 hours. Views, impressions, engagement, and
+watch length are leading indicators—not profit—and must follow the normalization,
+sample-size, and score-cap rules in `docs/PROFIT-IMPROVEMENT-SOP.md`.
