@@ -1,0 +1,35 @@
+{
+  "title": "Silver Reserve vs. 401k: A Direct Comparison",
+  "source": "IRS Publication 590-A (2024), Fidelity Retirement Calculator",
+  "bars": [
+    {
+      "label": "Employee Contribution Limit (2024)",
+      "value": "$23,000"
+    },
+    {
+      "label": "Catch-Up Contribution (Age 50+)",
+      "value": "$7,500"
+    },
+    {
+      "label": "Monthly Contribution Range",
+      "value": "50-500"
+    },
+    {
+      "label": "Minimum 401k Investment",
+      "value": "1,000"
+    },
+    {
+      "label": "Potential 401k Growth (7% Annual)",
+      "value": "875,000"
+    },
+    {
+      "label": "Potential Silver Reserve Growth (12% Annual)",
+      "value": "1,650,000"
+    }
+  ],
+  "hero_stat": {
+    "value": "92%",
+    "label": "Silver Reserve Potential Growth (Illustrative)"
+  },
+  "narration": "This chart compares the potential growth of a 401(k) investment with a 7% average annual return to the potential growth of a Silver Reserve investment with a 12% average annual return over 30 years. These are illustrative figures and actual returns may vary significantly due to market volatility. The 401k offers tax-deferred growth and employer matching, while Silver Reserve provides a tangible asset and diversification, but carries higher risk."
+}
