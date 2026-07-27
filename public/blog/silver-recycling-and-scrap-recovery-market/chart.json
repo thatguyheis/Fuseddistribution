@@ -1,0 +1,35 @@
+{
+  "title": "Silver Recycling Market Growth",
+  "source": "Silver Institute (2026)",
+  "bars": [
+    {
+      "label": "Global Scrap Silver Market Value",
+      "value": "$1.78 billion"
+    },
+    {
+      "label": "CAGR (2024-2028)",
+      "value": "4.7%"
+    },
+    {
+      "label": "Average Spot Price Increase (Past 5 Years)",
+      "value": "15%"
+    },
+    {
+      "label": "Industrial Silver Recovery (%)",
+      "value": "20%"
+    },
+    {
+      "label": "Silver Demand Growth (Industrial)",
+      "value": "3.5%"
+    },
+    {
+      "label": "Silver Spot Price",
+      "value": "$31.30"
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Silver Price Increase (5 Years)"
+  },
+  "narration": "This chart illustrates the significant growth in the global silver recycling market, driven by increasing e-waste and growing awareness of sustainability. The market was valued at $1.78 billion in 2023 and is projected to grow at a CAGR of 4.7% through 2028.  A key driver is the substantial 20% of global silver supply recovered from industrial processes, with the average spot price having increased by 15% over the past five years."
+}

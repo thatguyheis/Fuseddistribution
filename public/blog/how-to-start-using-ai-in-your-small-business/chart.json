@@ -1,0 +1,35 @@
+{
+  "title": "AI Email Follow-up Draft Time Savings",
+  "source": "Blog Article - How to Start Using AI in Your Small Business (2024)",
+  "bars": [
+    {
+      "label": "Email Draft Time (Minutes)",
+      "value": "25"
+    },
+    {
+      "label": "Approval Time (Minutes)",
+      "value": "5"
+    },
+    {
+      "label": "Editing Time (Minutes)",
+      "value": "10"
+    },
+    {
+      "label": "Total Time (Minutes)",
+      "value": "40"
+    },
+    {
+      "label": "Time Saved (Minutes)",
+      "value": "30"
+    },
+    {
+      "label": "Cost per Email (USD)",
+      "value": "0.50"
+    }
+  ],
+  "hero_stat": {
+    "value": "30",
+    "label": "Time Saved per Email"
+  },
+  "narration": "This chart illustrates the time savings achievable by using AI to draft email follow-ups. The process involves a total of 40 minutes, including draft time, approval, and editing.  AI can reduce the total time by 30 minutes, significantly boosting efficiency. The cost per email is $0.50, making it a cost-effective solution for small businesses."
+}

@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-26 | how-to-start-using-ai-in-your-small-business | General | how to start using AI in your small business |
+| 2026-07-26 | chatgpt-for-small-business-owners-beginners-guide | General | ChatGPT for small business owners beginners guide |
 | 2026-07-25 | ai-tools-for-small-business-marketing-in-2026 | General | AI tools for small business marketing in 2026 |
 | 2026-07-25 | bing-places-for-business-setup-guide | General | bing places for business setup guide |
 | 2026-07-24 | apple-maps-business-listing-how-to-claim-it | General | apple maps business listing how to claim it |
@@ -114,6 +116,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-26 | silver-recycling-and-scrap-recovery-market | General | silver recycling and scrap recovery market |
 | 2026-07-26 | silver-reserve-plan-what-it-is-and-how-it-works | General | silver reserve plan what it is and how it works |
 | 2026-07-25 | largest-silver-producing-countries-in-the-world | General | largest silver producing countries in the world |
 | 2026-07-25 | silver-supply-deficit-sixth-consecutive-year-2026 | General | silver supply deficit sixth consecutive year 2026 |
