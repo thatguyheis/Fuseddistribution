@@ -114,6 +114,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-26 | silver-reserve-plan-what-it-is-and-how-it-works | General | silver reserve plan what it is and how it works |
 | 2026-07-25 | largest-silver-producing-countries-in-the-world | General | largest silver producing countries in the world |
 | 2026-07-25 | silver-supply-deficit-sixth-consecutive-year-2026 | General | silver supply deficit sixth consecutive year 2026 |
 | 2026-07-24 | silver-mining-stocks-vs-physical-silver | General | silver mining stocks vs physical silver |
