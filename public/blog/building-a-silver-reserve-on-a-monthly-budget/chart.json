@@ -1,0 +1,23 @@
+{
+  "title": "Silver Accumulation Based on Monthly Budget",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "10-15 Ounces",
+      "value": "10-15"
+    },
+    {
+      "label": "20-30 Ounces",
+      "value": "20-30"
+    },
+    {
+      "label": "40-60 Ounces",
+      "value": "40-60"
+    }
+  ],
+  "hero_stat": {
+    "value": "40-60",
+    "label": "Ounces of Silver Accumulation"
+  },
+  "narration": "This chart illustrates the potential silver accumulation achievable based on varying monthly investment amounts.  Starting with $50/month yields 10-15 ounces, while $100/month results in 20-30 ounces.  A consistent $200/month can lead to a substantial reserve of 40-60 ounces over a year, demonstrating the benefits of compounding returns."
+}
