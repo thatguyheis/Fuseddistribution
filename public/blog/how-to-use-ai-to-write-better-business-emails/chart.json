@@ -1,0 +1,19 @@
+{
+  "title": "Email ROI & HubSpot Stats",
+  "source": "HubSpot (2023)",
+  "bars": [
+    {
+      "label": "Email ROI",
+      "value": "42"
+    },
+    {
+      "label": "Marketer Email Preference",
+      "value": "91"
+    }
+  ],
+  "hero_stat": {
+    "value": "91%",
+    "label": "Email Marketing Effectiveness"
+  },
+  "narration": "This chart highlights two key statistics about email marketing. HubSpot found that 91% of marketers consider email to be their most effective marketing channel. Furthermore, email marketing consistently delivers a significant return on investment, generating $42 for every $1 spent, according to a 2023 report by Mailchimp."
+}

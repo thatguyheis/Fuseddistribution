@@ -14,6 +14,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-27 | how-to-use-ai-to-write-better-business-emails | General | how to use AI to write better business emails |
+| 2026-07-27 | best-free-ai-tools-for-small-business-2026 | General | best free AI tools for small business 2026 |
 | 2026-07-26 | how-to-start-using-ai-in-your-small-business | General | how to start using AI in your small business |
 | 2026-07-26 | chatgpt-for-small-business-owners-beginners-guide | General | ChatGPT for small business owners beginners guide |
 | 2026-07-25 | ai-tools-for-small-business-marketing-in-2026 | General | AI tools for small business marketing in 2026 |
