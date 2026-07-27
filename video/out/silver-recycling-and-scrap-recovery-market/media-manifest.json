@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver recycling and scrap recovery market",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T06:33:02.744Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market silver metal enduring\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver recycling and scrap recovery market silver metal enduring",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:33:02.763Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market 1 78 billion\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver recycling and scrap recovery market 1 78 billion",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:33:02.763Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market 92 5 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market 92 5 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:04.477Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market selling unreputable buyers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market selling unreputable buyers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:05.865Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market 15 spot price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market 15 spot price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:06.902Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market several methods employed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market several methods employed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:08.026Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market 3 5 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market 3 5 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:09.129Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market here some additional\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market here some additional",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:10.101Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market looking ahead silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market looking ahead silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:11.434Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver recycling and scrap recovery market customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver recycling and scrap recovery market customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:33:12.673Z"
+    }
+  }
+}

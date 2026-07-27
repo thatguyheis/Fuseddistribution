@@ -1,0 +1,53 @@
+{
+  "slug": "largest-silver-producing-countries-in-the-world",
+  "renderedAt": "2026-07-27T07:53:56.271Z",
+  "hookType": "stat",
+  "segmentCount": 11,
+  "scriptDuration": 230.925,
+  "renderedDuration": 225.493333,
+  "scriptHash": "6b4d6f4fac8a3eb6b9c7a31d63ab47c58e2e7d660df13ce6bbd09dd2b6ee5b7e",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-valley-sunset-127.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09463025179229612
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.68,
+      "1": 24.4,
+      "2": 24.54,
+      "3": 24.46,
+      "4": 24.96,
+      "5": 30.5,
+      "6": 26.28,
+      "7": 24.3,
+      "8": 23.22,
+      "9": 10.78,
+      "10": 4.84
+    },
+    "totalNarrationSeconds": 222.96
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/valley-sunset-127/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "ChatGPT for small business owners beginners guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T06:10:41.665Z"
+    },
+    "1": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "ChatGPT for small business owners beginners guide small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:10:41.685Z"
+    },
+    "2": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide learns vast amounts\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "ChatGPT for small business owners beginners guide learns vast amounts",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:10:41.685Z"
+    },
+    "3": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide refine response\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide refine response",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:43.189Z"
+    },
+    "4": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide 10 social media\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide 10 social media",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:44.039Z"
+    },
+    "5": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide write three different\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide write three different",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:45.162Z"
+    },
+    "6": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide 50 means could\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide 50 means could",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:46.014Z"
+    },
+    "7": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide 68 business small\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide 68 business small",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:47.216Z"
+    },
+    "8": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide chain prompts break\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide chain prompts break",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:49.614Z"
+    },
+    "9": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide fused distribution committed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide fused distribution committed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:50.665Z"
+    },
+    "10": {
+      "key": "{\"query\":\"ChatGPT for small business owners beginners guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "ChatGPT for small business owners beginners guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:10:52.041Z"
+    }
+  }
+}

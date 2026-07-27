@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver reserve plan what it is and how it works",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T06:56:47.399Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works looking way protect\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver reserve plan what it is and how it works looking way protect",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:56:47.419Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works core idea build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver reserve plan what it is and how it works core idea build",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T06:56:47.419Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works 1 silver determine\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works 1 silver determine",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:50.019Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works 29 37 spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works 29 37 spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:51.446Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works while core principles\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works while core principles",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:52.783Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works 1 silver price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works 1 silver price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:54.376Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works diversifying while silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works diversifying while silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:55.845Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works tracking progress crucial\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works tracking progress crucial",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:57.172Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works our knowledgeable team\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works our knowledgeable team",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:56:58.719Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver reserve plan what it is and how it works customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver reserve plan what it is and how it works customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T06:57:01.188Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"largest silver producing countries in the world\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "largest silver producing countries in the world",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T07:45:07.335Z"
+    },
+    "1": {
+      "key": "{\"query\":\"largest silver producing countries in the world understanding where bulk\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "largest silver producing countries in the world understanding where bulk",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T07:45:07.355Z"
+    },
+    "2": {
+      "key": "{\"query\":\"largest silver producing countries in the world 24 demand spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "largest silver producing countries in the world 24 demand spot",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T07:45:07.355Z"
+    },
+    "3": {
+      "key": "{\"query\":\"largest silver producing countries in the world 16 silver world\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world 16 silver world",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:09.426Z"
+    },
+    "4": {
+      "key": "{\"query\":\"largest silver producing countries in the world 285 7 million\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world 285 7 million",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:11.094Z"
+    },
+    "5": {
+      "key": "{\"query\":\"largest silver producing countries in the world regulations concerning water\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world regulations concerning water",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:13.300Z"
+    },
+    "6": {
+      "key": "{\"query\":\"largest silver producing countries in the world 24 global supply\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world 24 global supply",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:14.387Z"
+    },
+    "7": {
+      "key": "{\"query\":\"largest silver producing countries in the world 16 silver global\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world 16 silver global",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:15.150Z"
+    },
+    "8": {
+      "key": "{\"query\":\"largest silver producing countries in the world future silver production\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world future silver production",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:15.822Z"
+    },
+    "9": {
+      "key": "{\"query\":\"largest silver producing countries in the world choose reputable dealer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world choose reputable dealer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:17.086Z"
+    },
+    "10": {
+      "key": "{\"query\":\"largest silver producing countries in the world customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "largest silver producing countries in the world customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:45:17.732Z"
+    }
+  }
+}

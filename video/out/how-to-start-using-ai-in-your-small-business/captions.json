@@ -1,0 +1,309 @@
+{
+  "0": [
+    {
+      "text": "Start with one small, low-risk task , time saved is key.",
+      "startSec": 0,
+      "endSec": 3.96
+    }
+  ],
+  "1": [
+    {
+      "text": "Start using AI in your small business by choosing one repeated",
+      "startSec": 0,
+      "endSec": 3.357073170731707
+    },
+    {
+      "text": "low-risk task and building a clear review process around it.",
+      "startSec": 3.2070731707317073,
+      "endSec": 6.455853658536585
+    },
+    {
+      "text": "Do not begin by buying several subscriptions or asking a chatbot to run an entire department.",
+      "startSec": 6.455853658536585,
+      "endSec": 11.491463414634145
+    },
+    {
+      "text": "Pick work with known inputs and an obvious finished result, such as summarizing meeting notes",
+      "startSec": 11.491463414634145,
+      "endSec": 16.527073170731704
+    },
+    {
+      "text": "drafting a follow-up email, or organizing customer questions.",
+      "startSec": 16.527073170731704,
+      "endSec": 19.98
+    }
+  ],
+  "2": [
+    {
+      "text": "Include administrative work, marketing, sales follow-up, customer service preparation",
+      "startSec": 0,
+      "endSec": 4.867067307692308
+    },
+    {
+      "text": "and internal reporting.",
+      "startSec": 4.717067307692307,
+      "endSec": 6.0340384615384615
+    },
+    {
+      "text": "Mark tasks that take time but follow a consistent pattern.",
+      "startSec": 6.0340384615384615,
+      "endSec": 9.355096153846155
+    },
+    {
+      "text": "Good first projects include turning call notes into a task list",
+      "startSec": 9.355096153846155,
+      "endSec": 12.962451923076923
+    },
+    {
+      "text": "drafting a reply from an approved policy, creating an outline from a service description",
+      "startSec": 12.962451923076923,
+      "endSec": 18.001298076923078
+    },
+    {
+      "text": "or sorting anonymous feedback into themes.",
+      "startSec": 18.001298076923078,
+      "endSec": 20.406201923076924
+    },
+    {
+      "text": "These jobs have source material that a person can verify.",
+      "startSec": 20.406201923076924,
+      "endSec": 23.82
+    }
+  ],
+  "3": [
+    {
+      "text": "It may create a first draft, extract fields, organize ideas, or compare a result with a checklist.",
+      "startSec": 0,
+      "endSec": 5.353018867924528
+    },
+    {
+      "text": "It should not silently replace the parts that require judgment or authorization.",
+      "startSec": 5.203018867924528,
+      "endSec": 9.572830188679244
+    },
+    {
+      "text": "For a quote follow-up, the trigger might be a completed estimate.",
+      "startSec": 9.572830188679244,
+      "endSec": 13.123301886792452
+    },
+    {
+      "text": "The inputs are the customer name, approved scope, price, expiration date, and booking link.",
+      "startSec": 13.123301886792452,
+      "endSec": 18.093962264150942
+    },
+    {
+      "text": "AI can draft the message, but a staff member must confirm those details before sending it.",
+      "startSec": 18.093962264150942,
+      "endSec": 23.16
+    }
+  ],
+  "4": [
+    {
+      "text": "Check output quality, editing time, privacy settings, account controls, export options, cost",
+      "startSec": 0,
+      "endSec": 5.09156862745098
+    },
+    {
+      "text": "and whether your team will actually use it.",
+      "startSec": 4.941568627450979,
+      "endSec": 7.321323529411764
+    },
+    {
+      "text": "Run the same prompt and source material through each candidate.",
+      "startSec": 7.321323529411764,
+      "endSec": 10.807941176470587
+    },
+    {
+      "text": "One useful tool is better than several overlapping subscriptions.",
+      "startSec": 10.807941176470587,
+      "endSec": 14.405245098039213
+    },
+    {
+      "text": "Keep the first test small enough that you can cancel it without disrupting customer work.",
+      "startSec": 14.405245098039213,
+      "endSec": 19.330784313725488
+    },
+    {
+      "text": "AI output improves when the source information is clear.",
+      "startSec": 19.330784313725488,
+      "endSec": 22.58
+    }
+  ],
+  "5": [
+    {
+      "text": "Task: State the exact result you need.",
+      "startSec": 0,
+      "endSec": 2.683626943005182
+    },
+    {
+      "text": "Audience: Describe who will read or use it.",
+      "startSec": 2.533626943005182,
+      "endSec": 5.570362694300519
+    },
+    {
+      "text": "Source: Provide the facts the answer may use.",
+      "startSec": 5.570362694300519,
+      "endSec": 8.748341968911918
+    },
+    {
+      "text": "Format: Set the length, sections, and channel.",
+      "startSec": 8.748341968911918,
+      "endSec": 11.996943005181347
+    },
+    {
+      "text": "Restrictions: Ban invented facts, promises, or sensitive material.",
+      "startSec": 11.996943005181347,
+      "endSec": 16.6579792746114
+    },
+    {
+      "text": "Review: Ask the tool to identify missing information instead of guessing.",
+      "startSec": 16.6579792746114,
+      "endSec": 21.81336787564767
+    },
+    {
+      "text": "For example: “Draft a 120-word appointment follow-up email for a homeowner.",
+      "startSec": 21.81336787564767,
+      "endSec": 27.26
+    }
+  ],
+  "6": [
+    {
+      "text": "Include a complete input, missing information, conflicting notes, an unusual customer request",
+      "startSec": 0,
+      "endSec": 5.442222222222222
+    },
+    {
+      "text": "and a case that should be rejected.",
+      "startSec": 5.292222222222222,
+      "endSec": 7.340370370370369
+    },
+    {
+      "text": "Review each result against the same checklist.",
+      "startSec": 7.340370370370369,
+      "endSec": 10.03222222222222
+    },
+    {
+      "text": "Check factual accuracy, tone, privacy, format, action, and the amount of editing required.",
+      "startSec": 10.03222222222222,
+      "endSec": 15.298888888888886
+    },
+    {
+      "text": "If the tool repeatedly invents a price, change the prompt and source format before another test.",
+      "startSec": 15.298888888888886,
+      "endSec": 20.916666666666664
+    },
+    {
+      "text": "Do not publish the first impressive response.",
+      "startSec": 20.916666666666664,
+      "endSec": 23.7
+    }
+  ],
+  "7": [
+    {
+      "text": "A public marketing item might require correct claims, current offer details, working links",
+      "startSec": 0,
+      "endSec": 5.1070754716981135
+    },
+    {
+      "text": "brand tone, image accuracy, and a clear next step.",
+      "startSec": 4.957075471698113,
+      "endSec": 7.794339622641509
+    },
+    {
+      "text": "A customer reply might require identity, account, policy, date, and promised action checks.",
+      "startSec": 7.794339622641509,
+      "endSec": 12.958160377358489
+    },
+    {
+      "text": "Keep a record of who approved sensitive or high-value messages.",
+      "startSec": 12.958160377358489,
+      "endSec": 16.533113207547167
+    },
+    {
+      "text": "If the AI output is wrong, the business still owns the result.",
+      "startSec": 16.533113207547167,
+      "endSec": 20.05132075471698
+    },
+    {
+      "text": "Human approval protects the customer and makes responsibility clear.",
+      "startSec": 20.05132075471698,
+      "endSec": 24.06
+    }
+  ],
+  "8": [
+    {
+      "text": "Train staff to verify rather than admire the response.",
+      "startSec": 0,
+      "endSec": 3.0671052631578943
+    },
+    {
+      "text": "AI can produce confident text that is incomplete or wrong.",
+      "startSec": 2.9171052631578944,
+      "endSec": 6.21140350877193
+    },
+    {
+      "text": "Employees should know how to find the source fact, ask for missing information",
+      "startSec": 6.21140350877193,
+      "endSec": 10.641666666666666
+    },
+    {
+      "text": "and stop the workflow.",
+      "startSec": 10.641666666666666,
+      "endSec": 11.891228070175437
+    },
+    {
+      "text": "Set boundaries for customer communication, public claims, financial decisions",
+      "startSec": 11.891228070175437,
+      "endSec": 16.26469298245614
+    },
+    {
+      "text": "and confidential information.",
+      "startSec": 16.26469298245614,
+      "endSec": 17.91184210526316
+    },
+    {
+      "text": "Review access when an employee changes roles or leaves the company.",
+      "startSec": 17.91184210526316,
+      "endSec": 21.717324561403508
+    },
+    {
+      "text": "After the first workflow performs reliably, add a closely related task.",
+      "startSec": 21.717324561403508,
+      "endSec": 25.9
+    }
+  ],
+  "9": [
+    {
+      "text": "Remove processes nobody uses and subscriptions that duplicate another tool.",
+      "startSec": 0,
+      "endSec": 4.050955414012739
+    },
+    {
+      "text": "Starting small gives your business a useful advantage: you learn where AI actually saves time without giving up control.",
+      "startSec": 3.900955414012739,
+      "endSec": 10.382484076433121
+    },
+    {
+      "text": "Pick one job this week, document it, test it with safe data",
+      "startSec": 10.382484076433121,
+      "endSec": 13.569235668789808
+    },
+    {
+      "text": "and make the approval step part of the process from day one.",
+      "startSec": 13.569235668789808,
+      "endSec": 16.96
+    }
+  ],
+  "10": [
+    {
+      "text": "How does incorporating AI into your small business workflow feel?",
+      "startSec": 0,
+      "endSec": 3.5161904761904763
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 3.3661904761904764,
+      "endSec": 5.68
+    }
+  ]
+}

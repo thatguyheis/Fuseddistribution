@@ -1,0 +1,85 @@
+{
+  "slug": "how-to-start-using-ai-in-your-small-business",
+  "title": "how-to-start-using-ai-in-your-small-business",
+  "totalDuration": 225.025,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4.76,
+      "text": "Start with one small, low-risk task , time saved is key.",
+      "narration": "Start with one small, low-risk task , time saved is key."
+    },
+    {
+      "type": "overlay",
+      "startSec": 4.76,
+      "endSec": 25.473,
+      "text": "START USING SMALL BUSINESS",
+      "narration": "Start using AI in your small business by choosing one repeated, low-risk task and building a clear review process around it. Do not begin by buying several subscriptions or asking a chatbot to run an entire department. Pick work with known inputs and an obvious finished result, such as summarizing meeting notes, drafting a follow-up email, or organizing customer questions."
+    },
+    {
+      "type": "overlay",
+      "startSec": 25.473,
+      "endSec": 50.093,
+      "text": "INCLUDE ADMINISTRATIVE WORK MARKETING",
+      "narration": "Include administrative work, marketing, sales follow-up, customer service preparation, and internal reporting. Mark tasks that take time but follow a consistent pattern. Good first projects include turning call notes into a task list, drafting a reply from an approved policy, creating an outline from a service description, or sorting anonymous feedback into themes. These jobs have source material that a person can verify."
+    },
+    {
+      "type": "overlay",
+      "startSec": 50.093,
+      "endSec": 73.953,
+      "text": "MAY CREATE FIRST DRAFT",
+      "narration": "It may create a first draft, extract fields, organize ideas, or compare a result with a checklist. It should not silently replace the parts that require judgment or authorization. For a quote follow-up, the trigger might be a completed estimate. The inputs are the customer name, approved scope, price, expiration date, and booking link. AI can draft the message, but a staff member must confirm those details before sending it."
+    },
+    {
+      "type": "overlay",
+      "startSec": 73.953,
+      "endSec": 97.266,
+      "text": "CHECK OUTPUT QUALITY EDITING",
+      "narration": "Check output quality, editing time, privacy settings, account controls, export options, cost, and whether your team will actually use it. Run the same prompt and source material through each candidate. One useful tool is better than several overlapping subscriptions. Keep the first test small enough that you can cancel it without disrupting customer work. AI output improves when the source information is clear."
+    },
+    {
+      "type": "stat",
+      "startSec": 97.266,
+      "endSec": 125.259,
+      "text": "120 WORD APPOINTMENT FOLLOW EMAIL",
+      "narration": "Task: State the exact result you need. Audience: Describe who will read or use it. Source: Provide the facts the answer may use. Format: Set the length, sections, and channel. Restrictions: Ban invented facts, promises, or sensitive material. Review: Ask the tool to identify missing information instead of guessing. For example: “Draft a 120-word appointment follow-up email for a homeowner."
+    },
+    {
+      "type": "overlay",
+      "startSec": 125.259,
+      "endSec": 149.759,
+      "text": "INCLUDE COMPLETE INPUT MISSING",
+      "narration": "Include a complete input, missing information, conflicting notes, an unusual customer request, and a case that should be rejected. Review each result against the same checklist. Check factual accuracy, tone, privacy, format, action, and the amount of editing required. If the tool repeatedly invents a price, change the prompt and source format before another test. Do not publish the first impressive response."
+    },
+    {
+      "type": "overlay",
+      "startSec": 149.759,
+      "endSec": 174.519,
+      "text": "PUBLIC MARKETING ITEM MIGHT",
+      "narration": "A public marketing item might require correct claims, current offer details, working links, brand tone, image accuracy, and a clear next step. A customer reply might require identity, account, policy, date, and promised action checks. Keep a record of who approved sensitive or high-value messages. If the AI output is wrong, the business still owns the result. Human approval protects the customer and makes responsibility clear."
+    },
+    {
+      "type": "overlay",
+      "startSec": 174.519,
+      "endSec": 201.152,
+      "text": "TRAIN STAFF VERIFY RATHER",
+      "narration": "Train staff to verify rather than admire the response. AI can produce confident text that is incomplete or wrong. Employees should know how to find the source fact, ask for missing information, and stop the workflow. Set boundaries for customer communication, public claims, financial decisions, and confidential information. Review access when an employee changes roles or leaves the company. After the first workflow performs reliably, add a closely related task."
+    },
+    {
+      "type": "overlay",
+      "startSec": 201.152,
+      "endSec": 218.845,
+      "text": "REMOVE PROCESSES NOBODY USES",
+      "narration": "Remove processes nobody uses and subscriptions that duplicate another tool. Starting small gives your business a useful advantage: you learn where AI actually saves time without giving up control. Pick one job this week, document it, test it with safe data, and make the approval step part of the process from day one."
+    },
+    {
+      "type": "question",
+      "startSec": 218.845,
+      "endSec": 225.025,
+      "text": "How does incorporating AI into your small business workflow feel?",
+      "narration": "How does incorporating AI into your small business workflow feel? Follow for more practical business tips.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

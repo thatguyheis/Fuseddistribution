@@ -1,0 +1,309 @@
+{
+  "0": [
+    {
+      "text": "Key insight from the post.",
+      "startSec": 0,
+      "endSec": 1.96
+    }
+  ],
+  "1": [
+    {
+      "text": "AI tools can help a small business produce marketing work faster",
+      "startSec": 0,
+      "endSec": 3.420215053763441
+    },
+    {
+      "text": "but the best results come from using them for narrow, repeatable jobs.",
+      "startSec": 3.270215053763441,
+      "endSec": 7.011075268817205
+    },
+    {
+      "text": "Start with one task that already consumes time each week, such as drafting social posts",
+      "startSec": 7.011075268817205,
+      "endSec": 11.660430107526881
+    },
+    {
+      "text": "summarizing customer reviews, or turning service notes into an email.",
+      "startSec": 11.660430107526881,
+      "endSec": 15.347849462365591
+    },
+    {
+      "text": "Keep a person responsible for the final decision, factual checks, and brand voice.",
+      "startSec": 15.347849462365591,
+      "endSec": 19.88
+    }
+  ],
+  "2": [
+    {
+      "text": "This guide explains which AI marketing tools are worth testing, how to choose them",
+      "startSec": 0,
+      "endSec": 4.839564032697548
+    },
+    {
+      "text": "and how to build a safe weekly process for a local or service business.",
+      "startSec": 4.689564032697548,
+      "endSec": 8.87991825613079
+    },
+    {
+      "text": "Write down the marketing work you repeat every week.",
+      "startSec": 8.87991825613079,
+      "endSec": 11.948910081743868
+    },
+    {
+      "text": "Include who does it, how long it takes, what input it needs, and what a finished result looks like.",
+      "startSec": 11.948910081743868,
+      "endSec": 17.791798365122617
+    },
+    {
+      "text": "Good first candidates have a clear format and a human reviewer.",
+      "startSec": 17.791798365122617,
+      "endSec": 21.66
+    }
+  ],
+  "3": [
+    {
+      "text": "Give the tool your audience, offer, proof, tone, channel, length",
+      "startSec": 0,
+      "endSec": 3.9761702127659575
+    },
+    {
+      "text": "and action you want the reader to take.",
+      "startSec": 3.8261702127659576,
+      "endSec": 6.249148936170213
+    },
+    {
+      "text": "Tell it not to invent prices, reviews, guarantees, or customer stories.",
+      "startSec": 6.249148936170213,
+      "endSec": 10.660212765957446
+    },
+    {
+      "text": "A useful prompt can follow this format: 1.",
+      "startSec": 10.660212765957446,
+      "endSec": 13.269574468085107
+    },
+    {
+      "text": "Audience: homeowners within 20 miles who need seasonal maintenance.",
+      "startSec": 13.269574468085107,
+      "endSec": 17.43212765957447
+    },
+    {
+      "text": "Offer: a fixed-price inspection with the real price supplied in the prompt.",
+      "startSec": 17.43212765957447,
+      "endSec": 22.091702127659577
+    },
+    {
+      "text": "Proof: years in business, service area, and verified credentials.",
+      "startSec": 22.091702127659577,
+      "endSec": 26.28
+    }
+  ],
+  "4": [
+    {
+      "text": "Change only the headline, supporting photo, and offer.",
+      "startSec": 0,
+      "endSec": 3.345933014354067
+    },
+    {
+      "text": "This keeps weekly work recognizable and reduces review time.",
+      "startSec": 3.195933014354067,
+      "endSec": 6.913636363636364
+    },
+    {
+      "text": "Your inbox, calls, estimates, and reviews contain better content ideas than a generic trend list.",
+      "startSec": 6.913636363636364,
+      "endSec": 12.923923444976076
+    },
+    {
+      "text": "Remove personal details, group repeated questions",
+      "startSec": 12.923923444976076,
+      "endSec": 15.960047846889951
+    },
+    {
+      "text": "and ask an AI tool to organize them by customer stage.",
+      "startSec": 15.960047846889951,
+      "endSec": 19.305980861244016
+    },
+    {
+      "text": "Categories might include first questions, comparison questions, purchase concerns",
+      "startSec": 19.305980861244016,
+      "endSec": 24.324880382775117
+    },
+    {
+      "text": "and after-sale support.",
+      "startSec": 24.324880382775117,
+      "endSec": 25.9
+    }
+  ],
+  "5": [
+    {
+      "text": "If several questions reveal a missing service page",
+      "startSec": 0,
+      "endSec": 2.835858585858586
+    },
+    {
+      "text": "use the guidance in Bing Places for Business setup and your local profiles to keep service details consistent across search touchpoints.",
+      "startSec": 2.685858585858586,
+      "endSec": 10.399393939393939
+    },
+    {
+      "text": "AI can help draft welcome emails, appointment reminders, quote follow-ups",
+      "startSec": 10.399393939393939,
+      "endSec": 14.539747474747474
+    },
+    {
+      "text": "and reactivation messages.",
+      "startSec": 14.539747474747474,
+      "endSec": 16.014393939393937
+    },
+    {
+      "text": "The automation should still depend on real customer actions, not guesses.",
+      "startSec": 16.014393939393937,
+      "endSec": 20.154747474747474
+    },
+    {
+      "text": "A new lead can receive a welcome note.",
+      "startSec": 20.154747474747474,
+      "endSec": 22.46
+    }
+  ],
+  "6": [
+    {
+      "text": "Do not place sensitive customer details, payment data, medical information",
+      "startSec": 0,
+      "endSec": 4.924221635883905
+    },
+    {
+      "text": "or private job notes into an AI service unless your agreement and settings explicitly permit that use.",
+      "startSec": 4.7742216358839045,
+      "endSec": 11.561662269129286
+    },
+    {
+      "text": "Keep prompts limited to the information needed for the message.",
+      "startSec": 11.561662269129286,
+      "endSec": 15.753905013192611
+    },
+    {
+      "text": "AI can help organize location details, service descriptions, frequently asked questions",
+      "startSec": 15.753905013192611,
+      "endSec": 21.5431926121372
+    },
+    {
+      "text": "and post ideas, but it should not invent local facts.",
+      "startSec": 21.5431926121372,
+      "endSec": 25.22
+    }
+  ],
+  "7": [
+    {
+      "text": "Editing time matters more than generation speed.",
+      "startSec": 0,
+      "endSec": 2.863115577889447
+    },
+    {
+      "text": "A tool that writes in ten seconds but needs thirty minutes of repair is not saving time.",
+      "startSec": 2.713115577889447,
+      "endSec": 7.962160804020101
+    },
+    {
+      "text": "Track minutes from source material to approved output.",
+      "startSec": 7.962160804020101,
+      "endSec": 11.183165829145729
+    },
+    {
+      "text": "Include setup and review, not just the first response.",
+      "startSec": 11.183165829145729,
+      "endSec": 14.404170854271356
+    },
+    {
+      "text": "Choose the smallest tool set that wins on the work you actually do.",
+      "startSec": 14.404170854271356,
+      "endSec": 18.400603015075376
+    },
+    {
+      "text": "Recheck the scorecard each quarter because product features, limits, and prices change.",
+      "startSec": 18.400603015075376,
+      "endSec": 23.74
+    }
+  ],
+  "8": [
+    {
+      "text": "Compare the new process with your previous four weeks when possible.",
+      "startSec": 0,
+      "endSec": 3.792437810945274
+    },
+    {
+      "text": "Do not credit the tool for reach or sales without a clear link.",
+      "startSec": 3.642437810945274,
+      "endSec": 7.156019900497514
+    },
+    {
+      "text": "A faster content process is useful, but it should eventually support a customer action.",
+      "startSec": 7.156019900497514,
+      "endSec": 12.00810945273632
+    },
+    {
+      "text": "Paid promotion and organic work need separate tracking.",
+      "startSec": 12.00810945273632,
+      "endSec": 15.075522388059703
+    },
+    {
+      "text": "If you are deciding where to spend",
+      "startSec": 15.075522388059703,
+      "endSec": 16.97174129353234
+    },
+    {
+      "text": "review pay per click versus organic SEO before assigning budget to AI-generated campaign ideas.",
+      "startSec": 16.97174129353234,
+      "endSec": 22.42
+    }
+  ],
+  "9": [
+    {
+      "text": "If the first job works, add one related task.",
+      "startSec": 0,
+      "endSec": 2.560053619302949
+    },
+    {
+      "text": "For example",
+      "startSec": 2.410053619302949,
+      "endSec": 3.0358445040214477
+    },
+    {
+      "text": "move from drafting one weekly email to adapting that approved email into two social posts.",
+      "startSec": 3.0358445040214477,
+      "endSec": 8.155951742627344
+    },
+    {
+      "text": "Do not add five new tools at once.",
+      "startSec": 8.155951742627344,
+      "endSec": 10.090214477211795
+    },
+    {
+      "text": "The right AI marketing setup in 2026 is the one your team can understand, review, and measure.",
+      "startSec": 10.090214477211795,
+      "endSec": 15.43788203753351
+    },
+    {
+      "text": "Start with a real bottleneck, protect your source facts",
+      "startSec": 15.43788203753351,
+      "endSec": 18.566836461126
+    },
+    {
+      "text": "and keep final accountability with a person.",
+      "startSec": 18.566836461126,
+      "endSec": 21.22
+    }
+  ],
+  "10": [
+    {
+      "text": "What's your take?",
+      "startSec": 0,
+      "endSec": 0.9305263157894736
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 0.7805263157894736,
+      "endSec": 3.12
+    }
+  ]
+}

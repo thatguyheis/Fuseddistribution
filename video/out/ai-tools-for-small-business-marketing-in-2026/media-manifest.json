@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "AI tools for small business marketing in 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T07:20:35.357Z"
+    },
+    "1": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 tools help small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI tools for small business marketing in 2026 tools help small",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T07:20:35.383Z"
+    },
+    "2": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 guide explains marketing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI tools for small business marketing in 2026 guide explains marketing",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T07:20:35.383Z"
+    },
+    "3": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 1 audience homeowners\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 1 audience homeowners",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:39.247Z"
+    },
+    "4": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 change only headline\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 change only headline",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:41.494Z"
+    },
+    "5": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 several questions reveal\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 several questions reveal",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:44.806Z"
+    },
+    "6": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 place sensitive customer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 place sensitive customer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:47.225Z"
+    },
+    "7": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 editing time matters\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 editing time matters",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:49.452Z"
+    },
+    "8": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 compare new process\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 compare new process",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:52.399Z"
+    },
+    "9": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 first job works\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 first job works",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:53.427Z"
+    },
+    "10": {
+      "key": "{\"query\":\"AI tools for small business marketing in 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "AI tools for small business marketing in 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T07:20:54.610Z"
+    }
+  }
+}

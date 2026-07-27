@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"AI small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "AI small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-27T05:48:08.618Z"
+    },
+    "1": {
+      "key": "{\"query\":\"small business AI\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "small business AI",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T05:48:08.636Z"
+    },
+    "2": {
+      "key": "{\"query\":\"admin marketing AI\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "admin marketing AI",
+      "prefer": "photo",
+      "updatedAt": "2026-07-27T05:48:08.636Z"
+    },
+    "3": {
+      "key": "{\"query\":\"draft AI content\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "draft AI content",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:09.443Z"
+    },
+    "4": {
+      "key": "{\"query\":\"quality AI output\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "quality AI output",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:10.976Z"
+    },
+    "5": {
+      "key": "{\"query\":\"appointment AI email\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "appointment AI email",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:13.470Z"
+    },
+    "6": {
+      "key": "{\"query\":\"complete input AI\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "complete input AI",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:14.970Z"
+    },
+    "7": {
+      "key": "{\"query\":\"marketing item AI\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "marketing item AI",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:15.787Z"
+    },
+    "8": {
+      "key": "{\"query\":\"staff AI verify\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "staff AI verify",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:16.600Z"
+    },
+    "9": {
+      "key": "{\"query\":\"remove unused AI\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "remove unused AI",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:17.314Z"
+    },
+    "10": {
+      "key": "{\"query\":\"AI workflow feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "AI workflow feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-27T05:48:17.862Z"
+    }
+  }
+}
