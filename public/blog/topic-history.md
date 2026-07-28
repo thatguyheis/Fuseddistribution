@@ -119,6 +119,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-28 | silver-price-prediction-2026-what-analysts-expect | General | silver price prediction 2026 what analysts expect |
 | 2026-07-28 | why-silver-price-dropped-this-month-explained | General | why silver price dropped this month explained |
 | 2026-07-27 | silver-reserve-vs-401k-which-makes-more-sense | General | silver reserve vs 401k which makes more sense |
 | 2026-07-27 | building-a-silver-reserve-on-a-monthly-budget | General | building a silver reserve on a monthly budget |

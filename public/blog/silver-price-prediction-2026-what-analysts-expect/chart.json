@@ -1,0 +1,31 @@
+{
+  "title": "Silver Price Prediction 2026: Key Forecasts",
+  "source": "Kitco.com (July 26, 2024)",
+  "bars": [
+    {
+      "label": "$23.47/ounce",
+      "value": "23.47"
+    },
+    {
+      "label": "$35/ounce",
+      "value": "35"
+    },
+    {
+      "label": "$28 - $35/ounce",
+      "value": "28"
+    },
+    {
+      "label": "$20 - $25/ounce",
+      "value": "20"
+    },
+    {
+      "label": "40-50%",
+      "value": "40"
+    }
+  ],
+  "hero_stat": {
+    "value": "35",
+    "label": "Potential Price Increase"
+  },
+  "narration": "This chart highlights key price predictions for silver in 2026, ranging from $20 to $35 per ounce. Analysts anticipate a potential surge driven by inflation and geopolitical risks, with a moderate bullish case targeting $30-$40.  These forecasts consider factors like interest rates and industrial demand, offering investors a range of possibilities to consider."
+}
