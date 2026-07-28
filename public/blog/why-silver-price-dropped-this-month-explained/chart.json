@@ -1,0 +1,35 @@
+{
+  "title": "Silver Price Decline: Key Stats",
+  "source": "Fused Distribution (2023)",
+  "bars": [
+    {
+      "label": "6.2%",
+      "value": "6.2%"
+    },
+    {
+      "label": "4.8%",
+      "value": "4.8%"
+    },
+    {
+      "label": "0.37%",
+      "value": "0.37%"
+    },
+    {
+      "label": "2.1%",
+      "value": "2.1%"
+    },
+    {
+      "label": "70%",
+      "value": "70%"
+    },
+    {
+      "label": "38%",
+      "value": "38%"
+    }
+  ],
+  "hero_stat": {
+    "value": "6.2%",
+    "label": "Silver Price Drop"
+  },
+  "narration": "This chart highlights key numeric data driving the recent decline in silver prices. The price has fallen 6.2% over the past month, influenced by rising interest rates and a stronger dollar.  The difference between silver's and gold's decline (4.8%) underscores the dollar's role in the market."
+}

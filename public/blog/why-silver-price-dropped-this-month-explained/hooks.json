@@ -1,0 +1,10 @@
+{
+  "hook": "Silver prices dropped 6.2% this month – a significant shift.",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "6.2%",
+    "label": "Silver Price Drop"
+  },
+  "discussion_question": "Considering all this, what’s your take on whether now is a good time to invest in silver?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
