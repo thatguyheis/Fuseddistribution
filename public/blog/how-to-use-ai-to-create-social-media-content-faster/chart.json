@@ -1,0 +1,27 @@
+{
+  "title": "AI Content Creation Cost Savings",
+  "source": "HubSpot, 2024",
+  "bars": [
+    {
+      "label": "30% Content Creation Cost Savings",
+      "value": "30%"
+    },
+    {
+      "label": "60% Increase in Content Output",
+      "value": "60%"
+    },
+    {
+      "label": "15% Post Reach Increase",
+      "value": "15%"
+    },
+    {
+      "label": "80% Potential Content Creation Cost Reduction (5 years)",
+      "value": "80%"
+    }
+  ],
+  "hero_stat": {
+    "value": "30%",
+    "label": "AI Content Cost Savings"
+  },
+  "narration": "This chart highlights the potential cost savings businesses can achieve by leveraging AI for social media content creation. HubSpot estimates that AI-powered tools could reduce content creation costs by 30%, while Jasper.ai reports a 60% increase in content output. Furthermore, using relevant hashtags can boost post reach by up to 15%, and a longer-term analysis suggests a potential 80% reduction in costs within five years. These figures demonstrate the significant return on investment that AI offers for social media marketing."
+}
