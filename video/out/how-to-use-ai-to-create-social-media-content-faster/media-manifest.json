@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to use AI to create social media content faster\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to use AI to create social media content faster",
+      "prefer": "video",
+      "updatedAt": "2026-07-28T18:16:02.643Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to use AI to create social media content faster small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to use AI to create social media content faster small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:16:02.713Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to use AI to create social media content faster key understand what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to use AI to create social media content faster key understand what",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:16:02.713Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to use AI to create social media content faster 60 increase content\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster 60 increase content",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:03.981Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to use AI to create social media content faster instead saying write\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster instead saying write",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:04.753Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to use AI to create social media content faster 15 video\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster 15 video",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:05.517Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to use AI to create social media content faster 5 to 10\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster 5 to 10",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:06.256Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to use AI to create social media content faster edit existing images\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster edit existing images",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:06.947Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to use AI to create social media content faster 7x likely see\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster 7x likely see",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:07.951Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to use AI to create social media content faster 30 minutes week\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster 30 minutes week",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:08.585Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to use AI to create social media content faster customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to use AI to create social media content faster customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:16:09.346Z"
+    }
+  }
+}

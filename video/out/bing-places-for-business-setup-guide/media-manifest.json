@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"bing places for business setup guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "bing places for business setup guide",
+      "prefer": "video",
+      "updatedAt": "2026-07-28T18:34:32.867Z"
+    },
+    "1": {
+      "key": "{\"query\":\"bing places for business setup guide small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "bing places for business setup guide small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.193Z"
+    },
+    "2": {
+      "key": "{\"query\":\"bing places for business setup guide 16 business share\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "bing places for business setup guide 16 business share",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.194Z"
+    },
+    "3": {
+      "key": "{\"query\":\"bing places for business setup guide 1 business bing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide 1 business bing",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.194Z"
+    },
+    "4": {
+      "key": "{\"query\":\"bing places for business setup guide once listing claimed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide once listing claimed",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.194Z"
+    },
+    "5": {
+      "key": "{\"query\":\"bing places for business setup guide regularly update these\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide regularly update these",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.195Z"
+    },
+    "6": {
+      "key": "{\"query\":\"bing places for business setup guide break down offerings\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide break down offerings",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.195Z"
+    },
+    "7": {
+      "key": "{\"query\":\"bing places for business setup guide proactively asking reviews\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide proactively asking reviews",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.195Z"
+    },
+    "8": {
+      "key": "{\"query\":\"bing places for business setup guide direction requests track\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide direction requests track",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.196Z"
+    },
+    "9": {
+      "key": "{\"query\":\"bing places for business setup guide following steps outlined\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide following steps outlined",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.197Z"
+    },
+    "10": {
+      "key": "{\"query\":\"bing places for business setup guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "bing places for business setup guide customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:34:33.199Z"
+    }
+  }
+}

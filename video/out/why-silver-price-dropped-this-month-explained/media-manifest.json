@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"why silver price dropped this month explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "why silver price dropped this month explained",
+      "prefer": "video",
+      "updatedAt": "2026-07-28T18:25:35.627Z"
+    },
+    "1": {
+      "key": "{\"query\":\"why silver price dropped this month explained silver prices taken\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "why silver price dropped this month explained silver prices taken",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:25:35.656Z"
+    },
+    "2": {
+      "key": "{\"query\":\"why silver price dropped this month explained while drop unsettling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "why silver price dropped this month explained while drop unsettling",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:25:35.656Z"
+    },
+    "3": {
+      "key": "{\"query\":\"why silver price dropped this month explained shift inflation narrative\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained shift inflation narrative",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:37.126Z"
+    },
+    "4": {
+      "key": "{\"query\":\"why silver price dropped this month explained 0 75 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained 0 75 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:38.333Z"
+    },
+    "5": {
+      "key": "{\"query\":\"why silver price dropped this month explained 70 silver total\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained 70 silver total",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:39.895Z"
+    },
+    "6": {
+      "key": "{\"query\":\"why silver price dropped this month explained price drop doesn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained price drop doesn",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:40.466Z"
+    },
+    "7": {
+      "key": "{\"query\":\"why silver price dropped this month explained diversify investments across\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained diversify investments across",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:41.207Z"
+    },
+    "8": {
+      "key": "{\"query\":\"why silver price dropped this month explained fused distribution committed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained fused distribution committed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:41.912Z"
+    },
+    "9": {
+      "key": "{\"query\":\"why silver price dropped this month explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "why silver price dropped this month explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:25:42.779Z"
+    }
+  }
+}

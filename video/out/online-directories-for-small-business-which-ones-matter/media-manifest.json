@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"online directories for small business which ones matter\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "online directories for small business which ones matter",
+      "prefer": "video",
+      "updatedAt": "2026-07-28T18:59:45.626Z"
+    },
+    "1": {
+      "key": "{\"query\":\"online directories for small business which ones matter online directories small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online directories for small business which ones matter online directories small",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:59:45.741Z"
+    },
+    "2": {
+      "key": "{\"query\":\"online directories for small business which ones matter online directories matter\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online directories for small business which ones matter online directories matter",
+      "prefer": "photo",
+      "updatedAt": "2026-07-28T18:59:45.743Z"
+    },
+    "3": {
+      "key": "{\"query\":\"online directories for small business which ones matter about showing right\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter about showing right",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:46.933Z"
+    },
+    "4": {
+      "key": "{\"query\":\"online directories for small business which ones matter look plumbing directories\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter look plumbing directories",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:49.474Z"
+    },
+    "5": {
+      "key": "{\"query\":\"online directories for small business which ones matter online directories matter\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter online directories matter",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:51.144Z"
+    },
+    "6": {
+      "key": "{\"query\":\"online directories for small business which ones matter business name address\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter business name address",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:51.920Z"
+    },
+    "7": {
+      "key": "{\"query\":\"online directories for small business which ones matter online directories matter\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter online directories matter",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:52.639Z"
+    },
+    "8": {
+      "key": "{\"query\":\"online directories for small business which ones matter put most directory\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter put most directory",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:56.631Z"
+    },
+    "9": {
+      "key": "{\"query\":\"online directories for small business which ones matter look different search\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter look different search",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:57.510Z"
+    },
+    "10": {
+      "key": "{\"query\":\"online directories for small business which ones matter customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "online directories for small business which ones matter customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-28T18:59:58.515Z"
+    }
+  }
+}
