@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver price prediction 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver price prediction 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-29T18:37:58.184Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver price prediction 2026 58 13 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver price prediction 2026 58 13 silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T18:37:58.210Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver price prediction 2026 63 20 ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver price prediction 2026 63 20 ounce",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T18:37:58.211Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver price prediction 2026 78 80 ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 78 80 ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:37:59.584Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver price prediction 2026 35 silver ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 35 silver ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:01.019Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver price prediction 2026 74 870 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 74 870 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:01.669Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver price prediction 2026 forecasts physical investment\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 forecasts physical investment",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:02.654Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver price prediction 2026 market forecast becomes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 market forecast becomes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:03.483Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver price prediction 2026 29 silver s\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 29 silver s",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:04.259Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver price prediction 2026 silver remains highly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 silver remains highly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:04.907Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver price prediction 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver price prediction 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-29T18:38:05.754Z"
+    }
+  }
+}

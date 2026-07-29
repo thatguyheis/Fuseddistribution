@@ -17,36 +17,41 @@
   "3": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-3.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "4": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-4.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "5": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-5.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "6": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-6.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "7": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-7.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "8": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-8.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "9": {
     "type": "photo",
     "src": "photos/why-silver-price-dropped-this-month-explained/segment-9.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
+  },
+  "10": {
+    "type": "photo",
+    "src": "photos/why-silver-price-dropped-this-month-explained/segment-10.jpg",
+    "source": "pexels"
   }
 }

@@ -1,11 +1,11 @@
 {
   "slug": "why-silver-price-dropped-this-month-explained",
-  "renderedAt": "2026-07-28T18:34:06.764Z",
-  "hookType": "stat",
-  "segmentCount": 10,
-  "scriptDuration": 201.172,
-  "renderedDuration": 196.330667,
-  "scriptHash": "2e64ee80c3d00104a36f4dadd454fd27dcdf0eb2df42bf1172cb470d4d08df52",
+  "renderedAt": "2026-07-29T19:20:23.720Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 238.305,
+  "renderedDuration": 232.853333,
+  "scriptHash": "69b81c809fd5acc0b3b5c77f52abd077f662613f894e05ac8a457d509daa44dc",
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
@@ -22,18 +22,19 @@
     "dialogueGapSeconds": 0.2,
     "finalCardPadSeconds": 0.5,
     "audioDurations": {
-      "0": 4.36,
-      "1": 20.96,
-      "2": 25.36,
-      "3": 22.8,
-      "4": 18.4,
-      "5": 23.28,
-      "6": 23.6,
-      "7": 29.1,
-      "8": 20.12,
-      "9": 5.96
+      "0": 4.08,
+      "1": 23.78,
+      "2": 27.34,
+      "3": 24.08,
+      "4": 24.56,
+      "5": 25.52,
+      "6": 25.16,
+      "7": 23,
+      "8": 26.24,
+      "9": 21.74,
+      "10": 4.84
     },
-    "totalNarrationSeconds": 193.94
+    "totalNarrationSeconds": 230.34
   },
   "musicRights": {
     "status": "approved",
@@ -41,12 +42,12 @@
     "sourceName": "Mixkit Free Stock Music",
     "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
   },
-  "photosUsed": 10,
-  "mediaUsed": 10,
-  "photoCount": 10,
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
   "videoCount": 0,
   "mediaSources": {
-    "local-photo": 3,
-    "pixabay": 7
+    "local-photo": 10,
+    "pexels": 1
   }
 }

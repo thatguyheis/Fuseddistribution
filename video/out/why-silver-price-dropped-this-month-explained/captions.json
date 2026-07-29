@@ -1,262 +1,329 @@
 {
   "0": [
     {
-      "text": "Silver prices dropped 6.",
+      "text": "Silver fell sharply in Q2, but the old chart explained it badly.",
       "startSec": 0,
-      "endSec": 1.5617910447761194
-    },
-    {
-      "text": "2 percent this month , a significant shift.",
-      "startSec": 1.4117910447761195,
-      "endSec": 4.36
+      "endSec": 4.08
     }
   ],
   "1": [
     {
-      "text": "Silver prices have taken a noticeable dip this month",
+      "text": "Fused Distribution's cached spot snapshot moved from $60.",
       "startSec": 0,
-      "endSec": 2.7248
+      "endSec": 3.6242245989304815
     },
     {
-      "text": "leaving many investors wondering what’s happening and whether it’s a buying opportunity.",
-      "startSec": 2.5748,
-      "endSec": 7.186
+      "text": "00 per troy ounce on July 28, 2026 to $58.",
+      "startSec": 3.4742245989304816,
+      "endSec": 6.144705882352942
     },
     {
-      "text": "At Fused Distribution, we stock a wide range of silver bullion and coins",
-      "startSec": 7.186,
-      "endSec": 10.9588
+      "text": "13 on July 29, 2026.",
+      "startSec": 6.144705882352942,
+      "endSec": 7.416363636363637
     },
     {
-      "text": "and we understand the questions you’re asking.",
-      "startSec": 10.9588,
-      "endSec": 13.3692
+      "text": "That is a $1.",
+      "startSec": 7.416363636363637,
+      "endSec": 8.24294117647059
     },
     {
-      "text": "This post breaks down the key factors driving the recent price decline",
-      "startSec": 13.3692,
-      "endSec": 17.0372
+      "text": "87 decline, or about 3.",
+      "startSec": 8.24294117647059,
+      "endSec": 9.70534759358289
     },
     {
-      "text": "offering a clear explanation and practical insights for you to consider.",
-      "startSec": 17.0372,
-      "endSec": 20.96
+      "text": "12 percent, between the two daily snapshots.",
+      "startSec": 9.70534759358289,
+      "endSec": 12.502994652406418
+    },
+    {
+      "text": "A price feed shows what changed, but it does not prove why it changed.",
+      "startSec": 12.502994652406418,
+      "endSec": 16.95379679144385
+    },
+    {
+      "text": "Silver had already experienced a sharp second-quarter correction after an unusually strong start to 2026.",
+      "startSec": 16.95379679144385,
+      "endSec": 23.78
     }
   ],
   "2": [
     {
-      "text": "While a drop can be unsettling",
+      "text": "The LBMA Q2 2026 market report provides two directly comparable observations.",
       "startSec": 0,
-      "endSec": 1.6684210526315788
+      "endSec": 5.411773778920309
     },
     {
-      "text": "it’s crucial to understand the reasons behind it to make informed investment decisions.",
-      "startSec": 1.518421052631579,
-      "endSec": 6.3568421052631585
+      "text": "LBMA reports that silver began Q2 2026 at $74.",
+      "startSec": 5.2617737789203085,
+      "endSec": 8.49478149100257
     },
     {
-      "text": "We recommend staying informed and focusing on your long-term strategy.",
-      "startSec": 6.3568421052631585,
-      "endSec": 10.249824561403509
+      "text": "870 per ounce.",
+      "startSec": 8.49478149100257,
+      "endSec": 9.478740359897172
     },
     {
-      "text": "The primary driver of the recent silver price decline has been the market’s reaction to expectations surrounding interest rates.",
-      "startSec": 10.249824561403509,
-      "endSec": 17.36842105263158
+      "text": "LBMA reports that silver ended June 2026 at $58.",
+      "startSec": 9.478740359897172,
+      "endSec": 12.852313624678663
     },
     {
-      "text": "The Federal Reserve’s ongoing efforts to combat inflation through interest rate hikes have significantly impacted the precious metals market.",
-      "startSec": 17.36842105263158,
-      "endSec": 25.36
+      "text": "795 per ounce.",
+      "startSec": 12.852313624678663,
+      "endSec": 13.836272493573265
+    },
+    {
+      "text": "LBMA calculates the change between those endpoints as a 21.",
+      "startSec": 13.836272493573265,
+      "endSec": 17.982956298200513
+    },
+    {
+      "text": "47 percent decline.",
+      "startSec": 17.982956298200513,
+      "endSec": 19.318329048843186
+    },
+    {
+      "text": "The before-and-after graphic uses only the same metric, silver price in USA dollars per ounce",
+      "startSec": 19.318329048843186,
+      "endSec": 25.854627249357325
+    },
+    {
+      "text": "at two named dates.",
+      "startSec": 25.854627249357325,
+      "endSec": 27.34
     }
   ],
   "3": [
     {
-      "text": "This shift in the inflation narrative has reduced the pressure on silver prices.",
+      "text": "It does not mix inflation, interest rates, supply shares",
       "startSec": 0,
-      "endSec": 4.1931034482758625
+      "endSec": 3.085766590389016
     },
     {
-      "text": "Silver is traditionally considered a safe-haven asset during times of geopolitical instability.",
-      "startSec": 4.043103448275862,
-      "endSec": 9.02241379310345
+      "text": "or technical indicators into the bar length.",
+      "startSec": 2.935766590389016,
+      "endSec": 5.360297482837528
     },
     {
-      "text": "Events like the ongoing conflict in Ukraine and tensions in the Middle East can trigger a flight to safety",
-      "startSec": 9.02241379310345,
-      "endSec": 14.578275862068967
+      "text": "The World Bank's June 2026 precious-metals review reports that silver prices fell in the second quarter after a 55 percent rise in the first quarter.",
+      "startSec": 5.360297482837528,
+      "endSec": 13.570640732265446
     },
     {
-      "text": "driving up demand for silver.",
-      "startSec": 14.578275862068967,
-      "endSec": 16.098275862068967
+      "text": "It identifies several broad pressures across precious metals: expectations for higher USA interest rates",
+      "startSec": 13.570640732265446,
+      "endSec": 19.301350114416476
     },
     {
-      "text": "However, the recent easing of some geopolitical tensions has lessened the safe-haven appeal",
-      "startSec": 16.098275862068967,
-      "endSec": 20.86793103448276
-    },
-    {
-      "text": "contributing to the price decline.",
-      "startSec": 20.86793103448276,
-      "endSec": 22.8
+      "text": "a stronger dollar, easing safe-haven demand, and profit-taking after a strong rally.",
+      "startSec": 19.301350114416476,
+      "endSec": 24.08
     }
   ],
   "4": [
     {
-      "text": "A stronger dollar typically puts downward pressure on silver prices",
+      "text": "Lower safe-haven demand: If immediate geopolitical or financial fear eases",
       "startSec": 0,
-      "endSec": 3.424444444444444
+      "endSec": 3.649477911646586
     },
     {
-      "text": "as it makes silver more expensive for international buyers.",
-      "startSec": 3.2744444444444443,
-      "endSec": 6.289999999999999
+      "text": "some defensive buying can reverse.",
+      "startSec": 3.499477911646586,
+      "endSec": 5.176265060240963
     },
     {
-      "text": "The correlation between the two metals is approximately 0.",
-      "startSec": 6.289999999999999,
-      "endSec": 9.254444444444443
+      "text": "Industrial-demand concerns: Slower growth or substitution can weaken expectations for fabrication demand.",
+      "startSec": 5.176265060240963,
+      "endSec": 10.354578313253011
     },
     {
-      "text": "75, meaning they tend to move in the same direction, but not always with the same magnitude.",
-      "startSec": 9.254444444444443,
-      "endSec": 13.956666666666665
+      "text": "These are market mechanisms, not proof that one headline caused the July 29 daily move.",
+      "startSec": 10.354578313253011,
+      "endSec": 14.645180722891565
     },
     {
-      "text": "As mentioned, the strength of the USA dollar plays a crucial role in silver’s price.",
-      "startSec": 13.956666666666665,
-      "endSec": 18.4
+      "text": "A reliable explanation should distinguish documented quarterly drivers from inference about a single trading session.",
+      "startSec": 14.645180722891565,
+      "endSec": 20.415301204819276
+    },
+    {
+      "text": "A falling price does not mean the long-term supply picture suddenly became loose.",
+      "startSec": 20.415301204819276,
+      "endSec": 24.56
     }
   ],
   "5": [
     {
-      "text": "While supply chain disruptions can influence precious metal prices",
+      "text": "The Silver Institute's 2026 outlook expects a sixth consecutive market deficit in 2026.",
       "startSec": 0,
-      "endSec": 3.507945205479452
+      "endSec": 4.7441025641025645
     },
     {
-      "text": "they currently have a relatively minor impact on silver.",
-      "startSec": 3.357945205479452,
-      "endSec": 6.334383561643836
+      "text": "It also expects industrial fabrication to decline while physical investment rises.",
+      "startSec": 4.594102564102564,
+      "endSec": 9.065555555555555
     },
     {
-      "text": "Silver production is concentrated in a few countries, primarily Mexico and Peru.",
-      "startSec": 6.334383561643836,
-      "endSec": 10.586438356164384
+      "text": "High prices can encourage thrifting, substitution, recycling",
+      "startSec": 9.065555555555555,
+      "endSec": 12.337350427350426
     },
     {
-      "text": "Recent reports indicate that production hasn’t significantly increased",
-      "startSec": 10.586438356164384,
-      "endSec": 14.306986301369864
+      "text": "and weaker jewelry or silverware demand.",
+      "startSec": 12.337350427350426,
+      "endSec": 14.518547008547007
     },
     {
-      "text": "and there are no major supply disruptions currently impacting the market.",
-      "startSec": 14.306986301369864,
-      "endSec": 18.186986301369863
+      "text": "At the same time, constrained supply and investment buying can provide support.",
+      "startSec": 14.518547008547007,
+      "endSec": 18.826410256410256
     },
     {
-      "text": "Currently, global silver mine production accounts for roughly 70 percent of the total supply.",
-      "startSec": 18.186986301369863,
-      "endSec": 23.28
+      "text": "The competing forces help explain why silver can remain structurally tight and still fall sharply over a shorter period.",
+      "startSec": 18.826410256410256,
+      "endSec": 25.52
     }
   ],
   "6": [
     {
-      "text": "A price drop doesn’t automatically present a buying opportunity.",
+      "text": "The previous “Silver Price Decline: Key Stats” graphic put the silver decline, gold decline",
       "startSec": 0,
-      "endSec": 3.3639198218262805
+      "endSec": 5.50375
     },
     {
-      "text": "While it can create a more attractive entry point for long-term investors",
-      "startSec": 3.2139198218262806,
-      "endSec": 7.050890868596882
+      "text": "Treasury-yield change, dollar-index move, mine-supply share, and RSI on one percentage scale.",
+      "startSec": 5.35375,
+      "endSec": 10.978461538461538
     },
     {
-      "text": "it’s essential to consider the underlying reasons for the decline.",
-      "startSec": 7.050890868596882,
-      "endSec": 10.519933184855233
+      "text": "Those numbers did not share a metric, time period, denominator, or meaning.",
+      "startSec": 10.978461538461538,
+      "endSec": 15.514519230769231
     },
     {
-      "text": "If the factors driving the drop - such as rising interest rates and a strong dollar - are expected to persist",
-      "startSec": 10.519933184855233,
-      "endSec": 16.249109131403117
+      "text": "A 70 percent share of supply is not “larger” than a 6.",
+      "startSec": 15.514519230769231,
+      "endSec": 18.78048076923077
     },
     {
-      "text": "silver prices could continue to fall.",
-      "startSec": 16.249109131403117,
-      "endSec": 18.193875278396433
+      "text": "2 percent price decline in any useful analytical sense.",
+      "startSec": 18.78048076923077,
+      "endSec": 22.106923076923078
     },
     {
-      "text": "Conversely, if these factors are expected to reverse, silver could experience a significant rebound.",
-      "startSec": 18.193875278396433,
-      "endSec": 23.6
+      "text": "RSI is an index level, not a percent price move.",
+      "startSec": 22.106923076923078,
+      "endSec": 25.16
     }
   ],
   "7": [
     {
-      "text": "Diversify your investments across different asset classes to mitigate risk.",
+      "text": "For category bars, every category must share the same metric, unit, period, and denominator.",
       "startSec": 0,
-      "endSec": 4.189059500959693
+      "endSec": 5.237623762376238
     },
     {
-      "text": "Panic Selling: Don’t sell your silver investments during a market downturn.",
-      "startSec": 4.039059500959692,
-      "endSec": 8.228119001919385
+      "text": "Before acting on a silver decline, check: 1.",
+      "startSec": 5.0876237623762375,
+      "endSec": 7.592574257425742
     },
     {
-      "text": "Trying to time the market is often difficult and can result in missed opportunities.",
-      "startSec": 8.228119001919385,
-      "endSec": 12.919865642994242
+      "text": "The timestamp and unit on the price feed.",
+      "startSec": 7.592574257425742,
+      "endSec": 9.926732673267326
     },
     {
-      "text": "Ignoring Fundamentals: Focusing solely on short-term price fluctuations without understanding the underlying economic factors can lead to poor investment decisions.",
-      "startSec": 12.919865642994242,
-      "endSec": 22.079942418426107
+      "text": "Whether the move is daily, monthly, quarterly, or from an intraday high.",
+      "startSec": 9.926732673267326,
+      "endSec": 14.025742574257425
     },
     {
-      "text": "Buying from Unreliable Sources: Purchasing silver from unverified dealers can expose you to fraud and counterfeit products.",
-      "startSec": 22.079942418426107,
-      "endSec": 29.1
+      "text": "Changes in USA rates and the dollar.",
+      "startSec": 14.025742574257425,
+      "endSec": 16.075247524752474
+    },
+    {
+      "text": "Investment flows and positioning after large rallies.",
+      "startSec": 16.075247524752474,
+      "endSec": 19.092574257425742
+    },
+    {
+      "text": "Dealer premiums and spreads, which can move differently from spot.",
+      "startSec": 19.092574257425742,
+      "endSec": 23
     }
   ],
   "8": [
     {
-      "text": "We at Fused Distribution are committed to providing you with the information and resources you need to make informed investment decisions.",
+      "text": "For a repeatable monitoring process, read How to Track Silver Price Daily.",
       "startSec": 0,
-      "endSec": 6.579526066350711
+      "endSec": 4.175827956989247
     },
     {
-      "text": "We stock a wide variety of silver products and we recommend exploring our selection to find the best fit for your portfolio.",
-      "startSec": 6.429526066350711,
-      "endSec": 12.341563981042654
+      "text": "For the underlying forces, read What Moves Silver Price.",
+      "startSec": 4.025827956989247,
+      "endSec": 7.185913978494623
     },
     {
-      "text": "Don’t hesitate to contact us with any questions.",
-      "startSec": 12.341563981042654,
-      "endSec": 14.630094786729858
+      "text": "Silver's latest Fused Distribution snapshot fell about 3.",
+      "startSec": 7.185913978494623,
+      "endSec": 10.40243010752688
     },
     {
-      "text": "The current market conditions present both challenges and opportunities",
-      "startSec": 14.630094786729858,
-      "endSec": 18.01521327014218
+      "text": "12 percent from July 28 to July 29, 2026, while the LBMA recorded a much larger 21.",
+      "startSec": 10.40243010752688,
+      "endSec": 15.086129032258064
     },
     {
-      "text": "and we’re here to help you navigate them.",
-      "startSec": 18.01521327014218,
-      "endSec": 20.12
+      "text": "47 percent decline across Q2.",
+      "startSec": 15.086129032258064,
+      "endSec": 16.722602150537632
+    },
+    {
+      "text": "The best-supported explanation is a combination of rate and dollar pressure",
+      "startSec": 16.722602150537632,
+      "endSec": 20.95486021505376
+    },
+    {
+      "text": "reduced safe-haven demand, profit-taking, and concern about price-sensitive industrial use.",
+      "startSec": 20.95486021505376,
+      "endSec": 26.24
     }
   ],
   "9": [
     {
-      "text": "Considering all this, what’s your take on whether now is?",
+      "text": "None of those factors erases the market's continuing supply deficit",
       "startSec": 0,
-      "endSec": 3.996705882352941
+      "endSec": 4.259005847953216
+    },
+    {
+      "text": "and none guarantees the next move.",
+      "startSec": 4.109005847953216,
+      "endSec": 6.270292397660818
+    },
+    {
+      "text": "This article is educational and is not individualized financial advice.",
+      "startSec": 6.270292397660818,
+      "endSec": 10.783567251461987
+    },
+    {
+      "text": "Fused Distribution cached spot API LBMA Precious Metals Market Report: Q2 2026 World Bank: Precious metals retreat from record highs Silver Institute: 2026 market outlook",
+      "startSec": 10.783567251461987,
+      "endSec": 21.74
+    }
+  ],
+  "10": [
+    {
+      "text": "Which signal are you watching after silver's decline?",
+      "startSec": 0,
+      "endSec": 3.1669135802469137
     },
     {
       "text": "Follow for more silver news.",
-      "startSec": 3.846705882352941,
-      "endSec": 5.96
+      "startSec": 3.016913580246914,
+      "endSec": 4.84
     }
   ]
 }

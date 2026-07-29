@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver vs cash which holds value better\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver vs cash which holds value better",
+      "prefer": "video",
+      "updatedAt": "2026-07-29T19:20:45.891Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver vs cash which holds value better looking way protect\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver vs cash which holds value better looking way protect",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.925Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver vs cash which holds value better savings shrink time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver vs cash which holds value better savings shrink time",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.925Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver vs cash which holds value better 26 silver spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better 26 silver spot",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.926Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver vs cash which holds value better 1 000 cash\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better 1 000 cash",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.926Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver vs cash which holds value better 1 5 billion\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better 1 5 billion",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.927Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver vs cash which holds value better exists outside market\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better exists outside market",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.927Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver vs cash which holds value better 2 silver target\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better 2 silver target",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.927Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver vs cash which holds value better 20 silver bars\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better 20 silver bars",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.927Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver vs cash which holds value better stock wide range\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better stock wide range",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.928Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver vs cash which holds value better customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs cash which holds value better customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-07-29T19:20:45.929Z"
+    }
+  }
+}

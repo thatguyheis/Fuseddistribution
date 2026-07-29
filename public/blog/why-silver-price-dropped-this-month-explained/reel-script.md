@@ -1,96 +1,105 @@
 # Reel Script: why-silver-price-dropped-this-month-explained
 format: long-form
-segments: 10
-target-duration: 182s
+segments: 11
+target-duration: 200s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 4s minimum
+**Duration:** 5s minimum
 
-Narration: Silver prices dropped 6.2 percent this month , a significant shift.
+Narration: Silver fell sharply in Q2, but the old chart explained it badly.
 
 ---
 
-## OVERLAY: SILVER PRICES TAKEN NOTICEABLE
+## STAT: 2026 TO $58.13 SPOT JULY DECLINE ABOUT
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: Silver prices have taken a noticeable dip this month, leaving many investors wondering what’s happening and whether it’s a buying opportunity. At Fused Distribution, we stock a wide range of silver bullion and coins, and we understand the questions you’re asking. This post breaks down the key factors driving the recent price decline, offering a clear explanation and practical insights for you to consider.
+Narration: Fused Distribution's cached spot snapshot moved from $60.00 per troy ounce on July 28, 2026 to $58.13 on July 29, 2026. That is a $1.87 decline, or about 3.12 percent, between the two daily snapshots. A price feed shows what changed, but it does not prove why it changed. Silver had already experienced a sharp second-quarter correction after an unusually strong start to 2026.
 
 ---
 
-## OVERLAY: WHILE DROP UNSETTLING CRUCIAL
+## STAT: $74.870 SILVER OUNCE LBMA REPORTS
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: The LBMA Q2 2026 market report provides two directly comparable observations. LBMA reports that silver began Q2 2026 at $74.870 per ounce. LBMA reports that silver ended June 2026 at $58.795 per ounce. LBMA calculates the change between those endpoints as a 21.47 percent decline. The before-and-after graphic uses only the same metric, silver price in USA dollars per ounce, at two named dates.
+
+---
+
+## STAT: 55% SILVER RISE FIRST QUARTER
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: While a drop can be unsettling, it’s crucial to understand the reasons behind it to make informed investment decisions. We recommend staying informed and focusing on your long-term strategy. The primary driver of the recent silver price decline has been the market’s reaction to expectations surrounding interest rates. The Federal Reserve’s ongoing efforts to combat inflation through interest rate hikes have significantly impacted the precious metals market.
+Narration: It does not mix inflation, interest rates, supply shares, or technical indicators into the bar length. The World Bank's June 2026 precious-metals review reports that silver prices fell in the second quarter after a 55 percent rise in the first quarter. It identifies several broad pressures across precious metals: expectations for higher USA interest rates, a stronger dollar, easing safe-haven demand, and profit-taking after a strong rally.
 
 ---
 
-## OVERLAY: SHIFT INFLATION NARRATIVE REDUCED
+## STAT: 29 DEMAND GROWTH DAILY MOVE
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: This shift in the inflation narrative has reduced the pressure on silver prices. Silver is traditionally considered a safe-haven asset during times of geopolitical instability. Events like the ongoing conflict in Ukraine and tensions in the Middle East can trigger a flight to safety, driving up demand for silver. However, the recent easing of some geopolitical tensions has lessened the safe-haven appeal, contributing to the price decline.
+Narration: Lower safe-haven demand: If immediate geopolitical or financial fear eases, some defensive buying can reverse. Industrial-demand concerns: Slower growth or substitution can weaken expectations for fabrication demand. These are market mechanisms, not proof that one headline caused the July 29 daily move. A reliable explanation should distinguish documented quarterly drivers from inference about a single trading session. A falling price does not mean the long-term supply picture suddenly became loose.
 
 ---
 
-## STAT: 0.75 SILVER MEANING TEND MOVE
-
-**Visual:** Supporting article visual
-**Duration:** 19s minimum
-
-Narration: A stronger dollar typically puts downward pressure on silver prices, as it makes silver more expensive for international buyers. The correlation between the two metals is approximately 0.75, meaning they tend to move in the same direction, but not always with the same magnitude. As mentioned, the strength of the USA dollar plays a crucial role in silver’s price.
-
----
-
-## STAT: 70% SILVER TOTAL SUPPLY
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: While supply chain disruptions can influence precious metal prices, they currently have a relatively minor impact on silver. Silver production is concentrated in a few countries, primarily Mexico and Peru. Recent reports indicate that production hasn’t significantly increased, and there are no major supply disruptions currently impacting the market. Currently, global silver mine production accounts for roughly 70 percent of the total supply.
-
----
-
-## OVERLAY: PRICE DROP DOESN AUTOMATICALLY
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: A price drop doesn’t automatically present a buying opportunity. While it can create a more attractive entry point for long-term investors, it’s essential to consider the underlying reasons for the decline. If the factors driving the drop - such as rising interest rates and a strong dollar - are expected to persist, silver prices could continue to fall. Conversely, if these factors are expected to reverse, silver could experience a significant rebound.
-
----
-
-## OVERLAY: DIVERSIFY INVESTMENTS ACROSS DIFFERENT
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: Diversify your investments across different asset classes to mitigate risk. Panic Selling: Don’t sell your silver investments during a market downturn. Trying to time the market is often difficult and can result in missed opportunities. Ignoring Fundamentals: Focusing solely on short-term price fluctuations without understanding the underlying economic factors can lead to poor investment decisions. Buying from Unreliable Sources: Purchasing silver from unverified dealers can expose you to fraud and counterfeit products.
-
----
-
-## OVERLAY: FUSED DISTRIBUTION COMMITTED PROVIDING
+## OVERLAY: SILVER INSTITUTE'S OUTLOOK EXPECTS
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: We at Fused Distribution are committed to providing you with the information and resources you need to make informed investment decisions. We stock a wide variety of silver products and we recommend exploring our selection to find the best fit for your portfolio. Don’t hesitate to contact us with any questions. The current market conditions present both challenges and opportunities, and we’re here to help you navigate them.
+Narration: The Silver Institute's 2026 outlook expects a sixth consecutive market deficit in 2026. It also expects industrial fabrication to decline while physical investment rises. High prices can encourage thrifting, substitution, recycling, and weaker jewelry or silverware demand. At the same time, constrained supply and investment buying can provide support. The competing forces help explain why silver can remain structurally tight and still fall sharply over a shorter period.
+
+---
+
+## STAT: 70% SILVER SHARE SUPPLY LARGER
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: The previous “Silver Price Decline: Key Stats” graphic put the silver decline, gold decline, Treasury-yield change, dollar-index move, mine-supply share, and RSI on one percentage scale. Those numbers did not share a metric, time period, denominator, or meaning. A 70 percent share of supply is not “larger” than a 6.2 percent price decline in any useful analytical sense. RSI is an index level, not a percent price move.
+
+---
+
+## OVERLAY: CATEGORY BARS EVERY MUST
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: For category bars, every category must share the same metric, unit, period, and denominator. Before acting on a silver decline, check: 1. The timestamp and unit on the price feed. Whether the move is daily, monthly, quarterly, or from an intraday high. Changes in USA rates and the dollar. Investment flows and positioning after large rallies. Dealer premiums and spreads, which can move differently from spot.
+
+---
+
+## STAT: 3.12% PRICE SILVER JULY WHILE
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: For a repeatable monitoring process, read How to Track Silver Price Daily. For the underlying forces, read What Moves Silver Price. Silver's latest Fused Distribution snapshot fell about 3.12 percent from July 28 to July 29, 2026, while the LBMA recorded a much larger 21.47 percent decline across Q2. The best-supported explanation is a combination of rate and dollar pressure, reduced safe-haven demand, profit-taking, and concern about price-sensitive industrial use.
+
+---
+
+## OVERLAY: NONE FACTORS ERASES MARKET'S
+
+**Visual:** Supporting article visual
+**Duration:** 17s minimum
+
+Narration: None of those factors erases the market's continuing supply deficit, and none guarantees the next move. This article is educational and is not individualized financial advice. Fused Distribution cached spot API LBMA Precious Metals Market Report: Q2 2026 World Bank: Precious metals retreat from record highs Silver Institute: 2026 market outlook
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 6s minimum
+**Duration:** 5s minimum
 
-Text: Considering all this, what’s your take on whether now is?
+Text: Which signal are you watching after silver's decline?
 Subtext: COMMENT BELOW
-Narration: Considering all this, what’s your take on whether now is? Follow for more silver news.
+Narration: Which signal are you watching after silver's decline? Follow for more silver news.
