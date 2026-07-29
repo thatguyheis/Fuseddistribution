@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-29 | ai-for-customer-service-small-business-how-to-set-it-up | General | AI for customer service small business how to set it up |
 | 2026-07-28 | how-to-use-ai-to-create-social-media-content-faster | General | how to use AI to create social media content faster |
 | 2026-07-27 | how-to-use-ai-to-write-better-business-emails | General | how to use AI to write better business emails |
 | 2026-07-27 | best-free-ai-tools-for-small-business-2026 | General | best free AI tools for small business 2026 |

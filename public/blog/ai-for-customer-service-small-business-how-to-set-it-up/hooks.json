@@ -1,0 +1,10 @@
+{
+  "hook": "Start AI customer service with one task, not one risky chatbot.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "1",
+    "label": "first workflow"
+  },
+  "discussion_question": "Which customer question would you automate first?",
+  "hashtags": "#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign"
+}
