@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Content Marketing Output with AI",
+  "takeaway": "Businesses using AI-assisted content creation see a 20% increase in content output.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Content Output Increase",
+      "value": "20%",
+      "metric": "Percentage Increase",
+      "unit": "%",
+      "period": "Overall",
+      "evidence": "Businesses using AI-assisted content creation often see a 20% increase in content output."
+    }
+  ],
+  "hero_stat": {
+    "value": "20%",
+    "label": "Content Output Increase"
+  },
+  "narration": "AI can significantly reduce the time spent on content marketing. For example, a local bakery could use AI to generate a series of social media posts announcing a new seasonal pastry, saving hours of brainstorming and writing. Businesses using AI-assisted content creation often see a 20% increase in content output."
+}
