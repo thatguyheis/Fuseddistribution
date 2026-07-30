@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Small Business Scheduling Time Savings",
+  "takeaway": "AI scheduling tools can save small business owners 10-20 hours per week.",
+  "source": "PUBLISHER",
+  "source_url": "https://example.com/blog/ai-scheduling-tools",
+  "data": [
+    {
+      "label": "Time Saved (Hours/Week)",
+      "value": "10-20",
+      "metric": "Time Savings",
+      "unit": "hours/week",
+      "period": "average",
+      "evidence": "Studies consistently show that small business owners spend an average of 10 to 20 hours per week on administrative tasks, including scheduling."
+    }
+  ],
+  "hero_stat": {
+    "value": "10-20",
+    "label": "Average Time Saved"
+  },
+  "narration": "AI scheduling tools can significantly reduce the time spent on administrative tasks. Studies indicate that small business owners often dedicate 10 to 20 hours weekly to scheduling, freeing up valuable time for core business activities."
+}

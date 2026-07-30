@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-29 | ai-scheduling-tools-for-small-business | General | AI scheduling tools for small business |
 | 2026-07-29 | ai-for-customer-service-small-business-how-to-set-it-up | General | AI for customer service small business how to set it up |
 | 2026-07-28 | how-to-use-ai-to-create-social-media-content-faster | General | how to use AI to create social media content faster |
 | 2026-07-27 | how-to-use-ai-to-write-better-business-emails | General | how to use AI to write better business emails |
@@ -120,6 +121,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-29 | comex-silver-inventory-what-declining-stockpiles-mean-f | General | COMEX silver inventory what declining stockpiles mean for price |
+| 2026-07-29 | silver-vs-gold-performance-comparison-2025-2026 | General | silver vs gold performance comparison 2025 2026 |
 | 2026-07-28 | silver-price-prediction-2026-what-analysts-expect | General | silver price prediction 2026 what analysts expect |
 | 2026-07-28 | why-silver-price-dropped-this-month-explained | General | why silver price dropped this month explained |
 | 2026-07-27 | silver-reserve-vs-401k-which-makes-more-sense | General | silver reserve vs 401k which makes more sense |
