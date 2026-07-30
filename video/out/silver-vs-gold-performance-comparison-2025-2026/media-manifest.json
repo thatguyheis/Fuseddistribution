@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver vs gold performance comparison 2025 2026",
+      "prefer": "video",
+      "updatedAt": "2026-07-30T19:51:12.179Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 wondering whether silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver vs gold performance comparison 2025 2026 wondering whether silver",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T19:51:12.239Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 historically precious metals\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver vs gold performance comparison 2025 2026 historically precious metals",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T19:51:12.241Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 663 8 demand\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 663 8 demand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:13.697Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 8 silver while\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 8 silver while",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:14.295Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 27 price spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 27 price spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:15.815Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 10 silver price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 10 silver price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:16.517Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 beginners might consider\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 beginners might consider",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:17.885Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 often worst time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 often worst time",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:19.623Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 don wait until\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 don wait until",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:20.718Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver vs gold performance comparison 2025 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver vs gold performance comparison 2025 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:51:22.676Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "what AI can and cannot do for your small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-30T18:19:31.946Z"
+    },
+    "1": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what AI can and cannot do for your small business small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T18:19:32.021Z"
+    },
+    "2": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business collection technologies allow\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what AI can and cannot do for your small business collection technologies allow",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T18:19:32.021Z"
+    },
+    "3": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business 20 increase content\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business 20 increase content",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:34.287Z"
+    },
+    "4": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business 15 business improvement\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business 15 business improvement",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:35.036Z"
+    },
+    "5": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business sift through vast\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business sift through vast",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:35.729Z"
+    },
+    "6": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business building genuine relationships\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business building genuine relationships",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:36.556Z"
+    },
+    "7": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business 1 500 to\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business 1 500 to",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:37.334Z"
+    },
+    "8": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business ignoring customer needs\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business ignoring customer needs",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:37.958Z"
+    },
+    "9": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business fused distribution committed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business fused distribution committed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:38.623Z"
+    },
+    "10": {
+      "key": "{\"query\":\"what AI can and cannot do for your small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "what AI can and cannot do for your small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:19:39.208Z"
+    }
+  }
+}

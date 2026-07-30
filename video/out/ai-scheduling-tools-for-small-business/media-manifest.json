@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"AI scheduling tools for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "AI scheduling tools for small business",
+      "prefer": "video",
+      "updatedAt": "2026-07-30T18:51:24.922Z"
+    },
+    "1": {
+      "key": "{\"query\":\"AI scheduling tools for small business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI scheduling tools for small business small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T18:51:24.947Z"
+    },
+    "2": {
+      "key": "{\"query\":\"AI scheduling tools for small business functionality scheduling tools\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI scheduling tools for small business functionality scheduling tools",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T18:51:24.947Z"
+    },
+    "3": {
+      "key": "{\"query\":\"AI scheduling tools for small business confirmation automated reminders\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business confirmation automated reminders",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:26.364Z"
+    },
+    "4": {
+      "key": "{\"query\":\"AI scheduling tools for small business here look some\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business here look some",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:27.035Z"
+    },
+    "5": {
+      "key": "{\"query\":\"AI scheduling tools for small business 10 to 20\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business 10 to 20",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:27.460Z"
+    },
+    "6": {
+      "key": "{\"query\":\"AI scheduling tools for small business here step guide\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business here step guide",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:28.080Z"
+    },
+    "7": {
+      "key": "{\"query\":\"AI scheduling tools for small business share link client\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business share link client",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:28.638Z"
+    },
+    "8": {
+      "key": "{\"query\":\"AI scheduling tools for small business determine effectiveness scheduling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business determine effectiveness scheduling",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:29.241Z"
+    },
+    "9": {
+      "key": "{\"query\":\"AI scheduling tools for small business automating often time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business automating often time",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:29.883Z"
+    },
+    "10": {
+      "key": "{\"query\":\"AI scheduling tools for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "AI scheduling tools for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T18:51:30.574Z"
+    }
+  }
+}

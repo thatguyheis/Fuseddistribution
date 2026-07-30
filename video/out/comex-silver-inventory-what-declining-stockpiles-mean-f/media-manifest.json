@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price",
+      "prefer": "video",
+      "updatedAt": "2026-07-30T19:22:19.772Z"
+    },
+    "1": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price wondering what driving\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price wondering what driving",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T19:22:19.912Z"
+    },
+    "2": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price comex inventory closely\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price comex inventory closely",
+      "prefer": "photo",
+      "updatedAt": "2026-07-30T19:22:19.912Z"
+    },
+    "3": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price 26 silver comex\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price 26 silver comex",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:22.212Z"
+    },
+    "4": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price 12 891 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price 12 891 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:23.047Z"
+    },
+    "5": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price investors seek safe\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price investors seek safe",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:23.925Z"
+    },
+    "6": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price 16 734 000\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price 16 734 000",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:24.802Z"
+    },
+    "7": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price volume futures trading\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price volume futures trading",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:25.504Z"
+    },
+    "8": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price however crucial consider\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price however crucial consider",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:26.374Z"
+    },
+    "9": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price while predicting future\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price while predicting future",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:27.255Z"
+    },
+    "10": {
+      "key": "{\"query\":\"COMEX silver inventory what declining stockpiles mean for price customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver inventory what declining stockpiles mean for price customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-30T19:22:28.018Z"
+    }
+  }
+}
