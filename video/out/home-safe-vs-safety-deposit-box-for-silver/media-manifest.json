@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "home safe vs safety deposit box for silver",
+      "prefer": "video",
+      "updatedAt": "2026-07-31T19:16:31.497Z"
+    },
+    "1": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver building silver reserve\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "home safe vs safety deposit box for silver building silver reserve",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T19:16:31.593Z"
+    },
+    "2": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver think way home\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "home safe vs safety deposit box for silver think way home",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T19:16:31.593Z"
+    },
+    "3": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver also carry insurance\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver also carry insurance",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:33.387Z"
+    },
+    "4": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver however plan hold\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver however plan hold",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:34.247Z"
+    },
+    "5": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver beyond direct costs\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver beyond direct costs",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:35.334Z"
+    },
+    "6": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver fluctuating temperature humidity\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver fluctuating temperature humidity",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:36.018Z"
+    },
+    "7": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver value security above\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver value security above",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:36.771Z"
+    },
+    "8": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver furthermore demand precious\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver furthermore demand precious",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:37.397Z"
+    },
+    "9": {
+      "key": "{\"query\":\"home safe vs safety deposit box for silver customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "home safe vs safety deposit box for silver customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T19:16:37.992Z"
+    }
+  }
+}

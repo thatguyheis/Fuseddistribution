@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver price all-time high when will it happen again",
+      "prefer": "video",
+      "updatedAt": "2026-07-31T18:19:07.759Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again wondering silver prices\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver price all-time high when will it happen again wondering silver prices",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:19:07.791Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again inflation remains concern\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver price all-time high when will it happen again inflation remains concern",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:19:07.793Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 50 15 ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 50 15 ounce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:09.399Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 20 silver solar\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 20 silver solar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:10.103Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 20 silver solar\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 20 silver solar",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:16.781Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 26 silver price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 26 silver price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:18.247Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 50 price silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 50 price silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:19.488Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again stock diverse range\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again stock diverse range",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:20.471Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again 50 to 60\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again 50 to 60",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:21.685Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver price all-time high when will it happen again customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver price all-time high when will it happen again customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:19:23.728Z"
+    }
+  }
+}

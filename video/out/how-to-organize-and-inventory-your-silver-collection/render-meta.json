@@ -1,0 +1,52 @@
+{
+  "slug": "how-to-organize-and-inventory-your-silver-collection",
+  "renderedAt": "2026-07-31T19:02:51.025Z",
+  "hookType": "statement",
+  "segmentCount": 10,
+  "scriptDuration": 139.532,
+  "renderedDuration": 134.656,
+  "scriptHash": "be3fa8b7ee41545fd9b6ad16b6f52a04f80c828e1d156db75bb17b6373241cc2",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-forest-treasure-138.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05768063006253212
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.2,
+      "1": 13.66,
+      "2": 17.9,
+      "3": 21.02,
+      "4": 12.92,
+      "5": 14.74,
+      "6": 15.46,
+      "7": 13.18,
+      "8": 14.98,
+      "9": 4.24
+    },
+    "totalNarrationSeconds": 132.3
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/forest-treasure-138/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"youtube for local business worth it or not\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "youtube for local business worth it or not",
+      "prefer": "video",
+      "updatedAt": "2026-07-31T18:39:21.444Z"
+    },
+    "1": {
+      "key": "{\"query\":\"youtube for local business worth it or not small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "youtube for local business worth it or not small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:39:21.507Z"
+    },
+    "2": {
+      "key": "{\"query\":\"youtube for local business worth it or not 100 basic equipment\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "youtube for local business worth it or not 100 basic equipment",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:39:21.508Z"
+    },
+    "3": {
+      "key": "{\"query\":\"youtube for local business worth it or not upload video sure\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not upload video sure",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:23.109Z"
+    },
+    "4": {
+      "key": "{\"query\":\"youtube for local business worth it or not youtube analytics help\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not youtube analytics help",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:23.914Z"
+    },
+    "5": {
+      "key": "{\"query\":\"youtube for local business worth it or not 76 video youtube\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not 76 video youtube",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:24.588Z"
+    },
+    "6": {
+      "key": "{\"query\":\"youtube for local business worth it or not 50 video length\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not 50 video length",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:25.325Z"
+    },
+    "7": {
+      "key": "{\"query\":\"youtube for local business worth it or not however strategic approach\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not however strategic approach",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:26.079Z"
+    },
+    "8": {
+      "key": "{\"query\":\"youtube for local business worth it or not 2 70 cost\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not 2 70 cost",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:27.223Z"
+    },
+    "9": {
+      "key": "{\"query\":\"youtube for local business worth it or not research few local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not research few local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:27.776Z"
+    },
+    "10": {
+      "key": "{\"query\":\"youtube for local business worth it or not customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "youtube for local business worth it or not customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:39:28.633Z"
+    }
+  }
+}

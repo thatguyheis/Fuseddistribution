@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to organize and inventory your silver collection",
+      "prefer": "video",
+      "updatedAt": "2026-07-31T18:57:56.936Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection straightforward way build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to organize and inventory your silver collection straightforward way build",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:57:57.217Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection tracking all three\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to organize and inventory your silver collection tracking all three",
+      "prefer": "photo",
+      "updatedAt": "2026-07-31T18:57:57.218Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection 65 relative humidity\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection 65 relative humidity",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:57:58.362Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection 10 ounces silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection 10 ounces silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:57:59.297Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection transaction history provides\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection transaction history provides",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:57:59.906Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection while predicting future\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection while predicting future",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:58:00.641Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection provide valuable insights\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection provide valuable insights",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:58:01.545Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection contact insurance provider\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection contact insurance provider",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:58:02.370Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to organize and inventory your silver collection customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to organize and inventory your silver collection customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-07-31T18:58:03.075Z"
+    }
+  }
+}
