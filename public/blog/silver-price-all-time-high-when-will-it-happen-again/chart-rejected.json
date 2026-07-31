@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Price vs. Gold Price (July 26, 2024)",
+  "takeaway": "As of July 26, 2024, silver\u2019s price was significantly higher than gold\u2019s price, reflecting its greater volatility.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Silver Price (July 26, 2024)",
+      "value": "$30.25",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "July 26, 2024",
+      "evidence": "As of July 26, 2024, the silver price was around $30.25 per ounce."
+    },
+    {
+      "label": "Gold Price (July 26, 2024)",
+      "value": "$3,887",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "July 26, 2024",
+      "evidence": "As of July 26, 2024, the gold price was approximately $3,887 per ounce."
+    }
+  ],
+  "hero_stat": {
+    "value": "$30.25",
+    "label": "Silver Price (July 26, 2024)"
+  },
+  "narration": "The article compares the silver price to the gold price on July 26, 2024, highlighting the significant difference in their values. This difference reflects silver\u2019s higher volatility and potential for greater returns, but also increased risk. The article emphasizes the importance of understanding these price differences when considering silver as an investment."
+}
