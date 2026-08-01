@@ -1,0 +1,10 @@
+{
+  "hook": "**Report over $200 in silver purchases to avoid IRS scrutiny.**",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$200.",
+    "label": "If your silver coin"
+  },
+  "discussion_question": "Considering all this information, do you feel confident in reporting your silver coin purchases to the IRS?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-31 | how-to-automate-repetitive-business-tasks-with-ai | General | how to automate repetitive business tasks with AI |
 | 2026-07-30 | ai-writing-tools-comparison-for-small-business | General | AI writing tools comparison for small business |
 | 2026-07-30 | how-to-build-ai-prompts-that-actually-work | General | how to build AI prompts that actually work |
 | 2026-07-29 | what-ai-can-and-cannot-do-for-your-small-business | General | what AI can and cannot do for your small business |
@@ -124,6 +125,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-01 | do-you-have-to-report-silver-coin-purchases-to-irs | General | do you have to report silver coin purchases to IRS |
+| 2026-08-01 | silver-capital-gains-tax-how-it-works-in-the-us | Tax & Legal | silver capital gains tax how it works in the US |
 | 2026-07-31 | is-now-a-good-time-to-buy-silver-2026 | General | is now a good time to buy silver 2026 |
 | 2026-07-30 | silver-price-all-time-high-when-will-it-happen-again | General | silver price all-time high when will it happen again |
 | 2026-07-29 | comex-silver-inventory-what-declining-stockpiles-mean-f | General | COMEX silver inventory what declining stockpiles mean for price |
