@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "do you have to report silver coin purchases to IRS",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T18:19:51.635Z"
+    },
+    "1": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS let honest buying\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "do you have to report silver coin purchases to IRS let honest buying",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T18:19:51.666Z"
+    },
+    "2": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS we ll also\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "do you have to report silver coin purchases to IRS we ll also",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T18:19:51.667Z"
+    },
+    "3": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS recommend consulting tax\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS recommend consulting tax",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:52.653Z"
+    },
+    "4": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS 10 000 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS 10 000 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:53.428Z"
+    },
+    "5": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS 10 000 customers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS 10 000 customers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:54.276Z"
+    },
+    "6": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS fused distribution understand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS fused distribution understand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:54.914Z"
+    },
+    "7": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS 1040 silver price\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS 1040 silver price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:55.834Z"
+    },
+    "8": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS 200 000 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS 200 000 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:56.444Z"
+    },
+    "9": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS 1099 cost silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS 1099 cost silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:57.072Z"
+    },
+    "10": {
+      "key": "{\"query\":\"do you have to report silver coin purchases to IRS customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "do you have to report silver coin purchases to IRS customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:19:57.742Z"
+    }
+  }
+}

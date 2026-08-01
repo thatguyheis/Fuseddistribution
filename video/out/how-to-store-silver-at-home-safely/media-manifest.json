@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to store silver at home safely\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to store silver at home safely",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T18:55:22.253Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to store silver at home safely want tangible way\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to store silver at home safely want tangible way",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T18:55:22.285Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to store silver at home safely see actual metal\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to store silver at home safely see actual metal",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T18:55:22.307Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to store silver at home safely physical silver straightforward\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely physical silver straightforward",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:26.251Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to store silver at home safely home storage presents\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely home storage presents",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:26.887Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to store silver at home safely keep them sealed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely keep them sealed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:28.087Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to store silver at home safely don accept advertised\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely don accept advertised",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:29.531Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to store silver at home safely taken first step\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely taken first step",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:30.262Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to store silver at home safely keep eye silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely keep eye silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:30.763Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to store silver at home safely customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to store silver at home safely customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T18:55:31.408Z"
+    }
+  }
+}

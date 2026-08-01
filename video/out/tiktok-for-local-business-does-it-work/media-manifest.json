@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"tiktok for local business does it work\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T19:17:43.137Z"
+    },
+    "1": {
+      "key": "{\"query\":\"tiktok for local business does it work yes tiktok works\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work yes tiktok works",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T19:17:43.428Z"
+    },
+    "2": {
+      "key": "{\"query\":\"tiktok for local business does it work restaurants salons auto\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work restaurants salons auto",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T19:17:43.428Z"
+    },
+    "3": {
+      "key": "{\"query\":\"tiktok for local business does it work 6 and pm\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work 6 and pm",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:44.746Z"
+    },
+    "4": {
+      "key": "{\"query\":\"tiktok for local business does it work pan across a\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work pan across a",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:45.347Z"
+    },
+    "5": {
+      "key": "{\"query\":\"tiktok for local business does it work here is what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work here is what",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:46.356Z"
+    },
+    "6": {
+      "key": "{\"query\":\"tiktok for local business does it work 47 of tiktok\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work 47 of tiktok",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:46.959Z"
+    },
+    "7": {
+      "key": "{\"query\":\"tiktok for local business does it work 8 pm on\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work 8 pm on",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:47.484Z"
+    },
+    "8": {
+      "key": "{\"query\":\"tiktok for local business does it work the algorithm and\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work the algorithm and",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:48.008Z"
+    },
+    "9": {
+      "key": "{\"query\":\"tiktok for local business does it work do that for\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work do that for",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:17:48.597Z"
+    },
+    "10": {
+      "key": "{\"query\":\"tiktok for local business does it work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "tiktok for local business does it work customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T19:18:01.086Z"
+    }
+  }
+}
