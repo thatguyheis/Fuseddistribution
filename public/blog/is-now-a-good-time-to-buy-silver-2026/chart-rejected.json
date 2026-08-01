@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "Silver\u2019s industrial demand accounted for 53% of total demand in 2023.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.silverinstitute.org/",
+  "data": [
+    {
+      "label": "Industrial Demand (2023)",
+      "value": "53%",
+      "metric": "Demand",
+      "unit": "%",
+      "period": "2023",
+      "evidence": "According to a recent report by the Silver Institute, industrial demand accounted for approximately 53% of total silver demand in 2023."
+    }
+  ],
+  "hero_stat": {
+    "value": "53%",
+    "label": "Industrial Demand Percentage"
+  },
+  "narration": "Silver\u2019s unique industrial applications contribute to its stability and potential for appreciation. In 2023, industrial demand represented a significant portion of total silver demand, highlighting its versatility beyond just a monetary metal."
+}

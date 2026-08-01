@@ -124,6 +124,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-31 | is-now-a-good-time-to-buy-silver-2026 | General | is now a good time to buy silver 2026 |
 | 2026-07-30 | silver-price-all-time-high-when-will-it-happen-again | General | silver price all-time high when will it happen again |
 | 2026-07-29 | comex-silver-inventory-what-declining-stockpiles-mean-f | General | COMEX silver inventory what declining stockpiles mean for price |
 | 2026-07-29 | silver-vs-gold-performance-comparison-2025-2026 | General | silver vs gold performance comparison 2025 2026 |
