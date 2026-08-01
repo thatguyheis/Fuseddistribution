@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "is now a good time to buy silver 2026",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T07:43:49.645Z"
+    },
+    "1": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 there universal answer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "is now a good time to buy silver 2026 there universal answer",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T07:43:49.664Z"
+    },
+    "2": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 someone saving long\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "is now a good time to buy silver 2026 someone saving long",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T07:43:49.665Z"
+    },
+    "3": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 silver also trades\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 silver also trades",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:50.720Z"
+    },
+    "4": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 interest rates currency\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 interest rates currency",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:51.338Z"
+    },
+    "5": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 spot price only\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 spot price only",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:51.877Z"
+    },
+    "6": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 different risks including\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 different risks including",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:52.476Z"
+    },
+    "7": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 consider dividing planned\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 consider dividing planned",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:53.502Z"
+    },
+    "8": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 diversification does guarantee\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 diversification does guarantee",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:54.757Z"
+    },
+    "9": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 review choice after\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 review choice after",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:55.421Z"
+    },
+    "10": {
+      "key": "{\"query\":\"is now a good time to buy silver 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "is now a good time to buy silver 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:43:56.297Z"
+    }
+  }
+}

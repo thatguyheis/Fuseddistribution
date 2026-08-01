@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to automate repetitive business tasks with AI",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T07:15:37.612Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to automate repetitive business tasks with AI small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T07:15:37.652Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI local business marketing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to automate repetitive business tasks with AI local business marketing",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T07:15:37.652Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI between client meetings\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI between client meetings",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:38.953Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI practice means connecting\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI practice means connecting",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:39.543Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI tools assist email\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI tools assist email",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:40.669Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI local web design\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI local web design",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:41.638Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI local business marketing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI local business marketing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:42.395Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI business keep ownership\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI business keep ownership",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:43.206Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI tools handle parts\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI tools handle parts",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:44.244Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to automate repetitive business tasks with AI customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to automate repetitive business tasks with AI customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T07:15:45.195Z"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"AI writing tools comparison for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "AI writing tools comparison for small business",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T08:12:02.605Z"
+    },
+    "1": {
+      "key": "{\"query\":\"AI writing tools comparison for small business writing tools help\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI writing tools comparison for small business writing tools help",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T08:12:02.671Z"
+    },
+    "2": {
+      "key": "{\"query\":\"AI writing tools comparison for small business long form pages\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI writing tools comparison for small business long form pages",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T08:12:02.671Z"
+    },
+    "3": {
+      "key": "{\"query\":\"AI writing tools comparison for small business cleanup readability editing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business cleanup readability editing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:03.595Z"
+    },
+    "4": {
+      "key": "{\"query\":\"AI writing tools comparison for small business important comparison name\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business important comparison name",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:04.215Z"
+    },
+    "5": {
+      "key": "{\"query\":\"AI writing tools comparison for small business editor may improve\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business editor may improve",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:04.886Z"
+    },
+    "6": {
+      "key": "{\"query\":\"AI writing tools comparison for small business before adopting one\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business before adopting one",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:05.867Z"
+    },
+    "7": {
+      "key": "{\"query\":\"AI writing tools comparison for small business customer contact details\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business customer contact details",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:06.289Z"
+    },
+    "8": {
+      "key": "{\"query\":\"AI writing tools comparison for small business each job write\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business each job write",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:07.276Z"
+    },
+    "9": {
+      "key": "{\"query\":\"AI writing tools comparison for small business varied help start\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business varied help start",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:07.950Z"
+    },
+    "10": {
+      "key": "{\"query\":\"AI writing tools comparison for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "AI writing tools comparison for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:12:08.996Z"
+    }
+  }
+}

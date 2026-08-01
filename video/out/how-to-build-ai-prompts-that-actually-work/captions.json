@@ -1,0 +1,281 @@
+{
+  "0": [
+    {
+      "text": "A useful AI prompt starts with a clear job, trusted context, and a review step.",
+      "startSec": 0,
+      "endSec": 4.96
+    }
+  ],
+  "1": [
+    {
+      "text": "AI can help a small business draft a service page, answer customer questions, organize research",
+      "startSec": 0,
+      "endSec": 5.424193548387096
+    },
+    {
+      "text": "or plan a week of content.",
+      "startSec": 5.274193548387096,
+      "endSec": 6.758709677419354
+    },
+    {
+      "text": "The quality of the result depends on more than the tool.",
+      "startSec": 6.758709677419354,
+      "endSec": 9.956129032258064
+    },
+    {
+      "text": "It depends on whether the request gives the tool enough direction to make a useful decision.",
+      "startSec": 9.956129032258064,
+      "endSec": 15.209032258064514
+    },
+    {
+      "text": "A strong prompt is a short working brief.",
+      "startSec": 15.209032258064514,
+      "endSec": 17.7
+    }
+  ],
+  "2": [
+    {
+      "text": "“Write about websites” leaves too many decisions open.",
+      "startSec": 0,
+      "endSec": 2.88728323699422
+    },
+    {
+      "text": "“Draft the opening section for a service page that helps a homeowner decide whether to request a website consultation” gives the tool a job and a reader.",
+      "startSec": 2.73728323699422,
+      "endSec": 10.917919075144509
+    },
+    {
+      "text": "A clear outcome also prevents an answer from wandering.",
+      "startSec": 10.917919075144509,
+      "endSec": 13.858670520231215
+    },
+    {
+      "text": "Ask for a page outline, a customer reply, a list of options, a rewrite, or a review.",
+      "startSec": 13.858670520231215,
+      "endSec": 18.5
+    }
+  ],
+  "3": [
+    {
+      "text": "Use plain language and explain the next step without promising a ranking or a guaranteed number of leads.",
+      "startSec": 0,
+      "endSec": 5.5343163538874
+    },
+    {
+      "text": "” This context changes the answer.",
+      "startSec": 5.3843163538873995,
+      "endSec": 7.176380697050939
+    },
+    {
+      "text": "It gives the tool a voice, a customer, and a boundary.",
+      "startSec": 7.176380697050939,
+      "endSec": 10.02260053619303
+    },
+    {
+      "text": "Without it",
+      "startSec": 10.02260053619303,
+      "endSec": 10.549678284182306
+    },
+    {
+      "text": "the output may sound polished while describing the wrong audience or making promises the business cannot support.",
+      "startSec": 10.549678284182306,
+      "endSec": 16.505656836461128
+    },
+    {
+      "text": "A prompt should identify who will use or read the result.",
+      "startSec": 16.505656836461128,
+      "endSec": 19.66
+    }
+  ],
+  "4": [
+    {
+      "text": "“Write for a busy owner who understands their service but is not comfortable with marketing software” is more useful than “make it simple.",
+      "startSec": 0,
+      "endSec": 7.6725
+    },
+    {
+      "text": "” If the result will be used in more than one channel, name each audience.",
+      "startSec": 7.5225,
+      "endSec": 11.636739130434783
+    },
+    {
+      "text": "A website page can explain a decision in detail, while a social caption needs a shorter entry point.",
+      "startSec": 11.636739130434783,
+      "endSec": 17.196521739130436
+    },
+    {
+      "text": "The prompt should not ask one paragraph to do both jobs.",
+      "startSec": 17.196521739130436,
+      "endSec": 20.46
+    }
+  ],
+  "5": [
+    {
+      "text": "Describe how the answer should sound and what it must avoid.",
+      "startSec": 0,
+      "endSec": 3.398936170212766
+    },
+    {
+      "text": "Useful boundaries include plain language, a calm tone, no inflated promises",
+      "startSec": 3.248936170212766,
+      "endSec": 7.497606382978724
+    },
+    {
+      "text": "no unsupported statistics, no jargon, and no claims that require a source.",
+      "startSec": 7.497606382978724,
+      "endSec": 11.68962765957447
+    },
+    {
+      "text": "A voice instruction works best when it is concrete.",
+      "startSec": 11.68962765957447,
+      "endSec": 14.57872340425532
+    },
+    {
+      "text": "“Use short paragraphs, explain one idea at a time",
+      "startSec": 14.57872340425532,
+      "endSec": 17.354521276595747
+    },
+    {
+      "text": "and speak to the reader as a practical advisor” is easier to apply.",
+      "startSec": 17.354521276595747,
+      "endSec": 21.3
+    }
+  ],
+  "6": [
+    {
+      "text": "For a comparison, define the decision criteria before asking for a recommendation.",
+      "startSec": 0,
+      "endSec": 4.311111111111111
+    },
+    {
+      "text": "Structure reduces repetition because each section has a job.",
+      "startSec": 4.1611111111111105,
+      "endSec": 7.3155826558265575
+    },
+    {
+      "text": "A reviewer can check whether every requested part is present instead of reading a long answer and guessing what it was meant to accomplish.",
+      "startSec": 7.3155826558265575,
+      "endSec": 14.623441734417343
+    },
+    {
+      "text": "Do not ask for an arbitrary number of sections just to make a document look substantial.",
+      "startSec": 14.623441734417343,
+      "endSec": 19.4
+    }
+  ],
+  "7": [
+    {
+      "text": "Do not use an example with a promise, statistic",
+      "startSec": 0,
+      "endSec": 2.3574210526315786
+    },
+    {
+      "text": "or brand claim that would be unsafe in the final answer.",
+      "startSec": 2.2074210526315787,
+      "endSec": 5.016263157894736
+    },
+    {
+      "text": "The tool may treat the example as evidence even when you intended it only as a style reference.",
+      "startSec": 5.016263157894736,
+      "endSec": 9.781263157894735
+    },
+    {
+      "text": "Ask for a draft first, then ask for a separate review.",
+      "startSec": 9.781263157894735,
+      "endSec": 12.489789473684208
+    },
+    {
+      "text": "Combining “write this and make sure it is accurate” encourages the tool to approve its own work without showing what it checked.",
+      "startSec": 12.489789473684208,
+      "endSec": 19.06
+    }
+  ],
+  "8": [
+    {
+      "text": "Before using an answer, run a verification pass with explicit checks.",
+      "startSec": 0,
+      "endSec": 3.6077598152424946
+    },
+    {
+      "text": "Ask whether every number, date, quoted statement, and named source appears in the supplied material.",
+      "startSec": 3.4577598152424946,
+      "endSec": 8.686397228637414
+    },
+    {
+      "text": "Ask whether the title matches the body and whether the call to action matches the actual business offer.",
+      "startSec": 8.686397228637414,
+      "endSec": 14.12418013856813
+    },
+    {
+      "text": "For operational content, check that the steps can be performed as written.",
+      "startSec": 14.12418013856813,
+      "endSec": 17.99337182448037
+    },
+    {
+      "text": "For marketing content, check that the offer, audience, and destination are consistent.",
+      "startSec": 17.99337182448037,
+      "endSec": 22.64
+    }
+  ],
+  "9": [
+    {
+      "text": "The goal is to make every instruction necessary.",
+      "startSec": 0,
+      "endSec": 2.809311163895487
+    },
+    {
+      "text": "A concise prompt with a clear outcome and trusted source material will usually outperform a long prompt filled with generic advice.",
+      "startSec": 2.659311163895487,
+      "endSec": 10.326389548693587
+    },
+    {
+      "text": "Use this template as a starting point: “Task: describe the result.",
+      "startSec": 10.326389548693587,
+      "endSec": 14.189192399049881
+    },
+    {
+      "text": "Constraints: list claims, words, or promises to avoid.",
+      "startSec": 14.189192399049881,
+      "endSec": 17.349667458432304
+    },
+    {
+      "text": "If a required fact is missing, mark it NEEDS REVIEW instead of guessing.",
+      "startSec": 17.349667458432304,
+      "endSec": 21.563634204275534
+    },
+    {
+      "text": "” Fill in the brackets before sending the request.",
+      "startSec": 21.563634204275534,
+      "endSec": 24.64
+    }
+  ],
+  "10": [
+    {
+      "text": "That process gives a small business a repeatable way to use AI without handing over editorial judgment.",
+      "startSec": 0,
+      "endSec": 5.779917355371901
+    },
+    {
+      "text": "The tool can help with speed and organization.",
+      "startSec": 5.629917355371901,
+      "endSec": 8.211239669421488
+    },
+    {
+      "text": "The business remains responsible for the facts, promises, and decisions that reach customers.",
+      "startSec": 8.211239669421488,
+      "endSec": 13.58
+    }
+  ],
+  "11": [
+    {
+      "text": "What context would make your next AI prompt more useful?",
+      "startSec": 0,
+      "endSec": 3.0100000000000002
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 2.8600000000000003,
+      "endSec": 5.16
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to build AI prompts that actually work\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to build AI prompts that actually work",
+      "prefer": "video",
+      "updatedAt": "2026-08-01T08:40:02.462Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to build AI prompts that actually work help small business\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to build AI prompts that actually work help small business",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T08:40:02.479Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to build AI prompts that actually work write about websites\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to build AI prompts that actually work write about websites",
+      "prefer": "photo",
+      "updatedAt": "2026-08-01T08:40:02.480Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to build AI prompts that actually work use plain language\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work use plain language",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:03.762Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to build AI prompts that actually work write busy owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work write busy owner",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:04.757Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to build AI prompts that actually work describe how answer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work describe how answer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:06.274Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to build AI prompts that actually work comparison define decision\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work comparison define decision",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:06.714Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to build AI prompts that actually work use example promise\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work use example promise",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:07.325Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to build AI prompts that actually work before using answer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work before using answer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:08.108Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to build AI prompts that actually work goal make every\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work goal make every",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:08.894Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to build AI prompts that actually work process gives small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work process gives small",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:09.515Z"
+    },
+    "11": {
+      "key": "{\"query\":\"how to build AI prompts that actually work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to build AI prompts that actually work customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-01T08:40:10.050Z"
+    }
+  }
+}

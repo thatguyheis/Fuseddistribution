@@ -1,0 +1,53 @@
+{
+  "slug": "ai-writing-tools-comparison-for-small-business",
+  "renderedAt": "2026-08-01T08:18:47.040Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 203.185,
+  "renderedDuration": 197.76,
+  "scriptHash": "8ce2f0d963bf21b75464e351e64d086c86dc403b77021f04154eae948bd44096",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-relaxation-05-749.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -12.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05140791565537727
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.88,
+      "1": 20.26,
+      "2": 18.22,
+      "3": 21.98,
+      "4": 16.54,
+      "5": 21.48,
+      "6": 19.94,
+      "7": 21.76,
+      "8": 22.88,
+      "9": 22.52,
+      "10": 4.76
+    },
+    "totalNarrationSeconds": 195.22
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relaxation-05-749/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

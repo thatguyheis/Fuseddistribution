@@ -1,0 +1,269 @@
+{
+  "0": [
+    {
+      "text": "The best AI writing tool is the one your business can review and reuse safely.",
+      "startSec": 0,
+      "endSec": 4.88
+    }
+  ],
+  "1": [
+    {
+      "text": "AI writing tools can help a small business turn rough notes into a service page, email, proposal",
+      "startSec": 0,
+      "endSec": 5.10488188976378
+    },
+    {
+      "text": "social caption, or internal procedure.",
+      "startSec": 4.954881889763779,
+      "endSec": 6.975564304461942
+    },
+    {
+      "text": "A tool that is useful for brainstorming may be poor at preserving a brand voice.",
+      "startSec": 6.975564304461942,
+      "endSec": 11.229632545931759
+    },
+    {
+      "text": "A tool that edits grammar may not understand the customer or the offer.",
+      "startSec": 11.229632545931759,
+      "endSec": 15.005118110236221
+    },
+    {
+      "text": "The right choice depends on the work you need to repeat and the review process you can maintain.",
+      "startSec": 15.005118110236221,
+      "endSec": 20.26
+    }
+  ],
+  "2": [
+    {
+      "text": "If you need long form pages, look for source handling, structure, and review support.",
+      "startSec": 0,
+      "endSec": 4.254670329670329
+    },
+    {
+      "text": "If you need many channel versions, look for reusable instructions and predictable formatting.",
+      "startSec": 4.104670329670329,
+      "endSec": 8.759780219780218
+    },
+    {
+      "text": "Give each candidate the same brief, the same approved facts, and the same audience.",
+      "startSec": 8.759780219780218,
+      "endSec": 12.914340659340658
+    },
+    {
+      "text": "Ask each tool to produce the same small deliverable",
+      "startSec": 12.914340659340658,
+      "endSec": 15.467142857142855
+    },
+    {
+      "text": "such as a service page outline and a customer email.",
+      "startSec": 15.467142857142855,
+      "endSec": 18.22
+    }
+  ],
+  "3": [
+    {
+      "text": "| | Cleanup and readability | Editing and review tool | Does it preserve important limits while improving clarity?",
+      "startSec": 0,
+      "endSec": 8.109126213592234
+    },
+    {
+      "text": "| This matrix is a way to choose what to test, not a guarantee that one category will win.",
+      "startSec": 7.959126213592233,
+      "endSec": 14.361067961165048
+    },
+    {
+      "text": "Run a real business task through the short list and compare the finished workflow",
+      "startSec": 14.361067961165048,
+      "endSec": 20.12281553398058
+    },
+    {
+      "text": "including review effort.",
+      "startSec": 20.12281553398058,
+      "endSec": 21.98
+    }
+  ],
+  "4": [
+    {
+      "text": "The important comparison is not the name alone.",
+      "startSec": 0,
+      "endSec": 2.3556969696969694
+    },
+    {
+      "text": "Test whether the assistant follows your source material, keeps the requested format",
+      "startSec": 2.2056969696969695,
+      "endSec": 6.365757575757575
+    },
+    {
+      "text": "and makes uncertainty visible when the brief is incomplete.",
+      "startSec": 6.365757575757575,
+      "endSec": 9.322909090909091
+    },
+    {
+      "text": "If the prompt is vague, the answer may be generic.",
+      "startSec": 9.322909090909091,
+      "endSec": 11.828969696969697
+    },
+    {
+      "text": "If the source material is incomplete, the tool may fill the gap with a plausible statement.",
+      "startSec": 11.828969696969697,
+      "endSec": 16.54
+    }
+  ],
+  "5": [
+    {
+      "text": "An editor may improve a sentence without understanding whether the claim is accurate or whether the page is aimed at the right customer.",
+      "startSec": 0,
+      "endSec": 6.841405152224825
+    },
+    {
+      "text": "Keep a source and review step even when the AI feature is built into the writing environment.",
+      "startSec": 6.691405152224824,
+      "endSec": 11.369718969555034
+    },
+    {
+      "text": "Search focused tools help organize a page around a topic, related questions, and on page structure.",
+      "startSec": 11.369718969555034,
+      "endSec": 16.349859484777518
+    },
+    {
+      "text": "They can be useful for a business that publishes regularly and needs a consistent planning process.",
+      "startSec": 16.349859484777518,
+      "endSec": 21.48
+    }
+  ],
+  "6": [
+    {
+      "text": "Before adopting one, confirm that the stored examples can be updated, removed",
+      "startSec": 0,
+      "endSec": 3.75398533007335
+    },
+    {
+      "text": "and clearly separated from approved facts.",
+      "startSec": 3.60398533007335,
+      "endSec": 5.651613691931541
+    },
+    {
+      "text": "Remove outdated offers, old contact details, and examples that no longer represent the business.",
+      "startSec": 5.651613691931541,
+      "endSec": 10.331907090464547
+    },
+    {
+      "text": "Label approved facts separately from style examples so the tool does not treat a sample sentence as current evidence.",
+      "startSec": 10.331907090464547,
+      "endSec": 16.03601466992665
+    },
+    {
+      "text": "Choose this category when consistency is a bigger problem than brainstorming.",
+      "startSec": 16.03601466992665,
+      "endSec": 19.94
+    }
+  ],
+  "7": [
+    {
+      "text": "Customer contact details, private proposals, account information, unpublished prices",
+      "startSec": 0,
+      "endSec": 4.290704225352113
+    },
+    {
+      "text": "and internal credentials should not be pasted into a service without an approved handling policy.",
+      "startSec": 4.1407042253521125,
+      "endSec": 9.095446009389672
+    },
+    {
+      "text": "Ask how the tool accepts source material, how access is controlled",
+      "startSec": 9.095446009389672,
+      "endSec": 12.466713615023474
+    },
+    {
+      "text": "and how your team can remove outdated content.",
+      "startSec": 12.466713615023474,
+      "endSec": 14.816384976525821
+    },
+    {
+      "text": "Keep sensitive details out of reusable prompts.",
+      "startSec": 14.816384976525821,
+      "endSec": 17.21713615023474
+    },
+    {
+      "text": "Replace them with neutral labels when a real value is not needed for the writing task.",
+      "startSec": 17.21713615023474,
+      "endSec": 21.76
+    }
+  ],
+  "8": [
+    {
+      "text": "For each job, write the source material, the audience, the output format, and the review checks.",
+      "startSec": 0,
+      "endSec": 5.07270207852194
+    },
+    {
+      "text": "Then run the same brief through each candidate.",
+      "startSec": 4.922702078521939,
+      "endSec": 7.406212471131639
+    },
+    {
+      "text": "Score the result on useful criteria: factual control, clarity, editing effort, consistency",
+      "startSec": 7.406212471131639,
+      "endSec": 12.161870669745959
+    },
+    {
+      "text": "privacy fit, and ease of reuse.",
+      "startSec": 12.161870669745959,
+      "endSec": 13.799930715935336
+    },
+    {
+      "text": "The purpose is to expose tradeoffs, not create a false impression of scientific precision.",
+      "startSec": 13.799930715935336,
+      "endSec": 18.555588914549656
+    },
+    {
+      "text": "Keep the tool that produces a dependable draft and makes mistakes easy to find.",
+      "startSec": 18.555588914549656,
+      "endSec": 22.88
+    }
+  ],
+  "9": [
+    {
+      "text": "If you need varied help, start with a general assistant.",
+      "startSec": 0,
+      "endSec": 3.0170334928229665
+    },
+    {
+      "text": "If you need shared approvals, start with an editor your team already uses.",
+      "startSec": 2.8670334928229666,
+      "endSec": 6.853827751196173
+    },
+    {
+      "text": "If you need search planning, test a search focused tool.",
+      "startSec": 6.853827751196173,
+      "endSec": 9.870861244019139
+    },
+    {
+      "text": "If consistency across writers is the problem, test a brand workspace.",
+      "startSec": 9.870861244019139,
+      "endSec": 13.588277511961723
+    },
+    {
+      "text": "If the draft is sound but the prose needs cleanup, test an editing tool.",
+      "startSec": 13.588277511961723,
+      "endSec": 17.46732057416268
+    },
+    {
+      "text": "That decision rule is more dependable than choosing the tool with the longest feature list.",
+      "startSec": 17.46732057416268,
+      "endSec": 22.52
+    }
+  ],
+  "10": [
+    {
+      "text": "Which writing task would you most like to make easier?",
+      "startSec": 0,
+      "endSec": 2.734468085106383
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 2.584468085106383,
+      "endSec": 4.76
+    }
+  ]
+}

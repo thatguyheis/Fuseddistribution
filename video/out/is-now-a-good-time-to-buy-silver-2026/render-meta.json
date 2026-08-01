@@ -1,0 +1,53 @@
+{
+  "slug": "is-now-a-good-time-to-buy-silver-2026",
+  "renderedAt": "2026-08-01T07:51:49.832Z",
+  "hookType": "question",
+  "segmentCount": 11,
+  "scriptDuration": 208.385,
+  "renderedDuration": 203.050667,
+  "scriptHash": "c6dd9321b16e083bf2b52add5e0f970e305390606cc9223c1ddf3f6168dac9f9",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-serene-view-443.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.32,
+      "1": 20.16,
+      "2": 17.92,
+      "3": 22.76,
+      "4": 25.92,
+      "5": 20.26,
+      "6": 21.76,
+      "7": 21.72,
+      "8": 14.66,
+      "9": 27.1,
+      "10": 4.84
+    },
+    "totalNarrationSeconds": 200.42
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/serene-view-443/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}
