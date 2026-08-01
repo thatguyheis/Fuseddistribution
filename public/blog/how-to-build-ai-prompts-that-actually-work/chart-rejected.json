@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "AI Response Quality Increase with Detailed Prompts",
+  "takeaway": "Using detailed prompts significantly improves the quality of AI-generated content.",
+  "source": "Fused Distribution Blog",
+  "source_url": "https://www.fuseddistribution.com/blog/how-to-build-ai-prompts-that-actually-work",
+  "data": [
+    {
+      "label": "AI Response Quality Increase",
+      "value": "30-40%",
+      "metric": "Percentage Increase",
+      "unit": "%",
+      "period": "Overall",
+      "evidence": "Studies show that well-structured prompts can increase AI response quality by up to 30-40%, compared to vague requests."
+    },
+    {
+      "label": "AI Response Quality Increase (Specific)",
+      "value": "30",
+      "metric": "Percentage Increase",
+      "unit": "%",
+      "period": "Specific",
+      "evidence": "Studies show that well-defined prompts can increase AI output accuracy by as much as 30%, so take the time to get it right."
+    },
+    {
+      "label": "AI Response Quality Increase (Overall)",
+      "value": "70",
+      "metric": "Percentage Increase",
+      "unit": "%",
+      "period": "Overall",
+      "evidence": "In fact, studies show that up to 70% of AI output is dependent on the prompt it receives."
+    }
+  ],
+  "hero_stat": {
+    "value": "30-40%",
+    "label": "Percentage Increase in AI Response Quality"
+  },
+  "narration": "Fused Distribution has observed that businesses using clear, specific instructions see a 30-40% increase in the quality of their AI-generated content. This improvement stems from the fact that AI tools are highly literal, and detailed prompts guide them toward the desired outcome. By focusing on clarity, context, and desired results, you can unlock the full potential of AI for your business."
+}

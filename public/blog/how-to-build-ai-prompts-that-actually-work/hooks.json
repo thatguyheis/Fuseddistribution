@@ -1,0 +1,10 @@
+{
+  "hook": "A useful AI prompt starts with a clear job, trusted context, and a review step.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "",
+    "label": ""
+  },
+  "discussion_question": "What context would make your next AI prompt more useful?",
+  "hashtags": "#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign"
+}
