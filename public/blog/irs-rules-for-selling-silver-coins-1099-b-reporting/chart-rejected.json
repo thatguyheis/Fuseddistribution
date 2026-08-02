@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Capital Gain vs. Loss",
+  "takeaway": "Selling silver can result in a capital gain or loss, which impacts your tax liability.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.fuseddistribution.com/blog/irs-rules-for-selling-silver-coins-1099-b-reporting",
+  "data": [
+    {
+      "label": "Capital Gain",
+      "value": "Higher than Cost",
+      "metric": "Profit/Loss",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Once you have your 1099-B and your records of the cost of your silver, you can calculate your capital gain or loss. This is done by subtracting the cost of the silver (Box 6 on the 1099-B) from the sales price (Box 2 on the 1099-B)."
+    },
+    {
+      "label": "Capital Loss",
+      "value": "Lower than Cost",
+      "metric": "Profit/Loss",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "If the sales price is lower than the cost, you have a capital loss, which can be used to offset other capital gains."
+    }
+  ],
+  "hero_stat": {
+    "value": "Capital Gain or Loss",
+    "label": "Taxable Outcome"
+  },
+  "narration": "The sale of silver coins is generally treated as a capital gain or loss. This calculation depends on the difference between the sales price and the original cost of the coins. Understanding this difference is crucial for accurate tax reporting."
+}

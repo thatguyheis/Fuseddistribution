@@ -125,6 +125,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-02 | irs-rules-for-selling-silver-coins-1099-b-reporting | General | IRS rules for selling silver coins 1099-B reporting |
 | 2026-08-01 | do-you-have-to-report-silver-coin-purchases-to-irs | General | do you have to report silver coin purchases to IRS |
 | 2026-08-01 | silver-capital-gains-tax-how-it-works-in-the-us | Tax & Legal | silver capital gains tax how it works in the US |
 | 2026-07-31 | is-now-a-good-time-to-buy-silver-2026 | General | is now a good time to buy silver 2026 |

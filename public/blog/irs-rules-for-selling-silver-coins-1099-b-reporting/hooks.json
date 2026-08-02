@@ -1,0 +1,10 @@
+{
+  "hook": "Sell $600+ silver, report it \u2013 avoid penalties.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$600",
+    "label": "or more to be"
+  },
+  "discussion_question": "Considering all this, what\u2019s your biggest concern about reporting silver sales?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
