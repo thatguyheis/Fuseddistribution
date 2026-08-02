@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-02 | ai-for-bookkeeping-small-business-tools-compared | General | AI for bookkeeping small business tools compared |
 | 2026-07-31 | how-to-automate-repetitive-business-tasks-with-ai | General | how to automate repetitive business tasks with AI |
 | 2026-07-30 | ai-writing-tools-comparison-for-small-business | General | AI writing tools comparison for small business |
 | 2026-07-30 | how-to-build-ai-prompts-that-actually-work | General | how to build AI prompts that actually work |

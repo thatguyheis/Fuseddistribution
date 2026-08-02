@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "ONE PLAIN-LANGUAGE SENTENCE",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/ai-for-bookkeeping",
+  "data": [
+    {
+      "label": "Average Time on Bookkeeping",
+      "value": "8-10 hours per month",
+      "metric": "Time",
+      "unit": "hours/month",
+      "period": "month",
+      "evidence": "Several options are available, each with varying levels of complexity and features. Many newer programs boast intuitive interfaces designed for non-accountants, making them surprisingly easy to learn and use. Recent estimates show that small businesses spend an average of 8-10 hours per month on bookkeeping tasks - imagine reclaiming that time!"
+    },
+    {
+      "label": "Data Entry Time Reduction",
+      "value": "3.5 hours per month",
+      "metric": "Time",
+      "unit": "hours/month",
+      "period": "month",
+      "evidence": "QuickBooks\u2019 AI features, like Smart Scan and Smart Reminders, promise to automate tasks like categorizing transactions and sending overdue invoice reminders. The core benefit is reduced manual data entry - a huge time sink for many small business owners. Data suggests that businesses using Smart Scan spend an average of 3.5 hours per month on data entry, which could be reallocated to more strategic activities."
+    },
+    {
+      "label": "Transaction Categorization Accuracy",
+      "value": "90%",
+      "metric": "Accuracy",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Wave Assist can automatically categorize up to 90% of your transactions, a significant time-saver compared to manual entry."
+    },
+    {
+      "label": "Cost of QuickBooks Self-Employed",
+      "value": "30",
+      "metric": "Price",
+      "unit": "USD/month",
+      "period": "month",
+      "evidence": "QuickBooks Self-Employed and Xero are popular choices, offering automated transaction categorization and invoice creation. Pricing varies, with QuickBooks Self-Employed starting around $30/month, Xero around $15/month, and FreshBooks beginning at $15."
+    }
+  ],
+  "hero_stat": {
+    "value": "8-10",
+    "label": "Average Bookkeeping Hours"
+  },
+  "narration": "AI bookkeeping tools are designed to automate tedious tasks and free up small business owners\u2019 time. These tools can categorize transactions, generate invoices, and provide insights into financial performance. By automating these processes, businesses can focus on growth and strategy, rather than spending hours on manual bookkeeping."
+}
