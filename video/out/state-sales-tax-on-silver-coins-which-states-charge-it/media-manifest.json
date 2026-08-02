@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "state sales tax on silver coins which states charge it",
+      "prefer": "video",
+      "updatedAt": "2026-08-02T18:50:23.929Z"
+    },
+    "1": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it buying silver coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "state sales tax on silver coins which states charge it buying silver coins",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T18:50:23.953Z"
+    },
+    "2": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it varies significantly state\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "state sales tax on silver coins which states charge it varies significantly state",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T18:50:23.953Z"
+    },
+    "3": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it 6 25 plus\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it 6 25 plus",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:24.991Z"
+    },
+    "4": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it these exemptions often\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it these exemptions often",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:25.846Z"
+    },
+    "5": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it nebraska exempts silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it nebraska exempts silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:26.796Z"
+    },
+    "6": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it virginia exempts silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it virginia exempts silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:28.764Z"
+    },
+    "7": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it irs definition considers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it irs definition considers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:29.752Z"
+    },
+    "8": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it 1 000 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it 1 000 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:31.268Z"
+    },
+    "9": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it always verify rules\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it always verify rules",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:32.161Z"
+    },
+    "10": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it stock diverse selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it stock diverse selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:33.265Z"
+    },
+    "11": {
+      "key": "{\"query\":\"state sales tax on silver coins which states charge it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "state sales tax on silver coins which states charge it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:50:34.556Z"
+    }
+  }
+}

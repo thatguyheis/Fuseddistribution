@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting",
+      "prefer": "video",
+      "updatedAt": "2026-08-02T19:20:47.271Z"
+    },
+    "1": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 1099 silver crucial\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 1099 silver crucial",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:20:47.296Z"
+    },
+    "2": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 600 reportable includes\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 600 reportable includes",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:20:47.296Z"
+    },
+    "3": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 1099 box gross\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 1099 box gross",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:48.501Z"
+    },
+    "4": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 1099 price records\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 1099 price records",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:49.720Z"
+    },
+    "5": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 1099 silver cost\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 1099 silver cost",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:50.350Z"
+    },
+    "6": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting proper documentation accurately\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting proper documentation accurately",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:51.647Z"
+    },
+    "7": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting 1099 tax rate\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting 1099 tax rate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:52.243Z"
+    },
+    "8": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting incorrectly calculating capital\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting incorrectly calculating capital",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:52.762Z"
+    },
+    "9": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting consider consulting tax\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting consider consulting tax",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:53.668Z"
+    },
+    "10": {
+      "key": "{\"query\":\"IRS rules for selling silver coins 1099-B reporting customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "IRS rules for selling silver coins 1099-B reporting customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T19:20:54.387Z"
+    }
+  }
+}

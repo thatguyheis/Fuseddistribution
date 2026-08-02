@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US",
+      "prefer": "video",
+      "updatedAt": "2026-08-02T19:49:04.561Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US 28 silver federal\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US 28 silver federal",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.622Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US federal tax purposes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US federal tax purposes",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.622Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US based what actually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US based what actually",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.623Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US bought silver time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US bought silver time",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.623Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US 28 means maximum\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US 28 means maximum",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.624Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US filing question whether\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US filing question whether",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.624Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US keep purchase dates\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US keep purchase dates",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.624Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US silver was held\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US silver was held",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.624Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US 550 silver investment\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US 550 silver investment",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.624Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver capital gains tax how it works in the US customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "silver capital gains tax how it works in the US customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T19:49:04.625Z"
+    }
+  }
+}

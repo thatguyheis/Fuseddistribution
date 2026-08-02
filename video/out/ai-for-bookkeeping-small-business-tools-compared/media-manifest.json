@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "AI for bookkeeping small business tools compared",
+      "prefer": "video",
+      "updatedAt": "2026-08-02T18:19:13.593Z"
+    },
+    "1": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI for bookkeeping small business tools compared small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T18:19:13.628Z"
+    },
+    "2": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared bookkeeping software small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "AI for bookkeeping small business tools compared bookkeeping software small",
+      "prefer": "photo",
+      "updatedAt": "2026-08-02T18:19:13.628Z"
+    },
+    "3": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared investing right solution\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared investing right solution",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:16.105Z"
+    },
+    "4": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared quickbooks online been\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared quickbooks online been",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:17.163Z"
+    },
+    "5": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared ultimately whether upgrade\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared ultimately whether upgrade",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:18.878Z"
+    },
+    "6": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared tool designed simplify\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared tool designed simplify",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:20.504Z"
+    },
+    "7": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared while perfect always\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared while perfect always",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:21.498Z"
+    },
+    "8": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared 30 month xero\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared 30 month xero",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:22.990Z"
+    },
+    "9": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared popular options include\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared popular options include",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:23.663Z"
+    },
+    "10": {
+      "key": "{\"query\":\"AI for bookkeeping small business tools compared customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "AI for bookkeeping small business tools compared customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-02T18:19:24.780Z"
+    }
+  }
+}
