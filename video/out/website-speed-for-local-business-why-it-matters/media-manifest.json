@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"website speed for local business why it matters\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "website speed for local business why it matters",
+      "prefer": "video",
+      "updatedAt": "2026-08-03T18:16:58.607Z"
+    },
+    "1": {
+      "key": "{\"query\":\"website speed for local business why it matters 7 business decrease\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "website speed for local business why it matters 7 business decrease",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T18:16:58.639Z"
+    },
+    "2": {
+      "key": "{\"query\":\"website speed for local business why it matters website speed silent\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "website speed for local business why it matters website speed silent",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T18:16:58.640Z"
+    },
+    "3": {
+      "key": "{\"query\":\"website speed for local business why it matters did know website\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters did know website",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:00.652Z"
+    },
+    "4": {
+      "key": "{\"query\":\"website speed for local business why it matters 40 meaning potential\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters 40 meaning potential",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:01.263Z"
+    },
+    "5": {
+      "key": "{\"query\":\"website speed for local business why it matters frustrating signals visitors\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters frustrating signals visitors",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:02.386Z"
+    },
+    "6": {
+      "key": "{\"query\":\"website speed for local business why it matters 70 people abandon\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters 70 people abandon",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:03.113Z"
+    },
+    "7": {
+      "key": "{\"query\":\"website speed for local business why it matters there several free\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters there several free",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:03.838Z"
+    },
+    "8": {
+      "key": "{\"query\":\"website speed for local business why it matters fused distribution understand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters fused distribution understand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:04.792Z"
+    },
+    "9": {
+      "key": "{\"query\":\"website speed for local business why it matters plus our seo\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters plus our seo",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:05.562Z"
+    },
+    "10": {
+      "key": "{\"query\":\"website speed for local business why it matters customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "website speed for local business why it matters customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:17:06.166Z"
+    }
+  }
+}

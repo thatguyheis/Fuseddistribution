@@ -1,0 +1,53 @@
+{
+  "slug": "silver-coins-gift-tax-rules-what-you-need-to-know",
+  "renderedAt": "2026-08-03T18:51:00.572Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 192.765,
+  "renderedDuration": 187.349333,
+  "scriptHash": "7a1ba9346ba7725ddc5923e6424157af260d7c93cdd4188e440a7a8832ee6cdf",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-vastness-184.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05970765237835921
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.4,
+      "1": 21,
+      "2": 19.48,
+      "3": 20.52,
+      "4": 17.38,
+      "5": 19.7,
+      "6": 20.66,
+      "7": 21.6,
+      "8": 22.68,
+      "9": 11.62,
+      "10": 5.76
+    },
+    "totalNarrationSeconds": 184.8
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/vastness-184/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

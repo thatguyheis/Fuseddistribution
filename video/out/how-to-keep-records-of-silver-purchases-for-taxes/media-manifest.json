@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to keep records of silver purchases for taxes",
+      "prefer": "video",
+      "updatedAt": "2026-08-03T19:11:02.862Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes keeping accurate records\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to keep records of silver purchases for taxes keeping accurate records",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T19:11:02.897Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes 15 most taxpayers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to keep records of silver purchases for taxes 15 most taxpayers",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T19:11:02.898Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes doesn t complicated\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes doesn t complicated",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:03.996Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes transaction type indicate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes transaction type indicate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:05.209Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes 334 silver business\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes 334 silver business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:06.345Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes several common mistakes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes several common mistakes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:06.869Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes 15 silver each\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes 15 silver each",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:07.757Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes 40 ounces silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes 40 ounces silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:08.454Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes following these guidelines\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes following these guidelines",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:09.083Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to keep records of silver purchases for taxes customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how to keep records of silver purchases for taxes customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:11:09.866Z"
+    }
+  }
+}

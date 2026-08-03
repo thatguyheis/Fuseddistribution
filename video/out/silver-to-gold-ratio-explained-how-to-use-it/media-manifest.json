@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver to gold ratio explained how to use it",
+      "prefer": "video",
+      "updatedAt": "2026-08-03T19:32:14.180Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 2 400 and\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver to gold ratio explained how to use it 2 400 and",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T19:32:14.208Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 120 anyone who\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver to gold ratio explained how to use it 120 anyone who",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T19:32:14.209Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 60 put percent\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it 60 put percent",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:15.178Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 1 ounce of\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it 1 ounce of",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:15.868Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it the global silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it the global silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:16.430Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 1 premium per\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it 1 premium per",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:17.127Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it 30 minute appointment\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it 30 minute appointment",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:18.441Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it the data on\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it the data on",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:19.026Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver to gold ratio explained how to use it customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver to gold ratio explained how to use it customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T19:32:20.202Z"
+    }
+  }
+}

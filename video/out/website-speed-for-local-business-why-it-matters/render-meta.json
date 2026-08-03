@@ -1,0 +1,53 @@
+{
+  "slug": "website-speed-for-local-business-why-it-matters",
+  "renderedAt": "2026-08-03T18:25:15.178Z",
+  "hookType": "stat",
+  "segmentCount": 11,
+  "scriptDuration": 203.785,
+  "renderedDuration": 198.378667,
+  "scriptHash": "e23e0c7a6d627a440de39dfa54ee49bf260520d3a459d09f132935bf6d9a8bfa",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09795576387368925
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 6.16,
+      "1": 25.56,
+      "2": 23.44,
+      "3": 19.68,
+      "4": 18.02,
+      "5": 21.36,
+      "6": 14.66,
+      "7": 25.56,
+      "8": 23.4,
+      "9": 11.94,
+      "10": 6.04
+    },
+    "totalNarrationSeconds": 195.82
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

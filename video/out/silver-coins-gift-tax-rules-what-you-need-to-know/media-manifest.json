@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver coins gift tax rules what you need to know",
+      "prefer": "video",
+      "updatedAt": "2026-08-03T18:42:13.810Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know considering gifting silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver coins gift tax rules what you need to know considering gifting silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T18:42:13.858Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know 18 000 recipient\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver coins gift tax rules what you need to know 18 000 recipient",
+      "prefer": "photo",
+      "updatedAt": "2026-08-03T18:42:13.858Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know 709 silver united\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know 709 silver united",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:15.643Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know 28 77 spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know 28 77 spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:24.937Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know 709 business gift\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know 709 business gift",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:25.639Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know 18 000 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know 18 000 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:26.247Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know ignoring lifetime exclusion\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know ignoring lifetime exclusion",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:26.882Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know consult tax professional\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know consult tax professional",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:27.936Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know explore our current\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know explore our current",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:28.563Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver coins gift tax rules what you need to know customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver coins gift tax rules what you need to know customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-03T18:42:40.545Z"
+    }
+  }
+}
