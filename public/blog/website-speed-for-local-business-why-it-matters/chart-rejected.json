@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Website Speed Impact on Conversions",
+  "takeaway": "A one-second delay in page load time can lead to a 7% decrease in conversions.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/website-speed-local-business",
+  "data": [
+    {
+      "label": "Conversion Rate with 1-Second Delay",
+      "value": "93%",
+      "metric": "Conversion Rate",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Studies show that a one-second delay in page load time can lead to a 7% decrease in conversions."
+    },
+    {
+      "label": "Conversion Rate with Instant Load",
+      "value": "100%",
+      "metric": "Conversion Rate",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Studies show that a one-second delay in page load time can lead to a 7% decrease in conversions."
+    }
+  ],
+  "hero_stat": {
+    "value": "7%",
+    "label": "Decrease in Conversions"
+  },
+  "narration": "Research indicates that a single second delay in website loading time can significantly impact conversion rates. This highlights the critical importance of website speed for local businesses seeking to maximize their online potential. Optimizing for speed directly translates to increased customer engagement and improved business outcomes."
+}
