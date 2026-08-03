@@ -126,6 +126,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-03 | how-to-keep-records-of-silver-purchases-for-taxes | General | how to keep records of silver purchases for taxes |
 | 2026-08-02 | state-sales-tax-on-silver-coins-which-states-charge-it | General | state sales tax on silver coins which states charge it |
 | 2026-08-02 | irs-rules-for-selling-silver-coins-1099-b-reporting | General | IRS rules for selling silver coins 1099-B reporting |
 | 2026-08-01 | do-you-have-to-report-silver-coin-purchases-to-irs | General | do you have to report silver coin purchases to IRS |
