@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Coin Gift Tax Exclusion Amounts",
+  "takeaway": "The IRS offers annual and lifetime gift tax exclusions, allowing significant gifting without immediate tax implications.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Annual Exclusion (2024)",
+      "value": "$18,000",
+      "metric": "Gift Tax Exclusion",
+      "unit": "%",
+      "period": "2024",
+      "evidence": "The IRS offers an annual gift tax exclusion. In 2024, you can gift up to $18,000 per recipient per year without triggering gift tax."
+    },
+    {
+      "label": "Annual Exclusion (2023)",
+      "value": "$17,000",
+      "metric": "Gift Tax Exclusion",
+      "unit": "%",
+      "period": "2023",
+      "evidence": "The IRS adjusts this amount annually for inflation. As of 2023, the annual exclusion has been $17,000."
+    },
+    {
+      "label": "Lifetime Exclusion (2024)",
+      "value": "$13.61 million",
+      "metric": "Gift Tax Exclusion",
+      "unit": "%",
+      "period": "2024",
+      "evidence": "Beyond the annual exclusion, there\u2019s also a lifetime exclusion. As of 2024, the lifetime gift and estate tax exclusion is $13.61 million per individual."
+    }
+  ],
+  "hero_stat": {
+    "value": "$18,000",
+    "label": "2024 Annual Exclusion"
+  },
+  "narration": "The IRS provides significant protections against gift tax liability through annual and lifetime exclusions. These exclusions allow for substantial gifting without immediate tax consequences, offering a valuable tool for wealth transfer. Reporting is still required, but the amounts are substantial."
+}
