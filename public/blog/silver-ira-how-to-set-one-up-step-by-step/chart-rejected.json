@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "ONE PLAIN-LANGUAGE SENTENCE",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Portfolio Volatility",
+      "value": "15%",
+      "metric": "Volatility",
+      "unit": "%",
+      "period": "2024",
+      "evidence": "A 2024 survey by investors holding a mix of asset classes, including precious metals, experienced a 15% lower portfolio volatility compared to those solely invested in stocks."
+    },
+    {
+      "label": "Custodian Fees Range",
+      "value": "$50 - $200",
+      "metric": "Fees",
+      "unit": "$",
+      "period": "Annual",
+      "evidence": "Custodian fees can vary significantly, with annual maintenance fees ranging from $50 to $200."
+    },
+    {
+      "label": "2024 Contribution Limit",
+      "value": "$7,000 - $8,000",
+      "metric": "Contribution Limit",
+      "unit": "$",
+      "period": "2024",
+      "evidence": "The IRS allows you to contribute up to $7,000 in 2024 (or $8,000 if you\u2019re age 50 or older)."
+    },
+    {
+      "label": "Silver Purity",
+      "value": "99.9%",
+      "metric": "Purity",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "When purchasing, consider the purity of the silver (typically 99.9% or .999 fine)."
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Portfolio Volatility Reduction"
+  },
+  "narration": "Investors holding a mix of asset classes, including precious metals, experienced a 15% lower portfolio volatility compared to those solely invested in stocks. Custodian fees can range from $50 to $200 annually, and the IRS allows for annual contributions of up to $7,000 for those under 50 and $8,000 for those 50 and over."
+}

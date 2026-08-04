@@ -127,6 +127,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-04 | silver-ira-how-to-set-one-up-step-by-step | General | silver IRA how to set one up step by step |
 | 2026-08-03 | silver-coins-gift-tax-rules-what-you-need-to-know | General | silver coins gift tax rules what you need to know |
 | 2026-08-03 | how-to-keep-records-of-silver-purchases-for-taxes | General | how to keep records of silver purchases for taxes |
 | 2026-08-02 | state-sales-tax-on-silver-coins-which-states-charge-it | General | state sales tax on silver coins which states charge it |
