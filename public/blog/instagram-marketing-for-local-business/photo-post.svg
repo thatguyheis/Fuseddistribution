@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#041018"/>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="1200" fill="url(#g1)"/><rect width="1200" height="1200" fill="url(#g2)"/>
+  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="324" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="65" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="385" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="705" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="1025" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="225" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="545" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="865" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="65" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="385" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="705" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED</text>
+  <text x="600" y="308" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">INSTAGRAM</text>
+  <text x="600" y="390" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">MARKETING FOR</text>
+  <text x="600" y="472" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">LOCAL BUSINESS</text>
+  <text x="600" y="760" font-family="Impact, sans-serif" font-size="180" fill="#58d6ff" text-anchor="middle">90%</text>
+  <text x="600" y="810" font-family="Arial, sans-serif" font-size="26" fill="rgba(175,198,207,0.75)" text-anchor="middle">OF INSTAGRAM USERS OPEN</text>
+  <rect x="350" y="1020" width="500" height="68" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
+  <text x="600" y="1063" font-family="Arial, sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
+</svg>

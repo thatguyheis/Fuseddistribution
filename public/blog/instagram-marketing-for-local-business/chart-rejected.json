@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "90% of Instagram users have been inspired to visit a local business after seeing it on the platform.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/instagram-local-business",
+  "data": [
+    {
+      "label": "Local Business Inspiration",
+      "value": "90%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "Recent Study",
+      "evidence": "A recent study showed that 90% of Instagram users report that they\u2019ve been inspired to visit a local business after seeing it on the platform."
+    },
+    {
+      "label": "Reels Popularity",
+      "value": "68%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "2023",
+      "evidence": "A 2023 study found that 68% of consumers trust recommendations from friends and family more than advertising."
+    },
+    {
+      "label": "Instagram Ad CPC",
+      "value": "1.50",
+      "metric": "Cost",
+      "unit": "USD",
+      "period": "Average",
+      "evidence": "The average cost per click (CPC) for Instagram ads is around $1.50."
+    },
+    {
+      "label": "Reels Engagement",
+      "value": "30%",
+      "metric": "Increase",
+      "unit": "%",
+      "period": "Branded Hashtags",
+      "evidence": "Also, consider creating your own branded hashtag to encourage customers to share their experiences. A recent survey found that businesses using branded hashtags saw a 30% increase in engagement."
+    }
+  ],
+  "hero_stat": {
+    "value": "90%",
+    "label": "Local Business Inspiration"
+  },
+  "narration": "Instagram is a powerful tool for local businesses, allowing them to visually showcase their products and services.  Consistent engagement and strategic content are key to success.  Paid advertising can boost reach and drive traffic, while tracking performance with Instagram Insights is crucial for optimizing your strategy."
+}
