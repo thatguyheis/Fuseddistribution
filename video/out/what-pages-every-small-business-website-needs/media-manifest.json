@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"what pages every small business website needs\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "what pages every small business website needs",
+      "prefer": "video",
+      "updatedAt": "2026-08-04T20:23:10.870Z"
+    },
+    "1": {
+      "key": "{\"query\":\"what pages every small business website needs every small business\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what pages every small business website needs every small business",
+      "prefer": "photo",
+      "updatedAt": "2026-08-04T20:23:10.913Z"
+    },
+    "2": {
+      "key": "{\"query\":\"what pages every small business website needs 50 milliseconds google\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "what pages every small business website needs 50 milliseconds google",
+      "prefer": "photo",
+      "updatedAt": "2026-08-04T20:23:10.914Z"
+    },
+    "3": {
+      "key": "{\"query\":\"what pages every small business website needs the about page\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs the about page",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:12.865Z"
+    },
+    "4": {
+      "key": "{\"query\":\"what pages every small business website needs 150 to if\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs 150 to if",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:13.420Z"
+    },
+    "5": {
+      "key": "{\"query\":\"what pages every small business website needs set expectations in\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs set expectations in",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:14.380Z"
+    },
+    "6": {
+      "key": "{\"query\":\"what pages every small business website needs update this page\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs update this page",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:15.013Z"
+    },
+    "7": {
+      "key": "{\"query\":\"what pages every small business website needs this format helps\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs this format helps",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:15.558Z"
+    },
+    "8": {
+      "key": "{\"query\":\"what pages every small business website needs a blog is\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs a blog is",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:16.468Z"
+    },
+    "9": {
+      "key": "{\"query\":\"what pages every small business website needs write your homepage\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs write your homepage",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:17.007Z"
+    },
+    "10": {
+      "key": "{\"query\":\"what pages every small business website needs customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "what pages every small business website needs customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T20:23:17.661Z"
+    }
+  }
+}

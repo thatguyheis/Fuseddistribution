@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how much does a small business website cost\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how much does a small business website cost",
+      "prefer": "video",
+      "updatedAt": "2026-08-04T21:08:56.092Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how much does a small business website cost 500 and to\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how much does a small business website cost 500 and to",
+      "prefer": "photo",
+      "updatedAt": "2026-08-04T21:08:56.465Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how much does a small business website cost 500 to one\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how much does a small business website cost 500 to one",
+      "prefer": "photo",
+      "updatedAt": "2026-08-04T21:08:56.466Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how much does a small business website cost most owners can\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost most owners can",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:08:59.176Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how much does a small business website cost 100 to per\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost 100 to per",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:08:59.774Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how much does a small business website cost 150 to a\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost 150 to a",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:09:00.428Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how much does a small business website cost the second option\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost the second option",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:09:01.356Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how much does a small business website cost 16 to a\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost 16 to a",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:09:02.293Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how much does a small business website cost that total is\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost that total is",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:09:03.022Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how much does a small business website cost customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "how much does a small business website cost customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-04T21:09:03.451Z"
+    }
+  }
+}
