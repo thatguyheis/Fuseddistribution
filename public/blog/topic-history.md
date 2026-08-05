@@ -128,6 +128,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-05 | can-you-put-physical-silver-in-an-ira | General | can you put physical silver in an IRA |
 | 2026-08-05 | self-directed-ira-approved-silver-coins-and-bars-list | General | self-directed IRA approved silver coins and bars list |
 | 2026-08-04 | silver-ira-how-to-set-one-up-step-by-step | General | silver IRA how to set one up step by step |
 | 2026-08-03 | silver-coins-gift-tax-rules-what-you-need-to-know | General | silver coins gift tax rules what you need to know |
