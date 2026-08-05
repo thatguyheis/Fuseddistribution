@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Cost Per Ounce of Silver Investments",
+  "takeaway": "Silver bars offer a significantly lower cost per ounce compared to coins.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.example.com/blog/silver-ira-how-to-set-one-up-step-by-step",
+  "data": [
+    {
+      "label": "American Silver Eagle (1 oz)",
+      "value": "31",
+      "metric": "Cost per ounce",
+      "unit": "USD",
+      "period": "N/A",
+      "evidence": "American Silver Eagle (1 oz): $30.00 (coin price) + custodian fees (typically $15-$25 per transaction) = $31 - $32 per ounce"
+    },
+    {
+      "label": "Canadian Silver Maple Leaf (1 oz)",
+      "value": "31",
+      "metric": "Cost per ounce",
+      "unit": "USD",
+      "period": "N/A",
+      "evidence": "Canadian Silver Maple Leaf (1 oz): $31.00 (coin price) + custodian fees = $31 - $32 per ounce"
+    },
+    {
+      "label": "Silver Round (1 kg)",
+      "value": "1.20",
+      "metric": "Cost per ounce",
+      "unit": "USD",
+      "period": "N/A",
+      "evidence": "Silver Round (1 kg): $1,200 / 1000 = $1.20 per ounce. Plus custodian fees (typically $15-$25 per transaction) = $1 - $1 per ounce"
+    },
+    {
+      "label": "Silver Bullion Bar (1 oz)",
+      "value": "30",
+      "metric": "Cost per ounce",
+      "unit": "USD",
+      "period": "N/A",
+      "evidence": "Silver Bullion Bar (1 oz): $28 - $32 (bar price) + custodian fees = $30 - $35 per ounce"
+    }
+  ],
+  "hero_stat": {
+    "value": "30.25",
+    "label": "Spot Price of Silver (August 4, 2024)"
+  },
+  "narration": "The article compares the cost per ounce of various silver investments, highlighting that silver bars offer a more cost-effective option for accumulating significant amounts of silver.  The cost includes the price of the coin or bar plus custodian fees.  This comparison is crucial for investors considering silver within a Self-Directed IRA."
+}
