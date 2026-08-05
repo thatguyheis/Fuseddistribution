@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "self-directed IRA approved silver coins and bars list",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:00:16.402Z"
+    },
+    "1": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list looking diversify retirement\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "self-directed IRA approved silver coins and bars list looking diversify retirement",
+      "prefer": "photo",
+      "updatedAt": "2026-08-05T19:00:16.434Z"
+    },
+    "2": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list irs requires specific\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "self-directed IRA approved silver coins and bars list irs requires specific",
+      "prefer": "photo",
+      "updatedAt": "2026-08-05T19:00:16.434Z"
+    },
+    "3": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list 401 traditional ira\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list 401 traditional ira",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:17.945Z"
+    },
+    "4": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list 30 silver coin\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list 30 silver coin",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:18.723Z"
+    },
+    "5": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list 35 silver coin\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list 35 silver coin",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:19.980Z"
+    },
+    "6": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list 1 180 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list 1 180 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:22.502Z"
+    },
+    "7": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list 15 to 25\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list 15 to 25",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:23.281Z"
+    },
+    "8": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list buying silver non\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list buying silver non",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:24.065Z"
+    },
+    "9": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list carefully selecting approved\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list carefully selecting approved",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:25.331Z"
+    },
+    "10": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list anticipate continued growth\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list anticipate continued growth",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:26.027Z"
+    },
+    "11": {
+      "key": "{\"query\":\"self-directed IRA approved silver coins and bars list customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "self-directed IRA approved silver coins and bars list customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:00:26.704Z"
+    }
+  }
+}

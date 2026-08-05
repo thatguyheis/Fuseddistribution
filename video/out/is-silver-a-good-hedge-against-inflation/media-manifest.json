@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"is silver a good hedge against inflation\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.733Z"
+    },
+    "1": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 5 where it\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 5 where it",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.822Z"
+    },
+    "2": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 5 to of\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 5 to of",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.822Z"
+    },
+    "3": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 46 3 million\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 46 3 million",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.822Z"
+    },
+    "4": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 10 oz bars\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 10 oz bars",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.825Z"
+    },
+    "5": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 200 ounces a\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 200 ounces a",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.825Z"
+    },
+    "6": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 1 silver up\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 1 silver up",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.825Z"
+    },
+    "7": {
+      "key": "{\"query\":\"is silver a good hedge against inflation 680 5 million\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation 680 5 million",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.825Z"
+    },
+    "8": {
+      "key": "{\"query\":\"is silver a good hedge against inflation silver etf vs\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "is silver a good hedge against inflation silver etf vs",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:37:00.826Z"
+    },
+    "9": {
+      "key": "{\"query\":\"is silver a good hedge against inflation customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "is silver a good hedge against inflation customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-08-05T19:37:00.826Z"
+    }
+  }
+}

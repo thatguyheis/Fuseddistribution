@@ -1,0 +1,61 @@
+{
+  "0": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-0.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-0.jpg",
+    "source": "local-video"
+  },
+  "1": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-1.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-1.jpg",
+    "source": "local-video"
+  },
+  "2": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-2.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-2.jpg",
+    "source": "local-video"
+  },
+  "3": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-3.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-3.jpg",
+    "source": "local-video"
+  },
+  "4": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-4.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-4.jpg",
+    "source": "local-video"
+  },
+  "5": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-5.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-5.jpg",
+    "source": "local-video"
+  },
+  "6": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-6.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-6.jpg",
+    "source": "local-video"
+  },
+  "7": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-7.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-7.jpg",
+    "source": "local-video"
+  },
+  "8": {
+    "type": "video",
+    "src": "videos/is-silver-a-good-hedge-against-inflation/segment-8.mp4",
+    "thumb": "photos/is-silver-a-good-hedge-against-inflation/segment-8.jpg",
+    "source": "local-video"
+  },
+  "9": {
+    "type": "photo",
+    "src": "photos/is-silver-a-good-hedge-against-inflation/segment-9.jpg",
+    "source": "local-photo"
+  }
+}

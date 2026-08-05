@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"what moves silver price up and down\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "what moves silver price up and down",
+      "prefer": "video",
+      "updatedAt": "2026-08-05T19:30:10.819Z"
+    },
+    "1": {
+      "key": "{\"query\":\"what moves silver price up and down silver price moves\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what moves silver price up and down silver price moves",
+      "prefer": "photo",
+      "updatedAt": "2026-08-05T19:30:10.854Z"
+    },
+    "2": {
+      "key": "{\"query\":\"what moves silver price up and down 20 year over\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "what moves silver price up and down 20 year over",
+      "prefer": "photo",
+      "updatedAt": "2026-08-05T19:30:10.854Z"
+    },
+    "3": {
+      "key": "{\"query\":\"what moves silver price up and down when inventory gets\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down when inventory gets",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:12.171Z"
+    },
+    "4": {
+      "key": "{\"query\":\"what moves silver price up and down 1 mark the\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down 1 mark the",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:12.777Z"
+    },
+    "5": {
+      "key": "{\"query\":\"what moves silver price up and down 90 silver is\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down 90 silver is",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:13.612Z"
+    },
+    "6": {
+      "key": "{\"query\":\"what moves silver price up and down 5 pullback before\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down 5 pullback before",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:14.373Z"
+    },
+    "7": {
+      "key": "{\"query\":\"what moves silver price up and down 10 oz bars\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down 10 oz bars",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:15.941Z"
+    },
+    "8": {
+      "key": "{\"query\":\"what moves silver price up and down then check our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down then check our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:16.985Z"
+    },
+    "9": {
+      "key": "{\"query\":\"what moves silver price up and down customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "what moves silver price up and down customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-05T19:30:18.376Z"
+    }
+  }
+}
