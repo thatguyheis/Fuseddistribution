@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Custodial Fees Comparison",
+  "takeaway": "Silver IRA custodian fees are typically lower than the costs associated with storing physical silver.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.silverandpreciousmetals.com/",
+  "data": [
+    {
+      "label": "Silver IRA Custodial Fees",
+      "value": "Approximately 1% of total IRA assets annually",
+      "metric": "Annual Fees",
+      "unit": "%",
+      "period": "2024",
+      "evidence": "As of 2024, average annual custodian fees are approximately 1% of the total IRA assets. This means that if you have a $10,000 IRA, you\u2019ll pay $100 per year in fees."
+    },
+    {
+      "label": "Physical Silver Storage Costs",
+      "value": "$500 - $5,000+",
+      "metric": "Storage Costs",
+      "unit": "USD",
+      "period": "Ongoing",
+      "evidence": "Storing physical silver at home presents significant security risks. You\u2019re responsible for protecting it from theft, damage, and environmental factors like humidity and corrosion. A dedicated home safe is an investment in itself, and even the best safes aren\u2019t foolproof."
+    }
+  ],
+  "hero_stat": {
+    "value": "1%",
+    "label": "Annual Custodial Fee Rate"
+  },
+  "narration": "Silver IRAs offer a lower ongoing cost compared to physical silver storage. Custodial fees are typically around 1% of the IRA assets, while home safe costs can range from $500 to $5,000 or more."
+}
