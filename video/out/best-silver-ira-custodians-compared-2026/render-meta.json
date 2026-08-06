@@ -1,0 +1,53 @@
+{
+  "slug": "best-silver-ira-custodians-compared-2026",
+  "renderedAt": "2026-08-06T19:40:10.230Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 217.825,
+  "renderedDuration": 212.394667,
+  "scriptHash": "4693c3c892b8b22fb03fad90af445b31200c0da6056b0d076a5a27b39e96a8f7",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.4,
+      "1": 20.98,
+      "2": 22.12,
+      "3": 22.88,
+      "4": 24.96,
+      "5": 18.74,
+      "6": 24.8,
+      "7": 18.46,
+      "8": 24.76,
+      "9": 22.28,
+      "10": 5.48
+    },
+    "totalNarrationSeconds": 209.86
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"online booking system for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business",
+      "prefer": "video",
+      "updatedAt": "2026-08-06T18:17:17.447Z"
+    },
+    "1": {
+      "key": "{\"query\":\"online booking system for small business spending too much\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business spending too much",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T18:17:17.472Z"
+    },
+    "2": {
+      "key": "{\"query\":\"online booking system for small business cover everything choosing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "online booking system for small business cover everything choosing",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T18:17:17.472Z"
+    },
+    "3": {
+      "key": "{\"query\":\"online booking system for small business simple way modernize\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business simple way modernize",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:21.370Z"
+    },
+    "4": {
+      "key": "{\"query\":\"online booking system for small business benefits implementing online\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business benefits implementing online",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:27.097Z"
+    },
+    "5": {
+      "key": "{\"query\":\"online booking system for small business luckily modern online\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business luckily modern online",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:30.310Z"
+    },
+    "6": {
+      "key": "{\"query\":\"online booking system for small business 20 to 30\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business 20 to 30",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:35.534Z"
+    },
+    "7": {
+      "key": "{\"query\":\"online booking system for small business don bogged down\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business don bogged down",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:38.734Z"
+    },
+    "8": {
+      "key": "{\"query\":\"online booking system for small business fused distribution specialize\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business fused distribution specialize",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:40.531Z"
+    },
+    "9": {
+      "key": "{\"query\":\"online booking system for small business 20 increase appointments\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business 20 increase appointments",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:41.444Z"
+    },
+    "10": {
+      "key": "{\"query\":\"online booking system for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "online booking system for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:17:42.664Z"
+    }
+  }
+}

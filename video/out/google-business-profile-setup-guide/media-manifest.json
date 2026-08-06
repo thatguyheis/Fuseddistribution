@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"google business profile setup guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "google business profile setup guide",
+      "prefer": "video",
+      "updatedAt": "2026-08-06T18:43:58.098Z"
+    },
+    "1": {
+      "key": "{\"query\":\"google business profile setup guide small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google business profile setup guide small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T18:43:58.133Z"
+    },
+    "2": {
+      "key": "{\"query\":\"google business profile setup guide about being listed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "google business profile setup guide about being listed",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T18:43:58.134Z"
+    },
+    "3": {
+      "key": "{\"query\":\"google business profile setup guide listed create new\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide listed create new",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:00.295Z"
+    },
+    "4": {
+      "key": "{\"query\":\"google business profile setup guide instant verification some\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide instant verification some",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:00.878Z"
+    },
+    "5": {
+      "key": "{\"query\":\"google business profile setup guide business name use\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide business name use",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:01.515Z"
+    },
+    "6": {
+      "key": "{\"query\":\"google business profile setup guide photos add high\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide photos add high",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:02.355Z"
+    },
+    "7": {
+      "key": "{\"query\":\"google business profile setup guide post updates share\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide post updates share",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:02.997Z"
+    },
+    "8": {
+      "key": "{\"query\":\"google business profile setup guide incomplete information mentioned\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide incomplete information mentioned",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:03.875Z"
+    },
+    "9": {
+      "key": "{\"query\":\"google business profile setup guide direction requests how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide direction requests how",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:04.483Z"
+    },
+    "10": {
+      "key": "{\"query\":\"google business profile setup guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "google business profile setup guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T18:44:04.923Z"
+    }
+  }
+}

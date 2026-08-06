@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver IRA vs physical silver at home which is better",
+      "prefer": "video",
+      "updatedAt": "2026-08-06T20:05:14.620Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver IRA vs physical silver at home which is better considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T20:05:14.649Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better silver ira offers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver IRA vs physical silver at home which is better silver ira offers",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T20:05:14.650Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better 500 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better 500 to 5",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:16.034Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better physical silver sell\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better physical silver sell",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:16.955Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better silver ira liquidate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better silver ira liquidate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:17.541Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better 5 000 cost\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better 5 000 cost",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:17.999Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better open account complete\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better open account complete",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:18.739Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better 1 to 800\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better 1 to 800",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:20.066Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver IRA vs physical silver at home which is better customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "silver IRA vs physical silver at home which is better customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T20:05:20.691Z"
+    }
+  }
+}

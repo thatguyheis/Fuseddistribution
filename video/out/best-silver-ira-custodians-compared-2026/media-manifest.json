@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "best silver IRA custodians compared 2026",
+      "prefer": "video",
+      "updatedAt": "2026-08-06T19:30:10.972Z"
+    },
+    "1": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best silver IRA custodians compared 2026 considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T19:30:11.036Z"
+    },
+    "2": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 factor these fees\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best silver IRA custodians compared 2026 factor these fees",
+      "prefer": "photo",
+      "updatedAt": "2026-08-06T19:30:11.037Z"
+    },
+    "3": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 choose custodian research\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 choose custodian research",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:14.531Z"
+    },
+    "4": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 4 7 out\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 4 7 out",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:16.756Z"
+    },
+    "5": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 79 silver plus\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 79 silver plus",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:20.704Z"
+    },
+    "6": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 99 99 security\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 99 99 security",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:24.832Z"
+    },
+    "7": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 discovery ira offers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 discovery ira offers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:30.476Z"
+    },
+    "8": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 ignoring fees eat\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 ignoring fees eat",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:35.976Z"
+    },
+    "9": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 start application once\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 start application once",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:43.995Z"
+    },
+    "10": {
+      "key": "{\"query\":\"best silver IRA custodians compared 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "best silver IRA custodians compared 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-06T19:30:57.238Z"
+    }
+  }
+}
