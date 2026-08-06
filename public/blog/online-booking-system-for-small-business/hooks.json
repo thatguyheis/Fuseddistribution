@@ -1,0 +1,10 @@
+{
+  "hook": "Boost bookings by 20-30% with an online system.",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "20%",
+    "label": "increase in appointment bookings"
+  },
+  "discussion_question": "Considering switching to an online booking system? \ud83e\udd14",
+  "hashtags": "#LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign"
+}
