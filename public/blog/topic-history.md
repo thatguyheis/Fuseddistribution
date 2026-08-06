@@ -128,6 +128,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-06 | best-silver-ira-custodians-compared-2026 | General | best silver IRA custodians compared 2026 |
 | 2026-08-06 | silver-ira-vs-physical-silver-at-home-which-is-better | General | silver IRA vs physical silver at home which is better |
 | 2026-08-05 | can-you-put-physical-silver-in-an-ira | General | can you put physical silver in an IRA |
 | 2026-08-05 | self-directed-ira-approved-silver-coins-and-bars-list | General | self-directed IRA approved silver coins and bars list |
