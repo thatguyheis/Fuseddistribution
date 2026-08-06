@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "Google Business Profile views are tracked to measure profile engagement.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/blog/google-business-profile-setup-guide/",
+  "data": [
+    {
+      "label": "Profile Views",
+      "value": "Businesses that actively manage their Google Business Profile see a noticeable increase in leads.",
+      "metric": "Views",
+      "unit": "none",
+      "period": "none",
+      "evidence": "Businesses that actively manage their Google Business Profile see a noticeable increase in leads."
+    },
+    {
+      "label": "Review Response Rate",
+      "value": "A significant portion of consumers trust online reviews as much as personal recommendations.",
+      "metric": "Reviews",
+      "unit": "none",
+      "period": "none",
+      "evidence": "A significant portion of consumers trust online reviews as much as personal recommendations."
+    },
+    {
+      "label": "Hours Update Frequency",
+      "value": "Keep your hours updated, especially during holidays.",
+      "metric": "Hours",
+      "unit": "none",
+      "period": "none",
+      "evidence": "Keep your hours updated, especially during holidays."
+    },
+    {
+      "label": "Description Length",
+      "value": "Aim for around 750 characters.",
+      "metric": "Description Length",
+      "unit": "characters",
+      "period": "none",
+      "evidence": "Aim for around 750 characters."
+    }
+  ],
+  "hero_stat": {
+    "value": "Businesses that actively manage their Google Business Profile see a noticeable increase in leads.",
+    "label": "Profile Engagement"
+  },
+  "narration": "Google Business Profiles are crucial for local businesses. Regularly updating information, responding to reviews, and posting updates are key to optimizing the profile for success. Tracking metrics like views and clicks helps measure the profile's effectiveness."
+}
