@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Website Speed Impact on Search Ranking",
+  "takeaway": "Faster websites rank higher in search results, leading to more traffic and visibility.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/website-speed-and-local-business-ranking",
+  "data": [
+    {
+      "label": "Bounce Rate Decrease",
+      "value": "27%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "A study showed that mobile site speed is the single most influential ranking factor. Specifically, pages that load in 2.6 seconds or slower are 27% less likely to rank on the first page of search results."
+    },
+    {
+      "label": "Traffic Loss",
+      "value": "16%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "A report showed that for every second a page takes to load, a website loses 16% of its potential traffic."
+    }
+  ],
+  "hero_stat": {
+    "value": "27%",
+    "label": "Bounce Rate Reduction"
+  },
+  "narration": "Website speed is a critical ranking factor for local businesses. Studies consistently demonstrate a direct correlation between page load time and search visibility. Slow websites lead to decreased engagement and ultimately, lower rankings."
+}

@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-07 | website-speed-and-local-business-ranking | General | website speed and local business ranking |
 | 2026-08-06 | google-business-profile-setup-guide | General | google business profile setup guide |
 | 2026-08-04 | instagram-marketing-for-local-business | General | instagram marketing for local business |
 | 2026-08-03 | website-speed-for-local-business-why-it-matters | General | website speed for local business why it matters |
