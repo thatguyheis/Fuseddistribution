@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "what is COMEX silver and how does it affect spot price",
+      "prefer": "video",
+      "updatedAt": "2026-08-07T18:50:19.777Z"
+    },
+    "1": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price silver investing seem\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what is COMEX silver and how does it affect spot price silver investing seem",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T18:50:19.804Z"
+    },
+    "2": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price think like agreement\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "what is COMEX silver and how does it affect spot price think like agreement",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T18:50:19.806Z"
+    },
+    "3": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price rolling essentially means\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price rolling essentially means",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:21.358Z"
+    },
+    "4": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price price discovery futures\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price price discovery futures",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:21.976Z"
+    },
+    "5": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price 1 000 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price 1 000 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:28.651Z"
+    },
+    "6": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price interest rates rising\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price interest rates rising",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:29.336Z"
+    },
+    "7": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price however there several\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price however there several",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:29.958Z"
+    },
+    "8": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price ignoring futures market\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price ignoring futures market",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:30.925Z"
+    },
+    "9": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price silver precious metals\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price silver precious metals",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:32.164Z"
+    },
+    "10": {
+      "key": "{\"query\":\"what is COMEX silver and how does it affect spot price customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "what is COMEX silver and how does it affect spot price customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:50:33.114Z"
+    }
+  }
+}

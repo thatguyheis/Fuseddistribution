@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"can you put physical silver in an IRA\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "can you put physical silver in an IRA",
+      "prefer": "video",
+      "updatedAt": "2026-08-07T19:52:43.823Z"
+    },
+    "1": {
+      "key": "{\"query\":\"can you put physical silver in an IRA yes absolutely put\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "can you put physical silver in an IRA yes absolutely put",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T19:52:43.853Z"
+    },
+    "2": {
+      "key": "{\"query\":\"can you put physical silver in an IRA traditional ira contributions\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "can you put physical silver in an IRA traditional ira contributions",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T19:52:43.853Z"
+    },
+    "3": {
+      "key": "{\"query\":\"can you put physical silver in an IRA sep ira suitable\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA sep ira suitable",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:45.543Z"
+    },
+    "4": {
+      "key": "{\"query\":\"can you put physical silver in an IRA 999 bars silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA 999 bars silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:46.633Z"
+    },
+    "5": {
+      "key": "{\"query\":\"can you put physical silver in an IRA here s detailed\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA here s detailed",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:47.435Z"
+    },
+    "6": {
+      "key": "{\"query\":\"can you put physical silver in an IRA 999 silver fine\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA 999 silver fine",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:48.458Z"
+    },
+    "7": {
+      "key": "{\"query\":\"can you put physical silver in an IRA purchasing non approved\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA purchasing non approved",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:48.995Z"
+    },
+    "8": {
+      "key": "{\"query\":\"can you put physical silver in an IRA both silver gold\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA both silver gold",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:49.668Z"
+    },
+    "9": {
+      "key": "{\"query\":\"can you put physical silver in an IRA inflation economic uncertainty\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA inflation economic uncertainty",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:50.303Z"
+    },
+    "10": {
+      "key": "{\"query\":\"can you put physical silver in an IRA customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "can you put physical silver in an IRA customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:52:51.129Z"
+    }
+  }
+}

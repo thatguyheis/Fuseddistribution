@@ -1,0 +1,53 @@
+{
+  "slug": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+  "renderedAt": "2026-08-07T18:58:06.595Z",
+  "hookType": "stat",
+  "segmentCount": 11,
+  "scriptDuration": 205.465,
+  "renderedDuration": 200.085333,
+  "scriptHash": "227f6de5403436f4050ec52770136a3c276bdb9e708f1f0928c7bb450f6d99cd",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.56,
+      "1": 19.5,
+      "2": 16.62,
+      "3": 24.12,
+      "4": 21.06,
+      "5": 19.66,
+      "6": 21.34,
+      "7": 22.5,
+      "8": 22.26,
+      "9": 21.44,
+      "10": 5.44
+    },
+    "totalNarrationSeconds": 197.5
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
+}

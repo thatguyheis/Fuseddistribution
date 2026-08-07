@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"website speed and local business ranking\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "website speed and local business ranking",
+      "prefer": "video",
+      "updatedAt": "2026-08-07T18:20:16.080Z"
+    },
+    "1": {
+      "key": "{\"query\":\"website speed and local business ranking website speed isn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "website speed and local business ranking website speed isn",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T18:20:16.117Z"
+    },
+    "2": {
+      "key": "{\"query\":\"website speed and local business ranking slow website leads\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "website speed and local business ranking slow website leads",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T18:20:16.118Z"
+    },
+    "3": {
+      "key": "{\"query\":\"website speed and local business ranking gtmetrix tool offers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking gtmetrix tool offers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:18.655Z"
+    },
+    "4": {
+      "key": "{\"query\":\"website speed and local business ranking 80 below generally\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking 80 below generally",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:19.276Z"
+    },
+    "5": {
+      "key": "{\"query\":\"website speed and local business ranking third party scripts\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking third party scripts",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:19.951Z"
+    },
+    "6": {
+      "key": "{\"query\":\"website speed and local business ranking 16 potential traffic\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking 16 potential traffic",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:20.812Z"
+    },
+    "7": {
+      "key": "{\"query\":\"website speed and local business ranking use content delivery\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking use content delivery",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:21.696Z"
+    },
+    "8": {
+      "key": "{\"query\":\"website speed and local business ranking here how reduce\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking here how reduce",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:22.290Z"
+    },
+    "9": {
+      "key": "{\"query\":\"website speed and local business ranking make sure website\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking make sure website",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:22.839Z"
+    },
+    "10": {
+      "key": "{\"query\":\"website speed and local business ranking fused distribution passionate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking fused distribution passionate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:23.621Z"
+    },
+    "11": {
+      "key": "{\"query\":\"website speed and local business ranking customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "website speed and local business ranking customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T18:20:24.298Z"
+    }
+  }
+}

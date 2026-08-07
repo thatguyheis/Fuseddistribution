@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"word of mouth marketing strategy\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy",
+      "prefer": "video",
+      "updatedAt": "2026-08-07T19:20:11.995Z"
+    },
+    "1": {
+      "key": "{\"query\":\"word of mouth marketing strategy ever wondered how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy ever wondered how",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T19:20:12.019Z"
+    },
+    "2": {
+      "key": "{\"query\":\"word of mouth marketing strategy 92 consumers trust\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "word of mouth marketing strategy 92 consumers trust",
+      "prefer": "photo",
+      "updatedAt": "2026-08-07T19:20:12.021Z"
+    },
+    "3": {
+      "key": "{\"query\":\"word of mouth marketing strategy 92 consumers trust\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy 92 consumers trust",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:13.477Z"
+    },
+    "4": {
+      "key": "{\"query\":\"word of mouth marketing strategy 92 consumers trust\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy 92 consumers trust",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:14.537Z"
+    },
+    "5": {
+      "key": "{\"query\":\"word of mouth marketing strategy simple would recommend\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy simple would recommend",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:15.303Z"
+    },
+    "6": {
+      "key": "{\"query\":\"word of mouth marketing strategy 92 consumers trust\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy 92 consumers trust",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:15.859Z"
+    },
+    "7": {
+      "key": "{\"query\":\"word of mouth marketing strategy web design seo\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy web design seo",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:16.541Z"
+    },
+    "8": {
+      "key": "{\"query\":\"word of mouth marketing strategy start monitoring online\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy start monitoring online",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:17.911Z"
+    },
+    "9": {
+      "key": "{\"query\":\"word of mouth marketing strategy amplify reach consider\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy amplify reach consider",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:18.524Z"
+    },
+    "10": {
+      "key": "{\"query\":\"word of mouth marketing strategy customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pixabay-photo",
+      "query": "word of mouth marketing strategy customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-07T19:20:19.560Z"
+    }
+  }
+}

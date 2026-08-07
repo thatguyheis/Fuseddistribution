@@ -1,0 +1,291 @@
+{
+  "0": [
+    {
+      "text": "Slow websites lose 27 percent of potential traffic , act now!",
+      "startSec": 0,
+      "endSec": 4.32
+    }
+  ],
+  "1": [
+    {
+      "text": "Your website’s speed isn’t just about how quickly you can load a page.",
+      "startSec": 0,
+      "endSec": 3.64
+    },
+    {
+      "text": "It’s a critical factor in how well local businesses are seen by customers and Google.",
+      "startSec": 3.49,
+      "endSec": 7.910000000000001
+    },
+    {
+      "text": "Slow websites hurt rankings, drive away visitors, and ultimately impact your bottom line.",
+      "startSec": 7.910000000000001,
+      "endSec": 12.538
+    },
+    {
+      "text": "At Fused Distribution, we help local businesses thrive online",
+      "startSec": 12.538,
+      "endSec": 15.71
+    },
+    {
+      "text": "and we’ve seen firsthand how dramatically website speed can affect success.",
+      "startSec": 15.71,
+      "endSec": 19.76
+    }
+  ],
+  "2": [
+    {
+      "text": "A slow website leads to high bounce rates - people leaving your site quickly - and lower time on page",
+      "startSec": 0,
+      "endSec": 5.164591029023746
+    },
+    {
+      "text": "signaling to Google that your site isn’t providing a good experience.",
+      "startSec": 5.014591029023745,
+      "endSec": 8.542875989445909
+    },
+    {
+      "text": "This, in turn, negatively impacts your search ranking",
+      "startSec": 8.542875989445909,
+      "endSec": 11.25300791556728
+    },
+    {
+      "text": "making it harder for potential customers to find you.",
+      "startSec": 11.25300791556728,
+      "endSec": 13.963139841688653
+    },
+    {
+      "text": "Conversely, a fast website keeps visitors engaged, signals quality to Google",
+      "startSec": 13.963139841688653,
+      "endSec": 17.849366754617414
+    },
+    {
+      "text": "and boosts your visibility.",
+      "startSec": 17.849366754617414,
+      "endSec": 19.38
+    }
+  ],
+  "3": [
+    {
+      "text": "GTmetrix: This tool offers a more in-depth analysis",
+      "startSec": 0,
+      "endSec": 2.578073394495413
+    },
+    {
+      "text": "including waterfall charts that show exactly how long each element on your page takes to load.",
+      "startSec": 2.428073394495413,
+      "endSec": 7.179816513761468
+    },
+    {
+      "text": "Pingdom Website Speed Test: Another popular option that provides a clear overview of your website’s performance.",
+      "startSec": 7.179816513761468,
+      "endSec": 12.841467889908257
+    },
+    {
+      "text": "Run each test and pay attention to the overall score and the specific recommendations.",
+      "startSec": 12.841467889908257,
+      "endSec": 17.18880733944954
+    },
+    {
+      "text": "Don’t just look at the score; read the detailed analysis to understand why your site is slow.",
+      "startSec": 17.18880733944954,
+      "endSec": 22.04
+    }
+  ],
+  "4": [
+    {
+      "text": "A score of 80 or below is generally considered poor, while 90 or above is excellent.",
+      "startSec": 0,
+      "endSec": 4.711508379888268
+    },
+    {
+      "text": "Several elements contribute to your website’s speed.",
+      "startSec": 4.561508379888267,
+      "endSec": 7.478156424581005
+    },
+    {
+      "text": "Let’s look at the key ones: Image Size: Large, unoptimized images are a major speed killer.",
+      "startSec": 7.478156424581005,
+      "endSec": 12.582290502793295
+    },
+    {
+      "text": "Every image needs to be compressed without sacrificing quality.",
+      "startSec": 12.582290502793295,
+      "endSec": 16.115921787709496
+    },
+    {
+      "text": "Aim for web-optimized images - smaller file sizes that load quickly.",
+      "startSec": 16.115921787709496,
+      "endSec": 20.08
+    }
+  ],
+  "5": [
+    {
+      "text": "Third-Party Scripts: Plugins, analytics trackers",
+      "startSec": 0,
+      "endSec": 2.4125
+    },
+    {
+      "text": "and social media buttons all add to your website’s load time.",
+      "startSec": 2.2625,
+      "endSec": 5.328385416666666
+    },
+    {
+      "text": "Google’s algorithm is constantly evolving",
+      "startSec": 5.328385416666666,
+      "endSec": 7.3890625
+    },
+    {
+      "text": "but one thing remains consistent: speed is a ranking factor.",
+      "startSec": 7.3890625,
+      "endSec": 10.4046875
+    },
+    {
+      "text": "Research consistently shows a direct correlation between website speed and search ranking.",
+      "startSec": 10.4046875,
+      "endSec": 14.928125
+    },
+    {
+      "text": "A study showed that mobile site speed is the single most influential ranking factor.",
+      "startSec": 14.928125,
+      "endSec": 19.3
+    }
+  ],
+  "6": [
+    {
+      "text": "Finally, a report showed that for every second a page takes to load",
+      "startSec": 0,
+      "endSec": 3.656765375854214
+    },
+    {
+      "text": "a website loses 16 percent of its potential traffic.",
+      "startSec": 3.506765375854214,
+      "endSec": 6.34485193621868
+    },
+    {
+      "text": "Let’s tackle images first - they’re often the biggest culprit.",
+      "startSec": 6.34485193621868,
+      "endSec": 9.728724373576311
+    },
+    {
+      "text": "Here’s what you can do: Choose the Right Format: Use WebP format whenever possible.",
+      "startSec": 9.728724373576311,
+      "endSec": 14.258747152619591
+    },
+    {
+      "text": "It offers superior compression and quality compared to JPEG and PNG.",
+      "startSec": 14.258747152619591,
+      "endSec": 17.970091116173123
+    },
+    {
+      "text": "Compress Images: Use tools like TinyPNG or ImageOptim to reduce file sizes without noticeable quality loss.",
+      "startSec": 17.970091116173123,
+      "endSec": 23.96
+    }
+  ],
+  "7": [
+    {
+      "text": "Use a Content Delivery Network (CDN): A CDN distributes your website’s files across multiple servers around the world",
+      "startSec": 0,
+      "endSec": 6.167530562347188
+    },
+    {
+      "text": "so users can access them from the nearest server.",
+      "startSec": 6.017530562347187,
+      "endSec": 8.600513447432762
+    },
+    {
+      "text": "This dramatically reduces loading times for users in different locations.",
+      "startSec": 8.600513447432762,
+      "endSec": 12.448630806845966
+    },
+    {
+      "text": "Upgrade Your Hosting Plan: If you’re on a shared hosting plan",
+      "startSec": 12.448630806845966,
+      "endSec": 15.664180929095354
+    },
+    {
+      "text": "consider upgrading to a VPS or dedicated server.",
+      "startSec": 15.664180929095354,
+      "endSec": 18.19444987775061
+    },
+    {
+      "text": "Third-party scripts can significantly slow down your website.",
+      "startSec": 18.19444987775061,
+      "endSec": 21.56
+    }
+  ],
+  "8": [
+    {
+      "text": "Here’s how to reduce their impact: Remove Unnecessary Plugins: Audit your plugins and remove any that you don’t need.",
+      "startSec": 0,
+      "endSec": 7.596320474777448
+    },
+    {
+      "text": "Defer Loading of Non-Critical Scripts: Defer loading of scripts that aren’t essential for the initial page load.",
+      "startSec": 7.446320474777448,
+      "endSec": 14.7180118694362
+    },
+    {
+      "text": "Host Scripts Locally: If possible",
+      "startSec": 14.7180118694362,
+      "endSec": 16.860563798219584
+    },
+    {
+      "text": "host scripts on your own server instead of relying on third-party services.",
+      "startSec": 16.860563798219584,
+      "endSec": 21.88
+    }
+  ],
+  "9": [
+    {
+      "text": "Make sure your website is optimized for mobile speed.",
+      "startSec": 0,
+      "endSec": 2.8048793565683647
+    },
+    {
+      "text": "Not Regularly Monitoring Your Speed: Website speed isn’t a “set it and forget it” thing.",
+      "startSec": 2.654879356568365,
+      "endSec": 7.312037533512065
+    },
+    {
+      "text": "Regularly monitor your website’s speed and make adjustments as needed.",
+      "startSec": 7.312037533512065,
+      "endSec": 11.016595174262735
+    },
+    {
+      "text": "Here’s a three-step plan to improve your website speed: 1.",
+      "startSec": 11.016595174262735,
+      "endSec": 14.086085790884718
+    },
+    {
+      "text": "Test Your Current Speed: Use Google PageSpeed Insights or GTmetrix to assess your current website speed.",
+      "startSec": 14.086085790884718,
+      "endSec": 19.74
+    }
+  ],
+  "10": [
+    {
+      "text": "At Fused Distribution, we’re passionate about helping local businesses succeed online.",
+      "startSec": 0,
+      "endSec": 4.39194968553459
+    },
+    {
+      "text": "Contact us today to learn more about our website design and SEO services.",
+      "startSec": 4.24194968553459,
+      "endSec": 8.12
+    }
+  ],
+  "11": [
+    {
+      "text": "So, how much do you think website speed impacts your?",
+      "startSec": 0,
+      "endSec": 2.963440860215054
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 2.8134408602150542,
+      "endSec": 5.2
+    }
+  ]
+}

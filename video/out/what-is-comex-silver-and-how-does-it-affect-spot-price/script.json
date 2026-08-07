@@ -1,0 +1,85 @@
+{
+  "slug": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+  "title": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+  "totalDuration": 205.465,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4.36,
+      "text": "Futures markets control 60% of the silver market.",
+      "narration": "Futures markets control 60 percent of the silver market."
+    },
+    {
+      "type": "overlay",
+      "startSec": 4.36,
+      "endSec": 24.593,
+      "text": "SILVER INVESTING SEEM COMPLEX",
+      "narration": "Silver investing can seem complex, but understanding the fundamentals is key to making smart decisions. One of the most important concepts to grasp is COMEX silver. We stock a wide variety of silver bullion, coins, and bars to suit every investor’s needs. If you’re wondering how COMEX silver impacts the overall price of silver, you’ve come to the right place."
+    },
+    {
+      "type": "overlay",
+      "startSec": 24.593,
+      "endSec": 42.013,
+      "text": "THINK LIKE AGREEMENT BUY",
+      "narration": "Think of it like an agreement to buy or sell a specific amount of silver at a predetermined price on a future date. It’s a crucial component of the silver market, acting as a benchmark for pricing and influencing the spot price. Unlike physical silver - the actual bars, coins, or rounds - COMEX silver is a financial instrument."
+    },
+    {
+      "type": "overlay",
+      "startSec": 42.013,
+      "endSec": 66.833,
+      "text": "ROLLING ESSENTIALLY MEANS SELLING",
+      "narration": "Rolling essentially means selling your current contract and simultaneously buying a contract for the following month. This process continues until the contract matures. The price of the COMEX silver futures contract fluctuates based on supply and demand. Factors like economic conditions, industrial demand, jewelry demand, and investment sentiment all play a role. A key element driving price movement is the contango and backwardation curves."
+    },
+    {
+      "type": "overlay",
+      "startSec": 66.833,
+      "endSec": 88.626,
+      "text": "PRICE DISCOVERY FUTURES MARKET",
+      "narration": "Price Discovery: The futures market provides a platform for buyers and sellers to express their expectations about the future price of silver. This process of price discovery helps to establish a fair market value. Hedging: Producers and consumers of silver use futures contracts to hedge against price fluctuations. For example, a silver mine might use a futures contract to lock in a price for its future production."
+    },
+    {
+      "type": "stat",
+      "startSec": 88.626,
+      "endSec": 109.019,
+      "text": "1,000 SILVER TROY OUNCES CONTRACT",
+      "narration": "Let’s look at the specifics of the COMEX silver futures contract: Contract Size: 1,000 troy ounces of silver per contract. This means that the price can change in increments of $0.01. Trading Hours: COMEX silver futures are traded Monday through Friday, 9:30 AM to 4:00 PM Eastern Time. Contract Months: Contracts are available for delivery in March, June, September, and December."
+    },
+    {
+      "type": "overlay",
+      "startSec": 109.019,
+      "endSec": 131.159,
+      "text": "INTEREST RATES RISING MAKE",
+      "narration": "Interest Rates: Rising interest rates can make holding silver less attractive, as investors may prefer interest-bearing assets. Inflation: Silver is often considered a hedge against inflation. When inflation is high, investors may flock to silver as a store of value, driving up prices. Geopolitical Events: Political instability and global conflicts can increase demand for safe-haven assets like silver."
+    },
+    {
+      "type": "overlay",
+      "startSec": 131.159,
+      "endSec": 154.359,
+      "text": "HOWEVER THERE SEVERAL WAYS",
+      "narration": "However, there are several ways to indirectly invest in COMEX silver: Silver ETFs: Exchange-Traded Funds (ETFs) that track the price of silver, such as SLV (iShares Silver Trust), provide exposure to the silver market. These are a relatively simple and accessible way to gain exposure. Silver Mining Stocks: Investing in companies that mine silver can provide exposure to the price of silver."
+    },
+    {
+      "type": "overlay",
+      "startSec": 154.359,
+      "endSec": 177.352,
+      "text": "IGNORING FUTURES MARKET MANY",
+      "narration": "Ignoring the Futures Market: Many investors focus solely on the spot price of silver and ignore the influence of the COMEX futures market. This can lead to misinterpretations of market trends. Overreacting to Short-Term Price Fluctuations: The silver market can be volatile. Avoid making impulsive decisions based on short-term price swings. Failing to Diversify: Don’t put all your eggs in one basket."
+    },
+    {
+      "type": "overlay",
+      "startSec": 177.352,
+      "endSec": 199.525,
+      "text": "SILVER PRECIOUS METALS INVESTING",
+      "narration": "At Silver and Precious Metals Investing, we’re committed to providing you with the resources and support you need to navigate the world of silver investing. We recommend starting with a small investment and gradually increasing your position as you gain more experience and confidence. Don't hesitate to reach out if you have any questions - we’re here to help you succeed. Let's discuss how we can help you build your silver portfolio today."
+    },
+    {
+      "type": "question",
+      "startSec": 199.525,
+      "endSec": 205.465,
+      "text": "Considering all this, what’s your biggest lingering question about COMEX?",
+      "narration": "Considering all this, what’s your biggest lingering question about COMEX? Follow for more silver news.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}
