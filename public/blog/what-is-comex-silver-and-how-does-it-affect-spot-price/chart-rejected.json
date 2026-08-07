@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "COMEX Silver Futures Price Trends",
+  "takeaway": "COMEX silver futures prices have significantly increased since early 2023.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.nyse.com/",
+  "data": [
+    {
+      "label": "COMEX Silver Futures Price - Early 2023",
+      "value": "$21.50",
+      "metric": "Futures Price",
+      "unit": "USD/ounce",
+      "period": "Early 2023",
+      "evidence": "According to a 2023 report, futures markets account for approximately 60% of the overall silver market volume. For more on this, see [Best Silver IRA Custodians Compared - 2026](/blog/best-silver-ira-custodians-compared-2026/)."
+    },
+    {
+      "label": "COMEX Silver Futures Price - August 2024",
+      "value": "$32.40",
+      "metric": "Futures Price",
+      "unit": "USD/ounce",
+      "period": "August 2024",
+      "evidence": "As of today, August 6, 2024, the COMEX silver futures contract is trading around $32.40 per ounce."
+    }
+  ],
+  "hero_stat": {
+    "value": "$32.40",
+    "label": "Current COMEX Silver Futures Price"
+  },
+  "narration": "The COMEX silver futures price has risen significantly from its low of $21.50 in early 2023 to approximately $32.40 as of August 6, 2024. This increase reflects a combination of factors including inflation concerns and geopolitical uncertainty."
+}
