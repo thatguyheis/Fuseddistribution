@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Price Comparison: Spot vs. Retail (August 7, 2026)",
+  "takeaway": "The difference between spot and retail silver prices can be significant.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.fuseddistribution.com",
+  "data": [
+    {
+      "label": "Spot Price (August 7, 2026)",
+      "value": "23.85",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "August 7, 2026",
+      "evidence": "As of August 7, 2026, the spot price is $23.85 per ounce."
+    },
+    {
+      "label": "Retail Price Range (August 7, 2026)",
+      "value": "24 - 26",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "August 7, 2026",
+      "evidence": "Retail prices typically range from $24 to $26 per ounce, depending on the dealer and the form of silver (coins, bars, etc.)."
+    }
+  ],
+  "hero_stat": {
+    "value": "23.85",
+    "label": "Spot Price (August 7, 2026)"
+  },
+  "narration": "The article highlights a significant difference between the spot price of silver \u2013 currently $23.85 per ounce \u2013 and the retail price, which can range from $24 to $26 per ounce. This difference reflects the costs associated with distribution, fabrication, and dealer profit margins."
+}
