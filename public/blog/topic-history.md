@@ -130,6 +130,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-08 | paper-silver-vs-physical-silver-the-key-difference | General | paper silver vs physical silver the key difference |
 | 2026-08-07 | what-is-comex-silver-and-how-does-it-affect-spot-price | General | what is COMEX silver and how does it affect spot price |
 | 2026-08-06 | best-silver-ira-custodians-compared-2026 | General | best silver IRA custodians compared 2026 |
 | 2026-08-06 | silver-ira-vs-physical-silver-at-home-which-is-better | General | silver IRA vs physical silver at home which is better |

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Price Comparison: Paper vs. Physical",
+  "takeaway": "Physical silver offers greater stability and direct ownership compared to paper silver, which can be more volatile and involve fees.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/silver",
+  "data": [
+    {
+      "label": "Spot Price of Silver (October 26, 2023)",
+      "value": "23.77",
+      "metric": "Price per ounce",
+      "unit": "USD/oz",
+      "period": "October 26, 2023",
+      "evidence": "As of October 26, 2023, the spot price of silver was $23.77 per ounce."
+    },
+    {
+      "label": "ETF Spread (Range)",
+      "value": "0 to 0",
+      "metric": "Spread",
+      "unit": "USD/oz",
+      "period": "Various",
+      "evidence": "According to a recent analysis, ETF spreads can range from $0 to $0 per ounce, representing a significant cost compared to buying physical bullion."
+    },
+    {
+      "label": "Futures Price Volatility (Average Daily)",
+      "value": "3.5%",
+      "metric": "Volatility",
+      "unit": "%",
+      "period": "November 2023",
+      "evidence": "As of November 2023, the average daily price fluctuation for silver futures contracts was approximately 3.5%."
+    },
+    {
+      "label": "Physical Silver Price Volatility (Average Daily)",
+      "value": "1.2%",
+      "metric": "Volatility",
+      "unit": "%",
+      "period": "November 2023",
+      "evidence": "Compared to a 1.2% average daily fluctuation for physical silver bullion."
+    }
+  ],
+  "hero_stat": {
+    "value": "23.77",
+    "label": "Spot Price of Silver (October 26, 2023)"
+  },
+  "narration": "The article highlights a significant price difference between paper silver and physical silver. The spot price of silver on October 26, 2023, was $23.77 per ounce. However, ETFs trade on the stock market, incurring spreads that can be substantial compared to the direct cost of physical bullion.  Furthermore, the article notes that physical silver exhibits lower price volatility than silver futures."
+}
