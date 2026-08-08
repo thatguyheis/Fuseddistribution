@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "paper silver vs physical silver the key difference",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:31:12.046Z"
+    },
+    "1": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "paper silver vs physical silver the key difference considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-08T19:31:12.137Z"
+    },
+    "2": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference understanding difference essential\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "paper silver vs physical silver the key difference understanding difference essential",
+      "prefer": "photo",
+      "updatedAt": "2026-08-08T19:31:12.137Z"
+    },
+    "3": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference futures trading highly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "paper silver vs physical silver the key difference futures trading highly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:13.799Z"
+    },
+    "4": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference offers several advantages\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference offers several advantages",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:14.473Z"
+    },
+    "5": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference 0 to 0\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference 0 to 0",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:16.050Z"
+    },
+    "6": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference 3 5 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference 3 5 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:16.529Z"
+    },
+    "7": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference determining long term\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference determining long term",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:17.376Z"
+    },
+    "8": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference fused distribution recommend\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference fused distribution recommend",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:18.178Z"
+    },
+    "9": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference also rising inflation\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference also rising inflation",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:18.724Z"
+    },
+    "10": {
+      "key": "{\"query\":\"paper silver vs physical silver the key difference customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "paper silver vs physical silver the key difference customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T19:31:19.657Z"
+    }
+  }
+}

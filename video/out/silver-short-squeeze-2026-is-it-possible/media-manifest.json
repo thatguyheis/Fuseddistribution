@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver short squeeze 2026 is it possible",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T18:33:52.625Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible wondering silver short\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver short squeeze 2026 is it possible wondering silver short",
+      "prefer": "photo",
+      "updatedAt": "2026-08-08T18:33:52.682Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible shorting means borrowing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver short squeeze 2026 is it possible shorting means borrowing",
+      "prefer": "photo",
+      "updatedAt": "2026-08-08T18:33:52.683Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible 23 85 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver short squeeze 2026 is it possible 23 85 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:54.080Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible 3 7 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible 3 7 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:54.712Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible difficult quantify exact\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible difficult quantify exact",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:55.626Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible understand risk tolerance\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible understand risk tolerance",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:56.414Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible owning physical silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible owning physical silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:57.083Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible combination factors including\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible combination factors including",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:57.627Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver short squeeze 2026 is it possible customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "silver short squeeze 2026 is it possible customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-08T18:33:58.141Z"
+    }
+  }
+}

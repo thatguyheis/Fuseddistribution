@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.565Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 28 because the\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 28 because the",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.583Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 28 the same\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 28 the same",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.584Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 32 bracket owes\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 32 bracket owes",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.584Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 1099 b dealer\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 1099 b dealer",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.584Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 10 000 physical\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 10 000 physical",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.585Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 1099 b threshold\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 1099 b threshold",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.585Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences 28 rate and\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences 28 rate and",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.585Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences physical silver vs\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "silver ETF vs physical silver tax differences physical silver vs",
+      "prefer": "video",
+      "updatedAt": "2026-08-08T19:42:16.585Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver ETF vs physical silver tax differences customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "silver ETF vs physical silver tax differences customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-08-08T19:42:16.585Z"
+    }
+  }
+}
