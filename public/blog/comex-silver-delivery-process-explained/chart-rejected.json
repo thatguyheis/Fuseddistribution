@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Comex Delivery Fees",
+  "takeaway": "Comex delivery fees range from $15 to $50 per 1,000 ounces.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Delivery Fee Range",
+      "value": "$15 - $50",
+      "metric": "Fee",
+      "unit": "per 1,000 ounces",
+      "period": "Current",
+      "evidence": "Currently, Comex delivery fees typically range from $15 to $30 per 1,000 ounces."
+    }
+  ],
+  "hero_stat": {
+    "value": "$15 - $50",
+    "label": "Comex Delivery Fees"
+  },
+  "narration": "Comex delivery fees vary based on quantity and shipping distance. As of now, the typical range is between $15 and $50 for every 1,000 ounces of silver delivered."
+}

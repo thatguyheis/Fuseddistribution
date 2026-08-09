@@ -130,6 +130,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-09 | comex-silver-delivery-process-explained | General | COMEX silver delivery process explained |
 | 2026-08-08 | silver-short-squeeze-2026-is-it-possible | General | silver short squeeze 2026 is it possible |
 | 2026-08-08 | paper-silver-vs-physical-silver-the-key-difference | General | paper silver vs physical silver the key difference |
 | 2026-08-07 | what-is-comex-silver-and-how-does-it-affect-spot-price | General | what is COMEX silver and how does it affect spot price |

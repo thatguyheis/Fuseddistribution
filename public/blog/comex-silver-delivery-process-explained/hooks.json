@@ -1,0 +1,10 @@
+{
+  "hook": "Comex delivery fees can cost $15-$30 *per thousand* ounces.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$15",
+    "label": "to per ounces Comex"
+  },
+  "discussion_question": "So, what\u2019s the most confusing part of this delivery process for you?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
