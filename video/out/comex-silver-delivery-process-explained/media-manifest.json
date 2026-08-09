@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"COMEX silver delivery process explained\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "COMEX silver delivery process explained",
+      "prefer": "video",
+      "updatedAt": "2026-08-09T18:51:31.880Z"
+    },
+    "1": {
+      "key": "{\"query\":\"COMEX silver delivery process explained ever wondered how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "COMEX silver delivery process explained ever wondered how",
+      "prefer": "photo",
+      "updatedAt": "2026-08-09T18:51:32.025Z"
+    },
+    "2": {
+      "key": "{\"query\":\"COMEX silver delivery process explained 30 to 60\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "COMEX silver delivery process explained 30 to 60",
+      "prefer": "photo",
+      "updatedAt": "2026-08-09T18:51:32.026Z"
+    },
+    "3": {
+      "key": "{\"query\":\"COMEX silver delivery process explained essentially comex silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "COMEX silver delivery process explained essentially comex silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:33.912Z"
+    },
+    "4": {
+      "key": "{\"query\":\"COMEX silver delivery process explained secure reliable method\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained secure reliable method",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:35.362Z"
+    },
+    "5": {
+      "key": "{\"query\":\"COMEX silver delivery process explained these warehouses crucial\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained these warehouses crucial",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:35.953Z"
+    },
+    "6": {
+      "key": "{\"query\":\"COMEX silver delivery process explained 999 silver bars\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained 999 silver bars",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:36.725Z"
+    },
+    "7": {
+      "key": "{\"query\":\"COMEX silver delivery process explained surprisingly straightforward process\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained surprisingly straightforward process",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:37.262Z"
+    },
+    "8": {
+      "key": "{\"query\":\"COMEX silver delivery process explained 1 35 troy\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained 1 35 troy",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:39.065Z"
+    },
+    "9": {
+      "key": "{\"query\":\"COMEX silver delivery process explained therefore also help\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained therefore also help",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:39.663Z"
+    },
+    "10": {
+      "key": "{\"query\":\"COMEX silver delivery process explained customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "COMEX silver delivery process explained customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:51:40.537Z"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to rank higher on google maps\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to rank higher on google maps",
+      "prefer": "video",
+      "updatedAt": "2026-08-09T18:22:53.197Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to rank higher on google maps small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to rank higher on google maps small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-09T18:22:53.734Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to rank higher on google maps someone searches pizza\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to rank higher on google maps someone searches pizza",
+      "prefer": "photo",
+      "updatedAt": "2026-08-09T18:22:53.734Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to rank higher on google maps verification typically involves\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to rank higher on google maps verification typically involves",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:56.012Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to rank higher on google maps category choose most\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps category choose most",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:56.946Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to rank higher on google maps 67 views gbp\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps 67 views gbp",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:57.543Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to rank higher on google maps 50 reviews likely\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps 50 reviews likely",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:58.109Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to rank higher on google maps acknowledge positive reviews\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps acknowledge positive reviews",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:58.706Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to rank higher on google maps help identify areas\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps help identify areas",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:22:59.701Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to rank higher on google maps future google likely\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps future google likely",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:23:00.271Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to rank higher on google maps customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "how to rank higher on google maps customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-09T18:23:00.704Z"
+    }
+  }
+}
