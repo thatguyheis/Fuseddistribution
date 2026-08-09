@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Maps Usage",
+  "takeaway": "88% of people use Google Maps to find local businesses.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Google Maps Usage",
+      "value": "88%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "2024",
+      "evidence": "According to a 2024 study, 88% of people use Google Maps to find local businesses, highlighting the critical importance of optimizing your presence."
+    }
+  ],
+  "hero_stat": {
+    "value": "88%",
+    "label": "Google Maps Usage"
+  },
+  "narration": "Google Maps is a powerful tool for local businesses. A recent study revealed that a significant majority of consumers \u2013 88% \u2013 utilize Google Maps to discover nearby businesses. This underscores the crucial need for businesses to optimize their online presence within Google Maps to capture a larger share of local search traffic."
+}
