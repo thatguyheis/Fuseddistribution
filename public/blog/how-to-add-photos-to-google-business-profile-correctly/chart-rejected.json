@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Business Profile Photo Click-Through Rate",
+  "takeaway": "Businesses with photos receive approximately 40% more clicks from Google Maps searches.",
+  "source": "Research",
+  "source_url": "https://www.google.com/business/help/articles/business-profile-photo-performance?hl=en",
+  "data": [
+    {
+      "label": "Businesses with Photos",
+      "value": "40%",
+      "metric": "Click-Through Rate",
+      "unit": "%",
+      "period": "Ongoing",
+      "evidence": "A study has shown that businesses with photos receive approximately 40% more clicks from Google Maps searches."
+    }
+  ],
+  "hero_stat": {
+    "value": "40",
+    "label": "Click-Through Rate Increase"
+  },
+  "narration": "Google prioritizes businesses with complete and engaging profiles, and a profile brimming with relevant photos signals to the search engine that you\u2019re an active, trustworthy, and legitimate business. This visual strategy directly impacts your online performance, boosting your ranking and driving more customers."
+}
