@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "APMEX Silver Bar Premiums",
+  "takeaway": "APMEX\u2019s average premium on 1kg silver bars is 2.75%.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.apmex.com/",
+  "data": [
+    {
+      "label": "APMEX Silver Bar Premium",
+      "value": "2.75%",
+      "metric": "premium",
+      "unit": "%",
+      "period": "as of today, August 9, 2026",
+      "evidence": "As of today, August 9, 2026, the average premium for silver bullion bars (1 kg) is 2.75%. This means you\u2019ll pay approximately $32.25 per ounce above the spot price."
+    }
+  ],
+  "hero_stat": {
+    "value": "2.75%",
+    "label": "Average Premium on 1kg Silver Bars"
+  },
+  "narration": "APMEX operates on a markup system, adding a premium to the spot price of metals. As of August 9, 2026, their average premium on 1kg silver bars is 2.75%. This premium covers operating costs and profit margins, and it fluctuates with market conditions."
+}
