@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "APMEX review 2026 premiums selection and service",
+      "prefer": "video",
+      "updatedAt": "2026-08-10T19:03:59.693Z"
+    },
+    "1": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "APMEX review 2026 premiums selection and service considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-10T19:03:59.721Z"
+    },
+    "2": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service built reputation competitive\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "APMEX review 2026 premiums selection and service built reputation competitive",
+      "prefer": "photo",
+      "updatedAt": "2026-08-10T19:03:59.721Z"
+    },
+    "3": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service create account visit\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "APMEX review 2026 premiums selection and service create account visit",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:00.946Z"
+    },
+    "4": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service let break down\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service let break down",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:02.032Z"
+    },
+    "5": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service checking shipping costs\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service checking shipping costs",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:02.632Z"
+    },
+    "6": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service 30 days receiving\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service 30 days receiving",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:03.162Z"
+    },
+    "7": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service 2 75 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service 2 75 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:03.597Z"
+    },
+    "8": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service supply chain issues\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service supply chain issues",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:04.197Z"
+    },
+    "9": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service today august encourage\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service today august encourage",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:04.854Z"
+    },
+    "10": {
+      "key": "{\"query\":\"APMEX review 2026 premiums selection and service customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "APMEX review 2026 premiums selection and service customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:04:05.276Z"
+    }
+  }
+}

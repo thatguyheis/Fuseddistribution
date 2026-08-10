@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "why COMEX price and physical silver price diverge",
+      "prefer": "video",
+      "updatedAt": "2026-08-10T19:37:33.703Z"
+    },
+    "1": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge understanding difference between\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "why COMEX price and physical silver price diverge understanding difference between",
+      "prefer": "photo",
+      "updatedAt": "2026-08-10T19:37:33.863Z"
+    },
+    "2": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge physical silver other\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "why COMEX price and physical silver price diverge physical silver other",
+      "prefer": "photo",
+      "updatedAt": "2026-08-10T19:37:33.864Z"
+    },
+    "3": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge futures trading involves\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "why COMEX price and physical silver price diverge futures trading involves",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:34.799Z"
+    },
+    "4": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge there surge demand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge there surge demand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:35.524Z"
+    },
+    "5": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge 35 20 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge 35 20 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:36.659Z"
+    },
+    "6": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge 2 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge 2 to 5",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:37.252Z"
+    },
+    "7": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge shipping costs transporting\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge shipping costs transporting",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:37.708Z"
+    },
+    "8": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge 350 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge 350 million ounces",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:38.679Z"
+    },
+    "9": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge browse our online\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge browse our online",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:39.187Z"
+    },
+    "10": {
+      "key": "{\"query\":\"why COMEX price and physical silver price diverge customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "why COMEX price and physical silver price diverge customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-10T19:37:39.840Z"
+    }
+  }
+}

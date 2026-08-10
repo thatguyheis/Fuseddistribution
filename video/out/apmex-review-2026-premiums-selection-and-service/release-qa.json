@@ -1,0 +1,11 @@
+{
+  "slug": "apmex-review-2026-premiums-selection-and-service",
+  "pass": true,
+  "errors": [],
+  "warnings": [
+    "captions are proportional; a three-point manual sync review is required before posting"
+  ],
+  "generatedAt": "2026-08-10T19:11:26.199Z",
+  "manualCaptionReview": false,
+  "readyForPosting": false
+}
