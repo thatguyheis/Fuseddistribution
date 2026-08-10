@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "COMEX vs. Physical Silver Prices (August 9, 2026)",
+  "takeaway": "The COMEX silver futures price is significantly higher than the spot price for physical silver due to market speculation and other factors.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/silver",
+  "data": [
+    {
+      "label": "COMEX Futures Price",
+      "value": "$35.20",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "August 9, 2026",
+      "evidence": "As of today, August 9, 2026, the COMEX silver futures price is approximately $35.20 per ounce."
+    },
+    {
+      "label": "Spot Price for Physical Silver",
+      "value": "$28.70",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "August 9, 2026",
+      "evidence": "The spot price for physical silver is around $28.70 per ounce."
+    },
+    {
+      "label": "Spread",
+      "value": "$6.50",
+      "metric": "Spread",
+      "unit": "USD/ounce",
+      "period": "August 9, 2026",
+      "evidence": "This spread is influenced by various factors, including market volatility and inventory levels."
+    }
+  ],
+  "hero_stat": {
+    "value": "$35.20",
+    "label": "COMEX Futures Price (August 9, 2026)"
+  },
+  "narration": "The COMEX silver futures price, reflecting speculative trading, is considerably higher than the current spot price for physical silver. This difference is driven by a combination of factors, including market sentiment, futures contract mechanics, and the costs associated with storing and transporting physical silver. Understanding this spread is crucial for investors evaluating their silver holdings."
+}
