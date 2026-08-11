@@ -132,6 +132,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-11 | gainesville-coins-review-2026 | General | Gainesville Coins review 2026 |
 | 2026-08-10 | apmex-review-2026-premiums-selection-and-service | General | APMEX review 2026 premiums selection and service |
 | 2026-08-10 | why-comex-price-and-physical-silver-price-diverge | General | why COMEX price and physical silver price diverge |
 | 2026-08-09 | comex-silver-delivery-process-explained | General | COMEX silver delivery process explained |

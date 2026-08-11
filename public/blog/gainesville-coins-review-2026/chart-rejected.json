@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Gainesville Coins Silver Bar Price",
+  "takeaway": "Gainesville Coins\u2019 average silver bar price as of late 2026 was approximately $32.50 per ounce.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.gainesvillecoins.com/",
+  "data": [
+    {
+      "label": "Average Silver Bar Price",
+      "value": "$32.50",
+      "metric": "Price per ounce",
+      "unit": "USD/ounce",
+      "period": "Late 2026",
+      "evidence": "As of late 2026, their average silver bar price was approximately $32.50 per ounce, reflecting current market conditions."
+    }
+  ],
+  "hero_stat": {
+    "value": "$32.50",
+    "label": "Average Silver Bar Price"
+  },
+  "narration": "Gainesville Coins offers silver bars in various weights and sizes. Their average silver bar price as of late 2026 was approximately $32.50 per ounce, reflecting current market conditions. This price fluctuates daily, subject to market volatility."
+}
