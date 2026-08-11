@@ -1,0 +1,54 @@
+{
+  "slug": "gainesville-coins-review-2026",
+  "renderedAt": "2026-08-11T18:26:38.898Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 207.205,
+  "renderedDuration": 201.749333,
+  "scriptHash": "63ed6e6cca660608128af03d4005a91d35739daa17ab03fb6c3e831f6fcb8933",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-relaxation-05-749.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -12.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05140791565537727
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 6.2,
+      "1": 14.18,
+      "2": 20.56,
+      "3": 24.28,
+      "4": 20.16,
+      "5": 25.24,
+      "6": 21.16,
+      "7": 20.9,
+      "8": 25.04,
+      "9": 16.64,
+      "10": 4.88
+    },
+    "totalNarrationSeconds": 199.24
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relaxation-05-749/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 1,
+    "pexels": 7
+  }
+}

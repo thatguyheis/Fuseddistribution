@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Gainesville Coins review 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Gainesville Coins review 2026",
+      "prefer": "video",
+      "updatedAt": "2026-08-11T18:17:49.700Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Gainesville Coins review 2026 considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-11T18:17:49.728Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 founded company initially\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Gainesville Coins review 2026 founded company initially",
+      "prefer": "photo",
+      "updatedAt": "2026-08-11T18:17:49.729Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 32 50 silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "Gainesville Coins review 2026 32 50 silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:50.789Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 crucial note inventory\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 crucial note inventory",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:51.533Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 payment options accept\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 payment options accept",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:52.294Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 24 to 48\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 24 to 48",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:52.984Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 24 to 48\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 24 to 48",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:53.291Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 members american numismatic\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 members american numismatic",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:54.418Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 looking ahead gainesville\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 looking ahead gainesville",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:55.517Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Gainesville Coins review 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Gainesville Coins review 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-11T18:17:56.029Z"
+    }
+  }
+}
