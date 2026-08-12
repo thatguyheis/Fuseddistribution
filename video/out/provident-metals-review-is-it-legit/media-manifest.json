@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Provident Metals review is it legit\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Provident Metals review is it legit",
+      "prefer": "video",
+      "updatedAt": "2026-08-12T18:16:41.229Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Provident Metals review is it legit considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Provident Metals review is it legit considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-12T18:16:41.262Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Provident Metals review is it legit however navigating world\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Provident Metals review is it legit however navigating world",
+      "prefer": "photo",
+      "updatedAt": "2026-08-12T18:16:41.263Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Provident Metals review is it legit allows them offer\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "Provident Metals review is it legit allows them offer",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:42.164Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Provident Metals review is it legit choose product select\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit choose product select",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:42.849Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Provident Metals review is it legit 1 ignoring shipping\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit 1 ignoring shipping",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:43.720Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Provident Metals review is it legit 1 range\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit 1 range",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:44.385Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Provident Metals review is it legit 4 6 customers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit 4 6 customers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:44.898Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Provident Metals review is it legit 3 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit 3 to 5",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:45.583Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Provident Metals review is it legit recommend them solid\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit recommend them solid",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:46.080Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Provident Metals review is it legit customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Provident Metals review is it legit customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-12T18:16:46.744Z"
+    }
+  }
+}
