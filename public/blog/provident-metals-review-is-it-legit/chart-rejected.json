@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Provident Metals Premium Range",
+  "takeaway": "Provident Metals offers premiums between 1% and 3% on their products.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.providentmetals.com/",
+  "data": [
+    {
+      "label": "Premium Range",
+      "value": "1% - 3%",
+      "metric": "Premium",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "According to their website, they typically offer premiums between 1% and 3% [2]."
+    }
+  ],
+  "hero_stat": {
+    "value": "1% - 3%",
+    "label": "Premium Range"
+  },
+  "narration": "Provident Metals\u2019 pricing structure is based on a premium range of 1% to 3% above the spot price of precious metals. This range is clearly stated on their website, providing transparency for potential buyers."
+}
