@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to set silver spot price alerts for free",
+      "prefer": "video",
+      "updatedAt": "2026-08-14T18:17:40.675Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free ever wondered how\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to set silver spot price alerts for free ever wondered how",
+      "prefer": "photo",
+      "updatedAt": "2026-08-14T18:17:40.710Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free setting silver spot\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to set silver spot price alerts for free setting silver spot",
+      "prefer": "photo",
+      "updatedAt": "2026-08-14T18:17:40.711Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free why silver spot\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to set silver spot price alerts for free why silver spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:43.171Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free current market price\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free current market price",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:44.075Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free fantastic way react\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free fantastic way react",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:44.638Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free recommend method both\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free recommend method both",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:45.205Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free set alert simply\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free set alert simply",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:46.077Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free 0 10 spot\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free 0 10 spot",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:46.753Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free platforms like kitco\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free platforms like kitco",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:47.513Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to set silver spot price alerts for free customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "how to set silver spot price alerts for free customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-14T18:17:48.161Z"
+    }
+  }
+}
