@@ -1,0 +1,10 @@
+{
+  "hook": "Silver prices can shift by up to 5% daily \u2013 act now!",
+  "hook_type": "contrarian_stat",
+  "key_stat": {
+    "value": "5%",
+    "label": "a timely alert could"
+  },
+  "discussion_question": "How can you best utilize these alerts to improve your silver investments?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

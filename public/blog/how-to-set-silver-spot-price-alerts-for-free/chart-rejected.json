@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Price Movement - Daily Average",
+  "takeaway": "The average daily price movement of silver is 3-5%.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Daily Average Price Movement",
+      "value": "3-5%",
+      "metric": "Percentage Change",
+      "unit": "%",
+      "period": "Daily",
+      "evidence": "With the current average daily price movement of silver being around 3-5%, a timely alert could mean the difference between a small gain and a missed opportunity."
+    }
+  ],
+  "hero_stat": {
+    "value": "3-5%",
+    "label": "Average Daily Silver Price Movement"
+  },
+  "narration": "The article highlights that the average daily price movement of silver is approximately 3-5%. This information is crucial for investors seeking to react quickly to market fluctuations and potentially secure better deals. Monitoring these price changes through alerts can significantly improve trading strategies."
+}
