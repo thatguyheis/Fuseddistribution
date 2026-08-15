@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Search Growth for \u2018Near Me\u2019 Queries",
+  "takeaway": "Google Search for \u2018near me\u2019 queries has grown dramatically over the past few years.",
+  "source": "Fused Distribution Research",
+  "source_url": "https://example.com/research-near-me-searches",
+  "data": [
+    {
+      "label": "2019",
+      "value": "40%",
+      "metric": "Percentage of Google Searches",
+      "unit": "%",
+      "period": "2019",
+      "evidence": "A staggering 40% of all Google searches include a \u2018near me\u2019 element."
+    },
+    {
+      "label": "2023",
+      "value": "50%",
+      "metric": "Percentage of Google Searches",
+      "unit": "%",
+      "period": "2023",
+      "evidence": "Recent studies show that nearly 50% of all Google searches now include a \u2018near me\u2019 query."
+    },
+    {
+      "label": "2019-2023",
+      "value": "90%",
+      "metric": "Percentage Growth",
+      "unit": "%",
+      "period": "2019-2023",
+      "evidence": "\u2018Near me\u2019 searches have grown by over 90% in the last few years."
+    }
+  ],
+  "hero_stat": {
+    "value": "90%",
+    "label": "Growth in \u2018Near Me\u2019 Searches"
+  },
+  "narration": "The popularity of \u2018near me\u2019 searches has exploded in recent years, representing a significant opportunity for local businesses.  Initial research in 2019 indicated 40% of Google searches included a \u2018near me\u2019 element, while more recent studies show this figure has climbed to nearly 50% by 2023.  This substantial growth underscores the importance of optimizing for local search."
+}
