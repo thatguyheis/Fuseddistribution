@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"near me searches how to rank for them\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "near me searches how to rank for them",
+      "prefer": "video",
+      "updatedAt": "2026-08-15T19:09:40.301Z"
+    },
+    "1": {
+      "key": "{\"query\":\"near me searches how to rank for them 40 business customers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "near me searches how to rank for them 40 business customers",
+      "prefer": "photo",
+      "updatedAt": "2026-08-15T19:09:40.363Z"
+    },
+    "2": {
+      "key": "{\"query\":\"near me searches how to rank for them let started start\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "near me searches how to rank for them let started start",
+      "prefer": "photo",
+      "updatedAt": "2026-08-15T19:09:40.364Z"
+    },
+    "3": {
+      "key": "{\"query\":\"near me searches how to rank for them let talk about\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "near me searches how to rank for them let talk about",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:41.503Z"
+    },
+    "4": {
+      "key": "{\"query\":\"near me searches how to rank for them 90 business customers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them 90 business customers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:42.303Z"
+    },
+    "5": {
+      "key": "{\"query\":\"near me searches how to rank for them 3 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them 3 to 5",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:43.021Z"
+    },
+    "6": {
+      "key": "{\"query\":\"near me searches how to rank for them start ensuring all\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them start ensuring all",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:43.974Z"
+    },
+    "7": {
+      "key": "{\"query\":\"near me searches how to rank for them there tools available\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them there tools available",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:44.642Z"
+    },
+    "8": {
+      "key": "{\"query\":\"near me searches how to rank for them aim quality quantity\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them aim quality quantity",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:45.227Z"
+    },
+    "9": {
+      "key": "{\"query\":\"near me searches how to rank for them helps identify opportunities\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them helps identify opportunities",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:45.800Z"
+    },
+    "10": {
+      "key": "{\"query\":\"near me searches how to rank for them customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "near me searches how to rank for them customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T19:09:46.321Z"
+    }
+  }
+}

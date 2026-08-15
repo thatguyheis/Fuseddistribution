@@ -1,0 +1,92 @@
+{
+  "slug": "how-to-build-a-silver-inventory-spreadsheet",
+  "title": "how-to-build-a-silver-inventory-spreadsheet",
+  "totalDuration": 210.778,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4.32,
+      "text": "Know your silver: Track every ounce, maximize profits.",
+      "narration": "Know your silver: Track every ounce, maximize profits."
+    },
+    {
+      "type": "overlay",
+      "startSec": 4.32,
+      "endSec": 22.673,
+      "text": "RETAIL BUYER SILVER STRUGGLING",
+      "narration": "Are you a retail buyer of silver, struggling to track your stock levels, costs, and sales? Keeping accurate inventory is crucial for profitability, especially when dealing with volatile commodities like silver. We stock a wide range of silver products, and we recommend a well-organized inventory spreadsheet as the foundation for smart buying and selling decisions."
+    },
+    {
+      "type": "overlay",
+      "startSec": 22.673,
+      "endSec": 39.693,
+      "text": "ACCURATE INVENTORY MANAGEMENT ALSO",
+      "narration": "Accurate inventory management also allows you to react quickly to market fluctuations and adjust your purchasing strategy. It’s a critical component of a successful silver retail business. You’ll need a spreadsheet program - Microsoft Excel, Google Sheets, or similar. We recommend Google Sheets for its ease of collaboration and accessibility."
+    },
+    {
+      "type": "overlay",
+      "startSec": 39.693,
+      "endSec": 63.453,
+      "text": "SUPPLIER COMPANY PURCHASED SILVER",
+      "narration": "Supplier: The company you purchased the silver from. Purchase Date: The date you acquired the silver. Purchase Price (per unit): The cost you paid for each unit. Quantity in Stock: The number of units you currently have on hand. Unit Cost: Calculated automatically (Purchase Price / Quantity in Stock). Total Value (in Stock): Calculated automatically (Unit Cost Quantity in Stock)."
+    },
+    {
+      "type": "overlay",
+      "startSec": 63.453,
+      "endSec": 86.666,
+      "text": "SALES PRICE UNIT SELL",
+      "narration": "Sales Price (per unit): The price you sell the silver for. Sales Quantity: The number of units sold. Total Revenue: Calculated automatically (Sales Price Sales Quantity). Profit (per unit): Calculated automatically (Sales Price - Unit Cost). Profit (Total): Calculated automatically (Total Revenue - Total Cost of Goods Sold). Reorder Point: The quantity at which you need to reorder the item."
+    },
+    {
+      "type": "overlay",
+      "startSec": 86.666,
+      "endSec": 107.139,
+      "text": "USE FORMULAS CALCULATE UNIT",
+      "narration": "Use formulas to calculate the ‘Unit Cost,’ ‘Total Value (in Stock)’, ‘Profit (per unit)’, ‘Profit (Total)’, and ‘Total Revenue’. For example, in the cell for ‘Unit Cost’ (assuming ‘Purchase Price’ is in column F and ‘Quantity in Stock’ is in column G), you would enter the formula =F6/G6. Copy this formula down to all rows."
+    },
+    {
+      "type": "overlay",
+      "startSec": 107.139,
+      "endSec": 130.139,
+      "text": "TRACKING COSTS DON TRACK",
+      "narration": "Not Tracking Costs: Don’t just track the purchase price. Include shipping costs, insurance, and any other expenses associated with acquiring the silver. Ignoring Sales Data: Your inventory spreadsheet should reflect your sales. Update the ‘Sales Quantity’ and ‘Total Revenue’ columns regularly. Lack of Reorder Points: Without reorder points, you risk running out of stock, losing sales, and missing out on potential profit."
+    },
+    {
+      "type": "overlay",
+      "startSec": 130.139,
+      "endSec": 150.819,
+      "text": "FIFO FIRST OUT METHOD",
+      "narration": "FIFO (First-In, First-Out): This method assumes that the first silver items you purchased are the first ones sold. It’s a good way to account for potential price fluctuations. Batch Tracking: If you receive large shipments of silver, track the batch numbers to help identify potential quality issues. Barcode Scanning: Consider using barcode scanners to speed up data entry and reduce errors."
+    },
+    {
+      "type": "overlay",
+      "startSec": 150.819,
+      "endSec": 173.852,
+      "text": "TRACKING SILVER CONSIDER THESE",
+      "narration": "When tracking silver, consider these unique factors: For more on this, see Provident Metals Review: Is It Legit?. Spot Price Fluctuations: Silver prices can change dramatically in short periods. Factor this volatility into your reorder points and pricing strategy. Different Silver Forms: Track the specific form of silver - bullion, coins, jewelry - as pricing and demand can vary."
+    },
+    {
+      "type": "stat",
+      "startSec": 173.852,
+      "endSec": 192.485,
+      "text": "20% SILVER SUCCESSFUL RETAIL OPERATION",
+      "narration": "Gross Profit Margin: This is the percentage of profit you make on each silver item sold. Monitor this metric to identify areas for improvement. We recommend a gross profit margin of at least 20 percent for a successful silver retail operation. Building a silver inventory spreadsheet is a foundational step toward profitable silver retail."
+    },
+    {
+      "type": "overlay",
+      "startSec": 192.485,
+      "endSec": 204.998,
+      "text": "HELP STARTED RECOMMEND SCHEDULING",
+      "narration": "To help you get started, we recommend scheduling a consultation with one of our experts to discuss your specific needs and how we can support your silver investing business. Contact us today for a free quote on our wide selection of silver products."
+    },
+    {
+      "type": "question",
+      "startSec": 204.998,
+      "endSec": 210.778,
+      "text": "How would you approach building this silver inventory spreadsheet?",
+      "narration": "How would you approach building this silver inventory spreadsheet? Follow for more silver news.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

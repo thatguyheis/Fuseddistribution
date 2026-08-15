@@ -1,0 +1,301 @@
+{
+  "0": [
+    {
+      "text": "Know your silver: Track every ounce, maximize profits.",
+      "startSec": 0,
+      "endSec": 3.52
+    }
+  ],
+  "1": [
+    {
+      "text": "Are you a retail buyer of silver, struggling to track your stock levels, costs, and sales?",
+      "startSec": 0,
+      "endSec": 4.405
+    },
+    {
+      "text": "Keeping accurate inventory is crucial for profitability",
+      "startSec": 4.255,
+      "endSec": 6.946944444444444
+    },
+    {
+      "text": "especially when dealing with volatile commodities like silver.",
+      "startSec": 6.946944444444444,
+      "endSec": 9.9815
+    },
+    {
+      "text": "We stock a wide range of silver products",
+      "startSec": 9.9815,
+      "endSec": 11.939277777777779
+    },
+    {
+      "text": "and we recommend a well-organized inventory spreadsheet as the foundation for smart buying and selling decisions.",
+      "startSec": 11.939277777777779,
+      "endSec": 17.62
+    }
+  ],
+  "2": [
+    {
+      "text": "Accurate inventory management also allows you to react quickly to market fluctuations and adjust your purchasing strategy.",
+      "startSec": 0,
+      "endSec": 5.803049853372434
+    },
+    {
+      "text": "It’s a critical component of a successful silver retail business.",
+      "startSec": 5.653049853372433,
+      "endSec": 8.744838709677419
+    },
+    {
+      "text": "You’ll need a spreadsheet program - Microsoft Excel, Google Sheets, or similar.",
+      "startSec": 8.744838709677419,
+      "endSec": 12.502551319648093
+    },
+    {
+      "text": "We recommend Google Sheets for its ease of collaboration and accessibility.",
+      "startSec": 12.502551319648093,
+      "endSec": 16.22
+    }
+  ],
+  "3": [
+    {
+      "text": "Supplier: The company you purchased the silver from.",
+      "startSec": 0,
+      "endSec": 3.1806896551724138
+    },
+    {
+      "text": "Purchase Date: The date you acquired the silver.",
+      "startSec": 3.030689655172414,
+      "endSec": 5.9667108753315645
+    },
+    {
+      "text": "Purchase Price (per unit): The cost you paid for each unit.",
+      "startSec": 5.9667108753315645,
+      "endSec": 9.575570291777188
+    },
+    {
+      "text": "Quantity in Stock: The number of units you currently have on hand.",
+      "startSec": 9.575570291777188,
+      "endSec": 13.612599469496022
+    },
+    {
+      "text": "Unit Cost: Calculated automatically (Purchase Price / Quantity in Stock).",
+      "startSec": 13.612599469496022,
+      "endSec": 18.077798408488064
+    },
+    {
+      "text": "Total Value (in Stock): Calculated automatically (Unit Cost Quantity in Stock).",
+      "startSec": 18.077798408488064,
+      "endSec": 23.06
+    }
+  ],
+  "4": [
+    {
+      "text": "Sales Price (per unit): The price you sell the silver for.",
+      "startSec": 0,
+      "endSec": 3.3604123711340206
+    },
+    {
+      "text": "Sales Quantity: The number of units sold.",
+      "startSec": 3.2104123711340207,
+      "endSec": 5.585876288659794
+    },
+    {
+      "text": "Total Revenue: Calculated automatically (Sales Price Sales Quantity).",
+      "startSec": 5.585876288659794,
+      "endSec": 9.583608247422681
+    },
+    {
+      "text": "Profit (per unit): Calculated automatically (Sales Price - Unit Cost).",
+      "startSec": 9.583608247422681,
+      "endSec": 13.639278350515465
+    },
+    {
+      "text": "Profit (Total): Calculated automatically (Total Revenue - Total Cost of Goods Sold).",
+      "startSec": 13.639278350515465,
+      "endSec": 18.506082474226805
+    },
+    {
+      "text": "Reorder Point: The quantity at which you need to reorder the item.",
+      "startSec": 18.506082474226805,
+      "endSec": 22.48
+    }
+  ],
+  "5": [
+    {
+      "text": "Use formulas to calculate the ‘Unit Cost, ’ ‘Total Value (in Stock)’, ‘Profit (per unit)’",
+      "startSec": 0,
+      "endSec": 5.542145110410094
+    },
+    {
+      "text": "‘Profit (Total)’, and ‘Total Revenue’.",
+      "startSec": 5.392145110410094,
+      "endSec": 7.758454258675078
+    },
+    {
+      "text": "For example",
+      "startSec": 7.758454258675078,
+      "endSec": 8.443438485804416
+    },
+    {
+      "text": "in the cell for ‘Unit Cost’ (assuming ‘Purchase Price’ is in column F and ‘Quantity in Stock’ is in column G)",
+      "startSec": 8.443438485804416,
+      "endSec": 15.231009463722398
+    },
+    {
+      "text": "you would enter the formula =F6/G6.",
+      "startSec": 15.231009463722398,
+      "endSec": 17.4105047318612
+    },
+    {
+      "text": "Copy this formula down to all rows.",
+      "startSec": 17.4105047318612,
+      "endSec": 19.74
+    }
+  ],
+  "6": [
+    {
+      "text": "Not Tracking Costs: Don’t just track the purchase price.",
+      "startSec": 0,
+      "endSec": 2.974162679425837
+    },
+    {
+      "text": "Include shipping costs, insurance, and any other expenses associated with acquiring the silver.",
+      "startSec": 2.824162679425837,
+      "endSec": 7.869617224880383
+    },
+    {
+      "text": "Ignoring Sales Data: Your inventory spreadsheet should reflect your sales.",
+      "startSec": 7.869617224880383,
+      "endSec": 11.79976076555024
+    },
+    {
+      "text": "Update the ‘Sales Quantity’ and ‘Total Revenue’ columns regularly.",
+      "startSec": 11.79976076555024,
+      "endSec": 15.305023923444976
+    },
+    {
+      "text": "Lack of Reorder Points: Without reorder points, you risk running out of stock, losing sales",
+      "startSec": 15.305023923444976,
+      "endSec": 20.13803827751196
+    },
+    {
+      "text": "and missing out on potential profit.",
+      "startSec": 20.13803827751196,
+      "endSec": 22.2
+    }
+  ],
+  "7": [
+    {
+      "text": "FIFO (First-In",
+      "startSec": 0,
+      "endSec": 0.7265454545454545
+    },
+    {
+      "text": "First-Out): This method assumes that the first silver items you purchased are the first ones sold.",
+      "startSec": 0.5765454545454545,
+      "endSec": 5.6623636363636365
+    },
+    {
+      "text": "It’s a good way to account for potential price fluctuations.",
+      "startSec": 5.6623636363636365,
+      "endSec": 8.776129870129871
+    },
+    {
+      "text": "Batch Tracking: If you receive large shipments of silver",
+      "startSec": 8.776129870129871,
+      "endSec": 11.682311688311689
+    },
+    {
+      "text": "track the batch numbers to help identify potential quality issues.",
+      "startSec": 11.682311688311689,
+      "endSec": 15.107454545454546
+    },
+    {
+      "text": "Barcode Scanning: Consider using barcode scanners to speed up data entry and reduce errors.",
+      "startSec": 15.107454545454546,
+      "endSec": 19.98
+    }
+  ],
+  "8": [
+    {
+      "text": "When tracking silver, consider these unique factors: For more on this",
+      "startSec": 0,
+      "endSec": 4.1032
+    },
+    {
+      "text": "see Provident Metals Review: Is It Legit?.",
+      "startSec": 3.9532000000000003,
+      "endSec": 6.450800000000001
+    },
+    {
+      "text": "Spot Price Fluctuations: Silver prices can change dramatically in short periods.",
+      "startSec": 6.450800000000001,
+      "endSec": 11.208133333333334
+    },
+    {
+      "text": "Factor this volatility into your reorder points and pricing strategy.",
+      "startSec": 11.208133333333334,
+      "endSec": 15.311333333333334
+    },
+    {
+      "text": "Different Silver Forms: Track the specific form of silver - bullion, coins",
+      "startSec": 15.311333333333334,
+      "endSec": 19.711866666666666
+    },
+    {
+      "text": "jewelry - as pricing and demand can vary.",
+      "startSec": 19.711866666666666,
+      "endSec": 22.3
+    }
+  ],
+  "9": [
+    {
+      "text": "Gross Profit Margin: This is the percentage of profit you make on each silver item sold.",
+      "startSec": 0,
+      "endSec": 4.688095238095238
+    },
+    {
+      "text": "Monitor this metric to identify areas for improvement.",
+      "startSec": 4.538095238095238,
+      "endSec": 7.414880952380952
+    },
+    {
+      "text": "We recommend a gross profit margin of at least 20 percent for a successful silver retail operation.",
+      "startSec": 7.414880952380952,
+      "endSec": 12.688988095238095
+    },
+    {
+      "text": "Building a silver inventory spreadsheet is a foundational step toward profitable silver retail.",
+      "startSec": 12.688988095238095,
+      "endSec": 17.9
+    }
+  ],
+  "10": [
+    {
+      "text": "To help you get started",
+      "startSec": 0,
+      "endSec": 1.1013821138211382
+    },
+    {
+      "text": "we recommend scheduling a consultation with one of our experts to discuss your specific needs and how we can support your silver investing business.",
+      "startSec": 0.9513821138211381,
+      "endSec": 8.038536585365854
+    },
+    {
+      "text": "Contact us today for a free quote on our wide selection of silver products.",
+      "startSec": 8.038536585365854,
+      "endSec": 11.78
+    }
+  ],
+  "11": [
+    {
+      "text": "How would you approach building this silver inventory spreadsheet?",
+      "startSec": 0,
+      "endSec": 3.7072340425531918
+    },
+    {
+      "text": "Follow for more silver news.",
+      "startSec": 3.557234042553192,
+      "endSec": 5.28
+    }
+  ]
+}

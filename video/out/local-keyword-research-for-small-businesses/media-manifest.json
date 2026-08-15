@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"local keyword research for small businesses\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "local keyword research for small businesses",
+      "prefer": "video",
+      "updatedAt": "2026-08-15T18:44:48.840Z"
+    },
+    "1": {
+      "key": "{\"query\":\"local keyword research for small businesses small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "local keyword research for small businesses small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-15T18:44:48.866Z"
+    },
+    "2": {
+      "key": "{\"query\":\"local keyword research for small businesses fused distribution build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "local keyword research for small businesses fused distribution build",
+      "prefer": "photo",
+      "updatedAt": "2026-08-15T18:44:48.866Z"
+    },
+    "3": {
+      "key": "{\"query\":\"local keyword research for small businesses brainstorm services products\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "local keyword research for small businesses brainstorm services products",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:50.168Z"
+    },
+    "4": {
+      "key": "{\"query\":\"local keyword research for small businesses what words would\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses what words would",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:50.978Z"
+    },
+    "5": {
+      "key": "{\"query\":\"local keyword research for small businesses here few options\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses here few options",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:51.670Z"
+    },
+    "6": {
+      "key": "{\"query\":\"local keyword research for small businesses answerthepublic tool visualizes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses answerthepublic tool visualizes",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:52.175Z"
+    },
+    "7": {
+      "key": "{\"query\":\"local keyword research for small businesses serve specific area\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses serve specific area",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:53.142Z"
+    },
+    "8": {
+      "key": "{\"query\":\"local keyword research for small businesses overlooking voice search\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses overlooking voice search",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:53.747Z"
+    },
+    "9": {
+      "key": "{\"query\":\"local keyword research for small businesses understanding balance between\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses understanding balance between",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:54.662Z"
+    },
+    "10": {
+      "key": "{\"query\":\"local keyword research for small businesses customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "local keyword research for small businesses customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-15T18:44:55.224Z"
+    }
+  }
+}
