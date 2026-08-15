@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Keyword Volume vs. Keyword Difficulty",
+  "takeaway": "Targeting keywords with a balance of volume and difficulty is crucial for local SEO success.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.example.com/blog/keyword-volume-vs-keyword-difficulty",
+  "data": [
+    {
+      "label": "High Volume, High Difficulty",
+      "value": "Difficult to Rank",
+      "metric": "Keyword Difficulty",
+      "unit": "High",
+      "period": "N/A",
+      "evidence": "Understanding the balance between keyword volume and keyword difficulty is key to successful local SEO. Keyword volume refers to how many people are searching for a particular keyword. High volume means lots of potential traffic. Keyword difficulty refers to how competitive a keyword is - how many other websites are already ranking for it. If you target a keyword with extremely high difficulty, it will be very difficult to rank, even with a large volume of searches."
+    },
+    {
+      "label": "Low Volume, Low Difficulty",
+      "value": "Easy to Rank",
+      "metric": "Keyword Volume",
+      "unit": "Low",
+      "period": "N/A",
+      "evidence": "Targeting keywords with a balance of volume and difficulty is crucial for local SEO success. Keyword volume refers to how many people are searching for a particular keyword. High volume means lots of potential traffic. Keyword difficulty refers to how competitive a keyword is - how many other websites are already ranking for it. If you target a keyword with extremely high difficulty, it will be very difficult to rank, even with a large volume of searches."
+    }
+  ],
+  "hero_stat": {
+    "value": "High",
+    "label": "Keyword Difficulty"
+  },
+  "narration": "The article highlights the importance of balancing keyword volume (search frequency) with keyword difficulty (competition). Targeting keywords with high volume but also high difficulty can be challenging, while focusing on low-volume, low-difficulty keywords can be easier to rank for, but may not provide as much traffic."
+}
