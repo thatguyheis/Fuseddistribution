@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Inventory Spreadsheet Columns",
+  "takeaway": "A well-structured spreadsheet includes key columns for tracking silver inventory.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/blog/how-to-build-a-silver-inventory-spreadsheet/",
+  "data": [
+    {
+      "label": "Item ID",
+      "value": "SIL-RGP-100",
+      "metric": "Item Identifier",
+      "unit": "",
+      "period": "",
+      "evidence": "Consider a consistent naming convention, such as \u201cSIL-RGP-100\u201d (Silver Round, 100 oz) or \u201cSIL-BAR-20\u201d (Silver Bar, 20 oz)."
+    },
+    {
+      "label": "Purchase Price (per oz)",
+      "value": "Not specified in article",
+      "metric": "Purchase Price",
+      "unit": "USD/oz",
+      "period": "",
+      "evidence": "Record this accurately, as it\u2019s the basis for calculating profit margins."
+    },
+    {
+      "label": "Current Selling Price (per oz)",
+      "value": "Not specified in article",
+      "metric": "Selling Price",
+      "unit": "USD/oz",
+      "period": "",
+      "evidence": "This will fluctuate with market conditions."
+    }
+  ],
+  "hero_stat": {
+    "value": "SIL-RGP-100",
+    "label": "Example Item ID"
+  },
+  "narration": "The spreadsheet should be designed to be easily searchable and filterable. It requires a systematic approach to inventory management and includes columns for unique item identification, purchase details, and current selling prices."
+}

@@ -134,6 +134,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-15 | how-to-build-a-silver-inventory-spreadsheet | General | how to build a silver inventory spreadsheet |
 | 2026-08-14 | how-to-set-silver-spot-price-alerts-for-free | General | how to set silver spot price alerts for free |
 | 2026-08-12 | provident-metals-review-is-it-legit | General | Provident Metals review is it legit |
 | 2026-08-11 | gainesville-coins-review-2026 | General | Gainesville Coins review 2026 |
