@@ -1,0 +1,264 @@
+{
+  "0": [
+    {
+      "text": "$26 per ounce: Track it, and profit.",
+      "startSec": 0,
+      "endSec": 2.96
+    }
+  ],
+  "1": [
+    {
+      "text": "Calculating your average cost per ounce of silver is crucial for understanding your investment returns and making informed decisions.",
+      "startSec": 0,
+      "endSec": 7.129616368286446
+    },
+    {
+      "text": "At Fused Distribution, we stock a wide variety of silver bullion and coins",
+      "startSec": 6.979616368286446,
+      "endSec": 10.946470588235295
+    },
+    {
+      "text": "and we recommend careful tracking for all our clients.",
+      "startSec": 10.946470588235295,
+      "endSec": 13.841202046035807
+    },
+    {
+      "text": "This guide will walk you through the process, step-by-step",
+      "startSec": 13.841202046035807,
+      "endSec": 16.950358056265987
+    },
+    {
+      "text": "ensuring you have a clear picture of your silver investment performance.",
+      "startSec": 16.950358056265987,
+      "endSec": 20.96
+    }
+  ],
+  "2": [
+    {
+      "text": "A consistent average cost per ounce provides a valuable reference point",
+      "startSec": 0,
+      "endSec": 3.669540816326531
+    },
+    {
+      "text": "especially when market fluctuations occur.",
+      "startSec": 3.519540816326531,
+      "endSec": 5.690255102040817
+    },
+    {
+      "text": "It allows you to assess whether your investment strategy is working for you.",
+      "startSec": 5.690255102040817,
+      "endSec": 9.618214285714288
+    },
+    {
+      "text": "The first step is to collect all your silver purchase records.",
+      "startSec": 9.618214285714288,
+      "endSec": 12.82260204081633
+    },
+    {
+      "text": "This includes: Purchase Dates: Note the exact date of each transaction.",
+      "startSec": 12.82260204081633,
+      "endSec": 16.49214285714286
+    },
+    {
+      "text": "Purchase Price: Record the price you paid per ounce for each purchase.",
+      "startSec": 16.49214285714286,
+      "endSec": 20.26
+    }
+  ],
+  "3": [
+    {
+      "text": "If you’re buying and selling frequently, consider using a dedicated investment tracking app.",
+      "startSec": 0,
+      "endSec": 4.570322580645161
+    },
+    {
+      "text": "Once you’ve compiled your data, it’s time to calculate the total cost of your silver holdings.",
+      "startSec": 4.420322580645161,
+      "endSec": 9.09
+    },
+    {
+      "text": "Sum up the “Price Per Ounce” column for all your purchases.",
+      "startSec": 9.09,
+      "endSec": 12.020967741935484
+    },
+    {
+      "text": "Then, multiply that total by the “Ounces Purchased” column to get the total cost of your silver.",
+      "startSec": 12.020967741935484,
+      "endSec": 16.94
+    }
+  ],
+  "4": [
+    {
+      "text": "This will give you the total number of ounces of silver you currently hold.",
+      "startSec": 0,
+      "endSec": 4.394428152492669
+    },
+    {
+      "text": "In our example, the total ounces held would be 10 + 5 + 2 = 17 ounces.",
+      "startSec": 4.244428152492668,
+      "endSec": 8.345894428152492
+    },
+    {
+      "text": "Now, you can calculate your average cost per ounce.",
+      "startSec": 8.345894428152492,
+      "endSec": 11.334105571847507
+    },
+    {
+      "text": "Divide the total cost of silver ($444) by the total number of ounces held (17).",
+      "startSec": 11.334105571847507,
+      "endSec": 15.962903225806452
+    },
+    {
+      "text": "For more on this, see How To Build A Silver Inventory Spreadsheet.",
+      "startSec": 15.962903225806452,
+      "endSec": 19.98
+    }
+  ],
+  "5": [
+    {
+      "text": "Calculate the Sale Proceeds: Multiply the number of ounces sold by the sale price.",
+      "startSec": 0,
+      "endSec": 5.494491017964071
+    },
+    {
+      "text": "Subtract the Sale Proceeds from the Total Cost: $444 (total cost) - $100 (sale proceeds) = $344 4.",
+      "startSec": 5.344491017964071,
+      "endSec": 11.911077844311375
+    },
+    {
+      "text": "Add the New Ounces Held: 17 ounces (initial holdings) + 3 ounces (ounces sold) = 20 ounces 5.",
+      "startSec": 11.911077844311375,
+      "endSec": 18.14263473053892
+    },
+    {
+      "text": "Calculate the New Average Cost: $344 / 20 = $17.",
+      "startSec": 18.14263473053892,
+      "endSec": 21.35892215568862
+    },
+    {
+      "text": "20 per ounce.",
+      "startSec": 21.35892215568862,
+      "endSec": 22.38
+    }
+  ],
+  "6": [
+    {
+      "text": "Your new average cost per ounce is now $17.",
+      "startSec": 0,
+      "endSec": 2.1867217630853997
+    },
+    {
+      "text": "20.",
+      "startSec": 2.0367217630853998,
+      "endSec": 2.189283746556474
+    },
+    {
+      "text": "This reflects the impact of your sale on your overall investment.",
+      "startSec": 2.189283746556474,
+      "endSec": 5.494793388429752
+    },
+    {
+      "text": "Your average cost per ounce is a key metric for assessing your profitability.",
+      "startSec": 5.494793388429752,
+      "endSec": 9.410550964187328
+    },
+    {
+      "text": "It allows you to determine whether you’re making a profit or a loss on your silver investments.",
+      "startSec": 9.410550964187328,
+      "endSec": 14.24168044077135
+    },
+    {
+      "text": "Compare your current average cost per ounce to the current spot price of silver.",
+      "startSec": 14.24168044077135,
+      "endSec": 18.46
+    }
+  ],
+  "7": [
+    {
+      "text": "For instance, if silver prices are generally rising",
+      "startSec": 0,
+      "endSec": 2.8678923766816142
+    },
+    {
+      "text": "you can expect your average cost to increase over time.",
+      "startSec": 2.7178923766816143,
+      "endSec": 5.810717488789237
+    },
+    {
+      "text": "Conversely, if silver prices are falling, your average cost will likely decrease.",
+      "startSec": 5.810717488789237,
+      "endSec": 10.365605381165917
+    },
+    {
+      "text": "This comparison can help you identify potential buying or selling opportunities.",
+      "startSec": 10.365605381165917,
+      "endSec": 14.864260089686095
+    },
+    {
+      "text": "According to a recent report, silver prices have historically shown an upward trend.",
+      "startSec": 14.864260089686095,
+      "endSec": 19.58784753363228
+    },
+    {
+      "text": "Not Tracking Purchases: Failing to record all your silver purchases is the most common mistake.",
+      "startSec": 19.58784753363228,
+      "endSec": 25.08
+    }
+  ],
+  "8": [
+    {
+      "text": "Relying Solely on Spot Price: While the spot price is important",
+      "startSec": 0,
+      "endSec": 3.3520190023752967
+    },
+    {
+      "text": "your average cost per ounce provides a more accurate reflection of your individual investment performance.",
+      "startSec": 3.202019002375297,
+      "endSec": 8.841923990498811
+    },
+    {
+      "text": "Fused Distribution: - We offer a wide selection of silver bullion and coins to suit all budgets and investment goals.",
+      "startSec": 8.841923990498811,
+      "endSec": 15.067102137767218
+    },
+    {
+      "text": "Silver Institute: - Provides valuable data and insights into the silver market.",
+      "startSec": 15.067102137767218,
+      "endSec": 19.27042755344418
+    },
+    {
+      "text": "Kitco: - Offers real-time silver prices and market news.",
+      "startSec": 19.27042755344418,
+      "endSec": 22.4
+    }
+  ],
+  "9": [
+    {
+      "text": "By consistently tracking your average cost per ounce",
+      "startSec": 0,
+      "endSec": 2.481818181818182
+    },
+    {
+      "text": "you’ll gain a deeper understanding of your silver investment performance and increase your chances of long-term success.",
+      "startSec": 2.331818181818182,
+      "endSec": 8.059090909090909
+    },
+    {
+      "text": "Don’t hesitate to contact us with any questions.",
+      "startSec": 8.059090909090909,
+      "endSec": 10.5
+    }
+  ],
+  "10": [
+    {
+      "text": "How does this average cost per ounce calculation help you?",
+      "startSec": 0,
+      "endSec": 3.56093023255814
+    },
+    {
+      "text": "Follow for more silver news.",
+      "startSec": 3.41093023255814,
+      "endSec": 5.28
+    }
+  ]
+}
