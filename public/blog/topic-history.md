@@ -134,6 +134,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-16 | how-to-calculate-your-average-cost-per-ounce-silver | General | how to calculate your average cost per ounce silver |
 | 2026-08-15 | how-to-build-a-silver-inventory-spreadsheet | General | how to build a silver inventory spreadsheet |
 | 2026-08-14 | how-to-set-silver-spot-price-alerts-for-free | General | how to set silver spot price alerts for free |
 | 2026-08-12 | provident-metals-review-is-it-legit | General | Provident Metals review is it legit |
