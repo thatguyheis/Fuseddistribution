@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "97% of local businesses claiming their Google Business Profile are found by customers.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/local-seo-statistics",
+  "data": [
+    {
+      "label": "Google Business Profile Impact",
+      "value": "97%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "Recent Study",
+      "evidence": "According to a recent study, 97% of local businesses that claim their Google Business Profile are found by customers."
+    },
+    {
+      "label": "Local Citation Consistency",
+      "value": "Inconsistent NAP information",
+      "metric": "Issue",
+      "unit": "N/A",
+      "period": "Ongoing",
+      "evidence": "Inconsistent NAP information confuses Google and hurts your ranking."
+    },
+    {
+      "label": "Review Trust",
+      "value": "88%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "Study",
+      "evidence": "According to a study, 88% of consumers trust online reviews as much as personal recommendations."
+    },
+    {
+      "label": "Local Search Purchase Rate",
+      "value": "70%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "2023 Study",
+      "evidence": "A 2023 study showed that 70% of local searches result in a purchase."
+    }
+  ],
+  "hero_stat": {
+    "value": "97",
+    "label": "Google Business Profile Claim Rate"
+  },
+  "narration": "Claiming and optimizing your Google Business Profile is crucial for local SEO. Consistent NAP information, actively requesting reviews, and monitoring your online reputation are also key components of a successful strategy. These practices significantly improve your visibility in local search results and drive targeted traffic to your business."
+}

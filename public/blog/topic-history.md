@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-16 | neighborhood-seo-targeting-specific-areas | General | neighborhood SEO targeting specific areas |
 | 2026-08-15 | local-keyword-research-for-small-businesses | General | local keyword research for small businesses |
 | 2026-08-15 | near-me-searches-how-to-rank-for-them | General | near me searches how to rank for them |
 | 2026-08-10 | how-to-add-photos-to-google-business-profile-correctly | General | how to add photos to google business profile correctly |
