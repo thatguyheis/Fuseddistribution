@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "Local businesses can improve online visibility with a basic SEO audit.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/local-seo-audit",
+  "data": [
+    {
+      "label": "77% of local searches lead to a purchase",
+      "value": "77%",
+      "metric": "percentage",
+      "unit": "%",
+      "period": "recent survey",
+      "evidence": "A recent survey found that 77% of local searches lead to a purchase."
+    },
+    {
+      "label": "85% of consumers use Google Business Profiles",
+      "value": "85",
+      "metric": "percentage",
+      "unit": "%",
+      "period": "recent survey",
+      "evidence": "A recent survey found that 85% of consumers use Google Business Profiles to find local businesses."
+    },
+    {
+      "label": "Under 3 seconds for website load time",
+      "value": "3",
+      "metric": "time",
+      "unit": "seconds",
+      "period": "ideal",
+      "evidence": "A fast website loads in under 3 seconds."
+    },
+    {
+      "label": "750 characters for GBP description",
+      "value": "750",
+      "metric": "character count",
+      "unit": "characters",
+      "period": "recommended",
+      "evidence": "Aim for around 750 characters."
+    }
+  ],
+  "hero_stat": {
+    "value": "77",
+    "label": "Local Search Conversion Rate"
+  },
+  "narration": "Local SEO focuses on optimizing your online presence for local customers. A Google Business Profile is essential, as is a mobile-friendly website. Keyword research and citation audits also play a crucial role in improving your visibility in local search results."
+}
