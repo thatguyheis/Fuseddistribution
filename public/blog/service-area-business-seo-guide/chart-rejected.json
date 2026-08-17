@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Search Result Click-Through Rates",
+  "takeaway": "Over 70% of local searches result in a purchase.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.example.com/blog/local-seo-audit-how-to-do-one-yourself",
+  "data": [
+    {
+      "label": "Local Search Click-Through Rate",
+      "value": "70%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "Studies show that over 70% of local searches result in a purchase."
+    }
+  ],
+  "hero_stat": {
+    "value": "70%",
+    "label": "Local Search Purchase Rate"
+  },
+  "narration": "Local SEO is critical for small businesses because a significant portion of local searches lead to a purchase.  Google prioritizes local results, and optimizing your online presence can dramatically increase your chances of capturing those valuable leads.  It's a key driver of revenue for local businesses."
+}
