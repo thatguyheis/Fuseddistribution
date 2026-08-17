@@ -1,19 +1,19 @@
 {
   "slug": "silver-numismatic-coins-vs-bullion-coins",
   "title": "Silver Numismatic Coins vs Bullion Coins",
-  "totalDuration": 225,
+  "totalDuration": 161.545,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 14,
+      "endSec": 7.16,
       "text": "COIN VS BAR: REAL COST PER OUNCE",
       "narration": "Before you buy silver, calculate the real cost per ounce. Numismatic coins and bullion bars are not the same investment."
     },
     {
       "type": "stat",
-      "startSec": 14,
-      "endSec": 37,
+      "startSec": 7.16,
+      "endSec": 26.153,
       "text": "$91 2025-W UNCIRCULATED EAGLE DEBUT PRICE",
       "narration": "The 2025-W Uncirculated American Silver Eagle debuted at $91, the highest issue price in the coin's history. It sold 71,621 units in its first week according to USA Mint sales data via CoinNews. That price far exceeds spot silver value, and every dollar above spot is the premium you pay for collectibility.",
       "explanation": "The 2025-W Uncirculated American Silver Eagle debuted at $91, the highest issue price in the coin's history, selling 71,621 units in its first week.",
@@ -24,15 +24,15 @@
     },
     {
       "type": "overlay",
-      "startSec": 37,
-      "endSec": 56,
+      "startSec": 26.153,
+      "endSec": 40.493,
       "text": "NUMISMATIC COINS CARRY PREMIUMS ABOVE SPOT",
       "narration": "Numismatic coins are priced on rarity, grade, and collector demand, not just the metal inside them. A coin graded MS70 can trade for multiples of its melt value. That premium is real money you may never recover if collector demand shifts."
     },
     {
       "type": "stat",
-      "startSec": 56,
-      "endSec": 75,
+      "startSec": 40.493,
+      "endSec": 54.373,
       "text": "10 OZ BAR LOWEST COST PER OUNCE",
       "narration": "A 10 oz silver bar typically carries one of the lowest premiums over spot of any silver product. You get more silver per dollar spent compared to buying individual coins. For investors focused purely on metal weight, bars are the efficient choice.",
       "explanation": "A 10 oz bar has a lower premium over spot than individual coins, making it a cost-efficient way to accumulate silver by weight.",
@@ -43,8 +43,8 @@
     },
     {
       "type": "stat",
-      "startSec": 75,
-      "endSec": 97,
+      "startSec": 54.373,
+      "endSec": 70.806,
       "text": "22 PERCENT GLOBAL SILVER COIN AND BAR DEMAND DROP",
       "narration": "Global silver coin and bar demand fell 22 percent in 2024, hitting a five-year low of 190.9 million ounces. That is a significant pullback from investors who had been buying aggressively in prior years. Softer demand can pressure premiums down, which may actually benefit new buyers entering the market.",
       "explanation": "Global silver coin and bar demand fell 22 percent in 2024 to a five-year low of 190.9 million ounces.",
@@ -58,8 +58,8 @@
     },
     {
       "type": "stat",
-      "startSec": 97,
-      "endSec": 117,
+      "startSec": 70.806,
+      "endSec": 87.919,
       "text": "46 PERCENT USA PHYSICAL SILVER DEMAND DROP",
       "narration": "USA physical silver investment demand dropped 46 percent in 2024, the steepest regional decline worldwide. That means American buyers pulled back harder than anywhere else. Whether that reflects profit-taking, shifting sentiment, or competition from paper silver products remains an open question for investors to watch.",
       "explanation": "USA physical silver investment demand dropped 46 percent, the steepest regional decline in 2024.",
@@ -73,8 +73,8 @@
     },
     {
       "type": "stat",
-      "startSec": 117,
-      "endSec": 139,
+      "startSec": 87.919,
+      "endSec": 106.219,
       "text": "4 PERCENT FURTHER DROP FORECAST FOR 2025",
       "narration": "Silver bar and coin demand was forecast to fall another 4 percent in 2025, potentially reaching a seven-year low of 182 million ounces. Consecutive years of declining retail demand are a meaningful signal. Lower physical demand does not always mean lower prices, but it does affect premiums and resale liquidity.",
       "explanation": "Silver bar and coin demand was forecast to fall another 4 percent in 2025 to a seven-year low of 182 million ounces.",
@@ -88,31 +88,31 @@
     },
     {
       "type": "overlay",
-      "startSec": 139,
-      "endSec": 162,
+      "startSec": 106.219,
+      "endSec": 123.779,
       "text": "BULLION COINS TRACK SPOT PRICE CLOSELY",
       "narration": "Standard bullion coins like the American Silver Eagle or Canadian Maple Leaf trade at a modest premium to spot and are easy to sell to dealers worldwide. Their value moves with the silver price, giving you transparent, liquid exposure to the metal. That predictability is worth a lot in a volatile market."
     },
     {
       "type": "overlay",
-      "startSec": 162,
-      "endSec": 184,
+      "startSec": 123.779,
+      "endSec": 139.812,
       "text": "NUMISMATIC VALUE DEPENDS ON GRADE AND RARITY",
       "narration": "Numismatic value is harder to predict because it depends on grading, population reports, and collector fashion. A coin graded by PCGS or NGC commands more than the same coin in a plain flip. But grading costs money, and the collector market can cool faster than the metal market."
     },
     {
       "type": "overlay",
-      "startSec": 184,
-      "endSec": 205,
+      "startSec": 139.812,
+      "endSec": 156.125,
       "text": "LIQUIDITY DIFFERS BETWEEN BOTH PATHS",
       "narration": "Bullion bars and standard coins sell quickly to any dealer or online marketplace at transparent prices. Numismatic coins require the right buyer willing to pay the premium you paid or more. If you need to sell fast, bullion wins on speed and price certainty every time."
     },
     {
       "type": "question",
-      "startSec": 205,
-      "endSec": 225,
+      "startSec": 156.125,
+      "endSec": 161.545,
       "text": "WHICH PATH MAKES YOUR SILVER INVESTMENT SMARTEST",
-      "narration": "Follow for more silver news.",
+      "narration": "WHICH PATH MAKES YOUR SILVER INVESTMENT SMARTEST? Follow for more silver news.",
       "subtext": "COMMENT BELOW"
     }
   ]

@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "local SEO audit how to do one yourself",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T19:03:49.220Z"
+    },
+    "1": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "local SEO audit how to do one yourself small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-08-17T19:03:49.245Z"
+    },
+    "2": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself 77 customers local\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "local SEO audit how to do one yourself 77 customers local",
+      "prefer": "photo",
+      "updatedAt": "2026-08-17T19:03:49.245Z"
+    },
+    "3": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself audit help identify\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "local SEO audit how to do one yourself audit help identify",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:50.880Z"
+    },
+    "4": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself 100 address correct\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself 100 address correct",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:51.888Z"
+    },
+    "5": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself description write compelling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself description write compelling",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:52.923Z"
+    },
+    "6": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself implementing local business\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself implementing local business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:54.215Z"
+    },
+    "7": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself citations mentions business\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself citations mentions business",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:54.813Z"
+    },
+    "8": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself see local keyword\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself see local keyword",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:56.513Z"
+    },
+    "9": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself regularly update gbp\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself regularly update gbp",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:57.511Z"
+    },
+    "10": {
+      "key": "{\"query\":\"local SEO audit how to do one yourself customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "local SEO audit how to do one yourself customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-17T19:03:58.156Z"
+    }
+  }
+}

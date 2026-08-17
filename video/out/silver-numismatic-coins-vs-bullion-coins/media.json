@@ -1,0 +1,64 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/silver-numismatic-coins-vs-bullion-coins/segment-0.jpg",
+    "source": "local-photo"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/silver-numismatic-coins-vs-bullion-coins/segment-1.jpg",
+    "source": "local-photo"
+  },
+  "2": {
+    "type": "photo",
+    "src": "photos/silver-numismatic-coins-vs-bullion-coins/segment-2.jpg",
+    "source": "local-photo"
+  },
+  "3": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-3.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-3.jpg",
+    "source": "local-video"
+  },
+  "4": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-4.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-4.jpg",
+    "source": "local-video"
+  },
+  "5": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-5.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-5.jpg",
+    "source": "local-video"
+  },
+  "6": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-6.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-6.jpg",
+    "source": "local-video"
+  },
+  "7": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-7.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-7.jpg",
+    "source": "local-video"
+  },
+  "8": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-8.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-8.jpg",
+    "source": "local-video"
+  },
+  "9": {
+    "type": "video",
+    "src": "videos/silver-numismatic-coins-vs-bullion-coins/segment-9.mp4",
+    "thumb": "photos/silver-numismatic-coins-vs-bullion-coins/segment-9.jpg",
+    "source": "local-video"
+  },
+  "10": {
+    "type": "photo",
+    "src": "photos/silver-numismatic-coins-vs-bullion-coins/segment-10.jpg",
+    "source": "local-photo"
+  }
+}

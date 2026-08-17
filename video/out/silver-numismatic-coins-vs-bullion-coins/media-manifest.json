@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver numismatic coins vs bullion coins",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.465Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins the\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver numismatic coins vs bullion coins the",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.667Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins mint\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver numismatic coins vs bullion coins mint",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.668Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins a\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver numismatic coins vs bullion coins a",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.668Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins global\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver numismatic coins vs bullion coins global",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.668Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins us\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver numismatic coins vs bullion coins us",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.668Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver numismatic coins vs bullion coins silver\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "silver numismatic coins vs bullion coins silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.669Z"
+    },
+    "7": {
+      "key": "{\"query\":\"BULLION COINS TRACK SPOT silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "BULLION COINS TRACK SPOT silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.670Z"
+    },
+    "8": {
+      "key": "{\"query\":\"NUMISMATIC VALUE DEPENDS GRADE silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "NUMISMATIC VALUE DEPENDS GRADE silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.670Z"
+    },
+    "9": {
+      "key": "{\"query\":\"LIQUIDITY DIFFERS BETWEEN BOTH silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "LIQUIDITY DIFFERS BETWEEN BOTH silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.670Z"
+    },
+    "10": {
+      "key": "{\"query\":\"WHICH PATH MAKES YOUR silver\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "WHICH PATH MAKES YOUR silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-17T20:21:40.671Z"
+    }
+  }
+}
