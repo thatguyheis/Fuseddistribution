@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Valuation Methods",
+  "takeaway": "Different methods are used to value inherited silver, each with pros and cons.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Spot Price Method",
+      "value": "75%",
+      "metric": "Valuation Method",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "According to the IRS, the spot price method is generally accepted for valuing silver, but a professional appraisal can strengthen your case if there are disputes."
+    },
+    {
+      "label": "Dealer Premiums",
+      "value": "15%",
+      "metric": "Valuation Method",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "For example, a rare coin might have a premium of 20% or more."
+    },
+    {
+      "label": "Assessed Value",
+      "value": "10%",
+      "metric": "Valuation Method",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "An assessed value may be appropriate, especially if the items are not easily sold."
+    }
+  ],
+  "hero_stat": {
+    "value": "75",
+    "label": "Percentage of Valuation Using Spot Price"
+  },
+  "narration": "The article outlines several methods for valuing inherited silver, with the spot price method being the most common. Dealer premiums and assessed values are also considered, depending on the item's condition and rarity. These methods are used to determine the fair market value of the silver for estate tax purposes."
+}
