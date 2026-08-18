@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Review Volume",
+  "takeaway": "Businesses with more Google reviews tend to rank higher in Google Search and Maps.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/seo-for-small-businesses/",
+  "data": [
+    {
+      "label": "Business with 20 Reviews",
+      "value": "30%",
+      "metric": "Local Search Ranking",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Research indicates that businesses with 50 or more reviews are approximately 30% more likely to be selected by customers in Google Maps."
+    },
+    {
+      "label": "Business with 50-100 Reviews",
+      "value": "100",
+      "metric": "Review Count",
+      "unit": "Reviews",
+      "period": "N/A",
+      "evidence": "50-100 reviews are considered a strong indicator of a reputable business."
+    },
+    {
+      "label": "Business with 200+ Reviews",
+      "value": "200+",
+      "metric": "Review Count",
+      "unit": "Reviews",
+      "period": "N/A",
+      "evidence": "200+ reviews demonstrate a high level of customer satisfaction and significantly enhance your visibility."
+    }
+  ],
+  "hero_stat": {
+    "value": "30",
+    "label": "Increased Ranking Likelihood"
+  },
+  "narration": "A sufficient number of Google reviews is crucial for improving visibility in local search results. Businesses with more reviews are more likely to be selected by customers in Google Maps and rank higher in Google Search."
+}

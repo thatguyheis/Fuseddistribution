@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-18 | how-to-get-more-google-reviews-for-your-business | General | how to get more google reviews for your business |
 | 2026-08-17 | service-area-business-seo-guide | General | service area business SEO guide |
 | 2026-08-17 | local-seo-audit-how-to-do-one-yourself | General | local SEO audit how to do one yourself |
 | 2026-08-16 | neighborhood-seo-targeting-specific-areas | General | neighborhood SEO targeting specific areas |
