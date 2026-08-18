@@ -1,9 +1,54 @@
 {
   "slug": "silver-bars-vs-silver-coins-which-is-better",
-  "renderedAt": "2026-06-19T15:33:58.152Z",
+  "renderedAt": "2026-08-18T20:18:15.856Z",
   "hookType": "statement",
   "segmentCount": 12,
-  "totalDuration": 234,
-  "musicTrack": "ambient-02.mp3",
-  "photosUsed": 12
+  "scriptDuration": 160.192,
+  "renderedDuration": 154.282667,
+  "scriptHash": "580f83b36c6b1ae5f9a67132c786c7e85d7d3392e3cd758d9486f26945d50b6c",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09795576387368925
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 10.32,
+      "1": 9.24,
+      "2": 11.88,
+      "3": 15.42,
+      "4": 12.38,
+      "5": 15.34,
+      "6": 14.54,
+      "7": 15.38,
+      "8": 12.46,
+      "9": 17.06,
+      "10": 12.9,
+      "11": 4.64
+    },
+    "totalNarrationSeconds": 151.56
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
+  },
+  "photosUsed": 12,
+  "mediaUsed": 12,
+  "photoCount": 7,
+  "videoCount": 5,
+  "mediaSources": {
+    "local-photo": 7,
+    "local-video": 5
+  }
 }

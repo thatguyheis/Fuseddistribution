@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver bars bullion stacked\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver bars bullion stacked",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.606Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver bar premium price\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver bar premium price",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.652Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver eagle coin close up\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver eagle coin close up",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.652Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver bars vs coins comparison\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver bars vs coins comparison",
+      "prefer": "photo",
+      "updatedAt": "2026-08-18T20:06:38.653Z"
+    },
+    "4": {
+      "key": "{\"query\":\"precious metals investment portfolio\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "precious metals investment portfolio",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.654Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver coin collection bullion\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver coin collection bullion",
+      "prefer": "photo",
+      "updatedAt": "2026-08-18T20:06:38.655Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver storage safe vault\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "silver storage safe vault",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.656Z"
+    },
+    "7": {
+      "key": "{\"query\":\"STORAGE DIFFERS BETWEEN BARS silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "STORAGE DIFFERS BETWEEN BARS silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.658Z"
+    },
+    "8": {
+      "key": "{\"query\":\"COIN silver\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "COIN silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.659Z"
+    },
+    "9": {
+      "key": "{\"query\":\"TYPICAL PREMIUM OVER SPOT silver\",\"prefer\":\"video\",\"segmentType\":\"chart\"}",
+      "source": "local-photo",
+      "query": "TYPICAL PREMIUM OVER SPOT silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.659Z"
+    },
+    "10": {
+      "key": "{\"query\":\"BARS RESERVES COINS FLEXIBILITY silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "BARS RESERVES COINS FLEXIBILITY silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.660Z"
+    },
+    "11": {
+      "key": "{\"query\":\"SILVER BARS COINS BOTH silver\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "SILVER BARS COINS BOTH silver",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T20:06:38.661Z"
+    }
+  }
+}

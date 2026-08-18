@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"how to ask customers for google reviews\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "how to ask customers for google reviews",
+      "prefer": "video",
+      "updatedAt": "2026-08-18T18:29:59.637Z"
+    },
+    "1": {
+      "key": "{\"query\":\"how to ask customers for google reviews building fantastic local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to ask customers for google reviews building fantastic local",
+      "prefer": "photo",
+      "updatedAt": "2026-08-18T18:29:59.667Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to ask customers for google reviews 93 business customers\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to ask customers for google reviews 93 business customers",
+      "prefer": "photo",
+      "updatedAt": "2026-08-18T18:29:59.668Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to ask customers for google reviews fused distribution see\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to ask customers for google reviews fused distribution see",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:01.187Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to ask customers for google reviews potential clients land\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews potential clients land",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:01.915Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to ask customers for google reviews there several simple\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews there several simple",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:02.510Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to ask customers for google reviews about being pushy\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews about being pushy",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:03.858Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to ask customers for google reviews don bombard customers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews don bombard customers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:04.424Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to ask customers for google reviews getting reviews isn\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews getting reviews isn",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:05.093Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to ask customers for google reviews studies show businesses\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews studies show businesses",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:05.734Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to ask customers for google reviews customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "how to ask customers for google reviews customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-18T18:30:06.633Z"
+    }
+  }
+}

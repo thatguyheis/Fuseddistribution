@@ -1,0 +1,67 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-0.jpg",
+    "source": "local-photo"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-1.jpg",
+    "source": "local-photo"
+  },
+  "2": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-2.jpg",
+    "source": "local-photo"
+  },
+  "3": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-3.jpg",
+    "source": "local-photo"
+  },
+  "4": {
+    "type": "video",
+    "src": "videos/silver-bars-vs-silver-coins-which-is-better/segment-4.mp4",
+    "thumb": "photos/silver-bars-vs-silver-coins-which-is-better/segment-4.jpg",
+    "source": "local-video"
+  },
+  "5": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-5.jpg",
+    "source": "local-photo"
+  },
+  "6": {
+    "type": "video",
+    "src": "videos/silver-bars-vs-silver-coins-which-is-better/segment-6.mp4",
+    "thumb": "photos/silver-bars-vs-silver-coins-which-is-better/segment-6.jpg",
+    "source": "local-video"
+  },
+  "7": {
+    "type": "video",
+    "src": "videos/silver-bars-vs-silver-coins-which-is-better/segment-7.mp4",
+    "thumb": "photos/silver-bars-vs-silver-coins-which-is-better/segment-7.jpg",
+    "source": "local-video"
+  },
+  "8": {
+    "type": "video",
+    "src": "videos/silver-bars-vs-silver-coins-which-is-better/segment-8.mp4",
+    "thumb": "photos/silver-bars-vs-silver-coins-which-is-better/segment-8.jpg",
+    "source": "local-video"
+  },
+  "9": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-9.jpg",
+    "source": "local-photo"
+  },
+  "10": {
+    "type": "video",
+    "src": "videos/silver-bars-vs-silver-coins-which-is-better/segment-10.mp4",
+    "thumb": "photos/silver-bars-vs-silver-coins-which-is-better/segment-10.jpg",
+    "source": "local-video"
+  },
+  "11": {
+    "type": "photo",
+    "src": "photos/silver-bars-vs-silver-coins-which-is-better/segment-11.jpg",
+    "source": "local-photo"
+  }
+}
