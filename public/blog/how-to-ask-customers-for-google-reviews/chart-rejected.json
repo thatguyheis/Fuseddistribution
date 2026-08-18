@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "ONE PLAIN-LANGUAGE SENTENCE",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/blog/how-to-ask-customers-for-google-reviews/",
+  "data": [
+    {
+      "label": "93% of consumers trust online reviews",
+      "value": "93%",
+      "metric": "Consumer Trust",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Studies show that 93% of consumers trust online reviews as much as personal recommendations."
+    },
+    {
+      "label": "78% of consumers trust online reviews",
+      "value": "78%",
+      "metric": "Consumer Trust",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Studies show that 78% of consumers trust online reviews as much as personal recommendations."
+    },
+    {
+      "label": "20% increase in inquiries and sales",
+      "value": "20%",
+      "metric": "Sales Increase",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Studies show that businesses with even a few positive reviews see a significant increase in inquiries and sales - around 20% according to some sources."
+    },
+    {
+      "label": "10-20 reviews per month",
+      "value": "10-20",
+      "metric": "Review Rate",
+      "unit": "reviews/month",
+      "period": "N/A",
+      "evidence": "Aim for a rate of around 10-20 reviews per month to maintain a healthy profile."
+    }
+  ],
+  "hero_stat": {
+    "value": "93",
+    "label": "Consumer Trust"
+  },
+  "narration": "Local businesses are increasingly relying on Google Reviews to influence customer decisions. Actively requesting these reviews is a powerful way to build trust and boost visibility. Studies consistently demonstrate the significant impact reviews have on attracting new customers and driving sales."
+}
