@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Google Review Impact",
+  "takeaway": "Responding to negative Google reviews can improve a business's online reputation.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Percentage of Consumers Reading Reviews",
+      "value": "93%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "Studies show that 93% of consumers read online reviews before visiting a business."
+    },
+    {
+      "label": "Percentage of Consumers Who Read Reviews Before Visiting",
+      "value": "85%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "Studies show that 85% of consumers read online reviews before visiting a business."
+    },
+    {
+      "label": "Percentage of Consumers Who Read Reviews Before Visiting (Local)",
+      "value": "88%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "Studies show that 88% of consumers read online reviews before visiting a local business."
+    },
+    {
+      "label": "Percentage of Reviews Based on a Single Interaction",
+      "value": "70%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "A surprising number of reviews, around 70%, are based on a single interaction - a service call, a website visit, or a brief conversation."
+    },
+    {
+      "label": "Percentage Increase in Leads/Sales with Positive Reviews",
+      "value": "20-30%",
+      "metric": "Percentage",
+      "unit": "%",
+      "period": "General",
+      "evidence": "Businesses with consistently positive reviews often see a 20-30% increase in leads and sales."
+    }
+  ],
+  "hero_stat": {
+    "value": "93",
+    "label": "Percentage of Consumers Reading Reviews"
+  },
+  "narration": "Responding to negative Google reviews demonstrates a commitment to customer satisfaction and can improve a business's online reputation. Businesses that respond to reviews are perceived as more trustworthy and reliable, leading to increased customer trust and potential sales."
+}

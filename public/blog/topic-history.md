@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-19 | how-to-respond-to-negative-google-reviews | General | how to respond to negative google reviews |
 | 2026-08-18 | how-to-ask-customers-for-google-reviews | General | how to ask customers for google reviews |
 | 2026-08-18 | how-to-get-more-google-reviews-for-your-business | General | how to get more google reviews for your business |
 | 2026-08-17 | service-area-business-seo-guide | General | service area business SEO guide |
