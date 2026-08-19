@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"local business customer messaging smartphone\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "local business customer messaging smartphone",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T19:46:12.623Z"
+    },
+    "1": {
+      "key": "{\"query\":\"business text message customer communication\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "business text message customer communication",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-19T19:46:14.274Z"
+    },
+    "2": {
+      "key": "{\"query\":\"mobile search google local business\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-video",
+      "query": "mobile search google local business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T19:46:14.274Z"
+    },
+    "3": {
+      "key": "{\"query\":\"timer deadline business response\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "timer deadline business response",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-19T19:46:15.260Z"
+    },
+    "4": {
+      "key": "{\"query\":\"local business owner phone notification\",\"prefer\":\"video\",\"segmentType\":\"chart\"}",
+      "source": "pexels-photo",
+      "query": "local business owner phone notification",
+      "prefer": "video",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-19T19:46:16.599Z"
+    },
+    "5": {
+      "key": "{\"query\":\"welcome message customer service setup\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "welcome message customer service setup",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-19T19:46:17.241Z"
+    },
+    "6": {
+      "key": "{\"query\":\"AUTO REPLIES PROTECT YOUR business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-video",
+      "query": "AUTO REPLIES PROTECT YOUR business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T19:46:17.273Z"
+    },
+    "7": {
+      "key": "{\"query\":\"HAVE MESSAGING business\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "HAVE MESSAGING business",
+      "prefer": "video",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-19T19:46:17.966Z"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "text-message-marketing-local-business",
+  "title": "Text Message Marketing for Local Businesses",
+  "totalDuration": 132.665,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 3.24,
+      "text": "98% OPEN RATE. EMAIL GETS 22%",
+      "narration": "Nine out of ten business texts get opened."
+    },
+    {
+      "type": "stat",
+      "startSec": 3.24,
+      "endSec": 13.667,
+      "text": "90 SECONDS TO READ",
+      "narration": "The average customer reads a business text within 90 seconds of receiving it. That window is faster than any other marketing channel. At the cost of a text message, nothing else even comes close."
+    },
+    {
+      "type": "chart",
+      "startSec": 13.667,
+      "endSec": 26.36,
+      "title": "Message Channel Open and Reach Rates",
+      "bars": [
+        {
+          "label": "Text Message (SMS)",
+          "value": 98
+        },
+        {
+          "label": "Email Newsletter",
+          "value": 22
+        },
+        {
+          "label": "Facebook (organic)",
+          "value": 5
+        },
+        {
+          "label": "Instagram (organic)",
+          "value": 3
+        }
+      ],
+      "narration": "SMS reaches 98 percent of customers who receive it. Email gets 22 percent. Facebook organic posts reach about 5 percent of your followers. Text is not just another channel. It is the one that actually reaches people."
+    },
+    {
+      "type": "stat",
+      "startSec": 26.36,
+      "endSec": 37.82,
+      "text": "45% SMS RESPONSE RATE",
+      "narration": "Text messages get a 45 percent response rate compared to 6 percent for email. For every 100 customers you reach, nearly half respond. No other channel at this price point comes close to that kind of engagement."
+    },
+    {
+      "type": "overlay",
+      "startSec": 37.82,
+      "endSec": 51.613,
+      "text": "TCPA REQUIRES WRITTEN CONSENT",
+      "narration": "Before you send a single marketing text, you need explicit written consent. The Telephone Consumer Protection Act requires it. Fines run up to $1,500 per message for violations. Getting opt-in right is the foundation the whole system sits on."
+    },
+    {
+      "type": "overlay",
+      "startSec": 51.613,
+      "endSec": 64.486,
+      "text": "3 WAYS TO GET LEGAL OPT-IN",
+      "narration": "Three methods work reliably. A checkbox at checkout with clear disclosure language. A keyword opt-in where the customer texts a word to your number. Or a paper sign-up sheet at the counter for service businesses where the customer is on-site."
+    },
+    {
+      "type": "stat",
+      "startSec": 64.486,
+      "endSec": 77.666,
+      "text": "20-30% REPLY RATE DAY ONE",
+      "narration": "The first message goes out same day or next morning. No promotion. Just a direct line back to a real person. This message generates replies 20 to 30 percent of the time. Every reply is a chance to solve a problem before it becomes a negative review."
+    },
+    {
+      "type": "overlay",
+      "startSec": 77.666,
+      "endSec": 87.446,
+      "text": "DAY 3-4 SPECIFIC OFFER",
+      "narration": "Message two fires on day three or four with a specific offer. Ten percent off your next visit works. Come back soon does not. Give them a concrete reason with a loose deadline. A yes reply books itself."
+    },
+    {
+      "type": "overlay",
+      "startSec": 87.446,
+      "endSec": 101.079,
+      "text": "DAY 28-30 REBOOKING ASK",
+      "narration": "The third message fires at day 28 to 30. One-word reply, no friction. A customer who had a good experience a month ago and has not been contacted since is far more likely to rebook. You are reminding someone who already chose you."
+    },
+    {
+      "type": "stat",
+      "startSec": 101.079,
+      "endSec": 113.532,
+      "text": "BELOW 2% OPT-OUT RATE",
+      "narration": "Opt-out rates stay below 2 percent when businesses send four or fewer texts per month. The 3-message sequence keeps you well within that range. More than that and opt-out rates climb fast, damaging your list permanently."
+    },
+    {
+      "type": "stat",
+      "startSec": 113.532,
+      "endSec": 127.485,
+      "text": "STARTS AT $29 PER MONTH",
+      "narration": "SimpleTexting starts at $29 a month for 500 texts. EZTexting runs around $24. Write three message templates once and they run automatically after every new opt-in. The only manual work is replying to the conversations they start."
+    },
+    {
+      "type": "question",
+      "startSec": 127.485,
+      "endSec": 132.665,
+      "text": "IS EMAIL MARKETING DEAD FOR LOCAL BUSINESS?",
+      "narration": "IS EMAIL MARKETING DEAD FOR LOCAL BUSINESS? Follow for more tips to grow your business.",
+      "subtext": "AGREE OR DISAGREE BELOW"
+    }
+  ]
+}

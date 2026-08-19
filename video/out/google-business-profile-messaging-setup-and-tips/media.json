@@ -1,0 +1,42 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-0.jpg",
+    "source": "local-photo"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-1.jpg",
+    "source": "pixabay"
+  },
+  "2": {
+    "type": "video",
+    "src": "videos/google-business-profile-messaging-setup-and-tips/segment-2.mp4",
+    "source": "local-video"
+  },
+  "3": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-3.jpg",
+    "source": "pexels"
+  },
+  "4": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-4.jpg",
+    "source": "pexels"
+  },
+  "5": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-5.jpg",
+    "source": "pexels"
+  },
+  "6": {
+    "type": "video",
+    "src": "videos/google-business-profile-messaging-setup-and-tips/segment-6.mp4",
+    "source": "local-video"
+  },
+  "7": {
+    "type": "photo",
+    "src": "photos/google-business-profile-messaging-setup-and-tips/segment-7.jpg",
+    "source": "pexels"
+  }
+}

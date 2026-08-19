@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"smartphone texting business marketing\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "smartphone texting business marketing",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.492Z"
+    },
+    "1": {
+      "key": "{\"query\":\"SECONDS READ business\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "SECONDS READ business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.541Z"
+    },
+    "2": {
+      "key": "{\"query\":\"small business owner phone customer\",\"prefer\":\"video\",\"segmentType\":\"chart\"}",
+      "source": "local-photo",
+      "query": "small business owner phone customer",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.542Z"
+    },
+    "3": {
+      "key": "{\"query\":\"RESPONSE RATE business\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "RESPONSE RATE business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.542Z"
+    },
+    "4": {
+      "key": "{\"query\":\"local business checkout counter customer\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "local business checkout counter customer",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.543Z"
+    },
+    "5": {
+      "key": "{\"query\":\"WAYS LEGAL business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "WAYS LEGAL business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.544Z"
+    },
+    "6": {
+      "key": "{\"query\":\"business text message follow up\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "business text message follow up",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.544Z"
+    },
+    "7": {
+      "key": "{\"query\":\"SPECIFIC OFFER business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "SPECIFIC OFFER business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.544Z"
+    },
+    "8": {
+      "key": "{\"query\":\"small business marketing mobile\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "small business marketing mobile",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.544Z"
+    },
+    "9": {
+      "key": "{\"query\":\"BELOW RATE business\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "BELOW RATE business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.546Z"
+    },
+    "10": {
+      "key": "{\"query\":\"local business owner smartphone\",\"prefer\":\"video\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "local business owner smartphone",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.546Z"
+    },
+    "11": {
+      "key": "{\"query\":\"EMAIL MARKETING DEAD LOCAL business\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "EMAIL MARKETING DEAD LOCAL business",
+      "prefer": "video",
+      "updatedAt": "2026-08-19T20:18:26.547Z"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "google-business-profile-messaging-setup-and-tips",
+  "title": "How to Set Up Google Business Profile Messaging",
+  "totalDuration": 122.259,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 4.24,
+      "text": "57% PREFER MESSAGING OVER CALLING",
+      "narration": "More than half your customers prefer to message your business, not call it."
+    },
+    {
+      "type": "stat",
+      "startSec": 4.24,
+      "endSec": 18.953,
+      "text": "57% PREFER MESSAGING OVER CALLING",
+      "narration": "57 percent of consumers prefer to message a business rather than call it. That shift already happened. The customers who want to contact you without picking up the phone are already on Google. The question is whether your listing gives them a way to do it.",
+      "explanation": "BrightLocal 2024 found 57 percent of consumers prefer to message a business rather than call",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 57,
+        "label": "Prefer Messaging",
+        "remainder_label": "Prefer Calling"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 18.953,
+      "endSec": 35.853,
+      "text": "60% OF SEARCHES ARE ON MOBILE",
+      "narration": "60 percent of all Google searches happen on mobile. When a mobile user finds your listing, the Message button sits directly next to the Call and Website buttons. One tap starts a conversation. Most businesses have a call button and a website button. Very few have a message button. That gap is an opening.",
+      "explanation": "60 percent of all Google searches happen on mobile, where the GBP Message button is one tap from your listing",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 60,
+        "label": "Mobile Searches",
+        "remainder_label": "Desktop Searches"
+      }
+    },
+    {
+      "type": "stat",
+      "startSec": 35.853,
+      "endSec": 57.46,
+      "text": "24H RESPONSE REQUIREMENT",
+      "narration": "Google requires a response within 24 hours to keep the messaging feature active. If your response rate drops below what Google considers acceptable, you get a warning in your GBP dashboard. If it keeps dropping, Google turns off messaging automatically. You keep your ranking, but you lose the contact channel. The 24-hour window is strict. Build a system around it, not around your schedule.",
+      "explanation": "Google requires a response within 24 hours to keep the messaging feature and badge active on your listing",
+      "graphic_type": "percent_fill",
+      "graphic": {
+        "type": "percent_fill",
+        "value": 24,
+        "label": "Hours to Respond",
+        "remainder_label": "Remaining Day"
+      }
+    },
+    {
+      "type": "chart",
+      "startSec": 57.46,
+      "endSec": 78.813,
+      "title": "Most Common GBP Customer Message Topics",
+      "bars": [
+        {
+          "label": "Business Hours",
+          "value": 95
+        },
+        {
+          "label": "Service Area",
+          "value": 80
+        },
+        {
+          "label": "Pricing Estimates",
+          "value": 68
+        },
+        {
+          "label": "Availability",
+          "value": 55
+        },
+        {
+          "label": "Appointment Booking",
+          "value": 45
+        }
+      ],
+      "narration": "These are the most common topics customers message local businesses about. Business hours and holiday schedules top the list. Service area and pricing estimates come next. Set auto-replies for the top two or three categories that apply to your business. Auto-replies count toward your response rate. Google tracks whether messages are answered, not whether a human answered them."
+    },
+    {
+      "type": "overlay",
+      "startSec": 78.813,
+      "endSec": 98.006,
+      "text": "WRITE A SPECIFIC WELCOME MESSAGE",
+      "narration": "The welcome message sends automatically the moment a customer opens a chat with your business. Write it to confirm you received the message and set a reply time expectation. A good welcome message says something like: Hi, thanks for reaching out. We got your message and typically reply within a few hours during business hours. That builds trust. A generic welcome message says nothing.",
+      "explanation": "Welcome messages that confirm receipt and set a reply time expectation build more trust than generic greetings",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "overlay",
+      "startSec": 98.006,
+      "endSec": 116.919,
+      "text": "AUTO-REPLIES PROTECT YOUR RESPONSE RATE",
+      "narration": "Auto-replies are keyword-triggered responses for your most common questions. If most of your incoming messages ask about your hours or service area, an auto-reply can answer those before you need to respond manually. This protects your response rate outside business hours. Google does not care if a human answered. It cares if the message was answered.",
+      "explanation": "Keyword-triggered auto-replies for common questions count toward your response rate and protect your messaging badge outside business hours",
+      "graphic_type": "none",
+      "graphic": {
+        "type": "none"
+      }
+    },
+    {
+      "type": "question",
+      "startSec": 116.919,
+      "endSec": 122.259,
+      "text": "DO YOU HAVE GBP MESSAGING ON?",
+      "narration": "DO YOU HAVE GBP MESSAGING ON? Follow for more tips to grow your business.",
+      "subtext": "TYPE YES OR NO BELOW"
+    }
+  ]
+}
