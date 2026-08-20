@@ -140,6 +140,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-20 | first-majestic-silver-vs-physical-silver-investment | General | First Majestic Silver vs physical silver investment |
 | 2026-08-18 | how-to-divide-silver-in-an-estate-fairly | General | how to divide silver in an estate fairly |
 | 2026-08-17 | how-to-value-inherited-silver-for-estate-purposes | General | how to value inherited silver for estate purposes |
 | 2026-08-16 | how-to-calculate-your-average-cost-per-ounce-silver | General | how to calculate your average cost per ounce silver |

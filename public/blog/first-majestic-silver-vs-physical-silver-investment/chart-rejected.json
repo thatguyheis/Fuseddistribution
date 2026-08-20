@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "ONE PLAIN-LANGUAGE SENTENCE",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.fuseddistribution.com/silver",
+  "data": [
+    {
+      "label": "First Majestic Silver Production",
+      "value": "40 million ounces",
+      "metric": "ounces of silver",
+      "unit": "ounces",
+      "period": "most recent report",
+      "evidence": "As of their most recent report, they\u2019ve produced over 40 million ounces of silver."
+    },
+    {
+      "label": "Average Silver Spot Price",
+      "value": "28.70",
+      "metric": "price",
+      "unit": "USD/ounce",
+      "period": "2023",
+      "evidence": "According to a 2023 analysis, the average spot price of one ounce of silver was approximately $28.70."
+    },
+    {
+      "label": "Mining Stock Volatility",
+      "value": "High",
+      "metric": "volatility",
+      "unit": "N/A",
+      "period": "N/A",
+      "evidence": "Mining stocks, like those representing First Majestic, are inherently volatile."
+    },
+    {
+      "label": "Physical Silver Storage",
+      "value": "Your responsibility",
+      "metric": "Storage",
+      "unit": "N/A",
+      "period": "N/A",
+      "evidence": "You are responsible for securing and insuring your silver holdings."
+    }
+  ],
+  "hero_stat": {
+    "value": "40 million",
+    "label": "Silver Production"
+  },
+  "narration": "First Majestic Silver operates several mines primarily located in Mexico. Investing in First Majestic means you\u2019re participating in the silver supply chain. Physical silver, conversely, can serve as a hedge against inflation and economic instability. Silver tends to maintain its value during periods of market turmoil."
+}
