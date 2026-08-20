@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "First Majestic Silver vs physical silver investment",
+      "prefer": "video",
+      "updatedAt": "2026-08-20T19:06:10.714Z"
+    },
+    "1": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "First Majestic Silver vs physical silver investment considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-20T19:06:10.738Z"
+    },
+    "2": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment essentially buying shares\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "First Majestic Silver vs physical silver investment essentially buying shares",
+      "prefer": "photo",
+      "updatedAt": "2026-08-20T19:06:10.738Z"
+    },
+    "3": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment investing first majestic\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "First Majestic Silver vs physical silver investment investing first majestic",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:11.813Z"
+    },
+    "4": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment choice form coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment choice form coins",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:12.855Z"
+    },
+    "5": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment understanding objectives guide\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment understanding objectives guide",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:13.416Z"
+    },
+    "6": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment understand silver pricing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment understand silver pricing",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:14.887Z"
+    },
+    "7": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment failing understand risks\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment failing understand risks",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:15.464Z"
+    },
+    "8": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment browse our extensive\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment browse our extensive",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:16.049Z"
+    },
+    "9": {
+      "key": "{\"query\":\"First Majestic Silver vs physical silver investment customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "First Majestic Silver vs physical silver investment customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T19:06:16.727Z"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals",
+      "prefer": "video",
+      "updatedAt": "2026-08-20T18:29:36.197Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals looking way invest\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals looking way invest",
+      "prefer": "photo",
+      "updatedAt": "2026-08-20T18:29:36.256Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals 5 to 20\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals 5 to 20",
+      "prefer": "photo",
+      "updatedAt": "2026-08-20T18:29:36.257Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals 1 5 revenue\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals 1 5 revenue",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:37.269Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals 31 wheaton precious\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals 31 wheaton precious",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:38.516Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals 1 9x silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals 1 9x silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:39.900Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals while silver royalty\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals while silver royalty",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:40.981Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals diversify portfolio don\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals diversify portfolio don",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:41.582Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals 4 silver annually\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals 4 silver annually",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:42.204Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals fused distribution encourage\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals fused distribution encourage",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:43.080Z"
+    },
+    "10": {
+      "key": "{\"query\":\"silver royalty companies explained Wheaton Precious Metals customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "silver royalty companies explained Wheaton Precious Metals customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-20T18:29:43.820Z"
+    }
+  }
+}

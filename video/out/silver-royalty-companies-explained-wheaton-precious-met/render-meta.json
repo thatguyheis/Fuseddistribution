@@ -1,0 +1,54 @@
+{
+  "slug": "silver-royalty-companies-explained-wheaton-precious-met",
+  "renderedAt": "2026-08-20T18:38:01.147Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 205.785,
+  "renderedDuration": 200.384,
+  "scriptHash": "163e8c56bdb554c26511b793760dd67563fe209b0011d4a0a8ecacffe58e66ce",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-vastness-184.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05970765237835921
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 2,
+      "1": 23.72,
+      "2": 18.44,
+      "3": 21.84,
+      "4": 25.96,
+      "5": 20.86,
+      "6": 26.08,
+      "7": 23.96,
+      "8": 21.16,
+      "9": 8.8,
+      "10": 5
+    },
+    "totalNarrationSeconds": 197.82
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/vastness-184/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 1,
+    "pexels": 7
+  }
+}
