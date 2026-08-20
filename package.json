@@ -51,10 +51,10 @@
     "admin:dev": "wrangler dev --local --port 8787"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.16.17",
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
     "@types/node": "^25.9.3",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.3",
     "vitest": "^4.1.9",
-    "wrangler": "^4.102.0"
+    "wrangler": "^4.125.0"
   }
 }
