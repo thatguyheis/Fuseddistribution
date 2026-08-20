@@ -2,6 +2,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync, readdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeOperatingDate } from './lib/operating-date.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const systemRoot = join(repoRoot, 'ops', 'profit-system');
@@ -10,6 +11,9 @@ const eventsPath = join(systemRoot, 'events.jsonl');
 const rulesPath = join(systemRoot, 'learned-rules.json');
 const reportsRoot = join(systemRoot, 'reports');
 const bufferMetricsRoot = join(systemRoot, 'buffer-metrics');
+const blogResearchRoot = join(repoRoot, 'public', 'blog', 'research');
+const blogPostsPath = join(repoRoot, 'public', 'blog', 'posts.json');
+const reelOutputRoot = join(repoRoot, 'video', 'out');
 
 function fail(message) {
   throw new Error(message);
@@ -31,6 +35,10 @@ function readJson(path) {
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
+function readJsonIfExists(path, fallback = null) {
+  return existsSync(path) ? readJson(path) : fallback;
+}
+
 function readJsonLines(path) {
   if (!existsSync(path)) return [];
   return readFileSync(path, 'utf8')
@@ -41,12 +49,6 @@ function readJsonLines(path) {
       try { return JSON.parse(line); }
       catch (error) { fail(`${path}:${index + 1}: ${error.message}`); }
     });
-}
-
-function isoDate(value = new Date()) {
-  const date = value instanceof Date ? value : new Date(`${value}T12:00:00Z`);
-  if (Number.isNaN(date.getTime())) fail(`Invalid date: ${value}`);
-  return date.toISOString().slice(0, 10);
 }
 
 function finiteNumber(value, label) {
@@ -64,7 +66,7 @@ function normalizeEvent(raw) {
   return {
     id: raw.id || crypto.randomUUID(),
     occurredAt: raw.occurredAt || new Date().toISOString(),
-    date: isoDate(raw.date || new Date()),
+    date: normalizeOperatingDate(raw.date || new Date()),
     kind: raw.kind,
     type: raw.type,
     fingerprint: raw.fingerprint,
@@ -178,7 +180,142 @@ export function buildLeadingIndicatorAudit(date, snapshots, config) {
   };
 }
 
-export function buildAudit(date, events, config, snapshots = []) {
+export function evaluateBlogPublicationState({ date, queue, pending, completeExists, registeredSlugs = [] }) {
+  const expectedSlugs = Array.isArray(queue?.posts)
+    ? queue.posts.map((post) => post?.slug).filter(Boolean)
+    : [];
+  const pendingRemaining = Array.isArray(pending?.remaining)
+    ? pending.remaining.filter(Boolean)
+    : [];
+  const blockedSlugs = Array.isArray(queue?.blockedSlugs)
+    ? [...new Set(queue.blockedSlugs.filter(Boolean))]
+    : [];
+  const registeredSet = new Set(registeredSlugs);
+  const blockedSet = new Set(blockedSlugs);
+  const registeredQueueSlugs = expectedSlugs.filter((slug) => registeredSet.has(slug));
+  const blockedQueueSlugs = expectedSlugs.filter((slug) => !registeredSet.has(slug) && blockedSet.has(slug));
+  const missingRegisteredSlugs = expectedSlugs.filter((slug) => !registeredSet.has(slug));
+  const unaccountedQueueSlugs = expectedSlugs.filter((slug) => !registeredSet.has(slug) && !blockedSet.has(slug));
+  const hardStops = [];
+  if (pendingRemaining.length) {
+    hardStops.push({
+      type: 'incomplete_blog_checkpoint',
+      fingerprint: `blog-pending-${date}`,
+      evidence: `public/blog/research/${date}-pending.json still lists ${pendingRemaining.length} remaining slug(s): ${pendingRemaining.join(', ')}.`,
+    });
+  } else if (expectedSlugs.length && unaccountedQueueSlugs.length) {
+    hardStops.push({
+      type: 'incomplete_blog_registration',
+      fingerprint: `blog-registration-${date}`,
+      evidence: completeExists
+        ? `public/blog/research/${date}-complete.json exists, but expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for ${date}: ${unaccountedQueueSlugs.join(', ')}.`
+        : `Expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for ${date}: ${unaccountedQueueSlugs.join(', ')}.`,
+    });
+  }
+  return {
+    date,
+    expectedSlugs,
+    pendingRemaining,
+    blockedSlugs,
+    registeredQueueSlugs,
+    blockedQueueSlugs,
+    missingRegisteredSlugs,
+    unaccountedQueueSlugs,
+    completeExists,
+    completionStatus: hardStops.length ? 'incomplete' : 'complete',
+    hardStops,
+  };
+}
+
+export function evaluateReelReleaseState({ registeredSlugs = [], releaseQaBySlug = {} }) {
+  const missingReleaseQaSlugs = [];
+  const manualCaptionReviewPendingSlugs = [];
+  const otherNotReadySlugs = [];
+  const readyForPostingSlugs = [];
+
+  for (const slug of registeredSlugs) {
+    const releaseQa = releaseQaBySlug[slug];
+    if (!releaseQa) {
+      missingReleaseQaSlugs.push(slug);
+    } else if (releaseQa.readyForPosting === true) {
+      readyForPostingSlugs.push(slug);
+    } else if (releaseQa.manualCaptionReview !== true) {
+      manualCaptionReviewPendingSlugs.push(slug);
+    } else {
+      otherNotReadySlugs.push(slug);
+    }
+  }
+
+  return {
+    expectedSlugs: registeredSlugs,
+    readyForPostingSlugs,
+    missingReleaseQaSlugs,
+    manualCaptionReviewPendingSlugs,
+    otherNotReadySlugs,
+    completionStatus: missingReleaseQaSlugs.length || manualCaptionReviewPendingSlugs.length || otherNotReadySlugs.length
+      ? 'blocked'
+      : 'ready',
+  };
+}
+
+export function buildOperationalPenaltyEvents({ date, operationalState = {}, existingEvents = [], occurredAt = new Date().toISOString() }) {
+  const blockedSlugs = operationalState.blogPublication?.blockedQueueSlugs || [];
+  if (!blockedSlugs.length) return [];
+
+  const fingerprint = 'blog-quality-gate-blocked';
+  const alreadyRecorded = existingEvents.some((event) => event.date === date && event.fingerprint === fingerprint);
+  if (alreadyRecorded) return [];
+
+  return [normalizeEvent({
+    occurredAt,
+    date,
+    kind: 'penalty',
+    type: 'missed_checkpoint',
+    fingerprint,
+    value: blockedSlugs.length,
+    evidence: `The ${date} blog queue has ${blockedSlugs.length} quality-blocked slug(s) archived below .workflow-blocked/${date}: ${blockedSlugs.join(', ')}.`,
+    source: 'local_checkpoint',
+    attributable: true,
+    notes: 'Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.',
+  })];
+}
+
+function readOperationalState(date) {
+  const queue = readJsonIfExists(join(blogResearchRoot, `${date}-queue.json`));
+  const pending = readJsonIfExists(join(blogResearchRoot, `${date}-pending.json`));
+  const completeExists = existsSync(join(blogResearchRoot, `${date}-complete.json`));
+  const posts = readJsonIfExists(blogPostsPath, []);
+  const blockedRoot = join(repoRoot, '.workflow-blocked', date);
+  const registeredSlugs = Array.isArray(posts)
+    ? posts.map((post) => post?.slug).filter(Boolean)
+    : [];
+  const blockedSlugs = existsSync(blockedRoot)
+    ? [...new Set(readdirSync(blockedRoot)
+      .map((entry) => join(blockedRoot, entry, '_status.json'))
+      .filter((path) => existsSync(path))
+      .map((path) => readJsonIfExists(path))
+      .map((status) => status?.slug)
+      .filter(Boolean))]
+    : [];
+  const blogPublication = evaluateBlogPublicationState({
+    date,
+    queue: queue ? { ...queue, blockedSlugs } : { blockedSlugs },
+    pending,
+    completeExists,
+    registeredSlugs,
+  });
+  const releaseQaBySlug = Object.fromEntries(blogPublication.registeredQueueSlugs
+    .map((slug) => [slug, readJsonIfExists(join(reelOutputRoot, slug, 'release-qa.json'))]));
+  return {
+    blogPublication,
+    reelRelease: evaluateReelReleaseState({
+      registeredSlugs: blogPublication.registeredQueueSlugs,
+      releaseQaBySlug,
+    }),
+  };
+}
+
+export function buildAudit(date, events, config, snapshots = [], operationalState = {}) {
   const history = [...events].sort((a, b) => a.occurredAt.localeCompare(b.occurredAt));
   const scored = history.map((event) => ({ ...event, ...scoreEvent(event, history, config) }));
   const todayEvents = scored.filter((event) => event.date === date);
@@ -192,7 +329,12 @@ export function buildAudit(date, events, config, snapshots = []) {
   const repeatedFailures = todayEvents
     .filter((event) => event.kind === 'penalty' && event.multiplier > 1)
     .map((event) => ({ fingerprint: event.fingerprint, multiplier: event.multiplier, type: event.type }));
-  const hardStops = todayEvents.filter((event) => ['critical_rule_violation', 'false_success_claim', 'security_or_privacy_violation'].includes(event.type));
+  const eventHardStops = todayEvents.filter((event) => ['critical_rule_violation', 'false_success_claim', 'security_or_privacy_violation'].includes(event.type));
+  const operationalHardStops = operationalState.blogPublication?.hardStops || [];
+  const hardStops = [
+    ...eventHardStops.map((event) => ({ type: event.type, fingerprint: event.fingerprint, evidence: event.evidence })),
+    ...operationalHardStops,
+  ];
   const improvementCandidates = [];
   const proposedFingerprints = new Set();
   for (const event of todayEvents.filter((candidate) => candidate.kind === 'penalty')) {
@@ -200,7 +342,8 @@ export function buildAudit(date, events, config, snapshots = []) {
       && candidate.fingerprint === event.fingerprint
       && candidate.date <= date
       && daysBetween(date, candidate.date) <= config.repeatPenalty.lookbackDays).length;
-    if ((occurrences >= config.promotionPolicy.minimumRepeatedFailures || hardStops.includes(event))
+    if ((occurrences >= config.promotionPolicy.minimumRepeatedFailures
+      || eventHardStops.some((hardStop) => hardStop.id === event.id))
       && !proposedFingerprints.has(event.fingerprint)) {
       proposedFingerprints.add(event.fingerprint);
       improvementCandidates.push({
@@ -233,26 +376,34 @@ export function buildAudit(date, events, config, snapshots = []) {
     rewards: todayEvents.filter((event) => event.kind === 'reward'),
     penalties: todayEvents.filter((event) => event.kind === 'penalty'),
     repeatedFailures,
-    hardStops: hardStops.map((event) => ({ type: event.type, fingerprint: event.fingerprint, evidence: event.evidence })),
+    hardStops,
+    operationalState,
     improvementCandidates,
     sopMutationAllowed: hardStops.length === 0,
   };
 }
 
-function markdownReport(audit) {
-  const money = audit.rewards
+export function formatRevenueProfitEvidence(rewards) {
+  const moneyEvents = rewards
     .filter((event) => ['gross_profit_usd', 'attributed_revenue_usd'].includes(event.type))
-    .reduce((sum, event) => sum + event.value, 0);
+  if (!moneyEvents.length) return 'unavailable';
+  const money = moneyEvents.reduce((sum, event) => sum + event.value, 0);
+  return `$${money.toFixed(2)}`;
+}
+
+export function markdownReport(audit) {
+  const moneyEvidence = formatRevenueProfitEvidence(audit.rewards);
   const lines = [
     `# Daily Profit and SOP Audit — ${audit.date}`,
     '',
     `- Score: **${audit.score.toFixed(2)}** (raw ${audit.rawScore.toFixed(2)})`,
     `- Comparison: **${audit.comparison.direction}** (${audit.comparison.sampleDays} prior comparable day(s))`,
-    `- Revenue/profit evidence recorded: **$${money.toFixed(2)}**`,
+    `- Revenue/profit evidence recorded: **${moneyEvidence}**`,
     `- Buffer leading-indicator score: **${audit.leadingIndicators.score.toFixed(2)}** (${audit.leadingIndicators.status})`,
     `- Rewards: **${audit.rewards.length}**`,
     `- Penalties: **${audit.penalties.length}**`,
     `- Hard stops: **${audit.hardStops.length}**`,
+    `- Completion status: **${audit.operationalState?.blogPublication?.completionStatus || 'unknown'}**`,
     '',
     '## Reward Evidence',
     '',
@@ -269,6 +420,31 @@ function markdownReport(audit) {
       : '- No Buffer performance snapshot is available for this date.',
     `- Comparable normalized measurements: ${audit.leadingIndicators.comparisons.length}.`,
     audit.leadingIndicators.sourceLagNotice ? `- Freshness: ${audit.leadingIndicators.sourceLagNotice}` : '- Freshness: unavailable.',
+    '',
+    '## Operational State',
+    '',
+    ...(audit.operationalState?.blogPublication?.expectedSlugs?.length
+      ? [
+        `- Blog queue expected slugs: ${audit.operationalState.blogPublication.expectedSlugs.length}.`,
+        `- Blog queue registered in posts.json: ${audit.operationalState.blogPublication.registeredQueueSlugs.length}.`,
+        audit.operationalState.blogPublication.pendingRemaining.length
+          ? `- Pending blog slugs still open: ${audit.operationalState.blogPublication.pendingRemaining.join(', ')}.`
+          : '- No pending blog slugs remain for this date.',
+        audit.operationalState.blogPublication.completeExists
+          ? '- A dated complete marker exists for this operating day.'
+          : '- No dated complete marker exists for this operating day.',
+      ]
+      : ['- No dated blog queue was found for this operating day.']),
+    `- Reel release checkpoint: ${audit.operationalState?.reelRelease?.completionStatus || 'unavailable'}.`,
+    ...(audit.operationalState?.reelRelease?.manualCaptionReviewPendingSlugs?.length
+      ? [`- Manual caption review pending: ${audit.operationalState.reelRelease.manualCaptionReviewPendingSlugs.join(', ')}.`]
+      : []),
+    ...(audit.operationalState?.reelRelease?.missingReleaseQaSlugs?.length
+      ? [`- Missing reel release QA: ${audit.operationalState.reelRelease.missingReleaseQaSlugs.join(', ')}.`]
+      : []),
+    ...(audit.operationalState?.reelRelease?.otherNotReadySlugs?.length
+      ? [`- Reels not ready for another release-QA reason: ${audit.operationalState.reelRelease.otherNotReadySlugs.join(', ')}.`]
+      : []),
     '',
     '## Improvement Candidates',
     '',
@@ -304,7 +480,7 @@ function record(args) {
 }
 
 function audit(args) {
-  const date = isoDate(args.date || new Date());
+  const date = normalizeOperatingDate(args.date || new Date());
   const config = readJson(configPath);
   const events = readJsonLines(eventsPath).map(normalizeEvent);
   const snapshots = existsSync(bufferMetricsRoot)
@@ -312,7 +488,10 @@ function audit(args) {
       .filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/.test(name))
       .map((name) => readJson(join(bufferMetricsRoot, name)))
     : [];
-  const result = buildAudit(date, events, config, snapshots);
+  const operationalState = readOperationalState(date);
+  const operationalPenaltyEvents = buildOperationalPenaltyEvents({ date, operationalState, existingEvents: events });
+  for (const event of operationalPenaltyEvents) appendFileSync(eventsPath, `${JSON.stringify(event)}\n`);
+  const result = buildAudit(date, [...events, ...operationalPenaltyEvents], config, snapshots, operationalState);
   mkdirSync(reportsRoot, { recursive: true });
   writeFileSync(join(reportsRoot, `${date}.json`), `${JSON.stringify(result, null, 2)}\n`);
   writeFileSync(join(reportsRoot, `${date}.md`), markdownReport(result));

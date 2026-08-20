@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Daily blog pipeline — runs via launchd at 9 AM.
-# Per-post mode: each post is a separate Claude call with local commit handoff.
-# Pre-flight session probe before each post prevents wasted runs on limit hits.
+# The scheduled path is provider-independent: local drafting plus deterministic
+# gates, with Codex owning recovery, review, and operational follow-through.
 
 PROJECT_DIR="/Users/nick/projects/fuseddistribution"
 LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
@@ -9,22 +9,49 @@ LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
 export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
 AUTO_DEPLOY="${BLOG_AUTO_DEPLOY:-0}"
 GIT_SYNC="${BLOG_GIT_SYNC:-0}"
-HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
-CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
+# Claude Code is no longer an available production dependency. Intentionally
+# override stale retry plists or shell environments that still advertise it.
+HERMES_TAKEOVER="1"
+CLAUDE_ENABLED="0"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
 HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
 PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
 VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
 VERIFY_DELAY_SECONDS="${BLOG_VERIFY_DELAY_SECONDS:-15}"
+POST_TIMEOUT_SECONDS="${BLOG_POST_TIMEOUT_SECONDS:-1800}"
+MAX_POST_ATTEMPTS="${BLOG_MAX_POST_ATTEMPTS:-3}"
+RETRY_DELAY_SECONDS="${BLOG_RETRY_DELAY_SECONDS:-900}"
 RUN_DATE_OVERRIDE="${BLOG_RUN_DATE:-}"
 export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM HERMES_LOCAL_MODEL
 
+SELF_LABEL="${XPC_SERVICE_NAME:-}"
+RETRY_LABEL="com.nick.daily-blog-reel.retry"
+
 # ── Retry plist cleanup ────────────────────────────────────────────────────────
-launchctl bootout "gui/$(id -u)/com.nick.daily-blog-reel.retry" 2>/dev/null
-rm -f "$HOME/Library/LaunchAgents/com.nick.daily-blog-reel.retry.plist"
+# `launchctl bootout` on your OWN currently-running label SIGTERMs this process
+# immediately -- before this line even returns, let alone before the "===" log
+# line below. When launchd fires the retry job itself, XPC_SERVICE_NAME equals
+# RETRY_LABEL and this used to self-kill the run silently before it logged
+# anything: the exact cause of the multi-week backlog fixed 2026-07-22 (see
+# BLOG-SOP.md #20). Only clean up the retry registration when we are NOT it.
+if [[ "$SELF_LABEL" != "$RETRY_LABEL" ]]; then
+  launchctl bootout "gui/$(id -u)/${RETRY_LABEL}" 2>/dev/null
+  rm -f "$HOME/Library/LaunchAgents/${RETRY_LABEL}.plist"
+fi
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 notify() { osascript -e "display notification \"$2\" with title \"Blog pipeline: $1\"" 2>/dev/null || true }
+retry_launchd_state_matches() {
+  local label="$1"
+  local expected_date="$2"
+  local expected_hour="$3"
+  local expected_min="$4"
+  local state
+  state=$(launchctl print "gui/$(id -u)/${label}" 2>&1) || return 1
+  print -r -- "$state" | grep -Fq "BLOG_RUN_DATE => ${expected_date}" || return 1
+  print -r -- "$state" | grep -Eq "\"Hour\" => ${expected_hour}\\b" || return 1
+  print -r -- "$state" | grep -Eq "\"Minute\" => ${expected_min}\\b" || return 1
+}
 
 log_rotate() {
   if [[ -f "$LOG_FILE" && $(stat -f%z "$LOG_FILE" 2>/dev/null || echo 0) -gt 5242880 ]]; then
@@ -65,7 +92,7 @@ PY
 
 schedule_retry() {
   local reset_raw="$1"
-  local sleep_secs="${2:-21600}"
+  local sleep_secs="${2:-$RETRY_DELAY_SECONDS}"
   if [[ -n "$reset_raw" ]]; then
     local reset_epoch
     reset_epoch=$(date -j -f '%I:%M%p' \
@@ -78,9 +105,9 @@ schedule_retry() {
       sleep_secs=$(( reset_epoch - now_epoch + 600 ))
     fi
   fi
-  local retry_epoch=$(( $(date '+%s') + sleep_secs ))
-  local retry_hour=$(( 10#$(date -r "$retry_epoch" '+%H') ))
-  local retry_min=$(( 10#$(date -r "$retry_epoch" '+%M') ))
+  local retry_epoch=$(( $(TZ=America/Los_Angeles date '+%s') + sleep_secs ))
+  local retry_hour=$(( 10#$(TZ=America/Los_Angeles date -r "$retry_epoch" '+%H') ))
+  local retry_min=$(( 10#$(TZ=America/Los_Angeles date -r "$retry_epoch" '+%M') ))
   local retry_label="com.nick.daily-blog-reel.retry"
   local retry_plist="$HOME/Library/LaunchAgents/${retry_label}.plist"
   cat > "$retry_plist" <<PLIST
@@ -120,6 +147,26 @@ schedule_retry() {
 </dict>
 </plist>
 PLIST
+  write_retry_checkpoint "$retry_epoch" "$retry_hour" "$retry_min"
+  if [[ "$SELF_LABEL" == "$retry_label" ]]; then
+    # We ARE the running retry job rescheduling itself for the next date.
+    # `bootout` on our own label kills us before bootstrap ever runs (see
+    # top-of-script comment). Defer the reload to a detached watcher that
+    # fires only after this process (our own PID) has actually exited, so
+    # the swap is race-free instead of a same-process self-kill.
+    local my_pid=$$
+    nohup /bin/zsh "$PROJECT_DIR/scripts/reload-retry-launchagent.sh" \
+      --wait-pid "$my_pid" \
+      --label "$retry_label" \
+      --plist "$retry_plist" \
+      --expected-date "$TODAY" \
+      --expected-hour "$retry_hour" \
+      --expected-minute "$retry_min" \
+      --log-file "$LOG_FILE" >/dev/null 2>&1 < /dev/null &
+    disown || true
+    echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now) — deferred reload watcher armed" >> "$LOG_FILE"
+    return 0
+  fi
   launchctl bootout "gui/$(id -u)/${retry_label}" 2>/dev/null
   local bootstrap_err bootstrap_rc
   bootstrap_err=$(launchctl bootstrap "gui/$(id -u)" "$retry_plist" 2>&1)
@@ -129,9 +176,9 @@ PLIST
     notify "retry failed" "Could not schedule ${retry_hour}:$(printf '%02d' "$retry_min") catch-up run — check daily-blog-reel.log"
     return 1
   fi
-  if ! launchctl list "$retry_label" >/dev/null 2>&1; then
-    echo "RETRY SCHEDULE FAILED: bootstrap returned 0 but ${retry_label} is not in launchctl list" >> "$LOG_FILE"
-    notify "retry failed" "Catch-up job did not register with launchd — check daily-blog-reel.log"
+  if ! retry_launchd_state_matches "$retry_label" "$TODAY" "$retry_hour" "$retry_min"; then
+    echo "RETRY SCHEDULE FAILED: bootstrap returned 0 but ${retry_label} did not load expected date/time (${TODAY} ${retry_hour}:$(printf '%02d' "$retry_min"))" >> "$LOG_FILE"
+    notify "retry failed" "Catch-up job did not load the expected retry state — check daily-blog-reel.log"
     return 1
   fi
   echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now) — confirmed loaded" >> "$LOG_FILE"
@@ -141,17 +188,66 @@ write_pending() {
   local pending_file="$1"
   shift
   local arr_json=""
+  local attempts_json
+  attempts_json=$(python3 - "$pending_file" <<'PY' 2>/dev/null || echo '{}'
+import json
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+try:
+    data = json.loads(path.read_text())
+except Exception:
+    data = {}
+print(json.dumps(data.get("attempts", {}), separators=(",", ":")))
+PY
+  )
   for s in "$@"; do
-    arr_json+="\"$s\","
+    arr_json+="\"${s}\","
   done
   arr_json="[${arr_json%,}]"
   cat > "$pending_file" <<JSON
 {
-  "date": "${TODAY:-$(date +%Y-%m-%d)}",
+  "date": "${TODAY:-$(TZ=America/Los_Angeles date +%F)}",
   "remaining": $arr_json,
-  "interrupted_at": "$(date -u +%Y-%m-%dT%H:%M:%S)"
+  "attempts": $attempts_json,
+  "interrupted_at": "$(TZ=America/Los_Angeles date +%Y-%m-%dT%H:%M:%S%z)"
 }
 JSON
+}
+
+increment_attempt() {
+  local pending_file="$1"
+  local slug="$2"
+  python3 - "$pending_file" "$slug" <<'PY'
+import json
+import os
+import sys
+import tempfile
+from pathlib import Path
+
+path = Path(sys.argv[1])
+slug = sys.argv[2]
+try:
+    data = json.loads(path.read_text())
+except Exception:
+    data = {"date": "", "remaining": []}
+attempts = data.setdefault("attempts", {})
+attempts[slug] = int(attempts.get(slug, 0)) + 1
+fd, temp_name = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
+try:
+    with os.fdopen(fd, "w") as handle:
+        json.dump(data, handle, indent=2)
+        handle.write("\n")
+    os.replace(temp_name, path)
+except Exception:
+    try:
+        os.unlink(temp_name)
+    except FileNotFoundError:
+        pass
+    raise
+print(attempts[slug])
+PY
 }
 
 remaining_from() {
@@ -186,10 +282,11 @@ verify_live_slug() {
 
 quarantine_post_dir() {
   local slug="$1"
+  local reason="${2:-blocked}"
   local src="public/blog/$slug"
   [[ -d "$src" ]] || return 0
-  local dest_root=".workflow-blocked/$(date +%Y-%m-%d)"
-  local dest="$dest_root/$slug-$(date +%H%M%S)"
+  local dest_root=".workflow-blocked/$(TZ=America/Los_Angeles date +%F)"
+  local dest="$dest_root/$slug-$(date +%H%M%S)-$reason"
   mkdir -p "$dest_root"
   mv "$src" "$dest"
   echo "QUARANTINED: $slug artifacts moved to $dest" >> "$LOG_FILE"
@@ -197,7 +294,7 @@ quarantine_post_dir() {
 
 # ── Log rotation + header ─────────────────────────────────────────────────────
 log_rotate
-echo "\n=== $(date) ===" >> "$LOG_FILE"
+echo "\n=== $(TZ=America/Los_Angeles date '+%F %T %Z') ===" >> "$LOG_FILE"
 if [[ "$HERMES_TAKEOVER" == "1" ]]; then
   echo "Mode: HERMES_TAKEOVER=1, local LLM=$LOCAL_LLM" >> "$LOG_FILE"
 fi
@@ -233,7 +330,7 @@ cd "$PROJECT_DIR" || exit 1
 
 # Checkpoint today's queue before selecting an older pending day. Without this,
 # backlog recovery can consume the only daily launch and silently skip today.
-CALENDAR_TODAY=$(date '+%Y-%m-%d')
+CALENDAR_TODAY=$(TZ=America/Los_Angeles date +%F)
 CALENDAR_QUEUE="public/blog/research/${CALENDAR_TODAY}-queue.json"
 CALENDAR_PENDING="public/blog/research/${CALENDAR_TODAY}-pending.json"
 CALENDAR_COMPLETE="public/blog/research/${CALENDAR_TODAY}-complete.json"
@@ -256,12 +353,86 @@ else
     TODAY="${PENDING_NAME%-pending}"
     echo "Recovery: resuming oldest pending blog date $TODAY" >> "$LOG_FILE"
   else
-    TODAY=$(date '+%Y-%m-%d')
+    TODAY=$(TZ=America/Los_Angeles date +%F)
   fi
 fi
 QUEUE_FILE="public/blog/research/${TODAY}-queue.json"
 PENDING_FILE="public/blog/research/${TODAY}-pending.json"
 COMPLETE_FILE="public/blog/research/${TODAY}-complete.json"
+
+RUN_STATE_DIR="$PROJECT_DIR/.workflow-state"
+RUN_STATE_FILE="$RUN_STATE_DIR/blog-${TODAY}.json"
+RUN_ID="${RUN_ID:-${TODAY}-$$-$(TZ=America/Los_Angeles date +%H%M%S)}"
+
+write_run_state() {
+  local event="$1"
+  local slug="${2:-}"
+  mkdir -p "$RUN_STATE_DIR"
+  python3 - "$RUN_STATE_FILE" "$TODAY" "$RUN_ID" "$$" "$SELF_LABEL" "$event" "$slug" <<'PY' 2>/dev/null || true
+import json
+import os
+import sys
+from datetime import datetime
+from pathlib import Path
+
+path = Path(sys.argv[1])
+try:
+    state = json.loads(path.read_text())
+except Exception:
+    state = {}
+now = datetime.now().astimezone().isoformat(timespec="seconds")
+state.update({
+    "date": sys.argv[2],
+    "run_id": sys.argv[3],
+    "pid": int(sys.argv[4]),
+    "launch_label": sys.argv[5] or "manual",
+    "event": sys.argv[6],
+    "slug": sys.argv[7],
+    "heartbeat_at": now,
+})
+state.setdefault("started_at", now)
+if sys.argv[6] == "exited":
+    state["ended_at"] = now
+tmp = path.with_suffix(path.suffix + ".tmp")
+tmp.write_text(json.dumps(state, indent=2) + "\n")
+os.replace(tmp, path)
+PY
+}
+
+write_retry_checkpoint() {
+  local retry_epoch="$1"
+  local retry_hour="$2"
+  local retry_min="$3"
+  mkdir -p "$RUN_STATE_DIR"
+  python3 - "$RUN_STATE_DIR/retry.json" "$TODAY" "$retry_epoch" "$retry_hour" "$retry_min" <<'PY' 2>/dev/null || true
+import json
+import os
+import sys
+from datetime import datetime
+from pathlib import Path
+
+path = Path(sys.argv[1])
+state = {
+    "date": sys.argv[2],
+    "due_epoch": int(sys.argv[3]),
+    "due_local": f"{sys.argv[4]}:{sys.argv[5]}",
+    "scheduled_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+    "label": "com.nick.daily-blog-reel.retry",
+}
+tmp = path.with_suffix(path.suffix + ".tmp")
+tmp.write_text(json.dumps(state, indent=2) + "\n")
+os.replace(tmp, path)
+PY
+}
+
+write_run_state "started"
+finish_run() {
+  local rc=$?
+  write_run_state "exited" ""
+  trap - EXIT
+  exit "$rc"
+}
+trap finish_run EXIT
 
 # ── Build slug list ───────────────────────────────────────────────────────────
 QUEUE_MODE=false
@@ -381,7 +552,10 @@ fi
 for SLUG in "${SLUGS[@]}"; do
   REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
   write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
+  ATTEMPT=$(increment_attempt "$PENDING_FILE" "$SLUG")
   echo "\n--- Post: $SLUG ---" >> "$LOG_FILE"
+  echo "Attempt $ATTEMPT/$MAX_POST_ATTEMPTS: $SLUG" >> "$LOG_FILE"
+  write_run_state "post-start" "$SLUG"
 
   # Skip only fully registered posts. Partial QA-failed folders must be rebuilt or blocked.
   if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]]      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
@@ -442,11 +616,13 @@ else: print('{}')
   # Covers write/polish, internal links, hooks, svg, html, reel-data, social,
   # optional enhancements, assets, qa, posts.json, topic-history.
   POST_TMPOUT=$(mktemp)
-  HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+  python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
+    HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
     BLOG_PUBLISH_DATE="$TODAY" \
     public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
+  write_run_state "post-build-exit-${POST_EXIT}" "$SLUG"
 
   # A clean but undersized article can pass the style lint and become a stale
   # resume checkpoint while the required reel stage fails forever. Rebuild the
@@ -454,7 +630,8 @@ else: print('{}')
   if [[ $POST_EXIT -eq 0 && -s "public/blog/$SLUG/verified.md" ]] \
      && [[ ! -s "public/blog/$SLUG/reel-data.md" || ! -s "public/blog/$SLUG/reel-script.md" ]]; then
     echo "RECOVERY: $SLUG is missing required reel artifacts; forcing one full content rebuild" >> "$LOG_FILE"
-    HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+    python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
+      HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
       BLOG_PUBLISH_DATE="$TODAY" \
       public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" --force 2>&1 \
       | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
@@ -477,6 +654,30 @@ else: print('{}')
   fi
   rm -f "$POST_TMPOUT"
 
+  if [[ "$POST_EXIT" == "124" ]]; then
+    echo "POST TIMEOUT: $SLUG exceeded ${POST_TIMEOUT_SECONDS}s watchdog." >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    DEFERRED=$(( DEFERRED + 1 ))
+    if (( ATTEMPT >= MAX_POST_ATTEMPTS )); then
+      echo "RETRY EXHAUSTED: $SLUG after $ATTEMPT timed-out attempts — preserving quarantine for owner repair." >> "$LOG_FILE"
+      QUALITY_BLOCKED=$(( QUALITY_BLOCKED + 1 ))
+      quarantine_post_dir "$SLUG" "timeout"
+    else
+      RETRY_SLUGS+=("$SLUG")
+    fi
+    continue
+  fi
+
+  if grep -q -- '-quality-fail"' "public/blog/$SLUG/_status.json" 2>/dev/null \
+     && ! grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    echo "QUALITY BLOCKED: $SLUG — structural content gate failed; preserving quarantine." >> "$LOG_FILE"
+    notify "quality blocked" "$SLUG requires Codex editorial repair"
+    FAILS=$(( FAILS + 1 ))
+    QUALITY_BLOCKED=$(( QUALITY_BLOCKED + 1 ))
+    quarantine_post_dir "$SLUG" "quality"
+    continue
+  fi
+
   # Deferred = a claude brain-stage outage (write or QA), NOT a quality failure.
   # Keep artifacts in place for the next run; do not quarantine, do not count as FAIL.
   if grep -q -- '-deferred"' "public/blog/$SLUG/_status.json" 2>/dev/null \
@@ -484,7 +685,13 @@ else: print('{}')
     echo "DEFERRED: $SLUG — brain-stage outage, left in place for retry." >> "$LOG_FILE"
     notify "qa deferred" "$SLUG — brain QA outage, will retry"
     DEFERRED=$(( DEFERRED + 1 ))
-    RETRY_SLUGS+=("$SLUG")
+    if (( ATTEMPT >= MAX_POST_ATTEMPTS )); then
+      echo "RETRY EXHAUSTED: $SLUG after $ATTEMPT attempts — preserving quarantine for owner repair." >> "$LOG_FILE"
+      QUALITY_BLOCKED=$(( QUALITY_BLOCKED + 1 ))
+      quarantine_post_dir "$SLUG" "retry-exhausted"
+    else
+      RETRY_SLUGS+=("$SLUG")
+    fi
     continue
   fi
 
@@ -503,7 +710,13 @@ else: print('{}')
     notify "publish deferred" "$SLUG: ${#MISSING[@]} required file(s) will retry"
     FAILS=$(( FAILS + 1 ))
     DEFERRED=$(( DEFERRED + 1 ))
-    RETRY_SLUGS+=("$SLUG")
+    if (( ATTEMPT >= MAX_POST_ATTEMPTS )); then
+      echo "RETRY EXHAUSTED: $SLUG after $ATTEMPT incomplete attempts — preserving quarantine for owner repair." >> "$LOG_FILE"
+      QUALITY_BLOCKED=$(( QUALITY_BLOCKED + 1 ))
+      quarantine_post_dir "$SLUG" "incomplete"
+    else
+      RETRY_SLUGS+=("$SLUG")
+    fi
     continue
   fi
 
@@ -568,7 +781,7 @@ PY
       SYNC_FAILS=$(( SYNC_FAILS + 1 ))
     fi
   else
-    echo "SYNC PENDING: local commit retained for Claude review; website deployment continues" >> "$LOG_FILE"
+    echo "SYNC PENDING: local commit retained for Codex review; website deployment continues" >> "$LOG_FILE"
   fi
 
   if ! npx wrangler deploy >> "$LOG_FILE" 2>&1; then
@@ -637,8 +850,8 @@ fi
 
 UNPUSHED=$(git log origin/main..HEAD --oneline 2>/dev/null | wc -l | tr -d ' ')
 if [[ "$UNPUSHED" -ge 8 ]]; then
-  echo "NOTICE: $UNPUSHED commits unpushed to origin/main — Claude review/push overdue" >> "$LOG_FILE"
-  notify "git backlog" "$UNPUSHED commits awaiting push to GitHub — ask Claude to review and push"
+  echo "NOTICE: $UNPUSHED commits unpushed to origin/main — Codex review/push overdue" >> "$LOG_FILE"
+  notify "git backlog" "$UNPUSHED commits awaiting Codex review and approved push"
 fi
 
 # Clear recovery state only after every approved post and the global listing
@@ -649,12 +862,44 @@ if (( ${#RETRY_SLUGS[@]} > 0 )); then
   schedule_retry ""
 else
   rm -f "$PENDING_FILE"
+  QUEUE_SUMMARY=$(python3 - "$QUEUE_FILE" "public/blog/posts.json" "$TODAY" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+queue_path, posts_path, date = sys.argv[1:]
+try:
+    queue = json.loads(Path(queue_path).read_text()).get("posts", [])
+except Exception:
+    queue = []
+try:
+    registered = {post.get("slug") for post in json.loads(Path(posts_path).read_text())}
+except Exception:
+    registered = set()
+blocked_root = Path(".workflow-blocked") / date
+blocked = set()
+if blocked_root.is_dir():
+    for path in blocked_root.iterdir():
+        if path.is_dir():
+            for post in queue:
+                slug = post.get("slug")
+                if slug and path.name.startswith(f"{slug}-"):
+                    blocked.add(slug)
+live = sum(1 for post in queue if post.get("slug") in registered)
+quality_blocked = sum(1 for post in queue if post.get("slug") in blocked and post.get("slug") not in registered)
+print(f"{live} {quality_blocked}")
+PY
+  )
+  QUEUE_LIVE=${QUEUE_SUMMARY%% *}
+  QUEUE_BLOCKED=${QUEUE_SUMMARY##* }
+  [[ "$QUEUE_LIVE" == <-> ]] || QUEUE_LIVE=${#BUILT[@]}
+  [[ "$QUEUE_BLOCKED" == <-> ]] || QUEUE_BLOCKED=$QUALITY_BLOCKED
   cat > "$COMPLETE_FILE" <<JSON
 {
   "date": "$TODAY",
   "completed_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-  "live": ${#BUILT[@]},
-  "quality_blocked": $QUALITY_BLOCKED,
+  "live": $QUEUE_LIVE,
+  "quality_blocked": $QUEUE_BLOCKED,
   "source_sync_warnings": $SYNC_FAILS
 }
 JSON

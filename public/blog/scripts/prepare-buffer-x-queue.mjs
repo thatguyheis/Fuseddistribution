@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
+import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
+import { validateCutdownDuration } from './lib/buffer-video-integrity.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -20,6 +22,7 @@ const DEFAULT_LIMIT = 10;
 const DEFAULT_RESERVE_SLOTS = 1;
 const DEFAULT_PLATFORM_COUNT = 3;
 const DEFAULT_MAX_DURATION_SECONDS = 140;
+const DEFAULT_TARGET_CUTDOWN_SECONDS = 135;
 const MAX_CLOUDFLARE_ASSET_BYTES = 25 * 1024 * 1024;
 const MAX_X_CHARS = 280;
 const SCHEDULE_TIME_ZONE = 'America/Los_Angeles';
@@ -40,15 +43,19 @@ Options:
   --limit=N                      Buffer scheduled post limit. Default: 10.
   --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
   --platform-count=N             Platforms sharing capacity. Default: 3.
+  --max-posts=N                  Cap selected jobs at this channel's daily deficit.
   --max-duration-seconds=N       Maximum X video duration. Default: 140.
+  --target-cutdown-seconds=N     Expected generated cutdown duration. Default: 135.
   --max-bytes=N                  Maximum local MP4 size for Cloudflare assets. Default: 26214400.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
   --media-map=path               JSON map of slug to hosted MP4 URL. Default: .buffer-x-media-urls.json.
   --scheduled-log=path           JSON log of already scheduled X slugs. Default: .buffer-x-scheduled.json.
+  --repost-after-days=N          Allow sent, release-approved reels to rotate after N days. Default: 0 (never).
   --skip-media-url-verification  Offline planning only. Production runs verify URLs by default.
   --schedule-window-start=HH:MM  Earliest local Buffer due time. Default: 13:00.
   --schedule-window-end=HH:MM    Latest local Buffer due time. Default: 19:00.
   --schedule-interval-minutes=N  Minutes between selected posts. Default: 105.
+  --same-day-only               Do not roll excess selected jobs into tomorrow.
   --out=path                     Output queue JSON. Default: .buffer-x-queue.json.
   --dry-run                      Plan only. This is the default behavior.
 
@@ -65,15 +72,19 @@ function parseArgs(argv) {
     limit: DEFAULT_LIMIT,
     reserveSlots: DEFAULT_RESERVE_SLOTS,
     platformCount: DEFAULT_PLATFORM_COUNT,
+    maxPosts: null,
     maxDurationSeconds: DEFAULT_MAX_DURATION_SECONDS,
+    targetCutdownSeconds: DEFAULT_TARGET_CUTDOWN_SECONDS,
     maxBytes: MAX_CLOUDFLARE_ASSET_BYTES,
     slugs: [],
     mediaMap: join(repoRoot, '.buffer-x-media-urls.json'),
     scheduledLog: join(repoRoot, '.buffer-x-scheduled.json'),
+    repostAfterDays: 0,
     verifyMediaUrls: true,
     scheduleWindowStart: DEFAULT_SCHEDULE_WINDOW_START,
     scheduleWindowEnd: DEFAULT_SCHEDULE_WINDOW_END,
     scheduleIntervalMinutes: DEFAULT_SCHEDULE_INTERVAL_MINUTES,
+    sameDayOnly: false,
     out: join(repoRoot, '.buffer-x-queue.json'),
   };
 
@@ -83,16 +94,20 @@ function parseArgs(argv) {
     else if (arg.startsWith('--limit=')) args.limit = parseNonNegativeInt(arg, '--limit');
     else if (arg.startsWith('--reserve-slots=')) args.reserveSlots = parseNonNegativeInt(arg, '--reserve-slots');
     else if (arg.startsWith('--platform-count=')) args.platformCount = parsePositiveInt(arg, '--platform-count');
+    else if (arg.startsWith('--max-posts=')) args.maxPosts = parsePositiveInt(arg, '--max-posts');
     else if (arg.startsWith('--max-duration-seconds=')) args.maxDurationSeconds = parsePositiveNumber(arg, '--max-duration-seconds');
+    else if (arg.startsWith('--target-cutdown-seconds=')) args.targetCutdownSeconds = parsePositiveNumber(arg, '--target-cutdown-seconds');
     else if (arg.startsWith('--max-bytes=')) args.maxBytes = parsePositiveInt(arg, '--max-bytes');
     else if (arg.startsWith('--slugs=')) args.slugs = parseSlugList(arg.slice('--slugs='.length));
     else if (arg.startsWith('--media-map=')) args.mediaMap = resolve(arg.slice('--media-map='.length));
     else if (arg.startsWith('--scheduled-log=')) args.scheduledLog = resolve(arg.slice('--scheduled-log='.length));
+    else if (arg.startsWith('--repost-after-days=')) args.repostAfterDays = parseNonNegativeInt(arg, '--repost-after-days');
     else if (arg === '--verify-media-urls') args.verifyMediaUrls = true;
     else if (arg === '--skip-media-url-verification') args.verifyMediaUrls = false;
     else if (arg.startsWith('--schedule-window-start=')) args.scheduleWindowStart = arg.slice('--schedule-window-start='.length).trim();
     else if (arg.startsWith('--schedule-window-end=')) args.scheduleWindowEnd = arg.slice('--schedule-window-end='.length).trim();
     else if (arg.startsWith('--schedule-interval-minutes=')) args.scheduleIntervalMinutes = parsePositiveInt(arg, '--schedule-interval-minutes');
+    else if (arg === '--same-day-only') args.sameDayOnly = true;
     else if (arg.startsWith('--out=')) args.out = resolve(arg.slice('--out='.length));
     else usage();
   }
@@ -101,6 +116,9 @@ function parseArgs(argv) {
     throw new Error('Missing --current-scheduled. Query Buffer scheduled/sending count first.');
   }
   if (args.reserveSlots > args.limit) throw new Error('--reserve-slots cannot be greater than --limit.');
+  if (args.targetCutdownSeconds > args.maxDurationSeconds) {
+    throw new Error('--target-cutdown-seconds cannot exceed --max-duration-seconds.');
+  }
   args.scheduleWindowStart = parseClock(args.scheduleWindowStart, '--schedule-window-start');
   args.scheduleWindowEnd = parseClock(args.scheduleWindowEnd, '--schedule-window-end');
   if (minutesOfDay(args.scheduleWindowStart) >= minutesOfDay(args.scheduleWindowEnd)) {
@@ -171,7 +189,7 @@ function readMediaMap(path) {
   return json.videos || json.media || json;
 }
 
-function readScheduledState(path) {
+function readScheduledState(path, repostAfterDays) {
   const state = {
     activeSlugs: new Set(),
     staleBySlug: new Map(),
@@ -197,7 +215,7 @@ function readScheduledState(path) {
       continue;
     }
 
-    state.activeSlugs.add(slug);
+    if (scheduledEntryBlocksPlanning(entry, { repostAfterDays })) state.activeSlugs.add(slug);
   }
 
   return state;
@@ -282,13 +300,13 @@ function formatDueAt(date) {
   return `${year}-${month}-${day}T${hour}:${minute}:${second}${formatOffset(offsetMinutes)}`;
 }
 
-function nextScheduleDates(count, args) {
+export function nextScheduleDates(count, args, now = new Date()) {
   const results = [];
-  let dayParts = zonedParts(new Date());
+  let dayParts = zonedParts(now);
   let windowStart = scheduledDateForLocalDay(dayParts, args.scheduleWindowStart);
   let windowEnd = scheduledDateForLocalDay(dayParts, args.scheduleWindowEnd);
   const intervalMs = args.scheduleIntervalMinutes * 60_000;
-  const earliest = new Date(Date.now() + MIN_SCHEDULE_LEAD_MINUTES * 60_000);
+  const earliest = new Date(now.getTime() + MIN_SCHEDULE_LEAD_MINUTES * 60_000);
   let next = windowStart;
 
   if (earliest > windowStart) {
@@ -298,6 +316,7 @@ function nextScheduleDates(count, args) {
 
   while (results.length < count) {
     if (next > windowEnd) {
+      if (args.sameDayOnly) break;
       dayParts = addLocalDays(dayParts, 1);
       windowStart = scheduledDateForLocalDay(dayParts, args.scheduleWindowStart);
       windowEnd = scheduledDateForLocalDay(dayParts, args.scheduleWindowEnd);
@@ -433,9 +452,10 @@ function applyDueAt(job, dueAtDate) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const { sharedCapacity, perPlatformCapacity: capacity } = calculatePlatformCapacity(args);
+  const { sharedCapacity, perPlatformCapacity } = calculatePlatformCapacity(args);
+  const capacity = args.maxPosts === null ? perPlatformCapacity : Math.min(perPlatformCapacity, args.maxPosts);
   const mediaMap = readMediaMap(args.mediaMap);
-  const scheduledState = readScheduledState(args.scheduledLog);
+  const scheduledState = readScheduledState(args.scheduledLog, args.repostAfterDays);
   const scheduledSlugs = scheduledState.activeSlugs;
   const slugs = args.slugs.length ? args.slugs : renderedBacklogFromPosts();
 
@@ -513,6 +533,19 @@ async function main() {
         });
         continue;
       }
+      const localPublicBytes = fileSizeBytes(publicPath);
+      if (Number.isFinite(verification.bytes) && Number.isFinite(localPublicBytes)
+        && verification.bytes !== localPublicBytes) {
+        blocked.push({
+          slug,
+          reason: 'public_media_size_mismatch',
+          mediaUrl,
+          hostedBytes: verification.bytes,
+          localBytes: localPublicBytes,
+          path: publicPath,
+        });
+        continue;
+      }
     }
 
     const duration = durationSeconds(videoPath);
@@ -520,7 +553,30 @@ async function main() {
       blocked.push({ slug, reason: 'duration_unavailable', path: videoPath });
       continue;
     }
-    if (duration > args.maxDurationSeconds) {
+    const sourcePath = videoOutPath(slug);
+    const sourceDuration = durationSeconds(sourcePath);
+    if (sourceDuration === null) {
+      blocked.push({ slug, reason: 'source_duration_unavailable', path: sourcePath });
+      continue;
+    }
+    const durationIntegrity = validateCutdownDuration({
+      sourceDuration,
+      outputDuration: duration,
+      maximumDuration: args.maxDurationSeconds,
+      targetDuration: args.targetCutdownSeconds,
+    });
+    if (durationIntegrity.reason === 'output_truncated') {
+      blocked.push({
+        slug,
+        reason: 'x_video_truncated',
+        durationSeconds: Number(duration.toFixed(3)),
+        minimumDurationSeconds: Number(durationIntegrity.minimumDuration.toFixed(3)),
+        sourceDurationSeconds: Number(sourceDuration.toFixed(3)),
+        path: videoPath,
+      });
+      continue;
+    }
+    if (durationIntegrity.reason === 'output_too_long') {
       blocked.push({
         slug,
         reason: 'x_video_too_long',
@@ -528,6 +584,10 @@ async function main() {
         maxDurationSeconds: args.maxDurationSeconds,
         path: videoPath,
       });
+      continue;
+    }
+    if (!durationIntegrity.ok) {
+      blocked.push({ slug, reason: 'x_video_duration_invalid', durationSeconds: duration, path: videoPath });
       continue;
     }
 
@@ -570,9 +630,9 @@ async function main() {
   const selectedCount = Math.min(ready.length, capacity);
   const selectedDueAtDates = nextScheduleDates(selectedCount, args);
   const selected = ready
-    .slice(0, capacity)
+    .slice(0, selectedDueAtDates.length)
     .map((job, index) => applyDueAt(job, selectedDueAtDates[index]));
-  const readyOverflow = ready.slice(capacity);
+  const readyOverflow = ready.slice(selected.length);
   const queue = {
     generatedAt: new Date().toISOString(),
     expiresAt: new Date(Date.now() + QUEUE_EXPIRES_MINUTES * 60_000).toISOString(),
@@ -584,11 +644,13 @@ async function main() {
       limit: args.limit,
       reserveSlots: args.reserveSlots,
       platformCount: args.platformCount,
+      maxPosts: args.maxPosts,
       sharedCapacity,
       capacity,
     },
     x: {
       maxDurationSeconds: args.maxDurationSeconds,
+      targetCutdownSeconds: args.targetCutdownSeconds,
       maxTextLength: MAX_X_CHARS,
       schedulingMode: 'customScheduled',
       schedulingType: 'automatic',
@@ -596,7 +658,9 @@ async function main() {
       scheduleWindowStart: `${String(args.scheduleWindowStart.hour).padStart(2, '0')}:${String(args.scheduleWindowStart.minute).padStart(2, '0')}`,
       scheduleWindowEnd: `${String(args.scheduleWindowEnd.hour).padStart(2, '0')}:${String(args.scheduleWindowEnd.minute).padStart(2, '0')}`,
       scheduleIntervalMinutes: args.scheduleIntervalMinutes,
+      sameDayOnly: args.sameDayOnly,
       mediaUrlVerification: args.verifyMediaUrls ? 'required' : 'not_run',
+      repostAfterDays: args.repostAfterDays,
       maxBytes: args.maxBytes,
       verificationRequired: 'After create_post, call get_post and confirm assets[0].type is video before logging the slug.',
     },
@@ -629,9 +693,11 @@ async function main() {
   console.log(`[buffer-x] Wrote ${args.out}`);
 }
 
-try {
-  await main();
-} catch (error) {
-  console.error(`[buffer-x] ${error.message}`);
-  process.exit(1);
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await main();
+  } catch (error) {
+    console.error(`[buffer-x] ${error.message}`);
+    process.exit(1);
+  }
 }

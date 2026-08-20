@@ -5,7 +5,7 @@ set -u
 PROJECT_DIR="/Users/nick/projects/fuseddistribution"
 VIDEO_DIR="$PROJECT_DIR/video"
 BLOG_DIR="$PROJECT_DIR/public/blog"
-LOG_FILE="$HOME/Library/Logs/render-missing-reels.log"
+LOG_FILE="${REEL_LOG_FILE:-/tmp/fuseddistribution-render-missing-reels.log}"
 MAX_RETRIES="${MAX_RETRIES:-2}"
 MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-4}"
 VOICE="${REEL_VOICE:-chatterbox}"
@@ -33,7 +33,7 @@ log "Media env: PEXELS_API_KEY=$([[ -n "${PEXELS_API_KEY:-}" ]] && echo set || e
 
 pkill -f "chrome-headless-shell" 2>/dev/null || true
 find "$VIDEO_DIR/public/audio" -name "*_tmp.wav" -delete 2>/dev/null || true
-TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 9) + 2 )))
+TRACK="cycle"
 
 REGISTERED_SLUGS=($(python3 - <<'PY'
 import json
@@ -75,11 +75,11 @@ for SLUG in "${REGISTERED_SLUGS[@]}"; do
     log "Render budget reached ($MAX_RENDERS_PER_RUN); remaining stale reels will continue tomorrow"
     break
   fi
-  ATTEMPTED_RENDERS=$((ATTEMPTED_RENDERS + 1))
   if ! (cd "$VIDEO_DIR" && node scripts/validate-reel.mjs --script="out/$SLUG/script.json" >> "$LOG_FILE" 2>&1); then
     log "FAILED validation: $SLUG"
     FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
   fi
+  ATTEMPTED_RENDERS=$((ATTEMPTED_RENDERS + 1))
 
   PHOTO_DIR="$VIDEO_DIR/public/photos/$SLUG"
   mkdir -p "$PHOTO_DIR"
@@ -106,6 +106,11 @@ for SLUG in "${REGISTERED_SLUGS[@]}"; do
     FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
   fi
 
+  if ! (cd "$VIDEO_DIR" && node scripts/release-reel.mjs --post="$SLUG" >> "$LOG_FILE" 2>&1); then
+    log "FAILED release gate: $SLUG"
+    FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
+  fi
+
   log "OK: $SLUG size=$((MP4_SIZE / 1048576))MB"
   RENDERED=$((RENDERED + 1))
   COMMITTED+=("$SLUG")
@@ -121,7 +126,9 @@ if (( ${#COMMITTED[@]} > 0 )); then
       "video/out/$SLUG/media-manifest.json" \
       "video/out/$SLUG/render-meta.json" \
       "video/out/$SLUG/captions.json" \
-      "video/out/$SLUG/captions-meta.json" 2>/dev/null || true
+      "video/out/$SLUG/captions-meta.json" \
+      "video/out/$SLUG/audio-timing.json" \
+      "video/out/$SLUG/release-qa.json" 2>/dev/null || true
     git add "public/blog/$SLUG/reel-script.md" "public/blog/$SLUG/reel-data.md" 2>/dev/null || true
     COMMIT_PATHS+=(
       "video/out/$SLUG/script.json"
@@ -131,6 +138,8 @@ if (( ${#COMMITTED[@]} > 0 )); then
       "video/out/$SLUG/render-meta.json"
       "video/out/$SLUG/captions.json"
       "video/out/$SLUG/captions-meta.json"
+      "video/out/$SLUG/audio-timing.json"
+      "video/out/$SLUG/release-qa.json"
       "public/blog/$SLUG/reel-script.md"
       "public/blog/$SLUG/reel-data.md"
     )

@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { assertScheduledCapacity, BUFFER_SCHEDULED_POST_LIMIT } from './lib/buffer-capacity.mjs';
+import { normalizeScheduledLog, reconcileScheduledLog } from './lib/buffer-log-reconciliation.mjs';
+import { calculateDailyChannelTargets, evaluateDailyFloorEnforcement, evaluateDailyFloorReadinessCheckpoint, mergeBufferPosts } from './lib/buffer-daily-targets.mjs';
+import { collectBufferPostPages } from './lib/buffer-post-pagination.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const apiUrl = 'https://api.buffer.com';
@@ -15,7 +19,7 @@ const supportedChannelIds = new Set([
 
 function usage() {
   console.error(`Usage:
-  node public/blog/scripts/buffer-live.mjs status
+  node public/blog/scripts/buffer-live.mjs status [--target-per-channel=N] [--require-on-time-floor]
   node public/blog/scripts/buffer-live.mjs channels
   node public/blog/scripts/buffer-live.mjs publish --queue=path [--log=path] [--dry-run]
   node public/blog/scripts/buffer-live.mjs edit --post-id=id --text-file=path
@@ -27,12 +31,18 @@ the create mutation and verifies that the post is scheduled/sending with a video
 
 function parseArgs(argv) {
   const [command, ...options] = argv;
-  const args = { command, queue: '', log: '', dryRun: false, postId: '', textFile: '' };
+  const args = { command, queue: '', log: '', dryRun: false, postId: '', textFile: '', targetPerChannel: 3, requireOnTimeFloor: false };
   for (const option of options) {
     if (option.startsWith('--queue=')) args.queue = resolve(option.slice('--queue='.length));
     else if (option.startsWith('--log=')) args.log = resolve(option.slice('--log='.length));
     else if (option.startsWith('--post-id=')) args.postId = option.slice('--post-id='.length).trim();
     else if (option.startsWith('--text-file=')) args.textFile = resolve(option.slice('--text-file='.length));
+    else if (option.startsWith('--target-per-channel=')) {
+      const value = option.slice('--target-per-channel='.length);
+      if (!/^\d+$/.test(value) || Number(value) < 3) throw new Error('--target-per-channel must be an integer of at least 3.');
+      args.targetPerChannel = Number(value);
+    }
+    else if (option === '--require-on-time-floor') args.requireOnTimeFloor = true;
     else if (option === '--dry-run') args.dryRun = true;
     else usage();
   }
@@ -86,18 +96,21 @@ async function graphql(token, query, variables = {}) {
 }
 
 const livePostsQuery = `
-  query LivePosts($input: PostsInput!) {
-    posts(first: 100, input: $input) {
+  query LivePosts($input: PostsInput!, $after: String) {
+    posts(first: 100, after: $after, input: $input) {
       edges {
         node {
           id
           text
           status
           dueAt
+          sentAt
           channelId
+          externalLink
           assets { id mimeType }
         }
       }
+      pageInfo { endCursor hasNextPage }
     }
   }
 `;
@@ -117,17 +130,23 @@ async function getChannels(token) {
 }
 
 async function getPosts(token, statuses) {
-  const data = await graphql(token, livePostsQuery, {
-    input: {
-      organizationId,
-      filter: {
-        status: statuses,
-        channelIds: [...supportedChannelIds],
+  return collectBufferPostPages(async (after) => {
+    const data = await graphql(token, livePostsQuery, {
+      after,
+      input: {
+        organizationId,
+        filter: {
+          status: statuses,
+          channelIds: [...supportedChannelIds],
+        },
+        sort: [{ field: 'dueAt', direction: 'asc' }],
       },
-      sort: [{ field: 'dueAt', direction: 'asc' }],
-    },
+    });
+    return {
+      posts: data.posts.edges.map(({ node }) => node),
+      pageInfo: data.posts.pageInfo,
+    };
   });
-  return data.posts.edges.map(({ node }) => node);
 }
 
 async function getLivePosts(token) {
@@ -208,9 +227,39 @@ function defaultLogPath(queuePath) {
 
 function loadLog(path) {
   if (!existsSync(path)) return { scheduled: [] };
-  const value = readJson(path);
-  if (Array.isArray(value)) return { scheduled: value };
-  return { ...value, scheduled: Array.isArray(value.scheduled) ? value.scheduled : [] };
+  return normalizeScheduledLog(readJson(path));
+}
+
+function reconcileLogPath(logPath, visiblePosts, reconciledAt) {
+  if (!existsSync(logPath)) return null;
+  const current = loadLog(logPath);
+  const result = reconcileScheduledLog(current, visiblePosts, reconciledAt);
+  if (result.changed > 0) writeJson(logPath, result.log);
+  return {
+    path: logPath,
+    changed: result.changed,
+  };
+}
+
+function reconcileDefaultLogs(visiblePosts, reconciledAt = new Date().toISOString()) {
+  const logPaths = [
+    join(repoRoot, '.buffer-youtube-scheduled.json'),
+    join(repoRoot, '.buffer-x-scheduled.json'),
+    join(repoRoot, '.buffer-instagram-scheduled.json'),
+  ];
+  return logPaths
+    .map((logPath) => reconcileLogPath(logPath, visiblePosts, reconciledAt))
+    .filter(Boolean);
+}
+
+function syncPublishedSocialVideoLinks() {
+  const script = join(repoRoot, 'public', 'blog', 'scripts', 'sync-social-video-links.mjs');
+  const result = spawnSync(process.execPath, [script], { cwd: repoRoot, encoding: 'utf8' });
+  if (result.error || result.status !== 0) {
+    console.warn(`[buffer-live] social video link sync skipped: ${result.error?.message || result.stderr.trim() || `exit ${result.status}`}`);
+    return;
+  }
+  if (result.stdout.trim()) console.log(result.stdout.trim());
 }
 
 function checkpointConfirmedPost(log, logPath, job, live) {
@@ -294,7 +343,17 @@ try {
   if (!token) throw new Error('BUFFER_ACCESS_TOKEN is empty.');
   if (args.command === 'status') {
     const posts = await getLivePosts(token);
-    console.log(JSON.stringify({ count: posts.length, posts }, null, 2));
+    const sentPosts = await getPosts(token, ['sent']);
+    const visiblePosts = mergeBufferPosts(posts, sentPosts);
+    const reconciledLogs = reconcileDefaultLogs(visiblePosts);
+    syncPublishedSocialVideoLinks();
+    const dailyTargets = calculateDailyChannelTargets(visiblePosts, { minimum: args.targetPerChannel });
+    const readinessCheckpoint = evaluateDailyFloorReadinessCheckpoint({ operatingDate: dailyTargets.operatingDate });
+    const dailyFloorEnforcement = evaluateDailyFloorEnforcement({ dailyTargets, readinessCheckpoint });
+    console.log(JSON.stringify({ count: posts.length, dailyTargets, readinessCheckpoint, dailyFloorEnforcement, posts, reconciledLogs }, null, 2));
+    if (args.requireOnTimeFloor && dailyFloorEnforcement.status === 'failed') {
+      throw new Error(`Daily Buffer floor checkpoint failed: ${dailyFloorEnforcement.reason} (${dailyFloorEnforcement.deficitChannels.join(', ')}).`);
+    }
   } else if (args.command === 'channels') {
     const channels = await getChannels(token);
     console.log(JSON.stringify({ count: channels.length, channels }, null, 2));

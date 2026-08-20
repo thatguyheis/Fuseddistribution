@@ -87,12 +87,14 @@ type CaptionMap = Record<number, CaptionChunk[]>;
 export const BlogReel: React.FC<{
   script: ReelScript;
   musicTrack?: string;
+  musicGain?: number;
   media?: MediaMap;
   captions?: CaptionMap;
-}> = ({ script, musicTrack = 'ambient-01.mp3', media = {}, captions = {} }) => {
+}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {} }) => {
   const {fps} = useVideoConfig();
+  const hasMusic = musicTrack && !['none', 'off', 'silent'].includes(musicTrack.toLowerCase());
   return <AbsoluteFill style={{ background: BRAND.bg }}>
-    <Audio src={staticFile(`music/${musicTrack}`)} volume={0.15} loop />
+    {hasMusic && <Audio src={staticFile(`music/${musicTrack}`)} volume={musicGain} loop />}
     <TransitionSeries>
       {script.segments.map((segment, i) => {
         const durationInFrames = secsToFrames(segment.endSec - segment.startSec);

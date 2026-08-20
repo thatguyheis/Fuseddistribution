@@ -6,6 +6,7 @@ set -uo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+MODEL_TIMEOUT_SECONDS="${BLOG_LEAF_MODEL_TIMEOUT_SECONDS:-120}"
 if [[ ! -x "$LOCAL_LLM" ]]; then
   LOCAL_LLM="$HOME/bin/gemma.sh"
 fi
@@ -18,8 +19,14 @@ if [[ -n "$SLUG" ]]; then IN="${IN:-$BLOG_DIR/$SLUG/verified.md}"; HOOKS="${HOOK
 [[ -f "$IN" ]] || { echo "error: no input $IN">&2; exit 2; }
 [[ -n "$SLUG" ]] || SLUG="$(basename "$(dirname "$OUT")")"
 
-BODY="$(cat "$IN")"
-g() { HERMES_LOCAL_MAX_TOKENS="${2:-160}" GEMMA_MAX_TOKENS="${2:-160}" "$LOCAL_LLM" "$1" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' || true; }
+# Bound repetitive local-model context while retaining the opening, full heading
+# structure, and CTA ending needed for platform copy.
+BODY="$( { head -c 5000 "$IN"; printf '\n\n--- remaining headings ---\n'; grep '^## ' "$IN" || true; printf '\n\n--- ending ---\n'; tail -c 900 "$IN"; } )"
+g() {
+  HERMES_LOCAL_MAX_TOKENS="${2:-160}" GEMMA_MAX_TOKENS="${2:-160}" \
+    perl -e 'alarm shift; exec @ARGV or exit 127' "$MODEL_TIMEOUT_SECONDS" "$LOCAL_LLM" "$1" 2>/dev/null \
+    | tr '\n' ' ' | sed 's/  */ /g' || true
+}
 
 FB=$(g "Write a 3-sentence Facebook caption for this article. Lead with the strongest fact. Plain tone, no hashtags, no em dashes:
 
@@ -34,7 +41,7 @@ XP=$(g "Write a tweet under 200 characters with the strongest claim from this ar
 
 $BODY" 80)
 
-FB="$FB" IG="$IG" LI="$LI" XP="$XP" BRAND="$BRAND" SLUG="$SLUG" HOOKS="$HOOKS" OUT="$OUT" python3 <<'PY'
+FB="$FB" IG="$IG" LI="$LI" XP="$XP" BODY="$BODY" BRAND="$BRAND" SLUG="$SLUG" HOOKS="$HOOKS" OUT="$OUT" python3 <<'PY'
 import json, os, re
 slug=os.environ["SLUG"]; brand=os.environ["BRAND"]
 url=f"https://fuseddistribution.com/blog/{slug}/"
@@ -47,10 +54,31 @@ share="Send this to someone who needs to hear it."
 
 def clean(s):
     s=re.sub(r"[—–]", ", ", s or "").strip()
+    # Small local models sometimes continue into an unsolicited markdown
+    # outline. Captions stop at that boundary and never publish raw markdown.
+    s=re.split(r"\s+#{2,}\s+", s, maxsplit=1)[0]
+    s=re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", s)
+    s=re.sub(r"[*_`]", "", s)
     s=re.sub(r"\s+", " ", s)
-    return s.strip(' ,')
+    return s.strip(' ,\"')
 
-fb=clean(os.environ["FB"]); ig=clean(os.environ["IG"]); li=clean(os.environ["LI"]); xp=clean(os.environ["XP"])
+def normalize_question(value):
+    value=clean(value)
+    if "?" in value:
+        value=value.split("?", 1)[0].strip()+"?"
+    elif value:
+        value=value.rstrip(".! ")+"?"
+    else:
+        value="What's your take?"
+    return value
+
+title=next((line[2:].strip() for line in os.environ.get("BODY", "").splitlines() if line.startswith("# ")), slug.replace("-", " ").title())
+fallback=f"{title}. Read the key takeaways and practical next steps."
+fb=clean(os.environ["FB"]) or fallback
+ig=clean(os.environ["IG"]) or fallback
+li=clean(os.environ["LI"]) or fallback
+xp=clean(os.environ["XP"]) or title
+dq=normalize_question(dq)
 # enforce X length incl url
 xfull=f"{xp} {url}"
 if len(xfull)>280: xp=xp[:280-len(url)-2].rsplit(" ",1)[0]; xfull=f"{xp} {url}"

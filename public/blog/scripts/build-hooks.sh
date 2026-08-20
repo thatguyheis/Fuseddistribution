@@ -7,6 +7,7 @@ set -uo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+MODEL_TIMEOUT_SECONDS="${BLOG_LEAF_MODEL_TIMEOUT_SECONDS:-120}"
 if [[ ! -x "$LOCAL_LLM" ]]; then
   LOCAL_LLM="$HOME/bin/gemma.sh"
 fi
@@ -18,15 +19,21 @@ for a in "$@"; do case "$a" in
 if [[ -n "$SLUG" ]]; then IN="${IN:-$BLOG_DIR/$SLUG/verified.md}"; OUT="${OUT:-$BLOG_DIR/$SLUG/hooks.json}"; fi
 [[ -f "$IN" ]] || { echo "error: no input $IN">&2; exit 2; }
 
-BODY="$(cat "$IN")"
-g() { echo "$1" | "$LOCAL_LLM" 2>/dev/null | tr -d '\r' | grep -v '^$' | head -1; }
+# Leaf prompts need the answer-first body, headings, and ending rather than the
+# entire long article. Keep local inference bounded while preserving topic arc.
+BODY="$( { head -c 5000 "$IN"; printf '\n\n--- remaining headings ---\n'; grep '^## ' "$IN" || true; printf '\n\n--- ending ---\n'; tail -c 900 "$IN"; } )"
+g() {
+  HERMES_LOCAL_MAX_TOKENS="$2" GEMMA_MAX_TOKENS="$2" \
+    perl -e 'alarm shift; exec @ARGV or exit 127' "$MODEL_TIMEOUT_SECONDS" "$LOCAL_LLM" "$1" 2>/dev/null \
+    | tr -d '\r' | grep -v '^$' | head -1
+}
 
-HOOK=$(GEMMA_MAX_TOKENS=60 g "From this article, write ONE punchy hook line (max 14 words) using the strongest number or claim. No quotes, no hashtags, one line only:
+HOOK=$(g "From this article, write ONE punchy hook line (max 14 words) using the strongest number or claim. No quotes, no hashtags, one line only:
 
-$BODY")
-DQ=$(GEMMA_MAX_TOKENS=50 g "Write ONE short opinion-inviting question (max 16 words) to close a social caption for this article. One line, no quotes:
+$BODY" 60)
+DQ=$(g "Write ONE short opinion-inviting question (max 16 words) to close a social caption for this article. One line, no quotes:
 
-$BODY")
+$BODY" 50)
 
 # Hashtags — deterministic per brand (SOP §14)
 if [[ "$BRAND" == "silver" ]]; then HASHTAGS="#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"

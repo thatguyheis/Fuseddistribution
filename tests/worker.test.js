@@ -3,6 +3,33 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 const ORIGIN = "https://fuseddistribution.com";
 
+describe("Google Analytics", () => {
+  it("persists consent through a native redirect fallback", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/?analytics_consent=granted`, {
+      redirect: "manual",
+    });
+
+    expect(response.status).toBe(303);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}/`);
+    expect(response.headers.get("set-cookie")).toContain("fused_analytics_consent=granted");
+  });
+
+  it("injects the configured tag into HTML responses with a matching CSP", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/`, {
+      headers: { Cookie: "fused_analytics_consent=granted" },
+    });
+    const html = await response.text();
+    const csp = response.headers.get("content-security-policy");
+
+    expect(response.status).toBe(200);
+    expect(html).toContain("https://www.googletagmanager.com/gtag/js?id=G-3J56X9V708");
+    expect(html).toContain("gtag('config', 'G-3J56X9V708')");
+    expect(html).not.toContain("fused-analytics-consent");
+    expect(csp).toContain("https://www.googletagmanager.com");
+    expect(csp).toContain("https://www.google-analytics.com");
+  });
+});
+
 function newsletterRequest(body, options = {}) {
   return SELF.fetch(`${ORIGIN}/api/newsletter`, {
     method: "POST",

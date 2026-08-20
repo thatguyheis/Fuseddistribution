@@ -18,6 +18,7 @@
 //   "ogDescription": "<=100 char og description",   // optional, falls back to description
 //   "alt": "hero image alt text",
 //   "date": "2026-06-16",                            // ISO
+//   "modifiedDate": "2026-06-17",                    // optional ISO, falls back to date
 //   "humanDate": "June 16, 2026",                    // optional, derived if absent
 //   "tags": ["Tag One", "Tag Two"],
 //   "brand": "silver",                                // "silver" | "tech"
@@ -48,6 +49,10 @@ const outPath = args.out || join(postDir, "index.html");
 
 if (!existsSync(metaPath)) { console.error(`error: meta.json not found: ${metaPath}`); process.exit(1); }
 const meta = JSON.parse(readFileSync(metaPath, "utf8"));
+const socialVideoPath = join(postDir, "social-video.json");
+const socialVideo = existsSync(socialVideoPath)
+  ? JSON.parse(readFileSync(socialVideoPath, "utf8"))
+  : null;
 
 // Resolve body source
 let bodyPath = args.body;
@@ -151,7 +156,16 @@ const B = meta.brand === "silver"
       ctaLine: meta.ctaLine || "Get a website that brings in local customers." };
 
 const ogDesc = meta.ogDescription || meta.description;
-const bodyHtml = mdToHtml(rawBody);
+const socialVideoHtml = renderSocialVideo(socialVideo, meta.title);
+const bodyHtml = placeSocialVideoInBody(mdToHtml(rawBody), socialVideoHtml);
+
+function placeSocialVideoInBody(body, video) {
+  if (!video) return body;
+  const firstParagraphEnd = body.indexOf('</p>');
+  if (firstParagraphEnd === -1) return `${video}\n            ${body}`;
+  const insertAt = firstParagraphEnd + '</p>'.length;
+  return `${body.slice(0, insertAt)}\n            <!-- SOCIAL_VIDEO_START -->\n            ${video}\n            <!-- SOCIAL_VIDEO_END -->${body.slice(insertAt)}`;
+}
 
 // ── CSS (BLOG-REF Section 2, verbatim) ──────────────────────────────────────
 const CSS = `:root {
@@ -266,13 +280,25 @@ h1 {
 .article-body li { margin-bottom: 8px; }
 .article-body strong { color: var(--text); }
 .article-body a { color: var(--accent); text-decoration: underline; }
-.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; }
+.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; overflow: hidden; }
 .chart-title { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-bottom: 18px; }
-.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; }
+.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
 .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
 .stat-card { background: rgba(88, 214, 255, 0.04); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 14px; padding: 22px 18px; text-align: center; }
 .stat-card .stat-number { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2.4rem; letter-spacing: 0.03em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
 .stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+.watch-list { display: flex; flex-direction: column; gap: 14px; margin: 32px 0; }
+.watch-list-item { padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.14); background: rgba(7, 20, 28, 0.74); }
+.watch-list-item strong { display: block; color: var(--accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.watch-list-item span { display: block; margin-top: 8px; color: var(--text); font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.social-video { margin: 42px 0 0; padding: 24px; border: 1px solid rgba(88, 214, 255, 0.2); border-radius: 20px; background: rgba(7, 20, 28, 0.74); }
+.social-video h2 { margin: 0 0 8px; color: var(--text); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.social-video > p { margin: 0 0 18px; color: var(--muted); }
+.social-video-player { position: relative; aspect-ratio: 9 / 16; width: min(100%, 360px); margin: 0 auto 20px; border-radius: 14px; overflow: hidden; background: #020608; }
+.social-video-player iframe, .social-video-player video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
 .sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
 .sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
 .sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
@@ -299,13 +325,13 @@ h1 {
 .nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
 @media (max-width: 1080px) { .topbar { flex-direction: column; align-items: flex-start; } .main { padding-left: 24px; padding-right: 24px; } }
 @media (max-width: 900px) { .nav-dropdown { left: 0; transform: translateY(-6px); } .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); } }
-@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr; } }`;
+@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] > [aria-hidden="true"] { transform: rotate(90deg); } }`;
 
 // ── assemble ──────────────────────────────────────────────────────────────
 const html = render({
   title: meta.title, slug, sub: B.sub, description: meta.description, ogDesc,
-  alt: meta.alt, date: meta.date, humanDate, tag1, tag2,
-  navCta: B.navCta, artCta: B.artCta, ctaLine: B.ctaLine, bodyHtml,
+  alt: meta.alt, date: meta.date, modifiedDate: meta.modifiedDate || meta.date, humanDate, tag1, tag2,
+  navCta: B.navCta, artCta: B.artCta, ctaLine: B.ctaLine, bodyHtml, socialVideoHtml,
 });
 
 writeFileSync(outPath, html);
@@ -338,7 +364,7 @@ function render(d) {
       "description": ${JSON.stringify(d.description)},
       "url": "https://fuseddistribution.com/blog/${d.slug}/",
       "datePublished": "${d.date}",
-      "dateModified": "${d.date}",
+      "dateModified": "${d.modifiedDate}",
       "author": {
         "@type": "Person",
         "name": "Nick",
@@ -477,4 +503,47 @@ ${CSS}
   </body>
 </html>
 `;
+}
+
+function validUrl(value, pattern) {
+  return typeof value === 'string' && pattern.test(value) ? value : null;
+}
+
+function youtubeEmbedUrl(url) {
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=))([A-Za-z0-9_-]{11})/i);
+  return match ? `https://www.youtube-nocookie.com/embed/${match[1]}?rel=0&playsinline=1` : null;
+}
+
+function sameOriginVideoUrl(url) {
+  const match = url.match(
+    /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/([a-z0-9-]+)\/([a-z0-9-]+\.mp4)$/i,
+  );
+  if (!match) return url;
+
+  const [, reelSlug, filename] = match;
+  const prefix = existsSync(join(BLOG_DIR, '..', 'reels-x', reelSlug, filename)) ? '/reels-x/' : '/reels/';
+  return `https://fuseddistribution.com${prefix}${reelSlug}/${filename}`;
+}
+
+function renderSocialVideo(data, title) {
+  const platforms = data?.platforms || {};
+  const youtube = validUrl(platforms.youtube?.url, /^https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i);
+  const instagram = validUrl(platforms.instagram?.url, /^https:\/\/(?:www\.)?instagram\.com\/reel\//i);
+  const x = validUrl(platforms.x?.url, /^https:\/\/x\.com\/[^/]+\/status\/\d+/i);
+  const primaryVideo = validUrl(data?.primaryVideo?.url, /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i);
+  if (!primaryVideo && !youtube && !instagram && !x) return '';
+
+  const links = [
+    youtube && `<li><a href="${esc(youtube)}" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></li>`,
+    instagram && `<li><a href="${esc(instagram)}" target="_blank" rel="noopener noreferrer">Watch on Instagram</a></li>`,
+    x && `<li><a href="${esc(x)}" target="_blank" rel="noopener noreferrer">Watch on X</a></li>`,
+  ].filter(Boolean).join('');
+  const intro = primaryVideo
+    ? links ? 'Play the Fused reel here, or choose a social platform.' : 'Play the Fused reel here.'
+    : 'Choose a platform to watch this video and follow Fused.';
+  const embedUrl = youtube ? youtubeEmbedUrl(youtube) : null;
+  const player = embedUrl
+    ? `<div class="social-video-player"><iframe src="${embedUrl}" title="${esc(title)} on YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`
+    : primaryVideo ? `<div class="social-video-player"><video controls playsinline preload="metadata"><source src="${esc(sameOriginVideoUrl(primaryVideo))}" type="video/mp4" />Your browser does not support embedded video. Use the links below to watch.</video></div>` : '';
+  return `<aside class="social-video" aria-label="Watch this reel on social media"><h2>Watch the reel</h2><p>${intro}</p>${player}${links ? `<ul class="social-video-links">${links}</ul>` : ''}</aside>`;
 }

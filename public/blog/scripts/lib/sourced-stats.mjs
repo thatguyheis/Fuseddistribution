@@ -71,6 +71,8 @@ const BARE_PAREN_ORG = /\(([A-Z][A-Za-z0-9.&' -]{2,40})\)/g;
 const PAREN_STOPWORDS = new Set([
   "example", "optional", "recommended", "important", "note", "free", "bonus",
   "new", "updated", "immediately", "later", "finally", "optionally", "typical",
+  // Formula labels such as "Premium (Dollars)" describe units, not sources.
+  "dollars", "percent", "percentage", "ounces", "ounce", "grams", "kilograms",
 ]);
 
 export function findUncitedSources(text, researchPath) {

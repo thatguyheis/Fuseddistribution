@@ -2,6 +2,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { operatingDate } from './lib/operating-date.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const apiUrl = 'https://api.buffer.com';
@@ -13,8 +14,28 @@ const channelIds = [
 ];
 const outputRoot = join(repoRoot, 'ops', 'profit-system', 'buffer-metrics');
 
+export function isTransientBufferError(error) {
+  return error instanceof TypeError || error?.retryable === true;
+}
+
+export async function retryTransient(operation, {
+  maxAttempts = 3,
+  shouldRetry = isTransientBufferError,
+} = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      lastError = error;
+      if (attempt === maxAttempts || !shouldRetry(error)) throw error;
+    }
+  }
+  throw lastError;
+}
+
 function parseArgs(argv) {
-  const args = { date: new Date().toISOString().slice(0, 10), lookbackDays: 28 };
+  const args = { date: operatingDate(), lookbackDays: 28 };
   for (const item of argv) {
     if (item.startsWith('--date=')) args.date = item.slice(7);
     else if (item.startsWith('--lookback-days=')) args.lookbackDays = Number(item.slice(16));
@@ -38,17 +59,23 @@ function loadAccessToken() {
 }
 
 async function graphql(token, query, variables) {
-  const response = await fetch(apiUrl, {
-    method: 'POST',
-    headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
-    body: JSON.stringify({ query, variables }),
-    signal: AbortSignal.timeout(30_000),
+  return retryTransient(async () => {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+      body: JSON.stringify({ query, variables }),
+      signal: AbortSignal.timeout(30_000),
+    });
+    const body = await response.json().catch(() => null);
+    if (!response.ok) {
+      const error = new Error(`Buffer HTTP ${response.status}`);
+      error.retryable = response.status === 429 || response.status >= 500;
+      throw error;
+    }
+    if (!body) throw new Error('Buffer returned a non-JSON response.');
+    if (body.errors?.length) throw new Error(body.errors.map(({ message }) => message).join('; '));
+    return body.data;
   });
-  const body = await response.json().catch(() => null);
-  if (!response.ok) throw new Error(`Buffer HTTP ${response.status}`);
-  if (!body) throw new Error('Buffer returned a non-JSON response.');
-  if (body.errors?.length) throw new Error(body.errors.map(({ message }) => message).join('; '));
-  return body.data;
 }
 
 const postsQuery = `

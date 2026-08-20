@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { parseReelScript } from '../../../video/scripts/parse-script.mjs';
 import { validateReelScript } from '../../../video/scripts/validate-reel.mjs';
 import { findUncitedSources } from './lib/sourced-stats.mjs';
+import { validateChart } from './build-chart-inject.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_DIR = resolve(__dirname, '..');
@@ -34,7 +35,10 @@ function collectStrings(value, path = []) {
 
 function validateTextSurface(label, text, blockers, allowedFutureYears = new Set()) {
   pushIf(/\[SLOT]|\[VERIFY]/i.test(text), blockers, `${label}: leftover placeholder`);
-  pushIf(/\[[A-Z][A-Za-z0-9 _-]{2,}\]/.test(text), blockers, `${label}: unreplaced bracket placeholder`);
+  // Model instructions often include a colon inside placeholders such as
+  // [SOURCED STATS: ...], so validate the whole bracketed instruction rather
+  // than only the narrow alphanumeric form.
+  pushIf(/\[[A-Z][^\]\n]{2,}\]/.test(text), blockers, `${label}: unreplaced bracket placeholder`);
   pushIf(/\bNote:\s*Replace\b/i.test(text), blockers, `${label}: leftover replacement instruction`);
   pushIf(/\b(?:REQUIREMENTS:|Output ONLY the markdown article|Claude: apply writing rules|Topic contract is mandatory)\b/i.test(text), blockers, `${label}: model prompt leaked into publishable content`);
   pushIf(/\bHere (?:are|is) (?:six-word|6-word).*(?:alt texts?|options?)\b/i.test(text), blockers, `${label}: model option preamble leaked into publishable content`);
@@ -146,6 +150,41 @@ function validateSectionRepetition(html, blockers) {
   }
 }
 
+function validateSilverTaxAccuracy(html, slug, blockers) {
+  if (!/\bsilver\b/i.test(slug) && !/\bsilver\b/i.test(html)) return;
+  const text = textFromHtml(html);
+  const normalized = text.replace(/\s+/g, ' ').trim();
+  if (!/\b(?:irs|form 1099-b|form 8300|form 8949|schedule d|capital gains?)\b/i.test(normalized)) return;
+
+  // These patterns reflect a known published failure mode: claiming that
+  // personal silver purchases themselves trigger IRS reporting thresholds.
+  pushIf(
+    /\b(?:reporting threshold is|threshold is)\s*\$200\b/i.test(normalized),
+    blockers,
+    'financial accuracy: unsupported $200 silver reporting threshold claim',
+  );
+  pushIf(
+    /\b(?:if you(?:'re| are)? buying silver|if you purchase silver|if you buy silver|buying silver coins|silver coin purchases?)\b[^.]{0,180}\b(?:must|need to|required to)\b[^.]{0,120}\breport\b/i.test(normalized),
+    blockers,
+    'financial accuracy: article claims silver purchases themselves trigger personal IRS reporting',
+  );
+  pushIf(
+    /\bpurchases?\b[^.]{0,140}\$10,000[^.]{0,140}\b(?:report|form 1099-b)\b/i.test(normalized),
+    blockers,
+    'financial accuracy: article ties a $10,000 silver purchase threshold to IRS reporting',
+  );
+  pushIf(
+    /\bschedule b of form 8949\b/i.test(normalized),
+    blockers,
+    'financial accuracy: invalid "Schedule B of Form 8949" filing reference',
+  );
+  pushIf(
+    /\bform 1099-b\b[^.]{0,160}\bpurchas/i.test(normalized) || /\bpurchas[^.]{0,160}\bform 1099-b\b/i.test(normalized),
+    blockers,
+    'financial accuracy: article conflates Form 1099-B with buyer purchase reporting',
+  );
+}
+
 function validateSocial(socialPath, blockers) {
   if (!existsSync(socialPath)) {
     blockers.push('missing social-copy.json');
@@ -246,21 +285,49 @@ function validateSourcedStats(html, blockers, slug) {
   }
 }
 
+function validateCustomGraphic(html, blockers) {
+  const visualPatterns = [
+    /class="[^"]*\bchart-wrap\b/i,
+    /class="[^"]*\bstat-row\b/i,
+    /class="[^"]*\bmath-box\b/i,
+    /class="[^"]*\bcoin-grid\b/i,
+    /class="[^"]*\bwatch-list\b/i,
+    /class="[^"]*\bsocial-video\b/i,
+  ];
+  pushIf(!visualPatterns.some(pattern => pattern.test(html)), blockers, 'custom graphic: none found');
+}
+
+function validateNumericVisual(slug, blockers) {
+  const dir = join(BLOG_DIR, slug);
+  const visualPath = join(dir, 'chart.json');
+  if (!existsSync(visualPath)) return;
+  let visual;
+  try { visual = JSON.parse(readText(visualPath)); }
+  catch { blockers.push('numeric visual: chart.json is invalid JSON'); return; }
+  if (visual.skipped) return;
+  pushIf(visual.schema_version !== 2, blockers, 'numeric visual: schema_version 2 required');
+  const sourceText = [readText(join(dir, 'verified.md')), readText(join(dir, 'research.json'))].join('\n');
+  for (const error of validateChart(visual, sourceText)) blockers.push(`numeric visual: ${error}`);
+}
+
 function validateHtml(htmlPath, blockers, slug, allowedFutureYears) {
   const html = readText(htmlPath);
   pushIf(!html, blockers, 'missing index.html');
   validateTextSurface('index.html', html, blockers, allowedFutureYears);
   pushIf(html && !/<script type="application\/ld\+json">/i.test(html), blockers, 'index.html missing JSON-LD schema');
   if (html) {
+    pushIf(/href="[^"]*(?:SOURCED STATS|\]\(|\[https?:)/i.test(html), blockers, 'index.html: malformed source markup leaked into href');
     validateTopicCoherence(html, blockers);
     validateSectionRepetition(html, blockers);
     validateInlineLinks(html, blockers, BLOG_DIR, slug);
     validateSourcedStats(html, blockers, slug);
+    validateCustomGraphic(html, blockers);
+    validateSilverTaxAccuracy(html, slug, blockers);
   }
 }
 
 function main() {
-  const slug = argValue('--slug') || process.argv.find((arg) => !arg.startsWith('--'));
+  const slug = argValue('--slug') || process.argv.slice(2).find((arg) => !arg.startsWith('--'));
   if (!slug) {
     console.error('usage: qa-local.mjs --slug=<slug> [--out=<path>]');
     process.exit(2);
@@ -273,6 +340,7 @@ function main() {
   const allowedFutureYears = new Set(researchText.match(/\b20[3-9]\d\b/g) ?? []);
 
   validateHtml(join(dir, 'index.html'), blockers, slug, allowedFutureYears);
+  validateNumericVisual(slug, blockers);
   validateSocial(join(dir, 'social-copy.json'), blockers);
   validateReelMarkdown(join(dir, 'reel-script.md'), join(dir, 'reel-data.md'), slug, blockers, allowedFutureYears);
 

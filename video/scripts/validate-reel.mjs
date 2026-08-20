@@ -16,9 +16,12 @@ function wordCount(text) {
   return String(text ?? '').split(/\s+/).filter(Boolean).length;
 }
 
+const ESTIMATED_NARRATION_WORDS_PER_SECOND = 3.25;
+const ESTIMATED_NARRATION_BUFFER_SECONDS = 0.4;
+
 function minDurationForNarration(narration) {
   if (!narration) return 0;
-  return Math.ceil(wordCount(narration) / 2.5) + 2;
+  return Math.ceil(wordCount(narration) / ESTIMATED_NARRATION_WORDS_PER_SECOND + ESTIMATED_NARRATION_BUFFER_SECONDS);
 }
 
 function hasMarkdownLink(text) {
@@ -132,7 +135,7 @@ function checkNarration(segment, index, errors) {
   if (/\[[^\]]+\]/.test(narration)) errors.push(`${label}: narration contains bracketed citation text`);
 }
 
-export function validateReelScript(script) {
+export function validateReelScript(script, options = {}) {
   const errors = [];
   const warnings = [];
 
@@ -162,10 +165,17 @@ export function validateReelScript(script) {
     checkDisplayText(segment, index, errors, warnings);
     checkNarration(segment, index, errors);
 
-    const minDuration = minDurationForNarration(segment.narration);
     const actualDuration = segment.endSec - segment.startSec;
-    if (minDuration > 0 && actualDuration < minDuration) {
-      errors.push(`${label}: ${actualDuration}s window is shorter than narration minimum ${minDuration}s`);
+    const measuredDuration = options.audioDurations?.[index];
+    if (Number.isFinite(measuredDuration)) {
+      if (actualDuration < measuredDuration) {
+        errors.push(`${label}: ${actualDuration}s window is shorter than measured audio ${measuredDuration}s`);
+      }
+    } else {
+      const minDuration = minDurationForNarration(segment.narration);
+      if (minDuration > 0 && actualDuration < minDuration) {
+        errors.push(`${label}: ${actualDuration}s window is shorter than narration minimum ${minDuration}s`);
+      }
     }
   });
 

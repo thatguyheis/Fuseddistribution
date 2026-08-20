@@ -13,9 +13,9 @@ One command per blog post produces a finished 1080×1920 MP4 with:
 
 ## Setup (one-time)
 
-### 0. Remotion skill (Claude Code)
+### 0. Remotion skill (Codex)
 
-The `remotion-best-practices` skill is installed globally (`~/.agents/skills/remotion-best-practices`). It teaches Claude correct Remotion patterns — `useCurrentFrame()`, `interpolate()`, `spring()`, `<Sequence>`, `<Composition>`. Without it, Claude defaults to web animation patterns that break during rendering.
+The `remotion-best-practices` skill is installed globally (`~/.agents/skills/remotion-best-practices`). Codex must load it before changing Remotion code so render-time animation, sequencing, captions, and media APIs follow the installed version's production patterns.
 
 To reinstall or update: `npx skills add remotion-dev/skills --global`
 
@@ -66,8 +66,40 @@ grep PIXABAY_API_KEY video/.env
 
 Both keys load automatically when you run: `cd video && set -a && source .env && set +a`
 
-### 5. Music
-10 CC0 ambient tracks live at `video/public/music/`. All are public domain (CC0) from the "Peaceful Instrumental Background Music" collection on Internet Archive (`peaceful-tracks`).
+### 5. Music And Audio Rights
+
+Production default: render with the approved Mixkit trusted cycle declared in `video/data/audio-rights.json`.
+
+```bash
+node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
+```
+
+Reason: recent platform uploads were marked as copyrighted, including `Happy Mysterious Full Track 102 BPM, F Major` from Rapid Entertainment / Airbit SG Pte. Ltd. The old bundled ambient tracks are blocked in `video/data/audio-rights.json` until re-cleared with durable evidence. The approved production cycle currently contains ten Mixkit tracks, each with source URLs, license details, SHA-256 hashes, and usage restrictions preserved in the rights database.
+
+The renderer fails closed against `video/data/audio-rights.json`; the audit command verifies the local reference library when that library changes.
+
+Audit command:
+
+```bash
+npm run video:audio-rights
+```
+
+To approve a new track, record all of this before render:
+- Exact filename and SHA-256 hash.
+- Source URL and source name.
+- License name and version.
+- Acquisition date and verification date.
+- Allowed platforms.
+- Evidence location or notes.
+- `status: "approved"`.
+
+Preferred options, in order:
+1. Fused-created original instrumental beds, generated locally and registered as original work.
+2. `--music=none` for narration-first reels.
+3. YouTube Audio Library tracks only for YouTube-specific exports, with their copied attribution/license text preserved.
+4. Public domain or CC0 archives only when the exact file and license evidence are preserved. Do not use generic "royalty free" claims as approval.
+
+The archived ambient pack remains on disk for audit and historical render metadata:
 
 | File | Approx length |
 |------|--------------|
@@ -82,15 +114,7 @@ Both keys load automatically when you run: `cd video && set -a && source .env &&
 | ambient-09.mp3 | 5.6 min |
 | ambient-10.mp3 | 6.3 min |
 
-**Pick rule:** Use the day-of-year mod 9 + 2 to pick a track, skipping `ambient-01` (only 46s — loops too visibly on Long Form reels): `N = ($(date +%j) % 9) + 2`, zero-pad to two digits. Example: day 27 → `(27 % 9) + 2 = 2` → `ambient-02.mp3`. Run this in the shell before the render command:
-
-```bash
-TRACK=$(printf "ambient-%02d.mp3" $(( ($(date +%j) % 9) + 2 )))
-```
-
-Then pass `--music=$TRACK`. Never use `ambient-01` for Long Form — it is too short and loops noticeably.
-
-To add more: drop MP3s into `video/public/music/` and pass `--music=filename.mp3` at render time.
+Do not pass these `ambient-XX.mp3` files to `render.mjs` unless their rights records are changed to `approved` after re-clearance. New renders should pass `--music=cycle` or omit `--music` so the renderer deterministically selects an approved Mixkit track by slug. The renderer normalizes the selected bed to 20% of the Chatterbox narration signal, approximately -38 LUFS against the -24 LUFS narration reference.
 
 ---
 
@@ -108,7 +132,7 @@ echo "Cleared zombie Remotion processes"
 
 Run this once before the first render of the session. If a previous pipeline run was interrupted (rate limit, crash), there will almost certainly be stale processes.
 
-**Global render lock.** A single render lock prevents launchd, Claude, and Codex from starting concurrent Remotion jobs on the Mac. Do not bypass it or launch a second render while one is held — concurrent renders contend for MPS/Chrome and produce silent failures. If a render aborts and leaves a stale lock, clear it only after confirming no Remotion process is running (`pgrep -f remotion`).
+**Global render lock.** A single render lock prevents launchd, Codex, and manual operators from starting concurrent Remotion jobs on the Mac. Do not bypass it or launch a second render while one is held — concurrent renders contend for TTS/Chrome and produce silent failures. Lock release is owner-aware: one workflow must never remove another process's lock. If a render aborts and leaves a stale lock, clear it only after confirming the recorded PID is dead and no Remotion process is running (`pgrep -f remotion`).
 
 ---
 
@@ -132,7 +156,7 @@ Every reel script produced by an agent must pass this review before render. This
 - [ ] Chart segment window is ≥18s (bar animation + narration)
 - [ ] QUESTION segment window is ≥10s (narration is short but visual needs time)
 - [ ] No segment has narration cut off by a window that is too tight
-- [ ] Total duration is within the declared format range (Long Form: 180–240s)
+- [ ] Total duration is within the declared format range (Long Form: 100-240s)
 
 **Subtitle sync (verify after render)**
 - [ ] Scrub to 3 random mid-video points — subtitle text matches spoken word within 0.5 seconds
@@ -204,9 +228,9 @@ The reel script maps directly from reel-data.md sections:
 
 | Format | Target length | Status |
 |--------|--------------|--------|
-| **Long Form** | 180–240s | **Only format — always use this** |
+| **Long Form** | 100-240s | **Only format - always use this** |
 
-Long Form covers the full blog post arc. Facebook/Instagram group research shows 3–4 min outperforms short clips for engagement and comments with invested audiences.
+Long Form covers the full blog post arc. Reels may run from about 100 seconds to four minutes when the source material supports the duration; do not add filler to reach a target.
 
 **Segment planning (Long Form):**
 1. Count every stat from reel-data.md. Each stat = one Stat segment.
@@ -214,7 +238,7 @@ Long Form covers the full blog post arc. Facebook/Instagram group research shows
 3. Group related numbers together. Never split a stat across two segments.
 4. Plan 8–12 body segments covering every major section of the blog post. If the article cannot support 8 distinct segments without filler, block the reel and improve the article source.
 5. **Set segment duration from narration length, not the other way around.** A 3-sentence narration needs ~12–15s. A 4-sentence narration needs ~15–20s. Never squeeze narration into a shorter window — audio cutoff is worse than a longer reel.
-6. Total duration must be 180–240s. Never pad with filler or exceed the range in the automated workflow.
+6. Total duration must be 100-240s. Never pad with filler or exceed the range in the automated workflow.
 7. Close with a `## QUESTION` segment (not CTA). See §Closing Segment Rules below.
 
 ### Step 3 — Write the reel script
@@ -296,7 +320,7 @@ Narration: [Silver posts: "Follow for more silver news." / Tech posts: "Follow f
 - When in doubt, add 3s to your estimate. A reel that breathes is better than one that cuts off.
 
 **Total duration**
-- Long Form: 180–240s. This is a hard automated range. Never rush content or pad with filler.
+- Long Form: 100-240s. This is a hard automated range. Never rush content or pad with filler.
 
 **No em dashes — ever**
 - Never use `—` in any Text: field or Narration. Rewrite with a comma, period, or short new sentence.
@@ -660,22 +684,59 @@ HOOK is highest risk — it often has 2 sentences crammed into 5s. Keep HOOK nar
 
 ### Step 4 — Render
 
-Pick a random track from `ambient-01` through `ambient-10` (see §Setup > Music). Always pass `--music=` explicitly — do not let the renderer default.
+Render with the approved trusted cycle unless you intentionally want no background music. Always pass `--music=` explicitly in manual runs.
 
 **Always source `.env` before rendering** — sets `PEXELS_API_KEY` so Pexels fetches work. Guard against missing file first:
 
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing — render aborted"; exit 1; }
-cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-XX.mp3 --voice=chatterbox
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
 ```
 
-Example (ambient-05):
+Example:
 ```bash
 [ -f video/.env ] || { echo "ERROR: video/.env missing"; exit 1; }
-cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=ambient-05.mp3 --voice=chatterbox
+cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
+
+Before creating a posting pack, run the release gate. It checks the rendered
+duration, music rights, normalized mix metadata, measured narration timing, and
+caption availability. Proportional captions require a three-point manual sync
+review; only then pass `--manual-caption-review`.
+
+```bash
+cd video && npm run release -- --post=<slug>
+cd video && npm run release -- --post=<slug> --manual-caption-review
+```
+
+### Scheduled and backlog reels
+
+The scheduled renderer always uses `--music=cycle`, measures the completed
+Chatterbox files before rendering, and writes `audio-timing.json` plus
+`release-qa.json`. Do not restore manually padded segment timings.
+
+The scheduled renderer is a bounded checkpointed job, not an unbounded shell
+command. It must keep the global lock while the recorded PID is alive, apply a
+whole-reel timeout around `render.mjs`, terminate the process group on timeout,
+and retry from the audio/script checkpoint at most the configured retry ceiling.
+Never remove a live lock or start a second renderer because a log line is quiet.
+After a timeout, preserve the slug as pending and record the exact timeout in
+the render log; do not mark the reel released from MP4 existence alone.
+
+For legacy reels with blocked music, run the backlog tool in small, explicit
+batches. `--rebuild-reel-scripts` only rebuilds reels backed by `verified.md`;
+posts without a trusted source are skipped rather than regenerated from stale
+material.
+
+```bash
+npm run video:rerender-audio-backlog -- --dry-run --limit=4 --rebuild-reel-scripts
+npm run video:rerender-audio-backlog -- --limit=4 --rebuild-reel-scripts --continue-on-error
+```
+
+Every backlog reel remains review-required until the caption sync review is
+recorded with `--manual-caption-review`.
 
 > **CRITICAL — Do NOT skip or narrate this step.** You MUST execute the render command above via Bash. Do not describe the render as "running" or "in progress" without having called it. The command takes 10–15 minutes and blocks — wait for it to complete. After it exits, immediately verify:
 > ```bash
@@ -703,6 +764,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 - Output path and verified MP4 duration (ffprobe).
 - Voice used (`chatterbox`, or `zoe` only with Nick's approval).
 - Caption mode from `captions-meta.json`: `whisper`, `proportional`, `mixed`, or `none`. State the real mode — never describe proportional captions as Whisper verified.
+- Music rights result from `render-meta.json` and `npm run video:audio-rights`.
 - `npm test` result and `validate-reel.mjs` result.
 - Visual QA findings (hook/stat/chart/question frames, sync at three points).
 - Any unresolved warnings (e.g. question text not ending in "?").
@@ -711,7 +773,7 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 > **IMPORTANT: Do NOT commit source mp4 files.** `video/out/**/*.mp4` is in `.gitignore`. GitHub blocks files over 100 MB and warns on files over 50 MB. Buffer-safe public copies may be generated under `public/reels/` and `public/reels-x/` for Cloudflare deployment, but those files are local deployment artifacts and are also gitignored.
 
-> **Ownership rule (2026-06-25):** the reel pass **commits metadata locally only**. It does **not** `git push` and does **not** `wrangler deploy`. The source-controlled 11 AM worker validates before TTS, commits locally for review, and never pushes or deploys. Claude reviews and pushes after Nick approval. Do not push reel commits on the first pass.
+> **Ownership rule:** the reel pass **commits metadata locally only**. It does **not** `git push` and does **not** `wrangler deploy`. The source-controlled 11 AM worker validates before TTS, commits locally for review, and never pushes or deploys. Codex reviews the result and pushes only with Nick's approval. Do not push reel commits on the first pass.
 
 **Commit reel files locally (metadata only — no mp4, no push):**
 ```bash
@@ -721,7 +783,7 @@ git commit -m "feat(reel): [Post Title]"
 # STOP. Do not push. Hand the local commit to Nick/Codex for approval.
 ```
 
-The blog itself is committed by the separate 9 AM blog job, then pushed and deployed after Claude review. Do not run `wrangler deploy` from the reel workflow. Verify the post is already live at `https://fuseddistribution.com/blog/<slug>/` before posting the reel; if it is not live, the blog pass still needs review, push, or deploy. Stop and flag it rather than deploying from the reel workflow.
+The blog itself is committed and deployed by the separate 9 AM blog job, with Codex owning recovery and verification. Do not run `wrangler deploy` from the reel workflow. Verify the post is already live at `https://fuseddistribution.com/blog/<slug>/` before posting the reel; if it is not live, the blog pass still needs review, push, or deploy. Stop and flag it rather than deploying from the reel workflow.
 
 **Prepare posting handoff:**
 ```bash
@@ -745,12 +807,13 @@ npm run social:buffer:youtube:media -- --slugs=<slug>
 npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
 ```
 
-This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open for today's new reels, blocks YouTube API media over 179 seconds or 25 MiB, verifies each selected MP4 URL returns `200 video/mp4`, and writes `.buffer-youtube-queue.json` with custom scheduled Buffer payloads between 1:00 PM and 7:00 PM `America/Los_Angeles`.
+This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open for today's new reels, blocks YouTube API media over 179 seconds or 25 MiB, creates H.264/AAC Buffer copies with a 1280px max long edge, verifies each selected MP4 URL returns `200 video/mp4`, and writes `.buffer-youtube-queue.json` with custom scheduled Buffer payloads between 1:00 PM and 7:00 PM `America/Los_Angeles`.
 
 **Post the reel manually or through Buffer:**
-- YouTube: use Buffer channel `Nick` (`6a3e63375ab6d2f1067461b2`). If `public/blog/<slug>/posting-pack.json` includes a stable HTTPS `assets.public_media_url`, schedule through the Buffer API with `mode: customScheduled`, `schedulingType: automatic`, a `dueAt` between 1:00 PM and 7:00 PM `America/Los_Angeles`, the Buffer-safe MP4 as a video asset, and `metadata.youtube.title` plus `metadata.youtube.categoryId`. If there is no public media URL, upload `public/reels/<slug>/<slug>.mp4` manually in Buffer, then paste the YouTube title and description from the posting pack.
-- YouTube AI disclosure: set the AI content disclosure/tag to `Yes` in Buffer or YouTube Studio for AI-assisted reels. The Buffer API tool does not expose this field today, so verify it manually after API scheduling.
+- YouTube: use Buffer channel `Nick` (`6a3e63375ab6d2f1067461b2`). If `public/blog/<slug>/posting-pack.json` includes a stable HTTPS `assets.public_media_url`, schedule through the Buffer API with `mode: customScheduled`, `schedulingType: automatic`, a `dueAt` between 1:00 PM and 7:00 PM `America/Los_Angeles`, the Buffer-safe MP4 as a video asset, and `metadata.youtube.title` plus `metadata.youtube.categoryId`. Immediately call `get_post`; do not log the reel as scheduled unless Buffer returns no error and still has the video asset. If there is no public media URL, upload `public/reels/<slug>/<slug>.mp4` manually in Buffer, then paste the YouTube title and description from the posting pack.
+- YouTube AI disclosure: do not hold up Buffer scheduling on this field. If YouTube exposes a supported control later, treat disclosure as a non-blocking follow-up.
 - X: use Buffer channel `thatguyheis` (`6a3e73fb5ab6d2f10674b516`) through the Buffer API only when the reel is X-eligible. Use `npm run social:buffer:x:plan` and schedule only selected jobs. The working payload is top-level `assets: [{ video: { url } }]`. The post must be 280 characters or fewer and the MP4 must be at most 140 seconds. After `create_post`, call `get_post`; do not log an X reel as scheduled unless the returned post still has a video asset. Long-form reels over 140 seconds need an X cutdown before scheduling.
+- After each scheduled `dueAt` passes, reconcile Buffer. If the post is still scheduled, errored, missing, or video-less, update the local `.buffer-*-scheduled.json` entry to `status: "error"` before retrying.
 - Facebook Professional Mode profile: use Facebook native tools only. Upload the MP4 through the Facebook app or Professional Dashboard, then paste the Facebook caption from the posting pack.
 - Instagram / LinkedIn: use the platform caption from `public/blog/<slug>/social-copy.json` if posting manually.
 - First comment: paste the live blog URL.
@@ -772,6 +835,19 @@ cd video && node scripts/feedback.mjs
 ```
 
 Review the auto-generated report at `video/data/performance-report.md`.
+
+For reels enrolled in an Algorithmic Darwinism Architect generation, register
+the genetic ID and its single controlled mutation before rendering. After Buffer
+creation and readback, attach the exact Buffer post ID to the generation record
+under `ops/profit-system/evolution/generations/`. Do not encode experiment state
+only in the script or caption, and do not infer lineage later from copy.
+
+ADA candidates use the same render, release, rights, and visual-quality gates as
+all other reels. Vary one creative gene per child, keep the supported facts and
+offer fixed, and score the post-render quality rubric before distribution. The
+fitness, cohort, selection, reward, and rollback rules in
+`docs/PROFIT-IMPROVEMENT-SOP.md` section 10 are authoritative. A high-view reel
+that fails quality or risk gates is disqualified, not rewarded.
 
 ---
 
@@ -926,7 +1002,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 1080×1920 portrait @ 30fps |
 | Voice | Chatterbox using Nick's local voice reference |
-| Music | Ambient MP3 at 15% volume |
+| Music | Approved trusted-cycle bed normalized to 20% of the narration signal (about -38 LUFS), or no music |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |
 
 ---
@@ -967,9 +1043,20 @@ After 5+ posts in `performance.json`, review the report:
 
 The report auto-ranks top posts and averages by hook type, duration, and music.
 
+When the posts belong to an ADA generation, this report is diagnostic only.
+Champion selection must use Buffer API D+1, D+3, and D+7 snapshots joined by
+Buffer post ID, normalized comparable cohorts, and the full fitness calculation.
+Do not promote genetics from manually entered views alone.
+
 **log sends when running feedback.mjs:**
 ```bash
 node video/scripts/feedback.mjs --post=<slug> --platform=instagram \
   --views=1200 --likes=85 --shares=12 --comments=6 --saves=24 --dm_shares=18
 ```
 `--dm_shares` = DM send count from Instagram Insights → Reach → Sends.
+
+Reel feedback is a leading-indicator input to the profit system, not its final
+objective. The daily owner must also record qualified leads, conversions,
+attributed revenue, gross profit, delivery failures, quality escapes, and rework
+through `docs/PROFIT-IMPROVEMENT-SOP.md`. Do not promote a hook, duration, music
+track, or CTA from views alone.

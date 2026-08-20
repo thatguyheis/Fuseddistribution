@@ -20,7 +20,7 @@ const Root: React.FC = () => (
     fps={BRAND.fps}
     width={BRAND.width}
     height={BRAND.height}
-    defaultProps={{ script: defaultScript, musicTrack: 'ambient-01.mp3' }}
+    defaultProps={{ script: defaultScript, musicTrack: 'none', musicGain: 0 }}
     calculateMetadata={({ props }) => ({
       // Match the TransitionSeries timeline (sequences minus overlapped
       // transitions) so no frozen tail is rendered after the last segment.

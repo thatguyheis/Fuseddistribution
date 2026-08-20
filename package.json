@@ -24,11 +24,17 @@
     "video:render": "node video/scripts/render.mjs",
     "video:photos": "node video/scripts/fetch-photos.mjs",
     "video:feedback": "node video/scripts/feedback.mjs",
+    "video:audio-rights": "node video/scripts/audit-audio-rights.mjs",
+    "video:rerender-audio-backlog": "node video/scripts/rerender-blocked-audio-reels.mjs",
+    "video:music:ace": "node video/scripts/generate-ace-music.mjs",
+    "video:music:register": "node video/scripts/register-music-track.mjs",
     "video:test": "cd video && npm test",
     "video": "node video/scripts/render.mjs",
     "social:pack": "node public/blog/scripts/prepare-posting-pack.mjs",
     "social:buffer:verify-media": "node public/blog/scripts/verify-buffer-media-urls.mjs",
     "social:buffer:live": "node public/blog/scripts/buffer-live.mjs",
+    "social:blog-video-links": "node public/blog/scripts/sync-social-video-links.mjs",
+    "social:blog-reel-cleanup": "node public/blog/scripts/remove-generic-watch-lists.mjs",
     "social:buffer:instagram:plan": "node public/blog/scripts/prepare-buffer-instagram-queue.mjs",
     "social:buffer:metrics": "node scripts/buffer-performance-snapshot.mjs",
     "social:buffer:youtube:media": "node public/blog/scripts/prepare-buffer-youtube-media.mjs",
@@ -40,11 +46,14 @@
     "social:facebook:batch": "node public/blog/scripts/prepare-facebook-reel-batch.mjs",
     "profit:audit": "node scripts/profit-sop-audit.mjs audit",
     "profit:record": "node scripts/profit-sop-audit.mjs record",
-    "profit:test": "node --test tests/profit-sop-audit.test.mjs tests/buffer-capacity.test.mjs tests/buffer-instagram-queue.test.mjs tests/buffer-performance-snapshot.test.mjs tests/social-copy-quality.test.mjs"
+    "profit:test": "node --test tests/profit-sop-audit.test.mjs tests/buffer-capacity.test.mjs tests/buffer-daily-targets.test.mjs tests/buffer-post-pagination.test.mjs tests/buffer-repost-policy.test.mjs tests/buffer-instagram-queue.test.mjs tests/buffer-log-reconciliation.test.mjs tests/buffer-performance-snapshot.test.mjs tests/social-copy-quality.test.mjs tests/blog-custom-graphic-fallback.test.mjs tests/build-chart-skip-sentinel.test.mjs tests/sourced-stats.test.mjs tests/build-post-preflight.test.mjs",
+    "admin:build": "node scripts/admin-dashboard.mjs",
+    "admin:dev": "wrangler dev --local --port 8787"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.16.17",
     "@types/node": "^25.9.3",
+    "sharp": "^0.34.5",
     "vitest": "^4.1.9",
     "wrangler": "^4.102.0"
   }

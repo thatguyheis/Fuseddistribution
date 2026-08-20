@@ -7,6 +7,7 @@ import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.
 import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
+import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -40,9 +41,11 @@ Options:
   --limit=N                      Buffer scheduled post limit. Default: 10.
   --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
   --platform-count=N             Platforms sharing capacity. Default: 3.
+  --max-posts=N                  Cap selected jobs at this channel's daily deficit.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
   --media-map=path               JSON map of slug to public MP4 URL.
   --scheduled-log=path           JSON log of already scheduled slugs. Default: .buffer-youtube-scheduled.json.
+  --repost-after-days=N          Allow sent, release-approved reels to rotate after N days. Default: 0 (never).
   --media-base-url=https://...   Derive MP4 URLs as <base>/<slug>/<slug>.mp4.
   --media-url-template=https://cdn/{slug}.mp4
                                 Derive MP4 URLs with {slug} replacement.
@@ -52,6 +55,7 @@ Options:
   --schedule-window-start=HH:MM  Earliest local Buffer due time. Default: 13:00.
   --schedule-window-end=HH:MM    Latest local Buffer due time. Default: 19:00.
   --schedule-interval-minutes=N  Minutes between selected posts. Default: 105.
+  --same-day-only               Do not roll excess selected jobs into tomorrow.
   --category-id=ID               YouTube category ID. Default: 27.
   --out=path                     Output queue JSON. Default: .buffer-youtube-queue.json.
   --write-packs                  Write posting-pack files for ready jobs.
@@ -70,9 +74,11 @@ function parseArgs(argv) {
     limit: DEFAULT_LIMIT,
     reserveSlots: DEFAULT_RESERVE_SLOTS,
     platformCount: DEFAULT_PLATFORM_COUNT,
+    maxPosts: null,
     slugs: [],
     mediaMap: '',
     scheduledLog: join(repoRoot, '.buffer-youtube-scheduled.json'),
+    repostAfterDays: 0,
     mediaBaseUrl: '',
     mediaUrlTemplate: '',
     verifyMediaUrls: true,
@@ -81,6 +87,7 @@ function parseArgs(argv) {
     scheduleWindowStart: DEFAULT_SCHEDULE_WINDOW_START,
     scheduleWindowEnd: DEFAULT_SCHEDULE_WINDOW_END,
     scheduleIntervalMinutes: DEFAULT_SCHEDULE_INTERVAL_MINUTES,
+    sameDayOnly: false,
     categoryId: DEFAULT_CATEGORY_ID,
     out: join(repoRoot, '.buffer-youtube-queue.json'),
     writePacks: false,
@@ -93,9 +100,11 @@ function parseArgs(argv) {
     else if (arg.startsWith('--limit=')) args.limit = parseNonNegativeInt(arg, '--limit');
     else if (arg.startsWith('--reserve-slots=')) args.reserveSlots = parseNonNegativeInt(arg, '--reserve-slots');
     else if (arg.startsWith('--platform-count=')) args.platformCount = parsePositiveInt(arg, '--platform-count');
+    else if (arg.startsWith('--max-posts=')) args.maxPosts = parsePositiveInt(arg, '--max-posts');
     else if (arg.startsWith('--slugs=')) args.slugs = arg.slice('--slugs='.length).split(',').map((slug) => slug.trim()).filter(Boolean);
     else if (arg.startsWith('--media-map=')) args.mediaMap = resolve(arg.slice('--media-map='.length));
     else if (arg.startsWith('--scheduled-log=')) args.scheduledLog = resolve(arg.slice('--scheduled-log='.length));
+    else if (arg.startsWith('--repost-after-days=')) args.repostAfterDays = parseNonNegativeInt(arg, '--repost-after-days');
     else if (arg.startsWith('--media-base-url=')) args.mediaBaseUrl = trimTrailingSlash(arg.slice('--media-base-url='.length).trim());
     else if (arg.startsWith('--media-url-template=')) args.mediaUrlTemplate = arg.slice('--media-url-template='.length).trim();
     else if (arg === '--verify-media-urls') args.verifyMediaUrls = true;
@@ -105,6 +114,7 @@ function parseArgs(argv) {
     else if (arg.startsWith('--schedule-window-start=')) args.scheduleWindowStart = arg.slice('--schedule-window-start='.length).trim();
     else if (arg.startsWith('--schedule-window-end=')) args.scheduleWindowEnd = arg.slice('--schedule-window-end='.length).trim();
     else if (arg.startsWith('--schedule-interval-minutes=')) args.scheduleIntervalMinutes = parsePositiveInt(arg, '--schedule-interval-minutes');
+    else if (arg === '--same-day-only') args.sameDayOnly = true;
     else if (arg.startsWith('--category-id=')) args.categoryId = arg.slice('--category-id='.length).trim();
     else if (arg.startsWith('--out=')) args.out = resolve(arg.slice('--out='.length));
     else usage();
@@ -220,7 +230,7 @@ function readMediaMap(path) {
   return json.videos || json.media || json;
 }
 
-function readScheduledState(path) {
+function readScheduledState(path, repostAfterDays) {
   const state = {
     activeSlugs: new Set(),
     staleBySlug: new Map(),
@@ -247,7 +257,7 @@ function readScheduledState(path) {
       continue;
     }
 
-    state.activeSlugs.add(slug);
+    if (scheduledEntryBlocksPlanning(entry, { repostAfterDays })) state.activeSlugs.add(slug);
   }
 
   return state;
@@ -334,13 +344,13 @@ function formatDueAt(date) {
   return `${year}-${month}-${day}T${hour}:${minute}:${second}${formatOffset(offsetMinutes)}`;
 }
 
-function nextScheduleDates(count, args) {
+export function nextScheduleDates(count, args, now = new Date()) {
   const results = [];
-  let dayParts = zonedParts(new Date());
+  let dayParts = zonedParts(now);
   let windowStart = scheduledDateForLocalDay(dayParts, args.scheduleWindowStart);
   let windowEnd = scheduledDateForLocalDay(dayParts, args.scheduleWindowEnd);
   const intervalMs = args.scheduleIntervalMinutes * 60_000;
-  const earliest = new Date(Date.now() + MIN_SCHEDULE_LEAD_MINUTES * 60_000);
+  const earliest = new Date(now.getTime() + MIN_SCHEDULE_LEAD_MINUTES * 60_000);
   let next = windowStart;
 
   if (earliest > windowStart) {
@@ -350,6 +360,7 @@ function nextScheduleDates(count, args) {
 
   while (results.length < count) {
     if (next > windowEnd) {
+      if (args.sameDayOnly) break;
       dayParts = addLocalDays(dayParts, 1);
       windowStart = scheduledDateForLocalDay(dayParts, args.scheduleWindowStart);
       windowEnd = scheduledDateForLocalDay(dayParts, args.scheduleWindowEnd);
@@ -513,9 +524,10 @@ function writePostingPack(slug, mediaUrl) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const { sharedCapacity, perPlatformCapacity: capacity } = calculatePlatformCapacity(args);
+  const { sharedCapacity, perPlatformCapacity } = calculatePlatformCapacity(args);
+  const capacity = args.maxPosts === null ? perPlatformCapacity : Math.min(perPlatformCapacity, args.maxPosts);
   const mediaMap = readMediaMap(args.mediaMap);
-  const scheduledState = readScheduledState(args.scheduledLog);
+  const scheduledState = readScheduledState(args.scheduledLog, args.repostAfterDays);
   const scheduledSlugs = scheduledState.activeSlugs;
   const candidates = unique(args.slugs.length ? args.slugs : renderedBacklogFromPosts());
   const ready = [];
@@ -655,7 +667,7 @@ async function main() {
   const selectedCount = Math.min(ready.length, capacity);
   const selectedDueAtDates = nextScheduleDates(selectedCount, args);
   const selected = ready
-    .slice(0, capacity)
+    .slice(0, selectedDueAtDates.length)
     .map((job, index) => applyDueAt(job, selectedDueAtDates[index]));
   if (args.writePacks) {
     for (const job of selected) writePostingPack(job.slug, job.publicMediaUrl);
@@ -672,9 +684,11 @@ async function main() {
       limit: args.limit,
       reserveSlots: args.reserveSlots,
       platformCount: args.platformCount,
+      maxPosts: args.maxPosts,
       sharedCapacity,
       capacity,
       mediaUrlVerification: args.verifyMediaUrls ? 'required' : 'not_run',
+      repostAfterDays: args.repostAfterDays,
     },
     youtube: {
       categoryId: args.categoryId,
@@ -684,6 +698,7 @@ async function main() {
       scheduleWindowStart: `${String(args.scheduleWindowStart.hour).padStart(2, '0')}:${String(args.scheduleWindowStart.minute).padStart(2, '0')}`,
       scheduleWindowEnd: `${String(args.scheduleWindowEnd.hour).padStart(2, '0')}:${String(args.scheduleWindowEnd.minute).padStart(2, '0')}`,
       scheduleIntervalMinutes: args.scheduleIntervalMinutes,
+      sameDayOnly: args.sameDayOnly,
       maxDurationSeconds: args.maxDurationSeconds,
       maxBytes: args.maxBytes,
     },
@@ -697,7 +712,7 @@ async function main() {
       staleScheduledNeedsReconcile: scheduledState.staleBySlug.size,
     },
     selected,
-    readyOverflow: ready.slice(capacity),
+    readyOverflow: ready.slice(selected.length),
     blocked,
     skipped,
   };
@@ -718,9 +733,11 @@ async function main() {
   }
 }
 
-try {
-  await main();
-} catch (error) {
-  console.error(`[buffer-youtube] ${error.message}`);
-  process.exit(1);
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await main();
+  } catch (error) {
+    console.error(`[buffer-youtube] ${error.message}`);
+    process.exit(1);
+  }
 }

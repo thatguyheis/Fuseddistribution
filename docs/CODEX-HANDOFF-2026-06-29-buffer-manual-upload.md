@@ -40,6 +40,20 @@ The queue reopened after the hosted media map was populated:
 
 Do not schedule all 8 selected slugs. Stop at 4 slug pairs to stay within the 8-slot cap. X scheduling for the four selected slugs is complete; YouTube still needs separate review for the two rows marked not done in `docs/BUFFER-MANUAL-UPLOAD-PACK-2026-06-29.md`.
 
+## 2026-07-02 Buffer Posting Failure Update
+
+Buffer status showed no platform-wide outage for the Web App, API, or MCP. The four known YouTube and X hosted MP4 URLs below now verify as `200 video/mp4` from the `*.workers.dev` route, so the current failure is not the original undeployed-media `404` condition.
+
+The four YouTube Buffer copies were regenerated on 2026-07-02 as stricter Buffer-safe files: H.264/AAC, 720x1280, 179 seconds or shorter, and under 9 MiB each. They were deployed to Cloudflare Workers version `4b969767-55da-43a8-ad47-bec1466ef4d8`, and `npm run social:buffer:verify-media` confirmed all four `*.workers.dev/reels/...` URLs returned `200 video/mp4`.
+
+Treat any current "not posting" problem as a Buffer post-level handoff failure until live Buffer inspection proves otherwise. Before retrying:
+
+1. Query Buffer for `scheduled`, `sending`, `sent`, and `error` posts on YouTube and X.
+2. Reconcile every `.buffer-youtube-scheduled.json` and `.buffer-x-scheduled.json` entry whose `dueAt` is in the past. Mark it `sent` only if Buffer confirms delivery. Mark it `error` if Buffer has an error, the video asset is missing, or the post is absent after due time.
+3. Re-run `npm run social:buffer:verify-media` against the exact selected media map and slugs.
+4. Re-run the queue planner and use only the new `selected[].createPostPayload`.
+5. After every `create_post`, call `get_post`. For YouTube, require no Buffer error and a retained video asset. For X, require `assets[0].type == "video"`. Do not append a local scheduled-log entry until this passes.
+
 ## Critical Blocker Already Identified
 
 The local queue and posting packs were updated with hosted-style reel URLs, but Buffer rejected the first create because the URL returned `HTTP 404 Not Found`.

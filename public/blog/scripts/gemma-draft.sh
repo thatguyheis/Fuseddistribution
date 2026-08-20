@@ -3,7 +3,7 @@
 # Usage: ./gemma-draft.sh "target keyword" "silver|tech" [slug]
 # Output: public/blog/[slug]/gemma_draft.md
 #
-# Run this BEFORE the Claude blog-write skill to pre-draft content at $0 cost.
+# Produces a low-cost structural draft for deterministic gates and Codex review.
 # Review the draft, then pass it as context to blog-write for final polish.
 
 set -euo pipefail
@@ -87,4 +87,4 @@ echo ""
 echo "Draft saved: $OUTFILE"
 echo "Word count: $(echo "$DRAFT" | wc -w | tr -d ' ') words"
 echo ""
-echo "Next: Review draft, then run Claude blog-write skill for final polish."
+echo "Next: run the deterministic build gates, then have Codex review any blocked output."

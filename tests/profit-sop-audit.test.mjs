@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { buildAudit, buildLeadingIndicatorAudit, repeatMultiplier, scoreEvent } from '../scripts/profit-sop-audit.mjs';
+import { buildAudit, buildLeadingIndicatorAudit, buildOperationalPenaltyEvents, evaluateBlogPublicationState, evaluateReelReleaseState, formatRevenueProfitEvidence, repeatMultiplier, scoreEvent } from '../scripts/profit-sop-audit.mjs';
+import { normalizeOperatingDate, operatingDate } from '../scripts/lib/operating-date.mjs';
 
 const config = JSON.parse(readFileSync(new URL('../ops/profit-system/config.json', import.meta.url), 'utf8'));
 
@@ -21,6 +22,12 @@ function event(overrides = {}) {
     ...overrides,
   };
 }
+
+test('operating dates use America/Los_Angeles instead of UTC', () => {
+  const afterMidnightUtc = new Date('2026-07-28T03:38:18.876Z');
+  assert.equal(operatingDate(afterMidnightUtc), '2026-07-27');
+  assert.equal(normalizeOperatingDate('2026-07-28'), '2026-07-28');
+});
 
 test('repeated failures receive escalating punishment', () => {
   const current = event();
@@ -46,6 +53,13 @@ test('attributable gross profit dominates operational rewards', () => {
   const profit = scoreEvent(event({ kind: 'reward', type: 'gross_profit_usd', fingerprint: 'sale-order-1', value: 100 }), [], config);
   const quality = scoreEvent(event({ kind: 'reward', type: 'high_quality_delivery', fingerprint: 'qa-pass', value: 1 }), [], config);
   assert.ok(profit.points > quality.points);
+});
+
+test('unavailable revenue and gross-profit evidence is never reported as zero', () => {
+  assert.equal(formatRevenueProfitEvidence([]), 'unavailable');
+  assert.equal(formatRevenueProfitEvidence([
+    event({ kind: 'reward', type: 'gross_profit_usd', value: 125.4 }),
+  ]), '$125.40');
 });
 
 test('critical violations freeze SOP mutation', () => {
@@ -101,4 +115,148 @@ test('Buffer leading metrics compare same platform and age bucket and stay cappe
   assert.equal(result.status, 'comparable');
   assert.ok(result.score > 0);
   assert.ok(result.score <= config.leadingIndicators.maximumDailyPoints);
+});
+
+test('pending blog checkpoint forces incomplete operating day hard stop', () => {
+  const blogPublication = evaluateBlogPublicationState({
+    date: '2026-07-28',
+    queue: {
+      posts: [
+        { slug: 'silver-price-prediction-2026-what-analysts-expect' },
+        { slug: 'ai-for-customer-service-small-business-how-to-set-it-up' },
+      ],
+    },
+    pending: {
+      remaining: ['ai-for-customer-service-small-business-how-to-set-it-up'],
+    },
+    completeExists: false,
+    registeredSlugs: ['silver-price-prediction-2026-what-analysts-expect'],
+  });
+  const audit = buildAudit('2026-07-28', [], config, [], { blogPublication });
+  assert.equal(audit.operationalState.blogPublication.completionStatus, 'incomplete');
+  assert.equal(audit.hardStops.length, 1);
+  assert.equal(audit.hardStops[0].type, 'incomplete_blog_checkpoint');
+  assert.equal(audit.sopMutationAllowed, false);
+});
+
+test('fully registered blog queue with complete marker is marked complete', () => {
+  const blogPublication = evaluateBlogPublicationState({
+    date: '2026-07-28',
+    queue: {
+      posts: [
+        { slug: 'silver-price-prediction-2026-what-analysts-expect' },
+        { slug: 'how-to-use-ai-to-create-social-media-content-faster' },
+      ],
+    },
+    pending: null,
+    completeExists: true,
+    registeredSlugs: [
+      'silver-price-prediction-2026-what-analysts-expect',
+      'how-to-use-ai-to-create-social-media-content-faster',
+    ],
+  });
+  const audit = buildAudit('2026-07-28', [], config, [], { blogPublication });
+  assert.equal(audit.operationalState.blogPublication.completionStatus, 'complete');
+  assert.equal(audit.hardStops.length, 0);
+  assert.equal(audit.sopMutationAllowed, true);
+});
+
+test('complete marker does not override a missing expected blog slug', () => {
+  const blogPublication = evaluateBlogPublicationState({
+    date: '2026-08-02',
+    queue: {
+      posts: [
+        { slug: 'irs-rules-for-selling-silver-coins-1099-b-reporting' },
+        { slug: 'state-sales-tax-on-silver-coins-which-states-charge-it' },
+        { slug: 'how-to-train-your-team-on-ai-tools-step-by-step' },
+        { slug: 'ai-for-bookkeeping-small-business-tools-compared' },
+      ],
+    },
+    pending: null,
+    completeExists: true,
+    registeredSlugs: [
+      'irs-rules-for-selling-silver-coins-1099-b-reporting',
+      'state-sales-tax-on-silver-coins-which-states-charge-it',
+      'ai-for-bookkeeping-small-business-tools-compared',
+    ],
+  });
+  const audit = buildAudit('2026-08-02', [], config, [], { blogPublication });
+  assert.equal(audit.operationalState.blogPublication.completionStatus, 'incomplete');
+  assert.equal(audit.hardStops.length, 1);
+  assert.equal(audit.hardStops[0].type, 'incomplete_blog_registration');
+  assert.match(audit.hardStops[0].evidence, /complete\.json exists/);
+  assert.equal(audit.sopMutationAllowed, false);
+});
+
+test('explicitly blocked queue slugs count as accounted outcomes', () => {
+  const blogPublication = evaluateBlogPublicationState({
+    date: '2026-08-04',
+    queue: {
+      posts: [
+        { slug: 'instagram-marketing-for-local-business' },
+        { slug: 'silver-ira-how-to-set-one-up-step-by-step' },
+        { slug: 'silver-in-an-llc-vs-personal-ownership-tax-differences' },
+        { slug: 'how-to-speed-up-your-small-business-website' },
+      ],
+      blockedSlugs: [
+        'silver-in-an-llc-vs-personal-ownership-tax-differences',
+        'how-to-speed-up-your-small-business-website',
+      ],
+    },
+    pending: null,
+    completeExists: true,
+    registeredSlugs: [
+      'instagram-marketing-for-local-business',
+      'silver-ira-how-to-set-one-up-step-by-step',
+    ],
+  });
+  const audit = buildAudit('2026-08-04', [], config, [], { blogPublication });
+  assert.equal(audit.operationalState.blogPublication.completionStatus, 'complete');
+  assert.deepEqual(
+    audit.operationalState.blogPublication.blockedQueueSlugs,
+    [
+      'silver-in-an-llc-vs-personal-ownership-tax-differences',
+      'how-to-speed-up-your-small-business-website',
+    ],
+  );
+  assert.deepEqual(audit.operationalState.blogPublication.unaccountedQueueSlugs, []);
+  assert.equal(audit.hardStops.length, 0);
+  assert.equal(audit.sopMutationAllowed, true);
+});
+
+test('quality-blocked blog work is recorded once as a stable ledger penalty', () => {
+  const operationalState = {
+    blogPublication: {
+      blockedQueueSlugs: ['inherited-junk-silver-what-to-do-with-it'],
+    },
+  };
+  const created = buildOperationalPenaltyEvents({
+    date: '2026-08-18',
+    operationalState,
+    existingEvents: [],
+    occurredAt: '2026-08-18T18:30:00.000Z',
+  });
+  assert.equal(created.length, 1);
+  assert.equal(created[0].fingerprint, 'blog-quality-gate-blocked');
+  assert.equal(created[0].type, 'missed_checkpoint');
+  assert.match(created[0].evidence, /inherited-junk-silver-what-to-do-with-it/);
+  assert.deepEqual(buildOperationalPenaltyEvents({
+    date: '2026-08-18',
+    operationalState,
+    existingEvents: created,
+  }), []);
+});
+
+test('reel release checkpoint reports manual review blockers without authorizing posting', () => {
+  const result = evaluateReelReleaseState({
+    registeredSlugs: ['silver-inventory', 'local-keywords', 'near-me'],
+    releaseQaBySlug: {
+      'silver-inventory': { pass: true, manualCaptionReview: false, readyForPosting: false },
+      'local-keywords': { pass: true, manualCaptionReview: true, readyForPosting: true },
+    },
+  });
+  assert.equal(result.completionStatus, 'blocked');
+  assert.deepEqual(result.manualCaptionReviewPendingSlugs, ['silver-inventory']);
+  assert.deepEqual(result.readyForPostingSlugs, ['local-keywords']);
+  assert.deepEqual(result.missingReleaseQaSlugs, ['near-me']);
 });

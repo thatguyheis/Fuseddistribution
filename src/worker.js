@@ -16,6 +16,7 @@ const MAILERLITE_GROUPS = {
 const MAX_JSON_BODY_BYTES = 4096;
 const REEL_MEDIA_PREFIXES = ["/reels/", "/reels-x/"];
 const MP4_CACHE_CONTROL = "public, max-age=31536000, immutable";
+const GOOGLE_ANALYTICS_ID = "G-3J56X9V708";
 
 class RequestError extends Error {
   constructor(message, status = 400) {
@@ -74,7 +75,7 @@ export class SubmissionRateLimiter extends DurableObject {
 
 function buildCSP(nonce) {
   const scriptSrc = nonce ? `'self' 'nonce-${nonce}'` : `'self'`;
-  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc}; img-src 'self' data: https://images.pexels.com; connect-src 'self'; form-action 'self'; frame-ancestors 'self'`;
+  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc} https://www.googletagmanager.com; img-src 'self' data: https://images.pexels.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; form-action 'self'; frame-ancestors 'self'`;
 }
 
 function withSecurityHeaders(response, nonce) {
@@ -95,10 +96,37 @@ function generateNonce() {
     .replace(/=/g, "");
 }
 
-async function applyNonce(response, nonce) {
+async function applyNonce(response, nonce, consentState = "") {
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) return response;
-  return new HTMLRewriter()
+  const rewriter = new HTMLRewriter()
+    .on("head", {
+      element(element) {
+        if (consentState === "granted") {
+          element.append(
+            `<script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}" nonce="${nonce}"></script>
+    <script nonce="${nonce}">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GOOGLE_ANALYTICS_ID}');
+    </script>`,
+            { html: true },
+          );
+        }
+      },
+    });
+  if (!consentState) {
+    rewriter.on("body", {
+      element(element) {
+        element.append(
+          `<div id="fused-analytics-consent" role="dialog" aria-label="Analytics preferences" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483647;max-width:720px;margin:auto;padding:16px 18px;border:1px solid rgba(88,214,255,.35);border-radius:14px;background:#07131a;color:#ecf8fb;box-shadow:0 12px 40px rgba(0,0,0,.4);font:14px/1.5 system-ui,sans-serif"><div style="margin-bottom:10px">We use optional Google Analytics to understand site usage and improve the site. You can accept or decline.</div><a href="?analytics_consent=granted" style="display:inline-block;margin-right:8px;padding:8px 14px;border:1px solid #58d6ff;border-radius:8px;background:#58d6ff;color:#041018;font-weight:700;cursor:pointer;text-decoration:none">Accept analytics</a><a href="?analytics_consent=denied" style="display:inline-block;padding:8px 14px;border:1px solid rgba(236,248,251,.5);border-radius:8px;background:transparent;color:#ecf8fb;cursor:pointer;text-decoration:none">Decline</a></div>`,
+          { html: true },
+        );
+      },
+    });
+  }
+  return rewriter
     .on("script", {
       element(element) {
         element.setAttribute("nonce", nonce);
@@ -562,12 +590,54 @@ async function handleApiRequest(request, env, url) {
   return json({ error: "Not found." }, { status: 404 });
 }
 
+async function rejectUnregisteredBlogAsset(request, env, url) {
+  const parts = url.pathname.split("/").filter(Boolean);
+  if (parts[0] !== "blog" || parts.length < 2 || parts[1] === "posts.json") return null;
+
+  // Workers Assets can retain an older asset version after a generated post is
+  // quarantined. The authoritative posts manifest must control canonical blog
+  // paths so an unregistered partial post cannot remain publicly reachable.
+  const postsResponse = await env.ASSETS.fetch(
+    new Request(new URL("/blog/posts.json", request.url).toString()),
+  );
+  if (postsResponse.status !== 200) return null;
+
+  let posts;
+  try {
+    posts = await postsResponse.json();
+  } catch {
+    return null;
+  }
+  if (!Array.isArray(posts) || posts.some((post) => post?.slug === parts[1])) return null;
+  return new Response("Not found.", { status: 404 });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const nonce = generateNonce();
+    const consentState = (request.headers.get("Cookie") || "").match(
+      /(?:^|;\s*)fused_analytics_consent=(granted|denied)(?:;|$)/,
+    )?.[1] || "";
 
     try {
+      const analyticsConsent = url.searchParams.get("analytics_consent");
+      if (analyticsConsent === "granted" || analyticsConsent === "denied") {
+        const cleanUrl = new URL(request.url);
+        cleanUrl.searchParams.delete("analytics_consent");
+        return withSecurityHeaders(
+          new Response(null, {
+            status: 303,
+            headers: {
+              Location: cleanUrl.toString(),
+              "Set-Cookie": `fused_analytics_consent=${analyticsConsent}; Max-Age=31536000; Path=/; SameSite=Lax`,
+              "Cache-Control": "no-store",
+            },
+          }),
+          null,
+        );
+      }
+
       if (BLOCKED_PREFIXES.some((prefix) => url.pathname.startsWith(prefix))) {
         return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
       }
@@ -581,6 +651,11 @@ export default {
         return withSecurityHeaders(reelMediaResponse, null);
       }
 
+      const unregisteredBlogResponse = await rejectUnregisteredBlogAsset(request, env, url);
+      if (unregisteredBlogResponse) {
+        return withSecurityHeaders(unregisteredBlogResponse, null);
+      }
+
       const assetResponse = await env.ASSETS.fetch(request);
       if (assetResponse.status === 404) {
         try {
@@ -592,7 +667,7 @@ export default {
             headers.delete("content-encoding");
             headers.delete("content-length");
             const response = new Response(notFound.body, { status: 404, headers });
-            return withSecurityHeaders(await applyNonce(response, nonce), nonce);
+            return withSecurityHeaders(await applyNonce(response, nonce, consentState), nonce);
           }
         } catch (error) {
           console.error(JSON.stringify({ event: "custom_404_failed", error: String(error) }));
@@ -600,7 +675,7 @@ export default {
         return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
       }
 
-      return withSecurityHeaders(await applyNonce(assetResponse, nonce), nonce);
+      return withSecurityHeaders(await applyNonce(assetResponse, nonce, consentState), nonce);
     } catch (error) {
       if (error instanceof RequestError) {
         return withSecurityHeaders(json({ error: error.message }, { status: error.status }), null);

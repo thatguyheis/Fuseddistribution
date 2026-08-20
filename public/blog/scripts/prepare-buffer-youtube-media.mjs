@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const publicReelsRoot = join(repoRoot, 'public', 'reels');
@@ -86,12 +87,24 @@ function readJsonIfExists(path, fallback) {
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
+function readJson(path) {
+  return JSON.parse(readFileSync(path, 'utf8'));
+}
+
 function sourceVideoPath(slug) {
   return join(videoOutRoot, slug, `${slug}.mp4`);
 }
 
 function outputVideoPath(slug) {
   return join(publicReelsRoot, slug, `${slug}.mp4`);
+}
+
+function renderMetaPath(slug) {
+  return join(videoOutRoot, slug, 'render-meta.json');
+}
+
+function isoMtime(path) {
+  return statSync(path).mtime.toISOString();
 }
 
 function durationSeconds(path) {
@@ -135,6 +148,16 @@ function fileSizeBytes(path) {
     return statSync(path).size;
   } catch {
     return null;
+  }
+}
+
+function assertDecodable(path) {
+  const result = spawnSync('ffmpeg', ['-v', 'error', '-i', path, '-f', 'null', '-'], {
+    cwd: repoRoot,
+    encoding: 'utf8',
+  });
+  if (result.status !== 0 || result.stderr.trim()) {
+    throw new Error(`Output contains undecodable media packets: ${path}`);
   }
 }
 
@@ -232,31 +255,40 @@ function prepareOutput(input, output, args) {
   if (sourceDuration === null) throw new Error(`Could not read duration for ${input}`);
   if (sourceBytes === null) throw new Error(`Could not read size for ${input}`);
 
-  mkdirSync(dirname(output), { recursive: true });
-  if (!needsTranscode(sourceInfo, sourceBytes, args)) {
-    copyFileSync(input, output);
-  } else {
-    for (const crf of [24, 27, 30, 33]) {
-      transcode(input, output, args, crf);
-      const outputBytes = fileSizeBytes(output);
-      if (outputBytes !== null && outputBytes <= args.maxBytes) break;
+  const temporaryOutput = `${output}.tmp.mp4`;
+  mkdirSync(dirname(temporaryOutput), { recursive: true });
+  rmSync(temporaryOutput, { force: true });
+  try {
+    if (!needsTranscode(sourceInfo, sourceBytes, args)) {
+      copyFileSync(input, temporaryOutput);
+    } else {
+      for (const crf of [24, 27, 30, 33]) {
+        transcode(input, temporaryOutput, args, crf);
+        const temporaryBytes = fileSizeBytes(temporaryOutput);
+        if (temporaryBytes !== null && temporaryBytes <= args.maxBytes) break;
+      }
     }
+    const validated = validateOutput(temporaryOutput, args);
+    assertDecodable(temporaryOutput);
+    renameSync(temporaryOutput, output);
+    const { outputInfo, outputBytes } = validated;
+
+    return {
+      sourceDuration,
+      sourceBytes,
+      sourceWidth: sourceInfo.width,
+      sourceHeight: sourceInfo.height,
+      outputDuration: outputInfo.duration,
+      outputBytes,
+      outputWidth: outputInfo.width,
+      outputHeight: outputInfo.height,
+      outputVideoCodec: outputInfo.videoCodec,
+      outputAudioCodec: outputInfo.audioCodec,
+    };
+  } catch (error) {
+    rmSync(temporaryOutput, { force: true });
+    throw error;
   }
-
-  const { outputInfo, outputBytes } = validateOutput(output, args);
-
-  return {
-    sourceDuration,
-    sourceBytes,
-    sourceWidth: sourceInfo.width,
-    sourceHeight: sourceInfo.height,
-    outputDuration: outputInfo.duration,
-    outputBytes,
-    outputWidth: outputInfo.width,
-    outputHeight: outputInfo.height,
-    outputVideoCodec: outputInfo.videoCodec,
-    outputAudioCodec: outputInfo.audioCodec,
-  };
 }
 
 function main() {
@@ -267,12 +299,24 @@ function main() {
   for (const slug of [...new Set(args.slugs)]) {
     const input = sourceVideoPath(slug);
     if (!existsSync(input)) throw new Error(`Missing source MP4 for ${slug}: ${input}`);
+    const audioRights = assertRenderedReelAudioCleared(slug, { repoRoot });
+    const renderMeta = readJson(renderMetaPath(slug));
 
     const output = outputVideoPath(slug);
     const media = prepareOutput(input, output, args);
     const url = `${args.baseUrl}/${slug}/${slug}.mp4`;
-    map[slug] = url;
-    results.push({ slug, output, url, ...media });
+    map[slug] = {
+      url,
+      generatedAt: new Date().toISOString(),
+      sourceVideo: input,
+      sourceMtime: isoMtime(input),
+      sourceRenderedAt: renderMeta.renderedAt || null,
+      sourceMusicTrack: audioRights.musicTrack,
+      sourceMusicRightsStatus: audioRights.status,
+      outputVideo: output,
+      outputMtime: isoMtime(output),
+    };
+    results.push({ slug, output, url, musicTrack: audioRights.musicTrack, ...media });
   }
 
   mkdirSync(dirname(args.out), { recursive: true });
@@ -280,7 +324,7 @@ function main() {
 
   for (const result of results) {
     console.log(
-      `[buffer-youtube-media] ${result.slug}: ${result.sourceDuration.toFixed(3)}s/${result.sourceBytes} bytes ${result.sourceWidth}x${result.sourceHeight} -> ${result.outputDuration.toFixed(3)}s/${result.outputBytes} bytes ${result.outputWidth}x${result.outputHeight} ${result.output}`,
+      `[buffer-youtube-media] ${result.slug}: ${result.sourceDuration.toFixed(3)}s/${result.sourceBytes} bytes ${result.sourceWidth}x${result.sourceHeight} -> ${result.outputDuration.toFixed(3)}s/${result.outputBytes} bytes ${result.outputWidth}x${result.outputHeight} ${result.musicTrack} ${result.output}`,
     );
   }
   console.log(`[buffer-youtube-media] wrote ${args.out}`);

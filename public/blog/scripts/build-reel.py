@@ -13,8 +13,10 @@ MIN_BODY_SEGMENTS = 8
 MAX_BODY_SEGMENTS = 12
 MIN_DURATION_SECONDS = 180
 MAX_DURATION_SECONDS = 240
-TARGET_CHUNK_WORDS = 42
-MAX_CHUNK_WORDS = 56
+TARGET_CHUNK_WORDS = 60
+MAX_CHUNK_WORDS = 72
+ESTIMATED_CHATTERBOX_WORDS_PER_SECOND = 3.25
+ESTIMATED_SEGMENT_BUFFER_SECONDS = 0.4
 
 
 def scrub(value: str) -> str:
@@ -41,6 +43,9 @@ def scrub(value: str) -> str:
 
 def article_sentences(markdown: str) -> list[str]:
     text = re.sub(r"<!--.*?-->", "", markdown, flags=re.S)
+    # Correction notices belong in the article record, not in evergreen reel
+    # narration. Remove a leading one-paragraph notice before sentence chunking.
+    text = re.sub(r"^# .*?\n\n\*\*Correction dated[^\n]*\n\n", "", text, count=1, flags=re.S | re.I)
     text = re.split(r"^##\s+Related\s*$", text, maxsplit=1, flags=re.M | re.I)[0]
     text = re.sub(r"See how it works at\s+/#contact\.?", "", text, flags=re.I)
     text = re.sub(r"^# .*$", "", text, count=1, flags=re.M)
@@ -94,7 +99,10 @@ def narration(value: str) -> str:
 
 
 def segment_duration(value: str) -> int:
-    return math.ceil(len(value.split()) / 2.5) + 2
+    return math.ceil(
+        len(value.split()) / ESTIMATED_CHATTERBOX_WORDS_PER_SECOND
+        + ESTIMATED_SEGMENT_BUFFER_SECONDS
+    )
 
 
 FIGURE_PATTERN = re.compile(
@@ -195,11 +203,24 @@ def find_figure(value: str) -> re.Match[str] | None:
     masked = PHONE_PATTERN.sub(lambda match: " " * len(match.group(0)), value)
     range_match = RANGE_FIGURE_PATTERN.search(masked)
     if range_match:
-        return range_match
+        raw_range = range_match.group(0).strip()
+        range_values = [int(value.replace(",", "")) for value in re.findall(r"\d[\d,]*", raw_range)]
+        has_range_unit = bool(re.search(r"[$£€%]|percent|x|years?|days?|hours?|minutes?|miles?", raw_range, flags=re.I))
+        # A publication or forecast window such as "2024 to 2028" is context,
+        # not the stat. Prefer the next measurable figure in the narration so
+        # the on-screen label satisfies the release validator.
+        if has_range_unit or not (
+            len(range_values) == 2 and all(1900 <= number <= 2100 for number in range_values)
+        ):
+            return range_match
     for match in FIGURE_PATTERN.finditer(masked):
         raw = match.group(0).strip()
         digits = re.sub(r"\D", "", raw)
         has_unit = bool(re.search(r"[$£€%]|percent|million|billion|trillion|ounces?|grams?|x|years?|days?|hours?|minutes?|miles?", raw, flags=re.I))
+        # Stray ordered-list markers can survive sentence chunking as a bare
+        # trailing number (for example "5."). They are structure, not stats.
+        if digits and int(digits) <= 12 and not has_unit:
+            continue
         if digits and 1900 <= int(digits) <= 2100 and not has_unit:
             continue
         return match

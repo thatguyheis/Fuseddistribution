@@ -3,12 +3,13 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { audioDurationSeconds } from './audio-timing.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
 // Voice tiers, best first:
-// 1. Chatterbox (voice clone, MPS) — scripts/chatterbox-tts.py in its own venv
+// 1. Chatterbox (voice clone, CPU by default; MPS opt-in) — scripts/chatterbox-tts.py in its own venv
 // 2. Coqui XTTS v2 (voice clone)
 // 3. macOS Zoe (Premium) built-in
 const CHATTERBOX_PY = '/Users/nick/.venvs/chatterbox/bin/python3';
@@ -95,6 +96,31 @@ function loadManifest(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return {version: 1, segments: {}}; }
 }
 
+function recoverChatterboxCheckpoints(jobs, manifest, manifestPath, voice) {
+  const remaining = [];
+  for (const job of jobs) {
+    const tmpWav = job.outPath.replace(/\.m4a$/, '_tmp.wav');
+    if (!existsSync(tmpWav)) {
+      remaining.push(job);
+      continue;
+    }
+    try {
+      const duration = audioDurationSeconds(tmpWav);
+      if (!Number.isFinite(duration) || duration <= 0.1) throw new Error('invalid WAV duration');
+      execSync(`ffmpeg -y -i "${tmpWav}" -c:a aac "${job.outPath}" 2>/dev/null`);
+      rmSync(tmpWav, {force: true});
+      manifest.segments ??= {};
+      manifest.segments[job.index] = {hash: job.hash, voice, text: job.ttsText};
+      writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+      console.log(`  ↻ segment-${job.index}.m4a recovered from durable WAV checkpoint`);
+    } catch {
+      rmSync(tmpWav, {force: true});
+      remaining.push(job);
+    }
+  }
+  return remaining;
+}
+
 async function generateAudio(slug, requestedVoice = 'chatterbox', force = false) {
   const scriptPath = join(ROOT, 'out', slug, 'script.json');
   if (!existsSync(scriptPath)) {
@@ -119,7 +145,7 @@ async function generateAudio(slug, requestedVoice = 'chatterbox', force = false)
   let skipped = 0;
   let needed = 0;
   let failed = 0;
-  const jobs = [];
+  let jobs = [];
 
   for (let i = 0; i < script.segments.length; i++) {
     const seg = script.segments[i];
@@ -156,25 +182,46 @@ async function generateAudio(slug, requestedVoice = 'chatterbox', force = false)
   }
 
   if (voice === 'chatterbox' && jobs.length > 0) {
-    try {
-      for (const job of jobs) rmSync(job.outPath.replace(/\.m4a$/, '_tmp.wav'), {force: true});
-      chatterboxBatchToM4a(slug, jobs);
-      for (const job of jobs) {
+    jobs = recoverChatterboxCheckpoints(jobs, manifest, manifestPath, voice);
+    for (const job of jobs) {
+      try {
+        // Process one segment at a time so a slow TTS segment cannot hide
+        // completed audio or discard the whole reel's progress.
+        chatterboxBatchToM4a(slug, [job]);
         manifest.segments ??= {};
         manifest.segments[job.index] = {hash: job.hash, voice, text: job.ttsText};
+        writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
         console.log(`  ✓ segment-${job.index}.m4a (${job.segmentType})`);
         generated++;
-      }
-    } catch (err) {
-      for (const job of jobs) {
+      } catch (err) {
         rmSync(job.outPath, {force: true});
-        rmSync(job.outPath.replace(/\.m4a$/, '_tmp.wav'), {force: true});
+        const tmpWav = job.outPath.replace(/\.m4a$/, '_tmp.wav');
+        try {
+          const duration = audioDurationSeconds(tmpWav);
+          if (!Number.isFinite(duration) || duration <= 0.1) rmSync(tmpWav, {force: true});
+        } catch {
+          rmSync(tmpWav, {force: true});
+        }
+        failed++;
+        console.error(`  ✗ Chatterbox segment-${job.index} failed: ${err.message}`);
       }
-      failed += jobs.length;
-      console.error(`  ✗ Chatterbox batch failed: ${err.message}`);
     }
   }
   writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+  const audioDurations = {};
+  if (failed === 0) {
+    for (let i = 0; i < script.segments.length; i++) {
+      if (!script.segments[i].narration) continue;
+      const path = join(audioDir, `segment-${i}.m4a`);
+      try {
+        audioDurations[i] = audioDurationSeconds(path);
+      } catch (error) {
+        console.error(`  ✗ segment-${i} duration check failed: ${error.message}`);
+        failed++;
+      }
+    }
+  }
+  writeFileSync(join(audioDir, 'audio-durations.json'), `${JSON.stringify(audioDurations, null, 2)}\n`);
   console.log(`Done. Generated: ${generated}, skipped: ${skipped}, failed: ${failed}`);
   if (failed > 0) {
     console.error(`ERROR: ${failed} of ${needed} required segments failed TTS — aborting render`);

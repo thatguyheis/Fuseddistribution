@@ -7,6 +7,9 @@ import { generateCaptions } from './generate-captions.mjs';
 import { formatValidationResult, validateReelScript } from './validate-reel.mjs';
 import { createHash } from 'node:crypto';
 import { compositionFramesForSegments } from './transition-timing.mjs';
+import { assertMusicTrackCleared, normalizeMusicTrack, selectTrustedCycleTrack } from './audio-rights.mjs';
+import { collectAudioDurations, retimeScriptToAudio, writeAudioTiming } from './audio-timing.mjs';
+import { musicMixForTrack } from './music-mix.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -27,7 +30,11 @@ function acquireRenderLock() {
   }
   mkdirSync(renderLockDir);
   writeFileSync(join(renderLockDir, 'pid'), String(process.pid));
-  const release = () => rmSync(renderLockDir, {recursive: true, force: true});
+  const release = () => {
+    let ownerPid = null;
+    try { ownerPid = Number(readFileSync(join(renderLockDir, 'pid'), 'utf8').trim()); } catch {}
+    if (ownerPid === process.pid) rmSync(renderLockDir, {recursive: true, force: true});
+  };
   process.once('exit', release);
   process.once('SIGINT', () => { release(); process.exit(130); });
   process.once('SIGTERM', () => { release(); process.exit(143); });
@@ -76,10 +83,12 @@ function summarizeMedia(media) {
   };
 }
 
-async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voice = 'chatterbox') {
+async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chatterbox') {
+  musicTrack = musicTrack === 'cycle' ? selectTrustedCycleTrack(slug) : normalizeMusicTrack(musicTrack);
   const reelLabel = reelN ? ` (reel ${reelN})` : '';
   console.log(`\n=== Blog Reel Renderer: ${slug}${reelLabel} ===\n`);
   assertFdHeadroom();
+  const musicRights = assertMusicTrackCleared(musicTrack);
 
   // 1. Parse
   const reelFlag = reelN ? ` --reel=${reelN}` : '';
@@ -88,7 +97,7 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
   if (!existsSync(scriptPath)) {
     console.error('Parse failed — script.json not found.'); process.exit(1);
   }
-  const script = JSON.parse(readFileSync(scriptPath, 'utf8'));
+  let script = JSON.parse(readFileSync(scriptPath, 'utf8'));
 
   const validation = validateReelScript(script);
   const validationOutput = formatValidationResult(validation);
@@ -100,6 +109,22 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
 
   // 2. Audio
   run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice}`);
+
+  // 2b. The written script contains only a pre-TTS estimate. Chatterbox pace
+  // varies by sentence, so production timing is rebuilt from the actual audio
+  // files before captions, media, or Remotion see the timeline.
+  const audioDurations = collectAudioDurations(videoDir, slug, script.segments.length);
+  const retimed = retimeScriptToAudio(script, audioDurations);
+  script = retimed.script;
+  writeFileSync(scriptPath, `${JSON.stringify(script, null, 2)}\n`);
+  writeAudioTiming(join(videoDir, 'out', slug, 'audio-timing.json'), retimed.timing);
+  const timedValidation = validateReelScript(script, { audioDurations });
+  const timedValidationOutput = formatValidationResult(timedValidation);
+  if (timedValidationOutput) console.log(`\n${timedValidationOutput}`);
+  if (timedValidation.errors.length > 0) {
+    console.error('\nMeasured audio timing failed validation.');
+    process.exit(1);
+  }
 
   // 3. Media. Stock APIs are best-effort; local copied blog images are the
   // required fallback. Rendering without media is a production failure.
@@ -118,12 +143,13 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
   const captionResult = await generateCaptions(slug);
   const captions = captionResult.captions;
 
-  // 4. Music check
-  const musicPath = join(videoDir, 'public', 'music', musicTrack);
-  if (!existsSync(musicPath)) {
-    console.warn(`\n⚠  Music not found: public/music/${musicTrack}`);
-    console.warn('   See public/music/README.md. Rendering without music.\n');
+  // 4. Music rights were checked before any expensive audio/render work.
+  if (musicTrack === 'none') {
+    console.log('\n→ music: none (audio-rights policy approved)\n');
+  } else {
+    console.log(`\n→ music: ${musicTrack} (${musicRights.rights.license}, ${musicRights.rights.sourceName})\n`);
   }
+  const musicMix = musicMixForTrack(musicTrack);
 
   // 5. Prepare metadata; write it only after the MP4 passes duration checks.
   const hookText = script.segments.find(s => s.type === 'hook')?.text ?? '';
@@ -134,7 +160,7 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
   const outFileName = reelN ? `${slug}-reel${reelN}.mp4` : `${slug}.mp4`;
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
-  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, media, captions }));
+  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions }));
   run(`npx remotion render src/Root.tsx BlogReel --concurrency=1 --props="${propsFile}" "${outFile}"`);
 
   const renderedDuration = parseFloat(execSync(
@@ -160,6 +186,14 @@ async function renderPost(slug, musicTrack = 'ambient-01.mp3', reelN = null, voi
     voice,
     captionMode: captionResult.meta.mode,
     musicTrack,
+    musicMix,
+    audioTiming: retimed.timing,
+    musicRights: {
+      status: musicRights.status,
+      license: musicRights.rights?.license ?? 'not_applicable',
+      sourceName: musicRights.rights?.sourceName ?? 'not_applicable',
+      sourceUrl: musicRights.rights?.sourceUrl ?? '',
+    },
     photosUsed: mediaSummary.mediaUsed,
     ...mediaSummary,
   };
@@ -172,11 +206,11 @@ const postArg = process.argv.find(a => a.startsWith('--post='));
 const musicArg = process.argv.find(a => a.startsWith('--music='));
 const reelArg = process.argv.find(a => a.startsWith('--reel='));
 const voiceArg = process.argv.find(a => a.startsWith('--voice='));
-if (!postArg) { console.error('Usage: node render.mjs --post=<slug> [--reel=N] [--music=ambient-02.mp3] [--voice=chatterbox|zoe|coqui]'); process.exit(1); }
+if (!postArg) { console.error('Usage: node render.mjs --post=<slug> [--reel=N] [--music=cycle|none|approved-track.mp3] [--voice=chatterbox|zoe|coqui]'); process.exit(1); }
 acquireRenderLock();
 renderPost(
   postArg.replace('--post=', ''),
-  musicArg?.replace('--music=', '') || undefined,
+  musicArg?.replace('--music=', '') || 'cycle',
   reelArg?.replace('--reel=', '') ?? null,
   voiceArg?.replace('--voice=', '') || 'chatterbox',
 );

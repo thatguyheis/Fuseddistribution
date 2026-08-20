@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Orchestrator — runs the decoupled per-slug pipeline. File -> file, each stage a
-# separate process. Hermes/local LLM owns the normal path; Claude is optional
-# only when Hermes takeover is disabled and Claude is explicitly enabled.
-# Replaces the monolith claude call in daily-blog-reel.sh.
+# separate process. Hermes/local LLM owns the scheduled path; Codex owns
+# recovery and editorial review. Legacy Claude branches remain non-default only
+# so historical runs are diagnosable, not as a production dependency.
 #
 # Usage: build-post.sh <slug> --brand=silver|tech [--keyword="..."] [--gap="..."]
 #                              [--degraded]   # skip all claude stages
@@ -17,8 +17,8 @@ LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
 if [[ ! -x "$LOCAL_LLM" ]]; then
   LOCAL_LLM="$HOME/bin/gemma.sh"
 fi
-HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
-CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
+HERMES_TAKEOVER="${HERMES_TAKEOVER:-1}"
+CLAUDE_ENABLED="${CLAUDE_ENABLED:-0}"
 
 SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0 FORCE=0
 for a in "$@"; do case "$a" in
@@ -63,6 +63,7 @@ if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
     case "$WRC" in
       0) mark write-local;;
       4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
+      5) log "T5 local write QUALITY BLOCKED -> structural requirements were not met."; mark write-quality-fail; log "DONE. stages: ${DONE[*]}"; exit 0;;
       *) if [[ ! -s "$DIR/verified.md" ]]; then
            log "T5 local write DEFERRED -> exit $WRC with no usable article. Keep for retry."
            mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0
@@ -115,6 +116,14 @@ if [[ $FORCE -eq 1 || ! -f "$DIR/meta.json" ]]; then
   BLOGDIR="$BLOG_DIR" TITLE="$TITLE" DESC="${DESC:-$TITLE}" ALT="${ALT:-$TITLE}" SLUG="$SLUG" BRAND="$BRAND" T1="$T1" T2="$T2" python3 -c '
 import json, os, datetime, re
 def clean(s, fallback):
+    # Same broad match as qa-local.mjs preamble blocker. Gemma frequently echoes
+    # the instruction ("Here are six-word alt text options: 1) ... 2) ...")
+    # without the word "image", so a surgical strip below misses it and the
+    # leftover list garbage passes clean() only to be blocked later by QA.
+    # Once this pattern is seen at all, do not try to salvage a line from the
+    # list -- fall back to the deterministic title-based value.
+    if re.search(r"(?i)\bhere (?:are|is)\b.*(?:six-word|6-word).*(?:alt texts?|options?)\b", s):
+        return fallback
     s = re.sub(r"\*+", "", s)                       # strip markdown bold/italic
     s = re.sub(r"\s*[–—]\s*", " - ", s)            # keep metadata inside the deterministic style gate
     s = re.sub(r"(?i)^here (?:are|is)\s+(?:six-word|6-word)?\s*(?:alt texts?|options?)\s+(?:for\s+)?(?:the\s+)?(?:hero\s+)?image\s*:\s*(?:\d+[.)]?\s*)?", "", s)
@@ -180,6 +189,8 @@ else
   log "chart failed (continue — enhancement only)"
 fi
 
+log "custom graphic fallback"; node "$SD/ensure-custom-graphic.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "custom graphic fallback failed"
+
 # ── T9 reel (deterministic+) ──
 log "T9 reel"; "$SD/build-reel.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /' && mark reel || log "reel failed"
 
@@ -211,19 +222,40 @@ elif [[ $CLAUDE_OK -eq 1 ]]; then
   log "Claude enhancement stages skipped (set RUN_CLAUDE_ENHANCEMENTS=1 to enable)"
 fi
 
-# ── assets: jpg from svg (Chrome headless), pexels (best-effort) ──
-CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-if [[ -x "$CHROME" ]]; then
-  for pair in "hero.svg:hero.jpg:1200,630" "photo-post.svg:photo-post.jpg:1200,1200"; do
-    src="${pair%%:*}"; rest="${pair#*:}"; out="${rest%%:*}"; size="${rest#*:}"
-    if [[ -f "$DIR/$src" ]]; then
-      "$CHROME" --headless=new --disable-gpu --screenshot=/tmp/bp-tmp.png --window-size="$size" "file://$DIR/$src" 2>/dev/null \
-        && sips -s format jpeg /tmp/bp-tmp.png --out "$DIR/$out" -s formatOptions 85 >/dev/null 2>&1 && rm -f /tmp/bp-tmp.png
-    fi
-  done
-  [[ -s "$DIR/hero.jpg" ]] && mark assets || log "assets: hero.jpg not generated"
+# ── T11 preflight artifact gate ──
+# Run the deterministic checks before image rendering. The checks cover the
+# generated HTML, social copy, and reel timing, so a known-bad post cannot
+# spend time producing JPG assets only to be quarantined by the identical
+# final gate later in this pipeline.
+log "T11 preflight artifact QA"
+if node "$SD/qa-local.mjs" --slug="$SLUG" --out="$DIR/qa-preflight.json" 2>&1 | sed 's/^/  /'; then
+  mark qa-preflight-pass
 else
-  log "assets: Chrome not found, skipping jpg (svg still present)"
+  log "preflight FAILED -> deterministic artifact gate blocked asset rendering and publish"
+  mark qa-preflight-fail
+  log "DONE. stages: ${DONE[*]}"
+  exit 0
+fi
+
+# ── assets: jpg from svg (libvips via sharp), pexels (best-effort) ──
+# Do not launch the full macOS Chrome app from an automation sandbox. Chrome
+# aborts during LaunchServices registration before headless rendering begins.
+ASSET_RENDER_FAILED=0
+for pair in "hero.svg:hero.jpg:1200:630" "photo-post.svg:photo-post.jpg:1200:1200"; do
+  src="${pair%%:*}"; rest="${pair#*:}"
+  out="${rest%%:*}"; rest="${rest#*:}"
+  width="${rest%%:*}"; height="${rest#*:}"
+  if [[ -f "$DIR/$src" ]]; then
+    node "$SD/render-svg-jpg.mjs" \
+      --input="$DIR/$src" --output="$DIR/$out" \
+      --width="$width" --height="$height" --quality=85 \
+      2>&1 | sed 's/^/  /' || ASSET_RENDER_FAILED=1
+  fi
+done
+if [[ $ASSET_RENDER_FAILED -eq 0 && -s "$DIR/hero.jpg" && -s "$DIR/photo-post.jpg" ]]; then
+  mark assets
+else
+  log "assets: required JPG rendering failed; post will remain pending for retry"
 fi
 
 # ── SVG entity gate (SOP §13) ──
@@ -245,8 +277,11 @@ fi
 # ── T12 brain QA (Hermes first, Claude optional) ──
 if [[ $PUBLISH_OK -eq 1 && -f "$DIR/index.html" && ( "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" || $CLAUDE_OK -eq 1 ) ]]; then
   log "T12 brain qa-gate"
-  "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'
-  QA_RC=${PIPESTATUS[0]}
+  if "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'; then
+    QA_RC=0
+  else
+    QA_RC=$?
+  fi
   case "$QA_RC" in
     0) mark qa-brain-pass;;
     3) if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then

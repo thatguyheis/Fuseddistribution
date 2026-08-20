@@ -13,6 +13,20 @@ SPEC.loader.exec_module(MODULE)
 
 
 class BuildReelTests(unittest.TestCase):
+    def test_prefers_measurable_stat_over_year_range(self):
+        text = (
+            "The market was valued at $1.78 billion in 2023 and is projected "
+            "to grow 4.7 percent from 2024 to 2028."
+        )
+
+        figure = MODULE.find_figure(text)
+
+        self.assertIsNotNone(figure)
+        self.assertEqual(figure.group(0), "$1.78 billion")
+
+    def test_ignores_bare_ordered_list_number(self):
+        self.assertIsNone(MODULE.find_figure("Refine the response and ask a follow-up question. 5."))
+
     def test_builds_complete_timed_reel(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

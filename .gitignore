@@ -48,6 +48,12 @@ public/blog/*/posting-pack.md
 
 # Local quarantine for QA-failed generated blog artifacts
 .workflow-blocked/
+.workflow-state/
 
 # Local Claude/Codex worktrees can contain copied env files
 .claude/worktrees/
+
+# Local AI/audio generation tools, model caches, and unapproved candidates
+.local-tools/
+.model-cache/
+video/music-candidates/

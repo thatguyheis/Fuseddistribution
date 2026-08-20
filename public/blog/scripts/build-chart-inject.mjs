@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// build-chart-inject.mjs — deterministic half of the chart stage.
-// Validates chart.json values against the post's own sourced text (verified.md,
-// research.json, index.html), renders the chart-wrap SVG, injects it into
-// index.html, appends `## chart` to reel-data.md, and syncs hooks.json key_stat.
+// build-chart-inject.mjs — deterministic half of the numeric-visual stage.
+// Validates schema v2 evidence against verified.md/research.json, enforces the
+// semantic rules for each visual type, renders accessible HTML/SVG, injects it
+// into index.html, and syncs eligible percent bars to reel-data.md.
 //
 // Anti-fabrication gate: every bar value must appear verbatim (numeric token)
 // in the post's source text or the chart is rejected. Exit codes:
@@ -44,17 +44,73 @@ export function unitOf(value) {
   return "plain";
 }
 
+function normalizedWhitespace(value) {
+  return String(value).replace(/\s+/g, " ").trim();
+}
+
+export function evidenceInText(evidence, sourceText) {
+  const needle = normalizedWhitespace(evidence);
+  return needle.length >= 12 && normalizedWhitespace(sourceText).includes(needle);
+}
+
+export function chartData(chart) {
+  if (Array.isArray(chart.data)) return chart.data;
+  if (Array.isArray(chart.bars)) return chart.bars;
+  return [];
+}
+
+function validHttpsUrl(value) {
+  try { return new URL(String(value)).protocol === "https:"; }
+  catch { return false; }
+}
+
 export function validateChart(chart, sourceText) {
   const errs = [];
-  const bars = Array.isArray(chart.bars) ? chart.bars : [];
+  const type = chart.visual_type || "bar";
+  const data = chartData(chart);
   if (!chart.title || String(chart.title).length > 90) errs.push("title missing or >90 chars");
-  if (bars.length < 3 || bars.length > 6) errs.push(`need 3-6 bars, got ${bars.length}`);
-  const units = new Set(bars.map(b => unitOf(b.value)));
-  if (units.size > 1) errs.push(`mixed units: ${[...units].join(",")}`);
-  for (const b of bars) {
-    if (!b.label || String(b.label).length > 42) errs.push(`bad label: ${JSON.stringify(b.label)}`);
-    if (numericToken(b.value) === null) errs.push(`non-numeric value: ${JSON.stringify(b.value)}`);
-    else if (!valueInText(b.value, sourceText)) errs.push(`value not found in post sources: ${b.label} = ${b.value}`);
+  if (!new Set(["bar", "before_after", "timeline", "stat_cards"]).has(type)) errs.push(`unsupported visual_type: ${type}`);
+
+  if (chart.schema_version === 2) {
+    if (!chart.source || !validHttpsUrl(chart.source_url)) errs.push("schema v2 requires source and valid HTTPS source_url");
+    const expected = type === "before_after" ? [2, 2] : type === "stat_cards" ? [2, 4] : [3, 6];
+    if (data.length < expected[0] || data.length > expected[1]) errs.push(`${type} needs ${expected[0]}-${expected[1]} data items, got ${data.length}`);
+  } else {
+    if (type !== "bar") errs.push("non-bar visuals require schema_version 2");
+    if (data.length < 3 || data.length > 6) errs.push(`need 3-6 bars, got ${data.length}`);
+  }
+
+  for (const item of data) {
+    if (!item.label || String(item.label).length > 42) errs.push(`bad label: ${JSON.stringify(item.label)}`);
+    if (numericToken(item.value) === null) errs.push(`non-numeric value: ${JSON.stringify(item.value)}`);
+    else if (!valueInText(item.value, sourceText)) errs.push(`value not found in post sources: ${item.label} = ${item.value}`);
+    if (chart.schema_version === 2) {
+      if (!item.metric || !item.unit || !item.period) errs.push(`${item.label || "item"}: metric, unit, and period are required`);
+      if (!item.evidence || !evidenceInText(item.evidence, sourceText)) errs.push(`${item.label || "item"}: evidence not found verbatim in sources`);
+      else if (!valueInText(item.value, item.evidence)) errs.push(`${item.label || "item"}: evidence does not contain value`);
+    }
+  }
+
+  if (["bar", "before_after", "timeline"].includes(type) && data.length) {
+    const units = new Set(data.map(item => item.unit || unitOf(item.value)));
+    const metrics = new Set(data.map(item => normalizedWhitespace(item.metric || "").toLowerCase()));
+    if (units.size > 1) errs.push(`mixed units invalid for ${type}: ${[...units].join(",")}`);
+    if (chart.schema_version === 2 && metrics.size > 1) errs.push(`mixed metrics invalid for ${type}: ${[...metrics].join(",")}`);
+  }
+  if (type === "bar" && chart.schema_version === 2 && data.length) {
+    const periods = new Set(data.map(item => normalizedWhitespace(item.period).toLowerCase()));
+    if (periods.size > 1) errs.push(`bar requires one shared period, got: ${[...periods].join(",")}`);
+  }
+  if (type === "before_after" && data.length === 2 && normalizedWhitespace(data[0].period) === normalizedWhitespace(data[1].period)) {
+    errs.push("before_after requires two distinct periods");
+  }
+  if (type === "timeline" && data.length) {
+    const dates = data.map(item => String(item.date || ""));
+    if (dates.some(date => !/^\d{4}-\d{2}-\d{2}$/.test(date))) errs.push("timeline requires an ISO date on every item");
+    else if (dates.some((date, index) => index > 0 && date <= dates[index - 1])) errs.push("timeline dates must be unique and chronological");
+  }
+  if (chart.schema_version === 2 && chart.hero_stat?.value) {
+    if (!data.some(item => String(item.value) === String(chart.hero_stat.value))) errs.push("hero_stat must exactly match a data item value");
   }
   return errs;
 }
@@ -64,7 +120,7 @@ const xml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(
 const displayText = value => String(value).replace(/[—–]/g, "-");
 
 export function renderChartHtml(chart, slug) {
-  const bars = [...chart.bars].map(b => ({ ...b, n: parseFloat(numericToken(b.value)) }))
+  const bars = [...chartData(chart)].map(b => ({ ...b, n: parseFloat(numericToken(b.value)) }))
     .sort((a, b) => b.n - a.n);
   const maxN = Math.max(...bars.map(b => Math.abs(b.n))) || 1;
   const OP = [1, 0.6, 0.4, 0.28, 0.22, 0.18];
@@ -83,8 +139,11 @@ export function renderChartHtml(chart, slug) {
         <text x="${w + 6}" y="${y + 48}" fill="#58d6ff" font-family="Impact, sans-serif" font-size="15" font-weight="700">${xml(displayText(b.value))}</text>`;
   }).join("\n");
   const aria = "Horizontal bar chart: " + bars.map(b => `${b.label} ${displayText(b.value)}`).join(", ");
-  const note = chart.source ? `\n              <div class="chart-note">Source: ${xml(chart.source)}</div>` : "";
-  return `            <div class="chart-wrap">
+  const sourceText = chart.source_url
+    ? `<a href="${xml(chart.source_url)}" target="_blank" rel="noreferrer noopener">${xml(chart.source)}</a>`
+    : xml(chart.source);
+  const note = chart.source ? `\n              <div class="chart-note">Source: ${sourceText}</div>` : "";
+  return `            <div id="article-visual" class="chart-wrap visual-type-bar" data-visual-schema="${chart.schema_version || 1}">
               <div class="chart-title">${xml(chart.title)}</div>
               <svg viewBox="0 0 640 ${H}" width="100%" role="img" aria-label="${xml(aria)}">
                 <defs>
@@ -93,6 +152,56 @@ ${defs}
 ${rows}
               </svg>${note}
             </div>`;
+}
+
+export function renderBeforeAfterHtml(chart) {
+  const [start, end] = chartData(chart);
+  const aria = `${chart.title}: ${start.label} ${displayText(start.value)}, ${end.label} ${displayText(end.value)}`;
+  return `            <div id="article-visual" class="chart-wrap visual-type-before-after" data-visual-schema="2">
+              <div class="chart-title">${xml(chart.title)}</div>
+              <div role="img" aria-label="${xml(aria)}" style="display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;text-align:center">
+                <div class="stat-card"><div class="stat-number">${xml(displayText(start.value))}</div><div class="stat-label">${xml(start.label)}<br>${xml(start.period)}</div></div>
+                <div aria-hidden="true" style="font-size:2rem;color:#58d6ff">&#8594;</div>
+                <div class="stat-card"><div class="stat-number">${xml(displayText(end.value))}</div><div class="stat-label">${xml(end.label)}<br>${xml(end.period)}</div></div>
+              </div>
+              <p style="margin:18px 0 0;text-align:center;color:#afc6cf">${xml(chart.takeaway)}</p>
+              <div class="chart-note">Source: <a href="${xml(chart.source_url)}" target="_blank" rel="noreferrer noopener">${xml(chart.source)}</a></div>
+            </div>`;
+}
+
+export function renderStatCardsHtml(chart) {
+  const items = chartData(chart);
+  const aria = `${chart.title}: ${items.map(item => `${item.label} ${displayText(item.value)}`).join(", ")}`;
+  const cards = items.map(item => `                <div class="stat-card"><div class="stat-number">${xml(displayText(item.value))}</div><div class="stat-label">${xml(item.label)}<br>${xml(item.period)}</div></div>`).join("\n");
+  return `            <div id="article-visual" class="chart-wrap visual-type-stat-cards" data-visual-schema="2">
+              <div class="chart-title">${xml(chart.title)}</div>
+              <div class="stat-row" role="img" aria-label="${xml(aria)}" style="grid-template-columns:repeat(${Math.min(items.length, 4)},1fr)">
+${cards}
+              </div>
+              <p style="margin:0;text-align:center;color:#afc6cf">${xml(chart.takeaway)}</p>
+              <div class="chart-note">Source: <a href="${xml(chart.source_url)}" target="_blank" rel="noreferrer noopener">${xml(chart.source)}</a></div>
+            </div>`;
+}
+
+export function renderTimelineHtml(chart) {
+  const items = chartData(chart);
+  const aria = `${chart.title}: ${items.map(item => `${item.period} ${displayText(item.value)}`).join(", ")}`;
+  const rows = items.map((item, index) => `                <div style="display:grid;grid-template-columns:110px 18px 1fr;gap:12px;align-items:center;margin:12px 0"><strong>${xml(item.period)}</strong><span aria-hidden="true" style="color:#58d6ff">${index === items.length - 1 ? "&#9679;" : "&#9675;"}</span><span>${xml(item.label)}: <strong>${xml(displayText(item.value))}</strong></span></div>`).join("\n");
+  return `            <div id="article-visual" class="chart-wrap visual-type-timeline" data-visual-schema="2">
+              <div class="chart-title">${xml(chart.title)}</div>
+              <div role="img" aria-label="${xml(aria)}">
+${rows}
+              </div>
+              <p style="margin:18px 0 0;text-align:center;color:#afc6cf">${xml(chart.takeaway)}</p>
+              <div class="chart-note">Source: <a href="${xml(chart.source_url)}" target="_blank" rel="noreferrer noopener">${xml(chart.source)}</a></div>
+            </div>`;
+}
+
+export function renderVisualHtml(chart, slug) {
+  if (chart.visual_type === "before_after") return renderBeforeAfterHtml(chart);
+  if (chart.visual_type === "timeline") return renderTimelineHtml(chart);
+  if (chart.visual_type === "stat_cards") return renderStatCardsHtml(chart);
+  return renderChartHtml(chart, slug);
 }
 
 // ── Injection point: end of 2nd H2 section, else before sources/faq/end ─────
@@ -112,7 +221,8 @@ export function injectIntoHtml(html, chartHtml) {
 
 // ── reel-data `## chart` section ─────────────────────────────────────────────
 export function reelChartSection(chart) {
-  const bars = [...chart.bars].map(b => ({ ...b, n: parseFloat(numericToken(b.value)) }))
+  if ((chart.visual_type || "bar") !== "bar" || chartData(chart).some(item => unitOf(item.value) !== "%")) return "";
+  const bars = [...chartData(chart)].map(b => ({ ...b, n: parseFloat(numericToken(b.value)) }))
     .sort((a, b) => b.n - a.n);
   const lines = bars.map(b => `  - ${b.label}: ${b.value}`).join("\n");
   const narration = chart.narration && String(chart.narration).trim()
@@ -149,11 +259,11 @@ if (isMain) {
 
   // Source text the numbers must trace to
   let sourceText = "";
-  for (const f of ["verified.md", "research.json", "index.html"]) {
+  for (const f of ["verified.md", "research.json"]) {
     const p = join(dir, f);
     if (existsSync(p)) sourceText += "\n" + readFileSync(p, "utf8");
   }
-  if (!sourceText.trim()) { console.error("error: no source text (verified.md/index.html missing)"); process.exit(1); }
+  if (!sourceText.trim()) { console.error("error: no source text (verified.md/research.json missing)"); process.exit(1); }
 
   const errs = validateChart(chart, sourceText);
   if (errs.length) {
@@ -165,7 +275,7 @@ if (isMain) {
   const htmlPath = join(dir, "index.html");
   if (existsSync(htmlPath)) {
     const html = readFileSync(htmlPath, "utf8");
-    const { html: out, where } = injectIntoHtml(html, renderChartHtml(chart, slug || "post"));
+    const { html: out, where } = injectIntoHtml(html, renderVisualHtml(chart, slug || "post"));
     if (where === "no-anchor") console.error("warn: no injection anchor in index.html — body chart skipped");
     else if (where === "already-present") console.error("info: index.html already has a chart-wrap — left as is");
     else { writeFileSync(htmlPath, out); console.log(`index.html: chart injected (${where})`); }
@@ -174,9 +284,12 @@ if (isMain) {
   // reel-data.md
   const reelPath = join(dir, "reel-data.md");
   if (existsSync(reelPath)) {
-    const { md, where } = injectIntoReelData(readFileSync(reelPath, "utf8"), reelChartSection(chart));
-    if (where !== "already-present") { writeFileSync(reelPath, md); console.log(`reel-data.md: ## chart added (${where})`); }
-    else console.error("info: reel-data.md already has ## chart");
+    const section = reelChartSection(chart);
+    if (section) {
+      const { md, where } = injectIntoReelData(readFileSync(reelPath, "utf8"), section);
+      if (where !== "already-present") { writeFileSync(reelPath, md); console.log(`reel-data.md: ## chart added (${where})`); }
+      else console.error("info: reel-data.md already has ## chart");
+    } else console.error("info: visual is not a percent bar chart; reel chart sync skipped");
   } else console.error("warn: no reel-data.md yet — reel chart section skipped");
 
   // hooks.json key_stat sync (fixes off-topic hero stats)

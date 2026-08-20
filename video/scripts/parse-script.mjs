@@ -32,10 +32,14 @@ function parseReelDataHook(reelDataMd) {
   return m ? m[1].trim() : '';
 }
 
-// Compute segment duration from narration word count (words / 2.5 wps + 2s buffer)
+// Chatterbox production renders average about 3.3 words per second. This is only
+// a pre-TTS estimate; render.mjs replaces it with measured audio timing.
+const ESTIMATED_NARRATION_WORDS_PER_SECOND = 3.25;
+const ESTIMATED_NARRATION_BUFFER_SECONDS = 0.4;
+
 function durationFromNarration(narration) {
   if (!narration) return 10;
-  return Math.ceil(narration.split(/\s+/).filter(Boolean).length / 2.5) + 2;
+  return Math.ceil(narration.split(/\s+/).filter(Boolean).length / ESTIMATED_NARRATION_WORDS_PER_SECOND + ESTIMATED_NARRATION_BUFFER_SECONDS);
 }
 
 function cleanNarration(value) {

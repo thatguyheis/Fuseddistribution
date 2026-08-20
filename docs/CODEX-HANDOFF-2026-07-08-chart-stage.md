@@ -51,3 +51,36 @@ Their already-rendered reels do NOT have chart segments; the `## chart` section 
 - `public/blog/scripts/build-svg.mjs`, `build-post.sh` (modified)
 - `public/blog/BLOG-SOP.md` §6 (stage documented)
 - 3 retrofit post folders (chart.json, index.html, reel-data.md, hooks.json, hero.svg/jpg, photo-post.svg/jpg)
+
+## Codex Architecture Review - 2026-07-08
+
+**Review status:** Accepted as the right direction for the decoupled workflow. The implementation uses the correct ownership split: the model only proposes chart data, while `build-chart-inject.mjs` owns deterministic validation, DOM mutation, reel-data mutation, and hook-stat sync.
+
+### Decisions
+
+- **Stage placement approved:** T8b runs after deterministic HTML plus Pexels mutation and before T9 reel, T10 social, JPG asset generation, deterministic QA, and brain QA. That means `reel-data.md`, `index.html`, `hooks.json`, regenerated `hero.svg`, and final JPG assets are available to downstream stages before publish registration.
+- **`mark chart` semantics approved:** only mark `chart` when a real non-skipped `chart.json` exists. A clean skip should remain visible by absence of the `chart` stage, not as a successful chart stage.
+- **Enhancement-only behavior accepted:** chart generation should not block publish by itself. The anti-fabrication validator is strong enough to reject bad chart output, and a skipped chart is preferable to publishing invented numbers.
+- **Retrofit approach accepted:** adding `chart.json`, body chart markup, `## chart`, hero chart SVG/JPG, and synced `hooks.json` to existing posts is consistent with the current artifact model. Already-rendered reels correctly remain unchanged until re-render.
+
+### Current Verification
+
+- `node --test public/blog/scripts/build-chart-inject.test.mjs` passed: 10/10.
+- `node --check public/blog/scripts/build-chart-inject.mjs` passed.
+- `node --check public/blog/scripts/build-svg.mjs` passed.
+- `bash -n public/blog/scripts/build-chart.sh public/blog/scripts/build-post.sh public/blog/scripts/research.sh public/blog/scripts/write-article.sh` passed.
+
+### Residual Risks / Follow-ups
+
+1. **Validator should prefer source documents over generated HTML.** `build-chart-inject.mjs` currently validates against `verified.md`, `research.json`, and `index.html`. Including `index.html` helps retrofits, but it can also validate a number that only exists in generated markup from an earlier hook/stat artifact. Safer future change: validate bars and `hero_stat` against `verified.md` + `research.json` only, or explicitly tag `index.html` as a fallback used only for legacy retrofits.
+2. **Value validation checks numeric tokens, not full value semantics.** The current boundary regex prevents `9` matching `92` or `6` matching `60`, which is good. It does not prove the source used the same unit as the chart value; for example, a `%` value could pass if the same number appears elsewhere as plain text. Same-unit chart enforcement reduces this risk, but a tighter validator should require nearby unit/source context when practical.
+3. **SOP says zero custom graphics is a QA failure, but deterministic QA does not enforce it yet.** `BLOG-SOP.md` now requires at least one custom graphic and names `chart-wrap`, `stat-row`, `math-box`, `coin-grid`, and `watch-list`. `qa-local.mjs` does not currently appear to count those elements. If this becomes a hard business rule, add a deterministic `validateCustomGraphics()` check to `qa-local.mjs` so no-chart/no-graphic posts cannot register in `posts.json`.
+4. **Gemma JSON reliability still needs live-run observation.** The validator makes bad output safe, but the scheduled Hermes/Gemma path may skip charts often if JSON is malformed or under-specified. Watch `[chart]` lines in `scripts/daily-blog-reel.log` after the next scheduled run before deciding whether to carve chart extraction back to Claude.
+5. **Idempotency is conservative.** If `index.html` already contains `class="chart-wrap"` or `reel-data.md` already has `## chart`, the injector leaves those surfaces unchanged. That prevents duplicate charts, but it also means changing `chart.json` later will not refresh already-injected surfaces unless the old chart block is removed or a replace mode is added.
+
+### Recommended Next Codex Work
+
+1. Add a deterministic custom-graphic count to `qa-local.mjs`.
+2. Tighten chart value provenance to `verified.md` + `research.json` by default.
+3. Add an optional `--replace` mode to `build-chart-inject.mjs` for intentional chart refreshes.
+4. After one live 9am run, update this handoff with observed Gemma success/skip/error rates.

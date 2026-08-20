@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateCutdownDuration } from './lib/buffer-video-integrity.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const publicReelsRoot = join(repoRoot, 'public', 'reels');
@@ -108,6 +109,16 @@ function fileSizeBytes(path) {
   }
 }
 
+function assertDecodable(path) {
+  const result = spawnSync('ffmpeg', ['-v', 'error', '-i', path, '-f', 'null', '-'], {
+    cwd: repoRoot,
+    encoding: 'utf8',
+  });
+  if (result.status !== 0 || result.stderr.trim()) {
+    throw new Error(`Output contains undecodable media packets: ${path}`);
+  }
+}
+
 function transcodeCutdown(input, output, maxDurationSeconds, crf) {
   mkdirSync(dirname(output), { recursive: true });
   const result = spawnSync(
@@ -149,32 +160,53 @@ function main() {
     if (!existsSync(input)) throw new Error(`Missing source MP4 for ${slug}: ${input}`);
 
     const output = outputVideoPath(slug);
+    const temporaryOutput = `${output}.tmp.mp4`;
     const sourceDuration = durationSeconds(input);
     const sourceBytes = fileSizeBytes(input);
     if (sourceDuration === null) throw new Error(`Could not read duration for ${input}`);
     if (sourceBytes === null) throw new Error(`Could not read size for ${input}`);
 
-    if (sourceDuration <= args.maxDurationSeconds && sourceBytes <= args.maxBytes) {
-      mkdirSync(dirname(output), { recursive: true });
-      copyFileSync(input, output);
-    } else {
-      for (const crf of [28, 31, 34]) {
-        transcodeCutdown(input, output, args.maxDurationSeconds, crf);
-        const outputBytes = fileSizeBytes(output);
-        if (outputBytes !== null && outputBytes <= args.maxBytes) break;
+    rmSync(temporaryOutput, { force: true });
+    try {
+      if (sourceDuration <= args.maxDurationSeconds && sourceBytes <= args.maxBytes) {
+        mkdirSync(dirname(temporaryOutput), { recursive: true });
+        copyFileSync(input, temporaryOutput);
+      } else {
+        for (const crf of [28, 31, 34]) {
+          transcodeCutdown(input, temporaryOutput, args.maxDurationSeconds, crf);
+          const temporaryBytes = fileSizeBytes(temporaryOutput);
+          if (temporaryBytes !== null && temporaryBytes <= args.maxBytes) break;
+        }
       }
+
+      const temporaryDuration = durationSeconds(temporaryOutput);
+      const temporaryBytes = fileSizeBytes(temporaryOutput);
+      if (temporaryDuration === null) throw new Error(`Could not read output duration for ${temporaryOutput}`);
+      const durationIntegrity = validateCutdownDuration({
+        sourceDuration,
+        outputDuration: temporaryDuration,
+        maximumDuration: args.maxDurationSeconds,
+      });
+      if (durationIntegrity.reason === 'output_truncated') {
+        throw new Error(`Output is truncated for X Buffer: ${temporaryDuration.toFixed(3)}s < ${durationIntegrity.minimumDuration.toFixed(3)}s expected`);
+      }
+      if (durationIntegrity.reason === 'output_too_long') {
+        throw new Error(`Output is too long for X Buffer: ${temporaryDuration.toFixed(3)}s > ${args.maxDurationSeconds}s`);
+      }
+      if (!durationIntegrity.ok) throw new Error(`Output duration is invalid for X Buffer: ${temporaryDuration}`);
+      if (temporaryBytes === null) throw new Error(`Could not read output size for ${temporaryOutput}`);
+      if (temporaryBytes > args.maxBytes) {
+        throw new Error(`Output is too large for Cloudflare assets: ${temporaryBytes} bytes > ${args.maxBytes}`);
+      }
+      assertDecodable(temporaryOutput);
+      renameSync(temporaryOutput, output);
+    } catch (error) {
+      rmSync(temporaryOutput, { force: true });
+      throw error;
     }
 
     const outputDuration = durationSeconds(output);
     const outputBytes = fileSizeBytes(output);
-    if (outputDuration === null) throw new Error(`Could not read output duration for ${output}`);
-    if (outputDuration > args.maxDurationSeconds + 0.25) {
-      throw new Error(`Output is too long for X Buffer: ${outputDuration.toFixed(3)}s > ${args.maxDurationSeconds}s`);
-    }
-    if (outputBytes === null) throw new Error(`Could not read output size for ${output}`);
-    if (outputBytes > args.maxBytes) {
-      throw new Error(`Output is too large for Cloudflare assets: ${outputBytes} bytes > ${args.maxBytes}`);
-    }
     const url = `${args.baseUrl}/${slug}/${slug}.mp4`;
     map[slug] = url;
     results.push({

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { derivePerformance, summarizeSnapshot } from '../scripts/buffer-performance-snapshot.mjs';
+import { derivePerformance, retryTransient, summarizeSnapshot } from '../scripts/buffer-performance-snapshot.mjs';
 
 test('derives average view duration from total watched minutes and views', () => {
   const post = derivePerformance({
@@ -29,4 +29,27 @@ test('does not invent view duration when Buffer omits watch time', () => {
   }, '2026-07-27T12:00:00.000Z');
   assert.equal(post.averageViewDurationSeconds, null);
   assert.equal(summarizeSnapshot([post]).metricsAvailable, 1);
+});
+
+test('retries transient Buffer failures before accepting a snapshot failure', async () => {
+  let attempts = 0;
+  const result = await retryTransient(async () => {
+    attempts += 1;
+    if (attempts < 3) throw new TypeError('fetch failed');
+    return 'snapshot';
+  });
+  assert.equal(result, 'snapshot');
+  assert.equal(attempts, 3);
+});
+
+test('does not retry a non-transient Buffer failure', async () => {
+  let attempts = 0;
+  await assert.rejects(
+    retryTransient(async () => {
+      attempts += 1;
+      throw new Error('Buffer HTTP 401');
+    }),
+    /Buffer HTTP 401/,
+  );
+  assert.equal(attempts, 1);
 });

@@ -22,7 +22,11 @@ if (args.slug) {
   if (existsSync(mp)) title = title || JSON.parse(readFileSync(mp, "utf8")).title;
   if (existsSync(hp)) { const h = JSON.parse(readFileSync(hp, "utf8")); stat = stat ?? h.key_stat?.value; statLabel = statLabel ?? h.key_stat?.label; }
   if (existsSync(cp)) {
-    try { const c = JSON.parse(readFileSync(cp, "utf8")); if (!c.skipped && Array.isArray(c.bars) && c.bars.length >= 3) chart = c; } catch { /* chart optional */ }
+    try {
+      const c = JSON.parse(readFileSync(cp, "utf8"));
+      const items = Array.isArray(c.data) ? c.data : c.bars;
+      if (!c.skipped && Array.isArray(items) && items.length >= 2) chart = { ...c, bars: items };
+    } catch { /* chart optional */ }
   }
 }
 if (!title || !dir) { console.error("error: need --slug or (--title and --dir)"); process.exit(1); }

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # T12 qa-gate — brain stage. In Hermes takeover mode this uses the configured
-# local LLM helper; otherwise it can use Claude when explicitly enabled.
+# local LLM helper. Codex owns final operational review; the legacy Claude
+# branch is disabled by default.
 # Writes qa.json.
 # Schema: { slug, score, pass, blockers:[] }   pass=false -> skip publish.
 set -euo pipefail
@@ -8,8 +9,8 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}"
-CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}"
+HERMES_TAKEOVER="${HERMES_TAKEOVER:-1}"
+CLAUDE_ENABLED="${CLAUDE_ENABLED:-0}"
 
 SLUG="" HTML="" SOCIAL="" OUT="" ARTICLE="" REEL=""
 for a in "$@"; do case "$a" in
@@ -59,7 +60,7 @@ Score 0-100 on: title/body topic coherence, useful answer-first writing, factual
 Block publish for malformed years/numbers, placeholders, broken JSON, thin generic copy, title/body mismatch, repeated sections, off-topic reel segments, or awkward/truncated reel labels.
 Topic coherence is a critical gate: the article must answer the exact reader problem promised by the title/slug. Mark each H2 mentally as on-topic, supporting, or drift. If fewer than half are on-topic, or if the body mainly answers another query, fail. Clean grammar and complete metadata cannot compensate for drift.
 Repetition is a critical gate: fail if the same 3-5 talking points are repeated under different H2s instead of adding new information.
-pass = score >= 85 AND no critical blocker (broken/empty content, title/body drift, repeated sections, leftover [SLOT]/[VERIFY] in body, em dash).
+pass = score >= 85 AND no critical blocker (broken/empty content, title/body drift, repeated sections, leftover [SLOT]/[VERIFY]/[SOURCED STATS] instruction in body, em dash).
 Output ONLY valid JSON (no fences, no commentary): {\"slug\":\"$SLUG\",\"score\":0,\"pass\":true,\"blockers\":[]}
 
 --- article markdown ---
@@ -115,6 +116,8 @@ raw=re.sub(r"^```[a-z]*|```$","",sys.stdin.read().strip(),flags=re.M)
 m=re.search(r"\{.*\}", raw, re.S)
 if not m: sys.exit("qa: no JSON in claude output")
 d=json.loads(m.group(0))
+score = int(d.get("score") or 0)
+d["pass"] = bool(d.get("pass")) and score >= 85
 json.dump(d, open(sys.argv[1],"w"), indent=2)
 print("[qa] score=%s pass=%s blockers=%s" % (d.get("score"), d.get("pass"), d.get("blockers")))
 sys.exit(0 if d.get("pass") else 1)
