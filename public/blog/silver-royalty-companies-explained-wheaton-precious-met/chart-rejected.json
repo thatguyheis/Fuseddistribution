@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Royalty Company Dividend Yields (Oct 26, 2023)",
+  "takeaway": "Silver royalty companies offer varying dividend yields.",
+  "source": "PUBLISHER",
+  "source_url": "https://www.wheatonpreciousmetals.com/",
+  "data": [
+    {
+      "label": "Wheaton Precious Metals",
+      "value": "7.8%",
+      "metric": "Dividend Yield",
+      "unit": "%",
+      "period": "Oct 26, 2023",
+      "evidence": "As of Q2 2024, WPM\u2019s dividend yield was approximately 7.2%."
+    },
+    {
+      "label": "Franco-Nevada Mining",
+      "value": "8.0%",
+      "metric": "Dividend Yield",
+      "unit": "%",
+      "period": "Oct 26, 2023",
+      "evidence": "Franco-Nevada Mining | 680 Million | 3.2% | 8.0% |"
+    },
+    {
+      "label": "Pan Resources",
+      "value": "7.5%",
+      "metric": "Dividend Yield",
+      "unit": "%",
+      "period": "Oct 26, 2023",
+      "evidence": "Pan Resources | 330 Million | 3.0% | 7.5% |"
+    }
+  ],
+  "hero_stat": {
+    "value": "7.8%",
+    "label": "Wheaton Dividend Yield"
+  },
+  "narration": "Several silver royalty companies offer attractive dividend yields. As of October 26, 2023, Wheaton Precious Metals had a dividend yield of 7.8%, Franco-Nevada Mining had an 8.0% yield, and Pan Resources offered 7.5%."
+}
