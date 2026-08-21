@@ -1,6 +1,6 @@
 {
   "slug": "how-to-respond-to-negative-google-reviews",
-  "renderedAt": "2026-08-19T19:25:31.676Z",
+  "renderedAt": "2026-08-21T18:27:48.919Z",
   "hookType": "stat",
   "segmentCount": 11,
   "scriptDuration": 192.825,
@@ -48,7 +48,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 1,
-    "pexels": 7
+    "pixabay-photo": 1,
+    "pexels-photo": 7
   }
 }
