@@ -140,6 +140,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-22 | peace-silver-dollar-value-and-history | General | Peace silver dollar value and history |
 | 2026-08-20 | silver-royalty-companies-explained-wheaton-precious-met | General | silver royalty companies explained Wheaton Precious Metals |
 | 2026-08-20 | first-majestic-silver-vs-physical-silver-investment | General | First Majestic Silver vs physical silver investment |
 | 2026-08-18 | how-to-divide-silver-in-an-estate-fairly | General | how to divide silver in an estate fairly |
