@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Perth Mint silver Kangaroo buying guide",
+      "prefer": "video",
+      "updatedAt": "2026-08-22T18:25:45.379Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide keyword perth mint\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Perth Mint silver Kangaroo buying guide keyword perth mint",
+      "prefer": "photo",
+      "updatedAt": "2026-08-22T18:25:45.400Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide cover key factors\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Perth Mint silver Kangaroo buying guide cover key factors",
+      "prefer": "photo",
+      "updatedAt": "2026-08-22T18:25:45.400Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide attractive designs kangaroo\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "Perth Mint silver Kangaroo buying guide attractive designs kangaroo",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:46.602Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide explore series perth\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide explore series perth",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:47.754Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide several reputable dealers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide several reputable dealers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:48.533Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide spot price silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide spot price silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:49.001Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide 90 indicates near\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide 90 indicates near",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:49.678Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide neglecting storage proper\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide neglecting storage proper",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:50.185Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide start browsing our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide start browsing our",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:51.100Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Perth Mint silver Kangaroo buying guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Perth Mint silver Kangaroo buying guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:25:51.537Z"
+    }
+  }
+}

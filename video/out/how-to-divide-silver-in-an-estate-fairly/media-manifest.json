@@ -6,108 +6,77 @@
       "source": "local-photo",
       "query": "how to divide silver in an estate fairly",
       "prefer": "video",
-      "updatedAt": "2026-08-18T19:36:10.035Z"
+      "updatedAt": "2026-08-22T19:15:18.772Z"
     },
     "1": {
       "key": "{\"query\":\"how to divide silver in an estate fairly dividing silver other\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "how to divide silver in an estate fairly dividing silver other",
       "prefer": "photo",
-      "updatedAt": "2026-08-18T19:36:10.127Z"
+      "updatedAt": "2026-08-22T19:15:18.807Z"
     },
     "2": {
       "key": "{\"query\":\"how to divide silver in an estate fairly determine total value\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "how to divide silver in an estate fairly determine total value",
       "prefer": "photo",
-      "updatedAt": "2026-08-18T19:36:10.129Z"
+      "updatedAt": "2026-08-22T19:15:18.811Z"
     },
     "3": {
       "key": "{\"query\":\"how to divide silver in an estate fairly recommend getting independent\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "how to divide silver in an estate fairly recommend getting independent",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:11.405Z"
+      "updatedAt": "2026-08-22T19:15:18.812Z"
     },
     "4": {
       "key": "{\"query\":\"how to divide silver in an estate fairly professional valuation based\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly professional valuation based",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:12.420Z"
+      "updatedAt": "2026-08-22T19:15:18.812Z"
     },
     "5": {
       "key": "{\"query\":\"how to divide silver in an estate fairly proportional division method\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly proportional division method",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:13.240Z"
+      "updatedAt": "2026-08-22T19:15:18.813Z"
     },
     "6": {
       "key": "{\"query\":\"how to divide silver in an estate fairly 20 silver individuals\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly 20 silver individuals",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:13.986Z"
+      "updatedAt": "2026-08-22T19:15:18.813Z"
     },
     "7": {
       "key": "{\"query\":\"how to divide silver in an estate fairly 60 silver estate\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly 60 silver estate",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:15.145Z"
+      "updatedAt": "2026-08-22T19:15:18.814Z"
     },
     "8": {
       "key": "{\"query\":\"how to divide silver in an estate fairly dealer sale selling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly dealer sale selling",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:15.641Z"
+      "updatedAt": "2026-08-22T19:15:18.815Z"
     },
     "9": {
       "key": "{\"query\":\"how to divide silver in an estate fairly offer wide selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly offer wide selection",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:16.831Z"
+      "updatedAt": "2026-08-22T19:15:18.818Z"
     },
     "10": {
       "key": "{\"query\":\"how to divide silver in an estate fairly customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pexels-photo",
       "query": "how to divide silver in an estate fairly customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-18T19:36:17.303Z"
+      "updatedAt": "2026-08-22T19:15:18.819Z"
     }
   }
 }

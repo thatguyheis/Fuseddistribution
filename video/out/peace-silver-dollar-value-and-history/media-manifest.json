@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Peace silver dollar value and history\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Peace silver dollar value and history",
+      "prefer": "video",
+      "updatedAt": "2026-08-22T18:58:48.448Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Peace silver dollar value and history question how much\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Peace silver dollar value and history question how much",
+      "prefer": "photo",
+      "updatedAt": "2026-08-22T18:58:48.487Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Peace silver dollar value and history instantly recognizable obverse\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Peace silver dollar value and history instantly recognizable obverse",
+      "prefer": "photo",
+      "updatedAt": "2026-08-22T18:58:48.489Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Peace silver dollar value and history 259 000 pieces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "Peace silver dollar value and history 259 000 pieces",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:49.637Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Peace silver dollar value and history 66 higher commands\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history 66 higher commands",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:51.807Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Peace silver dollar value and history professional coin grading\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history professional coin grading",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:52.750Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Peace silver dollar value and history 3 500 to\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history 3 500 to",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:53.445Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Peace silver dollar value and history recommend dealing established\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history recommend dealing established",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:54.079Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Peace silver dollar value and history here some recommendations\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history here some recommendations",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:54.967Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Peace silver dollar value and history don t hesitate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history don t hesitate",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:55.688Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Peace silver dollar value and history customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Peace silver dollar value and history customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-22T18:58:56.621Z"
+    }
+  }
+}
