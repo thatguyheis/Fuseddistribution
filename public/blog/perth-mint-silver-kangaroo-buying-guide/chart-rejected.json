@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Perth Mint Silver Kangaroo Coin Prices",
+  "takeaway": "The average price for a 1 oz Perth Mint Kangaroo coin is $185 - $215.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/silver-coins/perth-mint-silver-kangaroo",
+  "data": [
+    {
+      "label": "Average Price Range (1 oz)",
+      "value": "$185 - $215",
+      "metric": "Price",
+      "unit": "USD",
+      "period": "Today",
+      "evidence": "As of today, the average price for a 1 oz Perth Mint Kangaroo coin is approximately $185 - $215, depending on the grade and dealer."
+    }
+  ],
+  "hero_stat": {
+    "value": "$185 - $215",
+    "label": "Average Price (1 oz)"
+  },
+  "narration": "The price of a Perth Mint silver Kangaroo coin is influenced by several factors including the spot price of silver, mintage, grade, and dealer markup. As of today, the average price for a 1 oz coin is between $185 and $215."
+}
