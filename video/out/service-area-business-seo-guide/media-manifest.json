@@ -6,108 +6,77 @@
       "source": "local-photo",
       "query": "service area business SEO guide",
       "prefer": "video",
-      "updatedAt": "2026-08-17T18:28:26.263Z"
+      "updatedAt": "2026-08-23T18:34:11.000Z"
     },
     "1": {
       "key": "{\"query\":\"service area business SEO guide small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "service area business SEO guide small business owner",
       "prefer": "photo",
-      "updatedAt": "2026-08-17T18:28:26.300Z"
+      "updatedAt": "2026-08-23T18:34:11.024Z"
     },
     "2": {
       "key": "{\"query\":\"service area business SEO guide learn how optimize\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "service area business SEO guide learn how optimize",
       "prefer": "photo",
-      "updatedAt": "2026-08-17T18:28:26.301Z"
+      "updatedAt": "2026-08-23T18:34:11.025Z"
     },
     "3": {
       "key": "{\"query\":\"service area business SEO guide fused distribution focus\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "service area business SEO guide fused distribution focus",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:28.272Z"
+      "updatedAt": "2026-08-23T18:34:11.025Z"
     },
     "4": {
       "key": "{\"query\":\"service area business SEO guide local business marketing\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide local business marketing",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:29.140Z"
+      "updatedAt": "2026-08-23T18:34:11.025Z"
     },
     "5": {
       "key": "{\"query\":\"service area business SEO guide all about figuring\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide all about figuring",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:29.851Z"
+      "updatedAt": "2026-08-23T18:34:11.026Z"
     },
     "6": {
       "key": "{\"query\":\"service area business SEO guide local business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide local business owner",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:31.053Z"
+      "updatedAt": "2026-08-23T18:34:11.026Z"
     },
     "7": {
       "key": "{\"query\":\"service area business SEO guide off page optimization\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide off page optimization",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:32.178Z"
+      "updatedAt": "2026-08-23T18:34:11.026Z"
     },
     "8": {
       "key": "{\"query\":\"service area business SEO guide 77 local searches\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide 77 local searches",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:32.672Z"
+      "updatedAt": "2026-08-23T18:34:11.027Z"
     },
     "9": {
       "key": "{\"query\":\"service area business SEO guide also monitor rankings\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide also monitor rankings",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:33.295Z"
+      "updatedAt": "2026-08-23T18:34:11.027Z"
     },
     "10": {
       "key": "{\"query\":\"service area business SEO guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pexels-photo",
       "query": "service area business SEO guide customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-17T18:28:33.913Z"
+      "updatedAt": "2026-08-23T18:34:11.027Z"
     }
   }
 }

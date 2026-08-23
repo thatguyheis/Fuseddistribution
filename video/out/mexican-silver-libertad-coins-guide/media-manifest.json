@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Mexican silver Libertad coins guide",
+      "prefer": "video",
+      "updatedAt": "2026-08-23T18:25:13.500Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide likely wondering what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Mexican silver Libertad coins guide likely wondering what",
+      "prefer": "photo",
+      "updatedAt": "2026-08-23T18:25:13.522Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide these stunning coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Mexican silver Libertad coins guide these stunning coins",
+      "prefer": "photo",
+      "updatedAt": "2026-08-23T18:25:13.523Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide time evolved highly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "Mexican silver Libertad coins guide time evolved highly",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:14.973Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide why invest mexican\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide why invest mexican",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:16.046Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide primary mint mark\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide primary mint mark",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:17.062Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide coin surface smooth\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide coin surface smooth",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:18.139Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide price libs heavily\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide price libs heavily",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:19.183Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide while some local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide while some local",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:20.653Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide also recommend insuring\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide also recommend insuring",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:21.720Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Mexican silver Libertad coins guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Mexican silver Libertad coins guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-23T18:25:28.275Z"
+    }
+  }
+}

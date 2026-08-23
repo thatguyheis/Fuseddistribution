@@ -1,6 +1,6 @@
 {
   "slug": "local-seo-audit-how-to-do-one-yourself",
-  "renderedAt": "2026-08-17T19:11:29.468Z",
+  "renderedAt": "2026-08-23T18:49:50.155Z",
   "hookType": "stat",
   "segmentCount": 11,
   "scriptDuration": 212.385,
@@ -48,7 +48,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 1,
-    "pexels": 7
+    "pixabay-photo": 1,
+    "pexels-photo": 7
   }
 }

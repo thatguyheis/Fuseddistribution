@@ -1,11 +1,11 @@
 {
-  "slug": "service-area-business-seo-guide",
-  "renderedAt": "2026-08-23T18:40:35.175Z",
+  "slug": "mexican-silver-libertad-coins-guide",
+  "renderedAt": "2026-08-23T18:33:49.504Z",
   "hookType": "stat",
   "segmentCount": 11,
-  "scriptDuration": 194.345,
-  "renderedDuration": 188.928,
-  "scriptHash": "408cd40be3ace73afae113e5a1c5248c444e69979aaf9a9787d99b660d5f290b",
+  "scriptDuration": 205.865,
+  "renderedDuration": 200.426667,
+  "scriptHash": "560e20456f973b8316766baa3896a260a29d76b395413da3e8bf9a9ed213bca1",
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "mixkit-serene-view-443.mp3",
@@ -22,19 +22,19 @@
     "dialogueGapSeconds": 0.2,
     "finalCardPadSeconds": 0.5,
     "audioDurations": {
-      "0": 3.36,
-      "1": 15.46,
-      "2": 18.98,
-      "3": 21.32,
-      "4": 18.64,
-      "5": 23.08,
-      "6": 16.6,
-      "7": 24.56,
-      "8": 22.6,
-      "9": 16.9,
-      "10": 4.88
+      "0": 4.56,
+      "1": 25.28,
+      "2": 19.26,
+      "3": 21.48,
+      "4": 24.64,
+      "5": 21.14,
+      "6": 25.36,
+      "7": 18.3,
+      "8": 17.58,
+      "9": 14.1,
+      "10": 6.2
     },
-    "totalNarrationSeconds": 186.38
+    "totalNarrationSeconds": 197.9
   },
   "musicRights": {
     "status": "approved",
@@ -48,7 +48,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay-photo": 1,
-    "pexels-photo": 7
+    "pixabay": 1,
+    "pexels": 7
   }
 }
