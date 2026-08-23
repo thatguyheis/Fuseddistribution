@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Average Annual Increase in Mexican Silver Libertad Value",
+  "takeaway": "The Mexican Silver Libertad has experienced an average annual increase of 6-8% over the past decade.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Average Annual Increase",
+      "value": "6-8%",
+      "metric": "Percentage Increase",
+      "unit": "%",
+      "period": "Past Decade",
+      "evidence": "According to recent market analysis, the Mexican Silver Libertad has seen an average annual increase of approximately 6-8% over the past decade."
+    }
+  ],
+  "hero_stat": {
+    "value": "6-8%",
+    "label": "Average Annual Increase"
+  },
+  "narration": "The Mexican Silver Libertad has consistently demonstrated strong appreciation in value over the past decade, making it a reliable store of wealth. This consistent growth is a key factor in its popularity among investors."
+}
