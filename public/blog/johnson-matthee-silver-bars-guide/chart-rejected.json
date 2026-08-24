@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Johnson Matthee Silver Bar Price Range",
+  "takeaway": "The average price per troy ounce for a Johnson Matthee bar currently ranges between $30 and $35.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Price per Troy Ounce",
+      "value": "$30 - $35",
+      "metric": "Price",
+      "unit": "USD/troy ounce",
+      "period": "Current Market",
+      "evidence": "Currently, the average price per troy ounce for a Johnson Matthee bar sits around $30 - $35, though this fluctuates with market conditions."
+    }
+  ],
+  "hero_stat": {
+    "value": "$30 - $35",
+    "label": "Average Price per Troy Ounce"
+  },
+  "narration": "Johnson Matthee silver bars are currently trading in a price range of $30 to $35 per troy ounce, reflecting current market conditions and demand. This price is subject to fluctuations based on factors like the spot price of silver and investor sentiment. Fused Distribution offers a reliable source for these bars, providing transparency and competitive pricing."
+}
