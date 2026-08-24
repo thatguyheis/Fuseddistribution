@@ -140,6 +140,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-23 | silver-panda-coins-from-china-complete-guide | General | silver panda coins from China complete guide |
 | 2026-08-23 | mexican-silver-libertad-coins-guide | General | Mexican silver Libertad coins guide |
 | 2026-08-22 | perth-mint-silver-kangaroo-buying-guide | General | Perth Mint silver Kangaroo buying guide |
 | 2026-08-22 | peace-silver-dollar-value-and-history | General | Peace silver dollar value and history |
