@@ -722,6 +722,65 @@ Rules:
 - Use `graphic_type: none` only when no type fits — `explanation:` is always required on every stat
 - Use `media_queries` (not the legacy `pexels_queries`) — add `prefer: video` (default) or `prefer: photo` per segment
 
+### 11a. Topic-matched generated backgrounds
+
+Each reel targets two atmospheric backgrounds created by Fused Distribution:
+
+1. Generate one new, topic-matched background for the hook and add it to the
+   local tagged library after the production checks pass.
+2. Select one different, previously approved background from that library for
+   the first later `overlay` or `stat` segment.
+
+The generator does not create the reel, narration, captions, charts, products,
+or factual foreground elements. Remotion remains responsible for all readable
+content and final composition.
+
+Background selection is deterministic and based on the hook topic:
+
+| Topic signal | Background direction |
+|---|---|
+| Coins, bullion, bars, stacking, storage, estates | Dim vault interior or collector chest |
+| Mining, supply, deficit, shortage | Shadowed mine tunnel with mineral textures |
+| COMEX, inventory, delivery | Secure warehouse corridor |
+| Solar, electric vehicles, industrial demand | Clean industrial space with solar-grid reflections |
+| Silver price, DCA, premiums, investing | Repeating silver-blue light bands in a vault corridor |
+| Email, social, SMS, communication | Modern workspace with wireless light trails |
+| Local SEO, maps, listings, reviews | Small-business street with connected location lights |
+| AI, automation, workflows | Abstract connected nodes and orderly pathways |
+| Websites, analytics, speed, conversions | Modern data corridor with flowing light |
+| Booking, appointments, scheduling | Reception space with organized illuminated pathways |
+
+Hard rules:
+
+- Generated media is a soft-focus background plate only.
+- Do not ask the model to render text, numbers, charts, interfaces, documents,
+  currency, coin faces, branded products, logos, or recognizable people.
+- Do not copy the hook narration into the image prompt. Route the topic to one
+  of the controlled scene descriptions above.
+- Apply the standard portrait crop, blur, darkening, desaturation, and vignette
+  before the file can become a Remotion input.
+- Attempt one new background per reel. Do not regenerate a second image merely
+  to fill the library slot.
+- Use no more than two Fused-created backgrounds per reel: one new background
+  and one different library background. Never reuse the newly generated asset
+  as the library choice in the same reel.
+- Store local assets and `catalog.json` under
+  `video/local/generated-backgrounds/`. This directory stays outside Git.
+- Tag every accepted asset with its topic, controlled scene ID, and subject
+  category. The catalog must also record its SHA-256 hash, source post, model,
+  model license, seed, treatment, creation time, last use, and use count.
+- Reject exact duplicate files by SHA-256. Rank library candidates by scene,
+  topic, and tag overlap, then prefer the least used and least recent choice.
+- Keep at most 100 library-use history records. The history exists to rotate
+  visual choices, not to measure content performance.
+- If no prior approved match exists, use normal local or stock media for the
+  second slot. Never reuse an unreviewed candidate just to reach two images.
+- Keep Pexels, Pixabay, and existing local media as the immediate fallback.
+- Record model, model license, prompt, selected scene, seed, treatment, source,
+  dimensions, and review status in `media-manifest.json`.
+- Factual charts and visualizations must remain deterministic SVG or Remotion
+  graphics sourced from verified article data.
+
 ---
 
 ## 12. topic-history.md

@@ -31,6 +31,41 @@ Remotion is a downstream renderer. It should run only after blog assets, reel da
 4. Use AI image generation selectively for hook slides, thumbnails, hero visuals, and ad creatives where stock assets are weak.
 5. Keep the workflow simple enough to run daily on the MacBook without babysitting.
 
+### Local Generative Reel Enrichment
+
+The reel media stage supports an Open Generative AI local provider for
+decorative hook background plates. It calls the project's `stable-diffusion.cpp` engine
+directly instead of importing its Next.js or Electron application. This keeps
+the reel worker headless and preserves the existing Remotion release gates.
+
+- The source-controlled 11 AM worker enables the reviewed production profile.
+  Set `GENERATIVE_MEDIA_ENABLED=0` to disable it during incident response.
+- Enabled generation defaults to shadow mode. Candidates are written under
+  `video/out/<slug>/generative-candidates/` and are not passed to Remotion.
+- Production use requires both `GENERATIVE_MEDIA_MODE=production` and
+  `GENERATIVE_MEDIA_PRODUCTION_APPROVED=1` after a visual review establishes
+  that the selected model and prompt profile are reliable.
+- The 8 GB Mac trial profile uses 384 by 640 generation at eight steps, then
+  performs a deterministic 1080 by 1920 crop and upscale for Remotion.
+- The production scope is two Fused-created backgrounds per reel: one new hook
+  background plus one different, previously approved library background on the
+  first later narrative segment. `GENERATIVE_MEDIA_MAX_SEGMENTS` defaults to 2.
+- New production backgrounds are copied into the ignored local library at
+  `video/local/generated-backgrounds/`. Its catalog provides controlled tags,
+  hashes, provenance, use counts, and recent-use history.
+- Library selection favors matching scene and topic tags while penalizing
+  recently or frequently used assets. The current reel's new asset is always
+  excluded from its reuse slot.
+- Generated stills are soft-focus atmospheric backgrounds only. They must not
+  provide factual charts, numbers, exact product details, readable interfaces,
+  recognizable people, or financial claims. Remotion owns all readable and
+  factual foreground content.
+- A failed or unavailable local generation falls back to the normal local,
+  Pixabay, and Pexels media path.
+- `media-manifest.json` records the provider, model, model license, prompt hash,
+  seed, dimensions, and source URL for each generated asset.
+- Model weights and local engine binaries stay outside Git.
+
 ## Daily Profit and SOP Improvement
 
 Codex runs the comparison-driven control loop in
@@ -122,4 +157,5 @@ quality/deferred checkpoint before considering a retry handled.
 
 - Rotate the deployment token that was previously stored in a launchd plist.
 - Add one-frame still checks for hook, mid-body, chart, and question frames before full render.
-- Add AI-generated hook and thumbnail assets as an optional fallback when licensed stock media is weak.
+- Track generated-background runtime, library match rate, fallback rate, reuse
+  concentration, and visual QA failures during the first production week.

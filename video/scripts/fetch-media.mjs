@@ -4,11 +4,25 @@
  * Saves JPG to public/photos/<slug>/segment-N.jpg for all entries (thumb for videos).
  * Writes out/<slug>/media.json and a backward-compat out/<slug>/photos.json.
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, statSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, statSync, unlinkSync, renameSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { get as httpsGet } from 'node:https';
 import { execSync, spawnSync } from 'node:child_process';
+import {
+  enrichmentCacheKey,
+  generativeMediaMode,
+  generateEnrichmentStill,
+  openGenerativeAiEnabled,
+  selectBackgroundProfile,
+} from './generative-enrichment.mjs';
+import {
+  backgroundTags,
+  planGeneratedBackgrounds,
+  registerGeneratedBackground,
+  selectLibraryBackground,
+  useLibraryBackground,
+} from './generated-background-library.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -274,6 +288,14 @@ export async function fetchMedia(slug) {
   const manifestPath = join(videoDir, 'out', slug, 'media-manifest.json');
   const manifest = loadManifest(manifestPath);
   manifest.segments ??= {};
+  const generationMode = generativeMediaMode();
+  const backgroundLimit = Math.max(0, Number.parseInt(process.env.GENERATIVE_MEDIA_MAX_SEGMENTS || '2', 10) || 0);
+  const plannedBackgrounds = planGeneratedBackgrounds(script.segments);
+  const generatedBackgroundPlan = {
+    newIndex: backgroundLimit >= 1 ? plannedBackgrounds.newIndex : null,
+    reuseIndex: backgroundLimit >= 2 ? plannedBackgrounds.reuseIndex : null,
+  };
+  let newLibraryAssetId = null;
   if (!pexelsKey && !pixabayKey) {
     console.warn('  ⚠  PEXELS_API_KEY and PIXABAY_API_KEY unset — using local copied media only');
   } else {
@@ -291,6 +313,157 @@ export async function fetchMedia(slug) {
     const skipVideo = ['chart', 'cta', 'question'].includes(seg.type) || prefer === 'photo';
     const cacheKey = mediaCacheKey(rawQuery, prefer, seg.type);
     const cacheValid = manifest.segments?.[i]?.key === cacheKey;
+
+    if (openGenerativeAiEnabled() && i === generatedBackgroundPlan.newIndex) {
+      manifest.generativeCandidates ??= {};
+      const generatedKey = enrichmentCacheKey({slug, index: i, segment: seg, topic});
+      const candidateDest = join(videoDir, 'out', slug, 'generative-candidates', `segment-${i}.jpg`);
+      const renderedDest = generationMode === 'production' ? jpgDest : candidateDest;
+      const generatedRecord = generationMode === 'production'
+        ? manifest.segments?.[i]
+        : manifest.generativeCandidates?.[i];
+      const cachedGenerated = generatedRecord?.key === generatedKey
+        && generatedRecord?.source === 'open-generative-ai-local'
+        && validFile(renderedDest, 10240);
+      if (cachedGenerated) {
+        if (generationMode === 'production') {
+          const profile = selectBackgroundProfile({segment: seg, topic});
+          const libraryAsset = registerGeneratedBackground({
+            filePath: jpgDest,
+            metadata: {
+              topic,
+              sceneId: generatedRecord.sceneId || profile.id,
+              tags: generatedRecord.tags || backgroundTags({segment: seg, topic, sceneId: profile.id}),
+              promptHash: generatedRecord.promptHash,
+              seed: generatedRecord.seed,
+              model: generatedRecord.model,
+              modelLicense: generatedRecord.modelLicense,
+              backgroundTreatment: generatedRecord.backgroundTreatment,
+            },
+            slug,
+            segmentIndex: i,
+          });
+          newLibraryAssetId = libraryAsset.id;
+          generatedRecord.libraryAssetId = libraryAsset.id;
+          generatedRecord.tags = libraryAsset.tags;
+          media[i] = {type: 'photo', src: photoSrc(slug, i), source: 'open-generative-ai-local'};
+          console.log(`  ↷  segment-${i} generated hook exists - using cached Open Generative AI asset`);
+          continue;
+        }
+        console.log(`  ↷  segment-${i} generated hook candidate exists - shadow asset remains outside render inputs`);
+      }
+
+      try {
+        if (cachedGenerated) throw new Error('shadow candidate already cached');
+        const generation = await generateEnrichmentStill({
+          slug,
+          index: i,
+          segment: seg,
+          topic,
+          // Always stage outside Remotion inputs. Production promotion happens
+          // only after provenance and model-license checks pass.
+          destination: candidateDest,
+        });
+        if (generationMode === 'production' && generation.modelLicense === 'unverified') {
+          throw new Error('custom model license is unverified; set OPEN_GENERATIVE_AI_MODEL_LICENSE after review');
+        }
+        const tags = backgroundTags({segment: seg, topic, sceneId: generation.sceneId});
+        const generationRecord = {
+          key: generatedKey,
+          ...generation,
+          tags,
+          query: rawQuery,
+          prefer: 'photo',
+          attempts: ['open-generative-ai-local'],
+          path: generationMode === 'production'
+            ? photoSrc(slug, i)
+            : `out/${slug}/generative-candidates/segment-${i}.jpg`,
+          status: generationMode === 'production' ? 'approved-for-render' : 'pending-visual-review',
+          updatedAt: new Date().toISOString(),
+        };
+        if (generationMode === 'production') {
+          const libraryAsset = registerGeneratedBackground({
+            filePath: candidateDest,
+            metadata: {...generation, tags},
+            slug,
+            segmentIndex: i,
+          });
+          if (libraryAsset.duplicate) {
+            throw new Error(`generated background duplicates library asset ${libraryAsset.id}`);
+          }
+          renameSync(candidateDest, jpgDest);
+          newLibraryAssetId = libraryAsset.id;
+          generationRecord.libraryAssetId = libraryAsset.id;
+          media[i] = {type: 'photo', src: photoSrc(slug, i), source: generation.source};
+          manifest.segments[i] = generationRecord;
+          console.log(`  ✓ segment-${i} generated hook: Open Generative AI local ${generation.model}`);
+          continue;
+        }
+        manifest.generativeCandidates[i] = generationRecord;
+        console.log(`  ◌ segment-${i} generated shadow candidate - normal media fallback remains active`);
+      } catch (error) {
+        if (error.message !== 'shadow candidate already cached') {
+          console.warn(`  ⚠  Open Generative AI hook generation unavailable - using normal media fallback: ${error.message}`);
+        }
+      }
+    }
+
+    if (openGenerativeAiEnabled()
+      && generationMode === 'production'
+      && i === generatedBackgroundPlan.reuseIndex) {
+      const profile = selectBackgroundProfile({segment: seg, topic});
+      const tags = backgroundTags({segment: seg, topic, sceneId: profile.id});
+      const libraryKey = JSON.stringify({
+        profileVersion: 1,
+        provider: 'fused-generated-background-library',
+        topic,
+        sceneId: profile.id,
+        tags,
+      });
+      const cachedLibraryRecord = manifest.segments?.[i];
+      if (cachedLibraryRecord?.key === libraryKey
+        && cachedLibraryRecord?.source === 'fused-generated-background-library'
+        && validFile(jpgDest, 10240)) {
+        media[i] = {type: 'photo', src: photoSrc(slug, i), source: 'fused-generated-background-library'};
+        console.log(`  ↷  segment-${i} tagged Fused background exists - using cached library asset`);
+        continue;
+      }
+
+      const libraryAsset = selectLibraryBackground({
+        topic,
+        sceneId: profile.id,
+        tags,
+        excludeIds: [newLibraryAssetId],
+      });
+      if (libraryAsset) {
+        try {
+          useLibraryBackground({asset: libraryAsset, destination: jpgDest, slug, segmentIndex: i});
+          media[i] = {type: 'photo', src: photoSrc(slug, i), source: 'fused-generated-background-library'};
+          manifest.segments[i] = {
+            key: libraryKey,
+            source: 'fused-generated-background-library',
+            libraryAssetId: libraryAsset.id,
+            topic: libraryAsset.topic,
+            sceneId: libraryAsset.sceneId,
+            tags: libraryAsset.tags,
+            sha256: libraryAsset.sha256,
+            sourceSlug: libraryAsset.sourceSlug,
+            status: libraryAsset.status,
+            query: rawQuery,
+            prefer: 'photo',
+            attempts: ['fused-generated-background-library'],
+            path: photoSrc(slug, i),
+            updatedAt: new Date().toISOString(),
+          };
+          console.log(`  ✓ segment-${i} tagged Fused background: ${libraryAsset.id}`);
+          continue;
+        } catch (error) {
+          console.warn(`  ⚠  Fused background library unavailable - using normal media fallback: ${error.message}`);
+        }
+      } else {
+        console.log(`  ◌ segment-${i} no prior matching Fused background - normal media fallback remains active`);
+      }
+    }
 
     const hasVideo = validFile(mp4Dest, 10240);
     const hasPhoto = validFile(jpgDest, 1024);

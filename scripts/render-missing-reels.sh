@@ -11,6 +11,16 @@ MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-4}"
 VOICE="${REEL_VOICE:-chatterbox}"
 GLOBAL_RENDER_LOCK="/tmp/fused-remotion-render.lock"
 
+# Generate one controlled, topic-matched atmospheric background for the hook.
+# The media adapter falls back to the normal local/stock path if local inference
+# is unavailable, times out, or fails validation. Every value remains
+# environment-overridable for incident response and reviewed experiments.
+export GENERATIVE_MEDIA_ENABLED="${GENERATIVE_MEDIA_ENABLED:-1}"
+export GENERATIVE_MEDIA_MODE="${GENERATIVE_MEDIA_MODE:-production}"
+export GENERATIVE_MEDIA_PRODUCTION_APPROVED="${GENERATIVE_MEDIA_PRODUCTION_APPROVED:-1}"
+export GENERATIVE_MEDIA_MAX_SEGMENTS="${GENERATIVE_MEDIA_MAX_SEGMENTS:-2}"
+export GENERATIVE_MEDIA_TIMEOUT_MS="${GENERATIVE_MEDIA_TIMEOUT_MS:-240000}"
+
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nick/.local/bin"
 
 notify() { osascript -e "display notification \"$2\" with title \"Reel pipeline: $1\"" 2>/dev/null || true }
@@ -29,7 +39,7 @@ if [[ -f "$VIDEO_DIR/.env" ]]; then
   source "$VIDEO_DIR/.env"
   set +o allexport
 fi
-log "Media env: PEXELS_API_KEY=$([[ -n "${PEXELS_API_KEY:-}" ]] && echo set || echo unset) PIXABAY_API_KEY=$([[ -n "${PIXABAY_API_KEY:-}" ]] && echo set || echo unset)"
+log "Media env: PEXELS_API_KEY=$([[ -n "${PEXELS_API_KEY:-}" ]] && echo set || echo unset) PIXABAY_API_KEY=$([[ -n "${PIXABAY_API_KEY:-}" ]] && echo set || echo unset) GENERATIVE_MEDIA=${GENERATIVE_MEDIA_ENABLED}/${GENERATIVE_MEDIA_MODE} max=${GENERATIVE_MEDIA_MAX_SEGMENTS}"
 
 pkill -f "chrome-headless-shell" 2>/dev/null || true
 find "$VIDEO_DIR/public/audio" -name "*_tmp.wav" -delete 2>/dev/null || true
