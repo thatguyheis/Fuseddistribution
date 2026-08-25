@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-12",
+  "posts": [
+    {
+      "slug": "provident-metals-review-is-it-legit",
+      "keyword": "Provident Metals review is it legit",
+      "brand": "silver",
+      "draft": "public/blog/provident-metals-review-is-it-legit/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "apmex-vs-jm-bullion-premium-comparison-2026",
+      "keyword": "APMEX vs JM Bullion premium comparison 2026",
+      "brand": "silver",
+      "draft": "public/blog/apmex-vs-jm-bullion-premium-comparison-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "google-business-profile-messaging-setup-and-tips",
+      "keyword": "google business profile messaging setup and tips",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-messaging-setup-and-tips/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "google-business-profile-insights-explained",
+      "keyword": "google business profile insights explained",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-insights-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

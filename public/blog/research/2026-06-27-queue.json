@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-27",
+  "posts": [
+    {
+      "slug": "how-to-use-silver-to-protect-against-currency-devaluati",
+      "keyword": "how to use silver to protect against currency devaluation",
+      "brand": "silver",
+      "draft": "public/blog/how-to-use-silver-to-protect-against-currency-devaluati/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "silver-alongside-stocks-and-bonds-diversification-guide",
+      "keyword": "silver alongside stocks and bonds diversification guide",
+      "brand": "silver",
+      "draft": "public/blog/silver-alongside-stocks-and-bonds-diversification-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "contact-page-best-practices-for-local-business",
+      "keyword": "contact page best practices for local business",
+      "brand": "tech",
+      "draft": "public/blog/contact-page-best-practices-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "keyword": "landing page vs website which do you need",
+      "brand": "tech",
+      "draft": "public/blog/landing-page-vs-website-which-do-you-need/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

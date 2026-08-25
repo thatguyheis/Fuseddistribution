@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-13",
+  "posts": [
+    {
+      "slug": "best-silver-dealers-in-the-us-ranked",
+      "keyword": "best silver dealers in the US ranked",
+      "brand": "silver",
+      "draft": "public/blog/best-silver-dealers-in-the-us-ranked/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "best-apps-to-track-your-silver-portfolio-value",
+      "keyword": "best apps to track your silver portfolio value",
+      "brand": "silver",
+      "draft": "public/blog/best-apps-to-track-your-silver-portfolio-value/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "local-seo-for-small-business-beginner-guide",
+      "keyword": "local SEO for small business beginner guide",
+      "brand": "tech",
+      "draft": "public/blog/local-seo-for-small-business-beginner-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "what-is-nap-consistency-and-why-it-matters",
+      "keyword": "what is NAP consistency and why it matters",
+      "brand": "tech",
+      "draft": "public/blog/what-is-nap-consistency-and-why-it-matters/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

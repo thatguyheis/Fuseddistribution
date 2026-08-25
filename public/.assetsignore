@@ -1,6 +1,8 @@
 *.md
 *.log
 *.bak
+*.raw
+*.tmp
 .DS_Store
 .assetsignore
 blog/scripts

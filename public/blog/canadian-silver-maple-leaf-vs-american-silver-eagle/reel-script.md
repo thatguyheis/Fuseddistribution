@@ -1,86 +1,96 @@
-# Reel Script: Canadian Silver Maple Leaf vs American Silver Eagle
-Generated: 2026-06-18
-Target length: 211 seconds
-Format: Long Form
-Hook type: Contrarian Stat
-
-## HOOK (0–12s)
-Text: AMERICAN EAGLES COST MORE FOR IDENTICAL SILVER
-Narration: American Silver Eagles cost more per ounce than Canadian Maple Leafs and the silver inside is nearly identical.
+# Reel Script: canadian-silver-maple-leaf-vs-american-silver-eagle
+format: long-form
+segments: 10
+target-duration: 183s
 
 ---
 
-## BODY
+## HOOK
 
-**Stat 1** (12–36s)
-Text: .9999 MAPLE LEAF PURITY
-Explanation: The Canadian Maple Leaf is four-nines pure silver, slightly higher than the Eagle's three-nines standard.
-Graphic_type: percent_fill
-Graphic_value: 99
-Graphic_label: Maple Leaf Purity
-Graphic_remainder_label: Alloy
-Narration: The Canadian Silver Maple Leaf contains .9999 fine silver, that is 99.99 percent pure. The American Silver Eagle is .999 fine, which is 99.9 percent. One extra nine. At current spot prices, the purity difference is worth less than a penny per coin. But the Maple Leaf holds the higher standard.
+**Visual:** Topic intro shot
+**Duration:** 6s minimum
 
-**Stat 2** (36–59s)
-Text: .999 EAGLE PURITY
-Explanation: The American Silver Eagle is .999 fine silver, still investment-grade but one decimal below the Maple Leaf.
-Graphic_type: percent_fill
-Graphic_value: 99
-Graphic_label: Eagle Purity
-Graphic_remainder_label: Copper alloy
-Narration: The Silver Eagle is .999 fine, 99.9 percent pure. The coin weighs slightly more than a troy ounce because a copper alloy core adds durability. That extra weight is not silver. You are buying exactly 1 troy ounce of silver content per coin, same as the Maple Leaf.
-
-**Stat 3** (59–83s)
-Text: $4-8/OZ EAGLE PREMIUM
-Explanation: American Silver Eagles typically cost $4 to $8 per ounce above the silver spot price.
-Graphic_type: percent_fill
-Graphic_value: 72
-Graphic_label: Eagle Premium Range
-Graphic_remainder_label: vs. Maple Leaf
-Narration: American Silver Eagles carry a premium of 4 to 8 dollars per ounce over the silver spot price for standard bullion. At 32 dollars spot, that puts the Eagle at roughly 36 to 40 dollars. The premium reflects USA Mint surcharges, an authorized dealer distribution layer, and strong domestic demand that keeps prices firm.
-
-**Stat 4** (83–104s)
-Text: $3-6/OZ MAPLE LEAF PREMIUM
-Explanation: Canadian Silver Maple Leafs typically cost $3 to $6 per ounce above spot, $1 to $3 less than Eagles.
-Graphic_type: percent_fill
-Graphic_value: 50
-Graphic_label: Maple Leaf Premium
-Graphic_remainder_label: vs. Eagle
-Narration: Canadian Silver Maple Leafs run 3 to 6 dollars over spot for standard bullion. The Royal Canadian Mint uses a broader international distribution network with no USA-style surcharge structure. For buyers focused on getting the most silver per dollar, Maple Leafs typically win on entry cost.
-
-**Stat 5** (104–130s)
-Text: $1-3/OZ PREMIUM DIFFERENCE
-Explanation: The per-ounce price gap between Eagles and Maple Leafs adds up fast on larger purchases.
-Graphic_type: percent_fill
-Graphic_value: 25
-Graphic_label: Premium Gap
-Graphic_remainder_label: Total premium
-Narration: The gap between Eagles and Maple Leafs runs 1 to 3 dollars per ounce on average. On a 20-coin purchase, that is 20 to 60 dollars in real money. Over a year of monthly buying, it is hundreds of dollars in extra premium paid for identical silver content. That math matters for anyone building a position over time.
-
-**Stat 6** (130–153s)
-Text: 1988 MAPLE LEAF LAUNCH
-Explanation: The Royal Canadian Mint has produced the Maple Leaf continuously since 1988, one of the oldest bullion programs.
-Graphic_type: none
-Narration: The Royal Canadian Mint launched the Silver Maple Leaf in 1988 at .9999 purity. Since 2014, every coin carries Bullion DNA authentication, radial line engraving and a micro-engraved maple leaf laser mark visible under magnification. The 2023 Mintshield surface treatment also addresses the milk-spot issue that plagued earlier coins.
-
-**Stat 7** (153–175s)
-Text: 1986 EAGLE LAUNCH
-Explanation: The USA Mint has produced the Silver Eagle continuously since 1986, 40 years of unbroken production.
-Graphic_type: none
-Narration: The USA Mint has produced the Silver Eagle every year since 1986. In 2021, the Mint redesigned the reverse and added enhanced anti-counterfeiting features. American Silver Eagles remain the most-recognized silver coin in the United States and sell fast at local coin shops because American buyers specifically request them.
-
-**Chart** (175–199s)
-Title: TYPICAL PREMIUM OVER SPOT BY COIN TYPE
-Bars:
-- American Silver Eagle: 18%
-- Canadian Maple Leaf: 14%
-- Generic Silver Round: 6%
-- 1 oz Silver Bar: 4%
-Narration: The chart shows typical dealer premiums per ounce by product type. American Silver Eagles carry the highest premium of any standard bullion coin. Maple Leafs track closer to generic rounds. Bars carry the lowest cost per ounce. Knowing these ranges before you buy means you can compare any two dealers in under a minute.
+Narration: Both the Canadian Silver Maple Leaf and the American Silver Eagle contain exactly 1 troy ounce of silver.
 
 ---
 
-## QUESTION (199–211s)
-Text: MAPLE LEAF OR SILVER EAGLE WHICH DO YOU STACK
-Subtext: DROP YOUR ANSWER BELOW
-Narration: Follow for more silver news.
+## OVERLAY: BOTH CANADIAN SILVER MAPLE
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Both the Canadian Silver Maple Leaf and the American Silver Eagle contain exactly 1 troy ounce of silver. Beyond metal content, the two coins differ on purity, premium over spot, security features, and how easily they sell at a local coin shop in the USA. Most comparison articles stop at the spot price. The full cost per ounce tells a different story.
+
+---
+
+## STAT: $4 TO $8 SILVER SPOT CANADIAN MAPLE
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: Premiums on American Silver Eagles typically run $4 to $8 over spot. Canadian Silver Maple Leafs typically come in at $3 to $6 over spot. On a 20 ounce purchase, that $1 to $2 gap per coin becomes $20 to $40 in real money. The Royal Canadian Mint has produced the Silver Maple Leaf at .9999 fine purity since 1988.
+
+---
+
+## OVERLAY: DOES MOVE NEEDLE VALUE
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: It does not move the needle on value. Where the Maple Leaf's four nine standard matters is in industrial and refining applications. For the average silver buyer, it's a spec on paper. Eagle premiums are higher for three reasons. First, the USA Mint charges authorized dealers a per coin surcharge that gets passed through to buyers. Second, Eagles can only be purchased new through USA Mint authorized purchasers, adding a distribution layer.
+
+---
+
+## OVERLAY: THIRD EAGLES TOP SELLING
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Third, Eagles are the top selling silver bullion coin in the world by annual volume, and that demand keeps premiums firm even when spot drops. Maple Leaf premiums track closer to generic rounds. The Royal Canadian Mint distributes through a broader international network, and there's no USA Mint style surcharge structure. For buyers focused on getting the most silver per dollar, the Maple Leaf usually wins on entry cost.
+
+---
+
+## OVERLAY: ONLINE DEALERS LIKE APMEX
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: Online dealers like APMEX and JM Bullion buy both coins at competitive rates, so the gap narrows when you sell online. If you plan to sell locally in the USA and want maximum flexibility with walk in coin shops, Eagles have a practical edge. If you sell online or plan to hold long term, the Maple Leaf's lower entry cost often makes more sense.
+
+---
+
+## OVERLAY: ROYAL CANADIAN MINT ADDED
+
+**Visual:** Supporting article visual
+**Duration:** 16s minimum
+
+Narration: The Royal Canadian Mint added Bullion DNA authentication in 2014. Each Maple Leaf carries radial line engraving on the background fields, a micro engraved maple leaf laser mark visible under magnification, and since 2023, a Mintshield surface protection layer that resists milk spots, a common issue with earlier Maple Leafs.
+
+---
+
+## STAT: $1 SPOT PRICE COIN BUY
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: The formula is spot price plus premium, divided by one ounce. If the difference is under $1 per coin, buy the Eagle for its resale advantage in the USA. If Maple Leafs are $2 or more cheaper, the purity edge plus lower entry cost tips the scales. When Eagles carry a high premium, they buy Maple Leafs. When premiums compress after a spot price drop, they buy Eagles.
+
+---
+
+## OVERLAY: OVERPAYING PREMIUM ACTUAL MISTAKE
+
+**Visual:** Supporting article visual
+**Duration:** 30s minimum
+
+Narration: Overpaying the premium is the actual mistake. Is the Maple Leaf better because it is purer? The purity difference is real, but tiny in dollar terms. The main reasons are Mint surcharge structure, dealer distribution layers, and stronger United States retail demand. If I want the lowest cost per ounce, which coin usually wins? Maple Leafs usually come in cheaper at entry, though you should compare live dealer premiums before buying. If I want the easiest local resale in the United States, which coin usually wins? American Silver Eagles usually have the edge.
+
+---
+
+## QUESTION
+
+**Visual:** Question card
+**Duration:** 4s minimum
+
+Text: What is your take?
+Subtext: COMMENT BELOW
+Narration: What is your take? Follow for more silver news.

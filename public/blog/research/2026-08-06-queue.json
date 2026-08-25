@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-06",
+  "posts": [
+    {
+      "slug": "silver-ira-vs-physical-silver-at-home-which-is-better",
+      "keyword": "silver IRA vs physical silver at home which is better",
+      "brand": "silver",
+      "draft": "public/blog/silver-ira-vs-physical-silver-at-home-which-is-better/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "best-silver-ira-custodians-compared-2026",
+      "keyword": "best silver IRA custodians compared 2026",
+      "brand": "silver",
+      "draft": "public/blog/best-silver-ira-custodians-compared-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "google-business-profile-setup-guide",
+      "keyword": "google business profile setup guide",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-setup-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "online-booking-system-for-small-business",
+      "keyword": "online booking system for small business",
+      "brand": "tech",
+      "draft": "public/blog/online-booking-system-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,12 +1,26 @@
-## What Pages Every Small Business Website Needs
+<!-- gemma_draft: 2026-08-24 | keyword: what pages every small business website needs | brand: tech -->
+# GEMMA DRAFT — what pages every small business website needs
+> Generated: 2026-08-24 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
+> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
 
-*   Homepage: First impression and clear value proposition
-*   About Us: Building trust and connecting with customers
-*   Services/Products: Detailed offerings and what you sell
-*   Contact Us: Easy ways for inquiries and communication
-*   Portfolio/Gallery: Showcasing past work and expertise
-*   Testimonials/Reviews: Social proof and building credibility
-*   Blog/News: Content marketing and SEO value
-*   FAQ: Addressing common customer questions
-*   Location/Map: For local businesses and physical presence
-*   Call to Action (CTA): Guiding visitors to the next step
+---
+
+
+
+## Overview
+
+
+
+## What to Know
+
+
+
+## How to Get Started
+
+
+
+## Common Mistakes
+
+
+
+

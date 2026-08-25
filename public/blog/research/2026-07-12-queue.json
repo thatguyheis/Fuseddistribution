@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-12",
+  "posts": [
+    {
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "keyword": "silver standard vs gold standard explained",
+      "brand": "silver",
+      "draft": "public/blog/silver-standard-vs-gold-standard-explained/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "keyword": "why silver was used as currency for 5000 years",
+      "brand": "silver",
+      "draft": "public/blog/why-silver-was-used-as-currency-for-5000-years/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "keyword": "best appointment booking tools for small business 2026",
+      "brand": "tech",
+      "draft": "public/blog/best-appointment-booking-tools-for-small-business-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-online-booking-reduces-no-shows",
+      "keyword": "how online booking reduces no-shows",
+      "brand": "tech",
+      "draft": "public/blog/how-online-booking-reduces-no-shows/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

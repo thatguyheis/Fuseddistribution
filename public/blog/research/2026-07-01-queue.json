@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-01",
+  "posts": [
+    {
+      "slug": "why-silver-has-industrial-demand-driving-price",
+      "keyword": "why silver has industrial demand driving price",
+      "brand": "silver",
+      "draft": "public/blog/why-silver-has-industrial-demand-driving-price/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "solar-panel-silver-demand-impact-on-price",
+      "keyword": "solar panel silver demand impact on price",
+      "brand": "silver",
+      "draft": "public/blog/solar-panel-silver-demand-impact-on-price/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "facebook-ads-for-local-business-beginner-guide",
+      "keyword": "facebook ads for local business beginner guide",
+      "brand": "tech",
+      "draft": "public/blog/facebook-ads-for-local-business-beginner-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-to-target-local-customers-with-facebook-ads",
+      "keyword": "how to target local customers with facebook ads",
+      "brand": "tech",
+      "draft": "public/blog/how-to-target-local-customers-with-facebook-ads/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-16",
+  "posts": [
+    {
+      "slug": "how-to-spot-fake-silver-coins-and-bars",
+      "keyword": "how to spot fake silver coins and bars",
+      "brand": "silver",
+      "draft": "public/blog/how-to-spot-fake-silver-coins-and-bars/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "silver-counterfeit-detection-guide",
+      "keyword": "silver counterfeit detection guide",
+      "brand": "silver",
+      "draft": "public/blog/silver-counterfeit-detection-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "tracking-phone-calls-from-your-website-how-to",
+      "keyword": "tracking phone calls from your website how to",
+      "brand": "tech",
+      "draft": "public/blog/tracking-phone-calls-from-your-website-how-to/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "blogging-for-small-business-does-it-work",
+      "keyword": "blogging for small business does it work",
+      "brand": "tech",
+      "draft": "public/blog/blogging-for-small-business-does-it-work/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

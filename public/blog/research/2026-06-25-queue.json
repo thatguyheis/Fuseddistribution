@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-25",
+  "posts": [
+    {
+      "slug": "silver-etf-vs-physical-silver-tax-differences",
+      "keyword": "silver ETF vs physical silver tax differences",
+      "brand": "silver",
+      "draft": "public/blog/silver-etf-vs-physical-silver-tax-differences/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "is-silver-a-good-hedge-against-inflation",
+      "keyword": "is silver a good hedge against inflation",
+      "brand": "silver",
+      "draft": "public/blog/is-silver-a-good-hedge-against-inflation/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "what-pages-every-small-business-website-needs",
+      "keyword": "what pages every small business website needs",
+      "brand": "tech",
+      "draft": "public/blog/what-pages-every-small-business-website-needs/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "mobile-website-speed-why-it-matters-for-local-business",
+      "keyword": "mobile website speed why it matters for local business",
+      "brand": "tech",
+      "draft": "public/blog/mobile-website-speed-why-it-matters-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

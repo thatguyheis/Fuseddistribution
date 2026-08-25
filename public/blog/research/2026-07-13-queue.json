@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-13",
+  "posts": [
+    {
+      "slug": "how-inflation-erodes-purchasing-power-and-silver-protec",
+      "keyword": "how inflation erodes purchasing power and silver protects it",
+      "brand": "silver",
+      "draft": "public/blog/how-inflation-erodes-purchasing-power-and-silver-protec/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-and-the-bretton-woods-collapse-explained",
+      "keyword": "silver and the Bretton Woods collapse explained",
+      "brand": "silver",
+      "draft": "public/blog/silver-and-the-bretton-woods-collapse-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "calendar-booking-link-how-to-add-to-google-business-pro",
+      "keyword": "calendar booking link how to add to google business profile",
+      "brand": "tech",
+      "draft": "public/blog/calendar-booking-link-how-to-add-to-google-business-pro/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "online-booking-vs-phone-calls-for-appointments",
+      "keyword": "online booking vs phone calls for appointments",
+      "brand": "tech",
+      "draft": "public/blog/online-booking-vs-phone-calls-for-appointments/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-29",
+  "posts": [
+    {
+      "slug": "silver-vs-gold-performance-comparison-2025-2026",
+      "keyword": "silver vs gold performance comparison 2025 2026",
+      "brand": "silver",
+      "draft": "public/blog/silver-vs-gold-performance-comparison-2025-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "comex-silver-inventory-what-declining-stockpiles-mean-f",
+      "keyword": "COMEX silver inventory what declining stockpiles mean for price",
+      "brand": "silver",
+      "draft": "public/blog/comex-silver-inventory-what-declining-stockpiles-mean-f/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "ai-scheduling-tools-for-small-business",
+      "keyword": "AI scheduling tools for small business",
+      "brand": "tech",
+      "draft": "public/blog/ai-scheduling-tools-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "what-ai-can-and-cannot-do-for-your-small-business",
+      "keyword": "what AI can and cannot do for your small business",
+      "brand": "tech",
+      "draft": "public/blog/what-ai-can-and-cannot-do-for-your-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-26",
+  "posts": [
+    {
+      "slug": "silver-as-emergency-money-why-it-works",
+      "keyword": "silver as emergency money why it works",
+      "brand": "silver",
+      "draft": "public/blog/silver-as-emergency-money-why-it-works/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-portfolio-allocation-beginner-vs-advanced",
+      "keyword": "silver portfolio allocation beginner vs advanced",
+      "brand": "silver",
+      "draft": "public/blog/silver-portfolio-allocation-beginner-vs-advanced/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "website-conversion-rate-what-it-means-and-how-to-improv",
+      "keyword": "website conversion rate what it means and how to improve it",
+      "brand": "tech",
+      "draft": "public/blog/website-conversion-rate-what-it-means-and-how-to-improv/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "call-to-action-best-practices-for-small-business-websit",
+      "keyword": "call to action best practices for small business websites",
+      "brand": "tech",
+      "draft": "public/blog/call-to-action-best-practices-for-small-business-websit/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

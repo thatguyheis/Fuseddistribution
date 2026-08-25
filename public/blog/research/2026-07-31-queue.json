@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-31",
+  "posts": [
+    {
+      "slug": "is-now-a-good-time-to-buy-silver-2026",
+      "keyword": "is now a good time to buy silver 2026",
+      "brand": "silver",
+      "draft": "public/blog/is-now-a-good-time-to-buy-silver-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-price-chart-analysis-support-and-resistance-leve",
+      "keyword": "silver price chart analysis support and resistance levels",
+      "brand": "silver",
+      "draft": "public/blog/silver-price-chart-analysis-support-and-resistance-leve/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-automate-repetitive-business-tasks-with-ai",
+      "keyword": "how to automate repetitive business tasks with AI",
+      "brand": "tech",
+      "draft": "public/blog/how-to-automate-repetitive-business-tasks-with-ai/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "ai-chatbot-for-small-business-website-setup-guide",
+      "keyword": "AI chatbot for small business website setup guide",
+      "brand": "tech",
+      "draft": "public/blog/ai-chatbot-for-small-business-website-setup-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

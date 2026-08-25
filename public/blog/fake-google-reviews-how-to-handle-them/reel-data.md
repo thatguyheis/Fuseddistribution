@@ -5,39 +5,69 @@ format: long-form
 hook: Real activity beats fake numbers every time.
 hook_type: pain_point
 
-## stats
-- text: FAKE GOOGLE REVIEWS
-  explanation: --- Fake Google reviews.
-  graphic_type: none
-  narration: --- Fake Google reviews.
-- text: HERE S HOW YOU STOP
-  explanation: Here’s how you stop wasting time chasing empty promises and start getting real local customers.
-  graphic_type: none
-  narration: Here’s how you stop wasting time chasing empty promises and start getting real local customers.
-- text: YOU HAVE A SERVICE BUT
-  explanation: You have a service, but if nobody's finding you on Google, you're invisible to the people who need your work.
-  graphic_type: none
-  narration: You have a service, but if nobody's finding you on Google, you're invisible to the people who need your work.
+## segments
+- type: overlay
+  text: HERE HOW STOP WASTING
+  narration: Here’s how you stop wasting time chasing empty promises and start getting real local customers. You have a service, but if nobody's finding you on Google, you're invisible to the people who need your work. We focus only on what actually gets you calls and shows up when people search for your business. If you're ready to stop guessing and start getting found, check out our contact page.
+- type: overlay
+  text: WHY FAKE REVIEWS WASTE
+  narration: Why Fake Reviews Are a Waste of Time You see reviews online. You think a higher number means more customers. They check if people actually call you. They see if people visit your site. A lot of fake reviews just look like spam. Trying to game the system usually backfires. Google has filters for that kind of stuff. If you keep getting good customers, those real reviews stick.
+- type: overlay
+  text: MEANS CALLS COMING THROUGH
+  narration: That means calls coming through, people visiting your site, and how often people actually look you up on a map. If you only have a bunch of old, empty reviews, Google sees nothing. It doesn't care about the score alone. Trying to fake reviews usually just gets you flagged. If you try to game the system, you risk getting your profile shut down.
+- type: overlay
+  text: GOOGLE BUSINESS PROFILE NEEDS
+  narration: Your Google Business Profile needs to be solid first. Make sure your name, address, and phone number are exactly the same everywhere online. A weak profile doesn't matter if the reviews are fake. When someone leaves feedback, how you answer matters more than the number itself. Whether it's a five-star shoutout or a complaint, a quick, human response shows you care.
+- type: overlay
+  text: SEE LOOK MAP LOT
+  narration: They see if they look at your map. A lot of fake reviews just get flagged. That hurts your visibility more than anything. You need to focus on getting actual work done. Make sure your name, address, and phone number are the same everywhere online. A quick, human response shows you care. That builds trust faster than any star rating.
+- type: overlay
+  text: CONSISTENT INFORMATION ACROSS WEB
+  narration: Consistent information across the web is key. When people search for your service and you don't show up, you're gone. How to Handle Bad Reviews Without Panicking You get a bad review. But don't let one review derail you. Google looks at more than just the number. They see if people call you, if they visit your site, and if you show up on the map.
+- type: overlay
+  text: WEBSITE NOBODY CALLS DON'T
+  narration: You have a website, but nobody calls from it. You don't even show up when people search for your service. That means you're invisible to local customers. They check if people call you, if they visit your site, and if they look at your map. Trying to fake reviews usually just gets your profile flagged. Make sure your Name, Address, and Phone number are the same everywhere.
+- type: overlay
+  text: FAKE REVIEW WEAK PROFILE
+  narration: A fake review on a weak profile doesn't do anything. How you talk back to reviews matters too. A quick, human reply shows you care. That builds trust faster than any number score. Keep your Name, Address, Phone number consistent across the web. If you're ready to stop guessing and start showing up for local customers, talk to us. Stop wasting money on website fluff that doesn't get calls. See how we actually get your business found on Google.
 
 ## question
-text: STOP CHASING FAKE SCORES AND START BUILDING REAL
+text: Stop chasing fake scores and start building real local trust?
 subtext: COMMENT BELOW
-narration: Follow for more tips to grow your business.
+narration: Stop chasing fake scores and start building real local trust? Follow for more practical business tips.
 
 ## shared
-discussion_question: Stop chasing fake scores and start building real local trust today.
+discussion_question: Stop chasing fake scores and start building real local trust?
 hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
 
 ## media_queries
 - segment: 0
-  query: "fake google reviews how to handle them"
+  query: "Fake Google Reviews: How to Handle Them"
   prefer: video
 - segment: 1
-  query: "fake google reviews how to handle them fake"
-  prefer: video
+  query: "Fake Google Reviews: How to Handle Them here how stop"
+  prefer: photo
 - segment: 2
-  query: "fake google reviews how to handle them here"
-  prefer: video
+  query: "Fake Google Reviews: How to Handle Them why fake reviews"
+  prefer: photo
 - segment: 3
-  query: "fake google reviews how to handle them you"
-  prefer: video
+  query: "Fake Google Reviews: How to Handle Them means calls coming"
+  prefer: photo
+- segment: 4
+  query: "Fake Google Reviews: How to Handle Them google business profile"
+  prefer: photo
+- segment: 5
+  query: "Fake Google Reviews: How to Handle Them see look map"
+  prefer: photo
+- segment: 6
+  query: "Fake Google Reviews: How to Handle Them consistent information across"
+  prefer: photo
+- segment: 7
+  query: "Fake Google Reviews: How to Handle Them website nobody calls"
+  prefer: photo
+- segment: 8
+  query: "Fake Google Reviews: How to Handle Them fake review weak"
+  prefer: photo
+- segment: 9
+  query: "Fake Google Reviews: How to Handle Them customer feedback"
+  prefer: photo

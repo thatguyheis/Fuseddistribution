@@ -1,0 +1,35 @@
+{
+  "slug": "silver-capital-gains-tax-how-it-works-in-the-us",
+  "keyword": "silver capital gains tax how it works in the US",
+  "angle": "Physical silver is usually taxed under federal capital gains rules, but long-term gains can fall under the collectibles maximum rate rather than the standard long-term stock rate.",
+  "secondary_kw": [
+    "physical silver tax treatment",
+    "silver Form 8949 Schedule D"
+  ],
+  "stats": [
+    {
+      "claim": "Net capital gains from selling collectibles such as coins or art are taxed at a maximum 28% rate.",
+      "value": "28%",
+      "source_url": "https://www.irs.gov/taxtopics/tc409",
+      "source_name": "IRS Topic No. 409"
+    },
+    {
+      "claim": "Collectibles gain or loss includes gain or loss from the sale or trade of metal such as gold, silver, and platinum bullion held more than 1 year.",
+      "value": "more than 1 year",
+      "source_url": "https://www.irs.gov/publications/p550",
+      "source_name": "IRS Publication 550"
+    },
+    {
+      "claim": "The basis of property you buy is usually its cost.",
+      "value": "cost basis",
+      "source_url": "https://www.irs.gov/publications/p551",
+      "source_name": "IRS Publication 551"
+    },
+    {
+      "claim": "Use Form 8949 to report sales and exchanges of capital assets, then carry the subtotals to Schedule D.",
+      "value": "Form 8949",
+      "source_url": "https://www.irs.gov/instructions/i8949",
+      "source_name": "IRS Instructions for Form 8949"
+    }
+  ]
+}

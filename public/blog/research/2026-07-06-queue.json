@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-06",
+  "posts": [
+    {
+      "slug": "does-tarnished-silver-lose-value",
+      "keyword": "does tarnished silver lose value",
+      "brand": "silver",
+      "draft": "public/blog/does-tarnished-silver-lose-value/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "best-ways-to-clean-silver-coins-without-damage",
+      "keyword": "best ways to clean silver coins without damage",
+      "brand": "silver",
+      "draft": "public/blog/best-ways-to-clean-silver-coins-without-damage/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "welcome-email-sequence-for-new-customers",
+      "keyword": "welcome email sequence for new customers",
+      "brand": "tech",
+      "draft": "public/blog/welcome-email-sequence-for-new-customers/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "email-marketing-vs-social-media-which-is-better",
+      "keyword": "email marketing vs social media which is better",
+      "brand": "tech",
+      "draft": "public/blog/email-marketing-vs-social-media-which-is-better/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

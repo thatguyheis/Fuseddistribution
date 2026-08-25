@@ -1,87 +1,105 @@
 # Reel Script: dollar-cost-averaging-silver-strategy-explained
 format: long-form
-segments: 9
-target: 190
+segments: 11
+target-duration: 192s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 11s minimum (22 words / 2.5 + 2)
+**Duration:** 3s minimum
 
-Narration: Dollar-cost averaging removes the guesswork from silver buying. You don't need to time the market to build a solid position.
-
----
-
-## STAT: BARS AND COINS DON'T COST
-
-**Visual:** Supporting graphic
-**Duration:** 22s minimum (48 words / 2.5 + 2)
-
-Narration: Bars and coins don't cost the same per ounce. A 10 oz bar has a different price per ounce than a 1 oz coin. Premiums shift based on what type you choose. Calculate the true cost before you commit any money.
+Narration: Dollar-cost averaging smooths out buying risk.
 
 ---
 
-## STAT: DOLLAR-COST AVERAGING SMOOTHS OUT TIMING
+## OVERLAY: WANT BUILD PHYSICAL SILVER
 
-**Visual:** Supporting graphic
-**Duration:** 20s minimum (44 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
 
-Narration: Dollar-cost averaging smooths out timing risk. You commit to a fixed amount on a regular schedule instead of guessing the perfect moment. This keeps your average purchase price stable over time. The pressure of timing the market disappears completely.
-
----
-
-## STAT: SMALLER REGULAR PURCHASES SPREAD YOUR
-
-**Visual:** Supporting graphic
-**Duration:** 19s minimum (42 words / 2.5 + 2)
-
-Narration: Smaller regular purchases spread your cost across different price points. Buy weekly or monthly instead of all at once. This protects you from the mistake of buying everything at a market peak. Consistency is the real strategy here.
+Narration: You want to build a physical silver reserve. Fused Distribution offers a straightforward way to do that. We cut out the dealer markups and confusing premiums. You need a plan to buy silver. Compare the price per ounce for bars versus coins. Premiums change based on the type you choose. This math shows you what you actually pay. Don't try to guess the perfect time to buy.
 
 ---
 
-## STAT: SILVER IS ONE PART OF
+## OVERLAY: METHOD REDUCES RISK BUYING
 
-**Visual:** Supporting graphic
-**Duration:** 19s minimum (42 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
 
-Narration: Silver isn't your only investment. It works alongside other assets as part of a broader financial plan. Don't treat it as your entire strategy. It's one necessary piece of a solid foundation you're building over time.
-
----
-
-## STAT: CHECK THE DEALER BEFORE YOU
-
-**Visual:** Supporting graphic
-**Duration:** 19s minimum (42 words / 2.5 + 2)
-
-Narration: Check the dealer before you spend any money. Ask for proof of licensing. Look for a physical location and transparent pricing sheets. A legitimate dealer answers your questions clearly and doesn't hide behind vague promises.
+Narration: This method reduces the risk of buying at a high point. The most useful part of the method is its discipline. Decide how much you can afford, choose a weekly or monthly date, and record the premium and ounces for each purchase. That record makes it easier to compare products honestly and see whether the plan still fits your goals.
 
 ---
 
-## STAT: WHERE YOU STORE YOUR SILVER
+## OVERLAY: BUDGET CHANGES ADJUST AMOUNT
 
-**Visual:** Supporting graphic
-**Duration:** 21s minimum (47 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
 
-Narration: Where you store your silver matters for long-term holds. Basic home storage works in the short term. For long-term positions, secure vaulting gives a higher level of protection. Your storage choice depends on your timeline and how much silver you hold.
+Narration: If your budget changes, adjust the amount deliberately instead of reacting to a single market move. Check the dealer before you spend money. See if they have a clear process for transactions. Look for transparency in their pricing structure. This is how you spot a legit operation. Basic storage is fine for short terms. For long-term holding, look at secure vaulting options.
 
 ---
 
-## STAT: FUSED DISTRIBUTION OFFERS CLEAR PRICING
+## OVERLAY: STORAGE CHOICE DEPENDS PLAN
 
-**Visual:** Supporting graphic
-**Duration:** 19s minimum (41 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
 
-Narration: Fused Distribution offers clear pricing with no dealer markup confusion. You get a straightforward plan and real answers on premiums. No guessing, no hidden fees. Start building your silver reserve today at Fused Distribution dot com slash reserve.
+Narration: Your storage choice depends on your plan. It's a part of a broader strategy. See where silver fits into your overall goals. You need a clear path to buying silver. Don't just look at the sticker price. You have to see the true cost per ounce. Know what you are actually paying for. This method stops you from trying to guess the perfect moment.
+
+---
+
+## OVERLAY: KEEPS AVERAGE PURCHASE PRICE
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: This keeps your average purchase price stable. It removes the pressure to time the market. Check the dealer before you spend any money. See if they have a physical location. Basic storage keeps it safe from immediate theft. Vaulting offers a higher level of security. Decide what level of protection you need. Don't treat it as your only investment. Choosing Your Physical Asset You gotta look at the actual cost.
+
+---
+
+## OVERLAY: BAR DIFFERENT PRICE OUNCE
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: A 10 oz bar has a different price per ounce than a 1 oz coin. Don't just look at the sticker price. Calculate the real price you pay for the metal. You don't try to guess the perfect moment. This smooths out the ups and downs of the market. It removes the pressure to time the market right. You keep buying, regardless of the price.
+
+---
+
+## OVERLAY: APPROACH BUILDS POSITION TIME
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: This approach builds your position over time. Check the dealer before you spend money. This is how you keep yourself safe. Basic storage is fine for short terms. It fits into your overall financial picture. Don't treat it like the only answer. It's one part of a bigger strategy. You need to check the numbers before you buy anything. Calculate the actual price you pay for the silver.
+
+---
+
+## OVERLAY: STOPS GETTING SURPRISED HIDDEN
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: This stops you from getting surprised by hidden fees. Don't try to buy everything at once. This helps you avoid buying at a peak. It reduces the risk of timing your purchase wrong. See if they offer transparency on their pricing structure. A legit dealer shows you the facts. You need to figure out your true silver cost. Calculate the real price per ounce for each type.
+
+---
+
+## OVERLAY: SHOWS WHAT ACTUALLY PAY
+
+**Visual:** Supporting article visual
+**Duration:** 15s minimum
+
+Narration: This shows you what you actually pay. Don't try to buy all at once. This reduces the risk of buying at a peak. Check the dealer before you spend any money. See if they have clear policies on premiums. Basic storage is fine for short terms.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 10s minimum (QUESTION requires ≥10s)
+**Duration:** 5s minimum
 
-Text: HOW WILL DOLLAR-COST AVERAGING CHANGE YOUR STRATEGY
+Text: How will dollar-cost averaging change your silver investment strategy?
 Subtext: COMMENT BELOW
-Narration: Follow for more silver news.
+Narration: How will dollar-cost averaging change your silver investment strategy? Follow for more silver news.

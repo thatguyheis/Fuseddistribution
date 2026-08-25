@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-17",
+  "posts": [
+    {
+      "slug": "how-to-value-inherited-silver-for-estate-purposes",
+      "keyword": "how to value inherited silver for estate purposes",
+      "brand": "silver",
+      "draft": "public/blog/how-to-value-inherited-silver-for-estate-purposes/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "selling-inherited-silver-coins-taxes-and-process",
+      "keyword": "selling inherited silver coins taxes and process",
+      "brand": "silver",
+      "draft": "public/blog/selling-inherited-silver-coins-taxes-and-process/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "local-seo-audit-how-to-do-one-yourself",
+      "keyword": "local SEO audit how to do one yourself",
+      "brand": "tech",
+      "draft": "public/blog/local-seo-audit-how-to-do-one-yourself/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "service-area-business-seo-guide",
+      "keyword": "service area business SEO guide",
+      "brand": "tech",
+      "draft": "public/blog/service-area-business-seo-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

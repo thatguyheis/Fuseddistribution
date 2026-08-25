@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-17",
+  "posts": [
+    {
+      "slug": "magnet-test-for-silver-does-it-work",
+      "keyword": "magnet test for silver does it work",
+      "brand": "silver",
+      "draft": "public/blog/magnet-test-for-silver-does-it-work/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "ice-test-for-silver-explained",
+      "keyword": "ice test for silver explained",
+      "brand": "silver",
+      "draft": "public/blog/ice-test-for-silver-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "content-marketing-ideas-for-local-business",
+      "keyword": "content marketing ideas for local business",
+      "brand": "tech",
+      "draft": "public/blog/content-marketing-ideas-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-often-should-a-small-business-blog",
+      "keyword": "how often should a small business blog",
+      "brand": "tech",
+      "draft": "public/blog/how-often-should-a-small-business-blog/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

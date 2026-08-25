@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-08",
+  "posts": [
+    {
+      "slug": "paper-silver-vs-physical-silver-the-key-difference",
+      "keyword": "paper silver vs physical silver the key difference",
+      "brand": "silver",
+      "draft": "public/blog/paper-silver-vs-physical-silver-the-key-difference/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "silver-short-squeeze-2026-is-it-possible",
+      "keyword": "silver short squeeze 2026 is it possible",
+      "brand": "silver",
+      "draft": "public/blog/silver-short-squeeze-2026-is-it-possible/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-set-up-google-business-profile-step-by-step",
+      "keyword": "how to set up google business profile step by step",
+      "brand": "tech",
+      "draft": "public/blog/how-to-set-up-google-business-profile-step-by-step/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "google-business-profile-optimization-guide-2026",
+      "keyword": "google business profile optimization guide 2026",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-optimization-guide-2026/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

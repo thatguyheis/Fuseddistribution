@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-28",
+  "posts": [
+    {
+      "slug": "what-moves-silver-price-up-and-down",
+      "keyword": "what moves silver price up and down",
+      "brand": "silver",
+      "draft": "public/blog/what-moves-silver-price-up-and-down/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-spot-price-explained-what-it-means",
+      "keyword": "silver spot price explained what it means",
+      "brand": "silver",
+      "draft": "public/blog/silver-spot-price-explained-what-it-means/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "instagram-for-local-business-complete-guide",
+      "keyword": "instagram for local business complete guide",
+      "brand": "tech",
+      "draft": "public/blog/instagram-for-local-business-complete-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "facebook-page-vs-facebook-group-for-business",
+      "keyword": "facebook page vs facebook group for business",
+      "brand": "tech",
+      "draft": "public/blog/facebook-page-vs-facebook-group-for-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

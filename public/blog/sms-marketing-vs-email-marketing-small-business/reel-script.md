@@ -100,6 +100,6 @@ Narration: Don’t just pick one or the other. Use email for keeping your existi
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: So, which channel , text or email , do you?
+Text: Which channel works better for your business: text or email?
 Subtext: COMMENT BELOW
-Narration: So, which channel , text or email , do you? Follow for more practical business tips.
+Narration: Which channel works better for your business: text or email? Follow for more practical business tips.

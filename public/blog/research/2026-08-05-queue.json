@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-05",
+  "posts": [
+    {
+      "slug": "can-you-put-physical-silver-in-an-ira",
+      "keyword": "can you put physical silver in an IRA",
+      "brand": "silver",
+      "draft": "public/blog/can-you-put-physical-silver-in-an-ira/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "self-directed-ira-approved-silver-coins-and-bars-list",
+      "keyword": "self-directed IRA approved silver coins and bars list",
+      "brand": "silver",
+      "draft": "public/blog/self-directed-ira-approved-silver-coins-and-bars-list/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "word-of-mouth-marketing-strategy",
+      "keyword": "word of mouth marketing strategy",
+      "brand": "tech",
+      "draft": "public/blog/word-of-mouth-marketing-strategy/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-to-get-repeat-customers",
+      "keyword": "how to get repeat customers",
+      "brand": "tech",
+      "draft": "public/blog/how-to-get-repeat-customers/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

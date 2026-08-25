@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-07-29",
+  "sources": [
+    {
+      "name": "Fused Distribution spot API",
+      "url": "https://fuseddistribution.com/api/spot",
+      "facts": ["Silver spot snapshot: $58.13 per troy ounce on July 29, 2026."]
+    },
+    {
+      "name": "LBMA 2026 Precious Metals Forecast Survey",
+      "url": "https://www.lbma.org.uk/forecast-survey-2026/analysts-forecasts",
+      "facts": ["LBBW annual average: $63.20.", "MKS PAMP annual average: $65.00.", "LSEG Metals Research annual average: $69.00.", "UBS annual average: $78.80.", "Metals Focus annual average: $83.00."]
+    },
+    {
+      "name": "LBMA Precious Metals Market Report: Q2 2026",
+      "url": "https://www.lbma.org.uk/articles/lbma-precious-metals-market-report-q2-2026",
+      "facts": ["Q2 opened at $74.870 and June ended at $58.795, a 21.47% decline."]
+    },
+    {
+      "name": "World Bank precious metals update",
+      "url": "https://blogs.worldbank.org/en/opendata/precious-metals-retreat-from-record-highs",
+      "facts": ["Silver prices fell in 2026 Q2 after a sharp Q1 rise; the outlook remains highly uncertain."]
+    },
+    {
+      "name": "Silver Institute 2026 outlook",
+      "url": "https://silverinstitute.org/global-silver-investment-to-remain-strong-in-2026-against-the-backdrop-of-a-sixth-consecutive-annual-market-deficit/",
+      "facts": ["The market is expected to remain in deficit for a sixth consecutive year in 2026."]
+    }
+  ]
+}

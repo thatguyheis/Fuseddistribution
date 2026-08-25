@@ -7,29 +7,29 @@ hook_type: immediate_value
 
 ## segments
 - type: stat
-  text: 12 NOON LONDON TIME IN SECOND
-  narration: Open three tabs every morning: a live spot price feed, the LBMA Silver Price benchmark page, and your dealer's product pages. Spot tells you the metal value per troy ounce. The LBMA fix gives you the institutional reference price set during a daily auction at 12:00 noon London time in 30-second rounds .
+  text: 12 SPOT METAL PRICE NOON
+  narration: Open three tabs every morning: a live spot price feed, the LBMA Silver Price benchmark page, and your dealer's product pages. Spot tells you the metal value per troy ounce. The LBMA fix gives you the institutional reference price set during a daily auction at 12:00 noon London time in 30-second rounds . Dealer pages show you premium, the gap between spot and what you actually pay.
 - type: stat
-  text: $49.95 PER OUNCE IN OCTOBER BEFORE
-  narration: In 2025 silver hit a record high above $49.95 per ounce in October before extreme daily volatility took prices into the $80 to $117 range late in the year . On days like that, individual feeds lag by 30 to 90 seconds.
-- type: overlay
-  text: THE NUMBER THAT PRINTS FROM
-  narration: The number that prints from that auction is the price your dealer uses to mark up coins and bars for the rest of the day. Knowing the morning fix means you know what your dealer paid wholesale before they added retail premium.
+  text: $80 TO $117 SILVER RANGE LATE YEAR
+  narration: The gap between the two readings is your daily volatility number. In 2025 silver hit a record high above $49.95 per ounce in October before extreme daily volatility took prices into the $80 to $117 range late in the year . On days like that, individual feeds lag by 30 to 90 seconds. A single source can show you $94 while the next dealer over is pricing off $97.
 - type: stat
-  text: 1 OZ AMERICAN SILVER EAGLE USUALLY
-  narration: A 1 oz American Silver Eagle usually carries a premium of 15 percent to 30 percent over spot. A 10 oz generic bar runs 3 percent to 8 percent. A 100 oz bar can sit at 2 percent to 5 percent. If spot is $40 and a 1 oz Eagle quotes at $52, your premium is 30 percent.
+  text: $41.18 SILVER OUNCE BASED LBMA
+  narration: Knowing the morning fix means you know what your dealer paid wholesale before they added retail premium. Silver averaged $41.18 per ounce in 2025 based on LBMA London fix data, the strongest annual performance since 1983 . If you had tracked the fix every morning that year, you would have caught dozens of entry windows under $38. Set a phone alarm for 7:05 a.m.
 - type: stat
-  text: 680.5 million OUNCES IN THE FOURTH CONSECUTIVE
-  narration: Industrial demand hit a record 680.5 million ounces in 2024, the fourth consecutive annual record . Solar panels, electric vehicles, and electronics keep pulling silver out of the supply chain. The global silver market posted a 148.9 million-ounce deficit in 2024, its fifth consecutive annual shortfall .
+  text: 10 GENERIC BAR RUNS SIT
+  narration: A 10 oz generic bar runs 3 percent to 8 percent. A 100 oz bar can sit at 2 percent to 5 percent. If spot is $40 and a 1 oz Eagle quotes at $52, your premium is 30 percent. If the same dealer sells a 10 oz bar at $432, your premium is 8 percent. Same dealer, same day, different products, very different deals per ounce of silver in your hand.
 - type: stat
-  text: 20 MINUTES WILL BURN YOU OUT
-  narration: When SLV adds tonnage week over week, ETF demand is absorbing supply. When it drops, paper holders are exiting and spot often softens. You do not need to trade on these. You need to know which direction the wind blows. Manually checking spot every 20 minutes will burn you out by week two.
+  text: 30 DAYS CHART AFTER SEE REAL
+  narration: After 30 days you have a chart. After 90 days you can see a real trend. After 12 months you can spot the months premiums compress and the months they expand. This is how you beat people who only check price on the day they buy. Industrial demand hit a record 680.5 million ounces in 2024, the fourth consecutive annual record .
 - type: stat
-  text: 3% DROP ALERTS BUY MONTHLY CHECK
-  narration: Pick one of three rhythms: Buy weekly: track spot every morning, set 3 percent drop alerts Buy monthly: check spot Monday, Wednesday, Friday at the LBMA fix Buy quarterly: review on the first business day of each month only Then stick to your rhythm.
+  text: $15.25 BILLION SILVER DEMAND MARCH SEC
+  narration: Three free demand signals you can check weekly: COMEX silver inventory totals on the CME website iShares Silver Trust holdings, updated daily at ishares.com Silver Institute press releases for quarterly demand data iShares Silver Trust (SLV) reported net assets of $15.25 billion as of March 31, 2025 in its 10-Q SEC filing . When SLV adds tonnage week over week, ETF demand is absorbing supply.
 - type: stat
-  text: 7 A M EASTERN AND DECIDE
-  narration: Use your tracking to wait for both conditions: spot pulled back and premium normal. Refresh your spreadsheet tomorrow morning, check the LBMA fix at 7:05 a.m. Eastern, and decide from data instead of headlines. Reserve your physical silver when the numbers line up, not when the news cycle tells you to.
+  text: 3% COST SPOT DROP ALERTS
+  narration: Daily tracking matters most if you buy weekly or monthly. If you dollar-cost average once per quarter, daily charts add stress without adding edge. Pick one of three rhythms: Buy weekly: track spot every morning, set 3 percent drop alerts Buy monthly: check spot Monday, Wednesday, Friday at the LBMA fix Buy quarterly: review on the first business day of each month only Then stick to your rhythm.
+- type: stat
+  text: 7 SPOT DEMAND EASTERN DECIDE
+  narration: We see this pattern at Fused Distribution after every sharp price drop. Spot falls, retail demand spikes, premiums widen, and the apparent bargain disappears in the markup. Use your tracking to wait for both conditions: spot pulled back and premium normal. Refresh your spreadsheet tomorrow morning, check the LBMA fix at 7:05 a.m. Eastern, and decide from data instead of headlines. Reserve your physical silver when the numbers line up, not when the news cycle tells you to.
 
 ## question
 text: How will this method change your silver buying strategy?
@@ -42,32 +42,32 @@ hashtags: #SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHed
 
 ## media_queries
 - segment: 0
-  query: "how to track silver price daily"
+  query: "How To Track Silver Price Daily"
   prefer: video
 - segment: 1
-  query: "how to track silver price daily 12 noon london"
+  query: "How To Track Silver Price Daily 12 spot metal"
   prefer: photo
 - segment: 2
-  query: "how to track silver price daily 49 95 per"
+  query: "How To Track Silver Price Daily 80 to 117"
   prefer: photo
 - segment: 3
-  query: "how to track silver price daily the number that"
+  query: "How To Track Silver Price Daily 41 18 silver"
   prefer: photo
 - segment: 4
-  query: "how to track silver price daily 1 oz american"
+  query: "How To Track Silver Price Daily 10 generic bar"
   prefer: photo
 - segment: 5
-  query: "how to track silver price daily 680 5 million"
+  query: "How To Track Silver Price Daily 30 days chart"
   prefer: photo
 - segment: 6
-  query: "how to track silver price daily 20 minutes will"
+  query: "How To Track Silver Price Daily 15 25 billion"
   prefer: photo
 - segment: 7
-  query: "how to track silver price daily 3 drop alerts"
+  query: "How To Track Silver Price Daily 3 cost spot"
   prefer: photo
 - segment: 8
-  query: "how to track silver price daily 7 a m"
+  query: "How To Track Silver Price Daily 7 spot demand"
   prefer: photo
 - segment: 9
-  query: "how to track silver price daily customer feedback"
+  query: "How To Track Silver Price Daily customer feedback"
   prefer: photo

@@ -69,9 +69,17 @@ echo $PEXELS_API_KEY
 - [ ] Run `node public/blog/scripts/generate-sitemap.mjs`
 - [ ] **Secret check** — no literal tokens/keys in any staged file, env var references only (§17). Pre-commit hook enforces.
 - [ ] Commit locally only: `git add public/blog/ public/sitemap.xml && git commit -m "feat(blog): [Post Title]"`
-- [ ] Claude reviews the local commit, then pushes, deploys, and verifies live status after approval.
+- [ ] Codex reviews the local commit, then pushes only with approval, deploys through the authorized workflow, and verifies live status.
 
 ### Automated crash recovery
+
+The recovery loop is bounded. A model transport or empty-output failure remains
+retryable from the dated pending marker; an undersized article, invalid metadata,
+unsupported factual claim, or failed quality gate is a terminal quality block and
+is quarantined for owner repair. The whole post has a watchdog, and the pending
+marker stores per-slug attempts. After the retry ceiling, the slug is quarantined
+with its exact checkpoint rather than retrying forever and starving a newer date.
+All operating dates come from `TZ=America/Los_Angeles date +%F`.
 
 The 9 AM runner writes `public/blog/research/YYYY-MM-DD-pending.json` before its
 first model call. It also checkpoints the current day's queue before selecting
@@ -102,6 +110,14 @@ target pending marker must have a newer `interrupted_at` value or be replaced by
 its dated complete marker. If the service disappears with no new run header, the
 retry failed even if the earlier log said `confirmed loaded`.
 
+The runner also writes `.workflow-state/retry.json` and
+`.workflow-state/blog-YYYY-MM-DD.json`. The retry checkpoint records the due
+epoch and target date; the run checkpoint records the PID, launch label, last
+heartbeat, current slug, and exit event. A loaded plist without a fresh
+heartbeat is an operational failure. If the due epoch has passed and no retry
+heartbeat exists, resume the recorded date once, then leave the checkpoint in
+place for audit.
+
 - Use `BLOG_RUN_DATE=YYYY-MM-DD /Users/nick/bin/daily-blog-reel.sh` to replay a
   specific missed day.
 - Local model probes are bounded by `BLOG_PROBE_TIMEOUT_SECONDS` and a failed
@@ -109,8 +125,18 @@ retry failed even if the earlier log said `confirmed loaded`.
   are already registered deployment checkpoints, so exhausted model credits or
   a stopped local model cannot block deployment recovery.
 - Full local article calls are bounded by `HERMES_ARTICLE_TIMEOUT_SECONDS` and
-  sized with `HERMES_ARTICLE_MAX_TOKENS`; timeout or empty output defers the slug
-  with its pending checkpoint intact instead of retrying indefinitely.
+  sized with `HERMES_ARTICLE_MAX_TOKENS`; the whole post is bounded by
+  `BLOG_POST_TIMEOUT_SECONDS`. Timeout or empty output defers the slug with its
+  pending checkpoint intact instead of retrying indefinitely.
+- `HERMES_ARTICLE_SHAPE_REWRITE_ATTEMPTS` defaults to one. Historical runs show
+  a second full-article rewrite usually repeats the same undersized result, so
+  the writer moves to the bounded section assembler after one repair attempt.
+  Raise this only for a measured model experiment, not as generic recovery.
+- When deterministic lint finds only unsupported named-source attributions, do
+  not send the whole article through another model rewrite. Preserve the block
+  for source/editorial repair. Hook and social leaf prompts use a bounded article
+  context (answer-first body, all headings, and ending) rather than retransmitting
+  the complete article for every small output.
 - If a valid but undersized article passes lint and later fails the reel/content
   completeness gate, rerun `build-post.sh ... --force`. Force mode rebuilds the
   writer and dependent metadata, hooks, chart, and social checkpoints instead of
@@ -140,8 +166,8 @@ retry failed even if the earlier log said `confirmed loaded`.
   the slug pending.
 - GitHub synchronization and website deployment are separate outcomes. A GitHub
   authentication failure is logged as a source-sync warning but must not block
-  Cloudflare deployment of an approved post. Codex does not push; Claude reviews
-  and pushes the local commits.
+  Cloudflare deployment of an approved post. Codex owns review and pushes only
+  with Nick's approval.
 - Downstream reel and Buffer jobs must not treat an absent `posts.json` entry as
   "no work" without checking for an older blog pending marker first.
 
@@ -164,7 +190,7 @@ tail -n 120 ~/Library/Logs/daily-blog-reel.log
 - Pending dates must move oldest first. A newer date must not begin while an older
   pending marker remains, unless the older date is explicitly quality blocked.
 - `NOTICE: ... commits unpushed` is a separate source-control handoff. It does not
-  mean the website deployment failed, but Claude must review and push the commits.
+  mean the website deployment failed, but Codex must review the commits and push only with approval.
 
 ---
 
@@ -379,28 +405,43 @@ Use inside `.article-body`. Pick from these — each has its own CSS requirement
 
 | Component | When to use | Extra CSS needed |
 |-----------|-------------|-----------------|
-| Horizontal bar chart (`.chart-wrap`) | Comparing categories | No |
-| Vertical bar chart (`.chart-wrap`) | Time series / severity | No |
-| Stat row (`.stat-row`) | 3 callout numbers | No |
+| Horizontal bar chart (`.chart-wrap`) | 3-6 categories with the same metric, unit, period, and denominator | No |
+| Before/after (`.visual-type-before-after`) | Exactly two observations of one metric at named periods | No |
+| Timeline (`.visual-type-timeline`) | One metric across 3-6 ordered ISO dates | No |
+| Stat cards (`.visual-type-stat-cards`) | 2-4 useful but non-comparable facts | No |
 | Inline article photo (`.article-photo`) | Pexels or coin photos | No |
 | Math / formula box (`.math-box`) | Silver content math | Yes — add at bottom of `<style>` |
 | Coin grid (`.coin-grid`) | Spec cards per coin type | Yes |
 | Watch-out list (`.watch-list`) | Numbered warning items | Yes |
 | Sources block (`.sources-block`) | Research-backed posts | No |
 
-Chart math:
+Bar-chart math:
 - Horizontal bar: `width = round(pct / 100 * 447)`, label x = `188 + width + 6`
-- Vertical bar: `height = round(pct / 100 * 198)`, bar top y = `228 - height`
 
-**Automated chart stage (T8b):** `scripts/build-chart.sh <slug>` extracts 3-6 comparable
-sourced stats from `verified.md`/`research.json` into `chart.json`, then
-`scripts/build-chart-inject.mjs` validates every value against the post's own text
-(fabricated numbers reject the whole chart), injects a `chart-wrap` bar chart into
-`index.html`, appends `## chart` to `reel-data.md` (picked up by the reel render),
-and syncs `hooks.json` `key_stat` so the hero stat is on-topic. When `chart.json`
-exists, `build-svg.mjs` renders a mini bar chart on `hero.svg` instead of the plain
-stat card. Runs inside `build-post.sh` after pexels, before reel. Enhancement stage:
-a post without chartable data ships without a chart — never blocks publish.
+**Automated numeric-visual stage (T8b):** `scripts/build-chart.sh <slug>` selects
+`bar`, `before_after`, `timeline`, or `stat_cards` and writes schema v2 `chart.json`.
+Every `data[]` item must include `value`, `metric`, `unit`, `period`, and a verbatim
+`evidence` sentence, plus one valid HTTPS `source_url` for the visual.
+`scripts/build-chart-inject.mjs` validates against `verified.md` and `research.json`
+only. Generated HTML is never evidence. The entire visual is rejected when a value,
+evidence sentence, source URL, or type-specific semantic rule fails.
+
+Visual selection rules are deterministic:
+
+1. Use a bar chart only for a like-for-like category comparison. Matching `%`
+   symbols alone do not make values comparable.
+2. Use before/after for two observations of one metric and unit at distinct periods.
+3. Use a timeline for one metric and unit at 3-6 unique chronological ISO dates.
+4. Use stat cards for useful facts with different metrics, units, periods, or
+   denominators. Card size must not encode magnitude.
+5. Use a table, process diagram, formula box, decision tree, or warning list when
+   relationships are categorical or procedural rather than quantitative.
+6. State the visual's takeaway in plain language and show the source beside it.
+
+Only percent bar charts currently sync to the reel `## chart` renderer. Other visual
+types remain valid article graphics and must use a non-chart reel segment until the
+video renderer supports their units and geometry. Runs inside `build-post.sh` after
+Pexels and before reel generation.
 
 ---
 
@@ -492,6 +533,17 @@ Every post needs a topic contract before drafting. This prevents the failure mod
 
 ---
 
+## 7c. Reel handoff and pending publication
+
+Every post that has `reel-data.md` or `reel-script.md` must show one of two states in its HTML:
+
+- a released reel player or authoritative social links from `social-video.json`
+- a visible `Pending publication` notice while the reel waits for media hosting or social publication
+
+The production runner applies the pending panel after the reel stage. Later, `social:blog-video-links` replaces it with the released player and platform links. Do not hand edit generated `index.html` files. If a reel is ready locally but the blog has no panel, run the pending slot step for that slug, then complete the media and social sync checkpoints.
+
+Before a reel is sent to Buffer, verify the exact public media URL with `npm run social:buffer:verify-media`. A local render passing release QA does not prove that Buffer can fetch the hosted copy. The hosted URL must return HTTPS, `video/mp4`, a byte count at or below 25 MiB, and a usable range response. A failed media check blocks Buffer retries until the public copy or media map is corrected.
+
 ## 8. Inline Images
 
 **Rule:** every post must have **min 1 custom graphic** AND **min 1 Pexels photo**. Max **5 total** visuals.
@@ -499,16 +551,13 @@ Every post needs a topic contract before drafting. This prevents the failure mod
 Custom graphics count: chart-wrap, stat-row, math-box, coin-grid, watch-list.
 Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
 
-**Chart-first rule (added 2026-07-08):** the preferred custom graphic is a data
-chart (`chart-wrap`), because the reel pipeline animates it. To make this possible,
-every draft MUST include **at least 3 comparable, same-unit, sourced statistics**
-(all %, all $, or all plain numbers) in the body — this is a writing requirement,
-not a nice-to-have. The T8b chart stage (§6) then produces the body chart, the
-hero mini-chart, and the `## chart` section in `reel-data.md` that the reel render
-animates (REEL-SOP: chart segment is REQUIRED when `## chart` exists). Only when a
-topic genuinely has no comparable numbers may the post fall back to another custom
-graphic (stat-row, math-box, coin-grid, watch-list) — and the reel then ships
-without a chart segment. A post with zero custom graphics is a QA failure.
+**Visual-first rule (evolved 2026-07-29):** choose the visual that explains the
+article's actual relationship. Never add unrelated numbers merely to satisfy a chart
+quota. A draft should include comparable sourced data when the topic naturally
+supports it. Otherwise use a sourced before/after, timeline, stat cards, table,
+formula box, process diagram, decision tree, coin grid, or warning list. A clean
+numeric-visual skip is acceptable only when another custom graphic is present. A post
+with zero custom graphics is a deterministic QA failure.
 
 **Workflow:**
 1. Decide how many Pexels photos (1–4, leaving room for at least 1 graphic within the 5-total cap)
@@ -864,11 +913,11 @@ git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md 
 git commit -m "feat(blog): [Post Title]"
 ```
 
-**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run deploys each approved local commit with `npx wrangler deploy` and curl-verifies the slug returns 200. Website deployment does not depend on GitHub authentication. Codex leaves Git synchronization pending for Claude review and push. QA-failed posts are terminal quality blocks; deferred or deployment-failed posts remain in the dated pending marker for retry.
+**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run deploys each approved local commit with `npx wrangler deploy` and curl-verifies the slug returns 200. Website deployment does not depend on GitHub authentication. Codex owns Git review and may push only with Nick's approval. QA-failed posts are terminal quality blocks; deferred or deployment-failed posts remain in the dated pending marker for retry.
 
-To revert to manual review, remove `BLOG_AUTO_DEPLOY` from the plist (or set to `0`) and reload: `launchctl bootout gui/$(id -u)/com.nick.daily-blog-reel && launchctl bootstrap gui/$(id -u) <plist>`. With it off, the run stops after local commit and writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log` for Claude review.
+To revert to manual review, remove `BLOG_AUTO_DEPLOY` from the plist (or set to `0`) and reload: `launchctl bootout gui/$(id -u)/com.nick.daily-blog-reel && launchctl bootstrap gui/$(id -u) <plist>`. With it off, the run stops after local commit and writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log` for Codex review.
 
-### Step 3 — Push and deploy (auto when BLOG_AUTO_DEPLOY=1; else Claude after approval)
+### Step 3 — Push and deploy (auto when BLOG_AUTO_DEPLOY=1; else Codex after approval)
 When auto-deploy is off, push does NOT auto-deploy. Run manually after review and approval:
 ```bash
 git push origin main
@@ -940,7 +989,7 @@ social post was scheduled.
 
 ## 14. social-copy.json
 
-**Required.** Claude writes this during the pipeline run. The Buffer planning and
+**Required.** The Codex-owned pipeline writes this during the run. The Buffer planning and
 posting workflow consumes it after reel release QA passes.
 
 File path: `public/blog/[slug]/social-copy.json`
@@ -1161,3 +1210,168 @@ bash -n public/blog/scripts/write-article.sh
 whose `_status.json` shows `write-warn`/`qa-fail` with a `verified.md.raw` containing a
 limit message were outages, not quality failures. Re-run the post once quota resets:
 `public/blog/scripts/build-post.sh <slug> --brand=tech --keyword="..."` then publish per §13.
+
+## 19. Gemma option-preamble leak (meta.json alt/description)
+
+`build-post.sh` asks the local model (gemma, via `$LOCAL_LLM`) for hero `ALT` text and
+`DESC` in degraded/no-claude mode (§18 covers the article body path; this is the
+metadata path). Gemma often answers with the instruction echoed back as a list —
+`"Here are six-word alt text options: 1) ... 2) ... 3) ..."` — instead of one line.
+
+`qa-local.mjs` blocks that pattern (`Here (are|is) ... six-word ... alt text|options`)
+wherever it lands in `index.html`, correctly — an option list must never ship as an
+`<img alt>`. The recurring bug (seen 2026-07-21, several posts a day quarantined) was
+that the `clean()` stripper in `build-post.sh` §meta.json only matched the preamble
+when the model *also* said the word "image" (`...alt text options for the hero
+image:`). Gemma frequently omits "image", so `clean()` left the list garbage in place,
+`meta.json`/`index.html` shipped it, and QA blocked the post hours later — after
+write/svg/pexels/chart/reel had already run, wasting the whole build.
+
+**The fix:** `clean()` now checks for the same broad pattern QA blocks
+(`here (are|is) ... six-word|6-word ... alt texts?|options?`, anywhere in the string,
+regardless of what follows) *before* attempting any surgical strip. If it matches at
+all, don't try to salvage a line out of the list — return the deterministic
+title-based fallback immediately. Never try to out-regex a generative model's phrasing
+variance; detect-and-fallback beats detect-and-repair for this class of leak.
+
+**If this recurs with new phrasing:** don't add another surgical strip rule. Loosen
+the shared detection pattern (keep it identical in `clean()` in `build-post.sh` and
+in `qa-local.mjs`) and confirm `clean()` still returns `fallback` — never a
+partially-cleaned string — whenever the pattern matches.
+
+**Gotcha hit while making this exact fix:** the `python3 -c '...'` block in §meta.json
+is wrapped in a bash *single-quoted* string. Bash single quotes have no escape
+character at all — a stray apostrophe anywhere inside (including in a Python
+`#` comment, e.g. writing "don't" in prose) silently closes the string early and
+breaks the rest of the line into bash syntax, which then fails with a bash
+`syntax error near unexpected token` that points at Python code and has nothing to
+do with Python. Before editing this block: `bash -n public/blog/scripts/build-post.sh`,
+and grep the block itself for stray `'` — only the opening and closing delimiter
+should have one. This shipped broken for one full pipeline run (2026-07-22, all 4
+posts for 07-21 deferred) before being caught.
+
+## 20. Retry job self-kill (root cause of multi-week silent backlog, 2026-07-22)
+
+For weeks, once a post missed its 9am run (QA fail, brain outage, whatever),
+`daily-blog-reel.sh` would `schedule_retry()` a one-shot LaunchAgent
+(`com.nick.daily-blog-reel.retry`) a few hours out — and that retry would then
+vanish with **zero log trace**, so pending dates silently piled up (`.workflow-blocked/`
+went back to June 17) and were only ever caught by whatever the *next* 9am cron
+happened to resume (one date per day, so the backlog only ever grew, never shrank).
+
+**Root cause:** `daily-blog-reel.sh` unconditionally ran
+`launchctl bootout gui/$UID/com.nick.daily-blog-reel.retry` as its first action
+(cleanup of stale retry registrations), and `schedule_retry()` did the same again
+before re-registering the next retry. `launchctl bootout` on a label sends SIGTERM to
+that label's **currently running instance**. When the retry job itself is what fired
+(`$XPC_SERVICE_NAME == com.nick.daily-blog-reel.retry`), that bootout call targets its
+own live process — killing it mid-startup, before it logs a single line, before it
+does any work, before it reschedules anything. Confirmed by direct repro: a launchd
+job whose script calls `launchctl bootout` on its own label never reaches the next
+line (`/tmp/selfboot.log` stopped after `"start"`, `2026-07-22`).
+
+The main 9am job (label `com.nick.daily-blog-reel`, no `.retry` suffix) never hit
+this — its bootout call targets a *different* label than itself, so cleaning up a
+stale retry from a prior day was always safe. Only the retry label's own scheduled
+firing was silently suicidal.
+
+**The fix** (`scripts/daily-blog-reel.sh`):
+- Capture `SELF_LABEL="${XPC_SERVICE_NAME:-}"` at the top. launchd sets this to the
+  job's own `Label` for every LaunchAgent invocation — confirmed empirically, don't
+  assume it and skip verifying it again after any macOS upgrade that touches launchd.
+- Top-of-script cleanup only runs `bootout`/`rm` on the retry plist when
+  `SELF_LABEL != RETRY_LABEL`.
+- Inside `schedule_retry()`, when `SELF_LABEL == retry_label` (the retry run
+  rescheduling itself for the *next* pending date), don't bootout+bootstrap
+  synchronously — that's the same self-kill. Instead spawn a detached watcher
+  (`while kill -0 $$; do sleep 1; done; launchctl bootout ...; launchctl bootstrap ...`)
+  that waits for **this process's own PID to actually exit**, then swaps the
+  registration. Race-free because it acts after the job is done, not during it.
+
+**Any future change to the retry/cron scheduling logic must preserve this
+invariant:** a launchd job must never call `bootout` (directly or via a helper) on
+its own `$XPC_SERVICE_NAME` while still running. Before shipping a scheduling change,
+repro it standalone the same way this was verified — a tiny LaunchAgent whose script
+logs a line, calls `launchctl bootout` on its own label, then logs a second line —
+and confirm the second line is reached.
+
+**Backlog recovery note:** `.workflow-blocked/<date>/<slug>-HHMMSS/` accumulated across
+this bug is not automatically retried — nothing re-queues a quarantined slug on its
+own. Recovering weeks of backlog is a manual per-post job: rerun
+`build-post.sh <slug> --brand=... --keyword="..."`, fix any leaked meta.json/index.html
+by hand if the post dir already exists (§19's `clean()` fix only applies to *newly
+generated* meta.json — a stale one on disk from before the fix must be hand-patched,
+it will not regenerate since `build-post.sh` skips deriving `meta.json` when the file
+already exists), then publish per §13.
+
+## 21. Codex ownership (Claude Code retired, 2026-07-26)
+
+Claude Code is no longer subscribed and is not a production dependency. The 9 AM
+runner forcibly sets `HERMES_TAKEOVER=1` and `CLAUDE_ENABLED=0`, overriding stale
+retry plists or inherited shell variables. Component scripts use the same values as
+their defaults. Historical Claude branches and §18 remain only for incident forensics;
+scheduled work must never probe or invoke `claude -p`.
+
+Codex owns the operational loop end to end:
+
+1. Inspect the oldest `YYYY-MM-DD-pending.json` before accepting today's work.
+2. Compare every pending slug with required artifacts, `posts.json`, the live canonical
+   URL, reel release QA, and Buffer live state.
+3. Resume at the first incomplete checkpoint. Do not rebuild or repost verified work.
+4. Use the local model only as a draft worker. When its output cannot pass deterministic
+   gates, Codex edits or rebuilds the blocked artifact and reruns validation.
+5. Keep a pending marker until every approved slug is live and verified. A status report,
+   local commit, generated MP4, or local Buffer log is not proof of completion.
+6. Push Git changes only with Nick's approval. Authorized website deployment and live
+   verification remain independent from Git synchronization.
+
+The daily Codex publishing-owner automation is the recovery backstop for launchd. It
+must preserve unrelated worktree changes, honor the global reel lock, and report exact
+external blockers rather than silently closing a date.
+
+## 22. Daily profit and evolving-SOP audit
+
+After downstream publishing reconciliation, run the control loop in
+`docs/PROFIT-IMPROVEMENT-SOP.md`. Record verified rewards and penalties with
+`npm run profit:record`, then run `npm run profit:audit`. Compare the result with
+the trailing baseline before proposing a rule change.
+
+Prefer an executable prevention control in this order: validator, authoritative
+readback, checkpoint, idempotency key, test, then prose. Repeated failure
+fingerprints receive escalating penalties. Do not reward article count, views,
+or posting volume unless the result is attributable to qualified leads,
+conversion, revenue, gross profit, or a validated leading indicator.
+
+Daily learned rules must be additive, evidence-backed, tested, reversible, and
+recorded in `ops/profit-system/learned-rules.json`. They cannot weaken any
+non-negotiable gate in this SOP.
+
+## 23. Numeric visual and source-link integrity incident (2026-07-29)
+
+Two published silver posts exposed one control failure. The prediction post used
+stale pricing, an unsupported target, and model prompt text inside an `href`. The
+decline post passed because each numeric token existed somewhere in the article,
+even though its bars represented unrelated metrics and periods.
+
+**Stable fingerprint:** `financial-numeric-visual-integrity`. The two observed
+manifestations were `silver-prediction-stale-invalid-source-link` and
+`numeric-visual-mixed-semantic-units`.
+
+**Root cause:** token presence and a shared display symbol were treated as proof of
+provenance and comparability. Generated `index.html` was also accepted as evidence,
+allowing an earlier generated claim to validate itself.
+
+**Permanent controls:** schema v2 numeric visuals require metric, unit, period,
+verbatim evidence, named source, and HTTPS source URL. Bar visuals additionally
+require one shared metric, unit, and period. Generated HTML is excluded from source
+validation. `qa-local.mjs` blocks legacy visual schemas, malformed source markup,
+invalid visual semantics, and posts with no custom graphic.
+
+**Verification:** replay the mixed 6.2%, 4.8%, 2.1%, 70%, and 38% chart fixture in
+`build-chart-inject.test.mjs`; it must fail for mixed metrics and periods even though
+all tokens are present. Replay a before/after silver-price fixture; it must pass only
+when both observations share a metric and unit and each evidence sentence is present.
+
+**Review and rollback:** review on 2026-08-29. Retire or narrow a control only if more
+than 5% of manually reviewed, genuinely valid visuals are false positives. Never
+roll back the accuracy, provenance, valid-link, or no-self-validation requirements.

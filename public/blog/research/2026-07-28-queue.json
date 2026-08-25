@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-28",
+  "posts": [
+    {
+      "slug": "silver-price-prediction-2026-what-analysts-expect",
+      "keyword": "silver price prediction 2026 what analysts expect",
+      "brand": "silver",
+      "draft": "public/blog/silver-price-prediction-2026-what-analysts-expect/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "why-silver-price-dropped-this-month-explained",
+      "keyword": "why silver price dropped this month explained",
+      "brand": "silver",
+      "draft": "public/blog/why-silver-price-dropped-this-month-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "ai-for-customer-service-small-business-how-to-set-it-up",
+      "keyword": "AI for customer service small business how to set it up",
+      "brand": "tech",
+      "draft": "public/blog/ai-for-customer-service-small-business-how-to-set-it-up/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-use-ai-to-create-social-media-content-faster",
+      "keyword": "how to use AI to create social media content faster",
+      "brand": "tech",
+      "draft": "public/blog/how-to-use-ai-to-create-social-media-content-faster/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-20",
+  "posts": [
+    {
+      "slug": "silver-rounds-complete-buyer-guide",
+      "keyword": "silver rounds complete buyer guide",
+      "brand": "silver",
+      "draft": "public/blog/silver-rounds-complete-buyer-guide/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-much-silver-should-you-own-in-your-portfolio",
+      "keyword": "how much silver should you own in your portfolio",
+      "brand": "silver",
+      "draft": "public/blog/how-much-silver-should-you-own-in-your-portfolio/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "does-responding-to-reviews-improve-local-seo",
+      "keyword": "does responding to reviews improve local SEO",
+      "brand": "tech",
+      "draft": "public/blog/does-responding-to-reviews-improve-local-seo/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-many-google-reviews-do-you-need-to-rank",
+      "keyword": "how many google reviews do you need to rank",
+      "brand": "tech",
+      "draft": "public/blog/how-many-google-reviews-do-you-need-to-rank/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

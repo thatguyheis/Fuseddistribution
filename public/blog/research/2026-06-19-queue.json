@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-19",
+  "posts": [
+    {
+      "slug": "austrian-silver-philharmonic-guide",
+      "keyword": "austrian silver philharmonic guide",
+      "brand": "silver",
+      "draft": "public/blog/austrian-silver-philharmonic-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "britannias-vs-eagles-which-silver-coin-is-best",
+      "keyword": "britannias vs eagles which silver coin is best",
+      "brand": "silver",
+      "draft": "public/blog/britannias-vs-eagles-which-silver-coin-is-best/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-respond-to-negative-google-reviews",
+      "keyword": "how to respond to negative google reviews",
+      "brand": "tech",
+      "draft": "public/blog/how-to-respond-to-negative-google-reviews/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "google-review-strategy-that-actually-works",
+      "keyword": "google review strategy that actually works",
+      "brand": "tech",
+      "draft": "public/blog/google-review-strategy-that-actually-works/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

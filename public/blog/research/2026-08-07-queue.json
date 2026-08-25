@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-07",
+  "posts": [
+    {
+      "slug": "rolling-over-401k-into-silver-ira-what-to-know",
+      "keyword": "rolling over 401k into silver IRA what to know",
+      "brand": "silver",
+      "draft": "public/blog/rolling-over-401k-into-silver-ira-what-to-know/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+      "keyword": "what is COMEX silver and how does it affect spot price",
+      "brand": "silver",
+      "draft": "public/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "website-speed-and-local-business-ranking",
+      "keyword": "website speed and local business ranking",
+      "brand": "tech",
+      "draft": "public/blog/website-speed-and-local-business-ranking/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "social-media-posting-schedule-for-small-business",
+      "keyword": "social media posting schedule for small business",
+      "brand": "tech",
+      "draft": "public/blog/social-media-posting-schedule-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,97 +1,96 @@
 # Reel Script: american-silver-eagle-complete-buying-guide
 format: long-form
 segments: 10
+target-duration: 184s
 
 ---
 
 ## HOOK
 
-**Visual:** Silver Eagle coin close-up, walking liberty side
-**Duration:** 19s minimum (42 words / 2.5 + 2)
+**Visual:** Topic intro shot
+**Duration:** 8s minimum
 
-Narration: The American Silver Eagle is the official silver bullion coin of the United States. The national Mint has produced it every year since 1986. Most people buying silver for the first time do not know which type to buy or what they will actually pay. This guide breaks it down.
-
----
-
-## STAT: 1 OZ .999 FINE SILVER
-
-**Visual:** Coin weight scale, troy ounce graphic
-**Duration:** 23s minimum (53 words / 2.5 + 2)
-
-Narration: Each American Silver Eagle contains exactly 1 troy ounce of .999 fine silver. The coin weighs slightly more because a small copper alloy core adds durability. The troy ounce is 31.1 grams, not the everyday 28.35 grams. That difference matters when you calculate value per gram. You are buying pure silver content, not the coin's total weight.
+Narration: The American Silver Eagle is the official silver bullion coin of the United States, produced by the USA Mint every year since 1986.
 
 ---
 
-## STAT: SINCE 1986
+## STAT: 999 SILVER FINE CARRIES FACE
 
-**Visual:** Timeline graphic, coin production footage
-**Duration:** 19s minimum (43 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
 
-Narration: The national Mint has struck Silver Eagles continuously since 1986. That is 40 years of unbroken production. In 2015, the Mint sold a record 47 million coins in a single year. Silver Eagles remain the best-selling silver bullion coins in the world by annual volume.
-
----
-
-## STAT: 3 TYPES TO KNOW
-
-**Visual:** Three coin comparison graphic
-**Duration:** 22s minimum (53 words / 2.5 + 2)
-
-Narration: The national Mint produces Silver Eagles in three formats: bullion, proof, and burnished. Bullion Eagles are for investors, distributed through authorized dealers. Proof Eagles are collector coins with mirror-finish surfaces, sold directly by the Mint. Burnished Eagles are limited-mintage collectibles, hand-loaded into the die. For pure silver value, bullion is what most buyers choose.
+Narration: The American Silver Eagle is the official silver bullion coin of the United States, produced by the USA Mint every year since 1986. Each coin contains exactly 1 troy ounce of .999 fine silver. It carries a $1 face value backed by the federal government, making it legal tender. No other silver coin sells in higher volume worldwide.
 
 ---
 
-## STAT: $4-8 OVER SPOT
+## STAT: 999 FINE SILVER TOTAL COIN
 
-**Visual:** Price comparison graphic, spot price vs. total cost
-**Duration:** 23s minimum (53 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
 
-Narration: Bullion Silver Eagles typically cost 4 to 8 dollars more than the spot price per coin. At 32 dollars spot, that is roughly 12 to 25 percent over spot. A generic silver round runs about 7 percent over spot. The Eagle premium reflects the national Mint guarantee and worldwide recognition by dealers.
-
----
-
-## CHART: PREMIUM COMPARISON
-
-**Visual:** Horizontal bar chart - premium per ounce by product type
-**Duration:** 19s minimum (43 words / 2.5 + 2)
-
-Narration: The chart shows average premiums per ounce by product type. Silver Eagles carry the highest premium of any standard bullion product. Bars carry the lowest cost per ounce. Coins offer the most liquidity when you sell. Knowing this math before you buy prevents overpaying at the counter.
+Narration: Weinman's Walking Liberty design, originally used on the 1916 to 1947 half dollar. The reverse was updated in 2021, moving from John Mercanti's heraldic eagle, Type 1 from 1986 to 2020, to Emily Damstra's perched eagle design, Type 2 from 2021 to the present. Each coin contains exactly 1 troy ounce of .999 fine silver. Total coin weight is slightly higher because a small copper alloy core adds durability.
 
 ---
 
-## STAT: $30+ PROOF PREMIUM
+## OVERLAY: THEY'RE DISTRIBUTED THROUGH NETWORK
 
-**Visual:** Proof coin in packaging, Mint website
-**Duration:** 22s minimum (51 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
 
-Narration: Proof Silver Eagles carry dramatically higher premiums, often 30 to 50 dollars or more above spot. The national Mint sells these directly with original packaging and a certificate of authenticity. If you are buying for silver content only, proof premiums do not recover at resale. Proof coins are for collectors, not for stackers building silver value.
-
----
-
-## STAT: WHERE TO BUY
-
-**Visual:** Online dealer website, coin shop
-**Duration:** 20s minimum (46 words / 2.5 + 2)
-
-Narration: The national Mint sells proof and burnished Eagles directly. Bullion Eagles must be purchased through authorized dealers. Reputable online dealers include APMEX, JM Bullion, and SD Bullion. Always confirm the dealer has a published buy-back policy before you send money. Local coin shops charge slightly more but give immediate possession.
+Narration: They're distributed through a network of Authorized Purchasers, not sold directly by the Mint to the public. The finish is a standard business strike. Premiums over spot are the lowest of the three types. If your goal is holding silver value, this is the format to buy. Proof Eagles are struck with polished dies on polished planchets, producing a mirror like surface with frosted design elements.
 
 ---
 
-## STAT: STORAGE MATTERS
+## STAT: $4 TO $8 SPOT PRICE SILVER COIN
 
-**Visual:** Safe, coin capsules, monster box
-**Duration:** 23s minimum (53 words / 2.5 + 2)
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
 
-Narration: Silver Eagles scratch more easily than bars because of the high-relief design. Keep each coin in a capsule or the original 20-coin tube from the Mint. Check your homeowner's insurance. Standard policies cap precious metals theft coverage at 1,500 dollars. A scheduled floater adds full replacement value for about 2 dollars per 100 dollars of silver per year.
+Narration: For most people reading this guide, buy bullion. Proof and burnished Eagles carry numismatic premiums that don't recover at resale if silver prices stay flat. You'd need silver prices to rise enough to cover both the premium and the numismatic markup before you break even. Every silver purchase costs more than the spot price. For bullion Silver Eagles, premiums typically run $4 to $8 per coin over the silver spot price.
+
+---
+
+## STAT: $8 TO $15 SILVER DEMAND SPOT DURING
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: If silver prices stay flat and you sell a proof coin to a bullion dealer, you will likely recover only the melt value plus a small numismatic adjustment. Buy proof only if you're collecting, not stacking. One useful timing note: premiums spike when demand surges. In 2020 and 2021, bullion Eagle premiums hit $8 to $15 over spot during peak buying pressure.
+
+---
+
+## OVERLAY: REPUTABLE ONLINE DEALERS INCLUDE
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Reputable online dealers include APMEX, JM Bullion, and SD Bullion. They source from Authorized Purchasers and publish live buy back prices. Local coin shops often carry bullion Eagles and tend to charge slightly higher premiums than online dealers, but you get immediate physical possession and no shipping risk. Things to avoid: Sellers asking well above the typical premium without explaining why.
+
+---
+
+## STAT: $20 MONTH INCLUDES SEGREGATED STORAGE
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Professional third party vault storage typically costs around $20 per month and includes segregated storage with insurance. Check your homeowner's insurance before you assume you're covered. Standard HO-3 policies cap precious metals and coin theft coverage at $1,500 total. A scheduled floater provides full replacement value for roughly $2 per $100 of insured value per year. If your stack is worth more than $1,500, the floater is worth the paperwork.
+
+---
+
+## OVERLAY: BUY BULLION SILVER EAGLES
+
+**Visual:** Supporting article visual
+**Duration:** 25s minimum
+
+Narration: Can I buy bullion Silver Eagles directly from the USA Mint? Retail buyers can buy proof and burnished versions directly, but bullion Eagles move through the authorized dealer network. Are proof Silver Eagles worth it for investors? If you're stacking for metal value, bullion gives you a lower premium and a cleaner resale path. What's the next step after I buy? Build a storage and insurance plan before your stack gets large enough to create avoidable risk.
 
 ---
 
 ## QUESTION
 
-**Visual:** Split screen - Silver Eagle vs silver bar
-**Duration:** 14s minimum (30 words / 2.5 + 2)
+**Visual:** Question card
+**Duration:** 4s minimum
 
-Narration: Follow for more silver news.
-
-Text on screen: If you were buying your first 10 ounces of silver today, would you choose Silver Eagles or a silver bar?
-
-Subtext: Drop your answer below
+Text: What is your take?
+Subtext: COMMENT BELOW
+Narration: What is your take? Follow for more silver news.

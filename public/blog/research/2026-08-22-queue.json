@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-22",
+  "posts": [
+    {
+      "slug": "peace-silver-dollar-value-and-history",
+      "keyword": "Peace silver dollar value and history",
+      "brand": "silver",
+      "draft": "public/blog/peace-silver-dollar-value-and-history/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "perth-mint-silver-kangaroo-buying-guide",
+      "keyword": "Perth Mint silver Kangaroo buying guide",
+      "brand": "silver",
+      "draft": "public/blog/perth-mint-silver-kangaroo-buying-guide/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "yelp-vs-google-reviews-which-matters-more",
+      "keyword": "yelp vs google reviews which matters more",
+      "brand": "tech",
+      "draft": "public/blog/yelp-vs-google-reviews-which-matters-more/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-turn-bad-reviews-into-better-outcomes",
+      "keyword": "how to turn bad reviews into better outcomes",
+      "brand": "tech",
+      "draft": "public/blog/how-to-turn-bad-reviews-into-better-outcomes/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

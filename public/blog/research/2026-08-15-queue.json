@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-15",
+  "posts": [
+    {
+      "slug": "how-to-build-a-silver-inventory-spreadsheet",
+      "keyword": "how to build a silver inventory spreadsheet",
+      "brand": "silver",
+      "draft": "public/blog/how-to-build-a-silver-inventory-spreadsheet/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "coinstats-vs-delta-for-precious-metals-tracking",
+      "keyword": "CoinStats vs Delta for precious metals tracking",
+      "brand": "silver",
+      "draft": "public/blog/coinstats-vs-delta-for-precious-metals-tracking/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "near-me-searches-how-to-rank-for-them",
+      "keyword": "near me searches how to rank for them",
+      "brand": "tech",
+      "draft": "public/blog/near-me-searches-how-to-rank-for-them/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "local-keyword-research-for-small-businesses",
+      "keyword": "local keyword research for small businesses",
+      "brand": "tech",
+      "draft": "public/blog/local-keyword-research-for-small-businesses/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

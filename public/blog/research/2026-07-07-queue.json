@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-07",
+  "posts": [
+    {
+      "slug": "silver-coin-holders-and-cases-guide",
+      "keyword": "silver coin holders and cases guide",
+      "brand": "silver",
+      "draft": "public/blog/silver-coin-holders-and-cases-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "insuring-physical-silver-at-home",
+      "keyword": "insuring physical silver at home",
+      "brand": "silver",
+      "draft": "public/blog/insuring-physical-silver-at-home/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-get-repeat-customers-for-your-small-business",
+      "keyword": "how to get repeat customers for your small business",
+      "brand": "tech",
+      "draft": "public/blog/how-to-get-repeat-customers-for-your-small-business/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "customer-loyalty-program-ideas-for-small-business",
+      "keyword": "customer loyalty program ideas for small business",
+      "brand": "tech",
+      "draft": "public/blog/customer-loyalty-program-ideas-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

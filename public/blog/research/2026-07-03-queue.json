@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-03",
+  "posts": [
+    {
+      "slug": "how-to-store-silver-at-home-safely",
+      "keyword": "how to store silver at home safely",
+      "brand": "silver",
+      "draft": "public/blog/how-to-store-silver-at-home-safely/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "best-silver-storage-options-for-investors",
+      "keyword": "best silver storage options for investors",
+      "brand": "silver",
+      "draft": "public/blog/best-silver-storage-options-for-investors/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "email-marketing-for-small-business-getting-started",
+      "keyword": "email marketing for small business getting started",
+      "brand": "tech",
+      "draft": "public/blog/email-marketing-for-small-business-getting-started/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-to-build-an-email-list-for-your-local-business",
+      "keyword": "how to build an email list for your local business",
+      "brand": "tech",
+      "draft": "public/blog/how-to-build-an-email-list-for-your-local-business/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

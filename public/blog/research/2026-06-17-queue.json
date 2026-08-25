@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-17",
+  "posts": [
+    {
+      "slug": "morgan-silver-dollars-as-investment",
+      "keyword": "morgan silver dollars as investment",
+      "brand": "silver",
+      "draft": "public/blog/morgan-silver-dollars-as-investment/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "proof-silver-coins-worth-buying-or-not",
+      "keyword": "proof silver coins worth buying or not",
+      "brand": "silver",
+      "draft": "public/blog/proof-silver-coins-worth-buying-or-not/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "local-seo-audit-how-to-do-one-yourself",
+      "keyword": "local SEO audit how to do one yourself",
+      "brand": "tech",
+      "draft": "public/blog/local-seo-audit-how-to-do-one-yourself/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "service-area-business-seo-guide",
+      "keyword": "service area business SEO guide",
+      "brand": "tech",
+      "draft": "public/blog/service-area-business-seo-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

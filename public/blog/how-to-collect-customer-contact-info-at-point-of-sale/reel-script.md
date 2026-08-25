@@ -91,6 +91,6 @@ Narration: Design it so there is one clear spot for a note or an email. Don't ju
 **Visual:** Question card
 **Duration:** 9s minimum
 
-Text: How can you easily incorporate this strategy into your business?
+Text: How do customers prefer to share contact information?
 Subtext: COMMENT BELOW
-Narration: How can you easily incorporate this strategy into your business? Follow for more practical business tips.
+Narration: How do customers prefer to share contact information? Follow for more practical business tips.

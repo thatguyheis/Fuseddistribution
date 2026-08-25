@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-21",
+  "posts": [
+    {
+      "slug": "silver-premium-over-spot-explained",
+      "keyword": "silver premium over spot explained",
+      "brand": "silver",
+      "draft": "public/blog/silver-premium-over-spot-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-start-buying-silver-with-100-dollars",
+      "keyword": "how to start buying silver with 100 dollars",
+      "brand": "silver",
+      "draft": "public/blog/how-to-start-buying-silver-with-100-dollars/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "google-ads-for-small-business-is-it-worth-it",
+      "keyword": "google ads for small business is it worth it",
+      "brand": "tech",
+      "draft": "public/blog/google-ads-for-small-business-is-it-worth-it/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "facebook-ads-budget-for-local-business-how-much-to-spen",
+      "keyword": "facebook ads budget for local business how much to spend",
+      "brand": "tech",
+      "draft": "public/blog/facebook-ads-budget-for-local-business-how-much-to-spen/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-09",
+  "posts": [
+    {
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "keyword": "selling silver to a dealer vs private sale",
+      "brand": "silver",
+      "draft": "public/blog/selling-silver-to-a-dealer-vs-private-sale/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-get-the-most-money-when-selling-silver",
+      "keyword": "how to get the most money when selling silver",
+      "brand": "silver",
+      "draft": "public/blog/how-to-get-the-most-money-when-selling-silver/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "sms-marketing-vs-email-marketing-small-business",
+      "keyword": "SMS marketing vs email marketing small business",
+      "brand": "tech",
+      "draft": "public/blog/sms-marketing-vs-email-marketing-small-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-collect-customer-contact-info-at-point-of-sale",
+      "keyword": "how to collect customer contact info at point of sale",
+      "brand": "tech",
+      "draft": "public/blog/how-to-collect-customer-contact-info-at-point-of-sale/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

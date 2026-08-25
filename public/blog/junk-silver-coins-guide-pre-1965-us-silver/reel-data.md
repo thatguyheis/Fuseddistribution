@@ -5,39 +5,39 @@ format: long-form
 hook: Silver hits record highs; junk coins offer massive investment returns.
 hook_type: contrarian_stat
 
-## stats
-- text: 2026 WITH SILVER NEAR RECORD HIGHS
-  explanation: With silver near record highs in 2026, holding pre-1965 US silver coins (often called "junk silver") is more attractive than ever.
-  graphic_type: none
-  narration: With silver near record highs in 2026, holding pre-1965 US silver coins (often called "junk silver") is more attractive than ever.
-- text: 1965 JUNK SILVER REFERS TO COINS
-  explanation: Junk silver refers to coins minted in the US before 1965.
-  graphic_type: none
-  narration: Junk silver refers to coins minted in the US before 1965.
-- text: 90% THESE COINS MADE WITH SILVER
-  explanation: These coins, made with 90% silver and 10% copper, were a common medium of exchange.
-  graphic_type: percent_fill
-  graphic:
-    value: 90
-    label: These Coins Made With Si
-    remainder_label: Other
-  narration: These coins, made with 90% silver and 10% copper, were a common medium of exchange.
-- text: 1965 AFTER THE US GOVERNMENT STOPPED
-  explanation: After 1965, the US government stopped minting silver coins for general circulation.
-  graphic_type: none
-  narration: After 1965, the US government stopped minting silver coins for general circulation.
-- text: 1965 TODAY IT'S A BROADER TERM
-  explanation: Today, it's a broader term for pre-1965 US silver coins, including those that were heavily worn or damaged.
-  graphic_type: none
-  narration: Today, it's a broader term for pre-1965 US silver coins, including those that were heavily worn or damaged.
-- text: 121 SEVERAL FACTORS ARE DRIVING DEMAND
-  explanation: Several factors are driving demand for junk silver: Silver Prices: Silver hit a nominal all-time high of $121.67/oz in January 2026, making junk silver coins worth multiples of face value ([Finance Magnates](https://www.financemagnates.com/trending/why-silver-is-surging-with-gold-and-why-citi-predicts-150-price-in-2026/)).
-  graphic_type: none
-  narration: Several factors are driving demand for junk silver: Silver Prices: Silver hit a nominal all-time high of $121.67/oz in January 2026, making junk silver coins worth multiples of face value ([Finance Magnates](https://www.financemagnates.com/trending/why-silver-is-surging-with-gold-and-why-citi-predicts-150-price-in-2026/)).
+## segments
+- type: stat
+  text: 90% SILVER STACK COPPER WERE
+  narration: With silver near record highs in 2026, holding pre-1965 USA silver coins (often called "junk silver") is more attractive than ever. They're a tangible investment, a small piece of history with room to grow. So you want to learn how to buy, value, and stack them? Junk silver refers to coins minted in the USA before 1965. These coins, made with 90 percent silver and 10 percent copper, were a common medium of exchange.
+- type: overlay
+  text: AFTER GOVERNMENT STOPPED MINTING
+  narration: After 1965, the USA government stopped minting silver coins for general circulation. The term originally referred to coins damaged during transit and not deemed worthy of being minted as a finished product. Today, it's a broader term for pre-1965 USA silver coins, including those that were heavily worn or damaged.
+- type: stat
+  text: $121.67 SILVER JANUARY MAKING JUNK
+  narration: Several factors are driving demand for junk silver: Silver Prices: Silver hit a nominal all-time high of $121.67/oz in January 2026, making junk silver coins worth multiples of face value (Finance Magnates). That's a significant return on your investment. Increased Demand: 57 percent of retail investors surveyed expect silver to trade above $100/oz in 2026, driving demand for physical silver including junk bags (Kitco News).
+- type: overlay
+  text: TANGIBLE ASSET JUNK SILVER
+  narration: Tangible Asset: Junk silver is a tangible asset, offering a hedge against inflation and economic uncertainty. Historical Significance: Owning pre-1965 silver coins gives you a connection to American history. Here's a breakdown of where to find junk silver: Reputable Dealers: Online dealers like APMEX, JM Bullion, and SD Bullion are excellent starting points. They offer a wide selection and competitive pricing.
+- type: stat
+  text: 100 TO 200 SILVER OUNCES
+  narration: Coin Shops: Local coin shops can be a great resource, but check their reputation and pricing. eBay: eBay can be a source, but exercise caution. Verify the seller's reputation and authenticity before you buy. Bulk Bags: Buying in bulk (often called "junk silver bags") offers the best value. These bags typically contain a mix of coins, often weighing around 100-200 ounces.
+- type: overlay
+  text: GRADED COINS MINT STATE
+  narration: Graded coins (e.g., Mint State, About Uncirculated) command higher premiums. Mint Mark: Mint marks indicate where the coin was minted. Certain mint marks (e.g., Carson City) are highly sought after and command higher premiums. Year: The year of minting also influences value. Premium: This is the difference between the spot price of silver and the price you pay for the coin.
+- type: overlay
+  text: RESOURCES VALUATION COIN GRADING
+  narration: Resources for Valuation: Coin Grading Services: PCGS and NGC are reputable grading services that can authenticate and grade your coins. Online Coin Price Guides: Websites like CoinTrackers and Numista provide pricing information for various coin types. Consider these strategies for building a junk silver collection: Diversify: Don't put all your eggs in one basket. Spread your investment across different coin types and mints.
+- type: overlay
+  text: BULK BAGS MENTIONED OFFER
+  narration: Bulk Bags: As mentioned, bulk bags offer the best value. Long-Term Holding: Junk silver is generally a long-term investment. Holding it for the long term can help reduce the risks tied to short-term price swings. Storage: Properly store your junk silver in a safe and secure location, away from moisture and extreme temperatures. Always buy from reputable dealers and verify authenticity.
+- type: overlay
+  text: TAXES CONSULT TAX ADVISOR
+  narration: Taxes: Consult with a tax advisor about the tax implications of buying and selling silver. Research: Thoroughly research any coin before you buy. Disclaimer: This guide is for general information only and is not financial advice. Consult a qualified financial advisor before making any investment decisions.
 
 ## question
 text: Ready to start your junk silver journey today?
-narration: Follow for more silver tips.
+subtext: COMMENT BELOW
+narration: Ready to start your junk silver journey today? Follow for more silver news.
 
 ## shared
 discussion_question: Ready to start your junk silver journey today?
@@ -45,23 +45,35 @@ hashtags: #SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHed
 
 ## media_queries
 - segment: 0
-  query: "junk silver coins guide pre-1965 US silver"
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment"
   prefer: video
 - segment: 1
-  query: "junk silver coins guide pre-1965 US silver with"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment 90 silver stack"
+  prefer: photo
 - segment: 2
-  query: "junk silver coins guide pre-1965 US silver junk"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment after government stopped"
+  prefer: photo
 - segment: 3
-  query: "junk silver coins guide pre-1965 US silver these"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment 121 67 silver"
+  prefer: photo
 - segment: 4
-  query: "junk silver coins guide pre-1965 US silver after"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment tangible asset junk"
+  prefer: photo
 - segment: 5
-  query: "junk silver coins guide pre-1965 US silver today"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment 100 to 200"
+  prefer: photo
 - segment: 6
-  query: "junk silver coins guide pre-1965 US silver several"
-  prefer: video
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment graded coins mint"
+  prefer: photo
+- segment: 7
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment resources valuation coin"
+  prefer: photo
+- segment: 8
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment bulk bags mentioned"
+  prefer: photo
+- segment: 9
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment taxes consult tax"
+  prefer: photo
+- segment: 10
+  query: "Junk Silver Coins: Your Pre-1965 US Silver Investment customer feedback"
+  prefer: photo

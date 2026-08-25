@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-26",
+  "posts": [
+    {
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "keyword": "silver recycling and scrap recovery market",
+      "brand": "silver",
+      "draft": "public/blog/silver-recycling-and-scrap-recovery-market/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "keyword": "silver reserve plan what it is and how it works",
+      "brand": "silver",
+      "draft": "public/blog/silver-reserve-plan-what-it-is-and-how-it-works/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "keyword": "how to start using AI in your small business",
+      "brand": "tech",
+      "draft": "public/blog/how-to-start-using-ai-in-your-small-business/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "keyword": "ChatGPT for small business owners beginners guide",
+      "brand": "tech",
+      "draft": "public/blog/chatgpt-for-small-business-owners-beginners-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

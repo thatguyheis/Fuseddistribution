@@ -1,10 +1,10 @@
 {
-  "hook": "Silver could potentially surge past $35 by 2026.",
+  "hook": "Named LBMA analysts disagree widely on silver's 2026 average.",
   "hook_type": "immediate_value",
   "key_stat": {
-    "value": "35",
-    "label": "Potential Price Increase"
+    "value": "$63.20",
+    "label": "Low end of selected annual averages"
   },
-  "discussion_question": "Considering all these predictions, what’s your personal outlook for silver’s price in 2026?",
+  "discussion_question": "Which silver forecast assumption matters most to you?",
   "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
 }

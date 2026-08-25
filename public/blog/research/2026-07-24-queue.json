@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-24",
+  "posts": [
+    {
+      "slug": "silver-supply-shortage-what-it-means-for-prices",
+      "keyword": "silver supply shortage what it means for prices",
+      "brand": "silver",
+      "draft": "public/blog/silver-supply-shortage-what-it-means-for-prices/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-mining-stocks-vs-physical-silver",
+      "keyword": "silver mining stocks vs physical silver",
+      "brand": "silver",
+      "draft": "public/blog/silver-mining-stocks-vs-physical-silver/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "yelp-for-business-is-it-worth-it-in-2026",
+      "keyword": "yelp for business is it worth it in 2026",
+      "brand": "tech",
+      "draft": "public/blog/yelp-for-business-is-it-worth-it-in-2026/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "apple-maps-business-listing-how-to-claim-it",
+      "keyword": "apple maps business listing how to claim it",
+      "brand": "tech",
+      "draft": "public/blog/apple-maps-business-listing-how-to-claim-it/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

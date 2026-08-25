@@ -1,0 +1,28 @@
+{
+  "slug": "zzz-skill-test",
+  "topic": "silver",
+  "blog_url": "https://fuseddistribution.com/blog/zzz-skill-test/",
+  "reel": {
+    "facebook": "Store silver right.",
+    "instagram": "x",
+    "linkedin": "x",
+    "x": "x"
+  },
+  "photo": {
+    "facebook": "x",
+    "instagram": "x",
+    "linkedin": "x"
+  },
+  "hashtags": "#Silver",
+  "discussion_question": "How do you store yours?",
+  "organic_ads": [
+    {
+      "type": "stat-card",
+      "file": "/blog/zzz-skill-test/ad-stat-card.jpg"
+    },
+    {
+      "type": "google-search",
+      "file": "/blog/zzz-skill-test/ad-google-search.jpg"
+    }
+  ]
+}

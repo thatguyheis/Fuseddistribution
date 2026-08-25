@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-11",
+  "posts": [
+    {
+      "slug": "jm-bullion-vs-sd-bullion-which-dealer-is-better",
+      "keyword": "JM Bullion vs SD Bullion which dealer is better",
+      "brand": "silver",
+      "draft": "public/blog/jm-bullion-vs-sd-bullion-which-dealer-is-better/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "gainesville-coins-review-2026",
+      "keyword": "Gainesville Coins review 2026",
+      "brand": "silver",
+      "draft": "public/blog/gainesville-coins-review-2026/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "google-business-profile-posts-what-to-write",
+      "keyword": "google business profile posts what to write",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-posts-what-to-write/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "google-business-profile-q-and-a-how-to-use-it",
+      "keyword": "google business profile Q and A how to use it",
+      "brand": "tech",
+      "draft": "public/blog/google-business-profile-q-and-a-how-to-use-it/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

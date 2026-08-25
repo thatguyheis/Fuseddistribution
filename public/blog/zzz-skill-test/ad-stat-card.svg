@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="#041018"/>
+  <rect width="1200" height="1200" fill="url(#glow)"/>
+  <text x="600" y="380" text-anchor="middle" font-family="'Trebuchet MS',sans-serif"
+    font-size="34" letter-spacing="3" fill="rgba(175,198,207,0.70)">STORING SILVER AT HOME</text>
+  <text x="600" y="640" text-anchor="middle" font-family="'Trebuchet MS',sans-serif"
+    font-size="280" font-weight="700" fill="#58d6ff">70%</text>
+  <text x="600" y="740" text-anchor="middle" font-family="'Trebuchet MS',sans-serif"
+    font-size="44" fill="#e8f4f8">of collectors keep their silver at home</text>
+  <text x="600" y="810" text-anchor="middle" font-family="'Trebuchet MS',sans-serif"
+    font-size="34" fill="#4dffb8">Keep it dry. Keep it locked.</text>
+  <text x="1150" y="1160" text-anchor="end" font-family="'Trebuchet MS',sans-serif"
+    font-size="22" fill="rgba(88,214,255,0.50)">fuseddistribution.com</text>
+</svg>

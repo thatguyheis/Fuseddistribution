@@ -1,10 +1,10 @@
 {
-  "hook": "Silver\u2019s industrial demand accounts for 53% of its total use, signaling potential stability.",
-  "hook_type": "contrarian_stat",
+  "hook": "Is silver a good buy right now? Start with these five questions.",
+  "hook_type": "question",
   "key_stat": {
-    "value": "53%",
-    "label": "of total silver demand"
+    "value": "",
+    "label": ""
   },
-  "discussion_question": "Considering all this, when do *you* think is the best time to add silver to your portfolio?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "What would you check before buying silver this year?",
+  "hashtags": "#Silver #PreciousMetals #Investing #PersonalFinance #SilverInvesting"
 }

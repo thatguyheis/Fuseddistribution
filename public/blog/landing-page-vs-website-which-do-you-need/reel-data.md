@@ -7,29 +7,29 @@ hook_type: contrarian_stat
 
 ## segments
 - type: overlay
-  text: PICK A LANDING PAGE WHEN
-  narration: Pick a landing page when you have one specific action you want a visitor to take and a way to drive traffic to it. Pick a website when people need to find you, judge you, and learn about everything you offer before they decide.
+  text: PICK LANDING PAGE ONE
+  narration: Pick a landing page when you have one specific action you want a visitor to take and a way to drive traffic to it. Pick a website when people need to find you, judge you, and learn about everything you offer before they decide. Most local businesses end up needing both, but you rarely build them at the same time, and the order matters for your budget and your timeline.
 - type: stat
-  text: 2.35% BUT THE TOP OF PAGES
-  narration: The traffic is already warm or targeted, so you do not need to explain who you are. The average landing page converts at about 2.35 percent, but the top 25 percent of pages convert at 5.31 percent or higher, according to WordStream's analysis of thousands of accounts.
+  text: 2.35% TOP PAGES CONVERT HIGHER
+  narration: The average landing page converts at about 2.35 percent, but the top 25 percent of pages convert at 5.31 percent or higher, according to WordStream's analysis of thousands of accounts. That gap comes from removing distractions and matching the page to the exact promise in the ad. A roofing company running a "free inspection" ad should send clicks to a page that talks about free inspections and nothing else.
+- type: overlay
+  text: WEBSITE GIVES ROOM LOOK
+  narration: A website gives you the room to look established, which a bare landing page cannot do on its own. The website is also where Google sends organic traffic. A landing page tied to a paid ad disappears the day you stop paying. A website keeps earning visitors for years. Write down the one sentence that describes what you need the page to do.
+- type: overlay
+  text: EVERY ELEMENT POINTS SAME
+  narration: Every element points to the same action. There is a known idea called the rule of one: one audience, one offer, one call to action. Tactics that lift landing page conversion: Match the headline to the ad word for word. Put the form or phone number above the fold so no scrolling is needed. Limit form fields to name, phone, and one detail.
 - type: stat
-  text: 38% OF PEOPLE WILL STOP ENGAGING
-  narration: Research from Adobe found that 38 percent of people will stop engaging with a site if the layout or content is unattractive. A website gives you the room to look established, which a bare landing page cannot do on its own. The website is also where Google sends organic traffic.
+  text: 300 TO 800 WORDS ONE IDEA HEADLINE
+  narration: A landing page holds 300 to 800 words and one idea. Headline, subhead, a short benefits list, proof, and a call to action repeated two or three times. Writing more usually hurts, because it gives the visitor a reason to wander or stall. A website holds dozens of pages and thousands of words. Each service gets its own page so it can rank in search and answer specific questions.
 - type: overlay
-  text: EVERY ELEMENT POINTS TO THE
-  narration: Every element points to the same action. There is a known idea called the rule of one: one audience, one offer, one call to action. Tactics that lift landing page conversion: Match the headline to the ad word for word. Put the form or phone number above the fold so no scrolling is needed.
+  text: LOCAL BUSINESS REAL WEBSITE
+  narration: For a local business, a real website usually runs from one to several thousand dollars depending on page count and how much custom work it needs. If you are spending on ads, build a landing page first so those clicks convert instead of leaking through a busy homepage.
 - type: overlay
-  text: A BLOATED LANDING PAGE LOSES
-  narration: A bloated landing page loses leads just as fast as a slow website loses browsers. A landing page is cheaper and faster. You can build a solid one in a few days for a few hundred dollars, or for free inside an ad platform's page builder.
+  text: READY INVEST PROPER FOUNDATION
+  narration: If you are ready to invest in a proper foundation, plan for the extra setup a website needs. Line up the page with where your traffic comes from. Paid ads, single promotion, event signup, or a lead magnet: build a landing page. The campaign has a clear start, a clear offer, and a clear action. Pages with high lead volume tend to come from businesses running many focused pages.
 - type: overlay
-  text: YOU CAN CHANGE THE HEADLINE
-  narration: You can change the headline yourself in minutes and test two versions against each other without a developer. Navigation, mobile layouts, search settings, schema for local listings, contact forms, and ongoing updates as your services change.
-- type: stat
-  text: 40 OR MORE LANDING PAGES GENERATED
-  narration: HubSpot found that companies with 40 or more landing pages generated 12 times more leads than those with only one to five, which shows how much a campaign-by-campaign approach pays off. Organic search, word of mouth, repeat customers, and general brand presence: build a website.
-- type: overlay
-  text: IF PEOPLE KEEP ASKING WHERE
-  narration: If people keep asking where they can learn more about you, that is your signal to build the full website. Start with the one that matches the traffic you are about to send, then add the other when your marketing grows into it.
+  text: ONCE LIVE START SPENDING
+  narration: Once that is live and you start spending on ads, add a dedicated landing page for each campaign so those paid clicks convert at the higher rate focused pages deliver. If you have an ad budget or a specific promotion coming, sketch a one-page offer this week and get it live. If people keep asking where they can learn more about you, that is your signal to build the full website. Start with the one that matches the traffic you are about to send, then add the other when your marketing grows into it.
 
 ## question
 text: Which path is right for your business growth right now?
@@ -42,32 +42,32 @@ hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness 
 
 ## media_queries
 - segment: 0
-  query: "landing page vs website which do you need"
+  query: "Landing Page vs. Website: Which Do You Need?"
   prefer: video
 - segment: 1
-  query: "landing page vs website which do you need pick a landing"
+  query: "Landing Page vs. Website: Which Do You Need? pick landing page"
   prefer: photo
 - segment: 2
-  query: "landing page vs website which do you need 2 35 but"
+  query: "Landing Page vs. Website: Which Do You Need? 2 35 top"
   prefer: photo
 - segment: 3
-  query: "landing page vs website which do you need 38 of people"
+  query: "Landing Page vs. Website: Which Do You Need? website gives room"
   prefer: photo
 - segment: 4
-  query: "landing page vs website which do you need every element points"
+  query: "Landing Page vs. Website: Which Do You Need? every element points"
   prefer: photo
 - segment: 5
-  query: "landing page vs website which do you need a bloated landing"
+  query: "Landing Page vs. Website: Which Do You Need? 300 to 800"
   prefer: photo
 - segment: 6
-  query: "landing page vs website which do you need you can change"
+  query: "Landing Page vs. Website: Which Do You Need? local business real"
   prefer: photo
 - segment: 7
-  query: "landing page vs website which do you need 40 or more"
+  query: "Landing Page vs. Website: Which Do You Need? ready invest proper"
   prefer: photo
 - segment: 8
-  query: "landing page vs website which do you need if people keep"
+  query: "Landing Page vs. Website: Which Do You Need? once live start"
   prefer: photo
 - segment: 9
-  query: "landing page vs website which do you need customer feedback"
+  query: "Landing Page vs. Website: Which Do You Need? customer feedback"
   prefer: photo

@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-20",
+  "posts": [
+    {
+      "slug": "first-majestic-silver-vs-physical-silver-investment",
+      "keyword": "First Majestic Silver vs physical silver investment",
+      "brand": "silver",
+      "draft": "public/blog/first-majestic-silver-vs-physical-silver-investment/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "silver-royalty-companies-explained-wheaton-precious-met",
+      "keyword": "silver royalty companies explained Wheaton Precious Metals",
+      "brand": "silver",
+      "draft": "public/blog/silver-royalty-companies-explained-wheaton-precious-met/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "does-responding-to-reviews-improve-local-seo",
+      "keyword": "does responding to reviews improve local SEO",
+      "brand": "tech",
+      "draft": "public/blog/does-responding-to-reviews-improve-local-seo/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "how-many-google-reviews-do-you-need-to-rank",
+      "keyword": "how many google reviews do you need to rank",
+      "brand": "tech",
+      "draft": "public/blog/how-many-google-reviews-do-you-need-to-rank/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

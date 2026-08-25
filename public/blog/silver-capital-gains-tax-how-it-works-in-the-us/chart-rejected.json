@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Long-Term vs. Short-Term Capital Gains Tax Rates on Silver",
+  "takeaway": "Long-term capital gains on silver are taxed at 0%, 15%, or 20%, while short-term gains are taxed at your ordinary income tax rate.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/blog/silver-capital-gains-tax-how-it-works-in-the-us",
+  "data": [
+    {
+      "label": "Long-Term Capital Gains (1+ year)",
+      "value": "0%, 15%, or 20%",
+      "metric": "Capital Gains Tax Rate",
+      "unit": "%",
+      "period": "Ongoing",
+      "evidence": "Holding silver for longer than a year qualifies as a long-term capital gain, which is typically taxed at a lower rate - currently 0%, 15%, or 20%, depending on your income bracket."
+    },
+    {
+      "label": "Short-Term Capital Gains (Less than 1 year)",
+      "value": "Ordinary Income Tax Rate",
+      "metric": "Capital Gains Tax Rate",
+      "unit": "%",
+      "period": "Ongoing",
+      "evidence": "If you hold silver for a year or less, it\u2019s considered a short-term capital gain and taxed at your ordinary income tax rate, which can range from 10% to 37% depending on your overall income."
+    }
+  ],
+  "hero_stat": {
+    "value": "15%",
+    "label": "Typical Long-Term Capital Gains Tax Rate"
+  },
+  "narration": "Understanding the difference between short-term and long-term capital gains is key to minimizing your tax liability on silver investments. Long-term gains are taxed at preferential rates, while short-term gains are taxed at your ordinary income rate. Consulting with a tax professional is recommended to determine the most appropriate strategy for your individual circumstances."
+}

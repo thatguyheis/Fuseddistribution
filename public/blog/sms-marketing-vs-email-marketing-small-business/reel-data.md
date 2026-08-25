@@ -35,9 +35,9 @@ hook_type: contrarian_stat
   narration: Don’t just pick one or the other. Use email for keeping your existing customers informed and engaged. Figure out what works for your customers and use that combination.
 
 ## question
-text: So, which channel , text or email , do you?
+text: Which channel works better for your business: text or email?
 subtext: COMMENT BELOW
-narration: So, which channel , text or email , do you? Follow for more practical business tips.
+narration: Which channel works better for your business: text or email? Follow for more practical business tips.
 
 ## shared
 discussion_question: So, which channel , text or email , do you?

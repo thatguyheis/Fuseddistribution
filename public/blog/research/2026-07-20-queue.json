@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-20",
+  "posts": [
+    {
+      "slug": "troy-ounce-vs-regular-ounce-silver-explained",
+      "keyword": "troy ounce vs regular ounce silver explained",
+      "brand": "silver",
+      "draft": "public/blog/troy-ounce-vs-regular-ounce-silver-explained/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "what-is-silver-spot-price-and-how-is-it-set",
+      "keyword": "what is silver spot price and how is it set",
+      "brand": "silver",
+      "draft": "public/blog/what-is-silver-spot-price-and-how-is-it-set/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "customer-testimonial-video-how-to-film-and-use",
+      "keyword": "customer testimonial video how to film and use",
+      "brand": "tech",
+      "draft": "public/blog/customer-testimonial-video-how-to-film-and-use/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "youtube-for-local-business-worth-it-or-not",
+      "keyword": "youtube for local business worth it or not",
+      "brand": "tech",
+      "draft": "public/blog/youtube-for-local-business-worth-it-or-not/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

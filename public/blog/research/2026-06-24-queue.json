@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-24",
+  "posts": [
+    {
+      "slug": "silver-vs-gold-which-is-better-investment-in-2026",
+      "keyword": "silver vs gold which is better investment in 2026",
+      "brand": "silver",
+      "draft": "public/blog/silver-vs-gold-which-is-better-investment-in-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "physical-silver-vs-silver-etf-pros-and-cons",
+      "keyword": "physical silver vs silver ETF pros and cons",
+      "brand": "silver",
+      "draft": "public/blog/physical-silver-vs-silver-etf-pros-and-cons/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "small-business-website-mistakes-to-avoid",
+      "keyword": "small business website mistakes to avoid",
+      "brand": "tech",
+      "draft": "public/blog/small-business-website-mistakes-to-avoid/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "why-your-website-isnt-getting-customers",
+      "keyword": "why your website isnt getting customers",
+      "brand": "tech",
+      "draft": "public/blog/why-your-website-isnt-getting-customers/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-07-29",
+  "sources": [
+    {
+      "name": "Fused Distribution spot API",
+      "url": "https://fuseddistribution.com/api/spot",
+      "facts": ["July 29 silver snapshot: $58.13 per troy ounce.", "July 28 silver snapshot: $60.00 per troy ounce.", "Derived one-day change: -$1.87, approximately -3.12%."]
+    },
+    {
+      "name": "LBMA Precious Metals Market Report: Q2 2026",
+      "url": "https://www.lbma.org.uk/articles/lbma-precious-metals-market-report-q2-2026",
+      "facts": ["Silver began Q2 at $74.870 and ended June at $58.795, a 21.47% decline."]
+    },
+    {
+      "name": "World Bank precious metals update",
+      "url": "https://blogs.worldbank.org/en/opendata/precious-metals-retreat-from-record-highs",
+      "facts": ["Silver fell in 2026 Q2 after a 55% Q1 rise.", "The report discusses rate expectations, dollar strength, easing safe-haven demand, profit-taking, and industrial-demand risks."]
+    },
+    {
+      "name": "Silver Institute 2026 outlook",
+      "url": "https://silverinstitute.org/global-silver-investment-to-remain-strong-in-2026-against-the-backdrop-of-a-sixth-consecutive-annual-market-deficit/",
+      "facts": ["The silver market is expected to remain in deficit for a sixth consecutive year in 2026."]
+    }
+  ]
+}

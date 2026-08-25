@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-23",
+  "posts": [
+    {
+      "slug": "silver-industrial-uses-explained-for-investors",
+      "keyword": "silver industrial uses explained for investors",
+      "brand": "silver",
+      "draft": "public/blog/silver-industrial-uses-explained-for-investors/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-in-solar-panels-how-much-is-used",
+      "keyword": "silver in solar panels how much is used",
+      "brand": "silver",
+      "draft": "public/blog/silver-in-solar-panels-how-much-is-used/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "pay-per-click-vs-organic-seo-for-small-business",
+      "keyword": "pay per click vs organic SEO for small business",
+      "brand": "tech",
+      "draft": "public/blog/pay-per-click-vs-organic-seo-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "online-directories-for-small-business-which-ones-matter",
+      "keyword": "online directories for small business which ones matter",
+      "brand": "tech",
+      "draft": "public/blog/online-directories-for-small-business-which-ones-matter/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

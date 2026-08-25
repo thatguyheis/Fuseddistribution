@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-24",
+  "posts": [
+    {
+      "slug": "engelhard-silver-bars-history-and-collector-value",
+      "keyword": "Engelhard silver bars history and collector value",
+      "brand": "silver",
+      "draft": "public/blog/engelhard-silver-bars-history-and-collector-value/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "johnson-matthee-silver-bars-guide",
+      "keyword": "Johnson Matthee silver bars guide",
+      "brand": "silver",
+      "draft": "public/blog/johnson-matthee-silver-bars-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "small-business-website-mistakes-to-avoid",
+      "keyword": "small business website mistakes to avoid",
+      "brand": "tech",
+      "draft": "public/blog/small-business-website-mistakes-to-avoid/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "why-your-website-isnt-getting-customers",
+      "keyword": "why your website isnt getting customers",
+      "brand": "tech",
+      "draft": "public/blog/why-your-website-isnt-getting-customers/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

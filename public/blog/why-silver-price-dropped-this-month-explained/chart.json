@@ -1,35 +1,31 @@
 {
-  "title": "Silver Price Decline: Key Stats",
-  "source": "Fused Distribution (2023)",
-  "bars": [
+  "schema_version": 2,
+  "visual_type": "before_after",
+  "title": "Q2 2026 Silver Price Change (USD/oz)",
+  "takeaway": "LBMA measured a 21.47% decline between the start of Q2 and the end of June.",
+  "source": "LBMA Precious Metals Market Report: Q2 2026",
+  "source_url": "https://www.lbma.org.uk/articles/lbma-precious-metals-market-report-q2-2026",
+  "data": [
     {
-      "label": "6.2%",
-      "value": "6.2%"
+      "label": "Q2 start",
+      "value": "$74.870",
+      "metric": "silver price",
+      "unit": "USD/oz",
+      "period": "April 1, 2026",
+      "evidence": "LBMA reports that silver began Q2 2026 at $74.870 per ounce."
     },
     {
-      "label": "4.8%",
-      "value": "4.8%"
-    },
-    {
-      "label": "0.37%",
-      "value": "0.37%"
-    },
-    {
-      "label": "2.1%",
-      "value": "2.1%"
-    },
-    {
-      "label": "70%",
-      "value": "70%"
-    },
-    {
-      "label": "38%",
-      "value": "38%"
+      "label": "June close",
+      "value": "$58.795",
+      "metric": "silver price",
+      "unit": "USD/oz",
+      "period": "June 30, 2026",
+      "evidence": "LBMA reports that silver ended June 2026 at $58.795 per ounce."
     }
   ],
   "hero_stat": {
-    "value": "6.2%",
-    "label": "Silver Price Drop"
+    "value": "$58.795",
+    "label": "LBMA June 2026 close"
   },
-  "narration": "This chart highlights key numeric data driving the recent decline in silver prices. The price has fallen 6.2% over the past month, influenced by rising interest rates and a stronger dollar.  The difference between silver's and gold's decline (4.8%) underscores the dollar's role in the market."
+  "narration": "The LBMA recorded silver at $74.870 per ounce at the start of Q2 and $58.795 at the end of June. That before-and-after comparison represents one metric over one quarter, unlike the previous mixed-stat graphic."
 }

@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-27",
+  "posts": [
+    {
+      "slug": "building-a-silver-reserve-on-a-monthly-budget",
+      "keyword": "building a silver reserve on a monthly budget",
+      "brand": "silver",
+      "draft": "public/blog/building-a-silver-reserve-on-a-monthly-budget/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-reserve-vs-401k-which-makes-more-sense",
+      "keyword": "silver reserve vs 401k which makes more sense",
+      "brand": "silver",
+      "draft": "public/blog/silver-reserve-vs-401k-which-makes-more-sense/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "best-free-ai-tools-for-small-business-2026",
+      "keyword": "best free AI tools for small business 2026",
+      "brand": "tech",
+      "draft": "public/blog/best-free-ai-tools-for-small-business-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-use-ai-to-write-better-business-emails",
+      "keyword": "how to use AI to write better business emails",
+      "brand": "tech",
+      "draft": "public/blog/how-to-use-ai-to-write-better-business-emails/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

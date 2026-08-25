@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-09",
+  "posts": [
+    {
+      "slug": "how-silver-futures-work-explained-for-stackers",
+      "keyword": "how silver futures work explained for stackers",
+      "brand": "silver",
+      "draft": "public/blog/how-silver-futures-work-explained-for-stackers/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "comex-silver-delivery-process-explained",
+      "keyword": "COMEX silver delivery process explained",
+      "brand": "silver",
+      "draft": "public/blog/comex-silver-delivery-process-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "why-your-google-business-profile-isnt-showing-up",
+      "keyword": "why your google business profile isnt showing up",
+      "brand": "tech",
+      "draft": "public/blog/why-your-google-business-profile-isnt-showing-up/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-rank-higher-on-google-maps",
+      "keyword": "how to rank higher on google maps",
+      "brand": "tech",
+      "draft": "public/blog/how-to-rank-higher-on-google-maps/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-04",
+  "posts": [
+    {
+      "slug": "silver-in-an-llc-vs-personal-ownership-tax-differences",
+      "keyword": "silver in an LLC vs personal ownership tax differences",
+      "brand": "silver",
+      "draft": "public/blog/silver-in-an-llc-vs-personal-ownership-tax-differences/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "silver-ira-how-to-set-one-up-step-by-step",
+      "keyword": "silver IRA how to set one up step by step",
+      "brand": "silver",
+      "draft": "public/blog/silver-ira-how-to-set-one-up-step-by-step/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-speed-up-your-small-business-website",
+      "keyword": "how to speed up your small business website",
+      "brand": "tech",
+      "draft": "public/blog/how-to-speed-up-your-small-business-website/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "instagram-marketing-for-local-business",
+      "keyword": "instagram marketing for local business",
+      "brand": "tech",
+      "draft": "public/blog/instagram-marketing-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,31 +1,55 @@
 {
-  "title": "Silver Price Prediction 2026: Key Forecasts",
-  "source": "Kitco.com (July 26, 2024)",
-  "bars": [
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Selected 2026 Silver Forecast Averages (USD/oz)",
+  "takeaway": "These are annual averages from named LBMA survey participants, not year-end targets.",
+  "source": "LBMA 2026 Precious Metals Forecast Survey",
+  "source_url": "https://www.lbma.org.uk/forecast-survey-2026/analysts-forecasts",
+  "data": [
     {
-      "label": "$23.47/ounce",
-      "value": "23.47"
+      "label": "LBBW",
+      "value": "$63.20",
+      "metric": "2026 annual-average silver forecast",
+      "unit": "USD/oz",
+      "period": "2026",
+      "evidence": "LBMA's 2026 survey lists LBBW's annual-average forecast at $63.20 per ounce."
     },
     {
-      "label": "$35/ounce",
-      "value": "35"
+      "label": "MKS PAMP",
+      "value": "$65.00",
+      "metric": "2026 annual-average silver forecast",
+      "unit": "USD/oz",
+      "period": "2026",
+      "evidence": "LBMA's 2026 survey lists MKS PAMP's annual-average forecast at $65.00 per ounce."
     },
     {
-      "label": "$28 - $35/ounce",
-      "value": "28"
+      "label": "LSEG Metals Research",
+      "value": "$69.00",
+      "metric": "2026 annual-average silver forecast",
+      "unit": "USD/oz",
+      "period": "2026",
+      "evidence": "LBMA's 2026 survey lists LSEG Metals Research's annual-average forecast at $69.00 per ounce."
     },
     {
-      "label": "$20 - $25/ounce",
-      "value": "20"
+      "label": "UBS",
+      "value": "$78.80",
+      "metric": "2026 annual-average silver forecast",
+      "unit": "USD/oz",
+      "period": "2026",
+      "evidence": "LBMA's 2026 survey lists UBS's annual-average forecast at $78.80 per ounce."
     },
     {
-      "label": "40-50%",
-      "value": "40"
+      "label": "Metals Focus",
+      "value": "$83.00",
+      "metric": "2026 annual-average silver forecast",
+      "unit": "USD/oz",
+      "period": "2026",
+      "evidence": "LBMA's 2026 survey lists Metals Focus's annual-average forecast at $83.00 per ounce."
     }
   ],
   "hero_stat": {
-    "value": "35",
-    "label": "Potential Price Increase"
+    "value": "$63.20",
+    "label": "Low end of selected annual averages"
   },
-  "narration": "This chart highlights key price predictions for silver in 2026, ranging from $20 to $35 per ounce. Analysts anticipate a potential surge driven by inflation and geopolitical risks, with a moderate bullish case targeting $30-$40.  These forecasts consider factors like interest rates and industrial demand, offering investors a range of possibilities to consider."
+  "narration": "Selected named analysts in the LBMA survey published annual-average forecasts from $63.20 to $83.00 per ounce. These values describe full-year averages and should not be read as guaranteed year-end prices."
 }

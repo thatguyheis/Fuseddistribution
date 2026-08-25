@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-10",
+  "posts": [
+    {
+      "slug": "capital-gains-tax-on-silver-how-it-works",
+      "keyword": "capital gains tax on silver how it works",
+      "brand": "silver",
+      "draft": "public/blog/capital-gains-tax-on-silver-how-it-works/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-irs-reporting-requirements-what-you-need-to-know",
+      "keyword": "silver IRS reporting requirements what you need to know",
+      "brand": "silver",
+      "draft": "public/blog/silver-irs-reporting-requirements-what-you-need-to-know/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "customer-referral-program-how-to-start-one",
+      "keyword": "customer referral program how to start one",
+      "brand": "tech",
+      "draft": "public/blog/customer-referral-program-how-to-start-one/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "word-of-mouth-marketing-strategy-small-business",
+      "keyword": "word of mouth marketing strategy small business",
+      "brand": "tech",
+      "draft": "public/blog/word-of-mouth-marketing-strategy-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-21",
+  "posts": [
+    {
+      "slug": "silver-as-a-percentage-of-net-worth-how-much",
+      "keyword": "silver as a percentage of net worth how much",
+      "brand": "silver",
+      "draft": "public/blog/silver-as-a-percentage-of-net-worth-how-much/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "dollar-cost-averaging-silver-strategy-explained",
+      "keyword": "dollar cost averaging silver strategy explained",
+      "brand": "silver",
+      "draft": "public/blog/dollar-cost-averaging-silver-strategy-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "fake-google-reviews-how-to-handle-them",
+      "keyword": "fake google reviews how to handle them",
+      "brand": "tech",
+      "draft": "public/blog/fake-google-reviews-how-to-handle-them/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "review-generation-tools-for-small-business",
+      "keyword": "review generation tools for small business",
+      "brand": "tech",
+      "draft": "public/blog/review-generation-tools-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

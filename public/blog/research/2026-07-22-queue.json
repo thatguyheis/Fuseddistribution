@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-22",
+  "posts": [
+    {
+      "slug": "silver-stacking-for-beginners-first-steps",
+      "keyword": "silver stacking for beginners first steps",
+      "brand": "silver",
+      "draft": "public/blog/silver-stacking-for-beginners-first-steps/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-vs-cash-which-holds-value-better",
+      "keyword": "silver vs cash which holds value better",
+      "brand": "silver",
+      "draft": "public/blog/silver-vs-cash-which-holds-value-better/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "google-local-service-ads-explained",
+      "keyword": "google local service ads explained",
+      "brand": "tech",
+      "draft": "public/blog/google-local-service-ads-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "retargeting-ads-for-small-business-how-they-work",
+      "keyword": "retargeting ads for small business how they work",
+      "brand": "tech",
+      "draft": "public/blog/retargeting-ads-for-small-business-how-they-work/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

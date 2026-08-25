@@ -1,0 +1,2142 @@
+{
+  "generatedAt": "2026-08-18T18:07:20.979Z",
+  "operatingDate": "2026-08-17",
+  "summary": {
+    "attention": 7,
+    "healthy": 4,
+    "score": -100,
+    "blogTotal": 192,
+    "blogComplete": 144,
+    "reelReady": 16,
+    "reelPending": 142
+  },
+  "report": {
+    "score": -100,
+    "comparison": "regressed",
+    "penalties": [
+      {
+        "id": "2d3b248d-392d-4919-9412-aceea5031fca",
+        "occurredAt": "2026-08-18T03:34:41.496Z",
+        "date": "2026-08-17",
+        "kind": "penalty",
+        "type": "bug",
+        "fingerprint": "buffer-live-sent-history-pagination",
+        "value": 1,
+        "evidence": "Buffer status previously read only the first 100 ascending sent records and falsely reported zero Pacific-day sends. On 2026-08-17, the Buffer metric snapshot proved one sent post per YouTube, X, and Instagram channel; cursor pagination now reads all sent history and live readback counts those three posts.",
+        "source": "buffer_api",
+        "attributable": true,
+        "notes": "",
+        "points": -10,
+        "multiplier": 1,
+        "weight": 10
+      },
+      {
+        "id": "6ec89dda-d926-439b-bac5-96a18cea8b36",
+        "occurredAt": "2026-08-18T03:34:41.582Z",
+        "date": "2026-08-17",
+        "kind": "penalty",
+        "type": "missed_checkpoint",
+        "fingerprint": "buffer-daily-floor-missed",
+        "value": 1,
+        "evidence": "Authoritative Buffer status at 20:34 Pacific, after sent-history pagination repair, counted one sent post on each YouTube, X, and Instagram channel, leaving the three-post daily floor short by two per channel (total deficit six). The checkpoint was late; scheduled-log reconciliation corrected 15 YouTube, 15 X, and 19 Instagram stale entries.",
+        "source": "buffer_api",
+        "attributable": true,
+        "notes": "",
+        "points": -48,
+        "multiplier": 3,
+        "weight": 16
+      },
+      {
+        "id": "63bb1d7e-aabf-482a-a8bf-d8f33f752147",
+        "occurredAt": "2026-08-18T03:34:41.662Z",
+        "date": "2026-08-17",
+        "kind": "penalty",
+        "type": "missed_checkpoint",
+        "fingerprint": "blog-quality-gate-blocked",
+        "value": 1,
+        "evidence": "The 2026-08-17 blog queue completed with one explicit quality block: selling-inherited-silver-coins-taxes-and-process is archived under .workflow-blocked/2026-08-17 with qa-local-fail, while three other queue slugs are registered in posts.json.",
+        "source": "local_checkpoint",
+        "attributable": true,
+        "notes": "",
+        "points": -48,
+        "multiplier": 3,
+        "weight": 16
+      },
+      {
+        "id": "be3241fc-eeb3-48d2-945d-bacdd9529e9b",
+        "occurredAt": "2026-08-18T03:34:41.742Z",
+        "date": "2026-08-17",
+        "kind": "penalty",
+        "type": "missed_checkpoint",
+        "fingerprint": "reel-manual-caption-review-pending",
+        "value": 3,
+        "evidence": "Three 2026-08-17 registered blog reels pass automated release QA but remain ineligible because manualCaptionReview=false and readyForPosting=false: how-to-value-inherited-silver-for-estate-purposes, local-seo-audit-how-to-do-one-yourself, and service-area-business-seo-guide.",
+        "source": "local_checkpoint",
+        "attributable": true,
+        "notes": "",
+        "points": -144,
+        "multiplier": 3,
+        "weight": 16
+      }
+    ],
+    "improvements": [
+      {
+        "fingerprint": "buffer-daily-floor-missed",
+        "problemType": "missed_checkpoint",
+        "occurrences": 5,
+        "proposedControl": "Add or strengthen a deterministic prevention check for buffer-daily-floor-missed.",
+        "evidence": "Authoritative Buffer status at 20:34 Pacific, after sent-history pagination repair, counted one sent post on each YouTube, X, and Instagram channel, leaving the three-post daily floor short by two per channel (total deficit six). The checkpoint was late; scheduled-log reconciliation corrected 15 YouTube, 15 X, and 19 Instagram stale entries.",
+        "autoApplicable": true
+      },
+      {
+        "fingerprint": "blog-quality-gate-blocked",
+        "problemType": "missed_checkpoint",
+        "occurrences": 7,
+        "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+        "evidence": "The 2026-08-17 blog queue completed with one explicit quality block: selling-inherited-silver-coins-taxes-and-process is archived under .workflow-blocked/2026-08-17 with qa-local-fail, while three other queue slugs are registered in posts.json.",
+        "autoApplicable": true
+      },
+      {
+        "fingerprint": "reel-manual-caption-review-pending",
+        "problemType": "missed_checkpoint",
+        "occurrences": 6,
+        "proposedControl": "Add or strengthen a deterministic prevention check for reel-manual-caption-review-pending.",
+        "evidence": "Three 2026-08-17 registered blog reels pass automated release QA but remain ineligible because manualCaptionReview=false and readyForPosting=false: how-to-value-inherited-silver-for-estate-purposes, local-seo-audit-how-to-do-one-yourself, and service-area-business-seo-guide.",
+        "autoApplicable": true
+      }
+    ],
+    "generatedAt": "2026-08-18T03:35:19.336Z"
+  },
+  "workflows": {
+    "blog": {
+      "expected": [
+        "how-to-value-inherited-silver-for-estate-purposes",
+        "selling-inherited-silver-coins-taxes-and-process",
+        "local-seo-audit-how-to-do-one-yourself",
+        "service-area-business-seo-guide"
+      ],
+      "registered": [
+        "how-to-value-inherited-silver-for-estate-purposes",
+        "local-seo-audit-how-to-do-one-yourself",
+        "service-area-business-seo-guide"
+      ],
+      "blocked": [
+        "selling-inherited-silver-coins-taxes-and-process"
+      ],
+      "pending": [],
+      "complete": true,
+      "source": "public/blog/*/_status.json + 2026-08-17 report"
+    },
+    "reels": {
+      "ready": [],
+      "captionReview": [
+        "how-to-value-inherited-silver-for-estate-purposes",
+        "local-seo-audit-how-to-do-one-yourself",
+        "service-area-business-seo-guide"
+      ],
+      "qa": [
+        {
+          "slug": "ai-for-bookkeeping-small-business-tools-compared",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T18:27:31.049Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "ai-for-customer-service-small-business-how-to-set-it-up",
+          "pass": false,
+          "errors": [
+            "rendered duration 99.58s is outside the 100-240s long-form standard"
+          ],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-29T18:14:46.557Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "ai-scheduling-tools-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-30T18:59:52.782Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "ai-tools-for-small-business-marketing-in-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:02.153Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "ai-writing-tools-comparison-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T08:18:47.124Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "american-silver-eagle-complete-buying-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T02:37:00.307Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "apmex-review-2026-premiums-selection-and-service",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-10T19:11:26.199Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "apple-maps-business-listing-how-to-claim-it",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-26T19:21:05.070Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-appointment-booking-tools-for-small-business-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T16:29:08.123Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "best-email-marketing-tools-for-small-business-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-24T00:50:56.948Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-free-ai-tools-for-small-business-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T17:52:51.201Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-places-to-sell-silver-coins-in-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-17T19:02:57.631Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-silver-ira-custodians-compared-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-06T19:40:10.636Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-silver-storage-options-for-investors",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-18T19:25:10.944Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "best-ways-to-clean-silver-coins-without-damage",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-21T18:53:01.035Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "bing-places-for-business-setup-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-28T18:43:17.933Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "blogging-for-small-business-does-it-work",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T18:30:48.385Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "building-a-silver-reserve-on-a-monthly-budget",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T18:49:35.832Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "calendar-booking-link-how-to-add-to-google-business-pro",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-17T18:20:31.925Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "can-you-put-physical-silver-in-an-ira",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-07T20:02:43.614Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "canadian-silver-maple-leaf-vs-american-silver-eagle",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T03:08:38.800Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "chatgpt-for-small-business-owners-beginners-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:01.779Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "comex-silver-delivery-process-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-09T18:58:50.132Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "comex-silver-inventory-what-declining-stockpiles-mean-f",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-30T19:30:06.505Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "contact-page-best-practices-for-local-business",
+          "pass": false,
+          "errors": [
+            "rendered duration 120.28s is outside the 180-240s long-form standard"
+          ],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-10T13:12:10.297Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "content-marketing-ideas-for-local-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-18T18:44:17.321Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "customer-loyalty-program-ideas-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-19T19:18:54.772Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "customer-referral-program-how-to-start-one",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-12T18:50:04.657Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "do-you-have-to-report-silver-coin-purchases-to-irs",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T18:27:25.147Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "does-tarnished-silver-lose-value",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-21T19:18:49.224Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "dollar-cost-averaging-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T15:06:26.577Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "dollar-cost-averaging-silver-strategy-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T15:49:36.397Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "electric-vehicle-silver-demand-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T01:21:53.461Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "evergreen-content-ideas-for-small-business-website",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-19T18:46:44.087Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "facebook-ads-budget-for-local-business-how-much-to-spen",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-22T18:24:58.141Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "facebook-page-vs-facebook-group-for-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T09:14:26.989Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "fake-google-reviews-how-to-handle-them",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T09:19:33.243Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "gainesville-coins-review-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-11T18:26:39.256Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "google-ads-for-small-business-is-it-worth-it",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-22T18:55:39.283Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "google-analytics-for-small-business-what-to-track",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T01:03:07.272Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "google-business-profile-setup-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T17:22:48.743Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "google-review-strategy-that-actually-works",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T05:16:07.928Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "google-search-console-for-small-business-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T18:43:57.669Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "home-safe-vs-safety-deposit-box-for-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-31T19:21:37.162Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-inflation-erodes-purchasing-power-and-silver-protec",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-17T18:44:23.201Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-many-google-reviews-do-you-need-to-rank",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T05:24:37.209Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-much-does-a-small-business-website-cost",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-04T21:18:03.222Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-much-silver-should-you-own-in-your-portfolio",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T09:37:43.310Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-often-should-a-small-business-blog",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-18T18:22:15.893Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-often-to-post-on-social-media-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T10:00:32.073Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-online-booking-reduces-no-shows",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T19:11:40.163Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "how-to-add-photos-to-google-business-profile-correctly",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-10T18:37:34.733Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-automate-repetitive-business-tasks-with-ai",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T07:22:51.641Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-build-a-silver-inventory-spreadsheet",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-15T18:27:09.379Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-build-a-silver-stacking-portfolio-from-scratch",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T13:41:44.910Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-build-ai-prompts-that-actually-work",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T08:47:18.888Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-calculate-your-average-cost-per-ounce-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-16T18:55:45.638Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-collect-customer-contact-info-at-point-of-sale",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-10T17:39:57.893Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-follow-up-with-customers-after-a-sale",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-12T20:31:42.586Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-get-repeat-customers-for-your-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-19T19:02:24.716Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-get-the-most-money-when-selling-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-12T19:57:05.650Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-keep-records-of-silver-purchases-for-taxes",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-03T19:18:50.638Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-know-if-your-website-is-working",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T19:17:44.370Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-organize-and-inventory-your-silver-collection",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-31T19:02:51.121Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-rank-higher-on-google-maps",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-09T18:30:31.604Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-sell-silver-for-the-best-price",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-17T19:20:55.017Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-set-silver-spot-price-alerts-for-free",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-14T18:25:54.268Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-spot-fake-silver-coins-and-bars",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T20:11:02.712Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-start-buying-silver-with-100-dollars",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-22T19:28:19.493Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-start-using-ai-in-your-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:01.649Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "how-to-store-silver-at-home-safely",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T19:03:25.370Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-target-local-customers-with-facebook-ads",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T14:03:25.287Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-track-silver-price-daily",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T17:34:27.662Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-turn-bad-reviews-into-better-outcomes",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T18:05:31.330Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-use-ai-to-create-social-media-content-faster",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-28T18:25:14.642Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-use-ai-to-write-better-business-emails",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T17:30:43.688Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-use-silver-to-protect-against-currency-devaluati",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T21:54:31.737Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-value-inherited-silver-for-estate-purposes",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T19:50:59.761Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "how-to-verify-silver-purity-at-home",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-20T19:07:09.776Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "instagram-for-local-business-complete-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-14T22:26:07.349Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "instagram-stories-for-local-business-how-to-use",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T09:15:20.434Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "insuring-physical-silver-at-home",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-20T19:30:54.662Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "irs-rules-for-selling-silver-coins-1099-b-reporting",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T19:27:55.711Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "is-now-a-good-time-to-buy-silver-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T07:51:50.036Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "is-silver-a-good-hedge-against-inflation",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-05T19:44:38.670Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "junk-silver-coins-guide-pre-1965-us-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T09:23:22.405Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "landing-page-vs-website-which-do-you-need",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T13:51:03.350Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "largest-silver-producing-countries-in-the-world",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:02.279Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "local-backlinks-how-to-get-them-for-free",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T13:59:33.951Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "local-keyword-research-for-small-businesses",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-15T18:51:53.883Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "local-seo-audit-how-to-do-one-yourself",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T19:11:29.582Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "magnet-test-for-silver-does-it-work",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-18T19:07:40.371Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "mobile-website-speed-why-it-matters-for-local-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T21:15:51.939Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "near-me-searches-how-to-rank-for-them",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-15T19:17:15.756Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "neighborhood-seo-targeting-specific-areas",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-16T18:30:56.301Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "online-booking-system-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T17:22:48.868Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "online-booking-system-for-small-business-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-11T19:20:56.466Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "online-booking-vs-phone-calls-for-appointments",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T20:36:17.418Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "online-directories-for-small-business-which-ones-matter",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-28T19:07:21.364Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "paper-silver-vs-physical-silver-the-key-difference",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T19:41:50.174Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "pay-per-click-vs-organic-seo-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-24T19:19:43.998Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "pcgs-ngc-certified-silver-coins-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-20T18:34:53.639Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "provident-metals-review-is-it-legit",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-12T18:24:30.295Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "self-directed-ira-approved-silver-coins-and-bars-list",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-05T19:11:53.158Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "selling-junk-silver-coins-where-and-how",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-11T21:44:22.088Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "selling-silver-to-a-dealer-vs-private-sale",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-09T19:20:20.584Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "service-area-business-seo-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T18:35:26.349Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "short-form-video-for-local-business-complete-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-19T18:22:54.200Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-as-money-throughout-history",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-11T21:11:44.187Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-capital-gains-tax-how-it-works-in-the-us",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T19:55:48.623Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-coin-holders-and-cases-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-20T19:54:33.850Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-coins-gift-tax-rules-what-you-need-to-know",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-03T18:51:00.989Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-counterfeit-detection-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T19:39:00.676Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-etf-vs-physical-silver-tax-differences",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T19:49:58.743Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-in-ancient-civilizations-as-currency",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T20:00:50.748Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-in-solar-panels-how-much-is-used",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-24T19:49:12.801Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-industrial-uses-explained-for-investors",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-26T19:50:39.689Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-ira-how-to-set-one-up-step-by-step",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-05T03:54:37.670Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-ira-vs-physical-silver-at-home-which-is-better",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-06T20:13:59.440Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-irs-reporting-requirements-what-you-need-to-know",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-10T21:34:51.255Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-mining-stocks-vs-physical-silver",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-24T18:27:43.251Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-numismatic-coins-vs-bullion-coins",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-17T20:33:14.064Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-premium-over-spot-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-22T19:57:46.737Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-price-all-time-high-when-will-it-happen-again",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-31T18:28:14.862Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-price-all-time-highs-what-drove-them",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T04:41:43.363Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-price-prediction-2026-what-analysts-expect",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-29T18:46:47.690Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-recycling-and-scrap-recovery-market",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:01.905Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T12:24:02.027Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "silver-reserve-vs-401k-which-makes-more-sense",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-27T18:21:51.694Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-short-squeeze-2026-is-it-possible",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T18:43:35.210Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-spot-price-explained-what-it-means",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-04T21:57:25.629Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-standard-vs-gold-standard-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T14:13:03.415Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "silver-supply-deficit-sixth-consecutive-year-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-26T18:54:55.710Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-supply-shortage-what-it-means-for-prices",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-24T18:53:04.690Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-tarnish-why-it-happens-and-how-to-prevent-it",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-21T19:42:33.428Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-to-gold-ratio-explained-how-to-use-it",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-03T19:36:58.355Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-vs-cash-which-holds-value-better",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-29T19:30:16.182Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "silver-vs-gold-performance-comparison-2025-2026",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-30T19:59:23.604Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "state-sales-tax-on-silver-coins-which-states-charge-it",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-02T18:58:43.335Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "text-message-marketing-for-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-12T20:14:28.916Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "thank-you-card-marketing-for-local-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-11T20:41:05.923Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "the-hunt-brothers-silver-squeeze-of-1980",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T04:35:03.190Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "tiktok-for-local-business-does-it-work",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-01T19:22:23.578Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "tracking-phone-calls-from-your-website-how-to",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-16T18:59:06.737Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "troy-ounce-vs-regular-ounce-silver-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-21T18:29:09.764Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "website-analytics-for-local-business-beginner-guide",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-15T02:52:34.406Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "website-speed-and-local-business-ranking",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-08T17:22:48.623Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "website-speed-for-local-business-why-it-matters",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-03T18:25:15.490Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "what-ai-can-and-cannot-do-for-your-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-30T18:28:01.878Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-07T18:58:06.943Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "what-moves-silver-price-up-and-down",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-05T19:36:38.705Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "what-pages-every-small-business-website-needs",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-04T20:30:16.541Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "why-comex-price-and-physical-silver-price-diverge",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-10T19:44:06.524Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "why-silver-price-dropped-this-month-explained",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-29T19:20:23.992Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "why-silver-was-used-as-currency-for-5000-years",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-13T15:38:10.608Z",
+          "manualCaptionReview": true,
+          "readyForPosting": true
+        },
+        {
+          "slug": "word-of-mouth-marketing-strategy",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-08-07T19:30:07.119Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "word-of-mouth-marketing-strategy-small-business",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-10T18:41:35.490Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        },
+        {
+          "slug": "youtube-for-local-business-worth-it-or-not",
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "captions are proportional; a three-point manual sync review is required before posting"
+          ],
+          "generatedAt": "2026-07-31T18:46:22.911Z",
+          "manualCaptionReview": false,
+          "readyForPosting": false
+        }
+      ],
+      "source": "video/out/*/release-qa.json"
+    },
+    "books": {
+      "counts": {
+        "ready-for-kdp": 3,
+        "editor-review": 5,
+        "researched": 2
+      },
+      "titles": [
+        {
+          "slug": "richest-man-in-babylon",
+          "title": "The Richest Dev in the Valley",
+          "status": "ready-for-kdp",
+          "rights": "confirmed-public-domain",
+          "rank": 1,
+          "score": 9.86
+        },
+        {
+          "slug": "art-of-public-speaking",
+          "title": "Speak So People Ship",
+          "status": "editor-review",
+          "rights": "confirmed-public-domain",
+          "rank": 2,
+          "score": 9.48
+        },
+        {
+          "slug": "how-to-live-on-24-hours-a-day",
+          "title": "How to Live on 24 Hours a Day in the Age of Notifications",
+          "status": "editor-review",
+          "rights": "confirmed-public-domain",
+          "rank": 3,
+          "score": 9.28
+        },
+        {
+          "slug": "way-to-wealth",
+          "title": "The Way to Cash Flow",
+          "status": "editor-review",
+          "rights": "confirmed-public-domain",
+          "rank": 4,
+          "score": 9.26
+        },
+        {
+          "slug": "the-go-getter",
+          "title": "The Operator Who Ships",
+          "status": "editor-review",
+          "rights": "confirmed-public-domain",
+          "rank": 5,
+          "score": 8.76
+        },
+        {
+          "slug": "as-a-man-thinketh",
+          "title": "As You Think",
+          "status": "ready-for-kdp",
+          "rights": "confirmed-public-domain",
+          "rank": 6,
+          "score": 8.3
+        },
+        {
+          "slug": "acres-of-diamonds",
+          "title": "Hidden Gold in Plain Sight",
+          "status": "ready-for-kdp",
+          "rights": "confirmed-public-domain",
+          "rank": 7,
+          "score": 8.24
+        },
+        {
+          "slug": "how-to-win-friends-and-influence-people",
+          "title": "How to Build Trust and Influence",
+          "status": "researched",
+          "rights": "needs-review",
+          "rank": 8,
+          "score": 8.22
+        },
+        {
+          "slug": "game-of-life-and-how-to-play-it",
+          "title": "The Game of Life in Debug Mode",
+          "status": "editor-review",
+          "rights": "confirmed-public-domain",
+          "rank": 9,
+          "score": 8.12
+        },
+        {
+          "slug": "think-and-grow-rich",
+          "title": "Think and Build Rich",
+          "status": "researched",
+          "rights": "needs-review",
+          "rank": 10,
+          "score": 7.58
+        }
+      ],
+      "source": "book-factory/books/*.json"
+    },
+    "profit": {
+      "score": -100,
+      "comparison": "regressed",
+      "source": "ops/profit-system/reports/2026-08-18.json"
+    },
+    "ada": {
+      "name": "ADA evolution protocol",
+      "status": "registered",
+      "generation": "G001",
+      "variant": "V01",
+      "experiment": "generic-stat → immediate-value",
+      "fitness": null,
+      "source": "ops/profit-system/evolution/generations/ADA-SILVER-INSTAGRAM-G001-V01.json"
+    },
+    "accessibility": {
+      "name": "Accessibility & release checks",
+      "status": "monitoring",
+      "checks": [
+        "Captions reviewed",
+        "Alt text present",
+        "Readable contrast",
+        "No release blockers"
+      ],
+      "source": "blog and reel release checkpoints"
+    }
+  },
+  "attention": [
+    {
+      "severity": "attention",
+      "type": "Reel review",
+      "title": "how-to-value-inherited-silver-for-estate-purposes",
+      "detail": "Manual three point caption review is required before posting.",
+      "source": "video/out/*/release-qa.json"
+    },
+    {
+      "severity": "attention",
+      "type": "Reel review",
+      "title": "local-seo-audit-how-to-do-one-yourself",
+      "detail": "Manual three point caption review is required before posting.",
+      "source": "video/out/*/release-qa.json"
+    },
+    {
+      "severity": "attention",
+      "type": "Reel review",
+      "title": "service-area-business-seo-guide",
+      "detail": "Manual three point caption review is required before posting.",
+      "source": "video/out/*/release-qa.json"
+    },
+    {
+      "severity": "blocked",
+      "type": "Blog gate",
+      "title": "selling-inherited-silver-coins-taxes-and-process",
+      "detail": "Quality gate failed. Keep the artifact quarantined until repaired.",
+      "source": "public/blog/*/_status.json + .workflow-blocked"
+    },
+    {
+      "severity": "warning",
+      "type": "bug",
+      "title": "bug",
+      "detail": "Buffer status previously read only the first 100 ascending sent records and falsely reported zero Pacific-day sends. On 2026-08-17, the Buffer metric snapshot proved one sent post per YouTube, X, and Instagram channel; cursor pagination now reads all sent history and live readback counts those three posts.",
+      "source": "ops/profit-system/reports/2026-08-17.json"
+    },
+    {
+      "severity": "warning",
+      "type": "missed checkpoint",
+      "title": "missed checkpoint",
+      "detail": "Authoritative Buffer status at 20:34 Pacific, after sent-history pagination repair, counted one sent post on each YouTube, X, and Instagram channel, leaving the three-post daily floor short by two per channel (total deficit six). The checkpoint was late; scheduled-log reconciliation corrected 15 YouTube, 15 X, and 19 Instagram stale entries.",
+      "source": "ops/profit-system/reports/2026-08-17.json"
+    },
+    {
+      "severity": "warning",
+      "type": "missed checkpoint",
+      "title": "missed checkpoint",
+      "detail": "The 2026-08-17 blog queue completed with one explicit quality block: selling-inherited-silver-coins-taxes-and-process is archived under .workflow-blocked/2026-08-17 with qa-local-fail, while three other queue slugs are registered in posts.json.",
+      "source": "ops/profit-system/reports/2026-08-17.json"
+    }
+  ],
+  "blogStatuses": [
+    {
+      "slug": "best-silver-storage-options-for-investors",
+      "status": "qa-local-fail",
+      "ts": "2026-07-03T16:16:43Z"
+    },
+    {
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "status": "qa-local-fail",
+      "ts": "2026-07-02T17:17:47Z"
+    },
+    {
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "status": "qa-local-fail",
+      "ts": "2026-07-27T05:07:37Z"
+    },
+    {
+      "slug": "customer-loyalty-program-ideas-for-small-business",
+      "status": "qa-local-fail",
+      "ts": "2026-07-07T16:49:53Z"
+    },
+    {
+      "slug": "electric-vehicle-silver-demand-explained",
+      "status": "qa-local-fail",
+      "ts": "2026-07-02T16:22:24Z"
+    },
+    {
+      "slug": "how-many-google-reviews-do-you-need-to-rank",
+      "status": "qa-fail",
+      "ts": "2026-06-21T12:57:05Z"
+    },
+    {
+      "slug": "how-often-should-a-small-business-blog",
+      "status": "qa-deferred",
+      "ts": "2026-07-17T22:24:09Z"
+    },
+    {
+      "slug": "how-to-get-repeat-customers-for-your-small-business",
+      "status": "qa-local-fail",
+      "ts": "2026-07-07T16:42:34Z"
+    },
+    {
+      "slug": "insuring-physical-silver-at-home",
+      "status": "qa-local-fail",
+      "ts": "2026-07-07T16:37:05Z"
+    },
+    {
+      "slug": "junk-silver-coins-guide-pre-1965-us-silver",
+      "status": "qa-fail",
+      "ts": "2026-06-16T17:12:34Z"
+    },
+    {
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "status": "qa-fail",
+      "ts": "2026-06-28T13:01:49Z"
+    },
+    {
+      "slug": "magnet-test-for-silver-does-it-work",
+      "status": "qa-fail",
+      "ts": "2026-07-17T21:50:40Z"
+    },
+    {
+      "slug": "silver-market-outlook-2026-what-analysts-say",
+      "status": "qa-local-fail",
+      "ts": "2026-07-02T16:55:45Z"
+    },
+    {
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "status": "qa-fail",
+      "ts": "2026-07-27T05:12:33Z"
+    },
+    {
+      "slug": "silver-rounds-complete-buyer-guide",
+      "status": "qa-fail",
+      "ts": "2026-06-21T12:41:29Z"
+    },
+    {
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "status": "qa-local-fail",
+      "ts": "2026-07-02T17:33:13Z"
+    },
+    {
+      "slug": "tiktok-for-local-business-does-it-work",
+      "status": "qa-deferred",
+      "ts": "2026-06-29T16:12:42Z"
+    },
+    {
+      "slug": "website-conversion-rate-what-it-means-and-how-to-improv",
+      "status": "qa-fail",
+      "ts": "2026-06-26T22:10:19Z"
+    }
+  ]
+}

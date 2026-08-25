@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-15",
+  "posts": [
+    {
+      "slug": "silver-in-ancient-civilizations-as-currency",
+      "keyword": "silver in ancient civilizations as currency",
+      "brand": "silver",
+      "draft": "public/blog/silver-in-ancient-civilizations-as-currency/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-monetary-history-complete-guide",
+      "keyword": "silver monetary history complete guide",
+      "brand": "silver",
+      "draft": "public/blog/silver-monetary-history-complete-guide/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-know-if-your-website-is-working",
+      "keyword": "how to know if your website is working",
+      "brand": "tech",
+      "draft": "public/blog/how-to-know-if-your-website-is-working/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "google-search-console-for-small-business-explained",
+      "keyword": "google search console for small business explained",
+      "brand": "tech",
+      "draft": "public/blog/google-search-console-for-small-business-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    }
+  ]
+}

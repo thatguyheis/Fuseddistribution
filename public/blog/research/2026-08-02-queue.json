@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-02",
+  "posts": [
+    {
+      "slug": "irs-rules-for-selling-silver-coins-1099-b-reporting",
+      "keyword": "IRS rules for selling silver coins 1099-B reporting",
+      "brand": "silver",
+      "draft": "public/blog/irs-rules-for-selling-silver-coins-1099-b-reporting/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "state-sales-tax-on-silver-coins-which-states-charge-it",
+      "keyword": "state sales tax on silver coins which states charge it",
+      "brand": "silver",
+      "draft": "public/blog/state-sales-tax-on-silver-coins-which-states-charge-it/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-train-your-team-on-ai-tools-step-by-step",
+      "keyword": "how to train your team on AI tools step by step",
+      "brand": "tech",
+      "draft": "public/blog/how-to-train-your-team-on-ai-tools-step-by-step/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "ai-for-bookkeeping-small-business-tools-compared",
+      "keyword": "AI for bookkeeping small business tools compared",
+      "brand": "tech",
+      "draft": "public/blog/ai-for-bookkeeping-small-business-tools-compared/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

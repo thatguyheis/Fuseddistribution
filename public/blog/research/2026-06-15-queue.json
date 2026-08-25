@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-15",
+  "posts": [
+    {
+      "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
+      "keyword": "1 oz silver coins vs 10 oz silver bars which to buy",
+      "brand": "silver",
+      "draft": "public/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "100-oz-silver-bars-pros-and-cons",
+      "keyword": "100 oz silver bars pros and cons",
+      "brand": "silver",
+      "draft": "public/blog/100-oz-silver-bars-pros-and-cons/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "near-me-searches-how-to-rank-for-them",
+      "keyword": "near me searches how to rank for them",
+      "brand": "tech",
+      "draft": "public/blog/near-me-searches-how-to-rank-for-them/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "local-keyword-research-for-small-businesses",
+      "keyword": "local keyword research for small businesses",
+      "brand": "tech",
+      "draft": "public/blog/local-keyword-research-for-small-businesses/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

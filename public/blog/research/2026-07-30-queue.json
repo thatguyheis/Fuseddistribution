@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-30",
+  "posts": [
+    {
+      "slug": "solar-panel-demand-silver-price-impact-2026",
+      "keyword": "solar panel demand silver price impact 2026",
+      "brand": "silver",
+      "draft": "public/blog/solar-panel-demand-silver-price-impact-2026/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-price-all-time-high-when-will-it-happen-again",
+      "keyword": "silver price all-time high when will it happen again",
+      "brand": "silver",
+      "draft": "public/blog/silver-price-all-time-high-when-will-it-happen-again/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-build-ai-prompts-that-actually-work",
+      "keyword": "how to build AI prompts that actually work",
+      "brand": "tech",
+      "draft": "public/blog/how-to-build-ai-prompts-that-actually-work/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "ai-writing-tools-comparison-for-small-business",
+      "keyword": "AI writing tools comparison for small business",
+      "brand": "tech",
+      "draft": "public/blog/ai-writing-tools-comparison-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

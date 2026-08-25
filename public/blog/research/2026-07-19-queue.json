@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-19",
+  "posts": [
+    {
+      "slug": "graded-silver-coins-worth-paying-premium-or-not",
+      "keyword": "graded silver coins worth paying premium or not",
+      "brand": "silver",
+      "draft": "public/blog/graded-silver-coins-worth-paying-premium-or-not/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-purity-marks-what-999-9999-means",
+      "keyword": "silver purity marks what .999 .9999 means",
+      "brand": "silver",
+      "draft": "public/blog/silver-purity-marks-what-999-9999-means/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "how-to-make-reels-for-your-local-business",
+      "keyword": "how to make reels for your local business",
+      "brand": "tech",
+      "draft": "public/blog/how-to-make-reels-for-your-local-business/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "behind-the-scenes-content-ideas-for-small-business",
+      "keyword": "behind the scenes content ideas for small business",
+      "brand": "tech",
+      "draft": "public/blog/behind-the-scenes-content-ideas-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

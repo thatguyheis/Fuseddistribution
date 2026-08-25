@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-02",
+  "posts": [
+    {
+      "slug": "electric-vehicle-silver-demand-explained",
+      "keyword": "electric vehicle silver demand explained",
+      "brand": "silver",
+      "draft": "public/blog/electric-vehicle-silver-demand-explained/gemma_draft.md",
+      "ad_formats": [
+        "quote-card",
+        "stat-card"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "silver-market-outlook-2026-what-analysts-say",
+      "keyword": "silver market outlook 2026 what analysts say",
+      "brand": "silver",
+      "draft": "public/blog/silver-market-outlook-2026-what-analysts-say/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "keyword": "best time to post on instagram for local business",
+      "brand": "tech",
+      "draft": "public/blog/best-time-to-post-on-instagram-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "keyword": "social media analytics what metrics actually matter",
+      "brand": "tech",
+      "draft": "public/blog/social-media-analytics-what-metrics-actually-matter/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

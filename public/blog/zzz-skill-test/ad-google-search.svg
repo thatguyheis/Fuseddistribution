@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#041018"/>
+  <!-- Phone chrome frame -->
+  <rect x="50" y="110" width="1100" height="1000" rx="24" fill="#1a1a2e"/>
+  <!-- Google wordmark -->
+  <text x="100" y="215" font-family="'Trebuchet MS',sans-serif" font-size="40" font-weight="700">
+    <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+  </text>
+  <!-- Search bar -->
+  <rect x="100" y="250" width="1000" height="72" rx="36" fill="#2a2a40" stroke="#3a3a55" stroke-width="2"/>
+  <text x="140" y="296" font-family="'Trebuchet MS',sans-serif" font-size="30" fill="#e8f4f8">how to store silver at home</text>
+  <circle cx="1040" cy="286" r="16" fill="none" stroke="#58d6ff" stroke-width="4"/>
+  <line x1="1052" y1="298" x2="1068" y2="314" stroke="#58d6ff" stroke-width="4" stroke-linecap="round"/>
+  <!-- Results subtitle -->
+  <text x="100" y="370" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(175,198,207,0.70)">About 53,400 results (0.41 seconds)</text>
+  <!-- Card 1 (highlighted) -->
+  <rect x="90" y="400" width="1020" height="200" rx="14" fill="none" stroke="#58d6ff" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="120" y="450" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="#4dffb8">fuseddistribution.com/blog/zzz-skill-test</text>
+  <text x="120" y="500" font-family="'Trebuchet MS',sans-serif" font-size="32" font-weight="700" fill="#e8f4f8">How to Store Silver at Home</text>
+  <text x="120" y="545" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(175,198,207,0.70)">Keep silver dry and locked. A bolted, rated safe stops theft and</text>
+  <text x="120" y="578" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(175,198,207,0.70)">fire. The straightforward way to protect your reserve.</text>
+  <!-- Card 2 -->
+  <text x="120" y="690" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(77,255,184,0.55)">investopedia.com/silver-storage</text>
+  <text x="120" y="735" font-family="'Trebuchet MS',sans-serif" font-size="30" fill="rgba(232,244,248,0.75)">Best Ways to Store Precious Metals</text>
+  <text x="120" y="778" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(175,198,207,0.60)">An overview of home safes, bank deposit boxes, and depositories.</text>
+  <!-- Card 3 -->
+  <text x="120" y="880" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(77,255,184,0.55)">reddit.com/r/silverbugs</text>
+  <text x="120" y="925" font-family="'Trebuchet MS',sans-serif" font-size="30" fill="rgba(232,244,248,0.75)">How do you all store your stack?</text>
+  <text x="120" y="968" font-family="'Trebuchet MS',sans-serif" font-size="24" fill="rgba(175,198,207,0.60)">Discussion thread on safes, hidden spots, and insurance.</text>
+  <text x="1100" y="1075" text-anchor="end" font-family="'Trebuchet MS',sans-serif"
+    font-size="22" fill="rgba(88,214,255,0.50)">fuseddistribution.com</text>
+</svg>

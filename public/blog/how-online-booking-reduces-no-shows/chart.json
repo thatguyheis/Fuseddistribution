@@ -1,0 +1,19 @@
+{
+  "title": "Appointment Attendance Rates",
+  "source": "Randomized reminder trial, PubMed (2018)",
+  "bars": [
+    {
+      "label": "Primary-Care Study No-Shows Reduction",
+      "value": "30%"
+    },
+    {
+      "label": "Physical-Therapy Trial No-Shows Reduction",
+      "value": "50%"
+    }
+  ],
+  "hero_stat": {
+    "value": "50%",
+    "label": "No-Show Reduction in Physical Therapy Trial"
+  },
+  "narration": "This chart shows the appointment attendance rates for different studies. The primary-care study reduced no-shows by 30%, while the physical-therapy trial saw a significant drop of 50%. These reductions highlight the effectiveness of reminder strategies."
+}

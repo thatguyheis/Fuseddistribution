@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Productivity Increase with Automation",
+  "takeaway": "Businesses using automation see a 25% increase in productivity.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.example.com/blog/how-to-automate-repetitive-business-tasks-with-ai",
+  "data": [
+    {
+      "label": "Productivity Increase",
+      "value": "25%",
+      "metric": "Productivity",
+      "unit": "%",
+      "period": "Recent Studies",
+      "evidence": "According to recent studies, businesses that use automation see a 25% increase in productivity."
+    }
+  ],
+  "hero_stat": {
+    "value": "25%",
+    "label": "Productivity Increase"
+  },
+  "narration": "Studies show that businesses implementing automation experience a 25% increase in productivity, allowing them to focus on strategic growth and client relationships. This represents a significant improvement in operational efficiency and a valuable return on investment."
+}

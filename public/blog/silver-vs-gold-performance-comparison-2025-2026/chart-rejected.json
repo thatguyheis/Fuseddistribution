@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "ONE PLAIN-LANGUAGE SENTENCE",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Silver Price vs. Gold Price (July 27, 2024)",
+      "value": "Silver: $31.25 per ounce, Gold: $2,338 per ounce",
+      "metric": "Price per ounce",
+      "unit": "USD/oz",
+      "period": "July 27, 2024",
+      "evidence": "As of July 27, 2024, the spot price of gold is approximately $2,338 per ounce, while the spot price of silver is around $31.25 per ounce."
+    }
+  ],
+  "hero_stat": {
+    "value": "31.25",
+    "label": "Silver Spot Price (July 27, 2024)"
+  },
+  "narration": "As of July 27, 2024, the spot price of silver was $31.25 per ounce, while the spot price of gold was $2,338 per ounce. This represents a gold-to-silver ratio of approximately 74.7. Historically, this ratio has fluctuated significantly, but it provides a useful benchmark for comparing potential returns."
+}

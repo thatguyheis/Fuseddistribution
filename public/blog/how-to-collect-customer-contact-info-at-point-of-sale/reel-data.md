@@ -32,9 +32,9 @@ hook_type: contrarian_stat
   narration: Design it so there is one clear spot for a note or an email. Don't just print a thank you message. Make it easy for customers to give you their contact. Put a code on your receipt that goes straight to a mobile-friendly sign-up form.
 
 ## question
-text: How can you easily incorporate this strategy into your business?
+text: How do customers prefer to share contact information?
 subtext: COMMENT BELOW
-narration: How can you easily incorporate this strategy into your business? Follow for more practical business tips.
+narration: How do customers prefer to share contact information? Follow for more practical business tips.
 
 ## shared
 discussion_question: How can you easily incorporate this strategy into your business?

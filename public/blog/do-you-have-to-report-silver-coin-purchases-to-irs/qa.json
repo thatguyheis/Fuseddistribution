@@ -1,6 +1,13 @@
 {
   "slug": "do-you-have-to-report-silver-coin-purchases-to-irs",
-  "score": 88,
-  "pass": true,
-  "blockers": []
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "financial accuracy: unsupported $200 silver reporting threshold claim",
+    "financial accuracy: article claims silver purchases themselves trigger personal IRS reporting",
+    "financial accuracy: article ties a $10,000 silver purchase threshold to IRS reporting",
+    "financial accuracy: invalid \"Schedule B of Form 8949\" filing reference",
+    "financial accuracy: article conflates Form 1099-B with buyer purchase reporting"
+  ],
+  "mode": "deterministic-local"
 }

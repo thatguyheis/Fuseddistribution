@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-01",
+  "posts": [
+    {
+      "slug": "silver-capital-gains-tax-how-it-works-in-the-us",
+      "keyword": "silver capital gains tax how it works in the US",
+      "brand": "silver",
+      "draft": "public/blog/silver-capital-gains-tax-how-it-works-in-the-us/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "do-you-have-to-report-silver-coin-purchases-to-irs",
+      "keyword": "do you have to report silver coin purchases to IRS",
+      "brand": "silver",
+      "draft": "public/blog/do-you-have-to-report-silver-coin-purchases-to-irs/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "testimonial"
+    },
+    {
+      "slug": "using-ai-to-respond-to-google-reviews-automatically",
+      "keyword": "using AI to respond to Google reviews automatically",
+      "brand": "tech",
+      "draft": "public/blog/using-ai-to-respond-to-google-reviews-automatically/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "ai-tools-for-restaurant-ordering-and-menu-management",
+      "keyword": "AI tools for restaurant ordering and menu management",
+      "brand": "tech",
+      "draft": "public/blog/ai-tools-for-restaurant-ordering-and-menu-management/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}
