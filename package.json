@@ -34,6 +34,8 @@
     "social:buffer:verify-media": "node public/blog/scripts/verify-buffer-media-urls.mjs",
     "social:buffer:live": "node public/blog/scripts/buffer-live.mjs",
     "social:blog-video-links": "node public/blog/scripts/sync-social-video-links.mjs",
+    "social:blog-pending-reel": "node public/blog/scripts/sync-pending-reel-slot.mjs",
+    "social:reel-blog-audit": "node scripts/reel-blog-audit.mjs",
     "social:blog-reel-cleanup": "node public/blog/scripts/remove-generic-watch-lists.mjs",
     "social:buffer:instagram:plan": "node public/blog/scripts/prepare-buffer-instagram-queue.mjs",
     "social:buffer:metrics": "node scripts/buffer-performance-snapshot.mjs",

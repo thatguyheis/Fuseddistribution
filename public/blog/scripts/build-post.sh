@@ -202,6 +202,10 @@ else
   log "T10 social"; "$SD/build-social.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark social || log "social failed"
 fi
 
+# Keep the blog honest while the rendered reel waits for release or social
+# publication. The panel is replaced by sync-social-video-links.mjs later.
+log "pending reel slot"; node "$SD/sync-pending-reel-slot.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "pending reel slot skipped"
+
 # ── Optional Claude enhancement stages ──
 # These are useful, but they are not production-critical. They can consume plan quota
 # and hang behind launchd, so the daily path skips them unless explicitly enabled.

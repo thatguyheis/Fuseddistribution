@@ -53,6 +53,7 @@ const socialVideoPath = join(postDir, "social-video.json");
 const socialVideo = existsSync(socialVideoPath)
   ? JSON.parse(readFileSync(socialVideoPath, "utf8"))
   : null;
+const reelArtifactsExist = existsSync(join(postDir, "reel-data.md")) || existsSync(join(postDir, "reel-script.md"));
 
 // Resolve body source
 let bodyPath = args.body;
@@ -156,7 +157,7 @@ const B = meta.brand === "silver"
       ctaLine: meta.ctaLine || "Get a website that brings in local customers." };
 
 const ogDesc = meta.ogDescription || meta.description;
-const socialVideoHtml = renderSocialVideo(socialVideo, meta.title);
+const socialVideoHtml = renderSocialVideo(socialVideo, meta.title, reelArtifactsExist);
 const bodyHtml = placeSocialVideoInBody(mdToHtml(rawBody), socialVideoHtml);
 
 function placeSocialVideoInBody(body, video) {
@@ -299,6 +300,7 @@ h1 {
 .social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
 .social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
 .social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
+.social-video-pending { padding: 18px; border: 1px dashed rgba(88, 214, 255, 0.32); border-radius: 14px; color: var(--accent); text-align: center; font-weight: 800; letter-spacing: 0.04em; }
 .sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
 .sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
 .sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
@@ -525,13 +527,16 @@ function sameOriginVideoUrl(url) {
   return `https://fuseddistribution.com${prefix}${reelSlug}/${filename}`;
 }
 
-function renderSocialVideo(data, title) {
+function renderSocialVideo(data, title, reelArtifactsExist = false) {
   const platforms = data?.platforms || {};
   const youtube = validUrl(platforms.youtube?.url, /^https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i);
   const instagram = validUrl(platforms.instagram?.url, /^https:\/\/(?:www\.)?instagram\.com\/reel\//i);
   const x = validUrl(platforms.x?.url, /^https:\/\/x\.com\/[^/]+\/status\/\d+/i);
   const primaryVideo = validUrl(data?.primaryVideo?.url, /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i);
-  if (!primaryVideo && !youtube && !instagram && !x) return '';
+  if (!primaryVideo && !youtube && !instagram && !x) {
+    if (!reelArtifactsExist) return '';
+    return '<aside class="social-video" aria-label="Reel publication status"><h2>Reel coming soon</h2><p>The reel for this article is being prepared and will be published here soon.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>';
+  }
 
   const links = [
     youtube && `<li><a href="${esc(youtube)}" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></li>`,
