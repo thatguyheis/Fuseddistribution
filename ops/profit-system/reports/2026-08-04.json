@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-05T04:09:20.674Z",
+  "score": -51.864509069641706,
+  "rawScore": -51.864509069641706,
+  "eventScore": -47,
+  "leadingIndicators": {
+    "score": -4.864509069641707,
+    "rawScore": -4.864509069641707,
+    "status": "comparable",
+    "comparisons": [
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0,
+        "baselineMedian": 0.17759999999999998,
+        "samplePosts": 6,
+        "relativeDelta": -1,
+        "points": -0.75
+      },
+      {
+        "postId": "6a7229291b838d50df0401c2",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229291b838d50df0401c2",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0,
+        "baselineMedian": 0.2581,
+        "samplePosts": 6,
+        "relativeDelta": -1,
+        "points": -1
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0,
+        "baselineMedian": 0.17759999999999998,
+        "samplePosts": 6,
+        "relativeDelta": -1,
+        "points": -0.75
+      },
+      {
+        "postId": "6a7229275c12454910e9f9e1",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229275c12454910e9f9e1",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0,
+        "baselineMedian": 0.2581,
+        "samplePosts": 6,
+        "relativeDelta": -1,
+        "points": -1
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0,
+        "baselineMedian": 0.17759999999999998,
+        "samplePosts": 6,
+        "relativeDelta": -1,
+        "points": -0.75
+      },
+      {
+        "postId": "6a722926bc97c17e7be55a7d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722926bc97c17e7be55a7d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0.1323,
+        "baselineMedian": 0.2581,
+        "samplePosts": 6,
+        "relativeDelta": -0.48740798140255714,
+        "points": -0.48740798140255714
+      },
+      {
+        "postId": "6a700d055dc5613cefe80912",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a700d055dc5613cefe80912",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 4.1367,
+        "baselineMedian": 3.8135,
+        "samplePosts": 3,
+        "relativeDelta": 0.08475154057952022,
+        "points": 0.08475154057952022
+      },
+      {
+        "postId": "6a700d04aacd241cfdb50f13",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a700d04aacd241cfdb50f13",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 3.4567,
+        "baselineMedian": 3.8135,
+        "samplePosts": 3,
+        "relativeDelta": -0.09356234430313355,
+        "points": -0.09356234430313355
+      },
+      {
+        "postId": "6a700d0398d2f31dff16596c",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a700d0398d2f31dff16596c",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 3.3624,
+        "baselineMedian": 3.8135,
+        "samplePosts": 3,
+        "relativeDelta": -0.11829028451553687,
+        "points": -0.11829028451553687
+      }
+    ],
+    "insight": {
+      "status": "observed",
+      "statement": "instagram currently leads mature-post views with 107.0 average views across 3 post(s); treat this as an observed baseline until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 8,
+    "trailingMedianScore": -51,
+    "deltaVsMedian": -0.8645090696417057,
+    "direction": "regressed"
+  },
+  "rewards": [
+    {
+      "id": "663678ab-abda-44c1-a5cf-ecb97cea1956",
+      "occurredAt": "2026-08-05T04:09:09.717Z",
+      "date": "2026-08-04",
+      "kind": "reward",
+      "type": "high_quality_delivery",
+      "fingerprint": "blog-live-verification-2026-08-04",
+      "value": 1,
+      "evidence": "Authoritative live verification on August 5, 2026 returned HTTP 200 for instagram-marketing-for-local-business, silver-ira-how-to-set-one-up-step-by-step, https://fuseddistribution.com/blog/posts.json, and https://fuseddistribution.com/sitemap.xml; local posts.json also registered both August 4 slugs.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    },
+    {
+      "id": "503f864a-f1f0-40d8-81d7-dea8c99f1a9a",
+      "occurredAt": "2026-08-05T04:09:09.872Z",
+      "date": "2026-08-04",
+      "kind": "reward",
+      "type": "recovered_checkpoint",
+      "fingerprint": "silver-ira-render-recovered-2026-08-04",
+      "value": 1,
+      "evidence": "An out-of-sandbox replay on August 4, 2026 rendered silver-ira-how-to-set-one-up-step-by-step to retained MP4 output and release-qa.json pass=true after the earlier sandboxed Remotion run failed to launch Chromium.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    },
+    {
+      "id": "b463965f-de8f-4cb7-9534-1f12e9fa50f0",
+      "occurredAt": "2026-08-05T04:09:10.354Z",
+      "date": "2026-08-04",
+      "kind": "reward",
+      "type": "prevented_failure",
+      "fingerprint": "profit-audit-blocked-slugs-accounted-2026-08-04",
+      "value": 1,
+      "evidence": "profit:audit now reads .workflow-blocked date status files and tests/profit-sop-audit.test.mjs prevents explicitly blocked queue slugs from being misclassified as missing.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 3,
+      "multiplier": 1,
+      "weight": 3
+    }
+  ],
+  "penalties": [
+    {
+      "id": "b90af711-a655-447b-a00c-d02ebac912fa",
+      "occurredAt": "2026-08-05T04:09:09.412Z",
+      "date": "2026-08-04",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-2026-08-04-quality-blocked",
+      "value": 2,
+      "evidence": "The 2026-08-04 queue expected four slugs, but silver-in-an-llc-vs-personal-ownership-tax-differences and how-to-speed-up-your-small-business-website were quarantined under .workflow-blocked/2026-08-04 and both live canonical URLs returned HTTP 404 on August 5, 2026.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -32,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "37b6a0ac-4187-420c-b5df-9381fa5141ea",
+      "occurredAt": "2026-08-05T04:09:10.028Z",
+      "date": "2026-08-04",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-pending-2026-08-04",
+      "value": 1,
+      "evidence": "By the August 5, 2026 operating audit for August 4, 2026, silver-ira-how-to-set-one-up-step-by-step still had release-qa.json manualCaptionReview=false and readyForPosting=false, and instagram-marketing-for-local-business still lacked a release-qa.json while its recovery render remained in progress.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "f1ffa136-a5bd-4b06-8045-c6e9bc0ebb36",
+      "occurredAt": "2026-08-05T04:09:10.175Z",
+      "date": "2026-08-04",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "profit-audit-blocked-slugs-hard-stop-2026-08-04",
+      "value": 1,
+      "evidence": "Before the August 5, 2026 patch, profit:audit treated explicitly blocked August 4 queue slugs as incomplete missing registrations and exited with an operational hard stop instead of accounting for .workflow-blocked/2026-08-04 evidence.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-04",
+      "expectedSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences",
+        "silver-ira-how-to-set-one-up-step-by-step",
+        "how-to-speed-up-your-small-business-website",
+        "instagram-marketing-for-local-business"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "how-to-speed-up-your-small-business-website",
+        "silver-in-an-llc-vs-personal-ownership-tax-differences"
+      ],
+      "registeredQueueSlugs": [
+        "silver-ira-how-to-set-one-up-step-by-step",
+        "instagram-marketing-for-local-business"
+      ],
+      "blockedQueueSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences",
+        "how-to-speed-up-your-small-business-website"
+      ],
+      "missingRegisteredSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences",
+        "how-to-speed-up-your-small-business-website"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

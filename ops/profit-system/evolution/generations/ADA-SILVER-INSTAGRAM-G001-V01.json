@@ -1,0 +1,33 @@
+{
+  "geneticId": "ADA-SILVER-INSTAGRAM-G001-V01",
+  "parentGeneticId": null,
+  "generation": 1,
+  "variant": 1,
+  "agentId": "hermes-local",
+  "brand": "silver",
+  "platform": "instagram",
+  "slug": "how-to-calculate-your-average-cost-per-ounce-silver",
+  "bufferPostId": null,
+  "status": "registered",
+  "genes": {
+    "hookType": "immediate-value",
+    "openingSeconds": 5,
+    "durationBucket": "100-139",
+    "segmentDensity": "medium",
+    "visualPattern": "stat-led",
+    "captionPattern": "specific-question",
+    "questionType": "binary-choice",
+    "musicMode": "approved-cycle",
+    "voiceProfile": "nick-chatterbox-v1"
+  },
+  "mutation": {
+    "gene": "hookType",
+    "from": "generic-stat",
+    "to": "immediate-value",
+    "reason": "Test"
+  },
+  "qualityScores": {},
+  "bufferSnapshots": {},
+  "fitness": null,
+  "decision": null
+}

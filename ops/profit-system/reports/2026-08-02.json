@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "date": "2026-08-02",
+  "generatedAt": "2026-08-03T03:39:52.240Z",
+  "score": -60.631901430561705,
+  "rawScore": -60.631901430561705,
+  "eventScore": -65,
+  "leadingIndicators": {
+    "score": 4.368098569438298,
+    "rawScore": 4.368098569438298,
+    "status": "comparable",
+    "comparisons": [
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 9.09,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.0754,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": 0.580712788259958,
+        "points": 0.4355345911949685
+      },
+      {
+        "postId": "6a674e6b78b372bff4642e39",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 7.14,
+        "baselineMedian": 9.09,
+        "samplePosts": 5,
+        "relativeDelta": -0.21452145214521454,
+        "points": -0.5363036303630363
+      },
+      {
+        "postId": "6a674e6b78b372bff4642e39",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 0.096,
+        "baselineMedian": 0.0887,
+        "samplePosts": 5,
+        "relativeDelta": 0.08229988726042842,
+        "points": 0.08229988726042842
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.0752,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": 0.5765199161425577,
+        "points": 0.4323899371069183
+      },
+      {
+        "postId": "6a674e18224d9daaf5f685d3",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 2.56,
+        "baselineMedian": 9.09,
+        "samplePosts": 5,
+        "relativeDelta": -0.7183718371837183,
+        "points": -1.7959295929592958
+      },
+      {
+        "postId": "6a674e18224d9daaf5f685d3",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 1.0661,
+        "baselineMedian": 0.0887,
+        "samplePosts": 5,
+        "relativeDelta": 11.019165727170238,
+        "points": 1
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.0203,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": -0.5744234800838575,
+        "points": -0.4308176100628931
+      },
+      {
+        "postId": "6a674e17d2a03dd5e30bad04",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 9.09,
+        "baselineMedian": 7.69,
+        "samplePosts": 5,
+        "relativeDelta": 0.1820546163849154,
+        "points": 0.4551365409622885
+      },
+      {
+        "postId": "6a674e17d2a03dd5e30bad04",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 0.0743,
+        "baselineMedian": 0.1033,
+        "samplePosts": 5,
+        "relativeDelta": -0.2807357212003872,
+        "points": -0.2807357212003872
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.04,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": -0.16142557651991613,
+        "points": -0.1210691823899371
+      },
+      {
+        "postId": "6a67bd3ce2cb6435dcc4eb94",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 25,
+        "baselineMedian": 7.69,
+        "samplePosts": 5,
+        "relativeDelta": 2.250975292587776,
+        "points": 2.5
+      },
+      {
+        "postId": "6a67bd3ce2cb6435dcc4eb94",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 0.0267,
+        "baselineMedian": 0.1033,
+        "samplePosts": 5,
+        "relativeDelta": -0.7415295256534365,
+        "points": -0.7415295256534365
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.04,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": -0.16142557651991613,
+        "points": -0.1210691823899371
+      },
+      {
+        "postId": "6a674e1678b372bff46429c8",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 7.69,
+        "baselineMedian": 9.09,
+        "samplePosts": 5,
+        "relativeDelta": -0.15401540154015395,
+        "points": -0.38503850385038485
+      },
+      {
+        "postId": "6a674e1678b372bff46429c8",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 0.0868,
+        "baselineMedian": 0.0887,
+        "samplePosts": 5,
+        "relativeDelta": -0.0214205186020293,
+        "points": -0.0214205186020293
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d7",
+        "metric": "impressionsPerHour",
+        "value": 0.033,
+        "baselineMedian": 0.0477,
+        "samplePosts": 5,
+        "relativeDelta": -0.30817610062893075,
+        "points": -0.23113207547169806
+      },
+      {
+        "postId": "6a674e15a361925e189df713",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "engagementRate",
+        "value": 50,
+        "baselineMedian": 7.69,
+        "samplePosts": 5,
+        "relativeDelta": 5.501950585175552,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e15a361925e189df713",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "youtube",
+        "ageBucket": "d7",
+        "metric": "viewsPerHour",
+        "value": 0.0132,
+        "baselineMedian": 0.1033,
+        "samplePosts": 5,
+        "relativeDelta": -0.8722168441432719,
+        "points": -0.8722168441432719
+      }
+    ],
+    "insight": {
+      "status": "observed",
+      "statement": "youtube currently leads mature-post views with 26.5 average views across 15 post(s); treat this as an observed baseline until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 6,
+    "trailingMedianScore": -51,
+    "deltaVsMedian": -9.631901430561705,
+    "direction": "regressed"
+  },
+  "rewards": [
+    {
+      "id": "eae76563-93b8-4b60-8006-38c806d824bf",
+      "occurredAt": "2026-08-03T03:39:44.892Z",
+      "date": "2026-08-02",
+      "kind": "reward",
+      "type": "recovered_checkpoint",
+      "fingerprint": "instagram-backfill-scheduled-2026-08-02",
+      "value": 1,
+      "evidence": "On Monday, August 3, 2026, live Buffer readback confirmed three recovered Instagram Reel checkpoints scheduled with retained video/mp4 assets for best-appointment-booking-tools-for-small-business-2026, how-online-booking-reduces-no-shows, and largest-silver-producing-countries-in-the-world after the August 2 ready backlog had been left unscheduled.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    },
+    {
+      "id": "c294f201-d369-433e-a459-b331a8af96ac",
+      "occurredAt": "2026-08-03T03:39:44.899Z",
+      "date": "2026-08-02",
+      "kind": "reward",
+      "type": "prevented_failure",
+      "fingerprint": "profit-audit-complete-marker-missing-slug-guard",
+      "value": 1,
+      "evidence": "Added a deterministic profit-audit guard plus a regression test so a dated complete marker can no longer mark an operating day complete when expected queue slugs are still missing from public/blog/posts.json.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 3,
+      "multiplier": 1,
+      "weight": 3
+    }
+  ],
+  "penalties": [
+    {
+      "id": "fb86116c-679f-479b-abc3-a41b5bfd58e5",
+      "occurredAt": "2026-08-02T21:37:10.165Z",
+      "date": "2026-08-02",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "instagram-ready-backlog-unscheduled-2026-08-02",
+      "value": 1,
+      "evidence": "Instagram ready backlog remains unscheduled while Buffer live count is zero; fresh Instagram planner failed because the verified YouTube queue had no selected jobs.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "b235fac6-fa70-4d46-9e33-8a7bd559e3b5",
+      "occurredAt": "2026-08-03T03:39:44.889Z",
+      "date": "2026-08-02",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-2026-08-02-tech-slug-quality-blocked",
+      "value": 1,
+      "evidence": "The 2026-08-02 queue expected four slugs, but how-to-train-your-team-on-ai-tools-step-by-step was quarantined under .workflow-blocked/2026-08-02 after qa-local blockers for an unreplaced bracket placeholder and repeated H2 sections, so only three slugs reached posts.json and live 200 status.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "3ff818e0-aa43-4d36-8ea2-3c12fca3c72d",
+      "occurredAt": "2026-08-03T03:39:44.896Z",
+      "date": "2026-08-02",
+      "kind": "penalty",
+      "type": "false_success_claim",
+      "fingerprint": "profit-report-closed-with-missing-slug-2026-08-02",
+      "value": 1,
+      "evidence": "ops/profit-system/reports/2026-08-02.{json,md} marked the operating day complete even though public/blog/research/2026-08-02-complete.json existed while how-to-train-your-team-on-ai-tools-step-by-step never reached posts.json or a live URL.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -40,
+      "multiplier": 1,
+      "weight": 40
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "false_success_claim",
+      "fingerprint": "profit-report-closed-with-missing-slug-2026-08-02",
+      "evidence": "ops/profit-system/reports/2026-08-02.{json,md} marked the operating day complete even though public/blog/research/2026-08-02-complete.json existed while how-to-train-your-team-on-ai-tools-step-by-step never reached posts.json or a live URL."
+    },
+    {
+      "type": "incomplete_blog_registration",
+      "fingerprint": "blog-registration-2026-08-02",
+      "evidence": "public/blog/research/2026-08-02-complete.json exists, but expected queue slugs are still missing from public/blog/posts.json for 2026-08-02: how-to-train-your-team-on-ai-tools-step-by-step."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-02",
+      "expectedSlugs": [
+        "irs-rules-for-selling-silver-coins-1099-b-reporting",
+        "state-sales-tax-on-silver-coins-which-states-charge-it",
+        "how-to-train-your-team-on-ai-tools-step-by-step",
+        "ai-for-bookkeeping-small-business-tools-compared"
+      ],
+      "pendingRemaining": [],
+      "registeredQueueSlugs": [
+        "irs-rules-for-selling-silver-coins-1099-b-reporting",
+        "state-sales-tax-on-silver-coins-which-states-charge-it",
+        "ai-for-bookkeeping-small-business-tools-compared"
+      ],
+      "missingRegisteredSlugs": [
+        "how-to-train-your-team-on-ai-tools-step-by-step"
+      ],
+      "completeExists": true,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_registration",
+          "fingerprint": "blog-registration-2026-08-02",
+          "evidence": "public/blog/research/2026-08-02-complete.json exists, but expected queue slugs are still missing from public/blog/posts.json for 2026-08-02: how-to-train-your-team-on-ai-tools-step-by-step."
+        }
+      ]
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "profit-report-closed-with-missing-slug-2026-08-02",
+      "problemType": "false_success_claim",
+      "occurrences": 1,
+      "proposedControl": "Add or strengthen a deterministic prevention check for profit-report-closed-with-missing-slug-2026-08-02.",
+      "evidence": "ops/profit-system/reports/2026-08-02.{json,md} marked the operating day complete even though public/blog/research/2026-08-02-complete.json existed while how-to-train-your-team-on-ai-tools-step-by-step never reached posts.json or a live URL.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

@@ -1,0 +1,2738 @@
+{
+  "version": 1,
+  "date": "2026-08-05",
+  "capturedAt": "2026-08-05T20:41:57.087Z",
+  "source": "buffer_api",
+  "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours.",
+  "lookbackDays": 28,
+  "summary": {
+    "posts": 40,
+    "metricsAvailable": 40,
+    "maturePosts": 31,
+    "byPlatform": {
+      "instagram": {
+        "posts": 9,
+        "metricsAvailable": 9,
+        "views": 1002,
+        "averageViews": 111.33,
+        "impressions": null,
+        "averageImpressions": null,
+        "averageViewDurationSeconds": null
+      },
+      "twitter": {
+        "posts": 17,
+        "metricsAvailable": 17,
+        "views": null,
+        "averageViews": null,
+        "impressions": 93,
+        "averageImpressions": 5.47,
+        "averageViewDurationSeconds": null
+      },
+      "youtube": {
+        "posts": 14,
+        "metricsAvailable": 14,
+        "views": 399,
+        "averageViews": 28.5,
+        "impressions": null,
+        "averageImpressions": null,
+        "averageViewDurationSeconds": null
+      }
+    }
+  },
+  "insight": {
+    "status": "observed",
+    "statement": "instagram currently leads mature-post views with 109.7 average views across 6 post(s); treat this as an observed baseline until matched creative samples accumulate."
+  },
+  "posts": [
+    {
+      "postId": "6a722936343e45dde78bba9b",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "sentAt": "2026-08-04T23:30:16.665Z",
+      "ageHours": 21.19,
+      "ageBucket": "d1",
+      "externalLink": "https://x.com/290904877/status/2084784011658862867",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.766Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 3,
+      "impressionsPerHour": 0.1415,
+      "clicks": 0,
+      "engagementRate": 66.67,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 66.67,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 3,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a7229291b838d50df0401c2",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "sentAt": "2026-08-04T23:30:23.066Z",
+      "ageHours": 21.19,
+      "ageBucket": "d1",
+      "externalLink": "https://www.youtube.com/shorts/dxdxINOo_sU",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.351Z",
+      "metricsAvailable": true,
+      "views": 0,
+      "viewsPerHour": 0,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a715f6920d3689200b1c8d5",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-04T23:33:23.992Z",
+      "ageHours": 21.14,
+      "ageBucket": "d1",
+      "externalLink": "https://www.instagram.com/reel/Dbov8PZCcAI/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 126,
+      "viewsPerHour": 5.9596,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 126,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 117,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a7229357b1a5f76fe647859",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "sentAt": "2026-08-04T21:45:16.117Z",
+      "ageHours": 22.94,
+      "ageBucket": "d1",
+      "externalLink": "https://x.com/290904877/status/2084757585098403893",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.766Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 4,
+      "impressionsPerHour": 0.1743,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 4,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a7229275c12454910e9f9e1",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "sentAt": "2026-08-04T21:45:04.262Z",
+      "ageHours": 22.95,
+      "ageBucket": "d1",
+      "externalLink": "https://www.youtube.com/shorts/klpqGNTeuEo",
+      "metricsUpdatedAt": "2026-08-05T15:10:29.897Z",
+      "metricsAvailable": true,
+      "views": 1,
+      "viewsPerHour": 0.0436,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 1,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a715f6820d3689200b1c8b0",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-04T21:46:01.648Z",
+      "ageHours": 22.93,
+      "ageBucket": "d1",
+      "externalLink": "https://www.instagram.com/reel/Dboj1kCDiQ4/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 105,
+      "viewsPerHour": 4.5787,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 105,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 101,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a722933343e45dde78bba5d",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "sentAt": "2026-08-04T20:00:21.496Z",
+      "ageHours": 24.69,
+      "ageBucket": "d1",
+      "externalLink": "https://x.com/290904877/status/2084731183737270657",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 6,
+      "impressionsPerHour": 0.243,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 6,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a722926bc97c17e7be55a7d",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "sentAt": "2026-08-04T20:00:18.064Z",
+      "ageHours": 24.69,
+      "ageBucket": "d1",
+      "externalLink": "https://www.youtube.com/shorts/tVP1UCPWII4",
+      "metricsUpdatedAt": "2026-08-05T15:10:29.964Z",
+      "metricsAvailable": true,
+      "views": 1,
+      "viewsPerHour": 0.0405,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 1,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a715f672e9d172962a8a032",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-04T20:01:55.757Z",
+      "ageHours": 24.67,
+      "ageBucket": "d1",
+      "externalLink": "https://www.instagram.com/reel/DboX60dDwu3/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 113,
+      "viewsPerHour": 4.581,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 113,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 106,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a700d055dc5613cefe80912",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-03T23:31:20.126Z",
+      "ageHours": 45.18,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/DbmLEHJiYcG/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 118,
+      "viewsPerHour": 2.612,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0.009174311926605505,
+      "reactions": 1,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0.009174311926605505,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 118,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 109,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a700d04aacd241cfdb50f13",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-03T21:46:01.796Z",
+      "ageHours": 46.93,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/Dbl_CoZjvyQ/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 104,
+      "viewsPerHour": 2.216,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 104,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 100,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a700d0398d2f31dff16596c",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-03T20:02:20.195Z",
+      "ageHours": 48.66,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/DblzL7nEfk3/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 109,
+      "viewsPerHour": 2.24,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 109,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 101,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a6e673af93d764d9391fed9",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-02T20:01:26.300Z",
+      "ageHours": 72.68,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/DbjORdgDfXk/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 110,
+      "viewsPerHour": 1.5136,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 110,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 108,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a6e6739b738722ef881a498",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-02T01:17:56.880Z",
+      "ageHours": 91.4,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/DbhNl_gD-Gv/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 108,
+      "viewsPerHour": 1.1816,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 108,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 103,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a6e67382bbc9e0587399699",
+      "platform": "instagram",
+      "channelId": "6a67c5d64b2d03035f4f0228",
+      "slug": null,
+      "sentAt": "2026-08-01T23:31:07.697Z",
+      "ageHours": 93.18,
+      "ageBucket": "d3",
+      "externalLink": "https://www.instagram.com/reel/DbhBeDRn5_O/",
+      "metricsUpdatedAt": "2026-08-05T11:57:25.571Z",
+      "metricsAvailable": true,
+      "views": 109,
+      "viewsPerHour": 1.1698,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0,
+      "reposts": null,
+      "saves": 0,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on Instagram. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 109,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        },
+        {
+          "type": "shares",
+          "name": "Shares",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "saves",
+          "name": "Saves",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people saved your post. A strong signal that your content is worth revisiting."
+        },
+        {
+          "type": "follows",
+          "name": "Follows",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of new followers you gained from this post. Helps you see which content turns viewers into followers."
+        },
+        {
+          "type": "reach",
+          "name": "Reach",
+          "value": 102,
+          "unit": "count",
+          "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e6c53a5caee8245d55b",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "sentAt": "2026-07-28T01:45:27.356Z",
+      "ageHours": 210.94,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081918927366447274",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 12,
+      "impressionsPerHour": 0.0569,
+      "clicks": 0,
+      "engagementRate": 8.33,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 8.33,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 12,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e6b78b372bff4642e39",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "sentAt": "2026-07-28T01:45:05.870Z",
+      "ageHours": 210.95,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/0IWVHNSwRqA",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.358Z",
+      "metricsAvailable": true,
+      "views": 14,
+      "viewsPerHour": 0.0664,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 14,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e2b53a5caee8245d27d",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "sentAt": "2026-07-28T01:15:23.866Z",
+      "ageHours": 211.44,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081911362943422886",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 13,
+      "impressionsPerHour": 0.0615,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 13,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e18224d9daaf5f685d3",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "sentAt": "2026-07-28T01:15:03.944Z",
+      "ageHours": 211.45,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/vU5n11eXFpo",
+      "metricsUpdatedAt": "2026-08-05T15:10:29.953Z",
+      "metricsAvailable": true,
+      "views": 156,
+      "viewsPerHour": 0.7378,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 4,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 4,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 156,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e2a78b372bff4642a9f",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "sentAt": "2026-07-27T23:30:21.247Z",
+      "ageHours": 213.19,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081884928002658777",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 5,
+      "impressionsPerHour": 0.0235,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 5,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e17d2a03dd5e30bad04",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "sentAt": "2026-07-27T23:30:33.399Z",
+      "ageHours": 213.19,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/16NbJGDTQNs",
+      "metricsUpdatedAt": "2026-08-05T15:10:29.979Z",
+      "metricsAvailable": true,
+      "views": 11,
+      "viewsPerHour": 0.0516,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 11,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a67bd40ae149d82602f5c7c",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "sentAt": "2026-07-27T21:45:15.243Z",
+      "ageHours": 214.94,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081858478625198203",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 6,
+      "impressionsPerHour": 0.0279,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 6,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a67bd3ce2cb6435dcc4eb94",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "sentAt": "2026-07-27T21:45:05.131Z",
+      "ageHours": 214.95,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/J7NpxPwGFOk",
+      "metricsUpdatedAt": "2026-08-05T15:10:29.972Z",
+      "metricsAvailable": true,
+      "views": 4,
+      "viewsPerHour": 0.0186,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 4,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e29d2a03dd5e30bae1c",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "sentAt": "2026-07-27T21:45:16.950Z",
+      "ageHours": 214.94,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081858485889728590",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 6,
+      "impressionsPerHour": 0.0279,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 6,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e1678b372bff46429c8",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "sentAt": "2026-07-27T21:45:08.622Z",
+      "ageHours": 214.95,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/InUlcMnB1_Q",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.325Z",
+      "metricsAvailable": true,
+      "views": 13,
+      "viewsPerHour": 0.0605,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 13,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e2853a5caee8245d1e2",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "sentAt": "2026-07-27T20:00:42.265Z",
+      "ageHours": 216.69,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2081832167777116253",
+      "metricsUpdatedAt": "2026-08-05T18:50:30.767Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 5,
+      "impressionsPerHour": 0.0231,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 5,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a674e15a361925e189df713",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "sentAt": "2026-07-27T20:00:59.181Z",
+      "ageHours": 216.68,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/P2j4GGN6C3Y",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.090Z",
+      "metricsAvailable": true,
+      "views": 2,
+      "viewsPerHour": 0.0092,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 2,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a5563ab040f448f6a90c79c",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "how-online-booking-reduces-no-shows",
+      "sentAt": "2026-07-14T22:15:17.934Z",
+      "ageHours": 526.44,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2077154997515522253",
+      "metricsUpdatedAt": "2026-08-03T20:50:10.683Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 7,
+      "impressionsPerHour": 0.0133,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 7,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a55639d5d8382435193691c",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "how-online-booking-reduces-no-shows",
+      "sentAt": "2026-07-14T21:45:07.489Z",
+      "ageHours": 526.95,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/XCkHZKvvgyE",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.139Z",
+      "metricsAvailable": true,
+      "views": 12,
+      "viewsPerHour": 0.0228,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 12,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a5563aa5d83824351936a13",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "sentAt": "2026-07-14T20:30:22.954Z",
+      "ageHours": 528.19,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2077128594300502053",
+      "metricsUpdatedAt": "2026-08-02T21:50:00.852Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 10,
+      "impressionsPerHour": 0.0189,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 10,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a55639b29834f7ded998bca",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "sentAt": "2026-07-14T20:00:54.544Z",
+      "ageHours": 528.68,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/wxby6hjbs9c",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.095Z",
+      "metricsAvailable": true,
+      "views": 9,
+      "viewsPerHour": 0.017,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 9,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a5563a929834f7ded998d18",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "sentAt": "2026-07-14T01:45:12.408Z",
+      "ageHours": 546.95,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2076845434346029350",
+      "metricsUpdatedAt": "2026-08-02T21:50:00.852Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 2,
+      "impressionsPerHour": 0.0037,
+      "clicks": 0,
+      "engagementRate": 50,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 50,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 2,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a55639aa208f5b1ac0b78c2",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "sentAt": "2026-07-14T01:15:05.749Z",
+      "ageHours": 547.45,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/gCe1Z0cI8wA",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.313Z",
+      "metricsAvailable": true,
+      "views": 57,
+      "viewsPerHour": 0.1041,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 2,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 2,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 57,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a5563a85d838243519369ef",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "sentAt": "2026-07-14T00:00:27.042Z",
+      "ageHours": 548.69,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2076819071752978796",
+      "metricsUpdatedAt": "2026-08-02T21:50:00.852Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 3,
+      "impressionsPerHour": 0.0055,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 3,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a5563990a91bd784c7b79a1",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "sentAt": "2026-07-13T23:30:11.071Z",
+      "ageHours": 549.2,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/uu2vsS8UBUk",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.118Z",
+      "metricsAvailable": true,
+      "views": 30,
+      "viewsPerHour": 0.0546,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 30,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    },
+    {
+      "postId": "6a5156cbc571e283da54531a",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "sentAt": "2026-07-11T20:00:38.870Z",
+      "ageHours": 600.69,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2076033947838943311",
+      "metricsUpdatedAt": "2026-07-31T00:49:30.688Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 4,
+      "impressionsPerHour": 0.0067,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 4,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a5156ca3e68ff0f8dc18f6e",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "sms-marketing-vs-email-marketing-small-business",
+      "sentAt": "2026-07-11T01:15:13.219Z",
+      "ageHours": 619.45,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2075750724651172243",
+      "metricsUpdatedAt": "2026-07-31T00:49:30.688Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 2,
+      "impressionsPerHour": 0.0032,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 2,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a5156c9c4b9e094adf67028",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "how-to-collect-customer-contact-info-at-point-of-sale",
+      "sentAt": "2026-07-10T23:30:20.518Z",
+      "ageHours": 621.19,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2075724331062026408",
+      "metricsUpdatedAt": "2026-07-30T01:49:20.749Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 3,
+      "impressionsPerHour": 0.0048,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 3,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a5156c8c4586a8dc9993e70",
+      "platform": "twitter",
+      "channelId": "6a3e73fb5ab6d2f10674b516",
+      "slug": "word-of-mouth-marketing-strategy-small-business",
+      "sentAt": "2026-07-10T21:45:15.405Z",
+      "ageHours": 622.94,
+      "ageBucket": "mature",
+      "externalLink": "https://x.com/290904877/status/2075697885723709560",
+      "metricsUpdatedAt": "2026-07-30T01:49:20.749Z",
+      "metricsAvailable": true,
+      "views": null,
+      "viewsPerHour": null,
+      "impressions": 2,
+      "impressionsPerHour": 0.0032,
+      "clicks": 0,
+      "engagementRate": 0,
+      "reactions": 0,
+      "comments": 0,
+      "shares": null,
+      "reposts": 0,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Likes on X. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "reposts",
+          "name": "Reposts",
+          "value": 0,
+          "unit": "count",
+          "description": "Also called Retweets on X. This shows how many times your post was reposted by others. A sign your content is reaching beyond your immediate audience."
+        },
+        {
+          "type": "impressions",
+          "name": "Impressions",
+          "value": 2,
+          "unit": "count",
+          "description": "How many times your post was shown on screen. This can include multiple views by the same person. Useful for spotting how often your content gets surfaced."
+        },
+        {
+          "type": "clicks",
+          "name": "Clicks",
+          "value": 0,
+          "unit": "count",
+          "description": "How many times people clicked on your post or link. Shows when your content drives action beyond the channel it's on."
+        }
+      ]
+    },
+    {
+      "postId": "6a51568ec4b9e094adf66e1f",
+      "platform": "youtube",
+      "channelId": "6a3e63375ab6d2f1067461b2",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "sentAt": "2026-07-10T21:45:05.883Z",
+      "ageHours": 622.95,
+      "ageBucket": "mature",
+      "externalLink": "https://www.youtube.com/shorts/lvqsgBKREjA",
+      "metricsUpdatedAt": "2026-08-05T15:10:30.184Z",
+      "metricsAvailable": true,
+      "views": 89,
+      "viewsPerHour": 0.1429,
+      "impressions": null,
+      "impressionsPerHour": null,
+      "clicks": null,
+      "engagementRate": 0,
+      "reactions": 1,
+      "comments": 0,
+      "shares": null,
+      "reposts": null,
+      "saves": null,
+      "totalTimeWatchedMinutes": null,
+      "averageViewDurationSeconds": null,
+      "rawMetrics": [
+        {
+          "type": "reactions",
+          "name": "Reactions",
+          "value": 1,
+          "unit": "count",
+          "description": "Also called Likes on YouTube. This shows how many people reacted to your post."
+        },
+        {
+          "type": "comments",
+          "name": "Comments",
+          "value": 0,
+          "unit": "count",
+          "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen."
+        },
+        {
+          "type": "engagementRate",
+          "name": "Eng. Rate",
+          "value": 0,
+          "unit": "percentage",
+          "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are."
+        },
+        {
+          "type": "views",
+          "name": "Views",
+          "value": 89,
+          "unit": "count",
+          "description": "How many times your video was watched. Helps you understand how much attention your video content gets."
+        }
+      ]
+    }
+  ]
+}

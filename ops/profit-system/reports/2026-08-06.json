@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-07T03:33:58.168Z",
+  "score": -16,
+  "rawScore": -16,
+  "eventScore": -16,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 10,
+    "trailingMedianScore": -47.5,
+    "deltaVsMedian": 31.5,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "1398cd9b-1d65-4d0a-8649-eed7486188c6",
+      "occurredAt": "2026-08-07T03:33:53.438Z",
+      "date": "2026-08-06",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "Buffer metric snapshot requests failed on 2026-08-05 and 2026-08-06; no same-date API snapshot is available, so matched leading-indicator evidence remains unavailable.",
+      "source": "automation",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-06",
+      "expectedSlugs": [
+        "silver-ira-vs-physical-silver-at-home-which-is-better",
+        "best-silver-ira-custodians-compared-2026",
+        "google-business-profile-setup-guide",
+        "online-booking-system-for-small-business"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "silver-ira-vs-physical-silver-at-home-which-is-better",
+        "best-silver-ira-custodians-compared-2026",
+        "google-business-profile-setup-guide",
+        "online-booking-system-for-small-business"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

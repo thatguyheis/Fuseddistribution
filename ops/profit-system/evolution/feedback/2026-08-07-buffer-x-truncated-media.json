@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "feedbackId": "buffer-x-truncated-media-2026-08-07",
+  "recordedAt": "2026-08-07T13:07:47.000Z",
+  "operatingDate": "2026-08-07",
+  "system": "algorithmic-darwinism-architect",
+  "classification": "operational_quality_escape",
+  "slug": "selling-silver-to-a-dealer-vs-private-sale",
+  "platform": "x",
+  "bufferPostId": "6a74a9305cec20265cdaa839",
+  "geneticId": null,
+  "registrationGap": "This legacy backlog post had no pre-registered ADA generation, so it cannot be scored as a valid evolutionary sample.",
+  "userFeedback": "The Buffer video was broken and appeared not to be a full video; fix it and reschedule it.",
+  "contentHook": "Dealers add significant fees (5-15% premiums) to silver sales, often hidden, unlike private sales which avoid these markups.",
+  "evidence": {
+    "sourceDurationSeconds": 182.485,
+    "sourceBytes": 163279741,
+    "brokenXDurationSeconds": 0.333333,
+    "brokenXBytes": 30926,
+    "correctedXDurationSeconds": 135,
+    "correctedXBytes": 6364722,
+    "expectedMinimumXDurationSeconds": 134
+  },
+  "rootCause": "The X media preparation and queue gates enforced maximum duration, maximum size, codec, and decodability but did not enforce a minimum duration relative to the source. Remote verification also accepted a tiny video/mp4 object without proving it matched the local platform copy.",
+  "correction": "Regenerated the X cutdown from the valid source, added source-relative truncation rejection during media preparation and queue planning, and added hosted/local byte-parity verification.",
+  "controlsAdded": [
+    "Reject output shorter than min(source duration, X cutdown limit) minus one second.",
+    "Reject a hosted media object whose reported byte length differs from the verified local platform copy.",
+    "Regression-test the observed 182.485-second source to 0.333333-second output failure."
+  ],
+  "fitness": {
+    "eligible": false,
+    "reason": "Broken distribution media invalidates performance evidence and must not influence survivor selection."
+  },
+  "resolution": {
+    "rescheduledBufferPostId": "6a75d95a018a9e80fc7c4381",
+    "dueAt": "2026-08-07T16:00:00.000Z",
+    "dueAtLocal": "2026-08-07T09:00:00-07:00",
+    "bufferStatus": "scheduled",
+    "verifiedVideoAsset": true
+  },
+  "status": "corrected_and_rescheduled"
+}

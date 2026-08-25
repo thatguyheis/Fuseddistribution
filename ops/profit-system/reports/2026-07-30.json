@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "date": "2026-07-30",
+  "generatedAt": "2026-07-31T03:43:54.881Z",
+  "score": -14,
+  "rawScore": -14,
+  "eventScore": -26,
+  "leadingIndicators": {
+    "score": 12,
+    "rawScore": 15.990829158661132,
+    "status": "comparable",
+    "comparisons": [
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 11.11,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e6c53a5caee8245d55b",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.1217,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": 0.09738503155996397,
+        "points": 0.07303877366997298
+      },
+      {
+        "postId": "6a674e6b78b372bff4642e39",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 7.69,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e6b78b372bff4642e39",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 0.1758,
+        "baselineMedian": 0.1528,
+        "samplePosts": 5,
+        "relativeDelta": 0.15052356020942423,
+        "points": 0.15052356020942423
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2b53a5caee8245d27d",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.1477,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": 0.3318304779080252,
+        "points": 0.24887285843101892
+      },
+      {
+        "postId": "6a674e18224d9daaf5f685d3",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 2.56,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e18224d9daaf5f685d3",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 2.0951,
+        "baselineMedian": 0.1528,
+        "samplePosts": 5,
+        "relativeDelta": 12.711387434554974,
+        "points": 1
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2a78b372bff4642a9f",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.0394,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": -0.6447249774571687,
+        "points": -0.48354373309287657
+      },
+      {
+        "postId": "6a674e17d2a03dd5e30bad04",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 9.09,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e17d2a03dd5e30bad04",
+        "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 0.1444,
+        "baselineMedian": 0.1848,
+        "samplePosts": 5,
+        "relativeDelta": -0.21861471861471857,
+        "points": -0.21861471861471857
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a67bd40ae149d82602f5c7c",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.077,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": -0.3056807935076646,
+        "points": -0.22926059513074842
+      },
+      {
+        "postId": "6a67bd3ce2cb6435dcc4eb94",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 25,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a67bd3ce2cb6435dcc4eb94",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 0.0513,
+        "baselineMedian": 0.1848,
+        "samplePosts": 5,
+        "relativeDelta": -0.7224025974025975,
+        "points": -0.7224025974025975
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e29d2a03dd5e30bae1c",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.077,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": -0.3056807935076646,
+        "points": -0.22926059513074842
+      },
+      {
+        "postId": "6a674e1678b372bff46429c8",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 7.69,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e1678b372bff46429c8",
+        "slug": "ai-tools-for-small-business-marketing-in-2026",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 0.1668,
+        "baselineMedian": 0.1528,
+        "samplePosts": 5,
+        "relativeDelta": 0.09162303664921474,
+        "points": 0.09162303664921474
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a674e2853a5caee8245d1e2",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "twitter",
+        "ageBucket": "d3",
+        "metric": "impressionsPerHour",
+        "value": 0.0627,
+        "baselineMedian": 0.1109,
+        "samplePosts": 5,
+        "relativeDelta": -0.4346257889990982,
+        "points": -0.3259693417493237
+      },
+      {
+        "postId": "6a674e15a361925e189df713",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 50,
+        "baselineMedian": 0,
+        "samplePosts": 5,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a674e15a361925e189df713",
+        "slug": "largest-silver-producing-countries-in-the-world",
+        "platform": "youtube",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 0.0251,
+        "baselineMedian": 0.1848,
+        "samplePosts": 5,
+        "relativeDelta": -0.8641774891774892,
+        "points": -0.8641774891774892
+      }
+    ],
+    "insight": {
+      "status": "directional_only",
+      "statement": "instagram currently leads mature-post views with 118.0 average views across 1 post(s); treat this as directional only until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 3,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 34,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "91f0f994-e407-463f-97ab-ad22854b4345",
+      "occurredAt": "2026-07-31T03:43:46.990Z",
+      "date": "2026-07-30",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "retry-launchagent-reload-io-error",
+      "value": 1,
+      "evidence": "After the July 29 recovery completed on July 30, 2026, the retry plist on disk was rewritten for BLOG_RUN_DATE 2026-07-30 at 15:37 PDT, but launchctl still held the stale 2026-07-29 15:32 registration. Manual bootout/bootstrap and load attempts on July 31, 2026 failed with 'Bootstrap failed: 5: Input/output error', leaving the retry label unloaded until Codex patched explicit deferred-reload verification and failure logging.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    },
+    {
+      "id": "01990408-a920-46db-ba08-a4a163deb5cf",
+      "occurredAt": "2026-07-31T03:43:46.990Z",
+      "date": "2026-07-30",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-july-30-queue-incomplete",
+      "value": 1,
+      "evidence": "public/blog/research/2026-07-30-pending.json still lists solar-panel-demand-silver-price-impact-2026, silver-price-all-time-high-when-will-it-happen-again, how-to-build-ai-prompts-that-actually-work, and ai-writing-tools-comparison-for-small-business on July 31, 2026; all four live canonical URLs returned HTTP 404 and each slug still lacked required blog and reel artifacts locally.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-07-30",
+      "evidence": "public/blog/research/2026-07-30-pending.json still lists 4 remaining slug(s): solar-panel-demand-silver-price-impact-2026, silver-price-all-time-high-when-will-it-happen-again, how-to-build-ai-prompts-that-actually-work, ai-writing-tools-comparison-for-small-business."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-07-30",
+      "expectedSlugs": [
+        "solar-panel-demand-silver-price-impact-2026",
+        "silver-price-all-time-high-when-will-it-happen-again",
+        "how-to-build-ai-prompts-that-actually-work",
+        "ai-writing-tools-comparison-for-small-business"
+      ],
+      "pendingRemaining": [
+        "solar-panel-demand-silver-price-impact-2026",
+        "silver-price-all-time-high-when-will-it-happen-again",
+        "how-to-build-ai-prompts-that-actually-work",
+        "ai-writing-tools-comparison-for-small-business"
+      ],
+      "registeredQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "solar-panel-demand-silver-price-impact-2026",
+        "silver-price-all-time-high-when-will-it-happen-again",
+        "how-to-build-ai-prompts-that-actually-work",
+        "ai-writing-tools-comparison-for-small-business"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-07-30",
+          "evidence": "public/blog/research/2026-07-30-pending.json still lists 4 remaining slug(s): solar-panel-demand-silver-price-impact-2026, silver-price-all-time-high-when-will-it-happen-again, how-to-build-ai-prompts-that-actually-work, ai-writing-tools-comparison-for-small-business."
+        }
+      ]
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": false
+}

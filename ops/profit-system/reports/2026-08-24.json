@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-25T04:30:57.060Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 26,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 0,
+    "direction": "flat"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "1654dd17-912c-4784-8ec4-df28cb2569fe",
+      "occurredAt": "2026-08-25T03:32:24.715Z",
+      "date": "2026-08-24",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-24 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-08-24",
+      "evidence": "public/blog/research/2026-08-24-pending.json still lists 1 remaining slug(s): engelhard-silver-bars-history-and-collector-value."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-24",
+      "expectedSlugs": [
+        "engelhard-silver-bars-history-and-collector-value",
+        "johnson-matthee-silver-bars-guide",
+        "small-business-website-mistakes-to-avoid",
+        "why-your-website-isnt-getting-customers"
+      ],
+      "pendingRemaining": [
+        "engelhard-silver-bars-history-and-collector-value"
+      ],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "johnson-matthee-silver-bars-guide",
+        "small-business-website-mistakes-to-avoid",
+        "why-your-website-isnt-getting-customers"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "engelhard-silver-bars-history-and-collector-value"
+      ],
+      "unaccountedQueueSlugs": [
+        "engelhard-silver-bars-history-and-collector-value"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-08-24",
+          "evidence": "public/blog/research/2026-08-24-pending.json still lists 1 remaining slug(s): engelhard-silver-bars-history-and-collector-value."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "johnson-matthee-silver-bars-guide",
+        "small-business-website-mistakes-to-avoid",
+        "why-your-website-isnt-getting-customers"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "small-business-website-mistakes-to-avoid",
+        "why-your-website-isnt-getting-customers"
+      ],
+      "manualCaptionReviewPendingSlugs": [
+        "johnson-matthee-silver-bars-guide"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-08-24.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 10,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-24 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

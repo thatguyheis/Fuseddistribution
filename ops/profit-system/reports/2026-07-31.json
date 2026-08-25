@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "date": "2026-07-31",
+  "generatedAt": "2026-08-01T04:12:28.055Z",
+  "score": -58,
+  "rawScore": -58,
+  "eventScore": -58,
+  "leadingIndicators": {
+    "score": 0,
+    "rawScore": 0,
+    "status": "baseline_building",
+    "comparisons": [],
+    "insight": {
+      "status": "directional_only",
+      "statement": "instagram currently leads mature-post views with 118.0 average views across 1 post(s); treat this as directional only until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 4,
+    "trailingMedianScore": -46,
+    "deltaVsMedian": -12,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "81d99f63-955f-4b45-9737-531511ce8bd8",
+      "occurredAt": "2026-08-01T04:12:13.822Z",
+      "date": "2026-07-31",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-zero-live-queue-with-unreleased-reels-2026-07-31",
+      "value": 1,
+      "evidence": "Buffer live status on July 31, 2026 returned count 0 for scheduled or sending posts while YouTube, X, and Instagram channels were connected and multiple rendered reels from July 30 and July 31 still had release-qa.json readyForPosting=false, so distribution was not complete.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "45d41429-bb3c-4621-b5ed-87f9dc2583d2",
+      "occurredAt": "2026-08-01T04:12:13.822Z",
+      "date": "2026-07-31",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-pending-2026-07-31-open",
+      "value": 1,
+      "evidence": "On July 31, 2026 public/blog/research/2026-07-31-pending.json still retained is-now-a-good-time-to-buy-silver-2026, silver-price-chart-analysis-support-and-resistance-leve, how-to-automate-repetitive-business-tasks-with-ai, and ai-chatbot-for-small-business-website-setup-guide, and all four live canonical URLs returned HTTP 404.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "af36148b-cb0d-49f1-aa8b-0ebb6f0ede47",
+      "occurredAt": "2026-08-01T04:12:13.822Z",
+      "date": "2026-07-31",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "tech-writer-empty-or-undersized-july-31-recovery",
+      "value": 1,
+      "evidence": "During July 31, 2026 recovery, direct and production-path write-article replays for how-to-build-ai-prompts-that-actually-work and ai-writing-tools-comparison-for-small-business returned empty or undersized output under the local model, leaving the oldest July 30 pending checkpoint unresolved.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    },
+    {
+      "id": "2e7dfa3d-e153-46c4-8db9-5bac03986357",
+      "occurredAt": "2026-08-01T04:12:13.822Z",
+      "date": "2026-07-31",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-pending-2026-07-30-open-on-2026-07-31",
+      "value": 1,
+      "evidence": "On July 31, 2026 the oldest pending checkpoint public/blog/research/2026-07-30-pending.json still retained how-to-build-ai-prompts-that-actually-work and ai-writing-tools-comparison-for-small-business, and both live canonical URLs returned HTTP 404.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-07-31",
+      "evidence": "public/blog/research/2026-07-31-pending.json still lists 4 remaining slug(s): is-now-a-good-time-to-buy-silver-2026, silver-price-chart-analysis-support-and-resistance-leve, how-to-automate-repetitive-business-tasks-with-ai, ai-chatbot-for-small-business-website-setup-guide."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-07-31",
+      "expectedSlugs": [
+        "is-now-a-good-time-to-buy-silver-2026",
+        "silver-price-chart-analysis-support-and-resistance-leve",
+        "how-to-automate-repetitive-business-tasks-with-ai",
+        "ai-chatbot-for-small-business-website-setup-guide"
+      ],
+      "pendingRemaining": [
+        "is-now-a-good-time-to-buy-silver-2026",
+        "silver-price-chart-analysis-support-and-resistance-leve",
+        "how-to-automate-repetitive-business-tasks-with-ai",
+        "ai-chatbot-for-small-business-website-setup-guide"
+      ],
+      "registeredQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "is-now-a-good-time-to-buy-silver-2026",
+        "silver-price-chart-analysis-support-and-resistance-leve",
+        "how-to-automate-repetitive-business-tasks-with-ai",
+        "ai-chatbot-for-small-business-website-setup-guide"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-07-31",
+          "evidence": "public/blog/research/2026-07-31-pending.json still lists 4 remaining slug(s): is-now-a-good-time-to-buy-silver-2026, silver-price-chart-analysis-support-and-resistance-leve, how-to-automate-repetitive-business-tasks-with-ai, ai-chatbot-for-small-business-website-setup-guide."
+        }
+      ]
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": false
+}

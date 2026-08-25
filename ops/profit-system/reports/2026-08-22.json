@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-23T03:32:08.765Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 24,
+    "trailingMedianScore": -51,
+    "deltaVsMedian": 3,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "b0c5f093-d70e-4747-90ef-5f3617251730",
+      "occurredAt": "2026-08-23T03:31:05.827Z",
+      "date": "2026-08-22",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-22 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-22",
+      "expectedSlugs": [
+        "peace-silver-dollar-value-and-history",
+        "perth-mint-silver-kangaroo-buying-guide",
+        "yelp-vs-google-reviews-which-matters-more",
+        "how-to-turn-bad-reviews-into-better-outcomes"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "how-silver-mine-production-affects-spot-price",
+        "morgan-silver-dollar-complete-buying-guide"
+      ],
+      "registeredQueueSlugs": [
+        "peace-silver-dollar-value-and-history",
+        "perth-mint-silver-kangaroo-buying-guide",
+        "yelp-vs-google-reviews-which-matters-more",
+        "how-to-turn-bad-reviews-into-better-outcomes"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "peace-silver-dollar-value-and-history",
+        "perth-mint-silver-kangaroo-buying-guide",
+        "yelp-vs-google-reviews-which-matters-more",
+        "how-to-turn-bad-reviews-into-better-outcomes"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "yelp-vs-google-reviews-which-matters-more"
+      ],
+      "manualCaptionReviewPendingSlugs": [
+        "peace-silver-dollar-value-and-history",
+        "perth-mint-silver-kangaroo-buying-guide",
+        "how-to-turn-bad-reviews-into-better-outcomes"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-08-22.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 8,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-22 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

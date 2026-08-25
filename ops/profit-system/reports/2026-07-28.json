@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-29T03:48:28.044Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "rawScore": 0,
+    "status": "baseline_building",
+    "comparisons": [],
+    "insight": {
+      "status": "directional_only",
+      "statement": "instagram currently leads mature-post views with 118.0 average views across 1 post(s); treat this as directional only until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": false,
+    "sampleDays": 1,
+    "trailingMedianScore": -44,
+    "deltaVsMedian": null,
+    "direction": "baseline_building"
+  },
+  "rewards": [
+    {
+      "id": "a1fe969d-dcad-4ad0-94f7-ea5d3b8ca7fa",
+      "occurredAt": "2026-07-28T03:38:12.709Z",
+      "date": "2026-07-28",
+      "kind": "reward",
+      "type": "verified_distribution_pair",
+      "fingerprint": "buffer-2026-07-28-youtube-x-pairs-sent",
+      "value": 6,
+      "evidence": "Buffer API snapshot 2026-07-28 and live status readback confirmed six YouTube/X reel pairs sent with retained video assets for largest-silver-producing-countries-in-the-world, ai-tools-for-small-business-marketing-in-2026, silver-reserve-plan-what-it-is-and-how-it-works, silver-recycling-and-scrap-recovery-market, chatgpt-for-small-business-owners-beginners-guide, and how-to-start-using-ai-in-your-small-business.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 18,
+      "multiplier": 1,
+      "weight": 3
+    },
+    {
+      "id": "7bc1438d-1aeb-49be-9ba1-dc7315195f4a",
+      "occurredAt": "2026-07-28T03:38:12.711Z",
+      "date": "2026-07-28",
+      "kind": "reward",
+      "type": "prevented_failure",
+      "fingerprint": "buffer-scheduled-log-reconciler-added",
+      "value": 1,
+      "evidence": "Buffer live status now reconciles local scheduled checkpoint logs against authoritative scheduled/sending/sent readback, and tests/buffer-log-reconciliation.test.mjs prevents the stale scheduled-state bug from silently recurring.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 3,
+      "multiplier": 1,
+      "weight": 3
+    },
+    {
+      "id": "768e2b00-5bd4-4aaf-8b3c-5348aadcf321",
+      "occurredAt": "2026-07-28T03:38:12.712Z",
+      "date": "2026-07-28",
+      "kind": "reward",
+      "type": "high_quality_delivery",
+      "fingerprint": "buffer-2026-07-28-live-verification",
+      "value": 1,
+      "evidence": "Live HEAD verification returned 200 for five sampled shipped blog URLs, blog/posts.json, sitemap.xml, and both YouTube/X MP4 media URLs for largest-silver-producing-countries-in-the-world; the six distributed reels all had release-qa readyForPosting=true.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    }
+  ],
+  "penalties": [
+    {
+      "id": "12e3d0f0-d342-4d77-9515-ca953b7a1e02",
+      "occurredAt": "2026-07-28T03:38:12.708Z",
+      "date": "2026-07-28",
+      "kind": "penalty",
+      "type": "unclear_handoff",
+      "fingerprint": "buffer-scheduled-log-not-reconciled",
+      "value": 1,
+      "evidence": "Local .buffer-*-scheduled.json checkpoints still showed six July 27 YouTube/X posts as scheduled until the July 28 live Buffer status replay reconciled them to sent.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -7,
+      "multiplier": 1,
+      "weight": 7
+    },
+    {
+      "id": "d7115991-ec0d-4023-aeb2-063152e34ee7",
+      "occurredAt": "2026-07-29T03:48:19.779Z",
+      "date": "2026-07-28",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "local-writer-undersized-article",
+      "value": 1,
+      "evidence": "An out-of-sandbox replay on July 29, 2026 reproduced the deferred writer failure for ai-for-customer-service-small-business-how-to-set-it-up: the raw article stayed under the 8-12 H2 requirement and included uncited named-source claims, so build-post returned write-deferred again.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    },
+    {
+      "id": "be8c9b5a-63f1-4244-bb48-105b3f1b5e4c",
+      "occurredAt": "2026-07-29T03:48:19.779Z",
+      "date": "2026-07-28",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-pending-ai-for-customer-service-small-business-how-to-set-it-up-2026-07-28",
+      "value": 1,
+      "evidence": "Expected July 28 queue slug ai-for-customer-service-small-business-how-to-set-it-up remained in public/blog/research/2026-07-28-pending.json on July 29, 2026, and its live URL still returned 404 while the other three queue slugs were live.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "db6ed36a-1e64-48c9-8ac4-d5340691ec32",
+      "occurredAt": "2026-07-29T03:48:19.782Z",
+      "date": "2026-07-28",
+      "kind": "penalty",
+      "type": "false_success_claim",
+      "fingerprint": "profit-report-closed-with-blog-pending-2026-07-28",
+      "value": 1,
+      "evidence": "ops/profit-system/reports/2026-07-28.{json,md} were generated even though public/blog/research/2026-07-28-pending.json still listed ai-for-customer-service-small-business-how-to-set-it-up and the live slug was not deployed.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -40,
+      "multiplier": 1,
+      "weight": 40
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "false_success_claim",
+      "fingerprint": "profit-report-closed-with-blog-pending-2026-07-28",
+      "evidence": "ops/profit-system/reports/2026-07-28.{json,md} were generated even though public/blog/research/2026-07-28-pending.json still listed ai-for-customer-service-small-business-how-to-set-it-up and the live slug was not deployed."
+    },
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-07-28",
+      "evidence": "public/blog/research/2026-07-28-pending.json still lists 1 remaining slug(s): ai-for-customer-service-small-business-how-to-set-it-up."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-07-28",
+      "expectedSlugs": [
+        "silver-price-prediction-2026-what-analysts-expect",
+        "why-silver-price-dropped-this-month-explained",
+        "ai-for-customer-service-small-business-how-to-set-it-up",
+        "how-to-use-ai-to-create-social-media-content-faster"
+      ],
+      "pendingRemaining": [
+        "ai-for-customer-service-small-business-how-to-set-it-up"
+      ],
+      "registeredQueueSlugs": [
+        "silver-price-prediction-2026-what-analysts-expect",
+        "why-silver-price-dropped-this-month-explained",
+        "how-to-use-ai-to-create-social-media-content-faster"
+      ],
+      "missingRegisteredSlugs": [
+        "ai-for-customer-service-small-business-how-to-set-it-up"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-07-28",
+          "evidence": "public/blog/research/2026-07-28-pending.json still lists 1 remaining slug(s): ai-for-customer-service-small-business-how-to-set-it-up."
+        }
+      ]
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "profit-report-closed-with-blog-pending-2026-07-28",
+      "problemType": "false_success_claim",
+      "occurrences": 1,
+      "proposedControl": "Add or strengthen a deterministic prevention check for profit-report-closed-with-blog-pending-2026-07-28.",
+      "evidence": "ops/profit-system/reports/2026-07-28.{json,md} were generated even though public/blog/research/2026-07-28-pending.json still listed ai-for-customer-service-small-business-how-to-set-it-up and the live slug was not deployed.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

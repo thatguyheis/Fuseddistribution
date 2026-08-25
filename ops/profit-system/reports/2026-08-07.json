@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-08T03:52:44.587Z",
+  "score": -42,
+  "rawScore": -42,
+  "eventScore": -42,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 11,
+    "trailingMedianScore": -47,
+    "deltaVsMedian": 5,
+    "direction": "improved"
+  },
+  "rewards": [
+    {
+      "id": "fe84ff04-c5fa-464a-a815-0d0cf5c7c4bf",
+      "occurredAt": "2026-08-07T13:11:00.931Z",
+      "date": "2026-08-07",
+      "kind": "reward",
+      "type": "recovered_checkpoint",
+      "fingerprint": "buffer-x-truncated-media-recovered",
+      "value": 1,
+      "evidence": "Buffer readback confirmed corrected X post 6a75d95a018a9e80fc7c4381 scheduled for 2026-08-07T16:00:00.000Z with the verified 135-second, 6,364,722-byte video asset retained.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    }
+  ],
+  "penalties": [
+    {
+      "id": "1545fc55-a7fb-4db2-9203-10452196ed60",
+      "occurredAt": "2026-08-07T13:08:42.281Z",
+      "date": "2026-08-07",
+      "kind": "penalty",
+      "type": "external_publish_failure",
+      "fingerprint": "buffer-x-truncated-media",
+      "value": 1,
+      "evidence": "Buffer X post 6a74a9305cec20265cdaa839 used a decodable but truncated 0.333-second, 30,926-byte MP4 for selling-silver-to-a-dealer-vs-private-sale; the 182.485-second source was valid, so the post is excluded from ADA fitness and requires corrected rescheduling.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -22,
+      "multiplier": 1,
+      "weight": 22
+    },
+    {
+      "id": "af0905ba-21b1-4fda-b496-17ed5c2a0cdf",
+      "occurredAt": "2026-08-08T03:52:37.659Z",
+      "date": "2026-08-07",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "Buffer metric snapshot requested for 2026-08-07 failed closed after the configured transient retry path; no same-date API snapshot is available, so matched Buffer leading-indicator evidence remains unavailable and is not treated as zero.",
+      "source": "automation",
+      "attributable": true,
+      "notes": "",
+      "points": -24,
+      "multiplier": 1.5,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 1.5,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-07",
+      "expectedSlugs": [
+        "rolling-over-401k-into-silver-ira-what-to-know",
+        "what-is-comex-silver-and-how-does-it-affect-spot-price",
+        "website-speed-and-local-business-ranking",
+        "social-media-posting-schedule-for-small-business"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "rolling-over-401k-into-silver-ira-what-to-know",
+        "social-media-posting-schedule-for-small-business"
+      ],
+      "registeredQueueSlugs": [
+        "what-is-comex-silver-and-how-does-it-affect-spot-price",
+        "website-speed-and-local-business-ranking"
+      ],
+      "blockedQueueSlugs": [
+        "rolling-over-401k-into-silver-ira-what-to-know",
+        "social-media-posting-schedule-for-small-business"
+      ],
+      "missingRegisteredSlugs": [
+        "rolling-over-401k-into-silver-ira-what-to-know",
+        "social-media-posting-schedule-for-small-business"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 2,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "Buffer metric snapshot requested for 2026-08-07 failed closed after the configured transient retry path; no same-date API snapshot is available, so matched Buffer leading-indicator evidence remains unavailable and is not treated as zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

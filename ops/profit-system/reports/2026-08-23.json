@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-24T03:32:21.630Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 25,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 0,
+    "direction": "flat"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "861cae8a-e80f-4948-b919-3be9a174cb3a",
+      "occurredAt": "2026-08-24T03:31:40.497Z",
+      "date": "2026-08-23",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-23 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-08-23",
+      "evidence": "public/blog/research/2026-08-23-pending.json still lists 1 remaining slug(s): silver-panda-coins-from-china-complete-guide."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-23",
+      "expectedSlugs": [
+        "mexican-silver-libertad-coins-guide",
+        "silver-panda-coins-from-china-complete-guide",
+        "what-a-small-business-website-needs-to-succeed",
+        "how-much-does-a-small-business-website-cost"
+      ],
+      "pendingRemaining": [
+        "silver-panda-coins-from-china-complete-guide"
+      ],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "mexican-silver-libertad-coins-guide",
+        "what-a-small-business-website-needs-to-succeed",
+        "how-much-does-a-small-business-website-cost"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "silver-panda-coins-from-china-complete-guide"
+      ],
+      "unaccountedQueueSlugs": [
+        "silver-panda-coins-from-china-complete-guide"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-08-23",
+          "evidence": "public/blog/research/2026-08-23-pending.json still lists 1 remaining slug(s): silver-panda-coins-from-china-complete-guide."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "mexican-silver-libertad-coins-guide",
+        "what-a-small-business-website-needs-to-succeed",
+        "how-much-does-a-small-business-website-cost"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "what-a-small-business-website-needs-to-succeed"
+      ],
+      "manualCaptionReviewPendingSlugs": [
+        "mexican-silver-libertad-coins-guide",
+        "how-much-does-a-small-business-website-cost"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-08-23.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 9,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-23 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

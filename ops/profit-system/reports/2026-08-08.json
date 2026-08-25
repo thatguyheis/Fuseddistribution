@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "date": "2026-08-08",
+  "generatedAt": "2026-08-09T03:33:01.107Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 12,
+    "trailingMedianScore": -45.5,
+    "deltaVsMedian": 45.5,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-08",
+      "expectedSlugs": [
+        "paper-silver-vs-physical-silver-the-key-difference",
+        "silver-short-squeeze-2026-is-it-possible",
+        "how-to-set-up-google-business-profile-step-by-step",
+        "google-business-profile-optimization-guide-2026"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "paper-silver-vs-physical-silver-the-key-difference",
+        "silver-short-squeeze-2026-is-it-possible",
+        "how-to-set-up-google-business-profile-step-by-step",
+        "google-business-profile-optimization-guide-2026"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

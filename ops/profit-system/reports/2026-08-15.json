@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-16T03:33:08.038Z",
+  "score": -100,
+  "rawScore": -208,
+  "eventScore": -208,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 17,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -160,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "58b73225-5b12-4b55-aa0a-e922a40b7d64",
+      "occurredAt": "2026-08-16T03:32:19.280Z",
+      "date": "2026-08-15",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-15 failed closed after the configured transient retry path; no dated snapshot was written, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "",
+      "points": -40,
+      "multiplier": 2.5,
+      "weight": 16
+    },
+    {
+      "id": "22d9f3bb-16c9-4825-9bfb-dfac878cd666",
+      "occurredAt": "2026-08-16T03:32:19.361Z",
+      "date": "2026-08-15",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "public/blog/research/2026-08-15-complete.json records one quality-blocked queued post, coinstats-vs-delta-for-precious-metals-tracking; three other queued slugs are registered in posts.json.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "",
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    },
+    {
+      "id": "37ee9210-c6ca-4f82-ac4c-83ba9c1e9623",
+      "occurredAt": "2026-08-16T03:32:19.439Z",
+      "date": "2026-08-15",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-manual-caption-review-pending",
+      "value": 3,
+      "evidence": "Three 2026-08-15 registered reels pass release QA but remain ineligible because manualCaptionReview=false and readyForPosting=false: how-to-build-a-silver-inventory-spreadsheet, local-keyword-research-for-small-businesses, and near-me-searches-how-to-rank-for-them.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "",
+      "points": -120,
+      "multiplier": 2.5,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 2.5,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "reel-manual-caption-review-pending",
+      "multiplier": 2.5,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-15",
+      "expectedSlugs": [
+        "how-to-build-a-silver-inventory-spreadsheet",
+        "coinstats-vs-delta-for-precious-metals-tracking",
+        "near-me-searches-how-to-rank-for-them",
+        "local-keyword-research-for-small-businesses"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "coinstats-vs-delta-for-precious-metals-tracking"
+      ],
+      "registeredQueueSlugs": [
+        "how-to-build-a-silver-inventory-spreadsheet",
+        "near-me-searches-how-to-rank-for-them",
+        "local-keyword-research-for-small-businesses"
+      ],
+      "blockedQueueSlugs": [
+        "coinstats-vs-delta-for-precious-metals-tracking"
+      ],
+      "missingRegisteredSlugs": [
+        "coinstats-vs-delta-for-precious-metals-tracking"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-build-a-silver-inventory-spreadsheet",
+        "near-me-searches-how-to-rank-for-them",
+        "local-keyword-research-for-small-businesses"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [
+        "how-to-build-a-silver-inventory-spreadsheet",
+        "near-me-searches-how-to-rank-for-them",
+        "local-keyword-research-for-small-businesses"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 4,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-15 failed closed after the configured transient retry path; no dated snapshot was written, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 5,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "public/blog/research/2026-08-15-complete.json records one quality-blocked queued post, coinstats-vs-delta-for-precious-metals-tracking; three other queued slugs are registered in posts.json.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "reel-manual-caption-review-pending",
+      "problemType": "missed_checkpoint",
+      "occurrences": 4,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-manual-caption-review-pending.",
+      "evidence": "Three 2026-08-15 registered reels pass release QA but remain ineligible because manualCaptionReview=false and readyForPosting=false: how-to-build-a-silver-inventory-spreadsheet, local-keyword-research-for-small-businesses, and near-me-searches-how-to-rank-for-them.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

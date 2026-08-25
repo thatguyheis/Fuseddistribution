@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "date": "2026-08-05",
+  "generatedAt": "2026-08-06T03:32:08.983Z",
+  "score": -0.08934471558119039,
+  "rawScore": -0.08934471558119039,
+  "eventScore": -6,
+  "leadingIndicators": {
+    "score": 5.91065528441881,
+    "rawScore": 5.91065528441881,
+    "status": "comparable",
+    "comparisons": [
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 66.67,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a722936343e45dde78bba9b",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0.1415,
+        "baselineMedian": 0.162,
+        "samplePosts": 8,
+        "relativeDelta": -0.12654320987654333,
+        "points": -0.0949074074074075
+      },
+      {
+        "postId": "6a7229291b838d50df0401c2",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229291b838d50df0401c2",
+        "slug": "silver-recycling-and-scrap-recovery-market",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0,
+        "baselineMedian": 0.18275,
+        "samplePosts": 8,
+        "relativeDelta": -1,
+        "points": -1
+      },
+      {
+        "postId": "6a715f6920d3689200b1c8d5",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a715f6920d3689200b1c8d5",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 5.9596,
+        "baselineMedian": 3.6351,
+        "samplePosts": 6,
+        "relativeDelta": 0.6394597122500069,
+        "points": 0.6394597122500069
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229357b1a5f76fe647859",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0.1743,
+        "baselineMedian": 0.162,
+        "samplePosts": 8,
+        "relativeDelta": 0.07592592592592595,
+        "points": 0.056944444444444464
+      },
+      {
+        "postId": "6a7229275c12454910e9f9e1",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a7229275c12454910e9f9e1",
+        "slug": "chatgpt-for-small-business-owners-beginners-guide",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0.0436,
+        "baselineMedian": 0.18275,
+        "samplePosts": 8,
+        "relativeDelta": -0.7614227086183311,
+        "points": -0.7614227086183311
+      },
+      {
+        "postId": "6a715f6820d3689200b1c8b0",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a715f6820d3689200b1c8b0",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 4.5787,
+        "baselineMedian": 3.6351,
+        "samplePosts": 6,
+        "relativeDelta": 0.25958020412093213,
+        "points": 0.25958020412093213
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "clicks",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722933343e45dde78bba5d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "twitter",
+        "ageBucket": "d1",
+        "metric": "impressionsPerHour",
+        "value": 0.243,
+        "baselineMedian": 0.162,
+        "samplePosts": 8,
+        "relativeDelta": 0.4999999999999999,
+        "points": 0.3749999999999999
+      },
+      {
+        "postId": "6a722926bc97c17e7be55a7d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 8,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a722926bc97c17e7be55a7d",
+        "slug": "how-to-start-using-ai-in-your-small-business",
+        "platform": "youtube",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 0.0405,
+        "baselineMedian": 0.1499,
+        "samplePosts": 8,
+        "relativeDelta": -0.7298198799199466,
+        "points": -0.7298198799199466
+      },
+      {
+        "postId": "6a715f672e9d172962a8a032",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 6,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a715f672e9d172962a8a032",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d1",
+        "metric": "viewsPerHour",
+        "value": 4.581,
+        "baselineMedian": 3.6351,
+        "samplePosts": 6,
+        "relativeDelta": 0.26021292399108703,
+        "points": 0.26021292399108703
+      },
+      {
+        "postId": "6a700d055dc5613cefe80912",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0.009174311926605505,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 1,
+        "points": 2.5
+      },
+      {
+        "postId": "6a700d055dc5613cefe80912",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 2.612,
+        "baselineMedian": 1.4408,
+        "samplePosts": 3,
+        "relativeDelta": 0.812881732370905,
+        "points": 0.812881732370905
+      },
+      {
+        "postId": "6a700d04aacd241cfdb50f13",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a700d04aacd241cfdb50f13",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 2.216,
+        "baselineMedian": 1.4408,
+        "samplePosts": 3,
+        "relativeDelta": 0.5380344253192672,
+        "points": 0.5380344253192672
+      },
+      {
+        "postId": "6a700d0398d2f31dff16596c",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "engagementRate",
+        "value": 0,
+        "baselineMedian": 0,
+        "samplePosts": 3,
+        "relativeDelta": 0,
+        "points": 0
+      },
+      {
+        "postId": "6a700d0398d2f31dff16596c",
+        "slug": null,
+        "platform": "instagram",
+        "ageBucket": "d3",
+        "metric": "viewsPerHour",
+        "value": 2.24,
+        "baselineMedian": 1.4408,
+        "samplePosts": 3,
+        "relativeDelta": 0.5546918378678513,
+        "points": 0.5546918378678513
+      }
+    ],
+    "insight": {
+      "status": "observed",
+      "statement": "instagram currently leads mature-post views with 109.7 average views across 6 post(s); treat this as an observed baseline until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 9,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 47.91065528441881,
+    "direction": "improved"
+  },
+  "rewards": [
+    {
+      "id": "986cf97d-69a7-4ace-933d-6144153c11e1",
+      "occurredAt": "2026-08-05T20:41:47.307Z",
+      "date": "2026-08-05",
+      "kind": "reward",
+      "type": "recovered_checkpoint",
+      "fingerprint": "buffer-daily-empty-2026-08-05",
+      "value": 1,
+      "evidence": "Buffer API readback confirmed 9 scheduled video posts: 3 YouTube, 3 X, and 3 Instagram; all retained video/mp4 assets and the hard daily floor was recovered.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    }
+  ],
+  "penalties": [
+    {
+      "id": "0bb85efc-67e2-4d0b-aa55-e934a35f032d",
+      "occurredAt": "2026-08-06T03:31:44.676Z",
+      "date": "2026-08-05",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "profit-report-unavailable-business-evidence-labeled-zero",
+      "value": 1,
+      "evidence": "The 2026-08-05 audit rendered absent attributable revenue and gross-profit events as $0.00; the required evidence policy treats absence as unavailable.",
+      "source": "automation",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-05",
+      "expectedSlugs": [
+        "can-you-put-physical-silver-in-an-ira",
+        "self-directed-ira-approved-silver-coins-and-bars-list",
+        "word-of-mouth-marketing-strategy",
+        "how-to-get-repeat-customers"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "registeredQueueSlugs": [
+        "can-you-put-physical-silver-in-an-ira",
+        "self-directed-ira-approved-silver-coins-and-bars-list",
+        "word-of-mouth-marketing-strategy"
+      ],
+      "blockedQueueSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "missingRegisteredSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

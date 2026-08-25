@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-22T03:32:20.391Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 23,
+    "trailingMedianScore": -54,
+    "deltaVsMedian": 6,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "1de4b6bb-cc50-4fc3-a3c5-6d67f27f732a",
+      "occurredAt": "2026-08-22T03:31:50.040Z",
+      "date": "2026-08-21",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-21 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-08-21",
+      "evidence": "public/blog/research/2026-08-21-pending.json still lists 2 remaining slug(s): how-silver-mine-production-affects-spot-price, morgan-silver-dollar-complete-buying-guide."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-21",
+      "expectedSlugs": [
+        "how-silver-mine-production-affects-spot-price",
+        "morgan-silver-dollar-complete-buying-guide",
+        "fake-google-reviews-how-to-handle-them",
+        "review-generation-tools-for-small-business"
+      ],
+      "pendingRemaining": [
+        "how-silver-mine-production-affects-spot-price",
+        "morgan-silver-dollar-complete-buying-guide"
+      ],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "fake-google-reviews-how-to-handle-them",
+        "review-generation-tools-for-small-business"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "how-silver-mine-production-affects-spot-price",
+        "morgan-silver-dollar-complete-buying-guide"
+      ],
+      "unaccountedQueueSlugs": [
+        "how-silver-mine-production-affects-spot-price",
+        "morgan-silver-dollar-complete-buying-guide"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-08-21",
+          "evidence": "public/blog/research/2026-08-21-pending.json still lists 2 remaining slug(s): how-silver-mine-production-affects-spot-price, morgan-silver-dollar-complete-buying-guide."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "fake-google-reviews-how-to-handle-them",
+        "review-generation-tools-for-small-business"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "review-generation-tools-for-small-business"
+      ],
+      "manualCaptionReviewPendingSlugs": [
+        "fake-google-reviews-how-to-handle-them"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-08-21.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 7,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-08-21 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

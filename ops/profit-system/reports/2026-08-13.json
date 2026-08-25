@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "date": "2026-08-13",
+  "generatedAt": "2026-08-14T03:32:19.979Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 16,
+    "trailingMedianScore": -47.5,
+    "deltaVsMedian": 47.5,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-13",
+      "expectedSlugs": [
+        "best-silver-dealers-in-the-us-ranked",
+        "best-apps-to-track-your-silver-portfolio-value",
+        "local-seo-for-small-business-beginner-guide",
+        "what-is-nap-consistency-and-why-it-matters"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "best-apps-to-track-your-silver-portfolio-value",
+        "best-silver-dealers-in-the-us-ranked"
+      ],
+      "registeredQueueSlugs": [
+        "local-seo-for-small-business-beginner-guide",
+        "what-is-nap-consistency-and-why-it-matters"
+      ],
+      "blockedQueueSlugs": [
+        "best-silver-dealers-in-the-us-ranked",
+        "best-apps-to-track-your-silver-portfolio-value"
+      ],
+      "missingRegisteredSlugs": [
+        "best-silver-dealers-in-the-us-ranked",
+        "best-apps-to-track-your-silver-portfolio-value"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

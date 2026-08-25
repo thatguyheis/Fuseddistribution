@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "date": "2026-07-29",
+  "generatedAt": "2026-07-30T03:58:01.952Z",
+  "score": -54,
+  "rawScore": -54,
+  "eventScore": -54,
+  "leadingIndicators": {
+    "score": 0,
+    "rawScore": 0,
+    "status": "baseline_building",
+    "comparisons": [],
+    "insight": {
+      "status": "directional_only",
+      "statement": "instagram currently leads mature-post views with 118.0 average views across 1 post(s); treat this as directional only until matched creative samples accumulate."
+    },
+    "sourceLagNotice": "Buffer refreshes post metrics daily; values can lag the social network by about 24 hours."
+  },
+  "comparison": {
+    "comparable": false,
+    "sampleDays": 2,
+    "trailingMedianScore": -46,
+    "deltaVsMedian": null,
+    "direction": "baseline_building"
+  },
+  "rewards": [
+    {
+      "id": "9ec1fc25-220f-4f9e-9e49-c06a4a0a3d20",
+      "occurredAt": "2026-07-30T03:57:56.658Z",
+      "date": "2026-07-29",
+      "kind": "reward",
+      "type": "recovered_checkpoint",
+      "fingerprint": "july-29-silver-blog-checkpoints-recovered",
+      "value": 2,
+      "evidence": "Replayed the July 29 silver queue from saved quarantine artifacts and recovered silver-vs-gold-performance-comparison-2025-2026 plus comex-silver-inventory-what-declining-stockpiles-mean-f to passing QA and local posts.json registration.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": 8,
+      "multiplier": 1,
+      "weight": 4
+    }
+  ],
+  "penalties": [
+    {
+      "id": "18c50412-3717-49b6-865c-f83cb4e0ca42",
+      "occurredAt": "2026-07-29T14:16:45.423Z",
+      "date": "2026-07-29",
+      "kind": "penalty",
+      "type": "quality_escape",
+      "fingerprint": "financial-numeric-visual-integrity",
+      "value": 1,
+      "evidence": "silver-price-prediction-2026-what-analysts-expect shipped stale pricing, unsupported target, and malformed source href",
+      "source": "user-review",
+      "attributable": true,
+      "notes": "",
+      "points": -18,
+      "multiplier": 1,
+      "weight": 18
+    },
+    {
+      "id": "e21ff26d-6714-4635-bb18-323ce58db677",
+      "occurredAt": "2026-07-29T14:16:45.518Z",
+      "date": "2026-07-29",
+      "kind": "penalty",
+      "type": "quality_escape",
+      "fingerprint": "financial-numeric-visual-integrity",
+      "value": 1,
+      "evidence": "why-silver-price-dropped-this-month-explained mixed unrelated price, macro, supply, and RSI statistics in one bar chart",
+      "source": "user-review",
+      "attributable": true,
+      "notes": "",
+      "points": -18,
+      "multiplier": 1,
+      "weight": 18
+    },
+    {
+      "id": "bc10dda5-d848-4168-8307-0c7047d99fb1",
+      "occurredAt": "2026-07-30T03:57:56.658Z",
+      "date": "2026-07-29",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-pending-tech-slugs-2026-07-29",
+      "value": 1,
+      "evidence": "public/blog/research/2026-07-29-pending.json still lists ai-scheduling-tools-for-small-business and what-ai-can-and-cannot-do-for-your-small-business; both live URLs returned HTTP 404 on July 30, 2026 and neither slug has render or release QA output.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -16,
+      "multiplier": 1,
+      "weight": 16
+    },
+    {
+      "id": "20dc17cc-8dcc-46c4-b0ca-0fcf7bdae806",
+      "occurredAt": "2026-07-30T03:57:56.664Z",
+      "date": "2026-07-29",
+      "kind": "penalty",
+      "type": "bug",
+      "fingerprint": "chart-reject-hard-stop-2026-07-29",
+      "value": 1,
+      "evidence": "Rejected chart artifacts and missing fallback custom graphics hard-blocked two July 29 silver queue slugs until build-chart skip-sentinel handling and fallback watch-list injection were added and replayed.",
+      "source": "manual",
+      "attributable": true,
+      "notes": "",
+      "points": -10,
+      "multiplier": 1,
+      "weight": 10
+    }
+  ],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-07-29",
+      "evidence": "public/blog/research/2026-07-29-pending.json still lists 2 remaining slug(s): ai-scheduling-tools-for-small-business, what-ai-can-and-cannot-do-for-your-small-business."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-07-29",
+      "expectedSlugs": [
+        "silver-vs-gold-performance-comparison-2025-2026",
+        "comex-silver-inventory-what-declining-stockpiles-mean-f",
+        "ai-scheduling-tools-for-small-business",
+        "what-ai-can-and-cannot-do-for-your-small-business"
+      ],
+      "pendingRemaining": [
+        "ai-scheduling-tools-for-small-business",
+        "what-ai-can-and-cannot-do-for-your-small-business"
+      ],
+      "registeredQueueSlugs": [
+        "silver-vs-gold-performance-comparison-2025-2026",
+        "comex-silver-inventory-what-declining-stockpiles-mean-f"
+      ],
+      "missingRegisteredSlugs": [
+        "ai-scheduling-tools-for-small-business",
+        "what-ai-can-and-cannot-do-for-your-small-business"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-07-29",
+          "evidence": "public/blog/research/2026-07-29-pending.json still lists 2 remaining slug(s): ai-scheduling-tools-for-small-business, what-ai-can-and-cannot-do-for-your-small-business."
+        }
+      ]
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "financial-numeric-visual-integrity",
+      "problemType": "quality_escape",
+      "occurrences": 2,
+      "proposedControl": "Add or strengthen a deterministic prevention check for financial-numeric-visual-integrity.",
+      "evidence": "silver-price-prediction-2026-what-analysts-expect shipped stale pricing, unsupported target, and malformed source href",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

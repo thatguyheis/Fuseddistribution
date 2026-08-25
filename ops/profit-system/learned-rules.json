@@ -37,6 +37,316 @@
       "verification": "ops/profit-system/buffer-metrics/2026-07-27.json; initial mature YouTube sample: decision/monetary posts 85, 54, and 25 views versus industrial/outlook posts 0 and 0 views.",
       "reviewAfter": "2026-08-10",
       "rollbackCondition": "Retire or revise if three matched samples fail to improve median D+3 views per hour by 15%, or if downstream clicks/qualified demand regress."
+    },
+    {
+      "id": "numeric-visual-semantic-provenance-gate",
+      "state": "active",
+      "createdAt": "2026-07-29",
+      "evidenceFingerprints": [
+        "financial-numeric-visual-integrity"
+      ],
+      "sampleCount": 2,
+      "expectedProfitMechanism": "Prevent misleading financial visuals and broken citations from eroding reader trust, search value, qualified demand, and conversion.",
+      "leadingMetric": "numeric visual and malformed-source defects blocked before posts.json registration",
+      "laggingMetric": "qualified Fused Reserve leads, conversions, and attributed gross profit from corrected silver content",
+      "guardrails": [
+        "Allow a clean numeric-visual skip when another valid custom graphic explains the article.",
+        "Do not force unrelated numbers into a bar chart to satisfy a visual quota.",
+        "Do not weaken financial accuracy, source provenance, or authoritative live verification."
+      ],
+      "control": "Require schema v2 metric, unit, period, verbatim evidence, named HTTPS source, and type-specific semantic validation; exclude generated HTML as evidence and block malformed source markup.",
+      "verification": "public/blog/scripts/build-chart-inject.test.mjs mixed-stat, evidence, before/after, and stat-card regression cases; qa-local.mjs visual and href gates",
+      "reviewAfter": "2026-08-29",
+      "rollbackCondition": "Narrow only if more than 5% of manually reviewed valid visuals are false positives; never remove provenance, valid-link, or no-self-validation controls."
+    },
+    {
+      "id": "buffer-expedited-backlog-burn",
+      "state": "experiment",
+      "createdAt": "2026-08-05",
+      "evidenceFingerprints": [
+        "buffer-backlog-review-bottleneck",
+        "buffer-daily-empty-2026-08-05"
+      ],
+      "sampleCount": 2,
+      "expectedProfitMechanism": "A controlled increase from three to six daily posts per channel should burn down release-ready backlog and expand qualified reach without sacrificing publishing reliability or content quality.",
+      "leadingMetric": "Confirmed sent posts per channel per Pacific day, release-ready backlog age/count, Buffer error and duplicate rates, and matched D+1/D+3/D+7 clicks, watch duration, and engagement",
+      "laggingMetric": "Qualified site visits, leads, conversions, revenue, and attributed gross profit",
+      "guardrails": [
+        "Keep three confirmed posts per channel as the hard daily floor.",
+        "Do not weaken release QA, media verification, the seven-day cooldown, or authoritative Buffer readback.",
+        "Keep the organization limit of 10 and one safety slot.",
+        "Prefer new and unsent approved work before rotated backlog."
+      ],
+      "control": "Through 2026-08-12, target six posts per channel at 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00 Pacific. Refill every four hours, count scheduled/sending/sent posts for the operating date, schedule strictly after the latest active dueAt, preserve one of ten slots, and never roll a current-day deficit into tomorrow.",
+      "verification": "tests/buffer-daily-targets.test.mjs; tests/buffer-repost-policy.test.mjs; Buffer queue validation and API create/readback",
+      "reviewAfter": "2026-08-12",
+      "rollbackCondition": "Revert to three per channel on a quality escape, active duplicate, recurrent platform error, baseline-floor miss caused by expedited capacity, or at least 25% lower matched median engagement."
+    },
+    {
+      "id": "profit-evidence-availability-label",
+      "state": "experiment",
+      "createdAt": "2026-08-05",
+      "evidenceFingerprints": [
+        "profit-report-unavailable-business-evidence-labeled-zero"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Prevent unavailable business evidence from being mistaken for a verified zero, preserving correct profit prioritization and preventing unsupported attribution decisions.",
+      "leadingMetric": "Daily audit reports with no revenue or gross-profit events display unavailable rather than a dollar amount.",
+      "laggingMetric": "Attributed revenue, gross profit, qualified leads, and conversions once authoritative evidence becomes available.",
+      "guardrails": [
+        "Keep verified zero-value business evidence distinct from unavailable evidence when such an authoritative source is integrated.",
+        "Do not infer revenue, gross profit, leads, conversions, or attribution from operational rewards or Buffer metrics.",
+        "Do not weaken audit, release-QA, or authoritative-readback gates."
+      ],
+      "control": "Render unavailable in the daily audit when no attributable revenue or gross-profit events exist, with a regression test covering both unavailable and recorded-evidence cases.",
+      "verification": "tests/profit-sop-audit.test.mjs unavailable revenue and gross-profit evidence case.",
+      "reviewAfter": "2026-08-19",
+      "rollbackCondition": "Revise only after an authoritative zero-revenue source is integrated and the report can distinguish confirmed zero from unavailable evidence without ambiguity."
+    },
+    {
+      "id": "buffer-metrics-transient-retry",
+      "state": "experiment",
+      "createdAt": "2026-08-06",
+      "evidenceFingerprints": [
+        "buffer-metrics-api-fetch-unavailable"
+      ],
+      "sampleCount": 2,
+      "expectedProfitMechanism": "Recovering transient metric reads preserves matched D+1, D+3, and D+7 evidence needed to choose distribution work without mistaking missing evidence for weak performance.",
+      "leadingMetric": "Successful same-date Buffer metric snapshots after a transient API failure, with no snapshot age-bucket or platform mismatch.",
+      "laggingMetric": "Qualified visits, leads, conversions, revenue, and gross profit attributed only when authoritative evidence becomes available.",
+      "guardrails": [
+        "Never substitute a prior snapshot for the requested operating date or treat an unavailable snapshot as zero.",
+        "Do not retry authentication, validation, or other non-transient Buffer failures.",
+        "Do not weaken Buffer API readback or matched D+1, D+3, and D+7 comparison rules."
+      ],
+      "control": "Retry each transient Buffer GraphQL request at most three times, then fail closed and report the requested-date snapshot as unavailable.",
+      "verification": "tests/buffer-performance-snapshot.test.mjs transient retry and non-transient failure cases.",
+      "reviewAfter": "2026-08-13",
+      "rollbackCondition": "Retire if three comparable snapshot runs show no recovery after transient failures, or if retries cause duplicate requests, rate-limit escalation, or incorrect same-date evidence."
+    },
+    {
+      "id": "buffer-x-source-relative-media-integrity",
+      "state": "experiment",
+      "createdAt": "2026-08-08",
+      "evidenceFingerprints": [
+        "buffer-x-truncated-media-2026-08-07"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Prevent truncated or mismatched X video assets from creating failed distribution, rework, and lost qualified demand.",
+      "leadingMetric": "X queue candidates rejected before Buffer create when the platform cutdown is shorter than its source-relative minimum or hosted bytes differ from the verified local copy.",
+      "laggingMetric": "Confirmed X video delivery followed by qualified visits, leads, conversions, revenue, and gross profit when authoritative attribution is available.",
+      "guardrails": [
+        "Keep Buffer get_post video-asset readback and post-due reconciliation mandatory.",
+        "Do not treat a decodable MP4, a successful create response, or matching MIME type as proof of a complete video asset.",
+        "Do not infer unavailable Buffer, lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "Reject X platform copies below min(source duration, 135 seconds) minus one second, reject hosted/local byte-length mismatches during planning, and retain the existing Buffer video-asset readback before logging success.",
+      "verification": "tests/buffer-capacity.test.mjs rejects the observed 182.485-second to 0.333-second truncation and accepts the 135-second target; ops/profit-system/evolution/feedback/2026-08-07-buffer-x-truncated-media.json records the corrected Buffer readback.",
+      "reviewAfter": "2026-08-22",
+      "rollbackCondition": "Retire or narrow after three comparable X media-preparation runs if the control produces a false positive, blocks a valid verified asset, or fails to prevent another source-relative truncation or byte-parity mismatch."
+    },
+    {
+      "id": "buffer-daily-floor-readiness-checkpoint",
+      "state": "experiment",
+      "createdAt": "2026-08-09",
+      "evidenceFingerprints": [
+        "buffer-daily-floor-missed"
+      ],
+      "sampleCount": 3,
+      "expectedProfitMechanism": "Detecting a daily channel-floor deficit while there is still time to prepare eligible, reviewed work prevents missed distribution opportunities and the resulting loss of qualified demand.",
+      "leadingMetric": "Buffer status checkpoints that report per-channel operating-date deficits and release-QA-not-ready blockers at least four hours before the final daily slot.",
+      "laggingMetric": "Confirmed sent posts per channel, then attributable qualified visits, leads, conversions, revenue, and gross profit.",
+      "guardrails": [
+        "Do not mark a reel ready, schedule it, or create a Buffer post without the existing manual caption review, release QA, media verification, and Buffer readback.",
+        "Treat an empty or unavailable queue as a checkpoint failure, never as a completed distribution day.",
+        "Do not infer Buffer, lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "For the next three comparable operating days, capture Buffer status at least four hours before the final daily slot. Status must emit an on-time or late readiness checkpoint. When any channel is below its three-post floor, record its deficit and each release-QA-not-ready blocker in the dated audit before the final slot; any release work remains pending human caption review and is never auto-approved.",
+      "verification": "npm run social:buffer:live -- status reports dated channel deficits, readiness-checkpoint timing, and reconciled scheduled-log changes; tests/buffer-daily-targets.test.mjs covers operating-date floor calculation and the four-hour cutoff. On 2026-08-11, the explicit six-post target readback found a fifteen-post total deficit and a late checkpoint, so the experiment remains unproven.",
+      "reviewAfter": "2026-08-16",
+      "rollbackCondition": "Retire or revise after three comparable operating days if the checkpoint fails to expose a floor deficit at least four hours before the final slot, creates a false-ready claim, or coincides with a release-QA, media, duplicate, or platform-compliance regression."
+    },
+    {
+      "id": "buffer-late-floor-fail-closed",
+      "state": "experiment",
+      "createdAt": "2026-08-12",
+      "evidenceFingerprints": [
+        "buffer-daily-floor-missed"
+      ],
+      "sampleCount": 0,
+      "expectedProfitMechanism": "A nonzero exit when a late checkpoint still has a channel-floor deficit makes the distribution shortfall actionable for the owner without creating unreviewed posts or concealing the loss of qualified-demand opportunities.",
+      "leadingMetric": "On-time Buffer floor checks completed with --require-on-time-floor and zero late-deficit false successes.",
+      "laggingMetric": "Confirmed sent posts per channel, then attributable qualified visits, leads, conversions, revenue, and gross profit.",
+      "guardrails": [
+        "Do not create, edit, or approve Buffer posts from the checkpoint command.",
+        "Keep manual caption review, release QA, media verification, capacity, and authoritative Buffer readback mandatory.",
+        "Do not treat unavailable lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "For the next three comparable operating days, invoke Buffer status with --require-on-time-floor at least four hours before the final slot. It must exit nonzero only when the current operating date has both a late checkpoint and one or more channel deficits; record the channel list and blockers before any separately approved recovery work.",
+      "verification": "tests/buffer-daily-targets.test.mjs covers late-deficit failure and on-time pass; buffer-live status emits dailyFloorEnforcement before an enforced failure.",
+      "reviewAfter": "2026-08-16",
+      "rollbackCondition": "Retire or narrow after three comparable operating days if it produces a false failure, masks the exact deficit, or coincides with a release-QA, duplicate, platform-compliance, or unauthorized-publishing regression."
+    },
+    {
+      "id": "sourced-stats-formula-unit-false-positive",
+      "state": "experiment",
+      "createdAt": "2026-08-14",
+      "evidenceFingerprints": [
+        "blog-quality-gate-blocked"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Prevent generic formula-unit labels from incorrectly blocking otherwise eligible, accurate content while retaining the gate that rejects unsupported third-party statistical attributions.",
+      "leadingMetric": "Formula-unit QA false positives and source-attribution blocks per comparable silver article.",
+      "laggingMetric": "Qualified visits, leads, conversions, revenue, and gross profit from released articles when authoritative attribution is available.",
+      "guardrails": [
+        "Continue to block unsupported named sources and numerical claims.",
+        "Do not bypass research provenance, financial-accuracy, editorial, or release-QA gates.",
+        "Do not publish or approve content from this control."
+      ],
+      "control": "Treat generic formula-unit parentheticals such as Dollars, Percent, Ounces, Grams, and Kilograms as units rather than source names in the sourced-stat validator; preserve detection of named sources such as Statista.",
+      "verification": "tests/sourced-stats.test.mjs verifies the Dollars replay is accepted and an unsupported Statista attribution remains blocked; npm run profit:test passes.",
+      "reviewAfter": "2026-08-21",
+      "rollbackCondition": "Retire or narrow after three comparable article replays if a generic unit exemption permits an unsupported named-source attribution or produces any financial-accuracy, provenance, editorial, or release-QA regression."
+    },
+    {
+      "id": "reel-release-readiness-audit-checkpoint",
+      "state": "active",
+      "createdAt": "2026-08-15",
+      "evidenceFingerprints": [
+        "reel-manual-caption-review-pending"
+      ],
+      "sampleCount": 4,
+      "expectedProfitMechanism": "Make release-QA blockers visible in the dated profit audit so unreleased reels cannot be mistaken for eligible distribution inventory, preserving qualified-demand opportunities without bypassing human review.",
+      "leadingMetric": "Dated audits that enumerate each registered queue reel blocked by missing release QA or manual caption review.",
+      "laggingMetric": "Confirmed sent posts per channel, then attributable qualified visits, leads, conversions, revenue, and gross profit.",
+      "guardrails": [
+        "Do not mark a reel ready, schedule it, or create a Buffer post from the audit checkpoint.",
+        "Keep manual caption review, release QA, media verification, capacity, and authoritative Buffer readback mandatory.",
+        "Do not infer unavailable Buffer, lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "For every dated blog queue, derive reel-release readiness from release-qa.json for registered slugs and report missing QA, manual-caption-review-pending, and other not-ready blockers by slug in profit:audit.",
+      "verification": "tests/profit-sop-audit.test.mjs reports manual-review, ready, and missing-release-QA cases; focused test passed on 2026-08-15.",
+      "reviewAfter": "2026-08-29",
+      "rollbackCondition": "Retire or narrow after three comparable operating days if the checkpoint omits a real registered-reel blocker, creates a false-ready claim, or coincides with a release-QA, duplicate, platform-compliance, or unauthorized-publishing regression."
+    },
+    {
+      "id": "buffer-live-sent-history-pagination",
+      "state": "experiment",
+      "createdAt": "2026-08-17",
+      "evidenceFingerprints": [
+        "buffer-live-sent-history-pagination"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Accurate Pacific-day sent counts prevent false floor deficits, avoid wasted recovery effort, and keep distribution decisions tied to authoritative delivery evidence.",
+      "leadingMetric": "Buffer status count matches same-date Buffer metric snapshot per channel after cursor pagination, with zero false zero-send reports.",
+      "laggingMetric": "Confirmed sent posts per channel, followed by attributable qualified visits, leads, conversions, revenue, and gross profit when authoritative evidence is available.",
+      "guardrails": [
+        "Do not create, edit, approve, or publish Buffer posts from the status command.",
+        "Keep manual caption review, release QA, media verification, capacity, duplicate controls, and authoritative Buffer readback mandatory.",
+        "Do not treat unavailable lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "Paginate Buffer sent-post history until pageInfo.hasNextPage is false before calculating daily channel targets or reconciling local scheduled logs.",
+      "verification": "tests/buffer-post-pagination.test.mjs exercises a multi-page sent history; on 2026-08-17 live Buffer readback changed the erroneous zero sends per channel to one sent per channel, matching the same-date metric snapshot.",
+      "reviewAfter": "2026-08-24",
+      "rollbackCondition": "Retire or revise after three comparable status checks if cursor pagination omits a current sent post, duplicates a post in counts, increases Buffer API errors or rate limits, or causes any false delivery claim."
+    },
+    {
+      "id": "published-social-reel-to-blog-playback",
+      "state": "experiment",
+      "createdAt": "2026-08-18",
+      "evidenceFingerprints": [
+        "blog-social-video-link-sync"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Giving readers direct, accessible paths to the already published YouTube, X, and Instagram versions of a reel can increase qualified video engagement, follows, return visits, and future conversion opportunities.",
+      "leadingMetric": "Published blog articles with authoritative social links, platform clickthroughs, and video plays where the platform reports them.",
+      "laggingMetric": "Qualified visits, leads, conversions, revenue, and gross profit attributed only when authoritative evidence is available.",
+      "guardrails": [
+        "Only show a platform URL after Buffer readback confirms the post is sent and provides its external link.",
+        "Do not invent URLs, treat scheduled posts as live, or bypass manual caption review and release QA.",
+        "Keep visible text links as a fallback when a platform widget is unavailable or blocked."
+      ],
+      "control": "After Buffer status reconciles sent-post logs, synchronize each verified external URL into the matching blog article. Embed YouTube using its privacy enhanced player, use the official X widget for public posts, and retain a resilient Instagram Reel link.",
+      "verification": "npm run social:blog-video-links; 20 historical sent-post panels synchronized on 2026-08-18, including 16 complete YouTube, X, and Instagram sets.",
+      "reviewAfter": "2026-09-08",
+      "rollbackCondition": "Retire or revise after three comparable review cycles if links are mismatched, widgets meaningfully degrade performance or accessibility, platform compliance changes, or engagement does not improve without a downstream benefit."
+    },
+    {
+      "id": "blog-quality-preflight-asset-gate",
+      "state": "experiment",
+      "createdAt": "2026-08-19",
+      "evidenceFingerprints": [
+        "blog-quality-gate-blocked"
+      ],
+      "sampleCount": 0,
+      "expectedProfitMechanism": "Failing known-bad generated HTML, social copy, and reel timing before JPG rendering reduces avoidable asset work and preserves time for eligible content without weakening publication gates.",
+      "baseline": "Nine blog-quality-gate-blocked occurrences in the 30-day repeat window; two blocked queue slugs on 2026-08-19 were detected after the asset stage.",
+      "comparisonWindow": "Three comparable blog-build runs after 2026-08-19, evaluated only when the preflight has the required generated artifacts.",
+      "leadingMetric": "Quality blocks discovered after JPG rendering, preflight false blocks, and asset-render attempts for preflight-failed slugs.",
+      "laggingMetric": "Quality-blocked posts per comparable operating day, then qualified visits, leads, conversions, revenue, and gross profit when authoritative attribution is available.",
+      "guardrails": [
+        "Do not register, publish, approve, recover, or edit a post from the preflight control.",
+        "Keep the final deterministic QA, brain QA, research provenance, financial accuracy, editorial, release QA, and human review gates mandatory.",
+        "Do not treat unavailable lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "Run qa-local after HTML, reel, and social generation but before JPG asset rendering. On failure, write qa-preflight.json, mark qa-preflight-fail, and stop the post without asset rendering; retain the existing final QA after assets.",
+      "filesAffected": [
+        "public/blog/scripts/build-post.sh",
+        "tests/build-post-preflight.test.mjs"
+      ],
+      "verification": "tests/build-post-preflight.test.mjs verifies preflight ordering and retention of final QA; bash -n validates the orchestrator syntax; npm run profit:test is required before review.",
+      "reviewAfter": "2026-08-26",
+      "rollbackCondition": "Retire or narrow after three comparable builds if the preflight creates a false block, fails to prevent post-asset discovery of a covered defect, prevents asset rendering for a valid post, or coincides with any provenance, financial-accuracy, editorial, release-QA, duplicate, or unauthorized-publishing regression."
+    },
+    {
+      "id": "blog-quality-block-ledger-checkpoint",
+      "state": "experiment",
+      "createdAt": "2026-08-18",
+      "evidenceFingerprints": [
+        "blog-quality-gate-blocked"
+      ],
+      "sampleCount": 0,
+      "expectedProfitMechanism": "Recording every dated quality block in the profit ledger prevents incomplete content production from being scored as a profitable operating day, making repeated defects visible for targeted prevention before they suppress qualified demand.",
+      "leadingMetric": "Each quality-blocked queue slug produces exactly one same-date missed-checkpoint event, with zero duplicate events across audit reruns.",
+      "laggingMetric": "Quality-blocked posts per comparable operating day, followed by qualified visits, leads, conversions, revenue, and gross profit when authoritative attribution is available.",
+      "guardrails": [
+        "Do not publish, approve, recover, or alter blocked content from the audit command.",
+        "Keep all editorial, research provenance, financial accuracy, release QA, and human review gates mandatory.",
+        "Do not infer unavailable lead, conversion, revenue, or gross-profit evidence as zero."
+      ],
+      "control": "On profit:audit, derive blocked queue slugs from the dated .workflow-blocked checkpoint and append one idempotent missed-checkpoint event using the stable blog-quality-gate-blocked fingerprint before scoring the report.",
+      "verification": "tests/profit-sop-audit.test.mjs verifies the blocked slug, stable fingerprint, and no-duplicate rerun behavior; npm run profit:test passes.",
+      "reviewAfter": "2026-08-25",
+      "rollbackCondition": "Retire or narrow after three comparable audit runs if the checkpoint records a false quality block, duplicates an event, omits an archived blocked queue slug, or causes any unauthorized content action."
+    },
+    {
+      "id": "buffer-metrics-unavailable-checkpoint",
+      "state": "active",
+      "createdAt": "2026-08-20",
+      "evidenceFingerprints": [
+        "buffer-metrics-api-fetch-unavailable"
+      ],
+      "sampleCount": 3,
+      "expectedProfitMechanism": "A dated, idempotent unavailable checkpoint prevents failed Buffer collection from silently removing matched leading-indicator evidence, so distribution decisions remain evidence-bound and manual recovery work is reduced.",
+      "baseline": "Six Buffer metric snapshot failures are recorded in the 30-day repeat window; before this control, the audit required a separate manual ledger entry after a failed snapshot.",
+      "comparisonWindow": "Three comparable same-date snapshot failures or recoveries after 2026-08-20, compared only by the presence of one dated unavailable checkpoint and one corresponding ledger event.",
+      "leadingMetric": "Failed Buffer snapshots with exactly one dated unavailable checkpoint and exactly one same-date missed-checkpoint event, with zero duplicate events across audit reruns.",
+      "laggingMetric": "Restored matched D+1, D+3, and D+7 leading-indicator availability, then qualified visits, leads, conversions, revenue, and gross profit when authoritative evidence is available.",
+      "guardrails": [
+        "Do not expose Buffer access tokens, raw request headers, or sensitive API response details in a checkpoint or report.",
+        "Do not treat an unavailable checkpoint as zero performance or substitute a prior-date snapshot.",
+        "Do not create, edit, approve, or publish Buffer posts from snapshot or audit commands."
+      ],
+      "control": "On a failed same-date Buffer metric snapshot, write a dated unavailable checkpoint with no performance values. During profit:audit, read that checkpoint and append the stable missed-checkpoint event only when it is absent for the operating date.",
+      "filesAffected": [
+        "scripts/buffer-performance-snapshot.mjs",
+        "scripts/profit-sop-audit.mjs",
+        "tests/buffer-performance-snapshot.test.mjs",
+        "tests/profit-sop-audit.test.mjs"
+      ],
+      "verification": "Focused snapshot and audit tests passed on 2026-08-20. Three comparable failed snapshots on 2026-08-20, 2026-08-21, and 2026-08-22 each wrote one dated unavailable checkpoint and produced one same-date ledger event without metric values; the 2026-08-22 audit rerun confirmed idempotency.",
+      "reviewAfter": "2026-09-05",
+      "rollbackCondition": "Retire or revise after three comparable runs if the control writes a false unavailable checkpoint, duplicates a ledger event, omits a real failed snapshot, exposes sensitive information, or changes Buffer publishing behavior."
     }
   ]
 }

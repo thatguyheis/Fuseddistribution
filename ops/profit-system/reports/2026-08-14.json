@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "date": "2026-08-14",
+  "generatedAt": "2026-08-15T03:33:49.753Z",
+  "score": -72,
+  "rawScore": -72,
+  "eventScore": -72,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 16,
+    "trailingMedianScore": -47.5,
+    "deltaVsMedian": -24.5,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "e43bcdd1-443b-45b2-ab4e-19c38ce56afc",
+      "occurredAt": "2026-08-15T03:33:27.427Z",
+      "date": "2026-08-14",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "public/blog/research/2026-08-14-complete.json records one quality-blocked post; its archived qa.json identifies a false-positive uncited stat attribution for the generic formula label Dollars.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "",
+      "points": -40,
+      "multiplier": 2.5,
+      "weight": 16
+    },
+    {
+      "id": "b3b7aa5c-cc87-4c16-af8b-8f7b484bb63f",
+      "occurredAt": "2026-08-15T03:33:27.507Z",
+      "date": "2026-08-14",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot failed closed after its configured transient retry path; no 2026-08-14 snapshot was written, so matched leading-indicator evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "",
+      "points": -32,
+      "multiplier": 2,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 2.5,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 2,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-08-14",
+      "expectedSlugs": [
+        "how-to-set-silver-spot-price-alerts-for-free",
+        "silver-premium-calculator-how-to-build-one",
+        "local-citations-for-small-business-how-to-build-them",
+        "local-seo-ranking-factors-2026"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "silver-premium-calculator-how-to-build-one"
+      ],
+      "registeredQueueSlugs": [
+        "how-to-set-silver-spot-price-alerts-for-free",
+        "local-citations-for-small-business-how-to-build-them",
+        "local-seo-ranking-factors-2026"
+      ],
+      "blockedQueueSlugs": [
+        "silver-premium-calculator-how-to-build-one"
+      ],
+      "missingRegisteredSlugs": [
+        "silver-premium-calculator-how-to-build-one"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 4,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "public/blog/research/2026-08-14-complete.json records one quality-blocked post; its archived qa.json identifies a false-positive uncited stat attribution for the generic formula label Dollars.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 3,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot failed closed after its configured transient retry path; no 2026-08-14 snapshot was written, so matched leading-indicator evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

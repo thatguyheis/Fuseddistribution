@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "date": "2026-08-21",
+  "capturedAt": "2026-08-22T03:31:43.747Z",
+  "source": "buffer_api",
+  "status": "unavailable",
+  "reason": "snapshot_fetch_failed",
+  "evidencePolicy": "No Buffer leading-indicator value is available for this date. Do not treat this checkpoint as zero performance."
+}
