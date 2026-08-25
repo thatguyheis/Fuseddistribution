@@ -54,7 +54,7 @@ Before reporting success:
 4. Confirm captions match narration at three points.
 5. Report commands, output path, verified duration, voice, caption mode (`whisper`/`proportional`/`mixed`/`none`), validation result, and unresolved warnings.
 
-Reels commit metadata locally only. Do not `git push` or `wrangler deploy` from the reel pass. Claude reviews and pushes after Nick approval.
+Reels commit metadata locally by default. Codex owns repository delivery and may `git push` or deploy after the user explicitly authorizes the scoped action and the required checks pass.
 
 ## Resource And Safety Rules
 

@@ -2,7 +2,7 @@
 
 ## Hard Rules
 
-- **Never `git push`** — commit only. Claude reviews and pushes.
+- **Codex owns repository delivery** — commit and push only after scoped validation and explicit user authorization. Claude is not a required reviewer or deployment dependency.
 - **Never delete files** without explicit instruction.
 - **Never manually edit generated pages** — `photos/images/*/index.html` and `photos/collections/*/index.html` are built by script. Edit the script or data, then rebuild.
 - **Never touch these hand-crafted files**: `photos/index.html`, `photos/browse/index.html`.
@@ -85,7 +85,7 @@ git add photos/derived/web/ photos/data/ photos/images/ photos/collections/
 git commit -m "feat: add [N] images to [collection-name] collection"
 ```
 
-Do not push. Claude reviews and pushes.
+Push only after the generated output, tests, and working tree scope have been reviewed. Codex may push when the user explicitly authorizes it.
 
 ---
 

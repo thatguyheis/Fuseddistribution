@@ -14,7 +14,7 @@ cd "/Users/nick/Documents/New project"
 
 The missing directory was restored by cloning the repository. At handoff time, the checkout was on `main`, tracking `origin/main`, with no pre-existing local changes.
 
-Repository rule: never run `git push`. Local commits are allowed, then Claude reviews and pushes.
+Repository rule: Codex owns repository delivery. Codex may commit and push after scoped validation and explicit user authorization. Claude is not a required reviewer or deployment dependency.
 
 ## User Goal
 
