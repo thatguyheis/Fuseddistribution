@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+node scripts/worktree-hygiene.mjs --strict --write-report
+echo "Push gate passed: worktree is clean."

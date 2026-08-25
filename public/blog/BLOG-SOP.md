@@ -1129,8 +1129,16 @@ Finance and silver content goes stale. Quarterly refresh keeps YMYL ranking sign
 
 ### Secrets — hard rules
 1. **Never write literal API tokens, keys, or passwords into any tracked file** — including plan docs, specs, SOPs, and code comments. Always reference env vars: `CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN"`.
-2. A pre-commit hook at `.git/hooks/pre-commit` scans staged changes for credential patterns and blocks the commit. Do not bypass with `--no-verify` unless the match is a verified false positive.
+2. The versioned `.githooks/pre-commit` hook scans the exact staged snapshot for
+   secrets, leaked runtime artifacts, oversized files, and unreviewably large
+   commits. Install it with `npm run workspace:hooks:install`. Do not bypass it
+   with `--no-verify`; resolve the reported path or gate instead.
 3. If a secret reaches a commit: it lives in EVERY subsequent commit's tree, not just the one that introduced it.
+
+Before a blog handoff, run `npm run workspace:audit`. The report must tag blog
+files as `blog`, preserve reel and ADA artifacts under their own governing tags,
+and leave no unexplained changes after the commit. See
+`docs/WORKTREE-HYGIENE-SOP.md`.
 
 ### Recovery — secret in unpushed commits (no force push needed)
 ```bash

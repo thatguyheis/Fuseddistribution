@@ -222,6 +222,13 @@ If no candidate qualifies, the cycle result is `no_winner`. Retain the incumbent
 control and create a narrower next experiment. The system must never choose a
 winner merely to keep the cycle moving.
 
+Every ADA task must run `npm run workspace:audit` before handoff. The audit must
+tag generation registries and evolution evidence as `ada`, while related reel
+and blog files retain their own tags. A mixed change passes the union of those
+protocols; ADA status never exempts a reel from release QA or a blog from its
+publication gates. Local model caches, generated background libraries, and
+rendered MP4 files are not evolutionary evidence and must remain outside Git.
+
 ### 10.2 Genetic identity and lineage
 
 Every ADA reel must have one immutable genetic ID:

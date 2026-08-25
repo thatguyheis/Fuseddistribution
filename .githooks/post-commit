@@ -1,0 +1,4 @@
+#!/bin/sh
+set -u
+
+node scripts/worktree-hygiene.mjs --write-report || true

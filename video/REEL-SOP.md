@@ -853,6 +853,15 @@ fitness, cohort, selection, reward, and rollback rules in
 `docs/PROFIT-IMPROVEMENT-SOP.md` section 10 are authoritative. A high-view reel
 that fails quality or risk gates is disqualified, not rewarded.
 
+### Worktree handoff gate
+
+Run `npm run workspace:audit` before committing reel work. Reel source,
+manifests, captions, rights evidence, release QA, and registered ADA records are
+durable. Downloaded photos and videos, rendered MP4 files, local generated
+backgrounds, and staging links are machine-local and must remain ignored. The
+versioned pre-commit hook blocks those artifact leaks and tags coupled blog,
+reel, and ADA changes so every governing protocol is visible during review.
+
 ---
 
 ## 11b. Inline Graphic Types (required for all stat segments)

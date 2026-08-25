@@ -1,8 +1,12 @@
 #!/bin/sh
+set -eu
 
-if ! command -v gitleaks >/dev/null 2>&1; then
-  echo "gitleaks is required to commit in this repository." >&2
+node scripts/worktree-hygiene.mjs --staged --strict --write-report
+
+GITLEAKS="$(command -v gitleaks || true)"
+if [ -n "$GITLEAKS" ]; then
+  "$GITLEAKS" git --staged --config .gitleaks.toml --no-banner --redact
+else
+  echo "BLOCKED: gitleaks is required for commits. Install it with Homebrew." >&2
   exit 1
 fi
-
-exec gitleaks git . --pre-commit --staged --timeout 120 --config .gitleaks.toml --redact --no-banner
