@@ -44,24 +44,35 @@ if [[ $CLAUDE_OK -eq 1 ]]; then
 fi
 
 # ── ensure a draft exists ──
-if [[ ! -f "$DIR/gemma_draft.md" ]]; then
+if [[ ! -f "$DIR/gemma_draft.md" && ! -f "$DIR/content-plan.json" ]]; then
   log "no gemma_draft.md — generating outline via local model (structural reference only)"
   { echo "Write a 10-bullet outline for an article titled \"$KEYWORD\". Stay on the exact title promise; do not substitute an adjacent topic. Each bullet = one H2 section topic. At least half the bullets must include the title's core terms or close synonyms. Plain text, no prose, no sentences. One line per bullet."; } | "$LOCAL_LLM" > "$DIR/gemma_draft.md" 2>/dev/null || true
 fi
 # gemma_draft.md is structural reference; write-article writes the real article
 
-# ── T5 write (local Phi-4 first in Hermes takeover, otherwise Claude) or degraded copy ──
+# ── T5 write. A Codex-authored content plan activates resumable local worker
+# segments. Posts without a plan retain the proven legacy writer. ──
 if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
   if [[ $FORCE -eq 0 && -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
     log "T5 local write: verified.md exists and lint passes — resuming downstream stages"
     mark write-local-resume
   else
-    log "T5 write via local model"
-    HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
-      "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+    if [[ -f "$DIR/content-plan.json" ]]; then
+      log "T5 segmented write from Codex master plan"
+      SEGMENTED_FORCE=()
+      [[ $FORCE -eq 1 ]] && SEGMENTED_FORCE+=(--force)
+      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+        node "$SD/write-segmented-article.mjs" "$SLUG" "${SEGMENTED_FORCE[@]}" 2>&1 | sed 's/^/  /'
+      WRITER_STAGE="write-segmented"
+    else
+      log "T5 write via legacy local model path"
+      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+        "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+      WRITER_STAGE="write-local"
+    fi
     WRC=${PIPESTATUS[0]}
     case "$WRC" in
-      0) mark write-local;;
+      0) mark "$WRITER_STAGE";;
       4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
       5) log "T5 local write QUALITY BLOCKED -> structural requirements were not met."; mark write-quality-fail; log "DONE. stages: ${DONE[*]}"; exit 0;;
       *) if [[ ! -s "$DIR/verified.md" ]]; then

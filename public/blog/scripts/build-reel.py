@@ -291,6 +291,45 @@ def follow_line(brand: str) -> str:
     return "Follow for more silver news." if brand == "silver" else "Follow for more practical business tips."
 
 
+def planned_reel_source(article: str, plan_path: Path) -> tuple[str, str]:
+    """Return the narrow article cluster selected by the Codex master plan."""
+    if not plan_path.is_file():
+        return article, ""
+    try:
+        plan = json.loads(plan_path.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        raise SystemExit(f"error: invalid Reel content plan: {error}") from error
+    sections = plan.get("sections") if isinstance(plan, dict) else None
+    reel = plan.get("reel") if isinstance(plan, dict) else None
+    section_ids = reel.get("sectionIds") if isinstance(reel, dict) else None
+    if not isinstance(sections, list) or not isinstance(section_ids, list) or not section_ids:
+        raise SystemExit("error: content plan is missing Reel section IDs")
+
+    headings_by_id = {
+        section.get("id"): str(section.get("heading", "")).strip()
+        for section in sections
+        if isinstance(section, dict)
+    }
+    article_sections: dict[str, str] = {}
+    matches = list(re.finditer(r"^##\s+(.+?)\s*$", article, flags=re.M))
+    for index, match in enumerate(matches):
+        start = match.end()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(article)
+        article_sections[match.group(1).strip().casefold()] = article[start:end].strip()
+
+    selected = []
+    for section_id in section_ids:
+        heading = headings_by_id.get(section_id, "")
+        body = article_sections.get(heading.casefold())
+        if not heading or not body:
+            raise SystemExit(f"error: planned Reel section is missing from article: {section_id}")
+        selected.append(f"## {heading}\n\n{body}")
+    source = "\n\n".join(selected)
+    if len(re.findall(r"\b[\w'-]+\b", source)) < 500:
+        raise SystemExit("error: planned Reel section cluster is under 500 words")
+    return source, str(reel.get("topic", "")).strip()
+
+
 def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     blog_dir = Path(__file__).resolve().parent.parent
     slug = args.slug or Path(args.output).parent.name
@@ -301,8 +340,10 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
         raise SystemExit(f"error: no input {input_path}")
 
     article = input_path.read_text()
+    plan_path = Path(getattr(args, "plan", "") or input_path.parent / "content-plan.json")
+    reel_source, reel_focus = planned_reel_source(article, plan_path)
     hooks = json.loads(hooks_path.read_text()) if hooks_path.is_file() else {}
-    sentences = article_sentences(article)
+    sentences = article_sentences(reel_source)
     chunks = sentence_chunks(sentences)
     if len(chunks) < MIN_BODY_SEGMENTS:
         raise SystemExit(
@@ -312,7 +353,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     hook = scrub(hooks.get("hook") or sentences[0])
     question = normalize_question(hooks.get("discussion_question", ""), args.brand)
     hashtags = hooks.get("hashtags", "#Silver #PreciousMetals #Investing" if args.brand == "silver" else "#SmallBusiness #Marketing #BusinessTips")
-    keyword = args.keyword or slug.replace("-", " ")
+    keyword = reel_focus or args.keyword or slug.replace("-", " ")
 
     body_segments: list[str] | None = None
     total_duration = 0
@@ -336,6 +377,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     reel_lines = [
         f"# Reel Data: {slug}",
         f"topic: {args.brand}",
+        f"focus: {reel_focus or keyword}",
         "format: long-form",
         "",
         f"hook: {hook}",
@@ -418,6 +460,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--out", dest="output")
     parser.add_argument("--brand", choices=("silver", "tech"), default="silver")
     parser.add_argument("--keyword", default="")
+    parser.add_argument("--plan", default="")
     return parser.parse_args()
 
 

@@ -62,6 +62,33 @@ class BuildReelTests(unittest.TestCase):
             reel_data = output.read_text()
             self.assertEqual(reel_data.count("prefer: video"), 1)
 
+    def test_content_plan_limits_reel_to_selected_topic_cluster(self):
+        paragraphs = {}
+        for index in range(1, 9):
+            marker = "CORETOPIC" if index <= 4 else "OFFTOPIC"
+            paragraphs[f"s{index:02d}"] = " ".join(
+                f"{marker} action {index} gives the reader one concrete step and a measurable check for reliable execution."
+                for _ in range(12)
+            )
+        article = "# Planned Article\n\nOpening.\n\n" + "\n\n".join(
+            f"## Section {index}\n\n{paragraphs[f's{index:02d}']}" for index in range(1, 9)
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            article_path = root / "verified.md"
+            plan_path = root / "content-plan.json"
+            article_path.write_text(article)
+            plan_path.write_text(json.dumps({
+                "sections": [{"id": f"s{index:02d}", "heading": f"Section {index}"} for index in range(1, 9)],
+                "reel": {"topic": "One narrow fix", "sectionIds": ["s01", "s02", "s03", "s04"]},
+            }))
+
+            source, focus = MODULE.planned_reel_source(article, plan_path)
+
+            self.assertEqual(focus, "One narrow fix")
+            self.assertIn("CORETOPIC", source)
+            self.assertNotIn("OFFTOPIC", source)
+
 
 if __name__ == "__main__":
     unittest.main()

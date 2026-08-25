@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-25T19:30:14.982Z",
+  "task": "structured leaf-worker compliance",
+  "prompt": "Return one JSON object only, with no markdown or reasoning. Use exactly these keys:\n{\"category\":\"content_repair\",\"action\":\"...\",\"reel_hook\":\"...\",\"section_plan\":[\"...\",\"...\",\"...\"]}\n\nIssue: A local-business blog has no inline links and its Reel should focus narrowly on the first practical fix.\nRules: category must be content_repair; action must mention adding an internal link; reel_hook must be 12 words or fewer; section_plan must contain exactly three distinct short section topics.",
+  "results": [
+    {
+      "model": "granite4.1:3b",
+      "latencySeconds": 19.16,
+      "score": 100,
+      "checks": {
+        "validJson": true,
+        "correctCategory": true,
+        "actionableLinkRepair": true,
+        "conciseHook": true,
+        "threeDistinctSections": true,
+        "noMarkdownFence": true,
+        "responsive": true
+      },
+      "parsed": {
+        "category": "content_repair",
+        "action": "add inline internal link to related service page",
+        "reel_hook": "show first practical fix for common issue quickly",
+        "section_plan": [
+          "introduction",
+          "step-by-step guide",
+          "next steps"
+        ]
+      },
+      "raw": "{\"category\":\"content_repair\",\"action\":\"add inline internal link to related service page\",\"reel_hook\":\"show first practical fix for common issue quickly\",\"section_plan\":[\"introduction\",\"step-by-step guide\",\"next steps\"]}"
+    },
+    {
+      "model": "gemma3:4b-it-qat",
+      "latencySeconds": 54.71,
+      "score": 80,
+      "checks": {
+        "validJson": true,
+        "correctCategory": true,
+        "actionableLinkRepair": true,
+        "conciseHook": true,
+        "threeDistinctSections": true,
+        "noMarkdownFence": false,
+        "responsive": false
+      },
+      "parsed": {
+        "category": "content_repair",
+        "action": "Add an internal link to our services page",
+        "reel_hook": "Fix your leaky faucet – quick & easy steps!",
+        "section_plan": [
+          "Faucet Types",
+          "Simple Repairs",
+          "Preventative Maintenance"
+        ]
+      },
+      "raw": "```json\n{\"category\":\"content_repair\",\"action\":\"Add an internal link to our services page\",\"reel_hook\":\"Fix your leaky faucet – quick & easy steps!\",\"section_plan\":[\"Faucet Types\",\"Simple Repairs\",\"Preventative Maintenance\"]}\n```"
+    },
+    {
+      "model": "qwen3:4b",
+      "latencySeconds": 42.58,
+      "score": 10,
+      "checks": {
+        "validJson": false,
+        "correctCategory": false,
+        "actionableLinkRepair": false,
+        "conciseHook": false,
+        "threeDistinctSections": false,
+        "noMarkdownFence": true,
+        "responsive": false
+      },
+      "parsed": null,
+      "raw": "We are creating a JSON object with the specified keys.\n The issue: A local-business blog has no inline links and its Reel should focus narrowly on the first practical fix.\n Rules:\n   - category must be \"content_repair\"\n   - action must mention adding an internal link (so we'll phrase it as: \"Add an internal link to the relevant section\")\n   - reel_hook must be 12 words or fewer (we'll create a hook that is short and catchy, e.g., \"Fix broken links in your blog today\")\n   - section_plan must contain exactly three distinct short section topics (we need to think of three short topics that are practical for the first fix)\n\n Let's plan the section_plan:\n   Since the blog has no inline links and we are focusing on the first practical fix, we can have:\n     1. \"Identify broken links\" (but note: the issue says no inline links, so maybe we are talking about links that are not present? Actually, the problem says \"no inline links\", meaning the blog content doesn't have links embedded"
+    }
+  ],
+  "winner": "granite4.1:3b",
+  "guardrail": "This microbenchmark selects candidates for a shadow trial. It does not authorize production promotion."
+}

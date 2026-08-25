@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "slug": "dollar-cost-averaging-silver-strategy-explained",
+  "title": "Dollar Cost Averaging Silver Strategy Explained",
+  "brand": "silver",
+  "readerPromise": "Show a first-time silver buyer how to build and follow a practical monthly buying plan.",
+  "reel": {
+    "topic": "Build a monthly silver buying rule",
+    "promise": "Give the viewer a repeatable buying rule they can use this month.",
+    "sectionIds": [
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "What Dollar Cost Averaging Means for Silver",
+      "readerQuestion": "How does dollar cost averaging work when the asset is physical silver?",
+      "purpose": "Define the strategy in practical physical-metal terms.",
+      "keyPoints": [
+        "Buy on a fixed schedule",
+        "Separate the process from short-term price predictions"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s02",
+      "heading": "Choose a Monthly Silver Budget",
+      "readerQuestion": "How much should a buyer commit each month?",
+      "purpose": "Turn available cash flow into a sustainable buying limit.",
+      "keyPoints": [
+        "Use money left after bills and emergency savings",
+        "Choose an amount that can continue during price swings"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s03",
+      "heading": "Set a Fixed Buying Date",
+      "readerQuestion": "When should the monthly purchase happen?",
+      "purpose": "Create a repeatable schedule that removes impulsive timing decisions.",
+      "keyPoints": [
+        "Tie the purchase to a predictable payday",
+        "Use the same date or week each month"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s04",
+      "heading": "Choose the Silver Products You Will Buy",
+      "readerQuestion": "Which coins, rounds, or bars belong in the plan?",
+      "purpose": "Define a simple product rule before shopping.",
+      "keyPoints": [
+        "Compare premiums using the same unit",
+        "Favor recognizable products that fit the monthly budget"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s05",
+      "heading": "Record Every Purchase and Average Cost",
+      "readerQuestion": "What information should the buyer track?",
+      "purpose": "Make the strategy measurable and auditable.",
+      "keyPoints": [
+        "Record ounces, metal cost, premium, shipping, and date",
+        "Calculate total cost divided by total ounces"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s06",
+      "heading": "Handle High Premium Months",
+      "readerQuestion": "What should the buyer do when premiums rise sharply?",
+      "purpose": "Explain how to preserve discipline without accepting any price.",
+      "keyPoints": [
+        "Compare equivalent products before buying",
+        "Keep the budget fixed and adjust product size when necessary"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s07",
+      "heading": "Avoid Common Dollar Cost Averaging Mistakes",
+      "readerQuestion": "Which behaviors weaken the strategy?",
+      "purpose": "Prevent impulse purchases and inconsistent record keeping.",
+      "keyPoints": [
+        "Do not chase a sudden price move",
+        "Do not ignore premiums and transaction costs"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    },
+    {
+      "id": "s08",
+      "heading": "Review the Plan Every Three Months",
+      "readerQuestion": "When should the buyer change the plan?",
+      "purpose": "Create a measured review point without encouraging constant adjustment.",
+      "keyPoints": [
+        "Review budget, average cost, and product availability",
+        "Change the rule only when finances or goals change"
+      ],
+      "evidenceClaims": [],
+      "targetWords": 140
+    }
+  ]
+}
