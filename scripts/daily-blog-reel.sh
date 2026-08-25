@@ -559,6 +559,16 @@ for SLUG in "${SLUGS[@]}"; do
 
   # Skip only fully registered posts. Partial QA-failed folders must be rebuilt or blocked.
   if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]]      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    # A registered checkpoint may predate the current deterministic QA rules.
+    # Recheck it before treating recovery as healthy, but do not quarantine or
+    # rewrite already-live content from this recovery-only path.
+    RECHECK_QA_OUT="/tmp/daily-blog-qa-${SLUG}-$$.json"
+    if node public/blog/scripts/qa-local.mjs --slug="$SLUG" --out="$RECHECK_QA_OUT" >> "$LOG_FILE" 2>&1; then
+      echo "QUALITY RECHECK PASS: $SLUG" >> "$LOG_FILE"
+    else
+      echo "QUALITY RECHECK WARN: $SLUG has current deterministic QA findings; preserving registered artifact for owner repair" >> "$LOG_FILE"
+    fi
+    rm -f "$RECHECK_QA_OUT"
     if [[ "$AUTO_DEPLOY" == "1" ]]; then
       CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
       if [[ "$CODE" != "200" ]]; then
