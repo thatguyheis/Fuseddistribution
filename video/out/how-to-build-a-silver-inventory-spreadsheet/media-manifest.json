@@ -6,119 +6,84 @@
       "source": "local-photo",
       "query": "how to build a silver inventory spreadsheet",
       "prefer": "video",
-      "updatedAt": "2026-08-15T18:17:29.122Z"
+      "updatedAt": "2026-08-25T18:12:46.318Z"
     },
     "1": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet retail buyer silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "how to build a silver inventory spreadsheet retail buyer silver",
       "prefer": "photo",
-      "updatedAt": "2026-08-15T18:17:29.159Z"
+      "updatedAt": "2026-08-25T18:12:46.367Z"
     },
     "2": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet accurate inventory management\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "how to build a silver inventory spreadsheet accurate inventory management",
       "prefer": "photo",
-      "updatedAt": "2026-08-15T18:17:29.160Z"
+      "updatedAt": "2026-08-25T18:12:46.367Z"
     },
     "3": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet supplier company purchased\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "how to build a silver inventory spreadsheet supplier company purchased",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:30.342Z"
+      "updatedAt": "2026-08-25T18:12:46.368Z"
     },
     "4": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet sales price unit\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet sales price unit",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:31.097Z"
+      "updatedAt": "2026-08-25T18:12:46.368Z"
     },
     "5": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet use formulas calculate\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet use formulas calculate",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:31.744Z"
+      "updatedAt": "2026-08-25T18:12:46.368Z"
     },
     "6": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet tracking costs don\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet tracking costs don",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:32.709Z"
+      "updatedAt": "2026-08-25T18:12:46.368Z"
     },
     "7": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet fifo first out\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet fifo first out",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:33.395Z"
+      "updatedAt": "2026-08-25T18:12:46.369Z"
     },
     "8": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet tracking silver consider\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet tracking silver consider",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:34.063Z"
+      "updatedAt": "2026-08-25T18:12:46.369Z"
     },
     "9": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet 20 silver successful\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet 20 silver successful",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:34.722Z"
+      "updatedAt": "2026-08-25T18:12:46.369Z"
     },
     "10": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet help started recommend\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet help started recommend",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:35.429Z"
+      "updatedAt": "2026-08-25T18:12:46.370Z"
     },
     "11": {
       "key": "{\"query\":\"how to build a silver inventory spreadsheet customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pexels-photo",
       "query": "how to build a silver inventory spreadsheet customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-15T18:17:35.925Z"
+      "updatedAt": "2026-08-25T18:12:46.370Z"
     }
   }
 }

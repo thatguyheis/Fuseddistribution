@@ -1,6 +1,6 @@
 {
   "slug": "how-to-build-a-silver-inventory-spreadsheet",
-  "renderedAt": "2026-08-15T18:27:09.021Z",
+  "renderedAt": "2026-08-25T18:20:42.793Z",
   "hookType": "statement",
   "segmentCount": 12,
   "scriptDuration": 210.778,
@@ -49,7 +49,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 1,
-    "pexels": 8
+    "pixabay-photo": 1,
+    "pexels-photo": 8
   }
 }

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"silver panda coins from China complete guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "silver panda coins from China complete guide",
+      "prefer": "video",
+      "updatedAt": "2026-08-25T18:04:57.874Z"
+    },
+    "1": {
+      "key": "{\"query\":\"silver panda coins from China complete guide considering investing silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver panda coins from China complete guide considering investing silver",
+      "prefer": "photo",
+      "updatedAt": "2026-08-25T18:04:57.965Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver panda coins from China complete guide while initially produced\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver panda coins from China complete guide while initially produced",
+      "prefer": "photo",
+      "updatedAt": "2026-08-25T18:04:57.965Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver panda coins from China complete guide spot prices premiums\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "silver panda coins from China complete guide spot prices premiums",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:00.058Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver panda coins from China complete guide 70 ms70 being\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide 70 ms70 being",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:00.853Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver panda coins from China complete guide crucial verify authenticity\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide crucial verify authenticity",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:01.737Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver panda coins from China complete guide buying low selling\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide buying low selling",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:02.366Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver panda coins from China complete guide silver panda market\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide silver panda market",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:02.946Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver panda coins from China complete guide understanding market avoiding\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide understanding market avoiding",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:03.636Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver panda coins from China complete guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "silver panda coins from China complete guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-25T18:05:04.496Z"
+    }
+  }
+}
