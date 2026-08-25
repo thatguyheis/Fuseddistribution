@@ -6,101 +6,77 @@
       "source": "local-photo",
       "query": "best time to post on instagram for local business",
       "prefer": "video",
-      "updatedAt": "2026-07-02T20:32:08.604Z"
+      "updatedAt": "2026-07-08T22:03:48.607Z"
     },
     "1": {
       "key": "{\"query\":\"best time to post on instagram for local business website nobody calls\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "best time to post on instagram for local business website nobody calls",
       "prefer": "photo",
-      "updatedAt": "2026-07-02T20:32:08.617Z"
+      "updatedAt": "2026-07-08T22:03:48.650Z"
     },
     "2": {
       "key": "{\"query\":\"best time to post on instagram for local business truth most effective\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "best time to post on instagram for local business truth most effective",
       "prefer": "photo",
-      "updatedAt": "2026-07-02T20:32:08.618Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "3": {
       "key": "{\"query\":\"best time to post on instagram for local business about vanity metrics\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business about vanity metrics",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:10.077Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "4": {
       "key": "{\"query\":\"best time to post on instagram for local business 86 consumers say\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business 86 consumers say",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:10.784Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "5": {
       "key": "{\"query\":\"best time to post on instagram for local business 15 minutes prompt\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business 15 minutes prompt",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:11.719Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "6": {
       "key": "{\"query\":\"best time to post on instagram for local business reinforces location signals\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business reinforces location signals",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:12.280Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "7": {
       "key": "{\"query\":\"best time to post on instagram for local business tell them quick\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business tell them quick",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:13.113Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "8": {
       "key": "{\"query\":\"best time to post on instagram for local business tells system exactly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business tells system exactly",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:13.804Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "9": {
       "key": "{\"query\":\"best time to post on instagram for local business post two three\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business post two three",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:14.488Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     },
     "10": {
       "key": "{\"query\":\"best time to post on instagram for local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pixabay-photo",
       "query": "best time to post on instagram for local business customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-02T20:32:15.195Z"
+      "updatedAt": "2026-07-08T22:03:48.651Z"
     }
   }
 }

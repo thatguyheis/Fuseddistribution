@@ -6,101 +6,77 @@
       "source": "local-photo",
       "query": "welcome email sequence for new customers",
       "prefer": "video",
-      "updatedAt": "2026-07-06T18:47:19.553Z"
+      "updatedAt": "2026-07-08T20:00:38.323Z"
     },
     "1": {
-      "key": "{\"query\":\"welcome email sequence for new customers pour heart soul\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"welcome email sequence for new customers small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "welcome email sequence for new customers pour heart soul",
+      "query": "welcome email sequence for new customers small business owner",
       "prefer": "photo",
-      "updatedAt": "2026-07-06T18:47:19.806Z"
+      "updatedAt": "2026-07-08T20:00:38.358Z"
     },
     "2": {
-      "key": "{\"query\":\"welcome email sequence for new customers what told there\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"welcome email sequence for new customers body hey client\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "welcome email sequence for new customers what told there",
+      "query": "welcome email sequence for new customers body hey client",
       "prefer": "photo",
-      "updatedAt": "2026-07-06T18:47:19.806Z"
+      "updatedAt": "2026-07-08T20:00:38.360Z"
     },
     "3": {
-      "key": "{\"query\":\"welcome email sequence for new customers example instead austin\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers example instead austin",
+      "key": "{\"query\":\"welcome email sequence for new customers 2 to 3\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers 2 to 3",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:21.568Z"
+      "updatedAt": "2026-07-08T20:00:38.360Z"
     },
     "4": {
-      "key": "{\"query\":\"welcome email sequence for new customers business high average\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers business high average",
+      "key": "{\"query\":\"welcome email sequence for new customers want dive deeper\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers want dive deeper",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:22.252Z"
+      "updatedAt": "2026-07-08T20:00:38.361Z"
     },
     "5": {
-      "key": "{\"query\":\"welcome email sequence for new customers people most likely\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers people most likely",
+      "key": "{\"query\":\"welcome email sequence for new customers transparent communication keep\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers transparent communication keep",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:22.929Z"
+      "updatedAt": "2026-07-08T20:00:38.361Z"
     },
     "6": {
-      "key": "{\"query\":\"welcome email sequence for new customers someone searches service\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers someone searches service",
+      "key": "{\"query\":\"welcome email sequence for new customers 3 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers 3 to 5",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:23.817Z"
+      "updatedAt": "2026-07-08T20:00:38.361Z"
     },
     "7": {
-      "key": "{\"query\":\"welcome email sequence for new customers include phone number\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers include phone number",
+      "key": "{\"query\":\"welcome email sequence for new customers here simple step\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers here simple step",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:24.526Z"
+      "updatedAt": "2026-07-08T20:00:38.362Z"
     },
     "8": {
-      "key": "{\"query\":\"welcome email sequence for new customers focusing these five\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers focusing these five",
+      "key": "{\"query\":\"welcome email sequence for new customers don take our\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers don take our",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:25.056Z"
+      "updatedAt": "2026-07-08T20:00:38.362Z"
     },
     "9": {
-      "key": "{\"query\":\"welcome email sequence for new customers don t let\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "welcome email sequence for new customers don t let",
+      "key": "{\"query\":\"welcome email sequence for new customers next few weeks\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "welcome email sequence for new customers next few weeks",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:25.704Z"
+      "updatedAt": "2026-07-08T20:00:38.362Z"
     },
     "10": {
       "key": "{\"query\":\"welcome email sequence for new customers customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pixabay-photo",
       "query": "welcome email sequence for new customers customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-06T18:47:26.098Z"
+      "updatedAt": "2026-07-08T20:00:38.364Z"
     }
   }
 }

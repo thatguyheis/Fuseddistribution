@@ -1,6 +1,6 @@
 {
   "slug": "how-to-build-an-email-list-for-your-local-business",
-  "renderedAt": "2026-07-03T18:29:47.661Z",
+  "renderedAt": "2026-07-08T21:04:45.075Z",
   "hookType": "statement",
   "segmentCount": 11,
   "scriptDuration": 199,
@@ -8,13 +8,19 @@
   "scriptHash": "94c114400c6222f361e5dfda6b17f72dc726c65e6fee6e25d3998cd7a54cc2a6",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-06.mp3",
+  "musicTrack": "mixkit-relaxation-05-749.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relaxation-05-749/"
+  },
   "photosUsed": 11,
   "mediaUsed": 11,
   "photoCount": 11,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 8
+    "pixabay-photo": 8
   }
 }

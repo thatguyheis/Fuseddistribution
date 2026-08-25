@@ -6,92 +6,70 @@
       "source": "local-photo",
       "query": "automated email sequences for local business",
       "prefer": "video",
-      "updatedAt": "2026-07-05T18:17:10.654Z"
+      "updatedAt": "2026-07-08T20:32:12.133Z"
     },
     "1": {
-      "key": "{\"query\":\"automated email sequences for local business local business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"automated email sequences for local business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "automated email sequences for local business local business owner",
+      "query": "automated email sequences for local business small business owner",
       "prefer": "photo",
-      "updatedAt": "2026-07-05T18:17:10.702Z"
+      "updatedAt": "2026-07-08T20:32:12.195Z"
     },
     "2": {
-      "key": "{\"query\":\"automated email sequences for local business don say serving\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"automated email sequences for local business 3x leads don\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "local-photo",
-      "query": "automated email sequences for local business don say serving",
+      "query": "automated email sequences for local business 3x leads don",
       "prefer": "photo",
-      "updatedAt": "2026-07-05T18:17:10.703Z"
+      "updatedAt": "2026-07-08T20:32:12.198Z"
     },
     "3": {
-      "key": "{\"query\":\"automated email sequences for local business google prioritizes websites\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "automated email sequences for local business google prioritizes websites",
+      "key": "{\"query\":\"automated email sequences for local business 3 to 5\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business 3 to 5",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:17:26.038Z"
+      "updatedAt": "2026-07-08T20:32:12.199Z"
     },
     "4": {
-      "key": "{\"query\":\"automated email sequences for local business recent study found\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "automated email sequences for local business recent study found",
+      "key": "{\"query\":\"automated email sequences for local business 10 business off\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business 10 business off",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:17:33.352Z"
+      "updatedAt": "2026-07-08T20:32:12.200Z"
     },
     "5": {
-      "key": "{\"query\":\"automated email sequences for local business skip setup you\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pexels-photo",
-      "query": "automated email sequences for local business skip setup you",
+      "key": "{\"query\":\"automated email sequences for local business 1 hour gentle\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business 1 hour gentle",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-07-05T18:18:00.172Z"
+      "updatedAt": "2026-07-08T20:32:12.200Z"
     },
     "6": {
-      "key": "{\"query\":\"automated email sequences for local business google find locally\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "automated email sequences for local business google find locally",
+      "key": "{\"query\":\"automated email sequences for local business craft personalized sequence\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business craft personalized sequence",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:18:22.119Z"
+      "updatedAt": "2026-07-08T20:32:12.200Z"
     },
     "7": {
-      "key": "{\"query\":\"automated email sequences for local business localize website ensure\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "automated email sequences for local business localize website ensure",
+      "key": "{\"query\":\"automated email sequences for local business personalize emails use\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business personalize emails use",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:18:44.561Z"
+      "updatedAt": "2026-07-08T20:32:12.200Z"
     },
     "8": {
-      "key": "{\"query\":\"automated email sequences for local business source brightlocal local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "automated email sequences for local business source brightlocal local",
+      "key": "{\"query\":\"automated email sequences for local business looking ahead exploring\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "automated email sequences for local business looking ahead exploring",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:19:05.234Z"
+      "updatedAt": "2026-07-08T20:32:12.200Z"
     },
     "9": {
       "key": "{\"query\":\"automated email sequences for local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pixabay-photo",
       "query": "automated email sequences for local business customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-05T18:19:13.706Z"
+      "updatedAt": "2026-07-08T20:32:12.201Z"
     }
   }
 }

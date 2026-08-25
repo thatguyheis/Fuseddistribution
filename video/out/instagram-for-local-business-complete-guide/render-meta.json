@@ -1,13 +1,53 @@
 {
   "slug": "instagram-for-local-business-complete-guide",
-  "renderedAt": "2026-06-28T18:23:45.775Z",
+  "renderedAt": "2026-07-14T22:26:07.149Z",
   "hookType": "statement",
-  "segmentCount": 10,
-  "scriptDuration": 182,
-  "renderedDuration": 177.130667,
-  "scriptHash": "9fc44a73934b995d766e3d6f391956d8050eec2e4eb12543aca31c886bca7b21",
+  "segmentCount": 11,
+  "scriptDuration": 189.425,
+  "renderedDuration": 184.064,
+  "scriptHash": "41b4ce22545e8d03374c7e378141c0bc08f3787cfbcfa3bbe7cd370b04b2c362",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-10.mp3",
-  "photosUsed": 0
+  "musicTrack": "mixkit-serene-view-443.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.52,
+      "1": 20.96,
+      "2": 18.74,
+      "3": 16.1,
+      "4": 23.82,
+      "5": 23.46,
+      "6": 17.06,
+      "7": 18,
+      "8": 18.1,
+      "9": 14.74,
+      "10": 5.96
+    },
+    "totalNarrationSeconds": 181.46
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/serene-view-443/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
 }

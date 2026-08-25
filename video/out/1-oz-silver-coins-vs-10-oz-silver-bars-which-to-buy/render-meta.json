@@ -1,6 +1,6 @@
 {
   "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
-  "renderedAt": "2026-06-28T14:43:52.282Z",
+  "renderedAt": "2026-07-08T22:03:28.152Z",
   "hookType": "statement",
   "segmentCount": 10,
   "scriptDuration": 183,
@@ -8,6 +8,19 @@
   "scriptHash": "109936bd93283417527d639c59cfbc265a02f36969fae416453d2903e71f8f43",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-10.mp3",
-  "photosUsed": 10
+  "musicTrack": "mixkit-forest-treasure-138.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/forest-treasure-138/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 3,
+  "videoCount": 7,
+  "mediaSources": {
+    "local-video": 7,
+    "local-photo": 3
+  }
 }

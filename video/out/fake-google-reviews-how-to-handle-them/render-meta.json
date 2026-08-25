@@ -1,9 +1,52 @@
 {
   "slug": "fake-google-reviews-how-to-handle-them",
-  "renderedAt": "2026-06-21T18:36:49.677Z",
+  "renderedAt": "2026-07-13T09:19:33.146Z",
   "hookType": "statement",
-  "segmentCount": 5,
-  "totalDuration": 35,
-  "musicTrack": "ambient-03.mp3",
-  "photosUsed": 5
+  "segmentCount": 10,
+  "scriptDuration": 144.152,
+  "renderedDuration": 139.285333,
+  "scriptHash": "155383b083f1129a5559e6788fe679fc08d9006009e35e8e5d5a93b7956c683d",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-serene-view-443.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.24,
+      "1": 16.16,
+      "2": 15.4,
+      "3": 15.84,
+      "4": 16.16,
+      "5": 14.92,
+      "6": 15.36,
+      "7": 14.76,
+      "8": 20.28,
+      "9": 4.8
+    },
+    "totalNarrationSeconds": 136.92
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/serene-view-443/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 5,
+    "pexels": 5
+  }
 }

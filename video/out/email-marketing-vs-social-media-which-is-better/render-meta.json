@@ -1,6 +1,6 @@
 {
   "slug": "email-marketing-vs-social-media-which-is-better",
-  "renderedAt": "2026-07-06T18:28:09.701Z",
+  "renderedAt": "2026-07-08T19:25:02.889Z",
   "hookType": "statement",
   "segmentCount": 10,
   "scriptDuration": 192,
@@ -8,13 +8,19 @@
   "scriptHash": "14bd05b62379cb49ce58d30c372313c318060b4c04cd02b44cfd3bcbe44163f7",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-09.mp3",
+  "musicTrack": "mixkit-driving-ambition-32.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/driving-ambition-32/"
+  },
   "photosUsed": 10,
   "mediaUsed": 10,
   "photoCount": 10,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 7
+    "pixabay-photo": 7
   }
 }

@@ -1,13 +1,52 @@
 {
   "slug": "contact-page-best-practices-for-local-business",
-  "renderedAt": "2026-06-28T15:38:40.396Z",
+  "renderedAt": "2026-07-10T13:12:10.212Z",
   "hookType": "statement",
   "segmentCount": 10,
-  "scriptDuration": 192,
-  "renderedDuration": 187.114667,
-  "scriptHash": "8d192ed1039680382ea5179dfbed68e420042099d3938d6ce531a2949075d15e",
+  "scriptDuration": 125.192,
+  "renderedDuration": 120.277333,
+  "scriptHash": "f0c36e2fa406249b5bbaafa7b438baf6f1e620a7118e24365741a2139d719abf",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-10.mp3",
-  "photosUsed": 10
+  "musicTrack": "mixkit-driving-ambition-32.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -11,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.044774422771366805
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.08,
+      "1": 11.48,
+      "2": 11.92,
+      "3": 13.16,
+      "4": 15.28,
+      "5": 12.52,
+      "6": 13.76,
+      "7": 15.6,
+      "8": 14.88,
+      "9": 6.28
+    },
+    "totalNarrationSeconds": 117.96
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/driving-ambition-32/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 9,
+  "videoCount": 1,
+  "mediaSources": {
+    "local-video": 1,
+    "local-photo": 9
+  }
 }

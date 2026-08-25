@@ -17,36 +17,41 @@
   "3": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-3.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "4": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-4.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "5": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-5.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "6": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-6.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "7": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-7.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "8": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-8.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
   },
   "9": {
     "type": "photo",
     "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-9.jpg",
-    "source": "pixabay-photo"
+    "source": "local-photo"
+  },
+  "10": {
+    "type": "photo",
+    "src": "photos/how-to-target-local-customers-with-facebook-ads/segment-10.jpg",
+    "source": "pixabay"
   }
 }

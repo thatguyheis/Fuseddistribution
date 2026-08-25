@@ -6,91 +6,70 @@
       "source": "local-photo",
       "query": "email marketing for small business getting started",
       "prefer": "video",
-      "updatedAt": "2026-07-03T18:47:38.359Z"
+      "updatedAt": "2026-07-08T21:05:05.429Z"
     },
     "1": {
       "key": "{\"query\":\"email marketing for small business getting started want website actually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "email marketing for small business getting started want website actually",
       "prefer": "photo",
-      "updatedAt": "2026-07-03T18:47:38.390Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "2": {
       "key": "{\"query\":\"email marketing for small business getting started optional foundation local\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "email marketing for small business getting started optional foundation local",
       "prefer": "photo",
-      "updatedAt": "2026-07-03T18:47:38.390Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "3": {
       "key": "{\"query\":\"email marketing for small business getting started includes business name\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started includes business name",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:39.727Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "4": {
       "key": "{\"query\":\"email marketing for small business getting started 92 consumers say\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started 92 consumers say",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:40.502Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "5": {
       "key": "{\"query\":\"email marketing for small business getting started share tips advice\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started share tips advice",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:41.114Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "6": {
       "key": "{\"query\":\"email marketing for small business getting started 85 consumers read\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started 85 consumers read",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:41.683Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "7": {
       "key": "{\"query\":\"email marketing for small business getting started example email sequence\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started example email sequence",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:42.636Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "8": {
       "key": "{\"query\":\"email marketing for small business getting started contact today free\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started contact today free",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:43.167Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     },
     "9": {
       "key": "{\"query\":\"email marketing for small business getting started customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pixabay-photo",
       "query": "email marketing for small business getting started customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-03T18:47:43.833Z"
+      "updatedAt": "2026-07-08T21:05:05.450Z"
     }
   }
 }

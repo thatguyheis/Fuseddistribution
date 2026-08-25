@@ -1,6 +1,6 @@
 {
   "slug": "call-to-action-best-practices-for-small-business-websit",
-  "renderedAt": "2026-06-28T15:01:37.506Z",
+  "renderedAt": "2026-07-08T22:18:56.584Z",
   "hookType": "stat",
   "segmentCount": 10,
   "scriptDuration": 187,
@@ -8,6 +8,19 @@
   "scriptHash": "614dab54ba5f971ad2eabad5df4f7fed5c3296f8a4613c5e9c4a38e76b6dfe66",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-10.mp3",
-  "photosUsed": 10
+  "musicTrack": "mixkit-valley-sunset-127.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/valley-sunset-127/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 9,
+  "videoCount": 1,
+  "mediaSources": {
+    "local-video": 1,
+    "local-photo": 9
+  }
 }

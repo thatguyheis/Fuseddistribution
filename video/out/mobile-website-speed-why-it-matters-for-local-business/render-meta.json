@@ -1,13 +1,53 @@
 {
   "slug": "mobile-website-speed-why-it-matters-for-local-business",
-  "renderedAt": "2026-06-27T19:57:41.720Z",
+  "renderedAt": "2026-07-16T21:15:51.836Z",
   "hookType": "statement",
-  "segmentCount": 10,
-  "scriptDuration": 183,
-  "renderedDuration": 178.112,
-  "scriptHash": "25e30074773607af600fec022d8ada490c7b4d34cb8b682b659ce8a452f35ae1",
+  "segmentCount": 11,
+  "scriptDuration": 173.565,
+  "renderedDuration": 168.149333,
+  "scriptHash": "e0adf4437f2d3afffb4d2044f0ac3bf906331c9c36b12efccca29d086aed0b36",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-09.mp3",
-  "photosUsed": 0
+  "musicTrack": "mixkit-valley-sunset-127.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09463025179229612
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 5.04,
+      "1": 15.5,
+      "2": 15.1,
+      "3": 15.26,
+      "4": 15.68,
+      "5": 20.36,
+      "6": 17.94,
+      "7": 17.1,
+      "8": 14.94,
+      "9": 22.96,
+      "10": 5.72
+    },
+    "totalNarrationSeconds": 165.6
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/valley-sunset-127/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
 }

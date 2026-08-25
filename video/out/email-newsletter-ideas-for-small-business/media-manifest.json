@@ -6,91 +6,70 @@
       "source": "local-photo",
       "query": "email newsletter ideas for small business",
       "prefer": "video",
-      "updatedAt": "2026-07-04T19:51:33.409Z"
+      "updatedAt": "2026-07-08T20:50:20.528Z"
     },
     "1": {
       "key": "{\"query\":\"email newsletter ideas for small business drowning marketing ideas\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "email newsletter ideas for small business drowning marketing ideas",
       "prefer": "photo",
-      "updatedAt": "2026-07-04T19:51:33.439Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "2": {
       "key": "{\"query\":\"email newsletter ideas for small business let talk about\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "email newsletter ideas for small business let talk about",
       "prefer": "photo",
-      "updatedAt": "2026-07-04T19:51:33.458Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "3": {
       "key": "{\"query\":\"email newsletter ideas for small business 1 calls local\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business 1 calls local",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:34.507Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "4": {
       "key": "{\"query\":\"email newsletter ideas for small business 10 minutes wipe\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business 10 minutes wipe",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:35.402Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "5": {
       "key": "{\"query\":\"email newsletter ideas for small business people open emails\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business people open emails",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:36.071Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "6": {
       "key": "{\"query\":\"email newsletter ideas for small business asking review feels\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business asking review feels",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:36.703Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "7": {
       "key": "{\"query\":\"email newsletter ideas for small business maybe simple way\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business maybe simple way",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:37.404Z"
+      "updatedAt": "2026-07-08T20:50:20.541Z"
     },
     "8": {
       "key": "{\"query\":\"email newsletter ideas for small business contact now find\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business contact now find",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:38.236Z"
+      "updatedAt": "2026-07-08T20:50:20.542Z"
     },
     "9": {
       "key": "{\"query\":\"email newsletter ideas for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pixabay-photo",
       "query": "email newsletter ideas for small business customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-07-04T19:51:38.792Z"
+      "updatedAt": "2026-07-08T20:50:20.542Z"
     }
   }
 }

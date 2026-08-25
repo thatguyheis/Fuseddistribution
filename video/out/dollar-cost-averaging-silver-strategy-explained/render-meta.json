@@ -1,9 +1,54 @@
 {
   "slug": "dollar-cost-averaging-silver-strategy-explained",
-  "renderedAt": "2026-06-23T18:21:20.750Z",
+  "renderedAt": "2026-08-17T15:48:40.522Z",
   "hookType": "statement",
-  "segmentCount": 9,
-  "totalDuration": 160,
-  "musicTrack": "ambient-05.mp3",
-  "photosUsed": 9
+  "segmentCount": 11,
+  "scriptDuration": 186.305,
+  "renderedDuration": 180.928,
+  "scriptHash": "4ea8281fc8738cb12951ef5a36c372f9a44c8e8f22ece7bf3776d904d571ae32",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-relaxation-05-749.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -12.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05140791565537727
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3,
+      "1": 20.16,
+      "2": 17.84,
+      "3": 20.76,
+      "4": 17.72,
+      "5": 22.36,
+      "6": 16.52,
+      "7": 20.44,
+      "8": 20.88,
+      "9": 12.54,
+      "10": 6.12
+    },
+    "totalNarrationSeconds": 178.34
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relaxation-05-749/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 9,
+    "pixabay": 1,
+    "pexels": 1
+  }
 }

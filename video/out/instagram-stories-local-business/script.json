@@ -8,42 +8,42 @@
       "startSec": 0,
       "endSec": 8,
       "text": "500M PEOPLE WATCH STORIES DAILY",
-      "narration": "Only 1 in 3 top-viewed Stories on Instagram comes from a business.\n\nTiming check: 13 words / 2.5 = 5.2s + 2s buffer = 7.2s min. Window = 8s. PASS."
+      "narration": "Only 1 in 3 top-viewed Stories on Instagram comes from a business. Timing check: 13 words / 2.5 = 5.2s + 2s buffer = 7.2s min. Window = 8s. PASS."
     },
     {
       "type": "stat",
       "startSec": 8,
       "endSec": 20,
       "text": "58% MORE BRAND INTEREST",
-      "narration": "In 2021, Facebook IQ found that 58 percent of people became more interested in a brand after watching its Stories. That's the step that comes right before a phone call or a booked appointment.\n\nTiming check: 35 words / 2.5 = 14s + 2s = 16s min. Window = 12s. FAIL — extend."
+      "narration": "In 2021, Facebook IQ found that 58 percent of people became more interested in a brand after watching its Stories. That's the step that comes right before a phone call or a booked appointment. Timing check: 35 words / 2.5 = 14s + 2s = 16s min. Window = 12s. FAIL — extend."
     },
     {
       "type": "stat",
       "startSec": 8,
       "endSec": 26,
       "text": "58% MORE BRAND INTEREST",
-      "narration": "In 2021, Facebook IQ found that 58 percent of people became more interested in a brand after watching its Stories. That's the step that comes right before a phone call or a booked appointment.\n\nTiming check: 35 words / 2.5 = 14s + 2s = 16s min. Window = 18s. PASS."
+      "narration": "In 2021, Facebook IQ found that 58 percent of people became more interested in a brand after watching its Stories. That's the step that comes right before a phone call or a booked appointment. Timing check: 35 words / 2.5 = 14s + 2s = 16s min. Window = 18s. PASS."
     },
     {
       "type": "stat",
       "startSec": 26,
       "endSec": 38,
       "text": "50% VISIT WEBSITE AFTER STORIES",
-      "narration": "Half of all Story viewers visit a website after watching a business Story. Put a link sticker in your next Story and give them somewhere to go.\n\nTiming check: 29 words / 2.5 = 11.6s + 2s = 13.6s min. Window = 12s. FAIL — extend."
+      "narration": "Half of all Story viewers visit a website after watching a business Story. Put a link sticker in your next Story and give them somewhere to go. Timing check: 29 words / 2.5 = 11.6s + 2s = 13.6s min. Window = 12s. FAIL — extend."
     },
     {
       "type": "stat",
       "startSec": 26,
       "endSec": 42,
       "text": "50% VISIT WEBSITE AFTER STORIES",
-      "narration": "Half of all Story viewers visit a website after watching a business Story. Put a link sticker in your next Story and give them somewhere to go.\n\nTiming check: 29 words / 2.5 = 11.6s + 2s = 13.6s min. Window = 16s. PASS."
+      "narration": "Half of all Story viewers visit a website after watching a business Story. Put a link sticker in your next Story and give them somewhere to go. Timing check: 29 words / 2.5 = 11.6s + 2s = 13.6s min. Window = 16s. PASS."
     },
     {
       "type": "cta",
       "startSec": 42,
       "endSec": 50,
       "text": "FULL BREAKDOWN — LINK IN COMMENTS",
-      "narration": "Full breakdown linked in the comments. Save this for later.\n\nTiming check: 10 words / 2.5 = 4s + 2s = 6s min. Window = 8s. PASS."
+      "narration": "Full breakdown linked in the comments. Save this for later. Timing check: 10 words / 2.5 = 4s + 2s = 6s min. Window = 8s. PASS."
     }
   ]
 }

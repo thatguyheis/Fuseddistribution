@@ -1,9 +1,53 @@
 {
   "slug": "how-much-silver-should-you-own-in-your-portfolio",
-  "renderedAt": "2026-06-21T19:14:37.181Z",
+  "renderedAt": "2026-07-14T09:37:43.176Z",
   "hookType": "stat",
-  "segmentCount": 8,
-  "totalDuration": 88,
-  "musicTrack": "ambient-03.mp3",
-  "photosUsed": 8
+  "segmentCount": 11,
+  "scriptDuration": 194.825,
+  "renderedDuration": 189.397333,
+  "scriptHash": "fae93ec31b8ba996f2cddacc0b15a39ac4286a120003fd7b7ef05020c3bb3ef8",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -7.9,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.031335021402162974
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.24,
+      "1": 15.74,
+      "2": 21.18,
+      "3": 27.04,
+      "4": 25.56,
+      "5": 21.9,
+      "6": 20.28,
+      "7": 19.48,
+      "8": 18.92,
+      "9": 8.32,
+      "10": 4.2
+    },
+    "totalNarrationSeconds": 186.86
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 8,
+    "pixabay": 3
+  }
 }

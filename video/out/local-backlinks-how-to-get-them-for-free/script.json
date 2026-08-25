@@ -1,63 +1,84 @@
 {
   "slug": "local-backlinks-how-to-get-them-for-free",
   "title": "local-backlinks-how-to-get-them-for-free",
-  "totalDuration": 83,
+  "totalDuration": 225.945,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 9,
+      "endSec": 3.92,
       "text": "Free local links boost your ranking by 14 percent.",
-      "narration": "Free local links boost your ranking by 14 percent. Want more local customers finding your business online?"
+      "narration": "Free local links boost your ranking by 14 percent."
+    },
+    {
+      "type": "overlay",
+      "startSec": 3.92,
+      "endSec": 21.833,
+      "text": "WANT LOCAL CUSTOMERS FINDING",
+      "narration": "Want more local customers finding your business online? Local backlinks, mentions of your business on other websites, are key for boosting your search engine ranking, especially in Google's local results. They signal to Google that your business is trusted and relevant within your community. You don't need a huge marketing budget to build them."
     },
     {
       "type": "stat",
-      "startSec": 9,
-      "endSec": 21,
-      "text": "PAGES WITHOUT ANY BACKLINKS GET",
-      "narration": "Pages without any backlinks get no organic search traffic 91 percent of the time, so even a handful of free local links puts you ahead."
+      "startSec": 21.833,
+      "endSec": 43.813,
+      "text": "14% HIGHER LOCAL PACK TRANSLATES",
+      "narration": "According to Whitespark's 2026 Local Search Ranking Factors, businesses with local backlinks from regional sites, newspapers, and industry associations rank 14 percent higher in the Local Pack than those without. That translates to: More Local Visibility: Your business shows up higher in Google Maps and local search results. More Foot Traffic: Local customers searching for your services or products are more likely to find you."
     },
     {
       "type": "stat",
-      "startSec": 21,
-      "endSec": 35,
-      "text": "ACCORDING TO WHITESPARK'S LOCAL SEARCH",
-      "narration": "According to Whitespark's 2026 Local Search Ranking Factors, businesses with local backlinks from regional sites, newspapers, and industry associations rank 14 percent higher in the Local Pack than those without."
+      "startSec": 43.813,
+      "endSec": 65.573,
+      "text": "1 LOCAL BUSINESS DIRECTORIES EASY",
+      "narration": "Better Brand Awareness: Being mentioned by local websites builds trust and credibility within your community. Stronger SEO: Google reads local backlinks as a strong signal of local relevance. Here's a breakdown of strategies, ranked roughly by ease and impact: 1. Local Business Directories (Easy & Highly Effective) This is the foundation. Get listed on as many relevant local directories as possible."
+    },
+    {
+      "type": "overlay",
+      "startSec": 65.573,
+      "endSec": 93.906,
+      "text": "YELLOW PAGES YELLOWPAGES COM",
+      "narration": "Yellow Pages (Yellowpages.com): Still relevant, particularly for older demographics. Industry-Specific Directories: Search \"your industry directory your city\". Examples: Chamber of Commerce sites, local restaurant guides, contractor directories. Tip: Keep your NAP (Name, Address, Phone Number) consistent across all listings. Inconsistent NAP confuses search engines and hurts your ranking. Local News Websites & Blogs (Medium Effort, High Impact) Local news sites and blogs are strong sources of backlinks."
     },
     {
       "type": "stat",
-      "startSec": 35,
-      "endSec": 46,
-      "text": "GBP SIGNALS ACCOUNT FOR OF",
-      "narration": "GBP signals account for 32 percent of Local Pack ranking weight, so this is the most important local property you control."
+      "startSec": 93.906,
+      "endSec": 120.159,
+      "text": "$361.44 BUZZSTREAM FREE EDITORIAL LINKS",
+      "narration": "Given that buying a single backlink averages $361.44 (BuzzStream, 2025), free editorial links from local press are worth real money. Press Releases: Send press releases for newsworthy events. New product launches, community involvement, awards, and so on. Sites like PRWeb (paid, with free trials) or local news outlets often republish press releases. Guest Blogging: Offer to write guest posts for local blogs in your industry or related niches."
+    },
+    {
+      "type": "overlay",
+      "startSec": 120.159,
+      "endSec": 145.039,
+      "text": "COMMUNITY INVOLVEMENT SPONSORSHIPS HIGH",
+      "narration": "Community Involvement & Sponsorships (High Effort, Long-Term Value) This builds real relationships and earns valuable backlinks. Sponsor Local Events: Sponsoring a local sports team, festival, or charity event often comes with a website listing and a backlink. Partner with Local Charities: Donating to or volunteering with local charities can earn mentions on their websites. Local Business Associations: Join your local Chamber of Commerce or other business associations."
+    },
+    {
+      "type": "overlay",
+      "startSec": 145.039,
+      "endSec": 169.299,
+      "text": "LOCAL INFLUENCER OUTREACH MEDIUM",
+      "narration": "Local Influencer Outreach (Medium Effort, Targeted Impact) Finding and engaging local influencers (bloggers, social media personalities) can earn you valuable backlinks and brand awareness. Find Local Influencers: Use tools like BuzzSumo, Followerwonk, or just search social media for people with strong followings in your area. Offer Free Products/Services: Give them a free sample of your product or service in exchange for a review or mention."
+    },
+    {
+      "type": "overlay",
+      "startSec": 169.299,
+      "endSec": 195.312,
+      "text": "COLLABORATE CONTENT SUGGEST CREATING",
+      "narration": "Collaborate on Content: Suggest co-creating a blog post, video, or social media campaign. Tip: Focus on micro-influencers (smaller but highly engaged audiences). They often have a stronger connection with their followers and are more open to partnerships. HARO (Help a Reporter Out), Medium Effort, Significant Potential HARO connects journalists with experts. Sign up for relevant queries and respond to ones that match your expertise."
     },
     {
       "type": "stat",
-      "startSec": 46,
-      "endSec": 56,
-      "text": "GIVEN THAT BUYING A SINGLE",
-      "narration": "Given that buying a single backlink averages $361.44 (BuzzStream, 2025), free editorial links from local press are worth real money."
-    },
-    {
-      "type": "stat",
-      "startSec": 56,
-      "endSec": 68,
-      "text": "SINCE OF LINK BUILDERS NOW",
-      "narration": "Since 93.8 percent of link builders now prioritize link quality over quantity (SEO.AI, 2025), one HARO win can outweigh dozens of low-grade directory links."
-    },
-    {
-      "type": "stat",
-      "startSec": 68,
-      "endSec": 77,
-      "text": "WITH OF ALL GOOGLE SEARCHES",
-      "narration": "With 46 percent of all Google searches carrying local intent (Marketing LTB, 2025), every locally-relevant link compounds."
+      "startSec": 195.312,
+      "endSec": 220.645,
+      "text": "46% ALL GOOGLE SEARCHES CARRYING",
+      "narration": "Don't get discouraged if you don't see results right away. Consistency and a clear plan are key. With 46 percent of all Google searches carrying local intent (Marketing LTB, 2025), every locally-relevant link compounds. Focus on building real relationships and providing value to the local community, and the backlinks will follow. Start small, track your progress, and adjust as needed. Resources: BrightLocal: Moz Local: HARO: Local SEO Guide:"
     },
     {
       "type": "question",
-      "startSec": 77,
-      "endSec": 83,
-      "text": "HOW WILL YOU START BUILDING YOUR LOCAL LINK",
-      "narration": "Follow for more tips to grow your business.",
+      "startSec": 220.645,
+      "endSec": 225.945,
+      "text": "How will you start building your local link strategy today?",
+      "narration": "How will you start building your local link strategy today? Follow for more practical business tips.",
       "subtext": "COMMENT BELOW"
     }
   ]

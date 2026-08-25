@@ -1,20 +1,26 @@
 {
   "slug": "welcome-email-sequence-for-new-customers",
-  "renderedAt": "2026-07-06T18:54:49.770Z",
-  "hookType": "statement",
+  "renderedAt": "2026-07-08T20:10:07.736Z",
+  "hookType": "stat",
   "segmentCount": 11,
-  "scriptDuration": 195,
-  "renderedDuration": 189.589333,
-  "scriptHash": "7384c8a2742ecf451064c5c99575d0829312d4c2fd7cacaf50f8c45cceddd892",
+  "scriptDuration": 205,
+  "renderedDuration": 199.594667,
+  "scriptHash": "9021e730cf5118ea23315e2b2e741f89d30488f1907912715150e2d5103ad5a5",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-09.mp3",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
   "photosUsed": 11,
   "mediaUsed": 11,
   "photoCount": 11,
   "videoCount": 0,
   "mediaSources": {
-    "local-photo": 3,
-    "pixabay": 8
+    "local-photo": 10,
+    "pixabay-photo": 1
   }
 }

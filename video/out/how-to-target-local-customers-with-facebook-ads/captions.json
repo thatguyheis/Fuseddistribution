@@ -10,208 +10,275 @@
     {
       "text": "Set your Facebook ad radius to 1 to 5 miles around your business address",
       "startSec": 0,
-      "endSec": 3.4654945054945054
+      "endSec": 3.303272727272727
     },
     {
       "text": "target people by zip code and interest",
-      "startSec": 3.3154945054945055,
-      "endSec": 5.144505494505495
+      "startSec": 3.1532727272727272,
+      "endSec": 4.8966666666666665
     },
     {
       "text": "and run mobile-first video creative with a phone number and call button.",
-      "startSec": 5.144505494505495,
-      "endSec": 8.76
+      "startSec": 4.8966666666666665,
+      "endSec": 8.199939393939394
+    },
+    {
+      "text": "That combination beats every \"boost post\" shortcut and puts your ad in front of people who can actually walk through your door or pick up the phone.",
+      "startSec": 8.199939393939394,
+      "endSec": 15.14
     }
   ],
   "2": [
     {
-      "text": "A pizza shop that delivers within 4 miles should never run ads to a 25-mile ring.",
+      "text": "Below is the exact playbook I use with local clients: pest control, dentists, med spas, HVAC",
       "startSec": 0,
-      "endSec": 4.440478087649402
+      "endSec": 5.153048433048433
     },
     {
-      "text": "A plumber who charges a trip fee past 15 miles should cap the ad at 15 miles.",
-      "startSec": 4.290478087649402,
-      "endSec": 8.511673306772908
+      "text": "coffee shops.",
+      "startSec": 5.003048433048432,
+      "endSec": 5.73119658119658
     },
     {
-      "text": "Open Meta Ads Manager, create a new campaign, and at the ad set level find the Locations box.",
-      "startSec": 8.511673306772908,
-      "endSec": 13.76
+      "text": "It works because it treats Facebook like a local billboard with a phone number",
+      "startSec": 5.73119658119658,
+      "endSec": 10.10008547008547
+    },
+    {
+      "text": "not a branding exercise.",
+      "startSec": 10.10008547008547,
+      "endSec": 11.444358974358973
+    },
+    {
+      "text": "Pick your radius based on your service area, not your ambition.",
+      "startSec": 11.444358974358973,
+      "endSec": 14.973076923076922
+    },
+    {
+      "text": "A pizza shop that delivers within 4 miles should never run ads to a 25-mile ring.",
+      "startSec": 14.973076923076922,
+      "endSec": 19.66
     }
   ],
   "3": [
     {
-      "text": "A wedding photographer adds \"engaged (6 months)\" and \"recently engaged.",
+      "text": "I have seen cost per lead drop by half just by shrinking a 20-mile radius to 5 miles.",
       "startSec": 0,
-      "endSec": 3.7836421725239617
+      "endSec": 4.5997506234413965
+    },
+    {
+      "text": "Now layer in who those people are.",
+      "startSec": 4.449750623441396,
+      "endSec": 6.289650872817955
+    },
+    {
+      "text": "Under Detailed Targeting, add interests and behaviors that match your service.",
+      "startSec": 6.289650872817955,
+      "endSec": 10.510598503740647
+    },
+    {
+      "text": "A wedding photographer adds \"engaged (6 months)\" and \"recently engaged.",
+      "startSec": 10.510598503740647,
+      "endSec": 14.352743142144638
     },
     {
       "text": "A roofer adds \"new homeowners\" and interests in home improvement stores.",
-      "startSec": 3.633642172523962,
-      "endSec": 7.470575079872205
+      "startSec": 14.352743142144638,
+      "endSec": 18.249002493765584
     },
     {
       "text": "A dentist adds parents of young children within the zip code.",
-      "startSec": 7.470575079872205,
-      "endSec": 10.721309904153355
-    },
-    {
-      "text": "Age matters more than most owners think.",
-      "startSec": 10.721309904153355,
-      "endSec": 12.8529392971246
-    },
-    {
-      "text": "If you sell cosmetic dentistry, do not run ads to 18 to 24 year olds.",
-      "startSec": 12.8529392971246,
-      "endSec": 16.68
+      "startSec": 18.249002493765584,
+      "endSec": 21.7
     }
   ],
   "4": [
     {
-      "text": "The important stuff has to come first.",
+      "text": "Springfield Roof Leaks Fixed Same Day\" beats \"Quality Roofing Services.",
       "startSec": 0,
-      "endSec": 2.243809523809524
+      "endSec": 3.9182234957020063
     },
     {
-      "text": "End with a specific offer and a phone number.",
-      "startSec": 2.093809523809524,
-      "endSec": 4.7509523809523815
+      "text": "The first line of your primary text should name the problem and the location again.",
+      "startSec": 3.7682234957020064,
+      "endSec": 8.348681948424069
     },
     {
-      "text": "Call 555-0142 for a free 15-minute inspection this week\" gets more calls than \"Contact us today for a consultation.",
-      "startSec": 4.7509523809523815,
-      "endSec": 11.541428571428572
+      "text": "We fix leaks the same day we quote them.",
+      "startSec": 8.348681948424069,
+      "endSec": 10.556131805157595
     },
     {
-      "text": "Numbers, timing, and dollar amounts all lift response.",
-      "startSec": 11.541428571428572,
-      "endSec": 14.88
+      "text": "Keep the body under 90 words.",
+      "startSec": 10.556131805157595,
+      "endSec": 12.1565329512894
+    },
+    {
+      "text": "On mobile, Facebook cuts off text after about 125 characters before the \"See more\" link.",
+      "startSec": 12.1565329512894,
+      "endSec": 17.012922636103156
+    },
+    {
+      "text": "The important stuff has to come first.",
+      "startSec": 17.012922636103156,
+      "endSec": 19.26
     }
   ],
   "5": [
     {
-      "text": "Free tools like CapCut or Descript will auto-caption in a few minutes.",
+      "text": "Put text on your image in a font big enough to read one-handed on a phone.",
       "startSec": 0,
-      "endSec": 3.2209150326797387
+      "endSec": 3.9575949367088605
     },
     {
-      "text": "Different opening lines, different offers, different shots.",
-      "startSec": 3.0709150326797388,
-      "endSec": 5.785686274509804
+      "text": "A 15-second vertical video of you standing in front of your shop or truck outperforms a still photo almost every time.",
+      "startSec": 3.8075949367088606,
+      "endSec": 10.118354430379746
     },
     {
-      "text": "Facebook will spend more budget on the winner within 48 hours.",
-      "startSec": 5.785686274509804,
-      "endSec": 8.638496732026145
+      "text": "It does not need to be polished.",
+      "startSec": 10.118354430379746,
+      "endSec": 11.829746835443038
     },
     {
-      "text": "Kill the losers, then make three new variations of the winner.",
-      "startSec": 8.638496732026145,
-      "endSec": 11.491307189542484
-    },
-    {
-      "text": "This is how you compound results instead of guessing.",
-      "startSec": 11.491307189542484,
-      "endSec": 14.08
+      "text": "Film yourself saying three things: who you are, where you are, and what you offer this week.",
+      "startSec": 11.829746835443038,
+      "endSec": 16.9
     }
   ],
   "6": [
     {
-      "text": "If you are getting 1 out of 100, your landing page or your offer is broken, not the ad.",
+      "text": "Different opening lines, different offers, different shots.",
       "startSec": 0,
-      "endSec": 4.578947368421053
+      "endSec": 3.3903414634146336
     },
     {
-      "text": "Watch cost per lead, not cost per click.",
-      "startSec": 4.428947368421053,
-      "endSec": 6.534210526315789
+      "text": "Facebook will spend more budget on the winner within 48 hours.",
+      "startSec": 3.2403414634146337,
+      "endSec": 6.8030731707317065
     },
     {
-      "text": "A $2 click that never becomes a customer is more expensive than a $5 click that books an appointment.",
-      "startSec": 6.534210526315789,
-      "endSec": 12
+      "text": "Kill the losers, then make three new variations of the winner.",
+      "startSec": 6.8030731707317065,
+      "endSec": 10.36580487804878
+    },
+    {
+      "text": "This is how you compound results instead of guessing.",
+      "startSec": 10.36580487804878,
+      "endSec": 13.411365853658536
+    },
+    {
+      "text": "The typical Facebook ad budget range for small businesses is roughly $500 to $2,000 per month .",
+      "startSec": 13.411365853658536,
+      "endSec": 18.87039024390244
+    },
+    {
+      "text": "Pick a number inside that range and commit to 90 days before you judge results.",
+      "startSec": 18.87039024390244,
+      "endSec": 23.56
     }
   ],
   "7": [
     {
-      "text": "Those viewers are more qualified than random clickers.",
+      "text": "Install the Meta Pixel on your website.",
       "startSec": 0,
-      "endSec": 2.284054054054054
+      "endSec": 1.891111111111111
     },
     {
-      "text": "Show them a version of your offer with a testimonial or a before-and-after photo.",
-      "startSec": 2.134054054054054,
-      "endSec": 5.560135135135135
+      "text": "It takes about 10 minutes if you paste the code into your site header",
+      "startSec": 1.741111111111111,
+      "endSec": 5.086923076923076
     },
     {
-      "text": "Vanity metrics kill small business ad accounts.",
-      "startSec": 5.560135135135135,
-      "endSec": 7.548108108108107
+      "text": "or one click if you use Shopify, Wix, or Squarespace.",
+      "startSec": 5.086923076923076,
+      "endSec": 7.656894586894586
     },
     {
-      "text": "Reach, impressions, and page likes do not pay your mortgage.",
-      "startSec": 7.548108108108107,
-      "endSec": 10.085945945945944
+      "text": "The pixel tracks anyone who visits your site so you can show them ads later.",
+      "startSec": 7.656894586894586,
+      "endSec": 11.342136752136751
     },
     {
-      "text": "Meta has a Click-to-Call button you can add to any ad.",
-      "startSec": 10.085945945945944,
-      "endSec": 12.52
+      "text": "Build a retargeting audience of everyone who visited your site in the last 30 days but did not fill out your form.",
+      "startSec": 11.342136752136751,
+      "endSec": 17.02
     }
   ],
   "8": [
     {
-      "text": "Write one ad that names your town and your offer.",
+      "text": "Then use a tool like CallRail or a dedicated tracking number so you know which calls came from Facebook versus Google versus your yard sign.",
       "startSec": 0,
-      "endSec": 2.061291989664083
+      "endSec": 7.592476489028214
     },
     {
-      "text": "Shoot one 15-second vertical video on your phone.",
-      "startSec": 1.911291989664083,
-      "endSec": 3.972583979328166
+      "text": "If someone fills out a booking form on your site, the pixel should fire a \"Lead\" event.",
+      "startSec": 7.442476489028214,
+      "endSec": 12.160658307210031
     },
     {
-      "text": "Set your budget at $20 per day.",
-      "startSec": 3.972583979328166,
-      "endSec": 5.276666666666667
-    },
-    {
-      "text": "Turn on the Meta Pixel on your website.",
-      "startSec": 5.276666666666667,
-      "endSec": 6.917286821705427
-    },
-    {
-      "text": "Run it for 14 days without touching it",
-      "startSec": 6.917286821705427,
-      "endSec": 8.515839793281655
-    },
-    {
-      "text": "then check your cost per lead and double down on what worked.",
-      "startSec": 8.515839793281655,
-      "endSec": 11.081937984496125
-    },
-    {
-      "text": "Your competitors are still boosting posts and hoping.",
-      "startSec": 11.081937984496125,
-      "endSec": 13.311498708010337
-    },
-    {
-      "text": "You will be running a real local ad system by the end of the month.",
-      "startSec": 13.311498708010337,
-      "endSec": 16.28
+      "text": "Inside Ads Manager, add the Cost Per Lead column so you see exactly what each booking costs.",
+      "startSec": 12.160658307210031,
+      "endSec": 17.3
     }
   ],
   "9": [
     {
+      "text": "Set a 5-mile radius around your address.",
+      "startSec": 0,
+      "endSec": 2.2032786885245903
+    },
+    {
+      "text": "Write one ad that names your town and your offer.",
+      "startSec": 2.0532786885245904,
+      "endSec": 4.752295081967214
+    },
+    {
+      "text": "Shoot one 15-second vertical video on your phone.",
+      "startSec": 4.752295081967214,
+      "endSec": 7.451311475409836
+    },
+    {
+      "text": "Set your budget at $20 per day.",
+      "startSec": 7.451311475409836,
+      "endSec": 9.158852459016394
+    },
+    {
+      "text": "Turn on the Meta Pixel on your website.",
+      "startSec": 9.158852459016394,
+      "endSec": 11.30704918032787
+    },
+    {
+      "text": "Run it for 14 days without touching it",
+      "startSec": 11.30704918032787,
+      "endSec": 13.40016393442623
+    },
+    {
+      "text": "then check your cost per lead and double down on what worked.",
+      "startSec": 13.40016393442623,
+      "endSec": 16.76016393442623
+    },
+    {
+      "text": "Your competitors are still boosting posts and hoping.",
+      "startSec": 16.76016393442623,
+      "endSec": 19.67950819672131
+    },
+    {
+      "text": "You will be running a real local ad system by the end of the month.",
+      "startSec": 19.67950819672131,
+      "endSec": 23.52
+    }
+  ],
+  "10": [
+    {
       "text": "Ready to stop wasting ad spend and start getting local?",
       "startSec": 0,
-      "endSec": 3.1726315789473687
+      "endSec": 2.778947368421053
     },
     {
       "text": "Follow for more practical business tips.",
-      "startSec": 3.022631578947369,
-      "endSec": 5.48
+      "startSec": 2.628947368421053,
+      "endSec": 4.8
     }
   ]
 }

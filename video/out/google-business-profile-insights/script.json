@@ -8,14 +8,14 @@
       "startSec": 0,
       "endSec": 10,
       "text": "7x MORE CLICKS",
-      "narration": "Seven times more clicks. That's a complete Google Business Profile versus an incomplete one.\n\nTiming check: 16 words / 2.5 = 6.4s + 2s = 8.4s minimum → window is 10s. PASS."
+      "narration": "Seven times more clicks. That's a complete Google Business Profile versus an incomplete one. Timing check: 16 words / 2.5 = 6.4s + 2s = 8.4s minimum → window is 10s. PASS."
     },
     {
       "type": "stat",
       "startSec": 10,
       "endSec": 30,
       "text": "76% VISIT WITHIN 24H",
-      "narration": "In 2023, Google Consumer Insights found 76 percent of local searches result in a business visit within 24 hours. Direction requests in your Insights tab are the leading signal of that traffic. When the number drops, check your address, photos, and hours first.\n\nTiming check: 43 words / 2.5 = 17.2s + 2s = 19.2s minimum → window is 20s. PASS."
+      "narration": "In 2023, Google Consumer Insights found 76 percent of local searches result in a business visit within 24 hours. Direction requests in your Insights tab are the leading signal of that traffic. When the number drops, check your address, photos, and hours first. Timing check: 43 words / 2.5 = 17.2s + 2s = 19.2s minimum → window is 20s. PASS."
     },
     {
       "type": "chart",
@@ -40,14 +40,14 @@
           "value": 28
         }
       ],
-      "narration": "This shows what people do after finding a business on Google. Reviews first, website second. Calls come last because they require the most commitment. That's also why calls are the highest-intent metric in your whole dashboard.\n\nTiming check: 38 words / 2.5 = 15.2s + 2s = 17.2s minimum → window is 20s. PASS."
+      "narration": "This shows what people do after finding a business on Google. Reviews first, website second. Calls come last because they require the most commitment. That's also why calls are the highest-intent metric in your whole dashboard. Timing check: 38 words / 2.5 = 15.2s + 2s = 17.2s minimum → window is 20s. PASS."
     },
     {
       "type": "cta",
       "startSec": 50,
       "endSec": 58,
       "text": "Full breakdown — link in comments.",
-      "narration": "Save this if you haven't looked at your GBP Insights tab this week.\n\nTiming check: 13 words / 2.5 = 5.2s + 2s = 7.2s minimum → window is 8s. PASS.\n\nTotal: 58s — Standard format."
+      "narration": "Save this if you haven't looked at your GBP Insights tab this week. Timing check: 13 words / 2.5 = 5.2s + 2s = 7.2s minimum → window is 8s. PASS. Total: 58s — Standard format."
     }
   ]
 }

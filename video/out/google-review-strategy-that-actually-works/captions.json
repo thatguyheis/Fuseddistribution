@@ -10,22 +10,32 @@
     {
       "text": "Getting more Google reviews is not complicated.",
       "startSec": 0,
-      "endSec": 2.292489451476793
+      "endSec": 2.335518207282913
     },
     {
       "text": "They wait for reviews to trickle in naturally, glance at their rating once in a while",
-      "startSec": 2.142489451476793,
-      "endSec": 6.288481012658228
+      "startSec": 2.185518207282913,
+      "endSec": 6.409327731092436
     },
     {
       "text": "and wonder why the phone isn't ringing.",
-      "startSec": 6.288481012658228,
-      "endSec": 8.190759493670887
+      "startSec": 6.409327731092436,
+      "endSec": 8.347310924369747
     },
     {
       "text": "The businesses showing up at the top of local search aren't lucky.",
-      "startSec": 8.190759493670887,
-      "endSec": 11.56
+      "startSec": 8.347310924369747,
+      "endSec": 11.626974789915966
+    },
+    {
+      "text": "They're running a simple, repeatable review process that most owners skip.",
+      "startSec": 11.626974789915966,
+      "endSec": 15.304173669467787
+    },
+    {
+      "text": "Your Google reviews are not just social proof.",
+      "startSec": 15.304173669467787,
+      "endSec": 17.74
     }
   ],
   "2": [
@@ -57,151 +67,228 @@
   ],
   "3": [
     {
-      "text": "The fastest way to close that gap is to go through your last six months of completed jobs and contact every customer you didn't already hear from.",
+      "text": "For a local business without a national brand behind it, your reputation is your brand.",
       "startSec": 0,
-      "endSec": 6.384776119402986
+      "endSec": 4.485449101796407
     },
     {
-      "text": "Send each one a direct link to your Google review page with a short message like this: \"Hi there",
-      "startSec": 6.234776119402985,
-      "endSec": 10.432985074626867
+      "text": "47 percent of consumers will not use a business that has fewer than 20 reviews.",
+      "startSec": 4.3354491017964065,
+      "endSec": 8.408443113772455
     },
     {
-      "text": "thanks again for the work.",
-      "startSec": 10.432985074626867,
-      "endSec": 11.72
+      "text": "Under 20 reviews",
+      "startSec": 8.408443113772455,
+      "endSec": 9.233353293413174
+    },
+    {
+      "text": "nearly half the people who find you decide against you before they even read what your customers wrote.",
+      "startSec": 9.233353293413174,
+      "endSec": 14.5437125748503
+    },
+    {
+      "text": "If you have 8 reviews right now, your goal is 20.",
+      "startSec": 14.5437125748503,
+      "endSec": 17.22
     }
   ],
   "4": [
     {
-      "text": "Run it through a free link shortener like bit.",
+      "text": "To get your direct review link",
       "startSec": 0,
-      "endSec": 2.1499641577060933
+      "endSec": 1.5746192893401016
+    },
+    {
+      "text": "go to your Google Business Profile dashboard and click \"Ask for reviews.",
+      "startSec": 1.4246192893401017,
+      "endSec": 5.203705583756345
+    },
+    {
+      "text": "Copy the URL.",
+      "startSec": 5.203705583756345,
+      "endSec": 5.886040609137056
+    },
+    {
+      "text": "Run it through a free link shortener like bit.",
+      "startSec": 5.886040609137056,
+      "endSec": 8.300456852791879
     },
     {
       "text": "ly so you have a clean, short link to paste into texts.",
-      "startSec": 1.9999641577060934,
-      "endSec": 4.570573476702509
+      "startSec": 8.300456852791879,
+      "endSec": 11.187258883248731
     },
     {
       "text": "Getting to 20 reviews is only half the problem.",
-      "startSec": 4.570573476702509,
-      "endSec": 6.767275985663082
+      "startSec": 11.187258883248731,
+      "endSec": 13.654162436548223
     },
     {
       "text": "74 percent of consumers only trust reviews written within the last three months",
-      "startSec": 6.767275985663082,
-      "endSec": 10.459605734767024
+      "startSec": 13.654162436548223,
+      "endSec": 17.800659898477157
     },
     {
       "text": "and 32 percent want reviews no older than two weeks.",
-      "startSec": 10.459605734767024,
-      "endSec": 13.04
+      "startSec": 17.800659898477157,
+      "endSec": 20.68
     }
   ],
   "5": [
     {
-      "text": "Give them the message template and the short link.",
+      "text": "After a few months",
       "startSec": 0,
-      "endSec": 2.48135593220339
+      "endSec": 0.9502625298329356
+    },
+    {
+      "text": "reviews come in steadily without any extra push because the habit is already running.",
+      "startSec": 0.8002625298329356,
+      "endSec": 5.287613365155131
+    },
+    {
+      "text": "If your team handles customer contact, assign one person to own review requests.",
+      "startSec": 5.287613365155131,
+      "endSec": 9.511002386634846
+    },
+    {
+      "text": "Give them the message template and the short link.",
+      "startSec": 9.511002386634846,
+      "endSec": 12.150620525059667
     },
     {
       "text": "Track it in a simple spreadsheet: customer name, job date, request sent, review received.",
-      "startSec": 2.33135593220339,
-      "endSec": 6.748169491525424
+      "startSec": 12.150620525059667,
+      "endSec": 16.849140811455847
     },
     {
       "text": "If requests are going out but reviews aren't coming back, your message or timing needs to change.",
-      "startSec": 6.748169491525424,
-      "endSec": 11.562000000000001
-    },
-    {
-      "text": "Most business owners skip the ask because it feels awkward.",
-      "startSec": 11.562000000000001,
-      "endSec": 14.64
+      "startSec": 16.849140811455847,
+      "endSec": 22.12
     }
   ],
   "6": [
     {
-      "text": "Add one line at the bottom: \"Happy with the work?",
+      "text": "If you're in person when the job is done and the customer is clearly satisfied",
       "startSec": 0,
-      "endSec": 2.203310344827586
+      "endSec": 3.907155963302752
+    },
+    {
+      "text": "say it out loud: \"Would you mind leaving us a Google review?",
+      "startSec": 3.7571559633027523,
+      "endSec": 6.762660550458715
+    },
+    {
+      "text": "It helps more than you know.",
+      "startSec": 6.762660550458715,
+      "endSec": 8.165229357798165
+    },
+    {
+      "text": "Then follow up with the text link within 24 hours.",
+      "startSec": 8.165229357798165,
+      "endSec": 10.669816513761468
+    },
+    {
+      "text": "Add one line at the bottom: \"Happy with the work?",
+      "startSec": 10.669816513761468,
+      "endSec": 13.124311926605504
     },
     {
       "text": "Leave us a review on Google.",
-      "startSec": 2.0533103448275862,
-      "endSec": 3.312344827586207
+      "startSec": 13.124311926605504,
+      "endSec": 14.526880733944953
     },
     {
       "text": "Link it if the invoice is digital.",
-      "startSec": 3.312344827586207,
-      "endSec": 4.841172413793103
-    },
-    {
-      "text": "Customers reading their receipt are already thinking about the experience.",
-      "startSec": 4.841172413793103,
-      "endSec": 8.168620689655171
-    },
-    {
-      "text": "This is the highest-converting moment because the job is still top of mind and they haven't moved on yet.",
-      "startSec": 8.168620689655171,
-      "endSec": 13.04
+      "startSec": 14.526880733944953,
+      "endSec": 16.38
     }
   ],
   "7": [
     {
-      "text": "Don't argue, don't deny, and don't post personal details.",
+      "text": "We appreciate you taking the time.",
       "startSec": 0,
-      "endSec": 2.5375415282392026
+      "endSec": 1.8178409090909091
     },
     {
-      "text": "A thoughtful response to a bad review often wins over skeptical readers better than a wall of five-star ratings",
-      "startSec": 2.3875415282392027,
-      "endSec": 7.32906976744186
+      "text": "Don't copy and paste the same response for every review.",
+      "startSec": 1.6678409090909092,
+      "endSec": 4.661931818181818
     },
     {
-      "text": "because it shows you're a real business that takes accountability.",
-      "startSec": 7.32906976744186,
-      "endSec": 10.267275747508306
+      "text": "For negative reviews",
+      "startSec": 4.661931818181818,
+      "endSec": 5.73125
     },
     {
-      "text": "A one-time push will spike your reviews for a month and then stall.",
-      "startSec": 10.267275747508306,
-      "endSec": 13.4
+      "text": "stay calm and respond within 24 hours: \"We're sorry to hear this didn't meet your expectations.",
+      "startSec": 5.73125,
+      "endSec": 10.810511363636364
+    },
+    {
+      "text": "Please reach out to us directly at your contact information.",
+      "startSec": 10.810511363636364,
+      "endSec": 14.018465909090908
+    },
+    {
+      "text": "Take the conversation offline.",
+      "startSec": 14.018465909090908,
+      "endSec": 15.62244318181818
+    },
+    {
+      "text": "Don't argue, don't deny, and don't post personal details.",
+      "startSec": 15.62244318181818,
+      "endSec": 18.82
     }
   ],
   "8": [
     {
-      "text": "Build review requests into every job close, not just the good ones.",
+      "text": "For most local service businesses",
       "startSec": 0,
-      "endSec": 3.066457680250784
+      "endSec": 1.7987462686567166
     },
     {
-      "text": "Even customers who had a minor hiccup but got it resolved are often your best reviewers.",
-      "startSec": 2.916457680250784,
-      "endSec": 6.944043887147336
+      "text": "2 to 4 new reviews per month is enough to maintain freshness and build volume steadily over time.",
+      "startSec": 1.6487462686567167,
+      "endSec": 6.935970149253731
     },
     {
-      "text": "If you want your Google Business Profile set up correctly and a review system that runs without constant attention",
-      "startSec": 6.944043887147336,
-      "endSec": 12.161598746081506
+      "text": "Check your count on the first of each month and compare it to last month.",
+      "startSec": 6.935970149253731,
+      "endSec": 10.915014925373136
     },
     {
-      "text": "that's exactly what we build for local businesses.",
-      "startSec": 12.161598746081506,
-      "endSec": 14.6
+      "text": "Look for new reviews and respond within 48 hours.",
+      "startSec": 10.915014925373136,
+      "endSec": 13.585880597014928
+    },
+    {
+      "text": "Watch for patterns in feedback that point to a real operational issue worth fixing.",
+      "startSec": 13.585880597014928,
+      "endSec": 18.26
     }
   ],
   "9": [
     {
+      "text": "If you want your Google Business Profile set up correctly and a review system that runs without constant attention",
+      "startSec": 0,
+      "endSec": 5.505365853658536
+    },
+    {
+      "text": "that's exactly what we build for local businesses.",
+      "startSec": 5.355365853658536,
+      "endSec": 7.92
+    }
+  ],
+  "10": [
+    {
       "text": "Ready to turn your Google reviews into real revenue?",
       "startSec": 0,
-      "endSec": 3.0069565217391303
+      "endSec": 3.300869565217391
     },
     {
       "text": "Follow for more practical business tips.",
-      "startSec": 2.8569565217391304,
-      "endSec": 5.32
+      "startSec": 3.1508695652173913,
+      "endSec": 5.84
     }
   ]
 }

@@ -1,13 +1,53 @@
 {
   "slug": "instagram-stories-for-local-business-how-to-use",
-  "renderedAt": "2026-06-30T18:30:09.665Z",
+  "renderedAt": "2026-07-16T09:15:20.276Z",
   "hookType": "statement",
-  "segmentCount": 10,
-  "scriptDuration": 181,
-  "renderedDuration": 176.128,
-  "scriptHash": "4152cd2223a824a21f994fd8fdd60255a8277d2fa522138f3817681e10bd5be7",
+  "segmentCount": 11,
+  "scriptDuration": 189.545,
+  "renderedDuration": 184.128,
+  "scriptHash": "55fa953026e3b64e023f13bf92321e38de7e16a5feecc2349e2c1ece332d5a8e",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-03.mp3",
-  "photosUsed": 0
+  "musicTrack": "mixkit-forest-treasure-138.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05768063006253212
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.28,
+      "1": 22.34,
+      "2": 20.1,
+      "3": 18.42,
+      "4": 17.66,
+      "5": 19.88,
+      "6": 17.26,
+      "7": 17.54,
+      "8": 17.9,
+      "9": 21.84,
+      "10": 5.36
+    },
+    "totalNarrationSeconds": 181.58
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/forest-treasure-138/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 8
+  }
 }

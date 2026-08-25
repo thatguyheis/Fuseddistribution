@@ -1,13 +1,53 @@
 {
   "slug": "how-to-use-silver-to-protect-against-currency-devaluati",
-  "renderedAt": "2026-06-28T16:26:18.270Z",
+  "renderedAt": "2026-07-14T21:54:31.489Z",
   "hookType": "stat",
   "segmentCount": 11,
-  "scriptDuration": 222,
-  "renderedDuration": 216.597333,
-  "scriptHash": "9778ed97e228df6ac9baaee85160c28c52001a99f16c45b11ce43b73d7b2321e",
+  "scriptDuration": 208.545,
+  "renderedDuration": 203.114667,
+  "scriptHash": "bcdd46271542987110751f8b71815f6b85db094388d146046f0dce8823b7316c",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-10.mp3",
-  "photosUsed": 11
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09795576387368925
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 5.28,
+      "1": 25.04,
+      "2": 20.46,
+      "3": 21.78,
+      "4": 17.68,
+      "5": 21.02,
+      "6": 16.98,
+      "7": 24.16,
+      "8": 22.5,
+      "9": 22.32,
+      "10": 3.36
+    },
+    "totalNarrationSeconds": 200.58
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 10,
+  "videoCount": 1,
+  "mediaSources": {
+    "local-video": 1,
+    "local-photo": 10
+  }
 }

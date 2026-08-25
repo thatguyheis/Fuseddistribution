@@ -1,6 +1,6 @@
 {
   "slug": "best-time-to-post-on-instagram-for-local-business",
-  "renderedAt": "2026-07-02T20:39:19.108Z",
+  "renderedAt": "2026-07-08T22:11:57.959Z",
   "hookType": "stat",
   "segmentCount": 11,
   "scriptDuration": 208,
@@ -8,13 +8,19 @@
   "scriptHash": "967c1c899f5b4beb1450f861bacdca965de5bf1e05509b0cf0393ce2f1838e8e",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-05.mp3",
+  "musicTrack": "mixkit-driving-ambition-32.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/driving-ambition-32/"
+  },
   "photosUsed": 11,
   "mediaUsed": 11,
   "photoCount": 11,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 8
+    "pixabay-photo": 8
   }
 }

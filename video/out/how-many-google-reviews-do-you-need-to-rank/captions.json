@@ -3,66 +3,262 @@
     {
       "text": "Ten reviews is the first algorithm threshold for local ranking.",
       "startSec": 0,
-      "endSec": 4.104742268041237
-    },
-    {
-      "text": "There's no universal magic number.",
-      "startSec": 3.954742268041237,
-      "endSec": 6.32
+      "endSec": 4.08
     }
   ],
   "1": [
     {
-      "text": "You need at least 10 reviews to see a measurable local ranking lift.",
+      "text": "But there are thresholds that actually matter, and most local businesses aren't hitting them.",
       "startSec": 0,
-      "endSec": 3.52
+      "endSec": 4.8880357142857145
+    },
+    {
+      "text": "You need at least 10 reviews to see a measurable local ranking lift.",
+      "startSec": 4.738035714285714,
+      "endSec": 8.312083333333334
+    },
+    {
+      "text": "You need 20 reviews before most consumers trust you enough to call.",
+      "startSec": 8.312083333333334,
+      "endSec": 11.833571428571428
+    },
+    {
+      "text": "And you need new reviews coming in every 90 days",
+      "startSec": 11.833571428571428,
+      "endSec": 14.356428571428571
+    },
+    {
+      "text": "or Google's algorithm treats your profile like a ghost town.",
+      "startSec": 14.356428571428571,
+      "endSec": 17.66
     }
   ],
   "2": [
     {
-      "text": "You need 20 reviews before most consumers trust you enough to call.",
+      "text": "This matters because a lot of small business owners set the wrong goal.",
       "startSec": 0,
-      "endSec": 3.6
+      "endSec": 3.967216494845361
+    },
+    {
+      "text": "They think they need 50 or 100 reviews before Google takes them seriously.",
+      "startSec": 3.8172164948453613,
+      "endSec": 7.952061855670104
+    },
+    {
+      "text": "That's your entry point into the local pack conversation.",
+      "startSec": 7.952061855670104,
+      "endSec": 11.137010309278352
+    },
+    {
+      "text": "Once you're past 10, volume relative to your competitors becomes the signal that matters.",
+      "startSec": 11.137010309278352,
+      "endSec": 16.26
     }
   ],
   "3": [
     {
-      "text": "And you need new reviews coming in every 90 days",
+      "text": "Text or email them a direct link to your Google Business Profile review page.",
       "startSec": 0,
-      "endSec": 2.453333333333333
+      "endSec": 3.9535294117647064
     },
     {
-      "text": "or Google's algorithm treats your profile like a ghost town.",
-      "startSec": 2.3033333333333332,
-      "endSec": 5.52
+      "text": "One tap, no login required, no searching around.",
+      "startSec": 3.8035294117647065,
+      "endSec": 6.268067226890757
+    },
+    {
+      "text": "Remove every possible step between them and the review box.",
+      "startSec": 6.268067226890757,
+      "endSec": 9.297394957983194
+    },
+    {
+      "text": "The number you need isn't the same for every business.",
+      "startSec": 9.297394957983194,
+      "endSec": 12.22
     }
   ],
   "4": [
     {
-      "text": "A Sterling Sky case study tested three local businesses in 2025 and found a clear ranking lift once each one crossed 10 reviews.",
+      "text": "Our observation: Most small business owners we work with set goals like \"get more reviews\" without knowing what their top competitor's review count actually is.",
       "startSec": 0,
-      "endSec": 7.72
+      "endSec": 8.544245524296675
+    },
+    {
+      "text": "Before you pick a number, open Google Maps, search for your exact service and city",
+      "startSec": 8.394245524296675,
+      "endSec": 12.773171355498722
+    },
+    {
+      "text": "and count the reviews on the top three results.",
+      "startSec": 12.773171355498722,
+      "endSec": 15.28304347826087
+    },
+    {
+      "text": "Match it, then try to beat the average.",
+      "startSec": 15.28304347826087,
+      "endSec": 17.365703324808184
+    },
+    {
+      "text": "This is where most businesses fall behind without realizing it.",
+      "startSec": 17.365703324808184,
+      "endSec": 20.88
     }
   ],
   "5": [
     {
-      "text": "They think they need 50 or 100 reviews before Google takes them seriously.",
+      "text": "Review velocity, the pace at which you collect new reviews, is as important as your total number.",
       "startSec": 0,
-      "endSec": 3.96
+      "endSec": 4.949418282548477
+    },
+    {
+      "text": "You can't build a stack and coast.",
+      "startSec": 4.799418282548476,
+      "endSec": 6.53426592797784
+    },
+    {
+      "text": "A system that works: Set a minimum target of one new review per week.",
+      "startSec": 6.53426592797784,
+      "endSec": 10.054986149584488
+    },
+    {
+      "text": "For most local businesses, that's a 5 percent conversion rate on review requests.",
+      "startSec": 10.054986149584488,
+      "endSec": 14.188005540166206
+    },
+    {
+      "text": "If you see 20 customers a week and one leaves a review, you're hitting the pace.",
+      "startSec": 14.188005540166206,
+      "endSec": 18.42
     }
   ],
   "6": [
     {
-      "text": "Once you're past 10, volume relative to your competitors becomes the signal that matters.",
+      "text": "You can rank on Google Maps and still lose the customer before they ever click your website",
       "startSec": 0,
-      "endSec": 4.92
+      "endSec": 4.579086757990867
+    },
+    {
+      "text": "because your review count doesn't clear the bar people are using to filter their choices.",
+      "startSec": 4.429086757990866,
+      "endSec": 8.907534246575342
+    },
+    {
+      "text": "The SOCi State of Google Reviews found that for every 10 new reviews a business earns",
+      "startSec": 8.907534246575342,
+      "endSec": 13.18470319634703
+    },
+    {
+      "text": "Google Business Profile conversion rate improves by 2.",
+      "startSec": 13.18470319634703,
+      "endSec": 15.901963470319632
+    },
+    {
+      "text": "8 percent.",
+      "startSec": 15.901963470319632,
+      "endSec": 16.405159817351596
+    },
+    {
+      "text": "Businesses with above-average review counts generate 82 percent more annual revenue than those below average.",
+      "startSec": 16.405159817351596,
+      "endSec": 22.04
     }
   ],
   "7": [
     {
-      "text": "Follow for more tips to grow your business.",
+      "text": "Don't wait until checkout, don't wait until you follow up on payment.",
       "startSec": 0,
-      "endSec": 2.44
+      "endSec": 3.6303409090909087
+    },
+    {
+      "text": "If they haven't left a review after 48 hours, send one text: \"Hi there, no pressure at all",
+      "startSec": 3.4803409090909088,
+      "endSec": 8.215568181818181
+    },
+    {
+      "text": "but if you ever have a free minute, that Google review would still mean a lot to us.",
+      "startSec": 8.215568181818181,
+      "endSec": 12.635113636363636
+    },
+    {
+      "text": "One follow-up.",
+      "startSec": 12.635113636363636,
+      "endSec": 13.371704545454545
+    },
+    {
+      "text": "Responding to reviews, positive and negative alike, shows the algorithm your profile is active.",
+      "startSec": 13.371704545454545,
+      "endSec": 18.52
+    }
+  ],
+  "8": [
+    {
+      "text": "Businesses in the top 3 local positions average about 21 percent more reviews than those in positions 4 through 10 (SOCi State of Google Reviews)",
+      "startSec": 0,
+      "endSec": 7.9702407002188185
+    },
+    {
+      "text": "but proximity, relevance, and profile completeness also factor in.",
+      "startSec": 7.820240700218818,
+      "endSec": 11.448074398249453
+    },
+    {
+      "text": "Reviews help most when the rest of your profile is already optimized.",
+      "startSec": 11.448074398249453,
+      "endSec": 15.240809628008753
+    },
+    {
+      "text": "In 2026, 74 percent of consumers only trust reviews from the last three months (BrightLocal).",
+      "startSec": 15.240809628008753,
+      "endSec": 20.352757111597377
+    },
+    {
+      "text": "Older reviews still count toward your total, but fresh reviews carry more influence.",
+      "startSec": 20.352757111597377,
+      "endSec": 25.12
+    }
+  ],
+  "9": [
+    {
+      "text": "Google can remove reviews and flag profiles for these practices.",
+      "startSec": 0,
+      "endSec": 3.019487179487179
+    },
+    {
+      "text": "If you don't have a review system yet",
+      "startSec": 2.8694871794871792,
+      "endSec": 4.6151282051282045
+    },
+    {
+      "text": "start with the simplest version today: save your Google review link",
+      "startSec": 4.6151282051282045,
+      "endSec": 7.7761538461538455
+    },
+    {
+      "text": "and ask the next customer who says something positive to leave a review before they leave.",
+      "startSec": 7.7761538461538455,
+      "endSec": 12.022307692307692
+    },
+    {
+      "text": "Once you're there, look up your top competitor's review count and make that your next target.",
+      "startSec": 12.022307692307692,
+      "endSec": 16.41
+    },
+    {
+      "text": "Keep new reviews coming in every month.",
+      "startSec": 16.41,
+      "endSec": 18.4
+    }
+  ],
+  "10": [
+    {
+      "text": "What's your business's review goal right now?",
+      "startSec": 0,
+      "endSec": 2.4141176470588235
+    },
+    {
+      "text": "Follow for more practical business tips.",
+      "startSec": 2.2641176470588236,
+      "endSec": 4.56
     }
   ]
 }

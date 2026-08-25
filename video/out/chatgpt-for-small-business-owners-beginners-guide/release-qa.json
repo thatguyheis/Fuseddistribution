@@ -5,7 +5,7 @@
   "warnings": [
     "captions are proportional; a three-point manual sync review is required before posting"
   ],
-  "generatedAt": "2026-07-27T06:17:38.548Z",
-  "manualCaptionReview": false,
-  "readyForPosting": false
+  "generatedAt": "2026-07-27T12:24:01.779Z",
+  "manualCaptionReview": true,
+  "readyForPosting": true
 }

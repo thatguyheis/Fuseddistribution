@@ -1,75 +1,82 @@
 {
   "slug": "facebook-page-vs-facebook-group-for-business",
   "title": "facebook-page-vs-facebook-group-for-business",
-  "totalDuration": 186,
+  "totalDuration": 155.045,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 7,
+      "endSec": 4.84,
       "text": "Page gets calls; Groups build trust, but Pages win Google Maps.",
       "narration": "Page gets calls; Groups build trust, but Pages win Google Maps."
     },
     {
       "type": "overlay",
-      "startSec": 7,
-      "endSec": 31,
-      "text": "YOU BUILT A SITE YOU",
+      "startSec": 4.84,
+      "endSec": 17.213,
+      "text": "BUILT SITE LAUNCHED YOU'RE",
       "narration": "You built a site, you launched it, and then you're just waiting for calls. You know you need more customers, but you don't know how to get them to actually show up on Google. Most agencies promise magic solutions, but you need a plan that actually gets you local customers, not just fancy reports."
     },
     {
       "type": "overlay",
-      "startSec": 31,
-      "endSec": 51,
-      "text": "IT S THE PLACE YOU",
-      "narration": "It’s the place you point people to when they want to book a service or call you directly. It needs to look clean and tell people exactly what you do. People join groups to ask for local tips or get quick answers about your industry."
+      "startSec": 17.213,
+      "endSec": 32.493,
+      "text": "CUT FLUFF SHOW EXACTLY",
+      "narration": "We cut the fluff and show you exactly how to get found by the people searching for your service right now. If you're ready to stop guessing and start getting calls, check out our solutions at /#contact. Think about your Facebook Page as your business storefront. It’s the place you point people to when they want to book a service or call you directly."
     },
     {
       "type": "overlay",
-      "startSec": 51,
-      "endSec": 73,
-      "text": "MAKE IT EASY FOR PEOPLE",
-      "narration": "Make it easy for people to find your contact info. Use the Group later to build trust once they know you. Don't try to do both for the same main job search. When to Use Your Facebook Page Think of your Facebook Page as your main shop window."
+      "startSec": 32.493,
+      "endSec": 50.873,
+      "text": "NEEDS LOOK CLEAN TELL",
+      "narration": "It needs to look clean and tell people exactly what you do. People join groups to ask for local tips or get quick answers about your industry. It’s good for getting feedback and building a loyal base. But groups don't work as well when someone searches on Google Maps for \"plumber near me.\" If your main goal is getting a phone call for a specific job, start with a Page."
     },
     {
       "type": "overlay",
-      "startSec": 73,
-      "endSec": 94,
-      "text": "A FACEBOOK GROUP SERVES A",
-      "narration": "A Facebook Group serves a different purpose. Groups are for building a real community. You can use them to answer quick questions your customers have. You can share local tips or ask for feedback on your work. It’s about building trust after someone has already found you."
+      "startSec": 50.873,
+      "endSec": 67.126,
+      "text": "WANT SETUP LOOK CLEAN",
+      "narration": "You want this setup to look clean and direct. It’s your primary spot for getting people to take the next step. A Facebook Group serves a different purpose. Groups are for building a real community. You can use them to answer quick questions your customers have. You can share local tips or ask for feedback on your work. It’s about building trust after someone has already found you."
     },
     {
       "type": "overlay",
-      "startSec": 94,
-      "endSec": 113,
-      "text": "IF YOUR MAIN GOAL IS",
-      "narration": "If your main goal is getting a phone call for a specific job, start with a clear Page setup. When a Facebook Group Actually Helps You need two different Facebook setups for your business. Your Facebook Page is your official storefront."
+      "startSec": 67.126,
+      "endSec": 81.259,
+      "text": "GETTING FOUND GOOGLE MAPS",
+      "narration": "For getting found on Google Maps, your Page is key. Groups aren't usually the best thing for ranking for \"near me\" searches. Use your Page to drive people to your contact form. Use the Group to keep your existing customers engaged. If your main goal is getting a phone call for a specific job, start with a clear Page setup."
     },
     {
       "type": "overlay",
-      "startSec": 113,
-      "endSec": 134,
-      "text": "THIS IS WHERE YOU CAN",
-      "narration": "This is where you can answer quick questions from people who already know you or are interested in your industry. You get feedback here, and you build a loyal following. Don't try to use the Group to get found on Google Maps for a specific service."
+      "startSec": 81.259,
+      "endSec": 99.219,
+      "text": "FACEBOOK GROUP ACTUALLY HELPS",
+      "narration": "When a Facebook Group Actually Helps You need two different Facebook setups for your business. Your Facebook Page is your official storefront. This is where you show your services, your hours, and where people can easily find your phone number or book a service. It’s for when someone searches for your service right now. A Facebook Group is for building a community."
     },
     {
       "type": "overlay",
-      "startSec": 134,
-      "endSec": 154,
-      "text": "YOU NEED TO DECIDE WHERE",
-      "narration": "You need to decide where you spend your energy online. It’s where you put your phone number and your booking link. This is how people find you when they search for your service near them. A Facebook Group is for building a community."
+      "startSec": 99.219,
+      "endSec": 116.719,
+      "text": "PAGES WHAT GOOGLE LOOKS",
+      "narration": "Pages are what Google looks for when someone searches \"plumber near me.\" Use the Page to get the initial call. Use the Group to build that trust once they've seen you. If you want a phone call for a specific job, start with a clean Page setup. You need to decide where you spend your energy online. It’s where you put your phone number and your booking link."
     },
     {
       "type": "overlay",
-      "startSec": 154,
-      "endSec": 178,
-      "text": "YOUR MAIN GOAL IS GETTING",
+      "startSec": 116.719,
+      "endSec": 134.532,
+      "text": "HOW PEOPLE FIND SEARCH",
+      "narration": "This is how people find you when they search for your service near them. A Facebook Group is for building a community. It’s great for service businesses that need to share local tips or answer quick questions. But groups don't work as well for showing up on Google Maps. They make it harder to get found when someone searches for \"plumber near me.\" Don't try to do both perfectly right away."
+    },
+    {
+      "type": "overlay",
+      "startSec": 134.532,
+      "endSec": 149.345,
+      "text": "MAIN GOAL GETTING PHONE",
       "narration": "Your main goal is getting a phone call for a specific service. Direct people to a simple contact form. Use the Group later to build trust with the people who are already interested. Stop wasting money on websites that don't get calls. See how we get you found on Google, starting right now."
     },
     {
       "type": "question",
-      "startSec": 178,
-      "endSec": 186,
+      "startSec": 149.345,
+      "endSec": 155.045,
       "text": "Which platform is right for your immediate customer calls?",
       "narration": "Which platform is right for your immediate customer calls? Follow for more practical business tips.",
       "subtext": "COMMENT BELOW"

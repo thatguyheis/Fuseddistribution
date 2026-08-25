@@ -1,9 +1,54 @@
 {
   "slug": "how-to-build-a-silver-stacking-portfolio-from-scratch",
-  "renderedAt": "2026-06-22T18:22:52.485Z",
+  "renderedAt": "2026-07-14T13:41:44.786Z",
   "hookType": "statement",
-  "segmentCount": 8,
-  "totalDuration": 120,
-  "musicTrack": "ambient-04.mp3",
-  "photosUsed": 8
+  "segmentCount": 12,
+  "scriptDuration": 196.498,
+  "renderedDuration": 190.549333,
+  "scriptHash": "2783bb01b276beb2fc9b4d58028056995db06cdef24d6bf722a280963898b552",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -7.9,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.031335021402162974
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 3.68,
+      "1": 16.94,
+      "2": 20.5,
+      "3": 17.7,
+      "4": 19.46,
+      "5": 18.72,
+      "6": 19.66,
+      "7": 21.54,
+      "8": 16.22,
+      "9": 10.88,
+      "10": 16.66,
+      "11": 5.84
+    },
+    "totalNarrationSeconds": 187.8
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
+  "photosUsed": 12,
+  "mediaUsed": 12,
+  "photoCount": 12,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 8,
+    "pixabay": 4
+  }
 }

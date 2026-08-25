@@ -1,75 +1,82 @@
 {
   "slug": "mobile-website-speed-why-it-matters-for-local-business",
   "title": "mobile-website-speed-why-it-matters-for-local-business",
-  "totalDuration": 183,
+  "totalDuration": 173.565,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 8,
+      "endSec": 5.84,
       "text": "Fast mobile speed is the minimum standard for showing up on Google Maps.",
       "narration": "Fast mobile speed is the minimum standard for showing up on Google Maps."
     },
     {
       "type": "overlay",
-      "startSec": 8,
-      "endSec": 32,
-      "text": "YOUR WEBSITE NEEDS TO ACTUALLY",
-      "narration": "Your website needs to actually get calls. If you have a website but nobody calls from it, you're missing something simple. We help local businesses get found on Google so people can find you when they need your service. Stop wasting time on complicated marketing promises and let's talk about getting you seen."
+      "startSec": 5.84,
+      "endSec": 22.073,
+      "text": "WEBSITE NEEDS ACTUALLY CALLS",
+      "narration": "Your website needs to actually get calls. If you have a website but nobody calls from it, you're missing something simple. We help local businesses get found on Google so people can find you when they need your service. Stop wasting time on complicated marketing promises and let's talk about getting you seen. Most local businesses set it up wrong."
     },
     {
       "type": "overlay",
-      "startSec": 32,
-      "endSec": 52,
-      "text": "STOP WAITING FOR CUSTOMERS TO",
-      "narration": "Stop waiting for customers to find you. You need a simple way to get them to leave a review. Focus on a clear process, not a complicated system. A fast, mobile-friendly website isn't a luxury. It's the basic requirement to show up on Google Maps."
+      "startSec": 22.073,
+      "endSec": 37.973,
+      "text": "REVIEWS DIRECT LINE CUSTOMERS",
+      "narration": "Reviews are your direct line to customers. Stop waiting for customers to find you. You need a simple way to get them to leave a review. Focus on a clear process, not a complicated system. A fast, mobile-friendly website isn't a luxury. It's the basic requirement to show up on Google Maps."
     },
     {
       "type": "overlay",
-      "startSec": 52,
-      "endSec": 68,
-      "text": "MOST LOCAL BUSINESSES SET IT",
-      "narration": "Most local businesses set it up wrong. It's the first place customers look when they need your service. You need to make sure it looks right for people searching for what you do."
+      "startSec": 37.973,
+      "endSec": 53.933,
+      "text": "SITE TAKES TOO LONG",
+      "narration": "If your site takes too long to load on a phone, you lose the customer who is looking for you right now. Ignoring local search means you're invisible to people actively looking for your service today. You have to show up where they are searching. Most local businesses set it up wrong. It's the first place customers look when they need your service."
     },
     {
       "type": "overlay",
-      "startSec": 68,
-      "endSec": 90,
-      "text": "IF SOMEONE SEARCHES FOR YOUR",
-      "narration": "If someone searches for your exact service in your town and you don't appear, you're not even there. Most local businesses set it up wrong. It's the first place customers look when they search for something local. If you don't get this right, you're missing out on easy customers."
+      "startSec": 53.933,
+      "endSec": 70.346,
+      "text": "MAKE SURE LOOKS RIGHT",
+      "narration": "You need to make sure it looks right for people searching for what you do. People don't search for \"best plumbing services.\" They search for \"plumber near me.\" You have to use the language people actually type into Google. If you miss that, you won't show up. Reviews are your direct line to customers. Stop waiting for them to come to you."
     },
     {
       "type": "overlay",
-      "startSec": 90,
-      "endSec": 111,
-      "text": "GOOGLE MAPS SHOWS YOUR BUSINESS",
-      "narration": "Google Maps shows your business on mobile first. If your site lags, or if it’s hard to read on a small screen, people leave. Ignoring local search means you're invisible to the people actively looking for your service right now. Most local businesses set it up wrong."
+      "startSec": 70.346,
+      "endSec": 91.439,
+      "text": "MOST LOCAL BUSINESSES SET",
+      "narration": "Most local businesses set it up wrong. It's the first place customers look when they search for something local. If you don't get this right, you're missing out on easy customers. People don't search for fancy service descriptions. They search for \"plumber near me\" or \"best dentist in City Name.\" You need to match what people type into Google. If your site doesn't use the language they use, you won't show up."
     },
     {
       "type": "overlay",
-      "startSec": 111,
-      "endSec": 133,
-      "text": "THAT FEEDBACK SHOWS PEOPLE WHY",
-      "narration": "That feedback shows people why they should call you instead of the next person they find. A fast, mobile-friendly website is the minimum standard. It's not a nice thing to have. It’s how you show up on Google Maps. If your site lags on a phone, people bounce."
+      "startSec": 91.439,
+      "endSec": 110.179,
+      "text": "IT'S FIRST PLACE CUSTOMERS",
+      "narration": "It's the first place customers look when they need your service. If you're not set up right, you're losing calls to your competition. People search for what they need right now. They search \"plumber near me,\" not \"best plumbing services.\" You gotta match the search language. If your website uses fancy terms, Google won't show you. Reviews are your direct line to customers."
     },
     {
       "type": "overlay",
-      "startSec": 133,
-      "endSec": 154,
-      "text": "PEOPLE DON'T SEARCH FOR FANCY",
-      "narration": "People don't search for fancy service names. They search for \"plumber near me\" or \"best restaurant downtown.\" You have to use the language they use. If your website doesn't match what people are typing into Google, you won't get seen. Reviews are your direct line to customers."
+      "startSec": 110.179,
+      "endSec": 127.979,
+      "text": "TELL PEOPLE YOU'RE GOOD",
+      "narration": "They tell people if you're good or bad. Focus on a simple way to get those reviews. Make it easy for happy customers to leave feedback. That feedback shows people why they should call you instead of the next person they find. A fast, mobile-friendly website is the minimum standard. It's not a nice thing to have. It’s how you show up on Google Maps."
     },
     {
       "type": "overlay",
-      "startSec": 154,
-      "endSec": 174,
-      "text": "CONTACT US NOW TO SEE",
-      "narration": "Contact us now to see how we get your local business found on Google. Small Business Website Mistakes To Avoid What a Small Business Website Needs to Succeed How To Turn Bad Reviews Into Better Outcomes Read next: Small Business Website Mistakes To Avoid"
+      "startSec": 127.979,
+      "endSec": 143.652,
+      "text": "SITE LAGS PHONE PEOPLE",
+      "narration": "If your site lags on a phone, people bounce. Ignoring local search means you're invisible to people looking for your service today. Most local businesses set it up wrong. You need to make sure it’s set up right so you show up when people search for what you do near them. People don't search for fancy service names."
+    },
+    {
+      "type": "overlay",
+      "startSec": 143.652,
+      "endSec": 167.345,
+      "text": "FAST MOBILE FRIENDLY WEBSITE",
+      "narration": "A fast, mobile-friendly website isn't a nice thing to have. It’s the basic rule for showing up on Google Maps. If your site loads slow on a phone, people leave. It stops you from getting the clicks you need. If you ignore local search, you’re invisible. People are looking for your service right now. You need a clear plan to get in front of them. Stop wasting time on websites that don't get calls. Contact us now to see how we get your local business found on Google."
     },
     {
       "type": "question",
-      "startSec": 174,
-      "endSec": 183,
+      "startSec": 167.345,
+      "endSec": 173.565,
       "text": "Is your website ready to turn local searches into real?",
       "narration": "Is your website ready to turn local searches into real? Follow for more practical business tips.",
       "subtext": "COMMENT BELOW"

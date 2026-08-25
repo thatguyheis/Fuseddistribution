@@ -1,6 +1,6 @@
 {
   "slug": "social-media-analytics-what-metrics-actually-matter",
-  "renderedAt": "2026-07-02T20:16:10.890Z",
+  "renderedAt": "2026-07-08T21:19:59.604Z",
   "hookType": "stat",
   "segmentCount": 10,
   "scriptDuration": 186,
@@ -8,13 +8,19 @@
   "scriptHash": "8f4f6fd24783c977c343a9c085374004a68809b163fba3b0f3311a1b2e1e3c8c",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-05.mp3",
+  "musicTrack": "mixkit-relax-beat-292.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/relax-beat-292/"
+  },
   "photosUsed": 10,
   "mediaUsed": 10,
   "photoCount": 10,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 7
+    "pixabay-photo": 7
   }
 }

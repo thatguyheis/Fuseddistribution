@@ -1,7 +1,7 @@
 {
   "slug": "silver-rounds-complete-buyer-guide",
   "title": "silver-rounds-complete-buyer-guide",
-  "totalDuration": 99,
+  "totalDuration": 100,
   "segments": [
     {
       "type": "hook",
@@ -55,9 +55,9 @@
     {
       "type": "question",
       "startSec": 95,
-      "endSec": 99,
+      "endSec": 100,
       "text": "ARE YOU READY TO START YOUR SILVER ACCUMULATION",
-      "narration": "Follow for more silver news.",
+      "narration": "ARE YOU READY TO START YOUR SILVER ACCUMULATION? Follow for more silver news.",
       "subtext": "COMMENT BELOW"
     }
   ]

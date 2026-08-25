@@ -1,6 +1,6 @@
 {
   "slug": "email-marketing-for-small-business-getting-started",
-  "renderedAt": "2026-07-03T18:55:18.813Z",
+  "renderedAt": "2026-07-08T21:12:33.937Z",
   "hookType": "stat",
   "segmentCount": 10,
   "scriptDuration": 181,
@@ -8,13 +8,19 @@
   "scriptHash": "b8ba560cf2df12d178dcae362e9c436b654d478d0edd3beb0c898df3e8eb12a3",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-06.mp3",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
   "photosUsed": 10,
   "mediaUsed": 10,
   "photoCount": 10,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 7
+    "pixabay-photo": 7
   }
 }

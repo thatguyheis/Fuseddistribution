@@ -1,33 +1,33 @@
 {
   "slug": "what-is-junk-silver",
   "title": "What Is Junk Silver?",
-  "totalDuration": 37,
+  "totalDuration": 36.986,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 3,
+      "endSec": 3.8,
       "text": "3%. That's the premium on 90% pure US silver. no brand name, no markup.",
       "narration": null
     },
     {
       "type": "stat",
-      "startSec": 3,
-      "endSec": 20,
+      "startSec": 3.8,
+      "endSec": 19.713,
       "text": "3-8% PREMIUM VS 18-28% EAGLES",
       "narration": "Pre-1965 dimes, quarters, and halves are 90 percent pure silver. same metal as any Eagle or bar. Junk silver trades at 3 to 8 percent above spot. American Silver Eagles run 18 to 28 percent. Same silver. The difference is the brand."
     },
     {
       "type": "stat",
-      "startSec": 20,
-      "endSec": 32,
+      "startSec": 19.713,
+      "endSec": 30.606,
       "text": "$1 FACE = 0.715 OZ SILVER",
       "narration": "One dollar in face value of junk silver holds 0.715 troy ounces. At 30 dollar spot, that is about 21.45 in melt value. Every dealer uses this shortcut."
     },
     {
       "type": "cta",
-      "startSec": 32,
-      "endSec": 37,
+      "startSec": 30.606,
+      "endSec": 36.986,
       "text": "Save this before your next silver buy.",
       "narration": "Save this before your next silver purchase. full breakdown linked in comments."
     }

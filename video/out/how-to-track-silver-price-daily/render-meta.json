@@ -1,13 +1,52 @@
 {
   "slug": "how-to-track-silver-price-daily",
-  "renderedAt": "2026-06-29T18:43:19.952Z",
+  "renderedAt": "2026-07-14T17:34:27.531Z",
   "hookType": "statement",
   "segmentCount": 10,
-  "scriptDuration": 190,
-  "renderedDuration": 185.130667,
-  "scriptHash": "e03261d9f054a5ef0af71dcc9e7e06c5f603fbd2d17b5a5b54a121f33327e7ed",
+  "scriptDuration": 197.352,
+  "renderedDuration": 192.512,
+  "scriptHash": "37b5528b7ba9ea7fc119a7dc836027bd9e9a113ef6165145308c0f8fdffa6117",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-02.mp3",
-  "photosUsed": 0
+  "musicTrack": "mixkit-forest-treasure-138.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.2,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05768063006253212
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.16,
+      "1": 23.46,
+      "2": 21.16,
+      "3": 21.2,
+      "4": 20.82,
+      "5": 19.62,
+      "6": 27.18,
+      "7": 23.52,
+      "8": 24.28,
+      "9": 4.72
+    },
+    "totalNarrationSeconds": 190.12
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/forest-treasure-138/"
+  },
+  "photosUsed": 10,
+  "mediaUsed": 10,
+  "photoCount": 10,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 3,
+    "pixabay": 7
+  }
 }

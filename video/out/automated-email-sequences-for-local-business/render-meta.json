@@ -1,21 +1,26 @@
 {
   "slug": "automated-email-sequences-for-local-business",
-  "renderedAt": "2026-07-05T18:27:38.354Z",
+  "renderedAt": "2026-07-08T20:42:17.103Z",
   "hookType": "statement",
   "segmentCount": 10,
-  "scriptDuration": 188,
-  "renderedDuration": 183.125333,
-  "scriptHash": "2bd118ad395fc61df2d27c881bcaa00c9ac1866733228d72c6d730e978529323",
+  "scriptDuration": 203,
+  "renderedDuration": 198.122667,
+  "scriptHash": "d90abd78d3eb5dcb7b895e2e0a606f368e6ac7ce0249aa31a3ff3d6eae9a1adc",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-08.mp3",
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
+  },
   "photosUsed": 10,
   "mediaUsed": 10,
   "photoCount": 10,
   "videoCount": 0,
   "mediaSources": {
-    "local-photo": 3,
-    "pixabay": 6,
-    "pexels": 1
+    "local-photo": 9,
+    "pixabay-photo": 1
   }
 }

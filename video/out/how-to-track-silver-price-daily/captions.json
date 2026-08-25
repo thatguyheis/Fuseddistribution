@@ -10,171 +10,241 @@
     {
       "text": "Open three tabs every morning: a live spot price feed, the LBMA Silver Price benchmark page",
       "startSec": 0,
-      "endSec": 5.193066666666667
+      "endSec": 5.647777777777778
     },
     {
       "text": "and your dealer's product pages.",
-      "startSec": 5.043066666666666,
-      "endSec": 6.8692
+      "startSec": 5.497777777777777,
+      "endSec": 7.483809523809524
     },
     {
       "text": "Spot tells you the metal value per troy ounce.",
-      "startSec": 6.8692,
-      "endSec": 9.494266666666666
+      "startSec": 7.483809523809524,
+      "endSec": 10.338730158730158
     },
     {
       "text": "The LBMA fix gives you the institutional reference price set during a daily auction at 12:00 noon London time in 30-second rounds .",
-      "startSec": 9.494266666666666,
-      "endSec": 17.12
+      "startSec": 10.338730158730158,
+      "endSec": 18.46904761904762
+    },
+    {
+      "text": "Dealer pages show you premium, the gap between spot and what you actually pay.",
+      "startSec": 18.46904761904762,
+      "endSec": 23.46
     }
   ],
   "2": [
     {
-      "text": "In 2025 silver hit a record high above $49.",
+      "text": "The gap between the two readings is your daily volatility number.",
       "startSec": 0,
-      "endSec": 2.4207407407407406
+      "endSec": 3.8205555555555555
+    },
+    {
+      "text": "In 2025 silver hit a record high above $49.",
+      "startSec": 3.6705555555555556,
+      "endSec": 6.198
     },
     {
       "text": "95 per ounce in October before extreme daily volatility took prices into the $80 to $117 range late in the year .",
-      "startSec": 2.2707407407407407,
-      "endSec": 8.632222222222222
+      "startSec": 6.198,
+      "endSec": 12.83988888888889
     },
     {
       "text": "On days like that, individual feeds lag by 30 to 90 seconds.",
-      "startSec": 8.632222222222222,
-      "endSec": 12.16
+      "startSec": 12.83988888888889,
+      "endSec": 16.366555555555557
+    },
+    {
+      "text": "A single source can show you $94 while the next dealer over is pricing off $97.",
+      "startSec": 16.366555555555557,
+      "endSec": 21.16
     }
   ],
   "3": [
     {
-      "text": "The number that prints from that auction is the price your dealer uses to mark up coins and bars for the rest of the day.",
+      "text": "Knowing the morning fix means you know what your dealer paid wholesale before they added retail premium.",
       "startSec": 0,
-      "endSec": 5.098133333333334
+      "endSec": 6.158659217877095
     },
     {
-      "text": "Knowing the morning fix means you know what your dealer paid wholesale before they added retail premium.",
-      "startSec": 4.948133333333334,
-      "endSec": 9.48
+      "text": "Silver averaged $41.",
+      "startSec": 6.008659217877095,
+      "endSec": 7.193016759776536
+    },
+    {
+      "text": "18 per ounce in 2025 based on LBMA London fix data, the strongest annual performance since 1983 .",
+      "startSec": 7.193016759776536,
+      "endSec": 12.937150837988828
+    },
+    {
+      "text": "If you had tracked the fix every morning that year",
+      "startSec": 12.937150837988828,
+      "endSec": 15.89804469273743
+    },
+    {
+      "text": "you would have caught dozens of entry windows under $38.",
+      "startSec": 15.89804469273743,
+      "endSec": 19.214245810055868
+    },
+    {
+      "text": "Set a phone alarm for 7:05 a.",
+      "startSec": 19.214245810055868,
+      "endSec": 20.93156424581006
+    },
+    {
+      "text": "m.",
+      "startSec": 20.93156424581006,
+      "endSec": 21.2
     }
   ],
   "4": [
     {
-      "text": "A 1 oz American Silver Eagle usually carries a premium of 15 percent to 30 percent over spot.",
-      "startSec": 0,
-      "endSec": 5.665190839694657
-    },
-    {
       "text": "A 10 oz generic bar runs 3 percent to 8 percent.",
-      "startSec": 5.5151908396946565,
-      "endSec": 8.439160305343512
+      "startSec": 0,
+      "endSec": 2.9566863905325445
     },
     {
       "text": "A 100 oz bar can sit at 2 percent to 5 percent.",
-      "startSec": 8.439160305343512,
-      "endSec": 11.302213740458015
+      "startSec": 2.8066863905325445,
+      "endSec": 5.701775147928994
     },
     {
       "text": "If spot is $40 and a 1 oz Eagle quotes at $52, your premium is 30 percent.",
-      "startSec": 11.302213740458015,
-      "endSec": 15.96
+      "startSec": 5.701775147928994,
+      "endSec": 10.26
+    },
+    {
+      "text": "If the same dealer sells a 10 oz bar at $432, your premium is 8 percent.",
+      "startSec": 10.26,
+      "endSec": 14.695029585798817
+    },
+    {
+      "text": "Same dealer, same day, different products, very different deals per ounce of silver in your hand.",
+      "startSec": 14.695029585798817,
+      "endSec": 20.82
     }
   ],
   "5": [
     {
-      "text": "Industrial demand hit a record 680.",
+      "text": "After 30 days you have a chart.",
       "startSec": 0,
-      "endSec": 1.9452145214521452
+      "endSec": 1.8830340557275542
+    },
+    {
+      "text": "After 90 days you can see a real trend.",
+      "startSec": 1.7330340557275543,
+      "endSec": 4.102012383900929
+    },
+    {
+      "text": "After 12 months you can spot the months premiums compress and the months they expand.",
+      "startSec": 4.102012383900929,
+      "endSec": 9.265170278637772
+    },
+    {
+      "text": "This is how you beat people who only check price on the day they buy.",
+      "startSec": 9.265170278637772,
+      "endSec": 13.456439628482972
+    },
+    {
+      "text": "Industrial demand hit a record 680.",
+      "startSec": 13.456439628482972,
+      "endSec": 15.582445820433437
     },
     {
       "text": "5 million ounces in 2024, the fourth consecutive annual record .",
-      "startSec": 1.7952145214521453,
-      "endSec": 5.352178217821782
-    },
-    {
-      "text": "Solar panels, electric vehicles, and electronics keep pulling silver out of the supply chain.",
-      "startSec": 5.352178217821782,
-      "endSec": 10.520891089108911
-    },
-    {
-      "text": "The global silver market posted a 148.",
-      "startSec": 10.520891089108911,
-      "endSec": 12.632838283828383
-    },
-    {
-      "text": "9 million-ounce deficit in 2024, its fifth consecutive annual shortfall .",
-      "startSec": 12.632838283828383,
-      "endSec": 16.84
+      "startSec": 15.582445820433437,
+      "endSec": 19.62
     }
   ],
   "6": [
     {
-      "text": "When SLV adds tonnage week over week, ETF demand is absorbing supply.",
+      "text": "Three free demand signals you can check weekly: COMEX silver inventory totals on the CME website iShares Silver Trust holdings",
       "startSec": 0,
-      "endSec": 3.408842105263158
+      "endSec": 8.736428571428572
     },
     {
-      "text": "When it drops, paper holders are exiting and spot often softens.",
-      "startSec": 3.258842105263158,
-      "endSec": 6.420666666666667
+      "text": "updated daily at ishares.",
+      "startSec": 8.586428571428572,
+      "endSec": 10.31984693877551
     },
     {
-      "text": "You do not need to trade on these.",
-      "startSec": 6.420666666666667,
-      "endSec": 8.100385964912281
+      "text": "com Silver Institute press releases for quarterly demand data iShares Silver Trust (SLV) reported net assets of $15.",
+      "startSec": 10.31984693877551,
+      "endSec": 18.362908163265306
     },
     {
-      "text": "You need to know which direction the wind blows.",
-      "startSec": 8.100385964912281,
-      "endSec": 10.471754385964912
+      "text": "25 billion as of March 31, 2025 in its 10-Q SEC filing .",
+      "startSec": 18.362908163265306,
+      "endSec": 22.24576530612245
     },
     {
-      "text": "Manually checking spot every 20 minutes will burn you out by week two.",
-      "startSec": 10.471754385964912,
-      "endSec": 14.08
+      "text": "When SLV adds tonnage week over week, ETF demand is absorbing supply.",
+      "startSec": 22.24576530612245,
+      "endSec": 27.18
     }
   ],
   "7": [
     {
-      "text": "Pick one of three rhythms: Buy weekly: track spot every morning",
+      "text": "Daily tracking matters most if you buy weekly or monthly.",
       "startSec": 0,
-      "endSec": 4.148780487804878
+      "endSec": 3.42
+    },
+    {
+      "text": "If you dollar-cost average once per quarter, daily charts add stress without adding edge.",
+      "startSec": 3.27,
+      "endSec": 8.61
+    },
+    {
+      "text": "Pick one of three rhythms: Buy weekly: track spot every morning",
+      "startSec": 8.61,
+      "endSec": 12.39
     },
     {
       "text": "set 3 percent drop alerts Buy monthly: check spot Monday, Wednesday",
-      "startSec": 3.998780487804878,
-      "endSec": 8.410975609756097
+      "startSec": 12.39,
+      "endSec": 16.41
     },
     {
       "text": "Friday at the LBMA fix Buy quarterly: review on the first business day of each month only Then stick to your rhythm.",
-      "startSec": 8.410975609756097,
-      "endSec": 16.2
+      "startSec": 16.41,
+      "endSec": 23.52
     }
   ],
   "8": [
     {
-      "text": "Use your tracking to wait for both conditions: spot pulled back and premium normal.",
+      "text": "We see this pattern at Fused Distribution after every sharp price drop.",
       "startSec": 0,
-      "endSec": 3.9508
+      "endSec": 3.6600424628450106
+    },
+    {
+      "text": "Spot falls, retail demand spikes, premiums widen, and the apparent bargain disappears in the markup.",
+      "startSec": 3.5100424628450106,
+      "endSec": 8.665031847133758
+    },
+    {
+      "text": "Use your tracking to wait for both conditions: spot pulled back and premium normal.",
+      "startSec": 8.665031847133758,
+      "endSec": 12.943673036093418
     },
     {
       "text": "Refresh your spreadsheet tomorrow morning, check the LBMA fix at 7:05 a.",
-      "startSec": 3.8008,
-      "endSec": 7.228
+      "startSec": 12.943673036093418,
+      "endSec": 16.655265392781317
     },
     {
       "text": "m.",
-      "startSec": 7.228,
-      "endSec": 7.3232
+      "startSec": 16.655265392781317,
+      "endSec": 16.75836518046709
     },
     {
       "text": "Eastern, and decide from data instead of headlines.",
-      "startSec": 7.3232,
-      "endSec": 9.7508
+      "startSec": 16.75836518046709,
+      "endSec": 19.387409766454354
     },
     {
       "text": "Reserve your physical silver when the numbers line up, not when the news cycle tells you to.",
-      "startSec": 9.7508,
-      "endSec": 14.28
+      "startSec": 19.387409766454354,
+      "endSec": 24.28
     }
   ],
   "9": [

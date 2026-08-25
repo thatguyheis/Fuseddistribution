@@ -1,6 +1,6 @@
 {
   "slug": "email-newsletter-ideas-for-small-business",
-  "renderedAt": "2026-07-04T20:00:42.433Z",
+  "renderedAt": "2026-07-08T20:57:24.868Z",
   "hookType": "stat",
   "segmentCount": 10,
   "scriptDuration": 195,
@@ -8,13 +8,19 @@
   "scriptHash": "82d45440f5c94ed37172443df423810c6ceed9d0cc67a02d5bfed5a8186e9d9c",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-07.mp3",
+  "musicTrack": "mixkit-meditation-441.mp3",
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
+  },
   "photosUsed": 10,
   "mediaUsed": 10,
   "photoCount": 10,
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 7
+    "pixabay-photo": 7
   }
 }
