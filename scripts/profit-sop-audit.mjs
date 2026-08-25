@@ -259,25 +259,41 @@ export function evaluateReelReleaseState({ registeredSlugs = [], releaseQaBySlug
 }
 
 export function buildOperationalPenaltyEvents({ date, operationalState = {}, existingEvents = [], occurredAt = new Date().toISOString() }) {
+  const events = [];
+  const addIfNew = (event) => {
+    const alreadyRecorded = existingEvents.some((existing) => existing.date === date && existing.fingerprint === event.fingerprint);
+    if (!alreadyRecorded) events.push(normalizeEvent(event));
+  };
   const blockedSlugs = operationalState.blogPublication?.blockedQueueSlugs || [];
-  if (!blockedSlugs.length) return [];
-
-  const fingerprint = 'blog-quality-gate-blocked';
-  const alreadyRecorded = existingEvents.some((event) => event.date === date && event.fingerprint === fingerprint);
-  if (alreadyRecorded) return [];
-
-  return [normalizeEvent({
-    occurredAt,
-    date,
-    kind: 'penalty',
-    type: 'missed_checkpoint',
-    fingerprint,
-    value: blockedSlugs.length,
-    evidence: `The ${date} blog queue has ${blockedSlugs.length} quality-blocked slug(s) archived below .workflow-blocked/${date}: ${blockedSlugs.join(', ')}.`,
-    source: 'local_checkpoint',
-    attributable: true,
-    notes: 'Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.',
-  })];
+  if (blockedSlugs.length) {
+    addIfNew({
+      occurredAt,
+      date,
+      kind: 'penalty',
+      type: 'missed_checkpoint',
+      fingerprint: 'blog-quality-gate-blocked',
+      value: blockedSlugs.length,
+      evidence: `The ${date} blog queue has ${blockedSlugs.length} quality-blocked slug(s) archived below .workflow-blocked/${date}: ${blockedSlugs.join(', ')}.`,
+      source: 'local_checkpoint',
+      attributable: true,
+      notes: 'Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.',
+    });
+  }
+  if (operationalState.bufferMetrics?.status === 'unavailable') {
+    addIfNew({
+      occurredAt,
+      date,
+      kind: 'penalty',
+      type: 'missed_checkpoint',
+      fingerprint: 'buffer-metrics-api-fetch-unavailable',
+      value: 1,
+      evidence: `The same-date Buffer metric snapshot for ${date} has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.`,
+      source: 'buffer_api',
+      attributable: true,
+      notes: 'Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.',
+    });
+  }
+  return events;
 }
 
 function readOperationalState(date) {
@@ -306,12 +322,16 @@ function readOperationalState(date) {
   });
   const releaseQaBySlug = Object.fromEntries(blogPublication.registeredQueueSlugs
     .map((slug) => [slug, readJsonIfExists(join(reelOutputRoot, slug, 'release-qa.json'))]));
+  const unavailableMetrics = readJsonIfExists(join(bufferMetricsRoot, `${date}.unavailable.json`));
   return {
     blogPublication,
     reelRelease: evaluateReelReleaseState({
       registeredSlugs: blogPublication.registeredQueueSlugs,
       releaseQaBySlug,
     }),
+    bufferMetrics: unavailableMetrics?.status === 'unavailable'
+      ? { status: 'unavailable', checkpoint: `ops/profit-system/buffer-metrics/${date}.unavailable.json` }
+      : { status: existsSync(join(bufferMetricsRoot, `${date}.json`)) ? 'available' : 'missing' },
   };
 }
 
@@ -436,6 +456,7 @@ export function markdownReport(audit) {
       ]
       : ['- No dated blog queue was found for this operating day.']),
     `- Reel release checkpoint: ${audit.operationalState?.reelRelease?.completionStatus || 'unavailable'}.`,
+    `- Buffer metric checkpoint: ${audit.operationalState?.bufferMetrics?.status || 'unavailable'}.`,
     ...(audit.operationalState?.reelRelease?.manualCaptionReviewPendingSlugs?.length
       ? [`- Manual caption review pending: ${audit.operationalState.reelRelease.manualCaptionReviewPendingSlugs.join(', ')}.`]
       : []),

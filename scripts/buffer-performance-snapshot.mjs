@@ -34,6 +34,22 @@ export async function retryTransient(operation, {
   throw lastError;
 }
 
+export function writeUnavailableCheckpoint({ date, capturedAt = new Date().toISOString(), directory = outputRoot }) {
+  const checkpoint = {
+    version: 1,
+    date,
+    capturedAt,
+    source: 'buffer_api',
+    status: 'unavailable',
+    reason: 'snapshot_fetch_failed',
+    evidencePolicy: 'No Buffer leading-indicator value is available for this date. Do not treat this checkpoint as zero performance.',
+  };
+  mkdirSync(directory, { recursive: true });
+  const path = join(directory, `${date}.unavailable.json`);
+  writeFileSync(path, `${JSON.stringify(checkpoint, null, 2)}\n`);
+  return { checkpoint, path };
+}
+
 function parseArgs(argv) {
   const args = { date: operatingDate(), lookbackDays: 28 };
   for (const item of argv) {
@@ -222,32 +238,38 @@ function buildInsight(posts) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const token = loadAccessToken();
-  if (!token) throw new Error('BUFFER_ACCESS_TOKEN is empty.');
-  const capturedAt = new Date().toISOString();
-  const cutoff = Date.parse(`${args.date}T23:59:59.999Z`) - args.lookbackDays * 86_400_000;
-  const livePosts = await getSentPosts(token);
-  const posts = livePosts
-    .map((post) => derivePerformance(post, capturedAt))
-    .filter((post) => post.sentAt && Date.parse(post.sentAt) >= cutoff);
-  const snapshot = {
-    version: 1,
-    date: args.date,
-    capturedAt,
-    source: 'buffer_api',
-    sourceLagNotice: 'Buffer refreshes post metrics daily; values can lag the social network by about 24 hours.',
-    lookbackDays: args.lookbackDays,
-    summary: summarizeSnapshot(posts),
-    insight: buildInsight(posts),
-    posts,
-  };
-  mkdirSync(outputRoot, { recursive: true });
-  const path = join(outputRoot, `${args.date}.json`);
-  writeFileSync(path, `${JSON.stringify(snapshot, null, 2)}\n`);
-  writeFileSync(join(outputRoot, 'latest.json'), `${JSON.stringify({ date: args.date, path: `ops/profit-system/buffer-metrics/${args.date}.json`, capturedAt }, null, 2)}\n`);
-  console.log(`[buffer-performance] ${args.date}: ${snapshot.summary.metricsAvailable}/${snapshot.summary.posts} posts have metrics`);
-  console.log(`[buffer-performance] insight: ${snapshot.insight.statement}`);
-  console.log(`[buffer-performance] wrote ${path}`);
+  try {
+    const token = loadAccessToken();
+    if (!token) throw new Error('BUFFER_ACCESS_TOKEN is empty.');
+    const capturedAt = new Date().toISOString();
+    const cutoff = Date.parse(`${args.date}T23:59:59.999Z`) - args.lookbackDays * 86_400_000;
+    const livePosts = await getSentPosts(token);
+    const posts = livePosts
+      .map((post) => derivePerformance(post, capturedAt))
+      .filter((post) => post.sentAt && Date.parse(post.sentAt) >= cutoff);
+    const snapshot = {
+      version: 1,
+      date: args.date,
+      capturedAt,
+      source: 'buffer_api',
+      sourceLagNotice: 'Buffer refreshes post metrics daily; values can lag the social network by about 24 hours.',
+      lookbackDays: args.lookbackDays,
+      summary: summarizeSnapshot(posts),
+      insight: buildInsight(posts),
+      posts,
+    };
+    mkdirSync(outputRoot, { recursive: true });
+    const path = join(outputRoot, `${args.date}.json`);
+    writeFileSync(path, `${JSON.stringify(snapshot, null, 2)}\n`);
+    writeFileSync(join(outputRoot, 'latest.json'), `${JSON.stringify({ date: args.date, path: `ops/profit-system/buffer-metrics/${args.date}.json`, capturedAt }, null, 2)}\n`);
+    console.log(`[buffer-performance] ${args.date}: ${snapshot.summary.metricsAvailable}/${snapshot.summary.posts} posts have metrics`);
+    console.log(`[buffer-performance] insight: ${snapshot.insight.statement}`);
+    console.log(`[buffer-performance] wrote ${path}`);
+  } catch (error) {
+    const { path } = writeUnavailableCheckpoint({ date: args.date });
+    console.error(`[buffer-performance] wrote unavailable checkpoint ${path}`);
+    throw error;
+  }
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

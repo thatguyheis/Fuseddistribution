@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { derivePerformance, retryTransient, summarizeSnapshot } from '../scripts/buffer-performance-snapshot.mjs';
+import { mkdtempSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { derivePerformance, retryTransient, summarizeSnapshot, writeUnavailableCheckpoint } from '../scripts/buffer-performance-snapshot.mjs';
 
 test('derives average view duration from total watched minutes and views', () => {
   const post = derivePerformance({
@@ -52,4 +55,16 @@ test('does not retry a non-transient Buffer failure', async () => {
     /Buffer HTTP 401/,
   );
   assert.equal(attempts, 1);
+});
+
+test('writes a dated unavailable checkpoint without inventing performance values', () => {
+  const { checkpoint, path } = writeUnavailableCheckpoint({
+    date: '2099-01-01',
+    capturedAt: '2099-01-01T12:00:00.000Z',
+    directory: mkdtempSync(join(tmpdir(), 'buffer-metrics-test-')),
+  });
+  assert.match(path, /2099-01-01\.unavailable\.json$/);
+  assert.equal(checkpoint.status, 'unavailable');
+  assert.equal(checkpoint.reason, 'snapshot_fetch_failed');
+  assert.match(checkpoint.evidencePolicy, /not treat this checkpoint as zero/i);
 });

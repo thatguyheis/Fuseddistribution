@@ -247,6 +247,24 @@ test('quality-blocked blog work is recorded once as a stable ledger penalty', ()
   }), []);
 });
 
+test('unavailable Buffer metrics checkpoint is recorded once as a stable ledger penalty', () => {
+  const operationalState = { bufferMetrics: { status: 'unavailable' } };
+  const created = buildOperationalPenaltyEvents({
+    date: '2026-08-20',
+    operationalState,
+    existingEvents: [],
+    occurredAt: '2026-08-20T18:30:00.000Z',
+  });
+  assert.equal(created.length, 1);
+  assert.equal(created[0].fingerprint, 'buffer-metrics-api-fetch-unavailable');
+  assert.match(created[0].evidence, /unavailable rather than zero/);
+  assert.deepEqual(buildOperationalPenaltyEvents({
+    date: '2026-08-20',
+    operationalState,
+    existingEvents: created,
+  }), []);
+});
+
 test('reel release checkpoint reports manual review blockers without authorizing posting', () => {
   const result = evaluateReelReleaseState({
     registeredSlugs: ['silver-inventory', 'local-keywords', 'near-me'],
