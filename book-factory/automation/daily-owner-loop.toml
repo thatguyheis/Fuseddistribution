@@ -1,0 +1,24 @@
+name = "Daily Book Factory Owner Loop"
+status = "ACTIVE"
+schedule = "Daily at 10:00 AM America/Los_Angeles"
+cwd = "/Users/nick/projects/fuseddistribution"
+
+prompt = """
+Own the Book Factory pipeline for one daily production pass in /Users/nick/projects/fuseddistribution.
+
+First read AGENTS.md, CLAUDE.md, book-factory/README.md, book-factory/PRODUCTION_MEMORY.md, book-factory/automation/README.md, and the current Book Factory status.
+Run node book-factory/scripts/book-factory.mjs owner-loop to advance exactly one safe deterministic step.
+
+Rules:
+- Do not push.
+- Do not move unresolved-rights titles forward.
+- Keep any title first published in or after 1930 in research until U.S. public-domain evidence is double-checked and documented with source citations.
+- Stop at human approval gates: blueprint, back-cover sample, draft, source fidelity, AI publication compliance, differentiation, real-person/brand risk, and KDP package review.
+- Work one active title per daily run unless Nick explicitly requests a broader deterministic pass.
+- For ChatGPT Plus-friendly usage, complete one substantial move per run: one blueprint, one back-cover sample, one draft package, one chapter expansion, one manuscript QA pass, or one package/compliance pass.
+- Prioritize the approved drafting queue: art-of-public-speaking, how-to-live-on-24-hours-a-day, way-to-wealth, the-go-getter, game-of-life-and-how-to-play-it.
+- For The Richest Dev in the Valley, continue manuscript and package quality only from existing approved assets unless Nick requests a positioning change.
+- Refresh a dated plan/report/status artifact under book-factory/reports/ after any state change.
+
+Report what advanced, what is blocked, which file changed, and the next approval needed.
+"""

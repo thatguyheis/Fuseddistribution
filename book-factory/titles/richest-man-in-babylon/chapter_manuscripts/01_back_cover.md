@@ -1,14 +1,17 @@
 # The Richest Dev in the Valley
 ## Back Cover
 
-Five thousand years ago, a man named Arkad sat in the city of Babylon and explained, very patiently, why some people get rich and most people do not.
+The Richest Man in Babylon has lasted because the core problem has not changed: people can earn well, work hard, and still have little to show for it.
 
-Nobody listened then either.
+*The Richest Dev in the Valley* rebuilds that lesson for Silicon Valley, startup life, freelancing, software work, creator income, and digital investing. It is written for modern builders who want narrative wealth lessons without generic motivation, with the original wealth logic translated into startup salaries, creator income, contract work, digital assets, and the financial drift that comes with modern life.
 
-*The Richest Dev in the Valley* is that same story, rebuilt from the ground up for the era of Bitcoin, AI agents, DeFi protocols, startup campuses, and gig-economy hustle. Arkad Morrow did not inherit his way into wealth. He learned, the hard way, that the laws of money have not changed in five millennia: pay yourself first, make your money work, protect your stack, and build the walls before the storm hits.
+The lesson begins with one hard line: "A part of all you earn is yours to keep." From there, the story moves through the same durable laws that made the source work last: control spending, put savings to work, protect wealth from bad operators, repay debts with discipline, and keep increasing earning power.
 
-The characters are new. Bansir, the app developer who earns well and keeps nothing. Kobbi, the music producer with talent and no margin. Dabasir, the gig worker who digs himself out of debt one disciplined payment at a time. Banzar, the cybersecurity veteran who realizes a firewall and an emergency fund are the same idea wearing different clothes.
+Inside, readers will find:
 
-The lesson is ancient. The opportunity is right now.
+- Financial discipline for high-income but low-wealth professionals
+- A narrative alternative to generic personal finance books
+- A modern Silicon Valley parable told with fictionalized contemporary characters
+- Builder-focused adaptation of a classic title with modern examples
 
-If you have ever made good money and wondered where it went, this book is for you. If you have ever watched other people build real wealth and not understood the mechanism, this book is for you. If you want a narrative, human, modern retelling of a classic wealth book without losing the actual lessons, this book is for you.
+If you have ever made decent money and still wondered where it went, this book was written for you.

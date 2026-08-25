@@ -4,14 +4,14 @@
 - First published: 1903
 - Target audience: modern builders
 - Publishing target: amazon-kdp
-- Rank: 2
+- Rank: 6
 - Weighted score: 8.3
 
 ## Why It Matters
 
 A short philosophical work about mindset, character, and the link between thought and results.
 
-This title is positioned for mental discipline and self-command for creators, founders, and operators. The strongest adaptation angle is As You Think, which reframes the original promise inside founder psychology, personal operating systems, and everyday decision hygiene.
+This title is positioned for mental discipline and self-command for creators, founders, and operators. The strongest adaptation angle is As You Think, which reframes the original promise inside Founder psychology, personal operating systems, and everyday decision hygiene.
 
 ## Score Breakdown
 
@@ -30,4 +30,4 @@ This title is positioned for mental discipline and self-command for creators, fo
 
 ## Recommendation
 
-This title has been successfully adapted into *As You Think* and is ready for editorial refinement, manuscript compilation, and packaging review.
+Run rights verification, then generate the adaptation blueprint.

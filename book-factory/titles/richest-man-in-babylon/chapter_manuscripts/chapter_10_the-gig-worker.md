@@ -2,11 +2,11 @@
 
 The hungrier you get, the clearer your thinking.
 
-Tarkad knew this from personal experience. He had not eaten anything substantial in two days, a protein bar from a 7-Eleven the morning before, and a small bag of chips he'd bummed from a coworker. His stomach had stopped growling and was now sending complaints directly to his central nervous system in a quieter, more insistent way.
+Tarkad knew this from personal experience. He had not eaten anything substantial in two days, a protein bar from a convenience store the morning before, and a small bag of chips he'd bummed from a coworker. His stomach had stopped growling and was now sending complaints directly to his central nervous system in a quieter, more insistent way.
 
 He walked through a food hall in downtown San Francisco with the particular suffering of someone who can smell everything and afford nothing. The ramen smelled incredible. The tacos looked life-changingly good. Even the overpriced acai bowl with its aggressive array of seeds seemed, right now, like the food of the gods.
 
-No card with available balance. His Venmo balance was $1.40.
+No card with available balance. His payment-app balance was $1.40.
 
 He was twenty-nine years old, had a computer science degree, and had spent the last three years in a spiral of lifestyle creep, poor financial choices, deferred payment apps, and the kind of optimistic borrowing from friends that eventually makes you the person everyone avoids at parties.
 
@@ -14,7 +14,7 @@ He spotted, coming out of a Vietnamese place across the hall, the one person he 
 
 Dabasir was tall, cheerful, dressed simply well, and had a memory for debts that would have impressed a bank.
 
-"Tarkad!" Dabasir said, with the warmth of someone who genuinely liked you and also wanted their money back. "Been looking for you. The Venmo request has been pending for six weeks. The two hundred bucks, plus the forty from before that. You good for it?"
+"Tarkad!" Dabasir said, with the warmth of someone who genuinely liked you and also wanted their money back. "Been looking for you. The payment request has been pending for six weeks. The two hundred bucks, plus the forty from before that. You good for it?"
 
 Tarkad's face said everything.
 
@@ -34,7 +34,7 @@ He leaned back.
 
 "You know what I do now? I run a logistics tech startup. We manage last-mile delivery coordination for three regional carriers. Twelve employees, cash flow positive. I'm not rich rich, but I'm solid. I sleep well. I have savings. I own a small piece of a real estate syndication. I've been dollar-cost averaging into Bitcoin for four years, small amounts, every month, no matter what the price is doing, because I'm not trying to time it, I'm trying to hold it.
 
-"You know what I did at your age? I was a DoorDash driver who had somehow accumulated forty-three thousand dollars in credit card debt."
+"You know what I did at your age? I was an app-based courier who had somehow accumulated forty-three thousand dollars in credit card debt."
 
 Tarkad looked up from the pho.
 
@@ -54,7 +54,7 @@ Then the work slowed down. Competition in the gig economy had compressed his mar
 
 He stopped. Took a sip of his drink. Outside the food hall, the city moved past without pausing.
 
-"I ended up doing Amazon Flex routes in Phoenix. The desert heat. Twelve-hour days. One summer it was so bad the asphalt shimmered even at five in the morning. I was exhausted and humiliated and completely out of ideas.
+"I ended up doing warehouse-delivery routes in Phoenix. The desert heat. Twelve-hour days. One summer it was so bad the asphalt shimmered even at five in the morning. I was exhausted and humiliated and completely out of ideas.
 
 "One morning I sat in the parking lot of a warehouse at five-thirty am. Nothing dramatic. Just me and a parking lot and the specific kind of quiet you get in a desert city before the heat starts. And I had what I can only describe as a moment of clarity.
 

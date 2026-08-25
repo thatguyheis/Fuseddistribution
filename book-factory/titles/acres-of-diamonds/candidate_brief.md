@@ -1,17 +1,17 @@
-# Candidate Brief: Hidden Gold in Plain Sight
+# Candidate Brief: Acres of Diamonds
 
 - Source author: Russell H. Conwell
 - First published: 1890
 - Target audience: modern builders
 - Publishing target: amazon-kdp
-- Rank: 3
+- Rank: 7
 - Weighted score: 8.24
 
 ## Why It Matters
 
 A classic speech about recognizing opportunity close at hand instead of chasing distant fantasies.
 
-This title is positioned as a narrative business parable for builders who keep assuming the real opportunity is somewhere else. The strongest adaptation angle is **Hidden Gold in Plain Sight**, which reframes the original promise inside overlooked service markets, local demand, operational gaps, and ordinary businesses most ambitious people dismiss too quickly.
+This title is positioned for a narrative business parable about finding overlooked opportunity in ordinary markets. The strongest adaptation angle is Hidden Gold in Plain Sight, which reframes the original promise inside Service businesses, overlooked local markets, creator ecosystems, logistics, home services, and ignored operational niches.
 
 ## Score Breakdown
 
@@ -30,4 +30,4 @@ This title is positioned as a narrative business parable for builders who keep a
 
 ## Recommendation
 
-Advance this title as a full narrative manuscript. The market angle is strong, rights are clean, and the lesson translates naturally into modern builder psychology.
+Run rights verification, then generate the adaptation blueprint.

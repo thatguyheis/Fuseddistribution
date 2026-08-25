@@ -38,6 +38,9 @@ async function main() {
       case "blueprint":
         await buildBlueprint(args[0]);
         break;
+      case "back-cover-sample":
+        await buildBackCoverSample(args[0]);
+        break;
       case "approve":
         await approve(args[0], args[1]);
         break;
@@ -49,6 +52,9 @@ async function main() {
         break;
       case "status":
         await printStatus();
+        break;
+      case "owner-loop":
+        await ownerLoop();
         break;
       case "reset-output":
         await resetOutput();
@@ -167,6 +173,24 @@ function assertRightsCleared(record) {
       `${record.source.title} is blocked by the rights gate. Confirm U.S. public-domain status and source availability before drafting.`
     );
   }
+
+  assertRightsEvidenceComplete(record);
+}
+
+function assertRightsEvidenceComplete(record) {
+  if (record.source.year < 1930) {
+    return;
+  }
+
+  const hasSourceCitations =
+    Array.isArray(record.rights.us.evidenceSources) && record.rights.us.evidenceSources.length > 0;
+  const hasVerificationRecord = Boolean(record.rights.us.verificationDate && record.rights.us.evidence);
+
+  if (!hasVerificationRecord || !hasSourceCitations) {
+    throw new Error(
+      `${record.source.title} is on the 1930+ rights hold. Add verification date, evidence, and source citations before advancement.`
+    );
+  }
 }
 
 function assertReviewPending(record, gate) {
@@ -230,7 +254,7 @@ async function buildBlueprint(slug) {
 
 async function approve(slug, gate) {
   if (!slug || !gate) {
-    throw new Error("Usage: approve <slug> <blueprint|draft>");
+    throw new Error("Usage: approve <slug> <blueprint|back-cover-sample|draft>");
   }
 
   const record = await loadRecord(slug);
@@ -243,6 +267,8 @@ async function approve(slug, gate) {
 
   if (gate === "blueprint") {
     nextReview.blueprintApprovedAt = now;
+  } else if (gate === "back-cover-sample") {
+    nextReview.backCoverSampleApprovedAt = now;
   } else if (gate === "draft") {
     nextReview.draftApprovedAt = now;
   } else {
@@ -251,7 +277,12 @@ async function approve(slug, gate) {
 
   const nextRecord = {
     ...record,
-    status: gate === "blueprint" ? "blueprint-ready" : "approved-for-packaging",
+    status:
+      gate === "blueprint"
+        ? "blueprint-ready"
+        : gate === "back-cover-sample"
+          ? "drafting"
+          : "approved-for-packaging",
     review: nextReview
   };
 
@@ -259,12 +290,48 @@ async function approve(slug, gate) {
   console.log(`${record.source.title} approved for ${gate}.`);
 }
 
+async function buildBackCoverSample(slug) {
+  const record = await loadRecord(slug);
+  assertRightsCleared(record);
+
+  if (record.status === "editor-review" && record.review.pending !== "back-cover-sample") {
+    throw new Error(
+      `${record.source.title} is already waiting for ${record.review.pending} approval. Resolve that gate before refreshing the back-cover sample.`
+    );
+  }
+
+  const allowedStatuses = new Set(["blueprint-ready", "editor-review", "drafting", "approved-for-packaging", "ready-for-kdp"]);
+  if (!allowedStatuses.has(record.status)) {
+    throw new Error(`${record.source.title} must have an approved blueprint before back-cover sample generation.`);
+  }
+
+  const titleDir = artifactPath(record, "chapterManuscripts");
+  await mkdir(titleDir, { recursive: true });
+  await writeText(path.join(titleDir, "01_back_cover.md"), buildBackCover(record));
+
+  if (record.status === "blueprint-ready" || record.review.pending === "back-cover-sample") {
+    const nextRecord = {
+      ...record,
+      status: "editor-review",
+      review: {
+        ...record.review,
+        pending: "back-cover-sample"
+      }
+    };
+    await saveRecord(nextRecord);
+    console.log(`Back-cover sample generated for ${record.source.title}. Waiting for editorial approval.`);
+    return;
+  }
+
+  console.log(`Back-cover sample refreshed for ${record.source.title}.`);
+}
+
 async function draft(slug) {
   const record = await loadRecord(slug);
   assertRightsCleared(record);
 
-  if (record.status !== "blueprint-ready") {
-    throw new Error(`${record.source.title} must be blueprint-ready before manuscript generation.`);
+  if (record.status !== "drafting") {
+    throw new Error(`${record.source.title} must have an approved back-cover sample before manuscript generation.`);
   }
 
   const titleDir = artifactPath(record, "chapterManuscripts");
@@ -335,6 +402,48 @@ async function printStatus() {
       ].join(" | ")
     );
   }
+}
+
+async function ownerLoop() {
+  const records = rankRecords(await loadAllRecords());
+  const rightsHold = records.filter(record => record.source.year >= 1930 && !record.rights?.us?.confirmedPublicDomain);
+
+  for (const record of rightsHold) {
+    console.log(
+      `Rights hold: ${record.source.title} (${record.source.year}) remains research-only until 1930+ evidence is verified.`
+    );
+  }
+
+  for (const record of records) {
+    if (record.status === "rights-cleared") {
+      await buildBlueprint(record.slug);
+      return;
+    }
+
+    if (record.status === "blueprint-ready") {
+      await buildBackCoverSample(record.slug);
+      return;
+    }
+
+    if (record.status === "drafting") {
+      await draft(record.slug);
+      return;
+    }
+
+    if (record.status === "editor-review") {
+      console.log(`${record.source.title} is waiting for ${record.review.pending || "editorial"} approval.`);
+      return;
+    }
+
+    if (record.status === "approved-for-packaging") {
+      console.log(
+        `${record.source.title} is approved for packaging. Confirm source fidelity, AI compliance, differentiation, and brand risk before package assembly.`
+      );
+      return;
+    }
+  }
+
+  console.log("No safe Book Factory advancement is available. Review rights holds, approvals, or packaging compliance gates.");
 }
 
 async function resetOutput() {
@@ -492,21 +601,25 @@ function buildTitleConcepts(record) {
 function buildBackCover(record) {
   const title = record.adaptation.workingTitle;
   const lessonLead = record.adaptation.coreLessons[0];
-  const themes = (record.adaptation.marketingAngles || defaultMarketingAngles(record)).join(", ");
+  const angles = record.adaptation.marketingAngles || defaultMarketingAngles(record);
+  const angleLines = angles.slice(0, 4).map(angle => `- ${angle}`);
+  const lessonSentence = `From there, the book turns the original lesson sequence into modern scenes built for ${record.target.audience}.`;
 
   return [
     `# ${title}`,
     "## Back Cover",
     "",
-    `${record.source.title} has lasted because the core problem has not changed: people can earn well, work hard, and still have little to show for it. ${title} rebuilds that lesson for ${record.adaptation.modernWorld}.`,
+    `${record.source.title} remains useful because the underlying problem has not gone away. ${record.source.summary}`,
     "",
-    `This version is written for ${record.target.positioning}. It keeps the original wealth logic intact while translating the examples into startup salaries, creator income, contract work, digital assets, and the financial drift that comes with modern life.`,
+    `*${title}* rebuilds that classic for ${lowercaseFirst(record.adaptation.modernWorld)}. It is written for ${record.target.audience} who want direct, modern, story-driven guidance without generic motivation or antique examples.`,
     "",
-    `Inside, the reader learns why "${lessonLead}" remains the line that separates fragile income from real wealth. Each chapter moves from recognizable modern tension into practical rules about spending, saving, compounding, and guarding against bad operators.`,
+    `The lesson begins with one hard line: "${lessonLead}" ${lessonSentence}`,
     "",
-    `If the reader has ever made decent money and still felt behind, this book is for them. If they have skills, ambition, and uneven financial results, this book is for them. If they want a sharper, more story-driven way to absorb timeless money rules, this book is for them.`,
+    "Inside, readers will find:",
     "",
-    `Themes: ${themes}.`,
+    ...angleLines,
+    "",
+    `If you want the original classic's lessons in language built for ${record.target.audience}, this book was written for you.`,
     ""
   ].join("\n");
 }
@@ -705,15 +818,21 @@ function formatLabel(value) {
   return value.replace(/([A-Z])/g, " $1").replace(/^./, letter => letter.toUpperCase());
 }
 
+function lowercaseFirst(value) {
+  return value.charAt(0).toLowerCase() + value.slice(1);
+}
+
 function printHelp() {
   console.log(`Usage:
   node book-factory/scripts/book-factory.mjs discover [--limit N]
   node book-factory/scripts/book-factory.mjs verify-rights <slug>
   node book-factory/scripts/book-factory.mjs blueprint <slug>
-  node book-factory/scripts/book-factory.mjs approve <slug> <blueprint|draft>
+  node book-factory/scripts/book-factory.mjs back-cover-sample <slug>
+  node book-factory/scripts/book-factory.mjs approve <slug> <blueprint|back-cover-sample|draft>
   node book-factory/scripts/book-factory.mjs draft <slug>
   node book-factory/scripts/book-factory.mjs package <slug>
   node book-factory/scripts/book-factory.mjs status
+  node book-factory/scripts/book-factory.mjs owner-loop
   node book-factory/scripts/book-factory.mjs reset-output`);
 }
 

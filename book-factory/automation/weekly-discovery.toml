@@ -1,11 +1,12 @@
 name = "Weekly Book Discovery"
 status = "ACTIVE"
 schedule = "Every Monday at 9:00 AM America/Los_Angeles"
-cwd = "/Users/nick/Documents/New project"
+cwd = "/Users/nick/projects/fuseddistribution"
 
 prompt = """
-Run the book discovery workflow in /Users/nick/Documents/New project.
+Run the book discovery workflow in /Users/nick/projects/fuseddistribution.
 Refresh candidate briefs by executing the discovery pipeline.
 Summarize the top 5 opportunities for public-domain adaptation, the strongest business case for each, and any rights blockers that prevent drafting.
+Keep any title first published in or after 1930 in research unless its U.S. public-domain evidence has been double-checked and documented with source citations.
 Open an inbox item with the ranked summary and the next recommended title to advance.
 """

@@ -1,6 +1,6 @@
 # Chapter 7: The Five Laws of Bitcoin
 
-*"A hardware wallet heavy with Bitcoin, or a Notion doc carved with financial wisdom — if you had the choice, which would you choose?"*
+*"A hardware wallet heavy with Bitcoin, or a shared document carved with financial wisdom - if you had the choice, which would you choose?"*
 
 The autonomous vehicle glided silently along I-10 at 3am, cutting through the Arizona desert toward Los Angeles. In the back seat, an older man named Kalabab, blockchain OG, former protocol architect, current semi-retired crypto philosopher, told stories to the small crew of engineers and logistics coordinators who had worked his cross-country supply chain run.
 

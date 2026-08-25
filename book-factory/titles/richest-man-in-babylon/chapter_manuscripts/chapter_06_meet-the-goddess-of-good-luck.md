@@ -1,7 +1,7 @@
 # Chapter 6: Meet the Goddess of Good Luck
 
-*"If a man be lucky, there is no foretelling the possible extent of his good fortune. Throw him into the internet, and he'll come out with a verified account and a Substack sponsorship."*
-— Tech Proverb
+*"If a man be lucky, there is no foretelling the possible extent of his good fortune. Throw him into the internet, and he'll come out with a verified account and a newsletter sponsorship."*
+- Tech Proverb
 
 Everyone wants to be lucky.
 
@@ -9,7 +9,7 @@ The startup founder wants the lucky break, the right investor in the room at the
 
 And once or twice a year, we see it happen to someone. The app that blows up overnight. The tweet thread that lands a book deal. The token bought at the bottom. We think: why not me?
 
-That exact conversation was happening one evening in the private Discord server that Arkad Morrow kept for his inner circle, a group of regulars who gathered most evenings to debate ideas, share opportunities, and generally argue about whether AI was going to eat the world.
+That exact conversation was happening one evening in the private group chat that Arkad Morrow kept for his inner circle, a group of regulars who gathered most evenings to debate ideas, share opportunities, and generally argue about whether AI was going to eat the world.
 
 "I want to talk about luck," typed one user, a developer named Dev (his handle, obviously), who had recently found a forgotten paper wallet containing twelve ETH he'd bought for forty dollars each in 2017. He had been sitting on a small fortune without knowing it. The seed phrase was written in the back of an old notebook. He'd found it while cleaning.
 
@@ -49,7 +49,7 @@ The server went quiet.
 
 Another username appeared, one of the quieter people in the server, a designer named Lia who rarely posted but read everything.
 
-"My uncle won almost three hundred thousand dollars on DraftKings," she wrote. "This was in 2021. He paid off one credit card, bought a BMW, fronted money to two friends for restaurant concepts, and put the rest into what he called an 'aggressive crypto basket' that turned out to be mostly coins with dog logos. By mid-2022 he was borrowing money from my mom."
+"My uncle won almost three hundred thousand dollars on a fantasy sports app," she wrote. "This was in 2021. He paid off one credit card, bought a luxury sedan, fronted money to two friends for restaurant concepts, and put the rest into what he called an 'aggressive crypto basket' that turned out to be mostly coins with dog logos. By mid-2022 he was borrowing money from my mom."
 
 The replies came quickly.
 

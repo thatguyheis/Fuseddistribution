@@ -92,8 +92,8 @@ function buildCopyrightPage(bookRecord) {
 function buildContents(body) {
   const headings = body
     .split("\n")
-    .filter(line => line.startsWith("## "))
-    .map(line => line.replace(/^##\s+/, "").trim());
+    .filter(line => line === "## Foreword" || line.startsWith("## About ") || line.startsWith("# Chapter ") || line.startsWith("# Afterword"))
+    .map(line => line.replace(/^#{1,2}\s+/, "").trim());
 
   return ["# Contents", "", ...headings.map(heading => `- ${heading}`)].join("\n");
 }
@@ -101,25 +101,26 @@ function buildContents(body) {
 function buildBackMatter(bookRecord) {
   const title = bookRecord.adaptation.workingTitle;
   const sourceTitle = bookRecord.source.title;
+  const lessons = bookRecord.adaptation.coreLessons || [];
 
   return [
     "# Back Matter",
     "",
     "## How to Use This Book",
     "",
-    "Read the story once for the arc. Then return to Chapter 7 and write your own map: repeated pain, proximity, trust, and willingness. The value of the book is not in agreeing with the lesson. It is in using the lesson to inspect the ground you already stand on.",
+    "Read the story once for the arc. Then return to the lessons and apply them to your own work, money, habits, and decisions. This book was built for modern builders: people who need practical ideas they can test in real life, not slogans they only admire from a distance.",
+    "",
+    "## Core Lessons",
+    "",
+    ...lessons.map(lesson => `- ${lesson}`),
     "",
     "## Discussion Questions",
     "",
-    "- What familiar market or customer group have you been dismissing because it feels ordinary?",
-    "- Where do people near you repeatedly complain about delay, confusion, poor service, or lack of trust?",
-    "- What problem do you understand faster than an outsider because you have lived near it for years?",
-    "- Which opportunity would you respect more if it had a more impressive name?",
-    "- What practical offer could you test within thirty days without reinventing your life?",
+    ...lessons.map(lesson => `- Where in your life or work do you need to apply this rule: ${lowercaseFirst(lesson)}`),
     "",
     "## Source Note",
     "",
-    `${title} is inspired by the enduring lesson of *${sourceTitle}*: people often search far away for opportunity while overlooking value already close at hand. This adaptation relocates that lesson into modern business life while keeping the core idea intact.`
+    `${title} is a modern adaptation of *${sourceTitle}*. It preserves the source work's core lesson architecture while changing the scenes, voice, examples, and character world for contemporary readers.`
   ].join("\n");
 }
 
@@ -139,9 +140,11 @@ function buildAssemblyNotes(bookRecord) {
     "- Title page",
     "- Copyright and adaptation notice",
     "- Contents",
-    "- Foreword",
-    "- Author note",
-    "- Chapters 1-7",
+    "- Manuscript body with chapter sections",
     "- Back matter with reader application and discussion questions"
   ].join("\n");
+}
+
+function lowercaseFirst(value) {
+  return value.charAt(0).toLowerCase() + value.slice(1);
 }

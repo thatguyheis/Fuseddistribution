@@ -99,6 +99,14 @@ test("draft generation creates manuscript assets after blueprint approval", asyn
   await run(root, ["verify-rights", "richest-man-in-babylon"]);
   await run(root, ["blueprint", "richest-man-in-babylon"]);
   await run(root, ["approve", "richest-man-in-babylon", "blueprint"]);
+
+  await assert.rejects(
+    () => run(root, ["draft", "richest-man-in-babylon"]),
+    /approved back-cover sample/
+  );
+
+  await run(root, ["back-cover-sample", "richest-man-in-babylon"]);
+  await run(root, ["approve", "richest-man-in-babylon", "back-cover-sample"]);
   await run(root, ["draft", "richest-man-in-babylon"]);
 
   const manuscriptDir = path.join(root, "book-factory/titles/richest-man-in-babylon/chapter_manuscripts");
@@ -121,6 +129,8 @@ test("packaging requires draft approval and writes KDP assets", async () => {
   await run(root, ["verify-rights", "richest-man-in-babylon"]);
   await run(root, ["blueprint", "richest-man-in-babylon"]);
   await run(root, ["approve", "richest-man-in-babylon", "blueprint"]);
+  await run(root, ["back-cover-sample", "richest-man-in-babylon"]);
+  await run(root, ["approve", "richest-man-in-babylon", "back-cover-sample"]);
   await run(root, ["draft", "richest-man-in-babylon"]);
   await run(root, ["approve", "richest-man-in-babylon", "draft"]);
   await run(root, ["package", "richest-man-in-babylon"]);
@@ -135,4 +145,23 @@ test("packaging requires draft approval and writes KDP assets", async () => {
 
   assert.equal(record.status, "ready-for-kdp");
   assert.match(metadata, /ready-for-kdp/);
+});
+
+test("owner loop stops at the back-cover sample review gate", async () => {
+  const root = await makeFixture();
+  await run(root, ["blueprint", "richest-man-in-babylon"]);
+  await run(root, ["approve", "richest-man-in-babylon", "blueprint"]);
+  await run(root, ["owner-loop"]);
+
+  const record = JSON.parse(
+    await readFile(path.join(root, "book-factory/books/richest-man-in-babylon.json"), "utf8")
+  );
+  const backCover = await readFile(
+    path.join(root, "book-factory/titles/richest-man-in-babylon/chapter_manuscripts/01_back_cover.md"),
+    "utf8"
+  );
+
+  assert.equal(record.status, "editor-review");
+  assert.equal(record.review.pending, "back-cover-sample");
+  assert.match(backCover, /Inside, readers will find:/);
 });

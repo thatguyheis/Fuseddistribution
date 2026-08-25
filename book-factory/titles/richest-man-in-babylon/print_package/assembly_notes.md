@@ -12,7 +12,5 @@
 - Title page
 - Copyright and adaptation notice
 - Contents
-- Foreword
-- Author note
 - Manuscript body with chapter sections
 - Back matter with reader application and discussion questions

@@ -1,0 +1,139 @@
+{
+  "slug": "way-to-wealth",
+  "source": {
+    "title": "The Way to Wealth",
+    "author": "Benjamin Franklin",
+    "year": 1758,
+    "summary": "A short classic built from Poor Richard's maxims about work, frugality, debt, time, and practical prudence.",
+    "corePromise": "Teach the economic value of industry, restraint, time, and thrift."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "a compact wealth discipline book for freelancers, founders, creators, and high-income people who still leak money"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-07-08",
+      "evidence": "Published in 1758 and available as a public-domain Project Gutenberg text.",
+      "evidenceSources": [
+        "https://www.gutenberg.org/files/43855/43855-h/43855-h.htm",
+        "https://en.wikipedia.org/wiki/The_Way_to_Wealth"
+      ]
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Project Gutenberg public-domain edition."
+    }
+  },
+  "scoring": {
+    "timelessness": 10,
+    "modernRelevance": 9,
+    "searchDemand": 7,
+    "businessUsefulness": 10,
+    "adaptationPotential": 9,
+    "rightsViability": 10,
+    "totalScore": 9.26,
+    "rank": 4
+  },
+  "status": "editor-review",
+  "review": {
+    "pending": "draft",
+    "blueprintApprovedAt": "2026-07-08T18:32:31.818Z",
+    "backCoverSampleApprovedAt": "2026-07-08T18:43:20.235Z",
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/way-to-wealth/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/way-to-wealth/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/way-to-wealth/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/way-to-wealth/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "The Way to Cash Flow",
+    "titleConcepts": [
+      "The Way to Cash Flow",
+      "Poor Founder Rich Operator",
+      "The Modern Way to Wealth"
+    ],
+    "subtitleOptions": [
+      "Benjamin Franklin's Money Rules Rebuilt for Freelancers, Founders, and Creators",
+      "A Practical Guide to Time, Thrift, Work, Debt, and Durable Wealth",
+      "Old Money Discipline for the Subscription Economy"
+    ],
+    "modernWorld": "Subscription creep, creator income, freelance cash flow, startup salaries, consumer debt, lifestyle inflation, and the hidden cost of wasted attention",
+    "toneRules": [
+      "Keep the aphoristic bite but make the examples modern and concrete.",
+      "Use humor sparingly to expose financial self-deception.",
+      "Make thrift feel like power and optionality, not smallness."
+    ],
+    "prohibitedChanges": [
+      "Do not turn the book into austerity theater.",
+      "Do not imply Benjamin Franklin wrote the adaptation.",
+      "Do not ignore Franklin's satirical frame when modernizing the message."
+    ],
+    "coreLessons": [
+      "Time is the root asset.",
+      "Small leaks compound into large losses.",
+      "Debt transfers future freedom to someone else.",
+      "Industry creates options when paired with restraint.",
+      "Frugality is a form of control.",
+      "Visible consumption is not wealth.",
+      "A person who wastes attention wastes earning power."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "Father Abraham Joins the Group Chat",
+        "focus": "Recreate the original public sermon as modern money advice delivered to ambitious but financially scattered workers.",
+        "modernFrame": "A group of founders, freelancers, and creators ask why income keeps disappearing."
+      },
+      {
+        "number": 2,
+        "title": "Time Is Not Money. Time Is Better.",
+        "focus": "Translate Franklin's time discipline into modern attention economics.",
+        "modernFrame": "Calendars, phones, notification debt, and work that never becomes output."
+      },
+      {
+        "number": 3,
+        "title": "The Subscription Tax",
+        "focus": "Modernize thrift through recurring expenses and lifestyle drift.",
+        "modernFrame": "SaaS tools, apps, food delivery, car payments, and status purchases."
+      },
+      {
+        "number": 4,
+        "title": "The Future Sends an Invoice",
+        "focus": "Show debt as a claim on future freedom.",
+        "modernFrame": "Credit cards, business debt, student loans, and buy-now-pay-later behavior."
+      },
+      {
+        "number": 5,
+        "title": "Industry Without Leakage",
+        "focus": "Pair earning power with cash retention.",
+        "modernFrame": "High income only matters when a portion survives."
+      },
+      {
+        "number": 6,
+        "title": "The Wealth Nobody Claps For",
+        "focus": "Make quiet financial strength more desirable than visible spending.",
+        "modernFrame": "Emergency funds, low burn, skill growth, and strategic patience."
+      }
+    ],
+    "marketingAngles": [
+      "Benjamin Franklin's thrift classic rebuilt for modern cash flow",
+      "A short money discipline book for people earning more but keeping little",
+      "A sharp practical guide to time, work, debt, and spending control"
+    ],
+    "kdpKeywords": [
+      "way to wealth modern adaptation",
+      "benjamin franklin money rules",
+      "cash flow discipline",
+      "frugality for entrepreneurs",
+      "money habits for creators",
+      "personal finance for freelancers",
+      "subscription economy money book"
+    ]
+  }
+}

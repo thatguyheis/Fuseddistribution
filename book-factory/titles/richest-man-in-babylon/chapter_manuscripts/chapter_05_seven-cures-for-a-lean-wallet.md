@@ -98,7 +98,7 @@ Every hand went up.
 ## THE FOURTH CURE
 ### Guard Your Stack from Loss
 
-"In this industry, someone is always pitching you something. The DM slides in. The Discord invite arrives. The guy at the party tells you about the token that's about to 1000x. The friend of a friend has a 'can't miss' opportunity.
+"In this industry, someone is always pitching you something. The DM slides in. The private-chat invite arrives. The guy at the party tells you about the token that's about to 1000x. The friend of a friend has a 'can't miss' opportunity.
 
 "First law of not losing money: if it sounds too good to be true, it is. Every rug pull in history was sold to someone as a great opportunity. Every single one. The pitch was always compelling. The urgency was always manufactured. The exit was always pre-planned.
 

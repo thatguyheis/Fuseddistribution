@@ -41,11 +41,51 @@
     "blueprintApprovedAt": "2026-04-22T15:42:10.055Z",
     "draftApprovedAt": "2026-04-22T15:42:10.128Z"
   },
+  "publicationReadiness": {
+    "sourceFidelityReview": {
+      "status": "reviewed",
+      "reviewedAt": "2026-07-14T17:03:57Z",
+      "summary": "The manuscript still tracks the source lesson order and frames the adaptation as a fictionalized modern retelling rather than original-author text."
+    },
+    "aiUseDisclosure": {
+      "status": "needs-human-confirmation",
+      "reviewedAt": "2026-07-29T17:00:00Z",
+      "summary": "The local package now includes a dedicated AI answer matrix plus the AI disclosure review worksheet, but the uploader still must confirm the final manuscript, cover, interior-image, and marketing-image answers from the exact files used in the KDP submission."
+    },
+    "publicDomainDifferentiation": {
+      "status": "reviewed",
+      "reviewedAt": "2026-07-14T17:03:57Z",
+      "summary": "Differentiation comes from a rewritten Silicon Valley narrative frame, fictionalized contemporary cast, updated money examples, new afterword, and builder-facing back matter."
+    },
+    "realPersonBrandRisk": {
+      "status": "reviewed",
+      "reviewedAt": "2026-07-17T17:04:46Z",
+      "summary": "The underlying chapter manuscripts were aligned with the cleaned manuscript and print package so direct consumer-brand and platform references do not re-enter future package builds. Keep any new public-facing assets clear of current platform, company, or endorsement signals."
+    },
+    "kdpPackageReview": {
+      "status": "needs-human-review",
+      "reviewedAt": "2026-08-04T17:00:00Z",
+      "summary": "The package handoff now makes the preflight check mandatory before KDP opens and explicitly separates local AI-review placeholders from the live yes-or-no KDP answers. The title remains blocked on human KDP package review plus final AI-disclosure confirmation from the exact upload assets before submission."
+    }
+  },
   "artifacts": {
     "candidateBrief": "book-factory/titles/richest-man-in-babylon/candidate_brief.md",
     "adaptationBlueprint": "book-factory/titles/richest-man-in-babylon/adaptation_blueprint.md",
     "chapterManuscripts": "book-factory/titles/richest-man-in-babylon/chapter_manuscripts",
-    "publishingPackage": "book-factory/titles/richest-man-in-babylon/publishing_package"
+    "publishingPackage": "book-factory/titles/richest-man-in-babylon/publishing_package",
+    "kdpUploadChecklist": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_upload_checklist.md",
+    "aiDisclosureReview": "book-factory/titles/richest-man-in-babylon/publishing_package/ai_disclosure_review.md",
+    "kdpAiAnswerMatrix": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_ai_answer_matrix.md",
+    "publicationFileManifest": "book-factory/titles/richest-man-in-babylon/publishing_package/publication_file_manifest.md",
+    "kdpSubmissionFieldMap": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_submission_field_map.md",
+    "kdpListingSnapshot": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_listing_snapshot.md",
+    "kdpReadyBlockerMatrix": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_ready_blocker_matrix.md",
+    "kdpPreflightCheck": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_preflight_check.md",
+    "kdpSubmissionWorksheet": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_submission_worksheet.md",
+    "kdpFinalSignoff": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_final_signoff.md",
+    "coverAndMarketingAssetRecord": "book-factory/titles/richest-man-in-babylon/publishing_package/cover_and_marketing_asset_record.md",
+    "packageIdentityRecord": "book-factory/titles/richest-man-in-babylon/publishing_package/package_identity_record.md",
+    "kdpReviewPacket": "book-factory/titles/richest-man-in-babylon/publishing_package/kdp_review_packet.md"
   },
   "adaptation": {
     "workingTitle": "The Richest Dev in the Valley",

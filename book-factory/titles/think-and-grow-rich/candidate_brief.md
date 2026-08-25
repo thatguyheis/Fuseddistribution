@@ -4,7 +4,7 @@
 - First published: 1937
 - Target audience: modern builders
 - Publishing target: amazon-kdp
-- Rank: 5
+- Rank: 10
 - Weighted score: 7.58
 
 ## Why It Matters

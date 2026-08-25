@@ -1,0 +1,139 @@
+{
+  "slug": "game-of-life-and-how-to-play-it",
+  "source": {
+    "title": "The Game of Life and How to Play It",
+    "author": "Florence Scovel Shinn",
+    "year": 1925,
+    "summary": "A New Thought self-improvement book about speech, belief, expectation, intuition, and conduct.",
+    "corePromise": "Show readers how language, expectation, and inner posture influence choices and outcomes."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "mindset, language discipline, self-command, and practical optimism for technical and creative workers"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-07-08",
+      "evidence": "Published in 1925, before the 1930 U.S. public-domain cutoff active in 2026.",
+      "evidenceSources": [
+        "https://en.wikipedia.org/wiki/The_Game_of_Life_(book)",
+        "https://en.wikisource.org/wiki/The_Game_of_Life_and_How_to_Play_It"
+      ]
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Public-domain Wikisource edition."
+    }
+  },
+  "scoring": {
+    "timelessness": 8,
+    "modernRelevance": 8,
+    "searchDemand": 8,
+    "businessUsefulness": 7,
+    "adaptationPotential": 9,
+    "rightsViability": 10,
+    "totalScore": 8.12,
+    "rank": 9
+  },
+  "status": "editor-review",
+  "review": {
+    "pending": "draft",
+    "blueprintApprovedAt": "2026-07-08T18:32:43.046Z",
+    "backCoverSampleApprovedAt": "2026-07-08T18:43:23.631Z",
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/game-of-life-and-how-to-play-it/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/game-of-life-and-how-to-play-it/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/game-of-life-and-how-to-play-it/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/game-of-life-and-how-to-play-it/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "The Game of Life in Debug Mode",
+    "titleConcepts": [
+      "The Game of Life in Debug Mode",
+      "How to Play the Inner Game",
+      "The Language You Live By"
+    ],
+    "subtitleOptions": [
+      "A Modern Guide to Words, Belief, Intuition, and Practical Self-Command",
+      "Florence Scovel Shinn's Classic Rebuilt for the Age of Noise",
+      "How Language, Attention, and Expectation Shape the Way You Move"
+    ],
+    "modernWorld": "Personal operating systems, self-talk, startup stress, creative risk, decision loops, confidence, intuition, and emotional regulation",
+    "toneRules": [
+      "Preserve the source's confidence while grounding claims in behavior and decision quality.",
+      "Translate metaphysical language into practical self-command without mocking the source.",
+      "Avoid promising magical outcomes."
+    ],
+    "prohibitedChanges": [
+      "Do not make unsupported medical, financial, or supernatural claims.",
+      "Do not imply Florence Scovel Shinn wrote the adaptation.",
+      "Do not reduce the work to generic affirmation content."
+    ],
+    "coreLessons": [
+      "Words shape attention and behavior.",
+      "Expectation changes what people notice and attempt.",
+      "Fearful speech can reinforce fearful action.",
+      "A disciplined inner life improves outer decisions.",
+      "Intuition deserves attention but must be paired with judgment.",
+      "Generosity and goodwill reduce self-sabotage.",
+      "The game is played through repeated choices, not wishes alone."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "The Game Loop",
+        "focus": "Translate the source's game metaphor into repeated choices, feedback, and behavior.",
+        "modernFrame": "A technical worker sees life as a loop of inputs, beliefs, words, actions, and results."
+      },
+      {
+        "number": 2,
+        "title": "Your Words Are Commands",
+        "focus": "Show how language directs attention and behavior.",
+        "modernFrame": "Self-talk, team language, launch anxiety, and identity statements."
+      },
+      {
+        "number": 3,
+        "title": "Expectation Is a Filter",
+        "focus": "Turn expectation into a practical tool for seeing options and acting sooner.",
+        "modernFrame": "Opportunity recognition, confidence, and founder psychology."
+      },
+      {
+        "number": 4,
+        "title": "Debugging Fear",
+        "focus": "Teach readers to inspect fear without obeying it.",
+        "modernFrame": "Decision logs, nervous system pressure, and high-stakes work."
+      },
+      {
+        "number": 5,
+        "title": "The Inner Prompt",
+        "focus": "Use intuition as a signal that must be tested by judgment.",
+        "modernFrame": "Gut checks, pattern recognition, and responsible risk."
+      },
+      {
+        "number": 6,
+        "title": "Play Clean",
+        "focus": "Connect goodwill, clarity, and generosity to better outcomes.",
+        "modernFrame": "Reputation, relationships, and avoiding self-sabotage in small markets."
+      }
+    ],
+    "marketingAngles": [
+      "A grounded modern rewrite of a New Thought classic",
+      "Mindset and language discipline for builders, creators, and operators",
+      "A practical guide to self-talk, expectation, and decision loops"
+    ],
+    "kdpKeywords": [
+      "game of life modern adaptation",
+      "florence scovel shinn modern",
+      "self talk book",
+      "mindset for creators",
+      "personal operating system",
+      "language and self command",
+      "inner game book"
+    ]
+  }
+}

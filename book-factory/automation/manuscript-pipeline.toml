@@ -1,14 +1,15 @@
 name = "Book Draft Pipeline"
 status = "ACTIVE"
 schedule = "Daily at 10:00 AM America/Los_Angeles"
-cwd = "/Users/nick/Documents/New project"
+cwd = "/Users/nick/projects/fuseddistribution"
 
 prompt = """
-Advance approved book records through the Book Factory workflow in /Users/nick/Documents/New project.
+Advance approved book records through the Book Factory workflow in /Users/nick/projects/fuseddistribution.
 For any title that is rights-cleared, generate the adaptation blueprint and stop for editorial review.
-For any title with blueprint approval, generate manuscript assets and stop for editorial review.
+For any title with blueprint approval, generate the back-cover sample and stop for user review before full drafting.
+For any title with back-cover sample approval, generate manuscript assets and stop for editorial review.
 For any title approved for packaging, first confirm source-fidelity review, AI publication compliance, public-domain differentiation evidence, and real-person/brand risk review.
 Only assemble the KDP package after those checks are clear.
-Do not move unresolved-rights titles forward.
+Do not move unresolved-rights titles forward, and keep any title first published in or after 1930 blocked until its rights evidence is double-checked and documented.
 Open an inbox item summarizing what advanced, what is blocked, and the next human approval needed.
 """

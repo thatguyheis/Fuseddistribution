@@ -1,0 +1,139 @@
+{
+  "slug": "art-of-public-speaking",
+  "source": {
+    "title": "The Art of Public Speaking",
+    "author": "Dale Carnegie and J. Berg Esenwein",
+    "year": 1915,
+    "summary": "A practical public-speaking manual about confidence, preparation, delivery, persuasion, voice, audience attention, and clear argument.",
+    "corePromise": "Help readers turn clear thinking into spoken influence."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "communication, demos, pitches, meetings, webinars, technical talks, and leadership presence for builders and operators"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-07-08",
+      "evidence": "Published in 1915, well before the 1930 U.S. public-domain cutoff active in 2026.",
+      "evidenceSources": [
+        "https://en.wikipedia.org/wiki/Dale_Carnegie",
+        "https://www.gutenberg.org/ebooks/16317"
+      ]
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Project Gutenberg public-domain edition."
+    }
+  },
+  "scoring": {
+    "timelessness": 9,
+    "modernRelevance": 10,
+    "searchDemand": 8,
+    "businessUsefulness": 10,
+    "adaptationPotential": 10,
+    "rightsViability": 10,
+    "totalScore": 9.48,
+    "rank": 2
+  },
+  "status": "editor-review",
+  "review": {
+    "pending": "draft",
+    "blueprintApprovedAt": "2026-07-08T18:32:24.892Z",
+    "backCoverSampleApprovedAt": "2026-07-08T18:43:20.238Z",
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/art-of-public-speaking/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/art-of-public-speaking/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/art-of-public-speaking/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/art-of-public-speaking/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "Speak So People Ship",
+    "titleConcepts": [
+      "Speak So People Ship",
+      "The Art of Technical Speaking",
+      "Speak Like a Builder"
+    ],
+    "subtitleOptions": [
+      "A Modern Guide to Demos, Pitches, Meetings, and Clear Technical Communication",
+      "Public Speaking Rebuilt for Founders, Developers, Operators, and Creators",
+      "How to Turn Clear Thinking Into Spoken Influence"
+    ],
+    "modernWorld": "Remote meetings, product demos, technical talks, sales calls, investor pitches, webinars, podcasts, async video, and team leadership",
+    "toneRules": [
+      "Make communication practical, direct, and useful for people who build.",
+      "Translate stage-era advice into demos, meetings, launches, and technical explanations.",
+      "Keep the voice confident without sounding theatrical or manipulative."
+    ],
+    "prohibitedChanges": [
+      "Do not imply the original authors wrote this adaptation.",
+      "Do not teach manipulation or deceptive persuasion.",
+      "Do not preserve dated gender, platform, or stage assumptions when modernizing examples."
+    ],
+    "coreLessons": [
+      "Clear speech begins with clear thinking.",
+      "Confidence is built through preparation and repeated exposure.",
+      "Audience attention must be earned quickly and held with structure.",
+      "Concrete examples persuade better than abstractions.",
+      "Voice, pacing, and presence affect trust.",
+      "A strong talk moves listeners toward a specific action.",
+      "The speaker's character and sincerity shape the message."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "The Fear of the Room",
+        "focus": "Reframe stage fright as a manageable system problem.",
+        "modernFrame": "A founder freezes during a product demo and learns how preparation reduces fear."
+      },
+      {
+        "number": 2,
+        "title": "Think Before You Talk",
+        "focus": "Show that clear speaking comes from clear structure.",
+        "modernFrame": "Technical ideas become memorable when organized around one promise, one audience, and one next action."
+      },
+      {
+        "number": 3,
+        "title": "Make the Abstract Concrete",
+        "focus": "Teach examples, stories, demos, and analogies.",
+        "modernFrame": "Developers explain complex systems to customers, investors, and nontechnical teams."
+      },
+      {
+        "number": 4,
+        "title": "Hold the Room",
+        "focus": "Translate attention, gesture, voice, and pacing into modern presentation habits.",
+        "modernFrame": "Zoom calls, webinars, podcast appearances, conference talks, and live sales calls."
+      },
+      {
+        "number": 5,
+        "title": "Persuasion Without Theater",
+        "focus": "Show how sincerity, evidence, and usefulness create influence.",
+        "modernFrame": "A builder pitches adoption without hype."
+      },
+      {
+        "number": 6,
+        "title": "The Talk That Ships",
+        "focus": "Tie communication to action.",
+        "modernFrame": "A good presentation creates decisions, buy-in, sales, funding, recruiting, or better execution."
+      }
+    ],
+    "marketingAngles": [
+      "A public-speaking classic rebuilt for technical professionals",
+      "Communication skills for demos, pitches, meetings, webinars, and leadership",
+      "A practical speaking book for builders who need trust, clarity, and action"
+    ],
+    "kdpKeywords": [
+      "technical public speaking",
+      "public speaking for developers",
+      "communication for founders",
+      "presentation skills for engineers",
+      "product demo guide",
+      "speak so people ship",
+      "modern art of public speaking"
+    ]
+  }
+}

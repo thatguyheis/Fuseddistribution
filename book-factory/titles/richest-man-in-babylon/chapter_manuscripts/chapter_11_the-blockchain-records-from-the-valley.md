@@ -43,7 +43,7 @@ Under the guidance of my mentor and friend Mathon Thorne of the lending protocol
 One tenth of everything I earn, transferred immediately upon receipt to a cold wallet I have labeled *Not For Spending.* This is mine. It grows. I do not touch it. When I have enough, I will begin investing it. The goal is not to look at the number and feel rich. The goal is to never touch it until it is working.
 
 **Second purpose:** Support my life and my family.
-Seven tenths of everything I earn funds my actual life: rent, food, transportation, the basics. Not the luxuries. Not the DoorDash three times a week. The necessities. A small allowance for enjoyment, because a life without any joy is not sustainable. But no more than seventy percent total.
+Seven tenths of everything I earn funds my actual life: rent, food, transportation, the basics. Not the luxuries. Not the food delivery three times a week. The necessities. A small allowance for enjoyment, because a life without any joy is not sustainable. But no more than seventy percent total.
 
 **Third purpose:** Repay every legitimate debt.
 Two tenths of every paycheck goes to creditors, distributed proportionally to what I owe each person. I have listed every debt below, to the dollar, because the first step to paying something off is being honest about what it is.
@@ -63,7 +63,7 @@ Per the plan:
 - 70% to living (tight, but doable; cancelled two subscriptions, eating at home more)
 - 20% distributed to creditors
 
-One creditor, an old college friend, was cold on the phone. I left a voicemail and sent a Venmo transfer. He didn't acknowledge it. That's fine. The record exists. The payment was made. His silence is not a reason to stop.
+One creditor, an old college friend, was cold on the phone. I left a voicemail and sent a payment-app transfer. He didn't acknowledge it. That's fine. The record exists. The payment was made. His silence is not a reason to stop.
 
 Another creditor, someone I owe a significant amount, was genuinely surprised I called. Said no one had ever shown up with a plan before. Said he respected it.
 

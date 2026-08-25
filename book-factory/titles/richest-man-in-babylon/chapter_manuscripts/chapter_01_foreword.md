@@ -9,7 +9,7 @@ Money is plentiful for those who understand its simple rules. It is scarce for t
 
 This book is about those rules. Not in a boring, spreadsheet-lecture kind of way. In the way a wise, slightly smug billionaire friend explains things over overpriced sushi: with stories, with humor, and with the kind of blunt truth your financial advisor is too polite to say out loud.
 
-The principles in these pages were not invented in Silicon Valley. They weren't born in a Stanford dorm room or a Y Combinator pitch session. They are older than any IPO. Men and women practiced them thousands of years ago in a city called Babylon, arguably the original tech hub of the ancient world. No oil. No forests. No natural advantage whatsoever. Just human ingenuity, ambition, and an uncanny ability to make money work.
+The principles in these pages were not invented in Silicon Valley. They weren't born in a famous campus dorm room or a startup-accelerator pitch session. They are older than any IPO. Men and women practiced them thousands of years ago in a city called Babylon, arguably the original tech hub of the ancient world. No oil. No forests. No natural advantage whatsoever. Just human ingenuity, ambition, and an uncanny ability to make money work.
 
 The names and places have changed. The principles have not.
 

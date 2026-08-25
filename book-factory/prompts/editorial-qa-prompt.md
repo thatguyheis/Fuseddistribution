@@ -9,6 +9,7 @@ Review each generated artifact for:
 - Redundancy across chapters
 - Overclaiming around rights or authorship
 - Packaging clarity for KDP
+- Back-cover sample strength before full drafting approval
 - AI-generated vs. AI-assisted classification for the final upload
 - Public-domain differentiation evidence for KDP review
 - Real-person, trademark, celebrity, or brand-reference risk

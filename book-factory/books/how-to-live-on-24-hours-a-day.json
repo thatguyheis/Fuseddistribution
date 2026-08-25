@@ -1,0 +1,139 @@
+{
+  "slug": "how-to-live-on-24-hours-a-day",
+  "source": {
+    "title": "How to Live on 24 Hours a Day",
+    "author": "Arnold Bennett",
+    "year": 1908,
+    "summary": "A compact self-improvement book about treating time as the central asset and using nonworking hours for deliberate growth.",
+    "corePromise": "Help readers reclaim ordinary days and turn spare time into self-development."
+  },
+  "target": {
+    "audience": "modern builders",
+    "publishingTarget": "amazon-kdp",
+    "positioning": "time, attention, energy, learning, and deep work for developers, founders, operators, and creators"
+  },
+  "rights": {
+    "us": {
+      "status": "confirmed-public-domain",
+      "confirmedPublicDomain": true,
+      "verificationDate": "2026-07-08",
+      "evidence": "Published in 1908 and available through public-domain digital editions.",
+      "evidenceSources": [
+        "https://en.wikipedia.org/wiki/How_to_Live_on_24_Hours_a_Day",
+        "https://www.gutenberg.org/ebooks/2274"
+      ]
+    },
+    "sourceAvailability": {
+      "verified": true,
+      "location": "Project Gutenberg public-domain edition."
+    }
+  },
+  "scoring": {
+    "timelessness": 9,
+    "modernRelevance": 10,
+    "searchDemand": 8,
+    "businessUsefulness": 9,
+    "adaptationPotential": 10,
+    "rightsViability": 10,
+    "totalScore": 9.28,
+    "rank": 3
+  },
+  "status": "editor-review",
+  "review": {
+    "pending": "draft",
+    "blueprintApprovedAt": "2026-07-08T18:32:28.507Z",
+    "backCoverSampleApprovedAt": "2026-07-08T18:43:20.232Z",
+    "draftApprovedAt": null
+  },
+  "artifacts": {
+    "candidateBrief": "book-factory/titles/how-to-live-on-24-hours-a-day/candidate_brief.md",
+    "adaptationBlueprint": "book-factory/titles/how-to-live-on-24-hours-a-day/adaptation_blueprint.md",
+    "chapterManuscripts": "book-factory/titles/how-to-live-on-24-hours-a-day/chapter_manuscripts",
+    "publishingPackage": "book-factory/titles/how-to-live-on-24-hours-a-day/publishing_package"
+  },
+  "adaptation": {
+    "workingTitle": "How to Live on 24 Hours a Day in the Age of Notifications",
+    "titleConcepts": [
+      "How to Live on 24 Hours a Day in the Age of Notifications",
+      "The 24-Hour Operating System",
+      "Time Is the Only Stack"
+    ],
+    "subtitleOptions": [
+      "A Modern Guide to Attention, Deep Work, Learning, and Daily Control",
+      "Arnold Bennett's Time Classic Rebuilt for Developers, Founders, and Creators",
+      "How to Reclaim Your Day From Work, Screens, and Drift"
+    ],
+    "modernWorld": "Remote work, notifications, meetings, side projects, learning loops, commute time, AI tools, digital distraction, and knowledge-worker fatigue",
+    "toneRules": [
+      "Write with practical sympathy for busy people.",
+      "Treat time as an asset without turning life into a productivity cult.",
+      "Make the plan small enough to execute and serious enough to matter."
+    ],
+    "prohibitedChanges": [
+      "Do not shame readers for ordinary fatigue.",
+      "Do not promise extreme productivity hacks.",
+      "Do not imply Arnold Bennett wrote the adaptation."
+    ],
+    "coreLessons": [
+      "Everyone receives the same daily time budget.",
+      "A job can consume energy without consuming the whole self.",
+      "Small protected blocks create real self-development.",
+      "Attention must be trained before time can be used well.",
+      "A sustainable program beats an ambitious collapse.",
+      "Reflection turns activity into learning.",
+      "The goal is fuller living, not busier living."
+    ],
+    "chapterPlan": [
+      {
+        "number": 1,
+        "title": "The Daily Allocation",
+        "focus": "Show that time is the one budget every reader receives equally.",
+        "modernFrame": "A knowledge worker loses the day to meetings, messages, and exhausted scrolling."
+      },
+      {
+        "number": 2,
+        "title": "The Second Day Hidden Inside the First",
+        "focus": "Recover evenings, mornings, commutes, and low-friction blocks.",
+        "modernFrame": "Modern workers build a personal day around the workday."
+      },
+      {
+        "number": 3,
+        "title": "Protect Ninety Minutes",
+        "focus": "Translate Bennett's small-start program into deep work and skill growth.",
+        "modernFrame": "A founder or developer uses small blocks for writing, learning, selling, or building."
+      },
+      {
+        "number": 4,
+        "title": "Train the Attention Layer",
+        "focus": "Update concentration practice for phones, tabs, and context switching.",
+        "modernFrame": "Notification hygiene, monotasking, and deliberate study."
+      },
+      {
+        "number": 5,
+        "title": "Do Not Overbuild the System",
+        "focus": "Warn against productivity systems that collapse under their own weight.",
+        "modernFrame": "Apps, dashboards, trackers, and plans that become procrastination."
+      },
+      {
+        "number": 6,
+        "title": "A Life That Fits Inside the Day",
+        "focus": "Tie time discipline to fuller living and self-respect.",
+        "modernFrame": "The reader builds a life outside reactive work."
+      }
+    ],
+    "marketingAngles": [
+      "A time-management classic rebuilt for the notification age",
+      "A practical deep-work book for developers, founders, and creators",
+      "A humane productivity book about reclaiming ordinary days"
+    ],
+    "kdpKeywords": [
+      "how to live on 24 hours a day modern",
+      "time management for developers",
+      "deep work for founders",
+      "attention management book",
+      "productivity for creators",
+      "notification age productivity",
+      "daily operating system"
+    ]
+  }
+}

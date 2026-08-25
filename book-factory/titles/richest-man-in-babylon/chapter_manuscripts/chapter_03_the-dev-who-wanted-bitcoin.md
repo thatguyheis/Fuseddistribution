@@ -18,7 +18,7 @@ On the kitchen counter inside, his girlfriend had left a legal pad with numbers 
 
 This, more than anything, offended him. Not the number itself. The shape of it. The fact that he could build things people praised, solve technical problems other people found impossible, and still be defeated by a legal pad and a sum in blue ink.
 
-Down the street rolled a gleaming white Tesla Model S, the kind with the full autonomous driving package and the custom wheels. Bansir watched it coast past with the quiet humiliation of a man who had been telling people he would "definitely have a Tesla by thirty." He was thirty-two.
+Down the street rolled a gleaming white luxury EV, the kind with the full self-driving package and the custom wheels. Bansir watched it coast past with the quiet humiliation of a man who had been telling people he would "definitely have a car like that by thirty." He was thirty-two.
 
 A familiar ringtone snapped him back. His friend Kobbi had set himself as a contact with some snippet of a beat he'd been working on. It cut through everything.
 
@@ -28,7 +28,7 @@ Kobbi the music producer was at the door, grinning.
 
 "Because they did," said Bansir, which was not entirely untrue. He moved over on the steps. "Sit down. I need to tell you something."
 
-Kobbi sat, still in his AirPods, still vibing faintly to something only he could hear. He was a talented producer, genuinely talented, the kind who had worked with people whose names you'd actually recognize. But the streaming era had not been kind to the economics of music. He had a decent following on SoundCloud, a few sync licenses, and an empty savings account.
+Kobbi sat, still in his wireless earbuds, still vibing faintly to something only he could hear. He was a talented producer, genuinely talented, the kind who had worked with people whose names you'd actually recognize. But the streaming era had not been kind to the economics of music. He had a decent following on a music platform, a few sync licenses, and an empty savings account.
 
 Kobbi had the look many modern talented people had: expensive taste, real skill, and no durable margin. His shoes were immaculate. His bank balance, Bansir knew, was not. He had once gotten a five-figure check for a placement and spent most of it over four months in the kind of soft, ambient lifestyle creep that never feels dramatic while it is happening. Studio upgrades. Dinners. Ride shares. Gear. A weekend in Miami. Then nothing. The money had left as quietly as it came.
 
@@ -84,7 +84,7 @@ Bansir looked up. "We ask him."
 
 Kobbi raised an eyebrow. "We just... ask the richest man in the Valley how he got rich?"
 
-"He's not like that. You know he's not. Last week I saw him at Blue Bottle and he came over and we talked for twenty minutes. Didn't look over my head once."
+"He's not like that. You know he's not. Last week I saw him at a coffee shop and he came over and we talked for twenty minutes. Didn't look over my head once."
 
 "He bought his own coffee," Kobbi added, remembering. "Stood in line like everyone else."
 
