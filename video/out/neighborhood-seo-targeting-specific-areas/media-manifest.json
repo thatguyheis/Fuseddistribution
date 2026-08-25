@@ -6,108 +6,77 @@
       "source": "local-photo",
       "query": "neighborhood SEO targeting specific areas",
       "prefer": "video",
-      "updatedAt": "2026-08-16T18:22:35.225Z"
+      "updatedAt": "2026-08-25T00:09:24.457Z"
     },
     "1": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "neighborhood SEO targeting specific areas small business owner",
       "prefer": "photo",
-      "updatedAt": "2026-08-16T18:22:35.427Z"
+      "updatedAt": "2026-08-25T00:09:25.152Z"
     },
     "2": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas traditional seo tactics\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
       "query": "neighborhood SEO targeting specific areas traditional seo tactics",
       "prefer": "photo",
-      "updatedAt": "2026-08-16T18:22:35.427Z"
+      "updatedAt": "2026-08-25T00:09:25.152Z"
     },
     "3": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas reviews positive build\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pixabay-photo",
       "query": "neighborhood SEO targeting specific areas reviews positive build",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:36.923Z"
+      "updatedAt": "2026-08-25T00:09:25.153Z"
     },
     "4": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas research what people\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas research what people",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:38.020Z"
+      "updatedAt": "2026-08-25T00:09:25.153Z"
     },
     "5": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas identify target neighborhoods\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas identify target neighborhoods",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:39.076Z"
+      "updatedAt": "2026-08-25T00:09:25.154Z"
     },
     "6": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas positive reviews signal\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas positive reviews signal",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:39.908Z"
+      "updatedAt": "2026-08-25T00:09:25.154Z"
     },
     "7": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas monitor reviews regularly\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas monitor reviews regularly",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:40.576Z"
+      "updatedAt": "2026-08-25T00:09:25.154Z"
     },
     "8": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas 70 local searches\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas 70 local searches",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:42.571Z"
+      "updatedAt": "2026-08-25T00:09:25.154Z"
     },
     "9": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas contact today free\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas contact today free",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:43.626Z"
+      "updatedAt": "2026-08-25T00:09:25.155Z"
     },
     "10": {
       "key": "{\"query\":\"neighborhood SEO targeting specific areas customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
       "source": "pexels-photo",
       "query": "neighborhood SEO targeting specific areas customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo",
-        "pexels-photo"
-      ],
-      "updatedAt": "2026-08-16T18:22:44.888Z"
+      "updatedAt": "2026-08-25T00:09:25.155Z"
     }
   }
 }

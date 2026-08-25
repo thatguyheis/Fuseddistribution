@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "Johnson Matthee silver bars guide",
+      "prefer": "video",
+      "updatedAt": "2026-08-24T18:27:36.325Z"
+    },
+    "1": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide looking reliable affordable\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Johnson Matthee silver bars guide looking reliable affordable",
+      "prefer": "photo",
+      "updatedAt": "2026-08-24T18:27:36.352Z"
+    },
+    "2": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide following sections look\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "Johnson Matthee silver bars guide following sections look",
+      "prefer": "photo",
+      "updatedAt": "2026-08-24T18:27:36.352Z"
+    },
+    "3": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide encourage research compare\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "Johnson Matthee silver bars guide encourage research compare",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:38.036Z"
+    },
+    "4": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide also readily buyable\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide also readily buyable",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:38.917Z"
+    },
+    "5": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide 999 ounces bars\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide 999 ounces bars",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:39.450Z"
+    },
+    "6": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide carefully curated selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide carefully curated selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:40.477Z"
+    },
+    "7": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide fused distribution understand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide fused distribution understand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:41.091Z"
+    },
+    "8": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide these bars known\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide these bars known",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:41.777Z"
+    },
+    "9": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide stock wide selection\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide stock wide selection",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:42.270Z"
+    },
+    "10": {
+      "key": "{\"query\":\"Johnson Matthee silver bars guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "Johnson Matthee silver bars guide customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-24T18:27:42.860Z"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "slug": "neighborhood-seo-targeting-specific-areas",
-  "renderedAt": "2026-08-16T18:30:56.058Z",
+  "renderedAt": "2026-08-25T01:11:31.967Z",
   "hookType": "stat",
   "segmentCount": 11,
   "scriptDuration": 208.905,
@@ -48,7 +48,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 1,
-    "pexels": 7
+    "pixabay-photo": 1,
+    "pexels-photo": 7
   }
 }

@@ -1,6 +1,6 @@
 {
   "slug": "how-to-calculate-your-average-cost-per-ounce-silver",
-  "renderedAt": "2026-08-16T18:55:45.519Z",
+  "renderedAt": "2026-08-25T02:22:03.138Z",
   "hookType": "statement",
   "segmentCount": 11,
   "scriptDuration": 193.165,
@@ -48,7 +48,7 @@
   "videoCount": 0,
   "mediaSources": {
     "local-photo": 3,
-    "pixabay": 1,
-    "pexels": 7
+    "pixabay-photo": 1,
+    "pexels-photo": 7
   }
 }
