@@ -1,0 +1,6620 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-25T19:07:47.948Z",
+  "snapshot": {
+    "date": "2026-08-25",
+    "capturedAt": "2026-08-25T19:02:56.017Z",
+    "source": "buffer_api",
+    "posts": 174,
+    "maturePosts": 169,
+    "slugMappedPosts": 139
+  },
+  "metricCoverage": {
+    "retention": 0,
+    "distribution": 174,
+    "engagement": 174,
+    "conversion": 174,
+    "productionCost": 0
+  },
+  "platformSummary": {
+    "instagram": {
+      "maturePosts": 52,
+      "mappedSlugs": 17,
+      "averageExposure": 103.85,
+      "medianExposure": 109
+    },
+    "twitter": {
+      "maturePosts": 59,
+      "mappedSlugs": 59,
+      "averageExposure": 5.12,
+      "medianExposure": 4
+    },
+    "youtube": {
+      "maturePosts": 58,
+      "mappedSlugs": 58,
+      "averageExposure": 39.12,
+      "medianExposure": 9
+    }
+  },
+  "scoringPolicy": {
+    "weights": {
+      "retention": 30,
+      "distribution": 25,
+      "engagement": 25,
+      "conversion": 15,
+      "productionEfficiency": 5
+    },
+    "normalization": "Same-platform and same-age-bucket percentile. Missing dimensions are excluded and reported through evidenceCoverage.",
+    "engagementFormula": "3*shares + 3*saves + 2*comments + reactions + 3*reposts, divided by exposure.",
+    "conversionFormula": "clicks + profileVisits + 2*follows, divided by exposure."
+  },
+  "eligiblePosts": 148,
+  "survivors": [
+    {
+      "postId": "6a700d055dc5613cefe80912",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-03T23:31:20.126Z",
+      "exposure": 120,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 96.77,
+        "engagement": 100,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 87.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a73c8572770c3bfc7581add",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T04:00:20.145Z",
+      "exposure": 9,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.21,
+        "engagement": 97.62,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 82.35,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a674e6c53a5caee8245d55b",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:45:27.356Z",
+      "exposure": 12,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 94.19,
+        "engagement": 90.48,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 82.29,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d965ef8ed617702edd",
+      "slug": "silver-market-outlook-2026-what-analysts-say",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T21:45:19.986Z",
+      "exposure": 46,
+      "weightedEngagement": 0,
+      "weightedConversion": 1,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 44.05,
+        "conversion": 100,
+        "productionEfficiency": null
+      },
+      "score": 78.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "ambient-05.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 183.125333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 7
+        }
+      }
+    },
+    {
+      "postId": "6a8604e3bf853b21a6b1d803",
+      "slug": "instagram-for-local-business-complete-guide",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T00:00:56.476Z",
+      "exposure": 113,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 84.21,
+        "engagement": 73.68,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 72.27,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 184.064,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a86e610707a8f38031b4cf3",
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T20:01:59.205Z",
+      "exposure": 111,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 73.68,
+        "engagement": 78.95,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 165.184,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a776757d86dda1f3668295f",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T04:00:35.838Z",
+      "exposure": 5,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 94.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a776752a69527d8fa5dd1cb",
+      "slug": "online-booking-system-for-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T00:00:34.348Z",
+      "exposure": 5,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 94.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 192.384,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e18224d9daaf5f685d3",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:15:03.944Z",
+      "exposure": 156,
+      "weightedEngagement": 4,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 58.82,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.88,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a85948272f1f87674ad81a3",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T20:00:37.165Z",
+      "exposure": 32,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a8442e03dd2d5920efd4b17",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T20:00:54.170Z",
+      "exposure": 8,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a715f6920d3689200b1c8d5",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T23:33:23.992Z",
+      "exposure": 128,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 68.61,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a855be8b5799742d14534ef",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T16:01:05.483Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a840b0d65591f9d7292d834",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T16:01:17.355Z",
+      "exposure": 25,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a67c5d7d1ef20abf52260ab",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-04T15:33:51.000Z",
+      "exposure": 118,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 93.55,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.13,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a674e2b53a5caee8245d27d",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:15:23.866Z",
+      "exposure": 13,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 97.67,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 65.77,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a55639aa208f5b1ac0b78c2",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T01:15:05.749Z",
+      "exposure": 57,
+      "weightedEngagement": 2,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 76.19,
+        "engagement": 64.71,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.73,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a3e700f7805b762925702fe",
+      "slug": "small-business-website-mistakes-to-avoid",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-27T00:12:05.174Z",
+      "exposure": 120,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 85.71,
+        "engagement": 54.41,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.43,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": null,
+        "captionMode": null,
+        "musicTrack": "ambient-06.mp3",
+        "segmentCount": 5,
+        "renderedDuration": null,
+        "mediaSources": null
+      }
+    },
+    {
+      "postId": "6a86e60dc7a33f3924a6bc60",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T12:01:21.461Z",
+      "exposure": 106,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 39.47,
+        "engagement": 100,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.18,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a73c8563360c8973cfecf15",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T00:00:28.960Z",
+      "exposure": 12,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 94.19,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 64.43,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1336727938290065183",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T04:00:23.518Z",
+      "exposure": 150,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 90.48,
+        "engagement": 45.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.87,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a839a7533ec6735e90ea3c4",
+      "slug": "dollar-cost-averaging-silver-strategy-explained",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T00:00:17.505Z",
+      "exposure": 18,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 85.71,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.73,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relaxation-05-749.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 180.928,
+        "mediaSources": {
+          "local-photo": 9,
+          "pixabay": 1,
+          "pexels": 1
+        }
+      }
+    },
+    {
+      "postId": "6a79b6e5ebbe0f5c8d528e61",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-10T12:01:18.298Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74e164a1b9fec613357500",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T04:01:58.607Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a715f672e9d172962a8a032",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T20:01:55.757Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a86e60fe7845fc4200ca890",
+      "slug": "facebook-page-vs-facebook-group-for-business",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T16:02:27.634Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.16,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-feedback-dreams-588.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 149.589333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5563aa5d83824351936a13",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T20:30:22.954Z",
+      "exposure": 10,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 90.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 63.09,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a55639b29834f7ded998bca",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T20:00:54.544Z",
+      "exposure": 9,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 45.24,
+        "engagement": 88.24,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.88,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a46dd3d8700ad467b080f39",
+      "slug": "mobile-website-speed-why-it-matters-for-local-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-02T23:30:09.526Z",
+      "exposure": 10,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 47.62,
+        "engagement": 85.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.66,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 168.149333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a67bd3ce2cb6435dcc4eb94",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T21:45:05.131Z",
+      "exposure": 4,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 36.9,
+        "engagement": 95.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    }
+  ],
+  "mutationCandidates": [
+    {
+      "postId": "6a4d10d765ef8ed617702eb9",
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-08T01:15:04.747Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relax-beat-292.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 181.12,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 7
+        }
+      }
+    },
+    {
+      "postId": "6a722926bc97c17e7be55a7d",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T20:00:18.064Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fb20f9eb13c5e2c4634",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T23:00:45.074Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a7d7376edf287b5060b3491",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T12:00:50.891Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a88376fdc319146a27a917b",
+      "slug": "electric-vehicle-silver-demand-explained",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T16:03:37.229Z",
+      "exposure": 37,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 0,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.7,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 193.962667,
+        "mediaSources": {
+          "local-photo": 10,
+          "pixabay": 1
+        }
+      }
+    },
+    {
+      "postId": "6a87566d2517aaad2052e1dc",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T04:01:39.571Z",
+      "exposure": 71,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 5.26,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 26.72,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1323327f219a1546171",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:00:37.759Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 29.76,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 26.94,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7377e38c09c27e1f3cd8",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T16:01:04.892Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 33.33,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 28.32,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a88376ea324248b5e808bc5",
+      "slug": "call-to-action-best-practices-for-small-business-websit",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T12:03:01.308Z",
+      "exposure": 73,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.53,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 28.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 182.122667,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a427e5c1ed56c173d8361ec",
+      "slug": "instagram-for-local-business-complete-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-29T15:36:15.633Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.49,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 29.55,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 184.064,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a75d95a018a9e80fc7c4381",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T16:00:55.939Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.49,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 29.55,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a776761a69527d8fa5dd3a6",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T00:01:28.721Z",
+      "exposure": 48,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 0,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 30.15,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a789db8d192ae76f3d030bc",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T20:01:19.140Z",
+      "exposure": 70,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 31.39,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a739fb1e4e00c7b052a4ce1",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T22:15:15.724Z",
+      "exposure": 8,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 42.86,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 31.98,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a4d10da7b9202eb2faae0ed",
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T23:30:26.321Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 202.581333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5156c8c4586a8dc9993e70",
+      "slug": "word-of-mouth-marketing-strategy-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-10T21:45:15.405Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 169.088,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5156ca3e68ff0f8dc18f6e",
+      "slug": "sms-marketing-vs-email-marketing-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-11T01:15:13.219Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 127.36,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fcbe4e00c7b052a5066",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T23:00:57.812Z",
+      "exposure": 80,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 6.45,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 32.63,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7bb1373327f219a15461d1",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:01:18.363Z",
+      "exposure": 103,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 9.68,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 33.87,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a8442e9993cb8831fd7f98d",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T20:01:57.910Z",
+      "exposure": 104,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 26.32,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 34.82,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a700d04aacd241cfdb50f13",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-03T21:46:01.796Z",
+      "exposure": 104,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 12.9,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 35.11,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a855be903f8f5645a10f460",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T08:01:43.357Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 31.58,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 36.84,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5156c9c4b9e094adf67028",
+      "slug": "how-to-collect-customer-contact-info-at-point-of-sale",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-10T23:30:20.518Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 111.616,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 6,
+          "pexels": 1
+        }
+      }
+    },
+    {
+      "postId": "6a5563a85d838243519369ef",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T00:00:27.042Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a722936343e45dde78bba9b",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T23:30:16.665Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fbaff2087abb8338f35",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T21:30:15.685Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb13567279382900651a9",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:00:30.072Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1367d4033501dc20744",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T04:00:27.739Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7378e38c09c27e1f3cfe",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T08:00:19.843Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7379e38c09c27e1f3d2c",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T12:00:45.515Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "postId": "6a88376fdc319146a27a917b",
+      "slug": "electric-vehicle-silver-demand-explained",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T16:03:37.229Z",
+      "exposure": 37,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 0,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.7,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 193.962667,
+        "mediaSources": {
+          "local-photo": 10,
+          "pixabay": 1
+        }
+      }
+    },
+    {
+      "postId": "6a88376ea324248b5e808bc5",
+      "slug": "call-to-action-best-practices-for-small-business-websit",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T12:03:01.308Z",
+      "exposure": 73,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.53,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 28.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 182.122667,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a87feef5d32580681ed14da",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T08:00:31.577Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 57.14,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 52.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a87566d2517aaad2052e1dc",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T04:01:39.571Z",
+      "exposure": 71,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 5.26,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 26.72,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a87566bca8e6cdb17978c56",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T04:00:17.569Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 57.14,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 52.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a8756680fde1e61dd0b3cf0",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T04:00:12.175Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a87566c6fdda4cc4c3fae40",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T00:02:19.240Z",
+      "exposure": 103,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 21.05,
+        "engagement": 89.47,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 54.05,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a875669ca8e6cdb17978c30",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T00:00:24.602Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.71,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 10.71,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a875667ca8e6cdb17978c00",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-21T00:00:19.944Z",
+      "exposure": 14,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 71.43,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 58.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a86e610707a8f38031b4cf3",
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T20:01:59.205Z",
+      "exposure": 111,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 73.68,
+        "engagement": 78.95,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 165.184,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a86e60fe7845fc4200ca890",
+      "slug": "facebook-page-vs-facebook-group-for-business",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T16:02:27.634Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.16,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-feedback-dreams-588.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 149.589333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a86e60dc7a33f3924a6bc60",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T12:01:21.461Z",
+      "exposure": 106,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 39.47,
+        "engagement": 100,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.18,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a86e605544197fde725951b",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T12:00:16.524Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 78.57,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.99,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a86e5fdc7a33f3924a6bbbd",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T12:00:12.847Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 57.14,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 52.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a8604e3bf853b21a6b1d803",
+      "slug": "instagram-for-local-business-complete-guide",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T00:00:56.476Z",
+      "exposure": 113,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 84.21,
+        "engagement": 73.68,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 72.27,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 184.064,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a8604e133b4b05120fa3ddb",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-20T00:00:25.506Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a85948634da1a54a1dde50c",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T20:01:27.097Z",
+      "exposure": 108,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 47.37,
+        "engagement": 84.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.15,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a859484badb8f97368c9dcd",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T20:00:44.729Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 78.57,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.99,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a85948272f1f87674ad81a3",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T20:00:37.165Z",
+      "exposure": 32,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a789db71757b5cd434e67ae",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T19:18:21.272Z",
+      "exposure": 114,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.11,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.12,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a855beb52d75a5c937b0f93",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T16:02:35.310Z",
+      "exposure": 114,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.11,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.12,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a855be8b5799742d14534ef",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T16:01:05.483Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a855be4b5799742d145348d",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T16:01:28.283Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a855bea03f8f5645a10f48a",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T12:02:09.540Z",
+      "exposure": 111,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 73.68,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 53.03,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a855be7b5799742d14534c9",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T12:01:01.627Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 78.57,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.99,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a855be352d75a5c937b0efc",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T12:00:54.290Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a855be903f8f5645a10f460",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T08:01:43.357Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 31.58,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 36.84,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a855be50fa1b17baedd424e",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T08:00:17.316Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.71,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 10.71,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a855be24f1c1259e7ca5efa",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T08:00:21.556Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a84b39a7aefb36015571dda",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T04:02:20.394Z",
+      "exposure": 106,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 39.47,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 39.88,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a84b3917aefb36015571d74",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T04:00:21.260Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 35.71,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 44.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a84b382defc0ee32753408d",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T04:00:47.997Z",
+      "exposure": 15,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 78.57,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.99,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a84b399c889b558fa0cb3c4",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T00:01:13.723Z",
+      "exposure": 110,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 63.16,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 48.99,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a84b38fc889b558fa0cb364",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T00:00:32.912Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.71,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 10.71,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a84b3818be90925015f7996",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-19T00:00:39.413Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 64.29,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 55.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a8442e9993cb8831fd7f98d",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T20:01:57.910Z",
+      "exposure": 104,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 26.32,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 34.82,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a8442e03dd2d5920efd4b17",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T20:00:54.170Z",
+      "exposure": 8,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a8442d7033c29724fcdec71",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T20:00:53.486Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b1b65591f9d7292d8be",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T16:02:47.551Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 55.26,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 45.95,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b1865591f9d7292d86c",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T16:01:29.458Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 35.71,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 44.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b0d65591f9d7292d834",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T16:01:17.355Z",
+      "exposure": 25,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b1a9163f06cd607601a",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T12:01:44.823Z",
+      "exposure": 77,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 15.79,
+        "engagement": 94.74,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 54.05,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a840b1794d462ad0e8a6155",
+      "slug": "online-booking-system-for-small-business",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T12:00:46.866Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.71,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 10.71,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 192.384,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b0c8d56bb683a4d5f92",
+      "slug": "online-booking-system-for-small-business",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T12:00:28.003Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 192.384,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a840b198d56bb683a4d603a",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T08:01:57.281Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 55.26,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 45.95,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a840b1694d462ad0e8a612c",
+      "slug": "website-speed-and-local-business-ranking",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T08:00:27.046Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 57.14,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 52.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-vastness-184.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 208.085333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a840b0b6e4632dedcf07f82",
+      "slug": "website-speed-and-local-business-ranking",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T08:00:10.013Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 25,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 25,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-vastness-184.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 208.085333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a839a77521d595791549912",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T00:02:17.281Z",
+      "exposure": 111,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 73.68,
+        "engagement": 34.21,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 53.03,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a839a766fc89d4364fe5828",
+      "slug": "dollar-cost-averaging-silver-strategy-explained",
+      "platform": "twitter",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T00:00:27.329Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 35.71,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 44.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relaxation-05-749.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 180.928,
+        "mediaSources": {
+          "local-photo": 9,
+          "pixabay": 1,
+          "pexels": 1
+        }
+      }
+    },
+    {
+      "postId": "6a839a7533ec6735e90ea3c4",
+      "slug": "dollar-cost-averaging-silver-strategy-explained",
+      "platform": "youtube",
+      "ageBucket": "d7",
+      "sentAt": "2026-08-18T00:00:17.505Z",
+      "exposure": 18,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 85.71,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.73,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relaxation-05-749.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 180.928,
+        "mediaSources": {
+          "local-photo": 9,
+          "pixabay": 1,
+          "pexels": 1
+        }
+      }
+    },
+    {
+      "postId": "6a7dab772414d5384487fc30",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T20:02:45.309Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 20.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 38.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7dab7693fa75b0ba9abc87",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T20:00:49.404Z",
+      "exposure": 9,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.21,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 61.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a7d737ee38c09c27e1f3d86",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T16:02:25.275Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 20.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 38.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7d737b23bcdbeb4c0db514",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T16:01:10.002Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7377e38c09c27e1f3cd8",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T16:01:04.892Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 33.33,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 28.32,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a7d737dedf287b5060b3518",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T12:01:50.950Z",
+      "exposure": 111,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 70.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 57.45,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7d7379e38c09c27e1f3d2c",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T12:00:45.515Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7376edf287b5060b3491",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T12:00:50.891Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d737c6489f1c269ec7cc7",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T08:01:38.901Z",
+      "exposure": 106,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 30.65,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 41.94,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7d7378e38c09c27e1f3cfe",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T08:00:19.843Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7d7375e38c09c27e1f3cae",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-13T08:01:09.868Z",
+      "exposure": 264,
+      "weightedEngagement": 2,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 97.62,
+        "engagement": 23.53,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 58.13,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7c21fc73b5399abc77493f",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T08:01:15.710Z",
+      "exposure": 111,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 70.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 57.45,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7c21a91b970aa73b3ca92f",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T08:00:25.252Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7c21a2202c8e34aa5f604a",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T08:00:09.564Z",
+      "exposure": 131,
+      "weightedEngagement": 2,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 88.1,
+        "engagement": 38.24,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.13,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb13867279382900651fc",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T04:00:58.452Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 20.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 38.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7bb1367d4033501dc20744",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T04:00:27.739Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1336727938290065183",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T04:00:23.518Z",
+      "exposure": 150,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 90.48,
+        "engagement": 45.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.87,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1373327f219a15461d1",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:01:18.363Z",
+      "exposure": 103,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 9.68,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 33.87,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7bb13567279382900651a9",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:00:30.072Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7bb1323327f219a1546171",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-12T00:00:37.759Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 29.76,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 26.94,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7b089e00f3898274758ae1",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-11T12:00:09.558Z",
+      "exposure": 40,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 69.05,
+        "engagement": 54.41,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 59.02,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a7a5f8098be23f3c73eba04",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-11T04:00:29.105Z",
+      "exposure": 48,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 71.43,
+        "engagement": 50,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 58.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a7a5f7f030db7cdaf45c1c0",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-11T00:00:25.572Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a79b6e5ebbe0f5c8d528e61",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-10T12:01:18.298Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a789db8d192ae76f3d030bc",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T20:01:19.140Z",
+      "exposure": 70,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 31.39,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a776763529955fa902c1cc8",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T04:01:26.464Z",
+      "exposure": 107,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 38.71,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 45.04,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a776757d86dda1f3668295f",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T04:00:35.838Z",
+      "exposure": 5,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 94.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a776713a69527d8fa5dccd6",
+      "slug": "google-business-profile-setup-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T04:00:41.577Z",
+      "exposure": 498,
+      "weightedEngagement": 5,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 32.35,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.44,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 196.181333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a776761a69527d8fa5dd3a6",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T00:01:28.721Z",
+      "exposure": 48,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 0,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 30.15,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a776752a69527d8fa5dd1cb",
+      "slug": "online-booking-system-for-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T00:00:34.348Z",
+      "exposure": 5,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 94.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 70.24,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 192.384,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a77671213d01138cecdaa44",
+      "slug": "online-booking-system-for-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-09T00:00:14.635Z",
+      "exposure": 62,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 78.57,
+        "engagement": 41.18,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 57.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 192.384,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a77678dd86dda1f3668324d",
+      "slug": "website-speed-and-local-business-ranking",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-08T20:00:33.196Z",
+      "exposure": 8,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 83.72,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 60.41,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-vastness-184.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 208.085333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a77676013d01138cecdb002",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-08T20:01:39.351Z",
+      "exposure": 107,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 38.71,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 45.04,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7767519517ea3cc686d2a3",
+      "slug": "website-speed-and-local-business-ranking",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-08T20:00:39.766Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-vastness-184.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 208.085333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a776711a69527d8fa5dcc82",
+      "slug": "website-speed-and-local-business-ranking",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-08T20:00:29.283Z",
+      "exposure": 105,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 83.33,
+        "engagement": 26.47,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 53.77,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-vastness-184.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 208.085333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a75d95a018a9e80fc7c4381",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T16:00:55.939Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.49,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 29.55,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a75c2bf018a9e80fc7abad5",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T12:01:23.220Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 53.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 50.62,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74e164a1b9fec613357500",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T04:01:58.607Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74a9349aa78dffa28c38bd",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-07T00:01:43.201Z",
+      "exposure": 108,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 45.16,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 47.52,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74a933a1b9fec613323018",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T20:02:31.731Z",
+      "exposure": 107,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 38.71,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 45.04,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74a92f9aa78dffa28c3878",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T20:00:23.963Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 75.58,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 57.28,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a74a9315cec20265cdaa868",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T16:02:33.239Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 53.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 50.62,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a74a92e9aa78dffa28c3848",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T16:00:20.862Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 0,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 0,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a73c859626c06990eac5b7e",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T04:01:01.591Z",
+      "exposure": 110,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 62.9,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 54.34,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a73c8572770c3bfc7581add",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T04:00:20.145Z",
+      "exposure": 9,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.21,
+        "engagement": 97.62,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 82.35,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a73c854626c06990eac5b3b",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T04:00:22.669Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a73c8583360c8973cfecf3a",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T00:01:19.602Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 53.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 50.62,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a73c8563360c8973cfecf15",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T00:00:28.960Z",
+      "exposure": 12,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 94.19,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 64.43,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a73c853780884c81dd09445",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-06T00:00:17.455Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a739fcbe4e00c7b052a5066",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T23:00:57.812Z",
+      "exposure": 80,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 6.45,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 32.63,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a739fbc4aea999b6086c136",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T23:00:17.329Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fb20f9eb13c5e2c4634",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T23:00:45.074Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a739fcaff2087abb8338fe4",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T22:16:04.152Z",
+      "exposure": 106,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 30.65,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 41.94,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a739fbb4aea999b6086c105",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T22:15:30.002Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fb1e4e00c7b052a4ce1",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T22:15:15.724Z",
+      "exposure": 8,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 42.86,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 31.98,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fc9e4e00c7b052a5026",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T21:30:56.971Z",
+      "exposure": 114,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 80.65,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 61.17,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a739fbaff2087abb8338f35",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T21:30:15.685Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a739fb00f9eb13c5e2c45f2",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-05T21:30:18.562Z",
+      "exposure": 25,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 64.29,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 40.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a722936343e45dde78bba9b",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T23:30:16.665Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7229291b838d50df0401c2",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T23:30:23.066Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a715f6920d3689200b1c8d5",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T23:33:23.992Z",
+      "exposure": 128,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 68.61,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a7229357b1a5f76fe647859",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T21:45:16.117Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a7229275c12454910e9f9e1",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T21:45:04.262Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a715f6820d3689200b1c8b0",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T21:46:01.648Z",
+      "exposure": 105,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 20.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 38.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a722933343e45dde78bba5d",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T20:00:21.496Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 75.58,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 57.28,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a722926bc97c17e7be55a7d",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T20:00:18.064Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a715f672e9d172962a8a032",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-04T20:01:55.757Z",
+      "exposure": 115,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 87.1,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 63.65,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a700d055dc5613cefe80912",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-03T23:31:20.126Z",
+      "exposure": 120,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 96.77,
+        "engagement": 100,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 87.22,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a700d04aacd241cfdb50f13",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-03T21:46:01.796Z",
+      "exposure": 104,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 12.9,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 35.11,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a700d0398d2f31dff16596c",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-03T20:02:20.195Z",
+      "exposure": 109,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 53.23,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 50.62,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a6e673af93d764d9391fed9",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-02T20:01:26.300Z",
+      "exposure": 111,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 70.97,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 57.45,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a6e6739b738722ef881a498",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-02T01:17:56.880Z",
+      "exposure": 113,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 77.42,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 59.93,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a6e67382bbc9e0587399699",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-08-01T23:31:07.697Z",
+      "exposure": 110,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 62.9,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 54.34,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a674e6c53a5caee8245d55b",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:45:27.356Z",
+      "exposure": 12,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 94.19,
+        "engagement": 90.48,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 82.29,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e6b78b372bff4642e39",
+      "slug": "chatgpt-for-small-business-owners-beginners-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:45:05.870Z",
+      "exposure": 14,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.52,
+        "engagement": 70.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 61.58,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 198.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e2b53a5caee8245d27d",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:15:23.866Z",
+      "exposure": 13,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 97.67,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 65.77,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e18224d9daaf5f685d3",
+      "slug": "silver-recycling-and-scrap-recovery-market",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-28T01:15:03.944Z",
+      "exposure": 156,
+      "weightedEngagement": 4,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 92.86,
+        "engagement": 58.82,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 69.88,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 210.197333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e2a78b372bff4642a9f",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T23:30:21.247Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e17d2a03dd5e30bad04",
+      "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T23:30:33.399Z",
+      "exposure": 11,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 51.19,
+        "engagement": 80.88,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.33,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 207.296,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a67bd40ae149d82602f5c7c",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T21:45:15.243Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 75.58,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 57.28,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a67bd3ce2cb6435dcc4eb94",
+      "slug": "how-to-start-using-ai-in-your-small-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T21:45:05.131Z",
+      "exposure": 4,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 36.9,
+        "engagement": 95.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 219.626667,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e29d2a03dd5e30bae1c",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T21:45:16.950Z",
+      "exposure": 6,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 75.58,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 57.28,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e1678b372bff46429c8",
+      "slug": "ai-tools-for-small-business-marketing-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T21:45:08.622Z",
+      "exposure": 13,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 57.14,
+        "engagement": 73.53,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 61.8,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 216.448,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e2853a5caee8245d1e2",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T20:00:42.265Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a674e15a361925e189df713",
+      "slug": "largest-silver-producing-countries-in-the-world",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-27T20:00:59.181Z",
+      "exposure": 2,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 29.76,
+        "engagement": 100,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 61.45,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 225.493333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5563ab040f448f6a90c79c",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T22:15:17.934Z",
+      "exposure": 7,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 81.4,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 59.51,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a55639d5d8382435193691c",
+      "slug": "how-online-booking-reduces-no-shows",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T21:45:07.489Z",
+      "exposure": 12,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 54.76,
+        "engagement": 76.47,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 206.250667,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a5563aa5d83824351936a13",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T20:30:22.954Z",
+      "exposure": 10,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 90.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 63.09,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a55639b29834f7ded998bca",
+      "slug": "best-appointment-booking-tools-for-small-business-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T20:00:54.544Z",
+      "exposure": 9,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 45.24,
+        "engagement": 88.24,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.88,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 214.144,
+        "mediaSources": {
+          "pexels": 10
+        }
+      }
+    },
+    {
+      "postId": "6a5563a929834f7ded998d18",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T01:45:12.408Z",
+      "exposure": 2,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 100,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 53.75,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a55639aa208f5b1ac0b78c2",
+      "slug": "why-silver-was-used-as-currency-for-5000-years",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T01:15:05.749Z",
+      "exposure": 57,
+      "weightedEngagement": 2,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 76.19,
+        "engagement": 64.71,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.73,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 206.293333,
+        "mediaSources": {
+          "pexels-video": 1,
+          "pexels-photo": 9,
+          "local-photo": 1
+        }
+      }
+    },
+    {
+      "postId": "6a5563a85d838243519369ef",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-14T00:00:27.042Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a5563990a91bd784c7b79a1",
+      "slug": "silver-standard-vs-gold-standard-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-13T23:30:11.071Z",
+      "exposure": 30,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 66.67,
+        "engagement": 61.76,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 60.93,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 195.626667,
+        "mediaSources": {
+          "pexels": 11
+        }
+      }
+    },
+    {
+      "postId": "6a5156cbc571e283da54531a",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-11T20:00:38.870Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a5156ca3e68ff0f8dc18f6e",
+      "slug": "sms-marketing-vs-email-marketing-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-11T01:15:13.219Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 127.36,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a5156c9c4b9e094adf67028",
+      "slug": "how-to-collect-customer-contact-info-at-point-of-sale",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-10T23:30:20.518Z",
+      "exposure": 3,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 24.42,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 37.6,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-meditation-441.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 111.616,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 6,
+          "pexels": 1
+        }
+      }
+    },
+    {
+      "postId": "6a5156c8c4586a8dc9993e70",
+      "slug": "word-of-mouth-marketing-strategy-small-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-10T21:45:15.405Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 169.088,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a51568ec4b9e094adf66e1f",
+      "slug": "selling-silver-to-a-dealer-vs-private-sale",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-10T21:45:05.883Z",
+      "exposure": 89,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 80.95,
+        "engagement": 35.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 56.25,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 12,
+        "renderedDuration": 182.485333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 9
+        }
+      }
+    },
+    {
+      "postId": "6a4d10dc9f2a103017dc3039",
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-08T01:15:15.018Z",
+      "exposure": 4,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.7,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 43.86,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relax-beat-292.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 181.12,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 7
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d765ef8ed617702eb9",
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-08T01:15:04.747Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 22.62,
+        "engagement": 10.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 24.2,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-relax-beat-292.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 181.12,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 7
+        }
+      }
+    },
+    {
+      "postId": "6a4d10da7b9202eb2faae0ed",
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T23:30:26.321Z",
+      "exposure": 2,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 10.47,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 32.23,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 202.581333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 8
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d5296b0e8dd835f1a7",
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T23:30:21.117Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 202.581333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay-photo": 8
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d965ef8ed617702edd",
+      "slug": "silver-market-outlook-2026-what-analysts-say",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T21:45:19.986Z",
+      "exposure": 46,
+      "weightedEngagement": 0,
+      "weightedConversion": 1,
+      "dimensions": {
+        "retention": null,
+        "distribution": 100,
+        "engagement": 44.05,
+        "conversion": 100,
+        "productionEfficiency": null
+      },
+      "score": 78.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "ambient-05.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 183.125333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 7
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d87b9202eb2faae0b1",
+      "slug": "electric-vehicle-silver-demand-explained",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T20:00:37.798Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 193.962667,
+        "mediaSources": {
+          "local-photo": 10,
+          "pixabay": 1
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d2296b0e8dd835f141",
+      "slug": "electric-vehicle-silver-demand-explained",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T20:00:22.579Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-driving-ambition-32.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 193.962667,
+        "mediaSources": {
+          "local-photo": 10,
+          "pixabay": 1
+        }
+      }
+    },
+    {
+      "postId": "6a4d10d3296b0e8dd835f16a",
+      "slug": "silver-market-outlook-2026-what-analysts-say",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-07T19:20:33.529Z",
+      "exposure": 0,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 8.33,
+        "engagement": null,
+        "conversion": null,
+        "productionEfficiency": null
+      },
+      "score": 8.33,
+      "evidenceCoverage": 0.25,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "ambient-05.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 183.125333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 7
+        }
+      }
+    },
+    {
+      "postId": "6a67c5d7d1ef20abf52260ab",
+      "slug": null,
+      "platform": "instagram",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-04T15:33:51.000Z",
+      "exposure": 118,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 93.55,
+        "engagement": 48.39,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 66.13,
+      "evidenceCoverage": 0.65,
+      "protocolDna": null
+    },
+    {
+      "postId": "6a46dd3d8700ad467b080f39",
+      "slug": "mobile-website-speed-why-it-matters-for-local-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-02T23:30:09.526Z",
+      "exposure": 10,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 47.62,
+        "engagement": 85.29,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.66,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 168.149333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a443bd60729e5befee2c024",
+      "slug": "call-to-action-best-practices-for-small-business-websit",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-02T21:35:56.549Z",
+      "exposure": 5,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 40.48,
+        "engagement": 91.18,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.18,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 182.122667,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a4437c62bdd6701f85cd657",
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-02T21:35:51.260Z",
+      "exposure": 11,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 51.19,
+        "engagement": 80.88,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.33,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 165.184,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a443bc70729e5befee2bfbc",
+      "slug": "facebook-page-vs-facebook-group-for-business",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-07-01T01:15:06.668Z",
+      "exposure": 17,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 61.9,
+        "engagement": 67.65,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 61.37,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-feedback-dreams-588.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 149.589333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a44360306c2181b7aa5d7ad",
+      "slug": "instagram-for-local-business-complete-guide",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-30T23:30:18.954Z",
+      "exposure": 4,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 36.9,
+        "engagement": 95.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 62.5,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 184.064,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a427f2d5aa6ddf0b8f3a3c5",
+      "slug": "call-to-action-best-practices-for-small-business-websit",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-29T18:41:17.384Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-valley-sunset-127.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 182.122667,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a427ee2c5a6660adb630be8",
+      "slug": "landing-page-vs-website-which-do-you-need",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-29T17:26:11.020Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "stat",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-forest-treasure-138.mp3",
+        "segmentCount": 10,
+        "renderedDuration": 165.184,
+        "mediaSources": {
+          "local-video": 1,
+          "local-photo": 9
+        }
+      }
+    },
+    {
+      "postId": "6a427ecd5aa6ddf0b8f3a0bc",
+      "slug": "facebook-page-vs-facebook-group-for-business",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-29T16:20:12.582Z",
+      "exposure": 5,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 59.3,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 51.01,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-feedback-dreams-588.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 149.589333,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a427e5c1ed56c173d8361ec",
+      "slug": "instagram-for-local-business-complete-guide",
+      "platform": "twitter",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-29T15:36:15.633Z",
+      "exposure": 1,
+      "weightedEngagement": 0,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 3.49,
+        "engagement": 44.05,
+        "conversion": 48.81,
+        "productionEfficiency": null
+      },
+      "score": 29.55,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": "chatterbox",
+        "captionMode": "proportional",
+        "musicTrack": "mixkit-serene-view-443.mp3",
+        "segmentCount": 11,
+        "renderedDuration": 184.064,
+        "mediaSources": {
+          "local-photo": 3,
+          "pixabay": 8
+        }
+      }
+    },
+    {
+      "postId": "6a3e70a662b39e0fe62f7310",
+      "slug": "silver-vs-gold-which-is-better-investment-in-2026",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-27T19:42:05.235Z",
+      "exposure": 208,
+      "weightedEngagement": 2,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 95.24,
+        "engagement": 29.41,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 59.48,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": null,
+        "captionMode": null,
+        "musicTrack": "ambient-06.mp3",
+        "segmentCount": 5,
+        "renderedDuration": null,
+        "mediaSources": null
+      }
+    },
+    {
+      "postId": "6a3e70991692cd66c382b910",
+      "slug": "physical-silver-vs-silver-etf-pros-and-cons",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-27T01:28:03.814Z",
+      "exposure": 50,
+      "weightedEngagement": 1,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 73.81,
+        "engagement": 45.59,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 57.46,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": null,
+        "captionMode": null,
+        "musicTrack": "ambient-06.mp3",
+        "segmentCount": 3,
+        "renderedDuration": null,
+        "mediaSources": null
+      }
+    },
+    {
+      "postId": "6a3e700f7805b762925702fe",
+      "slug": "small-business-website-mistakes-to-avoid",
+      "platform": "youtube",
+      "ageBucket": "mature",
+      "sentAt": "2026-06-27T00:12:05.174Z",
+      "exposure": 120,
+      "weightedEngagement": 3,
+      "weightedConversion": 0,
+      "dimensions": {
+        "retention": null,
+        "distribution": 85.71,
+        "engagement": 54.41,
+        "conversion": 50,
+        "productionEfficiency": null
+      },
+      "score": 65.43,
+      "evidenceCoverage": 0.65,
+      "protocolDna": {
+        "hookType": "statement",
+        "voice": null,
+        "captionMode": null,
+        "musicTrack": "ambient-06.mp3",
+        "segmentCount": 5,
+        "renderedDuration": null,
+        "mediaSources": null
+      }
+    }
+  ]
+}
