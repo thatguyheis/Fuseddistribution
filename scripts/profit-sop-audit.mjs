@@ -39,6 +39,12 @@ function readJsonIfExists(path, fallback = null) {
   return existsSync(path) ? readJson(path) : fallback;
 }
 
+export function isUsableBufferSnapshot(snapshot, date) {
+  return snapshot?.date === date
+    && snapshot.source === 'buffer_api'
+    && Array.isArray(snapshot.posts);
+}
+
 function readJsonLines(path) {
   if (!existsSync(path)) return [];
   return readFileSync(path, 'utf8')
@@ -74,7 +80,10 @@ function normalizeEvent(raw) {
     evidence: raw.evidence,
     source: raw.source || 'manual',
     attributable: raw.attributable !== false,
-    notes: raw.notes || ''
+    notes: raw.notes || '',
+    supersededAt: raw.supersededAt || null,
+    supersededBy: raw.supersededBy || null,
+    supersessionReason: raw.supersessionReason || null,
   };
 }
 
@@ -85,6 +94,7 @@ function daysBetween(later, earlier) {
 export function repeatMultiplier(event, history, config) {
   if (event.kind !== 'penalty') return 1;
   const repeats = history.filter((candidate) => candidate.kind === 'penalty'
+    && !candidate.supersededAt
     && candidate.fingerprint === event.fingerprint
     && candidate.date < event.date
     && daysBetween(event.date, candidate.date) <= config.repeatPenalty.lookbackDays).length;
@@ -98,6 +108,7 @@ export function scoreEvent(event, history, config) {
   const weights = event.kind === 'reward' ? config.rewardWeights : config.penaltyWeights;
   const weight = weights[event.type];
   if (!Number.isFinite(weight)) fail(`Unknown ${event.kind} type: ${event.type}`);
+  if (event.supersededAt) return { points: 0, multiplier: 1, weight };
   if (event.kind === 'reward' && !event.attributable) return { points: 0, multiplier: 1, weight };
   const multiplier = repeatMultiplier(event, history, config);
   const magnitude = weight * event.value * multiplier;
@@ -322,16 +333,26 @@ function readOperationalState(date) {
   });
   const releaseQaBySlug = Object.fromEntries(blogPublication.registeredQueueSlugs
     .map((slug) => [slug, readJsonIfExists(join(reelOutputRoot, slug, 'release-qa.json'))]));
+  const availableMetrics = readJsonIfExists(join(bufferMetricsRoot, `${date}.json`));
   const unavailableMetrics = readJsonIfExists(join(bufferMetricsRoot, `${date}.unavailable.json`));
+  const usableMetrics = isUsableBufferSnapshot(availableMetrics, date);
   return {
     blogPublication,
     reelRelease: evaluateReelReleaseState({
       registeredSlugs: blogPublication.registeredQueueSlugs,
       releaseQaBySlug,
     }),
-    bufferMetrics: unavailableMetrics?.status === 'unavailable'
-      ? { status: 'unavailable', checkpoint: `ops/profit-system/buffer-metrics/${date}.unavailable.json` }
-      : { status: existsSync(join(bufferMetricsRoot, `${date}.json`)) ? 'available' : 'missing' },
+    bufferMetrics: usableMetrics
+      ? {
+        status: unavailableMetrics?.status === 'unavailable' ? 'available_with_refresh_failure' : 'available',
+        checkpoint: `ops/profit-system/buffer-metrics/${date}.json`,
+        refreshFailureCheckpoint: unavailableMetrics?.status === 'unavailable'
+          ? `ops/profit-system/buffer-metrics/${date}.unavailable.json`
+          : null,
+      }
+      : unavailableMetrics?.status === 'unavailable'
+        ? { status: 'unavailable', checkpoint: `ops/profit-system/buffer-metrics/${date}.unavailable.json` }
+        : { status: 'missing' },
   };
 }
 
@@ -346,10 +367,11 @@ export function buildAudit(date, events, config, snapshots = [], operationalStat
     && daysBetween(date, event.date) <= config.comparisonWindowDays));
   const baselineScores = [...grouped.values()].map((row) => row.score);
   const baselineMedian = median(baselineScores);
-  const repeatedFailures = todayEvents
+  const activeTodayEvents = todayEvents.filter((event) => !event.supersededAt);
+  const repeatedFailures = activeTodayEvents
     .filter((event) => event.kind === 'penalty' && event.multiplier > 1)
     .map((event) => ({ fingerprint: event.fingerprint, multiplier: event.multiplier, type: event.type }));
-  const eventHardStops = todayEvents.filter((event) => ['critical_rule_violation', 'false_success_claim', 'security_or_privacy_violation'].includes(event.type));
+  const eventHardStops = activeTodayEvents.filter((event) => ['critical_rule_violation', 'false_success_claim', 'security_or_privacy_violation'].includes(event.type));
   const operationalHardStops = operationalState.blogPublication?.hardStops || [];
   const hardStops = [
     ...eventHardStops.map((event) => ({ type: event.type, fingerprint: event.fingerprint, evidence: event.evidence })),
@@ -357,8 +379,9 @@ export function buildAudit(date, events, config, snapshots = [], operationalStat
   ];
   const improvementCandidates = [];
   const proposedFingerprints = new Set();
-  for (const event of todayEvents.filter((candidate) => candidate.kind === 'penalty')) {
+  for (const event of activeTodayEvents.filter((candidate) => candidate.kind === 'penalty')) {
     const occurrences = history.filter((candidate) => candidate.kind === 'penalty'
+      && !candidate.supersededAt
       && candidate.fingerprint === event.fingerprint
       && candidate.date <= date
       && daysBetween(date, candidate.date) <= config.repeatPenalty.lookbackDays).length;
@@ -393,8 +416,8 @@ export function buildAudit(date, events, config, snapshots = [], operationalStat
       deltaVsMedian,
       direction: !comparable ? 'baseline_building' : deltaVsMedian > 0 ? 'improved' : deltaVsMedian < 0 ? 'regressed' : 'flat',
     },
-    rewards: todayEvents.filter((event) => event.kind === 'reward'),
-    penalties: todayEvents.filter((event) => event.kind === 'penalty'),
+    rewards: activeTodayEvents.filter((event) => event.kind === 'reward'),
+    penalties: activeTodayEvents.filter((event) => event.kind === 'penalty'),
     repeatedFailures,
     hardStops,
     operationalState,

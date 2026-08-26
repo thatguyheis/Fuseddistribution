@@ -4,6 +4,7 @@
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import { addPanelToHtml } from './lib/social-video-panel.mjs';
 
 const repoRoot = resolve(new URL('../../..', import.meta.url).pathname);
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -99,22 +100,6 @@ function panelHtml(links, primaryVideo, title, slug, heroFilename) {
     : primaryVideo?.url ? `<div class="social-video-player"><video controls playsinline preload="metadata" poster="/blog/${esc(slug)}/${esc(heroFilename)}"><source src="${esc(sameOriginVideoUrl(primaryVideo.url))}" type="video/mp4" />Your browser does not support embedded video. Use the links below to watch.</video></div>` : '';
   const style = '<style>.social-video{margin:42px 0 0;padding:24px;border:1px solid rgba(88,214,255,.2);border-radius:20px;background:linear-gradient(145deg,rgba(88,214,255,.11),rgba(7,20,28,.9) 44%)}.social-video h2{margin:0 0 8px;color:#ecf8fb;font-size:1.5rem;text-transform:uppercase}.social-video>p{margin:0 0 18px}.social-video-player{position:relative;aspect-ratio:9/16;width:min(100%,360px);margin:0 auto 20px;overflow:hidden;border-radius:14px;background:#020608;box-shadow:0 16px 40px rgba(0,0,0,.36)}.social-video-player iframe,.social-video-player video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}.social-video-links{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}.social-video-links a{display:inline-flex;align-items:center;min-height:42px;padding:10px 14px;border:1px solid rgba(88,214,255,.25);border-radius:12px;color:#58d6ff;font-weight:800;text-decoration:none}</style>';
   return `<!-- SOCIAL_VIDEO_START -->\n${style}<aside class="social-video" aria-label="Watch this reel on social media"><h2>Watch the reel</h2><p>${intro}</p>${player}${buttons ? `<ul class="social-video-links">${buttons}</ul>` : ''}</aside>\n<!-- SOCIAL_VIDEO_END -->`;
-}
-
-function addPanelToHtml(html, panel) {
-  const marker = /<!-- SOCIAL_VIDEO_START -->[\s\S]*?<!-- SOCIAL_VIDEO_END -->/;
-  const withoutExistingPanel = html.replace(marker, '');
-  const articleBodyStart = withoutExistingPanel.indexOf('<div class="article-body">');
-
-  if (articleBodyStart !== -1) {
-    const firstParagraphEnd = withoutExistingPanel.indexOf('</p>', articleBodyStart);
-    if (firstParagraphEnd !== -1) {
-      const insertAt = firstParagraphEnd + '</p>'.length;
-      return `${withoutExistingPanel.slice(0, insertAt)}\n            ${panel}${withoutExistingPanel.slice(insertAt)}`;
-    }
-  }
-
-  return withoutExistingPanel.replace(/\n\s*<div class="article-cta">/, `\n          ${panel}\n\n          <div class="article-cta">`);
 }
 
 const publishedLinks = collectPublishedLinks();

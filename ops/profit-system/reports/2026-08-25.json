@@ -1,7 +1,7 @@
 {
   "version": 1,
   "date": "2026-08-25",
-  "generatedAt": "2026-08-25T19:06:16.567Z",
+  "generatedAt": "2026-08-26T04:45:08.709Z",
   "score": -12,
   "rawScore": -12,
   "eventScore": 0,
@@ -1597,7 +1597,9 @@
       "completionStatus": "blocked"
     },
     "bufferMetrics": {
-      "status": "available"
+      "status": "available_with_refresh_failure",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-08-25.json",
+      "refreshFailureCheckpoint": "ops/profit-system/buffer-metrics/2026-08-25.unavailable.json"
     }
   },
   "improvementCandidates": [],

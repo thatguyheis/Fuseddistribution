@@ -320,6 +320,33 @@
       "rollbackCondition": "Retire or narrow after three comparable audit runs if the checkpoint records a false quality block, duplicates an event, omits an archived blocked queue slug, or causes any unauthorized content action."
     },
     {
+      "id": "buffer-metrics-available-snapshot-precedence",
+      "state": "experiment",
+      "createdAt": "2026-08-25",
+      "evidenceFingerprints": [
+        "buffer-metrics-api-fetch-unavailable"
+      ],
+      "sampleCount": 1,
+      "expectedProfitMechanism": "Retaining a valid same-date Buffer snapshot after a later transient refresh failure preserves matched performance evidence, prevents false missed-checkpoint penalties, and avoids unnecessary recovery work.",
+      "baseline": "On 2026-08-25, a valid 174-post Buffer snapshot existed, but a later fetch failure caused the audit to classify the day as unavailable and append a repeat missed-checkpoint penalty.",
+      "comparisonWindow": "Three comparable operating dates with both a valid same-date Buffer API snapshot and a later unavailable refresh checkpoint, evaluated against correct retained evidence and no false ledger penalty.",
+      "leadingMetric": "Audit runs classify valid same-date snapshots as available_with_refresh_failure, retain matched D+1/D+3/D+7 comparisons, and append zero false buffer-metrics-api-fetch-unavailable penalties.",
+      "laggingMetric": "More reliable evidence-based distribution decisions, then qualified visits, leads, conversions, revenue, and gross profit when authoritative attribution is available.",
+      "guardrails": [
+        "Do not substitute a prior-date snapshot, invent missing Buffer values, or suppress a true same-date collection failure.",
+        "Keep failed refresh checkpoints visible without exposing Buffer credentials or raw request headers.",
+        "Do not create, edit, approve, or publish Buffer posts from snapshot or audit commands."
+      ],
+      "control": "During profit:audit, accept only a structurally valid same-date Buffer API snapshot with a posts array as available evidence. If a later unavailable checkpoint also exists, report available_with_refresh_failure and retain the failure checkpoint for observation; append the missed-checkpoint event only when no usable same-date snapshot exists.",
+      "filesAffected": [
+        "scripts/profit-sop-audit.mjs",
+        "tests/profit-sop-audit.test.mjs"
+      ],
+      "verification": "Focused profit audit and Buffer snapshot tests passed on 2026-08-25. The corrected audit retains the 2026-08-25 snapshot and excludes the superseded false missed-checkpoint event from score and repeat counts.",
+      "reviewAfter": "2026-09-08",
+      "rollbackCondition": "Retire or revise after three comparable dates if the precedence check accepts a malformed or wrong-date snapshot, masks a true unavailable collection, creates a duplicate ledger event, or changes Buffer publishing behavior."
+    },
+    {
       "id": "buffer-metrics-unavailable-checkpoint",
       "state": "active",
       "createdAt": "2026-08-20",

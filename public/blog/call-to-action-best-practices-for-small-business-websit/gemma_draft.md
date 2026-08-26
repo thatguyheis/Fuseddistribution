@@ -1,12 +1,26 @@
-## Call to Action Best Practices for Small Business Websites
+<!-- gemma_draft: 2026-08-25 | keyword: call to action best practices for small business websites | brand: tech -->
+# GEMMA DRAFT — call to action best practices for small business websites
+> Generated: 2026-08-25 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
+> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
 
-*   **Clear and Compelling CTAs**
-*   **Strategic Placement of Calls to Action**
-*   **Action-Oriented Language**
-*   **Visual Hierarchy for CTAs**
-*   **Variety in Call to Action Types**
-*   **Optimizing for Mobile Conversion**
-*   **Creating Urgency and Scarcity**
-*   **A/B Testing Your CTAs**
-*   **Tracking and Analyzing CTA Performance**
-*   **Integrating CTAs with Website Goals**
+---
+
+
+
+## Overview
+
+
+
+## What to Know
+
+
+
+## How to Get Started
+
+
+
+## Common Mistakes
+
+
+
+

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { buildAudit, buildLeadingIndicatorAudit, buildOperationalPenaltyEvents, evaluateBlogPublicationState, evaluateReelReleaseState, formatRevenueProfitEvidence, repeatMultiplier, scoreEvent } from '../scripts/profit-sop-audit.mjs';
+import { buildAudit, buildLeadingIndicatorAudit, buildOperationalPenaltyEvents, evaluateBlogPublicationState, evaluateReelReleaseState, formatRevenueProfitEvidence, isUsableBufferSnapshot, repeatMultiplier, scoreEvent } from '../scripts/profit-sop-audit.mjs';
 import { normalizeOperatingDate, operatingDate } from '../scripts/lib/operating-date.mjs';
 
 const config = JSON.parse(readFileSync(new URL('../ops/profit-system/config.json', import.meta.url), 'utf8'));
@@ -37,6 +37,16 @@ test('repeated failures receive escalating punishment', () => {
   ];
   assert.equal(repeatMultiplier(current, history, config), 2);
   assert.equal(scoreEvent(current, history, config).points, -20);
+});
+
+test('superseded operational events remain in the ledger but no longer affect score or repeats', () => {
+  const superseded = event({
+    fingerprint: 'buffer-metrics-api-fetch-unavailable',
+    supersededAt: '2026-08-25T20:00:00.000Z',
+    supersededBy: 'ops/profit-system/buffer-metrics/2026-08-25.json',
+  });
+  assert.equal(scoreEvent(superseded, [superseded], config).points, 0);
+  assert.equal(repeatMultiplier(event({ fingerprint: superseded.fingerprint }), [superseded], config), 1);
 });
 
 test('unattributed vanity outcomes receive no reward', () => {
@@ -263,6 +273,23 @@ test('unavailable Buffer metrics checkpoint is recorded once as a stable ledger 
     operationalState,
     existingEvents: created,
   }), []);
+});
+
+test('a usable same-date Buffer snapshot remains available after a later refresh failure', () => {
+  assert.equal(isUsableBufferSnapshot({
+    date: '2026-08-25',
+    source: 'buffer_api',
+    posts: [],
+  }, '2026-08-25'), true);
+  assert.equal(isUsableBufferSnapshot({
+    date: '2026-08-24',
+    source: 'buffer_api',
+    posts: [],
+  }, '2026-08-25'), false);
+  assert.equal(isUsableBufferSnapshot({
+    date: '2026-08-25',
+    source: 'buffer_api',
+  }, '2026-08-25'), false);
 });
 
 test('reel release checkpoint reports manual review blockers without authorizing posting', () => {

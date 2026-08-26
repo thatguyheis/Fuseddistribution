@@ -3,6 +3,19 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/google-business-profile-setup-guide/google-business-profile-setup-guide.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-25T19:32:09.712Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/VuWvii6-JgU",
+      "sentAt": "2026-08-26T00:00:37.483Z"
+    },
+    "x": {
+      "url": "https://x.com/290904877/status/2092401750107988263",
+      "sentAt": "2026-08-26T00:00:27.047Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/Dce4CYEgTGG/",
+      "sentAt": "2026-08-26T00:02:12.166Z"
+    }
+  },
+  "updatedAt": "2026-08-26T03:43:25.692Z"
 }
