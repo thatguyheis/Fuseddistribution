@@ -84,7 +84,7 @@ test('before_after accepts two observations of one metric and renders named peri
   const html = renderBeforeAfterHtml(chart);
   assert.ok(html.includes('visual-type-before-after'));
   assert.ok(html.includes('April 1, 2026'));
-  assert.ok(html.includes('lbma.org.uk'));
+  assert.match(html, /href="https:\/\/www\.lbma\.org\.uk\/articles\/lbma-precious-metals-market-report-q2-2026"/);
 });
 
 test('stat_cards permits distinct metrics because geometry does not compare magnitude', () => {

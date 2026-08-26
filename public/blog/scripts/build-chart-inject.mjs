@@ -60,7 +60,10 @@ export function chartData(chart) {
 }
 
 function validHttpsUrl(value) {
-  try { return new URL(String(value)).protocol === "https:"; }
+  try {
+    const parsed = new URL(String(value));
+    return parsed.protocol === "https:" && !parsed.username && !parsed.password && Boolean(parsed.hostname);
+  }
   catch { return false; }
 }
 

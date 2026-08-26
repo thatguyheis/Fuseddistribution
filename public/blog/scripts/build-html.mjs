@@ -76,7 +76,23 @@ if (!["silver", "tech"].includes(meta.brand)) { console.error(`error: brand must
 const [tag1, tag2] = meta.tags;
 
 // ── helpers ───────────────────────────────────────────────────────────────
-const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const esc = (s) => String(s)
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;")
+  .replace(/'/g, "&#39;");
+
+function safeMarkdownUrl(value) {
+  const raw = String(value).trim();
+  if (raw.startsWith('/') && !raw.startsWith('//')) return raw;
+  try {
+    const parsed = new URL(raw);
+    return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : null;
+  } catch {
+    return null;
+  }
+}
 const humanDate = meta.humanDate ||
   new Date(meta.date + "T00:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
@@ -86,7 +102,10 @@ function inline(text) {
   t = t.replace(/`([^`]+)`/g, "<code>$1</code>");
   t = t.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   t = t.replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>");
-  t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, txt, url) => `<a href="${url}">${txt}</a>`);
+  t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, txt, url) => {
+    const safeUrl = safeMarkdownUrl(url);
+    return safeUrl ? `<a href="${esc(safeUrl)}">${txt}</a>` : txt;
+  });
   return t;
 }
 
@@ -508,12 +527,31 @@ ${CSS}
 }
 
 function validUrl(value, pattern) {
-  return typeof value === 'string' && pattern.test(value) ? value : null;
+  if (typeof value !== 'string') return null;
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'https:' && pattern.test(parsed) ? parsed.href : null;
+  } catch {
+    return null;
+  }
 }
 
 function youtubeEmbedUrl(url) {
-  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=))([A-Za-z0-9_-]{11})/i);
-  return match ? `https://www.youtube-nocookie.com/embed/${match[1]}?rel=0&playsinline=1` : null;
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    let id = null;
+    if (host === 'youtu.be') id = parsed.pathname.slice(1).split('/')[0];
+    if (host === 'youtube.com' || host === 'www.youtube.com') {
+      if (parsed.pathname === '/shorts/' || parsed.pathname.startsWith('/shorts/')) id = parsed.pathname.split('/')[2];
+      if (parsed.pathname === '/watch') id = parsed.searchParams.get('v');
+    }
+    return id && /^[A-Za-z0-9_-]{11}$/.test(id)
+      ? `https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`
+      : null;
+  } catch {
+    return null;
+  }
 }
 
 function sameOriginVideoUrl(url) {
@@ -529,13 +567,13 @@ function sameOriginVideoUrl(url) {
 
 function renderSocialVideo(data, title, reelArtifactsExist = false) {
   const platforms = data?.platforms || {};
-  const youtube = validUrl(platforms.youtube?.url, /^https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i);
-  const instagram = validUrl(platforms.instagram?.url, /^https:\/\/(?:www\.)?instagram\.com\/reel\//i);
-  const x = validUrl(platforms.x?.url, /^https:\/\/x\.com\/[^/]+\/status\/\d+/i);
-  const primaryVideo = validUrl(data?.primaryVideo?.url, /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i);
+  const youtube = validUrl(platforms.youtube?.url, parsed => ['youtube.com', 'www.youtube.com', 'youtu.be'].includes(parsed.hostname.toLowerCase()) && (parsed.hostname.toLowerCase() === 'youtu.be' || parsed.pathname === '/watch' || parsed.pathname.startsWith('/shorts/')));
+  const instagram = validUrl(platforms.instagram?.url, parsed => ['instagram.com', 'www.instagram.com'].includes(parsed.hostname.toLowerCase()) && parsed.pathname.startsWith('/reel/'));
+  const x = validUrl(platforms.x?.url, parsed => parsed.hostname.toLowerCase() === 'x.com' && /^\/[^/]+\/status\/\d+\/?$/.test(parsed.pathname));
+  const primaryVideo = validUrl(data?.primaryVideo?.url, parsed => parsed.hostname.toLowerCase() === 'fuseddistribution.luxraycoco.workers.dev' && /^\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i.test(parsed.pathname));
   if (!primaryVideo && !youtube && !instagram && !x) {
     if (!reelArtifactsExist) return '';
-    return '<aside class="social-video" aria-label="Reel publication status"><h2>Reel coming soon</h2><p>The reel for this article is being prepared and will be published here soon.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>';
+    return '<aside class="social-video" aria-label="Reel publication status"><h2>Video series coming soon</h2><p>This article is planned for one long form reel and three focused short topics. Published videos will appear here as they are released.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>';
   }
 
   const links = [
