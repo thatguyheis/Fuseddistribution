@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Silver Spot Price and Premium",
+  "takeaway": "The average premium for a popular coin like the American Silver Eagle is approximately 2.5% - 4% above the spot price.",
+  "source": "PUBLISHER",
+  "source_url": "https://example.com/blog/how-to-buy-silver-coins-at-spot-price",
+  "data": [
+    {
+      "label": "Spot Price (August 25, 2026)",
+      "value": "$32.25",
+      "metric": "Price per ounce",
+      "unit": "USD/oz",
+      "period": "August 25, 2026",
+      "evidence": "Currently, the spot price is approximately $32.25 per ounce."
+    },
+    {
+      "label": "Average Premium (August 25, 2026)",
+      "value": "2.5% - 4%",
+      "metric": "Premium",
+      "unit": "%",
+      "period": "August 25, 2026",
+      "evidence": "Currently, the average premium for a popular coin like the American Silver Eagle is approximately 2.5% - 4% above the spot price."
+    }
+  ],
+  "hero_stat": {
+    "value": "$32.25",
+    "label": "Current Spot Price"
+  },
+  "narration": "The article details the process of buying silver coins at spot price, highlighting the importance of understanding premiums. The current spot price is $32.25 per ounce, and the average premium for popular coins like the American Silver Eagle is between 2.5% and 4% above this price."
+}

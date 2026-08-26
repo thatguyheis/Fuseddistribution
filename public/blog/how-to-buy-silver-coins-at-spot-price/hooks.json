@@ -1,0 +1,10 @@
+{
+  "hook": "Spot price is currently around $32.25 per ounce.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$32.25",
+    "label": "per ounce How to"
+  },
+  "discussion_question": "Considering all these options, where do *you* think is the best place to start buying silver?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
