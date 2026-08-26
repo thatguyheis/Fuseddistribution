@@ -1,0 +1,57 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-0.jpg",
+    "source": "open-generative-ai-local"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-1.jpg",
+    "source": "fused-generated-background-library"
+  },
+  "2": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-2.jpg",
+    "source": "local-photo"
+  },
+  "3": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-3.jpg",
+    "source": "pixabay"
+  },
+  "4": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-4.jpg",
+    "source": "pexels"
+  },
+  "5": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-5.jpg",
+    "source": "pexels"
+  },
+  "6": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-6.jpg",
+    "source": "pexels"
+  },
+  "7": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-7.jpg",
+    "source": "pexels"
+  },
+  "8": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-8.jpg",
+    "source": "pexels"
+  },
+  "9": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-9.jpg",
+    "source": "pexels"
+  },
+  "10": {
+    "type": "photo",
+    "src": "photos/how-to-buy-silver-coins-at-spot-price/segment-10.jpg",
+    "source": "pexels"
+  }
+}

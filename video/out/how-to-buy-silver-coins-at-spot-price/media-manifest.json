@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"profileVersion\":2,\"provider\":\"open-generative-ai-local\",\"model\":\"dreamshaper-8\",\"modelFile\":\"DreamShaper_8_pruned.safetensors\",\"promptHash\":\"0c035d9f1c592dc1be7fbe294ed933915d10449ac2161dd3cf43603e704bdae0\",\"seed\":1646818554,\"width\":384,\"height\":640,\"steps\":8}",
+      "source": "open-generative-ai-local",
+      "providerVersion": "c90e908",
+      "sourceUrl": "https://github.com/anil-matcha/open-generative-ai",
+      "applicationLicense": "MIT",
+      "model": "dreamshaper-8",
+      "modelFile": "DreamShaper_8_pruned.safetensors",
+      "modelLicense": "creativeml-openrail-m",
+      "prompt": "Atmospheric vertical background plate showing a dark vault corridor with repeating silver-blue light bands suggesting steady intervals and measured progress. dark charcoal background, cool silver highlights, subtle cyan accent. Soft focus, low detail, cinematic depth, no foreground focal object, clean negative space through the center for a separate caption overlay. Background scenery only. No poster, title card, package, label, sign, screen, interface, document, coin face, currency, or product close-up. No words, letters, numbers, charts, logos, watermarks, signatures, recognizable people, or financial claims.",
+      "topic": "silver",
+      "sceneId": "silver-market",
+      "scene": "a dark vault corridor with repeating silver-blue light bands suggesting steady intervals and measured progress",
+      "promptHash": "0c035d9f1c592dc1be7fbe294ed933915d10449ac2161dd3cf43603e704bdae0",
+      "seed": 1646818554,
+      "width": 1080,
+      "height": 1920,
+      "generatedAsset": true,
+      "factualGraphic": false,
+      "backgroundTreatment": "portrait-crop, blur-6, darken-0.14, saturation-0.7, vignette",
+      "tags": [
+        "investing",
+        "silver",
+        "silver-market"
+      ],
+      "query": "how to buy silver coins at spot price",
+      "prefer": "photo",
+      "attempts": [
+        "open-generative-ai-local"
+      ],
+      "path": "photos/how-to-buy-silver-coins-at-spot-price/segment-0.jpg",
+      "status": "approved-for-render",
+      "updatedAt": "2026-08-26T18:50:44.334Z",
+      "libraryAssetId": "fused-bg-5d3941d486d36d28"
+    },
+    "1": {
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-vault\",\"tags\":[\"coins\",\"investing\",\"silver\",\"silver-vault\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-4e3b42af369b4003",
+      "topic": "silver",
+      "sceneId": "silver-vault",
+      "tags": [
+        "coins",
+        "silver",
+        "silver-vault"
+      ],
+      "sha256": "4e3b42af369b400390c16fcb6d3a056dedf26e517a568442ac3d552a5a3b5f1a",
+      "sourceSlug": "manual-reviewed-vault-background",
+      "status": "approved-background-only",
+      "query": "how to buy silver coins at spot price buying silver coins",
+      "prefer": "photo",
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/how-to-buy-silver-coins-at-spot-price/segment-1.jpg",
+      "updatedAt": "2026-08-26T18:50:44.352Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to buy silver coins at spot price 32 25 demand\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "how to buy silver coins at spot price 32 25 demand",
+      "prefer": "photo",
+      "updatedAt": "2026-08-26T18:50:44.352Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to buy silver coins at spot price offer advice may\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to buy silver coins at spot price offer advice may",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:45.633Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to buy silver coins at spot price direct mint purchase\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price direct mint purchase",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:46.708Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to buy silver coins at spot price 2 5 demand\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price 2 5 demand",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:47.427Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to buy silver coins at spot price however bullion coins\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price however bullion coins",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:48.081Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to buy silver coins at spot price review order double\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price review order double",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:49.034Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to buy silver coins at spot price 25 silver global\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price 25 silver global",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:50.480Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to buy silver coins at spot price encourage start small\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price encourage start small",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:50.949Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to buy silver coins at spot price customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "how to buy silver coins at spot price customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-26T18:50:51.829Z"
+    }
+  },
+  "generativeCandidates": {}
+}
