@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"best online silver dealers in 2026\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "best online silver dealers in 2026",
+      "prefer": "video",
+      "updatedAt": "2026-08-27T18:29:37.128Z"
+    },
+    "1": {
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-general\",\"tags\":[\"silver\",\"silver-general\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-5d3941d486d36d28",
+      "topic": "silver",
+      "sceneId": "silver-market",
+      "tags": [
+        "investing",
+        "silver",
+        "silver-market"
+      ],
+      "sha256": "5d3941d486d36d28425e4fcc8271c3705414e37131620043831a28c981cbbf57",
+      "sourceSlug": "how-to-buy-silver-coins-at-spot-price",
+      "status": "approved-background-only",
+      "query": "best online silver dealers in 2026 looking most reliable",
+      "prefer": "photo",
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/best-online-silver-dealers-in-2026/segment-1.jpg",
+      "updatedAt": "2026-08-27T18:29:37.177Z"
+    },
+    "2": {
+      "key": "{\"query\":\"best online silver dealers in 2026 fused distribution understand\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "best online silver dealers in 2026 fused distribution understand",
+      "prefer": "photo",
+      "updatedAt": "2026-08-27T18:29:37.177Z"
+    },
+    "3": {
+      "key": "{\"query\":\"best online silver dealers in 2026 remember always research\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "best online silver dealers in 2026 remember always research",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:38.015Z"
+    },
+    "4": {
+      "key": "{\"query\":\"best online silver dealers in 2026 analyzed online silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 analyzed online silver",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:39.683Z"
+    },
+    "5": {
+      "key": "{\"query\":\"best online silver dealers in 2026 silverdirect solid choice\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 silverdirect solid choice",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:40.723Z"
+    },
+    "6": {
+      "key": "{\"query\":\"best online silver dealers in 2026 been trusted name\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 been trusted name",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:41.404Z"
+    },
+    "7": {
+      "key": "{\"query\":\"best online silver dealers in 2026 999 silver fine\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 999 silver fine",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:42.621Z"
+    },
+    "8": {
+      "key": "{\"query\":\"best online silver dealers in 2026 consistently offer competitive\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 consistently offer competitive",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:43.297Z"
+    },
+    "9": {
+      "key": "{\"query\":\"best online silver dealers in 2026 many reputable dealers\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 many reputable dealers",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:43.873Z"
+    },
+    "10": {
+      "key": "{\"query\":\"best online silver dealers in 2026 customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "best online silver dealers in 2026 customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-08-27T18:29:44.525Z"
+    }
+  },
+  "generativeCandidates": {}
+}

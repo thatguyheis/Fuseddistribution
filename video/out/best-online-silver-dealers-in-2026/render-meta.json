@@ -1,0 +1,55 @@
+{
+  "slug": "best-online-silver-dealers-in-2026",
+  "renderedAt": "2026-08-27T18:37:34.160Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 216.825,
+  "renderedDuration": 211.392,
+  "scriptHash": "b578c549c67ac79cab5bd0023f05fd484c9713b37e92b10149f4d79105534c97",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-driving-ambition-32.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -11,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.044774422771366805
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 1.88,
+      "1": 20.08,
+      "2": 24.2,
+      "3": 20.28,
+      "4": 26.36,
+      "5": 20.74,
+      "6": 22.96,
+      "7": 22.64,
+      "8": 21.16,
+      "9": 25.84,
+      "10": 2.72
+    },
+    "totalNarrationSeconds": 208.86
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/driving-ambition-32/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "local-photo": 2,
+    "fused-generated-background-library": 1,
+    "pixabay": 1,
+    "pexels": 7
+  }
+}
