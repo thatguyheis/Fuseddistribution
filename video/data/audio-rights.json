@@ -19,6 +19,12 @@
       "approved"
     ],
     "allowedWithoutTrack": true,
+    "socialPublishing": {
+      "requiredBackgroundMusic": true,
+      "defaultMode": "cycle",
+      "approvedCycleOnly": true,
+      "noMusicException": "Requires an explicit narration-first approval recorded with the reel release metadata."
+    },
     "notes": "Production renders cycle only through the small approved Mixkit stock set. A music file is usable only when this database has an approved rights record with preserved evidence.",
     "musicMix": {
       "narrationReferenceLufs": -24,

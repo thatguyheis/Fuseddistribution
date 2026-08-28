@@ -8,6 +8,8 @@ import { FittedText } from './FittedText';
 const LABEL_W = 220;
 const BAR_W   = 580;
 const VALUE_W = 68;
+const X_AXIS_LABEL = 'PERCENT OF RESPONDENTS';
+const Y_AXIS_LABEL = 'COMPARISON CATEGORY';
 
 const Bar: React.FC<{ label: string; value: number; index: number; fps: number }> = ({
   label, value, index, fps,
@@ -85,9 +87,11 @@ export const ChartCard: React.FC<{
         style={{marginBottom: 52}}
       />
       <div style={{ width: LABEL_W + 16 + BAR_W + 16 + VALUE_W }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18, fontFamily: POPPINS, fontSize: 22, letterSpacing: '0.12em', color: BRAND.muted }}>{Y_AXIS_LABEL}</div>
         {segment.bars.map((bar, i) => (
           <Bar key={bar.label} label={bar.label} value={bar.value} index={i} fps={fps} />
         ))}
+        <div style={{ marginLeft: LABEL_W + 16, width: BAR_W, textAlign: 'center', marginTop: 4, fontFamily: POPPINS, fontSize: 22, letterSpacing: '0.12em', color: BRAND.muted }}>{X_AXIS_LABEL}</div>
       </div>
     </div>
   );

@@ -28,7 +28,8 @@ const MAX_X_CHARS = 280;
 const SCHEDULE_TIME_ZONE = 'America/Los_Angeles';
 const DEFAULT_SCHEDULE_WINDOW_START = '13:00';
 const DEFAULT_SCHEDULE_WINDOW_END = '19:00';
-const DEFAULT_SCHEDULE_INTERVAL_MINUTES = 105;
+// Three posts per channel in one hourly batch land at :00, :20, and :40.
+const DEFAULT_SCHEDULE_INTERVAL_MINUTES = 20;
 const MIN_SCHEDULE_LEAD_MINUTES = 15;
 const QUEUE_EXPIRES_MINUTES = 30;
 const STALE_SCHEDULED_GRACE_MINUTES = 60;
@@ -48,13 +49,13 @@ Options:
   --target-cutdown-seconds=N     Expected generated cutdown duration. Default: 135.
   --max-bytes=N                  Maximum local MP4 size for Cloudflare assets. Default: 26214400.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
-  --media-map=path               JSON map of slug to hosted MP4 URL. Default: .buffer-x-media-urls.json.
+  --media-map=path               JSON map of the shared hosted MP4 URL. Default: .buffer-media-urls.json.
   --scheduled-log=path           JSON log of already scheduled X slugs. Default: .buffer-x-scheduled.json.
   --repost-after-days=N          Allow sent, release-approved reels to rotate after N days. Default: 0 (never).
   --skip-media-url-verification  Offline planning only. Production runs verify URLs by default.
   --schedule-window-start=HH:MM  Earliest local Buffer due time. Default: 13:00.
   --schedule-window-end=HH:MM    Latest local Buffer due time. Default: 19:00.
-  --schedule-interval-minutes=N  Minutes between selected posts. Default: 105.
+  --schedule-interval-minutes=N  Minutes between selected posts. Default: 20.
   --same-day-only               Do not roll excess selected jobs into tomorrow.
   --out=path                     Output queue JSON. Default: .buffer-x-queue.json.
   --dry-run                      Plan only. This is the default behavior.
@@ -77,7 +78,7 @@ function parseArgs(argv) {
     targetCutdownSeconds: DEFAULT_TARGET_CUTDOWN_SECONDS,
     maxBytes: MAX_CLOUDFLARE_ASSET_BYTES,
     slugs: [],
-    mediaMap: join(repoRoot, '.buffer-x-media-urls.json'),
+    mediaMap: join(repoRoot, '.buffer-media-urls.json'),
     scheduledLog: join(repoRoot, '.buffer-x-scheduled.json'),
     repostAfterDays: 0,
     verifyMediaUrls: true,

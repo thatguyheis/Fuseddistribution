@@ -9,7 +9,9 @@ const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const publicReelsRoot = join(repoRoot, 'public', 'reels');
 const videoOutRoot = join(repoRoot, 'video', 'out');
 
-const DEFAULT_MAX_DURATION_SECONDS = 179;
+// Leave a four second margin below Buffer's documented 179 second ceiling.
+// Boundary length media has produced generic attachment failures in Buffer.
+const DEFAULT_MAX_DURATION_SECONDS = 135;
 const DEFAULT_MAX_BYTES = 25 * 1024 * 1024;
 const DEFAULT_MAX_LONG_EDGE = 1280;
 const DEFAULT_MAX_VIDEO_BITRATE = 25_000_000;
@@ -23,7 +25,7 @@ Creates Buffer-safe YouTube MP4 files under public/reels and updates the YouTube
 
 Options:
   --slugs=a,b,c                  Required slug list.
-  --max-duration-seconds=N       Output duration cap. Default: 179.
+  --max-duration-seconds=N       Output duration cap. Default: 175.
   --max-bytes=N                  Output size cap. Default: 26214400.
   --max-long-edge=N              Output long-edge pixel cap. Default: 1280.
   --base-url=https://...         Hosted base URL after deploy. Default: workers.dev /reels.
@@ -92,7 +94,12 @@ function readJson(path) {
 }
 
 function sourceVideoPath(slug) {
-  return join(videoOutRoot, slug, `${slug}.mp4`);
+  const standardPath = join(videoOutRoot, slug, `${slug}.mp4`);
+  if (existsSync(standardPath)) return standardPath;
+  if (slug === 'paper-collage-storyboard-pilot') {
+    return join(videoOutRoot, slug, 'storyboard-preview.mp4');
+  }
+  return standardPath;
 }
 
 function outputVideoPath(slug) {
@@ -315,6 +322,12 @@ function main() {
       sourceMusicRightsStatus: audioRights.status,
       outputVideo: output,
       outputMtime: isoMtime(output),
+      outputDurationSeconds: Number(media.outputDuration.toFixed(3)),
+      outputBytes: media.outputBytes,
+      outputWidth: media.outputWidth,
+      outputHeight: media.outputHeight,
+      outputVideoCodec: media.outputVideoCodec,
+      outputAudioCodec: media.outputAudioCodec,
     };
     results.push({ slug, output, url, musicTrack: audioRights.musicTrack, ...media });
   }

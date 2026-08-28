@@ -2,7 +2,7 @@
 
 ## Overview
 
-One command per blog post produces a finished 1080×1920 MP4 with:
+One command per blog post produces a finished 720×1280 MP4 with:
 - Narration via Chatterbox using Nick's local voice reference
 - Subtitles cycling through the spoken text
 - Animated graphics — number counters, chart bars, glowing CTA
@@ -26,6 +26,8 @@ To reinstall or update: `npx skills add remotion-dev/skills --global`
 **Transitions between segments:** `@remotion/transitions` provides slide/fade/wipe between every segment boundary via `TransitionSeries` (replaces `Series`). Transition type is auto-selected by segment pair in `BlogReel.tsx`.
 
 **Background photos:** Ken Burns slow zoom (1.0→1.08 scale) applied to every photo over its segment duration. Transform origin rotates per segment index (center → top-left → bottom-right).
+
+**Chart axes:** Every graph must display a clear x-axis label and y-axis label in the rendered frame. Labels must name the dimension and unit, not only use generic words such as `value` or `data`. For example, use `REFERENCE PERIOD` and `PRICE (USD PER TROY OUNCE)`, or `YEAR` and `DEMAND (MILLION TROY OUNCES)`. A pie or donut has no Cartesian axes, so it must instead display a measure label and a visible legend pairing every slice with its value. Missing or ambiguous axis/measure labels are a release blocker.
 
 **Hardware media budget:** Use video for the hook only. Use photos for body and question segments. Body clips with the current stock profiles can more than double render time on this Mac; Ken Burns photo motion is the reliable production default.
 
@@ -77,6 +79,8 @@ node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
 Reason: recent platform uploads were marked as copyrighted, including `Happy Mysterious Full Track 102 BPM, F Major` from Rapid Entertainment / Airbit SG Pte. Ltd. The old bundled ambient tracks are blocked in `video/data/audio-rights.json` until re-cleared with durable evidence. The approved production cycle currently contains ten Mixkit tracks, each with source URLs, license details, SHA-256 hashes, and usage restrictions preserved in the rights database.
 
 The renderer fails closed against `video/data/audio-rights.json`; the audit command verifies the local reference library when that library changes.
+
+**Social publishing rule:** Every reel intended for YouTube, Instagram, or X uses the approved music cycle by default. The trusted cycle is the only automatic music source. A narration only reel is an exception, not a default: it requires an explicit release note explaining why music would reduce comprehension. Never pass an unlisted, retired, or unverified track to a social render.
 
 Audit command:
 
@@ -224,13 +228,16 @@ The reel script maps directly from reel-data.md sections:
 
 ### Step 2 — Plan segment layout before writing
 
-**Only format: Long Form. Short-form is archived.**
+**One article can support two related layers: one canonical Long Form reel and three focused Short topics.** The Long Form reel is the only complete article summary. Short topics are separate, useful slices of the same article and must not be treated as three fragments of the Long Form export.
 
 | Format | Target length | Status |
 |--------|--------------|--------|
-| **Long Form** | 100-240s | **Only format - always use this** |
+| **Long Form** | 100-240s | One canonical article arc per post |
+| **Short topic 1-3** | Platform-specific cut | Optional focused cuts, each with its own hook and takeaway |
 
-Long Form covers the full blog post arc. Reels may run from about 100 seconds to four minutes when the source material supports the duration; do not add filler to reach a target.
+Long Form covers the full blog post arc. Reels may run from about 100 seconds to four minutes when the source material supports the duration; do not add filler to reach a target. A Short topic answers one narrower question, uses only the supporting sections assigned to it, and links back to the same article. Do not create three near-duplicate summaries.
+
+**Topic contract for new content plans:** declare one `reel.sectionIds` cluster for Long Form and, when short cuts are approved, exactly three `reel.shortTopics` entries. Each short topic needs a unique `short-01` style ID, a distinct topic, a concrete promise, and one to three source section IDs. The blog's `Short topic 1-3` cards are planning labels only. They become watch links only after an authoritative platform URL exists.
 
 **Segment planning (Long Form):**
 1. Count every stat from reel-data.md. Each stat = one Stat segment.
@@ -641,6 +648,7 @@ fi
 - [ ] Segment count is 8-12 body segments (Long Form)
 - [ ] Stat Text labels are 5 words or fewer after the number
 - [ ] Chart segment present if `reel-data.md` has a `## chart` section
+- [ ] Every graph visibly labels both x-axis and y-axis with the dimension and unit; pie/donut visuals visibly label the measure and every slice
 - [ ] QUESTION segment has Text + Subtext + Narration — silver posts: "Follow for more silver news." / tech posts: "Follow for more tips to grow your business."
 - [ ] No segment references unverified stats not in `reel-data.md`
 - [ ] If `reel-data.md` has `## chart`, a Chart segment exists in the script
@@ -703,8 +711,11 @@ Output: `video/out/<slug>/<slug>.mp4`
 
 Before creating a posting pack, run the release gate. It checks the rendered
 duration, music rights, normalized mix metadata, measured narration timing, and
-caption availability. Proportional captions require a three-point manual sync
-review; only then pass `--manual-caption-review`.
+caption availability. Proportional captions require an auditable three-point
+sync coverage review. The release gate records `caption-review.json` and permits
+posting when all three points are covered for every narrated segment. A human
+may still override this with `--manual-caption-review` after listening to the
+rendered reel.
 
 ```bash
 cd video && npm run release -- --post=<slug>
@@ -736,7 +747,8 @@ npm run video:rerender-audio-backlog -- --limit=4 --rebuild-reel-scripts --conti
 ```
 
 Every backlog reel remains review-required until the caption sync review is
-recorded with `--manual-caption-review`.
+recorded in `caption-review.json` or a human review is recorded with
+`--manual-caption-review`. Automated coverage does not claim Whisper accuracy.
 
 > **CRITICAL — Do NOT skip or narrate this step.** You MUST execute the render command above via Bash. Do not describe the render as "running" or "in progress" without having called it. The command takes 10–15 minutes and blocks — wait for it to complete. After it exits, immediately verify:
 > ```bash
@@ -807,16 +819,16 @@ npm run social:buffer:youtube:media -- --slugs=<slug>
 npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=2 --media-map=.buffer-media-urls.json --schedule-window-start=13:00 --schedule-window-end=19:00 --write-packs
 ```
 
-This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open for today's new reels, blocks YouTube API media over 179 seconds or 25 MiB, creates H.264/AAC Buffer copies with a 1280px max long edge, verifies each selected MP4 URL returns `200 video/mp4`, and writes `.buffer-youtube-queue.json` with custom scheduled Buffer payloads between 1:00 PM and 7:00 PM `America/Los_Angeles`.
+This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open for today's new reels, and creates one shared Buffer media asset from `video/data/social-distribution.json`: 720×1280, 9:16, 30 fps, H.264/AAC, 135 seconds maximum, and 25 MiB maximum. YouTube, Instagram, and X all reference the same hosted MP4 from `.buffer-media-urls.json`. The 135 second cap preserves the strictest current cross platform duration policy and avoids platform specific derivative drift.
 
-**Buffer media gate:** the `video/out/<slug>/<slug>.mp4` render is a source artifact, not a Buffer upload. Before any Buffer create or retry, the URL in `.buffer-media-urls.json` must pass `npm run social:buffer:verify-media` with a successful HTTPS response, `video/mp4` content type, byte count at or below 25 MiB, and range support. A failed verification is a hard stop. Do not attach the source render, rely on a local file size, or retry the same URL after Buffer reports an attached media or link failure. Rebuild the Buffer-safe public copy, verify the exact public URL, update the media map, and then re-read the Buffer post after creation to confirm the video asset is still attached.
+**Buffer media gate:** the native `video/out/<slug>/<slug>.mp4` render is already the shared 720×1280 delivery asset. Before any Buffer create or retry, the URL in `.buffer-media-urls.json` must pass `npm run social:buffer:verify-media` with a successful HTTPS response, `video/mp4` content type, byte count at or below 25 MiB, range support, and manifest duration at or below 135 seconds. The live publisher repeats the URL check immediately before `createPost` and rejects queue metadata over 135 seconds. A failed verification is a hard stop and sends no create request. Do not attach a local file, create platform specific derivatives, rely on a local file size alone, or retry the same URL after Buffer reports an attached media or link failure. Sync the replacement asset, verify the exact public URL, and only then replace the Buffer post. After creation, re-read the post and confirm both the video asset and the expected scheduled state. A local success log is invalid unless that authoritative readback finds the post in `scheduled` or `sending` with a video asset.
 
 **Blog handoff gate:** a rendered reel is not a completed blog integration. Before reporting completion, confirm the matching blog URL is live, the page contains one `SOCIAL_VIDEO_START` panel, and `social-video.json` has either the released primary video or an authoritative platform link. If the reel is not released yet, the blog page must show `Pending publication`; it must not show an empty video area.
 
 **Post the reel manually or through Buffer:**
 - YouTube: use Buffer channel `Nick` (`6a3e63375ab6d2f1067461b2`). If `public/blog/<slug>/posting-pack.json` includes a stable HTTPS `assets.public_media_url`, schedule through the Buffer API with `mode: customScheduled`, `schedulingType: automatic`, a `dueAt` between 1:00 PM and 7:00 PM `America/Los_Angeles`, the Buffer-safe MP4 as a video asset, and `metadata.youtube.title` plus `metadata.youtube.categoryId`. Immediately call `get_post`; do not log the reel as scheduled unless Buffer returns no error and still has the video asset. If there is no public media URL, upload `public/reels/<slug>/<slug>.mp4` manually in Buffer, then paste the YouTube title and description from the posting pack.
 - YouTube AI disclosure: do not hold up Buffer scheduling on this field. If YouTube exposes a supported control later, treat disclosure as a non-blocking follow-up.
-- X: use Buffer channel `thatguyheis` (`6a3e73fb5ab6d2f10674b516`) through the Buffer API only when the reel is X-eligible. Use `npm run social:buffer:x:plan` and schedule only selected jobs. The working payload is top-level `assets: [{ video: { url } }]`. The post must be 280 characters or fewer and the MP4 must be at most 140 seconds. After `create_post`, call `get_post`; do not log an X reel as scheduled unless the returned post still has a video asset. Long-form reels over 140 seconds need an X cutdown before scheduling.
+- X: use Buffer channel `thatguyheis` (`6a3e73fb5ab6d2f10674b516`) through the Buffer API only when the reel is X-eligible. Use `npm run social:buffer:x:plan` and the shared `.buffer-media-urls.json` asset. The working payload is top-level `assets: [{ video: { url } }]`. The post must be 280 characters or fewer. After `create_post`, call `get_post`; do not log an X reel as scheduled unless the returned post still has a video asset. Do not create a separate `public/reels-x` file unless an approved platform exception is documented.
 - After each scheduled `dueAt` passes, reconcile Buffer. If the post is still scheduled, errored, missing, or video-less, update the local `.buffer-*-scheduled.json` entry to `status: "error"` before retrying.
 - Facebook Professional Mode profile: use Facebook native tools only. Upload the MP4 through the Facebook app or Professional Dashboard, then paste the Facebook caption from the posting pack.
 - Instagram / LinkedIn: use the platform caption from `public/blog/<slug>/social-copy.json` if posting manually.
@@ -954,6 +966,50 @@ Every segment background is sourced in this priority order:
 
 Chart, CTA, and Question segments always get a photo — clean background needed for readability.
 
+### 11c.1 Local generated asset reuse protocol
+
+The approved local background library is `video/local/generated-backgrounds/`.
+Before invoking local image generation, query its catalog for an approved asset
+with the same topic, scene, and compatible tags. Reuse a matching asset first,
+then generate only the missing or deliberately contrasting visual roles.
+
+Every library asset must remain labeled with a stable content-hash ID, topic,
+scene ID, descriptive tags, source slug and segment, prompt hash, model and
+license, background treatment, approval status, and use history. Reused media
+must preserve `libraryAssetId`, tags, SHA-256, source slug, and the
+`fused-generated-background-library` source in the reel media manifest. A
+missing file, hash mismatch, unverified license, or non-approved status blocks
+reuse.
+
+For each generated slot, record one outcome: `reused` with its asset ID,
+`generated` with new provenance, or `fallback` with the reason. The default
+allocation is one new hook or focal asset plus reused narrative backgrounds;
+exclude recently used matches when an equivalent alternative exists. Reuse
+reduces generation time and cost, but never bypasses topic fit, storyboard
+continuity, portrait-safe composition, or human visual QA.
+
+### 11c.2 Production efficiency checklist
+
+Every production run should reduce work before increasing concurrency:
+
+- Render the canonical reel directly at 720×1280. Do not render a 1080×1920 master and downscale it for distribution.
+- Generate narration once per slug and reuse the content hash cache when the narration text and voice are unchanged.
+- Reuse blog downloaded images and approved local generated backgrounds before calling Pexels, Pixabay, or local image generation.
+- Create one shared Buffer MP4 and URL map. YouTube, Instagram, and X must reference that same file unless an approved platform exception is recorded.
+- Query Buffer once for the shared scheduled/sending count, then pass that snapshot to all three planners. Do not make separate capacity decisions from stale counts.
+- Skip a transcode when the existing MP4 already matches the canonical dimensions, codecs, frame rate, duration, and byte limits. Record whether the media result was `reused` or `transcoded`.
+- Stop before expensive rendering when audio rights, chart labels, measured timing, media availability, or public URL verification fails.
+
+The run summary should record render dimensions, render duration, cache hits, newly generated assets, network media requests, transcodes, and Buffer preflight results. Any increase in those measures is an optimization review item.
+
+## 11d. Storyboard-led visual route
+
+The successful paper collage pilot is approved as a visual component for new reels, but rollout is staged. The storyboard route must run after script and timing validation and before media assembly. It assigns every segment a deliberate role: paper analogy, stock photo context, data graphic, process diagram, standard production card, or CTA.
+
+The route must pass `video/STORYBOARD-PILOT-PROTOCOL.md` before rendering. It fails closed when a chart lacks a title, explanatory subtitle, unit or axis label, paired values, source period, or plain language takeaway. It also fails when a reel lacks visual variety or uses consecutive generic cards.
+
+During backlog transition, old-style reels stay on the normal route and new reels may use the storyboard route. Do not re-render the entire backlog solely to change visual style. Preserve a route flag and use the normal renderer as rollback when storyboard QA, timing, asset rights, or human review fails.
+
 ### media_queries section in reel-data.md
 
 Replaces `pexels_queries`. Add `prefer: video` (default) or `prefer: photo` per segment:
@@ -1013,7 +1069,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Accent | `#58d6ff` (cyan) |
 | Text | `#ffffff` white / `#afc6cf` muted |
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
-| Format | 1080×1920 portrait @ 30fps |
+| Format | 720×1280 portrait @ 30fps |
 | Voice | Chatterbox using Nick's local voice reference |
 | Music | Approved trusted-cycle bed normalized to 20% of the narration signal (about -38 LUFS), or no music |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |

@@ -5,7 +5,7 @@ import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
 import { wipe } from '@remotion/transitions/wipe';
-import { BRAND, secsToFrames } from '../brand';
+import { BRAND, OUTPUT, secsToFrames } from '../brand';
 import { HookCard } from '../components/HookCard';
 import { OverlayCard } from '../components/OverlayCard';
 import { StatCard } from '../components/StatCard';
@@ -14,6 +14,9 @@ import { CTACard } from '../components/CTACard';
 import { QuestionCard } from '../components/QuestionCard';
 import { Subtitle } from '../components/Subtitle';
 import type { ReelScript, Segment, CaptionChunk, MediaEntry } from '../types';
+import type { StoryboardPlan } from '../storyboard';
+import { PaperCollagePilot } from './PaperCollagePilot';
+import { EditorialDataBoard } from './EditorialDataBoard';
 import {
   compositionFramesForSegments,
   totalTransitionFrames as sumTransitionFrames,
@@ -26,7 +29,23 @@ const SegmentCard: React.FC<{
   segment: Segment;
   mediaEntry?: MediaEntry;
   segmentIndex: number;
-}> = ({ segment, mediaEntry, segmentIndex }) => {
+  storyboard?: StoryboardPlan;
+}> = ({ segment, mediaEntry, segmentIndex, storyboard }) => {
+  const storyboardSegment = storyboard?.segments.find((item) => item.segmentIndex === segmentIndex);
+  if (storyboardSegment?.visual === 'paper-collage') {
+    return (
+      <PaperCollagePilot
+        imagePath={storyboardSegment.asset ?? 'paper-collage-pilot/source-still.png'}
+        backgroundColor={storyboardSegment.backgroundColor ?? '#315c62'}
+        accentColor={storyboardSegment.accentColor ?? '#d8b84c'}
+        label={storyboardSegment.label ?? storyboardSegment.chapter.toUpperCase()}
+        message={storyboardSegment.message}
+      />
+    );
+  }
+  if (storyboardSegment?.visual === 'data-board' && storyboardSegment.dataBoard) {
+    return <EditorialDataBoard board={storyboardSegment.dataBoard} imagePath={storyboardSegment.asset} backgroundColor={storyboardSegment.backgroundColor ?? '#315c62'} accentColor={storyboardSegment.accentColor ?? '#58d6ff'} />;
+  }
   switch (segment.type) {
     case 'hook':    return <HookCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
     case 'overlay': return <OverlayCard segment={segment} mediaEntry={mediaEntry} segmentIndex={segmentIndex} />;
@@ -90,12 +109,14 @@ export const BlogReel: React.FC<{
   musicGain?: number;
   media?: MediaMap;
   captions?: CaptionMap;
-}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {} }) => {
+  storyboard?: StoryboardPlan;
+}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard }) => {
   const {fps} = useVideoConfig();
   const hasMusic = musicTrack && !['none', 'off', 'silent'].includes(musicTrack.toLowerCase());
   return <AbsoluteFill style={{ background: BRAND.bg }}>
     {hasMusic && <Audio src={staticFile(`music/${musicTrack}`)} volume={musicGain} loop />}
-    <TransitionSeries>
+    <div style={{ width: BRAND.width, height: BRAND.height, transform: `scale(${OUTPUT.width / BRAND.width})`, transformOrigin: 'top left' }}>
+      <TransitionSeries>
       {script.segments.map((segment, i) => {
         const durationInFrames = secsToFrames(segment.endSec - segment.startSec);
         const nextSegment = script.segments[i + 1];
@@ -107,7 +128,7 @@ export const BlogReel: React.FC<{
                 {segment.narration && (
                   <Audio src={staticFile(`audio/${script.slug}/segment-${i}.m4a`)} />
                 )}
-                <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} />
+                <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />
                 {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} />}
               </AbsoluteFill>
             </TransitionSeries.Sequence>
@@ -120,6 +141,7 @@ export const BlogReel: React.FC<{
           </React.Fragment>
         );
       })}
-    </TransitionSeries>
+      </TransitionSeries>
+    </div>
   </AbsoluteFill>;
 };

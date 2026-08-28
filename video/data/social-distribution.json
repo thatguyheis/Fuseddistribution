@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "purpose": "One Buffer media asset shared by YouTube, Instagram, and X",
+  "canonical": {
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": "9:16",
+    "fps": 30,
+    "container": "mp4",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRateHz": 48000,
+    "audioBitrate": 128000,
+    "maxDurationSeconds": 135,
+    "maxBytes": 26214400,
+    "videoBitrateMax": 25000000,
+    "pixelFormat": "yuv420p",
+    "fastStart": true
+  },
+  "mediaPath": "public/reels/<slug>/<slug>.mp4",
+  "mediaMap": ".buffer-media-urls.json",
+  "platforms": ["youtube", "instagram", "x"],
+  "notes": "Keep the 1080x1920 local master for review. Do not create platform-specific Buffer media unless a platform requirement changes and the exception is documented."
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Composition, registerRoot } from 'remotion';
 import { BlogReel, compositionFrames } from './compositions/BlogReel';
-import { BRAND } from './brand';
+import { PaperCollagePilot } from './compositions/PaperCollagePilot';
+import { BRAND, OUTPUT } from './brand';
 import './fonts';
 import type { ReelScript } from './types';
 
@@ -13,20 +14,35 @@ const defaultScript: ReelScript = {
 };
 
 const Root: React.FC = () => (
-  <Composition
-    id="BlogReel"
-    component={BlogReel}
-    durationInFrames={150}
-    fps={BRAND.fps}
-    width={BRAND.width}
-    height={BRAND.height}
-    defaultProps={{ script: defaultScript, musicTrack: 'none', musicGain: 0 }}
-    calculateMetadata={({ props }) => ({
-      // Match the TransitionSeries timeline (sequences minus overlapped
-      // transitions) so no frozen tail is rendered after the last segment.
-      durationInFrames: compositionFrames(props.script),
-    })}
-  />
+  <>
+    <Composition
+      id="BlogReel"
+      component={BlogReel}
+      durationInFrames={150}
+      fps={BRAND.fps}
+      width={OUTPUT.width}
+      height={OUTPUT.height}
+      defaultProps={{ script: defaultScript, musicTrack: 'none', musicGain: 0 }}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: compositionFrames(props.script),
+      })}
+    />
+    <Composition
+      id="PaperCollagePilot"
+      component={PaperCollagePilot}
+      durationInFrames={150}
+      fps={BRAND.fps}
+      width={OUTPUT.width}
+      height={OUTPUT.height}
+      defaultProps={{
+        imagePath: 'paper-collage-pilot/source-still.png',
+        backgroundColor: '#315c62',
+        accentColor: '#d8b84c',
+        label: 'SILVER PRICE HISTORY',
+        audioPath: 'audio/silver-price-history-and-long-term-trends/segment-0.m4a',
+      }}
+    />
+  </>
 );
 
 registerRoot(Root);

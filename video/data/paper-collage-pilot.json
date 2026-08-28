@@ -1,0 +1,16 @@
+{
+  "fixture": "silver-price-history-and-long-term-trends",
+  "sourceReel": "video/out/silver-price-history-and-long-term-trends/silver-price-history-and-long-term-trends.mp4",
+  "normalClip": "video/out/paper-collage-pilot/normal-hook-5s.mp4",
+  "paperClip": "video/out/paper-collage-pilot/paper-collage-hook-5s.mp4",
+  "comparison": "video/out/paper-collage-pilot/comparison-contact-sheet.jpg",
+  "durationSeconds": 5,
+  "fps": 30,
+  "width": 720,
+  "height": 1280,
+  "imagePath": "video/public/paper-collage-pilot/source-still.png",
+  "audioPath": "video/public/audio/silver-price-history-and-long-term-trends/segment-0.m4a",
+  "sourceNarration": "Buy silver below the $25 median for historical value.",
+  "visualMetaphor": "A silver coin and historical value card assemble onto a paper field, making the buy-below-history idea legible without reproducing the full narration as text.",
+  "approvedLocalOnly": true
+}
