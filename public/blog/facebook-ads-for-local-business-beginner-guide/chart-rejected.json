@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Key Metrics for Local Facebook Ads",
+  "takeaway": "Focus on click-through rates and cost per lead to measure local ad efficiency.",
+  "source": "Facebook Ads Guide Article",
+  "source_url": "N/A",
+  "data": [
+    {
+      "label": "Cost per lead (Ad A)",
+      "value": "$5 per lead",
+      "metric": "Cost per lead",
+      "unit": "USD/lead",
+      "period": "Comparison",
+      "evidence": "For example, if Ad A costs $5 per lead and Ad B costs $12 per lead, you know Ad A is more efficient for your budget.",
+      "date": "N/A"
+    },
+    {
+      "label": "Cost per lead (Ad B)",
+      "value": "$12 per lead",
+      "metric": "Cost per lead",
+      "unit": "USD/lead",
+      "period": "Comparison",
+      "evidence": "For example, if Ad A costs $5 per lead and Ad B costs $12 per lead, you know A is more efficient for your budget.",
+      "date": "N/A"
+    },
+    {
+      "label": "Click-through rates",
+      "value": "click-through rates",
+      "metric": "Click-through rates",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Look at click-through rates. This tells you if your ad creative and message are interesting enough to stop someone scrolling.",
+      "date": "N/A"
+    }
+  ],
+  "hero_stat": {
+    "value": "$5 per lead",
+    "label": "Most Efficient Ad Cost Per Lead"
+  },
+  "narration": "To make decisions about ad performance, you must track metrics like click-through rates and cost per lead. Comparing these numbers helps determine which ad is more efficient for your budget."
+}
