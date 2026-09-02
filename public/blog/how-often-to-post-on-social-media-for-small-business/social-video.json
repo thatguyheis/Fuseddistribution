@@ -3,6 +3,19 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/how-often-to-post-on-social-media-for-small-business/how-often-to-post-on-social-media-for-small-business.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.186Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/EoZmFn7bah4",
+      "sentAt": "2026-08-26T20:20:03.615Z"
+    },
+    "x": {
+      "url": "https://x.com/290904877/status/2092703749160513982",
+      "sentAt": "2026-08-26T20:00:29.234Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/DchDnZniOuF/",
+      "sentAt": "2026-08-26T20:23:02.367Z"
+    }
+  },
+  "updatedAt": "2026-08-26T21:07:33.908Z"
 }
