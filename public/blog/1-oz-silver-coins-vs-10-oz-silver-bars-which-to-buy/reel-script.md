@@ -1,98 +1,96 @@
-# Reel Script: 1 oz Silver Coins vs 10 oz Silver Bars Which to Buy
-Generated: 2026-06-18
-Target length: 183 seconds
-Format: Long Form
-Hook type: Contrarian Stat
-
-> **Timestamp rules (parser enforces these):**
-> - All timestamps MUST be whole integers — no decimals. `(23–38s)` ✓ · `(23–38.5s)` ✗
-> - The `Target length:` value must equal the last segment's end time exactly.
+# Reel Script: 1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy
+format: long-form
+segments: 10
+target-duration: 181s
 
 ---
 
-## HOOK (0–15s)
-Text: $416 MORE PER 100 OZ OF COINS
-Narration: Most buyers pay three times more premium on 1 oz coins than on 10 oz bars. On 100 oz, that difference is $416 in real money.
+## HOOK
+
+**Visual:** Topic intro shot
+**Duration:** 4s minimum
+
+Narration: Ten ounce bars offer bulk holding potential for larger investments.
 
 ---
 
-## BODY
+## OVERLAY: CHOOSING BETWEEN SILVER COINS
 
-**Stat 1** (15–34s)
-Text: 12-22% COIN PREMIUM
-Explanation: A 1 oz Silver Eagle carries a 12 to 22 percent dealer premium over silver spot price
-Graphic_type: percent_fill
-Graphic_value: 18
-Graphic_label: 1 oz Coin Premium
-Graphic_remainder_label: Spot Price
-Narration: When you buy a 1 oz Silver Eagle, you pay 12 to 22 percent above the spot price of silver. That covers minting, distribution, and dealer margin. At $32 per ounce spot, the total cost runs between $35.84 and $39.04 per ounce.
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
 
-**Stat 2** (34–52s)
-Text: 4-6% BAR PREMIUM
-Explanation: A 10 oz silver bar carries only a 4 to 6 percent dealer premium over spot price
-Graphic_type: percent_fill
-Graphic_value: 5
-Graphic_label: 10 oz Bar Premium
-Graphic_remainder_label: Spot Price
-Narration: A 10 oz silver bar from a major bullion mint costs 4 to 6 percent over spot. At $32 per ounce spot, that puts your total cost between $33.28 and $33.92 per ounce. That is a meaningful difference from coins.
-
-**Stat 3** (52–71s)
-Text: SAVE $416 ON 100 OZ
-Explanation: Choosing bars over coins saves about $416 on a 100 oz silver position at typical premiums
-Graphic_type: percent_fill
-Graphic_value: 11
-Graphic_label: Premium Savings
-Graphic_remainder_label: Same Spot Value
-Narration: Run the math on 100 ounces. Buying 100 Silver Eagles at 18 percent premium costs $3,776. Buying 10 x 10 oz bars at 5 percent costs $3,360. The difference is $416. That buys more than 12 additional ounces of silver at spot.
-
-**Chart** (71–93s)
-Title: TYPICAL DEALER PREMIUMS OVER SPOT PRICE
-Bars:
-- 10 oz bar: 5%
-- 1 oz round: 8%
-- 1 oz Silver Eagle: 18%
-Narration: The chart shows premium ranges by product type. Generic bars cost around 5 percent over spot. Silver rounds run about 8 percent. Government-minted Silver Eagles carry the highest premium at around 18 percent. The format you choose determines how much silver you actually get for your dollar.
-
-**Stat 4** (93–114s)
-Text: 5X STORAGE FOOTPRINT
-Explanation: 100 individual 1 oz coins take up roughly five times the storage space of 10 oz bars
-Graphic_type: percent_fill
-Graphic_value: 80
-Graphic_label: Coin Storage Footprint
-Graphic_remainder_label: Bar Footprint
-Narration: Storage is where the format really shows its cost. One hundred individual coins need 100 capsules, five storage tubes, or a chunk of a monster box. Ten bars stack flat and take up a fraction of the space. For a home safe, bars are the smarter fit.
-
-**Stat 5** (114–134s)
-Text: $1-3 PER OZ RESALE EDGE
-Explanation: Silver Eagles resell $1 to $3 per ounce above dealer spot buy price versus generic bars at spot
-Graphic_type: none
-Narration: Coins win on exit flexibility. American Silver Eagles are the most recognized silver product in the USA. Dealers pay $1 to $3 above their buy price per ounce on Eagles. Generic 10 oz bars usually sell at or near spot on the resale side.
-
-**Stat 6** (134–152s)
-Text: 50 OZ BREAKEVEN
-Explanation: Premium savings on bars become meaningful at 50 oz or more purchased at one time
-Graphic_type: none
-Narration: Below 50 ounces, the dollar difference between coins and bars is real but modest. Above 50 ounces, the savings compound. Most buyers building a serious position choose bars for the bulk of their stack and add coins selectively.
-
-**Overlay 1** (152–171s)
-Text: BARS FOR BULK, COINS FOR FLEX
-Narration: Choose bars for maximum silver per dollar, long-term holds, and home safe storage. Choose coins when you want to sell individual pieces, prefer the most liquid silver format, or plan to give silver as a gift. Most buyers end up holding both.
+Narration: Choosing between 1 oz silver coins and 10 oz silver bars is a fundamental decision for any new or intermediate investor looking to enter the precious metals market. Both formats offer distinct advantages and disadvantages depending on your investment goals, storage capabilities, and risk tolerance. We stock both options here at Fused Distribution, and we recommend understanding the core differences before making your purchase.
 
 ---
 
-## QUESTION (171–183s)
-Text: COINS OR BARS FOR YOUR STACK?
-Subtext: DROP YOUR ANSWER BELOW
-Narration: Follow for more silver news.
+## OVERLAY: FINALLY PROVIDE CLEAR FRAMEWORK
+
+**Visual:** Supporting article visual
+**Duration:** 18s minimum
+
+Narration: Finally, we will provide a clear framework to help you decide whether to start with the tangible nature of coins or the bulk investment potential of bars. We stock a wide variety of silver products, and understanding the difference between 1 oz silver coins and 10 oz silver bars is crucial for making an informed investment decision.
 
 ---
 
-## VISUAL DIRECTION
-- Segment 0 (hook): hero.jpg or silver bars and coins side by side
-- Segments 1-2: silver coins and bars comparison footage
-- Segment 3: precious metals safe storage home
-- Segment 4: chart — clean background photo
-- Segment 5: silver coins dealer resale
-- Segment 6: silver bullion investment buying
-- Segment 7: stacking silver bars collection
-- Segment 8: question card cyan accent
+## OVERLAY: BEGINNERS COINS OFFER ACCESSIBILITY
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: For beginners, coins offer accessibility, whereas investors looking for bulk holding or a more direct metal investment might find the larger bars more advantageous. We advise comparing the total investment potential of each format based on your specific goals. Analyzing Transaction Fees and Premiums When comparing 1 oz silver coins to 10 oz silver bars, understanding the associated transaction costs and premiums is crucial for making an informed investment decision.
+
+---
+
+## OVERLAY: STOCK BOTH SILVER COINS
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: We stock both 1 oz silver coins and 10 oz silver bars, and the proper safeguarding ensures the long-term value of your precious metal is maintained. For coins, we recommend keeping them in a secure, airtight container, such as a high-quality, sealed tin or a dedicated silver coin safe. This protects the coins from environmental contaminants like humidity and moisture, which can lead to tarnishing or corrosion over time.
+
+---
+
+## OVERLAY: SEE JOHNSON MATTHEE SILVER
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: For more on this, see Johnson Matthee Silver Bars Guide. Conversely, 10 oz silver bars are better suited for investors looking for larger allocations or those seeking to hold a substantial amount of silver. Dealing with bars often involves different market mechanisms, so we recommend consulting with our team to determine the most efficient way for you to acquire the specific form of silver that aligns perfectly with your investment strategy.
+
+---
+
+## OVERLAY: CONSIDERING SILVER INVESTMENTS CHOICE
+
+**Visual:** Supporting article visual
+**Duration:** 23s minimum
+
+Narration: When considering silver investments, the choice between 1 oz silver coins and 10 oz silver bars depends entirely on your specific investment strategy and risk tolerance. We stock both options to help you navigate the market effectively. 1 oz silver coins are excellent for investors seeking liquidity and easy entry points. They offer smaller transaction sizes, making them ideal for beginners who want to start accumulating silver without a large upfront commitment.
+
+---
+
+## OVERLAY: SILVER COINS OFFER PORTABILITY
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Silver coins offer portability and liquidity, making them excellent for smaller allocations or those who prefer physical, easily accessible assets. Conversely, 10 oz silver bars are ideal for larger holdings, offering potentially lower per ounce costs and a more substantial physical presence in your portfolio. We recommend assessing current market volatility and your long term strategy. For beginners, starting with 1 oz coins can provide a lower barrier to entry.
+
+---
+
+## OVERLAY: CONVERSELY SILVER BARS SUBSTANTIAL
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Conversely, 10 oz silver bars are a substantial investment option. These bars provide a larger physical quantity of silver in a single purchase, which can be advantageous for investors looking to hold a larger physical asset. We recommend consulting with our experts to determine whether the liquidity and physical form of coins or bars best align with your specific financial goals.
+
+---
+
+## QUESTION
+
+**Visual:** Question card
+**Duration:** 6s minimum
+
+Text: Which format fits your investment style best: coins or bars?
+Subtext: COMMENT BELOW
+Narration: Which format fits your investment style best: coins or bars? Follow for more silver news.

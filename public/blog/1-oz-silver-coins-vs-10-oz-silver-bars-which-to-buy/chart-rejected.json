@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Comparison of Silver Investment Options",
+  "takeaway": "Coins are better for accessibility, while bars suit investors seeking bulk holding potential.",
+  "source": "Fused Distribution",
+  "source_url": "https://fusedistribution.com",
+  "data": [
+    {
+      "label": "Accessibility",
+      "value": "Silver coins offer accessibility",
+      "metric": "Investment Style",
+      "unit": "N/A",
+      "period": "General",
+      "evidence": "Silver coins offer accessibility, whereas 10 oz silver bars are better suited for long-term holders or investors with a higher conviction in the long-term price appreciation of silver.",
+      "date": "N/null"
+    },
+    {
+      "label": "Bulk Holding",
+      "value": "10 oz silver bars",
+      "metric": "Physical Quantity",
+      "unit": "oz",
+      "period": "General",
+      "evidence": "Conversely, 10 oz silver bars are better suited for long-term holders or investors with a higher conviction in the long-term price appreciation of silver.",
+      "date": "/null"
+    },
+    {
+      "label": "Entry Point",
+      "value": "1 oz silver coins",
+      "metric": "Investment Barrier to Entry",
+      "unit": "N/A",
+      "period": "General",
+      "evidence": "1 oz silver coins are excellent for investors seeking liquidity and easy entry points.",
+      "date": "/null"
+    },
+    {
+      "label": "Substantial Asset",
+      "value": "10 oz silver bars",
+      "metric": "Physical Presence",
+      "unit": "oz",
+      "period": "General",
+      "evidence": "Conversely, 10 oz silver bars are a substantial investment option. These bars provide a larger physical quantity of silver in a single purchase, which can be advantageous for investors looking to hold a larger physical asset.",
+      "date": "/null"
+    }
+  ]
+}

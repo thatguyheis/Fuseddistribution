@@ -1,0 +1,9 @@
+{
+  "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "topic coherence: no H2 contains title topic terms (silver, coins, bars, buying)"
+  ],
+  "mode": "deterministic-local"
+}

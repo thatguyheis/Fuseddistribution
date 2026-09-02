@@ -1,88 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
-  <defs>
-    <radialGradient id="cg2" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#0d3a54" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="gg2" cx="8%" cy="10%" r="45%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
-      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="rg2" cx="90%" cy="85%" r="40%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Background -->
   <rect width="1200" height="1200" fill="#041018"/>
-  <rect width="1200" height="1200" fill="url(#cg2)"/>
-  <rect width="1200" height="1200" fill="url(#gg2)"/>
-  <rect width="1200" height="1200" fill="url(#rg2)"/>
-
-  <!-- Grid lines -->
-  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="600" r="420" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.06"/>
-  <circle cx="600" cy="600" r="280" fill="none" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.10"/>
-
-  <!-- Scatter dots -->
-  <circle cx="100" cy="140" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
-  <circle cx="220" cy="380" r="1" fill="#4dffb8" fill-opacity="0.18"/>
-  <circle cx="350" cy="980" r="1.5" fill="#58d6ff" fill-opacity="0.15"/>
-  <circle cx="520" cy="90" r="1" fill="#4dffb8" fill-opacity="0.25"/>
-  <circle cx="760" cy="1100" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
-  <circle cx="940" cy="120" r="1" fill="#4dffb8" fill-opacity="0.22"/>
-  <circle cx="1090" cy="650" r="1.5" fill="#58d6ff" fill-opacity="0.18"/>
-  <circle cx="420" cy="820" r="1" fill="#58d6ff" fill-opacity="0.15"/>
-  <circle cx="800" cy="280" r="1.5" fill="#4dffb8" fill-opacity="0.20"/>
-  <circle cx="140" cy="860" r="1" fill="#58d6ff" fill-opacity="0.25"/>
-
-  <!-- TOP ZONE: category eyebrow + brand -->
-  <rect x="440" y="60" width="320" height="36" rx="18" fill="rgba(88,214,255,0.10)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
-  <text x="600" y="85" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="800" letter-spacing="4" fill="#58d6ff">SILVER &#183; BUYING GUIDE</text>
-
-  <text x="600" y="140" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="36" letter-spacing="8" fill="rgba(175,198,207,0.35)">FUSED</text>
-
-  <!-- MAIN TITLE -->
-  <text x="600" y="260" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="80" letter-spacing="3" fill="#ecf8fb">1 OZ COINS</text>
-  <text x="600" y="350" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="56" letter-spacing="6" fill="#58d6ff">VS</text>
-  <text x="600" y="440" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="80" letter-spacing="3" fill="#ecf8fb">10 OZ BARS</text>
-
-  <!-- DIVIDER -->
-  <line x1="200" y1="480" x2="1000" y2="480" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
-
-  <!-- KEY STAT: $416 savings -->
-  <text x="600" y="600" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="200" fill="#4dffb8" fill-opacity="0.92">$416</text>
-  <text x="600" y="668" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.75)" letter-spacing="2">DIFFERENCE ON 100 OZ POSITION</text>
-
-  <!-- MINI COMPARISON CARDS -->
-  <!-- Left card: coins -->
-  <rect x="100" y="720" width="440" height="160" rx="16" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
-  <text x="320" y="768" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="rgba(175,198,207,0.55)">1 OZ COINS</text>
-  <text x="320" y="828" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="52" fill="#58d6ff">12&#8211;22%</text>
-  <text x="320" y="862" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="rgba(175,198,207,0.65)">premium over spot</text>
-
-  <!-- Right card: bars -->
-  <rect x="660" y="720" width="440" height="160" rx="16" fill="rgba(77,255,184,0.05)" stroke="rgba(77,255,184,0.15)" stroke-width="1"/>
-  <text x="880" y="768" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="rgba(175,198,207,0.55)">10 OZ BARS</text>
-  <text x="880" y="828" text-anchor="middle" font-family="Impact,Haettenschweiler,Arial Narrow Bold,sans-serif" font-size="52" fill="#4dffb8">4&#8211;6%</text>
-  <text x="880" y="862" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="15" fill="rgba(175,198,207,0.65)">premium over spot</text>
-
-  <!-- EXCERPT -->
-  <text x="600" y="960" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.70)">Bars cost less. Coins sell more easily.</text>
-  <text x="600" y="993" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="rgba(175,198,207,0.70)">Full breakdown inside.</text>
-
-  <!-- CTA BUTTON -->
-  <rect x="280" y="1060" width="640" height="68" rx="18" fill="rgba(88,214,255,0.07)" stroke="rgba(88,214,255,0.30)" stroke-width="1.5"/>
-  <text x="600" y="1103" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="17" font-weight="800" letter-spacing="3" fill="#58d6ff">FULL BREAKDOWN AT FUSEDDISTRIBUTION.COM</text>
-
-  <!-- Bottom source note -->
-  <text x="600" y="1168" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" fill="rgba(175,198,207,0.30)" letter-spacing="2">AT $32 SPOT &#183; JM BULLION / SD BULLION 2025&#8211;2026</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="1200" fill="url(#g1)"/><rect width="1200" height="1200" fill="url(#g2)"/>
+  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="324" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="65" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="385" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="705" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="1025" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="225" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="545" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="865" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="65" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="385" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="705" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED</text>
+  <text x="600" y="308" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">1 OZ SILVER COINS</text>
+  <text x="600" y="390" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">VS. 10 OZ SILVER</text>
+  <text x="600" y="472" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BARS: BUYING GUIDE</text>
+  
+  <rect x="350" y="1020" width="500" height="68" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
+  <text x="600" y="1063" font-family="Arial, sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
 </svg>
