@@ -1,79 +1,80 @@
 # Reel Data: how-to-target-local-customers-with-facebook-ads
 topic: tech
+focus: how to target local customers with facebook ads
 format: long-form
 
-hook: Target local customers with a tight radius and video strategy.
-hook_type: contrarian_stat
+hook: Target local customers with Facebook ads for real calls and appointments.
+hook_type: pain_point
 
 ## segments
-- type: stat
-  text: 1 TO 5 MILES RADIUS BUSINESS ADDRESS TARGET
-  narration: Set your Facebook ad radius to 1 to 5 miles around your business address, target people by zip code and interest, and run mobile-first video creative with a phone number and call button. That combination beats every "boost post" shortcut and puts your ad in front of people who can actually walk through your door or pick up the phone.
-- type: stat
-  text: 4 MILES RADIUS NEVER RUN ADS
-  narration: Below is the exact playbook I use with local clients: pest control, dentists, med spas, HVAC, coffee shops. It works because it treats Facebook like a local billboard with a phone number, not a branding exercise. Pick your radius based on your service area, not your ambition. A pizza shop that delivers within 4 miles should never run ads to a 25-mile ring.
-- type: stat
-  text: 20 COST MILE RADIUS MILES
-  narration: I have seen cost per lead drop by half just by shrinking a 20-mile radius to 5 miles. Now layer in who those people are. Under Detailed Targeting, add interests and behaviors that match your service. A wedding photographer adds "engaged (6 months)" and "recently engaged." A roofer adds "new homeowners" and interests in home improvement stores. A dentist adds parents of young children within the zip code.
-- type: stat
-  text: 90 WORDS MOBILE FACEBOOK CUTS
-  narration: "Springfield Roof Leaks Fixed Same Day" beats "Quality Roofing Services." The first line of your primary text should name the problem and the location again. We fix leaks the same day we quote them." Keep the body under 90 words. On mobile, Facebook cuts off text after about 125 characters before the "See more" link. The important stuff has to come first.
-- type: stat
-  text: 15 SECOND VERTICAL VIDEO STANDING
-  narration: Put text on your image in a font big enough to read one-handed on a phone. A 15-second vertical video of you standing in front of your shop or truck outperforms a still photo almost every time. It does not need to be polished. Film yourself saying three things: who you are, where you are, and what you offer this week.
-- type: stat
-  text: $500 TO $2,000 BUDGET MONTH PICK NUMBER
-  narration: Different opening lines, different offers, different shots. Facebook will spend more budget on the winner within 48 hours. Kill the losers, then make three new variations of the winner. This is how you compound results instead of guessing. The typical Facebook ad budget range for small businesses is roughly $500 to $2,000 per month . Pick a number inside that range and commit to 90 days before you judge results.
-- type: stat
-  text: 10 MINUTES PASTE CODE SITE HEADER
-  narration: Install the Meta Pixel on your website. It takes about 10 minutes if you paste the code into your site header, or one click if you use Shopify, Wix, or Squarespace. The pixel tracks anyone who visits your site so you can show them ads later. Build a retargeting audience of everyone who visited your site in the last 30 days but did not fill out your form.
 - type: overlay
-  text: USE TOOL LIKE CALLRAIL
-  narration: Then use a tool like CallRail or a dedicated tracking number so you know which calls came from Facebook versus Google versus your yard sign. If someone fills out a booking form on your site, the pixel should fire a "Lead" event. Inside Ads Manager, add the Cost Per Lead column so you see exactly what each booking costs.
-- type: stat
-  text: 5 MILE RADIUS ADDRESS WRITE
-  narration: Set a 5-mile radius around your address. Write one ad that names your town and your offer. Shoot one 15-second vertical video on your phone. Set your budget at $20 per day. Turn on the Meta Pixel on your website. Run it for 14 days without touching it, then check your cost per lead and double down on what worked. Your competitors are still boosting posts and hoping. You will be running a real local ad system by the end of the month.
+  text: LOCAL BUSINESS CUSTOMERS NEIGHBORHOOD
+  narration: If you have a local business, you need customers in your neighborhood. You are looking for ways to use Facebook ads to bring local people to your door. This guide shows you exactly how to set up Facebook advertising to find customers searching for your services right now. We focus on getting real local calls and appointments, not just likes.
+- type: overlay
+  text: FACEBOOK GIVES PRECISE CONTROL
+  narration: Facebook gives you precise control over where your ads appear. You can set a targeting radius around a specific address or postal code. This lets you target people within a mile or even fifty miles of your location. This precision is key for local services. You are not wasting money showing ads to people who cannot possibly use your service.
+- type: overlay
+  text: USE LOCATION TARGETING FEATURE
+  narration: Use the location targeting feature in your ad manager. If you are a mechanic, target zip codes near your shop. If you are a restaurant, target people within walking distance of your location. This tight focus ensures your ad budget hits the right local audience. Most people use their phones to find local services. This means your ad needs to look perfect on a small screen.
+- type: overlay
+  text: SOME PEOPLE SEE CALL
+  narration: Some people see your ad but do not call right away. You can show ads specifically to people who have already visited your website or engaged with your previous ads. Retargeting ads can lift conversion rates for local campaigns. This is a smart way to bring back those warm leads. If someone looked at your service page but didn't call, a reminder ad can push them to take action.
+- type: overlay
+  text: STRATEGY HELPS TURN BROWSERS
+  narration: This strategy helps turn browsers into buyers. Impressions are not the final measure of success. You need to track the actual results that matter for your bottom line. These are the direct signs of success. We need to look at the actual outcomes. If you are running ads, monitor the phone numbers coming in. If you are getting booked appointments, that is the real win.
+- type: overlay
+  text: DON'T TRY SPEND HUGE
+  narration: Don't try to spend a huge amount immediately. See which combination works best for your area. This controlled spending helps you learn fast. You learn what your local audience responds to. Vague language gets ignored by local searchers. You must be specific about what you do and where you do it.
+- type: overlay
+  text: ADS HELP SHOW PROOF
+  narration: Your ads can help you show this proof. Encourage customers to leave reviews on Google. You can even feature positive customer testimonials in your Facebook ads. This builds real local proof faster than any fancy marketing trick. Focus on getting real feedback from people who have used your service. This authentic proof is much stronger than any generic claim. It shows that other local people are happy with your work.
+- type: overlay
+  text: ONCE LEAD DON'T FORGET
+  narration: Once you have a lead, don't just forget them. Show them content related to your service. This keeps your business top of mind when they are ready to buy. It moves a potential customer from just looking to actively considering you. It keeps your business top of mind until the right time. This is how you turn interest into actual bookings.
+- type: overlay
+  text: FOCUS COPY SPECIFIC LOCAL
+  narration: Focus your copy on specific local needs. Adjust your targeting based on what works. Stop wasting money on marketing that doesn't get local calls. See how we actually get your business found on Google, starting at /#contact.
 
 ## question
-text: Ready to stop wasting ad spend and start getting local?
+text: Ready to turn local Facebook ads into real, paying customers?
 subtext: COMMENT BELOW
-narration: Ready to stop wasting ad spend and start getting local? Follow for more practical business tips.
+narration: Ready to turn local Facebook ads into real, paying customers? Follow for more practical business tips.
 
 ## shared
-discussion_question: Ready to stop wasting ad spend and start getting local?
+discussion_question: Ready to turn local Facebook ads into real, paying customers?
 hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
 
 ## media_queries
 - segment: 0
-  query: "How To Target Local Customers With Facebook Ads"
+  query: "how to target local customers with facebook ads"
   prefer: video
 - segment: 1
-  query: "How To Target Local Customers With Facebook Ads 1 to 5"
+  query: "how to target local customers with facebook ads local business customers"
   prefer: photo
 - segment: 2
-  query: "How To Target Local Customers With Facebook Ads 4 miles radius"
+  query: "how to target local customers with facebook ads facebook gives precise"
   prefer: photo
 - segment: 3
-  query: "How To Target Local Customers With Facebook Ads 20 cost mile"
+  query: "how to target local customers with facebook ads use location targeting"
   prefer: photo
 - segment: 4
-  query: "How To Target Local Customers With Facebook Ads 90 words mobile"
+  query: "how to target local customers with facebook ads some people see"
   prefer: photo
 - segment: 5
-  query: "How To Target Local Customers With Facebook Ads 15 second vertical"
+  query: "how to target local customers with facebook ads strategy helps turn"
   prefer: photo
 - segment: 6
-  query: "How To Target Local Customers With Facebook Ads 500 to 2"
+  query: "how to target local customers with facebook ads don t try"
   prefer: photo
 - segment: 7
-  query: "How To Target Local Customers With Facebook Ads 10 minutes paste"
+  query: "how to target local customers with facebook ads ads help show"
   prefer: photo
 - segment: 8
-  query: "How To Target Local Customers With Facebook Ads use tool like"
+  query: "how to target local customers with facebook ads once lead don"
   prefer: photo
 - segment: 9
-  query: "How To Target Local Customers With Facebook Ads 5 mile radius"
+  query: "how to target local customers with facebook ads focus copy specific"
   prefer: photo
 - segment: 10
-  query: "How To Target Local Customers With Facebook Ads customer feedback"
+  query: "how to target local customers with facebook ads customer feedback"
   prefer: photo

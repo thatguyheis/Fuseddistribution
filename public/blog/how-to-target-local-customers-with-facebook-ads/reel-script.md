@@ -1,7 +1,7 @@
 # Reel Script: how-to-target-local-customers-with-facebook-ads
 format: long-form
 segments: 11
-target-duration: 200s
+target-duration: 183s
 
 ---
 
@@ -10,88 +10,88 @@ target-duration: 200s
 **Visual:** Topic intro shot
 **Duration:** 4s minimum
 
-Narration: Target local customers with a tight radius and video strategy.
+Narration: Target local customers with Facebook ads for real calls and appointments.
 
 ---
 
-## STAT: 1 TO 5 MILES RADIUS BUSINESS ADDRESS TARGET
+## OVERLAY: LOCAL BUSINESS CUSTOMERS NEIGHBORHOOD
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: Set your Facebook ad radius to 1 to 5 miles around your business address, target people by zip code and interest, and run mobile-first video creative with a phone number and call button. That combination beats every "boost post" shortcut and puts your ad in front of people who can actually walk through your door or pick up the phone.
+Narration: If you have a local business, you need customers in your neighborhood. You are looking for ways to use Facebook ads to bring local people to your door. This guide shows you exactly how to set up Facebook advertising to find customers searching for your services right now. We focus on getting real local calls and appointments, not just likes.
 
 ---
 
-## STAT: 4 MILES RADIUS NEVER RUN ADS
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Below is the exact playbook I use with local clients: pest control, dentists, med spas, HVAC, coffee shops. It works because it treats Facebook like a local billboard with a phone number, not a branding exercise. Pick your radius based on your service area, not your ambition. A pizza shop that delivers within 4 miles should never run ads to a 25-mile ring.
-
----
-
-## STAT: 20 COST MILE RADIUS MILES
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: I have seen cost per lead drop by half just by shrinking a 20-mile radius to 5 miles. Now layer in who those people are. Under Detailed Targeting, add interests and behaviors that match your service. A wedding photographer adds "engaged (6 months)" and "recently engaged." A roofer adds "new homeowners" and interests in home improvement stores. A dentist adds parents of young children within the zip code.
-
----
-
-## STAT: 90 WORDS MOBILE FACEBOOK CUTS
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: "Springfield Roof Leaks Fixed Same Day" beats "Quality Roofing Services." The first line of your primary text should name the problem and the location again. We fix leaks the same day we quote them." Keep the body under 90 words. On mobile, Facebook cuts off text after about 125 characters before the "See more" link. The important stuff has to come first.
-
----
-
-## STAT: 15 SECOND VERTICAL VIDEO STANDING
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Put text on your image in a font big enough to read one-handed on a phone. A 15-second vertical video of you standing in front of your shop or truck outperforms a still photo almost every time. It does not need to be polished. Film yourself saying three things: who you are, where you are, and what you offer this week.
-
----
-
-## STAT: $500 TO $2,000 BUDGET MONTH PICK NUMBER
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Different opening lines, different offers, different shots. Facebook will spend more budget on the winner within 48 hours. Kill the losers, then make three new variations of the winner. This is how you compound results instead of guessing. The typical Facebook ad budget range for small businesses is roughly $500 to $2,000 per month . Pick a number inside that range and commit to 90 days before you judge results.
-
----
-
-## STAT: 10 MINUTES PASTE CODE SITE HEADER
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Install the Meta Pixel on your website. It takes about 10 minutes if you paste the code into your site header, or one click if you use Shopify, Wix, or Squarespace. The pixel tracks anyone who visits your site so you can show them ads later. Build a retargeting audience of everyone who visited your site in the last 30 days but did not fill out your form.
-
----
-
-## OVERLAY: USE TOOL LIKE CALLRAIL
+## OVERLAY: FACEBOOK GIVES PRECISE CONTROL
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: Then use a tool like CallRail or a dedicated tracking number so you know which calls came from Facebook versus Google versus your yard sign. If someone fills out a booking form on your site, the pixel should fire a "Lead" event. Inside Ads Manager, add the Cost Per Lead column so you see exactly what each booking costs.
+Narration: Facebook gives you precise control over where your ads appear. You can set a targeting radius around a specific address or postal code. This lets you target people within a mile or even fifty miles of your location. This precision is key for local services. You are not wasting money showing ads to people who cannot possibly use your service.
 
 ---
 
-## STAT: 5 MILE RADIUS ADDRESS WRITE
+## OVERLAY: USE LOCATION TARGETING FEATURE
 
 **Visual:** Supporting article visual
-**Duration:** 26s minimum
+**Duration:** 21s minimum
 
-Narration: Set a 5-mile radius around your address. Write one ad that names your town and your offer. Shoot one 15-second vertical video on your phone. Set your budget at $20 per day. Turn on the Meta Pixel on your website. Run it for 14 days without touching it, then check your cost per lead and double down on what worked. Your competitors are still boosting posts and hoping. You will be running a real local ad system by the end of the month.
+Narration: Use the location targeting feature in your ad manager. If you are a mechanic, target zip codes near your shop. If you are a restaurant, target people within walking distance of your location. This tight focus ensures your ad budget hits the right local audience. Most people use their phones to find local services. This means your ad needs to look perfect on a small screen.
+
+---
+
+## OVERLAY: SOME PEOPLE SEE CALL
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Some people see your ad but do not call right away. You can show ads specifically to people who have already visited your website or engaged with your previous ads. Retargeting ads can lift conversion rates for local campaigns. This is a smart way to bring back those warm leads. If someone looked at your service page but didn't call, a reminder ad can push them to take action.
+
+---
+
+## OVERLAY: STRATEGY HELPS TURN BROWSERS
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: This strategy helps turn browsers into buyers. Impressions are not the final measure of success. You need to track the actual results that matter for your bottom line. These are the direct signs of success. We need to look at the actual outcomes. If you are running ads, monitor the phone numbers coming in. If you are getting booked appointments, that is the real win.
+
+---
+
+## OVERLAY: DON'T TRY SPEND HUGE
+
+**Visual:** Supporting article visual
+**Duration:** 17s minimum
+
+Narration: Don't try to spend a huge amount immediately. See which combination works best for your area. This controlled spending helps you learn fast. You learn what your local audience responds to. Vague language gets ignored by local searchers. You must be specific about what you do and where you do it.
+
+---
+
+## OVERLAY: ADS HELP SHOW PROOF
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Your ads can help you show this proof. Encourage customers to leave reviews on Google. You can even feature positive customer testimonials in your Facebook ads. This builds real local proof faster than any fancy marketing trick. Focus on getting real feedback from people who have used your service. This authentic proof is much stronger than any generic claim. It shows that other local people are happy with your work.
+
+---
+
+## OVERLAY: ONCE LEAD DON'T FORGET
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Once you have a lead, don't just forget them. Show them content related to your service. This keeps your business top of mind when they are ready to buy. It moves a potential customer from just looking to actively considering you. It keeps your business top of mind until the right time. This is how you turn interest into actual bookings.
+
+---
+
+## OVERLAY: FOCUS COPY SPECIFIC LOCAL
+
+**Visual:** Supporting article visual
+**Duration:** 12s minimum
+
+Narration: Focus your copy on specific local needs. Adjust your targeting based on what works. Stop wasting money on marketing that doesn't get local calls. See how we actually get your business found on Google, starting at /#contact.
 
 ---
 
@@ -100,6 +100,6 @@ Narration: Set a 5-mile radius around your address. Write one ad that names your
 **Visual:** Question card
 **Duration:** 6s minimum
 
-Text: Ready to stop wasting ad spend and start getting local?
+Text: Ready to turn local Facebook ads into real, paying customers?
 Subtext: COMMENT BELOW
-Narration: Ready to stop wasting ad spend and start getting local? Follow for more practical business tips.
+Narration: Ready to turn local Facebook ads into real, paying customers? Follow for more practical business tips.
