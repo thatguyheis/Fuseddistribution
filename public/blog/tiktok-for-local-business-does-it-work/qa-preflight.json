@@ -1,0 +1,9 @@
+{
+  "slug": "tiktok-for-local-business-does-it-work",
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "index.html: suspicious malformed year"
+  ],
+  "mode": "deterministic-local"
+}
