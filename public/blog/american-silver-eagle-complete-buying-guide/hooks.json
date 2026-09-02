@@ -1,0 +1,10 @@
+{
+  "hook": "Calculate true cost per ounce to maximize your silver investment return.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$25",
+    "label": "per ounce A coin"
+  },
+  "discussion_question": "Ready to turn silver knowledge into your first smart investment?",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}

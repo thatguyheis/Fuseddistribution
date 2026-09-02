@@ -1,94 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <radialGradient id="glow-c" cx="60%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow-tl" cx="8%" cy="10%" r="35%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#041018" stop-opacity="0"/>
-    </radialGradient>
-    <path id="star-sm" d="M 0,-7 L 1.76,-2.43 L 6.66,-2.16 L 2.85,0.93 L 4.11,5.66 L 0,3 L -4.11,5.66 L -2.85,0.93 L -6.66,-2.16 L -1.76,-2.43 Z"/>
-  </defs>
-
-  <!-- Background -->
   <rect width="1200" height="630" fill="#041018"/>
-  <rect width="1200" height="630" fill="url(#glow-tl)"/>
-  <rect width="1200" height="630" fill="url(#glow-c)"/>
-
-  <!-- Grid lines -->
-  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-opacity="0.07" stroke-width="1"/>
-  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-opacity="0.11" stroke-width="1"/>
-
-  <!-- Scatter dots -->
-  <circle cx="145" cy="88" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
-  <circle cx="390" cy="54" r="1" fill="#4dffb8" fill-opacity="0.18"/>
-  <circle cx="755" cy="42" r="1.5" fill="#58d6ff" fill-opacity="0.25"/>
-  <circle cx="1050" cy="110" r="1" fill="#4dffb8" fill-opacity="0.20"/>
-  <circle cx="92" cy="310" r="1.5" fill="#58d6ff" fill-opacity="0.15"/>
-  <circle cx="1148" cy="220" r="1" fill="#4dffb8" fill-opacity="0.18"/>
-  <circle cx="480" cy="578" r="1.5" fill="#58d6ff" fill-opacity="0.20"/>
-  <circle cx="870" cy="590" r="1" fill="#4dffb8" fill-opacity="0.15"/>
-  <circle cx="220" cy="520" r="1.5" fill="#58d6ff" fill-opacity="0.22"/>
-  <circle cx="990" cy="400" r="1" fill="#4dffb8" fill-opacity="0.18"/>
-
-  <!-- LEFT CARD ZONE (x=42-337, center x=190) -->
-
-  <!-- Card 1: Purity -->
-  <rect x="47" y="165" width="286" height="88" rx="14" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
-  <text x="190" y="208" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="34" fill="#58d6ff" text-anchor="middle" letter-spacing="2">1 OZ</text>
-  <text x="190" y="232" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="11" fill="rgba(175,198,207,0.70)" text-anchor="middle" letter-spacing="2">.999 FINE SILVER</text>
-
-  <!-- Card 2: Year -->
-  <rect x="47" y="263" width="286" height="76" rx="14" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
-  <text x="190" y="283" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">MINTED SINCE</text>
-  <text x="190" y="322" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="36" fill="#ecf8fb" text-anchor="middle" letter-spacing="1">1986</text>
-
-  <!-- Card 3: Face Value -->
-  <rect x="47" y="349" width="286" height="76" rx="14" fill="rgba(77,255,184,0.04)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
-  <text x="190" y="369" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">FACE VALUE</text>
-  <text x="190" y="407" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="32" fill="#4dffb8" text-anchor="middle" letter-spacing="1">$1 USD</text>
-
-  <!-- CENTER ZONE (x=340-860, center x=600) -->
-  <text x="600" y="232" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="4">AMERICAN</text>
-  <text x="600" y="293" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="60" fill="#58d6ff" text-anchor="middle" letter-spacing="3">SILVER EAGLE</text>
-
-  <!-- 5 stars at y=318, centered at x=600, 18px spacing -->
-  <use href="#star-sm" transform="translate(564,318)" fill="#58d6ff" fill-opacity="0.85"/>
-  <use href="#star-sm" transform="translate(582,318)" fill="#58d6ff" fill-opacity="0.85"/>
-  <use href="#star-sm" transform="translate(600,318)" fill="#58d6ff" fill-opacity="0.85"/>
-  <use href="#star-sm" transform="translate(618,318)" fill="#58d6ff" fill-opacity="0.85"/>
-  <use href="#star-sm" transform="translate(636,318)" fill="#58d6ff" fill-opacity="0.85"/>
-
-  <text x="600" y="350" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="14" fill="rgba(175,198,207,0.75)" text-anchor="middle" letter-spacing="5">COMPLETE BUYING GUIDE</text>
-  <text x="600" y="380" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="11" fill="rgba(88,214,255,0.60)" text-anchor="middle" letter-spacing="3">1 OZ &#183; .999 FINE SILVER &#183; SINCE 1986</text>
-
-  <!-- RIGHT CARD ZONE (x=863-1158, center x=1010) -->
-
-  <!-- Card 1: Bullion -->
-  <rect x="868" y="165" width="285" height="88" rx="14" fill="rgba(88,214,255,0.05)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
-  <text x="1010" y="191" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">BULLION</text>
-  <text x="1010" y="224" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="1">$4-8 OVER SPOT</text>
-  <text x="1010" y="244" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.45)" text-anchor="middle" letter-spacing="2">typical premium</text>
-
-  <!-- Card 2: Proof -->
-  <rect x="868" y="263" width="285" height="76" rx="14" fill="rgba(88,214,255,0.04)" stroke="rgba(88,214,255,0.14)" stroke-width="1"/>
-  <text x="1010" y="283" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">PROOF</text>
-  <text x="1010" y="319" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="26" fill="#ecf8fb" text-anchor="middle" letter-spacing="1">$30+ OVER SPOT</text>
-
-  <!-- Card 3: Burnished -->
-  <rect x="868" y="349" width="285" height="76" rx="14" fill="rgba(77,255,184,0.04)" stroke="rgba(77,255,184,0.14)" stroke-width="1"/>
-  <text x="1010" y="369" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="10" fill="rgba(175,198,207,0.55)" text-anchor="middle" letter-spacing="3">BURNISHED</text>
-  <text x="1010" y="407" font-family="Impact, 'Arial Narrow Bold', sans-serif" font-size="24" fill="#4dffb8" text-anchor="middle" letter-spacing="1">LIMITED MINTAGE</text>
-
-  <!-- Brand watermark -->
-  <text x="600" y="600" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="11" fill="rgba(88,214,255,0.30)" text-anchor="middle" letter-spacing="4">FUSEDDISTRIBUTION.COM</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="630" fill="url(#g1)"/><rect width="1200" height="630" fill="url(#g2)"/>
+  <circle cx="600" cy="315" r="252" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170.10000000000002" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="285" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="365" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="445" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="525" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="55" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="135" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="215" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="295" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="375" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="455" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="600" y="264" font-family="Impact, Haettenschweiler, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">AMERICAN SILVER EAGLE</text>
+  <text x="600" y="344" font-family="Impact, Haettenschweiler, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">COMPLETE BUYING GUIDE</text>
+  <text x="600" y="470" font-family="Impact, sans-serif" font-size="84" fill="#58d6ff" text-anchor="middle">$25</text>
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="rgba(175,198,207,0.75)" text-anchor="middle">PER OUNCE A COIN</text>
 </svg>
