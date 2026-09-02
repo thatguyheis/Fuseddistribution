@@ -90,6 +90,21 @@ schedules the oldest remaining pending date. Do not jump directly to the calenda
 day while an older pending marker exists. Do not delete a pending marker to silence
 a failure.
 
+The overnight Gemma producer is a draft worker, not a success authority. Before
+writing a queue, it must reject empty or undersized research, missing brief
+sections, drafts below 1,100 words, invalid section counts, or unresolved
+placeholders. A rejected output must leave the queue unwritten so the 9 AM
+runner cannot consume a false-success handoff. The 9 AM deterministic gates
+remain authoritative for publication.
+
+The overnight producer is failure-isolated. Each topic runs behind its own
+validation boundary, so an empty model response or malformed brief defers only
+that topic and allows other valid topics into the queue. The rotation index is
+advanced only after a queue is written; an all-topic failure leaves the index
+unchanged for retry. The 9 AM runner treats a missing or empty queue as an
+operational failure, records it, and schedules a retry. It must never report a
+successful no-op while a publication date has no queue.
+
 **A scheduled retry is not a completed retry.** The retry launch agent must remain
 loaded until its due time and the retry process must not unload its own launchd
 label at startup. Cleanup of `com.nick.daily-blog-reel.retry` is allowed only from
@@ -540,7 +555,7 @@ Every post that has `reel-data.md` or `reel-script.md` must show one of two stat
 - a released reel player or authoritative social links from `social-video.json`
 - a visible `Pending publication` notice while the reel waits for media hosting or social publication
 
-The production runner applies the pending panel after the reel stage. Later, `social:blog-video-links` replaces it with the released player and platform links. Do not hand edit generated `index.html` files. If a reel is ready locally but the blog has no panel, run the pending slot step for that slug, then complete the media and social sync checkpoints.
+The production runner applies the pending panel after the reel stage. The pending state describes one long form reel plus three planned short topics. These are editorial topic cards, not claims that three videos already exist. Later, `social:blog-video-links` replaces the panel with the released player and platform links. Do not hand edit generated `index.html` files. If a reel is ready locally but the blog has no panel, run the pending slot step for that slug, then complete the media and social sync checkpoints.
 
 Before a reel is sent to Buffer, verify the exact public media URL with `npm run social:buffer:verify-media`. A local render passing release QA does not prove that Buffer can fetch the hosted copy. The hosted URL must return HTTPS, `video/mp4`, a byte count at or below 25 MiB, and a usable range response. A failed media check blocks Buffer retries until the public copy or media map is corrected.
 

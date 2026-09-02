@@ -13,12 +13,14 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
 RESEARCH_DIR="$BLOG_DIR/research"
-TODAY=$(date '+%Y-%m-%d')
+TODAY="${GEMMA_RUN_DATE:-${BLOG_RUN_DATE:-$(date '+%Y-%m-%d')}}"
 # Queue is consumed by the NEXT 9 AM run. When this script runs at night
 # (>= noon), date the queue for tomorrow; morning manual runs date it today.
 # Fixes the mismatch where 23:00 runs wrote ${TODAY}-queue.json that the next
 # morning's pipeline (which looks for its own date) never found.
-if [[ $(date '+%H') -ge 12 ]]; then
+if [[ -n "${GEMMA_RUN_DATE:-}${BLOG_RUN_DATE:-}" ]]; then
+  QUEUE_DATE="$TODAY"
+elif [[ $(date '+%H') -ge 12 ]]; then
   QUEUE_DATE=$(date -v+1d '+%Y-%m-%d')
 else
   QUEUE_DATE=$TODAY
@@ -386,13 +388,6 @@ TOPIC_S2="${SILVER_TOPICS[$S2_IDX]}"
 TOPIC_T1="${TECH_TOPICS[$T1_IDX]}"
 TOPIC_T2="${TECH_TOPICS[$T2_IDX]}"
 
-# Save updated index
-python3 -c "
-import json
-d = {'silver': $((SI + 2)), 'tech': $((TI + 2))}
-with open('$INDEX_FILE', 'w') as f: json.dump(d, f)
-"
-
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 slugify() {
@@ -422,6 +417,37 @@ try:
 except Exception as e:
     sys.stderr.write(f"litert call failed: {e}\n")
 ' <<<"$prompt" 2>/dev/null
+}
+
+ensure_litert_service() {
+  if curl -fsS --max-time 5 http://localhost:9379/v1/models >/dev/null 2>&1; then
+    return 0
+  fi
+
+  echo "WARN: LiteRT service is unavailable; requesting launchd restart" >&2
+  launchctl kickstart -k "gui/$(id -u)/com.nick.litert-serve" 2>/dev/null || true
+  for _ in {1..30}; do
+    curl -fsS --max-time 2 http://localhost:9379/v1/models >/dev/null 2>&1 && return 0
+    sleep 2
+  done
+  echo "ERROR: LiteRT service did not become healthy within 60 seconds" >&2
+  return 1
+}
+
+word_count() {
+  printf '%s' "$1" | awk '{ count += NF } END { print count + 0 }'
+}
+
+require_model_output() {
+  local kind="$1"
+  local value="$2"
+  local minimum="$3"
+  local count
+  count=$(word_count "$value")
+  if (( count < minimum )); then
+    echo "ERROR: Gemma $kind output too short (${count} words; minimum ${minimum})" >&2
+    return 1
+  fi
 }
 
 # ── Process one topic ─────────────────────────────────────────────────────────
@@ -527,6 +553,11 @@ Output sections only. No preamble."
 
   local BRIEF
   BRIEF=$(ollama_call "$BRIEF_PROMPT" 700)
+  require_model_output "research brief for $SLUG" "$BRIEF" 100
+  if ! grep -qi 'Search Intent' <<<"$BRIEF" || ! grep -qi 'H2 Structure' <<<"$BRIEF"; then
+    echo "ERROR: Gemma research brief for $SLUG is missing required sections" >&2
+    return 1
+  fi
 
   cat > "$BRIEF_FILE" <<EOF
 # Research Brief — $KEYWORD
@@ -618,6 +649,18 @@ $STYLE" 120)
 
 $SECTIONS$CTA"
 
+  require_model_output "article draft for $SLUG" "$DRAFT" 1100
+  local heading_count
+  heading_count=$(grep -c '^## ' <<<"$SECTIONS" || true)
+  if (( heading_count < 4 || heading_count > 6 )); then
+    echo "ERROR: Gemma article draft for $SLUG has ${heading_count} sections; expected 4-6" >&2
+    return 1
+  fi
+  if grep -Eq '\[VERIFY\]|\[SLOT\]|TODO|lorem ipsum' <<<"$DRAFT"; then
+    echo "ERROR: Gemma article draft for $SLUG contains an unresolved placeholder" >&2
+    return 1
+  fi
+
   cat > "$DRAFT_FILE" <<EOF
 <!-- gemma_draft: $TODAY | keyword: $KEYWORD | brand: $BRAND -->
 # GEMMA DRAFT — $KEYWORD
@@ -640,6 +683,8 @@ echo "Silver: [$S1_IDX] $TOPIC_S1 / [$S2_IDX] $TOPIC_S2"
 echo "Tech:   [$T1_IDX] $TOPIC_T1 / [$T2_IDX] $TOPIC_T2"
 echo ""
 
+ensure_litert_service
+
 # Check if queue already exists for today
 if [[ -f "$QUEUE_FILE" ]]; then
   echo "Queue already exists for today: $QUEUE_FILE"
@@ -648,25 +693,43 @@ if [[ -f "$QUEUE_FILE" ]]; then
 fi
 
 QUEUE_ENTRIES=()
+FAILED_TOPICS=()
+
+run_topic() {
+  local keyword="$1"
+  local brand="$2"
+  local result
+
+  # A malformed model response is a topic failure, not a batch failure. Keep
+  # processing the remaining topics so one bad inference cannot starve the
+  # whole next-day queue.
+  if result=$(process_topic "$keyword" "$brand"); then
+    QUEUE_ENTRIES+=("$result")
+  else
+    FAILED_TOPICS+=("$keyword")
+    echo "  DEFERRED: $keyword ($brand)"
+  fi
+}
 
 echo "[Silver 1/2]"
-RESULT=$(process_topic "$TOPIC_S1" "silver")
-QUEUE_ENTRIES+=("$RESULT")
+run_topic "$TOPIC_S1" "silver"
 sleep 3
 
 echo "[Silver 2/2]"
-RESULT=$(process_topic "$TOPIC_S2" "silver")
-QUEUE_ENTRIES+=("$RESULT")
+run_topic "$TOPIC_S2" "silver"
 sleep 3
 
 echo "[Tech 1/2]"
-RESULT=$(process_topic "$TOPIC_T1" "tech")
-QUEUE_ENTRIES+=("$RESULT")
+run_topic "$TOPIC_T1" "tech"
 sleep 3
 
 echo "[Tech 2/2]"
-RESULT=$(process_topic "$TOPIC_T2" "tech")
-QUEUE_ENTRIES+=("$RESULT")
+run_topic "$TOPIC_T2" "tech"
+
+if (( ${#QUEUE_ENTRIES[@]} == 0 )); then
+  echo "ERROR: no valid topics completed; queue not written" >&2
+  exit 1
+fi
 
 # Write queue JSON for Claude's 9 AM run
 python3 -c "
@@ -714,6 +777,23 @@ with open('$QUEUE_FILE', 'w') as f:
     json.dump(queue, f, indent=2)
 print(f'Queue written: {len(entries)} posts')
 "
+
+# Advance rotation only after a queue has been written. Failed runs therefore
+# retry the same topics instead of silently consuming them from the index.
+if (( ${#FAILED_TOPICS[@]} == 0 )); then
+  python3 -c "
+import json
+d = {'silver': $((SI + 2)), 'tech': $((TI + 2))}
+with open('$INDEX_FILE', 'w') as f: json.dump(d, f)
+"
+else
+  echo "Rotation index unchanged because one or more topics were deferred."
+fi
+
+if (( ${#FAILED_TOPICS[@]} > 0 )); then
+  echo "WARNING: ${#FAILED_TOPICS[@]} topic(s) deferred; next run will retry the rotation window."
+  printf '  - %s\n' "${FAILED_TOPICS[@]}"
+fi
 
 echo ""
 echo "=== Done: $(date '+%H:%M:%S') ==="

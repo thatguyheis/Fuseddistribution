@@ -504,8 +504,9 @@ RETRY_SLUGS=()
 typeset -U RETRY_SLUGS
 
 if ! $QUEUE_MODE && [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-  echo "No queue found and Hermes takeover is active. Skipping old self-directed Claude fallback." >> "$LOG_FILE"
-  notify "no queue" "Hermes takeover active; old Claude fallback skipped"
+  echo "ERROR: no valid Gemma queue for $TODAY; scheduling operational retry" >> "$LOG_FILE"
+  notify "queue missing" "$TODAY has no valid research queue; retry scheduled"
+  schedule_retry ""
   exit 0
 fi
 
