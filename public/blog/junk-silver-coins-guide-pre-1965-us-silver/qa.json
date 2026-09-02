@@ -1,6 +1,11 @@
 {
   "slug": "junk-silver-coins-guide-pre-1965-us-silver",
-  "score": 88,
-  "pass": true,
-  "blockers": []
+  "score": 75,
+  "pass": false,
+  "blockers": [
+    "title/body topic coherence",
+    "factual/numeric sanity",
+    "title/body mismatch",
+    "repetition"
+  ]
 }
