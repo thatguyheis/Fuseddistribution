@@ -1,43 +1,50 @@
 # Reel Data: social-media-content-ideas-for-small-business
 topic: tech
+focus: social media content ideas for small business
 format: long-form
 
-hook: 77% of small businesses use social media to market themselves.
+hook: Content that gets local customers noticed drives real impact.
 hook_type: contrarian_stat
 
 ## segments
 - type: overlay
-  text: POST CONTENT THAT PROVES YOU
-  narration: Post content that proves you exist, solves a real problem, and shows the faces behind your business. That mix beats generic quote graphics every time. Your local customers want to see your shop, your team, your work in progress, and your answers to questions they already type into Google.
+  text: WONDERING HOW EFFECTIVELY USE
+  narration: Are you wondering how to effectively use social media to grow your local business? If you are a small business owner, the answer is simple: consistent, relevant content is your secret weapon. In today's digital market, simply having a social media presence isn't enough; you need a strategy that connects you with your community, builds trust, and drives real customers.
 - type: overlay
-  text: SHOW THE TOOLS LAID OUT
-  narration: Show the tools laid out on the tarp before a job starts. Just point the phone and talk like you are showing a friend around. Post a "day in the life" reel once per week. with coffee and end with the last invoice sent.
-- type: stat
-  text: $2,400 LESS THAN THE BIG CHAIN
-  narration: Tag the customer if they are okay with it. Hand the phone to the customer after a job. Share a before-and-after with the dollar amount you saved them. "Replaced their old HVAC for $2,400 less than the big chain quoted." Specifics get shared.
+  text: SOCIAL MEDIA ISN'T LIKES
+  narration: Social media isn't just for likes; it's a powerful tool for connecting directly with your community. We see that small businesses using social media in marketing are making a real impact . The key is shifting from generic posts to content that shows off your local charm and expertise. Think about behind the scenes of your business.
 - type: overlay
-  text: LANDSCAPERS POST FALL CLEANUP LISTS
-  narration: Landscapers post fall cleanup lists in October. Tie content to what is happening in your customer's life right now. Record yourself answering a question on the job site. "Customer just asked me why their water bill doubled. Here is what I found." Real answers beat scripted ones.
-- type: stat
-  text: 2.65% IF YOU HAVE IGNORED SHORT
-  narration: TikTok also has the highest engagement rate of any platform at 2.65 percent . If you have ignored short-form video, you are ignoring where your customers spend their evenings. You do not need a TikTok strategy. Post them to TikTok, Instagram Reels, Facebook Reels, and YouTube Shorts.
-- type: stat
-  text: 10, WEDNESDAY AT FRIDAY AT
-  narration: Free service call with any repair booked by Friday. Post your phone number in every third post. Make it stupid easy to dial you. Share open appointment slots on Monday morning. "Three openings this week: Tuesday at 10, Wednesday at 2, Friday at 8.
-- type: stat
-  text: 1 TO POSTS PER WEEK MINIMUM
-  narration: Google Business Profile: 1 to 2 posts per week minimum. This shows up in local search results and is the highest-impact post you make. LinkedIn: 1 to 2 posts per week if you serve other businesses. Skip it if you only sell to homeowners.
-- type: stat
-  text: 30 days YOUR NEXT DAYS OF CONTENT
-  narration: Spend your daily time replying to comments and DMs instead of figuring out what to post. If calls and visits are climbing, the strategy works. If only follower count climbs, change the content mix. Reply to every comment within two hours for the first 30 days. Your next 90 days of content will tell you which ideas turn into actual customers, and then you double down on those.
+  text: VISUALS INCREDIBLY POWERFUL TOOLS
+  narration: Visuals are incredibly powerful tools for showing potential customers exactly what you offer and why they should choose you over the competition. We see that small businesses using social media in marketing are making a real difference in their reach . High-quality photos and short videos are essential for capturing attention in a busy feed.
+- type: overlay
+  text: EXAMPLE AVERAGE TIKTOK ENGAGEMENT
+  narration: For example, the average TikTok engagement rate is the highest of all platforms, meaning your content has a much better chance of catching attention. Plus, the data shows that small business owners who plan to use social posting and paid ads will drive the most value in 2026 .
+- type: overlay
+  text: SEEING SIGNIFICANT SHIFT HOW
+  narration: We are seeing a significant shift in how customers behave. More customers are researching businesses on social media before making a purchase , and those who engage with your brand on social media are more likely to spend money with you . Also, the trend toward short-form video platforms like TikTok is accelerating, with engagement rates there being exceptionally high .
+- type: overlay
+  text: CUSTOMERS ENGAGE CONTENT LIKELY
+  narration: When customers engage with your content, they are more likely to spend money with you. Shoppers are increasingly researching social media before making a purchase , so use these feedback loops to inform your content and make your business the trusted local expert. As a local business owner, maintaining a consistent Name, Address, and Phone number (NAP) across every online platform is crucial for building trust and improving your local search rankings.
+- type: overlay
+  text: CONTENT IDEAS ENGAGEMENT COMMUNITY
+  narration: Content Ideas for Engagement and Community Building As a local business owner, building a strong online presence on social media is crucial for connecting with your community. I see firsthand how consistent, authentic content drives real results. We need to move beyond just posting sales pitches and focus on creating content that sparks conversation and makes people feel connected to your brand.
+- type: overlay
+  text: MEANS SEE WHAT LOCAL
+  narration: This means you can see what your local competitors are talking about, what customers are asking for, and what products are trending right now. The real power comes from understanding customer intent. People are actively researching before they buy, and social media is where that research happens. When you monitor comments and conversations, you gain direct insight into what your potential customers value and what pain points they have.
+- type: overlay
+  text: INSTANCE YOU'RE TARGETING YOUNGER
+  narration: For instance, if you're targeting younger customers or showcasing behind the scenes of your local craft, TikTok might be your sweet spot. TikTok currently has the highest engagement rate of any platform, which means your content has a better chance of catching attention. Also, many shoppers research products on social media before making a purchase, so using platform-specific content helps build that crucial awareness.
+- type: overlay
+  text: DON'T POST PRETTY PICTURES
+  narration: Don't just post pretty pictures; ask questions, run simple polls, or offer a special local deal only available through social media. Research shows that customers who engage with you online are more likely to spend money with you.
 
 ## question
-text: Stop posting randomly. Which content idea will you try first?
+text: Ready to turn social media into your local customer magnet?
 subtext: COMMENT BELOW
-narration: Stop posting randomly. Which content idea will you try first? Follow for more practical business tips.
+narration: Ready to turn social media into your local customer magnet? Follow for more practical business tips.
 
 ## shared
-discussion_question: Stop posting randomly. Which content idea will you try first?
+discussion_question: Ready to turn social media into your local customer magnet?
 hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
 
 ## media_queries
@@ -45,29 +52,35 @@ hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness 
   query: "social media content ideas for small business"
   prefer: video
 - segment: 1
-  query: "social media content ideas for small business post content that"
+  query: "social media content ideas for small business wondering how effectively"
   prefer: photo
 - segment: 2
-  query: "social media content ideas for small business show the tools"
+  query: "social media content ideas for small business social media isn"
   prefer: photo
 - segment: 3
-  query: "social media content ideas for small business 2 400 less"
+  query: "social media content ideas for small business visuals incredibly powerful"
   prefer: photo
 - segment: 4
-  query: "social media content ideas for small business landscapers post fall"
+  query: "social media content ideas for small business example average tiktok"
   prefer: photo
 - segment: 5
-  query: "social media content ideas for small business 2 65 if"
+  query: "social media content ideas for small business seeing significant shift"
   prefer: photo
 - segment: 6
-  query: "social media content ideas for small business 10 wednesday at"
+  query: "social media content ideas for small business customers engage content"
   prefer: photo
 - segment: 7
-  query: "social media content ideas for small business 1 to posts"
+  query: "social media content ideas for small business content ideas engagement"
   prefer: photo
 - segment: 8
-  query: "social media content ideas for small business 30 days your"
+  query: "social media content ideas for small business means see what"
   prefer: photo
 - segment: 9
+  query: "social media content ideas for small business instance you re"
+  prefer: photo
+- segment: 10
+  query: "social media content ideas for small business don t post"
+  prefer: photo
+- segment: 11
   query: "social media content ideas for small business customer feedback"
   prefer: photo
