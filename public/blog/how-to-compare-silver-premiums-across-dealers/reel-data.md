@@ -1,100 +1,80 @@
 # Reel Data: how-to-compare-silver-premiums-across-dealers
 topic: silver
+focus: how to compare silver premiums across dealers
 format: long-form
 
-hook: Most silver buyers compare total prices. That's the wrong number. The math that actually matters takes 30 seconds.
-hook_type: pain_point
+hook: Calculate cost per ounce to find the true silver best deal.
+hook_type: immediate_value
 
-## stats
-- text: 7.8% WORKED EXAMPLE PREMIUM
-  explanation: Calculating cost per ounce on a 10 oz bar at current spot reveals the real markup
-  graphic_type: percent_fill
-  graphic:
-    value: 7.8
-    label: Dealer Premium
-    remainder_label: Spot Price
-  narration: Here is the formula. Spot price is $32.00 per ounce. A dealer quotes a 10 oz silver bar at $345 shipped. Divide $345 by 10. You get $34.50 per ounce. Subtract spot. That is $2.50 over spot, or 7.8 percent. Run this for every quote.
-
-- text: 5-8% GENERIC ROUNDS PREMIUM
-  explanation: Generic silver rounds are the most cost-efficient physical silver product
-  graphic_type: percent_fill
-  graphic:
-    value: 7
-    label: Generic Rounds
-    remainder_label: Spot Value
-  narration: Generic silver rounds, privately minted with no legal tender status, typically run 5 to 8 percent over spot. They carry the lowest premium of any one-ounce silver product. That makes them the most efficient way to hold physical silver by weight.
-
-- text: 15-22% SILVER EAGLE PREMIUM
-  explanation: American Silver Eagles carry a higher premium due to US Mint statutory pricing and collector demand
-  graphic_type: percent_fill
-  graphic:
-    value: 18
-    label: Silver Eagle
-    remainder_label: Spot Value
-  narration: American Silver Eagles run 15 to 22 percent over spot. The USA Mint charges authorized purchasers a statutory premium above melt value. That cost passes down the supply chain. Eagles trade at a collector premium on top of that. They are government-backed but more expensive per ounce of silver.
-
-- text: 3-6% BAR PREMIUM
-  explanation: Silver bars carry the lowest premiums, especially at 10 oz and 100 oz sizes
-  graphic_type: percent_fill
-  graphic:
-    value: 5
-    label: 10 oz Bar
-    remainder_label: Spot Value
-  narration: Ten-ounce silver bars typically run 3 to 6 percent over spot. One-hundred-ounce bars can run as low as 2 to 4 percent. Lower minting cost per ounce and simpler distribution keep the markup lean. Bars work best for buyers who want maximum silver per dollar spent.
-
-- text: ~30% FRACTIONAL COIN PREMIUM
-  explanation: Fractional coins carry the highest per-ounce premiums because fixed minting costs divide over less silver
-  graphic_type: percent_fill
-  graphic:
-    value: 30
-    label: Fractional Coins
-    remainder_label: Spot Value
-  narration: Fractional coins, like the one-tenth or one-quarter ounce sizes, carry the highest premiums, often 25 to 35 percent over spot. Each piece costs nearly as much to fabricate as a full one-ounce coin. That fixed minting cost divides over far less silver, which pushes the per-ounce price up significantly.
-
-- text: 3-4% CREDIT CARD FEE
-  explanation: Many dealers add a surcharge for card payments that adds meaningfully to small orders
-  graphic_type: percent_fill
-  graphic:
-    value: 3.5
-    label: Card Surcharge
-    remainder_label: Base Price
-  narration: Most silver dealers add a 3 to 4 percent surcharge for credit card payments. On a $340 order, that is $10 to $14 added to your cost. Paying by check, ACH, or bank wire avoids this fee entirely. Always ask before calculating your all-in total.
-
-## chart
-title: Typical Silver Premium Over Spot by Product Type
-bars:
-  - 100 oz bars: ~3%
-  - 10 oz bars: ~5%
-  - Generic rounds: ~7%
-  - Silver Eagles: ~18%
-  - Fractional coins: ~30%
-narration: Premiums differ by product because production costs differ. Bars are cheapest per ounce to produce. Coins carry fabrication and legal tender premiums. Fractional sizes carry the most because fixed minting costs spread over less silver.
+## segments
+- type: overlay
+  text: WANT BEST DEAL COMPARING
+  narration: You want the best deal, but comparing prices across different dealers is confusing. You cannot just look at the sticker price. To find the true best value, you must calculate the cost per ounce. This guide shows you exactly how to compare silver premiums from various dealers so you know which offer is truly the most competitive for your investment.
+- type: stat
+  text: 25 TO 35 % BARS COST MINT EACH
+  narration: This is because the USA Mint adds a statutory premium on top of the melt value for authorized purchasers. Ten-ounce bars typically show a premium between 3 and 6 percent. Fractional coins, like one-tenth or one-quarter ounce pieces, often have premiums of 25 to 35 percent. This is because the cost to mint each small piece is high. You cannot trust a single dealer's headline price.
+- type: stat
+  text: 313.355 GRAMS TOTAL COST PAY INCLUDING
+  narration: Remember that one troy ounce equals 313.355 grams. This is the total cost you pay, including shipping and fees. Use this simple math to find your true cost. Divide the dealer's total price by the number of troy ounces you purchased. Subtract the spot price from the cost per ounce. Multiply the premium per ounce by the spot price and divide by 10 100.
+- type: stat
+  text: 10 OUNCES PRICE SILVER SPOT CALCULATE
+  narration: This gives you one clear comparable number for each dealer. Do not compare the total price tag. Get three quotes for the exact same item. This means the same weight and same product type. Get these quotes on the same day. Let us look at an example quotes for 10 ounces of silver at a spot price of $32.000. Calculate the cost per ounce for each dealer.
+- type: stat
+  text: $10 TO $20 COST PRICE SINGLE TRANSACTION
+  narration: You know this because you compared the cost per ounce, not just the initial price. Dealers often list a low base price. You must add everything else to get the real numbers. These hidden costs affect your final comparison. Others charge $10 to $20 for a single transaction. Always ask for the final all-in total. Many dealers add 3 to 4 percent to the total for using credit card payments.
+- type: overlay
+  text: COST MUST FACTOR SEE
+  narration: This is a cost you must factor. For more on this, see Johnson Matthee Silver Bars Guide. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide. Some dealers charge a flat fee just to process the order. This fee is added to the total before you calculate the per ounce.
+- type: stat
+  text: 25 TO 35 % BARS COST MINT EACH
+  narration: Ten-ounce bars show a premium between 3 and 6 percent. These are generally cheaper per ounce to produce than coins. Fractional coins, like one-tenth or one-quarter ounce pieces, show a premium of 25 to 35 percent. This is because the cost to mint each small piece is very high. These ranges show the difference in production costs. Understand this difference when choosing your investment.
+- type: stat
+  text: 2 TO 5 % OUNCES BELOW RETAIL BARS
+  narration: For orders over 10 ounces, they might offer a 2 to 5 percent below retail on bars. This volume structure changes your final premium. Always ask about their pricing structure for your specific order size. Follow these exact steps to find the best dealer. Do not try to compare everything at once. 2 Get three quotes from different dealers. Calculate the cost per ounce for each dealer.
+- type: overlay
+  text: PROTECTS DAILY MARKET FLUCTUATIONS
+  narration: This protects you from daily market fluctuations. These plans help you secure your silver at a favorable price. Visit our reserve page to see our plans.
 
 ## question
-text: Do you calculate cost per ounce before buying silver?
-subtext: Or do you compare total prices?
-narration: Follow for more silver buying tips.
+text: Stop guessing. Calculate your true silver value and find the?
+subtext: COMMENT BELOW
+narration: Stop guessing. Calculate your true silver value and find the? Follow for more silver news.
 
 ## shared
-discussion_question: Do you calculate cost per ounce before buying silver, or do you compare total prices?
+discussion_question: Stop guessing. Calculate your true silver value and find the?
 hashtags: #SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge
 
 ## media_queries
 - segment: 0
-  query: "silver coins bars price comparison"
+  query: "how to compare silver premiums across dealers"
   prefer: video
+- segment: 1
+  query: "how to compare silver premiums across dealers want best deal"
+  prefer: photo
 - segment: 2
-  query: "silver round coin one ounce"
-  prefer: video
+  query: "how to compare silver premiums across dealers 25 to 35"
+  prefer: photo
 - segment: 3
-  query: "American silver eagle coin"
+  query: "how to compare silver premiums across dealers 313 355 grams"
   prefer: photo
 - segment: 4
-  query: "silver bar ten ounce bullion"
-  prefer: video
+  query: "how to compare silver premiums across dealers 10 ounces price"
+  prefer: photo
+- segment: 5
+  query: "how to compare silver premiums across dealers 10 to 20"
+  prefer: photo
+- segment: 6
+  query: "how to compare silver premiums across dealers cost must factor"
+  prefer: photo
 - segment: 7
-  query: "silver dealer pricing shop"
+  query: "how to compare silver premiums across dealers 25 to 35"
+  prefer: photo
+- segment: 8
+  query: "how to compare silver premiums across dealers 2 to 5"
   prefer: photo
 - segment: 9
-  query: "silver coins collection stacked"
-  prefer: video
+  query: "how to compare silver premiums across dealers protects daily market"
+  prefer: photo
+- segment: 10
+  query: "how to compare silver premiums across dealers customer feedback"
+  prefer: photo

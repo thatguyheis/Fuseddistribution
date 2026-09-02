@@ -1,0 +1,10 @@
+{
+  "hook": "Calculate cost per ounce to find the true silver best deal.",
+  "hook_type": "immediate_value",
+  "key_stat": {
+    "value": "$325.000",
+    "label": "and a dealer quotes"
+  },
+  "discussion_question": "Stop guessing. Calculate your true silver value and find the best deal now.",
+  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+}
