@@ -1,82 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
-  <defs>
-    <radialGradient id="pp-glow-c" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="pp-glow-g" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Background -->
   <rect width="1200" height="1200" fill="#041018"/>
-
-  <!-- Radial glows -->
-  <ellipse cx="600" cy="600" rx="520" ry="520" fill="url(#pp-glow-c)" opacity="0.65"/>
-  <ellipse cx="150" cy="150" rx="300" ry="300" fill="url(#pp-glow-g)" opacity="0.75"/>
-
-  <!-- Grid lines -->
-  <line x1="170" y1="0" x2="170" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340" y1="0" x2="340" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510" y1="0" x2="510" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680" y1="0" x2="680" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850" y1="0" x2="850" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="600" r="440" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
-  <circle cx="600" cy="600" r="290" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
-
-  <!-- Scatter dots -->
-  <circle cx="142" cy="110" r="1.2" fill="#58d6ff" opacity="0.22"/>
-  <circle cx="390" cy="70" r="1.5" fill="#4dffb8" opacity="0.25"/>
-  <circle cx="820" cy="95" r="1" fill="#58d6ff" opacity="0.18"/>
-  <circle cx="1060" cy="200" r="1.4" fill="#4dffb8" opacity="0.20"/>
-  <circle cx="1090" cy="580" r="1.2" fill="#58d6ff" opacity="0.15"/>
-  <circle cx="80" cy="750" r="1" fill="#4dffb8" opacity="0.18"/>
-  <circle cx="240" cy="1020" r="1.5" fill="#58d6ff" opacity="0.22"/>
-  <circle cx="970" cy="980" r="1.2" fill="#4dffb8" opacity="0.20"/>
-  <circle cx="1100" cy="1060" r="1" fill="#58d6ff" opacity="0.17"/>
-  <circle cx="470" cy="1100" r="1.3" fill="#4dffb8" opacity="0.19"/>
-
-  <!-- Top zone: brand + eyebrow (y=0-200) -->
-  <text x="600" y="80" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="36" fill="#58d6ff" letter-spacing="10" text-anchor="middle" opacity="0.9">FUSED</text>
-  <text x="600" y="102" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(175,198,207,0.55)" letter-spacing="5" text-anchor="middle">DISTRIBUTION</text>
-
-  <rect x="380" y="128" width="440" height="40" rx="20" fill="rgba(88,214,255,0.08)" stroke="rgba(88,214,255,0.22)" stroke-width="1"/>
-  <text x="600" y="153" font-family="Trebuchet MS,sans-serif" font-size="12" fill="#4dffb8" letter-spacing="4" text-anchor="middle">SILVER BUYING GUIDE</text>
-
-  <!-- Divider -->
-  <line x1="100" y1="186" x2="1100" y2="186" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
-
-  <!-- Center zone: title + stat (y=200-850) -->
-  <text x="600" y="295" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="90" fill="#ecf8fb" letter-spacing="2" text-anchor="middle">SILVER BARS</text>
-  <text x="600" y="370" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="64" fill="#58d6ff" letter-spacing="3" text-anchor="middle">VS. SILVER COINS</text>
-
-  <!-- Key stat number -->
-  <text x="600" y="490" font-family="Trebuchet MS,sans-serif" font-size="16" fill="rgba(175,198,207,0.60)" letter-spacing="4" text-anchor="middle">PREMIUM DIFFERENCE</text>
-  <text x="600" y="610" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="180" fill="#4dffb8" text-anchor="middle">4%</text>
-  <text x="600" y="655" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.60)" letter-spacing="3" text-anchor="middle">BARS</text>
-
-  <!-- vs label -->
-  <text x="600" y="700" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="32" fill="rgba(175,198,207,0.35)" letter-spacing="4" text-anchor="middle">VS.</text>
-
-  <text x="600" y="780" font-family="Impact,Arial Narrow Bold,sans-serif" font-size="100" fill="#58d6ff" text-anchor="middle">20%</text>
-  <text x="600" y="810" font-family="Trebuchet MS,sans-serif" font-size="18" fill="rgba(175,198,207,0.60)" letter-spacing="3" text-anchor="middle">SILVER EAGLES</text>
-
-  <!-- Bottom divider -->
-  <line x1="100" y1="850" x2="1100" y2="850" stroke="rgba(88,214,255,0.12)" stroke-width="1"/>
-
-  <!-- Bottom zone: excerpt + CTA (y=850-1200) -->
-  <text x="600" y="910" font-family="Trebuchet MS,sans-serif" font-size="24" fill="rgba(175,198,207,0.75)" text-anchor="middle">Bars save you $48 per 10 oz at $30/oz spot.</text>
-  <text x="600" y="950" font-family="Trebuchet MS,sans-serif" font-size="24" fill="rgba(175,198,207,0.75)" text-anchor="middle">Here is when each makes sense.</text>
-
-  <!-- CTA button -->
-  <rect x="300" y="990" width="600" height="68" rx="16" fill="rgba(7,18,28,0.90)" stroke="rgba(88,214,255,0.35)" stroke-width="1.5"/>
-  <text x="600" y="1033" font-family="Trebuchet MS,sans-serif" font-size="14" fill="#58d6ff" letter-spacing="3" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
-
-  <!-- Bottom brand line -->
-  <text x="600" y="1120" font-family="Trebuchet MS,sans-serif" font-size="11" fill="rgba(88,214,255,0.35)" letter-spacing="3" text-anchor="middle">FUSEDDISTRIBUTION.COM</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="1200" fill="url(#g1)"/><rect width="1200" height="1200" fill="url(#g2)"/>
+  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="324" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="65" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="385" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="705" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="1025" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="225" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="545" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="865" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="65" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="385" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="705" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED</text>
+  <text x="600" y="308" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SILVER BARS VS</text>
+  <text x="600" y="390" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SILVER COINS WHICH</text>
+  <text x="600" y="472" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">IS BETTER</text>
+  
+  <rect x="350" y="1020" width="500" height="68" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
+  <text x="600" y="1063" font-family="Arial, sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
 </svg>
