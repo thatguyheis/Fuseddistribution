@@ -1,0 +1,9 @@
+{
+  "slug": "email-marketing-for-small-business-getting-started",
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "numeric visual: schema_version 2 required"
+  ],
+  "mode": "deterministic-local"
+}

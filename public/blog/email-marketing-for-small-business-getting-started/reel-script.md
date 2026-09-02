@@ -1,96 +1,105 @@
 # Reel Script: email-marketing-for-small-business-getting-started
 format: long-form
-segments: 10
-target-duration: 181s
+segments: 11
+target-duration: 185s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 7s minimum
+**Duration:** 3s minimum
 
-Narration: 88 percent of consumers trust online reviews as much as personal recommendations.
-
----
-
-## OVERLAY: WANT WEBSITE ACTUALLY GETS
-
-**Visual:** Supporting article visual
-**Duration:** 19s minimum
-
-Narration: You want a website that actually gets calls from local customers. We build the kind of websites and digital marketing that get you found on Google. We skip the jargon and the long contracts. Ready to see what’s possible for your business?
+Narration: Email marketing returns $42 per $1 spent.
 
 ---
 
-## OVERLAY: OPTIONAL FOUNDATION LOCAL ONLINE
+## OVERLAY: STRUGGLING NOTICED CUSTOMERS LOCAL
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
 
-Narration: It’s not optional; it’s the foundation of your local online presence. Post pictures of your shop, your office, or a project you finished. People want to see you, the people behind the business. Invest in taking clear, well-lit photos - they’re worth it.
+Narration: Are you struggling to get noticed by customers in your local area? Email marketing is a direct way to talk to people who already know you or are interested in your services. It is a powerful tool for building relationships and driving repeat business. Starting email marketing does not require a huge budget. You can start small and see real results quickly.
 
 ---
 
-## OVERLAY: INCLUDES BUSINESS NAME ADDRESS
+## STAT: $10 SPENT PAID SEARCH MARKETING
 
 **Visual:** Supporting article visual
-**Duration:** 19s minimum
+**Duration:** 18s minimum
 
-Narration: This includes your business name, address, phone number, website URL, and hours of operation. A single typo can hurt your ranking. Show off your shop, your office, or your work in progress. Add photos of your team, your products, and your services.
-
----
-
-## STAT: 92% CONSUMERS SAY ONLINE REVIEWS
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: You can send a follow-up email, include a link on your website, or even ask in person. Consider using a service like Podium to streamline the process. Consistent feedback builds trust with search engines. According to a report by Trustpilot, 92 percent of consumers say that online reviews influence their purchasing decisions.
+Narration: Social media marketing returns $10 per $1 spent. Paid search marketing returns $8 per $1 spent. Display ads return $5 per $1 spent. These numbers show that email is a very efficient way to spend your marketing dollars wisely. You want to focus your efforts where they count. Before you send any emails, you need an audience.
 
 ---
 
-## OVERLAY: SHARE TIPS ADVICE INSIGHTS
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: Share tips, advice, or insights related to your industry. This establishes you as a trusted authority and attracts potential customers. Let people know about discounts, sales, or limited-time promotions. Include clear calls to action, such as “Visit our website” or “Call us today.” Respond to every review.
-
----
-
-## STAT: 85% CONSUMERS READ ONLINE REVIEWS
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Identify common themes in your reviews and use them to make improvements to your products, services, or customer experience. A study by KlientBoost found that 85 percent of consumers read online reviews before visiting a business. Okay, you’ve got your Google Business Profile nailed.
-
----
-
-## OVERLAY: EXAMPLE EMAIL SEQUENCE WELCOME
+## OVERLAY: EMAIL MARKETING WORKS BEST
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: Example Email Sequence: Welcome Email: Thank them for subscribing and deliver your lead magnet. Value Email: Share a helpful tip or resource related to your industry. Promotion Email: Offer a special discount or promotion. Follow-up Email: Remind them of your value proposition and encourage them to take action.
+Narration: An email marketing works best when you have a list of people who want to hear from you. You cannot rely on social media followers alone. You need an email list you own. Start by creating a simple sign-up form on your website. Offer something valuable in exchange for an email. This could be a free guide, a discount code, or a checklist related to your industry.
 
 ---
 
-## OVERLAY: CONTACT TODAY FREE CONSULTATION
+## OVERLAY: EMAILS MUST SHORT FOCUSED
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Your emails must be short and focused. It must create curiosity or promise a direct benefit. For example, instead of "New Update," try "3 Ways to Save Money This Month." Keep the body of the email concise. This helps readers who skim the email quickly. Focus on one main message per email. Do not try to cram too much information in.
+
+---
+
+## OVERLAY: EMAILS SALES PITCHES OPPORTUNITIES
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Your emails are not just sales pitches. They are opportunities to show your expertise. Use your emails to share tips and insights. This positions you as a knowledgeable local expert. Post photos of your team, your tools, or a finished project. This is crucial for building a good reputation. A good response shows you value the customer's time. This interaction builds a relationship that lasts long after the sale.
+
+---
+
+## OVERLAY: REFERENCE PAST PURCHASES TRACK
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: Reference their past purchases if you track that data. This makes the email feel like a one-on-one communication. It increases the chance they will open and engage with your message. Email marketing does more than just selling. It drives traffic to your actual business presence. Use your emails to announce local events. Tell people exactly what to do next.
+
+---
+
+## OVERLAY: MUST TRACK RESULTS IMPROVE
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: Contact us today for a free consultation and let’s build a digital marketing strategy that drives real results for your business. We’ll help you claim your Google Business Profile, optimize it for local search, and create an email marketing campaign that connects you with your ideal customers.
+Narration: You must track your results to improve. You cannot improve what you do not measure. How many people clicked a link inside? If open rates are low, your subject lines need work. If click-through rates are low, your email content needs to be stronger. If you are not getting clicks, your calls to action are weak. This data tells you exactly what your audience responds to.
+
+---
+
+## OVERLAY: USE THESE METRICS MAKE
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: Use these metrics to make smart decisions. Do not guess about what is working. Use the numbers to guide your next email campaign. This makes your marketing smarter and more effective. Your email marketing should work with your other online efforts. It should support your Google Business Profile and your website. They all need to point to the same place.
+
+---
+
+## OVERLAY: EMAIL MARKETING DIRECT PATH
+
+**Visual:** Supporting article visual
+**Duration:** 15s minimum
+
+Narration: Email marketing is a direct path to local customer connection. It is a way to build a loyal base of people. Your local business deserves a marketing approach that delivers clear results. Take the first step now to start building your direct line to customers.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 9s minimum
+**Duration:** 6s minimum
 
-Text: Considering all these tips, what’s one thing you’d prioritize to?
+Text: Ready to build your direct line to local customers?
 Subtext: COMMENT BELOW
-Narration: Considering all these tips, what’s one thing you’d prioritize to? Follow for more practical business tips.
+Narration: Ready to build your direct line to local customers? Follow for more practical business tips.
