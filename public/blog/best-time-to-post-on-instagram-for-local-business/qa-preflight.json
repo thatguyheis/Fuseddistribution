@@ -1,0 +1,9 @@
+{
+  "slug": "best-time-to-post-on-instagram-for-local-business",
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "topic coherence: no H2 contains title topic terms (time, post, instagram)"
+  ],
+  "mode": "deterministic-local"
+}

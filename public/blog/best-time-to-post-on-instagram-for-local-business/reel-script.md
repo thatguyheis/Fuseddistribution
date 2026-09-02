@@ -1,105 +1,96 @@
 # Reel Script: best-time-to-post-on-instagram-for-local-business
 format: long-form
-segments: 11
-target-duration: 208s
+segments: 10
+target-duration: 180s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 7s minimum
+**Duration:** 4s minimum
 
-Narration: Tag your city , 86 percent of customers trust visual proof.
+Narration: Tag your city to become visible to local customers now.
 
 ---
 
-## OVERLAY: WEBSITE NOBODY CALLS FRUSTRATED
+## OVERLAY: LOCAL BUSINESS AREN'T GETTING
 
 **Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Duration:** 20s minimum
 
-Narration: You have a website, but nobody calls from it. You’re frustrated that competitors seem to get more business without you trying harder. Fused Distribution Technology Solutions cuts through the noise. We build the local online presence that actually gets you noticed by the people searching for your service right now.
+Narration: If you have a local business but aren't getting the calls you need, you are likely struggling with social media timing. The best time to post on Instagram for local business is not a single magic hour. It is about showing up where your local customers are looking and proving you are the local. Focus on showing up in your community.
 
 ---
 
-## OVERLAY: TRUTH MOST EFFECTIVE STRATEGY
+## OVERLAY: SERVICE PROVIDER BEST TIME
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 21s minimum
 
-Narration: The truth is, the most effective strategy isn’t about hitting a specific hour; it’s about getting your content in front of the right people , your local customers. Let’s ditch the complicated charts and focus on a simple, powerful approach. First, tag your city or service area in every single post.
-
----
-
-## OVERLAY: ABOUT VANITY METRICS TARGETED
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: It’s not about vanity metrics; it’s about targeted visibility. Stop relying on polished logos and stock photos. People trust what they see , authentic visuals of your work. Post pictures or short videos of your projects in progress, finished jobs, happy clients, or even a glimpse behind the scenes.
+Narration: If you are a service provider in the best time is when people are actively looking for that service. Are they busy parents during the workday? Are they checking their phone during their lunch break? Knowing this helps you plan your content. You need to match your posting schedule to their daily routine. This makes your content relevant when they are ready to engage.
 
 ---
 
-## STAT: 86% CONSUMERS SAY SEEING PHOTOS
+## OVERLAY: MOST PEOPLE SEARCHING LOCAL
 
 **Visual:** Supporting article visual
 **Duration:** 23s minimum
 
-Narration: According to a recent study by Sprout Social, 86 percent of consumers say that seeing photos and videos of other customers using a product or service influences their purchasing decisions. Ask them to call you for a quote, send you a direct message for a free consultation, or visit your website.
+Narration: The most people searching for local services use Instagram. You must tell Instagram exactly where you operate. Tag your city or service area in every single post. If you are a mechanic in Denver tag Denver. If you are a bakery in Seattle tag Seattle. This action tells the platform and potential customer exactly who should see your work. It puts your content directly in front of people in your geographic area.
 
 ---
 
-## STAT: 15 MINUTES PROMPT RESPONSE SHOWS ATTENTIVE
+## OVERLAY: VISUAL PROOF BUILDS TRUST
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 21s minimum
 
-Narration: Treat every comment and direct message like a potential phone call. Respond within an hour, ideally within 15 minutes. A prompt response shows you’re attentive, responsive, and genuinely care about your local customers. Studies show that customers expect businesses to respond to messages within 24 hours, and faster is always better.
+Narration: This visual proof builds trust faster than any text. They want to see the reality of your service. This is how you build a reputation for quality. It moves you past being just another business to being the trusted local expert. Posting great content is only half the battle. The other half is telling people what to do next. Do not just ask for a follow.
 
 ---
 
-## OVERLAY: REINFORCES LOCATION SIGNALS INSTAGRAM
+## OVERLAY: TELL THEM EXACTLY WHAT
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 21s minimum
 
-Narration: This reinforces your location and signals to Instagram (and Google) that you’re a local business. Don’t just post a picture of a finished job; show the process. Film a quick clip of you working on a project at a local site. This proves you’re a real, active business operating in the community.
-
----
-
-## OVERLAY: TELL THEM QUICK ESTIMATE
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Or tell them to DM you for a quick estimate. Treat every message like a phone call. A quick, personal answer shows you’re local and you actually care. Don't just have a bio filled with generic claims. Instead, clearly state your service area and a compelling call to action.
+Narration: Tell them exactly what you want them to do. Ask them to call a specific number for a quote. Ask them to send a direct message for a quick estimate. If the path is unclear people will stop. A clear instructions lead to clear action. This is how you turn a viewer into a potential customer. Do not try to post every single day.
 
 ---
 
-## OVERLAY: TELLS SYSTEM EXACTLY WHO
+## OVERLAY: PEOPLE SEARCH SERVICE NEAR
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: This tells the system exactly who should see your work. It gets your content in front of people who actually live near you and need your service. Don’t just post a picture of your finished job. Send a quick video of you working on a project at a local site.
+Narration: When people search for a service near them you must be visible. This strategy puts you in front of folks who need your service right now. Tag your city or area in every post. This tells Google who needs to see your work. You must show up in that search. Post a picture of you on a job site. Show the client you just finished a repair.
 
 ---
 
-## OVERLAY: POST TWO THREE TIMES
+## OVERLAY: ASK FOLLOW TELL THEM
 
 **Visual:** Supporting article visual
-**Duration:** 13s minimum
+**Duration:** 21s minimum
 
-Narration: Post two or three times a week. Doing it consistently beats trying to post every single day and burning out. That’s how you build real local presence.
+Narration: Do not just ask for a follow. Tell them to call a specific number. Ask them to DM you for a quote. If you are not clear, they will not call. The best time to post on Instagram for local business is simple. Tag your city or service area on every photo and video. This tells the system exactly who should see your stuff.
+
+---
+
+## OVERLAY: SOUND LOCAL REPLY SOON
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: If you sound local and reply soon, people see you as a real neighbor. Stop wasting time on marketing that does not get calls. See how we get local businesses found on Google right now at /contact. Focus on making the next step easy. Your local business deserves to be found by the people who need your service today. Start showing up where they are looking.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 8s minimum
+**Duration:** 6s minimum
 
-Text: Ready to boost your local business visibility on Instagram?
+Text: Ready to stop guessing and start attracting local customers today?
 Subtext: COMMENT BELOW
-Narration: Ready to boost your local business visibility on Instagram? Follow for more practical business tips.
+Narration: Ready to stop guessing and start attracting local customers today? Follow for more practical business tips.

@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Key Strategies for Local Instagram Success",
+  "takeaway": "Focus on location tagging and showing the process to build local trust.",
+  "source": "ARTICLE",
+  "source_url": "#",
+  "data": [
+    {
+      "label": "Consistency",
+      "value": "Post two or three times a week. That is enough.",
+      "metric": "Posting Frequency",
+      "unit": "times per week",
+      "period": "N/A",
+      "evidence": "Do not try to post every single day. That leads to burnout. Instead. Post two or three times a week. That is enough. Doing it consistently is the key.",
+      "date": "N/A"
+    },
+    {
+      "label": "Visibility",
+      "value": "Tag your city or service area in every single post.",
+      "metric": "Location Tagging",
+      "unit": "per post",
+      "period": "N/A",
+      "evidence": "You must tell Instagram exactly where you operate. Tag your city or service area in every single post. If you are a mechanic in Denver tag Denver. If you are a bakery in Seattle tag Seattle.",
+      "date": "N/A"
+    },
+    {
+      "label": "Trust Building Proof",
+      "value": "Show the process. Film a short video of you are working on a job site.",
+      "metric": "Content Type",
+      "unit": "video",
+      "period": "N/A",
+      "evidence": "Show the process. Film a short video of you are working on a job site.",
+      "date": "N/A"
+    },
+    {
+      "label": "Call to Action",
+      "value": "Ask them to call a specific number for a quote.",
+      "metric": "Call to Action",
+      "unit": "N/A",
+      "period": "N/A",
+      "evidence": "Ask them to call a specific number for a quote.",
+      "date": "N/A"
+    }
+  ]
+}
