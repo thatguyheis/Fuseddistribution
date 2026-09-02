@@ -1,79 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <radialGradient id="sc-cyan" cx="58%" cy="48%" r="42%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="sc-green" cx="12%" cy="18%" r="36%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.13"/>
-      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="sc-line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0.9"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Background -->
   <rect width="1200" height="630" fill="#041018"/>
-  <rect width="1200" height="630" fill="url(#sc-cyan)"/>
-  <rect width="1200" height="630" fill="url(#sc-green)"/>
-
-  <!-- Grid lines -->
-  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
-  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
-
-  <!-- Scatter dots -->
-  <circle cx="128" cy="95"   r="1.3" fill="#58d6ff" opacity="0.22"/>
-  <circle cx="355" cy="62"   r="1.5" fill="#4dffb8" opacity="0.18"/>
-  <circle cx="490" cy="148"  r="1"   fill="#58d6ff" opacity="0.25"/>
-  <circle cx="745" cy="78"   r="1.4" fill="#58d6ff" opacity="0.20"/>
-  <circle cx="935" cy="122"  r="1.2" fill="#4dffb8" opacity="0.16"/>
-  <circle cx="1068" cy="65"  r="1"   fill="#58d6ff" opacity="0.22"/>
-  <circle cx="195" cy="505"  r="1.3" fill="#4dffb8" opacity="0.18"/>
-  <circle cx="462" cy="555"  r="1.2" fill="#58d6ff" opacity="0.20"/>
-  <circle cx="812" cy="535"  r="1.5" fill="#58d6ff" opacity="0.17"/>
-  <circle cx="1072" cy="498" r="1"   fill="#4dffb8" opacity="0.22"/>
-
-  <!-- Left card: price line mini chart -->
-  <rect x="42" y="185" width="272" height="240" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
-  <rect x="42" y="185" width="272" height="4" rx="2" fill="#58d6ff" opacity="0.6"/>
-  <text x="178" y="222" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#58d6ff" opacity="0.8">SPOT PRICE &#183; 1 YEAR VIEW</text>
-  <polyline points="70,360 100,348 130,355 160,330 190,338 220,310 250,318 286,290" fill="none" stroke="url(#sc-line)" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="286" cy="290" r="4" fill="#4dffb8"/>
-  <line x1="70" y1="378" x2="286" y2="378" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
-  <text x="178" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.6)">Trend beats daily noise</text>
-
-  <!-- Center: main content -->
-  <text x="600" y="170" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="#4dffb8" opacity="0.85">SILVER PRICING GUIDE &#183; 2026</text>
-  <text x="600" y="246" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="58" letter-spacing="2" fill="#ecf8fb">HOW TO READ SILVER</text>
-  <text x="600" y="312" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="58" letter-spacing="2" fill="#ecf8fb">SPOT PRICE CHARTS</text>
-
-  <!-- Big stat -->
-  <text x="600" y="424" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="104" letter-spacing="-2" fill="#58d6ff">~30%</text>
-  <text x="600" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="rgba(175,198,207,0.65)">ANNUAL VOLATILITY, ROUGHLY TWICE GOLD'S</text>
-  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.5)" letter-spacing="1">SPOT VS FUTURES &#183; TREND &#183; TRUE COST PER OUNCE</text>
-
-  <!-- Right card: true cost math -->
-  <rect x="886" y="185" width="272" height="240" rx="14" fill="rgba(7,20,28,0.82)" stroke="rgba(88,214,255,0.16)" stroke-width="1"/>
-  <rect x="886" y="185" width="272" height="4" rx="2" fill="#4dffb8" opacity="0.6"/>
-  <text x="1022" y="222" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="11" letter-spacing="2" fill="#4dffb8" opacity="0.8">TRUE COST PER OUNCE</text>
-  <text x="1022" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="rgba(175,198,207,0.75)">Spot price: $32.00</text>
-  <text x="1022" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="rgba(175,198,207,0.75)">1 oz coin: $36.00</text>
-  <rect x="910" y="302" width="224" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
-  <text x="1022" y="340" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="30" fill="#58d6ff">12.5%</text>
-  <text x="1022" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="rgba(175,198,207,0.6)">premium over spot</text>
-  <text x="1022" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(88,214,255,0.5)">The chart is never the price you pay</text>
-
-  <!-- Bottom brand bar -->
-  <rect x="0" y="590" width="1200" height="40" fill="rgba(4,16,24,0.9)"/>
-  <text x="600" y="614" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="rgba(88,214,255,0.5)">FUSEDDISTRIBUTION.COM</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="630" fill="url(#g1)"/><rect width="1200" height="630" fill="url(#g2)"/>
+  <circle cx="600" cy="315" r="252" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170.10000000000002" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="285" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="365" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="445" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="525" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="55" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="135" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="215" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="295" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="375" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="455" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="600" y="240" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">HOW TO READ SILVER</text>
+  <text x="600" y="308" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SPOT PRICE CHARTS: A</text>
+  <text x="600" y="376" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">BUYER'S GUIDE</text>
+  
 </svg>

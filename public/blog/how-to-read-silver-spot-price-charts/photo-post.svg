@@ -1,78 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
-  <defs>
-    <radialGradient id="spc-cyan" cx="62%" cy="38%" r="48%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="spc-green" cx="18%" cy="18%" r="38%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Background -->
   <rect width="1200" height="1200" fill="#041018"/>
-  <rect width="1200" height="1200" fill="url(#spc-cyan)"/>
-  <rect width="1200" height="1200" fill="url(#spc-green)"/>
-
-  <!-- Grid lines -->
-  <line x1="170"  y1="0" x2="170"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340"  y1="0" x2="340"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510"  y1="0" x2="510"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680"  y1="0" x2="680"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850"  y1="0" x2="850"  y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="1200" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
-  <circle cx="600" cy="600" r="320" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
-
-  <!-- Scatter dots -->
-  <circle cx="138" cy="162"  r="1.4" fill="#58d6ff" opacity="0.22"/>
-  <circle cx="375" cy="92"   r="1.5" fill="#4dffb8" opacity="0.18"/>
-  <circle cx="515" cy="235"  r="1"   fill="#58d6ff" opacity="0.25"/>
-  <circle cx="768" cy="118"  r="1.4" fill="#58d6ff" opacity="0.20"/>
-  <circle cx="925" cy="188"  r="1.2" fill="#4dffb8" opacity="0.16"/>
-  <circle cx="1078" cy="108" r="1"   fill="#58d6ff" opacity="0.22"/>
-  <circle cx="182" cy="1055" r="1.3" fill="#4dffb8" opacity="0.18"/>
-  <circle cx="445" cy="1088" r="1.2" fill="#58d6ff" opacity="0.20"/>
-  <circle cx="825" cy="1062" r="1.5" fill="#58d6ff" opacity="0.17"/>
-  <circle cx="1082" cy="975" r="1"   fill="#4dffb8" opacity="0.22"/>
-
-  <!-- Top zone -->
-  <text x="600" y="95"  text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="14" letter-spacing="5" fill="#4dffb8" opacity="0.75">FUSED DISTRIBUTION &#183; SILVER GUIDE</text>
-  <text x="600" y="135" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="13" letter-spacing="4" fill="rgba(88,214,255,0.55)">PRICING GUIDE 2026</text>
-
-  <rect x="340" y="148" width="520" height="1" rx="1" fill="#58d6ff" opacity="0.2"/>
-
-  <!-- Main title -->
-  <text x="600" y="270" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="76" letter-spacing="2" fill="#ecf8fb">HOW TO READ SILVER</text>
-  <text x="600" y="356" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="76" letter-spacing="2" fill="#ecf8fb">SPOT PRICE CHARTS</text>
-
-  <!-- Big stat -->
-  <text x="600" y="540" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="190" letter-spacing="-4" fill="#58d6ff">~30%</text>
-  <text x="600" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="rgba(175,198,207,0.65)">SILVER'S ANNUAL VOLATILITY, ROUGHLY TWICE GOLD'S</text>
-
-  <!-- Divider -->
-  <rect x="200" y="672" width="800" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
-
-  <!-- Key points -->
-  <text x="600" y="724" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Spot is for delivery today. Futures are not your number.</text>
-  <text x="600" y="762" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Watch the 1-year trend, not the daily noise</text>
-  <text x="600" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(175,198,207,0.85)">Total paid divided by ounces = your true cost</text>
-
-  <!-- Divider -->
-  <rect x="200" y="836" width="800" height="1" rx="1" fill="rgba(88,214,255,0.15)"/>
-
-  <!-- Excerpt -->
-  <text x="600" y="892" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="rgba(175,198,207,0.6)">The four chart skills every silver buyer needs,</text>
-  <text x="600" y="920" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="rgba(175,198,207,0.6)">with zero trading jargon.</text>
-
-  <!-- CTA button -->
-  <rect x="310" y="978" width="580" height="68" rx="16" fill="rgba(88,214,255,0.06)" stroke="#58d6ff" stroke-width="1" stroke-opacity="0.35"/>
-  <text x="600" y="1021" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="17" letter-spacing="3" fill="rgba(88,214,255,0.8)">FULL BREAKDOWN AT FUSEDDISTRIBUTION.COM</text>
-
-  <!-- Bottom bar -->
-  <rect x="0" y="1160" width="1200" height="40" fill="rgba(4,16,24,0.9)"/>
-  <text x="600" y="1184" text-anchor="middle" font-family="Impact, Arial Narrow Bold, sans-serif" font-size="12" letter-spacing="4" fill="rgba(88,214,255,0.4)">FUSEDDISTRIBUTION.COM/BLOG/HOW-TO-READ-SILVER-SPOT-PRICE-CHARTS</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="1200" fill="url(#g1)"/><rect width="1200" height="1200" fill="url(#g2)"/>
+  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="600" r="324" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="65" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="385" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="705" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="1025" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="225" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="545" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="865" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="65" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="385" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="705" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED</text>
+  <text x="600" y="308" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">HOW TO READ SILVER</text>
+  <text x="600" y="390" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SPOT PRICE CHARTS:</text>
+  <text x="600" y="472" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">A BUYER'S GUIDE</text>
+  
+  <rect x="350" y="1020" width="500" height="68" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
+  <text x="600" y="1063" font-family="Arial, sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
 </svg>

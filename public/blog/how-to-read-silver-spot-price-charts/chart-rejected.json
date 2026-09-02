@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Key Concepts in Silver Chart Analysis",
+  "takeaway": "Analyzing support, resistance, trends, and volatility helps in timing silver purchases.",
+  "source": "Fused Distribution",
+  "source_url": "/blog/how-to-read-silver-spot-price-charts/",
+  "data": [
+    {
+      "label": "Support and Resistance",
+      "value": "Identifying crucial support and resistance levels is fundamental for timing purchases.",
+      "metric": "Support and Resistance Levels",
+      "unit": "Levels",
+      "period": "N/A",
+      "evidence": "Identifying crucial support and resistance levels is fundamental for timing purchases.",
+      "date": "N/A"
+    },
+    {
+      "label": "Moving Averages",
+      "value": "Employing multiple moving averages like a 50 day and a 20 day moving average helps confirm long term trends.",
+      "metric": "Moving Averages",
+      "unit": "N/A",
+      "period": "N/A",
+      "evidence": "Employing multiple moving averages like a 50 day and a 20 day moving average helps confirm long term trends.",
+      "date": "N/A"
+    },
+    {
+      "label": "Volatility",
+      "value": "Volatility is a crucial factor when analyzing silver spot price charts for savvy buyers.",
+      "metric": "Volatility",
+      "unit": "N/A",
+      "period": "N/A",
+      "evidence": "Volatility is a crucial factor when analyzing silver spot price charts for savvy buyers.",
+      "date": "N/A"
+    },
+    {
+      "label": "Momentum Indicators",
+      "value": "Momentum indicators such as the Relative Strength Index help see if the current price action is accelerating or decelerating.",
+      "metric": "Momentum Indicators",
+      "unit": "/A",
+      "period": "N/A",
+      "evidence": "Momentum indicators such as the Relative Strength Index help see if the current price action is accelerating or decelerating.",
+      "date": "N/A"
+    }
+  ]
+}
