@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Silver Premium Structures Comparison",
+  "takeaway": "Silver bars generally have lower premiums than coins.",
+  "source": "ARTICLE",
+  "source_url": "#",
+  "data": [
+    {
+      "label": "Premium for silver bars",
+      "value": "15 percent",
+      "metric": "Premium percentage",
+      "unit": "%",
+      "period": "Comparison",
+      "evidence": "For instance, the premium for silver bars is typically 15 percent"
+    },
+    {
+      "label": "Premium for silver coins",
+      "value": "28 percent",
+      "metric": "Premium percentage",
+      "unit": "%",
+      "period": "certain markets",
+      "evidence": "while the premium for silver coins can reach 28 percent in certain markets"
+    }
+  ],
+  "hero_stat": {
+    "value": "15 percent",
+    "label": "Typical premium for silver bars"
+  },
+  "narration": "The premium structures differ between silver bars and coins. The premium for silver bars is typically 15 percent, whereas the premium for silver coins can reach 28 percent in certain markets."
+}

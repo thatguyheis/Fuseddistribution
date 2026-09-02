@@ -140,6 +140,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-08-27 | silver-premiums-explained-for-beginners | General | silver premiums explained for beginners |
 | 2026-08-26 | how-to-buy-silver-coins-at-spot-price | General | how to buy silver coins at spot price |
 | 2026-08-24 | johnson-matthee-silver-bars-guide | General | Johnson Matthee silver bars guide |
 | 2026-08-23 | silver-panda-coins-from-china-complete-guide | General | silver panda coins from China complete guide |
