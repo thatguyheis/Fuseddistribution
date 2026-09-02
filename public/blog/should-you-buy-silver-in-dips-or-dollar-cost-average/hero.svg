@@ -1,81 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <radialGradient id="glow-center" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#58d6ff" stop-opacity="0.13"/>
-      <stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow-topleft" cx="0%" cy="0%" r="55%">
-      <stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Base background -->
   <rect width="1200" height="630" fill="#041018"/>
-  <rect width="1200" height="630" fill="url(#glow-center)"/>
-  <rect width="1200" height="630" fill="url(#glow-topleft)"/>
-
-  <!-- Grid lines -->
-  <line x1="170" y1="0" x2="170" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="340" y1="0" x2="340" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="510" y1="0" x2="510" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="680" y1="0" x2="680" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="850" y1="0" x2="850" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-  <line x1="1020" y1="0" x2="1020" y2="630" stroke="rgba(255,255,255,0.022)" stroke-width="1"/>
-
-  <!-- Rings -->
-  <circle cx="600" cy="315" r="255" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.07"/>
-  <circle cx="600" cy="315" r="170" fill="none" stroke="#58d6ff" stroke-width="1" opacity="0.11"/>
-
-  <!-- Scatter dots -->
-  <circle cx="142" cy="88" r="1.5" fill="#58d6ff" opacity="0.22"/>
-  <circle cx="380" cy="48" r="1" fill="#4dffb8" opacity="0.28"/>
-  <circle cx="720" cy="72" r="1.5" fill="#58d6ff" opacity="0.18"/>
-  <circle cx="960" cy="110" r="1" fill="#4dffb8" opacity="0.24"/>
-  <circle cx="1090" cy="55" r="1.5" fill="#58d6ff" opacity="0.20"/>
-  <circle cx="220" cy="540" r="1" fill="#4dffb8" opacity="0.26"/>
-  <circle cx="820" cy="570" r="1.5" fill="#58d6ff" opacity="0.18"/>
-  <circle cx="1140" cy="490" r="1" fill="#4dffb8" opacity="0.22"/>
-
-  <!-- Left card: volatility -->
-  <rect x="42" y="155" width="295" height="230" rx="16" fill="rgba(7,20,28,0.72)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
-  <text x="189" y="192" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#58d6ff">ANNUAL VOLATILITY</text>
-  <text x="189" y="265" text-anchor="middle" font-family="Impact,sans-serif" font-size="72" fill="#4dffb8" letter-spacing="1">30%</text>
-  <text x="189" y="295" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.7)">silver price swings yearly</text>
-  <line x1="68" y1="315" x2="311" y2="315" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
-  <text x="189" y="338" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" letter-spacing="2" fill="rgba(175,198,207,0.5)">2X GOLD VOLATILITY</text>
-  <text x="189" y="360" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" letter-spacing="1" fill="rgba(175,198,207,0.4)">perfect timing nearly impossible</text>
-
-  <!-- Right card: 2020 swing -->
-  <rect x="863" y="155" width="295" height="230" rx="16" fill="rgba(7,20,28,0.72)" stroke="rgba(88,214,255,0.18)" stroke-width="1"/>
-  <text x="1010" y="192" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" font-weight="800" letter-spacing="3" fill="#58d6ff">2020 PRICE SWING</text>
-  <text x="1010" y="265" text-anchor="middle" font-family="Impact,sans-serif" font-size="72" fill="#58d6ff" letter-spacing="1">142%</text>
-  <text x="1010" y="295" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="13" fill="rgba(175,198,207,0.7)">$12 to $29 in one year</text>
-  <line x1="889" y1="315" x2="1132" y2="315" stroke="rgba(88,214,255,0.1)" stroke-width="1"/>
-  <text x="1010" y="338" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" letter-spacing="2" fill="rgba(175,198,207,0.5)">KITCO SPOT DATA</text>
-  <text x="1010" y="360" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" letter-spacing="1" fill="rgba(175,198,207,0.4)">buyers buy the recovery, not the bottom</text>
-
-  <!-- Center content -->
-  <text x="600" y="175" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="12" font-weight="800" letter-spacing="4" fill="#4dffb8">SILVER &#183; BUYING STRATEGY</text>
-  <text x="600" y="238" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="54" letter-spacing="2" fill="#ecf8fb">DIP HUNTING</text>
-  <text x="600" y="285" text-anchor="middle" font-family="Impact,Haettenschweiler,sans-serif" font-size="38" letter-spacing="3" fill="#58d6ff">VS. DOLLAR-COST AVG</text>
-
-  <!-- Stat row -->
-  <rect x="345" y="305" width="165" height="70" rx="10" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
-  <text x="427" y="330" text-anchor="middle" font-family="Impact,sans-serif" font-size="26" fill="#4dffb8">1.53%</text>
-  <text x="427" y="350" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.7)">annual timing penalty</text>
-  <text x="427" y="364" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="9" fill="rgba(175,198,207,0.45)">DALBAR 2024</text>
-
-  <rect x="525" y="305" width="165" height="70" rx="10" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
-  <text x="607" y="330" text-anchor="middle" font-family="Impact,sans-serif" font-size="26" fill="#4dffb8">2.7%</text>
-  <text x="607" y="350" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.7)">below avg via DCA</text>
-  <text x="607" y="364" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="9" fill="rgba(175,198,207,0.45)">FIXED MONTHLY BUYING</text>
-
-  <rect x="705" y="305" width="165" height="70" rx="10" fill="rgba(88,214,255,0.06)" stroke="rgba(88,214,255,0.15)" stroke-width="1"/>
-  <text x="787" y="330" text-anchor="middle" font-family="Impact,sans-serif" font-size="26" fill="#4dffb8">$156</text>
-  <text x="787" y="350" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="10" fill="rgba(175,198,207,0.7)">saved on premiums</text>
-  <text x="787" y="364" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="9" fill="rgba(175,198,207,0.45)">OVER 12 MONTHS</text>
-
-  <!-- Bottom brand -->
-  <text x="600" y="580" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="11" letter-spacing="3" fill="rgba(175,198,207,0.38)">fuseddistribution.com/blog</text>
+  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
+  <rect width="1200" height="630" fill="url(#g1)"/><rect width="1200" height="630" fill="url(#g2)"/>
+  <circle cx="600" cy="315" r="252" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
+  <circle cx="600" cy="315" r="170.10000000000002" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
+  <circle cx="757" cy="285" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="365" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="445" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="525" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="55" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="135" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="215" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="295" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="375" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="455" r="1.5" fill="#4dffb8" opacity="0.19"/>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" text-anchor="middle" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="600" y="240" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">SHOULD YOU BUY SILVER</text>
+  <text x="600" y="308" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">IN DIPS OR DOLLAR COST</text>
+  <text x="600" y="376" font-family="Impact, Haettenschweiler, sans-serif" font-size="60" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">AVERAGE</text>
+  <text x="600" y="470" font-family="Impact, sans-serif" font-size="84" fill="#58d6ff" text-anchor="middle">$100</text>
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="24" fill="rgba(175,198,207,0.75)" text-anchor="middle">EVERY MONTH YOU ESTABLISH</text>
 </svg>
