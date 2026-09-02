@@ -1,12 +1,18 @@
 {
-  "file": "public/blog/social-media-analytics-what-metrics-actually-matter/verified.md",
-  "pass": true,
+  "file": "/Users/nick/projects/fuseddistribution/public/blog/social-media-analytics-what-metrics-actually-matter/verified.md",
+  "pass": false,
   "em_dash": 0,
   "en_dash": 0,
   "verify_tags": 0,
   "banned": [],
   "hedging": [],
-  "filler_transitions": [],
+  "filler_transitions": [
+    {
+      "term": "accordingly",
+      "count": 1
+    }
+  ],
   "openers": [],
-  "total_violations": 0
+  "uncited_sources": [],
+  "total_violations": 1
 }

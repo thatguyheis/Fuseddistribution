@@ -1,96 +1,105 @@
 # Reel Script: social-media-analytics-what-metrics-actually-matter
 format: long-form
-segments: 10
-target-duration: 186s
+segments: 11
+target-duration: 182s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 9s minimum
+**Duration:** 4s minimum
 
-Narration: A 2 percent “Call Now” button click-through rate is the key to boosting local phone calls.
+Narration: Stop chasing likes; focus on metrics that drive real local growth.
 
 ---
 
-## OVERLAY: GETTING CALLS FRUSTRATED SEE
+## OVERLAY: LOOKING SOCIAL MEDIA ANALYTICS
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 16s minimum
 
-Narration: But you’re not getting the calls you need. You’re frustrated because you see competitors ranking higher, even though you’re putting in the same effort. You’re chasing likes and shares, but those numbers don’t translate to customers walking through your door. The truth is, a lot of social media analytics are misleading.
+Narration: If you’re looking at social media analytics and feeling overwhelmed by a sea of confusing numbers, you are not alone. As a local business owner, you have a million things to track, and it’s easy to get lost in vanity metrics that promise big results but deliver little real-world impact.
 
 ---
 
-## OVERLAY: SPENDING TIME RESOURCES SOMETHING
+## OVERLAY: LEARN HOW INTERPRET ENGAGEMENT
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: You’re spending time and resources on something that isn’t delivering results. Your Google Business Profile (GBP) is your digital storefront. It’s free, and it’s absolutely crucial for local visibility. Many businesses set it up incorrectly, leaving potential customers confused and frustrated.
+Narration: You will learn how to interpret engagement rates that mean something, how to measure the quality of leads generated, and how to connect your social efforts directly to your local business goals. Stick with us, and by the end of this, you will have a clear, actionable roadmap for using analytics to make smarter marketing decisions for your local community.
 
 ---
 
-## STAT: 12 HOURS CALLS BEST RESULTS LET
+## OVERLAY: TRACK HOW MANY PEOPLE
 
 **Visual:** Supporting article visual
-**Duration:** 24s minimum
+**Duration:** 23s minimum
 
-Narration: This builds local trust and significantly increases your chances of getting those crucial phone calls. Aim for a response time of under 12 hours for the best results. Let’s ditch the vanity metrics and focus on what really drives phone calls. These are the key metrics you should be tracking and optimizing: 1.
+Narration: We need to track how many people actually visit your website from social media, how many inquiries turn into actual calls, and what kind of content generates tangible results. That is where the real growth for your local business happens. When you're running a local business, it's easy to get lost in the noise of social media. But focusing on vanity metrics like total likes or follower counts won't bring in customers.
 
 ---
 
-## OVERLAY: HEALTHY ACQUISITION RATE GENERALLY
+## OVERLAY: WHILE NUMBERS FEEL GOOD
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: While those numbers feel good, they don't tell you the real story of whether your social media efforts are actually driving customers or building your local business. For us small local businesses, the focus needs to shift from sheer volume to meaningful interaction. We need to look deeper into metrics that show genuine interest and intent. This means tracking comments, direct messages, and saves.
+
+---
+
+## OVERLAY: FOCUS METRICS DIRECTLY IMPACT
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: We need to focus on metrics that directly impact your bottom line. This shows how interested your audience is in what you are posting. A high engagement rate means people are interacting with your content, which signals genuine interest and potential customers. Are people commenting, sharing, or saving your posts? These actions matter much more than just how many people saw your content.
+
+---
+
+## OVERLAY: SHIFT OUR FOCUS SIMPLY
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: A healthy acquisition rate is generally considered to be at least one new review per week. If you’re struggling to get reviews, consider offering incentives (with your local regulations in mind, of course). Simple things like asking for a review after a positive interaction can make a big difference.
+Narration: We need to shift our focus from simply tracking activity to measuring what truly drives results for your bottom line. For local businesses, the most important metrics are those that connect social activity to tangible actions. This means looking at engagement that leads to website visits, inquiries, or actual sales. Are people using your social media to find your shop, book a service, or learn more about your products?
 
 ---
 
-## STAT: 24 HOURS
+## OVERLAY: THESE SHOW WHAT RESONATES
 
 **Visual:** Supporting article visual
-**Duration:** 24s minimum
+**Duration:** 17s minimum
 
-Narration: Make sure it’s a large, prominent button on every page of your GBP. Don’t hide it in a tiny menu. It needs to be front and center. Consider using a contrasting color to make it stand out. Review Speed: Aim to respond to every review , positive or negative , within 24 hours.
-
----
-
-## OVERLAY: MONITOR SEARCH RESULTS REGULARLY
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: Monitor Search Results: Regularly check Google Search for your business name and services. Are you appearing in the top results? If not, you need to identify what’s preventing you from ranking higher. This could be a lack of citations, low-quality website content, or poor GBP optimization.
+Narration: These show you what resonates with your community and what kind of content people want to see more of. This tells you what to create next. Next, connect your social activity to real-world results. Are people clicking through to your website? These are the metrics that matter most for local business growth.
 
 ---
 
-## OVERLAY: GOT WEBSITE PEOPLE AREN
+## OVERLAY: DEFINING THESE SMART GOALS
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: You’ve got a website, but people aren’t calling from it. It’s how you’re showing up on Google. You’re likely spending time and money on marketing that isn’t delivering the results you need. Your Google Business Profile is free, and it’s your most powerful tool for local visibility.
+Narration: By defining these SMART goals, you can track your progress accurately. This allows us, at Fused Distribution, to see exactly how our website and SEO strategies are supporting your social media ambitions. Let's work together to define what success means for your business right now. So, you've got all this data from your social media platforms, but what does it actually do for your local business?
 
 ---
 
-## OVERLAY: READY SEE WHAT LOOKS
+## OVERLAY: BOOST SPECIFIC LOCAL EVENT
 
 **Visual:** Supporting article visual
-**Duration:** 14s minimum
+**Duration:** 13s minimum
 
-Narration: Ready to see what this looks like for your business? Stop wasting money on vague marketing promises. See how we get your business found on Google right now at /#contact.
+Narration: Should you boost a specific local event promotion? Should you focus more on user-generated content from your customers? By turning your analytics into a roadmap, you ensure every social media effort contributes directly to growing your local business.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 9s minimum
+**Duration:** 6s minimum
 
-Text: Considering all this, what’s one metric you’d prioritize to boost?
+Text: Stop chasing likes and start driving real local growth today?
 Subtext: COMMENT BELOW
-Narration: Considering all this, what’s one metric you’d prioritize to boost? Follow for more practical business tips.
+Narration: Stop chasing likes and start driving real local growth today? Follow for more practical business tips.
