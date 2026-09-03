@@ -328,6 +328,48 @@ ulimit -n 65536 2>/dev/null || true
 
 cd "$PROJECT_DIR" || exit 1
 
+# Quality blocks are recoverable work. Recreate a pending checkpoint when an
+# older run wrote only a complete marker with quality_blocked > 0.
+restore_quality_blocked_pending() {
+  python3 - <<'PY'
+import json
+from datetime import datetime
+from pathlib import Path
+
+root = Path('public/blog/research')
+posts_path = root.parent / 'posts.json'
+registered = set()
+if posts_path.exists():
+    registered = {p.get('slug') for p in json.loads(posts_path.read_text()) if p.get('slug')}
+for complete_path in sorted(root.glob('????-??-??-complete.json')):
+    try:
+        complete = json.loads(complete_path.read_text())
+    except Exception:
+        continue
+    if not int(complete.get('quality_blocked', 0) or 0):
+        continue
+    date = complete_path.name[:10]
+    pending_path = root / f'{date}-pending.json'
+    queue_path = root / f'{date}-queue.json'
+    if pending_path.exists() or not queue_path.exists():
+        continue
+    queue = json.loads(queue_path.read_text())
+    remaining = [p.get('slug') for p in queue.get('posts', [])
+                 if p.get('slug') and p.get('slug') not in registered]
+    if not remaining:
+        continue
+    pending_path.write_text(json.dumps({
+        'date': date,
+        'remaining': remaining,
+        'attempts': {},
+        'requeued_from_quality_block': True,
+        'interrupted_at': datetime.now().astimezone().isoformat(),
+    }, indent=2) + '\n')
+    print(f'Recovery: requeued {date}: {", ".join(remaining)}')
+PY
+}
+restore_quality_blocked_pending
+
 # Checkpoint today's queue before selecting an older pending day. Without this,
 # backlog recovery can consume the only daily launch and silently skip today.
 CALENDAR_TODAY=$(TZ=America/Los_Angeles date +%F)
@@ -558,8 +600,13 @@ for SLUG in "${SLUGS[@]}"; do
   echo "Attempt $ATTEMPT/$MAX_POST_ATTEMPTS: $SLUG" >> "$LOG_FILE"
   write_run_state "post-start" "$SLUG"
 
-  # Skip only fully registered posts. Partial QA-failed folders must be rebuilt or blocked.
-  if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]]      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+  # Skip only fully registered posts for this publication date. A prior
+  # registration with stale metadata is a recoverable date collision: force a
+  # rebuild so the missed queue is not silently treated as complete.
+  FORCE_POST=0
+  if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]] \
+      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null \
+      && [[ "$(python3 -c "import json; print(next((p.get('date','') for p in json.load(open('public/blog/posts.json')) if p.get('slug') == '$SLUG'), ''))" 2>/dev/null)" == "$TODAY" ]]; then
     # A registered checkpoint may predate the current deterministic QA rules.
     # Recheck it before treating recovery as healthy, but do not quarantine or
     # rewrite already-live content from this recovery-only path.
@@ -597,6 +644,11 @@ for SLUG in "${SLUGS[@]}"; do
     continue
   fi
 
+  if grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
+    FORCE_POST=1
+    echo "RECOVERY: $SLUG is registered for an older date; forcing rebuild for $TODAY" >> "$LOG_FILE"
+  fi
+
   # Pre-flight probe before this post
   PROBE_OUT=$(probe_session 2>&1)
   if [[ $? -ne 0 ]]; then
@@ -627,10 +679,12 @@ else: print('{}')
   # Covers write/polish, internal links, hooks, svg, html, reel-data, social,
   # optional enhancements, assets, qa, posts.json, topic-history.
   POST_TMPOUT=$(mktemp)
+  FORCE_ARGS=()
+  (( FORCE_POST == 1 )) && FORCE_ARGS+=(--force)
   python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
     HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
     BLOG_PUBLISH_DATE="$TODAY" \
-    public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" 2>&1 \
+    public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" "${FORCE_ARGS[@]}" 2>&1 \
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
   write_run_state "post-build-exit-${POST_EXIT}" "$SLUG"
@@ -905,7 +959,12 @@ PY
   QUEUE_BLOCKED=${QUEUE_SUMMARY##* }
   [[ "$QUEUE_LIVE" == <-> ]] || QUEUE_LIVE=${#BUILT[@]}
   [[ "$QUEUE_BLOCKED" == <-> ]] || QUEUE_BLOCKED=$QUALITY_BLOCKED
-  cat > "$COMPLETE_FILE" <<JSON
+  # A dated completion marker is only authoritative when every queued slug is
+  # registered. Quality blocks are recovery work, not successful completion.
+  if (( QUEUE_BLOCKED > 0 )); then
+    echo "CHECKPOINT INCOMPLETE: $QUEUE_BLOCKED quality-blocked slug(s) remain; retaining recovery state" >> "$LOG_FILE"
+  else
+    cat > "$COMPLETE_FILE" <<JSON
 {
   "date": "$TODAY",
   "completed_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
@@ -914,6 +973,7 @@ PY
   "source_sync_warnings": $SYNC_FAILS
 }
 JSON
+  fi
   NEXT_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null | sort | head -1)
   if [[ -n "$NEXT_PENDING" ]]; then
     PREVIOUS_TODAY="$TODAY"

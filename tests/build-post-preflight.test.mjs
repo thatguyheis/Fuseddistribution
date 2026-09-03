@@ -18,3 +18,8 @@ test('build-post runs deterministic preflight before rendering JPG assets', () =
   assert.match(buildPost, /qa-preflight\.json/);
   assert.match(buildPost, /qa-preflight-fail/);
 });
+
+test('QA year validation ignores opaque HTML identifiers', () => {
+  const qaLocal = readFileSync(resolve('public/blog/scripts/qa-local.mjs'), 'utf8');
+  assert.match(qaLocal, /yearSurface = label === 'index\.html' \? textFromHtml\(text\)/);
+});

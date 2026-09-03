@@ -221,7 +221,7 @@ test('explicitly blocked queue slugs count as accounted outcomes', () => {
     ],
   });
   const audit = buildAudit('2026-08-04', [], config, [], { blogPublication });
-  assert.equal(audit.operationalState.blogPublication.completionStatus, 'complete');
+  assert.equal(audit.operationalState.blogPublication.completionStatus, 'blocked');
   assert.deepEqual(
     audit.operationalState.blogPublication.blockedQueueSlugs,
     [

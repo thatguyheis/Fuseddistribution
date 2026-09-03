@@ -43,8 +43,13 @@ function validateTextSurface(label, text, blockers, allowedFutureYears = new Set
   pushIf(/\b(?:REQUIREMENTS:|Output ONLY the markdown article|Claude: apply writing rules|Topic contract is mandatory)\b/i.test(text), blockers, `${label}: model prompt leaked into publishable content`);
   pushIf(/\bHere (?:are|is) (?:six-word|6-word).*(?:alt texts?|options?)\b/i.test(text), blockers, `${label}: model option preamble leaked into publishable content`);
   pushIf(/[—–]/.test(text), blockers, `${label}: contains em/en dash`);
-  pushIf(/\b(?:19|20|21)\d{3,}\b/.test(text), blockers, `${label}: suspicious malformed year`);
-  const futureYears = [...text.matchAll(/\b20[3-9]\d\b/g)].map((match) => match[0]);
+  // HTML attributes contain opaque identifiers (for example social post IDs)
+  // that can be much longer than a year. Validate the rendered text surface
+  // for year checks so a URL cannot turn a valid post into a false quality
+  // failure, while preserving the check for malformed years in copy.
+  const yearSurface = label === 'index.html' ? textFromHtml(text) : text;
+  pushIf(/\b(?:19|20|21)\d{3,}\b/.test(yearSurface), blockers, `${label}: suspicious malformed year`);
+  const futureYears = [...yearSurface.matchAll(/\b20[3-9]\d\b/g)].map((match) => match[0]);
   pushIf(futureYears.some((year) => !allowedFutureYears.has(year)), blockers, `${label}: future year needs manual source check`);
   pushIf(/\$\s*\d+(?:\.\d{2})?\s+(?:to|-)\s+\$\s*\d+\.\d{2}\b/i.test(text), blockers, `${label}: budget range uses cents; likely numeric typo`);
 }

@@ -74,11 +74,12 @@ echo $PEXELS_API_KEY
 ### Automated crash recovery
 
 The recovery loop is bounded. A model transport or empty-output failure remains
-retryable from the dated pending marker; an undersized article, invalid metadata,
-unsupported factual claim, or failed quality gate is a terminal quality block and
-is quarantined for owner repair. The whole post has a watchdog, and the pending
-marker stores per-slug attempts. After the retry ceiling, the slug is quarantined
-with its exact checkpoint rather than retrying forever and starving a newer date.
+retryable from the dated pending marker. An undersized article, invalid metadata,
+unsupported factual claim, or failed quality gate is quarantined with its exact
+checkpoint, automatically requeued on the next launch, and sent through the
+repair path before it can publish. The whole post has a watchdog, and the pending
+marker stores per-slug attempts. After the retry ceiling, the slug remains visibly
+blocked and the date cannot be reported complete until an owner repairs it.
 All operating dates come from `TZ=America/Los_Angeles date +%F`.
 
 The 9 AM runner writes `public/blog/research/YYYY-MM-DD-pending.json` before its
@@ -166,8 +167,10 @@ place for audit.
 - Before scheduling a follow-up, resolve the next date from the oldest remaining
   `????-??-??-pending.json` file. The retry's `BLOG_RUN_DATE` must match that date.
   Re-evaluate after every completed day until no pending markers remain.
-- A run is complete only when every selected slug is either live and verified,
-  explicitly quality-blocked, or retained in the pending marker for retry.
+- A run is complete only when every selected slug is live and verified. A quality
+  block is an actionable recovery state, not successful completion: it must be
+  requeued or remain in the pending marker, and the dated complete marker must
+  not silently close over it.
 - A recovered day is complete only when all of these are true: every approved URL
   returns 200, live and local `posts.json` agree on the newest slug, live and local
   sitemap counts agree, the dated pending marker is gone, and the dated complete
@@ -928,7 +931,7 @@ git add public/blog/posts.json public/blog/[slug]/ public/blog/topic-history.md 
 git commit -m "feat(blog): [Post Title]"
 ```
 
-**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run deploys each approved local commit with `npx wrangler deploy` and curl-verifies the slug returns 200. Website deployment does not depend on GitHub authentication. Codex owns Git review and may push only with Nick's approval. QA-failed posts are terminal quality blocks; deferred or deployment-failed posts remain in the dated pending marker for retry.
+**Auto-publish enabled 2026-06-29.** The launchd plist (`~/Library/LaunchAgents/com.nick.daily-blog-reel.plist`) sets `EnvironmentVariables.BLOG_AUTO_DEPLOY=1`, so the 9 AM run deploys each approved local commit with `npx wrangler deploy` and curl-verifies the slug returns 200. Website deployment does not depend on GitHub authentication. Codex owns Git review and may push only with Nick's approval. QA-failed posts are quarantined repair checkpoints and are automatically requeued; only a live, verified post may close a dated checkpoint. Deferred or deployment-failed posts remain in the dated pending marker for retry.
 
 To revert to manual review, remove `BLOG_AUTO_DEPLOY` from the plist (or set to `0`) and reload: `launchctl bootout gui/$(id -u)/com.nick.daily-blog-reel && launchctl bootstrap gui/$(id -u) <plist>`. With it off, the run stops after local commit and writes `PUBLISH PENDING` to `~/Library/Logs/daily-blog-reel.log` for Codex review.
 

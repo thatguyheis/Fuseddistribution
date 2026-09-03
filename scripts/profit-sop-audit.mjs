@@ -233,7 +233,14 @@ export function evaluateBlogPublicationState({ date, queue, pending, completeExi
     missingRegisteredSlugs,
     unaccountedQueueSlugs,
     completeExists,
-    completionStatus: hardStops.length ? 'incomplete' : 'complete',
+    // A quality block is an unfinished checkpoint until the post is repaired
+    // and registered. Treating an empty pending marker plus a blocked slug as
+    // complete is what allowed the 8/26 404 to disappear from recovery.
+    completionStatus: hardStops.length
+      ? 'incomplete'
+      : blockedQueueSlugs.length
+        ? 'blocked'
+        : 'complete',
     hardStops,
   };
 }
