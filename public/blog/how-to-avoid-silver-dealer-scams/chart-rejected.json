@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "FTC Report on Precious Metals Fraud",
+  "takeaway": "Precious metals fraud reports increased significantly in 2022.",
+  "source": "FTC",
+  "source_url": "https://www.ftc.gov/",
+  "data": [
+    {
+      "label": "Precious Metals Fraud Reports",
+      "value": "70%",
+      "metric": "Increase in reports",
+      "unit": "%",
+      "period": "2022",
+      "evidence": "According to the FTC, precious metals fraud reports increased by 70% in 2022 alone"
+    }
+  ],
+  "hero_stat": {
+    "value": "70",
+    "label": "Percentage Increase"
+  },
+  "narration": "The Federal Trade Commission reported a dramatic rise in precious metals fraud cases in 2022, highlighting the growing risk to investors. This significant increase underscores the need for caution and thorough due diligence when considering investments in precious metals."
+}
