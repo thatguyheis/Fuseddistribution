@@ -13,11 +13,16 @@ GIT_SYNC="${BLOG_GIT_SYNC:-0}"
 # override stale retry plists or shell environments that still advertise it.
 HERMES_TAKEOVER="1"
 CLAUDE_ENABLED="0"
-LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-# The 4B QAT model can remain resident but stop answering under memory
-# pressure. qwen3:4b is installed locally and has a bounded, verified reply
-# path, so it is the safe default for unattended queue recovery.
-HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-qwen3:4b}"
+LOCAL_LLM="${LOCAL_LLM:-$PROJECT_DIR/scripts/hermes-local.sh}"
+# Gemma owns long-form and final QA work; the smaller LFM model is reserved for
+# bounded leaf transformations. The watchdog probes a lightweight Gemma model
+# before waking this job so an unavailable listener does not consume a queue.
+HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
+HERMES_ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-gemma3:4b-it-qat}"
+HERMES_LEAF_MODEL="${HERMES_LEAF_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
+HERMES_STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b-it-qat}"
+HERMES_QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b-it-qat}"
+HERMES_MEDIA_MODEL="${HERMES_MEDIA_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
 PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
 VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
 VERIFY_DELAY_SECONDS="${BLOG_VERIFY_DELAY_SECONDS:-15}"
@@ -25,7 +30,10 @@ POST_TIMEOUT_SECONDS="${BLOG_POST_TIMEOUT_SECONDS:-1800}"
 MAX_POST_ATTEMPTS="${BLOG_MAX_POST_ATTEMPTS:-3}"
 RETRY_DELAY_SECONDS="${BLOG_RETRY_DELAY_SECONDS:-900}"
 RUN_DATE_OVERRIDE="${BLOG_RUN_DATE:-}"
-export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM HERMES_LOCAL_MODEL
+QUEUE_START_DATE="${BLOG_QUEUE_START_DATE:-$(TZ=America/Los_Angeles date +%F)}"
+export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM HERMES_LOCAL_MODEL \
+  HERMES_ARTICLE_MODEL HERMES_LEAF_MODEL HERMES_STRUCTURED_MODEL \
+  HERMES_QA_MODEL HERMES_MEDIA_MODEL
 
 SELF_LABEL="${XPC_SERVICE_NAME:-}"
 RETRY_LABEL="com.nick.daily-blog-reel.retry"
@@ -140,6 +148,11 @@ schedule_retry() {
     <key>HERMES_TAKEOVER</key><string>${HERMES_TAKEOVER}</string>
     <key>LOCAL_LLM</key><string>${LOCAL_LLM}</string>
     <key>HERMES_LOCAL_MODEL</key><string>${HERMES_LOCAL_MODEL}</string>
+    <key>HERMES_ARTICLE_MODEL</key><string>${HERMES_ARTICLE_MODEL}</string>
+    <key>HERMES_LEAF_MODEL</key><string>${HERMES_LEAF_MODEL}</string>
+    <key>HERMES_STRUCTURED_MODEL</key><string>${HERMES_STRUCTURED_MODEL}</string>
+    <key>HERMES_QA_MODEL</key><string>${HERMES_QA_MODEL}</string>
+    <key>HERMES_MEDIA_MODEL</key><string>${HERMES_MEDIA_MODEL}</string>
     <key>HERMES_LOCAL_BASE_URL</key><string>${HERMES_LOCAL_BASE_URL:-http://localhost:11434/v1}</string>
     <key>HERMES_LOCAL_MAX_TOKENS</key><string>${HERMES_LOCAL_MAX_TOKENS:-256}</string>
   </dict>
@@ -392,7 +405,9 @@ fi
 if [[ -n "$RUN_DATE_OVERRIDE" ]]; then
   TODAY="$RUN_DATE_OVERRIDE"
 else
-  OLDEST_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null | sort | head -1)
+  OLDEST_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null \
+    | sort \
+    | awk -v start="$QUEUE_START_DATE" 'BEGIN { FS="/" } { name=$NF; date=substr(name,1,10); if (start == "" || date >= start) { print; exit } }')
   if [[ -n "$OLDEST_PENDING" ]]; then
     PENDING_NAME="${OLDEST_PENDING:t:r}"
     TODAY="${PENDING_NAME%-pending}"
@@ -686,7 +701,10 @@ else: print('{}')
   (( FORCE_POST == 1 )) && FORCE_ARGS+=(--force)
   python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
     HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
-    BLOG_PUBLISH_DATE="$TODAY" \
+    HERMES_LOCAL_MODEL="$HERMES_ARTICLE_MODEL" HERMES_ARTICLE_MODEL="$HERMES_ARTICLE_MODEL" \
+    HERMES_LEAF_MODEL="$HERMES_LEAF_MODEL" HERMES_STRUCTURED_MODEL="$HERMES_STRUCTURED_MODEL" \
+    HERMES_QA_MODEL="$HERMES_QA_MODEL" HERMES_MEDIA_MODEL="$HERMES_MEDIA_MODEL" \
+      BLOG_PUBLISH_DATE="$TODAY" \
     public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" "${FORCE_ARGS[@]}" 2>&1 \
     | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
   POST_EXIT=$pipestatus[1]
@@ -700,7 +718,10 @@ else: print('{}')
     echo "RECOVERY: $SLUG is missing required reel artifacts; forcing one full content rebuild" >> "$LOG_FILE"
     python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
       HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
-      BLOG_PUBLISH_DATE="$TODAY" \
+      HERMES_LOCAL_MODEL="$HERMES_ARTICLE_MODEL" HERMES_ARTICLE_MODEL="$HERMES_ARTICLE_MODEL" \
+      HERMES_LEAF_MODEL="$HERMES_LEAF_MODEL" HERMES_STRUCTURED_MODEL="$HERMES_STRUCTURED_MODEL" \
+      HERMES_QA_MODEL="$HERMES_QA_MODEL" HERMES_MEDIA_MODEL="$HERMES_MEDIA_MODEL" \
+        BLOG_PUBLISH_DATE="$TODAY" \
       public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" --force 2>&1 \
       | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
     POST_EXIT=$pipestatus[1]

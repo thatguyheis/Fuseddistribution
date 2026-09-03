@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.nick.daily-blog-reel</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/nick/projects/fuseddistribution/scripts/daily-blog-reel.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>StandardOutPath</key>
+  <string>/Users/nick/Library/Logs/daily-blog-reel.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/nick/Library/Logs/daily-blog-reel.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>BLOG_AUTO_DEPLOY</key>
+    <string>1</string>
+    <key>BLOG_GIT_SYNC</key>
+    <string>1</string>
+    <key>CLAUDE_ENABLED</key>
+    <string>0</string>
+    <key>HERMES_TAKEOVER</key>
+    <string>1</string>
+    <key>HERMES_LOCAL_BASE_URL</key>
+    <string>http://127.0.0.1:11434/v1</string>
+    <key>HERMES_LOCAL_MAX_TOKENS</key>
+    <string>256</string>
+    <key>LOCAL_LLM</key>
+    <string>/Users/nick/projects/fuseddistribution/scripts/hermes-local.sh</string>
+  </dict>
+</dict>
+</plist>

@@ -112,6 +112,12 @@ function validateTopicCoherence(html, blockers) {
   const tokens = topicTokens(title);
   if (tokens.length < 2) return;
 
+  const bodyText = textFromHtml(bodyHtml);
+  const bodyTokenSet = new Set(words(bodyText));
+  const bodyHits = tokens.filter((token) => bodyTokenSet.has(token));
+  pushIf(bodyHits.length < Math.min(2, tokens.length), blockers,
+    `topic coherence: body does not contain enough title topic terms (${tokens.join(', ')})`);
+
   const h2s = [...bodyHtml.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi)]
     .map((match) => textFromHtml(match[1]))
     .filter((h2) => h2 && !/^related$/i.test(h2));
@@ -122,6 +128,24 @@ function validateTopicCoherence(html, blockers) {
     return tokens.some((token) => set.has(token));
   });
   pushIf(h2Hits.length === 0, blockers, `topic coherence: no H2 contains title topic terms (${tokens.join(', ')})`);
+}
+
+function validateMetadata(dir, blockers) {
+  const path = join(dir, 'meta.json');
+  if (!existsSync(path)) {
+    blockers.push('missing meta.json');
+    return;
+  }
+  let meta;
+  try { meta = JSON.parse(readText(path)); }
+  catch { blockers.push('meta.json is invalid JSON'); return; }
+  const altWords = String(meta.alt ?? '').trim().split(/\s+/).filter(Boolean);
+  pushIf(altWords.length !== 6, blockers, `metadata alt must contain exactly 6 words (found ${altWords.length})`);
+  const description = String(meta.description ?? '').trim();
+  pushIf(description.length < 140 || description.length > 160, blockers,
+    `metadata description must be 140-160 characters (found ${description.length})`);
+  pushIf(/\b(?:best deal|lowest price|buy now|do not miss)\b/i.test(description), blockers,
+    'metadata description contains promotional language');
 }
 
 function sectionWordSet(sectionHtml) {
@@ -190,7 +214,7 @@ function validateSilverTaxAccuracy(html, slug, blockers) {
   );
 }
 
-function validateSocial(socialPath, blockers) {
+function validateSocial(socialPath, blockers, title) {
   if (!existsSync(socialPath)) {
     blockers.push('missing social-copy.json');
     return;
@@ -212,6 +236,11 @@ function validateSocial(socialPath, blockers) {
   pushIf(typeof x !== 'string' || x.length > 280, blockers, 'social-copy.json reel.x missing or over 280 characters');
   pushIf(typeof social?.discussion_question !== 'string' || !social.discussion_question.trim().endsWith('?'), blockers, 'discussion_question must be a complete question');
   pushIf(!social?.blog_url || !String(social.blog_url).includes(`/blog/${social.slug}/`), blockers, 'blog_url missing expected slug URL');
+  const tokens = topicTokens(title);
+  const socialText = collectStrings(social).map(({ value }) => value).join(' ');
+  const hits = tokens.filter((token) => words(socialText).includes(token));
+  pushIf(tokens.length >= 2 && hits.length === 0, blockers,
+    `social topic coherence: copy contains none of the title topic terms (${tokens.join(', ')})`);
 }
 
 const STOP_LABEL_ENDINGS = new Set([
@@ -344,9 +373,12 @@ function main() {
   const researchText = readText(join(dir, 'research.json'));
   const allowedFutureYears = new Set(researchText.match(/\b20[3-9]\d\b/g) ?? []);
 
-  validateHtml(join(dir, 'index.html'), blockers, slug, allowedFutureYears);
+  const htmlPath = join(dir, 'index.html');
+  const html = readText(htmlPath);
+  validateMetadata(dir, blockers);
+  validateHtml(htmlPath, blockers, slug, allowedFutureYears);
   validateNumericVisual(slug, blockers);
-  validateSocial(join(dir, 'social-copy.json'), blockers);
+  validateSocial(join(dir, 'social-copy.json'), blockers, extractTitle(html));
   validateReelMarkdown(join(dir, 'reel-script.md'), join(dir, 'reel-data.md'), slug, blockers, allowedFutureYears);
 
   const pass = blockers.length === 0;

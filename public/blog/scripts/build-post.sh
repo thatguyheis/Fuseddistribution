@@ -14,6 +14,10 @@ set -uo pipefail
 SD="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SD")"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
+ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}}"
+LEAF_MODEL="${HERMES_LEAF_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
+STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b-it-qat}"
+QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b-it-qat}"
 if [[ ! -x "$LOCAL_LLM" ]]; then
   LOCAL_LLM="$HOME/bin/gemma.sh"
 fi
@@ -61,12 +65,12 @@ if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
       log "T5 segmented write from Codex master plan"
       SEGMENTED_FORCE=()
       [[ $FORCE -eq 1 ]] && SEGMENTED_FORCE+=(--force)
-      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
         node "$SD/write-segmented-article.mjs" "$SLUG" "${SEGMENTED_FORCE[@]}" 2>&1 | sed 's/^/  /'
       WRITER_STAGE="write-segmented"
     else
       log "T5 write via legacy local model path"
-      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" \
+      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
         "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
       WRITER_STAGE="write-local"
     fi
@@ -89,7 +93,7 @@ elif [[ $CLAUDE_OK -eq 1 ]]; then
     log "T5 write: verified.md exists and lint passes — skipping rewrite"
     mark write
   else
-    "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+    HERMES_LOCAL_MODEL="$ARTICLE_MODEL" "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
     WRC=${PIPESTATUS[0]}
     LIMIT_RE="hit your limit|usage limit|session limit|rate limit|your limit has been reached|limit reached|resets [0-9]"
     case "$WRC" in
@@ -121,8 +125,8 @@ if [[ $FORCE -eq 1 || ! -f "$DIR/meta.json" ]]; then
   log "meta.json: deriving"
   TITLE=$(grep -m1 '^# ' "$DIR/verified.md" | sed 's/^# *//' | sed 's/^GEMMA DRAFT[[:space:]]*—[[:space:]]*//' | tr -d '\r')
   [[ -z "$TITLE" ]] && TITLE=$(echo "$KEYWORD" | sed 's/.*/\u&/')
-  DESC=$(HERMES_LOCAL_MAX_TOKENS=60 GEMMA_MAX_TOKENS=60 bash -c "echo \"Write a 150-character SEO meta description for an article titled '$TITLE'. One line, no quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-160)
-  ALT=$(HERMES_LOCAL_MAX_TOKENS=30 GEMMA_MAX_TOKENS=30 bash -c "echo \"Write 6-word alt text for the hero image of an article titled '$TITLE'. No quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr -d '\n"' | cut -c1-90)
+  DESC=$(HERMES_LOCAL_MAX_TOKENS=60 GEMMA_MAX_TOKENS=60 HERMES_LOCAL_MODEL="$STRUCTURED_MODEL" bash -c "echo \"Write a 150-character SEO meta description for an article titled '$TITLE'. One line, no quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-160)
+  ALT=$(HERMES_LOCAL_MAX_TOKENS=30 GEMMA_MAX_TOKENS=30 HERMES_LOCAL_MODEL="$STRUCTURED_MODEL" bash -c "echo \"Write 6-word alt text for a hero image of an article titled '$TITLE'. No quotes.\" | '$LOCAL_LLM'" 2>/dev/null | tr -d '\n"' | cut -c1-90)
   if [[ "$BRAND" == "silver" ]]; then T1="Silver"; T2="Investing"; else T1="Local Business"; T2="Marketing"; fi
   BLOGDIR="$BLOG_DIR" TITLE="$TITLE" DESC="${DESC:-$TITLE}" ALT="${ALT:-$TITLE}" SLUG="$SLUG" BRAND="$BRAND" T1="$T1" T2="$T2" python3 -c '
 import json, os, datetime, re
@@ -146,10 +150,26 @@ def clean(s, fallback):
     s = s.strip(" \t:-—\"" + "‘’")
     s = re.sub(r"\s{2,}", " ", s)
     return s if (len(s) >= 8 and re.search(r"[A-Za-z]", s)) else fallback
+def fixed_alt(value, title):
+    words = re.findall(r"[A-Za-z0-9]+", value)
+    if len(words) != 6:
+        words = re.findall(r"[A-Za-z0-9]+", title)[:6]
+    while len(words) < 6:
+        words.append("detail")
+    return " ".join(words[:6])
+def fixed_description(value, title):
+    value = re.sub(r"\s*[–—]\s*", ", ", value or "")
+    value = re.sub(r"\s+", " ", value).strip(" \"")
+    if 140 <= len(value) <= 160 and not re.search(r"(?i)best deal|lowest price|buy now|do not miss", value):
+        return value
+    value = f"{title}: compare premiums, payment fees, shipping, and total purchase cost before you buy from any dealer."
+    while len(value) < 140:
+        value += " Review the complete cost and terms before ordering."
+    return value[:160].rstrip(" ,.;:")
 title = os.environ["TITLE"]
 d = {"title":title, "slug":os.environ["SLUG"],
-     "description":clean(os.environ["DESC"], title),
-     "alt":clean(os.environ["ALT"], title),
+     "description":fixed_description(clean(os.environ["DESC"], title), title),
+     "alt":fixed_alt(clean(os.environ["ALT"], title), title),
      "date":os.environ.get("BLOG_PUBLISH_DATE") or datetime.date.today().isoformat(),
      "tags":[os.environ["T1"], os.environ["T2"]], "brand":os.environ["BRAND"]}
 json.dump(d, open(os.path.join(os.environ["BLOGDIR"], os.environ["SLUG"], "meta.json"), "w"), indent=2)
@@ -165,7 +185,7 @@ if [[ $FORCE -eq 0 ]] && jq -e '.hook and .discussion_question and .hashtags' "$
   log "T6 hooks: valid checkpoint exists — resuming"
   mark hooks-resume
 else
-  log "T6 hooks"; "$SD/build-hooks.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' >/dev/null && mark hooks || log "hooks failed"
+  log "T6 hooks"; HERMES_LOCAL_MODEL="$LEAF_MODEL" "$SD/build-hooks.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' >/dev/null && mark hooks || log "hooks failed"
 fi
 
 # ── T8 svg (deterministic) ──
@@ -188,7 +208,7 @@ if [[ $FORCE -eq 0 ]] && jq -e 'type == "object" and (has("skipped") or has("typ
     node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed"
     mark chart-resume
   fi
-elif HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}" CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}" LOCAL_LLM="${LOCAL_LLM:-}" \
+elif HERMES_TAKEOVER="${HERMES_TAKEOVER:-0}" CLAUDE_ENABLED="${CLAUDE_ENABLED:-1}" LOCAL_LLM="${LOCAL_LLM:-}" HERMES_LOCAL_MODEL="$STRUCTURED_MODEL" \
    "$SD/build-chart.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /'; then
   if [[ -f "$DIR/chart.json" ]] && ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
     node "$SD/build-svg.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: svg re-run failed (hero keeps stat card)"
@@ -210,7 +230,7 @@ if [[ $FORCE -eq 0 ]] && jq -e --arg slug "$SLUG" '.slug == $slug and (.reel.x |
   log "T10 social: valid checkpoint exists — resuming"
   mark social-resume
 else
-  log "T10 social"; "$SD/build-social.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark social || log "social failed"
+  log "T10 social"; HERMES_LOCAL_MODEL="$STRUCTURED_MODEL" "$SD/build-social.sh" "$SLUG" --brand="$BRAND" 2>&1 | sed 's/^/  /' && mark social || log "social failed"
 fi
 
 # Keep the blog honest while the rendered reel waits for release or social
@@ -292,7 +312,7 @@ fi
 # ── T12 brain QA (Hermes first, Claude optional) ──
 if [[ $PUBLISH_OK -eq 1 && -f "$DIR/index.html" && ( "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" || $CLAUDE_OK -eq 1 ) ]]; then
   log "T12 brain qa-gate"
-  if "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'; then
+  if HERMES_LOCAL_MODEL="$QA_MODEL" "$SD/qa-gate.sh" "$SLUG" 2>&1 | sed 's/^/  /'; then
     QA_RC=0
   else
     QA_RC=$?

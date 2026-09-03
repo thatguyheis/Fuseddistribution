@@ -9,11 +9,12 @@
 # is for direct text generation only; Ollama reports it does not support tools.
 set -euo pipefail
 
-MODEL="${HERMES_LOCAL_MODEL:-qwen3:4b}"
-BASE_URL="${HERMES_LOCAL_BASE_URL:-http://localhost:11434/v1}"
+MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
+BASE_URL="${HERMES_LOCAL_BASE_URL:-http://127.0.0.1:11434/v1}"
 MAXTOK="${HERMES_LOCAL_MAX_TOKENS:-256}"
 TEMPERATURE="${HERMES_LOCAL_TEMPERATURE:-0.35}"
 TIMEOUT="${HERMES_LOCAL_TIMEOUT:-300}"
+KEEP_ALIVE="${HERMES_LOCAL_KEEP_ALIVE:-10m}"
 PROMPT="${1:-$(cat)}"
 
 if [[ -z "${PROMPT//[[:space:]]/}" ]]; then
@@ -29,8 +30,9 @@ print(json.dumps({
   "max_tokens": int(sys.argv[3]),
   "temperature": float(sys.argv[4]),
   "stream": False,
+  "keep_alive": sys.argv[5],
 }))
-' "$MODEL" "$PROMPT" "$MAXTOK" "$TEMPERATURE")
+' "$MODEL" "$PROMPT" "$MAXTOK" "$TEMPERATURE" "$KEEP_ALIVE")
 
 attempt=1
 while (( attempt <= 3 )); do

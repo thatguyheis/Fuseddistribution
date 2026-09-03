@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "Silver Premium Types and Their Premium Ranges",
+  "takeaway": "The premium for silver varies significantly based on the type of silver purchased.",
+  "source": "ARTICLE",
+  "source_url": "https://example.com",
+  "data": [
+    {
+      "label": "Generic silver rounds premium",
+      "value": "5 to 8 percent",
+      "metric": "premium",
+      "unit": "percent",
+      "period": "N/A",
+      "evidence": "Generic silver rounds might show a premium of 5 to 8 percent over the spot price.",
+      "date": "N/A"
+    },
+    {
+      "label": "American Silver Silver Eagles premium",
+      "value": "15 to 222 percent",
+      "metric": "premium",
+      "unit": "percent",
+      "period": "N/A",
+      "evidence": "American Silver Eagles carry a premium, ranging from 15 to 22 percent.",
+      "date": "N/A"
+    },
+    {
+      "label": "Ten-ounce bars premium",
+      "value": "3 to 6 percent",
+      "metric": "premium",
+      "unit": "percent",
+      "period": "N/A",
+      "evidence": "Ten-ounce bars typically show a premium between 3 and 6 percent.",
+      "date": "N/A"
+    },
+    {
+      "label": "Fractional coins premium",
+      "value": "25 to 35 percent",
+      "metric": "premium",
+      "unit": "percent",
+      "period": "N/A",
+      "evidence": "Fractional coins, like one-tenth or one-quarter ounce pieces, often have premiums of 25 to 35 percent.",
+      "date": "N/A"
+    }
+  ]
+}

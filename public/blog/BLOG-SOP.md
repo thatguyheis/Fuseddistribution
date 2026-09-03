@@ -1321,16 +1321,33 @@ repro it standalone the same way this was verified — a tiny LaunchAgent whose 
 logs a line, calls `launchctl bootout` on its own label, then logs a second line —
 and confirm the second line is reached.
 
-**Backlog recovery note:** `.workflow-blocked/<date>/<slug>-HHMMSS/` accumulated across
-this bug is not automatically retried — nothing re-queues a quarantined slug on its
-own. Recovering weeks of backlog is a manual per-post job: rerun
-`build-post.sh <slug> --brand=... --keyword="..."`, fix any leaked meta.json/index.html
-by hand if the post dir already exists (§19's `clean()` fix only applies to *newly
-generated* meta.json — a stale one on disk from before the fix must be hand-patched,
-it will not regenerate since `build-post.sh` skips deriving `meta.json` when the file
-already exists), then publish per §13.
+**Backlog recovery note:** `.workflow-blocked/<date>/<slug>-HHMMSS/` is evidence of a
+failed attempt, not completion. The Codex recovery runner must requeue the oldest
+failed or pending slug, resume from its last valid checkpoint, and leave the dated
+pending marker open until deterministic QA, brain QA, deployment, live URL checks,
+and Buffer readback all pass. A stale `meta.json` is not trusted: the recovery path
+must rerun the metadata normalizer and QA before publishing. Quarantine is retained
+for diagnosis, but it is never a reason to silently skip a slug.
 
-## 21. Codex ownership (Claude Code retired, 2026-07-26)
+## 21. Production model routing (stage-specific, 2026-09-03)
+
+The workflow does not use one local model for every stage. The launchd runner passes
+these assignments through the retry plist and the post builder:
+
+| Stage | Model | Reason |
+|---|---|---|
+| T5 full article and segmented article | `gemma3:4b-it-qat` | Stronger topic retention and long-form structure |
+| T6 hooks and media query refinement | `hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M` | Fast, low-risk transformations |
+| Metadata, chart extraction, social copy | `gemma3:4b-it-qat` | Better structured output; deterministic length and schema gates remain mandatory |
+| T12 final brain QA | `gemma3:4b-it-qat` | More reliable final judgment in the local benchmark |
+| Numeric validation, word counts, source checks, registration, deploy, and live verification | deterministic code | These are not language-model decisions |
+
+LFM must not publish full articles or unreviewed social copy. Its outputs can drift
+to a neighboring subject even when the prompt is clear. Every model output remains
+subject to topic coherence, source, length, schema, and placeholder gates. Qwen is a
+reserved candidate until its Ollama runtime passes the same bounded benchmark.
+
+## 22. Codex ownership (Claude Code retired, 2026-07-26)
 
 Claude Code is no longer subscribed and is not a production dependency. The 9 AM
 runner forcibly sets `HERMES_TAKEOVER=1` and `CLAUDE_ENABLED=0`, overriding stale
@@ -1355,7 +1372,7 @@ The daily Codex publishing-owner automation is the recovery backstop for launchd
 must preserve unrelated worktree changes, honor the global reel lock, and report exact
 external blockers rather than silently closing a date.
 
-## 22. Daily profit and evolving-SOP audit
+## 23. Daily profit and evolving-SOP audit
 
 After downstream publishing reconciliation, run the control loop in
 `docs/PROFIT-IMPROVEMENT-SOP.md`. Record verified rewards and penalties with
@@ -1372,7 +1389,7 @@ Daily learned rules must be additive, evidence-backed, tested, reversible, and
 recorded in `ops/profit-system/learned-rules.json`. They cannot weaken any
 non-negotiable gate in this SOP.
 
-## 23. Numeric visual and source-link integrity incident (2026-07-29)
+## 24. Numeric visual and source-link integrity incident (2026-07-29)
 
 Two published silver posts exposed one control failure. The prediction post used
 stale pricing, an unsupported target, and model prompt text inside an `href`. The

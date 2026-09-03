@@ -9,6 +9,28 @@ One command per blog post produces a finished 720×1280 MP4 with:
 - Background photos: **blog images first, Pexels as fallback**
 - Ambient background music
 
+## Production responsibility and model routing
+
+The reel pipeline is split into model-assisted preparation and deterministic
+rendering. No language model owns release, composition, timing approval, or social
+posting.
+
+| Stage | Owner | Production rule |
+|---|---|---|
+| Topic, facts, and source contract | deterministic blog artifacts | `research.json`, `verified.md`, and the published article are the source of truth |
+| Script structure and storyboard | deterministic builders, with Gemma for repair when needed | Required segment types, paper collage, chart, CTA, and question are validated before render |
+| Fast copy transformations and media query refinement | LFM2.5 1.2B | Useful for hooks, search queries, and bounded transformations; never trusted for final facts or unreviewed social copy |
+| Long-form narration or script repair | Gemma 3 4B | Must remain topic coherent and pass source and timing gates |
+| Background selection | deterministic blog images first, local generated background library second, approved stock fallback third | Every selected asset is recorded in the media map and checked for availability |
+| Composition and animation | Remotion code | Paper cutout layers are required production elements, not an optional style flag |
+| Release QA | deterministic validators plus Gemma brain QA | Any missing collage layer, malformed segment, topic drift, unsupported stat, or media failure blocks release |
+| Posting | Buffer preflight and API readback | Verify the hosted MP4, create the post, then read it back and confirm the video asset and scheduled state |
+
+The paper style is additive: it must be present alongside the existing hook, photo,
+chart or stat, subtitles, CTA, and question elements. Visual variation is created by
+changing the collage cutout treatment, local background image, crop, motion, and
+approved layout variant, never by omitting the required paper layer.
+
 ---
 
 ## Setup (one-time)

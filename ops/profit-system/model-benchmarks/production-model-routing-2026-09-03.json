@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-03",
+  "purpose": "Production assignment for the blog-to-reel-to-posting workflow",
+  "evidence": {
+    "benchmark": "ops/profit-system/model-benchmarks/shadow-blog-workflow-2026-09-03.json",
+    "finding": "LFM2.5 is fast and useful for bounded transformations but drifted from silver to vehicles in article and social copy. Gemma was slower and stronger on article structure, repair, metadata-adjacent tasks, chart decisions, and final QA.",
+    "qwen_status": "Held out of production until its bounded runtime benchmark stops timing out."
+  },
+  "assignments": [
+    { "stage": "article_generation", "owner": "gemma3:4b-it-qat", "reason": "Topic retention and long-form structure", "release_gate": "deterministic topic, source, length, placeholder, and financial accuracy QA" },
+    { "stage": "article_outline", "owner": "gemma3:4b-it-qat", "reason": "Reliable outline benchmark result", "release_gate": "outline must match the topic contract" },
+    { "stage": "article_repair", "owner": "gemma3:4b-it-qat", "reason": "Reliable repair benchmark result", "release_gate": "re-run full article QA after repair" },
+    { "stage": "hooks_and_bounded_transformations", "owner": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M", "reason": "Fast and acceptable for constrained copy", "release_gate": "schema, topic token, length, and placeholder checks" },
+    { "stage": "media_query_refinement", "owner": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M", "reason": "Fast low-risk transformation", "release_gate": "deterministic query sanitization and media availability check" },
+    { "stage": "metadata_chart_social", "owner": "gemma3:4b-it-qat", "reason": "More reliable structured output and final copy quality", "release_gate": "JSON schema, alt exactly 6 words, description 140-160 chars, no promotional language, topic coherence" },
+    { "stage": "reel_script", "owner": "deterministic builders plus gemma3:4b-it-qat for repair", "reason": "The reel must remain traceable to the article and source artifacts", "release_gate": "parse, source, timing, paper-collage, chart, subtitle, and segment validation" },
+    { "stage": "final_qa", "owner": "gemma3:4b-it-qat", "reason": "Best available final QA result in the rerun", "release_gate": "pass only when deterministic QA also passes and score is at least 85" },
+    { "stage": "render_and_post", "owner": "deterministic code and Buffer readback", "reason": "No model should control external publication", "release_gate": "hosted MP4 verification, create response, authoritative post readback, live URL and sitemap checks" }
+  ]
+}
