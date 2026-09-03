@@ -54,7 +54,7 @@ function callWorker(helper, prompt, maxTokens, timeoutMs) {
     encoding: 'utf8',
     env: {
       ...process.env,
-      HERMES_LOCAL_MODEL: process.env.SEGMENTED_LOCAL_MODEL || process.env.HERMES_LOCAL_MODEL || 'gemma3:4b-it-qat',
+      HERMES_LOCAL_MODEL: process.env.SEGMENTED_LOCAL_MODEL || process.env.HERMES_LOCAL_MODEL || 'qwen3:4b',
       HERMES_LOCAL_MAX_TOKENS: String(maxTokens),
       HERMES_LOCAL_TEMPERATURE: process.env.SEGMENTED_MODEL_TEMPERATURE || '0.25',
       HERMES_LOCAL_TIMEOUT: String(Math.max(30, Math.floor(timeoutMs / 1000) - 10)),
@@ -168,7 +168,7 @@ function main() {
     version: 1,
     slug: plan.slug,
     planVersion: plan.version,
-    model: process.env.SEGMENTED_LOCAL_MODEL || process.env.HERMES_LOCAL_MODEL || 'gemma3:4b-it-qat',
+    model: process.env.SEGMENTED_LOCAL_MODEL || process.env.HERMES_LOCAL_MODEL || 'qwen3:4b',
     helper: args.helper,
     generatedAt: new Date().toISOString(),
     totalWords: wordCount(readFileSync(output, 'utf8')),

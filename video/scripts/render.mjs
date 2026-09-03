@@ -10,6 +10,7 @@ import { compositionFramesForSegments } from './transition-timing.mjs';
 import { assertMusicTrackCleared, normalizeMusicTrack, selectTrustedCycleTrack } from './audio-rights.mjs';
 import { collectAudioDurations, retimeScriptToAudio, writeAudioTiming } from './audio-timing.mjs';
 import { musicMixForTrack } from './music-mix.mjs';
+import { loadOrBuildProductionStoryboard } from './production-storyboard.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -150,6 +151,7 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     console.log(`\n→ music: ${musicTrack} (${musicRights.rights.license}, ${musicRights.rights.sourceName})\n`);
   }
   const musicMix = musicMixForTrack(musicTrack);
+  const storyboard = loadOrBuildProductionStoryboard(slug, script);
 
   // 5. Prepare metadata; write it only after the MP4 passes duration checks.
   const hookText = script.segments.find(s => s.type === 'hook')?.text ?? '';
@@ -160,7 +162,8 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const outFileName = reelN ? `${slug}-reel${reelN}.mp4` : `${slug}.mp4`;
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
-  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions }));
+  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions, storyboard }));
+  writeFileSync(join(outDir, 'storyboard.json'), `${JSON.stringify(storyboard, null, 2)}\n`);
   run(`npx remotion render src/Root.tsx BlogReel --concurrency=1 --props="${propsFile}" "${outFile}"`);
 
   const renderedDuration = parseFloat(execSync(
@@ -196,6 +199,8 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     },
     photosUsed: mediaSummary.mediaUsed,
     ...mediaSummary,
+    storyboardRoute: storyboard.route,
+    paperCollageSegments: storyboard.segments.filter((segment) => segment.visual === 'paper-collage').map((segment) => segment.segmentIndex),
   };
   writeFileSync(join(videoDir, 'out', slug, 'render-meta.json'), JSON.stringify(meta, null, 2));
 

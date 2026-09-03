@@ -1004,11 +1004,11 @@ The run summary should record render dimensions, render duration, cache hits, ne
 
 ## 11d. Storyboard-led visual route
 
-The successful paper collage pilot is approved as a visual component for new reels, but rollout is staged. The storyboard route must run after script and timing validation and before media assembly. It assigns every segment a deliberate role: paper analogy, stock photo context, data graphic, process diagram, standard production card, or CTA.
+The paper collage pilot is now a required production element, not an optional gate. The renderer creates or loads a production storyboard after script and measured audio timing validation and before media assembly. Every reel must contain at least one labeled paper cutout beat, while retaining the existing chart, question, standard-card, and approved-media beats where the script calls for them. Longer reels should use a second paper beat with a different asset or treatment.
 
-The route must pass `video/STORYBOARD-PILOT-PROTOCOL.md` before rendering. It fails closed when a chart lacks a title, explanatory subtitle, unit or axis label, paired values, source period, or plain language takeaway. It also fails when a reel lacks visual variety or uses consecutive generic cards.
+The production route must pass its storyboard contract before rendering. It fails closed when a paper beat lacks a label or message, when a chart lacks a title, explanatory subtitle, unit or axis label, paired values, source period, or plain language takeaway, or when a reel lacks visual variety. The pilot protocol remains available for the dedicated data-heavy pilot and does not control whether production reels receive paper collage.
 
-During backlog transition, old-style reels stay on the normal route and new reels may use the storyboard route. Do not re-render the entire backlog solely to change visual style. Preserve a route flag and use the normal renderer as rollback when storyboard QA, timing, asset rights, or human review fails.
+The normal renderer always passes the production storyboard into `BlogReel`; a storyboard file is not useful unless it is present in both `render-props.json` and `render-meta.json`. Use the normal route as rollback only when storyboard QA, timing, asset rights, or human review fails, and record the reason. Do not silently downgrade a reel because a paper beat was omitted.
 
 ### media_queries section in reel-data.md
 

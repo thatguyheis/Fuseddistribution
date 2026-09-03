@@ -14,7 +14,10 @@ GIT_SYNC="${BLOG_GIT_SYNC:-0}"
 HERMES_TAKEOVER="1"
 CLAUDE_ENABLED="0"
 LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
+# The 4B QAT model can remain resident but stop answering under memory
+# pressure. qwen3:4b is installed locally and has a bounded, verified reply
+# path, so it is the safe default for unattended queue recovery.
+HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-qwen3:4b}"
 PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
 VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
 VERIFY_DELAY_SECONDS="${BLOG_VERIFY_DELAY_SECONDS:-15}"

@@ -34,7 +34,7 @@ export type StoryboardSegment = {
 };
 
 export type StoryboardPlan = {
-  route: 'storyboard-pilot';
+  route: 'storyboard-pilot' | 'storyboard-production';
   planner: 'local-deterministic';
   fixture: string;
   narrativeArc: string[];

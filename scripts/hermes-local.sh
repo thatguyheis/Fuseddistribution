@@ -9,7 +9,7 @@
 # is for direct text generation only; Ollama reports it does not support tools.
 set -euo pipefail
 
-MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
+MODEL="${HERMES_LOCAL_MODEL:-qwen3:4b}"
 BASE_URL="${HERMES_LOCAL_BASE_URL:-http://localhost:11434/v1}"
 MAXTOK="${HERMES_LOCAL_MAX_TOKENS:-256}"
 TEMPERATURE="${HERMES_LOCAL_TEMPERATURE:-0.35}"
