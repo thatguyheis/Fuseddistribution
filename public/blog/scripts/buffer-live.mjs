@@ -7,6 +7,7 @@ import { assertScheduledCapacity, BUFFER_SCHEDULED_POST_LIMIT } from './lib/buff
 import { normalizeScheduledLog, reconcileScheduledLog } from './lib/buffer-log-reconciliation.mjs';
 import { calculateDailyChannelTargets, evaluateDailyFloorEnforcement, evaluateDailyFloorReadinessCheckpoint, mergeBufferPosts } from './lib/buffer-daily-targets.mjs';
 import { collectBufferPostPages } from './lib/buffer-post-pagination.mjs';
+import { preflightBufferMedia } from './lib/buffer-publish-preflight.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const apiUrl = 'https://api.buffer.com';
@@ -25,7 +26,8 @@ function usage() {
   node public/blog/scripts/buffer-live.mjs edit --post-id=id --text-file=path
 
 The publish command is resumable. It persists each Buffer-confirmed post ID after
-the create mutation and verifies that the post is scheduled/sending with a video.`);
+the create mutation and verifies that the post is scheduled/sending with a video.
+It also re-checks the public MP4 immediately before create; failed media is a hard stop.`);
   process.exit(2);
 }
 
@@ -87,7 +89,15 @@ async function graphql(token, query, variables = {}) {
     signal: AbortSignal.timeout(30_000),
   });
   const body = await response.json().catch(() => null);
-  if (!response.ok) throw new Error(`Buffer HTTP ${response.status}`);
+  if (!response.ok) {
+    if (response.status === 429) {
+      const retryAfter = Number(response.headers.get('retry-after') || 0);
+      const rateLimit = response.headers.get('ratelimit') || '';
+      const window = body?.errors?.[0]?.extensions?.window || 'unknown';
+      throw new Error(`Buffer HTTP 429 retryAfter=${Number.isFinite(retryAfter) ? retryAfter : 0} window=${window} rateLimit=${rateLimit || 'unknown'}`);
+    }
+    throw new Error(`Buffer HTTP ${response.status}`);
+  }
   if (!body) throw new Error('Buffer returned a non-JSON response.');
   if (body.errors?.length) {
     throw new Error(`Buffer GraphQL error: ${body.errors.map((error) => error.message).join('; ')}`);
@@ -230,6 +240,13 @@ function loadLog(path) {
   return normalizeScheduledLog(readJson(path));
 }
 
+function mediaManifestForUrl(url) {
+  const path = join(repoRoot, '.buffer-media-urls.json');
+  if (!existsSync(path)) return null;
+  const manifest = readJson(path);
+  return Object.values(manifest).find((value) => value?.url === url) || null;
+}
+
 function reconcileLogPath(logPath, visiblePosts, reconciledAt) {
   if (!existsSync(logPath)) return null;
   const current = loadLog(logPath);
@@ -317,17 +334,23 @@ async function publish(token, args) {
       console.log(`[buffer-live] recovered ${job.slug}: confirmed live post ${recovered.id}`);
       continue;
     }
-    if (args.dryRun) {
-      console.log(`[buffer-live] dry-run ${job.slug}: ${job.dueAt}`);
-      continue;
-    }
-
     try {
       assertScheduledCapacity(livePosts.length, BUFFER_SCHEDULED_POST_LIMIT);
     } catch (error) {
       throw new Error(`${job.slug}: ${error.message}`);
     }
 
+    const mediaManifest = mediaManifestForUrl(job.publicMediaUrl);
+    const mediaVerification = await preflightBufferMedia({
+      ...job,
+      publicMediaDurationSeconds: job.publicMediaDurationSeconds ?? mediaManifest?.outputDurationSeconds,
+      publicMediaBytes: job.publicMediaBytes ?? mediaManifest?.outputBytes,
+    });
+    console.log(`[buffer-live] media preflight ${job.slug}: ${mediaVerification.url} ${mediaVerification.bytes ?? 'unknown'} bytes`);
+    if (args.dryRun) {
+      console.log(`[buffer-live] dry-run ${job.slug}: ${job.dueAt}`);
+      continue;
+    }
     const created = await createPost(token, job.createPostPayload);
     const live = (await getLivePosts(token)).find((post) => post.id === created.id);
     assertConfirmedPost(live, job);

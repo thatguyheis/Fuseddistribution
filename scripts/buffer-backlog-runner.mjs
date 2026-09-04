@@ -113,19 +113,41 @@ function publish(platform, queuePath) {
 function recordUnavailable(error) {
   const message = error instanceof Error ? error.message : String(error);
   if (!/Buffer HTTP 429|fetch failed/i.test(message)) return false;
+  const retryAfterMatch = message.match(/retryAfter=(\d+)/i);
+  const retryAfterSeconds = retryAfterMatch ? Number(retryAfterMatch[1]) : 3600;
+  const retryAt = new Date(Date.now() + Math.max(60, retryAfterSeconds) * 1000);
+  const window = message.match(/window=([^ ]+)/i)?.[1] || 'unknown';
   writeFileSync(unavailablePath, `${JSON.stringify({
     status: 'unavailable',
     provider: 'buffer',
     reason: message,
     checkedAt: new Date().toISOString(),
-    retryPolicy: 'next scheduled launch; no publish attempted while status is unavailable',
+    window,
+    retryAfterSeconds,
+    retryAt: retryAt.toISOString(),
+    retryPolicy: 'skip API calls until retryAt; retry on the next eligible scheduled launch',
   }, null, 2)}\n`);
-  console.warn(`[buffer-backlog] Buffer unavailable; recorded ${unavailablePath}. The next scheduled run will retry.`);
+  console.warn(`[buffer-backlog] Buffer unavailable (${window}); retry after ${retryAt.toISOString()}. No publish attempted.`);
   return true;
+}
+
+function respectCooldown() {
+  try {
+    const state = JSON.parse(readFileSync(unavailablePath, 'utf8'));
+    const retryAt = Date.parse(state.retryAt || '');
+    if (state.status === 'unavailable' && Number.isFinite(retryAt) && retryAt > Date.now()) {
+      console.log(`[buffer-backlog] cooldown active until ${new Date(retryAt).toISOString()}; no API call made`);
+      return true;
+    }
+  } catch {
+    // No cooldown state or malformed runtime state: make one normal attempt.
+  }
+  return false;
 }
 
 function main() {
   console.log(`[buffer-backlog] start target=${targetTotal} reserve=${reserveSlots} repostAfterDays=${repostAfterDays}`);
+  if (respectCooldown()) return;
   for (const platform of ['youtube', 'x', 'instagram']) {
     const status = liveStatus();
     const current = status.count;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.nick.buffer-backlog</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/nick/projects/fuseddistribution/scripts/buffer-backlog-runner.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>22</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>ThrottleInterval</key>
+    <integer>1800</integer>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/nick/Library/Logs/buffer-backlog-runner.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/nick/Library/Logs/buffer-backlog-runner.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>BUFFER_SCHEDULE_WINDOW_START</key>
+    <string>13:00</string>
+    <key>BUFFER_SCHEDULE_WINDOW_END</key>
+    <string>23:59</string>
+    <key>BUFFER_SCHEDULE_INTERVAL_MINUTES</key>
+    <string>60</string>
+  </dict>
+</dict>
+</plist>
