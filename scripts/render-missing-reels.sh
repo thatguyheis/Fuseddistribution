@@ -28,6 +28,34 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/
 notify() { osascript -e "display notification \"$2\" with title \"Reel pipeline: $1\"" 2>/dev/null || true }
 log() { echo "[$(date +%T)] $*" >> "$LOG_FILE"; }
 
+# Prevent a calendar launch and a manual recovery launch from rendering the
+# same backlog at once. mkdir is atomic on macOS.
+SCHEDULER_LOCK="/tmp/fused-reel-scheduler.lock"
+if ! mkdir "$SCHEDULER_LOCK" 2>/dev/null; then
+  log "Another reel scheduler is active; skipping this run"
+  exit 0
+fi
+echo "$$" > "$SCHEDULER_LOCK/pid"
+cleanup_scheduler_lock() {
+  rm -f "$SCHEDULER_LOCK/pid"
+  rmdir "$SCHEDULER_LOCK" 2>/dev/null || true
+}
+trap cleanup_scheduler_lock EXIT
+
+# launchd can overlap a manually kicked run with a calendar-triggered run.
+# mkdir is atomic on macOS, so only one scheduler may own the backlog at a time.
+SCHEDULER_LOCK="/tmp/fused-reel-scheduler.lock"
+if ! mkdir "$SCHEDULER_LOCK" 2>/dev/null; then
+  log "Another reel scheduler is active; skipping this run"
+  exit 0
+fi
+echo "$$" > "$SCHEDULER_LOCK/pid"
+cleanup_scheduler_lock() {
+  rm -f "$SCHEDULER_LOCK/pid"
+  rmdir "$SCHEDULER_LOCK" 2>/dev/null || true
+}
+trap cleanup_scheduler_lock EXIT
+
 echo "\n=== $(date) ===" >> "$LOG_FILE"
 if [[ -d "$GLOBAL_RENDER_LOCK" ]]; then
   log "Another Remotion render is active; skipping this scheduled run"
@@ -80,6 +108,22 @@ for SLUG in "${REGISTERED_SLUGS[@]}"; do
   log "Validating: $SLUG"
   if ! (cd "$VIDEO_DIR" && node scripts/parse-script.mjs --post="$SLUG" >> "$LOG_FILE" 2>&1); then
     log "FAILED parse: $SLUG"
+    FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
+  fi
+
+  # Deterministic repair is limited to the active slug. It preserves Markdown
+  # structure, converts malformed numeric cards to overlays, and repairs
+  # truncated question cards before validation.
+  if ! (cd "$VIDEO_DIR" && node scripts/repair-reel-scripts.mjs --slug="$SLUG" >> "$LOG_FILE" 2>&1); then
+    log "FAILED deterministic repair: $SLUG"
+    FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
+  fi
+
+  # Repair only this parsed script before validation. Repairs are deterministic:
+  # numeric cards without a matching figure become overlays, malformed question
+  # cards receive a question mark, and prohibited dash punctuation is normalized.
+  if ! (cd "$VIDEO_DIR" && node scripts/repair-reel-scripts.mjs --slug="$SLUG" >> "$LOG_FILE" 2>&1); then
+    log "FAILED deterministic repair: $SLUG"
     FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
   fi
 

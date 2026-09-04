@@ -164,6 +164,24 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.nick.render-missing-
 The renderer is single-flight, uses the approved music cycle, retries failed
 renders, and runs release QA before any reel is eligible for posting. A missing
 MP4 is therefore a recoverable render backlog item, not a completed reel stage.
+The scheduler also owns an atomic `/tmp/fused-reel-scheduler.lock`; a manually
+started run and the calendar run cannot render the same slug concurrently. Each
+slug is repaired deterministically after parsing and before validation, so
+non-numeric stat cards become overlays and malformed question cards are repaired
+without changing source facts.
+
+After a release-approved MP4 exists, the queue handoff must run in this order:
+
+1. Create the Buffer-safe 135-second public asset and update the media map.
+2. Deploy the asset and verify the hosted MP4 with HTTPS, byte size, duration,
+   codec, and decodability checks.
+3. Rebuild YouTube, X, and Instagram queue manifests from the current media map.
+4. Publish only jobs that pass release QA and hosted-media verification, then
+   read Buffer back to confirm the scheduled video asset.
+
+Queue files older than 30 minutes are planning artifacts, not live truth. The
+Buffer backlog runner must regenerate them before publishing; a stale queue is
+never reused merely because it contains selected jobs.
 
 ### Step 0a — Pre-render environment check (REQUIRED in automated pipeline)
 
