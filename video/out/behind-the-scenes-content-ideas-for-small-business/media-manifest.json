@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "source": "local-photo",
+      "query": "behind the scenes content ideas for small business",
+      "prefer": "video",
+      "updatedAt": "2026-09-04T15:21:28.054Z"
+    },
+    "1": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business small business owner\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "behind the scenes content ideas for small business small business owner",
+      "prefer": "photo",
+      "updatedAt": "2026-09-04T15:21:28.074Z"
+    },
+    "2": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business highlighting team fantastic\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "behind the scenes content ideas for small business highlighting team fantastic",
+      "prefer": "photo",
+      "updatedAt": "2026-09-04T15:21:28.074Z"
+    },
+    "3": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business day life video\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "behind the scenes content ideas for small business day life video",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:28.934Z"
+    },
+    "4": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business include photo short\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business include photo short",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:30.470Z"
+    },
+    "5": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business even quick video\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business even quick video",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:31.749Z"
+    },
+    "6": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business take audience along\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business take audience along",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:32.428Z"
+    },
+    "7": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business great way address\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business great way address",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:34.325Z"
+    },
+    "8": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business 3 000 to\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business 3 000 to",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:35.005Z"
+    },
+    "9": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business don afraid experiment\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business don afraid experiment",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:35.822Z"
+    },
+    "10": {
+      "key": "{\"query\":\"behind the scenes content ideas for small business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "behind the scenes content ideas for small business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-04T15:21:36.751Z"
+    }
+  },
+  "generativeCandidates": {}
+}
