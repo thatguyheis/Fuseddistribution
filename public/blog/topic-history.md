@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-22 | retargeting-ads-for-small-business-how-they-work | General | retargeting ads for small business how they work |
 | 2026-07-22 | google-local-service-ads-explained | General | google local service ads explained |
 | 2026-07-19 | behind-the-scenes-content-ideas-for-small-business | General | behind the scenes content ideas for small business |
 | 2026-07-19 | how-to-make-reels-for-your-local-business | General | how to make reels for your local business |
