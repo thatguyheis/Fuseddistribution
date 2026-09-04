@@ -146,6 +146,25 @@ Do not pass these `ambient-XX.mp3` files to `render.mjs` unless their rights rec
 
 ## Per-Post Workflow
 
+## Scheduled render recovery
+
+The blog publisher creates and validates reel source artifacts; it does not perform
+the long local audio and Remotion render inline. The checked-in
+`launchagents/com.nick.render-missing-reels.plist` owns the 11:00 AM Pacific
+recovery pass and invokes `scripts/render-missing-reels.sh`.
+
+Install or reload it with:
+
+```bash
+cp launchagents/com.nick.render-missing-reels.plist ~/Library/LaunchAgents/com.nick.render-missing-reels.plist
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.nick.render-missing-reels.plist 2>/dev/null || true
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.nick.render-missing-reels.plist
+```
+
+The renderer is single-flight, uses the approved music cycle, retries failed
+renders, and runs release QA before any reel is eligible for posting. A missing
+MP4 is therefore a recoverable render backlog item, not a completed reel stage.
+
 ### Step 0a — Pre-render environment check (REQUIRED in automated pipeline)
 
 Before running any render, kill stale Remotion chrome processes from previous runs. Zombie processes consume render worker slots and cause silent failures where the MP4 is written but empty or < 5 MB.

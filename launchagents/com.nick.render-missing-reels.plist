@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.nick.render-missing-reels</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/nick/projects/fuseddistribution/scripts/render-missing-reels.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>11</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ThrottleInterval</key>
+  <integer>900</integer>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/nick/Library/Logs/render-missing-reels.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/nick/Library/Logs/render-missing-reels.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>MAX_RENDERS_PER_RUN</key>
+    <string>4</string>
+    <key>MAX_RETRIES</key>
+    <string>2</string>
+    <key>REEL_VOICE</key>
+    <string>chatterbox</string>
+    <key>GENERATIVE_MEDIA_ENABLED</key>
+    <string>1</string>
+    <key>GENERATIVE_MEDIA_MODE</key>
+    <string>production</string>
+    <key>GENERATIVE_MEDIA_PRODUCTION_APPROVED</key>
+    <string>1</string>
+    <key>GENERATIVE_MEDIA_MAX_SEGMENTS</key>
+    <string>2</string>
+    <key>GENERATIVE_MEDIA_TIMEOUT_MS</key>
+    <string>240000</string>
+  </dict>
+</dict>
+</plist>
