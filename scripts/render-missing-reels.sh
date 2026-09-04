@@ -97,14 +97,6 @@ for SLUG in "${REGISTERED_SLUGS[@]}"; do
     FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
   fi
 
-  # Deterministic repair is limited to the active slug. It preserves Markdown
-  # structure, converts malformed numeric cards to overlays, and repairs
-  # truncated question cards before validation.
-  if ! (cd "$VIDEO_DIR" && node scripts/repair-reel-scripts.mjs --slug="$SLUG" >> "$LOG_FILE" 2>&1); then
-    log "FAILED deterministic repair: $SLUG"
-    FAILED=$((FAILED + 1)); FAILED_SLUGS+=("$SLUG"); continue
-  fi
-
   # Repair only this parsed script before validation. Repairs are deterministic:
   # numeric cards without a matching figure become overlays, malformed question
   # cards receive a question mark, and prohibited dash punctuation is normalized.
