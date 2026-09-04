@@ -2,7 +2,9 @@ import React from 'react';
 import { Img, staticFile, useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { BRAND } from '../brand';
 
-const ORIGINS = ['center', 'top left', 'bottom right'] as const;
+// Keep every source centered in the 9:16 safe frame. Corner-origin zooms can
+// crop the subject out of a phone viewport even when objectPosition is center.
+const ORIGINS = ['center'] as const;
 
 export const PhotoBg: React.FC<{
   photoPath?: string;

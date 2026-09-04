@@ -3,7 +3,9 @@ import { Img, Video, staticFile, useCurrentFrame, useVideoConfig, interpolate } 
 import { BRAND } from '../brand';
 import type { MediaEntry } from '../types';
 
-const ORIGINS = ['center', 'top left', 'bottom right'] as const;
+// Keep API and stock media centered in the 9:16 safe frame. Panning from a
+// corner makes landscape source images look cut off on phone previews.
+const ORIGINS = ['center'] as const;
 
 export const MediaBg: React.FC<{
   media?: MediaEntry;
