@@ -1,6 +1,6 @@
-<!-- gemma_draft: 2026-09-02 | keyword: contact page best practices for local business | brand: tech -->
+<!-- gemma_draft: 2026-09-03 | keyword: contact page best practices for local business | brand: tech -->
 # GEMMA DRAFT — contact page best practices for local business
-> Generated: 2026-09-02 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
+> Generated: 2026-09-03 | Model: gemma-e2b (litert) | Status: NEEDS POLISH
 > Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
 
 ---
