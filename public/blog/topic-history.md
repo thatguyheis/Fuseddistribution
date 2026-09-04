@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-19 | behind-the-scenes-content-ideas-for-small-business | General | behind the scenes content ideas for small business |
 | 2026-07-19 | how-to-make-reels-for-your-local-business | General | how to make reels for your local business |
 | 2026-08-30 | facebook-ads-for-local-business-beginner-guide | General | facebook ads for local business beginner guide |
 | 2026-08-19 | how-to-respond-to-negative-google-reviews | General | how to respond to negative google reviews |
