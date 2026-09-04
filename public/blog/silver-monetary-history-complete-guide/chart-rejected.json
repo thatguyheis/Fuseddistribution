@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "US Silver Production Peak",
+  "takeaway": "US silver production peaked at 236,768,000 ounces in 1911.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/blog/silver-monetary-history-complete-guide/",
+  "data": [
+    {
+      "label": "US Silver Production (Ounces)",
+      "value": "236,768,000",
+      "metric": "Ounces of Silver",
+      "unit": "oz",
+      "period": "1911",
+      "evidence": "The total silver production in the US reached a peak of 236,768,000 ounces in 1911."
+    }
+  ],
+  "hero_stat": {
+    "value": "236,768,000",
+    "label": "Peak US Silver Production"
+  },
+  "narration": "In 1911, the United States experienced its highest level of silver production, reaching 236,768,000 ounces. This surge was largely driven by increased mining activity in states like California and Mexico, significantly impacting global silver markets."
+}

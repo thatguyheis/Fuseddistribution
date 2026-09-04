@@ -141,6 +141,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-07-15 | silver-monetary-history-complete-guide | General | silver monetary history complete guide |
 | 2026-09-03 | how-to-avoid-silver-dealer-scams | General | how to avoid silver dealer scams |
 | 2026-09-02 | morgan-silver-dollars-as-investment | General | morgan silver dollars as investment |
 | 2026-08-27 | silver-premiums-explained-for-beginners | General | silver premiums explained for beginners |
