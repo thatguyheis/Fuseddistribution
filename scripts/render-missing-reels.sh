@@ -8,6 +8,8 @@ BLOG_DIR="$PROJECT_DIR/public/blog"
 LOG_FILE="${REEL_LOG_FILE:-/tmp/fuseddistribution-render-missing-reels.log}"
 MAX_RETRIES="${MAX_RETRIES:-2}"
 MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-4}"
+RENDER_TIMEOUT_SECONDS="${RENDER_TIMEOUT_SECONDS:-2100}"
+export CHATTERBOX_BATCH_TIMEOUT_MS="${CHATTERBOX_BATCH_TIMEOUT_MS:-1800000}"
 VOICE="${REEL_VOICE:-chatterbox}"
 GLOBAL_RENDER_LOCK="/tmp/fused-remotion-render.lock"
 
@@ -103,7 +105,8 @@ for SLUG in "${REGISTERED_SLUGS[@]}"; do
   while (( ATTEMPT < MAX_RETRIES )); do
     ATTEMPT=$((ATTEMPT + 1))
     pkill -f "chrome-headless-shell" 2>/dev/null || true
-    (cd "$VIDEO_DIR" && node scripts/render.mjs --post="$SLUG" --music="$TRACK" --voice="$VOICE" >> "$LOG_FILE" 2>&1)
+    (cd "$VIDEO_DIR" && python3 "$PROJECT_DIR/scripts/run-with-timeout.py" "$RENDER_TIMEOUT_SECONDS" \
+      node scripts/render.mjs --post="$SLUG" --music="$TRACK" --voice="$VOICE" >> "$LOG_FILE" 2>&1)
     RENDER_EXIT=$?
     MP4_SIZE=$(stat -f%z "$MP4" 2>/dev/null || echo 0)
     [[ "$RENDER_EXIT" -eq 0 && "$MP4_SIZE" -gt 5242880 ]] && break

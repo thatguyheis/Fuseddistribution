@@ -36,6 +36,10 @@
     <string>4</string>
     <key>MAX_RETRIES</key>
     <string>2</string>
+    <key>RENDER_TIMEOUT_SECONDS</key>
+    <string>2100</string>
+    <key>CHATTERBOX_BATCH_TIMEOUT_MS</key>
+    <string>1800000</string>
     <key>REEL_VOICE</key>
     <string>chatterbox</string>
     <key>GENERATIVE_MEDIA_ENABLED</key>
