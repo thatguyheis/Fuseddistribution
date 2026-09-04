@@ -42,20 +42,6 @@ cleanup_scheduler_lock() {
 }
 trap cleanup_scheduler_lock EXIT
 
-# launchd can overlap a manually kicked run with a calendar-triggered run.
-# mkdir is atomic on macOS, so only one scheduler may own the backlog at a time.
-SCHEDULER_LOCK="/tmp/fused-reel-scheduler.lock"
-if ! mkdir "$SCHEDULER_LOCK" 2>/dev/null; then
-  log "Another reel scheduler is active; skipping this run"
-  exit 0
-fi
-echo "$$" > "$SCHEDULER_LOCK/pid"
-cleanup_scheduler_lock() {
-  rm -f "$SCHEDULER_LOCK/pid"
-  rmdir "$SCHEDULER_LOCK" 2>/dev/null || true
-}
-trap cleanup_scheduler_lock EXIT
-
 echo "\n=== $(date) ===" >> "$LOG_FILE"
 if [[ -d "$GLOBAL_RENDER_LOCK" ]]; then
   log "Another Remotion render is active; skipping this scheduled run"
