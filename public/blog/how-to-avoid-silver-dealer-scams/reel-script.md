@@ -1,97 +1,97 @@
 # Reel Script: how-to-avoid-silver-dealer-scams
 format: long-form
 segments: 11
-target-duration: 183s
+target-duration: 186s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 3s minimum
+**Duration:** 4s minimum
 
-Narration: Spot scams early, your silver investment deserves it!
+Narration: Avoid silver scams by demanding full, transparent pricing before buying.
 
 ---
 
-## OVERLAY: CONSIDERING INVESTING SILVER WORRIED
+## OVERLAY: CONSIDERING BUYING SILVER SMART
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: You’re considering buying silver, and that’s a smart move. But navigating the world of silver dealers can feel like wading through a maze of hidden fees and confusing jargon. You want to know how to avoid silver dealer scams - how to ensure you’re getting a fair price and protecting your investment. Fused Distribution gives you the straightforward way to build a physical silver reserve.
+
+---
+
+## OVERLAY: THESE PREMIUMS VARY DRAMATICALLY
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: These premiums can vary dramatically between dealers, and they’re often not disclosed upfront. A single, large “premium” figure is a red flag. You need to see the full price tag. They hide these charges in large numbers. Ask for a clear list of every charge. You should see the premium broken down. This shows you exactly where the money goes.
+
+---
+
+## OVERLAY: ASK CLEAR LIST EVERY
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Ask for a clear list of every charge. Find independent reviews outside their own site. Don’t just trust what they say about themselves. A legitimate dealer will readily provide this information. A dealer with a history of complaints or unresolved disputes is a serious warning sign. Don’t rely only on what they show you online. See what others think of their operations.
+
+---
+
+## OVERLAY: HELPS SPOT LEGIT OPERATOR
+
+**Visual:** Supporting article visual
+**Duration:** 18s minimum
+
+Narration: This helps you spot a legit operator. You want someone you can trust with your investment. See how much you pay per ounce. Check it against the current market rate. This shows you what you are actually paying. Don't get lost in complex coin talk. Focus on the raw cost of the silver itself.
+
+---
+
+## OVERLAY: DEALER CHARGING SIGNIFICANTLY OUNCE
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: A dealer charging significantly more per ounce than the spot price is likely adding excessive premiums. A reputable dealer will have clear procedures for safeguarding your silver. They should offer options like insured shipping, secure storage, and documented proof of ownership transfer. They should also be transparent about their insurance coverage. Security measures should include tracking numbers, tamper-evident packaging, and confirmation of delivery.
+
+---
+
+## OVERLAY: ASK BREAKDOWN EVERY COST
+
+**Visual:** Supporting article visual
+**Duration:** 20s minimum
+
+Narration: Ask for a breakdown of every cost. This shows you what you are actually paying for. Don’t rely only on what they say about themselves. See what others think of their operations. This helps you spot a red flag early. A dealer unwilling to provide a detailed price breakdown is a major warning sign. Transparency is a foundation of a trustworthy transaction.
+
+---
+
+## OVERLAY: NOW KEEP SAFE ASK
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: Are you considering investing in silver, but worried about falling victim to a scam? It’s a legitimate concern - the allure of precious metals can unfortunately attract dishonest dealers. At Fused Distribution, we stock a wide range of silver bullion and coins, and we’ve seen our fair share of questionable practices. Our goal is to help you with the knowledge you need to make informed decisions and protect your investment.
+Narration: Now you need to keep it safe. Ask for a full breakdown of all fees. Understand exactly what you are paying for. You need a dealer with a proven track record. Don't rely only on what they show you online. A dealer with a poor reputation or unresolved complaints should be avoided. Also, ensure you have clear documentation of the purchase, including the price, quantity, and any associated fees.
 
 ---
 
-## OVERLAY: LET STARTED BUILDING SECURE
+## OVERLAY: WANT SOMEONE TRUST INVESTMENT
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: You want someone you can trust with your investment. Compare the final price to the market. Know what silver is actually selling for. Compare the price per ounce you get. This helps you see if the deal makes sense. See if the offer holds up against the real cost. At Fused Distribution, we understand the importance of transparency and trust.
+
+---
+
+## STAT: 10% PREMIUM SPOT PRICE PLUS
 
 **Visual:** Supporting article visual
 **Duration:** 17s minimum
 
-Narration: Let’s get started on building a secure and profitable silver investment strategy. As a trusted supplier of silver bullion and coins here at Fused Distribution, we’ve seen our fair share of scams targeting investors. It’s a frustrating reality, but understanding the common tactics used by unscrupulous dealers can protect your investment.
-
----
-
-## OVERLAY: RECOGNIZING RED FLAGS SILVER
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Recognizing Red Flags in Silver Sales At Fused Distribution, we understand the excitement of investing in silver, and we want to ensure you’re making informed decisions. Unfortunately, the silver market attracts unscrupulous individuals, and it’s crucial to be aware of potential scams. One of the biggest warning signs is an offer that seems too good to be true - significantly below market value is a major red flag.
-
----
-
-## STAT: 50% SPOT PRICE SILVER HUGE
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Unfortunately, the precious metals market attracts unscrupulous individuals, and silver dealer scams are regrettably common. We’ve seen firsthand how these tactics can derail even experienced investors. One of the most prevalent scams involves inflated premiums - dealers charging significantly more than the spot price for silver, often exceeding 50 percent. This is a huge red flag and should immediately raise concerns.
-
----
-
-## OVERLAY: FOUNDATION ANY SILVER PURCHASE
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: The foundation of any silver purchase is the “spot price,” which represents the current market value of one troy ounce of pure silver. This price fluctuates constantly based on supply and demand, influenced by factors like economic conditions, industrial demand, and investor sentiment. You’ll see spot prices quoted in USA dollars per ounce, and it’s the benchmark against which all silver prices are determined.
-
----
-
-## STAT: 20% SILVER RETAIL INVESTORS REPORT
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: When purchasing silver, carefully research the dealer's reputation. Look for established firms with transparent pricing and clear policies. Don’t be swayed by overly aggressive sales tactics or promises of unrealistically high returns. According to recent surveys, approximately 20 percent of retail investors report experiencing some form of fraud when buying precious metals. We recommend verifying dealer credentials and checking online reviews before making any purchases.
-
----
-
-## OVERLAY: FINALLY ALWAYS ASK ABOUT
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Finally, always ask about their shipping and insurance policies - reputable dealers will clearly outline these details. Protecting Your Investment: Due Diligence Steps At Fused Distribution, we understand the excitement of investing in silver and precious metals, and we want to ensure you’re doing so safely. Unfortunately, the market is rife with unscrupulous dealers looking to take advantage of inexperienced buyers.
-
----
-
-## STAT: 70% CONSUMERS REPORT LOSING MONEY
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: (According to the FTC, approximately 70 percent of consumers report losing money to fraud.) Building a Long-Term Relationship with a Reputable Silver Buyer At Fused Distribution, we understand that investing in silver can be a significant decision, and you want to ensure your peace of mind. One of the best ways to avoid silver dealer scams is to establish a long-term relationship with a trustworthy buyer.
-
----
-
-## OVERLAY: BELIEVE FOSTERING TRUST OUR
-
-**Visual:** Supporting article visual
-**Duration:** 10s minimum
-
-Narration: We believe in fostering trust with our customers, and we encourage you to research potential buyers carefully before committing to a sale - just as we do for ourselves.
+Narration: We recommend a 10 percent premium on the spot price, plus a $5 per ounce handling fee, which is consistently lower than many other dealers. You can see our current pricing and learn more about our secure reserve process at our reserve page. Reserve your silver straightforwardly at our reserve page.
 
 ---
 
@@ -100,6 +100,6 @@ Narration: We believe in fostering trust with our customers, and we encourage yo
 **Visual:** Question card
 **Duration:** 6s minimum
 
-Text: Always verify dealer credibility before buying silver, scams thrive on?
+Text: Avoid silver dealer scams by demanding clear pricing and transparency?
 Subtext: COMMENT BELOW
-Narration: Always verify dealer credibility before buying silver, scams thrive on? Follow for more silver news.
+Narration: Avoid silver dealer scams by demanding clear pricing and transparency? Follow for more silver news.
