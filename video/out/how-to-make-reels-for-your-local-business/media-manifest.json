@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"profileVersion\":2,\"provider\":\"open-generative-ai-local\",\"model\":\"dreamshaper-8\",\"modelFile\":\"DreamShaper_8_pruned.safetensors\",\"promptHash\":\"0e6e5ee6319700ef84377051320f88f65ee78ba4feaca86802b113a61cd10381\",\"seed\":465102810,\"width\":384,\"height\":640,\"steps\":8}",
+      "source": "open-generative-ai-local",
+      "providerVersion": "c90e908",
+      "sourceUrl": "https://github.com/anil-matcha/open-generative-ai",
+      "applicationLicense": "MIT",
+      "model": "dreamshaper-8",
+      "modelFile": "DreamShaper_8_pruned.safetensors",
+      "modelLicense": "creativeml-openrail-m",
+      "prompt": "Atmospheric vertical background plate showing a quiet small-business street at blue hour with subtle connected location lights and no readable signs. dark navy background, modern cyan highlights, warm practical lighting. Soft focus, low detail, cinematic depth, no foreground focal object, clean negative space through the center for a separate caption overlay. Background scenery only. No poster, title card, package, label, sign, screen, interface, document, coin face, currency, or product close-up. No words, letters, numbers, charts, logos, watermarks, signatures, recognizable people, or financial claims.",
+      "topic": "tech",
+      "sceneId": "tech-local-search",
+      "scene": "a quiet small-business street at blue hour with subtle connected location lights and no readable signs",
+      "promptHash": "0e6e5ee6319700ef84377051320f88f65ee78ba4feaca86802b113a61cd10381",
+      "seed": 465102810,
+      "width": 1080,
+      "height": 1920,
+      "generatedAsset": true,
+      "factualGraphic": false,
+      "backgroundTreatment": "portrait-crop, blur-6, darken-0.14, saturation-0.7, vignette",
+      "tags": [
+        "local-search",
+        "tech",
+        "tech-local-search"
+      ],
+      "query": "how to make reels for your local business",
+      "prefer": "photo",
+      "attempts": [
+        "open-generative-ai-local"
+      ],
+      "path": "photos/how-to-make-reels-for-your-local-business/segment-0.jpg",
+      "status": "approved-for-render",
+      "updatedAt": "2026-09-05T08:55:46.009Z",
+      "libraryAssetId": "fused-bg-fcc80e55a2738aa5"
+    },
+    "1": {
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"tech\",\"sceneId\":\"tech-general\",\"tags\":[\"tech\",\"tech-general\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-645309588198cb3c",
+      "topic": "tech",
+      "sceneId": "tech-local-search",
+      "tags": [
+        "local-search",
+        "tech",
+        "tech-local-search"
+      ],
+      "sha256": "645309588198cb3c3cda075436fdd617db03fdeac7ff164428c0115f07be906e",
+      "sourceSlug": "google-local-service-ads-explained",
+      "status": "approved-background-only",
+      "query": "how to make reels for your local business small business owner",
+      "prefer": "photo",
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/how-to-make-reels-for-your-local-business/segment-1.jpg",
+      "updatedAt": "2026-09-05T08:55:46.062Z"
+    },
+    "2": {
+      "key": "{\"query\":\"how to make reels for your local business fantastic way reach\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "how to make reels for your local business fantastic way reach",
+      "prefer": "photo",
+      "updatedAt": "2026-09-05T08:55:46.065Z"
+    },
+    "3": {
+      "key": "{\"query\":\"how to make reels for your local business okay now creative\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pixabay-photo",
+      "query": "how to make reels for your local business okay now creative",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:47.019Z"
+    },
+    "4": {
+      "key": "{\"query\":\"how to make reels for your local business social proof powerful\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business social proof powerful",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:47.785Z"
+    },
+    "5": {
+      "key": "{\"query\":\"how to make reels for your local business 2 to 3\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business 2 to 3",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:48.432Z"
+    },
+    "6": {
+      "key": "{\"query\":\"how to make reels for your local business instead simply stating\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business instead simply stating",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:48.965Z"
+    },
+    "7": {
+      "key": "{\"query\":\"how to make reels for your local business ensure captions relevant\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business ensure captions relevant",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:49.746Z"
+    },
+    "8": {
+      "key": "{\"query\":\"how to make reels for your local business pay close attention\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business pay close attention",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:50.811Z"
+    },
+    "9": {
+      "key": "{\"query\":\"how to make reels for your local business next steps start\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business next steps start",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:52.315Z"
+    },
+    "10": {
+      "key": "{\"query\":\"how to make reels for your local business customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "how to make reels for your local business customer feedback",
+      "prefer": "photo",
+      "attempts": [
+        "pixabay-photo",
+        "pexels-photo"
+      ],
+      "updatedAt": "2026-09-05T08:55:52.795Z"
+    }
+  },
+  "generativeCandidates": {}
+}

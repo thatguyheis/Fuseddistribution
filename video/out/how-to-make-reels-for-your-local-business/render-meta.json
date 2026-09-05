@@ -1,0 +1,61 @@
+{
+  "slug": "how-to-make-reels-for-your-local-business",
+  "renderedAt": "2026-09-05T09:55:29.798Z",
+  "hookType": "statement",
+  "segmentCount": 11,
+  "scriptDuration": 208.985,
+  "renderedDuration": 203.52,
+  "scriptHash": "1e316515f8c295ab15b3a551fe0da5e34b2995e881d1d962a0f8e472a5dba3fe",
+  "voice": "chatterbox",
+  "captionMode": "proportional",
+  "musicTrack": "mixkit-spirit-in-the-woods-139.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -14.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.06934737009050634
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 5.2,
+      "1": 15.26,
+      "2": 21.52,
+      "3": 23.08,
+      "4": 24.04,
+      "5": 19.24,
+      "6": 24.84,
+      "7": 26.68,
+      "8": 22.54,
+      "9": 13.18,
+      "10": 5.44
+    },
+    "totalNarrationSeconds": 201.02
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/spirit-in-the-woods-139/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "open-generative-ai-local": 1,
+    "fused-generated-background-library": 1,
+    "local-photo": 1,
+    "pixabay": 1,
+    "pexels": 7
+  },
+  "storyboardRoute": "storyboard-production",
+  "paperCollageSegments": [
+    0,
+    5
+  ]
+}
