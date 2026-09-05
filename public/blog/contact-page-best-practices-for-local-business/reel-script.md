@@ -1,105 +1,105 @@
 # Reel Script: contact-page-best-practices-for-local-business
 format: long-form
 segments: 11
-target-duration: 197s
+target-duration: 182s
 
 ---
 
 ## HOOK
 
 **Visual:** Topic intro shot
-**Duration:** 7s minimum
+**Duration:** 4s minimum
 
-Narration: Boost your local business with a contact page that converts, every single visitor needs a clear call to action.
+Narration: Unlock your contact page's power, turn inquiries into immediate leads.
 
 ---
 
-## OVERLAY: SMALL BUSINESS OWNER STRUGGLING
+## OVERLAY: LOCAL BUSINESS OWNER STRUGGLING
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: Are you a small business owner struggling to get customers to reach out? Many local businesses miss out on valuable leads simply because their contact pages aren’t effective. It’s not enough to have a contact page; it needs to work. This guide will show you exactly how to build a contact page that converts, turning curious visitors into paying customers.
+Narration: Are you a local business owner struggling to get customers to reach out? Many businesses spend a fortune on marketing without seeing a direct return. The problem isn’t always what you’re saying, but how people find you and, crucially, how easy it is to contact you. A confusing or non-functional contact page is a silent killer of potential customers.
 
 ---
 
-## STAT: 20% BUSINESS CONTACT DIRECTLY MAKING
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: If your contact page is confusing, difficult to find, or doesn’t provide the information people need, you’re losing business. A clear and easy-to-use contact page is a critical conversion point - of consumers who read positive reviews about a local business, 20 percent then contact the business directly, making the contact page a vital part of your sales funnel. Don’t let a poorly designed page send potential clients running to your competitors.
-
----
-
-## OVERLAY: UPLOAD HIGH QUALITY PHOTOS
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Upload high-quality photos of your business, both inside and out. Keep this profile active by updating your hours regularly, posting updates, and responding to reviews. Google rewards profiles that are consistently maintained, ensuring you rank higher in local search results. NAP consistency - ensuring your Name, Address, and Phone number are identical across all online platforms - is absolutely crucial for local search.
-
----
-
-## OVERLAY: NOW LET TALK ABOUT
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Now let’s talk about the design of your contact page itself. Don’t overwhelm visitors with too much information. Here’s what you should include: Clear Call to Action (CTA): Use a prominent button or link that says something like “Call Now,” “Get a Quote,” or “Contact Us.” Phone Number: Make your phone number large and easy to read. Consider using a clickable phone number that automatically dials on mobile devices.
-
----
-
-## OVERLAY: MAKES EASY CUSTOMERS FIND
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: This makes it easy for customers to find you. It needs to be immediately visible on every page of your website. Place your phone number and a link to your contact page in the header, footer, and sidebar. Consider adding a phone number badge to your website’s favicon (the small icon that appears in the browser tab). Make it as easy as possible for customers to get in touch.
-
----
-
-## OVERLAY: PEOPLE SEARCHING SERVICE WANT
+## OVERLAY: PLACE TELL PEOPLE ABOUT
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: People searching for your service want to call right now. If they can't find your number or a clear way to reach you, they'll go to the next business that looks easier. For more on this, see How To Make Reels For Your Local Business. This is where many businesses fall short. Responding quickly to inquiries is absolutely critical.
+Narration: It’s a place to tell people about you, not necessarily a place to connect with them. However, your contact page is your direct line to potential customers. It’s the gateway to a conversation, a chance to build trust, and ultimately, a sale. If it’s buried, difficult to find, or doesn’t work properly, you’re losing business without even realizing it.
 
 ---
 
-## OVERLAY: PEOPLE SEARCHING LOCAL BUSINESSES
+## OVERLAY: DIGITAL STOREFRONT GOOGLE MAPS
 
 **Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Duration:** 17s minimum
 
-Narration: More and more people are searching for local businesses on their smartphones. Make sure your contact page is fully responsive and looks great on mobile devices. Ensure that your phone number is easy to tap and that your contact form is easy to fill out on a small screen. A poorly designed mobile experience can drive potential customers away. Positive reviews are a powerful tool for driving contact.
-
----
-
-## OVERLAY: USE GOOGLE ANALYTICS MONITOR
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Use Google Analytics to monitor the number of visitors to your contact page, the bounce rate, and the conversion rate (the percentage of visitors who complete a desired action, such as filling out a form or calling your business). Experiment with different designs and content to see what generates the most leads. A/B testing different CTAs or form layouts can provide valuable insights.
+Narration: This is your digital storefront on Google Maps and Search, and it’s absolutely vital for local visibility. Claiming and fully optimizing your GBP is the first step. Ensure your Name, Address, and Phone number (NAP) are accurate and consistent across the web. This is crucial for Google’s algorithm to understand your business location.
 
 ---
 
-## OVERLAY: READY STOP WAITING CUSTOMERS
+## OVERLAY: INCONSISTENT NAP INFORMATION CONFUSES
 
 **Visual:** Supporting article visual
 **Duration:** 19s minimum
 
-Narration: Ready to stop waiting for customers to find you? Let’s talk about how we can optimize your website and contact page to generate more leads and drive sales. Contact us today for a free consultation. We’ll analyze your current setup and develop a customized strategy to help you succeed. Don't let a poorly designed contact page cost you valuable business.
+Narration: Inconsistent NAP information confuses Google and can significantly hurt your search rankings. Imagine a customer searching for “Joe’s Pizza near me.” If your address is slightly different on Yelp than on your website, Google might show you lower in the results. Fixing this now will pay dividends down the road. It’s a simple task that can have a huge impact.
+
+---
+
+## STAT: 61% CALLERS BUSINESSES ACTUALLY SPEAK
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: A study shows that 61 percent of callers to businesses actually speak with a person, meaning nearly 4 in 10 inbound calls go unanswered or unreturned. Don’t overwhelm visitors with a lengthy contact form. A form with 3 fields (Name, Email, Message) converts at the highest rate (over 25 percent), while forms with 10 or more fields drop to roughly 15 percent. Ask only for the information you absolutely need.
+
+---
+
+## OVERLAY: CONSIDER USING CLICKABLE PHONE
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: Consider using a clickable phone number that automatically dials the number on mobile devices. A quick and easy way to contact you is a huge advantage. For more on this, see Retargeting Ads For Small Business How They Work. Don’t just display your contact information - tell people what you want them to do. Use a clear and concise call to action (CTA) on your contact page.
+
+---
+
+## OVERLAY: RESPOND INQUIRIES QUICKLY POSSIBLE
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: Respond to inquiries as quickly as possible - ideally within an hour. Even a simple acknowledgment that you’ve received their message can make a difference. Automated responses can be helpful, but always ensure they are personalized and provide a clear path for further communication. Positive reviews are a powerful signal to Google that your business is reputable and worth recommending.
+
+---
+
+## STAT: 61% CALLERS BUSINESSES ACTUALLY SPEAK
+
+**Visual:** Supporting article visual
+**Duration:** 21s minimum
+
+Narration: 61 percent of callers to businesses actually speak with a person, meaning nearly 4 in 10 inbound calls go unanswered or unreturned. This is why it’s so important to have a streamlined process for handling phone inquiries. Train your staff to be friendly, helpful, and knowledgeable. Record all phone calls for quality assurance and training purposes. And most importantly, follow up with leads promptly.
+
+---
+
+## OVERLAY: CONTINUOUSLY ANALYZE DATA MAKE
+
+**Visual:** Supporting article visual
+**Duration:** 14s minimum
+
+Narration: Continuously analyze your data and make adjustments to improve your contact page’s effectiveness. Ready to stop waiting for customers to find you? contact Stop paying for marketing promises you don't get. See how we get your local business found on Google right now.
 
 ---
 
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 4s minimum
+**Duration:** 6s minimum
 
-Text: What's your take?
+Text: Improve your contact page to boost local customer conversions today?
 Subtext: COMMENT BELOW
-Narration: What's your take? Follow for more practical business tips.
+Narration: Improve your contact page to boost local customer conversions today? Follow for more practical business tips.

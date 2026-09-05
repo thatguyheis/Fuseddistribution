@@ -1,7 +1,6 @@
 {
   "slug": "contact-page-best-practices-for-local-business",
-  "score": 90,
+  "score": 88,
   "pass": true,
-  "blockers": [],
-  "mode": "deterministic-local"
+  "blockers": []
 }
