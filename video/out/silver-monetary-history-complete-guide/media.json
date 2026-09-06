@@ -1,0 +1,52 @@
+{
+  "0": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-0.jpg",
+    "source": "open-generative-ai-local"
+  },
+  "1": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-1.jpg",
+    "source": "fused-generated-background-library"
+  },
+  "2": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-2.jpg",
+    "source": "local-photo"
+  },
+  "3": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-3.jpg",
+    "source": "pixabay-photo"
+  },
+  "4": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-4.jpg",
+    "source": "pexels-photo"
+  },
+  "5": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-5.jpg",
+    "source": "pexels-photo"
+  },
+  "6": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-6.jpg",
+    "source": "pexels-photo"
+  },
+  "7": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-7.jpg",
+    "source": "pexels-photo"
+  },
+  "8": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-8.jpg",
+    "source": "pexels-photo"
+  },
+  "9": {
+    "type": "photo",
+    "src": "photos/silver-monetary-history-complete-guide/segment-9.jpg",
+    "source": "pexels-photo"
+  }
+}

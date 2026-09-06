@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "segments": {
+    "0": {
+      "key": "{\"profileVersion\":2,\"provider\":\"open-generative-ai-local\",\"model\":\"dreamshaper-8\",\"modelFile\":\"DreamShaper_8_pruned.safetensors\",\"promptHash\":\"db38f6c1cacb5ab034968de0e5961694305fbfb2d623dd108e6a9a7ca46b7084\",\"seed\":139970132,\"width\":384,\"height\":640,\"steps\":8}",
+      "source": "open-generative-ai-local",
+      "providerVersion": "c90e908",
+      "sourceUrl": "https://github.com/anil-matcha/open-generative-ai",
+      "applicationLicense": "MIT",
+      "model": "dreamshaper-8",
+      "modelFile": "DreamShaper_8_pruned.safetensors",
+      "modelLicense": "creativeml-openrail-m",
+      "prompt": "Atmospheric vertical background plate showing an abstract dark metallic chamber with cool silver reflections, soft particles, and layered atmospheric depth. dark charcoal background, cool silver highlights, subtle cyan accent. Soft focus, low detail, cinematic depth, no foreground focal object, clean negative space through the center for a separate caption overlay. Background scenery only. No poster, title card, package, label, sign, screen, interface, document, coin face, currency, or product close-up. No words, letters, numbers, charts, logos, watermarks, signatures, recognizable people, or financial claims.",
+      "topic": "silver",
+      "sceneId": "silver-general",
+      "scene": "an abstract dark metallic chamber with cool silver reflections, soft particles, and layered atmospheric depth",
+      "promptHash": "db38f6c1cacb5ab034968de0e5961694305fbfb2d623dd108e6a9a7ca46b7084",
+      "seed": 139970132,
+      "width": 1080,
+      "height": 1920,
+      "generatedAsset": true,
+      "factualGraphic": false,
+      "backgroundTreatment": "portrait-crop, blur-6, darken-0.14, saturation-0.7, vignette",
+      "tags": [
+        "silver",
+        "silver-general"
+      ],
+      "query": "silver monetary history complete guide",
+      "prefer": "photo",
+      "attempts": [
+        "open-generative-ai-local"
+      ],
+      "path": "photos/silver-monetary-history-complete-guide/segment-0.jpg",
+      "status": "approved-for-render",
+      "updatedAt": "2026-09-06T06:32:43.390Z",
+      "libraryAssetId": "fused-bg-99d240960944cafb"
+    },
+    "1": {
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-market\",\"tags\":[\"investing\",\"silver\",\"silver-market\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-5d3941d486d36d28",
+      "topic": "silver",
+      "sceneId": "silver-market",
+      "tags": [
+        "investing",
+        "silver",
+        "silver-market"
+      ],
+      "sha256": "5d3941d486d36d28425e4fcc8271c3705414e37131620043831a28c981cbbf57",
+      "sourceSlug": "how-to-buy-silver-coins-at-spot-price",
+      "status": "approved-background-only",
+      "query": "silver monetary history complete guide wondering silver good",
+      "prefer": "photo",
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/silver-monetary-history-complete-guide/segment-1.jpg",
+      "updatedAt": "2026-09-06T00:50:01.967Z"
+    },
+    "2": {
+      "key": "{\"query\":\"silver monetary history complete guide wasn necessarily money\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "silver monetary history complete guide wasn necessarily money",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.619Z"
+    },
+    "3": {
+      "key": "{\"query\":\"silver monetary history complete guide 1849 dramatically boosted\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pixabay-photo",
+      "query": "silver monetary history complete guide 1849 dramatically boosted",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.858Z"
+    },
+    "4": {
+      "key": "{\"query\":\"silver monetary history complete guide silver continued play\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide silver continued play",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.858Z"
+    },
+    "5": {
+      "key": "{\"query\":\"silver monetary history complete guide agreement fixed value\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide agreement fixed value",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.858Z"
+    },
+    "6": {
+      "key": "{\"query\":\"silver monetary history complete guide 480 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide 480 million ounces",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.859Z"
+    },
+    "7": {
+      "key": "{\"query\":\"silver monetary history complete guide predicting future silver\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide predicting future silver",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.859Z"
+    },
+    "8": {
+      "key": "{\"query\":\"silver monetary history complete guide 500 gradually increase\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide 500 gradually increase",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.859Z"
+    },
+    "9": {
+      "key": "{\"query\":\"silver monetary history complete guide customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "pexels-photo",
+      "query": "silver monetary history complete guide customer feedback",
+      "prefer": "photo",
+      "updatedAt": "2026-09-06T07:06:07.860Z"
+    }
+  },
+  "generativeCandidates": {}
+}
