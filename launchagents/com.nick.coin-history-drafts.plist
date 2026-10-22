@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.nick.coin-history-drafts</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/python3</string>
+		<string>/Users/nick/projects/fuseddistribution/scripts/run-coin-history-drafts.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartInterval</key>
+	<integer>900</integer>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>StandardOutPath</key>
+	<string>/Users/nick/projects/fuseddistribution/.workflow-state/coin-history-drafts/launchd.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/nick/projects/fuseddistribution/.workflow-state/coin-history-drafts/launchd.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>COIN_HISTORY_MODEL</key>
+		<string>gemma3:4b</string>
+	</dict>
+</dict>
+</plist>

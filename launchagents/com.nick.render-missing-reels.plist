@@ -37,9 +37,9 @@
     <key>MAX_RETRIES</key>
     <string>2</string>
     <key>RENDER_TIMEOUT_SECONDS</key>
-    <string>2100</string>
+    <string>18000</string>
     <key>CHATTERBOX_BATCH_TIMEOUT_MS</key>
-    <string>1800000</string>
+    <string>2700000</string>
     <key>REEL_VOICE</key>
     <string>chatterbox</string>
     <key>GENERATIVE_MEDIA_ENABLED</key>
@@ -48,10 +48,12 @@
     <string>production</string>
     <key>GENERATIVE_MEDIA_PRODUCTION_APPROVED</key>
     <string>1</string>
+    <key>GENERATIVE_MEDIA_STEPS</key>
+    <string>20</string>
     <key>GENERATIVE_MEDIA_MAX_SEGMENTS</key>
     <string>2</string>
     <key>GENERATIVE_MEDIA_TIMEOUT_MS</key>
-    <string>240000</string>
+    <string>14400000</string>
   </dict>
 </dict>
 </plist>
