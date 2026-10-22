@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-09T16:24:02.585928+00:00",
+  "heroSha256": "fc46fef74764041576dbb71ba2fd05d7bf7e7424b39d9e104f8c72dbafef3c6c",
+  "subject": "AI workflow branches toward human review",
+  "purpose": "conceptual explanation",
+  "hook": "Before the action, place the review.",
+  "keyWords": [
+    "deciding",
+    "when",
+    "an"
+  ],
+  "chartEvidence": "Conceptual diagram, no measured results",
+  "preview": ".workflow-state/recovery-2026-10-09-batch/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

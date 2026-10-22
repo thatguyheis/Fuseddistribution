@@ -1,0 +1,25 @@
+{
+  "slug": "deciding-when-an-ai-workflow-needs-human-review",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T16:24:02.585928+00:00",
+  "review_notes": [
+    "Reviewed complete article and companion narration against cited primary source context. Original advice and hypothetical examples are identified; no invented statistics, historical data presented as current, or investment promises.",
+    "Inspected the actual hero and square exports: subject specific explanatory diagrams, readable hooks, no material clipping.",
+    "Article QA, narration duration preflight and production parser passed. Human review narration was expanded from article-supported text after the first duration check failed. Final video production and review remain pending.",
+    "Video panel only reviewed 2026-10-12: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-13T05-00-17-599Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "d12239ba5016b618a1c7132b03af11a0b84aaa4f9700fadaeeef0d7fa4f5aa1e",
+    "index.html": "18d2b9a48d8517c23ac3542abeb6afde33ccfc67af56351b88cfcc069dcba31b",
+    "meta.json": "cdc0037d7dab8849dfd083bbd2a60d614421b7dba29f1cb8f13d810b1b2c5b19",
+    "research.json": "7a63013f340505e63a5ba46e37006b6ef4beb72a50b3fdf480eb5a8b03ee01bf",
+    "hero.jpg": "fc46fef74764041576dbb71ba2fd05d7bf7e7424b39d9e104f8c72dbafef3c6c",
+    "photo-post.jpg": "293f049fbc44d68f9bc58c0b3cce04dbb28d75358e5fa9de0194e4bac2aeb8d7",
+    "reel-script.md": "1d51ace6497e1eeb09326e99c370c9a36979a5869f04a8b0c6de24eb08c86a29",
+    "reel-data.md": "49c3927e37e8222a2b846c8b44d3f9ba1b60e5aa0de7c83467083853ada8037e",
+    "social-copy.json": "08c9a8452f1e2d9ff3939344f45a3339954cd8fd58b33f757a42eb0f8971be9a"
+  }
+}

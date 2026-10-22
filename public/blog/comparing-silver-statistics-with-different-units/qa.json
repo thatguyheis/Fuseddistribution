@@ -1,0 +1,25 @@
+{
+  "slug": "comparing-silver-statistics-with-different-units",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.764410+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "88267267bc6c876b2d7620c6f2dc11ee48b69d5a2f0a720575f0b4284304bd9a",
+    "index.html": "f83c3f9a7e37add4a540678b9b47b28737fa9a47a3aae8e3144fc0fe4a7bec7a",
+    "meta.json": "0a06dd7e6118e88e9a340b68cbfcb209a6771395b586c738082a679e3ccddf88",
+    "research.json": "f9e7a8b47311631f24874a2a522115d8c48c1ef03156f6475a699f4166b0581f",
+    "hero.jpg": "bbfb21897f5ae533a303f99ffa2e0d344b7329dbe2f4dbf6c3a39fe7b534a620",
+    "photo-post.jpg": "6a6a861e8984927c07bf7ee2b84fd2c2c463e51fff5370713cf1bf0b1d95364e",
+    "reel-script.md": "161c37337d2ed0ae2a612e9ece636c244807490b537697acab439f73054fe19b",
+    "reel-data.md": "f46f8e6c57634e3623cceecd09c0c93c158abc67a0bd305f5ed9379aa77271c4",
+    "social-copy.json": "91ec388128ce72b1c2dd4de96e9b48031d5e308a08a0c46fd92b8be6e6c8e64b"
+  }
+}

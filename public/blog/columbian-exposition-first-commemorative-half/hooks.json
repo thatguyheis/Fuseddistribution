@@ -1,0 +1,12 @@
+{
+  "hook": "A coin authorized before the fair opened",
+  "hook_type": "historical_reveal",
+  "key_stat": {
+    "value": "",
+    "label": ""
+  },
+  "discussion_question": "Which detail in this coin’s history surprised you most?",
+  "engagement_type": "debate",
+  "content_kind": "educate",
+  "hashtags": "#CoinHistory #AmericanCoins #Numismatics"
+}

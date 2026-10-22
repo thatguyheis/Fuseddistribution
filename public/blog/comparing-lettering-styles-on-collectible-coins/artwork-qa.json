@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.506671+00:00",
+  "heroSha256": "bcab3fb53911f38b2c59ad7fbfc234629be18a21c22808b583e9c87eb842349d",
+  "subject": "Magnifier compares lettering across two coins",
+  "purpose": "letters conceptual explanation",
+  "hook": "Same letter. Different character.",
+  "keyWords": [
+    "comparing",
+    "lettering",
+    "styles"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-1.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

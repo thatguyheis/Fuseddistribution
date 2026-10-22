@@ -3,6 +3,19 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/fake-google-reviews-how-to-handle-them/fake-google-reviews-how-to-handle-them.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.149Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/qC78YtNaJug",
+      "sentAt": "2026-08-26T22:20:05.576Z"
+    },
+    "x": {
+      "url": "https://x.com/290904877/status/2093488890417930729",
+      "sentAt": "2026-08-29T00:00:21.499Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/Dc__bEUD6EC/",
+      "sentAt": "2026-09-07T20:41:00.309Z"
+    }
+  },
+  "updatedAt": "2026-09-08T07:24:55.244Z"
 }

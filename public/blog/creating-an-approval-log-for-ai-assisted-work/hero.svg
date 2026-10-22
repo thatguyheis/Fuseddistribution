@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#101b28"/>
+  <circle cx="1040" cy="85" r="230" fill="#16364b" opacity=".7"/>
+  <path d="M0 520h1200v110H0z" fill="#132536"/>
+  <text x="84" y="112" fill="#58d6ff" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">FUSED DISTRIBUTION · AI WORKFLOWS</text>
+  <text x="84" y="205" fill="#f5f8fb" font-family="Arial,sans-serif" font-size="52" font-weight="700">A useful approval log</text>
+  <text x="84" y="267" fill="#c8d6e2" font-family="Arial,sans-serif" font-size="29">Connect the work, evidence, review and decision.</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(84 362)">
+      <rect width="228" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+      <circle cx="38" cy="38" r="17" fill="#58d6ff"/><text x="33" y="45" fill="#101b28" font-size="19" font-weight="700">1</text>
+      <text x="26" y="82" fill="#fff" font-size="22" font-weight="700">Task + source</text>
+    </g>
+    <path d="M326 419h47m-12-12 12 12-12 12" fill="none" stroke="#58d6ff" stroke-width="4"/>
+    <g transform="translate(390 362)">
+      <rect width="228" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+      <circle cx="38" cy="38" r="17" fill="#58d6ff"/><text x="33" y="45" fill="#101b28" font-size="19" font-weight="700">2</text>
+      <text x="26" y="82" fill="#fff" font-size="22" font-weight="700">Review checks</text>
+    </g>
+    <path d="M632 419h47m-12-12 12 12-12 12" fill="none" stroke="#58d6ff" stroke-width="4"/>
+    <g transform="translate(696 362)">
+      <rect width="228" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+      <circle cx="38" cy="38" r="17" fill="#58d6ff"/><text x="33" y="45" fill="#101b28" font-size="19" font-weight="700">3</text>
+      <text x="26" y="82" fill="#fff" font-size="22" font-weight="700">Human decision</text>
+    </g>
+    <path d="M938 419h47m-12-12 12 12-12 12" fill="none" stroke="#58d6ff" stroke-width="4"/>
+    <g transform="translate(1002 362)">
+      <rect width="142" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+      <circle cx="38" cy="38" r="17" fill="#58d6ff"/><text x="33" y="45" fill="#101b28" font-size="19" font-weight="700">4</text>
+      <text x="18" y="82" fill="#fff" font-size="19" font-weight="700">Version</text>
+    </g>
+  </g>
+  <text x="84" y="557" fill="#a9bdcc" font-family="Arial,sans-serif" font-size="18">A practical example, not a required NIST template.</text>
+</svg>

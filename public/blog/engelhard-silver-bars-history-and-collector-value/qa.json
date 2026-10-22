@@ -1,0 +1,26 @@
+{
+  "slug": "engelhard-silver-bars-history-and-collector-value",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:49:29.703248+00:00",
+  "review_notes": [
+    "Owner read full article and narration, verified BASF2006 corporate milestone, specialistarchive/NNP/NISTsourcecontext, inspected actualhero/squareJPEGs. Corporate history does not date individualbars; no invented rarity/value.",
+    "QA-local passes; article approval does not imply audio/video completion. September14 actualdate andoriginalqueueprovenance retained."
+  ],
+  "artifactSha256": {
+    "verified.md": "8a7139283a60d9d277ee7ac25fbbf25188d984eb0bc5f1aca0ca1654284f7e3e",
+    "index.html": "17cae7ae2852e679b227cc3f548b2fbdac14170d568beefb845a3ad902c6a32a",
+    "hero.jpg": "bac3c7981c32629f0f7c3f7831425ff4a1500101cb964ce9c95f41b58b4c1f2b",
+    "social-copy.json": "db2ab91e393e73ceb9b65fa17de5e3c16e6a0f18ad6e6de16ea9dff9a7e8332c",
+    "hero.svg": "96fbd579dfbfaa87c9b1a391a66c84249cafb944f89133620168a44f6e5184e4",
+    "reel-data.md": "73ec2b00bd522591a0cb66cc1164dfac4b805c70043e41db7bfc32a12b5e3b7a",
+    "photo-post.svg": "d75d799c9fbee1199ae8f0149274e7e51f9fc04eb3ab5382c721d5100cf32a24",
+    "hooks.json": "10c9ab6b0f6ffa75f9a02492b3416b357a388767ebc3610a1f3e51d990ae7d48",
+    "reel-script.md": "59ab97577eda7819caa7f24109cddfc0c58da0af473f081b77a143da961d7591",
+    "gemma_draft.md": "8a7139283a60d9d277ee7ac25fbbf25188d984eb0bc5f1aca0ca1654284f7e3e",
+    "photo-post.jpg": "d4fc3270e06774ee7814876748ef854947f87b23a111cb1958316a02be888df7",
+    "meta.json": "df7f149cb0e535d9c4f02376ea9b44c28990919c6255e27dcc407707813d1eaf"
+  }
+}

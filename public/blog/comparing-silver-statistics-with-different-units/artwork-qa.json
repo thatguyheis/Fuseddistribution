@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.523107+00:00",
+  "heroSha256": "bbfb21897f5ae533a303f99ffa2e0d344b7329dbe2f4dbf6c3a39fe7b534a620",
+  "subject": "Statistical worksheet separates original converted quantities",
+  "purpose": "units conceptual explanation",
+  "hook": "Before the chart, check the units.",
+  "keyWords": [
+    "comparing",
+    "silver",
+    "statistics"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-2.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

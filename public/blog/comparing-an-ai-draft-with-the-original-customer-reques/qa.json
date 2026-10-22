@@ -1,0 +1,24 @@
+{
+  "slug": "comparing-an-ai-draft-with-the-original-customer-reques",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-10T15:34:12Z",
+  "review_notes": [
+    "Reviewed the complete source-bounded article against NIST AI RMF Core provisions Govern 3.2 and Map 3.5; examples are identified as practical guidance and no NIST endorsement or compliance guarantee is claimed.",
+    "Reviewed the final hero and square image exports and the 360x640 portrait placement. Topic specificity, phone readability, truthful hook, contrast and clipping checks pass.",
+    "Topic-aligned outline validator, deterministic article QA, reel parser and narration preflight pass at 121 estimated seconds. Final encoded reel review, hosting and scheduling remain pending and are not claimed."
+  ],
+  "artifactSha256": {
+    "verified.md": "3999dbcacb0aab0097541d7223f09f26097c1c515d4ef69157e395afaed8d0bc",
+    "index.html": "2f6a9ce0a4a4c4993dc6ecd2104a7115e44b1ded2c76e545c53a7763d0219eea",
+    "meta.json": "ffe404553222e30fab59fadbf5b45e87790210fe0a9c0e32a1d728082e9dfbcf",
+    "research.json": "e1959f5bdf3d78f10dd0871f4a020e69bb1cb7abada18e587c57460443ddf787",
+    "hero.jpg": "ea55cf407a1661abfac2707e709ad51cd2ea611a09054aad63050134e897e38d",
+    "photo-post.jpg": "712915294e6dd26dc7bce3f23345ba5176d632a7813a484250ca5b60f076babf",
+    "reel-script.md": "fee30bb57230d320588bd73b088a4f392601450f0fe82c8eb3bdad3e66e1ae66",
+    "reel-data.md": "5aa921321a51609ec27a895b7495176d9fac23d692c2b920adfe32a2cce365c2",
+    "social-copy.json": "165aaebd4a3d8526492ea1eba23b9dd636f47b388c2ea8a544b7050af4f7e85d"
+  }
+}

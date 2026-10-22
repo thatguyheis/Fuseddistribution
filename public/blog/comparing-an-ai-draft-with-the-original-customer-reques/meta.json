@@ -1,0 +1,28 @@
+{
+  "slug": "comparing-an-ai-draft-with-the-original-customer-reques",
+  "title": "Compare an AI Draft With the Original Customer Request",
+  "description": "Compare an AI draft with the customer\u2019s original request, verify facts and promises, and give reviewers a clear approve, revise or hold decision.",
+  "ogDescription": "A practical review method for AI drafted customer replies.",
+  "alt": "Customer request and AI reply reviewed",
+  "brand": "tech",
+  "date": "2026-10-10",
+  "modifiedDate": "2026-10-10",
+  "tags": [
+    "AI Workflows",
+    "Customer Support"
+  ],
+  "ctaLine": "Would you review every AI draft, or focus on replies that make a commitment?",
+  "contentGraphic": {
+    "label": "Compare request and draft",
+    "rows": [
+      {
+        "condition": "Original customer request",
+        "action": "Proposed AI reply"
+      },
+      {
+        "condition": "Supporting source record",
+        "action": "Human review decision"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "slug": "columbian-exposition-first-commemorative-half",
+  "planVersion": 1,
+  "model": "gemma3:4b",
+  "helper": "/Users/nick/projects/fuseddistribution/scripts/ollama-local-no-think.sh",
+  "generatedAt": "2026-10-21T08:49:44.095Z",
+  "totalWords": 942,
+  "telemetry": {
+    "opening": {
+      "resumed": true,
+      "attempts": 0,
+      "seconds": 0,
+      "words": 202
+    },
+    "sections": {
+      "s01": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 138
+      },
+      "s02": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 182
+      },
+      "s03": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 203
+      },
+      "s04": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 173
+      }
+    }
+  }
+}

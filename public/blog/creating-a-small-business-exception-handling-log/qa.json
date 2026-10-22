@@ -1,0 +1,26 @@
+{
+  "slug": "creating-a-small-business-exception-handling-log",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.844629+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305–340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required.",
+    "Video panel only reviewed 2026-10-14: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-15T05-01-09-566Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "ca8f932a60c7035011fc6fa2dae653f85dab93ecd99aca6288c1373a72900534",
+    "index.html": "cfcec8c3c094ae74258e914fab43eb40e2fb03fe1839eb91bdaff3711579f7c4",
+    "meta.json": "16ab5bb0ab25a942195b7a987e45590cab532cc6ddc31b36c5c6cc25d4d8ec63",
+    "research.json": "5d5e2f1b42047b855a910112f3712fdd3dd5ec15c100754e266d98e767eec020",
+    "hero.jpg": "9036f4ace3afc4761348d1b1bebee5ce05169d13be5845e6077f2a63be0834be",
+    "photo-post.jpg": "1156b5bd3da3264af23640b7cd95cea0d56895008559ee600b3e59879582c80a",
+    "reel-script.md": "f528a0798c20107fd5427874ed56cea621dfcf4d06b52700cdfb3c001425288d",
+    "reel-data.md": "4c710aa18f40123ad7eab93fb1203682f6f9aacface3fc55cd16c9ec7ed927e5",
+    "social-copy.json": "80f53bbfcf50a8682aefc1048254d70c78df8ca0be7feb09401da9d1ae5a6b53"
+  }
+}

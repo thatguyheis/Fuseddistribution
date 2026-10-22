@@ -1,0 +1,33 @@
+{
+  "topic": "creating an approval log for AI-assisted work",
+  "plannedDate": "2026-10-08",
+  "actualPublicationDate": "2026-10-12",
+  "brand": "tech",
+  "sources": [
+    {
+      "title": "NIST AI Risk Management Framework 1.0",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "supports": "Voluntary framework organized around Govern, Map, Measure and Manage; does not mandate a universal approval-log template."
+    },
+    {
+      "title": "NIST AI RMF Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "supports": "Framework outcomes and activities are tailored to context rather than one universal ordered checklist."
+    },
+    {
+      "title": "NIST Generative AI Profile",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "supports": "Generative AI risk practices can include additional human review, tracking, documentation and management oversight; the profile does not prescribe this schema."
+    },
+    {
+      "title": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "supports": "Voluntary suggested actions and documentation practices accompanying the framework."
+    }
+  ],
+  "limitations": [
+    "The template is an editorial example, not a NIST requirement or a compliance guarantee.",
+    "Review depth depends on impact, context and the authority of the reviewer.",
+    "Content approval does not itself authorize sending, changing records or making commitments."
+  ]
+}

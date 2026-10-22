@@ -1,0 +1,35 @@
+{
+  "slug": "comparing-an-ai-draft-with-the-original-customer-reques",
+  "plannedDate": "2026-10-07",
+  "actualPublicationDate": "2026-10-10",
+  "status": "source_review_and_editorial_draft_complete_unapproved",
+  "topic": "comparing an AI draft with the original customer request",
+  "sources": [
+    {
+      "title": "NIST AI Risk Management Framework Core, Govern 3.2 and Map 3.5",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "supports": [
+        "Define and distinguish human-AI roles and oversight responsibilities (Govern 3.2).",
+        "Define, assess and document human oversight processes (Map 3.5)."
+      ],
+      "limits": "NIST framework does not prescribe the specific comparison workflow or examples in this article."
+    }
+  ],
+  "editorialChecks": {
+    "topicAligned": true,
+    "claimsLimitedToSource": true,
+    "examplesLabeledHypothetical": true,
+    "unsupportedLegalOrComplianceClaims": false,
+    "publicationApproval": false
+  },
+  "nextStage": "create enriched hero and square companion, synchronized reel/script/social companions; run topic outline and local factual/editorial QA; hash exact package; only then approve, register and deploy.",
+  "outline": [
+    "Preserve the original customer request",
+    "Compare the AI draft meaning with the request",
+    "Verify facts and customer commitments",
+    "Hold drafts when evidence is missing",
+    "Give reviewers a clear approval decision"
+  ],
+  "outlineValidation": "scripts/validate-research-outline.py passed for the planned topic",
+  "articleReview": "Reviewed complete article against NIST AI RMF Core. The specific comparison method, examples and workflow are original practical guidance; no numbers, legal claims or NIST endorsement asserted."
+}

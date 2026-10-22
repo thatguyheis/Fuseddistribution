@@ -1,0 +1,30 @@
+{
+  "slug": "customer-testimonial-video-how-to-film-and-use",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T16:50:49.514990+00:00",
+  "review_notes": [
+    "Reviewed complete rewritten article, metadata, social copy, reel narration and overlays.",
+    "Removed invented performance statistics, stock claims, and unresolved placeholders.",
+    "Platform duration and endorsement statements checked against official Google and FTC guidance.",
+    "Hero visually inspected and deterministic QA passed. Video release requires rendered artifact QA."
+  ],
+  "sources": [
+    "https://support.google.com/business/answer/6103862?hl=en",
+    "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
+  ],
+  "artifact_sha256": {
+    "verified.md": "9741e9388abb970d46d3380664d700a1db29851eef17b9362cbfd15268ff40f5",
+    "index.html": "81af776dc961ceacbe07285b74f38ee08cc17822cfddd17758b8214b7058aca1",
+    "meta.json": "7e8811ca01ea8b5b8c092cd9317f858cef9485c61bd6806bc3a87a7f0286e41b",
+    "hooks.json": "b4adfc14c86a7d9fb2ebd45ca486b0ecf76ba111c3db291f3c8fc11efc81f123",
+    "hero.jpg": "8f4ae6d5e5b2ec28d18ec161c25f01478463a2bfad0da15cfab86dd72663136d",
+    "photo-post.jpg": "1978d9280950b113f95b3f9efa523e6e8702c08d739b01201a0b0817bfffe0d3",
+    "reel-data.md": "203733354354e8406cd6f823b6505e897cfdd7b7e156074f05a711b3d62b8004",
+    "reel-script.md": "1acd4df96da9459df27c683ffae9c4fead4091dfde25e0f32c0c8f7fa897a9a5",
+    "social-copy.json": "6b4e528acbc7f4f3020ea057734f2f8a8b1e397c40a4db53ed4048a777c19ec3",
+    "research.json": "4e76477485df7fd0e51635436c4fbb33fd9e77df1ba867dbf5271c5de03e53e2"
+  }
+}

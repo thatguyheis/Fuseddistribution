@@ -1,0 +1,27 @@
+{
+  "slug": "comparing-silver-statistics-with-different-units",
+  "title": "Compare Silver Statistics With Different Units",
+  "description": "Compare silver statistics with their original units and definitions intact, document conversions and rounding, and check whether the measures actually match.",
+  "alt": "Statistical worksheet separates original converted quantities",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "When a chart looks surprising, do you check its units or its source first?",
+  "contentGraphic": {
+    "label": "Compare Silver Statistics With Different Units",
+    "rows": [
+      {
+        "condition": "Check the scale before converting",
+        "action": "Confirm that the quantities match"
+      },
+      {
+        "condition": "Make rounding visible",
+        "action": "Review the comparison before sharing it"
+      }
+    ]
+  }
+}

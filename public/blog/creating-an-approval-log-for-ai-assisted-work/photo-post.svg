@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#101b28"/>
+  <circle cx="930" cy="105" r="270" fill="#16364b" opacity=".72"/>
+  <text x="76" y="102" fill="#58d6ff" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">FUSED DISTRIBUTION · TECH</text>
+  <text x="76" y="205" fill="#f5f8fb" font-family="Arial,sans-serif" font-size="51" font-weight="700">Make the decision</text>
+  <text x="76" y="268" fill="#f5f8fb" font-family="Arial,sans-serif" font-size="51" font-weight="700">easy to trace.</text>
+  <text x="76" y="330" fill="#c8d6e2" font-family="Arial,sans-serif" font-size="26">A proportionate AI work record can note:</text>
+  <g font-family="Arial,sans-serif" font-size="27" fill="#f5f8fb">
+    <rect x="76" y="390" width="928" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+    <circle cx="126" cy="446" r="19" fill="#58d6ff"/><path d="m117 446 7 7 13-15" fill="none" stroke="#101b28" stroke-width="5"/>
+    <text x="168" y="455">The task and source material</text>
+    <rect x="76" y="528" width="928" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+    <circle cx="126" cy="584" r="19" fill="#58d6ff"/><path d="m117 584 7 7 13-15" fill="none" stroke="#101b28" stroke-width="5"/>
+    <text x="168" y="593">Checks and limits still unresolved</text>
+    <rect x="76" y="666" width="928" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+    <circle cx="126" cy="722" r="19" fill="#58d6ff"/><path d="m117 722 7 7 13-15" fill="none" stroke="#101b28" stroke-width="5"/>
+    <text x="168" y="731">Reviewer and specific decision</text>
+    <rect x="76" y="804" width="928" height="112" rx="18" fill="#1d3142" stroke="#58d6ff" stroke-width="2"/>
+    <circle cx="126" cy="860" r="19" fill="#58d6ff"/><path d="m117 860 7 7 13-15" fill="none" stroke="#101b28" stroke-width="5"/>
+    <text x="168" y="869">Exact version and allowed next step</text>
+  </g>
+  <text x="76" y="984" fill="#a9bdcc" font-family="Arial,sans-serif" font-size="21">Which detail would help your team review work later?</text>
+</svg>

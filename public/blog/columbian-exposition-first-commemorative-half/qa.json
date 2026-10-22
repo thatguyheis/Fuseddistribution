@@ -1,0 +1,32 @@
+{
+  "slug": "columbian-exposition-first-commemorative-half",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "coin-history-automated",
+  "automaticApproval": {
+    "policy": "coin-history-auto-v1",
+    "model": "gemma3:4b",
+    "qualityThreshold": 85,
+    "transcriptHashVerified": true
+  },
+  "artifactSha256": {
+    "verified.md": "184f0039173dd3ed553a7c98c248064ab9df5b701f8920ceec490050e8829b98",
+    "index.html": "02dad006ec45ffc0d1cd813348e72571e707b7701e6abd4153d55023f0980ca5",
+    "meta.json": "01a87329b11c28fd57cc5210fdff555ac806dbe80f58448f1f27c3fe5417c403",
+    "research.json": "cc9a44319da4e5c4bc446db3add035af0ce258b12f4cc8bcd28b5d171daa2baf",
+    "hero.jpg": "34c4894a390508c75b3e3ee567fe00222b4d6340071d0ae75748b4be943bd972",
+    "photo-post.jpg": "840471e68423f31cf39f867bd4fbd745807a04457deb92d300e9949f21b3ccd7",
+    "reel-script.md": "0e65d3fda0cb2a940a3d87bf23cecb0672f4f9a544f69a45db552c705c5b445f",
+    "reel-script-approved.md": "0e65d3fda0cb2a940a3d87bf23cecb0672f4f9a544f69a45db552c705c5b445f",
+    "reel-data.md": "91325adf651fb38a8506c80b5ad7f4231aa84ef6ae2de27500c61f623b751c35",
+    "social-copy.json": "439a56568b46c52b4df09fe4b2791880b60a713212b9645d518e958e12c590eb",
+    "production-inputs.json": "d96155fd28d758e7ff5f28f6a7e4d63fbc0129443e4586d22aea9630e069ee3a",
+    "image-sources.json": "97c85df9f496f85c75f3a1dcd4e7c65f535290157c38235461d7322c55c86899",
+    "content-plan.json": "6995cb2caa1d7e03d4732ef1199123a5689ffee94860cf0801bd01b8efcb0708",
+    "pipeline-marker.json": "34bcebbc0922413cbe817a832ddaf6fca54069b69bfc575ebb2cb0c212b86bb5",
+    "content/coin-history/columbian-exposition-first-commemorative-half/narration-v1-approved.txt": "49c28e9f85ebd35d0b9d169a3e07443ca1175901c8c558a803fb0f378487b404",
+    "content/coin-history/columbian-exposition-first-commemorative-half/script-approval.json": "03cc784c0abef7bd3b01b295056e3a321d347cdfa632aa95e10dce37ddcdebba",
+    "content/coin-history/columbian-exposition-first-commemorative-half/claim-map.json": "8df778087b8f13d839ccf40ef5f83d23fc8ad834dc98bb821d5216c0e3822689"
+  }
+}

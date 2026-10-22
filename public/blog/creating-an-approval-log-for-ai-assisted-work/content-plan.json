@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "slug": "creating-an-approval-log-for-ai-assisted-work",
+  "title": "Create an Approval Log for AI-Assisted Work",
+  "brand": "tech",
+  "readerPromise": "Help a small team record the evidence, review and decision behind consequential AI-assisted work.",
+  "reel": {
+    "topic": "Keep an AI approval record useful and proportionate",
+    "promise": "Show the minimum context that helps a reviewer trace a decision.",
+    "sectionIds": ["s01", "s02", "s03", "s04"]
+  },
+  "sections": [
+    { "id": "s01", "heading": "Record the work and its context", "readerQuestion": "What should an approval record identify?", "purpose": "Connect purpose, owner and referenced source material.", "keyPoints": ["Name the task and accountable owner", "Reference source material while minimizing sensitive details"], "evidenceClaims": [], "targetWords": 140 },
+    { "id": "s02", "heading": "Show what was checked", "readerQuestion": "What should the reviewer record?", "purpose": "Capture relevant evidence and unresolved limitations.", "keyPoints": ["Check claims against current sources", "Record limits and scale review to impact"], "evidenceClaims": [], "targetWords": 140 },
+    { "id": "s03", "heading": "Make the decision specific", "readerQuestion": "How should an approval decision be recorded?", "purpose": "Separate content approval from authority to act.", "keyPoints": ["Record the reviewer and decision", "Identify the exact version and next action"], "evidenceClaims": [], "targetWords": 140 },
+    { "id": "s04", "heading": "Keep the record useful and proportionate", "readerQuestion": "How can the record remain useful over time?", "purpose": "Explain retention, access and improvement boundaries.", "keyPoints": ["Keep only necessary information", "Use recurring corrections to improve the process"], "evidenceClaims": [], "targetWords": 140 }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "columbian-exposition-first-commemorative-half",
+  "title": "How the 1892 Columbian Half Dollar Helped Prepare a World\u2019s Fair",
+  "description": "Discover how Congress authorized the 1892 Columbian Half Dollar to support preparations for Chicago's 1893 World's Fair, and what its design records.",
+  "ogDescription": "See why Congress authorized the first U.S. commemorative half dollar before Chicago\u2019s 1893 World\u2019s Columbian Exposition opened, and how the law tied coinag",
+  "alt": "1892 Columbian proof half dollar, obverse",
+  "brand": "silver",
+  "date": "2026-10-21",
+  "modifiedDate": "2026-10-21",
+  "tags": [
+    "Coin history",
+    "American coins",
+    "columbian exposition first"
+  ],
+  "ctaLine": "Explore more verified stories from American coin history.",
+  "status": "draft-automated-qa-pending",
+  "contentGraphic": {
+    "label": "How the 1892 Columbian Half Dollar Helped Prepare a World\u2019s Fair",
+    "rows": [
+      {
+        "condition": "Authorization",
+        "action": "Congress approved the issue in 1892."
+      },
+      {
+        "condition": "Purpose",
+        "action": "Proceeds supported Chicago fair preparation."
+      },
+      {
+        "condition": "Obverse",
+        "action": "Charles Barber designed Columbus."
+      },
+      {
+        "condition": "Reverse",
+        "action": "George Morgan showed the Santa Maria."
+      }
+    ]
+  }
+}

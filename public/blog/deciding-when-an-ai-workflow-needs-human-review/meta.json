@@ -1,0 +1,27 @@
+{
+  "slug": "deciding-when-an-ai-workflow-needs-human-review",
+  "title": "When an AI Workflow Needs Human Review",
+  "description": "Choose human review points for an AI workflow by examining the next action, the evidence a reviewer needs, and the exception route when a task cannot proceed.",
+  "alt": "AI workflow branches toward human review",
+  "brand": "tech",
+  "date": "2026-10-09",
+  "modifiedDate": "2026-10-09",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you review every AI draft or focus review on the actions with consequences?",
+  "contentGraphic": {
+    "label": "When an AI Workflow Needs Human Review",
+    "rows": [
+      {
+        "condition": "Locate the AI workflow decision point",
+        "action": "Choose explicit triggers for human review"
+      },
+      {
+        "condition": "Make the human review step usable",
+        "action": "Test the workflow before relaxing review"
+      }
+    ]
+  }
+}

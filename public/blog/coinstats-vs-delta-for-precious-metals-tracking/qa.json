@@ -1,0 +1,28 @@
+{
+  "slug": "coinstats-vs-delta-for-precious-metals-tracking",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:16:59.984334+00:00",
+  "review_notes": [
+    "Owner read complete article and final topic specific narration, verified primary sources and corrected unsupported claims.",
+    "Owner viewed both actual JPEG exports; diagram and sale/cost examples checked.",
+    "Deterministic QA passed. Reel rendering and platform delivery remain separate pending stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "8bea485fc9a02c67a68a816d2c39d89c82786833835a54877287b41572b3b7b0",
+    "index.html": "58f43e749753d134ed1269ef520b3abc9db402077119840cbc9af6445af903f6",
+    "hero.jpg": "233a31ecf0f23ac3b909e3cb77dc7ffb1ba2d11143cb12584cceae6e07e6ec99",
+    "social-copy.json": "210267af9b1c0ffb8b50cca5a3761821dbf4cefe28d356ab1a9b969d297b34db",
+    "hero.svg": "39d844effea86a60f2652d3994fcebede2f4be01926806876811585605a04596",
+    "reel-data.md": "ce661313bc71a25e90acc93fe26d1cf69767bbd1f06cad53caa9ef2d55be3d56",
+    "photo-post.svg": "ea8c6cbc8b210b6b757cf11e263914ec818b8185d5f5fac581079489ab2ff045",
+    "research.json": "c522376bd3b5c3188d5116f1f0d30a310a23171149ddab5bc7439884da17d94d",
+    "hooks.json": "b2dd05cbfd325dc6aba709de6be455d2e1edc81c43e2640f2930db550a1f2086",
+    "reel-script.md": "a7c3eb8ae3659a3e6337d6949fa17fd214d161ea28e486c56c3dd9a68b9326cb",
+    "gemma_draft.md": "8bea485fc9a02c67a68a816d2c39d89c82786833835a54877287b41572b3b7b0",
+    "photo-post.jpg": "fa68c5f0721987315e498b4e52ed87d3ca9f08b9a6dc6e5908464e6f08781a19",
+    "meta.json": "9743beece7caabcf2e2762c583fc733b459d2af8d577a374b3c6b8b33317c7b2"
+  }
+}

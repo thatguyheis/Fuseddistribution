@@ -3,6 +3,15 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/does-responding-to-reviews-improve-local-seo/does-responding-to-reviews-improve-local-seo.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.149Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/watch?v=Y-VHvvLEi0Y",
+      "sentAt": "2026-08-26T22:40:06.628Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/DdCkNwaDMQZ/",
+      "sentAt": "2026-09-08T20:41:00.415Z"
+    }
+  },
+  "updatedAt": "2026-09-08T23:00:10.918Z"
 }

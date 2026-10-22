@@ -1,0 +1,21 @@
+{
+  "slug": "creating-an-approval-log-for-ai-assisted-work",
+  "title": "Create an Approval Log for AI-Assisted Work",
+  "description": "Build a proportionate approval record for AI-assisted work, with source links, review checks, version details, decisions and follow-up owners.",
+  "ogDescription": "A practical record for reviewing AI-assisted work.",
+  "alt": "AI approval workflow decision record graphic",
+  "brand": "tech",
+  "date": "2026-10-12",
+  "modifiedDate": "2026-10-12",
+  "tags": ["AI Workflows", "Review Process"],
+  "ctaLine": "Should approval logs keep every prompt or only key inputs?",
+  "contentGraphic": {
+    "label": "A reviewable AI work record",
+    "rows": [
+      { "condition": "Task and source", "action": "Record context and references" },
+      { "condition": "Review checks", "action": "Note evidence and limitations" },
+      { "condition": "Human decision", "action": "Approve, revise or hold" },
+      { "condition": "Exact version", "action": "Link the approved artifact" }
+    ]
+  }
+}

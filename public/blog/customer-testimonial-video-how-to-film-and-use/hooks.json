@@ -1,0 +1,10 @@
+{
+  "hook": "Ask for a real story, not a scripted compliment.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "3",
+    "label": "Open interview questions"
+  },
+  "discussion_question": "What would you ask a customer on camera?",
+  "hashtags": "#CustomerStories #SmallBusiness #VideoTips"
+}

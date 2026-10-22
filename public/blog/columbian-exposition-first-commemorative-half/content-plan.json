@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "editorialProfile": "coin-history",
+  "slug": "columbian-exposition-first-commemorative-half",
+  "title": "How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair",
+  "brand": "silver",
+  "readerPromise": "How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair",
+  "reel": {
+    "topic": "How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair",
+    "promise": "A coin authorized before the fair opened",
+    "sectionIds": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "Congress authorizes a first commemorative issue",
+      "readerQuestion": "What was the coin intended to mark?",
+      "purpose": "Connect the first U.S. Mint commemorative coin to the 1893 Chicago exposition, while keeping the 1892 authorization date clear.",
+      "keyPoints": [
+        "Connect the first U.S. Mint commemorative coin to the 1893 Chicago exposition, while keeping the 1892 authorization date clear.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CE1",
+        "CE6"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s02",
+      "heading": "The law tied coin proceeds to fair preparation",
+      "readerQuestion": "What limits and conditions did Congress set?",
+      "purpose": "Describe the five-million coin limit, use of subsidiary silver, eligible labor and material expenses, and funding conditions.",
+      "keyPoints": [
+        "Describe the five-million coin limit, use of subsidiary silver, eligible labor and material expenses, and funding conditions.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CE2",
+        "CE5"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s03",
+      "heading": "Barber and Morgan gave the two sides different stories",
+      "readerQuestion": "What do the Columbus and Santa Maria designs show?",
+      "purpose": "Identify each credited designer and the documented obverse and reverse details.",
+      "keyPoints": [
+        "Identify each credited designer and the documented obverse and reverse details.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CE3",
+        "CE7"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s04",
+      "heading": "The 1892 date records work before the fair opened",
+      "readerQuestion": "Why was the coin authorized before 1893?",
+      "purpose": "Explain the preparation timeline and the act’s stated financial purpose without presenting the coin as an admission ticket.",
+      "keyPoints": [
+        "Explain the preparation timeline and the act’s stated financial purpose without presenting the coin as an admission ticket.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CE4",
+        "CE8"
+      ],
+      "targetWords": 180
+    }
+  ]
+}

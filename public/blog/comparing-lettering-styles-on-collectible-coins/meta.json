@@ -1,0 +1,27 @@
+{
+  "slug": "comparing-lettering-styles-on-collectible-coins",
+  "title": "Compare Lettering Styles on Collectible Coins",
+  "description": "Compare coin lettering through shape, spacing and placement, keep photographs consistent, and separate visible observations from attribution or value claims.",
+  "alt": "Magnifier compares lettering across two coins",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "On a coin, do you notice the lettering or the main image first?",
+  "contentGraphic": {
+    "label": "Compare Lettering Styles on Collectible Coins",
+    "rows": [
+      {
+        "condition": "Describe the letters before naming a style",
+        "action": "Compare spacing and placement"
+      },
+      {
+        "condition": "Separate appearance from production claims",
+        "action": "Keep a comparison sheet"
+      }
+    ]
+  }
+}

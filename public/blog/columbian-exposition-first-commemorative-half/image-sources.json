@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "slug": "columbian-exposition-first-commemorative-half",
+  "assets": [
+    {
+      "path": "images/coin-evidence.jpg",
+      "sha256": "fd9ab60dbd1849c1c1a28069a0e5d37da8352cafe9b65fd0682cf8ead0208695",
+      "source": "artwork-source/wikimedia-commons-1892-columbian-proof-half-dollar.jpg",
+      "sourceSha256": "bb57b079372a0a0095adcb51821422067c1b77faa080c2bfe7e85260c37ae204",
+      "sourceType": "Wikimedia Commons",
+      "assetId": null,
+      "label": "1892 Columbian proof half dollar, obverse and reverse; Wikimedia Commons public domain",
+      "role": "coin evidence",
+      "crop": null,
+      "page": "https://commons.wikimedia.org/wiki/File:1892_Columbian_proof_half_dollar.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "Professional Coin Grading Service / Wikimedia Commons"
+    }
+  ]
+}

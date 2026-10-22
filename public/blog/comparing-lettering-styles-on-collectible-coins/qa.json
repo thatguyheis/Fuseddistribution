@@ -1,0 +1,25 @@
+{
+  "slug": "comparing-lettering-styles-on-collectible-coins",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.357637+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "3a38a0af2df090418cae5dea857451b1d0b12ca4879a8e717f25de6bddb76ce3",
+    "index.html": "375fcaa9f528820d85290ce9b2f8d59576c5c589bb3e284cbb7f878e56631d4c",
+    "meta.json": "aa308ca948be69958c0b95264e3a3bcf93ed40b1a05f3a6a377e40dab67b240b",
+    "research.json": "52f7dd2fbda540fc4426d913a8567325781164b4f6eb488f79957fc8803ce52f",
+    "hero.jpg": "bcab3fb53911f38b2c59ad7fbfc234629be18a21c22808b583e9c87eb842349d",
+    "photo-post.jpg": "c8fca98ed4064e77875521559984fc6d9b439b38abc6732e61be153f5e915834",
+    "reel-script.md": "8f12fb52c346d52e960ab70ef88a340b4a9a8f03d1d1d37435ba20caecdcb3df",
+    "reel-data.md": "6eeec286cd6e31d9037f38f578956efd8101e25af5b661b3847875da7bdf2188",
+    "social-copy.json": "2b3c43cbf624868c71689cae30e192b850959dfde927cdec70b805b014fa24d4"
+  }
+}

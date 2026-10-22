@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.524268+00:00",
+  "heroSha256": "9036f4ace3afc4761348d1b1bebee5ce05169d13be5845e6077f2a63be0834be",
+  "subject": "Exception route branches toward assigned owner",
+  "purpose": "exception conceptual explanation",
+  "hook": "A stalled task needs an owner.",
+  "keyWords": [
+    "creating",
+    "a",
+    "small"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-2.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

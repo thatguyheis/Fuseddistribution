@@ -1,0 +1,27 @@
+{
+  "slug": "creating-an-approval-log-for-ai-assisted-work",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-12T15:42:00.873Z",
+  "review_notes": [
+    "Read the full article and source review. Claims distinguish voluntary NIST guidance from this practical example and state that a content hash does not establish accuracy or reviewer authority.",
+    "Reviewed the generated candidate and rejected its duplicated sections, mandatory-checkpoint claims, due-diligence guarantee and unsupported contact CTA; none were used.",
+    "The package records October 8 as its planned date and October 12 as its actual publication date.",
+    "Visually reviewed the rendered hero and square companion; both match the topic and brand palette.",
+    "Deterministic local QA passes at 90 with no blockers. Reel narration preflight passes at 107.1 estimated seconds; the final spoken question matches the displayed ten-word question.",
+    "Social captions follow the tech reserve CTA slot and use the topic question; the reel is labeled opinion with a qualified, supported stance."
+  ],
+  "artifactSha256": {
+    "verified.md": "982049f585b3ea91505fbab94999508ab9e8c9069e45febdc545ae9e71b16d21",
+    "index.html": "5033c0f1be8ac5c3eadc52bc710284a234e7db812b1afdf07a342aeba21a7c61",
+    "meta.json": "d9701f7c90cabf02bb1f8f96260b7681e78f02accd122777308c33705f7d8d33",
+    "research.json": "4752261111418db95982eec7e508f99a142c4d7ddb73c287fa3cf12a49a4df2e",
+    "hero.jpg": "add2e86489dba6845332003dd798ad5eb297003c6210c925244240c3bc1591d1",
+    "photo-post.jpg": "e6610c422cbc13c731e815e417cc00c2b19f15a1bf8771f79b7f56c4a940c34c",
+    "reel-script.md": "4e6bbbfa21b6fbdd5eaf7aa8466e38979439118b04683de49035b6beddd22953",
+    "reel-data.md": "21424c22c17e6babb23a00b656210c322542129636e50781726cd92c55848df3",
+    "social-copy.json": "5e3cce7453751eb4723cef689f35b846f51a381a84cb9f904a6bb8a38ecd5f31"
+  }
+}

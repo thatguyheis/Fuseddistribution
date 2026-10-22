@@ -1,0 +1,27 @@
+{
+  "slug": "creating-a-small-business-exception-handling-log",
+  "title": "Create a Small Business Exception Handling Log",
+  "description": "Create an exception log with an owner, next action and completion evidence so interrupted business tasks can be resolved without hidden retries or duplicates.",
+  "alt": "Exception route branches toward assigned owner",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "When a task stalls, is the harder problem finding the cause or finding its owner?",
+  "contentGraphic": {
+    "label": "Create a Small Business Exception Handling Log",
+    "rows": [
+      {
+        "condition": "Record the minimum useful details",
+        "action": "Choose a safe next action"
+      },
+      {
+        "condition": "Close the case with evidence",
+        "action": "Use recurring exceptions to improve the process"
+      }
+    ]
+  }
+}
