@@ -1,0 +1,28 @@
+{
+  "slug": "silver-premium-calculator-how-to-build-one",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:46:42.691087+00:00",
+  "review_notes": [
+    "Owner reviewed full article and companions and NIST unit source; corrected lot quantity, tax scope and full-precision rounding.",
+    "Executable numerical cases verify quantity1/2,tax,fee,discount,zero inputs and32.12percent example.",
+    "Owner viewed actual hero and square JPEGs; QA-local passes;7segments128plannedseconds, actualaudio/video pending.",
+    "September14 actual publication with August14 queue provenance."
+  ],
+  "artifactSha256": {
+    "verified.md": "5d0b7e1b114c603c5e35c6f7cf985c6ee2eb1d592958fcb6ecf45fb5f2061124",
+    "index.html": "a42a653787fe62a7ab64e4012f2f4ef0c1f3489102ffb05bc1c58ee58eb8d502",
+    "hero.jpg": "8577e32c329bd22ddae9c31835bb5dc64bf0270688b7b96393518265f8cd6bf1",
+    "social-copy.json": "0aea8ff028f84f3d9854a959b723cefecdbcea1aadaa656ccd3e0ff5fa0a90c2",
+    "hero.svg": "6b9552acb9e13e6a269f971b90742f747ba1a3c9695188438be1c6161f2b07bd",
+    "reel-data.md": "922b8fcc8ae18f364c5cb7463c26cb9b42c6db878b16ddbe1f03f8560bb10590",
+    "photo-post.svg": "0b9ca3d2680c68d8714fc80f32da090e10068888e53ddac9535e8e5fedc0d2bf",
+    "research.json": "5de7e5d9e28c5c5290432b0c3c681d81a2d49a8dd84f58e83df4204bc1fa9184",
+    "hooks.json": "6922dc945331a4164a28385be2d0f1fc23c083192989cc93e4199e19d423bc46",
+    "reel-script.md": "e0e38ba3db33283e4d5d70ac73914fd1e6f01d225850525b72eca680c2341c4e",
+    "photo-post.jpg": "4a35b4e12942d5f1fb88dffcb547893385c22340c815f979b627b4d3cf2326b7",
+    "meta.json": "2728de53f1e5bb82a1411c0afe9df41b85baa83eb11a021bff0c73e64a6a350c"
+  }
+}

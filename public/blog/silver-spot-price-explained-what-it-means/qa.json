@@ -1,6 +1,32 @@
 {
   "slug": "silver-spot-price-explained-what-it-means",
-  "score": 92,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T10:32:13.466290+00:00",
+  "review_notes": [
+    "Full correction reviewed against three primary institutional sources; original June 28 date preserved.",
+    "Removed fabricated inventory claims, universal ticker behavior and unsupported forecasts.",
+    "Hypothetical premium calculations checked with both equivalent formulas and delivery costs separated.",
+    "Viewed hero and photo artwork; all numbers explicitly hypothetical. Reviewed synchronized eight-segment reel script with complete numerical setup, 117-second estimate.",
+    "Local QA and parsed reel validation pass; final render review remains downstream."
+  ],
+  "sources": [
+    "https://www.lbma.org.uk/market-standards/about-loco-london",
+    "https://www.lbma.org.uk/prices-and-data/lbma-precious-metal-prices",
+    "https://www.cmegroup.com/markets/metals/precious/silver.contract.html"
+  ],
+  "artifact_sha256": {
+    "verified.md": "8e8e15036718667a92bf2150d23d9287c10e86ceed9abb54745d464acdc72aea",
+    "index.html": "f0ee406ac5f37330760bc8e85c58cbc282e58a21a57568004f12028d7e663161",
+    "meta.json": "c9697ee202e4ce0c034be4af2f407ce5ef64357551a4b9f1d7fd65a0325427b8",
+    "hooks.json": "4e136c8be91843efcd73a5c719bce452492ae2048f5a6ae66dbc07efd36c9f91",
+    "hero.jpg": "aaf9a48c2249884196dc019ffe1d841265a78ace1c266b0e171a2c06ea0d3be7",
+    "photo-post.jpg": "a00c0cb09e8cc7bb26988b56f045cc263d9c348661c23f0b178f9933b0cf6a9e",
+    "reel-data.md": "60a7d94137ec13849885e0f96beaa60d831168cc6a2e41ae9f4ece5addf182cc",
+    "reel-script.md": "9453573206208411848dce841c246138fd9a666127f8404ad040d7f57046c8f9",
+    "social-copy.json": "206fc4aca0ff4c1ed7e552f054e37d207dd89aa229ddc182b973f3b5020e1e70",
+    "research.json": "7a6649f2d2b3c3fe74b9a6d60062ea7f8e3a6e5ecca713352abff4ff50585b4d"
+  }
 }

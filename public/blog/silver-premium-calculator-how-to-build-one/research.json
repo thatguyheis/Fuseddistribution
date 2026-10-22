@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "url": "https://www.nist.gov/pml/owm/metric-si/unit-conversion/precious-metals-conversion-information"
+    }
+  ],
+  "reviewedAt": "2026-09-14",
+  "examples": "Hypothetical numerical examples independently checked; quantity always multiplies fine content, lot price never multiplied twice."
+}

@@ -1,96 +1,78 @@
 # Reel Script: silver-spot-price-explained-what-it-means
 format: long-form
-segments: 10
-target-duration: 187s
+segments: 8
+target-duration: 117s
 
 ---
 
 ## HOOK
 
-**Visual:** Topic intro shot
-**Duration:** 7s minimum
+**Visual:** Supporting article visual
+**Duration:** 5s minimum
 
-Narration: Spot price reveals the benchmark; premiums show the real buying opportunity.
+Narration: A silver spot quote is only the starting point for a purchase.
 
 ---
 
-## OVERLAY: SILVER SPOT PRICE IS THE
+## OVERLAY: IDENTIFY THE QUOTE
 
 **Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Duration:** 19s minimum
 
-Narration: Silver spot price is the live wholesale quote for one troy ounce of pure silver, settled in USA dollars and updated every few seconds during market hours. It is the number every dealer, refiner, and ETF uses as the starting point for pricing physical metal.
+Narration: Silver spot price describes a current market quotation for silver for prompt settlement. It gives a reference point for valuing metal, but the number on a screen is incomplete without its source, timestamp, currency and unit. A quote per troy ounce is different from a quote per kilogram. Identify the quote before comparing it with a product price.
 
 ---
 
-## STAT: 5,000 OUNCE DELIVERIES TRADE NEARLY HOURS
+## OVERLAY: SEPARATE THE DAILY BENCHMARK
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 18s minimum
 
-Narration: It is a rolling consensus built from three sources running in parallel. The first source is the COMEX silver futures market in New York, where contracts for 5,000-ounce deliveries trade nearly 24 hours a day. The front-month futures price, minus a small carry adjustment, is what most USA dealers quote as spot.
+Narration: The LBMA Silver Price is a named benchmark established through an auction starting at noon London time, independently operated and administered by ICE Benchmark Administration. LBMA states that these benchmark prices are not published on weekends or UK bank holidays. That schedule describes this benchmark, not the trading hours of every silver instrument or dealer feed.
 
 ---
 
-## OVERLAY: SPOT IS USUALLY QUOTED AS
+## OVERLAY: DISTINGUISH BUYING AND SELLING
 
 **Visual:** Supporting article visual
-**Duration:** 16s minimum
+**Duration:** 17s minimum
 
-Narration: Spot is usually quoted as a single number, but underneath it sits a bid and an ask. Bid is what a buyer will pay you. Ask is what a seller wants from you.
-
----
-
-## OVERLAY: THE SPREAD BETWEEN WHAT YOU
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: The spread between what you pay and what you can sell for is the real cost of ownership, and it is the single number you should track when comparing dealers. Premiums and spot are two separate markets. Premium reflects physical silver supply at your specific weight and form.
+Narration: A bid is a quoted buying price; an ask is a quoted selling price. Identify whose quotation you are reading and which product it covers. A market bid for wholesale silver is not a guaranteed buyback offer for your particular coin. Compare the same product, quantity and cost basis across sellers.
 
 ---
 
-## OVERLAY: SIX YEARS IN A ROW
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: Six years in a row of more silver consumed than mined and recycled. Aboveground stockpiles in London and COMEX vaults have been drawn down to fill the gap, and at some point that buffer empties. Demand is no longer driven by jewelry and silverware.
-
----
-
-## STAT: 14,947 TONNES OF PHYSICAL SILVER IN
+## OVERLAY: CALCULATE WITH MATCHING UNITS
 
 **Visual:** Supporting article visual
 **Duration:** 22s minimum
 
-Narration: The iShares Silver Trust (SLV) holds roughly 14,947 tonnes of physical silver in trust as of mid-2026, the largest silver ETF in the world . When SLV sees net inflows, the trust buys physical bars in London to back new shares. That buying pressure shows up in spot within hours.
+Narration: Here is a hypothetical example, not a current price. A bar containing ten troy ounces of silver costs 360 dollars before extra charges, while the reference price is 32 dollars per ounce. Ten times 32 is 320 dollars of reference value. The total premium is 40 dollars, or four dollars per ounce. Divide the product price by its silver ounces before subtracting the reference price per ounce.
 
 ---
 
-## STAT: 10 OUNCE BAR AT PERCENT PREMIUM
+## OVERLAY: INCLUDE DELIVERY COSTS
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 17s minimum
 
-Narration: A 10-ounce bar at 12.5 percent premium beats a one-ounce coin at 18 percent premium for pure stacking value. The coin may still win on liquidity and recognizability when you sell. A dealer who pays spot minus 50 cents on sellback offers a tighter round-trip than one paying spot minus $2.
+Narration: If shipping adds 15 dollars in that example, the delivered total becomes 375 dollars, or 37 dollars and 50 cents per ounce. Compared with the same 32 dollar reference, the delivered difference is five dollars and 50 cents per ounce. Label delivery costs separately from the product premium so the comparison remains clear.
 
 ---
 
-## OVERLAY: WE ARE HAPPY TO BE
+## OVERLAY: RECORD THE RESALE TERMS
 
 **Visual:** Supporting article visual
-**Duration:** 26s minimum
+**Duration:** 13s minimum
 
-Narration: We are happy to be one of those three quotes, and if our number does not win on that math, you should buy elsewhere. Make the comparison, then place the order, then watch how spot and premium move independently over the next thirty days. That habit, repeated, is what turns a curious reader into a confident silver buyer.
+Narration: Obtain a comparable buyback quote if available and identify deductions. Treat an unavailable quote as unknown rather than assuming a resale value. A complete comparison makes the source, product, costs and timing explicit before you make a purchasing decision.
 
 ---
 
 ## QUESTION
 
-**Visual:** Question card
-**Duration:** 8s minimum
+**Visual:** Supporting article visual
+**Duration:** 6s minimum
 
-Text: How will understanding spot and premium change your silver buying?
+Text: Which cost do you check after the silver spot quote?
 Subtext: COMMENT BELOW
-Narration: How will understanding spot and premium change your silver buying? Follow for more silver news.
+Narration: Which cost do you check after the silver spot quote? Follow for more silver news.

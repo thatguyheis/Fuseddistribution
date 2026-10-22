@@ -1,90 +1,73 @@
-# Silver Spot Price Explained What It Means
+# Silver Spot Price Explained: What It Means
 
-Silver spot price is the live wholesale quote for one troy ounce of pure silver, settled in US dollars and updated every few seconds during market hours. It is the number every dealer, refiner, and ETF uses as the starting point for pricing physical metal. When you see $32.40 flashing on a price ticker, that is spot. What you actually pay at checkout is spot plus a premium, and learning to read both numbers is the first skill of buying silver well.
+**Correction dated September 8, 2026:** This guide corrects the premium calculation and removes unsupported pricing, market timing and inventory claims.
 
-We stock coins, rounds, and bars at Fused Distribution, and the question we get most often is some version of "why is your price higher than the spot price I saw on Google?" The short answer: spot is a paper benchmark for 1,000-ounce good delivery bars traded between banks. You are buying a one-ounce coin you can hold. The gap between those two things is the premium, and it has a logic you can predict once you understand where spot comes from.
+Silver spot price describes a current market quotation for silver for prompt settlement. It gives a reference point for valuing metal, but the number on a screen is incomplete without its source, timestamp, currency and unit. A quote per troy ounce is different from a quote per kilogram. A dealer's buying price is different from its selling price. A daily benchmark is different from a feed that changes during trading.
 
-## Where the Silver Spot Price Actually Comes From
+For someone comparing coins or bars, the practical question is how that reference relates to the exact product and delivered price. Start by identifying the quote. Then calculate the price per ounce of silver and examine the premium, delivery costs and resale terms. All dollar figures in the examples below are hypothetical teaching examples, not current prices or offers.
 
-Spot is not one number set by one exchange. It is a rolling consensus built from three sources running in parallel.
+## What the Spot Quote Represents
 
-The first source is the COMEX silver futures market in New York, where contracts for 5,000-ounce deliveries trade nearly 24 hours a day. The front-month futures price, minus a small carry adjustment, is what most US dealers quote as spot.
+Spot describes the timing of a transaction rather than a particular coin or retail package. LBMA describes precious metals trading for immediate delivery as spot and distinguishes it from transactions for a future date. Its Loco London market involves direct transactions between counterparties, with bullion held in London underpinning trading. That is a different arrangement from ordering a small bar for delivery to your home. [LBMA: About Loco London](https://www.lbma.org.uk/market-standards/about-loco-london).
 
-The second source is the over-the-counter London market, where bullion banks trade unallocated silver in 1,000-ounce good delivery bars. This market sets the global wholesale tone.
+Avoid treating the word spot as a promise that every seller will deliver any silver product at that price. The quotation may refer to a particular market, delivery location or settlement arrangement. A retail listing also specifies product form, quantity, condition and seller terms. Those differences matter even when both screens show prices in dollars per ounce.
 
-The third source is the LBMA Silver Price, a daily benchmark fix used to value ETF holdings, settle industrial contracts, and price refinery sales. The LBMA Silver Price is set daily at 12:00 noon London time in US dollars per troy ounce via 30-second auction rounds administered by ICE Benchmark Administration (Source: LBMA). That fix is what your jeweler, your solar panel manufacturer, and BlackRock all reference when they need one official daily number.
+Keep weight definitions consistent. Our [guide to silver purity marks](/blog/silver-purity-marks-what-999-9999-means/) explains the distinction between fineness and silver content. If the listing explicitly states its fine silver content, use that content for the comparison. Do not apply purity a second time to a quantity already expressed as fine silver. If the listing gives only gross weight and fineness, establish the actual silver content before comparing it with a quote for silver. An unexplained ounce figure is a reason to check the product specification.
 
-When you check spot on Kitco, APMEX, or our site, you are seeing a feed pulled from COMEX futures, adjusted in real time. Refresh the page during US market hours and the number moves. Check it on a Sunday and it sits frozen at Friday's close.
+## How Market Trading and the Daily Benchmark Differ
 
-## Spot Price vs. Bid, Ask, and What You Pay
+There is no single retail checkout price mandated for every silver seller. Buyers and sellers form market prices through trading and quotations. London transactions and exchange traded futures are important parts of that market, but they describe different arrangements. CME describes its silver futures market as providing price discovery and risk management. A futures quotation belongs to a specified contract; it should not be relabeled a spot quotation without explaining the data provider's method. [CME: Silver futures](https://www.cmegroup.com/markets/metals/precious/silver.contract.html).
 
-Spot is usually quoted as a single number, but underneath it sits a bid and an ask.
+The LBMA Silver Price is a named benchmark established through an auction starting at noon London time, independently operated and administered by ICE Benchmark Administration. LBMA states that these benchmark prices are not published on weekends or UK bank holidays. That publication schedule describes this benchmark; it does not establish the trading hours of every silver instrument or dealer feed. [LBMA: Precious metal prices](https://www.lbma.org.uk/prices-and-data/lbma-precious-metal-prices).
 
-Bid is what a buyer will pay you. Ask is what a seller wants from you. The midpoint between them is what gets displayed as "spot." On a calm trading day, the bid-ask spread on silver futures runs about half a cent per ounce. During a panic move or thin overnight session, it can blow out to five or ten cents.
+When two websites disagree, first check whether you are comparing the same thing. One may show a daily benchmark, another a delayed market feed, and another a dealer quote. Record the timestamps and labels before deciding that either is wrong. A historical benchmark is useful for its stated purpose, but it is not automatically an executable price for a purchase now.
 
-Your retail price as a buyer works like this: dealer ask price equals spot plus premium. A one-ounce American Silver Eagle at $32 spot typically lists between $36 and $42 depending on supply. That $4 to $10 gap covers minting, distribution, dealer margin, and demand pressure.
+## Read Bid, Ask and Premium Separately
 
-Your sellback price works in reverse: dealer bid equals spot minus a small discount, or sometimes spot plus a smaller premium if the coin is in hot demand. The spread between what you pay and what you can sell for is the real cost of ownership, and it is the single number you should track when comparing dealers.
+A bid is a quoted buying price; an ask is a quoted selling price. Always identify whose quotation you are reading and which product it covers. A market bid for wholesale silver is not a guaranteed buyback offer for your particular coin. Similarly, a displayed midpoint or last trade is not necessarily the price at which a dealer will sell to you.
 
-## Why Premiums Move Even When Spot Does Not
+A retail premium is the amount by which a product's price exceeds the chosen metal reference value. For a consistent comparison, use the same reference, time and cost basis across offers. Do not compare one seller's delivered total with another seller's headline price before shipping. Also check whether the displayed price requires a particular quantity or payment method.
 
-Premiums and spot are two separate markets. Spot reflects paper silver. Premium reflects physical silver supply at your specific weight and form.
+Premiums can differ across product forms and sellers. The arithmetic alone does not tell you whether a higher premium will be recovered when selling. Ask for a current buyback quotation for the same product and quantity if resale matters to your decision. Record any conditions, including inspection, shipping and payment deductions. A buying price today is evidence about today's offer, not a promise about future demand.
 
-In March 2020, spot crashed to $12 while physical Silver Eagle premiums shot above $10 per coin. Spot said silver was cheap. The physical market said the opposite. Mints ran out, dealers went on allocation, and buyers paid double the wholesale number to get coins in hand.
+## Calculate the Premium With Matching Units
 
-Three forces drive premium independently of spot:
+Let P be the product price before separately identified extra costs, W the product's fine silver content in troy ounces, and S the selected silver reference price per troy ounce. The metal reference value is W multiplied by S. The premium per ounce is P divided by W, minus S. Equivalently, subtract the total metal reference value from P, then divide the difference by W.
 
-1. Mint capacity. The US Mint, Royal Canadian Mint, and Perth Mint can only stamp so many coins per week. When demand spikes, premiums climb until supply catches up.
-2. Product form. Generic one-ounce rounds carry the lowest premium, often $2 to $3 over spot. Government coins like Eagles and Maples carry $4 to $8. Fractional coins, like one-tenth ounce, can carry 30 percent premiums because minting cost per ounce is higher.
-3. Dealer inventory depth. A dealer holding 50,000 ounces can price tighter than one waiting on a wholesaler shipment.
+For a hypothetical bar containing ten troy ounces of silver, suppose the product price is $360 and the reference price is $32 per ounce. The reference value is ten times $32, or $320. The product premium is $40 in total, which is $4 per ounce. Divide $4 by $32 and multiply by 100 to express the premium as 12.5 percent of the reference price.
 
-We recommend tracking premium as a percentage of spot, not a dollar amount. A $4 premium on $32 silver is 12.5 percent. A $4 premium on $20 silver is 20 percent. Same dollar cost, very different value.
+Do not subtract the single ounce reference price from the whole bar price and then divide by ten. That mixes a per ounce figure with a total and produces the wrong result. If shipping adds $15 with no other charges in this example, the delivered total becomes $375, or $37.50 per ounce. Its difference from the same $32 reference is $5.50 per ounce. Label that as a delivered cost comparison so it is not confused with the product premium before shipping.
 
-## Why Spot Has Been Rising
+## Compare the Purchase With a Resale Offer
 
-Silver futures posted year-to-date gains capping a stellar year for precious metals in 2025 (Source: CNBC), and the underlying supply picture explains why.
+The premium is only one part of evaluating an offer. Our [guide to graded silver premiums](/blog/graded-silver-coins-worth-paying-premium-or-not/) discusses why a collectible price requires evidence beyond metal value. Consider another hypothetical case: the ten ounce bar costs $375 delivered, while a buyer currently offers $335 for it with no other deductions. The immediate difference is $40, or $4 per ounce. If returning the bar would cost another $10, the net proceeds would instead be $325 and the difference would be $50.
 
-The global silver market is forecast to record a sixth consecutive annual deficit in 2026 (Source: The Silver Institute). Six years in a row of more silver consumed than mined and recycled. Aboveground stockpiles in London and COMEX vaults have been drawn down to fill the gap, and at some point that buffer empties.
+This comparison does not forecast a loss or gain at a later date. Both metal prices and product demand can change, and the buyer can change its quote. It simply makes the transaction costs visible at the moment you are comparing offers. Write down whether the bid is firm, how long it remains valid and what conditions could change the final payment.
 
-Demand is no longer driven by jewelry and silverware. Industrial applications account for more than half of total silver demand, led by solar PV, EVs and electronics (Source: The Silver Institute). Every solar panel uses about 20 grams of silver paste. Every EV uses roughly twice the silver of a combustion car. These buyers do not care about premium or sentiment. They need ounces to keep factories running, and they buy at whatever spot prints.
+A lower product premium can still come with inconvenient minimum quantities or expensive delivery. A recognizable coin can have a higher asking price without a proportionately higher buyback bid. Compare the exact item and actual terms rather than assuming a product category always offers the best outcome. The useful decision is based on costs you can verify.
 
-That structural demand is why the gold-to-silver ratio in mid-2026 sits well below its modern historical average near 65:1, signaling silver outperformance (Source: GoldPrice.org). When the ratio compresses, it means silver is moving up faster than gold. Many buyers watch this ratio as a timing tool: ratio above 80 favors buying silver, ratio below 50 favors rotating into gold.
+## A Quote Checklist You Can Reuse
 
-## How ETFs and Paper Silver Interact With Spot
+### Record the Reference
 
-Paper silver products amplify what spot does, and they tell you what big money is thinking.
+Write down the provider, timestamp, currency, unit and quote type. Identify whether the figure is spot, a futures contract, a benchmark, a bid or an ask. Keep a dated record so later comparisons use the original inputs.
 
-The iShares Silver Trust (SLV) holds roughly 14,947 tonnes of physical silver in trust as of mid-2026, the largest silver ETF in the world (Source: BlackRock iShares). When SLV sees net inflows, the trust buys physical bars in London to back new shares. That buying pressure shows up in spot within hours.
+### Record the Product
 
-You can use SLV flows as a sentiment gauge. Heavy inflows over a one-week window often precede spot rallies. Heavy outflows often precede pullbacks. The data is published daily on the iShares site, free to read, and faster to interpret than most paid newsletters.
+Confirm fine silver content, product identity, quantity, condition and the price for your payment method. Separate the product total from shipping and other stated charges. Use the final delivered total when comparing what you would actually pay.
 
-Paper silver is not the same as owning metal. If you want exposure to spot price movement only, SLV works. If you want a hedge against currency failure, dealer fraud, or system stress, you need physical in your hand. We will not pretend they are interchangeable.
+### Check the Arithmetic
 
-## Reading a Dealer Listing Without Getting Confused
+Divide the product total by fine silver ounces before subtracting the reference price per ounce. Show the total premium and the per ounce premium with their units. Recalculate when either the reference or the seller's price changes.
 
-Here is the exact checklist we use when comparing prices across dealers, and what you should use too.
+### Check the Exit Terms
 
-Look up current spot first. Pull it from a free source like the LBMA Precious Metal Prices page or any major dealer ticker (Source: LBMA Precious Metal Prices). Write it down.
-
-Calculate premium per ounce. Take the listed price, subtract spot, divide by the number of ounces in the product. A 10-ounce bar listed at $360 with $32 spot has a $40 premium, or $4 per ounce, or 12.5 percent.
-
-Compare premium per ounce across products. A 10-ounce bar at 12.5 percent premium beats a one-ounce coin at 18 percent premium for pure stacking value. The coin may still win on liquidity and recognizability when you sell.
-
-Check the dealer's buyback price. A dealer who pays spot minus 50 cents on sellback offers a tighter round-trip than one paying spot minus $2. Round-trip cost is the real measure of dealer fairness.
-
-Watch quantity break pricing. Most dealers drop premium by 25 to 50 cents per ounce at the 20-coin tube, 100-coin monster box, and 500-ounce thresholds. Buying one coin at a time is the most expensive way to stack.
-
-Time your buys to the US session. Spot is most liquid between 8am and 1pm Eastern. Premiums often tighten during these hours because dealers can hedge new sales immediately on COMEX.
-
-## Your Next Step
-
-Pull up spot right now on any free ticker. Pick one product you have been considering, calculate the premium per ounce as a percentage, and write it down. Do the same for two other dealers selling the same product. The cheapest premium with the tightest buyback is where your first order should go. We are happy to be one of those three quotes, and if our number does not win on that math, you should buy elsewhere. Make the comparison, then place the order, then watch how spot and premium move independently over the next thirty days. That habit, repeated, is what turns a curious reader into a confident silver buyer.
+Obtain a comparable buyback quote if available and identify deductions. Treat an unavailable quote as unknown rather than assuming a resale value. A complete comparison makes the source, product, costs and timing explicit before you make a purchasing decision.
 
 ## Related
 
-- [Junk Silver Coins: Your Pre-1965 US Silver Investment](/blog/junk-silver-coins-guide-pre-1965-us-silver/)
-- [1 oz Silver Coins vs. 10 oz Silver Bars: Buying Guide](/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/)
-- [How to Read Silver Spot Price Charts: A Buyer's Guide](/blog/how-to-read-silver-spot-price-charts/)
+- [Read silver purity marks](/blog/silver-purity-marks-what-999-9999-means/)
+- [Compare graded silver coin premiums](/blog/graded-silver-coins-worth-paying-premium-or-not/)
+- [Review silver storage choices](/blog/best-silver-storage-options-for-investors/)
 
-Read next: [Junk Silver Coins: Your Pre-1965 US Silver Investment](/blog/junk-silver-coins-guide-pre-1965-us-silver/)
-
+Read next: [Read silver purity marks](/blog/silver-purity-marks-what-999-9999-means/)

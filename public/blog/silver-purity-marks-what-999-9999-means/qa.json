@@ -1,0 +1,31 @@
+{
+  "slug": "silver-purity-marks-what-999-9999-means",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T07:26:29.347343+00:00",
+  "review_notes": [
+    "Reviewed full article against named Mint products and London Assay Office scope; hypothetical equal gross mass arithmetic checked.",
+    "Reviewed both artwork images, metadata, social copy and supported checklist markup.",
+    "Repaired incomplete numerical narration comparison, spelled decimal fineness for speech and synchronized 116 second estimated reel data.",
+    "Deterministic QA passes; rendered reel requires separate audiovisual review."
+  ],
+  "sources": [
+    "https://www.mint.ca/en/shop/bullion-products/2021-1-ounce-9999-pure-silver-maple-leaf-bullion-coin",
+    "https://www.usmint.gov/american-eagle-2025-one-ounce-silver-uncirculated-coin-25EG.html",
+    "https://www.assayofficelondon.co.uk/hallmarking/what-is-a-hallmark"
+  ],
+  "artifact_sha256": {
+    "verified.md": "d3edb9dfa4127d5333cf33ca2ebc487861a5d502847341b6509540bf65601516",
+    "index.html": "d6671cf996f742f3d0e03cf1141af3863367c1dc3957003d83d97ba90db625f9",
+    "meta.json": "1308e4f01b269d094adc2bbcf5f780a6be4aafae1733b93cbc50b37211f7bc15",
+    "hooks.json": "db431f0f848afd1a1b329a919b26555b5ec1d85bff04190660d40fc73ef22619",
+    "hero.jpg": "d992c840c24e9a2b89c27bc8e3d993a0702e59a36c0a2344a8887fb02bfee3f4",
+    "photo-post.jpg": "f53840a5b302f4071e2e8768dd11660e6288eb13cd0d4a481b13bf9fecb10b83",
+    "reel-data.md": "d25b632f8c6b21451888783a1c6d3dc0321cf756ea85b70cfa27a06dd1ab8b13",
+    "reel-script.md": "f10e67ea6fdb6990b155aa9e79f70bd5aaa7ea0926d7eecc8b58a5df69d10c05",
+    "social-copy.json": "271f621b0f7d3716fb92667c9ace110b3f807a8405cf93c8b53e5c028b39fa59",
+    "research.json": "56a166683c5e7fd7899d15d77e9bc4e41a9b433162e8ce2f30eb2975f7972179"
+  }
+}

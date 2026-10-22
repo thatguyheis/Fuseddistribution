@@ -1,6 +1,30 @@
 {
   "slug": "silver-supply-deficit-sixth-consecutive-year-2026",
-  "score": 88,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T20:37:22.455862+00:00",
+  "review_notes": [
+    "Reviewed complete 1299-word correction and metadata, with July 25 original publication date and September 7 correction date.",
+    "Source-backed dated forecast replaces unsupported statistics, price targets, inventory and advice claims.",
+    "Retired unsupported mixed-unit chart to preserved incident evidence; rebuilt and visually inspected new hero and square artwork.",
+    "Reviewed complete 113-second estimated reel narration and synchronized data. Social copy reviewed. Rendered media requires separate release checks.",
+    "Substantive coverage now includes the pending deficit explainer topic; equivalence remains pending live verification."
+  ],
+  "sources": [
+    "https://silverinstitute.org/elevated-lease-rates-regional-liquidity-tightness-and-robust-investor-interest-resulted-in-record-silver-prices-in-2025/"
+  ],
+  "artifact_sha256": {
+    "verified.md": "35c6cdf62677cdabf632ee0be584d5773d3c34ad1624dbabba60f8b03122a0b1",
+    "index.html": "2c9080d1ec12a7a7fd9f5eaeda85a624ee9d728baf867fd96783917285826a9e",
+    "meta.json": "de335eb1ebdcb7113c23b662fb8f0d78777f004c8212b6a0a75ddffbb8452cfc",
+    "hooks.json": "3bc11477f10c26be6a1f78e257cf5e27ccbf8e19e0263433508f486f025da103",
+    "hero.jpg": "d79dd462197c85aaf363990fbe1eb92036c46cf72444706906e067c8981cd43c",
+    "photo-post.jpg": "2096b90ee6c53ee3e4ea67cf4481bdb559bceeaaf468f05fe6c495e4b5d5741e",
+    "reel-data.md": "d9c374afbc557183987c71fd5bd80600367be78aa2ecf380df13b7509476eb05",
+    "reel-script.md": "7dfacdf3df4d445bc240a030d47e551e79bcaec616566c3716c8bc01c91801c2",
+    "social-copy.json": "77fe213ba0495ca8cf2d49faf4792719cd77270253ed984371c06a6a35a1409b",
+    "research.json": "45a55b898dc10fe38d9b53e083871db87718eb2d34744f1afb7d6ebdb86ab15a"
+  }
 }

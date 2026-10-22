@@ -1,0 +1,27 @@
+{
+  "slug": "silver-recycling-from-industrial-scrap-explained",
+  "title": "Silver Recycling From Industrial Scrap Explained",
+  "description": "Read industrial silver recycling claims by separating scrap weight, silver content and recovered output, with source period and measurement boundaries intact.",
+  "alt": "Scrap collection separates from recovered silver",
+  "brand": "silver",
+  "date": "2026-10-09",
+  "modifiedDate": "2026-10-09",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "When reading a recycling claim, do you check the material or the measured quantity first?",
+  "contentGraphic": {
+    "label": "Silver Recycling From Industrial Scrap Explained",
+    "rows": [
+      {
+        "condition": "Identify the industrial scrap being discussed",
+        "action": "Separate scrap mass from silver content"
+      },
+      {
+        "condition": "Follow the recovery boundary in the report",
+        "action": "Keep recycling claims within the evidence"
+      }
+    ]
+  }
+}

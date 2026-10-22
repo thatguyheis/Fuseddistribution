@@ -1,10 +1,10 @@
 {
-  "hook": "75% drop in new silver discoveries signals a looming deficit.",
-  "hook_type": "contrarian_stat",
+  "hook": "A deficit forecast is not a price timetable.",
+  "hook_type": "practical",
   "key_stat": {
-    "value": "75%",
-    "label": "in the last decade"
+    "value": "2026",
+    "label": "Forecast year"
   },
-  "discussion_question": "Considering all this, what\u2019s your biggest concern about the projected silver supply deficit?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "What do you check before trusting a market forecast?",
+  "hashtags": "#Silver #Bullion"
 }

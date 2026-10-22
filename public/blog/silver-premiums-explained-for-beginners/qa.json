@@ -1,6 +1,31 @@
 {
   "slug": "silver-premiums-explained-for-beginners",
-  "score": 92,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-23T22:46:09Z",
+  "review_notes": [
+    "Reviewed the 820-word replacement article against the two official CFTC advisories. Spot reference units, written quote comparison, buyback questions, transaction costs and price risk stay within the cited sources.",
+    "Independently checked the explicitly hypothetical example: $200 reference value, $230 product quote, $30 premium at 15%; a separate $10 delivery charge gives a $240 delivered total, 20% above reference. The figures are not presented as market norms or current prices.",
+    "Removed unsupported inventory and service claims, typical premium percentages, the prior arithmetic error, and blanket grading or insurance claims.",
+    "Reviewed generated article HTML, original August 27, 2026 publication date, September 23 modification date, 157-character description, six-word image alt, internal links, related links, source links, Pexels figure credit and root-relative image path.",
+    "Inspected the new price-neutral hero, square social image, stat card and search card. The page has a rendered topic checklist, a credited silver photo and a truthful pending editorial-release panel; the old hosted reel is not embedded.",
+    "Parsed the matching seven-segment narration and passed production local QA. Reel release remains held pending fresh media and release review."
+  ],
+  "sources": [
+    "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html",
+    "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/gold_is_no_safe_investment.htm"
+  ],
+  "artifactSha256": {
+    "verified.md": "8eca7217996b1deaa7eab12434316af16c9965fdd6e8e5f4441bcfedfe075792",
+    "index.html": "9238aaa1438ea5a2d27f02c0dcb051ba35f814f0fb63c689f3b53cdf639cb675",
+    "meta.json": "fee41415953b8aa08eb41b93fabab89d3656a377e3da92ad9526d75c06d713a9",
+    "research.json": "9f7f1fbddd919320ad0b3220088bcd97187664b8aca1f4b0902697356ff3b6a1",
+    "hero.jpg": "30e2a218afff325a5e1614c404c83eb68043c83696697e90e93315b215b4269b",
+    "photo-post.jpg": "f84c8d278e1ea77e99820c990332579482ba231ef8afaf7f38bdaf6734910858",
+    "reel-script.md": "28f5e2ec4aaf5183be7af9596c238fb80f6574bb4a24c4c3277196b73bed93fc",
+    "reel-data.md": "53cc13178ef0569922971b0e771621d71ea19bb0a7aefd1d74b3a618b64e45bb",
+    "social-copy.json": "59f691b031897f5623598ffd27084f2a4e45be317809046f2d35fbcebdb4522c"
+  }
 }

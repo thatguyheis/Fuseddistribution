@@ -1,0 +1,30 @@
+{
+  "slug": "silver-storage-vault-vs-home-storage",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T21:12:46.019006+00:00",
+  "review_notes": [
+    "Reviewed full replacement article, metadata, source statements and social copy.",
+    "Removed unsupported insurance limits, blanket protection claims and unverified Fused vault-service offer.",
+    "Hero and square artwork visually inspected. Complete narration and overlays reviewed, source attribution repaired and data synchronized.",
+    "Deterministic QA passed before final narration adjustment; repeated before deployment. Rendered reel requires separate audiovisual release review."
+  ],
+  "sources": [
+    "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html",
+    "https://www.usmint.gov/learn/collecting-basics/caring-for-your-coin-collection"
+  ],
+  "artifact_sha256": {
+    "verified.md": "922a1697d323093954b07e0abbb129cbf28290ddeb9f899a8e61d4d2b30c0add",
+    "index.html": "502f2c1b1e20a080a0be3e31932d35fdec1e639672d1e5c0c6064c019f4986b5",
+    "meta.json": "25832713fd9dea84ee11146fc59e5529396a25d2872e33a9175a3d9fb3f6231b",
+    "hooks.json": "41163e9257c3190e471ae817f200dd137dc19aebe27bc2a378dbf9839f39ce48",
+    "hero.jpg": "c4aba35fa736740ca79469950bf5219c05db5b7c117c88d29a740af635f7d5c8",
+    "photo-post.jpg": "acfb7bc612d69a6910cb64e9c1d22abb1b9072540f3223fe50560609a7033232",
+    "reel-data.md": "38bd4318d2a18a91cd1575811d0c99aa10c8dc9acb105958ab833da654e4c616",
+    "reel-script.md": "3ece889d40e7813c57ba12124ce65a2b1606154c8a72ba2ffc0e2c77eda0c97a",
+    "social-copy.json": "499c0ac0b736ecc88cbf817e05e2201cdbaf8ddebf549ac73857bf42f07f38d0",
+    "research.json": "1e5319d9810f29da950a51d6398a8077597c5110601be291600deeebf661f35e"
+  }
+}

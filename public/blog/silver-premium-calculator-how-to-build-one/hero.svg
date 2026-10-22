@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Silver premium calculator workflow</title><desc id="desc">A three stage diagram showing units, delivered cost, and comparison in a silver premium calculator.</desc>
+<rect width="1200" height="630" rx="28" fill="#07141c"/><circle cx="1080" cy="78" r="150" fill="#0d2731"/><path d="M0 520L280 430l230 70 290-130 400 90v170H0z" fill="#0b2029"/>
+<text x="72" y="92" fill="#58d6ff" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4">FUSED DISTRIBUTION / PRACTICAL GUIDE</text>
+<text x="72" y="170" fill="#ecf8fb" font-family="Arial,sans-serif" font-size="52" font-weight="800">BUILD A SILVER</text><text x="72" y="228" fill="#ecf8fb" font-family="Arial,sans-serif" font-size="52" font-weight="800">PREMIUM CALCULATOR</text>
+<text x="74" y="274" fill="#a8cbd2" font-family="Arial,sans-serif" font-size="22">Compare delivered cost per fine troy ounce.</text>
+<g font-family="Arial,sans-serif"><rect x="72" y="350" width="320" height="170" rx="18" fill="#102f39" stroke="#58d6ff" stroke-width="2"/><rect x="440" y="350" width="320" height="170" rx="18" fill="#102f39" stroke="#58d6ff" stroke-width="2"/><rect x="808" y="350" width="320" height="170" rx="18" fill="#102f39" stroke="#58d6ff" stroke-width="2"/>
+<text x="104" y="398" fill="#9bf0d1" font-size="17" font-weight="700" letter-spacing="2">01 / UNITS</text><text x="104" y="445" fill="#fff" font-size="27" font-weight="700">FINE TROY OUNCES</text><text x="104" y="480" fill="#a8cbd2" font-size="18">31.1034768 g = 1 oz t</text>
+<text x="472" y="398" fill="#9bf0d1" font-size="17" font-weight="700" letter-spacing="2">02 / INPUTS</text><text x="472" y="445" fill="#fff" font-size="27" font-weight="700">DELIVERED COST</text><text x="472" y="480" fill="#a8cbd2" font-size="18">Price + charges + tax - discount</text>
+<text x="840" y="398" fill="#9bf0d1" font-size="17" font-weight="700" letter-spacing="2">03 / CHECK</text><text x="840" y="445" fill="#fff" font-size="27" font-weight="700">COMPARE</text><text x="840" y="480" fill="#a8cbd2" font-size="18">Cost per ounce vs spot</text></g>
+<path d="M402 435h28m0 0-12-10m12 10-12 10M770 435h28m0 0-12-10m12 10-12 10" stroke="#58d6ff" stroke-width="4" fill="none"/>
+</svg>

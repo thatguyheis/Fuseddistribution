@@ -1,105 +1,69 @@
 # Reel Script: silver-premiums-explained-for-beginners
 format: long-form
-segments: 11
-target-duration: 188s
+segments: 7
+target-duration: 120s
 
 ---
 
 ## HOOK
 
-**Visual:** Topic intro shot
-**Duration:** 3s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: Silver premiums can reach 28 percent for coins.
-
----
-
-## OVERLAY: SILVER PREMIUMS EXTRA CHARGES
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: Silver premiums are the extra charges dealers add to the spot price of silver. These premiums cover the actual costs of buying, storing, insuring, and handling the metal before it reaches you. Understanding these markups is crucial for you to calculate the true cost of your silver investment. This information removes the confusion about where your money goes. We stock silver, and we recommend you know these costs before you buy.
+Narration: A low silver premium is only one part of a quote. Before comparing offers, identify the actual product and verify its fine silver content in troy ounces. Write down the spot reference, currency and quote time. This gives your comparison a clear basis instead of mixing different quantities or prices.
 
 ---
 
-## OVERLAY: CHANGES BASED SPECIFIC TYPE
+## OVERLAY: MATCH THE UNITS
 
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: It changes based on the specific type of silver you choose and the level of service you require from the dealer. You must grasp this structure before making a purchase. The spot price is the price silver trades at on the open market. The retail price is the final amount you receive. The premium is the space between those two figures.
-
----
-
-## OVERLAY: MAKES COST CALCULATION SIMPLER
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: This makes the cost calculation simpler for you. Coins require premiums related to minting processes and grading services. Grading adds substantial fees to the total. Storage costs also apply when dealing with individual coins. These factors increase the final price you pay for the coin. Understanding this distinction helps you choose the right investment. Some investments demand more layers of cost.
+Narration: Multiply the fine silver ounces by the spot reference to calculate a reference metal value. Subtract that value from the product quote to find the dollar premium. Divide the premium by the reference value for the percentage, then multiply by one hundred. State which charges the product quote includes.
 
 ---
 
-## OVERLAY: INSURANCE PHYSICAL ASSETS ALSO
+## OVERLAY: CHECK THE ARITHMETIC
 
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: Insurance for physical assets also contributes to the final retail price. These expenses are all factored into the final price you see. The supply and demand ratio plays a role in determining premiums. High demand can increase the cost associated with physical storage. This is why transparency in pricing is vital for you. It shows you exactly what you are paying for every silver unit.
-
----
-
-## STAT: $20 SPOT PRICE SILVER RETAIL
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: This comparison shows a significant difference in the cost of ownership. Another comparison shows the impact on the final price. When comparing the spot price of silver is $20. The retail price for a bar might be $230. The retail price for a coin might be $260. This demonstrates how the premium percentages translate into real dollar amounts for your investment.
+Narration: Here is a hypothetical example, not a current offer. Ten fine ounces at a twenty dollar spot reference have a two hundred dollar reference value. A two hundred thirty dollar product quote carries a thirty dollar premium. That is fifteen percent of the reference value, not one dollar.
 
 ---
 
-## OVERLAY: TRANSACTION FEES SPECIFIC COMPONENT
+## OVERLAY: SEPARATE DELIVERY COST
 
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: Transaction fees are a specific component of the premium you must understand. These fees cover the administrative work of processing your order. They are a direct cost of doing business with a dealer. These fees are often small but they add up when you buy a large quantity. For more on this, see Johnson Matthee Silver Bars Guide. We recommend you ask dealers for a breakdown of all charges upfront.
-
----
-
-## OVERLAY: EXAMPLE STORAGE FEES LARGE
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: For example, storage fees for a large quantity of silver can add up quickly. You need to factor these into your long term investment plan. Consider the security level of storage offered by the dealer. This is part of the total cost you are paying for your asset. The premiums you see are not static. They react to the broader market environment.
+Narration: If a separate ten dollar delivery charge applies in that example, the delivered total becomes two hundred forty dollars. Keep this total separate from the product premium. Add each stated charge only once. An included fee should not appear again as an extra estimate on your comparison worksheet.
 
 ---
 
-## STAT: $20 PRICE SPOT SILVER TOTAL
+## OVERLAY: IDENTIFY THE PRODUCTS
 
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: You do not need to know every single detail to start investing. You need a clear steps for calculating your purchase. Focus on the total cost of ownership, not just the initial price tag. Add the spot price, the premium, transaction fees, insurance, and storage. For example, if the spot silver is $20. The total cost is $20 plus $1 premium.
+Narration: Use the same quantity and payment method when collecting quotes. Record the maker, condition and whether the product is ordinary bullion or a collectible edition. Do not assume every coin needs grading or every bar has the lowest premium. Ask for the actual terms and mark missing charges as unresolved.
 
 ---
 
-## OVERLAY: ASK FULL BREAKDOWN ALL
+## OVERLAY: CHECK THE RESALE OFFER
 
-**Visual:** Supporting article visual
-**Duration:** 14s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Narration: Ask for a full breakdown of all premiums and fees. Decide between silver bars for simplicity or coins for numismatic value. Use the formula to see the true ownership price. We recommend you review our current pricing structure before placing any order.
+Narration: Ask for a current buyback offer for the exact product, including its expiry and deductions. A purchase premium does not reveal your future selling price. Record recurring storage or insurance separately, and confirm which charges apply to your arrangement. Neither the calculation nor a low premium removes silver price risk.
 
 ---
 
 ## QUESTION
 
-**Visual:** Question card
-**Duration:** 5s minimum
+**Visual:** Original premium calculation worksheet
+**Duration:** 17s minimum
 
-Text: Know these costs before you invest in silver?
+Text: Product premium or delivered cost?
 Subtext: COMMENT BELOW
-Narration: Know these costs before you invest in silver? Follow for more silver news.
+Narration: Which figure would you check first: the product premium or the complete delivered cost? Keep both on your worksheet, along with the quote time and unresolved terms. Save the original offers so you can review your calculation later. A clear comparison supports better questions; it does not promise a return.

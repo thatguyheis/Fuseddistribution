@@ -1,10 +1,10 @@
 {
-  "hook": "Spot price reveals the benchmark; premiums show the real buying opportunity.",
-  "hook_type": "immediate_value",
+  "hook": "A silver spot quote is only the starting point for a purchase.",
+  "hook_type": "practical",
   "key_stat": {
-    "value": "$32.40",
-    "label": "flashing on a price"
+    "value": "$4",
+    "label": "Premium per ounce in a hypothetical example"
   },
-  "discussion_question": "How will understanding spot and premium change your silver buying decisions?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "Which cost do you check after the silver spot quote?",
+  "hashtags": "#Silver #Bullion"
 }

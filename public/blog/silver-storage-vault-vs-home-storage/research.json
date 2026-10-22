@@ -1,0 +1,15 @@
+{
+  "stats": [],
+  "sources": [
+    {
+      "source_name": "CFTC",
+      "source_url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html",
+      "supports": "Potential storage, insurance and administrative costs."
+    },
+    {
+      "source_name": "U.S. Mint",
+      "source_url": "https://www.usmint.gov/learn/collecting-basics/caring-for-your-coin-collection",
+      "supports": "Handling by edges, avoiding acid and PVC, protective holders and avoiding cleaning."
+    }
+  ]
+}

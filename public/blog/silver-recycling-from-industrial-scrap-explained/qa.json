@@ -1,0 +1,24 @@
+{
+  "slug": "silver-recycling-from-industrial-scrap-explained",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T16:24:02.585928+00:00",
+  "review_notes": [
+    "Reviewed complete article and companion narration against cited primary source context. Original advice and hypothetical examples are identified; no invented statistics, historical data presented as current, or investment promises.",
+    "Inspected the actual hero and square exports: subject specific explanatory diagrams, readable hooks, no material clipping.",
+    "Article QA, narration duration preflight and production parser passed. Human review narration was expanded from article-supported text after the first duration check failed. Final video production and review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "f8c5d30276623c5ed4af9428db68f8d9462d551260a585aa005a3afbb6c264d9",
+    "index.html": "9625281f588a4e742cacc67d93a841dacd309547628fd9547db64da1c18d8792",
+    "meta.json": "4c2fefd8e973eac4f6c3efe549e58be1bc86d3af38abf6dd85db99265a548551",
+    "research.json": "4133c1e1a4cbacc0369204c0309c196568e5746930e3a71745a218b16e018d91",
+    "hero.jpg": "005723284f89fb4aa8b4ee8f0c8b63fe426eee2e01cf76c5ed73e576a02a8ff7",
+    "photo-post.jpg": "89a92cad6b6d0dc64b9a76b354a4143dd7c4b1db62bccde68c8ba8ceedfee9a2",
+    "reel-script.md": "b6a557a8bbbd2bd31d9cdcf92c49178fb68ce97cd3a1526c334ac876a1989001",
+    "reel-data.md": "481de14c3dd408d02b5ff917ff730b3ada595c78a96450d07512997ad00f240b",
+    "social-copy.json": "24b013c282187139728e7ab90e03f59e9c3d1295476a06e974fe6a709edc7332"
+  }
+}

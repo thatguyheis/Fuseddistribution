@@ -1,0 +1,10 @@
+{
+  "hook": "Silver purity and silver weight answer different questions.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "99.99%",
+    "label": "Silver fineness expressed as .9999"
+  },
+  "discussion_question": "Which detail do you check first on a silver quote?",
+  "hashtags": "#Silver #Bullion"
+}

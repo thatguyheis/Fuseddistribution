@@ -1,0 +1,18 @@
+{
+  "slug": "silver-premium-calculator-how-to-build-one",
+  "blog_url": "https://fuseddistribution.com/blog/silver-premium-calculator-how-to-build-one/",
+  "topic": "building a silver premium calculator",
+  "reel": {
+    "facebook": "A silver premium calculator works when every quote uses the same unit. Track fine troy ounces, delivered charges, spot input, and price basis, then test the formulas with hypothetical numbers.",
+    "instagram": "Build a silver premium calculator with five checks:\n\n• convert fine grams to troy ounces\n• add delivered purchase charges\n• divide cost by fine ounces\n• compare with a labeled spot input\n• test the row by hand\n\n#Silver #PreciousMetals #PersonalFinance",
+    "linkedin": "A useful silver premium calculator makes the unit visible. Record fine troy ounces, every delivered charge, the spot price source, and whether a quote is per item or lot total. Then verify one row manually before comparing offers.",
+    "x": "A silver premium calculator should show delivered cost per fine troy ounce. Track units, charges, spot input, and price basis, then test the formula with hypothetical arithmetic."
+  },
+  "photo": {
+    "facebook": "The calculator is only as reliable as its inputs. Keep the quote, units, charges, source, and date together.",
+    "instagram": "Same unit. Full cost. Clear source. Manual check.\n\n#Silver #SpreadsheetTips",
+    "linkedin": "Comparing silver quotes starts with consistent units and a complete delivered cost. A small spreadsheet can expose the assumptions behind each number."
+  },
+  "hashtags": "#Silver #PreciousMetals #PersonalFinance",
+  "discussion_question": "Which calculator input is easiest to overlook?"
+}
