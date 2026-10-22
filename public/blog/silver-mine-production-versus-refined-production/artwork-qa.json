@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.501343+00:00",
+  "heroSha256": "0f08b1a9795f3b16bbcfe089be8de68b43a8f777ca3f58ec424511086d95a512",
+  "subject": "Mine and scrap routes reach refinery",
+  "purpose": "mine conceptual explanation",
+  "hook": "Two stages. Not two supplies.",
+  "keyWords": [
+    "silver",
+    "mine",
+    "production"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-0.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

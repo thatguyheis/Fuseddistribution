@@ -1,0 +1,25 @@
+{
+  "slug": "silver-mine-production-versus-refined-production",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.111937+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "a599ed6d02c14e2a6bb3e3c25d58eaa00784a87c095e0b38611f2dec36fccc32",
+    "index.html": "d663d48ace570da1a5b5d45af0453ab365a6b738c12ec572d9600a75eaf0636d",
+    "meta.json": "8d57cc57eda074f1c7b7a022b4d5d472e2bb1db6948f22a3dc76b35bf82c37fe",
+    "research.json": "59844d5f9b813b9e73156d4be05b19c16197427a60a9999f45ff2ea9c82eb8ce",
+    "hero.jpg": "0f08b1a9795f3b16bbcfe089be8de68b43a8f777ca3f58ec424511086d95a512",
+    "photo-post.jpg": "2d70d9d0f3592a683fa0e207a15a639deafdb4351f081033b8e4d801bd45625b",
+    "reel-script.md": "0bed64a725147aa9844ac938bf60e4d7b1b798e798b7d6fcea8989a8e721f9eb",
+    "reel-data.md": "b8aee893bb53dd01da4ccbc9cc220f721d8de7289342309ebff92bde4c9cc2ee",
+    "social-copy.json": "9859dc9f2afeff34a22ec6ce906d796bbf1b90700448a5e8a676eb249852b7fb"
+  }
+}

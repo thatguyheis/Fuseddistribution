@@ -1,0 +1,45 @@
+{
+  "status": "draft_research_complete_awaiting_transcript_approval",
+  "slug": "silver-dollar-roll-hoards-hidden-gems",
+  "auctionUrl": "https://auctions.coinssince1994.com/lotview/12243/1917768/0?page=1&scrollLocation=1063&perPage=25&lotSearch=&loc=0&sortby=1&mc_cid=993419266f&mc_eid=b51d7cdd03",
+  "auctionVerification": "Dynamic listing did not expose lot description in browser inspection. Do not assert current lot terms, quantity, contents, bid, ending time, or value. Supplied tray photo watermark says sample image from unarrived hoard.",
+  "transcriptApprovalRequired": true,
+  "claims": [
+    {
+      "claim": "Bland-Allison Act directed monthly silver purchases between $2m and $4m.",
+      "source": "https://www.usmint.gov/news/inside-the-mint/mint-history-crime-of-1873"
+    },
+    {
+      "claim": "John B. Love found 1893-S dollars in an original bag of 1894-S dollars; PCGS estimates roughly 25-30% of surviving Mint State 1893-S examples surfaced this way.",
+      "source": "https://www.pcgs.com/coinfacts/coin/1893-s-1/7226/30",
+      "scope": "Estimate attributed to PCGS; do not imply this auction lot has such coins."
+    },
+    {
+      "claim": "Redfield hoard held approximately 400,000 dollars; about 85% uncirculated; the whole lot sold for $7.3m in 1976.",
+      "source": "https://www.pcgs.com/news/a-history-of-major-us-hoards-redfield-hoard",
+      "scope": "Historical whole-lot sale, not current coin value."
+    },
+    {
+      "claim": "Treasury release changed perceived scarcity of 1903-O Morgan dollars in 1962.",
+      "source": "https://www.pcgs.com/coinfacts/category/dollars/2"
+    },
+    {
+      "claim": "Vermeule PCGS MS67 1893-S realized $2,086,875 in August 2021.",
+      "source": "https://www.pcgs.com/news/the-king-of-morgan-dollars-comes-to-greatcollections",
+      "scope": "Specific graded/pedigreed specimen only; distinct from Love bag find."
+    }
+  ],
+  "imageIds": [
+    "coin-0043",
+    "coin-0044",
+    "coin-0045",
+    "coin-0046"
+  ],
+  "creativeRules": [
+    "Use first image only as an explicitly labeled auction sample, not verified lot contents.",
+    "Keep four source photos as separate objects unless identity pairing is proven.",
+    "Do not use AI-generated coin imagery as factual evidence.",
+    "No mint, grade, value, or rarity inference from unclear imagery.",
+    "Transcript approval is required before narration, new AI imagery, or video rendering."
+  ]
+}

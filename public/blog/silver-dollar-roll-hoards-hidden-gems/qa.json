@@ -1,0 +1,29 @@
+{
+  "slug": "silver-dollar-roll-hoards-hidden-gems",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 94,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-15T21:00:49.814Z",
+  "review_notes": [
+    "Nick approved the exact transcript and local generation. Historical claims checked against the supplied claim map. The revised presentation plan replaces added bag drawings with vault illustrations; generated vault image is explicitly labeled illustrative. The auction sample watermark and closing card are preserved.",
+    "Companion reel panel only: exact same-origin MP4 URL returned HTTP 200 as video/mp4 with matching hosted bytes; the approved article text is unchanged. Owner requested immediate blog publication on 2026-10-15.",
+    "Deployment verified: canonical article, posts catalog, sitemap, and hosted same-origin reel player are live.",
+    "Storyboard card layout corrected after owner spotted a label collision; vault resized and separated from the text baseline.",
+    "Companion video refreshed after correcting the 50-second vault card; player URL cache-busted for replacement MP4 SHA-256 4071611fa2a54282400e06c6f3ef7a41c99602416a742f78e9d49b9e0a468976."
+  ],
+  "artifactSha256": {
+    "verified.md": "48550f8350122e057d74e619b3411d0f44f08343d76df44bd947ae9e261fc5bf",
+    "index.html": "8427db71bb54c78a7a574a5c637d3838cd1ab11e784a6cd70ab7673c34670e09",
+    "meta.json": "7c28376002e9e96fcd81da0b4c5d27df9d9412ff93d6dada421df7ca6a0dad5a",
+    "research.json": "64e0cdbb5679877a56552a20323b3f0702619d581e498059fd39210d699fb30d",
+    "hero.jpg": "83cd803a351daa719e6d0337b59b8392f83ccd5fbec6762d7b66c2032fcaf2f3",
+    "photo-post.jpg": "590b29c46d5e51efc4cc063e6c889bb926fce7777c32446433d7447ea52ec340",
+    "reel-script.md": "e8393450b65c3877d321334585296ffb43a857d7018dc3358e29bacb6fd71851",
+    "reel-data.md": "cef2997856b1eff4ee14b7a1cf58ec7f2cd1030282e7f7b609b38d43d4b8a7ae",
+    "social-copy.json": "274b9f0bab2af30dcb1d49dd680109fa7464d9ab33fc9b69061147974aa9a996",
+    "presentation-plan.json": "ad63981f58abd20dcac903b0a5d2966b8ffca2608a252c99984ea7b2ba9f67f2",
+    "index": "8427db71bb54c78a7a574a5c637d3838cd1ab11e784a6cd70ab7673c34670e09"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "silver-in-an-llc-vs-personal-ownership-tax-differences",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-11T08:33:31.267708+00:00",
+  "review_notes": [
+    "Reviewed article remains byte-identical to the IRS-source-reviewed candidate; individual collectible maximum and C/S corporate distinctions preserved.",
+    "Reviewed both actual raster artwork exports; corrected alt to describe classification checklist, not nonexistent silver bars.",
+    "Reviewed staged companion parser proof:8segments,zeroerrors/warnings; actualrender/audiovisual review remains pending.",
+    "Final deterministicQApass; originalAug4queue preserved, realpublicationSep11."
+  ],
+  "sourceReview": "docs/LLC-SILVER-RECOVERY-REVIEW-2026-09-08.md",
+  "sources": [
+    "https://www.irs.gov/businesses/small-businesses-self-employed/single-member-limited-liability-companies",
+    "https://www.irs.gov/instructions/i1120ssd",
+    "https://www.irs.gov/publications/p3402",
+    "https://www.irs.gov/publications/p542",
+    "https://www.irs.gov/publications/p544",
+    "https://www.irs.gov/publications/p550",
+    "https://www.irs.gov/publications/p551",
+    "https://www.irs.gov/taxtopics/tc409"
+  ],
+  "artifactSha256": {
+    "verified.md": "2d0d1092547bc6effa855429fa8f805a0398eb1fa7b38c728e65b029c786895d",
+    "index.html": "41673a65615ab2bf7d39056fab582746ad4b0085056e0dfd2070bc30f1089f6b",
+    "meta.json": "936b4ea1236528b07c0e6dbcf7a0823b784ab4fd244a04f26fb09396fc071fc9",
+    "hero.svg": "e485e27b5f4c9fa54b640d1cdcf1228e0caf518574a7c1de258309db98ca6280",
+    "hero.jpg": "30dc8cded892abbe0a4c609581950bfc92e8314dfefd2349b4ed383cf4b3efd9",
+    "photo-post.svg": "f52292e69c1b5b6b5fae30195a8d049ded5dbba906156f87c7c1ba5c3d0e225e",
+    "photo-post.jpg": "7299b05bd8f67effb3709d4ad25c04cbe5bb878f6a7f3a643da19b7fc34ca157",
+    "reel-script.md": "34de07066b535ae862e59be7102bca467611f2555fe1a165edb4b9ec7d32ca6c",
+    "reel-data.md": "8f63ce3488be9f0bdf60bebe8c217e2a2c7cef272a20f4857edcdf419062924a",
+    "hooks.json": "fd147ba974c9f1cbd79996bda2141d08c67e913f99865c78a70854136c4ee365",
+    "social-copy.json": "60c13ea98c578bdf753cac64604b5b07e15fe146a8eae86d14ba84ed16000248",
+    "research.json": "b6b748e45849e379aa31c178d8121cf45b74d94bf7d9a4e67786239853aec907"
+  }
+}

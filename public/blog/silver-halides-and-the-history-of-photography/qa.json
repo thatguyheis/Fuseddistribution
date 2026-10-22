@@ -1,0 +1,25 @@
+{
+  "slug": "silver-halides-and-the-history-of-photography",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T04:36:06.476Z",
+  "review_notes": [
+    "Read the complete article, source record, hero artwork, square derivative, social captions, reel script and companion data.",
+    "Checked the daguerreotype and salted-paper claims against Library of Congress records; checked dry-plate details against Smithsonian Institution Archives; checked material structure and preservation cautions against Library of Congress preservation guidance.",
+    "Confirmed the reel final question is spoken verbatim, tagged identity, and fits the validated 126-second script. Actual reel rendering and audiovisual release remain separate gates.",
+    "Preserved the original Oct 6 plan in research.json and set Oct 8 as the actual publication date."
+  ],
+  "artifactSha256": {
+    "verified.md": "9c626d0c2d0bcc142882b248166f43aa328b47921a6c2ec3ee71f55cabc68096",
+    "index.html": "88b6a9b202ef3698dce558fe5a649346991204ab676e433110293d3d378da1c4",
+    "meta.json": "05f56c509641b777fe42c9f99434fc100d15daab30153b91287966237b2f60fa",
+    "research.json": "18774b2967c7b4f2c82e0c95f326772b30bb493fa2b86947fce8cd518c64c17a",
+    "hero.jpg": "c17adf228b199b96e27c86956ef863a90f1b3b3230a76f86b6e992e6a882c25b",
+    "photo-post.jpg": "4c4c1f5f41279da442cac5e84b7ac3441ec38af080adb3dce2e7751b621d82f2",
+    "reel-script.md": "8585fdc3e0427e3ce3380384e4ac6c3420715f820b8d4c86bad62d900b221704",
+    "reel-data.md": "885e71fdffb431721880fd638f8e7e019287f22d8660dedbaf565694bbb29a8a",
+    "social-copy.json": "6c5d590acdb90a0d3fd8aef643b37f3cf7ee2a5a679d1bfeb6ae649c4917b73e"
+  }
+}

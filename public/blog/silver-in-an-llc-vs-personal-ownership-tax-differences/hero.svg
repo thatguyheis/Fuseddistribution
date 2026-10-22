@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#041018"/>
+  <circle cx="950" cy="90" r="270" fill="#58d6ff" opacity="0.08"/>
+  <circle cx="950" cy="90" r="190" fill="none" stroke="#58d6ff" stroke-opacity="0.22" stroke-width="2"/>
+  <circle cx="950" cy="90" r="120" fill="none" stroke="#4dffb8" stroke-opacity="0.28" stroke-width="2"/>
+  <text x="72" y="84" font-family="Arial, sans-serif" font-size="22" fill="#58d6ff" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="72" y="184" font-family="Arial, sans-serif" font-size="55" font-weight="700" fill="#ecf8fb">SILVER IN AN LLC</text>
+  <text x="72" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#ecf8fb">VS PERSONAL OWNERSHIP</text>
+  <text x="72" y="310" font-family="Arial, sans-serif" font-size="28" fill="#58d6ff">Tax classification, basis, and records</text>
+  <rect x="72" y="390" width="270" height="112" rx="16" fill="#0b202b" stroke="#58d6ff" stroke-opacity="0.65"/>
+  <text x="102" y="430" font-family="Arial, sans-serif" font-size="20" fill="#4dffb8" letter-spacing="2">OWNER</text>
+  <text x="102" y="472" font-family="Arial, sans-serif" font-size="25" fill="#ecf8fb">Personal or LLC</text>
+  <path d="M342 446 H410" stroke="#58d6ff" stroke-width="3"/>
+  <path d="M402 438 L418 446 L402 454" fill="none" stroke="#58d6ff" stroke-width="3"/>
+  <rect x="430" y="390" width="270" height="112" rx="16" fill="#0b202b" stroke="#58d6ff" stroke-opacity="0.65"/>
+  <text x="460" y="430" font-family="Arial, sans-serif" font-size="20" fill="#4dffb8" letter-spacing="2">CLASSIFY</text>
+  <text x="460" y="472" font-family="Arial, sans-serif" font-size="25" fill="#ecf8fb">Disregarded or other</text>
+  <path d="M700 446 H768" stroke="#58d6ff" stroke-width="3"/>
+  <path d="M760 438 L776 446 L760 454" fill="none" stroke="#58d6ff" stroke-width="3"/>
+  <rect x="788" y="390" width="330" height="112" rx="16" fill="#0b202b" stroke="#4dffb8" stroke-opacity="0.75"/>
+  <text x="818" y="430" font-family="Arial, sans-serif" font-size="20" fill="#4dffb8" letter-spacing="2">RECORDS</text>
+  <text x="818" y="472" font-family="Arial, sans-serif" font-size="25" fill="#ecf8fb">Basis and holding period</text>
+  <text x="72" y="574" font-family="Arial, sans-serif" font-size="20" fill="#aec6cf">General information. Review the facts before changing ownership.</text>
+</svg>

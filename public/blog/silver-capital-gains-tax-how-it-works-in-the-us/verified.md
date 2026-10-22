@@ -65,7 +65,19 @@ Simple one-lot sales are usually manageable if your records are clean. More comp
 
 If you are still building a position, it helps to set up your tracking before your first sale. That is easier than rebuilding years of receipts later after a larger exit or a sale to a [dealer](/blog/selling-silver-to-a-dealer-vs-private-sale/).
 
-Stop guessing about premiums. Reserve your silver straightforwardly at [our reserve page](/reserve/).
+Explore Fused's [reserve resources](/reserve/) for further educational material about physical silver.
+
+## Put the Rate in the Context of Your Return
+
+The collectibles rate ceiling is not a calculation of every tax that may apply to a sale. IRS Topic No. 409 separately notes that some individuals may be subject to net investment income tax. This article addresses the federal capital gains framework; it does not determine your state obligations, eligibility for an exception, or final liability. Use the instructions for the tax year of your sale and review the complete return rather than multiplying a headline percentage by a receipt total.
+
+Keep a note of which tax year you are researching. The IRS publications linked below identify their editions, and a webpage reviewed today may still present thresholds for an earlier filing year. Do not apply a table from a different year without checking the relevant instructions. For a gift, inheritance, retirement account, business holding, or other special situation, explain those facts to a qualified tax professional before relying on the ordinary investment-sale overview.
+
+## Prepare a Transaction Worksheet Before Filing
+
+Organize the record into three groups: dates and identity, acquisition and basis evidence, and sale proceeds and supporting documents. Start with the product and quantity, then connect the purchase invoice to the sale record. Keep a copy of each underlying document so a reviewer can trace a number to its source rather than treating your summary as the only evidence.
+
+If a receipt is missing or an amount is unclear, mark the issue for resolution. Do not fill the gap with today's spot price or an assumed purchase date. Keep fees identifiable so the person preparing the return can determine their appropriate treatment. If you sold only part of a holding, explain which items were sold and which remain. A clear worksheet helps expose inconsistencies before they are copied into tax software, and it gives you a specific set of questions to discuss with your preparer.
 
 **Resources for Further Information:**
 

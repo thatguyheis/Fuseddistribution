@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "segments": [
+    [
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/love-vault-discovery.jpg",
+        "type": "photo",
+        "title": "A SEALED BAG HELD MORE THAN ITS LABEL",
+        "eyebrow": "DOCUMENTED DISCOVERY / VAULT INSPIRED GRAPHIC",
+        "credit": "Concept graphic • source: PCGS CoinFacts",
+        "weight": 1.2,
+        "fit": "cover",
+        "sha256": "0f5461e094220666febaf3b491a674bdcec527120b10bee0f8034ee58d4f74cf"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/wrapped-silver-dollar-hoard-sample.jpg",
+        "type": "photo",
+        "title": "THE AUCTION IMAGE IS A SAMPLE",
+        "eyebrow": "HOARD NOT YET ARRIVED",
+        "credit": "The image watermark states this is a sample photo",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "3b7b34ecb53c350154e9ed4ed544610dd840bb12d2ea6e0a4a21908137e31c18"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/morgan-dollar-stack.jpg",
+        "type": "photo",
+        "title": "A CENTURY OF SILVER DOLLAR STORIES",
+        "eyebrow": "OWNER PHOTOGRAPH",
+        "credit": "Separate specimen • date and mint not asserted",
+        "weight": 1,
+        "sha256": "b254657e07479869a7e68474872455629b111793096768f7eaac69a3f158d77a"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/bland-allison-policy.jpg",
+        "type": "photo",
+        "title": "THE POLICY BEHIND THE DOLLARS",
+        "eyebrow": "1878 / BLAND-ALLISON ACT",
+        "credit": "U.S. Mint historical account",
+        "weight": 1.2,
+        "fullFrame": true,
+        "sha256": "779c1a6c0f8b62adbd4962fb0118f3755d2cba14f5fc1c4201c8f06383a52969"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/morgan-dollar-stack.jpg",
+        "type": "photo",
+        "title": "MILLIONS OF DOLLARS WERE STRUCK",
+        "eyebrow": "MORGAN DOLLAR DESIGN",
+        "credit": "Owner photo • not a Treasury specimen",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "b254657e07479869a7e68474872455629b111793096768f7eaac69a3f158d77a"
+      },
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/treasury-release-1903-o.jpg",
+        "type": "photo",
+        "title": "STORED COINS COULD RETURN LATER",
+        "eyebrow": "VAULTS / RELEASES",
+        "credit": "Coin supply changed across generations",
+        "weight": 1,
+        "fullFrame": true,
+        "sha256": "e156527a08938b4b86b2b0a54d34160606267c9badbddea7637b0f31a3a5178b"
+      }
+    ],
+    [
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/1887-morgan-dollar-obverse.jpg",
+        "type": "photo",
+        "title": "A DIFFERENT MORGAN DOLLAR",
+        "eyebrow": "OWNER PHOTOGRAPH / DATE VISIBLE",
+        "credit": "1887 obverse • not the 1893-S bag find",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "68fb74677224b22d9f22ea7f7ab396651a668d0479f125e1d8084f89c14e62d2"
+      },
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/love-vault-discovery.jpg",
+        "type": "photo",
+        "title": "1894-S BAG / 1893-S COINS",
+        "eyebrow": "JOHN B. LOVE DISCOVERY / VAULT INSPIRED GRAPHIC",
+        "credit": "Illustrative diagram • not the actual bag or coins",
+        "weight": 1.2,
+        "fullFrame": true,
+        "sha256": "0f5461e094220666febaf3b491a674bdcec527120b10bee0f8034ee58d4f74cf"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/morgan-dollar-reverse.jpg",
+        "type": "photo",
+        "title": "A SEPARATE REVERSE VIEW",
+        "eyebrow": "OWNER PHOTOGRAPH",
+        "credit": "Not paired with the 1887 obverse",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "857ad233bd766c8ad630e8761efb15a2aa1a74963f3e3274eb2ee5c014f2764e"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/redfield-hoard-discovery.jpg",
+        "type": "photo",
+        "title": "THE REDFIELD HOARD WAS FOUND BEHIND A WALL",
+        "eyebrow": "REDFIELD HOARD / VAULT INSPIRED GRAPHIC",
+        "credit": "Illustrative graphic • vault is not the documented discovery site",
+        "weight": 1.2,
+        "fullFrame": true,
+        "sha256": "9c8c31dcb127962bfaf8ef2b86ecd8435802900c6d1f7fe46c106c30ddf1307e"
+      },
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/generated/treasury-vault-illustration.png",
+        "type": "photo",
+        "title": "A COLLECTION STORED OUT OF SIGHT",
+        "eyebrow": "AI GENERATED / VAULT ILLUSTRATION",
+        "credit": "Atmosphere only • not the Redfield site or an archival photograph",
+        "weight": 0.85,
+        "fit": "cover",
+        "sha256": "e0ff1c148538b2fcab15eed918e45b17be308957ba73b24056e1fef74d305f7c"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/morgan-dollar-stack.jpg",
+        "type": "photo",
+        "title": "ABOUT 400,000 SILVER DOLLARS",
+        "eyebrow": "OWNER PHOTOGRAPH",
+        "credit": "Generic Morgan-dollar image • not Redfield provenance",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "b254657e07479869a7e68474872455629b111793096768f7eaac69a3f158d77a"
+      },
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/redfield-hoard-discovery.jpg",
+        "type": "photo",
+        "title": "THE WHOLE LOT SOLD IN 1976",
+        "eyebrow": "HISTORICAL AUCTION RESULT",
+        "credit": "$7.3 million for the entire hoard at that time",
+        "weight": 1,
+        "fullFrame": true,
+        "sha256": "9c8c31dcb127962bfaf8ef2b86ecd8435802900c6d1f7fe46c106c30ddf1307e"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/artwork-source/treasury-release-1903-o.jpg",
+        "type": "photo",
+        "title": "A TREASURY RELEASE CHANGED RARITY",
+        "eyebrow": "1903-O / 1962 TO 1964",
+        "credit": "Illustrative diagram • PCGS CoinFacts",
+        "weight": 1.2,
+        "fullFrame": true,
+        "sha256": "e156527a08938b4b86b2b0a54d34160606267c9badbddea7637b0f31a3a5178b"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/morgan-dollar-reverse.jpg",
+        "type": "photo",
+        "title": "A MORGAN DOLLAR REVERSE",
+        "eyebrow": "OWNER PHOTOGRAPH",
+        "credit": "Separate specimen • mint not asserted",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "857ad233bd766c8ad630e8761efb15a2aa1a74963f3e3274eb2ee5c014f2764e"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/1887-morgan-dollar-obverse.jpg",
+        "type": "photo",
+        "title": "SCARCITY CAN CHANGE WITH SUPPLY",
+        "eyebrow": "DIFFERENT SPECIMEN / 1887 DATE VISIBLE",
+        "credit": "No claim about this coin’s mint or value",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "68fb74677224b22d9f22ea7f7ab396651a668d0479f125e1d8084f89c14e62d2"
+      }
+    ],
+    [
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/wrapped-silver-dollar-hoard-sample.jpg",
+        "type": "photo",
+        "title": "THE AUCTION PHOTO IS MARKED SAMPLE",
+        "eyebrow": "NOT VERIFIED LOT CONTENTS",
+        "credit": "Hoard not yet arrived, according to the image watermark",
+        "weight": 1,
+        "fit": "contain",
+        "sha256": "3b7b34ecb53c350154e9ed4ed544610dd840bb12d2ea6e0a4a21908137e31c18"
+      },
+      {
+        "path": "public/blog/silver-dollar-roll-hoards-hidden-gems/images/final-auction-card.jpg",
+        "type": "photo",
+        "title": "SILVER DOLLAR ROLL HOARD",
+        "eyebrow": "AUCTION FEATURE",
+        "credit": "Available at auction • find the link in comments",
+        "weight": 1.4,
+        "fullFrame": true,
+        "sha256": "62be47319356419381d6c049a1edb784007dc6f8bee0d1b0a33651599a70a95e"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:49:14.228178+00:00",
+  "heroSha256": "9e8ac95ea2626e4a9652d05de0083139be43cda2f1bf7de674ac5b0af4dad2ce",
+  "subject": "Incident and reflected light at a conceptual reflective layer",
+  "purpose": "Incident and reflected light at a conceptual reflective layer",
+  "hook": "Silver reflects. Details matter.",
+  "keyWords": [
+    "silver",
+    "in",
+    "mirrors"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/sep30-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

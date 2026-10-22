@@ -1,6 +1,32 @@
 {
   "slug": "silver-mining-stocks-vs-physical-silver",
-  "score": 88,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:21:24.659075+00:00",
+  "review_notes": [
+    "Complete source grounded comparison replaces stale unsupported prices, return and allocation claims. Original July24 publication date preserved, September14 correction date.",
+    "Owner read full article and all corrected narration and viewed both actual JPEG exports. Hypothetical proceeds math reviewed; retired unsupported chart preserved outside publication.",
+    "SEC ownership and risk guidance, US Mint exact product specifications and USGS supply background verified."
+  ],
+  "artifactSha256": {
+    "verified.md": "fb573dabf4f678095210ea9f95d7593ac0382f6dfecd2c6b8acb6f84ad24ff7d",
+    "index.html": "c1cf03d254fff453b38378eb1c01a16f17c25a8b4504fefe577ab3ce0d77d0f9",
+    "hero.jpg": "a0a768fcc2a1921384df0d3ee64aa863f0f2c106ae0af579ec5bada794535c90",
+    "social-copy.json": "081b82c915b21281eb9ce55a0ad15d01f62efc0f32a09950584585ba8d048970",
+    "hero.svg": "c9690cfe83e44e295c9d3a70dd8537bfdc71a194ef479edf7f4f4e194a293a87",
+    "chart.json": "56d720ed426c5d383ef27816911e52cfccbdf0b2c9b9b26717b6531a33fc11c5",
+    "reel-data.md": "120e76db49c6f4b94e7a2e62793f17768dc318f602ff5f7b397a3e89623f6c9f",
+    "lint.json": "b63f3df3348f8f7af69157277e37ae6f49b1a6d4e3c25ecbae0f98faa479f36f",
+    "photo-post.svg": "5d51236b77f52765f77862268768309ffc444a09010861db4e57b4af2577bfaa",
+    "research.json": "68f0a02bfef0e349abc1bbe8460a690cb27e818a25ec901865b19f0161398370",
+    "hooks.json": "00cf04eeda8d7794cf75ac17e63b244ed024ab6a917d92cd3f8f14411576598a",
+    "reel-script.md": "a1e3fadbd74cc2c7016d0dbf89b6621b076cae7ad789305a9ff959c0afea6f86",
+    "gemma_draft.md": "fb573dabf4f678095210ea9f95d7593ac0382f6dfecd2c6b8acb6f84ad24ff7d",
+    "_status.json": "a8a021c1316956c2169fe180101031a1613656decd85a5564dc0e4e6f4afddd1",
+    ".qa-brain.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "photo-post.jpg": "930951c0db1508f35c51ce2e813fc055d900f52afde9c573e2f4efc8c9d706a6",
+    "meta.json": "9aeae6b6b800e8c7618c27f04a78174c207c360289718810653345841735a56f"
+  }
 }

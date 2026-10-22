@@ -3,5 +3,30 @@
   "score": 90,
   "pass": true,
   "blockers": [],
-  "mode": "deterministic-local"
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T21:47:42.632253+00:00",
+  "review_notes": [
+    "Reviewed full existing article against IRS Topic 409, Publication 550 collectibles definition, Publication 551 basis and Form 8949 guidance.",
+    "Clarified federal scope, possible NIIT and edition-specific instructions; added practical transaction worksheet guidance. Original August 1 publication date preserved.",
+    "Replaced malformed 183-second script with complete synchronized 130-second estimated narration, removing out-of-context fragments and bibliography-as-statistics.",
+    "Hero and square artwork visually inspected; metadata and social copy reviewed. Deterministic QA passed. Rendered release remains separate."
+  ],
+  "sources": [
+    "https://www.irs.gov/taxtopics/tc409",
+    "https://www.irs.gov/publications/p550",
+    "https://www.irs.gov/publications/p551",
+    "https://www.irs.gov/forms-pubs/about-form-8949"
+  ],
+  "artifact_sha256": {
+    "verified.md": "824701dee373235df20d2b1a5483215026acf4e2eea1371eeab22515cc64b92c",
+    "index.html": "183495cd4e32f9267e7cde420b65bc27df11657091c389817956e39b1acb9e8c",
+    "meta.json": "b9410f13dca10519d5365e49ab05ebad191669122847d7bbef318eb13e7c52ea",
+    "hooks.json": "966b1002581668212db4e5ff654751bdfd427fdf5098e721f6ff279f565f2567",
+    "hero.jpg": "b779fd9cd67fd71b0d0212714011839df94e8c0b6f7ca29e59da822cf33a77ad",
+    "photo-post.jpg": "f787c556315df79e639275bdef882ffec4a8a2fd2795592b4b54ee4b53b79329",
+    "reel-data.md": "11c80c29e7f7246a4ac731110d3a0ba3684dcf1162074bc60c0e192b7716e7bd",
+    "reel-script.md": "149487ced25f7da8fa50b296313cf4257309187cc41ad08e399b80ef0f8af899",
+    "social-copy.json": "367f24f7ea55685bb3e5628439f9984cdf1eb1b5d5a1ecf5d9643b3611f9fcb9",
+    "research.json": "97af759e4790231225a766169b5b5b5072977f44bc40329e19c7973a5f0aa4f7"
+  }
 }

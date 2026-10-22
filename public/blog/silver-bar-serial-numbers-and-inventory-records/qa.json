@@ -1,0 +1,32 @@
+{
+  "slug": "silver-bar-serial-numbers-and-inventory-records",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-21T19:38:00Z",
+  "review_notes": [
+    "Repaired the failed brief into a focused inventory guide. Removed claims that serial numbers prove authenticity, purity, provenance, ownership history, or value.",
+    "Verified LBMA Good Delivery technical specifications and Annex C weight list fields, plus Perth Mint counterfeit guidance, against primary source pages.",
+    "Completed topic-specific article links, process graphic, two Pexels figures, hero and square JPEG exports, social copy, and the 114 second reel script.",
+    "Production parser and local QA pass. Hero and square JPEG exports were visually inspected and readable. Release media still requires the normal renderer and release evidence.",
+    "The article is approved for the reviewed publishing delta only. No live deployment has been attempted in this pass."
+  ],
+  "artifactSha256": {
+    "verified.md": "1c17f9329ff47fd2b4321d94e20bca2b7eb5843b65210a3218732fff8b7a6d02",
+    "index.html": "6fd1c7ee4bcbb0a6491d0a53f2dad2bcbb2b91a58872f1ee4cda4ffe7b542d30",
+    "hero.jpg": "134effc73cfffc38c543733905d395d9e20b64e5cbe8f74d749d0f21faedeea2",
+    "hero.svg": "afe4f5c7005d427e2417d316abe54b45fad3a35944f83e78fde100ddcdc3692e",
+    "social-copy.json": "9fad52bfe807e0a2f5dcd3abb331e856a289d1f275ef1456e7b7f62175ab551f",
+    "reel-data.md": "a9dd2f325b6a9b900dec0fcb002678fac2d0d2853def3a2b2df5ff017a2c467a",
+    "lint.json": "468ce72b894f47e2392733e3eea1aa104d199265b6db64cdec1d65fc5e8eaeb9",
+    "photo-post.svg": "3c279fd72cc032ba8322d60a78dd438709a217dc7cc9548bff2b294ec6013a36",
+    "research.json": "dda55740c1d7380824452ae0aebf2ac383ab2dab4b1958ee170059519ba18ba2",
+    "hooks.json": "e84b482475dfdb7645a06b5b3d6735806162ed5a7a2666b2b1f8334ecced9f33",
+    "reel-script.md": "2ac5f6150d92775c6c3d1abb9c5c039c325bb0e9cd5784537f097040025d8b80",
+    "qa-preflight.json": "d40f71f48f29f549fed9a29139f61f97dc600ab51217bfa195a8ac18a50a805f",
+    "gemma_draft.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "photo-post.jpg": "b322fa4f0ded2f2f20e1d1c121156c0419ea12a24ca11629f066afc207bd81a2",
+    "meta.json": "31a6097bef590ce4475cfc50edee91f9a5a609ac36f40b5c232d68d6daeceb7d"
+  }
+}

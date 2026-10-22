@@ -1,0 +1,21 @@
+{
+  "slug": "silver-bullion-invoice-checklist-for-your-records",
+  "reviewedDate": "2026-09-24",
+  "sources": [
+    {
+      "title": "IRS Publication 551 (12/2025), Basis of Assets",
+      "url": "https://www.irs.gov/publications/p551",
+      "verifiedClaims": [
+        "IRS states that accurate records of items affecting basis must be kept.",
+        "IRS states that basis of property purchased is usually its cost, while other costs and individual situations may alter the analysis."
+      ]
+    }
+  ],
+  "scopeAndLimitations": [
+    "No bullion-specific tax classification or reporting conclusion is asserted.",
+    "Shipping, listed insurance, and seller or carrier terms are described as transaction records only, not proof of coverage.",
+    "Readers are directed to current IRS guidance and a qualified tax professional for application to their own facts."
+  ],
+  "preservedSource": "public/blog/research/2026-09-17-silver-bullion-invoice-checklist-for-your-records.md",
+  "draftRepair": "Original failure brief preserved; original draft composed for the documented invoice record-keeping intent."
+}

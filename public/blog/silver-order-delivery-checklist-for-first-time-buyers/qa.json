@@ -1,0 +1,26 @@
+{
+  "slug": "silver-order-delivery-checklist-for-first-time-buyers",
+  "score": 94,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-22T06:40:22.805889+00:00",
+  "review_notes": [
+    "Full article and companion narration reviewed. Seller-specific transit coverage is attributed to checked primary source, no universal shipment guarantee.",
+    "Original saved brief recovered without unsupported price or competitor claims; no investment recommendation or authenticity promise.",
+    "Both actual original hero exports visually reviewed in prior pass. HTML inspected for correct content date links and visible checklist markup; production QA passes.",
+    "Narration parser and103.7second preflight pass. Actual video release remains separate.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "bbec25ae23492c60a3fb3837f2d544631d74cd58e6bcf4219504b5f4f2933efd",
+    "index.html": "84f18193ee0f1dffb687d2ab386cd9f712a13e5d621f423e4b5eaf44b760e724",
+    "meta.json": "8506126cf5663c1a85c9c3523aaa754d527ada9cda666aee9b25bf33075e6d88",
+    "research.json": "5730db9117fc84e4c631de6164613d701f9d04c6d0feef644771f3e5431010dc",
+    "hero.jpg": "e165e0b579b671dc42ec0896a63cdd39d14331658eec3c7297e664f0f2be7ee2",
+    "photo-post.jpg": "6ba578a29c470714cc27a6636eb9a4baac96808a5c9f74126829b5f6e3865ab6",
+    "reel-script.md": "e42f40c41a4b5dcb026dfde121f539a4953f0e51befbe6402bdd923c7a947a8c",
+    "reel-data.md": "4d0d327b94dc680e697344a6c14957bf5cc6216c140d75120443636bc110ca62",
+    "social-copy.json": "7cac9ed1bcf511716e4c20c92949a5a96aff5b909f1143dd857f8312236c3648"
+  }
+}

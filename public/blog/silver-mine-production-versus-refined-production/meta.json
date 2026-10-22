@@ -1,0 +1,27 @@
+{
+  "slug": "silver-mine-production-versus-refined-production",
+  "title": "Silver Mine Production Versus Refined Production",
+  "description": "Separate silver mine production from refinery output, preserve the source definitions, and check for overlap before combining quantities in a supply chart.",
+  "alt": "Mine and scrap routes reach refinery",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "Do you check the production definition or the headline total first?",
+  "contentGraphic": {
+    "label": "Silver Mine Production Versus Refined Production",
+    "rows": [
+      {
+        "condition": "Follow the material before comparing production",
+        "action": "Read the mine production definition"
+      },
+      {
+        "condition": "Read the refinery production definition",
+        "action": "Test a proposed comparison for overlap"
+      }
+    ]
+  }
+}

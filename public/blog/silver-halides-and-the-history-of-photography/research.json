@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "actualPublicationDate": "2026-10-08",
+  "slug": "silver-halides-and-the-history-of-photography",
+  "status": "owner_repair_in_progress",
+  "sources": [
+    {
+      "title": "The Daguerreotype Medium",
+      "url": "https://www.loc.gov/collections/daguerreotypes/articles-and-essays/the-daguerreotype-medium/",
+      "supports": "Daguerreotype public announcement in 1839; silver-plated copper direct positive without a negative."
+    },
+    {
+      "title": "Civil War Photographs: New Technologies and New Uses",
+      "url": "https://www.loc.gov/classroom-materials/civil-war-photographs-new-technologies-and-new-uses/",
+      "supports": "Salted-paper prints used silver nitrate; wet collodion process and glass negatives."
+    },
+    {
+      "title": "There will always be a photography",
+      "url": "https://siarchives.si.edu/blog/there-will-always-be-photography",
+      "supports": "Late nineteenth-century gelatin dry plates carried silver halides in gelatin; increased plate speed and shorter exposures."
+    },
+    {
+      "title": "Information Leaflet on the Care, Handling, and Storage of Photographs",
+      "url": "https://www.loc.gov/preservation/care/photolea.html",
+      "supports": "Process chronology and silver-image vulnerability to environmental conditions."
+    }
+  ],
+  "reviewedAt": "2026-10-08",
+  "notes": "Primary institutional sources checked; avoid implying the daguerreotype, collodion negative, and gelatin silver print share one physical structure."
+}

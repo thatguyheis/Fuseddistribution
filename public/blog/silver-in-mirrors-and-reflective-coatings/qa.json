@@ -1,0 +1,25 @@
+{
+  "slug": "silver-in-mirrors-and-reflective-coatings",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.077045+00:00",
+  "review_notes": [
+    "USGS optical property and mirror application scoped to material context. No percentage, coating specification, demand forecast or scrap value.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Support-test review label centered after initial inspection; revised export inspected.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "84173262598be2d3831ef48138b59fb0bf2f7b1abbba8e65369c97645b4e2b71",
+    "index.html": "184c339ca1893f38a53c6441bc1733832185db53f10f057a1c6ee56959cde591",
+    "meta.json": "8064f4f993d7610f9d59bdf9d1fbbec32adcb36b6b7d40c61717cec2e4c52d4b",
+    "research.json": "109a83b7042e211927405bc9428dfaace1bfa5abe37798d57e341b7bb51106b7",
+    "hero.jpg": "9e8ac95ea2626e4a9652d05de0083139be43cda2f1bf7de674ac5b0af4dad2ce",
+    "photo-post.jpg": "cef294d03fdb77c69baf987a72720ebfeb63ff587a145e23a62527d29b5d5de1",
+    "reel-script.md": "9becb5aeed084b931db5f3abc0437f165d0db647cd97cfe5bad6603c1e3fdc4f",
+    "reel-data.md": "fb96c03bf57873fce0c5000bb8ff7a6672d01c3c3566b0f342d1aa55a655bf8b",
+    "social-copy.json": "30f07ee5019683e9f9b938556835a05a6bc952213e51c378cc00be19f05f9702"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "silver-halides-and-the-history-of-photography",
+  "title": "Silver Halides and the History of Photography",
+  "description": "Learn how silver compounds shaped distinct photo processes, from daguerreotypes and salted paper prints to gelatin dry plates and paper prints.",
+  "alt": "Different photo processes and material layers",
+  "brand": "silver",
+  "date": "2026-10-08",
+  "modifiedDate": "2026-10-08",
+  "tags": [
+    "Learning",
+    "History"
+  ],
+  "ctaLine": "Which process name would you want beside a photograph in your family archive, and what evidence would make you trust that identification?",
+  "contentGraphic": {
+    "label": "Different photographic processes use different structures",
+    "rows": [
+      {
+        "condition": "Daguerreotype",
+        "action": "Image on silver-coated copper"
+      },
+      {
+        "condition": "Salted paper print",
+        "action": "Silver image on paper"
+      },
+      {
+        "condition": "Gelatin dry plate",
+        "action": "Silver halides in gelatin on glass"
+      }
+    ]
+  }
+}

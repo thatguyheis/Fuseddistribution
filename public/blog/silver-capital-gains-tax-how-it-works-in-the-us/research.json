@@ -30,6 +30,13 @@
       "value": "Form 8949",
       "source_url": "https://www.irs.gov/instructions/i8949",
       "source_name": "IRS Instructions for Form 8949"
+    },
+    {
+      "claim": "Some individuals may also be subject to net investment income tax; the collectibles rate ceiling is not every tax on a sale.",
+      "source_name": "IRS Topic No. 409",
+      "source_url": "https://www.irs.gov/taxtopics/tc409"
     }
-  ]
+  ],
+  "reviewed_at": "2026-09-07T21:47:42.631560+00:00",
+  "scope": "US physical silver held for investment; publications 550 and 551 currently display 2025 editions. No 2026 income thresholds asserted."
 }

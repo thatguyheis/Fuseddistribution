@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#041018"/>
+  <circle cx="930" cy="250" r="300" fill="#58d6ff" opacity="0.08"/>
+  <circle cx="930" cy="250" r="210" fill="none" stroke="#4dffb8" stroke-opacity="0.25" stroke-width="3"/>
+  <text x="600" y="110" font-family="Arial, sans-serif" font-size="28" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED DISTRIBUTION</text>
+  <text x="600" y="230" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#ecf8fb" text-anchor="middle">SILVER OWNERSHIP</text>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="40" fill="#58d6ff" text-anchor="middle">Start with the classification</text>
+  <rect x="130" y="400" width="940" height="410" rx="24" fill="#0b202b" stroke="#58d6ff" stroke-opacity="0.55" stroke-width="3"/>
+  <text x="190" y="475" font-family="Arial, sans-serif" font-size="22" fill="#4dffb8" letter-spacing="3">CHECK THE FILE</text>
+  <line x1="190" y1="520" x2="1010" y2="520" stroke="#58d6ff" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="190" y="590" font-family="Arial, sans-serif" font-size="30" fill="#ecf8fb">Who owns the metal?</text>
+  <text x="190" y="660" font-family="Arial, sans-serif" font-size="30" fill="#ecf8fb">What is the federal classification?</text>
+  <text x="190" y="730" font-family="Arial, sans-serif" font-size="30" fill="#ecf8fb">Where are basis and lot dates recorded?</text>
+  <circle cx="970" cy="580" r="16" fill="#4dffb8"/>
+  <circle cx="970" cy="650" r="16" fill="#58d6ff"/>
+  <circle cx="970" cy="720" r="16" fill="#4dffb8"/>
+  <text x="600" y="930" font-family="Arial, sans-serif" font-size="32" fill="#ecf8fb" text-anchor="middle">Classification shapes the filing path.</text>
+  <text x="600" y="980" font-family="Arial, sans-serif" font-size="28" fill="#aec6cf" text-anchor="middle">Records support the tax result.</text>
+  <rect x="300" y="1040" width="600" height="72" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
+  <text x="600" y="1085" font-family="Arial, sans-serif" font-size="23" fill="#ecf8fb" text-anchor="middle">Read the full comparison at fuseddistribution.com</text>
+</svg>

@@ -1,9 +1,14 @@
 {
   "slug": "silver-investment-for-beginners-complete-guide",
-  "score": 87,
-  "pass": true,
+  "pass": false,
+  "score": 0,
+  "mode": "codex-editorial",
   "blockers": [
-    "social-copy.json reel.x: typo '205' should be '2025'",
-    "meta description truncated mid-word ('toda') \u2014 likely cut at 155 chars without word boundary check"
-  ]
+    "Unsupported universal 5-10 percent silver allocation and 70/30 metals split",
+    "Unverified Fused inventory and dealer experience",
+    "Categorical industrial price floor and risk-free physical ownership claims",
+    "Contradictory purchase tax assertions and overly broad IRA purity eligibility claim",
+    "Undated prices, premium ranges and storage thresholds require source review"
+  ],
+  "reviewed_at": "2026-09-08T11:09:21.964062+00:00"
 }

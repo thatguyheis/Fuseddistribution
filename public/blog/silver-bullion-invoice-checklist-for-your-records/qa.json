@@ -1,0 +1,26 @@
+{
+  "slug": "silver-bullion-invoice-checklist-for-your-records",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-24T14:25:00.000Z",
+  "review_notes": [
+    "Reviewed the repaired article against the preserved September17 invoice brief and current IRS Publication 551. It provides a transaction record checklist and does not determine bullion tax classification or reporting.",
+    "Limited basis statements to the IRS general explanation that basis for purchased property is usually cost and accurate records of basis-affecting items matter; directs readers to current IRS information and a qualified professional.",
+    "Checked original 1200x675 hero and 1080x1080 checklist graphic; text legible, topic-specific, and unclipped.",
+    "Verified all internal links resolve to current live posts, and the official IRS link matches the recorded source.",
+    "The article has 850 words and the companion has 312 narration words, 97.9 second estimated preflight. Actual speech, music rights, duration, frames, and captions remain independent release gates. No video upload or scheduling approved."
+  ],
+  "artifactSha256": {
+    "verified.md": "a170c7dfe6d1995b0c6ee72a899ba10352199798734d980cce4598001ae4dfe9",
+    "index.html": "305659c6ad5973b052bd028bbaedc1bc82efd256b762a429bdf7fae776db49bb",
+    "meta.json": "1a6f831e53c93ab3ffb00c3c847fb29ed88e98c1d60ec9ca13b4d7bbc1516e10",
+    "research.json": "cf8ed571f1b6d6598d99f52b5187777bdbdd0908621d996f63403214ec47df6b",
+    "hero.jpg": "c06c540d2acd702237131c869e2b9ccb4380c7684fe465650fa31029e74b766c",
+    "photo-post.jpg": "9048c08fe42d3f50c52a80f79e8335c27f407b9f1e31ce7ff499bbad50cd50a6",
+    "reel-script.md": "d4d214d12af1db620822c225d401d7fcc6528d86fad7169bf51345810e25e1a1",
+    "reel-data.md": "8e41e2b9c44915e52b2742c4f40f426e0da4e2d1994c3f237a1fb56c9815f212",
+    "social-copy.json": "5941b14c57a5fbc51ec849c820b14ca1c16995f77088340356da63d3c94f2878"
+  }
+}

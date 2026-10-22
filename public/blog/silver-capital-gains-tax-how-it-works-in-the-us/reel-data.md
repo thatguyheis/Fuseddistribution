@@ -1,79 +1,36 @@
 # Reel Data: silver-capital-gains-tax-how-it-works-in-the-us
 topic: silver
+focus: physical silver tax records
 format: long-form
 
-hook: Long-term physical silver gains can face a 28% federal collectibles rate.
-hook_type: contrarian_stat
+hook: Your sale records matter more than a headline rate.
+hook_type: practical
 
 ## segments
-- type: stat
-  text: 28% SILVER FEDERAL RATE HELD
-  narration: If you sell physical silver for more than your cost, the profit is generally a capital gain. The part many silver buyers miss is that long term gains on investment silver are not usually taxed like long term stock gains. Under current IRS guidance, gains from collectibles such as silver bullion and many coins can be taxed at a maximum 28 percent federal rate when held more than one year.
 - type: overlay
-  text: FEDERAL TAX PURPOSES SILVER
-  narration: For federal tax purposes, your silver sale usually starts with a simple question: did you sell for more than your adjusted basis? If yes, the difference is generally a capital gain. If you held the silver one year or less, the gain is generally short term. If you held it more than one year, the gain is generally long term.
+ text: CHECK THE COLLECTIBLES RULE
+ narration: For physical silver held as an investment, the long term collectibles rate can differ from the rates associated with stock gains. IRS guidance describes a maximum 28 percent rate for net collectibles gains. That does not mean every investor automatically pays 28 percent, and it is not a calculation of every tax that may apply. Some individuals may also face net investment income tax.
 - type: overlay
-  text: BASED WHAT ACTUALLY REALIZED
-  narration: It is based on what you actually realized from the sale minus your adjusted basis. In plain language: Sale proceeds are what you received when you sold. Adjusted basis is usually what you paid to acquire the silver, plus acquisition costs that are part of your cost basis. The difference is your gain or loss. IRS guidance on basis starts with cost.
+ text: START WITH ACTUAL SALE RECORDS
+ narration: Your gain is based on what you actually realized from the sale minus your adjusted basis. Keep the purchase invoice, relevant acquisition costs, sale proceeds, and the dates connected with the particular items. A current spot price does not replace the amount you paid. If a record is missing or an amount is unclear, identify the question rather than filling it with a guess.
 - type: overlay
-  text: BOUGHT SILVER TIME DIFFERENT
-  narration: If you bought silver over time at different prices, your tax result depends on the actual lots sold, not a rough average you guess later. This is one reason buyers who track silver prices daily still need purchase receipts and lot-level records. If you held the silver for one year or less before selling, the gain is generally short term.
-- type: stat
-  text: 28% MEANS MAXIMUM FEDERAL RATE
-  narration: This does not mean every investor automatically pays 28 percent. It means 28 percent is the maximum federal rate for that category under current IRS guidance. Your full return still depends on your broader tax picture. Most investors report capital asset sales on Form 8949 and then summarize them on Schedule D of Form 1040. IRS instructions for Form 8949 and Schedule D make that reporting path explicit.
+ text: DISTINGUISH THE HOLDING PERIOD
+ narration: Under the general holding period rule, a gain is long term when the asset was held more than one year and short term when it was held one year or less. Special circumstances can affect the analysis. Explain gifts, inherited property, retirement accounts, or business holdings to a qualified tax professional before relying on a general investment sale overview.
 - type: overlay
-  text: FILING QUESTION WHETHER HAD
-  narration: The filing question is whether you had a reportable capital gain or loss, not whether a dealer triggered a separate information report. Good records make the tax calculation much easier and give you backup if numbers are challenged later.
+ text: KEEP REPORTING OBLIGATIONS SEPARATE
+ narration: Most capital asset sales are reported through Form 8949 and summarized on Schedule D. Use the instructions for the tax year of your sale. Do not confuse a dealer's information reporting threshold with your own filing obligation. A transaction can still belong on your return when no third party form arrives. Keep your own documents available to support the amounts reported.
 - type: overlay
-  text: KEEP PURCHASE DATES QUANTITY
-  narration: Keep: Purchase dates Quantity and product type Purchase price and premiums paid Shipping, sales tax, or other acquisition costs that belong in basis Sale date and sale proceeds Dealer invoices, confirmations, and payment records This matters even more if you bought over several dates, inherited coins, received gifted silver, or sold only part of a larger stack.
+ text: ORGANIZE THREE RECORD GROUPS
+ narration: Organize dates and identity, acquisition and basis evidence, and sale proceeds with their supporting documents. Connect the purchase invoice to the sale record and explain which items were sold if you disposed of only part of a holding. Keep fees identifiable so the person preparing the return can determine their appropriate treatment. Your worksheet should lead back to the underlying evidence.
 - type: overlay
-  text: SILVER WAS HELD INVESTMENT
-  narration: If silver was held for investment, capital loss rules may help offset gains elsewhere on your return. If the silver was personal-use property instead of an investment asset, loss treatment is different. That distinction is one more reason to keep clean records from the day you buy. Simple one-lot sales are usually manageable if your records are clean.
-- type: stat
-  text: 550 SILVER INVESTMENT INCOME EXPENSES
-  narration: That is easier than rebuilding years of receipts later after a larger exit or a sale to a dealer. Reserve your silver straightforwardly at our reserve page. Resources for Further Information: IRS Publication 550: Investment Income and Expenses IRS Publication 551: Basis of Assets IRS Topic No. 409: Capital Gains and Losses IRS Form 8949: Sales and Other Dispositions of Capital Assets
+ text: REVIEW THE COMPLETE RETURN
+ narration: This is a federal tax overview, not a determination of your state obligations or final liability. Check the edition of each IRS publication and the year covered by a rate table. Review the complete return with the relevant facts instead of multiplying a headline percentage by the sale proceeds. Use the article's primary sources and discuss unresolved questions with your preparer.
 
 ## question
-text: What part of silver capital gains tax reporting feels least?
+text: Which sale record would you organize first?
 subtext: COMMENT BELOW
-narration: What part of silver capital gains tax reporting feels least? Follow for more silver news.
+narration: Which sale record would you organize first? Follow for more silver news.
 
 ## shared
-discussion_question: What part of silver capital gains tax reporting feels least?
-hashtags: #SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge
-
-## media_queries
-- segment: 0
-  query: "silver capital gains tax how it works in the US"
-  prefer: video
-- segment: 1
-  query: "silver capital gains tax how it works in the US 28 silver federal"
-  prefer: photo
-- segment: 2
-  query: "silver capital gains tax how it works in the US federal tax purposes"
-  prefer: photo
-- segment: 3
-  query: "silver capital gains tax how it works in the US based what actually"
-  prefer: photo
-- segment: 4
-  query: "silver capital gains tax how it works in the US bought silver time"
-  prefer: photo
-- segment: 5
-  query: "silver capital gains tax how it works in the US 28 means maximum"
-  prefer: photo
-- segment: 6
-  query: "silver capital gains tax how it works in the US filing question whether"
-  prefer: photo
-- segment: 7
-  query: "silver capital gains tax how it works in the US keep purchase dates"
-  prefer: photo
-- segment: 8
-  query: "silver capital gains tax how it works in the US silver was held"
-  prefer: photo
-- segment: 9
-  query: "silver capital gains tax how it works in the US 550 silver investment"
-  prefer: photo
-- segment: 10
-  query: "silver capital gains tax how it works in the US customer feedback"
-  prefer: photo
+discussion_question: Which sale record would you organize first?
+hashtags: #Silver #TaxRecords
