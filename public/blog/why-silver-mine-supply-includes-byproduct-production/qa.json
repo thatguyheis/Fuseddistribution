@@ -1,0 +1,24 @@
+{
+  "slug": "why-silver-mine-supply-includes-byproduct-production",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-10T15:39:23.920275+00:00",
+  "review_notes": [
+    "Reviewed the full article against the USGS MCS 2026 Silver summary and USGS historical compendium. U.S. geography and reporting period are explicit; no global share, forecast, price claim or investment recommendation is inferred.",
+    "Reviewed the final custom ore-to-products hero, independent square adaptation and 360x640 portrait opening preview. Flow labels, contrast, clipping and distinctive composition pass.",
+    "Topic-aligned outline validation, deterministic local article QA, script parsing and 102.8-second narration preflight pass. Encoded reel review, hosting and scheduling remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "4da1d98b2e5d37e467d446f0e352d7231dd15ba1894891ee07a5a5479db031b9",
+    "index.html": "1d62d9e9e255a8f7f37101f756fdfb56fac38b562896a40eef459201790c5656",
+    "meta.json": "90a22a92f48f7713055def6233d69697d0c6fa59267c15bed2b688bb679e0378",
+    "research.json": "f4e08bf8a491ecea3807146d5d4a9a1c9c867cb6d9c81a7bcac21824876906c3",
+    "hero.jpg": "4a9a56415eeee7c848502bb7f70588e962e3336262117155eead6ba89c13f72c",
+    "photo-post.jpg": "df4f34bd528a31a692a84e561df7c1052f0ab124c51dbb64978f0be5a25e6147",
+    "reel-script.md": "2167e3dbb3f39215c89e497450ca577baf6ed19f934d536f4a769cf85ca20e40",
+    "reel-data.md": "8e3a38ee1627a9a9fed8113aa86007f4397fd88f17e7d17ebe9333243dd1e0b8",
+    "social-copy.json": "b7e8124fbbf8ab8331908167311113004e9b498e22eade7815078e181b24e46c"
+  }
+}

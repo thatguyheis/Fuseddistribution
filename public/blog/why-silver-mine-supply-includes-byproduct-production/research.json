@@ -1,0 +1,39 @@
+{
+  "slug": "why-silver-mine-supply-includes-byproduct-production",
+  "plannedDate": "2026-10-08",
+  "actualPublicationDate": "2026-10-10",
+  "status": "source_review_and_editorial_draft_complete_unapproved",
+  "topic": "why silver mine supply includes byproduct production",
+  "sources": [
+    {
+      "title": "USGS Mineral Commodity Summaries 2026: Silver",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-silver.pdf",
+      "supports": [
+        "U.S. 2025 silver production included primary silver mines and byproduct or coproduct recovery from base and precious metal operations."
+      ],
+      "limits": "No global percentage or forecast inferred."
+    },
+    {
+      "title": "USGS Statistical Compendium: Silver",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/statistical-compendium",
+      "supports": [
+        "Historical context that silver is recovered in operations targeting copper, gold, lead or zinc."
+      ],
+      "limits": "Historical context only, not a current estimate."
+    }
+  ],
+  "outline": [
+    "Separate primary byproduct and coproduct output",
+    "Follow the ore through processing",
+    "Understand what can affect silver supply",
+    "Compare silver production reports carefully",
+    "Read the source scope before interpreting mine supply"
+  ],
+  "outlineValidation": "pending topic validator",
+  "editorialChecks": {
+    "geographyAndPeriodExplicit": true,
+    "productionStagesKeptDistinct": true,
+    "noPriceOrInvestmentPromise": true,
+    "publicationApproval": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-08T13:58:36.753375+00:00",
+  "heroSha256": "1b700fb90b73b0f1312e6c0cc740f5ee18237d6496526acd908252c6c705c239",
+  "subject": "Silver catalyst connects inputs with products",
+  "purpose": "catalyst conceptual explanation",
+  "hook": "Silver helps make it. Where does it act?",
+  "keyWords": [
+    "catalyst"
+  ],
+  "chartEvidence": "Conceptual illustration, no measured results implied",
+  "preview": ".workflow-state/recovery-2026-10-08/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

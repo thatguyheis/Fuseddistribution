@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:59:21.483263+00:00",
+  "heroSha256": "73621b3b199131103eab371de88fcb2fcad5a1aebfa7264ba8c4d7ca57cb3ad1",
+  "subject": "Two browser pages converging on one clear purpose",
+  "purpose": "Two browser pages converging on one clear purpose",
+  "hook": "Two pages. One question?",
+  "keyWords": [
+    "when",
+    "two",
+    "service"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/oct1-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

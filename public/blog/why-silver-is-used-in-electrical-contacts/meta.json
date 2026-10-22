@@ -1,0 +1,32 @@
+{
+  "slug": "why-silver-is-used-in-electrical-contacts",
+  "title": "Why Silver Is Used in Electrical Contacts",
+  "description": "Learn why silver appears in electrical contacts, how contact materials differ, and why conductivity alone cannot establish a suitable replacement component.",
+  "ogDescription": "Silver contact materials explained without replacement or price claims.",
+  "alt": "Silver contact surfaces meet between conductors",
+  "brand": "silver",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Materials",
+    "Industrial Uses"
+  ],
+  "ctaLine": "Silver as a collectible or an industrial material: which interests you more?",
+  "contentGraphic": {
+    "label": "Different silver contact claims need different evidence",
+    "rows": [
+      {
+        "condition": "Contains silver",
+        "action": "Check the material description"
+      },
+      {
+        "condition": "Uses silver contacts",
+        "action": "Identify the contact assembly"
+      },
+      {
+        "condition": "Suitable replacement",
+        "action": "Check the exact equipment specification"
+      }
+    ]
+  }
+}

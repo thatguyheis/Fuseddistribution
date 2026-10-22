@@ -1,0 +1,24 @@
+{
+  "slug": "why-coin-edges-have-different-designs",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-08T13:58:36.753375+00:00",
+  "review_notes": [
+    "Read and checked article and companion claims against the cited primary source. Original practical guidance is distinguished from source facts; no invented metrics or forecasts.",
+    "Reviewed exported topic specific hero and square graphics. Corrected the case study footer spacing and inspected its final hero.",
+    "Deterministic article QA, production script parser and narration duration preflight passed. Final speech, video rendering and encoded review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "1a9fae536feb3bace4124c793b3af5c945726385075453335d959a366102bbe5",
+    "index.html": "699ca52d82d1aad817171316ef9038e98535aa379ce4f9494d7cef1672a91d3a",
+    "meta.json": "66b0f4858abf50b3b98f13aed0db474b507fd07cc1bf17585cc8cdc01c4662c5",
+    "research.json": "b90541aa1e15da61e869f1fa2ab037b88818c537732c1bf77cbc1583b3cd6e87",
+    "hero.jpg": "ed32e25d88afd7190f1d30254aad82129292a9ded0815d9f29633116832ec320",
+    "photo-post.jpg": "7a573fd8066a9001ad3cd2c3ff832a6633e9d04ddcdcbeb1c1bf75443e0e79fe",
+    "reel-script.md": "009590fb75de31df0f7c0475afa41fa34ac4b80d48f72793c1c719830add07bf",
+    "reel-data.md": "ced6c9599bac36a2c247b698a53f9918c26c7a1ffda6c0e2f791845b93a54b74",
+    "social-copy.json": "c8096657ebff12e0002681ee989fd53159d835ec26f71f33d0c3d308476a2d2f"
+  }
+}

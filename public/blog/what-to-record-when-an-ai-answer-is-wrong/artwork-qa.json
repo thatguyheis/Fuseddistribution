@@ -1,0 +1,24 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-08T13:58:36.753375+00:00",
+  "heroSha256": "e59b7bb9addd4baf15830430dfdbfad186282fe3ac8448813207c4f04932582f",
+  "subject": "Wrong answer flows toward verified correction",
+  "purpose": "error conceptual explanation",
+  "hook": "Wrong answer? Keep the evidence.",
+  "keyWords": [
+    "error"
+  ],
+  "chartEvidence": "Conceptual illustration, no measured results implied",
+  "preview": ".workflow-state/recovery-2026-10-08/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

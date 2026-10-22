@@ -1,0 +1,25 @@
+{
+  "slug": "when-two-service-pages-answer-the-same-question",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.523388+00:00",
+  "review_notes": [
+    "Google canonical signals scoped correctly. Original content decision workflow; no promised ranking improvement.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Topic-specific diagrams checked for clipping and legibility.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "3276a8b8c41a8fbcba72c9f9ecdb25a83d5ad733d9bbd188bcccc1926021f61a",
+    "index.html": "c569c7fe1d7216d84b0173b62e459805c72ed4ab4a0dad164ed39fbb8157a854",
+    "meta.json": "4b043bbe0790f0d393fa0959d2f2f9dc77bc96c7f7fe2c89f56bcda45e990609",
+    "research.json": "f6c8b140e5dece0554a4005875e5a86741ca236de9be4851a8f1a780e4db12b1",
+    "hero.jpg": "73621b3b199131103eab371de88fcb2fcad5a1aebfa7264ba8c4d7ca57cb3ad1",
+    "photo-post.jpg": "bb082398a5077468443a8bd3eab66c25183ed1378ea331a60f4019b34346ebe9",
+    "reel-script.md": "826f9e421fb7de7a672c712aa53ca7f937d4d172bb69a9198c572659262eb2a7",
+    "reel-data.md": "3a138a794db012b65f48632df5cbfa2edf87c849428c6ae713e57a2656b913f9",
+    "social-copy.json": "70a30c8a51bf8a68b76a41ca76720bf1903546b1fe4f07eae872763ae21c5ff5"
+  }
+}

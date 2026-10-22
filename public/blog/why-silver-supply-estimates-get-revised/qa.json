@@ -1,0 +1,25 @@
+{
+  "slug": "why-silver-supply-estimates-get-revised",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.436493+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "67ba3edc42c13960398f3f6711fd5188ea030b88430b04c20522b24a94fa5156",
+    "index.html": "b2ef36430b29ee7d02047023fbc9c596b727afaa0d47b9c605cb369e99149c9c",
+    "meta.json": "168d52cf2a724fa3eb18864da8e2347e6e16b96247e9c90491527c0f9a6e09a7",
+    "research.json": "7e7ad557e227c3984e406867ea1d36de254d518eaef3131756e1869e272b96fc",
+    "hero.jpg": "75ede0cccf773ea4ca780c7ec2d1486637c52e6526677a9243eb8c5fe0f9dc24",
+    "photo-post.jpg": "316d5669a52db584ca17db6846a2fecc508bb6e51ed0d160c961c0edaafb57a1",
+    "reel-script.md": "4f8844e88537dc4ac4030395dc3f1900b6baf8c5a0e78d88ded77fe3cb1050bc",
+    "reel-data.md": "e384872a8a860599e72cf5691f8b1318a34deb9f3eb5bf389e2ca0af4fccd944",
+    "social-copy.json": "a45e0faf04b9872b1e1e3639f5d947d5c457dd519316a09aaf3a665e0aba3c1b"
+  }
+}

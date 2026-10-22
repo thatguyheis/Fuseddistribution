@@ -1,0 +1,24 @@
+{
+  "slug": "what-happens-during-coin-quality-control",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-10T15:41:16.007607+00:00",
+  "review_notes": [
+    "Reviewed the complete article against the U.S. Mint Coin Production page and quality-control background. The article distinguishes sample checks from inspection of every coin and limits process statements to the Mint example.",
+    "Reviewed the custom magnified-coin hero, square companion and 360x640 portrait preview. Stage labels, hook, contrast, clipping and variety pass.",
+    "Topic-aligned outline, deterministic local article QA, parser and 104.7-second narration preflight pass. Final encoded reel review, hosting and scheduling remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "19f3fc92c92287865bfe8cd28fdcd8c9736a4307c3c4078f968b2a47ec2c6b97",
+    "index.html": "f845a5046313f3a2649404128e419b0e2f2eb025cf734a4676558c68cd5fa039",
+    "meta.json": "91b0b582e985479912e087effc9408bf6971cb57fab02c3b8939a6a60b720f06",
+    "research.json": "51097937e5f41ac081d7307696432f032571215a50bed14fb4846917c4c8dd61",
+    "hero.jpg": "3b1f816382adeedd0e084f087f473b7ffe62623fe61a495d81612843861c1952",
+    "photo-post.jpg": "bb785416b4d8a3464aa8b3c21836b1d91cb65cdaf1283f42ed17ae0c4ac47e49",
+    "reel-script.md": "e501f30ba571ff681d778be5afb95d2de71213e285467ba2327db437b218b858",
+    "reel-data.md": "871492d8f31f3451b18598adad658b395851ecdc66a5196bac123c9bbf476ff6",
+    "social-copy.json": "7e8d1d9402c5d554511a197a8e3244641d4175ee866705f57bb6f88c103cfdd7"
+  }
+}

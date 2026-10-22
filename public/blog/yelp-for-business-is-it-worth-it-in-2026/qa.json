@@ -1,0 +1,31 @@
+{
+  "slug": "yelp-for-business-is-it-worth-it-in-2026",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T18:48:59.644658+00:00",
+  "review_notes": [
+    "Reviewed complete replacement article, metadata, social copy, and complete reel narration and overlays.",
+    "Primary sources checked for product or platform claims; no invented prices, returns, or performance statistics.",
+    "Hero image visually inspected; deterministic QA passes. Rendered reel still requires separate artifact and visual QA.",
+    "Recovery of previously failed queued topic; actual publication date retained, not backdated."
+  ],
+  "sources": [
+    "https://business.yelp.com/local-business-pricing/",
+    "https://business.yelp.com/resources/articles/things-to-know-about-advertising-on-yelp/",
+    "https://www.yelp-support.com/article/How-We-Approach-Reviews-at-Yelp?l=en_GB"
+  ],
+  "artifact_sha256": {
+    "verified.md": "901e77482e778ab0e1d64c3df8d93f4ef672cc73829be23f8abe3760a0efd3ec",
+    "index.html": "2e004083cc15d647d709aadce98768c7cbe0162747bcaeb49c6711ddbc41de6e",
+    "meta.json": "9f78afff7b8bcc03fd36d77a82e5f0e8f20750325fe5637c396e1a10952d504c",
+    "hooks.json": "1708fca0b2661b220a711c4c24812a8233719795156265aa3e4ee047ccd1d989",
+    "hero.jpg": "834706b709d08444dea0c305a8f3f5c42297d88f774c50caa704cacbc924d097",
+    "photo-post.jpg": "a377879d025e649513c23a9fca31d266c50ce86554dd1d1b5450718cd9c53520",
+    "reel-data.md": "726ef13b78a9b8a6674a4e768d93d2fb65ae40b43e314c1302712856b1f4b2ce",
+    "reel-script.md": "d89ed480c405e8f904720c3c2ce84021bb602bc2f76c91aa804b454d482554f2",
+    "social-copy.json": "6987fd558250b3ca087c4facb2b0225525e867afd8a7be4efff0f46e3cf5dd4c",
+    "research.json": "e9a933ce45d21d3a257478e4a5fa914cef73dbfa529516e45d592a0e89b84d85"
+  }
+}

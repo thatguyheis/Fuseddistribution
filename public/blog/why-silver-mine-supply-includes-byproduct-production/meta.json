@@ -1,0 +1,28 @@
+{
+  "slug": "why-silver-mine-supply-includes-byproduct-production",
+  "title": "Why Silver Mine Supply Includes Byproduct Production",
+  "description": "Understand how silver recovered alongside copper, lead, zinc or gold affects reported mine supply and how to compare production figures carefully.",
+  "ogDescription": "Why silver mine supply can depend on other metals.",
+  "alt": "Silver concentrate recovered alongside base metals",
+  "brand": "silver",
+  "date": "2026-10-10",
+  "modifiedDate": "2026-10-10",
+  "tags": [
+    "Silver Supply",
+    "Mining"
+  ],
+  "ctaLine": "Does byproduct production make silver supply harder to estimate, or does it add useful flexibility?",
+  "contentGraphic": {
+    "label": "Silver recovered with other metals",
+    "rows": [
+      {
+        "condition": "Ore contains multiple metals",
+        "action": "Processing separates outputs"
+      },
+      {
+        "condition": "Another metal is the main product",
+        "action": "Silver is also recovered"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "what-to-record-when-an-ai-answer-is-wrong",
+  "title": "What to Record When an AI Answer Is Wrong",
+  "description": "Record the original request, wrong AI answer, supporting evidence and affected work, then verify the correction before closing the issue in your business.",
+  "alt": "Wrong answer flows toward verified correction",
+  "brand": "tech",
+  "date": "2026-10-08",
+  "modifiedDate": "2026-10-08",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "When an AI draft is wrong, is finding the cause or checking the correction harder?",
+  "contentGraphic": {
+    "label": "What to Record When an AI Answer Is Wrong",
+    "rows": [
+      {
+        "condition": "Preserve the request behind the wrong answer",
+        "action": "Explain what made the AI answer wrong"
+      },
+      {
+        "condition": "Record whether the wrong answer reached anyone",
+        "action": "Verify the correction against the original request"
+      }
+    ]
+  }
+}

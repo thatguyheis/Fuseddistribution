@@ -1,0 +1,24 @@
+{
+  "slug": "what-silver-catalysts-do-in-manufacturing",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-08T13:58:36.753375+00:00",
+  "review_notes": [
+    "Read and checked article and companion claims against the cited primary source. Original practical guidance is distinguished from source facts; no invented metrics or forecasts.",
+    "Reviewed exported topic specific hero and square graphics. Corrected the case study footer spacing and inspected its final hero.",
+    "Deterministic article QA, production script parser and narration duration preflight passed. Final speech, video rendering and encoded review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "8294ada4aee4da7ace41f38b75b3066bc772f6b46f94c92daedd4eb143618bb4",
+    "index.html": "7766bb65873f9c0e5d772a1fac13f53b1efdc0cf2e18ade23a6bb1b1d1b06571",
+    "meta.json": "9e3fe407b78e4d1cae9dfbef5381b099b092bfa1cf20a564d25726caf4f487c6",
+    "research.json": "54f5402b9ce3b81e0a308cb97c38dea916db0bb0032591561b2dd143cb4f9961",
+    "hero.jpg": "1b700fb90b73b0f1312e6c0cc740f5ee18237d6496526acd908252c6c705c239",
+    "photo-post.jpg": "ed864172f78301c86d09bbd2c8fee5ccc6f187f1328c1aee00573f9ef95610de",
+    "reel-script.md": "48a992e34891c7569b151a856b9b8345a44c67eb7e7e5da36ae1fc3d5c85b01d",
+    "reel-data.md": "9dd035125692a53abd237b5988195c9e6ce0c153cb91b333404f7175f61439bf",
+    "social-copy.json": "ecb577b712547c0518ad764df586c2c3d9be17ccfc343637f13808e62448ab20"
+  }
+}

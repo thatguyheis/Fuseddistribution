@@ -1,0 +1,27 @@
+{
+  "slug": "when-two-service-pages-answer-the-same-question",
+  "title": "When Two Service Pages Answer the Same Question",
+  "description": "Compare the purpose of overlapping service pages, preserve useful details, choose the right URL treatment, and verify the customer journey after release.",
+  "alt": "Two service pages join one destination",
+  "brand": "tech",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Operations",
+    "Content"
+  ],
+  "ctaLine": "Would you rather browse one detailed service page or several focused pages?",
+  "contentGraphic": {
+    "label": "When Two Service Pages Answer the Same Question",
+    "rows": [
+      {
+        "condition": "Compare visitor purpose",
+        "action": "Review the overlap"
+      },
+      {
+        "condition": "Choose URL behavior",
+        "action": "Preserve useful paths"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "why-your-google-business-profile-isnt-showing-up",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:39:21.520210+00:00",
+  "review_notes": [
+    "Owner reviewed full original article, narration and official Google guidance; eligibility and search context distinguished without ranking promises.",
+    "Owner inspected actual hero and square JPEG exports.",
+    "Deterministic QA passes, 116 planned seconds; audio and rendered reel approval pending.",
+    "Actual publication September 14; original August 9 queue provenance preserved."
+  ],
+  "artifactSha256": {
+    "verified.md": "138bc6848829a336426f9be81581eebd9c1aa9526da889b043bf1204f161f98a",
+    "index.html": "e72e9f538f5b3cbd47ce2bcf8dc2d296fe4ec9aa186c9b778ca616ef7c8e8cc3",
+    "hero.jpg": "39302a621b68d96a81d5a51c8b205a324c03e120fa0ce22e3e835b6906ac0c5a",
+    "social-copy.json": "1576acc738f9f2c7be9062c378f68f1b64b047766dddb82f88620033bb775c49",
+    "hero.svg": "e29d1e16d3ac7742b8b5053f56d550d539a338d45bf9e1651b6466aac00f34a1",
+    "reel-data.md": "f184819431f0d2f0a6caf87f59152cacbc7d69b939cc8bacb3a17e3af261bfb5",
+    "photo-post.svg": "f35442eb76d54717084495e4112d3110eb33a8eb69e1a30da261a928b2f4050b",
+    "research.json": "dcc64aca1dcceabc8b556cb7701d5114420f4f89abfddbe91c117edba2211323",
+    "hooks.json": "008541aabe636477a112dfd408b0a10fce2519f3c3230a5075b47bfff452239f",
+    "reel-script.md": "bbc6af62f22a36efd492984c803a36421bbf12d58755440c516230d3a65672bd",
+    "gemma_draft.md": "138bc6848829a336426f9be81581eebd9c1aa9526da889b043bf1204f161f98a",
+    "photo-post.jpg": "9e5e4879ae801b651909ea974139a008a94259cc5c14454befca8d4119c35a49",
+    "meta.json": "d8699dda23c4fdebc05544378eae4257fd1180a6de8b6ceb355ba04c762d36b1"
+  }
+}

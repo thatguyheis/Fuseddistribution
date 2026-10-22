@@ -1,0 +1,16 @@
+{
+  "slug": "why-silver-is-used-in-electrical-contacts",
+  "stats": [],
+  "reviewedDate": "2026-10-01",
+  "sources": [
+    {
+      "title": "USGS silver overview",
+      "source_url": "https://www.usgs.gov/centers/national-minerals-information-center/silver-statistics-and-information"
+    },
+    {
+      "title": "USGS Lifecycle of Silver, historical report",
+      "source_url": "https://pubs.usgs.gov/sir/2013/5178/"
+    }
+  ],
+  "status": "Conductivity and contact material examples checked against USGS overview and indexed technical report passages. No current market data, replacement advice or purity estimate. Reading workflow is original guidance."
+}

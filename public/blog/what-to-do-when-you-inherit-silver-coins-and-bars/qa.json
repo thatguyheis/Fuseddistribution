@@ -1,0 +1,26 @@
+{
+  "slug": "what-to-do-when-you-inherit-silver-coins-and-bars",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:49:29.698560+00:00",
+  "review_notes": [
+    "Owner read full article and narration, reviewed IRS inheritance FAQ andPublication551, inspected actual hero/squareJPEGs. Authority, custody, appraisal and basis records remain distinct; professional handoff explicit.",
+    "QA-local passes; article approval does not imply audio/video completion. September14 actualdate andoriginalqueueprovenance retained."
+  ],
+  "artifactSha256": {
+    "verified.md": "d09d7b40461d2f75acf2c7ebe98d265a2ca1c488002a5e5bf85747f07b6af7d8",
+    "index.html": "0c4442022244a1a7a130418cb9830f2fd3e42188b8aefb851f48ee0e295890c2",
+    "hero.jpg": "8c1c84356eb36629a249dfe44fbac5783f244620385ad70f6e67aa1ea242c860",
+    "social-copy.json": "2bab870ec4b0bea30767d92c0dddba1228f78d7f44f4de4dc7a6088eba3cbd75",
+    "hero.svg": "c28d18b8dc4bbd22b462edd27033bc04cfb25d7a074dbca8890ed8d59524ac9b",
+    "reel-data.md": "e2b2a73c50b18bee02653bbac6ef8ece3b4ebb20d97b15376b470751e05c2dd7",
+    "square.svg": "40c05df33ac84075032d9899c50a18bc5135c713e763feb47bece5526d200e1d",
+    "research.json": "ee7df7f376b3b0d7a9c3938421df9bbf68c2197cdcd22abc7f18e713377ccb07",
+    "hooks.json": "a4779d19c4e2a4dd62e0d2afee702af8a27edf7268c45052c958c55f833ba25d",
+    "reel-script.md": "a3707af39cf4e93fd9989d1e23dbc924f7adfb4dd484a2b01f910c3f783a78f8",
+    "square.jpg": "d01a6ea9c01cf4ef46407c88bf01bbcb93860878dc6a0cb8c5d129335ea328bf",
+    "meta.json": "71d2a4ba8b061403344be5320e505db7969d11022b2211c0bb496f79a98671d9"
+  }
+}

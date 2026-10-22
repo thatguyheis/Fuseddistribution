@@ -1,0 +1,24 @@
+{
+  "slug": "what-to-record-when-an-ai-answer-is-wrong",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-08T13:58:36.753375+00:00",
+  "review_notes": [
+    "Read and checked article and companion claims against the cited primary source. Original practical guidance is distinguished from source facts; no invented metrics or forecasts.",
+    "Reviewed exported topic specific hero and square graphics. Corrected the case study footer spacing and inspected its final hero.",
+    "Deterministic article QA, production script parser and narration duration preflight passed. Final speech, video rendering and encoded review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "a721da9592527f0e79ab0e78fc8977134fc2c328e40c1ea9bc51e0c8ba90f0de",
+    "index.html": "a097141a0aafe0353969c69cbfe03956904341e19c6df50a420634abfc01e9c7",
+    "meta.json": "c695c2369661a35352d99d7de451808488208ed912bcbe875665677b89d30bd4",
+    "research.json": "fd01c209a53e334c0deaa628c900c15095a0d8a2e92a1b9eef162343c07429c1",
+    "hero.jpg": "e59b7bb9addd4baf15830430dfdbfad186282fe3ac8448813207c4f04932582f",
+    "photo-post.jpg": "be48ae5b40e0df7d5b58be1cb67d844f77af120cc33c9b010237aebaa58cc202",
+    "reel-script.md": "24a59108c02e1b18cc905185c8633ee74bb8b3c76b0afe11fe14d31f53bf0d0e",
+    "reel-data.md": "b33b2089ac1203e36ebc897a4c42de63bee30df5084d49819b6ce24c3763e05e",
+    "social-copy.json": "981ede7b6303fd671718be774758a0ed9bbe5beecfec38d7317f3862488d7725"
+  }
+}

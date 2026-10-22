@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.508060+00:00",
+  "heroSha256": "75ede0cccf773ea4ca780c7ec2d1486637c52e6526677a9243eb8c5fe0f9dc24",
+  "subject": "Two statistical editions connect through revision",
+  "purpose": "revision conceptual explanation",
+  "hook": "New edition. Changed estimate?",
+  "keyWords": [
+    "why",
+    "silver",
+    "supply"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-1.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

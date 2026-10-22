@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:31:07.638222+00:00",
+  "heroSha256": "04dab13da7f0d3da4eb3a279e261c8714406461b1e5abda9e37f714370d3f288",
+  "subject": "Conceptual electrical contact interface",
+  "purpose": "Shows two contact surfaces meeting between supporting conductors",
+  "hook": "Why silver meets the circuit",
+  "keyWords": [
+    "silver",
+    "contact",
+    "circuit"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual graphic",
+  "preview": ".workflow-state/recovery-2026-10-01/contact-phone-preview.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

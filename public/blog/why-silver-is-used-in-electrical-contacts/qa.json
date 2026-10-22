@@ -1,0 +1,25 @@
+{
+  "slug": "why-silver-is-used-in-electrical-contacts",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:29.786462+00:00",
+  "review_notes": [
+    "Owner reviewed full article and companions. Physical property/application claims checked against USGS overview and indexed lifecycle report contact passage; historical context explicitly scoped. No price forecast, purity estimate or component replacement instructions.",
+    "Full-size hero and square JPEGs and 360x640 contained hero preview visually inspected; concise readable hook and conceptual contact diagram. No invented chart data.",
+    "Production local QA and reel parser passed. Render, audio and downstream release remain pending.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "8b8a4602299537e34e6517be92378d50a841c973cdb750b88c03b8ea21d75210",
+    "index.html": "d775c2372b7220d6e444eddd4caca697ab720f021ae952665d404f25147195c5",
+    "meta.json": "88a7884eb07ff5d490f22675989df3d1cff8e5c9189925d46db281c6e863dc9b",
+    "research.json": "b90f2747261ad5549a94a80014fd24b0a478c7a2693329ef095f05c7bf86629e",
+    "hero.jpg": "04dab13da7f0d3da4eb3a279e261c8714406461b1e5abda9e37f714370d3f288",
+    "photo-post.jpg": "8bee5b197995708a7133f3afc110c6c7d5ef15a89b55f70151d977ce76fb05d3",
+    "reel-script.md": "57154c6b6e4b4ba8e72da9c58eb7ef98cc112a45d7db5635c7f61b0cd7324741",
+    "reel-data.md": "ac4f3e5bfd1472eb2a72579a6f5e5a28344967d8b6b5ac0cec3c931694b11059",
+    "social-copy.json": "93930075d9b3175609b83d224e6d61bd7c130d370f058464edd76d8ad0a1a60a"
+  }
+}

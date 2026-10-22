@@ -776,6 +776,19 @@
         line-height: 1.75;
       }
 
+      .contact-details {
+        margin: 20px 0;
+        font-style: normal;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+      }
+
+      .contact-details a {
+        color: #58d6ff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
       .stats {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1540,6 +1553,10 @@
                 coaching, or something we have not added to the roster yet. Send us
                 the details and we will reach out directly.
               </p>
+              <address class="contact-details">
+                <strong>Email:</strong> <a href="mailto:nick@fuseddistribution.com">nick@fuseddistribution.com</a><br />
+                <strong>Work phone:</strong> <a href="tel:+15038479425">503 847 9425</a>
+              </address>
               <form class="lead-form" id="lead-form">
                 <input type="text" name="website" style="display:none;position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <div class="lead-grid">

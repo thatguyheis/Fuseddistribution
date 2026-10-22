@@ -1,0 +1,43 @@
+{
+  "slug": "what-happens-during-coin-quality-control",
+  "plannedDate": "2026-10-08",
+  "actualPublicationDate": "2026-10-10",
+  "status": "source_review_and_editorial_draft_complete_unapproved",
+  "topic": "what happens during coin quality control",
+  "sources": [
+    {
+      "title": "U.S. Mint Coin Production",
+      "url": "https://www.usmint.gov/learn/production-process/coin-production",
+      "supports": [
+        "Purchased planchets are checked against specifications.",
+        "An inspector examines samples after striking for errors.",
+        "Some circulating coins failing standards are diverted to a waffler before recycling.",
+        "After inspection, circulating coins are counted and weighed."
+      ],
+      "limits": "Applies to the Mint process described, not a universal rule for all producers or products."
+    },
+    {
+      "title": "U.S. Mint Superior Manufacturing Reduces Errors",
+      "url": "https://www.usmint.gov/news/inside-the-mint/superior-manufacturing-reduces-errors.html",
+      "supports": [
+        "Mint quality index background."
+      ],
+      "limits": "Historical background; no universal or current metric is quoted."
+    }
+  ],
+  "outline": [
+    "Check coin planchets before striking",
+    "Inspect coin samples after the press",
+    "Separate coin production checks from collector grading",
+    "Check accepted coin output after inspection",
+    "Understand what coin quality control confirms"
+  ],
+  "outlineValidation": "pending topic validator",
+  "editorialChecks": {
+    "sampleInspectionNotIndividualized": true,
+    "productScopeLimited": true,
+    "gradingKeptDistinct": true,
+    "noRarityOrValueClaims": true,
+    "publicationApproval": false
+  }
+}

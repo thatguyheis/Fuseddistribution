@@ -1,0 +1,24 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-08T13:58:36.753375+00:00",
+  "heroSha256": "ed32e25d88afd7190f1d30254aad82129292a9ded0815d9f29633116832ec320",
+  "subject": "Coin edge profiles compare different designs",
+  "purpose": "edges conceptual explanation",
+  "hook": "The third side has a design.",
+  "keyWords": [
+    "edges"
+  ],
+  "chartEvidence": "Conceptual illustration, no measured results implied",
+  "preview": ".workflow-state/recovery-2026-10-08/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

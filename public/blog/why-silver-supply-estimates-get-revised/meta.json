@@ -1,0 +1,27 @@
+{
+  "slug": "why-silver-supply-estimates-get-revised",
+  "title": "Why Silver Supply Estimates Get Revised",
+  "description": "Compare editions of silver statistics with the reporting year, measure and notes intact, then distinguish a documented revision from an unsupported explanation.",
+  "alt": "Two statistical editions connect through revision",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "When an estimate changes, do you check the footnote or the headline first?",
+  "contentGraphic": {
+    "label": "Why Silver Supply Estimates Get Revised",
+    "rows": [
+      {
+        "condition": "Keep the reporting year separate from the edition",
+        "action": "Look for changed definitions and coverage"
+      },
+      {
+        "condition": "Distinguish a revision from a new comparison",
+        "action": "Explain uncertainty without making a forecast"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "why-coin-edges-have-different-designs",
+  "title": "Why Coin Edges Have Different Designs",
+  "description": "Compare plain, reeded and lettered coin edges, distinguish the edge from the rim, and record visible details without assuming authenticity or collector value.",
+  "alt": "Coin edge profiles compare different designs",
+  "brand": "silver",
+  "date": "2026-10-08",
+  "modifiedDate": "2026-10-08",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "When looking at a coin, do you check the edge or the main design first?",
+  "contentGraphic": {
+    "label": "Why Coin Edges Have Different Designs",
+    "rows": [
+      {
+        "condition": "Distinguish the coin edge from the rim",
+        "action": "Compare different coin edge designs"
+      },
+      {
+        "condition": "Check the specification for the particular issue",
+        "action": "Record an unusual coin edge without overclaiming"
+      }
+    ]
+  }
+}
