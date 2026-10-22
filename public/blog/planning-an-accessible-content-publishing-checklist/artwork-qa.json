@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.520544+00:00",
+  "heroSha256": "278c5e4b09f25281e33992903fb34ab01f29e59c697e192ba9f1882c64abe248",
+  "subject": "Publishing checklist connects content and review",
+  "purpose": "checklist conceptual explanation",
+  "hook": "Before publish: Check the journey.",
+  "keyWords": [
+    "planning",
+    "an",
+    "accessible"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-1.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

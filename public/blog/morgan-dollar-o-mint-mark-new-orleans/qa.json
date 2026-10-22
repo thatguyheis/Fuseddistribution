@@ -1,0 +1,37 @@
+{
+  "slug": "morgan-dollar-o-mint-mark-new-orleans",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-10-13",
+  "reviewer": "Codex",
+  "notes": [
+    "Primary-source facts checked against US Mint and Louisiana State Museum.",
+    "Separate photographed specimens are identified explicitly; no grade or authenticity guarantee.",
+    "Original-photo crops and all six scene layouts visually inspected.",
+    "Stipe hook, promise and payoff applied without changing production or owner authority."
+  ],
+  "artifactSha256": {
+    "verified.md": "7f26005a5250d82002fee5b3c9127b105b423cca108a8a1f23d6cf408302cb00",
+    "index.html": "495260939a8346fb14b3d2e638257d5a96018b94e1e50d0010666e42c82789e2",
+    "meta.json": "97da2c6b7905b5fb7fcbc364fa18e699c1753b0ee2129f807d32c0a1d7b3c819",
+    "research.json": "d32a670f5b79fbbe1f78d396d50f629307a317d2bcac64b02b0dafa7c137e9d9",
+    "hero.jpg": "b3cb35c4abe69ea4fd491a24be1160d32f3c0bf5648dd060d8b5d30aa68b0964",
+    "photo-post.jpg": "9ce5ce2e56a6cbb7f699ca4468ffbe99561f95d881d3a2b48f7a20990365da62",
+    "reel-script.md": "8b597c02e9a831e6af00607e827544c4bafac8c88163c9e4286f9c991ab22ec2",
+    "reel-data.md": "972e8a91fefd083569e3d38b451efa3183e44607a4ef35e38ebdf52c96c04523",
+    "social-copy.json": "490665333c8b6109f41e9fdd1fcff7bd034e2a19d6e4f22af67a3f9820974d90",
+    "preferred-media.json": "7d0bf3ef1fcd0a641a822f7d2481b3a79b98224117020389636430a2317bd255",
+    "social-video.json": "8faf80b3735ad049ba8cb27489d2b9eba69f53fefaaeb52d7f8c2fb8f8538535"
+  },
+  "reviewed_at": "2026-10-13T13:38:17.403Z",
+  "review_notes": [
+    "Primary-source facts checked against US Mint and Louisiana State Museum.",
+    "Separate photographed specimens are identified explicitly; no grade or authenticity guarantee.",
+    "Original-photo crops and all six scene layouts visually inspected.",
+    "Stipe hook, promise and payoff applied without changing production or owner authority.",
+    "Companion player added using released 112.661-second encode; article prose, photos and factual claims unchanged.",
+    "Fixed existing URL-predicate validator; generated HTML now includes verified same-origin MP4 source. Three focused URL regression tests pass."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "measuring-rework-instead-of-counting-automated-tasks",
+  "title": "Measure Rework Instead of Counting Automated Tasks",
+  "description": "Measure automation through completed work, review and correction effort, using consistent acceptance criteria instead of counting unchecked generated drafts.",
+  "alt": "Review loop returns draft for correction",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you accept slower drafts if they needed fewer corrections?",
+  "contentGraphic": {
+    "label": "Measure Rework Instead of Counting Automated Tasks",
+    "rows": [
+      {
+        "condition": "Record the manual baseline",
+        "action": "Count review and correction effort"
+      },
+      {
+        "condition": "Check quality before comparing speed",
+        "action": "Decide what to change next"
+      }
+    ]
+  }
+}

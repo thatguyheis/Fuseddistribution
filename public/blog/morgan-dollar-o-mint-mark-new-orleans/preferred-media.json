@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "source": "fused-owned-coin-library",
+  "segments": [
+    {
+      "index": 0,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-0.jpg",
+      "sha256": "7b2f482508b24851f8c4a6a55dc5c229a99e40a553ab79c5e5467a3fe421bb5b",
+      "assetIds": [
+        "coin-0006"
+      ],
+      "role": "direct evidence of visible coin features",
+      "reviewed": true
+    },
+    {
+      "index": 1,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-1.jpg",
+      "sha256": "c58020ee4dccc6960e7d0fb5cd2d2aea829f91267465a318f9dbe2d462eae794",
+      "assetIds": [
+        "coin-0006",
+        "coin-0007"
+      ],
+      "role": "direct evidence of visible coin features",
+      "reviewed": true
+    },
+    {
+      "index": 2,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-2.jpg",
+      "sha256": "cf8617c1eea4e2e52ac89c83e61e306f7d668644117b404063a57dde3f226aa5",
+      "assetIds": [],
+      "role": "labeled historical timeline illustration",
+      "reviewed": true
+    },
+    {
+      "index": 3,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-3.jpg",
+      "sha256": "df0afbff8865faad502dbea2c18fcc0cc9a388e01a772b20ec10b7663b51286f",
+      "assetIds": [],
+      "role": "labeled historical timeline illustration",
+      "reviewed": true
+    },
+    {
+      "index": 4,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-4.jpg",
+      "sha256": "e4df133f5a26b47ae2eca87e61895fa2a89285fb88f046fa6aeefd778f41047e",
+      "assetIds": [],
+      "role": "labeled historical timeline illustration",
+      "reviewed": true
+    },
+    {
+      "index": 5,
+      "type": "photo",
+      "path": "public/blog/morgan-dollar-o-mint-mark-new-orleans/images/scene-5.jpg",
+      "sha256": "c3646105ce03e52379ebef4a1c4f23a102a18a5980522b9f23a028cd29310cc2",
+      "assetIds": [
+        "coin-0006"
+      ],
+      "role": "direct evidence of visible coin features",
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "recording-accessibility-feedback-from-real-customers",
+  "title": "Record Accessibility Feedback From Real Customers",
+  "description": "Record customer accessibility barriers with useful context, assign an owner, verify the repair and close the loop without making unsupported compliance claims.",
+  "alt": "Customer feedback flows toward verified repair",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you rather report a website problem through a short form or a conversation?",
+  "contentGraphic": {
+    "label": "Record Accessibility Feedback From Real Customers",
+    "rows": [
+      {
+        "condition": "Ask only for useful context",
+        "action": "Separate the report from the diagnosis"
+      },
+      {
+        "condition": "Prioritize the blocked task",
+        "action": "Verify the repair and close the loop"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.518722+00:00",
+  "heroSha256": "ac7faaeeff85a60b9ce0b8a75c51983e7c94f90df485f522cf5cdfc488d77691",
+  "subject": "Review loop returns draft for correction",
+  "purpose": "rework conceptual explanation",
+  "hook": "Count finished work. Include the fixes.",
+  "keyWords": [
+    "measuring",
+    "rework",
+    "instead"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-1.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

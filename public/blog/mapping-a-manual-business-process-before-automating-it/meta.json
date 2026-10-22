@@ -1,0 +1,27 @@
+{
+  "slug": "mapping-a-manual-business-process-before-automating-it",
+  "title": "Map a Manual Business Process Before Automating It",
+  "description": "Map a real business process before automating it, including inputs, decisions, exceptions and completion evidence, then choose one bounded improvement.",
+  "alt": "Process route branches toward human review",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you automate the fastest step or fix the messiest handoff first?",
+  "contentGraphic": {
+    "label": "Map a Manual Business Process Before Automating It",
+    "rows": [
+      {
+        "condition": "Choose a process with a clear finish",
+        "action": "Observe a completed case"
+      },
+      {
+        "condition": "Separate rules from judgment",
+        "action": "Map exceptions and authority"
+      }
+    ]
+  }
+}

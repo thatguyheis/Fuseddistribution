@@ -1,0 +1,26 @@
+{
+  "slug": "recording-accessibility-feedback-from-real-customers",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.934581+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305–340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required.",
+    "Video panel only reviewed 2026-10-14: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-15T05-01-09-566Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "3a972779e1d4aa7cf52e9d2ceb33c3d8c524af6acf5375c0fea57facb5b45b8b",
+    "index.html": "4dd155563045f19ab9819cd5f68d07756bc58de1ad6526f39e8fd6d0a4411ffe",
+    "meta.json": "b836a52ea1a88391802446c2e59619b6d4a44f70b21d190fcaf24beda272731e",
+    "research.json": "685cd48e5172629a44dd30fa617b2dd226748a3b1b074a63b54a9580378bd550",
+    "hero.jpg": "3c67969f83ebb8f1868e630dd8f5aedc5a6a5be07d6f4b95ab0e83e9f9cfad49",
+    "photo-post.jpg": "70892e3ff106c7f15d6c16dd7f177c458ffc6446cf1e0183274f4a30802c9564",
+    "reel-script.md": "b07a09daaeeb4b425255b043c86203ac5c5f324f484af6a69ae0b90b6780e11a",
+    "reel-data.md": "caeafbe71ccc8144318bb2ae5a6ffb1de68973d48adf0f144aede101d96422f7",
+    "social-copy.json": "c212644091306bcb5bc445b047a839c52f75eac59813ae08ccb18072544e5201"
+  }
+}

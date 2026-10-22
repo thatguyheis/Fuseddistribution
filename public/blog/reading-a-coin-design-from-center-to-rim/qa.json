@@ -1,0 +1,25 @@
+{
+  "slug": "reading-a-coin-design-from-center-to-rim",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.684035+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "ed98b26aac2356e46e21b1018236b404d96eb8d69913808586e41a2070e8f038",
+    "index.html": "6c59591cf1695f1ebca352682d65949fa9a54ec582de0021de2d6263cc9bda61",
+    "meta.json": "b08ca7cc2fc58820d97440f8a87c9dac2586ba683934cbf393b7e51ef5a033af",
+    "research.json": "1bb18b39f9ba8e0a91dce60677214265f4f7e21e04a964fd20c9215ca9e7128b",
+    "hero.jpg": "6dc99948abfccf0373a4b2c39302994201278a8403b77f54f53910e9da97c188",
+    "photo-post.jpg": "53a556871aad5886cb3498e624b45c19118f3313b9aa67160733e01f1fbfab8c",
+    "reel-script.md": "f5a29bd35d8e1454205f3ebe84b357bf7fa29f8cba5aa5baf9f7526d425b4310",
+    "reel-data.md": "300d470cdd2dfddb66ec76b6ab8baca204bc77afe39c1a6b7a00e5043b78c80f",
+    "social-copy.json": "d8a9d0c7355b7e884d339e5fc0f2e8bb608bba6c99638e6238f68ffacc93ff3f"
+  }
+}

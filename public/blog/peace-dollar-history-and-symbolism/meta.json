@@ -1,0 +1,32 @@
+{
+  "slug": "peace-dollar-history-and-symbolism",
+  "title": "Why the Peace Dollar Lost Its Broken Sword",
+  "description": "Explore the Peace dollar history, its postwar symbolism and the broken sword removed before production, using real coin photographs and museum records.",
+  "alt": "Historic silver dollar and explanatory timeline",
+  "brand": "silver",
+  "date": "2026-10-14",
+  "status": "approved-production",
+  "tags": [
+    "Coin history",
+    "Silver dollars"
+  ],
+  "ctaLine": "Explore more coin history with Fused Distribution.",
+  "contentGraphic": {
+    "label": "A silver dollar history timeline",
+    "rows": [
+      {
+        "condition": "1921",
+        "action": "Peace dollar design approved; broken sword removed"
+      },
+      {
+        "condition": "1921-1928",
+        "action": "Original production run"
+      },
+      {
+        "condition": "1934-1935",
+        "action": "Production resumes"
+      }
+    ]
+  },
+  "blogCover": "photo-post.jpg"
+}

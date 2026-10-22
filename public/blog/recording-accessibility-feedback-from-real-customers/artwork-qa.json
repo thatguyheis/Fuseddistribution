@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.525370+00:00",
+  "heroSha256": "3c67969f83ebb8f1868e630dd8f5aedc5a6a5be07d6f4b95ab0e83e9f9cfad49",
+  "subject": "Customer feedback flows toward verified repair",
+  "purpose": "feedback conceptual explanation",
+  "hook": "A barrier reported. A repair owned.",
+  "keyWords": [
+    "recording",
+    "accessibility",
+    "feedback"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-2.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

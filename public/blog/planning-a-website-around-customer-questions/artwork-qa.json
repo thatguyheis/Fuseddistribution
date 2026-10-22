@@ -1,0 +1,25 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:40:44.009076+00:00",
+  "heroSha256": "d5338e5ef3bdc050f51a6b328aa193b99b57063c40c9903dfa6710620e4a8676",
+  "subject": "Customer question routed to a page with an explicit next step",
+  "purpose": "Customer question routed to a page with an explicit next step",
+  "hook": "Questions become useful pages",
+  "keyWords": [
+    "questions",
+    "pages"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/planning-a-website-around-customer-questions-phone.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

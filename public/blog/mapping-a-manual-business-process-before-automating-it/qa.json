@@ -1,0 +1,26 @@
+{
+  "slug": "mapping-a-manual-business-process-before-automating-it",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.193747+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305–340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required.",
+    "Video panel only reviewed 2026-10-15: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-16T05-01-00-174Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "ee40c2213167d1f0482df45aed165d32b1102298d46c8a6994fee2647020d986",
+    "index.html": "bcdb9c8d8135fdb572ea6b5f422057cd8f25394447a2c7d4b5180ee8ed1ed8b0",
+    "meta.json": "fd301b28318d1fcbd9872346cd1535f06c873c93544dcc30f6ebc9dda74e9ea4",
+    "research.json": "01b45aa478d8324fb5229ee930999979acc3926cc6decd8ed0ebb336546f6792",
+    "hero.jpg": "4e1a5ab8c962ebe8ad9234e79535e679ebdecb68477757e79a8fe537311e43b6",
+    "photo-post.jpg": "628fb882e94b5415128de2b2863850c0b08d655d5cd4730805485a61aa6bda1f",
+    "reel-script.md": "ed970c51d6d0e84d4ea6f293e4d68512954864f51f68c4791e2a675b89fd3f18",
+    "reel-data.md": "4f31b31a6d6ce599c402e347f26b6d9ceff6e2d2c4cb2573be1abb7c6920e643",
+    "social-copy.json": "acadb38f968d6fd99001f4d21cc28a62bfdcb178216a7f2b5142ff77ad829717"
+  }
+}

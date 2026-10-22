@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.521820+00:00",
+  "heroSha256": "6dc99948abfccf0373a4b2c39302994201278a8403b77f54f53910e9da97c188",
+  "subject": "Coin diagram labels center field rim",
+  "purpose": "coin conceptual explanation",
+  "hook": "Start at the center. Notice the rim.",
+  "keyWords": [
+    "reading",
+    "a",
+    "coin"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-2.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

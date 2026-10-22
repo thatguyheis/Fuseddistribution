@@ -1,0 +1,28 @@
+{
+  "slug": "pittman-act-silver-dollar-melting",
+  "title": "Why America Melted Silver Dollars and Made Them Again",
+  "description": "Why the Pittman Act melted American silver dollars, supplied silver for India and required replacement, bringing the Morgan dollar back to production in 1921.",
+  "alt": "Historic silver dollar and explanatory timeline",
+  "brand": "silver",
+  "date": "2026-10-14",
+  "status": "approved-production",
+  "tags": [
+    "Coin history",
+    "Silver dollars"
+  ],
+  "ctaLine": "Explore more coin history with Fused Distribution.",
+  "contentGraphic": {
+    "label": "A silver dollar history timeline",
+    "rows": [
+      {
+        "condition": "1918",
+        "action": "Pittman Act authorizes melting and replacement"
+      },
+      {
+        "condition": "1921",
+        "action": "Morgan dollar production returns; Peace follows"
+      }
+    ]
+  },
+  "blogCover": "photo-post.jpg"
+}

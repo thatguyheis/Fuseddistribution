@@ -1,0 +1,27 @@
+{
+  "slug": "pittman-act-silver-dollar-melting",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 95,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-15T13:25:10.221Z",
+  "review_notes": [
+    "User approved exact transcript and generation. Primary-source claim map checked. Original coin crops inspected; no unverified mint or specimen-history claims. Documentary ending preserved. Local QA passed. Archival photographs credited; AI explicitly illustrative.",
+    "Companion video: both hosted derivatives verified byte-for-byte against reviewed local delivery files. Square article cover preserves complete artwork.",
+    "Coin article category explicitly registered as silver; source copy and image claims remain aligned. Local editorial QA passed.",
+    "Companion reel panel now points to the verified narration-only replacement video. Article copy unchanged and passes local QA."
+  ],
+  "artifactSha256": {
+    "verified.md": "f975913da5f25c246f1e2fbb7948ceac2a9d420f774b3f7506ed0aa8fd5135d5",
+    "index.html": "8412fafa7c0efff079d7f5013e4e35d5a4ec91da9e7f60934d21db3d23f339c9",
+    "meta.json": "5424220cbfd4f9738c10dad62a0662285e6ff061c765e23a8a91aa9abbf67e1e",
+    "research.json": "181e1f91aeba93aecd7f584235ea7ba096542bc3f4913e2c2694ee2a48f5f191",
+    "hero.jpg": "03f912940b2731d3a7415abcc14634cb4a0fd422ad2758bdba42aedb1c5de8a2",
+    "photo-post.jpg": "a3fc229d018ed372cf65519d2baf9820ebeb3e912cb2d36c1203dd5de4254cd3",
+    "reel-script.md": "b26d36ca9279805586998096bbc7cb5d1759d2b9ae2f08100af5f3bbd0401438",
+    "reel-data.md": "2db292be7e4d0eb43c9bff92160e94a83eeb582e3f66e3188a89ea9af442d346",
+    "social-copy.json": "467fc6061e7be350ce960d8dfec9cd8219dcd44c124d8fdb942672f5606c6c8f",
+    "presentation-plan.json": "662cf0255156c04977cdcdbb74cd8d0b766e05fe8524ff302ca8fd33ec6b5337"
+  }
+}

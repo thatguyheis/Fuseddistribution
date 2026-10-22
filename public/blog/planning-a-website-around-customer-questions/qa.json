@@ -1,0 +1,26 @@
+{
+  "slug": "planning-a-website-around-customer-questions",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.003122+00:00",
+  "review_notes": [
+    "Google readable content/site organization guidance checked; proposed page map is original guidance with no ranking guarantee.",
+    "Full article, topic-specific companions and narration reviewed. Local QA and parser pass.",
+    "Full-size and square JPEGs and actual 360x640 contained hero previews visually reviewed: clear subject, readable main hook, no clipping. Audio/render/release remain pending.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "161f4b224a63d7d768af555bbe0e4903e721dc03a30fa38a74d56c94688062ba",
+    "index.html": "b5525bd0836cf4ef6ea880cdcf5be33519d96c8bbe76a4d2043927cc6787a75b",
+    "meta.json": "f3f90e50cfa28a36b1b41cdc497800995e64ecfae5790bba5da810d0feb1009b",
+    "research.json": "1c9db97d655261cf71acfd9a16a1eb3c2febfcc61292b4ea075e12b4bad23796",
+    "hero.jpg": "d5338e5ef3bdc050f51a6b328aa193b99b57063c40c9903dfa6710620e4a8676",
+    "photo-post.jpg": "daa0d96621173f73b7200b5b9412fca1e5aed4e0affae8dbbd1f401e71c9a789",
+    "reel-script.md": "4478511c426f1618abe36392029f5cc91ebd3e72dbca3c4ef71eee58a3276f77",
+    "reel-data.md": "c12d9f72dc3f7bbd8f423165f044d2e2deaa2434e46ef665f3bec113b1e3839b",
+    "social-copy.json": "fba73c5e8904fcbf22a8615bfc33a797d8e48258f4a3b347451a19569a0bf76e"
+  }
+}

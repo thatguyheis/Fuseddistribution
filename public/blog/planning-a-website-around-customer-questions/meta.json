@@ -1,0 +1,27 @@
+{
+  "slug": "planning-a-website-around-customer-questions",
+  "title": "Plan a Website Around Customer Questions",
+  "description": "Turn real customer questions into a useful website plan, assign accurate answers to pages, and connect each answer to a clear and tested next step online.",
+  "alt": "Customer questions connect to website answers",
+  "tags": [
+    "Website Planning",
+    "Content"
+  ],
+  "brand": "tech",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "ctaLine": "Should a service website lead with your offer or your customer's question?",
+  "contentGraphic": {
+    "label": "Plan a Website Around Customer Questions",
+    "rows": [
+      {
+        "condition": "Collect actual questions",
+        "action": "Group customer decisions"
+      },
+      {
+        "condition": "Own each answer",
+        "action": "Test the next step"
+      }
+    ]
+  }
+}

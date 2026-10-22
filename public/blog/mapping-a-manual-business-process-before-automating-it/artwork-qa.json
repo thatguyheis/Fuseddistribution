@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.502958+00:00",
+  "heroSha256": "4e1a5ab8c962ebe8ad9234e79535e679ebdecb68477757e79a8fe537311e43b6",
+  "subject": "Process route branches toward human review",
+  "purpose": "process conceptual explanation",
+  "hook": "Map the work. Then automate.",
+  "keyWords": [
+    "mapping",
+    "a",
+    "manual"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-0.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

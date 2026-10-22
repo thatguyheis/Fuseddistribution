@@ -3,6 +3,19 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/mobile-website-speed-why-it-matters-for-local-business/mobile-website-speed-why-it-matters-for-local-business.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.165Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/-PtGrsOVKLs",
+      "sentAt": "2026-08-26T20:40:04.854Z"
+    },
+    "x": {
+      "url": "https://x.com/290904877/status/2096700011203494053",
+      "sentAt": "2026-09-06T20:40:12.340Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/Dc_66qEkyXY/",
+      "sentAt": "2026-09-07T20:01:30.838Z"
+    }
+  },
+  "updatedAt": "2026-09-08T07:24:55.241Z"
 }

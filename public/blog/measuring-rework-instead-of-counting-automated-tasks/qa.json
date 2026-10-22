@@ -1,0 +1,25 @@
+{
+  "slug": "measuring-rework-instead-of-counting-automated-tasks",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.515580+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "18df03ab1a650fb835a006d29684cc4e7b2442746975c4f5d7b802fbfbc826b6",
+    "index.html": "0beba9842a795fb8a8c8cd14a29acd10dc539ecf84351703c3b4e215c07e0637",
+    "meta.json": "a066622de03e0640c8096420ee2438ace00fcbd69b558a9f77c08ee5fb23f824",
+    "research.json": "589d81e6f726bc4d245d94a086ac0306c53a5b96581b85e57500f33b728cb87e",
+    "hero.jpg": "ac7faaeeff85a60b9ce0b8a75c51983e7c94f90df485f522cf5cdfc488d77691",
+    "photo-post.jpg": "9c568953eb23476fa64045f83c1cdab47d77b7ca3ab237138f47e7510181a34c",
+    "reel-script.md": "aedca90dad74b4fb830890b0c39ce0bdc3f4903c4438edd303bc522472056358",
+    "reel-data.md": "b6b77c5cc5fbae93b0a91049cae951a022a9cda687344ef45ec59858845e0890",
+    "social-copy.json": "9a63add977f34ec02be5371b5c9e3a56cd3f79a8a68172ddbc939e42991cbc32"
+  }
+}

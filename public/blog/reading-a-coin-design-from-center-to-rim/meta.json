@@ -1,0 +1,27 @@
+{
+  "slug": "reading-a-coin-design-from-center-to-rim",
+  "title": "Read a Coin Design From Center to Rim",
+  "description": "Read a coin from its central subject to the field, inscription and rim, recording clear observations while keeping interpretation and attribution separate.",
+  "alt": "Coin diagram labels center field rim",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "Which catches your eye first: the central design or the details around the rim?",
+  "contentGraphic": {
+    "label": "Read a Coin Design From Center to Rim",
+    "rows": [
+      {
+        "condition": "Describe the central subject",
+        "action": "Look at the field and relief"
+      },
+      {
+        "condition": "Follow the inscription toward the rim",
+        "action": "Turn the viewing order into a record"
+      }
+    ]
+  }
+}

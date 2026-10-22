@@ -1,0 +1,25 @@
+{
+  "slug": "planning-an-accessible-content-publishing-checklist",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.597406+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "55f3bd767489d04119948e4f54d8d8eeccc74f14f18ed359417b1e1fdbefb317",
+    "index.html": "67dfb3a9569081511edfa692d615d5f3cfb82bc8601a6b823e3e4da04b871a0c",
+    "meta.json": "bebc6131b1c2a775709d90409ad5c9df7ddcaab0d26f0d091e23bd77469abd78",
+    "research.json": "e2996f921dd2607e1da74a780d0d7d85fded5959f9acaca926ae37f03bb6cc3b",
+    "hero.jpg": "278c5e4b09f25281e33992903fb34ab01f29e59c697e192ba9f1882c64abe248",
+    "photo-post.jpg": "75be425a32b79acf6ae70d0265d434f7f1f69f8cecdc6d2286c0871203ca7e04",
+    "reel-script.md": "879ecc9dc886c81d55fee859246e5df7b26ebcdde82493029b6802513a551a5c",
+    "reel-data.md": "f72468803fe7b0d2ce57bae284ca0e5813ddeb7bf8aa4c6aa8b22ab082f5da0a",
+    "social-copy.json": "07d01498f613dbdedb46e328bbd6c0965d6bc786e35db7e40f142bea0b531a4e"
+  }
+}

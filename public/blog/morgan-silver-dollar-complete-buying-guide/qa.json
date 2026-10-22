@@ -1,0 +1,26 @@
+{
+  "slug": "morgan-silver-dollar-complete-buying-guide",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:04:18.973952+00:00",
+  "review_notes": [
+    "Owner reviewed corrected fullarticle/reel and USMintprimaryhistorical/moderncomposition source; removedunsupportedmodern90percentclaim, neveropenholders,subtractdiscounts. Actualhero/squareviewed.",
+    "QA-local passes. ActualSeptember14publication; originalqueuepreserved. Actualaudio/video pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "d483dabf616f8b0013e2c59b7ccad01caca9ee62752f65e10d3055cca14f764d",
+    "index.html": "49a609641d0a19f5bbc8c079133aa2e2e60f8d84c5337a426b263f2cbfa961d5",
+    "hero.jpg": "5b8d46b6234b6e98178ac680d294a031c0f10f30eefabe66f045512f093bbd63",
+    "social-copy.json": "ca106901dd050a87c64a194e14c89b2958b663a69fddff3ef2b804c5d5beacb7",
+    "hero.svg": "28c25daaad6005b832467891544135adbd6d59ad5734abbf8ff0794de51ad67d",
+    "reel-data.md": "e5a7ae2a49e9398d349b5824d47a64cabdcb6039b05dbdc66cd015a45aa499b0",
+    "photo-post.svg": "30c0510cdfafaa1a4fc254f04217aada769c420f6cb7924f70a411533d4cb83c",
+    "hooks.json": "7ad8305d163efd27c8bc368e117e331a310d6a4254f340ef1f2360e4c2a7e873",
+    "reel-script.md": "6a0119e9fc3930bdf9023170add937db9e129b816a38ea641b42259ace8d2106",
+    "gemma_draft.md": "d483dabf616f8b0013e2c59b7ccad01caca9ee62752f65e10d3055cca14f764d",
+    "photo-post.jpg": "1b608263dd8683d79ac5199469b41297c2fc4049f0ab42971bc0efb5aafcae40",
+    "meta.json": "978bf59b8ed37de35e5cb99700301c16f0bc35a85652cbf495e4798196da1fb4"
+  }
+}

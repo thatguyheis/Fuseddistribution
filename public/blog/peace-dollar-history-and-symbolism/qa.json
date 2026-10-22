@@ -1,0 +1,27 @@
+{
+  "slug": "peace-dollar-history-and-symbolism",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 95,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-15T13:25:10.233Z",
+  "review_notes": [
+    "User approved exact transcript and generation. Primary-source claim map checked. Original coin crops inspected; no unverified mint or specimen-history claims. Documentary ending preserved. Local QA passed. Archival photographs credited; AI explicitly illustrative.",
+    "Companion video: both hosted derivatives verified byte-for-byte against reviewed local delivery files. Square article cover preserves complete artwork.",
+    "Coin article category explicitly registered as silver; source copy and image claims remain aligned. Local editorial QA passed.",
+    "Companion reel panel now points to the verified narration-only replacement video. Article copy unchanged and passes local QA."
+  ],
+  "artifactSha256": {
+    "verified.md": "10dd713854eb378a29bf98c776e9eeefe8599a804156e6958f23ab0ced7c3041",
+    "index.html": "dd5151ee454da6e35682efe760afd9546dfa8b6bc2da6a869d7f0dc3d8ca62a1",
+    "meta.json": "e0bf08437555aabbdc3a62cf5539c6f7e0efb4434e0a0a8c610873be4f1405d7",
+    "research.json": "11ad91c4d15d7d78f14684f96d2d8b84e2c757e6b9b5b94f7da5b0a1f9337972",
+    "hero.jpg": "9e0fa4dadd72ef6e04595f3350a4a17d899a01331a5b40627c11ccf65197a1bd",
+    "photo-post.jpg": "41cb47b3b5720b92c5827d38c9c6f280cc31c5af96ad60389491a85b502cb1ce",
+    "reel-script.md": "103a310ef83f4953997338d8f6b6f4282f68f83d53cdacd32a22b55ae9600e7a",
+    "reel-data.md": "15f7817c8007e21fa0d944297e9bebb17b6555c8b35165c2f2d5a56b83f3951f",
+    "social-copy.json": "ce948bf1e135c609fc21cc0dcaee0b9a5f9302d9e10ca588a7acc8fcb524624f",
+    "presentation-plan.json": "abac591225e4e40f1d2add9e9377c243739428e047d019252a5171bcf30f8f1c"
+  }
+}

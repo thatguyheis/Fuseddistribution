@@ -1,0 +1,27 @@
+{
+  "slug": "planning-an-accessible-content-publishing-checklist",
+  "title": "Plan an Accessible Content Publishing Checklist",
+  "description": "Plan accessibility checks around headings, links, images and media, then verify the published journey and give unresolved issues a named owner and next step.",
+  "alt": "Publishing checklist connects content and review",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Does your content checklist end at publish or include the live page?",
+  "contentGraphic": {
+    "label": "Plan an Accessible Content Publishing Checklist",
+    "rows": [
+      {
+        "condition": "Check structure and meaning",
+        "action": "Review images and media deliberately"
+      },
+      {
+        "condition": "Test the published journey",
+        "action": "Record evidence and follow through"
+      }
+    ]
+  }
+}

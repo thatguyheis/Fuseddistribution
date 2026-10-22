@@ -1,0 +1,32 @@
+{
+  "slug": "morgan-dollar-o-mint-mark-new-orleans",
+  "title": "The Tiny O on a Morgan Dollar: New Orleans History",
+  "description": "Follow the tiny O on a Morgan silver dollar to the New Orleans Mint, its Civil War interruption and its return to coin production, using our own photographs.",
+  "alt": "Morgan dollar shows New Orleans history",
+  "brand": "silver",
+  "date": "2026-10-13",
+  "modifiedDate": "2026-10-13",
+  "tags": [
+    "Coin history",
+    "Morgan dollars",
+    "New Orleans"
+  ],
+  "ctaLine": "Would you explore the date or mint mark first?",
+  "contentGraphic": {
+    "label": "New Orleans Mint timeline",
+    "rows": [
+      {
+        "condition": "1838",
+        "action": "Coin production begins"
+      },
+      {
+        "condition": "1879",
+        "action": "Postwar operations resume"
+      },
+      {
+        "condition": "1909",
+        "action": "Coin production ends"
+      }
+    ]
+  }
+}
