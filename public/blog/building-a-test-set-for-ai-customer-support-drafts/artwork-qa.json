@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:49:14.232341+00:00",
+  "heroSha256": "fb0e42d9bd4f081bc0fc0c016cebccc8e0910ab62bae5e3036a0b3402a938a18",
+  "subject": "Case checklist and magnifier for review",
+  "purpose": "Case checklist and magnifier for review",
+  "hook": "Test the draft before it travels",
+  "keyWords": [
+    "building",
+    "a",
+    "test"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/sep30-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

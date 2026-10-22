@@ -1,0 +1,30 @@
+{
+  "slug": "britannias-vs-eagles-which-silver-coin-is-best",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T19:28:44.175411+00:00",
+  "review_notes": [
+    "Replaced rejected generic draft with a complete 1275-word comparison addressing both named coins.",
+    "Current mint specifications checked against primary sources; no current price, return, or tax exemption claims.",
+    "Reviewed full article, metadata, social copy, and revised 121-second estimated narration. Reel data synchronized with approved narration.",
+    "Hero and square photo artwork visually inspected; deterministic QA passed. Rendered reel requires separate audiovisual review."
+  ],
+  "sources": [
+    "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/bb26s1c-britannia-2026-1oz-silver-bullion-coin/",
+    "https://www.usmint.gov/coins-precious-metal-coins/bullion-coin-programs/"
+  ],
+  "artifact_sha256": {
+    "verified.md": "7cfce403d9d4a251df2762ee7623045a4a5e2ec1ca4d1be4a395fab7ba328920",
+    "index.html": "889349dda1bd23b929be552cd19fa13151a834d9759efb6548ecd5de983ad09b",
+    "meta.json": "b0b8378d9b552e2319d0f7aaef26ff976b19a2109efe4f72752eabb1cfa5e914",
+    "hooks.json": "6cc5934ae016e2c03d5b65304c361c16d172b363ed02def2455752bb31a1bba4",
+    "hero.jpg": "a991a5080a6a9d90381252aa4d91be4cc6e173c26c7923afff323ce9f338527c",
+    "photo-post.jpg": "83a4f976fe0743b2b6bdd44e4bc590eb7683a9e73fff8fe4ccf0b602e7594a9d",
+    "reel-data.md": "2b4d24f65bb0d14a4a56a06d3abfd0f5b2d9e0fc71e8f19f92dc422235c0cdd5",
+    "reel-script.md": "b6d7a74c3b0c61cc888a5348a39e8571234f1ed4f818ebaedac28b6bdc602d84",
+    "social-copy.json": "d0000840653b3b42988385e5c251c4d2c476c4b51fd1ad3a8b3efc898d36ba9e",
+    "research.json": "41063d1d94a315b0745c8b8e1d0fcabe33fa973f5fb5aea11177478a2c625ad6"
+  }
+}

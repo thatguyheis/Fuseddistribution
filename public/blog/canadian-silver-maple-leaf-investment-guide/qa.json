@@ -1,0 +1,29 @@
+{
+  "slug": "canadian-silver-maple-leaf-investment-guide",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T16:08:43.666588+00:00",
+  "review_notes": [
+    "Reviewed the full corrected article, metadata, hook and social copy, reel narration and labels.",
+    "Confirmed Mint purity, weight, denomination and security facts against the official 2026 product page.",
+    "Removed unsourced market prices, insurance costs, business inventory claims and predictions.",
+    "Hero image inspected; deterministic artifact QA passed. This approves blog publication, not an unrendered video release."
+  ],
+  "sources": [
+    "https://www.mint.ca/en/shop/coins/2026/2026-sml-1-oz-9999-pure-silver-coin-bullion"
+  ],
+  "artifact_sha256": {
+    "verified.md": "2b796244295976927ece5cad8b4549956ce3a77b695b67448d81e46fbf677a10",
+    "index.html": "2dfbf84f1add09f821a2989e4cc993d95d89f0856d269769f87c39b86f0cdcbf",
+    "meta.json": "68e66663f4dbc9b16675a8bb3a4bba28a7c9337cef8e951ec2ef04e2b2e7a276",
+    "hooks.json": "d19e41b28adc79996891f6dfbf8139ddb2b48a1a4e2cc668592e825deb079eda",
+    "hero.jpg": "b075377522a090b60817f6656930d84d34e0a2657ef04765069833913d555ca7",
+    "photo-post.jpg": "b4a5f69ef8a3b7554375800dd77f844aaa629f8943dc02673f12064adf36c5f6",
+    "reel-data.md": "33e4e4d373e17da38f612fd4572a293e74a654b6e8c493e1de3d832938764cf6",
+    "reel-script.md": "9906daddd8da45f7dbf1a13961e4c4aaee6d904e992fd8e1aa7ee51cdd018120",
+    "social-copy.json": "1b37e52f72bb970168390bb09cab1aeed8d9c956f4a3526ab97b6aa1b05d0a0c",
+    "research.json": "bcb1d8dc62ea7202e3f350aae09fb926149aadfd8a2d9f21d97fd484375d56b2"
+  }
+}

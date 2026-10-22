@@ -1,0 +1,10 @@
+{
+  "hook": "Compare the whole transaction, not just the coin name.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "999",
+    "label": "Silver fineness"
+  },
+  "discussion_question": "What matters most when you compare silver coins?",
+  "hashtags": "#Silver #Bullion"
+}

@@ -1,0 +1,10 @@
+{
+  "hook": "Check the full cost before buying Maple Leafs.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "99.99%",
+    "label": "Fine silver purity"
+  },
+  "discussion_question": "What do you check first in a silver coin quote?",
+  "hashtags": "#Silver #MapleLeaf #Bullion"
+}

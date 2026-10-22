@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "editorialProfile": "coin-history",
+  "slug": "carver-washington-half-dollar-two-educators",
+  "title": "Why the Carver-Washington Half Dollar Honors Two Educators",
+  "brand": "silver",
+  "readerPromise": "Why the Carver-Washington Half Dollar Honors Two Educators",
+  "reel": {
+    "topic": "Why the Carver-Washington Half Dollar Honors Two Educators",
+    "promise": "Two educators, one institution, one coin",
+    "sectionIds": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "Washington builds a school in Tuskegee",
+      "readerQuestion": "What institution connected the two men?",
+      "purpose": "Describe the 1881 school opening, its thirty students, and the practical education model.",
+      "keyPoints": [
+        "Describe the 1881 school opening, its thirty students, and the practical education model.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CW1",
+        "CW4"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s02",
+      "heading": "Carver brings agricultural science to the campus",
+      "readerQuestion": "What did Carver teach and why did it matter?",
+      "purpose": "Follow his 1896 appointment, long tenure, crop rotation, and response to depleted Southern soil.",
+      "keyPoints": [
+        "Follow his 1896 appointment, long tenure, crop rotation, and response to depleted Southern soil.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CW2",
+        "CW5"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s03",
+      "heading": "Congress joins the names on a coin",
+      "readerQuestion": "Why did their coin arrive after their lifetimes?",
+      "purpose": "Explain the 1946 authorization, 1951 amendment, 1951-1954 production, and the visible paired portraits.",
+      "keyPoints": [
+        "Explain the 1946 authorization, 1951 amendment, 1951-1954 production, and the visible paired portraits.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CW3",
+        "CW7"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s04",
+      "heading": "Hathaway’s design and the 1954 ending",
+      "readerQuestion": "What did the paired issue show and support?",
+      "purpose": "Identify Isaac Scott Hathaway’s design, the map reverse, final issue date, and beneficiary proceeds without describing a side not shown in the owner photo.",
+      "keyPoints": [
+        "Identify Isaac Scott Hathaway’s design, the map reverse, final issue date, and beneficiary proceeds without describing a side not shown in the owner photo.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "CW6",
+        "CW7"
+      ],
+      "targetWords": 180
+    }
+  ]
+}

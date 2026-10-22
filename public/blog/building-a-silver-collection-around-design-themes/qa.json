@@ -1,0 +1,25 @@
+{
+  "slug": "building-a-silver-collection-around-design-themes",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.024309+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "38e44fca28503152afa0c29e244bec8de223ee840c0f96adb1d175607123502b",
+    "index.html": "89e0cf1b3188ad3983b435d60f4a1228ad9f896975c6063aa28da26e1ef2af4d",
+    "meta.json": "59e3a6aea7e6b6a548ee3115ece48713cbcccdc97baa46553f1cfec8c83aca26",
+    "research.json": "331eb69cd59bfc772aecffc753900be53ba674493207cc4ee9c4f92d4389a578",
+    "hero.jpg": "4c2652d1e4367a6d19123486b5d74d65005eff7e9e14d747a8769c40fea00b1e",
+    "photo-post.jpg": "c1b742fb44d90b6aae37d665158e18ecb81d1af3d094c4c3ab9877f4827650a2",
+    "reel-script.md": "f9cb0891776eb061e985268710ce65e940aeac6f5404b01fd71f39a7ba783f77",
+    "reel-data.md": "f47776213c565ccdf8b53b58d6e58c47efde6becfe5590c3765f8c9cb426e622",
+    "social-copy.json": "987ca3e6017255aa6843eeae9411403943babfcf8327b47a1e52d9a0b1b1dae0"
+  }
+}

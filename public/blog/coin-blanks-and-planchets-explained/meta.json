@@ -1,0 +1,31 @@
+{
+  "slug": "coin-blanks-and-planchets-explained",
+  "title": "Coin Blanks and Planchets Explained",
+  "description": "Understand coin blanks, raised rims and planchets, then learn how to separate a production term from evidence about an individual item in your collection.",
+  "alt": "Metal discs progress toward finished coins",
+  "brand": "silver",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Minting",
+    "Collecting"
+  ],
+  "ctaLine": "With coins, are you more interested in the design or how they are made?",
+  "contentGraphic": {
+    "label": "Simplified coin production sequence",
+    "rows": [
+      {
+        "condition": "Blank",
+        "action": "Unstruck metal disc"
+      },
+      {
+        "condition": "Planchet",
+        "action": "Rim formed in the Mint description"
+      },
+      {
+        "condition": "Struck coin",
+        "action": "Design impressed by dies"
+      }
+    ]
+  }
+}

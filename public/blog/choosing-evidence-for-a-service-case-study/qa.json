@@ -1,0 +1,24 @@
+{
+  "slug": "choosing-evidence-for-a-service-case-study",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-08T13:58:36.753375+00:00",
+  "review_notes": [
+    "Read and checked article and companion claims against the cited primary source. Original practical guidance is distinguished from source facts; no invented metrics or forecasts.",
+    "Reviewed exported topic specific hero and square graphics. Corrected the case study footer spacing and inspected its final hero.",
+    "Deterministic article QA, production script parser and narration duration preflight passed. Final speech, video rendering and encoded review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "07b1af462150700db17c1673e72f159d7c27b737b7f36e191eec24166884d5fa",
+    "index.html": "8dc99e7537937785df9ba38ba0af88cef88d77499b31d7fc33affb7eb06e0bad",
+    "meta.json": "d7e9e7a271cad4b45ba83e9074d08e7ec8879267f416ee6a272d442c0a86092b",
+    "research.json": "021b025da1b8c5e97f25ed614e75663495915f88478fbe5fed3ee62cbf25b173",
+    "hero.jpg": "725ca5bc4a7c482988a87d13fb67cb8cbd81ebcfb953cc891c740d00adfba694",
+    "photo-post.jpg": "e3c1e4bfc3aeca36a13d0dd399a3e47a6d15443668aa5c008758ab76e32b3493",
+    "reel-script.md": "c5036f8242e4e81e27b99c1925f45ad335379e1baca3c3d5e5c1cc9283e80be7",
+    "reel-data.md": "79493e57d633a5e08671e308aa8a467c5262fadfcc5d6f1ad25a97daaaaaa68f",
+    "social-copy.json": "0e15b69b5f2e55d29129dda438aa274ce386ff7fa2ef66976d766d310da4f822"
+  }
+}

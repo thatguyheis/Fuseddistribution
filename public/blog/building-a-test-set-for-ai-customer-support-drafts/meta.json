@@ -1,0 +1,27 @@
+{
+  "slug": "building-a-test-set-for-ai-customer-support-drafts",
+  "title": "Build a Test Set for AI Support Drafts",
+  "description": "Build a useful test set for AI support drafts with approved answers, missing-information cases, clear failure criteria, and records of reviewer corrections.",
+  "alt": "Test cases compare drafts against expectations",
+  "brand": "tech",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Operations",
+    "Content"
+  ],
+  "ctaLine": "For AI support drafts, would you prioritize speed or catching unsupported promises?",
+  "contentGraphic": {
+    "label": "Build a Test Set for AI Support Drafts",
+    "rows": [
+      {
+        "condition": "Define draft boundaries",
+        "action": "Include difficult cases"
+      },
+      {
+        "condition": "Set expected outcomes",
+        "action": "Preserve the comparison"
+      }
+    ]
+  }
+}

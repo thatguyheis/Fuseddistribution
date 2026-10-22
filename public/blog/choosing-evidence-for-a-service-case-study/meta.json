@@ -1,0 +1,27 @@
+{
+  "slug": "choosing-evidence-for-a-service-case-study",
+  "title": "Choosing Evidence for a Service Case Study",
+  "description": "Choose evidence that supports a service case study, keep the baseline and measurement period visible, and distinguish observed results from unproven claims.",
+  "alt": "Case study balances claims against evidence",
+  "brand": "tech",
+  "date": "2026-10-08",
+  "modifiedDate": "2026-10-08",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you trust a case study with modest measured results or impressive screenshots more?",
+  "contentGraphic": {
+    "label": "Choosing Evidence for a Service Case Study",
+    "rows": [
+      {
+        "condition": "Match case study evidence to a specific claim",
+        "action": "Keep the case study baseline and period visible"
+      },
+      {
+        "condition": "Separate measured results from possible explanations",
+        "action": "Publish evidence the customer can understand"
+      }
+    ]
+  }
+}

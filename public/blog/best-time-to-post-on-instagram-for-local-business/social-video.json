@@ -3,6 +3,11 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/best-time-to-post-on-instagram-for-local-business/best-time-to-post-on-instagram-for-local-business.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.183Z"
+  "platforms": {
+    "instagram": {
+      "url": "https://www.instagram.com/reel/DdIScbtk8TW/",
+      "sentAt": "2026-09-11T02:01:16.977Z"
+    }
+  },
+  "updatedAt": "2026-09-11T05:00:13.315Z"
 }

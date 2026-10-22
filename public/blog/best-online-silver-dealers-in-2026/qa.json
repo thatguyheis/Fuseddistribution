@@ -1,0 +1,31 @@
+{
+  "slug": "best-online-silver-dealers-in-2026",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:29:02.719003+00:00",
+  "review_notes": [
+    "Owner read full source grounded article and all eight final narration segments. Reviewed current primary company/product documentation and corrected misleading or unsupported claims.",
+    "Owner viewed both actual topic specific JPEG exports. Hypothetical figures, quantity and fine weight basis checked; no fabricated performance ranking or current quote.",
+    "Production parser and deterministic local QA passed. Actual reel rendering and platform posting are separate stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "ef9eeea04559c28ef6e45cc2856d2367fd70ca8650bcd9e7604998c1a15913ad",
+    "index.html": "e40b6a177066aa0baaecc47ba17ed8d63d4c304a6e5cd912e46330b7be579239",
+    "hero.jpg": "6b549cf43eeb1d57d2adf6ba472813a64369bcaead0ccb5f5b3c15f5c34c6413",
+    "social-video.json": "5979ea6328c6771d4e90e15e51ca23b0e5c84ddc7aa55ca246b79607947adcc2",
+    "social-copy.json": "14933ad4cf85e382db86a8f6c61fc4c2aa97b435f8561a8bf60de22aa17b54df",
+    "hero.svg": "9d7c4ad53a7249f0bc1e04cfa82bedd3bc09cc2a50518be1c33ab332282907da",
+    "posting-pack.md": "dd8970b882b73112739b904285df22ca5b98e15d20f729c2abf5d30ad280adef",
+    "reel-data.md": "ff8e5d0a4e4104a337bcbad4f28039cb122751f20c100b84fe0b33de20f31527",
+    "photo-post.svg": "144d0d4f52934869d28d6815434d3afe118747478ed16b02bd97eefaa4e28667",
+    "research.json": "592dd641fa9b4747bbd93933e5bdc11fee7a8dfda0c0e080988480b1df4770b5",
+    "hooks.json": "ab1e133b12b41b5b17d20499fddf795a8e2632e6c5b1f9479cbc67d0e7afdfb6",
+    "reel-script.md": "98d111762e98dda25ed7401792517b868c1b60a458805d371d23b70fb69e538d",
+    "gemma_draft.md": "ef9eeea04559c28ef6e45cc2856d2367fd70ca8650bcd9e7604998c1a15913ad",
+    "posting-pack.json": "ba61dbb8a01bbee2318e53a95cba970f5f4ca4fe1c591f906e2bf9bc4f2f6c33",
+    "photo-post.jpg": "6edcce2d37ac497baec65cf1661d31bf5123e8029e3b6de59ddf67542063516b",
+    "meta.json": "f16c6b9beccb7c6146164d43d58a21b56c31f99cc8d5137b9c2f4981f125684c"
+  }
+}

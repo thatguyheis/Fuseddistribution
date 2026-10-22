@@ -1,0 +1,28 @@
+{
+  "slug": "best-silver-mining-stocks-to-watch-in-2026",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:29:03.478930+00:00",
+  "review_notes": [
+    "Owner read full source grounded article and all eight final narration segments. Reviewed current primary company/product documentation and corrected misleading or unsupported claims.",
+    "Owner viewed both actual topic specific JPEG exports. Hypothetical figures, quantity and fine weight basis checked; no fabricated performance ranking or current quote.",
+    "Production parser and deterministic local QA passed. Actual reel rendering and platform posting are separate stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "05363a54f1294342a95fb0f8d0fd056cb4749803ff23ae87a0b7dbd0d119ed45",
+    "index.html": "23d46cbf2dc68b34f0644a45c0b10101084a315648f8433745e7ace02bdc80bc",
+    "hero.jpg": "c2ce661a4dc40a126d6f3aafe62b99f222b23a5c22e1f479d523e0881826c5b6",
+    "social-copy.json": "24759e89934982cb47bc38c108db8da920094cf49a37ab4a1aef099d6c744b3e",
+    "hero.svg": "9f9e777b8774cb1603406f8fa2162e45ddaf8ee96748786954bc1b4fe90cbab2",
+    "reel-data.md": "028846b2f760dbdcd43e24daa10cab8ff4187d159294936733c318eefe1eaed5",
+    "photo-post.svg": "06d504f2880a95016d7e9fd054f09bca390d7766427ece48826a490736a65008",
+    "research.json": "3f1952c376721245973dbd752ead4d93fa47ce031f71746e21f73ac110cd2f3d",
+    "hooks.json": "3171fe3b697c41446fb0796ce127ac2d586eb1ca5c3e80ae7f8a5eec218ee540",
+    "reel-script.md": "3547d4ba566816b4894b66761a19b57da44e8b53fc073a3a3af3882fec90bf79",
+    "gemma_draft.md": "05363a54f1294342a95fb0f8d0fd056cb4749803ff23ae87a0b7dbd0d119ed45",
+    "photo-post.jpg": "1974a6485a0679c065d4681e799daa866f595c21fd86060417cac626e02ea677",
+    "meta.json": "2dbbc478db6b37b2049074618f0e22532018974c7e4b4ab6143a990d35db9379"
+  }
+}

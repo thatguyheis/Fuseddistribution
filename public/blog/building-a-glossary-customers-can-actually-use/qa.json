@@ -1,0 +1,25 @@
+{
+  "slug": "building-a-glossary-customers-can-actually-use",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T16:24:02.585928+00:00",
+  "review_notes": [
+    "Reviewed complete article and companion narration against cited primary source context. Original advice and hypothetical examples are identified; no invented statistics, historical data presented as current, or investment promises.",
+    "Inspected the actual hero and square exports: subject specific explanatory diagrams, readable hooks, no material clipping.",
+    "Article QA, narration duration preflight and production parser passed. Human review narration was expanded from article-supported text after the first duration check failed. Final video production and review remain pending.",
+    "Video panel only reviewed 2026-10-12: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-13T05-00-17-599Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "f18092b455b42a960e199026945bbd0adde883c13ac7cedfde8c2ac6be6c1f3d",
+    "index.html": "a6eb79f4188f80ebe2e570434caffc57367aeaa5e97d5f564a5e3e2465f6562e",
+    "meta.json": "9ce338693deb9d87ce613a4934162453650f16224f8228efeafadafbd9065f1f",
+    "research.json": "9a54fbc66f4cf216879043d7f8873cb87f9a82e8c86abab515ca799881812ce0",
+    "hero.jpg": "682fcf31a2a82beeddad544ec23574ed8a3d4297da25aba4542e6e32ac736360",
+    "photo-post.jpg": "40fc7af3daaf234f4bc25299ca5dc5ed500c491e5183d9d103a90a697b92c86d",
+    "reel-script.md": "796d2a67ac97db63b52e49c75e2999f83898dd0a7cba8ca053f283f69c6eea28",
+    "reel-data.md": "58e9a6e3e7e0b383f12351116f63a2c1bac39aa9798caf6fbf8603a241887545",
+    "social-copy.json": "b3afd723a3fbade71603f14cf36c4d947e4ca46917f9fdc1fec65d2ddafecc0d"
+  }
+}

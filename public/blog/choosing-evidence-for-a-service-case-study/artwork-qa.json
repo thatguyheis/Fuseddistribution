@@ -1,0 +1,24 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-08T13:58:36.753375+00:00",
+  "heroSha256": "725ca5bc4a7c482988a87d13fb67cb8cbd81ebcfb953cc891c740d00adfba694",
+  "subject": "Case study balances claims against evidence",
+  "purpose": "evidence conceptual explanation",
+  "hook": "Show the work. Prove the claim.",
+  "keyWords": [
+    "evidence"
+  ],
+  "chartEvidence": "Conceptual illustration, no measured results implied",
+  "preview": ".workflow-state/recovery-2026-10-08/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

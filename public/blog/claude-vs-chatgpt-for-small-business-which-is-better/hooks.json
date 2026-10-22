@@ -1,0 +1,10 @@
+{
+  "hook": "Choose an AI assistant by verified work, not a brand ranking.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "3",
+    "label": "Check tasks, sources and total effort"
+  },
+  "discussion_question": "Which business task would you compare first?",
+  "hashtags": "#SmallBusiness #AI"
+}

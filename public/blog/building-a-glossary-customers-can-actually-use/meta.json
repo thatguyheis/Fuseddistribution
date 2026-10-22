@@ -1,0 +1,27 @@
+{
+  "slug": "building-a-glossary-customers-can-actually-use",
+  "title": "Build a Glossary Customers Can Actually Use",
+  "description": "Build a customer glossary from real questions, explain terms in their context, connect definitions to tasks, and review entries when your service changes.",
+  "alt": "Customer question connects with glossary definition",
+  "brand": "tech",
+  "date": "2026-10-09",
+  "modifiedDate": "2026-10-09",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you prefer a definition beside a word or a link to a fuller glossary entry?",
+  "contentGraphic": {
+    "label": "Build a Glossary Customers Can Actually Use",
+    "rows": [
+      {
+        "condition": "Choose glossary terms from customer questions",
+        "action": "Write glossary definitions in the right context"
+      },
+      {
+        "condition": "Connect the glossary to the customer task",
+        "action": "Test glossary entries with real questions"
+      }
+    ]
+  }
+}

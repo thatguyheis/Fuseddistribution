@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-09T16:24:02.585928+00:00",
+  "heroSha256": "682fcf31a2a82beeddad544ec23574ed8a3d4297da25aba4542e6e32ac736360",
+  "subject": "Customer question connects with glossary definition",
+  "purpose": "conceptual explanation",
+  "hook": "Explain the word. Keep the reader moving.",
+  "keyWords": [
+    "building",
+    "a",
+    "glossary"
+  ],
+  "chartEvidence": "Conceptual diagram, no measured results",
+  "preview": ".workflow-state/recovery-2026-10-09-batch/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

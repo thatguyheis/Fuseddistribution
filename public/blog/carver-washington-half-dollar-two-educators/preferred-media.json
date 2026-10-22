@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "fused-owned-coin-library",
+  "mode": "mixed",
+  "segments": [
+    {
+      "index": 0,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 1,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 2,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 3,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 4,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 5,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    },
+    {
+      "index": 6,
+      "path": "public/blog/carver-washington-half-dollar-two-educators/images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "assetIds": [
+        "coin-0021"
+      ],
+      "role": "verified obverse anchor only; do not imply image depicts narrated historical people or events",
+      "type": "photo",
+      "reviewed": true
+    }
+  ]
+}

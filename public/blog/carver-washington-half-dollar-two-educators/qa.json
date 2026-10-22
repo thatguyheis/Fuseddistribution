@@ -1,0 +1,34 @@
+{
+  "slug": "carver-washington-half-dollar-two-educators",
+  "score": 98,
+  "pass": true,
+  "blockers": [],
+  "mode": "coin-history-automated",
+  "automaticApproval": {
+    "policy": "coin-history-auto-v1",
+    "model": "gemma3:4b",
+    "qualityThreshold": 85,
+    "transcriptHashVerified": true,
+    "lastRevision": "Shortened the hook and removed vague contextual wording after measured Chatterbox narration exceeded the 135-second cap; retained only verified claims and source mapping. Media now uses the verified owner coin photograph as the visual anchor; prior mismatched stock and generated scenes are excluded."
+  },
+  "artifactSha256": {
+    "verified.md": "29930cfb072d0001b9cb50295a64cfa2a68ee8510631e5323368732ce3bbfeec",
+    "index.html": "6b280fdc381d83bc1ac5690a4dc4f47d2589c3bc0ef71cd994eb4e56631a61ec",
+    "meta.json": "4d48864fbd967a90596771a9747dd53aedeb2917f7c67d3a8951c3a4a80e8067",
+    "research.json": "8dc56a6743a842758817cf3a074c3aac60a7f6173bc41ab7e81733ab4bcbf4d5",
+    "hero.jpg": "685cef249f36e20a7050e38a5dfd0ff44c9ad5274321ce371a18c6f2a4cd7f63",
+    "photo-post.jpg": "825c75df6bdfd821d1788735c1e966e7de7f6d8545fca31d1376113ce8369760",
+    "reel-script.md": "e3e41a4e1564664f11e072a2b2ace502e69fb702f694daed35f85122dd567f29",
+    "reel-script-approved.md": "e3e41a4e1564664f11e072a2b2ace502e69fb702f694daed35f85122dd567f29",
+    "reel-data.md": "78f00dc4845aa19dd5c5b2f7987530848663f9fd0604ac5f3235d8747ac02cdd",
+    "social-copy.json": "ffe1b9f1df2bc8c494bb545591ab46c763554c5a310b624d6ebf0048951da8c8",
+    "production-inputs.json": "6c410bb0234e2ffaf5d410e8f78de282687cdf1ee23cdb8e628f003e39ec0225",
+    "image-sources.json": "f2c465c73c8edd0082c81d5f022d36e266301799beac7b2d6bb7c83fe062f23f",
+    "content-plan.json": "ba6f370a62bab8f2f2374c287e146f189044c19a31eff717e285cbee11896041",
+    "pipeline-marker.json": "c7d9b09c422e061199b0dc622d101ba7c1182f7a035c88ab90206194ac52db7e",
+    "content/coin-history/carver-washington-half-dollar-two-educators/narration-v1-approved.txt": "f39d8c9c4be86fb8acaab1ce819195d75bca1a05d8a434d07b209fb90c0dd288",
+    "content/coin-history/carver-washington-half-dollar-two-educators/script-approval.json": "9654562746623040f810baa3a5538c25dd87f679da6ca01da8d39f8a73f66e87",
+    "content/coin-history/carver-washington-half-dollar-two-educators/claim-map.json": "0496a3d5f07ab45a565134210900f4e2ecbac7d16e6bae477b79686293e72368",
+    "preferred-media.json": "3016c47afd7f80ce4657d148728bb1b4f4e50b3c65e8f93f5ec870d71c6b903d"
+  }
+}

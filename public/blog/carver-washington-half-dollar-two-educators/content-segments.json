@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "slug": "carver-washington-half-dollar-two-educators",
+  "planVersion": 1,
+  "model": "gemma3:4b",
+  "helper": "/Users/nick/projects/fuseddistribution/scripts/ollama-local-no-think.sh",
+  "generatedAt": "2026-10-20T19:21:31.610Z",
+  "totalWords": 969,
+  "telemetry": {
+    "opening": {
+      "resumed": true,
+      "attempts": 0,
+      "seconds": 0,
+      "words": 189
+    },
+    "sections": {
+      "s01": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 176
+      },
+      "s02": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 187
+      },
+      "s03": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 171
+      },
+      "s04": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 211
+      }
+    }
+  }
+}

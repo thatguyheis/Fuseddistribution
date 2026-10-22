@@ -1,0 +1,25 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:40:44.006936+00:00",
+  "heroSha256": "c47ab1b79f29312bda2b29b03241b2478c53921f959cc6b1e5293768938e4f10",
+  "subject": "Draft document routed to a human reviewer",
+  "purpose": "Draft document routed to a human reviewer",
+  "hook": "Start with a draft, keep control",
+  "keyWords": [
+    "draft",
+    "review"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/choosing-a-low-risk-first-ai-task-for-a-small-business-phone.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "building-a-test-set-for-ai-customer-support-drafts",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.216542+00:00",
+  "review_notes": [
+    "NIST voluntary framework context distinguished from original proposed test method. No automatic sending, certification or measured performance claims.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Support-test review label centered after initial inspection; revised export inspected.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-06T05-32-53-377Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "d2706a7f0a555e293c4fa700c3d11e237a3ef491246c335725a46e245b44a270",
+    "index.html": "647c8b09999dbdd054de870d3653b729f7aa950e5545c30a2e12fa17db30fe2c",
+    "meta.json": "91d51ed044188b6ddbb99e34fd3a3e702e093f05face961dd889c137cf10f9c4",
+    "research.json": "b109da1b28fc9b3aad025ac49aba2296fbe245d9bda91d71fa05fa405c983c7d",
+    "hero.jpg": "fb0e42d9bd4f081bc0fc0c016cebccc8e0910ab62bae5e3036a0b3402a938a18",
+    "photo-post.jpg": "4619a8d86be84de4ee19a823bb0a66758b9e13ba763741a272b07d35df4eac24",
+    "reel-script.md": "d2af8e0ee239254a216e0e2c07da30e6405e8978a8454397bfcab80c8b8ddc44",
+    "reel-data.md": "29ddf2bae5ca9ec05333198bfdd86c61d03b40451e002ee794cb0c4bcce0207a",
+    "social-copy.json": "59d1dfa8c605156a9b60955016bbfee24d4f893f8065f733e47161fd24ac6fdb"
+  }
+}

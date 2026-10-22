@@ -1,0 +1,26 @@
+{
+  "slug": "choosing-a-low-risk-first-ai-task-for-a-small-business",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:29.934808+00:00",
+  "review_notes": [
+    "NIST voluntary framework scope checked; suggested trial is original guidance, not a certification or measured productivity claim.",
+    "Full article, topic-specific companions and narration reviewed. Local QA and parser pass.",
+    "Full-size and square JPEGs and actual 360x640 contained hero previews visually reviewed: clear subject, readable main hook, no clipping. Audio/render/release remain pending.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "9f0ff4cb6fe783c1ba91a39f257daf135f92e462c1d12be8f4ee6fabe5d515c4",
+    "index.html": "cb646b9ab065b35ca72ae339be20e699c830bc11bcc7d5dbce14490e861ccafc",
+    "meta.json": "09b3bba09139de90f52d17d49bc17220f7b1cab402c29e145344e13fa369f236",
+    "research.json": "baaf40f813cc50a14e9a1d261a96c532b3d775d504f75281462b7d88e29852ed",
+    "hero.jpg": "c47ab1b79f29312bda2b29b03241b2478c53921f959cc6b1e5293768938e4f10",
+    "photo-post.jpg": "b0e82666ccc65b6984ffb8d90f47bd24fb63964274af2937d297eb1499f83bd2",
+    "reel-script.md": "0811f8fddcce85c00706ad9b441dfad5f28282ce0c7e3de1783ddebac3a73ad1",
+    "reel-data.md": "e622786070a9989acd0b915210c60d55537562a76c7b980b9374a2c30faf2780",
+    "social-copy.json": "717ea984ed2e1a6fc84591bdedbdaf9687d08117689d87518e98ca3bc50fa8ce"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Claude vs. ChatGPT Content Generation",
+  "takeaway": "Claude consistently outperforms ChatGPT on tasks requiring complex reasoning and detailed writing.",
+  "source": "Anthropic internal testing data",
+  "source_url": "https://anthropic.com/research/constitutional-ai",
+  "data": [
+    {
+      "label": "ChatGPT Output Quality",
+      "value": "Often generic or repetitive",
+      "metric": "Content Quality",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "However, ChatGPT\u2019s output can sometimes feel generic or repetitive."
+    },
+    {
+      "label": "Claude Output Quality",
+      "value": "More nuanced and sophisticated",
+      "metric": "Content Quality",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Claude, on the other hand, is designed to produce more nuanced and sophisticated text."
+    },
+    {
+      "label": "Reasoning Task Effectiveness",
+      "value": "85%",
+      "metric": "Task Effectiveness",
+      "unit": "%",
+      "period": "N/A",
+      "evidence": "Research shows that Claude is 85% more effective than ChatGPT at tasks requiring multi-step reasoning."
+    }
+  ],
+  "hero_stat": {
+    "value": "85%",
+    "label": "Claude's Reasoning Advantage"
+  },
+  "narration": "According to Anthropic's internal testing, Claude consistently generates higher quality content than ChatGPT, particularly when dealing with complex reasoning and detailed writing. This difference in performance is quantified as Claude being 85% more effective at multi-step reasoning tasks."
+}

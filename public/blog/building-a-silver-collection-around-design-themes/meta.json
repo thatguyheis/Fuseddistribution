@@ -1,0 +1,27 @@
+{
+  "slug": "building-a-silver-collection-around-design-themes",
+  "title": "Build a Silver Collection Around Design Themes",
+  "description": "Compare designs, define collection boundaries and keep useful records while building a silver collection around a theme that reflects your own interests.",
+  "alt": "Coin designs connect around collection theme",
+  "brand": "silver",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "Do you collect by design theme or by completing a set?",
+  "contentGraphic": {
+    "label": "Build a Silver Collection Around Design Themes",
+    "rows": [
+      {
+        "condition": "Choose a design theme you can explain",
+        "action": "Define what belongs in the collection"
+      },
+      {
+        "condition": "Set limits before looking at listings",
+        "action": "Make the collection record useful"
+      }
+    ]
+  }
+}

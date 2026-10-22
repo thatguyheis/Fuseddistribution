@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "slug": "carver-washington-half-dollar-two-educators",
+  "assets": [
+    {
+      "path": "images/coin-evidence.jpg",
+      "sha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+      "source": "Coin Raw/IMG_3733.jpeg",
+      "sourceSha256": "ec71f1e396979ce0da89e85777afa1c6e0d05ffcf7cdc34be235a05496d8cb8b",
+      "sourceType": "owner-supplied",
+      "assetId": "coin-0021",
+      "label": "Carver-Washington half dollar obverse; owner photograph, one side only",
+      "role": "coin evidence",
+      "crop": {
+        "left": 250,
+        "top": 900,
+        "width": 2600,
+        "height": 2200
+      },
+      "page": null,
+      "license": "Owner-supplied; authorized for Fused blog and reel use",
+      "attribution": "Nicholas / Fused Distribution"
+    }
+  ]
+}

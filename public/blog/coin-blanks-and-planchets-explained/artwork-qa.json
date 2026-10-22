@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:36:24.470958+00:00",
+  "heroSha256": "bb6110e2b17dd60efff2527a115700040fe4b96f83ffaeee1a30d4b24a388ae4",
+  "subject": "Blank, rimmed planchet and conceptual struck coin",
+  "purpose": "Explain progression through distinct material stages",
+  "hook": "Before the coin has a design",
+  "keyWords": [
+    "blank",
+    "planchet",
+    "coin"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/planchet-phone.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "claude-vs-chatgpt-for-small-business-which-is-better",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T17:24:46.950408+00:00",
+  "review_notes": [
+    "Full replacement of failed August 3 comparison. Current official OpenAI and Anthropic project/workspace documentation checked. No fabricated benchmark, universal accuracy ranking, fixed subscription price, or Fused test claim.",
+    "Proposed matched-task comparison and 2+8=10 versus 4+3=7 example explicitly hypothetical. Actual September 8 publication and August 3 queued date separate.",
+    "Local QA passes; actual hero and square artwork visually reviewed. Synchronized eight-segment reel parses and validates, estimated 111 seconds. Rendering and audiovisual review remain pending."
+  ],
+  "sources": [
+    "https://learn.chatgpt.com/docs/projects",
+    "https://learn.chatgpt.com/docs/enterprise/roles-and-workspace-permissions",
+    "https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects",
+    "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
+  ],
+  "artifact_sha256": {
+    "verified.md": "d8c8fe97526e48909d510cd2f7cf8398064a6cceb51667a4edd029c5e6c5e5b5",
+    "index.html": "9f85bfb51bba55ced3c8a1290d52964db19846aff80dc1a9bbfdbf9b0f7f8e6c",
+    "meta.json": "bf59203d418789941a9835dd621a6468530c200091d1b572c1978ef07389af1b",
+    "hooks.json": "e43c8caa5272b9c2cb992386441ea212a2b7ead21b672fafa320dfe676001424",
+    "hero.jpg": "b310ad6be4e5ded3b0e4e374d77410c4ffcca07ae365704b78b52543f9c2820b",
+    "photo-post.jpg": "1bcbfec61cb63b80a8d4e0a601291807912d34a302d1bfd732fecae3ba786a71",
+    "reel-data.md": "47fc122051402741025a00191e02ed6743f0d3c25e6788e6855c74c121343432",
+    "reel-script.md": "4024cf0b5efaceff8ee12e99e3e9e604a265c25d4fe05f16201a161a2ab9e342",
+    "social-copy.json": "a411d7f2f73257b9717e8a961162faf62596dceaaf0e06b1c689f304e9a96d11",
+    "research.json": "7d411ff78f3d78b801a162b76727f5cb70e641440c181c83d1a65a484092086a"
+  }
+}

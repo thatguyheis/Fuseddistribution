@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.499201+00:00",
+  "heroSha256": "4c2652d1e4367a6d19123486b5d74d65005eff7e9e14d747a8769c40fea00b1e",
+  "subject": "Coin designs connect around collection theme",
+  "purpose": "collection conceptual explanation",
+  "hook": "Choose a theme. Build a story.",
+  "keyWords": [
+    "building",
+    "a",
+    "silver"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-0.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

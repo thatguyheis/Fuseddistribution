@@ -1,0 +1,25 @@
+{
+  "slug": "coin-blanks-and-planchets-explained",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:29.860130+00:00",
+  "review_notes": [
+    "Full article and companions reviewed against U.S. Mint blanking, upsetting and striking explanation. Scope limited to process vocabulary; recordkeeping advice original, no purity/value/authentication claims.",
+    "Actual landscape/square artwork and 360x640 phone preview visually inspected. Clear progression, truthful labels and readable hook.",
+    "Deterministic QA and reel parser passed. Audio/render/release not yet performed.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "d91d76704d010968155fd542209ab7e1d16eb16667d911ef83a9fc2fa92f2ebd",
+    "index.html": "738511569d605fad9011de167923c95738a886f379b6d0607a2c2945ef7a04ea",
+    "meta.json": "8d54656eff6086711339680a5448fbc2d2e2d28e1b0dca0d62bb3a3fdd12a13b",
+    "research.json": "b0c5f243d9bc04426d5ec4d5845d4bd43ad123f94352ed928428d9f4d892663f",
+    "hero.jpg": "bb6110e2b17dd60efff2527a115700040fe4b96f83ffaeee1a30d4b24a388ae4",
+    "photo-post.jpg": "9036b150df0eede15d90df9b40b9be9806fe86e3b1cd6bddc28c23adde50ae3b",
+    "reel-script.md": "588cc81d27847f58987ac00a48b8c98fb44da06e1548348c5c35dca6a9df5278",
+    "reel-data.md": "b114b7e1d59537e04ade6bb4dcfeaa6b437c32b544b6322c5a67876fb6b021ed",
+    "social-copy.json": "183c202136ac86067498919a18d27c771abd3128e226d26d670b654765e9cf05"
+  }
+}
