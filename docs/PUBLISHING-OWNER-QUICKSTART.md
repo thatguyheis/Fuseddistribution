@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 ## Current blog incident priority, October8
 
 > Current schedule authority: `docs/BATCH-PRODUCTION-SOP.md` (October 5 onward). Historical times below are superseded: the owner runs 08:30/21:30, local Buffer refill runs 22:00 Pacific, and weekly review runs Friday 22:30. The current queue target is nine per channel with one reserve slot, superseding the historical October 4 ten-slot note. Do not re-enable the retired hourly or five-pass jobs.

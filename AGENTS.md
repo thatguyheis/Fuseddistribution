@@ -1,5 +1,15 @@
 # Fused Distribution — Codex Agent Instructions
 
+## Start here (blog, reel, Buffer, publishing)
+
+1. Read `docs/SOURCE-OF-TRUTH.md`. It is the single source of truth for scope, standards, schedule, workflow and git policy, and it wins over every other SOP.
+2. Read `docs/HANDOFF-GPT-2026-10-22.md` for what changed on 2026-10-22 and your ordered task list.
+3. Current scope: **coin history only, 3 finished blog and reel pairs per day.** Switch: `ops/content-scope.json`.
+4. Episode rules: `docs/COIN-HISTORY-SOP.md`. Render detail: `video/REEL-SOP.md`.
+5. To change a rule, edit SOURCE-OF-TRUTH and the enforcing code in the same commit. Do not add dated banners to other files.
+
+The rest of this file covers the photo library only. Its paths now live under `public/photos/`.
+
 ## Hard Rules
 
 - **Codex owns repository delivery** — commit and push only after scoped validation and explicit user authorization. Claude is not a required reviewer or deployment dependency.

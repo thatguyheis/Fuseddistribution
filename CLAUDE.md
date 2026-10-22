@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 # Claude Operating Instructions - Fused Distribution
 
 Read these files before changing blog, social, or video workflow code:

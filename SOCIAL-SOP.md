@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 ## Buffer capacity correction, September 29, 2026
 
 October4 current standard: follow `docs/ENGAGEMENT-SOP.md` for topic-specific final questions, opinion mix, caption CTA rotation and evidence-based reporting. Buffer target is ten scheduled/sending videos per channel, reserve zero; maintain release, rights, duplicate and request-budget gates. Use `docs/EDITORIAL-HERO-SOP.md` for enriched artwork and `docs/REEL-OPENING-SOP.md` for the encoded first frame.

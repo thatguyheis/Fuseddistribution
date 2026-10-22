@@ -9,3 +9,5 @@
 - `raw_03_logs_history.md`: week by week timeline, failure patterns, incident follow-ups
 - `raw_04_reel_outputs.md`: ffprobe of 650 MP4s, spec compliance, coverage, disk
 - `raw_05_blog_outputs.md`: index/sitemap consistency, duplicates, quality, deploy leakage
+- `session_summary_v2.md`: follow up (commits, coin scope, source of truth, handoff)
+- See also `docs/SOURCE-OF-TRUTH.md` and `docs/HANDOFF-GPT-2026-10-22.md`

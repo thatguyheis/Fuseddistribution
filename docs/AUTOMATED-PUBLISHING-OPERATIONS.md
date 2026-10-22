@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 ## Current October5 batch standard
 
 Follow `docs/BATCH-PRODUCTION-SOP.md` for current schedules. AI ownership is08:30 and21:30 daily plus Friday22:30 review; separate08:00 oversight is paused. Local research batches run Monday/Thursday23:00; Buffer refills once daily22:00. Preserve daily publishing and all release gates. Older schedule sections below are historical and do not authorize extra runs.

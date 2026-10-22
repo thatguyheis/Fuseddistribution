@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 # Reel Creation — Standard Operating Procedure
 
 Current visual standard: `docs/REEL-ENRICHMENT-SOP.md` (October 13). This supersedes older photo-only body, blog-image-first and mandatory paper-collage rules.

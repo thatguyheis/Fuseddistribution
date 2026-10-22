@@ -1,3 +1,5 @@
+> **Source of truth:** `docs/SOURCE-OF-TRUTH.md` (2026-10-22) wins over this file wherever they disagree. Current scope is coin history only, 3 blog and reel pairs per day.
+
 # Batch production standard
 
 Visual enrichment and reusable media: `docs/REEL-ENRICHMENT-SOP.md`. Preserve verified evidence; use local illustrations and licensed stock in supporting scenes.
