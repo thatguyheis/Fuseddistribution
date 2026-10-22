@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-test-website-links-after-changing-page-names",
+  "stats": [],
+  "reviewedDate": "2026-09-25",
+  "sources": [
+    {
+      "title": "link guidance",
+      "source_url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
+    }
+  ],
+  "status": "Official guidance checked; remaining checklists and examples are original suggested workflows, not reported outcomes."
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-request-indexing-after-updating-a-service-page",
+  "title": "Request Indexing After Updating a Service Page",
+  "brand": "tech",
+  "date": "2026-09-25",
+  "modifiedDate": "2026-09-25",
+  "description": "Request indexing after updating a service page. Verify the public copy, inspect the exact URL in Search Console, and track the request separately from results.",
+  "ogDescription": "Page updated. What comes next?",
+  "alt": "Updated service page indexing request checklist",
+  "tags": [
+    "Website",
+    "Maintenance"
+  ],
+  "ctaLine": "Which service page update needs a documented follow up?",
+  "contentGraphic": {
+    "label": "Public copy checked / Inspect the exact URL / Request recorded / Review later search evidence",
+    "rows": [
+      {
+        "condition": "Public copy checked",
+        "action": "Inspect the exact URL"
+      },
+      {
+        "condition": "Request recorded",
+        "action": "Review later search evidence"
+      }
+    ]
+  }
+}

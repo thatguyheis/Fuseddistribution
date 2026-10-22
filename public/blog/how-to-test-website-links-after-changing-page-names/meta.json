@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-test-website-links-after-changing-page-names",
+  "title": "Test Website Links After Changing Page Names",
+  "brand": "tech",
+  "date": "2026-09-25",
+  "modifiedDate": "2026-09-25",
+  "description": "Test website links after changing page names. Check menus, mobile navigation, actual destinations, and customer actions, then save a clear repair and test log.",
+  "ogDescription": "New page name. Same journey?",
+  "alt": "Website page rename link testing checklist",
+  "tags": [
+    "Website",
+    "Maintenance"
+  ],
+  "ctaLine": "Which renamed page link will you test on your phone?",
+  "contentGraphic": {
+    "label": "Name changed / List affected links / Repair made / Repeat the same visitor journey",
+    "rows": [
+      {
+        "condition": "Name changed",
+        "action": "List affected links"
+      },
+      {
+        "condition": "Repair made",
+        "action": "Repeat the same visitor journey"
+      }
+    ]
+  }
+}

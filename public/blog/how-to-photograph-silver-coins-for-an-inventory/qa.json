@@ -1,0 +1,25 @@
+{
+  "slug": "how-to-photograph-silver-coins-for-an-inventory",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-28T14:35:06.397354+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting."
+  ],
+  "artifactSha256": {
+    "verified.md": "46a751820af5f4e5541cbeed99148f68e127d318fe2ff1c32a0fb504b8bb595e",
+    "index.html": "5ed33dac7a21f767e212ebd641e8edf2650b26b82b09c1cdede4d76704514b55",
+    "meta.json": "fcd00cd920c0322fd3d86f26340830a7355655c06830197136d2dc05a21f8933",
+    "research.json": "6a48d311e7efed7c50aca66ddd75dcb36dd86637993935010dcb7a6f48e16ff8",
+    "hero.jpg": "088b3cdbee41c664e21279d5fc4d99e8c66178ca31fbef395a7a6958d3612ef7",
+    "photo-post.jpg": "fbb36ab20b889c35bd7b0a6b271a6ff9dcd3c895ab0d05f8daba13a86da70320",
+    "reel-script.md": "eea6a9729ad36c2a610db26599028a6bf2d5a1e7f97fe966e6568c0852a1e7a0",
+    "reel-data.md": "d8dd8ad4b23575a3db2d5b2c6cfaf13486a7916e2adb0c2bcfa17d87c2bea9af",
+    "social-copy.json": "690216df82a9d7ae3939e45a7aff726da7a8ddd4c291a96dd92d23a577830357"
+  }
+}

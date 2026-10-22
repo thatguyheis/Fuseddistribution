@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-reconcile-a-silver-inventory-after-a-sale",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.033896+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "0bea594ea258d9ee1bd68c5e0464e08d36f334d789996bacc95ccda528cecf9e",
+    "index.html": "6ee749308a6d7f205acb494cc6d8c3a662d42f81d09af0e5c92d852e484c39ad",
+    "meta.json": "00b81e6e1c8e7d9b73f8aa568a4fae1183c8dd61647d441839a745653a16ae7e",
+    "research.json": "820c97fcc2e335eece9d0fb0010290636ec31579b6f73d54e8a588efc793c525",
+    "hero.jpg": "d175e91a2e1fd252bf03b9bcbf5c9ff7b2c183d02f5d93b58768daaa2b448366",
+    "photo-post.jpg": "46c1a25816b44493f3f8fab0f5e910d8303cc9b4d2ac9ceaa25d448177e8f0ae",
+    "reel-script.md": "463bca02c50d10ddc42f61af2f3d15d4d3d03f3764bfdd9d2354363e0e9f9d39",
+    "reel-data.md": "3d19f0052019e05b3322b725193134f24e3e673f16f4859c976420cbcb964c9e",
+    "social-copy.json": "bf216832585df8ea38a4bfdc8091426096fd9de639b03774e5a49979aac09dbe"
+  }
+}

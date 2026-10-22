@@ -1,7 +1,32 @@
 {
   "slug": "how-to-read-silver-spot-price-charts",
   "score": 90,
-  "pass": true,
   "blockers": [],
-  "mode": "deterministic-local"
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T14:26:34.418016+00:00",
+  "review_notes": [
+    "Full corrected article reviewed against LBMA, CME and Fidelity definitions. All numerical examples explicitly hypothetical; no invented historical quotes, guaranteed floors, timing promises or Fused inventory claims.",
+    "Original August 27 date preserved, visible September 8 correction. OHLC arithmetic and support/resistance sequence checked; volume scope identified.",
+    "Local article QA passes. Actual hero and photo artwork visually reviewed. Synchronized eight-segment reel parses and validates; estimated 110 seconds. Rendered audiovisual review remains pending."
+  ],
+  "sources": [
+    "https://www.lbma.org.uk/market-standards/about-loco-london",
+    "https://www.cmegroup.com/education/courses/technical-analysis/chart-types-candlestick-line-bar",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance",
+    "https://www.cmegroup.com/education/courses/technical-analysis/support-and-resistance",
+    "https://www.cmegroup.com/trading/about-volume.html"
+  ],
+  "artifact_sha256": {
+    "verified.md": "6ac3049a3da7d8fc5cfc43deb3729a821a4c4ad61036475fa748b8f0e02dd5ee",
+    "index.html": "8e03489efb97c41fd532c8e48cadd16f7539a8675ea91e2cb29bc541f69afc60",
+    "meta.json": "dfcfaaf865e99fa4fd087441f5e4d73719ee579e06f821ad31426968642f90d9",
+    "hooks.json": "cb571ab116e6a41ab3b642165d1849811b519f61f49fd37b5e9fbe4fb9c1ff0e",
+    "hero.jpg": "580a02c9f087e7513405786e26b471f7813a6be9df6df76a83da3d44495b84a7",
+    "photo-post.jpg": "1b4851be0a6c19187272e7e3e71c1694a43b6d88ed8c18b7ac2a435ce3d045fb",
+    "reel-data.md": "ac4d6e91f5df98e645995814670c9c319e591bf29126e589ef36cd94549670be",
+    "reel-script.md": "4dc54bc11dcd32f11e0b38bcdb8d321aa53eb4cc2b1264b27c687f301602f0e3",
+    "social-copy.json": "20d6e5579d45166528a0e60c48678d026b501758375859862471848593e03252",
+    "research.json": "7b9a5314deaa660028f14ef8e27fa3a61f57a1bcd1fcdc79e30ebf807f7668c7"
+  },
+  "pass": true
 }

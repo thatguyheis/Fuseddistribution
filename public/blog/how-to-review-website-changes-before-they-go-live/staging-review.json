@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-22T00:40:27.733029+00:00",
+  "status": "staged package; not publication approval",
+  "sourceReview": "W3C preliminary accessibility scope checked; other advice is original process guidance",
+  "parser": {
+    "errors": [],
+    "warnings": []
+  },
+  "narration": {
+    "words": 313,
+    "estimatedSeconds": 98.2,
+    "preflightPass": true,
+    "actualDurationNotYetMeasured": true
+  },
+  "visualReview": {
+    "hero": "inspected actual 1600x900 JPG; all text legible, no clipping, topic specific",
+    "photoPost": "inspected actual 1080x1080 JPG; all text legible, no clipping, topic specific",
+    "rights": "Original native diagrams; no external photographs"
+  },
+  "remaining": [
+    "Acquire publisher lock and register production package",
+    "Run local QA and inspect rendered article",
+    "Record exact production editorial artifact approval",
+    "Scoped deploy and verify live main hero catalog date order and sitemap",
+    "Render companion when existing renderer is idle, then actual release review"
+  ],
+  "artifactHashes": {
+    "verified.md": "87641edc1540a5993d615e3042e804a2ea2dd6ca14d0d7baa3efcbc3128c3ddf",
+    "index.html": "42a255dd0ec5bd437e3268cf6b3d7c17505112c911d86bb46eb677fae6bf8eff",
+    "meta.json": "1456072adf4cfd6f69a777bddf73bf0a6b84fe838dbe29e2c883ee327566c4ff",
+    "research.json": "88af0d713c092201241dc76cd6650de89370ba27f949ec5a52f6b608fb246631",
+    "hero.jpg": "52297c0ae520490e4348d9ea200d10cf57d32603f7bb35e59e1d7bfdc7f2dee9",
+    "photo-post.jpg": "55194b749ca6b2175581dfd0512eb868abb37d6682db4f021f9dc1a22dfd0aa5",
+    "reel-script.md": "7a42b36af9efdd007fa8c6bb4ef7b5bd64aec74728dfed214e88f1fb903ab9af",
+    "reel-data.md": "a7b17f35b81f8fc979a1484a125d27d37e9d20c9b4ab7ff168facafe7e3f0f2b",
+    "social-copy.json": "5c2a8a657206281d58f1d51d1060a00314e025abcfd62ecc756a64bd8a2706c3"
+  }
+}

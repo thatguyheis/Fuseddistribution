@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-review-image-alt-text-on-service-pages",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:30.888886+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "fe70fbb735242341c8c003ab3bf42c8c832f8c0a8ae72c49a6b5e8b7c8db3e8e",
+    "index.html": "646e51097a1df19d99f1a812470e052f16dc7d44424d99d700372773b3605f38",
+    "meta.json": "fad05c08b34d67a06c7c7d67cbd830574c78c5c3b462dec2aa85d6630c9c9585",
+    "research.json": "308e33fdac3a760e9c51d5c51fdced77ed15b7d6e00c680fb33fc65166a25820",
+    "hero.jpg": "f5f224ef9052840f6771db981fac916126ce10ab05110eba0079cac06b167cb5",
+    "photo-post.jpg": "66b55d3ccadc7d8ed55f29b32e158b0465f996b29e41f7d2755ac2a055fb9470",
+    "reel-script.md": "81bc9528399a9d34ffa233e6a0f244c35daa7bad3819d5ca1a038eecb7df9de4",
+    "reel-data.md": "6583518663158c53ee9c9ec9c26e85e487c256c788d513f63be0588dc9f060ab",
+    "social-copy.json": "4e0cbe4d3c8784afc0d9106f04d9be6282daf87ffd8a245740bdffc03faaf120"
+  }
+}

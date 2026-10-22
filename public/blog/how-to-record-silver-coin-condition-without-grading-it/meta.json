@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-record-silver-coin-condition-without-grading-it",
+  "title": "Record Silver Coin Condition Without Assigning Grades",
+  "brand": "silver",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "description": "Record silver coin condition without assigning a grade. Use dated observations, consistent photos, and inventory IDs keeping value and authenticity separate.",
+  "ogDescription": "Record what you can see",
+  "alt": "Silver coin condition observation record checklist",
+  "tags": [
+    "Coin Care",
+    "Inventory"
+  ],
+  "ctaLine": "Which observation will you add to your coin inventory?",
+  "contentGraphic": {
+    "label": "Record what you can see",
+    "rows": [
+      {
+        "condition": "Identify the coin",
+        "action": "Describe observations"
+      },
+      {
+        "condition": "Keep original photos",
+        "action": "Record changes"
+      }
+    ]
+  }
+}

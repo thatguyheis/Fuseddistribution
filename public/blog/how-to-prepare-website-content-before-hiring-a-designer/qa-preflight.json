@@ -1,0 +1,9 @@
+{
+  "slug": "how-to-prepare-website-content-before-hiring-a-designer",
+  "score": 0,
+  "pass": false,
+  "blockers": [
+    "index.html: unreplaced bracket placeholder"
+  ],
+  "mode": "deterministic-local"
+}

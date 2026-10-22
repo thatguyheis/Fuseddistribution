@@ -1,0 +1,36 @@
+{
+  "slug": "how-to-prepare-website-content-before-hiring-a-designer",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-17T16:45:00.000Z",
+  "review_notes": [
+    "Repaired the failed draft using the existing topic and package. Removed unresolved city, link, and statistic placeholders, repeated template copy, unsupported client examples, and the fabricated 20 percent artwork claim.",
+    "The final article is a practical checklist with no external numeric, ranking, traffic, customer, or location claims. Examples are clearly framed as planning guidance.",
+    "Hero and square exports were rendered from the corrected SVGs and visually inspected. Production parser, reel validator, 109.6 second narration preflight, lint, and deterministic local QA all pass. Manual listening and caption alignment were not claimed."
+  ],
+  "sources": [],
+  "artifactSha256": {
+    "verified.md": "a4c88dcf574c5f579072b5418ca456c9f9fe6d8d5776c7b89c6833a2e8836576",
+    "index.html": "fadb1c4337b6b854be6ddaf00020a116f84112b620f93c791e61764c92db7c5c",
+    "meta.json": "e4bee8d580deff1b6db3f0490c33a8bf63f8e748cbea05c9cb70d072324d3285",
+    "research.json": "97c2d29a2ba4d7504d8005cdaaf72ce483c0f8fc1d0257a48f3efef9f2084ce6",
+    "hero.jpg": "9e34df0309885a7af7659c8fcd74f93bd66131a2390d5fdd407c7e23ff4cad86",
+    "photo-post.jpg": "46952f88e0ee44b5879196b4c65bbd37aab4797b1d6541049fd48e79a8c8a008",
+    "reel-script.md": "4fa933bb37e453b00836582310a9ab1d995b9617f856fbdba57823eb8db95d73",
+    "reel-data.md": "4f3e61f84c772707fff1aeffda9988af6f2d094bdd2eed5525e4ed92137aefd6",
+    "social-copy.json": "b4c70769f6865aa8488b0470a96e6e35b7973337820f59a284e1b0ad26756d3e"
+  },
+  "artifact_sha256": {
+    "verified.md": "a4c88dcf574c5f579072b5418ca456c9f9fe6d8d5776c7b89c6833a2e8836576",
+    "index.html": "fadb1c4337b6b854be6ddaf00020a116f84112b620f93c791e61764c92db7c5c",
+    "meta.json": "e4bee8d580deff1b6db3f0490c33a8bf63f8e748cbea05c9cb70d072324d3285",
+    "research.json": "97c2d29a2ba4d7504d8005cdaaf72ce483c0f8fc1d0257a48f3efef9f2084ce6",
+    "hero.jpg": "9e34df0309885a7af7659c8fcd74f93bd66131a2390d5fdd407c7e23ff4cad86",
+    "photo-post.jpg": "46952f88e0ee44b5879196b4c65bbd37aab4797b1d6541049fd48e79a8c8a008",
+    "reel-script.md": "4fa933bb37e453b00836582310a9ab1d995b9617f856fbdba57823eb8db95d73",
+    "reel-data.md": "4f3e61f84c772707fff1aeffda9988af6f2d094bdd2eed5525e4ed92137aefd6",
+    "social-copy.json": "b4c70769f6865aa8488b0470a96e6e35b7973337820f59a284e1b0ad26756d3e"
+  }
+}

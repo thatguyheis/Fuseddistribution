@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-test-skip-links-on-a-business-website",
+  "title": "Test Skip Links on a Business Website",
+  "description": "Test Skip Links on a Business Website. Follow practical review steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Test Skip Links on a Business Website",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "Would you notice a website's skip link, or have you never used one?",
+  "contentGraphic": {
+    "label": "Test Skip Links on a Business Website",
+    "rows": [
+      {
+        "condition": "Begin with keyboard",
+        "action": "Activate the shortcut"
+      },
+      {
+        "condition": "Check each layout",
+        "action": "Retest the change"
+      }
+    ]
+  }
+}

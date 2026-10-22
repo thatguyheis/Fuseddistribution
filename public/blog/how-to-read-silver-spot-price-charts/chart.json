@@ -1,6 +1,4 @@
 {
-  "schema_version": 2,
   "skipped": true,
-  "skip_reason": "validator_rejected_numeric_visual",
-  "rejected_at": "2026-09-02T19:58:01.507668Z"
+  "reason": "No observed market data supplied. Hypothetical OHLC and closing sequences explained explicitly in article; no invented market chart."
 }

@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-test-a-business-website-at-larger-text-sizes",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.361949+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "0e45bdb8a325b7f8694811bbfaeb6a9aa5d4036c1c81dfec99b9f22b6a8fbbd1",
+    "index.html": "0e20614a87ca8b41f6b8ec545a48d172a45eeaac50a6042533cbd7597e3ae4bb",
+    "meta.json": "1555cded254f008f795f743a9398069d65cb5453a51e3b511149bbf4156c9e6f",
+    "research.json": "286a83586aae3cc58c6e24233959fce03f434640921981dca1d07fcf78b44718",
+    "hero.jpg": "544d2af9e331e823e1b13316527175bc40c78710db90bd33f7460aef3a828f7b",
+    "photo-post.jpg": "ecfb57601bac9216954d24a16b6bb24eddd50b64bf9c200472ef2f64b8f74c2b",
+    "reel-script.md": "5c58859a78a23acb96b1fd7cbb6ad81ba37c77fb89195e30abebf513760949b3",
+    "reel-data.md": "32d1d94bad98683da1d11dde022bac68bbb8ad97c90f896039272cd308c6abc0",
+    "social-copy.json": "ee32bf6656d59dc82e8edb4b7b249e82290a2742c3c528fcda41c4a17d06bc25"
+  }
+}

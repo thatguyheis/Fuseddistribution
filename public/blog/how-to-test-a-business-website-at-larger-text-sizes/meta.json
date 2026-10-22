@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-test-a-business-website-at-larger-text-sizes",
+  "title": "Test a Business Website at Larger Text Sizes",
+  "description": "Test a Business Website at Larger Text Sizes. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Test a Business Website at Larger Text Sizes",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "Do you prefer larger website text by default or adjusting it yourself?",
+  "contentGraphic": {
+    "label": "Test a Business Website at Larger Text Sizes",
+    "rows": [
+      {
+        "condition": "Compare enlarged view",
+        "action": "Follow the action"
+      },
+      {
+        "condition": "Check fixed controls",
+        "action": "Request a repair"
+      }
+    ]
+  }
+}

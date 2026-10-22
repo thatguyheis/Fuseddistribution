@@ -1,0 +1,25 @@
+{
+  "slug": "how-to-read-a-usgs-silver-commodity-summary",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.446850+00:00",
+  "review_notes": [
+    "USGS publication scope checked. Original reading method; no current statistics reproduced or investment claims.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Topic-specific diagrams checked for clipping and legibility.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "9d0b953ddb1e9481713ed3a939ac2619187402df2bc86810bc75032a3f934389",
+    "index.html": "24fac113c9b3c03a50c42ca3c413030ce0a46145c06b8baf0e9e7f893b40f629",
+    "meta.json": "3a280cd0cb133e795b55c0ba59fe09bba3dc65064caf9e458829c33e2a088bc8",
+    "research.json": "11288d2e9ffa2d1a14851329cb49e8a487f511b0afce4621554ab4cec0928b77",
+    "hero.jpg": "f511d4e3b55203d570a3e6d442e16e0c6bdaddf71f96f914e92bfe80d1716901",
+    "photo-post.jpg": "1afc6a148e27324d29af0a69250f5a4cd773d623d307ab3b48296f6b8d10bb9e",
+    "reel-script.md": "71ba8cbee3711a3e5a5103c05370e2647a4d35007e3197d6c065c48b6e190344",
+    "reel-data.md": "23d42a59cd005d4fa634f38bbeaaf9375c29467fd3bf31706ccad234f57a49a0",
+    "social-copy.json": "16018204e630888b4a67abdc799de3e92046920bae6d5147fd113bca95ff253d"
+  }
+}

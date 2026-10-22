@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-reconcile-a-silver-inventory-after-a-sale",
+  "title": "Reconcile a Silver Inventory After a Sale",
+  "description": "Reconcile a Silver Inventory After a Sale. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Reconcile a Silver Inventory After a Sale",
+  "alt": "Silver collection record and review checklist",
+  "brand": "silver",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Coin Care",
+    "Records"
+  ],
+  "ctaLine": "After a silver sale, do you update records immediately or in a weekly session?",
+  "contentGraphic": {
+    "label": "Reconcile a Silver Inventory After a Sale",
+    "rows": [
+      {
+        "condition": "Match sold items",
+        "action": "Record the handover"
+      },
+      {
+        "condition": "Preserve history",
+        "action": "Check remaining count"
+      }
+    ]
+  }
+}

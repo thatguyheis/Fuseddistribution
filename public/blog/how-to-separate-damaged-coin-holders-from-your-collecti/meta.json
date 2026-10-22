@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-separate-damaged-coin-holders-from-your-collecti",
+  "title": "Separate Damaged Coin Holders for Careful Review",
+  "description": "Separate Damaged Coin Holders for Careful Review. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Separate Damaged Coin Holders for Careful Review",
+  "alt": "Silver collection record and review checklist",
+  "brand": "silver",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Coin Care",
+    "Records"
+  ],
+  "ctaLine": "Would you isolate a damaged coin holder immediately or first document the damage?",
+  "contentGraphic": {
+    "label": "Separate Damaged Coin Holders for Careful Review",
+    "rows": [
+      {
+        "condition": "Identify the holder",
+        "action": "Record review location"
+      },
+      {
+        "condition": "Retain evidence",
+        "action": "Ask specific questions"
+      }
+    ]
+  }
+}

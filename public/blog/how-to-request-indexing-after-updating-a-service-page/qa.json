@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-request-indexing-after-updating-a-service-page",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-25T19:07:04.623084+00:00",
+  "review_notes": [
+    "Read and corrected the complete recovery article and companion narration. Kept topic scope distinct and removed the failed brief drift; no model output promoted without review.",
+    "Checked linked U.S. Mint or Google Search Central primary guidance September25. Original checklists are practical suggestions; no invented measured results, coin grading claims, ranking guarantees or unsupported statistics.",
+    "Inspected all four landscape and square graphics in contact sheets: legible, unclipped and topic specific. Article decision diagrams are escaped structured metadata rendered by the builder.",
+    "Existing local QA passes: metadata, topic, internal links, source references, script structure and segment timings. Estimated narration length recorded separately; actual video release is unapproved.",
+    "New publication date September25. Preserve previous days and existing active render files."
+  ],
+  "artifactSha256": {
+    "verified.md": "e095f73af72bfe9d615bfb6463094847cde52f414c5cb4d21e2831417bf8574d",
+    "index.html": "6f146b4e78a82c8810ec4fdfa907a3dac32f4bb1555a4c223dbcff509b2f20ea",
+    "meta.json": "55a396950bdeee1a8d2a62ccf50e3b97aadf15ae26cd55c2bf63b84a4ffb4916",
+    "research.json": "7fed62b21be4f927987e2477ec5147b7f97fe5b9cf0b4d71a21e2df5d44ef5f2",
+    "hero.jpg": "4be8a04bce80185bacfd97b52a3bd9712967faae9d57e65dc66ce73acbcf6a55",
+    "photo-post.jpg": "f961410c8853082aa411ec6915655a63833508cbf9757e4b373e89e215f72ec8",
+    "reel-script.md": "187b8d2ff18f32687108d5506873bc1e56ff294e16c27b07373fa232ffa03997",
+    "reel-data.md": "b0e578c949b2c0c6930d452a9a13a97ce59362713da91e46c2feffef216e0539",
+    "social-copy.json": "150d6e6af0f016f24cfa96f9c2cb71b5ac0bf24c2c1716e3d6b54c7c71e069b9"
+  }
+}

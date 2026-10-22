@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-record-silver-coin-condition-without-grading-it",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-28T14:21:52.489716+00:00",
+  "review_notes": [
+    "Reviewed saved source-checked draft and removed internal repair notes. Inventory guidance is distinguished from grading, authentication and valuation.",
+    "Rechecked U.S. Mint coin care and PCGS grading guidance. Kept the original practical storage workflow and narrow sourced claims.",
+    "Inspected landscape and square native graphics; no clipped labels. Source metadata drives the in-article diagram.",
+    "Local QA and companion parser pass. Narration preflight passes; future actual audio, frames and release remain unapproved.",
+    "Publication date September28; fulfillment is attributed to original planned date, not backdated."
+  ],
+  "artifactSha256": {
+    "verified.md": "c1ff87f1aa3a18895db9e958364f9fe588edd62e7a95b826e75421ba149861b9",
+    "index.html": "1a9ad2a5e24d862f742b2248d2fcd9da402e49cc376c4e7ea8365d51cb7334c2",
+    "meta.json": "a0ab30992f75e6265f2e070fd27f294c1ab6ced2787a2f67a9c2cbd89244e9e4",
+    "research.json": "4086b2ee42c5b6cef6226f189b74365fd56111c1e27e8bb679227be241b5ace1",
+    "hero.jpg": "ce24e141712f91a0ae43ff559e4a0812f9a8ff395a4f04bbbfef4074d89e8eda",
+    "photo-post.jpg": "51f6a4c22ea50394715d8010bb12745be91449e528153abb1999a4a7679207a6",
+    "reel-script.md": "30e6e42a3d92e8c899d1a05c4f99055cc0924635e82246a64e92c616e86d0360",
+    "reel-data.md": "a904d03f169b3eba1c0b378ce02e92133d2fbff966805872d482ada5333f9992",
+    "social-copy.json": "3fc5afec0d5af9976f090c885d97fa98a31a27819a2dc327978860047993c60b"
+  }
+}

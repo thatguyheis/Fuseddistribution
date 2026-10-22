@@ -1,8 +1,11 @@
 {
   "version": 1,
-  "primaryVideo": {
-    "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/how-to-read-silver-spot-price-charts/how-to-read-silver-spot-price-charts.mp4"
-  },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.157Z"
+  "updatedAt": "2026-10-05T18:52:30.076Z",
+  "primaryVideo": null,
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/watch?v=akNsaj5I1Es",
+      "sentAt": "2026-09-22T23:00:14.679Z"
+    }
+  }
 }

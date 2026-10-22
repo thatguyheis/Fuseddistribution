@@ -1,10 +1,10 @@
 {
-  "hook": "Master silver charts to spot opportunities and avoid costly mistakes.",
-  "hook_type": "pain_point",
+  "hook": "A support line cannot guarantee a silver price floor.",
+  "hook_type": "practical",
   "key_stat": {
-    "value": "",
-    "label": ""
+    "value": "4",
+    "label": "Price values in each OHLC bar"
   },
-  "discussion_question": "Mastering charts unlocks smarter silver investing. What's your biggest chart challenge?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "Which chart input would you check first?",
+  "hashtags": "#Silver #SilverCharts"
 }

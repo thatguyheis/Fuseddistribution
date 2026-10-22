@@ -1,0 +1,15 @@
+{
+  "slug": "how-to-review-website-changes-before-they-go-live",
+  "stats": [],
+  "sources": [
+    {
+      "title": "W3C WAI Easy Checks",
+      "source_url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+      "claims": [
+        "Initial review includes keyboard focus, form labels and text resizing. Passing preliminary checks is not a comprehensive accessibility evaluation."
+      ]
+    }
+  ],
+  "reviewedDate": "2026-09-21",
+  "status": "Primary source checked; other steps are original editorial process recommendations, not measured performance claims"
+}

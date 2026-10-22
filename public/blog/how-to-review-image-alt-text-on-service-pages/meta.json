@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-review-image-alt-text-on-service-pages",
+  "title": "Review Image Alt Text on Service Pages",
+  "description": "Review Image Alt Text on Service Pages. Follow practical review steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Review Image Alt Text on Service Pages",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "For service photos, do you prefer brief descriptions or more visual detail?",
+  "contentGraphic": {
+    "label": "Review Image Alt Text on Service Pages",
+    "rows": [
+      {
+        "condition": "List image purposes",
+        "action": "Read nearby content"
+      },
+      {
+        "condition": "Check image controls",
+        "action": "Choose alternatives"
+      }
+    ]
+  }
+}

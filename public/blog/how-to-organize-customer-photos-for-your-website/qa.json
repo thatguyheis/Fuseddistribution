@@ -1,0 +1,34 @@
+{
+  "slug": "how-to-organize-customer-photos-for-your-website",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-17T01:17:04.378319+00:00",
+  "review_notes": [
+    "Owner authored and reviewed article and eight topic-specific narration segments against primary guidance. No performance guarantees.",
+    "Owner inspected actual hero and square JPEG exports; preferred native diagram process retained.",
+    "Production parser, local QA and narration preflight pass; measured audiovisual release still required.",
+    "Shortened on-screen hook and question labels only; every narration passage remains unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "e0032d615f1ae590d3d466f64875a24c9c879cbb9f7964fc03b2808ac7e480ee",
+    "index.html": "c6417c0fc1d5df26616966dae8fb76f447c8370cfb7e4cf952828f4b86f032f5",
+    "hero.jpg": "6c9117b2e08a25be8067f3dbf67bc874ffb25d4910d6e490f1a87b8f7bb9d44a",
+    "social-copy.json": "44e81254a0fabcf735e3cae3848412ff38a78f0ee84f824cc24c744b707c0139",
+    "hero.svg": "175b173144b85f40f9239106df2669f85213118a81a745767b05746d9cf9b5ec",
+    "reel-data.md": "003827ae76b22340bfc20aa320ee064657f04b55686cb71783523accff1fa67a",
+    "lint.json": "a83342c73f46cda057cd5c34891f09fb78f915fc89d3608382d9ff6bbfe0d9a6",
+    "photo-post.svg": "4ee5aaedc82a26142b12774c68c0303f447e5535cda9194683f212f9cbc6ca2a",
+    "research.json": "0be1f47061d7b31983b23a7a159749a1888cdadfa7b71334fdc2c006d9ab0b43",
+    "hooks.json": "45175774f65159ce2a629eca8c1ec9626494c888af4f951462be8c419ed2b345",
+    "reel-script.md": "3a938bf8b8404aa45f592c92bd4d3d2b4c96969455e0dc4894d60584c0790afd",
+    "qa-preflight.json": "88b2f36c93d81f982465753cb32c1e8dd6fa7eed5755285783b3510b1b8beb16",
+    "gemma_draft.md": "2b6094e8566cc25983d414f417989d683516f77e727dca1480cf19da9f5e3ac1",
+    "_status.json": "ec0defa1ad405841bd7734044360daa6067af7fdd92b49bb57c2498ee96c0734",
+    ".qa-brain.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "photo-post.jpg": "e69d8b99bb3af2905b326548ac3c8b863d7031933ed052f1abe06dad2cff6e48",
+    "meta.json": "15f1112ff69dd456770964070ab7c102a9cf618db41928fac1798be56fc6a4e3"
+  }
+}

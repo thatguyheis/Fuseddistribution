@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-separate-damaged-coin-holders-from-your-collecti",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.451329+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "08572dc6bf54673056c3d79c1665109b9aaecce6575f5e8c233fb7306e613c75",
+    "index.html": "4b2b97166a9b7dbc993c314dda61ab36d1a072bd099614a34935e0ee437f0caf",
+    "meta.json": "0cfbb9f99473e23fce8f694d8b5b51b82057aee6d4a60d0ae681668e92f79a7f",
+    "research.json": "7318c3c944c1b392bfebbadd9442633f35d0c58580ffa7f3d562eab37a47c53d",
+    "hero.jpg": "115face81fbdd9c7398ea7afd84a710d9061546db4f1f4f71a11af263a983e8d",
+    "photo-post.jpg": "11a15d66617a5c09a1c19648ab92ecd56600102540de31c95a11627240806476",
+    "reel-script.md": "e7ce297cd69154913a2e38d16d0805065af06b2bca90764887b821622b1ab65a",
+    "reel-data.md": "eacdc0e174d18f6348357158ea929d1766bf2bb3634aa5b1f0656ec31db250e8",
+    "social-copy.json": "781862c997c810783f4ebf98369d634f6a39601168e0c7a13b09aeb5292b2c98"
+  }
+}

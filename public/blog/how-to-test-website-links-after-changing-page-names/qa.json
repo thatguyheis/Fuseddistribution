@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-test-website-links-after-changing-page-names",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-25T19:07:04.624230+00:00",
+  "review_notes": [
+    "Read and corrected the complete recovery article and companion narration. Kept topic scope distinct and removed the failed brief drift; no model output promoted without review.",
+    "Checked linked U.S. Mint or Google Search Central primary guidance September25. Original checklists are practical suggestions; no invented measured results, coin grading claims, ranking guarantees or unsupported statistics.",
+    "Inspected all four landscape and square graphics in contact sheets: legible, unclipped and topic specific. Article decision diagrams are escaped structured metadata rendered by the builder.",
+    "Existing local QA passes: metadata, topic, internal links, source references, script structure and segment timings. Estimated narration length recorded separately; actual video release is unapproved.",
+    "New publication date September25. Preserve previous days and existing active render files.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "8811e8e7ba0d2760c187619b602e045a58c23020f0dc931e9411414869084f0e",
+    "index.html": "acbfcd2a9022f49537a4ac5e431d06bfdd7d15fe2eb7b95890319d6128576899",
+    "meta.json": "d102770e3f4e17a82ec540973e6205a56870c7b067a9814d1722901e5ffddbde",
+    "research.json": "560b9e2720785412bc6933f980db65493fba04438d49d8cb0e22f3de2507f729",
+    "hero.jpg": "39cc90906c62b55f0bcb1563980e228afae8607080fe3fc9914fb970c124cb03",
+    "photo-post.jpg": "b72385bd32450cc1aac02c99a8bd7ad28a2195f870c33cce69bbd3d897fcf0b7",
+    "reel-script.md": "9a49a32a7fada9d33914a2dc993101878922a26627b3b0dfb9fed6513217d25c",
+    "reel-data.md": "6e704438e71a5bc6339f7b229b051436fb3544e725cd4f16c0a2d508fa13cb17",
+    "social-copy.json": "de030fa29dfea930cfbe4c29d9b2964eb42a2b71bdf59a8fe80d8c542c128c81"
+  }
+}

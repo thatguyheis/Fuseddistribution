@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-review-website-changes-before-they-go-live",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-22T01:34:13Z",
+  "review_notes": [
+    "Read the complete article after repairing the alt text, related navigation and topic-specific four-stage review graphic.",
+    "Verified the W3C Easy Checks claim against the primary source; the remaining guidance is clearly presented as practical process advice.",
+    "Inspected the actual hero and square exports: topic-specific, legible, and free of clipping.",
+    "Production parser and deterministic local QA pass; publication date remains the actual deployment date until live verification.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "87641edc1540a5993d615e3042e804a2ea2dd6ca14d0d7baa3efcbc3128c3ddf",
+    "index.html": "b2157cfcc21b2e7773cb3518274c85051fdbc2e74ce24d07e14f93b632f66fe6",
+    "meta.json": "bfcdd9af744cdfcbe0cad8c4419324576fe38d9fbcfa487d37147eeb36086027",
+    "research.json": "88af0d713c092201241dc76cd6650de89370ba27f949ec5a52f6b608fb246631",
+    "hero.jpg": "52297c0ae520490e4348d9ea200d10cf57d32603f7bb35e59e1d7bfdc7f2dee9",
+    "photo-post.jpg": "55194b749ca6b2175581dfd0512eb868abb37d6682db4f021f9dc1a22dfd0aa5",
+    "reel-script.md": "7a42b36af9efdd007fa8c6bb4ef7b5bd64aec74728dfed214e88f1fb903ab9af",
+    "reel-data.md": "a7b17f35b81f8fc979a1484a125d27d37e9d20c9b4ab7ff168facafe7e3f0f2b",
+    "social-copy.json": "5c2a8a657206281d58f1d51d1060a00314e025abcfd62ecc756a64bd8a2706c3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:59:21.481132+00:00",
+  "heroSha256": "f511d4e3b55203d570a3e6d442e16e0c6bdaddf71f96f914e92bfe80d1716901",
+  "subject": "Table headings inspected with a magnifier, no numerical data",
+  "purpose": "Table headings inspected with a magnifier, no numerical data",
+  "hook": "Read the labels before the numbers",
+  "keyWords": [
+    "how",
+    "to",
+    "read"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/oct1-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

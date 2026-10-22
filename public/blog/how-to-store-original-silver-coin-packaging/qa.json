@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-store-original-silver-coin-packaging",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.284344+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "7642c65339f3ee6af2d5896d890e7d9b7b37b8de2a31ce5578419daf68cdaef7",
+    "index.html": "328a65b7c1f19896e24b3b8b6d056d41c7f2678c6a7307cb08b762a7ceec20ab",
+    "meta.json": "b07910b3b7039e1f086238ff8d4c7daf45bc3618d4693deebbb50c409a3e81fe",
+    "research.json": "ddc8a8630180f4ca036840ecb8df15efd3d70a9b4cf10ec81026581a5f9e951e",
+    "hero.jpg": "024696cb97fb1626beaae4fd4d4525689ba08f55243815fcd7103001b07fce15",
+    "photo-post.jpg": "044078a80a17f4bd51bf3cd5cc1dd0f3b72ce3df508378d644bde965fb9ecdfb",
+    "reel-script.md": "99c4d3b3ac116eb9ad3ee05229fcdbb8c7358b906740a8cb6c0b56233eb6df7e",
+    "reel-data.md": "361b9ea53503c491162e98520b5c7ffce47537c28c28758fee132b4f3c5ad284",
+    "social-copy.json": "8c6999d7148b1b4139582013e2c7326e278836e0e3a96dc90d8b73406222f8a8"
+  }
+}

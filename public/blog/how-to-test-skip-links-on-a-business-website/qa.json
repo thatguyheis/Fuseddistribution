@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-test-skip-links-on-a-business-website",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.117310+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "e03ea91816055f6e74abb66f2e1d058eb71a170bd8c6168ab48e1a3b1d0d7ea0",
+    "index.html": "4ee9a6d97de130fa6c5c9b8bc7f67065f4785de31db7ecc319ff699fceb369ce",
+    "meta.json": "1487201649cb6340af17ac2effb5e4f7122ba25c099161a0e9cb0555917dfde5",
+    "research.json": "4c45033d523d19e6bb3fea9a7ca73cd843fbf20c444a75ef7d128ed0b98295b2",
+    "hero.jpg": "fbc6340465a06c072e0e00604dae9bbeab7406219892991fd09aa7de91bc7bc0",
+    "photo-post.jpg": "8a3369f4c978967b97bd132116ea56c9dd664399b392b905768fe1cf33e00d12",
+    "reel-script.md": "cb27c00fcba9aad65f93e0b1256ea12925250547818dac36d025a91cc3a32e4a",
+    "reel-data.md": "0aa70c08239a5814a286d458f39bb18d7c8596f8ee8e1a72c0d92b94ebda3903",
+    "social-copy.json": "f998dc221513ff5fc411aeb9b5afa3be48a5932b4064ded7cfea9f65e93e622b"
+  }
+}

@@ -1,105 +1,78 @@
 # Reel Script: how-to-read-silver-spot-price-charts
 format: long-form
-segments: 11
-target-duration: 182s
+segments: 8
+target-duration: 110s
 
 ---
 
 ## HOOK
 
-**Visual:** Topic intro shot
+**Visual:** Supporting article visual
 **Duration:** 4s minimum
 
-Narration: Master silver charts to spot opportunities and avoid costly mistakes.
+Narration: A support line cannot guarantee a silver price floor.
 
 ---
 
-## OVERLAY: LOOKING NAVIGATE OFTEN COMPLEX
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: Are you looking to navigate the often complex world of silver and precious metals investing? Understanding price charts is one of the most powerful tools you can use to make informed decisions, whether you are a beginner or an intermediate investor. At Fused Distribution, we stock silver and we believe that mastering chart analysis will help you to spot opportunities and avoid costly mistakes.
-
----
-
-## OVERLAY: DIFFERENT TIMEFRAMES REVEAL VASTLY
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: Different timeframes reveal vastly different market narratives and trading behaviors. A short-term chart, perhaps one day or a few days, is excellent for spotting immediate volatility, intraday trading opportunities, and reacting to sudden news events. We stock data that helps you identify these rapid swings. Conversely, a longer-term chart, spanning several weeks or months, provides a much clearer picture of underlying trends, seasonal patterns, and the long-term momentum of the silver market.
-
----
-
-## OVERLAY: THESE ZONES SUGGEST POTENTIAL
+## OVERLAY: NAME THE PRICE SERIES
 
 **Visual:** Supporting article visual
 **Duration:** 16s minimum
 
-Narration: These zones suggest potential buying opportunities because the market has shown a willingness to absorb selling pressure at that specific price point. Similarly, resistance levels are areas where the price has struggled to break above before reversing course. We recommend drawing horizontal lines across the chart at these identified levels.
+Narration: Before interpreting a silver chart, identify the provider, instrument, currency and unit. Record the timestamp and interval too. A futures contract chart should not silently become a record of every spot silver transaction. If the label only says silver, read the provider explanation before comparing it with another chart.
 
 ---
 
-## OVERLAY: CONVERSELY STEEP DECLINE SIGNAL
+## OVERLAY: READ ALL FOUR VALUES
 
 **Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Duration:** 17s minimum
 
-Narration: Conversely, a steep decline can signal supply-side concerns or a cooling in global economic activity. We recommend looking for confirmation signals, such as volume accompanying the price move, to validate the spike before committing capital. By focusing on the context surrounding the volatility, you can better gauge the sustainability of the price action. Understanding the underlying drivers helps you distinguish between temporary market fluctuations and genuine, long-term trends.
+Narration: An OHLC bar shows open, high, low and close. In a hypothetical example, the open is thirty dollars, high thirty two, low twenty nine and close thirty one. All values are per fine troy ounce. The open to close gain is one dollar. The high to low range is three dollars.
 
 ---
 
-## OVERLAY: FUSED DISTRIBUTION STOCK WIDE
+## OVERLAY: SUPPORT CAN FAIL
 
 **Visual:** Supporting article visual
-**Duration:** 19s minimum
+**Duration:** 17s minimum
 
-Narration: At Fused Distribution, we stock a wide variety of silver charts, and we recommend learning to identify these formations to align with your personal investment strategy. Different patterns signal different market sentiments and potential price movements. For instance, a strong uptrend, often indicated by ascending triangles or rising flags, suggests a bullish outlook where we might recommend accumulating silver.
+Narration: Support and resistance are interpretations of observed price behaviour, not promises about the next price. Record which observations you used to mark an area. State whether those observations are closes or intraday extremes. A line under selected lows does not establish a guaranteed minimum price for silver or a deadline to buy.
 
 ---
 
-## OVERLAY: FINALLY PAY CLOSE ATTENTION
+## OVERLAY: RECORD WHAT HAPPENS NEXT
 
 **Visual:** Supporting article visual
-**Duration:** 19s minimum
+**Duration:** 17s minimum
 
-Narration: Finally, pay close attention to candlestick formations. Long, strong green candles following a period of sideways movement are excellent indicators. These formations confirm that buying pressure is overcoming selling pressure, giving us a solid basis to initiate a position. We stock a deep understanding of silver market dynamics, and interpreting price charts is key to building a successful reserve plan.
+Narration: A price can cross an annotated area and later move back. A note made at the first crossing cannot know the later outcome. Define the observation you are testing before looking at subsequent values. Keep examples that failed as well as examples that fit, so the record remains possible to assess.
 
 ---
 
-## OVERLAY: VOLATILITY CRUCIAL FACTOR ANALYZING
+## OVERLAY: DEFINE THE VOLUME MEASURE
 
 **Visual:** Supporting article visual
-**Duration:** 23s minimum
+**Duration:** 17s minimum
 
-Narration: Volatility is a crucial factor when analyzing silver spot price charts for savvy buyers. Understanding how price swings impact market sentiment can help you time your purchases effectively. High volatility often signals significant market uncertainty, which can lead to sharp price increases or sudden drops. We stock data showing that periods of high volatility can sometimes precede strong upward trends, offering potential entry points for investors who are prepared to manage risk.
+Narration: A volume panel requires its own definition. Exchange futures volume can count contracts within a defined scope. It should not be relabelled as shares of silver or all worldwide physical purchases. Compare the same interval and scope, and leave unavailable information unknown. A higher count alone does not prove a price forecast.
 
 ---
 
-## OVERLAY: EFFECTIVELY READ SILVER SPOT
+## OVERLAY: CHECK THE ACTUAL PRODUCT COST
 
 **Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Duration:** 17s minimum
 
-Narration: To effectively read silver spot price charts, you need to compare different metrics to gauge market sentiment and potential trends. One crucial metric is volatility, often measured by indicators like the Average True Range. High volatility suggests significant price swings, which can indicate strong buying interest or high risk. Conversely, periods of low volatility might signal consolidation, a potential setup for a larger move.
-
----
-
-## OVERLAY: COMBINING TECHNICAL ANALYSIS INVESTMENT
-
-**Visual:** Supporting article visual
-**Duration:** 8s minimum
-
-Narration: By combining technical analysis with your investment goals, you can make informed decisions about when to enter or exit your silver positions with confidence.
+Narration: Keep a separate worksheet for a physical product, including fine silver content, delivered cost and any resale offer. A change in a reference quote does not tell you the proceeds from selling your item. Read the article for clearly labelled examples, and keep those invented numbers separate from current market prices.
 
 ---
 
 ## QUESTION
 
-**Visual:** Question card
-**Duration:** 6s minimum
+**Visual:** Supporting article visual
+**Duration:** 5s minimum
 
-Text: Mastering charts unlocks smarter silver investing. What's your biggest chart?
+Text: Which chart input would you check first?
 Subtext: COMMENT BELOW
-Narration: Mastering charts unlocks smarter silver investing. What's your biggest chart? Follow for more silver news.
+Narration: Which chart input would you check first? Follow for more silver news.

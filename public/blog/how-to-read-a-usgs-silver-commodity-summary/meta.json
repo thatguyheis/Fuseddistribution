@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-read-a-usgs-silver-commodity-summary",
+  "title": "How to Read a USGS Silver Commodity Summary",
+  "description": "Read a USGS silver summary with the edition, units, geography and footnotes intact, then check comparability before turning commodity figures into charts.",
+  "alt": "Magnifier examines labels on commodity table",
+  "brand": "silver",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Materials",
+    "Learning"
+  ],
+  "ctaLine": "For silver data, do you prefer a simple chart or the original table?",
+  "contentGraphic": {
+    "label": "How to Read a USGS Silver Commodity Summary",
+    "rows": [
+      {
+        "condition": "Identify the edition",
+        "action": "Keep the original units"
+      },
+      {
+        "condition": "Separate each measure",
+        "action": "Preserve the qualifications"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-request-indexing-after-updating-a-service-page",
+  "stats": [],
+  "reviewedDate": "2026-09-25",
+  "sources": [
+    {
+      "title": "recrawl instructions",
+      "source_url": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl"
+    }
+  ],
+  "status": "Official guidance checked; remaining checklists and examples are original suggested workflows, not reported outcomes."
+}
