@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-04T03:32:57.539Z",
+  "score": -96,
+  "rawScore": -96,
+  "eventScore": -96,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 26,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -48,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "fd2e13f0-f45d-4364-a1b3-ca01d1a550d1",
+      "occurredAt": "2026-09-04T03:31:52.216Z",
+      "date": "2026-09-03",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "The 2026-09-03 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-09-03: buying-silver-from-a-local-coin-shop-vs-online.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    },
+    {
+      "id": "13161b8d-42e3-4311-8c90-5571d31dcb1b",
+      "occurredAt": "2026-09-04T03:31:52.216Z",
+      "date": "2026-09-03",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-03 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-09-03",
+      "evidence": "public/blog/research/2026-09-03-pending.json still lists 1 remaining slug(s): buying-silver-from-a-local-coin-shop-vs-online."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-03",
+      "expectedSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online",
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "pendingRemaining": [
+        "buying-silver-from-a-local-coin-shop-vs-online"
+      ],
+      "blockedSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online"
+      ],
+      "registeredQueueSlugs": [
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "blockedQueueSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online"
+      ],
+      "missingRegisteredSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-09-03",
+          "evidence": "public/blog/research/2026-09-03-pending.json still lists 1 remaining slug(s): buying-silver-from-a-local-coin-shop-vs-online."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "readyForPostingSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "missingReleaseQaSlugs": [
+        "how-to-avoid-silver-dealer-scams"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-03.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 11,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "The 2026-09-03 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-09-03: buying-silver-from-a-local-coin-shop-vs-online.",
+      "autoApplicable": false
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 18,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-03 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

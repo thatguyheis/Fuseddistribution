@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-02T05:20:11.626Z",
+  "score": -100,
+  "rawScore": -192,
+  "eventScore": -192,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 14,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -144,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "580c3877-d9e5-41dc-b54f-3357ed826a0d",
+      "occurredAt": "2026-10-02T05:20:11.585Z",
+      "date": "2026-10-01",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 4,
+      "evidence": "The 2026-10-01 registered reel queue has 4 slug(s) without release-qa.json: what-a-coin-collar-does-during-striking, how-to-read-a-usgs-silver-commodity-summary, when-two-service-pages-answer-the-same-question, assigning-accessibility-ownership-in-a-small-team. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -192,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-01",
+      "expectedSlugs": [
+        "what-a-coin-collar-does-during-striking",
+        "how-to-read-a-usgs-silver-commodity-summary",
+        "when-two-service-pages-answer-the-same-question",
+        "assigning-accessibility-ownership-in-a-small-team"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "what-a-coin-collar-does-during-striking",
+        "how-to-read-a-usgs-silver-commodity-summary",
+        "when-two-service-pages-answer-the-same-question",
+        "assigning-accessibility-ownership-in-a-small-team"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "what-a-coin-collar-does-during-striking",
+        "how-to-read-a-usgs-silver-commodity-summary",
+        "when-two-service-pages-answer-the-same-question",
+        "assigning-accessibility-ownership-in-a-small-team"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "what-a-coin-collar-does-during-striking",
+        "how-to-read-a-usgs-silver-commodity-summary",
+        "when-two-service-pages-answer-the-same-question",
+        "assigning-accessibility-ownership-in-a-small-team"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 6,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-10-01 registered reel queue has 4 slug(s) without release-qa.json: what-a-coin-collar-does-during-striking, how-to-read-a-usgs-silver-commodity-summary, when-two-service-pages-answer-the-same-question, assigning-accessibility-ownership-in-a-small-team. They remain ineligible for distribution.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

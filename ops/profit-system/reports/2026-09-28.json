@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-29T05:20:13.409Z",
+  "score": -100,
+  "rawScore": -192,
+  "eventScore": -192,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 15,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -144,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "8339c2f9-ee9e-4588-9b46-bea919775846",
+      "occurredAt": "2026-09-29T05:20:13.369Z",
+      "date": "2026-09-28",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 4,
+      "evidence": "The 2026-09-28 registered reel queue has 4 slug(s) without release-qa.json: how-to-check-contrast-on-website-contact-buttons, how-to-photograph-silver-coins-for-an-inventory, how-to-reconcile-a-silver-inventory-after-a-sale, how-to-test-skip-links-on-a-business-website. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -192,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-28",
+      "expectedSlugs": [
+        "how-to-check-contrast-on-website-contact-buttons",
+        "how-to-photograph-silver-coins-for-an-inventory",
+        "how-to-reconcile-a-silver-inventory-after-a-sale",
+        "how-to-test-skip-links-on-a-business-website"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "how-to-check-contrast-on-website-contact-buttons",
+        "how-to-photograph-silver-coins-for-an-inventory",
+        "how-to-reconcile-a-silver-inventory-after-a-sale",
+        "how-to-test-skip-links-on-a-business-website"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-check-contrast-on-website-contact-buttons",
+        "how-to-photograph-silver-coins-for-an-inventory",
+        "how-to-reconcile-a-silver-inventory-after-a-sale",
+        "how-to-test-skip-links-on-a-business-website"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "how-to-check-contrast-on-website-contact-buttons",
+        "how-to-photograph-silver-coins-for-an-inventory",
+        "how-to-reconcile-a-silver-inventory-after-a-sale",
+        "how-to-test-skip-links-on-a-business-website"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 5,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-09-28 registered reel queue has 4 slug(s) without release-qa.json: how-to-check-contrast-on-website-contact-buttons, how-to-photograph-silver-coins-for-an-inventory, how-to-reconcile-a-silver-inventory-after-a-sale, how-to-test-skip-links-on-a-business-website. They remain ineligible for distribution.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

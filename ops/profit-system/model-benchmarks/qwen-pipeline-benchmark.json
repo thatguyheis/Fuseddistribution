@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T19:49:36.326Z",
+  "tasks": [
+    {
+      "name": "article-outline",
+      "prompt": "Return JSON only: {\"sections\":[\"...\"]}. Create 8 distinct H2 topics for an article titled \"Buying Silver From a Local Coin Shop vs Online\". Stay exactly on that comparison."
+    },
+    {
+      "name": "section-writing",
+      "prompt": "Write one markdown section only, 130-160 words, heading \"## Comparing Total Purchase Cost\". Explain premiums, shipping, payment fees, and local tax when comparing local and online silver purchases. No bullets, no preamble, no em dash."
+    },
+    {
+      "name": "article-repair",
+      "prompt": "Rewrite this into one clean 45-65 word paragraph answering the exact question: \"How do I avoid silver dealer scams?\" Remove filler and keep practical checks: identity, pricing, payment protection, and delivery policy. Text: \"Buying silver is important and there are many things to think about. You should be careful and do research because some sellers may not be good.\""
+    },
+    {
+      "name": "meta-description",
+      "prompt": "Return only one SEO meta description, 140-160 characters, for: \"Contact Page Tips For Local Business\". Mention clear contact options and faster lead response. No quotes."
+    },
+    {
+      "name": "alt-text",
+      "prompt": "Return only 6 words of alt text for a photo showing silver bars beside a coin shop counter. No punctuation, no preamble."
+    },
+    {
+      "name": "chart-json",
+      "prompt": "Return JSON only: {\"title\":\"...\",\"labels\":[...],\"values\":[...],\"unit\":\"...\",\"source\":\"...\"}. From this sourced data, make a 3-point chart: solar silver demand was 50 million ounces in 2014, 161 million in 2020, and 232 million in 2024. Do not invent values."
+    },
+    {
+      "name": "reel-script",
+      "prompt": "Return JSON only: {\"segments\":[{\"type\":\"hook|overlay|stat|question\",\"text\":\"...\"}]}. Create exactly 6 segments for \"Buying Silver From a Local Coin Shop vs Online\": hook, two practical comparisons, one verification step, one cost point, and a closing question. No segment may exceed 16 words."
+    },
+    {
+      "name": "social-copy",
+      "prompt": "Return JSON only: {\"instagram\":\"...\",\"x\":\"...\"}. Write a useful, non-hype caption about comparing local coin shops and online silver dealers. Instagram 60-90 words with 3 hashtags; X 35-55 words. No fake statistics."
+    },
+    {
+      "name": "qa-json",
+      "prompt": "Return JSON only: {\"score\":number,\"pass\":boolean,\"blockers\":string[]}. QA this draft: \"Buy silver online or locally. Both have pros and cons. Compare the final price, verify the dealer identity, check payment protection, and understand delivery timing.\" Fail it because it is far below a full article requirement and lacks sources. Score must be below 85."
+    },
+    {
+      "name": "research-brief",
+      "prompt": "Return JSON only: {\"claim\":\"...\",\"what_to_verify\":[\"...\"],\"source_types\":[\"...\"]}. For the topic \"silver dealer scams\", give one cautious claim, 3 verification items, and 2 authoritative source types. Do not assert current facts without sources."
+    }
+  ],
+  "summary": {
+    "qwen3:4b": {
+      "passes": 0,
+      "total": 10,
+      "passRate": 0,
+      "avgSeconds": 30.09,
+      "byTask": {
+        "article-outline": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "section-writing": {
+          "pass": false,
+          "seconds": 30.07
+        },
+        "article-repair": {
+          "pass": false,
+          "seconds": 30.1
+        },
+        "meta-description": {
+          "pass": false,
+          "seconds": 30.09
+        },
+        "alt-text": {
+          "pass": false,
+          "seconds": 30.08
+        },
+        "chart-json": {
+          "pass": false,
+          "seconds": 30.08
+        },
+        "reel-script": {
+          "pass": false,
+          "seconds": 30.09
+        },
+        "social-copy": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "qa-json": {
+          "pass": false,
+          "seconds": 30.16
+        },
+        "research-brief": {
+          "pass": false,
+          "seconds": 30.09
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "task": "article-outline",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "section-writing",
+      "model": "qwen3:4b",
+      "seconds": 30.07,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "article-repair",
+      "model": "qwen3:4b",
+      "seconds": 30.1,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "meta-description",
+      "model": "qwen3:4b",
+      "seconds": 30.09,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "alt-text",
+      "model": "qwen3:4b",
+      "seconds": 30.08,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "chart-json",
+      "model": "qwen3:4b",
+      "seconds": 30.08,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "reel-script",
+      "model": "qwen3:4b",
+      "seconds": 30.09,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "social-copy",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "qa-json",
+      "model": "qwen3:4b",
+      "seconds": 30.16,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "research-brief",
+      "model": "qwen3:4b",
+      "seconds": 30.09,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "guardrail": "Benchmark results are advisory and do not authorize production promotion."
+}

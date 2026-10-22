@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-16T05:20:13.497Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 14,
+    "trailingMedianScore": -56,
+    "deltaVsMedian": 8,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "cf35e57b-98e5-4ece-8a2d-473a2784675a",
+      "occurredAt": "2026-10-16T05:20:13.459Z",
+      "date": "2026-10-15",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "The 2026-10-15 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-15: how-to-review-required-fields-in-a-contact-form.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-10-15",
+      "evidence": "2026-10-15: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: how-to-review-required-fields-in-a-contact-form."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-15",
+      "expectedSlugs": [
+        "how-to-review-required-fields-in-a-contact-form"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "how-to-review-required-fields-in-a-contact-form"
+      ],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [
+        "how-to-review-required-fields-in-a-contact-form"
+      ],
+      "missingRegisteredSlugs": [
+        "how-to-review-required-fields-in-a-contact-form"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-10-15",
+          "evidence": "2026-10-15: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: how-to-review-required-fields-in-a-contact-form."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 5,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "The 2026-10-15 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-15: how-to-review-required-fields-in-a-contact-form.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

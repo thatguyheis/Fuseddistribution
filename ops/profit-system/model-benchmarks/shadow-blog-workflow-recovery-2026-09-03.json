@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "mode": "shadow-only",
+  "title": "How to Compare Silver Premiums Across Dealers Before You Buy",
+  "topic": "silver dealer premiums",
+  "publishSideEffects": false,
+  "masterOutline": "```json\n{\n  \"sections\": [\n    \"Understanding Spot Price and Its Impact\",\n    \"Dealer Premium and Its Influence\",\n    \"Payment Fees and Their Costs\",\n    \"Shipping and Logistics Expenses\",\n    \"Taxes and Additional Charges\",\n    \"Product Type Variations\",\n    \"Buyback Terms and Conditions\",\n    \"Comparison Checklist for Informed Decisions\"\n  ]\n}\n```",
+  "assignmentRationale": {
+    "LFM": "Fast local prose, outline, repair, reel draft, and research transformation.",
+    "Gemma": "Structured extraction, exact-length metadata, chart decisions, and final QA.",
+    "deterministic": "No model should own length checks, schema validation, source verification, or publish authorization."
+  },
+  "summary": {
+    "LFM": {
+      "stages": [
+        "research-brief",
+        "master-outline",
+        "article-draft",
+        "article-repair",
+        "reel-script",
+        "social-copy"
+      ],
+      "passes": 3,
+      "total": 6,
+      "avgSeconds": 5.5
+    },
+    "Gemma": {
+      "stages": [
+        "meta-description",
+        "alt-text",
+        "chart-extraction",
+        "final-qa"
+      ],
+      "passes": 2,
+      "total": 4,
+      "avgSeconds": 17.8
+    }
+  },
+  "transcript": [
+    {
+      "stage": "research-brief",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Create JSON only: {\"angle\":\"...\",\"questions\":[\"...\"],\"source_types\":[\"...\"]}. For the topic \"silver dealer premiums\", give one cautious editorial angle, 3 questions that require current verification, and 3 authoritative source types. Do not invent current numbers.",
+      "seconds": 4.12,
+      "pass": true,
+      "output": "```json\n{\n  \"angle\": \"The silver dealer premiums often reflect market sentiment and regulatory shifts, but their impact can be nuanced and context-dependent.\",\n  \"questions\": [\n    \"How do recent regulatory changes influence the pricing dynamics of silver dealers?\",\n    \"What factors are driving the observed premiums in the current market?\",\n    \"Are there regional disparities in silver dealer pricing that require further analysis?\"\n  ],\n  \"source_types\": [\"market analysis reports\", \"regulatory documents\", \"industry surveys\"]\n}\n```",
+      "error": null
+    },
+    {
+      "stage": "master-outline",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Create JSON only: {\"sections\":[\"...\"]}. Build 8 distinct H2 topics for \"How to Compare Silver Premiums Across Dealers Before You Buy\". Cover spot price, dealer premium, payment fees, shipping, taxes, product type, buyback terms, and a comparison checklist.",
+      "seconds": 3.15,
+      "pass": true,
+      "output": "```json\n{\n  \"sections\": [\n    \"Understanding Spot Price and Its Impact\",\n    \"Dealer Premium and Its Influence\",\n    \"Payment Fees and Their Costs\",\n    \"Shipping and Logistics Expenses\",\n    \"Taxes and Additional Charges\",\n    \"Product Type Variations\",\n    \"Buyback Terms and Conditions\",\n    \"Comparison Checklist for Informed Decisions\"\n  ]\n}\n```",
+      "error": null
+    },
+    {
+      "stage": "article-draft",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Write a useful answer-first draft for \"How to Compare Silver Premiums Across Dealers Before You Buy\" in 450-550 words. Use 5 short H2 headings. Explain the comparison method without asserting current prices or named dealer rankings. No em dash, no placeholders, no invented statistics.",
+      "seconds": 11.62,
+      "pass": false,
+      "output": "Understanding Silver Premiums  \nWhen purchasing a vehicle, knowing the difference between the sticker price and the total cost of ownership is essential. One key aspect of this process is comparing silver premiums across different dealers. This comparison helps you identify which dealership offers the best overall value.\n\nEvaluating Sticker Price vs Total Cost  \nThe sticker price is just the starting point. A dealer’s premium is the additional amount charged beyond the base price. To compare effectively, focus on the total cost of ownership, which includes financing, insurance, maintenance, and depreciation. By examining these factors, you can see which dealer provides the most competitive overall deal.\n\nUsing a Systematic Comparison Approach  \nA practical method involves visiting multiple dealerships and documenting each offer. Take note of the base price, any additional fees, and the final total. This approach allows you to compare apples to apples, ensuring you’re evaluating each deal fairly. It also helps you spot discrepancies or inconsistencies in pricing.\n\nAssessing Dealer Practices and Transparency  \nPay attention to how dealers present their offers. Transparent pricing and clear explanations of fees can indicate a fairer deal. If a dealer is vague or hides costs, it may be worth exploring other options. This step helps you make a more informed decision.\n\nMaximizing Value Through Research  \nBefore you finalize a choice, research different dealers in your area. Look for reviews, ask about their financing options, and compare their service offerings. This research empowers you to negotiate better or choose a more reliable partner. It also ensures you’re not settling for the first offer without understanding the full picture.\n\nBy following these steps, you can confidently compare silver premiums and find the best deal that fits your needs.",
+      "error": null
+    },
+    {
+      "stage": "article-repair",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Rewrite this paragraph into 70-90 clear words for the exact topic of comparing silver premiums: \"A lot of people buy silver and there are many prices. It is good to look around and do research before buying because different sellers have different things.\" No em dash or unsupported statistics.",
+      "seconds": 3.37,
+      "pass": true,
+      "output": "When people consider buying silver, they often encounter various prices and options. It’s important to compare different sources and understand the factors that affect the cost. Many buyers find it helpful to research thoroughly before making a purchase. This is because each seller may offer different prices or conditions, and being informed can help you make a better decision. By comparing these options, you can choose the most suitable price and quality for your needs.",
+      "error": null
+    },
+    {
+      "stage": "meta-description",
+      "assignedRole": "Gemma",
+      "model": "gemma3:4b-it-qat",
+      "prompt": "Return only one 140-160 character SEO meta description for \"How to Compare Silver Premiums Across Dealers Before You Buy\". Mention comparing premiums, fees, and final purchase cost. No quotes.",
+      "seconds": 14.15,
+      "pass": false,
+      "output": "Compare silver premiums across different dealers to get the best deal! Understand fees and total purchase costs before buying silver. Smart shopping means lower prices – find the most affordable silver today!",
+      "error": null
+    },
+    {
+      "stage": "alt-text",
+      "assignedRole": "Gemma",
+      "model": "gemma3:4b-it-qat",
+      "prompt": "Return exactly 6 words of alt text for a photo showing silver bars, a spot price screen, and a dealer invoice. No punctuation or preamble.",
+      "seconds": 15.08,
+      "pass": false,
+      "output": "Silver market analysis, pricing, and dealer transactions.",
+      "error": null
+    },
+    {
+      "stage": "chart-extraction",
+      "assignedRole": "Gemma",
+      "model": "gemma3:4b-it-qat",
+      "prompt": "Return JSON only: {\"schema_version\":2,\"skipped\":true,\"skip_reason\":\"...\"}. There are no sourced numeric observations in this brief, so do not invent a chart.",
+      "seconds": 16.16,
+      "pass": true,
+      "output": "```json\n{\"schema_version\":2,\"skipped\":true,\"skip_reason\":\"No sourced numeric observations present in the brief.\"}\n```\n",
+      "error": null
+    },
+    {
+      "stage": "reel-script",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Return JSON only: {\"segments\":[{\"type\":\"hook|overlay|stat|question\",\"text\":\"...\"}]}. Create exactly 6 short segments for \"How to Compare Silver Premiums Across Dealers Before You Buy\": hook, spot-price explanation, premium explanation, fee check, comparison checklist, closing question. No segment over 14 words.",
+      "seconds": 8.22,
+      "pass": false,
+      "output": "{\"segments\": [{\"type\":\"hook|overlay|stat|question\",\"text\":\"How to compare silver premiums?\"}, {\"type\":\"hook|overlay|stat|question\",\"text\":\"What is spot-price?\"}, {\"type\":\"hook|overlay|stat|question\",\"text\":\"Why check premiums?\"}, {\"type\":\"hook|overlay|stat|question\",\"text\":\"What affects fees?\"}, {\"type\":\"hook|overlay|stat|question\",\"text\":\"How do you compare?\"}, {\"type\":\"hook|overlay|stat|question\",\"text\":\"What’s the final question?\"}]}",
+      "error": null
+    },
+    {
+      "stage": "social-copy",
+      "assignedRole": "LFM",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "prompt": "Return JSON only: {\"instagram\":\"...\",\"x\":\"...\"}. Write practical social copy for \"How to Compare Silver Premiums Across Dealers Before You Buy\". Instagram 45-70 words, X 30-45 words, no hashtags, no invented current statistics, no em dash.",
+      "seconds": 2.53,
+      "pass": false,
+      "output": "{\"instagram\": \"Learn how to find the best silver premiums without breaking the bank. Compare rates across dealers easily and save money on your purchase.\", \"x\": \"Quick tips to compare premiums and save on your next car buy\"}",
+      "error": null
+    },
+    {
+      "stage": "final-qa",
+      "assignedRole": "Gemma",
+      "model": "gemma3:4b-it-qat",
+      "prompt": "Return JSON only: {\"score\":number,\"pass\":boolean,\"blockers\":[\"...\"]}. QA this shadow draft: It explains how to compare spot price, premium, payment fee, shipping, tax, and buyback terms, but it contains no current sourced prices and is only 500 words. It is not ready for publication because it needs a full length article and source citations. Score below 85 and fail it.",
+      "seconds": 25.83,
+      "pass": true,
+      "output": "```json\n{\n  \"score\": 60,\n  \"pass\": false,\n  \"blockers\": [\n    \"Lacks current sourced prices.\",\n    \"Too short (500 words) for a comprehensive explanation.\",\n    \"Requires full-length article and source citations.\"\n  ]\n}\n```\n",
+      "error": null
+    }
+  ],
+  "conclusion": "Shadow result only. No posts.json registration, deploy, or publication occurred."
+}

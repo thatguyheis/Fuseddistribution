@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-11T05:20:12.744Z",
+  "score": -24,
+  "rawScore": -24,
+  "eventScore": -24,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 11,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 24,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "b950b916-bbd9-40e8-808f-d6ece3795003",
+      "occurredAt": "2026-10-11T05:20:12.704Z",
+      "date": "2026-10-10",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "The 2026-10-10 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-10: measuring-correction-time-in-an-ai-pilot.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -24,
+      "multiplier": 1.5,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 1.5,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-10-10",
+      "evidence": "2026-10-10: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: measuring-correction-time-in-an-ai-pilot."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-10",
+      "expectedSlugs": [
+        "measuring-correction-time-in-an-ai-pilot"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "measuring-correction-time-in-an-ai-pilot"
+      ],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [
+        "measuring-correction-time-in-an-ai-pilot"
+      ],
+      "missingRegisteredSlugs": [
+        "measuring-correction-time-in-an-ai-pilot"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-10-10",
+          "evidence": "2026-10-10: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: measuring-correction-time-in-an-ai-pilot."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 2,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "The 2026-10-10 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-10: measuring-correction-time-in-an-ai-pilot.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-26T05:20:20.970Z",
+  "score": -88,
+  "rawScore": -88,
+  "eventScore": -88,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 15,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -40,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "de65f155-9cab-43d7-a85b-8bc378f9c3e7",
+      "occurredAt": "2026-09-26T05:20:20.953Z",
+      "date": "2026-09-25",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 1,
+      "evidence": "The 2026-09-25 registered reel queue has 1 slug(s) without release-qa.json: how-to-choose-pvc-free-flips-for-silver-coins. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -40,
+      "multiplier": 2.5,
+      "weight": 16
+    },
+    {
+      "id": "5c3e0890-e509-4170-b596-6acdc118399f",
+      "occurredAt": "2026-09-26T05:20:20.953Z",
+      "date": "2026-09-25",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-25 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 2.5,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-25",
+      "expectedSlugs": [
+        "how-to-choose-pvc-free-flips-for-silver-coins",
+        "how-to-handle-proof-silver-coins-without-fingerprints",
+        "how-to-request-indexing-after-updating-a-service-page",
+        "how-to-test-website-links-after-changing-page-names"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "how-to-choose-pvc-free-flips-for-silver-coins",
+        "how-to-handle-proof-silver-coins-without-fingerprints",
+        "how-to-request-indexing-after-updating-a-service-page",
+        "how-to-test-website-links-after-changing-page-names"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-choose-pvc-free-flips-for-silver-coins",
+        "how-to-handle-proof-silver-coins-without-fingerprints",
+        "how-to-request-indexing-after-updating-a-service-page",
+        "how-to-test-website-links-after-changing-page-names"
+      ],
+      "readyForPostingSlugs": [
+        "how-to-handle-proof-silver-coins-without-fingerprints",
+        "how-to-request-indexing-after-updating-a-service-page",
+        "how-to-test-website-links-after-changing-page-names"
+      ],
+      "missingReleaseQaSlugs": [
+        "how-to-choose-pvc-free-flips-for-silver-coins"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-25.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 4,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-09-25 registered reel queue has 1 slug(s) without release-qa.json: how-to-choose-pvc-free-flips-for-silver-coins. They remain ineligible for distribution.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 16,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-25 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

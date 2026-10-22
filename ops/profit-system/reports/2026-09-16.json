@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-17T05:31:22.728Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 22,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 48,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-16",
+      "expectedSlugs": [
+        "how-to-organize-customer-photos-for-your-website",
+        "how-to-write-a-useful-service-area-page"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "how-to-write-a-useful-service-area-page"
+      ],
+      "registeredQueueSlugs": [
+        "how-to-organize-customer-photos-for-your-website",
+        "how-to-write-a-useful-service-area-page"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-organize-customer-photos-for-your-website",
+        "how-to-write-a-useful-service-area-page"
+      ],
+      "readyForPostingSlugs": [
+        "how-to-organize-customer-photos-for-your-website",
+        "how-to-write-a-useful-service-area-page"
+      ],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

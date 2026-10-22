@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-21T05:20:13.081Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 15,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 48,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-10-20",
+      "evidence": "2026-10-20: no dated publication queue exists. Catalog registration and completion markers cannot establish daily output."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-20",
+      "expectedSlugs": [],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-10-20",
+          "evidence": "2026-10-20: no dated publication queue exists. Catalog registration and completion markers cannot establish daily output."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": false
+}

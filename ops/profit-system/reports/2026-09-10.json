@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-11T05:31:58.785Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 25,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 0,
+    "direction": "flat"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "a0656d78-1946-410a-893a-7288c9633bc5",
+      "occurredAt": "2026-09-11T05:31:58.779Z",
+      "date": "2026-09-10",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-10 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-09-10",
+      "evidence": "2026-09-10: 1/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: silver-stacking-for-beginners-first-steps."
+    },
+    {
+      "type": "incomplete_blog_registration",
+      "fingerprint": "blog-registration-2026-09-10",
+      "evidence": "public/blog/research/2026-09-10-complete.json exists, but expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for 2026-09-10: silver-stacking-for-beginners-first-steps."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-10",
+      "expectedSlugs": [
+        "silver-stacking-for-beginners-first-steps",
+        "how-to-get-repeat-customers"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "unaccountedQueueSlugs": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "completeExists": true,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-09-10",
+          "evidence": "2026-09-10: 1/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: silver-stacking-for-beginners-first-steps."
+        },
+        {
+          "type": "incomplete_blog_registration",
+          "fingerprint": "blog-registration-2026-09-10",
+          "evidence": "public/blog/research/2026-09-10-complete.json exists, but expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for 2026-09-10: silver-stacking-for-beginners-first-steps."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [
+        "how-to-get-repeat-customers"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-10.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 21,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-10 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

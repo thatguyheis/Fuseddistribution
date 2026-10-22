@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "harnessSha256": "13f1485ce549e362cf25d6b0faec88416817ab7ddb5f2abfe802095997cb58c1",
+  "model": "granite4.1:3b",
+  "variant": "constrained",
+  "startedAt": "2026-09-24T15:04:55.994Z",
+  "repeats": 2,
+  "settings": {
+    "temperature": 0,
+    "numCtx": 4096,
+    "concurrency": 1,
+    "keepAliveSeconds": 0
+  },
+  "cases": [
+    {
+      "id": "section-repair",
+      "kind": "section",
+      "maxTokens": 550,
+      "prompt": "Write only 180-220 words of prose in 3 paragraphs for a business owner, with no heading, bullets, preamble, or em dash. Explain how to separate a planned URL map from actual redirect testing. Use only these supplied notes: Source A: The URL map records old addresses and their intended new destinations. A planned destination is not proof that a redirect works. Test the old address and final page separately. No ranking outcome is guaranteed. The map can have separate columns for old URL, planned new URL, and observed test result. Record a failed test for follow-up rather than marking it completed. Do not invent statistics, rankings promises, or URLs. Expand this weak draft: Make a URL map. Test the redirects."
+    }
+  ],
+  "results": [
+    {
+      "id": "section-repair",
+      "repeat": 0,
+      "critical": false,
+      "memorySamples": [
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332608 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5889.50M  free = 1278.50M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332784 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5889.50M  free = 1278.50M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332752 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5881.50M  free = 1286.50M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332768 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5881.50M  free = 1286.50M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332768 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5881.50M  free = 1286.50M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81744 /opt/homebrew/opt/ollama/bin/ollama",
+            " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2332768 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5881.50M  free = 1286.50M  (encrypted)"
+        }
+      ],
+      "request": {
+        "model": "granite4.1:3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write only 180-220 words of prose in 3 paragraphs for a business owner, with no heading, bullets, preamble, or em dash. Explain how to separate a planned URL map from actual redirect testing. Use only these supplied notes: Source A: The URL map records old addresses and their intended new destinations. A planned destination is not proof that a redirect works. Test the old address and final page separately. No ranking outcome is guaranteed. The map can have separate columns for old URL, planned new URL, and observed test result. Record a failed test for follow-up rather than marking it completed. Do not invent statistics, rankings promises, or URLs. Expand this weak draft: Make a URL map. Test the redirects. Plan three paragraphs of 65-70 words each. Output the paragraphs only."
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "keep_alive": 0,
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 4096,
+          "num_predict": 550
+        }
+      },
+      "raw": "A URL map is an essential tool for organizing website changes and ensuring smooth transitions between old and new addresses. Begin by listing all current URLs alongside their intended replacements in a structured format, such as columns for the old URL, planned new URL, and any observed test results. This visual representation helps track progress and identify discrepancies early on.\n\nTesting redirects is crucial to verify that each old address successfully directs users to its designated new page. Conduct these tests individually—first check the redirection from the old URL to the planned destination, then confirm that visitors land on the actual content of the new page. Remember, a successful map does not guarantee ranking outcomes or traffic improvements; it merely confirms functionality.\n\nWhen testing fails, document the issue rather than marking it as completed. This approach allows for follow-up adjustments and ensures no potential problems are overlooked. By maintaining an updated URL map with clear test results, you can efficiently manage website migrations while keeping a record of any unresolved redirects for future review.",
+      "pass": false,
+      "checks": {
+        "wordCount": false,
+        "paragraphs": true,
+        "noHeadingOrList": true,
+        "noEmDash": false,
+        "topic": true,
+        "noInventedNumbersOrUrls": true
+      },
+      "words": 174,
+      "manualReviewRequired": true,
+      "afterEnvelopeNormalization": {
+        "pass": false,
+        "checks": {
+          "wordCount": false,
+          "paragraphs": true,
+          "noHeadingOrList": true,
+          "noEmDash": false,
+          "topic": true,
+          "noInventedNumbersOrUrls": true
+        },
+        "words": 174,
+        "manualReviewRequired": true
+      },
+      "tokens": {
+        "input": 171,
+        "output": 195
+      },
+      "finishReason": "stop",
+      "loadSeconds": 0.510975459,
+      "seconds": 12.65
+    },
+    {
+      "id": "section-repair",
+      "repeat": 1,
+      "critical": false,
+      "memorySamples": [
+        {
+          "observedProcessRssKiB": [
+            " 81520 /opt/homebrew/opt/ollama/bin/ollama",
+            " 32864 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2293024 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5705.44M  free = 1462.56M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81568 /opt/homebrew/opt/ollama/bin/ollama",
+            " 32912 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2293968 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5705.44M  free = 1462.56M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81472 /opt/homebrew/opt/ollama/bin/ollama",
+            " 30336 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2736 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2294304 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5697.44M  free = 1470.56M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81456 /opt/homebrew/opt/ollama/bin/ollama",
+            " 30336 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2736 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2294560 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5697.44M  free = 1470.56M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81456 /opt/homebrew/opt/ollama/bin/ollama",
+            " 30336 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2736 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2294800 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5697.44M  free = 1470.56M  (encrypted)"
+        },
+        {
+          "observedProcessRssKiB": [
+            " 81456 /opt/homebrew/opt/ollama/bin/ollama",
+            " 30336 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+            "  2736 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "2294976 /opt/homebrew/Cellar/ollama/0.21.0/bin/ollama"
+          ],
+          "swap": "vm.swapusage: total = 7168.00M  used = 5689.44M  free = 1478.56M  (encrypted)"
+        }
+      ],
+      "request": {
+        "model": "granite4.1:3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write only 180-220 words of prose in 3 paragraphs for a business owner, with no heading, bullets, preamble, or em dash. Explain how to separate a planned URL map from actual redirect testing. Use only these supplied notes: Source A: The URL map records old addresses and their intended new destinations. A planned destination is not proof that a redirect works. Test the old address and final page separately. No ranking outcome is guaranteed. The map can have separate columns for old URL, planned new URL, and observed test result. Record a failed test for follow-up rather than marking it completed. Do not invent statistics, rankings promises, or URLs. Expand this weak draft: Make a URL map. Test the redirects. Plan three paragraphs of 65-70 words each. Output the paragraphs only."
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "keep_alive": 0,
+        "options": {
+          "temperature": 0,
+          "seed": 43,
+          "num_ctx": 4096,
+          "num_predict": 550
+        }
+      },
+      "raw": "A URL map is an essential tool for organizing website changes and ensuring smooth transitions between old and new addresses. Begin by listing all current URLs alongside their intended replacements in a structured format, such as columns for the old URL, planned new URL, and any observed test results. This visual representation helps track progress and identify discrepancies early on.\n\nTesting redirects is crucial to verify that each old address successfully directs users to its designated new page. Conduct these tests individually—first check the redirection from the old URL to the planned destination, then confirm that visitors land on the actual content of the new page. Remember, a successful map does not guarantee ranking outcomes or traffic improvements; it merely confirms functionality.\n\nWhen testing fails, document the issue rather than marking it as completed. This approach allows for follow-up adjustments and ensures no potential problems are overlooked. By maintaining an updated URL map with clear test results, you can efficiently manage website migrations while keeping a record of any unresolved redirects for future review.",
+      "pass": false,
+      "checks": {
+        "wordCount": false,
+        "paragraphs": true,
+        "noHeadingOrList": true,
+        "noEmDash": false,
+        "topic": true,
+        "noInventedNumbersOrUrls": true
+      },
+      "words": 174,
+      "manualReviewRequired": true,
+      "afterEnvelopeNormalization": {
+        "pass": false,
+        "checks": {
+          "wordCount": false,
+          "paragraphs": true,
+          "noHeadingOrList": true,
+          "noEmDash": false,
+          "topic": true,
+          "noInventedNumbersOrUrls": true
+        },
+        "words": 174,
+        "manualReviewRequired": true
+      },
+      "tokens": {
+        "input": 171,
+        "output": 195
+      },
+      "finishReason": "stop",
+      "loadSeconds": 0.521066292,
+      "seconds": 13.72
+    }
+  ],
+  "memoryBefore": {
+    "observedProcessRssKiB": [
+      " 81504 /opt/homebrew/opt/ollama/bin/ollama",
+      " 35984 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+      "  2752 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+    ],
+    "swap": "vm.swapusage: total = 7168.00M  used = 5889.50M  free = 1278.50M  (encrypted)"
+  },
+  "limitations": [
+    "Contract checks do not establish editorial correctness. Writing requires manual review.",
+    "Process RSS samples are not peak memory or complete GPU allocation.",
+    "Cases are sanitized incident-inspired fixtures, not a held-out production corpus.",
+    "No publishing, queue writes, cloud requests, or model promotion."
+  ],
+  "installedModel": {
+    "name": "granite4.1:3b",
+    "model": "granite4.1:3b",
+    "modified_at": "2026-07-02T06:34:08.767034221-07:00",
+    "size": 2099520281,
+    "digest": "6fd349357287c7ffc9e38189a93b48ea175d24fc566b38f09cfc564fb7f303eb",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "granite",
+      "families": [
+        "granite"
+      ],
+      "parameter_size": "3.4B",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "memoryAfterLastCall": {
+    "observedProcessRssKiB": [
+      " 81552 /opt/homebrew/opt/ollama/bin/ollama",
+      " 30432 /opt/homebrew/Cellar/python@3.11/3.11.15_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+      "  2736 /opt/homebrew/Cellar/python@3.14/3.14.5/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+      "     0 (ollama)"
+    ],
+    "swap": "vm.swapusage: total = 7168.00M  used = 5689.44M  free = 1478.56M  (encrypted)"
+  },
+  "completedAt": "2026-09-24T15:05:22.488Z",
+  "summary": {
+    "passed": 0,
+    "total": 2,
+    "criticalFailed": [],
+    "totalSeconds": 26.37
+  }
+}

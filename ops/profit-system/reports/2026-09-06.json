@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "date": "2026-09-06",
+  "generatedAt": "2026-09-07T03:32:41.221Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 27,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 0,
+    "direction": "flat"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "fdef909b-9206-4ad8-9d63-1cc0e68bdab2",
+      "occurredAt": "2026-09-07T03:30:55.413Z",
+      "date": "2026-09-06",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-06 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-06",
+      "expectedSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "contact-page-best-practices-for-local-business",
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "registeredQueueSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "readyForPostingSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-06.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 20,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-06 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-16",
+  "type": "verified-process-repair",
+  "outcomes": {
+    "liveArticles": 4,
+    "catalogCount": 318,
+    "testsPassed": 12,
+    "reviewedReelHosted": 1,
+    "newReelsRendering": 4
+  },
+  "proof": ".workflow-state/september16-editorial-repair/live-proof.json",
+  "creativePreference": {
+    "recipe": "native topic diagram",
+    "basis": "Existing explicit owner preference for LLC tax hero",
+    "appliedTo": [
+      "how-to-test-your-website-contact-form-each-month",
+      "website-handover-checklist-for-small-business-owners",
+      "how-to-organize-customer-photos-for-your-website",
+      "how-to-write-a-useful-service-area-page"
+    ],
+    "measuredAudienceLift": null
+  },
+  "efficiency": {
+    "routineInputBytesBefore": 25820,
+    "routineInputBytesAfterApprox": 9000,
+    "measuredAccountTokenSavings": null,
+    "models": "Luna routine completion; one daily main oversight"
+  },
+  "doNotReward": [
+    "scheduled-as-sent",
+    "local-registration-as-live",
+    "unmeasured-engagement-lift"
+  ]
+}

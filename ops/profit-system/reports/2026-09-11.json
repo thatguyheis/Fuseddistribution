@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-12T05:32:35.004Z",
+  "score": 4,
+  "rawScore": 4,
+  "eventScore": 4,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 26,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 52,
+    "direction": "improved"
+  },
+  "rewards": [
+    {
+      "id": "1763938c-d5cf-4118-b296-1a65026909ae",
+      "occurredAt": "2026-09-11T15:19:47.301Z",
+      "date": "2026-09-11",
+      "kind": "reward",
+      "type": "high_quality_delivery",
+      "fingerprint": "owner-llc-diagram-hero-2026-09-11",
+      "value": 1,
+      "evidence": "ops/profit-system/evolution/feedback/2026-09-11-owner-llc-diagram-hero.json",
+      "source": "explicit_owner_feedback",
+      "attributable": true,
+      "notes": "Owner preferred the topic-specific SVG decision diagram. Editorial reward only; no measured audience uplift or financial reward.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": 4,
+      "multiplier": 1,
+      "weight": 4
+    }
+  ],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-11",
+      "expectedSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [
+        "silver-in-an-llc-vs-personal-ownership-tax-differences"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

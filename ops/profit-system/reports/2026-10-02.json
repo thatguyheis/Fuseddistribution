@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-03T05:21:23.932Z",
+  "score": -24,
+  "rawScore": -24,
+  "eventScore": -24,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 14,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 24,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "c4b13f2e-00b3-46d6-a9b6-f7934891368a",
+      "occurredAt": "2026-10-03T05:21:23.892Z",
+      "date": "2026-10-02",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 1,
+      "evidence": "The 2026-10-02 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-02: including-accessibility-in-a-website-supplier-brief.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -24,
+      "multiplier": 1.5,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 1.5,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-10-02",
+      "evidence": "2026-10-02: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: including-accessibility-in-a-website-supplier-brief."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-02",
+      "expectedSlugs": [
+        "including-accessibility-in-a-website-supplier-brief"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "including-accessibility-in-a-website-supplier-brief"
+      ],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [
+        "including-accessibility-in-a-website-supplier-brief"
+      ],
+      "missingRegisteredSlugs": [
+        "including-accessibility-in-a-website-supplier-brief"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-10-02",
+          "evidence": "2026-10-02: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: including-accessibility-in-a-website-supplier-brief."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 2,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "The 2026-10-02 blog queue has 1 quality-blocked slug(s) archived below .workflow-blocked/2026-10-02: including-accessibility-in-a-website-supplier-brief.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-08T05:32:41.854Z",
+  "score": -72,
+  "rawScore": -72,
+  "eventScore": -72,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 27,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -24,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "ecb69d93-94db-43f1-8f38-c5b6d67298f1",
+      "occurredAt": "2026-09-07T17:49:18.656Z",
+      "date": "2026-09-07",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 1,
+      "evidence": "The 2026-09-07 registered reel queue has 1 slug(s) without release-qa.json: canadian-silver-maple-leaf-investment-guide. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -24,
+      "multiplier": 1.5,
+      "weight": 16
+    },
+    {
+      "id": "a39866c3-4cfc-45c1-a3ae-0383070b532f",
+      "occurredAt": "2026-09-07T17:53:07.079Z",
+      "date": "2026-09-07",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-07 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 1.5,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-07",
+      "expectedSlugs": [
+        "canadian-silver-maple-leaf-investment-guide",
+        "customer-testimonial-video-how-to-film-and-use"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "canadian-silver-maple-leaf-investment-guide",
+        "customer-testimonial-video-how-to-film-and-use"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "canadian-silver-maple-leaf-investment-guide",
+        "customer-testimonial-video-how-to-film-and-use"
+      ],
+      "readyForPostingSlugs": [
+        "canadian-silver-maple-leaf-investment-guide",
+        "customer-testimonial-video-how-to-film-and-use"
+      ],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-07.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 2,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-09-07 registered reel queue has 1 slug(s) without release-qa.json: canadian-silver-maple-leaf-investment-guide. They remain ineligible for distribution.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 20,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-07 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

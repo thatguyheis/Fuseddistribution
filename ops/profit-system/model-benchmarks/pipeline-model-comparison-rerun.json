@@ -1,0 +1,542 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T20:15:30.998Z",
+  "tasks": [
+    {
+      "name": "article-outline",
+      "prompt": "Return JSON only: {\"sections\":[\"...\"]}. Create 8 distinct H2 topics for an article titled \"Buying Silver From a Local Coin Shop vs Online\". Stay exactly on that comparison."
+    },
+    {
+      "name": "section-writing",
+      "prompt": "Write one markdown section only, 130-160 words, heading \"## Comparing Total Purchase Cost\". Explain premiums, shipping, payment fees, and local tax when comparing local and online silver purchases. No bullets, no preamble, no em dash."
+    },
+    {
+      "name": "article-repair",
+      "prompt": "Rewrite this into one clean 45-65 word paragraph answering the exact question: \"How do I avoid silver dealer scams?\" Remove filler and keep practical checks: identity, pricing, payment protection, and delivery policy. Text: \"Buying silver is important and there are many things to think about. You should be careful and do research because some sellers may not be good.\""
+    },
+    {
+      "name": "meta-description",
+      "prompt": "Return only one SEO meta description, 140-160 characters, for: \"Contact Page Tips For Local Business\". Mention clear contact options and faster lead response. No quotes."
+    },
+    {
+      "name": "alt-text",
+      "prompt": "Return only 6 words of alt text for a photo showing silver bars beside a coin shop counter. No punctuation, no preamble."
+    },
+    {
+      "name": "chart-json",
+      "prompt": "Return JSON only: {\"title\":\"...\",\"labels\":[...],\"values\":[...],\"unit\":\"...\",\"source\":\"...\"}. From this sourced data, make a 3-point chart: solar silver demand was 50 million ounces in 2014, 161 million in 2020, and 232 million in 2024. Do not invent values."
+    },
+    {
+      "name": "reel-script",
+      "prompt": "Return JSON only: {\"segments\":[{\"type\":\"hook|overlay|stat|question\",\"text\":\"...\"}]}. Create exactly 6 segments for \"Buying Silver From a Local Coin Shop vs Online\": hook, two practical comparisons, one verification step, one cost point, and a closing question. No segment may exceed 16 words."
+    },
+    {
+      "name": "social-copy",
+      "prompt": "Return JSON only: {\"instagram\":\"...\",\"x\":\"...\"}. Write a useful, non-hype caption about comparing local coin shops and online silver dealers. Instagram 60-90 words with 3 hashtags; X 35-55 words. No fake statistics."
+    },
+    {
+      "name": "qa-json",
+      "prompt": "Return JSON only: {\"score\":number,\"pass\":boolean,\"blockers\":string[]}. QA this draft: \"Buy silver online or locally. Both have pros and cons. Compare the final price, verify the dealer identity, check payment protection, and understand delivery timing.\" Fail it because it is far below a full article requirement and lacks sources. Score must be below 85."
+    },
+    {
+      "name": "research-brief",
+      "prompt": "Return JSON only: {\"claim\":\"...\",\"what_to_verify\":[\"...\"],\"source_types\":[\"...\"]}. For the topic \"silver dealer scams\", give one cautious claim, 3 verification items, and 2 authoritative source types. Do not assert current facts without sources."
+    }
+  ],
+  "summary": {
+    "gemma3:4b-it-qat": {
+      "passes": 6,
+      "total": 10,
+      "passRate": 0.6,
+      "avgSeconds": 24.72,
+      "byTask": {
+        "article-outline": {
+          "pass": true,
+          "seconds": 23.58
+        },
+        "section-writing": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "article-repair": {
+          "pass": true,
+          "seconds": 29.98
+        },
+        "meta-description": {
+          "pass": false,
+          "seconds": 19.26
+        },
+        "alt-text": {
+          "pass": true,
+          "seconds": 10.38
+        },
+        "chart-json": {
+          "pass": true,
+          "seconds": 22.4
+        },
+        "reel-script": {
+          "pass": false,
+          "seconds": 29.39
+        },
+        "social-copy": {
+          "pass": false,
+          "seconds": 30.06
+        },
+        "qa-json": {
+          "pass": true,
+          "seconds": 22.96
+        },
+        "research-brief": {
+          "pass": true,
+          "seconds": 29.18
+        }
+      }
+    },
+    "qwen3:4b": {
+      "passes": 0,
+      "total": 10,
+      "passRate": 0,
+      "avgSeconds": 30.04,
+      "byTask": {
+        "article-outline": {
+          "pass": false,
+          "seconds": 30.01
+        },
+        "section-writing": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "article-repair": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "meta-description": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "alt-text": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "chart-json": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "reel-script": {
+          "pass": false,
+          "seconds": 30.05
+        },
+        "social-copy": {
+          "pass": false,
+          "seconds": 30.04
+        },
+        "qa-json": {
+          "pass": false,
+          "seconds": 30.04
+        },
+        "research-brief": {
+          "pass": false,
+          "seconds": 30.04
+        }
+      }
+    },
+    "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M": {
+      "passes": 5,
+      "total": 10,
+      "passRate": 0.5,
+      "avgSeconds": 3.67,
+      "byTask": {
+        "article-outline": {
+          "pass": true,
+          "seconds": 4.63
+        },
+        "section-writing": {
+          "pass": true,
+          "seconds": 6.75
+        },
+        "article-repair": {
+          "pass": true,
+          "seconds": 4.04
+        },
+        "meta-description": {
+          "pass": false,
+          "seconds": 1.7
+        },
+        "alt-text": {
+          "pass": false,
+          "seconds": 0.91
+        },
+        "chart-json": {
+          "pass": false,
+          "seconds": 3.32
+        },
+        "reel-script": {
+          "pass": false,
+          "seconds": 4.3
+        },
+        "social-copy": {
+          "pass": false,
+          "seconds": 4.75
+        },
+        "qa-json": {
+          "pass": true,
+          "seconds": 2.94
+        },
+        "research-brief": {
+          "pass": true,
+          "seconds": 3.38
+        }
+      }
+    }
+  },
+  "results": [
+    {
+      "task": "article-outline",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 23.58,
+      "contractPass": true,
+      "raw": "```json\n{\n  \"sections\": [\n    \"Introduction: Why Consider Buying Silver Locally?\",\n    \"The Advantages of Buying Silver from a Local Coin Shop\",\n    \"The Convenience and Accessibility of Online Silver Retailers\",\n    \"Pricing and Fees: A Comparison of Local and Online Costs\",\n    \"Expert Advice and Trust: The Value of Local Knowledge\",\n    \"Authenticity and Security: Assessing Risk in Both Channels\",\n    \"Customer Service and Returns: How Local Shops Differ\",\n    \"Conclusion: Which Option is Right for You?\"\n  ]\n}\n```",
+      "parsed": {
+        "sections": [
+          "Introduction: Why Consider Buying Silver Locally?",
+          "The Advantages of Buying Silver from a Local Coin Shop",
+          "The Convenience and Accessibility of Online Silver Retailers",
+          "Pricing and Fees: A Comparison of Local and Online Costs",
+          "Expert Advice and Trust: The Value of Local Knowledge",
+          "Authenticity and Security: Assessing Risk in Both Channels",
+          "Customer Service and Returns: How Local Shops Differ",
+          "Conclusion: Which Option is Right for You?"
+        ]
+      }
+    },
+    {
+      "task": "section-writing",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "article-repair",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 29.98,
+      "contractPass": true,
+      "raw": "To avoid silver dealer scams, prioritize careful research and verification. Always confirm the seller’s identity and licensing. Scrutinize pricing – is it significantly below market value? Demand payment protection and a clear delivery policy outlining shipping costs and insurance.  Don’t hesitate to request documentation and compare multiple reputable dealers before committing to a purchase to safeguard your investment.",
+      "parsed": "To avoid silver dealer scams, prioritize careful research and verification. Always confirm the seller’s identity and licensing. Scrutinize pricing – is it significantly below market value? Demand payment protection and a clear delivery policy outlining shipping costs and insurance.  Don’t hesitate to request documentation and compare multiple reputable dealers before committing to a purchase to safeguard your investment."
+    },
+    {
+      "task": "meta-description",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 19.26,
+      "contractPass": false,
+      "raw": "Get more leads with our contact page tips for local businesses! Optimize for clear contact options, faster response times, and improved customer engagement. Boost your local visibility today!",
+      "parsed": "Get more leads with our contact page tips for local businesses! Optimize for clear contact options, faster response times, and improved customer engagement. Boost your local visibility today!"
+    },
+    {
+      "task": "alt-text",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 10.38,
+      "contractPass": true,
+      "raw": "Silver bars coins shop counter display",
+      "parsed": "Silver bars coins shop counter display"
+    },
+    {
+      "task": "chart-json",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 22.4,
+      "contractPass": true,
+      "raw": "```json\n{\n  \"title\": \"Solar Silver Demand\",\n  \"labels\": [\"2014\", \"2020\", \"2024\"],\n  \"values\": [50, 161, 232],\n  \"unit\": \"million ounces\",\n  \"source\": \"Sourced Data\"\n}\n```",
+      "parsed": {
+        "title": "Solar Silver Demand",
+        "labels": [
+          "2014",
+          "2020",
+          "2024"
+        ],
+        "values": [
+          50,
+          161,
+          232
+        ],
+        "unit": "million ounces",
+        "source": "Sourced Data"
+      }
+    },
+    {
+      "task": "reel-script",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 29.39,
+      "contractPass": false,
+      "raw": "```json\n{\n  \"segments\": [\n    {\"type\": \"hook\", \"text\": \"Silver buying: Local shop or online? Let's compare.\"},\n    {\"type\": \"stat\", \"text\": \"Local shops offer personal service, expert advice.\"},\n    {\"type\": \"comparison\", \"text\": \"Online: Convenience, wider selection, lower prices often.\"},\n    {\"type\": \"comparison\", \"text\": \"Local shops: Trust, immediate access, potential for deals.\"},\n    {\"type\": \"verification\", \"text\": \"Check shop's reputation and grading certifications first.\"},\n    {\"type\": \"cost\", \"text\": \"Online: Prices fluctuate; local shops have fixed rates.\"},\n    {\"type\": \"question\", \"text\": \"Which silver buying method suits your needs?\"}\n  ]\n}\n```",
+      "parsed": {
+        "segments": [
+          {
+            "type": "hook",
+            "text": "Silver buying: Local shop or online? Let's compare."
+          },
+          {
+            "type": "stat",
+            "text": "Local shops offer personal service, expert advice."
+          },
+          {
+            "type": "comparison",
+            "text": "Online: Convenience, wider selection, lower prices often."
+          },
+          {
+            "type": "comparison",
+            "text": "Local shops: Trust, immediate access, potential for deals."
+          },
+          {
+            "type": "verification",
+            "text": "Check shop's reputation and grading certifications first."
+          },
+          {
+            "type": "cost",
+            "text": "Online: Prices fluctuate; local shops have fixed rates."
+          },
+          {
+            "type": "question",
+            "text": "Which silver buying method suits your needs?"
+          }
+        ]
+      }
+    },
+    {
+      "task": "social-copy",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 30.06,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "qa-json",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 22.96,
+      "contractPass": true,
+      "raw": "```json\n{\n  \"score\": 68,\n  \"pass\": false,\n  \"blockers\": [\n    \"Insufficient Detail: The advice is too brief and lacks depth. It doesn't fully explore the pros and cons of buying silver online versus locally.\",\n    \"Lack of Sources: There are no sources cited to support the claims or provide further information.\",\n    \"Missing Key Elements:  It misses important considerations like silver purity, storage options, and potential risks.\"\n  ]\n}\n```\n",
+      "parsed": {
+        "score": 68,
+        "pass": false,
+        "blockers": [
+          "Insufficient Detail: The advice is too brief and lacks depth. It doesn't fully explore the pros and cons of buying silver online versus locally.",
+          "Lack of Sources: There are no sources cited to support the claims or provide further information.",
+          "Missing Key Elements:  It misses important considerations like silver purity, storage options, and potential risks."
+        ]
+      }
+    },
+    {
+      "task": "research-brief",
+      "model": "gemma3:4b-it-qat",
+      "seconds": 29.18,
+      "contractPass": true,
+      "raw": "```json\n{\n  \"claim\": \"Silver dealers may offer significantly inflated prices for silver, followed by a sudden and unexplained reduction in value, potentially as part of a fraudulent scheme.\",\n  \"what_to_verify\": [\n    \"Review the dealer's business history and reputation through online reviews and the Better Business Bureau.\",\n    \"Obtain a written appraisal from an independent, qualified gemologist or precious metals appraiser *before* selling any silver.\",\n    \"Carefully examine the terms of the sale, including the method of payment and any guarantees offered.  Be wary of cash-only deals or pressure to sell quickly.\"\n  ],\n  \"source_types\": [\n    \"Consumer Protection Agencies (e.g., Federal Trade Commission)\",\n    \"Precious Metals Associations (e.g., National Silver Institute of America)\"\n  ]\n}\n```",
+      "parsed": {
+        "claim": "Silver dealers may offer significantly inflated prices for silver, followed by a sudden and unexplained reduction in value, potentially as part of a fraudulent scheme.",
+        "what_to_verify": [
+          "Review the dealer's business history and reputation through online reviews and the Better Business Bureau.",
+          "Obtain a written appraisal from an independent, qualified gemologist or precious metals appraiser *before* selling any silver.",
+          "Carefully examine the terms of the sale, including the method of payment and any guarantees offered.  Be wary of cash-only deals or pressure to sell quickly."
+        ],
+        "source_types": [
+          "Consumer Protection Agencies (e.g., Federal Trade Commission)",
+          "Precious Metals Associations (e.g., National Silver Institute of America)"
+        ]
+      }
+    },
+    {
+      "task": "article-outline",
+      "model": "qwen3:4b",
+      "seconds": 30.01,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "section-writing",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "article-repair",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "meta-description",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "alt-text",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "chart-json",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "reel-script",
+      "model": "qwen3:4b",
+      "seconds": 30.05,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "social-copy",
+      "model": "qwen3:4b",
+      "seconds": 30.04,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "qa-json",
+      "model": "qwen3:4b",
+      "seconds": 30.04,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "research-brief",
+      "model": "qwen3:4b",
+      "seconds": 30.04,
+      "contractPass": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "task": "article-outline",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 4.63,
+      "contractPass": true,
+      "raw": "{\"sections\": [\"Factors to Consider When Buying Silver\", \"Advantages of Local Coin Shops\", \"Online Platform Benefits\", \"Price Comparison Between Options\", \"Buying Tips for Beginners\", \"Risks Involved in Silver Purchases\", \"Environmental Impact of Mining\", \"Community Support vs Individual Choice\"]}",
+      "parsed": {
+        "sections": [
+          "Factors to Consider When Buying Silver",
+          "Advantages of Local Coin Shops",
+          "Online Platform Benefits",
+          "Price Comparison Between Options",
+          "Buying Tips for Beginners",
+          "Risks Involved in Silver Purchases",
+          "Environmental Impact of Mining",
+          "Community Support vs Individual Choice"
+        ]
+      }
+    },
+    {
+      "task": "section-writing",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 6.75,
+      "contractPass": true,
+      "raw": "## Comparing Total Purchase Cost\n\nWhen evaluating the cost of purchasing silver, it's essential to consider several factors that influence the overall expense. Premiums often vary based on the type of silver and its grade, with higher premiums applied for larger quantities or specific alloys. Shipping costs can significantly impact the final price, especially for online purchases where delivery fees apply. Payment fees, typically charged by payment processors, add another layer of expense, particularly for online transactions. Local taxes also play a crucial role, as they are often added to the purchase price depending on the jurisdiction. Comparing these elements between local and online options helps shoppers make informed decisions, ensuring they understand the true cost beyond the initial listing price.",
+      "parsed": "## Comparing Total Purchase Cost\n\nWhen evaluating the cost of purchasing silver, it's essential to consider several factors that influence the overall expense. Premiums often vary based on the type of silver and its grade, with higher premiums applied for larger quantities or specific alloys. Shipping costs can significantly impact the final price, especially for online purchases where delivery fees apply. Payment fees, typically charged by payment processors, add another layer of expense, particularly for online transactions. Local taxes also play a crucial role, as they are often added to the purchase price depending on the jurisdiction. Comparing these elements between local and online options helps shoppers make informed decisions, ensuring they understand the true cost beyond the initial listing price."
+    },
+    {
+      "task": "article-repair",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 4.04,
+      "contractPass": true,
+      "raw": "To avoid silver dealer scams, verify the seller’s identity through reliable channels, compare pricing fairly, ensure secure payment methods, and confirm their delivery policies. Research reputable sources, use trusted platforms, and never pay upfront without clear terms. This protects you from fraudulent practices and ensures a safe transaction. (45 words)",
+      "parsed": "To avoid silver dealer scams, verify the seller’s identity through reliable channels, compare pricing fairly, ensure secure payment methods, and confirm their delivery policies. Research reputable sources, use trusted platforms, and never pay upfront without clear terms. This protects you from fraudulent practices and ensures a safe transaction. (45 words)"
+    },
+    {
+      "task": "meta-description",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 1.7,
+      "contractPass": false,
+      "raw": "Reach local clients quickly with our clear contact page. Fast lead response and simple ways to connect with us.",
+      "parsed": "Reach local clients quickly with our clear contact page. Fast lead response and simple ways to connect with us."
+    },
+    {
+      "task": "alt-text",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 0.91,
+      "contractPass": false,
+      "raw": "silver bars coin shop counter",
+      "parsed": "silver bars coin shop counter"
+    },
+    {
+      "task": "chart-json",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 3.32,
+      "contractPass": false,
+      "raw": "{\"title\": \"Solar Silver Demand Growth Analysis\", \"labels\": [\"Year\", \"Demand (oz)\"], \"values\": [50, 161, 232], \"unit\": \"increase over time\", \"source\": \"Sourced data\"}",
+      "parsed": {
+        "title": "Solar Silver Demand Growth Analysis",
+        "labels": [
+          "Year",
+          "Demand (oz)"
+        ],
+        "values": [
+          50,
+          161,
+          232
+        ],
+        "unit": "increase over time",
+        "source": "Sourced data"
+      }
+    },
+    {
+      "task": "reel-script",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 4.3,
+      "contractPass": false,
+      "raw": "{\"segments\": [{\"type\":\"hook|overlay|stat|question\",\"text\":\"Which offers better pricing?\"}, \"practical_comparison1\":\"Local shops often have lower fees,\" \"practical_comparison2\":\"Online platforms offer wider selection,\" \"verification_step\":\"Check site reviews,\" \"cost_point\":\"Online may cost more initially,\" \"closing_question\">Why choose one over the other?\"]}",
+      "parsed": null
+    },
+    {
+      "task": "social-copy",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 4.75,
+      "contractPass": false,
+      "raw": "Comparing local coin shops to online silver dealers offers a practical view of value, convenience, and personal service. While local shops provide immediate assistance and community trust, online options often deliver wider selection and competitive pricing. Both have their strengths depending on your needs. Whether you prefer face-to-face help or digital ease, understanding your choices helps you make the best decision. \n\n#SilverShop #CoinComparison #BuySmart  \n#LocalAndOnline #MetalPurchasing",
+      "parsed": null
+    },
+    {
+      "task": "qa-json",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 2.94,
+      "contractPass": true,
+      "raw": "{\"score\": 72, \"pass\": false, \"blockers\": [\"price comparison\", \"dealer identity\", \"payment protection\", \"delivery timing\"]}",
+      "parsed": {
+        "score": 72,
+        "pass": false,
+        "blockers": [
+          "price comparison",
+          "dealer identity",
+          "payment protection",
+          "delivery timing"
+        ]
+      }
+    },
+    {
+      "task": "research-brief",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "seconds": 3.38,
+      "contractPass": true,
+      "raw": "{\"claim\": \"Silver dealer scams often involve misleading investors about asset value.\", \"what_to_verify\": [\"Investor identification\", \"Legal authority to deal\", \"Accurate price information\"], \"source_types\": [\"regulatory databases\", \"academic publications\"]}",
+      "parsed": {
+        "claim": "Silver dealer scams often involve misleading investors about asset value.",
+        "what_to_verify": [
+          "Investor identification",
+          "Legal authority to deal",
+          "Accurate price information"
+        ],
+        "source_types": [
+          "regulatory databases",
+          "academic publications"
+        ]
+      }
+    }
+  ],
+  "guardrail": "Benchmark results are advisory and do not authorize production promotion."
+}

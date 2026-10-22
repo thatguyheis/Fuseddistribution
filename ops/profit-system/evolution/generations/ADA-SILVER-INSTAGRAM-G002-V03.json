@@ -1,0 +1,37 @@
+{
+  "geneticId": "ADA-SILVER-INSTAGRAM-G002-V03",
+  "parentGeneticId": "ADA-SILVER-INSTAGRAM-G001-V01",
+  "generation": 2,
+  "variant": 3,
+  "agentId": "hermes-local",
+  "brand": "silver",
+  "platform": "instagram",
+  "slug": "how-to-build-a-silver-inventory-spreadsheet",
+  "bufferPostId": null,
+  "status": "registered",
+  "genes": {
+    "hookType": "pain-point",
+    "openingSeconds": 5,
+    "durationBucket": "100-139",
+    "segmentDensity": "medium",
+    "visualPattern": "stat-led",
+    "captionPattern": "specific-question",
+    "questionType": "binary-choice",
+    "musicMode": "approved-cycle",
+    "voiceProfile": "nick-chatterbox-v1"
+  },
+  "mutation": {
+    "gene": "hookType",
+    "from": "generic-stat",
+    "to": "pain-point",
+    "reason": "Test"
+  },
+  "qualityScores": {},
+  "bufferSnapshots": {},
+  "fitness": null,
+  "decision": null,
+  "qualityGate": {
+    "status": "passed",
+    "path": "video/out/how-to-build-a-silver-inventory-spreadsheet/release-qa.json"
+  }
+}

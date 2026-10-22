@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-05T05:20:11.509Z",
+  "score": -100,
+  "rawScore": -240,
+  "eventScore": -240,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 13,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -192,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "f1b5ff63-4d50-40ea-ac19-24300f4340fa",
+      "occurredAt": "2026-10-05T05:20:11.486Z",
+      "date": "2026-10-04",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 4,
+      "evidence": "The 2026-10-04 registered reel queue has 4 slug(s) without release-qa.json: reading-a-coin-design-from-center-to-rim, comparing-silver-statistics-with-different-units, creating-a-small-business-exception-handling-log, recording-accessibility-feedback-from-real-customers. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -192,
+      "multiplier": 3,
+      "weight": 16
+    },
+    {
+      "id": "c0ae0473-f1af-47aa-9a10-b335032e44c0",
+      "occurredAt": "2026-10-05T05:20:11.486Z",
+      "date": "2026-10-04",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-10-04 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-04",
+      "expectedSlugs": [
+        "reading-a-coin-design-from-center-to-rim",
+        "comparing-silver-statistics-with-different-units",
+        "creating-a-small-business-exception-handling-log",
+        "recording-accessibility-feedback-from-real-customers"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "reading-a-coin-design-from-center-to-rim",
+        "comparing-silver-statistics-with-different-units",
+        "creating-a-small-business-exception-handling-log",
+        "recording-accessibility-feedback-from-real-customers"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "reading-a-coin-design-from-center-to-rim",
+        "comparing-silver-statistics-with-different-units",
+        "creating-a-small-business-exception-handling-log",
+        "recording-accessibility-feedback-from-real-customers"
+      ],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [
+        "reading-a-coin-design-from-center-to-rim",
+        "comparing-silver-statistics-with-different-units",
+        "creating-a-small-business-exception-handling-log",
+        "recording-accessibility-feedback-from-real-customers"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-10-04.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 7,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-10-04 registered reel queue has 4 slug(s) without release-qa.json: reading-a-coin-design-from-center-to-rim, comparing-silver-statistics-with-different-units, creating-a-small-business-exception-handling-log, recording-accessibility-feedback-from-real-customers. They remain ineligible for distribution.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 12,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-10-04 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

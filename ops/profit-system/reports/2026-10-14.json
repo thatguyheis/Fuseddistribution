@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-15T05:20:13.975Z",
+  "score": -80,
+  "rawScore": -80,
+  "eventScore": -80,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 13,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -32,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "028409bf-f47d-4dca-94fc-d4aec85d6e71",
+      "occurredAt": "2026-10-15T05:20:13.932Z",
+      "date": "2026-10-14",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "blog-quality-gate-blocked",
+      "value": 2,
+      "evidence": "The 2026-10-14 blog queue has 2 quality-blocked slug(s) archived below .workflow-blocked/2026-10-14: handing-accessibility-findings-to-a-new-website-provide, separating-a-pilot-result-from-a-production-promise.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -80,
+      "multiplier": 2.5,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "multiplier": 2.5,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-10-14",
+      "evidence": "2026-10-14: 0/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: handing-accessibility-findings-to-a-new-website-provide, separating-a-pilot-result-from-a-production-promise."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-10-14",
+      "expectedSlugs": [
+        "handing-accessibility-findings-to-a-new-website-provide",
+        "separating-a-pilot-result-from-a-production-promise"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "handing-accessibility-findings-to-a-new-website-provide",
+        "separating-a-pilot-result-from-a-production-promise"
+      ],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [
+        "handing-accessibility-findings-to-a-new-website-provide",
+        "separating-a-pilot-result-from-a-production-promise"
+      ],
+      "missingRegisteredSlugs": [
+        "handing-accessibility-findings-to-a-new-website-provide",
+        "separating-a-pilot-result-from-a-production-promise"
+      ],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-10-14",
+          "evidence": "2026-10-14: 0/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: handing-accessibility-findings-to-a-new-website-provide, separating-a-pilot-result-from-a-production-promise."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "blog-quality-gate-blocked",
+      "problemType": "missed_checkpoint",
+      "occurrences": 4,
+      "proposedControl": "Add or strengthen a deterministic prevention check for blog-quality-gate-blocked.",
+      "evidence": "The 2026-10-14 blog queue has 2 quality-blocked slug(s) archived below .workflow-blocked/2026-10-14: handing-accessibility-findings-to-a-new-website-provide, separating-a-pilot-result-from-a-production-promise.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

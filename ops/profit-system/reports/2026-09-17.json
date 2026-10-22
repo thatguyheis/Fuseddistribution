@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-18T05:32:38.120Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 21,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 48,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-17",
+      "expectedSlugs": [
+        "how-to-prepare-website-content-before-hiring-a-designer"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "how-to-prepare-website-content-before-hiring-a-designer"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-prepare-website-content-before-hiring-a-designer"
+      ],
+      "readyForPostingSlugs": [
+        "how-to-prepare-website-content-before-hiring-a-designer"
+      ],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": true
+}

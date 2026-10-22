@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-25T05:20:09.282Z",
+  "score": -100,
+  "rawScore": -112,
+  "eventScore": -112,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 15,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -64,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "583e59fc-5a79-4826-a41b-384846ed4967",
+      "occurredAt": "2026-09-25T05:20:09.245Z",
+      "date": "2026-09-24",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 2,
+      "evidence": "The 2026-09-24 registered reel queue has 2 slug(s) without release-qa.json: how-to-map-old-website-urls-before-a-redesign, how-to-document-a-damaged-silver-bullion-shipment. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -64,
+      "multiplier": 2,
+      "weight": 16
+    },
+    {
+      "id": "9c2e0094-a7f1-477c-913b-fe260b193e69",
+      "occurredAt": "2026-09-25T05:20:09.245Z",
+      "date": "2026-09-24",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-24 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "multiplier": 2,
+      "type": "missed_checkpoint"
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-24",
+      "expectedSlugs": [
+        "how-to-map-old-website-urls-before-a-redesign",
+        "how-to-document-a-damaged-silver-bullion-shipment",
+        "silver-bullion-invoice-checklist-for-your-records",
+        "how-to-check-redirect-chains-on-a-business-website"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [
+        "how-to-map-old-website-urls-before-a-redesign",
+        "how-to-document-a-damaged-silver-bullion-shipment",
+        "silver-bullion-invoice-checklist-for-your-records",
+        "how-to-check-redirect-chains-on-a-business-website"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "how-to-map-old-website-urls-before-a-redesign",
+        "how-to-document-a-damaged-silver-bullion-shipment",
+        "silver-bullion-invoice-checklist-for-your-records",
+        "how-to-check-redirect-chains-on-a-business-website"
+      ],
+      "readyForPostingSlugs": [
+        "silver-bullion-invoice-checklist-for-your-records",
+        "how-to-check-redirect-chains-on-a-business-website"
+      ],
+      "missingReleaseQaSlugs": [
+        "how-to-map-old-website-urls-before-a-redesign",
+        "how-to-document-a-damaged-silver-bullion-shipment"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-24.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "reel-release-qa-missing",
+      "problemType": "missed_checkpoint",
+      "occurrences": 3,
+      "proposedControl": "Add or strengthen a deterministic prevention check for reel-release-qa-missing.",
+      "evidence": "The 2026-09-24 registered reel queue has 2 slug(s) without release-qa.json: how-to-map-old-website-urls-before-a-redesign, how-to-document-a-damaged-silver-bullion-shipment. They remain ineligible for distribution.",
+      "autoApplicable": true
+    },
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 15,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-24 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

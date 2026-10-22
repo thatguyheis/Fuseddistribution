@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "date": "2026-09-13",
+  "generatedAt": "2026-09-14T05:32:41.309Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 25,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 48,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-09-13",
+      "evidence": "2026-09-13: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: silver-stacking-for-beginners-first-steps."
+    },
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-09-13",
+      "evidence": "public/blog/research/2026-09-13-pending.json still lists 1 remaining slug(s): silver-stacking-for-beginners-first-steps."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-13",
+      "expectedSlugs": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "pendingRemaining": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "unaccountedQueueSlugs": [
+        "silver-stacking-for-beginners-first-steps"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-09-13",
+          "evidence": "2026-09-13: 0/1 fresh artifact-complete articles; recycled topics: none; missing artifacts: silver-stacking-for-beginners-first-steps."
+        },
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-09-13",
+          "evidence": "public/blog/research/2026-09-13-pending.json still lists 1 remaining slug(s): silver-stacking-for-beginners-first-steps."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": false
+}

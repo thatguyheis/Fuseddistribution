@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "status": "approved_ready_for_production",
+  "createdDate": "2026-10-05",
+  "procedure": "docs/GROWTH-AUDIT-2026-10-05.md",
+  "capacity": "Use existing approved production capacity; no additional posting or AI schedule",
+  "verticals": [
+    "silver",
+    "tech"
+  ],
+  "arms": [
+    "demonstration_first",
+    "current_format"
+  ],
+  "targetCreativeCount": 24,
+  "minimumPerVerticalPerArm": 6,
+  "measurementAgeDays": 7,
+  "primaryBusinessOutcomes": [
+    "median_views_at_day_7"
+  ],
+  "requiredEntryFields": [
+    "slug",
+    "vertical",
+    "arm",
+    "sourceSha256",
+    "videoSha256",
+    "platform",
+    "postId",
+    "sentAt",
+    "ctaDestination",
+    "observedAt",
+    "views",
+    "comments",
+    "saves"
+  ],
+  "evidenceRules": [
+    "Null means unavailable, not zero",
+    "Compare within platform and vertical at the same observation age",
+    "Do not treat platform copies as independent creatives",
+    "Do not map revised scripts onto older uploads",
+    "Views select reach winners during the approved pre-revenue phase; sales evidence is not required",
+    "Reach improvement is not revenue or profit"
+  ],
+  "entries": [],
+  "approval": {
+    "authorizedBy": "Nick",
+    "approvedBy": "Codex publishing owner",
+    "date": "2026-10-05",
+    "scope": "Prioritized growth plan and pilot within existing production capacity",
+    "businessStage": "pre_revenue_user_confirmed"
+  },
+  "secondaryDiagnostics": [
+    "comments",
+    "saves",
+    "production_minutes"
+  ],
+  "selectionPolicy": {
+    "compareWithin": [
+      "platform",
+      "vertical"
+    ],
+    "observationAgeDays": 7,
+    "minimumCreativeSamplesPerArm": 6,
+    "decision": "Prefer the arm with higher median D+7 views; report sample count and spread. Ties or inadequate coverage remain inconclusive.",
+    "revenueRequired": false,
+    "unavailableViews": "Keep unavailable; do not substitute impressions or zero."
+  },
+  "optionalFutureFields": [
+    "qualifiedInquiries",
+    "attributedGrossProfit"
+  ]
+}

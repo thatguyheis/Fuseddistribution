@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "feedbackId": "owner-llc-diagram-hero-2026-09-11",
+  "recordedAt": "2026-09-11T15:19:47.176908+00:00",
+  "operatingDate": "2026-09-11",
+  "system": "algorithmic-darwinism-architect",
+  "classification": "positive_editorial_preference",
+  "slugs": [
+    "silver-in-an-llc-vs-personal-ownership-tax-differences"
+  ],
+  "protocol": "FD-HERO-DIAGRAM-V1",
+  "userFeedback": "I really like the new hero in the article SILVER IN AN LLC VS PERSONAL OWNERSHIP TAX DIFFERENCES. Reward via ADA evolution the process that brought that about.",
+  "evidence": {
+    "source": "explicit_owner_feedback",
+    "heroSha256": "30dc8cded892abbe0a4c609581950bfc92e8314dfefd2349b4ed383cf4b3efd9",
+    "svgSha256": "e485e27b5f4c9fa54b640d1cdcf1228e0caf518574a7c1de258309db98ca6280"
+  },
+  "reward": {
+    "type": "high_quality_delivery",
+    "value": 1,
+    "points": 4,
+    "basis": "Owner-approved editorial delivery; not audience-performance evidence."
+  },
+  "fitness": {
+    "eligible": false,
+    "reason": "No matched audience observations for this hero."
+  },
+  "resolution": {
+    "status": "preferred_editorial_recipe",
+    "sop": "docs/EDITORIAL-HERO-SOP.md",
+    "measuredWinnerPromoted": false
+  }
+}

@@ -6,17 +6,17 @@
   "maximumAbsoluteScore": 100,
   "leadingIndicators": {
     "source": "buffer_api",
-    "snapshotAges": [1, 3, 7],
+    "snapshotAges": [
+      1,
+      3,
+      7
+    ],
     "minimumComparablePosts": 3,
     "maximumDailyPoints": 12,
     "weights": {
-      "clicks": 4,
-      "averageViewDurationSeconds": 3,
-      "engagementRate": 2.5,
-      "viewsPerHour": 1,
-      "impressionsPerHour": 0.75
+      "viewsPerHour": 1
     },
-    "rule": "Leading indicators earn comparison points only against same-platform, same-age-bucket history; raw lifetime totals never earn direct profit points."
+    "rule": "During the approved pre-revenue phase, operational leading-indicator points use only views per hour against same-platform, same-age-bucket history. Creative pilot decisions use median D+7 views within platform and vertical. Impressions are not substituted for views. These are reach signals, never profit."
   },
   "rewardWeights": {
     "gross_profit_usd": 1,
@@ -55,7 +55,15 @@
     "Never expose, commit, or transmit secrets outside their approved destination.",
     "Never claim live, posted, deployed, verified, or complete without authoritative readback.",
     "Never weaken legal, financial, security, privacy, editorial accuracy, release QA, or user-approval gates.",
-    "Never optimize vanity metrics at the expense of qualified leads, conversions, gross profit, trust, or platform compliance.",
+    "During the approved pre-revenue phase, optimize views while preserving trust, factual accuracy and platform compliance. Views are not revenue or profit.",
     "Never create an external side effect outside the authority granted by the user and the active SOP."
-  ]
+  ],
+  "optimizationPhase": {
+    "stage": "pre_revenue",
+    "primaryMetric": "views",
+    "authorizedBy": "Nick",
+    "effectiveDate": "2026-10-05",
+    "creativeDecision": "Median D+7 views within platform and vertical; see ops/engagement/growth-pilot.json",
+    "revenueRequired": false
+  }
 }

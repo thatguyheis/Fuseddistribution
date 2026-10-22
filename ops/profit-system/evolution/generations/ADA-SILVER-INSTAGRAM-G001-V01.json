@@ -29,5 +29,9 @@
   "qualityScores": {},
   "bufferSnapshots": {},
   "fitness": null,
-  "decision": null
+  "decision": null,
+  "qualityGate": {
+    "status": "passed",
+    "path": "video/out/how-to-calculate-your-average-cost-per-ounce-silver/release-qa.json"
+  }
 }

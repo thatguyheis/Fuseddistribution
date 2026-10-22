@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-16T05:32:32.471Z",
+  "score": 0,
+  "rawScore": 0,
+  "eventScore": 0,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 23,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 48,
+    "direction": "improved"
+  },
+  "rewards": [],
+  "penalties": [],
+  "repeatedFailures": [],
+  "hardStops": [
+    {
+      "type": "unverified_fresh_publication",
+      "fingerprint": "blog-fresh-output-2026-09-15",
+      "evidence": "2026-09-15: 0/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: how-to-test-your-website-contact-form-each-month, website-handover-checklist-for-small-business-owners."
+    },
+    {
+      "type": "incomplete_blog_registration",
+      "fingerprint": "blog-registration-2026-09-15",
+      "evidence": "Expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for 2026-09-15: how-to-test-your-website-contact-form-each-month, website-handover-checklist-for-small-business-owners."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-15",
+      "expectedSlugs": [
+        "how-to-test-your-website-contact-form-each-month",
+        "website-handover-checklist-for-small-business-owners"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [],
+      "registeredQueueSlugs": [],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [
+        "how-to-test-your-website-contact-form-each-month",
+        "website-handover-checklist-for-small-business-owners"
+      ],
+      "unaccountedQueueSlugs": [
+        "how-to-test-your-website-contact-form-each-month",
+        "website-handover-checklist-for-small-business-owners"
+      ],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "unverified_fresh_publication",
+          "fingerprint": "blog-fresh-output-2026-09-15",
+          "evidence": "2026-09-15: 0/2 fresh artifact-complete articles; recycled topics: none; missing artifacts: how-to-test-your-website-contact-form-each-month, website-handover-checklist-for-small-business-owners."
+        },
+        {
+          "type": "incomplete_blog_registration",
+          "fingerprint": "blog-registration-2026-09-15",
+          "evidence": "Expected queue slugs are still missing from public/blog/posts.json without explicit block evidence for 2026-09-15: how-to-test-your-website-contact-form-each-month, website-handover-checklist-for-small-business-owners."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [],
+      "readyForPostingSlugs": [],
+      "missingReleaseQaSlugs": [],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "ready"
+    },
+    "bufferMetrics": {
+      "status": "missing"
+    }
+  },
+  "improvementCandidates": [],
+  "sopMutationAllowed": false
+}

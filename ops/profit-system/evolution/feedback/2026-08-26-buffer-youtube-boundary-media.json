@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "feedbackId": "buffer-youtube-boundary-media-2026-08-26",
+  "recordedAt": "2026-08-26T13:50:00-07:00",
+  "operatingDate": "2026-08-26",
+  "system": "algorithmic-darwinism-architect",
+  "classification": "operational_quality_escape",
+  "platform": "youtube",
+  "slugs": [
+    "chatgpt-for-small-business-owners-beginners-guide",
+    "online-booking-system-for-small-business"
+  ],
+  "userFeedback": "Buffer reported an attached media or link failure on two returned YouTube posts.",
+  "evidence": {
+    "sourceDurationsSeconds": [198.485, 192.384],
+    "oldBoundaryDurationSeconds": 179,
+    "oldPublicBytes": [8570059, 9147758],
+    "correctedDurationSeconds": 175,
+    "correctedBytes": [8374779, 9009337],
+    "correctedFormat": "H.264/AAC 720x1280",
+    "replacementMediaVerified": true,
+    "subsequentReadback": {
+      "activePosts": 9,
+      "youtube": 3,
+      "x": 3,
+      "instagram": 3
+    }
+  },
+  "rootCause": "The media path allowed a YouTube copy exactly at the duration boundary and treated returned Buffer video asset metadata as sufficient proof of downstream attachment processing. The hosted file could also be stale relative to the local manifest.",
+  "correction": "Regenerated 175-second H.264/AAC copies, synced them to Cloudflare KV, verified exact hosted bytes and content type, added manifest output metadata, added stale-hosted-copy checks, and required authoritative Buffer readback.",
+  "controlsAdded": [
+    "YouTube Buffer-safe default maximum duration is 175 seconds.",
+    "Media manifests retain output duration, bytes, dimensions, and codecs.",
+    "Queue jobs and live publish preflight enforce duration and byte evidence.",
+    "Hosted URL verification fails on manifest byte mismatch.",
+    "A Buffer video asset is not success without scheduled or sending readback."
+  ],
+  "fitness": {
+    "eligible": false,
+    "reason": "Failed media invalidates performance evidence."
+  },
+  "resolution": {
+    "status": "corrected_and_controlled",
+    "replacementSynced": true,
+    "failedPostsRemovedByOwner": true,
+    "newBatchReadback": "9 active posts: 3 YouTube, 3 X, and 3 Instagram"
+  }
+}

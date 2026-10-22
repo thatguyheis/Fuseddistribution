@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "feedbackId": "publishing-recovery-controls-2026-09-14",
+  "recordedAt": "2026-09-14T14:36:57.060597+00:00",
+  "system": "algorithmic-darwinism-architect",
+  "classification": "verified_operational_repair",
+  "evidence": [
+    ".workflow-state/publishing-health.json",
+    ".workflow-state/social-schedule-hosted-proof-2026-09-14.json",
+    ".workflow-state/scheduled-repair-final-proof-2026-09-14.json"
+  ],
+  "observed": {
+    "newArticlesLive": 17,
+    "canonicalCorrections": 3,
+    "unpublishedQueuedTopics": 0,
+    "orderErrors": 0,
+    "legacyLocalFilesRestored": 31,
+    "legacyPackagesStillIncomplete": 6
+  },
+  "controls": [
+    "Exact current-attempt video timeout fallback with preserved provenance and cached audio",
+    "One Buffer scheduler with capacity-only post-submit reads and preserved partial successes",
+    "Luna bounded media finalization, short inherited-model oversight",
+    "Owner-selected native topic diagram recipe used across recovered articles"
+  ],
+  "limits": [
+    "No measured audience uplift or creative winner promotion",
+    "No measured token savings claimed",
+    "Scheduled social jobs are not sent evidence",
+    "Copied unrelated narration found and corrected before approval; article-only worker scope used for remaining packages"
+  ],
+  "sop": "docs/PUBLISHING-OWNER-QUICKSTART.md"
+}

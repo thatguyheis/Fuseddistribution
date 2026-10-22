@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-01",
+  "episodes": [
+    {"id":"stack-01","weekOf":"2026-10-05","format":"talking-head","status":"awaiting_nick_footage","script":"docs/NICK-SHOOT-CHECKLIST.md","editorialApproved":true},
+    {"id":"roast-01","weekOf":"2026-10-12","format":"screen-review","status":"awaiting_owned_demo_capture","outline":"docs/series-bible.md","outlineApproved":true}
+  ]
+}

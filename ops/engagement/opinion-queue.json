@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "scripts": [
+    {
+      "slug": "eagle-premium-without-the-math",
+      "title": "Stop paying Eagle premiums without doing the math",
+      "brand": "silver",
+      "contentKind": "opinion",
+      "script": "ops/engagement/scripts/eagle-premium-without-the-math.md",
+      "status": "editorial_script_approved_assets_pending",
+      "reviewedAt": "2026-10-04",
+      "sources": [],
+      "reviewNotes": "Qualified stance, explicit countercase, hypothetical arithmetic distinguished from current data. No return or ranking guarantee. Requires hero, metadata, measured narration and normal release proof before distribution. Original comparison method and hypothetical arithmetic only; no external market figures or product specifications claimed. Narration expanded with practical decision evidence; production parser and minimum narration estimate rechecked October4. Final assets and measured release remain pending.",
+      "reelData": "ops/engagement/scripts/eagle-premium-without-the-math-data.md"
+    },
+    {
+      "slug": "profile-before-homepage-redesign",
+      "title": "Fix an inaccurate profile before redesigning your homepage",
+      "brand": "tech",
+      "contentKind": "opinion",
+      "script": "ops/engagement/scripts/profile-before-homepage-redesign.md",
+      "status": "editorial_script_approved_assets_pending",
+      "reviewedAt": "2026-10-04",
+      "sources": [
+        "https://support.google.com/business/answer/7091"
+      ],
+      "reviewNotes": "Qualified stance, explicit countercase, hypothetical arithmetic distinguished from current data. No return or ranking guarantee. Requires hero, metadata, measured narration and normal release proof before distribution. Narration expanded with practical decision evidence; production parser and minimum narration estimate rechecked October4. Final assets and measured release remain pending.",
+      "reelData": "ops/engagement/scripts/profile-before-homepage-redesign-data.md"
+    },
+    {
+      "slug": "dca-is-not-the-whole-plan",
+      "title": "Dollar cost averaging is not your whole plan",
+      "brand": "silver",
+      "contentKind": "opinion",
+      "script": "ops/engagement/scripts/dca-is-not-the-whole-plan.md",
+      "status": "editorial_script_approved_assets_pending",
+      "reviewedAt": "2026-10-04",
+      "sources": [
+        "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging"
+      ],
+      "reviewNotes": "Qualified stance, explicit countercase, hypothetical arithmetic distinguished from current data. No return or ranking guarantee. Requires hero, metadata, measured narration and normal release proof before distribution. Narration expanded with practical decision evidence; production parser and minimum narration estimate rechecked October4. Final assets and measured release remain pending.",
+      "reelData": "ops/engagement/scripts/dca-is-not-the-whole-plan-data.md"
+    }
+  ]
+}

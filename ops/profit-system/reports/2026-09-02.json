@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-03T03:32:41.658Z",
+  "score": -48,
+  "rawScore": -48,
+  "eventScore": -48,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 26,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": 0,
+    "direction": "flat"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "6de16bdd-cbcd-4505-a608-d315a50476c9",
+      "occurredAt": "2026-09-03T03:31:25.891Z",
+      "date": "2026-09-02",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-02 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [
+    {
+      "type": "incomplete_blog_checkpoint",
+      "fingerprint": "blog-pending-2026-09-02",
+      "evidence": "public/blog/research/2026-09-02-pending.json still lists 4 remaining slug(s): morgan-silver-dollars-as-investment, proof-silver-coins-worth-buying-or-not, email-newsletter-ideas-for-small-business, best-email-marketing-tools-for-small-business-2026."
+    }
+  ],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-02",
+      "expectedSlugs": [
+        "morgan-silver-dollars-as-investment",
+        "proof-silver-coins-worth-buying-or-not",
+        "email-newsletter-ideas-for-small-business",
+        "best-email-marketing-tools-for-small-business-2026"
+      ],
+      "pendingRemaining": [
+        "morgan-silver-dollars-as-investment",
+        "proof-silver-coins-worth-buying-or-not",
+        "email-newsletter-ideas-for-small-business",
+        "best-email-marketing-tools-for-small-business-2026"
+      ],
+      "blockedSlugs": [
+        "100-oz-silver-bars-pros-and-cons",
+        "what-is-90-percent-silver-junk-silver-worth-buying"
+      ],
+      "registeredQueueSlugs": [
+        "morgan-silver-dollars-as-investment",
+        "proof-silver-coins-worth-buying-or-not",
+        "email-newsletter-ideas-for-small-business",
+        "best-email-marketing-tools-for-small-business-2026"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": false,
+      "completionStatus": "incomplete",
+      "hardStops": [
+        {
+          "type": "incomplete_blog_checkpoint",
+          "fingerprint": "blog-pending-2026-09-02",
+          "evidence": "public/blog/research/2026-09-02-pending.json still lists 4 remaining slug(s): morgan-silver-dollars-as-investment, proof-silver-coins-worth-buying-or-not, email-newsletter-ideas-for-small-business, best-email-marketing-tools-for-small-business-2026."
+        }
+      ]
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "morgan-silver-dollars-as-investment",
+        "proof-silver-coins-worth-buying-or-not",
+        "email-newsletter-ideas-for-small-business",
+        "best-email-marketing-tools-for-small-business-2026"
+      ],
+      "readyForPostingSlugs": [
+        "best-email-marketing-tools-for-small-business-2026"
+      ],
+      "missingReleaseQaSlugs": [
+        "morgan-silver-dollars-as-investment"
+      ],
+      "manualCaptionReviewPendingSlugs": [
+        "proof-silver-coins-worth-buying-or-not",
+        "email-newsletter-ideas-for-small-business"
+      ],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-02.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 17,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-02 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": false
+    }
+  ],
+  "sopMutationAllowed": false
+}

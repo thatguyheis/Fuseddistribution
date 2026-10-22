@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-06T03:34:51.973Z",
+  "score": -80,
+  "rawScore": -80,
+  "eventScore": -80,
+  "leadingIndicators": {
+    "score": 0,
+    "status": "missing_snapshot",
+    "comparisons": [],
+    "insight": null
+  },
+  "comparison": {
+    "comparable": true,
+    "sampleDays": 26,
+    "trailingMedianScore": -48,
+    "deltaVsMedian": -32,
+    "direction": "regressed"
+  },
+  "rewards": [],
+  "penalties": [
+    {
+      "id": "45dd9532-2e3a-4817-85c1-b636ab08117f",
+      "occurredAt": "2026-09-06T03:32:59.152Z",
+      "date": "2026-09-05",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "value": 1,
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-05 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "source": "buffer_api",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated Buffer unavailable checkpoint to prevent a failed snapshot from being silently omitted.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -48,
+      "multiplier": 3,
+      "weight": 16
+    },
+    {
+      "id": "08797d5e-8375-4f09-9a71-9e4a343ea63d",
+      "occurredAt": "2026-09-06T03:34:51.856Z",
+      "date": "2026-09-05",
+      "kind": "penalty",
+      "type": "missed_checkpoint",
+      "fingerprint": "reel-release-qa-missing",
+      "value": 2,
+      "evidence": "The 2026-09-05 registered reel queue has 2 slug(s) without release-qa.json: buying-silver-from-a-local-coin-shop-vs-online, how-to-avoid-silver-dealer-scams. They remain ineligible for distribution.",
+      "source": "local_checkpoint",
+      "attributable": true,
+      "notes": "Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.",
+      "supersededAt": null,
+      "supersededBy": null,
+      "supersessionReason": null,
+      "points": -32,
+      "multiplier": 1,
+      "weight": 16
+    }
+  ],
+  "repeatedFailures": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "multiplier": 3,
+      "type": "missed_checkpoint"
+    }
+  ],
+  "hardStops": [],
+  "operationalState": {
+    "blogPublication": {
+      "date": "2026-09-05",
+      "expectedSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online",
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "pendingRemaining": [],
+      "blockedSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online"
+      ],
+      "registeredQueueSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online",
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "blockedQueueSlugs": [],
+      "missingRegisteredSlugs": [],
+      "unaccountedQueueSlugs": [],
+      "completeExists": true,
+      "completionStatus": "complete",
+      "hardStops": []
+    },
+    "reelRelease": {
+      "expectedSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online",
+        "how-to-avoid-silver-dealer-scams",
+        "contact-page-best-practices-for-local-business"
+      ],
+      "readyForPostingSlugs": [
+        "contact-page-best-practices-for-local-business"
+      ],
+      "missingReleaseQaSlugs": [
+        "buying-silver-from-a-local-coin-shop-vs-online",
+        "how-to-avoid-silver-dealer-scams"
+      ],
+      "manualCaptionReviewPendingSlugs": [],
+      "otherNotReadySlugs": [],
+      "completionStatus": "blocked"
+    },
+    "bufferMetrics": {
+      "status": "unavailable",
+      "checkpoint": "ops/profit-system/buffer-metrics/2026-09-05.unavailable.json"
+    }
+  },
+  "improvementCandidates": [
+    {
+      "fingerprint": "buffer-metrics-api-fetch-unavailable",
+      "problemType": "missed_checkpoint",
+      "occurrences": 20,
+      "proposedControl": "Add or strengthen a deterministic prevention check for buffer-metrics-api-fetch-unavailable.",
+      "evidence": "The same-date Buffer metric snapshot for 2026-09-05 has an unavailable checkpoint, so matched D+1/D+3/D+7 evidence is unavailable rather than zero.",
+      "autoApplicable": true
+    }
+  ],
+  "sopMutationAllowed": true
+}

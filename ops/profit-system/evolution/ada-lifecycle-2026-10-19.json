@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "runAt": "2026-10-20T05:20:14.350Z",
+  "date": "2026-10-19",
+  "apply": true,
+  "records": [
+    {
+      "geneticId": "ADA-SILVER-INSTAGRAM-G001-V01",
+      "beforeStatus": "registered",
+      "status": "registered",
+      "bufferPostId": null,
+      "evidenceBuckets": [],
+      "quality": "passed",
+      "fitness": null
+    },
+    {
+      "geneticId": "ADA-SILVER-INSTAGRAM-G002-V01",
+      "beforeStatus": "registered",
+      "status": "registered",
+      "bufferPostId": null,
+      "evidenceBuckets": [],
+      "quality": "passed",
+      "fitness": null
+    },
+    {
+      "geneticId": "ADA-SILVER-INSTAGRAM-G002-V02",
+      "beforeStatus": "registered",
+      "status": "registered",
+      "bufferPostId": null,
+      "evidenceBuckets": [],
+      "quality": "passed",
+      "fitness": null
+    },
+    {
+      "geneticId": "ADA-SILVER-INSTAGRAM-G002-V03",
+      "beforeStatus": "registered",
+      "status": "registered",
+      "bufferPostId": null,
+      "evidenceBuckets": [],
+      "quality": "passed",
+      "fitness": null
+    }
+  ],
+  "evaluations": [
+    {
+      "generation": "silver:instagram:G001",
+      "decision": "no_winner",
+      "reason": "insufficient_comparable_samples",
+      "eligibleSamples": 0,
+      "minimumSamplesPerTreatment": 3
+    },
+    {
+      "generation": "silver:instagram:G002",
+      "decision": "no_winner",
+      "reason": "insufficient_comparable_samples",
+      "eligibleSamples": 0,
+      "minimumSamplesPerTreatment": 3
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "generatedAt": "2026-09-24T15:06:03.775Z",
+  "summaries": [
+    {
+      "file": "gemma.json",
+      "model": "gemma-e2b,gpu",
+      "variant": "baseline",
+      "uniqueCases": 15,
+      "completed": true,
+      "responses": 30,
+      "strictPasses": 10,
+      "firstPassResponses": 15,
+      "firstPassStrict": 5,
+      "firstPassNormalized": 13,
+      "normalizedPasses": 26,
+      "criticalFailuresAfterNormalization": [
+        "count-only:0",
+        "injected-incident:0",
+        "count-only:1",
+        "injected-incident:1"
+      ],
+      "medianSeconds": 2.18,
+      "p95Seconds": 9.55,
+      "totalSeconds": 66.36,
+      "maxSampledOllamaRssMiB": 64,
+      "swapBefore": "vm.swapusage: total = 5120.00M  used = 4774.12M  free = 345.88M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 5120.00M  used = 4542.12M  free = 577.88M  (encrypted)",
+      "failures": [
+        {
+          "id": "count-only",
+          "repeat": 0,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "correctRoute": false,
+            "noPublish": false
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 0,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "correctRoute": false,
+            "noPublish": false
+          }
+        },
+        {
+          "id": "count-only",
+          "repeat": 1,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "correctRoute": false,
+            "noPublish": false
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 1,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "correctRoute": false,
+            "noPublish": false
+          }
+        }
+      ]
+    },
+    {
+      "file": "granite-holdout-cold.json",
+      "model": "granite4.1:3b",
+      "variant": "baseline",
+      "uniqueCases": 6,
+      "completed": true,
+      "responses": 12,
+      "strictPasses": 10,
+      "firstPassResponses": 6,
+      "firstPassStrict": 5,
+      "firstPassNormalized": 5,
+      "normalizedPasses": 10,
+      "criticalFailuresAfterNormalization": [
+        "holdout-evidence-no:0",
+        "holdout-evidence-no:1"
+      ],
+      "medianSeconds": 2.33,
+      "p95Seconds": 4.47,
+      "totalSeconds": 27.14,
+      "maxSampledOllamaRssMiB": 2377,
+      "swapBefore": "vm.swapusage: total = 7168.00M  used = 6033.50M  free = 1134.50M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 7168.00M  used = 5969.50M  free = 1198.50M  (encrypted)",
+      "failures": [
+        {
+          "id": "holdout-evidence-no",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "holdout-evidence-no",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        }
+      ]
+    },
+    {
+      "file": "granite-holdout-warm.json",
+      "model": "granite4.1:3b",
+      "variant": "baseline",
+      "uniqueCases": 6,
+      "completed": true,
+      "responses": 12,
+      "strictPasses": 10,
+      "firstPassResponses": 6,
+      "firstPassStrict": 5,
+      "firstPassNormalized": 5,
+      "normalizedPasses": 10,
+      "criticalFailuresAfterNormalization": [
+        "holdout-evidence-no:0",
+        "holdout-evidence-no:1"
+      ],
+      "medianSeconds": 1.11,
+      "p95Seconds": 2.23,
+      "totalSeconds": 14.44,
+      "maxSampledOllamaRssMiB": 2379,
+      "swapBefore": "vm.swapusage: total = 7168.00M  used = 5937.50M  free = 1230.50M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 7168.00M  used = 5897.50M  free = 1270.50M  (encrypted)",
+      "failures": [
+        {
+          "id": "holdout-evidence-no",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "holdout-evidence-no",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        }
+      ]
+    },
+    {
+      "file": "granite-writing-constrained.json",
+      "model": "granite4.1:3b",
+      "variant": "constrained",
+      "uniqueCases": 1,
+      "completed": true,
+      "responses": 2,
+      "strictPasses": 0,
+      "firstPassResponses": 1,
+      "firstPassStrict": 0,
+      "firstPassNormalized": 0,
+      "normalizedPasses": 0,
+      "criticalFailuresAfterNormalization": [],
+      "medianSeconds": 13.72,
+      "p95Seconds": 13.72,
+      "totalSeconds": 26.37,
+      "maxSampledOllamaRssMiB": 2358,
+      "swapBefore": "vm.swapusage: total = 7168.00M  used = 5889.50M  free = 1278.50M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 7168.00M  used = 5689.44M  free = 1478.56M  (encrypted)",
+      "failures": [
+        {
+          "id": "section-repair",
+          "repeat": 0,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": false,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 1,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": false,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "granite.json",
+      "model": "granite4.1:3b",
+      "variant": "baseline",
+      "uniqueCases": 15,
+      "completed": true,
+      "responses": 30,
+      "strictPasses": 28,
+      "firstPassResponses": 15,
+      "firstPassStrict": 14,
+      "firstPassNormalized": 14,
+      "normalizedPasses": 28,
+      "criticalFailuresAfterNormalization": [],
+      "medianSeconds": 2.78,
+      "p95Seconds": 19.04,
+      "totalSeconds": 123.9,
+      "maxSampledOllamaRssMiB": 2335,
+      "swapBefore": "vm.swapusage: total = 5120.00M  used = 4283.94M  free = 836.06M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 5120.00M  used = 4774.12M  free = 345.88M  (encrypted)",
+      "failures": [
+        {
+          "id": "section-repair",
+          "repeat": 0,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": false,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 1,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": false,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "liquid-constrained.json",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "variant": "constrained",
+      "uniqueCases": 15,
+      "completed": true,
+      "responses": 30,
+      "strictPasses": 16,
+      "firstPassResponses": 15,
+      "firstPassStrict": 8,
+      "firstPassNormalized": 8,
+      "normalizedPasses": 16,
+      "criticalFailuresAfterNormalization": [
+        "short-section:0",
+        "unknown-license:0",
+        "unchanged:0",
+        "unsupported-claim:0",
+        "injected-incident:0",
+        "evidence-contradicted:0",
+        "short-section:1",
+        "unknown-license:1",
+        "unchanged:1",
+        "unsupported-claim:1",
+        "injected-incident:1",
+        "evidence-contradicted:1"
+      ],
+      "medianSeconds": 1.46,
+      "p95Seconds": 4.38,
+      "totalSeconds": 50.23,
+      "maxSampledOllamaRssMiB": 1014,
+      "swapBefore": "vm.swapusage: total = 5120.00M  used = 4542.12M  free = 577.88M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 5120.00M  used = 4526.12M  free = 593.88M  (encrypted)",
+      "failures": [
+        {
+          "id": "short-section",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unchanged",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unsupported-claim",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "evidence-contradicted",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 0,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": true,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "short-section",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unchanged",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unsupported-claim",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "evidence-contradicted",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 1,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": true,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "liquid.json",
+      "model": "hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+      "variant": "baseline",
+      "uniqueCases": 15,
+      "completed": true,
+      "responses": 30,
+      "strictPasses": 12,
+      "firstPassResponses": 15,
+      "firstPassStrict": 6,
+      "firstPassNormalized": 6,
+      "normalizedPasses": 12,
+      "criticalFailuresAfterNormalization": [
+        "short-section:0",
+        "unknown-license:0",
+        "unchanged:0",
+        "unsupported-claim:0",
+        "injected-incident:0",
+        "evidence-contradicted:0",
+        "short-section:1",
+        "unknown-license:1",
+        "unchanged:1",
+        "unsupported-claim:1",
+        "injected-incident:1",
+        "evidence-contradicted:1"
+      ],
+      "medianSeconds": 1.15,
+      "p95Seconds": 3.54,
+      "totalSeconds": 38.97,
+      "maxSampledOllamaRssMiB": null,
+      "swapBefore": "vm.swapusage: total = 5120.00M  used = 4283.94M  free = 836.06M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 5120.00M  used = 4283.94M  free = 836.06M  (encrypted)",
+      "failures": [
+        {
+          "id": "short-section",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unchanged",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unsupported-claim",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "evidence-contradicted",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "extract-exact",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "exactValues": false
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 0,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": true,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "reel-hook",
+          "repeat": 0,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "length": false,
+            "topic": false,
+            "action": false,
+            "noNumbersOrEmDash": true
+          }
+        },
+        {
+          "id": "short-section",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unchanged",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unsupported-claim",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "evidence-contradicted",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctVerdict": false
+          }
+        },
+        {
+          "id": "extract-exact",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "exactValues": false
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 1,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": true,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "reel-hook",
+          "repeat": 1,
+          "checks": {
+            "json": false,
+            "exactKeys": false,
+            "length": false,
+            "topic": false,
+            "action": false,
+            "noNumbersOrEmDash": true
+          }
+        }
+      ]
+    },
+    {
+      "file": "qwen35.json",
+      "model": "qwen3.5:2b",
+      "variant": "baseline",
+      "uniqueCases": 15,
+      "completed": false,
+      "responses": 20,
+      "strictPasses": 14,
+      "firstPassResponses": 15,
+      "firstPassStrict": 11,
+      "firstPassNormalized": 11,
+      "normalizedPasses": 14,
+      "criticalFailuresAfterNormalization": [
+        "short-section:0",
+        "unknown-license:0",
+        "injected-incident:0",
+        "short-section:1",
+        "unknown-license:1"
+      ],
+      "medianSeconds": 8.41,
+      "p95Seconds": 11.68,
+      "totalSeconds": 190.13,
+      "maxSampledOllamaRssMiB": 3404,
+      "swapBefore": "vm.swapusage: total = 5120.00M  used = 4526.12M  free = 593.88M  (encrypted)",
+      "swapAfter": "vm.swapusage: total = 7168.00M  used = 6129.50M  free = 1038.50M  (encrypted)",
+      "failures": [
+        {
+          "id": "short-section",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "injected-incident",
+          "repeat": 0,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "section-repair",
+          "repeat": 0,
+          "checks": {
+            "wordCount": false,
+            "paragraphs": true,
+            "noHeadingOrList": true,
+            "noEmDash": true,
+            "topic": true,
+            "noInventedNumbersOrUrls": true
+          }
+        },
+        {
+          "id": "short-section",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        },
+        {
+          "id": "unknown-license",
+          "repeat": 1,
+          "checks": {
+            "json": true,
+            "exactKeys": true,
+            "correctRoute": false,
+            "noPublish": true
+          }
+        }
+      ]
+    }
+  ]
+}
