@@ -1,7 +1,7 @@
 # Reel Script: should-you-buy-silver-in-dips-or-dollar-cost-average
 format: long-form
-segments: 10
-target-duration: 180s
+segments: 11
+target-duration: 201s
 
 ---
 
@@ -10,7 +10,7 @@ target-duration: 180s
 **Visual:** Topic intro shot
 **Duration:** 4s minimum
 
-Narration: Dollar-cost averaging builds a reliable physical reserve through consistent execution.
+Narration: Dollar-cost averaging builds a reliable silver reserve through consistent execution.
 
 ---
 
@@ -50,12 +50,21 @@ Narration: It guarantees that you are acquiring silver at various price points. 
 
 ---
 
+## OVERLAY: THESE PREMIUMS OFTEN EMBEDDED
+
+**Visual:** Supporting article visual
+**Duration:** 22s minimum
+
+Narration: These premiums are often embedded in the final transaction price you receive. You must compare the spot prices with your actual cost of entry. These markups can reduce the effective value of your reserve. A physical reserve requires a stable, low cost structure. You want to maximize the amount of silver you hold. This is why understanding the structure of the market matters more than short-term price movement.
+
+---
+
 ## OVERLAY: MARKET VOLATILITY FEATURE BUG
 
 **Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Duration:** 20s minimum
 
-Narration: Market volatility is a feature, not a bug, of investing in precious metals. Periods of high volatility present opportunities for accumulation if you have a plan. If you use dollar-cost averaging, volatility becomes less of a threat and more of a variable to manage. For more on this, see Johnson Matthee Silver Bars Guide. When prices drop sharply, your fixed dollar amount buys more silver.
+Narration: Market volatility is a feature, not a bug, of investing in precious metals. Periods of high volatility present opportunities for accumulation if you have a plan. If you use dollar-cost averaging, volatility becomes less of a threat and more of a variable to manage. When prices drop sharply, your fixed dollar amount buys more silver. This is a direct benefit of DCA.
 
 ---
 
@@ -91,6 +100,6 @@ Narration: We strongly recommend dollar-cost averaging for retail investors seek
 **Visual:** Question card
 **Duration:** 5s minimum
 
-Text: Is consistent accumulation the key to your silver success?
+Text: Embrace consistent accumulation; what's your next step?
 Subtext: COMMENT BELOW
-Narration: Is consistent accumulation the key to your silver success? Follow for more silver news.
+Narration: Embrace consistent accumulation; what's your next step? Follow for more silver news.

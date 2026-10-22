@@ -1,0 +1,49 @@
+{
+  "slug": "retiring-outdated-website-content-with-a-clear-plan",
+  "plannedDate": "2026-10-07",
+  "actualPublicationDate": "2026-10-10",
+  "status": "source_review_and_editorial_draft_complete_unapproved",
+  "topic": "retiring outdated website content with a clear plan",
+  "sources": [
+    {
+      "title": "Google Search Central: Troubleshoot crawling errors",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/troubleshoot-crawling-errors",
+      "supports": [
+        "For permanently unavailable pages with no replacement, a true 404 or 410 is appropriate.",
+        "If a page moved or has a clear replacement, use a 301 redirect."
+      ],
+      "limits": "Google Search guidance concerns Google Search behavior; it does not determine a business content-retention decision."
+    },
+    {
+      "title": "Google Search Central: Redirects and Google Search",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "supports": [
+        "Redirects communicate a moved URL; permanent and temporary redirects serve different situations."
+      ],
+      "limits": "Avoid promising ranking or traffic outcomes."
+    },
+    {
+      "title": "GOV.UK: Retire outdated content",
+      "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/plan-manage-content/retire-content/",
+      "supports": [
+        "Public content managers should assess outdated content and communicate retirement."
+      ],
+      "limits": "Used as a process example, not as a rule for private businesses."
+    }
+  ],
+  "outline": [
+    "Review outdated website pages",
+    "Choose an outcome for outdated content",
+    "Make an outdated page transition clear",
+    "Check links when you retire website content",
+    "Plan how to retire outdated content",
+    "Schedule a review of retired website content"
+  ],
+  "outlineValidation": "scripts/validate-research-outline.py passed for the planned topic",
+  "editorialChecks": {
+    "claimsSourceBounded": true,
+    "audienceLimitsClear": true,
+    "noSearchRankingPromises": true,
+    "publicationApproval": false
+  }
+}

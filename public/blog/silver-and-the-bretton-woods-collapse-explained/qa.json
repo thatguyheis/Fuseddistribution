@@ -1,0 +1,32 @@
+{
+  "slug": "silver-and-the-bretton-woods-collapse-explained",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T22:59:45.346407+00:00",
+  "review_notes": [
+    "Reviewed complete article, metadata, social copy and 117 second estimated narration.",
+    "Historical chronology checked against Federal Reserve History and US Mint sources; removed invented silver parity and unsupported return claims from failed draft.",
+    "Visually inspected hero and square artwork: text legible and contained. Narration overlays complete and companion data synchronized.",
+    "Deterministic QA passed. Rendered video still requires its separate audiovisual release review."
+  ],
+  "sources": [
+    "https://www.federalreservehistory.org/essays/bretton-woods-created",
+    "https://www.federalreservehistory.org/essays/gold-convertibility-ends",
+    "https://www.federalreservehistory.org/essays/smithsonian-agreement",
+    "https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material"
+  ],
+  "artifact_sha256": {
+    "verified.md": "ac48d9f574518bc179790ab83b0093edad9746bb18ffbfe23496524367adc5e2",
+    "index.html": "8616b3c13e2b32b8ae0bc8f129cb473f9241cbeff7da1857ebc265f230ae5c8a",
+    "meta.json": "ce3d07cd2dd4f5178862ddea05f28a7d8def2b1e3ee11b1d5816d1bbe7c1581d",
+    "hooks.json": "4399ce1b6a90bc06bf5f99c6a9992fa7a24eab2c0f51065fbbca795f932ccfe7",
+    "hero.jpg": "fba307d530626a2454406fa28a15de6b8594345450b6a0dd15041b58f1775218",
+    "photo-post.jpg": "f2e625bf4c09d296ab0a057e233bd077554d74979917a97462349675fc5f63f9",
+    "reel-data.md": "b886bf346f127c8808cd2b02e3a97ab6026708cbf65f5adcfaf82cf83280ea05",
+    "reel-script.md": "5ef4f7cbf223a9ab34b684a88286c3470dc6e2dbbe9151097f7fc8addbb928ad",
+    "social-copy.json": "10fc317bbec5b6a0de7761b67412715eb44e56068c7f7f433cf819f52f80e733",
+    "research.json": "5c1f805889429fa93b66b98a474559062e527070279944364a54ee42042d070f"
+  }
+}

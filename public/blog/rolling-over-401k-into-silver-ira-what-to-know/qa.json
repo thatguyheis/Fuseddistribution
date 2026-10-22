@@ -1,0 +1,30 @@
+{
+  "slug": "rolling-over-401k-into-silver-ira-what-to-know",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:58:44.060357+00:00",
+  "review_notes": [
+    "Owner read fullarticle/reelnarration and IRSrolloverprimaryguidance; clarifiedRothconversiontax,RMDexclusions,taxable20percentwithholding andcustodianpolicyversuslaw.",
+    "Owner rendered andviewed actualcorrect1200x630hero1080squareexports; sourceSVGs match.",
+    "QA-localpass andproductionparser124plannedseconds; actualaudio/video pending.",
+    "ActualdateSeptember14; originalqueuedAugust7."
+  ],
+  "artifactSha256": {
+    "verified.md": "829451ddc09ec0934b4686aa38401d16bba36c593cc315da69f3a5b0b6df4667",
+    "index.html": "ca9fd3cca51a222c5b2d2a691b84ec77fbe72faa7a17032196dea864381aaa8a",
+    "hero.jpg": "94037c47692da9f69cba684fc5b4040370078d8cfb5493d463610c73ba14f5dd",
+    "social-copy.json": "b3f10fc9c83babdc318d8d701adc611e926e363d3c0d47c44b080f60fc12240d",
+    "hero.svg": "60385119d10efc198d0721bcb270d0a381d4e6a3ed70fb556e28956f8dc48700",
+    "reel-data.md": "fb9b56b834a4f38fe0124935eed66b5a828096cbec0f00de9e8d3b3db6f96998",
+    "square.svg": "a39f54360631d7726c6e4f1a5efcf4c1a1b821b344c16660e59ceddc589ca4b2",
+    "photo-post.svg": "a39f54360631d7726c6e4f1a5efcf4c1a1b821b344c16660e59ceddc589ca4b2",
+    "research.json": "6a53137919f37becc6c059cefb164755af2e4c45b446c65edfbceeeeb2981511",
+    "hooks.json": "c311e2f9100fef9e0f4e92c184dfb58500ae209204d193a87bfa4daf67f16e52",
+    "reel-script.md": "8e7107678cb398e658eee448aaed4e1ff7fa7e6caf279c5363a9e12f14d78735",
+    "photo-post.jpg": "ac51f20de607d6bf9cb88667e7fa30117768dd21344739b47c4630597a571c04",
+    "square.jpg": "ac51f20de607d6bf9cb88667e7fa30117768dd21344739b47c4630597a571c04",
+    "meta.json": "75e46c33a79bfbaa4b15d26e706697b650a1e1bf1d05ac9ab251117690bfbb30"
+  }
+}

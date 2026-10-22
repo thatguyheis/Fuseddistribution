@@ -1,0 +1,32 @@
+{
+  "slug": "retiring-outdated-website-content-with-a-clear-plan",
+  "title": "Retire Outdated Website Content With a Clear Plan",
+  "description": "Choose whether to update, redirect or retire an outdated website page, then check links, response codes and replacement content before making the change live.",
+  "ogDescription": "A practical plan for reviewing and retiring old web pages.",
+  "alt": "Outdated content branches into three choices",
+  "brand": "tech",
+  "date": "2026-10-10",
+  "modifiedDate": "2026-10-10",
+  "tags": [
+    "Website Content",
+    "Content Management"
+  ],
+  "ctaLine": "Would you update an outdated page, redirect it to a replacement or retire it?",
+  "contentGraphic": {
+    "label": "Choose the right content outcome",
+    "rows": [
+      {
+        "condition": "Still useful and currentable",
+        "action": "Verify and update"
+      },
+      {
+        "condition": "Moved or has replacement",
+        "action": "Map and redirect"
+      },
+      {
+        "condition": "No longer available",
+        "action": "Retire with clear status"
+      }
+    ]
+  }
+}

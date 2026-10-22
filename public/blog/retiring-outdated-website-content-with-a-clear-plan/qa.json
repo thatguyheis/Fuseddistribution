@@ -1,0 +1,25 @@
+{
+  "slug": "retiring-outdated-website-content-with-a-clear-plan",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-10T15:37:19.147649+00:00",
+  "review_notes": [
+    "Reviewed the complete article against Google Search Central guidance on removed pages, redirects and response statuses. GOV.UK is labeled as a public-sector example; no private-business rule or search ranking promise is inferred.",
+    "Reviewed the topic-specific update/redirect/retire illustration, custom square artwork and 360x640 portrait placement. Hook, contrast, clipping and distinct composition pass.",
+    "Topic-aligned outline validator, deterministic local article QA, six-segment script parser and narration preflight pass at 111.7 estimated seconds. Encoded reel review, hosting and scheduling remain pending.",
+    "Video panel only reviewed 2026-10-14: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-15T05-01-09-566Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "e57ac60e7ea1adc5d79dd93a7af2872c07058c715b29d78efe350457a4d82741",
+    "index.html": "6eb9f4f5d0f9ae6851a890333851baf427116fa857305615c6ce48c2af4a9f56",
+    "meta.json": "7874f632d7dd87b3edddac43100c37c5795900d50248a52a5623e8b5fc582d60",
+    "research.json": "cabd20cf54c2f9d4539b846eb506fca63e932ca7ce0718c0250bc517b0eca26d",
+    "hero.jpg": "34c88167570651eb14da5d11421d46bd4e68d6473ec82fb37f370364641f5885",
+    "photo-post.jpg": "ab3a4e53710a6071f5cf4562b136e8e9a5a61a7dd1c2bf9fb1ba3368704421af",
+    "reel-script.md": "23ae13e8bf1b61035a98e50e6d845b9c679f58d013cec196e88412ca5a482ae6",
+    "reel-data.md": "77a3109a239d404d7234c09234df644bb925f725d7293630f0062bb54a2e2d7c",
+    "social-copy.json": "b71c0d743a8899966dbef325cc03a215c384bd5a135bd42e0c1349d61bacd32a"
+  }
+}

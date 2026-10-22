@@ -1,0 +1,30 @@
+{
+  "slug": "selling-inherited-silver-coins-taxes-and-process",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:17:00.018230+00:00",
+  "review_notes": [
+    "Owner read complete article and final topic specific narration, verified primary sources and corrected unsupported claims.",
+    "Owner viewed both actual JPEG exports; diagram and sale/cost examples checked.",
+    "Deterministic QA passed. Reel rendering and platform delivery remain separate pending stages.",
+    "September14 duration repair adds source-supported basis record detail and the article’s hypothetical sale arithmetic to segments3 and5. Other six narrations unchanged; rerender and actual-duration release validation still required.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "e176d856b76db32a8f6ccca8ac3a86c13a0121ac6fea99512375234bbe8d34cf",
+    "index.html": "30c8ae5164eea1d085f0eb5bcb61e333f3fe1295843596442c03c551eaf53746",
+    "hero.jpg": "f19ecbf5b7920ab798d7fa2950d9b8a7c023522e63696deda59c9d2cc6e354f6",
+    "social-copy.json": "007e7d7de37da624a14bcf4be059183199c9bd1b1d7a133f14742d9b1826cffb",
+    "hero.svg": "30db3705326c38fca55bc619f9b55d656b27e0b6969eac6b0a47a6af47db7d42",
+    "reel-data.md": "ec44854a2db3d24e51e0c4c70ff053ce2d34241f9a6118fcd564a592a70dc2a7",
+    "photo-post.svg": "b0b96ea553f9d8e580758a4606d0899089083fa4c7780dc00d4bb0878fb93c6e",
+    "research.json": "7e16a65c90c3baa8840972b45ae025562ee90e72d0a8763684a9702fcb361c5f",
+    "hooks.json": "ab67e26606c970c0af4c9877ca41660f5ebd09c03f51576ff2412b029be8f10c",
+    "reel-script.md": "692e0842e585a1b7c98d9d87e5ea8e1ca65c1549bffa0a50aa903b693fc25fc8",
+    "gemma_draft.md": "e176d856b76db32a8f6ccca8ac3a86c13a0121ac6fea99512375234bbe8d34cf",
+    "photo-post.jpg": "b9130da9d1322eaaa7a1569e09971b429da1230fea21b827d4405c71a4f69ef4",
+    "meta.json": "254e2d70716f02a91889c43de12065744054c74231168781dc6be4730195f7c3"
+  }
+}
