@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-15",
+  "recordedAt": "2026-09-16T02:25:02.509550+00:00",
+  "failedTopics": [
+    "how to photograph silver coins for an inventory",
+    "how to reconcile a silver inventory after a sale"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 162,
+    "tech": 124
+  }
+}

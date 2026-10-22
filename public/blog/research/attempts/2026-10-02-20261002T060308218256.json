@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-02",
+  "recordedAt": "2026-10-02T06:03:08.217646+00:00",
+  "failedTopics": [
+    "building a silver collection around design themes",
+    "silver mine production versus refined production",
+    "mapping a manual business process before automating it"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 188,
+    "tech": 162
+  }
+}

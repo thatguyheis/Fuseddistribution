@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-30",
+  "recordedAt": "2026-09-30T14:06:06.472542+00:00",
+  "failedTopics": [
+    "silver in mirrors and reflective coatings",
+    "how coin dies transfer a design to metal",
+    "building a test set for AI customer support drafts",
+    "turning service conversations into useful FAQ topics"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 180,
+    "tech": 154
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "recordedAt": "2026-10-07T14:00:33.076324+00:00",
+  "failedTopics": [
+    "why silver mine supply includes byproduct production",
+    "what happens during coin quality control",
+    "creating an approval log for AI assisted work",
+    "planning a seasonal update without rewriting every page"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 185,
+    "tech": 159
+  }
+}

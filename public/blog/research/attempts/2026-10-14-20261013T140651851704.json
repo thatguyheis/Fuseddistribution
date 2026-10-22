@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-14",
+  "recordedAt": "2026-10-13T14:06:51.850585+00:00",
+  "failedTopics": [
+    "1925 Fort Vancouver half dollar tells a local history",
+    "comparing design details without assigning coin grades"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 202,
+    "tech": 176
+  }
+}

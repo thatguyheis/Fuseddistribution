@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-06",
+  "recordedAt": "2026-10-06T06:05:43.702870+00:00",
+  "failedTopics": [
+    "silver halides and the history of photography",
+    "how relief changes the appearance of a coin",
+    "deciding when an AI workflow needs human review",
+    "building a glossary customers can actually use"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 183,
+    "tech": 157
+  }
+}

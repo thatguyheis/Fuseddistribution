@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-13",
+  "recordedAt": "2026-10-13T06:03:13.290752+00:00",
+  "failedTopics": [
+    "why annual silver data can lag the market",
+    "recording the story behind a commemorative coin",
+    "tracking time saved after human review is included",
+    "prioritizing accessibility repairs by customer task"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 201,
+    "tech": 167
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11",
+  "recordedAt": "2026-10-09T14:09:15.040499+00:00",
+  "failedTopics": [
+    "choosing a focused theme for a small coin display",
+    "what apparent silver consumption measures"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 191,
+    "tech": 165
+  }
+}

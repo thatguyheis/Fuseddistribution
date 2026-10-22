@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-17",
+  "recordedAt": "2026-09-17T14:05:20.787378+00:00",
+  "failedTopics": [
+    "how to document a damaged silver bullion shipment",
+    "silver bullion invoice checklist for your records",
+    "how to review website changes before they go live"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 160,
+    "tech": 130
+  }
+}

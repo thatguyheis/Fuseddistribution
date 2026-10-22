@@ -1,0 +1,5 @@
+Your AI needs real customer scenarios, not just scripts. You can't just feed it a list of questions. It needs situations tied to what you actually do. Think about your business. If you run a plumbing company, don't just ask for "customer questions." Ask for a scenario like, "A homeowner calls because their water heater is leaking, and they need to know how fast you can send a crew out."
+
+This teaches the AI to focus on solving problems. It learns to empathize with that frustration. It learns to give you solutions, not just a canned response. You gotta show it the bad stuff too. Include times customers get confused or get angry. Show it what not to say. This stops the AI from sounding stiff or corporate.
+
+Use the language your customers actually use. If your salon uses specific terms, use those terms in your test set. This makes the drafts sound like they came from you, not a big company. Then you test the drafts. You get feedback. You update the set right away. That’s how you get the AI to sound like your local business.

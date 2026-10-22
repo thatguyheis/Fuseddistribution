@@ -1,0 +1,5 @@
+Stop guessing what your customers actually need. You need to build a test set for your AI support drafts. Don't just ask for general customer questions. Get specific. Think about the exact problems your local business owners face. For a contractor, that means drafting questions like, "How do I get a quote for fixing a leaky roof in my area?" Or for a salon, "What's your process for booking a color correction appointment?"
+
+This set has to capture the frustration. Include questions where people are confused, angry, or asking things completely off-topic. Show the AI what not to say. If someone asks about pricing when you only talk about service, that's a bad example. This teaches the AI to focus on solving the real pain, not just reciting a menu.
+
+Use the language your customers actually use. If your tradespeople use specific local slang, put it in. This makes the AI sound like it knows your business, not some faceless corporation. You gotta iterate fast. Test the drafts against this set. Get real feedback. Then update your set right away. That loop is how you make the AI sound like you.

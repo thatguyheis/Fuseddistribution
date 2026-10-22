@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-03",
+  "recordedAt": "2026-10-03T06:18:16.759446+00:00",
+  "failedTopics": [
+    "comparing lettering styles on collectible coins",
+    "why silver supply estimates get revised",
+    "measuring rework instead of counting automated tasks",
+    "planning an accessible content publishing checklist"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 189,
+    "tech": 163
+  }
+}

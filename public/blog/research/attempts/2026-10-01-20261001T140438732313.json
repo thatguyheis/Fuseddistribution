@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-01",
+  "recordedAt": "2026-10-01T14:04:38.731192+00:00",
+  "failedTopics": [
+    "what a coin collar does during striking",
+    "how to read a USGS silver commodity summary",
+    "when two service pages answer the same question",
+    "assigning accessibility ownership in a small team"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 187,
+    "tech": 161
+  }
+}

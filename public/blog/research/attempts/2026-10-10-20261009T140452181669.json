@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "recordedAt": "2026-10-09T14:04:52.181126+00:00",
+  "failedTopics": [
+    "how silver moves from ore to refined metal",
+    "creating a coin collection story for family members",
+    "choosing a safe rollback point for an automation"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 198,
+    "tech": 172
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-13T14:02:44.671331+00:00",
+  "posts": [
+    {
+      "slug": "1925-fort-vancouver-half-dollar-tells-a-local-history",
+      "keyword": "1925 Fort Vancouver half dollar tells a local history",
+      "brand": "silver"
+    },
+    {
+      "slug": "comparing-design-details-without-assigning-coin-grades",
+      "keyword": "comparing design details without assigning coin grades",
+      "brand": "silver"
+    },
+    {
+      "slug": "handing-accessibility-findings-to-a-new-website-provide",
+      "keyword": "handing accessibility findings to a new website provider",
+      "brand": "tech"
+    },
+    {
+      "slug": "separating-a-pilot-result-from-a-production-promise",
+      "keyword": "separating a pilot result from a production promise",
+      "brand": "tech"
+    }
+  ]
+}

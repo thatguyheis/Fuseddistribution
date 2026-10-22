@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-13",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-13T06:00:07.966209+00:00",
+  "posts": [
+    {
+      "slug": "why-annual-silver-data-can-lag-the-market",
+      "keyword": "why annual silver data can lag the market",
+      "brand": "silver"
+    },
+    {
+      "slug": "recording-the-story-behind-a-commemorative-coin",
+      "keyword": "recording the story behind a commemorative coin",
+      "brand": "silver"
+    },
+    {
+      "slug": "tracking-time-saved-after-human-review-is-included",
+      "keyword": "tracking time saved after human review is included",
+      "brand": "tech"
+    },
+    {
+      "slug": "prioritizing-accessibility-repairs-by-customer-task",
+      "keyword": "prioritizing accessibility repairs by customer task",
+      "brand": "tech"
+    }
+  ]
+}

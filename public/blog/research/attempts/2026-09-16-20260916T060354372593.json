@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-16",
+  "recordedAt": "2026-09-16T06:03:54.372265+00:00",
+  "failedTopics": [
+    "silver bar serial numbers and inventory records",
+    "how to compare silver shipping and insurance costs"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 164,
+    "tech": 126
+  }
+}

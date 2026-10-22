@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "recordedAt": "2026-10-09T06:03:51.567159+00:00",
+  "failedTopics": [
+    "coin presses and repeated strikes explained",
+    "silver reserves and resources are different measures",
+    "testing an AI summary against its source document",
+    "separating a useful tutorial from a sales page"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 177,
+    "tech": 160
+  }
+}

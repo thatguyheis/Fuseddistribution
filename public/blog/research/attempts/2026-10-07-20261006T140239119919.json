@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "recordedAt": "2026-10-06T14:02:39.111675+00:00",
+  "failedTopics": [
+    "silver recycling from industrial scrap explained",
+    "from artist sketch to finished coin design",
+    "comparing an AI draft with the original customer request",
+    "retiring outdated website content with a clear plan"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 184,
+    "tech": 158
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-04",
+  "recordedAt": "2026-10-04T06:00:21.260277+00:00",
+  "failedTopics": [
+    "reading a coin design from center to rim",
+    "comparing silver statistics with different units",
+    "creating a small business exception handling log",
+    "recording accessibility feedback from real customers"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 190,
+    "tech": 164
+  }
+}

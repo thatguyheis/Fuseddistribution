@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-12",
+  "recordedAt": "2026-10-09T14:12:59.008896+00:00",
+  "failedTopics": [
+    "making a visual glossary of coin design terms",
+    "reading a silver recycling report without price forecasts",
+    "testing an automation with missing customer information",
+    "budgeting time for accessibility maintenance"
+  ],
+  "status": "owner_repair_required",
+  "nextIndex": {
+    "silver": 192,
+    "tech": 166
+  }
+}

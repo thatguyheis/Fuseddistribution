@@ -1,0 +1,5 @@
+Your best questions come from what your customers actually tell you. Stop guessing what they want and start using what they already say. Your existing clients tell you what problems they face. They ask you the same things over and over. Those repeated questions are gold. They show you where your service is hurting for them.
+
+Look at your notes. Review your call transcripts. Read the comments on your Google Business Profile. These are your raw materials. Pull out the specific worries. Don't just list what you do. Ask yourself what keeps coming up. Is it about emergency response times? Is it about the cost of a specific job? Is it about finding someone reliable in your area? Those are the real pain points.
+
+Turn those worries into questions for your site. You need to answer them straight up. Don't use fancy marketing language. Answer the real problem. If someone searches for "best plumber near me," you need an answer that says exactly what you do and how you solve their immediate issue. Make your answers direct. Solve the problem right there. This builds trust. It shows you get it.

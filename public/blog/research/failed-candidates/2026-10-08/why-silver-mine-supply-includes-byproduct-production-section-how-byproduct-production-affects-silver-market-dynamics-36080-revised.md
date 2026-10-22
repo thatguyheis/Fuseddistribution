@@ -1,0 +1,7 @@
+Silver mines don't just focus on silver. They often produce other valuable metals as byproducts, such as gold or copper. These secondary metals help offset mining costs. They boost the total revenue for the operation.
+
+Including these byproducts makes the mining project more practical. It diversifies your income stream. You're not relying only on the price of silver. This makes the entire mining venture financially sound. It shows a better use of the whole geological resource.
+
+However, this adds layers to the supply chain. You need special equipment to separate these different materials. Processing these byproducts takes extra steps. This complexity affects how the materials move to the market.
+
+Consistent byproduct production helps keep the market steady. A steady flow of various precious metals provides stability. This stability is important for the long term health of the silver market.
