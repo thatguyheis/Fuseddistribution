@@ -655,6 +655,24 @@
         text-decoration: none;
       }
 
+      .frame-view.touch-preview iframe {
+        height: 844px;
+        transform: scale(var(--frame-scale, 1));
+      }
+
+      .touch-preview .frame-open {
+        touch-action: pan-x pinch-zoom;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      .touch-preview .frame-open-hint {
+        opacity: 1;
+        transform: none;
+        font-size: 0.65rem;
+      }
+
       .frame-open::before {
         content: "";
         position: absolute;
@@ -1838,9 +1856,62 @@
     <script>
       (function () {
         var IPHONE_WIDTH = 390;
+        var touchPreview = window.matchMedia('(max-width: 1080px), (pointer: coarse)');
+
+        function enableTouchPreview(view) {
+          var link = view.querySelector('.frame-open');
+          var frame = view.querySelector('iframe');
+          if (!link || !frame || link.dataset.swipeReady) return;
+          link.dataset.swipeReady = 'true';
+          link.draggable = false;
+          var gesture = null;
+          var suppressClick = false;
+          link.addEventListener('pointerdown', function (e) {
+            suppressClick = false;
+            if (!touchPreview.matches || !e.isPrimary || e.button !== 0) return;
+            try {
+              gesture = { id: e.pointerId, x: e.clientX, y: e.clientY,
+                top: frame.contentWindow.scrollY, dragged: false };
+              link.setPointerCapture(e.pointerId);
+            } catch (_) { gesture = null; }
+          });
+          link.addEventListener('pointermove', function (e) {
+            if (!gesture || gesture.id !== e.pointerId) return;
+            var dy = e.clientY - gesture.y;
+            if (Math.hypot(e.clientX - gesture.x, dy) > 8) gesture.dragged = true;
+            if (!gesture.dragged) return;
+            suppressClick = true;
+            e.preventDefault();
+            var scale = view.clientWidth / IPHONE_WIDTH;
+            if (scale <= 0) return;
+            try {
+              frame.contentWindow.scrollTo({ top: gesture.top - dy / scale, behavior: 'instant' });
+            } catch (_) { /* The full-page link remains available if the embed cannot load. */ }
+          });
+          function endGesture(e) {
+            if (!gesture || gesture.id !== e.pointerId) return;
+            suppressClick = gesture.dragged || e.type === 'pointercancel';
+            gesture = null;
+            if (link.hasPointerCapture(e.pointerId)) link.releasePointerCapture(e.pointerId);
+          }
+          link.addEventListener('pointerup', endGesture);
+          link.addEventListener('pointercancel', endGesture);
+          link.addEventListener('click', function (e) {
+            if (suppressClick && e.detail !== 0) {
+              e.preventDefault();
+              e.stopPropagation();
+              suppressClick = false;
+            }
+          });
+        }
 
         function fitFrames() {
           document.querySelectorAll('.frame-view').forEach(function (view) {
+            view.classList.toggle('touch-preview', touchPreview.matches);
+            if (touchPreview.matches) view.style.setProperty('--frame-scroll', '0px');
+            var hint = view.querySelector('.frame-open-hint');
+            if (hint) hint.textContent = touchPreview.matches ? 'Swipe to explore · Tap to open ↗' : 'Open Full Page ↗';
+            enableTouchPreview(view);
             var w = view.clientWidth;
             if (w > 0) view.style.setProperty('--frame-scale', (w / IPHONE_WIDTH).toFixed(4));
           });
@@ -1855,7 +1926,7 @@
 
         function updateParallax() {
           ticking = false;
-          if (reduceMotion) return;
+          if (reduceMotion || touchPreview.matches) return;
           var vh = window.innerHeight;
           document.querySelectorAll('.frame-view').forEach(function (view) {
             var r = view.getBoundingClientRect();
@@ -1880,6 +1951,7 @@
 
         window.addEventListener('scroll', requestParallax, { passive: true });
         window.addEventListener('resize', refreshFrames);
+        touchPreview.addEventListener('change', refreshFrames);
         var grid = document.getElementById('project-list');
         if (grid && 'MutationObserver' in window) {
           new MutationObserver(refreshFrames).observe(grid, { childList: true });
@@ -1904,6 +1976,7 @@
         document.addEventListener('click', function (e) {
           var open = e.target.closest('.frame-open');
           if (open) {
+            if (touchPreview.matches) return;
             e.preventDefault();
             var card = open.closest('.project-card');
             var title = card ? card.querySelector('h2') : null;
