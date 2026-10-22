@@ -6,6 +6,10 @@ Raw originals remain unchanged in `/Users/nick/projects/fuseddistribution/Coin R
 - `reusable-assets.json`: reviewed, source-linked compositions for future Fused content. Each entry records the editable artwork, source coin IDs, hash, role, rights scope and reuse limits.
 - `index.html`: local visual catalog with linked previews of originals and reusable compositions. Open it from the project checkout so its relative image paths resolve. Rebuild it from the manifests with `node content/coin-library/build-index.mjs`.
 - Coin history workups: `../coin-history/`.
+- New episode input requirements and the reusable queue preparer: `../../docs/COIN-HISTORY-PACKAGE-INPUT.md`.
+- Usage reconciler: `node scripts/audit-coin-library-usage.mjs --write`. It adds only published coin-evidence uses whose catalog source path and SHA256 still match.
+
+New coin photos stay in the raw folder, unchanged. Add a catalog record with a new stable `coin-####` ID, source hash, exact visible identity evidence, and a pending review status. Review the full original against an authoritative design/source with `node scripts/review-coin-library-asset.mjs --asset-id=coin-#### --coin-identity="..." --identity-source=https://... --visible-markers="..."`. This records the local Gemma visual comparison and marks the image usable only when the match passes. Package intake and the pre-render Gemma vision check then independently compare every selected coin-evidence crop with the episode identity. Uncertain crops remain unavailable to the queue.
 
 Owner correction: the first story incorrectly described coin-0006 as showing an O mint mark. That attribution is withdrawn. Do not reuse it as New Orleans evidence or infer a mint from coin-0007's obverse/holder. Reverify both identities before new specimen-specific claims. Nick requested that the existing article and reel remain unchanged. Treat the photographs as separate specimens unless pairing is independently confirmed. The handheld clip is an 1886 obverse, not the 1900 coin and not evidence of an O mint mark.
 

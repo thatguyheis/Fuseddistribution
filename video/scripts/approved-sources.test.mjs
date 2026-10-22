@@ -61,3 +61,53 @@ test('rejects an automatic coin-history QA score below the release threshold', (
     rmSync(value.root, { recursive: true, force: true });
   }
 });
+
+function addCoinMediaGate(value) {
+  const identity = '1909 Lincoln cent';
+  const topic = 'Why Abraham Lincoln Appeared on the Cent in 1909';
+  const imagePath = join(value.post, 'images/coin-evidence.jpg');
+  mkdirSync(join(value.post, 'images'), {recursive:true});
+  writeFileSync(imagePath, 'verified 1909 cent crop');
+  const imageSha = digest(imagePath);
+  writeFileSync(join(value.post, 'meta.json'), JSON.stringify({title:topic}));
+  writeFileSync(join(value.post, 'image-sources.json'), JSON.stringify({assets:[{
+    path:'images/coin-evidence.jpg', sha256:imageSha, coinIdentity:identity, role:'coin evidence', sourceType:'Wikimedia Commons',
+    page:'https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg', license:'Public domain',
+  }]}));
+  writeFileSync(join(value.work, 'claim-map.json'), JSON.stringify({claims:[{id:'LC1',claim:'Centennial issue',source:'https://www.usmint.gov/'}]}));
+  writeFileSync(join(value.post, 'production-inputs.json'), JSON.stringify({transcriptSha256:createHash('sha256').update('approved narration\n').digest('hex'),coinMediaGateVersion:1,coinIdentity:identity}));
+  const preferred = {source:'fused-verified-coin-evidence',mode:'mixed',segments:[{
+    index:0,type:'photo',reviewed:true,path:`public/blog/${value.slug}/images/coin-evidence.jpg`,sha256:imageSha,
+    assetIds:['commons-cent'],role:`Direct visual evidence of ${identity}; obverse date`,coinIdentity:identity,relatedClaimIds:['LC1'],
+  }]};
+  writeFileSync(join(value.post, 'preferred-media.json'), JSON.stringify(preferred));
+  writeFileSync(join(value.work, 'coin-image-relevance.json'), JSON.stringify({
+    checkpoint:'package-intake-and-pre-render',reviews:['package-intake','pre-render'].map(checkpoint=>({checkpoint,slug:value.slug,topic,coinIdentity:identity,imageSha256:imageSha,matchesCoin:true,confidence:0.98,visibleEvidence:'Lincoln portrait and 1909 date'})),
+  }));
+  const qaPath=join(value.post,'qa.json');
+  const qa=JSON.parse(readFileSync(qaPath,'utf8'));
+  qa.artifactSha256['meta.json']=digest(join(value.post,'meta.json'));
+  qa.artifactSha256['image-sources.json']=digest(join(value.post,'image-sources.json'));
+  qa.artifactSha256['production-inputs.json']=digest(join(value.post,'production-inputs.json'));
+  qa.artifactSha256['content/coin-history/'+value.slug+'/claim-map.json']=digest(join(value.work,'claim-map.json'));
+  qa.artifactSha256['preferred-media.json']=digest(join(value.post,'preferred-media.json'));
+  qa.coinImageReview={matchesCoin:true,imagesChecked:1};
+  writeFileSync(qaPath,JSON.stringify(qa));
+}
+
+test('coin media gate requires two matching checks and a beat mapped to the episode coin', () => {
+  const value=fixture();
+  try {
+    addCoinMediaGate(value);
+    assert.doesNotThrow(()=>assertApprovedSources(value.root,value.slug));
+    const preferredPath=join(value.post,'preferred-media.json');
+    const preferred=JSON.parse(readFileSync(preferredPath,'utf8'));
+    preferred.segments[0].coinIdentity='Morgan dollar';
+    writeFileSync(preferredPath,JSON.stringify(preferred));
+    const qaPath=join(value.post,'qa.json');
+    const qa=JSON.parse(readFileSync(qaPath,'utf8'));
+    qa.artifactSha256['preferred-media.json']=digest(preferredPath);
+    writeFileSync(qaPath,JSON.stringify(qa));
+    assert.throws(()=>assertApprovedSources(value.root,value.slug),/scene is not tied to the episode identity/);
+  } finally { rmSync(value.root,{recursive:true,force:true}); }
+});

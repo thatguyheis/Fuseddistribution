@@ -152,6 +152,7 @@ if (post/"pipeline-marker.json").exists() and d["pass"]:
     artifacts=["verified.md","index.html","meta.json","research.json","hero.jpg","photo-post.jpg",
                "reel-script.md","reel-script-approved.md","reel-data.md","social-copy.json",
                "production-inputs.json","image-sources.json","content-plan.json","pipeline-marker.json"]
+    if (post/"preferred-media.json").is_file(): artifacts.append("preferred-media.json")
     hashes={}
     for name in artifacts:
         path=post/name

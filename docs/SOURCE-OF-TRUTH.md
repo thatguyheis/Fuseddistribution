@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 1, 2026-10-22. Owner: Nick Hughes.
+Version 2, 2026-10-22. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -40,8 +40,10 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 |---|---|---|
 | Content scope switch | `scope: coin-history`, `dailyTarget: 3` | `ops/content-scope.json` read by `scripts/lib/content-scope.mjs`, `scripts/render-missing-reels.sh`, `scripts/run-coin-history-drafts.py` |
 | What counts as coin history | Post is in `public/blog/posts.json` **and** has a workup folder `content/coin-history/<slug>/` | same readers |
-| Production queue | `content/coin-history/queue.json` (append `{slug, keyword}` per ready package) | `run-coin-history-drafts.py` |
+| Production queue | `content/coin-history/queue.json` (append `{slug, keyword}` only after the package manifest passes) | `run-coin-history-drafts.py`, `prepare-coin-history-batch.mjs` |
 | Daily cap behavior | Caps new blog publishes; a post already live may finish its reel the same day | `run-coin-history-drafts.py` `choose()` |
+| Prepared queue floor | At least 3 complete, unprocessed packages each morning; alert below 3 | `run-coin-history-drafts.py`, `.workflow-state/coin-history-drafts/queue-health.json` |
+| Throughput measurement | Record stage time, attempts and completed pairs by Pacific date; show sample size | `run-coin-history-drafts.py`, `.workflow-state/coin-history-drafts/throughput.json` |
 | Blog length | 1,100 words minimum for drafts | `public/blog/BLOG-SOP.md` and QA |
 | Blog sources | Every factual claim maps to a primary source (U.S. Mint, museums, archives, NPS, Library of Congress). Sources section required. | `claim-map.json`, `research.json`, blog QA |
 | Blog QA pass | `qa.json` `pass: true`, score at least 85, mode `coin-history-automated`, stages include `qa-local-pass` and `qa-brain-pass` | `run-coin-history-drafts.py` |
@@ -53,7 +55,7 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | Voice | Chatterbox Standard with Nick's voice reference, settings pinned in `video/tts-runtime.json`. Nano and Zoe only for explicit recovery tests Nick approves. | `video/tts-runtime.json` |
 | Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
-| Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. | `docs/COIN-HISTORY-SOP.md` claim to image rules |
+| Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
 | Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. No paid remote model in scheduled jobs. | coin worker env |
 | Buffer queue | 9 scheduled posts per channel (limit 10, 1 reserve slot). Channels: YouTube Shorts, X, Instagram. | `scripts/buffer-backlog-runner.mjs:22-24` |
 | Buffer reuse | Same reel not reposted within 7 days | `buffer-backlog-runner.mjs` `repostAfterDays` |
@@ -106,7 +108,7 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | 1. Pick topic | Choose a coin with a real story, preferring owner photos and unused subjects | Codex | entry in a prep list | Not a repeat of any slug in `content/coin-history/` or posts.json |
 | 2. Research | Primary sources, verified facts vs open questions | Codex + gemma | `content/coin-history/<slug>/research.json`, `claim-map.json`, `overview.md` | Every claim mapped to a source |
 | 3. Transcript | 280 to 330 words, hook, chronology, payoff, final question | Codex + gemma | `narration-v1-approved.txt`, `script-approval.json` with SHA256 | Automated audit per COIN-HISTORY-SOP (Nick's 2026-10-20 authorization) |
-| 4. Images | Owner coin crop, sourced context photos, labeled AI support scenes | Codex | `artwork-source/`, `preferred-media.json` or `presentation-plan.json` | Claim to image check, hashes recorded |
+| 4. Images | Owner coin crop, sourced context photos, labeled AI support scenes | Codex | `artwork-source/`, `preferred-media.json` or `presentation-plan.json` | Each coin evidence image must directly match the episode coin in a local vision check at intake and again before rendering; image hashes and claim links must match |
 | 5. Blog package | Post folder with meta, content plan, reel script | Codex | `public/blog/<slug>/` | Files present |
 | 6. Queue | Append `{slug, keyword}` | Codex | `content/coin-history/queue.json` | Steps 2 to 5 complete |
 | 7. Write and QA blog | build-post.sh with local model | coin worker | `index.html`, `qa.json` | Blog QA pass (section 3) |
@@ -117,7 +119,7 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | 12. Embed | Blog video player linked to hosted reel | Codex | updated blog HTML | Player and source URL in live HTML |
 | 13. Commit | Content commit on `main` | Codex | git commit | Section 7 |
 
-**Throughput math.** The worker does one episode at a time. To finish 3 per day, at least 3 prepared packages must sit in the queue every morning, which means about 21 per week from step 1 to 6. Today steps 1 to 6 are manual (see `scripts/prepare-coin-history-batch.mjs`, where packages are hardcoded). Automating them is the top open task.
+**Throughput operations.** The worker does one episode at a time. Maintain at least 3 complete, unprocessed packages in the queue each morning, with about 21 per week prepared as a rolling target. Use `node scripts/prepare-coin-history-batch.mjs --manifest=<path>` to prepare a new episode from its source checked workup and append it to the production queue only after package validation and the first coin image match check pass. The owner photo catalog is the image supply ledger; photos remain unavailable for production until identity and crop review are complete. The worker records stage durations, retries and completed pairs by Pacific date in `.workflow-state/coin-history-drafts/throughput.json`. Review that report over multiple production cycles before treating the three pair target as a proven capacity. Never reduce a source, editorial, image or release gate to meet the target.
 
 ---
 

@@ -1,9 +1,15 @@
 import { createHash } from 'node:crypto';
-import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import sharp from 'sharp';
+import { reviewCoinImage } from '../video/scripts/coin-image-relevance.mjs';
 
 const root = process.cwd();
+if (process.argv.includes('--help')) {
+  console.log('Usage: node scripts/prepare-coin-history-batch.mjs --manifest=<episode.json>');
+  console.log('Legacy only: add --legacy-2026-10-20 to replay the preserved historical seed list.');
+  process.exit(0);
+}
 const hash = (path) => createHash('sha256').update(readFileSync(path)).digest('hex');
 const sourcePath = (slug, file) => join(root, 'content/coin-history', slug, file);
 const outPath = (slug, file) => join(root, 'public/blog', slug, file);
@@ -12,9 +18,10 @@ const imageAlt = (label) => {
   if (words.length < 6) words.push(...['coin', 'image', 'detail'].slice(0, 6 - words.length));
   return words.slice(0, 6).join(' ');
 };
-const items = [
+const legacyItems = [
   {
     slug: 'kennedy-half-dollar-memorial-and-metal', title: 'How the Kennedy Half Dollar Became a Memorial and a Marker of Change',
+    coinIdentity: 'Kennedy half dollar',
     hook: 'Thirty-eight days from tragedy to coin',
     reelLabels:['A memorial and a new law','Portrait takes shape under a deadline','Mint production and first delivery','Silver content changes','Two stories in one half dollar'],
     description: 'Follow the Kennedy half dollar from its rapid 1963 authorization to the 1965 change in silver content, with Mint production details and a sourced timeline.',
@@ -30,6 +37,7 @@ const items = [
   },
   {
     slug: 'carver-washington-half-dollar-two-educators', title: 'Why the Carver-Washington Half Dollar Honors Two Educators',
+    coinIdentity: 'Carver-Washington commemorative half dollar',
     hook: 'Two educators, one institution, one coin',
     reelLabels:['Washington builds Tuskegee','Carver teaches agricultural science','Congress joins their names','Hathaway’s design and the 1954 ending','Two educators on one coin'],
     description: 'Trace how Booker T. Washington built Tuskegee and George Washington Carver taught agricultural science before their shared half dollar appeared decades later.',
@@ -44,6 +52,7 @@ const items = [
   },
   {
     slug: '2021-american-eagle-silver-redesign', title: 'What Changed When the American Silver Eagle Was Redesigned in 2021?',
+    coinIdentity: '2021 American Silver Eagle',
     hook: 'One familiar face, one new eagle',
     reelLabels:['A familiar Liberty design','A new eagle lands on the reverse','Weinman’s source artwork returns','Both reverses appear in one set','A transition visible on the coin'],
     description: 'Compare the American Silver Eagle’s familiar Walking Liberty obverse with the new 2021 reverse, its artists, and the Mint’s two-coin transition set.',
@@ -58,6 +67,7 @@ const items = [
   },
   {
     slug: 'columbian-exposition-first-commemorative-half', title: 'How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair',
+    coinIdentity: '1892 Columbian half dollar',
     hook: 'A coin authorized before the fair opened',
     reelLabels:['Congress authorizes a commemorative','Coin proceeds support fair preparation','Barber and Morgan design two sides','The 1892 date looks toward the fair','A coin made before opening day'],
     description: 'See why Congress authorized the first U.S. commemorative half dollar before Chicago’s 1893 World’s Columbian Exposition opened, and how the law tied coinage to fair preparation.',
@@ -72,6 +82,7 @@ const items = [
   },
   {
     slug: '1909-lincoln-cent-first-presidential-circulating-coin', title: 'Why Abraham Lincoln Appeared on the Cent in 1909',
+    coinIdentity: '1909 Lincoln cent',
     hook: 'A president enters everyday pocket change',
     reelLabels:['The centennial issue reaches the public','Brenner’s portrait breaks with tradition','The VDB initials spark a change','Wheat ears define the reverse','A design that stayed in circulation'],
     description: 'Explore how Lincoln’s 1909 cent broke with earlier circulating coin portrait tradition, marked his centennial, and began a long sequence of changing reverse designs.',
@@ -86,16 +97,196 @@ const items = [
   },
 ];
 
+const manifestArg = process.argv.find((argument) => argument.startsWith('--manifest='));
+const usingManifest = Boolean(manifestArg);
+const legacyMode = process.argv.includes('--legacy-2026-10-20');
+if (!usingManifest && !legacyMode) throw new Error('Usage: node scripts/prepare-coin-history-batch.mjs --manifest=<episode.json>');
+if (usingManifest && legacyMode) throw new Error('Choose a package manifest or legacy mode, not both');
+const items = usingManifest ? JSON.parse(readFileSync(resolve(manifestArg.slice('--manifest='.length)), 'utf8')).items : legacyItems;
+
+function validatePackage(item) {
+  const requiredText = ['slug', 'title', 'coinIdentity', 'hook', 'description'];
+  for (const key of requiredText) if (typeof item?.[key] !== 'string' || !item[key].trim()) throw new Error(`Package missing ${key}`);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug)) throw new Error(`Invalid package slug: ${item.slug}`);
+  item.images = Array.isArray(item.images) && item.images.length ? item.images : item.image ? [item.image] : [];
+  if (!item.images.length) throw new Error(`${item.slug}: coin evidence is required`);
+  item.image = item.images[0];
+  if (!Array.isArray(item.sections) || item.sections.length < 3 || !Array.isArray(item.reelLabels)) throw new Error(`${item.slug}: missing article sections or reel labels`);
+  const work = join(root, 'content/coin-history', item.slug);
+  let transcript, approval, research, claimMap;
+  if (usingManifest) {
+    const input = item.workup;
+    if (!input || typeof input.transcript !== 'string' || !input.transcript.trim() || !input.research || !input.claimMap || !input.audit || !input.approvalEvidence?.trim()) {
+      throw new Error(`${item.slug}: manifest must include transcript, research, claim map, automated audit and approval evidence`);
+    }
+    const requiredAudit = ['hookPromisePayoff','sourcedClaimsMapped','substantiveHistoricalDetails','sevenFieldStrategyAndDistinctVideoType','coinIdentityAndMediaLimitsRecorded','transcriptLengthTarget','finalQuestionCard'];
+    if (requiredAudit.some(key => input.audit[key] !== 'pass')) throw new Error(`${item.slug}: automated transcript audit has not passed every required check`);
+    const content = `${input.transcript.trim()}\n`;
+    transcript = Buffer.from(content);
+    research = input.research;
+    claimMap = input.claimMap;
+    approval = {slug:item.slug,version:1,topicApproved:true,transcriptApproved:true,
+      approvalType:'owner-authorized-automated-coin-history-audit',approvalEvidence:input.approvalEvidence.trim(),
+      approvedOn:new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date()),
+      approvedTranscriptSha256:createHash('sha256').update(transcript).digest('hex'),wordCount:content.trim().split(/\s+/).length,
+      audit:input.audit,productionScope:'Coin history topic and transcript only. Blog, image and reel gates remain required.'};
+    item.preparedWorkup = {transcript, approval, research, claimMap};
+  } else {
+    transcript = readFileSync(join(work, 'narration-v1-approved.txt'));
+    approval = JSON.parse(readFileSync(join(work, 'script-approval.json'), 'utf8'));
+    research = JSON.parse(readFileSync(join(work, 'research.json'), 'utf8'));
+    claimMap = JSON.parse(readFileSync(join(work, 'claim-map.json'), 'utf8'));
+    if (!approval.transcriptApproved || hash(join(work, 'narration-v1-approved.txt')) !== approval.approvedTranscriptSha256) {
+      throw new Error(`${item.slug}: approved transcript hash does not match`);
+    }
+  }
+  const transcriptText = transcript.toString('utf8').trim();
+  const paragraphs = transcriptText.split(/\n\s*\n/).map(part => part.trim()).filter(Boolean);
+  const wordCount = transcriptText.split(/\s+/).filter(Boolean).length;
+  const estimatedSeconds = wordCount / 3.25 + 1.9;
+  if (usingManifest && (wordCount < 280 || wordCount > 330)) throw new Error(`${item.slug}: new reel transcript must contain 280-330 words`);
+  if (estimatedSeconds < 95 || estimatedSeconds > 135) throw new Error(`${item.slug}: narration estimate is outside the 95-135 second preflight range`);
+  if (paragraphs.length !== item.reelLabels.length + 2 || !paragraphs.at(-1).endsWith('?') || paragraphs.at(-1).split(/\s+/).length > 10) {
+    throw new Error(`${item.slug}: transcript must map to the hook, reel labels, and a final question of ten words or fewer`);
+  }
+  if (usingManifest && ((research.openQuestions || []).length || (research.missingEvidence || []).length)) {
+    throw new Error(`${item.slug}: unresolved research questions or missing evidence prevent queue admission`);
+  }
+  const knownSources = new Set((research.sources || []).map(source => source.url));
+  if (!claimMap.claims?.length || claimMap.claims.some(claim => !knownSources.has(claim.source) || !/^https:\/\//.test(claim.source))) {
+    throw new Error(`${item.slug}: every claim must map to an HTTPS source recorded in research.json`);
+  }
+  const claims = new Set(claimMap.claims.map(claim => claim.id));
+  for (const section of item.sections) {
+    if (!Array.isArray(section) || section.length < 4) throw new Error(`${item.slug}: malformed section manifest`);
+    for (const id of [...(section[3] || []), ...(section[4] || [])]) if (!claims.has(id)) throw new Error(`${item.slug}: section references unknown claim ${id}`);
+  }
+  if (usingManifest) {
+    const usedSources = new Set(claimMap.claims.map(claim => claim.source));
+    const sourceRecords = (research.sources || []).filter(source => usedSources.has(source.url));
+    if (sourceRecords.some(source => source.primarySourceVerified !== true || !source.primarySourceBasis?.trim())) {
+      throw new Error(`${item.slug}: every used source must record primarySourceVerified and its basis`);
+    }
+    if (!Array.isArray(item.graphicRows) || item.graphicRows.length < 3) throw new Error(`${item.slug}: add at least three sourced graphic rows`);
+    if (existsSync(join(root, 'public/blog', item.slug)) && !existsSync(join(root, 'public/blog', item.slug, 'pipeline-marker.json'))) {
+      throw new Error(`Refusing to overwrite unmarked existing blog work: ${item.slug}`);
+    }
+    const posts = JSON.parse(readFileSync(join(root, 'public/blog/posts.json'), 'utf8'));
+    if (posts.some(post => post.slug === item.slug)) throw new Error(`${item.slug}: this slug is already published`);
+    const statePath = join(root, '.workflow-state/coin-history-drafts/state.json');
+    if (existsSync(statePath)) {
+      const state = JSON.parse(readFileSync(statePath, 'utf8'));
+      if (state.items?.[item.slug]?.releaseReady) throw new Error(`${item.slug}: this episode is already release ready`);
+    }
+  }
+  const catalog = usingManifest ? JSON.parse(readFileSync(join(root, 'content/coin-library/catalog.json'), 'utf8')) : null;
+  const seenImages = new Set();
+  for (const image of item.images) {
+    if (!usingManifest && !image.coinIdentity) image.coinIdentity = item.coinIdentity;
+    if (image.coinIdentity !== item.coinIdentity || !image.label?.trim()) throw new Error(`${item.slug}: every coin photo must match the episode coin identity`);
+    if (usingManifest && (!image.reviewedReference || image.reviewedReference.length < 20)) throw new Error(`${item.slug}: every image needs visible identity evidence`);
+    if (usingManifest && (!Array.isArray(image.segmentIndexes) || !image.segmentIndexes.length || image.segmentIndexes.some(index => !Number.isInteger(index) || index < 0 || index >= item.reelLabels.length + 2))) {
+      throw new Error(`${item.slug}: map every coin photo to at least one reel beat that directly discusses the coin`);
+    }
+    const key = image.assetId || image.source;
+    if (seenImages.has(key)) throw new Error(`${item.slug}: duplicate coin image ${key}`);
+    seenImages.add(key);
+    if (usingManifest && image.type === 'owner') {
+      const asset = catalog.items.find(entry => entry.id === image.assetId);
+      const sourcePath = join(root, image.source || '');
+      if (!asset || asset.source !== image.source || !existsSync(sourcePath) || hash(sourcePath) !== asset.sha256) {
+        throw new Error(`${item.slug}: owner photo source must match the catalog ID and source hash`);
+      }
+      if (!['approved_coin_history_evidence', 'used_verified_coin_evidence'].includes(asset.status)) throw new Error(`${item.slug}: owner coin image ${asset.id} has not passed catalog identity and crop review`);
+      if (asset.coinIdentity !== item.coinIdentity || asset.identityReview?.matchesCoin !== true || asset.identityReview?.sourceSha256 !== asset.sha256 || Number(asset.identityReview?.confidence) < 0.85) {
+        throw new Error(`${item.slug}: owner catalog identity needs a current local image review for ${item.coinIdentity}`);
+      }
+    } else if (usingManifest && image.type === 'commons') {
+      const localSource = resolve(work, image.source || '');
+      if (!localSource.startsWith(`${resolve(work)}/`) || !existsSync(localSource) || !image.sourceSha256 || hash(localSource) !== image.sourceSha256) {
+        throw new Error(`${item.slug}: Commons image needs a workup source file and matching source hash`);
+      }
+      if (!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/i.test(image.page || '') || !image.license?.trim() || !image.attribution?.trim()) {
+        throw new Error(`${item.slug}: Commons evidence must include its file page, license, and attribution`);
+      }
+    } else if (usingManifest) throw new Error(`${item.slug}: unsupported coin image source type`);
+  }
+  return {transcript, approval, research, claimMap};
+}
+
+function appendToQueue(item) {
+  const queuePath = join(root, 'content/coin-history/queue.json');
+  const queue = JSON.parse(readFileSync(queuePath, 'utf8'));
+  const existing = queue.posts.find(entry => entry.slug === item.slug);
+  if (existing && existing.keyword !== item.title) throw new Error(`Queue entry title conflict for ${item.slug}`);
+  if (!existing) {
+    queue.posts.push({slug: item.slug, keyword: item.title});
+    const temporary = `${queuePath}.${process.pid}.tmp`;
+    writeFileSync(temporary, `${JSON.stringify(queue, null, 2)}\n`);
+    renameSync(temporary, queuePath);
+  }
+}
+
+function recordCatalogUse(item, preparedImages) {
+  const ownerImages = item.images.filter(image => image.type === 'owner' && image.assetId);
+  if (!ownerImages.length) return;
+  const path = join(root, 'content/coin-library/catalog.json');
+  const catalog = JSON.parse(readFileSync(path, 'utf8'));
+  for (const image of ownerImages) {
+    const asset = catalog.items.find(entry => entry.id === image.assetId);
+    if (!asset) throw new Error(`Missing coin catalog asset ${image.assetId}`);
+    asset.uses ||= [];
+    const prepared = preparedImages.find(entry => entry.assetId === image.assetId);
+    if (!asset.uses.some(use => use.slug === item.slug && use.role === 'coin evidence')) {
+      asset.uses.push({slug: item.slug, date: new Date().toISOString().slice(0, 10), status: 'prepared-and-image-verified', role: 'coin evidence', imageSha256: prepared?.evidenceHash});
+    }
+    asset.lastUsed = new Date().toISOString().slice(0, 10);
+  }
+  writeFileSync(path, `${JSON.stringify(catalog, null, 2)}\n`);
+}
+
+if (!Array.isArray(items) || !items.length) throw new Error('Manifest must contain a nonempty items array');
+const packageData = new Map(items.map(item => [item.slug, validatePackage(item)]));
+if (packageData.size !== items.length) throw new Error('Manifest contains duplicate slugs');
+
 function json(path, value) { mkdirSync(dirname(path), {recursive:true}); writeFileSync(path, `${JSON.stringify(value,null,2)}\n`); }
 function text(path, value) { mkdirSync(dirname(path), {recursive:true}); writeFileSync(path, `${value.trim()}\n`); }
 function esc(value) { return String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;'); }
 
+if (usingManifest) {
+  for (const item of items) {
+    const work = join(root, 'content/coin-history', item.slug);
+    mkdirSync(work, {recursive:true});
+    const data = item.preparedWorkup;
+    data.research.topic = item.title;
+    const files = [
+      ['narration-v1-approved.txt', data.transcript],
+      ['script-approval.json', `${JSON.stringify(data.approval,null,2)}\n`],
+      ['research.json', `${JSON.stringify(data.research,null,2)}\n`],
+      ['claim-map.json', `${JSON.stringify(data.claimMap,null,2)}\n`],
+      ['reel-labels.json', `${JSON.stringify(item.reelLabels,null,2)}\n`],
+      ['overview.md', `# ${item.title}\n\nHook: ${item.hook}\n\n${item.sections.map(([heading,,purpose])=>`## ${heading}\n\n${Array.isArray(purpose)?purpose.join(' '):purpose}`).join('\n\n')}\n`],
+    ];
+    for (const [filename, content] of files) {
+      const path = join(work, filename);
+      if (existsSync(path) && readFileSync(path).compare(Buffer.from(content)) !== 0) throw new Error(`${item.slug}: refusing to overwrite changed workup file ${filename}`);
+      if (!existsSync(path)) writeFileSync(path, content);
+    }
+    const statusPath = join(work, 'production-status.json');
+    if (!existsSync(statusPath)) json(statusPath, {slug:item.slug,status:'package-prepared',topicApproved:true,transcriptApproved:true,
+      approvedTranscript:'narration-v1-approved.txt',approvedTranscriptSha256:data.approval.approvedTranscriptSha256,
+      transcriptWordCount:data.approval.wordCount,approvalEvidence:data.approval.approvalEvidence,generationStarted:false,
+      blogPublished:false,videoRendered:false,scheduled:false});
+  }
+}
+
 for (const item of items) {
   const work = join(root, 'content/coin-history', item.slug);
   const blog = join(root, 'public/blog', item.slug);
+  const operatingDate = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Los_Angeles'}).format(new Date());
   if (existsSync(blog) && !existsSync(join(blog,'pipeline-marker.json'))) throw new Error(`Refusing to overwrite unmarked existing blog work: ${item.slug}`);
   if (!existsSync(blog)) mkdirSync(blog,{recursive:true});
-  json(join(blog,'pipeline-marker.json'),{createdBy:'scripts/prepare-coin-history-batch.mjs',slug:item.slug,startedAt:'2026-10-20'});
+  json(join(blog,'pipeline-marker.json'),{createdBy:'scripts/prepare-coin-history-batch.mjs',slug:item.slug,startedAt:new Date().toISOString()});
   const approval = JSON.parse(readFileSync(join(work,'script-approval.json'),'utf8'));
   let transcriptBytes = readFileSync(join(work,'narration-v1-approved.txt'));
   let approvedTranscript = transcriptBytes.toString('utf8').trim();
@@ -137,7 +328,7 @@ for (const item of items) {
         evidenceClaims:assignedClaims,targetWords:assignedClaims.length >= 3 ? 170 : assignedClaims.length === 2 ? 145 : 120};
     }),
   });
-  json(join(blog,'meta.json'),{slug:item.slug,title:item.title,description:item.description,ogDescription:item.description.slice(0,155),alt:imageAlt(item.image.label),brand:'silver',date:'2026-10-20',modifiedDate:'2026-10-20',tags:['Coin history','American coins',item.slug.split('-').slice(0,3).join(' ')],ctaLine:'Explore more verified stories from American coin history.',status:'draft-automated-qa-pending',contentGraphic:{label:item.title,rows:item.graphicRows.map(([condition,action])=>({condition,action}))}});
+  json(join(blog,'meta.json'),{slug:item.slug,title:item.title,description:item.description,ogDescription:item.description.slice(0,155),alt:imageAlt(item.image.label),brand:'silver',date:operatingDate,modifiedDate:operatingDate,tags:['Coin history','American coins',item.slug.split('-').slice(0,3).join(' ')],ctaLine:'Explore more verified stories from American coin history.',status:'draft-automated-qa-pending',contentGraphic:{label:item.title,rows:item.graphicRows.map(([condition,action])=>({condition,action}))}});
   const social={slug:item.slug,blog_url:`https://fuseddistribution.com/blog/${item.slug}/`,reel:{x:`${item.hook}. ${item.description}`,facebook:`${item.hook}. ${item.description}`,instagram:`${item.hook}. ${item.description}`},discussion_question:'Which detail in this coin’s history surprised you most?',hashtags:['#CoinHistory','#AmericanCoins','#Numismatics']};
   json(join(blog,'social-copy.json'),social);
   const paragraphs=approvedTranscript.split(/\n\s*\n/).map((p)=>p.trim()).filter(Boolean);
@@ -156,35 +347,84 @@ for (const item of items) {
   text(join(blog,'reel-script-approved.md'),reel);
   text(join(blog,'reel-data.md'),`# ${item.title}\ntopic: silver\nhook: ${item.hook.toUpperCase()}\nformat: long-form\n\n## style\n- Lead with the exact coin image and the verified hook.\n- Use purposeful historical detail, source-backed timelines, split comparisons, and photo-led transitions.\n- Use Chatterbox Standard and Whisper word timing with the 720 x 1280 presentation profile.\n- Keep AI scenes labeled as illustrations; never use generated art as evidence for a coin, person, event, or exact historic site.\n- Do not use generic Pexels coin imagery as an exact issue or variety.\n\n## claims\n${claimMap.claims.map((c)=>`- ${c.id}: ${c.claim} Source: ${c.source}`).join('\n')}\n\n## media_queries\n${item.sections.map((s,i)=>`- segment: ${i}\n  query: "${s[0].replaceAll('"','')}"\n  prefer: photo`).join('\n')}`);
   json(join(work,'media-search.json'),{
-    checkedAt:'2026-10-20',provider:'Pexels API',queries:[item.title,item.hook],
-    outcome:'Search results were reviewed by title, alt text, creator and source URL. No result was selected as exact coin evidence; Pexels returned unrelated or generic coin imagery for the issue-specific queries.',
-    selection:{status:item.image.type==='owner'?'owner-photo-selected':'Wikimedia-Commons-image-selected',source:item.image.source,label:item.image.label},
+    checkedAt:operatingDate,provider:'coin-evidence-first',queries:[item.title,item.hook],
+    outcome:'No stock result is used as coin evidence. Every selected coin photo is source documented and must pass the exact coin image match twice.',
+    selection:item.images.map(image=>({status:image.type==='owner'?'owner-photo-selected':'Wikimedia-Commons-image-selected',source:image.source,label:image.label,coinIdentity:image.coinIdentity})),
     pexelsCandidates:[],fallbackPolicy:'Use owner coin media or exact, source-documented Commons/Mint media for coin identity. Use local AI backgrounds only for labeled contextual atmosphere.'
   });
-  const imagePath=item.image.type==='owner'?join(root,item.image.source):join(work,item.image.source);
-  if(!existsSync(imagePath)) throw new Error(`Missing image source ${imagePath}`);
-  const sourceHash=hash(imagePath);
-  const evidencePath=join(blog,'images','coin-evidence.jpg');
-  mkdirSync(dirname(evidencePath),{recursive:true});
-  const image=sharp(imagePath).rotate();
-  if(item.image.crop) await image.extract(item.image.crop).jpeg({quality:94,mozjpeg:true}).toFile(evidencePath);
-  else await image.resize({width:1800,height:1400,fit:'inside',withoutEnlargement:true}).jpeg({quality:94,mozjpeg:true}).toFile(evidencePath);
-  const evidenceHash=hash(evidencePath);
+  const preparedImages=[];
+  mkdirSync(join(blog,'images'),{recursive:true});
+  for (const [index, imageSpec] of item.images.entries()) {
+    const imagePath=imageSpec.type==='owner'?join(root,imageSpec.source):join(work,imageSpec.source);
+    if(!existsSync(imagePath)) throw new Error(`Missing image source ${imagePath}`);
+    if (usingManifest && imageSpec.crop) {
+      const metadata = await sharp(imagePath).metadata();
+      const rotated = [5, 6, 7, 8].includes(metadata.orientation);
+      const sourceWidth = rotated ? metadata.height : metadata.width;
+      const sourceHeight = rotated ? metadata.width : metadata.height;
+      const crop = imageSpec.crop;
+      if (![crop.left,crop.top,crop.width,crop.height].every(Number.isInteger) || crop.left < 0 || crop.top < 0 || crop.width < 1 || crop.height < 1 || crop.left + crop.width > sourceWidth || crop.top + crop.height > sourceHeight) {
+        throw new Error(`${item.slug}: crop is outside the rotated source image for ${imageSpec.assetId || imageSpec.source}`);
+      }
+    }
+    const filename=index===0?'coin-evidence.jpg':`coin-evidence-${String(index+1).padStart(2,'0')}.jpg`;
+    const evidencePath=join(blog,'images',filename);
+    const pipeline=sharp(imagePath).rotate();
+    if(imageSpec.crop) await pipeline.extract(imageSpec.crop).jpeg({quality:94,mozjpeg:true}).toFile(evidencePath);
+    else await pipeline.resize({width:1800,height:1400,fit:'inside',withoutEnlargement:true}).jpeg({quality:94,mozjpeg:true}).toFile(evidencePath);
+    preparedImages.push({spec:imageSpec,imagePath,evidencePath,sourceHash:hash(imagePath),evidenceHash:hash(evidencePath),evidenceRelativePath:`images/${filename}`,assetId:imageSpec.assetId||null});
+  }
+  const evidenceHash=preparedImages[0].evidenceHash;
   json(join(blog,'image-sources.json'),{
-    version:1,slug:item.slug,assets:[{
-      path:'images/coin-evidence.jpg',sha256:evidenceHash,source:item.image.source,sourceSha256:sourceHash,
-      sourceType:item.image.type==='owner'?'owner-supplied':'Wikimedia Commons',assetId:item.image.assetId||null,
-      label:item.image.label,role:'coin evidence',crop:item.image.crop||null,
-      page:item.image.type==='commons'?(item.slug.startsWith('columbian')?'https://commons.wikimedia.org/wiki/File:1892_Columbian_proof_half_dollar.jpg':'https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg'):null,
-      license:item.image.type==='commons'?'Public domain as listed on Wikimedia Commons; U.S. coin image': 'Owner-supplied; authorized for Fused blog and reel use',
-      attribution:item.image.type==='commons'?(item.slug.startsWith('columbian')?'Professional Coin Grading Service / Wikimedia Commons':'United States Mint / Wikimedia Commons'):'Nicholas / Fused Distribution',
-    }]
+    version:1,slug:item.slug,assets:preparedImages.map(({spec,evidenceHash,sourceHash,evidenceRelativePath})=>({
+      path:evidenceRelativePath,sha256:evidenceHash,source:spec.source,sourceSha256:sourceHash,
+      sourceType:spec.type==='owner'?'owner-supplied':'Wikimedia Commons',assetId:spec.assetId||null,
+      label:spec.label,role:'coin evidence',coinIdentity:item.coinIdentity,
+      reviewedReference:spec.reviewedReference || 'Previously released and source-hash verified coin evidence.', crop:spec.crop||null,
+      page:spec.type==='commons'?(spec.page || null):null,
+      license:spec.type==='commons'?(spec.license || ''): 'Owner-supplied; authorized for Fused blog and reel use',
+      attribution:spec.type==='commons'?(spec.attribution || ''):'Nicholas / Fused Distribution',
+    }))
   });
+  if (usingManifest) {
+    const segments = [];
+    for (const prepared of preparedImages) for (const index of prepared.spec.segmentIndexes) {
+      segments.push({index,type:'photo',reviewed:true,path:`public/blog/${item.slug}/${prepared.evidenceRelativePath}`,
+        sha256:prepared.evidenceHash,assetIds:prepared.assetId?[prepared.assetId]:[],
+        role:`Direct visual evidence of ${item.coinIdentity}; ${prepared.spec.label}`,
+        coinIdentity:item.coinIdentity,relatedClaimIds:item.sections[Math.max(0, index-1)]?.[3] || []});
+    }
+    segments.sort((a,b)=>a.index-b.index);
+    const byIndex=new Map();
+    for (const segment of segments) {
+      if (byIndex.has(segment.index)) throw new Error(`${item.slug}: assign only one primary coin image to each beat`);
+      byIndex.set(segment.index,segment);
+    }
+    const source=item.images.every(image=>image.type==='owner')?'fused-owned-coin-library':'fused-verified-coin-evidence';
+    json(join(blog,'preferred-media.json'),{version:1,source,mode:'mixed',segments:[...byIndex.values()]});
+  }
   const status=JSON.parse(readFileSync(join(work,'production-status.json'),'utf8'));
-  status.status='automated-production-started';status.generationStarted=true;status.generationStartedAt='2026-10-20';
+  status.status='automated-production-started';status.generationStarted=true;status.generationStartedAt=new Date().toISOString();
   status.mediaSearch='media-search.json';status.mediaEvidence='public/blog/'+item.slug+'/image-sources.json';
-  status.nextGate='Run local article generation and deterministic audit, synthesize the exact approved transcript with Chatterbox Standard, render the presentation reel, and complete hash-bound automated release QA. Do not publish or schedule until separately authorized.';
+  status.nextGate='Run local article generation and deterministic audit, publish only after blog QA passes, render with Chatterbox Standard, and complete hash-bound automated release QA before scheduling.';
   json(join(work,'production-status.json'),status);
   json(join(blog,'production-inputs.json'),{slug:item.slug,transcript:'content/coin-history/'+item.slug+'/narration-v1-approved.txt',transcriptSha256:digest,transcriptWords:approvedTranscript.split(/\s+/).length,approvalEvidence:approval.approvalEvidence,imageEvidence:'image-sources.json',claimMap:'content/coin-history/'+item.slug+'/claim-map.json',productionState:'draft-inputs-prepared'});
+  if (usingManifest) {
+    const reviews=[];
+    for (const prepared of preparedImages) {
+      const review = await reviewCoinImage({imagePath:prepared.evidencePath, slug:item.slug, topic:item.title, coinIdentity:item.coinIdentity});
+      review.checkpoint = 'package-intake';
+      review.source = prepared.evidenceRelativePath;
+      reviews.push(review);
+    }
+    json(join(work,'coin-image-relevance.json'),{version:1,slug:item.slug,topic:item.title,checkpoint:'package-intake',reviews});
+    const inputsPath = join(blog,'production-inputs.json');
+    const inputs = JSON.parse(readFileSync(inputsPath, 'utf8'));
+    inputs.coinMediaGateVersion = 1;
+    inputs.coinIdentity = item.coinIdentity;
+    writeFileSync(inputsPath, `${JSON.stringify(inputs, null, 2)}\n`);
+  }
+  recordCatalogUse(item, preparedImages);
+  appendToQueue(item);
   console.log(`prepared ${item.slug} words=${approvedTranscript.split(/\s+/).length} image=${evidenceHash.slice(0,12)}`);
 }

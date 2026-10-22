@@ -10,6 +10,7 @@ import subprocess
 import sys
 import time
 from zoneinfo import ZoneInfo
+from coin_history_ops import queue_health, throughput_report, write_report
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPE_PATH = ROOT / 'ops/content-scope.json'
@@ -191,6 +192,37 @@ def published_today(state):
     return count
 
 
+def refresh_operating_reports(queue, state):
+    health = queue_health(ROOT, queue.get('posts', []), state, DAILY_TARGET or 3, TIMEZONE.key)
+    reports = STATE.parent
+    write_report(reports / 'queue-health.json', health)
+    write_report(reports / 'throughput.json', throughput_report(state, DAILY_TARGET or 3, TIMEZONE.key))
+    if health['alert']:
+        marker = reports / 'queue-alert-date.txt'
+        alert_date = health['operatingDate']
+        if not marker.exists() or marker.read_text().strip() != alert_date:
+            log(f"ALERT: {health['message']} Invalid packages: {', '.join(health['invalidPackages']) or 'none'}")
+            marker.write_text(alert_date + '\n')
+
+
+def begin_stage(state, record, name):
+    record['currentStage'] = name
+    record['currentStageStartedAt'] = now().isoformat()
+    record.setdefault('stageMetrics', []).append({'stage': name, 'startedAt': record['currentStageStartedAt']})
+    save(state)
+    return time.monotonic()
+
+
+def finish_stage(state, record, started, outcome):
+    metrics = record.get('stageMetrics', [])
+    if metrics:
+        metrics[-1].update(finishedAt=now().isoformat(), elapsedSeconds=round(time.monotonic() - started, 2), outcome=outcome)
+    record.pop('currentStage', None)
+    record.pop('currentStageStartedAt', None)
+    save(state)
+    write_report(STATE.parent / 'throughput.json', throughput_report(state, DAILY_TARGET or 3, TIMEZONE.key))
+
+
 def choose(items, state):
     current = now()
     # The daily target caps new blog publishes only; a post already live
@@ -230,6 +262,7 @@ def main():
         queue = json.loads(QUEUE.read_text())
         state = load_state()
         state.setdefault('items', {})
+        refresh_operating_reports(queue, state)
         item, record = choose(queue['posts'], state)
         if not item:
             if DAILY_TARGET > 0 and published_today(state) >= DAILY_TARGET:
@@ -269,6 +302,7 @@ def main():
                 meta_path.write_text(json.dumps(meta, indent=2) + '\n')
             command = ['/bin/bash', 'public/blog/scripts/build-post.sh', slug,
                        '--brand=silver', f'--keyword={title}']
+            stage_started = begin_stage(state, record, 'blog_generation_and_qa')
             with LOG.open('a') as stream:
                 result = subprocess.run(command, cwd=ROOT, env=env, stdout=stream,
                                         stderr=subprocess.STDOUT, timeout=4 * 60 * 60, check=False)
@@ -279,6 +313,7 @@ def main():
             passed = result.returncode == 0 and qa.get('pass') is True and qa.get('score', 0) >= 85 \
                 and qa.get('mode') == 'coin-history-automated' \
                 and {'qa-local-pass', 'qa-brain-pass'}.issubset(set(stages))
+            finish_stage(state, record, stage_started, 'passed' if passed else 'failed')
             if not passed:
                 blockers = qa.get('blockers', [])
                 brain_deferred = 'qa-deferred' in stages
@@ -307,6 +342,7 @@ def main():
             log(f'PASS: {slug} automated blog QA score={qa.get("score")}')
 
         if not record.get('blogPublished'):
+            stage_started = begin_stage(state, record, 'blog_deploy_and_live_verification')
             deploy = subprocess.run(['node', 'scripts/deploy-approved-blog.mjs', f'--slug={slug}'],
                                     cwd=ROOT, env=env, timeout=1800, check=False)
             if deploy.returncode:
@@ -318,10 +354,20 @@ def main():
             if response.returncode or response.stdout.strip() != '200':
                 raise RuntimeError(f'live blog verification failed ({response.stdout.strip() or response.returncode})')
             record.update(blogPublished=True, blogPublishedAt=now().isoformat(), liveUrl=endpoint)
-            save(state)
+            finish_stage(state, record, stage_started, 'passed')
             log(f'PASS: {slug} blog live and verified')
 
         if not record.get('releaseReady'):
+            inputs_path = ROOT / 'public/blog' / slug / 'production-inputs.json'
+            inputs = json.loads(inputs_path.read_text()) if inputs_path.exists() else {}
+            if inputs.get('coinMediaGateVersion') == 1:
+                stage_started = begin_stage(state, record, 'coin_image_relevance_double_check')
+                check = subprocess.run(['node', 'video/scripts/coin-image-relevance.mjs', f'--slug={slug}'],
+                                       cwd=ROOT, env=env, timeout=300, check=False)
+                finish_stage(state, record, stage_started, 'passed' if check.returncode == 0 else 'failed')
+                if check.returncode:
+                    raise RuntimeError('coin image relevance double check did not pass')
+            stage_started = begin_stage(state, record, 'reel_render_and_release_qa')
             render_env = dict(env, REEL_SLUG=slug, MAX_RENDERS_PER_RUN='1', REEL_GIT_COMMIT='0', TTS_AUTO_RECOVERY='1')
             with LOG.open('a') as stream:
                 result = subprocess.run(['/bin/zsh', 'scripts/render-missing-reels.sh'], cwd=ROOT,
@@ -329,6 +375,7 @@ def main():
                                         timeout=5 * 60 * 60, check=False)
             qa_path = ROOT / 'video/out' / slug / 'release-qa.json'
             release = json.loads(qa_path.read_text()) if qa_path.exists() else {}
+            finish_stage(state, record, stage_started, 'passed' if result.returncode == 0 and release.get('readyForPosting') is True else 'failed')
             if result.returncode or release.get('readyForPosting') is not True:
                 raise RuntimeError(f'reel render or release QA failed: {release.get("blockers", "no passing release-qa.json")}')
             record.update(releaseReady=True, releaseReadyAt=now().isoformat(), releaseQa=release)
@@ -336,12 +383,22 @@ def main():
             log(f'PASS: {slug} rendered and release QA passed; existing Buffer refill can pick it up')
         record.update(status='release_ready', completedAt=now().isoformat())
         save(state)
+        refresh_operating_reports(queue, state)
         return 0
     except Exception as error:
         state = load_state()
         slug = locals().get('slug')
         if slug:
             record = state.setdefault('items', {}).setdefault(slug, {})
+            if record.get('currentStageStartedAt'):
+                try:
+                    started_at = dt.datetime.fromisoformat(record['currentStageStartedAt'])
+                    elapsed = max(0, (now() - started_at).total_seconds())
+                    record.setdefault('stageMetrics', [])[-1].update(finishedAt=now().isoformat(), elapsedSeconds=round(elapsed, 2), outcome='failed')
+                except (ValueError, IndexError, KeyError):
+                    pass
+                record.pop('currentStage', None)
+                record.pop('currentStageStartedAt', None)
             record.update(status='retry_wait', failure=str(error), lastFailureAt=now().isoformat())
             if 'reel render or release QA failed' in str(error):
                 # Retry a blocked local voice or release gate with bounded
@@ -351,6 +408,11 @@ def main():
                 delay = min(60, 10 * (2 ** max(0, record.get('attempts', 1) - 1)))
             record['retryAfter'] = (now() + dt.timedelta(minutes=delay)).isoformat()
             save(state)
+            try:
+                queue = json.loads(QUEUE.read_text())
+                refresh_operating_reports(queue, state)
+            except (OSError, json.JSONDecodeError):
+                pass
         log(f'ERROR: {error}')
         print(error, file=sys.stderr)
         return 1

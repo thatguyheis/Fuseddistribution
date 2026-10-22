@@ -60,11 +60,20 @@
       "width": 4284,
       "height": 5712,
       "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
-      "status": "cataloged_requires_crop_review",
+      "status": "used_verified_coin_evidence",
       "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
       "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
-      "lastUsed": null,
-      "uses": []
+      "lastUsed": "2026-10-20",
+      "uses": [
+        {
+          "slug": "2021-american-eagle-silver-redesign",
+          "date": "2026-10-20",
+          "status": "published-coin-evidence",
+          "role": "coin evidence",
+          "imageSha256": "a20f22bf02222f81c24915d90addcbd27fead51bff3b1d7ab510f1acbbd39653",
+          "articleUrl": "https://fuseddistribution.com/blog/2021-american-eagle-silver-redesign/"
+        }
+      ]
     },
     {
       "id": "coin-0004",
@@ -495,11 +504,20 @@
       "width": 3024,
       "height": 4032,
       "identityBasis": "Full original inspected October 14, 2026: two overlapping portraits and both GEORGE WASHINGTON CARVER and BOOKER T. WASHINGTON inscriptions match the U.S. Mint Carver-Washington design. Prior single-person Booker T. Washington Memorial identification withdrawn. No mint, grade or authentication claim.",
-      "status": "cataloged_requires_crop_review",
+      "status": "used_verified_coin_evidence",
       "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
       "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
-      "lastUsed": null,
-      "uses": [],
+      "lastUsed": "2026-10-20",
+      "uses": [
+        {
+          "slug": "carver-washington-half-dollar-two-educators",
+          "date": "2026-10-20",
+          "status": "published-coin-evidence",
+          "role": "coin evidence",
+          "imageSha256": "69ee8f5b22e76587e862789cd9dbc3987443b613860936d8a376b59461d07ecf",
+          "articleUrl": "https://fuseddistribution.com/blog/carver-washington-half-dollar-two-educators/"
+        }
+      ],
       "catalogCorrection": "2026-10-13: corrected Franklin label after inspecting original photograph.",
       "identitySource": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half",
       "corrections": [
@@ -858,11 +876,20 @@
       "width": 4284,
       "height": 5712,
       "identityBasis": "Full original inspected October 14: Kennedy profiles and HALF DOLLAR type, not Morgan or Peace dollars.",
-      "status": "cataloged_requires_crop_review",
+      "status": "used_verified_coin_evidence",
       "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
       "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
-      "lastUsed": null,
-      "uses": [],
+      "lastUsed": "2026-10-20",
+      "uses": [
+        {
+          "slug": "kennedy-half-dollar-memorial-and-metal",
+          "date": "2026-10-20",
+          "status": "published-coin-evidence",
+          "role": "coin evidence",
+          "imageSha256": "3c08eed270607c406cac59be882e5682af7a5377255bf6b6258f32a9cd1e488e",
+          "articleUrl": "https://fuseddistribution.com/blog/kennedy-half-dollar-memorial-and-metal/"
+        }
+      ],
       "corrections": [
         {
           "date": "2026-10-14",
