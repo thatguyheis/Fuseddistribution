@@ -21,5 +21,5 @@ test('build-post runs deterministic preflight before rendering JPG assets', () =
 
 test('QA year validation ignores opaque HTML identifiers', () => {
   const qaLocal = readFileSync(resolve('public/blog/scripts/qa-local.mjs'), 'utf8');
-  assert.match(qaLocal, /yearSurface = label === 'index\.html' \? textFromHtml\(text\)/);
+  assert.match(qaLocal, /yearSurface\s*=\s*label\s*===\s*'index\.html'\s*\?\s*textFromHtml\(text\)/);
 });
