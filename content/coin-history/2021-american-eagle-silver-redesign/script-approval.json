@@ -1,0 +1,23 @@
+{
+  "slug": "2021-american-eagle-silver-redesign",
+  "version": 1,
+  "topicApproved": true,
+  "transcriptApproved": true,
+  "approvalType": "explicit-user-authorization-after-factual-and-hook-audit",
+  "approvalEvidence": "Nick, 2026-10-20: \u201cYou are approved to produce and auto approve topics and transcripts, just do a double check and audit to make sure they have hook and aspects of video types SOP\u201d.",
+  "approvedOn": "2026-10-20",
+  "approvedTranscriptSha256": "8ef31357e9fec60796168b095b789df3322893c8ba10321dfa05d690b491bde3",
+  "wordCount": 259,
+  "audit": {
+    "hookPromisePayoff": "pass",
+    "sourcedClaimsMapped": "pass",
+    "substantiveHistoricalDetails": "pass",
+    "sevenFieldStrategyAndDistinctVideoType": "pass",
+    "coinIdentityAndMediaLimitsRecorded": "pass",
+    "transcriptLengthTarget": "pass",
+    "finalQuestionCard": "pass"
+  },
+  "productionScope": "Transcript and topic approval only. Does not approve publication, scheduling, generated media, audio quality or final encoded video review.",
+  "automaticRevision": true,
+  "revisionReason": "Trimmed redundant phrasing to pass the established 95-135 second pre-render duration gate; preserved the approved hook, primary-source facts, history, and closing question."
+}

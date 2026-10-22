@@ -1,0 +1,15 @@
+{
+  "name": "treasury-vault-illustration",
+  "prompt": "Museum-quality documentary concept art of a generic historic government coin storage vault, imposing circular steel vault door open to a quiet stone and steel archive room, carefully arranged metal storage shelves and shallow coin trays, soft amber practical lamps, restrained archival color with cool shadows, vertical composition, highly detailed realistic materials, no people, no cloth sacks or bags, no readable text, no labels, no logos, no identifiable real vault, no claim this depicts a documented discovery",
+  "negativePrompt": "cloth bag, burlap sack, text, letters, numbers, watermark, logo, modern electronics, modern clothing, fantasy, deformed hands, malformed architecture, blurry, sharp coin date, invented mint mark",
+  "seed": 391204,
+  "model": "DreamShaper_8_pruned.safetensors",
+  "modelLicense": "creativeml-openrail-m",
+  "generator": "open-generative-ai local sd-cli",
+  "width": 384,
+  "height": 640,
+  "steps": 20,
+  "timeoutSeconds": 14400,
+  "role": "Illustrative atmosphere only; not archival evidence or a depiction of an identified historical event.",
+  "sha256": "e0ff1c148538b2fcab15eed918e45b17be308957ba73b24056e1fef74d305f7c"
+}

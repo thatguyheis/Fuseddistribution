@@ -1,0 +1,25 @@
+{
+  "id": "fused-bg-9b703f91d9e2b878",
+  "filename": "fused-bg-9b703f91d9e2b878.jpg",
+  "sha256": "9b703f91d9e2b878b807d86446561571e3619bae242764f289f85dbfc61f4c12",
+  "topic": "silver",
+  "sceneId": "fort-palisade-exterior",
+  "tags": [
+    "silver",
+    "fort-vancouver",
+    "palisade",
+    "history-illustration"
+  ],
+  "sourceSlug": "fort-vancouver-centennial-half-dollar",
+  "sourceSegment": 1,
+  "prompt": "Premium cinematic portrait historical illustration. Generic early nineteenth century Pacific Northwest fur trading post exterior: weathered upright timber palisade, modest open gate, low timber buildings, conifers, morning mist, realistic carpentry, muted cedar and blue green shadows. No people, flags, text, coins or modern objects. Illustrative concept, not an exact reconstruction of Fort Vancouver. Built-in image generation tool, 2026-10-13.\n",
+  "sourceImage": "fused-bg-9b703f91d9e2b878.source.png",
+  "model": "built-in-imagegen",
+  "modelLicense": "Generated output; retain service provenance; no third-party photograph",
+  "backgroundTreatment": "No geometry or invented historical labels added. Generic illustrative trading post, not exact reconstruction.",
+  "status": "pending-visual-review",
+  "createdAt": "2026-10-13T20:02:34.426Z",
+  "lastUsedAt": null,
+  "useCount": 0,
+  "duplicate": true
+}

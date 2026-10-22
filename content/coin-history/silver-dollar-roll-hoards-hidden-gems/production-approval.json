@@ -1,0 +1,21 @@
+{
+  "slug": "silver-dollar-roll-hoards-hidden-gems",
+  "revision": 1,
+  "status": "transcript-approved-in-production",
+  "approvedTranscript": "narration-v1-approved.txt",
+  "approvedTranscriptSha256": "afcb3156434375d76ff247a474f1fce59252023bad2c2e46bc0c3f452e35bc91",
+  "approvalEvidence": "Nick: Yes, and on the last page of the generation add a storyboard graphic that shows the label and image of coin horde, and say available at auction at coinsandauctionsince1994 find link in comments",
+  "approvedOn": "2026-10-15",
+  "closingCard": {
+    "label": "SILVER DOLLAR ROLL HOARD",
+    "text": [
+      "AVAILABLE AT AUCTION",
+      "COINS & AUCTIONS SINCE 1994",
+      "FIND THE LINK IN COMMENTS"
+    ],
+    "imageId": "coin-0043",
+    "disclosure": "Sample photo from an unarrived hoard; image watermark preserved."
+  },
+  "publishingAuthorized": false,
+  "notes": "Transcript approval authorizes local narration and rendering; public publication, hosting and scheduling remain separate release steps."
+}

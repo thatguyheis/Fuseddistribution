@@ -1,0 +1,423 @@
+[
+  {
+    "segment": 0,
+    "point": 3.27,
+    "insideDetectedSilence": true,
+    "silenceRanges": [
+      [
+        0.0,
+        0.095125
+      ],
+      [
+        0.905833,
+        0.988208
+      ],
+      [
+        1.065208,
+        1.168208
+      ],
+      [
+        1.466375,
+        1.617042
+      ],
+      [
+        2.895208,
+        3.5145
+      ],
+      [
+        5.217375,
+        5.323458
+      ],
+      [
+        6.684458,
+        6.954667
+      ]
+    ],
+    "captionChunks": [
+      {
+        "text": "Why did America put the word",
+        "startSec": 0,
+        "endSec": 1.44
+      },
+      {
+        "text": "PEACE on a silver dollar?",
+        "startSec": 1.44,
+        "endSec": 2.88
+      },
+      {
+        "text": "And why did one proposed detail",
+        "startSec": 3.54,
+        "endSec": 5.02
+      },
+      {
+        "text": "make people see defeat instead?",
+        "startSec": 5.02,
+        "endSec": 6.54
+      }
+    ]
+  },
+  {
+    "segment": 3,
+    "point": 9.962,
+    "insideDetectedSilence": true,
+    "silenceRanges": [
+      [
+        0.0,
+        0.10725
+      ],
+      [
+        0.84675,
+        1.238167
+      ],
+      [
+        2.687708,
+        2.795333
+      ],
+      [
+        2.901792,
+        3.452208
+      ],
+      [
+        3.963792,
+        4.051
+      ],
+      [
+        4.063292,
+        4.407583
+      ],
+      [
+        4.50625,
+        4.608583
+      ],
+      [
+        6.352875,
+        6.772667
+      ],
+      [
+        7.413042,
+        7.512875
+      ],
+      [
+        8.108125,
+        8.197292
+      ],
+      [
+        9.59425,
+        10.188208
+      ],
+      [
+        10.4935,
+        10.580083
+      ],
+      [
+        10.681625,
+        10.835875
+      ],
+      [
+        11.365833,
+        11.471
+      ],
+      [
+        11.889708,
+        12.117333
+      ]
+    ],
+    "captionChunks": [
+      {
+        "text": "On the front, Liberty wears a",
+        "startSec": 0,
+        "endSec": 2.2
+      },
+      {
+        "text": "crown of rays.",
+        "startSec": 2.2,
+        "endSec": 2.68
+      },
+      {
+        "text": "On the back, an eagle rests",
+        "startSec": 3.4,
+        "endSec": 5.22
+      },
+      {
+        "text": "on a rocky summit, holding an",
+        "startSec": 5.22,
+        "endSec": 7.16
+      },
+      {
+        "text": "olive branch and facing the light",
+        "startSec": 7.16,
+        "endSec": 8.86
+      },
+      {
+        "text": "of a new day.",
+        "startSec": 8.86,
+        "endSec": 9.64
+      },
+      {
+        "text": "Beneath it is the word PEACE.",
+        "startSec": 10.22,
+        "endSec": 11.72
+      }
+    ]
+  },
+  {
+    "segment": 4,
+    "point": 4.37,
+    "insideDetectedSilence": true,
+    "silenceRanges": [
+      [
+        0.0,
+        0.152792
+      ],
+      [
+        1.147042,
+        1.244583
+      ],
+      [
+        2.219167,
+        2.308208
+      ],
+      [
+        3.716333,
+        3.811042
+      ],
+      [
+        4.139,
+        4.617208
+      ],
+      [
+        5.842542,
+        6.106875
+      ],
+      [
+        8.81075,
+        9.173333
+      ]
+    ],
+    "captionChunks": [
+      {
+        "text": "Those details make the reverse more",
+        "startSec": 0,
+        "endSec": 2
+      },
+      {
+        "text": "than a picture of America's national",
+        "startSec": 2,
+        "endSec": 3.68
+      },
+      {
+        "text": "bird.",
+        "startSec": 3.68,
+        "endSec": 4
+      },
+      {
+        "text": "The eagle is at rest, and",
+        "startSec": 4.6,
+        "endSec": 6.22
+      },
+      {
+        "text": "the branch gives the coin's message",
+        "startSec": 6.22,
+        "endSec": 7.88
+      },
+      {
+        "text": "a visible symbol.",
+        "startSec": 7.88,
+        "endSec": 8.74
+      }
+    ]
+  },
+  {
+    "segment": 6,
+    "point": 1.764,
+    "insideDetectedSilence": true,
+    "silenceRanges": [
+      [
+        0.0,
+        0.0949167
+      ],
+      [
+        1.584417,
+        1.938875
+      ],
+      [
+        3.263792,
+        3.348083
+      ],
+      [
+        3.430708,
+        3.540625
+      ],
+      [
+        4.020875,
+        4.1035
+      ],
+      [
+        4.902958,
+        4.98475
+      ],
+      [
+        5.05875,
+        5.188708
+      ],
+      [
+        5.349208,
+        5.52875
+      ],
+      [
+        6.4275,
+        6.894625
+      ],
+      [
+        8.824,
+        8.923458
+      ],
+      [
+        9.453375,
+        9.541833
+      ],
+      [
+        11.706833,
+        11.989333
+      ]
+    ],
+    "captionChunks": [
+      {
+        "text": "According to the Smithsonian,",
+        "startSec": 0,
+        "endSec": 1.28
+      },
+      {
+        "text": "many Americans interpreted that broken weapon",
+        "startSec": 2.02,
+        "endSec": 4.1
+      },
+      {
+        "text": "as a sign of defeat and",
+        "startSec": 4.1,
+        "endSec": 5.64
+      },
+      {
+        "text": "protested.",
+        "startSec": 5.64,
+        "endSec": 6.3
+      },
+      {
+        "text": "A design celebrating peace risked telling",
+        "startSec": 6.94,
+        "endSec": 9.32
+      },
+      {
+        "text": "a very different story to the",
+        "startSec": 9.32,
+        "endSec": 10.84
+      },
+      {
+        "text": "people looking at it.",
+        "startSec": 10.84,
+        "endSec": 11.76
+      }
+    ]
+  },
+  {
+    "segment": 7,
+    "point": 2.07,
+    "insideDetectedSilence": true,
+    "silenceRanges": [
+      [
+        0.0,
+        0.11725
+      ],
+      [
+        1.082375,
+        1.192
+      ],
+      [
+        1.828167,
+        2.306292
+      ],
+      [
+        3.743583,
+        3.948625
+      ],
+      [
+        6.013542,
+        6.385125
+      ],
+      [
+        6.541667,
+        6.628208
+      ],
+      [
+        7.288917,
+        7.404083
+      ],
+      [
+        9.527167,
+        10.026
+      ],
+      [
+        10.491625,
+        10.633333
+      ],
+      [
+        10.637292,
+        11.083375
+      ],
+      [
+        12.23975,
+        12.320625
+      ],
+      [
+        13.298625,
+        13.397208
+      ],
+      [
+        13.831375,
+        14.208
+      ]
+    ],
+    "captionChunks": [
+      {
+        "text": "There was no time to make",
+        "startSec": 0,
+        "endSec": 1.12
+      },
+      {
+        "text": "new models.",
+        "startSec": 1.12,
+        "endSec": 1.72
+      },
+      {
+        "text": "Mint engraver George Morgan, working under",
+        "startSec": 2.4,
+        "endSec": 4.48
+      },
+      {
+        "text": "de Francisci's supervision, cut the sword",
+        "startSec": 4.48,
+        "endSec": 6.96
+      },
+      {
+        "text": "away from the steel hub and",
+        "startSec": 6.96,
+        "endSec": 8.32
+      },
+      {
+        "text": "shaped olive leaves from what remained.",
+        "startSec": 8.32,
+        "endSec": 10.5
+      },
+      {
+        "text": "The Smithsonian records that the alteration",
+        "startSec": 11.02,
+        "endSec": 12.84
+      },
+      {
+        "text": "took a full day.",
+        "startSec": 12.84,
+        "endSec": 13.8
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "status": "transcript-approved-source-map-automated-qa-pending",
+  "segments": [
+    {
+      "index": 0,
+      "claims": [
+        "Visible figure, fort and company lettering; centennial issue identity"
+      ],
+      "evidence": [
+        "coin-0031",
+        "U.S. Mint"
+      ]
+    },
+    {
+      "index": 1,
+      "claims": [
+        "1825 founding, London company, trading headquarters, north bank of Columbia"
+      ],
+      "evidence": [
+        "NPS hbcfort1.htm",
+        "NPS places/fortvancouver.htm"
+      ],
+      "illustrationRole": "Generic palisade concept, explicitly not exact reconstruction"
+    },
+    {
+      "index": 2,
+      "claims": [
+        "Trading network, occupations and village population"
+      ],
+      "evidence": [
+        "NPS places/fortvancouver.htm"
+      ],
+      "stockRole": "Modern woodworking and forest stream; no claimed historic or geographic identity"
+    },
+    {
+      "index": 3,
+      "claims": [
+        "McLoughlin name and dates; chief factor 1825-1845; visible PCGS MS63 label"
+      ],
+      "evidence": [
+        "coin-0032",
+        "NPS McLoughlin House"
+      ],
+      "gradeScope": "Visible label only; no certification lookup or independent authentication"
+    },
+    {
+      "index": 4,
+      "claims": [
+        "Laura Gardin Fraser designs; San Francisco production without mint mark"
+      ],
+      "evidence": [
+        "U.S. Mint fort-vancouver-centennial-half"
+      ],
+      "mintScope": "Issue history from source, never a claimed visible mark"
+    },
+    {
+      "index": 5,
+      "claims": [
+        "Centennial payoff"
+      ],
+      "evidence": [
+        "U.S. Mint",
+        "NPS"
+      ]
+    }
+  ],
+  "visualLimits": [
+    "The narration is transcript-approved by hash; verify every factual sentence against the linked primary source map. Media identity and usage remain limited to the recorded evidence and rights basis."
+  ]
+}

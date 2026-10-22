@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-20",
+  "provider": "Pexels API",
+  "queries": [
+    "Why the Carver-Washington Half Dollar Honors Two Educators",
+    "Two educators, one institution, one coin"
+  ],
+  "outcome": "Search results were reviewed by title, alt text, creator and source URL. No result was selected as exact coin evidence; Pexels returned unrelated or generic coin imagery for the issue-specific queries.",
+  "selection": {
+    "status": "owner-photo-selected",
+    "source": "Coin Raw/IMG_3733.jpeg",
+    "label": "Carver-Washington half dollar obverse; owner photograph, one side only"
+  },
+  "pexelsCandidates": [],
+  "fallbackPolicy": "Use owner coin media or exact, source-documented Commons/Mint media for coin identity. Use local AI backgrounds only for labeled contextual atmosphere."
+}

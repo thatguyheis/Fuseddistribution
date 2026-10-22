@@ -1,0 +1,50 @@
+{
+  "coordinateSpace": "EXIF-oriented 3024 by 4032 pixels",
+  "method": "Deterministic source crops, no generated or repaired coin detail",
+  "sources": [
+    {
+      "file": "IMG_5735.jpeg",
+      "box": [
+        510,
+        1450,
+        1750,
+        950
+      ],
+      "name": "inscription",
+      "sha256": "99253d19d3f44ca8595f0fd8f95954c595118eee0136627d06c2b24ee88cfcc7"
+    },
+    {
+      "file": "IMG_5735.jpeg",
+      "box": [
+        510,
+        690,
+        1750,
+        1720
+      ],
+      "name": "reverse",
+      "sha256": "99253d19d3f44ca8595f0fd8f95954c595118eee0136627d06c2b24ee88cfcc7"
+    },
+    {
+      "file": "IMG_5736.jpeg",
+      "box": [
+        550,
+        1470,
+        1690,
+        1580
+      ],
+      "name": "obverse",
+      "sha256": "927ad1d38d202ee3430f44079406a46d05227a8a1d9ccc5fae5b87f1844630c3"
+    },
+    {
+      "file": "IMG_5736.jpeg",
+      "box": [
+        350,
+        100,
+        2200,
+        480
+      ],
+      "name": "label",
+      "sha256": "927ad1d38d202ee3430f44079406a46d05227a8a1d9ccc5fae5b87f1844630c3"
+    }
+  ]
+}

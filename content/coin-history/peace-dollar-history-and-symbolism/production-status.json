@@ -1,0 +1,30 @@
+{
+  "conceptNumberInUserFacingList": 4,
+  "title": "Why a dollar was named Peace",
+  "status": "released-hosted-embedded",
+  "transcript": "narration-v1-approved.txt",
+  "wordCount": 305,
+  "draftSha256": "e3421aa4566488fed14ce97782fcd14c47f6ead6bc1fde70a511f96c0943d7fa",
+  "transcriptApproved": true,
+  "generationStarted": true,
+  "publishingAuthorized": true,
+  "approvalEvidence": "Nick: make the blogs and reels for these two. After this go back to the standard SOP and posting schedule.",
+  "approvedOn": "2026-10-14",
+  "approvedTranscriptSha256": "e3421aa4566488fed14ce97782fcd14c47f6ead6bc1fde70a511f96c0943d7fa",
+  "visualPlanShots": 19,
+  "delivery": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "targetMaxBytes": 45000000,
+    "hardMaxBytesExclusive": 50000000
+  },
+  "sourceImages": "Reviewed owner coin photos and public domain Library of Congress context",
+  "generatedImages": "Built-in fallback, not locally generated; provenance saved",
+  "blogLocalQa": "pass",
+  "blogStatus": "published",
+  "blogUrl": "https://fuseddistribution.com/blog/peace-dollar-history-and-symbolism/",
+  "reelStatus": "released-hosted-awaiting-buffer-refill",
+  "videoPath": "video/out/peace-dollar-history-and-symbolism/peace-dollar-history-and-symbolism.mp4",
+  "liveVerification": "content/coin-history/production-2026-10-14/peace-live-verification.json"
+}

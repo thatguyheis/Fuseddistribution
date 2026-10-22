@@ -1,0 +1,9 @@
+{
+  "provider": "OpenAI built-in image generation",
+  "local": false,
+  "fallbackReason": "Local DreamShaper attempt timed out at 240 seconds; preserve bounded local compute policy",
+  "role": "Generic illustrative atmosphere, not historical evidence",
+  "sha256": "3442df3a00fe6b1f949e919096da61cf4aa4bf40012bfd1782d7be49e161a42f",
+  "review": "Visually reviewed; suitable generic foundry or engraver workshop context; no generated coin identity",
+  "approved": true
+}

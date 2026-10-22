@@ -1,0 +1,18 @@
+{
+  "coordinateSpace": "EXIF-oriented source pixels",
+  "sources": [
+    {
+      "file": "IMG_6643.jpeg",
+      "box": [
+        710,
+        1740,
+        1870,
+        1830
+      ],
+      "angle": 0,
+      "source": "Coin Raw/IMG_6643.jpeg",
+      "sha256": "ca561ee98598e70589787ada5942bd0c0379ff938c20de0eef48cfd228756a25"
+    }
+  ],
+  "note": "Separate specimens; no mint, grade or paired-side claims. Deterministic crops only."
+}

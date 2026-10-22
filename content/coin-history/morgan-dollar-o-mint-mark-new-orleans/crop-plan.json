@@ -1,0 +1,26 @@
+{
+  "coordinateSpace": "EXIF oriented 3024x4032 source pixels",
+  "method": "SVG viewport; no generative edits",
+  "crops": [
+    {
+      "assetId": "coin-0006",
+      "box": [
+        585,
+        706,
+        1923,
+        2033
+      ],
+      "purpose": "Whole reverse, O and denomination preserved"
+    },
+    {
+      "assetId": "coin-0007",
+      "box": [
+        735,
+        1390,
+        1700,
+        1780
+      ],
+      "purpose": "Obverse and date, exclude holder serial"
+    }
+  ]
+}

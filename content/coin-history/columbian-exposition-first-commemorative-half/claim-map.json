@@ -1,0 +1,60 @@
+{
+  "slug": "columbian-exposition-first-commemorative-half",
+  "status": "transcript-approved-source-map-automated-qa-pending",
+  "claims": [
+    {
+      "id": "CE1",
+      "claim": "First U.S. Mint commemorative coin, authorized in 1892 for the Chicago exposition.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/columbian-exposition-half",
+      "media": "Use only source-matched, rights-cleared coin images; no local owner asset matches."
+    },
+    {
+      "id": "CE2",
+      "claim": "The act authorized no more than five million coins and connected payment to specified exposition preparation costs and conditions.",
+      "source": "https://www.usmint.gov/learn/history/historical-documents/columbian-exposition-commemorative-coin-legislation",
+      "media": "Simplified diagram of the law\u2019s flow, labeled as an explanatory graphic, not an archival document."
+    },
+    {
+      "id": "CE3",
+      "claim": "Columbus profile on obverse, Santa Maria and two globes on reverse; Barber and Morgan design credits.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/columbian-exposition-half",
+      "media": "Rights-cleared official image or accurately labeled diagram; do not generate coin details."
+    },
+    {
+      "id": "CE4",
+      "claim": "The World's Columbian Exposition was planned to open in 1893, after Congress authorized the half dollar in 1892.",
+      "source": "https://www.loc.gov/resource/gdcmassbookdig.guidetocolumbian00knig/",
+      "media": "Rights-reviewed period fair guide cover or sourced timeline."
+    },
+    {
+      "id": "CE5",
+      "claim": "The 1892 act authorized up to five million coins using uncurrent subsidiary silver, with proceeds tied to exposition labor and material costs and financial conditions set by Congress.",
+      "source": "https://www.usmint.gov/learn/history/historical-documents/columbian-exposition-commemorative-coin-legislation",
+      "media": "Use a law-to-fair flow graphic; do not describe the coin as an admission ticket."
+    },
+    {
+      "id": "CE6",
+      "claim": "The Mint calls the Columbian half dollar its first commemorative coin and identifies the 1893 Queen Isabella quarter as the next commemorative issue.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/columbian-exposition-half",
+      "media": "Timeline both issues and dates; do not imply proceeds or profits were guaranteed."
+    },
+    {
+      "id": "CE7",
+      "claim": "Charles Barber designed the Columbus obverse and George Morgan the reverse showing the Santa Maria between two globes.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/columbian-exposition-half",
+      "media": "Use the verified two-sided Commons coin image and label both sides accurately."
+    },
+    {
+      "id": "CE8",
+      "claim": "The act supported exposition preparation expenses before opening, with payment conditioned on documented fair funding and eligible costs.",
+      "source": "https://www.usmint.gov/learn/history/historical-documents/columbian-exposition-commemorative-coin-legislation",
+      "media": "Use a sourced preparation timeline; do not present the coin as an unconditional grant."
+    }
+  ],
+  "visualLimits": [
+    "No matching catalog ID.",
+    "Do not treat AI art as archival evidence or as an accurate Columbian half-dollar rendering.",
+    "Rights review required for all coin and fair images.",
+    "The narration is transcript-approved by hash; verify every factual sentence against the linked primary source map. Media identity and usage remain limited to the recorded evidence and rights basis."
+  ]
+}

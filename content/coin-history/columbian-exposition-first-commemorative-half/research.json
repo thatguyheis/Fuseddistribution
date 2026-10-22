@@ -1,0 +1,19 @@
+{
+  "slug": "columbian-exposition-first-commemorative-half",
+  "transcriptStatus": "awaiting-owner-approval",
+  "catalogAssetIds": [],
+  "sources": [
+    {"title": "Columbian Exposition Half Dollar", "url": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/columbian-exposition-half", "publisher": "United States Mint", "type": "official coin history"},
+    {"title": "Columbian Exposition Commemorative Coin Legislation, Public Law 203, August 5, 1892", "url": "https://www.usmint.gov/learn/history/historical-documents/columbian-exposition-commemorative-coin-legislation", "publisher": "United States Mint", "type": "primary legal text"},
+    {"title": "Commemoratives 1892-1954", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/commemorative-coins/commemorative-coins-1892-1954.html", "publisher": "United States Mint", "type": "official program history"},
+    {"title": "A guide to the Columbian World's Fair, Chicago, Illinois", "url": "https://www.loc.gov/resource/gdcmassbookdig.guidetocolumbian00knig/", "publisher": "Library of Congress", "type": "1892 period publication"}
+  ],
+  "verifiedClaims": [
+    {"claim": "The 1892 Columbian half dollar was the first commemorative coin produced by the U.S. Mint and marked the exposition’s planned four-hundredth anniversary celebration.", "sources": [0, 2]},
+    {"claim": "Public Law 203 authorized up to five million silver half dollars and connected payment to documented exposition preparation expenses and financial conditions.", "sources": [1]},
+    {"claim": "The obverse depicts Columbus in profile; the reverse shows the Santa Maria and two globes; Charles Barber and George Morgan are credited for the respective designs.", "sources": [0]},
+    {"claim": "The fair opened in 1893 while the commemorative coin law was enacted in 1892; the Mint later issued a Queen Isabella quarter in 1893.", "sources": [0, 1, 3]}
+  ],
+  "openQuestions": ["Confirm the exact striking and distribution dates before adding a more specific timeline; the draft intentionally states only the law year and planned fair opening."],
+  "missingEvidence": ["No matching owner coin photo exists in the current catalog. Verify source image reuse rights for Mint or archival coin images before production; generated coin-like art must not be presented as evidence."]
+}

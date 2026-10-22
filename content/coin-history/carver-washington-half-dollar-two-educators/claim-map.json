@@ -1,0 +1,54 @@
+{
+  "slug": "carver-washington-half-dollar-two-educators",
+  "status": "transcript-approved-source-map-automated-qa-pending",
+  "claims": [
+    {
+      "id": "CW1",
+      "claim": "Washington\u2019s biography and the 1881 Tuskegee school opening with 30 students.",
+      "source": "https://www.nps.gov/tuin/learn/historyculture/booker-t-washington.htm",
+      "media": "Sourced timeline and separately rights-reviewed NPS/Library of Congress context images."
+    },
+    {
+      "id": "CW2",
+      "claim": "Carver\u2019s 1896 arrival at Tuskegee, 47-year tenure, agricultural teaching, and crop rotation work.",
+      "source": "https://home.nps.gov/articles/george-washington-carver-500391.htm",
+      "media": "Sourced timeline; Carver portrait or Tuskegee scenes only after rights review, labeled by source and date."
+    },
+    {
+      "id": "CW3",
+      "claim": "The paired commemorative half dollars were produced from 1951 through 1954; proceeds supported designated organizations, and the series was the last U.S. commemorative issue until the modern program began in 1982.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half",
+      "media": "Use a sourced date line and never imply the owner photo's reverse is pictured."
+    },
+    {
+      "id": "CW4",
+      "claim": "Booker T. Washington arrived in Tuskegee in June 1881; the school opened on July 4 with 30 students.",
+      "source": "https://www.nps.gov/tuin/learn/historyculture/booker-t-washington.htm",
+      "media": "Use a labeled date card or verified campus image; do not treat a modern campus as an 1881 photograph."
+    },
+    {
+      "id": "CW5",
+      "claim": "George Washington Carver joined Tuskegee's faculty in 1896 and spent 47 years there teaching agricultural science and promoting crop rotation to restore depleted soil.",
+      "source": "https://home.nps.gov/articles/george-washington-carver-500391.htm",
+      "media": "Use source-matched agricultural context; do not create an archival portrait or classroom scene."
+    },
+    {
+      "id": "CW6",
+      "claim": "The Mint identifies Isaac Scott Hathaway as the coin's designer; the obverse pairs Washington and Carver, and the reverse shows a map of the United States.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half",
+      "media": "The owner photo is obverse-only. Show a reverse only from an independently sourced, rights-cleared image."
+    },
+    {
+      "id": "CW7",
+      "claim": "The Mint states that the coins were issued no later than August 7, 1954, and that proceeds went to named beneficiary organizations.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half",
+      "media": "Timeline or source graphic; no unsupported sales or price claim."
+    }
+  ],
+  "visualLimits": [
+    "The coin is not contemporary to either man.",
+    "Quote or paraphrase the 1950s law only with clear historical context.",
+    "Do not claim an obverse and reverse photo show one specimen unless proven.",
+    "The narration is transcript-approved by hash; verify every factual sentence against the linked primary source map. Media identity and usage remain limited to the recorded evidence and rights basis."
+  ]
+}

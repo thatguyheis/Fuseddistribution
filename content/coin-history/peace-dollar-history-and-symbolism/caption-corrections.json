@@ -1,0 +1,135 @@
+[
+  {
+    "segment": 0,
+    "from": "peace",
+    "to": "PEACE",
+    "startSec": 1.44,
+    "endSec": 1.84
+  },
+  {
+    "segment": 1,
+    "from": "peace",
+    "to": "Peace",
+    "startSec": 0.2,
+    "endSec": 0.42
+  },
+  {
+    "segment": 1,
+    "from": "1921",
+    "to": "1921,",
+    "startSec": 1.3,
+    "endSec": 2.06
+  },
+  {
+    "segment": 1,
+    "from": "peace",
+    "to": "Peace",
+    "startSec": 4.62,
+    "endSec": 4.88
+  },
+  {
+    "segment": 1,
+    "from": "message",
+    "to": "a message",
+    "startSec": 8.14,
+    "endSec": 8.72
+  },
+  {
+    "segment": 2,
+    "from": "Francesche",
+    "to": "Francisci",
+    "startSec": 1.14,
+    "endSec": 1.74
+  },
+  {
+    "segment": 3,
+    "from": "peace.",
+    "to": "PEACE.",
+    "startSec": 11.34,
+    "endSec": 11.72
+  },
+  {
+    "segment": 5,
+    "from": "but",
+    "to": "But",
+    "startSec": 0.0,
+    "endSec": 0.2
+  },
+  {
+    "segment": 5,
+    "from": "coins,",
+    "to": "coins:",
+    "startSec": 3.42,
+    "endSec": 3.9
+  },
+  {
+    "segment": 7,
+    "from": "different",
+    "to": "de",
+    "startSec": 4.48,
+    "endSec": 4.8
+  },
+  {
+    "segment": 7,
+    "from": "Sishi",
+    "to": "Francisci's",
+    "startSec": 4.8,
+    "endSec": 5.26
+  },
+  {
+    "segment": 7,
+    "from": "all of",
+    "to": "olive",
+    "startSec": 8.62,
+    "endSec": 9.02
+  },
+  {
+    "segment": 9,
+    "from": "P",
+    "to": "Peace",
+    "startSec": 0.52,
+    "endSec": 0.8
+  },
+  {
+    "segment": 9,
+    "from": "-Star",
+    "to": "dollar",
+    "startSec": 0.8,
+    "endSec": 1.0
+  },
+  {
+    "segment": 9,
+    "from": "935.",
+    "to": "1935.",
+    "startSec": 6.18,
+    "endSec": 6.64
+  },
+  {
+    "segment": 10,
+    "from": "in",
+    "to": "an",
+    "startSec": 7.3,
+    "endSec": 7.58
+  },
+  {
+    "segment": 10,
+    "from": "dong",
+    "to": "dawn",
+    "startSec": 9.14,
+    "endSec": 9.44
+  },
+  {
+    "segment": 10,
+    "from": "forward.",
+    "to": "forward:",
+    "startSec": 10.24,
+    "endSec": 10.68
+  },
+  {
+    "segment": 10,
+    "from": "Peace.",
+    "to": "peace.",
+    "startSec": 11.02,
+    "endSec": 11.22
+  }
+]

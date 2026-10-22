@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-15T12:57:31.676Z",
+  "deliverables": [
+    {
+      "slug": "pittman-act-silver-dollar-melting",
+      "articleUrl": "https://fuseddistribution.com/blog/pittman-act-silver-dollar-melting/",
+      "master": "video/out/pittman-act-silver-dollar-melting/pittman-act-silver-dollar-melting.mp4",
+      "bytes": 23969587,
+      "width": 720,
+      "height": 1280,
+      "readyForPosting": true,
+      "review": "video/out/pittman-act-silver-dollar-melting/visual-review.json",
+      "status": "live article with embedded reel; hosted reel scheduled on YouTube, Instagram and X",
+      "bufferPosts": {
+        "x": "2026-10-15T20:20:00.000Z",
+        "youtube": "2026-10-15T20:40:00.000Z",
+        "instagram": "2026-10-16T20:00:00.000Z"
+      }
+    },
+    {
+      "slug": "peace-dollar-history-and-symbolism",
+      "articleUrl": "https://fuseddistribution.com/blog/peace-dollar-history-and-symbolism/",
+      "master": "video/out/peace-dollar-history-and-symbolism/peace-dollar-history-and-symbolism.mp4",
+      "bytes": 21933688,
+      "width": 720,
+      "height": 1280,
+      "readyForPosting": true,
+      "review": "video/out/peace-dollar-history-and-symbolism/visual-review.json",
+      "status": "live article with embedded reel; hosted reel scheduled on YouTube, Instagram and X",
+      "bufferPosts": {
+        "x": "2026-10-15T20:40:00.000Z",
+        "youtube": "2026-10-16T20:00:00.000Z",
+        "instagram": "2026-10-16T20:40:00.000Z"
+      }
+    }
+  ],
+  "bufferFinal": {
+    "counts": {
+      "youtube": 9,
+      "instagram": 9,
+      "x": 9,
+      "total": 27
+    },
+    "readbackAt": "2026-10-15T12:57:31.676Z"
+  }
+}

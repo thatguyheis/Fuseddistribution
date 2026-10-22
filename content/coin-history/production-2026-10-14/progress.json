@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "userAuthorized": "Create both approved blogs and reels; then resume standard SOP and refill Buffer",
+  "slugs": [
+    "pittman-act-silver-dollar-melting",
+    "peace-dollar-history-and-symbolism"
+  ],
+  "bufferBefore": {
+    "youtube": 4,
+    "instagram": 6,
+    "x": 2
+  },
+  "bufferTargetPerChannel": 9,
+  "nightlyRefill": "Loaded com.nick.buffer-backlog at 22:00 Pacific; future days enabled",
+  "ownerSchedule": "Existing active Luna medium owner at 08:30 and 21:30; weekly Friday22:30. No extra scheduled AI passes added.",
+  "localImageAttempt": "DreamShaper local timed out after 240 seconds; using documented built-in generation fallback, label provenance honestly",
+  "remaining": [
+    "Regular SOP draft separating-a-pilot-result-from-a-production-promise remains quarantined after exhausted local generation retries; restart through the standard owner workflow when local generation is healthy.",
+    "Continue normal 22:00 Pacific Buffer refill and 08:30/21:30 owner checks."
+  ],
+  "backlogRepairs": {
+    "what-a-coin-collar-does-during-striking": "Hosted X 404 repaired; existing approval retained",
+    "retiring-outdated-website-content-with-a-clear-plan": "Encoded review and full decode passed; hosted both platforms",
+    "comparing-an-ai-draft-with-the-original-customer-reques": "Visual review passed; duration 136.448s blocks distribution; no truncation",
+    "recording-accessibility-feedback-from-real-customers": "Reviewed replacement footage; released and scheduled on X, YouTube, Instagram.",
+    "creating-a-small-business-exception-handling-log": "Reviewed replacement footage; released and scheduled on X, YouTube, Instagram.",
+    "mapping-a-manual-business-process-before-automating-it": "Reviewed replacement footage; released and scheduled on X, YouTube, Instagram."
+  },
+  "bufferCurrent": {
+    "youtube": 9,
+    "instagram": 9,
+    "x": 9,
+    "total": 27
+  },
+  "pittman": {
+    "status": "published-blog-and-reel-scheduled",
+    "masterBytes": 23969587,
+    "hostedBytes": 10998208,
+    "liveHttp": 200,
+    "playerVerified": true,
+    "buffer": {
+      "youtube": "2026-10-15T20:40:00Z",
+      "instagram": "2026-10-16T20:00:00Z",
+      "x": "2026-10-15T20:20:00Z"
+    }
+  },
+  "peace": {
+    "status": "published-blog-and-reel-scheduled",
+    "masterBytes": 21933688,
+    "hostedBytes": 10393587,
+    "liveHttp": 200,
+    "playerVerified": true,
+    "buffer": {
+      "youtube": "2026-10-16T20:00:00Z",
+      "instagram": "2026-10-16T20:40:00Z",
+      "x": "2026-10-15T20:40:00Z"
+    }
+  },
+  "updatedAt": "2026-10-15T12:57:01.255Z",
+  "sopFixes": [
+    "Instagram inventory refreshed whenever it precedes YouTube",
+    "Existing unreviewed draft counts as model work",
+    "Local text helper defers each inference attempt while renderer owns compute",
+    "Release enforces 135-second maximum",
+    "Square blog covers preserve full artwork"
+  ],
+  "finalInstagramSlot": {
+    "slug": "mapping-a-manual-business-process-before-automating-it",
+    "bufferPostId": "6ad0cd8bf76aea2cf7a7fa41",
+    "dueAt": "2026-10-17T20:40:00.000Z",
+    "hostedBytes": 7087466
+  }
+}

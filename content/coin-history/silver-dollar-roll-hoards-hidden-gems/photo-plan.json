@@ -1,0 +1,9 @@
+{
+  "status": "source_reviewed_crop_and_caption_pending",
+  "photos": [
+    {"catalogId":"coin-0043","role":"opening auction context","caption":"Sample picture from an unarrived hoard, as marked on the image","restriction":"Never imply these are verified contents of the auction lot."},
+    {"catalogId":"coin-0044","role":"Morgan dollar hoard context","caption":"Morgan dollars shown together","restriction":"No date or mint attribution; separate specimen."},
+    {"catalogId":"coin-0045","role":"date detail","caption":"1887 date visible on the obverse","restriction":"Mint mark not shown; no grade or authentication claim."},
+    {"catalogId":"coin-0046","role":"reverse design detail","caption":"Morgan dollar reverse design","restriction":"Do not pair with coin-0045 as the same specimen without verification."}
+  ]
+}

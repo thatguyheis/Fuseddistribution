@@ -1,0 +1,17 @@
+{
+  "name": "palisade-exterior",
+  "prompt": "Cinematic historical illustration of a modest nineteenth century Pacific Northwest fur trading post, tall weathered vertical timber palisade enclosing low timber buildings, simple wooden gate, distant evergreen forest, soft overcast morning with luminous fog, ground level viewpoint, realistic timber textures, muted warm wood and cool blue green atmosphere, documentary concept art, elegant composition, vertical image, no people, no flags, no writing, no modern objects, not a castle",
+  "seed": 71431,
+  "model": "DreamShaper_8_pruned.safetensors",
+  "modelLicense": "creativeml-openrail-m",
+  "width": 384,
+  "height": 640,
+  "steps": 12,
+  "role": "AI illustration of a generic palisade trading post, not a reconstruction or archival evidence",
+  "sha256": "e5405a72db2d0b734c0ae0b0d343f801fac6f0946e1b7b29d05900bb265e81bd",
+  "visualReview": {
+    "pass": false,
+    "reason": "Generated modern-looking cabin with metal roof and porch instead of the requested palisade. Excluded from historical presentation.",
+    "reviewedOn": "2026-10-13"
+  }
+}

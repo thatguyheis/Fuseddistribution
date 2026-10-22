@@ -1,0 +1,19 @@
+{
+  "slug": "morgan-dollar-o-mint-mark-new-orleans",
+  "updatedAt": "2026-10-13T13:39:47.656713+00:00",
+  "blog": "published_and_verified",
+  "reel": "released_hosted_embedded_and_verified",
+  "durationSeconds": 112.661,
+  "rawPhotos": 42,
+  "rawVideos": 1,
+  "rawHashesUnchanged": true,
+  "social": "distribution_handoff_in_existing_backlog_not_yet_scheduled",
+  "tests": "7 media/storyboard tests, 1 topic preference test, 5 article graphic/URL tests passed; scoped typecheck passed with skipLibCheck. Full typecheck remains affected by existing dependency declaration conflicts.",
+  "sop": "docs/COIN-HISTORY-SOP.md",
+  "futureSeeds": [
+    "Fort Vancouver commemorative",
+    "Walking Liberty design history",
+    "Franklin half dollar design history"
+  ],
+  "newAiSchedules": 0
+}

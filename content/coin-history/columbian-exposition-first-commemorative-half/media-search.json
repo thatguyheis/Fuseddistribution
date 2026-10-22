@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-20",
+  "provider": "Pexels API",
+  "queries": [
+    "How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair",
+    "A coin authorized before the fair opened"
+  ],
+  "outcome": "Search results were reviewed by title, alt text, creator and source URL. No result was selected as exact coin evidence; Pexels returned unrelated or generic coin imagery for the issue-specific queries.",
+  "selection": {
+    "status": "Wikimedia-Commons-image-selected",
+    "source": "artwork-source/wikimedia-commons-1892-columbian-proof-half-dollar.jpg",
+    "label": "1892 Columbian proof half dollar, obverse and reverse; Wikimedia Commons public domain"
+  },
+  "pexelsCandidates": [],
+  "fallbackPolicy": "Use owner coin media or exact, source-documented Commons/Mint media for coin identity. Use local AI backgrounds only for labeled contextual atmosphere."
+}

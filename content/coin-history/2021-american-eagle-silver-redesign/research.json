@@ -1,0 +1,17 @@
+{
+  "slug": "2021-american-eagle-silver-redesign",
+  "transcriptStatus": "awaiting-owner-approval",
+  "catalogAssetIds": ["coin-0003"],
+  "sources": [
+    {"title": "Redesigning the American Eagle Gold and Silver Coins", "url": "https://www.usmint.gov/news/inside-the-mint/redesigning-the-american-eagle-gold-and-silver-coins", "publisher": "United States Mint", "type": "official design history"},
+    {"title": "2021 American Eagle Silver Reverse Proof Two-Coin Set Designer Edition", "url": "https://www.usmint.gov/news/press-releases/united-states-mint-to-release-set-of-2021-reverse-proof-american-eagle-silver-coins-on-september-13", "publisher": "United States Mint", "type": "official product release"},
+    {"title": "American Eagle Coin Program", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle.html", "publisher": "United States Mint", "type": "official program history"}
+  ],
+  "verifiedClaims": [
+    {"claim": "The American Silver Eagle program began in 1986; Weinman’s 1916 Walking Liberty half-dollar design is the basis of the obverse.", "sources": [0, 2]},
+    {"claim": "John Mercanti designed the heraldic eagle reverse used before the redesign; Emily Damstra designed the 2021 landing eagle and Michael Gaudioso sculpted it.", "sources": [0, 1]},
+    {"claim": "The 2021 two-coin reverse proof set paired original and new designs, with the original-design coin struck at West Point and the new-design coin at San Francisco; both were 99.9 percent silver.", "sources": [1]}
+  ],
+  "openQuestions": ["Inspect the full owner photo before assigning which coin is original versus new design, and confirm that both coins and any labels are visible in the crop."],
+  "missingEvidence": ["Catalog coin-0003 is a 2021 reverse proof designer set photo, not independent authentication. Crop review and privacy check are required; exclude certification numbers and sales notes."]
+}

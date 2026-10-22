@@ -1,0 +1,30 @@
+{
+  "conceptNumberInUserFacingList": 1,
+  "title": "The silver dollars America melted",
+  "status": "released-hosted-embedded-scheduled",
+  "transcript": "narration-v1-approved.txt",
+  "wordCount": 296,
+  "draftSha256": "92aee49d633f96e9a880b74e1c202147f822786611d11b2b288e0e6dad5464c4",
+  "transcriptApproved": true,
+  "generationStarted": true,
+  "publishingAuthorized": true,
+  "approvalEvidence": "Nick: make the blogs and reels for these two. After this go back to the standard SOP and posting schedule.",
+  "approvedOn": "2026-10-14",
+  "approvedTranscriptSha256": "92aee49d633f96e9a880b74e1c202147f822786611d11b2b288e0e6dad5464c4",
+  "visualPlanShots": 19,
+  "delivery": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "targetMaxBytes": 45000000,
+    "hardMaxBytesExclusive": 50000000
+  },
+  "sourceImages": "Reviewed owner coin photos and public domain Library of Congress context",
+  "generatedImages": "Built-in fallback, not locally generated; provenance saved",
+  "blogLocalQa": "pass",
+  "blogStatus": "published",
+  "blogUrl": "https://fuseddistribution.com/blog/pittman-act-silver-dollar-melting/",
+  "reelStatus": "released-hosted-scheduled",
+  "videoPath": "video/out/pittman-act-silver-dollar-melting/pittman-act-silver-dollar-melting.mp4",
+  "liveVerification": "content/coin-history/production-2026-10-14/pittman-live-verification.json"
+}

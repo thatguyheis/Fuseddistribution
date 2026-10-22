@@ -1,0 +1,21 @@
+{
+  "slug": "columbian-exposition-first-commemorative-half",
+  "status": "automated-production-started",
+  "topicApproved": true,
+  "transcriptApproved": true,
+  "approvedTranscript": "narration-v1-approved.txt",
+  "approvedTranscriptSha256": "ce98b724bbc6b0a317b98d3754e64bc2de05b17fdd293965d2fdc34c375a9150",
+  "transcriptWordCount": 307,
+  "approvalEvidence": "Nick, 2026-10-20: “You are approved to produce and auto approve topics and transcripts, just do a double check and audit to make sure they have hook and aspects of video types SOP”.",
+  "approvedOn": "2026-10-20",
+  "generationStarted": true,
+  "videoRendered": false,
+  "blogPublished": false,
+  "scheduled": false,
+  "nextGate": "Run local article generation and deterministic audit, synthesize the exact approved transcript with Chatterbox Standard, render the presentation reel, and complete hash-bound automated release QA. Do not publish or schedule until separately authorized.",
+  "generationStartedAt": "2026-10-20",
+  "mediaSearch": "media-search.json",
+  "mediaEvidence": "public/blog/columbian-exposition-first-commemorative-half/image-sources.json",
+  "generationBlockedAt": "2026-10-20",
+  "blockReason": "Local article models did not meet the length and source-adherence contract; the larger local model timed out. No blog or reel was marked ready, published, or queued."
+}

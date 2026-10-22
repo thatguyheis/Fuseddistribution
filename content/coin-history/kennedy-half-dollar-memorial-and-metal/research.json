@@ -1,0 +1,17 @@
+{
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "transcriptStatus": "awaiting-owner-approval",
+  "catalogAssetIds": ["coin-0037"],
+  "sources": [
+    {"title": "Mint engravers’ recollection of Kennedy half-dollar production", "url": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html", "publisher": "United States Mint", "type": "primary historical document"},
+    {"title": "First striking of half dollars from new coinage material", "url": "https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material-at-u-s-mint-at-denver-on-thursday", "publisher": "United States Mint", "type": "primary historical document"},
+    {"title": "Kennedy half-dollar legislation", "url": "https://www.usmint.gov/learn/history/historical-documents/john-f-kennedy-half-dollar-coin-legislation", "publisher": "United States Mint", "type": "primary legal text"}
+  ],
+  "verifiedClaims": [
+    {"claim": "The Kennedy half-dollar was authorized on December 30, 1963, following Kennedy’s November 22 assassination.", "sources": [0, 2]},
+    {"claim": "Proof dies were delivered January 2, 1964; Denver regular production began January 30; Philadelphia followed the next week; ceremonies took place February 11.", "sources": [0]},
+    {"claim": "The initial half-dollar design used 90 percent silver, and the 1965 coinage transition reduced half-dollar silver content to 40 percent amid a silver shortage.", "sources": [1]}
+  ],
+  "openQuestions": ["The Mint’s engraver recollection and Director Adams’s later letter describe different March dates for the first delivery/distribution; the transcript avoids that date."],
+  "missingEvidence": ["Catalog coin-0037 shows Kennedy half-dollar obverses, but its date is not established by the catalog. Inspect the full original and crop before use; do not identify it as a specific 1964 or 1965 issue."]
+}

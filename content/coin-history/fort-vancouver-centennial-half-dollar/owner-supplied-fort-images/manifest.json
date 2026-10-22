@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-bastion-modern.jpg",
+      "sha256": "fb85c91fe6734eeff323c6137704d706abbb1c3da51ee665cfed0e736b3111f3",
+      "description": "Modern photograph of timber bastion and palisade",
+      "source": "User attachment 2026-10-14",
+      "status": "included-in-reviewed-local-final",
+      "rights": "Source attribution and license not supplied; user requested inclusion. Do not infer public domain or grant public stock redistribution.",
+      "reviewVideoSha256": "d25b499cc54e27f126e2afac96cc22e39a7771946d4d65c84ecffc7147237c18"
+    },
+    {
+      "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-historical-illustration.jpg",
+      "sha256": "c962562fb50e51f4d2909fbfe5525958be4e88f69d629a4ccb4591f11170c0b0",
+      "description": "Historical illustration of fort and people; artist and date not yet verified",
+      "source": "User attachment 2026-10-14",
+      "status": "included-in-reviewed-local-final",
+      "rights": "Source attribution and license not supplied; user requested inclusion. Do not infer public domain or grant public stock redistribution.",
+      "reviewVideoSha256": "d25b499cc54e27f126e2afac96cc22e39a7771946d4d65c84ecffc7147237c18"
+    },
+    {
+      "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-aerial-modern.jpg",
+      "sha256": "3a5422ac5a89693aae829c56ee7423f3fbd5d3a1138d70cfdd83ddd7e615473e",
+      "description": "Modern aerial view of reconstructed fort; preserve landscape composition",
+      "source": "User attachment 2026-10-14",
+      "status": "included-in-reviewed-local-final",
+      "rights": "Source attribution and license not supplied; user requested inclusion. Do not infer public domain or grant public stock redistribution.",
+      "reviewVideoSha256": "d25b499cc54e27f126e2afac96cc22e39a7771946d4d65c84ecffc7147237c18"
+    }
+  ],
+  "retainedGeneratedAssets": [
+    "generated/presentation-exterior.jpg",
+    "generated/presentation-courtyard.jpg"
+  ],
+  "treatment": "Keep originals. Fit landscape images into portrait layout with restrained motion; do not invent missing image content. Verify attribution before public distribution."
+}

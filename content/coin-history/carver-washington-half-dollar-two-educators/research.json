@@ -1,0 +1,20 @@
+{
+  "slug": "carver-washington-half-dollar-two-educators",
+  "transcriptStatus": "awaiting-owner-approval",
+  "catalogAssetIds": ["coin-0021"],
+  "sources": [
+    {"title": "Carver-Washington Half Dollar", "url": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half", "publisher": "United States Mint", "type": "official coin history and legislation summary"},
+    {"title": "Booker T. Washington", "url": "https://www.nps.gov/tuin/learn/historyculture/booker-t-washington.htm", "publisher": "National Park Service", "type": "biography"},
+    {"title": "George Washington Carver", "url": "https://home.nps.gov/articles/george-washington-carver-500391.htm", "publisher": "National Park Service", "type": "biography and cultural landscape history"},
+    {"title": "Tuskegee Institute National Historic Site", "url": "https://www.nps.gov/articles/tuskinstitute.htm", "publisher": "National Park Service", "type": "institutional history"},
+    {"title": "Commemoratives 1892-1954", "url": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/commemorative-coins-1892-1954", "publisher": "United States Mint", "type": "official program history"}
+  ],
+  "verifiedClaims": [
+    {"claim": "Washington was born enslaved in Virginia in 1856; Tuskegee began in 1881 with 30 students and Washington led the school.", "sources": [1]},
+    {"claim": "Carver joined Tuskegee in 1896, led its agriculture department, and spent 47 years there; his work included crop rotation and teaching farming methods.", "sources": [2, 3]},
+    {"claim": "Congress authorized the Washington half dollar in 1946 and amended the program in 1951 to include Carver; the combined coin was issued from 1951 through 1954.", "sources": [0, 4]},
+    {"claim": "The coin’s reverse is an outline map of the United States; the Mint calls it the last commemorative coin before the modern program began in 1982.", "sources": [0]}
+  ],
+  "openQuestions": ["Before production, recheck how to contextualize the original law’s stated political use of proceeds; the draft paraphrases it without presenting it as a current purpose."],
+  "missingEvidence": ["Coin-0021 is cataloged as a verified Carver-Washington obverse. Inspect its crop and the actual reverse source before pairing images; do not imply both sides came from the same specimen unless confirmed."]
+}

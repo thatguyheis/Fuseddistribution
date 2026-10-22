@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-20",
+  "provider": "Pexels API",
+  "queries": [
+    "Why Abraham Lincoln Appeared on the Cent in 1909",
+    "A president enters everyday pocket change"
+  ],
+  "outcome": "Search results were reviewed by title, alt text, creator and source URL. No result was selected as exact coin evidence; Pexels returned unrelated or generic coin imagery for the issue-specific queries.",
+  "selection": {
+    "status": "Wikimedia-Commons-image-selected",
+    "source": "artwork-source/wikimedia-commons-1909-vdb-cent-obverse-reverse.jpg",
+    "label": "1909 VDB Lincoln cent obverse and reverse; Wikimedia Commons public domain; shown as a 1909 example, not a rarity claim"
+  },
+  "pexelsCandidates": [],
+  "fallbackPolicy": "Use owner coin media or exact, source-documented Commons/Mint media for coin identity. Use local AI backgrounds only for labeled contextual atmosphere."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "fused-bg-bc3439768f37505c",
+  "filename": "fused-bg-bc3439768f37505c.jpg",
+  "sha256": "bc3439768f37505c432f256203ad6cd4f0186f05c5f4c783c99db79a2b4ffd02",
+  "topic": "silver",
+  "sceneId": "fort-palisade-courtyard",
+  "tags": [
+    "silver",
+    "fort-vancouver",
+    "palisade",
+    "history-illustration"
+  ],
+  "sourceSlug": "fort-vancouver-centennial-half-dollar",
+  "sourceSegment": 2,
+  "prompt": "Premium portrait historical illustration inside a generic Pacific Northwest nineteenth century fur trading post courtyard: timber palisade, simple wooden workshops, barrels, crates, hand tools and morning sunlight. Muted cedar, teal and soft gold. No people, weapons, flags, coins, text or modern objects. Illustrative concept, not an exact reconstruction. Built-in image generation tool, 2026-10-13.\n",
+  "sourceImage": "fused-bg-bc3439768f37505c.source.png",
+  "model": "built-in-imagegen",
+  "modelLicense": "Generated output; retain service provenance; no third-party photograph",
+  "backgroundTreatment": "No geometry or invented historical labels added. Generic illustrative trading post, not exact reconstruction.",
+  "status": "pending-visual-review",
+  "createdAt": "2026-10-13T20:02:34.629Z",
+  "lastUsedAt": null,
+  "useCount": 0,
+  "duplicate": true
+}

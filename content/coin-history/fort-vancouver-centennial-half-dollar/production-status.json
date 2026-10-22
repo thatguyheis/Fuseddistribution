@@ -1,0 +1,65 @@
+{
+  "slug": "fort-vancouver-centennial-half-dollar",
+  "revision": 2,
+  "status": "final-generated-and-verified",
+  "completedAt": "2026-10-14T15:52:52.790775+00:00",
+  "published": false,
+  "scheduled": false,
+  "video": "video/out/fort-vancouver-centennial-half-dollar/fort-vancouver-centennial-half-dollar.mp4",
+  "previewUrl": "http://127.0.0.1:8790/",
+  "runtimeSeconds": 118.6,
+  "delivery": {
+    "width": 720,
+    "height": 1280,
+    "bytes": 44291441,
+    "maximumBytesExclusive": 50000000,
+    "pass": true,
+    "videoSha256": "d25b499cc54e27f126e2afac96cc22e39a7771946d4d65c84ecffc7147237c18",
+    "audioMeasured": {
+      "input_i": "-16.41",
+      "input_tp": "-1.58",
+      "input_lra": "3.30",
+      "input_thresh": "-26.94",
+      "output_i": "-16.19",
+      "output_tp": "-1.80",
+      "output_lra": "3.20",
+      "output_thresh": "-26.68",
+      "normalization_type": "dynamic",
+      "target_offset": "0.19"
+    },
+    "sourceArchive": "video/out/fort-vancouver-centennial-half-dollar/fort-vancouver-centennial-half-dollar-v2-before-mastering.mp4"
+  },
+  "approvedTranscriptSha256": "c0f92a521a8682e4ea560470a4691a3c80333c69ecfae8d514e04e1c8f862e16",
+  "shots": 19,
+  "suppliedImages": 3,
+  "retainedAIImages": 2,
+  "visualReview": "video/out/fort-vancouver-centennial-half-dollar/visual-review.json",
+  "release": {
+    "slug": "fort-vancouver-centennial-half-dollar",
+    "pass": true,
+    "automatedChecksPassed": true,
+    "distributionReady": true,
+    "ownerReviewed": true,
+    "errors": [],
+    "warnings": [],
+    "generatedAt": "2026-10-14T15:52:32.856Z",
+    "manualCaptionReview": true,
+    "automatedCaptionReview": null,
+    "readyForPosting": true
+  },
+  "browserPlayback": {
+    "duration": 118.6,
+    "width": 720,
+    "height": 1280,
+    "advancedToSeconds": 22.734998,
+    "pausedDuringTest": false,
+    "mediaError": null
+  },
+  "validation": {
+    "videoTestsPassed": 73,
+    "captionTestsPassed": 5,
+    "typeCheck": "pass with skipLibCheck",
+    "fullDecode": "pass"
+  },
+  "priorVersionArchive": "content/coin-history/fort-vancouver-centennial-half-dollar/archive-v1"
+}

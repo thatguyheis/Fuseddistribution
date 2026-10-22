@@ -1,0 +1,52 @@
+{
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "status": "transcript-approved-source-map-automated-qa-pending",
+  "claims": [
+    {
+      "id": "K1",
+      "claim": "Kennedy was assassinated November 22, 1963; the half-dollar act was approved December 30.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Verified timeline graphic; not an image of the owner specimen."
+    },
+    {
+      "id": "K2",
+      "claim": "Proof dies arrived January 2, regular production began January 30 in Denver and the following week in Philadelphia, and ceremonies took place February 11.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Timeline; Mint facility images only after source and reuse rights review."
+    },
+    {
+      "id": "K3",
+      "claim": "The 1964 half-dollar was 90 percent silver; 1965 composition changed to 40 percent amid a silver shortage.",
+      "source": "https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material-at-u-s-mint-at-denver-on-thursday",
+      "media": "Source-matched composition comparison, clearly labeled by year; owner photo coin-0037 only as a general Kennedy design view after crop review."
+    },
+    {
+      "id": "K4",
+      "claim": "The Mint\u2019s engravers recalled selecting the half dollar in late November 1963. The Franklin half had not completed its statutory 25-year design period, so Congress passed legislation authorizing the new design.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Dated legislative and denomination timeline; do not imply the owner photo coin is the 1964 issue."
+    },
+    {
+      "id": "K5",
+      "claim": "Gilroy Roberts designed the obverse and Frank Gasparro the reverse; the Mint recollection describes adapting existing models during the accelerated project.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Credit both designers and label recreated studio scenes as illustrations."
+    },
+    {
+      "id": "K6",
+      "claim": "Jacqueline Kennedy suggested portrait adjustments on December 17, 1963; the revised design received approval on December 27, before the December 30 act.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Timeline only; do not fabricate dialogue or portray a meeting as archival footage."
+    },
+    {
+      "id": "K7",
+      "claim": "The Mint's recollection records an initial delivery of about 26 million Kennedy half dollars to the Federal Reserve on March 5, 1964.",
+      "source": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "media": "Use a labeled timeline or stack illustration, not the owner photo as proof of delivery or mintage."
+    }
+  ],
+  "visualLimits": [
+    "Do not infer a date or mint mark from coin-0037.",
+    "The narration is transcript-approved by hash; verify every factual sentence against the linked primary source map. Media identity and usage remain limited to the recorded evidence and rights basis."
+  ]
+}

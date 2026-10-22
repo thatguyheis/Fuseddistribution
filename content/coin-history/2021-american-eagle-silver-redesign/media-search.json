@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-20",
+  "provider": "Pexels API",
+  "queries": [
+    "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+    "One familiar face, one new eagle"
+  ],
+  "outcome": "Search results were reviewed by title, alt text, creator and source URL. No result was selected as exact coin evidence; Pexels returned unrelated or generic coin imagery for the issue-specific queries.",
+  "selection": {
+    "status": "owner-photo-selected",
+    "source": "Coin Raw/IMG_0977.jpeg",
+    "label": "2021 American Eagle designer set obverses; owner photograph, cropped to coins"
+  },
+  "pexelsCandidates": [],
+  "fallbackPolicy": "Use owner coin media or exact, source-documented Commons/Mint media for coin identity. Use local AI backgrounds only for labeled contextual atmosphere."
+}

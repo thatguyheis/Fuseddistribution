@@ -1,0 +1,17 @@
+{
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "transcriptStatus": "awaiting-owner-approval",
+  "catalogAssetIds": [],
+  "sources": [
+    {"title": "History of Presidents on Our Coins", "url": "https://www.usmint.gov/learn/history/historical-documents/history-of-presidents-on-our-coins", "publisher": "United States Mint", "type": "official historical account"},
+    {"title": "U.S. Mint Timeline", "url": "https://www.usmint.gov/learn/history/timeline.html", "publisher": "United States Mint", "type": "official timeline"},
+    {"title": "Penny", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/circulating-coins/penny.html", "publisher": "United States Mint", "type": "official coin history"}
+  ],
+  "verifiedClaims": [
+    {"claim": "The Lincoln cent was released August 2, 1909, for the centennial of Lincoln’s birth and was the first circulating U.S. coin to show a real person and president.", "sources": [0, 1, 2]},
+    {"claim": "Victor David Brenner designed the Lincoln portrait, which remained on the obverse as reverse designs changed.", "sources": [0, 2]},
+    {"claim": "The cent used the Wheat Ears reverse from 1909 through 1958 and the Lincoln Memorial from 1959 through 2008; four reverse designs appeared in 2009.", "sources": [2]}
+  ],
+  "openQuestions": ["The Mint says its surviving record does not explain every step behind the final decision to use Brenner’s portrait on the cent. Keep that uncertainty explicit; do not present speculative Roosevelt/Saint-Gaudens discussions as settled fact."],
+  "missingEvidence": ["No matching owner Lincoln cent is in the current catalog. Verify public reuse terms for official coin images or build a sourced timeline without inventing a coin specimen."]
+}

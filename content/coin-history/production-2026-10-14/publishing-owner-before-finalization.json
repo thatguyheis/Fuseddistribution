@@ -1,0 +1,572 @@
+{
+  "updatedAt": "2026-10-14T15:34:00Z",
+  "operatingDate": "2026-10-14",
+  "activeOwnerWork": {
+    "actor": "Codex publishing owner",
+    "beforeStage": "The Oct 12 approval-log package was still approved for Oct 12 with no per-slug live proof; the latest exact canonical request had failed DNS. Six older plan entries remained in prior recovery inventory. Current Oct 14 queue had two drafts, with two planned topics absent. Saved Buffer counts were YouTube 4, X 2, Instagram 6.",
+    "afterStage": "One exact canonical article request again failed DNS. Both Oct 14 queue drafts failed the reviewed-blog-ready gate as unreviewed. Two named reel source repairs (buyback comparison and TikTok local business) now have aligned short spoken/display/data/caption questions, exact editorial hashes, passing parser/engagement checks, and narration estimates; their existing MP4s are still stale and require new renders. The refreshed worklist still has two distribution handoffs blocked at hosting/live verification.",
+    "proof": [
+      ".workflow-state/reel-backlog/current.json",
+      ".workflow-state/recovery-2026-10-14-0830/owner-pass.json",
+      ".workflow-state/token-budget-samples.json",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/qa.json",
+      "public/blog/tiktok-for-local-business-does-it-work/qa.json",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/reel-script.md",
+      "public/blog/tiktok-for-local-business-does-it-work/reel-script.md"
+    ],
+    "remainingWork": [
+      "Restore DNS, then reconcile exact Oct 12 article content, canonical, actual date, hero bytes, catalog and sitemap before selecting the next oldest missing article.",
+      "Continue oldest article recovery toward four complete packages per pass; do not count a planned or approved article as live without per-slug proof.",
+      "Render new speech for the two repaired reel sources with the pinned Nano voice, approved hero first frame and free approved music; inspect encoded opening/middle/ending, speech, captions, rights and both derivatives before hosting.",
+      "Resume Morgan and coin-collar handoffs with exact hosted-byte checks when DNS is available; schedule only after live capacity/cadence checks.",
+      "Keep community data unavailable explicitly; draft replies only from verified comments after blog incident clears.",
+      "Finish the three named October 4 recovery failures before clearing that backlog."
+    ],
+    "blocker": "Canonical production DNS resolution failed; live publication state and hosted-byte proofs are unavailable. No due article package passed owner review.",
+    "attemptedResolution": "Made one exact canonical request; verified the approved-date state and due-gated both current drafts; advanced two independent reel source repairs to exact hash-bound approvals; refreshed the reel worklist; verified no active publisher/research/render owner before mutation."
+  },
+  "nextActions": [
+    "Restore DNS, then reconcile exact Oct 12 article content, canonical, actual date, hero bytes, catalog and sitemap before selecting the next oldest missing article.",
+    "Continue oldest article recovery toward four complete packages per pass; do not count a planned or approved article as live without per-slug proof.",
+    "Render new speech for the two repaired reel sources with the pinned Nano voice, approved hero first frame and free approved music; inspect encoded opening/middle/ending, speech, captions, rights and both derivatives before hosting.",
+    "Resume Morgan and coin-collar handoffs with exact hosted-byte checks when DNS is available; schedule only after live capacity/cadence checks.",
+    "Keep community data unavailable explicitly; draft replies only from verified comments after blog incident clears.",
+    "Finish the three named October 4 recovery failures before clearing that backlog."
+  ],
+  "publishingRecovery": {
+    "stage": "Oct 8 approval-log package remains approved for Oct 12 with publication unknown; canonical host DNS failure prevented exact live reconciliation on Oct 13 at 21:30 PDT.",
+    "proof": ".workflow-state/recovery-2026-10-13-2130/host-checks.json; prior package QA and approval artifacts unchanged.",
+    "remainingPlans": [
+      {
+        "date": "2026-10-07",
+        "posts": [
+          {
+            "slug": "comparing-an-ai-draft-with-the-original-customer-reques",
+            "keyword": "comparing an AI draft with the original customer request",
+            "brand": "tech"
+          },
+          {
+            "slug": "retiring-outdated-website-content-with-a-clear-plan",
+            "keyword": "retiring outdated website content with a clear plan",
+            "brand": "tech"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-08",
+        "posts": [
+          {
+            "slug": "why-silver-mine-supply-includes-byproduct-production",
+            "keyword": "why silver mine supply includes byproduct production",
+            "brand": "silver"
+          },
+          {
+            "slug": "what-happens-during-coin-quality-control",
+            "keyword": "what happens during coin quality control",
+            "brand": "silver"
+          },
+          {
+            "slug": "creating-an-approval-log-for-ai-assisted-work",
+            "keyword": "creating an approval log for AI assisted work",
+            "brand": "tech"
+          },
+          {
+            "slug": "planning-a-seasonal-update-without-rewriting-every-page",
+            "keyword": "planning a seasonal update without rewriting every page",
+            "brand": "tech"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "posts": [
+          {
+            "slug": "coin-presses-and-repeated-strikes-explained",
+            "keyword": "coin presses and repeated strikes explained",
+            "brand": "silver"
+          },
+          {
+            "slug": "silver-reserves-and-resources-are-different-measures",
+            "keyword": "silver reserves and resources are different measures",
+            "brand": "silver"
+          },
+          {
+            "slug": "testing-an-ai-summary-against-its-source-document",
+            "keyword": "testing an AI summary against its source document",
+            "brand": "tech"
+          },
+          {
+            "slug": "separating-a-useful-tutorial-from-a-sales-page",
+            "keyword": "separating a useful tutorial from a sales page",
+            "brand": "tech"
+          }
+        ]
+      }
+    ],
+    "overdueCount": 6,
+    "currentDayPlannedCount": 4,
+    "liveCountToday": 0,
+    "remainingAction": "Reconcile the Oct 12 approval-log article exact live state after DNS returns; update actual publication date and renew approval only if it is unpublished."
+  },
+  "publishedToday": {
+    "date": "2026-10-12",
+    "live": 0,
+    "slugs": [],
+    "proofs": []
+  },
+  "dailyReview": {
+    "checkedAt": "2026-10-09T16:28:20.418422+00:00",
+    "status": "Schedule collisions repaired, backlog advanced by four live articles, strict visual holds prevent unrelated footage release.",
+    "proof": "docs/SOP-FIXES-2026-10-09.md"
+  },
+  "buffer": {
+    "soleOwner": "com.nick.buffer-backlog",
+    "confirmedQueueCount": 19,
+    "channelCounts": {
+      "6a3e73fb5ab6d2f10674b516": 5,
+      "6a3e63375ab6d2f1067461b2": 5,
+      "6a67c5d64b2d03035f4f0228": 9
+    },
+    "readbackAt": "2026-10-12T22:09:56.469Z",
+    "proof": ".workflow-state/buffer-latest-status.json",
+    "state": "scheduled, not sent",
+    "targetPerChannel": 9,
+    "reserveSlots": 1,
+    "scheduleRepair": {
+      "moved": 12,
+      "collisions": 0,
+      "dailyMaximumPerChannel": 3,
+      "scheduledTotalsByDate": {
+        "2026-10-09": 9,
+        "2026-10-10": 9,
+        "2026-10-11": 9,
+        "2026-10-12": 3
+      }
+    }
+  },
+  "reelRecovery": {
+    "older": ".workflow-state/reel-queue-recovery-oct4-resume/status.json",
+    "continuation": ".workflow-state/recovery-2026-10-04/new-reels-continuation.json",
+    "next": ".workflow-state/reel-queue-recovery-oct4-new-posts/status.json",
+    "sourceCount": 24,
+    "releaseStatus": "incomplete; require actual proof"
+  },
+  "engagement": {
+    "migrationLiveVerified": 22,
+    "proof": ".workflow-state/engagement-2026-10-01/migration.json",
+    "acceptance": "docs/ENGAGEMENT-IMPLEMENTATION-2026-10-01.md",
+    "community": "2026-10-06 saved report current; comment coverage unavailable on all four platforms; no verified replies to draft",
+    "metrics": "current October5 snapshot reused; no new snapshot due at 08:30"
+  },
+  "reelRecoveryPass": {
+    "checkedAt": "2026-10-05T01:39:08.052Z",
+    "beforeStage": "two completed reels visually reviewed; other completed queue outputs had no owner visual-review records",
+    "afterStage": "two additional reels full-decoded and reviewed at encoded opening, middle and ending; both release gates now BLOCKED due unrelated legal/divorce paperwork in middle footage; no derivatives or hosting attempted",
+    "evidence": [
+      ".workflow-state/reel-queue-recovery-oct4-resume/status.json",
+      "video/out/why-silver-is-used-in-electrical-contacts/visual-review.json",
+      "video/out/why-silver-is-used-in-electrical-contacts/release-qa.json",
+      "video/out/coin-blanks-and-planchets-explained/visual-review.json",
+      "video/out/coin-blanks-and-planchets-explained/release-qa.json"
+    ],
+    "verifiedOwner": "Codex publishing owner performed full decode and actual encoded frame review for both slugs; render/scheduler lock PIDs 99527 and 99552 pass lock-owner-alive check as live-or-indeterminate; active exact-queue PID 83911 remains unverified in sandbox",
+    "blocker": "Both completed reels contain unrelated legal paperwork footage that fails editorial visual review. Current renderer ownership cannot be proven dead, so no competing render or active input changes.",
+    "attemptedResolution": "Extracted actual encoded opening/middle/ending frames, full-decoded both MP4s, wrote hash-bound failing visual reviews, and reran release-reel gate; it correctly blocks both. Checked lock PIDs with scripts/lock-owner-alive.py; identity inspection denied/unavailable.",
+    "remainingSlugs": [
+      "why-silver-is-used-in-electrical-contacts",
+      "coin-blanks-and-planchets-explained",
+      "building-a-silver-collection-around-design-themes",
+      "silver-in-mirrors-and-reflective-coatings",
+      "how-to-read-a-usgs-silver-commodity-summary",
+      "when-two-service-pages-answer-the-same-question",
+      "assigning-accessibility-ownership-in-a-small-team"
+    ],
+    "completedSlugs": [
+      "choosing-a-low-risk-first-ai-task-for-a-small-business",
+      "planning-a-website-around-customer-questions"
+    ],
+    "nextAction": "After exact renderer ownership is verified and active rendering ends, repair unrelated middle footage for the two failed slugs, rerender with cached narration, then complete release proof and continue remaining completed eligible queue slugs. Do not launch a competing renderer.",
+    "distributionStage": "two reels hosted on both platform paths; four additional older reels visually reviewed and release-ready; all unscheduled because Buffer is full",
+    "hostingProof": ".workflow-state/reel-queue-recovery-oct4-resume/hosting-proof-2026-10-05.json",
+    "newQueueRemainingSlugs": [
+      "building-a-silver-collection-around-design-themes",
+      "silver-mine-production-versus-refined-production",
+      "mapping-a-manual-business-process-before-automating-it",
+      "including-accessibility-in-a-website-supplier-brief",
+      "comparing-lettering-styles-on-collectible-coins",
+      "why-silver-supply-estimates-get-revised",
+      "measuring-rework-instead-of-counting-automated-tasks",
+      "planning-an-accessible-content-publishing-checklist",
+      "reading-a-coin-design-from-center-to-rim",
+      "comparing-silver-statistics-with-different-units",
+      "creating-a-small-business-exception-handling-log",
+      "recording-accessibility-feedback-from-real-customers"
+    ],
+    "activeRendererSlug": "silver-mine-production-versus-refined-production",
+    "readyForHostingSlugs": [
+      "how-coin-dies-transfer-a-design-to-metal",
+      "building-a-test-set-for-ai-customer-support-drafts",
+      "turning-service-conversations-into-useful-faq-topics",
+      "what-a-coin-collar-does-during-striking"
+    ],
+    "visuallyBlockedSlugs": [
+      "why-silver-is-used-in-electrical-contacts",
+      "coin-blanks-and-planchets-explained",
+      "building-a-silver-collection-around-design-themes"
+    ]
+  },
+  "reelDistributionPass": {
+    "checkedAt": "2026-10-05T01:37:02.513Z",
+    "beforeStage": "two reels visually reviewed and release-ready; derivatives and hosting unverified",
+    "afterStage": "both YouTube and X derivatives generated, uploaded to Cloudflare KV, HTTP 200 and exact byte-count verified for both slugs",
+    "proof": ".workflow-state/reel-queue-recovery-oct4-resume/hosting-proof-2026-10-05.json",
+    "completedSlugs": [
+      "choosing-a-low-risk-first-ai-task-for-a-small-business",
+      "planning-a-website-around-customer-questions"
+    ],
+    "hostedButNotScheduled": [
+      "choosing-a-low-risk-first-ai-task-for-a-small-business",
+      "planning-a-website-around-customer-questions"
+    ],
+    "scheduleBlocker": "Saved authoritative Buffer readback has 10 scheduled/sending per channel and zero free slots; do not add posts until capacity changes.",
+    "attemptedResolution": "Generated both required platform variants; first upload attempt hit sandbox DNS/log-path restrictions. Re-ran the exact two-slug uploads and verification with authorized network access; all four endpoints returned HTTP 200 video/mp4 and exact byte counts.",
+    "verifiedOwner": "Codex publishing owner reviewed encoded frames, release and caption evidence; ran exact two-slug derivative, upload, and URL verification commands.",
+    "remainingOlderQueueSlugs": [
+      "why-silver-is-used-in-electrical-contacts",
+      "coin-blanks-and-planchets-explained",
+      "building-a-silver-collection-around-design-themes",
+      "silver-in-mirrors-and-reflective-coatings",
+      "how-to-read-a-usgs-silver-commodity-summary",
+      "when-two-service-pages-answer-the-same-question",
+      "assigning-accessibility-ownership-in-a-small-team"
+    ],
+    "visuallyBlockedSlugs": [
+      "why-silver-is-used-in-electrical-contacts",
+      "coin-blanks-and-planchets-explained",
+      "building-a-silver-collection-around-design-themes"
+    ],
+    "activeRendererSlug": "silver-mine-production-versus-refined-production",
+    "nextAction": "After the active renderer releases ownership, repair and rerender the blocked silver collection reel with cached narration. Continue encoded review of the four older unreviewed slugs. Host ready reels only from exact QA proof; schedule only after saved capacity evidence shows a free slot.",
+    "reviewedAdditionalSlugs": [
+      "how-coin-dies-transfer-a-design-to-metal",
+      "building-a-test-set-for-ai-customer-support-drafts",
+      "turning-service-conversations-into-useful-faq-topics",
+      "what-a-coin-collar-does-during-striking"
+    ],
+    "reviewReadySlugs": [
+      "how-coin-dies-transfer-a-design-to-metal",
+      "building-a-test-set-for-ai-customer-support-drafts",
+      "turning-service-conversations-into-useful-faq-topics",
+      "what-a-coin-collar-does-during-striking"
+    ]
+  },
+  "metricsPass": {
+    "checkedAt": "2026-10-06T06:17:58.754Z",
+    "date": "2026-10-05",
+    "beforeStage": "October5 metrics due; previous saved snapshot unavailable because request budget had been reserved.",
+    "afterStage": "One due snapshot succeeded with metrics on 305/305 posts. Deterministic engagement report refreshed; community data remains unavailable for all four platforms.",
+    "proof": [
+      "ops/profit-system/buffer-metrics/2026-10-05.json",
+      ".workflow-state/engagement/2026-10-05/report.json",
+      "docs/community-digest.md"
+    ],
+    "verifiedOwner": "Codex publishing owner ran the scheduled metrics snapshot once and scripts/engagement-report.mjs.",
+    "blocker": "No current verified comment sources for YouTube, Instagram, Twitter or Facebook. The 08:30 digest deadline was missed; no replies can be drafted from saved verified comments.",
+    "attemptedResolution": "Reused October5 account usage sample; local cooldown status available. Ran one metrics snapshot under existing request budget controls, then refreshed deterministic engagement report. Did not perform a second metrics/API attempt.",
+    "nextAction": "At next 08:30 pass, recheck whether verified community export appears; retain explicit unavailable coverage otherwise."
+  },
+  "batchOperatingStandard": {
+    "effectiveDate": "2026-10-05",
+    "procedure": "docs/BATCH-PRODUCTION-SOP.md",
+    "aiPassesPacific": [
+      "08:30",
+      "21:30"
+    ],
+    "research": "Monday/Thursday23:00",
+    "bufferRefill": "daily22:00",
+    "weeklyReview": "Friday22:30",
+    "targetApprovedDays": 7,
+    "plannedAiRunsPerWeek": 15,
+    "validation": "38 Node tests and4 Python tests passed; shell and plist syntax passed; installed schedules read back"
+  },
+  "researchBatchPass": {
+    "checkedAt": "2026-10-06T06:44:23.351Z",
+    "date": "2026-10-06",
+    "beforeStage": "No October6 research queue was available in the initial owner brief.",
+    "afterStage": "Scheduled local batch attempted October6 and finished owner_repair_required with exitCode 1; latest status records only the failed day and no usable queue.",
+    "proof": [
+      ".workflow-state/research-batch/latest.json",
+      "public/blog/research/2026-10-06-plan.json"
+    ],
+    "verifiedOwner": "Read the changed local batch status after the scheduled 23:00 run; did not restart the producer.",
+    "blocker": "October6 queue preparation failed and requires direct owner repair. October5 daily production remains missing/actionable (four planned articles; publisher release has no approved queue).",
+    "attemptedResolution": "Confirmed the scheduled batch ended at 23:05 PDT and the plan exists. No duplicate batch, log/transcript reread, or quality-gate reduction.",
+    "nextAction": "At the next 08:30 owner pass, repair the failed October6 queue from preserved plan/artifacts and recover the October5 due article inventory with actual publication dates and renewed approval where dates change."
+  },
+  "bufferRefillAfterOwnerPass": {
+    "observed": "Normal 22:00 local runner changed saved YouTube, X, Instagram queue files; no owner initiated Buffer query or scheduling mutation.",
+    "proof": [
+      ".buffer-youtube-scheduled.json",
+      ".buffer-x-scheduled.json",
+      ".buffer-instagram-scheduled.json",
+      ".workflow-state/local-operations/latest.json"
+    ],
+    "interpretation": "Saved post files are partial cached evidence and not a fresh authoritative queue count. Do not claim free slots or sent status."
+  },
+  "dailyOwnerPass": {
+    "checkedAt": "2026-10-14T15:34:00Z",
+    "status": "publishing_incident",
+    "dueInventory": {
+      "approvedPackages": 0,
+      "queueDrafts": 2,
+      "reviewedGate": {
+        "handing-accessibility-findings-to-a-new-website-provide": "unreviewed",
+        "separating-a-pilot-result-from-a-production-promise": "unreviewed"
+      },
+      "missingPlannedTopics": [
+        "1925-fort-vancouver-half-dollar-tells-a-local-history",
+        "comparing-design-details-without-assigning-coin-grades"
+      ]
+    },
+    "community": {
+      "status": "deferred_under_oldest-blog-incident",
+      "freshReportRun": false,
+      "verifiedCoverageMissing": [
+        "youtube",
+        "instagram",
+        "twitter",
+        "facebook"
+      ],
+      "replyDrafts": 0
+    },
+    "usage": {
+      "usedPercent": 100,
+      "windowDurationMins": 10080,
+      "resetsAt": 1792501847,
+      "dailyDeltaPercentagePoints": 56,
+      "scope": "Account-wide; same reset window as Oct 13."
+    },
+    "checkpoint": ".workflow-state/recovery-2026-10-14-0830/owner-pass.json"
+  },
+  "eveningOwnerPass": {
+    "checkedAt": "2026-10-13T04:34:38.088Z",
+    "operatingDate": "2026-10-12",
+    "beforeStage": "The current checkpoint still showed the Oct 12 approval-log package awaiting the 09:00 live release; six older planned article packages remained in its saved recovery inventory. Saved YouTube/X queue counts were 5/9 each and Instagram 9/9. No 21:30 pass evidence existed.",
+    "afterStage": "No live publication could be certified: no per-slug live-proof file exists, and one exact production URL fetch failed at DNS resolution. Reel backlog refreshed. Full current review of two named source-repair items found their previously approved index.html, reel-script.md and reel-data.md hashes stale; the displayed versus spoken questions also need alignment for the silver script. The prepared opening repair stopped at its strict approval-source gate before rendering any candidate.",
+    "proof": [
+      ".workflow-state/reel-backlog/current.json",
+      ".workflow-state/social-refill-2026-10-12/opening-repair-queue.json",
+      ".workflow-state/social-refill-2026-10-12/repair-openings.py",
+      "video/scripts/approved-sources.mjs",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/qa.json",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/reel-script.md",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/reel-data.md",
+      "public/blog/tiktok-for-local-business-does-it-work/qa.json",
+      "public/blog/tiktok-for-local-business-does-it-work/reel-script.md",
+      "public/blog/tiktok-for-local-business-does-it-work/reel-data.md",
+      "public/blog/creating-an-approval-log-for-ai-assisted-work/qa.json"
+    ],
+    "verifiedOwner": "Read-only process inspection found no matching local publisher, research producer, or Remotion render command. The publisher lock was acquired atomically for this checkpoint and is being released by rename.",
+    "blocker": "The production host could not be resolved (curl: Could not resolve host: fuseddistribution.com), so the due Oct 12 package release state is unknown and exact live verification is unavailable. Reel source repairs cannot safely enter rendering until the changed editorial package hashes and engagement questions are reviewed and renewed; the prepared candidate repair correctly failed closed at its approval gate.",
+    "attemptedResolution": "Confirmed the brief still had no fresh release proof, checked for a matching local live-proof artifact, attempted a single canonical URL fetch, refreshed the deterministic reel backlog, compared current artifact SHA-256 values to existing approvals, read both current articles and reel scripts/data against docs/ENGAGEMENT-SOP.md, and invoked the prepared opening-repair script once. It stopped at approved-sources.mjs without changing/promoting media. No repeated network attempt, hash overwrite, publish, schedule, or send.",
+    "usage": "Reused the existing October 12 account usage sample (0%, weekly reset timestamp unchanged); no new sample or reset.",
+    "remainingWork": [
+      "When DNS/service is reachable, verify whether the Oct 12 approval-log article is live by exact content, canonical, actual publication date, hero bytes, catalog and sitemap. Do not infer release success or failure from this unavailable request.",
+      "Continue the oldest genuinely missing article package after reconciling live-proven slugs; current saved overdue inventory is not fresh live evidence. Target four complete packages for this owner pass only if remaining run capacity allows.",
+      "Repair and rereview changed artifacts for how-to-compare-silver-buyback-quotes-fairly and tiktok-for-local-business-does-it-work. Align displayed/spoken/caption questions and validate reel data, then renew exact editorial approval before rendering.",
+      "Re-run the approved opening-hero repair queue after source approvals; inspect candidate frames before promotion, complete derivatives/hosted-byte proof, and refill only through the shared runner if live slots remain.",
+      "YouTube and X saved queue counts remain five each against a target of nine; Instagram remains nine. Scheduled is not sent. Three failed October 4 recovery outputs remain unresolved.",
+      "Community digest and optional metrics stayed deferred under actionable blog incident priority; refresh saved verified community data at the next morning pass after blog priority clears."
+    ],
+    "attemptedOpeningRepair": "python3 .workflow-state/social-refill-2026-10-12/repair-openings.py exited 1 at the source approval gate for how-to-compare-silver-buyback-quotes-fairly/index.html; no candidate render ran.",
+    "liveFetch": "curl -fsSL --max-time 15 https://fuseddistribution.com/blog/creating-an-approval-log-for-ai-assisted-work/ failed: curl: (6) Could not resolve host: fuseddistribution.com",
+    "namedReelFindings": {
+      "howToCompareSilverBuybackQuotesFairly": {
+        "staleApprovalArtifacts": [
+          "index.html",
+          "reel-script.md",
+          "reel-data.md"
+        ],
+        "finding": "Current final spoken question and display/caption question are different; update to a topic-specific preference/experience question under I1/I7 before renewal."
+      },
+      "tiktokForLocalBusinessDoesItWork": {
+        "staleApprovalArtifacts": [
+          "index.html",
+          "reel-script.md",
+          "reel-data.md"
+        ],
+        "finding": "Current question is spoken and topic-relevant, but final block exceeds the 15-second policy ceiling and contains summary copy after the question; reel-data.md currently carries only hook/question rather than its seven segment data."
+      }
+    }
+  },
+  "metricsSnapshot": {
+    "date": "2026-10-07",
+    "status": "unavailable",
+    "proof": "ops/profit-system/buffer-metrics/2026-10-07.unavailable.json",
+    "reason": "fetch failed; one attempt only"
+  },
+  "reelVisualReview": {
+    "checkedAt": "2026-10-13T15:32:37Z",
+    "reviewed": 2,
+    "approved": 0,
+    "mediaRepairRequired": 2,
+    "queue": ".workflow-state/sop-fixes-2026-10-09/visual-review-queue.json",
+    "proof": [
+      ".workflow-state/recovery-2026-10-13-0830/creating-an-approval-log-for-ai-assisted-work/encoded-review.json",
+      ".workflow-state/recovery-2026-10-13-0830/what-happens-during-coin-quality-control/encoded-review.json"
+    ]
+  },
+  "previousPublishedToday": {
+    "date": "2026-10-10",
+    "live": 4,
+    "slugs": [
+      "comparing-an-ai-draft-with-the-original-customer-reques",
+      "retiring-outdated-website-content-with-a-clear-plan",
+      "why-silver-mine-supply-includes-byproduct-production",
+      "what-happens-during-coin-quality-control"
+    ],
+    "proofs": [
+      ".workflow-state/recovery-2026-10-10-0830/comparing-an-ai-draft-with-the-original-customer-reques-live-proof.json",
+      ".workflow-state/recovery-2026-10-10-0830/retiring-outdated-website-content-with-a-clear-plan-live-proof.json",
+      ".workflow-state/recovery-2026-10-10-0830/why-silver-mine-supply-includes-byproduct-production-live-proof.json",
+      ".workflow-state/recovery-2026-10-10-0830/what-happens-during-coin-quality-control-live-proof.json"
+    ]
+  },
+  "socialRefill": {
+    "checkedAt": "2026-10-12T22:09:56.469Z",
+    "added": 15,
+    "targetPerChannel": 9,
+    "counts": {
+      "6a3e73fb5ab6d2f10674b516": 5,
+      "6a3e63375ab6d2f1067461b2": 5,
+      "6a67c5d64b2d03035f4f0228": 9
+    },
+    "proof": ".workflow-state/buffer-latest-status.json",
+    "remaining": "Four opening-hero repairs require the active renderer to release its lock; YouTube and X each have four remaining slots.",
+    "repairQueue": ".workflow-state/social-refill-2026-10-12/opening-repair-queue.json",
+    "hostedProof": ".workflow-state/social-refill-2026-10-12/hosted-verification.json"
+  },
+  "reelBacklogProcess": {
+    "activatedAt": "2026-10-12T22:13:14.444127+00:00",
+    "queue": ".workflow-state/reel-backlog/current.json",
+    "localRefresh": "Owner brief and existing Buffer runner",
+    "owner": "Existing 08:30 and 21:30 owner, minimum two reel-stage advances while channel deficits remain",
+    "targetPerChannel": 9,
+    "initialRepairs": 4,
+    "sourceApprovalRepairsNeeded": 3,
+    "blocker": "Existing renderer owns media locks; do not start the prepared opening repairs until it finishes. Independent source review remains actionable.",
+    "validation": "10 targeted tests passed; brief and queue generation pass; automation update confirmed ACTIVE.",
+    "checkedAt": "2026-10-13T04:34:38.088Z",
+    "channelCounts": {
+      "youtube": 5,
+      "x": 5,
+      "instagram": 9
+    },
+    "channelCountsAsOf": "2026-10-12T22:09:56.469Z",
+    "sourceRepairItemsReviewed": [
+      "how-to-compare-silver-buyback-quotes-fairly",
+      "tiktok-for-local-business-does-it-work"
+    ],
+    "sourceRepairBlocker": "Current source artifact hashes differ from the existing editorial approvals; both require direct content repair/review before exact hash renewal. Prepared opening repair stopped at the fail-closed source gate."
+  },
+  "morningOwnerPass": {
+    "checkedAt": "2026-10-14T15:34:00Z",
+    "operatingDate": "2026-10-14",
+    "status": "publishing_incident",
+    "beforeStage": "The Oct 12 approval-log package was still approved for Oct 12 with no per-slug live proof; the latest exact canonical request had failed DNS. Six older plan entries remained in prior recovery inventory. Current Oct 14 queue had two drafts, with two planned topics absent. Saved Buffer counts were YouTube 4, X 2, Instagram 6.",
+    "afterStage": "One exact canonical article request again failed DNS. Both Oct 14 queue drafts failed the reviewed-blog-ready gate as unreviewed. Two named reel source repairs (buyback comparison and TikTok local business) now have aligned short spoken/display/data/caption questions, exact editorial hashes, passing parser/engagement checks, and narration estimates; their existing MP4s are still stale and require new renders. The refreshed worklist still has two distribution handoffs blocked at hosting/live verification.",
+    "dueInventory": {
+      "approvedPackages": 0,
+      "queueDrafts": 2,
+      "reviewedGate": {
+        "handing-accessibility-findings-to-a-new-website-provide": "unreviewed",
+        "separating-a-pilot-result-from-a-production-promise": "unreviewed"
+      },
+      "missingPlannedTopics": [
+        "1925-fort-vancouver-half-dollar-tells-a-local-history",
+        "comparing-design-details-without-assigning-coin-grades"
+      ]
+    },
+    "blogRecovery": {
+      "oldestUnresolved": "creating-an-approval-log-for-ai-assisted-work",
+      "plannedDate": "2026-10-08",
+      "approvedDate": "2026-10-12",
+      "liveState": "unknown",
+      "exactAttempt": "curl -fsSL --max-time 15 https://fuseddistribution.com/blog/creating-an-approval-log-for-ai-assisted-work/ failed: curl: (6) Could not resolve host: fuseddistribution.com",
+      "completePackagesThisPass": 0,
+      "target": 4
+    },
+    "reels": {
+      "sourceRepairsAdvanced": [
+        "how-to-compare-silver-buyback-quotes-fairly",
+        "tiktok-for-local-business-does-it-work"
+      ],
+      "nextStage": "The current backlog records opening_hero_repair for both old MP4s because their encoded first frames are blank; changed narration means regenerate from the newly approved scripts before treating old opening candidates as reusable.",
+      "distributionHandoffs": [
+        "morgan-dollar-o-mint-mark-new-orleans",
+        "what-a-coin-collar-does-during-striking"
+      ],
+      "savedCounts": {
+        "youtube": 4,
+        "x": 2,
+        "instagram": 6
+      },
+      "targetPerChannel": 9,
+      "savedDeficits": {
+        "youtube": 5,
+        "x": 7,
+        "instagram": 3
+      },
+      "countsAreNotLiveConfirmation": true
+    },
+    "engagement": {
+      "status": "deferred_under_oldest-blog-incident",
+      "freshReportRun": false,
+      "verifiedCoverageMissing": [
+        "youtube",
+        "instagram",
+        "twitter",
+        "facebook"
+      ],
+      "replyDrafts": 0
+    },
+    "usage": {
+      "usedPercent": 100,
+      "windowDurationMins": 10080,
+      "resetsAt": 1792501847,
+      "dailyDeltaPercentagePoints": 56,
+      "scope": "Account-wide; same reset window as Oct 13."
+    },
+    "inference": {
+      "latestHealthFile": ".workflow-state/litert-health/latest.json",
+      "checkedAt": "2026-10-13T14:06:54Z",
+      "healthy": true,
+      "stale": true,
+      "changedResearchAttempt": "public/blog/research/attempts/2026-10-14-20261013T140651851704.json",
+      "failedTopics": [
+        "1925 Fort Vancouver half dollar tells a local history",
+        "comparing design details without assigning coin grades"
+      ],
+      "action": "No inference retry or research rerun; oldest unresolved blog release remains blocked on exact live reconciliation."
+    },
+    "proof": [
+      ".workflow-state/reel-backlog/current.json",
+      ".workflow-state/recovery-2026-10-14-0830/owner-pass.json",
+      ".workflow-state/token-budget-samples.json",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/qa.json",
+      "public/blog/tiktok-for-local-business-does-it-work/qa.json",
+      "public/blog/how-to-compare-silver-buyback-quotes-fairly/reel-script.md",
+      "public/blog/tiktok-for-local-business-does-it-work/reel-script.md"
+    ],
+    "blocker": "Canonical production DNS resolution failed; live publication state and hosted-byte proofs are unavailable. No due article package passed owner review.",
+    "attemptedResolution": "Made one exact canonical request; verified the approved-date state and due-gated both current drafts; advanced two independent reel source repairs to exact hash-bound approvals; refreshed the reel worklist; verified no active publisher/research/render owner before mutation.",
+    "remainingWork": [
+      "Restore DNS, then reconcile exact Oct 12 article content, canonical, actual date, hero bytes, catalog and sitemap before selecting the next oldest missing article.",
+      "Continue oldest article recovery toward four complete packages per pass; do not count a planned or approved article as live without per-slug proof.",
+      "Render new speech for the two repaired reel sources with the pinned Nano voice, approved hero first frame and free approved music; inspect encoded opening/middle/ending, speech, captions, rights and both derivatives before hosting.",
+      "Resume Morgan and coin-collar handoffs with exact hosted-byte checks when DNS is available; schedule only after live capacity/cadence checks.",
+      "Keep community data unavailable explicitly; draft replies only from verified comments after blog incident clears.",
+      "Finish the three named October 4 recovery failures before clearing that backlog."
+    ]
+  }
+}

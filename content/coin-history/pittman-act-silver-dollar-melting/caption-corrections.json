@@ -1,0 +1,58 @@
+[
+  {
+    "segment": 4,
+    "from": "Bala",
+    "to": "The law",
+    "startSec": 0.0,
+    "endSec": 0.42
+  },
+  {
+    "segment": 5,
+    "from": "replacement,",
+    "to": "replacement.",
+    "startSec": 1.4,
+    "endSec": 1.98
+  },
+  {
+    "segment": 5,
+    "from": "for",
+    "to": "For",
+    "startSec": 2.42,
+    "endSec": 2.58
+  },
+  {
+    "segment": 5,
+    "from": "Act.",
+    "to": "act,",
+    "startSec": 3.74,
+    "endSec": 4.04
+  },
+  {
+    "segment": 5,
+    "from": "The",
+    "to": "the",
+    "startSec": 4.48,
+    "endSec": 4.62
+  },
+  {
+    "segment": 5,
+    "from": "insufficient.",
+    "to": "in sufficient",
+    "startSec": 9.72,
+    "endSec": 10.18
+  },
+  {
+    "segment": 5,
+    "from": "Quantity",
+    "to": "quantity",
+    "startSec": 10.76,
+    "endSec": 11.12
+  },
+  {
+    "segment": 6,
+    "from": "buoyant",
+    "to": "bullion",
+    "startSec": 5.66,
+    "endSec": 6.1
+  }
+]

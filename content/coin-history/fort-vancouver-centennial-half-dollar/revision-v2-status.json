@@ -1,0 +1,25 @@
+{
+  "status": "final-generated-and-verified",
+  "renderAuthorized": true,
+  "transcript": "narration-v2-awaiting-approval.txt",
+  "keepGeneratedImages": true,
+  "addSuppliedImages": 3,
+  "output": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "targetBytes": 45000000,
+    "maximumBytesExclusive": 50000000
+  },
+  "previousMasterPreserved": true,
+  "approvedOn": "2026-10-14",
+  "approval": "User: Looks great generate the final here",
+  "engagementException": "Use the approved documentary closing verbatim; do not append an unapproved question or sales pitch.",
+  "completedAt": "2026-10-14T15:52:52.790775+00:00",
+  "video": "video/out/fort-vancouver-centennial-half-dollar/fort-vancouver-centennial-half-dollar.mp4",
+  "bytes": 44291441,
+  "videoSha256": "d25b499cc54e27f126e2afac96cc22e39a7771946d4d65c84ecffc7147237c18",
+  "runtimeSeconds": 118.6,
+  "published": false,
+  "scheduled": false
+}

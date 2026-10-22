@@ -1,0 +1,29 @@
+{
+  "coordinateSpace": "EXIF-oriented source pixels",
+  "sources": [
+    {
+      "file": "IMG_4696.jpeg",
+      "box": [
+        2460,
+        3380,
+        1280,
+        1320
+      ],
+      "angle": 90,
+      "source": "Coin Raw/IMG_4696.jpeg",
+      "sha256": "d2e572a83cb78a884af366a5eac10d71d5a1f79bf4f37693cc22eb9a3b7ba66e"
+    },
+    {
+      "source": "Coin Raw/IMG_3488.jpeg",
+      "box": [
+        295,
+        820,
+        525,
+        550
+      ],
+      "angle": 180,
+      "sha256": "2bd1aa5912a783eef9d9aeef822d6f278345a144fe2a0353a87519987d252ee0"
+    }
+  ],
+  "note": "Separate specimens; no mint, grade or paired-side claims. Deterministic crops only."
+}

@@ -1,0 +1,38 @@
+{
+  "status": "locally-generated-and-verified",
+  "illustration": {
+    "name": "treasury-vault-illustration",
+    "prompt": "Museum-quality documentary concept art of a generic historic government coin storage vault, imposing circular steel vault door open to a quiet stone and steel archive room, carefully arranged metal storage shelves and shallow coin trays, soft amber practical lamps, restrained archival color with cool shadows, vertical composition, highly detailed realistic materials, no people, no cloth sacks or bags, no readable text, no labels, no logos, no identifiable real vault, no claim this depicts a documented discovery",
+    "negativePrompt": "cloth bag, burlap sack, text, letters, numbers, watermark, logo, modern electronics, modern clothing, fantasy, deformed hands, malformed architecture, blurry, sharp coin date, invented mint mark",
+    "seed": 391204,
+    "model": "DreamShaper_8_pruned.safetensors",
+    "modelLicense": "creativeml-openrail-m",
+    "generator": "open-generative-ai local sd-cli",
+    "width": 384,
+    "height": 640,
+    "steps": 20,
+    "timeoutSeconds": 14400,
+    "role": "Illustrative atmosphere only; not archival evidence or a depiction of an identified historical event.",
+    "sha256": "e0ff1c148538b2fcab15eed918e45b17be308957ba73b24056e1fef74d305f7c",
+    "file": "generated/treasury-vault-illustration.png"
+  },
+  "note": "Vault image is clearly identified as AI generated illustrative atmosphere, not as the site or photograph of a documented hoard.",
+  "graphics": [
+    {
+      "file": "artwork-source/bland-allison-policy.jpg",
+      "sha256": "779c1a6c0f8b62adbd4962fb0118f3755d2cba14f5fc1c4201c8f06383a52969"
+    },
+    {
+      "file": "artwork-source/love-vault-discovery.jpg",
+      "sha256": "0f5461e094220666febaf3b491a674bdcec527120b10bee0f8034ee58d4f74cf"
+    },
+    {
+      "file": "artwork-source/redfield-hoard-discovery.jpg",
+      "sha256": "9c8c31dcb127962bfaf8ef2b86ecd8435802900c6d1f7fe46c106c30ddf1307e"
+    },
+    {
+      "file": "artwork-source/treasury-release-1903-o.jpg",
+      "sha256": "e156527a08938b4b86b2b0a54d34160606267c9badbddea7637b0f31a3a5178b"
+    }
+  ]
+}
