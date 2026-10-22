@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-13T14:53:27.273405+00:00",
+  "activeNewTopics": 23,
+  "totalTechPool": 199,
+  "nextSelectionPreview": [
+    "Whisper explained from speech to editable text",
+    "Buffer draft versus scheduled post explained"
+  ],
+  "previewOnly": true,
+  "focusedChecks": [
+    "three topic/brief/rotation tests passed",
+    "owner coin preference regression passed",
+    "research shell syntax passed",
+    "owner brief syntax passed",
+    "diff whitespace passed"
+  ],
+  "existingTestFinding": "tests/gemma-nightly-resilience.test.mjs: unrelated daily runner test expects legacy ERROR: no valid Gemma queue text. Existing runner uses BLOCKED: no valid queue. No daily runner changes made in this task.",
+  "muse": "Meta Muse for Small Business confirmed by Nick and official Meta sources; three specific research seeds activated. Account demos still require verification.",
+  "scheduledJobsAdded": 0,
+  "existingDatedPlansModified": false
+}

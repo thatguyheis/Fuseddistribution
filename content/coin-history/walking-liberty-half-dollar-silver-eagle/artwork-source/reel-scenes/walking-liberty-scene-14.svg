@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+<defs>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#59707a" stroke-width="1" opacity=".2"/></pattern>
+  <style>.brand{font:600 17px Arial,sans-serif;letter-spacing:4px;fill:#58d6ff}.label{font:700 16px Arial,sans-serif;letter-spacing:1.3px;fill:#102e3a}.bright-label{font:700 16px Arial,sans-serif;letter-spacing:1.3px;fill:#f5edda}.year{font:bold 47px Georgia,serif;fill:#102e3a}.kicker{font:700 22px Arial,sans-serif;letter-spacing:2px;fill:#f3d45c}.note{font:16px Arial,sans-serif;fill:#b9cbd1}.ink{fill:#102e3a}</style>
+</defs>
+<rect width="720" height="1280" fill="#071923"/><rect width="720" height="1280" fill="url(#grid)"/>
+<rect x="55" y="410" width="610" height="210" rx="20" fill="#fffdf7"/><text x="360" y="471" text-anchor="middle" class="label">OBVERSE IN OWNER PHOTO</text><text x="360" y="552" text-anchor="middle" class="year">WALKING LIBERTY</text><rect x="55" y="660" width="610" height="210" rx="20" fill="#f3d45c"/><text x="360" y="721" text-anchor="middle" class="label ink">MINT HISTORY</text><text x="360" y="802" text-anchor="middle" class="year ink">REVERSE REFRESHED</text><text x="360" y="895" text-anchor="middle" class="kicker">THE REVERSE IS NOT SHOWN HERE</text>
+<path d="M42 985H678" stroke="#58d6ff" stroke-opacity=".35" stroke-width="2"/>
+<text x="42" y="1224" class="brand">FUSED <tspan fill="#d9c6a5">DISTRIBUTION</tspan></text>
+</svg>

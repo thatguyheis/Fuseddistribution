@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "updated": "2026-10-15",
+  "assets": [
+    {
+      "id": "walking-liberty-scene-00",
+      "title": "Same Liberty? Different coin.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-00.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-00.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-00.jpg",
+      "sha256": "ef9c4d24365afbe4f49154b6c517bef29e0e28cec807fd6104e8f6a523b00e61",
+      "sourceCoinIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-01",
+      "title": "Start with the half dollar.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-01.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-01.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-01.jpg",
+      "sha256": "ac980ae748a5bac132bfd061500776fb0820ad6722545c5f44ca17bcacd15126",
+      "sourceCoinIds": [
+        "coin-0020"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-02",
+      "title": "Follow the design across eras.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-02.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-02.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-02.jpg",
+      "sha256": "60328e6a4f28a6b938eeee7d43f375667c376f276256fc2affeae4fbbf737bf2",
+      "sourceCoinIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-03",
+      "title": "Design debut: 1916",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-03.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-03.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-03.jpg",
+      "sha256": "c87e958737b14f9db58e1c60613f19fcb834bdac4e462e655bcae0de1d86eb0b",
+      "sourceCoinIds": [
+        "coin-0020"
+      ],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-04",
+      "title": "Liberty in full stride.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-04.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-04.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-04.jpg",
+      "sha256": "c45f6a9138424cd49ddd5102a33b0d78a8fb7fd28e088602432b01221b7f5496",
+      "sourceCoinIds": [
+        "coin-0020"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-05",
+      "title": "The half dollar carries the image.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-05.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-05.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-05.jpg",
+      "sha256": "4b67774346c518358b6b65f232c00c5ef3bf35d6379d3741c01bccc0b6c21904",
+      "sourceCoinIds": [
+        "coin-0020"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-06",
+      "title": "The run ends: 1947",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-06.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-06.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-06.jpg",
+      "sha256": "d4fade5ce53e6b4c6e79907a3cc95877746333d9a967576509b375bc57d65e32",
+      "sourceCoinIds": [
+        "coin-0020"
+      ],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-07",
+      "title": "A new half dollar: 1948",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-07.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-07.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-07.jpg",
+      "sha256": "a896fb7c1a4092424546e514e369f7daf757bdb6a999feecb47e137dd5359f89",
+      "sourceCoinIds": [],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-08",
+      "title": "Liberty Bell replaces the eagle.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-08.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-08.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-08.jpg",
+      "sha256": "fb3efa347faa4bfe7eccc6a431094ae2b37fc20f0dddd40ca3cd216453eaa160",
+      "sourceCoinIds": [],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-09",
+      "title": "A new program begins: 1986",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-09.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-09.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-09.jpg",
+      "sha256": "ff186ae1b629fa58316d98fdd7c97174164b05c74a04a3c09d7d65271d854f60",
+      "sourceCoinIds": [
+        "coin-0013"
+      ],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-10",
+      "title": "The design returns on silver.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-10.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-10.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-10.jpg",
+      "sha256": "07db3d9cc9388d6be6d20accd0b9cf0a03747cf0d8e7f7e0a080efe5a27c2e41",
+      "sourceCoinIds": [
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-11",
+      "title": "Same obverse, new program.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-11.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-11.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-11.jpg",
+      "sha256": "b024e176229c34ea6dcd86949c0de283c7ceef1b353c94ae15f0b17eb8bcbc72",
+      "sourceCoinIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-12",
+      "title": "The photographed Eagle: 2021",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-12.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-12.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-12.jpg",
+      "sha256": "8c71186c9861cfee36310cd4daf9c3b201f0a5c6021e694e03030ba03cb0de17",
+      "sourceCoinIds": [
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-13",
+      "title": "The front stays familiar.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-13.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-13.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-13.jpg",
+      "sha256": "8ffc3ec4104b75e276042e2ec7334109f89f02494ad262c31fa35656fd75c5ff",
+      "sourceCoinIds": [
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-14",
+      "title": "The reverse changes in 2021.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-14.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-14.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-14.jpg",
+      "sha256": "3a4053a75cbd9cc5a1be38f2ec30d160c91281c92fb5154a4de7b0d9f8f634b2",
+      "sourceCoinIds": [],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-15",
+      "title": "Different coins. One design lineage.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-15.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-15.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-15.jpg",
+      "sha256": "98c5edf3bff88462807988e31e4ef58a219542344a81006ba1c71775f0c3cf24",
+      "sourceCoinIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-16",
+      "title": "1916 → 1986 → 2021",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-16.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-16.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-16.jpg",
+      "sha256": "f666f6a90b22e6f945a75f565ed3b51dfb426b77b73d59a6564a2c1ac4fb1107",
+      "sourceCoinIds": [],
+      "role": "sourced explainer graphic, not a coin photograph",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    },
+    {
+      "id": "walking-liberty-scene-17",
+      "title": "The design carries the history.",
+      "kind": "editorial-graphic-with-owner-photo",
+      "sourceSvg": "content/coin-history/walking-liberty-half-dollar-silver-eagle/artwork-source/reel-scenes/walking-liberty-scene-17.svg",
+      "reusableImage": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-17.jpg",
+      "publicPreview": "public/blog/walking-liberty-half-dollar-silver-eagle/images/reel-scenes/walking-liberty-scene-17.jpg",
+      "sha256": "21117b3a604602e8589d3b0ed4b4f9c9f5553eab6028e22f6b713420a03fd384",
+      "sourceCoinIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "owner coin photograph in verified comparison treatment",
+      "reuse": "Fused-owned blog, reel, and future coin-history graphics; keep the accompanying fact labels and specimen limitations.",
+      "rights": "Owner photo reuse for Fused content; no standalone or public stock redistribution grant.",
+      "reviewStatus": "reviewed-for-this-episode"
+    }
+  ]
+}

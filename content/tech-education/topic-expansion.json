@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "date": "2026-10-13",
+  "topics": [
+    {
+      "brand": "tech",
+      "keyword": "Whisper explained from speech to editable text",
+      "category": "speech-and-captions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Whisper",
+      "hookCandidate": "How does Whisper turn a voice recording into words?",
+      "strategy": {
+        "subject": "Whisper explained from speech to editable text",
+        "hook": "How does Whisper turn a voice recording into words?",
+        "promise": "A transcript is a draft of what was said, not proof it was correct.",
+        "explanation": "Follow a short authorized recording through transcription and correction. Separate recognition from writing or fact checking.",
+        "visualSupport": "Waveform beside a checked transcript; label a demo as a demo.",
+        "payoff": "A transcript is a draft of what was said, not proof it was correct.",
+        "variety": "speech-and-captions: Whisper explained from speech to editable text. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
+      ],
+      "evidencePaths": [
+        "video/scripts/generate-captions.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Whisper is an optional integration; the October 13 Morgan render used proportional fallback. Require a new verified demo before claiming Whisper produced an output."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Whisper captions versus estimated subtitle timing",
+      "category": "speech-and-captions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Whisper",
+      "hookCandidate": "Why can correct captions appear at the wrong moment?",
+      "strategy": {
+        "subject": "Whisper captions versus estimated subtitle timing",
+        "hook": "Why can correct captions appear at the wrong moment?",
+        "promise": "Correct words and correct timing require separate checks.",
+        "explanation": "Compare recognized timing with our proportional fallback using the same narration.",
+        "visualSupport": "Same phrase at two timestamped playback positions.",
+        "payoff": "Correct words and correct timing require separate checks.",
+        "variety": "speech-and-captions: Whisper captions versus estimated subtitle timing. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
+      ],
+      "evidencePaths": [
+        "video/out/morgan-dollar-o-mint-mark-new-orleans/captions-meta.json"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Whisper is an optional integration; the October 13 Morgan render used proportional fallback. Require a new verified demo before claiming Whisper produced an output."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Checking names and numbers in Whisper transcripts",
+      "category": "speech-and-captions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Whisper",
+      "hookCandidate": "Would you trust a transcript to spell your customer name?",
+      "strategy": {
+        "subject": "Checking names and numbers in Whisper transcripts",
+        "hook": "Would you trust a transcript to spell your customer name?",
+        "promise": "Replay critical names and numbers before publishing them.",
+        "explanation": "Use a synthetic example containing a name and a number; compare the audio with the transcript before reuse.",
+        "visualSupport": "Audio excerpt and marked transcript corrections, no real customer details.",
+        "payoff": "Replay critical names and numbers before publishing them.",
+        "variety": "speech-and-captions: Checking names and numbers in Whisper transcripts. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
+      ],
+      "evidencePaths": [
+        "video/scripts/generate-captions.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Whisper is an optional integration; the October 13 Morgan render used proportional fallback. Require a new verified demo before claiming Whisper produced an output."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Local Whisper and hosted transcription differences",
+      "category": "speech-and-captions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Whisper",
+      "hookCandidate": "Does every transcription send your audio to the cloud?",
+      "strategy": {
+        "subject": "Local Whisper and hosted transcription differences",
+        "hook": "Does every transcription send your audio to the cloud?",
+        "promise": "Deployment determines where audio travels; the model name alone does not.",
+        "explanation": "Draw local and hosted processing paths; verify the actual runtime, downloads and network behavior before making privacy claims.",
+        "visualSupport": "Two labeled data-flow diagrams.",
+        "payoff": "Deployment determines where audio travels; the model name alone does not.",
+        "variety": "speech-and-captions: Local Whisper and hosted transcription differences. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
+      ],
+      "evidencePaths": [
+        "video/scripts/generate-captions.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Whisper is an optional integration; the October 13 Morgan render used proportional fallback. Require a new verified demo before claiming Whisper produced an output."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Buffer draft versus scheduled post explained",
+      "category": "social-publishing",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Buffer",
+      "hookCandidate": "Your Buffer draft has a date. Will it actually publish?",
+      "strategy": {
+        "subject": "Buffer draft versus scheduled post explained",
+        "hook": "Your Buffer draft has a date. Will it actually publish?",
+        "promise": "Check the post state, not just its date.",
+        "explanation": "Demonstrate the difference between a dated draft and a post moved to the queue.",
+        "visualSupport": "Redacted draft and scheduled examples with state labels.",
+        "payoff": "Check the post state, not just its date.",
+        "variety": "social-publishing: Buffer draft versus scheduled post explained. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://support.buffer.com/en-us/articles/saving-and-scheduling-draft-posts-CBLXg1yFXp"
+      ],
+      "evidencePaths": [
+        "scripts/buffer-backlog-runner.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Verify a Buffer post after scheduling it",
+      "category": "social-publishing",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Buffer",
+      "hookCandidate": "The upload succeeded. Did your post get scheduled?",
+      "strategy": {
+        "subject": "Verify a Buffer post after scheduling it",
+        "hook": "The upload succeeded. Did your post get scheduled?",
+        "promise": "A scheduling receipt is stronger evidence than an upload message.",
+        "explanation": "Follow a post ID through API readback and inspect channel, time, attachment and state.",
+        "visualSupport": "Redacted post receipt with four labeled checks.",
+        "payoff": "A scheduling receipt is stronger evidence than an upload message.",
+        "variety": "social-publishing: Verify a Buffer post after scheduling it. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.buffer.com/guides/posts-and-scheduling.html"
+      ],
+      "evidencePaths": [
+        "public/blog/scripts/buffer-live.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Buffer queue depth versus publishing cadence",
+      "category": "social-publishing",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Buffer",
+      "hookCandidate": "Can a full Buffer queue still leave tomorrow empty?",
+      "strategy": {
+        "subject": "Buffer queue depth versus publishing cadence",
+        "hook": "Can a full Buffer queue still leave tomorrow empty?",
+        "promise": "Count posts and inspect when each one will publish.",
+        "explanation": "Compare two illustrative calendars with equal inventory but different spacing.",
+        "visualSupport": "Two labeled calendar diagrams, not invented performance data.",
+        "payoff": "Count posts and inspect when each one will publish.",
+        "variety": "social-publishing: Buffer queue depth versus publishing cadence. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.buffer.com/guides/posts-and-scheduling.html"
+      ],
+      "evidencePaths": [
+        "public/blog/scripts/lib/buffer-cadence.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Buffer scheduled versus sent status explained",
+      "category": "social-publishing",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Buffer",
+      "hookCandidate": "Scheduled is not sent. Where did the post stop?",
+      "strategy": {
+        "subject": "Buffer scheduled versus sent status explained",
+        "hook": "Scheduled is not sent. Where did the post stop?",
+        "promise": "A future slot does not prove that the platform received the post.",
+        "explanation": "Trace scheduled, sent and error states using redacted examples and a final platform check.",
+        "visualSupport": "State diagram and redacted receipt.",
+        "payoff": "A future slot does not prove that the platform received the post.",
+        "variety": "social-publishing: Buffer scheduled versus sent status explained. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.buffer.com/guides/posts-and-scheduling.html"
+      ],
+      "evidencePaths": [
+        "public/blog/scripts/buffer-live.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Chatterbox Nano narration and transcript tools explained",
+      "category": "voice-and-video",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Chatterbox Nano",
+      "hookCandidate": "One tool speaks. Another listens. Why use both?",
+      "strategy": {
+        "subject": "Chatterbox Nano narration and transcript tools explained",
+        "hook": "One tool speaks. Another listens. Why use both?",
+        "promise": "Narration generation and transcription run in opposite directions.",
+        "explanation": "Show text-to-speech and speech-to-text as distinct jobs. Verify our Nano implementation separately from upstream product claims.",
+        "visualSupport": "Text-to-audio-to-caption workflow diagram.",
+        "payoff": "Narration generation and transcription run in opposite directions.",
+        "variety": "voice-and-video: Chatterbox Nano narration and transcript tools explained. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.openai.com/api/docs/guides/speech-to-text"
+      ],
+      "evidencePaths": [
+        "video/scripts/chatterbox-tts.py"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Verify the exact local Nano implementation/version. Source URL is supporting context, not independent documentation of Nano capabilities or licensing."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Reuse unchanged Chatterbox Nano narration safely",
+      "category": "voice-and-video",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Chatterbox Nano",
+      "hookCandidate": "Why generate the same narration twice?",
+      "strategy": {
+        "subject": "Reuse unchanged Chatterbox Nano narration safely",
+        "hook": "Why generate the same narration twice?",
+        "promise": "Reuse unchanged audio; regenerate when its approved inputs change.",
+        "explanation": "Explain the local audio cache and why changed wording or voice settings must invalidate it.",
+        "visualSupport": "Redacted cache hit and changed-input example.",
+        "payoff": "Reuse unchanged audio; regenerate when its approved inputs change.",
+        "variety": "voice-and-video: Reuse unchanged Chatterbox Nano narration safely. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "evidencePaths": [
+        "video/scripts/generate-audio.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md",
+      "usageCaveat": "Verify the exact local Nano implementation/version. Source URL is supporting context, not independent documentation of Nano capabilities or licensing."
+    },
+    {
+      "brand": "tech",
+      "keyword": "Remotion explained as video built from components",
+      "category": "voice-and-video",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Remotion",
+      "hookCandidate": "How can the same video layout teach a different topic?",
+      "strategy": {
+        "subject": "Remotion explained as video built from components",
+        "hook": "How can the same video layout teach a different topic?",
+        "promise": "Reuse structure while reviewing every new claim and visual.",
+        "explanation": "Show a reusable composition receiving new approved images, narration and text.",
+        "visualSupport": "Actual component preview beside the rendered scene.",
+        "payoff": "Reuse structure while reviewing every new claim and visual.",
+        "variety": "voice-and-video: Remotion explained as video built from components. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://www.remotion.dev/docs/"
+      ],
+      "evidencePaths": [
+        "video/src/compositions/BlogReel.tsx"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Check reel duration with ffprobe before uploading",
+      "category": "voice-and-video",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "ffprobe",
+      "hookCandidate": "Your filename says final. How long is the video really?",
+      "strategy": {
+        "subject": "Check reel duration with ffprobe before uploading",
+        "hook": "Your filename says final. How long is the video really?",
+        "promise": "Measure the encoded file before scheduling it.",
+        "explanation": "Inspect measured file duration and compare with the script estimate and destination requirements.",
+        "visualSupport": "Real redacted ffprobe output beside a timeline.",
+        "payoff": "Measure the encoded file before scheduling it.",
+        "variety": "voice-and-video: Check reel duration with ffprobe before uploading. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "evidencePaths": [
+        "video/scripts/render.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Automation retry without duplicate social posts",
+      "category": "automation-reliability",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Buffer and local scripts",
+      "hookCandidate": "A request timed out. Should you press publish again?",
+      "strategy": {
+        "subject": "Automation retry without duplicate social posts",
+        "hook": "A request timed out. Should you press publish again?",
+        "promise": "Check whether the first request succeeded before creating another post.",
+        "explanation": "Demonstrate a simulated uncertain response; reconcile existing post evidence before retrying.",
+        "visualSupport": "Labeled simulation of request, timeout, lookup and decision.",
+        "payoff": "Check whether the first request succeeded before creating another post.",
+        "variety": "automation-reliability: Automation retry without duplicate social posts. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.buffer.com/guides/posts-and-scheduling.html"
+      ],
+      "evidencePaths": [
+        "scripts/buffer-backlog-runner.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Resume local automation after a computer is offline",
+      "category": "automation-reliability",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Local publishing workflow",
+      "hookCandidate": "Your computer was off. Which tasks really need replaying?",
+      "strategy": {
+        "subject": "Resume local automation after a computer is offline",
+        "hook": "Your computer was off. Which tasks really need replaying?",
+        "promise": "Replay missing work, not everything on yesterday\u2019s schedule.",
+        "explanation": "Compare due work with saved completion evidence and resume missing stages.",
+        "visualSupport": "Labeled offline/recovery timeline using sanitized records.",
+        "payoff": "Replay missing work, not everything on yesterday\u2019s schedule.",
+        "variety": "automation-reliability: Resume local automation after a computer is offline. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.buffer.com/guides/posts-and-scheduling.html"
+      ],
+      "evidencePaths": [
+        "scripts/lib/daily-production-state.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Stop repeated AI failures with a circuit breaker",
+      "category": "automation-reliability",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Chatterbox workflow",
+      "hookCandidate": "Why does this automation stop instead of trying forever?",
+      "strategy": {
+        "subject": "Stop repeated AI failures with a circuit breaker",
+        "hook": "Why does this automation stop instead of trying forever?",
+        "promise": "A deliberate stop prevents repeated wasted work while preserving recovery evidence.",
+        "explanation": "Explain our failure counter, runtime hold and supervised recovery without implying a universal retry count.",
+        "visualSupport": "Three-state diagram using current configured thresholds only.",
+        "payoff": "A deliberate stop prevents repeated wasted work while preserving recovery evidence.",
+        "variety": "automation-reliability: Stop repeated AI failures with a circuit breaker. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "evidencePaths": [
+        "scripts/tts-circuit.py"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "When a local script is better than an AI agent",
+      "category": "local-ai-decisions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Local scripts and Gemma",
+      "hookCandidate": "Do you need an AI model to count missing files?",
+      "strategy": {
+        "subject": "When a local script is better than an AI agent",
+        "hook": "Do you need an AI model to count missing files?",
+        "promise": "Use code for exact checks and models where interpretation adds value.",
+        "explanation": "Compare deterministic inventory checks with source-grounded prose tasks.",
+        "visualSupport": "Side-by-side task routing diagram.",
+        "payoff": "Use code for exact checks and models where interpretation adds value.",
+        "variety": "local-ai-decisions: When a local script is better than an AI agent. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ai.google.dev/gemma/docs"
+      ],
+      "evidencePaths": [
+        "docs/LOCAL-ADVISORY-SOP.md"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Test a small local language model on one real task",
+      "category": "local-ai-decisions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Gemma",
+      "hookCandidate": "A smaller model is cheaper. Can it do this job correctly?",
+      "strategy": {
+        "subject": "Test a small local language model on one real task",
+        "hook": "A smaller model is cheaper. Can it do this job correctly?",
+        "promise": "Choose a model from task results, not size alone.",
+        "explanation": "Define one bounded writing task, a factual rubric and measured runtime before comparing outputs.",
+        "visualSupport": "Blank evaluation scorecard populated only after an actual test.",
+        "payoff": "Choose a model from task results, not size alone.",
+        "variety": "local-ai-decisions: Test a small local language model on one real task. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ai.google.dev/gemma/docs"
+      ],
+      "evidencePaths": [
+        "docs/LOCAL-ADVISORY-SOP.md"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Batch content preparation without repeating AI research",
+      "category": "local-ai-decisions",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Local research workflow",
+      "hookCandidate": "Why research the same source again for every post?",
+      "strategy": {
+        "subject": "Batch content preparation without repeating AI research",
+        "hook": "Why research the same source again for every post?",
+        "promise": "Reuse verified research context without reusing unsupported claims.",
+        "explanation": "Show reusable source notes with claim-specific review and freshness checks.",
+        "visualSupport": "Source note connected to two distinct questions.",
+        "payoff": "Reuse verified research context without reusing unsupported claims.",
+        "variety": "local-ai-decisions: Batch content preparation without repeating AI research. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://ai.google.dev/gemma/docs"
+      ],
+      "evidencePaths": [
+        "docs/BATCH-PRODUCTION-SOP.md"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Why a hosted reel can be missing from a blog page",
+      "category": "website-and-media",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Website video embed",
+      "hookCandidate": "The video is online. Why is the player missing?",
+      "strategy": {
+        "subject": "Why a hosted reel can be missing from a blog page",
+        "hook": "The video is online. Why is the player missing?",
+        "promise": "Verify both the hosted file and the page that embeds it.",
+        "explanation": "Use our repaired URL-validation incident to separate file availability from HTML player creation.",
+        "visualSupport": "Redacted before/after player and source check.",
+        "payoff": "Verify both the hosted file and the page that embeds it.",
+        "variety": "website-and-media: Why a hosted reel can be missing from a blog page. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.cloudflare.com/workers/static-assets/"
+      ],
+      "evidencePaths": [
+        "tests/blog-video-url.test.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Prove a website update is live after deployment",
+      "category": "website-and-media",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Cloudflare and local verification",
+      "hookCandidate": "Deployment succeeded. Are visitors seeing the new page?",
+      "strategy": {
+        "subject": "Prove a website update is live after deployment",
+        "hook": "Deployment succeeded. Are visitors seeing the new page?",
+        "promise": "Deployment completion and live verification are separate checks.",
+        "explanation": "Compare the actual public page and asset with the intended change, not just a deployment exit code.",
+        "visualSupport": "Public contact-link example and a sanitized verification record.",
+        "payoff": "Deployment completion and live verification are separate checks.",
+        "variety": "website-and-media: Prove a website update is live after deployment. Compare mechanism and takeaway with existing posts before drafting; a renamed title is not a new lesson."
+      },
+      "sourceUrls": [
+        "https://developers.cloudflare.com/workers/static-assets/"
+      ],
+      "evidencePaths": [
+        "scripts/deploy-approved-blog.mjs"
+      ],
+      "sourceScope": "Editorial direction only, not claim approval. Fetch primary sources, verify current tool/version/plan and reproduce the exact demo. Label local implementation separately from product capabilities. No invented savings, revenue, metrics or experience.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Meta Muse for Facebook Page workflow planning",
+      "category": "business-ai-agents",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Meta Muse for Small Business",
+      "hookCandidate": "Can Muse help with your Facebook Page before anything is published?",
+      "strategy": {
+        "subject": "Meta Muse for Facebook Page workflow planning",
+        "hook": "Can Muse help with your Facebook Page before anything is published?",
+        "promise": "Define the task and review the proposed action before publishing.",
+        "explanation": "Separate connected business context, a proposed task and an actual publishing action. Inspect the available account connection and approval behavior in a verified demo.",
+        "visualSupport": "Redacted connection screen and a draft task; no invented completion receipt.",
+        "payoff": "Define the task and review the proposed action before publishing.",
+        "variety": "A specific business-agent lesson. Compare question, mechanism and payoff with prior topics; do not repeat a generic AI review article."
+      },
+      "sourceUrls": [
+        "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ],
+      "evidencePaths": [
+        "docs/ENGAGEMENT-SOP.md",
+        "content/tech-education/meta-muse-source-review.md"
+      ],
+      "sourceScope": "Research seed only. Confirm current feature availability and permissions in the actual account before a tutorial. Product documentation does not establish a successful Fused run.",
+      "usageCaveat": "Nick confirmed Meta Muse. Prior SOP feedback is documented; connected Facebook/Instagram tasks and any Muse-to-Buffer integration remain unverified. Do not claim native Buffer integration, automatic posting or measured gains without evidence.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Meta Muse Instagram analytics and content decisions",
+      "category": "business-ai-agents",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Meta Muse for Small Business",
+      "hookCandidate": "Your Instagram views changed. What should Muse check first?",
+      "strategy": {
+        "subject": "Meta Muse Instagram analytics and content decisions",
+        "hook": "Your Instagram views changed. What should Muse check first?",
+        "promise": "A recommendation needs supporting numbers and a test.",
+        "explanation": "Use a dated analytics export to inspect views, date ranges and missing data before proposing a content experiment. Treat recommendations as hypotheses.",
+        "visualSupport": "Real redacted metrics or a clearly labeled synthetic teaching dataset.",
+        "payoff": "A recommendation needs supporting numbers and a test.",
+        "variety": "A specific business-agent lesson. Compare question, mechanism and payoff with prior topics; do not repeat a generic AI review article."
+      },
+      "sourceUrls": [
+        "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ],
+      "evidencePaths": [
+        "docs/ENGAGEMENT-SOP.md",
+        "content/tech-education/meta-muse-source-review.md"
+      ],
+      "sourceScope": "Research seed only. Confirm current feature availability and permissions in the actual account before a tutorial. Product documentation does not establish a successful Fused run.",
+      "usageCaveat": "Nick confirmed Meta Muse. Prior SOP feedback is documented; connected Facebook/Instagram tasks and any Muse-to-Buffer integration remain unverified. Do not claim native Buffer integration, automatic posting or measured gains without evidence.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    },
+    {
+      "brand": "tech",
+      "keyword": "Meta Muse and Buffer roles in a publishing workflow",
+      "category": "business-ai-agents",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-10-13",
+      "preferredEducation": true,
+      "tool": "Meta Muse for Small Business",
+      "hookCandidate": "If Muse helps plan the content, what still belongs in Buffer?",
+      "strategy": {
+        "subject": "Meta Muse and Buffer roles in a publishing workflow",
+        "hook": "If Muse helps plan the content, what still belongs in Buffer?",
+        "promise": "Assign one owner to each publishing step and verify the final post state.",
+        "explanation": "Compare a proposed planning and review stage with our existing Buffer scheduling and readback stage. Demonstrate a manual handoff before suggesting any integration.",
+        "visualSupport": "Labeled proposed workflow; Muse draft and Buffer receipt only after an actual demo.",
+        "payoff": "Assign one owner to each publishing step and verify the final post state.",
+        "variety": "A specific business-agent lesson. Compare question, mechanism and payoff with prior topics; do not repeat a generic AI review article."
+      },
+      "sourceUrls": [
+        "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ],
+      "evidencePaths": [
+        "docs/ENGAGEMENT-SOP.md",
+        "content/tech-education/meta-muse-source-review.md"
+      ],
+      "sourceScope": "Research seed only. Confirm current feature availability and permissions in the actual account before a tutorial. Product documentation does not establish a successful Fused run.",
+      "usageCaveat": "Nick confirmed Meta Muse. Prior SOP feedback is documented; connected Facebook/Instagram tasks and any Muse-to-Buffer integration remain unverified. Do not claim native Buffer integration, automatic posting or measured gains without evidence.",
+      "sop": "docs/TECH-EDUCATION-SOP.md"
+    }
+  ]
+}

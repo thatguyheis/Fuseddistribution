@@ -1,0 +1,95 @@
+{
+  "reviewer": "Codex",
+  "reviewedDate": "2026-10-15",
+  "scope": "Historical claim review, exact owner-photo match, transcript production authorization, and reusable presentation assets. No public-release approval inferred.",
+  "productionAuthorization": {
+    "authorizedBy": "Nick",
+    "date": "2026-10-15",
+    "evidence": "Nick requested the full blog and reel after receiving the transcript and style sample.",
+    "transcript": "content/coin-history/walking-liberty-half-dollar-silver-eagle/narration-approved-v1.txt",
+    "transcriptApprovalSha256": "2174a3fef131e736f737d74b8e57e281c09d8c8ef8e0ac7596901767b59196bd",
+    "normalization": "Years are expanded into spoken words for natural Chatterbox pronunciation; the approved historical claims and wording are unchanged."
+  },
+  "claims": [
+    {
+      "claim": "The Walking Liberty half dollar designed by Adolph A. Weinman was produced from 1916 through 1947; Benjamin Franklin replaced Liberty in 1948.",
+      "sources": [
+        0
+      ]
+    },
+    {
+      "claim": "In this Walking Liberty design, Liberty strides toward the sunrise, wrapped in the flag, with her right arm extended and branches in her left; the reverse shows an eagle on a rock beside a pine branch.",
+      "sources": [
+        0
+      ],
+      "visualLimit": "The supplied half-dollar image is an obverse photo; the reverse description is sourced history, not an assertion about the reverse of this specimen."
+    },
+    {
+      "claim": "The Mint launched the American Eagle program in 1986 and used Weinman's 1916 Walking Liberty half dollar design on the Silver Eagle obverse.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "claim": "The Mint refreshed the Silver Eagle reverse design in 2021 while retaining Walking Liberty on the obverse.",
+      "sources": [
+        2
+      ],
+      "visualLimit": "The supplied Silver Eagle photo shows the obverse only; the reverse change is explained with text, not shown as a coin image."
+    },
+    {
+      "claim": "The photographed Silver Eagle example is dated 2021.",
+      "evidence": [
+        "coin-0013"
+      ],
+      "basis": "Visible numerals on the coin in the reviewed full original and crop. No mint mark or holder grade is used."
+    },
+    {
+      "claim": "The two coin images show different specimens and are compared by their visible Walking Liberty obverse design.",
+      "evidence": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "basis": "Full originals and exact non-generative crops inspected."
+    }
+  ],
+  "sources": [
+    {
+      "title": "U.S. Mint: Half Dollar",
+      "source_url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/circulating-coins/half-dollar.html"
+    },
+    {
+      "title": "U.S. Mint: American Eagle Coin Program",
+      "source_url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle.html"
+    },
+    {
+      "title": "U.S. Mint: American Eagle Silver Proof Coin",
+      "source_url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle/silver-proof.html"
+    }
+  ],
+  "media": {
+    "presentationPlan": "public/blog/walking-liberty-half-dollar-silver-eagle/presentation-plan.json",
+    "presentationPlanSha256": "175b8aa41944c44ff222737fba452e839087f27f4bd08e2548613cbef6af5b92",
+    "reusableAssetLibrary": "content/coin-library/reusable-assets.json",
+    "sourceIds": [
+      "coin-0020",
+      "coin-0013"
+    ],
+    "shotCount": 18,
+    "sectionCount": 6,
+    "transitionStyle": "Short fades between source-matched photo and date-card shots; section transitions use the Remotion presentation profile."
+  },
+  "constraints": [
+    "No mint-mark, grade, authenticity, rarity, price, or investment claims.",
+    "Do not present the photographed half dollar as a 1916 coin.",
+    "Do not present the 2021 Silver Eagle photo as a 1986 specimen.",
+    "Do not illustrate the reverse redesign with the obverse photograph.",
+    "Keep owner photos connected to their catalog IDs and source hashes.",
+    "The retired Gone Away track is excluded from future audio selection.",
+    "A locally rendered video is not proof of public hosting, publication, or scheduling."
+  ],
+  "status": "transcript-approved-source-map-automated-qa-pending",
+  "visualLimits": [
+    "The narration is transcript-approved by hash; verify every factual sentence against the linked primary source map. Media identity and usage remain limited to the recorded evidence and rights basis."
+  ]
+}

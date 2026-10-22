@@ -1,0 +1,36 @@
+{
+  "coordinateSpace": "EXIF-oriented 3024x4032 pixels",
+  "method": "Non-generative rectangular crop; no detail changes",
+  "sources": [
+    {
+      "id": "coin-0020",
+      "file": "IMG_3730.jpeg",
+      "box": [
+        875,
+        1210,
+        1570,
+        1550
+      ],
+      "sha256": "4947efc9a415e89e8dd52dfc673b6cefce3430b33492483920457310ca041304",
+      "claims": [
+        "Full walking figure, outstretched arm and sun visible; no date attribution used"
+      ],
+      "privacy": "Holder label, serials, notes and unrelated stamp excluded"
+    },
+    {
+      "id": "coin-0013",
+      "file": "IMG_3449.jpeg",
+      "box": [
+        800,
+        1720,
+        1700,
+        1690
+      ],
+      "sha256": "2d6cbb644c0b5f219b6a060f7af6440c27f061cab99d4e3a8d8193e758d2caa7",
+      "claims": [
+        "Full walking figure, arm, sun, and date 2021 visible"
+      ],
+      "privacy": "Holder label, serials, notes and unrelated stamp excluded"
+    }
+  ]
+}

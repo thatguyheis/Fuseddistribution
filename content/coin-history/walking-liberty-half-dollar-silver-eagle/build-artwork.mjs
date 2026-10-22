@@ -1,0 +1,26 @@
+import fs from 'node:fs';import sharp from 'sharp';import{createHash}from'node:crypto';
+const slug='walking-liberty-half-dollar-silver-eagle',dir=`public/blog/${slug}`,work=`content/coin-history/${slug}`;
+const sources={half:{id:'coin-0020',file:'IMG_3730.jpeg',box:[875,1210,1570,1550]},eagle:{id:'coin-0013',file:'IMG_3449.jpeg',box:[800,1720,1700,1690]}};
+const b64={};for(const [key,s] of Object.entries(sources)){const b=await sharp(`Coin Raw/${s.file}`).rotate().extract({left:s.box[0],top:s.box[1],width:s.box[2],height:s.box[3]}).jpeg({quality:94}).toBuffer();b64[key]=`data:image/jpeg;base64,${b.toString('base64')}`;fs.writeFileSync(`${dir}/images/${key==='half'?'half-dollar':'silver-eagle'}.jpg`,b);}
+const txt=(x,y,s,n=34,c='#f5edda')=>`<text x="${x}" y="${y}" fill="${c}" font-size="${n}" font-family="Arial" font-weight="700">${s}</text>`;
+const photo=(key,x,y,w,h)=>`<image x="${x}" y="${y}" width="${w}" height="${h}" href="${b64[key]}" preserveAspectRatio="xMidYMid meet"/>`;
+const start=(w,h)=>`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#092f3e"/><stop offset="1" stop-color="#03090e"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#bg)"/>`;
+async function save(name,svg){fs.mkdirSync(`${work}/artwork-source`,{recursive:true});fs.writeFileSync(`${work}/artwork-source/${name.replaceAll('/','-')}.svg`,svg+'</svg>');await sharp(Buffer.from(svg+'</svg>')).jpeg({quality:93}).toFile(`${dir}/${name}.jpg`);}
+await save('hero',start(1200,630)+txt(45,55,'FUSED / COIN HISTORY',23,'#58d6ff')+txt(45,130,'SAME LIBERTY.',63)+txt(45,203,'DIFFERENT COIN.',63)+photo('half',45,260,360,320)+photo('eagle',450,245,360,350)+txt(865,300,'1916',55,'#58d6ff')+txt(865,355,'DESIGN',25)+txt(865,450,'1986',55,'#58d6ff')+txt(865,505,'RETURN',25));
+await save('images/comparison',start(1200,720)+txt(55,65,'FOLLOW THE POSE, NOT THE SHINE',38,'#58d6ff')+photo('half',45,105,520,510)+photo('eagle',635,105,520,510)+txt(90,665,'WALKING LIBERTY HALF DOLLAR',26)+txt(760,665,'SILVER EAGLE',26));
+await save('photo-post',start(1200,1200)+txt(60,95,'SAME LIBERTY.',70)+txt(60,175,'DIFFERENT COIN.',70)+photo('half',70,255,505,650)+photo('eagle',625,255,505,650)+txt(100,1040,'An older design. A second life.',48,'#58d6ff'));
+const frame=(label,content,foot='Original Fused photographs / not to scale')=>start(720,1280)+txt(42,130,label,35,'#58d6ff')+content+txt(42,1060,foot,21,'#b9d2dc');
+const pair=photo('half',28,245,320,580)+photo('eagle',373,245,320,580)+txt(50,890,'HALF DOLLAR',26)+txt(423,890,'SILVER EAGLE',26);
+const scenes={
+'images/scene-0':frame('SAME LIBERTY. DIFFERENT COIN.',pair),
+'images/scene-0-half':frame('START WITH THE STRIDE',photo('half',60,255,600,650),'Walking Liberty half dollar / owner photo'),
+'images/scene-0-eagle':frame('LOOK FOR THE SAME POSE',photo('eagle',60,255,600,650),'Silver Eagle / owner photo'),
+'images/scene-3':frame('ONE DESIGN. TWO CHAPTERS.',`<path d="M88 280 V880" stroke="#58d6ff" stroke-width="5"/>`+[[1916,'HALF DOLLAR INTRODUCED'],[1947,'FINAL HALF DOLLAR YEAR'],[1986,'EAGLE PROGRAM BEGINS']].map(([y,t],i)=>`<circle cx="88" cy="${310+i*240}" r="12" fill="#58d6ff"/>`+txt(128,330+i*240,y,62)+txt(128,380+i*240,t,24)).join(''),'Timeline / U.S. Mint history'),
+'images/scene-3-eagle':frame('THIS EXAMPLE: 2021',photo('eagle',60,255,600,650),'Visible date / not the design introduction'),
+'images/scene-5':frame('WHICH CHAPTER WOULD YOU KEEP?',pair)};
+for(const [name,svg]of Object.entries(scenes))await save(name,svg);
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const shot=name=>({path:`${dir}/${name}.jpg`,sha256:sha(`${dir}/${name}.jpg`)});
+const entries=[{index:0,names:['scene-0','scene-0-half','scene-0-eagle','scene-0'],role:'Shared visible pose; no mint or date inference',assetIds:['coin-0020','coin-0013']},{index:3,names:['scene-3','scene-3-eagle','scene-0-eagle','scene-0'],role:'Sourced design timeline and independently visible 2021 date',assetIds:['coin-0013','coin-0020']},{index:5,names:['scene-5'],role:'Comparison payoff',assetIds:['coin-0020','coin-0013']}];
+fs.writeFileSync(`${dir}/preferred-media.json`,JSON.stringify({version:2,mode:'mixed',supportingCutaways:[{index:1,shots:['scene-0-half','scene-0-eagle','scene-3'].map(n=>shot('images/'+n))},{index:2,shots:['scene-0-half','scene-0-eagle','scene-0'].map(n=>shot('images/'+n))},{index:4,shots:['scene-0-half','scene-0-eagle','scene-0'].map(n=>shot('images/'+n))}],source:'fused-owned-coin-library',segments:entries.map(e=>({index:e.index,type:'photo',...shot('images/'+e.names[0]),cutaways:e.names.slice(1).map(n=>shot('images/'+n)),assetIds:e.assetIds,role:e.role,reviewed:true}))},null,2));
+fs.writeFileSync(`${work}/crop-plan.json`,JSON.stringify({coordinateSpace:'EXIF-oriented 3024x4032 pixels',method:'Non-generative rectangular crop; no detail changes',sources:Object.entries(sources).map(([k,s])=>({...s,sha256:sha('Coin Raw/'+s.file),claims:k==='half'?['Full walking figure, outstretched arm and sun visible; no date attribution used']:['Full walking figure, arm, sun, and date 2021 visible'],privacy:'Holder label, serials, notes and unrelated stamp excluded'}))},null,2));

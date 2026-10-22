@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-13",
+  "purpose": "Local visual enrichment preview, not a scheduled publication",
+  "generated": "fused-bg-0ddb13b682b76534",
+  "assets": {
+    "0": {
+      "source": "open-generative-ai-local",
+      "libraryAssetId": "fused-bg-0ddb13b682b76534"
+    },
+    "1": {
+      "source": "pexels",
+      "type": "video",
+      "libraryAssetId": "stock-483d2c4902b3ff509d24",
+      "provenance": {
+        "provider": "pexels",
+        "providerId": 12330883,
+        "sourceUrl": "https://www.pexels.com/video/professional-microphones-in-a-recording-studio-12330883/",
+        "creator": "utopia 36",
+        "licenseUrl": "https://www.pexels.com/license/"
+      }
+    },
+    "2": {
+      "source": "pexels",
+      "type": "photo",
+      "libraryAssetId": "stock-5c97ece6b510d35c3f9f",
+      "provenance": {
+        "provider": "pexels",
+        "providerId": 4988132,
+        "sourceUrl": "https://www.pexels.com/photo/microphones-inside-the-recording-studio-4988132/",
+        "creator": "Tima Miroshnichenko",
+        "licenseUrl": "https://www.pexels.com/license/"
+      }
+    }
+  },
+  "review": {
+    "pass": true,
+    "scope": "Supporting-media suitability in visual-only preview; not production publication approval",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-13T15:16:56.504Z",
+    "mp4Sha256": "771890bb3f451f7b94e92dcc8f8b651a3a7f34ba6fe5075df40101df96d01a3b",
+    "frames": [
+      30,
+      170,
+      225,
+      400
+    ],
+    "contactSheet": ".workflow-state/reel-enrichment-2026-10-13/contact-sheet.jpg",
+    "notes": [
+      "Generated recording room is illustrative, not an actual tool or equipment demonstration.",
+      "Stock microphones illustrate recording; no brand endorsement is asserted.",
+      "Full-frame imagery, headline readability and transition frame inspected.",
+      "Production narration, captions, hero cover and full duration still require per-reel release review."
+    ]
+  },
+  "preview": ".workflow-state/reel-enrichment-2026-10-13/preview.mp4"
+}

@@ -1,0 +1,1119 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-13T13:14:39.145Z",
+  "rawPreserved": true,
+  "items": [
+    {
+      "id": "coin-0001",
+      "title": "Mixed silver coins on a galaxy mat",
+      "source": "Coin Raw/DC73F1B8-76AE-4453-B2DE-C8BFDFB8449F.jpeg",
+      "sha256": "7da7afdbca1197503476c486674b56ff704375b946c45d9403492966ae1f7456",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 886,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0002",
+      "title": "Mixed rounds and coins in capsules",
+      "source": "Coin Raw/IMG_0036.jpeg",
+      "sha256": "46e43077b9eefdab8e021f9be76788da79c2a8dc50c47e7e80f9f7451e6bce77",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0003",
+      "title": "2021 American Eagle reverse proof designer set",
+      "source": "Coin Raw/IMG_0977.jpeg",
+      "sha256": "1906ade4c7cb998dc10655bd0f293738504660b18165e90c512ec35e7e8bf2b1",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0004",
+      "title": "Mixed coins in transparent album pockets",
+      "source": "Coin Raw/IMG_0994.jpeg",
+      "sha256": "bf944bf4bc3e7dcad3f476178fcc5cff81072856c32b91662c6112020d34a17f",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0005",
+      "title": "Seven silver dollar type coins near a keyboard",
+      "source": "Coin Raw/IMG_2014.jpeg",
+      "sha256": "32fe91203c7d163f0c5451811d87066fa3446e49bba05e76193f1c1cffcc1ff3",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0006",
+      "title": "Morgan dollar reverse; prior O mint mark identification withdrawn",
+      "source": "Coin Raw/IMG_3431.jpeg",
+      "sha256": "82cb3aaa71f9b6f3bb1c58d5dcf01765cec5106283f8df18deadff6dc30e7eb4",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Owner correction: the pictured coin does not have the O mint mark previously claimed. Do not use this image as evidence of New Orleans minting. No replacement mint attribution is established here.",
+      "status": "requires_identity_reverification_before_new_claims",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13",
+      "uses": [
+        {
+          "slug": "morgan-dollar-o-mint-mark-new-orleans",
+          "date": "2026-10-13",
+          "status": "blog-and-embedded-reel-live",
+          "role": "Originally used as O evidence; attribution withdrawn after owner correction. Existing publication retained by request.",
+          "articleUrl": "https://fuseddistribution.com/blog/morgan-dollar-o-mint-mark-new-orleans/",
+          "renderPath": "video/out/morgan-dollar-o-mint-mark-new-orleans/morgan-dollar-o-mint-mark-new-orleans.mp4",
+          "socialStatus": "distribution_handoff_not_yet_scheduled"
+        }
+      ],
+      "correction": {
+        "recordedAt": "2026-10-13T14:38:28.194694+00:00",
+        "source": "Nick, explicit correction in this conversation",
+        "withdrawnClaim": "Visible O mint mark on this reverse",
+        "futureUse": "Do not reuse the O/New Orleans attribution. Verify every claimed feature against the exact raw image.",
+        "existingPublication": "Leave existing article and reel unchanged, as requested by Nick."
+      }
+    },
+    {
+      "id": "coin-0007",
+      "title": "1900 Morgan dollar obverse in holder; mint attribution unverified",
+      "source": "Coin Raw/IMG_3433.jpeg",
+      "sha256": "0bf111465765486f6a1e345019320f55fd6c6852b6bd898a9d7a8d43e16ba2f9",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Obverse date and holder must be read separately. Prior catalog O attribution is not coin-level verification; do not infer a mint mark from this obverse or assume a matching reverse.",
+      "status": "requires_identity_reverification_before_new_claims",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13",
+      "uses": [
+        {
+          "slug": "morgan-dollar-o-mint-mark-new-orleans",
+          "date": "2026-10-13",
+          "status": "blog-and-embedded-reel-live",
+          "role": "separately photographed 1900 obverse",
+          "articleUrl": "https://fuseddistribution.com/blog/morgan-dollar-o-mint-mark-new-orleans/",
+          "renderPath": "video/out/morgan-dollar-o-mint-mark-new-orleans/morgan-dollar-o-mint-mark-new-orleans.mp4",
+          "socialStatus": "distribution_handoff_not_yet_scheduled"
+        }
+      ]
+    },
+    {
+      "id": "coin-0008",
+      "title": "Morgan dollar reverse in holder",
+      "source": "Coin Raw/IMG_3435.jpeg",
+      "sha256": "ce6848fc3417eadb07a52c23114bb0d8666809a53a8b53bc09aee2da4d9c2d28",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0009",
+      "title": "1885 O Morgan dollar obverse in labeled holder",
+      "source": "Coin Raw/IMG_3437.jpeg",
+      "sha256": "7c6b1b76f4480457b904a98d0f4ee909e6330f4b34623d2c34ab6d1416b1dc6a",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0010",
+      "title": "1904 O Morgan dollar obverse in labeled holder",
+      "source": "Coin Raw/IMG_3441.jpeg",
+      "sha256": "1ccdc9d8528b632cef9db33134bbbac97e659247b80146565ea82bfc13f03eac",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0011",
+      "title": "Morgan dollar reverse with O mint mark",
+      "source": "Coin Raw/IMG_3443.jpeg",
+      "sha256": "8350e67d4ab391d0fe6749a2bd4aaff87c4a844f53276d19b3694d65ab9b1ea9",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0012",
+      "title": "1881 S Morgan dollar obverse in labeled holder",
+      "source": "Coin Raw/IMG_3445.jpeg",
+      "sha256": "cd772f641f5537853bcdfd9001c88a88a11ffb59ba755cbd6ba632e72d9e903c",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0013",
+      "title": "2021 Silver Eagle Type Two obverse in labeled holder",
+      "source": "Coin Raw/IMG_3449.jpeg",
+      "sha256": "2d6cbb644c0b5f219b6a060f7af6440c27f061cab99d4e3a8d8193e758d2caa7",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13",
+      "uses": [
+        {
+          "slug": "walking-liberty-half-dollar-silver-eagle",
+          "status": "comparison-ready",
+          "date": "2026-10-13",
+          "role": "visible Walking Liberty design; 2021 date only on coin-0013",
+          "claimMap": "content/coin-history/walking-liberty-half-dollar-silver-eagle/claim-map.json"
+        },
+        {
+          "slug": "walking-liberty-half-dollar-silver-eagle",
+          "status": "local-production",
+          "date": "2026-10-15",
+          "role": "2021 Silver Eagle obverse and visible date used in design-history reel",
+          "claimMap": "content/coin-history/walking-liberty-half-dollar-silver-eagle/claim-map.json"
+        }
+      ]
+    },
+    {
+      "id": "coin-0014",
+      "title": "Silver Eagle flying eagle reverse in holder",
+      "source": "Coin Raw/IMG_3451.jpeg",
+      "sha256": "d7f8566c698960411c7710c47da1ecd0e0a65c4a72aab246f26f24000baf1d55",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0015",
+      "title": "Silver Eagle holder and handwritten sales note",
+      "source": "Coin Raw/IMG_3452.jpeg",
+      "sha256": "3c648c41a4d519bc7955adbf9ef3585895d6e7de1b3e12c3b8db3dbdfbc51b57",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0016",
+      "title": "Silver dollars in a coin album",
+      "source": "Coin Raw/IMG_3488.jpeg",
+      "sha256": "2bd1aa5912a783eef9d9aeef822d6f278345a144fe2a0353a87519987d252ee0",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0017",
+      "title": "Walking Liberty half dollar in holder",
+      "source": "Coin Raw/IMG_3680.jpeg",
+      "sha256": "a27517557dc7e7cffa8a7ef937dd07d4511254eff65b4a8d343dcf1a308b7e38",
+      "kind": "photo",
+      "category": "half-dollars",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0018",
+      "title": "Walking Liberty eagle reverse in holder",
+      "source": "Coin Raw/IMG_3681.jpeg",
+      "sha256": "97524ce3af74c47beb92413cfd25880ccb26ab4a06fa442879d06f60d3ab58db",
+      "kind": "photo",
+      "category": "half-dollars",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0019",
+      "title": "Walking Liberty half dollar obverse beside stamp",
+      "source": "Coin Raw/IMG_3729.jpeg",
+      "sha256": "ef9b5ee6b943d2c05ccb2928a0c5561bb92af010dce45387bf610736812fb5fd",
+      "kind": "photo",
+      "category": "half-dollars",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0020",
+      "title": "Walking Liberty half dollar obverse close view",
+      "source": "Coin Raw/IMG_3730.jpeg",
+      "sha256": "4947efc9a415e89e8dd52dfc673b6cefce3430b33492483920457310ca041304",
+      "kind": "photo",
+      "category": "half-dollars",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13",
+      "uses": [
+        {
+          "slug": "walking-liberty-half-dollar-silver-eagle",
+          "status": "comparison-ready",
+          "date": "2026-10-13",
+          "role": "visible Walking Liberty design; 2021 date only on coin-0013",
+          "claimMap": "content/coin-history/walking-liberty-half-dollar-silver-eagle/claim-map.json"
+        },
+        {
+          "slug": "walking-liberty-half-dollar-silver-eagle",
+          "status": "local-production",
+          "date": "2026-10-15",
+          "role": "Walking Liberty half dollar obverse used in design-history reel",
+          "claimMap": "content/coin-history/walking-liberty-half-dollar-silver-eagle/claim-map.json"
+        }
+      ]
+    },
+    {
+      "id": "coin-0021",
+      "title": "Carver-Washington commemorative half dollar obverse",
+      "source": "Coin Raw/IMG_3733.jpeg",
+      "sha256": "ec71f1e396979ce0da89e85777afa1c6e0d05ffcf7cdc34be235a05496d8cb8b",
+      "kind": "photo",
+      "category": "carver-washington-commemorative",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Full original inspected October 14, 2026: two overlapping portraits and both GEORGE WASHINGTON CARVER and BOOKER T. WASHINGTON inscriptions match the U.S. Mint Carver-Washington design. Prior single-person Booker T. Washington Memorial identification withdrawn. No mint, grade or authentication claim.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": [],
+      "catalogCorrection": "2026-10-13: corrected Franklin label after inspecting original photograph.",
+      "identitySource": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/george-washington-carver-booker-t-washington-half",
+      "corrections": [
+        {
+          "date": "2026-10-14",
+          "priorTitle": "Booker T. Washington Memorial half dollar obverse",
+          "reason": "Full original shows conjoined portraits and names of both men, not the separate Booker T. Washington Memorial issue."
+        }
+      ]
+    },
+    {
+      "id": "coin-0022",
+      "title": "Walking Liberty half dollar eagle reverse",
+      "source": "Coin Raw/IMG_3734.jpeg",
+      "sha256": "4a2590f206000906c6dcafc3e44c5f83f5a21aedb5c48d43af89697108b6b383",
+      "kind": "photo",
+      "category": "half-dollars",
+      "tags": [
+        "half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0023",
+      "title": "Mixed bullion pieces in capsules",
+      "source": "Coin Raw/IMG_4407.jpeg",
+      "sha256": "50f9f672531aa19c65e0969bb43512f870d611d0417dfa540a6e4f1118c1c0c1",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0024",
+      "title": "Mixed bullion rounds and novelty bars",
+      "source": "Coin Raw/IMG_4418.jpeg",
+      "sha256": "44c6bf53152b863fc618795ed9587afe7ef72a8543f58602fc79593b96d69968",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0025",
+      "title": "Mixed rounds and Coca Cola branded bar",
+      "source": "Coin Raw/IMG_4419.jpeg",
+      "sha256": "fb80db4832aa2aec523df9ae1ab033c46700a710acab7d4a4e7cf25ab2adaedd",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0026",
+      "title": "Bag of coins with two loose silver dollar type coins",
+      "source": "Coin Raw/IMG_4469.jpeg",
+      "sha256": "97fcba34624463565da6d18ab89f7c34460688cfd07c79ea5a9dae540e9f4a97",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0027",
+      "title": "Coin albums and mixed collection overview",
+      "source": "Coin Raw/IMG_4553.jpeg",
+      "sha256": "8b6dd35d5c34d482dfd9281fbe9e0b78ce2eccc930cf05aa24d5231c089ab0b1",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0028",
+      "title": "Coin folder and encapsulated silver dollar type coins",
+      "source": "Coin Raw/IMG_4691.jpeg",
+      "sha256": "05d952d3c842fd393ca91d0993f3e6887466adab098eedd0c2e41398a92035d8",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0029",
+      "title": "Five silver dollar type coins on dark surface",
+      "source": "Coin Raw/IMG_4696.jpeg",
+      "sha256": "d2e572a83cb78a884af366a5eac10d71d5a1f79bf4f37693cc22eb9a3b7ba66e",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0030",
+      "title": "Coin packaging bullion card and loose coins",
+      "source": "Coin Raw/IMG_4711.jpeg",
+      "sha256": "13384de1650767d8c8d2909f481fb27c52bba72455af3fd8d87d1272cc15cefb",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0031",
+      "title": "1925 Vancouver commemorative half dollar fort reverse",
+      "source": "Coin Raw/IMG_5735.jpeg",
+      "sha256": "99253d19d3f44ca8595f0fd8f95954c595118eee0136627d06c2b24ee88cfcc7",
+      "kind": "photo",
+      "category": "vancouver-commemorative",
+      "tags": [
+        "vancouver-commemorative",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Fort Vancouver Centennial lettering, standing figure with gun, fort and mountain; Hudson Bay Company lettering. Direct image inspection; holder grade not independently verified.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13T20:41:32.925216+00:00",
+      "uses": [
+        {
+          "slug": "fort-vancouver-centennial-half-dollar",
+          "status": "rendered-preview",
+          "role": "Owner photograph with reviewed deterministic crop in presentation reel",
+          "claimMap": "content/coin-history/fort-vancouver-centennial-half-dollar/research.json",
+          "reviewVideoSha256": "e9723c0d1346aed34320a090c60a40cdd67efd95172bac87ad42fd571cdf6a37",
+          "cropPlan": "content/coin-history/fort-vancouver-centennial-half-dollar/crop-plan.json"
+        }
+      ]
+    },
+    {
+      "id": "coin-0032",
+      "title": "1925 Vancouver commemorative half dollar John McLoughlin obverse",
+      "source": "Coin Raw/IMG_5736.jpeg",
+      "sha256": "927ad1d38d202ee3430f44079406a46d05227a8a1d9ccc5fae5b87f1844630c3",
+      "kind": "photo",
+      "category": "vancouver-commemorative",
+      "tags": [
+        "vancouver-commemorative",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Portrait, Dr. John McLoughlin lettering, dates 1825 and 1925; holder label PCGS MS63. Direct image inspection; holder grade not independently verified.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": "2026-10-13T20:41:32.925216+00:00",
+      "uses": [
+        {
+          "slug": "fort-vancouver-centennial-half-dollar",
+          "status": "rendered-preview",
+          "role": "Owner photograph with reviewed deterministic crop in presentation reel",
+          "claimMap": "content/coin-history/fort-vancouver-centennial-half-dollar/research.json",
+          "reviewVideoSha256": "e9723c0d1346aed34320a090c60a40cdd67efd95172bac87ad42fd571cdf6a37",
+          "cropPlan": "content/coin-history/fort-vancouver-centennial-half-dollar/crop-plan.json"
+        }
+      ]
+    },
+    {
+      "id": "coin-0033",
+      "title": "1896 Morgan dollar obverse with sales note",
+      "source": "Coin Raw/IMG_6643.jpeg",
+      "sha256": "ca561ee98598e70589787ada5942bd0c0379ff938c20de0eef48cfd228756a25",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0034",
+      "title": "Morgan dollar in capsule angled lighting",
+      "source": "Coin Raw/IMG_6644.jpeg",
+      "sha256": "6233842f5bcd8781a3b3081e6f54a4c319a34027bafed992de9cf00053060c7d",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0035",
+      "title": "Morgan dollar in capsule alternate lighting",
+      "source": "Coin Raw/IMG_6645.jpeg",
+      "sha256": "f8c3f01e37629479baa187e10550e31a9fc3e2bfe22d541f7fb19541ed42d314",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0036",
+      "title": "Morgan dollar reverse with sales note",
+      "source": "Coin Raw/IMG_6646.jpeg",
+      "sha256": "4127cb4a7440d771e777b17292261413f7ba7e8d72c11b3cc423cde8feef1e2b",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0037",
+      "title": "Kennedy half dollar obverses on laptop",
+      "source": "Coin Raw/IMG_6648.jpeg",
+      "sha256": "19497c49c357b3523640255b8d41c15756de788e7d8e3106f6b66eff4b55c1dd",
+      "kind": "photo",
+      "category": "kennedy-half-dollars",
+      "tags": [
+        "kennedy-half-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Full original inspected October 14: Kennedy profiles and HALF DOLLAR type, not Morgan or Peace dollars.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": [],
+      "corrections": [
+        {
+          "date": "2026-10-14",
+          "reason": "Prior mixed Morgan/Peace identification withdrawn after full original inspection."
+        }
+      ]
+    },
+    {
+      "id": "coin-0038",
+      "title": "Mixed Morgan and Peace dollar type coins alternate view",
+      "source": "Coin Raw/IMG_6649.jpeg",
+      "sha256": "b31432fdda2271df9db50b11210ae08f8f40c4b21f0d8f4e0cb7ff0e4d897956",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 4284,
+      "height": 5712,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0039",
+      "title": "Screenshot of Vancouver commemorative reverse",
+      "source": "Coin Raw/IMG_7596.jpeg",
+      "sha256": "dc01a401c707de81eb914ddbbc9bbe3eee89677eb3465cf61bb91b1b75bd800d",
+      "kind": "photo",
+      "category": "vancouver-commemorative",
+      "tags": [
+        "vancouver-commemorative",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 1290,
+      "height": 2796,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "reference_only_screenshot",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0040",
+      "title": "Mixed coin container on digital scale",
+      "source": "Coin Raw/IMG_7819.jpeg",
+      "sha256": "e7ebb02489e9800f3a9145673802dff8625135dbbafd41c9befdbfb067736d84",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0041",
+      "title": "Mixed coins spread on table",
+      "source": "Coin Raw/IMG_7820.jpeg",
+      "sha256": "a3573efd80eaaca0a8b188f12515b1111ee89e6eb0f36a393d6727bc25204a28",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 5712,
+      "height": 4284,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0042",
+      "title": "Mixed coin container and labeled package on scale",
+      "source": "Coin Raw/IMG_7821.jpeg",
+      "sha256": "0d26336544501642153ce7acbc2d93e0063a862e75f69cc843784c6fa7e9896f",
+      "kind": "photo",
+      "category": "mixed-collections",
+      "tags": [
+        "mixed-collections",
+        "owner-photography",
+        "coin-history"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "identityBasis": "Visible design/date or holder inscription; not independent authentication or grading.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photographs from own coin selling; authorized for Fused blog and reel reuse. No public stock redistribution grant inferred.",
+      "privacy": "Exclude handwritten sales notes, customer details, unrelated screens and certification serial numbers from public compositions unless essential.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-v0001",
+      "title": "1886 Morgan dollar obverse handheld close-up",
+      "source": "Coin Raw/4CC6C7EE-0894-4109-9683-F1F4FC85E75E.mov",
+      "sha256": "1df474c07f2b5be93f2dbd63d9dfe9f8b6c58a0c4594258df908d79798ed94f0",
+      "kind": "video",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "1886",
+        "owner-footage",
+        "obverse"
+      ],
+      "durationSeconds": 23.68,
+      "width": 1080,
+      "height": 1920,
+      "status": "cataloged_requires_clip_review",
+      "identityBasis": "1886 visible on obverse. Mint not established by inspected frames.",
+      "rights": "User supplied original footage authorized for Fused content reuse.",
+      "audioPolicy": "Discard original audio; use existing approved narration/music chain.",
+      "lastUsed": null,
+      "uses": []
+    },
+    {
+      "id": "coin-0043",
+      "title": "Wrapped silver dollar auction sample, marked unarrived",
+      "source": "Coin Raw/codex-clipboard-a3097025-d94d-4295-bf61-fd3a8a56b823.jpg",
+      "sha256": "3b7b34ecb53c350154e9ed4ed544610dd840bb12d2ea6e0a4a21908137e31c18",
+      "kind": "photo",
+      "category": "silver-dollar-roll-hoard",
+      "tags": [
+        "silver-dollar-roll-hoard",
+        "owner-photography",
+        "coin-history",
+        "silver-dollar-hoards"
+      ],
+      "width": 576,
+      "height": 1024,
+      "identityBasis": "The image itself carries a watermark stating this is a sample picture from an unarrived hoard. It is not verified as the auction lot’s received contents.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photograph for Fused Distribution blog and reel use. No public stock redistribution grant inferred.",
+      "privacy": "Review crops for watermark, fingers and unrelated details. Do not infer coin pairing, mint, grade, rarity or value beyond visible evidence.",
+      "lastUsed": "2026-10-15",
+      "uses": [
+        {
+          "slug": "silver-dollar-roll-hoards-hidden-gems",
+          "date": "2026-10-15",
+          "stage": "local production",
+          "role": "Auction sample context and closing card; explicitly identified as an unarrived sample."
+        }
+      ],
+      "useNote": "Auction-context sample only; image watermark states hoard had not arrived."
+    },
+    {
+      "id": "coin-0044",
+      "title": "Morgan dollar stack and loose coins",
+      "source": "Coin Raw/codex-clipboard-4179addb-1a77-4fe4-a56a-baef078391de.jpg",
+      "sha256": "b254657e07479869a7e68474872455629b111793096768f7eaac69a3f158d77a",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history",
+        "silver-dollar-hoards"
+      ],
+      "width": 1000,
+      "height": 1269,
+      "identityBasis": "Morgan design visible; dates and mint marks on background coins are not asserted. Do not pair with another photo as the same specimen.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photograph for Fused Distribution blog and reel use. No public stock redistribution grant inferred.",
+      "privacy": "Review crops for watermark, fingers and unrelated details. Do not infer coin pairing, mint, grade, rarity or value beyond visible evidence.",
+      "lastUsed": "2026-10-15",
+      "uses": [
+        {
+          "slug": "silver-dollar-roll-hoards-hidden-gems",
+          "date": "2026-10-15",
+          "stage": "local production",
+          "role": "Owner coin photo; general Morgan dollar context, separate specimen."
+        }
+      ]
+    },
+    {
+      "id": "coin-0045",
+      "title": "1887 Morgan dollar obverse in wrapper",
+      "source": "Coin Raw/codex-clipboard-a9b0a061-e6b0-4cc4-971d-73b325586630.jpg",
+      "sha256": "68fb74677224b22d9f22ea7f7ab396651a668d0479f125e1d8084f89c14e62d2",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history",
+        "silver-dollar-hoards"
+      ],
+      "width": 1000,
+      "height": 1023,
+      "identityBasis": "The obverse date 1887 is visibly legible. Mint mark is not shown; no grade or authentication is asserted.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photograph for Fused Distribution blog and reel use. No public stock redistribution grant inferred.",
+      "privacy": "Review crops for watermark, fingers and unrelated details. Do not infer coin pairing, mint, grade, rarity or value beyond visible evidence.",
+      "lastUsed": "2026-10-15",
+      "uses": [
+        {
+          "slug": "silver-dollar-roll-hoards-hidden-gems",
+          "date": "2026-10-15",
+          "stage": "local production",
+          "role": "Owner coin photo; visible 1887 obverse detail, mint unknown."
+        }
+      ]
+    },
+    {
+      "id": "coin-0046",
+      "title": "Morgan dollar reverse in wrapper",
+      "source": "Coin Raw/codex-clipboard-aaaaac7a-0cca-4d00-9805-5e55a6c94266.jpg",
+      "sha256": "857ad233bd766c8ad630e8761efb15a2aa1a74963f3e3274eb2ee5c014f2764e",
+      "kind": "photo",
+      "category": "morgan-dollars",
+      "tags": [
+        "morgan-dollars",
+        "owner-photography",
+        "coin-history",
+        "silver-dollar-hoards"
+      ],
+      "width": 1000,
+      "height": 937,
+      "identityBasis": "Reverse design visible. Mint mark not verified from this view. Treat as a separate specimen from the 1887 obverse unless pairing is independently confirmed.",
+      "status": "cataloged_requires_crop_review",
+      "rights": "User supplied photograph for Fused Distribution blog and reel use. No public stock redistribution grant inferred.",
+      "privacy": "Review crops for watermark, fingers and unrelated details. Do not infer coin pairing, mint, grade, rarity or value beyond visible evidence.",
+      "lastUsed": "2026-10-15",
+      "uses": [
+        {
+          "slug": "silver-dollar-roll-hoards-hidden-gems",
+          "date": "2026-10-15",
+          "stage": "local production",
+          "role": "Owner coin photo; reverse view, not paired with coin-0045."
+        }
+      ]
+    }
+  ]
+}
