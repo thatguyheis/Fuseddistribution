@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-09T06:00:07.863694+00:00",
+  "posts": [
+    {
+      "slug": "coin-presses-and-repeated-strikes-explained",
+      "keyword": "coin presses and repeated strikes explained",
+      "brand": "silver"
+    },
+    {
+      "slug": "silver-reserves-and-resources-are-different-measures",
+      "keyword": "silver reserves and resources are different measures",
+      "brand": "silver"
+    },
+    {
+      "slug": "testing-an-ai-summary-against-its-source-document",
+      "keyword": "testing an AI summary against its source document",
+      "brand": "tech"
+    },
+    {
+      "slug": "separating-a-useful-tutorial-from-a-sales-page",
+      "keyword": "separating a useful tutorial from a sales page",
+      "brand": "tech"
+    }
+  ]
+}

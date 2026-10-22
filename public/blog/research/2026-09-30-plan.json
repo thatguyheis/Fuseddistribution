@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-30",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-09-30T14:00:07.728167+00:00",
+  "posts": [
+    {
+      "slug": "silver-in-mirrors-and-reflective-coatings",
+      "keyword": "silver in mirrors and reflective coatings",
+      "brand": "silver"
+    },
+    {
+      "slug": "how-coin-dies-transfer-a-design-to-metal",
+      "keyword": "how coin dies transfer a design to metal",
+      "brand": "silver"
+    },
+    {
+      "slug": "building-a-test-set-for-ai-customer-support-drafts",
+      "keyword": "building a test set for AI customer support drafts",
+      "brand": "tech"
+    },
+    {
+      "slug": "turning-service-conversations-into-useful-faq-topics",
+      "keyword": "turning service conversations into useful FAQ topics",
+      "brand": "tech"
+    }
+  ]
+}

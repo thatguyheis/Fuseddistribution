@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-25",
+  "posts": [
+    {
+      "slug": "how-to-choose-pvc-free-flips-for-silver-coins",
+      "keyword": "How to choose PVC free flips for silver coins",
+      "brand": "silver",
+      "draft": "public/blog/how-to-choose-pvc-free-flips-for-silver-coins/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-handle-proof-silver-coins-without-fingerprints",
+      "keyword": "How to handle proof silver coins without fingerprints",
+      "brand": "silver",
+      "draft": "public/blog/how-to-handle-proof-silver-coins-without-fingerprints/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-request-indexing-after-updating-a-service-page",
+      "keyword": "How to request indexing after updating a service page",
+      "brand": "tech",
+      "draft": "public/blog/how-to-request-indexing-after-updating-a-service-page/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-test-website-links-after-changing-page-names",
+      "keyword": "How to test website links after changing page names",
+      "brand": "tech",
+      "draft": "public/blog/how-to-test-website-links-after-changing-page-names/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

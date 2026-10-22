@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-14",
+  "recovery": true,
+  "proof": ".workflow-state/social-schedule-live-proof-2026-09-14.json",
+  "posts": [
+    {
+      "slug": "social-media-posting-schedule-for-small-business",
+      "keyword": "social media posting schedule for small business",
+      "brand": "tech",
+      "draft": "public/blog/social-media-posting-schedule-for-small-business/gemma_draft.md",
+      "originalQueuedDate": "2026-08-07",
+      "actualPublicationDate": "2026-09-14",
+      "recoveryState": "live-verified-awaiting-routine-checkpoint"
+    }
+  ]
+}

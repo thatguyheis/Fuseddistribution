@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-02",
+  "posts": [
+    {
+      "slug": "morgan-silver-dollars-as-investment",
+      "keyword": "morgan silver dollars as investment",
+      "brand": "silver",
+      "draft": "public/blog/morgan-silver-dollars-as-investment/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "proof-silver-coins-worth-buying-or-not",
+      "keyword": "proof silver coins worth buying or not",
+      "brand": "silver",
+      "draft": "public/blog/proof-silver-coins-worth-buying-or-not/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "email-newsletter-ideas-for-small-business",
+      "keyword": "email newsletter ideas for small business",
+      "brand": "tech",
+      "draft": "public/blog/email-newsletter-ideas-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "best-email-marketing-tools-for-small-business-2026",
+      "keyword": "best email marketing tools for small business 2026",
+      "brand": "tech",
+      "draft": "public/blog/best-email-marketing-tools-for-small-business-2026/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-01",
+  "completed_at": "2026-10-01T19:03:46.163032+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-01",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-01/what-a-coin-collar-does-during-striking-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/how-to-read-a-usgs-silver-commodity-summary-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/when-two-service-pages-answer-the-same-question-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/assigning-accessibility-ownership-in-a-small-team-live-proof.json"
+  ]
+}

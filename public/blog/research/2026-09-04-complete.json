@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-04",
+  "completed_at": "2026-09-04T16:33:03Z",
+  "live": 1,
+  "quality_blocked": 0,
+  "source_sync_warnings": 1,
+  "status": "invalidated",
+  "audit_date": "2026-09-07",
+  "reason": "Duplicate published topics; no fresh output. Original complete marker did not verify artifact integrity."
+}

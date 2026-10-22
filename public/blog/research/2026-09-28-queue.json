@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-28",
+  "posts": [
+    {
+      "slug": "how-to-check-contrast-on-website-contact-buttons",
+      "keyword": "how to check contrast on website contact buttons",
+      "brand": "tech",
+      "draft": "public/blog/how-to-check-contrast-on-website-contact-buttons/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-photograph-silver-coins-for-an-inventory",
+      "keyword": "how to photograph silver coins for an inventory",
+      "brand": "silver",
+      "draft": "public/blog/how-to-photograph-silver-coins-for-an-inventory/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-reconcile-a-silver-inventory-after-a-sale",
+      "keyword": "how to reconcile a silver inventory after a sale",
+      "brand": "silver",
+      "draft": "public/blog/how-to-reconcile-a-silver-inventory-after-a-sale/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-test-skip-links-on-a-business-website",
+      "keyword": "how to test skip links on a business website",
+      "brand": "tech",
+      "draft": "public/blog/how-to-test-skip-links-on-a-business-website/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

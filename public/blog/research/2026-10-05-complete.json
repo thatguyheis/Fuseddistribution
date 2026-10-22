@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-05",
+  "completed_at": "2026-10-08T14:01:18.163872+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-08",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-08/what-silver-catalysts-do-in-manufacturing-live-proof.json",
+    ".workflow-state/recovery-2026-10-08/why-coin-edges-have-different-designs-live-proof.json",
+    ".workflow-state/recovery-2026-10-08/what-to-record-when-an-ai-answer-is-wrong-live-proof.json",
+    ".workflow-state/recovery-2026-10-08/choosing-evidence-for-a-service-case-study-live-proof.json"
+  ]
+}

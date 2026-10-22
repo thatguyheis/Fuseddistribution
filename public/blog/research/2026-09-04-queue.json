@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-04",
+  "posts": [
+    {
+      "slug": "contact-page-best-practices-for-local-business",
+      "keyword": "contact page best practices for local business",
+      "brand": "tech",
+      "draft": "public/blog/contact-page-best-practices-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "silver-in-mirrors-and-reflective-coatings",
+      "keyword": "silver in mirrors and reflective coatings",
+      "brand": "silver",
+      "draft": "public/blog/silver-in-mirrors-and-reflective-coatings/verified.md",
+      "publicationDate": "2026-10-01",
+      "liveProof": ".workflow-state/recovery-2026-10-01/silver-in-mirrors-and-reflective-coatings-live-proof.json"
+    },
+    {
+      "slug": "how-coin-dies-transfer-a-design-to-metal",
+      "keyword": "how coin dies transfer a design to metal",
+      "brand": "silver",
+      "draft": "public/blog/how-coin-dies-transfer-a-design-to-metal/verified.md",
+      "publicationDate": "2026-10-01",
+      "liveProof": ".workflow-state/recovery-2026-10-01/how-coin-dies-transfer-a-design-to-metal-live-proof.json"
+    },
+    {
+      "slug": "building-a-test-set-for-ai-customer-support-drafts",
+      "keyword": "building a test set for AI customer support drafts",
+      "brand": "tech",
+      "draft": "public/blog/building-a-test-set-for-ai-customer-support-drafts/verified.md",
+      "publicationDate": "2026-10-01",
+      "liveProof": ".workflow-state/recovery-2026-10-01/building-a-test-set-for-ai-customer-support-drafts-live-proof.json"
+    },
+    {
+      "slug": "turning-service-conversations-into-useful-faq-topics",
+      "keyword": "turning service conversations into useful FAQ topics",
+      "brand": "tech",
+      "draft": "public/blog/turning-service-conversations-into-useful-faq-topics/verified.md",
+      "publicationDate": "2026-10-01",
+      "liveProof": ".workflow-state/recovery-2026-10-01/turning-service-conversations-into-useful-faq-topics-live-proof.json"
+    }
+  ]
+}

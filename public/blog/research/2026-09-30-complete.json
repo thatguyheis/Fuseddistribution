@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-30",
+  "completed_at": "2026-10-01T18:57:33.806782+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-01",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-01/silver-in-mirrors-and-reflective-coatings-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/how-coin-dies-transfer-a-design-to-metal-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/building-a-test-set-for-ai-customer-support-drafts-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/turning-service-conversations-into-useful-faq-topics-live-proof.json"
+  ]
+}

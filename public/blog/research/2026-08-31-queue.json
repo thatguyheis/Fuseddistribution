@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-31",
+  "posts": [
+    {
+      "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
+      "keyword": "1 oz silver coins vs 10 oz silver bars which to buy",
+      "brand": "silver",
+      "draft": "public/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "100-oz-silver-bars-pros-and-cons",
+      "keyword": "100 oz silver bars pros and cons",
+      "brand": "silver",
+      "draft": "public/blog/100-oz-silver-bars-pros-and-cons/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "best-time-to-post-on-instagram-for-local-business",
+      "keyword": "best time to post on instagram for local business",
+      "brand": "tech",
+      "draft": "public/blog/best-time-to-post-on-instagram-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "social-media-analytics-what-metrics-actually-matter",
+      "keyword": "social media analytics what metrics actually matter",
+      "brand": "tech",
+      "draft": "public/blog/social-media-analytics-what-metrics-actually-matter/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

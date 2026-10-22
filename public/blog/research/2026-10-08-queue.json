@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-08",
+  "posts": [
+    {
+      "slug": "creating-an-approval-log-for-ai-assisted-work",
+      "keyword": "creating an approval log for AI assisted work",
+      "brand": "tech",
+      "draft": "public/blog/creating-an-approval-log-for-ai-assisted-work/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "planning-a-seasonal-update-without-rewriting-every-page",
+      "keyword": "planning a seasonal update without rewriting every page",
+      "brand": "tech",
+      "draft": "public/blog/planning-a-seasonal-update-without-rewriting-every-page/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}

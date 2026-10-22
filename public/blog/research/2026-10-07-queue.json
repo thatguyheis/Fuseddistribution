@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07",
+  "status": "partial_recovery",
+  "posts": [
+    {
+      "slug": "silver-recycling-from-industrial-scrap-explained",
+      "keyword": "silver recycling from industrial scrap explained",
+      "brand": "silver",
+      "draft": "public/blog/silver-recycling-from-industrial-scrap-explained/verified.md",
+      "publicationDate": "2026-10-09",
+      "liveProof": ".workflow-state/recovery-2026-10-09-batch/silver-recycling-from-industrial-scrap-explained-live-proof.json"
+    },
+    {
+      "slug": "from-artist-sketch-to-finished-coin-design",
+      "keyword": "from artist sketch to finished coin design",
+      "brand": "silver",
+      "draft": "public/blog/from-artist-sketch-to-finished-coin-design/verified.md",
+      "publicationDate": "2026-10-09",
+      "liveProof": ".workflow-state/recovery-2026-10-09-batch/from-artist-sketch-to-finished-coin-design-live-proof.json"
+    }
+  ]
+}

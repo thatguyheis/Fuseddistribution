@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-06",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "silver-halides-and-the-history-of-photography",
+      "keyword": "silver halides and the history of photography",
+      "brand": "silver",
+      "draft": "public/blog/silver-halides-and-the-history-of-photography/verified.md",
+      "publicationDate": "2026-10-08",
+      "liveProof": ".workflow-state/recovery-2026-10-08/silver-halides-and-the-history-of-photography-live-proof.json"
+    },
+    {
+      "slug": "how-relief-changes-the-appearance-of-a-coin",
+      "keyword": "how relief changes the appearance of a coin",
+      "brand": "silver",
+      "draft": "public/blog/how-relief-changes-the-appearance-of-a-coin/verified.md",
+      "publicationDate": "2026-10-09",
+      "liveProof": ".workflow-state/recovery-2026-10-09/how-relief-changes-the-appearance-of-a-coin-live-proof.json"
+    },
+    {
+      "slug": "deciding-when-an-ai-workflow-needs-human-review",
+      "keyword": "deciding when an AI workflow needs human review",
+      "brand": "tech",
+      "draft": "public/blog/deciding-when-an-ai-workflow-needs-human-review/verified.md",
+      "publicationDate": "2026-10-09",
+      "liveProof": ".workflow-state/recovery-2026-10-09-batch/deciding-when-an-ai-workflow-needs-human-review-live-proof.json"
+    },
+    {
+      "slug": "building-a-glossary-customers-can-actually-use",
+      "keyword": "building a glossary customers can actually use",
+      "brand": "tech",
+      "draft": "public/blog/building-a-glossary-customers-can-actually-use/verified.md",
+      "publicationDate": "2026-10-09",
+      "liveProof": ".workflow-state/recovery-2026-10-09-batch/building-a-glossary-customers-can-actually-use-live-proof.json"
+    }
+  ]
+}

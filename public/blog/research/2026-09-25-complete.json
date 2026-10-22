@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-25",
+  "completed_at": "2026-09-25T19:08:55.031616+00:00",
+  "live": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "status": "articles_live_verified",
+  "slugs": [
+    "how-to-choose-pvc-free-flips-for-silver-coins",
+    "how-to-handle-proof-silver-coins-without-fingerprints",
+    "how-to-request-indexing-after-updating-a-service-page",
+    "how-to-test-website-links-after-changing-page-names"
+  ],
+  "proofRoot": ".workflow-state/catchup-2026-09-25/staged",
+  "mediaStatus": "Separate render and release gates pending"
+}

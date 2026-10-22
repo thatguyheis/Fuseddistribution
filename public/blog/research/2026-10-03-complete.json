@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-03",
+  "completed_at": "2026-10-04T13:37:02.613353+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-04",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-04/comparing-lettering-styles-on-collectible-coins-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/why-silver-supply-estimates-get-revised-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/measuring-rework-instead-of-counting-automated-tasks-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/planning-an-accessible-content-publishing-checklist-live-proof.json"
+  ]
+}

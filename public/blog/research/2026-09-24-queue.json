@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-24",
+  "origin": "codex-recovery",
+  "posts": [
+    {
+      "slug": "how-to-map-old-website-urls-before-a-redesign",
+      "keyword": "how to map old website urls before a redesign",
+      "brand": "tech",
+      "draft": "public/blog/how-to-map-old-website-urls-before-a-redesign/gemma_draft.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-document-a-damaged-silver-bullion-shipment",
+      "keyword": "how to document a damaged silver bullion shipment",
+      "brand": "silver",
+      "draft": "public/blog/how-to-document-a-damaged-silver-bullion-shipment/verified.md",
+      "ad_formats": [
+        "checklist",
+        "photo"
+      ],
+      "ugc_angle": "delivery issue record"
+    },
+    {
+      "slug": "silver-bullion-invoice-checklist-for-your-records",
+      "keyword": "silver bullion invoice checklist record keeping",
+      "brand": "silver",
+      "draft": "public/blog/silver-bullion-invoice-checklist-for-your-records/verified.md",
+      "ad_formats": [
+        "checklist",
+        "photo"
+      ],
+      "ugc_angle": "purchase documentation checklist"
+    },
+    {
+      "slug": "how-to-check-redirect-chains-on-a-business-website",
+      "keyword": "how to check redirect chains on a business website",
+      "brand": "tech",
+      "draft": "public/blog/how-to-check-redirect-chains-on-a-business-website/verified.md",
+      "ad_formats": [
+        "checklist",
+        "photo"
+      ],
+      "ugc_angle": "old to final URL audit"
+    }
+  ]
+}

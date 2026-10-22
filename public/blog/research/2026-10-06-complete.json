@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-06",
+  "completed_at": "2026-10-09T16:28:20.418422+00:00",
+  "updatedAt": "2026-10-09T16:28:20.418422+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "proofs": [
+    ".workflow-state/recovery-2026-10-08/silver-halides-and-the-history-of-photography-live-proof.json",
+    ".workflow-state/recovery-2026-10-09/how-relief-changes-the-appearance-of-a-coin-live-proof.json",
+    ".workflow-state/recovery-2026-10-09-batch/deciding-when-an-ai-workflow-needs-human-review-live-proof.json",
+    ".workflow-state/recovery-2026-10-09-batch/building-a-glossary-customers-can-actually-use-live-proof.json"
+  ],
+  "remainingSlugs": []
+}

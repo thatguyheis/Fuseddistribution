@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-28",
+  "posts": [
+    {
+      "slug": "how-to-compare-silver-premiums-across-dealers",
+      "keyword": "how to compare silver premiums across dealers",
+      "brand": "silver",
+      "draft": "public/blog/how-to-compare-silver-premiums-across-dealers/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "should-you-buy-silver-in-dips-or-dollar-cost-average",
+      "keyword": "should you buy silver in dips or dollar cost average",
+      "brand": "silver",
+      "draft": "public/blog/should-you-buy-silver-in-dips-or-dollar-cost-average/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-often-to-post-on-social-media-for-small-business",
+      "keyword": "how often to post on social media for small business",
+      "brand": "tech",
+      "draft": "public/blog/how-often-to-post-on-social-media-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "tiktok-for-local-business-does-it-work",
+      "keyword": "tiktok for local business does it work",
+      "brand": "tech",
+      "draft": "public/blog/tiktok-for-local-business-does-it-work/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

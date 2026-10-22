@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "what-silver-catalysts-do-in-manufacturing",
+      "keyword": "what silver catalysts do in manufacturing",
+      "brand": "silver",
+      "draft": "public/blog/what-silver-catalysts-do-in-manufacturing/verified.md",
+      "publicationDate": "2026-10-08",
+      "liveProof": ".workflow-state/recovery-2026-10-08/what-silver-catalysts-do-in-manufacturing-live-proof.json"
+    },
+    {
+      "slug": "why-coin-edges-have-different-designs",
+      "keyword": "why coin edges have different designs",
+      "brand": "silver",
+      "draft": "public/blog/why-coin-edges-have-different-designs/verified.md",
+      "publicationDate": "2026-10-08",
+      "liveProof": ".workflow-state/recovery-2026-10-08/why-coin-edges-have-different-designs-live-proof.json"
+    },
+    {
+      "slug": "what-to-record-when-an-ai-answer-is-wrong",
+      "keyword": "what to record when an AI answer is wrong",
+      "brand": "tech",
+      "draft": "public/blog/what-to-record-when-an-ai-answer-is-wrong/verified.md",
+      "publicationDate": "2026-10-08",
+      "liveProof": ".workflow-state/recovery-2026-10-08/what-to-record-when-an-ai-answer-is-wrong-live-proof.json"
+    },
+    {
+      "slug": "choosing-evidence-for-a-service-case-study",
+      "keyword": "choosing evidence for a service case study",
+      "brand": "tech",
+      "draft": "public/blog/choosing-evidence-for-a-service-case-study/verified.md",
+      "publicationDate": "2026-10-08",
+      "liveProof": ".workflow-state/recovery-2026-10-08/choosing-evidence-for-a-service-case-study-live-proof.json"
+    }
+  ]
+}

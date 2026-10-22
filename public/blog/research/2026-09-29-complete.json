@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-29",
+  "completed_at": "2026-10-01T18:42:36.544559+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-01",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-01/why-silver-is-used-in-electrical-contacts-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/coin-blanks-and-planchets-explained-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/choosing-a-low-risk-first-ai-task-for-a-small-business-live-proof.json",
+    ".workflow-state/recovery-2026-10-01/planning-a-website-around-customer-questions-live-proof.json"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-08",
+  "posts": [
+    {
+      "slug": "silver-purity-marks-what-999-9999-means",
+      "keyword": "Silver Purity Marks: Reading .999 and .9999 Correctly",
+      "brand": "silver",
+      "draft": "public/blog/silver-purity-marks-what-999-9999-means/verified.md",
+      "originalQueuedDate": "2026-07-19",
+      "recoveredBy": "codex-owner"
+    },
+    {
+      "slug": "using-ai-to-respond-to-google-reviews-automatically",
+      "keyword": "Using AI to Respond to Google Reviews Automatically",
+      "brand": "tech",
+      "draft": "public/blog/using-ai-to-respond-to-google-reviews-automatically/verified.md",
+      "originalQueuedDate": "2026-08-01",
+      "recoveredBy": "codex-owner"
+    }
+  ],
+  "recoveryNote": "Owner replaced failed nightly candidates; actual first publication September 8. Original historical queue identities retained."
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-01",
+  "posts": [
+    {
+      "slug": "junk-silver-coins-guide-pre-1965-us-silver",
+      "keyword": "junk silver coins guide pre-1965 US silver",
+      "brand": "silver",
+      "draft": "public/blog/junk-silver-coins-guide-pre-1965-us-silver/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "what-is-90-percent-silver-junk-silver-worth-buying",
+      "keyword": "what is 90 percent silver junk silver worth buying",
+      "brand": "silver",
+      "draft": "public/blog/what-is-90-percent-silver-junk-silver-worth-buying/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "email-marketing-for-small-business-getting-started",
+      "keyword": "email marketing for small business getting started",
+      "brand": "tech",
+      "draft": "public/blog/email-marketing-for-small-business-getting-started/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-build-an-email-list-for-your-local-business",
+      "keyword": "how to build an email list for your local business",
+      "brand": "tech",
+      "draft": "public/blog/how-to-build-an-email-list-for-your-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

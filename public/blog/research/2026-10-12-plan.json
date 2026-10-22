@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-09T14:09:17.825501+00:00",
+  "posts": [
+    {
+      "slug": "making-a-visual-glossary-of-coin-design-terms",
+      "keyword": "making a visual glossary of coin design terms",
+      "brand": "silver"
+    },
+    {
+      "slug": "reading-a-silver-recycling-report-without-price-forecas",
+      "keyword": "reading a silver recycling report without price forecasts",
+      "brand": "silver"
+    },
+    {
+      "slug": "testing-an-automation-with-missing-customer-information",
+      "keyword": "testing an automation with missing customer information",
+      "brand": "tech"
+    },
+    {
+      "slug": "budgeting-time-for-accessibility-maintenance",
+      "keyword": "budgeting time for accessibility maintenance",
+      "brand": "tech"
+    }
+  ]
+}

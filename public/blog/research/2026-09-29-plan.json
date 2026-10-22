@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-29",
+  "status": "planned",
+  "approval": false,
+  "posts": [
+    {
+      "brand": "silver",
+      "keyword": "why silver is used in electrical contacts",
+      "category": "materials",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-09-29",
+      "sourceUrls": [
+        "https://www.usgs.gov/centers/national-minerals-information-center/silver-statistics-and-information"
+      ],
+      "sourceScope": "Research starting point, not approval of article claims. Verify topic-specific claims and current data before publication.",
+      "slug": "why-silver-is-used-in-electrical-contacts",
+      "index": 170
+    },
+    {
+      "brand": "silver",
+      "keyword": "coin blanks and planchets explained",
+      "category": "minting",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-09-29",
+      "sourceUrls": [
+        "https://www.usmint.gov/learn/production-process"
+      ],
+      "sourceScope": "Research starting point, not approval of article claims. Verify topic-specific claims and current data before publication.",
+      "slug": "coin-blanks-and-planchets-explained",
+      "index": 178
+    },
+    {
+      "brand": "tech",
+      "keyword": "choosing a low risk first AI task for a small business",
+      "category": "ai-workflows",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-09-29",
+      "sourceUrls": [
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ],
+      "sourceScope": "Research starting point, not approval of article claims. Verify topic-specific claims and current data before publication.",
+      "slug": "choosing-a-low-risk-first-ai-task-for-a-small-business",
+      "index": 144
+    },
+    {
+      "brand": "tech",
+      "keyword": "planning a website around customer questions",
+      "category": "content-strategy",
+      "status": "editorial-seed-reviewed",
+      "reviewedAt": "2026-09-29",
+      "sourceUrls": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ],
+      "sourceScope": "Research starting point, not approval of article claims. Verify topic-specific claims and current data before publication.",
+      "slug": "planning-a-website-around-customer-questions",
+      "index": 152
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-27",
+  "completed_at": "2026-09-28T14:39:24.851555+00:00",
+  "live": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "status": "complete",
+  "slugs": [
+    "how-to-record-silver-coin-condition-without-grading-it",
+    "how-to-review-image-alt-text-on-service-pages",
+    "how-to-separate-damaged-coin-holders-from-your-collecti",
+    "how-to-test-a-business-website-at-larger-text-sizes"
+  ],
+  "publicationDate": "2026-09-28",
+  "proof": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-test-a-business-website-at-larger-text-sizes/live-proof.json",
+  "proofs": {
+    "how-to-record-silver-coin-condition-without-grading-it": ".workflow-state/offline-recovery-2026-09-28/staged/how-to-record-silver-coin-condition-without-grading-it/live-proof.json",
+    "how-to-review-image-alt-text-on-service-pages": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-review-image-alt-text-on-service-pages/live-proof.json",
+    "how-to-separate-damaged-coin-holders-from-your-collecti": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-separate-damaged-coin-holders-from-your-collecti/live-proof.json",
+    "how-to-test-a-business-website-at-larger-text-sizes": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-test-a-business-website-at-larger-text-sizes/live-proof.json"
+  }
+}

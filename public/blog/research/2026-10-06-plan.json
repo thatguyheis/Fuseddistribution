@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-06T06:04:53.170151+00:00",
+  "posts": [
+    {
+      "slug": "silver-halides-and-the-history-of-photography",
+      "keyword": "silver halides and the history of photography",
+      "brand": "silver"
+    },
+    {
+      "slug": "how-relief-changes-the-appearance-of-a-coin",
+      "keyword": "how relief changes the appearance of a coin",
+      "brand": "silver"
+    },
+    {
+      "slug": "deciding-when-an-ai-workflow-needs-human-review",
+      "keyword": "deciding when an AI workflow needs human review",
+      "brand": "tech"
+    },
+    {
+      "slug": "building-a-glossary-customers-can-actually-use",
+      "keyword": "building a glossary customers can actually use",
+      "brand": "tech"
+    }
+  ]
+}

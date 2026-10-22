@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-27",
+  "posts": [
+    {
+      "slug": "how-to-record-silver-coin-condition-without-grading-it",
+      "keyword": "how to record silver coin condition without grading it",
+      "brand": "silver",
+      "draft": "public/blog/how-to-record-silver-coin-condition-without-grading-it/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-review-image-alt-text-on-service-pages",
+      "keyword": "how to review image alt text on service pages",
+      "brand": "tech",
+      "draft": "public/blog/how-to-review-image-alt-text-on-service-pages/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-separate-damaged-coin-holders-from-your-collecti",
+      "keyword": "how to separate damaged coin holders from your collection",
+      "brand": "silver",
+      "draft": "public/blog/how-to-separate-damaged-coin-holders-from-your-collecti/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-test-a-business-website-at-larger-text-sizes",
+      "keyword": "how to test a business website at larger text sizes",
+      "brand": "tech",
+      "draft": "public/blog/how-to-test-a-business-website-at-larger-text-sizes/verified.md",
+      "ad_formats": [
+        "apple-notes",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

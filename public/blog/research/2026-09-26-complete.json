@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-26",
+  "completed_at": "2026-09-28T14:39:06.262066+00:00",
+  "live": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "status": "complete",
+  "slugs": [
+    "how-to-label-silver-coin-holders-without-touching-coins",
+    "how-to-check-contact-form-labels-on-your-website",
+    "how-to-check-keyboard-focus-on-a-business-website",
+    "how-to-store-original-silver-coin-packaging"
+  ],
+  "publicationDate": "2026-09-28",
+  "proof": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-store-original-silver-coin-packaging/live-proof.json",
+  "proofs": {
+    "how-to-label-silver-coin-holders-without-touching-coins": ".workflow-state/offline-recovery-2026-09-28/staged/how-to-label-silver-coin-holders-without-touching-coins/live-proof.json",
+    "how-to-check-contact-form-labels-on-your-website": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-check-contact-form-labels-on-your-website/live-proof.json",
+    "how-to-check-keyboard-focus-on-a-business-website": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-check-keyboard-focus-on-a-business-website/live-proof.json",
+    "how-to-store-original-silver-coin-packaging": ".workflow-state/offline-recovery-2026-09-28/remaining/how-to-store-original-silver-coin-packaging/live-proof.json"
+  }
+}

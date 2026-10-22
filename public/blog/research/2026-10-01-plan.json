@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-01",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-01T14:00:07.778508+00:00",
+  "posts": [
+    {
+      "slug": "what-a-coin-collar-does-during-striking",
+      "keyword": "what a coin collar does during striking",
+      "brand": "silver"
+    },
+    {
+      "slug": "how-to-read-a-usgs-silver-commodity-summary",
+      "keyword": "how to read a USGS silver commodity summary",
+      "brand": "silver"
+    },
+    {
+      "slug": "when-two-service-pages-answer-the-same-question",
+      "keyword": "when two service pages answer the same question",
+      "brand": "tech"
+    },
+    {
+      "slug": "assigning-accessibility-ownership-in-a-small-team",
+      "keyword": "assigning accessibility ownership in a small team",
+      "brand": "tech"
+    }
+  ]
+}

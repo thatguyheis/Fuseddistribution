@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-03",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-03T06:07:27.304878+00:00",
+  "posts": [
+    {
+      "slug": "comparing-lettering-styles-on-collectible-coins",
+      "keyword": "comparing lettering styles on collectible coins",
+      "brand": "silver"
+    },
+    {
+      "slug": "why-silver-supply-estimates-get-revised",
+      "keyword": "why silver supply estimates get revised",
+      "brand": "silver"
+    },
+    {
+      "slug": "measuring-rework-instead-of-counting-automated-tasks",
+      "keyword": "measuring rework instead of counting automated tasks",
+      "brand": "tech"
+    },
+    {
+      "slug": "planning-an-accessible-content-publishing-checklist",
+      "keyword": "planning an accessible content publishing checklist",
+      "brand": "tech"
+    }
+  ]
+}

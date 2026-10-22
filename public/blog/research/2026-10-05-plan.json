@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-05",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-05T14:00:08.284418+00:00",
+  "posts": [
+    {
+      "slug": "what-silver-catalysts-do-in-manufacturing",
+      "keyword": "what silver catalysts do in manufacturing",
+      "brand": "silver"
+    },
+    {
+      "slug": "why-coin-edges-have-different-designs",
+      "keyword": "why coin edges have different designs",
+      "brand": "silver"
+    },
+    {
+      "slug": "what-to-record-when-an-ai-answer-is-wrong",
+      "keyword": "what to record when an AI answer is wrong",
+      "brand": "tech"
+    },
+    {
+      "slug": "choosing-evidence-for-a-service-case-study",
+      "keyword": "choosing evidence for a service case study",
+      "brand": "tech"
+    }
+  ]
+}

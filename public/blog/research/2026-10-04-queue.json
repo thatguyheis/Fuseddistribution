@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "reading-a-coin-design-from-center-to-rim",
+      "keyword": "reading a coin design from center to rim",
+      "brand": "silver",
+      "draft": "public/blog/reading-a-coin-design-from-center-to-rim/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/reading-a-coin-design-from-center-to-rim-live-proof.json"
+    },
+    {
+      "slug": "comparing-silver-statistics-with-different-units",
+      "keyword": "comparing silver statistics with different units",
+      "brand": "silver",
+      "draft": "public/blog/comparing-silver-statistics-with-different-units/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/comparing-silver-statistics-with-different-units-live-proof.json"
+    },
+    {
+      "slug": "creating-a-small-business-exception-handling-log",
+      "keyword": "creating a small business exception handling log",
+      "brand": "tech",
+      "draft": "public/blog/creating-a-small-business-exception-handling-log/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/creating-a-small-business-exception-handling-log-live-proof.json"
+    },
+    {
+      "slug": "recording-accessibility-feedback-from-real-customers",
+      "keyword": "recording accessibility feedback from real customers",
+      "brand": "tech",
+      "draft": "public/blog/recording-accessibility-feedback-from-real-customers/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/recording-accessibility-feedback-from-real-customers-live-proof.json"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-30",
+  "posts": [
+    {
+      "slug": "silver-bars-vs-silver-coins-which-is-better",
+      "keyword": "silver bars vs silver coins which is better",
+      "brand": "silver",
+      "draft": "public/blog/silver-bars-vs-silver-coins-which-is-better/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "silver-rounds-vs-silver-coins-differences",
+      "keyword": "silver rounds vs silver coins differences",
+      "brand": "silver",
+      "draft": "public/blog/silver-rounds-vs-silver-coins-differences/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "facebook-ads-for-local-business-beginner-guide",
+      "keyword": "facebook ads for local business beginner guide",
+      "brand": "tech",
+      "draft": "public/blog/facebook-ads-for-local-business-beginner-guide/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "how-to-target-local-customers-with-facebook-ads",
+      "keyword": "how to target local customers with facebook ads",
+      "brand": "tech",
+      "draft": "public/blog/how-to-target-local-customers-with-facebook-ads/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

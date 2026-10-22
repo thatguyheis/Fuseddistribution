@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-02",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-02T06:00:07.539076+00:00",
+  "posts": [
+    {
+      "slug": "building-a-silver-collection-around-design-themes",
+      "keyword": "building a silver collection around design themes",
+      "brand": "silver"
+    },
+    {
+      "slug": "silver-mine-production-versus-refined-production",
+      "keyword": "silver mine production versus refined production",
+      "brand": "silver"
+    },
+    {
+      "slug": "mapping-a-manual-business-process-before-automating-it",
+      "keyword": "mapping a manual business process before automating it",
+      "brand": "tech"
+    },
+    {
+      "slug": "including-accessibility-in-a-website-supplier-brief",
+      "keyword": "including accessibility in a website supplier brief",
+      "brand": "tech"
+    }
+  ]
+}

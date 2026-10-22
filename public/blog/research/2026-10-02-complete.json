@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-02",
+  "completed_at": "2026-10-04T13:37:02.613353+00:00",
+  "live": 4,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "actualPublicationDate": "2026-10-04",
+  "proofs": [
+    ".workflow-state/recovery-2026-10-04/building-a-silver-collection-around-design-themes-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/silver-mine-production-versus-refined-production-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/mapping-a-manual-business-process-before-automating-it-live-proof.json",
+    ".workflow-state/recovery-2026-10-04/including-accessibility-in-a-website-supplier-brief-live-proof.json"
+  ]
+}

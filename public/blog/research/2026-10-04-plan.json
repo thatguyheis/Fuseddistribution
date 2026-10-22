@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-04",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-04T06:00:07.814507+00:00",
+  "posts": [
+    {
+      "slug": "reading-a-coin-design-from-center-to-rim",
+      "keyword": "reading a coin design from center to rim",
+      "brand": "silver"
+    },
+    {
+      "slug": "comparing-silver-statistics-with-different-units",
+      "keyword": "comparing silver statistics with different units",
+      "brand": "silver"
+    },
+    {
+      "slug": "creating-a-small-business-exception-handling-log",
+      "keyword": "creating a small business exception handling log",
+      "brand": "tech"
+    },
+    {
+      "slug": "recording-accessibility-feedback-from-real-customers",
+      "keyword": "recording accessibility feedback from real customers",
+      "brand": "tech"
+    }
+  ]
+}

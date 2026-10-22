@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "comparing-lettering-styles-on-collectible-coins",
+      "keyword": "comparing lettering styles on collectible coins",
+      "brand": "silver",
+      "draft": "public/blog/comparing-lettering-styles-on-collectible-coins/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/comparing-lettering-styles-on-collectible-coins-live-proof.json"
+    },
+    {
+      "slug": "why-silver-supply-estimates-get-revised",
+      "keyword": "why silver supply estimates get revised",
+      "brand": "silver",
+      "draft": "public/blog/why-silver-supply-estimates-get-revised/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/why-silver-supply-estimates-get-revised-live-proof.json"
+    },
+    {
+      "slug": "measuring-rework-instead-of-counting-automated-tasks",
+      "keyword": "measuring rework instead of counting automated tasks",
+      "brand": "tech",
+      "draft": "public/blog/measuring-rework-instead-of-counting-automated-tasks/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/measuring-rework-instead-of-counting-automated-tasks-live-proof.json"
+    },
+    {
+      "slug": "planning-an-accessible-content-publishing-checklist",
+      "keyword": "planning an accessible content publishing checklist",
+      "brand": "tech",
+      "draft": "public/blog/planning-an-accessible-content-publishing-checklist/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/planning-an-accessible-content-publishing-checklist-live-proof.json"
+    }
+  ]
+}

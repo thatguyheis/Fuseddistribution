@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-11",
+  "recoveryStatus": "queued-editorial-artifact-completion-pending",
+  "unfilledReason": "Other nightly candidates failed; no additional topics approved in this recovery.",
+  "posts": [
+    {
+      "slug": "silver-in-an-llc-vs-personal-ownership-tax-differences",
+      "keyword": "silver in an LLC vs personal ownership tax differences",
+      "brand": "silver",
+      "draft": "public/blog/silver-in-an-llc-vs-personal-ownership-tax-differences/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison",
+      "originalQueuedDate": "2026-08-04",
+      "recoveredBy": "sep11-bounded-queue-recovery",
+      "reviewInputs": {
+        "candidate": ".workflow-state/llc-tax-recovery-candidate-2026-09-08.md",
+        "checkpoint": ".workflow-state/llc-tax-review-checkpoint-2026-09-08.json",
+        "companionDir": ".workflow-state/llc-tax-companion-candidate-2026-09-10",
+        "parserProof": ".workflow-state/llc-parser-proof-2026-09-10.json"
+      },
+      "publicationStatus": "pending"
+    }
+  ],
+  "nightlyCandidatesAttempted": 4
+}

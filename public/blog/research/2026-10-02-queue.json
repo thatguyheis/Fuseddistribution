@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-02",
+  "status": "recovered",
+  "posts": [
+    {
+      "slug": "building-a-silver-collection-around-design-themes",
+      "keyword": "building a silver collection around design themes",
+      "brand": "silver",
+      "draft": "public/blog/building-a-silver-collection-around-design-themes/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/building-a-silver-collection-around-design-themes-live-proof.json"
+    },
+    {
+      "slug": "silver-mine-production-versus-refined-production",
+      "keyword": "silver mine production versus refined production",
+      "brand": "silver",
+      "draft": "public/blog/silver-mine-production-versus-refined-production/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/silver-mine-production-versus-refined-production-live-proof.json"
+    },
+    {
+      "slug": "mapping-a-manual-business-process-before-automating-it",
+      "keyword": "mapping a manual business process before automating it",
+      "brand": "tech",
+      "draft": "public/blog/mapping-a-manual-business-process-before-automating-it/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/mapping-a-manual-business-process-before-automating-it-live-proof.json"
+    },
+    {
+      "slug": "including-accessibility-in-a-website-supplier-brief",
+      "keyword": "including accessibility in a website supplier brief",
+      "brand": "tech",
+      "draft": "public/blog/including-accessibility-in-a-website-supplier-brief/verified.md",
+      "publicationDate": "2026-10-04",
+      "liveProof": ".workflow-state/recovery-2026-10-04/including-accessibility-in-a-website-supplier-brief-live-proof.json"
+    }
+  ]
+}

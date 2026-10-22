@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-05",
+  "posts": [
+    {
+      "slug": "buying-silver-from-a-local-coin-shop-vs-online",
+      "keyword": "buying silver from a local coin shop vs online",
+      "brand": "silver",
+      "draft": "public/blog/buying-silver-from-a-local-coin-shop-vs-online/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "how-to-avoid-silver-dealer-scams",
+      "keyword": "how to avoid silver dealer scams",
+      "brand": "silver",
+      "draft": "public/blog/how-to-avoid-silver-dealer-scams/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "contact-page-best-practices-for-local-business",
+      "keyword": "contact page best practices for local business",
+      "brand": "tech",
+      "draft": "public/blog/contact-page-best-practices-for-local-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    }
+  ]
+}

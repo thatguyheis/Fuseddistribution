@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-07",
+  "completed_at": null,
+  "updatedAt": "2026-10-09T16:28:20.418422+00:00",
+  "live": 2,
+  "planned": 4,
+  "quality_blocked": 0,
+  "source_sync_warnings": 0,
+  "proofs": [
+    ".workflow-state/recovery-2026-10-09-batch/silver-recycling-from-industrial-scrap-explained-live-proof.json",
+    ".workflow-state/recovery-2026-10-09-batch/from-artist-sketch-to-finished-coin-design-live-proof.json"
+  ],
+  "remainingSlugs": [
+    "comparing-an-ai-draft-with-the-original-customer-reques",
+    "retiring-outdated-website-content-with-a-clear-plan"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-08",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-07T14:00:19.346624+00:00",
+  "posts": [
+    {
+      "slug": "why-silver-mine-supply-includes-byproduct-production",
+      "keyword": "why silver mine supply includes byproduct production",
+      "brand": "silver"
+    },
+    {
+      "slug": "what-happens-during-coin-quality-control",
+      "keyword": "what happens during coin quality control",
+      "brand": "silver"
+    },
+    {
+      "slug": "creating-an-approval-log-for-ai-assisted-work",
+      "keyword": "creating an approval log for AI assisted work",
+      "brand": "tech"
+    },
+    {
+      "slug": "planning-a-seasonal-update-without-rewriting-every-page",
+      "keyword": "planning a seasonal update without rewriting every page",
+      "brand": "tech"
+    }
+  ]
+}

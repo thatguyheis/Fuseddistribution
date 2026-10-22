@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-29",
+  "posts": [
+    {
+      "slug": "american-silver-eagle-complete-buying-guide",
+      "keyword": "american silver eagle complete buying guide",
+      "brand": "silver",
+      "draft": "public/blog/american-silver-eagle-complete-buying-guide/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "canadian-silver-maple-leaf-vs-american-silver-eagle",
+      "keyword": "canadian silver maple leaf vs american silver eagle",
+      "brand": "silver",
+      "draft": "public/blog/canadian-silver-maple-leaf-vs-american-silver-eagle/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "comparison"
+    },
+    {
+      "slug": "social-media-content-ideas-for-small-business",
+      "keyword": "social media content ideas for small business",
+      "brand": "tech",
+      "draft": "public/blog/social-media-content-ideas-for-small-business/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    },
+    {
+      "slug": "instagram-stories-for-local-business-how-to-use",
+      "keyword": "instagram stories for local business how to use",
+      "brand": "tech",
+      "draft": "public/blog/instagram-stories-for-local-business-how-to-use/gemma_draft.md",
+      "ad_formats": [
+        "google-search",
+        "stat-card"
+      ],
+      "ugc_angle": "demo"
+    }
+  ]
+}

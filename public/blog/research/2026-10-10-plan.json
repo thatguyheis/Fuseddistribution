@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-10",
+  "status": "intended_production_requires_editorial_review",
+  "recordedAt": "2026-10-09T14:01:11.779534+00:00",
+  "posts": [
+    {
+      "slug": "how-silver-moves-from-ore-to-refined-metal",
+      "keyword": "how silver moves from ore to refined metal",
+      "brand": "silver"
+    },
+    {
+      "slug": "creating-a-coin-collection-story-for-family-members",
+      "keyword": "creating a coin collection story for family members",
+      "brand": "silver"
+    },
+    {
+      "slug": "measuring-correction-time-in-an-ai-pilot",
+      "keyword": "measuring correction time in an AI pilot",
+      "brand": "tech"
+    },
+    {
+      "slug": "choosing-a-safe-rollback-point-for-an-automation",
+      "keyword": "choosing a safe rollback point for an automation",
+      "brand": "tech"
+    }
+  ]
+}

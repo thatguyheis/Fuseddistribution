@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-11",
+  "posts": [
+    {
+      "slug": "defining-done-for-a-recurring-operations-task",
+      "keyword": "defining done for a recurring operations task",
+      "brand": "tech",
+      "draft": "public/blog/defining-done-for-a-recurring-operations-task/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    },
+    {
+      "slug": "making-accessibility-acceptance-criteria-practical",
+      "keyword": "making accessibility acceptance criteria practical",
+      "brand": "tech",
+      "draft": "public/blog/making-accessibility-acceptance-criteria-practical/gemma_draft.md",
+      "ad_formats": [
+        "stat-card",
+        "google-search"
+      ],
+      "ugc_angle": "founder"
+    }
+  ]
+}
