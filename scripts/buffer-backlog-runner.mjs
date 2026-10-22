@@ -9,6 +9,7 @@ import { readFileSync, writeFileSync, mkdirSync, renameSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import { retryAtFromMessage } from '../public/blog/scripts/lib/buffer-backlog-state.mjs';
+import { scopedSlugs } from './lib/content-scope.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const liveScript = join(repoRoot, 'public', 'blog', 'scripts', 'buffer-live.mjs');
@@ -104,6 +105,11 @@ function plannerArgs(platform, currentScheduled, maxPosts) {
     `--schedule-interval-minutes=${scheduleIntervalMinutes}`,
     ...(process.env.BUFFER_ALLOW_FUTURE_DAYS === '1' ? [] : ['--same-day-only']),
   ];
+  // ops/content-scope.json limits scheduling to in-scope posts. Instagram
+  // reads the YouTube queue, so it inherits the same limit. An empty scope
+  // passes a slug that matches nothing rather than falling back to all posts.
+  const scoped = scopedSlugs(repoRoot);
+  if (scoped && platform !== 'instagram') shared.push(`--slugs=${scoped.length ? scoped.join(',') : '__no-scoped-posts__'}`);
   if (platform === 'youtube') {
     return [
       join(repoRoot, 'public', 'blog', 'scripts', 'prepare-buffer-youtube-queue.mjs'),

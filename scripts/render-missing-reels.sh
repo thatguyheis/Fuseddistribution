@@ -78,8 +78,13 @@ import json
 from pathlib import Path
 
 posts = json.loads(Path("public/blog/posts.json").read_text())
+# ops/content-scope.json limits scheduled renders to in-scope posts.
+scope_path = Path("ops/content-scope.json")
+scope = json.loads(scope_path.read_text()).get("scope", "all") if scope_path.exists() else "all"
 for post in posts:
     slug = post.get("slug")
+    if scope == "coin-history" and slug and not Path("content/coin-history", slug).is_dir():
+        continue
     if slug and (not os.environ.get("REEL_SLUG") or slug == os.environ["REEL_SLUG"]):
         print(slug)
 PY

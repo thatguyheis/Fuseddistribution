@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "purpose": "Rolling coin-history production queue read by scripts/run-coin-history-drafts.py. Append one {slug, keyword} entry per fully prepared package (see docs/SOURCE-OF-TRUTH.md). The worker publishes at most ops/content-scope.json dailyTarget new posts per Pacific day.",
+  "posts": [
+    {
+      "slug": "kennedy-half-dollar-memorial-and-metal",
+      "keyword": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change"
+    },
+    {
+      "slug": "carver-washington-half-dollar-two-educators",
+      "keyword": "Why the Carver-Washington Half Dollar Honors Two Educators"
+    },
+    {
+      "slug": "2021-american-eagle-silver-redesign",
+      "keyword": "What Changed When the American Silver Eagle Was Redesigned in 2021?"
+    },
+    {
+      "slug": "columbian-exposition-first-commemorative-half",
+      "keyword": "How the 1892 Columbian Half Dollar Helped Prepare a World\u2019s Fair"
+    },
+    {
+      "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+      "keyword": "Why Abraham Lincoln Appeared on the Cent in 1909"
+    }
+  ]
+}

@@ -12,7 +12,12 @@ import time
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-QUEUE = ROOT / 'content/coin-history/production-2026-10-20/draft-queue.json'
+SCOPE_PATH = ROOT / 'ops/content-scope.json'
+SCOPE = json.loads(SCOPE_PATH.read_text()) if SCOPE_PATH.exists() else {}
+LEGACY_QUEUE = ROOT / 'content/coin-history/production-2026-10-20/draft-queue.json'
+QUEUE = ROOT / SCOPE['coinHistoryQueue'] if SCOPE.get('coinHistoryQueue') else LEGACY_QUEUE
+DAILY_TARGET = int(SCOPE.get('dailyTarget', 0))
+TIMEZONE = ZoneInfo(SCOPE.get('timezone', 'America/Los_Angeles'))
 STATE = ROOT / '.workflow-state/coin-history-drafts/state.json'
 LOG = ROOT / '.workflow-state/coin-history-drafts/runner.log'
 LOCK = Path('/tmp/fused-coin-history-drafts.lock')
@@ -176,12 +181,27 @@ def runtime_ready():
         return False
 
 
+def published_today(state):
+    today = now().astimezone(TIMEZONE).date()
+    count = 0
+    for record in state['items'].values():
+        stamp = record.get('blogPublishedAt')
+        if stamp and dt.datetime.fromisoformat(stamp).astimezone(TIMEZONE).date() == today:
+            count += 1
+    return count
+
+
 def choose(items, state):
     current = now()
+    # The daily target caps new blog publishes only; a post already live
+    # may still finish its reel the same day.
+    at_cap = DAILY_TARGET > 0 and published_today(state) >= DAILY_TARGET
     for item in items:
         slug = item['slug']
         record = state['items'].setdefault(slug, {'status': 'pending', 'attempts': 0})
         if record.get('releaseReady'):
+            continue
+        if at_cap and not record.get('blogPublished'):
             continue
         due = record.get('retryAfter')
         if due and dt.datetime.fromisoformat(due) > current:
@@ -212,6 +232,9 @@ def main():
         state.setdefault('items', {})
         item, record = choose(queue['posts'], state)
         if not item:
+            if DAILY_TARGET > 0 and published_today(state) >= DAILY_TARGET:
+                log(f'CAP: daily target of {DAILY_TARGET} coin-history posts reached')
+                return 0
             log('IDLE: no retry-ready coin-history drafts')
             return 0
         slug = item['slug']

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "updated": "2026-10-22",
+  "authority": "Nick, 2026-10-22: publish coin history only; target three finished blog and reel pairs per day.",
+  "scope": "coin-history",
+  "dailyTarget": 3,
+  "timezone": "America/Los_Angeles",
+  "coinHistoryQueue": "content/coin-history/queue.json",
+  "notes": "scope=coin-history limits rendering and Buffer scheduling to slugs that have a content/coin-history/<slug>/ workup and appear in public/blog/posts.json. Set scope to \"all\" to restore the previous behavior."
+}
