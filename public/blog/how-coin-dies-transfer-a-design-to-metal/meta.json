@@ -1,0 +1,27 @@
+{
+  "slug": "how-coin-dies-transfer-a-design-to-metal",
+  "title": "How Coin Dies Transfer a Design to Metal",
+  "description": "Learn how working coin dies transfer a design to a planchet, distinguish tools from finished coins, and keep manufacturing context separate from attribution.",
+  "alt": "Coin die presses design into planchet",
+  "brand": "silver",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Materials",
+    "Learning"
+  ],
+  "ctaLine": "With coin designs, are you drawn to the artwork or the tooling?",
+  "contentGraphic": {
+    "label": "How Coin Dies Transfer a Design to Metal",
+    "rows": [
+      {
+        "condition": "Name the tool",
+        "action": "Follow the transfer"
+      },
+      {
+        "condition": "Understand working dies",
+        "action": "Record observations carefully"
+      }
+    ]
+  }
+}

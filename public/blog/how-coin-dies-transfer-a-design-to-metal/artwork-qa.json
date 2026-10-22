@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:49:14.230877+00:00",
+  "heroSha256": "915f6ab4e952c5cd9b62c19338bc084be8cbc402131854cee40c28d9d8fdf470",
+  "subject": "Working die and planchet shown separately before contact",
+  "purpose": "Working die and planchet shown separately before contact",
+  "hook": "The tool carries the design",
+  "keyWords": [
+    "how",
+    "coin",
+    "dies"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/sep30-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "how-relief-changes-the-appearance-of-a-coin",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T15:36:07.182Z",
+  "review_notes": [
+    "Read the complete article and checked its historical and production claims against the cited U.S. Mint glossary, gold eagle history and trial strike record.",
+    "Reviewed the custom hero and square companion visually; both are labeled conceptual and not to scale. Article, social copy, spoken question and CTA now use the same concise question.",
+    "Parsed the six segment script, passed reel validation, and passed narration preflight at 382 words and 119.4 estimated seconds. Rights, TTS, encoded review, platform derivatives and hosted-byte verification remain separate release gates."
+  ],
+  "artifactSha256": {
+    "verified.md": "5c3d5d015504734e625c245eb1d3186c67c80719b2eeb967633099dccf836d81",
+    "index.html": "92dd31a2eb7165801727bc7a399e8041f1d005a3a9c7ec52240c392349277d29",
+    "meta.json": "901cf63a9a91fefa240abf68a1ae2e4423c6f49ee7c098ff2715af68d6c60be1",
+    "research.json": "8325b3a9398afcf2c736478925582ffcbda77724f597475358fdc973d4bc3962",
+    "hero.jpg": "f388fb3065b14954efcee0206b1e580eba3731cff3b3830de7b57bb39304997b",
+    "photo-post.jpg": "c8d85f3dff51fbdd1ef1554d3d8d3956f9d663a43773d6dc528620f2e879c75d",
+    "reel-script.md": "a8e8466d0d575a23cf64b7558d4d9e59abed48e23780b97be71fe4e1a111ad0a",
+    "reel-data.md": "c1f57a6a1af59604a53a136e7d650456954fc705f08651898d2b61b52f392118",
+    "social-copy.json": "93c88282fc7690a0472c1bdb9bc708df3a0c65fc2cfa44998aa52054374c5881"
+  }
+}

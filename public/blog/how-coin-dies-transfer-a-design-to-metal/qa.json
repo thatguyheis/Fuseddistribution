@@ -1,0 +1,27 @@
+{
+  "slug": "how-coin-dies-transfer-a-design-to-metal",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.146208+00:00",
+  "review_notes": [
+    "U.S. Mint hub/die and striking explanation checked. Conceptual tool drawing, no identification or value claims.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Support-test review label centered after initial inspection; revised export inspected.",
+    "Expanded one narration segment with existing reviewed article guidance after duration preflight. No claim added beyond the approved source text.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-06T05-32-53-377Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "81e1931f19cc79b188263512ffad2c86a09440320cfb5e2e2bd1a3c9943d3f45",
+    "index.html": "4509fd2a50f92a51f5803639a51772aaf14840ade5a7f0956f915029ecd2d6b0",
+    "meta.json": "6705070538fc512a4de577aaf5d71deb7b5e68ff16818cd220fe2421c9e807ee",
+    "research.json": "7b9f325d7338671e337f34679f54ac5d608d551b809b223df56cd525c7695848",
+    "hero.jpg": "915f6ab4e952c5cd9b62c19338bc084be8cbc402131854cee40c28d9d8fdf470",
+    "photo-post.jpg": "21ccc7dc5789fd500ea1c20f3cd319bcdc750f9540845c81e690163eff4a172a",
+    "reel-script.md": "2f2ab612c5dc4c1ce1d3c837e5e026ce1defb3b1226d0b3ed35acddbd6e6b51a",
+    "reel-data.md": "bd48579632261485d9c4e20f4e0ccf08c3481b90644a4be0a87eb2145b59166c",
+    "social-copy.json": "94f5874c16135075da1bdd50694facc10704842f838eeee67957556f65e66d9f"
+  }
+}

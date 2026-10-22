@@ -1,0 +1,29 @@
+{
+  "slug": "google-business-profile-categories-which-to-choose",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:41:06.893090+00:00",
+  "review_notes": [
+    "Owner read article and narration and verified primary category guidance with current Google source7249669 and representation guidelines.",
+    "Owner viewed actual hero and square exports; practical decision guide, no ranking promise.",
+    "Deterministic QA passes;8segments112plannedseconds. Actual audio/video remains pending.",
+    "Published September14; August10 original queue retained."
+  ],
+  "artifactSha256": {
+    "verified.md": "9efe187fa6df3ee3337735ae2357e84df394c80cb85ff17d654f6d4cf3541a68",
+    "index.html": "f791737a188fa385776ea4a7f861b94bb23cde7ec5067846184e893523acd6b3",
+    "hero.jpg": "06989a0b76b6ffd075a7e45965e79476c28b80a4d397271c29c84b95842106dc",
+    "social-copy.json": "886fa33eae0c96706e75a7f8b530412d8f8f96d2d9f7b57ceaed319884b91c5e",
+    "hero.svg": "173512608476ea4818e18b4a2a57c3b826004e088f43d59453f09a2ca560bbad",
+    "reel-data.md": "61cba7ce7b90d1632a541b85f8e4380715d7a9ac466cadf1dcb54729c701bca1",
+    "photo-post.svg": "06cff5cff3c481a8bde6ab691c5e9046616b3c0fffb144040255a69ed63affb7",
+    "research.json": "287fbd818118f88d4cfb06e0da1c70fe8d8948bc9e498a6b497c3e82fc92ebc3",
+    "hooks.json": "70976b7c7c073b5a168951aa9cf3c0f4eda4a8831d3d7b99f6c07f0868dfd60c",
+    "reel-script.md": "c36ac1f025c87b88c20c1d6b20e33c8f42906bf84b453c6fba93149ff574e059",
+    "gemma_draft.md": "9efe187fa6df3ee3337735ae2357e84df394c80cb85ff17d654f6d4cf3541a68",
+    "photo-post.jpg": "d15cb886f593bcc5e638156ac7642115460feb6e7227f51fc8aa66e55c0ba0f4",
+    "meta.json": "e718171a8ebf717c0e154efc80250d004b648f1c184b7af9640f0c1693120c41"
+  }
+}

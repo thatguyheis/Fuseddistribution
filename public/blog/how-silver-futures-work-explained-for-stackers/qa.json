@@ -1,0 +1,28 @@
+{
+  "slug": "how-silver-futures-work-explained-for-stackers",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:55:00.554226+00:00",
+  "review_notes": [
+    "Owner read fullarticle/narration and officialCME/CFTCsource; contractunits,notional,settlement,marginanddeliverycorrect; basis separatedfromretailpremium.",
+    "Hypothetical5000oz\u00d730USD/oz=150000USD and0.10USD/ozmove=500USD checked.",
+    "Owner viewed actual hero/square JPEGs. QA-localpasses; audio/video pending.",
+    "September14actualpublication; August9queue provenance."
+  ],
+  "artifactSha256": {
+    "verified.md": "75c67f01733fb9454c04ea8b4b0c2f40ec17631e0d778c6d879b23376f0e1abf",
+    "index.html": "5ce72531aea58594a04ae4316b48b8e8aa650f654fb07b201f612678e9f14932",
+    "hero.jpg": "5dc11b054ec4b3023a92393316817a8b6e3b5e7cbc94f607f000fed2e1e69a10",
+    "social-copy.json": "1f237a83652f5e982c8f45b792d3a7ba61cd5c9b7b9581ddba5c4a08ccd50c47",
+    "hero.svg": "5fc6126999b4b9bf983f6e609417309d3ff6fe013eaa9b46d873be1b43249402",
+    "reel-data.md": "ce315babbfc8513dfa096db0f464d66016514f67fe8fbc1dcc62689240f20050",
+    "photo-post.svg": "8485263f685933754612244d4046ab81c836c9fe546a902659f1ebb121bd0ded",
+    "hooks.json": "09b807b3f4a6584247200cf4f23e53604a493e46734dd3b2fd9e700fcf37bbb8",
+    "reel-script.md": "2ce17faf82dacf2213215ccf7109713e01dc14308eba3cc1472680b8705ac5a0",
+    "gemma_draft.md": "75c67f01733fb9454c04ea8b4b0c2f40ec17631e0d778c6d879b23376f0e1abf",
+    "photo-post.jpg": "a121b6fb04f3d73621d2b2539db07ad25c49d6237df89f1e278ba4acbb86d6b9",
+    "meta.json": "2791294d1f9c88cf47ac70c29b2b4c3b4b8b258d090e47d4034c9691b6eea78d"
+  }
+}

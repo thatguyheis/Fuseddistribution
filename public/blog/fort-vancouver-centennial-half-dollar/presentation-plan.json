@@ -1,0 +1,194 @@
+{
+  "version": 2,
+  "segments": [
+    [
+      {
+        "path": "public/blog/fort-vancouver-centennial-half-dollar/images/reverse-plate.jpg",
+        "type": "photo",
+        "title": "FURS TO LONDON. LUMBER TO HAWAII.",
+        "eyebrow": "THE COIN / OWNER PHOTOGRAPH",
+        "credit": "Original Fused coin photograph",
+        "weight": 1,
+        "sha256": "3275401c12902e1a8a974a59da24f2cabe3ee945cf1a210626f8fdeeac9477ef"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-bastion-modern-plate.jpg",
+        "type": "photo",
+        "title": "WHAT MADE THIS FORT IMPORTANT?",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "b5678464cffadcbdd7b72142e2d9cc942b1d82c9f8d9cb809d8dfe0641f72126"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/generated/presentation-exterior.jpg",
+        "type": "photo",
+        "title": "1825 / THE FORT BEGINS",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "AI illustration / not an exact reconstruction",
+        "weight": 1,
+        "sha256": "9b703f91d9e2b878b807d86446561571e3619bae242764f289f85dbfc61f4c12"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-aerial-modern-plate.jpg",
+        "type": "photo",
+        "title": "A TRADING HEADQUARTERS",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "5d17638cac87b663bc64fc9f04669936d736bd5f5f2a5bcedacc2185060bce86"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-historical-illustration-plate.jpg",
+        "type": "photo",
+        "title": "FOOD AND TRADE GOODS OUT",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Historical illustration / supplied reference",
+        "weight": 1,
+        "sha256": "8e8b786804ac239b326bad54e3688cd05960e83c2418f3f1e12b405266f87c65"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/generated/presentation-courtyard.jpg",
+        "type": "photo",
+        "title": "FURS BACK. SHIPS TO LONDON.",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "AI illustration / not an exact reconstruction",
+        "weight": 1,
+        "sha256": "bc3439768f37505c432f256203ad6cd4f0186f05c5f4c783c99db79a2b4ffd02"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/generated/presentation-courtyard.jpg",
+        "type": "photo",
+        "title": "FARMS. GRAIN. LUMBER.",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "AI illustration / not an exact reconstruction",
+        "weight": 1,
+        "sha256": "bc3439768f37505c432f256203ad6cd4f0186f05c5f4c783c99db79a2b4ffd02"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-historical-illustration-plate.jpg",
+        "type": "photo",
+        "title": "1828 / EXPORTS TO HONOLULU",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Historical illustration / supplied reference",
+        "weight": 1,
+        "sha256": "8e8b786804ac239b326bad54e3688cd05960e83c2418f3f1e12b405266f87c65"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-historical-illustration-plate.jpg",
+        "type": "photo",
+        "title": "THE PEOPLE BEHIND THE TRADE",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Historical illustration / supplied reference",
+        "weight": 1,
+        "sha256": "8e8b786804ac239b326bad54e3688cd05960e83c2418f3f1e12b405266f87c65"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-aerial-modern-plate.jpg",
+        "type": "photo",
+        "title": "A COMMUNITY BEYOND THE WALLS",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "5d17638cac87b663bc64fc9f04669936d736bd5f5f2a5bcedacc2185060bce86"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/generated/presentation-exterior.jpg",
+        "type": "photo",
+        "title": "FIRST ON A BLUFF",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "AI illustration / not an exact reconstruction",
+        "weight": 1,
+        "sha256": "9b703f91d9e2b878b807d86446561571e3619bae242764f289f85dbfc61f4c12"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-bastion-modern-plate.jpg",
+        "type": "photo",
+        "title": "1829 / REBUILT ON THE PLAIN",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "b5678464cffadcbdd7b72142e2d9cc942b1d82c9f8d9cb809d8dfe0641f72126"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-aerial-modern-plate.jpg",
+        "type": "photo",
+        "title": "TODAY / THE RECONSTRUCTED FORT",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "5d17638cac87b663bc64fc9f04669936d736bd5f5f2a5bcedacc2185060bce86"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-historical-illustration-plate.jpg",
+        "type": "photo",
+        "title": "1846 / THE BORDER CHANGES",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Historical illustration / supplied reference",
+        "weight": 1,
+        "sha256": "8e8b786804ac239b326bad54e3688cd05960e83c2418f3f1e12b405266f87c65"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-aerial-modern-plate.jpg",
+        "type": "photo",
+        "title": "1849 / VANCOUVER BARRACKS",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "5d17638cac87b663bc64fc9f04669936d736bd5f5f2a5bcedacc2185060bce86"
+      },
+      {
+        "path": "content/coin-history/fort-vancouver-centennial-half-dollar/owner-supplied-fort-images/fort-bastion-modern-plate.jpg",
+        "type": "photo",
+        "title": "1860 / THE COMPANY LEAVES",
+        "eyebrow": "FORT VANCOUVER / THE STORY",
+        "credit": "Modern view of the reconstructed fort",
+        "weight": 1,
+        "sha256": "b5678464cffadcbdd7b72142e2d9cc942b1d82c9f8d9cb809d8dfe0641f72126"
+      }
+    ],
+    [
+      {
+        "path": "public/blog/fort-vancouver-centennial-half-dollar/images/obverse-plate.jpg",
+        "type": "photo",
+        "title": "1925 / THE CENTENNIAL COIN",
+        "eyebrow": "THE COIN / OWNER PHOTOGRAPH",
+        "credit": "Original Fused coin photograph",
+        "weight": 1,
+        "sha256": "88f7cefdb98422e37eb09b2afea87f33583d999177f0dddfed8158d598145dfa"
+      },
+      {
+        "path": "public/blog/fort-vancouver-centennial-half-dollar/images/reverse-plate.jpg",
+        "type": "photo",
+        "title": "A FORT REMEMBERED IN SILVER",
+        "eyebrow": "THE COIN / OWNER PHOTOGRAPH",
+        "credit": "Original Fused coin photograph",
+        "weight": 1,
+        "sha256": "3275401c12902e1a8a974a59da24f2cabe3ee945cf1a210626f8fdeeac9477ef"
+      }
+    ],
+    [
+      {
+        "path": "public/blog/fort-vancouver-centennial-half-dollar/images/reverse-plate.jpg",
+        "type": "photo",
+        "title": "RIVER. OCEAN. CHANGING BORDERS.",
+        "eyebrow": "THE COIN / OWNER PHOTOGRAPH",
+        "credit": "Original Fused coin photograph",
+        "weight": 1,
+        "sha256": "3275401c12902e1a8a974a59da24f2cabe3ee945cf1a210626f8fdeeac9477ef"
+      }
+    ]
+  ]
+}

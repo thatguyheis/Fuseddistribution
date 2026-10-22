@@ -1,0 +1,26 @@
+{
+  "slug": "how-silver-mine-production-affects-spot-price",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:47:42.280257+00:00",
+  "review_notes": [
+    "Owner read article and narration, checked Silver Institute historical2024data and actualUSGS2025PDF4mines31operations.",
+    "Hypothetical supply arithmetic independently verified; no price forecast.",
+    "Owner viewed actual hero/squareJPEGs. QA-local passes,8segments120plannedseconds. Actualaudio/video pending.",
+    "September14 actual publication; August21 provenance retained."
+  ],
+  "artifactSha256": {
+    "verified.md": "b5d93d1020e618651fd8021387bf292f1b9c854bc6540d7c677c33ee3ff77977",
+    "index.html": "9554e2af9b50e57c2c03f4c07a285c470798bf61c5d24f25b65a981373242407",
+    "hero.jpg": "5687eae9323464c7dc2198f2391e3226bccb0f4fa487b17fe4cdaf1d7bc01e55",
+    "social-copy.json": "a6dab045c609096f26558925c5723e9578adbfe271c6fd059d06290bc9d12f4c",
+    "hero.svg": "935a39764d9e23fb19cd3c3a6a8ce3eb3af4dcf953263e4b04029a4655ffba40",
+    "reel-data.md": "8bbc1aa82fa507b22c5827211f63fe91fb1e46575e3dda39f41f2fb97ba8b690",
+    "hooks.json": "17f1356587837e92ece25c799cdc65cd111d988f1997f5569484f37fba254c4c",
+    "reel-script.md": "4c33544dba4ec1b50913a310272868320a2e3c75fb8dfe30c9c51eb613bd3997",
+    "gemma_draft.md": "b5d93d1020e618651fd8021387bf292f1b9c854bc6540d7c677c33ee3ff77977",
+    "meta.json": "ad646c12eaa04c1a07eb1b48b4808391ed0e528d1e616e1057e9261685d4fda5"
+  }
+}

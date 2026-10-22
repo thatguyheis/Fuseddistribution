@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-09T16:24:02.585928+00:00",
+  "heroSha256": "a633cb0472d11cc392af1811ee8069f8af17f3c4521d044fb27bb082442f30e6",
+  "subject": "Artist sketch progresses toward finished coin",
+  "purpose": "conceptual explanation",
+  "hook": "A drawing becomes a struck design.",
+  "keyWords": [
+    "from",
+    "artist",
+    "sketch"
+  ],
+  "chartEvidence": "Conceptual diagram, no measured results",
+  "preview": ".workflow-state/recovery-2026-10-09-batch/art-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

@@ -10,7 +10,7 @@ target-duration: 186s
 **Visual:** Topic intro shot
 **Duration:** 4s minimum
 
-Narration: Consistent posting drives five times more engagement than irregular posting.
+Narration: Consistent posting drives five times more engagement than irregular activity.
 
 ---
 
@@ -64,7 +64,7 @@ Narration: The research is clear: consistency is king. For example, LinkedIn acc
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: Finding Your Sweet Spot: Balancing Quality Content with Posting Cadence For more on this, see How To Ask Customers For Google Reviews. As a local business owner, I know the struggle is real. You have a fantastic service or product, but how often should you be showing up on social media? The answer isn't one-size-fits-all; it depends entirely on the platform you choose and your goals.
+Narration: Finding Your Sweet Spot: Balancing Quality Content with Posting Cadence For more on this, see How To Respond To Negative Google Reviews. As a local business owner, I know the struggle is real. You have a fantastic service or product, but how often should you be showing up on social media? The answer isn't one-size-fits-all; it depends entirely on the platform you choose and your goals.
 
 ---
 
@@ -109,6 +109,6 @@ Narration: Remember, short-form video content is a game changer, delivering 71 p
 **Visual:** Question card
 **Duration:** 5s minimum
 
-Text: What's your business's best posting frequency?
+Text: Consistency over volume: What's your posting rhythm?
 Subtext: COMMENT BELOW
-Narration: What's your business's best posting frequency? Follow for more practical business tips.
+Narration: Consistency over volume: What's your posting rhythm? Follow for more practical business tips.

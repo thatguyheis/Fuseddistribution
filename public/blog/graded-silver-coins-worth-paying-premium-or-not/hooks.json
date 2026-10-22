@@ -1,0 +1,10 @@
+{
+  "hook": "A coin grade is not a guaranteed resale price.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "4",
+    "label": "Records to compare"
+  },
+  "discussion_question": "What would justify a premium for a graded coin?",
+  "hashtags": "#Silver #CoinCollecting"
+}

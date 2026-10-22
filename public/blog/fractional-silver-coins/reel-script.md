@@ -39,31 +39,31 @@ Narration: Three sizes cover the market. The 1/10 oz is the smallest and most ex
 **Chart** (74-96s)
 Title: Typical Premium Over Spot by Silver Coin Size (2026)
 Bars:
-- 1 oz coin/round: 12%
-- 1/2 oz coin: 25%
-- 1/4 oz coin: 55%
-- 1/10 oz coin: 130%
+- 1 oz coin/round: 9%
+- 1/2 oz coin: 19%
+- 1/4 oz coin: 42%
+- 1/10 oz coin: 100%
 Narration: This is what the premium curve looks like. A 1 oz round sits at around 12 percent over spot. Move down to half ounce and you hit 25 percent. Quarter ounce jumps to 55. The 1/10 oz can reach 130 percent or more. Each step down in size adds a significant cost that the silver content itself does not justify. You need a specific reason to pay that premium.
 
 **Stat 4** (96-118s)
 Text: BARTER VALUE: ~$3 PER 1/10 OZ
 Explanation: At $32 per troy ounce spot price, a 1/10 oz coin holds $3.20 in silver content, making it a workable denomination for small barter transactions
 Graphic_type: percent_fill
-Narration: The premium is real, but so is the use case. A full 1 oz coin at $32 in silver creates a change problem in any direct exchange. You cannot break it. A 1/10 oz coin at $3.20 in silver covers a practical range of small transactions without the need to make change. Holding 10 to 20 fractional coins as a dedicated barter reserve is a common approach for stacks built primarily in full-ounce form.
+Narration: The premium is real, but so is the use case. A full 1 oz coin creates a change problem in a small exchange. A 1/10 oz coin holds about $3.20 in silver, making it easier to use when exact change matters.
 
-**Stat 5** (118-140s)
+**Overlay 5** (118-140s)
 Text: FRACTIONAL SILVER IS IDEAL FOR GIFTING
 Explanation: A 1/10 oz American Silver Eagle in its original US Mint capsule makes a recognizable and tangible gift that non-collectors can appreciate
 Graphic_type: none
 Narration: The original United States Mint capsule, the familiar eagle design, and the $6 to $10 price point make the 1/10 oz Silver Eagle a natural gift. You are not buying silver by the ounce here. You are buying something with presentation value and lasting material worth. The premium cost is irrelevant when you are purchasing utility, not stacking metal.
 
-**Stat 6** (140-162s)
+**Overlay 6** (140-162s)
 Text: START WITH 1 OZ BEFORE GOING FRACTIONAL
 Explanation: New buyers should build a base position in 1 oz rounds at 5 to 12 percent premium before adding fractional coins at 25 to 130 percent premium
 Graphic_type: none
 Narration: If you are building a silver position, start with 1 oz rounds from a reputable private mint. Premium runs 5 to 12 percent over spot. That is far cheaper than paying 100 percent over on fractional coins. Build your base first. Once you have a core position, fractional coins make sense as a layer for barter, gifting, or denomination flexibility. Not as the starting point.
 
-**Stat 7** (162-183s)
+**Overlay 7** (162-183s)
 Text: STICK TO RECOGNIZED GOVERNMENT MINTS
 Explanation: American Silver Eagle fractionals from the US Mint, Maple Leaf fractionals from the Royal Canadian Mint, and Britannia fractionals from the Royal Mint are the most liquid and easiest to sell
 Graphic_type: none

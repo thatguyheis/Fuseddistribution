@@ -1,0 +1,25 @@
+{
+  "plannedDate": "2026-10-06",
+  "actualPublicationDate": "2026-10-09",
+  "slug": "how-relief-changes-the-appearance-of-a-coin",
+  "status": "owner_repair_in_progress",
+  "sources": [
+    {
+      "title": "Coin Term Glossary",
+      "url": "https://www.usmint.gov/learn/collecting-basics/glossary",
+      "supports": "Relief is raised above the surface; incuse is pressed into the surface."
+    },
+    {
+      "title": "Gold Eagles",
+      "url": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/gold-eagles",
+      "supports": "Multiple 1907 Saint-Gaudens double eagle relief versions and relative production difficulty."
+    },
+    {
+      "title": "Trial Strike of the Eisenhower Dollar",
+      "url": "https://www.usmint.gov/learn/history/historical-documents/trial-strike-of-eisenhower-dollar",
+      "supports": "Relief and basin shape affect metal flow, pressure and press limitations."
+    }
+  ],
+  "reviewedAt": "2026-10-09",
+  "notes": "Claims constrained to U.S. Mint definitions and historical production accounts. No unsupported universal relief limits, grade claims, rarity claims or value claims."
+}

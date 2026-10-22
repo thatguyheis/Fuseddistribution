@@ -1,0 +1,32 @@
+{
+  "slug": "graded-silver-coins-worth-paying-premium-or-not",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T05:47:26.595260+00:00",
+  "review_notes": [
+    "Reviewed full article against PCGS grading/price methodology and NGC security/guarantee sources. No universal grade-price or guaranteed resale claim.",
+    "Both artwork images visually inspected, title and four-record label legible. Checklist uses supported Markdown; verified HTML contains rendered list rather than escaped markup.",
+    "Reviewed complete 120 second estimated narration, corrected headings and authentication scope, synchronized reel data.",
+    "Deterministic checks pass. Rendered video requires separate audiovisual review."
+  ],
+  "sources": [
+    "https://www.pcgs.com/news/how-united-states-coins-are-graded",
+    "https://www.pcgs.com/prices",
+    "https://www.ngccoin.com/security-center/",
+    "https://www.ngccoin.com/coin-grading/ngc-guarantee/"
+  ],
+  "artifact_sha256": {
+    "verified.md": "a3460b2f54fdd9a135914c39ac063f48c95ffe24db9f5bf9c940e3a7cb8343eb",
+    "index.html": "7724b5906a0876598e3c6e261ecf35af33ea0e90409c0e1a22cbdd3675b12876",
+    "meta.json": "e4afb94235da5ca821d1fd204d90617cd235d3287429826d12945af5005694d0",
+    "hooks.json": "157dd166d8f928b183cc25706a042171a9d4a318e20814465726f3caad515dc4",
+    "hero.jpg": "c7fe44f16c5c04db61e7c2cd96f392f6a0998e0b7693a9ce3ce44f7382f4275e",
+    "photo-post.jpg": "19543e79d7931d63a9ac8b32dd2cb9a4cfac4fabeabb7558e1650135b99c3b7e",
+    "reel-data.md": "77088f5a0ec9afb49e6901ab0fca70673063c530208e8d4d61e877938c812ff0",
+    "reel-script.md": "89dfa93f6ed45b4ebda39bf230eab1ca66862f7b0e5b6e7fb1b2da69f7ece9b4",
+    "social-copy.json": "4f50d5beec291e0cf49c8783dd267f7dc03e2c085404610cb4dbfe40d8d2f851",
+    "research.json": "5441b6ecb743e76cbf7c428dbbd370afafbfa51dfbf81d352477766eea09aad4"
+  }
+}

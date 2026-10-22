@@ -1,0 +1,28 @@
+{
+  "slug": "how-relief-changes-the-appearance-of-a-coin",
+  "title": "How Relief Changes the Appearance of a Coin",
+  "description": "Learn what relief means on a coin, how relief height affects striking and appearance, and how to compare documented examples without overclaiming.",
+  "ogDescription": "A clear guide to coin relief, production tradeoffs and visual comparison.",
+  "alt": "Coin relief rises above field surface",
+  "brand": "silver",
+  "date": "2026-10-09",
+  "modifiedDate": "2026-10-09",
+  "tags": [
+    "Coin Design",
+    "Learning"
+  ],
+  "ctaLine": "Raised design or flatter field, what do you notice first?",
+  "contentGraphic": {
+    "label": "How Relief Changes the Appearance of a Coin",
+    "rows": [
+      {
+        "condition": "Raised design",
+        "action": "Compare against the field"
+      },
+      {
+        "condition": "Different relief",
+        "action": "Check issue specifications"
+      }
+    ]
+  }
+}

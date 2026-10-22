@@ -1,0 +1,27 @@
+{
+  "slug": "from-artist-sketch-to-finished-coin-design",
+  "title": "From Artist Sketch to Finished Coin Design",
+  "description": "Follow a coin design from artist sketch through sculpted model and tooling, keeping each stage, source image and artist credit clear in your collection record.",
+  "alt": "Artist sketch progresses toward finished coin",
+  "brand": "silver",
+  "date": "2026-10-09",
+  "modifiedDate": "2026-10-09",
+  "tags": [
+    "Learning",
+    "Collections"
+  ],
+  "ctaLine": "Do you enjoy a finished coin more after seeing the original drawing and sculpted model?",
+  "contentGraphic": {
+    "label": "From Artist Sketch to Finished Coin Design",
+    "rows": [
+      {
+        "condition": "Read the artist sketch as a design proposal",
+        "action": "Follow the design into a sculpted model"
+      },
+      {
+        "condition": "Distinguish the coin model from production tooling",
+        "action": "Compare the finished coin with its source design"
+      }
+    ]
+  }
+}

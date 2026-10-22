@@ -1,0 +1,28 @@
+{
+  "slug": "fort-vancouver-centennial-half-dollar",
+  "title": "Fort Vancouver Half Dollar: A British Company on an American Coin",
+  "description": "Our Fort Vancouver half dollar photographs reveal the portrait, fort scene and dates behind a Pacific Northwest trading story commemorated in silver in 1925.",
+  "alt": "Fort Vancouver commemorative half dollar reverse",
+  "brand": "silver",
+  "date": "2026-10-15",
+  "status": "approved-for-publication",
+  "tags": [
+    "Coin history",
+    "Fort Vancouver",
+    "Commemorative coins"
+  ],
+  "ctaLine": "Would you display the portrait or the fort side?",
+  "contentGraphic": {
+    "label": "Fort Vancouver centennial timeline",
+    "rows": [
+      {
+        "condition": "1825",
+        "action": "Hudson Bay Company establishes Fort Vancouver"
+      },
+      {
+        "condition": "1925",
+        "action": "Centennial half dollar marks the anniversary"
+      }
+    ]
+  }
+}

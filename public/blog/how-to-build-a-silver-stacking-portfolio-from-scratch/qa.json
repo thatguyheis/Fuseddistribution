@@ -1,6 +1,31 @@
 {
   "slug": "how-to-build-a-silver-stacking-portfolio-from-scratch",
-  "score": 87,
   "pass": true,
-  "blockers": []
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T11:08:47.427263+00:00",
+  "review_notes": [
+    "Full replacement reviewed against FINRA, joint CFTC/FINRA and FDIC investor education. Preserved June 22 date with visible correction.",
+    "Removed universal allocation, inventory, market-timing and automatic appreciation claims; corrected net-sale break-even example.",
+    "Viewed hero and photo artwork; four checkpoints match article.",
+    "Reviewed synchronized eight-segment reel with complete hypothetical inputs, 116-second estimate. Local QA and parsed reel validation pass. Final rendered media review remains downstream."
+  ],
+  "sources": [
+    "https://www.finra.org/investors/insights/physical-precious-metals",
+    "https://www.finra.org/investors/insights/buying-physical-gold-or-other-metals",
+    "https://www.fdic.gov/resources/deposit-insurance/financial-products-not-insured"
+  ],
+  "artifact_sha256": {
+    "verified.md": "31e6fa0e919cc770a605b62d11019b1ef9ab4cf11f741e2b70d319b90bce96ef",
+    "index.html": "fab68c9684d6d5e70f6c17f4067a58132b81f4ef29ffc9e2b119ba6a1803110a",
+    "meta.json": "6724968518594e26b720006ea3a22dc60400c1bd97df7ccc191e7c8f6022ffd1",
+    "hooks.json": "e1c00961f4e0bcf512d1f4b7d892aad35bfd40a0702e01a3c776c00b0d6dea59",
+    "hero.jpg": "8437b9998569b3c34345f4f77fd5a4c0027449bd9047e17d28b4726482ed8d98",
+    "photo-post.jpg": "9d63f746f39d90788956e0e0487845a46bcc0dc8050ecf501a419832a17b2937",
+    "reel-data.md": "6437157c1e6f7db12d0015b1efd7e3dbbd61cb018d29e420d19b5939f31f93f9",
+    "reel-script.md": "266b5311b5458460c2e87d6a72e6796b4d3b8416d636816f1c5da2927d1bf073",
+    "social-copy.json": "d6ffba02bb0922dac0cc5a1cd7c6a4d1d2ff861dc1fe27483dfee8cb5d100dbc",
+    "research.json": "48e2c95bbd8631a70de0b3090a772289da763d87f6a54ec4f76c434b44748292"
+  }
 }

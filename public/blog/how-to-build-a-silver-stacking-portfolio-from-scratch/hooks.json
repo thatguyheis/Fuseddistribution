@@ -1,10 +1,10 @@
 {
-  "hook": "Structural supply deficit means silver offers a strong buying window now.",
-  "hook_type": "immediate_value",
+  "hook": "Your first silver purchase needs a process, not an ounce target.",
+  "hook_type": "practical",
   "key_stat": {
-    "value": "$1.50",
-    "label": "to over spot Government-minted"
+    "value": "4",
+    "label": "First purchase checkpoints"
   },
-  "discussion_question": "What's your first silver purchase goal: inflation hedge, diversification, or long-term holding?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "Which check matters most before your first silver purchase?",
+  "hashtags": "#Silver #Bullion"
 }

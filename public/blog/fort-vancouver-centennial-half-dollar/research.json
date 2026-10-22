@@ -1,0 +1,66 @@
+{
+  "status": "reviewed_for_requested_presentation",
+  "reviewedOn": "2026-10-13",
+  "assets": [
+    {
+      "id": "coin-0031",
+      "source": "Coin Raw/IMG_5735.jpeg",
+      "sha256": "99253d19d3f44ca8595f0fd8f95954c595118eee0136627d06c2b24ee88cfcc7",
+      "observed": "Fort Vancouver Centennial lettering, standing figure with gun, fort and mountain; Hudson Bay Company lettering.",
+      "review": "full original visually inspected",
+      "cropStatus": "source-derived crop produced and visually reviewed; see crop-plan.json",
+      "certificationVerified": false
+    },
+    {
+      "id": "coin-0032",
+      "source": "Coin Raw/IMG_5736.jpeg",
+      "sha256": "927ad1d38d202ee3430f44079406a46d05227a8a1d9ccc5fae5b87f1844630c3",
+      "observed": "Portrait, Dr. John McLoughlin lettering, dates 1825 and 1925; holder label PCGS MS63.",
+      "review": "full original visually inspected",
+      "cropStatus": "source-derived crop produced and visually reviewed; see crop-plan.json",
+      "certificationVerified": false
+    }
+  ],
+  "claims": [
+    {
+      "claim": "1925 issue commemorates 100th anniversary of founding by Hudson Bay Company; McLoughlin obverse; frontiersman fort and mountain reverse; Laura Gardin Fraser designs; San Francisco production without mint mark",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/fort-vancouver-centennial-half"
+    },
+    {
+      "claim": "London based company established fort in 1825 as interior fur trade headquarters",
+      "source": "https://www.nps.gov/fova/learn/historyculture/hbcfort1.htm"
+    },
+    {
+      "claim": "McLoughlin chief factor 1825 to 1845",
+      "source": "https://home.nps.gov/fova/planyourvisit/placestogo-mcloughlin-house.htm"
+    },
+    {
+      "claim": "Fort workers and village population",
+      "source": "https://www.nps.gov/places/fortvancouver.htm"
+    }
+  ],
+  "slug": "fort-vancouver-centennial-half-dollar",
+  "sources": [
+    {
+      "title": "Historical reference 1",
+      "source_url": "https://www.usmint.gov/learn/coins-and-medals/commemorative-coins/fort-vancouver-centennial-half"
+    },
+    {
+      "title": "Historical reference 2",
+      "source_url": "https://www.nps.gov/fova/learn/historyculture/hbcfort1.htm"
+    },
+    {
+      "title": "Historical reference 3",
+      "source_url": "https://home.nps.gov/fova/planyourvisit/placestogo-mcloughlin-house.htm"
+    },
+    {
+      "title": "Historical reference 4",
+      "source_url": "https://www.nps.gov/places/fortvancouver.htm"
+    },
+    {
+      "title": "NPS: Fort Vancouver location and community",
+      "source_url": "https://www.nps.gov/places/fortvancouver.htm"
+    }
+  ],
+  "stats": []
+}

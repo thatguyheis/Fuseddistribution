@@ -1,0 +1,29 @@
+{
+  "mode": "codex-editorial",
+  "score": 95,
+  "pass": true,
+  "blockers": [],
+  "reviewedDate": "2026-10-14",
+  "reviewer": "Codex",
+  "scope": "User approved v2 narration and requested supplied images; local final preview only. Supplied image attribution remains unverified for public distribution.",
+  "localValidation": ".workflow-state/fort-blog-qa.json",
+  "claimMap": "content/coin-history/fort-vancouver-centennial-half-dollar/research.json",
+  "artifactSha256": {
+    "verified.md": "635dd4592afd6a640c915ad73d3ba069e691871fd53751cad7520d4eb5cdf5b2",
+    "index.html": "838806fdf891f18b04c4019f17a045583941b6239b80ff87c59ec017ed7ac8c2",
+    "meta.json": "392f5d4103e876eb80f45f305b4d9526d431ee992bb045ee0f6fe9f71fe2a0fd",
+    "research.json": "5b7042e7f0b1bdc2ed5881bdbef49e0d8f649ed032f1e8938019ec37df94242a",
+    "hero.jpg": "9f6806396174a8965b9492d55f594e43884530aead13eb7e3b108237aacc1da0",
+    "photo-post.jpg": "55cc0890e7a090c6a91de4c394f1ac934599bccc6ebad574ead843d0e9a82068",
+    "reel-script.md": "f4d635d8424671b2ae84f625a3f15e064e9565fac43e0a92e8b521527ec62742",
+    "reel-data.md": "46d888a30e2d962f8bc90f4bade140471a524cd99eb1765bbd5d6d68e76280e8",
+    "social-copy.json": "9cb33616b2999692b027239ecf606cbf9b938a684f769464de0e45034bccec7d",
+    "presentation-plan.json": "24b5575117177b49bb579df9c0b83272f99d92b4987a14d2dbec7d1eeebff54c"
+  },
+  "slug": "fort-vancouver-centennial-half-dollar",
+  "reviewed_at": "2026-10-15T13:25:10.237Z",
+  "review_notes": [
+    "Final article expanded with National Park Service context on the Columbia Department, Indigenous trade and the diverse village. Coin design, 1925 anniversary, San Francisco production without mint mark and Laura Gardin Fraser credit checked against U.S. Mint. Local editorial QA passed. User supplied photographs retained.",
+    "Published companion reel embed added with verified 720p web media. Article remains silver and final body passes local QA."
+  ]
+}

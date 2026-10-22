@@ -1,0 +1,24 @@
+{
+  "slug": "from-artist-sketch-to-finished-coin-design",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-09T16:24:02.585928+00:00",
+  "review_notes": [
+    "Reviewed complete article and companion narration against cited primary source context. Original advice and hypothetical examples are identified; no invented statistics, historical data presented as current, or investment promises.",
+    "Inspected the actual hero and square exports: subject specific explanatory diagrams, readable hooks, no material clipping.",
+    "Article QA, narration duration preflight and production parser passed. Human review narration was expanded from article-supported text after the first duration check failed. Final video production and review remain pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "b6cf5e352bfd2400937a09408a279454a2844533c6711b5922b0d242985fe86a",
+    "index.html": "64689281bae228e81449bdcf1864797030d61ae1e320632d3635b50c546c0aa4",
+    "meta.json": "36bcbdd50e265bc58756ed2c643012ed3e34edf5d5b5c95560b1251ba0db6ec6",
+    "research.json": "51777ddb9f2aa5cc36b52933a5253c171db05c59c33970e39b148df19bac60b4",
+    "hero.jpg": "a633cb0472d11cc392af1811ee8069f8af17f3c4521d044fb27bb082442f30e6",
+    "photo-post.jpg": "673dc83995d306d2e14f8ff1a863d1e2b0c839dc0effc72c761567d308f21643",
+    "reel-script.md": "29e6ece609af0e022949aa066977291485f9b61af2d39574f0e3c2d67e2f95eb",
+    "reel-data.md": "8c02df3459e1727a72d1e1992b880b5006b8edecd30b971ca428c36d5c1d0754",
+    "social-copy.json": "8fd85eadd7a764f56cacd37a8d79a18722099679e81dca0fbda8c27d846bbb92"
+  }
+}

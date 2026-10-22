@@ -3,7 +3,7 @@ topic: tech
 focus: how often to post on social media for small business
 format: long-form
 
-hook: Consistent posting drives five times more engagement than irregular posting.
+hook: Consistent posting drives five times more engagement than irregular activity.
 hook_type: contrarian_stat
 
 ## segments
@@ -24,7 +24,7 @@ hook_type: contrarian_stat
   narration: The research is clear: consistency is king. For example, LinkedIn accounts posting eleven or more times per week see nearly seventeen thousand more impressions and three times the engagement compared to those posting just once a week .
 - type: overlay
   text: FINDING SWEET SPOT BALANCING
-  narration: Finding Your Sweet Spot: Balancing Quality Content with Posting Cadence For more on this, see How To Ask Customers For Google Reviews. As a local business owner, I know the struggle is real. You have a fantastic service or product, but how often should you be showing up on social media? The answer isn't one-size-fits-all; it depends entirely on the platform you choose and your goals.
+  narration: Finding Your Sweet Spot: Balancing Quality Content with Posting Cadence For more on this, see How To Respond To Negative Google Reviews. As a local business owner, I know the struggle is real. You have a fantastic service or product, but how often should you be showing up on social media? The answer isn't one-size-fits-all; it depends entirely on the platform you choose and your goals.
 - type: overlay
   text: WHILE SOME PLATFORMS SUGGEST
   narration: While some platforms suggest high volume, I recommend starting with a sustainable schedule that fits your capacity, perhaps aiming for three to five times per week on platforms like Instagram, while maintaining a steady presence on Facebook and LinkedIn. Beyond Just Posting: Focusing on Engagement Over sheer frequency As a local business owner, I know the temptation is to post constantly.
@@ -39,12 +39,12 @@ hook_type: contrarian_stat
   narration: Remember, short-form video content is a game changer, delivering 71 percent higher ROI than other content types. Focus on quality and consistency over sheer quantity to build a loyal local community.
 
 ## question
-text: What's your business's best posting frequency?
+text: Consistency over volume: What's your posting rhythm?
 subtext: COMMENT BELOW
-narration: What's your business's best posting frequency? Follow for more practical business tips.
+narration: Consistency over volume: What's your posting rhythm? Follow for more practical business tips.
 
 ## shared
-discussion_question: What's your business's best posting frequency?
+discussion_question: Consistency over volume: What's your posting rhythm?
 hashtags: #LocalBusiness #SmallBusinessTips #DigitalMarketing #GoogleMyBusiness #WebDesign
 
 ## media_queries
