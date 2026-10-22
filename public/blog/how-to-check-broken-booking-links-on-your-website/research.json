@@ -1,0 +1,16 @@
+{
+  "slug": "how-to-check-broken-booking-links-on-your-website",
+  "reviewedAt": "2026-09-22T19:48:17.754468+00:00",
+  "stats": [],
+  "sources": [
+    {
+      "title": "MDN HTTP200",
+      "source_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/200",
+      "claims": [
+        "HTTP200 indicates a successful request."
+      ],
+      "editorialInference": "Request success does not establish business correctness or completion of the booking workflow."
+    }
+  ],
+  "provenance": "Real failed topic in September21 recovery manifest; original recovery draft, no invented queue or historical publication."
+}

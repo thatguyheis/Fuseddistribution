@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-21T21:38:17.776921+00:00",
+  "stage": "article, HTML, narration, social copy and diagram exports completed outside shared public tree",
+  "visualReview": "Hero and square JPEG inspected: text fits and is legible; all three comparison columns visible.",
+  "parser": "pass, no errors or warnings",
+  "narrationEstimateSeconds": 101.6,
+  "actualSpeechGenerated": false,
+  "fullLocalQa": "pending production registration",
+  "editorialApproval": false,
+  "published": false,
+  "hashes": {
+    "verified.md": "5f5fbad9d2ee7061fa867fa5a8ea37b4a7799f996848f3ef2a676694b1cae159",
+    "index.html": "04afb716ef866c5334470e9af0ba1841e857a12943d833afe8dff063983398f5",
+    "hero.jpg": "40906789a2298f419e9321034536d07e5f722b29b7e7b80ad2b170762323e780",
+    "photo-post.jpg": "4244d1cb9b6c04006c6ddbc07557d90d87d2b07878657c06c91a8f062c0713c2",
+    "reel-script.md": "27a4c762648ded28748f91a052c865911352704c7149b3c823334a117eab5a52",
+    "reel-data.md": "64d99dc2c877545a16f0649f4aad895ec9c6f641770a13faebc222819b0c6a13",
+    "social-copy.json": "2926a08fae1253cb33af135e73eaa57e8a7ab36523619571e0702fea07db868c",
+    "research.json": "08ae38706e102da37664bc05b5fe4b16af6a07e84e5cd39e3d1d383ac50fd5d6",
+    "meta.json": "565f6e8707dd601af3e89e271754c33051e39dd8e3ff964f8d1eadb173baf636"
+  }
+}

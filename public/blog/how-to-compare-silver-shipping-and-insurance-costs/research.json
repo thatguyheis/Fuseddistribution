@@ -1,0 +1,22 @@
+{
+  "slug": "how-to-compare-silver-shipping-and-insurance-costs",
+  "stats": [],
+  "sources": [
+    {
+      "title": "APMEX ordering policy",
+      "source_url": "https://www.apmex.com/orderingpolicy",
+      "claims": [
+        "Unattended or alternative-recipient instructions can affect stated protections; check exact order terms."
+      ]
+    },
+    {
+      "title": "JM Bullion shipping policy",
+      "source_url": "https://www.jmbullion.com/about/shipping/",
+      "claims": [
+        "Dealer describes transit protection ending at signature or delivery confirmation."
+      ]
+    }
+  ],
+  "reviewedDate": "2026-09-21",
+  "status": "draft source record; complete package awaits editorial review"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-label-silver-coin-holders-without-touching-coins",
+  "title": "Label Silver Coin Holders Without Touching Coins",
+  "brand": "silver",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "description": "Label silver coin storage without touching coins. Use inventory IDs, separate cards, and matching records to find holders while keeping private details safe.",
+  "ogDescription": "Label the storage, not the coin",
+  "alt": "Silver coin holder inventory labeling checklist",
+  "tags": [
+    "Coin Care",
+    "Inventory"
+  ],
+  "ctaLine": "Do you prefer detailed holder labels or a separate inventory record?",
+  "contentGraphic": {
+    "label": "Label the storage, not the coin",
+    "rows": [
+      {
+        "condition": "Assign an ID",
+        "action": "Label the storage"
+      },
+      {
+        "condition": "Match the record",
+        "action": "Check locations"
+      }
+    ]
+  }
+}

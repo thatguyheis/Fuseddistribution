@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-document-a-damaged-silver-bullion-shipment",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-24T14:14:52.889360+00:00",
+  "review_notes": [
+    "Read the 909 word article against the saved shipment brief and current USPS domestic claim guidance. Narrowed claim requirements to USPS; carrier and seller terms vary.",
+    "Preserved the physical item and packaging instructions, evidence log and service-specific deadlines without promising coverage, authenticity or claim payment.",
+    "Reviewed original 1600x900 hero and 1080x1080 photo graphic; labels legible, on topic and unclipped.",
+    "Verified internal links point to current live guides and source links to USPS primary guidance.",
+    "The companion has 328 narration words and 102.8 second estimated preflight. Actual speech, music rights, duration, frames and captions remain release gates. No video upload or scheduling approved.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "570b241a6c5bcad3173ce73512a1a1c4d08e54857f599e416faa45d928ea2911",
+    "index.html": "bfb7fe8f39552be53a15ba77c8196d3a6a76e8c89ad8a961d758697efd7124fa",
+    "meta.json": "e234be600b74f8220289074bc09cc10b1a5b6faafdb7ffd88481596bc48ad2bc",
+    "research.json": "abd80b4dabe5114bbe4f20d874b9f3e615af5466b49c9a3da9f0d57c8c02900c",
+    "hero.jpg": "1864c022500b5126f89d53c1349f39dd373667672783c5b74ed0ba4ce06bdfd3",
+    "photo-post.jpg": "94c578783774de5e70d81d146417a57d4b358f79cf7d6cd8448ba565fd800d09",
+    "reel-script.md": "6abae4dc14ebc4fdbc1ee39541c6d4306e566b365bc29518899487374bb226da",
+    "reel-data.md": "6bb8b87da64e83135fb3b313b2e79c25832c10a4b0765595225717400f723b2a",
+    "social-copy.json": "cb0d219b7ab6b12adb413ad2579d8972c56b0faa61b4cb20ffeaf4361526daf6"
+  }
+}

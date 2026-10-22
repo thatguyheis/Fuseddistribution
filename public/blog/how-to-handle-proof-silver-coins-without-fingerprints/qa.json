@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-handle-proof-silver-coins-without-fingerprints",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-25T19:07:04.622026+00:00",
+  "review_notes": [
+    "Read and corrected the complete recovery article and companion narration. Kept topic scope distinct and removed the failed brief drift; no model output promoted without review.",
+    "Checked linked U.S. Mint or Google Search Central primary guidance September25. Original checklists are practical suggestions; no invented measured results, coin grading claims, ranking guarantees or unsupported statistics.",
+    "Inspected all four landscape and square graphics in contact sheets: legible, unclipped and topic specific. Article decision diagrams are escaped structured metadata rendered by the builder.",
+    "Existing local QA passes: metadata, topic, internal links, source references, script structure and segment timings. Estimated narration length recorded separately; actual video release is unapproved.",
+    "New publication date September25. Preserve previous days and existing active render files."
+  ],
+  "artifactSha256": {
+    "verified.md": "1b549dd43d9c22685e4d12ec0e028cec03d3efd818a1d4ab2751157438f36ee9",
+    "index.html": "08332dad638e997a539bde6978eee59586741b9ded38674bea124c19da4b7283",
+    "meta.json": "6b9b9ee496d0f5694dfb62f8b4b6028837d790cb594408fe94bac79a35a00698",
+    "research.json": "7e9d02d0ddbfde50e27e4148542bf56233ee6e48b62a23a0ebedf93e7869d192",
+    "hero.jpg": "7a9f97531b9960ee577717754d424ffad7a2f9bb78d728f545464bd8c0439602",
+    "photo-post.jpg": "7d9f43aef7f9bd5f5cf8ef906650cb9aaf8c7f2cbab0bb24a47b149a8adb4efd",
+    "reel-script.md": "6123b74441e634464d07dcdda6e52df2370f030d526b174075117eb010eff2c3",
+    "reel-data.md": "32f80aa468b076c1e4d5584716d27ecbf6f8c9512ab7cc1104effb73554d4a85",
+    "social-copy.json": "d75c0af5ac1e415d9137fcb1d86e146271e1dfcf19691eb348de4e98e9a38d27"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-choose-pvc-free-flips-for-silver-coins",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-25T19:07:04.620007+00:00",
+  "review_notes": [
+    "Read and corrected the complete recovery article and companion narration. Kept topic scope distinct and removed the failed brief drift; no model output promoted without review.",
+    "Checked linked U.S. Mint or Google Search Central primary guidance September25. Original checklists are practical suggestions; no invented measured results, coin grading claims, ranking guarantees or unsupported statistics.",
+    "Inspected all four landscape and square graphics in contact sheets: legible, unclipped and topic specific. Article decision diagrams are escaped structured metadata rendered by the builder.",
+    "Existing local QA passes: metadata, topic, internal links, source references, script structure and segment timings. Estimated narration length recorded separately; actual video release is unapproved.",
+    "New publication date September25. Preserve previous days and existing active render files.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "134cd7bda3e1dcc27b8208ec0f55cd93c5ede43ce67d0fb3a03713efac029f60",
+    "index.html": "24392bbbe0871e231e5552426a80b842843ce032884aa37613a5df789df21185",
+    "meta.json": "91860527cc3e6abf0faae410dcc7bbb21f35567382a033dea0626e08ad7c0374",
+    "research.json": "3792a54b97b3f2d89c2be7f8b16384f20deef864d8f48ca9dd6d1f598b8e888f",
+    "hero.jpg": "06b3b53fb96906c741cda5559db6c50febe2ba181b1bb1b74689751ef7ba5893",
+    "photo-post.jpg": "a2aad9a2e4e97427a70c2f19fdaa1b38720ff4a4864db4d6330c74581042df5f",
+    "reel-script.md": "ea8916456587d9d8be5b3f1bd290e3a0ca54e176533ab5e2dfb274e591ffffd9",
+    "reel-data.md": "6aaa46a9913cedcf3c4d0dae66214bdd68b3ea12d93f46b8fbc4c3a215c8f64b",
+    "social-copy.json": "3ee47ceca77b3f8b244a140c2414935b8f9db6ac1eea18b1bd8fe9ce7ed0bc75"
+  }
+}

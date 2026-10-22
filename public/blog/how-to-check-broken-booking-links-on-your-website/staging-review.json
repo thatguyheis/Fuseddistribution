@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-09-22T20:52:29.301640+00:00",
+  "status": "Article and companion package staged; publication QA and editorial approval pending",
+  "articleWords": 927,
+  "draftSha256": "a1781d066dea1e31001bf4b3c1e10f1eced46f1bb410e609d59711d810c5e309",
+  "remaining": [
+    "Production local QA and complete editorial approval",
+    "Scoped deployment then live main hero catalog date/order and sitemap verification",
+    "Normal renderer then actual release review hosting and delivery"
+  ],
+  "companions": {
+    "narrationWords": 337,
+    "estimatedSeconds": 105.6,
+    "parserErrors": [],
+    "parserWarnings": [],
+    "visualReview": "Both exported JPEGs inspected; checklist text readable and unclipped; original graphics",
+    "actualReelRendered": false
+  },
+  "artifactSha256": {
+    "verified.md": "a1781d066dea1e31001bf4b3c1e10f1eced46f1bb410e609d59711d810c5e309",
+    "index.html": "2ed92ee48b958280f64956b6efba1d2c192c7f4c039adea24d1167425ccd483a",
+    "hero.jpg": "d6e9888b4daa986e45bce9ba617855731af23217264d2c0195421e2e8cfb8d4d",
+    "script.json": "c137952e2de8b1c26d6580b37e335ceb7ccedf9144e6b2a7062584c3fd94ccb4",
+    "social-copy.json": "ad06165ace68893f0b57e9b1010ecea15170f75013804aaabef1c65e68483655",
+    "hero.svg": "221ad0cdefd22f516a1405af21935bbde5180127d4416c1e2dfbdd0d23fed287",
+    "reel-data.md": "ff6d31044655246ca7316ba09845ad6146cc916b2b9e2fc896f3f33b6144c1d1",
+    "photo-post.svg": "2b764665f3c90b9628967b34205047227f9fc692198ceb727ecd6c83b59cd6e4",
+    "research.json": "014e1353931148d2775edeb72d50eda74b4d032a9260030d1b4998e06d9db42a",
+    "reel-script.md": "cf3651a0279d2fb6c3eb42cfd56921c2830dbebb50e29345c4e9822d8a648c5a",
+    "photo-post.jpg": "0221a27ab8042ded16110312fcb3c8c33bc82d404828c5634d11084ad8365ddc",
+    "meta.json": "4f362b2a6d4586b9bc467bf0321b7524e856ae70219c4011c64e092dcd0897fe"
+  }
+}

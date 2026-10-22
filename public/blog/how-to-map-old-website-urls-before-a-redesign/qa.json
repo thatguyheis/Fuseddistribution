@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-map-old-website-urls-before-a-redesign",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-24T14:03:58.354245+00:00",
+  "review_notes": [
+    "Read the preserved 1,481 word recovery draft end to end and reconciled it with the saved topic brief. The article distinguishes inventory, intent based mapping, planned implementation and observed testing; it promises no ranking outcome or completed redirect.",
+    "Checked current Google Search Central site move guidance on September24. Mapping, source inventory, relevant destinations, permanent redirects, avoiding chains, sitemaps, monitoring and generally retaining redirects at least one year are scoped to that source.",
+    "Reviewed the 1600 by 900 hero and 1080 square social image exports. The four step map is readable, on topic and unclipped.",
+    "Checked internal link destinations against existing local pages; contextual inline links, related links and Read next are topic relevant.",
+    "Reviewed the original 370 word narration for source and topic fit. Parser QA passes; preflight estimates 115.7 seconds, separate from actual rendered speech and release review. No music, upload or scheduling approval is included."
+  ],
+  "artifactSha256": {
+    "verified.md": "2b5c3f87dea6b352d8142062a947702f6a5bbe3501753972fde3cffb5223a9ac",
+    "index.html": "96bd25169166d534be73dabfe5502b3b5a5d1a813f22cb83f7c82383809d9b1e",
+    "meta.json": "14495383403bd7b94fb537b26a0270c77a05b580d7e7574678401027a5ecd5ba",
+    "research.json": "14377da20a24ff41a54690d9f69ca30f99c239d8a13afadc4c43a33038c15958",
+    "hero.jpg": "0a0080b76f8e3e0bcb55ebac6ab5ca680043c29fdc7ac9b6d508efab93ac4290",
+    "photo-post.jpg": "5b6ae4727719210c0f2fe352958787216abe87b43e3ba4412a230dc6d88a8488",
+    "reel-script.md": "5100b29987bbcf37e382957e0fe6fbee4ab847f519ddb1eec1f0626be79e4dcf",
+    "reel-data.md": "93f3efe67dcb57b39a24d76a4c46994fa66408eaa94e66df89b1e4ca0925036b",
+    "social-copy.json": "70b165858815aa646e34ff702672087146e7d9ea1358f377a4b4e059d9cc2aa7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-document-website-access-for-your-business",
+  "stats": [],
+  "sources": [
+    {
+      "title": "Edit your Business Profile",
+      "source_url": "https://support.google.com/business/answer/3039617?hl=en",
+      "claims": ["A Business Profile can include a full website URL and Googlebot should not be blocked from the site."]
+    },
+    {
+      "title": "Get started with Search Console",
+      "source_url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "claims": ["Search Console reports how Google crawls, indexes, and serves websites, and URL Inspection shows current index status and live testing options."]
+    },
+    {
+      "title": "Manage customer reviews",
+      "source_url": "https://support.google.com/business/answer/3474122?hl=en",
+      "claims": ["Google provides guidance for managing and replying to Business Profile reviews."]
+    }
+  ],
+  "editorialNotes": [
+    "The article is a practical documentation checklist with no external numeric, ranking, traffic, customer, or location claims.",
+    "Google product behavior claims are linked to current primary documentation.",
+    "Quarterly review is framed as a practical recommendation, not a Google requirement."
+  ]
+}

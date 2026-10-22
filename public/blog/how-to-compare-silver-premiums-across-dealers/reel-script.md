@@ -1,7 +1,7 @@
 # Reel Script: how-to-compare-silver-premiums-across-dealers
 format: long-form
 segments: 11
-target-duration: 187s
+target-duration: 186s
 
 ---
 
@@ -59,12 +59,12 @@ Narration: You know this because you compared the cost per ounce, not just the i
 
 ---
 
-## OVERLAY: COST MUST FACTOR SEE
+## OVERLAY: COST MUST FACTOR SOME
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
 
-Narration: This is a cost you must factor. For more on this, see Johnson Matthee Silver Bars Guide. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide. Some dealers charge a flat fee just to process the order. This fee is added to the total before you calculate the per ounce.
+Narration: This is a cost you must factor. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide. Some dealers charge a flat fee just to process the order. This fee is added to the total before you calculate the per ounce. Add every single cost to the total before dividing.
 
 ---
 
@@ -98,8 +98,8 @@ Narration: This protects you from daily market fluctuations. These plans help yo
 ## QUESTION
 
 **Visual:** Question card
-**Duration:** 6s minimum
+**Duration:** 5s minimum
 
-Text: Stop guessing. Calculate your true silver value and find the?
+Text: Which comparison method will save you the most money?
 Subtext: COMMENT BELOW
-Narration: Stop guessing. Calculate your true silver value and find the? Follow for more silver news.
+Narration: Which comparison method will save you the most money? Follow for more silver news.

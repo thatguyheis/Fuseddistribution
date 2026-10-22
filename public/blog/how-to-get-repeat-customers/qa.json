@@ -1,0 +1,31 @@
+{
+  "slug": "how-to-get-repeat-customers",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-10T11:23:16.496130+00:00",
+  "notes": [
+    "Primary FTC/Google source scope checked; unsupported statistics removed.",
+    "Actual artwork inspected; social copy rewritten to match article.",
+    "Eight segments parsed and validated; synchronized source files. Reel unrendered.",
+    "Applied reviewed repeat-duration correction: segment 6 planned window is 25 seconds and only the two companion hashes above changed. Release approval remains pending actual audio, retime, render, and 100-second duration evidence."
+  ],
+  "sources": [
+    "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+    "https://support.google.com/contributionpolicy/answer/7400114",
+    "https://support.google.com/business/answer/3038177"
+  ],
+  "artifactSha256": {
+    "verified.md": "2cbfb81d200d86cadcd6021669ed899a5289481c6fc09f9c39b11d23b82f234d",
+    "index.html": "4f58b0088df7b721e9b6e56d7e5f6f5dec4710ef428f770ec0b8fbe8ab2045ac",
+    "meta.json": "257237c359a56c11128761329df368735dd0144cd9404bdf52db666716d29bb7",
+    "hooks.json": "adfa0ea2f1a2d6b787998ba5f7adc4ec3d0f2573eee32b3d54b433bf983fecde",
+    "hero.jpg": "690460c070c5d00174a9fa3a44cabcda007bcf564071e22a48ceaf4d79f72feb",
+    "photo-post.jpg": "674d4586bf17a158a690771dfbd8d8e3f9f7da1785f160fc0c2ce42a48e40d13",
+    "reel-data.md": "2901f215bfc0a4609ca2e0d25e4882f77a03981a56738064905682404c1029ef",
+    "reel-script.md": "0000c19afa194ccee85625d994297a4dcfda62c114dfca0e83f3927258258338",
+    "social-copy.json": "9e876165399817b0e2a99b43653c2bc2fb148eaf11407c11303335487f3e83be",
+    "research.json": "c7cfe3c0923e61f5779b06be50db576e68603acd3c3af7e24db82c7e6d3f3d88"
+  }
+}

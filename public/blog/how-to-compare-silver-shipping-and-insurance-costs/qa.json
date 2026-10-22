@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-compare-silver-shipping-and-insurance-costs",
+  "pass": true,
+  "score": 92,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-21T21:45:00-07:00",
+  "review_notes": [
+    "Reviewed the corrected article and all topic-specific companions. Removed unsupported cost, ranking, coverage, and arrival claims; the article compares like-for-like orders, complete checkout totals, current seller terms, receiving arrangements, and reporting steps.",
+    "Verified the JM Bullion shipping policy and APMEX ordering policy on September 21. JM Bullion states that transit coverage ends at signature or delivery confirmation; APMEX describes limits for unattended or alternative-recipient delivery instructions.",
+    "Inspected hero.jpg and photo-post.jpg: comparison labels fit, all columns are visible, and text is legible. Added a topic-specific delivery comparison checklist graphic, internal companion links, related links, and Read next navigation required by production QA.",
+    "Production parser, reel validator, and deterministic local QA pass. Narration is pre-TTS estimated at 101.6 seconds; no listening or manual caption alignment is claimed.",
+    "Approved for this reviewed publishing delta only. Publication date is September 21, 2026. No reel release or Buffer scheduling is implied by this article approval.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "5f5fbad9d2ee7061fa867fa5a8ea37b4a7799f996848f3ef2a676694b1cae159",
+    "index.html": "9fba81bc08f14dd341d749faad00cde40b3c5d305aa3000d39071e553b8064d4",
+    "meta.json": "4f84f12ad3f43fb5103108571a034d0a17a72a2f94afef9e1ace4e4a082d3168",
+    "research.json": "08ae38706e102da37664bc05b5fe4b16af6a07e84e5cd39e3d1d383ac50fd5d6",
+    "hero.jpg": "40906789a2298f419e9321034536d07e5f722b29b7e7b80ad2b170762323e780",
+    "photo-post.jpg": "4244d1cb9b6c04006c6ddbc07557d90d87d2b07878657c06c91a8f062c0713c2",
+    "reel-script.md": "27a4c762648ded28748f91a052c865911352704c7149b3c823334a117eab5a52",
+    "reel-data.md": "64d99dc2c877545a16f0649f4aad895ec9c6f641770a13faebc222819b0c6a13",
+    "social-copy.json": "2926a08fae1253cb33af135e73eaa57e8a7ab36523619571e0702fea07db868c"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-check-keyboard-focus-on-a-business-website",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:30.813275+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "281a44525a3a0fa5d69c3cf46d3a0f5cca2fa5d570d55eb2da84f7e97b3d70dc",
+    "index.html": "5d8a80fb0f76c113bf76dc1d33ec590898a9e1df9082d25826084213780fd5bd",
+    "meta.json": "628e72e710d715d1bd9139a800747985a1e71754a1c48abd073c9958d8789078",
+    "research.json": "eb6043c54e222959c4b073aa55773bc3af45c2a41db5ec8dec0937a83345a9dd",
+    "hero.jpg": "0b50ce1015b342786aa1e1f6593207c5aedf69003865feeee6e922b10eb1b56c",
+    "photo-post.jpg": "7889be05494365d1bc702d739d8d6dbb1d3c069b200f943bf8abb4ce9d779989",
+    "reel-script.md": "6dd597b7de3e68e0226e45844ea6042eb4f0cc80a30b279f7ee5d4e16d0b07bf",
+    "reel-data.md": "972458e80f80c68e363bc1ef4d87d3b92a9c368c9e91da755529239b289fad33",
+    "social-copy.json": "0d27ef052d7d478b68f14903c7ca0280f3e9f888f39170e9033ec95dfbba1589"
+  }
+}

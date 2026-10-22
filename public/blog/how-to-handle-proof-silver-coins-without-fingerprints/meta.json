@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-handle-proof-silver-coins-without-fingerprints",
+  "title": "How to Handle Proof Silver Coins Without Fingerprints",
+  "brand": "silver",
+  "date": "2026-09-25",
+  "modifiedDate": "2026-09-25",
+  "description": "Handle proof silver coins with a prepared workspace and fewer transfers. Check the holder, plan the destination, and keep inventory records before moving coins.",
+  "ogDescription": "Proof coins: fewer touches",
+  "alt": "Proof silver coin handling preparation checklist",
+  "tags": [
+    "Coin Care",
+    "Storage"
+  ],
+  "ctaLine": "Which coin can you inspect without opening its holder?",
+  "contentGraphic": {
+    "label": "Holder intact / Inspect without opening / Transfer needed / Prepare a protected destination",
+    "rows": [
+      {
+        "condition": "Holder intact",
+        "action": "Inspect without opening"
+      },
+      {
+        "condition": "Transfer needed",
+        "action": "Prepare a protected destination"
+      }
+    ]
+  }
+}

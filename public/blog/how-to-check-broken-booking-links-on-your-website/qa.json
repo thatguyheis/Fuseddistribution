@@ -1,0 +1,25 @@
+{
+  "slug": "how-to-check-broken-booking-links-on-your-website",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-22T22:03:00Z",
+  "review_notes": [
+    "Read and corrected the complete recovery article from the saved draft; the guidance distinguishes a successful HTTP response from a correct booking destination and avoids claims about any particular provider.",
+    "Verified the only external claim against the current MDN HTTP 200 reference; the remaining checklist is clearly practical process guidance.",
+    "Added and reviewed a topic-specific four-stage booking link graphic, two related links and a Read next link after deterministic QA identified those missing companion blocks.",
+    "Inspected the actual hero and square exports: both are topic-specific, legible and unclipped. Production parser, reel validation and 105.6 second narration preflight pass; actual reel release remains separate."
+  ],
+  "artifactSha256": {
+    "verified.md": "a1781d066dea1e31001bf4b3c1e10f1eced46f1bb410e609d59711d810c5e309",
+    "index.html": "5d540f67eb523fea29c99913a5d8932ce1d6f035e84f338d343bc64b6a4ffd48",
+    "meta.json": "4f362b2a6d4586b9bc467bf0321b7524e856ae70219c4011c64e092dcd0897fe",
+    "research.json": "014e1353931148d2775edeb72d50eda74b4d032a9260030d1b4998e06d9db42a",
+    "hero.jpg": "d6e9888b4daa986e45bce9ba617855731af23217264d2c0195421e2e8cfb8d4d",
+    "photo-post.jpg": "0221a27ab8042ded16110312fcb3c8c33bc82d404828c5634d11084ad8365ddc",
+    "reel-script.md": "cf3651a0279d2fb6c3eb42cfd56921c2830dbebb50e29345c4e9822d8a648c5a",
+    "reel-data.md": "ff6d31044655246ca7316ba09845ad6146cc916b2b9e2fc896f3f33b6144c1d1",
+    "social-copy.json": "ad06165ace68893f0b57e9b1010ecea15170f75013804aaabef1c65e68483655"
+  }
+}

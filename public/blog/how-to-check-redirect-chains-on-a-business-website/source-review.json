@@ -1,0 +1,29 @@
+{
+  "slug": "how-to-check-redirect-chains-on-a-business-website",
+  "reviewedDate": "2026-09-24",
+  "sources": [
+    {
+      "title": "Site Moves and Migrations - Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "verifiedClaims": [
+        "Google recommends mapping old URLs to corresponding new URLs and preparing the redirect strategy from that map.",
+        "Google advises redirecting to the final destination directly when possible; chains add latency and some user agents may not support long chains.",
+        "Google recommends updating internal links, self-referencing canonical annotations, and the sitemap for the new URLs, and testing redirects after changes."
+      ]
+    },
+    {
+      "title": "Redirects and Google Search - Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "verifiedClaims": [
+        "Google distinguishes permanent and temporary redirects and recommends permanent server-side redirects when a page has moved permanently and that behavior is appropriate.",
+        "Google identifies URL Inspection and command line or script checks as options for testing redirect behavior."
+      ]
+    }
+  ],
+  "limitations": [
+    "No ranking or traffic increase is promised.",
+    "The article asks a site administrator to confirm implementation because redirect setup varies by hosting and site environment.",
+    "The article separates chains, loops, not-found results, and irrelevant destinations rather than treating them as one defect."
+  ],
+  "preservedBrief": "public/blog/research/2026-09-24-how-to-check-redirect-chains-on-a-business-website.md"
+}

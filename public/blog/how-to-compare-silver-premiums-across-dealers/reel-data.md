@@ -23,8 +23,8 @@ hook_type: immediate_value
   text: $10 TO $20 COST PRICE SINGLE TRANSACTION
   narration: You know this because you compared the cost per ounce, not just the initial price. Dealers often list a low base price. You must add everything else to get the real numbers. These hidden costs affect your final comparison. Others charge $10 to $20 for a single transaction. Always ask for the final all-in total. Many dealers add 3 to 4 percent to the total for using credit card payments.
 - type: overlay
-  text: COST MUST FACTOR SEE
-  narration: This is a cost you must factor. For more on this, see Johnson Matthee Silver Bars Guide. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide. Some dealers charge a flat fee just to process the order. This fee is added to the total before you calculate the per ounce.
+  text: COST MUST FACTOR SOME
+  narration: This is a cost you must factor. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide. Some dealers charge a flat fee just to process the order. This fee is added to the total before you calculate the per ounce. Add every single cost to the total before dividing.
 - type: stat
   text: 25 TO 35 % BARS COST MINT EACH
   narration: Ten-ounce bars show a premium between 3 and 6 percent. These are generally cheaper per ounce to produce than coins. Fractional coins, like one-tenth or one-quarter ounce pieces, show a premium of 25 to 35 percent. This is because the cost to mint each small piece is very high. These ranges show the difference in production costs. Understand this difference when choosing your investment.
@@ -36,12 +36,12 @@ hook_type: immediate_value
   narration: This protects you from daily market fluctuations. These plans help you secure your silver at a favorable price. Visit our reserve page to see our plans.
 
 ## question
-text: Stop guessing. Calculate your true silver value and find the?
+text: Which comparison method will save you the most money?
 subtext: COMMENT BELOW
-narration: Stop guessing. Calculate your true silver value and find the? Follow for more silver news.
+narration: Which comparison method will save you the most money? Follow for more silver news.
 
 ## shared
-discussion_question: Stop guessing. Calculate your true silver value and find the?
+discussion_question: Which comparison method will save you the most money?
 hashtags: #SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge
 
 ## media_queries

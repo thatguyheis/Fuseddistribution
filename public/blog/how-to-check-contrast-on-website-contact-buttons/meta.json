@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-check-contrast-on-website-contact-buttons",
+  "title": "Check Contrast on Website Contact Buttons",
+  "description": "Check Contrast on Website Contact Buttons. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Check Contrast on Website Contact Buttons",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "Should a contact button blend into the brand or stand out immediately?",
+  "contentGraphic": {
+    "label": "Check Contrast on Website Contact Buttons",
+    "rows": [
+      {
+        "condition": "List button states",
+        "action": "Record actual colors"
+      },
+      {
+        "condition": "Apply relevant guidance",
+        "action": "Retest the component"
+      }
+    ]
+  }
+}

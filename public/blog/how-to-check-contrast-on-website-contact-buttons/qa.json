@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-check-contrast-on-website-contact-buttons",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:30.963522+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "ee6135cc71b8089a76ff0931b9dada699551e332a39c9f0b21e70d7953318fd8",
+    "index.html": "13360d830c9f2835bbe9c48be42f0e3fb84db3ca88c637faba4bff03a70b9d3a",
+    "meta.json": "7a08c01267443568b9c44fbcf2e8a45dd29293e8ea92cba2927301927022d4d4",
+    "research.json": "26787091eef36b950a5f412ff39364938c2216df7b01df5cf709172426473cbd",
+    "hero.jpg": "f90843610b19bfcf9d177375919e247cdbc5f9efafd5111a3c37cd1bb365e636",
+    "photo-post.jpg": "c1f9e2a28ef908e0274ad726a74f5368a778f6eeb3d6974dbf88f2d82934874b",
+    "reel-script.md": "6edd57bf9c0db0542cfc476544756d17f59f8db3da85876461d4d19fd1449f70",
+    "reel-data.md": "1d770cf336b79558621c4843c4ba9f72222ee5ebcf3973516480cb6972a47866",
+    "social-copy.json": "14c442e6097bec41b8daa92e9fa1a58c33d2adb7785a868161af65ee0a96e71a"
+  }
+}

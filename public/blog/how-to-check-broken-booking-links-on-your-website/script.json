@@ -1,0 +1,57 @@
+{
+  "slug": "how-to-check-broken-booking-links-on-your-website",
+  "title": "how-to-check-broken-booking-links-on-your-website",
+  "totalDuration": 114,
+  "segments": [
+    {
+      "type": "hook",
+      "startSec": 0,
+      "endSec": 15,
+      "text": "A booking page can open successfully and still send customers to the wrong calendar.",
+      "narration": "A booking page can open successfully and still send customers to the wrong calendar. Check the entire path from your public website, not just whether a link loads. Start with the button a visitor would actually press and record where it takes you."
+    },
+    {
+      "type": "overlay",
+      "startSec": 15,
+      "endSec": 32,
+      "text": "LIST THE BUTTONS",
+      "narration": "Find booking links in the homepage, navigation, service pages and footer. Record each starting page, button label and intended destination. A shared menu link may be configured separately from a button pasted into a page. Keep links in social profiles or email templates on a separate list with their own owner."
+    },
+    {
+      "type": "overlay",
+      "startSec": 32,
+      "endSec": 49,
+      "text": "TEST AS A VISITOR",
+      "narration": "Open the public page without being signed into the business booking account. Follow the visible button and record the final address. Check the business name, location and service. Look for an old calendar or an administration page. If customer sign in is intentional, confirm that the expected next step is clear."
+    },
+    {
+      "type": "overlay",
+      "startSec": 49,
+      "endSec": 66,
+      "text": "CHECK THE NEXT STEP",
+      "narration": "Try selecting the intended service and viewing dates. Confirm the time zone, duration and location against the business setup. Ask the calendar owner whether empty availability is expected. Check a phone as well as a desktop browser, and record any hidden controls or calendar panels that do not load."
+    },
+    {
+      "type": "overlay",
+      "startSec": 66,
+      "endSec": 83,
+      "text": "AGREE A SAFE TEST",
+      "narration": "Coordinate any test appointment before submitting it. Use a documented test mode when available, or agree a clearly labeled test and how it will be canceled. Avoid real customer details and unintended charges. Verify the appointment in the correct calendar and check notifications separately. Record any final step that remains untested."
+    },
+    {
+      "type": "overlay",
+      "startSec": 83,
+      "endSec": 100,
+      "text": "VERIFY THE FIX",
+      "narration": "Report the starting page, what you clicked, what happened and what should have happened. Assign the correction to the website or scheduling owner as appropriate. After the fix, repeat the same public path and check other buttons using that destination. Settings showing a new address do not prove the customer path works."
+    },
+    {
+      "type": "question",
+      "startSec": 100,
+      "endSec": 114,
+      "text": "Which button would you check first?",
+      "narration": "Which booking button would you check first? Keep a dated list of the paths tested, results and unresolved steps. Repeat the important checks after changes to your provider, services or website layout so the next review starts with clear evidence.",
+      "subtext": "COMMENT BELOW"
+    }
+  ]
+}

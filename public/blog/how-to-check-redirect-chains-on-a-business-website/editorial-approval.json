@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-check-redirect-chains-on-a-business-website",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-24T14:43:22.429Z",
+  "review_notes": [
+    "Reviewed the 828-word guide against the preserved September24 brief and current Google Search Central site move and redirects documentation.",
+    "Kept implementation advice bounded: map old to final URLs, avoid unnecessary chains, update internal links and canonical and sitemap references, then test. Directs server changes to the site administrator.",
+    "Distinguishes redirect chains from loops, 404s, and irrelevant destinations; promises no ranking or traffic outcome.",
+    "Inspected the 1200x675 hero and 1080x1080 audit checklist graphic; text is legible, on topic, and unclipped.",
+    "Verified internal references target current live pages, and both official Google source URLs are recorded in research.json.",
+    "The companion has 328 narration words and a 102.8-second estimated preflight. Actual speech, music rights, video duration, frame review, and captions remain separate release gates. No video upload or scheduling approved."
+  ],
+  "artifactSha256": {
+    "verified.md": "85499a5682963172d3f9f5e805bc8dc796a5cb70dfa77e1ab0f4c1bc28b9e599",
+    "index.html": "be7447ce4d48f4119fac3436a379eccc9092442f7dffe878f1993c36392cbdde",
+    "meta.json": "f8133b4dcebf6a1d28b58fa0300a95e42e50cedfe5e5c78b56d7e3f9513e24f2",
+    "research.json": "c3989f5a4373008f034b00dbd850bc23cd595b97aee7c7a56e47ed856c81e777",
+    "hero.jpg": "67cffea0144ee54e7e6467c7a650be32b64f471f560af0a2b3034f4ccb23a579",
+    "photo-post.jpg": "093cce935712a38d2490f9e48187cf158b4b76741ca025e6b6ae695dbac146e4",
+    "reel-script.md": "3e9d7201759133d6035b38287c63238e7ac458e41f6174ea6a9b99cd318ee00e",
+    "reel-data.md": "6b773c8f45785b10945b34fc37112bf6d32f557cccecbd5fda07e25215c029fd",
+    "social-copy.json": "0e079c8bad652d43def09d242d41c5b0d381f40efa8f742dfda87eaf70fd6049"
+  }
+}

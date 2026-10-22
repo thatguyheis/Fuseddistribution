@@ -1,0 +1,29 @@
+{
+  "slug": "how-to-compare-silver-buyback-quotes-fairly",
+  "reviewedAt": "2026-09-22T02:37:06.792548+00:00",
+  "stats": [],
+  "sources": [
+    {
+      "title": "JM Bullion sell to us",
+      "source_url": "https://www.jmbullion.com/sell-to-us/",
+      "claims": [
+        "Product selection, price lock, shipping instructions, inspection then payment approval."
+      ],
+      "scope": "No current prices, minimums or payment-time promises reproduced."
+    },
+    {
+      "title": "APMEX selling overview",
+      "source_url": "https://www.apmex.com/sell-gold-sell-silver-overview",
+      "claims": [
+        "Buyer describes price lock and shipping workflow."
+      ],
+      "scope": "No endorsement or universal policy claim."
+    }
+  ],
+  "editorialNotes": [
+    "Original comparison workflow, not investment timing advice.",
+    "Example is expressly hypothetical:1000-30=970;990-10=980; difference10.",
+    "No after-tax return claims.",
+    "No surviving saved draft located for failed topic; recovered actual candidate from September21 attempt record."
+  ]
+}

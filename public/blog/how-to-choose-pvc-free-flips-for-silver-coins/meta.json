@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-choose-pvc-free-flips-for-silver-coins",
+  "title": "How to Choose PVC Free Flips for Silver Coins",
+  "brand": "silver",
+  "date": "2026-09-25",
+  "modifiedDate": "2026-09-25",
+  "description": "Choose documented PVC free flips for silver coins. Check the exact product, material statement, fit, and purchase record before moving coins into new holders.",
+  "ogDescription": "Coin flips: check before buying",
+  "alt": "Coin flip selection and documentation checklist",
+  "tags": [
+    "Coin Care",
+    "Storage"
+  ],
+  "ctaLine": "Which coin holder specification will you check first?",
+  "contentGraphic": {
+    "label": "Material unclear / Pause purchase / Material documented / Check fit and record product",
+    "rows": [
+      {
+        "condition": "Material unclear",
+        "action": "Pause purchase"
+      },
+      {
+        "condition": "Material documented",
+        "action": "Check fit and record product"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "how-to-label-silver-coin-holders-without-touching-coins",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:30.724376+00:00",
+  "review_notes": [
+    "Reviewed saved source-checked draft and removed internal repair notes. Inventory guidance is distinguished from grading, authentication and valuation.",
+    "Rechecked U.S. Mint coin care and PCGS grading guidance. Kept the original practical storage workflow and narrow sourced claims.",
+    "Inspected landscape and square native graphics; no clipped labels. Source metadata drives the in-article diagram.",
+    "Local QA and companion parser pass. Narration preflight passes; future actual audio, frames and release remain unapproved.",
+    "Publication date September28; fulfillment is attributed to original planned date, not backdated.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "8854dc10c04ab7e5dc238ea9196fe1d2b692884394c9211e026c45c1e83274a6",
+    "index.html": "fa76bfed31ed2d015f15afd4df5fd0fda5e71687ecaf2a0d9f891331c4a449e8",
+    "meta.json": "97067ea2361ce705ab5b7c0beb332780ac412ff4d4b9b90f311b59a87ac8305a",
+    "research.json": "68d98667ef6a58e63173fafac2967ecb55539c7c1328a0fbeadaa8a339fa127e",
+    "hero.jpg": "95d97493b55f068ea69e0f801716e9bee99cf5a9f247fdcfc175279997096b70",
+    "photo-post.jpg": "0f24fe3bc3406fb32c239b751ea7cc1fc6f9384d2cc6638fe79e6e8e63f5a787",
+    "reel-script.md": "db620c102865555de171b2d82fff02cdbef7aca2c678100a5ffe53cfd6d4fdf3",
+    "reel-data.md": "3501439e06ced5310658f3f4122d09056f57ee72974b9c84604ac852bf0cffe6",
+    "social-copy.json": "6ff0d0bc26a99cc6288f1bd5cb23a8179ce79c7f4ed2e917abbfb9bf58ef7a32"
+  }
+}

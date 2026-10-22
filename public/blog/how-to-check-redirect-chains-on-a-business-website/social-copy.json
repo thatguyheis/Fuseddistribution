@@ -1,0 +1,18 @@
+{
+  "slug": "how-to-check-redirect-chains-on-a-business-website",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/how-to-check-redirect-chains-on-a-business-website/",
+  "reel": {
+    "facebook": "Map the old URL, intended destination, and test result. Ask your web administrator to remove avoidable redirect hops and correct loops.",
+    "instagram": "Map the old URL, intended destination, and test result. Ask your web administrator to remove avoidable redirect hops and correct loops.",
+    "linkedin": "Map the old URL, intended destination, and test result. Ask your web administrator to remove avoidable redirect hops and correct loops.",
+    "x": "Map old URLs to final destinations. Ask your web administrator to check redirect chains and loops."
+  },
+  "photo": {
+    "facebook": "A three-column audit list helps you track an old URL, its intended destination, and your test result.",
+    "instagram": "A three-column audit list helps you track an old URL, its intended destination, and your test result.",
+    "linkedin": "A three-column audit list helps you track an old URL, its intended destination, and your test result."
+  },
+  "hashtags": "#WebsiteMaintenance #Redirects #SmallBusiness",
+  "discussion_question": "Which old URL will you check first?"
+}

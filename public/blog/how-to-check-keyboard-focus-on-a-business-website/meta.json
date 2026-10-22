@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-check-keyboard-focus-on-a-business-website",
+  "title": "Check Keyboard Focus on a Business Website",
+  "description": "Check Keyboard Focus on a Business Website. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Check Keyboard Focus on a Business Website",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "For website controls, do you prefer subtle styling or unmistakable keyboard focus?",
+  "contentGraphic": {
+    "label": "Check Keyboard Focus on a Business Website",
+    "rows": [
+      {
+        "condition": "Start at entry",
+        "action": "Record lost focus"
+      },
+      {
+        "condition": "Test contact flow",
+        "action": "Report the steps"
+      }
+    ]
+  }
+}

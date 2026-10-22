@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-compare-silver-buyback-quotes-fairly",
+  "score": 94,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-14T15:32:05Z",
+  "review_notes": [
+    "Full article and narration reviewed; hypothetical arithmetic correct, not a market quote or investment recommendation.",
+    "Primary buyer workflow sources checked previous pass; no unsupported price or payment timing claim.",
+    "Both actual hero exports inspected, original legible topic diagrams. HTML source inspected; corrected escaped raw HTML before approval.",
+    "Production QA passes; parser and narration duration preflight pass. Actual reel release separate.",
+    "October 14 owner repair: reread current article, rendered article text, saved primary-source record, and all companion narration. Aligned displayed, spoken, data, and caption question; ending is a topic-specific identity question with no post-question summary. Parser and engagement policy pass; narration estimate 99.7s. Changed speech requires a new render before distribution."
+  ],
+  "artifactSha256": {
+    "verified.md": "d83ac773fceed1f701c7342e97900a97e6021fb351a0aecac04281324ba06ef7",
+    "index.html": "d3d861f3ed2d13f767d076b7d42fb7440f425e1475fd6206b90fe517024493b7",
+    "meta.json": "c869aaf390347c9026e97af7bac4789725198d40a8bfd71df527db5ba0f34f62",
+    "research.json": "9e22036d208e472a01219b0e6f459d7581b4c5fe39cf1a7dedaf259b249bbfd3",
+    "hero.jpg": "bfa499a88c42244ae7f4f0cde438c25bb90de116ea7698cfa3f1f4be1393c8bd",
+    "photo-post.jpg": "b741c33d63a194f8a872f2ab878ad6babd46eefd39ed68f3c2c60301f4421e21",
+    "reel-script.md": "517bfb1f858fc9aa5eb1e3e370e8ddf39972afc32656eccebfa3b3a31e539801",
+    "reel-data.md": "e78166ced57e4f3187df04f99dd47daab3db920073abf299b7fc8559ec75e40a",
+    "social-copy.json": "fce87d661a1120b0d17606a900b56cfd074199f9ae57ac4c995140d1fb01525c"
+  }
+}

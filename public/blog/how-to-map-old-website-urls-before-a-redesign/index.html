@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Old Website URLs Before a Redesign | Fused Technology Solutions</title>
+    <meta name="description" content="Prepare a practical URL map for a website redesign. Inventory old addresses, choose relevant destinations, test redirects and record unresolved launch issues." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-09-24T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/" />
+    <meta property="og:title" content="Map Old Website URLs Before a Redesign" />
+    <meta property="og:description" content="Map old URLs to relevant new pages and document the redirect tests." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Map Old Website URLs Before a Redesign",
+      "description": "Prepare a practical URL map for a website redesign. Inventory old addresses, choose relevant destinations, test redirects and record unresolved launch issues.",
+      "url": "https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/",
+      "datePublished": "2026-09-24",
+      "dateModified": "2026-09-24",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/",
+        "sameAs": [
+          "https://www.facebook.com/fuseddistribution",
+          "https://www.instagram.com/fuseddistribution"
+        ],
+        "knowsAbout": ["silver investing", "precious metals", "web design", "local business marketing", "inflation hedging"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
+      },
+      "image": "https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/hero.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/how-to-map-old-website-urls-before-a-redesign/" }
+    }
+    </script>
+    <style>
+:root {
+  --bg: #07131a;
+  --panel: rgba(11, 24, 32, 0.82);
+  --line: rgba(87, 219, 255, 0.16);
+  --text: #ecf8fb;
+  --muted: #afc6cf;
+  --accent: #58d6ff;
+  --accent-2: #4dffb8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+    linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background:
+    linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+    repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+  pointer-events: none;
+}
+a { color: inherit; text-decoration: none; }
+.shell {
+  width: min(1220px, calc(100% - 32px)); margin: 18px auto 40px;
+  border-radius: 28px; overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42); position: relative;
+}
+.shell::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+    radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+  pointer-events: none;
+}
+.topbar, .main, .footer { position: relative; z-index: 1; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 30px; background: rgba(7, 16, 22, 0.92);
+  backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.brand { display: flex; flex-direction: column; line-height: 1; }
+.brand-mark {
+  color: var(--accent); font-size: 1.95rem; font-weight: 900;
+  letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+}
+.brand-sub {
+  margin-top: 4px; color: rgba(236, 248, 251, 0.72); font-size: 0.75rem;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-pages {
+  padding: 8px 10px; border-radius: 999px;
+  border: 1px solid rgba(88, 214, 255, 0.18); background: rgba(7, 15, 23, 0.56);
+}
+.nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-pages a { padding: 9px 14px; border-radius: 999px; }
+.nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+.nav-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 160px; padding: 12px 18px; border-radius: 14px;
+  border: 1px solid rgba(88, 214, 255, 0.28); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+}
+.main { padding: 52px 54px 60px; }
+.article-wrap { max-width: 760px; margin: 0 auto; }
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 32px;
+}
+.back-link:hover { color: var(--accent); }
+.eyebrow {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+  font-size: 0.82rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.article-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 18px 0 24px; }
+.article-meta time { color: var(--muted); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pill {
+  padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(88, 214, 255, 0.18);
+  background: rgba(88, 214, 255, 0.08); color: rgba(236, 248, 251, 0.88);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+h1 {
+  margin: 0 0 4px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.05;
+}
+.article-hero { width: 100%; border-radius: 18px; overflow: hidden; margin: 28px 0 0; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-hero img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; }
+.article-hero figcaption { padding: 10px 14px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); background: rgba(7, 15, 23, 0.6); letter-spacing: 0.04em; }
+.article-hero figcaption a { color: rgba(175, 198, 207, 0.55); text-decoration: underline; }
+.article-photo { margin: 32px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: cover; object-position: center; }
+.article-photo figcaption { padding: 10px 16px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); letter-spacing: 0.04em; background: rgba(7, 16, 22, 0.6); }
+.article-divider { height: 1px; background: rgba(88, 214, 255, 0.12); margin: 32px 0; }
+.article-body { color: var(--muted); font-size: 1.08rem; line-height: 1.82; }
+.article-body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.55rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--text); margin: 40px 0 14px;
+}
+.article-body h3 { color: var(--text); font-size: 1.18rem; margin: 28px 0 10px; }
+.article-body p { margin: 0 0 20px; }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 20px; }
+.article-body li { margin-bottom: 8px; }
+.article-body strong { color: var(--text); }
+.article-body a { color: var(--accent); text-decoration: underline; }
+.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; overflow: hidden; }
+.chart-title { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-bottom: 18px; }
+.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+.stat-card { background: rgba(88, 214, 255, 0.04); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 14px; padding: 22px 18px; text-align: center; }
+.stat-card .stat-number { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2.4rem; letter-spacing: 0.03em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+.stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+.watch-list { display: flex; flex-direction: column; gap: 14px; margin: 32px 0; }
+.watch-list-item { padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.14); background: rgba(7, 20, 28, 0.74); }
+.watch-list-item strong { display: block; color: var(--accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.watch-list-item span { display: block; margin-top: 8px; color: var(--text); font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.social-video { margin: 42px 0 0; padding: 24px; border: 1px solid rgba(88, 214, 255, 0.2); border-radius: 20px; background: rgba(7, 20, 28, 0.74); }
+.social-video h2 { margin: 0 0 8px; color: var(--text); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.social-video > p { margin: 0 0 18px; color: var(--muted); }
+.social-video-player { position: relative; aspect-ratio: 9 / 16; width: min(100%, 360px); margin: 0 auto 20px; border-radius: 14px; overflow: hidden; background: #020608; }
+.social-video-player iframe, .social-video-player video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
+.social-video-pending { padding: 18px; border: 1px dashed rgba(88, 214, 255, 0.32); border-radius: 14px; color: var(--accent); text-align: center; font-weight: 800; letter-spacing: 0.04em; }
+.sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
+.sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
+.sources-block ol li { margin-bottom: 6px; }
+.sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+.faq-block { display: flex; flex-direction: column; gap: 12px; margin: 32px 0; }
+.faq-item { padding: 20px 24px; border-radius: 14px; border: 1px solid rgba(88, 214, 255, 0.12); background: rgba(7, 18, 26, 0.6); }
+.faq-q { font-weight: 700; color: var(--text); font-size: 1rem; margin-bottom: 8px; }
+.faq-a { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+.article-cta { margin-top: 48px; padding: 28px; border-radius: 22px; border: 1px solid rgba(88, 214, 255, 0.2); background: rgba(88, 214, 255, 0.05); text-align: center; }
+.article-cta p { margin: 0 0 18px; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 16px; border: 1px solid transparent; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.btn-primary { color: #041117; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 34px rgba(88, 214, 255, 0.18); }
+.footer { padding: 24px 28px 34px; color: rgba(175, 198, 207, 0.74); text-align: center; font-size: 0.92rem; }
+.nav-item { position: relative; }
+.nav-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px; border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; letter-spacing: 0.04em; color: rgba(239, 252, 255, 0.9); transition: color 0.15s; }
+.nav-toggle:hover, .nav-toggle:focus-visible, .nav-toggle.active, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+.nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+.nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+.nav-dropdown { display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(8, 16, 24, 0.97); backdrop-filter: blur(20px); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55); z-index: 200; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s; }
+.nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s; opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.nav-dropdown a { padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em; color: rgba(220, 240, 248, 0.78); transition: background 0.12s, color 0.12s; }
+.nav-dropdown a:hover, .nav-dropdown a:focus-visible, .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+.nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+@media (max-width: 1080px) { .topbar { flex-direction: column; align-items: flex-start; } .main { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 900px) { .nav-dropdown { left: 0; transform: translateY(-6px); } .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); } }
+@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] > [aria-hidden="true"] { transform: rotate(90deg); } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Websites &middot; Small Business</div>
+
+          <h1>Map Old Website URLs Before a Redesign</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-09-24">September 24, 2026</time>
+            <span class="pill">Websites</span>
+            <span class="pill">Small Business</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="hero.jpg" alt="A map of old website URLs" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+            <p>Before you redesign a business website, make a list of its existing page addresses and give each one an explicit destination. This URL map connects the pages people already use with the pages you plan to launch. It helps your developer preserve useful routes, identify content that still needs a home, and test the change before customers encounter a dead end. A new design does not automatically preserve old links, and a redirect does not guarantee that search traffic will stay the same.</p>
+            <div class="watch-list" role="img" aria-label="What this guide covers: Collect the old website URLs from several places; Choose a relevant destination for each old URL; Build a URL map your developer can implement">
+              <div class="watch-list-item">
+                <strong>CHECK 01</strong>
+                <span>Collect the old website URLs from several places</span>
+              </div>
+              <div class="watch-list-item">
+                <strong>CHECK 02</strong>
+                <span>Choose a relevant destination for each old URL</span>
+              </div>
+              <div class="watch-list-item">
+                <strong>CHECK 03</strong>
+                <span>Build a URL map your developer can implement</span>
+              </div>
+            </div>
+            <!-- SOCIAL_VIDEO_START -->
+<style>.social-video{margin:24px 0;padding:24px;border:1px solid rgba(88,214,255,.25);border-radius:16px}.social-video-player{position:relative;aspect-ratio:9/16;width:min(100%,360px);margin:16px auto;background:#020608;border-radius:14px;overflow:hidden}.social-video-player iframe,.social-video-player video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain}</style><aside class="social-video" aria-label="Companion video"><h2>Watch the reel</h2><p>Watch the companion video, then use the guide below.</p><div class="social-video-player"><iframe src="https://www.youtube-nocookie.com/embed/2NLT7j4W1o4?rel=0&amp;playsinline=1" title="Map Old Website URLs Before a Redesign on YouTube" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div></aside>
+<!-- SOCIAL_VIDEO_END -->
+            <h2>Collect the old website URLs from several places</h2>
+            <p>Start with the current website, not the proposed navigation. Record the full address of each service page, location page, article, booking entry point, contact page, and downloadable file that your business intends to keep available. A menu is a useful starting point, but it is not a complete inventory. A page can receive visits through an old email or a search result without appearing in the main navigation.</p>
+            <p>Ask the person managing the site for an export of its published pages and its current sitemap. Compare that list with any available analytics and Search Console information. Those sources serve different purposes. The page export describes the content your system knows about. A sitemap lists addresses you have chosen to submit for discovery. Usage and search reports can help identify addresses that visitors actually reach. None of these sources should be treated as a complete replacement for the others.</p>
+            <p>Include addresses printed on signs, linked from business profiles, and used in appointment reminders. Check the booking provider and any separate ordering system before assuming that a link belongs to your website. Your developer may control the page that contains the link without controlling its destination. Record that distinction so an external service is not accidentally included in a redirect plan your hosting system cannot perform.</p>
+            <p>Keep the original inventory as a dated file. Work from a copy when assigning new destinations. This gives you a reference for launch testing and prevents an address from disappearing merely because someone removed a row while reorganizing the new website.</p>
+            <h2>Choose a relevant destination for each old URL</h2>
+            <p>For each address, decide whether it will stay the same, move to another address, merge into a broader page, or disappear. Write the decision in its own column. If the redesign also changes page content, use the <a href="/blog/how-to-review-website-changes-before-they-go-live/">website review checklist</a> to record what needs to work before the move. An unchanged address still deserves a row because you need to check that it continues to serve the right content after launch. Do not assume that retaining a page title also retains its address; content systems can generate new slugs during a migration.</p>
+            <p>When a page moves, choose the destination by the visitor&#39;s intent. An old brake repair page should lead to relevant brake repair information, not simply the homepage. If two older pages are being combined, inspect the proposed replacement and confirm that it actually answers the needs of both audiences. A broad category page may be appropriate in some cases, but its existence alone does not make it a useful replacement.</p>
+            <p>Google&#39;s site move guidance advises against redirecting many old URLs to an irrelevant destination such as the homepage. It also explains that pages intentionally removed without a similar replacement can return a not found response. Have your developer implement the appropriate response for the decision you made. Keeping every old address alive through an unrelated redirect can confuse visitors and make the map harder to review.</p>
+            <p>Use notes to explain decisions that might otherwise look arbitrary. For example, record that an old seasonal service is no longer offered, or that its useful instructions have been incorporated into a current service page. The map should capture an intentional content decision rather than becoming a mechanical exercise in assigning any available destination.</p>
+            <h2>Build a URL map your developer can implement</h2>
+            <p>Use one row per old address and keep the columns straightforward: old URL, current page purpose, planned new URL, decision, person responsible, and test result. Add a notes column for special cases. If the site is changing domains, use complete URLs so the old and new hostnames are visible. A list containing only path fragments can hide a mistake involving the domain or protocol.</p>
+            <p>Agree on which version of an address the site should use. Your developer should account for relevant variations, such as an old hostname or an address with a trailing slash, within the site&#39;s routing rules. Do not guess at those rules in the spreadsheet. Record the observed address and let the developer explain how requests for its variations will be handled. A link that works on your laptop is not proof that every historical form of that link works.</p>
+            <p>Separate implementation from approval. A row marked ready means that the business has chosen a destination; it should not also mean that the redirect has been installed and tested. Distinct fields for the planned decision and the observed result make it harder to mistake an intention for completed work. Assign one person to resolve uncertain rows before launch rather than leaving conflicting comments across several copies of the file.</p>
+            <p>Keep private customer information out of the map. If an exported address includes an appointment token, customer identifier, or other sensitive value, ask your developer how to represent its routing pattern safely. Public page routes are useful migration evidence; private access links should not become a shared planning document by accident.</p>
+            <h2>Test the old address and the final page</h2>
+            <p>Once the routing changes are available for testing, open the old address and check where it ends. Confirm that the destination is the one approved in the map, that the page loads successfully, and that its actual content matches the intended service. Looking only at a successful response code can miss a redirect to the wrong page. Looking only at the page design can miss an unnecessary chain of redirects.</p>
+            <p>Ask your developer to test the HTTP responses as well as the visible result. For permanently moved pages, Google&#39;s guidance recommends permanent server redirects. Where possible, route an old address directly to its intended final destination rather than through a sequence of intermediate addresses. The response type and the destination are separate things to verify. A correct destination reached through an accidental temporary rule still needs attention.</p>
+            <p>Check important links on the replacement page, particularly contact, booking, telephone, and ordering links. A migration can preserve the service page while breaking the next step that a visitor needs. If a booking destination matters, follow the <a href="/blog/how-to-check-broken-booking-links-on-your-website/">booking link test steps</a> as part of the launch review. Include mobile checks because menus and call buttons may behave differently on a narrow screen. Test using the published addresses, not only a preview link that bypasses production routing.</p>
+            <p>Record the date, result, and any unresolved issue for each tested row. Keep failures visible until someone has corrected and retested them. If a page requires authentication, or a third party controls its destination, label that constraint rather than reporting it as a successful public check. This makes the launch decision depend on evidence that another person can understand.</p>
+            <h2>Update internal links and monitor after launch</h2>
+            <p>Redirects help people who still have old links, but your own website should point directly to the intended current addresses. Review navigation, service cards, article links, and calls to action after the new pages are published. Update the sitemap to reflect the current URLs, and have your developer check canonical declarations and indexing rules. These are related signals with different purposes; changing one does not automatically correct the others.</p>
+            <p>Google&#39;s site move guidance recommends monitoring both old and new URLs after a move. Review the available search and usage information for unexpected errors and changes, while allowing for the fact that search systems need time to process a migration. Avoid promising that a redesign will preserve every ranking or immediately increase traffic. The practical objective of the URL map is to make the transition intentional, testable, and easier to troubleshoot.</p>
+            <p>Keep the map after launch. It provides a useful reference when someone discovers an old link in a directory listing or a saved email. Add the address, decide whether it has a relevant replacement, and follow the same testing process. Your developer should also explain how long redirects will be maintained; Google recommends keeping redirects for site moves as long as possible, generally at least a year.</p>
+            <p>A useful handover includes the final map, the outstanding exceptions, and the person responsible for future routing changes. If you need help planning a business website redesign, <a href="/#contact">talk with Fused</a> about the existing pages, customer journeys, and links that need to keep working.</p>
+            <h2>Related</h2>
+            <ul>
+            <li><a href="/blog/how-to-review-website-changes-before-they-go-live/">Review website changes before they go live</a></li>
+            <li><a href="/blog/how-to-check-broken-booking-links-on-your-website/">Check broken booking links</a></li>
+            </ul>
+            <p>Read next: <a href="/blog/how-to-prepare-website-content-before-hiring-a-designer/">Prepare website content before hiring a designer</a></p>
+          </div>
+
+          <div class="article-cta">
+            <p>Plan a website redesign around the pages and customer paths your business needs.</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) { if (btn !== except) btn.setAttribute('aria-expanded', 'false'); });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(null); });
+        document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeAll(null); });
+      })();
+    </script>
+  </body>
+</html>

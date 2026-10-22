@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-check-contact-form-labels-on-your-website",
+  "title": "Check Contact Form Labels on Your Website",
+  "description": "Check Contact Form Labels on Your Website. Follow practical steps, keep a clear record of findings, and check the result again after changes.",
+  "ogDescription": "Check Contact Form Labels on Your Website",
+  "alt": "Business website practical review checklist diagram",
+  "brand": "tech",
+  "date": "2026-09-28",
+  "modifiedDate": "2026-09-28",
+  "tags": [
+    "Website",
+    "Accessibility"
+  ],
+  "ctaLine": "For contact forms, do you prefer minimalist fields or always-visible labels?",
+  "contentGraphic": {
+    "label": "Check Contact Form Labels on Your Website",
+    "rows": [
+      {
+        "condition": "Read empty fields",
+        "action": "Check associations"
+      },
+      {
+        "condition": "Review choices",
+        "action": "Check phone layout"
+      }
+    ]
+  }
+}

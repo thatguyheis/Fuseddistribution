@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-22T02:38:47.179357+00:00",
+  "status": "Complete staged package; production approval and deployment pending",
+  "articleWords": 947,
+  "draftSha256": "0b2de01ac2391e3acfcfd87ed41bfe2b5e7b878e0d43a894d657368a916cb9cc",
+  "remaining": [
+    "Register production package under publisher lock",
+    "Run local QA and inspect article preview",
+    "Record editorial artifact approval",
+    "Scoped deployment and live verification"
+  ],
+  "parser": {
+    "errors": [],
+    "warnings": []
+  },
+  "narration": {
+    "words": 318,
+    "estimatedSeconds": 99.7,
+    "preflightPass": true,
+    "actualDurationMeasured": false
+  },
+  "visualReview": "Both actual JPEG exports inspected; text legible, no clipping; original topic-specific diagrams",
+  "artifactHashes": {
+    "verified.md": "0b2de01ac2391e3acfcfd87ed41bfe2b5e7b878e0d43a894d657368a916cb9cc",
+    "meta.json": "9dac937ffb8bf1c70d95797bcdb62afef1303b9f84525abe944330c689bd8bdd",
+    "research.json": "9e22036d208e472a01219b0e6f459d7581b4c5fe39cf1a7dedaf259b249bbfd3",
+    "index.html": "e86f2ea3593d67fd96942e48324c58be4b98d3afc6a694ca173b48fa382c0360",
+    "hero.jpg": "bfa499a88c42244ae7f4f0cde438c25bb90de116ea7698cfa3f1f4be1393c8bd",
+    "photo-post.jpg": "b741c33d63a194f8a872f2ab878ad6babd46eefd39ed68f3c2c60301f4421e21",
+    "reel-script.md": "a8cdec5213627aab2cdb40564f139a06d7e7a412327dc902343e5ea50911dfdc",
+    "reel-data.md": "e275b0a4783631f0f4c4700368f7d16a20085410a37be5e1b49fd42d331e41d5",
+    "social-copy.json": "f094549549a0ec1c5755d4316beae620b27819bef9d95e01ffec4042589fbf3f"
+  }
+}

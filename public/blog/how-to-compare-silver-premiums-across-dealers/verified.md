@@ -4,7 +4,7 @@ Buying silver is exciting. You want the best deal, but comparing prices across d
 
 ## Understanding What Silver Premiums Actually Mean
 
-Silver premiums are not a single number. They vary widely based on what you buy. The type of silver matters greatly. Generic silver rounds have different premiums than specialized [coins](/blog/how-to-buy-silver-coins-at-spot-price/) or bars.
+Silver premiums are not a single number. They vary widely based on what you buy. The type of silver matters greatly. Generic silver rounds have different premiums than specialized coins or bars.
 
 For example, generic silver rounds might show a premium of 5 to 8 percent over the spot price. American Silver Eagles carry a much higher premium, ranging from 15 to 22 percent. This is because the US Mint adds a statutory premium on top of the melt value for authorized purchasers. Ten-ounce bars typically show a premium between 3 and 6 percent. Fractional coins, like one-tenth or one-quarter ounce pieces, often have premiums of 25 to 35 percent. This is because the cost to mint each small piece is high.
 
@@ -62,11 +62,11 @@ Dealer A is the clear winner. You know this because you compared the cost per ou
 
 ## What Hidden Costs to Include in Your Comparison
 
-Headline prices hide many expenses. Dealers often list a low base price. You must add everything else to get the real numbers. These hidden costs affect your final comparison.
+Headline prices hide many expenses. [Dealers](/blog/best-online-silver-dealers-in-2026/) often list a low base price. You must add everything else to get the real numbers. These hidden costs affect your final comparison.
 
 Shipping fees vary widely. Some dealers charge $0.0. Others charge $10 to $20 for a single transaction. Always ask for the final all-in total.
 
-Credit card surcharges are common. Many dealers add 3 to 4 percent to the total for using credit card payments. This is a cost you must factor. For more on this, see [Johnson Matthee Silver Bars Guide](/blog/johnson-matthee-silver-bars-guide/).
+Credit card surcharges are common. Many dealers add 3 to 4 percent to the total for using credit card payments. This is a cost you must factor.
 
 Insurance and handling fees. Some dealers charge for insurance or handling specific to the product type. These must be included in the total before you divide.
 
@@ -86,7 +86,7 @@ Ten-ounce bars show a premium between 3 and 6 percent. These are generally cheap
 
 Fractional coins, like one-tenth or one-quarter ounce pieces, show a premium of 25 to 35 percent. This is because the cost to mint each small piece is very high.
 
-These ranges show the difference in production costs. Understand this difference when choosing your investment.
+These ranges show the difference in production costs. Understand this difference when choosing your [investment](/blog/morgan-silver-dollars-as-investment/).
 
 ## Volume Tiers and Dealer Discounts
 
@@ -118,9 +118,9 @@ We offer Fused Reserve plans. These plans help you secure your silver at a favor
 
 ## Related
 
+- [Morgan Silver Dollars As Investment](/blog/morgan-silver-dollars-as-investment/)
+- [Best Online Silver Dealers In 2026](/blog/best-online-silver-dealers-in-2026/)
 - [How To Buy Silver Coins At Spot Price](/blog/how-to-buy-silver-coins-at-spot-price/)
-- [Johnson Matthee Silver Bars Guide](/blog/johnson-matthee-silver-bars-guide/)
-- [Silver Panda Coins From China: A Complete Guide](/blog/silver-panda-coins-from-china-complete-guide/)
 
-Read next: [How To Buy Silver Coins At Spot Price](/blog/how-to-buy-silver-coins-at-spot-price/)
+Read next: [Morgan Silver Dollars As Investment](/blog/morgan-silver-dollars-as-investment/)
 

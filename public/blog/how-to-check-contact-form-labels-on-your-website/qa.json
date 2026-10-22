@@ -1,0 +1,26 @@
+{
+  "slug": "how-to-check-contact-form-labels-on-your-website",
+  "score": 90,
+  "pass": true,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-01T19:35:31.198928+00:00",
+  "review_notes": [
+    "Reviewed original practical checklist against its primary guidance; no invented measured outcomes, grading promises or compliance certification.",
+    "Inspected all landscape and square exported graphics. Clear topic-specific steps, no clipped text.",
+    "Local QA, production parser and narration estimate pass. Actual audio/video release requires separate review.",
+    "Publication September 28; original planned date retained for recovery accounting.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "ef3d60a45f738e9c46ee06a14895d0bc88f13158ef97987ee78e033d60d8153a",
+    "index.html": "a84732222ce860c036afedee7a8bd933a8c1b97aba6de88b620c74fec4cac840",
+    "meta.json": "e21db6a60fa0e97083e6d5ec0571b6cc32e5111abdbbf3cc8ebdc534dd91f526",
+    "research.json": "dd3574db8b88eeb0602aa60a66d33f897fca2f425282b30dc7f0a4718b5b8d17",
+    "hero.jpg": "5f99b9bc98e1f933e12a259fd7cdd613cd5c32e87278bd6210ef677bcb2717e6",
+    "photo-post.jpg": "bb024a5bcf721816774e8a62778b983cc996d73f4f043d97229f6f7ee67e9424",
+    "reel-script.md": "72b2dd6121ce508917bf45ec7ff901930dd0f4e71bd1d71724bcd4bd1940588d",
+    "reel-data.md": "27331f4e195d6df3455bcba2945232f2e96aeb4c6367cf24bfcfb886c3af049a",
+    "social-copy.json": "66ab765984e3283d01afcf515fffa90aeba2def260b9acb29619dbb5a350a4e9"
+  }
+}

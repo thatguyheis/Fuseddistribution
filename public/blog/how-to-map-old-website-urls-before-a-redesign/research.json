@@ -1,0 +1,17 @@
+{
+  "slug": "how-to-map-old-website-urls-before-a-redesign",
+  "stats": [],
+  "sources": [
+    {
+      "title": "Google Search Central: Site Moves and Migrations",
+      "source_url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "claims": [
+        "Prepare a URL mapping from current addresses to new ones; identify URLs using sitemaps, analytics, server logs or the content system.",
+        "Google recommends relevant server-side permanent redirects when possible, avoiding chains and irrelevant redirects, checking redirects and canonical annotations, updating sitemaps, and retaining redirects generally at least one year.",
+        "Search visibility can fluctuate during a move; no ranking retention or improvement is promised."
+      ]
+    }
+  ],
+  "reviewedDate": "2026-09-24",
+  "status": "Google primary guidance checked September24; practical mapping worksheet advice is editorial process guidance and makes no traffic or ranking promise."
+}

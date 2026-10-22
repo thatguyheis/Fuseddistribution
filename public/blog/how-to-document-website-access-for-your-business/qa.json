@@ -1,0 +1,38 @@
+{
+  "slug": "how-to-document-website-access-for-your-business",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-21T17:38:04.088797+00:00",
+  "review_notes": [
+    "Reviewed the full article and topic-specific companions. Checked current primary Google Business Profile and Search Console sources on September 21. No numerical ranking claims.",
+    "Inspected hero.jpg and photo-post.jpg: legible and uncropped. Improved overlay labels, restored all four handoff questions, and named Search Console explicitly in narration.",
+    "Production parser, reel validator and deterministic local QA pass after adjusting narration windows to 118 seconds. This is an estimate, not measured speech or manual listening.",
+    "Live catalog has 319 articles and excludes this slug. Corrected the publication date to September 21 and preserved the earlier staged baseline catalog before removing its never-published entry.",
+    "September21 renderer normalization reviewed against deployed approved baseline: only surrounding whitespace removed from reel-script.md and reel-data.md. Narration and display text unchanged. Updated local review hashes; no article redeployment needed.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "5c477283d29cb0a29220c6e68978b81b2600e0d279e2c79453a4e3ba68608987",
+    "index.html": "00fb3f99ba7dad2f204e23a83f26edc1c82175afe7756510b96cfcdd04a18264",
+    "meta.json": "b4d6383f5ae9192743b61e9ecbac9bdb2ad0298fc478c8460885336c4b114cbb",
+    "research.json": "de9f7396cfe581b2bdb4a2594127ac7c724e6b7a8dc68522b7e8d8f779197012",
+    "hero.jpg": "b91c106505dd04eedbb43d59e7eddac1c365e8eae02fdd55187fcd50d062e891",
+    "photo-post.jpg": "9d3a6633c2dc18eeb074091b2981e01daad4e81669026c196700e6196091c5f4",
+    "reel-script.md": "2ceffad27717167f54f029c9e5a519a234dcf6c06fba96aa522f04beb8d4ccd7",
+    "reel-data.md": "1ae882fa95f3974dce919a5eef66b85ec765d6258b098405eb05b8d678755887",
+    "social-copy.json": "5ecde667c0bff06e8f941ec30e25f57f08c89f264b69e1eefc7e1bf929bdacd4"
+  },
+  "artifact_sha256": {
+    "verified.md": "5c477283d29cb0a29220c6e68978b81b2600e0d279e2c79453a4e3ba68608987",
+    "index.html": "39a7fe5875007fb3a8206c9d3b9cbd9f541386288b05a2878a978dce6c7054c6",
+    "meta.json": "b4d6383f5ae9192743b61e9ecbac9bdb2ad0298fc478c8460885336c4b114cbb",
+    "research.json": "de9f7396cfe581b2bdb4a2594127ac7c724e6b7a8dc68522b7e8d8f779197012",
+    "hero.jpg": "b91c106505dd04eedbb43d59e7eddac1c365e8eae02fdd55187fcd50d062e891",
+    "photo-post.jpg": "9d3a6633c2dc18eeb074091b2981e01daad4e81669026c196700e6196091c5f4",
+    "reel-script.md": "2ceffad27717167f54f029c9e5a519a234dcf6c06fba96aa522f04beb8d4ccd7",
+    "reel-data.md": "1ae882fa95f3974dce919a5eef66b85ec765d6258b098405eb05b8d678755887",
+    "social-copy.json": "5ecde667c0bff06e8f941ec30e25f57f08c89f264b69e1eefc7e1bf929bdacd4"
+  }
+}
