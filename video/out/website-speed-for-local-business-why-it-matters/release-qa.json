@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-03T18:25:15.490Z",
+  "generatedAt": "2026-08-26T14:15:16.477Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "website-speed-for-local-business-why-it-matters",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A one-second delay can cause a 7 percent drop in conversions"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A one-second delay can cause a 7 percent drop in conversions"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "that’s a huge impact for local businesses."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re a busy small business owner, juggling a million things - marketing, sales, customer service"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "” The short answer is: absolutely, yes."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Studies show that a one-second delay in page load time can lead to a 7 percent decrease in conversions."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Website Speed: The Silent Killer of Local Business Growth As a web designer and SEO specialist at Fused Distribution"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s not just about looking pretty; a slow website is actively hurting your bottom line."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "customers expect instant gratification - they want information and the ability to contact you immediately."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "But did you know that your website’s loading speed is a huge factor in how quickly those first impressions stick?"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Studies show that a slow website can drive potential customers away faster than you can say “bounce rate."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "” A sluggish site can frustrate visitors, leading them to click away to a competitor’s faster"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Studies show that a slow website can cause a drop in rankings of up to 40 percent"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A slow loading time directly impacts user experience."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "they’ll likely click away to a competitor’s faster site."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s frustrating, and it signals to visitors that your business isn’t professional or reliable."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "For more on this, see How To Automate Repetitive Business Tasks With Ai."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "we’ve seen firsthand how optimizing website speed can dramatically improve engagement and ultimately"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "And let’s be honest, most people aren’t going to stick around if your site is slow."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Studies show that a slow website can lead to a significant drop-off in visitors - up to 70 percent of people will abandon a site that takes more than 3 seconds to load."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This isn’t just about aesthetics; it’s about trust."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Google PageSpeed Insights is a fantastic starting point; it gives you a score and clear recommendations for improvement."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "which breaks down your website’s performance into detailed sections like loading speed, page size"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "These tests will highlight areas like large image files, too many plugins"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we understand that you don’t want to get bogged down in technical details."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Simple things like compressing images, leveraging browser caching"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Let’s work together to ensure your website loads quickly, keeps visitors engaged, and ultimately"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Plus, our SEO services work hand-in-hand with speed optimization"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "helping you rank higher in local search results and attract more customers who are ready to buy."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let's work together to give your business the online presence it deserves!"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, how much could a faster website actually boost your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, how much could a faster website actually boost your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

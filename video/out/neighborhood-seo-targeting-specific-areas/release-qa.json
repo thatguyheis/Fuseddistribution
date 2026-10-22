@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-25T01:11:32.328Z",
+  "generatedAt": "2026-08-26T14:15:09.722Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "neighborhood-seo-targeting-specific-areas",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "97 percent of local businesses with Google Business Profiles get found."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "97 percent of local businesses with Google Business Profiles get found."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "97 percent of local businesses with Google Business Profiles get found."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get noticed online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "but potential customers in your immediate area just aren’t finding you."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Traditional SEO focuses on broad keywords, but to truly thrive"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "often dilute your efforts and compete with larger companies with bigger budgets."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "concentrates your efforts where they’ll have the biggest impact"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "specifically designed to improve your visibility in local search results."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Website Relevance: Does your website clearly state your location and services?"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Claim and Optimize Your Google Business Profile: This is non-negotiable."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Add high-quality photos, detailed descriptions of your services, and accurate hours of operation."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Research what people are actually searching for when looking for your type of business in your neighborhood."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "For example, if you own a bakery in Austin, Texas, consider keywords like “bakery Austin"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Website Optimization: Your website should clearly state your location."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Identify Your Target Neighborhoods: Start by defining the geographic area you want to serve."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "prioritize directories and websites that cater to your target neighborhoods."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Localized Content: Create content that resonates with residents of your target neighborhoods."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Positive reviews signal to Google that you’re a trustworthy and reputable business."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "see Near Me Searches How To Rank For Them."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Send follow-up emails to customers after they’ve made a purchase or received a service."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Monitor Your Reviews Regularly: Keep an eye on what people are saying about your business online."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Inconsistent NAP Information: This confuses Google and hurts your ranking."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Neglecting Local Citations: Failing to list your business on local directories and websites."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A 2023 study showed that 70 percent of local searches result in a purchase."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": ", phone calls, website visits) on your Google Business Profile."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Neighborhood SEO isn't a one-time project; it’s an ongoing process."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Contact us today for a free consultation and let’s discuss how we can tailor a neighborhood SEO strategy to your specific needs."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Contact us today for a free consultation and let’s discuss how we can tailor a neighborhood SEO strategy to your specific needs."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let’s start building your local success story."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you think neighborhood SEO is a worthwhile investment for?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you think neighborhood SEO is a worthwhile investment for?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

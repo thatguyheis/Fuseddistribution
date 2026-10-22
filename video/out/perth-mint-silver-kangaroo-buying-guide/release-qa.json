@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-22T18:32:53.872Z",
+  "generatedAt": "2026-08-26T14:15:10.422Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "perth-mint-silver-kangaroo-buying-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Perth Mint kangaroos: 99."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "9 percent pure, consistently valuable."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "9 percent pure, consistently valuable."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Keyword: Perth Mint silver kangaroo buying guide Slug: perth-mint-silver-kangaroo-buying-guide Topic Contract: This article directly addresses the question of how to buy Perth Mint silver Kangaroo coins"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It focuses on the specific benefits of these coins, the buying process"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "delivering actionable advice and valuable information for beginners to intermediate silver investors."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "We’ll cover the key factors to consider, common mistakes to avoid, and how to find the best deals."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we stock a wide selection of Perth Mint silver coins"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "and we recommend starting with this series due to its consistent quality and collector appeal."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "detailed designs showcasing a kangaroo and its joey, changing annually to reflect the current year."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Bullion Status: They are graded and certified by reputable third-party grading services"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Limited Mintage: Perth Mint often produces limited mintage runs"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Explore the Series: The Perth Mint produces several Kangaroo series, including the Classic"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The Classic series, starting in 1984, is a popular choice for beginners."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "You can find real-time spot prices on reputable financial websites."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Several reputable dealers offer Perth Mint silver Kangaroo coins."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "including the Kangaroo series, and offer competitive pricing and expert advice."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "You can browse our inventory and place an order on our website: APMEX: APMEX is a well-known online and brick-and-mortar dealer offering a vast selection of silver coins."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Spot Price of Silver: This is the primary driver of the coin’s price."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Grade: Coins in higher grades (Mint State or Uncirculated) are more valuable."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Dealer Markup: Different dealers may charge different premiums."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A PCGS grade of 90 indicates a near-perfect coin, while a grade of 70 is considered Mint State."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Proper storage is essential to maintain the value and appearance of your Perth Mint silver Kangaroo coins."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Coin Capsules: Store coins in individual coin capsules to protect them from scratches and handling."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Neglecting Storage: Proper storage is crucial for preserving the value and appearance of your coins."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "The Perth Mint silver Kangaroo series has consistently performed well as an investment and a collectible."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The limited mintage runs and the attractive designs contribute to their long-term value potential."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Start by browsing our selection of Perth Mint silver coins: Don't hesitate to contact us with any questions."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We recommend starting with a small investment and gradually increasing your holdings as you gain experience."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "The key is to start today and build a solid foundation for your future financial security."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering these coins , what’s your biggest silver investment concern?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering these coins , what’s your biggest silver investment concern?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

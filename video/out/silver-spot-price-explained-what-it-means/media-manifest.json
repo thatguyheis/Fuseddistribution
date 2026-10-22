@@ -2,75 +2,74 @@
   "version": 1,
   "segments": {
     "0": {
-      "key": "{\"query\":\"silver spot price explained what it means\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "key": "{\"query\":\"silver spot quote\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
       "source": "local-photo",
-      "query": "silver spot price explained what it means",
+      "query": "silver spot quote",
       "prefer": "video",
-      "updatedAt": "2026-08-04T21:51:33.408Z"
+      "updatedAt": "2026-09-21T22:00:39.227Z"
     },
     "1": {
-      "key": "{\"query\":\"silver spot price explained what it means silver spot price\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "local-photo",
-      "query": "silver spot price explained what it means silver spot price",
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-general\",\"tags\":[\"silver\",\"silver-general\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-3dff94c9886bb149",
+      "topic": "silver",
+      "sceneId": "silver-general",
+      "tags": [
+        "silver",
+        "silver-general"
+      ],
+      "sha256": "3dff94c9886bb14954f14d2f0219235ad8c79b205749b2ae75ac6fe2a808027d",
+      "sourceSlug": "silver-and-the-bretton-woods-collapse-explained",
+      "status": "approved-background-only",
+      "query": "identify quote silver",
       "prefer": "photo",
-      "updatedAt": "2026-08-04T21:51:33.476Z"
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/silver-spot-price-explained-what-it-means/segment-1.jpg",
+      "updatedAt": "2026-09-21T22:00:39.336Z"
     },
     "2": {
-      "key": "{\"query\":\"silver spot price explained what it means 5 000 ounce\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "key": "{\"query\":\"separate daily benchmark\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver spot price explained what it means 5 000 ounce",
-      "prefer": "photo",
-      "updatedAt": "2026-08-04T21:51:33.477Z"
+      "query": "separate daily benchmark",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.338Z"
     },
     "3": {
-      "key": "{\"query\":\"silver spot price explained what it means spot is usually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "silver spot price explained what it means spot is usually",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-04T21:51:34.697Z"
+      "key": "{\"query\":\"buying selling silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "buying selling silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.339Z"
     },
     "4": {
-      "key": "{\"query\":\"silver spot price explained what it means the spread between\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "silver spot price explained what it means the spread between",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-04T21:51:35.332Z"
+      "key": "{\"query\":\"calculate matching units\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "calculate matching units",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.340Z"
     },
     "5": {
-      "key": "{\"query\":\"silver spot price explained what it means six years in\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "silver spot price explained what it means six years in",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-04T21:51:36.258Z"
+      "key": "{\"query\":\"delivery costs silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "delivery costs silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.340Z"
     },
     "6": {
-      "key": "{\"query\":\"silver spot price explained what it means 14 947 tonnes\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "silver spot price explained what it means 14 947 tonnes",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-04T21:51:36.872Z"
+      "key": "{\"query\":\"resale terms silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "resale terms silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.341Z"
     },
     "7": {
-      "key": "{\"query\":\"silver spot price explained what it means 10 ounce bar\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "silver spot price explained what it means 10 ounce bar",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-04T21:51:37.639Z"
+      "key": "{\"query\":\"Which cost check after silver\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "Which cost check after silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-21T22:00:39.341Z"
     },
     "8": {
       "key": "{\"query\":\"silver spot price explained what it means we are happy\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
@@ -92,5 +91,6 @@
       ],
       "updatedAt": "2026-08-04T21:51:38.998Z"
     }
-  }
+  },
+  "generativeCandidates": {}
 }

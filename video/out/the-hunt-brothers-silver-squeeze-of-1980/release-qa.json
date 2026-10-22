@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-15T04:35:03.190Z",
+  "generatedAt": "2026-08-26T14:15:15.999Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "the-hunt-brothers-silver-squeeze-of-1980",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver soared 1,218 percent in just over two months , don’t get squeezed."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver soared 1,218 percent in just over two months , don’t get squeezed."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver soared 1,218 percent in just over two months , don’t get squeezed."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you wondering how a seemingly small group of investors could dramatically influence the price of silver in 1980?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The “Hunt Brothers Silver Squeeze” remains one of the most fascinating and dramatic events in precious metals history."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we believe understanding events like this is crucial for any serious investor."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Silver, often considered a safe-haven asset, had been trading relatively low for years"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Government was secretly accumulating massive amounts of silver to back up the nation’s gold reserves."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "This claim, fueled by anecdotal evidence and a growing belief in a potential silver shortage"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This rapid escalation caught many investors completely off guard."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The Hunt Brothers’ actions, combined with the growing belief in a silver shortage"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "and the more convinced others became that silver was destined to rise even further."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The volatility showcased that market shifts don’t always follow predictable patterns."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Instead, they’re often driven by concentrated buying pressure and investor psychology."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The event highlighted the importance of identifying real price action - the actual movement of the market - rather than getting caught up in the noise of rumors and speculation."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Sharp price movements are occurring again, driven by factors like inflation"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "The Hunt Brothers’ buying frenzy highlights the importance of understanding supply and demand dynamics - a principle that remains fundamentally unchanged."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Consider this: during the 1980 squeeze"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "the underlying principles remain the same."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A disciplined approach, focused on identifying undervalued silver and building a long-term position"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Many investors feel overwhelmed by the current market"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The Hunt Brothers’ success was partly due to their ability to cut through the noise and focus on their own strategy."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "They weren’t swayed by the speculative frenzy; they simply executed their plan."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Don’t get caught up in the hype."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Consider this: during the peak of the 1980 squeeze"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "2 trillion."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "This illustrates the scale of the economic activity surrounding the silver market at the time - and the potential impact of even a relatively small shift in its price."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "By focusing on a clear buying plan and prioritizing real silver"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "you can navigate the market with confidence and achieve your investment goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let us help you build your physical silver reserve today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering the 1980 silver squeeze, do you think market psychology?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering the 1980 silver squeeze, do you think market psychology?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

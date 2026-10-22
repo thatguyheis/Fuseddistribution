@@ -1,20 +1,60 @@
 {
   "slug": "solar-panel-silver-demand-impact-on-price",
-  "renderedAt": "2026-07-01T21:06:20.788Z",
+  "productionMeasurement": {
+    "wallSeconds": 3796.131379583,
+    "nodePeakRssKiB": 61552,
+    "memoryScope": "Node renderer only; excludes child processes and GPU memory"
+  },
+  "renderedAt": "2026-09-18T00:07:35.054Z",
   "hookType": "statement",
-  "segmentCount": 10,
-  "scriptDuration": 187,
-  "renderedDuration": 182.122667,
-  "scriptHash": "6fef36d58d527345936bdda7dc1d4c4ac615a6417ebb11438306b6e439b64e9a",
+  "segmentCount": 8,
+  "scriptDuration": 137.212,
+  "renderedDuration": 133.461333,
+  "scriptHash": "a18e86bb568b7964bd11e86d8b7e62daec867b1f87ddbd1d994201b99175dae8",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "ambient-04.mp3",
-  "photosUsed": 10,
-  "mediaUsed": 10,
-  "photoCount": 10,
+  "musicTrack": "mixkit-vastness-184.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -13.5,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.05970765237835921
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 4.16,
+      "1": 21.64,
+      "2": 22.88,
+      "3": 21.96,
+      "4": 20.32,
+      "5": 18.42,
+      "6": 17.5,
+      "7": 4.6
+    },
+    "totalNarrationSeconds": 131.48
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/vastness-184/"
+  },
+  "photosUsed": 8,
+  "mediaUsed": 8,
+  "photoCount": 8,
   "videoCount": 0,
   "mediaSources": {
-    "local-photo": 3,
-    "pixabay-photo": 7
-  }
+    "local-photo": 7,
+    "fused-generated-background-library": 1
+  },
+  "storyboardRoute": "storyboard-production",
+  "paperCollageSegments": [
+    0,
+    5
+  ]
 }

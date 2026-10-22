@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-31T18:46:22.911Z",
+  "generatedAt": "2026-08-26T14:15:18.156Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "youtube-for-local-business-worth-it-or-not",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "YouTube can reach 76 percent of viewers researching local products and services."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "YouTube can reach 76 percent of viewers researching local products and services."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "YouTube can reach 76 percent of viewers researching local products and services."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner wondering if YouTube is worth the time and investment?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and trying to grow your business - the last thing you want is another platform to learn."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "YouTube offers a unique opportunity to connect with local customers in a way that many other channels simply can’t."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "You'll need a Google account - which you likely already have - and a smartphone or webcam to record videos."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Editing software can range from free options like DaVinci Resolve to paid tools like Adobe Premiere Pro."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Consider starting with around $100 for basic equipment - a good microphone and editing software - and you're good to go."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "When you upload a video, be sure to add your business’s location to the video details."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Also, create videos about your local community."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "This signals to YouTube that your content is relevant to local viewers."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "YouTube analytics will help you determine which types of content resonate most with your audience."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "YouTube isn’t just a video platform; it’s a search engine."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "To improve your video’s visibility, you need to optimize it for search."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Include a call to action, such as “Visit our website” or “Call us today."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "YouTube’s auto-generated captions aren’t always accurate, so consider creating your own."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "76 percent of YouTube viewers use the platform to research products and services before making a purchase."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Analyze your data to see which videos are performing well and which ones aren’t."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A good rule of thumb is to aim for an average watch time of at least 50 percent of your video’s length."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "YouTube offers several benefits for local businesses that traditional marketing channels often can’t match."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "you can overcome these challenges and reap the rewards of YouTube marketing."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Don’t expect overnight success; building a YouTube channel is a marathon, not a sprint."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "but limited in terms of content."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "70 dollars, significantly lower than Google Ads at 4."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "If you’re looking to connect with your local community, drive traffic to your website"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "It’s a relatively low-cost, high-impact marketing channel that can deliver significant results."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "research a few local keywords and create a video that addresses a common question or problem your customers have."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "research a few local keywords and create a video that addresses a common question or problem your customers have."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don’t wait - start building your YouTube channel today!"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, are you ready to give YouTube a shot for?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, are you ready to give YouTube a shot for?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

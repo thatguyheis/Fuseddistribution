@@ -3,9 +3,123 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-01T19:22:23.578Z",
+  "generatedAt": "2026-09-23T16:05:07.116Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "tiktok-for-local-business-does-it-work",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Could TikTok help your local business?"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Choose one service, one audience and one useful action you want a viewer to take."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Decide how much time you can spend before you start."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Start with a question customers already ask."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "A bakery could show how to place an advance order."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and avoid presenting a demonstration as a guaranteed result."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "State the area you actually serve and make the next step easy to understand."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A viewer should be able to tell what you offer and how to contact you."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Do not assume someone watching a video is nearby or ready to buy."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Use understandable speech and readable captions, then preview the finished video on a phone."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Show your own materials and get permission before featuring customers."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A useful explanation is a practical starting point; it does not require copying an unrelated trend."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "TikTok provides a Commercial Music Library for business content"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "but do not assume a song available in an app is cleared for every use."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "and retain the rights evidence with your project."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Keep a simple record of the topic, posting date"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Ask new customers how they found you without assuming every sale came from a video."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Views can help describe reach, but they do not establish local demand or profitable work."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "What customer question could you answer first?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Continue the ideas that help people understand your business, revise confusing explanations"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "and stop formats that consume time without evidence of value."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

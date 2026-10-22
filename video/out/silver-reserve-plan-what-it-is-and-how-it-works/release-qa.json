@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:02.027Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:14.018Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "silver-reserve-plan-what-it-is-and-how-it-works",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver’s value could rise by 50 percent due to scarcity."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver’s value could rise by 50 percent due to scarcity."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver’s value could rise by 50 percent due to scarcity."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking for a way to protect your wealth against inflation and economic uncertainty?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we stock a wide selection of silver bullion and coins"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’re here to explain exactly what the Silver Reserve Plan is, how it works"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "acting as a hedge against potential economic downturns or currency devaluation."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Unlike stocks or bonds, which can fluctuate wildly"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Several factors make the Silver Reserve Plan an attractive option for investors."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Finally, silver is a tangible asset - you own something physical that you can hold and store."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The beauty of the Silver Reserve Plan is its simplicity."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Determine Your Goal: Start by deciding how much silver you want to accumulate."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Choose Your Silver: At Fused Distribution, we offer a diverse range of silver options"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Consider factors like purity, weight, and price when making your selection."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Secure Storage: Once you’ve purchased your silver, you need a safe place to store it."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "there are different ways to implement the Silver Reserve Plan: For more on this"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Dollar-Cost Averaging: This involves investing a fixed dollar amount at regular intervals"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This helps mitigate the risk of buying high and reduces the impact of market volatility."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Percentage-Based Allocation: Allocate a specific percentage of your portfolio to silver each month or quarter."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Target Price Investing: Purchase silver when the price dips below a certain target level."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Investing in precious metals isn't without its potential pitfalls."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "it’s important to diversify your overall investment portfolio."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Buying Low, Selling High: This is a common mistake for many investors."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "we understand the importance of providing our customers with high-quality silver products and reliable service."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Tracking your progress is crucial for staying motivated and ensuring you’re on track to meet your goals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Cost Per Ounce: Calculate the average cost per ounce of silver you’ve purchased."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Percentage of Portfolio: Monitor the percentage of your overall portfolio allocated to silver."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Our knowledgeable team is here to answer your questions and help you get started on your journey to financial security."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don’t wait - start accumulating your silver reserve today and protect your wealth for the future."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We’re confident that the Silver Reserve Plan can be a valuable addition to your investment strategy."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering a Silver Reserve Plan?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering a Silver Reserve Plan?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

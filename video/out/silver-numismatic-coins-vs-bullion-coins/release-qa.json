@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-17T20:33:14.064Z",
+  "generatedAt": "2026-08-26T14:15:13.232Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-numismatic-coins-vs-bullion-coins",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Before you buy silver, calculate the real cost per ounce."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Numismatic coins and bullion bars are not the same investment."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Numismatic coins and bullion bars are not the same investment."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "The 2025-W Uncirculated American Silver Eagle debuted at $91"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It sold 71,621 units in its first week according to USA Mint sales data via CoinNews."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and every dollar above spot is the premium you pay for collectibility."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Numismatic coins are priced on rarity, grade, and collector demand, not just the metal inside them."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A coin graded MS70 can trade for multiples of its melt value."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "That premium is real money you may never recover if collector demand shifts."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A 10 oz silver bar typically carries one of the lowest premiums over spot of any silver product."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "You get more silver per dollar spent compared to buying individual coins."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "For investors focused purely on metal weight, bars are the efficient choice."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Global silver coin and bar demand fell 22 percent in 2024, hitting a five-year low of 190."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "That is a significant pullback from investors who had been buying aggressively in prior years."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Softer demand can pressure premiums down, which may actually benefit new buyers entering the market."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "USA physical silver investment demand dropped 46 percent in 2024"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "That means American buyers pulled back harder than anywhere else."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "or competition from paper silver products remains an open question for investors to watch."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Silver bar and coin demand was forecast to fall another 4 percent in 2025"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Consecutive years of declining retail demand are a meaningful signal."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "but it does affect premiums and resale liquidity."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Standard bullion coins like the American Silver Eagle or Canadian Maple Leaf trade at a modest premium to spot and are easy to sell to dealers worldwide."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Standard bullion coins like the American Silver Eagle or Canadian Maple Leaf trade at a modest premium to spot and are easy to sell to dealers worldwide."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "That predictability is worth a lot in a volatile market."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Numismatic value is harder to predict because it depends on grading, population reports"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A coin graded by PCGS or NGC commands more than the same coin in a plain flip."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "But grading costs money, and the collector market can cool faster than the metal market."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Bullion bars and standard coins sell quickly to any dealer or online marketplace at transparent prices."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Numismatic coins require the right buyer willing to pay the premium you paid or more."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "If you need to sell fast, bullion wins on speed and price certainty every time."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "WHICH PATH MAKES YOUR SILVER INVESTMENT SMARTEST?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "WHICH PATH MAKES YOUR SILVER INVESTMENT SMARTEST?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

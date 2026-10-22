@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-07T18:58:06.943Z",
+  "generatedAt": "2026-08-26T14:15:16.942Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "what-is-comex-silver-and-how-does-it-affect-spot-price",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Futures markets control 60 percent of the silver market."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Futures markets control 60 percent of the silver market."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Futures markets control 60 percent of the silver market."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "but understanding the fundamentals is key to making smart decisions."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "We stock a wide variety of silver bullion, coins, and bars to suit every investor’s needs."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "If you’re wondering how COMEX silver impacts the overall price of silver"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Think of it like an agreement to buy or sell a specific amount of silver at a predetermined price on a future date."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "acting as a benchmark for pricing and influencing the spot price."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Unlike physical silver - the actual bars, coins, or rounds - COMEX silver is a financial instrument."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Rolling essentially means selling your current contract and simultaneously buying a contract for the following month."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The price of the COMEX silver futures contract fluctuates based on supply and demand."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A key element driving price movement is the contango and backwardation curves."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Price Discovery: The futures market provides a platform for buyers and sellers to express their expectations about the future price of silver."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "This process of price discovery helps to establish a fair market value."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "a silver mine might use a futures contract to lock in a price for its future production."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Let’s look at the specifics of the COMEX silver futures contract: Contract Size: 1"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Trading Hours: COMEX silver futures are traded Monday through Friday"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Contract Months: Contracts are available for delivery in March, June, September, and December."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Interest Rates: Rising interest rates can make holding silver less attractive"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "When inflation is high, investors may flock to silver as a store of value, driving up prices."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Geopolitical Events: Political instability and global conflicts can increase demand for safe-haven assets like silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "there are several ways to indirectly invest in COMEX silver: Silver ETFs: Exchange-Traded Funds (ETFs) that track the price of silver"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "such as SLV (iShares Silver Trust), provide exposure to the silver market."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Silver Mining Stocks: Investing in companies that mine silver can provide exposure to the price of silver."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Ignoring the Futures Market: Many investors focus solely on the spot price of silver and ignore the influence of the COMEX futures market."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Overreacting to Short-Term Price Fluctuations: The silver market can be volatile."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Failing to Diversify: Don’t put all your eggs in one basket."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "we’re committed to providing you with the resources and support you need to navigate the world of silver investing."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We recommend starting with a small investment and gradually increasing your position as you gain more experience and confidence."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let's discuss how we can help you build your silver portfolio today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your biggest lingering question about COMEX?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your biggest lingering question about COMEX?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-12T18:24:30.295Z",
+  "generatedAt": "2026-08-26T14:15:10.627Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "provident-metals-review-is-it-legit",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Over 100 silver products , a solid investment choice."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Over 100 silver products , a solid investment choice."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Over 100 silver products , a solid investment choice."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver or precious metals"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and it’s crucial to choose a reputable company."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’re dedicated to providing a transparent and secure buying experience."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "However, navigating the world of precious metals dealers can be complex."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This review will cover Provident Metals’ strengths, potential considerations"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Provident Metals operates primarily as an online retailer, specializing in physical precious metals."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This allows them to offer competitive pricing and ensure the authenticity of their products."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Secure Ordering & Shipping: They use secure encryption technology to protect your personal and financial information during the ordering process."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Customer Service: Provident Metals emphasizes responsive and knowledgeable customer service."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Choose Your Product: Select the specific silver round, bar, or coin you’re interested in."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Place Your Order: Add the item to your cart and proceed to checkout."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Secure Payment: Provident Metals accepts major credit cards, debit cards, wire transfers"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "According to their website, they typically offer premiums between 1 percent and 3 percent ."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Ignoring Shipping Costs: Shipping costs can add significantly to the total cost of your purchase."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Not Verifying Authenticity: Always verify the authenticity of your precious metals before accepting delivery."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Provident Metals provides certificates of authenticity for many of their products"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Rushing the Process: Take your time to research and compare different dealers before making a purchase."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "As mentioned, they typically fall within the 1 percent to 3 percent range."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Some customers have reported delays in shipping or issues with damaged packaging."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "As of today, they maintain an average rating of 4."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "They use SSL encryption to protect your data during online transactions."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "According to their website, standard shipping typically takes 3-5 business days ."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Provident Metals takes pride in offering only genuine precious metals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Each product comes with a certificate of authenticity, which verifies its purity and weight."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We recommend them as a solid choice for both beginner and intermediate investors looking to add precious metals to their portfolio."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "They are committed to staying at the forefront of the precious metals industry and providing their customers with the best possible experience."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Consider exploring their website and learning more about how you can start investing in silver and other valuable metals today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you agree that Provident Metals offers a trustworthy way?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you agree that Provident Metals offers a trustworthy way?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

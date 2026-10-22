@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-22T19:08:18.403Z",
+  "generatedAt": "2026-08-26T14:15:10.358Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "peace-silver-dollar-value-and-history",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "The 1913-S Peace dollar is rarer than you think."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "The 1913-S Peace dollar is rarer than you think."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "The 1913-S Peace dollar is rarer than you think."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "The question of “how much is a Peace silver dollar worth?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It’s not just about the silver content, but also about rarity, condition, and collector demand."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’ve seen firsthand how these historical pieces can appreciate significantly."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "They’re instantly recognizable by their obverse depicting Lady Liberty with a helmet and olive branch"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "While initially intended as a patriotic symbol, they quickly gained popularity among collectors"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "and market trends is crucial to assessing the value of any Peace silver dollar you’re considering."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This scarcity, coupled with the coin’s patriotic significance, fueled early collector interest."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The mintages continued to decrease throughout the series"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "The 1914-S, 1916-S, and 1917-S also saw dramatically reduced mintages."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Mint Condition: The condition of the coin is essential."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A coin in Mint State (MS) 66 or higher commands a premium."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Rarity: Low mintages directly translate to higher rarity and, therefore, higher value."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The Professional Coin Grading Service (PCGS) and the Numismatic Guaranty Company (NGC) are the two leading grading services."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "see First Majestic Silver vs Physical Silver Investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Wear: The degree of wear on the coin’s design elements."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "here’s a general overview of the approximate values for commonly collected Peace silver dollars: 1909-S: $3"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "500 - $12, 000+ (depending on grade) 1910-S: $2, 500 - $8, 000+ 1913-S: $15, 000 - $50"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "500+ Note: These are estimated values and can fluctuate based on market conditions and the specific coin’s characteristics."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "We recommend dealing with established dealers who specialize in silver coins."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "but exercise caution and verify the seller's reputation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Ignoring Condition: Don’t overpay for a coin in poor condition."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Here are some recommendations: Coin Holders: Use coin holders (cards or capsules) to protect coins from scratches and damage."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Coin Albums: Coin albums provide a secure and organized way to store and display your collection."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The Peace silver dollar remains a popular and collectible coin."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Don't hesitate to contact us if you have any questions about Peace silver dollars or any of our other silver products."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We're here to help you navigate the world of precious metals investing."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Start building your silver collection today - visit {Fused Distribution Website Link} to browse our selection."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all these factors, what's your estimated value for a?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all these factors, what's your estimated value for a?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

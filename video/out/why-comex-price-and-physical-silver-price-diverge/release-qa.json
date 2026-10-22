@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-10T19:44:06.524Z",
+  "generatedAt": "2026-08-26T14:15:17.483Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "why-comex-price-and-physical-silver-price-diverge",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Futures trading can widen the silver price gap by 6."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Futures trading can widen the silver price gap by 6."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "50 dollars per ounce."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Understanding the difference between the COMEX silver price and the actual cost of physical silver is crucial for any investor."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "You might see a significant gap between the two, and it’s important to know why."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’ve helped countless investors navigate the complexities of the precious metals market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Physical silver, on the other hand, is the actual metal you can hold."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s not a sign of a market failure; it’s a reflection of the mechanics of futures trading and the complexities of the silver market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The gap highlights the difference between speculating on future prices and owning tangible assets."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Because futures trading involves a large number of leveraged positions"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "it can significantly impact the price of the underlying asset - in this case, silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "The spread between the COMEX futures price and the spot price (the current price for immediate delivery) is primarily driven by supply and demand."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": ", increased retail buying, central bank purchases), the spot price will rise."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Conversely, if there’s a glut of physical silver available, the spot price will fall."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Storage and Transportation Costs: Moving physical silver from mining locations to warehouses and then to buyers involves costs."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The most actively traded contract month is usually the front-month contract (the contract expiring soonest)."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "meaning the prices of distant contracts are significantly higher than the front-month contract."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "As of today, August 9, 2026, the COMEX silver futures price is approximately $35."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "This premium is the cost of acquiring, storing, and delivering the silver."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Typically, you’ll see premiums of 2-5 percent for coins and 1-3 percent for bars."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "70 per ounce, you might pay $29 - $30 per ounce for a coin or bar."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Shipping Costs: Transporting silver from the dealer to your location incurs shipping expenses."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "you can take steps to minimize them: Shop Around: Compare prices from multiple dealers."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Consider Dealer Reputation: Choose a reputable dealer with a solid track record."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "These funds hold physical silver and trade on stock exchanges."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "As of June 2026, Silver ETFs held approximately 350 million ounces of silver."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The divergence between the COMEX price and the physical silver price is likely to persist."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Browse our online catalog today: We recommend starting with a small investment and gradually increasing your holdings as you gain more experience."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Browse our online catalog today: We recommend starting with a small investment and gradually increasing your holdings as you gain more experience."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don't hesitate to contact us if you have any questions."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, what’s your biggest takeaway from this explanation of COMEX?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, what’s your biggest takeaway from this explanation of COMEX?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -2,12 +2,12 @@
   "0": {
     "type": "photo",
     "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-0.jpg",
-    "source": "local-photo"
+    "source": "open-generative-ai-local"
   },
   "1": {
     "type": "photo",
     "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-1.jpg",
-    "source": "local-photo"
+    "source": "fused-generated-background-library"
   },
   "2": {
     "type": "photo",
@@ -37,21 +37,6 @@
   "7": {
     "type": "photo",
     "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-7.jpg",
-    "source": "local-photo"
-  },
-  "8": {
-    "type": "photo",
-    "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-8.jpg",
-    "source": "local-photo"
-  },
-  "9": {
-    "type": "photo",
-    "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-9.jpg",
-    "source": "local-photo"
-  },
-  "10": {
-    "type": "photo",
-    "src": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-10.jpg",
     "source": "local-photo"
   }
 }

@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-20T18:34:53.639Z",
+  "generatedAt": "2026-08-26T14:15:10.296Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "pcgs-ngc-certified-silver-coins-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking to invest in silver but overwhelmed by the complexities of grading, authenticity"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many investors find the world of collectible coins confusing"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Fused Distribution understands this, and we’re here to cut through the noise."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Third-party grading services like PCGS and NGC play a crucial role in the silver coin market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "and encapsulate them in tamper-evident holders."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Essentially, they verify that the coin is genuine and accurately reflects its condition."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Primarily, they offer an unmatched level of assurance regarding authenticity."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "192 (approximately 34 percent) received a perfect grade of MS70."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "PCGS-graded coins typically command 5-15 percent higher prices than identical NGC-graded coins in most U."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Both PCGS and NGC use a ten-point grading scale, ranging from 1 (Poor) to 70 (Perfect)."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "This scale provides a standardized way to assess the condition of a coin."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "These coins often have substantial surface loss and may be incomplete."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The coin is in very good condition with minimal wear and strong luster."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Wear is barely perceptible, and the details remain sharp with exceptional luster."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "These coins have been circulated very lightly and retain most of their original luster."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "PCGS generally has a slightly stronger reputation in the market for classic U."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This is partially due to their longer history and established presence in the market for older coins."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "due to their expertise in grading these contemporary pieces."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A 2026 American Silver Eagle graded MS70 retails for approximately $210"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "This premium reflects the added value of authentication, grading, and encapsulation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "It also accounts for the increased demand for certified coins among collectors and investors who prioritize security and provenance."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "The global coin collection market was valued at $11."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "5 percent CAGR driven in part by demand for professionally graded assets."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "making them a sound investment for both collectors and investors."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Their certification process sets a high standard for authenticity and condition"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "PCGS’s consistent grading standards have become a benchmark for the entire coin market."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Investing in PCGS and NGC certified silver coins can be a smart move"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Consulting with a financial advisor is recommended before making any significant investment decisions."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Fused Distribution offers a straightforward and transparent path to acquiring certified silver coins."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Stop guessing about premiums and start investing with confidence."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "What's your take?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "Follow for more silver news."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

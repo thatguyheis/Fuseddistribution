@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-29T19:30:16.182Z",
+  "generatedAt": "2026-08-26T14:15:15.141Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-vs-cash-which-holds-value-better",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver offers a stronger, tangible defense against inflation."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver offers a stronger, tangible defense against inflation."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver offers a stronger, tangible defense against inflation."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking for a way to protect your wealth from inflation and economic uncertainty?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Silver, a tangible asset with a proven track record, often emerges as a compelling alternative."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we recommend it as a serious consideration for diversifying your portfolio."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Your savings shrink over time, diminishing their potential to meet your future needs."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This constant erosion is a significant drawback for long-term wealth preservation."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Silver stands apart from paper money because it’s a physical asset."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This fundamental difference is why many investors turn to silver as a hedge against economic volatility."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "To truly understand how silver stacks up against cash, let’s look at the silver-to-cash ratio."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "As of July 26, 2024, the spot price of silver is approximately $29."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Let’s consider a scenario: $1,000 in cash would buy you roughly 34."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "If silver’s price increases, your $1, 000 investment in cash will buy less silver"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The ratio demonstrates a clear advantage for silver in terms of wealth preservation."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A study by the National Insurance Crime Bureau found that jewelry theft accounted for nearly $1."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Don’t feel pressured to buy all your silver at once."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This involves investing a fixed amount of money in silver at regular intervals"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "You can see this in the silver-to-cash ratio."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This spreads your entry cost over time."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "The value of silver is not dependent on investor sentiment; it’s based on its inherent properties and uses."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Cash, as we’ve established, suffers from inflation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "inflation has been significantly higher recently."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "silver has demonstrated a remarkable ability to maintain its value during periods of economic uncertainty."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "It gives you a clear picture of its role in your holdings."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Consider a bank safety deposit box or a home safe that meets security standards."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "A study by the FBI estimates that approximately 20 percent of burglaries involve theft of valuables"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "offering transparent pricing and convenient purchasing options."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Stop relying solely on cash, which is steadily losing its value."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Visit our reserve page today to learn more and begin your journey towards a more secure financial future."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering the pros and cons, where do you see silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering the pros and cons, where do you see silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

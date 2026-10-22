@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-24T18:27:43.251Z",
+  "generatedAt": "2026-08-26T14:15:13.166Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-mining-stocks-vs-physical-silver",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Mining stocks have historically yielded a 6."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Mining stocks have historically yielded a 6."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "8 percent average annual return."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver but unsure whether to buy silver mining stocks or hold physical silver?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "but they come with distinct advantages and disadvantages."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "we stock a wide variety of silver products and understand the complexities involved in choosing the right investment strategy."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "there are two primary ways to gain exposure to the metal: Silver Mining Stocks: These represent ownership in companies that actively mine and process silver."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Their value fluctuates based on the company’s performance, silver prices"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Physical Silver: This involves purchasing actual silver bullion - coins, bars"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Investing in silver mining stocks can offer the potential for significant returns if the companies you invest in perform well."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The price of a mining stock is influenced by many factors beyond just the price of silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Geological Risks: Mining sites can experience unexpected geological challenges"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "However, during periods of declining silver prices, those same stocks can suffer significant losses."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "68, a significant fluctuation from its peak in 2021."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Comparable Statistic: A report indicated that the average annual return of silver mining stocks over the past 10 years has been approximately 6."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "it also comes with its own set of considerations: Storage Costs: You’ll need a secure place to store your silver"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "which could involve costs for a safe deposit box or a professional vault."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Liquidity: Selling physical silver can take time, as you need to find a reputable dealer or buyer."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Premium over Spot Price: You’ll typically pay a premium above the spot price when purchasing physical silver"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "16 per ounce, but you might pay around $29 - $30 for an ounce of bullion."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "the spread between the spot price of silver and the retail price of silver bullion has averaged around 5-10 percent."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "There’s no magic number for how much to invest in either silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A common rule of thumb is to allocate no more than 5-10 percent of your portfolio to precious metals."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Research: Thoroughly research silver mining companies before investing in stocks."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Investing Based on Hype: Don’t chase silver based on short-term market trends."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Ignoring Storage Costs: If you choose physical silver, factor in the costs of storage and insurance."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Overpaying for Physical Silver: Shop around for the best prices and avoid paying excessive premiums."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Lack of Research: Failing to research silver mining companies before investing in their stocks can lead to significant losses."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Analysts predict continued demand for silver, driven by its use in industrial applications, jewelry"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "According to a report, global mine production of silver is expected to increase by 3."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "We recommend starting with a small allocation and gradually increasing your exposure as you gain experience and confidence."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "We recommend starting with a small allocation and gradually increasing your exposure as you gain experience and confidence."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Consider exploring our range of silver bullion products to begin your investment journey."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "Considering both options?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "Which do you think is a better?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

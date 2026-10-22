@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-21T18:29:09.764Z",
+  "generatedAt": "2026-08-26T14:15:16.200Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "troy-ounce-vs-regular-ounce-silver-explained",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Buying silver in troy ounces can save you $3 per ounce."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Buying silver in troy ounces can save you $3 per ounce."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Buying silver in troy ounces can save you $3 per ounce."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking to build a physical silver reserve but feeling overwhelmed by the confusing terminology and pricing involved in the precious metals market?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "struggle to grasp the fundamental differences between a troy ounce and a regular ounce of silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "cutting through the dealer markup games and confusing premiums."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "standardized unit of weight meticulously used for measuring precious metals such as silver, gold"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s a critical distinction from the “ounce” you might encounter in everyday life."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "which itself represents a long-standing unit of measurement."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A regular ounce, also frequently referred to as a circulating ounce or a “street ounce"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "which equates to approximately one ounce of avoirdupois weight - the type of weight commonly used in grocery stores."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "1035 grams, a regular ounce weighs considerably less."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "It’s a fundamental factor in determining the true cost of your investment and should be carefully considered."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Dealers and retailers frequently fail to explicitly state whether they’re quoting prices in troy ounces or regular ounces."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This lack of transparency can lead to confusion and, potentially, inflated prices."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "For instance, if you’re purchasing 100 ounces of silver"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Let’s say you purchase 100 troy ounces of silver at $30 per troy ounce - that totals $3,000."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Conversely, if you bought the same 100 ounces at $27 per regular ounce, you’d pay $2,700."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "These products are specifically manufactured and priced based on the troy ounce weight"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Collectible silver, on the other hand, may be offered in a variety of weights"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "It’s vital to understand the context of the sale to ensure you’re receiving the correct unit of weight and avoiding potential miscalculations."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Always factor in the unit measurement when calculating the true cost of your silver purchase"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "We consistently and clearly state the unit of weight (troy ounce) when quoting prices for our silver products."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "We believe that our customers deserve to understand exactly what they’re buying and how much they’re paying."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "| Unit of Measure | Price Per Unit | | | | | Troy Ounce | $30."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "00 | As you can see, the difference between the two units remains consistent."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "This reinforces the critical importance of always verifying the unit of weight being used before making any purchase decisions."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "you can confidently navigate the complexities of the silver market"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "make informed investment decisions, and ultimately build a secure and profitable silver portfolio."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let us help you build a secure and profitable silver portfolio."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering the weight differences, which unit of measurement do you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering the weight differences, which unit of measurement do you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

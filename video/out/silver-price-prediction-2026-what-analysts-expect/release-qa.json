@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-29T18:46:47.690Z",
+  "generatedAt": "2026-08-26T14:15:13.887Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-price-prediction-2026-what-analysts-expect",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Named LBMA analysts disagree widely on silver's 2026 average."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Named LBMA analysts disagree widely on silver's 2026 average."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Named LBMA analysts disagree widely on silver's 2026 average."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "13 per troy ounce in Fused Distribution's cached daily spot snapshot on July 29, 2026."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The most useful way to read a silver outlook is to separate today's price"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "They answer different questions and should never be plotted as if they are the same measure."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The LBMA 2026 Precious Metals Forecast Survey publishes named analysts' expected annual averages and trading ranges."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "LBMA's 2026 survey lists LBBW's annual-average forecast at $63."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "LBMA's 2026 survey lists LSEG Metals Research's annual-average forecast at $69."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "LBMA's 2026 survey lists UBS's annual-average forecast at $78."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "These are annual averages, not promises that silver will finish 2026 at those prices."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A volatile market can trade above and below an annual average many times."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The previous statement that higher inflation could push silver above $35 per ounce no longer made sense after silver had already traded far above that level."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It also oversimplified the relationship between inflation and precious metals."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "If inflation leads to higher interest rates and a stronger dollar"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "If real yields fall or policy uncertainty increases, investment demand can strengthen."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "see What Moves Silver Price Up and Down and How to Track Silver Price Daily."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The LBMA Q2 2026 market report says silver began the quarter at $74."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "It forecasts physical investment to rise while industrial fabrication, jewelry"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "High prices can also encourage recycling, substitution, and reduced consumption."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Is the number a spot price, annual average, year-end target, or intraday high?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A market forecast becomes stale quickly after a large move."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A wide range communicates uncertainty better than one precise target."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "and possible taxes that a spot-price forecast does not capture."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "13 spot snapshot is already well above the obsolete $35 scenario in the earlier version of this article."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Selected LBMA annual-average forecasts span $63."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The honest conclusion is not that one number will be correct."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "It is that silver remains highly volatile and sensitive to investment flows, monetary policy"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "This article is educational and is not individualized financial advice."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "LBMA 2026 Precious Metals Forecast Survey LBMA Precious Metals Market Report: Q2 2026 World Bank: Precious metals retreat from record highs Silver Institute: 2026 market outlook"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which silver forecast assumption matters most to you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which silver forecast assumption matters most to you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

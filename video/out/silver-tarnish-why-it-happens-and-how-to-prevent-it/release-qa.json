@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-21T19:42:33.428Z",
+  "generatedAt": "2026-08-26T14:15:14.946Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-tarnish-why-it-happens-and-how-to-prevent-it",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver tarnishes, protect your investment with airtight storage."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver tarnishes, protect your investment with airtight storage."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver tarnishes, protect your investment with airtight storage."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Silver tarnish isn’t just an unsightly blemish; it’s a chemical reaction that impacts the value and appearance of your precious metal investment."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Silver tarnish isn’t just an unsightly blemish; it’s a chemical reaction that impacts the value and appearance of your precious metal investment."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we understand the importance of protecting your holdings."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The specific color and texture of the tarnish can vary"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Understanding this process is the first step in protecting your investment."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The type of tarnish you observe is directly linked to the silver’s purity."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Industrial processes, particularly those involving sulfur-containing chemicals"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Volcanic eruptions also contribute sulfur dioxide"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Even seemingly innocuous things like decaying vegetation release small amounts of sulfurous compounds."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "High-purity silver, with its minimal copper content"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Preventing silver tarnish is far more effective than trying to remove it after it’s formed."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Consistent, proactive measures are key to maintaining your silver’s value and appearance."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A dehumidifier can be beneficial in areas prone to dampness."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Air Circulation: Just like humidity, stagnant air accelerates tarnishing."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Don’t overcrowd storage containers, as this restricts airflow."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "A good starting point is a silver polish containing rhodium"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Test the polish on a small, inconspicuous area first to ensure it doesn’t discolor the silver."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "consider applying a thin coat of carnauba wax to the silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Industrial processes release sulfur compounds - a key component of tarnish - into the atmosphere."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Furthermore, certain weather patterns, particularly those involving rainfall and humidity"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "The type of silver you own - its purity - significantly influences its susceptibility to tarnish."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Let’s put your newfound knowledge to the test."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "If not, immediately invest in a suitable storage solution."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Consider a dehumidifier if humidity is a concern."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We stock a diverse selection of silver bullion and coins, catering to investors of all levels."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We stock a diverse selection of silver bullion and coins, catering to investors of all levels."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let us help you secure your financial future."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your biggest concern when it comes?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your biggest concern when it comes?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

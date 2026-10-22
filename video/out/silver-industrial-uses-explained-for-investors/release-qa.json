@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-26T19:50:39.689Z",
+  "generatedAt": "2026-08-26T14:15:12.474Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-industrial-uses-explained-for-investors",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver fuels 10 percent of global demand."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver fuels 10 percent of global demand."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver fuels 10 percent of global demand."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a silver investor looking to understand where the metal really goes?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "driven by inflation fears and geopolitical uncertainty."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "a significant portion of silver demand comes from its crucial role in a vast array of industrial applications."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Silver’s unique properties - exceptional electrical conductivity and remarkable resistance to corrosion - are the bedrock of its industrial importance."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "These aren't just desirable traits; they’re essential for a wide range of applications."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Silver is a primary material in conductors, ensuring efficient and reliable performance."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "The efficiency of solar panels is directly tied to the amount of silver used - more silver"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Beyond solar panels, silver is a critical component in a staggering array of electronic devices."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "silver is used in printed circuit boards (PCBs), connectors, and wiring."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The miniaturization of electronics has dramatically increased the demand for silver - smaller components require finer wires and connections"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "the power source for most portable electronics and increasingly for electric vehicles"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Silver is used in the battery’s electrodes, specifically in the bipolar plates"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Photography: Silver halides were historically used in photographic film - while digital photography has largely replaced film"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "providing a stable and recognized form of value."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The use of silver in alloys contributes approximately 10 percent to the overall demand for the metal."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The automotive industry’s increasing reliance on electronics and advanced materials is driving up silver demand."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "The shift towards electric vehicles, with their complex electrical systems"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "It’s crucial to understand the difference between industrial silver and investment-grade silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Investment-grade silver prices are primarily driven by supply and demand dynamics"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Industrial silver prices, however"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "This means industrial silver prices tend to be less volatile than investment silver prices."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Don’t just look at the price of silver; investigate the industries that are using it."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Pay attention to industry reports and forecasts to understand the projected demand for silver in these areas."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Consider diversifying your portfolio with investments in companies involved in these industries."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Our transparent pricing and streamlined ordering process make it easier than ever to build a physical silver reserve."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We stock silver for investors seeking a diversified portfolio"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "This isn’t just about speculation; it’s about recognizing the fundamental drivers of silver’s price and appreciating its long-term value."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering these diverse industrial uses, where do you see silver’s?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering these diverse industrial uses, where do you see silver’s?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

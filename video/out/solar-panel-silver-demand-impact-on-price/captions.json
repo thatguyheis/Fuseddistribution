@@ -1,212 +1,178 @@
 {
   "0": [
     {
-      "text": "Solar demand drives silver price action, creating a structural floor.",
+      "text": "More solar installations do not automatically mean more silver demand.",
       "startSec": 0,
-      "endSec": 3.88
+      "endSec": 4.16
     }
   ],
   "1": [
     {
-      "text": "Solar panel manufacturing pulled roughly 232 million ounces of silver in 2025",
+      "text": "Solar manufacturing uses silver",
       "startSec": 0,
-      "endSec": 4.637701149425288
+      "endSec": 1.6361951219512194
     },
     {
-      "text": "and that single sector now drives more of silver's price action than any other industrial buyer .",
-      "startSec": 4.487701149425288,
-      "endSec": 10.48
+      "text": "but growth in solar installations does not automatically mean growth in silver consumption.",
+      "startSec": 1.4861951219512195,
+      "endSec": 6.289219512195122
+    },
+    {
+      "text": "The result depends on how much equipment is produced",
+      "startSec": 6.289219512195122,
+      "endSec": 9.03380487804878
+    },
+    {
+      "text": "which cell technologies are used and how much silver each unit requires.",
+      "startSec": 9.03380487804878,
+      "endSec": 12.834
+    },
+    {
+      "text": "Changes in those inputs can work in opposite directions.",
+      "startSec": 12.834,
+      "endSec": 15.789707317073171
+    },
+    {
+      "text": "Understanding that distinction is more useful than treating every new installation as a signal to buy metal.",
+      "startSec": 15.789707317073171,
+      "endSec": 21.64
     }
   ],
   "2": [
     {
-      "text": "Ten years later it is the biggest single line item.",
+      "text": "Keep separate records for annual production, new installations and cumulative installed capacity.",
       "startSec": 0,
-      "endSec": 2.7762406015037593
+      "endSec": 5.090275229357798
     },
     {
-      "text": "Solar's share of total silver industrial demand climbed from around 5 percent in 2014 to over 20 percent in 2024 .",
-      "startSec": 2.6262406015037594,
-      "endSec": 8.831954887218044
+      "text": "None is automatically a measurement of silver mass.",
+      "startSec": 4.940275229357797,
+      "endSec": 7.616605504587155
     },
     {
-      "text": "That is a four-fold jump in a decade",
-      "startSec": 8.831954887218044,
-      "endSec": 10.791654135338344
+      "text": "Multiplying cumulative installed capacity by a current intensity estimate would attribute new material use to equipment that was already built.",
+      "startSec": 7.616605504587155,
+      "endSec": 15.120825688073392
     },
     {
-      "text": "and it happened while total industrial demand itself was growing.",
-      "startSec": 10.791654135338344,
-      "endSec": 14.48
+      "text": "State any approximation explicitly when exact production data are unavailable",
+      "startSec": 15.120825688073392,
+      "endSec": 19.16155963302752
+    },
+    {
+      "text": "and do not report a calculated estimate as measured industry demand.",
+      "startSec": 19.16155963302752,
+      "endSec": 22.88
     }
   ],
   "3": [
     {
-      "text": "They redesign paste formulas, switch to copper-plated contacts on some cell architectures",
+      "text": "The Silver Institute April 2026 release reports photovoltaic weakness linked to accelerated thrifting and substitution in 2025.",
       "startSec": 0,
-      "endSec": 5.272405063291139
+      "endSec": 7.599237057220709
     },
     {
-      "text": "and shave microns off the silver lines that carry current across the panel.",
-      "startSec": 5.122405063291138,
-      "endSec": 9.565443037974681
+      "text": "Its outlook projects a further industrial demand decline in 2026",
+      "startSec": 7.449237057220708,
+      "endSec": 11.278773841961852
     },
     {
-      "text": "Grams of silver per panel keep falling.",
-      "startSec": 9.565443037974681,
-      "endSec": 11.875822784810124
+      "text": "chiefly associated with photovoltaics.",
+      "startSec": 11.278773841961852,
+      "endSec": 13.552561307901907
     },
     {
-      "text": "The Silver Institute forecasts PV silver demand will decline in 2026 compared to 2025 as thrifting bites harder .",
-      "startSec": 11.875822784810124,
-      "endSec": 18.72
+      "text": "A forecast for a full calendar year is not an observation of the completed year.",
+      "startSec": 13.552561307901907,
+      "endSec": 18.33948228882834
+    },
+    {
+      "text": "Keep the publication date attached when comparing reports.",
+      "startSec": 18.33948228882834,
+      "endSec": 21.96
     }
   ],
   "4": [
     {
-      "text": "That is a line item their CFOs argue about.",
+      "text": "Consider a hypothetical calculation, not a market forecast.",
       "startSec": 0,
-      "endSec": 2.3779865771812085
+      "endSec": 3.205561497326203
     },
     {
-      "text": "When silver becomes 14 percent of your cost stack, two things happen.",
-      "startSec": 2.2279865771812086,
-      "endSec": 6.043825503355706
+      "text": "Suppose production increases by 20 percent while silver used per unit falls by 25 percent.",
+      "startSec": 3.0555614973262033,
+      "endSec": 7.9454010695187165
     },
     {
-      "text": "You push hard on thrifting, which we already covered.",
-      "startSec": 6.043825503355706,
-      "endSec": 8.974832214765101
+      "text": "The production multiplier is one point two zero and the intensity multiplier is zero point seven five.",
+      "startSec": 7.9454010695187165,
+      "endSec": 13.487219251336898
     },
     {
-      "text": "You also hedge, stockpile, and buy forward",
-      "startSec": 8.974832214765101,
-      "endSec": 11.297516778523491
+      "text": "Their product is zero point nine zero.",
+      "startSec": 13.487219251336898,
+      "endSec": 15.55181818181818
     },
     {
-      "text": "because a spike from $58 to $75 wrecks your margins on modules you already priced and sold.",
-      "startSec": 11.297516778523491,
-      "endSec": 16.48
+      "text": "Calculated silver use is 90 percent of the starting amount, a decline of ten percent.",
+      "startSec": 15.55181818181818,
+      "endSec": 20.32
     }
   ],
   "5": [
     {
-      "text": "The Silver Institute projects 2025 will mark the fifth consecutive year of structural market deficit",
+      "text": "A forecast should keep technical potential separate from assumed adoption.",
       "startSec": 0,
-      "endSec": 4.904458598726115
+      "endSec": 3.7863333333333333
     },
     {
-      "text": "meaning total demand exceeds new mine supply plus recycling .",
-      "startSec": 4.7544585987261145,
-      "endSec": 7.746178343949045
+      "text": "Record what share of production is assumed to use a process and when that change is expected.",
+      "startSec": 3.6363333333333334,
+      "endSec": 8.394833333333334
     },
     {
-      "text": "Deficits get covered by drawing down above-ground stocks: ETF holdings, exchange vaults",
-      "startSec": 7.746178343949045,
-      "endSec": 12.013057324840766
+      "text": "If the share is unknown, leave it unknown or label an illustrative scenario.",
+      "startSec": 8.394833333333334,
+      "endSec": 12.283500000000002
     },
     {
-      "text": "private hoards.",
-      "startSec": 12.013057324840766,
-      "endSec": 12.748726114649683
-    },
-    {
-      "text": "Every year the deficit continues, the buffer thins.",
-      "startSec": 12.748726114649683,
-      "endSec": 15.4
+      "text": "Do not replace the entire industry intensity with the best research result and present the total as established fact.",
+      "startSec": 12.283500000000002,
+      "endSec": 18.42
     }
   ],
   "6": [
     {
-      "text": "If you want lower volatility, tilt heavier to gold.",
+      "text": "Ask what additional evidence connects a demand change to the claimed price outcome.",
       "startSec": 0,
-      "endSec": 2.6774999999999998
+      "endSec": 4.034722222222222
     },
     {
-      "text": "Use the gold-silver ratio to time your silver-versus-gold buys.",
-      "startSec": 2.5275,
-      "endSec": 5.835
+      "text": "A supply-and-demand narrative alone does not establish a price floor or a buying deadline.",
+      "startSec": 3.8847222222222224,
+      "endSec": 8.259722222222223
     },
     {
-      "text": "When the ratio is above 80, silver is historically cheap relative to gold and worth accumulating.",
-      "startSec": 5.835,
-      "endSec": 10.9275
+      "text": "Retail offers require their own comparison, including the exact product and costs.",
+      "startSec": 8.259722222222223,
+      "endSec": 12.245833333333334
     },
     {
-      "text": "When it drops below 60, gold becomes the better relative buy.",
-      "startSec": 10.9275,
-      "endSec": 14.28
+      "text": "Keep missing inputs visible rather than turning an industrial trend into a guaranteed investment outcome.",
+      "startSec": 12.245833333333334,
+      "endSec": 17.5
     }
   ],
   "7": [
     {
-      "text": "If you want fractional flexibility, buy 1 ounce rounds from a reputable private mint.",
+      "text": "Which assumption would you check in a solar demand forecast?",
       "startSec": 0,
-      "endSec": 5.08259385665529
-    },
-    {
-      "text": "Do not mix collector premiums into an investment stack.",
-      "startSec": 4.93259385665529,
-      "endSec": 8.221331058020477
-    },
-    {
-      "text": "Compare total delivered cost, not just premium over spot.",
-      "startSec": 8.221331058020477,
-      "endSec": 11.629658703071671
-    },
-    {
-      "text": "Add the premium, shipping, insurance, and any card fees.",
-      "startSec": 11.629658703071671,
-      "endSec": 14.978191126279862
-    },
-    {
-      "text": "That gives you your true cost per ounce.",
-      "startSec": 14.978191126279862,
-      "endSec": 17.52
-    }
-  ],
-  "8": [
-    {
-      "text": "If you are new to buying physical silver",
-      "startSec": 0,
-      "endSec": 1.7463126843657817
-    },
-    {
-      "text": "start with a single 10 ounce bar or a tube of 20 American Eagles.",
-      "startSec": 1.5963126843657818,
-      "endSec": 4.434070796460177
-    },
-    {
-      "text": "Get comfortable with the delivery process, the packaging",
-      "startSec": 4.434070796460177,
-      "endSec": 6.878908554572272
-    },
-    {
-      "text": "and the storage decision before you scale up your monthly commitment.",
-      "startSec": 6.878908554572272,
-      "endSec": 9.891297935103246
-    },
-    {
-      "text": "The demand story behind silver is not going away this quarter.",
-      "startSec": 9.891297935103246,
-      "endSec": 12.598082595870208
-    },
-    {
-      "text": "You have time to build the stack the right way.",
-      "startSec": 12.598082595870208,
-      "endSec": 14.8
-    }
-  ],
-  "9": [
-    {
-      "text": "Is now the time to build your silver stack?",
-      "startSec": 0,
-      "endSec": 3.100845070422535
+      "endSec": 3.136363636363636
     },
     {
       "text": "Follow for more silver news.",
-      "startSec": 2.950845070422535,
-      "endSec": 5.12
+      "startSec": 2.986363636363636,
+      "endSec": 4.6
     }
   ]
 }

@@ -2,95 +2,88 @@
   "version": 1,
   "segments": {
     "0": {
-      "key": "{\"query\":\"tiktok for local business does it work\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "key": "{\"query\":\"Test useful local idea business\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
       "source": "local-photo",
-      "query": "tiktok for local business does it work",
+      "query": "Test useful local idea business",
       "prefer": "video",
-      "updatedAt": "2026-08-01T19:17:43.137Z"
+      "updatedAt": "2026-09-23T14:19:25.070Z"
     },
     "1": {
-      "key": "{\"query\":\"tiktok for local business does it work yes tiktok works\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "local-photo",
-      "query": "tiktok for local business does it work yes tiktok works",
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"tech\",\"sceneId\":\"tech-general\",\"tags\":[\"tech\",\"tech-general\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-f2e11e6cb264cf36",
+      "topic": "tech",
+      "sceneId": "tech-general",
+      "tags": [
+        "tech",
+        "tech-general"
+      ],
+      "sha256": "f2e11e6cb264cf36556a03cfbac0350c83be79cbb381988e1ca80b566022e8f5",
+      "sourceSlug": "ai-chatbot-for-small-business-website-setup-guide",
+      "status": "approved-background-only",
+      "query": "tiktok for local business does it work short answer yes",
       "prefer": "photo",
-      "updatedAt": "2026-08-01T19:17:43.428Z"
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/tiktok-for-local-business-does-it-work/segment-1.jpg",
+      "updatedAt": "2026-09-21T20:26:32.591Z"
     },
     "2": {
-      "key": "{\"query\":\"tiktok for local business does it work restaurants salons auto\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"MAKE LOCATION CLEAR business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "tiktok for local business does it work restaurants salons auto",
-      "prefer": "photo",
-      "updatedAt": "2026-08-01T19:17:43.428Z"
+      "query": "MAKE LOCATION CLEAR business",
+      "prefer": "video",
+      "updatedAt": "2026-09-23T14:19:25.091Z"
     },
     "3": {
-      "key": "{\"query\":\"tiktok for local business does it work 6 and pm\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work 6 and pm",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:44.746Z"
+      "key": "{\"query\":\"KEEP PRODUCTION SIMPLE business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "KEEP PRODUCTION SIMPLE business",
+      "prefer": "video",
+      "updatedAt": "2026-09-23T14:19:25.091Z"
     },
     "4": {
-      "key": "{\"query\":\"tiktok for local business does it work pan across a\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work pan across a",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:45.347Z"
+      "key": "{\"query\":\"CHECK MUSIC RIGHTS business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "CHECK MUSIC RIGHTS business",
+      "prefer": "video",
+      "updatedAt": "2026-09-23T14:19:25.091Z"
     },
     "5": {
-      "key": "{\"query\":\"tiktok for local business does it work here is what\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work here is what",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:46.356Z"
+      "key": "{\"query\":\"TRACK REAL ENQUIRIES business\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "TRACK REAL ENQUIRIES business",
+      "prefer": "video",
+      "updatedAt": "2026-09-23T14:19:25.091Z"
     },
     "6": {
-      "key": "{\"query\":\"tiktok for local business does it work 47 of tiktok\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work 47 of tiktok",
-      "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:46.959Z"
+      "key": "{\"query\":\"What customer question could business\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "What customer question could business",
+      "prefer": "video",
+      "updatedAt": "2026-09-23T14:19:25.091Z"
     },
     "7": {
-      "key": "{\"query\":\"tiktok for local business does it work 8 pm on\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work 8 pm on",
+      "key": "{\"query\":\"tiktok for local business does it work 2023 to 25\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work 2023 to 25",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:47.484Z"
+      "updatedAt": "2026-09-21T20:26:32.592Z"
     },
     "8": {
-      "key": "{\"query\":\"tiktok for local business does it work the algorithm and\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work the algorithm and",
+      "key": "{\"query\":\"tiktok for local business does it work 808 effort optimizing\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work 808 effort optimizing",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:48.008Z"
+      "updatedAt": "2026-09-21T20:26:32.593Z"
     },
     "9": {
-      "key": "{\"query\":\"tiktok for local business does it work do that for\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "tiktok for local business does it work do that for",
+      "key": "{\"query\":\"tiktok for local business does it work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "tiktok for local business does it work customer feedback",
       "prefer": "photo",
-      "attempts": [
-        "pixabay-photo"
-      ],
-      "updatedAt": "2026-08-01T19:17:48.597Z"
+      "updatedAt": "2026-09-21T20:26:32.593Z"
     },
     "10": {
       "key": "{\"query\":\"tiktok for local business does it work customer feedback\",\"prefer\":\"photo\",\"segmentType\":\"question\"}",
@@ -102,5 +95,6 @@
       ],
       "updatedAt": "2026-08-01T19:18:01.086Z"
     }
-  }
+  },
+  "generativeCandidates": {}
 }

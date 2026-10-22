@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-08T17:22:48.623Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:16.403Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "website-speed-and-local-business-ranking",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Slow websites lose 27 percent of potential traffic , act now!"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Slow websites lose 27 percent of potential traffic , act now!"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Slow websites lose 27 percent of potential traffic , act now!"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Your website’s speed isn’t just about how quickly you can load a page."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Slow websites hurt rankings, drive away visitors, and ultimately impact your bottom line."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’ve seen firsthand how dramatically website speed can affect success."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A slow website leads to high bounce rates - people leaving your site quickly - and lower time on page"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This, in turn, negatively impacts your search ranking"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Conversely, a fast website keeps visitors engaged, signals quality to Google"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "including waterfall charts that show exactly how long each element on your page takes to load."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Pingdom Website Speed Test: Another popular option that provides a clear overview of your website’s performance."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Don’t just look at the score; read the detailed analysis to understand why your site is slow."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A score of 80 or below is generally considered poor, while 90 or above is excellent."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Let’s look at the key ones: Image Size: Large, unoptimized images are a major speed killer."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Aim for web-optimized images - smaller file sizes that load quickly."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "and social media buttons all add to your website’s load time."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "but one thing remains consistent: speed is a ranking factor."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "A study showed that mobile site speed is the single most influential ranking factor."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Finally, a report showed that for every second a page takes to load"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Here’s what you can do: Choose the Right Format: Use WebP format whenever possible."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Compress Images: Use tools like TinyPNG or ImageOptim to reduce file sizes without noticeable quality loss."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Use a Content Delivery Network (CDN): A CDN distributes your website’s files across multiple servers around the world"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "This dramatically reduces loading times for users in different locations."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Third-party scripts can significantly slow down your website."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Here’s how to reduce their impact: Remove Unnecessary Plugins: Audit your plugins and remove any that you don’t need."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Defer Loading of Non-Critical Scripts: Defer loading of scripts that aren’t essential for the initial page load."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "host scripts on your own server instead of relying on third-party services."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Not Regularly Monitoring Your Speed: Website speed isn’t a “set it and forget it” thing."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Regularly monitor your website’s speed and make adjustments as needed."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Test Your Current Speed: Use Google PageSpeed Insights or GTmetrix to assess your current website speed."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we’re passionate about helping local businesses succeed online."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we’re passionate about helping local businesses succeed online."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Contact us today to learn more about our website design and SEO services."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "So, how much do you think website speed impacts your?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "So, how much do you think website speed impacts your?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

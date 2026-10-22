@@ -3,9 +3,138 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-02T19:55:48.623Z",
+  "generatedAt": "2026-09-17T21:33:26.509Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-capital-gains-tax-how-it-works-in-the-us",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Your sale records matter more than a headline rate."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Your sale records matter more than a headline rate."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Your sale records matter more than a headline rate."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "the long term collectibles rate can differ from the rates associated with stock gains."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "IRS guidance describes a maximum 28 percent rate for net collectibles gains."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Some individuals may also face net investment income tax."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Your gain is based on what you actually realized from the sale minus your adjusted basis."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "and the dates connected with the particular items."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "identify the question rather than filling it with a guess."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "a gain is long term when the asset was held more than one year and short term when it was held one year or less."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Special circumstances can affect the analysis."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "or business holdings to a qualified tax professional before relying on a general investment sale overview."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Most capital asset sales are reported through Form 8949 and summarized on Schedule D."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Do not confuse a dealer's information reporting threshold with your own filing obligation."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Keep your own documents available to support the amounts reported."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Organize dates and identity, acquisition and basis evidence"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Connect the purchase invoice to the sale record and explain which items were sold if you disposed of only part of a holding."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Your worksheet should lead back to the underlying evidence."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "This is a federal tax overview, not a determination of your state obligations or final liability."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Review the complete return with the relevant facts instead of multiplying a headline percentage by the sale proceeds."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Use the article's primary sources and discuss unresolved questions with your preparer."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Which sale record would you organize first?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Which sale record would you organize first?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

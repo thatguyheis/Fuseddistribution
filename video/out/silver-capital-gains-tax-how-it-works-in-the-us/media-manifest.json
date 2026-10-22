@@ -2,60 +2,103 @@
   "version": 1,
   "segments": {
     "0": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
-      "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US",
-      "prefer": "video",
-      "updatedAt": "2026-08-02T19:49:04.561Z"
+      "key": "{\"profileVersion\":2,\"provider\":\"open-generative-ai-local\",\"model\":\"dreamshaper-8\",\"modelFile\":\"DreamShaper_8_pruned.safetensors\",\"promptHash\":\"db38f6c1cacb5ab034968de0e5961694305fbfb2d623dd108e6a9a7ca46b7084\",\"seed\":1125027146,\"width\":384,\"height\":640,\"steps\":8}",
+      "source": "open-generative-ai-local",
+      "providerVersion": "c90e908",
+      "sourceUrl": "https://github.com/anil-matcha/open-generative-ai",
+      "applicationLicense": "MIT",
+      "model": "dreamshaper-8",
+      "modelFile": "DreamShaper_8_pruned.safetensors",
+      "modelLicense": "creativeml-openrail-m",
+      "prompt": "Atmospheric vertical background plate showing an abstract dark metallic chamber with cool silver reflections, soft particles, and layered atmospheric depth. dark charcoal background, cool silver highlights, subtle cyan accent. Soft focus, low detail, cinematic depth, no foreground focal object, clean negative space through the center for a separate caption overlay. Background scenery only. No poster, title card, package, label, sign, screen, interface, document, coin face, currency, or product close-up. No words, letters, numbers, charts, logos, watermarks, signatures, recognizable people, or financial claims.",
+      "topic": "silver",
+      "sceneId": "silver-general",
+      "scene": "an abstract dark metallic chamber with cool silver reflections, soft particles, and layered atmospheric depth",
+      "promptHash": "db38f6c1cacb5ab034968de0e5961694305fbfb2d623dd108e6a9a7ca46b7084",
+      "seed": 1125027146,
+      "width": 1080,
+      "height": 1920,
+      "generatedAsset": true,
+      "factualGraphic": false,
+      "backgroundTreatment": "portrait-crop, blur-6, darken-0.14, saturation-0.7, vignette",
+      "tags": [
+        "silver",
+        "silver-general"
+      ],
+      "query": "Your sale records matter silver",
+      "prefer": "photo",
+      "attempts": [
+        "open-generative-ai-local"
+      ],
+      "path": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-0.jpg",
+      "status": "approved-for-render",
+      "updatedAt": "2026-09-17T20:57:30.130Z",
+      "libraryAssetId": "fused-bg-a2358bd96a33f179"
     },
     "1": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US 28 silver federal\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US 28 silver federal",
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-vault\",\"tags\":[\"coins\",\"silver\",\"silver-vault\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-74b0b97b44b11a71",
+      "topic": "silver",
+      "sceneId": "silver-vault",
+      "tags": [
+        "coins",
+        "investing",
+        "silver",
+        "silver-vault"
+      ],
+      "sha256": "74b0b97b44b11a71b438646b94214ef3b5ba16ba5471c15b086fcc63ab48c3b8",
+      "sourceSlug": "austrian-silver-philharmonic-guide",
+      "status": "approved-background-only",
+      "query": "CHECK COLLECTIBLES RULE silver",
       "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.622Z"
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/silver-capital-gains-tax-how-it-works-in-the-us/segment-1.jpg",
+      "updatedAt": "2026-09-15T23:39:50.341Z"
     },
     "2": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US federal tax purposes\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"START WITH ACTUAL SALE silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US federal tax purposes",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.622Z"
+      "query": "START WITH ACTUAL SALE silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.177Z"
     },
     "3": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US based what actually\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"DISTINGUISH HOLDING PERIOD silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US based what actually",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.623Z"
+      "query": "DISTINGUISH HOLDING PERIOD silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.178Z"
     },
     "4": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US bought silver time\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"KEEP REPORTING OBLIGATIONS SEPARATE silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US bought silver time",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.623Z"
+      "query": "KEEP REPORTING OBLIGATIONS SEPARATE silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.178Z"
     },
     "5": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US 28 means maximum\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "key": "{\"query\":\"ORGANIZE THREE RECORD GROUPS silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US 28 means maximum",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.624Z"
+      "query": "ORGANIZE THREE RECORD GROUPS silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.178Z"
     },
     "6": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US filing question whether\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"REVIEW COMPLETE RETURN silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US filing question whether",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.624Z"
+      "query": "REVIEW COMPLETE RETURN silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.179Z"
     },
     "7": {
-      "key": "{\"query\":\"silver capital gains tax how it works in the US keep purchase dates\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
+      "key": "{\"query\":\"Which sale record would silver\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
       "source": "local-photo",
-      "query": "silver capital gains tax how it works in the US keep purchase dates",
-      "prefer": "photo",
-      "updatedAt": "2026-08-02T19:49:04.624Z"
+      "query": "Which sale record would silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T20:57:30.180Z"
     },
     "8": {
       "key": "{\"query\":\"silver capital gains tax how it works in the US silver was held\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
@@ -78,5 +121,6 @@
       "prefer": "photo",
       "updatedAt": "2026-08-02T19:49:04.625Z"
     }
-  }
+  },
+  "generativeCandidates": {}
 }

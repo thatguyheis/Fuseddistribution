@@ -7,7 +7,7 @@
   "1": {
     "type": "photo",
     "src": "photos/tiktok-for-local-business-does-it-work/segment-1.jpg",
-    "source": "local-photo"
+    "source": "fused-generated-background-library"
   },
   "2": {
     "type": "photo",
@@ -17,41 +17,21 @@
   "3": {
     "type": "photo",
     "src": "photos/tiktok-for-local-business-does-it-work/segment-3.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "4": {
     "type": "photo",
     "src": "photos/tiktok-for-local-business-does-it-work/segment-4.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "5": {
     "type": "photo",
     "src": "photos/tiktok-for-local-business-does-it-work/segment-5.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   },
   "6": {
     "type": "photo",
     "src": "photos/tiktok-for-local-business-does-it-work/segment-6.jpg",
-    "source": "pixabay"
-  },
-  "7": {
-    "type": "photo",
-    "src": "photos/tiktok-for-local-business-does-it-work/segment-7.jpg",
-    "source": "pixabay"
-  },
-  "8": {
-    "type": "photo",
-    "src": "photos/tiktok-for-local-business-does-it-work/segment-8.jpg",
-    "source": "pixabay"
-  },
-  "9": {
-    "type": "photo",
-    "src": "photos/tiktok-for-local-business-does-it-work/segment-9.jpg",
-    "source": "pixabay"
-  },
-  "10": {
-    "type": "photo",
-    "src": "photos/tiktok-for-local-business-does-it-work/segment-10.jpg",
-    "source": "pixabay"
+    "source": "local-photo"
   }
 }

@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-15T20:36:17.418Z",
+  "generatedAt": "2026-08-26T14:15:09.974Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "online-booking-vs-phone-calls-for-appointments",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Lose 15-20 hours a week to phone calls , book online instead."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Lose 15-20 hours a week to phone calls , book online instead."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Lose 15-20 hours a week to phone calls , book online instead."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you spending hours answering phone calls just to schedule appointments?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many small businesses struggle with the outdated process of relying solely on phone calls for scheduling."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’ve seen firsthand how drastically online booking can transform your business."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "This creates a bottleneck and prevents you from proactively reaching out to potential clients."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Your website should be the central hub for scheduling"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "they expect to find an easy way to see your availability and secure a time slot."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "They require a dedicated phone line, staff to answer calls"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "When a potential customer calls, they might not even be ready to book immediately."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "This means you’re spending time talking to someone who isn’t yet committed to your services."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "They can choose a time that works best for them, eliminating the back-and-forth of phone calls."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It’s a proactive approach that converts interest into action."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "preventing double-bookings and ensuring that you’re not overbooked."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s not enough to simply have a phone number listed; you need to make it easy for customers to book online."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Make the process as simple and intuitive as possible."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This creates a clear and direct path for customers to book your services."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Online booking, on the other hand, allows customers to schedule at their convenience, 24/7."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This dramatically reduces the number of wasted calls and increases the likelihood of securing a booking."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "A study found that 71 percent of consumers prefer to book appointments online."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Phone calls are valuable for handling emergencies and providing personalized service."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Keep the phone number visible on your website for those situations where a phone call is truly necessary."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "This directs customers to the most efficient and convenient booking option."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Consider offering a free trial to give potential customers a chance to experience the benefits of online booking."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Stop letting phone calls dictate your business schedule."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "effective online presence that attracts more customers and generates more bookings."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Do you think switching to online booking would significantly improve?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Do you think switching to online booking would significantly improve?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-21T18:11:34.668Z",
+  "generatedAt": "2026-08-26T14:15:14.287Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-royalty-companies-explained-wheaton-precious-met",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Own the silver, not just the metal."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Own the silver, not just the metal."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Own the silver, not just the metal."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking for a way to invest in silver that goes beyond simply buying physical coins or bars?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "particularly in relation to Wheaton Precious Metals"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "we stock a wide range of precious metals products and we recommend exploring these companies as part of a diversified portfolio."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "they secure long-term royalty agreements - typically 5 to 20 years - with existing silver producers."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "These agreements grant them a defined percentage of the revenue generated from the sale of silver extracted from the mine."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "regardless of the fluctuations in silver prices."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "outlining the percentage of revenue they’ll receive and the duration of the agreement."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "5 percent to 3 percent of the revenue generated from silver sales."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "they calculate the royalty payment due to the royalty company."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "As of December 31, 2023, Wheaton Precious Metals held approximately 31."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "This demonstrates the significant role WPM plays in supporting the silver royalty sector."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Investing in silver royalty companies offers several advantages: Passive Income: Royalty payments provide a relatively stable and predictable income stream"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Here’s a comparison of key metrics: For more on this, see How To Divide Silver In An Estate Fairly."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Revenue Multiples: This ratio (Revenue / Shares Outstanding) indicates how much revenue each share is generating."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "As of the end of 2023, STRC’s revenue multiple was 1."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "it’s crucial to understand the risks involved: Silver Price Volatility: While royalty payments are relatively stable"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A significant drop in silver prices could negatively impact royalty company revenues."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "the underlying silver producers may face challenges such as mine closures or production disruptions."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Combine silver royalty companies with other investments to create a well-diversified portfolio."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Understand Tax Implications: Consult with a tax advisor to understand the tax implications of investing in silver royalty companies."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Ignoring Royalty Terms: Don’t just look at revenue; carefully examine the terms of the royalty agreements"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "providing them with increased revenue streams."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "the role of royalty companies in securing a consistent supply of silver is likely to become even more important."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "analysts predict that the global silver market will grow by approximately 4 percent annually over the next five years."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We at Fused Distribution encourage you to explore these options and build a portfolio that aligns with your investment goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We at Fused Distribution encourage you to explore these options and build a portfolio that aligns with your investment goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don’t just invest in silver; invest strategically."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you think silver royalty companies offer a more stable?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you think silver royalty companies offer a more stable?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

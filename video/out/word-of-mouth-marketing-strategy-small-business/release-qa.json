@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-10T18:41:35.490Z",
+  "generatedAt": "2026-08-26T14:15:17.947Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "word-of-mouth-marketing-strategy-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Word-of-mouth marketing generates a $5-$10 return for every dollar spent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Word-of-mouth marketing generates a $5-$10 return for every dollar spent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Word-of-mouth marketing generates a $5-$10 return for every dollar spent."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re pouring money into ads, but leads are slow to trickle in."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "most local businesses are fighting an uphill battle against the sheer volume of digital noise."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It’s not about flashy campaigns; it’s about delivering exceptional experiences that people want to talk about."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A brightly colored banner or a catchy jingle doesn’t automatically translate into a customer."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "research indicates that a large percentage of consumers trust recommendations from friends and family more than online advertisements."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "or your auto repair shop, it feels genuine."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Consider this: a survey found that a significant number of consumers are more likely to try a new business after hearing a positive recommendation."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Research indicates that word-of-mouth marketing can generate a return of $5 to $10 for every dollar invested."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "It’s about cultivating a culture of delight within your business."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Here’s how to do it: Step 1: The Trigger - Set Up a Moment for Sharing Think about the moment a client is genuinely thrilled with your service."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It’s not necessarily the grand finale; it’s often a smaller, more personal moment."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Maybe it’s after a particularly challenging repair, a beautiful cake is delivered"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "If you know anyone else who might benefit from your service, we’d love for you to share!"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "” Step 2: The Ask - Don’t Be Shy, But Be Strategic Stop waiting for referrals to magically appear."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Would you know anyone else who needs this kind of help?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Schedule a quick check-in a few weeks after you close a big problem for someone."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "” Then, you gotta thank them for sending someone your way."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "or even a handwritten thank-you note can go a long way."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "” or “If you could just refer one person…” Instead, focus on building genuine relationships."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Think about when a client finishes a job perfectly."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Give them a simple script or a quick email they can just copy and paste."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "That’s where the real word of mouth comes from."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "You need a way to ask them to tell someone else."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Give them a simple script or a quick email they can just copy and paste."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Start today by focusing on delivering exceptional service and making it easy for your happy customers to spread the word."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "And remember, the most powerful marketing tool you have is the people who already love what you do."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Contact us today to learn more about how we can help you build a thriving referral network."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, what’s your biggest challenge when it comes to getting?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, what’s your biggest challenge when it comes to getting?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

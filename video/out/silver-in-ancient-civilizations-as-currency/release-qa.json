@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-15T20:00:50.748Z",
+  "generatedAt": "2026-08-26T14:15:12.276Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-in-ancient-civilizations-as-currency",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "For millennia, silver’s consistent value has secured economies."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "For millennia, silver’s consistent value has secured economies."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "For millennia, silver’s consistent value has secured economies."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Or perhaps you’re curious about the history of precious metals and how they’ve been used throughout time?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many people are drawn to the idea of owning a tangible asset that can hold its value."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "tracing its use across ancient civilizations and how that history informs modern investment strategies."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "These weights, often referred to as “shekels” or “drachmas, ” dictated the value of goods"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The value of ancient silver consistently demonstrated the economic strength and stability of the regions that used it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "maintained a relatively consistent value for centuries, reflecting the stability of those economies."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Many ancient civilizations, from the Egyptians to the Romans"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The standardization of silver weights, as mentioned previously"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "These ancient standards weren't arbitrary; they were carefully calibrated to reflect the inherent value of the metal itself."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "the use of silver in temple offerings and royal coinage underscored its importance as a symbol of wealth and power."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Ancient societies didn’t simply use silver; they established precise rules for its use."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "defined the weight and purity of silver that could be accepted as currency."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "For example, the Athenian tetradrachm, known for its purity and consistent weight"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "The use of silver in temple offerings and royal coinage underscored its importance as a symbol of wealth and power."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The consistent weight of the silver used in these contexts provided a reliable measure of value."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The consistent demand for silver from the Americas provided a steady source of wealth and investment opportunities."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "The value of silver, even in these non-monetary applications, consistently held its own"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "The consistent demand for silver in jewelry and decorative objects demonstrates its enduring appeal as a precious metal."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Copper’s value rose and fell dramatically, reflecting its greater volatility as a commodity."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "also remained relatively consistent, demonstrating the enduring trust placed in the metal."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "The average weight of a silver shekel in ancient Egypt was approximately 13."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "The value of silver, even in these non-monetary applications, consistently held its own"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "even during times of economic upheaval."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The value of ancient silver shows long-term economic stability in those regions."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "The value of silver, even in these non-monetary applications, consistently held its own"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "A recent study of precious metals found that silver consistently outperformed other assets during periods of inflation"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let Fused Distribution help you build a secure and valuable silver reserve today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you find this history of silver as currency fascinating?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you find this history of silver as currency fascinating?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

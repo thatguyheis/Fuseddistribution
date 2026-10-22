@@ -1,85 +1,60 @@
 {
   "slug": "tiktok-for-local-business-does-it-work",
   "title": "tiktok-for-local-business-does-it-work",
-  "totalDuration": 133.105,
+  "totalDuration": 124,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 3.88,
-      "text": "TikTok is your local search engine for nearby customers.",
-      "narration": "TikTok is your local search engine for nearby customers."
+      "endSec": 17,
+      "text": "Test one useful local idea",
+      "narration": "Could TikTok help your local business? Treat it as a small test with a clear purpose, not a promise of customers. Choose one service, one audience and one useful action you want a viewer to take. Decide how much time you can spend before you start."
     },
     {
       "type": "overlay",
-      "startSec": 3.88,
-      "endSec": 19.353,
-      "text": "YES TIKTOK WORKS FOR LOCAL",
-      "narration": "Yes, TikTok works for local business, but only if you treat it like a discovery channel for nearby customers, not a viral lottery ticket. The owners who win post short, useful videos about their actual work, tag their city, and answer the questions real customers ask before they call."
+      "startSec": 17,
+      "endSec": 34,
+      "text": "ANSWER ONE QUESTION",
+      "narration": "Start with a question customers already ask. A repair shop could explain what information to bring when requesting an estimate. A bakery could show how to place an advance order. Use examples from your own work, explain the limits, and avoid presenting a demonstration as a guaranteed result."
     },
     {
       "type": "overlay",
-      "startSec": 19.353,
-      "endSec": 35.733,
-      "text": "RESTAURANTS SALONS AUTO DETAILERS CONTRACTORS",
-      "narration": "Restaurants, salons, auto detailers, contractors, med spas, coffee shops, tattoo studios, gyms, and pet groomers all have something to show on camera every single day. If your work produces a before-and-after, a satisfying process clip, or a customer reaction, you have content."
-    },
-    {
-      "type": "stat",
-      "startSec": 35.733,
-      "endSec": 51.653,
-      "text": "6 AND PM LOCAL TIME IS",
-      "narration": "Most small business owners cannot sustain it, and the quality drops by week three. Three videos a week, posted Tuesday, Thursday, and Saturday between 6 and 9 PM local time, is enough to feed the algorithm and stay top of mind. Build your week around three video types: 1."
+      "startSec": 34,
+      "endSec": 51,
+      "text": "MAKE LOCATION CLEAR",
+      "narration": "State the area you actually serve and make the next step easy to understand. A viewer should be able to tell what you offer and how to contact you. Check the destination from a phone. Do not assume someone watching a video is nearby or ready to buy."
     },
     {
       "type": "overlay",
-      "startSec": 51.653,
-      "endSec": 66.726,
-      "text": "PAN ACROSS A FRESHLY PAVED",
-      "narration": "Pan across a freshly paved driveway with the street sign in frame. Show a happy customer at their salon chair with your shop's window behind them. Tag the location in the caption every time. That last step matters more than any hashtag."
+      "startSec": 51,
+      "endSec": 68,
+      "text": "KEEP PRODUCTION SIMPLE",
+      "narration": "Film one clear idea at a time. Use understandable speech and readable captions, then preview the finished video on a phone. Show your own materials and get permission before featuring customers. A useful explanation is a practical starting point; it does not require copying an unrelated trend."
     },
     {
       "type": "overlay",
-      "startSec": 66.726,
-      "endSec": 79.839,
-      "text": "HERE IS WHAT IS ACTUALLY",
-      "narration": "Here is what is actually in it.\" Weak hooks that kill your reach: \"Hey guys, welcome back to my page.\" \"Today I am going to talk about...\" \"So a lot of people have been asking me...\" Skip the intro. Get to the value in the first sentence or you lose the viewer."
-    },
-    {
-      "type": "stat",
-      "startSec": 79.839,
-      "endSec": 89.799,
-      "text": "47% OF TIKTOK USERS HAVE DISCOVERED",
-      "narration": "47 percent of TikTok users have discovered a small business on TikTok before hearing about it anywhere else , and those people will only convert if they can find a way to contact you in three seconds."
-    },
-    {
-      "type": "stat",
-      "startSec": 89.799,
-      "endSec": 98.219,
-      "text": "8 PM ON A SATURDAY RESPOND",
-      "narration": "If someone DMs you at 8 PM on a Saturday, respond by Sunday morning at the latest. A 24-hour delay loses the lead to whoever answered first."
+      "startSec": 68,
+      "endSec": 85.2,
+      "text": "CHECK MUSIC RIGHTS",
+      "narration": "Review the audio before posting. TikTok provides a Commercial Music Library for business content, but do not assume a song available in an app is cleared for every use. Check the permitted use for each destination when sharing the same video elsewhere, and retain the rights evidence with your project."
     },
     {
       "type": "overlay",
-      "startSec": 98.219,
-      "endSec": 112.892,
-      "text": "THE ALGORITHM AND YOUR FUTURE",
-      "narration": "The algorithm and your future customers both want to see a person. Owners who appear on camera consistently outperform faceless brand accounts by a wide margin. If you hate being on camera, get one employee comfortable with it and make them the face of the account."
-    },
-    {
-      "type": "overlay",
-      "startSec": 112.892,
-      "endSec": 127.205,
-      "text": "DO THAT FOR EIGHT WEEKS",
-      "narration": "Do that for eight weeks before you judge the results. The accounts that quit in week three never see the curve bend. The ones that push through to week ten usually find their first real customer pipeline waiting on the other side. The only question is how soon you start."
+      "startSec": 85.2,
+      "endSec": 112.4,
+      "text": "TRACK REAL ENQUIRIES",
+      "narration": "Keep a simple record of the topic, posting date, production time and enquiries you can reasonably connect to the test. Ask new customers how they found you without assuming every sale came from a video. Views can help describe reach, but they do not establish local demand or profitable work. Review the test against the time spent and the useful responses received. Continue ideas that help people understand your business, revise confusing explanations, and stop formats that consume time without evidence of value."
     },
     {
       "type": "question",
-      "startSec": 127.205,
-      "endSec": 133.105,
-      "text": "Is your local business ready to turn TikTok views into?",
-      "narration": "Is your local business ready to turn TikTok views into? Follow for more practical business tips.",
+      "startSec": 112.4,
+      "endSec": 124,
+      "text": "Which customer question would you answer first in your business?",
+      "narration": "Which customer question would you answer first in your business?",
+      "engagementBeat": true,
       "subtext": "COMMENT BELOW"
     }
-  ]
+  ],
+  "engagementPolicy": 1,
+  "contentKind": "educate"
 }

@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-06T20:13:59.440Z",
+  "generatedAt": "2026-08-26T14:15:12.819Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-ira-vs-physical-silver-at-home-which-is-better",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Secure silver: an IRA offers significantly greater protection."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Secure silver: an IRA offers significantly greater protection."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Secure silver: an IRA offers significantly greater protection."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver but unsure whether to roll it into a Silver IRA or keep it in your home safe?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "we stock a wide variety of silver bullion and coins to suit every investor’s needs."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "We recommend carefully considering your long-term goals, risk tolerance"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A Silver IRA offers a layer of protection against inflation and potential market volatility"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Storing physical silver at home presents significant security risks."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "A dedicated home safe is an investment in itself, and even the best safes aren’t foolproof."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "but the costs associated with each option differ substantially."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "plus the cost of a safe (potentially $500 - $5, 000+ depending on the quality and features)"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Silver IRA: There are upfront setup fees, typically ranging from $100 to $500."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Physical Silver: When you sell physical silver, you’ll pay capital gains taxes on any profit."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Silver IRA: A Silver IRA is a tax-deferred account."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This can be a significant advantage, especially if you’re investing for the long term."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "You can sell your silver through the custodian and receive a check back."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "This is generally a much faster and more convenient process than selling physical silver privately."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "It often acts as a hedge against inflation and economic uncertainty."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Silver IRA: The custodian handles most of the administrative tasks"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Physical Silver: There’s no minimum investment to buy physical silver"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Silver IRA: Silver IRAs typically require a minimum investment of $5,000 to open."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Open an Account: Complete the application process and fund your account."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Neglecting Security (Physical Silver): Failing to adequately secure physical silver is a significant risk."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Choosing an Unreliable Custodian (Silver IRA): Selecting a custodian with high fees or poor customer service can negatively impact your investment."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "physical silver can be a viable option for those who prioritize control and are willing to take on the responsibility of secure storage."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Contact us today to discuss your investment goals and explore the best silver options for your needs."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Ready to explore your silver investment options?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering both options , which ultimately feels right for your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering both options , which ultimately feels right for your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

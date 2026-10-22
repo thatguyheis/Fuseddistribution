@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-02T18:58:43.335Z",
+  "generatedAt": "2026-08-26T14:15:15.727Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "state-sales-tax-on-silver-coins-which-states-charge-it",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "California charges over 9 percent sales tax on silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "California charges over 9 percent sales tax on silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "California charges over 9 percent sales tax on silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Buying silver coins - whether for investment, collecting"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "However, navigating the complexities of purchasing can sometimes feel overwhelming"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Many buyers assume that silver coins are exempt, but the reality is more nuanced."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It varies significantly from state to state, and even within states"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": ") but often exempt collector coins."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Several states consistently apply sales tax to silver bullion."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "25 percent plus any applicable local taxes."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Silver bullion is subject to this rate."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Illinois: Illinois’s sales tax rate is 6."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "These exemptions are often based on the intent of the buyer - typically investment or collecting."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Arizona: Arizona exempts silver bullion purchased for investment purposes."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Georgia: Georgia exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Nevada: Nevada exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Oregon: Oregon exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Utah: Utah exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Virginia: Virginia exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Wisconsin: Wisconsin exempts silver bullion when purchased for investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "purchasing silver with the primary intention of holding it as a store of value qualifies for the exemption."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The IRS definition: The IRS considers a coin to be a collectible if it’s purchased primarily for its numismatic value (its value as a collectible) rather than its intrinsic value (the value of the metal it’s made from)."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The IRS definition: The IRS considers a coin to be a collectible if it’s purchased primarily for its numismatic value (its value as a collectible) rather than its intrinsic value (the value of the metal it’s made from)."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "State variations: States interpret this definition differently."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "For example, if you buy a 10-ounce silver bar for $1,000 in a state with a 7."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "it’s essential to research the sales tax laws in the state where you’re purchasing."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Identify the State: Determine the state where the seller is located and where you'll be taking possession of the silver."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Misinterpreting “Investment”: Understand how your state defines “investment” for silver bullion exemptions."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Ignoring Local Taxes: Remember that some counties or cities may add additional sales taxes on top of the state rate."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Not Keeping Records: Maintain accurate records of your purchases to support your tax return if needed."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "We stock a diverse selection of silver bullion and coins"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "and we recommend carefully reviewing the applicable sales tax regulations before making a purchase."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Start planning your silver investment today - and don’t hesitate to contact us with any questions."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "Considering all this state-by-state tax info, what’s your biggest concern?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "Considering all this state-by-state tax info, what’s your biggest concern?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

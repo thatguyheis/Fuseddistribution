@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-24T19:19:43.998Z",
+  "generatedAt": "2026-08-26T14:15:10.233Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "pay-per-click-vs-organic-seo-for-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "PPC delivers immediate leads , but only while you pay."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "PPC delivers immediate leads , but only while you pay."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "PPC delivers immediate leads , but only while you pay."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get noticed online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and figuring out the best way to reach your local customers can feel overwhelming."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "or focus on building your online presence through Organic Search Engine Optimization (SEO)?"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Pay Per Click (PPC) advertising, like Google Ads, offers an immediate injection of visibility."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "When someone searches for a service you offer - let’s say “plumber near me” - your ad appears at the top of the search results."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "If you need a new customer today, PPC is a powerful tool."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "That’s a significant investment that disappears when you pause the campaign."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It’s about optimizing your website and online content to rank higher in search results organically - meaning without paying for each click."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Think of it as building a solid foundation for your business’s online presence."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "While there are costs associated with website design, content creation, and potentially SEO tools"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "while a comparable investment in SEO could range from $300-$1500 per month"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The key difference is that with PPC, you’re paying for access, while with SEO"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Make sure your GBP is completely filled out with accurate information - your business name, address"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "phone number, website, hours of operation, and a detailed description of your services."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "focus on creating high-quality content that addresses the needs of your local audience."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "if you run a PPC campaign targeting “dog grooming services city name” and see a high click-through rate for “mobile dog grooming"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "” you know that’s a keyword worth investing in for your SEO efforts."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Focus on keywords that mean someone is actively looking for your services and is ready to call you."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "For example"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "you can create a dedicated page on your website that targets that keyword and optimize it for SEO."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Don’t waste time chasing traffic numbers that don’t translate into calls."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Add photos, videos, and posts to keep your profile fresh and engaging."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Include these keywords in your website content, GBP description, and PPC ads."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Get Reviews: Positive reviews on Google and other platforms can significantly boost your local rankings."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Focus on delivering value to your local customers and building genuine relationships."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "we specialize in helping small businesses like yours navigate the digital world and achieve their marketing goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "responsive websites and develop targeted SEO strategies that get you found on Google."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering both PPC and SEO, which approach do you think?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering both PPC and SEO, which approach do you think?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

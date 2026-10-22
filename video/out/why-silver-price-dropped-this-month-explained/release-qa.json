@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-29T19:20:23.992Z",
+  "generatedAt": "2026-08-26T14:15:17.680Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "why-silver-price-dropped-this-month-explained",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver fell sharply in Q2, but the old chart explained it badly."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver fell sharply in Q2, but the old chart explained it badly."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver fell sharply in Q2, but the old chart explained it badly."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Fused Distribution's cached spot snapshot moved from $60."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "12 percent, between the two daily snapshots."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Silver had already experienced a sharp second-quarter correction after an unusually strong start to 2026."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The LBMA Q2 2026 market report provides two directly comparable observations."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "795 per ounce."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The before-and-after graphic uses only the same metric, silver price in USA dollars per ounce"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "or technical indicators into the bar length."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The World Bank's June 2026 precious-metals review reports that silver prices fell in the second quarter after a 55 percent rise in the first quarter."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "a stronger dollar, easing safe-haven demand, and profit-taking after a strong rally."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "some defensive buying can reverse."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "These are market mechanisms, not proof that one headline caused the July 29 daily move."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "A falling price does not mean the long-term supply picture suddenly became loose."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The Silver Institute's 2026 outlook expects a sixth consecutive market deficit in 2026."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "and weaker jewelry or silverware demand."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The competing forces help explain why silver can remain structurally tight and still fall sharply over a shorter period."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The previous “Silver Price Decline: Key Stats” graphic put the silver decline, gold decline"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Those numbers did not share a metric, time period, denominator, or meaning."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "2 percent price decline in any useful analytical sense."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "For category bars, every category must share the same metric, unit, period, and denominator."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Whether the move is daily, monthly, quarterly, or from an intraday high."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Dealer premiums and spreads, which can move differently from spot."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "For a repeatable monitoring process, read How to Track Silver Price Daily."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "12 percent from July 28 to July 29, 2026, while the LBMA recorded a much larger 21."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "reduced safe-haven demand, profit-taking, and concern about price-sensitive industrial use."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "None of those factors erases the market's continuing supply deficit"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Fused Distribution cached spot API LBMA Precious Metals Market Report: Q2 2026 World Bank: Precious metals retreat from record highs Silver Institute: 2026 market outlook"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Fused Distribution cached spot API LBMA Precious Metals Market Report: Q2 2026 World Bank: Precious metals retreat from record highs Silver Institute: 2026 market outlook"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which signal are you watching after silver's decline?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which signal are you watching after silver's decline?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

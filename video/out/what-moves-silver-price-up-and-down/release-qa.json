@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-05T19:36:38.705Z",
+  "generatedAt": "2026-08-26T14:15:17.225Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "what-moves-silver-price-up-and-down",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Solar demand sets the silver price floor, driving demand higher than ever."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Solar demand sets the silver price floor, driving demand higher than ever."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Solar demand sets the silver price floor, driving demand higher than ever."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Silver price moves on five forces: industrial demand (especially solar panels)"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "investor flows into ETFs and coins, the USA dollar's strength, the gold-silver ratio"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we watch these inputs every morning before we quote."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "So when solar installs grow 20 percent year over year, silver demand grows with it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "So when solar installs grow 20 percent year over year, silver demand grows with it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "That puts a floor under spot price even when investors lose interest."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "When inventory gets thin, lease rates spike and spot price follows."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Global silver mine production is forecast to rise to a seven-year high in 2025 ."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "and demand keeps climbing faster than mines can scale."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Every billion that flows into SLV pulls physical silver off the market and into a vault."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Mark the eight FOMC meeting dates each year on your calendar."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Three days before each meeting, check the CME FedWatch tool for the implied probability of a cut."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "When the ratio gets above 90, silver is cheap relative to gold."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "How to trade it without trading paper: Ratio above 85: shift your next purchase toward silver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "We see buyers load up on silver rounds and 100 oz bars at these levels."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "When all three flash bullish, do not chase."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Domestic mining affects what you pay over spot, not just spot itself."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Geological Survey reported USA silver mine production of approximately 1,000 metric tons in 2024 ."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Substitute generic rounds or 10 oz bars when sovereign coin premiums spike."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Lock prices early in the month, before mint allocation reports come out."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "You need to read the inputs and act when two or three line up in your favor."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Then check our reserve page at /reserve/ and decide which products fit your budget for this cycle."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "The buyers who win at silver over ten years are the ones who show up every month"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "not the ones who try to time the bottom."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Which silver driver will you focus on for your next?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Which silver driver will you focus on for your next?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

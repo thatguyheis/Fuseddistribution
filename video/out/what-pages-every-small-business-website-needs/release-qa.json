@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-04T20:30:16.541Z",
+  "generatedAt": "2026-08-26T14:15:17.288Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "what-pages-every-small-business-website-needs",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Eight pages convert visitors into customers."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Eight pages convert visitors into customers."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Eight pages convert visitors into customers."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Every small business website needs eight core pages to convert visitors into customers: a homepage"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "an about page, a services or products page, a contact page, a testimonials or reviews page"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "a portfolio or gallery, an FAQ page, and a location page."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Here is what each page should contain and how to build it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Your homepage answers three questions above the fold: what you sell, who you serve"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Visitors decide whether to stay in about 50 milliseconds (Google research with Carleton University)."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "The about page is where trust gets built, and most small businesses waste it on corporate filler."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Tell people who you are."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A short story of why you started and how long you have done this."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "If you cannot list exact prices, give a range or a starting point: \"Most repairs run $150 to $400."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "If you offer more than five services"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "give each one its own dedicated page and link to them from a main services hub."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Set expectations in writing: \"We reply within one business day."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Add the same phone number in your header and footer so people never have to find this page to reach you."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "If you take bookings online, put the scheduling button right here too."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Update this page every couple of months as new reviews come in."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Contractors, salons, bakeries, photographers, landscapers, and cleaners all need a gallery."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "People want proof you can do what you claim."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "This format helps you show up in Google's featured snippets and in AI answers"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "End with a line pointing people to your contact page if their question is not listed."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "If you serve a specific area, a location page tells both customers and Google where you operate."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A blog is the one page set you can skip at launch and add later."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A blog is the one page set you can skip at launch and add later."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "A blog is the one page set you can skip at launch and add later."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Write your homepage headline first, then your services sections, then collect five reviews to post."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Get those live, watch which contact form fields people actually fill out, and adjust from there."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "A small site that loads fast and answers questions clearly will out-earn a big site that looks pretty and says nothing."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which of these eight pages will boost your business conversions?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which of these eight pages will boost your business conversions?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

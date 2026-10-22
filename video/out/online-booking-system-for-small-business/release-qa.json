@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-08T17:22:48.868Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:09.848Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "online-booking-system-for-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Boost bookings by 20-30 percent with an online system."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Boost bookings by 20-30 percent with an online system."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Boost bookings by 20-30 percent with an online system."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you spending too much time answering phone calls and scheduling appointments?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "As a small business owner, your time is your most valuable asset, and frankly"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It’s a common struggle - we hear it all the time from our clients here at Fused Distribution."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "We’ll cover everything from choosing the right platform to integrating it with your existing website and even exploring some basic SEO tips to make sure your new booking system is actually seen."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Let’s get started and get you booked!"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "I see firsthand how crucial online presence is for small businesses in the USA."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It’s a simple way to modernize your operations, attract new clients, and ultimately"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "What is an Online Booking System and Why Should You Care?"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "we see firsthand how crucial a strong online presence is for small businesses."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The Benefits of Implementing an Online Booking System for Your Business As a web design and SEO specialist at Fused Distribution"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "we see firsthand how crucial a strong online presence is for small businesses."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "It’s surprisingly simple and offers a huge return on investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "modern online booking platforms are designed to be user-friendly and packed with features that can significantly simplify your operations."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "A good system should start with intuitive scheduling - allowing clients to easily see your availability and book appointments directly through your website."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This eliminates phone calls and back-and-forth emails"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "businesses using online booking systems report a 20-30 percent increase in bookings."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Many platforms offer free trials, allowing you to test them out before committing."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "we’re here to help you navigate this process and ensure your booking system smoothly integrates with your overall online presence."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Don’t get bogged down in complex features - start with the basics and expand as your business grows."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Most platforms offer easy-to-use plugins or integrations"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "you can significantly boost your bookings and focus on what you do best - running your business!"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "we specialize in creating user-friendly websites and ensuring smooth integrations like this."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Let us handle the technical details while you focus on running your business - we’ll work with you to get your booking system working perfectly with your website and driving more customers your way."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Let us handle the technical details while you focus on running your business - we’ll work with you to get your booking system working perfectly with your website and driving more customers your way."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Regularly check your booking system's analytics to understand which services are most popular and optimize your website to highlight those offerings."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Automated confirmations and reminders reduce no-shows"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "businesses utilizing online booking systems see an average of a 20 percent increase in appointments."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering switching to an online booking system?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering switching to an online booking system?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

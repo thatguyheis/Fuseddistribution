@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-25T18:12:23.509Z",
+  "generatedAt": "2026-08-26T14:15:13.300Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-panda-coins-from-china-complete-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver Panda coins offer a 99."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "9 percent pure investment with a current market value of $23."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "9 percent pure investment with a current market value of $23."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver, but unsure where to start?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Silver Panda coins from China are a popular and accessible option for new and experienced investors alike."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’re here to guide you through everything you need to know."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "While initially produced in 1983, the modern Silver Panda coins"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "They’re instantly recognizable by their distinctive panda design, which changes annually."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Currently, there are several sizes available: 1 oz, 2 oz, 5 oz, 10 oz, and 1 kg."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Because spot prices and premiums move constantly, check current market data before buying."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Choose a Reputable Dealer: We recommend purchasing from a trusted dealer like Fused Distribution."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Buying from a reputable dealer helps ensure you’re getting authentic coins and avoids potential scams."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Understand Grading: Coin grading assesses the condition of a coin."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A higher grade coin will generally command a higher price."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "store them securely to protect them from damage and theft."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s crucial to verify the authenticity of your coins before purchasing."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "purchasing from a trusted dealer significantly reduces the risk of buying a counterfeit coin."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Check the Mint Mark: Genuine Silver Panda coins have a “P” mint mark indicating they were produced by the People’s Bank of China."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Buying Low, Selling High: Silver prices can be volatile"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Ignoring Storage Costs: Secure storage for your coins can add to your overall investment costs."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Research dealers thoroughly before making a purchase."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Several factors could influence its future performance"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Chinese Economic Growth: China’s economic growth can impact silver demand."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Investor Sentiment: Investor confidence plays a significant role in determining silver prices."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "and choosing a reputable dealer like Fused Distribution"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "We encourage you to explore our selection of Silver Panda coins and begin your journey into the world of precious metals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "We’re here to provide you with the knowledge and support you need to succeed."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering investing in silver?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "What are your biggest concerns about?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

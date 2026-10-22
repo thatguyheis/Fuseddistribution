@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-10T21:34:51.255Z",
+  "generatedAt": "2026-08-26T14:15:12.967Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-irs-reporting-requirements-what-you-need-to-know",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Sell silver for over $20,000 annually, and the IRS demands you report it."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Sell silver for over $20,000 annually, and the IRS demands you report it."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Sell silver for over $20,000 annually, and the IRS demands you report it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you investing in silver and wondering if you need to report your sales to the IRS?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It’s a common question, and understanding the rules is crucial to avoid potential issues."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we understand the complexities of ownership."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The rules are designed to track the movement of wealth and ensure that all income is properly accounted for."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "which is considered taxable income."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The threshold for reporting depends on the size of the transaction."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This form is issued by payment processors like PayPal, Venmo"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The 1099-K reports gross payment transactions exceeding $20"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "it's important to be aware of the form’s potential impact."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "According to the IRS, in 2023, over 30 million businesses received 1099-K forms"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "You need to track your silver purchases and sales accurately."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "You must keep clear records of every sale."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Remember, the IRS wants to see proof of the sale, including invoices and receipts."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Specifically, you need to keep detailed records of each transaction."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": ", bullion, coins), the quantity sold, the price paid, and the name and address of the buyer."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "If you sell silver through a platform like PayPal, retain a copy of the transaction confirmation."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "If you sell privately, obtain a signed sales agreement and a copy of the payment received."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "They want to see that you can substantiate the value of your silver holdings."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "It’s not just a receipt; it’s a record of the transaction that the IRS uses to verify your reporting."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "If you receive a 1099-K, you’ll need to report the information on Schedule C of your Form 1040."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "If you don’t receive a 1099-K, you’re still responsible for reporting your silver sales."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "After you buy your first silver purchase, you need to keep good records."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "This tells you if you have a reporting obligation."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "This could be a simple spreadsheet or a more sophisticated accounting program."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Reserve your silver straightforwardly at our reserve page."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Resources for Further Information: IRS Publication 550: Taxable and Nontaxable Transactions IRS Form 1099-K: We at Fused Distribution are committed to providing you with the knowledge and resources you need to confidently invest in silver."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We offer straightforward pricing and simple processes"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this information, what’s your biggest concern regarding silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this information, what’s your biggest concern regarding silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

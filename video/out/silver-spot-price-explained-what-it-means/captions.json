@@ -1,202 +1,178 @@
 {
   "0": [
     {
-      "text": "Spot price reveals the benchmark; premiums show the real buying opportunity.",
+      "text": "A silver spot quote is only the starting point for a purchase.",
       "startSec": 0,
-      "endSec": 4.08
+      "endSec": 3.64
     }
   ],
   "1": [
     {
-      "text": "Silver spot price is the live wholesale quote for one troy ounce of pure silver",
+      "text": "Silver spot price describes a current market quotation for silver for prompt settlement.",
       "startSec": 0,
-      "endSec": 4.520555555555555
+      "endSec": 4.635348837209302
     },
     {
-      "text": "settled in USA dollars and updated every few seconds during market hours.",
-      "startSec": 4.370555555555555,
-      "endSec": 8.547777777777778
+      "text": "It gives a reference point for valuing metal",
+      "startSec": 4.485348837209302,
+      "endSec": 6.803023255813953
     },
     {
-      "text": "It is the number every dealer, refiner",
-      "startSec": 8.547777777777778,
-      "endSec": 10.722222222222221
+      "text": "but the number on a screen is incomplete without its source, timestamp, currency and unit.",
+      "startSec": 6.803023255813953,
+      "endSec": 11.543720930232558
     },
     {
-      "text": "and ETF uses as the starting point for pricing physical metal.",
-      "startSec": 10.722222222222221,
-      "endSec": 14.42
+      "text": "A quote per troy ounce is different from a quote per kilogram.",
+      "startSec": 11.543720930232558,
+      "endSec": 14.80953488372093
+    },
+    {
+      "text": "Identify the quote before comparing it with a product price.",
+      "startSec": 14.80953488372093,
+      "endSec": 18.12
     }
   ],
   "2": [
     {
-      "text": "It is a rolling consensus built from three sources running in parallel.",
+      "text": "The LBMA Silver Price is a named benchmark established through an auction starting at noon London time",
       "startSec": 0,
-      "endSec": 4.236797385620916
+      "endSec": 5.434426229508197
     },
     {
-      "text": "The first source is the COMEX silver futures market in New York, where contracts for 5",
-      "startSec": 4.086797385620915,
-      "endSec": 9.218692810457517
+      "text": "independently operated and administered by ICE Benchmark Administration.",
+      "startSec": 5.284426229508196,
+      "endSec": 9.120491803278687
     },
     {
-      "text": "000-ounce deliveries trade nearly 24 hours a day.",
-      "startSec": 9.218692810457517,
-      "endSec": 12.142679738562093
+      "text": "LBMA states that these benchmark prices are not published on weekends or UK bank holidays.",
+      "startSec": 9.120491803278687,
+      "endSec": 13.915573770491802
     },
     {
-      "text": "The front-month futures price, minus a small carry adjustment",
-      "startSec": 12.142679738562093,
-      "endSec": 15.782745098039218
+      "text": "That schedule describes this benchmark",
+      "startSec": 13.915573770491802,
+      "endSec": 15.940163934426229
     },
     {
-      "text": "is what most USA dealers quote as spot.",
-      "startSec": 15.782745098039218,
-      "endSec": 18.26
+      "text": "not the trading hours of every silver instrument or dealer feed.",
+      "startSec": 15.940163934426229,
+      "endSec": 19.5
     }
   ],
   "3": [
     {
-      "text": "Spot is usually quoted as a single number, but underneath it sits a bid and an ask.",
+      "text": "A bid is a quoted buying price; an ask is a quoted selling price.",
       "startSec": 0,
-      "endSec": 4.193684210526316
+      "endSec": 3.81541095890411
     },
     {
-      "text": "Bid is what a buyer will pay you.",
-      "startSec": 4.043684210526315,
-      "endSec": 5.711052631578947
+      "text": "Identify whose quotation you are reading and which product it covers.",
+      "startSec": 3.66541095890411,
+      "endSec": 7.7156164383561645
     },
     {
-      "text": "Ask is what a seller wants from you.",
-      "startSec": 5.711052631578947,
-      "endSec": 7.68
+      "text": "A market bid for wholesale silver is not a guaranteed buyback offer for your particular coin.",
+      "startSec": 7.7156164383561645,
+      "endSec": 13.17458904109589
+    },
+    {
+      "text": "Compare the same product, quantity and cost basis across sellers.",
+      "startSec": 13.17458904109589,
+      "endSec": 17.14
     }
   ],
   "4": [
     {
-      "text": "The spread between what you pay and what you can sell for is the real cost of ownership",
+      "text": "Here is a hypothetical example, not a current price.",
       "startSec": 0,
-      "endSec": 4.5522509225092245
+      "endSec": 2.9060416666666664
     },
     {
-      "text": "and it is the single number you should track when comparing dealers.",
-      "startSec": 4.402250922509224,
-      "endSec": 7.960332103321032
+      "text": "A bar containing ten troy ounces of silver costs 360 dollars before extra charges",
+      "startSec": 2.7560416666666665,
+      "endSec": 7.282760416666667
     },
     {
-      "text": "Premiums and spot are two separate markets.",
-      "startSec": 7.960332103321032,
-      "endSec": 10.210295202952029
+      "text": "while the reference price is 32 dollars per ounce.",
+      "startSec": 7.282760416666667,
+      "endSec": 10.077031250000001
     },
     {
-      "text": "Premium reflects physical silver supply at your specific weight and form.",
-      "startSec": 10.210295202952029,
-      "endSec": 14.18
+      "text": "Ten times 32 is 320 dollars of reference value.",
+      "startSec": 10.077031250000001,
+      "endSec": 12.703645833333335
+    },
+    {
+      "text": "The total premium is 40 dollars, or four dollars per ounce.",
+      "startSec": 12.703645833333335,
+      "endSec": 16.00088541666667
+    },
+    {
+      "text": "Divide the product price by its silver ounces before subtracting the reference price per ounce.",
+      "startSec": 16.00088541666667,
+      "endSec": 21.46
     }
   ],
   "5": [
     {
-      "text": "Six years in a row of more silver consumed than mined and recycled.",
+      "text": "If shipping adds 15 dollars in that example, the delivered total becomes 375 dollars",
       "startSec": 0,
-      "endSec": 3.7618852459016394
+      "endSec": 4.556202531645569
     },
     {
-      "text": "Aboveground stockpiles in London and COMEX vaults have been drawn down to fill the gap",
-      "startSec": 3.6118852459016395,
-      "endSec": 8.440573770491802
+      "text": "or 37 dollars and 50 cents per ounce.",
+      "startSec": 4.406202531645569,
+      "endSec": 6.4131012658227835
     },
     {
-      "text": "and at some point that buffer empties.",
-      "startSec": 8.440573770491802,
-      "endSec": 10.574180327868852
+      "text": "Compared with the same 32 dollar reference",
+      "startSec": 6.4131012658227835,
+      "endSec": 8.691202531645569
     },
     {
-      "text": "Demand is no longer driven by jewelry and silverware.",
-      "startSec": 10.574180327868852,
-      "endSec": 13.7
+      "text": "the delivered difference is five dollars and 50 cents per ounce.",
+      "startSec": 8.691202531645569,
+      "endSec": 12.16259493670886
+    },
+    {
+      "text": "Label delivery costs separately from the product premium so the comparison remains clear.",
+      "startSec": 12.16259493670886,
+      "endSec": 17.14
     }
   ],
   "6": [
     {
-      "text": "The iShares Silver Trust (SLV) holds roughly 14",
+      "text": "Obtain a comparable buyback quote if available and identify deductions.",
       "startSec": 0,
-      "endSec": 3.1754909090909087
+      "endSec": 4.032578125
     },
     {
-      "text": "947 tonnes of physical silver in trust as of mid-2026, the largest silver ETF in the world .",
-      "startSec": 3.025490909090909,
-      "endSec": 9.241345454545453
+      "text": "Treat an unavailable quote as unknown rather than assuming a resale value.",
+      "startSec": 3.8825781249999998,
+      "endSec": 8.085546875
     },
     {
-      "text": "When SLV sees net inflows, the trust buys physical bars in London to back new shares.",
-      "startSec": 9.241345454545453,
-      "endSec": 14.984254545454544
+      "text": "A complete comparison makes the source, product",
+      "startSec": 8.085546875,
+      "endSec": 10.755
     },
     {
-      "text": "That buying pressure shows up in spot within hours.",
-      "startSec": 14.984254545454544,
-      "endSec": 18.58
+      "text": "costs and timing explicit before you make a purchasing decision.",
+      "startSec": 10.755,
+      "endSec": 14.54
     }
   ],
   "7": [
     {
-      "text": "A 10-ounce bar at 12.",
+      "text": "Which cost do you check after the silver spot quote?",
       "startSec": 0,
-      "endSec": 1.146923076923077
-    },
-    {
-      "text": "5 percent premium beats a one-ounce coin at 18 percent premium for pure stacking value.",
-      "startSec": 0.9969230769230769,
-      "endSec": 5.748461538461538
-    },
-    {
-      "text": "The coin may still win on liquidity and recognizability when you sell.",
-      "startSec": 5.748461538461538,
-      "endSec": 9.571538461538461
-    },
-    {
-      "text": "A dealer who pays spot minus 50 cents on sellback offers a tighter round-trip than one paying spot minus $2.",
-      "startSec": 9.571538461538461,
-      "endSec": 15.62
-    }
-  ],
-  "8": [
-    {
-      "text": "We are happy to be one of those three quotes, and if our number does not win on that math",
-      "startSec": 0,
-      "endSec": 4.401968253968254
-    },
-    {
-      "text": "you should buy elsewhere.",
-      "startSec": 4.251968253968253,
-      "endSec": 5.48847619047619
-    },
-    {
-      "text": "Make the comparison, then place the order",
-      "startSec": 5.48847619047619,
-      "endSec": 7.516349206349206
-    },
-    {
-      "text": "then watch how spot and premium move independently over the next thirty days.",
-      "startSec": 7.516349206349206,
-      "endSec": 11.324793650793652
-    },
-    {
-      "text": "That habit, repeated, is what turns a curious reader into a confident silver buyer.",
-      "startSec": 11.324793650793652,
-      "endSec": 15.58
-    }
-  ],
-  "9": [
-    {
-      "text": "How will understanding spot and premium change your silver buying?",
-      "startSec": 0,
-      "endSec": 3.791489361702128
+      "endSec": 2.7820000000000005
     },
     {
       "text": "Follow for more silver news.",
-      "startSec": 3.6414893617021282,
-      "endSec": 5.4
+      "startSec": 2.6320000000000006,
+      "endSec": 4.28
     }
   ]
 }

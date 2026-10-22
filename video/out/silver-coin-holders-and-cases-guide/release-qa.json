@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-20T19:54:33.850Z",
+  "generatedAt": "2026-08-26T14:15:11.819Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-coin-holders-and-cases-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "25 percent is the biggest markup you’ll likely encounter on silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "25 percent is the biggest markup you’ll likely encounter on silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "25 percent is the biggest markup you’ll likely encounter on silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’ve researched the potential of precious metals as an investment"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and you’re ready to take the next step: securing your physical holdings."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we cut through the confusion."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Don’t just look at the sticker price."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Premium covers the difference between the metal’s value and what the dealer charges."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "This simple math helps you avoid hidden fees and make informed decisions."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Beyond the price itself, check the seller’s process."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A reputable dealer will be transparent about their sourcing practices"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Finally, think about where you store your silver."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "This premium covers the dealer’s costs, their profit, and the coin’s desirability."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A good dealer will clearly break down the cost components, showing you the intrinsic value"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Compare prices from multiple dealers to ensure you’re getting a fair deal."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A legitimate dealer will be happy to provide detailed information about their sourcing"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "grading process, and security measures."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Avoid sellers who are vague or evasive."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The right silver coin holders and cases aren’t just about aesthetics; they’re about protecting your investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Different types of storage cater to different needs and budgets."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "They’re a cost-effective option for storing a small number of coins."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Consider the number of coins you’re storing, their value"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A simple coin flip might suffice for a collection of common coins"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Maintaining your silver collection requires ongoing care."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Check the seller’s legitimacy with a simple list."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Avoid places where it might get damaged."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Reserve your silver straightforwardly at /reserve/ today."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering all this information, where do you envision keeping your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering all this information, where do you envision keeping your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

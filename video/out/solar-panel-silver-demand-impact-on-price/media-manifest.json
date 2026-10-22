@@ -2,60 +2,74 @@
   "version": 1,
   "segments": {
     "0": {
-      "key": "{\"query\":\"solar panel silver demand impact on price\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
+      "key": "{\"query\":\"More solar installations automatically silver\",\"prefer\":\"video\",\"segmentType\":\"hook\"}",
       "source": "local-photo",
-      "query": "solar panel silver demand impact on price",
+      "query": "More solar installations automatically silver",
       "prefer": "video",
-      "updatedAt": "2026-07-01T20:56:43.267Z"
+      "updatedAt": "2026-09-17T23:28:13.342Z"
     },
     "1": {
-      "key": "{\"query\":\"solar panel silver demand impact on price 232 million ounces\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "local-photo",
-      "query": "solar panel silver demand impact on price 232 million ounces",
+      "key": "{\"profileVersion\":1,\"provider\":\"fused-generated-background-library\",\"topic\":\"silver\",\"sceneId\":\"silver-general\",\"tags\":[\"silver\",\"silver-general\"]}",
+      "source": "fused-generated-background-library",
+      "libraryAssetId": "fused-bg-a2358bd96a33f179",
+      "topic": "silver",
+      "sceneId": "silver-general",
+      "tags": [
+        "silver",
+        "silver-general"
+      ],
+      "sha256": "a2358bd96a33f1796950fb36e71c4439b9ef7c743d095f3a6ee7579d1331ca90",
+      "sourceSlug": "silver-capital-gains-tax-how-it-works-in-the-us",
+      "status": "approved-background-only",
+      "query": "SEPARATE DEMAND DRIVERS silver",
       "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "attempts": [
+        "fused-generated-background-library"
+      ],
+      "path": "photos/solar-panel-silver-demand-impact-on-price/segment-1.jpg",
+      "updatedAt": "2026-09-17T23:28:24.372Z"
     },
     "2": {
-      "key": "{\"query\":\"solar panel silver demand impact on price 5 share silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
+      "key": "{\"query\":\"KEEP QUANTITIES DISTINCT silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
       "source": "local-photo",
-      "query": "solar panel silver demand impact on price 5 share silver",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "query": "KEEP QUANTITIES DISTINCT silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.375Z"
     },
     "3": {
-      "key": "{\"query\":\"solar panel silver demand impact on price redesign paste formulas\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "solar panel silver demand impact on price redesign paste formulas",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "key": "{\"query\":\"LABEL FORECASTS DATE silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "LABEL FORECASTS DATE silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.376Z"
     },
     "4": {
-      "key": "{\"query\":\"solar panel silver demand impact on price 58 to 75\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "solar panel silver demand impact on price 58 to 75",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "key": "{\"query\":\"MULTIPLY REMAINING PROPORTIONS silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "MULTIPLY REMAINING PROPORTIONS silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.377Z"
     },
     "5": {
-      "key": "{\"query\":\"solar panel silver demand impact on price silver institute projects\",\"prefer\":\"photo\",\"segmentType\":\"overlay\"}",
-      "source": "pixabay-photo",
-      "query": "solar panel silver demand impact on price silver institute projects",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "key": "{\"query\":\"CHECK ADOPTION EVIDENCE silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "CHECK ADOPTION EVIDENCE silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.377Z"
     },
     "6": {
-      "key": "{\"query\":\"solar panel silver demand impact on price 80 silver historically\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "solar panel silver demand impact on price 80 silver historically",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "key": "{\"query\":\"QUESTION PRICE CONCLUSION silver\",\"prefer\":\"video\",\"segmentType\":\"overlay\"}",
+      "source": "local-photo",
+      "query": "QUESTION PRICE CONCLUSION silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.378Z"
     },
     "7": {
-      "key": "{\"query\":\"solar panel silver demand impact on price 1 ounce rounds\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
-      "source": "pixabay-photo",
-      "query": "solar panel silver demand impact on price 1 ounce rounds",
-      "prefer": "photo",
-      "updatedAt": "2026-07-01T20:56:43.273Z"
+      "key": "{\"query\":\"Which assumption would check silver\",\"prefer\":\"video\",\"segmentType\":\"question\"}",
+      "source": "local-photo",
+      "query": "Which assumption would check silver",
+      "prefer": "video",
+      "updatedAt": "2026-09-17T23:28:24.378Z"
     },
     "8": {
       "key": "{\"query\":\"solar panel silver demand impact on price 10 ounce silver\",\"prefer\":\"photo\",\"segmentType\":\"stat\"}",
@@ -71,5 +85,6 @@
       "prefer": "photo",
       "updatedAt": "2026-07-01T20:56:43.273Z"
     }
-  }
+  },
+  "generativeCandidates": {}
 }

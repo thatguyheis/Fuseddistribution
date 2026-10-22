@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-18T20:18:16.093Z",
+  "generatedAt": "2026-08-26T14:15:11.690Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-bars-vs-silver-coins-which-is-better",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver Eagles carry a 20 percent premium over spot."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "On a 100 oz position, that gap costs you 480 dollars before silver moves a single penny."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "On a 100 oz position, that gap costs you 480 dollars before silver moves a single penny."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "When you buy a 10 oz silver bar, you typically pay just 3 to 5 percent above the spot price."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "When you buy a 10 oz silver bar, you typically pay just 3 to 5 percent above the spot price."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It is one of the lowest premiums in the silver market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A 1 oz American Silver Eagle costs 15 to 22 percent above spot at most dealers."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "That is 4 to 5 times the premium on a bar."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "You are paying extra for the legal tender status, the mint guarantee, and the brand recognition."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "At 30 dollars per ounce spot price, a 10 oz bar costs around 312 dollars."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Ten individual Silver Eagles cost around 360 dollars."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "On a 100 oz position, the savings grow to roughly 480 dollars."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Scale the math to 100 ounces and the savings are real money."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "buying bars instead of Eagles puts roughly 480 dollars more silver in your hand for the same dollar outlay."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "That is nearly 16 more ounces of silver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Bars work best when you are building a long-term reserve."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "They stack cleanly in a safe without individual capsules."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "bars almost always give you more metal for your money."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Coins win when you need to sell in small amounts."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Local coin shops recognize a Silver Eagle or Maple Leaf on sight with no assay required."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "They are also the better starting point if you are new to buying silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Coins need individual capsules or plastic tubes to prevent milk spotting."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Silver Eagles are particularly prone to this."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "A hard plastic slab or tray keeps them stable with no capsules needed."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Many experienced buyers split their position."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Around 20 to 30 percent coins for small-lot flexibility."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The right split depends on how you expect to sell over time."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "The chart shows three product types side by side."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "A 1 oz Silver Eagle at 20 percent."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "That gap is what you pay just for the product form."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "For building a long-term reserve, bars are the better financial choice."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "For flexibility and starting small, coins give you easier selling options and wider recognition."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "For flexibility and starting small, coins give you easier selling options and wider recognition."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "DO YOU BUY SILVER BARS, COINS, OR BOTH?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "DO YOU BUY SILVER BARS, COINS, OR BOTH?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

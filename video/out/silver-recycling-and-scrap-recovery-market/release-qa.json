@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:01.905Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:13.953Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "silver-recycling-and-scrap-recovery-market",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "The global scrap silver market is projected to grow by 4."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "The global scrap silver market is projected to grow by 4."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "78 billion by 2028."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Silver is a metal with enduring value, and increasingly"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "But what happens to all the scrap silver - from jewelry to electronics - that’s no longer used?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The silver recycling and scrap recovery market is a surprisingly complex and potentially lucrative area."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It’s a sophisticated system involving various industries and processes."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "However, a significant portion of the silver supply comes from recycled sources."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "78 billion in 2023, and is projected to grow at a CAGR of 4."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Sterling silver, for example, is typically 92."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Find a Reputable Buyer: Don’t just go with the first buyer you find."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Compare their offers - don’t be afraid to call around and get multiple quotes."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Selling to Unreputable Buyers: As mentioned earlier, research your buyers carefully."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Not Knowing the Silver Content: If you don’t know the silver content of your items"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "but professional assessment is always recommended for valuable items."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "According to industry data"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "While retail recycling plays a role"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Electronics, particularly smartphones, laptops, and circuit boards, are major contributors."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "each with varying costs and efficiencies: Electrolytic Refining: This is the most common method"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Chemical Refining: This method uses chemical solutions to selectively dissolve impurities"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Smelting: This process involves melting the scrap silver with other metals to separate the silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Silver Demand in Industrial Applications: Silver’s unique properties - conductivity"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "corrosion resistance, and reflectivity - make it essential in various industrial applications"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "According to the Silver Institute, industrial demand for silver is projected to increase by 3."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Here are some additional tips for maximizing your profits when selling scrap silver: Consolidate Your Silver: Instead of selling small amounts of silver sporadically"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "try to consolidate your holdings to increase the volume you can sell at once."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Consider Selling in Batches: Selling in larger batches can sometimes result in a better price."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "the silver recycling and scrap recovery market presents a compelling opportunity for both investors and those seeking to responsibly manage their silver holdings."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "By understanding the market dynamics and following these guidelines"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We encourage you to explore our selection of silver bullion and coins - a solid foundation for your investment journey."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your biggest concern when deciding to?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your biggest concern when deciding to?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

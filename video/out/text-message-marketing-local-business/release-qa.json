@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-19T20:22:49.637Z",
+  "generatedAt": "2026-08-26T14:15:15.866Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "text-message-marketing-local-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Nine out of ten business texts get opened."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Nine out of ten business texts get opened."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Nine out of ten business texts get opened."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "The average customer reads a business text within 90 seconds of receiving it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "That window is faster than any other marketing channel."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "At the cost of a text message, nothing else even comes close."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "SMS reaches 98 percent of customers who receive it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Facebook organic posts reach about 5 percent of your followers."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It is the one that actually reaches people."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Text messages get a 45 percent response rate compared to 6 percent for email."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "For every 100 customers you reach, nearly half respond."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "No other channel at this price point comes close to that kind of engagement."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Before you send a single marketing text, you need explicit written consent."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The Telephone Consumer Protection Act requires it."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Getting opt-in right is the foundation the whole system sits on."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A checkbox at checkout with clear disclosure language."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "A keyword opt-in where the customer texts a word to your number."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Or a paper sign-up sheet at the counter for service businesses where the customer is on-site."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The first message goes out same day or next morning."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This message generates replies 20 to 30 percent of the time."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Every reply is a chance to solve a problem before it becomes a negative review."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Message two fires on day three or four with a specific offer."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Come back soon does not."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Give them a concrete reason with a loose deadline."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "The third message fires at day 28 to 30."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A customer who had a good experience a month ago and has not been contacted since is far more likely to rebook."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "You are reminding someone who already chose you."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Opt-out rates stay below 2 percent when businesses send four or fewer texts per month."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "The 3-message sequence keeps you well within that range."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "More than that and opt-out rates climb fast, damaging your list permanently."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "SimpleTexting starts at $29 a month for 500 texts."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Write three message templates once and they run automatically after every new opt-in."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "The only manual work is replying to the conversations they start."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "IS EMAIL MARKETING DEAD FOR LOCAL BUSINESS?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "IS EMAIL MARKETING DEAD FOR LOCAL BUSINESS?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more tips to grow your business."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

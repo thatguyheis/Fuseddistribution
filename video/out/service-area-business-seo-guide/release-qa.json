@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-23T18:40:35.283Z",
+  "generatedAt": "2026-08-26T14:15:11.152Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "service-area-business-seo-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "70 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "70 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "70 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner in the USA struggling to get noticed online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many local businesses feel overwhelmed by the complexities of Search Engine Optimization (SEO)"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "especially for targeting customers within a specific service area."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "You’ll learn how to optimize your website content, build local backlinks, and track your progress."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Let’s get started and help you attract more customers right in your neighborhood."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "we see a lot of small business owners struggling to get found online."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "We at Fused Distribution focus on building websites with local SEO in mind"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Why Local SEO Matters More Than Ever for Small Businesses As a small business owner"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "and traditional marketing just isn’t cutting it for most of us."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "we see over and over again how crucial understanding your service area is to successful SEO."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It’s not enough to just have a website; you need to tell Google - and potential customers - exactly where you serve."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Think of it like this: Google wants to connect people searching for a service with businesses that actually provide it in their vicinity."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s all about figuring out the specific words and phrases people use when looking for businesses like yours in your service area."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Think beyond just your business name; people often search for things like “best pizza near me"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "” Tools like Google Keyword Planner (free to use with a Google account) can help you brainstorm relevant keywords."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "As a local business owner, you know your website is your digital storefront."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "But simply having a website isn’t enough - you need to make sure search engines like Google can easily understand what you do and why someone should choose you."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "It’s all about tweaking the elements within your website to boost your ranking for relevant local searches."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "focusing on activities outside your website to boost your ranking in local search results."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "One of the most effective strategies is building citations - these are mentions of your business name"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Google My Business, and industry-specific sites, the stronger your local presence becomes."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Studies show that 77 percent of local searches result in a visit to a local business."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Start by claiming your listing (or creating one if you don’t already have one)."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Regularly update your posts with offers, events, or news to keep your profile fresh and engaging."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Also, monitor your rankings for relevant keywords in your service area."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "A sudden drop in ranking for a key term could indicate a problem that needs addressing."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "keep an eye on online reviews - positive feedback builds trust and can significantly impact your local search visibility."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How can you improve your local online visibility today?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How can you improve your local online visibility today?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

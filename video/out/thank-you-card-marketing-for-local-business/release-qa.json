@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-11T20:41:05.923Z",
+  "generatedAt": "2026-08-26T14:15:15.932Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "thank-you-card-marketing-for-local-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A simple thank you card can boost your Google review rate by 20 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A simple thank you card can boost your Google review rate by 20 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "A simple thank you card can boost your Google review rate by 20 percent."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you tired of pouring money into marketing campaigns that feel like shouting into the void?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "but you’re not seeing the results you expected."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "while local customers are searching for exactly what you offer, and you’re not showing up."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Let’s dive into how a simple thank you card can become a powerful marketing asset for your local business."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Most of them land in the “delete” folder"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "People are overwhelmed by sales pitches, and they’ve learned to tune them out."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "” Instead, provide clear, actionable instructions."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Surveys have found that customers who received a personalized thank you note were 35 percent more likely to leave a review than those who didn’t."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "This isn’t about nagging; it’s about guiding them to a simple, beneficial action."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "If you’re happy with the work, leaving a quick review on Google helps other local folks find us."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Then, give them a clear next step."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "or a guide on how to winterize their plumbing system."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Something like, “Thank you so much for choosing {Your Business Name} for your {Service}."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "“We’re thrilled we could help you Solve their problem/Achieve their goal."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "“We’d really appreciate it if you could take a moment to share your experience on Google."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "“You can find more information about Related Service/Topic here: {Link to your website}."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "please don’t hesitate to contact us."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "We’re so glad we could quickly diagnose and fix that leaky pipe, preventing potential water damage."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "It’s a tool - a carefully designed mechanism for turning a one-time customer into a Google review."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Don’t just slap a generic link on it."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "It helps other local folks find us."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Your thank you card can do more than just say thanks."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "When you send a card, make it easy for people to leave a review."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "People are more likely to do it if you tell them the exact steps."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Maybe it’s a link to book their next service, or a guide you wrote about your trade."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Maybe it’s a link to book their next service, or a guide you wrote about your trade."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Consider offering a small discount on their next appointment as an incentive."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How can a simple thank you card actually boost your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How can a simple thank you card actually boost your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

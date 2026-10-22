@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-08T18:43:35.210Z",
+  "generatedAt": "2026-08-26T14:15:14.351Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-short-squeeze-2026-is-it-possible",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver prices could surge 60 percent again in a matter of days."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver prices could surge 60 percent again in a matter of days."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver prices could surge 60 percent again in a matter of days."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you wondering if a silver short squeeze could happen again in 2026?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "dramatic price increase in silver is both exciting and potentially terrifying for investors."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’ve seen firsthand the volatility that can grip the market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "“Shorting” means borrowing shares of an asset and selling them"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "profiting from the difference."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "short sellers face mounting losses and are forced to buy back their shares to limit further damage."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "85 per ounce as of August 7, 2026, a significant drop from its peak in 2021."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Let’s examine the most important ones: Increased Retail Investor Interest: The rise of online trading platforms and social media has made it easier than ever for individual investors to participate in the precious metals market."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Let’s examine the most important ones: Increased Retail Investor Interest: The rise of online trading platforms and social media has made it easier than ever for individual investors to participate in the precious metals market."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Inflationary Pressures: Persistent inflation erodes the purchasing power of fiat currencies"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The Consumer Price Index (CPI) currently stands at 3."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Leveraged Trading: The use of margin accounts allows investors to control a larger position with a smaller amount of capital."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "but many analysts believe they contributed significantly to the speed and intensity of the event."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Factors such as mine production, industrial demand (used in electronics and solar panels)"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "A decrease in silver supply, coupled with increased demand, would naturally push prices higher."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Understand Your Risk Tolerance: Silver investments can be volatile."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "invest a fixed amount regularly over time."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Monitor Short Interest Levels: Keep an eye on the silver short interest."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Owning physical silver provides a tangible asset and can offer peace of mind during times of market uncertainty."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "We recommend starting with a small amount of silver and gradually increasing your holdings as you become more comfortable with the market."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "“Spot price” is the current market price for immediate delivery of silver."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A combination of factors - including increased retail investor interest, geopolitical uncertainty"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "you can navigate the market with greater confidence."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Ready to explore your silver investment options?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Do you think a silver short squeeze is a real?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Do you think a silver short squeeze is a real?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

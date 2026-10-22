@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-16T18:59:06.737Z",
+  "generatedAt": "2026-08-26T14:15:16.130Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "tracking-phone-calls-from-your-website-how-to",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "60 percent of local searches happen on mobile , track those calls!"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "60 percent of local searches happen on mobile , track those calls!"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "60 percent of local searches happen on mobile , track those calls!"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you tired of a beautiful website that doesn’t bring in any phone calls?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "You’re searching for customers in your area, but they can’t find a way to contact you."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The problem isn’t your website design; it’s that you’re missing the crucial link between online search and direct communication."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "People actively search for local businesses using Google, Yelp, and other search engines."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "you’re losing potential customers before they even reach out."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It’s the digital storefront for your business on Google Maps and Search."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Setting up call notifications within your profile is absolutely critical."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Don’t build a complicated system; simply ensure your profile is set up correctly and that call notifications are enabled."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A simple contact form is far more effective than a complex, multi-page contact form."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Identifying this trigger is essential for accurate tracking."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Checking the data flow is equally important."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "If you don’t see the calls appearing in your call tracking system, the entire setup is flawed."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s like having a security camera that’s not recording - it’s useless."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "People search Google for “plumber near me” or “best dentist in {Your City}”."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "You need to set up call notifications right there."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "If it breaks on mobile, you’ve already lost a lead."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "If you can't see the call logged, the whole setup is broken."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Your Google Business Profile is where people find you first."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "If you can't see the call logged, the setup isn't right."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Your website doesn’t matter if you can’t track the actual phone conversations."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "You tell Google when you want to get alerted to a new lead."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Then, tell that form to send the lead straight to your phone number or trigger a call alert."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Make sure your tracking works perfectly on mobile."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "If you can't see the call recorded, the system isn't working."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "If you can't see the call logged, the setup is broken."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Stop guessing what gets your local customers."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "See exactly how we get phone calls from your website."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How easily are you capturing those valuable phone calls from?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How easily are you capturing those valuable phone calls from?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

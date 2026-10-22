@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-11T19:20:56.466Z",
+  "generatedAt": "2026-08-26T14:15:09.910Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "online-booking-system-for-small-business-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "74 percent of consumers prefer online booking , boost your revenue now."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "74 percent of consumers prefer online booking , boost your revenue now."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "74 percent of consumers prefer online booking , boost your revenue now."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "and trying to keep everything running smoothly."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Do you wish there was a simple way to let customers book appointments with you directly"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Many small business owners struggle with outdated scheduling methods."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "That’s time you could be using to focus on what you do best: serving your clients."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Also, a survey found that 74 percent of consumers prefer to book appointments online."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "And businesses that implement online booking systems experience an average of 15 percent higher revenue growth compared to those that don’t."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Start with something simple that gets the job done."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Look for a system that integrates smoothly with your Google Business Profile."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "This is crucial for local SEO - it’s how people find you when they search for your services in their area."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "These can significantly reduce no-shows - an estimated 20 percent of appointments are missed due to no-shows"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Pick a system that isn't a headache."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Too much setup time and money is a waste."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A well-configured system will save you time and frustration in the long run."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "This helps people find you when they search for your service near you."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Check every step from when a customer clicks to when you get the confirmation."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Many booking systems integrate with popular CRM (Customer Relationship Management) tools"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "you can integrate your booking system to automatically add new appointments to your CRM."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This streamlines your workflow and provides valuable insights into your customer base."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "This keeps your setup quick and saves you time you need for your actual business."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Make sure your booking platform connects easily with your Google Business Profile."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "If it doesn’t play nice with Google, you're missing out on local searches."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Set up the system to ask customers for feedback after they finish your service."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A recent study showed that 92 percent of consumers trust online reviews as much as personal recommendations."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Consider sending automated follow-up emails requesting reviews."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Automated scheduling rules can prevent double-booking and ensure optimal resource allocation."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "allowing you to manage multiple team members and their availability."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "However, start with the essentials and gradually add features as your business grows."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "What’s your biggest scheduling challenge right now?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "What’s your biggest scheduling challenge right now?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

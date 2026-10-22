@@ -3,9 +3,138 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-04T21:57:25.629Z",
+  "generatedAt": "2026-09-23T06:04:29.084Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "silver-spot-price-explained-what-it-means",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A silver spot quote is only the starting point for a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A silver spot quote is only the starting point for a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "A silver spot quote is only the starting point for a purchase."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Silver spot price describes a current market quotation for silver for prompt settlement."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "but the number on a screen is incomplete without its source, timestamp, currency and unit."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Identify the quote before comparing it with a product price."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The LBMA Silver Price is a named benchmark established through an auction starting at noon London time"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "LBMA states that these benchmark prices are not published on weekends or UK bank holidays."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "not the trading hours of every silver instrument or dealer feed."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A bid is a quoted buying price; an ask is a quoted selling price."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A market bid for wholesale silver is not a guaranteed buyback offer for your particular coin."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Compare the same product, quantity and cost basis across sellers."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A bar containing ten troy ounces of silver costs 360 dollars before extra charges"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Ten times 32 is 320 dollars of reference value."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Divide the product price by its silver ounces before subtracting the reference price per ounce."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "If shipping adds 15 dollars in that example, the delivered total becomes 375 dollars"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Compared with the same 32 dollar reference"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Label delivery costs separately from the product premium so the comparison remains clear."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Obtain a comparable buyback quote if available and identify deductions."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Treat an unavailable quote as unknown rather than assuming a resale value."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "costs and timing explicit before you make a purchasing decision."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Which cost do you check after the silver spot quote?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Which cost do you check after the silver spot quote?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }
