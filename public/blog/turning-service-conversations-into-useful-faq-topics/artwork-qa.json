@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:49:14.233709+00:00",
+  "heroSha256": "a2e4ee034d2b2d02e145efd8dc7796e3fe447df0f673e894c5d8ec07a9ad84a1",
+  "subject": "Customer question bubble leading to an FAQ answer",
+  "purpose": "Customer question bubble leading to an FAQ answer",
+  "hook": "Real questions. Useful answers.",
+  "keyWords": [
+    "turning",
+    "service",
+    "conversations"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/sep30-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

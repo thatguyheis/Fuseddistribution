@@ -1,96 +1,78 @@
 # Reel Script: solar-panel-silver-demand-impact-on-price
 format: long-form
-segments: 10
-target-duration: 187s
+segments: 8
+target-duration: 126s
 
 ---
 
 ## HOOK
 
-**Visual:** Topic intro shot
-**Duration:** 6s minimum
-
-Narration: Solar demand drives silver price action, creating a structural floor.
-
----
-
-## STAT: 232 MILLION OUNCES SOLAR PANEL SILVER SINGLE
-
 **Visual:** Supporting article visual
-**Duration:** 14s minimum
+**Duration:** 4s minimum
 
-Narration: Solar panel manufacturing pulled roughly 232 million ounces of silver in 2025, and that single sector now drives more of silver's price action than any other industrial buyer .
-
----
-
-## STAT: 5% SHARE SILVER DEMAND FOUR
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: Ten years later it is the biggest single line item. Solar's share of total silver industrial demand climbed from around 5 percent in 2014 to over 20 percent in 2024 . That is a four-fold jump in a decade, and it happened while total industrial demand itself was growing.
+Narration: More solar installations do not automatically mean more silver demand.
 
 ---
 
-## OVERLAY: REDESIGN PASTE FORMULAS SWITCH
-
-**Visual:** Supporting article visual
-**Duration:** 23s minimum
-
-Narration: They redesign paste formulas, switch to copper-plated contacts on some cell architectures, and shave microns off the silver lines that carry current across the panel. Grams of silver per panel keep falling. The Silver Institute forecasts PV silver demand will decline in 2026 compared to 2025 as thrifting bites harder .
-
----
-
-## STAT: $58 TO $75 SILVER COST STACK WRECKS
-
-**Visual:** Supporting article visual
-**Duration:** 24s minimum
-
-Narration: That is a line item their CFOs argue about. When silver becomes 14 percent of your cost stack, two things happen. You push hard on thrifting, which we already covered. You also hedge, stockpile, and buy forward, because a spike from $58 to $75 wrecks your margins on modules you already priced and sold.
-
----
-
-## OVERLAY: SILVER INSTITUTE PROJECTS MARK
+## OVERLAY: SEPARATE THE DEMAND DRIVERS
 
 **Visual:** Supporting article visual
 **Duration:** 21s minimum
 
-Narration: The Silver Institute projects 2025 will mark the fifth consecutive year of structural market deficit, meaning total demand exceeds new mine supply plus recycling . Deficits get covered by drawing down above-ground stocks: ETF holdings, exchange vaults, private hoards. Every year the deficit continues, the buffer thins.
+Narration: Solar manufacturing uses silver, but growth in solar installations does not automatically mean growth in silver consumption. The result depends on how much equipment is produced, which cell technologies are used and how much silver each unit requires. Changes in those inputs can work in opposite directions. Understanding that distinction is more useful than treating every new installation as a signal to buy metal.
 
 ---
 
-## STAT: 80, SILVER HISTORICALLY CHEAP RELATIVE
+## OVERLAY: KEEP THE QUANTITIES DISTINCT
 
 **Visual:** Supporting article visual
 **Duration:** 20s minimum
 
-Narration: If you want lower volatility, tilt heavier to gold. Use the gold-silver ratio to time your silver-versus-gold buys. When the ratio is above 80, silver is historically cheap relative to gold and worth accumulating. When it drops below 60, gold becomes the better relative buy.
+Narration: Keep separate records for annual production, new installations and cumulative installed capacity. None is automatically a measurement of silver mass. Multiplying cumulative installed capacity by a current intensity estimate would attribute new material use to equipment that was already built. State any approximation explicitly when exact production data are unavailable, and do not report a calculated estimate as measured industry demand.
 
 ---
 
-## STAT: 1 OUNCE ROUNDS REPUTABLE PRIVATE MINT
+## OVERLAY: LABEL FORECASTS BY DATE
 
 **Visual:** Supporting article visual
-**Duration:** 22s minimum
+**Duration:** 18s minimum
 
-Narration: If you want fractional flexibility, buy 1 ounce rounds from a reputable private mint. Do not mix collector premiums into an investment stack. Compare total delivered cost, not just premium over spot. Add the premium, shipping, insurance, and any card fees. That gives you your true cost per ounce.
+Narration: The Silver Institute April 2026 release reports photovoltaic weakness linked to accelerated thrifting and substitution in 2025. Its outlook projects a further industrial demand decline in 2026, chiefly associated with photovoltaics. A forecast for a full calendar year is not an observation of the completed year. Keep the publication date attached when comparing reports.
 
 ---
 
-## STAT: 10 OUNCE SILVER BAR TUBE AMERICAN
+## OVERLAY: MULTIPLY THE REMAINING PROPORTIONS
 
 **Visual:** Supporting article visual
-**Duration:** 27s minimum
+**Duration:** 20s minimum
 
-Narration: If you are new to buying physical silver, start with a single 10 ounce bar or a tube of 20 American Eagles. Get comfortable with the delivery process, the packaging, and the storage decision before you scale up your monthly commitment. The demand story behind silver is not going away this quarter. You have time to build the stack the right way.
+Narration: Consider a hypothetical calculation, not a market forecast. Suppose production increases by 20 percent while silver used per unit falls by 25 percent. The production multiplier is one point two zero and the intensity multiplier is zero point seven five. Their product is zero point nine zero. Calculated silver use is 90 percent of the starting amount, a decline of ten percent.
+
+---
+
+## OVERLAY: CHECK ADOPTION EVIDENCE
+
+**Visual:** Supporting article visual
+**Duration:** 19s minimum
+
+Narration: A forecast should keep technical potential separate from assumed adoption. Record what share of production is assumed to use a process and when that change is expected. If the share is unknown, leave it unknown or label an illustrative scenario. Do not replace the entire industry intensity with the best research result and present the total as established fact.
+
+---
+
+## OVERLAY: QUESTION THE PRICE CONCLUSION
+
+**Visual:** Supporting article visual
+**Duration:** 18s minimum
+
+Narration: Ask what additional evidence connects a demand change to the claimed price outcome. A supply-and-demand narrative alone does not establish a price floor or a buying deadline. Retail offers require their own comparison, including the exact product and costs. Keep missing inputs visible rather than turning an industrial trend into a guaranteed investment outcome.
 
 ---
 
 ## QUESTION
 
-**Visual:** Question card
-**Duration:** 8s minimum
+**Visual:** Supporting article visual
+**Duration:** 6s minimum
 
-Text: Is now the time to build your silver stack?
+Text: Which assumption would you check in a solar demand forecast?
 Subtext: COMMENT BELOW
-Narration: Is now the time to build your silver stack? Follow for more silver news.
+Narration: Which assumption would you check in a solar demand forecast? Follow for more silver news.

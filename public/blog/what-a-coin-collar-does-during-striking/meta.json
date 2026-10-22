@@ -1,0 +1,27 @@
+{
+  "slug": "what-a-coin-collar-does-during-striking",
+  "title": "What a Coin Collar Does During Striking",
+  "description": "Learn how a coin collar controls the edge during striking, distinguish it from face dies and the rim, and keep production facts separate from attribution.",
+  "alt": "Collar surrounds planchet between coin dies",
+  "brand": "silver",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Materials",
+    "Learning"
+  ],
+  "ctaLine": "On a coin, does the face design or the edge catch your attention first?",
+  "contentGraphic": {
+    "label": "What a Coin Collar Does During Striking",
+    "rows": [
+      {
+        "condition": "Locate the collar",
+        "action": "Separate the surfaces"
+      },
+      {
+        "condition": "Check the process",
+        "action": "Describe before diagnosing"
+      }
+    ]
+  }
+}

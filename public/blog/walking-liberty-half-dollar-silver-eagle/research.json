@@ -1,0 +1,15 @@
+{
+  "slug": "walking-liberty-half-dollar-silver-eagle",
+  "reviewedDate": "2026-10-15",
+  "status": "Primary-source claims checked; separate owner photographs visually inspected.",
+  "claims": [
+    {"claim": "Walking Liberty half dollars designed by Adolph A. Weinman were made from 1916 through 1947; Franklin replaced Liberty in 1948.", "source": "U.S. Mint: Half Dollar", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/circulating-coins/half-dollar.html"},
+    {"claim": "The U.S. Mint launched the American Eagle coin program in 1986; Silver Eagles use Weinman's 1916 Walking Liberty half dollar design on the obverse.", "source": "U.S. Mint: American Eagle Coin Program", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle.html"},
+    {"claim": "The Mint refreshed the Silver Eagle reverse design in 2021.", "source": "U.S. Mint: American Eagle Silver Proof Coin", "url": "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle/silver-proof.html"}
+  ],
+  "visualClaims": [
+    {"claim": "Walking Liberty design visible on the half dollar obverse; no specimen date, mint, reverse, or grade inferred.", "assetId": "coin-0020", "file": "Coin Raw/IMG_3730.jpeg", "cropPlan": "content/coin-history/walking-liberty-half-dollar-silver-eagle/crop-plan.json"},
+    {"claim": "Walking Liberty obverse and 2021 date visible on the Silver Eagle example; holder label not treated as independent grading evidence.", "assetId": "coin-0013", "file": "Coin Raw/IMG_3449.jpeg", "cropPlan": "content/coin-history/walking-liberty-half-dollar-silver-eagle/crop-plan.json"}
+  ],
+  "constraints": ["The two photographs show separate specimens.", "The 2021 reverse change is not shown in the obverse photo.", "No mint mark, grade, authenticity, rarity, value, or investment claims."]
+}

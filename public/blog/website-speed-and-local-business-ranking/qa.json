@@ -1,6 +1,36 @@
 {
   "slug": "website-speed-and-local-business-ranking",
-  "score": 88,
+  "score": 90,
   "pass": true,
-  "blockers": []
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:43:16.631892+00:00",
+  "review_notes": [
+    "Owner reviewed full source-checked correction, narration, and actual hero/square JPEGs.",
+    "Corrected lab versus field measurement, LCP loading, private caching and unsupported ranking claims.",
+    "Deterministic QA pass,116plannedseconds; newaudio/video pending.",
+    "Original August7 publication preserved; correction September14."
+  ],
+  "artifactSha256": {
+    "verified.md": "be4480948053b1cd0bc7efb2d1647b927a1c72cbf83d03fa215830b33323ca91",
+    "index.html": "3ec80e74d4cce06da2413a316d76f448de6ce2bfc389e5b424d639525cb5999b",
+    "hero.jpg": "6e5dfe53b58b3315c521b588bf0ddeae4bf544587a57fa5fc84e08fa29b148f9",
+    "social-video.json": "ea0b8737ff8acb62e8e26efb3252fed36f52f1df54131f28c85f445706a30d33",
+    "social-copy.json": "60adb8d84fc269b57d5e3261d726935aefbc6eb81acd48434b937bbe4f474076",
+    "hero.svg": "00ebbf8db5e3afcd114e94b981630e8f8c09f4105b2842b5c7058e4c06179750",
+    "posting-pack.md": "af41f8278a270af923dd0ae50037fadfb49184a37fe96fcb3f484a62633d3f00",
+    "chart.json": "0bfadb446eafbca52b5122689b07d776e5bb0943788ff98db17f592dcacbc344",
+    "reel-data.md": "25c8ac2d3c5afd921d80e5054e047ef379d5b67e82e8a3b96adc631380d1ec9f",
+    "lint.json": "ba02714907ed6430854f59a9125488c47cb7711e5f80c55cf6584fa95f14284b",
+    "photo-post.svg": "8251f70b4b123b22a0c3653e2355b83a0c11e4dbf150b30a2c03226b1f4861ae",
+    "hooks.json": "34ce19174a9842f7fc16b7c35d4e46b8bafbdb57f1a7399ae88931b8e0b5fc75",
+    "reel-script.md": "2fbc43ff943c855f6173a03cc846eccb2b77652331a1de3f9fa4d98a33ff1d20",
+    "gemma_draft.md": "be4480948053b1cd0bc7efb2d1647b927a1c72cbf83d03fa215830b33323ca91",
+    "posting-pack.json": "b9a21f98375a9661d83336ab54999edbb0817b6c1e682a3ae77c6ce7fb5cf621",
+    "_status.json": "45f807e004c4a029ef036f8f8dd6a0d47856148503c892f3e4aceed2446d2a86",
+    "chart-rejected.json": "0a1ec0b06a816445d44524200c1fbb9dbc8564f94ed0b83634abd3873a7ac8ec",
+    ".qa-brain.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "photo-post.jpg": "70bd232bc5892cf5d044049d5b3c5458e59606ceb25825a89ef91e05ee7c6b5f",
+    "meta.json": "fe9eb72d4c1661bec71d5e29d0a4d8db942bda7e27ac35e08d28852cf3f5a747"
+  }
 }

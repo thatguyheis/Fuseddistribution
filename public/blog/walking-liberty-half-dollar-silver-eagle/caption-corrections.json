@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "transcript": "content/coin-history/walking-liberty-half-dollar-silver-eagle/narration-approved-v1.txt",
+  "transcriptSha256": "2174a3fef131e736f737d74b8e57e281c09d8c8ef8e0ac7596901767b59196bd",
+  "reviewBasis": "Exact approved narration; corrections retain Whisper word timing and do not change spoken audio.",
+  "corrections": [
+    {"segment": 1, "cue": 0, "expectedText": "In 1916, sculptor Adolf A.", "text": "In 1916, sculptor Adolph A."},
+    {"segment": 1, "cue": 1, "expectedText": "Wyman's walking liberty design appeared on", "text": "Weinman's Walking Liberty design appeared on"},
+    {"segment": 1, "cue": 2, "expectedText": "the half -dollar.", "text": "the half dollar."},
+    {"segment": 2, "cue": 0, "expectedText": "the half dollar carried Wyman's Liberty", "text": "The half dollar carried Weinman's Liberty"},
+    {"segment": 2, "cue": 3, "expectedText": "the half dollar's front showed liberty", "text": "the half dollar's front showed Liberty"},
+    {"segment": 3, "cue": 4, "expectedText": "It's a verse brought back Wyman's", "text": "Its obverse brought back Weinman's"},
+    {"segment": 4, "cue": 1, "expectedText": "a walking liberty half dollar, and a", "text": "a Walking Liberty half dollar, and a"},
+    {"segment": 4, "cue": 2, "expectedText": "silver eagle dated 2021.", "text": "Silver Eagle dated 2021."},
+    {"segment": 4, "cue": 3, "expectedText": "The date on that photograph eagle", "text": "The date on that photographed Eagle"},
+    {"segment": 4, "cue": 5, "expectedText": "It does not mark the designs", "text": "It does not mark the design's"},
+    {"segment": 4, "cue": 7, "expectedText": "The mint refreshed the silver eagle's", "text": "The Mint refreshed the Silver Eagle's"},
+    {"segment": 4, "cue": 9, "expectedText": "while liberty remained on the front.", "text": "while Liberty remained on the front."},
+    {"segment": 5, "cue": 3, "expectedText": "One image connects a half -dollars", "text": "One image connects a half dollar's"},
+    {"segment": 5, "cue": 4, "expectedText": "1916 debut to a modern eagle", "text": "1916 debut to a modern Eagle"}
+  ]
+}

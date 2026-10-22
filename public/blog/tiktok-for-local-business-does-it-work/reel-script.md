@@ -1,96 +1,72 @@
 # Reel Script: tiktok-for-local-business-does-it-work
 format: long-form
-segments: 10
-target-duration: 180s
+engagement-policy: 1
+content-kind: educate
+segments: 7
+target-duration: 120s
 
 ---
 
 ## HOOK
 
-**Visual:** Topic intro shot
-**Duration:** 3s minimum
+**Visual:** Original local business test checklist
+**Duration:** 17s minimum
 
-Narration: TikTok doubles local business adoption, find customers now.
-
----
-
-## OVERLAY: SHORT ANSWER YES ONLY
-
-**Visual:** Supporting article visual
-**Duration:** 22s minimum
-
-Narration: The short answer is yes, but only if you stop treating it like a random trend. Many local business owners feel overwhelmed by the noise and think TikTok is too complicated. You are tired of marketing efforts that do not result in actual phone calls or in-person visits. We show you how to use TikTok to get local customers searching for your service to actually find you.
+Narration: Could TikTok help your local business? Treat it as a small test with a clear purpose, not a promise of customers. Choose one service, one audience and one useful action you want a viewer to take. Decide how much time you can spend before you start.
 
 ---
 
-## OVERLAY: SHOW HOW SOLVE LOCAL
+## OVERLAY: ANSWER ONE QUESTION
 
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
+**Visual:** Original local business test checklist
+**Duration:** 17s minimum
 
-Narration: Show how you solve a local problem. For example, if you are a mechanic, show a quick fix on a car. If you are a baker, show the process of making a signature item. This builds trust faster than a polished ad. People connect with a person before they connect with a brand. This personal connection is key to local success.
-
----
-
-## STAT: 100% BUSINESS CUSTOMERS ACCURATE MISS
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: This positions you as the local expert immediately. Your Google Business Profile is your free storefront. Most owners set it up wrong, missing details that stop local customers from finding you. You are leaving money on the table by missing the simple stuff. Make sure your hours, photos, and services are 100 percent accurate. If you miss a detail, local customers will not find you.
+Narration: Start with a question customers already ask. A repair shop could explain what information to bring when requesting an estimate. A bakery could show how to place an advance order. Use examples from your own work, explain the limits, and avoid presenting a demonstration as a guaranteed result.
 
 ---
 
-## OVERLAY: ABOUT FANCY WEBSITE DESIGN
+## OVERLAY: MAKE LOCATION CLEAR
 
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Visual:** Original local business test checklist
+**Duration:** 17s minimum
 
-Narration: This is not about fancy website design. It is about making sure Google knows exactly what you do, where you work, and who you serve. People trust other customers more than they trust your website copy. Focus on getting real feedback from happy customers. Ask them for a review after a job is done. Consistent, genuine reviews matter more than any fancy marketing jargon.
-
----
-
-## OVERLAY: SYSTEM CONNECTS ONLINE PRESENCE
-
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
-
-Narration: You need a system that connects your online presence directly to phone calls and inperson visits. Your Google Business Profile is your free storefront. Most owners set it up wrong, missing details that stop local customers from finding you. Check your hours, your photos, and make sure your service area is exact. If you skip this setup, you are leaving money on the table.
+Narration: State the area you actually serve and make the next step easy to understand. A viewer should be able to tell what you offer and how to contact you. Check the destination from a phone. Do not assume someone watching a video is nearby or ready to buy.
 
 ---
 
-## OVERLAY: FILL ALL RIGHT INFO
+## OVERLAY: KEEP PRODUCTION SIMPLE
 
-**Visual:** Supporting article visual
-**Duration:** 21s minimum
+**Visual:** Original local business test checklist
+**Duration:** 17s minimum
 
-Narration: You need to fill in all the right info, from your hours to your services. This is how people find you when they search for what you do right now. Focus on getting real feedback from happy customers. Do not just ask for a quick quote. Ask them to leave a review about their experience. Consistent, genuine reviews build trust faster than any fancy website design.
-
----
-
-## STAT: 2023 TO 25 BUSINESS SMALL BUSINESSES TIKTOK
-
-**Visual:** Supporting article visual
-**Duration:** 20s minimum
-
-Narration: This means local discovery is becoming a primary. Small business adoption of TikTok nearly doubled from 2023 to 25. USA small businesses on TikTok Shop grew sales year-over-year in 25. This means you can use TikTok to show your products or services directly. If you sell physical goods, TikTok Shop grew sales year-over-year in25. This is a direct path to sales.
+Narration: Film one clear idea at a time. Use understandable speech and readable captions, then preview the finished video on a phone. Show your own materials and get permission before featuring customers. A useful explanation is a practical starting point; it does not require copying an unrelated trend.
 
 ---
 
-## STAT: 808% EFFORT OPTIMIZING PROFILE GETTING
+## OVERLAY: CHECK MUSIC RIGHTS
 
-**Visual:** Supporting article visual
-**Duration:** 25s minimum
+**Visual:** Original local business test checklist
+**Duration:** 17s minimum
 
-Narration: Focus 808 percent of your effort on optimizing your profile and getting real customer feedback. You need a system that connects your online presence directly to people calling your phone. Talk to us about getting you seen. We build websites and run SEO for small local businesses. We make sure you are found where your customers are looking. Stop paying for marketing fluff that does not get calls. See how we get local businesses found on Google, right here.
+Narration: Review the audio before posting. TikTok provides a Commercial Music Library for business content, but do not assume a song available in an app is cleared for every use. Check the permitted use for each destination when sharing the same video elsewhere, and retain the rights evidence with your project.
+
+---
+
+## OVERLAY: TRACK REAL ENQUIRIES
+
+**Visual:** Original local business test checklist
+**Duration:** 26s minimum
+
+Narration: Keep a simple record of the topic, posting date, production time and enquiries you can reasonably connect to the test. Ask new customers how they found you without assuming every sale came from a video. Views can help describe reach, but they do not establish local demand or profitable work. Review the test against the time spent and the useful responses received. Continue ideas that help people understand your business, revise confusing explanations, and stop formats that consume time without evidence of value.
 
 ---
 
 ## QUESTION
 
-**Visual:** Question card
-**Duration:** 6s minimum
+**Visual:** Original local business test checklist
+**Duration:** 13s minimum
 
-Text: Ready to turn TikTok and Google into real local customers?
+Text: Which customer question would you answer first in your business?
 Subtext: COMMENT BELOW
-Narration: Ready to turn TikTok and Google into real local customers? Follow for more practical business tips.
+Engagement-beat: identity
+Narration: Which customer question would you answer first in your business?

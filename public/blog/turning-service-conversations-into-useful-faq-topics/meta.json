@@ -1,0 +1,27 @@
+{
+  "slug": "turning-service-conversations-into-useful-faq-topics",
+  "title": "Turn Service Conversations Into Useful FAQ Topics",
+  "description": "Turn real service questions into useful FAQ topics, remove private details, verify each answer with its owner, and keep the published information current.",
+  "alt": "Conversation bubbles become useful FAQ answers",
+  "brand": "tech",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Operations",
+    "Content"
+  ],
+  "ctaLine": "Should an FAQ cover the most common questions or the hardest decisions?",
+  "contentGraphic": {
+    "label": "Turn Service Conversations Into Useful FAQ Topics",
+    "rows": [
+      {
+        "condition": "Protect customer details",
+        "action": "Find the decision"
+      },
+      {
+        "condition": "Verify the answer",
+        "action": "Choose the right page"
+      }
+    ]
+  }
+}

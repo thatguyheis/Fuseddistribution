@@ -3,5 +3,29 @@
   "score": 90,
   "pass": true,
   "blockers": [],
-  "mode": "deterministic-local"
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T13:47:27.120551+00:00",
+  "review_notes": [
+    "Full correction based on April Silver Institute release, IEA PVPS preliminary deployment assessment and Fraunhofer pilot metallization report.",
+    "Preserved July 1 publication date with September 8 correction notice. No universal per-panel mass, investment allocation, price floor, target price or Fused inventory claim.",
+    "Verified hypothetical production/intensity arithmetic and preserved all operands in reel.",
+    "Local article QA and parsed eight-segment reel validation pass; estimate 126 seconds. Rendered media inspection still required."
+  ],
+  "sources": [
+    "https://silverinstitute.org/elevated-lease-rates-regional-liquidity-tightness-and-robust-investor-interest-resulted-in-record-silver-prices-in-2025/",
+    "https://iea-pvps.org/snapshot-reports/snapshot-2026/",
+    "https://www.ise.fraunhofer.de/en/press-media/news/2026/silver-consumption-in-topcon-solar-cells-reduced-by-factor-ten.html"
+  ],
+  "artifact_sha256": {
+    "verified.md": "b761034a7caa307b6be547354b9acc038759ff59dd26e6d11e0e7185836cd0a4",
+    "index.html": "b2354de33e635586c405f90626f1945a31cb68c10a815403f6962eff8ec8204f",
+    "meta.json": "3280ff0cd4cba1f5ac0573ad71b386f1b7d148cda4cfbaf789f753e17e61ccb3",
+    "hooks.json": "d0ed5705fb2447c35b0b7474df69598776390c74b31d629a5fa4bd3be97088e0",
+    "hero.jpg": "7eb6272a05433d5bff5571518b02ccc5f51f5165ead0fc8031188b9a3ce99974",
+    "photo-post.jpg": "d4fc2661fe049ca9e532782903e099a362d7de1bcc65cd9b7e46fb5842765c53",
+    "reel-data.md": "9636abf2956de2ea169c07b92c63344f9951b4c6480666eac80a08c713d22996",
+    "reel-script.md": "b02d6967425a9ea4032e25d220ae26d4527132a69ae2e0a38dc4b9a3266ce0cf",
+    "social-copy.json": "c16a7507ee6141efdf628f976476fcc770fa543994d0dfb565dc03f02eb8b64c",
+    "research.json": "d27b70645f878109b6cd4220a2d97ca176437ee8691df6c9c7ab8abfb4132f53"
+  }
 }

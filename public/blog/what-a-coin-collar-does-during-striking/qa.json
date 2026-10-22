@@ -1,0 +1,26 @@
+{
+  "slug": "what-a-coin-collar-does-during-striking",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.376049+00:00",
+  "review_notes": [
+    "U.S. Mint collar and dollar lettering exception verified. No error attribution or value claims.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Topic-specific diagrams checked for clipping and legibility.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-06T05-32-53-377Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "f569c9c3291bc036ec94af1848e881b61b4d6b204baf731f1eb2f0e608f318a0",
+    "index.html": "17438b003c6f38db4c003f3d67f38b906a13fddea93db6b5be1406b2218259cf",
+    "meta.json": "a575dd07ad216bb261538157acaedf7c39872747dd505ba8e9e54719ce323f30",
+    "research.json": "a66b44fd9652ccb0879ffd457199ce42d676d7ef35061be0c1b8b2c7fbc59ff6",
+    "hero.jpg": "f54253a30babc1a5d3fd0e0a190db6dd02c7943e334f88b49ab22a4979564980",
+    "photo-post.jpg": "349cbcb6d3ebc93200b6e4852f09dc0c5c666264bdb61ab72e410b7abea6ef6d",
+    "reel-script.md": "7514849f0440a33ea4f2bad2fdfef8e40310ea383d7055352c0b3670ffa85c3f",
+    "reel-data.md": "171bfa61689cb00b199231131496af38140c538f30e72228073726c17cf51dd3",
+    "social-copy.json": "08be096f5cb2b197191121fea9ca544efe9aa65fb2263bc82718611fd71fda75"
+  }
+}

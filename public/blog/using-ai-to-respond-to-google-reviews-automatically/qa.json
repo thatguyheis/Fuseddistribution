@@ -1,0 +1,31 @@
+{
+  "slug": "using-ai-to-respond-to-google-reviews-automatically",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T08:31:56.600356+00:00",
+  "review_notes": [
+    "Reviewed full replacement against current Google API policy, review-data documentation and reply guidance; distinguishes supported capability from proposed workflow design.",
+    "Removed invented vendor/pricing/ranking claims. Fictional tests labeled; public privacy and express authorization boundaries preserved.",
+    "Both artwork images visually inspected. Metadata and social copy reviewed; 110 second estimated narration has specific headings and restored Google policy attribution. Companion data synchronized.",
+    "Deterministic QA passes; rendered reel release review remains pending."
+  ],
+  "sources": [
+    "https://developers.google.com/my-business/content/review-data",
+    "https://developers.google.com/my-business/content/policies",
+    "https://support.google.com/business/answer/3474122?hl=en"
+  ],
+  "artifact_sha256": {
+    "verified.md": "27505abcc3f6a5a6a81a5888d4eaa6852e3de559c84baf8852275f6d7b1192e9",
+    "index.html": "f1cfa5ea07151cef6edff861479a38abf47337fc90c5b90852b9ce3b5e5fd538",
+    "meta.json": "7e9eb5e8140871e39d61a68d35a2a56abe67bc1b03bd9a24b2fcb1533f6ffee8",
+    "hooks.json": "d90faaf173e8b3ccb2fa0063b262442fdcef558af9de51e8e0fd304f70005bcf",
+    "hero.jpg": "3285abe56c3d15088b1381345d1adbc57fc2709ff9329c6f1c2c8e7f3ccb5d89",
+    "photo-post.jpg": "fe7b44def81ad4d9e016dd8397085e015fa2c2466c535a3d6530b54a9c5031d0",
+    "reel-data.md": "26e6719d514fde977c6ebccca179cffd0d2cf8922456427054e5bdf44dd2571e",
+    "reel-script.md": "ee701bcd63efd92eba786ae721fef8abf1b7b86bc0152ff4db5f0dca6964f78c",
+    "social-copy.json": "43cb246c05592ceb00cdd4d9fa652953b1d491bcb2b3231e5f4ad14b0f0d68b6",
+    "research.json": "1e5e7d2fa3f48d592fe10200bcad87b8368e60d26d7af859e58d7b4d4924bc87"
+  }
+}

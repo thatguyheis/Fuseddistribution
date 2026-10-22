@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:59:21.476557+00:00",
+  "heroSha256": "f54253a30babc1a5d3fd0e0a190db6dd02c7943e334f88b49ab22a4979564980",
+  "subject": "Conceptual cross section of collar beside planchet and face tools",
+  "purpose": "Conceptual cross section of collar beside planchet and face tools",
+  "hook": "The edge has its own tool",
+  "keyWords": [
+    "what",
+    "a",
+    "coin"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/oct1-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

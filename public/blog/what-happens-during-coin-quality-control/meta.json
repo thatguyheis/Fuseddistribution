@@ -1,0 +1,32 @@
+{
+  "slug": "what-happens-during-coin-quality-control",
+  "title": "What Happens During Coin Quality Control",
+  "description": "Follow how the U.S. Mint checks planchets and samples struck coins, handles some rejected circulating output, and separates inspection from grading.",
+  "ogDescription": "How coin quality checks work at the U.S. Mint.",
+  "alt": "Coin inspected under a magnifying glass",
+  "brand": "silver",
+  "date": "2026-10-10",
+  "modifiedDate": "2026-10-10",
+  "tags": [
+    "Coin Production",
+    "Collecting"
+  ],
+  "ctaLine": "Which part of coin inspection would you most want to see explained: planchets, sample checks or rejected pieces?",
+  "contentGraphic": {
+    "label": "Inspection happens at different stages",
+    "rows": [
+      {
+        "condition": "Incoming planchets",
+        "action": "Check specifications"
+      },
+      {
+        "condition": "After striking",
+        "action": "Inspect samples for errors"
+      },
+      {
+        "condition": "Accepted circulating output",
+        "action": "Count and weigh"
+      }
+    ]
+  }
+}

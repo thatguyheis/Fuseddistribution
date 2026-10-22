@@ -1,0 +1,35 @@
+{
+  "slug": "walking-liberty-half-dollar-silver-eagle",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-16T13:42:08.773Z",
+  "review_notes": [
+    "Reviewed the full sourced article, rendered page, research record, metadata, narration and companion media labels. Primary-source claims are tied to U.S. Mint references in research.json.",
+    "Visually checked both distinct owner coin photographs. Captions do not infer date, mint mark, reverse, grade, value or rarity beyond what the image supports; the 2021 reverse change is explicitly text-only.",
+    "User approved the transcript and requested full production. Chatterbox Standard audio and Whisper word timing are retained; caption-corrections.json repairs recognizer text against the approved transcript without changing timing.",
+    "Deterministic local article QA passes. Reel render and audiovisual/release checks remain separate.",
+    "Final reel rendered at 720x1280/30 fps and visually sampled across all 18 shot plates and transitions. Whisper caption wording was reviewed against the owner-approved transcript; natural pause gaps are documented in caption-review.json. The reel remains a local draft pending owner listening and publication decisions.",
+    "Publication date set to the actual release day, and companion reel embedded after the public MP4 returned HTTP 200 with video/mp4 and exact 19,858,782-byte size verification."
+  ],
+  "sources": [
+    "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/circulating-coins/half-dollar.html",
+    "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle.html",
+    "https://www.usmint.gov/content/usmint/us/en/learn/coins-and-medals/collectible-coins/american-eagle/silver-proof.html"
+  ],
+  "artifactSha256": {
+    "verified.md": "2c5b65d455987349d378e48a767dad3d37abf9408b1f302ca7375263d4621f6e",
+    "index.html": "c801a86e6610f494796bb4dbd80d09ef476ad86003f7d3c499cd26ea3b8f9dba",
+    "meta.json": "9ba56ff4ab21cb61bacc90371442bf242382a8d1a168102e5cbe862a6145c795",
+    "research.json": "25345de06aff5240fafe547110534015f78196fbde2fb072bec1274cb968e59d",
+    "hero.jpg": "b305d85c97ac1bf50687c3fb7ec4bd453ff3603732d64783dd8c9da67113d265",
+    "photo-post.jpg": "f1c8ccebaf1a9107087e830bcd33255496c28745c25c0e00955296d901ce2666",
+    "reel-script.md": "09268be9a38721558337e6ea94f9c2af3c2d71fedb3cb26f85c15d6e8e736171",
+    "reel-data.md": "d14293c01f2eb2caab3a10688c4e19b47bbdeac20b03da5cc96b8203e106fba4",
+    "social-copy.json": "a4b763ead8669f731f7fc0065aa151f6ad94b32edccb5e6c955f49e67909049e",
+    "caption-corrections.json": "732e83383b29bb6fddbf058efa98441d9482d9ab0f9674a3c3e51f853d2079e3",
+    "preferred-media.json": "e723237b6a68a500c597ac20460c1b34297f7f65f93d1473d7bab79c5e06d58b",
+    "presentation-plan.json": "175b8aa41944c44ff222737fba452e839087f27f4bd08e2548613cbef6af5b92"
+  }
+}

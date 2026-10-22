@@ -1,0 +1,215 @@
+{
+  "version": 2,
+  "segments": [
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-00.jpg",
+        "type": "photo",
+        "title": "Same Liberty? Different coin.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Separate specimens / compared by visible obverse design",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "ef9c4d24365afbe4f49154b6c517bef29e0e28cec807fd6104e8f6a523b00e61"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-01.jpg",
+        "type": "photo",
+        "title": "Start with the half dollar.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Owner photograph / no specimen date inferred",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "ac980ae748a5bac132bfd061500776fb0820ad6722545c5f44ca17bcacd15126"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-02.jpg",
+        "type": "photo",
+        "title": "Follow the design across eras.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Design history, not a claim that these are the same coin",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "60328e6a4f28a6b938eeee7d43f375667c376f276256fc2affeae4fbbf737bf2"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-03.jpg",
+        "type": "photo",
+        "title": "Design debut: 1916",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Date graphic describes the design, not the pictured specimen",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "c87e958737b14f9db58e1c60613f19fcb834bdac4e462e655bcae0de1d86eb0b"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-04.jpg",
+        "type": "photo",
+        "title": "Liberty in full stride.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "U.S. Mint design description",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "c45f6a9138424cd49ddd5102a33b0d78a8fb7fd28e088602432b01221b7f5496"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-05.jpg",
+        "type": "photo",
+        "title": "The half dollar carries the image.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "1916 design / obverse shown",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "4b67774346c518358b6b65f232c00c5ef3bf35d6379d3741c01bccc0b6c21904"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-06.jpg",
+        "type": "photo",
+        "title": "The run ends: 1947",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "The photographed coin is not identified by date",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "d4fade5ce53e6b4c6e79907a3cc95877746333d9a967576509b375bc57d65e32"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-07.jpg",
+        "type": "photo",
+        "title": "A new half dollar: 1948",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Historical timeline / not a photograph of a Franklin coin",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "a896fb7c1a4092424546e514e369f7daf757bdb6a999feecb47e137dd5359f89"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-08.jpg",
+        "type": "photo",
+        "title": "Liberty Bell replaces the eagle.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Text-only comparison / neither reverse is shown in owner photos",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "fb3efa347faa4bfe7eccc6a431094ae2b37fc20f0dddd40ca3cd216453eaa160"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-09.jpg",
+        "type": "photo",
+        "title": "A new program begins: 1986",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "The Silver Eagle program date is not the pictured coin date",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "ff186ae1b629fa58316d98fdd7c97174164b05c74a04a3c09d7d65271d854f60"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-10.jpg",
+        "type": "photo",
+        "title": "The design returns on silver.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Owner photograph / date visible: 2021",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "07db3d9cc9388d6be6d20accd0b9cf0a03747cf0d8e7f7e0a080efe5a27c2e41"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-11.jpg",
+        "type": "photo",
+        "title": "Same obverse, new program.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Separate coin types and separate specimens",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "b024e176229c34ea6dcd86949c0de283c7ceef1b353c94ae15f0b17eb8bcbc72"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-12.jpg",
+        "type": "photo",
+        "title": "The photographed Eagle: 2021",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Holder label not used as grading evidence",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "8c71186c9861cfee36310cd4daf9c3b201f0a5c6021e694e03030ba03cb0de17"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-13.jpg",
+        "type": "photo",
+        "title": "The front stays familiar.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "The coin photo shows the obverse only",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "8ffc3ec4104b75e276042e2ec7334109f89f02494ad262c31fa35656fd75c5ff"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-14.jpg",
+        "type": "photo",
+        "title": "The reverse changes in 2021.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Text-only fact / U.S. Mint source",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "3a4053a75cbd9cc5a1be38f2ec30d160c91281c92fb5154a4de7b0d9f8f634b2"
+      }
+    ],
+    [
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-15.jpg",
+        "type": "photo",
+        "title": "Different coins. One design lineage.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "A design introduced in 1916 returns on the Silver Eagle in 1986",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "98c5edf3bff88462807988e31e4ef58a219542344a81006ba1c71775f0c3cf24"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-16.jpg",
+        "type": "photo",
+        "title": "1916 → 1986 → 2021",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "The visible 2021 coin does not date the original design",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "f666f6a90b22e6f945a75f565ed3b51dfb426b77b73d59a6564a2c1ac4fb1107"
+      },
+      {
+        "path": "content/coin-history/walking-liberty-half-dollar-silver-eagle/reusable-library/walking-liberty/walking-liberty-scene-17.jpg",
+        "type": "photo",
+        "title": "The design carries the history.",
+        "eyebrow": "FUSED / WALKING LIBERTY HISTORY",
+        "credit": "Fused Distribution / coin history",
+        "weight": 1,
+        "fit": "cover",
+        "focus": "center",
+        "sha256": "21117b3a604602e8589d3b0ed4b4f9c9f5553eab6028e22f6b713420a03fd384"
+      }
+    ]
+  ]
+}

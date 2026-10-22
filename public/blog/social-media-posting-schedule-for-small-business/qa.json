@@ -1,0 +1,32 @@
+{
+  "slug": "social-media-posting-schedule-for-small-business",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T13:19:32.397091+00:00",
+  "review_notes": [
+    "Owner read full article and companions; original practical guidance with clearly illustrative three-hour schedule, no unsupported platform performance claims.",
+    "Owner viewed both actual JPEG exports; topic diagram is readable and consistent with approved editorial recipe.",
+    "Production parser: eight segments, 117 planned seconds, zero errors/warnings. Actual audio, rendering and audiovisual release remain pending.",
+    "Deterministic QA passes; internal links resolve; September14 actual publication date and August7 recovery provenance retained.",
+    "September14 rendererrepair: segment1usesexistinglicensedphotoafterrepeatHtml5Videotimeout; narration unchanged.",
+    "Completed107.413sreel: releasepassed, owner viewed actual beginning/middle/end frames, bothplatformderivativeshostedHTTP200exact7117764bytes. Automatedcaptionreview, notmanualalignment."
+  ],
+  "protocol": "FD-HERO-DIAGRAM-V1",
+  "artifactSha256": {
+    "verified.md": "2f937585e2ee84859b9726aea580ced0132148869eecc97bff82227f78b2dec3",
+    "index.html": "58a93606f7d2d8c05530dfabb5225cad5414b88c84f28b9916f84949484ea74c",
+    "hero.jpg": "fd67842d477a732cb56ee990a07764ec409aba7fa08aff1f6356f67694d8ba7f",
+    "social-copy.json": "7d6c57875c5246529efbea36a205bdeaf0baf92e62b826d9bfd94c9250994633",
+    "hero.svg": "2ab4ff39a6b570d210b4f8e609ab813644d360e8bdb5866d4f870678a4568e7c",
+    "reel-data.md": "99cb3d6e4444305209bcba94a6b016747784dd6d013baaacab5d9e93826bad1f",
+    "photo-post.svg": "81edc2af55c7b7c1311b1c1ed87e942e1fb0cf7793babebae35e9cc4b41719cb",
+    "research.json": "333d5467a94fc2275b1743289530f112e1de88d79fe5c8fb59de5d6e9cdc446f",
+    "hooks.json": "886bc1c02f3fcec70083344a651b24de6fbdda672719f4945f030b50c53b19c5",
+    "reel-script.md": "519f71438332f93c9ba88e42eb2b69f99f2a4ec49a625009f8802e8715f1379b",
+    "gemma_draft.md": "2f937585e2ee84859b9726aea580ced0132148869eecc97bff82227f78b2dec3",
+    "photo-post.jpg": "e8a855cdf72f379f43a4ef2851ded62564acac200c295d1e1665219267216065",
+    "meta.json": "df465077d3d3600faede54e041fd946de01274e0fc8a3e6f4f8e75f1f5b94e10"
+  }
+}

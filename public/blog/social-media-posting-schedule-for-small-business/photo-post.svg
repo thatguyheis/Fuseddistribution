@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#071522"/>
+  <rect x="70" y="70" width="940" height="940" rx="34" fill="#102d40" stroke="#58d6ff" stroke-width="4"/>
+  <text x="120" y="170" fill="#58d6ff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">SMALL BUSINESS</text>
+  <text x="120" y="275" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">PLAN</text>
+  <text x="120" y="350" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">PUBLISH</text>
+  <text x="120" y="425" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">RESPOND</text>
+  <text x="120" y="500" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">REVIEW</text>
+  <line x1="120" y1="575" x2="930" y2="575" stroke="#8df0c3" stroke-width="4"/>
+  <text x="120" y="660" fill="#a9c9d5" font-family="Arial,sans-serif" font-size="30">A posting schedule should fit</text>
+  <text x="120" y="705" fill="#a9c9d5" font-family="Arial,sans-serif" font-size="30">the work your business already does.</text>
+  <text x="120" y="920" fill="#8df0c3" font-family="Arial,sans-serif" font-size="24" font-weight="700">FUSED DISTRIBUTION</text>
+</svg>

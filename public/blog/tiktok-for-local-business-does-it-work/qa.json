@@ -2,5 +2,25 @@
   "slug": "tiktok-for-local-business-does-it-work",
   "score": 90,
   "pass": true,
-  "blockers": []
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-10-14T15:32:05Z",
+  "review_notes": [
+    "Read full repaired article and seven narration segments; removed unsupported statistics, unrelated repetition and malformed percentages.",
+    "Primary TikTok commercial music sources checked in saved source review; practical testing advice makes no audience or sales guarantees.",
+    "Inspected actual hero and square exports; coherent original checklist, legible and unclipped.",
+    "Local QA and narration preflight pass. Article date aligned to existing June29 catalog publication date after live verification found inconsistent old metadata; September23 is modification date. Reel release separate.",
+    "October 14 owner repair: reread current article, rendered article text, saved primary-source record, and all companion narration. Aligned displayed, spoken, data, and caption question; ending is a topic-specific identity question with no post-question summary. Parser and engagement policy pass; narration estimate 104.1s. Changed speech requires a new render before distribution."
+  ],
+  "artifactSha256": {
+    "verified.md": "f099eca728de90cedc1ba4048de3950b5edb0ed0884d1ec7e54aba56e87b6ba8",
+    "index.html": "d24d775f3b057153fdd66f4d922f99ddfe6094ebd9ca8031294ae512e1b1f475",
+    "meta.json": "cf4a7933f4013b7298af2ef6300d7563f467ccc9781e85119c1e58f6971f234d",
+    "research.json": "6244e6014d13b7f2f78989aabe02133dae7ee0a59e0128497ef7e21e0782697b",
+    "hero.jpg": "a765354d542757f79ab7692ff7d631229ab6b77ce5d10dbe8773d5f21d78ff66",
+    "photo-post.jpg": "8186ccadc87e1d4cfe8e88d505f379080cfa30db466d3424e4ff332c158a67a1",
+    "reel-script.md": "7fa28d0dff4686395fa4b23688e3f012d965fa64a2da1a964cfb76d56ce83895",
+    "reel-data.md": "69b33153986865c5125d2c663735f03c8e1e321e6a7f91a4575830a9e9092a63",
+    "social-copy.json": "a1a9320d18ea51196665b387e3f65f47274d15ecf7052a75e1414a96238fccd6"
+  }
 }

@@ -1,10 +1,10 @@
 {
-  "hook": "Solar demand drives silver price action, creating a structural floor.",
-  "hook_type": "immediate_value",
+  "hook": "More solar installations do not automatically mean more silver demand.",
+  "hook_type": "practical",
   "key_stat": {
-    "value": "$58.30",
-    "label": "per ounce on July"
+    "value": "4",
+    "label": "Checks for reading solar demand claims"
   },
-  "discussion_question": "Is now the time to build your silver stack?",
-  "hashtags": "#SilverInvesting #PreciousMetals #SilverBugs #HardAssets #InflationHedge"
+  "discussion_question": "Which assumption would you check in a solar demand forecast?",
+  "hashtags": "#Silver #Solar"
 }

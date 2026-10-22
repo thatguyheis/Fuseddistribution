@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "mode": "mixed",
+  "supportingCutaways": [
+    {
+      "index": 1,
+      "shots": [
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-half.jpg",
+          "sha256": "5af1380a0e8d709f3a0c05a807bb76189b1925915b8f57013a7ed8453f9d97f3"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-eagle.jpg",
+          "sha256": "fd9dd7d4223104b60e2aeccd057e2da2a5ad52c05d1cb134a1cd1b8290251bb2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-3.jpg",
+          "sha256": "64d6154813b5d54705486d00b02296d484b48e9cf00803abb334577c5d57465a"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "shots": [
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-half.jpg",
+          "sha256": "5af1380a0e8d709f3a0c05a807bb76189b1925915b8f57013a7ed8453f9d97f3"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-eagle.jpg",
+          "sha256": "fd9dd7d4223104b60e2aeccd057e2da2a5ad52c05d1cb134a1cd1b8290251bb2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0.jpg",
+          "sha256": "8c34058a09cf0f9728e05e6819b7d17ed283f6f190bad10730673a34ae2988c8"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "shots": [
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-half.jpg",
+          "sha256": "5af1380a0e8d709f3a0c05a807bb76189b1925915b8f57013a7ed8453f9d97f3"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-eagle.jpg",
+          "sha256": "fd9dd7d4223104b60e2aeccd057e2da2a5ad52c05d1cb134a1cd1b8290251bb2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0.jpg",
+          "sha256": "8c34058a09cf0f9728e05e6819b7d17ed283f6f190bad10730673a34ae2988c8"
+        }
+      ]
+    }
+  ],
+  "source": "fused-owned-coin-library",
+  "segments": [
+    {
+      "index": 0,
+      "type": "photo",
+      "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0.jpg",
+      "sha256": "8c34058a09cf0f9728e05e6819b7d17ed283f6f190bad10730673a34ae2988c8",
+      "cutaways": [
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-half.jpg",
+          "sha256": "5af1380a0e8d709f3a0c05a807bb76189b1925915b8f57013a7ed8453f9d97f3"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-eagle.jpg",
+          "sha256": "fd9dd7d4223104b60e2aeccd057e2da2a5ad52c05d1cb134a1cd1b8290251bb2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0.jpg",
+          "sha256": "8c34058a09cf0f9728e05e6819b7d17ed283f6f190bad10730673a34ae2988c8"
+        }
+      ],
+      "assetIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "Shared visible pose; no mint or date inference",
+      "reviewed": true
+    },
+    {
+      "index": 3,
+      "type": "photo",
+      "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-3.jpg",
+      "sha256": "64d6154813b5d54705486d00b02296d484b48e9cf00803abb334577c5d57465a",
+      "cutaways": [
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-3-eagle.jpg",
+          "sha256": "8df767d07cf78ff0a13c7a2f2cc39cf39008e253ee0be5ffc8b1d02f6c055ee2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0-eagle.jpg",
+          "sha256": "fd9dd7d4223104b60e2aeccd057e2da2a5ad52c05d1cb134a1cd1b8290251bb2"
+        },
+        {
+          "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-0.jpg",
+          "sha256": "8c34058a09cf0f9728e05e6819b7d17ed283f6f190bad10730673a34ae2988c8"
+        }
+      ],
+      "assetIds": [
+        "coin-0013",
+        "coin-0020"
+      ],
+      "role": "Sourced design timeline and independently visible 2021 date",
+      "reviewed": true
+    },
+    {
+      "index": 5,
+      "type": "photo",
+      "path": "public/blog/walking-liberty-half-dollar-silver-eagle/images/scene-5.jpg",
+      "sha256": "76c8922e05c963d66cb4db799294b59aea68d02026d3ecfeebabc95e893a0c7e",
+      "cutaways": [],
+      "assetIds": [
+        "coin-0020",
+        "coin-0013"
+      ],
+      "role": "Comparison payoff",
+      "reviewed": true
+    }
+  ]
+}

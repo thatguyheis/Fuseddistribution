@@ -1,17 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
-  <rect width="1200" height="1200" fill="#041018"/>
-  <radialGradient id="g1" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#58d6ff" stop-opacity="0.12"/><stop offset="100%" stop-color="#58d6ff" stop-opacity="0"/></radialGradient>
-  <radialGradient id="g2" cx="12%" cy="10%" r="40%"><stop offset="0%" stop-color="#4dffb8" stop-opacity="0.10"/><stop offset="100%" stop-color="#4dffb8" stop-opacity="0"/></radialGradient>
-  <rect width="1200" height="1200" fill="url(#g1)"/><rect width="1200" height="1200" fill="url(#g2)"/>
-  <circle cx="600" cy="600" r="480" fill="none" stroke="#58d6ff" stroke-opacity="0.07"/>
-  <circle cx="600" cy="600" r="324" fill="none" stroke="#58d6ff" stroke-opacity="0.11"/>
-  <circle cx="757" cy="65" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="338" cy="385" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="999" cy="705" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="580" cy="1025" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="161" cy="225" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="822" cy="545" r="1.5" fill="#4dffb8" opacity="0.19"/><circle cx="403" cy="865" r="1" fill="#58d6ff" opacity="0.23"/><circle cx="1064" cy="65" r="1.5" fill="#4dffb8" opacity="0.27"/><circle cx="645" cy="385" r="1" fill="#58d6ff" opacity="0.15"/><circle cx="226" cy="705" r="1.5" fill="#4dffb8" opacity="0.19"/>
-  <text x="600" y="140" font-family="Arial, sans-serif" font-size="26" fill="#58d6ff" text-anchor="middle" letter-spacing="8">FUSED</text>
-  <text x="600" y="308" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">WEBSITE SPEED AND</text>
-  <text x="600" y="390" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">LOCAL BUSINESS</text>
-  <text x="600" y="472" font-family="Impact, sans-serif" font-size="72" fill="#ecf8fb" text-anchor="middle" letter-spacing="2">RANKING</text>
-  <text x="600" y="760" font-family="Impact, sans-serif" font-size="180" fill="#58d6ff" text-anchor="middle">27%</text>
-  <text x="600" y="810" font-family="Arial, sans-serif" font-size="26" fill="rgba(175,198,207,0.75)" text-anchor="middle">LESS LIKELY TO RANK</text>
-  <rect x="350" y="1020" width="500" height="68" rx="16" fill="none" stroke="#58d6ff" stroke-opacity="0.5"/>
-  <text x="600" y="1063" font-family="Arial, sans-serif" font-size="22" fill="#ecf8fb" text-anchor="middle">Full breakdown at fuseddistribution.com</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#071522"/>
+  <rect x="70" y="70" width="940" height="940" rx="34" fill="#102d40" stroke="#58d6ff" stroke-width="4"/>
+  <text x="120" y="170" fill="#58d6ff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">SMALL BUSINESS</text>
+  <text x="120" y="275" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">MEASURE</text>
+  <text x="120" y="350" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">REPAIR</text>
+  <text x="120" y="425" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">VERIFY</text>
+  <text x="120" y="500" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">RECORD</text>
+  <line x1="120" y1="575" x2="930" y2="575" stroke="#8df0c3" stroke-width="4"/>
+  <text x="120" y="660" fill="#a9c9d5" font-family="Arial,sans-serif" font-size="30">A speed repair should improve</text>
+  <text x="120" y="705" fill="#a9c9d5" font-family="Arial,sans-serif" font-size="30">the task your customer needs to do.</text>
+  <text x="120" y="920" fill="#8df0c3" font-family="Arial,sans-serif" font-size="24" font-weight="700">FUSED DISTRIBUTION</text>
 </svg>

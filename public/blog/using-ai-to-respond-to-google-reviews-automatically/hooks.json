@@ -1,0 +1,10 @@
+{
+  "hook": "A generated review reply is not a published reply.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "6",
+    "label": "Checks before routine posting"
+  },
+  "discussion_question": "Which review situations should your automation escalate?",
+  "hashtags": "#SmallBusiness #AI"
+}

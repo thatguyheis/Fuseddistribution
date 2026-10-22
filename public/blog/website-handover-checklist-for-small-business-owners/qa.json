@@ -1,0 +1,30 @@
+{
+  "slug": "website-handover-checklist-for-small-business-owners",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-17T01:08:43.492883+00:00",
+  "review_notes": [
+    "Owner authored and reviewed article and eight topic-specific narration segments against primary guidance. No performance guarantees.",
+    "Owner inspected actual hero and square JPEG exports; preferred native diagram process retained.",
+    "Production parser, local QA and narration preflight pass; measured audiovisual release still required.",
+    "Reviewed scheduler change: removal of trailing newline only; narration unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "004ebf6ff6e031438bb5b9f785e907feabba6c0277ea77eeb44f97b8999917b3",
+    "index.html": "fe8152bc255825baf6309b27f639b23aede0dcf19573c319da0adca2d5137931",
+    "hero.jpg": "357fcae74b20ac82edf95e6751f9ad80169348ce4ee3aa8f89557b5de0b46d7a",
+    "social-copy.json": "ca143ea41d3d0b1eaeb60820ead259a97c1a4b94cf518b29a1ba683f4e70da9b",
+    "hero.svg": "78f7dded74ab5a733eb82221bef30c544f1934f2ad96725077da61fa047cff51",
+    "reel-data.md": "6a074fb3e635f92b885c5993807c0795d8decc2945b754f295c1713791fc630c",
+    "photo-post.svg": "d21f56280d69f011cf4361b0012a7edde43a484cd2b8899ec13c9e33a830776e",
+    "research.json": "4c719e9e4cb81842e981db286119cea7b98f17d84a385e983eb6eae90092014b",
+    "hooks.json": "1343eb3daa6528f4bdbd675b8d276fddb079cb92f669009cd29e3a06f0d0d1d6",
+    "reel-script.md": "69eb5932bcfd4878b203402a7a7dfc12bb8c01bd20f7ccdc368181044c84eb34",
+    "gemma_draft.md": "92ecbd6b18424877c3f6f5d6e34efca4f2c4e27c95e327e5baaf710d9f3bde9e",
+    "photo-post.jpg": "3950e421b7930cc2042c27f5fbc4683073c3a1277108227f7ebf71c587cd869e",
+    "meta.json": "399409096c73b37ba331bfba96119fe0090f53839e153399b606c6ce7c9bc1e1"
+  }
+}

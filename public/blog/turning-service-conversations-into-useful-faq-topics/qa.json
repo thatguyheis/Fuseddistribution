@@ -1,0 +1,27 @@
+{
+  "slug": "turning-service-conversations-into-useful-faq-topics",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.296638+00:00",
+  "review_notes": [
+    "Google useful-content guidance distinguished from original FAQ editorial workflow. No ranking guarantee or invented customer observations.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Support-test review label centered after initial inspection; revised export inspected.",
+    "Expanded one narration segment with existing reviewed article guidance after duration preflight. No claim added beyond the approved source text.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-06T05-32-53-377Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "01c28e15d197e25830f1dd30bb0db382e50e589619c960d88b9bff1f9b0dd9fc",
+    "index.html": "0e4e0c94c83739cf1bb1b9d5fee1e81c7e0501bef9c442d01dfa68489cbeac44",
+    "meta.json": "45969dab14729456d23d4df6f5b38856a3a81cb6deacec484883016540b3a47c",
+    "research.json": "8cde061acd05044cbd9ee9b2ff70728f91096af8296da8091c9289a7f7d166bb",
+    "hero.jpg": "a2e4ee034d2b2d02e145efd8dc7796e3fe447df0f673e894c5d8ec07a9ad84a1",
+    "photo-post.jpg": "ec8075e98e74574cc5c762099fab5706fa258f911be539ccda1f9986d66636cd",
+    "reel-script.md": "ab5f87c5a4969a4dd3569ee0feb09fa5a2db3e75a09e5b5e3e63fd1efc345651",
+    "reel-data.md": "1445b1793c33555891033643ae69426635be6952fd2c039cec8dae1c12a67b1a",
+    "social-copy.json": "ce3df88d5cf31b2ca0e1ca05d6355452a46a33733e2fa87a623344d6e7466cb3"
+  }
+}

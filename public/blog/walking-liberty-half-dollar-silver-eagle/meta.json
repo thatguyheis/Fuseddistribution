@@ -1,0 +1,42 @@
+{
+  "slug": "walking-liberty-half-dollar-silver-eagle",
+  "title": "How the Walking Liberty Design Returned on the Silver Eagle",
+  "description": "Follow the Walking Liberty design from its 1916 half dollar debut, through the Franklin change in 1948, to its return on the Silver Eagle in 1986.",
+  "ogDescription": "The Walking Liberty design moved from a circulating half dollar to the Silver Eagle.",
+  "alt": "Walking Liberty on two silver coins",
+  "brand": "silver",
+  "date": "2026-10-16",
+  "modifiedDate": "2026-10-16",
+  "tags": [
+    "Coin history",
+    "Walking Liberty",
+    "Silver Eagles"
+  ],
+  "ctaLine": "Explore more stories from American coin history.",
+  "status": "approved-for-publication",
+  "contentGraphic": {
+    "label": "Walking Liberty design timeline",
+    "rows": [
+      {
+        "condition": "1916",
+        "action": "Walking Liberty debuts on the half dollar"
+      },
+      {
+        "condition": "1947",
+        "action": "Final year of the Walking Liberty half dollar"
+      },
+      {
+        "condition": "1948",
+        "action": "Franklin replaces Liberty on the half dollar"
+      },
+      {
+        "condition": "1986",
+        "action": "American Eagle program launches"
+      },
+      {
+        "condition": "2021",
+        "action": "Silver Eagle reverse design refreshed"
+      }
+    ]
+  }
+}
