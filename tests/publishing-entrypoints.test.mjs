@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';
+for(const path of ['public/blog/scripts/buffer-live.mjs','scripts/buffer-backlog-runner.mjs','scripts/rotate-buffer-ctas.mjs','scripts/engagement-report.mjs','video/scripts/parse-script.mjs','video/scripts/validate-reel.mjs','video/scripts/release-reel.mjs']) test(`production entry point parses: ${path}`,()=>{const result=spawnSync(process.execPath,['--check',path],{encoding:'utf8'});assert.equal(result.status,0,result.stderr)});

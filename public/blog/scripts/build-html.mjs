@@ -153,6 +153,21 @@ function mdToHtml(md) {
     if (ulm) { if (list !== "ul") { closeList(); out.push("<ul>"); list = "ul"; } out.push(`<li>${inline(ulm[1])}</li>`); i++; continue; }
     if (olm) { if (list !== "ol") { closeList(); out.push("<ol>"); list = "ol"; } out.push(`<li>${inline(olm[1])}</li>`); i++; continue; }
 
+    const image = t.match(/^!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)$/);
+    if (image) {
+      closeList();
+      const [, alt, source, caption] = image;
+      const localImage = source.match(/^images\/[a-z0-9._-]+\.(?:jpe?g|png|webp)$/i);
+      const imageUrl = localImage ? `/blog/${slug}/${source}` : safeMarkdownUrl(source);
+      if (imageUrl) {
+        const captionHtml = caption ? `<figcaption>${inline(caption)}</figcaption>` : "";
+        out.push(`<figure class="article-photo"><img src="${esc(imageUrl)}" alt="${esc(alt)}" loading="lazy" />${captionHtml}</figure>`);
+      } else {
+        out.push(`<p>${inline(t)}</p>`);
+      }
+      i++; continue;
+    }
+
     // paragraph: gather until blank
     closeList();
     const buf = [t];
@@ -177,7 +192,23 @@ const B = meta.brand === "silver"
 
 const ogDesc = meta.ogDescription || meta.description;
 const socialVideoHtml = renderSocialVideo(socialVideo, meta.title, reelArtifactsExist);
-const bodyHtml = placeSocialVideoInBody(mdToHtml(rawBody), socialVideoHtml);
+// Optional editorial diagram lives in hashed metadata, so rebuilding preserves
+// the reviewed graphic without hand editing generated HTML.
+let contentGraphicHtml = '';
+if (meta.contentGraphic !== undefined) {
+  const graphic = meta.contentGraphic;
+  if (!graphic || typeof graphic.label !== 'string' || !graphic.label.trim()
+    || graphic.label.length > 240 || !Array.isArray(graphic.rows)
+    || graphic.rows.length < 1 || graphic.rows.length > 6
+    || graphic.rows.some(row => !row || ['condition', 'action'].some(key =>
+      typeof row[key] !== 'string' || !row[key].trim() || row[key].length > 160))) {
+    throw new Error('contentGraphic must have a label and 1-6 short condition/action rows');
+  }
+  contentGraphicHtml = `<div class="math-box" role="img" aria-label="${esc(graphic.label)}">${
+    graphic.rows.map(row => `<p><strong>${esc(row.condition)}</strong> &rarr; ${esc(row.action)}</p>`).join('')
+  }</div>`;
+}
+const bodyHtml = contentGraphicHtml + placeSocialVideoInBody(mdToHtml(rawBody), socialVideoHtml);
 
 function placeSocialVideoInBody(body, video) {
   if (!video) return body;
@@ -351,6 +382,7 @@ h1 {
 // ── assemble ──────────────────────────────────────────────────────────────
 const html = render({
   title: meta.title, slug, sub: B.sub, description: meta.description, ogDesc,
+  squareCover: meta.blogCover === "photo-post.jpg",
   alt: meta.alt, date: meta.date, modifiedDate: meta.modifiedDate || meta.date, humanDate, tag1, tag2,
   navCta: B.navCta, artCta: B.artCta, ctaLine: B.ctaLine, bodyHtml, socialVideoHtml,
 });
@@ -373,9 +405,9 @@ function render(d) {
     <meta property="og:url" content="https://fuseddistribution.com/blog/${d.slug}/" />
     <meta property="og:title" content="${esc(d.title)}" />
     <meta property="og:description" content="${esc(d.ogDesc)}" />
-    <meta property="og:image" content="https://fuseddistribution.com/blog/${d.slug}/hero.jpg" />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://fuseddistribution.com/blog/${d.slug}/hero.jpg" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}" />
     <link rel="canonical" href="https://fuseddistribution.com/blog/${d.slug}/" />
     <script type="application/ld+json">
     {
@@ -402,7 +434,7 @@ function render(d) {
         "@id": "https://fuseddistribution.com/#organization",
         "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
       },
-      "image": "https://fuseddistribution.com/blog/${d.slug}/hero.jpg",
+      "image": "https://fuseddistribution.com/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}",
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/${d.slug}/" }
     }
     </script>
@@ -482,7 +514,7 @@ ${CSS}
           </div>
 
           <figure class="article-hero">
-            <img src="hero.jpg" alt="${esc(d.alt)}" width="1200" height="630" fetchpriority="high" />
+            <img src="/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}" alt="${esc(d.alt)}" width="1200" height="${d.squareCover ? 1200 : 630}"${d.squareCover ? ' style="object-fit: contain"' : ""} fetchpriority="high" />
           </figure>
 
           <div class="article-divider"></div>
@@ -526,11 +558,11 @@ ${CSS}
 `;
 }
 
-function validUrl(value, pattern) {
+function validUrl(value, predicate) {
   if (typeof value !== 'string') return null;
   try {
     const parsed = new URL(value);
-    return parsed.protocol === 'https:' && pattern.test(parsed) ? parsed.href : null;
+    return parsed.protocol === 'https:' && predicate(parsed) ? parsed.href : null;
   } catch {
     return null;
   }
@@ -572,8 +604,8 @@ function renderSocialVideo(data, title, reelArtifactsExist = false) {
   const x = validUrl(platforms.x?.url, parsed => parsed.hostname.toLowerCase() === 'x.com' && /^\/[^/]+\/status\/\d+\/?$/.test(parsed.pathname));
   const primaryVideo = validUrl(data?.primaryVideo?.url, parsed => parsed.hostname.toLowerCase() === 'fuseddistribution.luxraycoco.workers.dev' && /^\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i.test(parsed.pathname));
   if (!primaryVideo && !youtube && !instagram && !x) {
-    if (!reelArtifactsExist) return '';
-    return '<aside class="social-video" aria-label="Reel publication status"><h2>Video series coming soon</h2><p>This article is planned for one long form reel and three focused short topics. Published videos will appear here as they are released.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>';
+    if (!reelArtifactsExist || data?.showPending === false) return '';
+    return '<aside class="social-video" aria-label="Reel publication status"><h2>Companion reel</h2><p>The companion reel will appear here after editorial review and release approval.</p><div class="social-video-pending" role="status" aria-live="polite">Pending editorial release</div></aside>';
   }
 
   const links = [

@@ -36,6 +36,11 @@ print(json.dumps({
 
 attempt=1
 while (( attempt <= 3 )); do
+  # Recheck at the inference boundary: rendering may start after the publisher probe.
+  if [[ -d /tmp/fused-remotion-render.lock ]] && python3 "$(dirname "$0")/lock-owner-alive.py" /tmp/fused-remotion-render.lock; then
+    echo "hermes-local.sh: renderer owns heavy compute; defer local inference" >&2
+    exit 75
+  fi
   OUT=$(curl -sS --max-time "$TIMEOUT" \
     "$BASE_URL/chat/completions" \
     -H "Content-Type: application/json" \

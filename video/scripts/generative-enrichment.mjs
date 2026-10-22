@@ -1,5 +1,5 @@
 import {createHash} from 'node:crypto';
-import {accessSync, constants, existsSync, mkdirSync, statSync, unlinkSync} from 'node:fs';
+import {accessSync, constants, existsSync, mkdirSync, statSync} from 'node:fs';
 import {homedir} from 'node:os';
 import {basename, dirname, join, resolve} from 'node:path';
 import {spawn} from 'node:child_process';
@@ -67,6 +67,22 @@ export function generativeMediaMode(env = process.env) {
 export function selectBackgroundProfile({segment, topic}) {
   const text = String(segment?.text || segment?.title || '').toLowerCase();
   if (topic === 'silver') {
+    if (/kennedy|assassinat|memorial|1963|1964|coinage production/.test(text)) {
+      return {id: 'coin-history-kennedy-production', scene: 'a non-specific mid twentieth century coin mint production environment with heavy industrial presses, metal dies, and restrained period lighting; no readable signage, portraits, coins, or exact mint architecture'};
+    }
+    if (/carver|washington|tuskegee|agricultur|crop rotation|southern soil/.test(text)) {
+      return {id: 'coin-history-tuskegee-agriculture', scene: 'a non-specific early twentieth century Alabama agricultural teaching landscape with crop rows, hand tools, and a modest rural school building in the distance; no identifiable campus, people, signs, or invented archival details'};
+    }
+    if (/eagle|1986|redesign|reverse proof|damstra|gaudioso|mercanti/.test(text)) {
+      return {id: 'coin-history-eagle-design-studio', scene: 'a contemporary coin-design studio with an unmarked sculpting bench, blank clay relief studies, and directional museum-like lighting; no coin faces, portraits, lettering, screens, or named artists'};
+    }
+    if (/columbian|1892|exposition|world.?s fair|chicago fair/.test(text)) {
+      return {id: 'coin-history-worlds-fair', scene: 'a generic late nineteenth century international exposition ground with broad lawns, temporary exhibition halls, and distant classical facades; no identifiable landmark, flags, people, signs, text, or exact historical reconstruction'};
+    }
+    if (/lincoln|wheat cent|brenner|1909|centennial/.test(text)) {
+      return {id: 'coin-history-lincoln-engraving', scene: 'a generic early twentieth century engraving workshop with a blank metal die, hand engraving tools, and warm window light; no portrait, coin, lettering, date, people, or identifiable historic workshop'};
+    }
+    if (/design|liberty|weinman|sculpt/.test(text)) return {id: 'silver-design-studio', scene: 'an atmospheric artist studio with clay tools, blank sketch papers and warm window light, no coins, no people, no writing, not a specific historical location'};
     if (/mine|mining|supply|deficit|shortage/.test(text)) {
       return {id: 'silver-mine', scene: 'a shadowed underground mine tunnel with soft silver-blue light reflecting through mineral textures'};
     }
@@ -85,6 +101,12 @@ export function selectBackgroundProfile({segment, topic}) {
     return {id: 'silver-general', scene: 'an abstract dark metallic chamber with cool silver reflections, soft particles, and layered atmospheric depth'};
   }
 
+  if (/whisper|caption|transcri|narrat|audio|voice/.test(text)) {
+    return {id: 'tech-audio', scene: 'a warmly lit recording desk with a microphone, headphones and acoustic panels, with no screens or readable labels'};
+  }
+  if (/buffer|muse|facebook|instagram/.test(text)) {
+    return {id: 'tech-content', scene: 'a small business content studio with a camera, blank planning cards and a softly lit desk, without screens or readable text'};
+  }
   if (/email|social|message|sms|communication|customer service|follow.?up/.test(text)) {
     return {id: 'tech-communication', scene: 'a modern workspace at night with soft wireless communication waves and connected cyan light trails'};
   }
@@ -114,7 +136,7 @@ export function buildEnrichmentPrompt({segment, topic}) {
     : 'dark navy background, modern cyan highlights, warm practical lighting';
   return [
     `Atmospheric vertical background plate showing ${scene}.`,
-    `${palette}. Soft focus, low detail, cinematic depth, no foreground focal object, clean negative space through the center for a separate caption overlay.`,
+    `${palette}. Clear environmental detail, cinematic depth and directional lighting, one visual focal area, clean negative space near the top and bottom for separate text overlays.`,
     'Background scenery only. No poster, title card, package, label, sign, screen, interface, document, coin face, currency, or product close-up.',
     'No words, letters, numbers, charts, logos, watermarks, signatures, recognizable people, or financial claims.',
   ].join(' ');
@@ -139,7 +161,7 @@ export function enrichmentCacheKey({slug, index, segment, topic, env = process.e
   const prompt = buildEnrichmentPrompt({segment, topic});
   const paths = resolveOpenGenerativeAiPaths(env);
   return JSON.stringify({
-    profileVersion: 2,
+    profileVersion: 4,
     provider: 'open-generative-ai-local',
     model: env.OPEN_GENERATIVE_AI_MODEL_ID || DEFAULT_MODEL_ID,
     modelFile: basename(paths.modelPath),
@@ -147,7 +169,7 @@ export function enrichmentCacheKey({slug, index, segment, topic, env = process.e
     seed: deterministicEnrichmentSeed(slug, index),
     width: positiveInteger(env.GENERATIVE_MEDIA_WIDTH, 384),
     height: positiveInteger(env.GENERATIVE_MEDIA_HEIGHT, 640),
-    steps: positiveInteger(env.GENERATIVE_MEDIA_STEPS, 8),
+    steps: positiveInteger(env.GENERATIVE_MEDIA_STEPS, 20),
   });
 }
 
@@ -166,46 +188,43 @@ export async function generateEnrichmentStill({slug, index, segment, topic, dest
   const seed = deterministicEnrichmentSeed(slug, index);
   const width = positiveInteger(env.GENERATIVE_MEDIA_WIDTH, 384);
   const height = positiveInteger(env.GENERATIVE_MEDIA_HEIGHT, 640);
-  const steps = positiveInteger(env.GENERATIVE_MEDIA_STEPS, 8);
-  const timeoutMs = positiveInteger(env.GENERATIVE_MEDIA_TIMEOUT_MS, 240000);
-  const pngPath = `${destination}.open-generative-ai.png`;
+  const steps = positiveInteger(env.GENERATIVE_MEDIA_STEPS, 20);
+  const timeoutMs = positiveInteger(env.GENERATIVE_MEDIA_TIMEOUT_MS, 14400000);
+  const pngPath = `${destination}.source.png`;
   mkdirSync(dirname(destination), {recursive: true});
 
-  try {
-    await commandOutput(binaryPath, [
-      '-m', modelPath,
-      '-p', prompt,
-      '-n', 'text, letters, numbers, logo, watermark, signature, deformed objects, duplicate objects, blurry, low contrast',
-      '-o', pngPath,
-      '--steps', String(steps),
-      '-H', String(height),
-      '-W', String(width),
-      '--cfg-scale', '7.5',
-      '--seed', String(seed),
-      '--sampling-method', 'euler_a',
-      '--vae-tiling',
-    ], {
-      cwd: dataDir,
-      timeoutMs,
-      env: {
-        ...env,
-        DYLD_LIBRARY_PATH: dirname(binaryPath),
-        LD_LIBRARY_PATH: dirname(binaryPath),
-      },
-    });
-    if (!existsSync(pngPath) || statSync(pngPath).size < 10240) {
-      throw new Error('Open Generative AI returned an empty or undersized image');
-    }
-    await commandOutput(env.FFMPEG_BIN || 'ffmpeg', [
-      '-y', '-i', pngPath,
-      '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=6,eq=brightness=-0.14:saturation=0.7:contrast=0.92,vignette=PI/5',
-      '-frames:v', '1', '-q:v', '2', destination,
-    ], {timeoutMs: 60000, env});
-    if (!existsSync(destination) || statSync(destination).size < 10240) {
-      throw new Error('Generated portrait JPEG is empty or undersized');
-    }
-  } finally {
-    try { unlinkSync(pngPath); } catch {}
+  // Retain the unprocessed local generation for future reviewed compositions.
+  await commandOutput(binaryPath, [
+    '-m', modelPath,
+    '-p', prompt,
+    '-n', 'text, letters, numbers, logo, watermark, signature, deformed objects, duplicate objects, blurry, low contrast',
+    '-o', pngPath,
+    '--steps', String(steps),
+    '-H', String(height),
+    '-W', String(width),
+    '--cfg-scale', '7.5',
+    '--seed', String(seed),
+    '--sampling-method', 'euler_a',
+    '--vae-tiling',
+  ], {
+    cwd: dataDir,
+    timeoutMs,
+    env: {
+      ...env,
+      DYLD_LIBRARY_PATH: dirname(binaryPath),
+      LD_LIBRARY_PATH: dirname(binaryPath),
+    },
+  });
+  if (!existsSync(pngPath) || statSync(pngPath).size < 10240) {
+    throw new Error('Open Generative AI returned an empty or undersized image');
+  }
+  await commandOutput(env.FFMPEG_BIN || 'ffmpeg', [
+    '-y', '-i', pngPath,
+    '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=1,eq=brightness=-0.04:saturation=0.9:contrast=1.02,vignette=PI/5',
+    '-frames:v', '1', '-q:v', '2', destination,
+  ], {timeoutMs: 60000, env});
+  if (!existsSync(destination) || statSync(destination).size < 10240) {
+    throw new Error('Generated portrait JPEG is empty or undersized');
   }
 
   const profile = selectBackgroundProfile({segment, topic});
@@ -226,8 +245,9 @@ export async function generateEnrichmentStill({slug, index, segment, topic, dest
     seed,
     width: 1080,
     height: 1920,
+    sourceImage: pngPath,
     generatedAsset: true,
     factualGraphic: false,
-    backgroundTreatment: 'portrait-crop, blur-6, darken-0.14, saturation-0.7, vignette',
+    backgroundTreatment: 'portrait-crop, blur-1, darken-0.04, saturation-0.9, vignette',
   };
 }

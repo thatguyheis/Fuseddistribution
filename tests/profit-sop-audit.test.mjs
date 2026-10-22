@@ -2,6 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildAudit, buildLeadingIndicatorAudit, buildOperationalPenaltyEvents, evaluateBlogPublicationState, evaluateReelReleaseState, formatRevenueProfitEvidence, isUsableBufferSnapshot, repeatMultiplier, scoreEvent } from '../scripts/profit-sop-audit.mjs';
+
+test('profit audit cannot reward registered recycled articles as fresh output', () => {
+  const state = evaluateBlogPublicationState({ date: '2026-09-07', queue: { posts: [{ slug: 'old' }] }, registeredSlugs: ['old'], completeExists: true,
+    publicationEvidence: { expected: 1, fresh: 0, missing: [], duplicateTopics: ['old'] } });
+  assert.equal(state.completionStatus, 'incomplete');
+  assert.equal(state.hardStops[0].type, 'unverified_fresh_publication');
+});
 import { normalizeOperatingDate, operatingDate } from '../scripts/lib/operating-date.mjs';
 
 const config = JSON.parse(readFileSync(new URL('../ops/profit-system/config.json', import.meta.url), 'utf8'));
@@ -257,6 +264,30 @@ test('quality-blocked blog work is recorded once as a stable ledger penalty', ()
   }), []);
 });
 
+test('missing reel release QA is recorded once as a stable ledger penalty', () => {
+  const operationalState = {
+    reelRelease: {
+      missingReleaseQaSlugs: ['buying-silver-from-a-local-coin-shop-vs-online'],
+    },
+  };
+  const created = buildOperationalPenaltyEvents({
+    date: '2026-09-05',
+    operationalState,
+    existingEvents: [],
+    occurredAt: '2026-09-05T20:15:00.000Z',
+  });
+  assert.equal(created.length, 1);
+  assert.equal(created[0].fingerprint, 'reel-release-qa-missing');
+  assert.equal(created[0].type, 'missed_checkpoint');
+  assert.equal(created[0].value, 1);
+  assert.match(created[0].evidence, /ineligible for distribution/);
+  assert.deepEqual(buildOperationalPenaltyEvents({
+    date: '2026-09-05',
+    operationalState,
+    existingEvents: created,
+  }), []);
+});
+
 test('unavailable Buffer metrics checkpoint is recorded once as a stable ledger penalty', () => {
   const operationalState = { bufferMetrics: { status: 'unavailable' } };
   const created = buildOperationalPenaltyEvents({
@@ -304,4 +335,22 @@ test('reel release checkpoint reports manual review blockers without authorizing
   assert.deepEqual(result.manualCaptionReviewPendingSlugs, ['silver-inventory']);
   assert.deepEqual(result.readyForPostingSlugs, ['local-keywords']);
   assert.deepEqual(result.missingReleaseQaSlugs, ['near-me']);
+});
+
+
+test('a stale reel release cannot inherit readiness after a script change', () => {
+  const result = evaluateReelReleaseState({ registeredSlugs: ['changed'], releaseQaBySlug: { changed: { pass: true, readyForPosting: true, sourceFresh: false } } });
+  assert.equal(result.completionStatus, 'blocked');
+  assert.deepEqual(result.readyForPostingSlugs, []);
+});
+
+test('approved pre-revenue phase scores views without requiring revenue or substituting impressions', () => {
+  const history=[1,2,3].map(n=>({date:`2026-10-0${n}`,posts:[{postId:`prior-${n}`,platform:'youtube',ageBucket:'d7',viewsPerHour:10,clicks:100,impressionsPerHour:100}]}));
+  const current={date:'2026-10-05',posts:[{postId:'new',platform:'youtube',ageBucket:'d7',viewsPerHour:20,clicks:0,impressionsPerHour:0}]};
+  const result=buildLeadingIndicatorAudit(current.date,[...history,current],config);
+  assert.equal(config.optimizationPhase.revenueRequired,false);
+  assert.ok(result.score>0);
+  assert.deepEqual(result.comparisons.map(row=>row.metric),['viewsPerHour']);
+  const missing={...current,posts:[{...current.posts[0],viewsPerHour:null,impressionsPerHour:10000}]};
+  assert.equal(buildLeadingIndicatorAudit(current.date,[...history,missing],config).status,'baseline_building');
 });

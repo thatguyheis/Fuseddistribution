@@ -4,6 +4,8 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
+import {assertVisualReview} from '../../../video/scripts/lib/visual-review.mjs';
+import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
 
@@ -14,11 +16,12 @@ const instagramChannelId = '6a67c5d64b2d03035f4f0228';
 const instagramChannelName = 'ahueman303';
 const defaultLimit = 10;
 const defaultReserveSlots = 1;
-const defaultPlatformCount = 3;
+const defaultPlatformCount = 1;
 const scheduleTimeZone = 'America/Los_Angeles';
 const defaultScheduleWindowStart = '13:00';
 const defaultScheduleWindowEnd = '19:00';
-const defaultScheduleIntervalMinutes = 105;
+// Three posts per channel in one hourly batch land at :00, :20, and :40.
+const defaultScheduleIntervalMinutes = 20;
 const minimumScheduleLeadMinutes = 15;
 const maximumCaptionLength = 2_200;
 const maximumAssetBytes = 25 * 1024 * 1024;
@@ -31,10 +34,10 @@ Builds Instagram Reel jobs from verified YouTube scheduling proof so every
 Instagram post uses the same release-QA-cleared hosted video.
 
 Options:
-  --current-scheduled=N   Scheduled/sending count from one shared Buffer snapshot. Required.
+  --current-scheduled=N   This channel's scheduled/sending count from live Buffer. Required.
   --limit=N               Organization-wide scheduled-post cap. Default: 10.
-  --reserve-slots=N       Safety headroom across all channels. Default: 1.
-  --platform-count=N      Platforms sharing capacity. Default: 3.
+  --reserve-slots=N       Safety headroom for this channel. Default: 1.
+  --platform-count=N      Legacy option; capacity is per channel. Default: 1.
   --max-posts=N           Cap selected jobs at this channel's daily deficit.
   --source-queue=path     Verified YouTube queue. Default: .buffer-youtube-queue.json.
   --source-scheduled-log=path
@@ -48,7 +51,7 @@ Options:
   --schedule-window-end=HH:MM
                           Latest local Buffer due time. Default: 19:00.
   --schedule-interval-minutes=N
-                          Minutes between selected posts. Default: 105.
+                          Minutes between selected posts. Default: 20.
   --same-day-only         Do not roll excess selected jobs into tomorrow.
   --skip-media-url-verification  Offline planning only; never use for production publishing.
 `);
@@ -336,6 +339,23 @@ async function main() {
   const skipped = [];
 
   for (const source of sourceJobs) {
+    try { assertVisualReview(repoRoot,source.slug); } catch(error) {
+      blocked.push({slug:source.slug,reason:'encoded_visual_review_required',detail:error.message});
+      continue;
+    }
+    try {
+      assertRenderedReelAudioCleared(source.slug, { repoRoot });
+    } catch (error) {
+      blocked.push({ slug: source.slug, reason: 'source_render_audio_rights_blocked', detail: error.message });
+      continue;
+    }
+    const releasePath = join(repoRoot, 'video/out', source.slug, 'release-qa.json');
+    let release;
+    try { release = readJson(releasePath); } catch { release = null; }
+    if (release?.readyForPosting !== true) {
+      blocked.push({ slug: source.slug, reason: 'release_qa_not_ready_for_posting', path: releasePath });
+      continue;
+    }
     if (priorSlugs.has(source.slug)) {
       skipped.push({ slug: source.slug, reason: 'already_scheduled' });
       continue;

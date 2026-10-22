@@ -3,6 +3,20 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 const ORIGIN = "https://fuseddistribution.com";
 
+describe("Project phone previews", () => {
+  it("allows same-origin samples without allowing arbitrary external frames", async () => {
+    // The test asset binding serves the reserve fixture at the root.
+    const response = await SELF.fetch(`${ORIGIN}/`);
+    expect(response.status).toBe(200);
+    const directives = response.headers.get("content-security-policy").split(";").map(value => value.trim());
+    expect(directives).toContain("frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com");
+    expect(directives).toContain("frame-ancestors 'self'");
+    expect(response.headers.get("x-frame-options")).toBe("SAMEORIGIN");
+    await response.text();
+
+  });
+});
+
 describe("Google Analytics", () => {
   it("persists consent through a native redirect fallback", async () => {
     const response = await SELF.fetch(`${ORIGIN}/?analytics_consent=granted`, {

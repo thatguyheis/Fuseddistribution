@@ -15,7 +15,8 @@ if (!args.file) {
 
 try {
   const plan = readContentPlan(resolve(args.file), args.slug || '');
-  console.log(`[content-plan] valid: ${plan.slug}, ${plan.sections.length} sections, ${plan.reel.sectionIds.length} Reel sections`);
+  const shortCount = Array.isArray(plan.reel.shortTopics) ? plan.reel.shortTopics.length : 0;
+  console.log(`[content-plan] valid: ${plan.slug}, ${plan.sections.length} sections, ${plan.reel.sectionIds.length} Long Form sections, ${shortCount} short topics`);
 } catch (error) {
   console.error(`[content-plan] ${error.message}`);
   process.exit(1);

@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { newestFirst } from './lib/post-order.mjs';
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => {
   const m = a.match(/^--([^=]+)=(.*)$/); return m ? [m[1], m[2]] : [a.replace(/^--/, ""), true];
@@ -21,7 +22,7 @@ if (excerpt.length > 160) excerpt = excerpt.slice(0, 157).replace(/\s+\S*$/, "")
 
 const entry = {
   slug, title: meta.title, date: meta.date, excerpt,
-  tags: meta.tags || [], author: "Nick",
+  tags: meta.tags || [], brand: meta.brand || "tech", author: "Nick",
   image: `/blog/${slug}/hero.jpg`, imageAlt: meta.alt || meta.title,
 };
 const existingIndex = posts.findIndex((post) => post.slug === slug);
@@ -30,5 +31,5 @@ if (existingIndex >= 0) {
 } else {
   posts.unshift(entry);
 }
-writeFileSync(postsPath, JSON.stringify(posts, null, 2) + "\n");
+writeFileSync(postsPath, JSON.stringify(newestFirst(posts), null, 2) + "\n");
 console.log(`add-to-posts: ${existingIndex >= 0 ? "refreshed" : "prepended"} ${slug} (${posts.length} total)`);

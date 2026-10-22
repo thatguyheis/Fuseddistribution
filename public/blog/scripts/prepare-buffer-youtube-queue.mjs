@@ -4,6 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
+import {assertVisualReview} from '../../../video/scripts/lib/visual-review.mjs';
 import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
@@ -18,16 +19,20 @@ const BUFFER_ORGANIZATION_ID = '6a3e62cb6adcaa97fe293a7d';
 const BUFFER_CHANNEL_ID = '6a3e63375ab6d2f1067461b2';
 const BUFFER_CHANNEL_NAME = 'Nick';
 const DEFAULT_LIMIT = 10;
-const DEFAULT_PLATFORM_COUNT = 3;
+const DEFAULT_PLATFORM_COUNT = 1;
 const DEFAULT_RESERVE_SLOTS = 1;
 const DEFAULT_CATEGORY_ID = '27';
 const SCHEDULE_TIME_ZONE = 'America/Los_Angeles';
 const DEFAULT_SCHEDULE_WINDOW_START = '13:00';
 const DEFAULT_SCHEDULE_WINDOW_END = '19:00';
-const DEFAULT_SCHEDULE_INTERVAL_MINUTES = 105;
+// Three posts per channel in one hourly batch land at :00, :20, and :40.
+const DEFAULT_SCHEDULE_INTERVAL_MINUTES = 20;
 const MIN_SCHEDULE_LEAD_MINUTES = 15;
 const QUEUE_EXPIRES_MINUTES = 30;
-const MAX_YOUTUBE_BUFFER_SECONDS = 179;
+// Use the shared 135-second delivery asset across all social platforms.
+// This leaves substantial headroom below Buffer and YouTube's ceiling and
+// avoids maintaining a second YouTube-only media format.
+const MAX_YOUTUBE_BUFFER_SECONDS = 135;
 const MAX_CLOUDFLARE_ASSET_BYTES = 25 * 1024 * 1024;
 const STALE_SCHEDULED_GRACE_MINUTES = 60;
 
@@ -37,10 +42,10 @@ function usage() {
 Plans the next YouTube posts for Buffer without exceeding the scheduled-post limit.
 
 Options:
-  --current-scheduled=N          Current scheduled/sending posts in Buffer. Required for production runs.
+  --current-scheduled=N          Current scheduled/sending posts on this channel. Required for production runs.
   --limit=N                      Buffer scheduled post limit. Default: 10.
-  --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
-  --platform-count=N             Platforms sharing capacity. Default: 3.
+  --reserve-slots=N              Slots left as per-channel safety headroom. Default: 1.
+  --platform-count=N             Legacy option; capacity is per channel. Default: 1.
   --max-posts=N                  Cap selected jobs at this channel's daily deficit.
   --slugs=a,b,c                  Optional explicit backlog order. Default: newest rendered posts from posts.json.
   --media-map=path               JSON map of slug to public MP4 URL.
@@ -50,11 +55,11 @@ Options:
   --media-url-template=https://cdn/{slug}.mp4
                                 Derive MP4 URLs with {slug} replacement.
   --skip-media-url-verification  Offline planning only. Production runs verify URLs by default.
-  --max-duration-seconds=N       Maximum local MP4 duration for Buffer YouTube Shorts. Default: 179.
+  --max-duration-seconds=N       Maximum local MP4 duration for the shared social MP4. Default: 135.
   --max-bytes=N                  Maximum local MP4 size for Cloudflare assets. Default: 26214400.
   --schedule-window-start=HH:MM  Earliest local Buffer due time. Default: 13:00.
   --schedule-window-end=HH:MM    Latest local Buffer due time. Default: 19:00.
-  --schedule-interval-minutes=N  Minutes between selected posts. Default: 105.
+  --schedule-interval-minutes=N  Minutes between selected posts. Default: 20.
   --same-day-only               Do not roll excess selected jobs into tomorrow.
   --category-id=ID               YouTube category ID. Default: 27.
   --out=path                     Output queue JSON. Default: .buffer-youtube-queue.json.
@@ -461,7 +466,7 @@ function unique(values) {
   return [...new Set(values)];
 }
 
-function buildJob(slug, copy, mediaUrl, categoryId) {
+function buildJob(slug, copy, mediaUrl, categoryId, media) {
   const title = buildYouTubeTitle(copy, slug);
   const blogUrl = canonicalBlogUrl(slug);
   const description = buildYouTubeDescription(copy, slug);
@@ -470,6 +475,8 @@ function buildJob(slug, copy, mediaUrl, categoryId) {
     channelId: BUFFER_CHANNEL_ID,
     channelName: BUFFER_CHANNEL_NAME,
     publicMediaUrl: mediaUrl,
+    publicMediaDurationSeconds: Number(media.duration.toFixed(3)),
+    publicMediaBytes: media.bytes,
     blogUrl,
     title,
     description,
@@ -575,6 +582,10 @@ async function main() {
       continue;
     }
 
+    try { assertVisualReview(repoRoot,slug); } catch(error) {
+      blocked.push({slug:slug,reason:'encoded_visual_review_required',detail:error.message});
+      continue;
+    }
     try {
       assertRenderedReelAudioCleared(slug, { repoRoot });
     } catch (error) {
@@ -661,7 +672,7 @@ async function main() {
       blocked.push({ slug, reason: 'social_copy_quality_failed', detail: error.message, path: copyPath });
       continue;
     }
-    ready.push(buildJob(slug, copy, mediaUrl, args.categoryId));
+    ready.push(buildJob(slug, copy, mediaUrl, args.categoryId, { duration, bytes }));
   }
 
   const selectedCount = Math.min(ready.length, capacity);

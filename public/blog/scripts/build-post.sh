@@ -13,27 +13,36 @@
 set -uo pipefail
 SD="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SD")"
-LOCAL_LLM="${LOCAL_LLM:-$HOME/bin/hermes-local.sh}"
-ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}}"
+PROJECT_ROOT="$(cd "$SD/../../.." && pwd)"
+LOCAL_LLM="${LOCAL_LLM:-$PROJECT_ROOT/scripts/ollama-local-no-think.sh}"
+ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-${HERMES_LOCAL_MODEL:-gemma3:4b}}"
 LEAF_MODEL="${HERMES_LEAF_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
-STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b-it-qat}"
-QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b-it-qat}"
+STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b}"
+QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b}"
 if [[ ! -x "$LOCAL_LLM" ]]; then
-  LOCAL_LLM="$HOME/bin/gemma.sh"
+  echo "local model helper is unavailable: $LOCAL_LLM" >&2
+  exit 127
 fi
 HERMES_TAKEOVER="${HERMES_TAKEOVER:-1}"
 CLAUDE_ENABLED="${CLAUDE_ENABLED:-0}"
 
-SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0 FORCE=0
+SLUG="" BRAND="" KEYWORD="" GAP="" DEGRADED=0 FORCE=0 DRAFT_ONLY=0
 for a in "$@"; do case "$a" in
   --brand=*) BRAND="${a#--brand=}";; --keyword=*) KEYWORD="${a#--keyword=}";; --gap=*) GAP="${a#--gap=}";;
-  --degraded) DEGRADED=1;; --force) FORCE=1;; --*) echo "unknown flag $a">&2; exit 2;; *) SLUG="$a";; esac; done
-[[ -n "$SLUG" && -n "$BRAND" ]] || { echo "usage: build-post.sh <slug> --brand=silver|tech [--keyword=] [--degraded] [--force]">&2; exit 2; }
+  --degraded) DEGRADED=1;; --force) FORCE=1;; --draft-only) DRAFT_ONLY=1;; --*) echo "unknown flag $a">&2; exit 2;; *) SLUG="$a";; esac; done
+[[ -n "$SLUG" && -n "$BRAND" ]] || { echo "usage: build-post.sh <slug> --brand=silver|tech [--keyword=] [--degraded] [--draft-only] [--force]">&2; exit 2; }
 KEYWORD="${KEYWORD:-$(echo "$SLUG" | tr '-' ' ')}"
+node "$SD/../../../scripts/check-editorial-regeneration.mjs" "$SLUG" || exit 1
 DIR="$BLOG_DIR/$SLUG"; mkdir -p "$DIR"
 log(){ echo "[build-post:$SLUG] $*"; }
 STATUS="$DIR/_status.json"; declare -a DONE=()
 mark(){ DONE+=("$1"); printf '{"slug":"%s","stages":[%s],"degraded":%s,"ts":"%s"}\n' "$SLUG" "$(printf '"%s",' "${DONE[@]}" | sed 's/,$//')" "$DEGRADED" "$(date -u +%FT%TZ)" > "$STATUS"; }
+
+if [[ -f "$SD/../../../.workflow-state/editorial-holds/$SLUG.json" ]]; then
+  log "Editorial hold requires owner source correction before another model attempt"
+  mark owner-quality-fail
+  exit 0
+fi
 
 # Claude availability probe (once). Hermes takeover intentionally avoids Claude
 # so the scheduled path can run without external API quota.
@@ -57,24 +66,30 @@ fi
 # ── T5 write. A Codex-authored content plan activates resumable local worker
 # segments. Posts without a plan retain the proven legacy writer. ──
 if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-  if [[ $FORCE -eq 0 && -s "$DIR/verified.md" ]] && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
+  if [[ $FORCE -eq 0 && -s "$DIR/verified.md" ]] \
+    && ! grep -qE '\[[A-Z][^]]{2,}\]' "$DIR/verified.md" \
+    && node "$SD/lint-draft.mjs" "$DIR/verified.md" --out="$DIR/lint.json" --quiet 2>/dev/null; then
     log "T5 local write: verified.md exists and lint passes — resuming downstream stages"
     mark write-local-resume
   else
     if [[ -f "$DIR/content-plan.json" ]]; then
       log "T5 segmented write from Codex master plan"
-      SEGMENTED_FORCE=()
-      [[ $FORCE -eq 1 ]] && SEGMENTED_FORCE+=(--force)
-      HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
-        node "$SD/write-segmented-article.mjs" "$SLUG" "${SEGMENTED_FORCE[@]}" 2>&1 | sed 's/^/  /'
+      if [[ $FORCE -eq 1 ]]; then
+        HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
+          node "$SD/write-segmented-article.mjs" "$SLUG" --force 2>&1 | sed 's/^/  /'
+      else
+        HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
+          node "$SD/write-segmented-article.mjs" "$SLUG" 2>&1 | sed 's/^/  /'
+      fi
+      WRC=${PIPESTATUS[0]}
       WRITER_STAGE="write-segmented"
     else
       log "T5 write via legacy local model path"
       HERMES_TAKEOVER=1 LOCAL_LLM="$LOCAL_LLM" HERMES_LOCAL_MODEL="$ARTICLE_MODEL" \
         "$SD/write-article.sh" "$SLUG" --brand="$BRAND" --keyword="$KEYWORD" 2>&1 | sed 's/^/  /'
+      WRC=${PIPESTATUS[0]}
       WRITER_STAGE="write-local"
     fi
-    WRC=${PIPESTATUS[0]}
     case "$WRC" in
       0) mark "$WRITER_STAGE";;
       4) log "T5 local write DEFERRED -> empty/error, no article written. Keep for retry."; mark write-deferred; log "DONE. stages: ${DONE[*]}"; exit 0;;
@@ -162,9 +177,9 @@ def fixed_description(value, title):
     value = re.sub(r"\s+", " ", value).strip(" \"")
     if 140 <= len(value) <= 160 and not re.search(r"(?i)best deal|lowest price|buy now|do not miss", value):
         return value
-    value = f"{title}: compare premiums, payment fees, shipping, and total purchase cost before you buy from any dealer."
+    value = f"{title}: explore practical steps, questions to ask, common mistakes, and details to check before choosing your next action."
     while len(value) < 140:
-        value += " Review the complete cost and terms before ordering."
+        value += " Use the article to prepare a clear plan."
     return value[:160].rstrip(" ,.;:")
 title = os.environ["TITLE"]
 d = {"title":title, "slug":os.environ["SLUG"],
@@ -180,8 +195,11 @@ mark meta
 # ── internal links (deterministic, curl-verified) — into verified.md before html ──
 log "internal links"; node "$SD/build-links.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && mark links || log "links failed (continue)"
 
-# ── T6 hooks (gemma) ──
-if [[ $FORCE -eq 0 ]] && jq -e '.hook and .discussion_question and .hashtags' "$DIR/hooks.json" >/dev/null 2>&1; then
+# ── T6 hooks — coin-history hooks already passed source and transcript audit ──
+if [[ -f "$DIR/pipeline-marker.json" ]]; then
+  log "T6 hooks: derive from approved coin-history plan and discussion prompt"
+  node "$SD/build-coin-history-hooks.mjs" --slug="$SLUG" && mark hooks-auto || log "coin-history hooks failed"
+elif [[ $FORCE -eq 0 ]] && jq -e '.hook and .discussion_question and .hashtags' "$DIR/hooks.json" >/dev/null 2>&1; then
   log "T6 hooks: valid checkpoint exists — resuming"
   mark hooks-resume
 else
@@ -201,7 +219,9 @@ log "pexels"; "$SD/build-pexels.sh" "$SLUG" --keyword="$KEYWORD" --brand="$BRAND
 #    hero key_stat sync. Enhancement stage: never blocks publish. Runs before reel
 #    so reel-data picks up the chart, and re-runs svg so the hero gets the mini chart. ──
 log "T8b chart"
-if [[ $FORCE -eq 0 ]] && jq -e 'type == "object" and (has("skipped") or has("type") or has("series"))' "$DIR/chart.json" >/dev/null 2>&1; then
+if [[ -f "$DIR/pipeline-marker.json" ]]; then
+  log "chart: skipped for source-mapped coin-history package; approved content graphic already supplies the visual"
+elif [[ $FORCE -eq 0 ]] && jq -e 'type == "object" and (has("skipped") or has("type") or has("series"))' "$DIR/chart.json" >/dev/null 2>&1; then
   log "chart: valid checkpoint exists — resuming"
   if ! grep -q '"skipped": *true' "$DIR/chart.json" 2>/dev/null; then
     node "$SD/build-chart-inject.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' || log "chart: checkpoint reinjection failed"
@@ -319,20 +339,15 @@ if [[ $PUBLISH_OK -eq 1 && -f "$DIR/index.html" && ( "$HERMES_TAKEOVER" == "1" |
   fi
   case "$QA_RC" in
     0) mark qa-brain-pass;;
-    3) if [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-         log "qa brain unavailable -> deterministic gate already passed; continuing"
-         mark qa-brain-skipped
-       else
-         log "qa DEFERRED -> brain-stage outage, NOT a quality failure. Keep for retry."
-         mark qa-deferred
-         PUBLISH_OK=0
-       fi;;
+    3) log "qa DEFERRED -> editorial QA unavailable; retain checkpoint for retry"
+       mark qa-deferred
+       PUBLISH_OK=0;;
     *) log "qa FAILED -> not registering for publish"; mark qa-fail; PUBLISH_OK=0;;
   esac
 fi
 
 # ── register for publish (posts.json + topic-history) — only if qa passed/degraded ──
-if [[ $PUBLISH_OK -eq 1 ]]; then
+if [[ $PUBLISH_OK -eq 1 && $DRAFT_ONLY -eq 0 ]]; then
   log "posts.json entry"; node "$SD/add-to-posts.mjs" --slug="$SLUG" 2>&1 | sed 's/^/  /' && mark postsjson || log "posts.json failed"
   log "topic-history append"
   BLOGDIR="$BLOG_DIR" SLUG="$SLUG" BRAND="$BRAND" KEYWORD="$KEYWORD" TODAY="${BLOG_PUBLISH_DATE:-$(date +%F)}" python3 - <<'PY' && mark topic-history || log "topic-history failed"
@@ -366,6 +381,8 @@ def insert(text, section, row):
 open(path,"w").write(insert(text, section, row)+"\n")
 print(f"topic-history: appended {slug} under {section}")
 PY
+elif [[ $PUBLISH_OK -eq 1 && $DRAFT_ONLY -eq 1 ]]; then
+  log "DRAFT ONLY: QA passed; skip posts.json and topic-history registration"
 else
   log "SKIP posts.json/topic-history (qa failed). Post built but not registered."
 fi

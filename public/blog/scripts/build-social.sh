@@ -87,6 +87,7 @@ disclaimer="Silver and precious metals markets involve risk. This content is for
 
 out={
   "slug":slug,"topic":brand,"blog_url":url,
+  "cta_slot":"reserve", "cta_cycle":["reserve","newsletter","engagement"],
   "reel":{
     "facebook":f"{fb} {share}",
     "instagram":f"{ig} {share}\n\n{hashtags}",

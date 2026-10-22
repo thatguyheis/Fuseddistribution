@@ -3,6 +3,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, 
 import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assertCompleteMediaDuration } from './lib/complete-media-duration.mjs';
 import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -25,7 +26,7 @@ Creates Buffer-safe YouTube MP4 files under public/reels and updates the YouTube
 
 Options:
   --slugs=a,b,c                  Required slug list.
-  --max-duration-seconds=N       Output duration cap. Default: 175.
+  --max-duration-seconds=N       Output duration cap. Default: 135.
   --max-bytes=N                  Output size cap. Default: 26214400.
   --max-long-edge=N              Output long-edge pixel cap. Default: 1280.
   --base-url=https://...         Hosted base URL after deploy. Default: workers.dev /reels.
@@ -180,8 +181,6 @@ function transcode(input, output, args, crf) {
       '-y',
       '-i',
       input,
-      '-t',
-      String(args.maxDurationSeconds),
       '-vf',
       scaleFilter(args.maxLongEdge),
       '-c:v',
@@ -260,6 +259,7 @@ function prepareOutput(input, output, args) {
   const sourceDuration = sourceInfo?.duration ?? null;
   const sourceBytes = fileSizeBytes(input);
   if (sourceDuration === null) throw new Error(`Could not read duration for ${input}`);
+  assertCompleteMediaDuration(sourceDuration, args.maxDurationSeconds);
   if (sourceBytes === null) throw new Error(`Could not read size for ${input}`);
 
   const temporaryOutput = `${output}.tmp.mp4`;

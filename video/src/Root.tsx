@@ -24,6 +24,8 @@ const Root: React.FC = () => (
       height={OUTPUT.height}
       defaultProps={{ script: defaultScript, musicTrack: 'none', musicGain: 0 }}
       calculateMetadata={({ props }) => ({
+        width: OUTPUT.width,
+        height: OUTPUT.height,
         durationInFrames: compositionFrames(props.script),
       })}
     />

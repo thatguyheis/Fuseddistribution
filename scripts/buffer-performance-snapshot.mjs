@@ -3,6 +3,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { operatingDate } from './lib/operating-date.mjs';
+import { reserveBufferRequest } from '../public/blog/scripts/lib/buffer-request-budget.mjs';
+import { cooldownUntil, saveCooldown } from '../public/blog/scripts/lib/buffer-cooldown.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const apiUrl = 'https://api.buffer.com';
@@ -13,6 +15,25 @@ const channelIds = [
   '6a67c5d64b2d03035f4f0228',
 ];
 const outputRoot = join(repoRoot, 'ops', 'profit-system', 'buffer-metrics');
+const liveUnavailablePath = join(repoRoot, '.buffer-live-unavailable.json');
+
+export function activeBufferRateLimit({
+  checkpointPath = liveUnavailablePath,
+  now = new Date(),
+} = {}) {
+  if (!existsSync(checkpointPath)) return null;
+  try {
+    const checkpoint = JSON.parse(readFileSync(checkpointPath, 'utf8'));
+    const retryAt = Date.parse(checkpoint?.retryAt);
+    if (checkpoint?.status !== 'unavailable' || checkpoint?.provider !== 'buffer'
+      || !Number.isFinite(retryAt) || retryAt <= now.getTime()) {
+      return null;
+    }
+    return new Date(retryAt).toISOString();
+  } catch {
+    return null;
+  }
+}
 
 export function isTransientBufferError(error) {
   return error instanceof TypeError || error?.retryable === true;
@@ -34,7 +55,24 @@ export async function retryTransient(operation, {
   throw lastError;
 }
 
-export function writeUnavailableCheckpoint({ date, capturedAt = new Date().toISOString(), directory = outputRoot }) {
+export function classifySnapshotFailure(error) {
+  if (/Buffer request budget exhausted/.test(error?.message || '')) return 'request_budget_reserved';
+  if (error instanceof TypeError) return 'transient_network';
+  if (error?.name === 'TimeoutError' || error?.name === 'AbortError') return 'transient_timeout';
+  if (/^Buffer HTTP 429\b/.test(error?.message || '')) return 'rate_limited';
+  if (/^Buffer HTTP 5\d\d\b/.test(error?.message || '')) return 'server_error';
+  if (/^Buffer HTTP 401\b|^Buffer HTTP 403\b/.test(error?.message || '')) return 'authentication_or_authorization';
+  if (/^Missing |^BUFFER_ACCESS_TOKEN /.test(error?.message || '')) return 'configuration';
+  return 'unknown';
+}
+
+export function writeUnavailableCheckpoint({
+  date,
+  capturedAt = new Date().toISOString(),
+  directory = outputRoot,
+  failureClass = 'unknown',
+  deferredUntil = null,
+}) {
   const checkpoint = {
     version: 1,
     date,
@@ -42,6 +80,8 @@ export function writeUnavailableCheckpoint({ date, capturedAt = new Date().toISO
     source: 'buffer_api',
     status: 'unavailable',
     reason: 'snapshot_fetch_failed',
+    failureClass,
+    ...(deferredUntil ? { deferredUntil } : {}),
     evidencePolicy: 'No Buffer leading-indicator value is available for this date. Do not treat this checkpoint as zero performance.',
   };
   mkdirSync(directory, { recursive: true });
@@ -76,6 +116,9 @@ function loadAccessToken() {
 
 async function graphql(token, query, variables) {
   return retryTransient(async () => {
+    const due = cooldownUntil(liveUnavailablePath);
+    if (due) throw new Error(`Buffer cooldown active until ${new Date(due).toISOString()}`);
+    reserveBufferRequest(join(repoRoot, '.workflow-state/buffer-request-budget.json'), {reserve:12});
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
@@ -85,7 +128,10 @@ async function graphql(token, query, variables) {
     const body = await response.json().catch(() => null);
     if (!response.ok) {
       const error = new Error(`Buffer HTTP ${response.status}`);
-      error.retryable = response.status === 429 || response.status >= 500;
+      if (response.status === 429) {
+        saveCooldown(liveUnavailablePath, Number(response.headers.get('retry-after')), body?.errors?.[0]?.extensions?.window || 'unknown');
+      }
+      error.retryable = response.status >= 500;
       throw error;
     }
     if (!body) throw new Error('Buffer returned a non-JSON response.');
@@ -131,7 +177,17 @@ function metricValue(metrics, type) {
   return metrics.find((metric) => metric.type === type)?.value ?? null;
 }
 
-export function derivePerformance(post, capturedAt) {
+export function postSlugIndex(logs) {
+  const candidates = new Map();
+  for (const log of logs) for (const row of log.scheduled || []) {
+    if (!row.postId || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(row.slug || '')) continue;
+    const values = candidates.get(row.postId) || new Set();
+    values.add(row.slug); candidates.set(row.postId, values);
+  }
+  return new Map([...candidates].filter(([, values]) => values.size === 1).map(([id, values]) => [id, [...values][0]]));
+}
+
+export function derivePerformance(post, capturedAt, slugIndex = new Map()) {
   const metrics = post.metrics || [];
   const views = metricValue(metrics, 'views');
   const impressions = metricValue(metrics, 'impressions');
@@ -151,7 +207,8 @@ export function derivePerformance(post, capturedAt) {
     postId: post.id,
     platform: post.channelService,
     channelId: post.channelId,
-    slug: slugMatch?.[1] || null,
+    slug: slugMatch?.[1] || slugIndex.get(post.id) || null,
+    slugSource: slugMatch ? 'caption_url' : slugIndex.has(post.id) ? 'exact_buffer_post_id' : 'unavailable',
     sentAt,
     ageHours: ageHours === null ? null : Number(ageHours.toFixed(2)),
     ageBucket,
@@ -239,13 +296,27 @@ function buildInsight(posts) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   try {
+    const deferredUntil = activeBufferRateLimit();
+    if (deferredUntil) {
+      const { path } = writeUnavailableCheckpoint({
+        date: args.date,
+        failureClass: 'rate_limited',
+        deferredUntil,
+      });
+      console.error(`[buffer-performance] deferred until ${deferredUntil}; wrote unavailable checkpoint ${path}`);
+      return;
+    }
     const token = loadAccessToken();
     if (!token) throw new Error('BUFFER_ACCESS_TOKEN is empty.');
     const capturedAt = new Date().toISOString();
     const cutoff = Date.parse(`${args.date}T23:59:59.999Z`) - args.lookbackDays * 86_400_000;
     const livePosts = await getSentPosts(token);
+    const slugIndex = postSlugIndex(['youtube', 'instagram', 'x'].map(platform => {
+      const path = join(repoRoot, `.buffer-${platform}-scheduled.json`);
+      return existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : {};
+    }));
     const posts = livePosts
-      .map((post) => derivePerformance(post, capturedAt))
+      .map((post) => derivePerformance(post, capturedAt, slugIndex))
       .filter((post) => post.sentAt && Date.parse(post.sentAt) >= cutoff);
     const snapshot = {
       version: 1,
@@ -266,7 +337,10 @@ async function main() {
     console.log(`[buffer-performance] insight: ${snapshot.insight.statement}`);
     console.log(`[buffer-performance] wrote ${path}`);
   } catch (error) {
-    const { path } = writeUnavailableCheckpoint({ date: args.date });
+    const { path } = writeUnavailableCheckpoint({
+      date: args.date,
+      failureClass: classifySnapshotFailure(error),
+    });
     console.error(`[buffer-performance] wrote unavailable checkpoint ${path}`);
     throw error;
   }

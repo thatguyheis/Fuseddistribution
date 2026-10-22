@@ -1,0 +1,20 @@
+{
+  "variant": "standard",
+  "sourcePath": ".workflow-state/runtimes/chatterbox-5de7a54/src",
+  "sourceRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
+  "modelPath": "~/.cache/huggingface/hub/models--ResembleAI--chatterbox/snapshots/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "validatedAt": "2026-10-15",
+  "voiceReference": "voice-sample/voice-reference.wav",
+  "generation": {
+    "exaggeration": 0.4,
+    "cfgWeight": 0.5,
+    "chunkCharacters": 280,
+    "maxSpeechTokens": 600
+  },
+  "qualityProfile": "chatterbox-standard-hq-v1",
+  "approvedBy": "Nick",
+  "approvedAt": "2026-10-15",
+  "qualityEvidence": "content/coin-history/silver-dollar-roll-hoards-hidden-gems/production-status.json",
+  "seed": 1337
+}

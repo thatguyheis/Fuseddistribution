@@ -16,7 +16,7 @@ const slugs = args.slug ? String(args.slug).split(',').map((slug) => slug.trim()
 
 const START = '<!-- SOCIAL_VIDEO_START -->';
 const END = '<!-- SOCIAL_VIDEO_END -->';
-const panel = `${START}\n            <style>.social-video-pending{padding:18px;border:1px dashed rgba(88,214,255,.32);border-radius:14px;color:#58d6ff;text-align:center;font-weight:800;letter-spacing:.04em}</style><aside class="social-video" aria-label="Reel publication status"><h2>Reel coming soon</h2><p>The reel for this article is being prepared and will be published here soon.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>\n            ${END}`;
+const panel = `${START}\n            <style>.social-video-pending{padding:18px;border:1px dashed rgba(88,214,255,.32);border-radius:14px;color:#58d6ff;text-align:center;font-weight:800;letter-spacing:.04em}</style><aside class="social-video" aria-label="Reel publication status"><h2>Video series coming soon</h2><p>This article is planned for one long form reel and three focused short topics. Published videos will appear here as they are released.</p><div class="social-video-pending" role="status" aria-live="polite">Pending publication</div></aside>\n            ${END}`;
 
 function hasReleasedVideoOrLink(postDir) {
   const sourcePath = join(postDir, 'social-video.json');

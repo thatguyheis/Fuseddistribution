@@ -5,23 +5,45 @@
 
 PROJECT_DIR="/Users/nick/projects/fuseddistribution"
 LOG_FILE="$HOME/Library/Logs/daily-blog-reel.log"
+COIN_DRAFT_LOCK="/tmp/fused-coin-history-drafts.lock"
+if [[ -d "$COIN_DRAFT_LOCK" ]] && python3 "$PROJECT_DIR/scripts/lock-owner-alive.py" "$COIN_DRAFT_LOCK"; then
+  echo "Coin-history recovery owns local inference; deferring publisher launch" >> "$LOG_FILE"
+  exit 0
+fi
+PUBLISHER_LOCK="/tmp/fused-blog-publisher.lock"
+if [[ -d "$PUBLISHER_LOCK" ]] && ! python3 "$PROJECT_DIR/scripts/lock-owner-alive.py" "$PUBLISHER_LOCK"; then
+  mv "$PUBLISHER_LOCK" "${PUBLISHER_LOCK}.stale.$(date +%s).$$" || exit 1
+fi
+if ! mkdir "$PUBLISHER_LOCK" 2>/dev/null; then
+  echo "Publisher already active or lock owner indeterminate; skipping duplicate launch" >> "$LOG_FILE"
+  exit 0
+fi
+echo "$$" > "$PUBLISHER_LOCK/pid"
+release_publisher_lock() {
+  if [[ "$(cat "$PUBLISHER_LOCK/pid" 2>/dev/null)" == "$$" ]]; then
+    mv "$PUBLISHER_LOCK" "${PUBLISHER_LOCK}.finished.$(date +%s).$$"
+  fi
+}
+trap release_publisher_lock EXIT
+
 
 export PATH="/usr/local/bin:/opt/homebrew/bin:/Users/nick/.local/bin:$PATH"
 AUTO_DEPLOY="${BLOG_AUTO_DEPLOY:-0}"
 GIT_SYNC="${BLOG_GIT_SYNC:-0}"
+[[ "${BLOG_GIT_COMMIT:-0}" == "1" ]] || GIT_SYNC=0
 # Claude Code is no longer an available production dependency. Intentionally
 # override stale retry plists or shell environments that still advertise it.
 HERMES_TAKEOVER="1"
 CLAUDE_ENABLED="0"
-LOCAL_LLM="${LOCAL_LLM:-$PROJECT_DIR/scripts/hermes-local.sh}"
+LOCAL_LLM="${LOCAL_LLM:-$PROJECT_DIR/scripts/ollama-local-no-think.sh}"
 # Gemma owns long-form and final QA work; the smaller LFM model is reserved for
 # bounded leaf transformations. The watchdog probes a lightweight Gemma model
 # before waking this job so an unavailable listener does not consume a queue.
-HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b-it-qat}"
-HERMES_ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-gemma3:4b-it-qat}"
+HERMES_LOCAL_MODEL="${HERMES_LOCAL_MODEL:-gemma3:4b}"
+HERMES_ARTICLE_MODEL="${HERMES_ARTICLE_MODEL:-gemma3:4b}"
 HERMES_LEAF_MODEL="${HERMES_LEAF_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
-HERMES_STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b-it-qat}"
-HERMES_QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b-it-qat}"
+HERMES_STRUCTURED_MODEL="${HERMES_STRUCTURED_MODEL:-gemma3:4b}"
+HERMES_QA_MODEL="${HERMES_QA_MODEL:-gemma3:4b}"
 HERMES_MEDIA_MODEL="${HERMES_MEDIA_MODEL:-hf.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M}"
 PROBE_TIMEOUT_SECONDS="${BLOG_PROBE_TIMEOUT_SECONDS:-120}"
 VERIFY_ATTEMPTS="${BLOG_VERIFY_ATTEMPTS:-8}"
@@ -30,7 +52,7 @@ POST_TIMEOUT_SECONDS="${BLOG_POST_TIMEOUT_SECONDS:-1800}"
 MAX_POST_ATTEMPTS="${BLOG_MAX_POST_ATTEMPTS:-3}"
 RETRY_DELAY_SECONDS="${BLOG_RETRY_DELAY_SECONDS:-900}"
 RUN_DATE_OVERRIDE="${BLOG_RUN_DATE:-}"
-QUEUE_START_DATE="${BLOG_QUEUE_START_DATE:-$(TZ=America/Los_Angeles date +%F)}"
+QUEUE_START_DATE="${BLOG_QUEUE_START_DATE:-0000-00-00}"
 export HERMES_TAKEOVER CLAUDE_ENABLED LOCAL_LLM HERMES_LOCAL_MODEL \
   HERMES_ARTICLE_MODEL HERMES_LEAF_MODEL HERMES_STRUCTURED_MODEL \
   HERMES_QA_MODEL HERMES_MEDIA_MODEL
@@ -102,6 +124,10 @@ PY
 }
 
 schedule_retry() {
+  if ! python3 "$PROJECT_DIR/scripts/publisher-retry-policy.py" transient "$TODAY" >> "$LOG_FILE"; then
+    echo "BLOCKED: unchanged input or retry budget exhausted; owner repair required" >> "$LOG_FILE"
+    return 1
+  fi
   local reset_raw="$1"
   local sleep_secs="${2:-$RETRY_DELAY_SECONDS}"
   if [[ -n "$reset_raw" ]]; then
@@ -165,22 +191,18 @@ schedule_retry() {
 PLIST
   write_retry_checkpoint "$retry_epoch" "$retry_hour" "$retry_min"
   if [[ "$SELF_LABEL" == "$retry_label" ]]; then
-    # We ARE the running retry job rescheduling itself for the next date.
-    # `bootout` on our own label kills us before bootstrap ever runs (see
-    # top-of-script comment). Defer the reload to a detached watcher that
-    # fires only after this process (our own PID) has actually exited, so
-    # the swap is race-free instead of a same-process self-kill.
-    local my_pid=$$
-    nohup /bin/zsh "$PROJECT_DIR/scripts/reload-retry-launchagent.sh" \
-      --wait-pid "$my_pid" \
-      --label "$retry_label" \
-      --plist "$retry_plist" \
-      --expected-date "$TODAY" \
-      --expected-hour "$retry_hour" \
-      --expected-minute "$retry_min" \
-      --log-file "$LOG_FILE" >/dev/null 2>&1 < /dev/null &
-    disown || true
-    echo "Retry scheduled for ${retry_hour}:$(printf '%02d' "$retry_min") (${sleep_secs}s from now) — deferred reload watcher armed" >> "$LOG_FILE"
+    # A nohup child still belongs to this launchd job and can die with it.
+    # Submit an independent one-shot job, which waits for this owner to exit.
+    local reload_label="${retry_label}.reload.$$.${retry_epoch}"
+    if ! python3 "$PROJECT_DIR/scripts/launch-once.py" --label "$reload_label" --log "$LOG_FILE" -- \
+      /bin/zsh "$PROJECT_DIR/scripts/reload-retry-launchagent.sh" \
+      --wait-pid "$$" --label "$retry_label" --plist "$retry_plist" \
+      --expected-date "$TODAY" --expected-hour "$retry_hour" \
+      --expected-minute "$retry_min" --log-file "$LOG_FILE"; then
+      echo "RETRY SCHEDULE FAILED: independent reload job was not submitted" >> "$LOG_FILE"
+      return 1
+    fi
+    echo "Retry reload submitted: ${reload_label}; expected ${TODAY} ${retry_hour}:${retry_min}. Await loaded-state confirmation." >> "$LOG_FILE"
     return 0
   fi
   launchctl bootout "gui/$(id -u)/${retry_label}" 2>/dev/null
@@ -344,47 +366,9 @@ ulimit -n 65536 2>/dev/null || true
 
 cd "$PROJECT_DIR" || exit 1
 
-# Quality blocks are recoverable work. Recreate a pending checkpoint when an
-# older run wrote only a complete marker with quality_blocked > 0.
-restore_quality_blocked_pending() {
-  python3 - <<'PY'
-import json
-from datetime import datetime
-from pathlib import Path
-
-root = Path('public/blog/research')
-posts_path = root.parent / 'posts.json'
-registered = set()
-if posts_path.exists():
-    registered = {p.get('slug') for p in json.loads(posts_path.read_text()) if p.get('slug')}
-for complete_path in sorted(root.glob('????-??-??-complete.json')):
-    try:
-        complete = json.loads(complete_path.read_text())
-    except Exception:
-        continue
-    if not int(complete.get('quality_blocked', 0) or 0):
-        continue
-    date = complete_path.name[:10]
-    pending_path = root / f'{date}-pending.json'
-    queue_path = root / f'{date}-queue.json'
-    if pending_path.exists() or not queue_path.exists():
-        continue
-    queue = json.loads(queue_path.read_text())
-    remaining = [p.get('slug') for p in queue.get('posts', [])
-                 if p.get('slug') and p.get('slug') not in registered]
-    if not remaining:
-        continue
-    pending_path.write_text(json.dumps({
-        'date': date,
-        'remaining': remaining,
-        'attempts': {},
-        'requeued_from_quality_block': True,
-        'interrupted_at': datetime.now().astimezone().isoformat(),
-    }, indent=2) + '\n')
-    print(f'Recovery: requeued {date}: {", ".join(remaining)}')
-PY
-}
-restore_quality_blocked_pending
+# Exhausted quality blocks require an evidence-based owner repair. Recreating
+# their pending markers with attempts={} on every launch resets the retry ceiling
+# and lets an old failure consume all future publishing days.
 
 # Checkpoint today's queue before selecting an older pending day. Without this,
 # backlog recovery can consume the only daily launch and silently skip today.
@@ -405,9 +389,7 @@ fi
 if [[ -n "$RUN_DATE_OVERRIDE" ]]; then
   TODAY="$RUN_DATE_OVERRIDE"
 else
-  OLDEST_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null \
-    | sort \
-    | awk -v start="$QUEUE_START_DATE" 'BEGIN { FS="/" } { name=$NF; date=substr(name,1,10); if (start == "" || date >= start) { print; exit } }')
+  OLDEST_PENDING=$(node scripts/publisher-wake-eligible.mjs --select "$QUEUE_START_DATE")
   if [[ -n "$OLDEST_PENDING" ]]; then
     PENDING_NAME="${OLDEST_PENDING:t:r}"
     TODAY="${PENDING_NAME%-pending}"
@@ -416,9 +398,17 @@ else
     TODAY=$(TZ=America/Los_Angeles date +%F)
   fi
 fi
+if [[ "$TODAY" > "$CALENDAR_TODAY" ]]; then
+  echo "Future queue $TODAY is not due; preserving preparation" >> "$LOG_FILE"
+  exit 0
+fi
 QUEUE_FILE="public/blog/research/${TODAY}-queue.json"
 PENDING_FILE="public/blog/research/${TODAY}-pending.json"
 COMPLETE_FILE="public/blog/research/${TODAY}-complete.json"
+if ! python3 "$PROJECT_DIR/scripts/publisher-retry-policy.py" check "$TODAY" >> "$LOG_FILE"; then
+  echo "BLOCKED: approved inputs unchanged; no model or automatic retry" >> "$LOG_FILE"
+  exit 0
+fi
 
 RUN_STATE_DIR="$PROJECT_DIR/.workflow-state"
 RUN_STATE_FILE="$RUN_STATE_DIR/blog-${TODAY}.json"
@@ -441,6 +431,8 @@ try:
 except Exception:
     state = {}
 now = datetime.now().astimezone().isoformat(timespec="seconds")
+if state.get("run_id") != sys.argv[3]:
+    state = {"started_at": now}
 state.update({
     "date": sys.argv[2],
     "run_id": sys.argv[3],
@@ -489,6 +481,7 @@ write_run_state "started"
 finish_run() {
   local rc=$?
   write_run_state "exited" ""
+  release_publisher_lock
   trap - EXIT
   exit "$rc"
 }
@@ -532,13 +525,27 @@ fi
 # deployable while Claude or the local model service is unavailable.
 NEEDS_MODEL=0
 for PROBE_SLUG in "${SLUGS[@]}"; do
-  if [[ ! -f "public/blog/$PROBE_SLUG/index.html" || ! -f "public/blog/$PROBE_SLUG/hero.jpg" ]] \
-     || ! grep -q "\"slug\": \"$PROBE_SLUG\"" public/blog/posts.json 2>/dev/null; then
-    NEEDS_MODEL=1
-    break
+  PROBE_CANONICAL=$(node scripts/resolve-canonical-topic.mjs --queued="$PROBE_SLUG" 2>>"$LOG_FILE")
+  PROBE_CANONICAL_RC=$?
+  # Canonical checkpoints need verification or owner evidence repair, neither
+  # of which requires loading a model beside an active renderer.
+  if [[ -n "$PROBE_CANONICAL" || $PROBE_CANONICAL_RC -ne 0 ]]; then
+    continue
   fi
+  node scripts/reviewed-blog-ready.mjs --slug="$PROBE_SLUG" --day="$TODAY" >> "$LOG_FILE" 2>&1
+  REVIEWED_PROBE=$?
+  # Reviewed but blocked packages need owner repair, never regeneration.
+  (( REVIEWED_PROBE != 1 )) && continue
+  # An existing but unreviewed draft still enters the model-driven builder.
+  # File presence cannot exempt it from the shared heavy-compute guard.
+  NEEDS_MODEL=1
+  break
 done
 if (( NEEDS_MODEL == 1 )); then
+  if [[ -d /tmp/fused-remotion-render.lock ]] && python3 "$PROJECT_DIR/scripts/lock-owner-alive.py" /tmp/fused-remotion-render.lock; then
+    echo "Renderer owns heavy compute; model generation deferred with pending preserved" >> "$LOG_FILE"
+    exit 0
+  fi
   echo "Probe: checking session availability for blog date $TODAY..." >> "$LOG_FILE"
   PROBE_OUT=$(probe_session 2>&1)
   if [[ $? -ne 0 ]]; then
@@ -561,12 +568,13 @@ QUALITY_BLOCKED=0
 SYNC_FAILS=0
 BUILT=()
 RETRY_SLUGS=()
+CANONICAL_REVIEW_BLOCKED=0
 typeset -U RETRY_SLUGS
 
 if ! $QUEUE_MODE && [[ "$HERMES_TAKEOVER" == "1" || "$CLAUDE_ENABLED" == "0" ]]; then
-  echo "ERROR: no valid Gemma queue for $TODAY; scheduling operational retry" >> "$LOG_FILE"
-  notify "queue missing" "$TODAY has no valid research queue; retry scheduled"
-  schedule_retry ""
+  echo "BLOCKED: no valid queue for $TODAY; owner input required, no automatic retry" >> "$LOG_FILE"
+  python3 "$PROJECT_DIR/scripts/publisher-retry-policy.py" block "$TODAY" --reason missing_approved_queue >> "$LOG_FILE"
+  notify "queue missing" "$TODAY needs reviewed input; automatic retries stopped"
   exit 0
 fi
 
@@ -618,13 +626,39 @@ for SLUG in "${SLUGS[@]}"; do
   echo "Attempt $ATTEMPT/$MAX_POST_ATTEMPTS: $SLUG" >> "$LOG_FILE"
   write_run_state "post-start" "$SLUG"
 
-  # Skip only fully registered posts for this publication date. A prior
-  # registration with stale metadata is a recoverable date collision: force a
-  # rebuild so the missed queue is not silently treated as complete.
+  # Published slugs are immutable publication identities. Repeated queue topics
+  # are existing checkpoints, never permission to overwrite a live article.
   FORCE_POST=0
+  # A verified equivalent satisfies this topic only after the canonical page
+  # passes the same live gate. Keep the queued alias in pending bookkeeping.
+  CANONICAL_SLUG=$(node scripts/resolve-canonical-topic.mjs --queued="$SLUG" 2>>"$LOG_FILE")
+  RESOLVE_RC=$?
+  if [[ $RESOLVE_RC -ne 0 ]]; then
+    echo "BLOCKED: canonical resolution validation failed for $SLUG; retaining alias pending" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    RETRY_SLUGS+=("$SLUG")
+    if (( ATTEMPT >= MAX_POST_ATTEMPTS )); then
+      CANONICAL_REVIEW_BLOCKED=$(( CANONICAL_REVIEW_BLOCKED + 1 ))
+    fi
+    continue
+  fi
+  if [[ -n "$CANONICAL_SLUG" ]]; then
+    if [[ "$AUTO_DEPLOY" == "1" ]]; then
+      CODE=$(verify_live_slug "$CANONICAL_SLUG")
+      if [[ "$CODE" != "200" ]]; then
+        echo "VERIFY FAIL: canonical equivalent /blog/$CANONICAL_SLUG/ ($CODE); retaining alias $SLUG" >> "$LOG_FILE"
+        FAILS=$(( FAILS + 1 ))
+        RETRY_SLUGS+=("$SLUG")
+        continue
+      fi
+    fi
+    echo "SKIP: $SLUG resolved to verified canonical $CANONICAL_SLUG" >> "$LOG_FILE"
+    BUILT+=("$SLUG")
+    [[ "$AUTO_DEPLOY" != "1" ]] && RETRY_SLUGS+=("$SLUG")
+    continue
+  fi
   if [[ -f "public/blog/$SLUG/index.html" && -f "public/blog/$SLUG/hero.jpg" ]] \
-      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null \
-      && [[ "$(python3 -c "import json; print(next((p.get('date','') for p in json.load(open('public/blog/posts.json')) if p.get('slug') == '$SLUG'), ''))" 2>/dev/null)" == "$TODAY" ]]; then
+      && grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
     # A registered checkpoint may predate the current deterministic QA rules.
     # Recheck it before treating recovery as healthy, but do not quarantine or
     # rewrite already-live content from this recovery-only path.
@@ -639,7 +673,7 @@ for SLUG in "${SLUGS[@]}"; do
       CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://fuseddistribution.com/blog/$SLUG/")
       if [[ "$CODE" != "200" ]]; then
         echo "RESUME: $SLUG is registered but not live ($CODE); redeploying checkpointed artifacts" >> "$LOG_FILE"
-        if ! npx wrangler deploy >> "$LOG_FILE" 2>&1; then
+        if ! node scripts/deploy-approved-blog.mjs --slug="$SLUG" >> "$LOG_FILE" 2>&1; then
           echo "DEPLOY FAIL: $SLUG retained for retry" >> "$LOG_FILE"
           FAILS=$(( FAILS + 1 ))
           RETRY_SLUGS+=("$SLUG")
@@ -663,21 +697,33 @@ for SLUG in "${SLUGS[@]}"; do
   fi
 
   if grep -q "\"slug\": \"$SLUG\"" public/blog/posts.json 2>/dev/null; then
-    FORCE_POST=1
-    echo "RECOVERY: $SLUG is registered for an older date; forcing rebuild for $TODAY" >> "$LOG_FILE"
+    echo "BLOCKED: registered $SLUG has missing artifacts; owner restoration required" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    RETRY_SLUGS+=("$SLUG")
+    continue
   fi
 
-  # Pre-flight probe before this post
-  PROBE_OUT=$(probe_session 2>&1)
-  if [[ $? -ne 0 ]]; then
-    REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
-    RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
-      | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
-    write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
-    echo "Session limit before $SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
-    notify "session limit" "$SLUG pending — retry scheduled"
-    schedule_retry "$RESET_RAW"
-    exit 0
+  node scripts/reviewed-blog-ready.mjs --slug="$SLUG" --day="$TODAY" >> "$LOG_FILE" 2>&1
+  REVIEWED_READY=$?
+  if (( REVIEWED_READY == 2 )); then
+    echo "BLOCKED: reviewed $SLUG needs owner repair; no model regeneration" >> "$LOG_FILE"
+    RETRY_SLUGS+=("$SLUG")
+    continue
+  fi
+  # Approved inventory does not require a drafting model to be available.
+  if (( REVIEWED_READY != 0 )); then
+    PROBE_OUT=$(probe_session 2>&1)
+    if [[ $? -ne 0 ]]; then
+      REMAINING_SLUGS=($(remaining_from "$SLUG" "${SLUGS[@]}"))
+      RESET_RAW=$(echo "$PROBE_OUT" | grep -oiE "resets? (at )?[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)" \
+        | head -1 | grep -oiE "[0-9]{1,2}(:[0-9]{2})?\s*(am|pm)")
+      write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}" "${REMAINING_SLUGS[@]}"
+      echo "Session limit before $SLUG. ${#REMAINING_SLUGS[@]} slug(s) pending." >> "$LOG_FILE"
+      notify "session limit" "$SLUG pending — retry scheduled"
+      schedule_retry "$RESET_RAW"
+      exit 0
+    fi
+
   fi
 
   # Build single-post context from queue JSON
@@ -697,18 +743,33 @@ else: print('{}')
   # Covers write/polish, internal links, hooks, svg, html, reel-data, social,
   # optional enhancements, assets, qa, posts.json, topic-history.
   POST_TMPOUT=$(mktemp)
-  FORCE_ARGS=()
-  (( FORCE_POST == 1 )) && FORCE_ARGS+=(--force)
-  python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
-    HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
-    HERMES_LOCAL_MODEL="$HERMES_ARTICLE_MODEL" HERMES_ARTICLE_MODEL="$HERMES_ARTICLE_MODEL" \
-    HERMES_LEAF_MODEL="$HERMES_LEAF_MODEL" HERMES_STRUCTURED_MODEL="$HERMES_STRUCTURED_MODEL" \
-    HERMES_QA_MODEL="$HERMES_QA_MODEL" HERMES_MEDIA_MODEL="$HERMES_MEDIA_MODEL" \
-      BLOG_PUBLISH_DATE="$TODAY" \
-    public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" "${FORCE_ARGS[@]}" 2>&1 \
-    | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
-  POST_EXIT=$pipestatus[1]
+  if (( REVIEWED_READY == 0 )); then
+    node public/blog/scripts/qa-local.mjs --slug="$SLUG" --out="/tmp/fused-prepared-${SLUG}-qa.json" >> "$POST_TMPOUT" 2>&1
+    POST_EXIT=$?
+    if (( POST_EXIT == 0 )); then
+      node public/blog/scripts/add-to-posts.mjs --slug="$SLUG" >> "$POST_TMPOUT" 2>&1
+      POST_EXIT=$?
+    fi
+  else
+    FORCE_ARGS=()
+    (( FORCE_POST == 1 )) && FORCE_ARGS+=(--force)
+    python3 scripts/run-with-timeout.py "$POST_TIMEOUT_SECONDS" env \
+      HERMES_TAKEOVER="$HERMES_TAKEOVER" CLAUDE_ENABLED="$CLAUDE_ENABLED" LOCAL_LLM="$LOCAL_LLM" \
+      HERMES_LOCAL_MODEL="$HERMES_ARTICLE_MODEL" HERMES_ARTICLE_MODEL="$HERMES_ARTICLE_MODEL" \
+      HERMES_LEAF_MODEL="$HERMES_LEAF_MODEL" HERMES_STRUCTURED_MODEL="$HERMES_STRUCTURED_MODEL" \
+      HERMES_QA_MODEL="$HERMES_QA_MODEL" HERMES_MEDIA_MODEL="$HERMES_MEDIA_MODEL" \
+        BLOG_PUBLISH_DATE="$TODAY" \
+      public/blog/scripts/build-post.sh "$SLUG" --brand="$BRAND" --keyword="$KW" "${FORCE_ARGS[@]}" 2>&1 \
+      | tee -a "$LOG_FILE" "$POST_TMPOUT" > /dev/null
+    POST_EXIT=$pipestatus[1]
+  fi
   write_run_state "post-build-exit-${POST_EXIT}" "$SLUG"
+
+  if (( REVIEWED_READY == 0 && POST_EXIT != 0 )); then
+    echo "BLOCKED: prepared $SLUG failed release validation; preserving reviewed source for owner" >> "$LOG_FILE"
+    RETRY_SLUGS+=("$SLUG")
+    continue
+  fi
 
   # A clean but undersized article can pass the style lint and become a stale
   # resume checkpoint while the required reel stage fails forever. Rebuild the
@@ -844,16 +905,15 @@ PY
   # Regenerate sitemap
   node public/blog/scripts/generate-sitemap.mjs >> "$LOG_FILE" 2>&1
 
-  # Commit this post
-  git add \
-    "public/blog/$SLUG/" \
-    public/sitemap.xml \
-    public/blog/posts.json \
-    public/blog/topic-history.md 2>/dev/null
-  git commit -m "feat: $SLUG" >> "$LOG_FILE" 2>&1
+  # Source delivery is separate from authorized website publication.
+  # Keep commits opt-in so an unattended run cannot consume unrelated staging.
+  if [[ "${BLOG_GIT_COMMIT:-0}" == "1" ]]; then
+    git add "public/blog/$SLUG/" public/sitemap.xml public/blog/posts.json public/blog/topic-history.md
+    git commit -m "feat: $SLUG" -- "public/blog/$SLUG/" public/sitemap.xml public/blog/posts.json public/blog/topic-history.md >> "$LOG_FILE" 2>&1
+  fi
 
   if [[ "$AUTO_DEPLOY" != "1" ]]; then
-    echo "PUBLISH PENDING: $SLUG committed locally. Hermes/Codex owner must review, push, deploy, and verify live." >> "$LOG_FILE"
+    echo "PUBLISH PENDING: $SLUG validated locally; deployment and live verification remain pending." >> "$LOG_FILE"
     BUILT+=("$SLUG")
     RETRY_SLUGS+=("$SLUG")
     continue
@@ -873,7 +933,7 @@ PY
     echo "SYNC PENDING: local commit retained for Codex review; website deployment continues" >> "$LOG_FILE"
   fi
 
-  if ! npx wrangler deploy >> "$LOG_FILE" 2>&1; then
+  if ! node scripts/deploy-approved-blog.mjs --slug="$SLUG" >> "$LOG_FILE" 2>&1; then
     echo "DEPLOY FAIL: $SLUG retained for retry" >> "$LOG_FILE"
     FAILS=$(( FAILS + 1 ))
     RETRY_SLUGS+=("$SLUG")
@@ -894,40 +954,38 @@ PY
 done
 
 if [[ "$AUTO_DEPLOY" == "1" ]]; then
-  LIVE_LOCS=$(curl -s --max-time 20 "https://fuseddistribution.com/sitemap.xml" | grep -c "<loc>")
-  LOCAL_LOCS=$(grep -c "<loc>" public/sitemap.xml 2>/dev/null || echo 0)
-  if [[ "$LIVE_LOCS" == "$LOCAL_LOCS" ]]; then
-    echo "VERIFY PASS: sitemap ($LIVE_LOCS URLs live = $LOCAL_LOCS local)" >> "$LOG_FILE"
+  # Registered resume paths skip the per-post build branch. Refresh the local
+  # comparison sitemap from the current catalog before live verification too.
+  node public/blog/scripts/generate-sitemap.mjs >> "$LOG_FILE" 2>&1
+  if SITEMAP_CHECK=$(curl -fsS --max-time 20 "https://fuseddistribution.com/sitemap.xml" \
+      | node scripts/verify-sitemap.mjs public/sitemap.xml public/blog/posts.json 2>&1); then
+    echo "VERIFY PASS: $SITEMAP_CHECK" >> "$LOG_FILE"
   else
-    echo "VERIFY FAIL: sitemap live=$LIVE_LOCS local=$LOCAL_LOCS" >> "$LOG_FILE"
+    echo "VERIFY FAIL: $SITEMAP_CHECK" >> "$LOG_FILE"
     FAILS=$(( FAILS + 1 ))
     RETRY_SLUGS+=("${BUILT[@]}")
   fi
 
-  # posts.json content verify — a wrangler deploy can race the file writes and
-  # ship a stale asset manifest (2026-07-02: listing missed 4 posts while the
-  # post URLs were live). Compare newest live slug against local; one redeploy
-  # retry, then re-check with a propagation wait.
-  LOCAL_NEWEST=$(python3 -c "import json; print(json.load(open('public/blog/posts.json'))[0]['slug'])" 2>/dev/null || echo "")
+  # Compare every entry and date order. Same-day permutations are valid:
+  # scoped deployment preserves baseline ties while registration prepends.
   verify_posts_json() {
-    LIVE_NEWEST=$(curl -s --max-time 20 "https://fuseddistribution.com/blog/posts.json" \
-      | python3 -c "import json,sys; print(json.load(sys.stdin)[0]['slug'])" 2>/dev/null || echo "")
-    [[ -n "$LOCAL_NEWEST" && "$LIVE_NEWEST" == "$LOCAL_NEWEST" ]]
+    CATALOG_CHECK=$(curl -fsS --max-time 20 "https://fuseddistribution.com/blog/posts.json" \
+      | node scripts/verify-blog-catalog.mjs public/blog/posts.json 2>&1)
   }
   if verify_posts_json; then
-    echo "VERIFY PASS: posts.json (newest live slug = $LOCAL_NEWEST)" >> "$LOG_FILE"
+    echo "VERIFY PASS: posts.json ($CATALOG_CHECK)" >> "$LOG_FILE"
   else
-    echo "VERIFY WARN: posts.json stale (live=$LIVE_NEWEST local=$LOCAL_NEWEST) — redeploying once" >> "$LOG_FILE"
-    npx wrangler deploy >> "$LOG_FILE" 2>&1
+    echo "VERIFY WARN: posts.json mismatch ($CATALOG_CHECK) — redeploying once" >> "$LOG_FILE"
+    node scripts/deploy-approved-blog.mjs >> "$LOG_FILE" 2>&1
     PJ_OK=0
     for wait_round in 1 2 3 4 5 6; do
       sleep 120
       if verify_posts_json; then PJ_OK=1; break; fi
     done
     if [[ "$PJ_OK" == "1" ]]; then
-      echo "VERIFY PASS: posts.json fresh after redeploy (newest=$LOCAL_NEWEST)" >> "$LOG_FILE"
+      echo "VERIFY PASS: posts.json verified after redeploy ($CATALOG_CHECK)" >> "$LOG_FILE"
     else
-      echo "VERIFY FAIL: posts.json still stale after redeploy + 12 min (live=$LIVE_NEWEST local=$LOCAL_NEWEST)" >> "$LOG_FILE"
+      echo "VERIFY FAIL: posts.json still mismatched after redeploy + 12 min ($CATALOG_CHECK)" >> "$LOG_FILE"
       notify "posts.json stale" "blog listing missing new posts — manual check needed"
       FAILS=$(( FAILS + 1 ))
       RETRY_SLUGS+=("${BUILT[@]}")
@@ -948,15 +1006,26 @@ fi
 if (( ${#RETRY_SLUGS[@]} > 0 )); then
   write_pending "$PENDING_FILE" "${RETRY_SLUGS[@]}"
   echo "Recovery marker retained: $PENDING_FILE (${#RETRY_SLUGS[@]} retryable)" >> "$LOG_FILE"
-  schedule_retry ""
+  if (( ${#RETRY_SLUGS[@]} > CANONICAL_REVIEW_BLOCKED )); then
+    schedule_retry ""
+  else
+    echo "BLOCKED: canonical validation reached attempt limit; pending preserved for owner repair or next daily run, no rapid retry" >> "$LOG_FILE"
+  fi
 else
   rm -f "$PENDING_FILE"
-  QUEUE_SUMMARY=$(python3 - "$QUEUE_FILE" "public/blog/posts.json" "$TODAY" <<'PY'
+  EQUIVALENTS_JSON=$(node scripts/resolve-canonical-topic.mjs --all 2>>"$LOG_FILE")
+  EQUIVALENTS_RC=$?
+  if [[ $EQUIVALENTS_RC -ne 0 ]]; then
+    echo "BLOCKED: canonical resolution registry validation failed; completion remains blocked" >> "$LOG_FILE"
+    FAILS=$(( FAILS + 1 ))
+    EQUIVALENTS_JSON='{}'
+  fi
+  QUEUE_SUMMARY=$(python3 - "$QUEUE_FILE" "public/blog/posts.json" "$TODAY" "$EQUIVALENTS_JSON" <<'PY'
 import json
 import sys
 from pathlib import Path
 
-queue_path, posts_path, date = sys.argv[1:]
+queue_path, posts_path, date, equivalents_raw = sys.argv[1:]
 try:
     queue = json.loads(Path(queue_path).read_text()).get("posts", [])
 except Exception:
@@ -965,6 +1034,12 @@ try:
     registered = {post.get("slug") for post in json.loads(Path(posts_path).read_text())}
 except Exception:
     registered = set()
+try:
+    equivalents = json.loads(equivalents_raw)
+    if not isinstance(equivalents, dict):
+        raise ValueError
+except Exception:
+    equivalents = {}
 blocked_root = Path(".workflow-blocked") / date
 blocked = set()
 if blocked_root.is_dir():
@@ -974,8 +1049,19 @@ if blocked_root.is_dir():
                 slug = post.get("slug")
                 if slug and path.name.startswith(f"{slug}-"):
                     blocked.add(slug)
-live = sum(1 for post in queue if post.get("slug") in registered)
-quality_blocked = sum(1 for post in queue if post.get("slug") in blocked and post.get("slug") not in registered)
+required = ('index.html', 'hero.jpg', 'reel-data.md', 'reel-script.md', 'social-copy.json')
+def published_slug(post):
+    slug = post.get('slug')
+    return slug if slug in registered else equivalents.get(slug)
+def intact(post):
+    slug = published_slug(post)
+    direct_fresh = post.get('slug') in registered and next((p.get('date') for p in json.loads(Path(posts_path).read_text()) if p.get('slug') == post.get('slug')), '') == date
+    return bool(slug) and (post.get('slug') in equivalents or direct_fresh) and all((Path('public/blog') / slug / file).is_file() and (Path('public/blog') / slug / file).stat().st_size > 0 for file in required)
+live = sum(1 for post in queue if intact(post))
+quality_blocked = sum(1 for post in queue if not intact(post))
+dated = {p.get('slug') for p in json.loads(Path(posts_path).read_text()) if p.get('date') == date}
+if queue and not any(p.get('slug') in dated and intact(p) for p in queue):
+    quality_blocked = max(1, quality_blocked)  # Recycled topics are not fresh daily output.
 print(f"{live} {quality_blocked}")
 PY
   )
@@ -985,8 +1071,16 @@ PY
   [[ "$QUEUE_BLOCKED" == <-> ]] || QUEUE_BLOCKED=$QUALITY_BLOCKED
   # A dated completion marker is only authoritative when every queued slug is
   # registered. Quality blocks are recovery work, not successful completion.
-  if (( QUEUE_BLOCKED > 0 )); then
-    echo "CHECKPOINT INCOMPLETE: $QUEUE_BLOCKED quality-blocked slug(s) remain; retaining recovery state" >> "$LOG_FILE"
+  if (( QUEUE_BLOCKED > 0 || FAILS > 0 )); then
+    echo "CHECKPOINT INCOMPLETE: $QUEUE_BLOCKED unresolved slug(s), $FAILS verification failure(s)" >> "$LOG_FILE"
+    python3 - "$QUEUE_FILE" "$RUN_STATE_DIR/blocked-${TODAY}.json" <<'PYBLOCK'
+import json, sys
+from datetime import datetime, timezone
+queue = json.load(open(sys.argv[1]))
+queue.update(status='blocked', checked_at=datetime.now(timezone.utc).isoformat(), reason='Unresolved artifacts or live verification failure; owner repair required')
+with open(sys.argv[2], 'w') as output:
+    json.dump(queue, output, indent=2)
+PYBLOCK
   else
     cat > "$COMPLETE_FILE" <<JSON
 {
@@ -998,7 +1092,7 @@ PY
 }
 JSON
   fi
-  NEXT_PENDING=$(find public/blog/research -maxdepth 1 -type f -name '????-??-??-pending.json' -print 2>/dev/null | sort | head -1)
+  NEXT_PENDING=$(node scripts/publisher-wake-eligible.mjs --select "$QUEUE_START_DATE")
   if [[ -n "$NEXT_PENDING" ]]; then
     PREVIOUS_TODAY="$TODAY"
     NEXT_PENDING_NAME="${NEXT_PENDING:t:r}"

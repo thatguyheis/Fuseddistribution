@@ -129,6 +129,7 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
       // Recompute the window so the (now longer) narration still fits.
       endSec = startSec + Math.max(dur, durationFromNarration(qNarr));
       const seg = { type: 'question', startSec, endSec, text: qText, narration: qNarr };
+      if (/^Engagement-beat:\s*(?:identity|debate)\s*$/mi.test(s)) seg.engagementBeat = true;
       if (subtextM) seg.subtext = stripQ(subtextM[1].trim());
       segments.push(seg);
     } else {
@@ -139,7 +140,9 @@ function parseNewLongFormScript(md, slug, reelDataMd) {
   }
 
   const lastSeg = segments[segments.length - 1];
-  return { slug, title, totalDuration: lastSeg ? lastSeg.endSec : 0, segments };
+  return { slug, title, totalDuration: lastSeg ? lastSeg.endSec : 0, segments,
+    engagementPolicy: /^engagement-policy:\s*1$/mi.test(md) ? 1 : undefined,
+    contentKind: md.match(/^content-kind:\s*(educate|opinion)$/mi)?.[1].toLowerCase() };
 }
 
 function parseBars(barsText) {

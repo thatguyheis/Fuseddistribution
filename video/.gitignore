@@ -1,6 +1,7 @@
 node_modules/
 out/
 public/audio/
+public/heroes/
 voice-sample/*.wav
 dist/
 .env

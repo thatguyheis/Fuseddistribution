@@ -13,6 +13,30 @@ SPEC.loader.exec_module(MODULE)
 
 
 class BuildReelTests(unittest.TestCase):
+    def test_warning_overlay_does_not_reverse_negation(self):
+        for sentence in [
+            "It does not certify a consumer's coin or establish its purity.",
+            "Do not describe the demonstration as guaranteed to catch plated items.",
+            "Fast melting cannot prove that a coin contains 99.9% silver.",
+        ]:
+            self.assertEqual(MODULE.display_label(sentence, True), "CHECK THE LIMITATIONS")
+
+    def test_excludes_reference_list_from_narration(self):
+        sentences = MODULE.article_sentences(
+            "# Tax records\n\nKeep the original invoices with your sale and purchase records.\n\n"
+            "**Resources for Further Information:**\n\n"
+            "IRS Publication 550 Investment Income and Expenses provides additional material."
+        )
+        self.assertEqual(sentences, ["Keep the original invoices with your sale and purchase records."])
+
+    def test_preserves_us_mint_attribution_when_splitting_sentences(self):
+        sentences = MODULE.article_sentences(
+            "# Care\n\nThe U.S. Mint advises handling coins by their edges to protect their surfaces. "
+            "Keep appropriate records with the items in your collection."
+        )
+        self.assertEqual(len(sentences), 2)
+        self.assertTrue(sentences[0].startswith("The United States Mint advises"))
+
     def test_prefers_measurable_stat_over_year_range(self):
         text = (
             "The market was valued at $1.78 billion in 2023 and is projected "
@@ -51,10 +75,10 @@ class BuildReelTests(unittest.TestCase):
             _, script_path, body_count, duration = MODULE.build(args)
             script = script_path.read_text()
 
-            self.assertGreaterEqual(body_count, 8)
-            self.assertLessEqual(body_count, 12)
-            self.assertGreaterEqual(duration, 180)
-            self.assertLessEqual(duration, 240)
+            self.assertGreaterEqual(body_count, 4)
+            self.assertLessEqual(body_count, 8)
+            self.assertGreaterEqual(duration, 110)
+            self.assertLessEqual(duration, 130)
             self.assertIn("## STAT:", script)
             self.assertIn("Text: What would you fix first?", script)
             self.assertIn("Narration: What would you fix first?", script)

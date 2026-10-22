@@ -20,7 +20,7 @@ export const MediaBg: React.FC<{
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const transformOrigin = ORIGINS[segmentIndex % 3];
+  const transformOrigin = ORIGINS[segmentIndex % ORIGINS.length];
 
   const overlayStyle: React.CSSProperties = {
     position: 'absolute', inset: 0,

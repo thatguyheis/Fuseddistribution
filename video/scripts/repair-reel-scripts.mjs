@@ -1,9 +1,9 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root = join(new URL('.', import.meta.url).pathname, '..', '..');
+const root = process.argv.find(arg => arg.startsWith('--root='))?.slice(7) || fileURLToPath(new URL('../..', import.meta.url));
 const outRoot = join(root, 'video', 'out');
-const blogRoot = join(root, 'public', 'blog');
 
 function textRepair(value, narration = false) {
   let result = String(value ?? '').replace(/[—–]/g, ', ');
@@ -28,7 +28,7 @@ function repairNested(value, narration = false) {
   return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, repairNested(item, key === 'narration')]));
 }
 
-function repairScript(script) {
+export function repairScript(script) {
   const repaired = structuredClone(script);
   let changes = 0;
   const normalized = repairNested(repaired);
@@ -73,12 +73,6 @@ function repairScript(script) {
   return { repaired, changes };
 }
 
-function repairMarkdown(path) {
-  const original = readFileSync(path, 'utf8');
-  const next = textRepair(original);
-  if (next !== original) writeFileSync(path, next);
-  return next !== original;
-}
 
 function main() {
   const requested = process.argv.find((arg) => arg.startsWith('--slug='))?.slice('--slug='.length) || '';
@@ -91,14 +85,7 @@ function main() {
     const { repaired, changes } = repairScript(original);
     if (changes) { writeFileSync(path, `${JSON.stringify(repaired, null, 2)}\n`); changed.push({ slug, changes }); }
   }
-  for (const slug of readdirSync(blogRoot)) {
-    if (requested && slug !== requested) continue;
-    for (const name of ['reel-script.md', 'reel-data.md']) {
-      const path = join(blogRoot, slug, name);
-      if (existsSync(path) && repairMarkdown(path)) changed.push({ slug, file: name });
-    }
-  }
   console.log(JSON.stringify({ repaired: changed.length, files: changed }, null, 2));
 }
 
-main();
+if (process.argv[1] === fileURLToPath(import.meta.url)) main();

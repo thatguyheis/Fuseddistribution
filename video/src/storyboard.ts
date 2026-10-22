@@ -1,4 +1,4 @@
-export type StoryboardVisual = 'paper-collage' | 'data-board' | 'standard-card' | 'chart' | 'question';
+export type StoryboardVisual = 'media-feature' | 'paper-collage' | 'data-board' | 'standard-card' | 'chart' | 'question';
 
 export type StoryboardDataBoard = {
   chartType: 'line' | 'bars' | 'donut' | 'process';

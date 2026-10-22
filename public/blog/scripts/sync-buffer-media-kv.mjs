@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { existsSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { parseEnv } from 'node:util';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
@@ -79,6 +80,14 @@ function kvKeyFor(file) {
 
 function uploadFile(file) {
   const key = kvKeyFor(file);
+  // Standalone recovery must use the same credential as the video runner.
+  // Parse data without executing shell code or exporting unrelated secrets.
+  const env = { ...process.env };
+  const videoEnv = join(repoRoot, 'video', '.env');
+  if (!env.CLOUDFLARE_API_TOKEN && existsSync(videoEnv)) {
+    const token = parseEnv(readFileSync(videoEnv, 'utf8')).CLOUDFLARE_API_TOKEN;
+    if (token) env.CLOUDFLARE_API_TOKEN = token;
+  }
   const result = spawnSync(
     'npx',
     [
@@ -95,7 +104,7 @@ function uploadFile(file) {
       '{"contentType":"video/mp4"}',
       '--remote',
     ],
-    { cwd: repoRoot, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] },
+    { cwd: repoRoot, env, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] },
   );
 
   if (result.status !== 0) {

@@ -9,10 +9,11 @@ import math
 import re
 from pathlib import Path
 
-MIN_BODY_SEGMENTS = 8
-MAX_BODY_SEGMENTS = 12
-MIN_DURATION_SECONDS = 180
-MAX_DURATION_SECONDS = 240
+MIN_BODY_SEGMENTS = 4
+MAX_BODY_SEGMENTS = 8
+# Leave room for actual Chatterbox pacing below the 135-second media ceiling.
+MIN_DURATION_SECONDS = 110
+MAX_DURATION_SECONDS = 130
 TARGET_CHUNK_WORDS = 60
 MAX_CHUNK_WORDS = 72
 ESTIMATED_CHATTERBOX_WORDS_PER_SECOND = 3.25
@@ -47,11 +48,16 @@ def article_sentences(markdown: str) -> list[str]:
     # narration. Remove a leading one-paragraph notice before sentence chunking.
     text = re.sub(r"^# .*?\n\n\*\*Correction dated[^\n]*\n\n", "", text, count=1, flags=re.S | re.I)
     text = re.split(r"^##\s+Related\s*$", text, maxsplit=1, flags=re.M | re.I)[0]
+    # Bibliography identifiers are references, not spoken statistics or a CTA.
+    text = re.split(r"^\*\*Resources for Further Information:\*\*\s*$", text, maxsplit=1, flags=re.M | re.I)[0]
     text = re.sub(r"See how it works at\s+/#contact\.?", "", text, flags=re.I)
     text = re.sub(r"^# .*$", "", text, count=1, flags=re.M)
     text = re.sub(r"^#{2,6}\s+.*$", "", text, flags=re.M)
     text = re.sub(r"^[-*]\s+", "", text, flags=re.M)
     text = scrub(text)
+    # A sentence break after "U.S." discarded the short attribution fragment,
+    # leaving an unidentified "Mint" in generated narration.
+    text = re.sub(r"\bU\.S\.(?=\s|$)", "United States", text)
     return [
         sentence.strip()
         for sentence in re.split(r"(?<=[.!?])\s+", text)
@@ -248,6 +254,11 @@ def content_words(value: str) -> list[str]:
 
 def display_label(value: str, include_figure: bool) -> str:
     clean = scrub(value)
+    # Keyword extraction discards negation and can reverse a warning's meaning.
+    # Use a neutral heading until editorial review supplies a specific overlay.
+    first_sentence = re.split(r"(?<=[.!?])\s+", clean, maxsplit=1)[0]
+    if re.search(r"\b(?:not|never|cannot|can't|don't|doesn't|isn't|without)\b", first_sentence, re.I):
+        return "CHECK THE LIMITATIONS"
     figure_match = find_figure(clean)
     figure = normalize_figure_label(figure_match.group(0)) if include_figure and figure_match else ""
     if figure_match:
@@ -277,13 +288,11 @@ def has_figure(value: str) -> bool:
 
 
 def normalize_question(value: str, brand: str) -> str:
-    fallback = "What is your take?" if brand == "silver" else "What would you change first?"
-    question = scrub(value or fallback).strip('"\' ')
-    if not question.endswith("?"):
-        question = question.rstrip(".! ") + "?"
-    words = question.split()
-    if len(words) > 10:
-        question = " ".join(words[:10]).rstrip(".,!?") + "?"
+    question = scrub(value or "").strip('"\' ')
+    if not question.endswith("?") or len(question.split()) > 25:
+        raise ValueError("Editorial repair required: topic-specific engagement question, at most25 words, ending in ?")
+    if re.search(r"what (?:did|do) you think|what(?:'s| is) your take|which page will you check", question, re.I):
+        raise ValueError("Editorial repair required: generic engagement question")
     return question
 
 
@@ -339,6 +348,22 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     if not input_path.is_file():
         raise SystemExit(f"error: no input {input_path}")
 
+    approved_script = input_path.parent / "reel-script-approved.md"
+    transcript_path = Path(__file__).resolve().parents[3] / "content/coin-history" / slug / "narration-v1-approved.txt"
+    if (input_path.parent / "pipeline-marker.json").is_file() and approved_script.is_file() and transcript_path.is_file():
+        script_text = approved_script.read_text()
+        transcript_text = transcript_path.read_text()
+        approved_narration = " ".join(re.findall(r"^Narration:\s*(.+)$", script_text, flags=re.M))
+        normalize = lambda value: re.sub(r"\s+", " ", value).strip()
+        if normalize(approved_narration) != normalize(transcript_text):
+            raise SystemExit(f"error: approved reel narration does not match the transcript: {slug}")
+        script_path = input_path.parent / "reel-script.md"
+        script_path.write_text(script_text)
+        narration_words = len(transcript_text.split())
+        duration = math.ceil(narration_words / ESTIMATED_CHATTERBOX_WORDS_PER_SECOND + ESTIMATED_SEGMENT_BUFFER_SECONDS * len(re.findall(r"^Narration:", script_text, flags=re.M)))
+        print(f"[reel] preserved approved coin-history narration ({narration_words} words, estimated {duration}s)")
+        return output_path, script_path, max(0, len(re.findall(r"^Narration:", script_text, flags=re.M)) - 1), duration
+
     article = input_path.read_text()
     plan_path = Path(getattr(args, "plan", "") or input_path.parent / "content-plan.json")
     reel_source, reel_focus = planned_reel_source(article, plan_path)
@@ -360,7 +385,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     for count in range(MIN_BODY_SEGMENTS, min(MAX_BODY_SEGMENTS, len(chunks)) + 1):
         selected = evenly_select(chunks, count)
         hook_narration = narration(hook)
-        question_narration = narration(f"{question} {follow_line(args.brand)}")
+        question_narration = narration(question)
         duration = segment_duration(hook_narration) + segment_duration(question_narration)
         duration += sum(segment_duration(narration(chunk)) for chunk in selected)
         if MIN_DURATION_SECONDS <= duration <= MAX_DURATION_SECONDS:
@@ -368,7 +393,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
             break
     if body_segments is None:
         selected = evenly_select(chunks, min(MAX_BODY_SEGMENTS, len(chunks)))
-        duration = segment_duration(narration(hook)) + segment_duration(narration(f"{question} {follow_line(args.brand)}"))
+        duration = segment_duration(narration(hook)) + segment_duration(narration(question))
         duration += sum(segment_duration(narration(chunk)) for chunk in selected)
         raise SystemExit(
             f"error: generated reel duration is {duration}s; article must support {MIN_DURATION_SECONDS}-{MAX_DURATION_SECONDS}s without filler"
@@ -411,10 +436,10 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
         media_lines.extend([
             f"- segment: {index}",
             f'  query: "{keyword} {query_words}"',
-            "  prefer: photo",
+            "  prefer: video" if index in (2, 4) else "  prefer: photo",
         ])
 
-    question_narration = narration(f"{question} {follow_line(args.brand)}")
+    question_narration = narration(question)
     media_lines.extend([
         f"- segment: {len(body_segments) + 1}",
         f'  query: "{keyword} customer feedback"',
@@ -423,7 +448,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     script_sections.append(
         "## QUESTION\n\n"
         f"**Visual:** Question card\n**Duration:** {segment_duration(question_narration)}s minimum\n\n"
-        f"Text: {question}\nSubtext: COMMENT BELOW\nNarration: {question_narration}"
+        f"Text: {question}\nSubtext: COMMENT BELOW\nEngagement-beat: {hooks.get('engagement_type', 'debate')}\nNarration: {question_narration}"
     )
     reel_lines.extend([
         "",
@@ -445,6 +470,7 @@ def build(args: argparse.Namespace) -> tuple[Path, Path, int, int]:
     script_path = output_path.parent / "reel-script.md"
     script_path.write_text(
         f"# Reel Script: {slug}\nformat: long-form\nsegments: {len(script_sections)}\n"
+        f"engagement-policy: 1\ncontent-kind: {hooks.get('content_kind', 'educate')}\n"
         f"target-duration: {total_duration}s\n\n---\n\n"
         + "\n\n---\n\n".join(script_sections)
         + "\n"

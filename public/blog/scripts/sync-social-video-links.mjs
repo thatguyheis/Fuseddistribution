@@ -2,9 +2,11 @@
 // Syncs authoritative Buffer post URLs into each blog article's social-video.json
 // and its rendered social video panel. Only sent posts with an external URL qualify.
 
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { addPanelToHtml } from './lib/social-video-panel.mjs';
+import { isPlatformUrl } from './lib/social-platform-url.mjs';
+import { readProtectedSlugs } from './lib/social-video-protection.mjs';
 
 const repoRoot = resolve(new URL('../../..', import.meta.url).pathname);
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -20,18 +22,11 @@ const args = Object.fromEntries(process.argv.slice(2).map((arg) => {
 }));
 const requestedSlugs = new Set(String(args.slug || '').split(',').map((value) => value.trim()).filter(Boolean));
 const dryRun = args['dry-run'] === true;
+const resolutionPath = join(repoRoot, '.workflow-state/canonical-topic-resolutions.json');
+const protectedSlugs = readProtectedSlugs(blogRoot, resolutionPath);
 
 function readJson(path) {
   return JSON.parse(readFileSync(path, 'utf8'));
-}
-
-function isPlatformUrl(platform, url) {
-  const patterns = {
-    youtube: /^https:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\//i,
-    instagram: /^https:\/\/(?:www\.)?instagram\.com\/reel\//i,
-    x: /^https:\/\/x\.com\/[^/]+\/status\/\d+/i,
-  };
-  return typeof url === 'string' && patterns[platform].test(url);
 }
 
 function collectPublishedLinks() {
@@ -123,6 +118,18 @@ for (const slug of slugs) {
   const nextHtml = addPanelToHtml(currentHtml, panelHtml(platforms, primaryVideo, title, slug, heroFilename));
   if (sourceUnchanged && nextHtml === currentHtml) continue;
   const source = { ...sourceCore, updatedAt: sourceUnchanged ? currentSource.updatedAt : new Date().toISOString() };
+  if (protectedSlugs.has(slug)) {
+    // Keep approved canonical HTML byte-stable until a scoped deployment and
+    // refreshed live evidence approve the new panel together.
+    if (!dryRun) {
+      const pendingDir = join(repoRoot, '.workflow-state/pending-social-panels', slug);
+      mkdirSync(pendingDir, { recursive: true });
+      writeFileSync(join(pendingDir, 'index.html'), nextHtml);
+      writeFileSync(join(pendingDir, 'social-video.json'), `${JSON.stringify(source, null, 2)}\n`);
+    }
+    console.log(`staged canonical panel for review: ${slug}`);
+    continue;
+  }
   if (!dryRun) {
     writeFileSync(sourcePath, `${JSON.stringify(source, null, 2)}\n`);
     writeFileSync(htmlPath, nextHtml);

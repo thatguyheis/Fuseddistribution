@@ -168,7 +168,11 @@ function platformSummary(rows) {
   return result;
 }
 
-export function buildFitnessReport(snapshot, slugByPostId = new Map()) {
+export function buildFitnessReport(snapshot, slugByPostId = new Map(), { now = new Date() } = {}) {
+  const capturedAtMs = Date.parse(snapshot.capturedAt);
+  const snapshotAgeHours = Number.isFinite(capturedAtMs)
+    ? Math.max(0, (now.getTime() - capturedAtMs) / 3_600_000)
+    : null;
   const posts = (snapshot.posts || []).map((post) => ({
     ...post,
     slug: post.slug || slugByPostId.get(post.postId) || null,
@@ -184,6 +188,8 @@ export function buildFitnessReport(snapshot, slugByPostId = new Map()) {
     snapshot: {
       date: snapshot.date,
       capturedAt: snapshot.capturedAt,
+      ageHoursAtReport: snapshotAgeHours === null ? null : Number(snapshotAgeHours.toFixed(2)),
+      ageDaysAtReport: snapshotAgeHours === null ? null : Number((snapshotAgeHours / 24).toFixed(2)),
       source: snapshot.source,
       posts: posts.length,
       maturePosts: rows.length,
@@ -220,6 +226,7 @@ export function markdown(report) {
     '',
     `Generated: ${report.generatedAt}`,
     `Buffer snapshot: ${report.snapshot.date} captured ${report.snapshot.capturedAt}`,
+    `Snapshot age at report: ${report.snapshot.ageHoursAtReport === null ? 'unavailable' : `${report.snapshot.ageHoursAtReport} hours (${report.snapshot.ageDaysAtReport} days)`}`,
     '',
     `- Posts: ${report.snapshot.posts}`,
     `- Mature posts scored: ${report.snapshot.maturePosts}`,

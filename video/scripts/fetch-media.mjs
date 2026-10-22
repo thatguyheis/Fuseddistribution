@@ -1,10 +1,12 @@
+import {registerStockMedia, reuseStockMedia} from './stock-media-library.mjs';
+import {stageOwnedMedia} from './owned-media.mjs';
 /**
  * Fetches media for each segment: Pixabay video → Pexels video → Pixabay photo → Pexels photo.
  * Saves MP4 to public/videos/<slug>/segment-N.mp4 for video entries.
  * Saves JPG to public/photos/<slug>/segment-N.jpg for all entries (thumb for videos).
  * Writes out/<slug>/media.json and a backward-compat out/<slug>/photos.json.
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, statSync, unlinkSync, renameSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, createWriteStream, statSync, unlinkSync, renameSync, copyFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { get as httpsGet } from 'node:https';
@@ -90,12 +92,14 @@ function refineMediaQueriesWithLocalLlm(slug, script, mediaQueries, topic) {
     const fallback = qEntry?.query ?? segmentKeywords(seg, topic);
     return {index, type: seg.type, prefer: qEntry?.prefer ?? 'video', text: seg.text ?? seg.title ?? '', fallback};
   });
+  if (items.every(item => mediaQueries[item.index]?.query)) return {};
   const prompt = `Return only compact JSON mapping segment indexes to stock media search queries. Each query must be 2-6 plain English words, visual, concrete, safe for Pexels/Pixabay, no punctuation. Topic: ${topic}. Slug: ${slug}. Segments: ${JSON.stringify(items)}`;
   const result = spawnSync(helper, [prompt], {
     encoding: 'utf8',
     timeout: Number(process.env.HERMES_MEDIA_QUERY_TIMEOUT_MS || 20000),
     env: {
       ...process.env,
+      HERMES_LOCAL_MODEL: process.env.HERMES_MEDIA_MODEL || process.env.HERMES_LOCAL_MODEL,
       HERMES_LOCAL_MAX_TOKENS: process.env.HERMES_MEDIA_QUERY_MAX_TOKENS || '180',
       HERMES_LOCAL_TIMEOUT: process.env.HERMES_MEDIA_QUERY_HTTP_TIMEOUT || '8',
     },
@@ -123,7 +127,7 @@ function refineMediaQueriesWithLocalLlm(slug, script, mediaQueries, topic) {
 }
 
 export function mediaCacheKey(query, prefer, segmentType) {
-  return JSON.stringify({query, prefer, segmentType});
+  return JSON.stringify({profileVersion: 3, query, prefer, segmentType});
 }
 
 function loadManifest(path) {
@@ -215,11 +219,11 @@ async function fetchPixabayVideo(query, dest, usedIds, apiKey) {
     await downloadFile(small.url, dest);
     if (!existsSync(dest) || statSync(dest).size < 10240) { try { unlinkSync(dest); } catch {} return false; }
     usedIds.add(hit.id);
-    return true;
+    return {provider: 'pixabay', providerId: hit.id, sourceUrl: hit.pageURL, creator: hit.user, licenseUrl: 'https://pixabay.com/service/license-summary/'};
   } catch { return false; }
 }
 
-async function fetchPexelsVideo(query, dest, usedIds, apiKey) {
+export async function fetchPexelsVideo(query, dest, usedIds, apiKey) {
   const q = encodeURIComponent(query);
   const url = `https://api.pexels.com/videos/search?query=${q}&orientation=portrait&per_page=10&size=small`;
   try {
@@ -228,12 +232,13 @@ async function fetchPexelsVideo(query, dest, usedIds, apiKey) {
     const video = data.videos.find(v => !usedIds.has(v.id));
     if (!video) return false;
     const files = video.video_files.filter(f => f.file_type === 'video/mp4');
-    const file = files.sort((a, b) => (a.width ?? 999) - (b.width ?? 999))[0];
+    const sorted = files.sort((a, b) => (a.width ?? 999) - (b.width ?? 999));
+    const file = sorted.find(file => file.width >= 720) ?? sorted.at(-1);
     if (!file) return false;
     await downloadFile(file.link, dest);
     if (!existsSync(dest) || statSync(dest).size < 10240) { try { unlinkSync(dest); } catch {} return false; }
     usedIds.add(video.id);
-    return true;
+    return {provider: 'pexels', providerId: video.id, sourceUrl: video.url, creator: video.user?.name, licenseUrl: 'https://www.pexels.com/license/'};
   } catch { return false; }
 }
 
@@ -248,11 +253,11 @@ async function fetchPixabayPhoto(query, dest, usedIds, apiKey) {
     await downloadFile(hit.largeImageURL, dest);
     if (!existsSync(dest) || statSync(dest).size < 1024) { try { unlinkSync(dest); } catch {} return false; }
     usedIds.add(hit.id);
-    return true;
+    return {provider: 'pixabay', providerId: hit.id, sourceUrl: hit.pageURL, creator: hit.user, licenseUrl: 'https://pixabay.com/service/license-summary/'};
   } catch { return false; }
 }
 
-async function fetchPexelsPhoto(query, dest, usedIds, apiKey) {
+export async function fetchPexelsPhoto(query, dest, usedIds, apiKey) {
   const q = encodeURIComponent(query);
   const url = `https://api.pexels.com/v1/search?query=${q}&orientation=portrait&per_page=15&size=large`;
   try {
@@ -263,7 +268,7 @@ async function fetchPexelsPhoto(query, dest, usedIds, apiKey) {
     await downloadFile(photo.src.large2x ?? photo.src.large, dest);
     if (!existsSync(dest) || statSync(dest).size < 1024) { try { unlinkSync(dest); } catch {} return false; }
     usedIds.add(photo.id);
-    return true;
+    return {provider: 'pexels', providerId: photo.id, sourceUrl: photo.url, creator: photo.photographer, licenseUrl: 'https://www.pexels.com/license/'};
   } catch { return false; }
 }
 
@@ -274,13 +279,15 @@ export async function fetchMedia(slug) {
   const scriptPath = join(videoDir, 'out', slug, 'script.json');
   if (!existsSync(scriptPath)) { console.error(`script.json not found: ${scriptPath}`); return {}; }
   const script = JSON.parse(readFileSync(scriptPath, 'utf8'));
+  const owned=stageOwnedMedia(join(videoDir,'..'),slug,script.segments.length);
+  if(owned && Object.keys(owned).length === script.segments.length){console.log('Using complete reviewed owner layout plan');return owned;}
 
   const photoDir = join(videoDir, 'public', 'photos', slug);
   const clipDir = join(videoDir, 'public', 'videos', slug);
   mkdirSync(photoDir, { recursive: true });
   mkdirSync(clipDir, { recursive: true });
 
-  const media = {};
+  const media = {...(owned || {})};
   const usedVideoIds = new Set();
   const usedPhotoIds = new Set();
   const {queries: mediaQueries, topic} = loadReelData(slug);
@@ -290,7 +297,7 @@ export async function fetchMedia(slug) {
   manifest.segments ??= {};
   const generationMode = generativeMediaMode();
   const backgroundLimit = Math.max(0, Number.parseInt(process.env.GENERATIVE_MEDIA_MAX_SEGMENTS || '2', 10) || 0);
-  const plannedBackgrounds = planGeneratedBackgrounds(script.segments);
+  const plannedBackgrounds = planGeneratedBackgrounds(script.segments.map((segment, index) => owned?.[index] ? {...segment, type: 'evidence'} : segment));
   const generatedBackgroundPlan = {
     newIndex: backgroundLimit >= 1 ? plannedBackgrounds.newIndex : null,
     reuseIndex: backgroundLimit >= 2 ? plannedBackgrounds.reuseIndex : null,
@@ -303,6 +310,7 @@ export async function fetchMedia(slug) {
   }
 
   for (let i = 0; i < script.segments.length; i++) {
+    if (owned?.[i]) continue; // Never replace reviewed evidence with decorative media.
     const seg = script.segments[i];
     const jpgDest = join(photoDir, `segment-${i}.jpg`);
     const mp4Dest = join(clipDir, `segment-${i}.mp4`);
@@ -467,21 +475,29 @@ export async function fetchMedia(slug) {
 
     const hasVideo = validFile(mp4Dest, 10240);
     const hasPhoto = validFile(jpgDest, 1024);
-    if (hasVideo && !skipVideo) {
+    if (hasVideo && !skipVideo && cacheValid && (manifest.segments[i].type === 'video' || /^(pexels|pixabay|local)-video$/.test(manifest.segments[i].source))) {
       const source = cacheValid ? cachedSource(manifest, i, 'local-video') : 'local-video';
       media[i] = { type: 'video', src: videoSrc(slug, i), thumb: hasPhoto ? photoSrc(slug, i) : undefined, source };
-      setManifestSegment(manifest, i, cacheKey, {source: media[i].source, query: rawQuery, prefer});
+      setManifestSegment(manifest, i, cacheKey, {...(cacheValid ? manifest.segments[i] : {}), source: media[i].source, query: rawQuery, prefer});
       console.log(`  ↷  segment-${i} video exists — using local file${cacheValid ? '' : ' (cache refreshed)'}`);
       continue;
     }
-    if (hasPhoto) {
+    if (hasPhoto && (cacheValid || (!pexelsKey && !pixabayKey))) {
       const source = cacheValid ? cachedSource(manifest, i, 'local-photo') : 'local-photo';
       media[i] = { type: 'photo', src: photoSrc(slug, i), source };
-      setManifestSegment(manifest, i, cacheKey, {source: media[i].source, query: rawQuery, prefer});
+      setManifestSegment(manifest, i, cacheKey, {...(cacheValid ? manifest.segments[i] : {}), source: media[i].source, query: rawQuery, prefer});
       console.log(`  ↷  segment-${i} photo exists — using local file${cacheValid ? '' : ' (cache refreshed)'}`);
       continue;
     }
 
+    const backupPhoto = `${jpgDest}.pre-enrichment.jpg`;
+    if (hasPhoto && !existsSync(backupPhoto)) copyFileSync(jpgDest, backupPhoto);
+    const reusable = reuseStockMedia({root: join(videoDir, '..'), query: rawQuery, topic, type: skipVideo ? 'photo' : 'video', destination: skipVideo ? jpgDest : mp4Dest, excludeIds: Object.values(manifest.segments).map(item => item.libraryAssetId)});
+    if (reusable) {
+      media[i] = {type: reusable.type, src: reusable.type === 'video' ? videoSrc(slug, i) : photoSrc(slug, i), source: 'stock-library'};
+      setManifestSegment(manifest, i, cacheKey, {source: 'stock-library', type: reusable.type, query: rawQuery, prefer, libraryAssetId: reusable.id, provenance: reusable});
+      continue;
+    }
     let fetched = false;
     const attempts = [];
 
@@ -492,7 +508,7 @@ export async function fetchMedia(slug) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
         media[i] = { type: 'video', src: videoSrc(slug, i), thumb: validFile(jpgDest, 1024) ? photoSrc(slug, i) : undefined, source: 'pixabay' };
         console.log(`  ✓ segment-${i} video (pixabay): "${rawQuery}"`);
-        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-video', query: rawQuery, prefer, attempts});
+        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-video', query: rawQuery, prefer, attempts, provenance: ok, libraryAssetId: registerStockMedia({root: join(videoDir, '..'), path: mp4Dest, provenance: ok, query: rawQuery, topic, slug, segmentIndex: i, type: 'video'})});
         fetched = true;
       }
     }
@@ -504,7 +520,7 @@ export async function fetchMedia(slug) {
         try { execSync(`ffmpeg -y -ss 1.5 -i "${mp4Dest}" -vframes 1 -q:v 2 "${jpgDest}" 2>/dev/null`); } catch {}
         media[i] = { type: 'video', src: videoSrc(slug, i), thumb: validFile(jpgDest, 1024) ? photoSrc(slug, i) : undefined, source: 'pexels' };
         console.log(`  ✓ segment-${i} video (pexels): "${rawQuery}"`);
-        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-video', query: rawQuery, prefer, attempts});
+        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-video', query: rawQuery, prefer, attempts, provenance: ok, libraryAssetId: registerStockMedia({root: join(videoDir, '..'), path: mp4Dest, provenance: ok, query: rawQuery, topic, slug, segmentIndex: i, type: 'video'})});
         fetched = true;
       }
     }
@@ -515,7 +531,7 @@ export async function fetchMedia(slug) {
       if (ok) {
         media[i] = { type: 'photo', src: photoSrc(slug, i), source: 'pixabay' };
         console.log(`  ✓ segment-${i} photo (pixabay): "${rawQuery}"`);
-        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-photo', query: rawQuery, prefer, attempts});
+        setManifestSegment(manifest, i, cacheKey, {source: 'pixabay-photo', query: rawQuery, prefer, attempts, provenance: ok, libraryAssetId: registerStockMedia({root: join(videoDir, '..'), path: jpgDest, provenance: ok, query: rawQuery, topic, slug, segmentIndex: i, type: 'photo'})});
         fetched = true;
       }
     }
@@ -526,12 +542,18 @@ export async function fetchMedia(slug) {
       if (ok) {
         media[i] = { type: 'photo', src: photoSrc(slug, i), source: 'pexels' };
         console.log(`  ✓ segment-${i} photo (pexels): "${rawQuery}"`);
-        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-photo', query: rawQuery, prefer, attempts});
+        setManifestSegment(manifest, i, cacheKey, {source: 'pexels-photo', query: rawQuery, prefer, attempts, provenance: ok, libraryAssetId: registerStockMedia({root: join(videoDir, '..'), path: jpgDest, provenance: ok, query: rawQuery, topic, slug, segmentIndex: i, type: 'photo'})});
         fetched = true;
       }
     }
 
     if (!fetched) {
+      if (hasPhoto && existsSync(backupPhoto)) copyFileSync(backupPhoto, jpgDest);
+      if (validFile(jpgDest, 1024)) {
+        media[i] = {type: 'photo', src: photoSrc(slug, i), source: 'local-fallback'};
+        setManifestSegment(manifest, i, cacheKey, {source: 'local-fallback', query: rawQuery, prefer, attempts});
+        continue;
+      }
       const fallbackIndexes = listFallbackPhotoIndexes(photoDir, script.segments.length);
       if (fallbackIndexes.length > 0) {
         const fallbackIndex = fallbackIndexes[i % fallbackIndexes.length];

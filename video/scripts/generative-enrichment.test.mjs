@@ -60,6 +60,8 @@ test('seed and cache key are deterministic and react to routed scene changes', (
   const first = enrichmentCacheKey({slug: 'test', index: 0, segment: {type: 'hook', text: 'Email communication'}, topic: 'tech', env});
   const second = enrichmentCacheKey({slug: 'test', index: 0, segment: {type: 'hook', text: 'Local SEO reviews'}, topic: 'tech', env});
   assert.notEqual(first, second);
+  assert.equal(JSON.parse(first).steps, 20);
+  assert.equal(JSON.parse(first).profileVersion, 4);
 });
 
 test('paths can be explicitly configured for headless pipeline use', () => {
@@ -71,4 +73,11 @@ test('paths can be explicitly configured for headless pipeline use', () => {
   assert.equal(paths.dataDir, '/tmp/oga');
   assert.equal(paths.binaryPath, '/tmp/bin/sd-cli');
   assert.equal(paths.modelPath, '/tmp/models/model.safetensors');
+});
+test('coin design episodes use an illustrative art studio rather than fabricated coins', async () => {
+  const {selectBackgroundProfile}=await import('./generative-enrichment.mjs');
+  const profile=selectBackgroundProfile({topic:'silver',segment:{text:'A design with two lives'}});
+  assert.equal(profile.id,'silver-design-studio');
+  assert.match(profile.scene,/no coins/);
+  assert.match(profile.scene,/not a specific historical location/);
 });

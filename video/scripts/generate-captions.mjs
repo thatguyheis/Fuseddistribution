@@ -1,179 +1,92 @@
-/**
- * Generates caption timestamps using whisper-node (whisper.cpp) for frame-accurate
- * word-level timestamps. Falls back to ffprobe-based proportional timing if whisper
- * fails for a segment.
- *
- * Output: out/<slug>/captions.json — Record<segmentIdx, CaptionChunk[]>
- * Each chunk: { text, startSec, endSec } relative to segment audio start (0-based).
- */
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { execSync } from 'node:child_process';
+/** Local Whisper word timestamps, cached by audio, narration and runtime configuration. */
+import {existsSync, readFileSync, writeFileSync, mkdirSync, copyFileSync} from 'node:fs';
+import {join, dirname, resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const REPO = resolve(ROOT, '..');
+const digest = value => createHash('sha256').update(value).digest('hex');
+const json = path => JSON.parse(readFileSync(path,'utf8'));
+const save = (path,value) => writeFileSync(path,JSON.stringify(value,null,2)+'\n');
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
-
-const WHISPER_MAIN = join(ROOT, 'node_modules/whisper-node/lib/whisper.cpp/main');
-const WHISPER_MODEL = join(ROOT, 'node_modules/whisper-node/lib/whisper.cpp/models/ggml-base.en.bin');
-
-function runWhisper(wavPath) {
-  if (!existsSync(WHISPER_MAIN) || !existsSync(WHISPER_MODEL)) return null;
-  try {
-    const out = execSync(
-      `"${WHISPER_MAIN}" -ml 40 -m "${WHISPER_MODEL}" -f "${wavPath}"`,
-      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }
-    );
-    const lines = out.match(/\[[0-9:.]+\s-->\s[0-9:.]+\]\s+\S.*/g);
-    if (!lines?.length) return null;
-    return lines.map(line => {
-      const [ts, ...rest] = line.split(']  ');
-      const [start, end] = ts.slice(1).split(' --> ');
-      return { start, end, speech: rest.join(']  ').trim() };
-    }).filter(r => r.speech);
-  } catch {
-    return null;
+export function captionCacheKey(audio, narration, runtime) {
+  return digest(JSON.stringify({version:3,audio:digest(audio),narration,runtime}));
+}
+export function normalizeWordTimestamps(words) {
+  const result=[];let pending=[];let previousEnd=0;
+  for(const word of words) {
+    if(typeof word.text==='string' && !/[\p{L}\p{N}]/u.test(word.text))continue;
+    if(!word.text?.trim() || !Number.isFinite(word.startSec) || !Number.isFinite(word.endSec) || word.startSec<0 || word.endSec<word.startSec || word.startSec<previousEnd-0.02)throw new Error('Invalid Whisper word timestamps');
+    previousEnd=word.endSec;
+    if(word.endSec===word.startSec){pending.push(word.text.trim());continue;}
+    result.push({...word,text:[...pending,word.text.trim()].join(' ')});pending=[];
   }
-}
-
-function tsToSec(ts) {
-  const [hms, ms] = ts.split('.');
-  const parts = hms.split(':').map(Number);
-  const [h, m, s] = parts.length === 3 ? parts : [0, ...parts];
-  return h * 3600 + m * 60 + s + (ms ? parseInt(ms) / 1000 : 0);
-}
-
-function getAudioDuration(m4aPath) {
-  try {
-    const out = execSync(
-      `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${m4aPath}"`,
-      { encoding: 'utf8' }
-    ).trim();
-    const d = parseFloat(out);
-    return isNaN(d) ? null : d;
-  } catch {
-    return null;
-  }
-}
-
-function splitIntoChunks(text, maxChars = 100) {
-  const sentences = text.match(/[^.!?]+[.!?]*/g) ?? [text];
-  const chunks = [];
-  for (const s of sentences) {
-    const trimmed = s.trim().replace(/^["']+|["']+$/g, '').trim();
-    if (!trimmed) continue;
-    if (trimmed.length <= maxChars) {
-      chunks.push(trimmed);
-    } else {
-      const parts = trimmed.split(/,\s*/);
-      let buf = '';
-      for (const p of parts) {
-        if (buf && (buf + ', ' + p).length > maxChars) {
-          if (buf) chunks.push(buf.trim());
-          buf = p;
-        } else {
-          buf = buf ? buf + ', ' + p : p;
-        }
-      }
-      if (buf.trim()) chunks.push(buf.trim());
-    }
-  }
-  return chunks.filter(Boolean);
-}
-
-function proportionalFallback(narration, actualDuration) {
-  const chunks = splitIntoChunks(narration);
-  if (!chunks.length) return [];
-  const totalChars = chunks.reduce((sum, c) => sum + c.length, 0);
-  const LEAD_SEC = 0.15;
-  let cursor = -LEAD_SEC;
-  const result = chunks.map((text) => {
-    const duration = (text.length / totalChars) * actualDuration;
-    const startSec = Math.max(0, cursor);
-    const endSec = startSec + duration;
-    cursor += duration;
-    return { text, startSec, endSec };
-  });
-  if (result.length) result[result.length - 1].endSec = actualDuration;
+  if(pending.length){if(!result.length)throw new Error('No positive-duration speech timestamps');result.at(-1).text+=' '+pending.join(' ');}
   return result;
 }
-
-export async function generateCaptions(slug) {
-  const scriptPath = join(ROOT, 'out', slug, 'script.json');
-  if (!existsSync(scriptPath)) return {captions: {}, meta: {mode: 'none', whisperSegments: 0, proportionalSegments: 0}};
-
-  const script = JSON.parse(readFileSync(scriptPath, 'utf8'));
-  const audioDir = join(ROOT, 'public/audio', slug);
-  const outDir = join(ROOT, 'out', slug);
-  mkdirSync(outDir, { recursive: true });
-
-  const captions = {};
-  const whisperAvailable = existsSync(WHISPER_MAIN) && existsSync(WHISPER_MODEL);
-  let whisperSegments = 0;
-  let proportionalSegments = 0;
-  let missingAudioSegments = 0;
-
-  if (!whisperAvailable) {
-    console.warn('  ⚠  whisper runtime/model unavailable — captions will use proportional timing');
+export function wordsToCaptions(inputWords) {
+  const words=normalizeWordTimestamps(inputWords);
+  const result=[];let group=[];
+  const flush=()=>{if(group.length)result.push({text:group.map(w=>w.text.trim()).join(' '),startSec:group[0].startSec,endSec:group.at(-1).endSec});group=[];};
+  let previousEnd=0;
+  for(const word of words) {
+    if(typeof word.text==='string' && !/[\p{L}\p{N}]/u.test(word.text))continue;
+    if(!word.text?.trim() || !Number.isFinite(word.startSec) || !Number.isFinite(word.endSec) || word.startSec<0 || word.endSec<=word.startSec || word.startSec<previousEnd-0.02) throw new Error('Invalid Whisper word timestamps');
+    if(group.length && (group.length>=6 || group.map(w=>w.text).join(' ').length+word.text.length>48 || word.startSec-group.at(-1).endSec>0.6))flush();
+    group.push(word);previousEnd=word.endSec;
+    if(/[.!?]$/.test(word.text))flush();
   }
-
-  for (let i = 0; i < script.segments.length; i++) {
-    const seg = script.segments[i];
-    if (!seg.narration) continue;
-
-    const m4aPath = join(audioDir, `segment-${i}.m4a`);
-    if (!existsSync(m4aPath)) { missingAudioSegments++; continue; }
-
-    const actualDuration = getAudioDuration(m4aPath);
-
-    // Convert m4a → wav 16kHz mono (whisper.cpp requires this format)
-    const wavPath = join(outDir, `caption-tmp-${i}.wav`);
-    try {
-      execSync(`ffmpeg -y -i "${m4aPath}" -ar 16000 -ac 1 "${wavPath}" 2>/dev/null`);
-    } catch {
-      console.warn(`  ⚠  caption segment-${i}: ffmpeg wav conversion failed — using proportional fallback`);
-      if (actualDuration) {
-        captions[i] = proportionalFallback(seg.narration, actualDuration);
-        proportionalSegments++;
-      }
-      continue;
-    }
-
-    const result = runWhisper(wavPath);
-    try { execSync(`rm -f "${wavPath}"`); } catch {}
-
-    if (result?.length) {
-      captions[i] = result.map(r => ({
-        text: r.speech.trim(),
-        startSec: tsToSec(r.start),
-        endSec: tsToSec(r.end),
-      })).filter(c => c.text);
-      whisperSegments++;
-      console.log(`  ✓ captions segment-${i}: ${captions[i].length} chunk(s) [whisper]`);
-    } else {
-      if (whisperAvailable) console.warn(`  ⚠  caption segment-${i}: whisper failed — using proportional fallback`);
-      if (actualDuration) {
-        captions[i] = proportionalFallback(seg.narration, actualDuration);
-        proportionalSegments++;
-      }
-    }
-  }
-
-  writeFileSync(join(outDir, 'captions.json'), JSON.stringify(captions, null, 2));
-  const mode = whisperSegments > 0
-    ? (proportionalSegments > 0 ? 'mixed' : 'whisper')
-    : (proportionalSegments > 0 ? 'proportional' : 'none');
-  const meta = {mode, whisperAvailable, whisperSegments, proportionalSegments, missingAudioSegments};
-  writeFileSync(join(outDir, 'captions-meta.json'), JSON.stringify(meta, null, 2));
-  return {captions, meta};
+  flush();return result;
 }
-
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const postArg = process.argv.find(a => a.startsWith('--post='));
-  if (!postArg) { console.error('Usage: node generate-captions.mjs --post=<slug>'); process.exit(1); }
-  const slug = postArg.replace('--post=', '');
-  console.log(`\nGenerating captions for: ${slug}\n`);
-  generateCaptions(slug).then(({captions, meta}) => {
-    console.log(`\nDone. ${Object.keys(captions).length} segment(s) with captions (${meta.mode}).`);
-  });
+export function assertWhisperRuntime(runtimeConfig) {
+  const path=runtimeConfig ? resolve(runtimeConfig) : join(ROOT,'whisper-runtime.json');
+  if(!existsSync(path))throw new Error('Local Whisper configuration missing; see docs/WHISPER-CAPTIONS-SOP.md');
+  const config=json(path);
+  const python=resolve(REPO,config.python),modelPath=resolve(REPO,config.modelPath);
+  if(!existsSync(python)||!['model.bin','config.json','tokenizer.json','vocabulary.txt'].every(name=>existsSync(join(modelPath,name))))throw new Error('Local Whisper executable or model missing; run the documented setup');
+  return {...config,python,modelPath};
+}
+export async function generateCaptions(slug, options={}) {
+  if(!/^[a-z0-9-]+$/.test(slug))throw new Error('Invalid caption slug');
+  const scriptPath=join(ROOT,'out',slug,'script.json');
+  if(!existsSync(scriptPath))throw new Error(`Missing caption script for ${slug}`);
+  const runtime=assertWhisperRuntime(options.runtimeConfig);
+  const script=json(scriptPath),audioDir=join(ROOT,'public/audio',slug);
+  const outDir=options.outputDir ? resolve(options.outputDir) : join(ROOT,'out',slug);
+  const cacheDir=join(ROOT,'local/whisper-captions');mkdirSync(cacheDir,{recursive:true});mkdirSync(outDir,{recursive:true});
+  const jobs=[],records=[];
+  for(const [index,segment] of script.segments.entries()) {
+    if(!segment.narration)continue;
+    const audioPath=join(audioDir,`segment-${index}.m4a`);
+    if(!existsSync(audioPath))throw new Error(`Caption audio missing for segment ${index}`);
+    const key=captionCacheKey(readFileSync(audioPath),segment.narration,runtime);
+    const outputPath=join(cacheDir,`${key}.json`);
+    records.push({index,key,outputPath});
+    let valid=false;
+    if(existsSync(outputPath)){try{valid=wordsToCaptions(json(outputPath).words).length>0;}catch{valid=false;}}
+    if(!valid)jobs.push({index,audioPath,outputPath,narration:segment.narration});
+  }
+  if(!records.length)throw new Error('No narrated segments available for captions');
+  const diagnosticsPath=join(outDir,'whisper-diagnostics.json');
+  if(jobs.length) {
+    const manifestPath=join(outDir,'whisper-jobs.json');save(manifestPath,{runtime,jobs});
+    const run=spawnSync(runtime.python,[join(ROOT,'scripts/transcribe-local.py'),'--manifest',manifestPath],{encoding:'utf8',timeout:600000,maxBuffer:4*1024*1024,env:{...process.env,HF_HUB_OFFLINE:'1',TOKENIZERS_PARALLELISM:'false'}});
+    const diagnostics={ok:run.status===0,engine:runtime.engine,modelRevision:runtime.modelRevision,generatedSegments:jobs.length,stdout:run.stdout?.slice(-10000),stderr:run.stderr?.slice(-10000),error:run.error?.message ?? null};save(diagnosticsPath,diagnostics);
+    if(run.error || run.status!==0)throw new Error(`Local Whisper failed; see ${diagnosticsPath}. ${run.error?.message || run.stderr?.slice(-500) || 'worker failed'}`);
+    console.log(run.stdout.trim());
+  } else save(diagnosticsPath,{ok:true,cachedSegments:records.length,engine:runtime.engine});
+  const captions={};
+  for(const record of records)captions[record.index]=wordsToCaptions(json(record.outputPath).words);
+  const meta={mode:'whisper',engine:runtime.engine,modelRevision:runtime.modelRevision,whisperAvailable:true,whisperSegments:records.length,proportionalSegments:0,missingAudioSegments:0,cachedSegments:records.length-jobs.length,generatedSegments:jobs.length,timing:'recognized-word-timestamps',textReviewRequired:true,audioCacheKeys:Object.fromEntries(records.map(r=>[r.index,r.key]))};
+  // Preserve prior metadata if an existing output is being explicitly regenerated.
+  for(const name of ['captions.json','captions-meta.json'])if(existsSync(join(outDir,name)))copyFileSync(join(outDir,name),join(outDir,`${name}.before-whisper-${Date.now()}`));
+  save(join(outDir,'captions.json'),captions);save(join(outDir,'captions-meta.json'),meta);
+  return {captions,meta};
+}
+if(process.argv[1]===fileURLToPath(import.meta.url)) {
+  const slug=process.argv.find(x=>x.startsWith('--post='))?.slice(7);
+  const outputDir=process.argv.find(x=>x.startsWith('--output-dir='))?.slice(13);
+  if(!slug)throw new Error('Usage: generate-captions.mjs --post=<slug> [--output-dir=<directory>]');
+  generateCaptions(slug,{outputDir,runtimeConfig:process.argv.find(x=>x.startsWith('--runtime-config='))?.slice(17)}).then(({meta})=>console.log(JSON.stringify(meta))).catch(error=>{console.error(error.message);process.exitCode=1;});
 }

@@ -3,6 +3,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, 
 import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { assertCompleteMediaDuration } from './lib/complete-media-duration.mjs';
 import { validateCutdownDuration } from './lib/buffer-video-integrity.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -127,8 +128,6 @@ function transcodeCutdown(input, output, maxDurationSeconds, crf) {
       '-y',
       '-i',
       input,
-      '-t',
-      String(maxDurationSeconds),
       '-c:v',
       'libx264',
       '-preset',
@@ -164,6 +163,7 @@ function main() {
     const sourceDuration = durationSeconds(input);
     const sourceBytes = fileSizeBytes(input);
     if (sourceDuration === null) throw new Error(`Could not read duration for ${input}`);
+    assertCompleteMediaDuration(sourceDuration, args.maxDurationSeconds);
     if (sourceBytes === null) throw new Error(`Could not read size for ${input}`);
 
     rmSync(temporaryOutput, { force: true });

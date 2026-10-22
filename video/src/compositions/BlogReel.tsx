@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, Audio, staticFile, useVideoConfig } from 'remotion';
+import {PresentationScene, type PresentationPlan} from '../components/PresentationScene';
+import { AbsoluteFill, Audio, Img, staticFile, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming, springTiming } from '@remotion/transitions';
 import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
@@ -13,9 +14,12 @@ import { ChartCard } from '../components/ChartCard';
 import { CTACard } from '../components/CTACard';
 import { QuestionCard } from '../components/QuestionCard';
 import { Subtitle } from '../components/Subtitle';
+import { OpeningHero } from '../components/OpeningHero';
 import type { ReelScript, Segment, CaptionChunk, MediaEntry } from '../types';
 import type { StoryboardPlan } from '../storyboard';
 import { PaperCollagePilot } from './PaperCollagePilot';
+import { OwnedMediaSequence } from '../components/OwnedMediaSequence';
+import { MediaFeature } from '../components/MediaFeature';
 import { EditorialDataBoard } from './EditorialDataBoard';
 import {
   compositionFramesForSegments,
@@ -31,10 +35,19 @@ const SegmentCard: React.FC<{
   segmentIndex: number;
   storyboard?: StoryboardPlan;
 }> = ({ segment, mediaEntry, segmentIndex, storyboard }) => {
+  // Reviewed owner layouts already contain the hook, evidence and visual design.
+  // Preserve their exact crop and color instead of covering them with a second card.
+  if (['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(mediaEntry?.source) && mediaEntry.type === 'photo') {
+    return <OwnedMediaSequence media={mediaEntry} />;
+  }
   const storyboardSegment = storyboard?.segments.find((item) => item.segmentIndex === segmentIndex);
+  if (storyboardSegment?.visual === 'media-feature' && mediaEntry) {
+    return <MediaFeature media={mediaEntry} text={'text' in segment ? segment.text : ''} segmentIndex={segmentIndex} />;
+  }
   if (storyboardSegment?.visual === 'paper-collage') {
     return (
       <PaperCollagePilot
+        embedded
         imagePath={storyboardSegment.asset ?? 'paper-collage-pilot/source-still.png'}
         backgroundColor={storyboardSegment.backgroundColor ?? '#315c62'}
         accentColor={storyboardSegment.accentColor ?? '#d8b84c'}
@@ -110,12 +123,14 @@ export const BlogReel: React.FC<{
   media?: MediaMap;
   captions?: CaptionMap;
   storyboard?: StoryboardPlan;
-}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard }) => {
-  const {fps} = useVideoConfig();
+  openingHero?: {src: string};
+  presentation?: PresentationPlan;
+}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard, openingHero, presentation }) => {
+  const {fps, width, durationInFrames} = useVideoConfig();
   const hasMusic = musicTrack && !['none', 'off', 'silent'].includes(musicTrack.toLowerCase());
   return <AbsoluteFill style={{ background: BRAND.bg }}>
-    {hasMusic && <Audio src={staticFile(`music/${musicTrack}`)} volume={musicGain} loop />}
-    <div style={{ width: BRAND.width, height: BRAND.height, transform: `scale(${OUTPUT.width / BRAND.width})`, transformOrigin: 'top left' }}>
+    {hasMusic && <Audio src={staticFile(`music/${musicTrack}`)} volume={frame => presentation ? musicGain * Math.min(1, frame / fps, (durationInFrames - frame) / (fps * 1.5)) : musicGain} loop />}
+    <div style={{ position: 'relative', flexShrink: 0, width: BRAND.width, height: BRAND.height, transform: `scale(${width / BRAND.width})`, transformOrigin: 'top left' }}>
       <TransitionSeries>
       {script.segments.map((segment, i) => {
         const durationInFrames = secsToFrames(segment.endSec - segment.startSec);
@@ -126,15 +141,15 @@ export const BlogReel: React.FC<{
             <TransitionSeries.Sequence durationInFrames={durationInFrames} premountFor={fps}>
               <AbsoluteFill>
                 {segment.narration && (
-                  <Audio src={staticFile(`audio/${script.slug}/segment-${i}.m4a`)} />
+                  <Audio src={staticFile(`audio/${script.slug}/segment-${i}.${presentation ? 'wav' : 'm4a'}`)} />
                 )}
-                <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />
-                {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} />}
+                {presentation?.segments[i] ? <PresentationScene shots={presentation.segments[i]} finalScene={i===script.segments.length-1} /> : <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />}
+                {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} maxFontSize={presentation ? 44 : 28} />}
               </AbsoluteFill>
             </TransitionSeries.Sequence>
             {transition && (
               <TransitionSeries.Transition
-                presentation={transition.presentation}
+                presentation={presentation ? fade() : transition.presentation}
                 timing={transition.timing}
               />
             )}
@@ -143,5 +158,6 @@ export const BlogReel: React.FC<{
       })}
       </TransitionSeries>
     </div>
+    {openingHero && <OpeningHero src={openingHero.src} />}
   </AbsoluteFill>;
 };

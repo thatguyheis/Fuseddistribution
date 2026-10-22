@@ -60,3 +60,28 @@ test('library ranking never crosses topic boundaries to fill a slot', () => {
   });
   assert.deepEqual(ranked, []);
 });
+test('same vertical alone does not make an unrelated background relevant', () => {
+  const result=rankLibraryBackgrounds({assets:[{id:'unrelated',status:'approved-background-only',topic:'tech',sceneId:'tech-local-search',tags:['tech','search']}],topic:'tech',sceneId:'tech-audio',tags:['tech','audio']});
+  assert.deepEqual(result,[]);
+});
+
+test('new generated assets retain source PNG but require matching staged review before reuse', async () => {
+  const {mkdtempSync,writeFileSync,mkdirSync,copyFileSync,existsSync}=await import('node:fs');
+  const {join}=await import('node:path');
+  const {tmpdir}=await import('node:os');
+  const {registerGeneratedBackground,approveGeneratedBackgroundsForReel,loadBackgroundCatalog}=await import('./generated-background-library.mjs');
+  const root=mkdtempSync(join(tmpdir(),'generated-review-'));
+  const env={GENERATIVE_MEDIA_LIBRARY_DIR:join(root,'library')};
+  const photo=join(root,'source.jpg'),png=join(root,'source.png');
+  writeFileSync(photo,Buffer.alloc(11000,1));writeFileSync(png,'raw generation');
+  const asset=registerGeneratedBackground({filePath:photo,metadata:{topic:'tech',sceneId:'tech-audio',tags:['tech','tech-audio'],sourceImage:png},slug:'pilot',segmentIndex:0},env);
+  assert.equal(asset.status,'pending-visual-review');
+  assert.ok(existsSync(join(root,'library/assets',asset.sourceImage)));
+  mkdirSync(join(root,'video/out/pilot'),{recursive:true});mkdirSync(join(root,'video/public/photos/pilot'),{recursive:true});
+  writeFileSync(join(root,'video/out/pilot/media-manifest.json'),JSON.stringify({segments:{0:{libraryAssetId:asset.id}}}));
+  approveGeneratedBackgroundsForReel(root,'pilot',env);
+  assert.equal(loadBackgroundCatalog(env).assets[0].status,'pending-visual-review');
+  copyFileSync(photo,join(root,'video/public/photos/pilot/segment-0.jpg'));
+  approveGeneratedBackgroundsForReel(root,'pilot',env);
+  assert.equal(loadBackgroundCatalog(env).assets[0].status,'approved-background-only');
+});

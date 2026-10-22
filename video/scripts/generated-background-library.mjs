@@ -79,6 +79,7 @@ export function registerGeneratedBackground({filePath, metadata, slug, segmentIn
   mkdirSync(assetsDir, {recursive: true});
   const filename = `${id}.jpg`;
   copyFileSync(filePath, join(assetsDir, filename));
+  if (metadata.sourceImage && existsSync(metadata.sourceImage)) copyFileSync(metadata.sourceImage, join(assetsDir, `${id}.source.png`));
   const createdAt = new Date().toISOString();
   const asset = {
     id,
@@ -89,12 +90,14 @@ export function registerGeneratedBackground({filePath, metadata, slug, segmentIn
     tags: metadata.tags,
     sourceSlug: slug,
     sourceSegment: segmentIndex,
+    prompt: metadata.prompt ?? null,
+    sourceImage: metadata.sourceImage ? `${id}.source.png` : null,
     promptHash: metadata.promptHash,
     seed: metadata.seed,
     model: metadata.model,
     modelLicense: metadata.modelLicense,
     backgroundTreatment: metadata.backgroundTreatment,
-    status: 'approved-background-only',
+    status: 'pending-visual-review',
     createdAt,
     lastUsedAt: null,
     useCount: 0,
@@ -115,6 +118,7 @@ export function rankLibraryBackgrounds({assets, usageHistory = [], topic, sceneI
   return assets.filter((asset) =>
     asset.status === 'approved-background-only'
     && asset.topic === topic
+    && (asset.sceneId === sceneId || (asset.tags || []).some(tag => tag !== topic && tags.includes(tag)))
     && !excluded.has(asset.id)
   )
     .map((asset) => ({
@@ -151,6 +155,7 @@ export function useLibraryBackground({asset, destination, slug, segmentIndex}, e
   const paths = backgroundLibraryPaths(env);
   const source = join(paths.assetsDir, asset.filename);
   if (!existsSync(source)) throw new Error(`library background file is missing: ${source}`);
+  if (fileHash(source) !== asset.sha256) throw new Error('Generated library asset hash changed');
   mkdirSync(dirname(destination), {recursive: true});
   copyFileSync(source, destination);
 
@@ -176,4 +181,21 @@ export function planGeneratedBackgrounds(segments) {
     newIndex: effectiveNewIndex >= 0 ? effectiveNewIndex : null,
     reuseIndex: reuseIndex >= 0 ? reuseIndex : null,
   };
+}
+
+// Promote only the exact staged image used by a reel that passed release review.
+export function approveGeneratedBackgroundsForReel(root, slug, env = process.env) {
+  const manifestPath = join(root, 'video/out', slug, 'media-manifest.json');
+  if (!existsSync(manifestPath)) return;
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+  const catalog = loadBackgroundCatalog(env);
+  for (const [index, scene] of Object.entries(manifest.segments || {})) {
+    const asset = catalog.assets.find(item => item.id === scene.libraryAssetId);
+    const staged = join(root, 'video/public/photos', slug, `segment-${index}.jpg`);
+    if (asset && existsSync(staged) && fileHash(staged) === asset.sha256) {
+      asset.status = 'approved-background-only';
+      asset.reviewedIn = slug;
+    }
+  }
+  saveBackgroundCatalog(catalog, env);
 }

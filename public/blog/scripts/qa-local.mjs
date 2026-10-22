@@ -40,6 +40,7 @@ function validateTextSurface(label, text, blockers, allowedFutureYears = new Set
   // than only the narrow alphanumeric form.
   pushIf(/\[[A-Z][^\]\n]{2,}\]/.test(text), blockers, `${label}: unreplaced bracket placeholder`);
   pushIf(/\bNote:\s*Replace\b/i.test(text), blockers, `${label}: leftover replacement instruction`);
+  pushIf(/\{\s*(?:link|insert|add|contact page)\b[^}]*\}/i.test(text), blockers, `${label}: unresolved brace placeholder`);
   pushIf(/\b(?:REQUIREMENTS:|Output ONLY the markdown article|Claude: apply writing rules|Topic contract is mandatory)\b/i.test(text), blockers, `${label}: model prompt leaked into publishable content`);
   pushIf(/\bHere (?:are|is) (?:six-word|6-word).*(?:alt texts?|options?)\b/i.test(text), blockers, `${label}: model option preamble leaked into publishable content`);
   pushIf(/[—–]/.test(text), blockers, `${label}: contains em/en dash`);
@@ -47,7 +48,9 @@ function validateTextSurface(label, text, blockers, allowedFutureYears = new Set
   // that can be much longer than a year. Validate the rendered text surface
   // for year checks so a URL cannot turn a valid post into a false quality
   // failure, while preserving the check for malformed years in copy.
-  const yearSurface = label === 'index.html' ? textFromHtml(text) : text;
+  const yearSurface = label === 'index.html'
+    ? textFromHtml(text)
+    : text.replace(/https?:\/\/\S+/gi, '[URL]');
   pushIf(/\b(?:19|20|21)\d{3,}\b/.test(yearSurface), blockers, `${label}: suspicious malformed year`);
   const futureYears = [...yearSurface.matchAll(/\b20[3-9]\d\b/g)].map((match) => match[0]);
   pushIf(futureYears.some((year) => !allowedFutureYears.has(year)), blockers, `${label}: future year needs manual source check`);
@@ -326,7 +329,6 @@ function validateCustomGraphic(html, blockers) {
     /class="[^"]*\bmath-box\b/i,
     /class="[^"]*\bcoin-grid\b/i,
     /class="[^"]*\bwatch-list\b/i,
-    /class="[^"]*\bsocial-video\b/i,
   ];
   pushIf(!visualPatterns.some(pattern => pattern.test(html)), blockers, 'custom graphic: none found');
 }

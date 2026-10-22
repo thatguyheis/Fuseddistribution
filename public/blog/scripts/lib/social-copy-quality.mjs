@@ -15,6 +15,9 @@ function stringLeaves(value, path = 'social-copy') {
 
 export function socialCopyQualityIssues(copy) {
   const issues = [];
+  if (copy.cta_cycle && (!Array.isArray(copy.cta_cycle) || copy.cta_cycle.join(',') !== 'reserve,newsletter,engagement' || !copy.cta_cycle.includes(copy.cta_slot))) {
+    issues.push({path: 'social-copy.cta_slot', reason: 'invalid_cta_cycle'});
+  }
   for (const leaf of stringLeaves(copy)) {
     const pattern = META_INSTRUCTION_PATTERNS.find((candidate) => candidate.test(leaf.value));
     if (pattern) issues.push({ path: leaf.path, reason: 'meta_instruction_leak' });

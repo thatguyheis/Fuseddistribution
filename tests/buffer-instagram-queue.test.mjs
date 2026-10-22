@@ -36,7 +36,7 @@ test('Instagram jobs get a fresh scheduled dueAt when applied', () => {
   assert.equal(scheduled.createPostPayload.dueAt, scheduled.dueAt);
 });
 
-test('Instagram planner falls back to verified YouTube checkpoints for catch-up scheduling', () => {
+test('Instagram history requires encoded visual review before catch-up scheduling', () => {
   const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
   const tempDir = mkdtempSync(join(tmpdir(), 'buffer-instagram-queue-'));
   const sourceQueuePath = join(tempDir, 'source-queue.json');
@@ -80,16 +80,14 @@ test('Instagram planner falls back to verified YouTube checkpoints for catch-up 
     assert.equal(result.status, 0, result.stderr || result.stdout);
     const queue = JSON.parse(readFileSync(outPath, 'utf8'));
     assert.equal(queue.source.type, 'youtube_scheduled_log');
-    assert.equal(queue.selected.length, 1);
-    assert.equal(queue.selected[0].slug, 'ai-tools-for-small-business-marketing-in-2026');
-    assert.ok(Date.parse(queue.selected[0].dueAt) > Date.now());
-    assert.equal(queue.selected[0].createPostPayload.dueAt, queue.selected[0].dueAt);
+    assert.equal(queue.selected.length, 0);
+    assert.ok(queue.blocked.some(item => item.slug === 'ai-tools-for-small-business-marketing-in-2026' && item.reason === 'encoded_visual_review_required'));
   } finally {
     rmSync(tempDir, { recursive: true, force: true });
   }
 });
 
-test('Instagram planner merges fresh YouTube candidates with deduplicated verified history', () => {
+test('Instagram planner merges and deduplicates candidates without bypassing visual review', () => {
   const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
   const tempDir = mkdtempSync(join(tmpdir(), 'buffer-instagram-merge-'));
   const sourceQueuePath = join(tempDir, 'source-queue.json');
@@ -97,7 +95,8 @@ test('Instagram planner merges fresh YouTube candidates with deduplicated verifi
   const instagramScheduledLogPath = join(tempDir, 'instagram-scheduled.json');
   const outPath = join(tempDir, 'instagram-queue.json');
   const queuedSlug = 'ai-tools-for-small-business-marketing-in-2026';
-  const historySlug = 'call-to-action-best-practices-for-small-business-websit';
+  // Use a released fixture; the former historical reel now has a release hold.
+  const historySlug = 'how-to-check-redirect-chains-on-a-business-website';
   const mediaUrl = (slug) => `https://cdn.example.com/${slug}.mp4`;
 
   writeFileSync(sourceQueuePath, JSON.stringify({
@@ -129,7 +128,8 @@ test('Instagram planner merges fresh YouTube candidates with deduplicated verifi
     assert.equal(result.status, 0, result.stderr || result.stdout);
     const queue = JSON.parse(readFileSync(outPath, 'utf8'));
     assert.equal(queue.source.type, 'youtube_queue_plus_scheduled_log');
-    assert.deepEqual(queue.selected.map((job) => job.slug), [queuedSlug, historySlug]);
+    assert.equal(queue.selected.length, 0);
+    assert.deepEqual(queue.blocked.filter(item => item.reason === 'encoded_visual_review_required').map(item => item.slug), [queuedSlug, historySlug]);
   } finally {
     rmSync(tempDir, { recursive: true, force: true });
   }

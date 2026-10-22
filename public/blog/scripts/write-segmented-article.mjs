@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readContentPlan } from './lib/content-plan.mjs';
@@ -66,6 +67,7 @@ function callWorker(helper, prompt, maxTokens, timeoutMs) {
     value: result.error || result.status !== 0 ? '' : cleanSegment(result.stdout),
     seconds: Number(((Date.now() - startedAt) / 1000).toFixed(2)),
     exitCode: result.status,
+    failure: result.error?.message || result.stderr?.trim().slice(-500) || '',
   };
 }
 
@@ -80,7 +82,8 @@ function writeWithRetries({ helper, path, prompt, maxTokens, minimum, maximum, f
   const timeoutMs = Number(process.env.SEGMENTED_MODEL_TIMEOUT_MS || 180000);
   let elapsedSeconds = 0;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    const result = callWorker(helper, prompt, maxTokens, timeoutMs);
+    const retryPrompt = attempt === 1 ? prompt : `${prompt}\n\nRETRY CONTRACT: The previous response failed the required length or format check. Return between ${minimum} and ${maximum} words, in 2-4 short paragraphs. Use only the assigned evidence. Do not add names, dates, places, motives, quantities, or process details that are not stated in that evidence. Do not repeat a fact to reach the word target.`;
+    const result = callWorker(helper, retryPrompt, maxTokens, timeoutMs);
     elapsedSeconds += result.seconds;
     if (segmentIsUsable(result.value, minimum, maximum)) {
       writeFileSync(path, `${result.value}\n`);
@@ -89,7 +92,8 @@ function writeWithRetries({ helper, path, prompt, maxTokens, minimum, maximum, f
         telemetry: { resumed: false, attempts: attempt, seconds: Number(elapsedSeconds.toFixed(2)), words: wordCount(result.value) },
       };
     }
-    console.warn(`[segmented-writer] ${basename(path)} attempt ${attempt}/${attempts} failed the segment contract`);
+    const reason = result.failure ? `; worker: ${result.failure}` : '';
+    console.warn(`[segmented-writer] ${basename(path)} attempt ${attempt}/${attempts} failed the segment contract (${wordCount(result.value)} words; required ${minimum}-${maximum}${reason})`);
   }
   throw new Error(`worker did not produce a usable segment: ${path}`);
 }
@@ -108,6 +112,24 @@ function main() {
   const plan = readContentPlan(join(postDir, 'content-plan.json'), args.slug);
   const segmentDir = join(postDir, '.content-segments');
   mkdirSync(segmentDir, { recursive: true });
+  const inputDigest = createHash('sha256')
+    .update(readFileSync(join(postDir, 'content-plan.json')))
+    .update(readFileSync(join(postDir, 'research.json')))
+    .digest('hex');
+  const manifestPath = join(segmentDir, 'input-manifest.json');
+  let forceSegments = args.force;
+  if (!forceSegments && existsSync(manifestPath)) {
+    try {
+      forceSegments = JSON.parse(readFileSync(manifestPath, 'utf8')).inputSha256 !== inputDigest;
+    } catch {
+      forceSegments = true;
+    }
+  } else if (!existsSync(manifestPath)) {
+    forceSegments = true;
+  }
+  if (forceSegments && !args.force) {
+    console.warn('[segmented-writer] plan or research changed; regenerating stale saved segments');
+  }
   const headings = plan.sections.map((section) => section.heading).join(' | ');
   const stats = researchStats(join(postDir, 'research.json'));
   const statsByClaim = new Map(stats.map((stat) => [stat.claim, stat]));
@@ -118,7 +140,10 @@ function main() {
   if (stats.length >= 3 && plannedClaims.length < 3) {
     throw new Error('content plan must assign at least three exact research claims across its sections');
   }
-  const common = `Article title: ${plan.title}\nReader promise: ${plan.readerPromise}\nAll section headings: ${headings}\nBrand: ${plan.brand}`;
+  const priorQaFeedback = plan.qaFeedback
+    ? `\nPrevious QA feedback, which this revision must fix: ${JSON.stringify(plan.qaFeedback.blockers || [])}\nRewrite the affected content. Do not just paraphrase the same failed paragraph.`
+    : '';
+  const common = `Article title: ${plan.title}\nReader promise: ${plan.readerPromise}\nAll section headings: ${headings}\nBrand: ${plan.brand}\nFactual discipline: use only the supplied source claims. Do not infer motives, emotional states, causes, prices, popularity, value, scarcity, or institutional intent unless a supplied claim states it.${priorQaFeedback}`;
 
   const openingResult = writeWithRetries({
     helper: args.helper,
@@ -126,8 +151,8 @@ function main() {
     maxTokens: 320,
     minimum: 150,
     maximum: 240,
-    force: args.force,
-    prompt: `You are one writing sub-agent. Write only the opening paragraphs for this article.\n\n${common}\n\nRequirements:\n- 170-220 words.\n- Answer the reader promise in the first paragraph.\n- Preview the specific route through the article without listing every heading.\n- No heading, preamble, code fence, placeholders, em dash, or conclusion label.\n- Use second person and plain language.\n- Do not introduce named sources, statistics, prices, or unsupported numbers.`,
+    force: forceSegments,
+    prompt: `Write only the opening paragraphs for this sourced history article.\n\n${common}\n\nVerified facts available for this article:\n${stats.map((stat) => `- ${stat.statement || stat.claim} (Source: ${stat.source_name})`).join('\n')}\n\nRequirements:\n- 170-220 words.\n- Answer the reader promise in the first paragraph and preview the documented history.\n- Use a focused hook. Do not summarize every section or repeat its dates, numbers, or details. Use at most one specific date or quantity in the opening.\n- This is historical storytelling, not consumer advice. Use clear third-person narration.\n- No heading, preamble, code fence, placeholders, em dash, or conclusion label.\n- Do not add names, dates, places, motives, quantities, or events unless they appear in the verified facts above. Do not infer an undocumented cause.\n- Do not repeat a fact to reach the word target. Prefer plain, short context to unsourced drama.`,
   });
   const opening = openingResult.value;
 
@@ -137,29 +162,36 @@ function main() {
     const keyPoints = section.keyPoints.map((point) => `- ${point}`).join('\n');
     const sectionStats = (section.evidenceClaims || []).map((claim) => {
       const stat = statsByClaim.get(claim);
-      return `- ${stat.claim} (Source: ${stat.source_name})`;
+      return `- ${stat.statement || stat.claim} (Source: ${stat.source_name})`;
     });
     const evidence = sectionStats.length
       ? sectionStats.join('\n')
       : 'No sourced facts are assigned to this section.';
-    const prompt = `You are one writing sub-agent responsible for exactly one article section.\n\n${common}\n\nYour section:\nHeading: ${section.heading}\nReader question: ${section.readerQuestion}\nPurpose: ${section.purpose}\nRequired points:\n${keyPoints}\nAssigned sourced facts:\n${evidence}\nTarget length: ${section.targetWords} words.\n\nRequirements:\n- Write 2-4 short paragraphs and no heading.\n- Answer only this section's reader question. Do not repeat the jobs assigned to other headings.\n- Include specific, actionable guidance.\n- Use second person and plain language.\n- No preamble, code fence, placeholders, em dash, filler conclusion, or generic summary.\n- Use only assigned sourced facts. If none are assigned, make no named-source, statistical, price, or unsupported numeric claim.`;
+    const reservedClaims = plan.sections.filter((other) => other.id !== section.id)
+      .flatMap((other) => (other.evidenceClaims || []).map((claim) => {
+        const stat = statsByClaim.get(claim);
+        return `- ${other.heading}: ${stat?.statement || claim}`;
+      }));
+    const prompt = `Write exactly one section for this sourced history article.\n\n${common}\n\nYour section:\nHeading: ${section.heading}\nReader question: ${section.readerQuestion}\nPurpose: ${section.purpose}\nRequired points:\n${keyPoints}\nAssigned sourced facts:\n${evidence}\nFacts reserved for other headings; do not repeat them here:\n${reservedClaims.join('\n')}\nTarget length: ${section.targetWords} words.\n\nRequirements:\n- Write 2-4 short paragraphs and no heading.\n- Answer only this section's historical question. Do not repeat the jobs assigned to other headings.\n- Explain how the assigned fact or facts answer the question; keep historical context specific.\n- Use clear third-person narration and plain language.\n- No preamble, code fence, placeholders, em dash, filler conclusion, or generic summary.\n- Use only assigned sourced facts. Do not add names, dates, places, motives, causes, quantities, or events unless stated in the assigned evidence. If no evidence is assigned, write only a brief transition grounded in facts established earlier. Do not invent material to reach the target length.`;
     const sectionResult = writeWithRetries({
       helper: args.helper,
       path: join(segmentDir, `${section.id}.md`),
       prompt,
       maxTokens: 340,
-      minimum: Math.max(120, section.targetWords - 10),
+    minimum: Math.max(80, section.targetWords - (plan.editorialProfile === 'coin-history' ? 50 : 30)),
       maximum: Math.min(220, section.targetWords + 35),
-      force: args.force,
+      force: forceSegments,
     });
     sectionBodies.set(section.id, sectionResult.value);
     telemetry.sections[section.id] = sectionResult.telemetry;
   }
 
   const article = assembleArticle(plan, opening, sectionBodies);
-  if (wordCount(article) < 1100) throw new Error(`assembled article is undersized: ${wordCount(article)} words`);
+  const minimumArticleWords = plan.editorialProfile === 'coin-history' ? 550 : 800;
+  if (wordCount(article) < minimumArticleWords) throw new Error(`assembled article is undersized: ${wordCount(article)} words; minimum ${minimumArticleWords}`);
   const output = join(postDir, 'verified.md');
   writeFileSync(output, article);
+  writeFileSync(manifestPath, `${JSON.stringify({ version: 1, inputSha256: inputDigest, updatedAt: new Date().toISOString() }, null, 2)}\n`);
 
   const sanitizer = spawnSync('python3', [join(scriptDir, 'sanitize-draft.py'), output], { stdio: 'inherit' });
   if (sanitizer.status !== 0) throw new Error('deterministic draft sanitizer failed');

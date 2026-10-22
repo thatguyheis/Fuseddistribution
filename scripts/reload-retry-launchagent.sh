@@ -69,6 +69,23 @@ while kill -0 "$WAIT_PID" 2>/dev/null; do
   sleep 1
 done
 
+# A newer publisher may have replaced this shared plist while we waited.
+# Never reload it repeatedly expecting the older date/time.
+if ! python3 - "$PLIST" "$EXPECTED_DATE" "$EXPECTED_HOUR" "$EXPECTED_MINUTE" <<'PYPLIST'
+import plistlib, sys
+with open(sys.argv[1], 'rb') as handle:
+    value = plistlib.load(handle)
+calendar = value.get('StartCalendarInterval', {})
+valid = (value.get('EnvironmentVariables', {}).get('BLOG_RUN_DATE') == sys.argv[2]
+         and calendar.get('Hour') == int(sys.argv[3])
+         and calendar.get('Minute') == int(sys.argv[4]))
+sys.exit(0 if valid else 1)
+PYPLIST
+then
+  echo "RETRY RELOAD SUPERSEDED: newer date/time owns the plist; no mutation" >> "$LOG_FILE"
+  exit 0
+fi
+
 attempt=1
 while (( attempt <= 3 )); do
   launchctl bootout "gui/$(id -u)/${LABEL}" >> "$LOG_FILE" 2>&1 || true

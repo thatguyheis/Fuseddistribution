@@ -4,6 +4,8 @@ import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.mjs';
+import {assertVisualReview} from '../../../video/scripts/lib/visual-review.mjs';
+import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
@@ -20,7 +22,7 @@ const X_CHANNEL_ID = '6a3e73fb5ab6d2f10674b516';
 const X_CHANNEL_NAME = 'thatguyheis';
 const DEFAULT_LIMIT = 10;
 const DEFAULT_RESERVE_SLOTS = 1;
-const DEFAULT_PLATFORM_COUNT = 3;
+const DEFAULT_PLATFORM_COUNT = 1;
 const DEFAULT_MAX_DURATION_SECONDS = 140;
 const DEFAULT_TARGET_CUTDOWN_SECONDS = 135;
 const MAX_CLOUDFLARE_ASSET_BYTES = 25 * 1024 * 1024;
@@ -40,10 +42,10 @@ function usage() {
 Plans X video posts for Buffer API scheduling.
 
 Options:
-  --current-scheduled=N          Current scheduled/sending posts across the Buffer org. Required.
+  --current-scheduled=N          Current scheduled/sending posts on this channel. Required.
   --limit=N                      Buffer scheduled post limit. Default: 10.
-  --reserve-slots=N              Slots left as organization-wide safety headroom. Default: 1.
-  --platform-count=N             Platforms sharing capacity. Default: 3.
+  --reserve-slots=N              Slots left as per-channel safety headroom. Default: 1.
+  --platform-count=N             Legacy option; capacity is per channel. Default: 1.
   --max-posts=N                  Cap selected jobs at this channel's daily deficit.
   --max-duration-seconds=N       Maximum X video duration. Default: 140.
   --target-cutdown-seconds=N     Expected generated cutdown duration. Default: 135.
@@ -480,6 +482,17 @@ async function main() {
 
     if (scheduledSlugs.has(slug)) {
       skipped.push({ slug, reason: 'already_scheduled' });
+      continue;
+    }
+
+    try { assertVisualReview(repoRoot,slug); } catch(error) {
+      blocked.push({slug:slug,reason:'encoded_visual_review_required',detail:error.message});
+      continue;
+    }
+    try {
+      assertRenderedReelAudioCleared(slug, { repoRoot });
+    } catch (error) {
+      blocked.push({ slug, reason: 'source_render_audio_rights_blocked', detail: error.message });
       continue;
     }
 

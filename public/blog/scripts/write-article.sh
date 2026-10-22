@@ -50,7 +50,7 @@ else
 fi
 
 if [[ "$BRAND" == "silver" ]]; then
-  BRAND_VOICE="Silver and precious metals investing. Fused Distribution sells silver. First-person business voice (\"we stock\", \"we recommend\"). Audience: US retail buyers, beginner to intermediate investors."
+  BRAND_VOICE="Educational silver buying information for US retail readers. Do not claim Fused stocks a product, offers a price, or provides a service unless a verified business source explicitly establishes it. Do not promise returns or financial security."
 else
   BRAND_VOICE="Local business marketing and web design. Fused Distribution builds websites and runs SEO for small local businesses. First-person business voice. Audience: US small business owners, non-technical."
 fi
@@ -136,8 +136,8 @@ REQUIREMENTS:
 - Answer-first opening: lead with the most useful information, not context-setting
 - H2 headings that deliver on the title promise (no generic headings like "Introduction")
 - Every H2 section must have unique content — no repeated sentences or paragraphs across sections
-- Include at least 3 of the sourced stats above, cited inline
-- Of the stats you include, at least 3 must be COMPARABLE and SAME-UNIT (all percentages, or all dollar amounts) so the automated chart stage can turn them into a bar chart; quote each value exactly as given (no rounding, no reformatting)
+- Use only supplied verified statistics, cited inline. If none are supplied, omit statistics and current price quotes entirely. Never invent an insurance cost, return forecast, dealer quote, or product feature.
+- A chart is optional. Use comparable same-unit sourced values only when the supplied research actually contains them. Never invent or alter values to create a chart.
 - Never attribute a number, statistic, or claim to a named organization, study, platform, or publication unless it appears in the SOURCED STATS list above; if that list is empty, make no named-source claims at all (no "According to X", no "(Source: X)", no "X data shows")
 - Specific, actionable advice (scripts, numbers, timing, exact steps — not vague guidance)
 - Short sentences, varied length, plain language

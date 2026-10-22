@@ -8,6 +8,8 @@
     "test": "node --test scripts/*.test.mjs",
     "audio-rights": "node scripts/audit-audio-rights.mjs",
     "release": "node scripts/release-reel.mjs",
+    "pilot:paper-collage": "node scripts/paper-collage-pilot.mjs",
+    "pilot:storyboard": "node scripts/storyboard-preview.mjs",
     "music:ace": "node scripts/generate-ace-music.mjs",
     "music:register": "node scripts/register-music-track.mjs"
   },

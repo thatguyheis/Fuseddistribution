@@ -1,31 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { assertScheduledCapacity, calculatePlatformCapacity } from '../public/blog/scripts/lib/buffer-capacity.mjs';
+import { assertScheduledCapacity, calculatePlatformCapacity, channelScheduledCount, BUFFER_CHANNEL_QUEUE_TARGET } from '../public/blog/scripts/lib/buffer-capacity.mjs';
 import { nextScheduleDates } from '../public/blog/scripts/prepare-buffer-youtube-queue.mjs';
 import { validateCutdownDuration } from '../public/blog/scripts/lib/buffer-video-integrity.mjs';
 
-test('three-platform allocation cannot exceed the ten-post organization cap', () => {
+test('each channel has nine usable slots regardless of other platform count', () => {
   const allocation = calculatePlatformCapacity({
     limit: 10,
     currentScheduled: 0,
     reserveSlots: 1,
     platformCount: 3,
   });
-  assert.equal(allocation.perPlatformCapacity, 3);
-  assert.ok(allocation.perPlatformCapacity * 3 + 1 <= 10);
+  assert.equal(allocation.perPlatformCapacity, 9);
 });
 
-test('existing posts reduce all platform allocations from the same snapshot', () => {
+test('existing posts reduce only the target channel allocation', () => {
   const allocation = calculatePlatformCapacity({
     limit: 10,
     currentScheduled: 4,
     reserveSlots: 1,
     platformCount: 3,
   });
-  assert.equal(allocation.perPlatformCapacity, 1);
+  assert.equal(allocation.perPlatformCapacity, 5);
 });
 
-test('live executor blocks the tenth create attempt', () => {
+test('provider cap permits the tenth post but blocks an eleventh', () => {
   assert.doesNotThrow(() => assertScheduledCapacity(9));
   assert.throws(() => assertScheduledCapacity(10), /cap reached \(10\/10\)/);
 });
@@ -65,4 +64,18 @@ test('X queue integrity separates the 135-second cut target from the 140-second 
   assert.equal(result.ok, true);
   assert.equal(result.reason, null);
   assert.equal(result.minimumDuration, 134);
+});
+
+ test('a full channel does not block another, and policy allows ten slots per user instruction', () => {
+  const posts = [
+    ...Array.from({length: 10}, () => ({channelId: 'youtube', status: 'scheduled'})),
+    {channelId: 'instagram', status: 'sending'},
+    {channelId: 'instagram', status: 'sent'},
+  ];
+  assert.equal(channelScheduledCount(posts, 'instagram'), 1);
+  assert.doesNotThrow(() => assertScheduledCapacity(channelScheduledCount(posts, 'instagram'), BUFFER_CHANNEL_QUEUE_TARGET));
+  assert.throws(() => assertScheduledCapacity(channelScheduledCount(posts, 'youtube'), BUFFER_CHANNEL_QUEUE_TARGET));
+  assert.doesNotThrow(() => assertScheduledCapacity(8, BUFFER_CHANNEL_QUEUE_TARGET));
+  assert.doesNotThrow(() => assertScheduledCapacity(9, BUFFER_CHANNEL_QUEUE_TARGET));
+  assert.throws(() => assertScheduledCapacity(10, BUFFER_CHANNEL_QUEUE_TARGET));
 });

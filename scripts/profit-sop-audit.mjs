@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync, readdirSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeOperatingDate } from './lib/operating-date.mjs';
+import { auditPublishing } from './lib/publishing-health.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const systemRoot = join(repoRoot, 'ops', 'profit-system');
@@ -191,7 +192,7 @@ export function buildLeadingIndicatorAudit(date, snapshots, config) {
   };
 }
 
-export function evaluateBlogPublicationState({ date, queue, pending, completeExists, registeredSlugs = [] }) {
+export function evaluateBlogPublicationState({ date, queue, pending, completeExists, registeredSlugs = [], publicationEvidence }) {
   const expectedSlugs = Array.isArray(queue?.posts)
     ? queue.posts.map((post) => post?.slug).filter(Boolean)
     : [];
@@ -208,6 +209,15 @@ export function evaluateBlogPublicationState({ date, queue, pending, completeExi
   const missingRegisteredSlugs = expectedSlugs.filter((slug) => !registeredSet.has(slug));
   const unaccountedQueueSlugs = expectedSlugs.filter((slug) => !registeredSet.has(slug) && !blockedSet.has(slug));
   const hardStops = [];
+  if (publicationEvidence !== undefined && (!publicationEvidence || publicationEvidence.missing.length || publicationEvidence.fresh < publicationEvidence.expected || !publicationEvidence.fresh)) {
+    hardStops.push({
+      type: 'unverified_fresh_publication',
+      fingerprint: `blog-fresh-output-${date}`,
+      evidence: publicationEvidence
+        ? `${date}: ${publicationEvidence.fresh}/${publicationEvidence.expected} fresh artifact-complete articles; recycled topics: ${publicationEvidence.duplicateTopics.join(', ') || 'none'}; missing artifacts: ${publicationEvidence.missing.join(', ') || 'none'}.`
+        : `${date}: no dated publication queue exists. Catalog registration and completion markers cannot establish daily output.`,
+    });
+  }
   if (pendingRemaining.length) {
     hardStops.push({
       type: 'incomplete_blog_checkpoint',
@@ -255,6 +265,8 @@ export function evaluateReelReleaseState({ registeredSlugs = [], releaseQaBySlug
     const releaseQa = releaseQaBySlug[slug];
     if (!releaseQa) {
       missingReleaseQaSlugs.push(slug);
+    } else if (releaseQa.sourceFresh === false) {
+      otherNotReadySlugs.push(slug);
     } else if (releaseQa.readyForPosting === true) {
       readyForPostingSlugs.push(slug);
     } else if (releaseQa.manualCaptionReview !== true) {
@@ -297,6 +309,21 @@ export function buildOperationalPenaltyEvents({ date, operationalState = {}, exi
       notes: 'Recorded automatically from the dated blocked-work checkpoint to keep quality failures in the profit ledger.',
     });
   }
+  const missingReleaseQaSlugs = operationalState.reelRelease?.missingReleaseQaSlugs || [];
+  if (missingReleaseQaSlugs.length) {
+    addIfNew({
+      occurredAt,
+      date,
+      kind: 'penalty',
+      type: 'missed_checkpoint',
+      fingerprint: 'reel-release-qa-missing',
+      value: missingReleaseQaSlugs.length,
+      evidence: `The ${date} registered reel queue has ${missingReleaseQaSlugs.length} slug(s) without release-qa.json: ${missingReleaseQaSlugs.join(', ')}. They remain ineligible for distribution.`,
+      source: 'local_checkpoint',
+      attributable: true,
+      notes: 'Recorded automatically from the dated reel-release checkpoint so missing release QA is visible in the profit ledger without changing release or publishing authority.',
+    });
+  }
   if (operationalState.bufferMetrics?.status === 'unavailable') {
     addIfNew({
       occurredAt,
@@ -337,9 +364,19 @@ function readOperationalState(date) {
     pending,
     completeExists,
     registeredSlugs,
+    publicationEvidence: auditPublishing(repoRoot, { startDate: date, today: date }).dates.find(day => day.date === date) || null,
   });
-  const releaseQaBySlug = Object.fromEntries(blogPublication.registeredQueueSlugs
-    .map((slug) => [slug, readJsonIfExists(join(reelOutputRoot, slug, 'release-qa.json'))]));
+  const releaseQaBySlug = Object.fromEntries(blogPublication.registeredQueueSlugs.map(slug => {
+    const qa = readJsonIfExists(join(reelOutputRoot, slug, 'release-qa.json'));
+    if (!qa) return [slug, qa];
+    const meta = readJsonIfExists(join(reelOutputRoot, slug, 'render-meta.json'));
+    let sourceFresh = false;
+    try {
+      sourceFresh = statSync(join(repoRoot, 'public/blog', slug, 'reel-script.md')).mtimeMs <= Date.parse(meta?.renderedAt || '')
+        && statSync(join(reelOutputRoot, slug, `${slug}.mp4`)).size > 0;
+    } catch { /* Missing current media cannot inherit an old QA pass. */ }
+    return [slug, { ...qa, sourceFresh }];
+  }));
   const availableMetrics = readJsonIfExists(join(bufferMetricsRoot, `${date}.json`));
   const unavailableMetrics = readJsonIfExists(join(bufferMetricsRoot, `${date}.unavailable.json`));
   const usableMetrics = isUsableBufferSnapshot(availableMetrics, date);
@@ -453,7 +490,7 @@ export function markdownReport(audit) {
     `- Rewards: **${audit.rewards.length}**`,
     `- Penalties: **${audit.penalties.length}**`,
     `- Hard stops: **${audit.hardStops.length}**`,
-    `- Completion status: **${audit.operationalState?.blogPublication?.completionStatus || 'unknown'}**`,
+    `- Blog completion status: **${audit.operationalState?.blogPublication?.completionStatus || 'unknown'}**`,
     '',
     '## Reward Evidence',
     '',

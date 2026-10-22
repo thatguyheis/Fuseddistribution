@@ -5,6 +5,7 @@ import { isHttpsUrl, verifyPublicMp4Url } from './lib/buffer-media-verification.
 
 const DEFAULT_TIMEOUT_MS = 15_000;
 const DEFAULT_MAX_BYTES = 25 * 1024 * 1024;
+const DEFAULT_MAX_DURATION_SECONDS = 175;
 
 function usage() {
   console.error(`Usage: node public/blog/scripts/verify-buffer-media-urls.mjs [options]
@@ -16,6 +17,7 @@ Options:
   --media-map=path               JSON map of slug to URL. Supports { "slug": "url" } and { "videos": ... }.
   --slugs=a,b,c                  Slugs to verify from --media-map. Defaults to every map entry.
   --max-bytes=N                  Maximum allowed media size. Default: 26214400.
+  --max-duration-seconds=N       Maximum allowed manifest duration. Default: 175.
   --timeout-ms=N                 Request timeout. Default: 15000.
 
 Examples:
@@ -36,6 +38,7 @@ function parseArgs(argv) {
     mediaMap: '',
     slugs: [],
     maxBytes: DEFAULT_MAX_BYTES,
+    maxDurationSeconds: DEFAULT_MAX_DURATION_SECONDS,
     timeoutMs: DEFAULT_TIMEOUT_MS,
   };
 
@@ -44,6 +47,7 @@ function parseArgs(argv) {
     else if (arg.startsWith('--media-map=')) args.mediaMap = resolve(arg.slice('--media-map='.length));
     else if (arg.startsWith('--slugs=')) args.slugs = arg.slice('--slugs='.length).split(',').map((slug) => slug.trim()).filter(Boolean);
     else if (arg.startsWith('--max-bytes=')) args.maxBytes = parsePositiveInt(arg.slice('--max-bytes='.length), '--max-bytes');
+    else if (arg.startsWith('--max-duration-seconds=')) args.maxDurationSeconds = parsePositiveInt(arg.slice('--max-duration-seconds='.length), '--max-duration-seconds');
     else if (arg.startsWith('--timeout-ms=')) args.timeoutMs = parsePositiveInt(arg.slice('--timeout-ms='.length), '--timeout-ms');
     else usage();
   }
@@ -81,7 +85,13 @@ function targetsFromArgs(args) {
   const mediaMap = readMediaMap(args.mediaMap);
   const slugs = args.slugs.length ? args.slugs : Object.keys(mediaMap);
   for (const slug of slugs) {
-    targets.push({ label: slug, url: mediaUrlFromValue(mediaMap[slug]) });
+    const value = mediaMap[slug];
+    targets.push({
+      label: slug,
+      url: mediaUrlFromValue(value),
+      durationSeconds: typeof value === 'object' ? Number(value.outputDurationSeconds ?? value.durationSeconds) : null,
+      expectedBytes: typeof value === 'object' ? Number(value.outputBytes) : null,
+    });
   }
   return targets;
 }
@@ -96,6 +106,27 @@ async function verifyUrl(target, args) {
     maxBytes: args.maxBytes,
     timeoutMs: args.timeoutMs,
   });
+  if (Number.isFinite(target.durationSeconds) && target.durationSeconds > args.maxDurationSeconds) {
+    return {
+      label,
+      ...result,
+      url,
+      ok: false,
+      reason: 'media_too_long',
+      durationSeconds: target.durationSeconds,
+      maxDurationSeconds: args.maxDurationSeconds,
+    };
+  }
+  if (Number.isFinite(target.expectedBytes) && Number.isFinite(result.bytes) && target.expectedBytes !== result.bytes) {
+    return {
+      label,
+      ...result,
+      url,
+      ok: false,
+      reason: 'public_media_manifest_mismatch',
+      expectedBytes: target.expectedBytes,
+    };
+  }
   return { label, ...result };
 }
 
@@ -107,6 +138,8 @@ function printResult(result) {
     result.status ? `status=${result.status}` : '',
     result.contentType ? `content-type=${result.contentType}` : '',
     Number.isFinite(result.bytes) ? `bytes=${result.bytes}` : '',
+    Number.isFinite(result.durationSeconds) ? `duration=${result.durationSeconds}s` : '',
+    Number.isFinite(result.expectedBytes) ? `expected-bytes=${result.expectedBytes}` : '',
     result.detail ? `detail=${result.detail}` : '',
     result.url,
   ].filter(Boolean);

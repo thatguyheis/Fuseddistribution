@@ -1,0 +1,16 @@
+{
+  "engine": "faster-whisper",
+  "packageVersion": "1.2.1",
+  "python": ".local-tools/whisper-venv/bin/python",
+  "modelPath": ".model-cache/whisper-base-en",
+  "modelRepository": "Systran/faster-whisper-base.en",
+  "modelRevision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "device": "cpu",
+  "computeType": "int8",
+  "cpuThreads": 4,
+  "beamSize": 5,
+  "wordTimestamps": true,
+  "language": "en",
+  "vadFilter": true,
+  "narrationPrompt": false
+}

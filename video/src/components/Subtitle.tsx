@@ -29,7 +29,7 @@ function splitSentences(text: string): string[] {
   return out.filter(Boolean);
 }
 
-export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[] }> = ({ narration, captions }) => {
+export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[]; maxFontSize?: number }> = ({ narration, captions, maxFontSize = 28 }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
 
@@ -99,7 +99,7 @@ export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[] }
         text={sentence}
         fontFamily={POPPINS}
         fontWeight={600}
-        maxFontSize={28}
+        maxFontSize={maxFontSize}
         maxLines={3}
         maxWidth={920}
         lineHeight={1.5}

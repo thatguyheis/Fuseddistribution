@@ -19,6 +19,7 @@ export type PaperCollagePilotProps = {
   label: string;
   message?: string;
   audioPath?: string;
+  embedded?: boolean;
 };
 
 const PaperPiece: React.FC<{
@@ -72,6 +73,7 @@ export const PaperCollagePilot: React.FC<PaperCollagePilotProps> = ({
   label,
   message = 'HISTORICAL VALUE',
   audioPath,
+  embedded = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -83,7 +85,7 @@ export const PaperCollagePilot: React.FC<PaperCollagePilotProps> = ({
   return (
     <AbsoluteFill style={{ backgroundColor, overflow: 'hidden' }}>
       {audioPath && <Audio src={staticFile(audioPath)} />}
-      <div style={{ width: BRAND.width, height: BRAND.height, transform: `scale(${OUTPUT.width / BRAND.width})`, transformOrigin: 'top left' }}>
+      <div style={{ position: 'relative', flexShrink: 0, width: BRAND.width, height: BRAND.height, transform: `scale(${embedded ? 1 : OUTPUT.width / BRAND.width})`, transformOrigin: 'top left' }}>
       <AbsoluteFill
         style={{
           opacity: grainOpacity,
@@ -96,7 +98,7 @@ export const PaperCollagePilot: React.FC<PaperCollagePilotProps> = ({
           <div style={{ width: 900, height: 720 }} />
         </PaperPiece>
         <PaperPiece from={8} duration={12} x={180} y={270} rotate={3} color="#d86b3f" scale={0.94}>
-          <Img src={staticFile(imagePath)} style={{ display: 'block', width: 720, height: 720, objectFit: 'cover', filter: 'grayscale(1) contrast(1.25)' }} />
+          <Img src={staticFile(imagePath)} style={{ display: 'block', width: 720, height: 720, objectFit: 'contain', backgroundColor: BRAND.bg, filter: 'grayscale(1) contrast(1.25)' }} />
         </PaperPiece>
         <PaperPiece from={18} duration={13} x={170} y={930} rotate={-5} color={accentColor} scale={0.82}>
           <div style={{ width: 740, height: 270, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#101b22', fontFamily: 'Arial, sans-serif', fontWeight: 800, fontSize: 52, letterSpacing: 2, textAlign: 'center' }}>

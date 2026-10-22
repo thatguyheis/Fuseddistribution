@@ -31,7 +31,7 @@ g() {
 HOOK=$(g "From this article, write ONE punchy hook line (max 14 words) using the strongest number or claim. No quotes, no hashtags, one line only:
 
 $BODY" 60)
-DQ=$(g "Write ONE short opinion-inviting question (max 16 words) to close a social caption for this article. One line, no quotes:
+DQ=$(g "Write ONE topic-specific identity or two-sided debate question (max 16 words). Name the actual topic and invite a preference or reason. No generic what-do-you-think, homework prompt, invented premise, or blanket financial advice. One line, no quotes:
 
 $BODY" 50)
 
@@ -57,7 +57,9 @@ out = {
     "hook": hook,
     "hook_type": ht,
     "key_stat": {"value": value, "label": label},
-    "discussion_question": os.environ["DQ"].strip() or "What's your take?",
+    "discussion_question": os.environ["DQ"].strip(),
+    "engagement_type": "debate",
+    "content_kind": "educate",
     "hashtags": os.environ["HASHTAGS"],
 }
 open(os.environ["OUT"], "w").write(json.dumps(out, indent=2))

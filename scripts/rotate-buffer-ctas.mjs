@@ -1,0 +1,12 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {rotateQueue,confirmedCtaHistory} from '../public/blog/scripts/lib/cta-rotation.mjs';
+const root=fileURLToPath(new URL('..',import.meta.url));
+const path=process.argv[2];if(!path) throw new Error('Queue path required');
+const history=confirmedCtaHistory(root);
+const byId=new Map(history.map(row=>[row.postId,row]));
+const live=process.argv[3]?JSON.parse(readFileSync(process.argv[3])).posts:[];
+const rows=[...history.filter(row=>row.status==='sent'),...live.map(row=>({...byId.get(row.id),...row}))];
+const queue=rotateQueue(JSON.parse(readFileSync(path)),root,rows);
+writeFileSync(path,JSON.stringify(queue,null,2)+'\n');
+console.log(`CTA rotation prepared for ${queue.selected.length} jobs`);

@@ -31,7 +31,7 @@ test('selects top and bottom cohorts without inventing missing fitness dimension
     capturedAt: '2026-08-25T12:00:00.000Z',
     source: 'buffer_api',
     posts: Array.from({ length: 5 }, (_, index) => post(index + 1)),
-  }, slugMap);
+  }, slugMap, { now: new Date('2026-08-27T12:00:00.000Z') });
 
   assert.equal(report.metricCoverage.retention, 0);
   assert.equal(report.metricCoverage.productionCost, 0);
@@ -43,4 +43,6 @@ test('selects top and bottom cohorts without inventing missing fitness dimension
   assert.equal(report.survivors[0].evidenceCoverage, 0.65);
   assert.equal(report.survivors[0].dimensions.retention, null);
   assert.equal(report.survivors[0].dimensions.productionEfficiency, null);
+  assert.equal(report.snapshot.ageHoursAtReport, 48);
+  assert.equal(report.snapshot.ageDaysAtReport, 2);
 });

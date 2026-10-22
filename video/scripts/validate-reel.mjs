@@ -1,3 +1,4 @@
+import { engagementErrors } from './engagement-policy.mjs';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
@@ -145,7 +146,8 @@ export function validateReelScript(script, options = {}) {
   if (!script.slug) errors.push('missing script slug');
   if (!Array.isArray(script.segments) || script.segments.length === 0) {
     errors.push('script has no segments');
-    return { errors, warnings };
+    errors.push(...engagementErrors(script));
+  return { errors, warnings };
   }
 
   let previousEnd = 0;
@@ -185,6 +187,7 @@ export function validateReelScript(script, options = {}) {
     errors.push(`totalDuration ${script.totalDuration}s does not match last segment end ${last.endSec}s`);
   }
 
+  errors.push(...engagementErrors(script));
   return { errors, warnings };
 }
 

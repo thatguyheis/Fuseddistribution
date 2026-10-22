@@ -26,6 +26,8 @@ export interface GraphicData {
 
 export interface MediaEntry {
   type: 'video' | 'photo';
+  shots?: string[];
+  evidenceCutaways?: string[];
   src: string;
   thumb?: string;
   source?: string;

@@ -32,6 +32,32 @@ test('validates a complete master plan and rejects an undersized Reel cluster', 
   assert.match(validateContentPlan(invalid).join('\n'), /4-6 section IDs/);
 });
 
+test('allows compact coin-history plans without duplicate why-it-mattered sections', () => {
+  const value = plan();
+  value.editorialProfile = 'coin-history';
+  value.sections = value.sections.slice(0, 4).map((section, index) => ({
+    ...section,
+    id: `s0${index + 1}`,
+    targetWords: 180,
+    evidenceClaims: [`claim-${index + 1}`, `claim-${index + 5}`],
+  }));
+  assert.deepEqual(validateContentPlan(value, 'planned-post'), []);
+  value.sections[0].heading = value.sections[1].heading;
+  assert.match(validateContentPlan(value).join('\n'), /heading must be unique/);
+});
+
+test('validates three distinct optional short topics without replacing the long form', () => {
+  const complete = plan();
+  complete.reel.shortTopics = [
+    { id: 'short-01', topic: 'Topic one', promise: 'Answer one', sectionIds: ['s01'] },
+    { id: 'short-02', topic: 'Topic two', promise: 'Answer two', sectionIds: ['s02', 's03'] },
+    { id: 'short-03', topic: 'Topic three', promise: 'Answer three', sectionIds: ['s04'] },
+  ];
+  assert.deepEqual(validateContentPlan(complete, 'planned-post'), []);
+  complete.reel.shortTopics.pop();
+  assert.match(validateContentPlan(complete).join('\n'), /shortTopics must contain exactly 3 items/);
+});
+
 test('cleans model wrappers and assembles stable section headings', () => {
   const cleaned = cleanSegment('```markdown\n## Ignore me\n\nUseful body text without a wrapper.\n```');
   assert.equal(cleaned, 'Useful body text without a wrapper.');

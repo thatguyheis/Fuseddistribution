@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_DIR = resolve(__dirname, '..');
-const GRAPHIC_PATTERN = /class="[^"]*\b(?:chart-wrap|stat-row|math-box|coin-grid|watch-list|social-video)\b/i;
+const GRAPHIC_PATTERN = /class="[^"]*\b(?:chart-wrap|stat-row|math-box|coin-grid|watch-list)\b/i;
 
 function argValue(name) {
   const prefix = `${name}=`;
@@ -34,7 +34,7 @@ function extractHeadings(markdown) {
 
 function renderWatchList(headings) {
   const items = headings.map((heading, index) => `              <div class="watch-list-item">
-                <strong>Watch ${index + 1}</strong>
+                <strong>CHECK ${String(index + 1).padStart(2, '0')}</strong>
                 <span>${xml(heading)}</span>
               </div>`).join('\n');
   const aria = headings.map((heading) => stripTags(heading)).join('; ');

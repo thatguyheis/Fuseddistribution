@@ -9,6 +9,7 @@
 #   public/blog/research/YYYY-MM-DD-queue.json — today's 4 posts for Claude to consume
 
 set -euo pipefail
+export TZ=America/Los_Angeles
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BLOG_DIR="$(dirname "$SCRIPT_DIR")"
@@ -25,18 +26,36 @@ elif [[ $(date '+%H') -ge 12 ]]; then
 else
   QUEUE_DATE=$TODAY
 fi
+# Briefs and failed candidates belong to the same operating date as the queue.
+TODAY="$QUEUE_DATE"
 INDEX_FILE="$RESEARCH_DIR/topic-index.json"
 QUEUE_FILE="$RESEARCH_DIR/${QUEUE_DATE}-queue.json"
 
 mkdir -p "$RESEARCH_DIR"
+
+# An existing queue remains authoritative even when the topic pool is exhausted.
+if [[ -f "$QUEUE_FILE" ]]; then
+  echo "Queue already exists for today: $QUEUE_FILE"
+  exit 0
+fi
+
+
+python3 "$SCRIPT_DIR/../../../scripts/topic-inventory.py" --unblock --date "$QUEUE_DATE"
+
+# An unfinished plan already names the work. A new model pass must not rotate
+# to unrelated topics and silently replace that daily obligation.
+if [[ -f "$RESEARCH_DIR/${QUEUE_DATE}-plan.json" && "${GEMMA_RECOVER_PLAN:-0}" != "1" ]]; then
+  echo "Daily plan exists without a completed queue; editorial owner recovery required" >&2
+  exit 1
+fi
 
 # ── FD pre-flight ─────────────────────────────────────────────────────────────
 # 2026-06-10 23:03 run died on system-wide "Too many open files" (kern.num_files
 # hit kern.maxfiles) caused by stale chrome-headless-shell / workerd processes
 # left over from crashed renders. Clean them up and verify headroom before work.
 ulimit -n 65536 2>/dev/null || true
-pkill -f "chrome-headless-shell" 2>/dev/null || true
-pkill -x workerd 2>/dev/null || true
+# Process cleanup requires proven ownership; unrelated browser/worker jobs
+# must never be killed by a scheduled content run.
 sleep 2
 FD_USED=$(sysctl -n kern.num_files)
 FD_MAX=$(sysctl -n kern.maxfiles)
@@ -47,327 +66,18 @@ fi
 
 # ── Topic seed pools ──────────────────────────────────────────────────────────
 
-SILVER_TOPICS=(
-  # Buying guides
-  "how to buy silver for the first time"
-  "where to buy silver online safely"
-  "best online silver dealers in 2026"
-  "how to buy silver coins at spot price"
-  "buying silver from a local coin shop vs online"
-  "how to avoid silver dealer scams"
-  "how to read silver spot price charts"
-  "silver premiums explained for beginners"
-  "how to compare silver premiums across dealers"
-  "should you buy silver in dips or dollar cost average"
-  # Product types
-  "american silver eagle complete buying guide"
-  "canadian silver maple leaf vs american silver eagle"
-  "silver bars vs silver coins which is better"
-  "silver rounds vs silver coins differences"
-  "1 oz silver coins vs 10 oz silver bars which to buy"
-  "100 oz silver bars pros and cons"
-  "junk silver coins guide pre-1965 US silver"
-  "what is 90 percent silver junk silver worth buying"
-  "morgan silver dollars as investment"
-  "proof silver coins worth buying or not"
-  "silver numismatic coins vs bullion coins"
-  "canadian silver maple leaf investment guide"
-  "austrian silver philharmonic guide"
-  "britannias vs eagles which silver coin is best"
-  "silver rounds complete buyer guide"
-  # Investing and strategy
-  "how much silver should you own in your portfolio"
-  "silver as a percentage of net worth how much"
-  "dollar cost averaging silver strategy explained"
-  "silver investment for beginners complete guide"
-  "how to build a silver stacking portfolio from scratch"
-  "silver IRA what it is and how to open one"
-  "self-directed IRA for silver step by step"
-  "silver vs gold which is better investment in 2026"
-  "physical silver vs silver ETF pros and cons"
-  "silver ETF vs physical silver tax differences"
-  "is silver a good hedge against inflation"
-  "silver as emergency money why it works"
-  "silver portfolio allocation beginner vs advanced"
-  "how to use silver to protect against currency devaluation"
-  "silver alongside stocks and bonds diversification guide"
-  # Market and price
-  "what moves silver price up and down"
-  "silver spot price explained what it means"
-  "silver to gold ratio explained how to use it"
-  "how to track silver price daily"
-  "silver price history and long term trends"
-  "silver supply deficit explained 2026"
-  "why silver has industrial demand driving price"
-  "solar panel silver demand impact on price"
-  "electric vehicle silver demand explained"
-  "silver market outlook 2026 what analysts say"
-  # Storage and safety
-  "how to store silver at home safely"
-  "best silver storage options for investors"
-  "home safe vs safety deposit box for silver"
-  "silver storage vault vs home storage"
-  "how to organize and inventory your silver collection"
-  "silver tarnish why it happens and how to prevent it"
-  "does tarnished silver lose value"
-  "best ways to clean silver coins without damage"
-  "silver coin holders and cases guide"
-  "insuring physical silver at home"
-  # Selling
-  "how to sell silver for the best price"
-  "best places to sell silver coins in 2026"
-  "selling silver to a dealer vs private sale"
-  "how to get the most money when selling silver"
-  "capital gains tax on silver how it works"
-  "silver IRS reporting requirements what you need to know"
-  "selling junk silver coins where and how"
-  # History and fundamentals
-  "silver as money throughout history"
-  "silver standard vs gold standard explained"
-  "why silver was used as currency for 5000 years"
-  "how inflation erodes purchasing power and silver protects it"
-  "silver and the Bretton Woods collapse explained"
-  "the Hunt Brothers silver squeeze of 1980"
-  "silver price all-time highs what drove them"
-  "silver in ancient civilizations as currency"
-  "silver monetary history complete guide"
-  # Authenticity and grading
-  "how to spot fake silver coins and bars"
-  "silver counterfeit detection guide"
-  "magnet test for silver does it work"
-  "ice test for silver explained"
-  "how to verify silver purity at home"
-  "PCGS NGC certified silver coins guide"
-  "graded silver coins worth paying premium or not"
-  # Beginner basics
-  "silver purity marks what .999 .9999 means"
-  "troy ounce vs regular ounce silver explained"
-  "what is silver spot price and how is it set"
-  "silver premium over spot explained"
-  "how to start buying silver with 100 dollars"
-  "silver stacking for beginners first steps"
-  "silver vs cash which holds value better"
-  # Industrial demand
-  "silver industrial uses explained for investors"
-  "silver in solar panels how much is used"
-  "silver supply shortage what it means for prices"
-  "silver mining stocks vs physical silver"
-  "silver supply deficit sixth consecutive year 2026"
-  "largest silver producing countries in the world"
-  "silver recycling and scrap recovery market"
-  # Reserve funnel
-  "silver reserve plan what it is and how it works"
-  "building a silver reserve on a monthly budget"
-  "silver reserve vs 401k which makes more sense"
-  # News and outlook
-  "silver price prediction 2026 what analysts expect"
-  "why silver price dropped this month explained"
-  "silver vs gold performance comparison 2025 2026"
-  "COMEX silver inventory what declining stockpiles mean for price"
-  "solar panel demand silver price impact 2026"
-  "silver price all-time high when will it happen again"
-  "is now a good time to buy silver 2026"
-  "silver price chart analysis support and resistance levels"
-  # Tax and legal
-  "silver capital gains tax how it works in the US"
-  "do you have to report silver coin purchases to IRS"
-  "IRS rules for selling silver coins 1099-B reporting"
-  "state sales tax on silver coins which states charge it"
-  "how to keep records of silver purchases for taxes"
-  "silver coins gift tax rules what you need to know"
-  "silver in an LLC vs personal ownership tax differences"
-  # Retirement
-  "silver IRA how to set one up step by step"
-  "can you put physical silver in an IRA"
-  "self-directed IRA approved silver coins and bars list"
-  "silver IRA vs physical silver at home which is better"
-  "best silver IRA custodians compared 2026"
-  "rolling over 401k into silver IRA what to know"
-  # COMEX and paper silver
-  "what is COMEX silver and how does it affect spot price"
-  "paper silver vs physical silver the key difference"
-  "silver short squeeze 2026 is it possible"
-  "how silver futures work explained for stackers"
-  "COMEX silver delivery process explained"
-  "why COMEX price and physical silver price diverge"
-  # Dealer reviews
-  "APMEX review 2026 premiums selection and service"
-  "JM Bullion vs SD Bullion which dealer is better"
-  "Gainesville Coins review 2026"
-  "Provident Metals review is it legit"
-  "APMEX vs JM Bullion premium comparison 2026"
-  "best silver dealers in the US ranked"
-  # Tools and tracking
-  "best apps to track your silver portfolio value"
-  "how to set silver spot price alerts for free"
-  "silver premium calculator how to build one"
-  "how to build a silver inventory spreadsheet"
-  "CoinStats vs Delta for precious metals tracking"
-  "how to calculate your average cost per ounce silver"
-  # Estate and inheritance
-  "what to do when you inherit silver coins and bars"
-  "how to value inherited silver for estate purposes"
-  "selling inherited silver coins taxes and process"
-  "how to divide silver in an estate fairly"
-  "inherited junk silver what to do with it"
-  # Mining and stocks
-  "silver mining stocks vs physical silver which is better"
-  "best silver mining stocks to watch in 2026"
-  "First Majestic Silver vs physical silver investment"
-  "silver royalty companies explained Wheaton Precious Metals"
-  "how silver mine production affects spot price"
-  # Coin guides - specific
-  "Morgan silver dollar complete buying guide"
-  "Peace silver dollar value and history"
-  "Perth Mint silver Kangaroo buying guide"
-  "Mexican silver Libertad coins guide"
-  "silver panda coins from China complete guide"
-  "Engelhard silver bars history and collector value"
-  "Johnson Matthee silver bars guide"
-)
+SILVER_TOPICS=()
+while IFS= read -r topic; do SILVER_TOPICS+=("$topic"); done < <(python3 "$SCRIPT_DIR/../../../scripts/topic-inventory.py" --list silver)
 
-TECH_TOPICS=(
-  # Google Business Profile
-  "how to set up google business profile step by step"
-  "google business profile optimization guide 2026"
-  "why your google business profile isnt showing up"
-  "how to rank higher on google maps"
-  "google business profile categories which to choose"
-  "how to add photos to google business profile correctly"
-  "google business profile posts what to write"
-  "google business profile Q and A how to use it"
-  "google business profile messaging setup and tips"
-  "google business profile insights explained"
-  # Local SEO
-  "local SEO for small business beginner guide"
-  "what is NAP consistency and why it matters"
-  "local citations for small business how to build them"
-  "local SEO ranking factors 2026"
-  "near me searches how to rank for them"
-  "local keyword research for small businesses"
-  "local backlinks how to get them for free"
-  "neighborhood SEO targeting specific areas"
-  "local SEO audit how to do one yourself"
-  "service area business SEO guide"
-  # Reviews and reputation
-  "how to get more google reviews for your business"
-  "how to ask customers for google reviews"
-  "how to respond to negative google reviews"
-  "google review strategy that actually works"
-  "does responding to reviews improve local SEO"
-  "how many google reviews do you need to rank"
-  "fake google reviews how to handle them"
-  "review generation tools for small business"
-  "yelp vs google reviews which matters more"
-  "how to turn bad reviews into better outcomes"
-  # Website
-  "what a small business website needs to succeed"
-  "how much does a small business website cost"
-  "small business website mistakes to avoid"
-  "why your website isnt getting customers"
-  "what pages every small business website needs"
-  "mobile website speed why it matters for local business"
-  "website conversion rate what it means and how to improve it"
-  "call to action best practices for small business websites"
-  "contact page best practices for local business"
-  "landing page vs website which do you need"
-  # Social media
-  "instagram for local business complete guide"
-  "facebook page vs facebook group for business"
-  "how often to post on social media for small business"
-  "tiktok for local business does it work"
-  "social media content ideas for small business"
-  "instagram stories for local business how to use"
-  "facebook ads for local business beginner guide"
-  "how to target local customers with facebook ads"
-  "best time to post on instagram for local business"
-  "social media analytics what metrics actually matter"
-  # Email marketing
-  "email marketing for small business getting started"
-  "how to build an email list for your local business"
-  "email newsletter ideas for small business"
-  "best email marketing tools for small business 2026"
-  "email open rate what is good for small business"
-  "automated email sequences for local business"
-  "welcome email sequence for new customers"
-  "email marketing vs social media which is better"
-  # Customer retention
-  "how to get repeat customers for your small business"
-  "customer loyalty program ideas for small business"
-  "how to follow up with customers after a sale"
-  "text message marketing for small business"
-  "SMS marketing vs email marketing small business"
-  "how to collect customer contact info at point of sale"
-  "customer referral program how to start one"
-  "word of mouth marketing strategy small business"
-  "thank you card marketing for local business"
-  # Online booking
-  "online booking system for small business guide"
-  "best appointment booking tools for small business 2026"
-  "how online booking reduces no-shows"
-  "calendar booking link how to add to google business profile"
-  "online booking vs phone calls for appointments"
-  # Analytics
-  "google analytics for small business what to track"
-  "website analytics for local business beginner guide"
-  "how to know if your website is working"
-  "google search console for small business explained"
-  "tracking phone calls from your website how to"
-  # Content and video
-  "blogging for small business does it work"
-  "content marketing ideas for local business"
-  "how often should a small business blog"
-  "evergreen content ideas for small business website"
-  "short form video for local business complete guide"
-  "how to make reels for your local business"
-  "behind the scenes content ideas for small business"
-  "customer testimonial video how to film and use"
-  "youtube for local business worth it or not"
-  # Paid ads
-  "google ads for small business is it worth it"
-  "facebook ads budget for local business how much to spend"
-  "google local service ads explained"
-  "retargeting ads for small business how they work"
-  "pay per click vs organic SEO for small business"
-  # Directories and listings
-  "online directories for small business which ones matter"
-  "yelp for business is it worth it in 2026"
-  "apple maps business listing how to claim it"
-  "bing places for business setup guide"
-  # AI and tools
-  "AI tools for small business marketing in 2026"
-  "how to start using AI in your small business"
-  "ChatGPT for small business owners beginners guide"
-  "best free AI tools for small business 2026"
-  "how to use AI to write better business emails"
-  "AI for customer service small business how to set it up"
-  "how to use AI to create social media content faster"
-  "AI scheduling tools for small business"
-  "what AI can and cannot do for your small business"
-  "how to build AI prompts that actually work"
-  "AI writing tools comparison for small business"
-  "how to automate repetitive business tasks with AI"
-  "AI chatbot for small business website setup guide"
-  "using AI to respond to Google reviews automatically"
-  "AI tools for restaurant ordering and menu management"
-  "how to train your team on AI tools step by step"
-  "AI for bookkeeping small business tools compared"
-  "Claude vs ChatGPT for small business which is better"
-  # General tech
-  "website speed for local business why it matters"
-  "how to speed up your small business website"
-  "instagram marketing for local business"
-  "word of mouth marketing strategy"
-  "how to get repeat customers"
-  "google business profile setup guide"
-  "online booking system for small business"
-  "website speed and local business ranking"
-  "social media posting schedule for small business"
-)
+TECH_TOPICS=()
+while IFS= read -r topic; do TECH_TOPICS+=("$topic"); done < <(python3 "$SCRIPT_DIR/../../../scripts/topic-inventory.py" --list tech)
 
 # ── Read/update rotation index ────────────────────────────────────────────────
 
-if [[ -f "$INDEX_FILE" ]]; then
+if [[ -n "${GEMMA_SILVER_INDEX:-}${GEMMA_TECH_INDEX:-}" ]]; then
+  SI="${GEMMA_SILVER_INDEX:-0}"
+  TI="${GEMMA_TECH_INDEX:-0}"
+elif [[ -f "$INDEX_FILE" ]]; then
   SI=$(python3 -c "import json; d=json.load(open('$INDEX_FILE')); print(d.get('silver',0))")
   TI=$(python3 -c "import json; d=json.load(open('$INDEX_FILE')); print(d.get('tech',0))")
 else
@@ -378,16 +88,6 @@ fi
 SILVER_LEN=${#SILVER_TOPICS[@]}
 TECH_LEN=${#TECH_TOPICS[@]}
 
-S1_IDX=$((SI % SILVER_LEN))
-S2_IDX=$(((SI + 1) % SILVER_LEN))
-T1_IDX=$((TI % TECH_LEN))
-T2_IDX=$(((TI + 1) % TECH_LEN))
-
-TOPIC_S1="${SILVER_TOPICS[$S1_IDX]}"
-TOPIC_S2="${SILVER_TOPICS[$S2_IDX]}"
-TOPIC_T1="${TECH_TOPICS[$T1_IDX]}"
-TOPIC_T2="${TECH_TOPICS[$T2_IDX]}"
-
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 slugify() {
@@ -395,43 +95,32 @@ slugify() {
 }
 
 ollama_call() {
-  # Migrated 2026-06-16: gemma4:e2b gguf (7.7 GB) removed — swapped to death on
-  # this 8 GB Mac. Now calls the LiteRT serve leaf endpoint (gemma-4-E2B, ~2 GB,
-  # Metal GPU) at :9379. Service: com.nick.litert-serve. Helper: ~/bin/gemma.sh.
-  # NOTE: model context = 4096 tokens — keep prompt + max_tokens under that.
+  # Use the repository-owned Ollama adapter so scheduled work and recovery share
+  # one local runtime with a bounded model response timeout.
   local prompt="$1"
   local max_tokens="${2:-1400}"
-  M="gemma-e2b,gpu" N="$max_tokens" python3 -c '
-import json, os, sys, urllib.request
-body = json.dumps({
-    "model": os.environ["M"],
-    "messages": [{"role": "user", "content": sys.stdin.read()}],
-    "max_tokens": int(os.environ["N"]),
-    "temperature": 0.65,
-}).encode()
-req = urllib.request.Request("http://localhost:9379/v1/chat/completions",
-                             data=body, headers={"Content-Type": "application/json"})
-try:
-    d = json.load(urllib.request.urlopen(req, timeout=300))
-    print(d["choices"][0]["message"]["content"])
-except Exception as e:
-    sys.stderr.write(f"litert call failed: {e}\n")
-' <<<"$prompt" 2>/dev/null
+  HERMES_LOCAL_MODEL="${GEMMA_RESEARCH_MODEL:-gemma3:4b}" \
+    HERMES_LOCAL_MAX_TOKENS="$max_tokens" \
+    HERMES_LOCAL_TIMEOUT="${GEMMA_RESEARCH_TIMEOUT:-600}" \
+    "$SCRIPT_DIR/../../../scripts/ollama-local-no-think.sh" "$prompt"
 }
 
-ensure_litert_service() {
-  if curl -fsS --max-time 5 http://localhost:9379/v1/models >/dev/null 2>&1; then
-    return 0
+ensure_local_model_service() {
+  local endpoint="${OLLAMA_LOCAL_BASE_URL:-http://127.0.0.1:11434}"
+  if ! curl -fsS --max-time 5 "$endpoint/api/tags" >/dev/null 2>&1; then
+    launchctl kickstart -k "gui/$(id -u)/homebrew.mxcl.ollama"
+    for _ in {1..24}; do
+      curl -fsS --max-time 2 "$endpoint/api/tags" >/dev/null 2>&1 && break
+      sleep 5
+    done
   fi
-
-  echo "WARN: LiteRT service is unavailable; requesting launchd restart" >&2
-  launchctl kickstart -k "gui/$(id -u)/com.nick.litert-serve" 2>/dev/null || true
-  for _ in {1..30}; do
-    curl -fsS --max-time 2 http://localhost:9379/v1/models >/dev/null 2>&1 && return 0
-    sleep 2
-  done
-  echo "ERROR: LiteRT service did not become healthy within 60 seconds" >&2
-  return 1
+  curl -fsS --max-time 5 "$endpoint/api/tags" >/dev/null 2>&1 || {
+    echo "ERROR: local Ollama API did not become ready" >&2
+    return 1
+  }
+  HERMES_LOCAL_MODEL="${GEMMA_RESEARCH_MODEL:-gemma3:4b}" \
+    HERMES_LOCAL_MAX_TOKENS=8 HERMES_LOCAL_TIMEOUT=180 \
+    "$SCRIPT_DIR/../../../scripts/ollama-local-no-think.sh" "Reply with exactly READY."
 }
 
 word_count() {
@@ -462,15 +151,15 @@ process_topic() {
   local BRIEF_FILE="$RESEARCH_DIR/${TODAY}-${SLUG}.md"
   local DRAFT_FILE="$POST_DIR/gemma_draft.md"
 
-  mkdir -p "$POST_DIR"
+  mkdir -p "$POST_DIR" "$RESEARCH_DIR/failed-candidates/$TODAY"
 
   echo "  Topic: $KEYWORD ($BRAND)"
 
-  # Skip if already drafted today
-  if [[ -f "$DRAFT_FILE" ]] && grep -q "$TODAY" "$DRAFT_FILE" 2>/dev/null; then
-    echo "    SKIP (draft exists)"
-    echo "$SLUG|$KEYWORD|$BRAND"
-    return 0
+  # A date in model output is not validation. Preserve existing drafts for the
+  # editorial owner rather than implicitly promoting them into a publish queue.
+  if [[ -f "$DRAFT_FILE" ]]; then
+    echo "    DEFERRED: existing draft requires owner review: $DRAFT_FILE" >&2
+    return 1
   fi
 
   # Brand context — read from MASTER_CONTEXT file
@@ -482,19 +171,10 @@ process_topic() {
   fi
 
   local BRAND_CTX
-  if [[ -f "$MC_FILE" ]]; then
-    BRAND_CTX=$(awk '
-      /^## Brand Identity/,/^## Audience/ { print }
-      /^## Audience/,/^## Voice/ { print }
-      /^## Voice/,/^## Content Pillars/ { print }
-      /^## UGC Prompting Principles/,/^## Visual Identity/ { print }
-    ' "$MC_FILE" | head -80)
+  if [[ "$BRAND" == "silver" ]]; then
+    BRAND_CTX="Fused Distribution. Explain the exact silver or collecting topic to a curious general reader. No investment predictions."
   else
-    if [[ "$BRAND" == "silver" ]]; then
-      BRAND_CTX="Fused Distribution — silver and precious metals reserve plans. Audience: retail investors buying physical silver. CTA: /reserve/"
-    else
-      BRAND_CTX="Fused Distribution Technology Solutions — websites and digital marketing for local businesses. Audience: small business owners. CTA: /#contact"
-    fi
+    BRAND_CTX="Fused Distribution. Explain the exact requested business task to a small business owner. Do not redirect to SEO, Google Business Profile or sales unless the keyword explicitly requests it."
   fi
 
   # ── Fetch live spot price for silver posts ──
@@ -515,6 +195,17 @@ Always cite the date: e.g. 'at \$$SILVER_SPOT/oz as of $TODAY'."
     fi
   fi
 
+  local SOURCE_SEEDS
+  SOURCE_SEEDS=$(python3 - "$SCRIPT_DIR/../data/topic-pool.json" "$KEYWORD" <<'PYSOURCES'
+import json,sys
+for topic in json.load(open(sys.argv[1]))['topics']:
+ if topic['keyword']==sys.argv[2]:
+  print(' '.join(topic.get('sourceUrls',[])))
+  if topic.get('strategy'):
+   print('\nEditorial direction, not verified evidence: '+json.dumps({k:topic[k] for k in ['strategy','evidencePaths','usageCaveat','sourceScope','sop'] if k in topic},ensure_ascii=False))
+  break
+PYSOURCES
+)
   # ── Step 1: Research brief ──
   echo "    [1/2] Research brief..."
   local BRIEF_PROMPT="You are a content strategist for $BRAND_CTX
@@ -522,6 +213,9 @@ Always cite the date: e.g. 'at \$$SILVER_SPOT/oz as of $TODAY'."
 ${SPOT_LINE:+$SPOT_LINE
 
 }Target keyword: \"$KEYWORD\"
+
+Primary research starting points: $SOURCE_SEEDS
+These links are not fetched evidence. Mark unsupported factual claims [VERIFY]; do not invent quotations or claim to have read a source.
 
 Write a structured content brief for the exact keyword/title candidate below. Do not drift to an adjacent topic.
 
@@ -553,7 +247,7 @@ Output sections only. No preamble."
 
   local BRIEF
   BRIEF=$(ollama_call "$BRIEF_PROMPT" 700)
-  require_model_output "research brief for $SLUG" "$BRIEF" 100
+  require_model_output "research brief for $SLUG" "$BRIEF" 100 || return 1
   if ! grep -qi 'Search Intent' <<<"$BRIEF" || ! grep -qi 'H2 Structure' <<<"$BRIEF"; then
     echo "ERROR: Gemma research brief for $SLUG is missing required sections" >&2
     return 1
@@ -562,7 +256,7 @@ Output sections only. No preamble."
   cat > "$BRIEF_FILE" <<EOF
 # Research Brief — $KEYWORD
 **Date:** $TODAY | **Brand:** $BRAND | **Slug:** $SLUG
-**Model:** gemma-e2b (litert)
+**Model:** ${GEMMA_RESEARCH_MODEL:-gemma3:4b} (local Ollama)
 
 ---
 
@@ -586,7 +280,7 @@ No hedging: 'it is important to note', 'it is worth mentioning', 'needless to sa
 No filler transitions: moreover, furthermore, additionally, consequently, notably, thus, indeed.
 No filler openers: 'In today's landscape', 'When it comes to', 'In an era of', 'In recent years'.
 No banned phrases: dive in, delve into, bridge the gap, a testament to, in this article, master the art of.
-Mark any uncertain stat with [VERIFY]. Output prose only, no headings, no preamble, no meta-commentary."
+Omit uncertain statistics and unsupported claims. Do not invent sources or use placeholders. Output prose only, no headings, no preamble, no meta-commentary."
 
   # Brand CTA URL
   local CTA_URL
@@ -594,8 +288,10 @@ Mark any uncertain stat with [VERIFY]. Output prose only, no headings, no preamb
 
   # 2a. Extract H2 headings (one per line) from the brief.
   local HEADINGS_RAW
-  HEADINGS_RAW=$(ollama_call "From the research brief below, list ONLY the 4-5 H2 section headings, one per line. No numbers, no markdown symbols (#, -, *), no extra text.
+  HEADINGS_RAW=$(ollama_call "From the research brief below, list ONLY 6 distinct H2 section headings, one per line. No numbers, no markdown symbols (#, -, *), no extra text.
 
+Exact keyword: $KEYWORD
+Every heading must answer a distinct part of this exact topic. Do not add unrelated marketing advice.
 Brief:
 $BRIEF" 200)
 
@@ -606,11 +302,14 @@ $BRIEF" 200)
   done <<< "$HEADINGS_RAW"
   # Fallback if parsing yielded nothing
   if (( ${#HEADINGS[@]} == 0 )); then
-    HEADINGS=("Overview" "What to Know" "How to Get Started" "Common Mistakes")
+    HEADINGS=("Overview" "What to Know" "How to Get Started" "Costs and Tradeoffs" "Common Mistakes" "Next Steps")
   fi
   # Cap at 6 sections
   HEADINGS=("${HEADINGS[@]:0:6}")
   echo "      sections: ${#HEADINGS[@]} — ${HEADINGS[*]}"
+
+  # Reject an off-topic outline before spending inference on body sections.
+  printf '%s\n' "${HEADINGS[@]}" | python3 "$SCRIPT_DIR/../../../scripts/validate-research-outline.py" "$KEYWORD" || return 1
 
   # 2b. Intro (answer-first).
   local INTRO
@@ -618,6 +317,10 @@ $BRIEF" 200)
 Keyword: \"$KEYWORD\". Answer the keyword question directly in the first sentence (answer-first). No heading.
 ${SPOT_LINE:+$SPOT_LINE}
 $STYLE" 260)
+
+  # Preserve the coherent partial article even if a later section is rejected.
+  local PARTIAL_FILE="$RESEARCH_DIR/failed-candidates/$TODAY/${SLUG}-partial-$$.md"
+  printf '# %s\n\n%s\n' "$KEYWORD" "$INTRO" > "$PARTIAL_FILE"
 
   # 2c. One section per heading.
   local SECTIONS=""
@@ -628,15 +331,39 @@ $STYLE" 260)
     echo "      section: $H"
     local SEC
     SEC=$(ollama_call "Blog post for $BRAND_CTX. Keyword: \"$KEYWORD\".
-Write the body for the section titled \"$H\" (2-3 short paragraphs). Do not repeat the heading. Stay specific to this section.
+Write 200-240 words for the section titled \"$H\" in 3-4 specific paragraphs. Do not repeat the heading. Stay specific to this section.
 Relevant points:
 $KEYPOINTS
-$STYLE" 320)
+$STYLE" 520)
+    # The model sometimes echoes the exact title despite the prose-only prompt.
+    # Remove only that opening duplicate; unexpected headings still fail QA.
+    SEC=$(printf '%s\n' "$SEC" | python3 "$SCRIPT_DIR/normalize-section.py" "$H")
+    printf '%s\n' "$SEC" > "$RESEARCH_DIR/failed-candidates/$TODAY/${SLUG}-section-$(slugify "$H")-$$.md"
+    if ! require_model_output "section $H" "$SEC" 180 || grep -Eq '^[[:space:]]*#{1,6}[[:space:]]' <<<"$SEC"; then
+      # Retry only the deficient section, once. Never pad or relax final QA.
+      SEC=$(ollama_call "Revise this section for $BRAND_CTX about \"$KEYWORD\".
+Section: $H
+Write 220-260 words of specific, useful explanation in 3-4 paragraphs.
+Use only supported points below; omit uncertain claims. No invented numbers.
+Relevant points:
+$KEYPOINTS
+Current section:
+$SEC
+$STYLE" 650)
+      SEC=$(printf '%s\n' "$SEC" | python3 "$SCRIPT_DIR/normalize-section.py" "$H")
+      printf '%s\n' "$SEC" > "$RESEARCH_DIR/failed-candidates/$TODAY/${SLUG}-section-$(slugify "$H")-$$-revised.md"
+      require_model_output "revised section $H" "$SEC" 180 || return 1
+      if grep -Eq '^[[:space:]]*#{1,6}[[:space:]]' <<<"$SEC"; then
+        echo "ERROR: revised section still contains unexpected headings" >&2
+        return 1
+      fi
+    fi
     SECTIONS+="## $H
 
 $SEC
 
 "
+    printf '\n## %s\n\n%s\n' "$H" "$SEC" >> "$PARTIAL_FILE"
   done
 
   # 2d. CTA (templated — reliable URL).
@@ -649,11 +376,16 @@ $STYLE" 120)
 
 $SECTIONS$CTA"
 
-  require_model_output "article draft for $SLUG" "$DRAFT" 1100
+  # Preserve every candidate before validation so the owner can repair a failed
+  # run without repeating model work. This file is never a publication approval.
+  local CANDIDATE_DIR="$RESEARCH_DIR/failed-candidates/$TODAY"
+  mkdir -p "$CANDIDATE_DIR"
+  printf '%s\n' "$DRAFT" > "$CANDIDATE_DIR/${SLUG}-$(date '+%H%M%S')-$$.md"
+  require_model_output "article draft for $SLUG" "$DRAFT" 1100 || return 1
   local heading_count
   heading_count=$(grep -c '^## ' <<<"$SECTIONS" || true)
-  if (( heading_count < 4 || heading_count > 6 )); then
-    echo "ERROR: Gemma article draft for $SLUG has ${heading_count} sections; expected 4-6" >&2
+  if (( heading_count < 5 || heading_count > 6 )); then
+    echo "ERROR: Gemma article draft for $SLUG has ${heading_count} sections; expected 5-6" >&2
     return 1
   fi
   if grep -Eq '\[VERIFY\]|\[SLOT\]|TODO|lorem ipsum' <<<"$DRAFT"; then
@@ -664,8 +396,8 @@ $SECTIONS$CTA"
   cat > "$DRAFT_FILE" <<EOF
 <!-- gemma_draft: $TODAY | keyword: $KEYWORD | brand: $BRAND -->
 # GEMMA DRAFT — $KEYWORD
-> Generated: $TODAY | Model: gemma-e2b (litert) | Status: NEEDS POLISH
-> Claude: apply writing rules, verify [VERIFY] stats, then build HTML. Do NOT rewrite from scratch.
+> Generated: $TODAY | Model: ${GEMMA_RESEARCH_MODEL:-gemma3:4b} (local Ollama) | Status: NEEDS POLISH
+> Editorial owner: verify sources and topic coherence before publication. Draft status is not approval.
 
 ---
 
@@ -676,6 +408,41 @@ EOF
   echo "$SLUG|$KEYWORD|$BRAND"
 }
 
+# Select unpublished topics, including after a partial failure leaves the index
+# unchanged. Never overwrite an existing article just to meet a daily count.
+select_unpublished() {
+  local brand="$1" start="$2"
+  python3 "$SCRIPT_DIR/../../../scripts/topic-inventory.py" --select "$brand" --start "$start" --date "$QUEUE_DATE"
+}
+if [[ "${GEMMA_RECOVER_PLAN:-0}" != "1" ]]; then
+read -r S1_IDX S2_IDX <<<"$(select_unpublished silver "$SI")"
+read -r T1_IDX T2_IDX <<<"$(select_unpublished tech "$TI")"
+[[ -n "$S2_IDX" && -n "$T2_IDX" ]] || exit 1
+TOPIC_S1="${SILVER_TOPICS[$S1_IDX]}"
+TOPIC_S2="${SILVER_TOPICS[$S2_IDX]}"
+TOPIC_T1="${TECH_TOPICS[$T1_IDX]}"
+TOPIC_T2="${TECH_TOPICS[$T2_IDX]}"
+else
+  S1_IDX="$SI"; S2_IDX="$SI"; T1_IDX="$TI"; T2_IDX="$TI"
+fi
+
+# Explicit owner recovery reuses the saved obligation; never rotate topics.
+if [[ "${GEMMA_RECOVER_PLAN:-0}" == "1" ]]; then
+  RECOVERY_TOPICS=()
+  while IFS= read -r topic; do RECOVERY_TOPICS+=("$topic"); done < <(python3 - "$RESEARCH_DIR/${QUEUE_DATE}-plan.json" <<'PYPLAN'
+import json,sys
+plan=json.load(open(sys.argv[1]))
+assert [p['brand'] for p in plan['posts']] == ['silver','silver','tech','tech']
+for post in plan['posts']: print(post['keyword'])
+PYPLAN
+)
+  [[ "${#RECOVERY_TOPICS[@]}" == 4 ]] || exit 1
+  TOPIC_S1="${RECOVERY_TOPICS[0]}"; TOPIC_S2="${RECOVERY_TOPICS[1]}"
+  TOPIC_T1="${RECOVERY_TOPICS[2]}"; TOPIC_T2="${RECOVERY_TOPICS[3]}"
+  # Attempt logging may preserve the rotation, but cannot advance it again.
+  S2_IDX=$((SI - 1)); T2_IDX=$((TI - 1))
+fi
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 echo "=== Gemma Nightly — $TODAY ==="
@@ -683,14 +450,12 @@ echo "Silver: [$S1_IDX] $TOPIC_S1 / [$S2_IDX] $TOPIC_S2"
 echo "Tech:   [$T1_IDX] $TOPIC_T1 / [$T2_IDX] $TOPIC_T2"
 echo ""
 
-ensure_litert_service
+# Record intended output before inference. This is a recovery manifest, never
+# a publishable queue or approval; preserve it across retries of the same date.
+python3 "$SCRIPT_DIR/daily-research-plan.py" "$RESEARCH_DIR" "$QUEUE_DATE" \
+  "$TOPIC_S1" "$TOPIC_S2" "$TOPIC_T1" "$TOPIC_T2"
 
-# Check if queue already exists for today
-if [[ -f "$QUEUE_FILE" ]]; then
-  echo "Queue already exists for today: $QUEUE_FILE"
-  echo "Delete it to re-run. Exiting."
-  exit 0
-fi
+ensure_local_model_service
 
 QUEUE_ENTRIES=()
 FAILED_TOPICS=()
@@ -725,6 +490,21 @@ sleep 3
 
 echo "[Tech 2/2]"
 run_topic "$TOPIC_T2" "tech"
+
+# Preserve failed topics independently of rotation. Otherwise one permanently
+# malformed draft monopolizes both brands every night and starves later topics.
+python3 - "$RESEARCH_DIR" "$QUEUE_DATE" "$INDEX_FILE" "$((S2_IDX + 1))" "$((T2_IDX + 1))" "${FAILED_TOPICS[@]}" <<'PYATTEMPT'
+import datetime, json, pathlib, sys
+directory, day, index_path, silver, tech, *failed = sys.argv[1:]
+record = {'date': day, 'recordedAt': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          'failedTopics': failed, 'status': 'owner_repair_required' if failed else 'drafts_completed',
+          'nextIndex': {'silver': int(silver), 'tech': int(tech)}}
+folder = pathlib.Path(directory) / 'attempts'
+folder.mkdir(exist_ok=True)
+stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%f')
+(folder / (day + '-' + stamp + '.json')).write_text(json.dumps(record, indent=2) + '\n')
+pathlib.Path(index_path).write_text(json.dumps(record['nextIndex']) + '\n')
+PYATTEMPT
 
 if (( ${#QUEUE_ENTRIES[@]} == 0 )); then
   echo "ERROR: no valid topics completed; queue not written" >&2
@@ -778,24 +558,14 @@ with open('$QUEUE_FILE', 'w') as f:
 print(f'Queue written: {len(entries)} posts')
 "
 
-# Advance rotation only after a queue has been written. Failed runs therefore
-# retry the same topics instead of silently consuming them from the index.
-if (( ${#FAILED_TOPICS[@]} == 0 )); then
-  python3 -c "
-import json
-d = {'silver': $((SI + 2)), 'tech': $((TI + 2))}
-with open('$INDEX_FILE', 'w') as f: json.dump(d, f)
-"
-else
-  echo "Rotation index unchanged because one or more topics were deferred."
-fi
+echo "Rotation advanced; failed topics remain in dated research/attempts records for owner repair."
 
 if (( ${#FAILED_TOPICS[@]} > 0 )); then
-  echo "WARNING: ${#FAILED_TOPICS[@]} topic(s) deferred; next run will retry the rotation window."
+  echo "WARNING: ${#FAILED_TOPICS[@]} topic(s) deferred to recorded owner recovery."
   printf '  - %s\n' "${FAILED_TOPICS[@]}"
 fi
 
 echo ""
 echo "=== Done: $(date '+%H:%M:%S') ==="
 echo "Queue: $QUEUE_FILE"
-echo "Claude picks this up at 9 AM."
+echo "The daily publisher picks this up at 9 AM."
