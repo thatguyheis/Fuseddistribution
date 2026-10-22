@@ -1,40 +1,40 @@
 {
   "slug": "facebook-growth-and-automation",
-  "title": "Facebook Has 3 Billion Users — And Most Local Business Pages Get Almost None of Them",
-  "totalDuration": 52,
+  "title": "Facebook Has 3 Billion Users - And Most Local Business Pages Get Almost None of Them",
+  "totalDuration": 45.946,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 3,
-      "text": "Facebook has 3 billion users — and most local business pages get almost none of them.",
+      "endSec": 3.8,
+      "text": "Facebook has 3 billion users, and most local business pages get almost none of them.",
       "narration": null
     },
     {
       "type": "overlay",
-      "startSec": 3,
-      "endSec": 13,
+      "startSec": 3.8,
+      "endSec": 15.133,
       "text": "3B+ Monthly Active Users",
-      "narration": "Facebook still has over 3 billion monthly active users. It remains the most-used social platform for local business discovery. The opportunity is real — the problem is most pages operate without a system."
+      "narration": "Facebook still has over 3 billion monthly active users. It remains the most-used social platform for local business discovery. The opportunity is real, but most pages operate without a system."
     },
     {
       "type": "overlay",
-      "startSec": 13,
-      "endSec": 23,
-      "text": "6x More Reach — Daily vs Weekly Posting",
+      "startSec": 15.133,
+      "endSec": 24.133,
+      "text": "6x More Reach, Daily vs Weekly Posting",
       "narration": "Pages that post daily get six times more organic reach per post than pages that post weekly. The algorithm rewards consistency, not occasional great content."
     },
     {
       "type": "overlay",
-      "startSec": 23,
-      "endSec": 33,
-      "text": "~12% Lead Ad Conversion Rate",
-      "narration": "Facebook Lead Ads convert at around 12 percent on average, compared to just 2.4 percent for a standard landing page. The form is built into the ad — no separate website needed."
+      "startSec": 24.133,
+      "endSec": 32.393,
+      "text": "About 12 percent lead ad conversion",
+      "narration": "Facebook Lead Ads convert at around 12 percent, compared with 2.4 percent for a standard landing page. The form is built into the ad."
     },
     {
       "type": "chart",
-      "startSec": 33,
-      "endSec": 46,
+      "startSec": 32.393,
+      "endSec": 41.006,
       "title": "Relative Organic Reach by Posting Frequency",
       "bars": [
         {
@@ -50,18 +50,18 @@
           "value": 35
         },
         {
-          "label": "< Weekly",
+          "label": "Less than weekly",
           "value": 15
         }
       ],
-      "narration": "Pages posting daily index at 100 percent reach. Drop to three or four times a week and you're at 60. Post less than weekly and you're down to 15. The algorithm decides based on your consistency, not your content quality alone."
+      "narration": "Daily posting indexes at 100 percent reach. Three or four posts a week reaches 60. Less than weekly falls to 15. Consistency drives the result."
     },
     {
       "type": "cta",
-      "startSec": 46,
-      "endSec": 52,
-      "text": "Full breakdown — link in comments.",
-      "narration": "See exactly how to set up the scheduling system and automation — link in comments."
+      "startSec": 41.006,
+      "endSec": 45.946,
+      "text": "Full breakdown, link in comments.",
+      "narration": "See exactly how to set up the scheduling system and automation, link in comments."
     }
   ]
 }

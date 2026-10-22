@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-11T18:26:39.256Z",
+  "generatedAt": "2026-08-26T14:15:04.136Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "gainesville-coins-review-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Gainesville Coins offers a substantial silver inventory , $32."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Gainesville Coins offers a substantial silver inventory , $32."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "50 per ounce is a solid starting point."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver and precious metals?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "offering a wide selection of bullion and coins."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "how do you know if Gainesville Coins is the right fit for you?"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "the company initially focused on coin grading and sales but quickly expanded its offerings to include bars"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "They’ve built a reputation for competitive pricing, a broad selection"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "it’s important to understand their strengths and weaknesses before committing your investment dollars."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "As of late 2026, their average silver bar price was approximately $32."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Silver Rounds: A popular and affordable entry point into silver investing"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Their current average price for a 1-ounce round is roughly $55."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "It’s crucial to note that inventory levels can change rapidly due to market demand and sales."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Gainesville Coins’ website is generally user-friendly"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "It streamlines the checkout process and allows you to track your orders."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Payment Options: They accept major credit cards, debit cards, and wire transfers."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Order Confirmation: Carefully review your order confirmation email before submitting it."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Here are some common mistakes to avoid: Ignoring Premiums: Don’t just focus on the spot price of silver."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Emotional Buying: Avoid making impulsive decisions based on market hype or fear."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "They use a variety of shipping carriers, including FedEx and USPS."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "You'll receive a tracking number once your order has shipped."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "We recommend contacting customer service via email or phone before placing an order to clarify any questions you may have."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "As of August 2026, their average response time to email inquiries was approximately 24-48 hours."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "it's essential to compare prices across multiple dealers to ensure you’re getting the best deal."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "They are members of the American Numismatic Association (ANA) and the National Coin & Currency Association (NCCA)"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "They also maintain a strong security record, with no reported instances of fraud or theft."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "They offer a wide selection of products, competitive pricing, and a user-friendly website."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Gainesville Coins is expected to continue expanding its inventory and improving its customer service."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We anticipate further investments in technology and marketing to solidify their position as a leading online retailer of silver and gold."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Consider exploring their offerings and building a long-term relationship with a trusted dealer."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering Gainesville Coins for your investment?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering Gainesville Coins for your investment?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

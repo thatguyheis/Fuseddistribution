@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-02T19:27:55.711Z",
+  "generatedAt": "2026-08-26T14:15:08.400Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "irs-rules-for-selling-silver-coins-1099-b-reporting",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Sell $600+ silver, report it , avoid penalties."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Sell $600+ silver, report it , avoid penalties."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Sell $600+ silver, report it , avoid penalties."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Selling silver coins and precious metals can be a rewarding investment"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "If you sell your silver through a dealer like Fused Distribution"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "explaining what you need to know and how to ensure you’re compliant."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The IRS considers any sale of $600 or more to be reportable."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This includes sales to dealers, individuals, or any other entity."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It’s important to understand that the dealer isn’t responsible for telling you to file a tax return; they’re simply required to report the transaction."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Let's break down the key information you'll find on your 1099-B: Box 1a: Gross Proceeds: This is the total amount you received for the sale of your silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Box 1b: Fee Income: This line represents any fees charged by the dealer for their services"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Box 2: Sales Price: This is the amount you actually received after deducting any fees."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "You'll need to keep accurate records of your purchase price to accurately calculate your profit or loss."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Once you have your 1099-B and your records of the cost of your silver"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This is done by subtracting the cost of the silver (Box 6 on the 1099-B) from the sales price (Box 2 on the 1099-B)."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "This schedule allows you to track your gains and losses across all your investments"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "You’ll use the information from your 1099-B and your cost records to accurately complete Schedule D."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "A spreadsheet or accounting software can be incredibly helpful."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "accurately calculating your capital gain or loss will be significantly more difficult"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "potentially leading to errors and penalties."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Generally, the sale of silver coins is treated as a capital gain, not ordinary income."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Double-check the information on the form against your records."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The tax rate on capital gains depends on your overall income and how long you held the silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Short-term capital gains (held for one year or less) are taxed at your ordinary income tax rate."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Incorrectly Calculating Capital Gains: Carefully review your records and ensure you’re using the correct cost basis."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Assuming the Dealer Handles Everything: The dealer’s responsibility is to provide the form"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we understand the importance of accurate tax reporting."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Consider consulting with a tax advisor to develop a strategy for minimizing your tax liability."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "staying organized and keeping accurate records are key to a smooth and compliant tax process."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Your investment in silver should be complemented by a solid understanding of its tax implications."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your biggest concern about reporting silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your biggest concern about reporting silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

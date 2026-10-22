@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-01T08:18:47.124Z",
+  "generatedAt": "2026-08-26T14:15:01.489Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "ai-writing-tools-comparison-for-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "The best AI writing tool is the one your business can review and reuse safely."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "The best AI writing tool is the one your business can review and reuse safely."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "The best AI writing tool is the one your business can review and reuse safely."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "AI writing tools can help a small business turn rough notes into a service page, email, proposal"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "A tool that is useful for brainstorming may be poor at preserving a brand voice."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The right choice depends on the work you need to repeat and the review process you can maintain."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "If you need long form pages, look for source handling, structure, and review support."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Give each candidate the same brief, the same approved facts, and the same audience."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "such as a service page outline and a customer email."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "| | Cleanup and readability | Editing and review tool | Does it preserve important limits while improving clarity?"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "| This matrix is a way to choose what to test, not a guarantee that one category will win."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Run a real business task through the short list and compare the finished workflow"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Test whether the assistant follows your source material, keeps the requested format"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "and makes uncertainty visible when the brief is incomplete."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "If the source material is incomplete, the tool may fill the gap with a plausible statement."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "An editor may improve a sentence without understanding whether the claim is accurate or whether the page is aimed at the right customer."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Keep a source and review step even when the AI feature is built into the writing environment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "They can be useful for a business that publishes regularly and needs a consistent planning process."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Before adopting one, confirm that the stored examples can be updated, removed"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Remove outdated offers, old contact details, and examples that no longer represent the business."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Choose this category when consistency is a bigger problem than brainstorming."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Customer contact details, private proposals, account information, unpublished prices"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Ask how the tool accepts source material, how access is controlled"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Replace them with neutral labels when a real value is not needed for the writing task."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "For each job, write the source material, the audience, the output format, and the review checks."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Score the result on useful criteria: factual control, clarity, editing effort, consistency"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Keep the tool that produces a dependable draft and makes mistakes easy to find."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "If you need shared approvals, start with an editor your team already uses."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "If consistency across writers is the problem, test a brand workspace."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "That decision rule is more dependable than choosing the tool with the longest feature list."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which writing task would you most like to make easier?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which writing task would you most like to make easier?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

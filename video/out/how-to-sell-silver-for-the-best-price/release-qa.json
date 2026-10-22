@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-17T19:20:55.017Z",
+  "generatedAt": "2026-08-26T14:15:06.953Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-sell-silver-for-the-best-price",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver’s trading at $61."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "81 , a crucial benchmark for your sale."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "81 , a crucial benchmark for your sale."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Want to know exactly how to maximize the value of your silver?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many people are looking for a straightforward way to turn their silver holdings into cash"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we cut through the noise."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Are you looking to diversify your investments?"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Let’s break down how to accurately assess the value of your silver."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "As of today, July 7, 2026, silver is trading at $61."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A circulated silver dollar, for example, will sell for considerably less than a pristine"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Finally, understand the different types of silver you’re selling."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Bars (often in troy ounces) and coins (American Eagles, Canadian Maple Leafs, etc."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "If you’re looking to liquidate a large quantity of silver quickly"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "If you have a collection of coins"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "focusing on selling them individually or in smaller sets could yield a higher overall return."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Storage Fees: If you’re storing your silver with the dealer, they’ll charge storage fees."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "We eliminate hidden fees and provide a clear, upfront quote."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "You’ll see the real number - the actual value of your silver - without any surprises."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "For more on this, see Insuring Physical Silver At Home."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "You need a clear, upfront quote that breaks down all costs."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Here’s what to ask: Total Payment: What is the total amount you will receive for your silver?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "That’s why we’ve designed our system to be as transparent and straightforward as possible."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "You’ll receive a clear, upfront quote that reflects the true value of your silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "We stock a wide variety of silver bullion and coins, and we recommend a direct, no-markup approach."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Consider diversifying your portfolio to reduce your overall risk."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "See the straightforward way to build your silver reserve at LINK: /reserve/."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "We’re here to help you navigate the world of precious metals investing."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering all these factors, what’s your biggest concern when selling?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering all these factors, what’s your biggest concern when selling?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

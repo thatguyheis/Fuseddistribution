@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-21T19:18:49.224Z",
+  "generatedAt": "2026-08-26T14:15:03.176Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "does-tarnished-silver-lose-value",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver’s shine matters: a polished coin commands far more value."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver’s shine matters: a polished coin commands far more value."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver’s shine matters: a polished coin commands far more value."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Tarnished silver is a common concern for anyone looking to invest in precious metals."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and wondered if that discoloration means you’re losing money."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The good news is, in most cases, tarnishing doesn’t significantly impact the value of your silver."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The core metal remains perfectly sound and retains its intrinsic value."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The finish of the silver - whether it’s a polished coin, a bright bar"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "or a darkened antique - dramatically affects how it’s perceived in the market."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "The market values it based on its weight and current market prices."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A key difference lies in how collectors and investors perceive the item."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "while investors typically focus on the silver content."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Furthermore, store your silver in a cool, dry place, away from direct sunlight."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Investing in a safe or secure location is a smart move to protect your investment from theft and damage"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "and it indirectly protects the silver from environmental factors."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Conversely, a heavily circulated bar might still hold value"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "always consider the overall condition and how it affects the perceived value."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "When evaluating the value of your silver, don’t get caught up in the surface appearance."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Don’t forget to factor in any grading fees if your coins have been professionally graded."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Protecting your silver from tarnishing and loss is an ongoing process."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "These provide a barrier against air and moisture."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A tarnished item might sell for less than a pristine one"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Don’t panic sell based on the appearance of your silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "research market trends and make informed decisions based on your long-term investment goals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Let us help you build a secure and profitable silver reserve."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Staying informed about market trends and maintaining proper storage practices will be crucial for maximizing the value of your silver investment."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Start building your silver reserve today - visit /reserve/ to learn more."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "So, how do you think tarnishing affects the actual value?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "So, how do you think tarnishing affects the actual value?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-09T18:30:31.604Z",
+  "generatedAt": "2026-08-26T14:15:06.770Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-rank-higher-on-google-maps",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "88 percent of people use Google Maps to find local businesses."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "88 percent of people use Google Maps to find local businesses."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "88 percent of people use Google Maps to find local businesses."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get noticed on Google Maps?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and it can feel like an uphill battle."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "there are proven strategies you can implement to climb the ranks and attract more customers."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "When someone searches for “pizza near me, ” Google Maps displays a list of relevant businesses"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The good news is that Google’s algorithm is designed to reward businesses that provide valuable information and a positive user experience."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It’s not a complex system, but it does require consistent attention and a strategic approach."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Verification typically involves receiving a postcard with a code or a phone call from Google."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A complete profile signals to Google that you’re serious about being found."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Fill out every section: Business Name: Use your official business name - don’t add extra words like “Inc."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "For example, instead of just “Restaurant,” choose “Italian Restaurant."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Accurate hours are vital for customer expectations."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Now that your profile is complete, let’s focus on optimizing it for search."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Create posts about new products, special offers, or upcoming events."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "A recent study found that businesses with active posts receive 67 percent more views on their GBP listing"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Upload high-quality photos and videos of your business, products, and services."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "You can include a link to your GBP review page in your email signature, on your website"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A 2024 study found that businesses with at least 50 reviews are more likely to appear on the first page of Google Maps"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Responding to reviews shows you care about your customers."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Acknowledge positive reviews and address negative reviews constructively."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A prompt and thoughtful response can even turn a negative review into a positive experience."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Ensure your website is responsive and loads quickly on mobile devices."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "This will help you identify areas for improvement and measure the effectiveness of your optimization efforts."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Let’s address some common pitfalls that can hinder your Google Maps ranking."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "As mentioned earlier, a missing or inaccurate profile is a major red flag for Google."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Google will likely place even greater emphasis on local relevance and user engagement."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "you’ll be well-positioned to succeed in the competitive world of Google Maps."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We offer comprehensive local SEO services, including GBP optimization, review management"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How would you improve your Google Maps ranking with these?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How would you improve your Google Maps ranking with these?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

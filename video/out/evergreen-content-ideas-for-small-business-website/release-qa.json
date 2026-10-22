@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-19T18:46:44.087Z",
+  "generatedAt": "2026-08-26T14:15:03.708Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "evergreen-content-ideas-for-small-business-website",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "65 percent of website visitors seek information, not immediate sales."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "65 percent of website visitors seek information, not immediate sales."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "65 percent of website visitors seek information, not immediate sales."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to keep your website fresh and attracting new customers?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Evergreen content is material that remains relevant and valuable over time"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It’s not a one-and-done effort; it’s a strategic approach to content marketing."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Think of it as the content that answers the questions “Why should I choose you?"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "evergreen content offers lasting value."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Consider this: 65 percent of website visitors are looking for information"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "People actively search for information like “best coffee shops near me” or “where to find fresh produce in {Your County}."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A recent study showed that 70 percent of consumers prefer to support local businesses."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "By providing valuable local resources, you tap into that desire."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A good “how-to” tutorial can generate significant organic traffic."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "This is a goldmine of content ideas."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Compile a list of these questions and answer them thoroughly on your website."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "” This positions you as an informed resource and helps potential customers make the best decision."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "67 percent of consumers read at least three product reviews before making a purchase."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Creating an industry glossary can demystify your field and establish you as an authority."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Highlight the challenges your clients faced and how you helped them overcome those challenges."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "” These stories provide social proof and build credibility."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "92 percent of consumers trust recommendations from friends and family over all other forms of advertising."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Curate lists of helpful resources and tools related to your industry."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "you could create a list of “Top 10 Free Social Media Scheduling Tools."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "These lists are highly shareable and can drive significant referral traffic."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "FAQ Usage: 80 percent of consumers use FAQs to find answers before contacting customer support."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Recommendation Trust: 92 percent of consumers trust recommendations from friends and family over all other forms of advertising."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Content Sharing: 70 percent of marketers say that sharing valuable content is essential to their strategy."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Let’s continue building a strong online presence for your small business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don’t just create a website - build a resource."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Schedule a free consultation with Fused Distribution today to discuss your website design and SEO needs."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you have any specific evergreen content ideas you’d like?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you have any specific evergreen content ideas you’d like?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

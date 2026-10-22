@@ -1,11 +1,16 @@
 {
   "slug": "how-to-build-a-silver-stacking-portfolio-from-scratch",
-  "renderedAt": "2026-07-14T13:41:44.786Z",
+  "productionMeasurement": {
+    "wallSeconds": 2686.7031386659996,
+    "nodePeakRssKiB": 58576,
+    "memoryScope": "Node renderer only; excludes child processes and GPU memory"
+  },
+  "renderedAt": "2026-09-23T07:03:03.111017+00:00",
   "hookType": "statement",
-  "segmentCount": 12,
-  "scriptDuration": 196.498,
-  "renderedDuration": 190.549333,
-  "scriptHash": "2783bb01b276beb2fc9b4d58028056995db06cdef24d6bf722a280963898b552",
+  "segmentCount": 8,
+  "scriptDuration": 127.512,
+  "renderedDuration": 123.712,
+  "scriptHash": "80005620ab2e48bafa75dec3f3aab1587a49227e1dd72ff0fb66cbafe9cc1a5c",
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "mixkit-meditation-441.mp3",
@@ -22,20 +27,16 @@
     "dialogueGapSeconds": 0.2,
     "finalCardPadSeconds": 0.5,
     "audioDurations": {
-      "0": 3.68,
-      "1": 16.94,
-      "2": 20.5,
-      "3": 17.7,
+      "0": 3.6,
+      "1": 18.68,
+      "2": 18.58,
+      "3": 19.7,
       "4": 19.46,
-      "5": 18.72,
-      "6": 19.66,
-      "7": 21.54,
-      "8": 16.22,
-      "9": 10.88,
-      "10": 16.66,
-      "11": 5.84
+      "5": 19.66,
+      "6": 17.82,
+      "7": 4.28
     },
-    "totalNarrationSeconds": 187.8
+    "totalNarrationSeconds": 121.78
   },
   "musicRights": {
     "status": "approved",
@@ -43,12 +44,23 @@
     "sourceName": "Mixkit Free Stock Music",
     "sourceUrl": "https://mixkit.co/free-stock-music/discover/meditation-441/"
   },
-  "photosUsed": 12,
-  "mediaUsed": 12,
-  "photoCount": 12,
-  "videoCount": 0,
+  "photosUsed": 8,
+  "mediaUsed": 8,
+  "photoCount": 4,
+  "videoCount": 4,
   "mediaSources": {
-    "local-photo": 8,
-    "pixabay": 4
+    "local-photo": 3,
+    "fused-generated-background-library": 1,
+    "local-video": 4
+  },
+  "storyboardRoute": "storyboard-production",
+  "paperCollageSegments": [
+    0,
+    5
+  ],
+  "ownerVisualCorrection": {
+    "reviewedAt": "2026-09-23T07:03:03.111017+00:00",
+    "source": ".workflow-state/catchup-2026-09-21/portfolio-release-review/corrected-render-props.json",
+    "audioCaptionsMusicUnchanged": true
   }
 }

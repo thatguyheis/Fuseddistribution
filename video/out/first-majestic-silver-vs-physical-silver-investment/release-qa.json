@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-21T18:21:13.867Z",
+  "generatedAt": "2026-08-26T14:15:04.014Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "first-majestic-silver-vs-physical-silver-investment",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "40 million ounces: a massive silver supply chain bet."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "40 million ounces: a massive silver supply chain bet."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "40 million ounces: a massive silver supply chain bet."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "but unsure whether to go with a company like First Majestic Silver or stick with physical silver bullion?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Both options present paths to potential wealth, but they differ significantly in terms of risk"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "we stock a wide range of silver products and offer strategies to help you build a successful portfolio."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "you’re buying shares of a business engaged in the extraction and sale of this precious metal."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This approach provides greater direct control over your investment but necessitates more active management."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "First Majestic Silver offers the potential for substantial gains if the company’s mining operations prove successful."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "essentially betting on the company’s ability to efficiently extract and sell silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "which introduces specific geopolitical and regulatory considerations."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Dividends, though currently modest, could increase as the company grows and becomes more profitable."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The choice of form - coins, bars, or rounds - can influence storage and security considerations."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Potential Upsides: A hedge against inflation and economic uncertainty."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Relatively easy to store and transport, provided appropriate security measures are in place."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Assess Your Risk Tolerance: Mining stocks, like those representing First Majestic"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Choose an investment strategy that aligns with your comfort level regarding potential losses."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Understand the specific risks associated with the company’s operations and its position within the global silver market."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "influenced by factors such as supply and demand, economic conditions, and investor sentiment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Establish Secure Storage: Regardless of whether you invest in First Majestic or physical silver"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Evaluate options such as a bank safe deposit box, a home safe, or a professional vault"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Failing to Understand the Risks of Mining Stocks: Mining stocks are inherently volatile and subject to operational and political risks."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Neglecting Insurance: Ensure your silver holdings are adequately insured against theft, damage"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Read company reports, analyze financial statements, compare prices"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "You can browse our extensive inventory and learn more about our products and services on our website: Investing in silver can be a rewarding experience"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "While First Majestic Silver offers the potential for significant returns"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Consider your investment goals, risk tolerance, and storage capabilities when making your decision."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Which approach , mining company stock or physical silver ?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Which approach , mining company stock or physical silver ?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

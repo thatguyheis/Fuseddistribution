@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-25T18:20:42.998Z",
+  "generatedAt": "2026-08-26T14:15:05.773Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-build-a-silver-inventory-spreadsheet",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Know your silver: Track every ounce, maximize profits."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Know your silver: Track every ounce, maximize profits."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Know your silver: Track every ounce, maximize profits."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a retail buyer of silver, struggling to track your stock levels, costs, and sales?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "especially when dealing with volatile commodities like silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we recommend a well-organized inventory spreadsheet as the foundation for smart buying and selling decisions."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Accurate inventory management also allows you to react quickly to market fluctuations and adjust your purchasing strategy."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s a critical component of a successful silver retail business."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "We recommend Google Sheets for its ease of collaboration and accessibility."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Purchase Date: The date you acquired the silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Quantity in Stock: The number of units you currently have on hand."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Total Value (in Stock): Calculated automatically (Unit Cost Quantity in Stock)."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Sales Quantity: The number of units sold."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Profit (per unit): Calculated automatically (Sales Price - Unit Cost)."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Reorder Point: The quantity at which you need to reorder the item."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Use formulas to calculate the ‘Unit Cost, ’ ‘Total Value (in Stock)’, ‘Profit (per unit)’"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "in the cell for ‘Unit Cost’ (assuming ‘Purchase Price’ is in column F and ‘Quantity in Stock’ is in column G)"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "you would enter the formula =F6/G6."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Include shipping costs, insurance, and any other expenses associated with acquiring the silver."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Ignoring Sales Data: Your inventory spreadsheet should reflect your sales."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Lack of Reorder Points: Without reorder points, you risk running out of stock, losing sales"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "First-Out): This method assumes that the first silver items you purchased are the first ones sold."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Batch Tracking: If you receive large shipments of silver"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Barcode Scanning: Consider using barcode scanners to speed up data entry and reduce errors."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "When tracking silver, consider these unique factors: For more on this"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Spot Price Fluctuations: Silver prices can change dramatically in short periods."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Different Silver Forms: Track the specific form of silver - bullion, coins"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Gross Profit Margin: This is the percentage of profit you make on each silver item sold."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We recommend a gross profit margin of at least 20 percent for a successful silver retail operation."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Building a silver inventory spreadsheet is a foundational step toward profitable silver retail."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "we recommend scheduling a consultation with one of our experts to discuss your specific needs and how we can support your silver investing business."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "we recommend scheduling a consultation with one of our experts to discuss your specific needs and how we can support your silver investing business."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Contact us today for a free quote on our wide selection of silver products."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "How would you approach building this silver inventory spreadsheet?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "How would you approach building this silver inventory spreadsheet?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

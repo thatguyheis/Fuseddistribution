@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-21T18:53:01.035Z",
+  "generatedAt": "2026-08-26T14:15:02.174Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "best-ways-to-clean-silver-coins-without-damage",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver shine: Preserve your investment’s value with a gentle touch."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver shine: Preserve your investment’s value with a gentle touch."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver shine: Preserve your investment’s value with a gentle touch."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You want to build a physical silver reserve."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Ready to see how simple it is?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "/reserve/ Silver coins aren’t just pretty pieces of metal; they represent a tangible asset and a potential store of value."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "boosting its value and ensuring it remains a beautiful and valuable piece for years to come."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we recommend a gentle, methodical approach to cleaning"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Don’t just grab a cleaning solution and start scrubbing."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It’s far more difficult to remove and requires a more delicate approach."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "If the tarnish appears to be a thin, powdery film, surface oxidation is likely."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "If it’s a dark, pitted discoloration, chemical tarnish is present."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Work in small, overlapping circles, covering the entire surface."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "If the tarnish is more stubborn, you can repeat the process, but be patient."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Use lukewarm water to thoroughly rinse the coin, removing all traces of the baking soda paste."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Even gentle scrubbing can remove the coin’s original patina"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "High temperatures can cause the silver to warp or discolor."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Cleaning these coins can damage the repairs and further reduce their value."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "A desiccant packet, such as silica gel, can help absorb moisture and prevent corrosion."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Store your coins in a cool, dry place away from direct sunlight and extreme temperatures."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Fluctuations in temperature and humidity can damage the silver and cause it to tarnish."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Regularly inspect your coins for signs of tarnish or damage."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Handle coins with clean hands to avoid transferring oils and dirt to the surface."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Consider using cotton gloves when handling valuable or delicate coins."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "You get a clear path to owning silver."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "We recommend starting with a small investment to familiarize yourself with the market and learn about the benefits of owning physical silver."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Ready to take the first step towards building your silver reserve?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "How do you feel about gently restoring your silver coins?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "How do you feel about gently restoring your silver coins?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

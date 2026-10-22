@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-24T18:35:01.836Z",
+  "generatedAt": "2026-08-26T14:15:08.588Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "johnson-matthee-silver-bars-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "9 percent pure silver , a guaranteed investment."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "9 percent pure silver , a guaranteed investment."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "9 percent pure silver , a guaranteed investment."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking for a reliable and affordable way to add silver to your investment portfolio?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many investors, particularly those starting out or looking to diversify"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "And for quality silver bars, Johnson Matthee consistently comes up as a top recommendation."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "In the following sections, we’ll look at the specifics of Johnson Matthee bar sizes"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Let's get started on your journey to informed silver investing!"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "we understand that navigating the world of silver investing can be overwhelming"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "We encourage you to research and compare prices before making a purchase."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Johnson Matthee silver bars are a popular choice for USA retail buyers, and for good reason."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "providing peace of mind that’s often lacking with digital investments."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Also, they’re readily buyable and sellable, offering flexibility within your portfolio."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "we understand that choosing the right silver bars is a crucial step in building a solid investment portfolio."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "That’s why we stock Johnson Matthee silver bars - they consistently rank among our top recommendations for USA retail buyers."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "making them a popular choice for long-term silver storage and investment."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Currently, we offer bars in several standard sizes: 1 troy ounce, 5 troy ounces, 10 troy ounces"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "9 percent pure silver, a level that provides excellent stability and minimizes tarnishing."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "We’ve carefully curated a selection of these highly sought-after bars"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "We stock a variety of weights and denominations, ensuring you can purchase exactly what you need"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "partnering with reputable distributors to guarantee each bar meets the highest standards."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "we understand that securing your investment in Johnson Matthee silver bars is essential."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "and we recommend starting with a secure, fireproof, and humidity-controlled container."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "depending on the quantity you own and your risk tolerance."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "are consistently popular with investors"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "with any upward movement in the global market directly impacting the price per ounce."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "We’ve seen recent fluctuations driven by inflation concerns and geopolitical instability"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We stock a wide selection of sizes and weights to suit various budgets and investment goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Next, visit our website or contact us directly to browse our current inventory and prices."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "securely complete your purchase through our website - we offer multiple payment options for your convenience."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering investing in silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering investing in silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

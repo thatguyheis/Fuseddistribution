@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-15T18:43:57.669Z",
+  "generatedAt": "2026-08-26T14:15:05.046Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "google-search-console-for-small-business-explained",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Google Search Console reveals 90 percent of local businesses miss crucial search visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Google Search Console reveals 90 percent of local businesses miss crucial search visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Google Search Console reveals 90 percent of local businesses miss crucial search visibility."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get found on Google?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The problem isn’t necessarily what you’re doing, but how you’re doing it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "But are you truly leveraging it to its full potential?"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Google Search Console (GSC) is a free web-based tool provided by Google that helps you understand how Google sees your website and local business."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s not a fancy marketing platform, but it’s absolutely critical for local SEO."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "giving you insights into your website’s performance in search results."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It’s designed to help you identify and fix technical issues that might be preventing your business from ranking as high as it could."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It’s also a fantastic way to see what people are actually searching for when they’re looking for your type of business."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Google needs to trust that your information is accurate and up-to-date."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Sign in to Google Search Console: Go to and sign in with the Google account you use for your Google Business Profile."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "” You’ll have two options: “Website” or “Business Profile."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Verify Your Property: Google needs to verify that you own the business."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "including: Phone Verification: You’ll receive a text message with a verification code."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Uploading an Image: You’ll need to upload a clear photo of your business signage."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Using Google Prompt: If you’ve previously used Google services with your account"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "It’s not just about “plumber near me”; it’s about the specific phrases they’re using."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "” “custom birthday cakes {Your City}, ” or “gluten-free bread near me."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "You can tailor your content to match what people are actually searching for."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Search Console isn’t just about finding what people are searching for; it’s also about fixing any issues that might be preventing your business from ranking."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "It’s like a detective, flagging potential problems and giving you the tools to resolve them."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Here are some common issues you might find: Incorrect Address: Double-check your address on your website and Google Business Profile."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Missing or Incorrect Phone Number: Make sure your phone number is accurate and prominently displayed."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Don’t just say “Serving the Tri-State Area” - be specific."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Map Pin Issues: Ensure your map pin is accurately placed and shows the correct location."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Monitor Your Performance: Regularly check the “Queries” report to see what people are searching for."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don’t just guess what gets your local customers."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Ready to take control of your local search visibility?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, are you ready to start seeing more local customers?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, are you ready to start seeing more local customers?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

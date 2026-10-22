@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T17:52:51.201Z",
+  "generatedAt": "2026-08-26T14:15:01.890Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "best-free-ai-tools-for-small-business-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "If you run a small business, free AI tools can save real time"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The wrong stack gives you more tabs, more cleanup, and more noise."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "repurpose meetings into content, and publish better visuals without adding payroll."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Before you sign up for anything, write down the exact work you want AI to handle."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Before you sign up for anything, write down the exact work you want AI to handle."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Before you sign up for anything, write down the exact work you want AI to handle."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "If your main problem is follow up after calls or meetings, start with Otter."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "This sounds obvious, but many business owners start by testing whatever tool is popular"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "ChatGPT Free is the easiest first tool because it can handle many jobs well enough before you pay for anything."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A stronger prompt looks like this: Write a follow up email to a roofing estimate lead."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "and end with one clear call to action to reply or call."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Gemini is strong when your team already uses Gmail, Google Docs, and the broader Google toolset."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Canva Free remains one of the highest value free tools for small business owners because it combines templates"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "stock assets, and AI features inside a tool most non designers can learn quickly."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The free plan includes 5GB of cloud storage, a large template library, millions of stock assets"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "If you use it as a fast starting point, it saves hours."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Build one square image, one Story size image, and one flyer from the same offer."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Grammarly Free is not your main idea engine, but it is a strong second layer for cleanup."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The free plan includes 300 transcription minutes per month, up to 30 minutes per conversation"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "That makes it useful for: job walk through notes consultation recaps team meeting summaries content idea capture voice note to article outline workflows A lot of small business owners do not need more writing help."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "They need a way to stop losing ideas and action items after conversations."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "If you do a lot of calls, quotes, and consults, start with Otter plus ChatGPT."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Once you have the tools picked"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "How To Use AI To Write Better Business Emails is a good next workflow to build because email is usually the fastest place to recover time."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Ask ChatGPT to turn the notes into a follow up email."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "That workflow is better than chasing ten disconnected features across five apps."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Free is enough when the tool saves time every week and the limits do not interrupt your real work."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "The businesses that get value from AI in 2026 are not the ones using the most tools."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "They are the ones using a small number of free tools on the same repeatable tasks every week"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "with a human still making the final call."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "What's your take?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "Follow for more practical business tips."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

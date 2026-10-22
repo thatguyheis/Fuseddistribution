@@ -1,26 +1,60 @@
 {
   "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
-  "renderedAt": "2026-07-08T22:03:28.152Z",
+  "productionMeasurement": {
+    "wallSeconds": 930.6453031660001,
+    "nodePeakRssKiB": 59440,
+    "memoryScope": "Node renderer only; excludes child processes and GPU memory"
+  },
+  "renderedAt": "2026-09-23T19:25:09.034Z",
   "hookType": "statement",
-  "segmentCount": 10,
-  "scriptDuration": 183,
-  "renderedDuration": 178.154667,
-  "scriptHash": "109936bd93283417527d639c59cfbc265a02f36969fae416453d2903e71f8f43",
+  "segmentCount": 7,
+  "scriptDuration": 117.699,
+  "renderedDuration": 114.410667,
+  "scriptHash": "88d474bb71ceec133e1c823a2baf131ed7dac3b702f36828a739d3aad81a80b6",
   "voice": "chatterbox",
   "captionMode": "proportional",
-  "musicTrack": "mixkit-forest-treasure-138.mp3",
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09795576387368925
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 15.78,
+      "1": 17.34,
+      "2": 16.82,
+      "3": 15.86,
+      "4": 13.98,
+      "5": 18.14,
+      "6": 14.78
+    },
+    "totalNarrationSeconds": 112.7
+  },
   "musicRights": {
     "status": "approved",
     "license": "Mixkit Stock Music Free License",
     "sourceName": "Mixkit Free Stock Music",
-    "sourceUrl": "https://mixkit.co/free-stock-music/discover/forest-treasure-138/"
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
   },
-  "photosUsed": 10,
-  "mediaUsed": 10,
+  "photosUsed": 7,
+  "mediaUsed": 7,
   "photoCount": 3,
-  "videoCount": 7,
+  "videoCount": 4,
   "mediaSources": {
-    "local-video": 7,
-    "local-photo": 3
-  }
+    "local-video": 4,
+    "fused-generated-background-library": 1,
+    "local-photo": 2
+  },
+  "storyboardRoute": "storyboard-production",
+  "paperCollageSegments": [
+    0,
+    5
+  ]
 }

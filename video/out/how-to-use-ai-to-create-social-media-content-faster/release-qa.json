@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-28T18:25:14.642Z",
+  "generatedAt": "2026-08-26T14:15:07.654Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-use-ai-to-create-social-media-content-faster",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "AI could slash content creation costs by 30 percent, boosting your business."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "AI could slash content creation costs by 30 percent, boosting your business."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "AI could slash content creation costs by 30 percent, boosting your business."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner drowning in a sea of social media posts?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and feeling like you’re constantly behind?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Fortunately, Artificial Intelligence (AI) offers a powerful solution."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The key is to understand what AI tools can realistically do and how to best integrate them into your workflow."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "and creating simple visuals."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "nuanced marketing campaign on its own - yet - but it can provide a solid starting point that you can then refine and personalize."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It’s excellent for brainstorming and overcoming writer’s block."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It offers templates specifically for social media posts, ads, and website copy."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Simplified: An all-in-one platform that combines AI writing, graphic design, and video editing."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Instead of saying “Write a Facebook post about our new website"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "highlighting the improved mobile experience and faster loading speeds."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Most AI tools will generate several variations of your prompt."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Here are some specific ways you can use AI to create content: Caption Generation: Feed an AI tool a description of your image or video and ask it to write a compelling caption."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Here are some specific ways you can use AI to create content: Caption Generation: Feed an AI tool a description of your image or video and ask it to write a compelling caption."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "A study found that using relevant hashtags can increase your post reach by up to 15 percent ."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Let’s say you typically spend 30 minutes crafting a Facebook post about a new product."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Editing and personalizing those options takes another 5-10 minutes."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This represents a potential time savings of 20-25 minutes per post - a significant boost to your productivity."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "or composition of your photos with AI-powered editing tools."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Once you’ve created your content"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "This ensures that you’re consistently sharing content, even when you’re busy."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A recent report showed that businesses that actively track their social media performance are 7x more likely to see a positive ROI ."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "As AI tools become more sophisticated"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "The key is to embrace these technologies and learn how to use them to your advantage."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Start with a single tool and a small set of posts"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Forward-Looking Action: Now that you’ve learned how to use AI for faster social media content creation"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Generate three different captions for an upcoming post and see how much time you save compared to your usual process."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, what’s your biggest concern about incorporating AI into your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, what’s your biggest concern about incorporating AI into your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

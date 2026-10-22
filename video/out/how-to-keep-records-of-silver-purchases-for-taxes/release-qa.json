@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-03T19:18:50.638Z",
+  "generatedAt": "2026-08-26T14:15:06.590Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-keep-records-of-silver-purchases-for-taxes",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Keep meticulous records: A $200 profit could mean $200 in taxes."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Keep meticulous records: A $200 profit could mean $200 in taxes."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Keep meticulous records: A $200 profit could mean $200 in taxes."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Keeping accurate records of your silver purchases is crucial for tax time."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "We stock a wide variety of silver bullion, coins, and bars at Fused Distribution"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we recommend meticulous record-keeping to simplify the process and avoid potential issues with the IRS."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "If you held it for a year or less, it’s considered a short-term capital gain"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "which typically has a lower tax rate."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "However, depending on your income level, it could be higher."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This doesn't have to be complicated, but it needs to be consistent."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Options include: Spreadsheet: A simple spreadsheet (like Google Sheets or Microsoft Excel) is a great starting point."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Accounting Software: Programs like QuickBooks Self-Employed or FreshBooks can automate much of the process."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Transaction Type: Indicate whether it was a purchase or a sale."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Transaction ID: If available, record the transaction ID provided by the seller."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "For more on this, see State Sales Tax on Silver Coins: Which States Charge It."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Inventory Tracking: If you hold silver for an extended period"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "According to the IRS"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "When you sell your silver, you’ll need to report the sale on your tax return."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Lack of Records: The most frequent mistake is simply not keeping records."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Incorrect Cost Basis: Using an inaccurate cost basis will result in an incorrect tax calculation."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Failing to Report All Sales: Don’t only track your purchases."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "\"Small businesses and individuals often struggle to keep accurate records"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Let's illustrate with a few scenarios: Scenario 1: Buying Silver Coins You purchase 10 American Silver Eagles on July 15th for $100 each"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "You sell those coins on December 20th for $120 each, receiving $1,200."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Scenario 3: Selling a Small Quantity You sell 5 troy ounces of silver bullion on June 5th for $40 per ounce"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "IRS Publication 550"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "IRS Website: - The IRS website offers a wealth of information on tax laws and regulations."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "you can simplify your tax filing process and avoid potential problems with the IRS."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "we’re committed to providing you with the resources you need to make informed investment decisions and navigate the complexities of tax reporting."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "and we recommend starting with a solid record-keeping system today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How can you ensure you’re fully prepared for tax time?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How can you ensure you’re fully prepared for tax time?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

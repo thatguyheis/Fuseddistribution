@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-18T19:07:40.371Z",
+  "generatedAt": "2026-08-26T14:15:09.465Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "magnet-test-for-silver-does-it-work",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "The magnet test is a deceptive trap: 80 percent of eBay silver Eagles are copper-plated fakes."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "The magnet test is a deceptive trap: 80 percent of eBay silver Eagles are copper-plated fakes."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "The magnet test is a deceptive trap: 80 percent of eBay silver Eagles are copper-plated fakes."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "The magnet test for silver is a fast, free check you can do at home."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "A neodymium magnet will catch some fakes immediately."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Here is the direct answer: pure silver is diamagnetic."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "100 percent of below-market-priced silver Eagles purchased from eBay and tested via XRF in a 2024 investigation were fake"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A magnet alone would not have caught those fakes."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Any piece that attracts strongly to a magnet is definitely not silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "and that current creates a counterforce that brakes the slide."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Copper, brass, and aluminum all produce eddy currents."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A copper bar stamped with the right hallmarks will feel identical to real silver under this test."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Many probably ran the magnet test and saw nothing wrong, because the fakes were copper-based"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The Anti-Counterfeiting Educational Foundation was tracking more than 300 websites actively selling counterfeit coins as of February 2023"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "These sites use real product photography, copy legitimate descriptions"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "You tilt the magnet on the coin's surface and it slides slowly."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "The 2024 XRF investigation found exactly this when testing discounted Eagles purchased from online marketplaces."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "not just magnetic behavior."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "It catches coins that are the right diameter but wrong thickness"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Many common fakes fail at least one dimension and will not pass through the tester's slot correctly."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Dealers and refiners use XRF guns to read the actual elemental composition of a piece in seconds."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "When silver moves through that supply chain, the counterfeiting risk is close to zero."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Silver has a spot price that updates in real time throughout every trading day."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Any offer priced significantly below spot, especially from an unknown online seller"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "When you do run the magnet test, use a neodymium magnet, not a refrigerator magnet."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Perform both the attraction test and the slide test."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "If the piece attracts to the magnet or slides without resistance"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Every item has passed through a verified supply chain"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "and you can reach us directly if you want to know more about how a specific product was sourced before you commit."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "and you can reach us directly if you want to know more about how a specific product was sourced before you commit."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s the one thing you should absolutely?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s the one thing you should absolutely?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

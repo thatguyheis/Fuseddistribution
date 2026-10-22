@@ -1,1 +1,65 @@
-{}
+{
+  "1": [
+    {
+      "text": "Email marketing has the highest ROI of any marketing channel, $42 back for every dollar spent.",
+      "startSec": 0,
+      "endSec": 5.44551724137931
+    },
+    {
+      "text": "No algorithm decides who sees it.",
+      "startSec": 5.29551724137931,
+      "endSec": 7.207241379310344
+    },
+    {
+      "text": "No ad budget required.",
+      "startSec": 7.207241379310344,
+      "endSec": 8.481724137931034
+    },
+    {
+      "text": "Your list belongs to you.",
+      "startSec": 8.481724137931034,
+      "endSec": 10.08
+    }
+  ],
+  "2": [
+    {
+      "text": "Welcome emails get a 50 percent open rate because they land right when someone signs up.",
+      "startSec": 0,
+      "endSec": 4.777142857142857
+    },
+    {
+      "text": "Set up a welcome sequence first.",
+      "startSec": 4.627142857142856,
+      "endSec": 6.364285714285714
+    },
+    {
+      "text": "Everything else builds from there.",
+      "startSec": 6.364285714285714,
+      "endSec": 8.36
+    }
+  ],
+  "3": [
+    {
+      "text": "About one in four people on your list will open an email.",
+      "startSec": 0,
+      "endSec": 2.911807228915663
+    },
+    {
+      "text": "Organic social reach can fall below 5 percent.",
+      "startSec": 2.761807228915663,
+      "endSec": 5.111686746987952
+    },
+    {
+      "text": "Email gives you direct access to people who know your business.",
+      "startSec": 5.111686746987952,
+      "endSec": 8.48
+    }
+  ],
+  "4": [
+    {
+      "text": "The full guide covers building your list, what to send, and which tools to start with for free.",
+      "startSec": 0,
+      "endSec": 5.4
+    }
+  ]
+}

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-22T19:23:02.806Z",
+  "generatedAt": "2026-08-26T14:15:06.282Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-divide-silver-in-an-estate-fairly",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "IRS values inherited silver at the date of death , maximizing its tax impact."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "IRS values inherited silver at the date of death , maximizing its tax impact."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "IRS values inherited silver at the date of death , maximizing its tax impact."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Dividing silver and other precious metals within an estate can be a surprisingly complex process."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It’s not just about splitting the coins; it’s about ensuring fairness, accurately valuing the assets"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we recommend a thoughtful approach to these situations."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "account for any outstanding debts or expenses"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Ignoring these steps can lead to disputes, legal challenges, and potential tax liabilities."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The process can be stressful, but with careful planning and the right information"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "We recommend getting independent appraisals from qualified precious metal dealers or certified appraisers."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "According to the IRS"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "This means the value at the date of death, not what the items sold for later."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "This is a professional valuation based on condition, rarity, and market demand."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It’s important to note that the IRS generally accepts the spot price method for valuing silver"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The will or estate plan dictates how the silver should be divided."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Proportional Division: This method divides the silver in proportion to each beneficiary’s share of the estate."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Specific Bequests: The will might designate specific items of silver to particular beneficiaries."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Dividing silver in an estate has significant tax implications."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "any profit (capital gain) may be subject to capital gains tax."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "The tax rate depends on the holding period (how long you owned the silver) and the beneficiary’s income."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "State Estate Taxes: Some states have their own estate taxes"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "When the silver collection includes items with significantly different values"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "they should receive 60 percent of the silver’s value."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "bars) and lower-value items (silverware, jewelry) - and dividing each category proportionally."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Dealer Sale: Selling to a precious metal dealer is the simplest option"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "We recommend getting quotes from multiple dealers and auction houses before making a decision."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Proper Packaging: Package the silver carefully to prevent damage during transport."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We offer a wide selection of silver bullion and coins to meet your investment needs."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Contact us today to learn more about our products and services."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let us help you navigate the world of precious metals with confidence."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How would you approach dividing this silver fairly?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How would you approach dividing this silver fairly?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

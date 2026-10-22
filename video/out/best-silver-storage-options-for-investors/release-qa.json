@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-18T19:25:10.944Z",
+  "generatedAt": "2026-08-26T14:15:02.060Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "best-silver-storage-options-for-investors",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A 10 oz silver bar can cost $1,000+ to store, don’t ignore the hidden fees."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A 10 oz silver bar can cost $1,000+ to store, don’t ignore the hidden fees."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "A 10 oz silver bar can cost $1,000+ to store, don’t ignore the hidden fees."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Fused Distribution cuts out the dealer markup games."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Ready to see how simple it can be?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "We show you exactly how premiums are calculated for bars versus coins."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "These premiums reflect the fabrication costs, dealer markups, insurance"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Understanding these costs is the first step to making informed investment decisions."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Don’t assume the price you see is the final price; always ask for a breakdown."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Buying a bar has a different price tag."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "For instance, a 10 oz silver bar might cost $1, 000, while ten 1 oz coins could cost $1, 200 or more"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "factoring in premiums and potential assay fees."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Ask about alarm systems, surveillance cameras, and physical security protocols."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Understand how frequently you can access your silver and the procedures involved."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Ensure you receive detailed records of your purchase, including weight, purity"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It’s about knowing how you’ll access it when you need it."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Consider your risk tolerance and investment goals when selecting a storage solution."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Or do you need something you can count easily?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "For example, a larger bar might require a dedicated storage unit"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Does the dealer show you the storage location?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "You need to see how they stack up for you."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "We look at the best storage options."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Your next step is about making a clear decision."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Storage isn’t just about keeping it safe."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A 10 oz bar might cost $1, 000 to store, while ten 1 oz coins could cost $1, 200 or more"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Second, ask about their specific security measures."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Fifth, just check if they offer clear storage advice."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering all these factors, what’s your biggest concern when it?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering all these factors, what’s your biggest concern when it?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

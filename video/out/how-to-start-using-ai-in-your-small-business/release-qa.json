@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:01.649Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:07.337Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "how-to-start-using-ai-in-your-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Start with one small, low-risk task , time saved is key."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Start with one small, low-risk task , time saved is key."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Start with one small, low-risk task , time saved is key."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Start using AI in your small business by choosing one repeated"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Do not begin by buying several subscriptions or asking a chatbot to run an entire department."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "drafting a follow-up email, or organizing customer questions."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Include administrative work, marketing, sales follow-up, customer service preparation"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Good first projects include turning call notes into a task list"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "or sorting anonymous feedback into themes."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It may create a first draft, extract fields, organize ideas, or compare a result with a checklist."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "For a quote follow-up, the trigger might be a completed estimate."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "AI can draft the message, but a staff member must confirm those details before sending it."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Check output quality, editing time, privacy settings, account controls, export options, cost"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "One useful tool is better than several overlapping subscriptions."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Keep the first test small enough that you can cancel it without disrupting customer work."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Audience: Describe who will read or use it."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Restrictions: Ban invented facts, promises, or sensitive material."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "For example: “Draft a 120-word appointment follow-up email for a homeowner."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Include a complete input, missing information, conflicting notes, an unusual customer request"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Check factual accuracy, tone, privacy, format, action, and the amount of editing required."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "If the tool repeatedly invents a price, change the prompt and source format before another test."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A public marketing item might require correct claims, current offer details, working links"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A customer reply might require identity, account, policy, date, and promised action checks."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Human approval protects the customer and makes responsibility clear."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "AI can produce confident text that is incomplete or wrong."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Set boundaries for customer communication, public claims, financial decisions"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "After the first workflow performs reliably, add a closely related task."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Remove processes nobody uses and subscriptions that duplicate another tool."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Starting small gives your business a useful advantage: you learn where AI actually saves time without giving up control."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "and make the approval step part of the process from day one."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How does incorporating AI into your small business workflow feel?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How does incorporating AI into your small business workflow feel?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

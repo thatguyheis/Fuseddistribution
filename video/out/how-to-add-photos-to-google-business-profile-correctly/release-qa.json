@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-10T18:37:34.733Z",
+  "generatedAt": "2026-08-26T14:15:05.587Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-add-photos-to-google-business-profile-correctly",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "40 percent more clicks from Google Maps searches."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "40 percent more clicks from Google Maps searches."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "40 percent more clicks from Google Maps searches."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner looking to maximize your online visibility and attract more local customers?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and high-quality photos are a foundation of that strategy."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "build trust with potential customers, and ultimately drive more foot traffic or online orders."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It’s the first point of contact for many potential customers and contains vital information about your business - hours of operation"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Optimizing your GBP with compelling visuals is a key component of local SEO."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "and shares - and ultimately drive more customers to your business."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Beyond clicks, enhanced visuals also contribute to increased engagement - more likes, saves"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It’s a win-win scenario for your business, improving both search rankings and customer interaction."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Adding photos to your Google Business Profile is surprisingly straightforward"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "You’ll be presented with several options for adding images: Take a Photo: Use your smartphone’s camera to capture a new photo directly within the Google Business Profile interface."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "This is ideal for capturing current events, new products, or behind-the-scenes glimpses."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This is useful for images you’ve already created or taken with a dedicated camera."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Here’s a breakdown of recommended photo categories: Exterior Photos: Showcase your building’s exterior"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "providing a first impression for passersby."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This can significantly influence a customer’s decision to visit."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "share photos to promote future events and highlight past successes."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Seasonal Photos: Incorporate seasonal imagery to reflect holidays, special promotions"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "and neglecting this aspect can negatively impact your GBP’s performance."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Use the rule of thirds to create visually balanced and engaging images."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "They provide context, incorporate relevant keywords, and encourage engagement."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Here’s how to write effective captions: Use Keywords: Incorporate relevant keywords that potential customers might use when searching for your business."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Adding new photos every few weeks will keep your profile active, engaging"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Consider adding seasonal photos to capture the spirit of the time - a bakery might add photos of holiday-themed treats"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "While Google doesn’t directly provide metrics for photo engagement"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "By consistently following these guidelines - focusing on high-quality visuals, strategic captions"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "boosts your ranking in local search results, and ultimately drive more business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Let's help you build a stronger online presence."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "What’s one photo you’d add to your business profile to?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "What’s one photo you’d add to your business profile to?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

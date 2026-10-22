@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-18T18:44:17.321Z",
+  "generatedAt": "2026-08-26T14:15:02.882Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "content-marketing-ideas-for-local-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Get found: 10 positive reviews can boost your local visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Get found: 10 positive reviews can boost your local visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Get found: 10 positive reviews can boost your local visibility."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a local business owner staring at a website that doesn’t bring in customers and a social media presence that feels…well"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many small businesses struggle to cut through the digital noise and connect with the people right in their community."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It’s about understanding what your neighbors are searching for and providing helpful answers - right where they are looking."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Your goal is to connect with potential customers who are actively searching for what you offer."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s the first thing most people see when they search for your services."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Include your hours, a detailed description of your services, high-quality photos"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "If you’re a plumber in Denver, someone searching for “leaky faucet repair” needs to find you."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Our experienced plumbers can diagnose the problem and get your faucet flowing smoothly again."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Don't write marketing fluff; write what a local person needs to know."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A simple, polite request for a review after a job is completed can go a long way."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Keep it simple - a quick email or a note on the invoice works wonders."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Don’t try to overhaul your entire marketing strategy overnight."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Make sure your hours, photos, and services are perfect."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "They aren’t searching for \"best marketing strategy\" or \"innovative website design."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Write posts or simple answers that match those exact searches."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Don’t try to do everything at once."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Showing up consistently is better than posting once a month and then stopping."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This is the easiest, most important place people find you locally."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "People trust what they see way more than just reading text."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Don’t try to do everything at once."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Showing up consistently is better than posting once a month and then vanishing."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "People trust what they see more than just reading text."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "More reviews mean more visibility for you."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Regular small updates are better than one big push and then silence."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "People trust what they see more than long paragraphs."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Ready to stop guessing and start getting found?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Contact Fused Distribution today to learn how we can help you build a winning content marketing strategy for your local business."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "What’s one simple content strategy you’d be willing to implement?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "What’s one simple content strategy you’d be willing to implement?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

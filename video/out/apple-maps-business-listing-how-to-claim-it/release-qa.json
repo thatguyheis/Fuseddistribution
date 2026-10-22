@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-26T19:21:05.070Z",
+  "generatedAt": "2026-08-26T14:15:01.657Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "apple-maps-business-listing-how-to-claim-it",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A staggering 60 percent of local searches happen on Apple devices."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A staggering 60 percent of local searches happen on Apple devices."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "A staggering 60 percent of local searches happen on Apple devices."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to be found on Apple Maps?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Claiming your Apple Maps business listing is crucial for local visibility and attracting customers."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "but many businesses miss out on the benefits because they don’t know where to start."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "That’s a massive opportunity to capture customers who are actively looking for businesses like yours."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Also, Apple Maps often prioritizes local businesses that have a strong presence across their system"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It’s not just about being present; it’s about being discoverable."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Finally, and crucially, you need to be the owner or authorized representative of the business."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Claiming your Apple Maps business listing is surprisingly straightforward."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Here’s a detailed breakdown of the process: Step 1: Download the Apple Maps App - If you haven’t already"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Step 4: Claim Your Listing - If your business appears in the search results"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Step 5: Verify Your Business - Apple will guide you through the verification process."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This typically involves one of the following: Phone Verification: Apple will send a text message with a verification code to the phone number listed on your business profile."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Category: Select the most relevant category for your business (e."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Photos: Add high-quality photos of your business, products, and services."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "” Claiming your Apple Maps listing isn’t always smooth sailing."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Here are some common mistakes to avoid: Incorrect Information: Ensure all information - address"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Missing Verification: Don’t skip the verification step."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Complete all sections of your profile to provide potential customers with the information they need."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Here are a few tips: For more on this, see Pay Per Click Vs Organic SEO For Small Business."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Use Relevant Keywords: Incorporate keywords that customers are likely to use when searching for businesses like yours."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Respond to Reviews: Respond to both positive and negative reviews promptly and professionally."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "This creates a cohesive and recognizable brand experience for your customers."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "you can track your success by monitoring the following: Number of Views: Track how many times your listing is viewed."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Direction Requests: Monitor how many customers request directions to your business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "claiming and optimizing your Apple Maps listing will become increasingly important for your business’s success."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Let’s help you build a stronger online presence."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Contact Fused Distribution today for a website design and SEO consultation tailored to your local business needs."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How do you think this will impact your local business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How do you think this will impact your local business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

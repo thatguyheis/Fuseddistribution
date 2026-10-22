@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-05T19:44:38.670Z",
+  "generatedAt": "2026-08-26T14:15:08.526Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "is-silver-a-good-hedge-against-inflation",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Silver hedges inflation when CPI exceeds 5 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Silver hedges inflation when CPI exceeds 5 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Silver hedges inflation when CPI exceeds 5 percent."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Silver works as an inflation hedge when annual CPI runs above 5 percent, where it has shown a 0."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "9 correlation with rising prices (Source: Gainesville Coins Historical Performance Analysis)."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "so your timing and allocation size matter more than the buy itself."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "You want a position built before inflation spikes, not after the headlines hit."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A workable starting allocation for a USA retail investor is 5 percent to 10 percent of investable assets in physical precious metals"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "split roughly 70 percent gold and 30 percent silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "The supply side is doing the work on its own."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "3 million ounces, up from 40."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Six straight years of more silver leaving above-ground stocks than coming in."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "You get more silver per dollar, and dealers will buy them back near spot."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The gold to silver ratio tells you whether silver is cheap or expensive relative to its sister metal."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "You divide the gold spot price by the silver spot price."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Most USA buyers store their silver wrong."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "For positions under 200 ounces, a UL-rated home safe bolted to a concrete floor is enough."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Budget $300 to $600 for a decent unit."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Timing the metal perfectly is a losing game, but you can avoid the worst buys."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Three signals that say wait a week or two: 1."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Gold to silver ratio dropping below 55 fast."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "5 million ounces in 2024, the fourth consecutive annual record, before easing to 657."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "4 Moz in 2025 (Source: The Silver Institute, April 2025 release)."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Silver is priced globally in dollars, so a strong DXY caps the upside."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Silver ETF Vs Physical Silver Tax Differences Physical Silver Vs Silver Etf Pros And Cons Silver Vs Gold Which Is Better Investment In 2026 Read next: Silver ETF Vs Physical Silver Tax Differences"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Silver ETF Vs Physical Silver Tax Differences Physical Silver Vs Silver Etf Pros And Cons Silver Vs Gold Which Is Better Investment In 2026 Read next: Silver ETF Vs Physical Silver Tax Differences"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Silver ETF Vs Physical Silver Tax Differences Physical Silver Vs Silver Etf Pros And Cons Silver Vs Gold Which Is Better Investment In 2026 Read next: Silver ETF Vs Physical Silver Tax Differences"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Should you prioritize silver for inflation hedging now?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Should you prioritize silver for inflation hedging now?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

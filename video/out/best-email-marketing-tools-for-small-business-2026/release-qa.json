@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-24T00:50:56.948Z",
+  "generatedAt": "2026-08-26T14:15:01.833Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "best-email-marketing-tools-for-small-business-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Get 6x more leads with a simple, local offer."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Get 6x more leads with a simple, local offer."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Get 6x more leads with a simple, local offer."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Want to know the best email marketing tools for small business 2026?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "You need a simple plan that gets you noticed by the local customers who actually need your service."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "without the fancy jargon or the long-term contracts."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Or a free thirty-minute chat about a specific project."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "For example, a local bakery could offer a free cookie with any purchase made before noon."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Think about the psychology of a local customer."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Instead of saying “We’ve helped many families in the area,” try: “Last week, we helped Mrs."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Johnson from Maple Street fix her leaky faucet, saving her time and money."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Consider including a photo of the project you completed, or a short video testimonial."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "For instance, if someone signs up for a free consultation"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A simple, “Ready to discuss your project?"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Don’t be afraid to offer additional value in your follow-up emails."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A local landscaping company could share a before-and-after photo of a recent project in their neighborhood."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Let’s be honest, many email marketing tools are overly complex and intimidating."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Start with a basic email marketing platform that integrates with your website and Google Business Profile."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Don't just tell people what you’re doing."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Share a quick story from a happy customer in your area."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This builds trust faster than any big marketing push."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A local plumber could share a photo of a recently completed repair with a brief description of the problem and the solution."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A local plumber could share a photo of a recently completed repair with a brief description of the problem and the solution."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Make sure your email sign-up links right to where they can actually find you."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "We specialize in building beautiful, effective websites and driving targeted traffic through SEO"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "ensuring your local business thrives in the digital age."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Let's discuss how a tailored marketing strategy can transform your business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "So, what’s one specific action you’d take to boost local?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "So, what’s one specific action you’d take to boost local?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

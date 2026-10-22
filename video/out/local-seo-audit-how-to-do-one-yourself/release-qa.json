@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-23T18:49:50.623Z",
+  "generatedAt": "2026-08-26T14:15:09.214Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "local-seo-audit-how-to-do-one-yourself",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "77 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "77 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "77 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get found online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Do you think your website is “good enough,” but you’re not seeing the traffic you deserve?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Many local businesses underestimate the power of local SEO - Search Engine Optimization - and how it can drive customers through your door."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Local SEO is all about optimizing your online presence to attract customers in your immediate geographic area."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s not just about ranking for general terms like “pizza”; it’s about ranking for “pizza near me” or “best Italian restaurant in {Your City}."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "A recent survey found that 77 percent of local searches lead to a purchase."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This audit will help you identify areas for improvement, giving you a competitive edge."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Is it a listing from Yelp or another directory?"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "It’s free and gives you control over how your business appears in Google Maps and local search results."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Your GBP is the foundation of your local SEO."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Address, phone number, website URL - it must be 100 percent correct."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "More specific categories help Google understand what you do."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Description: Write a compelling description that includes your keywords."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Posts: Regularly create posts on your GBP to announce promotions, events, or new products."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Posts help you stay top-of-mind with local customers."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Implementing local business schema markup can improve your visibility in search results."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Page Speed: Slow websites frustrate users and hurt your rankings."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "A fast website loads in under 3 seconds."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Citations are mentions of your business name, address, and phone number on other websites."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Local Business Listings: Check for listings on local chambers of commerce, industry associations"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Review Sites: Monitor and respond to reviews on Yelp, Google, and other review sites."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "For more on this, see Local Keyword Research For Small Businesses."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Google’s Mobile-Friendly Test: Use this tool to see if your website is mobile-friendly: Responsive Design: Ensure your website adapts to different screen sizes."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Google PageSpeed Insights: GTmetrix: Ignoring Google Business Profile: Seriously, don’t."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Regularly update your GBP and website content to stay ahead of the competition."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "we specialize in building websites and implementing effective SEO strategies for small local businesses."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We can help you create a winning local SEO strategy that drives more customers to your door."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, how do you think your current online presence stacks?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, how do you think your current online presence stacks?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

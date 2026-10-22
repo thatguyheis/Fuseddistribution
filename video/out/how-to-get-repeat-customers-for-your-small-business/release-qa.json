@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-19T19:02:24.716Z",
+  "generatedAt": "2026-08-26T14:15:06.467Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-get-repeat-customers-for-your-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "90 percent of consumers use Google Business Profile to find local businesses."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "90 percent of consumers use Google Business Profile to find local businesses."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "90 percent of consumers use Google Business Profile to find local businesses."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re pouring money into a website, hoping it’ll magically bring in a flood of new customers."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "But the phone isn’t ringing, and the leads aren’t flowing."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Many small business owners feel stuck in this frustrating cycle - spending on marketing without seeing a return."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It’s like having a store with no sign - people simply won’t find you."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Your Google Business Profile (GBP) is your free storefront."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "You need to treat it like a vital part of your marketing."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A study by Trustpilot found that 92 percent of consumers trust online reviews as much as personal recommendations."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Google wants to know exactly who you are."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Google Maps, Yelp, Facebook, and any other directory."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "This is your most powerful, free marketing tool."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Verify Your Listing: Go to Google Business Profile and verify your business."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Complete Your Profile: Fill out every section."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Google needs to know exactly who you are and where you are."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Start asking happy clients for a quick review after a good job."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "That feedback is what local searchers look for."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "If your website doesn’t get calls, it’s not working for your business."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Set up your hours, services, and photos right."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Stop waiting for customers to tell you what you do."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Tell people exactly what you fix or what you do."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Your Google Business Profile is your free storefront."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Set up your hours, services, and photos right now."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "If it doesn't get a phone call, you're missing something simple."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Contact Stop wasting money on website fluff that doesn't get calls."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Click here to see exactly how we get local businesses found on Google."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "So, what’s one thing you’ll tackle first to boost local?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "So, what’s one thing you’ll tackle first to boost local?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

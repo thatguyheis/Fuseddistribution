@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:02.279Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:08.778Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "largest-silver-producing-countries-in-the-world",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Mexico dominates silver production, accounting for 24 percent of the global supply."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Mexico dominates silver production, accounting for 24 percent of the global supply."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Mexico dominates silver production, accounting for 24 percent of the global supply."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Understanding where the bulk of the world’s supply comes from is crucial for informed decision-making."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and we recommend a diversified portfolio for long-term stability."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and what it means for your investment strategy."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It’s important to remember that production figures can fluctuate due to various factors"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "These fluctuations are often influenced by commodity prices, currency exchange rates"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "accounting for approximately 24 percent of global silver production."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "China: China’s silver production accounts for around 16 percent of the world’s supply."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "8 million ounces of silver in 2023."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "driven by government initiatives to secure a stable supply and reduce reliance on imports."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "7 million ounces in 2023."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "with operations concentrated in regions like Antofagasta and northern Coquimbo."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Several factors influence a country’s silver production capacity."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Regulations concerning water usage, tailings management, and worker safety all play a role."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Political Stability: Stable political environments are crucial for long-term investment and production."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Social license to operate, a concept reflecting community acceptance of mining activities"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Mexico’s relatively lower labor costs compared to some other major producers contribute to its competitive advantage."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Recent developments include the expansion of existing mines and the exploration of new deposits within the region"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Peru’s silver production is heavily concentrated in the Andes Mountains"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "China’s silver production currently represents around 16 percent of the global total."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The Chinese government’s strategic importance of silver"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Increased domestic demand and a desire for greater supply chain control are driving this expansion."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "The future of silver production will likely be shaped by technological advancements"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "and a greater emphasis on sustainable mining practices are expected to play a significant role."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "which utilizes microorganisms to extract silver, could also have a significant impact."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Choose a Reputable Dealer: Select a trusted dealer to purchase your silver."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we offer a wide selection of silver bullion and coins to suit all budgets."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we offer a wide selection of silver bullion and coins to suit all budgets."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering these top silver producers , which ones stand out?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering these top silver producers , which ones stand out?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

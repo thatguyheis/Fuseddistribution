@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-10T19:11:26.199Z",
+  "generatedAt": "2026-08-26T14:15:01.601Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "apmex-review-2026-premiums-selection-and-service",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "APMEX premiums typically range from 1 percent to 3 percent, offering a solid investment foundation."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "APMEX premiums typically range from 1 percent to 3 percent, offering a solid investment foundation."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "APMEX premiums typically range from 1 percent to 3 percent, offering a solid investment foundation."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you considering investing in silver and precious metals?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "This comprehensive review will break down everything you need to know about APMEX in 2026"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "focusing on their premium selection, service quality, and how to make informed decisions."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "They’ve built a reputation for competitive pricing, secure transactions, and reliable shipping."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "In 2026, APMEX continues to adapt to market dynamics and customer needs"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "meaning they add a premium to the spot price of the metals they sell."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "” You’ll need to provide personal information and agree to their terms and conditions."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Fund Your Account: APMEX accepts various payment methods, including bank wire transfers"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Browse the Inventory: Explore their extensive catalog of silver and precious metals."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Let’s break down the key factors influencing the price you pay: Product Type: Coins typically have higher premiums than bars due to their rarity and collectibility."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Metal Type: Gold generally commands a higher premium than silver."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "purchasing 10 one-ounce silver rounds might have a lower premium than buying a single round."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Not Checking Shipping Costs: Shipping fees can add significantly to the total cost of your purchase."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Using Unsecure Payment Methods: Stick to secure payment methods like bank wire transfers to protect your financial information."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "APMEX is generally praised for its customer service and shipping reliability."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Returns: APMEX has a straightforward return policy."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "However, return shipping costs are typically the responsibility of the buyer."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "While APMEX is a strong contender, it’s wise to compare them to other reputable dealers."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "As of today, August 9, 2026, APMEX’s average premium on popular silver bars (1 kg) is 2."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "25 percent for JM Bullion buyers."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "APMEX boasts an impressive inventory of silver and precious metals"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Supply Chain Issues: Continued supply chain disruptions could impact the availability of metals and potentially drive up premiums."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "as a result, APMEX’s premiums."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Investing in silver and precious metals is a long-term strategy."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "we encourage you to explore their website ( and begin your journey into the world of precious metals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "we encourage you to explore their website ( and begin your journey into the world of precious metals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Remember, consistent research and informed decisions are key to long-term success."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering investing in silver?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "What’s your biggest concern when choosing?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

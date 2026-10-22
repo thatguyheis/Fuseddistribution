@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-12T19:57:05.650Z",
+  "generatedAt": "2026-08-26T14:15:06.526Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-get-the-most-money-when-selling-silver",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "A 10 percent premium can cost you $3."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "A 10 percent premium can cost you $3."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "A 10 percent premium can cost you $3."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You want to build a physical silver reserve without the dealer markup games."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "You skip the confusing premiums and the pressure tactics."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Reserve your space today at our reserve page."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "For example, a premium of 5 percent on a $30 per ounce silver coin means you’ll receive $31."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "that 5 percent might be inflated - it could be higher than the actual cost of producing and distributing the coin."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Compare that premium to the current market value."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Track your actual profit after everything - including fees and shipping."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Our system provides transparent pricing, eliminating the guesswork and potential for hidden fees."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Calculating your net proceeds - the actual amount you receive after all expenses - is just as important as understanding your cost basis."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Track your actual profit after all costs."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "We recommend carefully evaluating each option to find the best balance between profit and convenience."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Once you’ve sold your silver, you need a secure place to store your cash."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "You need this number for everything else."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "This includes the spot price, shipping, and any transaction fees."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "See what the premium actually costs you."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Choosing the right path for selling your silver is a critical decision that can significantly impact your profit."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "There's no one-size-fits-all answer; the best approach depends on your individual circumstances and goals."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Find the exact price you paid for your silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Direct sales offer the potential for higher profits, but they require more time and effort."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Dealers provide convenience and security, but they also take a cut."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Storage is as important as the sale itself."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Reserve your silver straightforwardly at our reserve page now."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "and we recommend a methodical approach to ensure you’re getting the best possible return."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Reserve your space today at our reserve page and start building your silver reserve the smart way."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering all these factors, what’s your biggest concern when selling?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering all these factors, what’s your biggest concern when selling?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

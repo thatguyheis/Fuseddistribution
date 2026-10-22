@@ -1,11 +1,15 @@
 {
   "slug": "how-to-set-silver-spot-price-alerts-for-free",
-  "pass": true,
-  "errors": [],
-  "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+  "pass": false,
+  "errors": [
+    "MP4 duration 189.06s does not match expected 183.53s",
+    "rendered timeline contains more non-speech time than the approved dialogue gaps allow"
   ],
-  "generatedAt": "2026-08-14T18:25:54.268Z",
+  "warnings": [
+    "captions are proportional; automated three-point sync coverage is required before posting"
+  ],
+  "generatedAt": "2026-08-26T14:15:07.016Z",
   "manualCaptionReview": false,
+  "automatedCaptionReview": null,
   "readyForPosting": false
 }

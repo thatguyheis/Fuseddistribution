@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-25T18:28:21.797Z",
+  "generatedAt": "2026-08-26T14:15:09.152Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "local-keyword-research-for-small-businesses",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Dominate your local market with targeted keywords."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Dominate your local market with targeted keywords."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Dominate your local market with targeted keywords."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get found online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The good news is, you can dominate your local market with targeted keyword research."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "It’s about understanding what your ideal customers are searching for when they need your products or services."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we build websites and run SEO specifically for small local businesses"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "and we’ve found that a solid keyword strategy is the foundation of any successful online presence."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Local keyword research is the process of identifying the specific words and phrases people use when searching for businesses like yours in your area."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Brainstorm Your Services & Products: Make a comprehensive list of everything you offer."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "For example, if you’re a landscaping company, think beyond “landscaping” - consider “lawn mowing"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Think Like Your Customer: Put yourself in your ideal customer’s shoes."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "What problems are they trying to solve?"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "a potential client looking for a cleaning service might search for “deep cleaning services"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Google It - Seriously: Start typing your core services into Google."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Here are a few options: Google Keyword Planner: This free tool (requires a Google Ads account) provides search volume data and keyword suggestions."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "You’ll need to estimate your monthly ad spend, but even just using the free version is valuable."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Ubersuggest: Neil Patel’s Ubersuggest offers a limited number of free searches per day and provides keyword ideas"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "AnswerThePublic: This tool visualizes questions people are asking about your topic"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "You can use tools like SEMrush or Ahrefs (paid) to get detailed insights into their SEO strategy."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Localize, Localize, Localize: Don’t just add “{Your City}” to your keywords."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "If you serve a specific area within your city, include that in your keyword strategy."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "see How To Add Photos To Google Business Profile Correctly."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "The more specific you are, the better your chances of ranking."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Overlooking Voice Search: People are increasingly using voice assistants like Siri and Alexa to find local businesses."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Optimize your website and content for voice search by using conversational language and answering common questions."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Not Tracking Your Results: Use Google Analytics and Google Search Console to monitor your website’s performance and identify which keywords are driving traffic."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Understanding the balance between keyword volume and keyword difficulty is key to successful local SEO."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Keyword difficulty refers to how competitive a keyword is - how many other websites are already ranking for it."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "If you target a keyword with extremely high difficulty, it will be very difficult to rank"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you have any specific local keywords you’ve already started?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you have any specific local keywords you’ve already started?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

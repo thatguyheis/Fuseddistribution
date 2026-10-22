@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-07T20:02:43.614Z",
+  "generatedAt": "2026-08-26T14:15:02.523Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "can-you-put-physical-silver-in-an-ira",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "999 purity silver, a critical requirement for IRA investments."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "999 purity silver, a critical requirement for IRA investments."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "999 purity silver, a critical requirement for IRA investments."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Yes, you can absolutely put physical silver - American Eagles, Canadian Silver Maple Leafs"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "However, it’s not as simple as just opening an IRA and depositing your silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "we stock a wide variety of silver bullion and we recommend careful planning to ensure a smooth and compliant process."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "With a Traditional IRA, contributions may be tax-deductible in the year they are made"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Conversely, with a Roth IRA, you contribute after-tax dollars"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The choice between these two types depends heavily on your individual circumstances"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "SEP IRA: Suitable primarily for self-employed individuals and small business owners"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "a SEP IRA allows for contributions to be made by the employer (or self-employed individual) and can hold physical silver."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "a SIMPLE IRA offers another avenue for investing in silver within a retirement account."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Bullion Purity: The silver must meet a minimum purity standard of ."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Storage: The silver must be stored in a secure, IRS-approved depository facility."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "or Avanza Precious Metals, providing reliable security measures to protect the assets."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Here's a detailed, step-by-step guide to help you navigate the process: For more on this"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Choose an IRA Custodian: Thoroughly research and select an IRS-approved custodian specializing in precious metals."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "customer service responsiveness, and the custodian’s experience with IRA accounts."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "999 fine) and is in a form acceptable to your custodian (e."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "you’ll receive instructions from your custodian on how to ship it to the IRS-approved depository facility."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "This typically involves using a secure shipping service and providing the custodian with the necessary shipping labels and documentation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Purchasing Non-Approved Silver: Investing in silver that doesn’t meet IRS specifications will prevent you from claiming a tax deduction (for Traditional IRAs) or accessing tax-free withdrawals (for Roth IRAs)."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Failing to Track Contributions and Distributions: Maintaining meticulous records of all IRA contributions and withdrawals is crucial for accurate tax reporting."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Not Understanding Storage Fees: Depository fees can vary considerably depending on the facility and the amount of silver stored."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Both silver and gold are often considered safe-haven assets during times of economic uncertainty."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Silver, on the other hand"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Investing in an IRA, particularly with precious metals, can be a complex undertaking."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "As inflation and economic uncertainty continue to be concerns"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "The demand for silver within IRAs is expected to continue to grow"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "driven by increased awareness of its potential benefits as a hedge against economic fluctuations and a store of value."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your biggest concern about investing in?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your biggest concern about investing in?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

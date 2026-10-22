@@ -1,11 +1,15 @@
 {
   "slug": "ai-for-bookkeeping-small-business-tools-compared",
-  "pass": true,
-  "errors": [],
-  "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+  "pass": false,
+  "errors": [
+    "MP4 duration 206.95s does not match expected 0.03s",
+    "rendered timeline contains more non-speech time than the approved dialogue gaps allow"
   ],
-  "generatedAt": "2026-08-02T18:27:31.049Z",
-  "manualCaptionReview": false,
+  "warnings": [
+    "captions are proportional; automated three-point sync coverage is required before posting"
+  ],
+  "generatedAt": "2026-08-30T16:19:06.525Z",
+  "manualCaptionReview": true,
+  "automatedCaptionReview": null,
   "readyForPosting": false
 }

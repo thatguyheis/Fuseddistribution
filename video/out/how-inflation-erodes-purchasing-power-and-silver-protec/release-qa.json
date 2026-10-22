@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-17T18:44:23.201Z",
+  "generatedAt": "2026-08-26T14:15:05.166Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-inflation-erodes-purchasing-power-and-silver-protec",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "1 percent inflation is eating your money , secure your future with silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "1 percent inflation is eating your money , secure your future with silver."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "1 percent inflation is eating your money , secure your future with silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re working harder, but your paycheck doesn’t buy as much as it used to."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we understand this concern."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we recommend it as a proven strategy to safeguard your wealth against the relentless creep of inflation."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Think about it this way: if a loaf of bread costs $2 today, and inflation is 3 percent, in a year"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This erosion of value affects everything - groceries, gas, housing, and even healthcare."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Paper money, particularly fiat currency (like the USA dollar)"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "According to the Bureau of Labor Statistics, the Consumer Price Index (CPI) increased by 3."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "This means your dollars buy less than they did a year ago."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "silver’s value is rooted in its scarcity and intrinsic properties."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "It doesn't rely on the solvency of a government or the whims of the stock market."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Historically, silver has often served as a hedge against inflation"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Research indicates that silver has historically outperformed many other asset classes during inflationary periods."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "9 percent in April 2024"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "the cost of producing silver is relatively low compared to other precious metals like platinum or gold"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "You can acquire a significant amount of silver for a comparatively modest investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "We recommend starting with a small, manageable amount - perhaps $500 to $1"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Consider purchasing silver coins (like American Eagles or Canadian Maples) or rounds."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we offer transparent pricing and straightforward purchasing options."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Data shows that over the past century, silver has averaged an annual return of approximately 6."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "While past performance is not indicative of future results"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "First, determine how much silver you want to allocate to your reserve."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Finally, store your silver safely - a home safe or a secure storage facility is recommended."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "As inflation continues to impact your finances, silver can provide a valuable layer of protection."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Don’t wait until inflation has eroded your purchasing power beyond repair."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "How do you think silver could help you protect your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "How do you think silver could help you protect your?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

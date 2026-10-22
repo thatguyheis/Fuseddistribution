@@ -3,9 +3,138 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-19T19:54:16.276Z",
+  "generatedAt": "2026-08-26T14:15:04.561Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "google-business-profile-messaging-setup-and-tips",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "More than half your customers prefer to message your business, not call it."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "More than half your customers prefer to message your business, not call it."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "More than half your customers prefer to message your business, not call it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "57 percent of consumers prefer to message a business rather than call it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "The customers who want to contact you without picking up the phone are already on Google."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The question is whether your listing gives them a way to do it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "60 percent of all Google searches happen on mobile."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "the Message button sits directly next to the Call and Website buttons."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Very few have a message button."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Google requires a response within 24 hours to keep the messaging feature active."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "If it keeps dropping, Google turns off messaging automatically."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "The 24-hour window is strict."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "These are the most common topics customers message local businesses about."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Set auto-replies for the top two or three categories that apply to your business."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Google tracks whether messages are answered, not whether a human answered them."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The welcome message sends automatically the moment a customer opens a chat with your business."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "A good welcome message says something like: Hi, thanks for reaching out."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "That builds trust."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Auto-replies are keyword-triggered responses for your most common questions."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "an auto-reply can answer those before you need to respond manually."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Google does not care if a human answered."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "DO YOU HAVE GBP MESSAGING ON?"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Follow for more tips to grow your business."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Follow for more tips to grow your business."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

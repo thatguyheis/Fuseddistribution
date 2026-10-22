@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:01.779Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:02.642Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "chatgpt-for-small-business-owners-beginners-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Businesses can cut content creation time by up to 50 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Businesses can cut content creation time by up to 50 percent."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Businesses can cut content creation time by up to 50 percent."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner feeling overwhelmed by marketing and content creation?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and even write blog posts - without spending hours staring at a blank screen?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "This guide will walk you through everything you need to know to start using ChatGPT effectively for your business"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It learns from vast amounts of data and can respond to complex prompts and questions in a creative and informative way."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "It’s not a replacement for human creativity, but it is a powerful tool to augment it."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "You’ll need to provide an email address and create a password."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Iterate and Refine: ChatGPT’s initial responses might not be exactly what you’re looking for."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The more specific you are, the better the results will be."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "“Write a Facebook post announcing our new blueberry muffins, targeting families with young children."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "“Give me 10 social media post ideas for a local landscaping business."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "“Write an email announcing a 20 percent off sale on all outdoor furniture."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "” Creating Website Content: ChatGPT can assist with writing product descriptions, about us pages"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "“Write three different versions of a Facebook ad promoting our web design services."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "it can draft responses to common questions."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "” Vague Prompts: As mentioned earlier, the more specific you are, the better the results."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "businesses using AI tools like ChatGPT can reduce content creation time by up to 50 percent."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This means you could produce twice as much content in the same amount of time."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Marketing ROI: Businesses that actively use AI-powered tools see an average increase of 15 percent in their marketing ROI."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Also, the time saved on content creation can be redirected to other critical business activities."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "A recent survey indicated that 68 percent of small business owners believe AI tools will be crucial to their success in the coming years."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "That’s a clear signal of the growing importance of incorporating AI into business operations."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Chain Prompts: Break down complex tasks into smaller, more manageable prompts."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "we can expect to see even more sophisticated applications for small businesses."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Staying informed about the latest developments and experimenting with different prompting techniques will be key to maximizing the benefits of this powerful tool."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We at Fused Distribution are committed to helping local businesses thrive"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "and we believe that ChatGPT is a valuable asset for anyone looking to improve their marketing efforts."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "and we believe that ChatGPT is a valuable asset for anyone looking to improve their marketing efforts."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How could you realistically apply ChatGPT to your small business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How could you realistically apply ChatGPT to your small business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

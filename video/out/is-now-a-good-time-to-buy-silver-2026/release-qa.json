@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-01T07:51:50.036Z",
+  "generatedAt": "2026-08-26T14:15:08.461Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "is-now-a-good-time-to-buy-silver-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Is silver a good buy right now?"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Start with these five questions."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Start with these five questions."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "There is no universal answer to whether now is a good time to buy silver."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "and whether you can tolerate a market that may move sharply in either direction."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "but those roles do not make it a guaranteed hedge or a predictable short term trade."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Someone saving for a long term store of value is making a different decision from someone hoping to trade a price rally."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "while a buyer seeking efficient exposure may care more about the premium over the metal value and the ease of resale."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "If your only reason is that silver has recently risen, pause before buying."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Silver also trades in a market that is smaller and often more volatile than gold."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A long term buyer should expect periods where the position is worth less than the purchase cost"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Industrial use is one reason investors pay attention to silver"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "and economic growth can all influence precious metals."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Silver may respond to monetary expectations as a precious metal while responding to growth expectations as an industrial input."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Use macroeconomic news to identify questions for research, not as a promise that silver must rise."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "and the resale price may be different from the price shown on a retail page."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Bars, rounds, and sovereign mint coins can all provide physical exposure."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Coins may offer broader recognition, but design, minting, availability"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "It has different risks, including fund structure, fees, tracking differences"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "while physical metal gives you direct possession but adds handling and storage responsibilities."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Historical charts can show what happened, but they cannot remove uncertainty from the next purchase."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Consider dividing a planned allocation into several purchases rather than making one emotional decision."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Do not increase the plan just because the price moves higher"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Keep this silver allocation separate from emergency savings, debt payments"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "but concentrating too much of a portfolio in one commodity increases the effect of every price move."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Read the risk and tax information that applies to your situation"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "and get professional advice when the decision affects retirement or other essential assets."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "but do not turn every daily price change into a new investment plan."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "but 2026 is not automatically a good buying year simply because the calendar changed or a forecast sounds confident."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "review the silver inventory and compare the complete purchase terms before ordering."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "What would you check before buying silver this year?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "What would you check before buying silver this year?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

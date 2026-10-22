@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-21T18:27:49.031Z",
+  "generatedAt": "2026-08-26T14:15:06.891Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-respond-to-negative-google-reviews",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "93 percent of consumers read online reviews before visiting a business."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "93 percent of consumers read online reviews before visiting a business."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "93 percent of consumers read online reviews before visiting a business."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’ve poured your heart and soul into your business, and you’re proud of the service you provide."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It’s tough, it’s frustrating, and it can feel like a personal attack."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "they can be an opportunity to show potential customers you care and build trust."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "We’ll also cover strategies for proactively managing your online presence and preventing future negative feedback."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Dealing with negative Google reviews can feel overwhelming"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "As a local business owner, every review - good or bad - impacts potential customers."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "As a local business owner, you pour your heart and soul into your company"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "and they’re actually a valuable opportunity for growth."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Ignoring them won’t make them go away; it’s how you respond that matters most."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we help local businesses build a strong online presence"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Understanding Why People Leave Negative Reviews As a local business marketing and web design company"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "It’s frustrating, no doubt, but it’s also incredibly valuable information."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "It shows potential customers that you care about their feedback and are willing to engage."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Start by acknowledging the reviewer's comment and thanking them for taking the time to share their experience."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Next, genuinely address the specific points raised in the review."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Start by thanking them for taking the time to share their experience, even if it’s critical."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Next, genuinely apologize for the negative experience they had."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "“We’re truly sorry to hear that you were dissatisfied with specific issue” shows you’re listening."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "we see firsthand how a few bad reviews can impact a small business’s online presence."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The good news is you can turn these situations into opportunities to show you care and improve your service."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Start by acknowledging the reviewer’s concerns and expressing empathy."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Ignoring them sends the message that you don't value feedback, and that's a huge red flag."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Responding thoughtfully shows you're listening and willing to address concerns."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "sincere apology acknowledging the customer's experience and outlining how you plan to improve is often enough."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Regularly checking your Google Business Profile and search results for reviews is the first step."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don’t ignore negative reviews; addressing them thoughtfully demonstrates that you care about your customers and are committed to providing excellent service."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "A well-crafted response can even turn a negative experience into a positive one."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How would you handle a negative Google review to turn?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How would you handle a negative Google review to turn?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

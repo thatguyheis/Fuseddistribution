@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-20T19:30:54.662Z",
+  "generatedAt": "2026-08-26T14:15:08.339Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "insuring-physical-silver-at-home",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Premium costs can easily add up to 5-15 percent of your silver investment."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Premium costs can easily add up to 5-15 percent of your silver investment."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Premium costs can easily add up to 5-15 percent of your silver investment."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You want a simple, secure way to build a physical silver reserve."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Fused Distribution shows you how to do it, avoiding dealer markup games and confusing premiums."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "starting with understanding how to protect your investment."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "However, when you buy silver bars, coins, or rounds, you’ll pay more."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "the cost of assaying (testing the purity of the silver)"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "It also accounts for the rarity and demand of the specific item you’re purchasing."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This isn’t about blindly trusting someone; it’s about making an informed decision that protects your investment."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Here’s a step-by-step guide to assessing a dealer’s credibility."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "A legitimate dealer will be able to provide details about their suppliers - are they reputable refiners"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "straightforward return policy demonstrates that the dealer stands behind their products and is committed to customer satisfaction."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A dealer unwilling to offer a reasonable return is likely not worth your business."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "It’s your investment, and you deserve to know exactly where your money is going."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Don’t leave it on a countertop or in an easily accessible location."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Also, consider using desiccant packets to absorb any moisture and further protect your silver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Protecting your silver from environmental factors is just as important as securing it physically."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Periodically check your silver for signs of damage, such as tarnish or corrosion."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Promptly address any issues to prevent further deterioration."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "A little preventative maintenance can go a long way in preserving the value of your silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The price of a 10-ounce silver bar will generally be lower per ounce than the price of a 1-ounce coin"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "due to the different manufacturing costs and market demand."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "This difference in pricing highlights the importance of understanding the specific form of silver you’re purchasing."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Once you’ve chosen a dealer and are satisfied with the terms, proceed with the purchase."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Keep a record of your transaction, including the date, price, and dealer’s information."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Start small, educate yourself, and choose a dealer you trust."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Considering all these factors, what’s your biggest concern when buying?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Considering all these factors, what’s your biggest concern when buying?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

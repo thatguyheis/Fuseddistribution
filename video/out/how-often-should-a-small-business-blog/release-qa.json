@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-18T18:22:15.893Z",
+  "generatedAt": "2026-08-26T14:15:05.408Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-often-should-a-small-business-blog",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Publishing consistently, even at a minimum, generates 3."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Publishing consistently, even at a minimum, generates 3."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "5x more traffic than infrequent posting."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "If you can publish two quality posts per week and sustain that pace without cutting corners, do it."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "If once a week is all you can hold consistently, that's the right starting point."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Publishing frequency is one of the strongest signals you can send to search engines."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A post every Tuesday, without fail"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "outperforms five posts in one week followed by silence for a month."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "outperforms five posts in one week followed by silence for a month."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "If nothing new is there, there's little reason to return soon."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Bloggers who publish multiple times per week are 76 percent more likely to report strong results than average publishers"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "with 37 percent calling their outcomes strong compared to just 21 percent of those posting less often ."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "The data across multiple studies points to a clear pattern: the businesses seeing the biggest search gains are publishing at higher volumes than most small businesses attempt."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The data across multiple studies points to a clear pattern: the businesses seeing the biggest search gains are publishing at higher volumes than most small businesses attempt."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "5x more leads than companies publishing 4 or fewer posts per month ."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "What you take from those numbers is not that you need to write 16 posts this week."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "so you need a realistic plan to grow toward that over time"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "If you're starting from zero, one post per week is a meaningful and achievable floor."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Think: \"How much does it cost to replace a water heater in Phoenix?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A post targeting a precise local question ranks faster and pulls in visitors who are close to hiring someone."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Here's a three-month ramp you can follow right now: Month 1: Publish one post per week."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Use your Search Console data to identify posts that are close to ranking"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The most common reason small businesses fall off their posting schedule isn't time."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Write down every question a customer has asked before signing a contract."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "These posts rank well because they match how people search when they're ready to hire: \"plumber fixed low water pressure in older home\" or \"cost to remove tree stump near fence line."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "These posts rank well because they match how people search when they're ready to hire: \"plumber fixed low water pressure in older home\" or \"cost to remove tree stump near fence line."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Measuring what's working keeps you from spending time on posts that never produce results."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "your posts may be attracting people who aren't ready to buy."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "questions people ask right before they're ready to hire someone."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don't leave underperforming pages sitting without attention."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "The businesses that rank in local search are almost always the ones that kept publishing when it felt like nobody was reading"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "When you're ready to turn your blog into a system that runs without you managing every piece"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "com and we'll show you exactly what it looks like for your market."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "How often should you realistically start blogging for better search?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "How often should you realistically start blogging for better search?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

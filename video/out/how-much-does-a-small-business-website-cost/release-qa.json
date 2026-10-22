@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-04T21:18:03.222Z",
+  "generatedAt": "2026-08-26T14:15:05.285Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-much-does-a-small-business-website-cost",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Build a website for under $500 and start getting found."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Build a website for under $500 and start getting found."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Build a website for under $500 and start getting found."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "A small business website costs between $500 and $8, 000 to build in 2025"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Where you land depends on one choice: template or custom."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Custom professional sites run $3,000 to $8,000 ."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The template-build tier costs $500 to $2,000 one time."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A freelancer or small agency takes a pre-made theme, swaps in your branding, writes a few pages"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The custom tier costs $3,000 to $8,000 one time ."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Most owners can launch a clean five-page site in a weekend."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Hire a pro if your time is worth more than the savings, if you need custom features"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "or if a sloppy site would cost you customers."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Words and photos cost money if you do not supply them."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Keyword research and local search optimization usually cost extra."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "A vague flat number hides where your money goes and makes it hard to compare bids."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Budget $150 to $300 a year for domain plus hosting on a self-hosted setup."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Ongoing upkeep for a professionally built small business site, covering the domain, hosting"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "and routine updates, averages $150 to $500 per month ."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The second option is why so many small businesses stay on Squarespace or Wix even when a custom site would look better."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Before you sign any build contract, ask one question: what does month two cost?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "If the builder cannot answer, you are about to be surprised."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Pay $16 to $40 a month, do the work yourself, and launch in a weekend."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "You get a professional look without custom-build prices, and you can launch in two to three weeks."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Invest in a custom build at $3,000 to $8,000."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "That total is your real first-year cost, and it is the only figure worth comparing across quotes."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Once you see it written down, the right tier for your business gets obvious"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "and you can stop guessing and start getting found."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Which website path best fits your business goals and budget?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Which website path best fits your business goals and budget?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

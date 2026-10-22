@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-15T19:17:44.370Z",
+  "generatedAt": "2026-08-26T14:15:06.651Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-know-if-your-website-is-working",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "35 percent , Google Business Profile engagement is up year over year."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "35 percent , Google Business Profile engagement is up year over year."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "35 percent , Google Business Profile engagement is up year over year."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Do you run a local business and feel like your website is just… there?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many small business owners operate under the assumption that a website automatically translates into business"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "If you can’t track a call or lead directly from your site, you’re essentially flying blind."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A website is a vital piece of the puzzle, but it’s not the whole picture."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The first step is to establish a simple tracking method to understand where your leads are coming from."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Without this data, you’re operating on assumptions, and assumptions rarely lead to success."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Make sure your profile is complete - include your business hours, address, phone number, website URL"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Upload high-quality photos of your business, both inside and out."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Don’t just passively view your profile; actively engage with customers who leave comments or ask questions."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Positive reviews are incredibly influential, especially for local businesses."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Google prioritizes reviews that originate from its own platform."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The visibility test is all about understanding if people are actually finding your website when they need your services."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Google uses your profile as a key indicator of your business’s relevance."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Search for your exact service and your city."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "If you're not in the top three, you need to address your local SEO strategy."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Positive reviews build trust and credibility, influencing potential customers’ decisions."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "simply having reviews isn’t enough; you need to understand where those reviews are coming from and how they’re impacting your business."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "If most of your reviews are appearing on social media platforms"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A steady stream of reviews is a sign that you’re providing good service and attracting satisfied customers."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The conversion test focuses on whether your website is actually generating leads and driving business."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "If you can’t track the results of your efforts, you’re essentially guessing."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "A well-designed landing page can significantly improve your conversion rate."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A streamlined contact form will reduce friction and increase the likelihood of a lead becoming a customer."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "A/B testing different versions of your contact form can help you identify the most effective design."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Ready to take your local business to the next level?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Contact Fused Distribution for a personalized website and SEO strategy designed to drive results."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Contact Fused Distribution for a personalized website and SEO strategy designed to drive results."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you know if your website is actually driving business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you know if your website is actually driving business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

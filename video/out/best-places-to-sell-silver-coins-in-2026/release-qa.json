@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-17T19:02:57.631Z",
+  "generatedAt": "2026-08-26T14:15:01.945Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "best-places-to-sell-silver-coins-in-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Maximize your silver return with strategic selling."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Maximize your silver return with strategic selling."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Maximize your silver return with strategic selling."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you looking to turn your silver coin collection into cash?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "In 2026, navigating the market to get the best price for your coins requires careful consideration."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Fused Distribution understands this, and we’re here to guide you through the market."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Online platforms, for example, often offer convenience and speed"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Local dealers provide a more personal touch, but their pricing might be less competitive."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "but require more research and understanding of the auction process."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Don’t just rely on their advertisements - seek independent opinions."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "but they require a different approach."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Understanding this process - how the auction works and how prices are determined - is essential."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "When evaluating local dealers, go beyond their advertisements."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Ask about their grading process and how they determine the value of your coins."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "A reputable dealer will be willing to answer your questions honestly and provide a detailed explanation of their pricing."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Don’t simply accept the first offer you receive."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "When looking at local dealers, check their history."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "such as the American Numismatic Association (ANA)."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Some online platforms offer secure storage solutions, but these typically come with additional fees."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "When looking at local dealers, check their history."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "A reputable dealer may offer storage options, but it’s important to understand the associated costs."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Segment your collection based on rarity, condition, and market demand."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Research current market trends and pricing for your specific coins."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Online resources, such as reputable coin price guides and online marketplaces"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Fused Distribution remains committed to providing our customers with transparent pricing"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "We’ll continue to adapt to the changing market and offer innovative solutions for selling your silver coins."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Let us help you navigate the world of silver sales and achieve your financial goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "So, which selling channel do you think offers the best?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "So, which selling channel do you think offers the best?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

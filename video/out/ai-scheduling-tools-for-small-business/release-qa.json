@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-30T18:59:52.782Z",
+  "generatedAt": "2026-08-26T14:15:01.374Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "ai-scheduling-tools-for-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Here’s a punchy hook line based on the article, aiming for maximum impact:"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Here’s a punchy hook line based on the article, aiming for maximum impact:"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Here’s a punchy hook line based on the article, aiming for maximum impact:"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to juggle appointments, calls, and client meetings?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Thankfully, artificial intelligence (AI) scheduling tools are emerging as powerful solutions"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "This guide will explore how these tools can transform your scheduling process"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "The functionality of AI scheduling tools is built upon a series of interconnected processes."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Integration: Most AI scheduling tools prioritize smooth integration with existing business systems."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "ensuring that your schedule remains synchronized across all channels."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Confirmation & Automated Reminders: Upon a client’s selection of an appointment time"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Crucially, it also initiates a series of automated reminders leading up to the appointment"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "AI scheduling tools handle rescheduling requests efficiently."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Here’s a look at some popular options catering specifically to small businesses: Calendly: Arguably the most well-known"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "It’s a solid starting point for many businesses looking for a straightforward solution."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Doodle: Particularly well-suited for group scheduling and finding mutually available times"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Time Savings: Automating scheduling tasks is a significant time saver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "including scheduling."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Reduced No-Shows: One of the most immediate benefits is a reduction in no-show rates."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Here’s a step-by-step guide to ensure a smooth transition: For more on this"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "considering factors such as pricing, integrations, ease of use, and customer support."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Connect Your Calendar: Integrate the chosen tool with your existing calendar platform (Google Calendar"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Share the link to the client portal on your website, social media channels, and email signature."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "thoroughly test it to ensure all features are functioning correctly."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Ignoring Client Feedback: Actively solicit and incorporate feedback from your clients regarding the scheduling process."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "track key performance indicators (KPIs) related to scheduling efficiency and client satisfaction: Appointment Volume: Monitor the number of appointments you’re booking each month."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "track key performance indicators (KPIs) related to scheduling efficiency and client satisfaction: Appointment Volume: Monitor the number of appointments you’re booking each month."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Client Satisfaction: Gather feedback from clients through surveys or direct communication to gauge their satisfaction with the scheduling process."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "By automating the often-time-consuming process of scheduling appointments"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don’t hesitate to explore the available options and embrace the power of AI to transform your scheduling workflow."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Start exploring the options available today and see how an AI scheduling tool can significantly benefit your business."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all these options, what scheduling tool would you recommend?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all these options, what scheduling tool would you recommend?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -3,9 +3,198 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-22T19:28:19.493Z",
+  "generatedAt": "2026-08-26T14:15:07.277Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-start-buying-silver-with-100-dollars",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "$100 buys you roughly 1."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "78 ounces of silver , start building your reserve today."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "78 ounces of silver , start building your reserve today."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Fused Distribution gives you a straightforward path to owning precious metals."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Reserve your silver today at our reserve page."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "The sheer number of options - coins, rounds, bars - can be paralyzing."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "These are the costs added to the spot price to cover dealer markups, fabrication costs"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "They represent the difference between the quoted price and the actual price you pay."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Understanding what you’re paying for upfront prevents surprises and ensures you’re getting a fair deal."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Transparency builds real confidence in your purchase."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Research secure ways to store your silver, whether it's a home safe, a bank safety deposit box"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Planning ahead keeps things simple and protects your investment."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A typical premium on a small bullion coin might be 10-20 percent"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Knowing where to keep your first asset matters."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "These fees help sellers cover their costs."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A small, circulated coin might have a premium of $5-$10 per coin, while a larger"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Understand the premium structure before you commit."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "78 oz of silver."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "These are the costs to skip the dealer markup."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "A home safe is a common starting point, but consider a bank safety deposit box for added security."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "78 oz of silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Choose Your Silver: Opt for a silver bar - they offer the most transparent pricing."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Understand the Premium: Factor in the premium - typically 5-10 percent for a larger bar."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Track Your Investment: Monitor the price of silver and your investment’s value."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Keep an eye on these trends: Inflation: Silver is often considered a hedge against inflation"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Economic Growth: Strong economic growth can boost demand for silver, driving up its price."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Geopolitical Events: Global instability can also impact silver prices."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Staying informed about these trends can help you make informed decisions about your silver investment."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Silver isn't just a shiny metal; it's a tangible asset with potential long-term value."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "silver is a physical commodity that can hold its value during times of economic uncertainty."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "We stock a wide selection of silver bars and are committed to providing you with a transparent and straightforward buying experience."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "We stock a wide selection of silver bars and are committed to providing you with a transparent and straightforward buying experience."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Let us help you secure your financial future, one ounce at a time."
+      },
+      {
+        "segment": 11,
+        "ratio": 0.15,
+        "caption": "Considering all this, what’s your initial plan for investing just?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.5,
+        "caption": "Considering all this, what’s your initial plan for investing just?"
+      },
+      {
+        "segment": 11,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

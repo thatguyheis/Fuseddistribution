@@ -1,26 +1,26 @@
 {
   "slug": "email-marketing-local-business",
   "title": "How to Build an Email List That Actually Brings Customers Back",
-  "totalDuration": 50,
+  "totalDuration": 38.819,
   "segments": [
     {
       "type": "hook",
       "startSec": 0,
-      "endSec": 3,
+      "endSec": 3.8,
       "text": "Email returns $42 for every $1 you spend.",
       "narration": null
     },
     {
       "type": "overlay",
-      "startSec": 3,
-      "endSec": 13,
+      "startSec": 3.8,
+      "endSec": 14.613,
       "text": "$42 return per $1 spent",
       "narration": "Email marketing has the highest ROI of any marketing channel, $42 back for every dollar spent. No algorithm decides who sees it. No ad budget required. Your list belongs to you."
     },
     {
       "type": "chart",
-      "startSec": 13,
-      "endSec": 26,
+      "startSec": 14.613,
+      "endSec": 23.706,
       "title": "Average Open Rate by Email Type",
       "bars": [
         {
@@ -48,16 +48,16 @@
     },
     {
       "type": "overlay",
-      "startSec": 26,
-      "endSec": 36,
-      "text": "~25% of emails get opened",
-      "narration": "About one in four people on your list will open every email you send. Organic social media reach often falls below 5 percent. The difference is direct access to people who already know your business."
+      "startSec": 23.706,
+      "endSec": 32.919,
+      "text": "About 25 percent of emails get opened",
+      "narration": "About one in four people on your list will open an email. Organic social reach can fall below 5 percent. Email gives you direct access to people who know your business."
     },
     {
       "type": "cta",
-      "startSec": 36,
-      "endSec": 50,
-      "text": "Full breakdown — link in comments.",
+      "startSec": 32.919,
+      "endSec": 38.819,
+      "text": "Full breakdown, link in comments.",
       "narration": "The full guide covers building your list, what to send, and which tools to start with for free."
     }
   ]

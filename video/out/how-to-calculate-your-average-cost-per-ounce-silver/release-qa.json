@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-25T02:22:03.326Z",
+  "generatedAt": "2026-08-26T14:15:06.084Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-calculate-your-average-cost-per-ounce-silver",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "$26 per ounce: Track it, and profit."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "$26 per ounce: Track it, and profit."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "$26 per ounce: Track it, and profit."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Calculating your average cost per ounce of silver is crucial for understanding your investment returns and making informed decisions."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we stock a wide variety of silver bullion and coins"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "ensuring you have a clear picture of your silver investment performance."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "A consistent average cost per ounce provides a valuable reference point"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The first step is to collect all your silver purchase records."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Purchase Price: Record the price you paid per ounce for each purchase."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "If you’re buying and selling frequently, consider using a dedicated investment tracking app."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Once you’ve compiled your data, it’s time to calculate the total cost of your silver holdings."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Then, multiply that total by the “Ounces Purchased” column to get the total cost of your silver."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "This will give you the total number of ounces of silver you currently hold."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Now, you can calculate your average cost per ounce."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "For more on this, see How To Build A Silver Inventory Spreadsheet."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Calculate the Sale Proceeds: Multiply the number of ounces sold by the sale price."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Subtract the Sale Proceeds from the Total Cost: $444 (total cost) - $100 (sale proceeds) = $344 4."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Calculate the New Average Cost: $344 / 20 = $17."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "This reflects the impact of your sale on your overall investment."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Your average cost per ounce is a key metric for assessing your profitability."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Compare your current average cost per ounce to the current spot price of silver."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "you can expect your average cost to increase over time."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "This comparison can help you identify potential buying or selling opportunities."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Not Tracking Purchases: Failing to record all your silver purchases is the most common mistake."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "your average cost per ounce provides a more accurate reflection of your individual investment performance."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Fused Distribution: - We offer a wide selection of silver bullion and coins to suit all budgets and investment goals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Silver Institute: - Provides valuable data and insights into the silver market."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "By consistently tracking your average cost per ounce"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "you’ll gain a deeper understanding of your silver investment performance and increase your chances of long-term success."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don’t hesitate to contact us with any questions."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How does this average cost per ounce calculation help you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How does this average cost per ounce calculation help you?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

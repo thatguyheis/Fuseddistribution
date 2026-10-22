@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T12:24:02.153Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:01.429Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "ai-tools-for-small-business-marketing-in-2026",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Key insight from the post."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "AI tools can help a small business produce marketing work faster"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Start with one task that already consumes time each week, such as drafting social posts"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Keep a person responsible for the final decision, factual checks, and brand voice."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "This guide explains which AI marketing tools are worth testing, how to choose them"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Write down the marketing work you repeat every week."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Good first candidates have a clear format and a human reviewer."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Give the tool your audience, offer, proof, tone, channel, length"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "A useful prompt can follow this format: 1."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Proof: years in business, service area, and verified credentials."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "This keeps weekly work recognizable and reduces review time."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Remove personal details, group repeated questions"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Categories might include first questions, comparison questions, purchase concerns"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "use the guidance in Bing Places for Business setup and your local profiles to keep service details consistent across search touchpoints."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "AI can help draft welcome emails, appointment reminders, quote follow-ups"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "The automation should still depend on real customer actions, not guesses."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Do not place sensitive customer details, payment data, medical information"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Keep prompts limited to the information needed for the message."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "AI can help organize location details, service descriptions, frequently asked questions"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "A tool that writes in ten seconds but needs thirty minutes of repair is not saving time."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Include setup and review, not just the first response."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Recheck the scorecard each quarter because product features, limits, and prices change."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Compare the new process with your previous four weeks when possible."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "A faster content process is useful, but it should eventually support a customer action."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "review pay per click versus organic SEO before assigning budget to AI-generated campaign ideas."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "move from drafting one weekly email to adapting that approved email into two social posts."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "The right AI marketing setup in 2026 is the one your team can understand, review, and measure."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Start with a real bottleneck, protect your source facts"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "What's your take?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Follow for more practical business tips."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

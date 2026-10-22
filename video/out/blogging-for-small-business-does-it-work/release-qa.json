@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-16T18:30:48.385Z",
+  "generatedAt": "2026-08-26T14:15:02.293Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "blogging-for-small-business-does-it-work",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "70 percent of local searches lead to phone calls."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "70 percent of local searches lead to phone calls."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "70 percent of local searches lead to phone calls."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner tired of throwing marketing dollars at things that don’t translate into local customers walking through your door?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many small businesses struggle to see a return on their marketing investments"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Blogging for small business does work, but not in the way most people think."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Let’s be honest: most small business owners get caught up in the trap of tracking metrics that don’t actually reflect business growth."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Website clicks, social media likes, and blog post views - they all look good on a spreadsheet"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "The key is to shift your focus from these vanity metrics to what truly matters: calls, leads"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "They’re about answering the specific questions your potential customers are asking when they’re searching for your services."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "For example, if you own a landscaping business in Austin, Texas"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "not a detailed explanation of different types of irrigation systems."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A well-written blog post that addresses a local search query will naturally feed into your GBP"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "When someone searches for “best pizza near me"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "” your blog post about “the best pizza places in {Your Town}” can signal to Google that you’re a relevant local business."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "A steady stream of relevant content keeps Google seeing you as active and engaged in your community."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Consider a content calendar to plan your topics and schedule your posts."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "When you’re writing your blog posts, focus on answering exact local search queries."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Instead, write about the specific problems you solve in your area."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "“How to fix a leaky faucet in {Your City}” is far more effective than “Tips for Plumbing."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "” Think about the common questions you hear from customers and address them directly in your blog posts."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Don’t get caught up in chasing website clicks if they’re not translating into calls."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Focus on measuring the number of calls you receive as a direct result of your blog content."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "If you’re not getting calls, your content isn’t local enough."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "blogging offers a unique advantage: it’s a cost-effective way to improve your local search ranking and drive organic traffic to your website."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "It’s also a great way to establish yourself as an authority in your industry."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Don't waste money on expensive advertising campaigns if you're not optimizing your online presence for local search."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Track Your Results: Monitor your calls and website traffic to see what’s working."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We specialize in helping local businesses get found on Google."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Contact us today for a free consultation and let’s build a strategy that drives calls and customers to your door."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Do you think blogging is a worthwhile investment for your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Do you think blogging is a worthwhile investment for your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

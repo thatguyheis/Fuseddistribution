@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-08T17:22:48.743Z",
-  "manualCaptionReview": true,
+  "generatedAt": "2026-08-26T14:15:04.864Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "google-business-profile-setup-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Claim your profile and get found by 90 percent of local searches."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Claim your profile and get found by 90 percent of local searches."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Claim your profile and get found by 90 percent of local searches."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to get found online?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "It’s surprisingly easy, and it can dramatically improve your visibility in Google Search and Maps."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "At Fused Distribution, we help local businesses like yours thrive online"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "It’s not just about being listed; it’s about being found."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The first step is to claim your business profile."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "If your business is listed, you’ll see a “Claim” button."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "If it’s not listed, you’ll need to create a new profile."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Search for your business: Enter your business name and location."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "If it’s not, you’ll be prompted to create a new profile."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "you can instantly verify by uploading a copy of your business license or utility bill."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The verification process is critical; without it, your profile won’t be fully functional."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "This is where you really make an impact."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Business Name: Use your official business name - exactly as it appears on your signage and legal documents."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "” or “LLC” unless that’s how you’re officially registered."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "This is a direct path for customers to learn more about your business."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Photos: Add high-quality photos of your business, products, and team."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Services: If you offer services (e."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Adding products allows customers to purchase directly through Google Shopping (if applicable)."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Google prioritizes profiles that are actively managed."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Monitor your analytics: Google Business Profile provides analytics on how people are finding and interacting with your profile."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Let’s address some common pitfalls that can hurt your GBP’s performance."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Incomplete Information: As mentioned earlier, incomplete information is a major problem."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Inconsistencies can confuse customers and hurt your search ranking."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Ignoring Reviews: Ignoring reviews sends the message that you don’t care about your customers."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Direction Requests: How many people are requesting directions to your business?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Staying informed about these changes is crucial for maintaining a successful GBP."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Features like rich results, messaging, and AI-powered insights are continually being rolled out."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Ready to claim your profile and boost your local visibility?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Ready to claim your profile and boost your local visibility?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
   "readyForPosting": true
 }

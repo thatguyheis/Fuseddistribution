@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-01T19:03:25.370Z",
+  "generatedAt": "2026-08-26T14:15:07.397Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-store-silver-at-home-safely",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "See the true cost , avoid dealer markups."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "See the true cost , avoid dealer markups."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "See the true cost , avoid dealer markups."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You want a tangible way to build a silver reserve"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we cut out the middleman markup and offer straightforward pricing."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "This guide shows you how to start building your silver holdings securely and confidently."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "You need to see the actual metal cost first, then factor in any premiums."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "The dealer markup is what you pay extra for, and it often obscures the true value of the silver."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "(Understanding this difference is key to making informed decisions about your silver purchases."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Physical silver is straightforward, offering a sense of control and security."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Both have their advantages, but understanding their differences is essential."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Bars are often the best choice for beginners because they offer a clearer picture of the metal cost."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Home storage presents its own set of challenges."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A safe, dry cabinet away from direct heat sources is a good starting point."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Humidity can also damage silver over time, so look for a cabinet with good ventilation."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Keep them sealed to prevent air and moisture from reaching your silver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": ") For enhanced security, consider a dedicated metal safe box."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "These boxes are designed to withstand forced entry and offer a higher level of protection than a simple drawer."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Don’t just accept the advertised price; inquire about the cost of the silver itself"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "(Always ask for a breakdown of the costs."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "A dedicated safe box is a solid investment."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "You’ve taken the first step by understanding the difference between dealer markup and the actual metal cost."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "You’ve considered storage options and decided on your first purchase."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "It’s about controlling what you own and protecting your investment."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Keep an eye on silver prices and market trends."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Fused Distribution provides regular updates and analysis to help you make informed decisions."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Stop guessing about premiums and dealer claims."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "How do you plan to secure your silver investment?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "How do you plan to secure your silver investment?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

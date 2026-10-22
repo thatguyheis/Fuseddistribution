@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-12T18:50:04.657Z",
+  "generatedAt": "2026-08-26T14:15:02.997Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "customer-referral-program-how-to-start-one",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Referrals generate 2x more qualified leads than ads."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Referrals generate 2x more qualified leads than ads."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Referrals generate 2x more qualified leads than ads."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Want to know how to start a customer referral program that actually brings in new business?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "Many small business owners feel like they’re throwing money at ads without seeing a return."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and a well-designed referral program can tap into that."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we build websites and SEO strategies for local businesses"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "If you’re ready to stop guessing and start getting calls"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "Stop wasting money on online ads that disappear into the digital noise."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Let’s be honest: most referral programs are complicated."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "They require a ton of effort from the referrer, and they’re often confusing to understand."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Don’t just say “tell a friend."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "A vague request is likely to be ignored."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "The fewer steps involved, the more likely people are to participate."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "A simple link to a landing page with a clear call to action is often the best approach."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "You don’t need a complicated CRM or expensive software."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Knowing the answer to these questions will help you optimize your program."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Aim for a 30 percent referral rate - that’s the average percentage of customers who will refer someone."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Focusing on rewarding the most valuable referrals is key."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "Do you want them to book a service, sign up for a free consultation, or leave a review?"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "If it takes more than two steps, people won’t do it."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The person sending the referral needs a real incentive, and the new customer needs a real benefit."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "This isn’t just a nice gesture; it’s a system designed to encourage repeat participation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "the greater the reward they receive."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we specialize in helping local businesses like yours thrive online."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "effective websites and implement targeted SEO strategies to ensure you're found by the customers who need your services."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Let’s talk about how a referral program can transform your business and drive sustainable growth."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Contact us today at /#contact to schedule a free consultation."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "We’ll help you create a referral program that’s tailored to your specific needs and goals."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We’ll help you create a referral program that’s tailored to your specific needs and goals."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, what’s the easiest way you think a small business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, what’s the easiest way you think a small business?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

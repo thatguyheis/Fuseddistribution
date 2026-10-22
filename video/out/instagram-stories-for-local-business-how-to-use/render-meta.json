@@ -1,11 +1,16 @@
 {
   "slug": "instagram-stories-for-local-business-how-to-use",
-  "renderedAt": "2026-07-16T09:15:20.276Z",
+  "productionMeasurement": {
+    "wallSeconds": 3835.2871493330003,
+    "nodePeakRssKiB": 57936,
+    "memoryScope": "Node renderer only; excludes child processes and GPU memory"
+  },
+  "renderedAt": "2026-09-13T19:04:10.173Z",
   "hookType": "statement",
   "segmentCount": 11,
-  "scriptDuration": 189.545,
-  "renderedDuration": 184.128,
-  "scriptHash": "55fa953026e3b64e023f13bf92321e38de7e16a5feecc2349e2c1ece332d5a8e",
+  "scriptDuration": 189.785,
+  "renderedDuration": 184.277333,
+  "scriptHash": "438091cddff5463df2eca5f3d74695f5e892a0c770dc941481cb46315ddef9f8",
   "voice": "chatterbox",
   "captionMode": "proportional",
   "musicTrack": "mixkit-forest-treasure-138.mp3",
@@ -22,19 +27,19 @@
     "dialogueGapSeconds": 0.2,
     "finalCardPadSeconds": 0.5,
     "audioDurations": {
-      "0": 3.28,
-      "1": 22.34,
-      "2": 20.1,
-      "3": 18.42,
-      "4": 17.66,
-      "5": 19.88,
-      "6": 17.26,
-      "7": 17.54,
-      "8": 17.9,
-      "9": 21.84,
-      "10": 5.36
+      "0": 4.76,
+      "1": 18.08,
+      "2": 20.28,
+      "3": 20.68,
+      "4": 21.08,
+      "5": 20.88,
+      "6": 20.08,
+      "7": 17.74,
+      "8": 21.84,
+      "9": 10.48,
+      "10": 5.92
     },
-    "totalNarrationSeconds": 181.58
+    "totalNarrationSeconds": 181.82
   },
   "musicRights": {
     "status": "approved",
@@ -47,7 +52,13 @@
   "photoCount": 11,
   "videoCount": 0,
   "mediaSources": {
-    "local-photo": 3,
-    "pixabay": 8
-  }
+    "open-generative-ai-local": 1,
+    "fused-generated-background-library": 1,
+    "local-photo": 9
+  },
+  "storyboardRoute": "storyboard-production",
+  "paperCollageSegments": [
+    0,
+    5
+  ]
 }

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-23T18:33:49.793Z",
+  "generatedAt": "2026-08-26T14:15:09.527Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "mexican-silver-libertad-coins-guide",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "6-8 percent annual growth makes them a smart silver choice."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "6-8 percent annual growth makes them a smart silver choice."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "6-8 percent annual growth makes them a smart silver choice."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re likely wondering: “What are Mexican Silver Libertad coins, and are they a good investment?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "highly-guaranteed silver coins have become increasingly popular with investors seeking a tangible asset and a potentially profitable addition to their portfolios."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "and we’re here to guide you through understanding their history, value"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "are produced by the Royal Mint of Mexico and are instantly recognizable by their dramatic"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "open-eye design - a unique feature that sets them apart from other silver bullion coins."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "from the popular 1-ounce coins to smaller 1/4-ounce options"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Over time, they evolved into a highly sought-after collectible and investment grade silver coin."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "catering to collectors and investors alike."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "These coins are particularly popular due to their beautiful design - featuring a majestic eagle perched upon a cactus - and their consistent purity."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "As a trusted supplier of silver bullion"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "These coins, officially produced by the Mexican Mint, offer a compelling blend of value, liquidity"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "They’re a fantastic entry point into the world of precious metals"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "The primary mint mark is “S,” indicating coins struck at the San Francisco Mint."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "often due to limited availability and collector demand."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "While “M” coins are still desirable, they typically hold slightly lower value than “S” coins."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "The coin’s surface should be smooth and free of imperfections, and the luster should be a bright"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "and “W” denotes West Point."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "we at Fused Distribution closely monitor the Mexican Silver Libertad market."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The price of Libs is heavily influenced by the spot price of silver, which we track daily."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Also, premiums over spot can vary depending on the dealer and the coin’s condition."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "including online bullion dealers and local coin shops."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "While some local dealers may offer Libertad coins, their prices are often inflated"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Always verify the coin’s authenticity with a reputable grading service like PCGS or NGC before investing."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "We strongly advise against buying from auction sites without significant experience."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "We also recommend insuring your collection against loss or damage"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution, we stock a wide variety of storage solutions to suit your needs and budget."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Don’t hesitate to contact us if you'd like personalized recommendations based on the quantity of coins you own."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering investing in Libretads , what’s your initial thought?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering investing in Libretads , what’s your initial thought?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

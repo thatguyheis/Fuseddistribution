@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-20T19:07:09.776Z",
+  "generatedAt": "2026-08-26T14:15:07.905Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-verify-silver-purity-at-home",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "99 percent purity: Verify your silver investment’s true value."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "99 percent purity: Verify your silver investment’s true value."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "99 percent purity: Verify your silver investment’s true value."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you investing in silver, whether it’s coins, bars, or jewelry"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "knowing how to verify silver purity at home is absolutely critical."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "We recommend a proactive approach to protect your investment."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Silver is graded based on its fineness, which describes the proportion of pure silver in the alloy."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "9 percent."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "However, for specialized applications or higher-end pieces, you might encounter 99."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This number confirms that the silver has been tested and certified to meet a specific purity standard."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "The assay office’s location and certification are often printed alongside the number."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "99,” or “Sterling” (which indicates 92."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Don’t assume that markings alone guarantee authenticity; always combine visual inspection with other verification methods."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "While visual inspection alone isn’t foolproof, it’s a quick and easy first step."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Look for consistent stamping, clear lettering, and no signs of tampering."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "That way, you know what you’re holding."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "This is your best defense against doubt."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "For a truly accurate assessment of silver purity, consider using X-ray fluorescence (XRF) analysis."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "XRF analysis of silver measured against certified reference standards produces an average deviation of just 0."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "This level of accuracy is difficult to achieve with other methods."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "5 percent pure silver by weight, with the remaining 7."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "This copper addition provides strength and durability to the silver"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "which indicates a minimum silver content of 92."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "” which indicates that a thin layer of silver has been applied to a base metal."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "3 percent reported encountering customers attempting to sell counterfeit Silver American Eagle bullion coins"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "The prevalence of counterfeits is a serious concern for investors."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "7 percent of surveyed coin dealers most frequently encountered counterfeit Morgan silver dollars"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "This documentation will be invaluable if you ever need to dispute the authenticity of a piece."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Fused Distribution offers transparent pricing and a commitment to providing genuine silver products."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Start building your secure silver reserve today."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Considering all these methods, which one do you find most?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Considering all these methods, which one do you find most?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

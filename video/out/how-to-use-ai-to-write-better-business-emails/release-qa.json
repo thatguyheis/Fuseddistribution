@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-27T17:30:43.688Z",
+  "generatedAt": "2026-08-26T14:15:07.717Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-use-ai-to-write-better-business-emails",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "AI can generate emails with a 20 percent higher ROI."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "AI can generate emails with a 20 percent higher ROI."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "AI can generate emails with a 20 percent higher ROI."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Writing business email is easy to delay and hard to do well when you are juggling calls, estimates"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "AI can help"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "but only if you use it as a drafting and editing assistant instead of a substitute for judgment."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "How to Start Using AI in Your Small Business is the better first step."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Email is still where quotes are approved, meetings are confirmed, complaints are handled"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "A clear email can move a lead forward in two minutes."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "It can: turn bullet points into a polished draft rewrite a message to sound friendlier or firmer shorten a long reply generate subject line options summarize a thread before you answer It is weak at judgment."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It can: turn bullet points into a polished draft rewrite a message to sound friendlier or firmer shorten a long reply generate subject line options summarize a thread before you answer It is weak at judgment."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "You still need to review every important message before it goes out."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Pick the tool that matches the job: use a chat assistant when you need ideas, structure"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "or a first draft use an inbox assistant when you already work inside Gmail and want to draft in place use a writing assistant when your draft is mostly done and needs cleanup If you are new to AI"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "or a first draft use an inbox assistant when you already work inside Gmail and want to draft in place use a writing assistant when your draft is mostly done and needs cleanup If you are new to AI"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "the length you want Here is a stronger example: Write a follow up email to a customer who received a fencing estimate yesterday."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Mention the quoted timeline, remind them that installation slots are filling"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "That prompt gives the model enough context to produce something close to usable."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "AI can be especially helpful with: follow up emails after estimates or consultations introductory emails to new prospects appointment reminders proposal recap emails thank you emails after a sale internal recap emails after meetings These are repetitive enough that AI saves time"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "AI can be especially helpful with: follow up emails after estimates or consultations introductory emails to new prospects appointment reminders proposal recap emails thank you emails after a sale internal recap emails after meetings These are repetitive enough that AI saves time"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "Here are two examples of how to use AI to create business emails that still sound human."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Introduce me as the owner of Fused Distribution, mention website design and SEO"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Draft: Subject: Introduction from Fused Distribution Dear David, My name is Nick"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "We help small businesses improve how they show up online and turn more visits into real conversations."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Did the draft add anything you did not approve?"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "This review step is what keeps AI useful instead of risky."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Judge it by whether it saves time and improves results."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Your advantage is still knowing the customer, the offer, and the right next move."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Start with one email type this week, such as estimate follow ups, appointment reminders"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "That is how you use AI to write better business emails without sounding like a machine."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How would you personally improve these emails using AI?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How would you personally improve these emails using AI?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

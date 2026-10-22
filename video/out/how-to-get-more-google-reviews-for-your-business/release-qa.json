@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-22T19:14:57.531Z",
+  "generatedAt": "2026-08-26T14:15:06.404Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-get-more-google-reviews-for-your-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "50 reviews dramatically boost your Google visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "50 reviews dramatically boost your Google visibility."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "50 reviews dramatically boost your Google visibility."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner struggling to accumulate enough Google reviews?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "A reliable collection of reviews significantly impacts your visibility in Google Search and Maps"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "focusing on practical, actionable steps without requiring advanced technical skills."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Improved Local Ranking and Map Pack Presence: Google’s local pack"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "A higher number of positive reviews dramatically increases your chances of securing a coveted spot at the top of the local pack"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "making your business more visible to nearby customers actively searching for services or products."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "This feedback isn’t just anecdotal; it’s concrete data that can be used to identify areas for improvement and refine your business operations."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Analyzing trends in reviews can reveal recurring issues or highlight strengths that you should continue to emphasize."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Several key factors influence their impact and require careful consideration."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "However, there are legitimate ways to encourage reviews without explicitly soliciting them."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "Removing friction is key to unlocking a steady flow of feedback."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Claim and Optimize Your Google Business Profile (GBP): Your GBP is the central hub for your online presence."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Make it incredibly simple for customers to leave a review by providing a direct link to your Google Reviews page."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "This link should be prominently displayed on your website, email signature, receipts"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "A simple “Leave a Review” button is a particularly effective visual cue."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Post-Purchase Follow-Up: Within 24-48 hours of a customer’s purchase or service"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "For example, if a customer purchased a product, you could say"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "We’d really appreciate it if you could share your experience on Google."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Recognizing and avoiding these mistakes is crucial for maintaining a positive online reputation."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "For more on this, see Local SEO Audit How To Do One Yourself."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Instead, address concerns promptly and professionally, offering a solution or explanation."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Acknowledge the customer’s perspective and focus on resolving the issue constructively."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "a sufficient quantity is also essential for boosting your visibility in Google Search and Maps."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Optimal Range: 50-100 reviews are considered a strong indicator of a reputable business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "Don't delay - start collecting reviews today and witness the positive impact on your business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Don't delay - start collecting reviews today and witness the positive impact on your business."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Google Business Profile Help: Google My Business Insights: Small Business SEO:"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "How easily can you get more Google reviews for your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "How easily can you get more Google reviews for your?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

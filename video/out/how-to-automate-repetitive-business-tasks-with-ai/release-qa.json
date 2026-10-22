@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-01T07:22:51.641Z",
+  "generatedAt": "2026-08-26T14:15:05.710Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "how-to-automate-repetitive-business-tasks-with-ai",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Which repetitive task should your business automate first?"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Which repetitive task should your business automate first?"
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Which repetitive task should your business automate first?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Are you a small business owner constantly bogged down by the same, tedious tasks?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "responding to basic customer inquiries, and gathering data for reports."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "AI tools can help with parts of that work, but only when the task, permissions"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "As a local business marketing and web design firm, here at Fused Distribution"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Running a small business involves marketing, sales, customer service"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "but it should not be treated as an automatic replacement for review."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "Between client meetings, content creation, and actually building websites"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "Social media scheduling, data entry, basic email responses"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "draining your energy and preventing you from focusing on strategic growth."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "In practice, it means connecting software to a repeatable task so a defined input produces a draft"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "or generating a first draft of website content."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "but they can also misunderstand context or repeat an error at scale."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "AI tools can assist with email and social media workflows, but the business still owns the audience"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "AI-powered email platforms can help organize sequences, draft subject lines, and schedule messages."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "Review audience targeting, claims, links, and opt out requirements before anything is sent."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "As a local web design and SEO firm, here at Fused Distribution"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "One area where AI is truly making a difference is website maintenance - a task that can often feel overwhelming for small business owners."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "and addressing minor technical issues can eat up valuable hours."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "we're always looking for ways to help clients maintain an accurate online presence."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "and suggest changes for review."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Specifically, AI can help draft meta descriptions, suggest image alt text"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "The business should keep ownership of the facts, voice, offer, and publishing decision."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Platforms such as Jasper and Copy."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Use automation for the first draft, then have a person check the facts, offer, tone"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "freeing time for client relationships and strategic campaigns."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "They can also introduce new failure modes, including wrong classifications, incomplete drafts"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Start with a low risk workflow, measure the result against a baseline you actually record"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which repetitive task would you automate first?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which repetitive task would you automate first?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

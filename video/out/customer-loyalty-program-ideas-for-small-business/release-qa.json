@@ -3,9 +3,168 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-07-19T19:18:54.772Z",
+  "generatedAt": "2026-08-26T14:15:02.939Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "customer-loyalty-program-ideas-for-small-business",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "92 percent of consumers trust online reviews, build loyalty that way."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "92 percent of consumers trust online reviews, build loyalty that way."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "92 percent of consumers trust online reviews, build loyalty that way."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "You’re pouring your heart and soul into your local business"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "But you’re noticing a pattern: great first-time customers, then… silence."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Many small business owners struggle to turn those initial positive experiences into repeat business."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "You don’t need a fancy digital system to build loyalty; you need to be present and attentive."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "This gets you the feedback you need when it matters most."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "A study by BrightLocal found that 92 percent of consumers trust online reviews as much as personal recommendations (BrightLocal"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "A small, branded item or a handwritten note goes a long way."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "That kind of connection builds real loyalty."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Think about a simple, personalized thank-you card with a small discount code for their next visit."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "Tie it to the specific service they just got."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "A good trigger message might be: “We’re so glad you enjoyed your job!"
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "Would you mind taking a quick moment to share your experience on Google/Facebook?"
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "Getting reviews isn’t just about asking; it’s about creating a positive experience that naturally leads to a review."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "Focus on exceeding customer expectations and providing exceptional service."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "You don’t need a fancy program to get more reviews."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "It shows you care about the person, not just the transaction."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "You need a way to keep the work coming back."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "It’s about making the next interaction easy and valuable for the customer."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "Or maybe a handwritten note with a small branded item."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "Customer loyalty isn’t just about repeat business; it’s about building a brand that people connect with."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "When you prioritize genuine relationships, you create a community around your business."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "Focus on creating a positive experience that naturally leads to repeat business and word-of-mouth referrals."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "Remember, the most valuable asset you have is your customers - treat them with respect, appreciation"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "Ready to see how we actually get your business found on Google?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "How can you make building customer loyalty feel less like?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "How can you make building customer loyalty feel less like?"
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "Follow for more practical business tips."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }

@@ -3,9 +3,183 @@
   "pass": true,
   "errors": [],
   "warnings": [
-    "captions are proportional; a three-point manual sync review is required before posting"
+    "captions are proportional; automated three-point sync coverage is required before posting"
   ],
-  "generatedAt": "2026-08-09T18:58:50.132Z",
+  "generatedAt": "2026-08-26T14:15:02.704Z",
   "manualCaptionReview": false,
-  "readyForPosting": false
+  "automatedCaptionReview": {
+    "slug": "comex-silver-delivery-process-explained",
+    "mode": "proportional",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Comex delivery fees can cost $15-$30 per thousand ounces."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "Comex delivery fees can cost $15-$30 per thousand ounces."
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "Comex delivery fees can cost $15-$30 per thousand ounces."
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "Ever wondered how you actually get your physical silver delivered after buying it through a Comex futures contract?"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "At Fused Distribution"
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "Simply buying a contract doesn’t automatically mean you’ll receive a shiny bar in the mail."
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "Comex, the Commodity Exchange, is a key player in the silver market"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "Essentially, when you purchase silver through Comex"
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "We stock a wide variety of silver bars and coins to suit different investment goals."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "a Comex silver contract represents an agreement to deliver a specific quantity of physical silver at a predetermined date in the future."
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "When you purchase a silver futures contract"
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "Deliveries occur when a contract matures - typically every three months."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "offering a tangible asset you own outright."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "and this delivery process ensures you’re receiving actual silver bars or coins."
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "We then coordinate with Comex to arrange for the delivery of your requested amount."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "These warehouses are crucial to the delivery process for physical silver."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "you’re buying a contract that represents a specific quantity of physical silver stored in one of these facilities."
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "We stock a wide variety of silver products, including Comex silver bars and rounds"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "At Fused Distribution, we understand that buying silver for delivery can seem complex"
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "so we want to break down exactly how we stock and manage our inventory to ensure a smooth and reliable process for our USA retail buyers."
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "999 fine silver, stored in secure, climate-controlled facilities."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "It’s a surprisingly straightforward process, and we’re here to break it down."
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "The first step involves placing an order for a specific silver quantity with your dealer"
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "Once your order is confirmed and payment is processed"
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "which fluctuates based on market conditions and the volume being shipped."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "35 per troy ounce for delivery to most USA locations."
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "We also factor in insurance costs to protect your investment during transit."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "reputable bullion depositories like Brink’s and First Trust."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "Ultimately, the best delivery method depends on your individual circumstances."
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "We’re here to answer any questions and help you make the most informed decision for your investment."
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "So, what’s the most confusing part of this delivery process?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "So, what’s the most confusing part of this delivery process?"
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "Follow for more silver news."
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
 }
