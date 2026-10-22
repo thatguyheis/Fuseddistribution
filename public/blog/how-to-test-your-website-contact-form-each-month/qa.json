@@ -1,0 +1,29 @@
+{
+  "slug": "how-to-test-your-website-contact-form-each-month",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-17T01:17:04.375898+00:00",
+  "review_notes": [
+    "Owner authored and reviewed article and eight topic-specific narration segments against primary guidance. No performance guarantees.",
+    "Owner inspected actual hero and square JPEG exports; preferred native diagram process retained.",
+    "Production parser, local QA and narration preflight pass; measured audiovisual release still required.",
+    "Shortened on-screen hook and question labels only; every narration passage remains unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "e848bf877b26e21a38f1e6c6f582b27d771fbc1b27cc56ef4c67ef14f4ed54e4",
+    "index.html": "bf7bff49422b25d9f831226d1db7c7dc9f6e66552556ab022f5def0afb2a6149",
+    "hero.jpg": "f5cc21c67c9458457fc69d3341769b0f0aa87937eb75f02595fa3f78f8d1b94f",
+    "social-copy.json": "827be89104ed32fdc6189ffb070771f6bccbdcf3480c2e698dda29867cb150fa",
+    "hero.svg": "ead59fdfaf95918e1376ea3758426576bbb1820578e71a96796c297066b0f2ab",
+    "reel-data.md": "21d3c821ad3730e48309cc561bc377b99da626ed129131c9241b56f6ee75df90",
+    "photo-post.svg": "1b6e5b1b3876c09c921301af4ac1ced13df5262063969c1f126c2a6110894e98",
+    "research.json": "95d1435da251f994666936fa00bef0e612a82aea2a32086fd498ef0de3733ac5",
+    "hooks.json": "7e4dea65db54e0fbd53c9e01890904b8c835b845ee7b871023e7a6412b112fd4",
+    "reel-script.md": "580dbab31d8ae98b7d852ee7fef9bb9b343d6d325e02cca6948c2bb615ba7efe",
+    "gemma_draft.md": "b0991be563669679b294ada4fbe759fb33f9a757c0e492b2be1c9503786e727a",
+    "photo-post.jpg": "e80764ec40fcdbc30e8bff649998e3b8ce1f90fbc161e05f45a22507536ec109",
+    "meta.json": "2184f6dc82f79f0a83981790dc6b091292d13eb77673dc619f49b9b279e47a50"
+  }
+}

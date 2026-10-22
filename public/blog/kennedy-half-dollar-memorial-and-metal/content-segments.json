@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "planVersion": 1,
+  "model": "gemma3:4b",
+  "helper": "/Users/nick/projects/fuseddistribution/scripts/ollama-local-no-think.sh",
+  "generatedAt": "2026-10-20T17:26:33.659Z",
+  "totalWords": 790,
+  "telemetry": {
+    "opening": {
+      "resumed": true,
+      "attempts": 0,
+      "seconds": 0,
+      "words": 184
+    },
+    "sections": {
+      "s01": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 119
+      },
+      "s02": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 146
+      },
+      "s03": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 113
+      },
+      "s04": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 96
+      },
+      "s05": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 84
+      }
+    }
+  }
+}

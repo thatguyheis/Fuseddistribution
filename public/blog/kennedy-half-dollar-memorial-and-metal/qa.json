@@ -1,0 +1,33 @@
+{
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "score": 98,
+  "pass": true,
+  "blockers": [],
+  "mode": "coin-history-automated",
+  "automaticApproval": {
+    "policy": "coin-history-auto-v1",
+    "model": "gemma3:4b",
+    "qualityThreshold": 85,
+    "transcriptHashVerified": true,
+    "lastRevision": "Duration-target compression; all factual claims retained and checked against claim-map.json under owner-authorized transcript auto-approval."
+  },
+  "artifactSha256": {
+    "verified.md": "09163a573e840bb723e4896bdbcf5a8b9d49deae2382974c2cb5fc04b32e2970",
+    "index.html": "c2a0164c241e8603990d65cc3b036f2a1d0420a8b6d0eb16d6d440bb58407732",
+    "meta.json": "d915bf990ba731057ac8291573d84ad0e624ff70a290ce0ccbc28638b202c92a",
+    "research.json": "2e4365207526a072f654415f628e5ba565f2e6b4788cfa4eb5b2b59e4d1e2efb",
+    "hero.jpg": "adc102bf8c0247b8dde96db3d1c9fbe2530a0c2135092b94a47339c3ebacbd39",
+    "photo-post.jpg": "dfd50ba2eec570d752fdd99ae91cd574cbabc6bffe9d47efc33799fe69bfc788",
+    "reel-script.md": "c5c971724196d1cd652424b8f796a13885b89807b3b67c1d7b8fc6a374ca5107",
+    "reel-script-approved.md": "c5c971724196d1cd652424b8f796a13885b89807b3b67c1d7b8fc6a374ca5107",
+    "reel-data.md": "7aa8ae2c7fb368a6384b2354ab26d6b37f7324f78c189010e0f1cbffa3b02af2",
+    "social-copy.json": "c1f9c1ce1392e7f63ab7692e2dd26951e413e7d3302ab28f8f7f6bba37ca5ae5",
+    "production-inputs.json": "1f1f1927ae7c9b2c3c6ce202738c9b6f513376f608b649fbb72afd203eb3f15d",
+    "image-sources.json": "ebdd73de292c336f684192afb5c517a1df3865452cb47d9fef2f1aaf4edbb8a2",
+    "content-plan.json": "b4ef7c6e0e4da10aa994ffdc6b7d9f1dbf30a52c7f8526916294fa9e2867d62f",
+    "pipeline-marker.json": "ecd233de9cd55c169ce0b3857d2a52d1f6aae8589b63b84911230b83e098e7cb",
+    "content/coin-history/kennedy-half-dollar-memorial-and-metal/narration-v1-approved.txt": "54a1d6618bca59ccdb025bf2489fe449f0d193423e8c1b910f87d5ce17565e56",
+    "content/coin-history/kennedy-half-dollar-memorial-and-metal/script-approval.json": "37e06450ad22ee2d5bd2c0d05c3d00ec11b942e8c7135edab067eb35094b8f6d",
+    "content/coin-history/kennedy-half-dollar-memorial-and-metal/claim-map.json": "3b586712cf38be8b31f18d92913b36130215b8e2d12fdf9de46d7d6f32ceffde"
+  }
+}

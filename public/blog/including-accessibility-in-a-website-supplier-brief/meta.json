@@ -1,0 +1,27 @@
+{
+  "slug": "including-accessibility-in-a-website-supplier-brief",
+  "title": "Include Accessibility in a Website Supplier Brief",
+  "description": "Include accessibility responsibilities, acceptance evidence and ongoing support in a website supplier brief so unresolved questions have a clear owner.",
+  "alt": "Website supplier brief connects accessibility responsibilities",
+  "brand": "tech",
+  "date": "2026-10-04",
+  "modifiedDate": "2026-10-04",
+  "tags": [
+    "Operations",
+    "Websites"
+  ],
+  "ctaLine": "Would you prioritize a polished demo or documented accessibility checks from a supplier?",
+  "contentGraphic": {
+    "label": "Include Accessibility in a Website Supplier Brief",
+    "rows": [
+      {
+        "condition": "Describe the website work in scope",
+        "action": "Agree on a specific evaluation target"
+      },
+      {
+        "condition": "Make content responsibilities explicit",
+        "action": "Define how findings become repairs"
+      }
+    ]
+  }
+}

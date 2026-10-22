@@ -1,0 +1,38 @@
+{
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "title": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change",
+  "description": "Follow the Kennedy half dollar from its rapid 1963 authorization to the 1965 change in silver content, with Mint production details and a sourced timeline.",
+  "ogDescription": "Follow the Kennedy half dollar from its rapid 1963 authorization to the 1965 change in silver content, with Mint production details and a sourced timeline.",
+  "alt": "Kennedy half dollar obverse, owner photo",
+  "brand": "silver",
+  "date": "2026-10-20",
+  "modifiedDate": "2026-10-20",
+  "tags": [
+    "Coin history",
+    "American coins",
+    "kennedy half dollar"
+  ],
+  "ctaLine": "Explore more verified stories from American coin history.",
+  "status": "draft-automated-qa-pending",
+  "contentGraphic": {
+    "label": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change",
+    "rows": [
+      {
+        "condition": "Memorial",
+        "action": "Authorized in 1963 after a national tragedy."
+      },
+      {
+        "condition": "Production",
+        "action": "Proof dies and two mints moved on a rapid schedule."
+      },
+      {
+        "condition": "Composition",
+        "action": "90% silver in 1964; 40% in 1965."
+      },
+      {
+        "condition": "Design",
+        "action": "Gilroy Roberts and Frank Gasparro designed the two sides."
+      }
+    ]
+  }
+}

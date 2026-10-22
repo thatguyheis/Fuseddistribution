@@ -1,0 +1,25 @@
+{
+  "slug": "including-accessibility-in-a-website-supplier-brief",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-04T13:43:20.279285+00:00",
+  "review_notes": [
+    "Article and companions reviewed against cited primary source context. Practical methods are original; no invented results or guarantees.",
+    "Topic specific exported diagrams visually reviewed together with square variants; correct labels, readable hooks and no substantive clipping.",
+    "Local article QA, production parser and narration duration preflight passed. Actual narration and final render remain pending.",
+    "Complete-sentence companion narration tightened to305\u2013340 words after real Nano speech measured339 words in124.9 seconds. No source claim changed; measured release gate remains required."
+  ],
+  "artifactSha256": {
+    "verified.md": "e56fe493198e4c0de3c375c4b2e6cc003dbbf59d48cae95a0609720c08a74b6d",
+    "index.html": "e000ce892b33f2dc93a7f9f17c3bbde0d63e6cc696de4393b66cfa5e337e57f0",
+    "meta.json": "d03fc8184ec862d4e2601e17274584e1a6563b33277743f025887f4a6adca791",
+    "research.json": "1f1670f251c697b18f32b79cea2d82fff7adfcae8fb5e5315df55af7aef18de9",
+    "hero.jpg": "edf9270848a04a1d0f3ec0b6f34edf559e94cfb48eb248a72c5deb91adad22b7",
+    "photo-post.jpg": "e2d9fa840141eab74c39d904bcc956d6a9f0eedb6f1024704f77dc106d436ccc",
+    "reel-script.md": "3b490021e3200a55a97c6be3d460286a19442ef8b82994bfda5fb026fd864dd4",
+    "reel-data.md": "dc1ed448f9a66856362fce54e85256660d917b95fdcbcbe720f178ff6530c248",
+    "social-copy.json": "fc5c4986659e81c469464ed3d1065152710a26f93e451e93b73d6c8d866d6c46"
+  }
+}

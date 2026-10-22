@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-test-your-website-contact-form-each-month",
+  "reviewedAt": "2026-09-17T01:00:00Z",
+  "sources": [
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "supports": "W3C explains that forms should communicate success and provide clear feedback about errors. The monthly delivery and reply checklist above is our practical operating suggestion."
+    }
+  ],
+  "editorialNotes": [
+    "Primary guidance reviewed. Practical checklist is original operating advice, not a measured performance claim. No invented location, customer example, ranking guarantee, or numerical performance statistic."
+  ]
+}

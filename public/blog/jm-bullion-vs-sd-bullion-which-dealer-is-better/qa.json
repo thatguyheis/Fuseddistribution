@@ -1,0 +1,28 @@
+{
+  "slug": "jm-bullion-vs-sd-bullion-which-dealer-is-better",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:16:59.925381+00:00",
+  "review_notes": [
+    "Owner read complete article and final topic specific narration, verified primary sources and corrected unsupported claims.",
+    "Owner viewed both actual JPEG exports; diagram and sale/cost examples checked.",
+    "Deterministic QA passed. Reel rendering and platform delivery remain separate pending stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "687373c4793a99679e0c05da21a48e6cbe963a49e7981d744ce6570a9da68239",
+    "index.html": "fbe7c4d2df6681176e267a9d22ce6c6cf230b9b1449f0a28371c983186852207",
+    "hero.jpg": "88d5be4e3085bf15bd0ed647ccfe9fd4a774e944a55b3ba0bb8b2b1c28481657",
+    "social-copy.json": "e43d9a0795cad038c5d503887e4e7bc4943314bbad33ab12cb5f783b108c78ea",
+    "hero.svg": "98e761d500c8ab76c79167893bb134551220aa3e2723844364be755f256019ca",
+    "reel-data.md": "1ec340240e88db139b302174eaac5c3fa10c9fcc9f32c4a4a246e4e0686ac0ba",
+    "photo-post.svg": "2671812785341cf151f280ec211b041867164facced105496f6db69d08c8847c",
+    "research.json": "f6bba14c72c66d83843aae16cf3a636dd79624583b2461afff99402f9ae18d74",
+    "hooks.json": "336a11ca5d5c64d58b8fd6868d6cf2759a0ebab9df4fbfa420818b3b13070867",
+    "reel-script.md": "4e8f1536cf6e631436e4a496d9053fdecaaa82735e6bb022b2d91fa4b01f3232",
+    "gemma_draft.md": "687373c4793a99679e0c05da21a48e6cbe963a49e7981d744ce6570a9da68239",
+    "photo-post.jpg": "3bbab5f37d5d0e48c9ebbd31f97114a53e93ffab0d76c3181be8dae8d235eaf5",
+    "meta.json": "c2be0e6df1c8a5f467401b8b11da298bae3216d17c77a0e6c585c9f9a1390cea"
+  }
+}

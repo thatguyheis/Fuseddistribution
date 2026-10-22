@@ -1,0 +1,93 @@
+{
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "transcriptStatus": "approved-hash-verified",
+  "catalogAssetIds": [
+    "coin-0037"
+  ],
+  "sources": [
+    {
+      "title": "Mint engravers’ recollection of Kennedy half-dollar production",
+      "url": "https://www.usmint.gov/content/usmint/us/en/learn/history/historical-documents/mint-engravers-recollection-of-kennedy-half-dollar-production.html",
+      "publisher": "United States Mint",
+      "type": "primary historical document"
+    },
+    {
+      "title": "First striking of half dollars from new coinage material",
+      "url": "https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material-at-u-s-mint-at-denver-on-thursday",
+      "publisher": "United States Mint",
+      "type": "primary historical document"
+    },
+    {
+      "title": "Kennedy half-dollar legislation",
+      "url": "https://www.usmint.gov/learn/history/historical-documents/john-f-kennedy-half-dollar-coin-legislation",
+      "publisher": "United States Mint",
+      "type": "primary legal text"
+    }
+  ],
+  "verifiedClaims": [
+    {
+      "claim": "The Kennedy half-dollar was authorized on December 30, 1963, following Kennedy’s November 22 assassination.",
+      "sources": [
+        0,
+        2
+      ]
+    },
+    {
+      "claim": "Proof dies were delivered January 2, 1964; Denver regular production began January 30; Philadelphia followed the next week; ceremonies took place February 11.",
+      "sources": [
+        0
+      ]
+    },
+    {
+      "claim": "The initial half-dollar design used 90 percent silver, and the 1965 coinage transition reduced half-dollar silver content to 40 percent amid a silver shortage.",
+      "sources": [
+        1
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The Mint’s engraver recollection and Director Adams’s later letter describe different March dates for the first delivery/distribution; the transcript avoids that date."
+  ],
+  "missingEvidence": [
+    "Catalog coin-0037 shows Kennedy half-dollar obverses, but its date is not established by the catalog. Inspect the full original and crop before use; do not identify it as a specific 1964 or 1965 issue."
+  ],
+  "transcriptApprovalSha256": "c041add1c95ddbd7e6fe761bf85159f502f9e8d40bad3019bbbd41fd7497150e",
+  "stats": [
+    {
+      "claim": "K1",
+      "statement": "Kennedy was assassinated November 22, 1963; the half-dollar act was approved December 30.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    },
+    {
+      "claim": "K2",
+      "statement": "Proof dies arrived January 2, regular production began January 30 in Denver and the following week in Philadelphia, and ceremonies took place February 11.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    },
+    {
+      "claim": "K3",
+      "statement": "The 1964 half-dollar was 90 percent silver; 1965 composition changed to 40 percent amid a silver shortage.",
+      "source_name": "First striking of half dollars from new coinage material"
+    },
+    {
+      "claim": "K4",
+      "statement": "The Mint’s engravers recalled selecting the half dollar in late November 1963. The Franklin half had not completed its statutory 25-year design period, so Congress passed legislation authorizing the new design.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    },
+    {
+      "claim": "K5",
+      "statement": "Gilroy Roberts designed the obverse and Frank Gasparro the reverse; the Mint recollection describes adapting existing models during the accelerated project.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    },
+    {
+      "claim": "K6",
+      "statement": "Jacqueline Kennedy suggested portrait adjustments on December 17, 1963; the revised design received approval on December 27, before the December 30 act.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    },
+    {
+      "claim": "K7",
+      "statement": "The Mint's recollection records an initial delivery of about 26 million Kennedy half dollars to the Federal Reserve on March 5, 1964.",
+      "source_name": "Mint engravers’ recollection of Kennedy half-dollar production"
+    }
+  ],
+  "topic": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change"
+}

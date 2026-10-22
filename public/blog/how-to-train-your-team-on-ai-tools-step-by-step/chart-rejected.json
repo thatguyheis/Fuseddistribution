@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "visual_type": "bar",
+  "title": "Content Output Increase with AI",
+  "takeaway": "Introducing AI tools can significantly boost content output for marketing teams.",
+  "source": "Fused Distribution",
+  "source_url": "https://www.fuseddistribution.com/",
+  "data": [
+    {
+      "label": "Content Output Increase",
+      "value": "20%",
+      "metric": "Content Output",
+      "unit": "%",
+      "period": "Since implementing AI training",
+      "evidence": "We\u2019ve seen a 20% increase in content output and a 15% boost in SEO rankings since implementing this training."
+    },
+    {
+      "label": "SEO Ranking Boost",
+      "value": "15%",
+      "metric": "SEO Rankings",
+      "unit": "%",
+      "period": "Since implementing AI training",
+      "evidence": "We\u2019ve seen a 20% increase in content output and a 15% boost in SEO rankings since implementing this training."
+    }
+  ],
+  "hero_stat": {
+    "value": "20%",
+    "label": "Content Output Increase"
+  },
+  "narration": "Fused Distribution\u2019s experience shows that integrating AI into a marketing team\u2019s workflow can lead to a substantial increase in content production. Specifically, they observed a 20% rise in content output alongside a 15% improvement in SEO rankings, demonstrating the tangible benefits of a structured AI training program."
+}

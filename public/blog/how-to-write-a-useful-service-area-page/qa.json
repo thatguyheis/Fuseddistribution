@@ -1,0 +1,29 @@
+{
+  "slug": "how-to-write-a-useful-service-area-page",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-17T01:17:04.379981+00:00",
+  "review_notes": [
+    "Owner authored and reviewed article and eight topic-specific narration segments against primary guidance. No performance guarantees.",
+    "Owner inspected actual hero and square JPEG exports; preferred native diagram process retained.",
+    "Production parser, local QA and narration preflight pass; measured audiovisual release still required.",
+    "Shortened on-screen hook and question labels only; every narration passage remains unchanged.",
+    "Video panel only reviewed 2026-10-05: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-10-05T18-52-23-366Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "6622a7b6c609c4dc68c8809a6420cbfc2ce8ecd1faff89ac6fcb6ef8bffec873",
+    "index.html": "ec6e840c29862d6a37bccd00aeabbc0e17bd6ff46b43ccb404fe7d4a309d72fa",
+    "hero.jpg": "314760e35a0bceaaf20767666b7e30461de5491bacfbbcef699ea314a36582bc",
+    "social-copy.json": "f1fd551a92d216bc3f65c87de3024600863dbefbc6b4abca55f54d2d5dbf0e18",
+    "hero.svg": "a5e004dd3879f96e948cb747cc5e1f959393a48cd9014f4e4be4d7b75dfb5660",
+    "reel-data.md": "e50fbbc99a12a6e85efd697f39efa238aca4db828a8db1725c8780a36a9fe34e",
+    "photo-post.svg": "3fcd9e2127af71f9dbf8da4c900ce57714de7b424f633c5403eb54d867e5887a",
+    "research.json": "8599f74b9a97bfc67b8ea8a7e0ea62fceb09afa8f2f052dd95144edb4f0b9283",
+    "hooks.json": "b7731d4f23ffae1c85c846406110f0615d0312bf96d938d4080473a61810dc38",
+    "reel-script.md": "a83c91522587475b146debbe3082297689177390ebb81b4b83c7cc28b6315ea2",
+    "photo-post.jpg": "d2de258f5f72ce239780152ae7dca1598856a586a0c312e71a8a4ea10510c2aa",
+    "meta.json": "8e9b0f62168fe1c84a52922d820fa5adea64ec6be07377d4810a42c36dcd64db"
+  }
+}

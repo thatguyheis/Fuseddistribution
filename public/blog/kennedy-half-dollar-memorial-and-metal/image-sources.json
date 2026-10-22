@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "assets": [
+    {
+      "path": "images/coin-evidence.jpg",
+      "sha256": "3c08eed270607c406cac59be882e5682af7a5377255bf6b6258f32a9cd1e488e",
+      "source": "Coin Raw/IMG_6648.jpeg",
+      "sourceSha256": "19497c49c357b3523640255b8d41c15756de788e7d8e3106f6b66eff4b55c1dd",
+      "sourceType": "owner-supplied",
+      "assetId": "coin-0037",
+      "label": "Kennedy half dollar obverse, owner photo; no specimen-year claim",
+      "role": "coin evidence",
+      "crop": {
+        "left": 1160,
+        "top": 2360,
+        "width": 800,
+        "height": 800
+      },
+      "page": null,
+      "license": "Owner-supplied; authorized for Fused blog and reel use",
+      "attribution": "Nicholas / Fused Distribution"
+    }
+  ]
+}

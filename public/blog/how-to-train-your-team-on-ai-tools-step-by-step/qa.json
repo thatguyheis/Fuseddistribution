@@ -1,0 +1,30 @@
+{
+  "slug": "how-to-train-your-team-on-ai-tools-step-by-step",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T16:48:57.584798+00:00",
+  "review_notes": [
+    "Full replacement of failed August 2 draft. NIST principles and limitations sourced; proposed exercise is not a certified curriculum or measured Fused program. No invented staff surveys, client results or SEO gains.",
+    "Original queue date August 2 and actual publication September 8 separately recorded. Fictional cases and full-task timing example checked, including 2+4+1=7 and 10-7=3.",
+    "Local QA passes after clarifying the team skills heading. Hero and square artwork visually reviewed. Eight-segment synchronized reel parses and validates at estimated 111 seconds; rendering and audiovisual review pending."
+  ],
+  "sources": [
+    "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+    "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "https://airc.nist.gov/airmf-resources/playbook/"
+  ],
+  "artifact_sha256": {
+    "verified.md": "10a3675918bd83bcf630bbddd9330faea8fee09bddd0f94c943438fc112c01b9",
+    "index.html": "7b9e1c06fc4bf27a776d204723ff3400025ed42e2deed37ad4203cf56ea83539",
+    "meta.json": "796ba8e4294a6de078cdb223b478f34d2ae968271a3a019c8394cbf75127dca8",
+    "hooks.json": "c997404dd6d2be4c56b750e5c93a6c77ad537a42eaa540cc3069d01803659af5",
+    "hero.jpg": "8bda82687eb5a0f3ffba334181874ab3db5dd15c911c2eb506b5131094c9c879",
+    "photo-post.jpg": "774729066851be97a97e27d84bbd4f27dc00613ce7d4e0a1365b42af47139123",
+    "reel-data.md": "659789e20882a4a0abf03a717fddfb90e42bd2f25d47edcba3eebb85eac1742f",
+    "reel-script.md": "375d66de3fc374f41ac60f28c7ef803e514f49be4159bb47c5960245519d7037",
+    "social-copy.json": "9766bc8b433680352a48460d60b057aa96625c339921b48899a474bd12b72ea1",
+    "research.json": "55cd216271110d2a8011df6b3d6ecd5f06bc48d0be3b4be94cee9a8fd673737d"
+  }
+}

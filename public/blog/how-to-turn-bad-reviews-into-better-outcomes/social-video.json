@@ -3,6 +3,15 @@
   "primaryVideo": {
     "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/how-to-turn-bad-reviews-into-better-outcomes/how-to-turn-bad-reviews-into-better-outcomes.mp4"
   },
-  "platforms": {},
-  "updatedAt": "2026-08-18T18:19:00.158Z"
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/lHOE4Nbd_H4",
+      "sentAt": "2026-08-26T22:00:24.011Z"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/reel/Dc_9IyVgr0D/",
+      "sentAt": "2026-09-07T20:20:59.265Z"
+    }
+  },
+  "updatedAt": "2026-09-08T07:24:55.242Z"
 }

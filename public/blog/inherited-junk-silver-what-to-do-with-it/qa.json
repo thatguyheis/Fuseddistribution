@@ -1,0 +1,29 @@
+{
+  "slug": "inherited-junk-silver-what-to-do-with-it",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:04:18.978464+00:00",
+  "review_notes": [
+    "Owner read fullarticle/reel, verified USMint90/40percenthistoric distinctions and IRSrecords scope; count20quarters=$5facevalue, notmeltvalue. OwnerreexportedcorrectSVGstotopicJPEGsandviewedboth.",
+    "QA-local passes. ActualSeptember14publication; originalqueuepreserved. Actualaudio/video pending."
+  ],
+  "artifactSha256": {
+    "verified.md": "4781942b8dc46b97da4b5ef883cb1acb2d7bd71645cf93d3c2db62f542af0ef6",
+    "index.html": "cd0f3191341c2d4781157c633aeb9c76df9dcc32bdb5e84b53101a8d7df45d05",
+    "hero.jpg": "458d4292883ae87fc184761a7580ee6caeb00463a363e121a8e4cf0f7f6ae40a",
+    "social-copy.json": "0d2369bc79deb189c425bda7e02c5d2afa4d510190ea3027c06efe2026f52e16",
+    "hero.svg": "39026254789b164638af8ed5d84dbe393c119d45c1ba5d899f2ca3ad740ee81b",
+    "reel-data.md": "d5316317034be4ee2e13a8b0a252dadaf7ee690eb4270da7eaa1cfea74f9c81f",
+    "square.svg": "2f3b9f12fbe2f9a288f9fd5837c0aa7d43b537082c61599aadcf36eda22a6186",
+    "photo-post.svg": "2f3b9f12fbe2f9a288f9fd5837c0aa7d43b537082c61599aadcf36eda22a6186",
+    "research.json": "17366907bf94db60b6863db2448e70219ee96176ef85a6e10b4ad85e2b97fa09",
+    "hooks.json": "3abd70b7b0ca271562c4ec29ce79dd1ea1b3cac9045e21d0cb07ce9f40b96b74",
+    "reel-script.md": "015dd0a5f5eb786ee3e503524d0fe706eebfa09c411f83bc63389735b2faa740",
+    "gemma_draft.md": "f0d6774b3b990030d57da7473d043d8873ee7bfdb4cbb4f01892c004bab3fa77",
+    "photo-post.jpg": "f78be6516fdc8d5dbd3669362bb3efcc805dab07af1c99d6dcbbf56bf03aaa86",
+    "square.jpg": "f78be6516fdc8d5dbd3669362bb3efcc805dab07af1c99d6dcbbf56bf03aaa86",
+    "meta.json": "78077a744dc2e10449c2b6e5148c4aeabfa572b751c072008a637fd360df8f0f"
+  }
+}

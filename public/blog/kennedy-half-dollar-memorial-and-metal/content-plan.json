@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "editorialProfile": "coin-history",
+  "slug": "kennedy-half-dollar-memorial-and-metal",
+  "title": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change",
+  "brand": "silver",
+  "readerPromise": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change",
+  "reel": {
+    "topic": "How the Kennedy Half Dollar Became a Memorial and a Marker of Change",
+    "promise": "Thirty-eight days from tragedy to coin",
+    "sectionIds": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "A memorial and a new law",
+      "readerQuestion": "How did the new half dollar become legally possible?",
+      "purpose": "Connect the November 1963 selection of the half dollar to the December 30 authorization and the Franklin design\u2019s 25-year statutory period.",
+      "keyPoints": [
+        "Connect the November 1963 selection of the half dollar to the December 30 authorization and the Franklin design\u2019s 25-year statutory period.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "K1",
+        "K4"
+      ],
+      "targetWords": 145
+    },
+    {
+      "id": "s02",
+      "heading": "The portrait took shape under a deadline",
+      "readerQuestion": "Who shaped the design before production?",
+      "purpose": "Credit Gilroy Roberts and Frank Gasparro; describe the documented trial strikes and Jacqueline Kennedy\u2019s portrait suggestions.",
+      "keyPoints": [
+        "Credit Gilroy Roberts and Frank Gasparro; describe the documented trial strikes and Jacqueline Kennedy\u2019s portrait suggestions.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "K5",
+        "K6"
+      ],
+      "targetWords": 145
+    },
+    {
+      "id": "s03",
+      "heading": "Proof dies, two mints, one schedule",
+      "readerQuestion": "How quickly did regular coinage begin?",
+      "purpose": "Follow the January 2 proof dies, January 30 Denver start, following-week Philadelphia start, and February 11 ceremonies.",
+      "keyPoints": [
+        "Follow the January 2 proof dies, January 30 Denver start, following-week Philadelphia start, and February 11 ceremonies.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "K2"
+      ],
+      "targetWords": 110
+    },
+    {
+      "id": "s04",
+      "heading": "The first delivery reached the Federal Reserve",
+      "readerQuestion": "When did the new half dollar move toward public distribution?",
+      "purpose": "Describe the Mint\u2019s recorded initial delivery and distinguish it from later public distribution.",
+      "keyPoints": [
+        "Describe the Mint\u2019s recorded initial delivery and distinguish it from later public distribution.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "K7"
+      ],
+      "targetWords": 110
+    },
+    {
+      "id": "s05",
+      "heading": "Silver content changed with the 1965 coinage",
+      "readerQuestion": "What changed in the half dollar\u2019s metal?",
+      "purpose": "Compare the documented 1964 and 1965 silver compositions and the shortage context.",
+      "keyPoints": [
+        "Compare the documented 1964 and 1965 silver compositions and the shortage context.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "K3"
+      ],
+      "targetWords": 110
+    }
+  ],
+  "generationRevision": 7,
+  "qaFeedback": {
+    "previousScore": 88,
+    "blockers": [
+      "placeholder years/numbers",
+      "repeated sections",
+      "off-topic reel segments"
+    ],
+    "instruction": "Rewrite from assigned source claims only. Remove any unsupported numbers or claims, ensure each history fact appears in one section only, and preserve the approved reel narration without adding unrelated segments."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "ice-test-for-silver-explained",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T05:47:26.596539+00:00",
+  "review_notes": [
+    "Reviewed complete replacement against saved primary source review; distinguishes heat transfer observation, composition assessment and product authentication.",
+    "Reviewed metadata, social copy, supporting evidence card and both hero/square images; no fabricated price or melt-time threshold.",
+    "Reviewed 112 second estimated narration and synchronized companion data. Repaired negation reversal and incomplete context in generated overlays.",
+    "Deterministic QA and seven generator tests pass. Rendered reel requires separate release review.",
+    "Corrected escaped checklist HTML to supported Markdown and verified rendered list markup; publication date unchanged."
+  ],
+  "sources": [
+    "https://openstax.org/books/college-physics-2e/pages/14-5-conduction",
+    "https://periodic-table.rsc.org/element/47/silver",
+    "https://www.usmint.gov/learn/collecting-basics/caring-for-your-coin-collection",
+    "https://www.lbma.org.uk/good-delivery/proactive-monitoring",
+    "https://www.mint.ca/en/bullion/bullion-dna"
+  ],
+  "artifact_sha256": {
+    "verified.md": "cad52e2c8045718035291d9bbab22f1eb7cd4984f0e1ad83fc10c2c4c21e3350",
+    "index.html": "9c90035e0f1c7bc5632dc070c1e5b59555b068900b82413aa46e223431212521",
+    "meta.json": "fa6932b256956ad111730993705e77eec93b4bb0e6e8fe36ea28d8b24afd4ddc",
+    "hooks.json": "0f98ae671410ad48dbac10d6287efe88693e486f655e39c9a92d3a937a687d41",
+    "hero.jpg": "88d4dde2f045127af806b5e61192d5fb1ad599bfc31536e6d1db5088e141cd29",
+    "photo-post.jpg": "86ab40ab77fe280965695b38df3642f6b895f9e84e6406a71abac0aee09cacab",
+    "reel-data.md": "7ee33440b35f193bfe7bcc1f3ceb37869ebc7dcfca0da97b23471c5a024250c0",
+    "reel-script.md": "2a4cbb2e8147576b552ad6390a589d149157e30fb8c25abdf51fb2839c843b6e",
+    "social-copy.json": "8802586983aaea948634f86c373369aa5132eb1a5b19a2ed12bca8a4f90e1125",
+    "research.json": "4f83f74dbfec64a9e3cc92f11cda9cb29bb9885ede19944ed985be714e71981e"
+  }
+}

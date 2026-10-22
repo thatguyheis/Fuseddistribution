@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-04T13:32:33.505084+00:00",
+  "heroSha256": "edf9270848a04a1d0f3ec0b6f34edf559e94cfb48eb248a72c5deb91adad22b7",
+  "subject": "Website supplier brief connects accessibility responsibilities",
+  "purpose": "brief conceptual explanation",
+  "hook": "Put access in the brief.",
+  "keyWords": [
+    "including",
+    "accessibility",
+    "in"
+  ],
+  "chartEvidence": "Conceptual diagram, not measured data",
+  "preview": ".workflow-state/recovery-2026-10-04/art-review-0.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}
