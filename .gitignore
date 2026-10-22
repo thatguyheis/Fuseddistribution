@@ -74,3 +74,29 @@ public/blog/*/posting-pack.md
 .model-cache/
 video/music-candidates/
 video/local/generated-backgrounds/
+
+# Licensed YouTube audio: local production inputs, never standalone distribution.
+/video/private-audio/
+/video/music-inbox/
+/video/public/music/youtube-*.mp3
+
+# Local audio transcription cache
+video/local/whisper-captions/
+
+# Raw footage, renders, stock clips and scratch output stay local (too large for Git).
+/Coin Raw/
+/tmp/
+/output/
+/video/local/
+/video/public/presentations/
+content/**/archive/
+content/**/archive-v*/
+content/**/backlog-archives/
+content/**/stock/
+*.mp4
+*.mov
+*.wav
+*.m4a
+*.raw
+*.log
+.buffer-live-unavailable.json
