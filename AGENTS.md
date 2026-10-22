@@ -8,14 +8,14 @@
 4. Episode rules: `docs/COIN-HISTORY-SOP.md`. Render detail: `video/REEL-SOP.md`.
 5. To change a rule, edit SOURCE-OF-TRUTH and the enforcing code in the same commit. Do not add dated banners to other files.
 
-The rest of this file covers the photo library only. Its paths now live under `public/photos/`.
+The rest of this file covers the photo library only. It lives under `public/photos/`. The `npm run photos:*` scripts `cd public` first, because the photo scripts resolve `photos/` from the current directory.
 
 ## Hard Rules
 
-- **Codex owns repository delivery** — commit and push only after scoped validation and explicit user authorization. Claude is not a required reviewer or deployment dependency.
+- **Codex owns repository delivery.** Commit after scoped validation. Push follows `docs/SOURCE-OF-TRUTH.md` section 7: content commits may go to `origin main` without asking; code, SOP, config and photo library changes need Nick's explicit approval each time. Never force push. Claude is not a required reviewer or deployment dependency.
 - **Never delete files** without explicit instruction.
-- **Never manually edit generated pages** — `photos/images/*/index.html` and `photos/collections/*/index.html` are built by script. Edit the script or data, then rebuild.
-- **Never touch these hand-crafted files**: `photos/index.html`, `photos/browse/index.html`.
+- **Never manually edit generated pages** — `public/photos/images/*/index.html` and `public/photos/collections/*/index.html` are built by script. Edit the script or data, then rebuild.
+- **Never touch these hand-crafted files**: `public/photos/index.html`, `public/photos/browse/index.html`.
 
 ---
 
@@ -26,16 +26,16 @@ The rest of this file covers the photo library only. Its paths now live under `p
 Processed web-ready JPGs go in:
 
 ```
-photos/derived/web/img-XXXX-img-ORIGINALNAME.jpg
+public/photos/derived/web/img-XXXX-img-ORIGINALNAME.jpg
 ```
 
-Naming convention: `img-0021-img-1234.jpg` (increment the sequence number from the last entry in `photos/data/images.csv`).
+Naming convention: `img-0021-img-1234.jpg` (increment the sequence number from the last entry in `public/photos/data/images.csv`).
 
 Images must be JPEG, web-optimized, 2400px on the long edge.
 
 ### Step 2 — Update the catalog
 
-Edit `photos/data/images.csv`. Add one row per image. Follow this column structure exactly:
+Edit `public/photos/data/images.csv`. Add one row per image. Follow this column structure exactly:
 
 ```
 id,filename,asset_filename,slug,title,alt_text,caption,description,location,state_region,country,tags,orientation,license_status,license_type,model_release,property_release,collection,featured,published,date_captured,date_published,notes
@@ -56,13 +56,13 @@ id,filename,asset_filename,slug,title,alt_text,caption,description,location,stat
 | `license_type` | `free-use` |
 | `model_release` | `no` (unless confirmed) |
 | `property_release` | `no` (unless confirmed) |
-| `collection` | Must match a `slug` in `photos/data/collections.json` |
+| `collection` | Must match a `slug` in `public/photos/data/collections.json` |
 | `featured` | `yes` only if explicitly requested |
 | `published` | `no` until reviewed |
 
 ### Step 3 — Add to a collection (if new collection needed)
 
-Edit `photos/data/collections.json`. Add an object with:
+Edit `public/photos/data/collections.json`. Add an object with:
 
 ```json
 {
@@ -84,27 +84,27 @@ Do not create a collection for fewer than 3 images unless instructed.
 npm run photos:build
 ```
 
-This regenerates every file under `photos/images/*/index.html` and `photos/collections/*/index.html`. Do not manually edit those outputs.
+This regenerates every file under `public/photos/images/*/index.html` and `public/photos/collections/*/index.html`. Do not manually edit those outputs.
 
 ### Step 5 — Commit
 
 Stage and commit:
 
 ```bash
-git add photos/derived/web/ photos/data/ photos/images/ photos/collections/
+git add public/photos/derived/web/ public/photos/data/ public/photos/images/ public/photos/collections/
 git commit -m "feat: add [N] images to [collection-name] collection"
 ```
 
-Push only after the generated output, tests, and working tree scope have been reviewed. Codex may push when the user explicitly authorizes it.
+Run `npm run photos:validate` before committing. Push only with Nick's explicit approval (see Hard Rules).
 
 ---
 
 ## What the Build Script Generates
 
-The script (`photos/scripts/build-pages.mjs`) reads `images.csv` and `collections.json` and writes:
+The script (`public/photos/scripts/build-pages.mjs`) reads `images.csv` and `collections.json` and writes:
 
-- `photos/images/<slug>/index.html` — one per image
-- `photos/collections/<slug>/index.html` — one per collection
+- `public/photos/images/<slug>/index.html` — one per image
+- `public/photos/collections/<slug>/index.html` — one per collection
 
 It uses root-relative hrefs (`/photos/`, `/projects/`, etc.) and the full site nav with dropdowns. Do not override this.
 
@@ -151,7 +151,7 @@ All hrefs in any HTML file in this project must be **root-relative**:
 ## File Map
 
 ```
-photos/
+public/photos/
   data/
     images.csv           ← catalog of all images (edit this)
     collections.json     ← collection definitions (edit this)
@@ -162,7 +162,7 @@ photos/
   browse/index.html      ← hand-crafted full library page (do not edit)
   scripts/
     build-pages.mjs      ← page generator (edit only if structure needs changing)
-    ingest-uploads.mjs   ← processes raw uploads from photos/uploads/
+    ingest-uploads.mjs   ← processes raw uploads from public/photos/uploads/
     prepare-images.mjs   ← resizes/exports images
 ```
 
@@ -171,10 +171,11 @@ photos/
 ## Quick Reference — Adding Photos
 
 ```
-1. Place JPGs in photos/derived/web/
-2. Add rows to photos/data/images.csv
+1. Place JPGs in public/photos/derived/web/
+2. Add rows to public/photos/data/images.csv
 3. npm run photos:build
-4. git add photos/derived/web/ photos/data/ photos/images/ photos/collections/
-5. git commit -m "feat: add N images to collection-name"
-# Stop here. Do not push.
+4. npm run photos:validate
+5. git add public/photos/derived/web/ public/photos/data/ public/photos/images/ public/photos/collections/
+6. git commit -m "feat: add N images to collection-name"
+# Push only with Nick's explicit approval.
 ```
