@@ -11,7 +11,7 @@ Read these files before changing blog, social, or video workflow code:
 
 - Nick Hughes is the final business owner.
 - Robert Paulson operating through Codex owns workflow architecture, gates, automation, deploy safety, and incident follow-up.
-- Claude is the editorial, research, creative, and QA specialist. Do not replace or bypass deterministic gates.
+- Codex owns editorial, research, creative and QA review. Optional specialist tools do not replace deterministic gates or create a Claude dependency.
 - Gemma and Hermes may draft or research. Their output is untrusted until validation passes.
 
 ## Active Reel Standard
@@ -54,7 +54,7 @@ Before reporting success:
 4. Confirm captions match narration at three points.
 5. Report commands, output path, verified duration, voice, caption mode (`whisper`/`proportional`/`mixed`/`none`), validation result, and unresolved warnings.
 
-Reels commit metadata locally by default. Codex owns repository delivery and may `git push` or deploy after the user explicitly authorizes the scoped action and the required checks pass.
+Reels commit metadata only with explicit user authorization and `REEL_GIT_COMMIT=1`. Codex owns repository delivery and may `git push` or deploy after the user explicitly authorizes the scoped action and the required checks pass.
 
 ## Resource And Safety Rules
 

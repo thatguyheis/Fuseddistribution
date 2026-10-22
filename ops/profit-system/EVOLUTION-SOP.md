@@ -1,4 +1,8 @@
+September 11 efficiency and art update: follow `docs/TOKEN-BUDGET-SOP.md` (repository root) for twice-daily owner checks, Luna routing and daily usage monitoring; follow `docs/EDITORIAL-HERO-SOP.md` for the owner-preferred diagram recipe. User preference is separate from measured fitness promotion. These controls supersede earlier routine review frequencies.
+
 # Content Evolution SOP
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
 
 Version: 1.0
 Owner: Codex
@@ -28,10 +32,15 @@ Run after the daily posts and Buffer maintenance have authoritative readback:
 ```bash
 npm run social:buffer:metrics -- --date=YYYY-MM-DD --lookback-days=60
 npm run social:fitness -- --format=json --out=ops/profit-system/evolution/fitness-YYYY-MM-DD.json
+npm run ada:lifecycle -- --date=YYYY-MM-DD --apply
 npm run profit:audit -- --date=YYYY-MM-DD
 ```
 
-The fitness run must report evidence coverage. A score with missing dimensions is a partial score, not full Reel fitness.
+The fitness run must report evidence coverage and the source snapshot's capture timestamp, age in hours, and age in days at report generation. A score with missing dimensions is a partial score, not full Reel fitness. When the same-date snapshot is unavailable during a Buffer cooldown, use the newest valid cached snapshot only for historical ranking, record its true age, and do not present it as current-day performance or selection evidence.
+The ADA lifecycle worker reconciles Buffer post IDs from the scheduled logs, attaches
+exact D+1/D+3/D+7 snapshot evidence, applies release QA status, and records a
+conservative selection decision. It never promotes a winner without the required
+comparable sample count and evidence.
 
 ## Fitness dimensions
 

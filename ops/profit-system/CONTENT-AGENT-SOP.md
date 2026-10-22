@@ -1,4 +1,8 @@
+September 11 efficiency and art update: follow `docs/TOKEN-BUDGET-SOP.md` (repository root) for twice-daily owner checks, Luna routing and daily usage monitoring; follow `docs/EDITORIAL-HERO-SOP.md` for the owner-preferred diagram recipe. User preference is separate from measured fitness promotion. These controls supersede earlier routine review frequencies.
+
 # Codex Master and Local Content Sub-Agent SOP
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
 
 Version: 1.0
 Owner: Codex
@@ -116,3 +120,15 @@ At D+3 and D+7, compare planned Reel clusters against the same platform and age 
 3. Keep Gemma for prose and Granite for structured work during the first cycle.
 4. Promote the segmented path only after two clean cycles and no regression in article or release QA.
 5. Roll back by removing or renaming `content-plan.json`; the existing writer remains unchanged.
+
+## September16 editorial ownership correction
+
+The daily owner must finish the oldest due unapproved article, not stop because approval is absent. Use the compact publishing quickstart, existing draft, primary-source review, real companion inspection, production QA and explicit hashed editorial approval. Local catalog registration and a numeric QA score are not live completion. Record exact live proof before a completion marker. See `docs/PUBLISHING-INCIDENT-2026-09-16.md` for evidence and remaining work. Luna closes evening releases at21:30 before normal Buffer22:00; no extra Buffer polling.
+
+## Current growth experiment
+
+Follow `docs/GROWTH-AUDIT-2026-10-05.md` for the next 24 eligible companion videos. Alternate demonstration-first and control within each vertical, preserve quality gates and opinion mix, and record exact video and post identity. Practical comparisons and checklists are hypotheses supported by observed views, not proven revenue winners. One relevant next step per piece; never route technology viewers to Reserve solely to satisfy CTA rotation. Do not replace existing approved schedules or generate extra volume for the experiment.
+
+## Approved pre-revenue growth objective, October 5
+
+Nick confirms no revenue yet and authorizes the prioritized growth plan. The publishing owner approves the 24-video pilot for the existing production schedule. Use median D+7 views within each platform and vertical to select successful formats, with at least six measured creatives per arm. Do not wait for revenue, lead or conversion evidence. Missing views stay unavailable; X impressions cannot substitute for views. Keep comments, saves and production time as diagnostics and preserve all editorial, rights and release gates. See `ops/engagement/growth-pilot.json`. Approval means ready to execute, not already produced or measured.

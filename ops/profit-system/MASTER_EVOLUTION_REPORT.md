@@ -1,3 +1,37 @@
+# September 11, 2026 owner feedback and efficiency correction
+
+The owner rewarded the LLC silver article diagram hero. FD-HERO-DIAGRAM-V1 is now the preferred editorial recipe for suitable new topics: article-derived decision cards, strong typography and reusable native SVG. The feedback record binds the source and JPEG hashes. One high_quality_delivery reward (+4) records explicit owner approval. No revenue, engagement uplift, render-time saving or measured creative winner is claimed. Existing matched-sample selection gates remain unchanged.
+
+Hourly Astra supervision was reduced to 08:00 and 18:00 Pacific; daily ADA remains Luna and now uses low reasoning. Local publishing schedules continue. Root-session usage evidence and the seven-day monitoring policy are in docs/TOKEN-BUDGET-SOP.md. Validate endurance and output quality on September 18 before claiming success.
+
+# September 7, 2026 operational review
+
+This update supersedes the historical fitness estimate below. Current recovery is not yet a verified end-to-end social delivery cycle.
+
+## 22:32 Pacific evidence review
+
+- Buffer remained unavailable under a shared provider cooldown until 2026-09-08T07:08:11.734Z. No metrics request was made and the absent request-budget ledger was correctly left uncreated because no request was reserved.
+- The newest valid snapshot was captured 2026-08-26T14:17:16.282Z. At this review it was 303.26 hours, or 12.64 days, old. It contains 134 posts, 123 mature posts, 79 mapped slugs, and 106 partial-fitness candidates. It has zero retention and zero production-cost measurements, so the maximum coverage remains 65 percent.
+- Fitness reports now include the source snapshot's exact age in hours and days. This prevents a cached snapshot from being mistaken for same-day evidence. It is an operational labeling control only: it does not create metrics, request Buffer data, change release gates, or promote creative traits.
+- ADA lifecycle applied to four immutable registered generations. All remain unmapped to Buffer post IDs with zero D+1/D+3/D+7 evidence, so both generations returned `no_winner`; no creative change was promoted. No review dates expired today.
+- The regenerated September 7 profit audit remains -72.00: one missing release-QA blocker and one unavailable same-day metric checkpoint. Revenue, gross profit, and matched platform evidence remain unavailable, not zero.
+
+- Two new September 7 articles are live; catalog order is corrected. Fresh artifact-based output is now included in the profit audit, and stale reel QA cannot inherit readiness after source changes.
+- The newest cached Buffer snapshot is August 26: 134 records, 79 mapped slugs, 106 eligible partial observations, zero retention and production-cost measurements. These are historical observations, not September 7 results.
+- ADA lifecycle was applied for September 7. Both registered generations have zero eligible matched samples and no winner. No creative trait or revenue improvement was promoted.
+- Operational repairs adopted: one Codex recovery owner, single routine Buffer scheduler, shared request budget and cooldown, serial heavy work, whole-reel duration limits, and original publication identity checks.
+- Five overlapping automations were paused. Daily ADA review now runs at 22:30, reuses same-date data, and performs no API calls during cooldown.
+- The expired expedited Buffer volume experiment was retired. Thirteen overdue rule reviews were explicitly extended to September 14 without relaxing their existing safety controls or declaring improved performance.
+- The 206.955-second testimonial master rendered successfully, but inspection of the delivery code found silent 135-second truncation. The preparation code now rejects overlong sources. Complete 124-second and 129-second script estimates are being rendered sequentially with preserved endings; actual media and sent outcomes remain to be verified.
+- Future render records measure wall time and Node peak RSS. The latter excludes subprocess/GPU memory and is not whole-system resource cost.
+- Validation: 76 profit tests, 55 video tests, 10 recovery/budget/duration tests, and four Python reel-builder tests pass.
+
+The current operating authority is [Automated publishing operations](../../docs/AUTOMATED-PUBLISHING-OPERATIONS.md). The next evidence checkpoints are complete short media, hosted byte verification, Buffer quota recovery, authoritative sent readback, and the next nightly publishing cycle. Facebook Professional Mode and LinkedIn remain outside the automatic Buffer path.
+
+---
+
+Historical report preserved below:
+
 # Fused Distribution Master Evolution Report
 
 Cycle date: 2026-08-25

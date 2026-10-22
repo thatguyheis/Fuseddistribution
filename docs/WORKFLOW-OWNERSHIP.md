@@ -1,4 +1,15 @@
+## Current October5 batch standard
+
+Follow `docs/BATCH-PRODUCTION-SOP.md` for current schedules. AI ownership is08:30 and21:30 daily plus Friday22:30 review; separate08:00 oversight is paused. Local research batches run Monday/Thursday23:00; Buffer refills once daily22:00. Preserve daily publishing and all release gates. Older schedule sections below are historical and do not authorize extra runs.
+
 # Workflow Ownership — Fused Distribution
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (current schedule below). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
+
+## September 7 reliability correction
+
+The incident procedure in `docs/PUBLISHING-INCIDENT-2026-09-07.md` supersedes older instructions that prepend recovered posts, rebuild registered slugs for a new date, reset exhausted retry counters, trust completion markers alone, or poll Buffer during cooldown. Check actual artifacts and fresh output with `node scripts/publishing-health.mjs --write`. Preserve publication dates, recover only proven stale locks, and use the shared Buffer runner and cooldown. The recovery owner must record new verified failures and regression tests in the incident procedure and this SOP.
+
 
 Owner persona: Robert Paulson, operating through Codex.
 Reports to: Nick Hughes.
@@ -106,21 +117,20 @@ time in `.workflow-state/retry.json` and writes a per-date heartbeat to
 and exit event. The owner must require a post-due heartbeat or an explicit
 quality/deferred checkpoint before considering a retry handled.
 
-- The 9 AM job builds, validates, commits, deploys approved blog posts automatically (`BLOG_AUTO_DEPLOY=1` in the launchd plist, enabled 2026-06-29), and curl-verifies each slug returns 200. It does not render video. QA-failed or deferred posts are not registered, not deployed, and stay local for retry. Source synchronization remains a separate controlled handoff; never bundle unrelated worktree changes into it.
+- The 9 AM job builds, validates and deploys approved blog posts (`BLOG_AUTO_DEPLOY=1` in the launchd plist, enabled 2026-06-29), and curl-verifies each slug returns 200. It does not render video. QA-failed or deferred posts are not registered, not deployed, and stay local for retry. Source synchronization remains a separate controlled handoff; never bundle unrelated worktree changes into it.
 - The blog runner checkpoints the queue before any model or network probe. On
   startup it resumes the oldest `*-pending.json` date before today's queue, and
   generated retry jobs preserve the original date and production environment.
   A computer restart must therefore delay the workflow, not abandon the day.
-- The 11 AM job renders at most four stale registered reels per run and commits metadata locally for Codex review. Keep this aligned with the daily blog publish target; if four posts publish per day, rendering only two guarantees a reel backlog and starves Buffer.
+- The 11 AM job renders at most four stale registered reels per run and saves metadata locally for Codex review. Keep this aligned with the daily blog publish target; if four posts publish per day, rendering only two guarantees a reel backlog and starves Buffer.
 - A global render lock prevents launchd, Codex, and manual operators from starting concurrent Remotion jobs on the Mac.
 - The Codex daily publishing owner task audits the oldest pending blog date, live deployment, reel backlog, and downstream Buffer readiness. It resumes checkpoints rather than trusting a prior agent's success report.
 - Scheduled ownership is deliberately redundant but not concurrent: launchd may
-  start the 9 AM blog producer, while the 9:15 AM Codex owner must detect an
+  start the 9 AM blog producer, while the 9:30 AM Codex owner must detect an
   active run and monitor it rather than start a second producer. Buffer
-  maintenance runs every four hours at :30 to refill the six fixed full-day
-  posting slots. Every pass covers YouTube Shorts, X, and Instagram, reuses
+  maintenance runs at 13:00, 16:01, 19:00 and 22:00 Pacific. Every pass covers YouTube Shorts, X, and Instagram, reuses
   authoritative checkpoints, and must not duplicate posts or occupied due times.
-- Chatterbox with Nick's voice reference is the required production voice. Zoe is opt-in recovery only.
+- Pinned full Chatterbox Standard with Nick's voice reference is the required production voice for every new generation. Use the settings in `video/tts-runtime.json`; Nano is restricted to explicit comparisons or recovery work. Zoe is opt-in recovery only.
 - Remotion variable text uses measured fitting. Script validation blocks missing or mismatched stat figures.
 - Audio cache entries are keyed by narration and voice so changed scripts cannot reuse stale speech.
 - Reels are timed from measured TTS audio, not word-count padding. The renderer permits a 0.2-second dialogue gap between segments and a 0.5-second final-card pad.
@@ -136,15 +146,8 @@ quality/deferred checkpoint before considering a retry handled.
   X, and Instagram. Allocation is deficit-based per Pacific operating date, so
   an Instagram catch-up can run alongside different YouTube/X content. Prefer
   new approved reels, then unsent approved backlog, then the oldest approved
-  reel outside the seven-day rotation cooldown. The organization cap and
-  one-slot reserve remain hard limits.
-- Through the 2026-08-12 expedited backlog-burn review, Buffer targets six posts
-  per channel without weakening the three-per-channel floor. A four-hour owner
-  loop refills the rolling queue for the fixed 01:00, 05:00, 09:00, 13:00,
-  17:00, and 21:00 Pacific slots, counts scheduled/sending/sent posts for the
-  Pacific date, and fills only unoccupied future slots. The rolling active target
-  is nine posts, preserving one slot beneath Buffer's free limit of ten. If approved inventory is
-  insufficient, report the exact release/media gate instead of lowering QA.
+  reel outside the seven-day rotation cooldown. The per-channel queue cap of ten and shared API request budget remain hard limits.
+- October4 capacity instruction: keep ten scheduled/sending videos per channel when approved inventory and API budget permit, with no reserved slot. This is queue capacity, not a daily posting quota. Recovery fills future dates in bounded batches; routine maintenance uses three per channel per pass. Preserve occupied times, duplicate checks, cooldowns and release gates. If inventory is insufficient, record the exact gate.
 - Instagram sourcing merges the fresh YouTube queue with deduplicated verified
   YouTube history. This lets Instagram consume eligible backlog even when the
   fresh queue contains only candidates that Instagram recently posted.

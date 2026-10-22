@@ -1,4 +1,24 @@
+## Buffer capacity correction, September 29, 2026
+
+October4 current standard: follow `docs/ENGAGEMENT-SOP.md` for topic-specific final questions, opinion mix, caption CTA rotation and evidence-based reporting. Buffer target is ten scheduled/sending videos per channel, reserve zero; maintain release, rights, duplicate and request-budget gates. Use `docs/EDITORIAL-HERO-SOP.md` for enriched artwork and `docs/REEL-OPENING-SOP.md` for the encoded first frame.
+
+
+Buffer Free allows 10 queued posts per connected channel, with slots reusable after publishing. Our operating ceiling is nine scheduled/sending posts per channel, leaving one spare on each: YouTube nine, Instagram nine, X nine, or 27 total. This is queue capacity, not a daily publishing quota. Retain the existing posting cadence, quality gates, duplicate checks, shared publisher lock and API request budgets. Fill in bounded batches of at most three per channel per maintenance pass; do not add calls or increase frequency just to fill every slot.
+
+Count live `scheduled` and `sending` posts separately by `channelId`. Pass only the destination channel count as `--current-scheduled`, with `--limit=10 --reserve-slots=1 --platform-count=1`. Never divide slots between channels or block an available channel because another is full. Sent posts count toward daily delivery, but do not occupy queue slots. The executor independently enforces the nine-post operating ceiling for the destination channel.
+
+Verified sources: [Buffer pricing](https://buffer.com/pricing) and [Buffer scheduling limits](https://support.buffer.com/en-us/articles/how-many-posts-can-i-schedule-in-advance-Kmy2IEecqm). This correction supersedes older shared-capacity instructions.
+
+September29 cover requirement: follow `docs/REEL-OPENING-SOP.md`. The approved hero must be visible at frame zero and earn attention with a clear focal subject, concise truthful hook, strong contrast and readable type at actual phone size. Review the encoded opening before scheduling; reject tiny text, cropped titles, blank animation frames or unrelated imagery. Reapprove changed hero artwork before regenerating its reel.
+
 # Social Media SOP - Fused Distribution
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
+
+## September 7 reliability correction
+
+The incident procedure in `docs/PUBLISHING-INCIDENT-2026-09-07.md` supersedes older instructions that prepend recovered posts, rebuild registered slugs for a new date, reset exhausted retry counters, trust completion markers alone, or poll Buffer during cooldown. Check actual artifacts and fresh output with `node scripts/publishing-health.mjs --write`. Preserve publication dates, recover only proven stale locks, and use the shared Buffer runner and cooldown. The recovery owner must record new verified failures and regression tests in the incident procedure and this SOP.
+
 
 Governs content creation and posting handoff for social media. The active automated production path is YouTube, X, and Instagram through the Buffer API, plus Facebook Professional Mode through native Facebook tools. Postiz remains a future option for Page-based channels, but it is not the active workflow.
 
@@ -168,7 +188,7 @@ Hard stops:
 Daily execution order:
 
 1. Confirm the Buffer token is available locally without printing it. It must live in ignored `.env.local` as `BUFFER_ACCESS_TOKEN=<real API key>`, with no quotes and no `Bearer ` prefix.
-2. Query Buffer GraphQL for all three channels with the checked-in live-status command. Its `count` is `BUFFER_CURRENT_SCHEDULED`; never derive capacity from local logs. During the expedited backlog-burn experiment through the 2026-08-12 review, request a target of six per channel; outside an active experiment, omit the flag and use the baseline minimum of three:
+2. Query Buffer GraphQL for all three channels with the checked-in live-status command. Its `count` is the organization total for reporting only. Count scheduled/sending entries by destination `channelId` for planner capacity; never derive capacity from local logs. During the expedited backlog-burn experiment through the 2026-08-12 review, request a target of six per channel; outside an active experiment, omit the flag and use the baseline minimum of three:
 
 ```bash
 npm run social:buffer:live -- status --target-per-channel=6
@@ -209,16 +229,15 @@ channel's deficit against the active target. The hard baseline remains three per
 channel even when the expedited target is six. Set `BUFFER_DEFICIT_PLATFORM_COUNT`
 to the number of channels with a nonzero deficit. Run only those channel planners,
 give each `--max-posts` the smallest of its deficit, its live capacity allocation,
-and the remaining distinct slots for the current Pacific date. Pass the same
-unmodified live organization count to every planner. Derive `NEXT_OPEN_SLOT` from
+and the remaining distinct slots for the current Pacific date. Pass the destination channel's live scheduled/sending count to its planner. Derive `NEXT_OPEN_SLOT` from
 the fixed `01:00, 05:00, 09:00, 13:00, 17:00, 21:00` Pacific grid, strictly after
 the latest active Buffer `dueAt`; never reuse an occupied slot. A seven-day rotation may reuse the oldest
 release-approved post only after unsent approved candidates are exhausted:
 
 ```bash
-npm run social:buffer:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=$BUFFER_DEFICIT_PLATFORM_COUNT --max-posts=$YOUTUBE_BATCH_LIMIT --repost-after-days=7 --media-map=.buffer-media-urls.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only --write-packs
-npm run social:buffer:x:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=$BUFFER_DEFICIT_PLATFORM_COUNT --max-posts=$X_BATCH_LIMIT --repost-after-days=7 --media-map=.buffer-x-media-urls.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
-npm run social:buffer:instagram:plan -- --current-scheduled=$BUFFER_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=$BUFFER_DEFICIT_PLATFORM_COUNT --max-posts=$INSTAGRAM_BATCH_LIMIT --repost-after-days=7 --source-queue=.buffer-youtube-queue.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
+npm run social:buffer:plan -- --current-scheduled=$YOUTUBE_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=1 --max-posts=$YOUTUBE_BATCH_LIMIT --repost-after-days=7 --media-map=.buffer-media-urls.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only --write-packs
+npm run social:buffer:x:plan -- --current-scheduled=$X_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=1 --max-posts=$X_BATCH_LIMIT --repost-after-days=7 --media-map=.buffer-x-media-urls.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
+npm run social:buffer:instagram:plan -- --current-scheduled=$INSTAGRAM_CURRENT_SCHEDULED --limit=10 --reserve-slots=1 --platform-count=1 --max-posts=$INSTAGRAM_BATCH_LIMIT --repost-after-days=7 --source-queue=.buffer-youtube-queue.json --schedule-window-start=$NEXT_OPEN_SLOT --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
 ```
 
 Do not run a planner whose deficit is zero. If total deficits exceed remaining
@@ -251,7 +270,7 @@ npm run social:buffer:live -- publish --queue=.buffer-instagram-queue.json
    If the computer or process crashes, rerun the same command while the queue is still valid. Confirmed live IDs are skipped; unconfirmed jobs resume. If the queue expired, regenerate and validate it before rerunning.
 15. After the batch, run `npm run social:buffer:live -- status` again and confirm the count and video assets match what was just created.
 
-The daily hard minimum is three posts on YouTube Shorts, three on X, and three on Instagram. The controlled expedited target is six per channel through its 2026-08-12 review. Distribute those six posts across the full Pacific day at 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00. The four-hour maintenance loop fills only unoccupied future slots for the current Pacific date. New release-approved content is preferred, followed by unsent backlog, followed by the oldest approved post outside the seven-day rotation window. One Buffer slot remains as safety headroom, so the rolling active target is nine posts under the free-plan limit of ten. The live publisher queries Buffer immediately before every mutation and refuses to create when the organization already has 10 scheduled/sending posts, even if a stale queue says capacity exists. If eligible inventory cannot reach six, reaching the baseline three is still operational success only when the precise release or media blocker is reported.
+The daily hard minimum is three posts on YouTube Shorts, three on X, and three on Instagram. The controlled expedited target is six per channel through its 2026-08-12 review. Distribute those six posts across the full Pacific day at 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00. The four-hour maintenance loop fills only unoccupied future slots for the current Pacific date. New release-approved content is preferred, followed by unsent backlog, followed by the oldest approved post outside the seven-day rotation window. One Buffer slot per channel remains as safety headroom, so the rolling queue ceiling is nine posts per channel under the free-plan limit of ten per channel. The live publisher checks destination-channel scheduled/sending occupancy and refuses another create at nine, even if a stale queue says capacity exists. If eligible inventory cannot reach six, reaching the baseline three is still operational success only when the precise release or media blocker is reported.
 
 ### YouTube Buffer API Scheduling Requirements
 
@@ -360,7 +379,7 @@ Do not schedule long-form reels to X through Buffer API. Create an X-safe cutdow
 Plan eligible X posts after querying the live Buffer scheduled/sending count:
 
 ```bash
-npm run social:buffer:x:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-x-media-urls.json --schedule-window-start=<next-grid-slot> --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
+npm run social:buffer:x:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=1 --media-map=.buffer-x-media-urls.json --schedule-window-start=<next-grid-slot> --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only
 ```
 
 The X planner verifies media URLs by default. Use `--skip-media-url-verification` only for offline planning, never for production scheduling. If any selected X media URL fails verification, do not create the Buffer post.
@@ -410,7 +429,7 @@ top-level video asset plus `metadata.instagram.type: "reel"`,
 Generate and validate the Instagram queue only after the YouTube queue exists:
 
 ```bash
-npm run social:buffer:instagram:plan -- --current-scheduled=<same-live-count> --limit=10 --reserve-slots=1 --platform-count=3 --source-queue=.buffer-youtube-queue.json
+npm run social:buffer:instagram:plan -- --current-scheduled=<instagram-live-count> --limit=10 --reserve-slots=1 --platform-count=1 --source-queue=.buffer-youtube-queue.json
 npm run social:buffer:validate -- --queue=.buffer-instagram-queue.json
 npm run social:buffer:live -- publish --queue=.buffer-instagram-queue.json
 ```
@@ -429,12 +448,12 @@ Production requirements:
 
 ### Automatic YouTube Queue Planning
 
-Before scheduling, query Buffer for posts with status `scheduled` or `sending`. Subtract that count and one safety slot from the organization limit of 10, then divide the remainder evenly across YouTube, X, and Instagram. All three consume the same enforced organization-wide budget in this SOP.
+Before scheduling, query Buffer for posts with status `scheduled` or `sending`. For each destination channel, subtract its own count and one safety slot from its limit of 10. Capacity is independent across YouTube, X, and Instagram.
 
 Plan the next queue from the rendered backlog:
 
 ```bash
-npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=3 --media-map=.buffer-media-urls.json --schedule-window-start=<next-grid-slot> --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only --write-packs
+npm run social:buffer:plan -- --current-scheduled=<count> --limit=10 --reserve-slots=1 --platform-count=1 --media-map=.buffer-media-urls.json --schedule-window-start=<next-grid-slot> --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only --write-packs
 ```
 
 This writes selected jobs with `mode: customScheduled` and `dueAt` values in the 1:00 PM-7:00 PM `America/Los_Angeles` window. The YouTube planner verifies media URLs by default. Use `--skip-media-url-verification` only for offline planning, never for production scheduling. `.buffer-media-urls.json` is a local, gitignored map of slug to hosted MP4 URL:
@@ -523,7 +542,7 @@ The Buffer recovery automation runs every four hours at 12:30 AM, 4:30 AM, 8:30 
 6. Run `npm run social:buffer:sync-media -- --slugs=<slugs>` without a YouTube-only platform filter so the exact `/reels/` and `/reels-x/` MP4s are present in remote `REELS_KV`.
 7. Deploy the Worker if the KV-backed `/reels/` route or other source changes have not been deployed yet. Do not depend on the static asset manifest for Buffer media.
 8. Verify every selected YouTube/X MP4 URL returns `200 video/mp4` from the deployed Worker. Instagram reuses the verified YouTube MP4. If any URL fails, stop before planning.
-9. Read `dailyTargets` from live status. Run only deficient channels and use the number of deficient channels as `--platform-count`. Find the latest active `dueAt`, select the next unoccupied time from the six-slot grid, and cap each planner by the channel deficit, live capacity allocation, and remaining slots today. Use `--repost-after-days=7 --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only`. Generate YouTube first, X second, and Instagram third when each has a deficit. Instagram may use the fresh YouTube queue or verified history.
+9. Read `dailyTargets` from live status. Run only deficient channels and use `--platform-count=1`. Find the latest active `dueAt`, select the next unoccupied time from the six-slot grid, and cap each planner by the channel deficit, live capacity allocation, and remaining slots today. Use `--repost-after-days=7 --schedule-window-end=23:59 --schedule-interval-minutes=240 --same-day-only`. Generate YouTube first, X second, and Instagram third when each has a deficit. Instagram may use the fresh YouTube queue or verified history.
 10. Validate all three queue files immediately before scheduling. If any queue is stale, expired, or invalid, regenerate and revalidate instead of posting.
 11. Run `npm run social:buffer:live -- publish --queue=.buffer-youtube-queue.json`. The resumable executor schedules only selected YouTube jobs and checkpoints only Buffer-confirmed video posts.
 12. Run `npm run social:buffer:live -- publish --queue=.buffer-x-queue.json`. It applies the same live readback and checkpoint rule to selected X jobs.
@@ -531,7 +550,7 @@ The Buffer recovery automation runs every four hours at 12:30 AM, 4:30 AM, 8:30 
 14. Run `npm run social:buffer:live -- status` and report any media warning, missing asset, count mismatch, status mismatch, or cap refusal.
 15. Stop without posting if no selected job has a stable HTTPS `publicMediaUrl` that returns `200 video/mp4`.
 
-The reserve is intentional. With a 10-post organization limit, the automation targets nine daily posts and the executor independently refuses an eleventh scheduled/sending post.
+The reserve is intentional. With a 10-post limit per channel, automation permits nine queued posts per channel and the executor preserves the tenth slot. Queue capacity does not change the daily posting cadence.
 
 ---
 
@@ -636,11 +655,11 @@ The operating schedule is Pacific time:
 | Every 4 hours at :30 | Buffer maintenance | Refill the rolling three-channel queue for the next unoccupied 01:00/05:00/09:00/13:00/17:00/21:00 Pacific slots. |
 | 8:30 PM | Profit and SOP owner | Reconcile live outcomes and record evidence-backed operational results. |
 
-Buffer uses the full 24-hour Pacific operating day with six four-hour posting slots: 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00. The hard daily floor is three posts each on YouTube Shorts, X, and Instagram, and the temporary target is six each through the 2026-08-12 review. Planners fill channel deficits dynamically, may use new content or approved backlog, and may rotate the oldest approved content after seven days. Every maintenance pass uses the organization cap of 10, reserves one slot, counts scheduled/sending/sent posts for the operating date, schedules strictly after the latest active due time, and refuses active duplicates through authoritative readback.
+Buffer uses the full 24-hour Pacific operating day with six four-hour posting slots: 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00. The hard daily floor is three posts each on YouTube Shorts, X, and Instagram, and the temporary target is six each through the 2026-08-12 review. Planners fill channel deficits dynamically, may use new content or approved backlog, and may rotate the oldest approved content after seven days. Every maintenance pass uses the per-channel cap of 10, reserves one slot per channel, counts scheduled/sending/sent posts for the operating date, schedules strictly after the latest active due time, and refuses active duplicates through authoritative readback.
 
 1. Generate or verify `video/out/[slug]/[slug].mp4`.
 2. Generate Buffer-safe public media with `npm run social:buffer:youtube:media -- --slugs=<slug>` and `npm run social:buffer:x:media -- --slugs=<slug>`, then deploy.
-3. Query Buffer status once and read `dailyTargets`. Run only deficient channel planners with the same organization count, `--limit=10 --reserve-slots=1`, `--platform-count=<deficient-channel-count>`, `--max-posts=<channel-deficit>`, and `--repost-after-days=7`.
+3. Query Buffer status once and read `dailyTargets`. Run only deficient channel planners with each destination channel's own live count, `--limit=10 --reserve-slots=1`, `--platform-count=1`, `--max-posts=<channel-deficit>`, and `--repost-after-days=7`.
 4. YouTube: schedule every `.buffer-youtube-queue.json` `selected` job through Buffer API to channel `6a3e63375ab6d2f1067461b2`; otherwise open Buffer, select the connected YouTube channel, upload the MP4, paste the title/description/tags from the posting pack, verify the description links to `https://fuseddistribution.com/blog/[slug]/`, and schedule.
 5. X: run `npm run social:buffer:x:plan -- --current-scheduled=<count>` and schedule only eligible selected X jobs through Buffer API on channel `6a3e73fb5ab6d2f10674b516`. Confirm the copy stays under 280 characters, the video is at most 140 seconds, and `get_post` shows a persisted video asset before logging success.
 6. Instagram: generate `.buffer-instagram-queue.json` from the verified YouTube queue, publish selected jobs through channel `6a67c5d64b2d03035f4f0228`, and require persisted video readback before logging success.

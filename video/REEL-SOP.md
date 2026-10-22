@@ -1,12 +1,25 @@
 # Reel Creation — Standard Operating Procedure
 
+Current visual standard: `docs/REEL-ENRICHMENT-SOP.md` (October 13). This supersedes older photo-only body, blog-image-first and mandatory paper-collage rules.
+
+Tech education expansion: `docs/TECH-EDUCATION-SOP.md`. Use concrete tool lessons, the imported hook strategy, and verified matching demonstrations.
+
+Current coin history standard (October 14, 2026): `docs/COIN-HISTORY-SOP.md`. Use the Fort Vancouver v2 format: substantive sourced history, owner coin evidence plus real context photographs and labeled AI imagery, selected concept and approved transcript before generation, flexible narration sections, and 720p final delivery strictly below 50 MB. This overrides generic six-scene and mandatory stock-video quotas for coin history. Preserve existing release gates.
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
+
+## September 7 reliability correction
+
+The incident procedure in `docs/PUBLISHING-INCIDENT-2026-09-07.md` supersedes older instructions that prepend recovered posts, rebuild registered slugs for a new date, reset exhausted retry counters, trust completion markers alone, or poll Buffer during cooldown. Check actual artifacts and fresh output with `node scripts/publishing-health.mjs --write`. Preserve publication dates, recover only proven stale locks, and use the shared Buffer runner and cooldown. The recovery owner must record new verified failures and regression tests in the incident procedure and this SOP.
+
+
 ## Overview
 
 One command per blog post produces a finished 720×1280 MP4 with:
 - Narration via Chatterbox using Nick's local voice reference
 - Subtitles cycling through the spoken text
 - Animated graphics — number counters, chart bars, glowing CTA
-- Background photos: **blog images first, Pexels as fallback**
+- Topic-matched local generated images, reviewed owned evidence, and licensed stock photos/video
 - Ambient background music
 
 ## Production responsibility and model routing
@@ -51,7 +64,7 @@ To reinstall or update: `npx skills add remotion-dev/skills --global`
 
 **Chart axes:** Every graph must display a clear x-axis label and y-axis label in the rendered frame. Labels must name the dimension and unit, not only use generic words such as `value` or `data`. For example, use `REFERENCE PERIOD` and `PRICE (USD PER TROY OUNCE)`, or `YEAR` and `DEMAND (MILLION TROY OUNCES)`. A pie or donut has no Cartesian axes, so it must instead display a measure label and a visible legend pairing every slice with its value. Missing or ambiguous axis/measure labels are a release blocker.
 
-**Hardware media budget:** Use video for the hook only. Use photos for body and question segments. Body clips with the current stock profiles can more than double render time on this Mac; Ken Burns photo motion is the reliable production default.
+**Hardware media budget:** Target two relevant body video beats, with generated or reviewed images elsewhere. Keep local generation bounded at four minutes, reuse reviewed assets, and render sequentially. Log a media fallback and inspect it before release; do not silently revert every body scene to photos.
 
 ### 1. Voice (cloned, required)
 
@@ -92,7 +105,7 @@ Both keys load automatically when you run: `cd video && set -a && source .env &&
 
 ### 5. Music And Audio Rights
 
-Production default: render with the approved Mixkit trusted cycle declared in `video/data/audio-rights.json`.
+Current production default (October 15, 2026): render with a track from `policy.trustedCycle` in `video/data/audio-rights.json`. This includes currently approved YouTube Studio Audio Library tracks and Mixkit tracks; check the track record's platform permissions. “Gone Away” by Blue Beat Review is retired and must never be selected for a new reel. Use another active approved track for background music. Narration-only reels remain an exception requiring the explicit approval record below.
 
 ```bash
 node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
@@ -100,9 +113,11 @@ node scripts/render.mjs --post=<slug> --music=cycle --voice=chatterbox
 
 Reason: recent platform uploads were marked as copyrighted, including `Happy Mysterious Full Track 102 BPM, F Major` from Rapid Entertainment / Airbit SG Pte. Ltd. The old bundled ambient tracks are blocked in `video/data/audio-rights.json` until re-cleared with durable evidence. The approved production cycle currently contains ten Mixkit tracks, each with source URLs, license details, SHA-256 hashes, and usage restrictions preserved in the rights database.
 
-The renderer fails closed against `video/data/audio-rights.json`; the audit command verifies the local reference library when that library changes.
+The renderer fails closed against `video/data/audio-rights.json`; the audit command verifies the local reference library when that library changes. The exact active cycle is maintained in that rights file; do not reproduce a track count or stale list in this SOP.
 
 **Social publishing rule:** Every reel intended for YouTube, Instagram, or X uses the approved music cycle by default. The trusted cycle is the only automatic music source. A narration only reel is an exception, not a default: it requires an explicit release note explaining why music would reduce comprehension. Never pass an unlisted, retired, or unverified track to a social render.
+
+Record an approved narration only exception as `video/out/<slug>/narration-first-approval.json` with the slug, `approved: true`, approval date, approver, and reason. The release gate checks this record whenever `render-meta.json` says `musicTrack: "none"`. If the owner retires a track used by a scheduled reel, render and verify clean media, then replace only the scheduled post asset while preserving its caption, channel, and due time.
 
 Audit command:
 
@@ -1129,7 +1144,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Text | `#ffffff` white / `#afc6cf` muted |
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 720×1280 portrait @ 30fps |
-| Voice | Chatterbox using Nick's local voice reference |
+| Voice | Full Chatterbox Standard using Nick's local voice reference; settings and model pin are in `video/tts-runtime.json` |
 | Music | Approved trusted-cycle bed normalized to 20% of the narration signal (about -38 LUFS), or no music |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |
 
@@ -1188,3 +1203,17 @@ objective. The daily owner must also record qualified leads, conversions,
 attributed revenue, gross profit, delivery failures, quality escapes, and rework
 through `docs/PROFIT-IMPROVEMENT-SOP.md`. Do not promote a hook, duration, music
 track, or CTA from views alone.
+
+## Visual review hold and topic artwork
+
+A failed `video/out/<slug>/visual-review.json` blocks release until the owner inspects the corrected rendered MP4 and records a passing review. Preview stills help validate the repair but do not approve an older MP4. Review full portrait coverage, topic-specific artwork, unclipped text and captions, and the ending. Automated caption coverage alone does not establish visual quality. Production storyboards must match the slug and current script; generic silver pilot artwork must never be used as an unrelated topic fallback. Embedded collage uses the parent layout scale once.
+
+## Copyright recovery exception (September 23, 2026)
+
+Follow `docs/AUDIO-SOURCE-SOP.md` for revoked tracks and narration only copyright repairs. The documented claim recovery exception supersedes the music requirement for the affected correction only. Preserve original media and voice, verify transition timing, and do not report YouTube claim clearance until Studio confirms it.
+
+### Local Whisper repair (2026-10-13)
+
+Use the pinned offline caption runtime and recovery procedure in `docs/WHISPER-CAPTIONS-SOP.md`. Missing runtime/model/audio or transcription failures stop generation; silent proportional fallback is retired for new renders. Reuse cached timestamps for unchanged audio. Review recognized names, dates and speech pauses before release. The current coin idea shortlist in `content/coin-history/next-ideas/2026-10-14.md` awaits user selection; prepare the full transcript for approval before another coin video is generated.
+
+Presentation quality opt-in: `docs/REEL-PRESENTATION-PROFILE.md` describes the reviewed multi-shot 1080p profile and supervised caption preparation. Scheduled output defaults stay unchanged.

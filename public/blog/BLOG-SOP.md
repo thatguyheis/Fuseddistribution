@@ -1,4 +1,35 @@
+## Current October5 batch standard
+
+Visual enrichment and reusable media: `docs/REEL-ENRICHMENT-SOP.md`. Preserve verified evidence; use local illustrations and licensed stock in supporting scenes.
+
+Tech education expansion: `docs/TECH-EDUCATION-SOP.md`. Use concrete tool lessons, the imported hook strategy, and verified matching demonstrations.
+
+Current coin history standard (October 14, 2026): `docs/COIN-HISTORY-SOP.md`. Use the Fort Vancouver v2 format: substantive sourced history, owner coin evidence plus real context photographs and labeled AI imagery, selected concept and approved transcript before generation, flexible narration sections, and 720p final delivery strictly below 50 MB. This overrides generic six-scene and mandatory stock-video quotas for coin history. Preserve existing release gates.
+
+Current companion-video backfill and live verification: [Blog video reconciliation](../../docs/BLOG-VIDEO-RECONCILIATION-SOP.md). Growth priorities and the measured pilot: [October 5 growth audit](../../docs/GROWTH-AUDIT-2026-10-05.md).
+
+Follow `docs/BATCH-PRODUCTION-SOP.md` in the repository root for twice-weekly preparation, due-date release and two daily owner passes. Older schedules below are historical. Future reviewed packages remain unregistered until due; retain all editorial and live verification gates.
+
+## Buffer capacity correction, September 29, 2026
+
+Buffer Free allows 10 queued posts per connected channel, with slots reusable after publishing. Our operating ceiling is nine scheduled/sending posts per channel, leaving one spare on each: YouTube nine, Instagram nine, X nine, or 27 total. This is queue capacity, not a daily publishing quota. Retain the existing posting cadence, quality gates, duplicate checks, shared publisher lock and API request budgets. Fill in bounded batches of at most three per channel per maintenance pass; do not add calls or increase frequency just to fill every slot.
+
+Count live `scheduled` and `sending` posts separately by `channelId`. Pass only the destination channel count as `--current-scheduled`, with `--limit=10 --reserve-slots=1 --platform-count=1`. Never divide slots between channels or block an available channel because another is full. Sent posts count toward daily delivery, but do not occupy queue slots. The executor independently enforces the nine-post operating ceiling for the destination channel.
+
+Verified sources: [Buffer pricing](https://buffer.com/pricing) and [Buffer scheduling limits](https://support.buffer.com/en-us/articles/how-many-posts-can-i-schedule-in-advance-Kmy2IEecqm). This correction supersedes older shared-capacity instructions.
+
+September29 cover requirement: follow `docs/REEL-OPENING-SOP.md`. The approved hero must be visible at frame zero and earn attention with a clear focal subject, concise truthful hook, strong contrast and readable type at actual phone size. Review the encoded opening before scheduling; reject tiny text, cropped titles, blank animation frames or unrelated imagery. Reapprove changed hero artwork before regenerating its reel.
+
 # Blog Post SOP — Fused Distribution
+
+Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
+
+## September 7 reliability correction
+
+The health audit must check every completed calendar day for a queue and require fresh output for every queued topic. One fresh article cannot mask other recycled topics in the same queue. An absent current-day queue is not a missed-day claim before the day finishes.
+
+The incident procedure in `docs/PUBLISHING-INCIDENT-2026-09-07.md` supersedes older instructions that prepend recovered posts, rebuild registered slugs for a new date, reset exhausted retry counters, trust completion markers alone, or poll Buffer during cooldown. Check actual artifacts and fresh output with `node scripts/publishing-health.mjs --write`. Preserve publication dates, recover only proven stale locks, and use the shared Buffer runner and cooldown. The recovery owner must record new verified failures and regression tests in the incident procedure and this SOP.
+
 
 > Reference material (CSS, HTML template): **BLOG-REF.md** — copy verbatim, never re-read.
 
@@ -26,7 +57,7 @@ echo $PEXELS_API_KEY
 
 **Skill order matters — run in this sequence:**
 
-- [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions
+- [ ] Decide brand: Silver/Reserve OR Tech/Technology Solutions, then keep the same brand in `meta.json`, `posts.json`, and the `topic-history.md` section.
 - [ ] **`seo-plan` skill** — target keyword, search intent, competitor gap. Slug comes from keyword. Run FIRST.
 - [ ] **Topic contract check (§7b)** — title, slug, keyword, search intent, H2 plan, and draft must all answer the same reader problem. If they disagree, stop and rewrite the brief before generating.
 - [ ] **`blog-write` skill** — pass "Target keyword: [kw]. Intent: [intent]. Competitor gap: [gap]." Enforces E-E-A-T, sourced stats, 5-gate delivery, all §9 writing rules.
@@ -57,7 +88,7 @@ echo $PEXELS_API_KEY
 - [ ] Write `social-copy.json` (§14) — apply §9 writing rules to every caption field
 - [ ] Run `social-ad` skill — generates 2 SVG ad templates -> JPEG, updates `organic_ads[]` in social-copy.json
 - [ ] Run `ugc-script` skill — writes 2 A/B UGC script variants to `ugc-script.md`, validated
-- [ ] Add entry to `posts.json` top of array — `"image"` must use `.jpg` not `.svg`
+- [ ] Register with `add-to-posts.mjs` and keep `posts.json` sorted by date descending — `"image"` must use `.jpg` not `.svg`
 - [ ] Add 2-3 INLINE links inside body paragraphs + Related block + Read next (§9 Internal Linking — Related block alone does NOT pass)
 - [ ] Append to `public/blog/topic-history.md`
 - [ ] Validate reel-script.md (§3.4 checks) + social-copy.json (no em dashes)
@@ -76,8 +107,8 @@ echo $PEXELS_API_KEY
 The recovery loop is bounded. A model transport or empty-output failure remains
 retryable from the dated pending marker. An undersized article, invalid metadata,
 unsupported factual claim, or failed quality gate is quarantined with its exact
-checkpoint, automatically requeued on the next launch, and sent through the
-repair path before it can publish. The whole post has a watchdog, and the pending
+checkpoint and sent to an owner repair before it can publish. Do not
+reset its attempts or automatically requeue an exhausted quality block. The whole post has a watchdog, and the pending
 marker stores per-slug attempts. After the retry ceiling, the slug remains visibly
 blocked and the date cannot be reported complete until an owner repairs it.
 All operating dates come from `TZ=America/Los_Angeles date +%F`.
@@ -355,6 +386,7 @@ Insert at **top** of array (newest first):
   "date": "YYYY-MM-DD",
   "excerpt": "One or two sentences. Under 160 characters.",
   "tags": ["Tag One", "Tag Two"],
+  "brand": "silver",
   "author": "Nick",
   "image": "/blog/your-slug-here/hero.jpg",
   "imageAlt": "Descriptive alt text"
@@ -362,6 +394,8 @@ Insert at **top** of array (newest first):
 ```
 
 - `slug` must match folder name exactly
+- `brand` must be `silver` or `tech`; coin history belongs to `silver` even when its tags are `Coin history` and `Silver dollars`.
+- The blog index uses explicit `brand` first and coin or bullion tags only as a fallback for older entries.
 - `image` path must be unique across all entries — check before setting
 
 ---
@@ -556,9 +590,9 @@ Every post needs a topic contract before drafting. This prevents the failure mod
 Every post that has `reel-data.md` or `reel-script.md` must show one of two states in its HTML:
 
 - a released reel player or authoritative social links from `social-video.json`
-- a visible `Pending publication` notice while the reel waits for media hosting or social publication
+- a visible `Pending editorial release` notice while the companion reel waits for review, media hosting, or social publication
 
-The production runner applies the pending panel after the reel stage. The pending state describes one long form reel plus three planned short topics. These are editorial topic cards, not claims that three videos already exist. Later, `social:blog-video-links` replaces the panel with the released player and platform links. Do not hand edit generated `index.html` files. If a reel is ready locally but the blog has no panel, run the pending slot step for that slug, then complete the media and social sync checkpoints.
+The pending panel describes only the current release state. Do not promise a publication date or number of videos unless matching reviewed artifacts support it. A pending reel panel is not an article custom graphic and does not satisfy section 8. Keep the separate article graphic and Pexels figure in the generated body. Later, `social:blog-video-links` replaces the panel with the released player and authoritative platform links. Do not hand edit generated `index.html` files. If a reel is ready locally but the blog has no panel, run the pending slot step for that slug, then complete the media and social sync checkpoints.
 
 Before a reel is sent to Buffer, verify the exact public media URL with `npm run social:buffer:verify-media`. A local render passing release QA does not prove that Buffer can fetch the hosted copy. The hosted URL must return HTTPS, `video/mp4`, a byte count at or below 25 MiB, and a usable range response. A failed media check blocks Buffer retries until the public copy or media map is corrected.
 
@@ -568,6 +602,8 @@ Before a reel is sent to Buffer, verify the exact public media URL with `npm run
 
 Custom graphics count: chart-wrap, stat-row, math-box, coin-grid, watch-list.
 Pexels photos: `<figure class="article-photo">` placed between body paragraphs.
+
+In `verified.md`, use a standalone Markdown image with alt text and a quoted caption to build the figure. Local `images/` sources are emitted as root-relative article paths; include the photographer and original Pexels photo URL in the caption.
 
 **Visual-first rule (evolved 2026-07-29):** choose the visual that explains the
 article's actual relationship. Never add unrelated numbers merely to satisfy a chart

@@ -1,5 +1,7 @@
 # Profit-Aligned Evolving SOP
 
+Current authority: Nick confirms there is no revenue yet and approves the prioritized growth plan. Use views to evaluate and select content now; revenue evidence is not a prerequisite. This overrides historical revenue-first prioritization below for the current phase. Preserve all quality and release gates.
+
 Owner: Codex, accountable to Nick Hughes.
 
 Purpose: improve Fused Distribution's operating system every day while optimizing
@@ -68,8 +70,7 @@ metrics daily, so values may lag the social network by about 24 hours. Compare
 only the same platform and the same D+1, D+3, or D+7 age bucket. Raw lifetime
 views or impressions never earn direct points.
 
-The priority order is clicks, average view duration when derivable, engagement
-rate, views per hour, then impressions per hour. Average view duration equals
+Effective October 5, Nick authorizes views as the primary metric during the pre-revenue phase. Operational comparison points use only views per hour at matching platform/age buckets. Creative selection uses median D+7 views within platform and vertical under `ops/engagement/growth-pilot.json`. Clicks, watch duration, engagement and impressions may be reported as diagnostics but do not displace views or block selection. Average view duration equals
 `totalTimeWatched minutes * 60 / views`; leave it null when either field is
 missing. Missing metrics are not zero and are never invented. The aggregate
 leading-indicator score is capped at +/-12 points per day, preserving profit,
@@ -115,6 +116,28 @@ a new control after two occurrences; a critical failure is eligible immediately.
 No learned rule may weaken secrets handling, legal/financial disclaimers,
 accuracy, editorial QA, release QA, authoritative live verification, user
 approval, or platform compliance. Learned rules are additive and reversible.
+
+### ADA feedback evolution
+
+Every material production failure follows one durable path: incident evidence,
+stable fingerprint, dated feedback record, smallest corrective control,
+regression test or replay, then an active learned rule with a review date and
+rollback condition. Store incident records in
+`ops/profit-system/evolution/feedback/` and link their fingerprints from
+`ops/profit-system/learned-rules.json`.
+
+Buffer media failures are quality failures, not performance results. Exclude
+the affected post from fitness, reach, and revenue comparisons until the media
+is corrected and authoritative delivery is confirmed. Experiments may add
+observability or propose a bounded improvement, but they never weaken media,
+release-QA, duplicate, platform-compliance, or live-readback gates.
+
+For future Buffer and blog posts, the owner must carry forward the platform
+media manifest, verify the exact hosted bytes and content type, use platform
+headroom rather than a hard limit, and read back the created post before
+counting it as scheduled or published. Review a promoted control after three
+comparable clean runs; retain provenance and the fail-closed gate even when a
+rule is later narrowed.
 
 ## 5. Required structure for every SOP change
 
@@ -419,7 +442,7 @@ From 2026-08-05 through the 2026-08-12 review, the distribution owner may target
 six posts per Pacific operating day on each of YouTube Shorts, X, and Instagram.
 The established floor remains three per channel. Refill the queue every four
 hours for fixed 01:00, 05:00, 09:00, 13:00, 17:00, and 21:00 Pacific posting
-slots. Use the organization limit of 10, one reserved slot, and the seven-day
+slots. Use the per-channel limit of 10, one reserved slot per channel, and the seven-day
 repost cooldown. Schedule only after the latest active due time and never roll a
 current-day deficit into tomorrow. Prefer new release-approved work, then unsent
 backlog, then the oldest approved rotation candidate.
@@ -441,3 +464,7 @@ The implementation is verified by the daily-target, repost-policy, planner,
 queue-validation, and live Buffer readback tests. Record the result in
 `ops/profit-system/learned-rules.json` and reassess on 2026-08-12 before making
 the six-post target permanent.
+
+## October 5 evidence and next production pilot
+
+Apply [the current growth audit](GROWTH-AUDIT-2026-10-05.md): separate platforms and verticals; record exact creative/post identity; test demonstration openings within current capacity; use views as the approved primary metric while the business is pre revenue. Do not reward output volume as revenue. Keep missing analytics or sales evidence explicitly unavailable. Use the existing batch schedule and weekly review, with no new AI monitoring job.
