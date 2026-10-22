@@ -1,0 +1,29 @@
+{
+  "slug": "austrian-silver-philharmonic-guide",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-07T18:48:59.642532+00:00",
+  "review_notes": [
+    "Reviewed complete replacement article, metadata, social copy, and complete reel narration and overlays.",
+    "Primary sources checked for product or platform claims; no invented prices, returns, or performance statistics.",
+    "Hero image visually inspected; deterministic QA passes. Rendered reel still requires separate artifact and visual QA.",
+    "Recovery of previously failed queued topic; actual publication date retained, not backdated."
+  ],
+  "sources": [
+    "https://www.muenzeoesterreich.com/en/content/download/291314/file/Anlagefolder%2BEN%2B2025"
+  ],
+  "artifact_sha256": {
+    "verified.md": "2334b4e84a5d0deea39fb368470681ae53458759dfdeb0652813aaae7a07c0f3",
+    "index.html": "1732b2097fe359e38c84bce66cc6fd7843a27fed1ce9f72bea04807adefd41f8",
+    "meta.json": "a9e71ee7debca3bd77641291d4d865fd63c8293ae2e3c9dfba26b56c15d651bc",
+    "hooks.json": "8f958aae8cfbccdb2df0daab93b6c8198fac6dd6547045c4a24c8296273d796a",
+    "hero.jpg": "1d0d360ccb4dbbae1827ee209536b6a9bcce63f466c09591f25c485803157168",
+    "photo-post.jpg": "ee11ab122e2a80c08ac5a974f4fd83a0f324d4f7d64e36114c2e87abdd04a822",
+    "reel-data.md": "1151046ca5f8a38a96afb8231e6c0520ba62c9dddcc5e965c77782f615932935",
+    "reel-script.md": "7c562278deb7ae6b42949faf5a669fc854ff1683507aa4fdeae21c904ad9160e",
+    "social-copy.json": "23bf506201dc6ff8dda6695a5d95300e5018ee40b72947523e4900f7f45bf192",
+    "research.json": "88c7ea35da4cc8b228974bf3314129856f5fe634b8b62b038f82c04801215c32"
+  }
+}

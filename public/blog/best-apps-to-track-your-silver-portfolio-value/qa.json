@@ -1,0 +1,28 @@
+{
+  "slug": "best-apps-to-track-your-silver-portfolio-value",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:29:03.638618+00:00",
+  "review_notes": [
+    "Owner read full source grounded article and all eight final narration segments. Reviewed current primary company/product documentation and corrected misleading or unsupported claims.",
+    "Owner viewed both actual topic specific JPEG exports. Hypothetical figures, quantity and fine weight basis checked; no fabricated performance ranking or current quote.",
+    "Production parser and deterministic local QA passed. Actual reel rendering and platform posting are separate stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "4fa191a823b8e8703b54823185f2cf14381e29ebfe58707fc3745d16f6ea6e21",
+    "index.html": "0d828a1e1499a9ad7a3ff583d13b69f1322f35ef2a5cc22383bc05591f4662f3",
+    "hero.jpg": "dccca5914bfcfc3fe8afbe6f9c2e133e5a7fb00404bf802e103227db87168e25",
+    "social-copy.json": "3c6f6afc642d91679855f951deb90ccb805c7a84d7fc5e194172e899446d4862",
+    "hero.svg": "9121851c5d4d3824840c266be2fe51a13eef5902cd5d7c3a37e16c0366db73bc",
+    "reel-data.md": "5a0a77745cbeaa796774f1eea768373cc5ed08d80674ea140688430823a1f1f7",
+    "photo-post.svg": "ab8e403a283b6abbbf62c7d1f300f07f18f514eab967b70f8e1671aee4a0ec47",
+    "research.json": "e24b96f8c2ccbd08cd9edc8adcc9621af2504501733d7cb26deb050cfee47f44",
+    "hooks.json": "fe4bc528feaa1fdd0888ccafdab0520468685f3f031a8e0609e5b2f7800ebdfc",
+    "reel-script.md": "727586715866331eda206722f17d1765537241b5dd4492afb68689a652cd8208",
+    "gemma_draft.md": "4fa191a823b8e8703b54823185f2cf14381e29ebfe58707fc3745d16f6ea6e21",
+    "photo-post.jpg": "8297b509686b461e9aa2d46690830a28c7782fbdda5bf53774511374275f2102",
+    "meta.json": "670820b00229c0a81641cb4ecbf74936a3520d2447db5c77dd45effafdf8b9f9"
+  }
+}

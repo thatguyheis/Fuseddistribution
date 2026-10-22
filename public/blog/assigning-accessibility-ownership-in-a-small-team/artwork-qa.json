@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-01T18:59:21.486329+00:00",
+  "heroSha256": "539e97d45e2e9ee5d56f516a3c85f84dc0ed958de98c65150b45e221ff593fdf",
+  "subject": "Content, development and review responsibilities connected across a team",
+  "purpose": "Content, development and review responsibilities connected across a team",
+  "hook": "Every issue needs a next owner",
+  "keyWords": [
+    "assigning",
+    "accessibility",
+    "ownership"
+  ],
+  "chartEvidence": "not applicable: nonnumeric conceptual diagram",
+  "preview": ".workflow-state/recovery-2026-10-01/oct1-phone-review.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

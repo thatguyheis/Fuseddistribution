@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "slug": "2021-american-eagle-silver-redesign",
+  "assets": [
+    {
+      "path": "images/coin-evidence.jpg",
+      "sha256": "a20f22bf02222f81c24915d90addcbd27fead51bff3b1d7ab510f1acbbd39653",
+      "source": "Coin Raw/IMG_0977.jpeg",
+      "sourceSha256": "1906ade4c7cb998dc10655bd0f293738504660b18165e90c512ec35e7e8bf2b1",
+      "sourceType": "owner-supplied",
+      "assetId": "coin-0003",
+      "label": "2021 American Eagle designer set obverses; owner photograph, cropped to coins",
+      "role": "coin evidence",
+      "crop": {
+        "left": 600,
+        "top": 1500,
+        "width": 3100,
+        "height": 1500
+      },
+      "page": null,
+      "license": "Owner-supplied; authorized for Fused blog and reel use",
+      "attribution": "Nicholas / Fused Distribution"
+    }
+  ]
+}

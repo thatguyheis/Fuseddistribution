@@ -1,0 +1,39 @@
+{
+  "slug": "best-apps-to-track-your-silver-portfolio-value",
+  "reviewedAt": "2026-09-14",
+  "sources": [
+    {
+      "url": "https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://support.delta.app/en/articles/2416103-supported-exchanges",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/3093669?hl=en",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://support.google.com/docs/answer/15637642?hl=en",
+      "accessed": "2026-09-14"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables",
+      "accessed": "2026-09-14"
+    }
+  ],
+  "limits": [
+    "No reviewed app source establishes automatic physical bullion inventory, vault verification, authentication, or serial number capture.",
+    "No prices are asserted; bid and premium formulas are explicitly hypothetical.",
+    "Physical fine ounces are kept separate from ETFs, mining equities, and other proxies."
+  ]
+}

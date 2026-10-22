@@ -1,6 +1,25 @@
 {
   "slug": "1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy",
-  "score": 91,
   "pass": true,
-  "blockers": []
+  "score": 90,
+  "mode": "codex-editorial",
+  "blockers": [],
+  "reviewed_at": "2026-09-23T19:08:37.047166+00:00",
+  "review_notes": [
+    "Owner read entire original replacement article and all seven narration segments. Equal fine silver comparison, delivered totals and conditional buyback terms; no unsupported current premium percentages, returns, inventory or preservation guarantees.",
+    "Primary CFTC source review preserved in source-review.json. Article links two related practical checklists inline.",
+    "Actual hero and photo JPEG exports visually inspected: original relevant comparison checklist, legible and unclipped.",
+    "Original June15 publication date preserved; September23 modification identified. Reel publication remains separately held until matching narration and actual release review."
+  ],
+  "artifactSha256": {
+    "verified.md": "274fe8afce33eec65f25892c069d66c523fbad955c573e2861be237e7300586a",
+    "index.html": "ef79b56a327b08b95edab895551d732dfef9cd044df63069467933c1fb2d6a3a",
+    "meta.json": "346661324bda00e95cee9b191ff7ba1f9276e4edb635b239304cd1777aaa51ed",
+    "research.json": "f321d4b461184839ec3d4fa9268cb7860875ff408ad10290d22195dec38c662f",
+    "hero.jpg": "fe966c234b982605d3446fe1e7fb07624bcd938ad98cfed0d0a8ee330cad175c",
+    "photo-post.jpg": "904030f10ced3152842efd9ca1b3b25ebcade625a83a6d3bba9e1e88bf632234",
+    "reel-script.md": "94f082f9b77c60cd2b4b4a1b2c4221afd41b9f4903a0dfe0e081d3cd7ebb7ea9",
+    "reel-data.md": "f10442a487c4dd16d378362650f9659dc13bc8cca925a2d2728b0cdddd12354a",
+    "social-copy.json": "eec7e76597941474a2bee64f6bb8671a23dd4beba7ecee291729aa615afaab3c"
+  }
 }

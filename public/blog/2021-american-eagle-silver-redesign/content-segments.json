@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "slug": "2021-american-eagle-silver-redesign",
+  "planVersion": 1,
+  "model": "gemma3:4b",
+  "helper": "/Users/nick/projects/fuseddistribution/scripts/ollama-local-no-think.sh",
+  "generatedAt": "2026-10-21T06:19:49.012Z",
+  "totalWords": 892,
+  "telemetry": {
+    "opening": {
+      "resumed": true,
+      "attempts": 0,
+      "seconds": 0,
+      "words": 180
+    },
+    "sections": {
+      "s01": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 173
+      },
+      "s02": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 177
+      },
+      "s03": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 177
+      },
+      "s04": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 144
+      }
+    }
+  }
+}

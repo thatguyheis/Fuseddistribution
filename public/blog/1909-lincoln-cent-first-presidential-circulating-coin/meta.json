@@ -1,0 +1,38 @@
+{
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "title": "Why Abraham Lincoln Appeared on the Cent in 1909",
+  "description": "Explore how Lincoln's 1909 cent broke with earlier U.S. coin portrait tradition, marked his centennial, and began a changing series of reverse designs.",
+  "ogDescription": "Explore how Lincoln\u2019s 1909 cent broke with earlier circulating coin portrait tradition, marked his centennial, and began a long sequence of changing revers",
+  "alt": "1909 VDB Lincoln cent obverse and",
+  "brand": "silver",
+  "date": "2026-10-21",
+  "modifiedDate": "2026-10-21",
+  "tags": [
+    "Coin history",
+    "American coins",
+    "1909 lincoln cent"
+  ],
+  "ctaLine": "Explore more verified stories from American coin history.",
+  "status": "draft-automated-qa-pending",
+  "contentGraphic": {
+    "label": "Why Abraham Lincoln Appeared on the Cent in 1909",
+    "rows": [
+      {
+        "condition": "Centennial",
+        "action": "The cent marked Lincoln\u2019s 100th birthday."
+      },
+      {
+        "condition": "Release",
+        "action": "Public release came August 2, 1909."
+      },
+      {
+        "condition": "Obverse",
+        "action": "Victor David Brenner designed Lincoln."
+      },
+      {
+        "condition": "Reverse",
+        "action": "The Wheat design ran through 1958."
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hook": "A spoken confirmation is not proof an order reached the kitchen.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "3",
+    "label": "Check menu, modifiers and delivery"
+  },
+  "discussion_question": "Which ordering failure would you test first?",
+  "hashtags": "#Restaurants #SmallBusiness #AI"
+}

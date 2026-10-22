@@ -1,0 +1,28 @@
+{
+  "slug": "apmex-vs-jm-bullion-premium-comparison-2026",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-14T14:29:03.314098+00:00",
+  "review_notes": [
+    "Owner read full source grounded article and all eight final narration segments. Reviewed current primary company/product documentation and corrected misleading or unsupported claims.",
+    "Owner viewed both actual topic specific JPEG exports. Hypothetical figures, quantity and fine weight basis checked; no fabricated performance ranking or current quote.",
+    "Production parser and deterministic local QA passed. Actual reel rendering and platform posting are separate stages."
+  ],
+  "artifactSha256": {
+    "verified.md": "15f442331e091764741010ddbc891434d90fcc8fd244891c1ed1370ee0d45033",
+    "index.html": "0fc48caf1e8dfcac02f93e82d6e28f886f9adaa4af3994fdb8ceccf34e3950a5",
+    "hero.jpg": "51f6bb3211c7bc464ecae97b9054fcb31da393fa2031fef5555757c4f0af677c",
+    "social-copy.json": "7396bc48c6992ac763676fd0e1abf0d2993bea8e297c0bad09a9390807734aa5",
+    "hero.svg": "0a7dedf31ead8042df8736bdbab74c093cdf9e5d54c55d161d5827029a52b658",
+    "reel-data.md": "aa0b46b5fddd98fbd4d3b561d520aefa67271a311b147ef8e8349cbd26a18957",
+    "photo-post.svg": "656f65f92390068d7c86885737e3345056eb6107e85533ffaaf1c85c9679458d",
+    "research.json": "ad8ac1e352a679f059d55de9a5734c44526fc5666c57627467f90df761ec6865",
+    "hooks.json": "3bd706b5eb84d2064e2e76932bb14aea8dee7293ab46124f40ea2349f02809ac",
+    "reel-script.md": "278b80463c243fa921044731e953720aea2c621b734d0fd169f09337d8acbccb",
+    "gemma_draft.md": "15f442331e091764741010ddbc891434d90fcc8fd244891c1ed1370ee0d45033",
+    "photo-post.jpg": "ae5c4a2aa4f3dba2d857be0ac54ff1ebe31dbb028c55bda7b43b415e7db592f6",
+    "meta.json": "900a601cc4dfb4bd01940e269e270ce4c8478f68ed31f8eae31a39f0192ebebd"
+  }
+}

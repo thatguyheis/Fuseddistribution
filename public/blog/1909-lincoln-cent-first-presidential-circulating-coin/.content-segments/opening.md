@@ -1,0 +1,5 @@
+Why Abraham Lincoln Appeared on the Cent in 1909
+
+The familiar image of Abraham Lincoln on the U.S. cent - a ubiquitous symbol of American history - didn’t simply materialize in 1909. The story of its creation, the first circulating U.S. coin to feature a real person and president, is a surprisingly complex one, rooted in a chance encounter and a Mint’s evolving record. This article will explore the circumstances surrounding the release of the 1909 cent, commemorating Lincoln’s centennial, and trace the changes to the coin’s design over subsequent anniversaries. 
+
+The 1909 cent, released on August 2, marked a significant moment in U.S. coinage. Victor David Brenner designed the portrait of the president, and the Mint’s records document a degree of uncertainty about the precise decision-making process. Notably, President Theodore Roosevelt was drawn to a plaque created by Brenner. Following the initial release of over 22 million cents struck in Philadelphia, the coin’s design would continue to evolve, reflecting changing commemorative events and ultimately, a shift in its reverse design.

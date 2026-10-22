@@ -1,0 +1,30 @@
+{
+  "slug": "ai-tools-for-restaurant-ordering-and-menu-management",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T15:38:32.442269+00:00",
+  "review_notes": [
+    "Full source and editorial replacement of failed August 1 draft. Verified Square description generation and channel controls, Toast voice integration category and ordinary online ordering configuration. No unsupported market size, prices, client results or universal automation promises.",
+    "Actual publication date September 8, original queue date August 1 preserved. Hypothetical cases and arithmetic labelled; no dietary certification from generated prose.",
+    "Local QA passes. Hero and photo artwork visually reviewed. Synchronized eight-segment companion reel parses and validates at estimated 110 seconds; rendering and audiovisual review remain pending."
+  ],
+  "sources": [
+    "https://squareup.com/help/us/en/article/8335-create-and-edit-items",
+    "https://pos.toasttab.com/restaurant-pos/drive-thru",
+    "https://support.toasttab.com/en/article/Getting-Started-Online-Ordering"
+  ],
+  "artifact_sha256": {
+    "verified.md": "bd8f445341e69d55c00b05f100c6715452dfe77a812142c5def9ed505e313b21",
+    "index.html": "ebf46b35f93aab512595d766133b4184b030ad24747c8509f0917098b70de565",
+    "meta.json": "93675fb7c7b60bce500929c17e1496c3af4d74f570daa3d8798b90588f7ca08b",
+    "hooks.json": "36d624c062268d010ae58eb16778b7ae86167da58aace0fa2b984d996e0f0f53",
+    "hero.jpg": "42acf11c38d9daad47a4dcbe4e4417f8938dc48dfd4444426a7e371ff8884601",
+    "photo-post.jpg": "620ade22b1e396a0bfe5ab73aef79c8a9e3d2260bad0c925d43fa8924c43be3f",
+    "reel-data.md": "50933e3da4299d166f165c3d20ab9b769729ef395eb75bdc3611f4d6014fbb51",
+    "reel-script.md": "afd38a889f2a10c2413721cd3f7152bf3c34a697f970472e7b1e21a6b40b6d03",
+    "social-copy.json": "61ccf01702e5b960e23ee512e8f79566265cb717227cc0af207fd5d4da6511d4",
+    "research.json": "ab8e0f902a7a14fc57d352417ef49b43f914abd11c73b56b944f13a6048063d2"
+  }
+}

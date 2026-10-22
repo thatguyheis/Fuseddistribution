@@ -14,6 +14,15 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-10-15 | fort-vancouver-centennial-half-dollar | Coin history | Fort Vancouver and the Hudson's Bay Company on a 1925 commemorative |
+| 2026-10-14 | pittman-act-silver-dollar-melting | Coin history | How the Pittman Act melted silver dollars and brought Morgan dollars back |
+| 2026-10-14 | peace-dollar-history-and-symbolism | Coin history | The Peace dollar's revised sword and postwar symbolism |
+| 2026-10-01 | assigning-accessibility-ownership-in-a-small-team | Business operations | Assign Accessibility Ownership in a Small Team |
+| 2026-10-01 | when-two-service-pages-answer-the-same-question | Business operations | When Two Service Pages Answer the Same Question |
+| 2026-10-01 | turning-service-conversations-into-useful-faq-topics | Business operations | Turn Service Conversations Into Useful FAQ Topics |
+| 2026-10-01 | planning-a-website-around-customer-questions | Business operations | Plan a Website Around Customer Questions |
+| 2026-09-17 | how-to-prepare-website-content-before-hiring-a-designer | General | how to prepare website content before hiring a designer |
+| 2026-09-16 | how-to-organize-customer-photos-for-your-website | General | how to organize customer photos for your website |
 | 2026-07-22 | retargeting-ads-for-small-business-how-they-work | General | retargeting ads for small business how they work |
 | 2026-07-22 | google-local-service-ads-explained | General | google local service ads explained |
 | 2026-07-19 | behind-the-scenes-content-ideas-for-small-business | General | behind the scenes content ideas for small business |
@@ -143,8 +152,20 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 ## Silver Posts
 
+| 2026-09-21 | silver-bar-serial-numbers-and-inventory-records | General | silver bar serial numbers and inventory records |
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-10-21 | 1909-lincoln-cent-first-presidential-circulating-coin | General | Why Abraham Lincoln Appeared on the Cent in 1909 |
+| 2026-10-21 | columbian-exposition-first-commemorative-half | General | How the 1892 Columbian Half Dollar Helped Prepare a World’s Fair |
+| 2026-10-20 | 2021-american-eagle-silver-redesign | General | What Changed When the American Silver Eagle Was Redesigned in 2021? |
+| 2026-10-20 | carver-washington-half-dollar-two-educators | General | Why the Carver-Washington Half Dollar Honors Two Educators |
+| 2026-10-20 | kennedy-half-dollar-memorial-and-metal | General | How the Kennedy Half Dollar Became a Memorial and a Marker of Change |
+| 2026-10-01 | how-to-read-a-usgs-silver-commodity-summary | Materials and minting | How to Read a USGS Silver Commodity Summary |
+| 2026-10-01 | what-a-coin-collar-does-during-striking | Materials and minting | What a Coin Collar Does During Striking |
+| 2026-10-01 | how-coin-dies-transfer-a-design-to-metal | Materials and minting | How Coin Dies Transfer a Design to Metal |
+| 2026-10-01 | silver-in-mirrors-and-reflective-coatings | Materials and minting | Silver in Mirrors and Reflective Coatings |
+| 2026-10-01 | coin-blanks-and-planchets-explained | Materials and minting | Coin Blanks and Planchets Explained |
+| 2026-10-01 | why-silver-is-used-in-electrical-contacts | Materials and minting | Why Silver Is Used in Electrical Contacts |
 | 2026-09-03 | buying-silver-from-a-local-coin-shop-vs-online | General | buying silver from a local coin shop vs online |
 | 2026-07-15 | silver-monetary-history-complete-guide | General | silver monetary history complete guide |
 | 2026-09-03 | how-to-avoid-silver-dealer-scams | General | how to avoid silver dealer scams |
@@ -299,3 +320,6 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-10-12 | creating-an-approval-log-for-ai-assisted-work | AI workflow | Create a proportionate approval log for AI-assisted work |
+| 2026-10-01 | building-a-test-set-for-ai-customer-support-drafts | Business operations | Build a Test Set for AI Support Drafts |
+| 2026-10-01 | choosing-a-low-risk-first-ai-task-for-a-small-business | Business operations | Choose a Low Risk First AI Task |

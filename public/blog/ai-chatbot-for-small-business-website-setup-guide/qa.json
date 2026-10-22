@@ -1,0 +1,31 @@
+{
+  "slug": "ai-chatbot-for-small-business-website-setup-guide",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-09-08T15:02:59.081669+00:00",
+  "review_notes": [
+    "Full replacement of failed July 31 draft using current Tidio primary documentation. No fabricated Fused customer experience or conversion/time-saving statistics.",
+    "Distinct public website installation guide; general customer-service article is not equivalent. Actual publication date September 8, original queued date July 31 retained separately.",
+    "Deterministic article QA passes. Eight-segment synchronized reel parses and validates, estimated 112 seconds; rendered audiovisual review still required.",
+    "Actual hero and square artwork visually reviewed; readable, no invented metric or customer evidence."
+  ],
+  "sources": [
+    "https://help.tidio.com/hc/en-us/articles/5378348485660-Install-Tidio-on-your-Website",
+    "https://help.tidio.com/hc/en-us/articles/9003475527196-Lyro-the-conversational-AI-agent",
+    "https://help.tidio.com/hc/en-us/articles/13924459295900-The-Lyro-AI-agent-limit"
+  ],
+  "artifact_sha256": {
+    "verified.md": "eac8372b664850ec85ab5d691139b1b537b64dbbdc9495baa36829fd84f00a11",
+    "index.html": "6e691439c548247c8cb0a3a89e798f3cbd7f3b8f6a4ae78ce6944bf76b0807ec",
+    "meta.json": "cadc9753892d333a8ed7df92faa3c67765d1e4d9fc4890c37f3406d0f4841cc2",
+    "hooks.json": "832612070bdd96259587db51e1d7b8943a06873cf8c2e8396357e3d9f1a56b82",
+    "hero.jpg": "c51b6200ccec20a6cbc8b4922c2f9c0d14385904da6559f900eab016cbc4c2db",
+    "photo-post.jpg": "0a7f80c51ff21be0a855b3f55e1b18f598e6f7073716c6120fa149c0dc0d7776",
+    "reel-data.md": "c7612e894388b0f439b5b046c5d21cba49d152aeac024d853a8a68d4abc71163",
+    "reel-script.md": "46397e5df24990aa0f06d5df1019d26f867b7e25bf91378eb6c81fb531b6f7d7",
+    "social-copy.json": "846072c2a832db6e5c90c7c746bfa1d75e89339e2d3e1fc1771b0ff950d3042c",
+    "research.json": "fb81f79782ab50c4e47eaadde71ad9bb2c3bfd17dd3eacabe65ef1c72d2748a2"
+  }
+}

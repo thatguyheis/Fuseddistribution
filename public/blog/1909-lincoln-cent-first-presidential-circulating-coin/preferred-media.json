@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "source": "fused-verified-coin-evidence",
+  "segments": [
+    {
+      "index": 0,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-0.jpg",
+      "sha256": "c612eb15f01ccb2cb1cf6baa4340e315360f4cab81eb056b010d3fb544745044",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "obverse-and-reverse overview",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 1,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-1.jpg",
+      "sha256": "a1ca4e30b586afa8961995a58a7268112dccde85da221021728970e86b0f054c",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "Lincoln obverse",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 2,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-2.jpg",
+      "sha256": "ffe5dccdd3cb54fdb722fed97bb52b5012d53c65811369001dc262ee5295c44b",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "Wheat Ears reverse",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 3,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-3.jpg",
+      "sha256": "f8ef364262efdea62d312d37ff4f3b8e7c02e601b9c47607bfdc11d9ad105a57",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "portrait and date detail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 4,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-4.jpg",
+      "sha256": "ffe5dccdd3cb54fdb722fed97bb52b5012d53c65811369001dc262ee5295c44b",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "Wheat Ears reverse",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 5,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-5.jpg",
+      "sha256": "c612eb15f01ccb2cb1cf6baa4340e315360f4cab81eb056b010d3fb544745044",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "obverse-and-reverse overview",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    },
+    {
+      "index": 6,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/1909-lincoln-cent-first-presidential-circulating-coin/images/video-crops/segment-6.jpg",
+      "sha256": "71158810efdc1b6d3209a59d3413f3ad9b5d87f2fb7374044620dc3041f8e1ad",
+      "assetIds": [
+        "wikimedia-commons-1909-us-penny"
+      ],
+      "role": "1909 date and mint-mark detail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons",
+      "sourceAssetSha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285"
+    }
+  ],
+  "reviewNote": "Every crop was generated directly from the hash-verified public-domain 1909 Lincoln cent source image; no stock, unrelated coin, or AI generated coin image is present.",
+  "reviewedAt": "2026-10-21T11:31:26.369546+00:00"
+}

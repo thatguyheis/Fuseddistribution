@@ -1,0 +1,27 @@
+{
+  "slug": "assigning-accessibility-ownership-in-a-small-team",
+  "title": "Assign Accessibility Ownership in a Small Team",
+  "description": "Assign accessibility work across content, development and review, define concrete checks, and give unresolved website issues an owner and a clear next action.",
+  "alt": "Team members share accessibility review responsibilities",
+  "brand": "tech",
+  "date": "2026-10-01",
+  "modifiedDate": "2026-10-01",
+  "tags": [
+    "Operations",
+    "Content"
+  ],
+  "ctaLine": "Should accessibility have one coordinator or shared ownership across the team?",
+  "contentGraphic": {
+    "label": "Assign Accessibility Ownership in a Small Team",
+    "rows": [
+      {
+        "condition": "Map real responsibilities",
+        "action": "Define concrete checks"
+      },
+      {
+        "condition": "Own each handoff",
+        "action": "Include external tools"
+      }
+    ]
+  }
+}

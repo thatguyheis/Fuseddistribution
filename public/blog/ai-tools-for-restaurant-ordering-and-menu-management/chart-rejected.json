@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "AI tools are projected to reach $12.9 billion by 2030.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com",
+  "data": [
+    {
+      "label": "AI Market Projection",
+      "value": "$12.9 billion",
+      "metric": "Market Size",
+      "unit": "USD",
+      "period": "2030",
+      "evidence": "The restaurant technology market is projected to reach $12.9 billion by 2030"
+    }
+  ],
+  "hero_stat": {
+    "value": "$12.9 billion",
+    "label": "AI Restaurant Tech Market Forecast"
+  },
+  "narration": "AI is transforming the restaurant industry with tools that automate tasks, improve accuracy, and provide valuable insights. The market for these technologies is expected to grow significantly, reaching $12.9 billion by 2030."
+}

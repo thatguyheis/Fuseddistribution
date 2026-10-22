@@ -1,0 +1,10 @@
+{
+  "hook": "Check the coin and the full delivered price.",
+  "hook_type": "practical",
+  "key_stat": {
+    "value": "999",
+    "label": "Silver fineness"
+  },
+  "discussion_question": "What would you check before buying a Philharmonic?",
+  "hashtags": "#Silver #Bullion"
+}

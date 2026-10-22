@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "visual_type": "stat_cards",
+  "title": "UNDER 90 CHARS",
+  "takeaway": "Small businesses spend an average of 10 hours per week just handling customer service requests.",
+  "source": "PUBLISHER OR DATASET",
+  "source_url": "https://www.example.com/blog/ai-chatbot-for-small-business-website-setup-guide",
+  "data": [
+    {
+      "label": "Customer Service Time",
+      "value": "10 hours",
+      "metric": "Time Spent",
+      "unit": "hours/week",
+      "period": "average",
+      "evidence": "According to a recent study, small businesses spend an average of 10 hours per week just handling customer service requests"
+    },
+    {
+      "label": "Chatbot Preference",
+      "value": "78%",
+      "metric": "Consumer Preference",
+      "unit": "%",
+      "period": "general",
+      "evidence": "Studies show that 78% of consumers prefer using chatbots for quick answers and support"
+    },
+    {
+      "label": "Online Support Expectation",
+      "value": "60%",
+      "metric": "Consumer Expectation",
+      "unit": "%",
+      "period": "general",
+      "evidence": "Studies show that over 60% of consumers expect instant support from businesses online"
+    },
+    {
+      "label": "Chatbot Lead Capture",
+      "value": "20-30%",
+      "metric": "Lead Generation Increase",
+      "unit": "%",
+      "period": "average",
+      "evidence": "Businesses using chatbots experience an average of 20-30% increase in lead generation"
+    }
+  ],
+  "hero_stat": {
+    "value": "10",
+    "label": "Average Customer Service Hours"
+  },
+  "narration": "Small businesses are struggling with high customer service demands. Integrating an AI chatbot offers a simple solution to free up valuable time and improve customer engagement. By providing instant support and automating common inquiries, chatbots can significantly boost productivity and drive sales."
+}

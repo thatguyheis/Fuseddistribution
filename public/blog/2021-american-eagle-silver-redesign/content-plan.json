@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "editorialProfile": "coin-history",
+  "slug": "2021-american-eagle-silver-redesign",
+  "title": "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+  "brand": "silver",
+  "readerPromise": "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+  "reel": {
+    "topic": "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+    "promise": "One familiar face, one new eagle",
+    "sectionIds": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "The Silver Eagle begins with a familiar Liberty",
+      "readerQuestion": "What stayed familiar when the reverse changed?",
+      "purpose": "Connect the 1986 program and Weinman obverse to the Mint’s 25-year design period for the reverse.",
+      "keyPoints": [
+        "Connect the 1986 program and Weinman obverse to the Mint’s 25-year design period for the reverse.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "AE1",
+        "AE4"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s02",
+      "heading": "A landing eagle replaces the heraldic reverse",
+      "readerQuestion": "Who designed and sculpted the new reverse?",
+      "purpose": "Describe the documented Damstra eagle and oak branch design, Gaudioso’s sculpting role, and the earlier Mercanti reverse.",
+      "keyPoints": [
+        "Describe the documented Damstra eagle and oak branch design, Gaudioso’s sculpting role, and the earlier Mercanti reverse.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "AE2",
+        "AE5"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s03",
+      "heading": "The obverse returns to Weinman’s source artwork",
+      "readerQuestion": "What changed in the familiar Liberty image?",
+      "purpose": "Explain the Mint’s documented return to Weinman’s source material and the more faithful 2021 rendering.",
+      "keyPoints": [
+        "Explain the Mint’s documented return to Weinman’s source material and the more faithful 2021 rendering.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "AE6"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s04",
+      "heading": "A two-coin set made the transition visible",
+      "readerQuestion": "How did the Mint present the old and new reverses?",
+      "purpose": "Describe the 2021 transition set and the paired designs without adding details about an owner specimen.",
+      "keyPoints": [
+        "Describe the 2021 transition set and the paired designs without adding details about an owner specimen.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "AE3",
+        "AE7"
+      ],
+      "targetWords": 180
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "planVersion": 1,
+  "model": "gemma3:4b",
+  "helper": "/Users/nick/projects/fuseddistribution/scripts/ollama-local-no-think.sh",
+  "generatedAt": "2026-10-21T09:36:50.271Z",
+  "totalWords": 961,
+  "telemetry": {
+    "opening": {
+      "resumed": true,
+      "attempts": 0,
+      "seconds": 0,
+      "words": 178
+    },
+    "sections": {
+      "s01": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 213
+      },
+      "s02": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 190
+      },
+      "s03": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 147
+      },
+      "s04": {
+        "resumed": true,
+        "attempts": 0,
+        "seconds": 0,
+        "words": 189
+      }
+    }
+  }
+}

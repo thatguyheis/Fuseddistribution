@@ -1,0 +1,38 @@
+{
+  "slug": "2021-american-eagle-silver-redesign",
+  "title": "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+  "description": "Compare the American Silver Eagle\u2019s familiar Walking Liberty obverse with the new 2021 reverse, its artists, and the Mint\u2019s two-coin transition set.",
+  "ogDescription": "Compare the American Silver Eagle\u2019s familiar Walking Liberty obverse with the new 2021 reverse, its artists, and the Mint\u2019s two-coin transition set.",
+  "alt": "2021 American Eagle designer set obverses",
+  "brand": "silver",
+  "date": "2026-10-20",
+  "modifiedDate": "2026-10-20",
+  "tags": [
+    "Coin history",
+    "American coins",
+    "2021 american eagle"
+  ],
+  "ctaLine": "Explore more verified stories from American coin history.",
+  "status": "draft-automated-qa-pending",
+  "contentGraphic": {
+    "label": "What Changed When the American Silver Eagle Was Redesigned in 2021?",
+    "rows": [
+      {
+        "condition": "Program",
+        "action": "American Silver Eagles began in 1986."
+      },
+      {
+        "condition": "Obverse",
+        "action": "Weinman\u2019s Walking Liberty design remained."
+      },
+      {
+        "condition": "Reverse",
+        "action": "A new landing eagle arrived in 2021."
+      },
+      {
+        "condition": "Transition",
+        "action": "The Mint paired both reverses in a set."
+      }
+    ]
+  }
+}

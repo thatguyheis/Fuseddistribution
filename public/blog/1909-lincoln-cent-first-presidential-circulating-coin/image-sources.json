@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "assets": [
+    {
+      "path": "images/coin-evidence.jpg",
+      "sha256": "9e3944d04858a6569185cef661f405d8b3e10f5ed3b2f8d8f7ac5aebdb241285",
+      "source": "artwork-source/wikimedia-commons-1909-vdb-cent-obverse-reverse.jpg",
+      "sourceSha256": "a035b9fe29616efe48cf73d0c4e0d4e12e94954378c8756a2b79046cf620a0d7",
+      "sourceType": "Wikimedia Commons",
+      "assetId": null,
+      "label": "1909 VDB Lincoln cent obverse and reverse; Wikimedia Commons public domain; shown as a 1909 example, not a rarity claim",
+      "role": "coin evidence",
+      "crop": null,
+      "page": "https://commons.wikimedia.org/wiki/File:1909_US_Penny.jpg",
+      "license": "Public domain as listed on Wikimedia Commons; U.S. coin image",
+      "attribution": "United States Mint / Wikimedia Commons"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "assigning-accessibility-ownership-in-a-small-team",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-10-01T19:35:30.617389+00:00",
+  "review_notes": [
+    "W3C responsibilities, resources and skills context verified. Original role workflow; no certification or legal compliance claim.",
+    "Full article and companion scripts reviewed. Local QA/parser passed; narration and render remain pending.",
+    "Exported hero/square images and phone compositions visually reviewed. Topic-specific diagrams checked for clipping and legibility.",
+    "October1 engagement revision: topic-specific preference/debate question reviewed without changing factual article claims or publication date. New recovery reels move summary before the final spoken question; legacy September28 narration is unchanged."
+  ],
+  "artifactSha256": {
+    "verified.md": "35d308c164517dd6539a9be3404bb89c3dec983ced1fcca95a3127e2c3699d5a",
+    "index.html": "aa0a06bb91a39861d41302dc2c2529236a538808ab0d3f407ad4bf655b2ba1c3",
+    "meta.json": "f18994ce80906d44529d883473c6fa6503ad4fc3c24c195dfa1659dea05c71b4",
+    "research.json": "8dae05ddde9ccb1579fa720ca574eadeef1579f1632ec53ac85301e166ea7561",
+    "hero.jpg": "539e97d45e2e9ee5d56f516a3c85f84dc0ed958de98c65150b45e221ff593fdf",
+    "photo-post.jpg": "3cf3d34ca72b9a5aaadb36720f5bb545efc0b9d2a6817dc04c5607c11ad8c8cb",
+    "reel-script.md": "e5eca2c4a2b0f361036ac3139e09551c9fefe7de7dac909ae805926b60146c13",
+    "reel-data.md": "c75f5ac3dd28d5569b1b05d7f02b0e05931c495f5fa5e35a410efad3f559f484",
+    "social-copy.json": "491c7da3d7e85d811d36a1f2d19c12e7409dcd44e0afdd5393239ea6e881fac8"
+  }
+}

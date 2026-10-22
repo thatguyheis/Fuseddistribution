@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source": "fused-owned-coin-library",
+  "mode": "mixed",
+  "segments": [
+    {
+      "index": 3,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/2021-american-eagle-silver-redesign/images/coin-evidence.jpg",
+      "sha256": "a20f22bf02222f81c24915d90addcbd27fead51bff3b1d7ab510f1acbbd39653",
+      "role": "Owner supplied 2021 American Silver Eagle obverse evidence; visual anchor for Weinman obverse detail."
+    },
+    {
+      "index": 5,
+      "type": "photo",
+      "reviewed": true,
+      "path": "public/blog/2021-american-eagle-silver-redesign/images/coin-evidence.jpg",
+      "sha256": "a20f22bf02222f81c24915d90addcbd27fead51bff3b1d7ab510f1acbbd39653",
+      "role": "Owner supplied pair of 2021 Silver Eagle obverses; reinforces that Liberty remains across the redesign."
+    }
+  ]
+}

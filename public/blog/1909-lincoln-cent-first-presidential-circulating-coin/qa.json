@@ -1,0 +1,33 @@
+{
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "score": 98,
+  "pass": true,
+  "blockers": [],
+  "mode": "coin-history-automated",
+  "automaticApproval": {
+    "policy": "coin-history-auto-v1",
+    "model": "gemma3:4b",
+    "qualityThreshold": 85,
+    "transcriptHashVerified": true
+  },
+  "artifactSha256": {
+    "verified.md": "2ed55b9d337463704251c4422a1aee217be43b27c8cfa852f1ad6047718ca884",
+    "index.html": "fed873faa4aafe5b35d03f5dfbf5237620b62c834b4abe440ee49047f8327dba",
+    "meta.json": "b2a0bbc7ee5a7a5fa0af1ea1f55ad10292cc950dd03a02b59fbc20951e8d03e2",
+    "research.json": "ca633098128ee25f8932c47d06c6f84d7d6f9a78bc6e3c62afef01482fb77f5e",
+    "hero.jpg": "2635d3969b6823343638f3e84b545a6a2ad5d51f5b9e9e4061ccaa9ff762b00f",
+    "photo-post.jpg": "845aada6d98f29f6d066ed4a63a78b1d027ba9ddfe3764a4ec0d42654b3315f8",
+    "reel-script.md": "c11adae689f9e559311714a19f2cae8dbb55d2547a23811ce7dc8ed366f2f9fa",
+    "reel-script-approved.md": "c11adae689f9e559311714a19f2cae8dbb55d2547a23811ce7dc8ed366f2f9fa",
+    "reel-data.md": "d87e460774d3cf23cc84d6429e36c9aba63b4f7ed1e14f6944ee5d07a8b3145f",
+    "social-copy.json": "1e5e3df156d20d840ff37770582ffd9491a8769d02d1f327a0c12c68a886ba4b",
+    "production-inputs.json": "f1d06f6878c5452e947b614296b512df41d963642db7f923e2fd24be2f498621",
+    "image-sources.json": "c3d91fa67bc2da2f6a40777925344bc4b27d96620f955ca024d460b2d33a3f61",
+    "content-plan.json": "8399c9a7e67c8edc396387997491b9f9fc03ba95d09b00ff12409a8673c64415",
+    "pipeline-marker.json": "e0f3bb50c65bf63237d894cb233ed8c81d28f81768c231662069dd13f0558c4f",
+    "content/coin-history/1909-lincoln-cent-first-presidential-circulating-coin/narration-v1-approved.txt": "d88d8210cfce68c2b899d31024c48c91d5d4b3d64b1ecc07a4486e3dcfdaa1ab",
+    "content/coin-history/1909-lincoln-cent-first-presidential-circulating-coin/script-approval.json": "5704b6768113a3ad62556f06fd766d797d62b8adea505b17ca03b16d222712b0",
+    "content/coin-history/1909-lincoln-cent-first-presidential-circulating-coin/claim-map.json": "26f6b3ce24bbcc4cd495fb65f4b1e4e4f2e0ffa19b40b0d49412806a025ad456",
+    "preferred-media.json": "bbcf0aec3e5e25237ee38a0f624a0b4c246358b2e2f820826491d618afd360d7"
+  }
+}

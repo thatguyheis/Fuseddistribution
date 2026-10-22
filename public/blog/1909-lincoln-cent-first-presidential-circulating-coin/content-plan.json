@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "editorialProfile": "coin-history",
+  "slug": "1909-lincoln-cent-first-presidential-circulating-coin",
+  "title": "Why Abraham Lincoln Appeared on the Cent in 1909",
+  "brand": "silver",
+  "readerPromise": "Why Abraham Lincoln Appeared on the Cent in 1909",
+  "reel": {
+    "topic": "Why Abraham Lincoln Appeared on the Cent in 1909",
+    "promise": "A president enters everyday pocket change",
+    "sectionIds": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ]
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "heading": "The centennial issue reached the public in August",
+      "readerQuestion": "What did the Mint release in 1909?",
+      "purpose": "Describe Lincoln’s centennial, the August 2 release, and the Mint’s recorded Philadelphia production figure.",
+      "keyPoints": [
+        "Describe Lincoln’s centennial, the August 2 release, and the Mint’s recorded Philadelphia production figure.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "LC1",
+        "LC4"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s02",
+      "heading": "Brenner’s portrait and the limits of the record",
+      "readerQuestion": "What is documented about putting Lincoln on the cent?",
+      "purpose": "Credit Victor David Brenner and distinguish the Mint’s documented account from uncertainty about the precise decision process.",
+      "keyPoints": [
+        "Credit Victor David Brenner and distinguish the Mint’s documented account from uncertainty about the precise decision process.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "LC2",
+        "LC5"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s03",
+      "heading": "The reverse design changed across later anniversaries",
+      "readerQuestion": "How did the cent’s reverse evolve?",
+      "purpose": "Trace the Wheat Ears, Lincoln Memorial, four 2009 designs, and Union Shield from the Mint’s record.",
+      "keyPoints": [
+        "Trace the Wheat Ears, Lincoln Memorial, four 2009 designs, and Union Shield from the Mint’s record.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "LC3",
+        "LC6"
+      ],
+      "targetWords": 180
+    },
+    {
+      "id": "s04",
+      "heading": "A real person appeared on a circulating U.S. coin",
+      "readerQuestion": "Why did the 1909 cent break familiar portrait practice?",
+      "purpose": "State the Mint’s documented distinction and connect it to Lincoln’s centennial without inventing a motive.",
+      "keyPoints": [
+        "State the Mint’s documented distinction and connect it to Lincoln’s centennial without inventing a motive.",
+        "Use only the specific assigned source claims. Explain their meaning briefly without adding unrecorded names, dates, production steps, causes, or quantities."
+      ],
+      "evidenceClaims": [
+        "LC7"
+      ],
+      "targetWords": 180
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "2021-american-eagle-silver-redesign",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "coin-history-automated",
+  "automaticApproval": {
+    "policy": "coin-history-auto-v1",
+    "model": "gemma3:4b",
+    "qualityThreshold": 85,
+    "transcriptHashVerified": true
+  },
+  "artifactSha256": {
+    "verified.md": "8034f95f02f2344401273de26302978b9819e623d1fb81c5d51390f998a84d4b",
+    "index.html": "5a764740bc79bcd3957435c8e3610040205b75a73bf4958fd8e91ac8ac61c210",
+    "meta.json": "8795519200aed065b1078683ce14e91eddf9b34c96cf9879379b3f893a03fa19",
+    "research.json": "5ecc077e5a249dfb58d1e908e11d22a991180c3ede24a36519ae607dfff33233",
+    "hero.jpg": "c4c76db91371e20a1dfc9ee7533e7ed26cd5147de22d8b3333c5166a8c69b166",
+    "photo-post.jpg": "800677554e427d6ad428194b59a036c5cfa386c2b1064539cdc34f8ce66bbe27",
+    "reel-script.md": "6073c1de2c5dd203eef97229287c231c2cd40f016eea899faaee0533cd8eba41",
+    "reel-script-approved.md": "6073c1de2c5dd203eef97229287c231c2cd40f016eea899faaee0533cd8eba41",
+    "reel-data.md": "27eb02a1ef08e88b772c368e1c5e4dc496b7d7f6db1583ede5734a2a09a4256c",
+    "social-copy.json": "8d6b55818ed15f39a5eb95dd79ce6e979d7483957a34a3fb9786be0c4316a5b2",
+    "production-inputs.json": "6936d9ecdf5ca39c8a98d3afa739497ebf26694bb69fdb48c14e75d81eaaa0cc",
+    "image-sources.json": "5972e8f677cf1caffaf254c7f01a61854e6507540bdd217c6faf313e687bbb7d",
+    "content-plan.json": "94502fd7661a90363f6fe9ee7530363e8a28e5bda0316ca591cba72a23c90fe1",
+    "pipeline-marker.json": "c1a7d34de71d2472b184eae168b86651a543bce1c31feb7a304d47f7300246d8",
+    "content/coin-history/2021-american-eagle-silver-redesign/narration-v1-approved.txt": "8ef31357e9fec60796168b095b789df3322893c8ba10321dfa05d690b491bde3",
+    "content/coin-history/2021-american-eagle-silver-redesign/script-approval.json": "6fc4eff0bb740a74e9ed77c6868606e5e0f2148e93b4cf7b4226645a57e7462a",
+    "content/coin-history/2021-american-eagle-silver-redesign/claim-map.json": "2b479d48847625cfb9001686ec71918a68f28698e1322877216b032518d6f471",
+    "preferred-media.json": "44ed9666c800eb3b4fea20ce837e2c15ecf29979510ab58fb909080d1b669864"
+  }
+}
