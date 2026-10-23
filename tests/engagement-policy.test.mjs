@@ -36,3 +36,30 @@ test('commercial CTA keeps technology traffic on the technology inquiry path',()
   assert.throws(()=>assertCtaOrder({...job,createPostPayload:{text:'https://fuseddistribution.com/reserve/'}},[]));
   assert.match(ctaCaption({title:'Silver',question,brand:'silver',slot:'reserve'}),/\/reserve\//);
 });
+
+
+test('reserve CTA validates parsed destinations instead of URL substrings',()=>{
+  const job={slug:'cta',channelId:'a',dueAt:'2026-10-23T20:00:00Z',cta_slot:'reserve'};
+  const check=(brand,text)=>assertCtaOrder({...job,cta_brand:brand,createPostPayload:{text}},[]);
+  for (const [brand,destination] of [['silver','https://fuseddistribution.com/reserve/'],['tech','https://fuseddistribution.com/#contact']]) {
+    assert.doesNotThrow(()=>check(brand,`Learn more: ${destination}`));
+    assert.doesNotThrow(()=>check(brand,`https://[invalid ${destination}`));
+    for (const invalid of [
+      `https://evil.example/path/${destination}`,
+      `https://evil.example/?next=${destination}`,
+      destination.replace('fuseddistribution.com','fuseddistribution.com.evil.example'),
+      destination.replace('fuseddistribution.com','fuseddistribution.com@evil.example'),
+      destination.replace('https:','http:'),
+      'https://[invalid',
+      'No destination'
+    ]) assert.throws(()=>check(brand,invalid),{message:'Reserve CTA destination missing'},invalid);
+  }
+  assert.doesNotThrow(()=>check('silver','https://fuseddistribution.com/reserve/coins?source=social#details'));
+  assert.throws(()=>check('silver','https://fuseddistribution.com/reserve-other/'),{message:'Reserve CTA destination missing'});
+  assert.throws(()=>check('silver','https://fuseddistribution.com/reserve/../other/'),{message:'Reserve CTA destination missing'});
+  for (const suffix of ['extra','?next=other']) {
+    assert.throws(()=>check('tech',`https://fuseddistribution.com/#contact${suffix}`),{message:'Reserve CTA destination missing'});
+  }
+  assert.throws(()=>check('tech','https://fuseddistribution.com:444/#contact'),{message:'Reserve CTA destination missing'});
+  assert.throws(()=>check('silver','https://fuseddistribution.com/#contact'),{message:'Reserve CTA destination missing'});
+});

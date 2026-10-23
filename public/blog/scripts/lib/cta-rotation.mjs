@@ -36,7 +36,18 @@ export function assertCtaOrder(job, rows) {
   if (after && inferSlot(after) && inferSlot(after) !== nextSlot(job.cta_slot)) throw new Error(`${job.slug}: CTA cycle conflicts with following post; replan`);
   const caption = job.createPostPayload?.text || '';
   if (job.cta_slot === 'engagement' && /https?:\/\//i.test(caption)) throw new Error('Engagement-only caption cannot contain links');
-  if (job.cta_slot === 'reserve' && !(job.cta_brand === 'tech' ? caption.includes('https://fuseddistribution.com/#contact') : caption.includes('https://fuseddistribution.com/reserve/'))) throw new Error('Reserve CTA destination missing');
+  if (job.cta_slot === 'reserve') {
+    const hasDestination = [...caption.matchAll(/https?:\/\/[^\s<>"']+/gi)].some(([candidate]) => {
+      try {
+        const url = new URL(candidate);
+        return url.protocol === 'https:' && url.hostname === 'fuseddistribution.com' &&
+          (job.cta_brand === 'tech' ? url.href === 'https://fuseddistribution.com/#contact' : url.pathname.startsWith('/reserve/'));
+      } catch {
+        return false;
+      }
+    });
+    if (!hasDestination) throw new Error('Reserve CTA destination missing');
+  }
   if (job.cta_slot === 'newsletter' && !/https:\/\/fuseddistribution\.com\/newsletter\/(silver|tech)\//.test(caption)) throw new Error('Newsletter CTA destination missing');
 }
 export function rotateQueue(queue, root, history=confirmedCtaHistory(root)) {
