@@ -1,7 +1,7 @@
 {
   "slug": "2021-w-type-1-reverse-proof-explained",
   "renderPipelineVersion": 2,
-  "presentationPlanSha256": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+  "presentationPlanSha256": "741e7f7dec7c86044d25150769b8794c73a44f600615f364b8c6211c27a41b82",
   "qualityProfile": "presentation-720p-crf20-slow",
   "presentationAudio": {
     "0": {
@@ -61,15 +61,15 @@
     }
   },
   "productionMeasurement": {
-    "wallSeconds": 325.25502779199996,
-    "nodePeakRssKiB": 78208,
+    "wallSeconds": 316.70554737500004,
+    "nodePeakRssKiB": 78032,
     "memoryScope": "Node renderer only; excludes child processes and GPU memory"
   },
-  "renderedAt": "2026-10-24T00:10:28.129Z",
+  "renderedAt": "2026-10-24T00:26:33.002Z",
   "hookType": "question",
   "segmentCount": 11,
   "scriptDuration": 134.725,
-  "renderedDuration": 129.322667,
+  "renderedDuration": 129.4,
   "approvedSourceHashes": {
     "verified.md": "25089a0fcd93ca03abb0dddc06919e61e1a6b908c3ab826389aec3a229fbad70",
     "index.html": "80976fb9884ce3f5435340ffd49950fd46534bc1f7956eb4f0b20a77f208fa43",
@@ -77,10 +77,10 @@
     "research.json": "4627f0fdcc98065ec9398f1768e7f306230295bd40dc88047ae51ffd8359d31e",
     "hero.jpg": "33ea54a1eb6eea63de911bb33ff265df77695c7f505169cf86e0c489dcc795a8",
     "photo-post.jpg": "32f12ec9646347b7d6fea294c8e1814b9bd482f9768bc572452d249261f8d66d",
-    "reel-script.md": "50b043c029edb75338cea670508ebab4e27b0ac666474dfa9745c533405df884",
+    "reel-script.md": "d5a03679c9b5742e03f50eba4b6f5badc81a3f9759d42fbecc0327ebda8645e1",
     "reel-data.md": "6e51f6a6757d6ad621fa325d9627dc583a431b077cacd01474acf72886f00f7e",
     "social-copy.json": "8ce844b7071107a60b4c51fd59abbe83eebcdadf3ded0776130aec08e10dc6ec",
-    "presentation-plan.json": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+    "presentation-plan.json": "741e7f7dec7c86044d25150769b8794c73a44f600615f364b8c6211c27a41b82",
     "image-sources.json": "f7ad5a9326ae6748622999315ddfabcc00715fd16f6b9c9f89d0307ded4892a6",
     "caption-corrections.json": "034160c23d7906273dff4f0a6222dccfdccefe9386103a9e8291a6a907ac0f87"
   },
@@ -213,27 +213,12 @@
   ],
   "paperCollageSegments": [],
   "ownedLayoutSegments": [],
-  "presentationShots": {
-    "total": 18,
-    "videoShots": 0,
-    "photoShots": 18
-  },
   "presentationMastering": {
-    "targetLufs": -16,
-    "truePeakCeilingDbtp": -1.5,
-    "method": "two-pass loudnorm, video stream copied",
-    "sourceSha256": "c1094c6382fe5d306a76cd5ea4146322cb5e490e94c7a0b797fa4ffda3f9f7fc",
-    "inputMeasurement": {
-      "input_i": "-22.96",
-      "input_tp": "-2.90",
-      "input_lra": "5.10",
-      "input_thresh": "-33.93",
-      "output_i": "-17.15",
-      "output_tp": "-1.50",
-      "output_lra": "4.20",
-      "output_thresh": "-27.95",
-      "normalization_type": "dynamic",
-      "target_offset": "1.15"
-    }
-  }
+    "method": "Approved mastered audio stream copied without re-encoding",
+    "audioSource": "video/out/2021-w-type-1-reverse-proof-explained/archive-fused-brand-master.mp4",
+    "audioPacketSha256": "SHA256=d635a97a39ddc5a9d1f25bb1c231e8a920b92befe525d982608845478c15f9f1",
+    "integratedLufs": -16.55,
+    "truePeakDbtp": -1.15
+  },
+  "brandName": "Coins and auction since 1994"
 }

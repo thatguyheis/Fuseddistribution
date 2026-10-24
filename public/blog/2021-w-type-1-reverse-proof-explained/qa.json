@@ -12,7 +12,8 @@
     "Model passed relevance checks; its generated descriptions are not factual authority. Some descriptions confuse obverse/reverse and infer W where absent; Codex uses direct original inspection and limits specimen claims accordingly.",
     "All twelve explanatory layouts visually inspected; certification number and barcode masked, original coin pixels retained. No generated coin imagery.",
     "Observed incorrect TTS numeral repaired by spelling out the same sourced fact; captions verified before final encode. Native fading titles replace baked title transitions.",
-    "Trailing blank line normalized after encoding; narration, parsed script and video unchanged."
+    "Trailing blank line normalized after encoding; narration, parsed script and video unchanged.",
+    "Nick requested visible brand replacement with Coins and auction since 1994; applied to every shot header and footer. Narration, coin evidence and sources unchanged."
   ],
   "coinImageReview": {
     "matchesCoin": true,
@@ -32,7 +33,7 @@
     "reel-script.md": "d5a03679c9b5742e03f50eba4b6f5badc81a3f9759d42fbecc0327ebda8645e1",
     "reel-data.md": "6e51f6a6757d6ad621fa325d9627dc583a431b077cacd01474acf72886f00f7e",
     "social-copy.json": "8ce844b7071107a60b4c51fd59abbe83eebcdadf3ded0776130aec08e10dc6ec",
-    "presentation-plan.json": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+    "presentation-plan.json": "741e7f7dec7c86044d25150769b8794c73a44f600615f364b8c6211c27a41b82",
     "image-sources.json": "f7ad5a9326ae6748622999315ddfabcc00715fd16f6b9c9f89d0307ded4892a6",
     "caption-corrections.json": "034160c23d7906273dff4f0a6222dccfdccefe9386103a9e8291a6a907ac0f87"
   }

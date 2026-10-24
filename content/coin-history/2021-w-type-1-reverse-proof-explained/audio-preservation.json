@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "method": "SHA256 of demuxed AAC packets",
+  "source": "video/out/2021-w-type-1-reverse-proof-explained/archive-fused-brand-master.mp4",
+  "destination": "video/out/2021-w-type-1-reverse-proof-explained/2021-w-type-1-reverse-proof-explained.mp4",
+  "audioSha256": "SHA256=d635a97a39ddc5a9d1f25bb1c231e8a920b92befe525d982608845478c15f9f1"
+}

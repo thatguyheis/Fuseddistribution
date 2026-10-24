@@ -1,0 +1,59 @@
+{
+  "slug": "2021-w-type-1-reverse-proof-explained",
+  "pass": false,
+  "reviewer": "automated-local-vision-v1",
+  "model": "gemma3:4b",
+  "policy": "encoded-full-resolution-frame-visual-qa-v2",
+  "reviewedAt": "2026-10-24T00:29:01.717555+00:00",
+  "videoSha256": "8e4b3026d26bbde4846e3e10e9e28ac25cb815fa53e2f1dff115e1b48ce36bdf",
+  "contactSheetSha256": "e6cdb54bf1379f34b2fa8d0335e2465f950dd4480e62d8f1caccf771124f1b56",
+  "durationSeconds": 129.4,
+  "frames": [
+    {
+      "sampleSeconds": 2.588,
+      "pass": true,
+      "issues": [],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 24.586,
+      "pass": true,
+      "issues": [],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 46.584,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    },
+    {
+      "sampleSeconds": 68.582,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    },
+    {
+      "sampleSeconds": 90.58,
+      "pass": false,
+      "issues": [
+        "almost entirely black/blank",
+        "compositing or decode glitch",
+        "clipped"
+      ],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 119.048,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    }
+  ],
+  "issues": [
+    "Frame 5: almost entirely black/blank",
+    "Frame 5: compositing or decode glitch",
+    "Frame 5: clipped"
+  ],
+  "summary": "Pass Pass No issues detected No issues detected Pass No issues detected"
+}

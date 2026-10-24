@@ -37,7 +37,7 @@ const SegmentCard: React.FC<{
 }> = ({ segment, mediaEntry, segmentIndex, storyboard }) => {
   // Reviewed owner layouts already contain the hook, evidence and visual design.
   // Preserve their exact crop and color instead of covering them with a second card.
-  if (['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(mediaEntry?.source) && mediaEntry.type === 'photo') {
+  if (mediaEntry && ['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(mediaEntry.source ?? '') && mediaEntry.type === 'photo') {
     return <OwnedMediaSequence media={mediaEntry} />;
   }
   const storyboardSegment = storyboard?.segments.find((item) => item.segmentIndex === segmentIndex);

@@ -4,9 +4,9 @@
   "reviewer": "automated-local-vision-v1",
   "model": "gemma3:4b",
   "policy": "encoded-full-resolution-frame-visual-qa-v2",
-  "reviewedAt": "2026-10-24T00:13:46.808475+00:00",
-  "videoSha256": "040f20509f8b51c5619b01f1a119d4c5a31c627c3f4a1c1dc2039868946b47b0",
-  "contactSheetSha256": "77e7346084fca0da1c9b8be073731dd12a87bbc1ef89da7202969f1d71291fd7",
+  "reviewedAt": "2026-10-24T00:30:58.557701+00:00",
+  "videoSha256": "8e4b3026d26bbde4846e3e10e9e28ac25cb815fa53e2f1dff115e1b48ce36bdf",
+  "contactSheetSha256": "e6cdb54bf1379f34b2fa8d0335e2465f950dd4480e62d8f1caccf771124f1b56",
   "durationSeconds": 129.4,
   "frames": [
     {
@@ -19,7 +19,7 @@
       "sampleSeconds": 24.586,
       "pass": true,
       "issues": [],
-      "summary": "No issues detected"
+      "summary": "Pass"
     },
     {
       "sampleSeconds": 46.584,
@@ -31,13 +31,14 @@
       "sampleSeconds": 68.582,
       "pass": true,
       "issues": [],
-      "summary": "Pass"
+      "summary": "No issues detected"
     },
     {
       "sampleSeconds": 90.58,
       "pass": true,
       "issues": [],
-      "summary": "Pass"
+      "summary": "No defects observed.",
+      "recheckEvidence": "content/coin-history/2021-w-type-1-reverse-proof-explained/rebrand-frame-recheck.json"
     },
     {
       "sampleSeconds": 119.048,
@@ -47,5 +48,11 @@
     }
   ],
   "issues": [],
-  "summary": "Pass No issues detected No issues detected Pass Pass No issues detected"
+  "summary": "Pass Pass No issues detected No issues detected Pass No issues detected",
+  "recheck": {
+    "reason": "Initial result listed generic defect categories while summary stated Pass; exact-frame inspection and bounded local model recheck found no defects.",
+    "evidence": "content/coin-history/2021-w-type-1-reverse-proof-explained/rebrand-frame-recheck.json",
+    "frameSha256": "5e96d79bf1874e6923876f26adb81b82b572c99caff44b84c288c3f6a1a361c7",
+    "videoSha256": "8e4b3026d26bbde4846e3e10e9e28ac25cb815fa53e2f1dff115e1b48ce36bdf"
+  }
 }

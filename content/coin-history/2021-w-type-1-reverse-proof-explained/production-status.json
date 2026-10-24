@@ -4,8 +4,8 @@
   "published": false,
   "scheduled": false,
   "video": "video/out/2021-w-type-1-reverse-proof-explained/2021-w-type-1-reverse-proof-explained.mp4",
-  "runtimeSeconds": 129.322667,
-  "bytes": 24277928,
+  "runtimeSeconds": 129.4,
+  "bytes": 24255350,
   "width": 720,
   "height": 1280,
   "fps": 30,
@@ -13,7 +13,7 @@
   "captionMode": "whisper",
   "shots": 18,
   "approvedTranscriptSha256": "dc4bb2d1d8efc40a1d884b584194afebf709d7b4d7684f0f0274fbace9910a9f",
-  "videoSha256": "040f20509f8b51c5619b01f1a119d4c5a31c627c3f4a1c1dc2039868946b47b0",
+  "videoSha256": "8e4b3026d26bbde4846e3e10e9e28ac25cb815fa53e2f1dff115e1b48ce36bdf",
   "loudness": {
     "integratedLufs": -16.55,
     "truePeakDbtp": -1.15
@@ -23,11 +23,14 @@
     "fullDecode": "pass",
     "visualReview": "pass",
     "captionReview": "pass",
-    "releaseReady": true
+    "releaseReady": true,
+    "typeCheck": "pass"
   },
   "notes": [
     "One speech segment regenerated to pronounce the approved 125,000-set fact correctly.",
     "Native titles fade before transitions.",
-    "Local video only; companion reference is not a published long-form blog."
-  ]
+    "Local video only; companion reference is not a published long-form blog.",
+    "All 18 shot headers and footers rebranded. Approved AAC audio stream preserved byte for byte."
+  ],
+  "brandName": "Coins and auction since 1994"
 }

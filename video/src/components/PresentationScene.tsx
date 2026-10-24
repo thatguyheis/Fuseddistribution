@@ -3,7 +3,7 @@ import {AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, interpolate, us
 import {FittedText} from './FittedText';
 import {POPPINS, BEBAS} from '../fonts';
 
-export type PresentationShot = {src:string; type:'photo'|'video'; title:string; eyebrow:string; credit:string; weight:number; fit?:'cover'|'contain'; focus?:string; timeline?:boolean; trimBefore?:number; fullFrame?:boolean};
+export type PresentationShot = {src:string; type:'photo'|'video'; title:string; eyebrow:string; credit:string; weight:number; fit?:'cover'|'contain'; focus?:string; timeline?:boolean; trimBefore?:number; fullFrame?:boolean; brandName?:string};
 export type PresentationPlan = {segments: Record<number, PresentationShot[]>};
 const Shot:React.FC<{shot:PresentationShot; index:number; fadeIn:boolean; preserveEnding:boolean}> = ({shot,index,fadeIn,preserveEnding})=>{
  const frame=useCurrentFrame();const {durationInFrames,fps}=useVideoConfig();
@@ -28,7 +28,7 @@ const Shot:React.FC<{shot:PresentationShot; index:number; fadeIn:boolean; preser
   </div>}
   <div style={{position:'absolute',left:72,right:72,bottom:280,color:'#d2dddc',fontFamily:POPPINS,fontSize:20,letterSpacing:1}}>{shot.credit}</div>
   </AbsoluteFill>}
-  {!shot.fullFrame&&<div style={{position:'absolute',left:72,bottom:68,fontFamily:POPPINS,fontSize:19,letterSpacing:4,color:'#a5bdbf'}}>FUSED <span style={{color:'#d9c6a5'}}>DISTRIBUTION</span></div>}
+  {!shot.fullFrame&&<div style={{position:'absolute',left:72,bottom:68,fontFamily:POPPINS,fontSize:19,letterSpacing:4,color:'#a5bdbf'}}>{shot.brandName ?? <>FUSED <span style={{color:'#d9c6a5'}}>DISTRIBUTION</span></>}</div>}
  </AbsoluteFill>;
 };
 
