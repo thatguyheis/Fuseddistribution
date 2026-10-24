@@ -1,0 +1,89 @@
+{
+  "mode": "whisper",
+  "engine": "faster-whisper",
+  "modelRevision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "whisperAvailable": true,
+  "whisperSegments": 11,
+  "proportionalSegments": 0,
+  "missingAudioSegments": 0,
+  "cachedSegments": 11,
+  "generatedSegments": 0,
+  "timing": "recognized-word-timestamps",
+  "textReviewRequired": false,
+  "audioCacheKeys": {
+    "0": "8349bbad7232c8711c56349bbbff9a874af50bea3b10615596ff2122be5ccb59",
+    "1": "89d4495c77c434f3b5f43839e631c5bb93919173b8d9068cc019c9d0595164e6",
+    "2": "fec849de2f36d7de38d53c109f00b960aa504481345b8241d7b3e5364d092d61",
+    "3": "da8e8cfba4047f1091742994f43cc68ac157475554f356e8d0135822cb53f0a0",
+    "4": "92b49b0a05080858c16c0bc7d57f97e05381ab9df5f956be1c68370fb2edac1c",
+    "5": "10dc23e3747ff90bf9bb765ec8dac4b92f2cde7d0e450348493b76051a72c700",
+    "6": "f58d14b605f597d19933a0acfa5eceb30648bf980e4c7225172484aa29574141",
+    "7": "8ccf78a078d8520240e1ebbe3d2fa6bbde797cc2e6c6ddd465765ad47c67ed27",
+    "8": "f73ed73ee04649a3b7691876930c83a35345627860ec8af6b858711c7c3d23fb",
+    "9": "c003bb009ef23e25efda5270a5b7ab3315985832945a5ee09ddf174aa1d43b58",
+    "10": "30057398d10b902fff56fb0d181c0dda2151399c16e47eb298e2b6bba398e23b"
+  },
+  "manualTextReview": {
+    "version": 1,
+    "transcriptSha256": "dc4bb2d1d8efc40a1d884b584194afebf709d7b4d7684f0f0274fbace9910a9f",
+    "correctionsSha256": "3d9347fe223566e2805437031fb65644c4ce2a1bed23dfca6f6539dab0f8b877",
+    "applied": [
+      {
+        "segment": 2,
+        "cue": 6,
+        "startSec": 10.69,
+        "endSec": 12.11,
+        "from": "design has a mirror -like finish.",
+        "to": "design has a mirrorlike finish."
+      },
+      {
+        "segment": 4,
+        "cue": 2,
+        "startSec": 3.02,
+        "endSec": 5.12,
+        "from": "This is John Mercantie's Heraldic Eagle,",
+        "to": "This is John Mercanti's heraldic eagle,"
+      },
+      {
+        "segment": 6,
+        "cue": 1,
+        "startSec": 2.83,
+        "endSec": 4.61,
+        "from": "The announced production limit was 125",
+        "to": "The announced production limit was"
+      },
+      {
+        "segment": 6,
+        "cue": 2,
+        "startSec": 4.61,
+        "endSec": 5.77,
+        "from": ",000 sets.",
+        "to": "125,000 sets."
+      },
+      {
+        "segment": 6,
+        "cue": 4,
+        "startSec": 7.73,
+        "endSec": 9.23,
+        "from": "a count of coins created 70.",
+        "to": "a count of coins graded 70."
+      },
+      {
+        "segment": 7,
+        "cue": 2,
+        "startSec": 5.29,
+        "endSec": 7.73,
+        "from": "no post -production imperfections visible at",
+        "to": "no post-production imperfections visible at"
+      },
+      {
+        "segment": 9,
+        "cue": 4,
+        "startSec": 11.62,
+        "endSec": 13.04,
+        "from": "a completely completely different surface.",
+        "to": "a completely different surface."
+      }
+    ]
+  }
+}

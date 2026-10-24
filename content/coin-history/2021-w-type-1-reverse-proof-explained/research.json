@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "title": "mint-release",
+      "url": "https://www.usmint.gov/news/press-releases/united-states-mint-to-release-set-of-2021-reverse-proof-american-eagle-silver-coins-on-september-13"
+    },
+    {
+      "title": "mint-finishes",
+      "url": "https://www.usmint.gov/learn/collecting-basics/anatomy-of-a-coin"
+    },
+    {
+      "title": "ngc-issue",
+      "url": "https://www.ngccoin.com/news/article/9354/2021-Silver-Eagles-Designer-Set/"
+    },
+    {
+      "title": "ngc-grade",
+      "url": "https://www.ngccoin.com/coin-grading/grading-scale/"
+    }
+  ],
+  "openQuestions": [],
+  "limits": [
+    "Specimen certification not independently authenticated; grade and designation attributed to holder.",
+    "Separate closeups not claimed as independently authenticated same specimen."
+  ]
+}

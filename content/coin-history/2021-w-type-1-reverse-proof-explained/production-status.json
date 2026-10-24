@@ -1,0 +1,33 @@
+{
+  "slug": "2021-w-type-1-reverse-proof-explained",
+  "status": "local-video-ready",
+  "published": false,
+  "scheduled": false,
+  "video": "video/out/2021-w-type-1-reverse-proof-explained/2021-w-type-1-reverse-proof-explained.mp4",
+  "runtimeSeconds": 129.322667,
+  "bytes": 24277928,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "voice": "chatterbox",
+  "captionMode": "whisper",
+  "shots": 18,
+  "approvedTranscriptSha256": "dc4bb2d1d8efc40a1d884b584194afebf709d7b4d7684f0f0274fbace9910a9f",
+  "videoSha256": "040f20509f8b51c5619b01f1a119d4c5a31c627c3f4a1c1dc2039868946b47b0",
+  "loudness": {
+    "integratedLufs": -16.55,
+    "truePeakDbtp": -1.15
+  },
+  "validation": {
+    "videoTestsPassed": 93,
+    "fullDecode": "pass",
+    "visualReview": "pass",
+    "captionReview": "pass",
+    "releaseReady": true
+  },
+  "notes": [
+    "One speech segment regenerated to pronounce the approved 125,000-set fact correctly.",
+    "Native titles fade before transitions.",
+    "Local video only; companion reference is not a published long-form blog."
+  ]
+}

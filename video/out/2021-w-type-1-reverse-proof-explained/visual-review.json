@@ -1,0 +1,51 @@
+{
+  "slug": "2021-w-type-1-reverse-proof-explained",
+  "pass": true,
+  "reviewer": "automated-local-vision-v1",
+  "model": "gemma3:4b",
+  "policy": "encoded-full-resolution-frame-visual-qa-v2",
+  "reviewedAt": "2026-10-24T00:13:46.808475+00:00",
+  "videoSha256": "040f20509f8b51c5619b01f1a119d4c5a31c627c3f4a1c1dc2039868946b47b0",
+  "contactSheetSha256": "77e7346084fca0da1c9b8be073731dd12a87bbc1ef89da7202969f1d71291fd7",
+  "durationSeconds": 129.4,
+  "frames": [
+    {
+      "sampleSeconds": 2.588,
+      "pass": true,
+      "issues": [],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 24.586,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    },
+    {
+      "sampleSeconds": 46.584,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    },
+    {
+      "sampleSeconds": 68.582,
+      "pass": true,
+      "issues": [],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 90.58,
+      "pass": true,
+      "issues": [],
+      "summary": "Pass"
+    },
+    {
+      "sampleSeconds": 119.048,
+      "pass": true,
+      "issues": [],
+      "summary": "No issues detected"
+    }
+  ],
+  "issues": [],
+  "summary": "Pass No issues detected No issues detected Pass Pass No issues detected"
+}

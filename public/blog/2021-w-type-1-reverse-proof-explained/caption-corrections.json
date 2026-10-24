@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "reviewer": "Codex",
+  "transcriptSha256": "dc4bb2d1d8efc40a1d884b584194afebf709d7b4d7684f0f0274fbace9910a9f",
+  "evidence": "Approved transcript plus unprompted small-model speech crosscheck; repaired number independently recognized as 125,000 by unprompted base Whisper. Timings retained.",
+  "corrections": [
+    {
+      "segment": 2,
+      "cue": 6,
+      "expectedText": "design has a mirror -like finish.",
+      "text": "design has a mirrorlike finish."
+    },
+    {
+      "segment": 4,
+      "cue": 2,
+      "expectedText": "This is John Mercantie's Heraldic Eagle,",
+      "text": "This is John Mercanti's heraldic eagle,"
+    },
+    {
+      "segment": 6,
+      "cue": 1,
+      "expectedText": "The announced production limit was 125",
+      "text": "The announced production limit was"
+    },
+    {
+      "segment": 6,
+      "cue": 2,
+      "expectedText": ",000 sets.",
+      "text": "125,000 sets."
+    },
+    {
+      "segment": 6,
+      "cue": 4,
+      "expectedText": "a count of coins created 70.",
+      "text": "a count of coins graded 70."
+    },
+    {
+      "segment": 7,
+      "cue": 2,
+      "expectedText": "no post -production imperfections visible at",
+      "text": "no post-production imperfections visible at"
+    },
+    {
+      "segment": 9,
+      "cue": 4,
+      "expectedText": "a completely completely different surface.",
+      "text": "a completely different surface."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "slug": "2021-w-type-1-reverse-proof-explained",
+  "renderPipelineVersion": 2,
+  "presentationPlanSha256": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+  "qualityProfile": "presentation-720p-crf20-slow",
+  "presentationAudio": {
+    "0": {
+      "sha256": "bf58b1cde80b583e2c9bedee7848e03d15e757310b9f6e039fe95a8d52ccdaa0",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "1": {
+      "sha256": "2df72490c0199ddd6eac0ee04a279e74a19ccbb523bf950ac9eef82a51b8e76e",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "2": {
+      "sha256": "0f05d03c9b956e13b286fb1902978d765fdf7b41b61560591f2e88c165b7dd67",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "3": {
+      "sha256": "bd1839bb0706874ed1eb9c7afbf8873060a4e58f9b16ee6904ccb57ea1c0caa0",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "4": {
+      "sha256": "cbc6fb6c9e22020d377601a2e153b1388b0668fdfdebe27999724be2f0740fa8",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "5": {
+      "sha256": "e03b38f2d03ca625c7c1be60cc79d84af00608bb4f87e5cbedebfbc18f394cbe",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "6": {
+      "sha256": "c62358bdfdd1b717adf3e76c3ca1cb2f4278312d3f5400ce64ae7d34dc885f09",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "7": {
+      "sha256": "c9d120fa3df9f1633e8211eff24f6376d367589224407d6ed5b9eb00543386ef",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "8": {
+      "sha256": "a71da4ef21c2d13684a430e708f2f5da0b7920cd1b754043bdd9a208fdca99c8",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "9": {
+      "sha256": "d0ce711cb6ae54b104e94c31d2ee96642e300ec5b798a530795126c418eae08e",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    },
+    "10": {
+      "sha256": "fc3d94f138680f6db419010d0a9baa4e3d4221e50a8510e32099a35a8edf792e",
+      "format": "lossless-wav",
+      "nativeRatePreserved": true
+    }
+  },
+  "productionMeasurement": {
+    "wallSeconds": 325.25502779199996,
+    "nodePeakRssKiB": 78208,
+    "memoryScope": "Node renderer only; excludes child processes and GPU memory"
+  },
+  "renderedAt": "2026-10-24T00:10:28.129Z",
+  "hookType": "question",
+  "segmentCount": 11,
+  "scriptDuration": 134.725,
+  "renderedDuration": 129.322667,
+  "approvedSourceHashes": {
+    "verified.md": "25089a0fcd93ca03abb0dddc06919e61e1a6b908c3ab826389aec3a229fbad70",
+    "index.html": "80976fb9884ce3f5435340ffd49950fd46534bc1f7956eb4f0b20a77f208fa43",
+    "meta.json": "8bff8470320b852b613c2b42413b8441a7357e35e7e56ffb0aa2aeae5a1a2a56",
+    "research.json": "4627f0fdcc98065ec9398f1768e7f306230295bd40dc88047ae51ffd8359d31e",
+    "hero.jpg": "33ea54a1eb6eea63de911bb33ff265df77695c7f505169cf86e0c489dcc795a8",
+    "photo-post.jpg": "32f12ec9646347b7d6fea294c8e1814b9bd482f9768bc572452d249261f8d66d",
+    "reel-script.md": "50b043c029edb75338cea670508ebab4e27b0ac666474dfa9745c533405df884",
+    "reel-data.md": "6e51f6a6757d6ad621fa325d9627dc583a431b077cacd01474acf72886f00f7e",
+    "social-copy.json": "8ce844b7071107a60b4c51fd59abbe83eebcdadf3ded0776130aec08e10dc6ec",
+    "presentation-plan.json": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+    "image-sources.json": "f7ad5a9326ae6748622999315ddfabcc00715fd16f6b9c9f89d0307ded4892a6",
+    "caption-corrections.json": "034160c23d7906273dff4f0a6222dccfdccefe9386103a9e8291a6a907ac0f87"
+  },
+  "openingHero": {
+    "src": "heroes/2021-w-type-1-reverse-proof-explained-coin-evidence.jpg",
+    "sha256": "85d39f9cc60ff3396eeaa54be082f2d3ecff97ef8b2799e04400622585f778c8",
+    "role": "owner-coin-evidence",
+    "holdSeconds": 1,
+    "fadeSeconds": 0.2
+  },
+  "scriptHash": "a58d6bbcc8158ea0a4bbed7a050b2a4494c17151ed2aabb0de92b263f46b92fd",
+  "voice": "chatterbox",
+  "captionMode": "whisper",
+  "captionTextReview": {
+    "version": 1,
+    "transcriptSha256": "dc4bb2d1d8efc40a1d884b584194afebf709d7b4d7684f0f0274fbace9910a9f",
+    "correctionsSha256": "3d9347fe223566e2805437031fb65644c4ce2a1bed23dfca6f6539dab0f8b877",
+    "applied": [
+      {
+        "segment": 2,
+        "cue": 6,
+        "startSec": 10.69,
+        "endSec": 12.11,
+        "from": "design has a mirror -like finish.",
+        "to": "design has a mirrorlike finish."
+      },
+      {
+        "segment": 4,
+        "cue": 2,
+        "startSec": 3.02,
+        "endSec": 5.12,
+        "from": "This is John Mercantie's Heraldic Eagle,",
+        "to": "This is John Mercanti's heraldic eagle,"
+      },
+      {
+        "segment": 6,
+        "cue": 1,
+        "startSec": 2.83,
+        "endSec": 4.61,
+        "from": "The announced production limit was 125",
+        "to": "The announced production limit was"
+      },
+      {
+        "segment": 6,
+        "cue": 2,
+        "startSec": 4.61,
+        "endSec": 5.77,
+        "from": ",000 sets.",
+        "to": "125,000 sets."
+      },
+      {
+        "segment": 6,
+        "cue": 4,
+        "startSec": 7.73,
+        "endSec": 9.23,
+        "from": "a count of coins created 70.",
+        "to": "a count of coins graded 70."
+      },
+      {
+        "segment": 7,
+        "cue": 2,
+        "startSec": 5.29,
+        "endSec": 7.73,
+        "from": "no post -production imperfections visible at",
+        "to": "no post-production imperfections visible at"
+      },
+      {
+        "segment": 9,
+        "cue": 4,
+        "startSec": 11.62,
+        "endSec": 13.04,
+        "from": "a completely completely different surface.",
+        "to": "a completely different surface."
+      }
+    ]
+  },
+  "musicTrack": "mixkit-feedback-dreams-588.mp3",
+  "musicMix": {
+    "enabled": true,
+    "targetLufs": -37.979400086720375,
+    "measuredLufs": -17.8,
+    "narrationReferenceLufs": -24,
+    "relativeGain": 0.2,
+    "gain": 0.09795576387368925
+  },
+  "audioTiming": {
+    "version": 1,
+    "dialogueGapSeconds": 0.2,
+    "finalCardPadSeconds": 0.5,
+    "audioDurations": {
+      "0": 5,
+      "1": 15.12,
+      "2": 12.6,
+      "3": 9.2,
+      "4": 14,
+      "5": 15.12,
+      "6": 9.8,
+      "7": 15.48,
+      "8": 12.52,
+      "9": 13.84,
+      "10": 4.08
+    },
+    "totalNarrationSeconds": 126.76
+  },
+  "musicRights": {
+    "status": "approved",
+    "license": "Mixkit Stock Music Free License",
+    "sourceName": "Mixkit Free Stock Music",
+    "sourceUrl": "https://mixkit.co/free-stock-music/discover/feedback-dreams-588/"
+  },
+  "photosUsed": 11,
+  "mediaUsed": 11,
+  "photoCount": 11,
+  "videoCount": 0,
+  "mediaSources": {
+    "reviewed-presentation": 11
+  },
+  "storyboardRoute": "storyboard-production",
+  "mediaFeatureSegments": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "paperCollageSegments": [],
+  "ownedLayoutSegments": [],
+  "presentationShots": {
+    "total": 18,
+    "videoShots": 0,
+    "photoShots": 18
+  },
+  "presentationMastering": {
+    "targetLufs": -16,
+    "truePeakCeilingDbtp": -1.5,
+    "method": "two-pass loudnorm, video stream copied",
+    "sourceSha256": "c1094c6382fe5d306a76cd5ea4146322cb5e490e94c7a0b797fa4ffda3f9f7fc",
+    "inputMeasurement": {
+      "input_i": "-22.96",
+      "input_tp": "-2.90",
+      "input_lra": "5.10",
+      "input_thresh": "-33.93",
+      "output_i": "-17.15",
+      "output_tp": "-1.50",
+      "output_lra": "4.20",
+      "output_thresh": "-27.95",
+      "normalization_type": "dynamic",
+      "target_offset": "1.15"
+    }
+  }
+}

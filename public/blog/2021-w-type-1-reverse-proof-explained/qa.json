@@ -1,0 +1,39 @@
+{
+  "mode": "codex-editorial",
+  "score": 95,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewedDate": "2026-10-23",
+  "scope": "Explicitly approved local video production. Companion reference is not a published blog and has no blog publication approval.",
+  "reviewNotes": [
+    "Narration checked against Mint release, Mint finish definitions, NGC issue requirements and grading scale.",
+    "Original images inspected. Date visible on obverse; W and Type 1 design on reverse. Holder establishes attributed PF70 and First Day of Issue text. Closeups not used to independently authenticate slab pairing.",
+    "Model passed relevance checks; its generated descriptions are not factual authority. Some descriptions confuse obverse/reverse and infer W where absent; Codex uses direct original inspection and limits specimen claims accordingly.",
+    "All twelve explanatory layouts visually inspected; certification number and barcode masked, original coin pixels retained. No generated coin imagery.",
+    "Observed incorrect TTS numeral repaired by spelling out the same sourced fact; captions verified before final encode. Native fading titles replace baked title transitions.",
+    "Trailing blank line normalized after encoding; narration, parsed script and video unchanged."
+  ],
+  "coinImageReview": {
+    "matchesCoin": true,
+    "imagesChecked": 4,
+    "checkpoints": [
+      "package-intake",
+      "pre-render"
+    ]
+  },
+  "artifactSha256": {
+    "verified.md": "25089a0fcd93ca03abb0dddc06919e61e1a6b908c3ab826389aec3a229fbad70",
+    "index.html": "80976fb9884ce3f5435340ffd49950fd46534bc1f7956eb4f0b20a77f208fa43",
+    "meta.json": "8bff8470320b852b613c2b42413b8441a7357e35e7e56ffb0aa2aeae5a1a2a56",
+    "research.json": "4627f0fdcc98065ec9398f1768e7f306230295bd40dc88047ae51ffd8359d31e",
+    "hero.jpg": "33ea54a1eb6eea63de911bb33ff265df77695c7f505169cf86e0c489dcc795a8",
+    "photo-post.jpg": "32f12ec9646347b7d6fea294c8e1814b9bd482f9768bc572452d249261f8d66d",
+    "reel-script.md": "d5a03679c9b5742e03f50eba4b6f5badc81a3f9759d42fbecc0327ebda8645e1",
+    "reel-data.md": "6e51f6a6757d6ad621fa325d9627dc583a431b077cacd01474acf72886f00f7e",
+    "social-copy.json": "8ce844b7071107a60b4c51fd59abbe83eebcdadf3ded0776130aec08e10dc6ec",
+    "presentation-plan.json": "aab62e5821d89d1aa616bf20a4b3c5e799cce5552f59f62949c786affb025efc",
+    "image-sources.json": "f7ad5a9326ae6748622999315ddfabcc00715fd16f6b9c9f89d0307ded4892a6",
+    "caption-corrections.json": "034160c23d7906273dff4f0a6222dccfdccefe9386103a9e8291a6a907ac0f87"
+  }
+}

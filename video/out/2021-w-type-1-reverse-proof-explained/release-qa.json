@@ -1,0 +1,221 @@
+{
+  "slug": "2021-w-type-1-reverse-proof-explained",
+  "pass": true,
+  "automatedChecksPassed": true,
+  "distributionReady": true,
+  "visualReviewPassed": true,
+  "ownerReviewed": false,
+  "narrationFirstApproval": null,
+  "errors": [],
+  "warnings": [],
+  "generatedAt": "2026-10-24T00:15:21.988Z",
+  "manualCaptionReview": false,
+  "automatedCaptionReview": {
+    "slug": "2021-w-type-1-reverse-proof-explained",
+    "mode": "whisper",
+    "method": "automated-three-point-caption-coverage",
+    "points": [
+      {
+        "segment": 0,
+        "ratio": 0.15,
+        "caption": "Why does the silver eagle look",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 0,
+        "ratio": 0.5,
+        "caption": "different even though it carries the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 0,
+        "ratio": 0.85,
+        "caption": "familiar eagle design?",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 1,
+        "ratio": 0.15,
+        "caption": "The answer is in the finish.",
+        "distanceSeconds": 0.541
+      },
+      {
+        "segment": 1,
+        "ratio": 0.5,
+        "caption": "This is a 2021 West Point Type",
+        "distanceSeconds": 0.735
+      },
+      {
+        "segment": 1,
+        "ratio": 0.85,
+        "caption": "tells several different stories that are",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 2,
+        "ratio": 0.15,
+        "caption": "On a conventional proof, the background",
+        "distanceSeconds": 0.434
+      },
+      {
+        "segment": 2,
+        "ratio": 0.5,
+        "caption": "is frosted.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 2,
+        "ratio": 0.85,
+        "caption": "the background is frosted, while the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 3,
+        "ratio": 0.15,
+        "caption": "That means reverse proof describes how",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 3,
+        "ratio": 0.5,
+        "caption": "It does not mean the eagle",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 3,
+        "ratio": 0.85,
+        "caption": "the back received a special finish.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 4,
+        "ratio": 0.15,
+        "caption": "shield.",
+        "distanceSeconds": 0.19
+      },
+      {
+        "segment": 4,
+        "ratio": 0.5,
+        "caption": "the reverse design introduced with the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 4,
+        "ratio": 0.85,
+        "caption": "The W below the design identifies",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 5,
+        "ratio": 0.15,
+        "caption": "In 2021, the American Eagle program",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 5,
+        "ratio": 0.5,
+        "caption": "The mint marked that transition with",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 5,
+        "ratio": 0.85,
+        "caption": "and the new design from San",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 6,
+        "ratio": 0.15,
+        "caption": "Sales opened September 13th.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 6,
+        "ratio": 0.5,
+        "caption": "125,000 sets.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 6,
+        "ratio": 0.85,
+        "caption": "a count of coins graded 70.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 7,
+        "ratio": 0.15,
+        "caption": "The holder here reads reverse PF70,",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 7,
+        "ratio": 0.5,
+        "caption": "no post-production imperfections visible at",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 7,
+        "ratio": 0.85,
+        "caption": "standard, while Type 1 identifies the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 8,
+        "ratio": 0.15,
+        "caption": "distinction.",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 8,
+        "ratio": 0.5,
+        "caption": "purchase and receipt deadlines supported by",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 8,
+        "ratio": 0.85,
+        "caption": "It does not establish the day",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 9,
+        "ratio": 0.15,
+        "caption": "So, this label separates design, finish,",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 9,
+        "ratio": 0.5,
+        "caption": "For me, the appeal starts with",
+        "distanceSeconds": 0.88
+      },
+      {
+        "segment": 9,
+        "ratio": 0.85,
+        "caption": "seeing that familiar, heraldic eagle against",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 10,
+        "ratio": 0.15,
+        "caption": "Which catches your eye first the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 10,
+        "ratio": 0.5,
+        "caption": "Which catches your eye first the",
+        "distanceSeconds": 0
+      },
+      {
+        "segment": 10,
+        "ratio": 0.85,
+        "caption": "finish or the eagle?",
+        "distanceSeconds": 0
+      }
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "readyForPosting": true
+}

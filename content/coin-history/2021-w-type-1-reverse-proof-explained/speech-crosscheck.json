@@ -1,0 +1,11 @@
+{
+  "engine": "faster-whisper-small-en",
+  "prompted": false,
+  "segments": {
+    "0": "Why does the Silver Eagle look different, even though it carries the familiar Eagle design?",
+    "2": "Start with the surface. On a conventional proof, the background is reflective and the ray's design is frosted. A reverse proof switches the contrast, the background is frosted, while the design has a mirror-like finish.",
+    "4": "Now, look at the eagle and shield. This is John Merkenty's Heraldic Eagle, the reverse design introduced with the Silver Eagle in 1986. The W below the design identifies West Point.",
+    "6": "Sales opened September 13th. The announced production limit was 105,000 sets. That was a set limit, not a count of coins graded 70.",
+    "9": "So, this label separates design, finish, condition, and release designation. For me, the appeal starts with seeing that familiar, heraldic eagle against a completely different surface."
+  }
+}

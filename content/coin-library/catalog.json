@@ -1040,7 +1040,7 @@
       ],
       "width": 576,
       "height": 1024,
-      "identityBasis": "The image itself carries a watermark stating this is a sample picture from an unarrived hoard. It is not verified as the auction lot’s received contents.",
+      "identityBasis": "The image itself carries a watermark stating this is a sample picture from an unarrived hoard. It is not verified as the auction lot\u2019s received contents.",
       "status": "cataloged_requires_crop_review",
       "rights": "User supplied photograph for Fused Distribution blog and reel use. No public stock redistribution grant inferred.",
       "privacy": "Review crops for watermark, fingers and unrelated details. Do not infer coin pairing, mint, grade, rarity or value beyond visible evidence.",
@@ -1139,6 +1139,114 @@
           "date": "2026-10-15",
           "stage": "local production",
           "role": "Owner coin photo; reverse view, not paired with coin-0045."
+        }
+      ]
+    },
+    {
+      "id": "coin-0047",
+      "title": "Owner supplied holder photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "source": "Coin Raw/Coins and auction since 1994 Current/c6cf0d9c26ee7a4aae5adfe7a0b9d10e781d15e2.jpg",
+      "sha256": "49152b652e9d7a17e05be283ad575d227ed20c8c3db3b447104b0843b54ce194",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "reverse-proof",
+        "owner-photography"
+      ],
+      "width": 1000,
+      "height": 1464,
+      "identityBasis": "Codex inspected originals; date 2021 on obverse, heraldic eagle/W on reverse. Holder text attributed only. Separate photographs not independently authenticated as one specimen.",
+      "status": "reviewed_for_local_video",
+      "rights": "Owner supplied; authorized for this Fused production, no public stock redistribution grant inferred.",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "lastUsed": "2026-10-23",
+      "uses": [
+        {
+          "slug": "2021-w-type-1-reverse-proof-explained",
+          "status": "local-video-production",
+          "role": "images/holder.jpg"
+        }
+      ]
+    },
+    {
+      "id": "coin-0048",
+      "title": "Owner supplied obverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "source": "Coin Raw/Coins and auction since 1994 Current/686ec74de753bd59f997cb209e9ebebc0d035034.jpg",
+      "sha256": "2de40cb1f7299bbb8ddc5b7fa4e769952dd8c7a1f1d1a9956e8a7feb1c58b005",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "reverse-proof",
+        "owner-photography"
+      ],
+      "width": 1000,
+      "height": 899,
+      "identityBasis": "Codex inspected originals; date 2021 on obverse, heraldic eagle/W on reverse. Holder text attributed only. Separate photographs not independently authenticated as one specimen.",
+      "status": "reviewed_for_local_video",
+      "rights": "Owner supplied; authorized for this Fused production, no public stock redistribution grant inferred.",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "lastUsed": "2026-10-23",
+      "uses": [
+        {
+          "slug": "2021-w-type-1-reverse-proof-explained",
+          "status": "local-video-production",
+          "role": "images/obverse.jpg"
+        }
+      ]
+    },
+    {
+      "id": "coin-0049",
+      "title": "Owner supplied reverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "source": "Coin Raw/Coins and auction since 1994 Current/96bca3bfd7537433b96e2baffad3b5fa40487482.jpg",
+      "sha256": "00cf3c286e70f1a4cda012c878b64830178220a7ff45024d0369ae406022370c",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "reverse-proof",
+        "owner-photography"
+      ],
+      "width": 1000,
+      "height": 958,
+      "identityBasis": "Codex inspected originals; date 2021 on obverse, heraldic eagle/W on reverse. Holder text attributed only. Separate photographs not independently authenticated as one specimen.",
+      "status": "reviewed_for_local_video",
+      "rights": "Owner supplied; authorized for this Fused production, no public stock redistribution grant inferred.",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "lastUsed": "2026-10-23",
+      "uses": [
+        {
+          "slug": "2021-w-type-1-reverse-proof-explained",
+          "status": "local-video-production",
+          "role": "images/reverse.jpg"
+        }
+      ]
+    },
+    {
+      "id": "coin-0050",
+      "title": "Owner supplied holder-reverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "source": "Coin Raw/Coins and auction since 1994 Current/f6edd1b6e41c6a4b834b47b4fb4fb733a743997c.jpg",
+      "sha256": "46eaaaa68522978bf2a3974acda784916356ba58c7e45de64547ee45d5fe90c1",
+      "kind": "photo",
+      "category": "american-silver-eagles",
+      "tags": [
+        "american-silver-eagles",
+        "reverse-proof",
+        "owner-photography"
+      ],
+      "width": 1000,
+      "height": 1445,
+      "identityBasis": "Codex inspected originals; date 2021 on obverse, heraldic eagle/W on reverse. Holder text attributed only. Separate photographs not independently authenticated as one specimen.",
+      "status": "reviewed_for_local_video",
+      "rights": "Owner supplied; authorized for this Fused production, no public stock redistribution grant inferred.",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "lastUsed": "2026-10-23",
+      "uses": [
+        {
+          "slug": "2021-w-type-1-reverse-proof-explained",
+          "status": "local-video-production",
+          "role": "images/holder-reverse.jpg"
         }
       ]
     }

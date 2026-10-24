@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "path": "images/holder.jpg",
+      "source": "/Users/nick/projects/fuseddistribution/Coin Raw/Coins and auction since 1994 Current/c6cf0d9c26ee7a4aae5adfe7a0b9d10e781d15e2.jpg",
+      "sourceSha256": "49152b652e9d7a17e05be283ad575d227ed20c8c3db3b447104b0843b54ce194",
+      "sha256": "85d39f9cc60ff3396eeaa54be082f2d3ecff97ef8b2799e04400622585f778c8",
+      "role": "coin evidence",
+      "sourceType": "owner-supplied",
+      "label": "Owner supplied holder photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "coinIdentity": "2021-W Type 1 reverse proof American Silver Eagle"
+    },
+    {
+      "path": "images/obverse.jpg",
+      "source": "/Users/nick/projects/fuseddistribution/Coin Raw/Coins and auction since 1994 Current/686ec74de753bd59f997cb209e9ebebc0d035034.jpg",
+      "sourceSha256": "2de40cb1f7299bbb8ddc5b7fa4e769952dd8c7a1f1d1a9956e8a7feb1c58b005",
+      "sha256": "b09dee77a17c19d347ab04634ea486fa11da219b5ce5b23a3b596ce47670bf0d",
+      "role": "coin evidence",
+      "sourceType": "owner-supplied",
+      "label": "Owner supplied obverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "coinIdentity": "2021-W Type 1 reverse proof American Silver Eagle"
+    },
+    {
+      "path": "images/reverse.jpg",
+      "source": "/Users/nick/projects/fuseddistribution/Coin Raw/Coins and auction since 1994 Current/96bca3bfd7537433b96e2baffad3b5fa40487482.jpg",
+      "sourceSha256": "00cf3c286e70f1a4cda012c878b64830178220a7ff45024d0369ae406022370c",
+      "sha256": "8785c28d822c55ffd4a586fa5a9fac75398fb991300d03af318c18d75d1354a7",
+      "role": "coin evidence",
+      "sourceType": "owner-supplied",
+      "label": "Owner supplied reverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "coinIdentity": "2021-W Type 1 reverse proof American Silver Eagle"
+    },
+    {
+      "path": "images/holder-reverse.jpg",
+      "source": "/Users/nick/projects/fuseddistribution/Coin Raw/Coins and auction since 1994 Current/f6edd1b6e41c6a4b834b47b4fb4fb733a743997c.jpg",
+      "sourceSha256": "46eaaaa68522978bf2a3974acda784916356ba58c7e45de64547ee45d5fe90c1",
+      "sha256": "43bf44333ead9f2f092bf343ec17e168ab1e35e22b988502046e85a7a4e0d0a6",
+      "role": "coin evidence",
+      "sourceType": "owner-supplied",
+      "label": "Owner supplied holder-reverse photograph, 2021-W Type 1 reverse proof Silver Eagle; grade attributed to holder",
+      "privacy": "Certification number and barcode masked in holder derivative; reverse holder hologram excluded",
+      "coinIdentity": "2021-W Type 1 reverse proof American Silver Eagle"
+    }
+  ]
+}
