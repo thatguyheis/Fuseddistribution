@@ -13,7 +13,7 @@
   ],
   "artifactSha256": {
     "verified.md": "e4c291566b470187067ee816d8b2e231bb626516beaacf33b2c3706377d8ddf5",
-    "index.html": "e579ce208535ddaeb139c17a26481d1d75fa03680c5d9cf58c5a9420035791b5",
+    "index.html": "88e6113f761eef548571a2648cbaf16064f73c6adaa9f74f0ef80db06a8c4a1a",
     "meta.json": "a6ce31c04c4d24fa87f68284d6961f111cb3da443ba87ff533738fb21bfd219b",
     "research.json": "117777382961184571733c2b5616f8e27b7f3a825dd9d489c6cf6d1a8e23bf15",
     "hero.jpg": "12b09f36b10989e5c455c8eef0815511d546ed9bffd582ebc842e96cabf2fea4",
@@ -23,12 +23,13 @@
     "social-copy.json": "313ef6e96401f89aae3b82d1fd7519813489ed42bf338289d26bd179de6c513b",
     "caption-corrections.json": "0292c49bcab84d91a4a9afee8a13de018415263ffd3a52707e983cf5c4d2a357"
   },
-  "reviewed_at": "2026-10-30T18:21:12.537Z",
+  "reviewed_at": "2026-10-30T21:10:40.989Z",
   "review_notes": [
     "Claims checked against the linked LinkedIn/Ipsos study and SBA/SCORE resources; survey scope and limits are stated.",
     "Article checked for useful, actionable guidance, accurate distinction between introductions and guaranteed leads, and privacy-respecting follow-up.",
     "Approved voiceover preserved verbatim; reel script structure, question close, and stock media relevance reviewed.",
     "Deterministic site QA passes with metadata, links, related links, source-backed study, custom graphic, and social copy.",
-    "Eight caption corrections are hash-bound to Whisper output; six encoded frames reviewed after final render."
+    "Eight caption corrections are hash-bound to Whisper output; six encoded frames reviewed after final render.",
+    "Scoped reel-panel review: placed the verified, playable Fused reel after the article introduction; article copy preserved. Same-origin MP4 returned 200 video/mp4 from REELS_KV; article QA passed; Buffer readbacks confirmed the scheduled video assets."
   ]
 }
