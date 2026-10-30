@@ -14,6 +14,7 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|
+| 2026-10-30 | business-networking-that-creates-opportunities | Business networking | Build trust, make useful introductions, and develop local business connections |
 | 2026-10-15 | fort-vancouver-centennial-half-dollar | Coin history | Fort Vancouver and the Hudson's Bay Company on a 1925 commemorative |
 | 2026-10-14 | pittman-act-silver-dollar-melting | Coin history | How the Pittman Act melted silver dollars and brought Morgan dollars back |
 | 2026-10-14 | peace-dollar-history-and-symbolism | Coin history | The Peace dollar's revised sword and postwar symbolism |

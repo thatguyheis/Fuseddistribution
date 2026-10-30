@@ -1,0 +1,34 @@
+{
+  "slug": "business-networking-that-creates-opportunities",
+  "score": 88,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-10-30",
+  "reviewer": "Codex",
+  "notes": [
+    "Claims checked against the linked LinkedIn/Ipsos study and SBA/SCORE resources; survey scope and limits are stated.",
+    "Article checked for useful, actionable guidance, accurate distinction between introductions and guaranteed leads, and privacy-respecting follow-up.",
+    "Approved voiceover preserved verbatim; reel script structure, question close, and stock media relevance reviewed."
+  ],
+  "artifactSha256": {
+    "verified.md": "e4c291566b470187067ee816d8b2e231bb626516beaacf33b2c3706377d8ddf5",
+    "index.html": "e579ce208535ddaeb139c17a26481d1d75fa03680c5d9cf58c5a9420035791b5",
+    "meta.json": "a6ce31c04c4d24fa87f68284d6961f111cb3da443ba87ff533738fb21bfd219b",
+    "research.json": "117777382961184571733c2b5616f8e27b7f3a825dd9d489c6cf6d1a8e23bf15",
+    "hero.jpg": "12b09f36b10989e5c455c8eef0815511d546ed9bffd582ebc842e96cabf2fea4",
+    "photo-post.jpg": "24450bad5e3b8fc542a911c273e434be9ba7455fdc915a646ff7b7feb4e727d5",
+    "reel-script.md": "0e430946d6d33d5b1a32fee0fdd6f61ad7b0dae33dacedf1559e2a488d5a32ce",
+    "reel-data.md": "410a1922db556db4e18f789128cfd4d69d2b41e977defcda7d97cfeb76ab79ef",
+    "social-copy.json": "313ef6e96401f89aae3b82d1fd7519813489ed42bf338289d26bd179de6c513b",
+    "caption-corrections.json": "0292c49bcab84d91a4a9afee8a13de018415263ffd3a52707e983cf5c4d2a357"
+  },
+  "reviewed_at": "2026-10-30T18:21:12.537Z",
+  "review_notes": [
+    "Claims checked against the linked LinkedIn/Ipsos study and SBA/SCORE resources; survey scope and limits are stated.",
+    "Article checked for useful, actionable guidance, accurate distinction between introductions and guaranteed leads, and privacy-respecting follow-up.",
+    "Approved voiceover preserved verbatim; reel script structure, question close, and stock media relevance reviewed.",
+    "Deterministic site QA passes with metadata, links, related links, source-backed study, custom graphic, and social copy.",
+    "Eight caption corrections are hash-bound to Whisper output; six encoded frames reviewed after final render."
+  ]
+}

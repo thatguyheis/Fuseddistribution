@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "transcriptSha256": "3b8b0e9af40bf4156bd01ed3419a08c74aec9809c4369bf9897d588ebc75f835",
+  "corrections": [
+    {
+      "segment": 0,
+      "cue": 3,
+      "expectedText": "helped and how to introduce you.",
+      "text": "help and how to introduce you."
+    },
+    {
+      "segment": 1,
+      "cue": 0,
+      "expectedText": "A 2026 LinkedIn and IPSA study",
+      "text": "A 2026 LinkedIn and Ipsos study"
+    },
+    {
+      "segment": 1,
+      "cue": 2,
+      "expectedText": "makers found that 41 said referrals",
+      "text": "makers found that 41 percent said referrals"
+    },
+    {
+      "segment": 3,
+      "cue": 5,
+      "expectedText": "Follow it promptly and share the",
+      "text": "Follow up promptly and share the"
+    },
+    {
+      "segment": 4,
+      "cue": 14,
+      "expectedText": "station.",
+      "text": "…"
+    },
+    {
+      "segment": 5,
+      "cue": 7,
+      "expectedText": "Thank you very much.",
+      "text": "…"
+    },
+    {
+      "segment": 5,
+      "cue": 8,
+      "expectedText": "Have a good night. Have a good night.",
+      "text": "…"
+    },
+    {
+      "segment": 5,
+      "cue": 9,
+      "expectedText": "Have a good night.",
+      "text": "…"
+    }
+  ]
+}
