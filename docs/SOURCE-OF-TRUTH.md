@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 2, 2026-10-22. Owner: Nick Hughes.
+Version 3, 2026-10-31. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -31,6 +31,8 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | Existing non-coin posts | Stay live. Not deleted, not promoted. |
 | Brand | Fused Reserve (silver). Tag every new post `brand: "silver"`. |
 | Voice | Plain first person. No em dashes. No hyphenated words in prose. No AI buzzwords (list in `public/blog/BLOG-SOP.md`). |
+
+Nick has separately authorized one business-growth blog/reel pair per Pacific day through the Codex automation `daily-business-growth-blog-and-reel`, using the v2 365-day plan. This is a narrow automation-specific exception, governed by [`docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`](BUSINESS-GROWTH-AUTOMATION-SOP.md). It does not change `ops/content-scope.json`, coin-history launchd jobs, or the scope of other publishers.
 
 ---
 
