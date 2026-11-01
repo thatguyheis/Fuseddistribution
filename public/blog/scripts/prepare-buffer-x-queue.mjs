@@ -10,6 +10,7 @@ import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
 import { validateCutdownDuration } from './lib/buffer-video-integrity.mjs';
+import { rotateQueue } from './lib/cta-rotation.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -646,6 +647,7 @@ async function main() {
   const selected = ready
     .slice(0, selectedDueAtDates.length)
     .map((job, index) => applyDueAt(job, selectedDueAtDates[index]));
+  rotateQueue({ selected }, repoRoot);
   const readyOverflow = ready.slice(selected.length);
   const queue = {
     generatedAt: new Date().toISOString(),

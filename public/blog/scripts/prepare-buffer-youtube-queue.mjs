@@ -9,6 +9,7 @@ import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rig
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { calculatePlatformCapacity } from './lib/buffer-capacity.mjs';
 import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
+import { rotateQueue } from './lib/cta-rotation.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -680,6 +681,7 @@ async function main() {
   const selected = ready
     .slice(0, selectedDueAtDates.length)
     .map((job, index) => applyDueAt(job, selectedDueAtDates[index]));
+  rotateQueue({ selected }, repoRoot);
   if (args.writePacks) {
     for (const job of selected) writePostingPack(job.slug, job.publicMediaUrl);
   }

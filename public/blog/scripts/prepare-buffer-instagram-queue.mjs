@@ -8,6 +8,7 @@ import {assertVisualReview} from '../../../video/scripts/lib/visual-review.mjs';
 import { assertRenderedReelAudioCleared } from '../../../video/scripts/audio-rights.mjs';
 import { assertSocialCopyQuality } from './lib/social-copy-quality.mjs';
 import { scheduledEntryBlocksPlanning } from './lib/buffer-repost-policy.mjs';
+import { rotateQueue } from './lib/cta-rotation.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
 const blogRoot = join(repoRoot, 'public', 'blog');
@@ -400,6 +401,7 @@ async function main() {
   const selected = ready
     .slice(0, selectedDueAtDates.length)
     .map((job, index) => applyDueAt(job, selectedDueAtDates[index]));
+  rotateQueue({ selected }, repoRoot);
 
   const queue = {
     generatedAt: new Date().toISOString(),

@@ -60,6 +60,7 @@ Nick has separately authorized one business-growth blog/reel pair per Pacific da
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
 | Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. No paid remote model in scheduled jobs. | coin worker env |
 | Buffer queue | 9 scheduled posts per channel (limit 10, 1 reserve slot). Channels: YouTube Shorts, X, Instagram. | `scripts/buffer-backlog-runner.mjs:22-24` |
+| Buffer CTA gate | Platform planners must apply `rotateQueue` to selected jobs before queue validation/publish; never hand-edit CTA metadata to bypass preflight. | `public/blog/scripts/prepare-buffer-*-queue.mjs`, `public/blog/scripts/lib/cta-rotation.mjs` |
 | Buffer reuse | Same reel not reposted within 7 days | `buffer-backlog-runner.mjs` `repostAfterDays` |
 | Buffer window | Schedule between 13:00 and 23:59 Pacific, 20 minutes apart | `buffer-backlog-runner.mjs` |
 | Buffer scope | Only coin-history slugs (YouTube and X get `--slugs`; Instagram copies the YouTube queue) | `buffer-backlog-runner.mjs` `plannerArgs()` |
