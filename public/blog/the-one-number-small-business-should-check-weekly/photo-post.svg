@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Measure cost per new customer</title>
+  <desc id="desc">A conceptual diagram showing campaign costs divided by first-time customers to estimate cost per acquired customer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07131a"/><stop offset="1" stop-color="#102b38"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#58d6ff"/><stop offset="1" stop-color="#4dffb8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="34" fill="url(#bg)"/>
+  <circle cx="1050" cy="125" r="230" fill="#58d6ff" opacity=".06"/>
+  <text x="72" y="86" fill="#58d6ff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="6">FUSED DISTRIBUTION</text>
+  <text x="72" y="180" fill="#f0fbff" font-family="Arial,sans-serif" font-size="54" font-weight="700">Measure cost per</text>
+  <text x="72" y="246" fill="#f0fbff" font-family="Arial,sans-serif" font-size="54" font-weight="700">new customer</text>
+  <text x="75" y="300" fill="#b5cbd3" font-family="Arial,sans-serif" font-size="25">A weekly campaign check</text>
+  <g transform="translate(130 365)">
+    <rect width="940" height="180" rx="28" fill="#0d202b" stroke="#58d6ff" stroke-opacity=".65" stroke-width="3"/>
+    <path d="M95 43h62l22 22v76H73V65z" fill="#142f3b" stroke="#58d6ff" stroke-width="4"/>
+    <path d="M157 43v25h22M88 85h70M88 104h54" fill="none" stroke="#b5cbd3" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="127" cy="142" r="24" fill="url(#accent)"/><text x="127" y="151" fill="#07131a" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700">$</text>
+    <text x="215" y="105" fill="#f0fbff" font-family="Arial,sans-serif" font-size="34" font-weight="700">CAMPAIGN COST</text>
+  </g>
+  <text x="600" y="603" fill="#58d6ff" text-anchor="middle" font-family="Arial,sans-serif" font-size="52" font-weight="700">÷</text>
+  <g transform="translate(130 655)">
+    <rect width="940" height="180" rx="28" fill="#0d202b" stroke="#58d6ff" stroke-opacity=".65" stroke-width="3"/>
+    <circle cx="112" cy="83" r="27" fill="#58d6ff"/><circle cx="70" cy="100" r="20" fill="#4dffb8"/><circle cx="154" cy="100" r="20" fill="#4dffb8"/>
+    <path d="M62 144c3-21 18-32 39-32m23 0c21 0 36 11 39 32" fill="none" stroke="#b5cbd3" stroke-width="8" stroke-linecap="round"/>
+    <text x="215" y="105" fill="#f0fbff" font-family="Arial,sans-serif" font-size="34" font-weight="700">NEW BUYERS</text>
+  </g>
+  <text x="600" y="895" fill="#58d6ff" text-anchor="middle" font-family="Arial,sans-serif" font-size="52" font-weight="700">=</text>
+  <g transform="translate(130 943)">
+    <rect width="940" height="150" rx="28" fill="#0d202b" stroke="#4dffb8" stroke-opacity=".85" stroke-width="3"/>
+    <path d="M66 39h71l30 34-57 57-44-43z" fill="#102e39" stroke="url(#accent)" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="135" cy="62" r="7" fill="#b5cbd3"/><text x="101" y="92" fill="#f0fbff" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700">$</text>
+    <text x="215" y="87" fill="#f0fbff" font-family="Arial,sans-serif" font-size="34" font-weight="700">PER CUSTOMER</text>
+  </g>
+  <text x="600" y="1150" fill="#b5cbd3" text-anchor="middle" font-family="Arial,sans-serif" font-size="21">CONCEPTUAL FORMULA • NOT A BENCHMARK</text>
+</svg>

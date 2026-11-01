@@ -1,0 +1,19 @@
+{
+  "title": "The One Number Every Small Business Should Check Weekly",
+  "slug": "the-one-number-small-business-should-check-weekly",
+  "description": "Learn how to calculate customer acquisition cost each week, compare channels fairly, and use the result to guide your next marketing decision.",
+  "ogDescription": "A simple weekly way to understand what it costs to win a new customer.",
+  "alt": "Small owner checks weekly customer costs",
+  "date": "2026-10-31",
+  "tags": ["Business Growth", "Marketing"],
+  "brand": "tech",
+  "ctaLine": "Follow Fused Distribution on Instagram and Facebook for more practical business growth ideas.",
+  "contentGraphic": {
+    "label": "Example weekly customer acquisition cost calculation",
+    "rows": [
+      {"condition": "Weekly promotion spend", "action": "$300"},
+      {"condition": "New customers attributed", "action": "10"},
+      {"condition": "Cost per new customer", "action": "$30"}
+    ]
+  }
+}

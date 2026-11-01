@@ -1,0 +1,29 @@
+{
+  "slug": "the-one-number-small-business-should-check-weekly",
+  "score": 93,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-11-01T05:25:53.429Z",
+  "review_notes": [
+    "Reviewed the full article, research record, reel script, metadata, social copy and visual exports. SCORE supports tactic cost divided by attributed new customers; SBA supports customer acquisition cost as a context dependent marketing metric. No universal target or business result is asserted.",
+    "The $300 / 10 / $30 arithmetic is explicitly a made-up example, not reported data. Attribution, timing, cost boundaries, zero-customer weeks and professional-advice limits are explained.",
+    "Inspected the topic-specific conceptual formula in the final landscape and square exports at full size and 360px wide. Labels remain legible, the art fits the article, and no invented statistics appear.",
+    "Local QA passed at score 90. SCORE and SBA source pages checked on 2026-10-31. Final reel, caption and release review are still required.",
+    "Owner review updated: added a short practical sentence to the reel close so the measured narration clears the 100 second distribution floor while remaining within the requested 1-2 minute format.",
+    "Owner review updated: replaced the irrelevant sailboat stock query on the define-your-terms beat with business paperwork footage.",
+    "Owner review updated: corrected the segment 2 media query to use bookkeeping documents instead of a mismatched sailboat image.",
+    "Owner review updated: embedded the release-approved 720x1280 reel from the verified public MP4 URL after the article lead, with playback controls and a poster image."
+  ],
+  "artifactSha256": {
+    "verified.md": "21d37a56bbd7300c3c28ece646b240c7721c6d48dc44e56a2a0488ee340777a5",
+    "index.html": "37ecaa6d8b739e6ec014d3faa0eb4b502b3acf2e9c3a26f10fbe36e1ec47b75e",
+    "meta.json": "b40cb6154de1275d390600b52be1402285a32653214abfc3e2a185802834d18b",
+    "research.json": "dca346d9217970ff3369aeb684bce379801dff1d63266c882b5db6ed0b3c34ec",
+    "hero.jpg": "11070514e4ae6f04a0fa97a65a8268e597e8f2387376f89752b739849603d3a6",
+    "photo-post.jpg": "503ef1a7c32ec0a4969f6349ba2e536838988b7199080fd237b649602298e8d9",
+    "reel-script.md": "f15743f0b84f58f098e610d3cb5b251648fd36248c842ebc5af0f4f77993fb30",
+    "reel-data.md": "c85412256d6ac4f8681fecc9bb1250db25cb59980517526f86d900de49343013",
+    "social-copy.json": "90cd2ea5aada8d5658b597aaf7bd6aecdbb16afbdcafdc46580f92211a23e7e6"
+  }
+}

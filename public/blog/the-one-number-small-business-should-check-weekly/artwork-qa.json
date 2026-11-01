@@ -1,0 +1,25 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-10-31T20:48:49.843Z",
+  "subject": "Campaign cost divided by first-time customers",
+  "purpose": "Explain a weekly customer acquisition cost check without presenting invented benchmark data",
+  "hook": "Know your cost per new customer",
+  "keyWords": [
+    "spend",
+    "buyers",
+    "per customer"
+  ],
+  "chartEvidence": "Conceptual formula, not measured data or a benchmark",
+  "preview": "/tmp/cac-hero-360.jpg; /tmp/cac-square-360.jpg",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}
