@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071521"/><stop offset="1" stop-color="#123143"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1010" cy="110" r="170" fill="#58d6ff" opacity=".08"/>
+  <rect x="74" y="74" width="8" height="478" rx="4" fill="#58d6ff"/>
+  <text x="120" y="143" fill="#58d6ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">FUSED DISTRIBUTION • PART 1</text>
+  <text x="120" y="260" fill="#ffffff" font-family="Arial,sans-serif" font-size="70" font-weight="800">AI REELS</text>
+  <text x="120" y="338" fill="#ffffff" font-family="Arial,sans-serif" font-size="54" font-weight="700">START WITH</text>
+  <text x="120" y="408" fill="#ffffff" font-family="Arial,sans-serif" font-size="54" font-weight="700">YOUR REAL BUSINESS</text>
+  <text x="120" y="490" fill="#a9c4cf" font-family="Arial,sans-serif" font-size="27">A practical first workflow for small teams</text>
+  <g transform="translate(865 253)"><rect width="210" height="134" rx="20" fill="#0c2635" stroke="#58d6ff" stroke-width="3"/><rect x="22" y="23" width="166" height="70" rx="12" fill="#1d4354"/><path d="M76 109h58M105 94v15" stroke="#58d6ff" stroke-width="5" stroke-linecap="round"/><circle cx="104" cy="58" r="18" fill="#58d6ff"/><path d="m99 49 14 9-14 9z" fill="#0c2635"/></g>
+  <text x="867" y="427" fill="#58d6ff" font-family="Arial,sans-serif" font-size="20" font-weight="700">REAL CLIPS → CLEAR IDEAS</text>
+</svg>

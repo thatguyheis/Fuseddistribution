@@ -1,5 +1,33 @@
 [
   {
+    "slug": "ai-reels-for-beginners-part-1",
+    "title": "AI Reels for Beginners: Start With Your Real Business",
+    "date": "2026-11-01",
+    "excerpt": "Build a practical first AI reel workflow from real business footage, approved customer topics, a reusable clip library, and a small test batch.",
+    "tags": [
+      "Small Business",
+      "AI Video"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-reels-for-beginners-part-1/hero.jpg",
+    "imageAlt": "A small business owner organizes real work clips into an AI reel plan"
+  },
+  {
+    "slug": "ai-reels-workflow-part-2",
+    "title": "A Repeatable AI Reel Workflow for Small Business",
+    "date": "2026-11-01",
+    "excerpt": "Use a clear AI reel workflow to approve ideas, organize footage, review drafts, publish at a sustainable pace, and improve from audience feedback.",
+    "tags": [
+      "Small Business",
+      "AI Video"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-reels-workflow-part-2/hero.jpg",
+    "imageAlt": "A small business video workflow from raw footage to review and publishing"
+  },
+  {
     "slug": "the-one-number-small-business-should-check-weekly",
     "title": "The One Number Every Small Business Should Check Weekly",
     "date": "2026-10-31",

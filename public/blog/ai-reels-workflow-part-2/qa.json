@@ -1,0 +1,29 @@
+{
+  "slug": "ai-reels-workflow-part-2",
+  "score": 93,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-11-01T19:53:16.533Z",
+  "review_notes": [
+    "Reviewed the complete article, research, reel script, captions, metadata, and both topic specific graphics. The source guide has 12 written SOP items while its supplied graphic has 10 numbered boxes; the article states and reconciles this difference.",
+    "The flowchart file is copied from the supplied source and adapted only to replace the unsupported twice daily reach promise with sustainable cadence guidance. All numbered steps and order are retained.",
+    "Verified YouTube schedule and Shorts cadence statements against official YouTube Help pages. No universal reach promise is made.",
+    "Inspected the generated landscape and square graphics at full resolution and 360 pixel previews. Type is readable, the shapes are unclipped, and no customer identity or unsupported outcome is implied.",
+    "Local blog QA passed. Editorial review covers text and graphics; final video review remains required after rendering.",
+    "Final review: Local blog QA passes. Replaced the clip that timed out during Remotion encoding with a different, approved local stock visual; all eight segments have unique media provenance.",
+    "Video panel only reviewed 2026-11-01: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-11-01T20-15-17-691Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "72cecc8a897dc5605354b11415d58fb87abe5e0afce0c7c588c21cce96372eff",
+    "index.html": "7bb656915aff7521b1d1f43d99560af5cd9ab848535e267ef556f083ed2947cc",
+    "meta.json": "9272366f902f09a5fb743f9be48d969ff696f84e8bdc0be26c7cead6b7c9cc2e",
+    "research.json": "06b5d126f84ed693e3c511ca1feb685e94bb1d8eba4005ab821829a9465d2be8",
+    "hero.jpg": "7adbbcbc88e5c3f1dec7d0be545ef802a2ffa1e5da2c89401151ac76e4082eac",
+    "photo-post.jpg": "e5843c1d2e77f797e8e35231a34b0e73cf6f6a90b27bc9e48c29c28be5da60a8",
+    "reel-script.md": "3d207f3535ba96acfaf87b7b208ae9f64f5e84978a9d6147305a24e7c3ae6d88",
+    "reel-data.md": "599b5039f6abe22c2427ac3f8b2ffb1db1f141ff5347dcc8e0fca1e23c24b372",
+    "social-copy.json": "dc5c7bc3a34bcfe8d4d26511037888a7e5293bcb5f7e59fc3f26e977d2addf49",
+    "caption-corrections.json": "c79119e4194cb2bee418796110ac0221f86cecc75d59a63d53dbf04934beebb9"
+  }
+}

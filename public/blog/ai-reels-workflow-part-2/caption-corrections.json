@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "reviewer": "Codex",
+  "transcriptSha256": "a5e5d5236507e25ae51b4e4c1998e1a2ece90dfac08aef16bdcaf1acf90941a7",
+  "evidence": "Compared local Whisper output to the approved narration. Corrected speech-recognition substitutions, punctuation, capitalization, and one hallucinated post-roll cue; original word timestamps retained.",
+  "corrections": [
+    {
+      "segment": 0,
+      "cue": 5,
+      "expectedText": "control and hand -off to existing",
+      "text": "control and handoff to existing"
+    },
+    {
+      "segment": 1,
+      "cue": 0,
+      "expectedText": "Label B role by what it",
+      "text": "Label B-roll by what it"
+    },
+    {
+      "segment": 2,
+      "cue": 8,
+      "expectedText": "It's been approved.",
+      "text": "…"
+    },
+    {
+      "segment": 3,
+      "cue": 4,
+      "expectedText": "mismatch scenes.",
+      "text": "mismatched scenes."
+    },
+    {
+      "segment": 4,
+      "cue": 0,
+      "expectedText": "track time, paid services,",
+      "text": "Track time, paid services,"
+    },
+    {
+      "segment": 4,
+      "cue": 9,
+      "expectedText": "YouTube says shorts have no minimum",
+      "text": "YouTube says Shorts have no minimum"
+    },
+    {
+      "segment": 7,
+      "cue": 0,
+      "expectedText": "What's step needs the clearest owner",
+      "text": "What step needs the clearest owner"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071521"/><stop offset="1" stop-color="#163247"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="96" r="190" fill="#58d6ff" opacity=".07"/>
+  <text x="86" y="115" fill="#58d6ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">FUSED DISTRIBUTION • PART 2</text>
+  <text x="86" y="235" fill="#ffffff" font-family="Arial,sans-serif" font-size="62" font-weight="800">FROM IDEA</text>
+  <text x="86" y="308" fill="#ffffff" font-family="Arial,sans-serif" font-size="62" font-weight="800">TO REVIEW LOOP</text>
+  <text x="86" y="390" fill="#a9c4cf" font-family="Arial,sans-serif" font-size="28">A repeatable AI reel workflow</text>
+  <g transform="translate(790 170)" font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <rect x="0" y="0" width="265" height="66" rx="18" fill="#12394b" stroke="#58d6ff" stroke-width="2"/><text x="132" y="41" fill="#fff">APPROVE TOPIC</text>
+    <path d="M132 69v30" stroke="#58d6ff" stroke-width="4"/><path d="m122 91 10 12 10-12" fill="none" stroke="#58d6ff" stroke-width="4"/>
+    <rect x="0" y="105" width="265" height="66" rx="18" fill="#12394b" stroke="#58d6ff" stroke-width="2"/><text x="132" y="146" fill="#fff">MAKE + REVIEW</text>
+    <path d="M132 174v30" stroke="#58d6ff" stroke-width="4"/><path d="m122 196 10 12 10-12" fill="none" stroke="#58d6ff" stroke-width="4"/>
+    <rect x="0" y="210" width="265" height="66" rx="18" fill="#12394b" stroke="#58d6ff" stroke-width="2"/><text x="132" y="251" fill="#fff">PUBLISH + LEARN</text>
+    <path d="M0 243c-92 0-95-210-5-210" fill="none" stroke="#9a88f5" stroke-width="4" stroke-dasharray="8 7"/><path d="m-12 28 8-10 9 9" fill="none" stroke="#9a88f5" stroke-width="4"/>
+  </g>
+</svg>

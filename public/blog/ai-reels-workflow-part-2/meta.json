@@ -1,0 +1,19 @@
+{
+  "title": "A Repeatable AI Reel Workflow for Small Business",
+  "slug": "ai-reels-workflow-part-2",
+  "description": "Use a clear AI reel workflow to approve ideas, organize footage, review drafts, publish at a sustainable pace, and improve from audience feedback.",
+  "ogDescription": "Turn scattered video ideas into a reviewable, repeatable workflow.",
+  "alt": "Video workflow from clips through review",
+  "date": "2026-11-01",
+  "tags": ["Small Business", "AI Video"],
+  "brand": "tech",
+  "ctaLine": "Talk with Fused Distribution about a practical video workflow for your business.",
+  "contentGraphic": {
+    "label": "A repeatable AI reel workflow",
+    "rows": [
+      {"condition": "Gather and approve", "action": "Topics and footage"},
+      {"condition": "Draft and review", "action": "Facts, voice, captions, visuals"},
+      {"condition": "Publish and learn", "action": "Measure, adjust, repeat"}
+    ]
+  }
+}

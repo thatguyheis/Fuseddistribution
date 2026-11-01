@@ -1,0 +1,19 @@
+{
+  "title": "AI Reels for Beginners: Start With Your Real Business",
+  "slug": "ai-reels-for-beginners-part-1",
+  "description": "Build a practical first AI reel workflow from real business footage, approved customer topics, a reusable clip library, and a small test batch.",
+  "ogDescription": "A practical first step for business owners exploring AI video.",
+  "alt": "Small business owner organizing real clips",
+  "date": "2026-11-01",
+  "tags": ["Small Business", "AI Video"],
+  "brand": "tech",
+  "ctaLine": "Talk with Fused Distribution about a practical video workflow for your business.",
+  "contentGraphic": {
+    "label": "A beginner AI reel starter plan",
+    "rows": [
+      {"condition": "Collect real work clips", "action": "20 to start"},
+      {"condition": "List customer questions", "action": "30 topics"},
+      {"condition": "Test the workflow", "action": "3 draft reels"}
+    ]
+  }
+}

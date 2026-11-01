@@ -1,0 +1,28 @@
+{
+  "slug": "ai-reels-for-beginners-part-1",
+  "score": 93,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-11-01T19:16:28.737Z",
+  "review_notes": [
+    "Reviewed the complete article, research, reel script, captions, metadata, and both topic specific graphics. The 20, 30, and 3 quantities are presented as a starter exercise from the supplied material, not as performance statistics.",
+    "Verified the current YouTube cadence statements against official YouTube Help pages. The copy describes a sustainable schedule and does not promise that twice daily posting increases reach.",
+    "Inspected the generated landscape and square graphics at full resolution and 360 pixel previews. Type is readable, the shapes are unclipped, and no customer identity or unsupported outcome is implied.",
+    "Local blog QA passed. Editorial review covers text and graphics; final video review remains required after rendering.",
+    "Final review: Local blog QA passes. Reel captions were compared against approved narration, with timestamp-preserving corrections for Whisper substitutions and one hallucinated post-roll cue.",
+    "Video panel only reviewed 2026-11-01: verified exact companion identity and preserved article content. Evidence /Users/nick/projects/fuseddistribution/.workflow-state/blog-video-reconciliation/2026-11-01T20-15-17-691Z."
+  ],
+  "artifactSha256": {
+    "verified.md": "094d78725ce24db73d3ec5faecdd9ab5077fc4f010abdb0e441eca22ca4b08d5",
+    "index.html": "7ca80a272c12cae41a1bf190aec1891e5d7ae654656d62626db76b9f96e7b936",
+    "meta.json": "8ff1e99e44b3a8ac76c91ba0f143785cfda091172c3760b07d67edb4822098ac",
+    "research.json": "be2975637f7f29a36c42b97e0449155b62de960334128e8f6f8317cdba76b64e",
+    "hero.jpg": "3eff900f04ff5c75022df3aaabb2e4ec5e3ae44f33023a981e9206e3efe1ef01",
+    "photo-post.jpg": "db1b763eed9450c1663ff56ce733e929604c6065d73e191fc8451379cee0a4c8",
+    "reel-script.md": "b9b28e82ff79faa2a8f3121fdb10a2620a66f6454a796c8aaab011a9f2b5dffa",
+    "reel-data.md": "17756cd3795a4dc895c501b6882378c5844fa656c3d131da83e286a905f1d9d5",
+    "social-copy.json": "95c09a268e51f37b3044d0cd2ada64ae1a74c3a9ab2ea81c3bd95989f3450cda",
+    "caption-corrections.json": "1c4725e6ec02b975eede265053d35fa0bc5a02ce5d11ca9698d3bb6292bdec5f"
+  }
+}

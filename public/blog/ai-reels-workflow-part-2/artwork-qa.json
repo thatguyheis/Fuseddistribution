@@ -1,0 +1,17 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-01T18:07:20.039Z",
+  "subject": "ai-reels-workflow-part-2",
+  "purpose": "Explain a beginner AI reel workflow with an original, phone readable process graphic",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

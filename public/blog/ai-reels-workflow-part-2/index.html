@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Repeatable AI Reel Workflow for Small Business | Fused Technology Solutions</title>
+    <meta name="description" content="Use a clear AI reel workflow to approve ideas, organize footage, review drafts, publish at a sustainable pace, and improve from audience feedback." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-11-01T00:00:00Z" />
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/ai-reels-workflow-part-2/" />
+    <meta property="og:title" content="A Repeatable AI Reel Workflow for Small Business" />
+    <meta property="og:description" content="Turn scattered video ideas into a reviewable, repeatable workflow." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/ai-reels-workflow-part-2/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/ai-reels-workflow-part-2/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/ai-reels-workflow-part-2/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "A Repeatable AI Reel Workflow for Small Business",
+      "description": "Use a clear AI reel workflow to approve ideas, organize footage, review drafts, publish at a sustainable pace, and improve from audience feedback.",
+      "url": "https://fuseddistribution.com/blog/ai-reels-workflow-part-2/",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "author": {
+        "@type": "Person",
+        "name": "Nick",
+        "url": "https://fuseddistribution.com/about/",
+        "sameAs": [
+          "https://www.facebook.com/fuseddistribution",
+          "https://www.instagram.com/fuseddistribution"
+        ],
+        "knowsAbout": ["silver investing", "precious metals", "web design", "local business marketing", "inflation hedging"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
+      },
+      "image": "https://fuseddistribution.com/blog/ai-reels-workflow-part-2/hero.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/ai-reels-workflow-part-2/" }
+    }
+    </script>
+    <style>
+:root {
+  --bg: #07131a;
+  --panel: rgba(11, 24, 32, 0.82);
+  --line: rgba(87, 219, 255, 0.16);
+  --text: #ecf8fb;
+  --muted: #afc6cf;
+  --accent: #58d6ff;
+  --accent-2: #4dffb8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+    linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background:
+    linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+    repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+  pointer-events: none;
+}
+a { color: inherit; text-decoration: none; }
+.shell {
+  width: min(1220px, calc(100% - 32px)); margin: 18px auto 40px;
+  border-radius: 28px; overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42); position: relative;
+}
+.shell::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+    radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+  pointer-events: none;
+}
+.topbar, .main, .footer { position: relative; z-index: 1; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 30px; background: rgba(7, 16, 22, 0.92);
+  backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.brand { display: flex; flex-direction: column; line-height: 1; }
+.brand-mark {
+  color: var(--accent); font-size: 1.95rem; font-weight: 900;
+  letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+}
+.brand-sub {
+  margin-top: 4px; color: rgba(236, 248, 251, 0.72); font-size: 0.75rem;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-pages {
+  padding: 8px 10px; border-radius: 999px;
+  border: 1px solid rgba(88, 214, 255, 0.18); background: rgba(7, 15, 23, 0.56);
+}
+.nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-pages a { padding: 9px 14px; border-radius: 999px; }
+.nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+.nav-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 160px; padding: 12px 18px; border-radius: 14px;
+  border: 1px solid rgba(88, 214, 255, 0.28); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+}
+.main { padding: 52px 54px 60px; }
+.article-wrap { max-width: 760px; margin: 0 auto; }
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 32px;
+}
+.back-link:hover { color: var(--accent); }
+.eyebrow {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+  font-size: 0.82rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.article-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 18px 0 24px; }
+.article-meta time { color: var(--muted); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pill {
+  padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(88, 214, 255, 0.18);
+  background: rgba(88, 214, 255, 0.08); color: rgba(236, 248, 251, 0.88);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+h1 {
+  margin: 0 0 4px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.05;
+}
+.article-hero { width: 100%; border-radius: 18px; overflow: hidden; margin: 28px 0 0; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-hero img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; }
+.article-hero figcaption { padding: 10px 14px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); background: rgba(7, 15, 23, 0.6); letter-spacing: 0.04em; }
+.article-hero figcaption a { color: rgba(175, 198, 207, 0.55); text-decoration: underline; }
+.article-photo { margin: 32px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: cover; object-position: center; }
+.article-photo figcaption { padding: 10px 16px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); letter-spacing: 0.04em; background: rgba(7, 16, 22, 0.6); }
+.article-divider { height: 1px; background: rgba(88, 214, 255, 0.12); margin: 32px 0; }
+.article-body { color: var(--muted); font-size: 1.08rem; line-height: 1.82; }
+.article-body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.55rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--text); margin: 40px 0 14px;
+}
+.article-body h3 { color: var(--text); font-size: 1.18rem; margin: 28px 0 10px; }
+.article-body p { margin: 0 0 20px; }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 20px; }
+.article-body li { margin-bottom: 8px; }
+.article-body strong { color: var(--text); }
+.article-body a { color: var(--accent); text-decoration: underline; }
+.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; overflow: hidden; }
+.chart-title { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-bottom: 18px; }
+.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+.stat-card { background: rgba(88, 214, 255, 0.04); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 14px; padding: 22px 18px; text-align: center; }
+.stat-card .stat-number { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2.4rem; letter-spacing: 0.03em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+.stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+.watch-list { display: flex; flex-direction: column; gap: 14px; margin: 32px 0; }
+.watch-list-item { padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.14); background: rgba(7, 20, 28, 0.74); }
+.watch-list-item strong { display: block; color: var(--accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.watch-list-item span { display: block; margin-top: 8px; color: var(--text); font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.social-video { margin: 42px 0 0; padding: 24px; border: 1px solid rgba(88, 214, 255, 0.2); border-radius: 20px; background: rgba(7, 20, 28, 0.74); }
+.social-video h2 { margin: 0 0 8px; color: var(--text); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.social-video > p { margin: 0 0 18px; color: var(--muted); }
+.social-video-player { position: relative; aspect-ratio: 9 / 16; width: min(100%, 360px); margin: 0 auto 20px; border-radius: 14px; overflow: hidden; background: #020608; }
+.social-video-player iframe, .social-video-player video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
+.social-video-pending { padding: 18px; border: 1px dashed rgba(88, 214, 255, 0.32); border-radius: 14px; color: var(--accent); text-align: center; font-weight: 800; letter-spacing: 0.04em; }
+.sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
+.sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
+.sources-block ol li { margin-bottom: 6px; }
+.sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+.faq-block { display: flex; flex-direction: column; gap: 12px; margin: 32px 0; }
+.faq-item { padding: 20px 24px; border-radius: 14px; border: 1px solid rgba(88, 214, 255, 0.12); background: rgba(7, 18, 26, 0.6); }
+.faq-q { font-weight: 700; color: var(--text); font-size: 1rem; margin-bottom: 8px; }
+.faq-a { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+.article-cta { margin-top: 48px; padding: 28px; border-radius: 22px; border: 1px solid rgba(88, 214, 255, 0.2); background: rgba(88, 214, 255, 0.05); text-align: center; }
+.article-cta p { margin: 0 0 18px; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 16px; border: 1px solid transparent; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.btn-primary { color: #041117; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 34px rgba(88, 214, 255, 0.18); }
+.footer { padding: 24px 28px 34px; color: rgba(175, 198, 207, 0.74); text-align: center; font-size: 0.92rem; }
+.nav-item { position: relative; }
+.nav-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px; border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; letter-spacing: 0.04em; color: rgba(239, 252, 255, 0.9); transition: color 0.15s; }
+.nav-toggle:hover, .nav-toggle:focus-visible, .nav-toggle.active, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+.nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+.nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+.nav-dropdown { display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(8, 16, 24, 0.97); backdrop-filter: blur(20px); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55); z-index: 200; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s; }
+.nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s; opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.nav-dropdown a { padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em; color: rgba(220, 240, 248, 0.78); transition: background 0.12s, color 0.12s; }
+.nav-dropdown a:hover, .nav-dropdown a:focus-visible, .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+.nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+@media (max-width: 1080px) { .topbar { flex-direction: column; align-items: flex-start; } .main { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 900px) { .nav-dropdown { left: 0; transform: translateY(-6px); } .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); } }
+@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] > [aria-hidden="true"] { transform: rotate(90deg); } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">Small Business &middot; AI Video</div>
+
+          <h1>A Repeatable AI Reel Workflow for Small Business</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-11-01">November 1, 2026</time>
+            <span class="pill">Small Business</span>
+            <span class="pill">AI Video</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="/blog/ai-reels-workflow-part-2/hero.jpg" alt="Video workflow from clips through review" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+            <div class="math-box" role="img" aria-label="A repeatable AI reel workflow"><p><strong>Gather and approve</strong> &rarr; Topics and footage</p><p><strong>Draft and review</strong> &rarr; Facts, voice, captions, visuals</p><p><strong>Publish and learn</strong> &rarr; Measure, adjust, repeat</p></div><p>Part one covered the building blocks for a first batch: real business footage, approved topics, a labeled clip library, one consistent voice, and a few reviewed tests. <a href="/blog/ai-reels-for-beginners-part-1/">Read the beginner guide first</a>, then use this workflow to turn those pieces into a repeatable process. It follows the flowchart from the supplied source file, while adding practical checks for rights, accuracy, workload, and results.</p>
+            <!-- SOCIAL_VIDEO_START -->
+<style>.social-video{margin:24px 0;padding:24px;border:1px solid rgba(88,214,255,.25);border-radius:16px}.social-video-player{position:relative;aspect-ratio:9/16;width:min(100%,360px);margin:16px auto;background:#020608;border-radius:14px;overflow:hidden}.social-video-player iframe,.social-video-player video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain}</style><aside class="social-video" aria-label="Companion video"><h2>Watch the reel</h2><p>Watch the companion video, then use the guide below.</p><div class="social-video-player"><video controls playsinline preload="none" poster="/blog/ai-reels-workflow-part-2/hero.jpg"><source src="https://fuseddistribution.com/reels/ai-reels-workflow-part-2/ai-reels-workflow-part-2.mp4" type="video/mp4">Your browser does not support this video.</video></div></aside>
+<!-- SOCIAL_VIDEO_END -->
+            <p>The supplied flowchart has ten numbered boxes. The written checklist in the same guide has twelve items: it adds cost control and plugging into existing help. This article keeps the flowchart&#39;s order and includes those two practical steps. Open the <a href="/blog/ai-reels-workflow-part-2/ai-reels-flowchart.html">printable and shareable flowchart</a> beside the topic bank. Use it as a checklist, not as a promise that every step can run without a person.</p>
+            <h2>1. Gather real material</h2>
+            <p>Start with current photos and clips that show the services, products, people, or work process you can honestly describe. Prefer your own footage when you can collect it safely. Use stock video only when it fills a real visual gap, and record its source and license. Illustrations should look like illustrations. Do not use a scene that could make a viewer think a stock actor is your customer or staff member.</p>
+            <p>Ask for consent before using an identifiable person in marketing. Avoid addresses, account screens, vehicle plates, customer documents, and private details. Keep original files in a controlled folder and share only the clips needed for the task.</p>
+            <h2>2. Build a topic bank</h2>
+            <p>List customer questions, service explanations, common errors, seasonal reminders, and useful stories. A year of ideas is a helpful planning goal, but a smaller approved list is enough to start. Give each idea a topic, audience, question, one sentence answer, proof needed, visual options, and a status. Mark topics that depend on a current price, product detail, rule, or statistic for fact checking before writing.</p>
+            <p>A list does not have to be finished before you learn. Add ideas from calls and messages without placing private details in a public script. Rewrite a specific customer&#39;s story as a general question unless you have explicit permission to share the story.</p>
+            <h2>3. Approve the next topic</h2>
+            <p>The owner or a qualified reviewer should approve what the next video will cover. Approval should include the audience, key point, evidence, and any claims that must be avoided. Keep the approved brief with the draft. If the topic changes, update the brief before the script is finalized. This makes it easier to spot drift than trying to infer the original goal from a finished edit.</p>
+            <h2>4. Organize the B roll backlog</h2>
+            <p>Use short, labeled clips that can support multiple approved topics. A useful label explains the scene: <code>packing a customer order</code>, <code>measuring a doorway</code>, or <code>team opening the workshop</code>. Store permission and license notes beside the asset. Record restrictions such as date, location, customer approval, or a short period of allowed use.</p>
+            <p>Select clips for meaning, not just color. A video about a roof inspection should not show a scene that implies someone is climbing an unsafe roof. A clip of a product should show the correct product. Review the final sequence while listening to the narration so each scene supports the sentence on screen.</p>
+            <h2>5. Choose and protect the voice</h2>
+            <p>Choose a recorded voice or a consistent narration voice. If you use a person&#39;s recording or a voice replica, get permission, document the allowed use, and secure the source files. Do not make someone appear to endorse an offer or claim they did not approve. Check pronunciation, numbers, pauses, and captions before the render is approved.</p>
+            <h2>6. Generate a small test batch</h2>
+            <p>Make a few videos from different approved topics. Keep a simple record of what changed in each one: opening, example, visual style, or pacing. Avoid changing every element at once. A batch is useful only if a reviewer watches the actual exported files, not just a preview frame or a draft transcript.</p>
+            <p>Use a short review sheet. Confirm that the topic is approved, statements match their sources, captions match the audio, the opening is clear, visuals fit the words, text stays inside the frame, and music or footage is allowed. Check the final link and call to action. Repair issues before scheduling.</p>
+            <h2>7. Fine tune with controlled changes</h2>
+            <p>When something is wrong, write down the exact problem and the fix. Examples include a mispronounced name, text that is too small, a clip that contradicts the narration, or an unclear first sentence. Make the smallest useful correction and watch the updated export again. Do not assume a corrected script fixed an old video; verify the new file.</p>
+            <p>Keep both good and bad results in the learning log. Note the topic, opening, length, platform, publish date, and meaningful audience measures. A single post can be noisy. Look for repeated patterns across comparable videos before changing the standard workflow.</p>
+            <h2>8. Keep production cost visible</h2>
+            <p>Track the time, paid services, local compute, and rework used for each batch. Use local tools or simple scripts when they are reliable and appropriate. A lower bill is not a win if the workflow creates errors, uses unapproved footage, or takes longer to repair than to make. Reuse a cleared voice, template, or asset when it still fits, and record when something was newly generated or reused. For a related approach to safe automation, see <a href="/blog/choosing-a-low-risk-first-ai-task-for-a-small-business/">how to choose a low risk first AI task</a>.</p>
+            <p>Set a stop point before expensive rendering. If facts, rights, narration, or story structure are unresolved, repair those first. If a system fails, preserve the working files and error details so the next attempt can resume instead of rebuilding completed steps.</p>
+            <h2>9. Set a sustainable cadence</h2>
+            <p>The source flowchart suggests two posts a day for maximum reach. Current YouTube guidance does not support that as a universal rule. YouTube says there is no minimum Shorts cadence required for performance and recommends a schedule that is consistent and sustainable. It also describes recommendations as viewer matched and based on audience response and other context. Read <a href="https://support.google.com/youtube/answer/13616979">YouTube&#39;s upload schedule tips</a> and <a href="https://support.google.com/youtube/answer/11914225">Shorts discovery guidance</a>.</p>
+            <p>Use the audience and production capacity you actually have. Choose a pace that leaves time for review and customer work. If you want to test more posts, treat that as a measured experiment. Compare similar topics and formats, track the workload, and stop if quality or service suffers.</p>
+            <h2>10. Publish to the right places</h2>
+            <p>Pick one platform as the original home for each video, then make a copy for other channels where customers already spend time. Check each platform&#39;s current file limits, audio rights, crop, caption options, and link rules. A workflow can start with Shorts, as the supplied chart does, but that order is an operating choice rather than a guarantee of extra reach. A person who already manages your pages can receive a reviewed posting pack instead of being asked to change their whole routine.</p>
+            <p>For every post, record the final file, caption, platform, link, schedule, and the platform&#39;s confirmation. A local success message is not proof that a post is actually scheduled or live. Reconcile failed uploads and missing media before repeating the post.</p>
+            <h2>11. Review winners and misses</h2>
+            <p>Wait long enough for useful platform data, then compare videos with similar audiences and topics. Watch retention, views, comments, shares, saves, inquiries, and qualified leads where available. For business decisions, connect attention to the outcome you care about, such as a real inquiry or a sale. Do not call views revenue.</p>
+            <p>Keep a winning pattern only when its quality and business result hold up. Keep a poor result in the record and ask whether the subject, opening, timing, or edit made the idea hard to understand. Retire an approach when enough comparable attempts show it is not useful. Then feed the learning back into the topic bank.</p>
+            <h2>12. Loop back to the topic bank</h2>
+            <p>The loop is the point of the flowchart. Questions lead to approved topics. Real footage supports a draft. Review catches unsupported details. A measured release teaches you what to try next. Update the topic bank with new questions and corrections, then repeat the cycle.</p>
+            <h3>A small operating checklist</h3>
+            <ul>
+            <li>Is this topic approved and useful to a specific customer?</li>
+            <li>Do we have the rights and permission for every voice, face, clip, and song?</li>
+            <li>Can every factual claim be checked?</li>
+            <li>Does the final video match the approved script and pass phone sized review?</li>
+            <li>Is the publishing pace sustainable for the team?</li>
+            <li>Did we record the final status and the results we can actually verify?</li>
+            </ul>
+            <p>This system should make publishing easier to repeat, not harder to supervise. Automation can move files, prepare drafts, and help with routine edits. People still decide what the business stands behind, who can appear in a video, and whether the final post is ready.</p>
+            <p><strong>Sources</strong></p>
+            <ul>
+            <li>YouTube Help, “Upload schedule tips for Shorts,” accessed November 1, 2026: https://support.google.com/youtube/answer/13616979</li>
+            <li>YouTube Help, “Search and discovery tips for Shorts,” accessed November 1, 2026: https://support.google.com/youtube/answer/11914225</li>
+            <li>The companion <a href="/blog/ai-reels-workflow-part-2/ai-reels-flowchart.html">AI reels flowchart</a> is adapted from the source file supplied for this project. Its ten step structure is preserved, and the cadence note is updated to avoid promising a reach result.</li>
+            </ul>
+            <h2>Related</h2>
+            <ul>
+            <li><a href="/blog/ai-reels-for-beginners-part-1/">Part one: the beginner foundations for AI reels</a></li>
+            <li><a href="/blog/choosing-a-low-risk-first-ai-task-for-a-small-business/">Choosing a low risk first AI task for a small business</a></li>
+            </ul>
+            <p>Read next: <a href="/blog/ai-reels-for-beginners-part-1/">Part one: the beginner foundations for AI reels</a></p>
+          </div>
+
+          <div class="article-cta">
+            <p>Talk with Fused Distribution about a practical video workflow for your business.</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) { if (btn !== except) btn.setAttribute('aria-expanded', 'false'); });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(null); });
+        document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeAll(null); });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "reviewer": "Codex",
+  "transcriptSha256": "5003d88ec1e0b9fe16766196e155e1902c308848b8c4640469486ccdeb136925",
+  "evidence": "Compared local Whisper output to the approved narration. Corrected speech-recognition substitutions, punctuation, capitalization, and one hallucinated post-roll cue; original word timestamps retained.",
+  "corrections": [
+    {
+      "segment": 4,
+      "cue": 0,
+      "expectedText": "then make three test drills from",
+      "text": "Then make three test reels from"
+    },
+    {
+      "segment": 4,
+      "cue": 5,
+      "expectedText": "A small test bash teaches you",
+      "text": "A small test batch teaches you"
+    },
+    {
+      "segment": 5,
+      "cue": 4,
+      "expectedText": "shorts cadence and recommends a schedule",
+      "text": "Shorts cadence and recommends a schedule"
+    },
+    {
+      "segment": 6,
+      "cue": 0,
+      "expectedText": "Which customer question should your first",
+      "text": "Which customer question should your first reel"
+    }
+  ]
+}
