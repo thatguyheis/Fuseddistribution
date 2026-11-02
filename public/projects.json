@@ -1,8 +1,30 @@
 [
   {
+    "slug": "coin-history-talk",
+    "name": "Coin History Talk",
+    "tags": [
+      "Media Brand",
+      "Client Concept",
+      "Coins and Auctions Since 1994"
+    ],
+    "description": "A new history first media brand for Coins and Auctions Since 1994 in Vancouver, WA. Short films, written stories, rare facts, and long interviews about coins and mints, built step by step toward a feature documentary.",
+    "scope_label": "Scope",
+    "scope_title": "Media site and content engine",
+    "scope_body": "Episode reels, an interactive timeline of money, rare fact cards, Vault Sessions interviews, a documentary roadmap, and a disclosed referral path to the coin shop.",
+    "detail_label": "Strategy",
+    "detail_title": "Stories first, referrals second",
+    "detail_body": "Every story is sourced and built on real coins. Visitors who want to buy, sell, or consign are sent to Coins and Auctions Since 1994 through tracked links.",
+    "cta1": "Open Live Page",
+    "cta2": "Request Similar Build",
+    "iframe_title": "Coin History Talk media website concept for Coins and Auctions Since 1994, Vancouver WA"
+  },
+  {
     "slug": "plainsman",
     "name": "The Plainsman Restaurant",
-    "tags": ["Restaurant Demo", "Customer Work-Up"],
+    "tags": [
+      "Restaurant Demo",
+      "Customer Work-Up"
+    ],
     "description": "A full restaurant website built for The Plainsman in Vancouver, WA — warm branding, clear sections, and a structure built for local search and walk-in traffic.",
     "scope_label": "Scope",
     "scope_title": "Full restaurant page",
@@ -17,7 +39,10 @@
   {
     "slug": "cascade",
     "name": "Cascade Collision Repair",
-    "tags": ["Service Business", "Customer Work-Up"],
+    "tags": [
+      "Service Business",
+      "Customer Work-Up"
+    ],
     "description": "A conversion-focused page built for Cascade Collision Repair — designed to generate calls and estimate requests from local drivers who need fast, trustworthy repair service.",
     "scope_label": "Scope",
     "scope_title": "Local service business page",
@@ -32,7 +57,10 @@
   {
     "slug": "anoush-deli",
     "name": "Anoush Deli & International Foods",
-    "tags": ["Restaurant / Market", "Customer Work-Up"],
+    "tags": [
+      "Restaurant / Market",
+      "Customer Work-Up"
+    ],
     "description": "A digital presence built for Anoush Deli in Vancouver, WA — an authentic international market and deli capturing commuter lunch traffic with mobile ordering and a clear \"Skip the Line\" experience.",
     "scope_label": "Scope",
     "scope_title": "International deli and market",
@@ -47,7 +75,10 @@
   {
     "slug": "boba-tree",
     "name": "Boba Tree",
-    "tags": ["Café / Beverage", "Customer Work-Up"],
+    "tags": [
+      "Café / Beverage",
+      "Customer Work-Up"
+    ],
     "description": "A visual-first site built for Boba Tree in Vancouver, WA — designed for a younger demographic with a high-resolution gallery, bright branding, and a direct path from social media traffic to online orders.",
     "scope_label": "Scope",
     "scope_title": "Trendy boba and café site",
@@ -62,7 +93,10 @@
   {
     "slug": "world-construction",
     "name": "World Construction LLC",
-    "tags": ["Construction / Contractor", "Customer Work-Up"],
+    "tags": [
+      "Construction / Contractor",
+      "Customer Work-Up"
+    ],
     "description": "A high-impact sales funnel built for World Construction LLC in Vancouver, WA — targeting equity-rich homeowners who are staying put and remodeling instead of moving. Real project photography, a lead-capture hero, social proof, and a zero-risk guarantee drive every visitor toward one action: booking a free estimate.",
     "scope_label": "Scope",
     "scope_title": "Remodel sales-funnel page",

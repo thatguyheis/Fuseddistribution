@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coin History Talk | The story behind the coin</title>
+<meta name="description" content="Coin History Talk tells the stories behind coins, mints, and rare finds. Presented with Coins and Auctions Since 1994. Concept draft by Fused Distribution.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0b09; --ink2:#14120f; --ink3:#1d1a15; --line:#2d2820;
+  --paper:#efe6d2; --paper2:#c9bfa9; --mute:#8d846f;
+  --gold:#c9a14a; --gold2:#e8c877; --patina:#5f8f7c; --copper:#b8693f;
+  --serif:'Fraunces',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+  --wrap:min(1180px,100% - 32px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:var(--wrap);margin-inline:auto}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.draft{background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:7px 16px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(34px,5vw,64px)}
+h2 em,h1 em{font-style:italic;color:var(--gold2);font-weight:400}
+.lede{color:var(--paper2);font-size:clamp(16px,1.4vw,19px);max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .25s,background .25s,color .25s;border:1px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold2)}
+.btn-line{border-color:#4a4235;color:var(--paper)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold2)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(12,11,9,.72);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px}
+.logo svg{width:30px;height:30px}
+.links{display:flex;gap:26px;font-size:14px;color:var(--paper2)}
+.links a{text-decoration:none}.links a:hover{color:var(--gold2)}
+nav .btn{padding:10px 16px;font-size:13px}
+@media(max-width:900px){.links{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:min(calc(100vh - 96px),920px);display:grid;align-items:center;padding:60px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 40% at 72% 45%,rgba(201,161,74,.22),transparent 70%),radial-gradient(30% 30% at 15% 80%,rgba(95,143,124,.16),transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,108px);margin:18px 0 24px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.partner-mini{margin-top:36px;display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mute)}
+.partner-mini b{color:var(--paper);font-weight:600}
+.partner-mini .dot{width:8px;height:8px;border-radius:50%;background:var(--patina);box-shadow:0 0 0 4px rgba(95,143,124,.2)}
+.stage{perspective:1400px;display:grid;place-items:center;aspect-ratio:1}
+.coin{width:min(420px,78vw);aspect-ratio:1;position:relative;transform-style:preserve-3d;animation:spin 16s linear infinite}
+.coin{--t:clamp(18px,2.4vw,32px)}
+.coin .face{position:absolute;inset:0;border-radius:50%;backface-visibility:hidden}
+.coin .front{transform:translateZ(calc(var(--t) / 2))}
+.coin .back{transform:rotateY(180deg) translateZ(calc(var(--t) / 2))}
+.coin .slice{position:absolute;inset:.4%;border-radius:50%;background:repeating-conic-gradient(from 0deg,#6b521d 0 .9deg,#a8833a .9deg 1.8deg)}
+.stage::after{content:"";position:absolute;width:min(380px,70vw);height:40px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent);transform:translateY(min(250px,46vw));filter:blur(6px)}
+.stage{position:relative}
+.coin .face svg{width:100%;height:100%}
+@keyframes spin{from{transform:rotateY(0) rotateX(8deg)}to{transform:rotateY(360deg) rotateX(8deg)}}
+.shine{position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 30%,rgba(255,240,200,.35) 48%,transparent 62%);mix-blend-mode:overlay;animation:sh 6s ease-in-out infinite}
+@keyframes sh{0%,100%{opacity:.2}50%{opacity:.9}}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.stage{order:-1;max-width:340px;margin:0 auto}.hero{min-height:auto}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--paper2)}
+.marquee div{display:inline-block;animation:mq 40s linear infinite}
+.marquee span{margin:0 28px}.marquee i{color:var(--gold);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:clamp(80px,11vw,150px) 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.head .lede{max-width:44ch}
+
+/* episodes */
+.reels{display:grid;grid-auto-flow:column;grid-auto-columns:min(260px,70vw);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.reel{scroll-snap-align:start;position:relative;aspect-ratio:2/3;border-radius:18px;overflow:hidden;text-decoration:none;background:linear-gradient(180deg,#1b1812,#0e0d0a);border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .3s,transform .4s}
+.reel:hover{border-color:#6a5730;transform:translateY(-4px)}
+.reel .pic{position:relative;aspect-ratio:1;overflow:hidden;margin:10px;border-radius:12px;background:#000}
+.reel .pic img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.reel:hover .pic img{transform:scale(1.06)}
+.reel .meta{padding:8px 18px 20px;margin-top:auto}
+.reel .tag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);font-weight:600}
+.reel h3{font-size:21px;margin-top:10px;line-height:1.15}
+.reel .len{font-size:12px;color:var(--mute);margin-top:10px}
+.reel .play{position:absolute;bottom:12px;right:12px;width:42px;height:42px;border-radius:50%;background:rgba(12,11,9,.65);border:1px solid rgba(232,200,119,.55);display:grid;place-items:center;backdrop-filter:blur(6px)}
+.reel .play::before{content:"";border-left:12px solid var(--gold2);border-block:7px solid transparent;margin-left:3px}
+.note{font-size:13px;color:var(--mute);margin-top:14px}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.pillar{background:var(--ink2);padding:30px 24px 34px;min-height:250px;display:flex;flex-direction:column;gap:12px;transition:background .3s}
+.pillar:hover{background:var(--ink3)}
+.pillar .n{font-family:var(--serif);font-size:15px;color:var(--gold)}
+.pillar h3{font-size:26px}
+.pillar p{font-size:14.5px;color:var(--paper2)}
+@media(max-width:1000px){.pillars{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pillars{grid-template-columns:1fr}.pillar{min-height:auto}}
+
+/* timeline */
+.timeline{position:relative;background:var(--ink2);border-block:1px solid var(--line)}
+.tl{position:relative;margin-top:30px}
+.tl::before{content:"";position:absolute;left:150px;top:0;bottom:0;width:1px;background:var(--line)}
+.tl .bar{position:absolute;left:150px;top:0;width:1px;background:linear-gradient(var(--gold2),var(--gold));height:0;transition:height .15s linear}
+.ev{display:grid;grid-template-columns:150px 1fr;gap:0 44px;padding:26px 0;opacity:.25;transform:translateY(20px);transition:opacity .7s,transform .7s}
+.ev.on{opacity:1;transform:none}
+.ev .yr{font-family:var(--serif);font-size:30px;white-space:nowrap;color:var(--gold2);text-align:right;padding-right:28px;position:relative}
+.ev .yr::after{content:"";position:absolute;right:-6px;top:14px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--gold)}
+.ev h3{font-size:clamp(24px,2.6vw,34px);margin-bottom:8px}
+.ev p{color:var(--paper2);max-width:62ch}
+.ev .src{font-size:12px;color:var(--mute);margin-top:8px;letter-spacing:.04em}
+@media(max-width:640px){.tl::before,.tl .bar{left:8px}.ev{grid-template-columns:1fr;padding-left:32px}.ev .yr{text-align:left;padding:0;font-size:24px;margin-bottom:6px}.ev .yr::after{left:-30px;right:auto;top:10px}}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fact{perspective:1200px;min-height:270px;cursor:pointer;background:none;border:0;text-align:left;color:inherit;font:inherit}
+.fact .in{position:relative;height:100%;min-height:270px;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.fact.flip .in{transform:rotateY(180deg)}
+.fact .s{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line)}
+.fact .f{background:linear-gradient(160deg,var(--ink3),var(--ink2))}
+.fact .b{background:linear-gradient(160deg,#2a2212,#16130d);transform:rotateY(180deg);border-color:#5a4a26}
+.fact .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.fact h3{font-size:28px}
+.fact .b p{color:var(--paper);font-size:15.5px}
+.fact .hint{font-size:13px;color:var(--mute)}
+.fact .src{font-size:12px;color:var(--mute)}
+@media(max-width:900px){.facts{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.facts{grid-template-columns:1fr}}
+
+/* vault */
+.vault{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.vault-card{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--ink2)}
+.vault-card .screen{aspect-ratio:16/9;position:relative;background:
+  radial-gradient(60% 80% at 30% 40%,rgba(201,161,74,.25),transparent 70%),
+  linear-gradient(135deg,#1c1812,#0d0c0a);display:grid;place-items:center}
+.vault-card .screen .rec{position:absolute;top:16px;left:16px;font-size:12px;letter-spacing:.14em;display:flex;align-items:center;gap:8px;color:var(--paper2)}
+.vault-card .screen .rec::before{content:"";width:9px;height:9px;border-radius:50%;background:#d0533a;animation:bl 1.4s infinite}
+@keyframes bl{50%{opacity:.2}}
+.vault-card .screen h3{font-size:clamp(26px,3vw,40px);text-align:center;padding:0 20px}
+.vault-card .rows{padding:8px 22px 14px}
+.vault-card .row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.vault-card .row:last-child{border:0}
+.vault-card .row span:last-child{color:var(--gold2);white-space:nowrap}
+.vault ul{list-style:none;margin-top:28px;display:grid;gap:14px}
+.vault li{display:flex;gap:14px;color:var(--paper2)}
+.vault li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;border:1px solid var(--gold);background:radial-gradient(circle,var(--gold) 0 3px,transparent 4px)}
+@media(max-width:900px){.vault{grid-template-columns:1fr}}
+
+/* documentary */
+.doc{position:relative;overflow:hidden;background:#090807}
+.doc::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 0%,rgba(201,161,74,.18),transparent 70%)}
+.doc .wrap{position:relative;text-align:center}
+.doc h2{max-width:16ch;margin:18px auto 20px}
+.doc .lede{margin:0 auto}
+.road{display:grid;grid-template-columns:repeat(6,1fr);margin-top:64px;position:relative;text-align:left}
+.road::before{content:"";position:absolute;top:19px;left:0;right:0;height:1px;background:var(--line)}
+.step{position:relative;padding-right:14px}
+.step .o{width:39px;height:39px;border-radius:50%;border:1px solid #4a4235;background:var(--ink);display:grid;place-items:center;font-family:var(--serif);font-size:15px;color:var(--mute);position:relative}
+.step.now .o{border-color:var(--gold);color:var(--ink);background:var(--gold);box-shadow:0 0 0 8px rgba(201,161,74,.15)}
+.step h3{font-size:19px;margin:18px 0 6px}
+.step p{font-size:13.5px;color:var(--mute)}
+.step.now h3{color:var(--gold2)}
+@media(max-width:900px){.road{grid-template-columns:1fr 1fr;gap:34px 18px}.road::before{display:none}}
+
+/* partner */
+.partner{display:grid;grid-template-columns:1.2fr 1fr;border:1px solid #4a3d22;border-radius:26px;overflow:hidden;background:linear-gradient(135deg,#1f1a10,#100e0a)}
+.partner .l{padding:clamp(32px,5vw,64px)}
+.partner h2{font-size:clamp(32px,4vw,52px);margin:16px 0 18px}
+.partner .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center}
+.disclose{font-size:13px;color:var(--paper2);margin-top:16px;max-width:54ch;padding-left:12px;border-left:2px solid var(--gold)}
+.partner .r{background:url('img/hoard.jpg') center/cover;min-height:340px;position:relative}
+.partner .r::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#14110b,transparent 40%)}
+.badge{position:absolute;right:22px;bottom:22px;z-index:1;background:rgba(12,11,9,.8);border:1px solid var(--gold);border-radius:14px;padding:14px 18px;backdrop-filter:blur(8px)}
+.badge b{font-family:var(--serif);font-size:28px;color:var(--gold2);display:block;line-height:1}
+.badge span{font-size:12px;color:var(--paper2)}
+@media(max-width:900px){.partner{grid-template-columns:1fr}.partner .r{min-height:260px}.partner .r::after{background:linear-gradient(0deg,#14110b,transparent 50%)}}
+
+/* newsletter */
+.news{text-align:center}
+.news form{display:flex;gap:10px;max-width:520px;margin:30px auto 0;flex-wrap:wrap;justify-content:center}
+.news input{flex:1 1 260px;background:var(--ink2);border:1px solid #4a4235;border-radius:999px;padding:14px 20px;color:var(--paper);font:inherit}
+.news input:focus{outline:2px solid var(--gold);outline-offset:2px}
+.news .msg{margin-top:14px;font-size:14px;color:var(--patina);min-height:20px}
+
+footer{border-top:1px solid var(--line);padding:48px 0 60px;font-size:13.5px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer p{max-width:60ch}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.ev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="draft">Concept draft for stakeholder review. Not a live site.</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Coin History Talk home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="#c9a14a" stroke-width="2" stroke-dasharray="1.6 1.2"/><circle cx="20" cy="20" r="13" fill="none" stroke="#c9a14a"/><text x="20" y="24.5" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" fill="#e8c877">CH</text></svg>
+      Coin History Talk
+    </a>
+    <div class="links">
+      <a href="#episodes">Episodes</a><a href="#timeline">Timeline</a><a href="#facts">Rare Facts</a><a href="#vault">Vault Sessions</a><a href="#film">The Film</a>
+    </div>
+    <a class="btn btn-gold" href="#partner">Have a coin?</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Coin history. Mint history. Rare facts.</div>
+      <h1>Every coin is a story someone <em>forgot to tell.</em></h1>
+      <p class="lede">Short films, deep reads, and long conversations with the people who know coins best. We start with the object in your hand and follow it back to the people, places, and decisions that made it.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#episodes">Watch the latest stories</a>
+        <a class="btn btn-line" href="#film">Follow the documentary</a>
+      </div>
+      <div class="partner-mini"><span class="dot"></span><span>Presented with <b>Coins and Auctions Since 1994</b>, Vancouver, Washington</span></div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="coin">
+        <div class="face front">
+          <svg viewBox="0 0 400 400">
+            <defs>
+              <radialGradient id="g1" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#f3d991"/><stop offset=".45" stop-color="#c9a14a"/><stop offset="1" stop-color="#6e5520"/></radialGradient>
+              <radialGradient id="g2" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#e2c271"/><stop offset="1" stop-color="#8a6a2a"/></radialGradient>
+              <path id="ring" d="M200,200 m-148,0 a148,148 0 1,1 296,0 a148,148 0 1,1 -296,0"/>
+            </defs>
+            <circle cx="200" cy="200" r="196" fill="url(#g1)"/>
+            <circle cx="200" cy="200" r="190" fill="none" stroke="#5b4518" stroke-width="7" stroke-dasharray="2.2 2.6"/>
+            <circle cx="200" cy="200" r="176" fill="url(#g2)" stroke="#7a5d22" stroke-width="2"/>
+            <circle cx="200" cy="200" r="124" fill="none" stroke="#7a5d22" stroke-width="1.5"/>
+            <text font-family="Fraunces,Georgia,serif" font-size="22" fill="#5b4518"><textPath href="#ring" startOffset="0" textLength="912" lengthAdjust="spacing">COIN HISTORY TALK ✦ THE STORY BEHIND THE COIN ✦</textPath></text>
+            <text x="200" y="222" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="86" font-weight="500" fill="#5b4518">CH</text>
+            <text x="200" y="262" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="16" letter-spacing="6" fill="#5b4518">TALK</text>
+            <g fill="#5b4518"><circle cx="200" cy="112" r="3"/><circle cx="170" cy="118" r="2.4"/><circle cx="230" cy="118" r="2.4"/><circle cx="145" cy="132" r="2"/><circle cx="255" cy="132" r="2"/></g>
+          </svg>
+          <div class="shine"></div>
+        </div>
+        <div class="face back">
+          <svg viewBox="0 0 400 400">
+            <defs><path id="ring2" d="M200,200 m-148,0 a148,148 0 1,1 296,0 a148,148 0 1,1 -296,0"/></defs>
+            <circle cx="200" cy="200" r="196" fill="url(#g1)"/>
+            <circle cx="200" cy="200" r="190" fill="none" stroke="#5b4518" stroke-width="7" stroke-dasharray="2.2 2.6"/>
+            <circle cx="200" cy="200" r="176" fill="url(#g2)" stroke="#7a5d22" stroke-width="2"/>
+            <text font-family="Fraunces,Georgia,serif" font-size="19" fill="#5b4518"><textPath href="#ring2" textLength="912" lengthAdjust="spacing">PRESENTED WITH COINS AND AUCTIONS ✦ SINCE 1994 ✦</textPath></text>
+            <text x="200" y="190" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="30" font-style="italic" fill="#5b4518">since</text>
+            <text x="200" y="252" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="72" fill="#5b4518">1994</text>
+            <path d="M120 290 q80 30 160 0" fill="none" stroke="#5b4518" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>The Coinage Act of 1792</span><i>✦</i><span>New Orleans and the tiny O</span><i>✦</i><span>270 million melted dollars</span><i>✦</i><span>A British company on an American coin</span><i>✦</i><span>The broken sword on the Peace dollar</span><i>✦</i><span>1776 to 2026</span><i>✦</i>
+  <span>The Coinage Act of 1792</span><i>✦</i><span>New Orleans and the tiny O</span><i>✦</i><span>270 million melted dollars</span><i>✦</i><span>A British company on an American coin</span><i>✦</i><span>The broken sword on the Peace dollar</span><i>✦</i><span>1776 to 2026</span><i>✦</i>
+</div></div>
+
+<section id="episodes">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><div class="eyebrow">Latest stories</div><h2>Two minutes. <em>One coin.</em> A whole era.</h2></div>
+      <p class="lede">Every short film is built on real coins photographed in hand and a source list you can check. Each one has a full written story to go with it.</p>
+    </div>
+    <div class="reels reveal">
+      <a class="reel" href="/blog/fort-vancouver-centennial-half-dollar/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/fort-vancouver.jpg" alt="Fort Vancouver Centennial half dollar" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Local history</div><h3>A British company on an American coin</h3><div class="len">Short film and full story</div></div></a>
+      <a class="reel" href="/blog/pittman-act-silver-dollar-melting/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/pittman.jpg" alt="1896 Morgan silver dollar" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Mint history</div><h3>Why America melted silver dollars and made them again</h3><div class="len">Short film and full story</div></div></a>
+      <a class="reel" href="/blog/peace-dollar-history-and-symbolism/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/peace.jpg" alt="Peace silver dollar" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Coin history</div><h3>Why the Peace dollar lost its broken sword</h3><div class="len">Short film and full story</div></div></a>
+      <a class="reel" href="/blog/morgan-dollar-o-mint-mark-new-orleans/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/morgan.jpg" alt="Morgan dollar reverse in a holder" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Mint history</div><h3>The tiny O on a Morgan dollar</h3><div class="len">Short film and full story</div></div></a>
+      <a class="reel" href="/blog/silver-dollar-roll-hoards-hidden-gems/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/hoard.jpg" alt="Stack of Morgan silver dollars" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Rare finds</div><h3>When one bag of dollars changed rarity</h3><div class="len">Short film and full story</div></div></a>
+      <a class="reel" href="/blog/walking-liberty-half-dollar-silver-eagle/" target="_blank" rel="noreferrer"><div class="pic"><img src="img/walking.jpg" alt="Walking Liberty half dollar" loading="lazy"><span class="play"></span></div><div class="meta"><div class="tag">Design</div><h3>How Walking Liberty came back</h3><div class="len">Short film and full story</div></div></a>
+    </div>
+    <p class="note">Sample episodes from the stories already in production. Scroll sideways for more.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">What we cover</div><h2>Five ways <em>into</em> a coin.</h2></div></div>
+    <div class="pillars reveal">
+      <div class="pillar"><span class="n">01</span><h3>Coin History</h3><p>The people, events, and laws behind a single coin, told start to finish.</p></div>
+      <div class="pillar"><span class="n">02</span><h3>Mint History</h3><p>Philadelphia, New Orleans, Carson City, San Francisco, Denver, West Point, and the branch mints that closed.</p></div>
+      <div class="pillar"><span class="n">03</span><h3>Rare Facts</h3><p>Odd stories and common myths, checked against the original record.</p></div>
+      <div class="pillar"><span class="n">04</span><h3>The Counter</h3><p>Real questions and estate finds from the counter at Coins and Auctions Since 1994.</p></div>
+      <div class="pillar"><span class="n">05</span><h3>Vault Sessions</h3><p>Long conversations with dealers, graders, and historians. The raw material for our film.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline" id="timeline">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><div class="eyebrow">Interactive timeline</div><h2>2,600 years of money, <em>in one scroll.</em></h2></div>
+      <p class="lede">Each stop on the timeline opens into a full story. The live site adds coin photos, maps, and short films at every point.</p>
+    </div>
+    <div class="tl" id="tl">
+      <div class="bar" id="bar"></div>
+      <div class="ev"><div class="yr">600 BC</div><div><h3>Lydia strikes the first coins</h3><p>In the kingdom of Lydia, in what is now Turkey, lumps of electrum are stamped with a mark. A stamp you could trust turned metal into money.</p><div class="src">Pillar: Coin History</div></div></div>
+      <div class="ev"><div class="yr">1792</div><div><h3>The Coinage Act builds a Mint</h3><p>Congress creates the United States Mint in Philadelphia. Section 19 makes debasing the nation's coins a crime punishable by death.</p><div class="src">Source: Coinage Act of 1792</div></div></div>
+      <div class="ev"><div class="yr">1878</div><div><h3>The Morgan dollar arrives</h3><p>George T. Morgan's silver dollar goes into production after the Bland Allison Act. Branch mints, including New Orleans, add their own small letters.</p><div class="src">Pillar: Mint History</div></div></div>
+      <div class="ev"><div class="yr">1918</div><div><h3>270 million dollars go into the furnace</h3><p>The Pittman Act melts 270,232,722 silver dollars to help Britain during the First World War. Congress then requires the silver to be replaced.</p><div class="src">Source: Pittman Act of 1918</div></div></div>
+      <div class="ev"><div class="yr">1925</div><div><h3>Vancouver gets its own coin</h3><p>The Fort Vancouver Centennial half dollar marks a century since the Hudson's Bay Company post was founded. Our hometown story, and a coin we hold in hand.</p><div class="src">Local story</div></div></div>
+      <div class="ev"><div class="yr">1933</div><div><h3>Gold leaves American pockets</h3><p>An executive order requires most gold coin to be turned in. The 1933 double eagles are struck but never released, which sets up one of the great coin mysteries.</p><div class="src">Source: Executive Order 6102</div></div></div>
+      <div class="ev"><div class="yr">1965</div><div><h3>Silver leaves the change jar</h3><p>The Coinage Act of 1965 ends silver in dimes and quarters. Older coins quietly disappear from circulation as people save them.</p><div class="src">Source: Coinage Act of 1965</div></div></div>
+      <div class="ev"><div class="yr">2026</div><div><h3>Coins with two dates</h3><p>For the nation's 250th, circulating coins carry the dates 1776 and 2026. Five new quarters drop Washington from the front for the first time since 1930.</p><div class="src">Source: U.S. Mint semiquincentennial program</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="facts">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><div class="eyebrow">Rare facts</div><h2>Tap a card. <em>Check the record.</em></h2></div>
+      <p class="lede">Each rare fact becomes a short reel and a written note with its source.</p>
+    </div>
+    <div class="facts reveal">
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1804 dollar</span><h3>The 1804 dollar was not made in 1804.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>The famous examples were first struck in 1834 for diplomatic gift sets, using the old date. It is still called the King of American Coins.</p><span class="src">Rare Facts</span></div></div></button>
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1943 cent</span><h3>In 1943 the penny was made of steel.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>Copper went to the war effort, so cents were struck in zinc coated steel. A few bronze cents slipped through by mistake and became famous rarities.</p><span class="src">Rare Facts</span></div></div></button>
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1913 nickel</span><h3>Only five 1913 Liberty nickels are known.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>The Mint never officially made them. They surfaced years later, and how they were struck is still debated.</p><span class="src">Rare Facts</span></div></div></button>
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1933 double eagle</span><h3>One $20 coin sold for almost $19 million.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>The only 1933 double eagle legal to own sold at Sotheby's in June 2021 for $18,872,250, a record for a single coin.</p><span class="src">Rare Facts</span></div></div></button>
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1792</span><h3>Cheating on a coin could cost your life.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>Section 19 of the Coinage Act set death as the penalty for Mint officers who debased or embezzled the metal.</p><span class="src">Coinage Act of 1792</span></div></div></button>
+      <button class="fact" type="button"><div class="in"><div class="s f"><span class="k">1964 half</span><h3>Kennedy's coin came out in weeks.</h3><span class="hint">Tap to flip</span></div><div class="s b"><span class="k">The record</span><p>Congress approved the Kennedy half dollar about a month after the assassination. The 1964 coins were 90 percent silver, and people saved them fast.</p><span class="src">Coin History</span></div></div></button>
+    </div>
+  </div>
+</section>
+
+<section id="vault" style="padding-top:0">
+  <div class="wrap vault">
+    <div class="reveal">
+      <div class="eyebrow">Vault Sessions</div>
+      <h2>The people who <em>hold</em> the history.</h2>
+      <p class="lede" style="margin-top:20px">Long form interviews filmed at the counter, at coin shows, and in archives. Every session becomes a full episode, a podcast, and a dozen short clips. Every guest signs a release, so the footage can travel to film and streaming later.</p>
+      <ul>
+        <li>Dealers with decades behind the counter</li>
+        <li>Graders, conservators, and authenticators</li>
+        <li>Historians, curators, and former Mint staff</li>
+        <li>Families with a collection and a story</li>
+      </ul>
+    </div>
+    <div class="vault-card reveal">
+      <div class="screen"><span class="rec">IN DEVELOPMENT</span><h3>Since 1994: Stories from the Counter</h3></div>
+      <div class="rows">
+        <div class="row"><span>Episode format</span><span>30 to 60 min</span></div>
+        <div class="row"><span>Short clips per session</span><span>10 to 15</span></div>
+        <div class="row"><span>Also released as</span><span>Podcast</span></div>
+        <div class="row"><span>First filming</span><span>Coins and Auctions, Vancouver</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doc" id="film">
+  <div class="wrap">
+    <div class="eyebrow reveal">The long road</div>
+    <h2 class="reveal">Building toward a feature <em>documentary.</em></h2>
+    <p class="lede reveal">Streaming services find documentaries through festivals and people they trust. So we build the proof in order: a library of stories, an audience that shows up, real voices on camera, then a short film that earns the room.</p>
+    <div class="road reveal">
+      <div class="step now"><div class="o">1</div><h3>Library</h3><p>Daily short films and stories. Happening now.</p></div>
+      <div class="step"><div class="o">2</div><h3>Audience</h3><p>Email list, YouTube, and social following.</p></div>
+      <div class="step"><div class="o">3</div><h3>Voices</h3><p>Vault Sessions with signed releases.</p></div>
+      <div class="step"><div class="o">4</div><h3>Short film</h3><p>20 to 40 minutes on one flagship story.</p></div>
+      <div class="step"><div class="o">5</div><h3>Festivals</h3><p>Premiere, sizzle reel, sales agent.</p></div>
+      <div class="step"><div class="o">6</div><h3>Streaming</h3><p>A series built on everything before it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="partner">
+  <div class="wrap">
+    <div class="partner reveal">
+      <div class="l">
+        <div class="eyebrow">Found a coin in a drawer?</div>
+        <h2>Talk to the people who have done this <em>since 1994.</em></h2>
+        <p class="lede">Coins and Auctions Since 1994 buys, sells, and auctions coins in Vancouver, Washington. Bring in an inherited collection, ask a question, or consign for an upcoming auction.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="https://www.liveauctioneers.com/auctioneer/6607/coins-and-auctions-since-1994/?utm_source=coinhistorytalk&amp;utm_medium=referral&amp;utm_campaign=partner_card" target="_blank" rel="sponsored noopener">Visit Coins and Auctions</a>
+          <a class="btn btn-line" href="https://www.liveauctioneers.com/auctioneer/6607/coins-and-auctions-since-1994/?utm_source=coinhistorytalk&amp;utm_medium=referral&amp;utm_campaign=auctions" target="_blank" rel="sponsored noopener">See past auctions</a>
+        </div>
+        <p class="disclose">Paid link. Coin History Talk earns a referral fee when you do business with Coins and Auctions Since 1994. Our history stories are written independently.</p>
+      </div>
+      <div class="r"><div class="badge"><b>133</b><span>past auction catalogs on LiveAuctioneers</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="news" style="padding-top:0">
+  <div class="wrap reveal">
+    <div class="eyebrow">The Mint Mark</div>
+    <h2 style="margin-top:14px">One great coin story, <em>every week.</em></h2>
+    <form id="nl" novalidate>
+      <input type="email" placeholder="Your email" aria-label="Email address" required>
+      <button class="btn btn-gold" type="submit">Join the list</button>
+    </form>
+    <p class="msg" id="msg" role="status"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--paper)">Coin History Talk.</b> The story behind the coin. Presented with Coins and Auctions Since 1994, 12014 SE Mill Plain Blvd, Vancouver, WA. Nothing here is investment advice or an appraisal.</p>
+    <p>Concept workup by Fused Distribution, November 2026. Sample episodes use stories already in production.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var coin=document.querySelector('.coin');
+  if(coin){var n=28,f=coin.querySelector('.front');for(var i=0;i<n;i++){var d=document.createElement('div');d.className='slice';var z=(i/(n-1)-.5);d.style.transform='translateZ(calc(var(--t) * '+z.toFixed(3)+'))';var l=55+Math.round(25*Math.cos(z*Math.PI));d.style.filter='brightness('+l+'%)';coin.insertBefore(d,f);}}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');}})},{threshold:.15});
+  document.querySelectorAll('.reveal,.ev').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('.fact').forEach(function(f){f.addEventListener('click',function(){f.classList.toggle('flip')})});
+  var tl=document.getElementById('tl'),bar=document.getElementById('bar');
+  function prog(){var r=tl.getBoundingClientRect(),vh=window.innerHeight;var p=Math.min(1,Math.max(0,(vh*.6-r.top)/r.height));bar.style.height=(p*100)+'%';}
+  window.addEventListener('scroll',prog,{passive:true});window.addEventListener('resize',prog);prog();
+  document.getElementById('nl').addEventListener('submit',function(e){e.preventDefault();document.getElementById('msg').textContent='Thanks. Signups open when the site launches.';});
+})();
+</script>
+</body>
+</html>
