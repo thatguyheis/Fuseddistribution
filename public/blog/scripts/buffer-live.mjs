@@ -189,12 +189,8 @@ async function getPosts(token, statuses) {
 }
 async function getPostsByIds(token, ids) {
   return Promise.all(ids.map(async id => {
-    try {
-      const data = await graphql(token, postByIdQuery, {input: {id}});
-      return data.post ? {id, found: true, post: data.post} : {id, found: false};
-    } catch (error) {
-      return {id, found: false, error: error.message};
-    }
+    const data = await graphql(token, postByIdQuery, {input: {id}});
+    return data.post ? {id, found: true, post: data.post} : {id, found: false};
   }));
 }
 let historyEvidence = null;
