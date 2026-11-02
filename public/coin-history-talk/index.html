@@ -56,6 +56,10 @@ nav .btn{padding:10px 16px;font-size:13px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .partner-mini{margin-top:36px;display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mute)}
 .partner-mini b{color:var(--paper);font-weight:600}
+.partner-mini{flex-wrap:wrap}
+.partner-logo{display:inline-flex;background:#fff;border-radius:12px;padding:6px 12px;box-shadow:0 0 0 1px rgba(201,162,75,.35),0 8px 24px rgba(0,0,0,.35);transition:transform .2s}
+.partner-logo:hover{transform:translateY(-2px)}
+.partner-logo img{display:block;height:56px;width:auto}
 .partner-mini .dot{width:8px;height:8px;border-radius:50%;background:var(--patina);box-shadow:0 0 0 4px rgba(95,143,124,.2)}
 .stage{perspective:1400px;display:grid;place-items:center;aspect-ratio:1}
 .coin{width:min(420px,78vw);aspect-ratio:1;position:relative;transform-style:preserve-3d;animation:spin 16s linear infinite}
@@ -228,7 +232,7 @@ footer p{max-width:60ch}
         <a class="btn btn-gold" href="#episodes">Watch the latest stories</a>
         <a class="btn btn-line" href="#film">Follow the documentary</a>
       </div>
-      <div class="partner-mini"><span class="dot"></span><span>Presented with <b>Coins and Auctions Since 1994</b>, Vancouver, Washington</span></div>
+      <div class="partner-mini"><span>Presented with</span><a class="partner-logo" href="#partner"><img src="img/coins-and-auctions-logo.png" width="278" height="126" alt="Coins and Auctions Since 1994"></a><span>Vancouver, Washington</span></div>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="coin">
@@ -244,8 +248,10 @@ footer p{max-width:60ch}
             <circle cx="200" cy="200" r="176" fill="url(#g2)" stroke="#7a5d22" stroke-width="2"/>
             <circle cx="200" cy="200" r="124" fill="none" stroke="#7a5d22" stroke-width="1.5"/>
             <text font-family="Fraunces,Georgia,serif" font-size="22" fill="#5b4518"><textPath href="#ring" startOffset="0" textLength="912" lengthAdjust="spacing">COIN HISTORY TALK ✦ THE STORY BEHIND THE COIN ✦</textPath></text>
-            <text x="200" y="222" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="86" font-weight="500" fill="#5b4518">CH</text>
-            <text x="200" y="262" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="16" letter-spacing="6" fill="#5b4518">TALK</text>
+            <text x="200" y="192" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="50" font-weight="500" fill="#5b4518">Coin</text>
+            <text x="200" y="242" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="50" font-weight="500" fill="#5b4518">History</text>
+            <path d="M150 260 h100" stroke="#5b4518" stroke-width="1.5"/>
+            <text x="203" y="288" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="20" letter-spacing="8" fill="#5b4518">TALK</text>
             <g fill="#5b4518"><circle cx="200" cy="112" r="3"/><circle cx="170" cy="118" r="2.4"/><circle cx="230" cy="118" r="2.4"/><circle cx="145" cy="132" r="2"/><circle cx="255" cy="132" r="2"/></g>
           </svg>
           <div class="shine"></div>
@@ -257,9 +263,11 @@ footer p{max-width:60ch}
             <circle cx="200" cy="200" r="190" fill="none" stroke="#5b4518" stroke-width="7" stroke-dasharray="2.2 2.6"/>
             <circle cx="200" cy="200" r="176" fill="url(#g2)" stroke="#7a5d22" stroke-width="2"/>
             <text font-family="Fraunces,Georgia,serif" font-size="19" fill="#5b4518"><textPath href="#ring2" textLength="912" lengthAdjust="spacing">PRESENTED WITH COINS AND AUCTIONS ✦ SINCE 1994 ✦</textPath></text>
-            <text x="200" y="190" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="30" font-style="italic" fill="#5b4518">since</text>
-            <text x="200" y="252" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="72" fill="#5b4518">1994</text>
-            <path d="M120 290 q80 30 160 0" fill="none" stroke="#5b4518" stroke-width="2"/>
+            <circle cx="200" cy="200" r="124" fill="none" stroke="#7a5d22" stroke-width="1.5"/>
+            <rect x="82" y="140" width="236" height="120" rx="20" fill="#5b4518" opacity=".35" transform="translate(0 5)"/>
+            <rect x="82" y="140" width="236" height="120" rx="20" fill="#fff" stroke="#7a5d22" stroke-width="3"/>
+            <image href="img/coins-and-auctions-logo.png" x="94" y="148" width="212" height="104" preserveAspectRatio="xMidYMid meet"/>
+            <path d="M130 292 q70 26 140 0" fill="none" stroke="#5b4518" stroke-width="2"/>
           </svg>
         </div>
       </div>
