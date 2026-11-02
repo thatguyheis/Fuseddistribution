@@ -4,16 +4,17 @@
   "pass": true,
   "blockers": [],
   "mode": "codex-editorial",
-  "reviewed_at": "2026-11-02T17:51:20.254Z",
+  "reviewed_at": "2026-11-02T19:17:56.920Z",
   "review_notes": [
     "Reviewed the full article, source record, reel narration, reel data, social copy, and final landscape and square graphics at full size and phone size. The article gives a repeatable channel-by-channel weekly worksheet and differs from the prior overview.",
     "SCORE and SBA sources support tracking acquisition cost by channel, comparing cost with results, and using consistent attribution. Made-up $240 / 6 / $40 figures are clearly labeled fictional; no universal target or business outcome is asserted.",
     "The custom receipt-to-customer-count graphic is topic specific, legible at phone size, consistent with the example, and has no clipping. All required local QA gates passed.",
-    "Reel structure was corrected so the hook is included in the parsed narration. The article includes a playable reel embed pointing to the planned canonical MP4 route; deployment remains gated on successful render, hosting, and public verification."
+    "Reel structure was corrected so the hook is included in the parsed narration. The article embeds the hosted reel through a same-origin route that satisfies the site Content Security Policy.",
+    "Recomputed SHA-256 for every approved renderer and deployment input after the playable embed correction. The same-origin MP4 route returns HTTP 200 video/mp4 and matches the hosted derivative byte count."
   ],
   "artifactSha256": {
     "verified.md": "08e440e9b6b8f8ad3497316846d70dbcb4e5ade8c3f1b89d615276c59aca5c0c",
-    "index.html": "735011cc229cbbfcb9de542b28ec2f35846f5b07c516a0b6a5603921923b9ceb",
+    "index.html": "1604ac9034b42193d6a212e7dc3d014950bc9ebc49db69e8aa8db70315e51811",
     "meta.json": "1cba77e12b55319f21f30e333d46bab46fd110eb520aea5dce4bad6ed1625499",
     "research.json": "7ac85899c1c8922535bd1f719b6b0715b62e11efb35047676817048540adf09a",
     "hero.jpg": "e59f101dd85fb39b148390a1eb264450c7f2766fd4ec1bc142bcbc7415ab2b72",
