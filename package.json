@@ -62,10 +62,15 @@
     "admin:dev": "wrangler dev --local --port 8787"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@cloudflare/vitest-pool-workers": "^0.23.0",
     "@types/node": "^25.9.3",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.5",
     "vitest": "^4.1.9",
     "wrangler": "^4.125.0"
+  },
+  "overrides": {
+    "undici": "^7.30.1",
+    "zod": "^4.6.6",
+    "sharp": "$sharp"
   }
 }
