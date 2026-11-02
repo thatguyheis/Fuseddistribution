@@ -161,6 +161,12 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   // varies by sentence, so production timing is rebuilt from the actual audio
   // files before captions, media, or Remotion see the timeline.
   const audioDurations = collectAudioDurations(videoDir, slug, script.segments.length);
+  const editorialQa = JSON.parse(readFileSync(join(videoDir, '..', 'public', 'blog', slug, 'qa.json'), 'utf8'));
+  const hookAudioSeconds = Number(audioDurations[0]);
+  if (editorialQa.attentionOptimizationVersion === 1
+    && (!Number.isFinite(hookAudioSeconds) || hookAudioSeconds > 3.5)) {
+    throw new Error(`Measured hook audio is ${Number.isFinite(hookAudioSeconds) ? hookAudioSeconds.toFixed(2) : 'unknown'}s; shorten it to 3.5s or less before encoding`);
+  }
   const retimed = retimeScriptToAudio(script, audioDurations);
   script = retimed.script;
   writeFileSync(scriptPath, `${JSON.stringify(script, null, 2)}\n`);

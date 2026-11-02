@@ -6,6 +6,13 @@ Current visual standard: `docs/REEL-ENRICHMENT-SOP.md` (October 13). This supers
 
 Tech education expansion: `docs/TECH-EDUCATION-SOP.md`. Use concrete tool lessons, the imported hook strategy, and verified matching demonstrations.
 
+For attention-reviewed business reels, measure the generated opening narration
+before Remotion encoding. A duration estimate in `attention-review.json` is not
+audio evidence. Stop before encoding when the actual hook exceeds 3.5 seconds,
+shorten the narration, refresh the editorial source hashes, regenerate that
+audio, and resume. Keep the release gate's independent audio check as the final
+distribution guard.
+
 Current coin history standard (October 14, 2026): `docs/COIN-HISTORY-SOP.md`. Use the Fort Vancouver v2 format: substantive sourced history, owner coin evidence plus real context photographs and labeled AI imagery, selected concept and approved transcript before generation, flexible narration sections, and 720p final delivery strictly below 50 MB. This overrides generic six-scene and mandatory stock-video quotas for coin history. Preserve existing release gates.
 
 Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
@@ -790,6 +797,15 @@ cd video && set -a && source .env && set +a && node scripts/render.mjs --post=<s
 ```
 
 Output: `video/out/<slug>/<slug>.mp4`
+
+If stock requests return no asset, use only the topic-matched blog visuals or
+an approved asset from `video/local/stock-media`; keep a hash and source record
+in the media manifest. Never fill a missing scene with an unrelated default.
+If an `Html5Video` segment stalls during a scheduled render, let
+`scripts/render-missing-reels.sh` make its single log-matched still-image
+recovery attempt. The retry must reuse a local visual, preserve the original
+clip and script, and render a new MP4. Inspect the recovered MP4 and bind visual
+QA to its new hash before release.
 
 Before creating a posting pack, run the release gate. It checks the rendered
 duration, music rights, normalized mix metadata, measured narration timing, and

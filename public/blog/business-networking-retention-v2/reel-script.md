@@ -6,7 +6,7 @@ engagement-policy: 1
 ---
 ## HOOK
 **Duration:** 4s
-Narration: Stop asking friends for leads. Use this ask.
+Narration: Stop asking friends for leads. Try this.
 
 ---
 ## OVERLAY: Make your ask easy to repeat

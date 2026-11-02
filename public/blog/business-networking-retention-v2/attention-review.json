@@ -2,18 +2,30 @@
   "version": 1,
   "pass": true,
   "hook": {
-    "spokenText": "Stop asking friends for leads. Use this ask.",
-    "spokenSeconds": 3.0,
+    "spokenText": "Stop asking friends for leads. Try this.",
+    "spokenSeconds": 3.2,
     "startsAtSeconds": 0,
     "specificViewerProblemOrBenefit": true,
     "visibleWithoutSound": true,
     "visual": "A large first-frame headline sits above a three-step flow graphic: who you help, the problem you solve, and the easy introduction."
   },
   "payoffBeats": [
-    {"scriptHeading": "## OVERLAY: Make your ask easy to repeat", "paysOffHook": true},
-    {"scriptHeading": "## OVERLAY: Start with people who know your work", "paysOffHook": true},
-    {"scriptHeading": "## OVERLAY: Offer help before you ask", "paysOffHook": true},
-    {"scriptHeading": "## OVERLAY: Meet people through shared interests", "paysOffHook": true}
+    {
+      "scriptHeading": "## OVERLAY: Make your ask easy to repeat",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Start with people who know your work",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Offer help before you ask",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Meet people through shared interests",
+      "paysOffHook": true
+    }
   ],
   "cta": {
     "onScreenText": "Reconnect or try a local group?",
@@ -24,7 +36,12 @@
   },
   "hypothesis": "A concrete lead-request hook with a short introduction formula should hold more viewers through the early payoff than the prior broad networking promise.",
   "metrics": {
-    "platformMetrics": ["average-watch-time", "viewed-vs-swiped-away", "audience-retention-dips", "comments-per-reach"],
+    "platformMetrics": [
+      "average-watch-time",
+      "viewed-vs-swiped-away",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
     "comparison": "Compare each platform separately with the prior networking reel after data matures. Record sample size and do not infer a winner from views alone."
   }
 }

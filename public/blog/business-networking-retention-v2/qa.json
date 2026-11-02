@@ -11,7 +11,8 @@
     "Unpublished comparison-only reel package based on the reviewed networking article and research.",
     "New opening states the practical problem immediately and pays off with a repeatable three-part introduction request.",
     "Two to four payoff beats and one comment action are mapped in attention-review.json.",
-    "Custom 9:16 flow graphic is conceptual and contains no measured values."
+    "Custom 9:16 flow graphic is conceptual and contains no measured values.",
+    "Measured narration revealed the original opening was 3.64 seconds; shortened it and added a pre-encode duration gate."
   ],
   "artifactSha256": {
     "verified.md": "e4c291566b470187067ee816d8b2e231bb626516beaacf33b2c3706377d8ddf5",
@@ -20,9 +21,9 @@
     "research.json": "117777382961184571733c2b5616f8e27b7f3a825dd9d489c6cf6d1a8e23bf15",
     "hero.jpg": "424aecb1978e8576d8c3330a037b70bac0a6384a590acb00b6a9871fd6815d37",
     "photo-post.jpg": "424aecb1978e8576d8c3330a037b70bac0a6384a590acb00b6a9871fd6815d37",
-    "reel-script.md": "43e870b4d7aae3d86bfacc664b762cc25c819d45e7cb09325c1b6ee03efeb208",
+    "reel-script.md": "020f71223f83a95fdd3926d20f70f0925b1f382181e43cd04d9bcf9a01602a90",
     "reel-data.md": "504b22b6c8804c7e4bbe3a188b902b82dd2e4a408dcc15e3ba83645a45ef4077",
     "social-copy.json": "d565d6002db18c35398fdd3dc127257690a8c85da725655b839ff6346a22f2be",
-    "attention-review.json": "c34d110b36c8a8b975d343414ff67bf5f6abdffb8eec9646aaa4b5204af8c38e"
+    "attention-review.json": "0f6ebc10433132bf87c176014a1eddc32890f055a38d034b681f0d4c762aaed9"
   }
 }
