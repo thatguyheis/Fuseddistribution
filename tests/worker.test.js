@@ -196,6 +196,54 @@ describe("reel media routing", () => {
     expect(ranged.headers.get("content-range")).toBe("bytes 2-4/6");
     expect([...new Uint8Array(await ranged.arrayBuffer())]).toEqual([2, 3, 4]);
   });
+
+  describe("static asset fallback", () => {
+    const path = "/reels/asset-reel/asset-reel.mp4";
+    const bytes = new Uint8Array([10, 11, 12, 13, 14, 15, 16, 17]);
+
+    afterEach(() => vi.restoreAllMocks());
+
+    function mockAsset() {
+      const original = env.ASSETS.fetch.bind(env.ASSETS);
+      return vi.spyOn(env.ASSETS, "fetch").mockImplementation(async (input, init) => {
+        const request = new Request(input, init);
+        if (new URL(request.url).pathname !== path) return original(request);
+        return new Response(request.method === "HEAD" ? null : bytes, {
+          headers: { "Content-Type": "video/mp4", "Content-Length": String(bytes.length) },
+        });
+      });
+    }
+
+    it("returns 206 partial content for Range requests", async () => {
+      mockAsset();
+      const ranged = await SELF.fetch(`${ORIGIN}${path}`, { headers: { Range: "bytes=0-1" } });
+      expect(ranged.status).toBe(206);
+      expect(ranged.headers.get("content-range")).toBe("bytes 0-1/8");
+      expect(ranged.headers.get("content-length")).toBe("2");
+      expect(ranged.headers.get("accept-ranges")).toBe("bytes");
+      expect(ranged.headers.get("content-type")).toBe("video/mp4");
+      expect([...new Uint8Array(await ranged.arrayBuffer())]).toEqual([10, 11]);
+
+      const suffix = await SELF.fetch(`${ORIGIN}${path}`, { headers: { Range: "bytes=-3" } });
+      expect(suffix.status).toBe(206);
+      expect([...new Uint8Array(await suffix.arrayBuffer())]).toEqual([15, 16, 17]);
+    });
+
+    it("returns 416 for unsatisfiable ranges", async () => {
+      mockAsset();
+      const bad = await SELF.fetch(`${ORIGIN}${path}`, { headers: { Range: "bytes=50-60" } });
+      expect(bad.status).toBe(416);
+      expect(bad.headers.get("content-range")).toBe("bytes */8");
+    });
+
+    it("advertises byte ranges on full responses", async () => {
+      mockAsset();
+      const full = await SELF.fetch(`${ORIGIN}${path}`);
+      expect(full.status).toBe(200);
+      expect(full.headers.get("accept-ranges")).toBe("bytes");
+      expect((await full.arrayBuffer()).byteLength).toBe(8);
+    });
+  });
 });
 
 describe("GET /api/spot", () => {

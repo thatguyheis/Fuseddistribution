@@ -545,13 +545,17 @@ async function handleReelMediaRequest(request, env, url) {
   const media = await env.REELS_KV.get(key, "arrayBuffer");
   if (!media) return null;
 
+  return rangedMediaResponse(request, media, "reels-kv");
+}
+
+function rangedMediaResponse(request, media, source) {
   const size = media.byteLength;
   const headers = new Headers({
     "Accept-Ranges": "bytes",
     "Cache-Control": MP4_CACHE_CONTROL,
     "Content-Type": "video/mp4",
     "Content-Length": String(size),
-    "X-Fused-Media-Source": "reels-kv",
+    "X-Fused-Media-Source": source,
   });
 
   const range = parseByteRange(request.headers.get("Range"), size);
@@ -562,7 +566,7 @@ async function handleReelMediaRequest(request, env, url) {
         "Accept-Ranges": "bytes",
         "Content-Range": `bytes */${size}`,
         "Cache-Control": MP4_CACHE_CONTROL,
-        "X-Fused-Media-Source": "reels-kv",
+        "X-Fused-Media-Source": source,
       },
     });
   }
@@ -575,6 +579,19 @@ async function handleReelMediaRequest(request, env, url) {
   }
 
   return new Response(request.method === "HEAD" ? null : media, { headers });
+}
+
+// Workers Static Assets answers Range requests with a full 200 body. Safari
+// and iOS refuse to play <video> without 206 partial responses, so reel MP4s
+// served from static assets are sliced here.
+async function rangeStaticReelAsset(request, url, assetResponse) {
+  if (!isReelMediaPath(url.pathname) || assetResponse.status !== 200) return assetResponse;
+  if (!request.headers.has("Range") || request.method !== "GET") {
+    const passthrough = new Response(assetResponse.body, assetResponse);
+    passthrough.headers.set("Accept-Ranges", "bytes");
+    return passthrough;
+  }
+  return rangedMediaResponse(request, await assetResponse.arrayBuffer(), "assets");
 }
 
 async function handleApiRequest(request, env, url) {
@@ -656,7 +673,7 @@ export default {
         return withSecurityHeaders(unregisteredBlogResponse, null);
       }
 
-      const assetResponse = await env.ASSETS.fetch(request);
+      const assetResponse = await rangeStaticReelAsset(request, url, await env.ASSETS.fetch(request));
       if (assetResponse.status === 404) {
         try {
           const notFound = await env.ASSETS.fetch(
