@@ -10,12 +10,20 @@
     <string>/Users/nick/projects/fuseddistribution/scripts/render-missing-reels.sh</string>
   </array>
   <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>11</integer>
-    <key>Minute</key>
-    <integer>0</integer>
-  </dict>
+  <array>
+    <dict>
+      <key>Hour</key>
+      <integer>1</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+    <dict>
+      <key>Hour</key>
+      <integer>4</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+  </array>
   <key>RunAtLoad</key>
   <false/>
   <key>ThrottleInterval</key>
@@ -33,17 +41,17 @@
     <key>PATH</key>
     <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/Users/nick/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>MAX_RENDERS_PER_RUN</key>
-    <string>4</string>
+    <string>2</string>
     <key>MAX_RETRIES</key>
     <string>2</string>
     <key>RENDER_TIMEOUT_SECONDS</key>
-    <string>18000</string>
+    <string>5400</string>
     <key>CHATTERBOX_BATCH_TIMEOUT_MS</key>
-    <string>2700000</string>
+    <string>1800000</string>
     <key>REEL_VOICE</key>
     <string>chatterbox</string>
     <key>GENERATIVE_MEDIA_ENABLED</key>
-    <string>1</string>
+    <string>0</string>
     <key>GENERATIVE_MEDIA_MODE</key>
     <string>production</string>
     <key>GENERATIVE_MEDIA_PRODUCTION_APPROVED</key>
@@ -53,7 +61,7 @@
     <key>GENERATIVE_MEDIA_MAX_SEGMENTS</key>
     <string>2</string>
     <key>GENERATIVE_MEDIA_TIMEOUT_MS</key>
-    <string>14400000</string>
+    <string>240000</string>
   </dict>
 </dict>
 </plist>

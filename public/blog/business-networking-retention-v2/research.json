@@ -1,0 +1,25 @@
+{
+  "topic": "Business networking for small businesses",
+  "researchedAt": "2026-10-30",
+  "sources": [
+    {
+      "url": "https://business.linkedin.com/small-business/resources/2026-small-business-study",
+      "publisher": "LinkedIn and Ipsos",
+      "title": "2026 Small Business Study",
+      "claim": "Among 300 U.S. small business decision makers at companies with 2 to 50 employees, 41% said referrals drove the most lead volume.",
+      "scopeNote": "Survey result, not a universal or causal estimate."
+    },
+    {
+      "url": "https://www.sba.gov/local-assistance/",
+      "publisher": "U.S. Small Business Administration",
+      "title": "Local Assistance",
+      "claim": "The SBA connects business owners to local counseling and partner organizations."
+    },
+    {
+      "url": "https://www.score.org/articles/11-ways-find-your-first-customers/",
+      "publisher": "SCORE",
+      "title": "11 Ways to Find Your First Customers",
+      "claim": "Existing contacts, referral requests, local groups, and events can support customer discovery."
+    }
+  ]
+}

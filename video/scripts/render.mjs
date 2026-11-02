@@ -93,9 +93,10 @@ function summarizeMedia(media) {
 async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chatterbox') {
   assertWhisperRuntime(process.env.WHISPER_RUNTIME_CONFIG);
   // Production defaults apply to manual renders too; explicit incident overrides win.
-  process.env.GENERATIVE_MEDIA_ENABLED ??= '1';
+  process.env.GENERATIVE_MEDIA_ENABLED ??= '0';
   process.env.GENERATIVE_MEDIA_MODE ??= 'production';
   process.env.GENERATIVE_MEDIA_PRODUCTION_APPROVED ??= '1';
+  process.env.GENERATIVE_MEDIA_TIMEOUT_MS ??= '240000';
   const approvedSourceHashes = assertApprovedSources(join(videoDir, '..'), slug);
   const openingHero = stageOpeningHero(join(videoDir, '..'), slug, approvedSourceHashes['hero.jpg']);
   const startedAt = performance.now();

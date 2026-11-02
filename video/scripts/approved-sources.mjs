@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { attentionReviewErrors } from './attention-review.mjs';
 const required = ['verified.md','index.html','meta.json','research.json','hero.jpg','photo-post.jpg','reel-script.md','reel-data.md','social-copy.json'];
 export function assertApprovedSources(root, slug) {
   if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('Invalid reel slug');
@@ -17,6 +18,19 @@ export function assertApprovedSources(root, slug) {
   for (const name of artifacts) {
     const digest = createHash('sha256').update(readFileSync(join(directory,name))).digest('hex');
     if (qa.artifactSha256?.[name] !== digest) throw new Error(`Approved source changed: ${slug}/${name}; editorial review required`);
+  }
+  if (qa.attentionOptimizationVersion === 1) {
+    const attentionPath = join(directory, 'attention-review.json');
+    if (!existsSync(attentionPath)) throw new Error(`Missing attention review: ${slug}/attention-review.json`);
+    const attentionBytes = readFileSync(attentionPath);
+    const attentionHash = createHash('sha256').update(attentionBytes).digest('hex');
+    if (qa.artifactSha256?.['attention-review.json'] !== attentionHash) {
+      throw new Error(`Approved attention review changed: ${slug}/attention-review.json`);
+    }
+    const attention = JSON.parse(attentionBytes);
+    const scriptText = readFileSync(join(directory, 'reel-script.md'), 'utf8');
+    const errors = attentionReviewErrors(attention, scriptText);
+    if (errors.length) throw new Error(`Attention review failed for ${slug}: ${errors.join('; ')}`);
   }
   if (automatedCoinApproval) {
     const work = join(root, 'content', 'coin-history', slug);

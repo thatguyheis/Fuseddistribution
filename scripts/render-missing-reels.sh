@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Render registered blog reels at 11 AM without consuming Claude quota.
+# Render registered blog reels in two-reel overnight batches without consuming Claude quota.
 set -u
 
 PROJECT_DIR="/Users/nick/projects/fuseddistribution"
@@ -7,7 +7,7 @@ VIDEO_DIR="$PROJECT_DIR/video"
 BLOG_DIR="$PROJECT_DIR/public/blog"
 LOG_FILE="${REEL_LOG_FILE:-/tmp/fuseddistribution-render-missing-reels.log}"
 MAX_RETRIES="${MAX_RETRIES:-1}"
-MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-4}"
+MAX_RENDERS_PER_RUN="${MAX_RENDERS_PER_RUN:-2}"
 RENDER_TIMEOUT_SECONDS="${RENDER_TIMEOUT_SECONDS:-18000}"
 export CHATTERBOX_BATCH_TIMEOUT_MS="${CHATTERBOX_BATCH_TIMEOUT_MS:-2700000}"
 VOICE="${REEL_VOICE:-chatterbox}"
@@ -17,12 +17,12 @@ GLOBAL_RENDER_LOCK="/tmp/fused-remotion-render.lock"
 # The media adapter falls back to the normal local/stock path if local inference
 # is unavailable, times out, or fails validation. Every value remains
 # environment-overridable for incident response and reviewed experiments.
-export GENERATIVE_MEDIA_ENABLED="${GENERATIVE_MEDIA_ENABLED:-1}"
+export GENERATIVE_MEDIA_ENABLED="${GENERATIVE_MEDIA_ENABLED:-0}"
 export GENERATIVE_MEDIA_MODE="${GENERATIVE_MEDIA_MODE:-production}"
 export GENERATIVE_MEDIA_PRODUCTION_APPROVED="${GENERATIVE_MEDIA_PRODUCTION_APPROVED:-1}"
 export GENERATIVE_MEDIA_MAX_SEGMENTS="${GENERATIVE_MEDIA_MAX_SEGMENTS:-2}"
 export GENERATIVE_MEDIA_STEPS="${GENERATIVE_MEDIA_STEPS:-20}"
-export GENERATIVE_MEDIA_TIMEOUT_MS="${GENERATIVE_MEDIA_TIMEOUT_MS:-14400000}"
+export GENERATIVE_MEDIA_TIMEOUT_MS="${GENERATIVE_MEDIA_TIMEOUT_MS:-240000}"
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nick/.local/bin"
 

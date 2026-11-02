@@ -59,6 +59,35 @@ def load_state():
     return {'version': 1, 'items': {}}
 
 
+def reconcile_overnight_render_results(state):
+    changed = False
+    for slug, record in state.get('items', {}).items():
+        if not record.get('blogPublished') or record.get('releaseReady'):
+            continue
+        qa_path = ROOT / 'video/out' / slug / 'release-qa.json'
+        if not qa_path.exists():
+            continue
+        try:
+            release = json.loads(qa_path.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        if release.get('readyForPosting') is True:
+            record.update(
+                status='release_ready',
+                releaseReady=True,
+                releaseReadyAt=now().isoformat(),
+                releaseQa=release,
+                completedAt=now().isoformat(),
+            )
+            record.pop('renderQueued', None)
+            record.pop('renderQueuedAt', None)
+            log(f'PASS: {slug} overnight reel release QA reconciled from {qa_path}')
+            changed = True
+    if changed:
+        save(state)
+    return changed
+
+
 def transcript_verified(slug):
     work = ROOT / 'content/coin-history' / slug
     transcript = work / 'narration-v1-approved.txt'
@@ -231,7 +260,7 @@ def choose(items, state):
     for item in items:
         slug = item['slug']
         record = state['items'].setdefault(slug, {'status': 'pending', 'attempts': 0})
-        if record.get('releaseReady'):
+        if record.get('releaseReady') or record.get('renderQueued'):
             continue
         if at_cap and not record.get('blogPublished'):
             continue
@@ -262,6 +291,7 @@ def main():
         queue = json.loads(QUEUE.read_text())
         state = load_state()
         state.setdefault('items', {})
+        reconcile_overnight_render_results(state)
         refresh_operating_reports(queue, state)
         item, record = choose(queue['posts'], state)
         if not item:
@@ -367,20 +397,12 @@ def main():
                 finish_stage(state, record, stage_started, 'passed' if check.returncode == 0 else 'failed')
                 if check.returncode:
                     raise RuntimeError('coin image relevance double check did not pass')
-            stage_started = begin_stage(state, record, 'reel_render_and_release_qa')
-            render_env = dict(env, REEL_SLUG=slug, MAX_RENDERS_PER_RUN='1', REEL_GIT_COMMIT='0', TTS_AUTO_RECOVERY='1')
-            with LOG.open('a') as stream:
-                result = subprocess.run(['/bin/zsh', 'scripts/render-missing-reels.sh'], cwd=ROOT,
-                                        env=render_env, stdout=stream, stderr=subprocess.STDOUT,
-                                        timeout=5 * 60 * 60, check=False)
-            qa_path = ROOT / 'video/out' / slug / 'release-qa.json'
-            release = json.loads(qa_path.read_text()) if qa_path.exists() else {}
-            finish_stage(state, record, stage_started, 'passed' if result.returncode == 0 and release.get('readyForPosting') is True else 'failed')
-            if result.returncode or release.get('readyForPosting') is not True:
-                raise RuntimeError(f'reel render or release QA failed: {release.get("blockers", "no passing release-qa.json")}')
-            record.update(releaseReady=True, releaseReadyAt=now().isoformat(), releaseQa=release)
+            record.update(status='awaiting_overnight_render', renderQueued=True,
+                          renderQueuedAt=now().isoformat())
             save(state)
-            log(f'PASS: {slug} rendered and release QA passed; existing Buffer refill can pick it up')
+            refresh_operating_reports(queue, state)
+            log(f'QUEUED: {slug} blog is live; overnight renderer owns reel production and release QA')
+            return 0
         record.update(status='release_ready', completedAt=now().isoformat())
         save(state)
         refresh_operating_reports(queue, state)

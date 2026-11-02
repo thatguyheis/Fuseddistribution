@@ -96,6 +96,16 @@ export function evaluateReelRelease(slug, options = {}) {
     } catch (error) { errors.push(`opening hero verification failed: ${error.message}`); }
   }
   const timing = readJson(join(outDir, 'audio-timing.json'), errors, 'audio timing');
+  try {
+    const approval = readJson(join(root, 'public', 'blog', slug, 'qa.json'), errors, 'editorial approval');
+    const hookSeconds = Number(timing?.audioDurations?.[0]);
+    if (approval?.attentionOptimizationVersion === 1
+      && (!Number.isFinite(hookSeconds) || hookSeconds > 3.5)) {
+      errors.push(`spoken hook duration ${Number.isFinite(hookSeconds) ? hookSeconds.toFixed(2) : 'unknown'}s exceeds the 3.5s attention target`);
+    }
+  } catch (error) {
+    errors.push(`attention audio review failed: ${error.message}`);
+  }
   const captions = readJson(join(outDir, 'captions-meta.json'), errors, 'caption metadata');
   const videoPath = join(outDir, `${slug}.mp4`);
   if (!existsSync(videoPath)) errors.push(`missing rendered MP4: ${videoPath}`);

@@ -1,0 +1,12 @@
+{
+  "slug": "business-networking-retention-v2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-02",
+  "pass": true,
+  "hero": {
+    "sha256": "424aecb1978e8576d8c3330a037b70bac0a6384a590acb00b6a9871fd6815d37",
+    "sourceSvg": "hero.svg",
+    "notes": "Full portrait layout reviewed at native 1080x1920 and phone scale. Hook text has strong contrast; three flow steps remain readable; graphic explicitly states conceptual and no measured values."
+  },
+  "distribution": "comparison sample only; not indexed, deployed, hosted or scheduled"
+}

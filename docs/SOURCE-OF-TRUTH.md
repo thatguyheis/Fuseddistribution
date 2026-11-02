@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 3, 2026-10-31. Owner: Nick Hughes.
+Version 4, 2026-11-02. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -32,7 +32,7 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | Brand | Fused Reserve (silver). Tag every new post `brand: "silver"`. |
 | Voice | Plain first person. No em dashes. No hyphenated words in prose. No AI buzzwords (list in `public/blog/BLOG-SOP.md`). |
 
-Nick has separately authorized one business-growth blog/reel pair per Pacific day through the Codex automation `daily-business-growth-blog-and-reel`, using the v2 365-day plan. This is a narrow automation-specific exception, governed by [`docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`](BUSINESS-GROWTH-AUTOMATION-SOP.md). It does not change `ops/content-scope.json`, coin-history launchd jobs, or the scope of other publishers.
+Nick has separately authorized two business-growth blog/reel pairs per Pacific day through the Codex automation `daily-business-growth-blog-and-reel`, using the v2 365-day plan. This is a narrow automation-specific exception, governed by [`docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`](BUSINESS-GROWTH-AUTOMATION-SOP.md). It does not change `ops/content-scope.json`, coin-history launchd jobs, or the scope of other publishers.
 
 ---
 
@@ -54,6 +54,9 @@ Nick has separately authorized one business-growth blog/reel pair per Pacific da
 | Reel release duration | 100 to 135 seconds measured from the mastered MP4 | `video/scripts/release-reel.mjs:110` |
 | Reel ending | Spoken question card, 10 words or fewer, inside the hashed transcript | release gate, `run-coin-history-drafts.py` |
 | Reel file size | Target 44 MB, must be under 50,000,000 bytes (master). Public derivatives for X and Instagram must be under 25 MiB. | `scripts/render-missing-reels.sh`, Buffer planners |
+| Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 23:00 Pacific, after the 22:00 Buffer refill. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
+| Generative diffusion | Optional and disabled by default. Prefer evidence-led charts, graphs, and clear flow diagrams; enable Stable Diffusion only for a reviewed gap that those graphics and cleared media cannot explain. | `scripts/render-missing-reels.sh`, `video/scripts/render.mjs`, render LaunchAgent |
+| Attention design review | New business-growth reels record a hash-bound attention review: specific first-three-second promise, visible hook, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. | `video/scripts/approved-sources.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
 | Voice | Chatterbox Standard with Nick's voice reference, settings pinned in `video/tts-runtime.json`. Nano and Zoe only for explicit recovery tests Nick approves. | `video/tts-runtime.json` |
 | Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
@@ -85,7 +88,7 @@ Nick has separately authorized one business-growth blog/reel pair per Pacific da
 | Job | When | Script | Status |
 |---|---|---|---|
 | `com.nick.coin-history-drafts` | Every 15 min | `scripts/run-coin-history-drafts.py` | **Active. The only publisher.** |
-| `com.nick.render-missing-reels` | Daily 11:00 | `scripts/render-missing-reels.sh` | Active, coin scope only |
+| `com.nick.render-missing-reels` | Daily 01:00 and 04:00, max 2 reels per run | `scripts/render-missing-reels.sh` | Active, coin scope only; diffusion disabled by default |
 | `com.nick.buffer-backlog` | Daily 22:00 | `scripts/buffer-backlog-runner.sh` | Active, coin scope only |
 | `com.nick.daily-blog-reel` | Daily 09:00 | `scripts/daily-blog-reel.sh` | **Retire.** Generic publisher. Must be disabled with launchctl (section 9). |
 | `com.nick.gemma-research` | Mon and Thu 23:00 | `scripts/gemma-research-batch.py` | **Retire.** Generic topic research. |
@@ -98,6 +101,7 @@ Nick has separately authorized one business-growth blog/reel pair per Pacific da
 |---|---|
 | `fused-daily-publishing-owner` (08:30, 21:30) | Keep. Refocus on coin queue preparation (section 6, step 1). |
 | `fused-daily-profit-and-sop-evolution` | Keep, weekly review only |
+| `daily-business-growth-blog-and-reel` | Daily 23:00, GPT-6 Luna low; two serial business-growth pairs, after the Buffer refill and within the overnight render window |
 | `resume-fused-coin-video-production-tonight` | One-off from 2026-10-20. Retire. |
 | `daily-blog-backlog-monitor`, `fused-blog-backlog-recovery-watch`, `reel-audio-backlog-sequential-rerender`, `fused-final-buffer-pair-recovery`, `buffer-youtube-queue-maintenance` | Generic backlog work. Retire or rewrite for coin scope. |
 | `overnight-actions-review`, `book-factory-daily-audit-and-status` | Not part of Fused publishing. Leave alone. |
@@ -116,13 +120,13 @@ Nick has separately authorized one business-growth blog/reel pair per Pacific da
 | 6. Queue | Append `{slug, keyword}` | Codex | `content/coin-history/queue.json` | Steps 2 to 5 complete |
 | 7. Write and QA blog | build-post.sh with local model | coin worker | `index.html`, `qa.json` | Blog QA pass (section 3) |
 | 8. Deploy blog | `scripts/deploy-approved-blog.mjs`, then curl 200 | coin worker | live URL | HTTP 200 on `https://fuseddistribution.com/blog/<slug>/` |
-| 9. Render reel | Chatterbox, Whisper, Remotion | coin worker via `render-missing-reels.sh` | `video/out/<slug>/<slug>.mp4` | Duration, size, voice, captions, music, hashes |
+| 9. Render reel | Chatterbox, Whisper, Remotion | overnight `render-missing-reels.sh` job; coin worker queues and later reconciles | `video/out/<slug>/<slug>.mp4` | No daytime render; duration, size, voice, captions, music, hashes |
 | 10. Release QA | Six frame visual review plus release gate | coin worker | `video/out/<slug>/release-qa.json` | `readyForPosting: true` |
 | 11. Schedule | Buffer runner at 22:00 | launchd | Buffer posts on 3 channels | Queue cap 9, 7 day reuse |
 | 12. Embed | Blog video player linked to hosted reel | Codex | updated blog HTML | Player and source URL in live HTML |
 | 13. Commit | Content commit on `main` | Codex | git commit | Section 7 |
 
-**Throughput operations.** The worker does one episode at a time. Maintain at least 3 complete, unprocessed packages in the queue each morning, with about 21 per week prepared as a rolling target. Use `node scripts/prepare-coin-history-batch.mjs --manifest=<path>` to prepare a new episode from its source checked workup and append it to the production queue only after package validation and the first coin image match check pass. The owner photo catalog is the image supply ledger; photos remain unavailable for production until identity and crop review are complete. The worker records stage durations, retries and completed pairs by Pacific date in `.workflow-state/coin-history-drafts/throughput.json`. Review that report over multiple production cycles before treating the three pair target as a proven capacity. Never reduce a source, editorial, image or release gate to meet the target.
+**Throughput operations.** The worker does one episode at a time. It may publish and queue reel work during the day, but must not start local TTS or Remotion; `render-missing-reels.sh` owns two-reel overnight batches and the worker reconciles hash-bound release evidence on its next pass. Maintain at least 3 complete, unprocessed packages in the queue each morning, with about 21 per week prepared as a rolling target. Use `node scripts/prepare-coin-history-batch.mjs --manifest=<path>` to prepare a new episode from its source checked workup and append it to the production queue only after package validation and the first coin image match check pass. The owner photo catalog is the image supply ledger; photos remain unavailable for production until identity and crop review are complete. The worker records stage durations, retries and completed pairs by Pacific date in `.workflow-state/coin-history-drafts/throughput.json`. Review that report over multiple production cycles before treating the three pair target as a proven capacity. Never reduce a source, editorial, image or release gate to meet the target.
 
 ---
 

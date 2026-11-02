@@ -10,6 +10,12 @@ Current coin history standard (October 14, 2026): `docs/COIN-HISTORY-SOP.md`. Us
 
 Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
 
+## Current attention and overnight production standard (November 2, 2026)
+
+`docs/SOURCE-OF-TRUTH.md` controls the current schedules and scope. Coin-history reels render in two-reel batches at 01:00 and 04:00 Pacific. The separate business-growth automation creates two pairs at 23:00 Pacific, after the Buffer refill, and renders serially. Keep heavy TTS/rendering out of daytime work. Stable Diffusion is opt-in, disabled by default, and capped at four minutes per optional image attempt; use source-backed data graphics and flow diagrams first. See `docs/REEL-ENRICHMENT-SOP.md`.
+
+For new business-growth reels, the approved source gate requires `attention-review.json` with `attentionOptimizationVersion: 1` in `qa.json`. Open with a visible and spoken viewer problem or benefit in the first seconds, use no greeting or logo pre-roll, pay the hook off early through two to four mapped beats, and end with one concise CTA and one primary action. Keep the first spoken hook to 12 words and four seconds maximum, and the on-screen CTA to 10 words maximum. Review actual platform retention/action analytics after they mature; do not treat generic benchmark numbers as guarantees. Platform-specific notes and sources are in `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`.
+
 ## September 7 reliability correction
 
 The incident procedure in `docs/PUBLISHING-INCIDENT-2026-09-07.md` supersedes older instructions that prepend recovered posts, rebuild registered slugs for a new date, reset exhausted retry counters, trust completion markers alone, or poll Buffer during cooldown. Check actual artifacts and fresh output with `node scripts/publishing-health.mjs --write`. Preserve publication dates, recover only proven stale locks, and use the shared Buffer runner and cooldown. The recovery owner must record new verified failures and regression tests in the incident procedure and this SOP.
