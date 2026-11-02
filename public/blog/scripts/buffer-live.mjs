@@ -27,7 +27,7 @@ const supportedChannelIds = new Set([
 
 function usage() {
   console.error(`Usage:
-  node public/blog/scripts/buffer-live.mjs status [--target-per-channel=N] [--require-on-time-floor]
+  node public/blog/scripts/buffer-live.mjs status [--target-per-channel=N] [--require-on-time-floor] [--post-ids=id1,id2,...]
   node public/blog/scripts/buffer-live.mjs channels
   node public/blog/scripts/buffer-live.mjs repair-cadence [--dry-run]
   node public/blog/scripts/buffer-live.mjs publish --queue=path [--log=path] [--dry-run]
@@ -62,6 +62,7 @@ function parseArgs(argv) {
     else usage();
   }
   if (!['status', 'channels', 'publish', 'edit', 'replace-media', 'repair-cadence'].includes(command)) usage();
+  if (command === 'status' && args.postIds.length > 25) throw new Error('At most 25 post IDs may be reconciled in one status check.');
   if (command === 'publish' && !args.queue) usage();
   if (command === 'edit' && (!args.postId || !args.textFile)) usage();
   if (command === 'replace-media' && (!args.slug || !args.postIds.length || !args.mediaUrl)) usage();
@@ -147,6 +148,21 @@ const livePostsQuery = `
   }
 `;
 
+const postByIdQuery = `
+  query PostById($input: PostInput!) {
+    post(input: $input) {
+      id
+      text
+      status
+      dueAt
+      sentAt
+      channelId
+      externalLink
+      assets { id mimeType source }
+    }
+  }
+`;
+
 const channelsQuery = `
   query ConnectedChannels($input: ChannelsInput!) {
     channels(input: $input) {
@@ -170,6 +186,16 @@ async function fetchPostPage(token, statuses, after, direction = 'asc') {
 }
 async function getPosts(token, statuses) {
   return collectBufferPostPages(after => fetchPostPage(token,statuses,after));
+}
+async function getPostsByIds(token, ids) {
+  return Promise.all(ids.map(async id => {
+    try {
+      const data = await graphql(token, postByIdQuery, {input: {id}});
+      return data.post ? {id, found: true, post: data.post} : {id, found: false};
+    } catch (error) {
+      return {id, found: false, error: error.message};
+    }
+  }));
 }
 let historyEvidence = null;
 async function recentSentPosts(token) {
@@ -512,13 +538,14 @@ try {
       process.exit(0);
     }
     const sentPosts = loaded.sentPosts;
-    const visiblePosts = mergeBufferPosts(posts, sentPosts);
+    const postLookups = args.postIds.length ? await getPostsByIds(token, args.postIds) : [];
+    const visiblePosts = mergeBufferPosts(posts, sentPosts, postLookups.filter(row => row.found).map(row => row.post));
     const reconciledLogs = reconcileDefaultLogs(visiblePosts);
     syncPublishedSocialVideoLinks();
     const dailyTargets = calculateDailyChannelTargets(visiblePosts, { minimum: args.targetPerChannel });
     const readinessCheckpoint = evaluateDailyFloorReadinessCheckpoint({ operatingDate: dailyTargets.operatingDate });
     const dailyFloorEnforcement = evaluateDailyFloorEnforcement({ dailyTargets, readinessCheckpoint });
-    console.log(JSON.stringify({ count: posts.length, historyEvidence, dailyTargets, readinessCheckpoint, dailyFloorEnforcement, posts, reconciledLogs }, null, 2));
+    console.log(JSON.stringify({ count: posts.length, historyEvidence, dailyTargets, readinessCheckpoint, dailyFloorEnforcement, posts, postLookups, reconciledLogs }, null, 2));
     if (args.requireOnTimeFloor && dailyFloorEnforcement.status === 'failed') {
       throw new Error(`Daily Buffer floor checkpoint failed: ${dailyFloorEnforcement.reason} (${dailyFloorEnforcement.deficitChannels.join(', ')}).`);
     }
