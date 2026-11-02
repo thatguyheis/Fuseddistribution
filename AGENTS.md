@@ -14,6 +14,8 @@ The rest of this file covers the photo library only. It lives under `public/phot
 ## Hard Rules
 
 - **Codex owns repository delivery.** Commit after scoped validation. Push follows `docs/SOURCE-OF-TRUTH.md` section 7: content commits may go to `origin main` without asking; code, SOP, config and photo library changes need Nick's explicit approval each time. Never force push. Claude is not a required reviewer or deployment dependency.
+- **Leave the main worktree clean.** When a task ends, every file you created or changed is committed, gitignored, or reported to Nick. The pre-push gate (`scripts/worktree-hygiene.mjs --strict`) requires it. Put scratch builds and office deliverables in `.build/` or `outputs/`, which are ignored.
+- **Never bypass the push gate with a second worktree.** Do not run `git worktree add --force <dir> main` or check out the same branch twice. That worktree's index goes stale, and committing from it reverts newer commits. The gate now blocks while one exists. If you need an isolated tree, use `git worktree add --detach <dir> HEAD`, and run `git worktree remove <dir>` when you finish.
 - **Never delete files** without explicit instruction.
 - **Never manually edit generated pages** — `public/photos/images/*/index.html` and `public/photos/collections/*/index.html` are built by script. Edit the script or data, then rebuild.
 - **Never touch these hand-crafted files**: `public/photos/index.html`, `public/photos/browse/index.html`.

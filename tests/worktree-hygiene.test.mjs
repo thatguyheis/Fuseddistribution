@@ -6,6 +6,7 @@ import {
   forbiddenArtifact,
   groupProtocolFiles,
   recommendedCommitTags,
+  sharedBranchWorktrees,
 } from '../scripts/worktree-hygiene.mjs';
 
 test('tags blog, reel, and ADA files with the governing protocol', () => {
@@ -39,4 +40,21 @@ test('blocks staged snapshots above the review limit', () => {
   });
   assert.equal(report.approved, false);
   assert.match(report.issues[0], /review limit/);
+});
+
+test('flags other worktrees that share the current branch', () => {
+  const porcelain = [
+    'worktree /repo', 'HEAD abc', 'branch refs/heads/main', '',
+    'worktree /tmp/publish', 'HEAD def', 'branch refs/heads/main', '',
+    'worktree /tmp/feature', 'HEAD 123', 'branch refs/heads/feature', '',
+    'worktree /tmp/detached', 'HEAD 456', 'detached', '',
+  ].join('\n');
+  assert.deepEqual(sharedBranchWorktrees(porcelain, '/repo'), [{path: '/tmp/publish', branch: 'main'}]);
+  assert.deepEqual(sharedBranchWorktrees(porcelain, '/tmp/feature'), []);
+});
+
+test('worktree report blocks when a sibling worktree shares the branch', () => {
+  const report = buildHygieneReport({files: [], staged: false, sharedWorktrees: [{path: '/tmp/publish', branch: 'main'}]});
+  assert.equal(report.approved, false);
+  assert.match(report.issues[0], /\/tmp\/publish/);
 });

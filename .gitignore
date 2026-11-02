@@ -100,3 +100,7 @@ content/**/stock/
 *.raw
 *.log
 .buffer-live-unavailable.json
+
+# Local agent build scratch and generated office deliverables (pptx/docx/pdf renders)
+.build/
+outputs/

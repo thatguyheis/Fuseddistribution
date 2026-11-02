@@ -93,7 +93,26 @@ function writeReport(report) {
   return reportPath;
 }
 
-export function buildHygieneReport({files, staged, maxFiles = 250, maxBytes = 25 * 1024 * 1024}) {
+export function sharedBranchWorktrees(porcelain, currentPath) {
+  const entries = porcelain.split(/\n\s*\n/).map((block) => {
+    const lines = block.split('\n');
+    const path = lines.find((line) => line.startsWith('worktree '))?.slice(9);
+    const branch = lines.find((line) => line.startsWith('branch '))?.slice(7).replace(/^refs\/heads\//, '');
+    return {path, branch};
+  }).filter((entry) => entry.path);
+  const current = entries.find((entry) => entry.path === currentPath);
+  if (!current?.branch) return [];
+  return entries.filter((entry) => entry.path !== currentPath && entry.branch === current.branch);
+}
+
+function listSharedBranchWorktrees() {
+  const top = spawnSync('git', ['rev-parse', '--show-toplevel'], {cwd: projectDir, encoding: 'utf8'});
+  const list = spawnSync('git', ['worktree', 'list', '--porcelain'], {cwd: projectDir, encoding: 'utf8'});
+  if (top.status !== 0 || list.status !== 0) return [];
+  return sharedBranchWorktrees(list.stdout, top.stdout.trim());
+}
+
+export function buildHygieneReport({files, staged, maxFiles = 250, maxBytes = 25 * 1024 * 1024, sharedWorktrees = []}) {
   const groups = groupProtocolFiles(files);
   const forbidden = files.map(forbiddenArtifact).filter(Boolean);
   const oversized = oversizedFiles(files, maxBytes);
@@ -102,6 +121,7 @@ export function buildHygieneReport({files, staged, maxFiles = 250, maxBytes = 25
   if (forbidden.length > 0) issues.push(`${forbidden.length} generated or local artifact(s) must not enter Git`);
   if (oversized.length > 0) issues.push(`${oversized.length} file(s) exceed ${Math.round(maxBytes / 1048576)} MiB`);
   if (staged && files.length > maxFiles) issues.push(`${files.length} staged files exceed the ${maxFiles}-file review limit`);
+  for (const wt of sharedWorktrees) issues.push(`worktree ${wt.path} also has branch ${wt.branch} checked out; its stale index can revert newer commits. Commit or move its work, then run: git worktree remove ${wt.path}`);
   return {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
@@ -112,6 +132,7 @@ export function buildHygieneReport({files, staged, maxFiles = 250, maxBytes = 25
     forbidden,
     oversized,
     issues,
+    sharedWorktrees,
     clean: files.length === 0,
     approved: issues.length === 0,
   };
@@ -134,7 +155,8 @@ function main() {
   const files = staged ? stagedFiles() : dirtyFiles();
   const maxFiles = Number.parseInt(process.env.WORKTREE_HYGIENE_MAX_STAGED_FILES || '250', 10);
   const maxMiB = Number.parseInt(process.env.WORKTREE_HYGIENE_MAX_FILE_MIB || '25', 10);
-  const report = buildHygieneReport({files, staged, maxFiles, maxBytes: maxMiB * 1024 * 1024});
+  const sharedWorktrees = staged ? [] : listSharedBranchWorktrees();
+  const report = buildHygieneReport({files, staged, maxFiles, maxBytes: maxMiB * 1024 * 1024, sharedWorktrees});
   if (!args.has('--quiet')) printReport(report);
   if (args.has('--write-report')) console.log(`Report: ${writeReport(report)}`);
   if (args.has('--json')) console.log(JSON.stringify(report, null, 2));
