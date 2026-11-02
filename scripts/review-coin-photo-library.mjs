@@ -281,7 +281,20 @@ function updateReviewPage(rows, report) {
   const pagePath = path.join(reviewDirectory, 'index.html');
   let page = readFileSync(pagePath, 'utf8');
   page = page.replace(/\.model-suggestion\{[^}]*\}\.model-suggestion strong\{[^}]*\}/g, '');
-  page = page.replace('</style>', '.model-suggestion{background:#26394a;border-left:4px solid #ffc857;padding:8px;margin:8px 0;font-size:13px}.model-suggestion strong{color:#ffd36b}</style>');
+  page = page.replace(/\/\* review-layout:start \*\/[\s\S]*?\/\* review-layout:end \*\//, '');
+  const reviewStyles = `
+    .model-suggestion{background:#26394a;border-left:4px solid #ffc857;padding:8px;margin:8px 0;font-size:13px}
+    .model-suggestion strong{color:#ffd36b}
+    /* review-layout:start */
+    .grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,850px),1fr));gap:18px}
+    .grid article{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.9fr);align-items:start;gap:10px 18px}
+    .grid article>img,.grid article>video{grid-column:1;grid-row:1 / span 6;width:100%;height:min(78vh,850px);min-height:420px;object-fit:contain;background:#06131b;position:sticky;top:12px}
+    .grid article>:not(img):not(video){grid-column:2;min-width:0}
+    .grid article .coin-note{min-height:180px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.grid article{grid-template-columns:minmax(0,1fr)}.grid article>img,.grid article>video{grid-column:1;grid-row:auto;position:static;height:min(70vh,680px);min-height:300px}.grid article>:not(img):not(video){grid-column:1}}
+    /* review-layout:end */
+  `;
+  page = page.replace('</style>', reviewStyles + '</style>');
   for (const row of rows) {
     const result = report.results[row.original_filename];
     const group = result.group === 'exact_duplicate' ? duplicateDirectoryName
