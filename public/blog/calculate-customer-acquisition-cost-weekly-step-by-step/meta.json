@@ -1,0 +1,19 @@
+{
+  "title": "Step by Step: The One Number Every Small Business Should Check Weekly",
+  "slug": "calculate-customer-acquisition-cost-weekly-step-by-step",
+  "description": "Build a repeatable weekly customer acquisition cost check by defining the time window, listing channel costs, counting new buyers, and recording unknowns.",
+  "ogDescription": "A practical weekly worksheet for checking customer acquisition cost by channel.",
+  "alt": "Owner calculates customer costs on worksheet",
+  "date": "2026-11-02",
+  "tags": ["Business Growth", "Marketing"],
+  "brand": "tech",
+  "ctaLine": "Follow Fused Distribution on Instagram and Facebook for more practical business growth ideas.",
+  "contentGraphic": {
+    "label": "Fictional weekly campaign example, not a benchmark",
+    "rows": [
+      {"condition": "Local campaign cost", "action": "$240"},
+      {"condition": "First time buyers attributed", "action": "6"},
+      {"condition": "Cost per new customer", "action": "$40"}
+    ]
+  }
+}

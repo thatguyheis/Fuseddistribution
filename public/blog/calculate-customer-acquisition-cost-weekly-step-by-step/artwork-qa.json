@@ -1,0 +1,26 @@
+{
+  "protocol": "FD-HERO-GRAPHIC-V2",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-02T17:51:20.261Z",
+  "subject": "A weekly channel-by-channel customer acquisition cost worksheet",
+  "purpose": "Show owners how to record channel costs, attributed first-time buyers, and cost per buyer without implying a benchmark",
+  "hook": "Track cost per new buyer weekly",
+  "keyWords": [
+    "channel cost",
+    "new buyers",
+    "cost per buyer"
+  ],
+  "chartEvidence": "Fictional $240 divided by six first-time buyers equals $40 per buyer; conceptual example, not measured data or a benchmark",
+  "preview": "/tmp/cac-weekly-reel-opening-360x640.jpg; exported hero.jpg and photo-post.jpg inspected at full size",
+  "finalHeroSha256": "e59f101dd85fb39b148390a1eb264450c7f2766fd4ec1bc142bcbc7415ab2b72",
+  "checks": {
+    "topicSpecificity": "pass",
+    "usefulGraphic": "pass",
+    "truthfulHook": "pass",
+    "phoneReadability": "pass",
+    "noClipping": "pass",
+    "contrast": "pass",
+    "variety": "pass"
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "calculate-customer-acquisition-cost-weekly-step-by-step",
+  "score": 93,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewed_at": "2026-11-02T17:51:20.254Z",
+  "review_notes": [
+    "Reviewed the full article, source record, reel narration, reel data, social copy, and final landscape and square graphics at full size and phone size. The article gives a repeatable channel-by-channel weekly worksheet and differs from the prior overview.",
+    "SCORE and SBA sources support tracking acquisition cost by channel, comparing cost with results, and using consistent attribution. Made-up $240 / 6 / $40 figures are clearly labeled fictional; no universal target or business outcome is asserted.",
+    "The custom receipt-to-customer-count graphic is topic specific, legible at phone size, consistent with the example, and has no clipping. All required local QA gates passed.",
+    "Reel structure was corrected so the hook is included in the parsed narration. The article includes a playable reel embed pointing to the planned canonical MP4 route; deployment remains gated on successful render, hosting, and public verification."
+  ],
+  "artifactSha256": {
+    "verified.md": "08e440e9b6b8f8ad3497316846d70dbcb4e5ade8c3f1b89d615276c59aca5c0c",
+    "index.html": "735011cc229cbbfcb9de542b28ec2f35846f5b07c516a0b6a5603921923b9ceb",
+    "meta.json": "1cba77e12b55319f21f30e333d46bab46fd110eb520aea5dce4bad6ed1625499",
+    "research.json": "7ac85899c1c8922535bd1f719b6b0715b62e11efb35047676817048540adf09a",
+    "hero.jpg": "e59f101dd85fb39b148390a1eb264450c7f2766fd4ec1bc142bcbc7415ab2b72",
+    "photo-post.jpg": "7db50c2e592913dc197eb10a96246463144eb5814765ea10aeba6ae71107d070",
+    "reel-script.md": "95e1e41a14a2a9e961e32db0d5696ecf476e9bf19ec85c8edf10f923a4d0a409",
+    "reel-data.md": "eb17783b40a2bce72a1d699f5fbb86fe94c6c9aedb16643fb1d04e78979ef775",
+    "social-copy.json": "c124f31555626dc16205588ce5f8702595b4484642733fa66b3653d312a67b1e"
+  }
+}

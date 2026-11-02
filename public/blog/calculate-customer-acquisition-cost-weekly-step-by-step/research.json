@@ -1,0 +1,56 @@
+{
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "name": "SCORE, Business Plan 101: Sales & Marketing",
+      "url": "https://www.score.org/articles/business-plan-101-sales-marketing/",
+      "publication_date": "2019-05-30",
+      "supports": [
+        "SCORE describes estimating acquisition cost by dividing a tactic's cost by the customers attributed to that tactic.",
+        "SCORE gives a referral partner example and calls the resulting amount a cost of acquisition."
+      ]
+    },
+    {
+      "name": "SCORE, Marketing Plan Guide",
+      "url": "https://www.score.org/e-guides/marketing-plan-guide/",
+      "publication_date": "2016 (guide page; accessed date recorded separately)",
+      "supports": [
+        "A marketing plan can include trackable goals and a planned cost to acquire a new customer."
+      ]
+    },
+    {
+      "name": "U.S. Small Business Administration, How to Get the Most From Your Marketing Budget",
+      "url": "https://www.sba.gov/blog/2019/2019-07/how-get-most-your-marketing-budget/",
+      "publication_date": "2019-07-09",
+      "supports": [
+        "The SBA recommends monitoring marketing results and describes asking new customers how they learned about a business, using distinct codes, and using marketing analytics tools."
+      ]
+    },
+    {
+      "name": "U.S. Small Business Administration, Marketing and sales",
+      "url": "https://www.sba.gov/business-guide/manage-your-business/marketing-sales",
+      "publication_date": "Current page; accessed 2026-11-02",
+      "supports": [
+        "The SBA recommends tracking marketing costs and comparing marketing and sales costs with generated revenue while noting that some tactics are difficult to measure."
+      ]
+    }
+  ],
+  "claim_map": [
+    {
+      "claim": "A tactic-level acquisition cost can be estimated as its cost divided by new customers attributed to it.",
+      "source_urls": ["https://www.score.org/articles/business-plan-101-sales-marketing/"],
+      "use": "Article formula and labeled example"
+    },
+    {
+      "claim": "A business can use customer questions, distinct codes, and platform analytics to track marketing responses.",
+      "source_urls": ["https://www.sba.gov/blog/2019/2019-07/how-get-most-your-marketing-budget/"],
+      "use": "Article source tracking steps"
+    },
+    {
+      "claim": "Some marketing methods are difficult to attribute, so the measurement method should be consistent and its limits stated.",
+      "source_urls": ["https://www.sba.gov/business-guide/manage-your-business/marketing-sales"],
+      "use": "Article limitation and worksheet guidance"
+    }
+  ],
+  "example_policy": "All dollar and customer counts in the worked example are fictional arithmetic only, not business results, market benchmarks, or recommendations."
+}
