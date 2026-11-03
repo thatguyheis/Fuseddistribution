@@ -1,0 +1,26 @@
+{
+  "slug": "using-remotion-to-make-a-business-reel",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/using-remotion-to-make-a-business-reel/",
+  "discussion_question": "Which scene would you build first: hook, checklist, or demo?",
+  "reel": {
+    "youtube": "Want reusable business reels? Plan the composition, build reusable scenes, time them to narration, then inspect the rendered MP4.",
+    "instagram": "A repeatable reel starts with a clear viewer question, a few useful scenes, and a frame zero that earns attention.",
+    "x": "Build business reels with a reusable Remotion composition: define the canvas, plan the scene timing, render, then inspect the actual MP4."
+  },
+  "captions": {
+    "youtube": "See how to plan a Remotion business reel, create reusable scenes, time captions, render an MP4, and check the export before publishing.",
+    "instagram": "Which would you build first: hook, checklist, or demo?",
+    "x": "A successful render command is only one gate. Check the opening, captions, sound, final frame, and live post status."
+  },
+  "hashtags": [
+    "SmallBusiness",
+    "Remotion",
+    "VideoProduction"
+  ],
+  "sources": [
+    "https://www.remotion.dev/docs/composition",
+    "https://www.remotion.dev/docs/render",
+    "https://www.remotion.dev/docs/videos"
+  ]
+}

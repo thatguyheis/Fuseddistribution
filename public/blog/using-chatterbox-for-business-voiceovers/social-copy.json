@@ -1,0 +1,18 @@
+{
+  "slug": "using-chatterbox-for-business-voiceovers",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/using-chatterbox-for-business-voiceovers/",
+  "discussion_question": "Which voiceover step will you improve first: script, sound, or captions?",
+  "reel": {
+    "youtube": "Want clear business voiceovers without recording every take? Use Chatterbox with a clean script, a checked voice sample, and captions reviewed against the final audio.",
+    "instagram": "A reliable AI voiceover starts with a good script, permission to use the voice, and a real listen before you publish.",
+    "x": "A better Chatterbox workflow: write for speech, generate in short chunks, listen for errors, then verify captions against the actual audio."
+  },
+  "captions": {
+    "youtube": "Learn a practical Chatterbox workflow for business voiceovers, from script preparation and settings to checked captions and a publish ready reel.",
+    "instagram": "Which step will you improve first: script, sound, or captions?",
+    "x": "A fresh seed helps record a new stochastic generation, but listening and checking the exported audio still matter."
+  },
+  "hashtags": ["SmallBusiness", "Chatterbox", "VideoProduction"],
+  "sources": ["https://github.com/resemble-ai/chatterbox", "https://github.com/resemble-ai/chatterbox/blob/master/src/chatterbox/tts.py"]
+}

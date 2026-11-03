@@ -1,0 +1,40 @@
+{
+  "slug": "using-chatterbox-for-business-voiceovers",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-03",
+  "reviewed_at": "2026-11-03T23:36:02.306Z",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the final article, official research links, reel script, question hook, one-action CTA, vector graphics, playable hosted reel panel, and deterministic QA.",
+    "The article and reel use no unsupported performance statistics; the graphics explain workflow steps.",
+    "The reel export passed encoded visual review, audio, Whisper caption, media rights, dimensions, duration, and file-size checks."
+  ],
+  "notes": [
+    "Final content and deterministic QA passed before editorial sign-off.",
+    "Reviewed the primary source citations, hook, one-action comment CTA, hero, storyboard graphics, and playable hosted reel.",
+    "Opening hero is the portrait article cover and carries the spoken question at frame zero."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Want clear voiceovers without recording?",
+    "visibleText": "Want clear voiceovers without recording?"
+  },
+  "artifactSha256": {
+    "verified.md": "82aa22f4dee2d5be1baae126082c7c31934c58403f08be8b6fb6c6bbbb9e072f",
+    "index.html": "e595abf27f5c4498b613b9e167aee488c1a3fc105137083d25519dde90e09bee",
+    "meta.json": "a19541038ca561465c6bfabdf7f4ff9e8b6e04fcb2446d31d3a626bc86af41d8",
+    "research.json": "fb4563df5667a8714851211d5d934b310402407b2b60b8de6938654584d77d6f",
+    "hero.jpg": "5cc5d9aa3c8d163a58372910fd7c2a2b4a8f5c47570290b3976b93fa61d466a7",
+    "photo-post.jpg": "5cc5d9aa3c8d163a58372910fd7c2a2b4a8f5c47570290b3976b93fa61d466a7",
+    "reel-script.md": "6c80f30e0348d5627221da0a217f0f36a8daedb862b97306ab7177be287268b0",
+    "reel-data.md": "497673b2b86c3567a4e949b4b6ee29745ba3b133ee40abb396b9601d46469a8c",
+    "social-copy.json": "96ef02abae826431079282f3f2c685eca9bcc8f26584412b75b31cc5d89e1c87",
+    "attention-review.json": "a68fb96acfe44f335d2a1fce1e24caafe405edb7b2c056ae762e1352ba751606",
+    "presentation-plan.json": "f0b71315eb401cebbe2567fb661eaba5acdd584bd634ab34db89285633dacd0c",
+    "social-video.json": "ab9ca35c75d4196dbe3e68e8a79fc004d975a9213ac70d2902c1de89d8b2203f"
+  }
+}

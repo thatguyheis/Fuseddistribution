@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Want clear voiceovers without recording?",
+    "visibleText": "Want clear voiceovers without recording?",
+    "spokenSeconds": 2.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved portrait hero with the exact shortened question and a three-step conceptual workflow, visible at encoded frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Prepare the script",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Confirm voice and model",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Listen before the batch",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Captions follow final audio",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Comment: script, sound, or captions?",
+    "spokenText": "Comment: script, sound, or captions?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete workflow question followed by an early, useful production step should retain viewers through the first payoff beat.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "viewed-vs-swiped-away",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare each platform independently with similar-duration reels after retention data matures; include sample size."
+  }
+}

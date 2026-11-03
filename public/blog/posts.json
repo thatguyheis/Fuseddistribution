@@ -1,5 +1,35 @@
 [
   {
+    "slug": "using-remotion-to-make-a-business-reel",
+    "title": "How to Use Remotion to Make a Business Reel",
+    "date": "2026-11-03",
+    "excerpt": "Learn how to build a repeatable business reel in Remotion with React scenes, a clear opening, timed captions, a reliable render, and release checks.",
+    "tags": [
+      "AI Tools",
+      "Video Production",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/using-remotion-to-make-a-business-reel/hero.jpg",
+    "imageAlt": "Remotion reusable business reel workflow graphic"
+  },
+  {
+    "slug": "using-chatterbox-for-business-voiceovers",
+    "title": "How to Use Chatterbox for Business Voiceovers",
+    "date": "2026-11-03",
+    "excerpt": "Learn a practical Chatterbox workflow for clear business voiceovers, responsible voice use, stable settings, checked captions, and publish ready reels.",
+    "tags": [
+      "AI Tools",
+      "Video Production",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/using-chatterbox-for-business-voiceovers/hero.jpg",
+    "imageAlt": "Chatterbox business voiceover workflow guide graphic"
+  },
+  {
     "slug": "calculate-customer-acquisition-cost-weekly-step-by-step",
     "title": "Step by Step: The One Number Every Small Business Should Check Weekly",
     "date": "2026-11-02",

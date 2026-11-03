@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Want reusable business reels?",
+    "visibleText": "Want reusable business reels?",
+    "spokenSeconds": 2.0,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved portrait hero with the exact question and a three-step conceptual Remotion workflow, visible at encoded frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Set the composition",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Plan the story beats",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Build reusable components",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Render and inspect the MP4",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Comment: hook, checklist, or demo?",
+    "spokenText": "Comment: hook, checklist, or demo?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete workflow question followed by an early, useful production step should retain viewers through the first payoff beat.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "viewed-vs-swiped-away",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare each platform independently with similar-duration reels after retention data matures; include sample size."
+  }
+}

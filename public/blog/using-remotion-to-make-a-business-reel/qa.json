@@ -1,0 +1,40 @@
+{
+  "slug": "using-remotion-to-make-a-business-reel",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-03",
+  "reviewed_at": "2026-11-03T23:36:02.318Z",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the final article, official research links, reel script, question hook, one-action CTA, vector graphics, playable hosted reel panel, and deterministic QA.",
+    "The article and reel use no unsupported performance statistics; the graphics explain workflow steps.",
+    "The reel export passed encoded visual review, audio, Whisper caption, media rights, dimensions, duration, and file-size checks."
+  ],
+  "notes": [
+    "Final content and deterministic QA passed before editorial sign-off.",
+    "Reviewed the primary source citations, hook, one-action comment CTA, hero, storyboard graphics, and playable hosted reel.",
+    "Opening hero is the portrait article cover and carries the spoken question at frame zero."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Want reusable business reels?",
+    "visibleText": "Want reusable business reels?"
+  },
+  "artifactSha256": {
+    "verified.md": "27ac7d681a90f304a6b78d77d7a78abb60b334748cc4e7c5722732f7da313024",
+    "index.html": "e7a0a44cd595672de3b0c57077501bd7c6c0c1a7d3d44ca4c738e4b1ed4f0e57",
+    "meta.json": "e70bab24525191f8da059dffedf863b3eed8410d5591f445cbd9576be3027f2b",
+    "research.json": "ba92333fc02cc5bf24bd8db54714baaeae19e76a019c99c72f709aa3b0a6adb5",
+    "hero.jpg": "9fb288c1bd9e93faf09a02cc6a6f738610b5765f7451626f351dcd198f6e9210",
+    "photo-post.jpg": "9fb288c1bd9e93faf09a02cc6a6f738610b5765f7451626f351dcd198f6e9210",
+    "reel-script.md": "f6e8d8702de372893cda2c1cf1512af9125d73719477397c48cb9daeb0f5ad9b",
+    "reel-data.md": "8d11db71550fd45efa074f45b36bee7ca1b4dcbaa728cda7e2c7415e0bf98365",
+    "social-copy.json": "6aff25a0edc86a7a8b5e93babe7b4f011838110ec6dabaf9c8f3ab1ff8623d5b",
+    "attention-review.json": "af0c50b64bfa7bb3f23a6c36cfa61923fe8f55e404408b8e99d3e8099de93fca",
+    "presentation-plan.json": "aac3b2f3272d06567c9a051579fd3cd195203e7a6d1e05c2131d9aea6afaee82",
+    "social-video.json": "5a8dbe0a4e43fc9999dd161a5756787f92ed281059ba535e6688b2a8e7bb58d6"
+  }
+}

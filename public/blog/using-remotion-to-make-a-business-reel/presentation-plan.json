@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "fused-original-vector-graphics",
+  "mode": "all-scenes",
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-0.jpg",
+        "sha256": "2764ea4e55e5252cc03fb56dd4612eda24db55ecb022cff469fba4a001cc9f61",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "OPENING QUESTION",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-1.jpg",
+        "sha256": "2e95677dc9c461722e21e30efcd45c89bf8cedec0c142b82359818b9378dcae0",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "COMPOSITION",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-2.jpg",
+        "sha256": "7770ab439f3774bf1b5980b5ceeba88aaf72787914b8ac19b3bfb1e76fa0842e",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "STORY",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-3.jpg",
+        "sha256": "5d1ee0a2009ecc44bfc8a653a3d8a2a766f07610e8a9b1336bc74fe160bdc376",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "REUSE",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-4.jpg",
+        "sha256": "d88566ba5a92d02230cc12f952b3cac74047a587606cd32ae8914a4493179cf0",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "TIMING",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-5.jpg",
+        "sha256": "3621c19f426b4871b35b131457bbc6ab56c4a64eeb07bce1c348cac93b847ea3",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "EXPORT",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-remotion-to-make-a-business-reel/images/scene-6.jpg",
+        "sha256": "fbc7445aa15abe988b37d21b661e911e7cb8f6f9b2d912c9d130a18d4154b73e",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "ONE ACTION",
+        "eyebrow": "REMOTION VIDEO"
+      }
+    ]
+  ]
+}

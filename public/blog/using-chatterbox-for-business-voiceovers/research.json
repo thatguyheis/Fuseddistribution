@@ -1,0 +1,21 @@
+{
+  "topic": "Using Chatterbox for business voiceovers",
+  "researchedAt": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "publisher": "Resemble AI",
+      "title": "Chatterbox open source text to speech repository",
+      "claim": "The repository documents the Chatterbox model families and usage guidance. Model variants and controls should be checked against the installed version.",
+      "accessed": "2026-11-03"
+    },
+    {
+      "url": "https://github.com/resemble-ai/chatterbox/blob/master/src/chatterbox/tts.py",
+      "publisher": "Resemble AI",
+      "title": "Chatterbox Standard implementation",
+      "claim": "The implementation contains text normalization and synthesis controls; punctuation normalization can change the input text before synthesis.",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "scopeNote": "The production settings in this article are the Fused local profile, not universal recommendations. No performance or quality statistics are asserted."
+}

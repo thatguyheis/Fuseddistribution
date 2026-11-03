@@ -1,0 +1,28 @@
+{
+  "topic": "Using Remotion to make a business reel",
+  "researchedAt": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.remotion.dev/docs/composition",
+      "publisher": "Remotion",
+      "title": "Composition component",
+      "claim": "A composition registers a renderable video component with dimensions, frame rate, duration, an ID, and optional JSON serializable default props.",
+      "accessed": "2026-11-03"
+    },
+    {
+      "url": "https://www.remotion.dev/docs/render",
+      "publisher": "Remotion",
+      "title": "Render your video",
+      "claim": "The Remotion CLI and server side rendering API can render a selected composition to a video file.",
+      "accessed": "2026-11-03"
+    },
+    {
+      "url": "https://www.remotion.dev/docs/videos",
+      "publisher": "Remotion",
+      "title": "Video documentation",
+      "claim": "Remotion provides components and timing primitives for constructing video sequences.",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "scopeNote": "Examples are illustrative. The repository's pinned Remotion version and production configuration govern the actual command and export requirements."
+}

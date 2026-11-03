@@ -1,0 +1,17 @@
+{
+  "slug": "using-chatterbox-for-business-voiceovers",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-03",
+  "pass": true,
+  "hero": {
+    "sha256": "5cc5d9aa3c8d163a58372910fd7c2a2b4a8f5c47570290b3976b93fa61d466a7",
+    "sourceSvg": "hero.svg",
+    "notes": "Reviewed the exported 1080x1920 cover at full size and phone scale. The shortened spoken question is readable, the three-step conceptual flow is legible, and no measured values are fabricated."
+  },
+  "distribution": "Pending final reel render, hosted video, and deployment verification.",
+  "presentationGraphics": {
+    "planSha256": "f0b71315eb401cebbe2567fb661eaba5acdd584bd634ab34db89285633dacd0c",
+    "sceneCount": 7,
+    "notes": "Seven topic-specific vector scene cards inspected. Central diagrams avoid the heading and caption zones; workflow cues are conceptual and contain no invented measurements."
+  }
+}

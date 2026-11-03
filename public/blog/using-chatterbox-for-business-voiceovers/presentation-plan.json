@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "fused-original-vector-graphics",
+  "mode": "all-scenes",
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-0.jpg",
+        "sha256": "fec7a3e0898d254039f86dc5edb201078a724b7b49156fca8ffbcdfa5120f0eb",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "OPENING QUESTION",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-1.jpg",
+        "sha256": "c39f32e770c044c711b05100d8ca4170851dcb661d41d8698316a4527dbbbb8e",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "PREPARE",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-2.jpg",
+        "sha256": "9bdfecd74fdbd6e23f377aaccc1a411d975a0810376a6c1f77dd012446897bbf",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "CONFIRM",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-3.jpg",
+        "sha256": "9220d28e02d372a109686f162903439be98071d3f8393174f76c10f54e34fbd2",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "LISTEN",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-4.jpg",
+        "sha256": "56756817bc335cfdbed131b7783c5022545e8fe680e77cef350ab3138a67932e",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "CAPTION",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-5.jpg",
+        "sha256": "adbea5d0f59220faa249b1f39949a219927e2f4a4aefc79bb5ed622d0f39a07f",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "RECORD",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/using-chatterbox-for-business-voiceovers/images/scene-6.jpg",
+        "sha256": "ac6d64fe1a1beebcff34f6d7c113adac440b05087c2076d630edd3a07c45524b",
+        "weight": 1,
+        "credit": "Fused original graphic",
+        "title": "ONE ACTION",
+        "eyebrow": "CHATTERBOX VOICEOVER"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "using-remotion-to-make-a-business-reel",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-03",
+  "pass": true,
+  "hero": {
+    "sha256": "9fb288c1bd9e93faf09a02cc6a6f738610b5765f7451626f351dcd198f6e9210",
+    "sourceSvg": "hero.svg",
+    "notes": "Reviewed the exported 1080x1920 cover at full size and phone scale. The question hook is readable, the three-step conceptual flow is legible, and no measured values are fabricated."
+  },
+  "distribution": "Pending final reel render, hosted video, and deployment verification.",
+  "presentationGraphics": {
+    "planSha256": "aac3b2f3272d06567c9a051579fd3cd195203e7a6d1e05c2131d9aea6afaee82",
+    "sceneCount": 7,
+    "notes": "Seven topic-specific vector scene cards inspected. Central diagrams avoid the heading and caption zones; workflow cues are conceptual and contain no invented measurements."
+  }
+}
