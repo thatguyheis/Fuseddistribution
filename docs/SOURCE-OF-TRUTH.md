@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 5, 2026-11-03. Owner: Nick Hughes.
+Version 7, 2026-11-03. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -57,7 +57,7 @@ Nick has separately authorized two business-growth blog/reel pairs per Pacific d
 | Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 23:05 Pacific, after the 22:00 Buffer refill and five-minute scheduler grace. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
 | Generative diffusion | Optional and disabled by default. Prefer evidence-led charts, graphs, and clear flow diagrams; enable Stable Diffusion only for a reviewed gap that those graphics and cleared media cannot explain. | `scripts/render-missing-reels.sh`, `video/scripts/render.mjs`, render LaunchAgent |
 | Attention design review | New business-growth reels record a hash-bound attention review: a visible, spoken question hook in the first three seconds, specific viewer benefit, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. Measure the generated hook audio before encoding; reject above 3.5 seconds. The approved article hero must appear in encoded frame zero; blank or near-blank openings block release. | `video/scripts/attention-review.mjs`, `video/scripts/opening-hero.mjs`, `video/scripts/release-reel.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`, `docs/REEL-OPENING-SOP.md` |
-| Voice | Chatterbox Turbo with Nick's voice reference, source/model revisions and generation settings pinned in `video/tts-runtime.json`. Whisper is for speech recognition and word-timed captions, not voice synthesis. | `video/tts-runtime.json`, `video/scripts/chatterbox-tts.py`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
+| Voice | Pinned Chatterbox Standard with Nick's voice reference. Use exaggeration 0.75, CFG 0.3, temperature 0.8, min-p 0.05, top-p 1.0, repetition penalty 1.2 and 1 dB output peak headroom. Generate and record a new random seed per spoken segment. Split sentence-aware narration into chunks no longer than 240 characters. Whisper is for speech recognition and word-timed captions, not voice synthesis. | `video/tts-runtime.json`, `video/scripts/chatterbox-tts.py`, `video/scripts/generate-audio.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
 | Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
@@ -101,7 +101,7 @@ Nick has separately authorized two business-growth blog/reel pairs per Pacific d
 |---|---|
 | `fused-daily-publishing-owner` (08:30, 21:30) | Keep. Refocus on coin queue preparation (section 6, step 1). |
 | `fused-daily-profit-and-sop-evolution` | Keep, weekly review only |
-| `daily-business-growth-blog-and-reel` | Daily 23:00, GPT-6 Luna low; two serial business-growth pairs, after the Buffer refill and within the overnight render window |
+| `daily-business-growth-blog-and-reel` | Daily 23:05, GPT-5.6 Luna low; two serial business-growth pairs, after the Buffer refill and within the overnight render window |
 | `resume-fused-coin-video-production-tonight` | One-off from 2026-10-20. Retire. |
 | `daily-blog-backlog-monitor`, `fused-blog-backlog-recovery-watch`, `reel-audio-backlog-sequential-rerender`, `fused-final-buffer-pair-recovery`, `buffer-youtube-queue-maintenance` | Generic backlog work. Retire or rewrite for coin scope. |
 | `overnight-actions-review`, `book-factory-daily-audit-and-status` | Not part of Fused publishing. Leave alone. |

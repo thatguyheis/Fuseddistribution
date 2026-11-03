@@ -132,7 +132,7 @@ quality/deferred checkpoint before considering a retry handled.
   active run and monitor it rather than start a second producer. Buffer
   maintenance runs at 13:00, 16:01, 19:00 and 22:00 Pacific. Every pass covers YouTube Shorts, X, and Instagram, reuses
   authoritative checkpoints, and must not duplicate posts or occupied due times.
-- Pinned Chatterbox Turbo with Nick's voice reference is the production voice for new generations. Use the source, model revision and settings in `video/tts-runtime.json`. Whisper handles speech transcription and caption timing.
+- Pinned Chatterbox Standard with Nick's voice reference is the production voice for new generations. Use the source, model revision, expressive sampling settings and per-segment random seeds in `video/tts-runtime.json` and the audio manifest. Whisper handles speech transcription and caption timing.
 - Remotion variable text uses measured fitting. Script validation blocks missing or mismatched stat figures.
 - Audio cache entries are keyed by narration and voice so changed scripts cannot reuse stale speech.
 - Reels are timed from measured TTS audio, not word-count padding. The renderer permits a 0.2-second dialogue gap between segments and a 0.5-second final-card pad.

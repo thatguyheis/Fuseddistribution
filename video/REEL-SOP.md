@@ -83,7 +83,7 @@ To reinstall or update: `npx skills add remotion-dev/skills --global`
 
 ### 1. Voice (cloned, required)
 
-Production narration uses the pinned Chatterbox Turbo model locally with `voice-sample/voice-reference.wav`. The renderer defaults to `--voice=chatterbox` and fails clearly if the runtime or sample is unavailable. It never silently changes speakers. Whisper remains the caption transcription and word-timing tool.
+Production narration uses the pinned Chatterbox Standard model locally with `voice-sample/voice-reference.wav`. The renderer defaults to `--voice=chatterbox` and fails clearly if the runtime or sample is unavailable. It never silently changes speakers. Each newly synthesized segment receives a fresh random seed, recorded with its generation settings in the audio manifest. Whisper remains the caption transcription and word-timing tool.
 
 Chatterbox processes all stale segments in one batch and loads the model once per reel. A 3-4 minute reel can spend 15-25 minutes in local synthesis on this Mac before Remotion starts. Quiet output during that batch is normal; progress can be checked by counting `video/public/audio/<slug>/segment-*_tmp.wav` files.
 
@@ -1168,7 +1168,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Text | `#ffffff` white / `#afc6cf` muted |
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 720×1280 portrait @ 30fps |
-| Voice | Chatterbox Turbo using Nick's local voice reference; source, model pin and generation settings are in `video/tts-runtime.json` |
+| Voice | Chatterbox Standard using Nick's local voice reference; source, model pin, expressive generation settings, chunk limit and random seed policy are in `video/tts-runtime.json` |
 | Music | Approved trusted-cycle bed normalized to 20% of the narration signal (about -38 LUFS), or no music |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |
 

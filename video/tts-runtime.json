@@ -1,30 +1,30 @@
 {
-  "variant": "turbo",
+  "variant": "standard",
   "sourcePath": ".workflow-state/runtimes/chatterbox-5de7a54/src",
   "sourceRevision": "5de7a54aa4e5e2baadb0182dde554908b48b85c2",
-  "modelRepository": "ResembleAI/chatterbox-turbo",
-  "modelPath": "~/.cache/chatterbox-turbo/749d1c1a46eb10492095d68fbcf55691ccf137cd",
-  "modelRevision": "749d1c1a46eb10492095d68fbcf55691ccf137cd",
-  "modelFilesSha256": {
-    "t3_turbo_v1.safetensors": "fcf1f8c1d651bb7e3acd69ee5be269b4ac10c02980b7708213d598bc9f7cdf87",
-    "s3gen_meanflow.safetensors": "d65cb687a2ed581ee6cc297e919ffefa63386944f42364ae13b78a594945514f"
-  },
+  "modelRepository": "ResembleAI/chatterbox",
+  "modelPath": "~/.cache/huggingface/hub/models--ResembleAI--chatterbox/snapshots/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+  "modelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
   "modelLicense": "MIT",
   "standardModelPath": "~/.cache/huggingface/hub/models--ResembleAI--chatterbox/snapshots/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
   "standardModelRevision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
   "validatedAt": "2026-11-03",
-  "validationStatus": "passed-local-sample",
+  "validationStatus": "passed-expressive-sample",
   "voiceReference": "voice-sample/voice-reference.wav",
+  "outputPeakHeadroomDbfs": -1.0,
   "generation": {
+    "exaggeration": 0.75,
+    "cfgWeight": 0.3,
     "temperature": 0.8,
-    "top_p": 0.95,
-    "top_k": 1000,
-    "repetition_penalty": 1.2,
-    "chunkCharacters": 280,
-    "maxSpeechTokens": 580
+    "minP": 0.05,
+    "topP": 1.0,
+    "repetitionPenalty": 1.2,
+    "chunkCharacters": 240,
+    "maxSpeechTokens": 580,
+    "seedPolicy": "cryptographic-random-per-segment"
   },
-  "qualityProfile": "chatterbox-turbo-v1",
+  "qualityProfile": "chatterbox-standard-expressive-v1",
   "approvedBy": "Nick",
   "approvedAt": "2026-11-03",
-  "seed": 1337
+  "seedPolicy": "cryptographic-random-per-segment"
 }

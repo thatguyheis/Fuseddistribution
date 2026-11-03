@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, copyFileSyn
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync, spawnSync } from 'node:child_process';
-import { createHash } from 'node:crypto';
+import { createHash, randomInt } from 'node:crypto';
 import { audioDurationSeconds } from './audio-timing.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -50,10 +50,14 @@ export function chatterboxRuntime(voice = 'chatterbox') {
     generation: {
       ...configured.generation,
       ...(variant === 'standard' ? {
-        exaggeration: Number(process.env.CHATTERBOX_TTS_EXAGGERATION || configured.generation?.exaggeration || 0.4),
-        cfgWeight: Number(process.env.CHATTERBOX_TTS_CFG_WEIGHT || configured.generation?.cfgWeight || 0.5),
-        chunkCharacters: Number(process.env.CHATTERBOX_TTS_CHUNK_CHARS || configured.generation?.chunkCharacters || 280),
-        maxSpeechTokens: Number(process.env.CHATTERBOX_TTS_MAX_SPEECH_TOKENS || configured.generation?.maxSpeechTokens || 600),
+        exaggeration: Number(process.env.CHATTERBOX_TTS_EXAGGERATION ?? configured.generation?.exaggeration ?? 0.75),
+        cfgWeight: Number(process.env.CHATTERBOX_TTS_CFG_WEIGHT ?? configured.generation?.cfgWeight ?? 0.3),
+        temperature: Number(process.env.CHATTERBOX_TTS_TEMPERATURE ?? configured.generation?.temperature ?? 0.8),
+        minP: Number(process.env.CHATTERBOX_TTS_MIN_P ?? configured.generation?.minP ?? 0.05),
+        topP: Number(process.env.CHATTERBOX_TTS_TOP_P ?? configured.generation?.topP ?? 1.0),
+        repetitionPenalty: Number(process.env.CHATTERBOX_TTS_REPETITION_PENALTY ?? configured.generation?.repetitionPenalty ?? 1.2),
+        chunkCharacters: Number(process.env.CHATTERBOX_TTS_CHUNK_CHARS ?? configured.generation?.chunkCharacters ?? 240),
+        maxSpeechTokens: Number(process.env.CHATTERBOX_TTS_MAX_SPEECH_TOKENS ?? configured.generation?.maxSpeechTokens ?? 580),
       } : {}),
     },
   };
@@ -75,6 +79,8 @@ export function encodeChatterboxAudio(wavPath, outPath) {
 
 function chatterboxBatchToM4a(slug, jobs, voice) {
   const batchPath = `/tmp/chatterbox-${slug}-${process.pid}.json`;
+  const runtime = chatterboxRuntime(voice);
+  const generationSeed = randomInt(0, 2 ** 32);
   const batch = jobs.map(({ttsText, outPath}) => ({
     text: ttsText,
     out_path: outPath.replace(/\.m4a$/, '_tmp.wav'),
@@ -92,13 +98,18 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
     killSignal: 'SIGKILL',
     env: {
       ...process.env,
-      CHATTERBOX_TTS_VARIANT: chatterboxRuntime(voice).variant,
-      CHATTERBOX_MODEL_PATH: chatterboxRuntime(voice).modelPath,
-      CHATTERBOX_STANDARD_MODEL_PATH: chatterboxRuntime(voice).modelPath,
-      CHATTERBOX_TTS_CHUNK_CHARS: String(chatterboxRuntime(voice).generation?.chunkCharacters || 280),
-      CHATTERBOX_TTS_MAX_SPEECH_TOKENS: String(chatterboxRuntime(voice).generation?.maxSpeechTokens || 600),
-      CHATTERBOX_TTS_EXAGGERATION: String(chatterboxRuntime(voice).generation?.exaggeration || 0.4),
-      CHATTERBOX_TTS_CFG_WEIGHT: String(chatterboxRuntime(voice).generation?.cfgWeight || 0.5),
+      CHATTERBOX_TTS_VARIANT: runtime.variant,
+      CHATTERBOX_MODEL_PATH: runtime.modelPath,
+      CHATTERBOX_STANDARD_MODEL_PATH: runtime.modelPath,
+      CHATTERBOX_TTS_CHUNK_CHARS: String(runtime.generation?.chunkCharacters ?? 240),
+      CHATTERBOX_TTS_MAX_SPEECH_TOKENS: String(runtime.generation?.maxSpeechTokens ?? 580),
+      CHATTERBOX_TTS_EXAGGERATION: String(runtime.generation?.exaggeration ?? 0.75),
+      CHATTERBOX_TTS_CFG_WEIGHT: String(runtime.generation?.cfgWeight ?? 0.3),
+      CHATTERBOX_TTS_TEMPERATURE: String(runtime.generation?.temperature ?? 0.8),
+      CHATTERBOX_TTS_MIN_P: String(runtime.generation?.minP ?? 0.05),
+      CHATTERBOX_TTS_TOP_P: String(runtime.generation?.topP ?? 1.0),
+      CHATTERBOX_TTS_REPETITION_PENALTY: String(runtime.generation?.repetitionPenalty ?? 1.2),
+      CHATTERBOX_TTS_SEED: String(generationSeed),
       HF_HUB_OFFLINE: process.env.HF_HUB_OFFLINE || '1',
       TRANSFORMERS_OFFLINE: process.env.TRANSFORMERS_OFFLINE || '1',
     },
@@ -106,7 +117,7 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
   const measurements = join(ROOT, '..', '.workflow-state', 'tts-runs');
   mkdirSync(measurements, {recursive: true});
   writeFileSync(join(measurements, `${slug}-${process.pid}-${jobs[0].index}.json`), JSON.stringify({
-    runtime: chatterboxRuntime(voice), elapsedSeconds: (performance.now() - started) / 1000,
+    runtime, generationSeed, elapsedSeconds: (performance.now() - started) / 1000,
     exitCode: result.status, signal: result.signal, error: result.error?.code ?? null,
     segments: jobs.map(job => job.index), progress: result.stdout?.toString().trim(),
   }, null, 2));
@@ -126,6 +137,7 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
     encodeChatterboxAudio(tmpWav, outPath);
     rmSync(tmpWav, {force: true});
   }
+  return generationSeed;
 }
 
 function coquiToM4a(text, outPath) {
@@ -266,9 +278,9 @@ async function generateAudio(slug, requestedVoice = 'chatterbox', force = false,
       try {
         // Process one segment at a time so a slow TTS segment cannot hide
         // completed audio or discard the whole reel's progress.
-        chatterboxBatchToM4a(slug, [job], voice);
+        const generationSeed = chatterboxBatchToM4a(slug, [job], voice);
         manifest.segments ??= {};
-        manifest.segments[job.index] = {hash: job.hash, voice, text: job.ttsText, runtime: chatterboxRuntime(voice)};
+        manifest.segments[job.index] = {hash: job.hash, voice, text: job.ttsText, runtime: chatterboxRuntime(voice), generationSeed};
         writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
         console.log(`  ✓ segment-${job.index}.m4a (${job.segmentType})`);
         generated++;

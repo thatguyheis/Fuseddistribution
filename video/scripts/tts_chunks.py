@@ -2,8 +2,8 @@
 import re
 
 def split_for_tts(text, max_chunk_chars=140):
-    if max_chunk_chars < 40:
-        raise ValueError("TTS chunk limit must be at least 40 characters")
+    if not 40 <= max_chunk_chars <= 300:
+        raise ValueError("TTS chunk limit must be between 40 and 300 characters")
     sentences = re.split(r"(?<=[.!?])\s+", text.strip())
     chunks = []
     current = ""
@@ -12,6 +12,8 @@ def split_for_tts(text, max_chunk_chars=140):
         pieces = []
         piece = ""
         for word in words:
+            if len(word) > max_chunk_chars:
+                raise ValueError(f"TTS token exceeds the {max_chunk_chars}-character chunk limit")
             candidate = f"{piece} {word}".strip()
             if piece and len(candidate) > max_chunk_chars:
                 pieces.append(piece)
@@ -29,6 +31,9 @@ def split_for_tts(text, max_chunk_chars=140):
                 current = candidate
     if current:
         chunks.append(current)
-    return chunks or [text]
+    result = chunks or [text]
+    if any(len(chunk) > max_chunk_chars for chunk in result):
+        raise ValueError("TTS chunk splitting exceeded the requested character limit")
+    return result
 
 

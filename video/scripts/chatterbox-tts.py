@@ -7,8 +7,10 @@ Falls back to default voice if no speaker_wav provided.
 """
 import argparse
 import json
+import math
 import os
 import re
+import secrets
 import warnings
 import hashlib
 import time
@@ -84,7 +86,8 @@ if device not in {"mps", "cpu"}:
     raise ValueError("CHATTERBOX_TTS_DEVICE must be either 'mps' or 'cpu'")
 print(f"Loading Chatterbox {variant} on {device}, threads={threads}", flush=True)
 model_path = os.environ.get("CHATTERBOX_MODEL_PATH", config.get("modelPath", ""))
-standard_model_path = os.environ.get("CHATTERBOX_STANDARD_MODEL_PATH", "") or model_path
+standard_model_path = (os.environ.get("CHATTERBOX_STANDARD_MODEL_PATH", "")
+                      or config.get("standardModelPath", "") or model_path)
 if variant in {"turbo", "nano"}:
     model = (ChatterboxTurboTTS.from_local(Path(model_path).expanduser(), device=device, nano=variant == "nano")
              if model_path else ChatterboxTurboTTS.from_pretrained(device=device, nano=variant == "nano"))
@@ -132,13 +135,12 @@ else:
 
     model.t3.inference_turbo = bounded_turbo_inference
 
-from tts_settings import nano_generation_settings, sampling_seed, turbo_generation_settings
+from tts_settings import nano_generation_settings, sampling_seed, standard_generation_settings, turbo_generation_settings
 
 generation = config.get("generation", {})
-kwargs = (nano_generation_settings(config) if variant == "nano" else turbo_generation_settings(config) if variant == "turbo" else {
-    "exaggeration": float(os.environ.get("CHATTERBOX_TTS_EXAGGERATION", generation.get("exaggeration", 0.4))),
-    "cfg_weight": float(os.environ.get("CHATTERBOX_TTS_CFG_WEIGHT", generation.get("cfgWeight", 0.5))),
-})
+kwargs = (nano_generation_settings(config) if variant == "nano" else
+          turbo_generation_settings(config) if variant == "turbo" else
+          standard_generation_settings(config))
 if args.speaker_wav:
     # NumPy 2 loudness scaling in this runtime promotes the reference to
     # float64, which Turbo/Nano's float32 speech tokenizer rejects. The curated
@@ -147,6 +149,18 @@ if args.speaker_wav:
     model.prepare_conditionals(args.speaker_wav, exaggeration=kwargs["exaggeration"], **prepare_options)
 
 max_chunk_chars = int(os.environ.get("CHATTERBOX_TTS_CHUNK_CHARS", generation.get("chunkCharacters", 280)))
+if not 40 <= max_chunk_chars <= 300:
+    raise ValueError("CHATTERBOX_TTS_CHUNK_CHARS must be between 40 and 300")
+peak_headroom_dbfs = float(config.get("outputPeakHeadroomDbfs", -1.0))
+if not math.isfinite(peak_headroom_dbfs) or not -12 <= peak_headroom_dbfs < 0:
+    raise ValueError("outputPeakHeadroomDbfs must be between -12 dBFS and 0 dBFS")
+peak_ceiling = 10 ** (peak_headroom_dbfs / 20)
+
+seed_value = os.environ.get("CHATTERBOX_TTS_SEED")
+base_seed = secrets.randbelow(2**32) if seed_value is None else int(seed_value)
+if not 0 <= base_seed < 2**32:
+    raise ValueError("CHATTERBOX_TTS_SEED must be an unsigned 32-bit integer")
+print(f"Chatterbox generation seed={base_seed}", flush=True)
 
 
 from tts_chunks import split_for_tts
@@ -155,12 +169,15 @@ from tts_chunks import split_for_tts
 # Each completed chunk is durable. Its key includes exact text, voice bytes and
 # synthesis settings, so an interrupted segment can resume without stale audio.
 voice_hash = hashlib.sha256(Path(args.speaker_wav).read_bytes()).hexdigest() if args.speaker_wav else "default"
+chunk_number = 0
 for job in jobs:
     parts = []
     checkpoint_dir = Path(job["out_path"] + ".chunks")
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     for index, chunk in enumerate(split_for_tts(job["text"], max_chunk_chars)):
-        key = hashlib.sha256(json.dumps(["v3", variant, config.get("sourceRevision", "installed"), config.get("modelRevision"), chunk, voice_hash, kwargs, max_speech_tokens, sampling_seed(config, index)], sort_keys=True).encode()).hexdigest()
+        chunk_seed = sampling_seed(base_seed, chunk_number)
+        chunk_number += 1
+        key = hashlib.sha256(json.dumps(["v5", variant, config.get("sourceRevision", "installed"), config.get("modelRevision"), chunk, voice_hash, kwargs, max_speech_tokens, peak_headroom_dbfs, chunk_seed], sort_keys=True).encode()).hexdigest()
         checkpoint = checkpoint_dir / (key + ".wav")
         if checkpoint.exists():
             part, sample_rate = torchaudio.load(str(checkpoint))
@@ -169,10 +186,13 @@ for job in jobs:
             print(f"Recovered chunk {index + 1}", flush=True)
         else:
             started = time.monotonic()
-            torch.manual_seed(sampling_seed(config, index))
+            torch.manual_seed(chunk_seed)
             part = model.generate(chunk, **kwargs)
             if not torch.isfinite(part).all() or part.numel() < model.sr // 10:
                 raise RuntimeError("Invalid generated audio")
+            peak = part.abs().max()
+            if peak > peak_ceiling:
+                part = part * (peak_ceiling / peak)
             temporary = checkpoint.with_suffix(".partial.wav")
             torchaudio.save(str(temporary), part, model.sr)
             temporary.replace(checkpoint)
