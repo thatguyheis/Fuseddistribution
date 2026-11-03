@@ -13,16 +13,18 @@ test('Chatterbox is the default when the cloned voice runtime is installed', () 
   assert.notEqual(audioCacheKey('Same text', 'chatterbox-standard'), audioCacheKey('Same text', 'chatterbox'));
 });
 
-test('production Chatterbox defaults to the pinned high quality Standard profile', () => {
+test('production Chatterbox defaults to the pinned Turbo profile', () => {
   const runtime = chatterboxRuntime('chatterbox');
-  assert.equal(runtime.variant, 'standard');
-  assert.equal(runtime.qualityProfile, 'chatterbox-standard-hq-v1');
-  assert.equal(runtime.modelRevision, '5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18');
+  assert.equal(runtime.variant, 'turbo');
+  assert.equal(runtime.qualityProfile, 'chatterbox-turbo-v1');
+  assert.equal(runtime.modelRevision, '749d1c1a46eb10492095d68fbcf55691ccf137cd');
   assert.deepEqual(runtime.generation, {
-    exaggeration: 0.4,
-    cfgWeight: 0.5,
+    temperature: 0.8,
+    top_p: 0.95,
+    top_k: 1000,
+    repetition_penalty: 1.2,
     chunkCharacters: 280,
-    maxSpeechTokens: 600,
+    maxSpeechTokens: 580,
   });
   assert.notEqual(audioCacheKey('Same words', 'chatterbox'), audioCacheKey('Same words', 'chatterbox-standard'));
 });

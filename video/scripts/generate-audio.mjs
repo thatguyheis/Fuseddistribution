@@ -29,8 +29,8 @@ function sayToM4a(text, outPath) {
 export function boundedTtsTimeout(requested, preflight = false) {
   if (!Number.isFinite(requested) || requested < 1) throw new Error('Invalid TTS timeout');
   // Preflight must synthesize changed Chatterbox segments to validate the
-  // actual runtime and decoded audio. Standard-quality segments can take
-  // several minutes locally, so they share the normal bounded ceiling.
+  // actual runtime and decoded audio. Local Chatterbox segments can take
+  // several minutes, so all variants share the normal bounded ceiling.
   return Math.min(requested, 2_700_000);
 }
 
@@ -42,10 +42,10 @@ export function chatterboxRuntime(voice = 'chatterbox') {
     ...configured,
     variant,
     modelPath: variant === 'standard'
-      ? process.env.CHATTERBOX_STANDARD_MODEL_PATH || configured.modelPath
+      ? process.env.CHATTERBOX_STANDARD_MODEL_PATH || configured.standardModelPath || configured.modelPath
       : configured.modelPath,
     modelRevision: variant === 'standard'
-      ? process.env.CHATTERBOX_STANDARD_MODEL_REVISION || configured.modelRevision
+      ? process.env.CHATTERBOX_STANDARD_MODEL_REVISION || configured.standardModelRevision || configured.modelRevision
       : configured.modelRevision,
     generation: {
       ...configured.generation,

@@ -19,9 +19,9 @@ Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (Septemb
 
 ## Current attention and overnight production standard (November 2, 2026)
 
-`docs/SOURCE-OF-TRUTH.md` controls the current schedules and scope. Coin-history reels render in two-reel batches at 01:00 and 04:00 Pacific. The separate business-growth automation creates two pairs at 23:00 Pacific, after the Buffer refill, and renders serially. Keep heavy TTS/rendering out of daytime work. Stable Diffusion is opt-in, disabled by default, and capped at four minutes per optional image attempt; use source-backed data graphics and flow diagrams first. See `docs/REEL-ENRICHMENT-SOP.md`.
+`docs/SOURCE-OF-TRUTH.md` controls the current schedules and scope. Coin-history reels render in two-reel batches at 01:00 and 04:00 Pacific. The separate business-growth automation creates two pairs at 23:05 Pacific, after the Buffer refill and five-minute scheduler grace, and renders serially. Keep heavy TTS/rendering out of daytime work. Stable Diffusion is opt-in, disabled by default, and capped at four minutes per optional image attempt; use source-backed data graphics and flow diagrams first. See `docs/REEL-ENRICHMENT-SOP.md`.
 
-For new business-growth reels, the approved source gate requires `attention-review.json` with `attentionOptimizationVersion: 1` in `qa.json`. Open with a visible and spoken viewer problem or benefit in the first seconds, use no greeting or logo pre-roll, pay the hook off early through two to four mapped beats, and end with one concise CTA and one primary action. Keep the first spoken hook to 12 words and four seconds maximum, and the on-screen CTA to 10 words maximum. Review actual platform retention/action analytics after they mature; do not treat generic benchmark numbers as guarantees. Platform-specific notes and sources are in `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`.
+For new business-growth reels, the approved source gate requires `attention-review.json` with `attentionOptimizationVersion: 1` in `qa.json`. When `hook.questionHookRequired` is true, use the same specific question in spoken narration and visible text at frame zero. Pay off the hook early through two to four mapped beats and end with one concise CTA and one primary action. Keep the first spoken hook to 12 words and four seconds maximum, and the on-screen CTA to 10 words maximum. Every new reel starts with its approved article hero at frame zero, never a blank/near-blank frame, with encoded-frame visual review required before Buffer. Review actual platform retention/action analytics after they mature; do not treat generic benchmark numbers as guarantees. Platform-specific notes and sources are in `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`.
 
 ## September 7 reliability correction
 
@@ -83,7 +83,7 @@ To reinstall or update: `npx skills add remotion-dev/skills --global`
 
 ### 1. Voice (cloned, required)
 
-Production narration uses Chatterbox locally with `voice-sample/voice-reference.wav`. The renderer defaults to `--voice=chatterbox` and fails clearly if the runtime or sample is unavailable. It never silently changes speakers.
+Production narration uses the pinned Chatterbox Turbo model locally with `voice-sample/voice-reference.wav`. The renderer defaults to `--voice=chatterbox` and fails clearly if the runtime or sample is unavailable. It never silently changes speakers. Whisper remains the caption transcription and word-timing tool.
 
 Chatterbox processes all stale segments in one batch and loads the model once per reel. A 3-4 minute reel can spend 15-25 minutes in local synthesis on this Mac before Remotion starts. Quiet output during that batch is normal; progress can be checked by counting `video/public/audio/<slug>/segment-*_tmp.wav` files.
 
@@ -1168,7 +1168,7 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 | Text | `#ffffff` white / `#afc6cf` muted |
 | Font | Bebas Neue (stats/titles/hook/overlay), Poppins 600 (chart labels), Poppins 400 (subtitles) |
 | Format | 720×1280 portrait @ 30fps |
-| Voice | Full Chatterbox Standard using Nick's local voice reference; settings and model pin are in `video/tts-runtime.json` |
+| Voice | Chatterbox Turbo using Nick's local voice reference; source, model pin and generation settings are in `video/tts-runtime.json` |
 | Music | Approved trusted-cycle bed normalized to 20% of the narration signal (about -38 LUFS), or no music |
 | Subtitles | Sentence-by-sentence, semi-transparent pill, bottom of frame |
 

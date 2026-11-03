@@ -1,4 +1,4 @@
-"""Explicit, validated Nano sampling settings used by the reviewed baseline."""
+"""Validated sampling settings for the pinned Nano and Turbo runtimes."""
 import math
 
 
@@ -17,6 +17,23 @@ def nano_generation_settings(config):
     if not isinstance(settings["top_k"], int) or settings["top_k"] < 1 or settings["repetition_penalty"] < 1:
         raise ValueError("Nano top_k/repetition_penalty are out of range")
     # Nano ignores CFG, exaggeration and min_p. Keep them disabled explicitly.
+    return {**settings, "exaggeration": 0.0, "cfg_weight": 0.0, "min_p": 0.0}
+
+
+def turbo_generation_settings(config):
+    values = config.get("generation", {})
+    defaults = {"temperature": 0.8, "top_p": 0.95, "top_k": 1000, "repetition_penalty": 1.2}
+    unknown = set(values) - set(defaults) - {"maxSpeechTokens", "chunkCharacters"}
+    if unknown:
+        raise ValueError(f"Unsupported Turbo generation settings: {sorted(unknown)}")
+    settings = {**defaults, **{key: value for key, value in values.items() if key in defaults}}
+    for name, value in settings.items():
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+            raise ValueError(f"Invalid Turbo {name}")
+    if not 0 < settings["temperature"] <= 2 or not 0 < settings["top_p"] <= 1:
+        raise ValueError("Turbo temperature/top_p are out of range")
+    if not isinstance(settings["top_k"], int) or settings["top_k"] < 1 or settings["repetition_penalty"] < 1:
+        raise ValueError("Turbo top_k/repetition_penalty are out of range")
     return {**settings, "exaggeration": 0.0, "cfg_weight": 0.0, "min_p": 0.0}
 
 

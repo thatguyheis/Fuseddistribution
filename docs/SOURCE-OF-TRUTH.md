@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 4, 2026-11-02. Owner: Nick Hughes.
+Version 5, 2026-11-03. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -54,10 +54,10 @@ Nick has separately authorized two business-growth blog/reel pairs per Pacific d
 | Reel release duration | 100 to 135 seconds measured from the mastered MP4 | `video/scripts/release-reel.mjs:110` |
 | Reel ending | Spoken question card, 10 words or fewer, inside the hashed transcript | release gate, `run-coin-history-drafts.py` |
 | Reel file size | Target 44 MB, must be under 50,000,000 bytes (master). Public derivatives for X and Instagram must be under 25 MiB. | `scripts/render-missing-reels.sh`, Buffer planners |
-| Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 23:00 Pacific, after the 22:00 Buffer refill. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
+| Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 23:05 Pacific, after the 22:00 Buffer refill and five-minute scheduler grace. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
 | Generative diffusion | Optional and disabled by default. Prefer evidence-led charts, graphs, and clear flow diagrams; enable Stable Diffusion only for a reviewed gap that those graphics and cleared media cannot explain. | `scripts/render-missing-reels.sh`, `video/scripts/render.mjs`, render LaunchAgent |
-| Attention design review | New business-growth reels record a hash-bound attention review: specific first-three-second promise, visible hook, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. Measure the generated hook audio before encoding; reject above 3.5 seconds. | `video/scripts/approved-sources.mjs`, `video/scripts/render.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
-| Voice | Chatterbox Standard with Nick's voice reference, settings pinned in `video/tts-runtime.json`. Nano and Zoe only for explicit recovery tests Nick approves. | `video/tts-runtime.json` |
+| Attention design review | New business-growth reels record a hash-bound attention review: a visible, spoken question hook in the first three seconds, specific viewer benefit, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. Measure the generated hook audio before encoding; reject above 3.5 seconds. The approved article hero must appear in encoded frame zero; blank or near-blank openings block release. | `video/scripts/attention-review.mjs`, `video/scripts/opening-hero.mjs`, `video/scripts/release-reel.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`, `docs/REEL-OPENING-SOP.md` |
+| Voice | Chatterbox Turbo with Nick's voice reference, source/model revisions and generation settings pinned in `video/tts-runtime.json`. Whisper is for speech recognition and word-timed captions, not voice synthesis. | `video/tts-runtime.json`, `video/scripts/chatterbox-tts.py`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
 | Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |

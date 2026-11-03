@@ -18,6 +18,7 @@ export function attentionReviewErrors(review, scriptText) {
   const endingBlock = section(scriptText, 'QUESTION|CTA');
   const endingText = field(endingBlock, 'Text(?:\\s+on\\s+screen)?');
   const endingNarration = field(endingBlock, 'Narration');
+  const questionHookRequired = review?.hook?.questionHookRequired === true;
 
   if (review?.version !== 1 || review?.pass !== true) errors.push('attention review must be version 1 and pass');
   if (!hookText || hookText !== review?.hook?.spokenText || !Number.isFinite(hookDuration)
@@ -25,6 +26,11 @@ export function attentionReviewErrors(review, scriptText) {
     || review?.hook?.startsAtSeconds !== 0 || review?.hook?.specificViewerProblemOrBenefit !== true
     || review?.hook?.visibleWithoutSound !== true) {
     errors.push('hook must match the script and state a concise, visible problem or benefit in the first seconds');
+  }
+  if (questionHookRequired && (!hookText.trim().endsWith('?')
+    || !String(review?.hook?.visibleText ?? '').trim().endsWith('?')
+    || review?.hook?.visibleText !== hookText)) {
+    errors.push('this reel requires the same concise question in spoken narration and visible opening text');
   }
   const beats = review?.payoffBeats;
   if (!Array.isArray(beats) || beats.length < 2 || beats.length > 4

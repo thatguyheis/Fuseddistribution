@@ -65,7 +65,7 @@ torch.set_num_interop_threads(1)
 config_path = Path(__file__).resolve().parent.parent / "tts-runtime.json"
 config = json.loads(config_path.read_text()) if config_path.exists() else {}
 variant = os.environ.get("CHATTERBOX_TTS_VARIANT", config.get("variant", "standard"))
-if variant not in {"standard", "nano"}:
+if variant not in {"standard", "turbo", "nano"}:
     raise ValueError("Unsupported Chatterbox variant")
 source = os.environ.get("CHATTERBOX_SOURCE_PATH", config.get("sourcePath", ""))
 if source:
@@ -85,9 +85,9 @@ if device not in {"mps", "cpu"}:
 print(f"Loading Chatterbox {variant} on {device}, threads={threads}", flush=True)
 model_path = os.environ.get("CHATTERBOX_MODEL_PATH", config.get("modelPath", ""))
 standard_model_path = os.environ.get("CHATTERBOX_STANDARD_MODEL_PATH", "") or model_path
-if variant == "nano":
-    model = (ChatterboxTurboTTS.from_local(Path(model_path).expanduser(), device=device, nano=True)
-             if model_path else ChatterboxTurboTTS.from_pretrained(device=device, nano=True))
+if variant in {"turbo", "nano"}:
+    model = (ChatterboxTurboTTS.from_local(Path(model_path).expanduser(), device=device, nano=variant == "nano")
+             if model_path else ChatterboxTurboTTS.from_pretrained(device=device, nano=variant == "nano"))
 else:
     model = (ChatterboxTTS.from_local(Path(standard_model_path).expanduser(), device=device)
              if standard_model_path else ChatterboxTTS.from_pretrained(device=device))
@@ -97,7 +97,10 @@ else:
 # MPS for an hour. Bound that internal call so the outer batch timeout and WAV
 # checkpoints can provide predictable recovery. The default still allows
 # roughly 24 seconds of speech per text chunk.
-max_speech_tokens = int(os.environ.get("CHATTERBOX_TTS_MAX_SPEECH_TOKENS", "600"))
+max_speech_tokens = int(os.environ.get(
+    "CHATTERBOX_TTS_MAX_SPEECH_TOKENS",
+    config.get("generation", {}).get("maxSpeechTokens", 600),
+))
 if not 100 <= max_speech_tokens <= 1000:
     raise ValueError("CHATTERBOX_TTS_MAX_SPEECH_TOKENS must be between 100 and 1000")
 
@@ -129,18 +132,18 @@ else:
 
     model.t3.inference_turbo = bounded_turbo_inference
 
-from tts_settings import nano_generation_settings, sampling_seed
+from tts_settings import nano_generation_settings, sampling_seed, turbo_generation_settings
 
 generation = config.get("generation", {})
-kwargs = (nano_generation_settings(config) if variant == "nano" else {
+kwargs = (nano_generation_settings(config) if variant == "nano" else turbo_generation_settings(config) if variant == "turbo" else {
     "exaggeration": float(os.environ.get("CHATTERBOX_TTS_EXAGGERATION", generation.get("exaggeration", 0.4))),
     "cfg_weight": float(os.environ.get("CHATTERBOX_TTS_CFG_WEIGHT", generation.get("cfgWeight", 0.5))),
 })
 if args.speaker_wav:
     # NumPy 2 loudness scaling in this runtime promotes the reference to
-    # float64, which the float32 speech tokenizer rejects. The curated voice
-    # reference already has a fixed level; preserve its original samples.
-    prepare_options = {"norm_loudness": False} if variant == "nano" else {}
+    # float64, which Turbo/Nano's float32 speech tokenizer rejects. The curated
+    # voice reference already has a fixed level; preserve its original samples.
+    prepare_options = {"norm_loudness": False} if variant in {"turbo", "nano"} else {}
     model.prepare_conditionals(args.speaker_wav, exaggeration=kwargs["exaggeration"], **prepare_options)
 
 max_chunk_chars = int(os.environ.get("CHATTERBOX_TTS_CHUNK_CHARS", generation.get("chunkCharacters", 280)))
