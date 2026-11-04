@@ -826,6 +826,9 @@
       .channel-grid { list-style: none; margin: 0 0 18px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
       .channel-grid li { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; padding: 10px 16px; border-radius: 14px; border: 1px solid var(--line); background: rgba(88,214,255,0.05); font-weight: 700; }
       .channel-grid small { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; }
+      .channel-grid li.chip-wide { grid-column: span 2; }
+      .channel-grid li span { white-space: nowrap; }
+      .plan-features .inline-link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
       .channel-note { margin: 0; max-width: 760px; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
       .sec-lead { margin: 0 0 30px; max-width: 720px; color: var(--muted); line-height: 1.65; }
 
@@ -1052,7 +1055,7 @@
               <li>Reels narrated in your own cloned voice, with captions and charts</li>
               <li>Every post fact checked before it goes live</li>
               <li>You approve content before it posts, or it goes out after 48 hours</li>
-              <li>Posted for you to 3 social channels you choose (<a href="#social-channels">see the list</a>)</li>
+              <li><span>Posted for you to 3 social channels you choose. <a class="inline-link" href="#social-channels">See all 11</a></span></li>
               <li>Monthly email newsletter written, scheduled, and sent</li>
               <li>Fresh AI brand images every month</li>
               <li>Review requests sent for you, review replies drafted</li>
@@ -1187,7 +1190,7 @@
           <span class="sec-label">Social channels</span>
           <h2>Post where your customers already are.</h2>
           <p class="sec-lead">Standard includes 3 social channels. You pick them from the list below, and every blog post and reel goes out to all three. Expansion adds more channels and sets each one up around your audience, so if your business is on 4, 6 or all of them, they are all covered.</p>
-          <ul class="channel-grid" aria-label="Supported social channels"><li>Instagram</li><li>Facebook</li><li>TikTok</li><li>YouTube</li><li>LinkedIn</li><li>X</li><li>Pinterest</li><li>Threads</li><li>Bluesky</li><li>Mastodon</li><li>Google Business Profile<small>Expansion</small></li></ul>
+          <ul class="channel-grid" aria-label="Supported social channels"><li>Instagram</li><li>Facebook</li><li>TikTok</li><li>YouTube</li><li>LinkedIn</li><li>X</li><li>Pinterest</li><li>Threads</li><li>Bluesky</li><li>Mastodon</li><li class="chip-wide"><span>Google Business Profile</span><small>Expansion</small></li></ul>
           <p class="channel-note">Facebook Pages, Instagram business, creator and personal accounts, LinkedIn profiles and company pages, and Pinterest business accounts are supported. Facebook personal profiles, LinkedIn groups and Pinterest personal accounts can't be connected because those platforms don't allow it. Google Business Profile posts come with Expansion.</p>
         </section>
 
