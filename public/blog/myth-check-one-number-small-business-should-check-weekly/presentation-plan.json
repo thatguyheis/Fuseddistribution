@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "source": "fused-original-vector-graphics",
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-0.jpg",
+        "sha256": "ef50a8d80b522f1c6447cb8e01114566a12ef73ec77d06ee837e4299cccc75ec",
+        "weight": 1,
+        "title": "Does the lowest",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-1.jpg",
+        "sha256": "1a8b1cf285fd603766ea05417efcf3d737691e303156ce627a645708d9a01a82",
+        "weight": 1,
+        "title": "CAC IS ONE VIEW",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-2.jpg",
+        "sha256": "09761ec4dac528791bf73a0f3668195e8b6773fe166a197fd57a4c90d30e134a",
+        "weight": 1,
+        "title": "MATCH THE SCOPE",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-3.jpg",
+        "sha256": "3add98d575c0e4622ef7197d738d138d72db4a9c0d92b38420e3a9868ab16990",
+        "weight": 1,
+        "title": "FICTIONAL EXAMPLE",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-4.jpg",
+        "sha256": "010c81b617f467e6e76cddac076b4020a94a3ccd71baf5dc1d51a5edef349e7c",
+        "weight": 1,
+        "title": "CHECK THE DENOMINATOR",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/myth-check-one-number-small-business-should-check-weekly/images/scene-5.jpg",
+        "sha256": "e3428a986f258bbf7e2179050693941bbd2ad2d475cee8600c59f6a11cf824bd",
+        "weight": 1,
+        "title": "ONE QUESTION",
+        "eyebrow": "CUSTOMER ACQUISITION COST",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

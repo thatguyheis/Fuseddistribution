@@ -30,9 +30,9 @@ The example also has a limitation. A first order does not tell you whether the c
 
 Write the cost rule before comparing channels. For example, decide whether the review includes ad spend only, or ad spend plus creative production, landing page work, platform fees, referral fees, and allocated staff time. You do not have to include every possible cost in every weekly report. You do have to use the same rule for the options being compared and keep the rule visible.
 
-Dates matter too. Use a stated start and end date for spend and customer counts. If customers usually need more than a week to decide, a same week CAC may be preliminary. Mark the review as preliminary and choose a later check date. Do not compare a mature channel’s completed customer count with a newer channel whose customers have not had the same time to convert.
+Dates matter too. Use a stated start and end date for spend and customer counts. If customers usually need more than a week to decide, a same week CAC may be preliminary. Mark the review as preliminary and choose a later check date. Do not compare a mature channel’s completed customer count with a newer channel whose customers have not had the same time to convert. For more on this, see [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/).
 
-Attribution also needs a boundary. A customer may see an ad, hear a referral, and later search for the business. Record the source method and keep unknown or mixed attribution visible. A platform report can show conversions associated with its tracking setup, but that does not mean every tracked action is a completed paying customer.
+Attribution also needs a boundary. A customer may see an ad, hear a referral, and later search for the business. Record the source method and keep unknown or mixed attribution visible. A platform report can show conversions associated with its tracking setup, but that does not mean every tracked action is a completed paying customer. For more on this, see [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/).
 
 Google Ads makes this distinction explicit in its “All conversions” guidance. The column can include conversion actions that are not in the main “Conversions” column, as well as certain calls, store visits, and view through conversions. Google says the column can be segmented by conversion action and source, and it advises recording enough conversions to gain meaningful business insights. That means a conversion count needs a definition before you use it as the denominator in CAC.
 
@@ -67,7 +67,16 @@ If the answer to several questions is unknown, keep the decision small. Improve 
 
 So keep checking CAC. Just do not let it make the whole decision alone. If you have compared two channels recently, what did you review beside CAC: first order contribution, repeat buying, retention, or something else? Share one measure you would add to the weekly table.
 
-**Sources**
+## Sources
 
-- Business Development Bank of Canada, “Marketing KPIs: A guide for business owners,” updated August 1, 2023: https://www.bdc.ca/en/articles-tools/marketing-sales-export/marketing/marketing-kpis-a-guide-business-owners
-- Google Ads Help, “About ‘All conversions’,” accessed November 4, 2026: https://support.google.com/google-ads/answer/3419678?hl=en
+- Business Development Bank of Canada, “Marketing KPIs: A guide for business owners,” accessed November 4, 2026: [BDC marketing KPI guide](https://www.bdc.ca/en/articles-tools/marketing-sales-export/marketing/marketing-kpis-a-guide-business-owners)
+- Google Ads Help, “About ‘All conversions’,” accessed November 4, 2026: [Google Ads All conversions](https://support.google.com/google-ads/answer/3419678?hl=en)
+
+## Related
+
+- [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+- [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/)
+- [Step by Step: The One Number Every Small Business Should Check Weekly](/blog/calculate-customer-acquisition-cost-weekly-step-by-step/)
+
+Read next: [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+

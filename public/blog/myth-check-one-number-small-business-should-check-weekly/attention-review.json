@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Does the lowest acquisition cost win?",
+    "visibleText": "Does the lowest acquisition cost win?",
+    "spokenSeconds": 2.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Original portrait hero has the exact approved question, visible at frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: CAC is only one view",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Keep scope and dates equal",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Fictional arithmetic only",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check conversion quality and sample",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "What do you compare with CAC?",
+    "spokenText": "What do you compare with CAC?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question followed by practical checks holds attention through the supported payoff.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare like platform and duration after sufficient observations; record sample size."
+  }
+}

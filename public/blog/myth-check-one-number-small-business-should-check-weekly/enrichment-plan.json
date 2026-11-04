@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 3,
+      "kind": "table",
+      "title": "Fictional first order comparison",
+      "rows": [
+        {
+          "label": "A: acquisition cost",
+          "detail": "$20 per new customer"
+        },
+        {
+          "label": "A: contribution before CAC",
+          "detail": "$30; remainder $10"
+        },
+        {
+          "label": "B: acquisition cost",
+          "detail": "$30 per new customer"
+        },
+        {
+          "label": "B: contribution before CAC",
+          "detail": "$90; remainder $60"
+        }
+      ],
+      "source": "Fictional example; excludes other business costs",
+      "takeaway": "The lowest CAC does not decide every outcome"
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    },
+    {
+      "segmentIndex": 2,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    }
+  ]
+}

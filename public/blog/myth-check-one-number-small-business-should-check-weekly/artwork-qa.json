@@ -1,0 +1,14 @@
+{
+  "slug": "myth-check-one-number-small-business-should-check-weekly",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-04T18:03:28.498Z",
+  "pass": true,
+  "hero": {
+    "sha256": "ef50a8d80b522f1c6447cb8e01114566a12ef73ec77d06ee837e4299cccc75ec",
+    "notes": "Inspected exported question hero for legibility and topic match."
+  },
+  "notes": [
+    "Reviewed full article and spoken script, primary BDC/Google guidance, explicit decision-rule framing and all fictional arithmetic: A 30 minus 20 equals 10; B 90 minus 30 equals 60. No fabricated customer result or universal CAC benchmark.",
+    "Inspected portrait hero and matched topic cards, including a fictional comparison table and one question CTA. Local blog QA passed; final audio/render release remains pending."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "myth-check-one-number-small-business-should-check-weekly",
+  "mode": "codex-editorial",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-04T18:03:28.522Z",
+  "review_notes": [
+    "Reviewed full article and spoken script, primary BDC/Google guidance, explicit decision-rule framing and all fictional arithmetic: A 30 minus 20 equals 10; B 90 minus 30 equals 60. No fabricated customer result or universal CAC benchmark.",
+    "Inspected portrait hero and matched topic cards, including a fictional comparison table and one question CTA. Local blog QA passed; final audio/render release remains pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Does the lowest acquisition cost win?",
+    "visibleText": "Does the lowest acquisition cost win?"
+  },
+  "artifactSha256": {
+    "verified.md": "d478f5e93cdbd15d9d8fd4258d413fae5ded189bbb6c0f3ef6abbb2e5c944e43",
+    "index.html": "b93192dd22825a4778ec10925662e7ea26f6371410c4573e87048e20ce802b8e",
+    "meta.json": "2844b11108d5031503a5fde0a7fa99d67e6d8bede5f57d652db023c0d08a5547",
+    "research.json": "90967009d1afaec00628bb34c6916cbcceb0d264638a1785c14bd999801d3b70",
+    "hero.jpg": "ef50a8d80b522f1c6447cb8e01114566a12ef73ec77d06ee837e4299cccc75ec",
+    "photo-post.jpg": "ef50a8d80b522f1c6447cb8e01114566a12ef73ec77d06ee837e4299cccc75ec",
+    "reel-script.md": "be37286bde033734afe78cf801d3c0472acc10d9b7548173908ba7996d83003e",
+    "reel-data.md": "3563033dd163b6dc41198f2142ae6e0f053cc46eee4005341a0066a632330571",
+    "social-copy.json": "3efa2a9d153bf5a7b2209ef148b5852d4d6adfcf31a63a657a8083ab4c3c91c1",
+    "attention-review.json": "7f62320daa9f398079d895a4640ba1e88b4c826b756bb66093a74f4697eddcb3",
+    "presentation-plan.json": "fcf2f8d5afa9a212d36d13c8d5cf13549a43075739581b72676be64b3c3d0231",
+    "enrichment-plan.json": "5585d031dc017ff41500bc83ee3051123e75d9348f11956ee6df79829498af3e"
+  }
+}
