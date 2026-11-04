@@ -162,6 +162,16 @@ describe("SEO routing and head tags", () => {
     expect(response.headers.get("location")).toBe(`${ORIGIN}${destination}`);
   });
 
+  it.each([
+    ["/blog/what-is-junk-silver/", "/reserve/"],
+    ["/blog/provident-metals-review-is-it-legit/", "/blog/"],
+    ["/blog/irs-rules-for-selling-silver-coins-1099-b-reporting/", "/blog/"],
+  ])("routes unsupported dealer or tax claims away from readers: %s", async (path, destination) => {
+    const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}${destination}`);
+  });
+
   it("redirects the orphaned folder page to the projects overview", async () => {
     const response = await SELF.fetch(`${ORIGIN}/Fused%20Technology%20Solutions/`, { redirect: "manual" });
     expect(response.status).toBe(301);

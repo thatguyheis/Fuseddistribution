@@ -57,4 +57,8 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/silver-ira-vs-physical-silver-at-home-which-is-better", "/blog/"],
   ["/blog/how-to-calculate-your-average-cost-per-ounce-silver", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
   ["/blog/silver-vs-cash-which-holds-value-better", "/reserve/"],
+  // Retired 2026-11-04: unsupported subscription terms, dealer impersonation, and incorrect tax reporting rules.
+  ["/blog/what-is-junk-silver", "/reserve/"],
+  ["/blog/provident-metals-review-is-it-legit", "/blog/"],
+  ["/blog/irs-rules-for-selling-silver-coins-1099-b-reporting", "/blog/"],
 ]);
