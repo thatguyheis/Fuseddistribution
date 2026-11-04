@@ -20,7 +20,7 @@ For a vault, request the current fee schedule and ask which charges apply to you
 
 Ask the insurer or provider to explain the coverage applicable to your exact property and arrangement. Identify the insured party, covered events, limits, deductible, valuation basis, exclusions, and the process for a claim. Ask whether any particular installation, record keeping, or notification requirement applies. Save the relevant policy wording or written confirmation with your records. A broad statement that an arrangement is insured leaves these questions unanswered.
 
-For a provider, establish how its insurance relates to your property and what documentation you would receive after a loss. For home storage, describe the actual property to the insurer rather than assuming a general household limit resolves the issue. Ask separately about transit if you plan to move the silver. Do not infer a coverage amount from another person's policy or from an advertisement. If an explanation remains unclear, resolve it with the responsible insurer or qualified adviser before relying on it. The objective is a documented arrangement you understand.
+For a provider, establish how its insurance relates to your property and what documentation you would receive after a loss. For home storage, describe the actual property to the insurer rather than assuming a general household limit resolves the issue. The [NAIC's homeowners insurance guidance](https://content.naic.org/consumer/homeowners-insurance.htm) warns that typical policies can limit coverage for valuables and recommends a documented home inventory. Ask separately about transit if you plan to move the silver. Do not infer a coverage amount from another person's policy or from an advertisement. If an explanation remains unclear, resolve it with the responsible insurer or qualified adviser before relying on it. The objective is a documented arrangement you understand.
 
 ## Examine the Provider Agreement and Holding Records
 
@@ -45,6 +45,12 @@ Check that holders fit the actual products and do not require unnecessary handli
 Compare the proposed arrangements against the same requirements: complete cost, access process, property records, insurance terms, object care, and the way you would exit the arrangement. Mark an unanswered question as unresolved instead of assigning it an optimistic score. If a service term matters to the decision, retain the version that was agreed. Review the choice when the holding, your access needs, or the service terms change.
 
 Home storage may fit when you can maintain an arrangement that meets those requirements. A vault may fit when its documented service and costs better match what you need. You can reach either conclusion without claiming that one category offers universal protection. For related purchase questions, see the [Silver Philharmonic guide](/blog/austrian-silver-philharmonic-guide/) and the [Britannia versus Eagle comparison](/blog/britannias-vs-eagles-which-silver-coin-is-best/). Fused's [reserve resources](/reserve/) provide further educational material. Obtain an actual storage offer from the provider you are evaluating and resolve its terms before transferring property.
+
+## Sources
+
+1. [CFTC: 10 Things to Ask Before Buying Physical Metals](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html)
+2. [U.S. Mint: Caring for Your Coin Collection](https://www.usmint.gov/learn/collecting-basics/caring-for-your-coin-collection)
+3. [NAIC: Homeowners Insurance](https://content.naic.org/consumer/homeowners-insurance.htm)
 
 ## Related
 

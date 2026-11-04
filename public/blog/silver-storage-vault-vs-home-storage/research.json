@@ -10,6 +10,13 @@
       "source_name": "U.S. Mint",
       "source_url": "https://www.usmint.gov/learn/collecting-basics/caring-for-your-coin-collection",
       "supports": "Handling by edges, avoiding acid and PVC, protective holders and avoiding cleaning."
+    },
+    {
+      "source_name": "NAIC",
+      "source_url": "https://content.naic.org/consumer/homeowners-insurance.htm",
+      "supports": "Homeowners policies can limit valuables coverage; maintain a documented inventory and review policy terms."
     }
-  ]
+  ],
+  "reviewedAt": "2026-11-04",
+  "status": "Primary regulatory, Mint, and insurance guidance checked; provider-specific terms remain for reader verification."
 }
