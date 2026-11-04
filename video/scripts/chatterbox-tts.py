@@ -16,6 +16,11 @@ import hashlib
 import time
 import sys
 from pathlib import Path
+from tts_worker_lock import acquire_worker_lock
+
+# Acquire before importing/loading the model, which alone consumes substantial RAM.
+_worker_lock = acquire_worker_lock()
+print(f'Chatterbox worker acquired: pid={os.getpid()}', flush=True)
 warnings.filterwarnings("ignore")
 
 # The current local Chatterbox environment runs on Python 3.14. Numba's disk
@@ -94,6 +99,7 @@ if variant in {"turbo", "nano"}:
 else:
     model = (ChatterboxTTS.from_local(Path(standard_model_path).expanduser(), device=device)
              if standard_model_path else ChatterboxTTS.from_pretrained(device=device))
+print('Chatterbox model loaded', flush=True)
 
 # Chatterbox 0.1.6 hardcodes 1,000 speech tokens for every generate() call.
 # When stochastic sampling misses the EOS token, a short sentence can occupy
@@ -186,6 +192,7 @@ for job in jobs:
             print(f"Recovered chunk {index + 1}", flush=True)
         else:
             started = time.monotonic()
+            print(f'Starting chunk {index + 1} ({len(chunk)} characters)', flush=True)
             torch.manual_seed(chunk_seed)
             part = model.generate(chunk, **kwargs)
             if not torch.isfinite(part).all() or part.numel() < model.sr // 10:

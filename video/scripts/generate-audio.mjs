@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, copyFileSync, openSync, closeSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync, spawnSync } from 'node:child_process';
@@ -87,13 +87,20 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
   }));
   writeFileSync(batchPath, JSON.stringify(batch));
   const timeout = boundedTtsTimeout(CHATTERBOX_BATCH_TIMEOUT_MS, process.argv.includes('--preflight-only'));
+  const measurements = join(ROOT, '..', '.workflow-state', 'tts-runs');
+  mkdirSync(measurements, {recursive: true});
+  const progressPath = join(measurements, `${slug}-${process.pid}-${jobs[0].index}.log`);
+  console.log(`  Chatterbox segment ${jobs[0].index} live progress: ${progressPath}`);
+  const progressFd = openSync(progressPath, 'a');
   const started = performance.now();
-  const result = spawnSync(CHATTERBOX_PY, [
+  let result;
+  try {
+  result = spawnSync(CHATTERBOX_PY, [
     CHATTERBOX_SCRIPT,
     `--manifest=${batchPath}`,
     `--speaker_wav=${VOICE_SAMPLE}`,
   ], {
-    stdio: ['ignore', 'pipe', 'pipe'],
+    stdio: ['ignore', progressFd, progressFd],
     timeout,
     killSignal: 'SIGKILL',
     env: {
@@ -114,12 +121,12 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
       TRANSFORMERS_OFFLINE: process.env.TRANSFORMERS_OFFLINE || '1',
     },
   });
-  const measurements = join(ROOT, '..', '.workflow-state', 'tts-runs');
-  mkdirSync(measurements, {recursive: true});
+  } finally { closeSync(progressFd); }
+  const progress = readFileSync(progressPath, 'utf8');
   writeFileSync(join(measurements, `${slug}-${process.pid}-${jobs[0].index}.json`), JSON.stringify({
     runtime, generationSeed, elapsedSeconds: (performance.now() - started) / 1000,
     exitCode: result.status, signal: result.signal, error: result.error?.code ?? null,
-    segments: jobs.map(job => job.index), progress: result.stdout?.toString().trim(),
+    segments: jobs.map(job => job.index), progressPath, progress: progress.slice(-4000).trim(),
   }, null, 2));
   rmSync(batchPath, {force: true});
 
@@ -127,7 +134,7 @@ function chatterboxBatchToM4a(slug, jobs, voice) {
     const folder = join(ROOT, '..', '.workflow-state', 'tts-failures');
     mkdirSync(folder, {recursive:true});
     const evidence = join(folder, `${slug}-${process.pid}.log`);
-    writeFileSync(evidence, result.stderr?.toString() || result.error?.message || 'TTS process failed');
+    writeFileSync(evidence, progress || result.error?.message || 'TTS process failed');
     const reason = result.error?.code === 'ETIMEDOUT' ? `timed out after ${timeout / 1000}s` : `failed (${result.signal || result.status})`;
     throw new Error(`Chatterbox TTS ${reason}; evidence: ${evidence}`);
   }

@@ -43,4 +43,6 @@ Review the actual encoded MP4: frame zero, frame 15, each graphic, scene transit
 
 ## Deliver and reconcile
 
+Recovery must keep a single production owner. Never rename or clear a render or TTS lock on a quiet log, elapsed-time guess, or permission-denied process check. Verify the PID and its child processes with authorized process inspection; if uncertain, wait. Check `.workflow-state/tts-runs/<slug>-<pid>-<segment>.log` for live model output on new generations. Chatterbox holds an independent kernel lock before model loading. Its lock file remains on disk after exit; file existence alone does not mean it is held. Do not remove that file. Stop only a positively identified duplicate worker and its supervisor, preserve audio, and record the owner before resuming the queue.
+
 Preserve existing size, rights and delivery gates. Verify the exact hosted MP4 bytes, deploy the matching blog with a working player, and confirm canonical HTTP 200. Get one fresh Buffer capacity snapshot, prepare CTA-rotated queues within cadence/capacity, validate, publish and read back every created ID. Record `scheduled` separately from `sent`. Confirm delivery from exact IDs after their due times; missing history is unresolved, not permission to repost. Finish with URLs, IDs and outstanding stages. Resume failures from their checkpoint rather than rebuilding completed work.
