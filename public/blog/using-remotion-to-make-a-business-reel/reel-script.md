@@ -43,7 +43,7 @@ Narration: Render the named composition with the project version and settings. T
 ## QUESTION
 **Visual:** One clear comment prompt.
 **Duration:** 4s
-Text: Comment: hook, checklist, or demo?
+Text: Which would you build first: hook, checklist, or demo?
 Subtext: COMMENT BELOW
 Engagement-beat: identity
-Narration: Comment: hook, checklist, or demo?
+Narration: Which would you build first: hook, checklist, or demo?

@@ -4,7 +4,7 @@
   "hook": {
     "spokenText": "Want reusable business reels?",
     "visibleText": "Want reusable business reels?",
-    "spokenSeconds": 2.0,
+    "spokenSeconds": 2,
     "startsAtSeconds": 0,
     "questionHookRequired": true,
     "specificViewerProblemOrBenefit": true,
@@ -30,8 +30,8 @@
     }
   ],
   "cta": {
-    "onScreenText": "Comment: hook, checklist, or demo?",
-    "spokenText": "Comment: hook, checklist, or demo?",
+    "onScreenText": "Which would you build first: hook, checklist, or demo?",
+    "spokenText": "Which would you build first: hook, checklist, or demo?",
     "primaryAction": "comment",
     "primaryActionCount": 1,
     "fitsViewerValue": true

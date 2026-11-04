@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 1,
+      "kind": "flow",
+      "title": "From composition to checked video",
+      "source": "Illustrative local render workflow",
+      "takeaway": "Inspect the actual output",
+      "rows": [
+        {
+          "label": "Define",
+          "detail": "Size, timing and content"
+        },
+        {
+          "label": "Render",
+          "detail": "Create the MP4"
+        },
+        {
+          "label": "Inspect",
+          "detail": "Picture, captions and sound"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet step reveal"
+    },
+    {
+      "segmentIndex": 2,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet step reveal"
+    }
+  ]
+}
