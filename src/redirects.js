@@ -52,4 +52,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-buy-silver-coins-at-spot-price", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
   ["/blog/silver-ira-how-to-set-one-up-step-by-step", "/blog/"],
   ["/blog/silver-panda-coins-from-china-complete-guide", "/reserve/"],
+  // Retired 2026-11-04: broken spreadsheet formulas, incorrect IRA/tax claims, and unsupported silver returns.
+  ["/blog/how-to-build-a-silver-inventory-spreadsheet", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
+  ["/blog/silver-ira-vs-physical-silver-at-home-which-is-better", "/blog/"],
+  ["/blog/how-to-calculate-your-average-cost-per-ounce-silver", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
+  ["/blog/silver-vs-cash-which-holds-value-better", "/reserve/"],
 ]);
