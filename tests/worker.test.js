@@ -38,9 +38,55 @@ describe("Google Analytics", () => {
     expect(response.status).toBe(200);
     expect(html).toContain("https://www.googletagmanager.com/gtag/js?id=G-3J56X9V708");
     expect(html).toContain("gtag('config', 'G-3J56X9V708')");
+    expect(html).toContain('"analytics_storage":"granted"');
     expect(html).not.toContain("fused-analytics-consent");
     expect(csp).toContain("https://www.googletagmanager.com");
     expect(csp).toContain("https://www.google-analytics.com");
+  });
+});
+
+describe("Google Consent Mode", () => {
+  it("loads GA with consent denied by default and shows the banner", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/`);
+    const html = await response.text();
+    expect(html).toContain("gtag/js?id=G-3J56X9V708");
+    expect(html).toContain("gtag('consent', 'default', {\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"})");
+    expect(html).toContain('id="fused-analytics-consent"');
+  });
+
+  it("grants analytics storage after the visitor accepts", async () => {
+    const html = await (await SELF.fetch(`${ORIGIN}/`, { headers: { Cookie: "fused_analytics_consent=granted" } })).text();
+    expect(html).toContain('"analytics_storage":"granted"');
+    expect(html).toContain('"ad_storage":"denied"');
+    expect(html).not.toContain('id="fused-analytics-consent"');
+  });
+
+  it("keeps cookieless measurement after the visitor declines", async () => {
+    const html = await (await SELF.fetch(`${ORIGIN}/`, { headers: { Cookie: "fused_analytics_consent=denied" } })).text();
+    expect(html).toContain('"analytics_storage":"denied"');
+    expect(html).not.toContain('id="fused-analytics-consent"');
+  });
+});
+
+describe("admin lock", () => {
+  it("hides /admin/ when no password is configured", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/admin/data.json`);
+    expect(response.status).toBe(404);
+    await response.text();
+  });
+
+  it("asks for a password and checks it", async () => {
+    const { adminGate } = await import("../src/admin-gate.js");
+    const env = { ADMIN_PASSWORD: "correct horse" };
+    const url = new URL(`${ORIGIN}/admin/`);
+    expect(adminGate(new Request(url), env, url).status).toBe(401);
+    expect(adminGate(new Request(url), env, url).headers.get("www-authenticate")).toContain("Basic");
+    const bad = new Request(url, { headers: { Authorization: "Basic " + btoa("nick:wrong") } });
+    expect(adminGate(bad, env, url).status).toBe(401);
+    const good = new Request(url, { headers: { Authorization: "Basic " + btoa("nick:correct horse") } });
+    expect(adminGate(good, env, url)).toBeNull();
+    const other = new URL(`${ORIGIN}/administer/`);
+    expect(adminGate(new Request(other), env, other)).toBeNull();
   });
 });
 

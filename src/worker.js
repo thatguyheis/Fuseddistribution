@@ -1,6 +1,8 @@
 import { DurableObject } from "cloudflare:workers";
 import { addSharedNav } from "./site-nav.js";
 import { addBlogArchive } from "./blog-archive.js";
+import { adminGate } from "./admin-gate.js";
+import { PERMANENT_REDIRECTS } from "./redirects.js";
 
 const SECURITY_HEADERS_BASE = {
   "X-Frame-Options": "SAMEORIGIN",
@@ -21,15 +23,6 @@ const MP4_CACHE_CONTROL = "public, max-age=31536000, immutable";
 const GOOGLE_ANALYTICS_ID = "G-3J56X9V708";
 const APEX_HOST = "fuseddistribution.com";
 
-// Retired posts that described Google Business Profile features Google removed
-// (Messaging, July 2024; Q&A, replaced by Ask Maps). Keys have no trailing slash.
-const PERMANENT_REDIRECTS = new Map([
-  ["/blog/google-business-profile-messaging", "/blog/google-business-profile-setup/"],
-  ["/blog/google-business-profile-messaging-setup-and-tips", "/blog/google-business-profile-setup/"],
-  ["/blog/google-business-profile-q-and-a-how-to-use-it", "/blog/google-business-profile-setup/"],
-  // Old standalone page left in a folder with a space in its name.
-  ["/Fused%20Technology%20Solutions", "/projects/"],
-]);
 
 const ICON_LINKS = [
   '<link rel="icon" href="/favicon.ico" sizes="32x32">',
@@ -131,25 +124,33 @@ async function applyNonce(response, nonce, consentState = "", path = "/", posts 
         element.onEndTag((end) => {
           if (!hasIcon) end.before(`    ${ICON_LINKS}\n  `, { html: true });
         });
-        if (consentState === "granted") {
-          element.append(
-            `<script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}" nonce="${nonce}"></script>
-    <script nonce="${nonce}">
+        // Google Consent Mode v2: GA always loads, but cookies are only allowed
+        // after the visitor accepts. Until then GA sends cookieless pings.
+        const consent = JSON.stringify({
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          analytics_storage: consentState === "granted" ? "granted" : "denied",
+        });
+        element.append(
+          `<script nonce="${nonce}">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', ${consent});
       gtag('js', new Date());
       gtag('config', '${GOOGLE_ANALYTICS_ID}');
-    </script>`,
-            { html: true },
-          );
-        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}" nonce="${nonce}"></script>
+`,
+          { html: true },
+        );
       },
     });
   if (!consentState) {
     rewriter.on("body", {
       element(element) {
         element.append(
-          `<div id="fused-analytics-consent" role="dialog" aria-label="Analytics preferences" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483647;max-width:720px;margin:auto;padding:16px 18px;border:1px solid rgba(88,214,255,.35);border-radius:14px;background:#07131a;color:#ecf8fb;box-shadow:0 12px 40px rgba(0,0,0,.4);font:14px/1.5 system-ui,sans-serif"><div style="margin-bottom:10px">We use optional Google Analytics to understand site usage and improve the site. You can accept or decline.</div><a href="?analytics_consent=granted" style="display:inline-block;margin-right:8px;padding:8px 14px;border:1px solid #58d6ff;border-radius:8px;background:#58d6ff;color:#041018;font-weight:700;cursor:pointer;text-decoration:none">Accept analytics</a><a href="?analytics_consent=denied" style="display:inline-block;padding:8px 14px;border:1px solid rgba(236,248,251,.5);border-radius:8px;background:transparent;color:#ecf8fb;cursor:pointer;text-decoration:none">Decline</a></div>`,
+          `<div id="fused-analytics-consent" role="dialog" aria-label="Analytics preferences" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483647;max-width:720px;margin:auto;padding:16px 18px;border:1px solid rgba(88,214,255,.35);border-radius:14px;background:#07131a;color:#ecf8fb;box-shadow:0 12px 40px rgba(0,0,0,.4);font:14px/1.5 system-ui,sans-serif"><div style="margin-bottom:10px">We use Google Analytics to see how the site is used. It runs without cookies unless you accept. <a href="/privacy/#cookies" style="color:#58d6ff">Privacy</a></div><a href="?analytics_consent=granted" style="display:inline-block;margin-right:8px;padding:8px 14px;border:1px solid #58d6ff;border-radius:8px;background:#58d6ff;color:#041018;font-weight:700;cursor:pointer;text-decoration:none">Accept analytics</a><a href="?analytics_consent=denied" style="display:inline-block;padding:8px 14px;border:1px solid rgba(236,248,251,.5);border-radius:8px;background:transparent;color:#ecf8fb;cursor:pointer;text-decoration:none">Decline</a></div>`,
           { html: true },
         );
       },
@@ -709,6 +710,11 @@ export default {
 
       if (BLOCKED_PREFIXES.some((prefix) => url.pathname.startsWith(prefix))) {
         return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
+      }
+
+      const adminResponse = adminGate(request, env, url);
+      if (adminResponse) {
+        return withSecurityHeaders(adminResponse, null);
       }
 
       if (url.pathname.startsWith("/api/")) {

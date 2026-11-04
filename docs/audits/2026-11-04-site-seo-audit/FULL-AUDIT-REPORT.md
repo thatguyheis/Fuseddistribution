@@ -82,7 +82,7 @@ Topic mix by tag: Silver 175, Local Business 132, Investing 128, Marketing 116, 
 
 When removing these posts: drop them from `posts.json` and the sitemap, delete or redirect the folders, and edit the 2 sibling posts that link to them. Prefer 301s over 404s so any backlinks carry over.
 
-**Known fake citations:** the memory note `blog_pipeline_hardening` (2026-07-08) says older posts still carry unsourced citations. This is a YMYL risk for the investing posts. Run `/blog factcheck` over the silver and investing archive before the next core update.
+**Citations (corrected 2026-11-04):** the July 2026 citation sweep cleared the fabricated citations (see the `blog_pipeline_hardening` memory). The remaining problem is different: 134 money-topic posts have no Sources section at all. See `silver_tier2_no_sources.md`. Thirteen weak posts were retired.
 
 **E-E-A-T gaps**
 - The author is "Nick" with no last name, photo, credentials, or bio page. Use your full name and build an `/about/nick-hughes/` author page with your experience, client results, and photo. Point every BlogPosting `author.url` at it.

@@ -13,6 +13,8 @@ Claude's permission settings blocked it from pushing, so you run these two comma
 ! cd /Users/nick/projects/fuseddistribution && npx wrangler deploy
 ```
 
+After the deploy, set the admin password (step 4.1) and tell Codex about the handoff (see the chat).
+
 The first command sends all the new commits to GitHub. The second puts the changes on the live site.
 
 Then tell Claude "deployed". It will check the live pages with a cache-buster.
@@ -58,20 +60,19 @@ Also changed: Warhammer removed everywhere (now "coins, collectibles and rare an
 
 **Answered 2026-11-04:** Ken's quote stays as written. All 3 clients approved being named. The /local-seo/ list is accurate. Headline changed to "Websites, Video and AI for Small Business."
 
-## Step 4. Decisions only you can make
+## Step 4. Decisions (answered 2026-11-04)
 
-Reply with the number and your choice.
-
-1. **`/admin/` is open to the public.** Anyone can load it. Lock it so only you can see it? (Recommended: yes. Claude can add a password check, or you can use Cloudflare Access.)
-2. **Google Analytics only counts visitors who click "Accept".** Switch to Google's Consent Mode, which counts visits without cookies until someone accepts? This gives better numbers and stays privacy friendly. (Recommended: yes.)
-3. **One brand name or two?** Pages say "Fused Distribution" in some places and "Fused Technology Solutions" in others. Pick: (a) Fused Technology Solutions for the website business, Fused Distribution as the parent company name, or (b) Fused for everything.
-4. **303 silver and investing posts** sit under the web design brand. Options: (a) leave them, (b) move them under Fused Reserve branding, (c) fact check them and remove the weak ones. Some still have made-up citations from before July.
-5. **The 3 retired Google Business post folders** still exist on disk. They redirect now, so visitors never see them. Delete the folders? (Optional cleanup.)
-6. **Codex handoff:** shortening blog titles (351 are too long) and changing the author from "Nick" to your full name both touch the blog template, which Codex owns. OK to write Codex a handoff note?
-
----
-
-7. **Stale deploy snapshot (important).** `.workflow-state/deployment-baseline` is behind the live site: old pricing on the FAQ pages and the old llms.txt, plus none of today's fixes. If any job runs `scripts/deploy-approved-blog.mjs`, it overwrites live with that old copy. OK to send Codex a handoff to rebuild the snapshot from `main` after today's deploy?
+1. Lock /admin/: **done in code.** After the deploy, `/admin/` shows "Not found" until you set a password. To set one:
+   1. Go to dash.cloudflare.com, then **Workers & Pages**, then **fuseddistribution**.
+   2. Click **Settings**, then **Variables and Secrets**, then **+ Add**.
+   3. Set Type to **Secret**, Name to `ADMIN_PASSWORD`, and Value to a password you make up. Save it in your password manager.
+   4. Click **Deploy** (or **Save**).
+   5. Open `https://fuseddistribution.com/admin/`. Your browser asks for a username and password. Type any username (e.g. `nick`) and your password.
+2. Google Analytics Consent Mode: **done in code.** The banner text and the privacy page were updated to match.
+3. Brand name: Claude's recommendation is below. Reply yes or no.
+4. Weak silver posts: **13 removed** (thin, duplicate, or dated price predictions), each redirected to the closest good post. The other 172 silver posts move under Fused Reserve branding through the Codex handoff. 134 of them have no sources; Codex either adds sources or retires them (`silver_tier2_no_sources.md`).
+5. The 3 retired Google Business folders are **deleted** (still recoverable from git history).
+6 and 7. Codex handoff written: `docs/HANDOFF-CODEX-2026-11-04-site-audit.md`.
 
 ## What Claude already did (no action needed)
 
