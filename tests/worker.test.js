@@ -112,6 +112,10 @@ describe("SEO routing and head tags", () => {
     "/blog/dollar-cost-averaging-silver/",
     "/blog/dollar-cost-averaging-silver-strategy-explained/",
     "/blog/silver-as-a-percentage-of-net-worth-how-much/",
+    "/blog/building-a-silver-reserve-on-a-monthly-budget/",
+    "/blog/perth-mint-silver-kangaroo-buying-guide/",
+    "/blog/silver-supply-shortage-what-it-means-for-prices/",
+    "/blog/silver-supply-deficit-sixth-consecutive-year-2026/",
   ])("routes unsupported silver advice directly to the Reserve page: %s", async (path) => {
     const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
     expect(response.status).toBe(301);

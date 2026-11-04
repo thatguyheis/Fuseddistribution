@@ -29,7 +29,7 @@ export const PERMANENT_REDIRECTS = new Map([
   // Speculative, no sources
   ["/blog/silver-short-squeeze-2026-is-it-possible", "/blog/why-comex-price-and-physical-silver-price-diverge/"],
   // Forecast, no sources, overlaps supply shortage post
-  ["/blog/silver-supply-deficit-sixth-consecutive-year-2026", "/blog/silver-supply-shortage-what-it-means-for-prices/"],
+  ["/blog/silver-supply-deficit-sixth-consecutive-year-2026", "/reserve/"],
   // Buy timing advice, no sources
   ["/blog/is-now-a-good-time-to-buy-silver-2026", "/reserve/"],
   // Stock picks, no sources, risky investment advice
@@ -61,4 +61,8 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/what-is-junk-silver", "/reserve/"],
   ["/blog/provident-metals-review-is-it-legit", "/blog/"],
   ["/blog/irs-rules-for-selling-silver-coins-1099-b-reporting", "/blog/"],
+  // Retired 2026-11-04: unsupported silver returns, false coin and sales claims, and invented refinery shortages.
+  ["/blog/building-a-silver-reserve-on-a-monthly-budget", "/reserve/"],
+  ["/blog/perth-mint-silver-kangaroo-buying-guide", "/reserve/"],
+  ["/blog/silver-supply-shortage-what-it-means-for-prices", "/reserve/"],
 ]);

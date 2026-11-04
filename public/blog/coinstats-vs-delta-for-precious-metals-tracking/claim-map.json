@@ -1,0 +1,23 @@
+{
+  "slug": "coinstats-vs-delta-for-precious-metals-tracking",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "CoinStats documents manual portfolios and transaction entry for supported coins.",
+      "source": "https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio"
+    },
+    {
+      "claim": "CoinStats describes its product as a crypto portfolio tracker with exchange and wallet connections.",
+      "source": "https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app"
+    },
+    {
+      "claim": "Delta describes itself as a read-only investment tracker that does not hold or trade assets.",
+      "source": "https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange"
+    },
+    {
+      "claim": "Delta's asset following feature covers market assets such as stocks and cryptocurrencies.",
+      "source": "https://support.delta.app/en/articles/4513607-following-assets"
+    }
+  ]
+}

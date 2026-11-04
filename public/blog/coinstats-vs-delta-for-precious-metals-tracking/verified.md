@@ -20,7 +20,7 @@ Neither official product source reviewed here supports a claim that the app auto
 
 ## Build a physical bullion record first
 
-For coins, record an inventory ID, denomination, date, mint mark, stated fineness, weight, condition, holder, and photograph. For bars, record maker, stated fineness, weight, serial number, assay card, packaging, and storage location. Record the acquisition date, seller, invoice, fees, and whether the item is allocated, pooled, or held personally. Keep a second copy of the inventory and store invoices separately from the metal.
+For coins, record an inventory ID, denomination, date, mint mark, stated fineness, weight, condition, holder, and photograph. For bars, record maker, stated fineness, weight, serial number, assay card, packaging, and storage location. Record the acquisition date, seller, invoice, fees, and whether the item is allocated, pooled, or held personally. Keep a second copy of the inventory and store invoices separately from the metal. Review the [storage and custody tradeoffs](/blog/silver-storage-vault-vs-home-storage/) before choosing a location.
 
 If the metal is inherited, record who is authorized to act before you move, sell, or divide it. Preserve the chain of custody. Ask a qualified numismatic or precious-metals appraiser about unusual coins, graded pieces, disputed ownership, or a potential sale. Do not clean coins or use an app’s performance chart as an appraisal.
 
@@ -44,14 +44,19 @@ Choose CoinStats when you want documented crypto and wallet connections, manual 
 
 The product boundaries are part of the comparison. CoinStats official help documents manual portfolios and crypto centered connections. Delta official help documents read-only tracking for investments, stocks, funds, ETFs, crypto, and wallets. Neither reviewed source establishes automatic physical bullion tracking. That limit is more useful than an invented feature list when your goal is accurate precious-metals records.
 
-Sources: [CoinStats manual portfolios](https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio), [CoinStats app overview](https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app), [Delta asset following](https://support.delta.app/en/articles/4513607-following-assets), [Delta supported exchanges](https://support.delta.app/en/articles/2416103-supported-exchanges), and [Delta product scope](https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange).
+## Sources
+
+- [CoinStats: manual portfolios and transaction entry](https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio)
+- [CoinStats: product overview](https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app)
+- [Delta: following assets](https://support.delta.app/en/articles/4513607-following-assets)
+- [Delta: supported exchanges](https://support.delta.app/en/articles/2416103-supported-exchanges)
+- [Delta: product scope](https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange)
 
 
-For physical holdings, use a [silver inventory spreadsheet](/blog/how-to-build-a-silver-inventory-spreadsheet/) and a consistent [cost per ounce calculation](/blog/how-to-calculate-your-average-cost-per-ounce-silver/). These records identify what a market app alone cannot establish.
+For physical holdings, use a [silver inventory record](/blog/silver-bar-serial-numbers-and-inventory-records/). It identifies what a market app alone cannot establish.
 
 ## Related
 
-- [Silver Inventory Spreadsheet](/blog/how-to-build-a-silver-inventory-spreadsheet/)
-- [Average Cost Per Ounce](/blog/how-to-calculate-your-average-cost-per-ounce-silver/)
+- [Silver Bar Inventory Records](/blog/silver-bar-serial-numbers-and-inventory-records/)
 
-Read next: [Silver Inventory Spreadsheet](/blog/how-to-build-a-silver-inventory-spreadsheet/)
+Read next: [Silver Bar Inventory Records](/blog/silver-bar-serial-numbers-and-inventory-records/)
