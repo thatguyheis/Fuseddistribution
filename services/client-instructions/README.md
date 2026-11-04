@@ -1,6 +1,6 @@
 # Client instruction service
 
-This Worker serves versioned reel instructions only to clients whose D1 profile has `paid = 1` and has not expired. The operator controls the profile with Wrangler. The current Fused GitHub repository is public, so private instruction source files must stay outside tracked paths. Cloudflare R2 is not enabled on this account; D1 stores the small Markdown bundles for this first version. The same entitlement check guards the Markdown endpoint and the remote MCP endpoint.
+This Worker serves versioned reel instructions only to clients whose D1 profile has `paid = 1` and has not expired. The operator controls the profile with Wrangler. The current Fused GitHub repository is public, so private instruction source files must stay outside tracked paths. Cloudflare R2 is not enabled on this account; D1 stores the small Markdown bundles for this first version. The same entitlement check guards the Markdown endpoint and the remote MCP endpoint. **Both endpoints return the entire bundle to an entitled client. Do not upload non-downloadable proprietary instructions here or onboard a paying client who expects that protection.** See [the client service SOP](../../docs/CLIENT-REEL-SERVICE-SOP.md) for the hosted-service design.
 
 ## Local setup
 
@@ -16,22 +16,23 @@ npx wrangler deploy --config services/client-instructions/wrangler.jsonc --dry-r
 Run the operator with `--local` to work against the local D1 database. Omit it to work against the Cloudflare database. A new client starts with `paid = false`.
 
 ```bash
-node services/client-instructions/scripts/operator.mjs --local put-bundle reel-core pilot-v1 /absolute/path/to/private/reel.md
+node services/client-instructions/scripts/operator.mjs --local put-bundle --client-readable reel-core pilot-v1 /absolute/path/to/private/reel.md
 node services/client-instructions/scripts/operator.mjs --local create-client pilot-client reel-core
 node services/client-instructions/scripts/operator.mjs --local set-paid pilot-client true nick "Pilot payment confirmed"
 ```
 
 The `create-client` command writes a unique token to `.build/client-instructions/credentials/<client-id>.token` with restricted file permissions. Deliver it through a secure channel, then keep it in the client's OS keychain or an untracked protected environment file. Never paste the token into this repository, a ticket, a chat log, or an instruction bundle. The operator command requires a private bundle source outside this public repository, or under ignored `.build/` for local testing.
 
-## Production setup
+## Hosted pilot setup
 
-Apply the same migration remotely, upload a reviewed private bundle, then create and activate each client:
+Apply the same migration remotely, upload a reviewed client readable bundle, then create a test profile. The `--client-readable` flag is an explicit acknowledgement that a paid profile can save the full text. Keep the test profile inactive outside the smoke test:
 
 ```bash
 npx wrangler d1 migrations apply fused-client-instructions --config services/client-instructions/wrangler.jsonc --remote
-node services/client-instructions/scripts/operator.mjs put-bundle reel-core 2026-11-04 /absolute/path/to/private/reel.md
-node services/client-instructions/scripts/operator.mjs create-client client-id reel-core
-node services/client-instructions/scripts/operator.mjs set-paid client-id true nick "Payment confirmed"
+node services/client-instructions/scripts/operator.mjs put-bundle --client-readable reel-core 2026-11-04 /absolute/path/to/private/reel.md
+node services/client-instructions/scripts/operator.mjs create-client pilot-client reel-core
+node services/client-instructions/scripts/operator.mjs set-paid pilot-client true nick "Pilot smoke test"
+node services/client-instructions/scripts/operator.mjs set-paid pilot-client false nick "Pilot smoke test complete"
 ```
 
 Deploy with `npx wrangler deploy --config services/client-instructions/wrangler.jsonc`. The deployed Markdown endpoint is `https://fused-client-instructions.luxraycoco.workers.dev/v1/instructions/reel`. Set `FUSED_INSTRUCTIONS_URL` to that URL and `FUSED_INSTRUCTIONS_TOKEN` to that client's token outside Git. The client loader writes the verified Markdown to stdout and exits nonzero on denial or outage:
@@ -40,7 +41,7 @@ Deploy with `npx wrangler deploy --config services/client-instructions/wrangler.
 node services/client-instructions/client/fetch-instructions.mjs
 ```
 
-The remote MCP endpoint is `https://fused-client-instructions.luxraycoco.workers.dev/mcp`. It offers the read only `get_reel_instructions` tool. MCP clients must send the same client token as `Authorization: Bearer <token>` on each request. For Codex, set the token in the client's environment, then add this to that client's private `~/.codex/config.toml`:
+The remote MCP endpoint is `https://fused-client-instructions.luxraycoco.workers.dev/mcp`. Its `get_reel_instructions` tool cannot edit server data, but its result contains the complete instruction text and can be saved by the client. MCP clients must send the same client token as `Authorization: Bearer <token>` on each request. For Codex, set the token in the client's environment, then add this to that client's private `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.fused_reel]

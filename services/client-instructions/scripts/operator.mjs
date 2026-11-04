@@ -104,8 +104,11 @@ try {
   const [command, ...args] = process.argv.slice(local ? 3 : 2);
   if (command === "create-client" && args.length === 2) createClient(...args);
   else if (command === "set-paid" && args.length === 4) setPaid(...args);
-  else if (command === "put-bundle" && args.length === 3) putBundle(...args);
-  else fail("Usage: operator.mjs [--local] create-client <id> <bundle> | set-paid <id> <true|false> <actor> <reason> | put-bundle <name> <version> <private-file>");
+  else if (command === "put-bundle" && args[0] === "--client-readable" && args.length === 4) {
+    putBundle(...args.slice(1));
+  } else if (command === "put-bundle") {
+    fail("Bundle text is returned in full to paid clients. Retry only with: put-bundle --client-readable <name> <version> <private-file>");
+  } else fail("Usage: operator.mjs [--local] create-client <id> <bundle> | set-paid <id> <true|false> <actor> <reason> | put-bundle --client-readable <name> <version> <private-file>");
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;
