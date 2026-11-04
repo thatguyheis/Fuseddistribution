@@ -116,6 +116,9 @@ describe("SEO routing and head tags", () => {
     "/blog/perth-mint-silver-kangaroo-buying-guide/",
     "/blog/silver-supply-shortage-what-it-means-for-prices/",
     "/blog/silver-supply-deficit-sixth-consecutive-year-2026/",
+    "/blog/silver-vs-gold-which-is-better-investment-in-2026/",
+    "/blog/silver-vs-gold-performance-comparison-2025-2026/",
+    "/blog/should-you-buy-silver-in-dips-or-dollar-cost-average/",
   ])("routes unsupported silver advice directly to the Reserve page: %s", async (path) => {
     const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
     expect(response.status).toBe(301);
@@ -170,6 +173,14 @@ describe("SEO routing and head tags", () => {
     ["/blog/what-is-junk-silver/", "/reserve/"],
     ["/blog/provident-metals-review-is-it-legit/", "/blog/"],
     ["/blog/irs-rules-for-selling-silver-coins-1099-b-reporting/", "/blog/"],
+    ["/blog/silver-coins-gift-tax-rules-what-you-need-to-know/", "/blog/"],
+    ["/blog/why-comex-price-and-physical-silver-price-diverge/", "/blog/"],
+    ["/blog/silver-short-squeeze-2026-is-it-possible/", "/blog/"],
+    ["/blog/silver-reserve-vs-401k-which-makes-more-sense/", "/blog/"],
+    ["/blog/does-tarnished-silver-lose-value/", "/blog/"],
+    ["/blog/state-sales-tax-on-silver-coins-which-states-charge-it/", "/blog/"],
+    ["/blog/silver-irs-reporting-requirements-what-you-need-to-know/", "/blog/"],
+    ["/blog/gainesville-coins-review-2026/", "/blog/"],
   ])("routes unsupported dealer or tax claims away from readers: %s", async (path, destination) => {
     const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
     expect(response.status).toBe(301);

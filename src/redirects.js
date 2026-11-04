@@ -13,7 +13,7 @@ export const PERMANENT_REDIRECTS = new Map([
   // Duplicate of the silver to gold ratio post
   ["/blog/silver-to-gold-ratio-explained-how-to-use-it", "/blog/silver-to-gold-ratio/"],
   // Duplicate of the silver vs gold comparison
-  ["/blog/silver-vs-gold-which-is-better-investment-in-2026", "/blog/silver-vs-gold-performance-comparison-2025-2026/"],
+  ["/blog/silver-vs-gold-which-is-better-investment-in-2026", "/reserve/"],
   // Thin: 703 words, no sources
   ["/blog/physical-silver-vs-silver-etf-pros-and-cons", "/blog/paper-silver-vs-physical-silver-the-key-difference/"],
   // Thin: 699 words, no sources, duplicate topic
@@ -27,7 +27,7 @@ export const PERMANENT_REDIRECTS = new Map([
   // Market forecast, no sources
   ["/blog/silver-market-outlook-2026-what-analysts-say", "/reserve/"],
   // Speculative, no sources
-  ["/blog/silver-short-squeeze-2026-is-it-possible", "/blog/why-comex-price-and-physical-silver-price-diverge/"],
+  ["/blog/silver-short-squeeze-2026-is-it-possible", "/blog/"],
   // Forecast, no sources, overlaps supply shortage post
   ["/blog/silver-supply-deficit-sixth-consecutive-year-2026", "/reserve/"],
   // Buy timing advice, no sources
@@ -65,4 +65,14 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/building-a-silver-reserve-on-a-monthly-budget", "/reserve/"],
   ["/blog/perth-mint-silver-kangaroo-buying-guide", "/reserve/"],
   ["/blog/silver-supply-shortage-what-it-means-for-prices", "/reserve/"],
+  // Retired 2026-11-04: stale price forecasts, incorrect tax and 401(k) claims, unsupported dealer advice, or duplicate tarnish guidance.
+  ["/blog/silver-vs-gold-performance-comparison-2025-2026", "/reserve/"],
+  ["/blog/silver-coins-gift-tax-rules-what-you-need-to-know", "/blog/"],
+  ["/blog/why-comex-price-and-physical-silver-price-diverge", "/blog/"],
+  ["/blog/silver-reserve-vs-401k-which-makes-more-sense", "/blog/"],
+  ["/blog/does-tarnished-silver-lose-value", "/blog/"],
+  ["/blog/state-sales-tax-on-silver-coins-which-states-charge-it", "/blog/"],
+  ["/blog/should-you-buy-silver-in-dips-or-dollar-cost-average", "/reserve/"],
+  ["/blog/silver-irs-reporting-requirements-what-you-need-to-know", "/blog/"],
+  ["/blog/gainesville-coins-review-2026", "/blog/"],
 ]);
