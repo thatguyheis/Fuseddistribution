@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Did Buffer actually schedule your reel?",
+    "visibleText": "Did Buffer actually schedule your reel?",
+    "spokenSeconds": 2.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved hero with exact question and a labeled illustrative create, readback and verify flow."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Read back the post ID",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Match channel and schedule",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Confirm the retained video",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Investigate before retrying",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "What field do you verify first?",
+    "spokenText": "What field do you verify first?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "Concrete scheduling question and immediate readback checklist retain viewers through a practical workflow.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare same platform and similar duration after sufficient observations; record sample size."
+  }
+}

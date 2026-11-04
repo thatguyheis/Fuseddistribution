@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "source": "fused-original-vector-graphics",
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-0.jpg",
+        "sha256": "0044e7a49a5ec5307b1784499234fdb39af8406c9fef79ccb9fe4802685c5cfd",
+        "weight": 1,
+        "title": "POST VERIFICATION",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-1.jpg",
+        "sha256": "06cb741726053b612fef339fb0fc6bac2d0aa5e5dadec47bf30bcf26a05d8424",
+        "weight": 1,
+        "title": "READ THE POST ID",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-2.jpg",
+        "sha256": "52e0d8299cf835ac96feb054b681bf5941f1a5ed015bb2d8415421f384af4588",
+        "weight": 1,
+        "title": "MATCH THE JOB",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-3.jpg",
+        "sha256": "b77352af4f716511e7c1f094641a7f18891888c18184f14ca7dad73847922e90",
+        "weight": 1,
+        "title": "CHECK THE VIDEO",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-4.jpg",
+        "sha256": "cf228d70b1e5f8e02f982b90fb70004f50395a67f4acd6229bbf827fbb09d34e",
+        "weight": 1,
+        "title": "RESOLVE UNCERTAINTY",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/verify-a-buffer-post-after-scheduling-it/images/scene-5.jpg",
+        "sha256": "ed159c9724c59b2662dfbc169bf4ba52556af4acb171aae11fec39ccf1d0a031",
+        "weight": 1,
+        "title": "ONE QUESTION",
+        "eyebrow": "BUFFER WORKFLOW",
+        "credit": "Fused original teaching graphic",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

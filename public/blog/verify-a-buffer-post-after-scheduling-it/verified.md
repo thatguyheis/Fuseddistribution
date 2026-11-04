@@ -18,7 +18,7 @@ Buffer distinguishes `addToQueue` from `customScheduled`. If your workflow promi
 
 The `id` is the handle for later investigation. A successful `createPost` result should include a post with an ID. If the mutation returns a typed error, or returns no post ID, stop and record that outcome. Do not manufacture an ID from the caption, URL, or timestamp.
 
-In a production workflow, persist the confirmed ID with the job, but do not call it confirmed merely because the mutation response contained it. The local Buffer script writes a checkpoint after a second readback succeeds. That checkpoint includes the slug, Buffer post ID, channel ID, status, due time, public media URL, and a boolean indicating that a video asset was verified.
+In a production workflow, persist the confirmed ID with the job, but do not call it confirmed merely because the mutation response contained it. The local Buffer script preserves creation evidence and verifies the exact post again before reporting confirmed scheduling. That checkpoint includes the slug, Buffer post ID, channel ID, status, due time, public media URL, and a boolean indicating that a video asset was verified.
 
 The saved checkpoint should retain the redacted post ID, channel ID, status, due time, observation time, and verified video flag. This is delivery evidence, not a performance result.
 
@@ -28,11 +28,11 @@ The local workflow queries live posts with fields including `id`, `text`, `statu
 
 After creation, query the live queue again. Match the returned post by the saved ID. If the ID is not found, do not immediately create another post. The result can be ambiguous: the create may have been accepted but the readback may have failed, or the post may no longer be in the filtered set.
 
-Use a broader, controlled investigation instead. Check the relevant scheduled and sending states, query the known ID directly when the API supports it, inspect your local checkpoint and request log, and note the time of each observation. If the post may already have been sent, check the sent history as well. An unknown outcome is a state to investigate, not permission to retry blindly.
+Use a broader, controlled investigation instead. Check the relevant scheduled and sending states, query the known ID directly when the API supports it, inspect your local checkpoint and request log, and note the time of each observation. If the post may already have been sent, check the sent history as well. An unknown outcome is a state to investigate, not permission to retry blindly. For more on this, see [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/).
 
 ## 4. Confirm the channel and schedule
 
-First compare `channelId`. The same caption and video can be valid for several connected profiles, but a successful post on the wrong profile is still a publishing failure. The local readback check rejects a mismatch between the returned channel and the job’s intended channel.
+First compare `channelId`. The same caption and video can be valid for several connected profiles, but a successful post on the wrong profile is still a publishing failure. The local readback check rejects a mismatch between the returned channel and the job’s intended channel. For more on this, see [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/).
 
 Next compare `dueAt`. Parse both values as dates rather than comparing formatting alone. The API uses ISO 8601 UTC for a custom schedule, while a local job may display Pacific time for an operator. Convert deliberately and record both when helpful. A time that looks different in a dashboard can represent the same instant, but a genuine time shift should be investigated before publication.
 
@@ -86,4 +86,13 @@ If you are building a Buffer workflow, use this checklist beside your first dry 
 ## Sources
 
 - [Buffer API: Posts and Scheduling](https://developers.buffer.com/guides/posts-and-scheduling.html), including post fields, scheduling modes, statuses, creation, and retrieval.
-- [Fused Distribution Buffer live workflow](https://github.com/fuseddistribution/fuseddistribution/blob/main/public/blog/scripts/buffer-live.mjs), the local implementation.
+- [Fused Distribution Buffer live workflow](https://github.com/thatguyheis/Fuseddistribution/blob/main/public/blog/scripts/buffer-live.mjs), the local implementation.
+
+## Related
+
+- [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+- [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/)
+- [AI Reels for Beginners: Start With Your Real Business](/blog/ai-reels-for-beginners-part-1/)
+
+Read next: [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+

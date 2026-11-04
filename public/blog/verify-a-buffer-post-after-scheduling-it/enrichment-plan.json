@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 1,
+      "kind": "table",
+      "title": "Four checks after creation",
+      "source": "Buffer API post fields; illustrative checklist",
+      "takeaway": "Read the post back before reporting success",
+      "rows": [
+        {
+          "label": "ID + channel",
+          "detail": "The intended post and destination"
+        },
+        {
+          "label": "Due time",
+          "detail": "The intended UTC instant"
+        },
+        {
+          "label": "Status",
+          "detail": "Scheduled, sending or sent"
+        },
+        {
+          "label": "Video",
+          "detail": "The intended attachment remains"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at a verified handoff"
+    },
+    {
+      "segmentIndex": 2,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at a verified handoff"
+    }
+  ]
+}

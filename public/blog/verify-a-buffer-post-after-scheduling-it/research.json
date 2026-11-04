@@ -1,0 +1,20 @@
+{
+  "topic": "Verify a Buffer Post After Scheduling It",
+  "researchedAt": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://developers.buffer.com/guides/posts-and-scheduling.html",
+      "publisher": "Buffer",
+      "title": "Posts and scheduling",
+      "claim": "Posts have ID, channel, due time, status and assets; scheduled and sent are distinct states.",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://github.com/thatguyheis/Fuseddistribution/blob/main/public/blog/scripts/buffer-live.mjs",
+      "publisher": "Fused Distribution",
+      "title": "Local publishing implementation",
+      "claim": "This repository saves creation evidence, verifies exact post IDs and retains video attachments."
+    }
+  ],
+  "scopeNote": "Workflow illustrations are hypothetical and redacted. No account results or performance statistics are invented."
+}

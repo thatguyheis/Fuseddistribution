@@ -1,0 +1,11 @@
+{
+  "slug": "verify-a-buffer-post-after-scheduling-it",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-04T17:53:06.394Z",
+  "pass": true,
+  "hero": {
+    "sha256": "0044e7a49a5ec5307b1784499234fdb39af8406c9fef79ccb9fe4802685c5cfd",
+    "notes": "Inspected exported portrait question hero; readable type and illustrative workflow, no account data."
+  },
+  "notes": "Six deterministic source-specific scene cards, with reserved middle panel on the readback scene and no invented account screenshot."
+}
