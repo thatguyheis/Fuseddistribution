@@ -47,4 +47,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/selling-junk-silver-coins-where-and-how", "/blog/how-to-compare-silver-buyback-quotes-fairly/"],
   ["/blog/silver-reserve-plan-what-it-is-and-how-it-works", "/reserve/"],
   ["/blog/best-silver-storage-options-for-investors", "/blog/silver-storage-vault-vs-home-storage/"],
+  // Retired 2026-11-04: unsupported inflation protection, stale prices, incorrect IRA handling, and false Panda identification advice.
+  ["/blog/how-inflation-erodes-purchasing-power-and-silver-protec", "/reserve/"],
+  ["/blog/how-to-buy-silver-coins-at-spot-price", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  ["/blog/silver-ira-how-to-set-one-up-step-by-step", "/blog/"],
+  ["/blog/silver-panda-coins-from-china-complete-guide", "/reserve/"],
 ]);
