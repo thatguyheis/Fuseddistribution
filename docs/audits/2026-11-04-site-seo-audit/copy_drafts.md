@@ -2,6 +2,8 @@
 
 Status: DRAFT, 2026-11-04. Nothing here is on the site yet. Facts come from `public/llms.txt`, `public/pricing/index.html` and the pricing memo (Foundation $99, Standard $499, Expansion from $999). Items marked **[NICK]** need a decision or real data from you before this can ship. I won't invent testimonials or results.
 
+**[NICK] First decision:** your About page never shows your last name. These drafts use "Nick Hughes" because a full name helps Google and AI tools trust the author. If you would rather stay "Nick", tell me and I will change every draft.
+
 Style check: no em dashes, no hyphenated words in prose, none of the banned buzzwords.
 
 ---

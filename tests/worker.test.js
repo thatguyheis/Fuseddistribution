@@ -62,6 +62,12 @@ describe("SEO routing and head tags", () => {
     expect(response.headers.get("location")).toBe(`${ORIGIN}/blog/google-business-profile-setup/`);
   });
 
+  it("redirects the orphaned folder page to the projects overview", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/Fused%20Technology%20Solutions/`, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}/projects/`);
+  });
+
   it("allows Google Fonts stylesheets and font files in the CSP", async () => {
     const response = await SELF.fetch(`${ORIGIN}/`);
     const directives = response.headers.get("content-security-policy").split(";").map(value => value.trim());
@@ -77,6 +83,25 @@ describe("SEO routing and head tags", () => {
     expect(html).toContain('<link rel="apple-touch-icon" href="/apple-touch-icon.png">');
     expect(html).toContain('<link rel="manifest" href="/site.webmanifest">');
     expect(html.indexOf('rel="icon"')).toBeLessThan(html.indexOf("</head>"));
+  });
+});
+
+describe("blog archive for crawlers", () => {
+  it("renders every post as a plain link after the post grid", async () => {
+    const { renderBlogArchive } = await import("../src/blog-archive.js");
+    const page = '<html><body><main><div id="post-list" class="post-grid"><article>x</article></div></main></body></html>';
+    const posts = [
+      { slug: "b-post", title: "B & <Post>", date: "2026-11-02" },
+      { slug: "a-post", title: "A Post", date: "2026-11-03" },
+      { slug: "Bad Slug!", title: "bad", date: "2026-01-01" },
+    ];
+    const html = await renderBlogArchive(new Response(page, { headers: { "content-type": "text/html" } }), posts).text();
+    expect(html).toContain('<a href="/blog/a-post/">A Post</a>');
+    expect(html).toContain("B &amp; &lt;Post&gt;");
+    expect(html).not.toContain("Bad Slug!");
+    expect(html).toContain("Browse all 2 articles");
+    expect(html.indexOf("a-post")).toBeLessThan(html.indexOf("b-post"));
+    expect(html.indexOf('id="post-list"')).toBeLessThan(html.indexOf("fx-archive"));
   });
 });
 

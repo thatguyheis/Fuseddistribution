@@ -1,5 +1,6 @@
 import { DurableObject } from "cloudflare:workers";
 import { addSharedNav } from "./site-nav.js";
+import { addBlogArchive } from "./blog-archive.js";
 
 const SECURITY_HEADERS_BASE = {
   "X-Frame-Options": "SAMEORIGIN",
@@ -26,6 +27,8 @@ const PERMANENT_REDIRECTS = new Map([
   ["/blog/google-business-profile-messaging", "/blog/google-business-profile-setup/"],
   ["/blog/google-business-profile-messaging-setup-and-tips", "/blog/google-business-profile-setup/"],
   ["/blog/google-business-profile-q-and-a-how-to-use-it", "/blog/google-business-profile-setup/"],
+  // Old standalone page left in a folder with a space in its name.
+  ["/Fused%20Technology%20Solutions", "/projects/"],
 ]);
 
 const ICON_LINKS = [
@@ -113,7 +116,7 @@ function generateNonce() {
     .replace(/=/g, "");
 }
 
-async function applyNonce(response, nonce, consentState = "", path = "/") {
+async function applyNonce(response, nonce, consentState = "", path = "/", posts = null) {
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) return response;
   let hasIcon = false;
@@ -152,6 +155,7 @@ async function applyNonce(response, nonce, consentState = "", path = "/") {
       },
     });
   }
+  if (posts) addBlogArchive(rewriter, posts);
   return addSharedNav(rewriter, path)
     .on("script", {
       element(element) {
@@ -633,6 +637,17 @@ async function handleApiRequest(request, env, url) {
   return json({ error: "Not found." }, { status: 404 });
 }
 
+async function readPosts(request, env) {
+  try {
+    const response = await env.ASSETS.fetch(new Request(new URL("/blog/posts.json", request.url).toString()));
+    if (response.status !== 200) return null;
+    const posts = await response.json();
+    return Array.isArray(posts) ? posts : null;
+  } catch {
+    return null;
+  }
+}
+
 async function rejectUnregisteredBlogAsset(request, env, url) {
   const parts = url.pathname.split("/").filter(Boolean);
   if (parts[0] !== "blog" || parts.length < 2 || parts[1] === "posts.json") return null;
@@ -729,7 +744,8 @@ export default {
         return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
       }
 
-      return withSecurityHeaders(await applyNonce(assetResponse, nonce, consentState, url.pathname), nonce);
+      const posts = url.pathname === "/blog/" ? await readPosts(request, env) : null;
+      return withSecurityHeaders(await applyNonce(assetResponse, nonce, consentState, url.pathname, posts), nonce);
     } catch (error) {
       if (error instanceof RequestError) {
         return withSecurityHeaders(json({ error: error.message }, { status: error.status }), null);

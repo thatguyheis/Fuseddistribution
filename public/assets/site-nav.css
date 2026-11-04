@@ -140,3 +140,11 @@ header.topbar .nav-toggle.active { color: var(--accent, #61ffd7); }
   header.topbar.fx-open .nav-actions { width: 100%; }
   header.topbar.fx-open .nav-cta { width: 100%; min-height: 48px; }
 }
+
+/* Server-rendered archive on /blog/ (src/blog-archive.js). */
+.fx-archive { margin: 40px 0 0; padding: 18px 20px; border-radius: 16px; border: 1px solid rgba(97, 255, 215, 0.16); background: rgba(7, 15, 23, 0.56); }
+.fx-archive summary { cursor: pointer; font-weight: 700; color: var(--accent, #61ffd7); min-height: 44px; display: flex; align-items: center; }
+.fx-archive ul { margin: 12px 0 0; padding-left: 18px; columns: 2 320px; column-gap: 32px; }
+.fx-archive li { margin: 0 0 8px; break-inside: avoid; line-height: 1.4; }
+.fx-archive a { color: var(--text, #eefcff); text-decoration: underline; text-decoration-color: rgba(97, 255, 215, 0.35); }
+.fx-archive time { display: block; font-size: 0.8rem; color: var(--muted, #b7d4d9); }
