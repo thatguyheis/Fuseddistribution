@@ -37,4 +37,9 @@ export const PERMANENT_REDIRECTS = new Map([
   // Retired 2026-11-04: repeated, unsupported buying and allocation advice.
   ["/blog/dollar-cost-averaging-silver-strategy-explained", "/reserve/"],
   ["/blog/silver-as-a-percentage-of-net-worth-how-much", "/reserve/"],
+  // Retired 2026-11-04: unsupported figures, unsafe storage advice, or incorrect premium math.
+  ["/blog/silver-numismatic-coins-vs-bullion-coins", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  ["/blog/how-to-store-silver-at-home-safely", "/blog/silver-storage-vault-vs-home-storage/"],
+  ["/blog/silver-premiums-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  ["/blog/silver-premium-over-spot-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
 ]);
