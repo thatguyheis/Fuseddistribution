@@ -7,11 +7,12 @@
   - Worker: www to apex 301, retired GBP post 301s, orphan folder 301, CSP for Google Fonts, favicon injection, shared nav (src/site-nav.js), blog archive (src/blog-archive.js)
   - Assets: og-image, favicon set, manifest, shared nav CSS/JS
   - Content: 19 link fixes in 21 posts, 3 posts out of posts.json, 5 demos noindexed, Plainsman schema removed, ProfessionalService schema, privacy indexable, sitemap regenerated
-- The same delta was applied to `.workflow-state/deployment-baseline` as a patch. Baseline backups of posts.json, sitemap.xml and the patched files are in the session scratchpad. The dry run builds.
+- I briefly patched `.workflow-state/deployment-baseline`, then found it is stale (old $299 pricing on the FAQ pages) and is not what the live site is built from. I restored it exactly as I found it. Full site deploys go out with `npx wrangler deploy` from the repo root, and the dry run passes.
+- Batch 3 (Nick's answers): homepage headline and reviews, /web-design/, /local-seo/, Warhammer sunset, Concept Build labels, ownership and 24 to 48 hour answers, full name, llms.txt.
 - Wrote copy drafts for review (`copy_drafts.md`).
 
 ## Skipped / blocked
-- `git push` and deploy were blocked by the permission classifier. Nick runs them (`NICK-TODO.md` step 1).
+- `git push` and deploy (`npx wrangler deploy`) were blocked by the permission classifier. Nick runs them (`NICK-TODO.md` step 1).
 - The www custom domain needs the Cloudflare dashboard (`NICK-TODO.md` step 2).
 - Not done, waiting on decisions: /admin lock, Consent Mode v2, brand name, silver archive, fact check, deleting retired folders, blog title suffix and author name (Codex template).
 - Not done, lower priority: photos page weight, image width/height, real dateModified.

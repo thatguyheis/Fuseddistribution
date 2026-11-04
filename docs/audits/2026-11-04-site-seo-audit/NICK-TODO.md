@@ -10,7 +10,7 @@ Claude's permission settings blocked it from pushing, so you run these two comma
 
 ```
 ! cd /Users/nick/projects/fuseddistribution && git push origin main
-! cd /Users/nick/projects/fuseddistribution && node scripts/deploy-approved-blog.mjs
+! cd /Users/nick/projects/fuseddistribution && npx wrangler deploy
 ```
 
 The first command sends all the new commits to GitHub. The second puts the changes on the live site.
@@ -20,6 +20,8 @@ Then tell Claude "deployed". It will check the live pages with a cache-buster.
 If you'd rather let Claude do this itself next time, add a permission rule for `git push` and the deploy script. Ask Claude to set it up with /update-config.
 
 ---
+
+**Use `npx wrangler deploy`, not `scripts/deploy-approved-blog.mjs`.** The live site matches the repo, and that is how full site changes ship (the 11/02 pricing update went out this way). The blog script deploys a separate snapshot in `.workflow-state/deployment-baseline` that still has the **old $299/$300 pricing** on the FAQ pages and the old llms.txt. Running that script would roll live pricing back. Codex needs to refresh that snapshot (see decision 7 below).
 
 ## Step 2. Turn on www (5 minutes, do this AFTER step 1)
 
@@ -72,6 +74,8 @@ Reply with the number and your choice.
 6. **Codex handoff:** shortening blog titles (351 are too long) and changing the author from "Nick" to your full name both touch the blog template, which Codex owns. OK to write Codex a handoff note?
 
 ---
+
+7. **Stale deploy snapshot (important).** `.workflow-state/deployment-baseline` is behind the live site: old pricing on the FAQ pages and the old llms.txt, plus none of today's fixes. If any job runs `scripts/deploy-approved-blog.mjs`, it overwrites live with that old copy. OK to send Codex a handoff to rebuild the snapshot from `main` after today's deploy?
 
 ## What Claude already did (no action needed)
 
