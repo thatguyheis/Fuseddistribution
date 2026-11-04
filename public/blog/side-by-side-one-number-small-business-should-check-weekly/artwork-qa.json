@@ -1,0 +1,14 @@
+{
+  "slug": "side-by-side-one-number-small-business-should-check-weekly",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-04T18:09:03.314Z",
+  "pass": true,
+  "hero": {
+    "sha256": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
+    "notes": "Inspected exported question hero for legibility and topic match."
+  },
+  "notes": [
+    "Read the full article and spoken script, verified the fictional 600/30=20 and 600/6=100 examples, and made marketing-only cost scope explicit so the worksheet is not presented as fully loaded CAC.",
+    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Are your leads becoming paying customers?",
+    "visibleText": "Are your leads becoming paying customers?",
+    "spokenSeconds": 2.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Original portrait hero has the exact approved question, visible at frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Two different denominators",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Fictional arithmetic",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Match dates and cost scope",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check conversion labels",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which denominator is harder to define?",
+    "spokenText": "Which denominator is harder to define?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question followed by practical checks holds attention through the supported payoff.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare like platform and duration after sufficient observations; record sample size."
+  }
+}

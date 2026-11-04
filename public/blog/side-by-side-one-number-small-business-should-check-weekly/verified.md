@@ -8,7 +8,7 @@ Cost per lead is:
 
 **Included marketing spend ÷ qualified leads = cost per lead.**
 
-Customer acquisition cost, often called CAC, is:
+For the scoped marketing-only worksheet in this example, the acquisition cost measure is:
 
 **Included marketing spend ÷ new paying customers = customer acquisition cost.**
 
@@ -33,9 +33,9 @@ Do not turn this table into two comparable bars without labeling the denominator
 
 The cleanest weekly worksheet starts with a fixed date range. Write the spend dates, the lead dates, and the customer outcome date rule. You might review marketing spend from October 1 through October 7, leads created during that same period, and the eventual payments from those leads. That last part may require a later readout because sales often lag the first inquiry.
 
-If you count spend from one week and customers from a later period, say so. A seven day snapshot can be preliminary when a typical sale takes three weeks. A new campaign may have generated leads this week whose customers have not paid yet. Calling that week’s customer acquisition cost “unknown pending conversion” is more honest than assigning zero customers and implying the campaign failed.
+If you count spend from one week and customers from a later period, say so. A seven day snapshot can be preliminary when a typical sale takes three weeks. A new campaign may have generated leads this week whose customers have not paid yet. Calling that week’s customer acquisition cost “unknown pending conversion” is more honest than assigning zero customers and implying the campaign failed. For more on this, see [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/).
 
-Use a cohort key that can be repeated: campaign, source, lead date range, customer conversion window, and attribution rule. A customer who appears in two campaign reports should not be counted twice in the same combined result. Decide whether the primary source gets credit, whether credit is shared, or whether mixed attribution is reported separately. Keep the choice stable from week to week so a change in the rule does not masquerade as a change in performance.
+Use a cohort key that can be repeated: campaign, source, lead date range, customer conversion window, and attribution rule. A customer who appears in two campaign reports should not be counted twice in the same combined result. Decide whether the primary source gets credit, whether credit is shared, or whether mixed attribution is reported separately. Keep the choice stable from week to week so a change in the rule does not masquerade as a change in performance. For more on this, see [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/).
 
 Google Ads provides a useful warning about denominator drift. Its “All conversions” column can include actions left out of the main “Conversions” column, plus store visits, certain calls, and view through conversions. Google says the column can be segmented by conversion action and source. That means a count called conversions needs a closer look before it becomes leads, and a lead count needs another explicit step before it becomes paying customers.
 
@@ -82,3 +82,12 @@ Which denominator is hardest for your business to define: qualified lead or payi
 
 - Business Development Bank of Canada, “Marketing KPIs: A guide for business owners,” accessed November 4, 2026: [BDC marketing KPI guide](https://www.bdc.ca/en/articles-tools/marketing-sales-export/marketing/marketing-kpis-a-guide-business-owners)
 - Google Ads Help, “About ‘All conversions’,” accessed November 4, 2026: [Google Ads All conversions](https://support.google.com/google-ads/answer/3419678?hl=en)
+
+## Related
+
+- [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+- [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/)
+- [Step by Step: The One Number Every Small Business Should Check Weekly](/blog/calculate-customer-acquisition-cost-weekly-step-by-step/)
+
+Read next: [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+

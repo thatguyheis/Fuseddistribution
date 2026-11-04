@@ -15,7 +15,7 @@ Narration: Are your leads becoming paying customers?
 ## OVERLAY: Two different denominators
 **Visual:** Side by side table: spend divided by leads, then spend divided by paying customers.
 **Duration:** 30s
-Narration: Cost per lead and customer acquisition cost use the same kind of numerator, but different denominators. Cost per lead is included marketing spend divided by qualified leads. Customer acquisition cost is included marketing spend divided by new paying customers. A form fill, call, or quote request is not automatically a customer. Name the event that qualifies each count before comparing the results in your weekly report.
+Narration: In this marketing-only worksheet, cost per lead and customer acquisition cost use the same kind of numerator, but different denominators. Cost per lead is included marketing spend divided by qualified leads. Customer acquisition cost is included marketing spend divided by new paying customers. A form fill, call, or quote request is not automatically a customer. Name the event that qualifies each count before comparing the results in your weekly report.
 
 ---
 ## OVERLAY: Fictional arithmetic

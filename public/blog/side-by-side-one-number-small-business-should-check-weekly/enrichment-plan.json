@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "table",
+      "title": "Fictional marketing-only worksheet",
+      "rows": [
+        {
+          "label": "Marketing spend",
+          "detail": "$600 in the example scope"
+        },
+        {
+          "label": "Leads",
+          "detail": "30 inquiries → $20 per lead"
+        },
+        {
+          "label": "New paying customers",
+          "detail": "6 buyers → $100 per customer"
+        },
+        {
+          "label": "Interpretation",
+          "detail": "Different counts, different questions"
+        }
+      ],
+      "source": "Fictional arithmetic; one illustrative review cohort",
+      "takeaway": "State the denominator before comparing"
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    },
+    {
+      "segmentIndex": 2,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    }
+  ]
+}

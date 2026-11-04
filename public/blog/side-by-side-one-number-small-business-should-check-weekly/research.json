@@ -1,0 +1,21 @@
+{
+  "topic": "Cost per Lead Versus Customer Acquisition Cost",
+  "researchedAt": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.bdc.ca/en/articles-tools/marketing-sales-export/marketing/marketing-kpis-a-guide-business-owners",
+      "publisher": "BDC",
+      "title": "Marketing KPIs guide",
+      "claim": "Acquisition cost is one KPI among customer value and other performance measures.",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://support.google.com/google-ads/answer/3419678?hl=en",
+      "publisher": "Google Ads",
+      "title": "About All conversions",
+      "claim": "Conversion actions have different meanings and can be segmented before interpreting business outcomes.",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "scopeNote": "All example amounts and counts are fictional and use marketing-only spend. They are not fully loaded company CAC or a market benchmark."
+}

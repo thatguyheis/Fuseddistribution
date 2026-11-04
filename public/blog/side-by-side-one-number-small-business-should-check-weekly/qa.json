@@ -1,0 +1,33 @@
+{
+  "slug": "side-by-side-one-number-small-business-should-check-weekly",
+  "mode": "codex-editorial",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-04T18:09:03.369Z",
+  "review_notes": [
+    "Read the full article and spoken script, verified the fictional 600/30=20 and 600/6=100 examples, and made marketing-only cost scope explicit so the worksheet is not presented as fully loaded CAC.",
+    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Are your leads becoming paying customers?",
+    "visibleText": "Are your leads becoming paying customers?"
+  },
+  "artifactSha256": {
+    "verified.md": "84e40be5ba0f38f258b2bb0230f448162c078a4c7a5f6b2c1684d8587e4c3783",
+    "index.html": "4a2cd4d26381885e7ddcacb108a75a06f79fa97f12569b63085464e183cdf324",
+    "meta.json": "f48f23099bf5b814add506eb21c5efd18a6119c027dfe4d23d934bb10f3016cd",
+    "research.json": "2fe54f187699026d653da491ac8197a93cb5c759569aeac8daf0287591841230",
+    "hero.jpg": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
+    "photo-post.jpg": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
+    "reel-script.md": "403b841f57c3313bb70ba4446a443b4a18da26d7cdcdd48cce6cc353e51f8946",
+    "reel-data.md": "11c5354252749b3af6e8bc2c0fac38b364bf7abea0ab9c190053c1f946eeec5c",
+    "social-copy.json": "2a9d1903d1577867178b462ed77158181f2136607d60068e91db511cc8520ba6",
+    "attention-review.json": "18388e9eed8f3f0f52e27db56a261d358a9afdf9441193b7e62419ba9d0ac868",
+    "presentation-plan.json": "c5d30b72c31c0b372c1ac9f3c9375f07d0a2645347da46e9117db5b4970c8f6d",
+    "enrichment-plan.json": "4ce834663fffa149e485c28fc99340ee256665734fdf4764f03ba49edb2348cd"
+  }
+}
