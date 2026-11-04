@@ -35,7 +35,7 @@
           ] }
         },
         { "@type": "Service", "serviceType": "Custom small business website design, hosting, content automation, and management", "provider": { "@id": "https://fuseddistribution.com/#organization" }, "areaServed": "US", "description": "Subscription-based website design and management. Custom site built before payment. Hosting, Google Business, local SEO, and ongoing support included.",
-          "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Fused Technology Solutions Plans", "itemListElement": [{"@type": "Offer", "name": "Foundation", "description": "Custom site, Cloudflare hosting, SSL, contact form, monthly content update, email support.", "price": "99.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "99.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Standard", "description": "Foundation plus 8 fact checked blog posts and 8 narrated video reels per month in your cloned voice, posting to YouTube, Instagram, and X, managed newsletter, monthly AI brand images, review requests, standard workflow automation, monthly report, monthly 1 hour session. Hosted or self hosted.", "price": "499.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "499.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Expansion", "description": "Standard plus custom automated workflows, custom AI agents, AI chat assistant, 1:1 project management, staff training with written guides, Google Business Profile management, higher content volume, missed call text back, quarterly shoots, AI ad copy and translation. Starts at $999 per month, priced to scope.", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "999.00", "price": "999.00", "priceCurrency": "USD", "unitText": "MONTH"}}] }
+          "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Fused Technology Solutions Plans", "itemListElement": [{"@type": "Offer", "name": "Foundation", "description": "Custom site, Cloudflare hosting, SSL, contact form, monthly content update, email support.", "price": "99.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "99.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Standard", "description": "Foundation plus 8 fact checked blog posts and 8 narrated video reels per month in your cloned voice, posting to 3 social channels of your choice, managed newsletter, monthly AI brand images, review requests, standard workflow automation, monthly report, monthly 1 hour session. Hosted or self hosted.", "price": "499.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "499.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Expansion", "description": "Standard plus custom automated workflows, custom AI agents, AI chat assistant, 1:1 project management, staff training with written guides, Google Business Profile management, higher content volume, missed call text back, quarterly shoots, AI ad copy and translation. Starts at $999 per month, priced to scope.", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "999.00", "price": "999.00", "priceCurrency": "USD", "unitText": "MONTH"}}] }
         }
       ]
     }
@@ -823,6 +823,10 @@
       .sec { margin-top: 84px; }
       .sec-label { display: inline-block; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(88,214,255,0.06); color: var(--accent); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; }
       .sec h2 { margin: 16px 0 10px; font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.1; text-transform: none; }
+      .channel-grid { list-style: none; margin: 0 0 18px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+      .channel-grid li { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; padding: 10px 16px; border-radius: 14px; border: 1px solid var(--line); background: rgba(88,214,255,0.05); font-weight: 700; }
+      .channel-grid small { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; }
+      .channel-note { margin: 0; max-width: 760px; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
       .sec-lead { margin: 0 0 30px; max-width: 720px; color: var(--muted); line-height: 1.65; }
 
       /* pipeline */
@@ -1048,7 +1052,7 @@
               <li>Reels narrated in your own cloned voice, with captions and charts</li>
               <li>Every post fact checked before it goes live</li>
               <li>You approve content before it posts, or it goes out after 48 hours</li>
-              <li>Posted for you to YouTube, Instagram, and X</li>
+              <li>Posted for you to 3 social channels you choose (<a href="#social-channels">see the list</a>)</li>
               <li>Monthly email newsletter written, scheduled, and sent</li>
               <li>Fresh AI brand images every month</li>
               <li>Review requests sent for you, review replies drafted</li>
@@ -1101,6 +1105,7 @@
               <li>1:1 project management with me as your direct contact</li>
               <li>Training for your existing staff, with a written guide for every workflow</li>
               <li>Higher content volume, up to daily posts and reels</li>
+              <li>More social channels, up to all 11 we support, set up around your audience</li>
               <li>Google Business Profile setup, tuning, and posts shared from every blog</li>
               <li>Missed call text back so no lead goes cold</li>
               <li>Quarterly photo and video shoot for local clients</li>
@@ -1158,7 +1163,7 @@
                 <li><span class="step-num">06 Visuals</span><h3>Images and charts</h3><p>A hero image, brand graphics, and data charts are made for each post.</p></li>
                 <li><span class="step-num">07 Voice</span><h3>Narrate in your voice</h3><p>The post becomes a short script, read by a clone of your own voice.</p></li>
                 <li><span class="step-num">08 Video</span><h3>Render the reel</h3><p>A vertical video with captions, timed to the narration, checked before release.</p></li>
-                <li><span class="step-num">09 Post</span><h3>Post and report</h3><p>Shared to YouTube, Instagram, and X, then confirmed and tracked.</p></li>
+                <li><span class="step-num">09 Post</span><h3>Post and report</h3><p>Shared to your chosen social channels, then confirmed and tracked.</p></li>
               </ol>
               <div class="pipe-bar" aria-hidden="true"><i id="pipe-bar"></i></div>
 
@@ -1174,6 +1179,16 @@
               <figcaption><strong>Made by the system.</strong> Written, narrated, captioned, and rendered with no editing by hand.</figcaption>
             </figure>
           </div>
+        </section>
+
+
+        <!-- Social channels -->
+        <section class="sec" id="social-channels">
+          <span class="sec-label">Social channels</span>
+          <h2>Post where your customers already are.</h2>
+          <p class="sec-lead">Standard includes 3 social channels. You pick them from the list below, and every blog post and reel goes out to all three. Expansion adds more channels and sets each one up around your audience, so if your business is on 4, 6 or all of them, they are all covered.</p>
+          <ul class="channel-grid" aria-label="Supported social channels"><li>Instagram</li><li>Facebook</li><li>TikTok</li><li>YouTube</li><li>LinkedIn</li><li>X</li><li>Pinterest</li><li>Threads</li><li>Bluesky</li><li>Mastodon</li><li>Google Business Profile<small>Expansion</small></li></ul>
+          <p class="channel-note">Facebook Pages, Instagram business, creator and personal accounts, LinkedIn profiles and company pages, and Pinterest business accounts are supported. Facebook personal profiles, LinkedIn groups and Pinterest personal accounts can't be connected because those platforms don't allow it. Google Business Profile posts come with Expansion.</p>
         </section>
 
         <!-- Calculator -->
