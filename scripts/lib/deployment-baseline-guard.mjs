@@ -22,12 +22,13 @@ function filesUnder(directory) {
     .map(entry => join(entry.parentPath, entry.name));
 }
 
-export function assertDeploymentBaselineMatchesMain(root, baseline) {
+export function assertDeploymentBaselineMatchesMain(root, baseline, approvedSlug = null) {
   const branch = git(root, 'branch', '--show-current').toString().trim();
   if (branch !== 'main') throw new Error(`Blog deployment requires main; current branch is ${branch || 'detached HEAD'}`);
 
-  const committedPaths = git(root, 'ls-tree', '-r', '--name-only', 'HEAD', '--', 'src', 'public', 'wrangler.jsonc')
-    .toString().trim().split('\n').filter(isCorePath);
+  const allPaths = git(root, 'ls-tree', '-r', '--name-only', 'HEAD', '--', 'src', 'public', 'wrangler.jsonc')
+    .toString().trim().split('\n');
+  const committedPaths = allPaths.filter(isCorePath);
   const drift = [];
   for (const path of committedPaths) {
     const snapshot = join(baseline, path);
@@ -51,6 +52,17 @@ export function assertDeploymentBaselineMatchesMain(root, baseline) {
   const snapshotIgnorePath = join(baseline, 'public/.assetsignore');
   const snapshotIgnore = existsSync(snapshotIgnorePath) ? readFileSync(snapshotIgnorePath, 'utf8').split('\n') : [];
   if (sourceIgnore.some(line => line && !snapshotIgnore.includes(line))) drift.push('public/.assetsignore');
+
+  const operatingDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' }).format(new Date());
+  const catalog = JSON.parse(git(root, 'show', 'HEAD:public/blog/posts.json').toString());
+  const trackedPaths = new Set(allPaths);
+  for (const post of catalog) {
+    if (post.slug === approvedSlug || post.date > operatingDate ||
+        existsSync(join(root, '.workflow-state/editorial-holds', `${post.slug}.json`))) continue;
+    const path = `public/blog/${post.slug}/index.html`;
+    if (!trackedPaths.has(path) || !existsSync(join(baseline, path)) ||
+        !readFileSync(join(baseline, path)).equals(git(root, 'show', `HEAD:${path}`))) drift.push(path);
+  }
 
   if (drift.length) {
     throw new Error(`Deployment baseline differs from committed main: ${drift.slice(0, 12).join(', ')}` +

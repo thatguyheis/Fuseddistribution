@@ -22,16 +22,18 @@ test('blog deployment blocks stale site code and pages while allowing an explici
   mkdirSync(join(root, 'src'), { recursive: true });
   mkdirSync(join(root, 'public/faq'), { recursive: true });
   mkdirSync(join(root, 'public/blog'), { recursive: true });
+  mkdirSync(join(root, 'public/blog/example'), { recursive: true });
   writeFileSync(join(root, 'src/worker.js'), 'export default {};\n');
   writeFileSync(join(root, 'wrangler.jsonc'), '{}\n');
   writeFileSync(join(root, 'public/faq/index.html'), '<h1>Current price</h1>\n');
   writeFileSync(join(root, 'public/.assetsignore'), 'blog/scripts\n');
-  writeFileSync(join(root, 'public/blog/posts.json'), '[]\n');
+  writeFileSync(join(root, 'public/blog/posts.json'), '[{"slug":"example","date":"2026-01-01"}]\n');
+  writeFileSync(join(root, 'public/blog/example/index.html'), '<h1>Current article</h1>\n');
   git('init', '-q', '-b', 'main');
   git('add', 'src', 'public', 'wrangler.jsonc');
   git('commit', '-q', '-m', 'fixture');
 
-  for (const path of ['src/worker.js', 'wrangler.jsonc', 'public/faq/index.html', 'public/blog/posts.json', 'public/.assetsignore']) {
+  for (const path of ['src/worker.js', 'wrangler.jsonc', 'public/faq/index.html', 'public/blog/posts.json', 'public/blog/example/index.html', 'public/.assetsignore']) {
     mkdirSync(join(baseline, path, '..'), { recursive: true });
     copyFileSync(join(root, path), join(baseline, path));
   }
@@ -45,6 +47,11 @@ test('blog deployment blocks stale site code and pages while allowing an explici
   writeFileSync(join(baseline, 'public/blog/posts.json'), '[{"slug":"retired"}]\n');
   assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /public\/blog\/posts\.json/);
   copyFileSync(join(root, 'public/blog/posts.json'), join(baseline, 'public/blog/posts.json'));
+
+  writeFileSync(join(baseline, 'public/blog/example/index.html'), '<h1>Old article</h1>\n');
+  assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /public\/blog\/example\/index\.html/);
+  assert.doesNotThrow(() => assertDeploymentBaselineMatchesMain(root, baseline, 'example'));
+  copyFileSync(join(root, 'public/blog/example/index.html'), join(baseline, 'public/blog/example/index.html'));
 
   writeFileSync(join(baseline, 'src/retired.js'), 'export default {};\n');
   assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /src\/retired\.js/);

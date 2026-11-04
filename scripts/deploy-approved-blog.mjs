@@ -16,7 +16,7 @@ const args = process.argv.slice(2);
 const slug = args.find(arg => arg.startsWith('--slug='))?.slice(7);
 if (slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Invalid slug');
 if (!existsSync(join(baseline, 'wrangler.jsonc'))) throw new Error('Reviewed deployment baseline missing; owner must restore it');
-assertDeploymentBaselineMatchesMain(root, baseline);
+assertDeploymentBaselineMatchesMain(root, baseline, slug);
 function run(command, argv, cwd = root, env = process.env) {
   const result = spawnSync(command, argv, { cwd, stdio: 'inherit', env });
   if (result.status !== 0) throw new Error(`${command} failed (${result.status})`);
