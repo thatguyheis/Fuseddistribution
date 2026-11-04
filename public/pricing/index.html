@@ -35,7 +35,7 @@
           ] }
         },
         { "@type": "Service", "serviceType": "Custom small business website design, hosting, content automation, and management", "provider": { "@id": "https://fuseddistribution.com/#organization" }, "areaServed": "US", "description": "Subscription-based website design and management. Custom site built before payment. Hosting, Google Business, local SEO, and ongoing support included.",
-          "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Fused Technology Solutions Plans", "itemListElement": [{"@type": "Offer", "name": "Foundation", "description": "Custom site, Cloudflare hosting, SSL, contact form, monthly content update, email support.", "price": "99.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "99.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Standard", "description": "Foundation plus 8 fact checked blog posts and 8 narrated video reels per month in your cloned voice, posting to YouTube, Instagram, and X, AI chat assistant, managed newsletter, monthly AI brand images, review requests, standard workflow automation, monthly report, monthly 1 hour session. Hosted or self hosted.", "price": "499.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "499.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Expansion", "description": "Standard plus custom automated workflows, custom AI agents, 1:1 project management, staff training with written guides, Google Business Profile management, higher content volume, missed call text back, quarterly shoots, AI ad copy and translation. Starts at $999 per month, priced to scope.", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "999.00", "price": "999.00", "priceCurrency": "USD", "unitText": "MONTH"}}] }
+          "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Fused Technology Solutions Plans", "itemListElement": [{"@type": "Offer", "name": "Foundation", "description": "Custom site, Cloudflare hosting, SSL, contact form, monthly content update, email support.", "price": "99.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "99.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Standard", "description": "Foundation plus 8 fact checked blog posts and 8 narrated video reels per month in your cloned voice, posting to YouTube, Instagram, and X, managed newsletter, monthly AI brand images, review requests, standard workflow automation, monthly report, monthly 1 hour session. Hosted or self hosted.", "price": "499.00", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "499.00", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Expansion", "description": "Standard plus custom automated workflows, custom AI agents, AI chat assistant, 1:1 project management, staff training with written guides, Google Business Profile management, higher content volume, missed call text back, quarterly shoots, AI ad copy and translation. Starts at $999 per month, priced to scope.", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": "999.00", "price": "999.00", "priceCurrency": "USD", "unitText": "MONTH"}}] }
         }
       ]
     }
@@ -1049,7 +1049,6 @@
               <li>Every post fact checked before it goes live</li>
               <li>You approve content before it posts, or it goes out after 48 hours</li>
               <li>Posted for you to YouTube, Instagram, and X</li>
-              <li>AI chat assistant on your site answering questions 24/7</li>
               <li>Monthly email newsletter written, scheduled, and sent</li>
               <li>Fresh AI brand images every month</li>
               <li>Review requests sent for you, review replies drafted</li>
@@ -1098,6 +1097,7 @@
               <li>Everything in Standard</li>
               <li>Custom automated workflows built around your existing tools</li>
               <li>Custom AI agents that handle repeat tasks in your business</li>
+              <li>AI chat assistant on your site answering questions 24/7</li>
               <li>1:1 project management with me as your direct contact</li>
               <li>Training for your existing staff, with a written guide for every workflow</li>
               <li>Higher content volume, up to daily posts and reels</li>
@@ -1196,17 +1196,16 @@
                 <li><span>Managed website and hosting</span><span>$99 to $250</span></li>
                 <li><span>Blog posts <small>($65 to $185 each)</small></span><span id="line-posts">$520 to $1,480</span></li>
                 <li><span>Video reels <small>($31 to $75 each)</small></span><span id="line-reels">$248 to $600</span></li>
-                <li><span>AI chat assistant</span><span>$30 to $100</span></li>
               </ul>
-              <div class="calc-total"><span>Separate vendors</span><span class="calc-out" id="calc-total">$897 to $2,430</span></div>
+              <div class="calc-total"><span>Separate vendors</span><span class="calc-out" id="calc-total">$867 to $2,330</span></div>
             </div>
 
             <div class="calc-panel fused">
               <div class="calc-plan-name" id="calc-plan-name">Fused Standard</div>
               <div class="calc-plan" id="calc-plan">$499<small style="font-size:1rem;color:var(--muted)">/mo</small></div>
-              <p class="calc-save" id="calc-save">Everything on the left plus fact checking, your cloned voice, posting, a monthly report, and a 1 hour session with me. About $398 to $1,931 less every month.</p>
+              <p class="calc-save" id="calc-save">Everything on the left plus fact checking, your cloned voice, posting, a monthly report, and a 1 hour session with me. About $368 to $1,831 less every month.</p>
               <a class="plan-cta primary" href="/#contact" id="calc-cta">Get Started</a>
-              <p class="calc-foot">Vendor ranges come from published 2026 prices for website subscriptions, blog packages, short video services, and AI chat tools. Your quotes may differ.</p>
+              <p class="calc-foot">Vendor ranges come from published 2026 prices for website subscriptions, blog packages, and short video services. Your quotes may differ.</p>
             </div>
           </div>
         </section>
@@ -1617,7 +1616,7 @@
           var lpLo = np * 65, lpHi = np * 185, lrLo = nr * 31, lrHi = nr * 75;
           document.getElementById("line-posts").textContent = fmt(lpLo) + " to " + fmt(lpHi);
           document.getElementById("line-reels").textContent = fmt(lrLo) + " to " + fmt(lrHi);
-          var lo = 99 + lpLo + lrLo + 30, hi = 250 + lpHi + lrHi + 100;
+          var lo = 99 + lpLo + lrLo, hi = 250 + lpHi + lrHi;
           document.getElementById("calc-total").textContent = fmt(lo) + " to " + fmt(hi);
           var standard = np <= 8 && nr <= 8;
           var price = standard ? 499 : 999;
