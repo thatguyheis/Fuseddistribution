@@ -1,47 +1,41 @@
-# Client instruction service
+# Private reel service
 
-This Worker serves versioned reel instructions only to clients whose D1 profile has `paid = 1` and has not expired. The operator controls the profile with Wrangler. The current Fused GitHub repository is public, so private instruction source files must stay outside tracked paths. Cloudflare R2 is not enabled on this account; D1 stores the small Markdown bundles for this first version. The same entitlement check guards the Markdown endpoint and the remote MCP endpoint. **Both endpoints return the entire bundle to an entitled client. Do not upload non-downloadable proprietary instructions here or onboard a paying client who expects that protection.** See [the client service SOP](../../docs/CLIENT-REEL-SERVICE-SOP.md) for the hosted-service design.
+The service offers `create_reel_plan` through MCP and `POST /v1/reels/plan` through HTTPS. A paid client submits a brief and receives its own script and storyboard. There is no instruction or policy download: the old file endpoint returns `410`, and `get_reel_instructions` is no longer registered. The legacy fetch script exits without making a network request.
 
-## Local setup
+Private policy JSON is stored in D1 and evaluated by server code. It is never included in the model prompt, public tool metadata, client results, or error messages. The current policy implements hook, caption, beat count, duration, closing, and source-reference checks. It is a compiled subset of the reel SOP. Prose instructions and future procedures must be translated into server operations before clients can use them privately; this service does not secretly feed an arbitrary Markdown playbook to a customer's agent.
 
-From the repository root:
+The model drafts from a public generic prompt and the client brief. Keeping the policy outside model context prevents a prompt injection from asking the model to quote that policy. Customers can keep their returned work and infer some visible behavior; this is not a guarantee against reverse engineering or credential sharing.
+
+## Install and verify
 
 ```bash
 npm ci --prefix services/client-instructions
 npm run client-instructions:test
-npx wrangler d1 migrations apply fused-client-instructions --config services/client-instructions/wrangler.jsonc --local
 npx wrangler deploy --config services/client-instructions/wrangler.jsonc --dry-run
 ```
 
-Run the operator with `--local` to work against the local D1 database. Omit it to work against the Cloudflare database. A new client starts with `paid = false`.
+## Owner operations
 
-```bash
-node services/client-instructions/scripts/operator.mjs --local put-bundle --client-readable reel-core pilot-v1 /absolute/path/to/private/reel.md
-node services/client-instructions/scripts/operator.mjs --local create-client pilot-client reel-core
-node services/client-instructions/scripts/operator.mjs --local set-paid pilot-client true nick "Pilot payment confirmed"
-```
-
-The `create-client` command writes a unique token to `.build/client-instructions/credentials/<client-id>.token` with restricted file permissions. Deliver it through a secure channel, then keep it in the client's OS keychain or an untracked protected environment file. Never paste the token into this repository, a ticket, a chat log, or an instruction bundle. The operator command requires a private bundle source outside this public repository, or under ignored `.build/` for local testing.
-
-## Hosted pilot setup
-
-Apply the same migration remotely, upload a reviewed client readable bundle, then create a test profile. The `--client-readable` flag is an explicit acknowledgement that a paid profile can save the full text. Keep the test profile inactive outside the smoke test:
+Private source files must be outside this public repository or in ignored `.build/`. The staged policy is `.build/client-instructions/private/reel-policy-v1.json`. Back it up privately. All commands use remote D1 unless `--local` follows the script name. Do not print token contents.
 
 ```bash
 npx wrangler d1 migrations apply fused-client-instructions --config services/client-instructions/wrangler.jsonc --remote
-node services/client-instructions/scripts/operator.mjs put-bundle --client-readable reel-core 2026-11-04 /absolute/path/to/private/reel.md
-node services/client-instructions/scripts/operator.mjs create-client pilot-client reel-core
-node services/client-instructions/scripts/operator.mjs set-paid pilot-client true nick "Pilot smoke test"
-node services/client-instructions/scripts/operator.mjs set-paid pilot-client false nick "Pilot smoke test complete"
+node services/client-instructions/scripts/operator.mjs put-policy reel-core reel-policy-v1 .build/client-instructions/private/reel-policy-v1.json
+node services/client-instructions/scripts/operator.mjs create-client client-id reel-core
+node services/client-instructions/scripts/operator.mjs set-paid client-id true nick "Payment confirmed"
+node services/client-instructions/scripts/operator.mjs set-paid client-id false nick "Access ended"
+node services/client-instructions/scripts/operator.mjs rotate-token client-id
 ```
 
-Deploy with `npx wrangler deploy --config services/client-instructions/wrangler.jsonc`. The deployed Markdown endpoint is `https://fused-client-instructions.luxraycoco.workers.dev/v1/instructions/reel`. Set `FUSED_INSTRUCTIONS_URL` to that URL and `FUSED_INSTRUCTIONS_TOKEN` to that client's token outside Git. The client loader writes the verified Markdown to stdout and exits nonzero on denial or outage:
+A new client starts unpaid. Only SHA256 token hashes are stored in D1. `rotate-token` invalidates the old credential and saves the replacement under ignored `.build/client-instructions/credentials/` with restricted permissions. Share credentials through a secure channel. Tokens remain per client; they can be shared by a recipient, so separate installations should receive separate client profiles. Payment changes are audited by D1 triggers. Billing-provider integration has not been configured.
 
-```bash
-node services/client-instructions/client/fetch-instructions.mjs
-```
+The Worker enforces a UTC daily cap of 20 accepted generation attempts per client, including failed generation. Each attempt makes at most two model calls. Concurrent requests reserve quota atomically in D1. Limits are operational safeguards, not a billing ledger. Cloudflare Workers AI usage may incur charges under the account's plan. No paid-plan upgrade is performed by deployment.
 
-The remote MCP endpoint is `https://fused-client-instructions.luxraycoco.workers.dev/mcp`. Its `get_reel_instructions` tool cannot edit server data, but its result contains the complete instruction text and can be saved by the client. MCP clients must send the same client token as `Authorization: Bearer <token>` on each request. For Codex, set the token in the client's environment, then add this to that client's private `~/.codex/config.toml`:
+## Client connections
+
+MCP endpoint: `https://fused-client-instructions.luxraycoco.workers.dev/mcp`.
+
+Codex configuration:
 
 ```toml
 [mcp_servers.fused_reel]
@@ -49,7 +43,7 @@ url = "https://fused-client-instructions.luxraycoco.workers.dev/mcp"
 bearer_token_env_var = "FUSED_INSTRUCTIONS_TOKEN"
 ```
 
-Claude Code supports a remote HTTP MCP server and environment variable expansion in `.mcp.json` headers. Put this in the client's private config only where their credential is available to Claude Code:
+Claude Code configuration, with the credential available in its environment:
 
 ```json
 {
@@ -63,16 +57,24 @@ Claude Code supports a remote HTTP MCP server and environment variable expansion
 }
 ```
 
-Other MCP clients can connect if they support Streamable HTTP and a bearer header. Clients that cannot set this header can use the Markdown loader; native app connectors that require OAuth need an additional OAuth sign-in layer. Neither transport forces a client agent to call the tool, so a short local bootstrap must instruct it to call `get_reel_instructions` at the start of each reel. A deterministic reel entry script must call the Markdown loader and stop on failure. Neither mechanism can prevent someone saving a previously delivered bundle.
+Other clients must support Streamable HTTP with a bearer header. OAuth-only apps require additional identity integration. For scripts, provide a JSON brief shaped like `client/brief.example.json`, set `FUSED_INSTRUCTIONS_TOKEN` privately, and run:
 
-The first bundle, `reel-core-v1`, is staged outside Git at `.build/client-instructions/private/reel-core-v1.md` and uploaded to D1. It rewrites reusable reel guidance around intake, sourced claims, hook and beat planning, rights, caption checks, and delivery. It excludes Fused's coin history rules, Nick's voice setup, internal paths, production schedule, and vendor credentials. This staging file is ignored, so make a durable private backup before using it as the only editable source.
+```bash
+node services/client-instructions/client/create-reel-plan.mjs services/client-instructions/client/brief.example.json
+```
 
-## Operating rules
+The CLI writes only the client's result to stdout. The client may save it. `AGENTS.example.md` describes the integration. Client URLs are treated as citations and are not fetched; supplied facts require human verification. Results are drafts with `reviewRequired: true`, not permission to render or publish unreviewed content. The service does not upload, delete, or revoke client files.
 
-- `set-paid client-id false nick "Reason"` blocks the next instruction fetch. This does not delete any client owned output.
-- `put-bundle` adds a new immutable version. The Worker serves the latest version of the client's allowed bundle.
-- A missing client, inactive client, missing bundle, or database failure returns no instruction bytes. All responses have `Cache-Control: private, no-store`.
-- Keep previous bundle versions in D1 for audit and recovery. To roll back, upload the previous text as a new version.
-- Back up D1 and the private source repository before onboarding paying clients. Add billing webhooks only after manual access changes are verified.
+## Access and confidentiality checks
 
-The hosted database contains an unpaid `pilot-smoke` test profile. The live test observed anonymous `401`, unpaid `403`, paid `200` with digest validation, then `403` immediately after changing `paid` back to false. Both transitions appeared in `payment_audit`. There is no real client profile or billing integration yet.
+- Every request and generation operation checks current D1 paid status and expiry. Access is checked again before releasing a generated result.
+- An inactive client gets HTTP `403` at entry; revocation during MCP execution yields a generic tool error without a plan.
+- Arbitrary file paths, models, system prompts, and bundle names are rejected by strict input validation.
+- No resources, prompts, sampling, private-file tool, or debugging exports are exposed through MCP.
+- D1 or AI failures return generic errors. Logs contain request IDs, status, and successful client IDs, not input/output text or private policy.
+- Only server code reads `private_policies`. The old `instruction_bundles` table remains an owner archive and has no HTTP reader.
+- Version preview URLs are explicitly disabled so old Worker versions cannot provide an alternate download route. Never roll back to a version with raw instruction delivery.
+
+The selected Cloudflare model is `@cf/meta/llama-3.3-70b-instruct-fp8-fast`, using its documented JSON mode. Private policy validation is independent of model compliance. The deployed test profile is `pilot-smoke`; it must remain unpaid after verification.
+
+Hosted verification passed: paid MCP and HTTPS generation, retired file `410`, removed tool rejection, unpaid `403`, and old-token `401` after rotation. The 17-test suite also checks extraction attempts and revocation during generation. Tightening policy values can increase draft rejections; test policy changes against representative briefs before uploading them.

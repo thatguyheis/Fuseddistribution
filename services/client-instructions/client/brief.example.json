@@ -1,0 +1,16 @@
+{
+  "topic": "Why structured JSON helps an AI automation",
+  "audience": "Small business owners building their first automation",
+  "facts": [
+    {
+      "statement": "Cloudflare Workers AI supports JSON mode so an application can request a structured model response.",
+      "sourceUrl": "https://developers.cloudflare.com/workers-ai/features/json-mode/"
+    },
+    {
+      "statement": "Cloudflare documents that JSON mode can fail to meet a requested schema and applications must handle that error.",
+      "sourceUrl": "https://developers.cloudflare.com/workers-ai/features/json-mode/"
+    }
+  ],
+  "callToAction": "Choose the fields your next automation needs.",
+  "targetSeconds": 30
+}

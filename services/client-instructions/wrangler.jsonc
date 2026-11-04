@@ -4,7 +4,9 @@
   "account_id": "904933a9a5d8c62b3b9506cb697ce080",
   "main": "./src/worker.js",
   "compatibility_date": "2026-11-04",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
@@ -16,5 +18,12 @@
       "database_id": "f139f6d7-0e28-4267-918d-9033e25ba041",
       "migrations_dir": "./migrations"
     }
-  ]
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "DAILY_RUN_LIMIT": "20"
+  },
+  "preview_urls": false
 }

@@ -1,5 +1,5 @@
-# Client reel instructions
+# Fused reel service
 
-Before starting a new reel, call the `get_reel_instructions` tool on the `fused_reel` MCP server. If MCP is unavailable, fetch the current instructions using the installed `fetch-instructions.mjs` loader. Read the result for this run. If access is denied or both paths fail, stop the instructed reel workflow and report the failure. Do not use a saved copy from an earlier run.
+For each new reel, collect topic, audience, sourced facts, call to action, and target duration. Call `create_reel_plan` on the `fused_reel` MCP server. Scripted workflows can use `create-reel-plan.mjs` with the same brief. Stop if access is denied or the service fails; do not substitute a saved procedure or earlier result for a new paid operation.
 
-Keep completed videos, drafts, approvals, and your own brand information in this repository. Keep the Fused access token in your local secret store, outside Git. This file is a bootstrap pointer, not the paid instruction bundle.
+Use the returned script and storyboard as a draft. Verify facts and media rights before rendering or publishing. The client owns its brief, assets, returned draft, and completed work. The service keeps its private operating rules on the server and does not offer an instruction download. Keep the access token outside Git.
