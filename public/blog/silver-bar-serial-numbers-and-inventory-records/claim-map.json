@@ -1,0 +1,19 @@
+{
+  "slug": "silver-bar-serial-numbers-and-inventory-records",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "LBMA Good Delivery bars follow a wholesale marking standard that does not apply to every retail bar.",
+      "source": "https://www.lbma.org.uk/publications/good-delivery-rules/technical-specifications"
+    },
+    {
+      "claim": "LBMA Annex C commercial silver weight lists include serial number, brand code, gross weight, assay, and manufacture date fields.",
+      "source": "https://www.lbma.org.uk/publications/good-delivery-rules/annex-c-weight-lists"
+    },
+    {
+      "claim": "Perth Mint advises buyers to check the seller, specifications, product security features, and physical characteristics.",
+      "source": "https://www.perthmint.com/customer-care/scams-and-counterfeits/tips-for-avoiding-fake-coins-and-bars"
+    }
+  ]
+}

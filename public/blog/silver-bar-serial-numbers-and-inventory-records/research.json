@@ -1,6 +1,6 @@
 {
   "slug": "silver-bar-serial-numbers-and-inventory-records",
-  "reviewedAt": "2026-09-21T19:00:00Z",
+  "reviewedAt": "2026-11-04",
   "sources": [
     {
       "url": "https://www.lbma.org.uk/publications/good-delivery-rules/technical-specifications",
@@ -19,5 +19,6 @@
     "Repaired the original brief's unsupported claims that serial numbers prove authenticity, purity, provenance, ownership history, or value.",
     "No tax, insurance, investment-return, price, or portfolio-allocation claims are included.",
     "The article uses a process diagram rather than a factual product mockup and labels unknown fields honestly."
-  ]
+  ],
+  "status": "Fact checked against current LBMA and Perth Mint primary guidance."
 }

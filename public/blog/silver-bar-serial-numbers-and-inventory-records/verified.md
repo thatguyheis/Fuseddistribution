@@ -73,11 +73,24 @@ You can begin with four connected records:
 
 This item to evidence to change log structure is useful because it keeps a serial number in context. It also makes the limits visible. A serial number may help identify an item, while a receipt may support a transaction, but neither one alone proves authenticity, purity, or an unbroken ownership history.
 
+<figure class="coin-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:24px 0" aria-label="Four linked inventory records">
+  <div style="padding:14px;border:1px solid #58d6ff;border-radius:10px"><strong>1. Item</strong><br>Markings and photos</div>
+  <div style="padding:14px;border:1px solid #58d6ff;border-radius:10px"><strong>2. Evidence</strong><br>Receipts and documents</div>
+  <div style="padding:14px;border:1px solid #58d6ff;border-radius:10px"><strong>3. Change log</strong><br>Transfers and corrections</div>
+  <div style="padding:14px;border:1px solid #58d6ff;border-radius:10px"><strong>4. Review</strong><br>Open questions</div>
+</figure>
+
 ## Source and next steps
 
 Use the [LBMA technical specifications](https://www.lbma.org.uk/publications/good-delivery-rules/technical-specifications) and [LBMA weight list guidance](https://www.lbma.org.uk/publications/good-delivery-rules/annex-c-weight-lists) only for the wholesale fields and standards they actually describe. Use the [Perth Mint counterfeit guidance](https://www.perthmint.com/customer-care/scams-and-counterfeits/tips-for-avoiding-fake-coins-and-bars) as product specific counterfeit awareness guidance, not as a universal checklist.
 
 Start with one item. Copy every visible mark, link the purchase document, record the unknowns, and add one change log entry if the item has moved. If you are deciding between product formats, compare the record fields with our guide to [silver coins, rounds, and bars](/blog/silver-coins-rounds-bars/). Can you trace the current status of that item to the document that supports it? If not, keep the gap visible and make verification the next action.
+
+## Sources
+
+1. [LBMA: Good Delivery Technical Specifications](https://www.lbma.org.uk/publications/good-delivery-rules/technical-specifications)
+2. [LBMA: Annex C Weight Lists](https://www.lbma.org.uk/publications/good-delivery-rules/annex-c-weight-lists)
+3. [Perth Mint: Tips for Avoiding Fake Coins and Bars](https://www.perthmint.com/customer-care/scams-and-counterfeits/tips-for-avoiding-fake-coins-and-bars)
 
 ## Related
 
