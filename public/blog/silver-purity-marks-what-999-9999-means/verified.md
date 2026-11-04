@@ -16,6 +16,8 @@ Gross weight is the mass of the material as a whole. Fine silver weight is the m
 
 The calculation is useful only when you know what the quoted weight represents. A manufacturer's specification may already state the fine metal content. Multiplying that figure by the fineness again would subtract the non-silver portion twice. Before calculating, label the input as gross mass or fine metal mass, keep the units consistent, and check the exact issue's documentation. If the listing leaves the meaning of its weight unclear, obtain clarification before treating two offers as equivalent.
 
+<div class="math-box" aria-label="Equal gross mass fineness example"><strong>Equal gross mass example</strong><br>1,000 g × .999 = 999 g silver<br>1,000 g × .9999 = 999.9 g silver<br>Difference = 0.9 g</div>
+
 ## Check a Named Product in Its Maker's Specification
 
 The Royal Canadian Mint identifies its 2021 Silver Maple Leaf bullion coin as 99.99% pure silver. That is a specific product example of four-nines fineness. Source: [Royal Canadian Mint 2021 Silver Maple Leaf](https://www.mint.ca/en/shop/bullion-products/2021-1-ounce-9999-pure-silver-maple-leaf-bullion-coin). Use the page for its named issue and attributes, rather than assuming every item carrying a maple leaf design has the same composition or finish.
@@ -50,6 +52,12 @@ When choosing between actual offers, compare complete delivered costs for produc
 This checklist is a way to organize evidence, not a ranking of which fineness everyone should buy. A higher stated silver proportion does not establish investment stability, future demand or a guaranteed recovery of the premium. For industrial requirements, use the actual purchaser's material specification rather than assuming a bullion purity figure satisfies a specialized application.
 
 Keep copies of the manufacturer's specification, seller description and invoice for any completed purchase. The [Maple Leaf purchase guide](/blog/canadian-silver-maple-leaf-investment-guide/) connects those records with product and seller checks. Fused's [reserve resources](/reserve/) provide further educational material. Reading .999 and .9999 correctly is the starting point; a complete decision also needs a clear weight basis, a verified product identity and the terms of the transaction in front of you.
+
+## Sources
+
+1. [Royal Canadian Mint: 2021 Silver Maple Leaf Specifications](https://www.mint.ca/en/shop/bullion-products/2021-1-ounce-9999-pure-silver-maple-leaf-bullion-coin)
+2. [U.S. Mint: 2025 American Eagle Silver Uncirculated Coin Specifications](https://www.usmint.gov/american-eagle-2025-one-ounce-silver-uncirculated-coin-25EG.html)
+3. [London Assay Office: What Is a Hallmark?](https://www.assayofficelondon.co.uk/hallmarking/what-is-a-hallmark)
 
 ## Related
 
