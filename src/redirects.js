@@ -17,7 +17,7 @@ export const PERMANENT_REDIRECTS = new Map([
   // Thin: 703 words, no sources
   ["/blog/physical-silver-vs-silver-etf-pros-and-cons", "/blog/paper-silver-vs-physical-silver-the-key-difference/"],
   // Thin: 699 words, no sources, duplicate topic
-  ["/blog/dollar-cost-averaging-silver", "/blog/dollar-cost-averaging-silver-strategy-explained/"],
+  ["/blog/dollar-cost-averaging-silver", "/reserve/"],
   // Thin: 883 words, no sources
   ["/blog/silver-premiums-explained-for-beginners", "/blog/silver-investment-for-beginners-complete-guide/"],
   // Thin: 887 words, no sources
@@ -34,4 +34,7 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/is-now-a-good-time-to-buy-silver-2026", "/reserve/"],
   // Stock picks, no sources, risky investment advice
   ["/blog/best-silver-mining-stocks-to-watch-in-2026", "/blog/"],
+  // Retired 2026-11-04: repeated, unsupported buying and allocation advice.
+  ["/blog/dollar-cost-averaging-silver-strategy-explained", "/reserve/"],
+  ["/blog/silver-as-a-percentage-of-net-worth-how-much", "/reserve/"],
 ]);

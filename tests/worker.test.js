@@ -108,6 +108,16 @@ describe("SEO routing and head tags", () => {
     expect(response.headers.get("location")).toBe(`${ORIGIN}/blog/google-business-profile-setup/`);
   });
 
+  it.each([
+    "/blog/dollar-cost-averaging-silver/",
+    "/blog/dollar-cost-averaging-silver-strategy-explained/",
+    "/blog/silver-as-a-percentage-of-net-worth-how-much/",
+  ])("routes unsupported silver advice directly to the Reserve page: %s", async (path) => {
+    const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}/reserve/`);
+  });
+
   it("redirects the orphaned folder page to the projects overview", async () => {
     const response = await SELF.fetch(`${ORIGIN}/Fused%20Technology%20Solutions/`, { redirect: "manual" });
     expect(response.status).toBe(301);
