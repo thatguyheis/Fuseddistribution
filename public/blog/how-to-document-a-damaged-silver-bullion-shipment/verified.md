@@ -10,7 +10,7 @@ Photograph all sides of the unopened parcel if you can do so safely. Include the
 
 If the package is already open, photograph the contents and the arrangement you found. Do not recreate the scene or describe an image as showing the unopened parcel. Write down who opened it and when, if you know. Keep the outer box, inner box, padding, tape, inserts and any pieces that came loose. Do not clean, polish, repair, discard or reship a damaged item while the seller or carrier may need to inspect it.
 
-For a USPS domestic damage claim, the postal service says to retain the item and its packaging until the claim is resolved; it may request an inspection. Other carriers and seller policies can have different instructions, so ask the responsible party what to preserve before changing the package.
+For a USPS domestic damage claim, the postal service says to retain the item and its packaging until the claim is resolved; it may request an inspection. [UPS](https://www.ups.com/us/en/support/file-a-claim) and [FedEx](https://www.fedex.com/en-us/customer-support/claims.html) also tell claimants to keep damaged contents and packaging. Their claim steps and coverage terms differ, so ask the responsible party what to preserve before changing the package.
 
 ## Compare the parcel with the order
 
@@ -24,7 +24,7 @@ Create a folder or paper file with the order confirmation, paid invoice, packing
 
 Keep a simple event log: who you contacted, which number or case reference they provided, what they asked you to do, and when you completed it. Preserve original email messages and uploaded files. If you take additional photographs later, label them with their actual date instead of presenting them as arrival day evidence.
 
-The USPS [domestic claims guide](https://faq.usps.com/articles/Knowledge/Domestic-Claims-The-Basics) lists proof of value, proof of insurance and photographs of damage among the evidence that may be required for a claim. It also says claim timing depends on the mail service. Check the current requirements for the specific shipment rather than assuming another carrier uses the same process.
+The USPS [domestic claims guide](https://faq.usps.com/articles/FAQ/Domestic-Claims-The-Basics) lists proof of value, proof of insurance and photographs of damage among the evidence that may be required for a claim. It also says claim timing depends on the mail service. Check the current requirements for the specific shipment rather than assuming another carrier uses the same process.
 
 ## Contact the seller and carrier promptly
 
@@ -39,6 +39,12 @@ Do not promise yourself a claim payment or assume the seller and carrier will re
 Add every response, inspection appointment, replacement shipment or resolution to the event log. If an item is returned or exchanged, keep the new tracking details separate from the original delivery record. If the issue remains open, write down who owns the next action and its due date.
 
 For a future shipment, review the carrier's current rules for bullion, packaging, declared value and any coverage before the package leaves. Keep the order records and shipment terms together. The [shipping and insurance comparison checklist](/blog/how-to-compare-silver-shipping-and-insurance-costs/) helps organize service costs and stated conditions. For the receiving side, the [silver delivery checklist](/blog/silver-order-delivery-checklist-for-first-time-buyers/) covers a routine delivery review.
+
+## Sources
+
+1. [USPS: Domestic Claims, The Basics](https://faq.usps.com/articles/FAQ/Domestic-Claims-The-Basics)
+2. [UPS: File a Claim](https://www.ups.com/us/en/support/file-a-claim)
+3. [FedEx: File a Claim](https://www.fedex.com/en-us/customer-support/claims.html)
 
 ## Related
 

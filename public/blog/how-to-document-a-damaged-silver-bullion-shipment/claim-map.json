@@ -1,0 +1,19 @@
+{
+  "slug": "how-to-document-a-damaged-silver-bullion-shipment",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "USPS domestic damage claimants should keep the item and all packaging while the claim is pending and may need proof of value and insurance.",
+      "source": "https://faq.usps.com/articles/FAQ/Domestic-Claims-The-Basics"
+    },
+    {
+      "claim": "UPS asks damage claimants to retain package contents, packaging and invoices that establish value.",
+      "source": "https://www.ups.com/us/en/support/file-a-claim"
+    },
+    {
+      "claim": "FedEx asks claimants to keep original packaging and contents until a damage claim is resolved.",
+      "source": "https://www.fedex.com/en-us/customer-support/claims.html"
+    }
+  ]
+}

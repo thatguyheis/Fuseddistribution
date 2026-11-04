@@ -18,6 +18,14 @@
         "Buyer describes price lock and shipping workflow."
       ],
       "scope": "No endorsement or universal policy claim."
+    },
+    {
+      "title": "CFTC physical metals guidance",
+      "source_url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html",
+      "claims": [
+        "Buyers should compare buyback prices, dealer spread and fees."
+      ],
+      "scope": "General buyer questions, not a claim about a named dealer's current terms."
     }
   ],
   "editorialNotes": [

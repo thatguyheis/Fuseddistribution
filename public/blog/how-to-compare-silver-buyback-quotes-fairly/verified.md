@@ -22,7 +22,7 @@ When offers were collected at different times, ask for comparable refreshed esti
 
 ## Calculate proceeds after stated costs
 
-Start with the gross amount the buyer offers for the listed items. Subtract each cost that you would pay to complete that sale, such as a shipping charge or a separately stated processing or payment fee. Include a charge once. If it is already deducted from the displayed payment, do not subtract it again.
+Start with the gross amount the buyer offers for the listed items. Subtract each cost that you would pay to complete that sale, such as a shipping charge or a separately stated processing or payment fee. Include a charge once. If it is already deducted from the displayed payment, do not subtract it again. The [CFTC's physical metals guide](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html) says to ask about the dealer's buyback price, spread and all fees before buying.
 
 A useful comparison line is:
 
@@ -53,6 +53,12 @@ Find out what happens if the buyer disagrees with your description. Ask how a re
 Review the gross quote, estimated proceeds, conditions, shipment requirements and payment timing together. A higher provisional number may come with requirements you cannot meet. A lower number is not automatically preferable either. The point is to make the tradeoffs explicit for your actual items and circumstances.
 
 Before accepting, check that the final confirmation still names the right products and quantities. Save the terms you accepted and reconcile the eventual payment with that confirmation. If there is a difference, use the transaction reference to ask for an explanation. Keep the comparison worksheet with your sale record so an estimate is never mistaken for the completed result.
+
+## Sources
+
+1. [JM Bullion: Sell to Us](https://www.jmbullion.com/sell-to-us/)
+2. [APMEX: Selling Overview](https://www.apmex.com/sell-gold-sell-silver-overview)
+3. [CFTC and FINRA: 10 Things to Ask Before Buying Physical Gold, Silver, or Other Metals](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html)
 
 ## Related
 

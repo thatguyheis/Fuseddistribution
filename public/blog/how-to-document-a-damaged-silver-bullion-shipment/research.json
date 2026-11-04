@@ -4,13 +4,27 @@
   "sources": [
     {
       "title": "USPS Domestic Claims - The Basics",
-      "source_url": "https://faq.usps.com/articles/Knowledge/Domestic-Claims-The-Basics",
+      "source_url": "https://faq.usps.com/articles/FAQ/Domestic-Claims-The-Basics",
       "claims": [
         "For USPS domestic damage claims, retain the damaged item and package while the claim is pending; photographs can show damage; proof of value and insurance may be needed; timing depends on service.",
         "Carrier claim instructions and coverage depend on the actual service and shipment; do not generalize USPS terms to other carriers."
       ]
+    },
+    {
+      "title": "UPS File a Claim",
+      "source_url": "https://www.ups.com/us/en/support/file-a-claim",
+      "claims": [
+        "UPS tells claimants to keep the damaged package contents, packaging and value evidence."
+      ]
+    },
+    {
+      "title": "FedEx File a Claim",
+      "source_url": "https://www.fedex.com/en-us/customer-support/claims.html",
+      "claims": [
+        "FedEx tells claimants to keep original packaging and contents until a damage claim is resolved."
+      ]
     }
   ],
-  "reviewedDate": "2026-09-24",
-  "status": "Current USPS primary claim instructions checked September24; article limits specific requirements to USPS and directs readers to verify their actual service and bullion classification."
+  "reviewedDate": "2026-11-04",
+  "status": "USPS, UPS and FedEx primary claim instructions reviewed; article directs readers to verify their actual service and bullion classification."
 }
