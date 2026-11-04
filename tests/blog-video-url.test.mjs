@@ -9,8 +9,9 @@ function render(video) {
   const root = mkdtempSync(join(tmpdir(), 'blog-video-url-'));
   const scripts = join(root, 'scripts');
   const article = join(root, 'coin-story');
-  mkdirSync(scripts); mkdirSync(article);
+  mkdirSync(join(scripts, 'lib'), {recursive: true}); mkdirSync(article);
   copyFileSync(new URL('../public/blog/scripts/build-html.mjs', import.meta.url), join(scripts, 'build-html.mjs'));
+  copyFileSync(new URL('../public/blog/scripts/lib/blog-branding.mjs', import.meta.url), join(scripts, 'lib/blog-branding.mjs'));
   writeFileSync(join(article, 'meta.json'), JSON.stringify({slug: 'coin-story', title: 'Coin History', brand: 'silver', date: '2026-10-13', description: 'History through a photographed coin.', alt: 'Coin', tags: ['History']}));
   writeFileSync(join(article, 'verified.md'), '# Coin History\n\nA photographed coin tells a story.\n');
   writeFileSync(join(article, 'social-video.json'), JSON.stringify({...video, showPending: false}));

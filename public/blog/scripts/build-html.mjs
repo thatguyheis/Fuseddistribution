@@ -31,6 +31,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { AUTHOR_KNOWS_ABOUT, blogPageTitle } from './lib/blog-branding.mjs';
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -183,7 +184,7 @@ function mdToHtml(md) {
 
 // ── brand routing ───────────────────────────────────────────────────────────
 const B = meta.brand === "silver"
-  ? { sub: "Distribution", navCta: '<a class="nav-cta" href="/reserve/">Reserve Silver</a>',
+  ? { sub: "Reserve", navCta: '<a class="nav-cta" href="/reserve/">Reserve Silver</a>',
       artCta: '<a class="btn btn-primary" href="https://fuseddistribution.com/reserve/">See Fused Reserve Plans</a>',
       ctaLine: meta.ctaLine || "Start building your silver reserve today." }
   : { sub: "Technology Solutions", navCta: '<a class="nav-cta" href="/#contact">Get Started</a>',
@@ -382,7 +383,7 @@ h1 {
 
 // ── assemble ──────────────────────────────────────────────────────────────
 const html = render({
-  title: meta.title, slug, sub: B.sub, description: meta.description, ogDesc,
+  title: meta.title, slug, sub: B.sub, brand: meta.brand, description: meta.description, ogDesc,
   squareCover: meta.blogCover === "photo-post.jpg",
   alt: meta.alt, date: meta.date, modifiedDate: meta.modifiedDate || meta.date, humanDate, tag1, tag2,
   navCta: B.navCta, artCta: B.artCta, ctaLine: B.ctaLine, bodyHtml, socialVideoHtml,
@@ -398,7 +399,7 @@ function render(d) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${esc(d.title)} | Fused ${d.sub}</title>
+    <title>${esc(blogPageTitle(d.title, d.brand))}</title>
     <meta name="description" content="${esc(d.description)}" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="${d.date}T00:00:00Z" />
@@ -421,13 +422,13 @@ function render(d) {
       "dateModified": "${d.modifiedDate}",
       "author": {
         "@type": "Person",
-        "name": "Nick",
+        "name": "Nick Hughes",
         "url": "https://fuseddistribution.com/about/",
         "sameAs": [
           "https://www.facebook.com/fuseddistribution",
           "https://www.instagram.com/fuseddistribution"
         ],
-        "knowsAbout": ["silver investing", "precious metals", "web design", "local business marketing", "inflation hedging"]
+        "knowsAbout": ${JSON.stringify(AUTHOR_KNOWS_ABOUT[d.brand])}
       },
       "publisher": {
         "@type": "Organization",
@@ -435,7 +436,7 @@ function render(d) {
         "@id": "https://fuseddistribution.com/#organization",
         "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
       },
-      "image": "https://fuseddistribution.com/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}",
+      ${d.brand === 'silver' ? '"brand": {"@type": "Brand", "name": "Fused Reserve"},\n      ' : ''}"image": "https://fuseddistribution.com/blog/${d.slug}/${d.squareCover ? "photo-post.jpg" : "hero.jpg"}",
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/${d.slug}/" }
     }
     </script>
