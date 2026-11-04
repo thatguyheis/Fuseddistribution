@@ -13,7 +13,7 @@ Claude's permission settings blocked it from pushing, so you run these two comma
 ! cd /Users/nick/projects/fuseddistribution && node scripts/deploy-approved-blog.mjs
 ```
 
-The first command sends 3 commits to GitHub. The second puts the changes on the live site.
+The first command sends all the new commits to GitHub. The second puts the changes on the live site.
 
 Then tell Claude "deployed". It will check the live pages with a cache-buster.
 
@@ -43,36 +43,22 @@ If you'd rather let Claude do this itself next time, add a permission rule for `
 
 ---
 
-## Step 3. Files to review and the answers I need
+## Step 3. Review the new pages (answered 2026-11-04, now built)
 
-Open these in any editor. VS Code works, or open the folder in Finder: `docs/audits/2026-11-04-site-seo-audit/`
+Your 8 answers are in. The pages are built and committed, but not live until you deploy (step 1). Look at the screenshots in `preview/`:
 
-### A. `copy_drafts.md`: most important
+- `desktop_home.png` and `mobile_home.png`: new headline "Websites That Make Their Own Videos.", Vancouver, Portland and remote, 24 to 48 hour first draft
+- `desktop_home_reviews.png`: your 3 client quotes
+- `desktop_web-design.png`, `mobile_web-design.png`: new page `/web-design/`
+- `desktop_local-seo.png`, `mobile_local-seo.png`: new page `/local-seo/`
 
-This is new wording for the homepage, `llms.txt`, and two new pages (`/web-design/` and `/local-seo/`). Nothing goes live until you answer these:
+Also changed: Warhammer removed everywhere (now "coins, collectibles and rare antiquities"), demo sites relabeled "Concept Build", ownership answer in both FAQs, 24 to 48 hour first draft on Process and FAQ pages, full name on About and in Google's business data, `llms.txt` rewritten.
 
-| # | Question | Example answer |
-|---|---|---|
-| 1 | Can your last name (Hughes) appear on the site? | "yes" or "keep it Nick" |
-| 2 | Should the site say you serve Portland too, or only Vancouver, WA? | "Vancouver and Portland" |
-| 3 | Plainsman, Cascade Collision, Boba Tree, World Construction, Anoush Deli: were they paying clients, or concepts you built on your own? | "Plainsman client, rest concepts" |
-| 4 | 3 real client quotes: name, business, city, one or two sentences | paste them |
-| 5 | How long does a first build usually take? | "7 to 10 days" |
-| 6 | Does the client own their site? What happens if they cancel? | your policy |
-| 7 | Is the collectibles / Warhammer catalog still a real thing? | "no, remove it" |
-| 8 | Do you like the new homepage headline: "Custom websites for small businesses. Built before you pay."? | "yes" or your edits |
-
-Reply with the number and your answer. Claude will build the pages, show you, then publish.
-
-### B. `ACTION-PLAN.md`: the full list
-
-It shows what's done and what's left. You only need to decide the items below.
-
-### C. `FULL-AUDIT-REPORT.md`: background reading
-
-It explains the score (62/100) and why each fix matters. You don't need to act on anything in it.
-
----
+**Please confirm (reply with the number):**
+1. Quotes: I fixed only spelling and grammar (through, rhythm, media, understood, than). Ken's quote keeps his word "innovative", even though it's on your banned list for site copy, because it's his words. OK, or should I cut that phrase?
+2. Do Tanner, Alex and Ken know their names and quotes will be on the site? (Recommended before publishing.)
+3. `/local-seo/` lists what you do for local SEO: page titles and descriptions, local business schema, matching name, address and phone, sitemap and Search Console setup, blog posts, review requests. Is that list accurate for Standard?
+4. Do you want a different headline? Alternatives: "Your Website, Your Videos, Your AI. Done for You." or "Websites, Video and AI for Small Business."
 
 ## Step 4. Decisions only you can make
 

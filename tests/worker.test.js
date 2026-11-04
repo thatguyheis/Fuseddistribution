@@ -108,7 +108,7 @@ describe("blog archive for crawlers", () => {
 describe("shared site navigation", () => {
   const page = `<!doctype html><html><head><title>t</title></head><body>
     <header class="topbar"><a class="brand" href="/">Fused</a>
-      <nav class="nav" aria-label="Primary"><div class="nav-pages"><a href="/web-design/">Old</a></div>
+      <nav class="nav" aria-label="Primary"><div class="nav-pages"><a href="/old-page/">Old</a></div>
       <div class="nav-actions"><a class="nav-cta" href="/reserve/#join">Reserve Silver</a></div></nav>
     </header><main>body</main></body></html>`;
 
@@ -120,7 +120,7 @@ describe("shared site navigation", () => {
 
   it("replaces page-specific menu items with the canonical menu", async () => {
     const html = await render("/blog/some-post/");
-    expect(html).not.toContain('href="/web-design/"');
+    expect(html).not.toContain('href="/old-page/"');
     for (const href of ["/", "/projects/", "/process/", "/pricing/", "/reserve/", "/education/", "/photos/", "/about/", "/blog/"]) {
       expect(html).toContain(`href="${href}"`);
     }

@@ -10,9 +10,11 @@ const MENU = [
   {
     id: "tech",
     label: "Technology Solutions",
-    match: ["/projects/", "/process/", "/pricing/"],
+    match: ["/projects/", "/process/", "/pricing/", "/web-design/", "/local-seo/"],
     items: [
       { href: "/projects/", label: "Overview" },
+      { href: "/web-design/", label: "Web Design" },
+      { href: "/local-seo/", label: "Local SEO" },
       { divider: true },
       { href: "/process/", label: "How It Works" },
       { href: "/pricing/", label: "Pricing" },
