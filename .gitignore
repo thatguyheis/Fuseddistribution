@@ -110,3 +110,8 @@ outputs/
 
 # Staged licensed sound effects are local render inputs.
 /video/public/sfx/
+
+# Local writer checkpoints and personal voice reference are not publication assets.
+/public/blog/*/gemma_draft.md
+/public/blog/*/_status.json
+/video/voice-sample/voice-reference.mp3
