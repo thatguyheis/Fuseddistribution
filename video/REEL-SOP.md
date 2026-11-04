@@ -15,7 +15,7 @@ distribution guard.
 
 Current coin history standard (October 14, 2026): `docs/COIN-HISTORY-SOP.md`. Use the Fort Vancouver v2 format: substantive sourced history, owner coin evidence plus real context photographs and labeled AI imagery, selected concept and approved transcript before generation, flexible narration sections, and 720p final delivery strictly below 50 MB. This overrides generic six-scene and mandatory stock-video quotas for coin history. Preserve existing release gates.
 
-Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (September 7). It supersedes older schedules, duplicate recovery ownership, automatic Git commits, 180–240 second reel targets and silent media truncation. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
+Operations authority: `docs/SOURCE-OF-TRUTH.md`. Use `docs/REEL-PRODUCTION-RUNBOOK.md` for routine execution. Codex owns routine editorial review and downstream completion. New reel scripts target 110–130 seconds and must fit the 135-second distribution limit without losing the ending.
 
 ## Current attention and overnight production standard (November 2, 2026)
 
@@ -927,15 +927,12 @@ This caps the Buffer queue at 10 scheduled/sending posts, leaves 2 slots open fo
 - YouTube: use Buffer channel `Nick` (`6a3e63375ab6d2f1067461b2`). If `public/blog/<slug>/posting-pack.json` includes a stable HTTPS `assets.public_media_url`, schedule through the Buffer API with `mode: customScheduled`, `schedulingType: automatic`, a `dueAt` between 1:00 PM and 7:00 PM `America/Los_Angeles`, the Buffer-safe MP4 as a video asset, and `metadata.youtube.title` plus `metadata.youtube.categoryId`. Immediately call `get_post`; do not log the reel as scheduled unless Buffer returns no error and still has the video asset. If there is no public media URL, upload `public/reels/<slug>/<slug>.mp4` manually in Buffer, then paste the YouTube title and description from the posting pack.
 - YouTube AI disclosure: do not hold up Buffer scheduling on this field. If YouTube exposes a supported control later, treat disclosure as a non-blocking follow-up.
 - X: use Buffer channel `thatguyheis` (`6a3e73fb5ab6d2f10674b516`) through the Buffer API only when the reel is X-eligible. Use `npm run social:buffer:x:plan` and the shared `.buffer-media-urls.json` asset. The working payload is top-level `assets: [{ video: { url } }]`. The post must be 280 characters or fewer. After `create_post`, call `get_post`; do not log an X reel as scheduled unless the returned post still has a video asset. Do not create a separate `public/reels-x` file unless an approved platform exception is documented.
-- After each scheduled `dueAt` passes, reconcile Buffer. If the post is still scheduled, errored, missing, or video-less, update the local `.buffer-*-scheduled.json` entry to `status: "error"` before retrying.
+- After each dueAt passes, reconcile its exact Buffer post ID. Preserve the returned state; missing or incomplete history stays unresolved. Never mark an unknown post failed just to allow a duplicate create. Only explicit sent status with matching channel, sent time, platform URL and attached video establishes delivery.
 - Facebook Professional Mode profile: use Facebook native tools only. Upload the MP4 through the Facebook app or Professional Dashboard, then paste the Facebook caption from the posting pack.
 - Instagram / LinkedIn: use the platform caption from `public/blog/<slug>/social-copy.json` if posting manually.
 - First comment: paste the live blog URL.
 
-**Timing matters — first 6 hours are the algorithm's testing window:**
-- Post when your audience is active (Facebook: Tue–Thu 9am–1pm local; Instagram: M/W/F 9–11am)
-- Respond to every comment within the first hour — each reply counts as a new engagement signal
-- Do not post again on the same platform within 3 hours of this reel — dilutes the testing window
+Use native account analytics to choose posting times and evaluate retention. Treat algorithm claims and generic timing benchmarks as hypotheses, not guaranteed ranking rules.
 
 ### Step 7 — Log performance
 After 48–72 hours, log results:
@@ -1102,7 +1099,7 @@ The run summary should record render dimensions, render duration, cache hits, ne
 
 ## 11d. Storyboard-led visual route
 
-Paper collage is one supported visual treatment. The required explanatory graphic is defined by the reviewed enrichment plan. The renderer creates or loads a production storyboard after script and measured audio timing validation and before media assembly. Every reel must contain at least one labeled paper cutout beat, while retaining the existing chart, question, standard-card, and approved-media beats where the script calls for them. Longer reels should use a second paper beat with a different asset or treatment.
+Paper collage is one supported visual treatment. The required explanatory graphic is defined by the reviewed enrichment plan. The renderer creates or loads a production storyboard after script and measured audio timing validation and before media assembly. Use paper cutouts only where they clarify the subject. Every new reel instead requires the approved explanatory graphic and purposeful sound cues from its enrichment plan; retain chart, question and media beats where relevant.
 
 The production route must pass its storyboard contract before rendering. It fails closed when a paper beat lacks a label or message, when a chart lacks a title, explanatory subtitle, unit or axis label, paired values, source period, or plain language takeaway, or when a reel lacks visual variety. The pilot protocol remains available for the dedicated data-heavy pilot and does not control whether production reels receive paper collage.
 
@@ -1174,28 +1171,9 @@ cd video && set -a && source .env && set +a && node scripts/fetch-photos.mjs --p
 
 ---
 
-## Performance Targets
+## Performance review
 
-Use these as pass/fail benchmarks for the finance and local business niche:
-
-| Metric | Target | Strong | Notes |
-|--------|--------|--------|-------|
-| **Sends per Reach** | >1% | >3% | **#1 signal** — DM shares weighted 3-5x over likes by Instagram algorithm |
-| Save rate | >1% | >3% | #2 signal — educational finance content saves well |
-| Intro retention (0–3s) | >50% | >70% | Low = hook failing |
-| Overall completion rate | >35% | >50% | Low = too long or mid-reel drop-off |
-| Comment rate | >0.5% | meaningful replies | QUESTION slide drives this |
-| Like rate | any | — | Lowest-weight signal — optimize last |
-
-**Tracking sends:** Instagram Insights → Reach → Sends. Export weekly — most dashboards don't surface this automatically.
-
-**What to fix based on metric:**
-- Low Sends per Reach → caption CTA not triggering shares; rewrite to "Send this to someone who needs to hear it."
-- Low saves → increase stat density or make content more reference-worthy
-- Low intro retention → hook isn't working; try different hook type next post
-- Low completion → reel is too long, or a mid-reel segment is losing people; check retention graph drop-off point
-
----
+Use matched platform/duration cohorts and account baselines for watch time, completion, saves, shares and qualified response. Record sample size and measurement window. No fixed share weighting or retention benchmark is a proven universal algorithm rule. See `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` for the evaluation procedure.
 
 ## Optimization Loop
 

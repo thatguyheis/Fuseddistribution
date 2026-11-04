@@ -28,3 +28,5 @@ No claim of improved retention is supported yet. Compare matched platform/durati
 ## Validation
 
 Seventeen targeted tests passed for source approvals, asset staging, silent excerpt rejection, ending hallucinations, missing coin-folder regression, storyboards and transition timing/names. Application TypeScript checking passes with dependency library checking excluded; full checking still reports the external declaration conflicts described above. A 6.42-second encoded preview with the new graphic and audible-source cue was rendered; its graphic was visually inspected. This is a bounded composition demonstration, not a release approval for either complete reel. Full listening and final-file QA remain required in production.
+
+The recurring Luna owner is active at 02:00 Pacific, with its next run Nov 5; the exhausted one-time job is paused. The saved recurring prompt decreased from 459 to 114 words. This measures prompt text only, not total inference usage. Unfinished BG-D010/BG-D011 and the Whisper/Buffer pair remain explicitly queued; the Remotion caption correction remains an outstanding quality repair.

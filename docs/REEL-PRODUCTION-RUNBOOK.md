@@ -11,7 +11,7 @@ Authority: `SOURCE-OF-TRUTH.md`. Sol owns code/process audits. Routine scheduled
 
 ## Enrichment contract
 
-Every new render requires `public/blog/<slug>/enrichment-plan.json`. Minimum: one explanatory graphic, plus two purposeful 0.1–1.2 second sound accents on different body scenes. Do not put effects over the hook or CTA. Keep narration clear. Select sounds by meaning, never randomly; gunshots, children or traffic are unsuitable for an unrelated software lesson. Audition the selected excerpt before approval. Rights and file hashes must match `video/data/sound-effects-rights.json`. Eighteen registered user-supplied files live in `video/private-audio/youtube/sound-effects/`; do not distribute those originals alone.
+Every new render requires `public/blog/<slug>/enrichment-plan.json`. Minimum: one explanatory graphic, plus two purposeful 0.1–1.2 second sound accents on different body scenes. Do not put effects over the hook or CTA. Keep narration clear. Select sounds by meaning, never randomly; gunshots, children or traffic are unsuitable for an unrelated software lesson. Audition the selected excerpt before approval. Rights and file hashes must match `video/data/sound-effects-rights.json`. Read only the selected catalog entries, not the entire rights database. Eighteen registered user-supplied files live in `video/private-audio/youtube/sound-effects/`; do not distribute those originals alone.
 
 ```json
 {

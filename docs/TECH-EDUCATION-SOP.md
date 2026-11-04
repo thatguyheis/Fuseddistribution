@@ -6,7 +6,7 @@ Effective October 13, 2026, requested by Nick. Expand tech education around conc
 
 Rotate speech and captions, social publishing, voice and video, automation reliability, local AI decisions, and website/media delivery alongside useful existing website, accessibility and customer-operation topics. Start with one learner problem and one tool. Prefer specific lessons over generic AI productivity claims. A tool does not need to be AI itself to belong in an AI-assisted workflow.
 
-Use Whisper, Buffer, Chatterbox Nano, Remotion, ffprobe, Gemma, local scripts and Cloudflare where the evidence supports the lesson. Nick confirmed Meta Muse for Small Business. Its Facebook Page workflows, Instagram analytics and proposed division of work with Buffer are active research topics. Use current official Meta sources and verify actual account capabilities. Prior Muse SOP feedback does not establish successful connected actions, native Buffer integration or improved results. See `content/tech-education/meta-muse-source-review.md`.
+Use Whisper, Buffer, Chatterbox Standard, Remotion, ffprobe, Gemma, local scripts and Cloudflare where the evidence supports the lesson. Nick confirmed Meta Muse for Small Business. Its Facebook Page workflows, Instagram analytics and proposed division of work with Buffer are active research topics. Use current official Meta sources and verify actual account capabilities. Prior Muse SOP feedback does not establish successful connected actions, native Buffer integration or improved results. See `content/tech-education/meta-muse-source-review.md`.
 
 Reviewed new educational seeds receive preference only among equally represented categories. Keep two daily tech topics in different categories where possible. Do not replace existing dated queues or repeat a covered takeaway under a different tool name. Review the last 20 published/planned tech topics for the same question, mechanism and payoff. If substantially covered, develop a genuinely different lesson or update the existing article.
 
@@ -32,7 +32,7 @@ Freshness checks apply at production time. Research seeds and local paths are le
 
 ## Production and efficiency
 
-Preserve the existing batched preparation schedule, model routing, Nano narration settings, 110–130 second target, 135-second distribution ceiling, approved music, hero-first opening, Remotion rendering, factual review and release checks. The opening hero should feature the real tool/task or a clearly labeled teaching diagram. Do not import Stipe's voice, scheduler or unrelated approval dependencies.
+Preserve the existing batched preparation schedule, model routing, the narration profile in video/tts-runtime.json, 110–130 second target, 135-second distribution ceiling, approved music, hero-first opening, Remotion rendering, factual review and release checks. The opening hero should feature the real tool/task or a clearly labeled teaching diagram. Do not import Stipe's voice, scheduler or unrelated approval dependencies.
 
 The local research prompt now receives the selected seed's seven-field direction, evidence paths and usage caveat. It must mark unsupported claims for verification rather than treating those instructions as fetched evidence. The publishing owner checks the actual demo and sources before approval. Existing owner passes handle completion; this expansion creates no additional recurring LLM tasks.
 
