@@ -9,7 +9,7 @@ content-kind: educate
 ## HOOK
 **Visual:** Approved hero at frame zero; question remains readable.
 **Duration:** 3s
-Narration: Can you trust every Whisper caption?
+Narration: Can you trust every Whisper transcript?
 
 ---
 ## OVERLAY: Replay names and numbers

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Can you trust every Whisper transcript?",
+    "visibleText": "Can you trust every Whisper transcript?",
+    "spokenSeconds": 2.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Original portrait hero has the exact approved question, visible at frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Replay names and numbers",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Local versus hosted transcription",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Correct text, keep timing",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Reject invented endings",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which caption detail do you check first?",
+    "spokenText": "Which caption detail do you check first?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question followed by practical checks holds attention through the supported payoff.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare like platform and duration after sufficient observations; record sample size."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "checking-names-and-numbers-in-whisper-transcripts",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-04T18:00:29.390Z",
+  "pass": true,
+  "hero": {
+    "sha256": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
+    "notes": "Inspected exported question hero for legibility and topic match."
+  },
+  "notes": [
+    "Read the full article and reel script, checked local runtime claims against source files, preserved distinction between local and hosted processing, and labeled the synthetic example.",
+    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending."
+  ]
+}

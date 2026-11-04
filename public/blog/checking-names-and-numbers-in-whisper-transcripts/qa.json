@@ -1,0 +1,33 @@
+{
+  "slug": "checking-names-and-numbers-in-whisper-transcripts",
+  "mode": "codex-editorial",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-04T18:00:29.407Z",
+  "review_notes": [
+    "Read the full article and reel script, checked local runtime claims against source files, preserved distinction between local and hosted processing, and labeled the synthetic example.",
+    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can you trust every Whisper transcript?",
+    "visibleText": "Can you trust every Whisper transcript?"
+  },
+  "artifactSha256": {
+    "verified.md": "004e985564320d46197d4f498de1d00e9ea117a5241826f71bb724b539a690ee",
+    "index.html": "43a831bb0653da47fd2d22025905a4a58c2bfafd941ea9d4c022cf46cea2fee8",
+    "meta.json": "5e8f04e413527c9b611dc951cc192f782a76beb712aa558be81afd32d611f8cb",
+    "research.json": "a9f0b7b37f987728bc8fcd9be34ad0bb2085468198d7b6cb6780a2ec363782ab",
+    "hero.jpg": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
+    "photo-post.jpg": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
+    "reel-script.md": "49dae61e3dd2700e1bc939ea7a400692b97fcce0f00c53365695aa4a1a7e0138",
+    "reel-data.md": "9255841c304839d1fb7d785b63e35f295cd008ed3a24bbf48b9f819f3ba7e91b",
+    "social-copy.json": "e1ad59d42ff844c525c19af22ffb8a73bd19e313c8f3d4dbd52255b5ccb120c8",
+    "attention-review.json": "1d2cadf860ec0400b2bda585227eec9aa88d72644ec9dc4436330bb04fff31da",
+    "presentation-plan.json": "2c56de8ae7f881b42402b2ea317ac7e70d008911b14159e188d9c036910ccbf0",
+    "enrichment-plan.json": "2d5145577cd7e48c35566199b966205446be8fe48b7141828cd3d40cd8e86841"
+  }
+}

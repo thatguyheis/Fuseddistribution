@@ -30,9 +30,9 @@ Do not use the script as evidence that the voice said the line correctly. The sc
 
 For a proper name, replay the smallest useful audio window, then replay the whole sentence. Listen for consonants, syllable count, and nearby words that could pull the recognizer toward a familiar phrase. If the name is important, compare the spoken audio with a pronunciation reference or spelling supplied by the person or organization. Do not silently replace a hard to hear name with the most familiar spelling.
 
-Numbers deserve a second method. Write down what you hear before looking at the transcript. Then compare the written number with the approved narration and the caption. Pay attention to pairs that sound alike, such as sixteen and sixty, fifteen and fifty, or two and too. Also check whether the audio says a numeral, a word, a decimal, a date, or a unit. A caption that changes “three point five” to “35” is not a harmless style edit.
+Numbers deserve a second method. Write down what you hear before looking at the transcript. Then compare the written number with the approved narration and the caption. Pay attention to pairs that sound alike, such as sixteen and sixty, fifteen and fifty, or two and too. Also check whether the audio says a numeral, a word, a decimal, a date, or a unit. A caption that changes “three point five” to “35” is not a harmless style edit. For more on this, see [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/).
 
-If the audio itself is unclear, mark the item unresolved. Ask for a cleaner recording, revise the narration, or remove the claim. Do not manufacture certainty by selecting whichever transcript looks more plausible.
+If the audio itself is unclear, mark the item unresolved. Ask for a cleaner recording, revise the narration, or remove the claim. Do not manufacture certainty by selecting whichever transcript looks more plausible. For more on this, see [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/).
 
 ## Correct words while preserving timing
 
@@ -44,7 +44,7 @@ After editing, check the caption file as a whole. Confirm that timestamps remain
 
 ## Reject invented ending speech
 
-A common failure is text after the real narration ends. Whisper may infer a phrase from room tone, a breath, a music tail, or silence. An ending caption is especially risky because viewers may treat it as a final instruction or claim. If the final words are not audible, remove them. Do not keep them because they make the caption sequence look complete.
+One failure to check for is text after the real narration ends. Whisper may infer a phrase from room tone, a breath, a music tail, or silence. An ending caption is especially risky because viewers may treat it as a final instruction or claim. If the final words are not audible, remove them. Do not keep them because they make the caption sequence look complete.
 
 The local runtime uses VAD, which is designed to filter portions of audio without speech. That can reduce silence related errors, but it cannot replace listening. OpenAI’s Whisper code also documents silence and hallucination related controls, including a threshold for skipping silent periods when a possible hallucination is detected. These are useful defenses, not proof that every remaining word is real.
 
@@ -72,3 +72,12 @@ For implementation details, see the [OpenAI Whisper repository](https://github.c
 The next time a transcript contains a name or number, pause before publishing. Listen first, correct second, and release only after the final seconds are real. Save this checklist for the next caption review.
 
 **CTA:** Save this checklist and use it on your next transcript review.
+
+## Related
+
+- [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+- [How to Use Chatterbox for Business Voiceovers](/blog/using-chatterbox-for-business-voiceovers/)
+- [Step by Step: The One Number Every Small Business Should Check Weekly](/blog/calculate-customer-acquisition-cost-weekly-step-by-step/)
+
+Read next: [How to Use Remotion to Make a Business Reel](/blog/using-remotion-to-make-a-business-reel/)
+

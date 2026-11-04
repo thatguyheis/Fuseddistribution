@@ -1,0 +1,21 @@
+{
+  "topic": "Checking Names and Numbers in Whisper Transcripts",
+  "researchedAt": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "publisher": "SYSTRAN",
+      "title": "faster-whisper documentation",
+      "claim": "The local runtime supports transcription and word timestamps; outputs still need review.",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "publisher": "OpenAI",
+      "title": "Whisper repository",
+      "claim": "Whisper is a speech recognition model; model output can be inaccurate.",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "scopeNote": "Synthetic demonstration only. Local faster-whisper is distinct from hosted transcription. No privacy, accuracy or time-saving guarantee is claimed."
+}

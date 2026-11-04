@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 1,
+      "kind": "table",
+      "title": "Replay the important fields",
+      "rows": [
+        {
+          "label": "Name",
+          "detail": "Jordan Bell (synthetic)"
+        },
+        {
+          "label": "Quantity",
+          "detail": "Sixteen notebooks (example)"
+        },
+        {
+          "label": "Meaning",
+          "detail": "Compare with the source audio"
+        }
+      ],
+      "source": "Synthetic teaching example, not a customer record",
+      "takeaway": "Listen before you correct"
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    },
+    {
+      "segmentIndex": 2,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet accent at an explanatory step"
+    }
+  ]
+}
