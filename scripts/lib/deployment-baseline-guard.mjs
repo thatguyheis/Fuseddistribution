@@ -6,7 +6,7 @@ const excludedPublicPrefixes = ['public/blog/', 'public/photos/', 'public/reels/
 const excludedPublicFiles = new Set(['public/.assetsignore', 'public/sitemap.xml']);
 
 function isCorePath(path) {
-  return path === 'wrangler.jsonc' || path.startsWith('src/') ||
+  return path === 'wrangler.jsonc' || path === 'public/blog/posts.json' || path === 'public/blog/index.html' || path.startsWith('src/') ||
     (path.startsWith('public/') && !excludedPublicFiles.has(path) &&
       !excludedPublicPrefixes.some(prefix => path.startsWith(prefix)));
 }

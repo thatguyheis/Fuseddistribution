@@ -31,7 +31,7 @@ test('blog deployment blocks stale site code and pages while allowing an explici
   git('add', 'src', 'public', 'wrangler.jsonc');
   git('commit', '-q', '-m', 'fixture');
 
-  for (const path of ['src/worker.js', 'wrangler.jsonc', 'public/faq/index.html', 'public/.assetsignore']) {
+  for (const path of ['src/worker.js', 'wrangler.jsonc', 'public/faq/index.html', 'public/blog/posts.json', 'public/.assetsignore']) {
     mkdirSync(join(baseline, path, '..'), { recursive: true });
     copyFileSync(join(root, path), join(baseline, path));
   }
@@ -41,6 +41,10 @@ test('blog deployment blocks stale site code and pages while allowing an explici
   writeFileSync(join(baseline, 'public/faq/index.html'), '<h1>Old price</h1>\n');
   assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /public\/faq\/index\.html/);
   copyFileSync(join(root, 'public/faq/index.html'), join(baseline, 'public/faq/index.html'));
+
+  writeFileSync(join(baseline, 'public/blog/posts.json'), '[{"slug":"retired"}]\n');
+  assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /public\/blog\/posts\.json/);
+  copyFileSync(join(root, 'public/blog/posts.json'), join(baseline, 'public/blog/posts.json'));
 
   writeFileSync(join(baseline, 'src/retired.js'), 'export default {};\n');
   assert.throws(() => assertDeploymentBaselineMatchesMain(root, baseline), /src\/retired\.js/);
