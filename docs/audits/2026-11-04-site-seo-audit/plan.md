@@ -25,6 +25,13 @@ Status: [x] done locally · [~] needs Nick
 ## 4. Copy drafts
 - [x] copy_drafts.md: homepage title/meta/badge/H1/lead, llms.txt fixes, /web-design/ and /local-seo/ drafts, author page. [NICK] items flagged inside
 
+## Batch 2 (after "do all 4")
+- [x] Server-rendered archive of all posts on /blog/ for AI crawlers
+- [x] ProfessionalService schema + contact/sameAs on the homepage Organization
+- [x] 301 the orphan "/Fused Technology Solutions/" page to /projects/
+- [x] Privacy page indexable
+- [~] Push/deploy blocked by permission classifier; Nick runs them (NICK-TODO.md)
+
 ## Gates
 - [x] npm run test:worker: 29/29 pass
 - [x] Local wrangler dev: routes, redirects, icons and nav checked at 1440/1280/1024/390
