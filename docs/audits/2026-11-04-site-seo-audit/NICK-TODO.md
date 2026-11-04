@@ -49,18 +49,14 @@ If you'd rather let Claude do this itself next time, add a permission rule for `
 
 Your 8 answers are in. The pages are built and committed, but not live until you deploy (step 1). Look at the screenshots in `preview/`:
 
-- `desktop_home.png` and `mobile_home.png`: new headline "Websites That Make Their Own Videos.", Vancouver, Portland and remote, 24 to 48 hour first draft
+- `desktop_home.png` and `mobile_home.png`: new headline (now "Websites, Video and AI for Small Business."), Vancouver, Portland and remote, 24 to 48 hour first draft
 - `desktop_home_reviews.png`: your 3 client quotes
 - `desktop_web-design.png`, `mobile_web-design.png`: new page `/web-design/`
 - `desktop_local-seo.png`, `mobile_local-seo.png`: new page `/local-seo/`
 
 Also changed: Warhammer removed everywhere (now "coins, collectibles and rare antiquities"), demo sites relabeled "Concept Build", ownership answer in both FAQs, 24 to 48 hour first draft on Process and FAQ pages, full name on About and in Google's business data, `llms.txt` rewritten.
 
-**Please confirm (reply with the number):**
-1. Quotes: I fixed only spelling and grammar (through, rhythm, media, understood, than). Ken's quote keeps his word "innovative", even though it's on your banned list for site copy, because it's his words. OK, or should I cut that phrase?
-2. Do Tanner, Alex and Ken know their names and quotes will be on the site? (Recommended before publishing.)
-3. `/local-seo/` lists what you do for local SEO: page titles and descriptions, local business schema, matching name, address and phone, sitemap and Search Console setup, blog posts, review requests. Is that list accurate for Standard?
-4. Do you want a different headline? Alternatives: "Your Website, Your Videos, Your AI. Done for You." or "Websites, Video and AI for Small Business."
+**Answered 2026-11-04:** Ken's quote stays as written. All 3 clients approved being named. The /local-seo/ list is accurate. Headline changed to "Websites, Video and AI for Small Business."
 
 ## Step 4. Decisions only you can make
 
