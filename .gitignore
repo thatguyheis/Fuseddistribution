@@ -104,3 +104,6 @@ content/**/stock/
 # Local agent build scratch and generated office deliverables (pptx/docx/pdf renders)
 .build/
 outputs/
+
+# Owner-only playbook sources and transfer manifests; never ship in client kits.
+/.private/client-playbooks/

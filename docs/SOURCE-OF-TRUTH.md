@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 7, 2026-11-03. Owner: Nick Hughes.
+Version 8, 2026-11-04. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -33,6 +33,8 @@ Incident, recovery, status, handoff and PLAN files are records, not rules.
 | Voice | Plain first person. No em dashes. No hyphenated words in prose. No AI buzzwords (list in `public/blog/BLOG-SOP.md`). |
 
 Nick has separately authorized two business-growth blog/reel pairs per Pacific day through the Codex automation `daily-business-growth-blog-and-reel`, using the v2 365-day plan. This is a narrow automation-specific exception, governed by [`docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`](BUSINESS-GROWTH-AUTOMATION-SOP.md). It does not change `ops/content-scope.json`, coin-history launchd jobs, or the scope of other publishers.
+
+Nick's personal and first party generations use the existing local procedures and jobs. They do not require a client payment profile, service token, or paid MCP call. Paying client work uses the separate service under `services/client-instructions/` and the [client onboarding SOP](CLIENT-ONBOARDING-SOP.md). Install its bootstrap only in a client's project. The client installer refuses this personal repository; do not add the client gate to global agent instructions or personal render commands. Owner administration uses Cloudflare account access, with no public owner bypass in the client API.
 
 ---
 

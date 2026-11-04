@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fused_reel": {
+      "type": "http",
+      "url": "https://fused-client-instructions.luxraycoco.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FUSED_INSTRUCTIONS_TOKEN}"
+      }
+    }
+  }
+}

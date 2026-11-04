@@ -1,0 +1,5 @@
+# BEGIN FUSED REEL MCP
+[mcp_servers.fused_reel]
+url = "https://fused-client-instructions.luxraycoco.workers.dev/mcp"
+bearer_token_env_var = "FUSED_INSTRUCTIONS_TOKEN"
+# END FUSED REEL MCP

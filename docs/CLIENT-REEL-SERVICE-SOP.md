@@ -12,7 +12,7 @@ Version preview URLs are explicitly disabled. Cloudflare documents that [disabli
 
 ## Private rules and model isolation
 
-The private policy is a strict JSON document stored in D1's `private_policies` table. Its source is ignored at `.build/client-instructions/private/reel-policy-v1.json`. Server code enforces hook length, caption length, beat structure, narration duration, closing length, and valid references to supplied facts. The original Markdown playbook remains an owner reference and is not exposed or sent to a model.
+The private policy is a strict JSON document stored in D1's `private_policies` table. Its canonical source is ignored at `.private/client-playbooks/2026-11-04-onboarding-v2/reel-core.json`. Server code enforces hook length, caption length, beat structure, narration duration, closing length, and valid references to supplied facts. The Markdown playbooks are versioned in the owner-only `owner_playbooks` archive. No Worker route reads them or sends them to a model. The [client onboarding SOP](CLIENT-ONBOARDING-SOP.md) records the protected source map and the client import process.
 
 The AI receives only a generic public writing prompt, a public output schema, and the client's brief. It never receives the private policy or private validation thresholds. The server releases an allowlisted draft only after validating it and rechecking current access. This avoids depending on an AI's promise to keep its system prompt secret.
 
@@ -41,7 +41,7 @@ These examples support selling access to hosted capabilities. They do not establ
 
 ## Deployment and acceptance
 
-Apply `0002_private_service.sql` before deploying the new Worker. Upload the private policy through the owner CLI. Use the dedicated Worker and database, never the public site Worker. Model inference uses the Cloudflare Workers AI binding and may incur usage charges under the existing account plan.
+Apply all migrations, including `0002_private_service.sql` and `0003_owner_playbooks.sql`, before owner setup. Upload the private policy through the owner CLI. Use the dedicated Worker and database, never the public site Worker. Model inference uses the Cloudflare Workers AI binding and may incur usage charges under the existing account plan.
 
 Before granting real client access, verify:
 

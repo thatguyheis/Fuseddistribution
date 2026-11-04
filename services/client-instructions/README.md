@@ -16,12 +16,15 @@ npx wrangler deploy --config services/client-instructions/wrangler.jsonc --dry-r
 
 ## Owner operations
 
-Private source files must be outside this public repository or in ignored `.build/`. The staged policy is `.build/client-instructions/private/reel-policy-v1.json`. Back it up privately. All commands use remote D1 unless `--local` follows the script name. Do not print token contents.
+Follow the [client onboarding SOP](../../docs/CLIENT-ONBOARDING-SOP.md) for provisioning, importing and acceptance. Nick's personal generation continues through its existing local jobs without this payment gate.
+
+Private source files must be outside this public repository or in ignored `.private/client-playbooks/` or `.build/`. The canonical owner working copy is `.private/client-playbooks/2026-11-04-onboarding-v2/`. Back it up privately. All commands use remote D1 unless `--local` follows the script name. Local credentials use a separate `credentials/local/` directory. Do not print token contents.
 
 ```bash
 npx wrangler d1 migrations apply fused-client-instructions --config services/client-instructions/wrangler.jsonc --remote
-node services/client-instructions/scripts/operator.mjs put-policy reel-core reel-policy-v1 .build/client-instructions/private/reel-policy-v1.json
+node services/client-instructions/scripts/operator.mjs verify-policy reel-core reel-policy-v1 .private/client-playbooks/2026-11-04-onboarding-v2/reel-core.json
 node services/client-instructions/scripts/operator.mjs create-client client-id reel-core
+node services/client-instructions/scripts/operator.mjs client-status client-id
 node services/client-instructions/scripts/operator.mjs set-paid client-id true nick "Payment confirmed"
 node services/client-instructions/scripts/operator.mjs set-paid client-id false nick "Access ended"
 node services/client-instructions/scripts/operator.mjs rotate-token client-id
@@ -32,6 +35,8 @@ A new client starts unpaid. Only SHA256 token hashes are stored in D1. `rotate-t
 The Worker enforces a UTC daily cap of 20 accepted generation attempts per client, including failed generation. Each attempt makes at most two model calls. Concurrent requests reserve quota atomically in D1. Limits are operational safeguards, not a billing ledger. Cloudflare Workers AI usage may incur charges under the account's plan. No paid-plan upgrade is performed by deployment.
 
 ## Client connections
+
+Build the token-free import package with `node services/client-instructions/scripts/package-client-kit.mjs outputs/fused-client-kit`. Extract the resulting ZIP and run `node install.mjs /absolute/path/to/client-project`. The installer adds project-scoped Codex and Claude Code settings, a workflow pointer and the HTTPS client. It preserves unrelated configuration and refuses personal production workspaces. Existing output directories are immutable; choose a new output path when rebuilding.
 
 MCP endpoint: `https://fused-client-instructions.luxraycoco.workers.dev/mcp`.
 
@@ -72,9 +77,9 @@ The CLI writes only the client's result to stdout. The client may save it. `AGEN
 - Arbitrary file paths, models, system prompts, and bundle names are rejected by strict input validation.
 - No resources, prompts, sampling, private-file tool, or debugging exports are exposed through MCP.
 - D1 or AI failures return generic errors. Logs contain request IDs, status, and successful client IDs, not input/output text or private policy.
-- Only server code reads `private_policies`. The old `instruction_bundles` table remains an owner archive and has no HTTP reader.
+- Only server code reads `private_policies`. `owner_playbooks` stores versioned owner reference Markdown and has no Worker reader. The old `instruction_bundles` table remains an owner archive and has no HTTP reader. Use `put-playbook` / `verify-playbook` to archive sources and `put-policy` / `verify-policy` for executable rules. Uploading a reference never changes service behavior.
 - Version preview URLs are explicitly disabled so old Worker versions cannot provide an alternate download route. Never roll back to a version with raw instruction delivery.
 
 The selected Cloudflare model is `@cf/meta/llama-3.3-70b-instruct-fp8-fast`, using its documented JSON mode. Private policy validation is independent of model compliance. The deployed test profile is `pilot-smoke`; it must remain unpaid after verification.
 
-Hosted verification passed: paid MCP and HTTPS generation, retired file `410`, removed tool rejection, unpaid `403`, and old-token `401` after rotation. The 17-test suite also checks extraction attempts and revocation during generation. Tightening policy values can increase draft rejections; test policy changes against representative briefs before uploading them.
+Hosted verification passed: paid MCP and HTTPS generation, retired file `410`, removed tool rejection, unpaid `403`, and old-token `401` after rotation. The automated suite also checks extraction attempts, revocation during generation and safe client installation. Tightening policy values can increase draft rejections; test policy changes against representative briefs before uploading them. `put-policy` makes the newest version active for every client assigned that policy name; validate a separate test policy before promoting changes.
