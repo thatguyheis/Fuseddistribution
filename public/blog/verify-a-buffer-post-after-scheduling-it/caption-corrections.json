@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "transcriptSha256": "b34946f65b88197975ea7bf6854ba30a51569043263f317326a2e70ce9ed263d",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-04T19:01:28.196609+00:00",
+  "reviewNotes": "Reviewed approved narration against independent base.en and small.en recognition. Corrected API field spellings and homophones, preserving every cue time. Rejected ending was regenerated rather than hidden with captions.",
+  "corrections": [
+    {
+      "segment": 1,
+      "cue": 2,
+      "expectedText": "Save the return post ID, but",
+      "text": "Save the returned post ID, but"
+    },
+    {
+      "segment": 1,
+      "cue": 4,
+      "expectedText": "Query buffer again and read back",
+      "text": "Query Buffer again and read back"
+    },
+    {
+      "segment": 1,
+      "cue": 6,
+      "expectedText": "Channel id, do at, status, and",
+      "text": "channelId, dueAt, status, and"
+    },
+    {
+      "segment": 2,
+      "cue": 0,
+      "expectedText": "Compare channel id with the intended",
+      "text": "Compare channelId with the intended"
+    },
+    {
+      "segment": 2,
+      "cue": 1,
+      "expectedText": "channel, then compare do at as",
+      "text": "channel, then compare dueAt as"
+    },
+    {
+      "segment": 2,
+      "cue": 4,
+      "expectedText": "A scheduled post is waiting, ascending",
+      "text": "A scheduled post is waiting. A sending"
+    },
+    {
+      "segment": 2,
+      "cue": 5,
+      "expectedText": "post is moving, ascent post is",
+      "text": "post is moving. A sent post is"
+    },
+    {
+      "segment": 3,
+      "cue": 2,
+      "expectedText": "and its video mime type.",
+      "text": "and its video MIME type."
+    }
+  ]
+}

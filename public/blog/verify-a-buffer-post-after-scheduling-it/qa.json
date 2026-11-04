@@ -5,10 +5,11 @@
   "pass": true,
   "blockers": [],
   "reviewer": "Codex",
-  "reviewed_at": "2026-11-04T17:53:06.401Z",
+  "reviewed_at": "2026-11-04T19:01:28.196609+00:00",
   "review_notes": [
     "Reviewed full article and local-code claims, corrected repository source link, checked post status distinctions, verified labeled examples and the single comment CTA.",
-    "Reviewed the original portrait hero, source-specific diagrams and reserved enrichment panel. Local deterministic QA passed. Final audio/video release remains pending."
+    "Reviewed the original portrait hero, source-specific diagrams and reserved enrichment panel. Local deterministic QA passed. Final audio/video release remains pending.",
+    "Reviewed approved narration against independent base.en and small.en recognition. Corrected API field spellings and homophones, preserving every cue time. Rejected ending was regenerated rather than hidden with captions."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -28,6 +29,7 @@
     "social-copy.json": "5dcab75bbf6f240fca2af310677f7cf8d7d573c5c1652783b9f6549e243f1dca",
     "attention-review.json": "ce6afde7a04d32fe45aae9a7dfb6f4440e1c407a5bc1377177e86e0b12d93b7f",
     "presentation-plan.json": "16781431ed9567f1c9c7719e30d5ba35784a71d0ea024c861f375be4d2fb9c5d",
-    "enrichment-plan.json": "bb6bb8da8f16d56f48d802e639e92760efd510cd873cbb028cfa93a0498df64f"
+    "enrichment-plan.json": "bb6bb8da8f16d56f48d802e639e92760efd510cd873cbb028cfa93a0498df64f",
+    "caption-corrections.json": "7845a8a4a211b5ad5c39ae42f3a11a6f9c06926368baa1a77e14c823feb65f73"
   }
 }
