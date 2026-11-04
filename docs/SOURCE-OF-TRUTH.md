@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 9, 2026-11-04. Owner: Nick Hughes.
+Version 10, 2026-11-04. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -28,7 +28,7 @@ Use `docs/REEL-PRODUCTION-RUNBOOK.md` for the compact production checklist and e
 | What we publish | **Coin history only.** One blog post plus one reel per episode. |
 | Daily target | **3 finished pairs per Pacific day** (blog live and verified, reel passed release QA). |
 | Stopped | All other blog and reel types: local business marketing, website and SEO tips, AI and automation, accessibility, general silver investing. No new posts, no new reels, no Buffer scheduling of them. |
-| Existing non-coin posts | Stay live. Not deleted, not promoted. |
+| Existing non-coin posts | Stay live unless retired with a permanent redirect in `src/redirects.js`. Retired blog slugs must not be regenerated or registered. |
 | Brand | Fused Reserve (silver). Tag every new post `brand: "silver"`. |
 | Voice | Plain first person. No em dashes. No hyphenated words in prose. No AI buzzwords (list in `public/blog/BLOG-SOP.md`). |
 
@@ -43,6 +43,7 @@ Nick's personal and first party generations use the existing local procedures an
 | Area | Value | Enforced by |
 |---|---|---|
 | Content scope switch | `scope: coin-history`, `dailyTarget: 3` | `ops/content-scope.json` read by `scripts/lib/content-scope.mjs`, `scripts/render-missing-reels.sh`, `scripts/run-coin-history-drafts.py` |
+| Retired blog slugs | Every `/blog/` source in `src/redirects.js` is permanently retired | `scripts/check-editorial-regeneration.mjs`, `public/blog/scripts/add-to-posts.mjs` |
 | What counts as coin history | Post is in `public/blog/posts.json` **and** has a workup folder `content/coin-history/<slug>/` | same readers |
 | Production queue | `content/coin-history/queue.json` (append `{slug, keyword}` only after the package manifest passes) | `run-coin-history-drafts.py`, `prepare-coin-history-batch.mjs` |
 | Daily cap behavior | Caps new blog publishes; a post already live may finish its reel the same day | `run-coin-history-drafts.py` `choose()` |

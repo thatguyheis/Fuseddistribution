@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { newestFirst } from './lib/post-order.mjs';
+import { isRetiredBlogSlug } from '../../../scripts/lib/retired-blog-slugs.mjs';
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => {
   const m = a.match(/^--([^=]+)=(.*)$/); return m ? [m[1], m[2]] : [a.replace(/^--/, ""), true];
@@ -13,6 +14,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => {
 const BLOG_DIR = dirname(dirname(fileURLToPath(import.meta.url)));
 const slug = args.slug;
 if (!slug) { console.error("error: --slug required"); process.exit(1); }
+if (isRetiredBlogSlug(slug)) { console.error(`error: ${slug} is retired and must not be registered`); process.exit(1); }
 const meta = JSON.parse(readFileSync(join(BLOG_DIR, slug, "meta.json"), "utf8"));
 const postsPath = join(BLOG_DIR, "posts.json");
 const posts = existsSync(postsPath) ? JSON.parse(readFileSync(postsPath, "utf8")) : [];
