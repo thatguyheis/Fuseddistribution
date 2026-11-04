@@ -2,31 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fuseddistribution.com/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/about/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fuseddistribution.com/anoush-deli/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fuseddistribution.com/boba-tree/</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fuseddistribution.com/cascade/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,7 +26,7 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/faq/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -62,7 +44,7 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/photos/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -499,32 +481,26 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://fuseddistribution.com/plainsman/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://fuseddistribution.com/pricing/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/process/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/projects/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/projects/faq/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -541,16 +517,88 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fuseddistribution.com/world-construction/</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://fuseddistribution.com/blog/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fuseddistribution.com/blog/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://fuseddistribution.com/blog/verify-a-buffer-post-after-scheduling-it/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/using-remotion-to-make-a-business-reel/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/using-chatterbox-for-business-voiceovers/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/calculate-customer-acquisition-cost-weekly-step-by-step/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/ai-reels-for-beginners-part-1/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/ai-reels-workflow-part-2/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/the-one-number-small-business-should-check-weekly/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/business-networking-that-creates-opportunities/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/1909-lincoln-cent-first-presidential-circulating-coin/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/columbian-exposition-first-commemorative-half/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/2021-american-eagle-silver-redesign/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/carver-washington-half-dollar-two-educators/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/kennedy-half-dollar-memorial-and-metal/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/walking-liberty-half-dollar-silver-eagle/</loc>
@@ -2575,19 +2623,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fuseddistribution.com/blog/google-business-profile-messaging-setup-and-tips/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fuseddistribution.com/blog/google-business-profile-insights-explained/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fuseddistribution.com/blog/google-business-profile-q-and-a-how-to-use-it/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2660,12 +2696,6 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/hunt-brothers-silver-squeeze/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fuseddistribution.com/blog/google-business-profile-messaging/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

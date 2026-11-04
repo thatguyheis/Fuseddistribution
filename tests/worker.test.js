@@ -44,6 +44,88 @@ describe("Google Analytics", () => {
   });
 });
 
+describe("SEO routing and head tags", () => {
+  it("redirects the www host to the apex domain with a 301", async () => {
+    const response = await SELF.fetch("https://www.fuseddistribution.com/pricing/?a=1", { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}/pricing/?a=1`);
+  });
+
+  it.each([
+    "/blog/google-business-profile-messaging/",
+    "/blog/google-business-profile-messaging-setup-and-tips/",
+    "/blog/google-business-profile-q-and-a-how-to-use-it/",
+    "/blog/google-business-profile-messaging",
+  ])("permanently redirects retired post %s", async (path) => {
+    const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}/blog/google-business-profile-setup/`);
+  });
+
+  it("allows Google Fonts stylesheets and font files in the CSP", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/`);
+    const directives = response.headers.get("content-security-policy").split(";").map(value => value.trim());
+    expect(directives.find(d => d.startsWith("style-src"))).toContain("https://fonts.googleapis.com");
+    expect(directives).toContain("font-src 'self' https://fonts.gstatic.com");
+    await response.text();
+  });
+
+  it("injects favicon and manifest links into HTML pages", async () => {
+    const response = await SELF.fetch(`${ORIGIN}/`);
+    const html = await response.text();
+    expect(html).toContain('<link rel="icon" href="/favicon.svg" type="image/svg+xml">');
+    expect(html).toContain('<link rel="apple-touch-icon" href="/apple-touch-icon.png">');
+    expect(html).toContain('<link rel="manifest" href="/site.webmanifest">');
+    expect(html.indexOf('rel="icon"')).toBeLessThan(html.indexOf("</head>"));
+  });
+});
+
+describe("shared site navigation", () => {
+  const page = `<!doctype html><html><head><title>t</title></head><body>
+    <header class="topbar"><a class="brand" href="/">Fused</a>
+      <nav class="nav" aria-label="Primary"><div class="nav-pages"><a href="/web-design/">Old</a></div>
+      <div class="nav-actions"><a class="nav-cta" href="/reserve/#join">Reserve Silver</a></div></nav>
+    </header><main>body</main></body></html>`;
+
+  async function render(path) {
+    const { renderSharedNav } = await import("../src/site-nav.js");
+    const response = renderSharedNav(new Response(page, { headers: { "content-type": "text/html" } }), path);
+    return response.text();
+  }
+
+  it("replaces page-specific menu items with the canonical menu", async () => {
+    const html = await render("/blog/some-post/");
+    expect(html).not.toContain('href="/web-design/"');
+    for (const href of ["/", "/projects/", "/process/", "/pricing/", "/reserve/", "/education/", "/photos/", "/about/", "/blog/"]) {
+      expect(html).toContain(`href="${href}"`);
+    }
+    expect(html).toContain('<a class="nav-cta" href="/reserve/#join">Reserve Silver</a>');
+  });
+
+  it("adds a mobile menu button and the shared nav assets", async () => {
+    const html = await render("/");
+    expect(html).toContain('class="fx-burger"');
+    expect(html).toContain('aria-controls="fx-primary-nav"');
+    expect(html).toContain('id="fx-primary-nav"');
+    expect(html).toContain('<link rel="stylesheet" href="/assets/site-nav.css">');
+    expect(html).toContain('<script src="/assets/site-nav.js" defer></script>');
+    expect(html.indexOf('class="fx-burger"')).toBeLessThan(html.indexOf("<nav"));
+  });
+
+  it("marks the current section active", async () => {
+    const html = await render("/pricing/");
+    expect(html).toMatch(/<a href="\/pricing\/"[^>]*class="active"[^>]*aria-current="page"/);
+    expect(html).toMatch(/class="nav-toggle active"[^>]*aria-controls="dropdown-tech"/);
+  });
+
+  it("leaves pages without the shared header untouched", async () => {
+    const { renderSharedNav } = await import("../src/site-nav.js");
+    const plain = "<html><head></head><body><nav><a href='/x'>x</a></nav></body></html>";
+    const html = await renderSharedNav(new Response(plain, { headers: { "content-type": "text/html" } }), "/").text();
+    expect(html).toBe(plain);
+  });
+});
+
 function newsletterRequest(body, options = {}) {
   return SELF.fetch(`${ORIGIN}/api/newsletter`, {
     method: "POST",

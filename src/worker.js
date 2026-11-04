@@ -1,4 +1,5 @@
 import { DurableObject } from "cloudflare:workers";
+import { addSharedNav } from "./site-nav.js";
 
 const SECURITY_HEADERS_BASE = {
   "X-Frame-Options": "SAMEORIGIN",
@@ -17,6 +18,22 @@ const MAX_JSON_BODY_BYTES = 4096;
 const REEL_MEDIA_PREFIXES = ["/reels/", "/reels-x/"];
 const MP4_CACHE_CONTROL = "public, max-age=31536000, immutable";
 const GOOGLE_ANALYTICS_ID = "G-3J56X9V708";
+const APEX_HOST = "fuseddistribution.com";
+
+// Retired posts that described Google Business Profile features Google removed
+// (Messaging, July 2024; Q&A, replaced by Ask Maps). Keys have no trailing slash.
+const PERMANENT_REDIRECTS = new Map([
+  ["/blog/google-business-profile-messaging", "/blog/google-business-profile-setup/"],
+  ["/blog/google-business-profile-messaging-setup-and-tips", "/blog/google-business-profile-setup/"],
+  ["/blog/google-business-profile-q-and-a-how-to-use-it", "/blog/google-business-profile-setup/"],
+]);
+
+const ICON_LINKS = [
+  '<link rel="icon" href="/favicon.ico" sizes="32x32">',
+  '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+  '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+  '<link rel="manifest" href="/site.webmanifest">',
+].join("\n    ");
 
 class RequestError extends Error {
   constructor(message, status = 400) {
@@ -75,7 +92,7 @@ export class SubmissionRateLimiter extends DurableObject {
 
 function buildCSP(nonce) {
   const scriptSrc = nonce ? `'self' 'nonce-${nonce}'` : `'self'`;
-  return `default-src 'self'; style-src 'self' 'unsafe-inline'; script-src ${scriptSrc} https://www.googletagmanager.com; img-src 'self' data: https://images.pexels.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com; form-action 'self'; frame-ancestors 'self'`;
+  return `default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src ${scriptSrc} https://www.googletagmanager.com; img-src 'self' data: https://images.pexels.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com; form-action 'self'; frame-ancestors 'self'`;
 }
 
 function withSecurityHeaders(response, nonce) {
@@ -96,12 +113,21 @@ function generateNonce() {
     .replace(/=/g, "");
 }
 
-async function applyNonce(response, nonce, consentState = "") {
+async function applyNonce(response, nonce, consentState = "", path = "/") {
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) return response;
+  let hasIcon = false;
   const rewriter = new HTMLRewriter()
+    .on('link[rel~="icon"]', {
+      element() {
+        hasIcon = true;
+      },
+    })
     .on("head", {
       element(element) {
+        element.onEndTag((end) => {
+          if (!hasIcon) end.before(`    ${ICON_LINKS}\n  `, { html: true });
+        });
         if (consentState === "granted") {
           element.append(
             `<script async src="https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}" nonce="${nonce}"></script>
@@ -126,7 +152,7 @@ async function applyNonce(response, nonce, consentState = "") {
       },
     });
   }
-  return rewriter
+  return addSharedNav(rewriter, path)
     .on("script", {
       element(element) {
         element.setAttribute("nonce", nonce);
@@ -638,6 +664,17 @@ export default {
     )?.[1] || "";
 
     try {
+      if (url.hostname === `www.${APEX_HOST}`) {
+        const apexUrl = new URL(request.url);
+        apexUrl.hostname = APEX_HOST;
+        return withSecurityHeaders(Response.redirect(apexUrl.toString(), 301), null);
+      }
+
+      const redirectTarget = PERMANENT_REDIRECTS.get(url.pathname.replace(/\/+$/, ""));
+      if (redirectTarget) {
+        return withSecurityHeaders(Response.redirect(new URL(redirectTarget, url).toString(), 301), null);
+      }
+
       const analyticsConsent = url.searchParams.get("analytics_consent");
       if (analyticsConsent === "granted" || analyticsConsent === "denied") {
         const cleanUrl = new URL(request.url);
@@ -684,7 +721,7 @@ export default {
             headers.delete("content-encoding");
             headers.delete("content-length");
             const response = new Response(notFound.body, { status: 404, headers });
-            return withSecurityHeaders(await applyNonce(response, nonce, consentState), nonce);
+            return withSecurityHeaders(await applyNonce(response, nonce, consentState, url.pathname), nonce);
           }
         } catch (error) {
           console.error(JSON.stringify({ event: "custom_404_failed", error: String(error) }));
@@ -692,7 +729,7 @@ export default {
         return withSecurityHeaders(new Response("Not found.", { status: 404 }), null);
       }
 
-      return withSecurityHeaders(await applyNonce(assetResponse, nonce, consentState), nonce);
+      return withSecurityHeaders(await applyNonce(assetResponse, nonce, consentState, url.pathname), nonce);
     } catch (error) {
       if (error instanceof RequestError) {
         return withSecurityHeaders(json({ error: error.message }, { status: error.status }), null);
