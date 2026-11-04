@@ -48,6 +48,13 @@ For a physical silver purchase, examine the specific product, seller, complete c
 
 ## Related
 
+## Sources
+
+- [Federal Reserve History: Creation of the Bretton Woods System](https://www.federalreservehistory.org/essays/bretton-woods-created)
+- [Federal Reserve History: Nixon Ends Convertibility of U.S. Dollars to Gold](https://www.federalreservehistory.org/essays/gold-convertibility-ends)
+- [Federal Reserve History: The Smithsonian Agreement](https://www.federalreservehistory.org/essays/smithsonian-agreement)
+- [U.S. Mint: First Striking of New Half Dollars](https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material)
+
 - [Silver Supply Deficit in 2026: Reading the Forecast](/blog/silver-supply-deficit-sixth-consecutive-year-2026/)
 - [Britannias vs Eagles: Comparing Silver Coins](/blog/britannias-vs-eagles-which-silver-coin-is-best/)
 
