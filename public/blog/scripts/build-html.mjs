@@ -403,6 +403,7 @@ function render(d) {
     <meta name="description" content="${esc(d.description)}" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="${d.date}T00:00:00Z" />
+    ${d.modifiedDate !== d.date ? `<meta property="article:modified_time" content="${d.modifiedDate}T00:00:00Z" />` : ''}
     <meta property="article:author" content="https://fuseddistribution.com/about/" />
     <meta property="og:url" content="https://fuseddistribution.com/blog/${d.slug}/" />
     <meta property="og:title" content="${esc(d.title)}" />

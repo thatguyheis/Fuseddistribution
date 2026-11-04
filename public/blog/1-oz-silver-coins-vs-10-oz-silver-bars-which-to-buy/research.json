@@ -15,6 +15,13 @@
       "claims": [
         "Precious metal price changes and transaction costs affect potential outcomes."
       ]
+    },
+    {
+      "title": "NIST Precious Metals Conversion Information",
+      "source_url": "https://www.nist.gov/pml/owm/metric-si/unit-conversion/precious-metals-conversion-information",
+      "claims": [
+        "Weight based precious metal sales use troy weight or SI units."
+      ]
     }
   ]
 }

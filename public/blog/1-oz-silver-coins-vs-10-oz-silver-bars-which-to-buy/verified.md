@@ -6,7 +6,7 @@ Begin with written quotes for identified products. This guide explains how to or
 
 ## Compare equal quantities of silver
 
-A quote for one coin and a quote for one bar describe different quantities. To compare a ten ounce purchase, request ten coins containing one troy ounce of fine silver each and a bar containing ten troy ounces of fine silver. Confirm the fine metal content rather than relying only on gross weight or an abbreviated listing title.
+A quote for one coin and a quote for one bar describe different quantities. To compare a ten ounce purchase, request ten coins containing one troy ounce of fine silver each and a bar containing ten troy ounces of fine silver. Confirm the fine metal content rather than relying only on gross weight or an abbreviated listing title. NIST's [precious metals guidance](https://www.nist.gov/pml/owm/metric-si/unit-conversion/precious-metals-conversion-information) uses troy weight or SI units for weight based sales, so record the unit shown in each quote.
 
 Record the maker, product name, stated content, purity and condition. Ask whether the quote describes ordinary bullion, a collectible edition or a product with special packaging. Do not assume every silver coin carries the same premium or that every bar is interchangeable with another maker's product.
 
@@ -51,6 +51,12 @@ Ask the insurer to confirm coverage for your arrangement, including any conditio
 Create one row for each complete offer. Record the fine silver quantity, delivered total, cost per fine ounce, number of separate pieces, current net buyback offer and unresolved conditions. Use the same units and quote time throughout.
 
 The result should show the tradeoffs you can verify. It should not rank future returns or imply that a general format recommendation replaces your own financial circumstances. If the quotes are incomplete, resolve those gaps before treating the comparison as finished.
+
+## Sources
+
+1. [CFTC and FINRA: 10 Things to Ask Before Buying Physical Gold, Silver, or Other Metals](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/Metals10Things.html)
+2. [CFTC: Gold Is No Safe Investment](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/gold_is_no_safe_investment.htm)
+3. [NIST: Precious Metals Conversion Information](https://www.nist.gov/pml/owm/metric-si/unit-conversion/precious-metals-conversion-information)
 
 ## Related
 

@@ -36,6 +36,7 @@ test('new blog pages use concise brand titles and the right author expertise', (
     assert.equal(schema.publisher['@id'], 'https://fuseddistribution.com/#organization');
     assert.equal(schema.datePublished, '2026-06-01');
     assert.equal(schema.dateModified, '2026-06-08');
+    assert.match(html, /article:modified_time" content="2026-06-08T00:00:00Z"/);
     if (brand === 'silver') {
       assert.match(html, /<span class="brand-sub">Reserve<\/span>/);
       assert.equal(schema.brand.name, 'Fused Reserve');
