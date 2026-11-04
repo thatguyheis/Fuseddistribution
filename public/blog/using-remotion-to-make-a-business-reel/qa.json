@@ -11,7 +11,8 @@
     "Reviewed the final article, official research links, reel script, question hook, one-action CTA, vector graphics, playable hosted reel panel, and deterministic QA.",
     "The article and reel use no unsupported performance statistics; the graphics explain workflow steps.",
     "The reel export passed encoded visual review, audio, Whisper caption, media rights, dimensions, duration, and file-size checks.",
-    "Reviewed replacement CTA wording and the tested conceptual composition workflow graphic with quiet step accents. Existing final audio/captions require regeneration and renewed release review."
+    "Reviewed replacement CTA wording and the tested conceptual composition workflow graphic with quiet step accents. Existing final audio/captions require regeneration and renewed release review.",
+    "Replacement version 3 reel released after encoded frame inspection, caption ending check, approved enrichment verification and matching public MP4 byte/hash verification."
   ],
   "notes": [
     "Final content and deterministic QA passed before editorial sign-off.",
@@ -36,7 +37,7 @@
     "social-copy.json": "6aff25a0edc86a7a8b5e93babe7b4f011838110ec6dabaf9c8f3ab1ff8623d5b",
     "attention-review.json": "1a1eb2c8122e05edd78ee6c13ae1c31e46ec68efbac7453be50794a2f42d8807",
     "presentation-plan.json": "aac3b2f3272d06567c9a051579fd3cd195203e7a6d1e05c2131d9aea6afaee82",
-    "social-video.json": "5a8dbe0a4e43fc9999dd161a5756787f92ed281059ba535e6688b2a8e7bb58d6",
+    "social-video.json": "5ede6829d307c8c450a1920f9af09a1ec06f403fe010b478c9c2634c6ea8214d",
     "enrichment-plan.json": "5d948db938215bb49c22a931f3116ea60a57716e65fb4772b9d7d8e538443ae4"
   }
 }
