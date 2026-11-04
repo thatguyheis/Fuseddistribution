@@ -1,3 +1,4 @@
+import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
 import {approveGeneratedBackgroundsForReel} from './generated-background-library.mjs';
 import {approveStockMediaForReel} from './stock-media-library.mjs';
 import { engagementErrors } from './engagement-policy.mjs';
@@ -9,7 +10,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { assertRenderedReelAudioCleared, repoRoot } from './audio-rights.mjs';
-import { compositionFramesForSegments } from './transition-timing.mjs';
+import { compositionFramesForSegments, transitionName } from './transition-timing.mjs';
 import { auditCaptionSync } from './auto-caption-review.mjs';
 
 function readJson(path, errors, label) {
@@ -94,6 +95,19 @@ export function evaluateReelRelease(slug, options = {}) {
         errors.push('opening cover must use the current approved editorial hero or verified owner coin evidence');
       }
     } catch (error) { errors.push(`opening hero verification failed: ${error.message}`); }
+  }
+  if (meta?.renderPipelineVersion >= 3) {
+    try {
+      const props = JSON.parse(readFileSync(join(outDir, 'render-props.json')));
+      const expected = prepareEnrichment(root, slug, script.segments.length, {stage:false});
+      if (meta.enrichmentPlanSha256 !== expected.sha256 || JSON.stringify(props.enrichment) !== JSON.stringify(expected)) {
+        throw Error('Rendered enrichment is missing or stale');
+      }
+      const transitions = script.segments.slice(0,-1).map((segment,index)=>transitionName(segment.type,script.segments[index+1].type,index));
+      if (new Set(transitions).size < 2 || JSON.stringify(meta.enrichmentSummary?.transitions) !== JSON.stringify(transitions)) throw Error('Transition variety metadata does not match the composition');
+      const captionData = JSON.parse(readFileSync(join(outDir, 'captions.json')));
+      errors.push(...endingCaptionErrors(script, captionData));
+    } catch (error) { errors.push(`Enrichment verification failed: ${error.message}`); }
   }
   const timing = readJson(join(outDir, 'audio-timing.json'), errors, 'audio timing');
   try {

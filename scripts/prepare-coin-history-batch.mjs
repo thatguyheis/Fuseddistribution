@@ -1,3 +1,4 @@
+import {validateEnrichmentPlan} from '../video/scripts/production-enrichment.mjs';
 import { createHash } from 'node:crypto';
 import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
@@ -343,6 +344,9 @@ for (const item of items) {
   const narrationWords=approvedTranscript.split(/\s+/).filter(Boolean).length;
   const estimatedSeconds=narrationWords/3.25+1.9;
   if(estimatedSeconds<95||estimatedSeconds>135)throw new Error(`Narration preflight outside supported duration (${narrationWords} words, ${estimatedSeconds.toFixed(1)}s): ${item.slug}`);
+  const enrichment = {version:1, graphics:[{segmentIndex:1,kind:'table',title:'Key details',source:'Approved coin workup; see article sources',takeaway:item.hook,rows:item.graphicRows.slice(0,4).map(([label,detail])=>({label,detail}))}], soundEffects:[1,2].map(segmentIndex=>({segmentIndex,file:'youtube-coins-shuffling.mp3',purpose:'Quiet coin handling accent at a historical detail reveal',sourceStartSeconds:6,durationSeconds:0.4}))};
+  validateEnrichmentPlan(enrichment, labels.length + 2);
+  json(join(blog,'enrichment-plan.json'),enrichment);
   text(join(blog,'reel-script.md'),reel);
   text(join(blog,'reel-script-approved.md'),reel);
   text(join(blog,'reel-data.md'),`# ${item.title}\ntopic: silver\nhook: ${item.hook.toUpperCase()}\nformat: long-form\n\n## style\n- Lead with the exact coin image and the verified hook.\n- Use purposeful historical detail, source-backed timelines, split comparisons, and photo-led transitions.\n- Use Chatterbox Standard and Whisper word timing with the 720 x 1280 presentation profile.\n- Keep AI scenes labeled as illustrations; never use generated art as evidence for a coin, person, event, or exact historic site.\n- Do not use generic Pexels coin imagery as an exact issue or variety.\n\n## claims\n${claimMap.claims.map((c)=>`- ${c.id}: ${c.claim} Source: ${c.source}`).join('\n')}\n\n## media_queries\n${item.sections.map((s,i)=>`- segment: ${i}\n  query: "${s[0].replaceAll('"','')}"\n  prefer: photo`).join('\n')}`);

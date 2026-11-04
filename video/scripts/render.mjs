@@ -1,3 +1,4 @@
+import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
 import {processIsAlive} from './process-liveness.mjs';
 import {stagePresentation} from './presentation-plan.mjs';
 import {stageSupportingCutaways} from './owned-media.mjs';
@@ -13,7 +14,7 @@ import { fetchMedia } from './fetch-media.mjs';
 import { generateCaptions, assertWhisperRuntime } from './generate-captions.mjs';
 import { formatValidationResult, validateReelScript } from './validate-reel.mjs';
 import { createHash } from 'node:crypto';
-import { compositionFramesForSegments } from './transition-timing.mjs';
+import { compositionFramesForSegments, transitionName } from './transition-timing.mjs';
 import { assertMusicTrackCleared, normalizeMusicTrack, selectTrustedCycleTrack } from './audio-rights.mjs';
 import { collectAudioDurations, retimeScriptToAudio, writeAudioTiming } from './audio-timing.mjs';
 import { musicMixForTrack } from './music-mix.mjs';
@@ -124,6 +125,8 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     process.exit(1);
   }
 
+  const enrichment = prepareEnrichment(join(videoDir, '..'), slug, script.segments.length);
+
   const presentationPackage = process.argv.includes('--quality=presentation') ? stagePresentation(join(videoDir,'..'),slug,script.segments.length) : null;
 
   // Gate every entry point, including manual/one-shot renders. Fully cached
@@ -209,6 +212,9 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     console.log(`Applied ${captionTextReview.applied.length} transcript-checked caption corrections.`);
   }
 
+  const endingErrors = endingCaptionErrors(script, captions);
+  if (endingErrors.length) throw new Error(endingErrors.join('; '));
+
   // 4. Music rights were checked before any expensive audio/render work.
   if (musicTrack === 'none') {
     console.log('\n→ music: none (audio-rights policy approved)\n');
@@ -227,7 +233,7 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const outFileName = reelN ? `${slug}-reel${reelN}.mp4` : `${slug}.mp4`;
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
-  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions, storyboard, openingHero, presentation: presentationPackage?.presentation }));
+  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions, storyboard, openingHero, presentation: presentationPackage?.presentation, enrichment }));
   writeFileSync(join(outDir, 'storyboard.json'), `${JSON.stringify(storyboard, null, 2)}\n`);
   if (process.argv.includes('--prepare-only')) { console.log('Prepared narration, captions and render props for review.'); return; }
   const qualityFlags = presentationPackage ? ' --image-format=png --crf=20 --x264-preset=slow --audio-bitrate=192k --pixel-format=yuv420p' : '';
@@ -252,7 +258,9 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
 
   const meta = {
     slug,
-    renderPipelineVersion: 2,
+    renderPipelineVersion: 3,
+    enrichmentPlanSha256: enrichment.sha256,
+    enrichmentSummary: {graphics: enrichment.graphics.length, soundCues: enrichment.soundEffects.length, transitions: script.segments.slice(0,-1).map((segment,index)=>transitionName(segment.type,script.segments[index+1].type,index))},
     presentationPlanSha256: presentationPackage?.planSha256,
     qualityProfile: presentationPackage ? 'presentation-720p-crf20-slow' : 'standard',
     presentationAudio,
@@ -283,9 +291,9 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     },
     photosUsed: mediaSummary.mediaUsed,
     ...mediaSummary,
-    storyboardRoute: storyboard.route,
-    mediaFeatureSegments: storyboard.segments.filter(segment => segment.visual === 'media-feature').map(segment => segment.segmentIndex),
-    paperCollageSegments: storyboard.segments.filter((segment) => segment.visual === 'paper-collage' && !['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(media[segment.segmentIndex]?.source)).map((segment) => segment.segmentIndex),
+    storyboardRoute: presentationPackage ? 'reviewed-presentation' : storyboard.route,
+    mediaFeatureSegments: presentationPackage ? [] : storyboard.segments.filter(segment => segment.visual === 'media-feature').map(segment => segment.segmentIndex),
+    paperCollageSegments: presentationPackage ? [] : storyboard.segments.filter((segment) => segment.visual === 'paper-collage' && !['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(media[segment.segmentIndex]?.source)).map((segment) => segment.segmentIndex),
     ownedLayoutSegments: Object.entries(media).filter(([, entry]) => ['fused-owned-coin-library', 'fused-verified-coin-evidence'].includes(entry.source)).map(([index]) => Number(index)),
   };
   if (JSON.stringify(assertApprovedSources(join(videoDir, '..'), slug)) !== JSON.stringify(approvedSourceHashes)) throw new Error('Approved inputs changed during rendering');

@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 8, 2026-11-04. Owner: Nick Hughes.
+Version 9, 2026-11-04. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -17,7 +17,7 @@ This file is the single reference for what Fused produces, the rules it follows,
 | 5 | `video/REEL-SOP.md`, `public/blog/BLOG-SOP.md`, `SOCIAL-SOP.md` | Technical detail for render, blog HTML and Buffer, where not contradicted here |
 | 6 | Everything else in `docs/` | History and background only |
 
-Incident, recovery, status, handoff and PLAN files are records, not rules.
+Use `docs/REEL-PRODUCTION-RUNBOOK.md` for the compact production checklist and enrichment schema. Read detailed SOP sections only to resolve a specific failure. Incident, recovery, status, handoff and PLAN files are records, not rules.
 
 ---
 
@@ -56,14 +56,15 @@ Nick's personal and first party generations use the existing local procedures an
 | Reel release duration | 100 to 135 seconds measured from the mastered MP4 | `video/scripts/release-reel.mjs:110` |
 | Reel ending | Spoken question card, 10 words or fewer, inside the hashed transcript | release gate, `run-coin-history-drafts.py` |
 | Reel file size | Target 44 MB, must be under 50,000,000 bytes (master). Public derivatives for X and Instagram must be under 25 MiB. | `scripts/render-missing-reels.sh`, Buffer planners |
-| Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 23:05 Pacific, after the 22:00 Buffer refill and five-minute scheduler grace. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
+| Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation produces two pairs at 02:00 Pacific with one production owner. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, Codex automation `daily-business-growth-blog-and-reel` |
 | Generative diffusion | Optional and disabled by default. Prefer evidence-led charts, graphs, and clear flow diagrams; enable Stable Diffusion only for a reviewed gap that those graphics and cleared media cannot explain. | `scripts/render-missing-reels.sh`, `video/scripts/render.mjs`, render LaunchAgent |
 | Attention design review | New business-growth reels record a hash-bound attention review: a visible, spoken question hook in the first three seconds, specific viewer benefit, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. Measure the generated hook audio before encoding; reject above 3.5 seconds. The approved article hero must appear in encoded frame zero; blank or near-blank openings block release. | `video/scripts/attention-review.mjs`, `video/scripts/opening-hero.mjs`, `video/scripts/release-reel.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`, `docs/REEL-OPENING-SOP.md` |
 | Voice | Pinned Chatterbox Standard with Nick's voice reference. Use exaggeration 0.75, CFG 0.3, temperature 0.8, min-p 0.05, top-p 1.0, repetition penalty 1.2 and 1 dB output peak headroom. Generate and record a new random seed per spoken segment. Split sentence-aware narration into chunks no longer than 240 characters. Whisper is for speech recognition and word-timed captions, not voice synthesis. | `video/tts-runtime.json`, `video/scripts/chatterbox-tts.py`, `video/scripts/generate-audio.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
+| Production enrichment | Every new render requires an editorially hashed enrichment-plan.json: at least one explanatory flow/table/chart and two short, purposeful licensed sound cues on separate body beats. Use semantic slide/wipe/fade transitions in both rendering routes. Version 3 release verifies exact props, plan and staged audio hashes, and rejects extra ending caption words. | video/scripts/production-enrichment.mjs, render.mjs, release-reel.mjs, prepare-coin-history-batch.mjs, qa-gate.sh |
 | Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
-| Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. No paid remote model in scheduled jobs. | coin worker env |
+| Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. Coin drafting uses this local model; the separately authorized business automation uses GPT-5.6 Luna directly for writing and review. | coin worker env |
 | Buffer queue | 9 scheduled posts per channel (limit 10, 1 reserve slot). Channels: YouTube Shorts, X, Instagram. | `scripts/buffer-backlog-runner.mjs:22-24` |
 | Buffer CTA gate | Platform planners must apply `rotateQueue` to selected jobs before queue validation/publish; never hand-edit CTA metadata to bypass preflight. | `public/blog/scripts/prepare-buffer-*-queue.mjs`, `public/blog/scripts/lib/cta-rotation.mjs` |
 | Buffer reuse | Same reel not reposted within 7 days | `buffer-backlog-runner.mjs` `repostAfterDays` |
@@ -103,7 +104,7 @@ Nick's personal and first party generations use the existing local procedures an
 |---|---|
 | `fused-daily-publishing-owner` (08:30, 21:30) | Keep. Refocus on coin queue preparation (section 6, step 1). |
 | `fused-daily-profit-and-sop-evolution` | Keep, weekly review only |
-| `daily-business-growth-blog-and-reel` | Daily 23:05, GPT-5.6 Luna low; two serial business-growth pairs, after the Buffer refill and within the overnight render window |
+| `daily-business-growth-blog-and-reel` | Daily 02:00, GPT-5.6 Luna low; two serial pairs, resume incomplete topics first, use docs/REEL-PRODUCTION-RUNBOOK.md |
 | `resume-fused-coin-video-production-tonight` | One-off from 2026-10-20. Retire. |
 | `daily-blog-backlog-monitor`, `fused-blog-backlog-recovery-watch`, `reel-audio-backlog-sequential-rerender`, `fused-final-buffer-pair-recovery`, `buffer-youtube-queue-maintenance` | Generic backlog work. Retire or rewrite for coin scope. |
 | `overnight-actions-review`, `book-factory-daily-audit-and-status` | Not part of Fused publishing. Leave alone. |

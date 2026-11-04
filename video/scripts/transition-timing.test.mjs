@@ -4,6 +4,7 @@ import {
   compositionFramesForSegments,
   totalTransitionFrames,
   transitionDurationFrames,
+  transitionName,
 } from './transition-timing.mjs';
 
 test('rotates body transition durations deterministically', () => {
@@ -21,3 +22,5 @@ test('composition duration subtracts transition overlap', () => {
   assert.equal(totalTransitionFrames(segments), 34);
   assert.equal(compositionFramesForSegments(segments, 30), 23 * 30 - 34);
 });
+
+test('both routes share purposeful transition names',()=>{assert.equal(transitionName('hook','overlay',0),'slide-bottom');assert.equal(transitionName('overlay','overlay',2),'wipe-left');assert.equal(transitionName('overlay','question',3),'fade');});

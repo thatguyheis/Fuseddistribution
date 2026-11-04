@@ -1,3 +1,11 @@
+export function transitionName(currentType, nextType, index) {
+  if (nextType === 'cta' || nextType === 'question') return 'fade';
+  if (currentType === 'hook') return 'slide-bottom';
+  if (currentType === 'stat' && nextType === 'chart') return 'fade';
+  if (currentType === 'chart') return 'wipe-left';
+  return ['slide-bottom','slide-right','wipe-left','fade'][index % 4];
+}
+
 export function transitionDurationFrames(currentType, nextType, index) {
   if (nextType === 'cta' || nextType === 'question') return 16;
   if (currentType === 'hook') return 18;

@@ -1,4 +1,4 @@
-import {readFileSync,writeFileSync,copyFileSync,mkdirSync,realpathSync} from 'node:fs';
+import {readFileSync,writeFileSync,copyFileSync,mkdirSync,realpathSync,existsSync} from 'node:fs';
 import {join,resolve,sep,extname} from 'node:path';
 import {createHash} from 'node:crypto';
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -7,7 +7,7 @@ export function stagePresentation(root,slug,segmentCount){
  const qa=JSON.parse(readFileSync(join(dir,'qa.json')));
  if(qa.artifactSha256?.['presentation-plan.json']!==hash(bytes))throw Error('Presentation plan needs current editorial approval');
  const plan=JSON.parse(bytes),media={},segments={},manifest={};
- const allowed=[realpathSync(dir)+sep,realpathSync(join(root,'content/coin-history',slug))+sep],dest=join(root,'video/public/presentations',slug);mkdirSync(dest,{recursive:true});
+ const allowed=[realpathSync(dir)+sep,...(existsSync(join(root,'content/coin-history',slug))?[realpathSync(join(root,'content/coin-history',slug))+sep]:[])],dest=join(root,'video/public/presentations',slug);mkdirSync(dest,{recursive:true});
  if(plan.segments.length!==segmentCount)throw Error('Presentation must cover every narration segment');
  for(const [index,shots]of plan.segments.entries()){
   if(!Array.isArray(shots)||!shots.length)throw Error('Missing presentation shots');

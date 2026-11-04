@@ -2,7 +2,7 @@
 
 # Reel Creation — Standard Operating Procedure
 
-Current visual standard: `docs/REEL-ENRICHMENT-SOP.md` (October 13). This supersedes older photo-only body, blog-image-first and mandatory paper-collage rules.
+Routine production checklist: `docs/REEL-PRODUCTION-RUNBOOK.md`. This file is a technical reference; read only the section needed for a specific operation. SOURCE-OF-TRUTH controls all defaults. Every new render consumes an approved enrichment plan; final release checks its graphics, sound cues and hashes.
 
 Tech education expansion: `docs/TECH-EDUCATION-SOP.md`. Use concrete tool lessons, the imported hook strategy, and verified matching demonstrations.
 
@@ -19,7 +19,7 @@ Current operations authority: `docs/AUTOMATED-PUBLISHING-OPERATIONS.md` (Septemb
 
 ## Current attention and overnight production standard (November 2, 2026)
 
-`docs/SOURCE-OF-TRUTH.md` controls the current schedules and scope. Coin-history reels render in two-reel batches at 01:00 and 04:00 Pacific. The separate business-growth automation creates two pairs at 23:05 Pacific, after the Buffer refill and five-minute scheduler grace, and renders serially. Keep heavy TTS/rendering out of daytime work. Stable Diffusion is opt-in, disabled by default, and capped at four minutes per optional image attempt; use source-backed data graphics and flow diagrams first. See `docs/REEL-ENRICHMENT-SOP.md`.
+`docs/SOURCE-OF-TRUTH.md` controls the current schedules and scope. Coin-history reels render in two-reel batches at 01:00 and 04:00 Pacific. The separate business-growth automation creates two pairs at 02:00 Pacific, after the Buffer refill and five-minute scheduler grace, and renders serially. Keep heavy TTS/rendering out of daytime work. Stable Diffusion is opt-in, disabled by default, and capped at four minutes per optional image attempt; use source-backed data graphics and flow diagrams first. See `docs/REEL-ENRICHMENT-SOP.md`.
 
 For new business-growth reels, the approved source gate requires `attention-review.json` with `attentionOptimizationVersion: 1` in `qa.json`. When `hook.questionHookRequired` is true, use the same specific question in spoken narration and visible text at frame zero. Pay off the hook early through two to four mapped beats and end with one concise CTA and one primary action. Keep the first spoken hook to 12 words and four seconds maximum, and the on-screen CTA to 10 words maximum. Every new reel starts with its approved article hero at frame zero, never a blank/near-blank frame, with encoded-frame visual review required before Buffer. Review actual platform retention/action analytics after they mature; do not treat generic benchmark numbers as guarantees. Platform-specific notes and sources are in `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`.
 
@@ -1102,7 +1102,7 @@ The run summary should record render dimensions, render duration, cache hits, ne
 
 ## 11d. Storyboard-led visual route
 
-The paper collage pilot is now a required production element, not an optional gate. The renderer creates or loads a production storyboard after script and measured audio timing validation and before media assembly. Every reel must contain at least one labeled paper cutout beat, while retaining the existing chart, question, standard-card, and approved-media beats where the script calls for them. Longer reels should use a second paper beat with a different asset or treatment.
+Paper collage is one supported visual treatment. The required explanatory graphic is defined by the reviewed enrichment plan. The renderer creates or loads a production storyboard after script and measured audio timing validation and before media assembly. Every reel must contain at least one labeled paper cutout beat, while retaining the existing chart, question, standard-card, and approved-media beats where the script calls for them. Longer reels should use a second paper beat with a different asset or treatment.
 
 The production route must pass its storyboard contract before rendering. It fails closed when a paper beat lacks a label or message, when a chart lacks a title, explanatory subtitle, unit or axis label, paired values, source period, or plain language takeaway, or when a reel lacks visual variety. The pilot protocol remains available for the dedicated data-heavy pilot and does not control whether production reels receive paper collage.
 

@@ -14,7 +14,7 @@ export function assertApprovedSources(root, slug) {
   if (!qa.pass || (!automatedCoinApproval && qa.mode !== 'codex-editorial') || qa.score < 85 || qa.blockers?.length) {
     throw new Error('Editorial approval required');
   }
-  const artifacts = [...required, ...(existsSync(join(directory,'caption-corrections.json')) ? ['caption-corrections.json'] : [])];
+  const artifacts = [...required, ...(existsSync(join(directory,'enrichment-plan.json')) ? ['enrichment-plan.json'] : []), ...(existsSync(join(directory,'caption-corrections.json')) ? ['caption-corrections.json'] : [])];
   for (const name of artifacts) {
     const digest = createHash('sha256').update(readFileSync(join(directory,name))).digest('hex');
     if (qa.artifactSha256?.[name] !== digest) throw new Error(`Approved source changed: ${slug}/${name}; editorial review required`);

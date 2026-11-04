@@ -1,3 +1,4 @@
+import {ProductionEnrichmentLayer, type ProductionEnrichment} from '../components/ProductionEnrichment';
 import React from 'react';
 import {PresentationScene, type PresentationPlan} from '../components/PresentationScene';
 import { AbsoluteFill, Audio, Img, staticFile, useVideoConfig } from 'remotion';
@@ -25,6 +26,7 @@ import {
   compositionFramesForSegments,
   totalTransitionFrames as sumTransitionFrames,
   transitionDurationFrames,
+  transitionName,
 } from '../../scripts/transition-timing.mjs';
 
 type MediaMap = Record<number, MediaEntry>;
@@ -79,27 +81,12 @@ function transitionSpec(currentType: string, nextType: string, index: number): T
   const durationInFrames = transitionDurationFrames(currentType, nextType, index);
   const lin = () => ({ timing: linearTiming({ durationInFrames }), durationInFrames });
   const spr = () => ({ timing: springTiming({ durationInFrames, config: { damping: 200 } }), durationInFrames });
-  if (nextType === 'cta' || nextType === 'question') {
-    return { presentation: fade(), ...lin() };
+  switch (transitionName(currentType, nextType, index)) {
+    case 'slide-bottom': return {presentation:slide({direction:'from-bottom'}), ...spr()};
+    case 'slide-right': return {presentation:slide({direction:'from-right'}), ...spr()};
+    case 'wipe-left': return {presentation:wipe({direction:'from-left'}), ...spr()};
+    default: return {presentation:fade(), ...lin()};
   }
-  if (currentType === 'hook') {
-    return { presentation: slide({ direction: 'from-bottom' }), ...spr() };
-  }
-  if (currentType === 'stat' && nextType === 'chart') {
-    return { presentation: fade(), ...lin() };
-  }
-  if (currentType === 'chart') {
-    return { presentation: wipe({ direction: 'from-left' }), ...spr() };
-  }
-  // stat -> stat (and any other body-to-body): rotate variants so repeated
-  // segments don't all use the same move (fixes monotonous transitions).
-  const variants = [
-    { presentation: slide({ direction: 'from-bottom' }), ...spr() },
-    { presentation: slide({ direction: 'from-right' }), ...spr() },
-    { presentation: wipe({ direction: 'from-left' }), ...spr() },
-    { presentation: fade(), ...lin() },
-  ];
-  return variants[index % variants.length];
 }
 
 // Sum of transition frames consumed by TransitionSeries overlap. The composition
@@ -125,7 +112,8 @@ export const BlogReel: React.FC<{
   storyboard?: StoryboardPlan;
   openingHero?: {src: string};
   presentation?: PresentationPlan;
-}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard, openingHero, presentation }) => {
+  enrichment?: ProductionEnrichment;
+}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard, openingHero, presentation, enrichment }) => {
   const {fps, width, durationInFrames} = useVideoConfig();
   const hasMusic = musicTrack && !['none', 'off', 'silent'].includes(musicTrack.toLowerCase());
   return <AbsoluteFill style={{ background: BRAND.bg }}>
@@ -144,12 +132,13 @@ export const BlogReel: React.FC<{
                   <Audio src={staticFile(`audio/${script.slug}/segment-${i}.${presentation ? 'wav' : 'm4a'}`)} />
                 )}
                 {presentation?.segments[i] ? <PresentationScene shots={presentation.segments[i]} finalScene={i===script.segments.length-1} /> : <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />}
+                {enrichment && <ProductionEnrichmentLayer plan={enrichment} segmentIndex={i} />}
                 {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} maxFontSize={presentation ? 44 : 28} />}
               </AbsoluteFill>
             </TransitionSeries.Sequence>
             {transition && (
               <TransitionSeries.Transition
-                presentation={presentation ? fade() : transition.presentation}
+                presentation={transition.presentation}
                 timing={transition.timing}
               />
             )}

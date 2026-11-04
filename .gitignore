@@ -107,3 +107,6 @@ outputs/
 
 # Owner-only playbook sources and transfer manifests; never ship in client kits.
 /.private/client-playbooks/
+
+# Staged licensed sound effects are local render inputs.
+/video/public/sfx/
