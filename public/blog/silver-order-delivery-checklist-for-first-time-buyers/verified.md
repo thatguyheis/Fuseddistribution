@@ -18,6 +18,8 @@ Verify the delivery address, recipient name and any signature requirement with t
 
 For example, [JM Bullion's shipping policy](https://www.jmbullion.com/about/shipping/) states that its transit coverage ends when the carrier obtains a signature or completes delivery confirmation. That is a reason to check the specific handoff conditions, not a rule to apply automatically to every seller. Save the current policy relevant to your order and ask about any unclear instructions.
 
+[APMEX's ordering policy](https://www.apmex.com/orderingpolicy) says its responsibility may change if a buyer directs a carrier to leave a package unattended or with another recipient. Check the policy for your seller and order before making a delivery change.
+
 Do not assume that a package remains protected after it has been delivered, or that a carrier option preserves the seller's arrangements. Questions about later storage and coverage need their own answers. Plan where the items will go after you finish checking them without putting private storage details in public notes.
 
 ## Separate processing from transit
@@ -38,7 +40,7 @@ Avoid changing a delivery arrangement at the last moment without confirming its 
 
 ## Reconcile the silver order after receipt
 
-Record when and how the parcel arrived. Look for visible packaging damage and preserve relevant evidence before disposing of packing materials. In a private setting, compare the number and description of the items with the invoice and product listing. Note any missing item, unexpected substitution or visible condition issue.
+Record when and how the parcel arrived. Look for visible packaging damage and preserve relevant evidence before disposing of packing materials. [UPS's claim instructions](https://www.ups.com/us/en/support/file-a-claim) tell damage claimants to keep the contents and packaging and retain an invoice that shows value. In a private setting, compare the number and description of the items with the invoice and product listing. Note any missing item, unexpected substitution or visible condition issue.
 
 A visual check can identify an obvious mismatch, but it does not establish metal purity or authenticity. If something raises a concern, ask the seller how to proceed before attempting a destructive test or altering the item. Keep the item and its identifying packaging together while the question is open.
 
@@ -55,6 +57,12 @@ Do not mail a return using an improvised address or label. Obtain the seller's r
 When the contents match and any questions are resolved, file the invoice, receiving notes and support outcome. Record the actual amount paid in your private inventory and move the items to the storage arrangement you planned. Keep unresolved matters visibly open rather than marking the order complete because tracking says delivered.
 
 The useful result is a record of what happened: the product ordered, the receiving terms, the delivery event, the contents checked and any follow-up. That gives you a repeatable process for the next order without assuming that its seller, carrier or conditions will be identical.
+
+## Sources
+
+1. [JM Bullion: Shipping, Insurance, and Packaging](https://www.jmbullion.com/about/shipping/)
+2. [APMEX: Ordering Policy](https://www.apmex.com/orderingpolicy)
+3. [UPS: File a Claim](https://www.ups.com/us/en/support/file-a-claim)
 
 ## Related
 

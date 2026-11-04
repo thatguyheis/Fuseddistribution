@@ -1,0 +1,19 @@
+{
+  "slug": "how-to-compare-silver-shipping-and-insurance-costs",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "JM Bullion says its transit insurance ends at carrier signature or delivery confirmation.",
+      "source": "https://www.jmbullion.com/about/shipping/"
+    },
+    {
+      "claim": "APMEX says instructions to leave a parcel unattended or with another recipient can affect its responsibility.",
+      "source": "https://www.apmex.com/orderingpolicy"
+    },
+    {
+      "claim": "UPS asks damaged shipment claimants for tracking, value evidence, and the damaged contents and packaging.",
+      "source": "https://www.ups.com/us/en/support/file-a-claim"
+    }
+  ]
+}

@@ -15,8 +15,16 @@
       "claims": [
         "Dealer describes transit protection ending at signature or delivery confirmation."
       ]
+    },
+    {
+      "title": "UPS file a claim",
+      "source_url": "https://www.ups.com/us/en/support/file-a-claim",
+      "claims": [
+        "UPS asks for tracking, an invoice showing value, and damaged contents and packaging when applicable."
+      ],
+      "scope": "Carrier process example only; seller terms and precious metals coverage must be checked for the actual shipment."
     }
   ],
-  "reviewedDate": "2026-09-21",
-  "status": "draft source record; complete package awaits editorial review"
+  "reviewedDate": "2026-11-04",
+  "status": "Primary seller policies and carrier claim instructions checked; no universal coverage or current price claim."
 }

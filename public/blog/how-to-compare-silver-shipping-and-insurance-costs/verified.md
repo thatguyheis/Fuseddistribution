@@ -42,7 +42,7 @@ Do not describe an estimate as a guaranteed arrival date unless the seller expli
 
 Before paying, confirm the destination, recipient and contact details. Find the order support channel and the instructions for a missing, damaged or apparently tampered shipment. Record the applicable reporting deadline from the current seller policy. Do not assume all dealers use the same deadline.
 
-Follow the seller's instructions if there is a problem. Preserve order confirmations, tracking information and relevant packaging or photographs as directed. Describe what you actually observed and when, rather than turning a tracking status into an assumption about what happened.
+Follow the seller's instructions if there is a problem. Preserve order confirmations, tracking information and relevant packaging or photographs as directed. [UPS's claim instructions](https://www.ups.com/us/en/support/file-a-claim) ask for the tracking number, an invoice showing value, and the damaged contents and packaging when applicable. Describe what you actually observed and when, rather than turning a tracking status into an assumption about what happened.
 
 If the policy is unclear, ask a specific question before purchase: does this proposed delivery arrangement meet your terms, and what should I do if the carrier reports delivery but I cannot locate the package? Keep the answer with the comparison so it remains connected to the transaction you evaluated.
 
@@ -53,3 +53,9 @@ Your outgoing shipment may have different terms from the dealer's delivery to yo
 Likewise, delivery coverage does not establish protection for metal after you receive it. Consider storage arrangements separately and check any relevant policy directly. This comparison does not calculate storage insurance premiums or make claims about what a personal insurance contract covers.
 
 The final decision should be based on a complete order total and a receiving process you understand. Keep the quote, terms and support instructions together. A clear comparison shows both what you will pay and what you need to do when the silver arrives.
+
+## Sources
+
+1. [JM Bullion: Shipping, Insurance, and Packaging](https://www.jmbullion.com/about/shipping/)
+2. [APMEX: Ordering Policy](https://www.apmex.com/orderingpolicy)
+3. [UPS: File a Claim](https://www.ups.com/us/en/support/file-a-claim)
