@@ -19,6 +19,7 @@
     "test": "npm run test:book && npm run test:worker",
     "test:book": "node --test book-factory/tests/book-factory.test.mjs",
     "test:worker": "vitest run",
+    "client-instructions:test": "node --test services/client-instructions/tests/*.test.mjs",
     "video:parse": "node video/scripts/parse-script.mjs",
     "video:audio": "node video/scripts/generate-audio.mjs",
     "video:render": "node video/scripts/render.mjs",

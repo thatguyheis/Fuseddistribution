@@ -1,0 +1,20 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "fused-client-instructions",
+  "account_id": "904933a9a5d8c62b3b9506cb697ce080",
+  "main": "./src/worker.js",
+  "compatibility_date": "2026-11-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fused-client-instructions",
+      "database_id": "f139f6d7-0e28-4267-918d-9033e25ba041",
+      "migrations_dir": "./migrations"
+    }
+  ]
+}
