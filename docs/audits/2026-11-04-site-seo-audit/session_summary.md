@@ -16,7 +16,7 @@
 - The www custom domain needs the Cloudflare dashboard (`NICK-TODO.md` step 2).
 - Not done, waiting on decisions: /admin lock, Consent Mode v2, brand name, silver archive, fact check, deleting retired folders, blog title suffix and author name (Codex template).
 - Not done, lower priority: photos page weight, image width/height, real dateModified.
-- I kept your last name out of live schema until you confirm.
+- Full name (Nick Hughes) now used, per your answer.
 
 ## Needs review
 - `NICK-TODO.md` (start here), then `copy_drafts.md`.
