@@ -32,18 +32,22 @@ function execute(sql) {
   const file = path.join(directory, "query.sql");
   try {
     writeFileSync(file, sql, { mode: 0o600 });
-    const output = execFileSync(wrangler, [
+    execFileSync(wrangler, [
       "d1", "execute", "fused-client-instructions", "--config", "wrangler.jsonc",
       local ? "--local" : "--remote", "--file", file, "--json",
     ], { cwd: serviceRoot, encoding: "utf8", stdio: ["ignore", "pipe", "inherit"] });
-    return JSON.parse(output);
   } finally {
     rmSync(directory, { recursive: true, force: true });
   }
 }
 
-function rows(result) {
-  return Array.isArray(result) ? result.flatMap((entry) => entry.results || []) : [];
+function query(sql) {
+  const output = execFileSync(wrangler, [
+    "d1", "execute", "fused-client-instructions", "--config", "wrangler.jsonc",
+    local ? "--local" : "--remote", "--command", sql, "--json",
+  ], { cwd: serviceRoot, encoding: "utf8", stdio: ["ignore", "pipe", "inherit"] });
+  const result = JSON.parse(output);
+  return result.flatMap((entry) => entry.results || []);
 }
 
 function createClient(clientId, bundleName) {
@@ -67,11 +71,13 @@ function setPaid(clientId, paidText, actor, reason) {
   if (paidText !== "true" && paidText !== "false") fail("Paid must be true or false.");
   if (!reason || reason.length > 240 || /[\r\n\0]/.test(reason)) fail("Reason must be one line, 1 to 240 characters.");
   const paid = paidText === "true" ? 1 : 0;
-  const result = execute(`UPDATE clients SET paid = ${paid}, status_actor = ${sqlString(actor)},
+  execute(`UPDATE clients SET paid = ${paid}, status_actor = ${sqlString(actor)},
     status_reason = ${sqlString(reason)}, status_changed_at = strftime('%Y-%m-%dT%H:%M:%SZ', 'now')
-    WHERE id = ${sqlString(clientId)} RETURNING id, paid, status_changed_at;`);
-  if (rows(result).length !== 1) fail(`Client ${clientId} was not found.`);
-  console.log(`Client ${clientId}: paid=${paidText}. Audit trigger recorded the change.`);
+    WHERE id = ${sqlString(clientId)};`);
+  const result = query(`SELECT id, paid FROM clients WHERE id = ${sqlString(clientId)};`);
+  if (result.length !== 1) fail(`Client ${clientId} was not found.`);
+  if (result[0].paid !== paid) fail(`Client ${clientId} did not reach the requested state.`);
+  console.log(`Client ${clientId}: paid=${paidText}. Paid transitions are audited.`);
 }
 
 function putBundle(bundleName, version, sourcePath) {

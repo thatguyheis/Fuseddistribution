@@ -49,6 +49,23 @@ function request(method = "GET", bearer = token) {
   });
 }
 
+function mcpRequest(method, bearer = token, id = 1) {
+  return new Request("https://instructions.example.test/mcp", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${bearer}`,
+      "Content-Type": "application/json",
+      "Accept": "application/json, text/event-stream",
+      "MCP-Protocol-Version": "2025-11-25",
+    },
+    body: JSON.stringify({ jsonrpc: "2.0", id, method, params: method === "tools/call" ? {
+      name: "get_reel_instructions", arguments: {},
+    } : method === "initialize" ? {
+      protocolVersion: "2025-11-25", capabilities: {}, clientInfo: { name: "test", version: "1" },
+    } : {} }),
+  });
+}
+
 test("serves only the mapped bundle to a paid client", async () => {
   const { env, calls } = fixture();
   const response = await worker.fetch(request(), env);
@@ -108,4 +125,26 @@ test("HEAD authorizes but returns no body and other methods are rejected", async
   assert.equal(response.status, 200);
   assert.equal(await response.text(), "");
   assert.equal((await worker.fetch(request("POST"), fixture().env)).status, 405);
+});
+
+test("MCP tool returns instructions only while access is paid", async () => {
+  const paid = fixture();
+  const initialized = await worker.fetch(mcpRequest("initialize"), paid.env);
+  assert.equal(initialized.status, 200);
+  assert.match(await initialized.text(), /fused-client-instructions/);
+
+  const listed = await worker.fetch(mcpRequest("tools/list"), paid.env);
+  assert.equal(listed.status, 200);
+  assert.match(await listed.text(), /get_reel_instructions/);
+
+  const called = await worker.fetch(mcpRequest("tools/call"), paid.env);
+  assert.equal(called.status, 200);
+  assert.match(await called.text(), /Pilot reel rules/);
+  assert.equal(called.headers.get("Cache-Control"), "private, no-store");
+
+  const unpaid = fixture({ client: { id: "pilot-client", paid: 0, access_until: null, bundle_name: "reel-core" } });
+  const denied = await worker.fetch(mcpRequest("tools/call"), unpaid.env);
+  assert.equal(denied.status, 403);
+  assert.doesNotMatch(await denied.text(), /Pilot reel rules/);
+  assert.equal(unpaid.calls.length, 1);
 });
