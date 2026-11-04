@@ -1,0 +1,13 @@
+{
+  "showPending": false,
+  "primaryVideo": {
+    "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/verify-a-buffer-post-after-scheduling-it/verify-a-buffer-post-after-scheduling-it.mp4",
+    "source": "verified Buffer-safe hosted MP4",
+    "verified": true,
+    "verifiedAt": "2026-11-04T19:11:57.871576+00:00",
+    "durationSeconds": 118.955,
+    "bytes": 4522938,
+    "sha256": "095a2ae9927eb2a78030b57e60f1b6f8d3fcf52f47ab8605c5b19c11b54d4e44"
+  },
+  "platforms": {}
+}
