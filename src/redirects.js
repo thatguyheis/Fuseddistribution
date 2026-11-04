@@ -42,4 +42,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-store-silver-at-home-safely", "/blog/silver-storage-vault-vs-home-storage/"],
   ["/blog/silver-premiums-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
   ["/blog/silver-premium-over-spot-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  // Retired 2026-11-04: unsupported industrial and financial claims, incorrect coin math, or invented service terms.
+  ["/blog/silver-industrial-uses-explained-for-investors", "/reserve/"],
+  ["/blog/selling-junk-silver-coins-where-and-how", "/blog/how-to-compare-silver-buyback-quotes-fairly/"],
+  ["/blog/silver-reserve-plan-what-it-is-and-how-it-works", "/reserve/"],
+  ["/blog/best-silver-storage-options-for-investors", "/blog/silver-storage-vault-vs-home-storage/"],
 ]);

@@ -129,6 +129,17 @@ describe("SEO routing and head tags", () => {
     expect(response.headers.get("location")).toBe(`${ORIGIN}${destination}`);
   });
 
+  it.each([
+    ["/blog/silver-industrial-uses-explained-for-investors/", "/reserve/"],
+    ["/blog/selling-junk-silver-coins-where-and-how/", "/blog/how-to-compare-silver-buyback-quotes-fairly/"],
+    ["/blog/silver-reserve-plan-what-it-is-and-how-it-works/", "/reserve/"],
+    ["/blog/best-silver-storage-options-for-investors/", "/blog/silver-storage-vault-vs-home-storage/"],
+  ])("routes unsupported silver claims to a reviewed page: %s", async (path, destination) => {
+    const response = await SELF.fetch(`${ORIGIN}${path}`, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(`${ORIGIN}${destination}`);
+  });
+
   it("redirects the orphaned folder page to the projects overview", async () => {
     const response = await SELF.fetch(`${ORIGIN}/Fused%20Technology%20Solutions/`, { redirect: "manual" });
     expect(response.status).toBe(301);
