@@ -59,7 +59,15 @@ Loss treatment also depends on use. A loss on personal-use property is generally
 9. Reconcile gross proceeds, fees, and net payment to the item IDs.
 10. Give the complete file to the executor and tax professional before filing.
 
-The IRS discusses inherited basis in [Publication 551](https://www.irs.gov/publications/p551), estate administration in [Publication 559](https://www.irs.gov/publications/p559), and sale reporting in its [capital gains and losses guidance](https://www.irs.gov/taxtopics/tc409). The IRS also explains the tax treatment of [gifts and inheritances](https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances). Read current instructions with the estate professional because the correct answer depends on ownership, valuation, use, and records.
+Read current IRS instructions with the estate professional because the correct answer depends on ownership, valuation, use, and records.
+
+## Sources
+
+- [IRS Publication 551: Basis of Assets](https://www.irs.gov/publications/p551)
+- [IRS Publication 559: Survivors, Executors, and Administrators](https://www.irs.gov/publications/p559)
+- [IRS Publication 550: Investment Income and Expenses](https://www.irs.gov/publications/p550)
+- [IRS Schedule D instructions: collectibles gains](https://www.irs.gov/instructions/i1040sd)
+- [U.S. Mint: coin specifications](https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications)
 
 ## Related
 

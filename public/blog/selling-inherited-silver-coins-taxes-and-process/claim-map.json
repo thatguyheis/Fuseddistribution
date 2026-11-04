@@ -1,0 +1,27 @@
+{
+  "slug": "selling-inherited-silver-coins-taxes-and-process",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "Inherited property basis is generally fair market value at death, with an alternate valuation date possible in qualifying estates.",
+      "source": "https://www.irs.gov/publications/p551"
+    },
+    {
+      "claim": "The estate's personal representative is responsible for estate administration and related records.",
+      "source": "https://www.irs.gov/publications/p559"
+    },
+    {
+      "claim": "Gain or loss on sale of inherited capital property is treated as long term regardless of the recipient's actual holding period.",
+      "source": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "claim": "Silver bullion and coins can be collectibles for Schedule D rate calculation; the 28 percent rate is a maximum, not a universal flat tax.",
+      "source": "https://www.irs.gov/instructions/i1040sd"
+    },
+    {
+      "claim": "U.S. Mint coin specifications provide date, denomination, weight, and composition clues for circulating coins.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications"
+    }
+  ]
+}
