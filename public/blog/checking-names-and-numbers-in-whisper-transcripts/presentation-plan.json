@@ -1,76 +1,91 @@
 {
   "version": 1,
-  "source": "fused-original-vector-graphics",
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
   "segments": [
     [
       {
         "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-0.jpg",
-        "sha256": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-0-scene-0.jpg",
+        "sha256": "220552c7f75733a0bfe9755150a72fd1bae163cc11d8b377204470f618e2b90c",
         "weight": 1,
-        "title": "Can you trust every",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
+        "title": "Can you trust every Whisper transcript?",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-1.jpg",
-        "sha256": "712ba4102a4e64a5aa008ab87fee7fcec5f569a82b8e1838a0bf2501d84687a7",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-1-scene-1.jpg",
+        "sha256": "4e6d953a939051d8dac9db33d42e3ea0722d06c6e3b519ea24bb840a0a6d8bc9",
         "weight": 1,
-        "title": "REPLAY THE INPUT",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
+        "title": "Replay names and numbers",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-2-scene-2.jpg",
+        "sha256": "801d665849d714d6e3939b32395c4ce9334105bce42d97cf0c0484724a456648",
+        "weight": 1,
+        "title": "Local versus hosted transcription",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-2.jpg",
-        "sha256": "2a214cf0140f3300b9c4f40fc39da0a30769320b45d7bf331a8758c1be9c404f",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-3-scene-3.jpg",
+        "sha256": "0a024d7361aa924be2403e9ee572bdd046c1b687b3794b5a2604320c451ab83e",
         "weight": 1,
-        "title": "KNOW THE RUNTIME",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
+        "title": "Correct text, keep timing",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-3.jpg",
-        "sha256": "0fb79760f406f95d3d7db428a0ecdeb7d1a3f14f852becf97a253ab75ef05a6d",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-4-scene-4.jpg",
+        "sha256": "92519e6595344cdc4de10fb1444e0b96e968380628cd9c81dd409a03664d5541",
         "weight": 1,
-        "title": "KEEP THE TIMING",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
+        "title": "Reject invented endings",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-4.jpg",
-        "sha256": "75b8ed9608f1d11c2d88e402acaadc3aba776d7dacb5f3de05b93f77877eb655",
+        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-5-scene-5.jpg",
+        "sha256": "272994b090b1d2c8dff20a1d6ed47eedc0f158e6c6d4fd8da225acf3c310ad48",
         "weight": 1,
-        "title": "CHECK THE ENDING",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/checking-names-and-numbers-in-whisper-transcripts/images/scene-5.jpg",
-        "sha256": "87bdfd1ba54fdd933f6bb2a61b1b4309575da82c135bfdf818f1fcb51628563e",
-        "weight": 1,
-        "title": "ONE QUESTION",
-        "eyebrow": "WHISPER TRANSCRIPT REVIEW",
-        "credit": "Fused original teaching graphic",
+        "title": "Which caption detail do you check first?",
+        "eyebrow": "WHISPER TRANSCRIPT CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ]

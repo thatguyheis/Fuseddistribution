@@ -113,10 +113,12 @@ export const BlogReel: React.FC<{
   openingHero?: {src: string};
   presentation?: PresentationPlan;
   enrichment?: ProductionEnrichment;
-}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard, openingHero, presentation, enrichment }) => {
+  presentationProfile?: string;
+}> = ({ script, musicTrack = 'none', musicGain = 0, media = {}, captions = {}, storyboard, openingHero, presentation, enrichment, presentationProfile }) => {
   const {fps, width, durationInFrames} = useVideoConfig();
   const hasMusic = musicTrack && !['none', 'off', 'silent'].includes(musicTrack.toLowerCase());
-  return <AbsoluteFill style={{ background: BRAND.bg }}>
+  const businessProfile = presentationProfile === 'business-growth-v1';
+  return <AbsoluteFill style={{ background: businessProfile ? '#0A1A2A' : BRAND.bg }}>
     {hasMusic && <Audio src={staticFile(`music/${musicTrack}`)} volume={frame => presentation ? musicGain * Math.min(1, frame / fps, (durationInFrames - frame) / (fps * 1.5)) : musicGain} loop />}
     <div style={{ position: 'relative', flexShrink: 0, width: BRAND.width, height: BRAND.height, transform: `scale(${width / BRAND.width})`, transformOrigin: 'top left' }}>
       <TransitionSeries>
@@ -131,9 +133,9 @@ export const BlogReel: React.FC<{
                 {segment.narration && (
                   <Audio src={staticFile(`audio/${script.slug}/segment-${i}.${presentation ? 'wav' : 'm4a'}`)} />
                 )}
-                {presentation?.segments[i] ? <PresentationScene shots={presentation.segments[i]} finalScene={i===script.segments.length-1} /> : <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />}
-                {enrichment && <ProductionEnrichmentLayer plan={enrichment} segmentIndex={i} />}
-                {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} maxFontSize={presentation ? 44 : 28} />}
+                {presentation?.segments[i] ? <PresentationScene shots={presentation.segments[i]} finalScene={i===script.segments.length-1} presentationProfile={presentationProfile} openingScene={i===0} /> : <SegmentCard segment={segment} mediaEntry={media[i]} segmentIndex={i} storyboard={storyboard} />}
+                {enrichment && <ProductionEnrichmentLayer plan={enrichment} segmentIndex={i} presentationProfile={presentationProfile} />}
+                {segment.narration && <Subtitle narration={segment.narration} captions={captions[i]} maxFontSize={presentation ? businessProfile ? 36 : 44 : 28} presentationProfile={presentationProfile} />}
               </AbsoluteFill>
             </TransitionSeries.Sequence>
             {transition && (
@@ -147,6 +149,6 @@ export const BlogReel: React.FC<{
       })}
       </TransitionSeries>
     </div>
-    {openingHero && <OpeningHero src={openingHero.src} />}
+    {openingHero && <OpeningHero src={openingHero.src} presentationProfile={presentationProfile} />}
   </AbsoluteFill>;
 };

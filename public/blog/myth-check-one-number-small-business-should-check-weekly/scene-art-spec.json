@@ -1,0 +1,112 @@
+{
+  "slug": "myth-check-one-number-small-business-should-check-weekly",
+  "scenes": [
+    {
+      "id": "scene-0",
+      "kind": "hook",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "Does the lowest acquisition cost win?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COST NEEDS CONTEXT",
+        "items": [
+          {
+            "label": "Scope",
+            "value": "Match costs and dates"
+          },
+          {
+            "label": "Value",
+            "value": "Check contribution"
+          },
+          {
+            "label": "Evidence",
+            "value": "Check sample size"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-1",
+      "kind": "body",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "CAC is only one view",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COMPARE BOTH VIEWS",
+        "items": [
+          {
+            "label": "CAC",
+            "value": "Cost per new customer"
+          },
+          {
+            "label": "Contribution",
+            "value": "Value after costs"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-2",
+      "kind": "body",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "Keep scope and dates equal",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "USE MATCHING INPUTS",
+        "items": [
+          {
+            "label": "Cost scope",
+            "value": "Same included costs"
+          },
+          {
+            "label": "Time window",
+            "value": "Same cohort dates"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-3",
+      "kind": "body",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "Fictional arithmetic only",
+      "reservedGraphic": true
+    },
+    {
+      "id": "scene-4",
+      "kind": "body",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "Check conversion quality and sample",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "CHECK BEFORE DECIDING",
+        "items": [
+          {
+            "label": "Conversion",
+            "value": "Check paying buyers"
+          },
+          {
+            "label": "Sample",
+            "value": "Allow enough time"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-5",
+      "kind": "cta",
+      "eyebrow": "ACQUISITION COST CHECK",
+      "headline": "What do you compare with CAC?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COMMENT BELOW",
+        "items": [
+          {
+            "label": "Your turn",
+            "value": "Name one comparison"
+          }
+        ]
+      }
+    }
+  ]
+}

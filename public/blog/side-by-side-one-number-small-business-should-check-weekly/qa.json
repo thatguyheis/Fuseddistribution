@@ -5,10 +5,11 @@
   "pass": true,
   "blockers": [],
   "reviewer": "Codex",
-  "reviewed_at": "2026-11-04T18:09:03.369Z",
+  "reviewed_at": "2026-11-05T18:08:56.553958+00:00",
   "review_notes": [
     "Read the full article and spoken script, verified the fictional 600/30=20 and 600/6=100 examples, and made marketing-only cost scope explicit so the worksheet is not presented as fully loaded CAC.",
-    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending."
+    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending.",
+    "Facebook owner feedback integrated: reviewed new business-growth-v1 source art, 1080 profile, central large type, platform UI clearances and reserved graphics. Local blog QA passed. Narration unchanged; full encoded QA and publication remain pending."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -18,16 +19,18 @@
   },
   "artifactSha256": {
     "verified.md": "84e40be5ba0f38f258b2bb0230f448162c078a4c7a5f6b2c1684d8587e4c3783",
-    "index.html": "4a2cd4d26381885e7ddcacb108a75a06f79fa97f12569b63085464e183cdf324",
+    "index.html": "492a79c1e76142ab9d19f1b6d11c77bd6d2e5d94da4688db31eb255557825395",
     "meta.json": "f48f23099bf5b814add506eb21c5efd18a6119c027dfe4d23d934bb10f3016cd",
     "research.json": "2fe54f187699026d653da491ac8197a93cb5c759569aeac8daf0287591841230",
-    "hero.jpg": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
-    "photo-post.jpg": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
+    "hero.jpg": "6a677bd3e12966b2ea166b7f81f4771aaee5de42dbdb79069b0eb6db5c8970bb",
+    "photo-post.jpg": "6a677bd3e12966b2ea166b7f81f4771aaee5de42dbdb79069b0eb6db5c8970bb",
     "reel-script.md": "403b841f57c3313bb70ba4446a443b4a18da26d7cdcdd48cce6cc353e51f8946",
     "reel-data.md": "11c5354252749b3af6e8bc2c0fac38b364bf7abea0ab9c190053c1f946eeec5c",
     "social-copy.json": "2a9d1903d1577867178b462ed77158181f2136607d60068e91db511cc8520ba6",
-    "attention-review.json": "18388e9eed8f3f0f52e27db56a261d358a9afdf9441193b7e62419ba9d0ac868",
-    "presentation-plan.json": "c5d30b72c31c0b372c1ac9f3c9375f07d0a2645347da46e9117db5b4970c8f6d",
-    "enrichment-plan.json": "4ce834663fffa149e485c28fc99340ee256665734fdf4764f03ba49edb2348cd"
+    "attention-review.json": "48d4f3962212368525bb995a351632aa4207e6966fb82cc3a28977173d6ce9af",
+    "presentation-plan.json": "ff8832c5aff407b4670df6803ccef77c07d814e87dfa56ba4957547c53826c83",
+    "enrichment-plan.json": "4ce834663fffa149e485c28fc99340ee256665734fdf4764f03ba49edb2348cd",
+    "scene-art-spec.json": "ec1a550c77c5b1455d9688f9c0836b492e030766f81bb5c586c1f33f8697be20",
+    "artwork-qa.json": "60dc7d52cd0a55b836da5ca1abafc187543cd407b59f3e01127a1da8c1836bb9"
   }
 }

@@ -5,10 +5,11 @@
   "pass": true,
   "blockers": [],
   "reviewer": "Codex",
-  "reviewed_at": "2026-11-04T18:00:29.407Z",
+  "reviewed_at": "2026-11-05T18:08:56.550467+00:00",
   "review_notes": [
     "Read the full article and reel script, checked local runtime claims against source files, preserved distinction between local and hosted processing, and labeled the synthetic example.",
-    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending."
+    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending.",
+    "Facebook owner feedback integrated: reviewed new business-growth-v1 source art, 1080 profile, central large type, platform UI clearances and reserved graphics. Local blog QA passed. Narration unchanged; full encoded QA and publication remain pending."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -18,16 +19,18 @@
   },
   "artifactSha256": {
     "verified.md": "004e985564320d46197d4f498de1d00e9ea117a5241826f71bb724b539a690ee",
-    "index.html": "43a831bb0653da47fd2d22025905a4a58c2bfafd941ea9d4c022cf46cea2fee8",
+    "index.html": "a18d59d39dc4ff74b1bba9529966249dbbda5dc1f83b9341d6df24bcf9201a1f",
     "meta.json": "5e8f04e413527c9b611dc951cc192f782a76beb712aa558be81afd32d611f8cb",
     "research.json": "a9f0b7b37f987728bc8fcd9be34ad0bb2085468198d7b6cb6780a2ec363782ab",
-    "hero.jpg": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
-    "photo-post.jpg": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
+    "hero.jpg": "220552c7f75733a0bfe9755150a72fd1bae163cc11d8b377204470f618e2b90c",
+    "photo-post.jpg": "220552c7f75733a0bfe9755150a72fd1bae163cc11d8b377204470f618e2b90c",
     "reel-script.md": "49dae61e3dd2700e1bc939ea7a400692b97fcce0f00c53365695aa4a1a7e0138",
     "reel-data.md": "9255841c304839d1fb7d785b63e35f295cd008ed3a24bbf48b9f819f3ba7e91b",
     "social-copy.json": "e1ad59d42ff844c525c19af22ffb8a73bd19e313c8f3d4dbd52255b5ccb120c8",
-    "attention-review.json": "1d2cadf860ec0400b2bda585227eec9aa88d72644ec9dc4436330bb04fff31da",
-    "presentation-plan.json": "2c56de8ae7f881b42402b2ea317ac7e70d008911b14159e188d9c036910ccbf0",
-    "enrichment-plan.json": "2d5145577cd7e48c35566199b966205446be8fe48b7141828cd3d40cd8e86841"
+    "attention-review.json": "2af0c2daa4ff074fc35873b6e2568e0f40ec55eda4dc9c221bdfdb78b21d4216",
+    "presentation-plan.json": "1b0a4c68811bd006287bb0c7fad8dd72866f5bc7de8613f24e3cc6e61634949b",
+    "enrichment-plan.json": "2d5145577cd7e48c35566199b966205446be8fe48b7141828cd3d40cd8e86841",
+    "scene-art-spec.json": "fd986321c0b38900fa1011a155fe5356e76ff3e56662413d919e47766cb55f5f",
+    "artwork-qa.json": "c5eca19e97caee8e7b2d8673cd8694016b0b4c04db24a7897ebc3b17da440852"
   }
 }

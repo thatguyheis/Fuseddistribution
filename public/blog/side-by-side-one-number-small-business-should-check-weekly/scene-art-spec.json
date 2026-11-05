@@ -1,0 +1,112 @@
+{
+  "slug": "side-by-side-one-number-small-business-should-check-weekly",
+  "scenes": [
+    {
+      "id": "scene-0",
+      "kind": "hook",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Are your leads becoming paying customers?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COMPARE THE SAME COHORT",
+        "items": [
+          {
+            "label": "CPL",
+            "value": "Spend divided by leads"
+          },
+          {
+            "label": "Acquisition",
+            "value": "Spend divided by buyers"
+          },
+          {
+            "label": "Scope",
+            "value": "Marketing costs only"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-1",
+      "kind": "body",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Two different denominators",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "TWO DIFFERENT COUNTS",
+        "items": [
+          {
+            "label": "Lead",
+            "value": "A potential customer"
+          },
+          {
+            "label": "Buyer",
+            "value": "A paying customer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-2",
+      "kind": "body",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Fictional arithmetic",
+      "reservedGraphic": true
+    },
+    {
+      "id": "scene-3",
+      "kind": "body",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Match dates and cost scope",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "KEEP THE SCOPE CLEAR",
+        "items": [
+          {
+            "label": "Dates",
+            "value": "Match the cohort"
+          },
+          {
+            "label": "Costs",
+            "value": "Use the same spend"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-4",
+      "kind": "body",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Check conversion labels",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "VERIFY THE CONVERSION",
+        "items": [
+          {
+            "label": "Label",
+            "value": "Read what it counts"
+          },
+          {
+            "label": "Buyer",
+            "value": "Confirm payment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-5",
+      "kind": "cta",
+      "eyebrow": "LEADS VERSUS CUSTOMERS",
+      "headline": "Which denominator is harder to define?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COMMENT BELOW",
+        "items": [
+          {
+            "label": "Your turn",
+            "value": "Choose a denominator"
+          }
+        ]
+      }
+    }
+  ]
+}

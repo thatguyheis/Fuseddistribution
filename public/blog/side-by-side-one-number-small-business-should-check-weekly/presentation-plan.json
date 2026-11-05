@@ -1,76 +1,91 @@
 {
   "version": 1,
-  "source": "fused-original-vector-graphics",
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
   "segments": [
     [
       {
         "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-0.jpg",
-        "sha256": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-0-scene-0.jpg",
+        "sha256": "6a677bd3e12966b2ea166b7f81f4771aaee5de42dbdb79069b0eb6db5c8970bb",
         "weight": 1,
-        "title": "Are your leads becoming",
+        "title": "Are your leads becoming paying customers?",
         "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-1.jpg",
-        "sha256": "7bf525695c1de6173ae419a1267938ee41f3dccc454225b1e9e15bec5d539301",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-1-scene-1.jpg",
+        "sha256": "83bdfe0730bb1bfcce4a001b35f0ae100a49040265c1e76602ce579e9126a2f2",
         "weight": 1,
-        "title": "NAME THE OUTCOME",
+        "title": "Two different denominators",
         "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-2.jpg",
-        "sha256": "4cdadb640faa49ad6b70e1fc509622014aa9129fd569e76f0d95bcd69326a7e8",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-2-scene-2.jpg",
+        "sha256": "b9aa9a41668011bac7c0db242e1ca3f4696afb6aa02cc2a41c027b12365ab7ea",
         "weight": 1,
-        "title": "FICTIONAL WORKSHEET",
+        "title": "Fictional arithmetic",
         "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-3-scene-3.jpg",
+        "sha256": "9d8eb64bd0cab4dd5a88cd9bb0d557163a4b339330ef4a8c15c19dc18bfdd1e6",
+        "weight": 1,
+        "title": "Match dates and cost scope",
+        "eyebrow": "LEADS VERSUS CUSTOMERS",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-3.jpg",
-        "sha256": "cbd4a34372e47a0ea0bd14e8f093cc5fab0b0760d6e988f118f04be290e325e7",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-4-scene-4.jpg",
+        "sha256": "c9ad3f4c5be8770e134800ac3331ebb1842a07863ea695d3b256e9dd010ba843",
         "weight": 1,
-        "title": "MATCH COSTS AND DATES",
+        "title": "Check conversion labels",
         "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-4.jpg",
-        "sha256": "dcacba3d2e861a62cce12ff5fdee6e264152b6aed45ad8bc8b46c616b6b82a9c",
+        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-5-scene-5.jpg",
+        "sha256": "e11f512de1bf4d5ab17d6b14fb8cc696ded4c6fc1f400482b214c7aafc4e8325",
         "weight": 1,
-        "title": "REVIEW THE FULL PATH",
+        "title": "Which denominator is harder to define?",
         "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/side-by-side-one-number-small-business-should-check-weekly/images/scene-5.jpg",
-        "sha256": "e9b229d6b60aabc16125b8d576918a35bff6e407adbff3ff6d6a52b65b274d74",
-        "weight": 1,
-        "title": "ONE QUESTION",
-        "eyebrow": "LEADS VERSUS CUSTOMERS",
-        "credit": "Fused original teaching graphic",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
         "fullFrame": true
       }
     ]

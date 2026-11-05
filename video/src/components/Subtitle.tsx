@@ -29,9 +29,38 @@ function splitSentences(text: string): string[] {
   return out.filter(Boolean);
 }
 
-export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[]; maxFontSize?: number }> = ({ narration, captions, maxFontSize = 28 }) => {
+function captionWidthUnits(text: string): number {
+  return [...text].reduce((width, character) => {
+    if (/[MW@%&]/.test(character)) return width + 0.9;
+    if (/[A-Z0-9]/.test(character)) return width + 0.68;
+    if (/[il1.,'!:;]/.test(character)) return width + 0.3;
+    if (/\s/.test(character)) return width + 0.32;
+    if (/[mw]/.test(character)) return width + 0.75;
+    return width + 0.54;
+  }, 0);
+}
+
+function splitBusinessCaption(text: string): [string, string] | null {
+  const words = text.trim().split(/\s+/);
+  if (words.length < 2 || text.length > 80) return null;
+  let best: [string, string] | null = null;
+  let smallestWidestLine = Number.POSITIVE_INFINITY;
+  for (let split = 1; split < words.length; split += 1) {
+    const first = words.slice(0, split).join(' ');
+    const second = words.slice(split).join(' ');
+    const widestLine = Math.max(captionWidthUnits(first), captionWidthUnits(second));
+    if (widestLine < smallestWidestLine) {
+      smallestWidestLine = widestLine;
+      best = [first, second];
+    }
+  }
+  return best;
+}
+
+export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[]; maxFontSize?: number; presentationProfile?: string }> = ({ narration, captions, maxFontSize = 28, presentationProfile }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
+  const businessProfile = presentationProfile === 'business-growth-v1';
 
   let sentence: string;
   let opacity: number;
@@ -86,32 +115,41 @@ export const Subtitle: React.FC<{ narration: string; captions?: CaptionChunk[]; 
       : 1;
   }
 
+  const balancedBusinessCaption = businessProfile ? splitBusinessCaption(sentence) : null;
+  const businessCaptionSize = balancedBusinessCaption
+    ? Math.min(maxFontSize, Math.floor((780 - 48) / (Math.max(...balancedBusinessCaption.map(captionWidthUnits)) * 1.1)))
+    : maxFontSize;
+
   return (
     <div style={{
       position: 'absolute',
-      bottom: 120,
-      left: 40,
-      right: 40,
+      bottom: businessProfile ? 300 : 120,
+      left: businessProfile ? 150 : 40,
+      right: businessProfile ? 150 : 40,
       opacity,
       textAlign: 'center',
     }}>
-      <FittedText
-        text={sentence}
-        fontFamily={POPPINS}
-        fontWeight={600}
-        maxFontSize={maxFontSize}
-        maxLines={3}
-        maxWidth={920}
-        lineHeight={1.5}
-        color={BRAND.white}
-        textShadow="0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)"
-        style={{
-          background: 'rgba(4,16,24,0.6)',
-          padding: '10px 24px',
-          borderRadius: 10,
-          display: 'inline-block',
-        }}
-      />
+      {balancedBusinessCaption
+        ? <div style={{width: 780, fontFamily: POPPINS, fontSize: businessCaptionSize, fontWeight: 600, lineHeight: 1.5, color: BRAND.white, textShadow: '0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)', whiteSpace: 'nowrap', background: 'rgba(4,16,24,0.6)', padding: '10px 24px', borderRadius: 10, display: 'inline-block'}}>
+          <span>{balancedBusinessCaption[0]}</span><br/><span>{balancedBusinessCaption[1]}</span>
+        </div>
+        : <FittedText
+          text={sentence}
+          fontFamily={POPPINS}
+          fontWeight={600}
+          maxFontSize={maxFontSize}
+          maxLines={businessProfile ? 3 : 3}
+          maxWidth={businessProfile ? 780 : 920}
+          lineHeight={1.5}
+          color={BRAND.white}
+          textShadow="0 2px 8px rgba(0,0,0,0.95), 0 0 24px rgba(0,0,0,0.8)"
+          style={{
+            background: 'rgba(4,16,24,0.6)',
+            padding: '10px 24px',
+            borderRadius: 10,
+            display: 'inline-block',
+          }}
+        />}
     </div>
   );
 };

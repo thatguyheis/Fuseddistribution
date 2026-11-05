@@ -21,6 +21,7 @@ import { musicMixForTrack } from './music-mix.mjs';
 import { loadOrBuildProductionStoryboard } from './production-storyboard.mjs';
 import { applyCaptionCorrections } from './lib/caption-corrections.mjs';
 import { fitUploadSize } from './fit-upload-size.mjs';
+import { presentationOutputProfile } from './presentation-output-profile.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const videoDir = join(__dirname, '..');
@@ -128,6 +129,8 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const enrichment = prepareEnrichment(join(videoDir, '..'), slug, script.segments.length);
 
   const presentationPackage = process.argv.includes('--quality=presentation') ? stagePresentation(join(videoDir,'..'),slug,script.segments.length) : null;
+  const outputProfile = presentationOutputProfile(presentationPackage);
+  const presentationProfile = outputProfile.profile;
 
   // Gate every entry point, including manual/one-shot renders. Fully cached
   // narration can still be used while the synthesis runtime is held.
@@ -233,12 +236,12 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const outFileName = reelN ? `${slug}-reel${reelN}.mp4` : `${slug}.mp4`;
   const outFile = join(outDir, outFileName);
   const propsFile = join(outDir, 'render-props.json');
-  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions, storyboard, openingHero, presentation: presentationPackage?.presentation, enrichment }));
+  writeFileSync(propsFile, JSON.stringify({ script, musicTrack, musicGain: musicMix.gain, media, captions, storyboard, openingHero, presentation: presentationPackage?.presentation, presentationProfile, enrichment }));
   writeFileSync(join(outDir, 'storyboard.json'), `${JSON.stringify(storyboard, null, 2)}\n`);
   if (process.argv.includes('--prepare-only')) { console.log('Prepared narration, captions and render props for review.'); return; }
-  const qualityFlags = presentationPackage ? ' --image-format=png --crf=20 --x264-preset=slow --audio-bitrate=192k --pixel-format=yuv420p' : '';
-  run(`npx remotion render src/Root.tsx BlogReel --concurrency=1 --props="${propsFile}" "${outFile}"${qualityFlags}`);
-  if (statSync(outFile).size >= 45_000_000) {
+  const qualityFlags = outputProfile.highQualityFlags ? ' --image-format=png --crf=20 --x264-preset=slow --audio-bitrate=192k --pixel-format=yuv420p' : '';
+  run(`npx remotion render src/Root.tsx ${outputProfile.compositionId} --concurrency=1 --props="${propsFile}" "${outFile}"${qualityFlags}`);
+  if (statSync(outFile).size >= outputProfile.sizeFitThreshold) {
     console.log('\n→ fitting rendered MP4 to the upload budget');
     const fit = fitUploadSize({input: outFile});
     console.log(`Size fit: ${fit.sourceBytes} → ${fit.outputBytes} bytes; original preserved at ${fit.preservedOriginal}`);
@@ -252,6 +255,13 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   if (!Number.isFinite(renderedDuration) || renderedDuration <= 0) {
     throw new Error(`Rendered MP4 has invalid duration: ${renderedDuration}`);
   }
+  const renderedDimensions = execSync(
+    `ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "${outFile}"`,
+    {encoding: 'utf8'},
+  ).trim();
+  if (renderedDimensions !== `${outputProfile.outputDimensions.width}x${outputProfile.outputDimensions.height}`) {
+    throw new Error(`Rendered MP4 dimensions ${renderedDimensions || 'unknown'} do not match selected profile ${outputProfile.outputDimensions.width}x${outputProfile.outputDimensions.height}`);
+  }
   if (Math.abs(renderedDuration - expectedDuration) > 1) {
     throw new Error(`Rendered duration ${renderedDuration.toFixed(2)}s does not match expected ${expectedDuration.toFixed(2)}s`);
   }
@@ -262,7 +272,9 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     enrichmentPlanSha256: enrichment.sha256,
     enrichmentSummary: {graphics: enrichment.graphics.length, soundCues: enrichment.soundEffects.length, transitions: script.segments.slice(0,-1).map((segment,index)=>transitionName(segment.type,script.segments[index+1].type,index))},
     presentationPlanSha256: presentationPackage?.planSha256,
-    qualityProfile: presentationPackage ? 'presentation-720p-crf20-slow' : 'standard',
+    qualityProfile: outputProfile.qualityProfile,
+    presentationProfile,
+    outputDimensions: outputProfile.outputDimensions,
     presentationAudio,
     productionMeasurement: {
       wallSeconds: (performance.now() - startedAt) / 1000,

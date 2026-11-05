@@ -7,6 +7,12 @@ export function stagePresentation(root,slug,segmentCount){
  const qa=JSON.parse(readFileSync(join(dir,'qa.json')));
  if(qa.artifactSha256?.['presentation-plan.json']!==hash(bytes))throw Error('Presentation plan needs current editorial approval');
  const plan=JSON.parse(bytes),media={},segments={},manifest={};
+ if(plan.profile!==undefined&&!['business-growth-v1'].includes(plan.profile))throw Error(`Unsupported presentation profile: ${plan.profile}`);
+ if(plan.profile==='business-growth-v1'){
+  if(existsSync(join(root,'content/coin-history',slug)))throw Error('Business growth presentation profile cannot be used for coin history');
+  const safeZones=plan.safeZones;
+  if(safeZones?.width!==1080||safeZones?.height!==1920||safeZones?.captionBottomClearancePx!==250||safeZones?.socialUiRightClearancePx!==150)throw Error('Business growth presentation plan must declare 1080x1920 output with 250px caption and 150px social UI clearances');
+ }
  const allowed=[realpathSync(dir)+sep,...(existsSync(join(root,'content/coin-history',slug))?[realpathSync(join(root,'content/coin-history',slug))+sep]:[])],dest=join(root,'video/public/presentations',slug);mkdirSync(dest,{recursive:true});
  if(plan.segments.length!==segmentCount)throw Error('Presentation must cover every narration segment');
  for(const [index,shots]of plan.segments.entries()){
@@ -21,5 +27,5 @@ export function stagePresentation(root,slug,segmentCount){
   const first=segments[index][0];media[index]={type:first.type,src:first.src,source:'reviewed-presentation'};manifest[index]={source:'reviewed-presentation',shots};
  }
  const out=join(root,'video/out',slug);mkdirSync(out,{recursive:true});writeFileSync(join(out,'media-manifest.json'),JSON.stringify({slug,source:'reviewed-presentation',segments:manifest},null,2));
- return {presentation:{segments},media,planSha256:hash(bytes)};
+ return {presentation:{segments},media,planSha256:hash(bytes),profile:plan.profile??null};
 }

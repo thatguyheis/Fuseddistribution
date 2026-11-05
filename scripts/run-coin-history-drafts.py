@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Resumable, local-only production for owner-authorized coin-history drafts."""
 import datetime as dt
+import fcntl
 import hashlib
 import json
 import os
@@ -23,6 +24,23 @@ STATE = ROOT / '.workflow-state/coin-history-drafts/state.json'
 LOG = ROOT / '.workflow-state/coin-history-drafts/runner.log'
 LOCK = Path('/tmp/fused-coin-history-drafts.lock')
 MODEL = os.environ.get('COIN_HISTORY_MODEL', 'gemma3:4b')
+
+
+def business_render_lease_busy():
+    """Defer local drafting while the serial business renderer owns memory."""
+    path = ROOT / '.workflow-state/business-growth-ai-365/production/runner.lock'
+    if not path.exists():
+        return False
+    try:
+        with path.open('r+') as handle:
+            try:
+                fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError:
+                return True
+            fcntl.flock(handle, fcntl.LOCK_UN)
+        return False
+    except OSError:
+        return True
 
 
 def now():
@@ -285,7 +303,7 @@ def main():
         LOCK.mkdir()
     (LOCK / 'pid').write_text(str(os.getpid()))
     try:
-        if alive_lock(Path('/tmp/fused-blog-publisher.lock')) or alive_lock(Path('/tmp/fused-remotion-render.lock')):
+        if business_render_lease_busy() or alive_lock(Path('/tmp/fused-blog-publisher.lock')) or alive_lock(Path('/tmp/fused-remotion-render.lock')):
             log('DEFER: existing publisher or renderer owns heavy compute')
             return 0
         queue = json.loads(QUEUE.read_text())

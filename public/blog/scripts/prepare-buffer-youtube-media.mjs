@@ -28,7 +28,7 @@ Options:
   --slugs=a,b,c                  Required slug list.
   --max-duration-seconds=N       Output duration cap. Default: 135.
   --max-bytes=N                  Output size cap. Default: 26214400.
-  --max-long-edge=N              Output long-edge pixel cap. Default: 1280.
+  --max-long-edge=N              Pixel cap. Default: 1920 for business-growth-v1, otherwise 1280.
   --base-url=https://...         Hosted base URL after deploy. Default: workers.dev /reels.
   --out=path                     Output media map. Default: .buffer-media-urls.json.
 
@@ -43,7 +43,7 @@ function parseArgs(argv) {
     slugs: [],
     maxDurationSeconds: DEFAULT_MAX_DURATION_SECONDS,
     maxBytes: DEFAULT_MAX_BYTES,
-    maxLongEdge: DEFAULT_MAX_LONG_EDGE,
+    maxLongEdge: null,
     baseUrl: DEFAULT_BASE_URL,
     out: join(repoRoot, '.buffer-media-urls.json'),
   };
@@ -310,7 +310,11 @@ function main() {
     const renderMeta = readJson(renderMetaPath(slug));
 
     const output = outputVideoPath(slug);
-    const media = prepareOutput(input, output, args);
+    // Retain an approved 1080 portrait export when it already meets the shared
+    // upload budget. Do not downsample and recompress it merely for delivery.
+    const deliveryArgs = {...args, maxLongEdge: args.maxLongEdge ??
+      (renderMeta.presentationProfile === 'business-growth-v1' ? 1920 : DEFAULT_MAX_LONG_EDGE)};
+    const media = prepareOutput(input, output, deliveryArgs);
     const url = `${args.baseUrl}/${slug}/${slug}.mp4`;
     map[slug] = {
       url,

@@ -1,14 +1,16 @@
 {
   "slug": "myth-check-one-number-small-business-should-check-weekly",
   "reviewer": "Codex",
-  "reviewedAt": "2026-11-04T18:03:28.498Z",
+  "reviewedAt": "2026-11-05T18:08:56.545692+00:00",
   "pass": true,
   "hero": {
-    "sha256": "ef50a8d80b522f1c6447cb8e01114566a12ef73ec77d06ee837e4299cccc75ec",
-    "notes": "Inspected exported question hero for legibility and topic match."
+    "sha256": "0cf0d1d29ef890324681884606bb5d55d278e63a6fde5d8a7a3e392631db8cbf",
+    "notes": "Reviewed full bleed 1080x1920 question hero, larger central sans type and topic-specific panel. Hero remains the approved frame-zero source."
   },
   "notes": [
     "Reviewed full article and spoken script, primary BDC/Google guidance, explicit decision-rule framing and all fictional arithmetic: A 30 minus 20 equals 10; B 90 minus 30 equals 60. No fabricated customer result or universal CAC benchmark.",
-    "Inspected portrait hero and matched topic cards, including a fictional comparison table and one question CTA. Local blog QA passed; final audio/render release remains pending."
-  ]
+    "Inspected portrait hero and matched topic cards, including a fictional comparison table and one question CTA. Local blog QA passed; final audio/render release remains pending.",
+    "Reviewed all six regenerated source scenes in the final contact sheet. Panels, factual labels, fictional arithmetic context, question CTA and reserved enrichment scene agree with approved narration. Generic encoded 1080 chart/caption still checked for safe-zone separation; per-topic full encoded release review remains mandatory."
+  ],
+  "presentationProfile": "business-growth-v1"
 }

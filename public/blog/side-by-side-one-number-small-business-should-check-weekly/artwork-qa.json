@@ -1,14 +1,16 @@
 {
   "slug": "side-by-side-one-number-small-business-should-check-weekly",
   "reviewer": "Codex",
-  "reviewedAt": "2026-11-04T18:09:03.314Z",
+  "reviewedAt": "2026-11-05T18:08:56.553958+00:00",
   "pass": true,
   "hero": {
-    "sha256": "944549d9420182ea39dd170102d5c0d2cd56a84d1700f809fd3bc73ac4645cbb",
-    "notes": "Inspected exported question hero for legibility and topic match."
+    "sha256": "6a677bd3e12966b2ea166b7f81f4771aaee5de42dbdb79069b0eb6db5c8970bb",
+    "notes": "Reviewed full bleed 1080x1920 question hero, larger central sans type and topic-specific panel. Hero remains the approved frame-zero source."
   },
   "notes": [
     "Read the full article and spoken script, verified the fictional 600/30=20 and 600/6=100 examples, and made marketing-only cost scope explicit so the worksheet is not presented as fully loaded CAC.",
-    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending."
-  ]
+    "Reviewed portrait hero, source-specific cards and the comparison table with explicit denominators, cohort and fictional labels. Local QA passed; final audio/render release is pending.",
+    "Reviewed all six regenerated source scenes in the final contact sheet. Panels, factual labels, fictional arithmetic context, question CTA and reserved enrichment scene agree with approved narration. Generic encoded 1080 chart/caption still checked for safe-zone separation; per-topic full encoded release review remains mandatory."
+  ],
+  "presentationProfile": "business-growth-v1"
 }

@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 10, 2026-11-04. Owner: Nick Hughes.
+Version 11, 2026-11-05. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -52,7 +52,7 @@ Nick's personal and first party generations use the existing local procedures an
 | Blog length | 1,100 words minimum for drafts | `public/blog/BLOG-SOP.md` and QA |
 | Blog sources | Every factual claim maps to a primary source (U.S. Mint, museums, archives, NPS, Library of Congress). Sources section required. | `claim-map.json`, `research.json`, blog QA |
 | Blog QA pass | `qa.json` `pass: true`, score at least 85, mode `coin-history-automated`, stages include `qa-local-pass` and `qa-brain-pass` | `run-coin-history-drafts.py` |
-| Reel format | Vertical 720 x 1280, 30 fps, H.264, AAC 192 kbps | `video/REEL-SOP.md`, render profile |
+| Reel format | Coin/default: vertical 720 x 1280. New business presentations: reviewed `business-growth-v1`, 1080 x 1920 full bleed, 30 fps, H.264 CRF 20, AAC 192 kbps. Retain the 1080 master without recompression when it meets delivery limits. | `video/src/Root.tsx`, presentation-plan.mjs, render.mjs, prepare-buffer-youtube-media.mjs |
 | Reel script length | 280 to 330 words, target 110 to 130 seconds | `docs/COIN-HISTORY-SOP.md` |
 | Reel release duration | 100 to 135 seconds measured from the mastered MP4 | `video/scripts/release-reel.mjs:110` |
 | Reel ending | Spoken question card, 10 words or fewer, inside the hashed transcript | release gate, `run-coin-history-drafts.py` |
@@ -61,9 +61,10 @@ Nick's personal and first party generations use the existing local procedures an
 | Generative diffusion | Optional and disabled by default. Prefer evidence-led charts, graphs, and clear flow diagrams; enable Stable Diffusion only for a reviewed gap that those graphics and cleared media cannot explain. | `scripts/render-missing-reels.sh`, `video/scripts/render.mjs`, render LaunchAgent |
 | Attention design review | New business-growth reels record a hash-bound attention review: a visible, spoken question hook in the first three seconds, specific viewer benefit, supported payoff beats, one low-friction CTA, and platform metrics for later evaluation. Measure the generated hook audio before encoding; reject above 3.5 seconds. The approved article hero must appear in encoded frame zero; blank or near-blank openings block release. | `video/scripts/attention-review.mjs`, `video/scripts/opening-hero.mjs`, `video/scripts/release-reel.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`, `docs/REEL-OPENING-SOP.md` |
 | Voice | Pinned Chatterbox Standard with Nick's voice reference. Use exaggeration 0.75, CFG 0.3, temperature 0.8, min-p 0.05, top-p 1.0, repetition penalty 1.2 and 1 dB output peak headroom. Generate and record a new random seed per spoken segment. Split sentence-aware narration into chunks no longer than 240 characters. Whisper is for speech recognition and word-timed captions, not voice synthesis. | `video/tts-runtime.json`, `video/scripts/chatterbox-tts.py`, `video/scripts/generate-audio.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
-| TTS ownership and recovery | One Chatterbox worker across all reels. Active or indeterminate production ownership takes priority over calendar jobs. Scheduled monitors observe and deliver completed media; they never start competing supervisors, clear/rename locks or kill workers. Permission denial does not prove process death. The current production owner verifies its children before recovery and preserves completed segments. A kernel held TTS lock independently prevents duplicate model loading, and each new segment writes live progress to `.workflow-state/tts-runs/`. | `video/scripts/tts_worker_lock.py`, `video/scripts/process-liveness.mjs`, `video/scripts/generate-audio.mjs`, daily business-growth automation |
+| TTS ownership and recovery | The tracked business queue runner holds one kernel lease inherited by its child. Historical ledger PIDs are diagnostics, not ownership. Wait within the overnight window for the shared renderer, including an indeterminate owner; only the renderer may reclaim its proven dead PID lock. Permission denial never proves death. Each topic has one render attempt per Pacific day; preserve failed checkpoints and continue the next approved topic. Stop on a genuine TTS circuit failure. Coin drafting yields to the business lease; business production waits for active article writers to avoid model memory contention. | scripts/run-coin-history-drafts.py, scripts/run-business-reel-queue.py, video/scripts/tts_worker_lock.py, process-liveness.mjs |
 | Production enrichment | Every new render requires an editorially hashed enrichment-plan.json: at least one explanatory flow/table/chart and two short, purposeful licensed sound cues on separate body beats. Use semantic slide/wipe/fade transitions in both rendering routes. Version 3 release verifies exact props, plan and staged audio hashes, and rejects extra ending caption words. | video/scripts/production-enrichment.mjs, render.mjs, release-reel.mjs, prepare-coin-history-batch.mjs, qa-gate.sh |
-| Captions | Local Whisper word timings | `docs/WHISPER-CAPTIONS-SOP.md` |
+| Business visual quality | `business-growth-v1` uses full bleed owner reviewed art, 64–80 px central headings, white text and cyan contrast at least 4.5:1 on navy, a visible first-two-second hook move, bottom 250 px and right 150 px social UI clearance. Reserve the explanatory graphic area and avoid duplicate text over baked art. Real interface cues require actual redacted evidence; label illustrative diagrams. | create-business-scene-art.mjs, presentation-layout, PresentationScene.tsx, Subtitle.tsx, ProductionEnrichment.tsx |
+| Captions | Offline base.en word timings; detect anomalous repetition, broad transcript divergence or an ending mismatch and retry only suspicious segments once with pinned small.en. Cache both passes by audio, narration and actual model. If still suspicious, block that topic and continue independent work. Never rewrite recognition to hide extra speech. | `video/scripts/generate-captions.mjs`, caption-quality.mjs, video/whisper-fallback-runtime.json |
 | Music | Cleared tracks from the trusted cycle only (`--music=cycle`). Retired: `mixkit-driving-ambition-32.mp3`, `youtube-gone-away-blue-beat-review.mp3`, ambient-02 to ambient-10. | `docs/AUDIO-SOURCE-SOP.md` |
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
 | Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. Coin drafting uses this local model; the separately authorized business automation uses GPT-5.6 Luna directly for writing and review. | coin worker env |
@@ -92,9 +93,10 @@ Nick's personal and first party generations use the existing local procedures an
 
 | Job | When | Script | Status |
 |---|---|---|---|
-| `com.nick.coin-history-drafts` | Every 15 min | `scripts/run-coin-history-drafts.py` | **Active. The only publisher.** |
+| `com.nick.coin-history-drafts` | Every 15 min | `scripts/run-coin-history-drafts.py` | Installed but currently disabled in launchd. Coin publisher only; not used by the business exception. |
 | `com.nick.render-missing-reels` | Daily 01:00 and 04:00, max 2 reels per run | `scripts/render-missing-reels.sh` | Active, coin scope only; diffusion disabled by default |
-| `com.nick.buffer-backlog` | Daily 22:00 | `scripts/buffer-backlog-runner.sh` | Active, coin scope only |
+| `com.nick.business-reel-production` | Daily 02:00 Pacific | scripts/run-business-reel-queue.py, ops/business-reel-queue.json | One serial owner; target 2 current renders, at most 3 distinct approved topics per day; no new heavy work outside 00:00–06:00. caffeinate prevents idle sleep during the job. |
+| `com.nick.buffer-backlog` | Daily 22:00 | `scripts/buffer-backlog-runner.sh` | Installed but currently disabled in launchd; existing disable preserved during business workflow repair. |
 | `com.nick.daily-blog-reel` | Daily 09:00 | `scripts/daily-blog-reel.sh` | **Retire.** Generic publisher. Must be disabled with launchctl (section 9). |
 | `com.nick.gemma-research` | Mon and Thu 23:00 | `scripts/gemma-research-batch.py` | **Retire.** Generic topic research. |
 | `com.nick.ollama-publisher-watchdog` | Every 5 min | `scripts/ollama-publisher-watchdog.sh` | **Retire.** Only kicks the generic publisher; the coin worker restarts Ollama itself. |
@@ -106,7 +108,8 @@ Nick's personal and first party generations use the existing local procedures an
 |---|---|
 | `fused-daily-publishing-owner` (08:30, 21:30) | Keep. Refocus on coin queue preparation (section 6, step 1). |
 | `fused-daily-profit-and-sop-evolution` | Keep, weekly review only |
-| `daily-business-growth-blog-and-reel` | Daily 02:00, GPT-5.6 Luna low; two serial pairs, resume incomplete topics first, use docs/REEL-PRODUCTION-RUNBOOK.md |
+| `daily-business-growth-blog-and-reel` | Daily 01:15, GPT-5.6 Luna low; prepare/review two pairs and adopt the tracked serial runner. Never run a separate render loop. |
+| `finish-failed-overnight-reels-now` | Reused as daily 03:15, 06:15 and 14:15 Luna delivery/health checks. Read compact status, finish eligible delivery and reconcile due exact IDs. No daytime synthesis or encode; notify on changes, failures or required action. |
 | `resume-fused-coin-video-production-tonight` | One-off from 2026-10-20. Retire. |
 | `daily-blog-backlog-monitor`, `fused-blog-backlog-recovery-watch`, `reel-audio-backlog-sequential-rerender`, `fused-final-buffer-pair-recovery`, `buffer-youtube-queue-maintenance` | Generic backlog work. Retire or rewrite for coin scope. |
 | `overnight-actions-review`, `book-factory-daily-audit-and-status` | Not part of Fused publishing. Leave alone. |

@@ -27,7 +27,7 @@ const supportedChannelIds = new Set([
 
 function usage() {
   console.error(`Usage:
-  node public/blog/scripts/buffer-live.mjs status [--target-per-channel=N] [--require-on-time-floor] [--post-ids=id1,id2,...]
+  node public/blog/scripts/buffer-live.mjs status [--target-per-channel=N] [--require-on-time-floor] [--post-ids=id1,id2,...] [--sync-social-links]
   node public/blog/scripts/buffer-live.mjs channels
   node public/blog/scripts/buffer-live.mjs repair-cadence [--dry-run]
   node public/blog/scripts/buffer-live.mjs publish --queue=path [--log=path] [--dry-run]
@@ -42,7 +42,7 @@ It also re-checks the public MP4 immediately before create; failed media is a ha
 
 function parseArgs(argv) {
   const [command, ...options] = argv;
-  const args = { command, queue: '', log: '', dryRun: false, postId: '', postIds: [], slug: '', mediaUrl: '', textFile: '', targetPerChannel: 3, requireOnTimeFloor: false, capacityOnly: false };
+  const args = { command, queue: '', log: '', dryRun: false, postId: '', postIds: [], slug: '', mediaUrl: '', textFile: '', targetPerChannel: 3, requireOnTimeFloor: false, capacityOnly: false, syncSocialLinks: false };
   for (const option of options) {
     if (option.startsWith('--queue=')) args.queue = resolve(option.slice('--queue='.length));
     else if (option.startsWith('--log=')) args.log = resolve(option.slice('--log='.length));
@@ -58,6 +58,7 @@ function parseArgs(argv) {
     }
     else if (option === '--require-on-time-floor') args.requireOnTimeFloor = true;
     else if (option === '--capacity-only') args.capacityOnly = true;
+    else if (option === '--sync-social-links') args.syncSocialLinks = true;
     else if (option === '--dry-run') args.dryRun = true;
     else usage();
   }
@@ -537,7 +538,9 @@ try {
     const postLookups = args.postIds.length ? await getPostsByIds(token, args.postIds) : [];
     const visiblePosts = mergeBufferPosts(posts, sentPosts, postLookups.filter(row => row.found).map(row => row.post));
     const reconciledLogs = reconcileDefaultLogs(visiblePosts);
-    syncPublishedSocialVideoLinks();
+    // Routine monitoring must not rewrite unrelated public articles. Publishing
+    // canonical social links is a separate, explicitly requested content action.
+    if (args.syncSocialLinks) syncPublishedSocialVideoLinks();
     const dailyTargets = calculateDailyChannelTargets(visiblePosts, { minimum: args.targetPerChannel });
     const readinessCheckpoint = evaluateDailyFloorReadinessCheckpoint({ operatingDate: dailyTargets.operatingDate });
     const dailyFloorEnforcement = evaluateDailyFloorEnforcement({ dailyTargets, readinessCheckpoint });

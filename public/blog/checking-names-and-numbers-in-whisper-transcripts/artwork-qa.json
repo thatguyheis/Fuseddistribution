@@ -1,14 +1,17 @@
 {
   "slug": "checking-names-and-numbers-in-whisper-transcripts",
   "reviewer": "Codex",
-  "reviewedAt": "2026-11-04T18:00:29.390Z",
+  "reviewedAt": "2026-11-05T18:08:56.550467+00:00",
   "pass": true,
   "hero": {
-    "sha256": "90dfa7f769a01ccd16062b4143be8249054ab4d640876474321cd193e423a05b",
-    "notes": "Inspected exported question hero for legibility and topic match."
+    "sha256": "220552c7f75733a0bfe9755150a72fd1bae163cc11d8b377204470f618e2b90c",
+    "notes": "Reviewed full bleed 1080x1920 question hero, larger central sans type and topic-specific panel. Hero remains the approved frame-zero source."
   },
   "notes": [
     "Read the full article and reel script, checked local runtime claims against source files, preserved distinction between local and hosted processing, and labeled the synthetic example.",
-    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending."
-  ]
+    "Reviewed hero and topic-specific diagrams, reserved graphic panel and one question CTA. Local deterministic QA passed. The fresh transcription demo and encoded visual/audio release checks remain pending.",
+    "Reviewed all six regenerated source scenes in the final contact sheet. Panels, factual labels, fictional arithmetic context, question CTA and reserved enrichment scene agree with approved narration. Generic encoded 1080 chart/caption still checked for safe-zone separation; per-topic full encoded release review remains mandatory.",
+    "Existing synthetic Jordan Bell / sixteen blue notebooks narration independently recognized correctly by small.en. Primary repetition and detail-do error recovered without changing speech."
+  ],
+  "presentationProfile": "business-growth-v1"
 }

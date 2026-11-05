@@ -30,6 +30,20 @@ const Root: React.FC = () => (
       })}
     />
     <Composition
+      id="BusinessGrowthPresentation"
+      component={BlogReel}
+      durationInFrames={150}
+      fps={BRAND.fps}
+      width={BRAND.width}
+      height={BRAND.height}
+      defaultProps={{script: defaultScript, musicTrack: 'none', musicGain: 0, presentationProfile: 'business-growth-v1'}}
+      calculateMetadata={({ props }) => ({
+        width: BRAND.width,
+        height: BRAND.height,
+        durationInFrames: compositionFrames(props.script),
+      })}
+    />
+    <Composition
       id="PaperCollagePilot"
       component={PaperCollagePilot}
       durationInFrames={150}

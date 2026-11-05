@@ -1,0 +1,120 @@
+{
+  "slug": "checking-names-and-numbers-in-whisper-transcripts",
+  "scenes": [
+    {
+      "id": "scene-0",
+      "kind": "hook",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Can you trust every Whisper transcript?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "CHECK BEFORE YOU POST",
+        "items": [
+          {
+            "label": "Names",
+            "value": "Replay the audio"
+          },
+          {
+            "label": "Numbers",
+            "value": "Verify the amount"
+          },
+          {
+            "label": "Captions",
+            "value": "Keep word timing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-1",
+      "kind": "body",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Replay names and numbers",
+      "reservedGraphic": true
+    },
+    {
+      "id": "scene-2",
+      "kind": "body",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Local versus hosted transcription",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "LOCAL OR HOSTED?",
+        "items": [
+          {
+            "label": "Local",
+            "value": "Runs on this device"
+          },
+          {
+            "label": "Hosted",
+            "value": "Check service terms"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-3",
+      "kind": "body",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Correct text, keep timing",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "REPAIR THE RIGHT LAYER",
+        "items": [
+          {
+            "label": "Caption error",
+            "value": "Keep audio and timing"
+          },
+          {
+            "label": "Speech changed",
+            "value": "Regenerate narration"
+          },
+          {
+            "label": "Recheck",
+            "value": "Transcribe again"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-4",
+      "kind": "body",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Reject invented endings",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "CHECK THE WHOLE ENDING",
+        "items": [
+          {
+            "label": "Compare",
+            "value": "Approved question"
+          },
+          {
+            "label": "Extra speech",
+            "value": "Reject and repair"
+          },
+          {
+            "label": "Caption error",
+            "value": "Review recognition"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-5",
+      "kind": "cta",
+      "eyebrow": "WHISPER TRANSCRIPT CHECK",
+      "headline": "Which caption detail do you check first?",
+      "reservedGraphic": false,
+      "panel": {
+        "title": "COMMENT BELOW",
+        "items": [
+          {
+            "label": "Your turn",
+            "value": "Name one detail"
+          }
+        ]
+      }
+    }
+  ]
+}

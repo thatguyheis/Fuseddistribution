@@ -4,6 +4,7 @@ import {join, dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
+import {assessCaptionQuality} from './caption-quality.mjs';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const REPO = resolve(ROOT, '..');
 const digest = value => createHash('sha256').update(value).digest('hex');
@@ -47,14 +48,19 @@ export function assertWhisperRuntime(runtimeConfig) {
   if(!existsSync(python)||!['model.bin','config.json','tokenizer.json','vocabulary.txt'].every(name=>existsSync(join(modelPath,name))))throw new Error('Local Whisper executable or model missing; run the documented setup');
   return {...config,python,modelPath};
 }
+function runWhisperJobs(runtime,jobs,manifestPath,options) {
+  save(manifestPath,{runtime,jobs});
+  if(options.transcribeJobs) return options.transcribeJobs(runtime,jobs);
+  return spawnSync(runtime.python,[join(ROOT,'scripts/transcribe-local.py'),'--manifest',manifestPath],{encoding:'utf8',timeout:600000,maxBuffer:4*1024*1024,env:{...process.env,HF_HUB_OFFLINE:'1',TOKENIZERS_PARALLELISM:'false'}});
+}
 export async function generateCaptions(slug, options={}) {
   if(!/^[a-z0-9-]+$/.test(slug))throw new Error('Invalid caption slug');
-  const scriptPath=join(ROOT,'out',slug,'script.json');
+  const scriptPath=options.scriptPath ? resolve(options.scriptPath) : join(ROOT,'out',slug,'script.json');
   if(!existsSync(scriptPath))throw new Error(`Missing caption script for ${slug}`);
   const runtime=assertWhisperRuntime(options.runtimeConfig);
-  const script=json(scriptPath),audioDir=join(ROOT,'public/audio',slug);
+  const script=json(scriptPath),audioDir=options.audioDir ? resolve(options.audioDir) : join(ROOT,'public/audio',slug);
   const outDir=options.outputDir ? resolve(options.outputDir) : join(ROOT,'out',slug);
-  const cacheDir=join(ROOT,'local/whisper-captions');mkdirSync(cacheDir,{recursive:true});mkdirSync(outDir,{recursive:true});
+  const cacheDir=options.cacheDir ? resolve(options.cacheDir) : join(ROOT,'local/whisper-captions');mkdirSync(cacheDir,{recursive:true});mkdirSync(outDir,{recursive:true});
   const jobs=[],records=[];
   for(const [index,segment] of script.segments.entries()) {
     if(!segment.narration)continue;
@@ -62,7 +68,7 @@ export async function generateCaptions(slug, options={}) {
     if(!existsSync(audioPath))throw new Error(`Caption audio missing for segment ${index}`);
     const key=captionCacheKey(readFileSync(audioPath),segment.narration,runtime);
     const outputPath=join(cacheDir,`${key}.json`);
-    records.push({index,key,outputPath});
+    records.push({index,key,outputPath,narration:segment.narration,question:segment.type==='question'});
     let valid=false;
     if(existsSync(outputPath)){try{valid=wordsToCaptions(json(outputPath).words).length>0;}catch{valid=false;}}
     if(!valid)jobs.push({index,audioPath,outputPath,narration:segment.narration});
@@ -70,15 +76,63 @@ export async function generateCaptions(slug, options={}) {
   if(!records.length)throw new Error('No narrated segments available for captions');
   const diagnosticsPath=join(outDir,'whisper-diagnostics.json');
   if(jobs.length) {
-    const manifestPath=join(outDir,'whisper-jobs.json');save(manifestPath,{runtime,jobs});
-    const run=spawnSync(runtime.python,[join(ROOT,'scripts/transcribe-local.py'),'--manifest',manifestPath],{encoding:'utf8',timeout:600000,maxBuffer:4*1024*1024,env:{...process.env,HF_HUB_OFFLINE:'1',TOKENIZERS_PARALLELISM:'false'}});
+    const manifestPath=join(outDir,'whisper-jobs.json');
+    const run=runWhisperJobs(runtime,jobs,manifestPath,options);
     const diagnostics={ok:run.status===0,engine:runtime.engine,modelRevision:runtime.modelRevision,generatedSegments:jobs.length,stdout:run.stdout?.slice(-10000),stderr:run.stderr?.slice(-10000),error:run.error?.message ?? null};save(diagnosticsPath,diagnostics);
     if(run.error || run.status!==0)throw new Error(`Local Whisper failed; see ${diagnosticsPath}. ${run.error?.message || run.stderr?.slice(-500) || 'worker failed'}`);
     console.log(run.stdout.trim());
   } else save(diagnosticsPath,{ok:true,cachedSegments:records.length,engine:runtime.engine});
+  const fallbackJobs=[], fallbackEvidence={};
+  const suspiciousRecords=[];
+  for(const record of records) {
+    const primary=json(record.outputPath);
+    const quality=assessCaptionQuality(record.narration,primary.words,{question:record.question});
+    if(!quality.suspicious) continue;
+    record.primaryQuality=quality;
+    suspiciousRecords.push(record);
+  }
+  let fallbackRuntime;
+  if(suspiciousRecords.length) {
+    try { fallbackRuntime=assertWhisperRuntime(options.fallbackRuntimeConfig ?? join(ROOT,'whisper-fallback-runtime.json')); }
+    catch(error) {
+      save(diagnosticsPath,{ok:false,engine:runtime.engine,modelRevision:runtime.modelRevision,fallbackError:error.message,suspiciousSegments:suspiciousRecords.map(record=>({index:record.index,quality:record.primaryQuality}))});
+      throw new Error(`Caption fallback is required for ${script.slug ?? slug} segment${suspiciousRecords.length===1?'':'s'} ${suspiciousRecords.map(record=>record.index).join(', ')}, but its local runtime is unavailable: ${error.message}`);
+    }
+  }
+  for(const record of suspiciousRecords) {
+    const audioPath=join(audioDir,`segment-${record.index}.m4a`);
+    const fallbackKey=captionCacheKey(readFileSync(audioPath),record.narration,fallbackRuntime);
+    const fallbackPath=join(cacheDir,`${fallbackKey}.json`);
+    record.fallbackPath=fallbackPath;
+    record.fallbackKey=fallbackKey;
+    let valid=false;
+    if(existsSync(fallbackPath)) { try { valid=wordsToCaptions(json(fallbackPath).words).length>0; } catch { valid=false; } }
+    if(!valid) fallbackJobs.push({index:record.index,audioPath,outputPath:fallbackPath,narration:record.narration});
+  }
+  if(fallbackJobs.length) {
+    const manifestPath=join(outDir,'whisper-fallback-jobs.json');
+    const run=runWhisperJobs(fallbackRuntime,fallbackJobs,manifestPath,options);
+    if(run.error || run.status!==0) {
+      const failure={ok:false,engine:runtime.engine,modelRevision:runtime.modelRevision,fallbackEngine:fallbackRuntime.engine,fallbackModelRevision:fallbackRuntime.modelRevision,fallbackError:run.error?.message ?? null,fallbackStatus:run.status,stdout:run.stdout?.slice(-10000),stderr:run.stderr?.slice(-10000),failedSegments:fallbackJobs.map(job=>job.index)};
+      save(diagnosticsPath,failure);
+      throw new Error(`Small.en caption fallback failed for segment${fallbackJobs.length===1?'':'s'} ${fallbackJobs.map(job=>job.index).join(', ')}; see ${diagnosticsPath}. ${run.error?.message || run.stderr?.slice(-500) || 'worker failed'}`);
+    }
+    console.log(run.stdout.trim());
+  }
+  for(const record of records) if(record.fallbackPath) {
+    const recovered=json(record.fallbackPath);
+    const fallbackQuality=assessCaptionQuality(record.narration,recovered.words,{question:record.question});
+    fallbackEvidence[record.index]={primary:record.primaryQuality,fallback:fallbackQuality,usedFallback:!fallbackQuality.suspicious,primaryCacheKey:record.key,fallbackCacheKey:record.fallbackKey};
+    save(diagnosticsPath,{ok:!fallbackQuality.suspicious,engine:runtime.engine,modelRevision:runtime.modelRevision,fallbackEngine:fallbackRuntime.engine,fallbackModelRevision:fallbackRuntime.modelRevision,fallbackEvidence});
+    if(fallbackQuality.suspicious) {
+      const topic=script.slug ?? slug;
+      throw new Error(`Caption recognition remains suspicious for ${topic} segment ${record.index} after primary and small.en fallback (${[...record.primaryQuality.reasons,...fallbackQuality.reasons].join(', ')}). Review narration/audio alignment and manually inspect this segment before release.`);
+    }
+    record.outputPath=record.fallbackPath;
+  }
   const captions={};
   for(const record of records)captions[record.index]=wordsToCaptions(json(record.outputPath).words);
-  const meta={mode:'whisper',engine:runtime.engine,modelRevision:runtime.modelRevision,whisperAvailable:true,whisperSegments:records.length,proportionalSegments:0,missingAudioSegments:0,cachedSegments:records.length-jobs.length,generatedSegments:jobs.length,timing:'recognized-word-timestamps',textReviewRequired:true,audioCacheKeys:Object.fromEntries(records.map(r=>[r.index,r.key]))};
+  const meta={mode:'whisper',engine:runtime.engine,modelRevision:runtime.modelRevision,whisperAvailable:true,whisperSegments:records.length,proportionalSegments:0,missingAudioSegments:0,cachedSegments:records.length-jobs.length,generatedSegments:jobs.length,timing:'recognized-word-timestamps',textReviewRequired:true,audioCacheKeys:Object.fromEntries(records.map(r=>[r.index,r.fallbackKey ?? r.key])),fallbackEvidence};
   // Preserve prior metadata if an existing output is being explicitly regenerated.
   for(const name of ['captions.json','captions-meta.json'])if(existsSync(join(outDir,name)))copyFileSync(join(outDir,name),join(outDir,`${name}.before-whisper-${Date.now()}`));
   save(join(outDir,'captions.json'),captions);save(join(outDir,'captions-meta.json'),meta);
