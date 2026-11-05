@@ -53,6 +53,13 @@ For a collector, a specific certified example may satisfy a deliberate preferenc
 
 Before completing the purchase, retain the product details, comparison evidence, total cost and seller terms in one record. Ask how you would evaluate an offer to buy the coin later, including the costs of selling it. If the case for paying more relies entirely on an unsupported prediction, the evidence is incomplete. Fused's [reserve resources](/reserve/) offer further educational material. The useful question is what the premium buys today and which parts of that value you can actually verify.
 
+## Sources
+
+- [PCGS: how U.S. coins are graded](https://www.pcgs.com/news/how-united-states-coins-are-graded)
+- [PCGS price guide and methodology](https://www.pcgs.com/prices)
+- [NGC: security center and holder verification](https://www.ngccoin.com/security-center/)
+- [NGC: grading guarantee terms](https://www.ngccoin.com/coin-grading/ngc-guarantee/)
+
 ## Related
 
 - [Canadian Silver Maple Leaf Investment Guide](/blog/canadian-silver-maple-leaf-investment-guide/)

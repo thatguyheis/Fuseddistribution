@@ -81,4 +81,6 @@ export const PERMANENT_REDIRECTS = new Map([
   // Retired 2026-11-04: stale coin price tables and unsupported silver premium ranges duplicate sourced comparison guidance.
   ["/blog/peace-silver-dollar-value-and-history", "/blog/"],
   ["/blog/how-to-compare-silver-premiums-across-dealers", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  // Retired 2026-11-04: unsupported 100-ounce bar cost and investment claims link to retired purchase advice.
+  ["/blog/100-oz-silver-bars-pros-and-cons", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
 ]);

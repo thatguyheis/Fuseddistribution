@@ -1,0 +1,23 @@
+{
+  "slug": "graded-silver-coins-worth-paying-premium-or-not",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "PCGS grading descriptions distinguish wear, marks, luster, and strike when evaluating a coin's condition.",
+      "source": "https://www.pcgs.com/news/how-united-states-coins-are-graded"
+    },
+    {
+      "claim": "PCGS price guide entries are estimates and do not establish a guaranteed sale price.",
+      "source": "https://www.pcgs.com/prices"
+    },
+    {
+      "claim": "NGC provides verification resources and warns about counterfeit or altered holders.",
+      "source": "https://www.ngccoin.com/security-center/"
+    },
+    {
+      "claim": "The NGC grading guarantee has defined coverage, conditions, and remedies.",
+      "source": "https://www.ngccoin.com/coin-grading/ngc-guarantee/"
+    }
+  ]
+}
