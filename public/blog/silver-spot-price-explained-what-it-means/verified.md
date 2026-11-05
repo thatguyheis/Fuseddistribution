@@ -64,6 +64,12 @@ Divide the product total by fine silver ounces before subtracting the reference 
 
 Obtain a comparable buyback quote if available and identify deductions. Treat an unavailable quote as unknown rather than assuming a resale value. A complete comparison makes the source, product, costs and timing explicit before you make a purchasing decision.
 
+## Sources
+
+- [CME Group: Silver futures contract overview](https://www.cmegroup.com/markets/metals/precious/silver.contract.html)
+- [LBMA: Loco London market overview](https://www.lbma.org.uk/market-standards/about-loco-london)
+- [LBMA: precious metal prices](https://www.lbma.org.uk/prices-and-data/lbma-precious-metal-prices)
+
 ## Related
 
 - [Read silver purity marks](/blog/silver-purity-marks-what-999-9999-means/)

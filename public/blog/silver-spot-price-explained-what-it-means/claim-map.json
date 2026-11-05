@@ -1,0 +1,19 @@
+{
+  "slug": "silver-spot-price-explained-what-it-means",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "CME Silver futures are quoted and traded under defined contract specifications, with their own exchange market and settlement process.",
+      "source": "https://www.cmegroup.com/markets/metals/precious/silver.contract.html"
+    },
+    {
+      "claim": "The LBMA describes the Loco London wholesale precious metals market and publishes benchmark precious metal prices.",
+      "source": "https://www.lbma.org.uk/market-standards/about-loco-london"
+    },
+    {
+      "claim": "LBMA precious metal price benchmarks have defined administrators and process information.",
+      "source": "https://www.lbma.org.uk/prices-and-data/lbma-precious-metal-prices"
+    }
+  ]
+}

@@ -58,6 +58,10 @@ Bring the product specification, delivered quote, seller checks, storage plan, a
 
 This checklist does not establish that silver is appropriate for your financial circumstances or that a particular allocation is suitable. It helps you evaluate a physical coin transaction without relying on invented market prices, unsupported insurance estimates, or return promises. Keep the worksheet for any purchase you complete and update it when comparing another offer. For more educational material about physical silver, visit the [Fused reserve page](/reserve/).
 
+## Sources
+
+- [Royal Canadian Mint: 2026 one ounce Silver Maple Leaf specification](https://www.mint.ca/en/shop/coins/2026/2026-sml-1-oz-9999-pure-silver-coin-bullion)
+
 ## Related
 
 - [How To Avoid Silver Dealer Scams](/blog/how-to-avoid-silver-dealer-scams/)
