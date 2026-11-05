@@ -88,4 +88,6 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-verify-silver-purity-at-home", "/reserve/"],
   ["/blog/american-silver-eagle-complete-buying-guide", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
   ["/blog/how-to-avoid-silver-dealer-scams", "/blog/"],
+  // Retired 2026-11-04: unsafe cleaning, coating, and storage advice with unsupported value claims.
+  ["/blog/silver-tarnish-why-it-happens-and-how-to-prevent-it", "/blog/silver-storage-vault-vs-home-storage/"],
 ]);
