@@ -78,4 +78,7 @@ export const PERMANENT_REDIRECTS = new Map([
   // Retired 2026-11-04: unsupported tax reporting and unsafe coin cleaning instructions.
   ["/blog/how-to-keep-records-of-silver-purchases-for-taxes", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
   ["/blog/best-ways-to-clean-silver-coins-without-damage", "/blog/"],
+  // Retired 2026-11-04: stale coin price tables and unsupported silver premium ranges duplicate sourced comparison guidance.
+  ["/blog/peace-silver-dollar-value-and-history", "/blog/"],
+  ["/blog/how-to-compare-silver-premiums-across-dealers", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
 ]);
