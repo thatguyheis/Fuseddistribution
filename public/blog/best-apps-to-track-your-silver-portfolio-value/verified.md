@@ -48,7 +48,15 @@ Label each holding as physical metal, ETF, mining equity, crypto, cash, or unkno
 
 The best tracker is the one whose documented features match the question you need to answer. Use a market app for a market view and a controlled workbook for physical records. Keep those meanings separate and your portfolio value will be easier to explain, audit, and correct.
 
-Sources: [CoinStats manual portfolios](https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio), [CoinStats overview](https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app), [Delta product scope](https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange), [Delta supported exchanges](https://support.delta.app/en/articles/2416103-supported-exchanges), [Google Sheets SUM](https://support.google.com/docs/answer/3093669?hl=en), [Google Sheets table references](https://support.google.com/docs/answer/15637642?hl=en), and [Microsoft Excel tables and formulas](https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables).
+## Sources
+
+- [CoinStats: manual portfolios and transactions](https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio)
+- [CoinStats: product overview](https://help.coinstats.app/en/articles/1537032-what-is-coinstats-app)
+- [Delta: product scope](https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange)
+- [Delta: supported exchanges](https://support.delta.app/en/articles/2416103-supported-exchanges)
+- [Google Sheets: table references](https://support.google.com/docs/answer/15637642?hl=en)
+- [Google Sheets: SUM](https://support.google.com/docs/answer/3093669?hl=en)
+- [Microsoft Excel: create and format tables](https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables)
 
 For a detailed app boundary comparison, read [CoinStats vs Delta](/blog/coinstats-vs-delta-for-precious-metals-tracking/). Use the [silver premium calculator guide](/blog/silver-premium-calculator-how-to-build-one/) to keep quantity, fine metal and full delivered costs consistent.
 

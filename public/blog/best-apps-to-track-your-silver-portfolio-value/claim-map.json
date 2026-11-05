@@ -1,0 +1,23 @@
+{
+  "slug": "best-apps-to-track-your-silver-portfolio-value",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "CoinStats documents manual portfolios and transaction entry, with its product overview describing crypto portfolio tracking.",
+      "source": "https://help.coinstats.app/en/articles/3592645-how-to-add-transactions-to-your-manual-portfolio"
+    },
+    {
+      "claim": "Delta describes itself as an investment portfolio tracker and documents its supported exchange and asset connections.",
+      "source": "https://support.delta.app/en/articles/13516469-is-delta-a-broker-wallet-or-exchange"
+    },
+    {
+      "claim": "Google Sheets supports table references and SUM formulas for spreadsheet records.",
+      "source": "https://support.google.com/docs/answer/15637642?hl=en"
+    },
+    {
+      "claim": "Microsoft Excel documents tables and structured references for formulas.",
+      "source": "https://support.microsoft.com/en-us/excel/get-started/create-and-format-tables"
+    }
+  ]
+}

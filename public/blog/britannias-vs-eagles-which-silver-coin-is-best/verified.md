@@ -50,7 +50,12 @@ Write a short decision note stating the exact products compared, the quotes and 
 
 ## Related
 
-- [Silver Premiums Explained for Beginners](/blog/silver-premiums-explained-for-beginners/)
+- [How to Compare Online Silver Dealer Offers](/blog/best-online-silver-dealers-in-2026/)
 - [Austrian Silver Philharmonic Coin Buying Guide](/blog/austrian-silver-philharmonic-guide/)
 
-Read next: [Buying Silver From a Local Coin Shop vs Online](/blog/buying-silver-from-a-local-coin-shop-vs-online/)
+Read next: [1 oz Silver Coins vs 10 oz Silver Bars](/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/)
+
+## Sources
+
+- [The Royal Mint: 2026 Britannia bullion coin](https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/bb26s1c-britannia-2026-1oz-silver-bullion-coin/)
+- [U.S. Mint: bullion coin programs](https://www.usmint.gov/coins-precious-metal-coins/bullion-coin-programs/)
