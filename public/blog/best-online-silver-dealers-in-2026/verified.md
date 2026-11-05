@@ -58,9 +58,18 @@ Save the date and time, product URL, quantity, payment method, merchandise subto
 
 A later change in terms should trigger a new comparison, not a silent change to the old record. Customer reviews can identify questions to investigate, but an unverified rating should not replace written evidence or become a fabricated performance score. Choose from the evidence available for the actual transaction and leave unresolved criteria unresolved.
 
+## Sources
+
+- [APMEX: payment options and price display](https://www.apmex.com/faq/how-to-pay-for-gold-silver-purchases-at-apmex)
+- [APMEX: pricing and quantity tiers](https://www.apmex.com/faq/silver-gold-pricing)
+- [JM Bullion: terms and conditions](https://cdn.jmbullion.com/terms-and-conditions/)
+- [JM Bullion: Sell-To-Us payout options](https://help.jmbullion.com/article/508-how-will-you-pay-out-my-buyback-order)
+- [SD Bullion: sell-to-us process](https://sdbullion.com/sell)
+- [SD Bullion: terms of use](https://sdbullion.com/terms-use)
+
 ## Related
 
 - [JM Bullion vs SD Bullion](/blog/jm-bullion-vs-sd-bullion-which-dealer-is-better/)
-- [How to Compare Silver Premiums Across Dealers](/blog/how-to-compare-silver-premiums-across-dealers/)
+- [How to Compare Silver Buyback Quotes Fairly](/blog/how-to-compare-silver-buyback-quotes-fairly/)
 
 Read next: [How to Avoid Silver Dealer Scams](/blog/how-to-avoid-silver-dealer-scams/)
