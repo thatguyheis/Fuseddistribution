@@ -1,7 +1,10 @@
 {
   "slug": "canadian-silver-maple-leaf-vs-american-silver-eagle",
-  "score": 90,
-  "pass": true,
-  "blockers": [],
-  "mode": "deterministic-local"
+  "score": null,
+  "pass": false,
+  "blockers": [
+    "Content was substantially rewritten on 2026-11-04; the prior QA result is stale and does not apply to this revision."
+  ],
+  "mode": "stale-after-editorial-revision",
+  "reviewedAt": "2026-11-04"
 }

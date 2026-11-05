@@ -153,6 +153,10 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 ## Silver Posts
 
+| 2026-11-04 | silver-rounds-complete-buyer-guide | Retired | Duplicate buyer guide with unsupported premium, authenticity-test, and dealer claims. Do not regenerate; permanent redirect is in src/redirects.js. |
+| 2026-11-04 | what-is-90-percent-silver-junk-silver-worth-buying | Retired | Incorrect purity claims and unsupported investment and return advice. Do not regenerate; permanent redirect is in src/redirects.js. |
+| 2026-11-04 | junk-silver-coins-guide-pre-1965-us-silver | Retired | Duplicate junk-silver guide built around stale market forecasts and unsupported investment claims. Do not regenerate; permanent redirect is in src/redirects.js. |
+
 | 2026-09-21 | silver-bar-serial-numbers-and-inventory-records | General | silver bar serial numbers and inventory records |
 | Date | Slug | Broad Category | Angle |
 |------|------|----------------|-------|

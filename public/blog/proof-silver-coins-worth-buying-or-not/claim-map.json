@@ -1,0 +1,23 @@
+{
+  "slug": "proof-silver-coins-worth-buying-or-not",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "The U.S. Mint identifies American Eagle silver proof coins as collector versions and publishes their weight, composition, diameter, design, and mint.",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/collectible-coins/american-eagle/silver-proof"
+    },
+    {
+      "claim": "The U.S. Mint describes bullion coins as products valued by metal weight and fineness, distinct from numismatic value factors.",
+      "source": "https://www.usmint.gov/coins-precious-metal-coins/bullion-coin-programs/"
+    },
+    {
+      "claim": "The Mint distributes American Eagle bullion coins through authorized purchasers rather than direct public sales.",
+      "source": "https://www.usmint.gov/coin-programs/bullion-coins/"
+    },
+    {
+      "claim": "The U.S. Mint says bullion coin pricing is based on prevailing metal prices plus a premium and can change.",
+      "source": "https://www.usmint.gov/coins-precious-metal-coins/becoming-an-authorized-bullion-purchaser/"
+    }
+  ]
+}

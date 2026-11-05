@@ -1,0 +1,23 @@
+{
+  "slug": "comex-silver-delivery-process-explained",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "CME lists the standard COMEX Silver futures contract unit as 5,000 troy ounces and identifies the contract code.",
+      "source": "https://www.cmegroup.com/markets/metals/precious/silver.contract.html"
+    },
+    {
+      "claim": "COMEX Rule 112 sets silver futures delivery quantity, tolerance, fineness, approved brand, and delivery rules.",
+      "source": "https://www.cmegroup.com/content/dam/cmegroup/rulebook/COMEX/1a/112.pdf"
+    },
+    {
+      "claim": "CME describes precious metals warrants as the delivery instrument and explains notice, assignment, transfer, and load out.",
+      "source": "https://www.cmegroup.com/education/courses/introduction-to-precious-metals/what-is-the-precious-metals-delivery-process"
+    },
+    {
+      "claim": "CME’s product guide describes an intent, invoicing, and delivery cycle for physically delivered metal contracts.",
+      "source": "https://www.cmegroup.com/trading/metals/files/metals-prod-guide-2024.pdf"
+    }
+  ]
+}

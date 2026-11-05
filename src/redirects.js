@@ -156,4 +156,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-set-silver-spot-price-alerts-for-free", "/blog/silver-spot-price-explained-what-it-means/"],
   ["/blog/self-directed-ira-for-silver-step-by-step", "/blog/"],
   ["/blog/morgan-silver-dollars-as-investment", "/reserve/"],
+
+  // Retired 2026-11-04: duplicate silver-round advice and unsupported junk-silver investment claims.
+  ["/blog/silver-rounds-complete-buyer-guide", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"], // Duplicate buyer guide with unsupported premium, authenticity-test, and dealer claims.
+  ["/blog/what-is-90-percent-silver-junk-silver-worth-buying", "/blog/inherited-junk-silver-what-to-do-with-it/"], // Incorrect purity claims and unsupported investment and return advice.
+  ["/blog/junk-silver-coins-guide-pre-1965-us-silver", "/blog/inherited-junk-silver-what-to-do-with-it/"], // Duplicate junk-silver guide built around stale market forecasts and unsupported investment claims.
 ]);
