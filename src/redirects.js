@@ -107,4 +107,5 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/what-is-comex-silver-and-how-does-it-affect-spot-price", "/blog/how-silver-futures-work-explained-for-stackers/"],
   ["/blog/silver-as-money-throughout-history", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
   ["/blog/how-to-spot-fake-silver-coins-and-bars", "/blog/"],
+  ["/blog/troy-ounce-vs-regular-ounce-silver-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
 ]);
