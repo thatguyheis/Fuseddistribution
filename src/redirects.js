@@ -90,4 +90,16 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-avoid-silver-dealer-scams", "/blog/"],
   // Retired 2026-11-04: unsafe cleaning, coating, and storage advice with unsupported value claims.
   ["/blog/silver-tarnish-why-it-happens-and-how-to-prevent-it", "/blog/silver-storage-vault-vs-home-storage/"],
+  // Retired 2026-11-04: unsafe home tests, stale market claims, duplicate history, and unsupported dealer or investment guidance.
+  ["/blog/buying-silver-from-a-local-coin-shop-vs-online", "/blog/best-online-silver-dealers-in-2026/"],
+  ["/blog/ice-test-for-silver-explained", "/blog/"],
+  ["/blog/electric-vehicle-silver-demand-explained", "/blog/"],
+  ["/blog/silver-in-solar-panels-how-much-is-used", "/blog/"],
+  ["/blog/engelhard-silver-bars-history-and-collector-value", "/blog/"],
+  ["/blog/paper-silver-vs-physical-silver-the-key-difference", "/reserve/"],
+  ["/blog/silver-monetary-history-complete-guide", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
+  ["/blog/silver-royalty-companies-explained-wheaton-precious-met", "/blog/"],
+  ["/blog/silver-counterfeit-detection-guide", "/blog/"],
+  ["/blog/self-directed-ira-approved-silver-coins-and-bars-list", "/blog/"],
+  ["/blog/how-to-start-buying-silver-with-100-dollars", "/reserve/"],
 ]);
