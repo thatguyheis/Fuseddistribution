@@ -6,7 +6,7 @@ This guide explains the product and provides a practical way to examine a quote.
 
 ## Identify the Silver Philharmonic Before Comparing Prices
 
-The Austrian Mint's bullion brochure lists the silver Vienna Philharmonic as a one ounce coin made from silver marked Ag 999, with a 37 millimeter diameter and a 1.50 euro face value. Its orchestral design includes musical instruments on one side and the organ in Vienna's Musikverein concert hall on the other. These details distinguish the product from a generic silver round and from the other metals in the Philharmonic range. Source: [Austrian Mint bullion brochure](https://www.muenzeoesterreich.com/en/content/download/291314/file/Anlagefolder%2BEN%2B2025).
+The Austrian Mint lists the silver Vienna Philharmonic as a one ounce coin made from silver marked Ag 999, with a 37 millimeter diameter and a 1.50 euro face value. Its orchestral design includes musical instruments on one side and the organ in Vienna's Musikverein concert hall on the other. These details distinguish the product from a generic silver round and from the other metals in the Philharmonic range. See the mint's [current product specification](https://www.muenzeoesterreich.com/en/products/1-ounce-silver-vienna-philharmonic-coin).
 
 Use the current mint specification when checking the exact issue offered. Ask the seller to state the year, metal, quantity, and condition on the order confirmation. A photograph can illustrate a listing without documenting the exact coin that will arrive. If a particular date or appearance matters to you, get that requirement acknowledged before paying. Do not assume that a listing offering assorted years allows you to choose a year later.
 
@@ -55,6 +55,11 @@ This process also makes comparisons with another bullion coin more useful. Compa
 ## Related
 
 - [Canadian Silver Maple Leaf Investment Guide](/blog/canadian-silver-maple-leaf-investment-guide/)
-- [Silver Premiums Explained for Beginners](/blog/silver-premiums-explained-for-beginners/)
+- [Comparing Online Silver Dealer Offers](/blog/best-online-silver-dealers-in-2026/)
 
-Read next: [Buying Silver From a Local Coin Shop vs Online](/blog/buying-silver-from-a-local-coin-shop-vs-online/)
+Read next: [Comparing Online Silver Dealer Offers](/blog/best-online-silver-dealers-in-2026/)
+
+## Sources
+
+- [Austrian Mint: one ounce silver Vienna Philharmonic specifications](https://www.muenzeoesterreich.com/en/products/1-ounce-silver-vienna-philharmonic-coin)
+- [Austrian Mint: Vienna Philharmonic bullion coins](https://www.muenzeoesterreich.com/en/vienna-philharmonic)

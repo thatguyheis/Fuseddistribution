@@ -108,4 +108,12 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/silver-as-money-throughout-history", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
   ["/blog/how-to-spot-fake-silver-coins-and-bars", "/blog/"],
   ["/blog/troy-ounce-vs-regular-ounce-silver-explained", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  // Retired 2026-11-04: unsupported portfolio, retirement, price forecast, and home insurance claims.
+  ["/blog/silver-mining-stocks-vs-physical-silver", "/reserve/"],
+  ["/blog/solar-panel-silver-demand-impact-on-price", "/blog/"],
+  ["/blog/silver-price-all-time-high-when-will-it-happen-again", "/blog/"],
+  ["/blog/rolling-over-401k-into-silver-ira-what-to-know", "/blog/"],
+  ["/blog/how-to-build-a-silver-stacking-portfolio-from-scratch", "/reserve/"],
+  ["/blog/first-majestic-silver-vs-physical-silver-investment", "/blog/"],
+  ["/blog/insuring-physical-silver-at-home", "/blog/silver-storage-vault-vs-home-storage/"],
 ]);
