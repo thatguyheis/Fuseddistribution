@@ -1,0 +1,19 @@
+{
+  "slug": "how-silver-futures-work-explained-for-stackers",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "The standard CME Silver futures contract represents 5,000 troy ounces and has physical delivery specifications.",
+      "source": "https://www.cmegroup.com/trading/metals/files/fact-card-silver-futures-options.pdf"
+    },
+    {
+      "claim": "Futures positions are marked to market daily and margin requirements may exceed exchange minimums at a futures commission merchant.",
+      "source": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/economicpurpose.html"
+    },
+    {
+      "claim": "CME lists contract details and specifications for Silver futures, including contract unit and quotation.",
+      "source": "https://www.cmegroup.com/markets/metals/precious/silver.contract.html"
+    }
+  ]
+}

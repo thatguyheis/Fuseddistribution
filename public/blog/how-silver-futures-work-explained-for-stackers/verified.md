@@ -64,11 +64,17 @@ The number of contracts is a separate choice from the margin percentage. Multipl
 
 Identify the exchange, product code, contract month, contract size, quote unit, settlement type, last trading date, and source date. Then ask whether the article is discussing price exposure, hedging, delivery, inventories, or retail premiums. Those are related topics with different evidence.
 
-For physical context, read [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/) and [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/). For record keeping, see [How To Build A Silver Inventory Spreadsheet](/blog/how-to-build-a-silver-inventory-spreadsheet/).
+For physical context, read [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/) and [Silver Premium Over Spot Explained](/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/). For record keeping, see [Silver Bar Serial Numbers and Inventory Records](/blog/silver-bar-serial-numbers-and-inventory-records/).
 
 ## Related
 - [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/)
-- [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/)
-- [How To Build A Silver Inventory Spreadsheet](/blog/how-to-build-a-silver-inventory-spreadsheet/)
+- [Silver Premium Over Spot Explained](/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/)
+- [Silver Bar Serial Numbers and Inventory Records](/blog/silver-bar-serial-numbers-and-inventory-records/)
 
-Read next: [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/)
+Read next: [Silver Bar Serial Numbers and Inventory Records](/blog/silver-bar-serial-numbers-and-inventory-records/)
+
+## Sources
+
+- [CME Group: Silver futures contract overview](https://www.cmegroup.com/markets/metals/precious/silver.contract.html)
+- [CME Group: Silver futures and options specifications](https://www.cmegroup.com/trading/metals/files/fact-card-silver-futures-options.pdf)
+- [CFTC: Economic purpose of futures markets and daily mark to market](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/economicpurpose.html)

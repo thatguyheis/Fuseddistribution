@@ -75,4 +75,7 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/should-you-buy-silver-in-dips-or-dollar-cost-average", "/reserve/"],
   ["/blog/silver-irs-reporting-requirements-what-you-need-to-know", "/blog/"],
   ["/blog/gainesville-coins-review-2026", "/blog/"],
+  // Retired 2026-11-04: unsupported tax reporting and unsafe coin cleaning instructions.
+  ["/blog/how-to-keep-records-of-silver-purchases-for-taxes", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
+  ["/blog/best-ways-to-clean-silver-coins-without-damage", "/blog/"],
 ]);
