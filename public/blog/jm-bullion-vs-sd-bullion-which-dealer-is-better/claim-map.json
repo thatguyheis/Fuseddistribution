@@ -1,0 +1,19 @@
+{
+  "slug": "jm-bullion-vs-sd-bullion-which-dealer-is-better",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "JM Bullion's published terms govern cancellation requests and possible cancellation costs.",
+      "source": "https://cdn.jmbullion.com/terms-and-conditions/"
+    },
+    {
+      "claim": "JM Bullion lists payout methods and fees for Sell-To-Us orders, and its help page identifies its last update date.",
+      "source": "https://help.jmbullion.com/article/508-how-will-you-pay-out-my-buyback-order"
+    },
+    {
+      "claim": "SD Bullion publishes its sell-to-us process and terms, which should be checked against a current quote.",
+      "source": "https://sdbullion.com/sell"
+    }
+  ]
+}

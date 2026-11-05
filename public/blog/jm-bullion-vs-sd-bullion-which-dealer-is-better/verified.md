@@ -70,6 +70,13 @@ If one dealer fits the product and payment terms while the other fits your buyba
 
 For broader context, read [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/) and [How To Buy Silver Coins At Spot Price](/blog/how-to-buy-silver-coins-at-spot-price/).
 
+## Sources
+
+- [JM Bullion: terms and conditions](https://cdn.jmbullion.com/terms-and-conditions/)
+- [JM Bullion: Sell-To-Us payout options](https://help.jmbullion.com/article/508-how-will-you-pay-out-my-buyback-order)
+- [SD Bullion: sell-to-us process](https://sdbullion.com/sell)
+- [SD Bullion: terms of use](https://sdbullion.com/terms-use)
+
 ## Related
 - [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/)
 - [How To Buy Silver Coins At Spot Price](/blog/how-to-buy-silver-coins-at-spot-price/)

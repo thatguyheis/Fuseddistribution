@@ -116,4 +116,12 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-build-a-silver-stacking-portfolio-from-scratch", "/reserve/"],
   ["/blog/first-majestic-silver-vs-physical-silver-investment", "/blog/"],
   ["/blog/insuring-physical-silver-at-home", "/blog/silver-storage-vault-vs-home-storage/"],
+  // Retired 2026-11-04: duplicate private-sale, price tracking, storage, ETF tax, allocation, and estate valuation guidance.
+  ["/blog/selling-silver-to-a-dealer-vs-private-sale", "/blog/how-to-compare-silver-buyback-quotes-fairly/"],
+  ["/blog/how-to-track-silver-price-daily", "/blog/silver-spot-price-explained-what-it-means/"],
+  ["/blog/home-safe-vs-safety-deposit-box-for-silver", "/blog/silver-storage-vault-vs-home-storage/"],
+  ["/blog/silver-etf-vs-physical-silver-tax-differences", "/blog/"],
+  ["/blog/how-much-silver-should-you-own-in-your-portfolio", "/reserve/"],
+  ["/blog/silver-alongside-stocks-and-bonds-diversification-guide", "/reserve/"],
+  ["/blog/how-to-value-inherited-silver-for-estate-purposes", "/blog/what-to-do-when-you-inherit-silver-coins-and-bars/"],
 ]);

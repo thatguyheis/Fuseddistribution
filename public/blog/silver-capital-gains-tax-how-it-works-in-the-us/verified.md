@@ -90,6 +90,13 @@ If a receipt is missing or an amount is unclear, mark the issue for resolution. 
 - **IRS Form 8949:** Sales and Other Dispositions of Capital Assets  
   [https://www.irs.gov/forms-pubs/about-form-8949](https://www.irs.gov/forms-pubs/about-form-8949)
 
+## Sources
+
+- [IRS Publication 550: Investment Income and Expenses](https://www.irs.gov/publications/p550)
+- [IRS Publication 551: Basis of Assets](https://www.irs.gov/publications/p551)
+- [IRS Topic 409: Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409)
+- [IRS: About Form 8949](https://www.irs.gov/forms-pubs/about-form-8949)
+
 ## Related
 
 - [Is Now A Good Time To Buy Silver 2026](/blog/is-now-a-good-time-to-buy-silver-2026/)
