@@ -136,4 +136,7 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/is-silver-a-good-hedge-against-inflation", "/reserve/"],
   ["/blog/silver-price-all-time-highs-what-drove-them", "/blog/"],
   ["/blog/silver-recycling-and-scrap-recovery-market", "/blog/how-silver-mine-production-affects-spot-price/"],
+  ["/blog/why-silver-has-industrial-demand-driving-price", "/blog/how-silver-mine-production-affects-spot-price/"],
+  ["/blog/largest-silver-producing-countries-in-the-world", "/blog/how-silver-mine-production-affects-spot-price/"],
+  ["/blog/silver-in-ancient-civilizations-as-currency", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
 ]);
