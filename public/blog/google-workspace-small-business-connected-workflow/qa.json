@@ -1,0 +1,36 @@
+{
+  "slug": "google-workspace-small-business-connected-workflow",
+  "mode": "codex-editorial",
+  "score": 93,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-05T18:40:42.940019+00:00",
+  "review_notes": [
+    "Reviewed source article, current Google primary product/pricing pages and user provided referral resource. Original illustrative scenario; no fixed price/discount, personal outcome or invented statistics. Referral disclosure appears in article, narration, closing artwork and copy.",
+    "Article local QA passed; six segments and282 spoken words pass duration preflight. Hero, reserved graphic panels and exact QR are source reviewed. Full encoded/audio/release QA remains pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Could your business work in one place?",
+    "visibleText": "Could your business work in one place?"
+  },
+  "artifactSha256": {
+    "verified.md": "2783b39a8a229fd63e4b2cd535678c8e41dbf251e75e9223fcd2cbab112df48a",
+    "index.html": "ce2198cd4db42b9e761abe50eec42b8fae18ad539395bd9fcd953918e7c5dfb2",
+    "meta.json": "8264bba5d7f988985de4236ef214ac6fd2890bee2a3bcbbed33540b582ce1d04",
+    "research.json": "d9ba4442c744e1a28e43113c6f1ffca4bd8f65642972475bb89d27159ae59906",
+    "hero.jpg": "27f27a71ae86093df98c84d3fa0b795b512a42cd52fa7723f1107f4cd6f74a5e",
+    "photo-post.jpg": "27f27a71ae86093df98c84d3fa0b795b512a42cd52fa7723f1107f4cd6f74a5e",
+    "reel-script.md": "9ece569d05f020711ab133a6acbdb7b05ea9ad929858d1861b1a870940c86a3b",
+    "reel-data.md": "01bd66390f8dd96059ba9487747c43f4f3a87b30430a6fb6366ff5bfa0d41a59",
+    "social-copy.json": "d621967fcee9cfbdc9d84c3d2c6403af906b9c31c8bbf8c4eddfa8c35db290e6",
+    "attention-review.json": "e93f66b29da23823498caac9f364f1ac938d8ccbd56c5fc01ab584f1dc17ec63",
+    "presentation-plan.json": "47c846e8ed7758550e6e8908c494d66eca0e6f82a16ae1b282d50c5b30adc820",
+    "enrichment-plan.json": "e27e45e3dcbd8a465e92f5b94cd5af25bd3471db7f5178b0f1246d3805831ed4",
+    "scene-art-spec.json": "095abbc6900886f8b8fa12b7b033f674c84288579793ac316a8d0e5cdad6866e",
+    "artwork-qa.json": "e24d6857c765253d0f5ae8aa074448abe87e556288d33290b766b00677e9debd",
+    "qr-verification.json": "077234b2bc9943bd0f1cd4b6eec4bbebd9439a140555efdcb8a973f0b1a82d72"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Could your business work in one place?",
+    "visibleText": "Could your business work in one place?",
+    "spokenSeconds": 2.8,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved original 1080x1920 question hero and connected workflow panel; restrained first-two-second zoom."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Start with business email",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: One file, clear permissions",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Agree on the next action",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Compare the plans",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Ready to sign up for Google Workspace?",
+    "spokenText": "Scan the code to compare plans, review the terms, and start your trial. Ready to sign up for Google Workspace?",
+    "primaryAction": "click",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete connected-workflow question and legible practical steps lead to a single signup decision. QR retention and referral clicks must be measured before claiming improvement.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "referral-link-clicks"
+    ],
+    "comparison": "Compare similar-length posts on the same platform; include sample size."
+  }
+}

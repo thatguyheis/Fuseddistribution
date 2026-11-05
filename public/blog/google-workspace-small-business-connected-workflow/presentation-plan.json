@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-0-hook.jpg",
+        "sha256": "27f27a71ae86093df98c84d3fa0b795b512a42cd52fa7723f1107f4cd6f74a5e",
+        "weight": 1,
+        "title": "Could your business work in one place?",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-1-email.jpg",
+        "sha256": "4fe7c56e97e6d2c4b6550bbcf363415f730547fa1e6a6759bc03865a67d428ce",
+        "weight": 1,
+        "title": "Start with business email",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-2-sharing.jpg",
+        "sha256": "078861e0c4d6a88e0d4f7e11a4d1e365236fde674714b691609ea04f7128e1bd",
+        "weight": 1,
+        "title": "One file, clear permissions",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-3-meetings.jpg",
+        "sha256": "b285bb5886316d3faa642d89e77bc986a674e95e2d9474865d6b1725d22e0d34",
+        "weight": 1,
+        "title": "Agree on the next action",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-4-plans.jpg",
+        "sha256": "902d820d30656210a43d762284be15b9182bc0181113a31a09b4003b97336af0",
+        "weight": 1,
+        "title": "Compare the plans",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-small-business-connected-workflow/images/scene-5-signup.jpg",
+        "sha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+        "weight": 1,
+        "title": "Ready to sign up for Google Workspace?",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

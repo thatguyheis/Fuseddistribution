@@ -1,0 +1,36 @@
+{
+  "slug": "google-workspace-small-business-connected-workflow",
+  "title": "Google Workspace for a Small Business: One Connected Workflow",
+  "description": "Build a Google Workspace workflow for business email, shared files, document reviews, and meetings. Compare plans and use a clearly disclosed referral link.",
+  "ogDescription": "Connect a customer inquiry to a shared file, reviewed document and scheduled next step with Google Workspace.",
+  "alt": "Google Workspace connected business workflow diagram",
+  "brand": "tech",
+  "date": "2026-11-05",
+  "tags": [
+    "Google Workspace",
+    "Business Growth",
+    "Productivity"
+  ],
+  "ctaLine": "Compare Google Workspace plans and sign up through the disclosed referral link.",
+  "contentGraphic": {
+    "label": "Illustrative customer inquiry workflow using Google Workspace",
+    "rows": [
+      {
+        "condition": "Receive the inquiry",
+        "action": "Gmail business address"
+      },
+      {
+        "condition": "Share the working file",
+        "action": "Drive link with appropriate permissions"
+      },
+      {
+        "condition": "Collect the review",
+        "action": "Docs comments and a clear owner"
+      },
+      {
+        "condition": "Agree on the next step",
+        "action": "Calendar event and Meet when useful"
+      }
+    ]
+  }
+}

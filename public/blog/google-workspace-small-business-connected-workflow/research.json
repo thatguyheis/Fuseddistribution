@@ -1,0 +1,61 @@
+{
+  "topic": "Google Workspace for a Small Business: One Connected Workflow",
+  "researchedAt": "2026-11-05",
+  "sources": [
+    {
+      "url": "https://refergoogleworkspace.withgoogle.com/",
+      "title": "Google Workspace Referral Program",
+      "publisher": "Google",
+      "claim": "Program information, transparent referral disclosure and resource-use guidance.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/products/gmail/",
+      "title": "Gmail for business",
+      "publisher": "Google",
+      "claim": "Custom domain business email.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/products/drive/",
+      "title": "Google Drive",
+      "publisher": "Google",
+      "claim": "File storage and sharing.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/products/docs/",
+      "title": "Google Docs",
+      "publisher": "Google",
+      "claim": "Document collaboration and comments.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/products/calendar/",
+      "title": "Google Calendar",
+      "publisher": "Google",
+      "claim": "Calendar events and scheduling.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/products/meet/",
+      "title": "Google Meet",
+      "publisher": "Google",
+      "claim": "Video meetings.",
+      "accessed": "2026-11-05"
+    },
+    {
+      "url": "https://workspace.google.com/pricing",
+      "title": "Google Workspace pricing",
+      "publisher": "Google",
+      "claim": "Business Starter30GB,Standard2TB,Plus5TB pooled storage peruser; current trial and planterms.",
+      "accessed": "2026-11-05"
+    }
+  ],
+  "providedSourceResolved": "https://refergoogleworkspace.withgoogle.com/?utm_source=GWReferral&utm_medium=email&utm_campaign=onboard_welcome&utm_term=referral_site&utm_content=us",
+  "referralUrl": "https://referworkspace.app.goo.gl/kSMy",
+  "referralVerified": true,
+  "referralFinalHost": "workspace.google.com",
+  "referralIdVerified": "LM3DPMX",
+  "scopeNote": "Original illustrative workflow. No customer outcome/time-saving statistics, fixed prices, guaranteed discounts or borrowed Referral Program artwork. The signup link is a disclosed referral link."
+}

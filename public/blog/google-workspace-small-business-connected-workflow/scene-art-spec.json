@@ -1,0 +1,95 @@
+{
+  "slug": "google-workspace-small-business-connected-workflow",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Could your business work in one place?",
+      "panel": {
+        "title": "ONE CONNECTED WORKFLOW",
+        "items": [
+          {
+            "label": "Email",
+            "value": "Receive the inquiry"
+          },
+          {
+            "label": "Files",
+            "value": "Share the right link"
+          },
+          {
+            "label": "Next step",
+            "value": "Assign an owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "email",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Start with business email",
+      "panel": {
+        "title": "CHECK BEFORE SWITCHING",
+        "items": [
+          {
+            "label": "Domain",
+            "value": "Verify ownership"
+          },
+          {
+            "label": "Mail",
+            "value": "Follow setup steps"
+          },
+          {
+            "label": "Test",
+            "value": "Send and receive"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sharing",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "One file, clear permissions",
+      "reservedGraphic": true
+    },
+    {
+      "id": "meetings",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Agree on the next action",
+      "panel": {
+        "title": "MAKE THE NEXT STEP CLEAR",
+        "items": [
+          {
+            "label": "Calendar",
+            "value": "Time and invitees"
+          },
+          {
+            "label": "Meet",
+            "value": "When a call helps"
+          },
+          {
+            "label": "Decision",
+            "value": "Record the owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "plans",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Compare the plans",
+      "reservedGraphic": true
+    },
+    {
+      "id": "signup",
+      "kind": "cta",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Ready to sign up for Google Workspace?",
+      "reservedGraphic": true
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "flow",
+      "title": "One inquiry, a clear handoff",
+      "source": "Illustrative workflow; Google Workspace product guides",
+      "takeaway": "Check access and assign the next action",
+      "rows": [
+        {
+          "label": "Gmail",
+          "detail": "Receive the inquiry"
+        },
+        {
+          "label": "Drive + Docs",
+          "detail": "Share the file and collect review"
+        },
+        {
+          "label": "Calendar + Meet",
+          "detail": "Agree on the next step"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 4,
+      "kind": "table",
+      "title": "Pooled storage per user",
+      "source": "Google Workspace pricing, checked Nov 5, 2026",
+      "takeaway": "Compare current features, eligibility and terms",
+      "rows": [
+        {
+          "label": "Business Starter",
+          "detail": "30 GB"
+        },
+        {
+          "label": "Business Standard",
+          "detail": "2 TB"
+        },
+        {
+          "label": "Business Plus",
+          "detail": "5 TB"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet cue introducing the setup checklist"
+    },
+    {
+      "segmentIndex": 3,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.4,
+      "purpose": "Quiet cue marking the agreed next action"
+    }
+  ]
+}

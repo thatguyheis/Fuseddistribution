@@ -1,0 +1,11 @@
+{
+  "url": "https://referworkspace.app.goo.gl/kSMy",
+  "generator": "Apple CoreImage CIQRCodeGenerator, H correction, four added quiet modules",
+  "decoder": "Apple Vision VNDetectBarcodesRequest",
+  "verifiedAt": "2026-11-05T18:40:42.940019+00:00",
+  "verifiedSources": [
+    "full-size closing JPEG",
+    "360x640 phone preview"
+  ],
+  "closingSha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835"
+}

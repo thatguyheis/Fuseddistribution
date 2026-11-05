@@ -1,0 +1,14 @@
+{
+  "slug": "google-workspace-small-business-connected-workflow",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-05T18:40:42.940019+00:00",
+  "pass": true,
+  "hero": {
+    "sha256": "27f27a71ae86093df98c84d3fa0b795b512a42cd52fa7723f1107f4cd6f74a5e",
+    "notes": "Original 1080 question hero reviewed for large central text and first-frame use."
+  },
+  "notes": [
+    "Original conceptual workflow graphics, source-backed per-user pooled-storage comparison and two quiet approved sound cues. No borrowed Google Referral Program images or fabricated product screens.",
+    "Closing referral QR decodes to the exact user URL from full JPEG and phone preview; static quiet zone, visible signup CTA and referral disclosure. Final encoded QR will be decoded again."
+  ]
+}
