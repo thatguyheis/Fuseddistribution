@@ -102,4 +102,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/silver-counterfeit-detection-guide", "/blog/"],
   ["/blog/self-directed-ira-approved-silver-coins-and-bars-list", "/blog/"],
   ["/blog/how-to-start-buying-silver-with-100-dollars", "/reserve/"],
+  // Retired 2026-11-04: duplicate estate guidance, incorrect exchange descriptions, unsupported money history, or unsafe authenticity tests.
+  ["/blog/how-to-divide-silver-in-an-estate-fairly", "/blog/what-to-do-when-you-inherit-silver-coins-and-bars/"],
+  ["/blog/what-is-comex-silver-and-how-does-it-affect-spot-price", "/blog/how-silver-futures-work-explained-for-stackers/"],
+  ["/blog/silver-as-money-throughout-history", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
+  ["/blog/how-to-spot-fake-silver-coins-and-bars", "/blog/"],
 ]);
