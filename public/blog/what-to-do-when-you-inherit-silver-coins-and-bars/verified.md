@@ -64,6 +64,13 @@ Ask a probate lawyer about authority, title, creditor claims, and distribution r
 
 The safest sequence is: confirm authority, secure the collection, inventory without altering it, separate stated content from appraised value, document the relevant valuation date and basis, then decide whether to hold, divide, or sell. That order preserves options while the estate and its professionals determine the details.
 
+## Sources
+
+- [IRS Publication 551: Basis of Assets](https://www.irs.gov/publications/p551)
+- [IRS Publication 559: Survivors, Executors, and Administrators](https://www.irs.gov/publications/p559)
+- [IRS Instructions for Form 8949](https://www.irs.gov/instructions/i8949)
+- [IRS: gifts and inheritances](https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances)
+
 ## Related
 
 - [How To Value Inherited Silver For Estate Purposes](/blog/how-to-value-inherited-silver-for-estate-purposes/)
