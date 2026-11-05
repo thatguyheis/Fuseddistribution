@@ -58,7 +58,12 @@ Confirm authority. Secure the collection. Photograph and number every group. Sor
 
 Inherited junk silver can be manageable when identification comes before pricing and documentation comes before division. Take the time to separate common metal value from possible collector value, and use qualified legal, appraisal, and tax help where the estate requires it.
 
-Sources: [US Mint coin specifications](https://www.usmint.gov/learn/coin-and-medal-programs/coin-specifications), [IRS Publication 551](https://www.irs.gov/publications/p551), and [IRS Publication 559](https://www.irs.gov/publications/p559).
+## Sources
+
+- [U.S. Mint: coin specifications](https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications)
+- [U.S. Mint: 1965 half dollar composition changes](https://www.usmint.gov/learn/history/historical-documents/first-striking-of-half-dollars-from-new-coinage-material)
+- [IRS Publication 551: Basis of Assets](https://www.irs.gov/publications/p551)
+- [IRS Publication 559: Survivors, Executors, and Administrators](https://www.irs.gov/publications/p559)
 
 
 ## Related

@@ -58,11 +58,16 @@ Assume a hypothetical market starts with 800 million ounces of mine output and 2
 
 Production data is valuable for understanding supply capacity and timing. It is weak as a stand alone trading signal. Check the full flow, the quality of the data, the host metal connection, project stage, inventories, demand, and market expectations. Keep historical facts separate from estimates, and do not turn a supply statistic into a promise about future returns.
 
-For related context, read [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/), [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/), and [How To Read Silver Price Charts](/blog/how-to-read-silver-spot-price-charts/).
+For related context, read [How Silver Futures Work](/blog/how-silver-futures-work-explained-for-stackers/), [How to Compare Silver Buyback Quotes](/blog/how-to-compare-silver-buyback-quotes-fairly/), and [How To Read Silver Price Charts](/blog/how-to-read-silver-spot-price-charts/).
+
+## Sources
+
+- [Silver Institute: World Silver Survey supply and demand](https://silverinstitute.org/silver-supply-demand/)
+- [USGS: Mineral Commodity Summaries 2025, Silver](https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-silver.pdf)
 
 ## Related
-- [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/)
+- [How Silver Futures Work](/blog/how-silver-futures-work-explained-for-stackers/)
 - [How To Read Silver Price Charts](/blog/how-to-read-silver-spot-price-charts/)
-- [Silver Premiums Explained For Beginners](/blog/silver-premiums-explained-for-beginners/)
+- [How to Compare Silver Buyback Quotes](/blog/how-to-compare-silver-buyback-quotes-fairly/)
 
-Read next: [What Is COMEX Silver And How Does It Affect Spot Price](/blog/what-is-comex-silver-and-how-does-it-affect-spot-price/)
+Read next: [How Silver Futures Work](/blog/how-silver-futures-work-explained-for-stackers/)

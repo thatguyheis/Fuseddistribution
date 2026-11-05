@@ -1,0 +1,15 @@
+{
+  "slug": "how-silver-mine-production-affects-spot-price",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "Global mine production rose 0.9 percent to 819.7 million ounces in 2024, while total demand and recycling followed separate trends.",
+      "source": "https://silverinstitute.org/silver-supply-demand/"
+    },
+    {
+      "claim": "USGS reports that U.S. silver production includes output from primary silver mines and byproduct or coproduct operations.",
+      "source": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-silver.pdf"
+    }
+  ]
+}

@@ -1,11 +1,27 @@
 {
   "slug": "inherited-junk-silver-what-to-do-with-it",
   "sources": [
-    {"url":"https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances","supports":"inherited-property basis and sale reporting overview"},
-    {"url":"https://www.irs.gov/publications/p551","supports":"basis of inherited property and valuation-date rules"},
-    {"url":"https://www.irs.gov/publications/p559","supports":"survivors, executors, administrators, and estate property"},
-    {"url":"https://www.irs.gov/instructions/i8949","supports":"inherited property sale reporting and basis records"}
+    {
+      "url": "https://www.irs.gov/faqs/interest-dividends-other-types-of-income/gifts-inheritances",
+      "supports": "inherited-property basis and sale reporting overview",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://www.irs.gov/publications/p551",
+      "supports": "basis of inherited property and valuation-date rules",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://www.irs.gov/publications/p559",
+      "supports": "survivors, executors, administrators, and estate property",
+      "accessed": "2026-11-04"
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i8949",
+      "supports": "inherited property sale reporting and basis records",
+      "accessed": "2026-11-04"
+    }
   ],
-  "reviewedAt": "2026-09-14",
+  "reviewedAt": "2026-11-04",
   "note": "Probate authority and state law are expressly deferred to the estate lawyer or court. No personal legal, tax, appraisal, insurance, or investment advice is given."
 }
