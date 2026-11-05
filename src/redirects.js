@@ -130,4 +130,10 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/silver-portfolio-allocation-beginner-vs-advanced", "/reserve/"],
   ["/blog/can-you-put-physical-silver-in-an-ira", "/blog/"],
   ["/blog/magnet-test-for-silver-does-it-work", "/blog/"],
+  // Retired 2026-11-04: stale price histories, inventory price predictions, unsupported hedging statistics, and duplicate supply reporting.
+  ["/blog/silver-price-history-and-long-term-trends", "/blog/silver-and-the-bretton-woods-collapse-explained/"],
+  ["/blog/comex-silver-inventory-what-declining-stockpiles-mean-f", "/blog/how-silver-futures-work-explained-for-stackers/"],
+  ["/blog/is-silver-a-good-hedge-against-inflation", "/reserve/"],
+  ["/blog/silver-price-all-time-highs-what-drove-them", "/blog/"],
+  ["/blog/silver-recycling-and-scrap-recovery-market", "/blog/how-silver-mine-production-affects-spot-price/"],
 ]);
