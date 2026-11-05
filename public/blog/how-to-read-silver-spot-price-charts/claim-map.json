@@ -1,0 +1,19 @@
+{
+  "slug": "how-to-read-silver-spot-price-charts",
+  "reviewedAt": "2026-11-04",
+  "status": "fact-checked",
+  "claims": [
+    {
+      "claim": "Line, bar, and candlestick charts represent observations using different visual encodings and intervals.",
+      "source": "https://www.cmegroup.com/education/courses/technical-analysis/chart-types-candlestick-line-bar.html"
+    },
+    {
+      "claim": "Support and resistance are commonly used technical-analysis descriptions of price areas, not guarantees of future movement.",
+      "source": "https://www.cmegroup.com/education/courses/technical-analysis/support-and-resistance"
+    },
+    {
+      "claim": "Volume data needs the instrument and reporting context to be interpreted accurately.",
+      "source": "https://www.cmegroup.com/trading/about-volume.html"
+    }
+  ]
+}

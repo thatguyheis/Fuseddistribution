@@ -124,4 +124,10 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-much-silver-should-you-own-in-your-portfolio", "/reserve/"],
   ["/blog/silver-alongside-stocks-and-bonds-diversification-guide", "/reserve/"],
   ["/blog/how-to-value-inherited-silver-for-estate-purposes", "/blog/what-to-do-when-you-inherit-silver-coins-and-bars/"],
+  // Retired 2026-11-04: unsupported dealer ranking, sales promises, fixed allocation, IRA, and home-testing advice.
+  ["/blog/apmex-review-2026-premiums-selection-and-service", "/blog/best-online-silver-dealers-in-2026/"],
+  ["/blog/how-to-get-the-most-money-when-selling-silver", "/blog/how-to-compare-silver-buyback-quotes-fairly/"],
+  ["/blog/silver-portfolio-allocation-beginner-vs-advanced", "/reserve/"],
+  ["/blog/can-you-put-physical-silver-in-an-ira", "/blog/"],
+  ["/blog/magnet-test-for-silver-does-it-work", "/blog/"],
 ]);

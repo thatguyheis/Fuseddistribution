@@ -70,7 +70,14 @@ Keep the original chart settings and the note together. If later evidence change
 
 Read next: [Silver spot price explained](/blog/silver-spot-price-explained-what-it-means/).
 
+## Sources
+
+- [CME Group: chart types](https://www.cmegroup.com/education/courses/technical-analysis/chart-types-candlestick-line-bar.html)
+- [CME Group: support and resistance](https://www.cmegroup.com/education/courses/technical-analysis/support-and-resistance)
+- [CME Group: volume](https://www.cmegroup.com/trading/about-volume.html)
+- [Fidelity: support and resistance overview](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/support-and-resistance)
+
 ## Related
 
 - [Silver spot price explained](/blog/silver-spot-price-explained-what-it-means/)
-- [Build a silver stacking plan](/blog/how-to-build-a-silver-stacking-portfolio-from-scratch/)
+- [Silver storage options](/blog/silver-storage-vault-vs-home-storage/)
