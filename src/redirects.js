@@ -83,4 +83,9 @@ export const PERMANENT_REDIRECTS = new Map([
   ["/blog/how-to-compare-silver-premiums-across-dealers", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
   // Retired 2026-11-04: unsupported 100-ounce bar cost and investment claims link to retired purchase advice.
   ["/blog/100-oz-silver-bars-pros-and-cons", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  // Retired 2026-11-04: unsupported inventory, home purity testing, product, and dealer fee claims.
+  ["/blog/how-to-organize-and-inventory-your-silver-collection", "/blog/silver-bar-serial-numbers-and-inventory-records/"],
+  ["/blog/how-to-verify-silver-purity-at-home", "/reserve/"],
+  ["/blog/american-silver-eagle-complete-buying-guide", "/blog/1-oz-silver-coins-vs-10-oz-silver-bars-which-to-buy/"],
+  ["/blog/how-to-avoid-silver-dealer-scams", "/blog/"],
 ]);
