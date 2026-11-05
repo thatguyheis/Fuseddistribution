@@ -1,5 +1,20 @@
 [
   {
+    "slug": "google-workspace-small-business-connected-workflow",
+    "title": "Google Workspace for a Small Business: One Connected Workflow",
+    "date": "2026-11-05",
+    "excerpt": "Build a Google Workspace workflow for business email, shared files, document reviews, and meetings. Compare plans and use a clearly disclosed referral link.",
+    "tags": [
+      "Google Workspace",
+      "Business Growth",
+      "Productivity"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/google-workspace-small-business-connected-workflow/hero.jpg",
+    "imageAlt": "Google Workspace connected business workflow diagram"
+  },
+  {
     "slug": "verify-a-buffer-post-after-scheduling-it",
     "title": "Verify a Buffer Post After Scheduling It",
     "date": "2026-11-04",

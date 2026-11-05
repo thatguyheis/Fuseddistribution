@@ -1,0 +1,15 @@
+{
+  "showPending": false,
+  "primaryVideo": {
+    "url": "https://fuseddistribution.luxraycoco.workers.dev/reels/google-workspace-small-business-connected-workflow/google-workspace-small-business-connected-workflow.mp4",
+    "source": "verified release-approved hosted MP4",
+    "verified": true,
+    "verifiedAt": "2026-11-05T19:11:03.530127+00:00",
+    "durationSeconds": 104.512,
+    "bytes": 5674800,
+    "sha256": "76c525014717826b851552f12a03ffdfc057cff1f721ca153aff20a5d03a78c1",
+    "width": 1080,
+    "height": 1920
+  },
+  "platforms": {}
+}

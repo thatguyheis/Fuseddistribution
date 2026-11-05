@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "transcriptSha256": "9ece569d05f020711ab133a6acbdb7b05ea9ad929858d1861b1a870940c86a3b",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-05T19:04:46.916461+00:00",
+  "recognitionRuntime": "video/whisper-fallback-runtime.json",
+  "reviewNotes": "Independent small.en recognition matched the actual speech and removed base.en hallucinations without editing narration. Corrected brand spelling and storage typography only, preserving cue timing. Reproduction requires the recorded small.en runtime override.",
+  "corrections": [
+    {
+      "segment": 2,
+      "cue": 3,
+      "expectedText": "Use Doc's comments to collect questions",
+      "text": "Use Docs comments to collect questions"
+    },
+    {
+      "segment": 3,
+      "cue": 1,
+      "expectedText": "a calendar event and include the right",
+      "text": "a Calendar event and include the right"
+    },
+    {
+      "segment": 3,
+      "cue": 3,
+      "expectedText": "Add a meet conversation where it",
+      "text": "Add a Meet conversation where it"
+    },
+    {
+      "segment": 4,
+      "cue": 2,
+      "expectedText": "Google lists 30GB for starter, 2TB",
+      "text": "Google lists 30 GB for Starter, 2 TB"
+    },
+    {
+      "segment": 4,
+      "cue": 3,
+      "expectedText": "for standard, and 5TB for plus",
+      "text": "for Standard, and 5 TB for Plus"
+    }
+  ]
+}
