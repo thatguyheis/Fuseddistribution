@@ -63,6 +63,50 @@ def current_approval(slug: str) -> dict:
     return hashes
 
 
+def validate_handoff(queue_config: Path, config: dict, slugs: list[str], cap: int, target: int, date: str) -> str | None:
+    """Return a blocker unless Luna handed off this exact approved queue today."""
+    manifest_path = PRODUCTION / "handoffs" / f"{date}.json"
+    try:
+        manifest = json.loads(manifest_path.read_text())
+        config_path = queue_config.resolve()
+        expected_config = config_path.relative_to(ROOT.resolve()).as_posix()
+        if manifest.get("version") != 1 or manifest.get("status") != "ready":
+            return manifest.get("reason") or "dated Luna handoff is not marked ready"
+        if manifest.get("productionDatePacific") != date:
+            return "handoff production date does not match the Pacific run date"
+        if manifest.get("queueConfig") != expected_config or manifest.get("queueConfigSha256") != digest(config_path):
+            return "handoff queue config path or hash is stale"
+        if manifest.get("slugs") != slugs or manifest.get("maxTopicsPerDay") != cap or manifest.get("targetRendersPerDay") != target:
+            return "handoff topic order or daily limits do not match the active queue"
+        approvals = manifest.get("approvalFingerprints")
+        if not isinstance(approvals, dict) or set(approvals) != set(slugs):
+            return "handoff does not contain approval evidence for every queued topic"
+        for slug in slugs:
+            current = hashlib.sha256(json.dumps(current_approval(slug), sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+            if approvals.get(slug) != current:
+                return f"{slug}: editorial approval changed after the Luna handoff"
+        return None
+    except FileNotFoundError:
+        return f"dated Luna handoff is missing: {manifest_path}"
+    except (OSError, ValueError, TypeError) as error:
+        return f"dated Luna handoff could not be validated: {type(error).__name__}: {error}"
+
+
+def persist_handoff_block(date: str, slugs: list[str], reason: str) -> dict:
+    run_dir = PRODUCTION / "runs" / date
+    run_dir.mkdir(parents=True, exist_ok=True)
+    path = run_dir / "queue.json"
+    prior = {}
+    try:
+        prior = json.loads(path.read_text())
+    except (OSError, ValueError):
+        pass
+    prior.update(pacificDate=date, requestedSlugs=slugs, status="blocked_handoff",
+                 handoffBlocker=reason, updatedAt=dt.datetime.now(dt.timezone.utc).isoformat())
+    atomic_json(path, prior)
+    return prior
+
+
 def output_digests(slug: str) -> dict[str, str] | None:
     out = ROOT / "video/out" / slug
     paths = {
@@ -359,6 +403,18 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                     stream.write(f"\nRunner caught render exception: {type(error).__name__}: {error}\n")
                 result = subprocess.CompletedProcess(render_args, 127, "", str(error))
             render_code = result.returncode
+            tts_success_code = None
+            if render_code == 0:
+                try:
+                    circuit_success = leased_command(
+                        [sys.executable, "scripts/tts-circuit.py", "success", "--voice=chatterbox"],
+                        log=log_path,
+                    )
+                    tts_success_code = circuit_success.returncode
+                except Exception as error:
+                    with log_path.open("a", encoding="utf-8") as stream:
+                        stream.write(f"\nRunner could not record successful Chatterbox run: {type(error).__name__}: {error}\n")
+                    tts_success_code = 127
             release_code = 1
             if render_code == 0:
                 try:
@@ -380,6 +436,8 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
             status = "rendered-awaiting-review" if render_code == 0 and release_code == 0 and current else "render_failed" if render_code else "release_qa_failed"
             item = {"slug": slug, "status": status, "renderReturnCode": render_code, "releaseReturnCode": release_code,
                     "currentArtifactsValid": current, "log": str(log_path.relative_to(ROOT))}
+            if tts_success_code is not None:
+                item["ttsCircuitSuccessReturnCode"] = tts_success_code
             run_state["results"].append(item)
             save_topic(slug, date, status=status, renderReturnCode=render_code, releaseReturnCode=release_code,
                        currentArtifactsValid=current, artifactDigests=output_digests(slug),
@@ -422,17 +480,22 @@ def main() -> int:
     parser.add_argument("--wait-seconds", type=int, default=30)
     parser.add_argument("--max-wait-seconds", type=int, default=4 * 3600)
     parser.add_argument("--allow-daytime", action="store_true", help="Nick-authorized manual recovery only")
-    parser.add_argument("--dry-run", action="store_true", help="Check config, window, approvals, and current outputs without rendering")
+    parser.add_argument("--dry-run", action="store_true", help="Check today's Luna handoff, approvals, window, and current outputs without rendering")
     args = parser.parse_args()
     try:
-        config = {}
-        if not args.slugs:
-            config = json.loads(args.queue_config.read_text())
-            if config.get("version") != 1 or not isinstance(config.get("slugs"), list):
-                raise ValueError("queue config must contain version: 1 and a slugs array")
+        config = json.loads(args.queue_config.read_text())
+        if config.get("version") != 1 or not isinstance(config.get("slugs"), list):
+            raise ValueError("queue config must contain version: 1 and a slugs array")
         slugs = args.slugs or config["slugs"]
         cap = args.max_topics_per_day or config.get("maxTopicsPerDay", 3)
         target = config.get("targetRendersPerDay", 2)
+        date = now_pacific().date().isoformat()
+        handoff_blocker = validate_handoff(args.queue_config, config, slugs, cap, target, date)
+        if handoff_blocker:
+            result = persist_handoff_block(date, slugs, handoff_blocker)
+            print(json.dumps({"status": result["status"], "pacificDate": date,
+                              "requestedSlugs": slugs, "handoffBlocker": handoff_blocker}, sort_keys=True))
+            return 2
         if args.dry_run:
             result = dry_run(slugs, max_topics_per_day=cap, target_renders_per_day=target, allow_daytime=args.allow_daytime)
         else:

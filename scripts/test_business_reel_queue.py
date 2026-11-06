@@ -4,6 +4,8 @@ import importlib.util
 import json
 from pathlib import Path
 import subprocess
+import io
+from contextlib import redirect_stdout
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -37,6 +39,69 @@ class BusinessReelQueueTests(unittest.TestCase):
             "blockers": [], "artifactSha256": {"verified.md": "a" * 64},
         }))
         return blog
+
+    def write_handoff(self, slugs, *, date="2026-11-05", cap=3, target=2):
+        config_path = self.root / "ops/business-reel-queue.json"
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        config = {"version": 1, "maxTopicsPerDay": cap, "targetRendersPerDay": target, "slugs": slugs}
+        config_path.write_text(json.dumps(config))
+        approvals = {}
+        for slug in slugs:
+            hashes = json.loads((self.root / "public/blog" / slug / "qa.json").read_text())["artifactSha256"]
+            approvals[slug] = queue.hashlib.sha256(json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        handoff = {
+            "version": 1, "status": "ready", "productionDatePacific": date,
+            "queueConfig": "ops/business-reel-queue.json", "queueConfigSha256": queue.digest(config_path),
+            "slugs": slugs, "maxTopicsPerDay": cap, "targetRendersPerDay": target,
+            "approvalFingerprints": approvals,
+        }
+        path = self.production / "handoffs" / f"{date}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(handoff))
+        return config_path, config
+
+    def test_missing_handoff_fails_closed_without_running_approval_or_render_commands(self):
+        slugs = ["approved-one", "approved-two", "approved-three"]
+        for slug in slugs:
+            self.write_approval(slug)
+        config_path = self.root / "ops/business-reel-queue.json"
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        config = {"version": 1, "maxTopicsPerDay": 3, "targetRendersPerDay": 2, "slugs": slugs}
+        config_path.write_text(json.dumps(config))
+
+        reason = queue.validate_handoff(config_path, config, slugs, 3, 2, "2026-11-05")
+
+        self.assertIn("handoff is missing", reason)
+
+    def test_runner_entrypoint_records_missing_handoff_and_exits_without_dry_run_work(self):
+        slugs = ["approved-one", "approved-two", "approved-three"]
+        config_path = self.root / "ops/business-reel-queue.json"
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        config_path.write_text(json.dumps({"version": 1, "maxTopicsPerDay": 3,
+                                           "targetRendersPerDay": 2, "slugs": slugs}))
+        output = io.StringIO()
+        with patch.object(queue.sys, "argv", [str(SCRIPT), f"--queue-config={config_path}", "--dry-run"]), \
+                patch.object(queue, "now_pacific", return_value=self.now), \
+                redirect_stdout(output):
+            code = queue.main()
+
+        self.assertEqual(code, 2)
+        result = json.loads(output.getvalue())
+        self.assertEqual(result["status"], "blocked_handoff")
+        self.assertIn("handoff is missing", result["handoffBlocker"])
+        saved = json.loads((self.production / "runs" / "2026-11-05" / "queue.json").read_text())
+        self.assertEqual(saved["status"], "blocked_handoff")
+
+    def test_current_handoff_is_bound_to_queue_and_approval_hashes(self):
+        slugs = ["approved-one", "approved-two", "approved-three"]
+        for slug in slugs:
+            self.write_approval(slug)
+        config_path, config = self.write_handoff(slugs)
+
+        self.assertIsNone(queue.validate_handoff(config_path, config, slugs, 3, 2, "2026-11-05"))
+
+        config_path.write_text(config_path.read_text() + "\n")
+        self.assertIn("hash is stale", queue.validate_handoff(config_path, config, slugs, 3, 2, "2026-11-05"))
 
     def fake_commands(self, fail_slug=None, raise_slug=None, calls=None):
         calls = calls if calls is not None else []
@@ -99,6 +164,7 @@ class BusinessReelQueueTests(unittest.TestCase):
         self.assertEqual([item["status"] for item in result["results"]], ["render_failed", "rendered-awaiting-review", "rendered-awaiting-review"])
         self.assertEqual([next(arg.split("=", 1)[1] for arg in args if arg.startswith("--post="))
                           for args, _ in calls if any("render.mjs" in arg for arg in args)], slugs)
+        self.assertTrue(any(any("tts-circuit.py" in arg for arg in args) and "success" in args for args, _ in calls))
         self.assertTrue(all(queue.PRODUCTION.joinpath("runs", "2026-11-05", f"{slug}.log").exists() for slug in slugs))
         self.assertEqual(json.loads((queue.PRODUCTION / "topics" / f"{slugs[0]}.json").read_text())["status"], "render_failed")
         render_call = next((args, fds) for args, fds in calls if any("render.mjs" in arg for arg in args))

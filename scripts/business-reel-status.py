@@ -39,6 +39,7 @@ def summary():
         slugs.update(item['slug'] for item in ledger.get(key, []) if item.get('slug'))
     topics = []
     due_ids = []
+    handoff = read(STATE / 'production/handoffs' / f'{day}.json', {})
     for slug in sorted(slugs):
         records = []
         for platform in ['youtube', 'x', 'instagram']:
@@ -65,6 +66,7 @@ def summary():
     return {'pacificDate': day, 'checkedAt': now.isoformat(),
             'productionLease': lease_state(STATE / 'production/runner.lock'),
             'ttsLease': lease_state(Path('/tmp/fused-chatterbox-worker.lock')),
+            'handoff': handoff,
             'queue': read(STATE / 'production/runs' / day / 'queue.json', {}),
             'targetRendersPerDay': config.get('targetRendersPerDay', 2),
             'topics': topics, 'duePostIds': sorted(set(due_ids))}
