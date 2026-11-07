@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-0-hook.jpg",
+        "sha256": "a66faa74b520fb244424ebdf28087d4bd35708149e9a1fe9537a10ca648fda97",
+        "weight": 1,
+        "title": "Can you switch Gmail accounts without losing your data?",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-1-piece-two.jpg",
+        "sha256": "82f0cf0cf43f36862415243e48f77deeda07f079fbb2847cd98598f84efefb30",
+        "weight": 1,
+        "title": "Identify your account type",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-2-piece-three.jpg",
+        "sha256": "d1106c68192ce124650eb9c07fa2758159b653980ff73c0781617b2c94adfd06",
+        "weight": 1,
+        "title": "Domain verify path",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-3-piece-four.jpg",
+        "sha256": "f1791c84984fd56d02e4ff3f0ed4f229d1c5132cb33b8068c01114d60280fefe",
+        "weight": 1,
+        "title": "Keep personal accounts separate",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-4-piece-five.jpg",
+        "sha256": "f02c97475628d4a1fe5babe2bab9dec38e4576b10f54d1d732978c2f103c56a0",
+        "weight": 1,
+        "title": "Check transfer eligibility",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-5-step-five.jpg",
+        "sha256": "1666a1969d41e1a4ede92996bc321c494b0bc638ff75d2911674ae81d1fb80f3",
+        "weight": 1,
+        "title": "Plan data migration",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/closing-qr.png",
+        "sha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+        "weight": 1,
+        "title": "Compare Google Workspace plans",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused referral CTA card, QR verified",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

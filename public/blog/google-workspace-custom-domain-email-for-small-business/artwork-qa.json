@@ -1,0 +1,13 @@
+{
+  "slug": "google-workspace-custom-domain-email-for-small-business",
+  "reviewer": "Codex",
+  "pass": true,
+  "hero": {
+    "sha256": "f486c146da99877eca875ab93266f9c86bb89aa3a1c52aef415eb1c504f1788f",
+    "notes": "Original topic-specific 1080x1920 illustration with visible question and first-frame hero."
+  },
+  "notes": [
+    "Original conceptual diagrams. No fabricated interface, data, or performance statistics.",
+    "Referral closing card uses exact user link and existing independently decoded QR source. Final encoded QR verification remains a release gate."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Can you switch Gmail accounts without losing your data?",
+    "visibleText": "Can you switch Gmail accounts without losing your data?",
+    "spokenSeconds": 2.7,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Topic specific original 1080x1920 question hero shown at frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Identify your account path",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Domain verified Workspace",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Separate accounts stay separate",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check account transfer",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Ready to review your Google account path?",
+    "spokenText": "Ready to review your Google account path?",
+    "primaryAction": "click",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A topic-specific question followed by an accurate step sequence will retain viewers better than a generic Workspace overview.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "referral-link-clicks"
+    ],
+    "comparison": "Compare similar-duration Workspace reels by platform and record sample size."
+  }
+}

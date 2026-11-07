@@ -1,0 +1,150 @@
+{
+  "slug": "move-personal-gmail-to-google-workspace-business-email",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Can you switch Gmail accounts without losing your data?",
+      "panel": {
+        "title": "FIRST IDENTIFY THE PATH",
+        "items": [
+          {
+            "label": "Workspace",
+            "value": "Started with Gmail"
+          },
+          {
+            "label": "Personal",
+            "value": "Separate free account"
+          },
+          {
+            "label": "Conflict",
+            "value": "Account uses domain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-two",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Identify your account type",
+      "panel": {
+        "title": "CHOOSE THE RIGHT CASE",
+        "items": [
+          {
+            "label": "Gmail based",
+            "value": "Workspace signup path"
+          },
+          {
+            "label": "Personal",
+            "value": "Keep distinct or import"
+          },
+          {
+            "label": "Unmanaged",
+            "value": "Check transfer eligibility"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-three",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Domain verify path",
+      "panel": {
+        "title": "SPECIFIC WORKSPACE PATH",
+        "items": [
+          {
+            "label": "Verify",
+            "value": "Prove domain ownership"
+          },
+          {
+            "label": "Data",
+            "value": "Retained on this path"
+          },
+          {
+            "label": "Caveat",
+            "value": "Some services can change"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-four",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Keep personal accounts separate",
+      "panel": {
+        "title": "SEPARATE IS NOT MERGED",
+        "items": [
+          {
+            "label": "Personal",
+            "value": "Remains its own account"
+          },
+          {
+            "label": "Work",
+            "value": "New Workspace identity"
+          },
+          {
+            "label": "Import",
+            "value": "Plan data separately"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Check transfer eligibility",
+      "panel": {
+        "title": "PROTECT SOURCE DATA",
+        "items": [
+          {
+            "label": "Inventory",
+            "value": "Mail, Drive, contacts"
+          },
+          {
+            "label": "Confirm",
+            "value": "Check transfer eligibility"
+          },
+          {
+            "label": "Test",
+            "value": "Keep source until verified"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Plan data migration",
+      "panel": {
+        "title": "PLAN DATA MIGRATION",
+        "items": [
+          {
+            "label": "Step",
+            "value": "Follow Google guidance"
+          },
+          {
+            "label": "Check",
+            "value": "Review DNS results"
+          },
+          {
+            "label": "Next",
+            "value": "Confirm mail works"
+          }
+        ]
+      }
+    },
+    {
+      "id": "signup",
+      "kind": "cta",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Compare Workspace plans",
+      "reservedGraphic": true
+    }
+  ]
+}

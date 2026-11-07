@@ -1,0 +1,13 @@
+{
+  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+  "reviewer": "Codex",
+  "pass": true,
+  "hero": {
+    "sha256": "80703d50cbe1f666af8b1bb0d2f8b49cfa507e5337af211a1a6271e5a275dd49",
+    "notes": "Original topic-specific 1080x1920 illustration with visible question and first-frame hero."
+  },
+  "notes": [
+    "Original conceptual diagrams. No fabricated interface, data, or performance statistics.",
+    "Referral closing card uses exact user link and existing independently decoded QR source. Final encoded QR verification remains a release gate."
+  ]
+}

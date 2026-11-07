@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 3,
+      "kind": "flow",
+      "title": "Choose the right Gmail-to-Workspace path",
+      "source": "Google Admin guidance for domain-verified accounts, transfers, and migration",
+      "takeaway": "Identify account type before moving data",
+      "rows": [
+        {
+          "label": "Workspace + Gmail signup",
+          "detail": "Verify domain on documented path"
+        },
+        {
+          "label": "Personal Gmail + new work user",
+          "detail": "Keep separate; plan imports"
+        },
+        {
+          "label": "Address conflict",
+          "detail": "Check eligible transfer process"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the first practical step"
+    },
+    {
+      "segmentIndex": 4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the verification checklist"
+    }
+  ]
+}

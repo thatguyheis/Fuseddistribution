@@ -1,0 +1,36 @@
+{
+  "slug": "google-workspace-custom-domain-email-for-small-business",
+  "title": "How to Use Gmail with a Custom Domain for Your Business",
+  "description": "Set up Gmail for a custom business domain with verification, user accounts, MX records, and a safe delivery test before moving your business email.",
+  "ogDescription": "Set up Gmail for a custom business domain with verification, user accounts, MX records, and a safe d",
+  "alt": "Gmail custom domain setup flow graphic",
+  "brand": "tech",
+  "date": "2026-11-08",
+  "tags": [
+    "Google Workspace",
+    "Business Email",
+    "Small Business"
+  ],
+  "ctaLine": "Compare Google Workspace plans and sign up through the disclosed referral link.",
+  "contentGraphic": {
+    "label": "Custom domain Gmail setup",
+    "rows": [
+      {
+        "condition": "Domain",
+        "action": "Choose a domain you control"
+      },
+      {
+        "condition": "Verify",
+        "action": "Add Google provided DNS record"
+      },
+      {
+        "condition": "Accounts",
+        "action": "Create individual users"
+      },
+      {
+        "condition": "Mail",
+        "action": "Set MX and activate Gmail"
+      }
+    ]
+  }
+}

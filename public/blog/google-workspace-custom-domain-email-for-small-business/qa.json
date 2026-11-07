@@ -1,0 +1,39 @@
+{
+  "slug": "google-workspace-custom-domain-email-for-small-business",
+  "mode": "codex-editorial",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-07T21:13:42.067Z",
+  "review_notes": [
+    "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
+    "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Want Gmail with your own business domain?",
+    "visibleText": "Want Gmail with your own business domain?"
+  },
+  "artifactSha256": {
+    "verified.md": "c253028a1b082848c781b7d4471450ef6c88b5b1f21094c57b780d3675a7c63f",
+    "index.html": "6c8c623b4b8f3e95c1d5396459b8a33c4600596189c415f64708ea5fb8736bb8",
+    "meta.json": "9f260bf4fe7e31ab1a37587ed9ee5846ee58ab8cc3eee6bd1a47f61118d04212",
+    "research.json": "00c5011bc14b25e7742ba7fc0cb3f61c28a5abb118fec10918e2c30f5343ad61",
+    "hero.jpg": "f486c146da99877eca875ab93266f9c86bb89aa3a1c52aef415eb1c504f1788f",
+    "photo-post.jpg": "f486c146da99877eca875ab93266f9c86bb89aa3a1c52aef415eb1c504f1788f",
+    "reel-script.md": "f67cf006019fee6f2f6e9e97ab4f51b176feadde9550f77360d757991fdac90e",
+    "reel-data.md": "7fb73dec6380d102d171a469a78a14c58420dc0c988e64b3545ad4d4edcc6ff5",
+    "social-copy.json": "06b2d3e284b139cc06728482b6dbca99e7a13a7408fd5f265703974832cccd29",
+    "social-video.json": "d3901cae38c590172b4258b571459615eacd3fc0e233f908f6ccc091a904a5e2",
+    "enrichment-plan.json": "ddb97f71f7fbeae5c01b8fff58f6288899b78e838e08d5ff4235e7d911039ed0",
+    "attention-review.json": "210f4fcdc32d5987f81175e622fe15ed40bd1ba11992a855fe2c938720ca80ef",
+    "presentation-plan.json": "cdf953837f78d5c548ac3fe37798d023a5afd9612efbf1621bc1eee56c8c2535",
+    "scene-art-spec.json": "1b846bf2505f42ba49303f58b802194edcf964e8403cfed8ad9771d8fad2d1a4",
+    "artwork-qa.json": "8b5ade8964b138de3f9caa81b23c2e4789c179a439c5275e5e59a21efe926684",
+    "qr-verification.json": "d5783b508826658ff1dfa6d0911948053099fcbdccb8ce007159ee5fde771e92",
+    "images/closing-qr.png": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+    "images/referral-qr.png": "d061cf90c39fe649ec5e3b7293b38c3c3e0574a8f452f4ad6edbb84ee959d6c4"
+  }
+}

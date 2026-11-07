@@ -1,0 +1,150 @@
+{
+  "slug": "google-workspace-custom-domain-email-for-small-business",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Want Gmail with your own business domain?",
+      "panel": {
+        "title": "THE SETUP PATH",
+        "items": [
+          {
+            "label": "Domain",
+            "value": "Use a domain you control"
+          },
+          {
+            "label": "Verify",
+            "value": "Add Google DNS record"
+          },
+          {
+            "label": "Gmail",
+            "value": "Activate and test"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-two",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Gmail and your domain",
+      "panel": {
+        "title": "PLAN THE ADDRESS",
+        "items": [
+          {
+            "label": "Domain",
+            "value": "Confirm registrar access"
+          },
+          {
+            "label": "People",
+            "value": "Create individual accounts"
+          },
+          {
+            "label": "Roles",
+            "value": "Choose shared mailbox option"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-three",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Choose a business address",
+      "panel": {
+        "title": "PROVE DOMAIN CONTROL",
+        "items": [
+          {
+            "label": "Google",
+            "value": "Copy current record"
+          },
+          {
+            "label": "DNS",
+            "value": "Add at domain host"
+          },
+          {
+            "label": "Admin",
+            "value": "Confirm verification"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-four",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Verify your domain",
+      "panel": {
+        "title": "TURN ON MAIL",
+        "items": [
+          {
+            "label": "MX",
+            "value": "Use current Google values"
+          },
+          {
+            "label": "Admin",
+            "value": "Activate Gmail"
+          },
+          {
+            "label": "DNS",
+            "value": "Allow time to update"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Route Gmail delivery",
+      "panel": {
+        "title": "CHECK THE CHANGE",
+        "items": [
+          {
+            "label": "Send",
+            "value": "Use external inbox"
+          },
+          {
+            "label": "Reply",
+            "value": "Check custom address"
+          },
+          {
+            "label": "Review",
+            "value": "Test every key user"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Test the new email",
+      "panel": {
+        "title": "TEST THE NEW EMAIL",
+        "items": [
+          {
+            "label": "Step",
+            "value": "Follow Google guidance"
+          },
+          {
+            "label": "Check",
+            "value": "Review DNS results"
+          },
+          {
+            "label": "Next",
+            "value": "Confirm mail works"
+          }
+        ]
+      }
+    },
+    {
+      "id": "signup",
+      "kind": "cta",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Compare Workspace plans",
+      "reservedGraphic": true
+    }
+  ]
+}

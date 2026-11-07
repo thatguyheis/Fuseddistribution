@@ -1,0 +1,39 @@
+{
+  "slug": "move-personal-gmail-to-google-workspace-business-email",
+  "mode": "codex-editorial",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-07T21:13:42.071Z",
+  "review_notes": [
+    "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
+    "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can you switch Gmail accounts without losing your data?",
+    "visibleText": "Can you switch Gmail accounts without losing your data?"
+  },
+  "artifactSha256": {
+    "verified.md": "35698be8eba86eb4c3444aeabd39f0a79d376e44b7d8d097d4efc11792cac3c8",
+    "index.html": "b393828c1b9f311322e5150fc5d3c0c77f80f1bb488986f6273b706a5caf7fb7",
+    "meta.json": "4a0f7d5f7ee62b0da86fa05bcd59554390aa48e2e1e6fe135a011e68dc1f2932",
+    "research.json": "8f4d1a45b666381a9886bd967b10952c261b6289ae14fec5ae903f4bcd0178ed",
+    "hero.jpg": "a66faa74b520fb244424ebdf28087d4bd35708149e9a1fe9537a10ca648fda97",
+    "photo-post.jpg": "a66faa74b520fb244424ebdf28087d4bd35708149e9a1fe9537a10ca648fda97",
+    "reel-script.md": "6c950b0239f0fa36b4c72701dc429be52fbbcd78351a0f023127f840c93e69e7",
+    "reel-data.md": "b872e7d356e58253aef3ccadbbee0d955daffb0e3f506773be9c67fc79b94a25",
+    "social-copy.json": "b589c007a16d2fdcd5e30c3e7b4ddf52c3c5037d9bcbfcb0c01bcdeba2f0dacf",
+    "social-video.json": "52c256c0b711eda5fff671d58d7e6329276c51f55d9121e88677fc0a76f4f7ee",
+    "enrichment-plan.json": "18209867e9445116a3fb1095456775a84f64152b4ab6c8a87b2b7094c5256f83",
+    "attention-review.json": "bd35ace8f7ad829da4f308ebdb60b7c9c5f04565f4d10d7c4d79973645638291",
+    "presentation-plan.json": "ea291d1c8bf217746ff56669d40c9a4b0507edee51a5115e907738ab6f8d432c",
+    "scene-art-spec.json": "1c053eaac659390e6423c5cc2d10427f160d630ea48839c9ec79b4c1620f8a82",
+    "artwork-qa.json": "7dee7dc07e8704cb2a7f00656b07c12badf7f0f79ed68c364571df027e9320cb",
+    "qr-verification.json": "d5783b508826658ff1dfa6d0911948053099fcbdccb8ce007159ee5fde771e92",
+    "images/closing-qr.png": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+    "images/referral-qr.png": "d061cf90c39fe649ec5e3b7293b38c3c3e0574a8f452f4ad6edbb84ee959d6c4"
+  }
+}

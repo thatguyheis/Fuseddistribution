@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Want Gmail with your own business domain?",
+    "visibleText": "Want Gmail with your own business domain?",
+    "spokenSeconds": 2.7,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Topic specific original 1080x1920 question hero shown at frame zero."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Your domain and Gmail",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Choose the right address",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Verify domain ownership",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Route Gmail delivery",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Ready to set up Gmail for your domain?",
+    "spokenText": "Ready to set up Gmail for your domain?",
+    "primaryAction": "click",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A topic-specific question followed by an accurate step sequence will retain viewers better than a generic Workspace overview.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "referral-link-clicks"
+    ],
+    "comparison": "Compare similar-duration Workspace reels by platform and record sample size."
+  }
+}

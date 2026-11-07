@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 3,
+      "kind": "flow",
+      "title": "Custom domain Gmail setup",
+      "source": "Google Workspace setup and MX record guidance",
+      "takeaway": "Verify first, route mail, then test delivery",
+      "rows": [
+        {
+          "label": "Domain",
+          "detail": "Choose a domain you control"
+        },
+        {
+          "label": "Verify",
+          "detail": "Add Google provided DNS record"
+        },
+        {
+          "label": "Accounts",
+          "detail": "Create individual users"
+        },
+        {
+          "label": "Mail",
+          "detail": "Set MX and activate Gmail"
+        },
+        {
+          "label": "Test",
+          "detail": "Send and receive"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the first practical step"
+    },
+    {
+      "segmentIndex": 4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the verification checklist"
+    }
+  ]
+}

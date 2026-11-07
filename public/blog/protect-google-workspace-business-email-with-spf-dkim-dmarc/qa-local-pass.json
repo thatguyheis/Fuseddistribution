@@ -1,0 +1,7 @@
+{
+  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "mode": "deterministic-local"
+}

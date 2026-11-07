@@ -1,0 +1,13 @@
+{
+  "slug": "move-personal-gmail-to-google-workspace-business-email",
+  "reviewer": "Codex",
+  "pass": true,
+  "hero": {
+    "sha256": "a66faa74b520fb244424ebdf28087d4bd35708149e9a1fe9537a10ca648fda97",
+    "notes": "Original topic-specific 1080x1920 illustration with visible question and first-frame hero."
+  },
+  "notes": [
+    "Original conceptual diagrams. No fabricated interface, data, or performance statistics.",
+    "Referral closing card uses exact user link and existing independently decoded QR source. Final encoded QR verification remains a release gate."
+  ]
+}

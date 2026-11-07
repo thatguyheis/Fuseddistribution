@@ -1,0 +1,32 @@
+{
+  "slug": "move-personal-gmail-to-google-workspace-business-email",
+  "title": "Moving from Personal Gmail to Google Workspace: What Happens to Your Data?",
+  "description": "Understand Workspace domain verification, personal account transfer, and mail import before changing business email accounts or moving your data.",
+  "ogDescription": "Understand Workspace domain verification, personal account transfer, and mail import before changing",
+  "alt": "Personal Gmail account transition paths graphic",
+  "brand": "tech",
+  "date": "2026-11-08",
+  "tags": [
+    "Google Workspace",
+    "Business Email",
+    "Small Business"
+  ],
+  "ctaLine": "Compare Google Workspace plans and sign up through the disclosed referral link.",
+  "contentGraphic": {
+    "label": "Choose the right Gmail-to-Workspace path",
+    "rows": [
+      {
+        "condition": "Workspace + Gmail signup",
+        "action": "Verify domain on documented path"
+      },
+      {
+        "condition": "Personal Gmail + new work user",
+        "action": "Keep separate; plan imports"
+      },
+      {
+        "condition": "Address conflict",
+        "action": "Check eligible transfer process"
+      }
+    ]
+  }
+}

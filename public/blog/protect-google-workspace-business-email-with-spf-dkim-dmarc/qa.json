@@ -1,0 +1,39 @@
+{
+  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+  "mode": "codex-editorial",
+  "score": 90,
+  "pass": true,
+  "blockers": [],
+  "reviewer": "Codex",
+  "reviewed_at": "2026-11-07T21:13:42.073Z",
+  "review_notes": [
+    "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
+    "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can someone spoof your business email address?",
+    "visibleText": "Can someone spoof your business email address?"
+  },
+  "artifactSha256": {
+    "verified.md": "a2adbfbeb4655f81f531ed1d34b221e5a841cea591eb62099684b9617222293c",
+    "index.html": "fd0fc6242b8cde847ea0c02a2377f071d8c6751dad2f49a64ab446b01a67ee8c",
+    "meta.json": "fe438dd63d4501e928183c4c194cf00e132159d2bbea866025d11a8ce1d03c0e",
+    "research.json": "4f4152ef36944e8843f3e256651a8ae5ef7f107004a4e70b72712500a24a09e6",
+    "hero.jpg": "80703d50cbe1f666af8b1bb0d2f8b49cfa507e5337af211a1a6271e5a275dd49",
+    "photo-post.jpg": "80703d50cbe1f666af8b1bb0d2f8b49cfa507e5337af211a1a6271e5a275dd49",
+    "reel-script.md": "f21c735cc1ec68a13aa99e706396559084bbb71906ed3cbb09785bf1737b5483",
+    "reel-data.md": "3e186a333645f5c90ebcd501a0526d06431cb9f4e81f9f219bf41030051209bc",
+    "social-copy.json": "28f4a9f93d29a069538979f5b3bf912168b954257aae77090bad751a2e123594",
+    "social-video.json": "b3126032654abbf5ca7280a279602fef64506443f9f561ba2715791bd8733997",
+    "enrichment-plan.json": "f0f2263b007d42e99097908293615cab96f1a45a37690f6a2109e19b720507e1",
+    "attention-review.json": "c6bfb5f800ddc1ed9afde1a7baae81cf1f623a1d4ec35d0aa90bf7f5786beff8",
+    "presentation-plan.json": "a11c686e21f5c10b7459cf567c3ac18f618eafd6fd62ff06cd5c7e8c19e305c1",
+    "scene-art-spec.json": "9f08aa471a457149ee46e6ffa23da131f144ba1054a710bd5efa2bb147feef6c",
+    "artwork-qa.json": "b592294ab1d81fe79e384cdb6d0a38956def88b0ee92f241519c0ba2e8a3c7f5",
+    "qr-verification.json": "d5783b508826658ff1dfa6d0911948053099fcbdccb8ce007159ee5fde771e92",
+    "images/closing-qr.png": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+    "images/referral-qr.png": "d061cf90c39fe649ec5e3b7293b38c3c3e0574a8f452f4ad6edbb84ee959d6c4"
+  }
+}

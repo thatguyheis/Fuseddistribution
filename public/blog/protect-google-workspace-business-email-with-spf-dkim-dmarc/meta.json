@@ -1,0 +1,36 @@
+{
+  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+  "title": "SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide",
+  "description": "Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before enforcing a new policy across your domain.",
+  "ogDescription": "Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before en",
+  "alt": "Email authentication setup flow for Workspace",
+  "brand": "tech",
+  "date": "2026-11-08",
+  "tags": [
+    "Google Workspace",
+    "Business Email",
+    "Small Business"
+  ],
+  "ctaLine": "Compare Google Workspace plans and sign up through the disclosed referral link.",
+  "contentGraphic": {
+    "label": "Email authentication rollout",
+    "rows": [
+      {
+        "condition": "SPF",
+        "action": "Authorize senders"
+      },
+      {
+        "condition": "DKIM",
+        "action": "Sign outgoing mail"
+      },
+      {
+        "condition": "DMARC",
+        "action": "Monitor alignment"
+      },
+      {
+        "condition": "Review",
+        "action": "Fix sources before enforcement"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "topic": "SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide",
+  "researchedAt": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://knowledge.workspace.google.com/admin/security/set-up-spf",
+      "title": "Google Workspace authoritative guidance",
+      "publisher": "Google",
+      "accessed": "2026-11-07"
+    },
+    {
+      "url": "https://knowledge.workspace.google.com/admin/security/set-up-dkim",
+      "title": "Google Workspace authoritative guidance",
+      "publisher": "Google",
+      "accessed": "2026-11-07"
+    },
+    {
+      "url": "https://knowledge.workspace.google.com/admin/security/set-up-dmarc",
+      "title": "Google Workspace authoritative guidance",
+      "publisher": "Google",
+      "accessed": "2026-11-07"
+    },
+    {
+      "url": "https://referworkspace.app.goo.gl/kSMy",
+      "title": "Google Workspace authoritative guidance",
+      "publisher": "Google",
+      "accessed": "2026-11-07"
+    }
+  ],
+  "stats": [
+    {
+      "source_name": "Google"
+    }
+  ],
+  "referralUrl": "https://referworkspace.app.goo.gl/kSMy",
+  "referralDisclosure": "This is a referral link. I may earn a reward.",
+  "sourceReview": "Fact-checked against current Google Workspace Help. Account transfer, domain verification, and migration are distinct paths; check account eligibility and current Admin instructions."
+}

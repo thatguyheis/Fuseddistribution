@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-0-hook.jpg",
+        "sha256": "80703d50cbe1f666af8b1bb0d2f8b49cfa507e5337af211a1a6271e5a275dd49",
+        "weight": 1,
+        "title": "Can someone spoof your business email address?",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-1-piece-two.jpg",
+        "sha256": "f3ece725add928dbf76f28d9559790c01429f35ea86ad0a7db9d12771deda963",
+        "weight": 1,
+        "title": "Inventory email senders",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-2-piece-three.jpg",
+        "sha256": "24f7b5b582bad11eb3669810848c5e3634a79c3e191919bedeb9c124aeddca22",
+        "weight": 1,
+        "title": "SPF and DKIM checks",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-3-piece-four.jpg",
+        "sha256": "e34e35802cbf0374491f250d34857ceb501109967f0cce82f7fddb551ab8719b",
+        "weight": 1,
+        "title": "Monitor DMARC reports",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-4-piece-five.jpg",
+        "sha256": "876edab6ad631ff1325ff5ab2f0feca18d1a887c5bf15701ff941a7c84cd6d4a",
+        "weight": 1,
+        "title": "Fix legitimate mail sources",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/scene-5-step-five.jpg",
+        "sha256": "a5b73cfc798fc89ae11730dc8daba28477fd42177b28c19cb4f18759e3e48c03",
+        "weight": 1,
+        "title": "Roll out policy carefully",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/images/closing-qr.png",
+        "sha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+        "weight": 1,
+        "title": "Compare Google Workspace plans",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused referral CTA card, QR verified",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

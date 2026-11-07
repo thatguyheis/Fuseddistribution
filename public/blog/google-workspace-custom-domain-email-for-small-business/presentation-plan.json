@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-0-hook.jpg",
+        "sha256": "f486c146da99877eca875ab93266f9c86bb89aa3a1c52aef415eb1c504f1788f",
+        "weight": 1,
+        "title": "Want Gmail with your own business domain?",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-1-piece-two.jpg",
+        "sha256": "5e9b2ff4ab5879313c33490b986b5c672b52c7e08b45ddf85560afa2eb8f1de0",
+        "weight": 1,
+        "title": "Gmail and your domain",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-2-piece-three.jpg",
+        "sha256": "773678261582391349264b75376d6d2714e099c4ce95ec9cba4caa37a4ec95f3",
+        "weight": 1,
+        "title": "Choose a business address",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-3-piece-four.jpg",
+        "sha256": "bb54fd1cf5c7afb02990ee6d12e7278f7c298dcc7c08c58de503c2e87bc9c3a0",
+        "weight": 1,
+        "title": "Verify your domain",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-4-piece-five.jpg",
+        "sha256": "c0ab2783a17b87f805f7222d31303d1c326a74572da898b8857a7cfe54a05222",
+        "weight": 1,
+        "title": "Route Gmail delivery",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/scene-5-step-five.jpg",
+        "sha256": "f00f8198e16adc7c20c1c3fa93ad90e879eac798f805fbbc3cd42d48c08902bb",
+        "weight": 1,
+        "title": "Test the new email",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/google-workspace-custom-domain-email-for-small-business/images/closing-qr.png",
+        "sha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+        "weight": 1,
+        "title": "Compare Google Workspace plans",
+        "eyebrow": "GOOGLE WORKSPACE",
+        "credit": "Fused referral CTA card, QR verified",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

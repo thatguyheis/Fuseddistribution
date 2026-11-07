@@ -1,0 +1,150 @@
+{
+  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Can someone spoof your business email address?",
+      "panel": {
+        "title": "AUTHENTICATION BASICS",
+        "items": [
+          {
+            "label": "SPF",
+            "value": "Authorizes senders"
+          },
+          {
+            "label": "DKIM",
+            "value": "Signs outgoing mail"
+          },
+          {
+            "label": "DMARC",
+            "value": "Sets receiver policy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-two",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Inventory email senders",
+      "panel": {
+        "title": "LIST MAIL SYSTEMS",
+        "items": [
+          {
+            "label": "Inventory",
+            "value": "Find every sender"
+          },
+          {
+            "label": "One record",
+            "value": "Avoid duplicates"
+          },
+          {
+            "label": "Check",
+            "value": "Follow provider values"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-three",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "SPF and DKIM checks",
+      "panel": {
+        "title": "VERIFY THE SIGNATURE",
+        "items": [
+          {
+            "label": "Admin",
+            "value": "Generate selector"
+          },
+          {
+            "label": "DNS",
+            "value": "Publish public key"
+          },
+          {
+            "label": "Gmail",
+            "value": "Turn on signing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-four",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Monitor DMARC reports",
+      "panel": {
+        "title": "ALIGN AND MONITOR",
+        "items": [
+          {
+            "label": "Alignment",
+            "value": "Compare SPF and DKIM"
+          },
+          {
+            "label": "Reports",
+            "value": "Check reports"
+          },
+          {
+            "label": "Start",
+            "value": "Monitor before enforcement"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piece-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Fix legitimate mail sources",
+      "panel": {
+        "title": "TIGHTEN WITH EVIDENCE",
+        "items": [
+          {
+            "label": "Review",
+            "value": "Watch reports"
+          },
+          {
+            "label": "Correct",
+            "value": "Fix missed senders"
+          },
+          {
+            "label": "Then",
+            "value": "Consider stricter policy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-five",
+      "kind": "body",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Roll out policy carefully",
+      "panel": {
+        "title": "ROLL OUT POLICY CAREFULLY",
+        "items": [
+          {
+            "label": "Step",
+            "value": "Follow Google guidance"
+          },
+          {
+            "label": "Check",
+            "value": "Review DNS results"
+          },
+          {
+            "label": "Next",
+            "value": "Confirm mail works"
+          }
+        ]
+      }
+    },
+    {
+      "id": "signup",
+      "kind": "cta",
+      "eyebrow": "GOOGLE WORKSPACE",
+      "headline": "Compare Workspace plans",
+      "reservedGraphic": true
+    }
+  ]
+}

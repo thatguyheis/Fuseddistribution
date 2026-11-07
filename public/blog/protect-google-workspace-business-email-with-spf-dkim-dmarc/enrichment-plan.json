@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 4,
+      "kind": "flow",
+      "title": "Email authentication rollout",
+      "source": "Google Workspace Admin SPF, DKIM, and DMARC setup guidance",
+      "takeaway": "Inventory, authenticate, monitor, then tighten",
+      "rows": [
+        {
+          "label": "SPF",
+          "detail": "Authorize senders"
+        },
+        {
+          "label": "DKIM",
+          "detail": "Sign outgoing mail"
+        },
+        {
+          "label": "DMARC",
+          "detail": "Monitor alignment"
+        },
+        {
+          "label": "Review",
+          "detail": "Fix sources before enforcement"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the first practical step"
+    },
+    {
+      "segmentIndex": 4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue at the verification checklist"
+    }
+  ]
+}
