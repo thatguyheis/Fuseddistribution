@@ -240,7 +240,15 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   writeFileSync(join(outDir, 'storyboard.json'), `${JSON.stringify(storyboard, null, 2)}\n`);
   if (process.argv.includes('--prepare-only')) { console.log('Prepared narration, captions and render props for review.'); return; }
   const qualityFlags = outputProfile.highQualityFlags ? ' --image-format=png --crf=20 --x264-preset=slow --audio-bitrate=192k --pixel-format=yuv420p' : '';
-  run(`npx remotion render src/Root.tsx ${outputProfile.compositionId} --concurrency=1 --props="${propsFile}" "${outFile}"${qualityFlags}`);
+  const reuseEncodedOutput = process.argv.includes('--reuse-encoded-output');
+  if (reuseEncodedOutput) {
+    if (!existsSync(outFile) || statSync(outFile).size < 1024) {
+      throw new Error(`Cannot reuse missing or empty encoded MP4: ${outFile}`);
+    }
+    console.log(`\n→ reusing encoded MP4 for metadata and validation: ${outFile}`);
+  } else {
+    run(`npx remotion render src/Root.tsx ${outputProfile.compositionId} --concurrency=1 --props="${propsFile}" "${outFile}"${qualityFlags}`);
+  }
   if (statSync(outFile).size >= outputProfile.sizeFitThreshold) {
     console.log('\n→ fitting rendered MP4 to the upload budget');
     const fit = fitUploadSize({input: outFile});
@@ -277,11 +285,12 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
     outputDimensions: outputProfile.outputDimensions,
     presentationAudio,
     productionMeasurement: {
-      wallSeconds: (performance.now() - startedAt) / 1000,
+      wallSeconds: reuseEncodedOutput ? null : (performance.now() - startedAt) / 1000,
+      recoveredEncodedOutput: reuseEncodedOutput,
       nodePeakRssKiB: process.resourceUsage().maxRSS,
       memoryScope: 'Node renderer only; excludes child processes and GPU memory',
     },
-    renderedAt: new Date().toISOString(),
+    renderedAt: reuseEncodedOutput ? statSync(outFile).mtime.toISOString() : new Date().toISOString(),
     hookType: detectHookType(hookText),
     segmentCount: script.segments.length,
     scriptDuration: script.totalDuration,
