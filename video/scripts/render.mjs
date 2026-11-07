@@ -143,11 +143,20 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const circuit = action => spawnSync('python3',[join(videoDir,'../scripts/tts-circuit.py'),action,`--voice=${voice}`],{stdio:'inherit'}).status;
   if (needsSynthesis && circuit('check') !== 0 && !process.argv.includes('--supervised-tts-recovery')) throw new Error('TTS runtime is held; supervised recovery required');
   try {
-    if (needsSynthesis) run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice} --preflight-only`);
+    if (needsSynthesis) {
+      run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice} --preflight-only`);
+      const hookQa = JSON.parse(readFileSync(join(videoDir, '..', 'public', 'blog', slug, 'qa.json'), 'utf8'));
+      const preflightHookSeconds = collectAudioDurations(videoDir, slug, 1)[0];
+      if (hookQa.attentionOptimizationVersion === 1 && (!Number.isFinite(preflightHookSeconds) || preflightHookSeconds > 3.5)) {
+        const seconds = Number.isFinite(preflightHookSeconds) ? `${preflightHookSeconds.toFixed(2)}s` : 'unknown';
+        throw new Error(`HOOK_AUDIO_TOO_LONG: measured opening hook is ${seconds}; shorten it to 3.5s or less before generating remaining narration`);
+      }
+    }
     run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice}`);
     if (needsSynthesis) circuit('success');
   } catch(error) {
-    if (needsSynthesis) circuit('failure');
+    if (needsSynthesis && !error.message.startsWith('HOOK_AUDIO_TOO_LONG:')) circuit('failure');
+    if (error.message.startsWith('HOOK_AUDIO_TOO_LONG:')) throw error;
     throw new Error(`TTS_PREFLIGHT_FAILED: ${error.message}`);
   }
 

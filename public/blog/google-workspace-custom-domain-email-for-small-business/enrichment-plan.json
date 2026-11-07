@@ -17,16 +17,12 @@
           "detail": "Add Google provided DNS record"
         },
         {
-          "label": "Accounts",
-          "detail": "Create individual users"
-        },
-        {
-          "label": "Mail",
-          "detail": "Set MX and activate Gmail"
+          "label": "Accounts + MX",
+          "detail": "Create users and route Gmail"
         },
         {
           "label": "Test",
-          "detail": "Send and receive"
+          "detail": "Send and receive a message"
         }
       ]
     }

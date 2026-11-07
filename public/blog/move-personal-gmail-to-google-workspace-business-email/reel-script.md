@@ -5,9 +5,9 @@ content-kind: educate
 
 ---
 ## HOOK
-**Visual:** The answer depends on the account you already have.
+**Visual:** Will you lose your Gmail data?
 **Duration:** 4s
-Narration: Can you switch Gmail accounts without losing your data?
+Narration: Will you lose your Gmail data?
 
 ---
 ## OVERLAY: Identify your account path

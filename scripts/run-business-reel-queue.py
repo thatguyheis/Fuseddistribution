@@ -336,7 +336,7 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 checkpoint = json.loads(topic_path.read_text()) if topic_path.exists() else None
             except (OSError, ValueError):
                 checkpoint = None
-            if render_is_current(slug, approval, checkpoint):
+            if checkpoint is not None and checkpoint.get("pacificDate") == date and render_is_current(slug, approval, checkpoint):
                 item = {"slug": slug, "status": "already_current", "renderMeta": f"video/out/{slug}/render-meta.json"}
                 run_state["results"].append(item)
                 successful.add(slug)

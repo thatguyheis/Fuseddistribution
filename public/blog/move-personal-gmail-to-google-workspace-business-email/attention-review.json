@@ -2,14 +2,15 @@
   "version": 1,
   "pass": true,
   "hook": {
-    "spokenText": "Can you switch Gmail accounts without losing your data?",
-    "visibleText": "Can you switch Gmail accounts without losing your data?",
-    "spokenSeconds": 2.7,
+    "spokenText": "Will you lose your Gmail data?",
+    "visibleText": "Will you lose your Gmail data?",
+    "spokenSeconds": 2.32,
     "startsAtSeconds": 0,
     "questionHookRequired": true,
     "specificViewerProblemOrBenefit": true,
     "visibleWithoutSound": true,
-    "visual": "Topic specific original 1080x1920 question hero shown at frame zero."
+    "visual": "Topic specific original 1080x1920 question hero shown at frame zero.",
+    "spokenSecondsSource": "Measured Chatterbox preflight."
   },
   "payoffBeats": [
     {

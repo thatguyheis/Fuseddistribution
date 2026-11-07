@@ -1,4 +1,4 @@
-hook: Can you switch Gmail accounts without losing your data?
+hook: Will you lose your Gmail data?
 # Moving from Personal Gmail to Google Workspace: What Happens to Your Data?
 topic: Google Workspace
 format: business-growth-v1

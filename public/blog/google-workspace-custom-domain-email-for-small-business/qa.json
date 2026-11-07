@@ -5,10 +5,11 @@
   "pass": true,
   "blockers": [],
   "reviewer": "Codex",
-  "reviewed_at": "2026-11-07T21:13:42.067Z",
+  "reviewed_at": "2026-11-07T23:45:00Z",
   "review_notes": [
     "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
-    "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending."
+    "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending.",
+    "Owner review refreshed: The five-step setup graphic is now four rows; its hook measured 3.20 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -27,8 +28,8 @@
     "reel-data.md": "7fb73dec6380d102d171a469a78a14c58420dc0c988e64b3545ad4d4edcc6ff5",
     "social-copy.json": "06b2d3e284b139cc06728482b6dbca99e7a13a7408fd5f265703974832cccd29",
     "social-video.json": "d3901cae38c590172b4258b571459615eacd3fc0e233f908f6ccc091a904a5e2",
-    "enrichment-plan.json": "ddb97f71f7fbeae5c01b8fff58f6288899b78e838e08d5ff4235e7d911039ed0",
-    "attention-review.json": "210f4fcdc32d5987f81175e622fe15ed40bd1ba11992a855fe2c938720ca80ef",
+    "enrichment-plan.json": "d2cbfe2cbb2dedbd1dd55b615d6da5154b3446961c80b2b5219231a3b3769842",
+    "attention-review.json": "438d417fad0b489a69b90ad60738b7a0b02009ad001f403f8c81a50bcb15ad04",
     "presentation-plan.json": "cdf953837f78d5c548ac3fe37798d023a5afd9612efbf1621bc1eee56c8c2535",
     "scene-art-spec.json": "1b846bf2505f42ba49303f58b802194edcf964e8403cfed8ad9771d8fad2d1a4",
     "artwork-qa.json": "8b5ade8964b138de3f9caa81b23c2e4789c179a439c5275e5e59a21efe926684",

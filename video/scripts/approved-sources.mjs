@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { attentionReviewErrors } from './attention-review.mjs';
+import { parseReelScript } from './parse-script.mjs';
+import { validateEnrichmentPlan } from './production-enrichment.mjs';
 const required = ['verified.md','index.html','meta.json','research.json','hero.jpg','photo-post.jpg','reel-script.md','reel-data.md','social-copy.json'];
 export function assertApprovedSources(root, slug) {
   if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('Invalid reel slug');
@@ -18,6 +20,14 @@ export function assertApprovedSources(root, slug) {
   for (const name of artifacts) {
     const digest = createHash('sha256').update(readFileSync(join(directory,name))).digest('hex');
     if (qa.artifactSha256?.[name] !== digest) throw new Error(`Approved source changed: ${slug}/${name}; editorial review required`);
+  }
+  const enrichmentPath = join(directory, 'enrichment-plan.json');
+  if (existsSync(enrichmentPath)) {
+    const reelScript = readFileSync(join(directory, 'reel-script.md'), 'utf8');
+    const reelDataPath = join(directory, 'reel-data.md');
+    const reelData = existsSync(reelDataPath) ? readFileSync(reelDataPath, 'utf8') : null;
+    const parsedScript = parseReelScript(reelScript, slug, reelData);
+    validateEnrichmentPlan(JSON.parse(readFileSync(enrichmentPath, 'utf8')), parsedScript.segments.length);
   }
   if (qa.attentionOptimizationVersion === 1) {
     const attentionPath = join(directory, 'attention-review.json');

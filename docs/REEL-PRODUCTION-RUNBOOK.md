@@ -31,7 +31,7 @@ Every new render requires `public/blog/<slug>/enrichment-plan.json`. Minimum: on
 
 Indices are zero based. Graphic kinds: `flow`, `table`, `bar`; use 2–4 short rows. Bars also need numeric `value` per row, `unit` and `period`. Use one graphic per scene; compose its reserved middle panel with the source media rather than covering important evidence. Review source labels and takeaway with the narration.
 
-Run local blog QA **before** editorial sign-off; hash the current enrichment plan and all source artifacts in `qa.json`. `node video/scripts/approved-sources.mjs <slug>` verifies approval. Renderer enrichment validation occurs before expensive synthesis. The runtime stages approved sounds, rejects silent excerpts, caps their measured gain, animates the graphic and uses semantic slide/wipe/fade transitions in both routes. Do not force all presentation transitions to fade.
+Run local blog QA **before** editorial sign-off; hash the current enrichment plan and all source artifacts in `qa.json`. `node video/scripts/approved-sources.mjs <slug>` verifies approval and validates enrichment structure, including the 2–4 row graphic limit. Before full narration synthesis, the renderer measures the approved opening hook; if it exceeds 3.5 seconds, revise and reapprove the spoken and visible hook before generating the remaining segments. A hook length rejection is an editorial correction, not a Chatterbox runtime failure. The runtime stages approved sounds, rejects silent excerpts, caps their measured gain, animates the graphic and uses semantic slide/wipe/fade transitions in both routes. Do not force all presentation transitions to fade.
 
 ## Render and release
 

@@ -14,9 +14,9 @@
       {
         "type": "photo",
         "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-0-hook.jpg",
-        "sha256": "a66faa74b520fb244424ebdf28087d4bd35708149e9a1fe9537a10ca648fda97",
+        "sha256": "c1276e103e314f0aae31b464ccec1e71a819835d8f9cf19627684c83358ef5b2",
         "weight": 1,
-        "title": "Can you switch Gmail accounts without losing your data?",
+        "title": "Will you lose your Gmail data?",
         "eyebrow": "GOOGLE WORKSPACE",
         "credit": "Fused original vector graphic",
         "fit": "cover",
@@ -91,12 +91,12 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/closing-qr.png",
-        "sha256": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
+        "path": "public/blog/move-personal-gmail-to-google-workspace-business-email/images/scene-6-signup.jpg",
+        "sha256": "86cbae8be04b6b3b6f07162427bf15158e29434e979f1bceb08e3c1edd015fb2",
         "weight": 1,
-        "title": "Compare Google Workspace plans",
+        "title": "Compare Workspace plans",
         "eyebrow": "GOOGLE WORKSPACE",
-        "credit": "Fused referral CTA card, QR verified",
+        "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true,
         "reservedGraphic": true
