@@ -1,4 +1,4 @@
-const DEFAULT_TIMEOUT_MS = 15_000;
+const DEFAULT_TIMEOUT_MS = 30_000;
 const DEFAULT_MAX_BYTES = 25 * 1024 * 1024;
 
 export function isHttpsUrl(url) {
@@ -8,27 +8,18 @@ export function isHttpsUrl(url) {
 function parseContentLength(value) {
   if (!value) return null;
   const length = Number(value);
-  return Number.isFinite(length) && length >= 0 ? length : null;
+  return Number.isSafeInteger(length) && length >= 0 ? length : null;
 }
 
-function totalBytesFromHeaders(response) {
-  const contentLength = parseContentLength(response.headers.get('content-length'));
-  const contentRange = response.headers.get('content-range') || '';
-  const rangeTotalMatch = contentRange.match(/\/(\d+)$/);
-  return rangeTotalMatch ? Number(rangeTotalMatch[1]) : contentLength;
-}
-
-async function fetchWithTimeout(url, init, timeoutMs) {
-  return fetch(url, {
-    ...init,
-    redirect: 'follow',
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-}
-
-function responseLooksUsable(response) {
-  const contentType = response.headers.get('content-type') || '';
-  return (response.status === 200 || response.status === 206) && contentType.toLowerCase().startsWith('video/mp4');
+function responseFailure(url, reason, response, extra = {}) {
+  return {
+    url,
+    ok: false,
+    reason,
+    status: response?.status,
+    contentType: response?.headers.get('content-type') || '',
+    ...extra,
+  };
 }
 
 export async function verifyPublicMp4Url(url, options = {}) {
@@ -40,50 +31,92 @@ export async function verifyPublicMp4Url(url, options = {}) {
   }
 
   let response;
-  let method = 'HEAD';
   try {
-    response = await fetchWithTimeout(url, { method: 'HEAD' }, timeoutMs);
+    // Buffer downloads the media itself. Consume the full response here so a
+    // successful HEAD or one-byte range cannot mask a truncated or gated MP4.
+    response = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      signal: AbortSignal.timeout(timeoutMs),
+    });
   } catch (error) {
-    return { url, ok: false, reason: 'public_media_url_fetch_failed', method, detail: error.message };
+    return { url, ok: false, reason: 'public_media_url_fetch_failed', method: 'GET full', detail: error.message };
   }
 
-  if (!responseLooksUsable(response)) {
-    try {
-      response = await fetchWithTimeout(url, { method: 'GET', headers: { Range: 'bytes=0-0' } }, timeoutMs);
-      method = 'GET range';
-    } catch (error) {
-      return { url, ok: false, reason: 'public_media_url_fetch_failed', method: 'GET range', detail: error.message };
-    }
+  if (response.status !== 200) {
+    await response.body?.cancel().catch(() => {});
+    return responseFailure(url, 'public_media_url_not_ok', response, { method: 'GET full' });
   }
 
   const contentType = response.headers.get('content-type') || '';
-  const totalBytes = totalBytesFromHeaders(response);
-
-  if (!(response.status === 200 || response.status === 206)) {
-    return { url, ok: false, reason: 'public_media_url_not_ok', method, status: response.status, contentType };
-  }
   if (!contentType.toLowerCase().startsWith('video/mp4')) {
-    return { url, ok: false, reason: 'public_media_url_not_mp4', method, status: response.status, contentType };
+    await response.body?.cancel().catch(() => {});
+    return responseFailure(url, 'public_media_url_not_mp4', response, { method: 'GET full' });
   }
-  if (Number.isFinite(totalBytes) && totalBytes > maxBytes) {
-    return {
-      url,
-      ok: false,
-      reason: 'media_too_large',
-      method,
-      status: response.status,
-      contentType,
-      bytes: totalBytes,
+
+  const declaredBytes = parseContentLength(response.headers.get('content-length'));
+  if (declaredBytes !== null && declaredBytes > maxBytes) {
+    await response.body?.cancel().catch(() => {});
+    return responseFailure(url, 'media_too_large', response, {
+      method: 'GET full',
+      bytes: declaredBytes,
       maxBytes,
-    };
+    });
+  }
+
+  let bytes = 0;
+  const prefix = new Uint8Array(12);
+  let prefixLength = 0;
+  try {
+    if (!response.body) throw new Error('empty response body');
+    const reader = response.body.getReader();
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      bytes += value.byteLength;
+      if (bytes > maxBytes) {
+        await reader.cancel();
+        return responseFailure(url, 'media_too_large', response, {
+          method: 'GET full',
+          bytes,
+          maxBytes,
+        });
+      }
+      const copyLength = Math.min(prefix.length - prefixLength, value.byteLength);
+      if (copyLength > 0) {
+        prefix.set(value.subarray(0, copyLength), prefixLength);
+        prefixLength += copyLength;
+      }
+    }
+  } catch (error) {
+    return responseFailure(url, 'public_media_url_body_read_failed', response, {
+      method: 'GET full',
+      bytes,
+      detail: error.message,
+    });
+  }
+
+  if (declaredBytes !== null && declaredBytes !== bytes) {
+    return responseFailure(url, 'public_media_url_incomplete', response, {
+      method: 'GET full',
+      bytes,
+      declaredBytes,
+    });
+  }
+
+  if (prefixLength < 12 || String.fromCharCode(...prefix.subarray(4, 8)) !== 'ftyp') {
+    return responseFailure(url, 'public_media_url_invalid_mp4_signature', response, {
+      method: 'GET full',
+      bytes,
+    });
   }
 
   return {
     url,
     ok: true,
-    method,
+    method: 'GET full',
     status: response.status,
     contentType,
-    bytes: Number.isFinite(totalBytes) ? totalBytes : null,
+    bytes,
   };
 }
