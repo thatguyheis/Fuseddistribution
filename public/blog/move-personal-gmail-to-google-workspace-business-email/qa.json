@@ -5,11 +5,13 @@
   "pass": true,
   "blockers": [],
   "reviewer": "Codex",
-  "reviewed_at": "2026-11-07T23:45:00Z",
+  "reviewed_at": "2026-11-08T01:16:36.449Z",
   "review_notes": [
     "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
     "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending.",
-    "Owner review refreshed: The spoken and visible migration question now match the regenerated hero; its hook measured 2.32 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration."
+    "Owner review refreshed: The spoken and visible migration question now match the regenerated hero; its hook measured 2.32 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration.",
+    "Repair: final CTA card now includes the verified closing QR, scan instruction, and referral disclosure in the encoded frame. Re-reviewing the replacement render before release.",
+    "Closing card source corrected to use the exact verified full-frame QR/referral card asset, replacing title-only artwork. The final encoded frames are under owner visual review."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -30,11 +32,12 @@
     "social-video.json": "52c256c0b711eda5fff671d58d7e6329276c51f55d9121e88677fc0a76f4f7ee",
     "enrichment-plan.json": "18209867e9445116a3fb1095456775a84f64152b4ab6c8a87b2b7094c5256f83",
     "attention-review.json": "38d3e07f80e447a83515442eea1d570b51f38221a032e431f0dfcfd366760745",
-    "presentation-plan.json": "43ed0a398add2401f4f1c9ea10c8791207351ec1c53a127fc029d2ccde3048db",
+    "presentation-plan.json": "887880c93f68c82e2b57b14dd0402ad647d42ace64caec4b8811b5c0be23e3f3",
     "scene-art-spec.json": "a71da9df4d4581f8b2b2a2bc029cc87abee5cfeff601ec529d95d456e413c857",
     "artwork-qa.json": "7ee12fd0d7ddd010d7bb4f21ce42c24637301e73963f91cecb5f617db424fffc",
     "qr-verification.json": "d5783b508826658ff1dfa6d0911948053099fcbdccb8ce007159ee5fde771e92",
     "images/closing-qr.png": "2f40db9e1372cee6bc804b2f808c592fa596b03fcb955277f79b32567d200835",
-    "images/referral-qr.png": "d061cf90c39fe649ec5e3b7293b38c3c3e0574a8f452f4ad6edbb84ee959d6c4"
+    "images/referral-qr.png": "d061cf90c39fe649ec5e3b7293b38c3c3e0574a8f452f4ad6edbb84ee959d6c4",
+    "images/scene-6-signup.svg": "06d7543f189bf57317dc36673bc6019a6200fa8a23ddeca7d5e2b86967dd959f"
   }
 }
