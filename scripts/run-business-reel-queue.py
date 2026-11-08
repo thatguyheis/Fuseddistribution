@@ -260,7 +260,7 @@ def dry_run(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_per
 
 
 def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_per_day: int = 2, allow_daytime: bool = False,
-              wait_seconds: int = 30, max_wait_seconds: int = 4 * 3600,
+              retry_failed: bool = False, wait_seconds: int = 30, max_wait_seconds: int = 4 * 3600,
               clock=now_pacific, run_command=command) -> dict:
     if not slugs or len(slugs) != len(set(slugs)) or any(not SLUG_RE.fullmatch(s) for s in slugs):
         raise ValueError("Provide unique, explicitly approved slugs using lowercase letters, digits, and single hyphens")
@@ -302,8 +302,15 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
     # exceed the configured cap or retry a failed topic on the same Pacific day.
     prior = json.loads(run_path.read_text()) if run_path.exists() else {}
     attempted = set(prior.get("attemptedSlugs", []))
+    retried = set(prior.get("retriedSlugs", []))
+    prior_failed = {
+        item.get("slug") for item in prior.get("results", [])
+        if item.get("status") in ("render_failed", "release_qa_failed")
+        and item.get("currentArtifactsValid") is not True
+    }
     successful: set[str] = set()
     run_state["attemptedSlugs"] = sorted(attempted)
+    run_state["retriedSlugs"] = sorted(retried)
     run_state["results"] = prior.get("results", [])
     persist("waiting_for_render_owner")
     deadline = time.monotonic() + max_wait_seconds
@@ -342,7 +349,8 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 successful.add(slug)
                 persist("topic_current", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
                 continue
-            if slug in attempted:
+            retry_allowed = retry_failed and slug in attempted and slug in prior_failed and slug not in retried
+            if slug in attempted and not retry_allowed:
                 run_state["results"].append({"slug": slug, "status": "already_attempted_today"})
                 persist("topic_skipped_attempted", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
                 continue
@@ -364,7 +372,7 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
             if not allow_daytime and not in_window(now):
                 persist("deferred_window", currentSlug=slug, attemptedSlugs=sorted(attempted), reason="overnight window closed before render")
                 return {**run_state, "status": "deferred_window"}
-            if len(attempted) >= max_topics_per_day:
+            if len(attempted) >= max_topics_per_day and not retry_allowed:
                 persist("deferred_cap", attemptedSlugs=sorted(attempted), reason="Pacific-day topic cap reached")
                 return {**run_state, "status": "deferred_cap"}
             try:
@@ -388,8 +396,11 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 persist("deferred_tts_circuit", currentSlug=slug, attemptedSlugs=sorted(attempted), reason=item["detail"] or "Chatterbox circuit is blocked")
                 return {**run_state, "status": "deferred_tts_circuit"}
             log_path = PRODUCTION / "runs" / date / f"{slug}.log"
-            attempted.add(slug)
-            persist("render_started", currentSlug=slug, attemptedSlugs=sorted(attempted))
+            if retry_allowed:
+                retried.add(slug)
+            else:
+                attempted.add(slug)
+            persist("render_started", currentSlug=slug, attemptedSlugs=sorted(attempted), retriedSlugs=sorted(retried))
             save_topic(slug, date, status="rendering", log=str(log_path.relative_to(ROOT)))
             render_args = ["node", "video/scripts/render.mjs", f"--post={slug}", "--voice=chatterbox", "--music=cycle"]
             presentation_plan = ROOT / "public/blog" / slug / "presentation-plan.json"
@@ -480,6 +491,7 @@ def main() -> int:
     parser.add_argument("--wait-seconds", type=int, default=30)
     parser.add_argument("--max-wait-seconds", type=int, default=4 * 3600)
     parser.add_argument("--allow-daytime", action="store_true", help="Nick-authorized manual recovery only")
+    parser.add_argument("--retry-failed", action="store_true", help="Allow one retry per recorded render or release failure after its approved package has been repaired")
     parser.add_argument("--dry-run", action="store_true", help="Check today's Luna handoff, approvals, window, and current outputs without rendering")
     args = parser.parse_args()
     try:
@@ -501,7 +513,8 @@ def main() -> int:
         else:
             result = run_queue(slugs, max_topics_per_day=cap,
                            target_renders_per_day=target,
-                           allow_daytime=args.allow_daytime, wait_seconds=args.wait_seconds,
+                           allow_daytime=args.allow_daytime, retry_failed=args.retry_failed,
+                           wait_seconds=args.wait_seconds,
                            max_wait_seconds=args.max_wait_seconds)
     except Exception as error:
         print(json.dumps({"status": "error", "error": f"{type(error).__name__}: {error}"}))
