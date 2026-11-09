@@ -11,11 +11,19 @@ export function addPanelToHtml(html, panel) {
   const articleBodyStart = withoutExistingPanel.indexOf('<div class="article-body">');
 
   if (articleBodyStart !== -1) {
-    const firstParagraphEnd = withoutExistingPanel.indexOf('</p>', articleBodyStart);
-    if (firstParagraphEnd !== -1) {
-      const insertAt = firstParagraphEnd + '</p>'.length;
-      const remainder = trimInsertionWhitespace(withoutExistingPanel.slice(insertAt));
-      return `${withoutExistingPanel.slice(0, insertAt)}\n            ${panel}${remainder}`;
+    const bodyContentStart = articleBodyStart + '<div class="article-body">'.length;
+    const tokens = /<\/?div\b[^>]*>|<\/p>/gi;
+    tokens.lastIndex = bodyContentStart;
+    let divDepth = 1;
+    let token;
+    while ((token = tokens.exec(withoutExistingPanel))) {
+      if (/^<div\b/i.test(token[0])) divDepth += 1;
+      else if (/^<\/div/i.test(token[0])) divDepth -= 1;
+      else if (divDepth === 1) {
+        const insertAt = token.index + token[0].length;
+        const remainder = trimInsertionWhitespace(withoutExistingPanel.slice(insertAt));
+        return `${withoutExistingPanel.slice(0, insertAt)}\n            ${panel}${remainder}`;
+      }
     }
   }
 

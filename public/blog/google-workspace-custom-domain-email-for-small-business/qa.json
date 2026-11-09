@@ -9,7 +9,8 @@
   "review_notes": [
     "Reviewed Google primary sources, article, seven-scene reel script, artwork, referral disclosure and local QA (score 90).",
     "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending.",
-    "Owner review refreshed: The five-step setup graphic is now four rows; its hook measured 3.20 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration."
+    "Owner review refreshed: The five-step setup graphic is now four rows; its hook measured 3.20 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration.",
+    "Scoped companion video panel added after full hosted MP4 verification (HTTP 200, video/mp4, exact byte count); article prose unchanged."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -19,7 +20,7 @@
   },
   "artifactSha256": {
     "verified.md": "c253028a1b082848c781b7d4471450ef6c88b5b1f21094c57b780d3675a7c63f",
-    "index.html": "6c8c623b4b8f3e95c1d5396459b8a33c4600596189c415f64708ea5fb8736bb8",
+    "index.html": "efb98560af232f5a424aab1be0d3adf5aef110b7c8951599cc6c68f9febe6520",
     "meta.json": "9f260bf4fe7e31ab1a37587ed9ee5846ee58ab8cc3eee6bd1a47f61118d04212",
     "research.json": "00c5011bc14b25e7742ba7fc0cb3f61c28a5abb118fec10918e2c30f5343ad61",
     "hero.jpg": "f486c146da99877eca875ab93266f9c86bb89aa3a1c52aef415eb1c504f1788f",

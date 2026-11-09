@@ -11,7 +11,8 @@
     "No unsupported metrics, customer examples, invented UI, or unqualified account-conversion promises. Closing QR is the exact previously verified referral card. Voice generation, encoded-frame inspection, encoded QR verification, release, hosting, deployment and Buffer scheduling remain pending.",
     "Owner review refreshed: The spoken and visible migration question now match the regenerated hero; its hook measured 2.32 seconds in Chatterbox preflight. The renderer will verify the measured hook before generating remaining narration.",
     "Repair: final CTA card now includes the verified closing QR, scan instruction, and referral disclosure in the encoded frame. Re-reviewing the replacement render before release.",
-    "Closing card source corrected to use the exact verified full-frame QR/referral card asset, replacing title-only artwork. The final encoded frames are under owner visual review."
+    "Closing card source corrected to use the exact verified full-frame QR/referral card asset, replacing title-only artwork. The final encoded frames are under owner visual review.",
+    "Scoped companion video panel added after full hosted MP4 verification (HTTP 200, video/mp4, exact byte count); article prose unchanged."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -21,7 +22,7 @@
   },
   "artifactSha256": {
     "verified.md": "35698be8eba86eb4c3444aeabd39f0a79d376e44b7d8d097d4efc11792cac3c8",
-    "index.html": "b393828c1b9f311322e5150fc5d3c0c77f80f1bb488986f6273b706a5caf7fb7",
+    "index.html": "b22f617bead38ab7b68f1b8b8b2cee506fa5dc91e733f947028e4f37d0563705",
     "meta.json": "4a0f7d5f7ee62b0da86fa05bcd59554390aa48e2e1e6fe135a011e68dc1f2932",
     "research.json": "8f4d1a45b666381a9886bd967b10952c261b6289ae14fec5ae903f4bcd0178ed",
     "hero.jpg": "c1276e103e314f0aae31b464ccec1e71a819835d8f9cf19627684c83358ef5b2",

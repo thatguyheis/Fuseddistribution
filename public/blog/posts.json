@@ -1,5 +1,35 @@
 [
   {
+    "slug": "move-personal-gmail-to-google-workspace-business-email",
+    "title": "Moving from Personal Gmail to Google Workspace: What Happens to Your Data?",
+    "date": "2026-11-08",
+    "excerpt": "Understand Workspace domain verification, personal account transfer, and mail import before changing business email accounts or moving your data.",
+    "tags": [
+      "Google Workspace",
+      "Business Email",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/move-personal-gmail-to-google-workspace-business-email/hero.jpg",
+    "imageAlt": "Personal Gmail account transition paths graphic"
+  },
+  {
+    "slug": "google-workspace-custom-domain-email-for-small-business",
+    "title": "How to Use Gmail with a Custom Domain for Your Business",
+    "date": "2026-11-08",
+    "excerpt": "Set up Gmail for a custom business domain with verification, user accounts, MX records, and a safe delivery test before moving your business email.",
+    "tags": [
+      "Google Workspace",
+      "Business Email",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/google-workspace-custom-domain-email-for-small-business/hero.jpg",
+    "imageAlt": "Gmail custom domain setup flow graphic"
+  },
+  {
     "slug": "google-workspace-small-business-connected-workflow",
     "title": "Google Workspace for a Small Business: One Connected Workflow",
     "date": "2026-11-05",
