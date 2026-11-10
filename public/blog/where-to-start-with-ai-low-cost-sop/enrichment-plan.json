@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "flow",
+      "title": "A safe first AI workflow",
+      "source": "Illustrative procedure, supported by the article sources",
+      "takeaway": "Keep one SOP in the handoff",
+      "rows": [
+        {
+          "label": "Choose",
+          "detail": "One repeatable task"
+        },
+        {
+          "label": "Guide",
+          "detail": "One current SOP"
+        },
+        {
+          "label": "Check",
+          "detail": "Human review"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft cue when the first task card opens"
+    },
+    {
+      "segmentIndex": 3,
+      "file": "youtube-wood-hit-metal-crash.mp3",
+      "sourceStartSeconds": 0.15,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet emphasis on the source-of-truth reveal"
+    }
+  ]
+}

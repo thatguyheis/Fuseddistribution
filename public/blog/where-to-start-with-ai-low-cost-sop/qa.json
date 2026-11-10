@@ -1,0 +1,34 @@
+{
+  "slug": "where-to-start-with-ai-low-cost-sop",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-09",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed article claims against linked OpenAI sources, the question hook, handoff guidance, one-action CTA, vector cover, and workflow graphic.",
+    "The article accurately distinguishes project files from scheduled-task file access and advises checking current free-tier limits.",
+    "The short reel was manually reviewed against the owner requested 45-second target. Automated duration gate is intentionally not used for this one-off."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Want to learn AI without a big bill?",
+    "visibleText": "Want to learn AI without a big bill?"
+  },
+  "artifactSha256": {
+    "verified.md": "21d0302415470ffa473281896303c37e9e3603c9defe1d1dbb22d17c5a338e8d",
+    "index.html": "939d4e3de18a5ef3c0973cc7c55e6a8717a2bba0b6f926ff6792a82c32534b47",
+    "meta.json": "0c3761d2c414c1033bc4fa0707cc88c46e206ef6ee4ad8528dcf169cd3791f46",
+    "research.json": "98ba8d4375680456a35a45367ce0747cdbd836ebba3024db5adefd07eae1ff74",
+    "hero.jpg": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
+    "photo-post.jpg": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
+    "reel-script.md": "734a07ad3d87e5ec4643c7cd85c3e38436c7b73481f8231030182f77c844b29d",
+    "reel-data.md": "56196a76ed1b8327208b35d2c96bd1fc24fb00f1b034490f7a84e9f1da8d4d43",
+    "social-copy.json": "c8ee98cb034b65be4b0e5904ee5eb79efff50f732e7a8ecda6559b412aebae3b",
+    "enrichment-plan.json": "259d04a20246a8eb5390ef2377fb84d19821b27c493e390fa24c13a2d3a909a0",
+    "attention-review.json": "157c22431ce7087fa2bcbad0a415521ac0e3ee1322646c6800841a88395fd032",
+    "presentation-plan.json": "aadd0a68e08f65d159f3942d194a77a7d884d2b1195393f7b3528e7624464541"
+  }
+}

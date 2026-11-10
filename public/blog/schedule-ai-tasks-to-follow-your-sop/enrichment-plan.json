@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "flow",
+      "title": "A safe scheduled task",
+      "source": "Illustrative process guidance, supported by official task documentation",
+      "takeaway": "Verify every output",
+      "rows": [
+        {
+          "label": "Read",
+          "detail": "Approved source"
+        },
+        {
+          "label": "Follow",
+          "detail": "Current SOP"
+        },
+        {
+          "label": "Review",
+          "detail": "Exact destination"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft cue for opening the scheduled workflow"
+    },
+    {
+      "segmentIndex": 5,
+      "file": "youtube-wood-hit-metal-crash.mp3",
+      "sourceStartSeconds": 0.15,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue for the permission checkpoint"
+    }
+  ]
+}

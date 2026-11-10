@@ -1,0 +1,17 @@
+{
+  "slug": "where-to-start-with-ai-low-cost-sop",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-09",
+  "pass": true,
+  "hero": {
+    "sha256": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
+    "sourceSvg": "images/scene-0-ai-hook.svg",
+    "notes": "Reviewed cover at full size. Question is legible, three-part workflow graphic is centered, and safe zones remain clear."
+  },
+  "distribution": "Pending rendered reel and local package review.",
+  "presentationGraphics": {
+    "planSha256": "aadd0a68e08f65d159f3942d194a77a7d884d2b1195393f7b3528e7624464541",
+    "sceneCount": 7,
+    "notes": "Seven conceptual vector scenes map to the seven narration beats and avoid numeric claims."
+  }
+}

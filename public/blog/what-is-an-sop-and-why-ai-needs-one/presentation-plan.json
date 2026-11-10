@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-0-sop-hook.jpg",
+        "sha256": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
+        "weight": 1,
+        "title": "Why does AI keep forgetting your process?",
+        "eyebrow": "AI NEEDS A PROCESS",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-1-define.jpg",
+        "sha256": "c136c333b42fe29f57f725b8783620f65d0f4a6f14270445becae6d209a0094e",
+        "weight": 1,
+        "title": "An SOP is the repeatable method",
+        "eyebrow": "STEP 1",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-2-prompt.jpg",
+        "sha256": "101ad9eb7ce565fa738ca8d26cf3849dc9ffcc06d48c6b4db6b0ccf1baba3cfd",
+        "weight": 1,
+        "title": "A prompt is not the process",
+        "eyebrow": "STEP 2",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-3-one-rulebook.jpg",
+        "sha256": "20a8ef624e0afd468f154c65ba474eea697b00a46d327ab822467f520bbb825c",
+        "weight": 1,
+        "title": "One rulebook for every tool",
+        "eyebrow": "STEP 3",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-4-handoff.jpg",
+        "sha256": "a6fd3707ea1a63070e2a70591c4c742497d4eb56b7c7270d07de6b2e8d327141",
+        "weight": 1,
+        "title": "Pass the same context",
+        "eyebrow": "STEP 4",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-5-stop-rules.jpg",
+        "sha256": "608e2a537ef4e4872d8112dbd031df0a10214dea6e6b8eec04c795d1410ecb8f",
+        "weight": 1,
+        "title": "Make stop rules clear",
+        "eyebrow": "STEP 5",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-6-improve.jpg",
+        "sha256": "b6579beba324e557cd7950ced271778c7ec57578c1d902d7bfbf009f9ecb5e85",
+        "weight": 1,
+        "title": "Improve one canonical copy",
+        "eyebrow": "STEP 6",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-7-start.jpg",
+        "sha256": "4619125957e50d9e91493d7e7b44ca8a60da0a88eef96970ca55bda18996b1a2",
+        "weight": 1,
+        "title": "Start with one task",
+        "eyebrow": "STEP 7",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/what-is-an-sop-and-why-ai-needs-one/images/scene-8-sop-cta.jpg",
+        "sha256": "d06050f6c63498bf6274eb54177aac8ddef161e849fa7af4310b1981741a64c4",
+        "weight": 1,
+        "title": "Which process needs an SOP?",
+        "eyebrow": "START SMALL",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

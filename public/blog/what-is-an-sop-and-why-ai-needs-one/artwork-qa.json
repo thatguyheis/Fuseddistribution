@@ -1,0 +1,16 @@
+{
+  "slug": "what-is-an-sop-and-why-ai-needs-one",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-09",
+  "pass": true,
+  "hero": {
+    "sha256": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
+    "sourceSvg": "images/scene-0-sop-hook.svg",
+    "notes": "Reviewed full size portrait cover. Question, dark contrast, three row graphic and text safe area are legible."
+  },
+  "presentationGraphics": {
+    "planSha256": "de1b456bca567e990468c29eda5df1739ea527ec97ac054b095301d341db37eb",
+    "sceneCount": 9,
+    "notes": "Nine topic-specific vector scene cards inspected. The explanatory panel scene reserves separate headline space; no data values are fabricated."
+  }
+}

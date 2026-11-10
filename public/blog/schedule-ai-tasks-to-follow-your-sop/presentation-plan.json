@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-0-schedule-opener.jpg",
+        "sha256": "d28833ec40187737bb549ada37e51de868aa30cd3080f5f07c25852e1dbf690e",
+        "weight": 1,
+        "title": "Can AI keep your SOP moving?",
+        "eyebrow": "AI TASKS THAT CONTINUE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-1-known-process.jpg",
+        "sha256": "317607c57834712aecac999b44d31ce9e9bf4429cadb98d53c5d9346d6c3bb76",
+        "weight": 1,
+        "title": "Schedule a known process",
+        "eyebrow": "STEP 2",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-2-lead-drafts.jpg",
+        "sha256": "1440236f937f92d965c84d9b0c050f36afa86563272c4d399f6f2454de93fe37",
+        "weight": 1,
+        "title": "Daily lead drafts",
+        "eyebrow": "STEP 3",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-3-weekly-report.jpg",
+        "sha256": "97ae4131df3882b2c8d90ed7d69a4a0ff408c0ad119cd4e1753c5f3d39a5ee41",
+        "weight": 1,
+        "title": "Weekly status report",
+        "eyebrow": "STEP 4",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-4-connect-source.jpg",
+        "sha256": "635ae5e9784ccf98a98b9b9815f74c2a2a64f46df590521dc29700eeec2b3699",
+        "weight": 1,
+        "title": "Connect the real source",
+        "eyebrow": "STEP 5",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-5-permissions.jpg",
+        "sha256": "f589293cc389e845d13284967c34cd2e5f02f456247c9b79d62e165a1560a165",
+        "weight": 1,
+        "title": "Set permissions and stop rules",
+        "eyebrow": "STEP 6",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-6-check-runs.jpg",
+        "sha256": "27c0d9a01d073ff5835a30b316f2ec859f26355f26de3165881e1b230ae14987",
+        "weight": 1,
+        "title": "Check each actual run",
+        "eyebrow": "STEP 7",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-7-one-task.jpg",
+        "sha256": "27731f530367acf3e68e4ddab92a43e97a4d2acd48cbe001b14453cb9a061b62",
+        "weight": 1,
+        "title": "Begin with one safe task",
+        "eyebrow": "STEP 8",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/schedule-ai-tasks-to-follow-your-sop/images/scene-8-schedule-cta.jpg",
+        "sha256": "24bf3426c90e25b4d8620221f64bdf75705a64a02c39c54c77e7eb9bf6820e80",
+        "weight": 1,
+        "title": "What task would you schedule first?",
+        "eyebrow": "START WITH A DRAFT",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Want to learn AI without a big bill?",
+    "visibleText": "Want to learn AI without a big bill?",
+    "spokenSeconds": 2.4,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved portrait hero showing one task flowing through one SOP into a checked result."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Start with one task",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Test a free tool",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Keep one SOP",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Pass a clear handoff",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "What will you test?",
+    "spokenText": "What will you test?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A low-cost starting question plus an immediate one-task example should keep viewers through the handoff checklist.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "saves-per-reach"
+    ],
+    "comparison": "Compare with similarly sized reels on each platform after retention data matures."
+  }
+}

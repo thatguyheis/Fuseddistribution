@@ -1,0 +1,21 @@
+{
+  "topic": "What an SOP is and why it matters for AI workflows",
+  "researchedAt": "2026-11-09",
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Projects in ChatGPT",
+      "claim": "Projects group related chats, files, and instructions for ongoing work.",
+      "accessed": "2026-11-09"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Scheduled tasks in ChatGPT",
+      "claim": "A task created inside a project cannot access files uploaded or stored in that project.",
+      "accessed": "2026-11-09"
+    }
+  ],
+  "scopeNote": "SOP examples are practical recommendations. Tool access and features depend on account, workspace settings, and configured connections."
+}

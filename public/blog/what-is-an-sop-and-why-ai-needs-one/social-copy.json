@@ -1,0 +1,20 @@
+{
+  "slug": "what-is-an-sop-and-why-ai-needs-one",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/what-is-an-sop-and-why-ai-needs-one/",
+  "discussion_question": "Which process needs an SOP?",
+  "reel": {
+    "youtube": "An SOP gives every AI tool and human reviewer one shared workflow, output format, and stop rule.",
+    "instagram": "Stop repeating the same prompt. Give every AI tool one source of truth, a clear handoff, and a human review point.",
+    "x": "One SOP gives every AI step the same process, checks, and stop rules."
+  },
+  "hashtags": [
+    "AIWorkflow",
+    "SOP",
+    "SmallBusiness"
+  ],
+  "sources": [
+    "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+    "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "schedule-ai-tasks-to-follow-your-sop",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/schedule-ai-tasks-to-follow-your-sop/",
+  "discussion_question": "What task would you schedule first?",
+  "reel": {
+    "youtube": "Schedule AI around a known process: limit access, write stop rules, and verify the exact result.",
+    "instagram": "AI scheduling is useful when the task can read the SOP, has limited permissions, and leaves a clear run record.",
+    "x": "A scheduled AI task needs source access, allowed actions, stop rules, and a verified destination."
+  },
+  "hashtags": [
+    "AIAutomation",
+    "SOP",
+    "SmallBusiness"
+  ],
+  "sources": [
+    "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt",
+    "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+    "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex"
+  ]
+}

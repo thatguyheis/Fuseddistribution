@@ -1,0 +1,33 @@
+{
+  "slug": "schedule-ai-tasks-to-follow-your-sop",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-09",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the article against official ChatGPT scheduled-task and project documentation, the two business examples, the visible question hook, and the verification diagram.",
+    "The article distinguishes a scheduled trigger from successful task delivery and describes project file access limits accurately."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can AI keep your SOP moving?",
+    "visibleText": "Can AI keep your SOP moving?"
+  },
+  "artifactSha256": {
+    "verified.md": "91783d4a0956e2068d7ec688da60b54e90a2ecc84d1d8fe8d14fd35e42e92856",
+    "index.html": "1ce1a15767cbb143b4ae1058b8c05a0c66c5272fe5858e40d1b59b3064d8e09f",
+    "meta.json": "5d0efba0f3e0bfc22fac6d13b73868576e7a2b68024af0af8d240ac6d4d5b84e",
+    "research.json": "40f0fe541719ffe3ca3169e7233ad8af91b34d9401213fce9f0b8135fe7b6b82",
+    "hero.jpg": "d28833ec40187737bb549ada37e51de868aa30cd3080f5f07c25852e1dbf690e",
+    "photo-post.jpg": "d28833ec40187737bb549ada37e51de868aa30cd3080f5f07c25852e1dbf690e",
+    "reel-script.md": "f75137079503c43c608b222c7af97d962acf0c74cb1fbfceffe63c0ccdebf4ab",
+    "reel-data.md": "51edc6482480b2a63eec23aaceb9a6cb94fdfa8fe17426bdbb218e37cef7adee",
+    "social-copy.json": "efd9f0aa353331f3d3e6d643599535b48c62e468f4d08c86d814f6bde478e977",
+    "enrichment-plan.json": "3d3a20e350f77d737f81c33d660844d7802d9202ef54cd01e452ffb50e639583",
+    "attention-review.json": "26612841e3dcd60a95829ef0b0b577cd9bf3ad8a5b976bf429d724520f44e9a4",
+    "presentation-plan.json": "a34539f3769911a494cfb42ec5e52ad3d10e5ac2b7540de7d6d44989d2c4d279"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "flow",
+      "title": "One SOP, three checkpoints",
+      "source": "Illustrative workflow, explained in the article",
+      "takeaway": "Use one procedure across each handoff",
+      "rows": [
+        {
+          "label": "Prompt",
+          "detail": "Task and current SOP"
+        },
+        {
+          "label": "Handoff",
+          "detail": "Status and next step"
+        },
+        {
+          "label": "Review",
+          "detail": "Human approval"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft cue for opening the process map"
+    },
+    {
+      "segmentIndex": 5,
+      "file": "youtube-wood-hit-metal-crash.mp3",
+      "sourceStartSeconds": 0.15,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet cue for the stop-rule checkpoint"
+    }
+  ]
+}

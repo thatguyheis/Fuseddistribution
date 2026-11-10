@@ -1,0 +1,70 @@
+{
+  "slug": "where-to-start-with-ai-low-cost-sop",
+  "scenes": [
+    {
+      "id": "ai-hook",
+      "kind": "hook",
+      "eyebrow": "START WITH AI",
+      "headline": "Want to learn AI without a big bill?",
+      "panel": {
+        "title": "A simple starting point",
+        "items": [
+          {
+            "label": "One task",
+            "value": "Clear goal"
+          },
+          {
+            "label": "One tool",
+            "value": "Free tier"
+          },
+          {
+            "label": "One SOP",
+            "value": "Shared rules"
+          }
+        ]
+      }
+    },
+    {
+      "id": "choose-task",
+      "kind": "body",
+      "eyebrow": "STEP ONE",
+      "headline": "Choose one repeatable task",
+      "detail": "Define the input, useful output, and human check."
+    },
+    {
+      "id": "free-pilot",
+      "kind": "body",
+      "eyebrow": "STEP TWO",
+      "headline": "Test a free tool safely",
+      "detail": "Use sanitized examples and check current limits."
+    },
+    {
+      "id": "source-truth",
+      "kind": "body",
+      "eyebrow": "STEP THREE",
+      "headline": "Keep one source of truth",
+      "detail": "Write steps, privacy rules, checks, and stop conditions."
+    },
+    {
+      "id": "handoff",
+      "kind": "body",
+      "eyebrow": "HANDOFF",
+      "headline": "Pass the work with context",
+      "detail": "Share the SOP version, completed step, and next action."
+    },
+    {
+      "id": "review",
+      "kind": "body",
+      "eyebrow": "VERIFY",
+      "headline": "Review before it reaches a customer",
+      "detail": "Compare the result with the original requirements."
+    },
+    {
+      "id": "ai-cta",
+      "kind": "cta",
+      "eyebrow": "START SMALL",
+      "headline": "What task would you test first?",
+      "detail": "Save this checklist and try one low-risk workflow."
+    }
+  ]
+}

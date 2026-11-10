@@ -1,0 +1,85 @@
+{
+  "slug": "schedule-ai-tasks-to-follow-your-sop",
+  "scenes": [
+    {
+      "id": "schedule-opener",
+      "kind": "hook",
+      "eyebrow": "AI TASKS THAT CONTINUE",
+      "headline": "Can AI keep your SOP moving?",
+      "panel": {
+        "title": "Automate one safe step",
+        "items": [
+          {
+            "label": "One source",
+            "value": "Approved data"
+          },
+          {
+            "label": "One SOP",
+            "value": "Current rules"
+          },
+          {
+            "label": "One check",
+            "value": "Verify output"
+          }
+        ]
+      }
+    },
+    {
+      "id": "known-process",
+      "kind": "body",
+      "eyebrow": "STEP 2",
+      "headline": "Schedule a known process",
+      "detail": "Define source, steps, and safe stops."
+    },
+    {
+      "id": "lead-drafts",
+      "kind": "body",
+      "eyebrow": "STEP 3",
+      "headline": "Daily lead drafts",
+      "detail": "Create drafts for human review.",
+      "reservedGraphic": true
+    },
+    {
+      "id": "weekly-report",
+      "kind": "body",
+      "eyebrow": "STEP 4",
+      "headline": "Weekly status report",
+      "detail": "Use current tracker data only."
+    },
+    {
+      "id": "connect-source",
+      "kind": "body",
+      "eyebrow": "STEP 5",
+      "headline": "Connect the real source",
+      "detail": "Verify the task can read it."
+    },
+    {
+      "id": "permissions",
+      "kind": "body",
+      "eyebrow": "STEP 6",
+      "headline": "Set permissions and stop rules",
+      "detail": "Limit access and actions."
+    },
+    {
+      "id": "check-runs",
+      "kind": "body",
+      "eyebrow": "STEP 7",
+      "headline": "Check each actual run",
+      "detail": "Verify output and destination."
+    },
+    {
+      "id": "one-task",
+      "kind": "body",
+      "eyebrow": "STEP 8",
+      "headline": "Begin with one safe task",
+      "detail": "Test one draft only run."
+    },
+    {
+      "id": "schedule-cta",
+      "kind": "cta",
+      "eyebrow": "START WITH A DRAFT",
+      "headline": "What task would you schedule first?",
+      "detail": "Verify one safe output before expanding."
+    }
+  ]
+}

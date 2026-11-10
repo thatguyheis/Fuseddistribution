@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Can AI keep your SOP moving?",
+    "visibleText": "Can AI keep your SOP moving?",
+    "spokenSeconds": 2.6,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved portrait opening card carries the exact question and a three part safe automation checklist."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Schedule a known process",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Example one: daily lead drafts",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Connect the real source",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check each actual run",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "What task would you schedule first?",
+    "spokenText": "What task would you schedule first?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A direct question about ongoing work followed by two concrete examples and a clear verification rule should retain viewers through the examples.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare by platform with similarly sized reels after retention data matures; include sample size."
+  }
+}

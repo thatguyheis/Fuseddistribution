@@ -1,0 +1,28 @@
+{
+  "topic": "How to schedule AI tasks to continue an SOP driven workflow",
+  "researchedAt": "2026-11-09",
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Scheduled tasks in ChatGPT",
+      "claim": "ChatGPT tasks can run one time or on a recurring schedule; tasks created within a project cannot access uploaded or project stored files.",
+      "accessed": "2026-11-09"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Projects in ChatGPT",
+      "claim": "Projects organize related chats, files, and instructions for ongoing work.",
+      "accessed": "2026-11-09"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
+      "publisher": "OpenAI Help Center",
+      "title": "ChatGPT Work and Codex",
+      "claim": "Local computer work requires desktop access, and local only computer tasks cannot run from shared links.",
+      "accessed": "2026-11-09"
+    }
+  ],
+  "scopeNote": "Feature availability and permissions depend on plan, app, and configured connections. Verify current access and destination behavior before scheduling consequential actions."
+}

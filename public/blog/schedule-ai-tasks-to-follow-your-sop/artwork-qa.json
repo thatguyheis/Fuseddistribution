@@ -1,0 +1,16 @@
+{
+  "slug": "schedule-ai-tasks-to-follow-your-sop",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-09",
+  "pass": true,
+  "hero": {
+    "sha256": "d28833ec40187737bb549ada37e51de868aa30cd3080f5f07c25852e1dbf690e",
+    "sourceSvg": "images/scene-0-schedule-opener.svg",
+    "notes": "Reviewed full size portrait cover. Exact short question hook, three row checklist, contrast, and reserved text space are clear."
+  },
+  "presentationGraphics": {
+    "planSha256": "a34539f3769911a494cfb42ec5e52ad3d10e5ac2b7540de7d6d44989d2c4d279",
+    "sceneCount": 9,
+    "notes": "Nine topic-specific scene cards map to the approved narration; the explanatory panel has reserved space and uses no invented metrics."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "what-is-an-sop-and-why-ai-needs-one",
+  "scenes": [
+    {
+      "id": "sop-hook",
+      "kind": "hook",
+      "eyebrow": "AI NEEDS A PROCESS",
+      "headline": "Why does AI keep forgetting your process?",
+      "panel": {
+        "title": "One SOP connects the steps",
+        "items": [
+          {
+            "label": "One process",
+            "value": "Clear steps"
+          },
+          {
+            "label": "Many tools",
+            "value": "Same rules"
+          },
+          {
+            "label": "Human review",
+            "value": "Safe result"
+          }
+        ]
+      }
+    },
+    {
+      "id": "define",
+      "kind": "body",
+      "eyebrow": "STEP 1",
+      "headline": "An SOP is the repeatable method",
+      "detail": "Name goal, inputs, steps, output, checks."
+    },
+    {
+      "id": "prompt",
+      "kind": "body",
+      "eyebrow": "STEP 2",
+      "headline": "A prompt is not the process",
+      "detail": "Give task details, point to the SOP.",
+      "reservedGraphic": true
+    },
+    {
+      "id": "one-rulebook",
+      "kind": "body",
+      "eyebrow": "STEP 3",
+      "headline": "One rulebook for every tool",
+      "detail": "Use shared privacy and review rules."
+    },
+    {
+      "id": "handoff",
+      "kind": "body",
+      "eyebrow": "STEP 4",
+      "headline": "Pass the same context",
+      "detail": "Version, status, facts, and next step."
+    },
+    {
+      "id": "stop-rules",
+      "kind": "body",
+      "eyebrow": "STEP 5",
+      "headline": "Make stop rules clear",
+      "detail": "Pause when evidence or access is missing."
+    },
+    {
+      "id": "improve",
+      "kind": "body",
+      "eyebrow": "STEP 6",
+      "headline": "Improve one canonical copy",
+      "detail": "Update and test one current version."
+    },
+    {
+      "id": "start",
+      "kind": "body",
+      "eyebrow": "STEP 7",
+      "headline": "Start with one task",
+      "detail": "Write inputs, checks, destination, stop."
+    },
+    {
+      "id": "sop-cta",
+      "kind": "cta",
+      "eyebrow": "START SMALL",
+      "headline": "Which process needs an SOP?",
+      "detail": "Write one process your AI tools can follow."
+    }
+  ]
+}

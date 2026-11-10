@@ -1,5 +1,50 @@
 [
   {
+    "slug": "schedule-ai-tasks-to-follow-your-sop",
+    "title": "How to Schedule AI Tasks to Follow Your SOP",
+    "date": "2026-11-09",
+    "excerpt": "Schedule AI to continue a known process with clear source access, limited permissions, stop rules, and run checks. Includes practical business examples.",
+    "tags": [
+      "AI Automation",
+      "Business Process",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/schedule-ai-tasks-to-follow-your-sop/hero.jpg",
+    "imageAlt": "Schedule AI tasks with SOP rules"
+  },
+  {
+    "slug": "what-is-an-sop-and-why-ai-needs-one",
+    "title": "What Is an SOP? Why It Matters for AI",
+    "date": "2026-11-09",
+    "excerpt": "An SOP gives people and AI tools one shared process. Learn what to include, how it prevents repeated prompting, and how to make handoffs safer.",
+    "tags": [
+      "AI Tools",
+      "Business Process",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/what-is-an-sop-and-why-ai-needs-one/hero.jpg",
+    "imageAlt": "AI teams following one shared SOP"
+  },
+  {
+    "slug": "where-to-start-with-ai-low-cost-sop",
+    "title": "Where to Start With AI on a Small Budget",
+    "date": "2026-11-09",
+    "excerpt": "Start learning AI without a large upfront cost. Choose one useful task, try a free tool, and guide every handoff with one clear source of truth.",
+    "tags": [
+      "AI Tools",
+      "Small Business",
+      "Business Process"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/where-to-start-with-ai-low-cost-sop/hero.jpg",
+    "imageAlt": "Start AI with a simple SOP"
+  },
+  {
     "slug": "move-personal-gmail-to-google-workspace-business-email",
     "title": "Moving from Personal Gmail to Google Workspace: What Happens to Your Data?",
     "date": "2026-11-08",

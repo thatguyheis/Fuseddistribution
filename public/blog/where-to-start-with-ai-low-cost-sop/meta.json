@@ -1,0 +1,33 @@
+{
+  "title": "Where to Start With AI on a Small Budget",
+  "slug": "where-to-start-with-ai-low-cost-sop",
+  "description": "Start learning AI without a large upfront cost. Choose one useful task, try a free tool, and guide every handoff with one clear source of truth.",
+  "ogDescription": "Start small with AI, one task, one free tool, and one reusable SOP.",
+  "alt": "Start AI with a simple SOP",
+  "squareCover": true,
+  "date": "2026-11-09",
+  "tags": [
+    "AI Tools",
+    "Small Business",
+    "Business Process"
+  ],
+  "brand": "tech",
+  "ctaLine": "Choose one small task and write the first version of its instructions.",
+  "contentGraphic": {
+    "label": "A small, SOP-guided AI pilot",
+    "rows": [
+      {
+        "condition": "Choose one task",
+        "action": "Define a checkable result"
+      },
+      {
+        "condition": "Select one tool",
+        "action": "Use an accessible tier"
+      },
+      {
+        "condition": "Write one SOP",
+        "action": "Share rules and handoffs"
+      }
+    ]
+  }
+}

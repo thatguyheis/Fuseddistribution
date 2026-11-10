@@ -1,0 +1,33 @@
+{
+  "title": "What Is an SOP? Why It Matters for AI",
+  "slug": "what-is-an-sop-and-why-ai-needs-one",
+  "description": "An SOP gives people and AI tools one shared process. Learn what to include, how it prevents repeated prompting, and how to make handoffs safer.",
+  "ogDescription": "A practical guide to SOPs for reliable AI workflows and handoffs.",
+  "alt": "AI teams following one shared SOP",
+  "squareCover": true,
+  "date": "2026-11-09",
+  "tags": [
+    "AI Tools",
+    "Business Process",
+    "Small Business"
+  ],
+  "brand": "tech",
+  "ctaLine": "Choose one recurring task and write the steps people and AI should follow.",
+  "contentGraphic": {
+    "label": "One shared SOP for AI handoffs",
+    "rows": [
+      {
+        "condition": "Write the process",
+        "action": "One canonical SOP"
+      },
+      {
+        "condition": "Pass each handoff",
+        "action": "Version and status"
+      },
+      {
+        "condition": "Check the result",
+        "action": "Human approval"
+      }
+    ]
+  }
+}

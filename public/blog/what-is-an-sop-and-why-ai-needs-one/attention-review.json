@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Why does AI keep forgetting your process?",
+    "visibleText": "Why does AI keep forgetting your process?",
+    "spokenSeconds": 2.6,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Full bleed hero opens on the exact question and a three-part process overview."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: An SOP is the repeatable method",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: A prompt is not the whole process",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Pass the same context",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Make review and stop rules clear",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which process needs an SOP?",
+    "spokenText": "Which process needs an SOP?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A specific question about repeated corrections followed by a practical SOP structure should keep viewers through the handoff and stop-rule examples.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare by platform with similar-duration reels after data matures; include sample size."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "How to Schedule AI Tasks to Follow Your SOP",
+  "slug": "schedule-ai-tasks-to-follow-your-sop",
+  "description": "Schedule AI to continue a known process with clear source access, limited permissions, stop rules, and run checks. Includes practical business examples.",
+  "ogDescription": "A safe way to schedule AI tasks around a clear business SOP.",
+  "alt": "Schedule AI tasks with SOP rules",
+  "squareCover": true,
+  "date": "2026-11-09",
+  "tags": [
+    "AI Automation",
+    "Business Process",
+    "Small Business"
+  ],
+  "brand": "tech",
+  "ctaLine": "Choose one recurring task with a clear output and a safe first run.",
+  "contentGraphic": {
+    "label": "A scheduled AI task with safe controls",
+    "rows": [
+      {
+        "condition": "Read approved source",
+        "action": "Use current data"
+      },
+      {
+        "condition": "Follow one SOP",
+        "action": "Respect permissions"
+      },
+      {
+        "condition": "Verify the run",
+        "action": "Check destination"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "where-to-start-with-ai-low-cost-sop",
+  "topic": "tech",
+  "blog_url": "https://fuseddistribution.com/blog/where-to-start-with-ai-low-cost-sop/",
+  "discussion_question": "What task would you test first?",
+  "reel": {
+    "youtube": "Start with one low-risk AI task, test a free tier, and keep one SOP as the source of truth.",
+    "instagram": "Learn AI without a big upfront cost: choose one task, test a free tool, and guide every handoff with one SOP.",
+    "x": "Start small with AI: one task, one free tier, one source of truth. What would you test first?"
+  },
+  "hashtags": [
+    "AIForBusiness",
+    "SmallBusiness",
+    "SOP"
+  ],
+  "sources": [
+    "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+    "https://help.openai.com/en/articles/10169521-projects-in-chatgpt",
+    "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt",
+    "https://developers.openai.com/training/walkthroughs/scheduled-tasks"
+  ]
+}

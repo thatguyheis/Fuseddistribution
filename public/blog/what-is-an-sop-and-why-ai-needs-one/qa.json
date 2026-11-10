@@ -1,0 +1,33 @@
+{
+  "slug": "what-is-an-sop-and-why-ai-needs-one",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-09",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the article definitions, current ChatGPT project and scheduled-task behavior, process diagram, one question hook, and single-action CTA.",
+    "The article clearly separates an SOP from a prompt and avoids unsupported performance claims."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Why does AI keep forgetting your process?",
+    "visibleText": "Why does AI keep forgetting your process?"
+  },
+  "artifactSha256": {
+    "verified.md": "b823f5a667226884852683def2d76438be4a9e81fa502eff13898d4934866e58",
+    "index.html": "e4b057881be65b12d7b1e9a1b7c8d1a671d5146a3d255f3c5a2abb59ec79c902",
+    "meta.json": "ffcd4bbf8dc4b267d7f12f814252d78d884098a9a9b3a2dbfd301359c9946f03",
+    "research.json": "1d8940860e4dea04c3ac24733977e97a449cc6ff09f5414fa75bc47e62fce757",
+    "hero.jpg": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
+    "photo-post.jpg": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
+    "reel-script.md": "24f6338dd2d68577d07f815f3ae92fbe06572c21dd0fc7629855aea42e9bedce",
+    "reel-data.md": "191ada8d2bff1c5e0ad8e2e5e0818782b42b421b384d051372c258803eeb126b",
+    "social-copy.json": "89d4eb04f494cc6dcc2337217e907dfc8f691258735d285b5375461c8c512204",
+    "enrichment-plan.json": "7354dd4c567decb8517a9cd2a8bfd1ac2972e2d1324c64d41664f7337b124994",
+    "attention-review.json": "ec96ad0ef870637ea930a2b7a6233d7bd5a0f6967bee07d93db97bb64eac512c",
+    "presentation-plan.json": "de1b456bca567e990468c29eda5df1739ea527ec97ac054b095301d341db37eb"
+  }
+}

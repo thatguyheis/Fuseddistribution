@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-0-ai-hook.jpg",
+        "sha256": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
+        "weight": 1,
+        "title": "Want to learn AI without a big bill?",
+        "eyebrow": "START WITH AI",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-1-choose-task.jpg",
+        "sha256": "030a0fd5a25cc92fd913cce74c82de6597ac4ce507db9580c4a0eba76edd4abe",
+        "weight": 1,
+        "title": "Choose one repeatable task",
+        "eyebrow": "STEP ONE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-2-free-pilot.jpg",
+        "sha256": "6511b0879fc9b00381221228474d4edfa9406656beef8082935c20e38a9a2605",
+        "weight": 1,
+        "title": "Test a free tool safely",
+        "eyebrow": "STEP TWO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-3-source-truth.jpg",
+        "sha256": "cfd432c84dff3bcffdf825596029f9d5f9b547a7bb5047c9d2099475c6c11a64",
+        "weight": 1,
+        "title": "Keep one source of truth",
+        "eyebrow": "STEP THREE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-4-handoff.jpg",
+        "sha256": "48eeaa0e35100cb6ad902f4da26d27e7014922cf3b2b6c5090f685e582271ac8",
+        "weight": 1,
+        "title": "Pass the work with context",
+        "eyebrow": "HANDOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-5-review.jpg",
+        "sha256": "7011d41f4b9b23d76b5537b7cf90d8a69d67c8e1ec725358e5ff435ab35747fa",
+        "weight": 1,
+        "title": "Review before it reaches a customer",
+        "eyebrow": "VERIFY",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/where-to-start-with-ai-low-cost-sop/images/scene-6-ai-cta.jpg",
+        "sha256": "c4c42bcae4aa6aaf3207480ad39ab4c39630f1707f7978e89a67da3c0105adf1",
+        "weight": 1,
+        "title": "What task would you test first?",
+        "eyebrow": "START SMALL",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}
