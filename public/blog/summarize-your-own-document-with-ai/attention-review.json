@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Can AI summarize a document accurately?",
+    "visibleText": "Can AI summarize a document accurately?",
+    "spokenSeconds": 3.2,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved article hero with a readable question and a conceptual how to summarize your own document with ai flow."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Name the reader",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Set the purpose",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Keep source references",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Compare key details",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which safe document will you test?",
+    "spokenText": "Which safe document will you test?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question and one useful workflow should retain viewers through the review step.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "saves-per-reach"
+    ],
+    "comparison": "Compare with similar length reels on each platform after retention data matures."
+  }
+}

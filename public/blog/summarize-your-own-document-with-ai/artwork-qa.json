@@ -1,0 +1,17 @@
+{
+  "slug": "summarize-your-own-document-with-ai",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-10",
+  "pass": true,
+  "hero": {
+    "sha256": "559a02939dc867e4380fac5827980fa3e007bd2dd5f72fabd70c4f221ed1cb5d",
+    "sourceSvg": "hero.svg",
+    "notes": "Reviewed the wrapped 1200x630 cover title for legibility, contrast, and topic fit."
+  },
+  "distribution": "Encoded video review pending overnight render.",
+  "presentationGraphics": {
+    "planSha256": "1a9a2a0663d0177bfa227a94b464d72ed7a021c2e8cf659557f5d6d89af0f073",
+    "sceneCount": 7,
+    "notes": "Reviewed frame-zero question, explanatory body cards, and final question card at 1080x1920; verified social-safe zones. No QR is included."
+  }
+}

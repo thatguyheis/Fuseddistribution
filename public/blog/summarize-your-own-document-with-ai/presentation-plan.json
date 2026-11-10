@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-0-hook.jpg",
+        "sha256": "4f14f355cb5fde2c09020c33b673c3f433941e5b2014dfaac051bfd414a366ed",
+        "weight": 1,
+        "title": "Can AI summarize a document accurately?",
+        "eyebrow": "BEGINNER AI",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-1-step-1.jpg",
+        "sha256": "813623226a23569ad09e0f0eb74fa9c3ec9d64af1d8ce6101af0266e9571cb36",
+        "weight": 1,
+        "title": "Choose a safe file",
+        "eyebrow": "STEP 1",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-2-step-2.jpg",
+        "sha256": "7ace7f7af25e25d0de618e63234b821539a9b1986c8a2aecbf8e900ed96d83d4",
+        "weight": 1,
+        "title": "Set the reader",
+        "eyebrow": "STEP 2",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-3-step-3.jpg",
+        "sha256": "af5f53f69435dd9c30bed05db77e512540a43d1532fe768e5448ab57ebc21a2e",
+        "weight": 1,
+        "title": "Set the purpose",
+        "eyebrow": "STEP 3",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-4-step-4.jpg",
+        "sha256": "5cfd0e20aaae7e3aafb5377abe79f0ffa04e26fb0d9e835a770283646ba3ea6f",
+        "weight": 1,
+        "title": "Ask for references",
+        "eyebrow": "STEP 4",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-5-step-5.jpg",
+        "sha256": "70547692d48b2acb6be24a29e2a8e7d35dcb865b2de06502225af6a03b09b6c0",
+        "weight": 1,
+        "title": "Compare details",
+        "eyebrow": "STEP 5",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/summarize-your-own-document-with-ai/images/scene-6-cta.jpg",
+        "sha256": "6a96298f362d8b6b35c4a486ffa2fbb1e67906ad02a975cc18b2ffc9b5efd2ec",
+        "weight": 1,
+        "title": "Which safe document will you test?",
+        "eyebrow": "TRY ONE SMALL TASK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

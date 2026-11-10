@@ -1,0 +1,34 @@
+{
+  "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-10",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the 1100+ word article against current primary sources and labeled illustrative examples as fictional.",
+    "Reviewed the question-led seven-scene script, source labels, CTA, cleared sound effects, mobile-safe original art, and enrichment flow.",
+    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Would you send an AI reply unchecked?",
+    "visibleText": "Would you send an AI reply unchecked?"
+  },
+  "artifactSha256": {
+    "verified.md": "a4949faca882cde18ac4b22be02266089fd2836c58e6ecd4432ec0b1c7800a41",
+    "index.html": "6afcf435e3acda6cf30c1c1606eda1094b2c509738486fa0bacb5427ca1676ba",
+    "meta.json": "f210436038cc55813cb10ec47a196174b4861778dd6b7111f851afc053b17b3f",
+    "research.json": "250e6f3a7f1c06f376ba865ad5affeab46375cbed86bc7ec5e4487261e8500ca",
+    "hero.jpg": "bf3524d6ea9ca8d96b69b39b1e49829ad49d6a9ca015a068394c2fbe06df4081",
+    "photo-post.jpg": "757ed76a91f212fdef67ac41d048f3645915a29cc372458d9c7f797a9b94d72c",
+    "reel-script.md": "05c15c58444d02ad6383e011b427cffc39bccee441838961401b14814ef0a10f",
+    "reel-data.md": "df2182ad4c6e95e76cbb2dae1ef1aebbede96d35120a63d1e4623ec50f0fc76f",
+    "social-copy.json": "b70e8957e2354c1336330ed66cd57708c1f7fb320a9ea26c34c879cd5a0b18e5",
+    "enrichment-plan.json": "91d824c238a110fdab720d97fa042ccf24741e61032a20ea5f15d36793abdf09",
+    "attention-review.json": "e2e9e33032fb6c0da9719c6a07eec538c27d2cb1a82fa77c8d713ba9fb02df11",
+    "presentation-plan.json": "acc0d1cec2a770d6c8e09b35fcc3709b955605f15bc4c3496d89bef5284179fe"
+  }
+}

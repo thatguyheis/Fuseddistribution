@@ -1,0 +1,34 @@
+{
+  "slug": "summarize-your-own-document-with-ai",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-10",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the 1100+ word article against current primary sources and labeled illustrative examples as fictional.",
+    "Reviewed the question-led seven-scene script, source labels, CTA, cleared sound effects, mobile-safe original art, and enrichment flow.",
+    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can AI summarize a document accurately?",
+    "visibleText": "Can AI summarize a document accurately?"
+  },
+  "artifactSha256": {
+    "verified.md": "b896e1ef98e011a5cd4042dad2638943433bb7e8622206a1b4c345a28df19605",
+    "index.html": "5c5c711423acccc0cb317256fdb2333ac86828f84acc69a0863b53cc958aadd7",
+    "meta.json": "9ac12aca333f3b125a08af14f8989638febdc68a2cd5db35861c99e8ba278de5",
+    "research.json": "8a0f0d2d88183eec2f089394f4b0fe23593417593673730b6acbbc7fb91f6395",
+    "hero.jpg": "559a02939dc867e4380fac5827980fa3e007bd2dd5f72fabd70c4f221ed1cb5d",
+    "photo-post.jpg": "db954e71a72ac3701788f5afc25d764ef3414c23da0218abe8870e86757aa514",
+    "reel-script.md": "ba95831a587ccf392de593af7bb21516ddb8fff89332693d37c871b5721ae306",
+    "reel-data.md": "d54023aa2da9078bd89c6126171199c091855aa169156450208a902aab4aadb6",
+    "social-copy.json": "60454ccf167c40913df6507a0acdd97c18d376986d8dc67743f335c36d17db90",
+    "enrichment-plan.json": "eed043444e418fc9daddd69a744e1b800d79632c670900c69384706b99f6bf9f",
+    "attention-review.json": "541017206972c4ded8f6f6df2861da574264209b6e14325e50af6baed833583c",
+    "presentation-plan.json": "1a9a2a0663d0177bfa227a94b464d72ed7a021c2e8cf659557f5d6d89af0f073"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "slug": "write-a-useful-ai-prompt-for-one-small-business-task",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "BEGINNER AI",
+      "headline": "What should an AI prompt say?",
+      "panel": {
+        "title": "THE WORKFLOW",
+        "items": [
+          {
+            "label": "Choose one task",
+            "value": "Pick work you already know"
+          },
+          {
+            "label": "Add context",
+            "value": "Provide safe relevant facts"
+          },
+          {
+            "label": "Set limits",
+            "value": "Name what to omit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-1",
+      "kind": "body",
+      "eyebrow": "STEP 1",
+      "headline": "Choose one task",
+      "detail": "Pick work you already know",
+      "panel": {
+        "title": "CHOOSE ONE TASK",
+        "items": [
+          {
+            "label": "Choose one task",
+            "value": "Pick work you already know"
+          },
+          {
+            "label": "Add context",
+            "value": "Provide safe relevant facts"
+          },
+          {
+            "label": "Set limits",
+            "value": "Name what to omit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-2",
+      "kind": "body",
+      "eyebrow": "STEP 2",
+      "headline": "Add context",
+      "detail": "Provide safe relevant facts",
+      "panel": {
+        "title": "ADD CONTEXT",
+        "items": [
+          {
+            "label": "Choose one task",
+            "value": "Pick work you already know"
+          },
+          {
+            "label": "Add context",
+            "value": "Provide safe relevant facts"
+          },
+          {
+            "label": "Set limits",
+            "value": "Name what to omit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-3",
+      "kind": "body",
+      "eyebrow": "STEP 3",
+      "headline": "Set limits",
+      "detail": "Name what to omit",
+      "panel": {
+        "title": "SET LIMITS",
+        "items": [
+          {
+            "label": "Add context",
+            "value": "Provide safe relevant facts"
+          },
+          {
+            "label": "Set limits",
+            "value": "Name what to omit"
+          },
+          {
+            "label": "Choose output",
+            "value": "Specify format and length"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-4",
+      "kind": "body",
+      "eyebrow": "STEP 4",
+      "headline": "Choose output",
+      "detail": "Specify format and length",
+      "panel": {
+        "title": "CHOOSE OUTPUT",
+        "items": [
+          {
+            "label": "Set limits",
+            "value": "Name what to omit"
+          },
+          {
+            "label": "Choose output",
+            "value": "Specify format and length"
+          },
+          {
+            "label": "Review it",
+            "value": "Check facts before use"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-5",
+      "kind": "body",
+      "eyebrow": "STEP 5",
+      "headline": "Review it",
+      "detail": "Check facts before use",
+      "panel": {
+        "title": "REVIEW IT",
+        "items": [
+          {
+            "label": "Choose output",
+            "value": "Specify format and length"
+          },
+          {
+            "label": "Review it",
+            "value": "Check facts before use"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "eyebrow": "TRY ONE SMALL TASK",
+      "headline": "Which task will you test first?",
+      "reservedGraphic": true
+    }
+  ]
+}

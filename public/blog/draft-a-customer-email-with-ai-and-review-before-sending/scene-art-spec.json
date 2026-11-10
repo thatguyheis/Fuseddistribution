@@ -1,0 +1,151 @@
+{
+  "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "BEGINNER AI",
+      "headline": "Would you send an AI reply unchecked?",
+      "panel": {
+        "title": "THE WORKFLOW",
+        "items": [
+          {
+            "label": "Draft only",
+            "value": "Keep a person in control"
+          },
+          {
+            "label": "Use safe details",
+            "value": "Replace customer data"
+          },
+          {
+            "label": "State known facts",
+            "value": "Point to approved sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-1",
+      "kind": "body",
+      "eyebrow": "STEP 1",
+      "headline": "Draft only",
+      "detail": "Keep a person in control",
+      "panel": {
+        "title": "DRAFT ONLY",
+        "items": [
+          {
+            "label": "Draft only",
+            "value": "Keep a person in control"
+          },
+          {
+            "label": "Use safe details",
+            "value": "Replace customer data"
+          },
+          {
+            "label": "State known facts",
+            "value": "Point to approved sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-2",
+      "kind": "body",
+      "eyebrow": "STEP 2",
+      "headline": "Use safe details",
+      "detail": "Replace customer data",
+      "panel": {
+        "title": "USE SAFE DETAILS",
+        "items": [
+          {
+            "label": "Draft only",
+            "value": "Keep a person in control"
+          },
+          {
+            "label": "Use safe details",
+            "value": "Replace customer data"
+          },
+          {
+            "label": "State known facts",
+            "value": "Point to approved sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-3",
+      "kind": "body",
+      "eyebrow": "STEP 3",
+      "headline": "State known facts",
+      "detail": "Point to approved sources",
+      "panel": {
+        "title": "STATE KNOWN FACTS",
+        "items": [
+          {
+            "label": "Use safe details",
+            "value": "Replace customer data"
+          },
+          {
+            "label": "State known facts",
+            "value": "Point to approved sources"
+          },
+          {
+            "label": "Set the tone",
+            "value": "Name the next action"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-4",
+      "kind": "body",
+      "eyebrow": "STEP 4",
+      "headline": "Set the tone",
+      "detail": "Name the next action",
+      "panel": {
+        "title": "SET THE TONE",
+        "items": [
+          {
+            "label": "State known facts",
+            "value": "Point to approved sources"
+          },
+          {
+            "label": "Set the tone",
+            "value": "Name the next action"
+          },
+          {
+            "label": "Review before sending",
+            "value": "Check claims and privacy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-5",
+      "kind": "body",
+      "eyebrow": "STEP 5",
+      "headline": "Review before sending",
+      "detail": "Check claims and privacy",
+      "panel": {
+        "title": "REVIEW BEFORE SENDING",
+        "items": [
+          {
+            "label": "Set the tone",
+            "value": "Name the next action"
+          },
+          {
+            "label": "Review before sending",
+            "value": "Check claims and privacy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "eyebrow": "TRY ONE SMALL TASK",
+      "headline": "Which routine reply would you test?",
+      "reservedGraphic": true
+    }
+  ]
+}

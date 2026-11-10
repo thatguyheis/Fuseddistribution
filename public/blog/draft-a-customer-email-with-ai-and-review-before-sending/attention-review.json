@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "Would you send an AI reply unchecked?",
+    "visibleText": "Would you send an AI reply unchecked?",
+    "spokenSeconds": 3.2,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved article hero with a readable question and a conceptual draft a customer email with ai, then review it flow."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Share approved facts",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Set tone and format",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check every claim",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Route hard cases",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which routine reply would you test?",
+    "spokenText": "Which routine reply would you test?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question and one useful workflow should retain viewers through the review step.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "saves-per-reach"
+    ],
+    "comparison": "Compare with similar length reels on each platform after retention data matures."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 2,
+      "kind": "flow",
+      "title": "A simple task workflow",
+      "source": "Illustrative steps in the article and official source guidance",
+      "takeaway": "Check the answer against its source",
+      "rows": [
+        {
+          "label": "Choose a safe file",
+          "detail": "Remove private information"
+        },
+        {
+          "label": "Set the reader",
+          "detail": "Name who needs the summary"
+        },
+        {
+          "label": "Set the purpose",
+          "detail": "Choose what they need to do"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft opening accent as the task card appears"
+    },
+    {
+      "segmentIndex": 4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 0.2,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet emphasis as the review checklist appears"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "slug": "summarize-your-own-document-with-ai",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "BEGINNER AI",
+      "headline": "Can AI summarize a document accurately?",
+      "panel": {
+        "title": "THE WORKFLOW",
+        "items": [
+          {
+            "label": "Choose a safe file",
+            "value": "Remove private information"
+          },
+          {
+            "label": "Set the reader",
+            "value": "Name who needs the summary"
+          },
+          {
+            "label": "Set the purpose",
+            "value": "Choose what they need to do"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-1",
+      "kind": "body",
+      "eyebrow": "STEP 1",
+      "headline": "Choose a safe file",
+      "detail": "Remove private information",
+      "panel": {
+        "title": "CHOOSE A SAFE FILE",
+        "items": [
+          {
+            "label": "Choose a safe file",
+            "value": "Remove private information"
+          },
+          {
+            "label": "Set the reader",
+            "value": "Name who needs the summary"
+          },
+          {
+            "label": "Set the purpose",
+            "value": "Choose what they need to do"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-2",
+      "kind": "body",
+      "eyebrow": "STEP 2",
+      "headline": "Set the reader",
+      "detail": "Name who needs the summary",
+      "panel": {
+        "title": "SET THE READER",
+        "items": [
+          {
+            "label": "Choose a safe file",
+            "value": "Remove private information"
+          },
+          {
+            "label": "Set the reader",
+            "value": "Name who needs the summary"
+          },
+          {
+            "label": "Set the purpose",
+            "value": "Choose what they need to do"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-3",
+      "kind": "body",
+      "eyebrow": "STEP 3",
+      "headline": "Set the purpose",
+      "detail": "Choose what they need to do",
+      "panel": {
+        "title": "SET THE PURPOSE",
+        "items": [
+          {
+            "label": "Set the reader",
+            "value": "Name who needs the summary"
+          },
+          {
+            "label": "Set the purpose",
+            "value": "Choose what they need to do"
+          },
+          {
+            "label": "Ask for references",
+            "value": "Name source headings"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-4",
+      "kind": "body",
+      "eyebrow": "STEP 4",
+      "headline": "Ask for references",
+      "detail": "Name source headings",
+      "panel": {
+        "title": "ASK FOR REFERENCES",
+        "items": [
+          {
+            "label": "Set the purpose",
+            "value": "Choose what they need to do"
+          },
+          {
+            "label": "Ask for references",
+            "value": "Name source headings"
+          },
+          {
+            "label": "Compare details",
+            "value": "Verify names and exceptions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "step-5",
+      "kind": "body",
+      "eyebrow": "STEP 5",
+      "headline": "Compare details",
+      "detail": "Verify names and exceptions",
+      "panel": {
+        "title": "COMPARE DETAILS",
+        "items": [
+          {
+            "label": "Ask for references",
+            "value": "Name source headings"
+          },
+          {
+            "label": "Compare details",
+            "value": "Verify names and exceptions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "kind": "cta",
+      "eyebrow": "TRY ONE SMALL TASK",
+      "headline": "Which safe document will you test?",
+      "reservedGraphic": true
+    }
+  ]
+}

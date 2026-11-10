@@ -1,0 +1,28 @@
+{
+  "topic": "Write a Useful AI Prompt for One Small Business Task",
+  "researchedAt": "2026-11-10",
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Prompt engineering best practices for ChatGPT",
+      "claim": "Prompts should be clear and specific, include enough context, and may be refined iteratively.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/chatgpt/chatgpt_prompt_guide/chatgpt_prompt_guide",
+      "publisher": "OpenAI Developers",
+      "title": "ChatGPT Enterprise Prompting Guide",
+      "claim": "A useful prompt structure can name the task, context, constraints, and output format.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+      "publisher": "OpenAI Help Center",
+      "title": "Does ChatGPT tell the truth?",
+      "claim": "ChatGPT can produce inaccurate statements and important information should be verified.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "scopeNote": "Guidance is explanatory, not a guarantee of accuracy or suitability. Check current product limits and business data rules before use."
+}

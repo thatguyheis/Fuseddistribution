@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "pass": true,
+  "hook": {
+    "spokenText": "What should an AI prompt say?",
+    "visibleText": "What should an AI prompt say?",
+    "spokenSeconds": 3.2,
+    "startsAtSeconds": 0,
+    "questionHookRequired": true,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Approved article hero with a readable question and a conceptual write a useful ai prompt for one small business task flow."
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Give safe context",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: State the limits",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Name the output",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Check and refine",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Which task will you test first?",
+    "spokenText": "Which task will you test first?",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A concrete question and one useful workflow should retain viewers through the review step.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "saves-per-reach"
+    ],
+    "comparison": "Compare with similar length reels on each platform after retention data matures."
+  }
+}

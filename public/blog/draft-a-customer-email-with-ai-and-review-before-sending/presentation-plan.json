@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-0-hook.jpg",
+        "sha256": "2b5c230106fc231c54916996d087c41ad719f7c8bafbc3b44d9c165324c79176",
+        "weight": 1,
+        "title": "Would you send an AI reply unchecked?",
+        "eyebrow": "BEGINNER AI",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-1-step-1.jpg",
+        "sha256": "7bf851e785a71eb4a08115d675c8a692c1157ce5d3c3d1b1d90859be1b4fc8dc",
+        "weight": 1,
+        "title": "Draft only",
+        "eyebrow": "STEP 1",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-2-step-2.jpg",
+        "sha256": "e5a2969de916bcd9f58245931d88de874fa170a9d7423a4282681473df97633d",
+        "weight": 1,
+        "title": "Use safe details",
+        "eyebrow": "STEP 2",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-3-step-3.jpg",
+        "sha256": "0b2cfb434053412bcdcbd8c6e3dea8ea1823400ab2cc33625b93af15f52d42a3",
+        "weight": 1,
+        "title": "State known facts",
+        "eyebrow": "STEP 3",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-4-step-4.jpg",
+        "sha256": "f1bcdfcb09a8c7527fcb9d1751aadf2ade1f5c7c9fe638d7e5b8b5a950a984e2",
+        "weight": 1,
+        "title": "Set the tone",
+        "eyebrow": "STEP 4",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-5-step-5.jpg",
+        "sha256": "f0ef30a98eff08c6ea5b1637e5c0239edd5ee7bf1c248025393a704d9f484fdd",
+        "weight": 1,
+        "title": "Review before sending",
+        "eyebrow": "STEP 5",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/draft-a-customer-email-with-ai-and-review-before-sending/images/scene-6-cta.jpg",
+        "sha256": "d339439f333d4dafe12612a984c097f1feb48d2663966efe4e89b0b0f3f96520",
+        "weight": 1,
+        "title": "Which routine reply would you test?",
+        "eyebrow": "TRY ONE SMALL TASK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

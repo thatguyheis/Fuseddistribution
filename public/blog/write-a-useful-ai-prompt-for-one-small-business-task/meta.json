@@ -1,0 +1,33 @@
+{
+  "title": "Write a Useful AI Prompt for One Small Business Task",
+  "slug": "write-a-useful-ai-prompt-for-one-small-business-task",
+  "description": "Write a better AI prompt for one small business task with clear context, limits, an output format, and a review step before use. Keep it safe and repeatable.",
+  "ogDescription": "Write prompts with clear context, limits, output, and review.",
+  "alt": "Clear AI prompt steps for owners",
+  "squareCover": true,
+  "date": "2026-11-11",
+  "tags": [
+    "AI Tools",
+    "Small Business",
+    "Business Process"
+  ],
+  "brand": "tech",
+  "ctaLine": "Choose one repeatable task and improve its prompt.",
+  "contentGraphic": {
+    "label": "A better prompt for one task",
+    "rows": [
+      {
+        "condition": "Choose one task",
+        "action": "Pick work you already know"
+      },
+      {
+        "condition": "Add context",
+        "action": "Provide safe relevant facts"
+      },
+      {
+        "condition": "Set limits",
+        "action": "Name what to omit"
+      }
+    ]
+  }
+}

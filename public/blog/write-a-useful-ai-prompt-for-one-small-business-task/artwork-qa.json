@@ -1,0 +1,17 @@
+{
+  "slug": "write-a-useful-ai-prompt-for-one-small-business-task",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-10",
+  "pass": true,
+  "hero": {
+    "sha256": "ae9023a410a4671bc229e3e70de2b53d719525af69927a59d65c57c7079236f2",
+    "sourceSvg": "hero.svg",
+    "notes": "Reviewed the wrapped 1200x630 cover title for legibility, contrast, and topic fit."
+  },
+  "distribution": "Encoded video review pending overnight render.",
+  "presentationGraphics": {
+    "planSha256": "8e353d341d0c647c7c4a98c75e8520468a99a51408315543768e174b8f1495fe",
+    "sceneCount": 7,
+    "notes": "Reviewed frame-zero question, explanatory body cards, and final question card at 1080x1920; verified social-safe zones. No QR is included."
+  }
+}

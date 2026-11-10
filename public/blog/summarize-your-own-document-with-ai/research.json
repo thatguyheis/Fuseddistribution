@@ -1,0 +1,28 @@
+{
+  "topic": "How to Summarize Your Own Document With AI",
+  "researchedAt": "2026-11-10",
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Uploading files and audio to ChatGPT",
+      "claim": "ChatGPT supports common document formats, subject to current product, plan, and workspace limits.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+      "publisher": "OpenAI Help Center",
+      "title": "Does ChatGPT tell the truth?",
+      "claim": "ChatGPT may produce inaccurate information, so important details should be checked against reliable sources.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001052-using-library-to-manage-files-in-chatgpt",
+      "publisher": "OpenAI Help Center",
+      "title": "Using Library to manage files in ChatGPT",
+      "claim": "File availability and retention depend on how files are handled in ChatGPT.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "scopeNote": "Guidance is explanatory, not a guarantee of accuracy or suitability. Check current product limits and business data rules before use."
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
+  "reviewer": "Codex",
+  "reviewedAt": "2026-11-10",
+  "pass": true,
+  "hero": {
+    "sha256": "bf3524d6ea9ca8d96b69b39b1e49829ad49d6a9ca015a068394c2fbe06df4081",
+    "sourceSvg": "hero.svg",
+    "notes": "Reviewed the wrapped 1200x630 cover title for legibility, contrast, and topic fit."
+  },
+  "distribution": "Encoded video review pending overnight render.",
+  "presentationGraphics": {
+    "planSha256": "acc0d1cec2a770d6c8e09b35fcc3709b955605f15bc4c3496d89bef5284179fe",
+    "sceneCount": 7,
+    "notes": "Reviewed frame-zero question, explanatory body cards, and final question card at 1080x1920; verified social-safe zones. No QR is included."
+  }
+}

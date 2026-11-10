@@ -1,0 +1,21 @@
+{
+  "topic": "Draft a Customer Email With AI, Then Review It",
+  "researchedAt": "2026-11-10",
+  "sources": [
+    {
+      "url": "https://openai.com/academy/responsible-and-safe-use/",
+      "publisher": "OpenAI Academy",
+      "title": "Responsible and safe use",
+      "claim": "AI outputs should be used with appropriate human judgment and review.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+      "publisher": "OpenAI Help Center",
+      "title": "Does ChatGPT tell the truth?",
+      "claim": "ChatGPT can provide inaccurate information and important facts should be verified.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "scopeNote": "Guidance is explanatory, not a guarantee of accuracy or suitability. Check current product limits and business data rules before use."
+}

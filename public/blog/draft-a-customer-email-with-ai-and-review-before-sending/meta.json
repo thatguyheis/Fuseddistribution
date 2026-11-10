@@ -1,0 +1,33 @@
+{
+  "title": "Draft a Customer Email With AI, Then Review It",
+  "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
+  "description": "Use AI to draft a customer email from approved facts, then review names, privacy, and commitments before a person sends it. Keep a person in control.",
+  "ogDescription": "Draft a customer email from approved facts, then get human review.",
+  "alt": "A person reviews a customer email",
+  "squareCover": true,
+  "date": "2026-11-11",
+  "tags": [
+    "AI Tools",
+    "Small Business",
+    "Business Process"
+  ],
+  "brand": "tech",
+  "ctaLine": "Test the draft with a fictional customer message.",
+  "contentGraphic": {
+    "label": "A reviewed AI customer email",
+    "rows": [
+      {
+        "condition": "Draft only",
+        "action": "Keep a person in control"
+      },
+      {
+        "condition": "Use safe details",
+        "action": "Replace customer data"
+      },
+      {
+        "condition": "State known facts",
+        "action": "Point to approved sources"
+      }
+    ]
+  }
+}

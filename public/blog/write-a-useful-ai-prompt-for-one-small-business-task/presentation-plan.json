@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-0-hook.jpg",
+        "sha256": "49f5f6073602d47589dfb65400fe1ffcb2e281ad1d52bcf2f0a4d7bc59184f70",
+        "weight": 1,
+        "title": "What should an AI prompt say?",
+        "eyebrow": "BEGINNER AI",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-1-step-1.jpg",
+        "sha256": "de2b2b83525121cd4c147d35eae1e51abc8fae5aa54a117c572b9eb14b92f578",
+        "weight": 1,
+        "title": "Choose one task",
+        "eyebrow": "STEP 1",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-2-step-2.jpg",
+        "sha256": "6e1b09675d6fb804dee1868c6cb90718f1a52f3e6ad61045b66e7e9ddb8c0b81",
+        "weight": 1,
+        "title": "Add context",
+        "eyebrow": "STEP 2",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-3-step-3.jpg",
+        "sha256": "cda90f9e9da4e2822f9b9fd2c727d9f2ad5343ca4fd441824f3a343389dea9c7",
+        "weight": 1,
+        "title": "Set limits",
+        "eyebrow": "STEP 3",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-4-step-4.jpg",
+        "sha256": "bf502e420e3ad1b06cb0caabcc889ab4cb0b169d162408599924ac4b85c25967",
+        "weight": 1,
+        "title": "Choose output",
+        "eyebrow": "STEP 4",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-5-step-5.jpg",
+        "sha256": "6388c725fa18f0eeeaf34028507e347fc2535d2a38c99b3a057fdc570f457d3e",
+        "weight": 1,
+        "title": "Review it",
+        "eyebrow": "STEP 5",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/write-a-useful-ai-prompt-for-one-small-business-task/images/scene-6-cta.jpg",
+        "sha256": "99a040574a126b4d4bd31df4b772c5166ddeb124e4561e621ddac1fa693da46a",
+        "weight": 1,
+        "title": "Which task will you test first?",
+        "eyebrow": "TRY ONE SMALL TASK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

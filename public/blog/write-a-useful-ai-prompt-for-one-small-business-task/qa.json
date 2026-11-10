@@ -1,0 +1,34 @@
+{
+  "slug": "write-a-useful-ai-prompt-for-one-small-business-task",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-10",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed the 1100+ word article against current primary sources and labeled illustrative examples as fictional.",
+    "Reviewed the question-led seven-scene script, source labels, CTA, cleared sound effects, mobile-safe original art, and enrichment flow.",
+    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "What should an AI prompt say?",
+    "visibleText": "What should an AI prompt say?"
+  },
+  "artifactSha256": {
+    "verified.md": "7daf99329d0cc754285796cc2a6937e1b2ffdd7d0abd3a6a2695f5302550a1ab",
+    "index.html": "acea02d0cf8cce6d80b76af3a8bfff1e6af0edba724c46b150739f1ca2b1150f",
+    "meta.json": "1a37ff39fcea6c56530faf4135e40c4c04f3315079074cda964a03a59ceb4fa2",
+    "research.json": "01126e63773903e3c12d3fb7a70695960a32bb15622d38ee18c58bfc357ce7c2",
+    "hero.jpg": "ae9023a410a4671bc229e3e70de2b53d719525af69927a59d65c57c7079236f2",
+    "photo-post.jpg": "dc28f515abf368982d3eff07a4151f3278b7135a2ab5238264ec6f5c2fd5c1f2",
+    "reel-script.md": "5acd7ac5cb1fc095f17577cbbcab17cebe58d73bc26ac2f258d68e641d194dca",
+    "reel-data.md": "14892a19f1dab0ab3bd60de3a3f8f54ca62d27701403279341371ad53da0ed97",
+    "social-copy.json": "d62da91c2163a7fc832f9c22707ed5f85e581b5ad565705deca9a90cc8e13f77",
+    "enrichment-plan.json": "834348cb2386e94bb49f0e07fd2926c01a665cd8dd893148544c972cc25bdb3f",
+    "attention-review.json": "30452a0c496fe0928d81886f941b3fc4913aeae0545da85ec3035b84d5900e1e",
+    "presentation-plan.json": "8e353d341d0c647c7c4a98c75e8520468a99a51408315543768e174b8f1495fe"
+  }
+}
