@@ -2,9 +2,9 @@
   "version": 1,
   "maxTopicsPerDay": 3,
   "slugs": [
-    "google-workspace-custom-domain-email-for-small-business",
-    "move-personal-gmail-to-google-workspace-business-email",
-    "protect-google-workspace-business-email-with-spf-dkim-dmarc"
+    "checking-names-and-numbers-in-whisper-transcripts",
+    "myth-check-one-number-small-business-should-check-weekly",
+    "side-by-side-one-number-small-business-should-check-weekly"
   ],
   "targetRendersPerDay": 2
 }
