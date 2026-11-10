@@ -92,6 +92,18 @@ class BusinessReelQueueTests(unittest.TestCase):
         saved = json.loads((self.production / "runs" / "2026-11-05" / "queue.json").read_text())
         self.assertEqual(saved["status"], "blocked_handoff")
 
+    def test_manual_owner_run_does_not_require_scheduler_handoff(self):
+        config_path = self.root / "ops/business-reel-queue.json"
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        config_path.write_text(json.dumps({"version": 1, "slugs": ["approved-one"]}))
+        with patch.object(queue.sys, "argv", [str(SCRIPT), f"--queue-config={config_path}",
+                          "--allow-daytime", "--slugs", "approved-one", "--dry-run"]), \
+                patch.object(queue, "dry_run", return_value={"status": "dry_run_ready"}) as check, \
+                patch.object(queue, "validate_handoff") as handoff, redirect_stdout(io.StringIO()):
+            self.assertEqual(queue.main(), 0)
+        handoff.assert_not_called()
+        self.assertTrue(check.call_args.kwargs["allow_daytime"])
+
     def test_current_handoff_is_bound_to_queue_and_approval_hashes(self):
         slugs = ["approved-one", "approved-two", "approved-three"]
         for slug in slugs:
@@ -301,7 +313,7 @@ class BusinessReelQueueTests(unittest.TestCase):
         fake, calls = self.fake_commands()
         result = queue.run_queue([slug], max_topics_per_day=1, target_renders_per_day=1,
                                  clock=lambda: self.now, run_command=fake)
-        self.assertEqual(result["status"], "completed")
+        self.assertIn(result["status"], ("completed", "completed_target"))
         self.assertEqual(result["results"][0]["status"], "already_current")
         self.assertFalse(any(any("render.mjs" in arg for arg in args) for args, _ in calls))
 

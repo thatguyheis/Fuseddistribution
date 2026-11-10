@@ -9,7 +9,8 @@
   "review_notes": [
     "Reviewed the 1100+ word article against current primary sources and labeled illustrative examples as fictional.",
     "Reviewed the question-led seven-scene script, source labels, CTA, cleared sound effects, mobile-safe original art, and enrichment flow.",
-    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate."
+    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate.",
+    "Verified exact sound excerpts with ffmpeg: metal thunk begins at 2 seconds; removed silent 0.2-second selection."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -27,7 +28,7 @@
     "reel-script.md": "ba95831a587ccf392de593af7bb21516ddb8fff89332693d37c871b5721ae306",
     "reel-data.md": "d54023aa2da9078bd89c6126171199c091855aa169156450208a902aab4aadb6",
     "social-copy.json": "60454ccf167c40913df6507a0acdd97c18d376986d8dc67743f335c36d17db90",
-    "enrichment-plan.json": "eed043444e418fc9daddd69a744e1b800d79632c670900c69384706b99f6bf9f",
+    "enrichment-plan.json": "8fbdbfd98aeeee3bdf72d1184cb8c71609cda367f76c0c3af18bf2f97112f4f9",
     "attention-review.json": "541017206972c4ded8f6f6df2861da574264209b6e14325e50af6baed833583c",
     "presentation-plan.json": "1a9a2a0663d0177bfa227a94b464d72ed7a021c2e8cf659557f5d6d89af0f073"
   }

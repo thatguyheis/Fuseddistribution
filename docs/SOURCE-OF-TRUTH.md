@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 12, 2026-11-06. Owner: Nick Hughes.
+Version 13, 2026-11-10. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -88,6 +88,10 @@ Nick's personal and first party generations use the existing local procedures an
 
 ---
 
+Package preparation must decode and measure every exact sound-effect excerpt before handoff; schema validation alone does not prove the selected excerpt is audible. Reuse hash-valid rendered artifacts across production dates; delivery failures never require another encode.
+
+Owner requests to generate now or manually authorize daytime production for the explicitly selected topics. Run `python3 scripts/run-business-reel-queue.py --allow-daytime --slugs <approved-slugs>` immediately, serially. This manual path replaces the dated scheduler handoff requirement; source approvals, shared leases, bounded retries and release QA still apply. Do not defer an explicit manual request to the overnight window or ask for the same authorization again.
+
 ## 5. Schedule
 
 ### macOS launchd jobs (repo definitions in `launchagents/`)
@@ -96,7 +100,7 @@ Nick's personal and first party generations use the existing local procedures an
 |---|---|---|---|
 | `com.nick.coin-history-drafts` | Every 15 min | `scripts/run-coin-history-drafts.py` | Installed but currently disabled in launchd. Coin publisher only; not used by the business exception. |
 | `com.nick.render-missing-reels` | Daily 01:00 and 04:00, max 2 reels per run | `scripts/render-missing-reels.sh` | Active, coin scope only; diffusion disabled by default |
-| `com.nick.business-reel-production` | Daily 02:00 Pacific | scripts/run-business-reel-queue.py, ops/business-reel-queue.json | One serial owner; requires today's validated Luna handoff; target 2 current renders, at most 3 distinct approved topics per day; no new heavy work outside 00:00–06:00. Missing or stale handoff defers without rendering. caffeinate prevents idle sleep during the job. |
+| `com.nick.business-reel-production` | Daily 02:00 Pacific, recovery checks at 03:00, 04:00 and 05:00 | scripts/run-business-reel-queue.py, ops/business-reel-queue.json | One serial owner; requires today's validated Luna handoff; target 2 current renders, at most 3 distinct approved topics per day; no new heavy work outside 00:00–06:00. Missing or stale handoff defers without rendering. caffeinate prevents idle sleep during the job. |
 | `com.nick.buffer-backlog` | Daily 22:00 | `scripts/buffer-backlog-runner.sh` | Installed but currently disabled in launchd; existing disable preserved during business workflow repair. |
 | `com.nick.daily-blog-reel` | Daily 09:00 | `scripts/daily-blog-reel.sh` | **Retire.** Generic publisher. Must be disabled with launchctl (section 9). |
 | `com.nick.gemma-research` | Mon and Thu 23:00 | `scripts/gemma-research-batch.py` | **Retire.** Generic topic research. |

@@ -30,12 +30,32 @@
 	<key>StandardOutPath</key>
 	<string>/Users/nick/projects/fuseddistribution/.workflow-state/business-growth-ai-365/production/launchd.log</string>
 	<key>StartCalendarInterval</key>
-	<dict>
-		<key>Hour</key>
-		<integer>2</integer>
-		<key>Minute</key>
-		<integer>0</integer>
-	</dict>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>2</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>3</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>4</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>5</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+	</array>
 	<key>ThrottleInterval</key>
 	<integer>900</integer>
 	<key>WorkingDirectory</key>

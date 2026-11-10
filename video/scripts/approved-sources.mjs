@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { attentionReviewErrors } from './attention-review.mjs';
 import { parseReelScript } from './parse-script.mjs';
-import { validateEnrichmentPlan } from './production-enrichment.mjs';
+import { validateEnrichmentPlan, prepareEnrichment } from './production-enrichment.mjs';
 const required = ['verified.md','index.html','meta.json','research.json','hero.jpg','photo-post.jpg','reel-script.md','reel-data.md','social-copy.json'];
 export function assertApprovedSources(root, slug) {
   if (!/^[a-z0-9-]+$/.test(slug)) throw new Error('Invalid reel slug');
@@ -28,6 +28,8 @@ export function assertApprovedSources(root, slug) {
     const reelData = existsSync(reelDataPath) ? readFileSync(reelDataPath, 'utf8') : null;
     const parsedScript = parseReelScript(reelScript, slug, reelData);
     validateEnrichmentPlan(JSON.parse(readFileSync(enrichmentPath, 'utf8')), parsedScript.segments.length);
+    // Verify rights, hashes and the exact audible excerpts before consuming a render attempt.
+    prepareEnrichment(root, slug, parsedScript.segments.length);
   }
   if (qa.attentionOptimizationVersion === 1) {
     const attentionPath = join(directory, 'attention-review.json');

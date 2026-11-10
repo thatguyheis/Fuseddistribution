@@ -343,7 +343,7 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 checkpoint = json.loads(topic_path.read_text()) if topic_path.exists() else None
             except (OSError, ValueError):
                 checkpoint = None
-            if checkpoint is not None and checkpoint.get("pacificDate") == date and render_is_current(slug, approval, checkpoint):
+            if render_is_current(slug, approval, checkpoint):
                 item = {"slug": slug, "status": "already_current", "renderMeta": f"video/out/{slug}/render-meta.json"}
                 run_state["results"].append(item)
                 successful.add(slug)
@@ -502,7 +502,10 @@ def main() -> int:
         cap = args.max_topics_per_day or config.get("maxTopicsPerDay", 3)
         target = config.get("targetRendersPerDay", 2)
         date = now_pacific().date().isoformat()
-        handoff_blocker = validate_handoff(args.queue_config, config, slugs, cap, target, date)
+        if args.allow_daytime and not args.slugs:
+            raise ValueError("Owner-authorized manual runs require --slugs to record the explicit topic selection")
+        # Manual owner authorization replaces the scheduler handoff, not source or release QA.
+        handoff_blocker = None if args.allow_daytime else validate_handoff(args.queue_config, config, slugs, cap, target, date)
         if handoff_blocker:
             result = persist_handoff_block(date, slugs, handoff_blocker)
             print(json.dumps({"status": result["status"], "pacificDate": date,
