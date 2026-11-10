@@ -255,6 +255,12 @@ const editPostMutation = `
   }
 `;
 
+const metadataFor = post => post.metadata?.__typename === 'InstagramPostMetadata'
+    ? { instagram: Object.fromEntries(Object.entries(post.metadata).filter(([key]) => key !== '__typename')) }
+    : post.metadata?.__typename === 'YoutubePostMetadata'
+      ? { youtube: { ...Object.fromEntries(Object.entries(post.metadata).filter(([key]) => !['__typename', 'category'].includes(key))), categoryId: post.metadata.category?.categoryId } }
+      : undefined;
+
 async function editPost(token, args) {
   if (!existsSync(args.textFile)) throw new Error(`Missing text file: ${args.textFile}`);
   const text = readFileSync(args.textFile, 'utf8').trim();
@@ -266,6 +272,8 @@ async function editPost(token, args) {
     input: {
       id: args.postId,
       text,
+      assets: existing.assets.map(asset => ({video: {url: asset.source}})),
+      metadata: metadataFor(existing),
       mode: 'customScheduled',
       schedulingType: 'automatic',
       dueAt: existing.dueAt,
@@ -285,7 +293,7 @@ async function replaceScheduledMedia(token, args) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(args.slug)) throw new Error('Invalid reel slug.');
   const url = new URL(args.mediaUrl);
   const mediaPath = new RegExp(`^/reels(?:-x)?/${args.slug}/[a-z0-9-]+\\.mp4$`, 'i');
-  if (url.protocol !== 'https:' || url.hostname !== 'fuseddistribution.luxraycoco.workers.dev' || !mediaPath.test(url.pathname)) {
+  if (url.protocol !== 'https:' || !['fused-reel-media.luxraycoco.workers.dev', 'fuseddistribution.com'].includes(url.hostname) || !mediaPath.test(url.pathname)) {
     throw new Error('Replacement media must be a hosted Fused MP4 for the requested reel.');
   }
   assertRenderedReelAudioCleared(args.slug);
@@ -301,11 +309,6 @@ async function replaceScheduledMedia(token, args) {
     return post;
   });
   if (new Set(args.postIds).size !== args.postIds.length) throw new Error('Duplicate Buffer post IDs.');
-  const metadataFor = post => post.metadata?.__typename === 'InstagramPostMetadata'
-    ? { instagram: Object.fromEntries(Object.entries(post.metadata).filter(([key]) => key !== '__typename')) }
-    : post.metadata?.__typename === 'YoutubePostMetadata'
-      ? { youtube: { ...Object.fromEntries(Object.entries(post.metadata).filter(([key]) => !['__typename', 'category'].includes(key))), categoryId: post.metadata.category?.categoryId } }
-      : undefined;
   for (const original of selected) {
     const input = {
       id: original.id,

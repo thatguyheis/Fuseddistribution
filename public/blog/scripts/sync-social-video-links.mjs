@@ -46,7 +46,7 @@ function collectPublishedLinks() {
 
 function mediaUrl(value) {
   const url = typeof value === 'string' ? value : value?.url;
-  return typeof url === 'string' && /^https:\/\/(?:fuseddistribution\.com|fuseddistribution\.luxraycoco\.workers\.dev)\/reels(?:-x)?\/([a-z0-9-]+)\/\1\.mp4$/i.test(url)
+  return typeof url === 'string' && /^https:\/\/(?:fuseddistribution\.com|fuseddistribution\.luxraycoco\.workers\.dev|fused-reel-media\.luxraycoco\.workers\.dev)\/reels(?:-x)?\/([a-z0-9-]+)\/\1\.mp4$/i.test(url)
     ? url
     : null;
 }
@@ -72,6 +72,9 @@ function youtubeEmbedUrl(url) {
 }
 
 function sameOriginVideoUrl(url) {
+  if (/^https:\/\/fused-reel-media\.luxraycoco\.workers\.dev\/reels(?:-x)?\//i.test(url)) {
+    return `https://fuseddistribution.com${new URL(url).pathname}`;
+  }
   if (/^https:\/\/fuseddistribution\.com\/reels(?:-x)?\//i.test(url)) return url;
   const match = url.match(
     /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/([a-z0-9-]+)\/([a-z0-9-]+\.mp4)$/i,

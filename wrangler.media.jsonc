@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fused-reel-media",
+  "account_id": "904933a9a5d8c62b3b9506cb697ce080",
+  "main": "src/reel-media-worker.js",
+  "compatibility_date": "2026-11-10",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {"enabled": true},
+  "kv_namespaces": [{"binding":"REELS_KV","id":"20cd4e65773842deb15b8a12356c8e96"}]
+}

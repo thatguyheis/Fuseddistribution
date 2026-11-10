@@ -12,7 +12,7 @@ const publicXReelsRoot = join(repoRoot, 'public', 'reels-x');
 const videoOutRoot = join(repoRoot, 'video', 'out');
 const DEFAULT_MAX_DURATION_SECONDS = 135;
 const DEFAULT_MAX_BYTES = 25 * 1024 * 1024;
-const DEFAULT_BASE_URL = 'https://fuseddistribution.luxraycoco.workers.dev/reels-x';
+const DEFAULT_BASE_URL = 'https://fused-reel-media.luxraycoco.workers.dev/reels-x';
 
 function usage() {
   console.error(`Usage: node public/blog/scripts/prepare-buffer-x-media.mjs --slugs=a,b,c [options]
@@ -23,7 +23,7 @@ Options:
   --slugs=a,b,c                  Required slug list.
   --max-duration-seconds=N       Output duration cap. Default: 135.
   --max-bytes=N                  Output size cap. Default: 26214400.
-  --base-url=https://...         Hosted base URL after deploy. Default: workers.dev /reels-x.
+  --base-url=https://...         Hosted base URL after deploy. Default: media Worker /reels-x.
   --out=path                     Output media map. Default: .buffer-x-media-urls.json.
 
 Examples:

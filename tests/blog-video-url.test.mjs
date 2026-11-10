@@ -31,3 +31,9 @@ test('lookalike hosts and unsafe schemes never create players', () => {
     assert.doesNotMatch(render({primaryVideo: {url}}), /<video\b|<iframe\b/);
   }
 });
+
+test('isolated media origin embeds through the website origin', () => {
+  const html = render({primaryVideo:{url:'https://fused-reel-media.luxraycoco.workers.dev/reels/coin-story/coin-story.mp4'}});
+  assert.match(html, /<source src="https:\/\/fuseddistribution.com\/reels\/coin-story\/coin-story.mp4"/);
+  assert.doesNotMatch(render({primaryVideo:{url:'https://fused-reel-media.luxraycoco.workers.dev.evil.example/reels/coin-story/coin-story.mp4'}}), /<video\b/);
+});

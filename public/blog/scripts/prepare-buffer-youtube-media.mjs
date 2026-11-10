@@ -17,7 +17,7 @@ const DEFAULT_MAX_BYTES = 25 * 1024 * 1024;
 const DEFAULT_MAX_LONG_EDGE = 1280;
 const DEFAULT_MAX_VIDEO_BITRATE = 25_000_000;
 const DEFAULT_MAX_AUDIO_BITRATE = 192_000;
-const DEFAULT_BASE_URL = 'https://fuseddistribution.luxraycoco.workers.dev/reels';
+const DEFAULT_BASE_URL = 'https://fused-reel-media.luxraycoco.workers.dev/reels';
 
 function usage() {
   console.error(`Usage: node public/blog/scripts/prepare-buffer-youtube-media.mjs --slugs=a,b,c [options]
@@ -29,7 +29,7 @@ Options:
   --max-duration-seconds=N       Output duration cap. Default: 135.
   --max-bytes=N                  Output size cap. Default: 26214400.
   --max-long-edge=N              Pixel cap. Default: 1920 for business-growth-v1, otherwise 1280.
-  --base-url=https://...         Hosted base URL after deploy. Default: workers.dev /reels.
+  --base-url=https://...         Hosted base URL after deploy. Default: media Worker /reels.
   --out=path                     Output media map. Default: .buffer-media-urls.json.
 
 Examples:

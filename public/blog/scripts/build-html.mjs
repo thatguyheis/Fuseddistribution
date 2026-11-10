@@ -590,6 +590,9 @@ function youtubeEmbedUrl(url) {
 }
 
 function sameOriginVideoUrl(url) {
+  if (/^https:\/\/fused-reel-media\.luxraycoco\.workers\.dev\/reels(?:-x)?\//i.test(url)) {
+    return `https://fuseddistribution.com${new URL(url).pathname}`;
+  }
   const match = url.match(
     /^https:\/\/fuseddistribution\.luxraycoco\.workers\.dev\/reels\/([a-z0-9-]+)\/([a-z0-9-]+\.mp4)$/i,
   );
@@ -605,7 +608,7 @@ function renderSocialVideo(data, title, reelArtifactsExist = false) {
   const youtube = validUrl(platforms.youtube?.url, parsed => ['youtube.com', 'www.youtube.com', 'youtu.be'].includes(parsed.hostname.toLowerCase()) && (parsed.hostname.toLowerCase() === 'youtu.be' || parsed.pathname === '/watch' || parsed.pathname.startsWith('/shorts/')));
   const instagram = validUrl(platforms.instagram?.url, parsed => ['instagram.com', 'www.instagram.com'].includes(parsed.hostname.toLowerCase()) && parsed.pathname.startsWith('/reel/'));
   const x = validUrl(platforms.x?.url, parsed => parsed.hostname.toLowerCase() === 'x.com' && /^\/[^/]+\/status\/\d+\/?$/.test(parsed.pathname));
-  const primaryVideo = validUrl(data?.primaryVideo?.url, parsed => parsed.hostname.toLowerCase() === 'fuseddistribution.luxraycoco.workers.dev' && /^\/reels\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/i.test(parsed.pathname));
+  const primaryVideo = validUrl(data?.primaryVideo?.url, parsed => ['fuseddistribution.com', 'fuseddistribution.luxraycoco.workers.dev', 'fused-reel-media.luxraycoco.workers.dev'].includes(parsed.hostname.toLowerCase()) && /^\/reels(?:-x)?\/([a-z0-9-]+)\/\1\.mp4$/i.test(parsed.pathname));
   if (!primaryVideo && !youtube && !instagram && !x) {
     if (!reelArtifactsExist || data?.showPending === false) return '';
     return '<aside class="social-video" aria-label="Reel publication status"><h2>Companion reel</h2><p>The companion reel will appear here after editorial review and release approval.</p><div class="social-video-pending" role="status" aria-live="polite">Pending editorial release</div></aside>';
