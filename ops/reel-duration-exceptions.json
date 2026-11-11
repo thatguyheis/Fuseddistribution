@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "exceptions": {
+    "write-a-useful-ai-prompt-for-one-small-business-task": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-11T23:47:05.785408+00:00",
+      "durationSeconds": 97.75,
+      "videoSha256": "a23283076f6ff3427b949ec5fb70cd9513c5bd347c8b39d8e4d9385977252a7f",
+      "reason": "Nick explicitly approved this reel below the 100 second minimum on 2026-11-11. All other release gates remain required."
+    }
+  }
+}

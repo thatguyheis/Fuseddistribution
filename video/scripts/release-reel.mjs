@@ -1,3 +1,4 @@
+import {approvedDurationException} from './lib/duration-exception.mjs';
 import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
 import {approveGeneratedBackgroundsForReel} from './generated-background-library.mjs';
 import {approveStockMediaForReel} from './stock-media-library.mjs';
@@ -131,7 +132,9 @@ export function evaluateReelRelease(slug, options = {}) {
     const duration = mediaDuration(videoPath);
     if (!Number.isFinite(duration) || duration <= 0) errors.push('MP4 has an invalid duration');
     else if (Math.abs(duration - expected) > 1) errors.push(`MP4 duration ${duration.toFixed(2)}s does not match expected ${expected.toFixed(2)}s`);
-    if (duration < 100 || duration > 135) errors.push(`rendered duration ${duration.toFixed(2)}s is outside the 100-135s distribution standard; preserve the complete narration and repair before release`);
+    const durationException = duration < 100 ? approvedDurationException(root, slug, videoPath, duration) : null;
+    if (durationException) warnings.push(`Owner approved shorter export: ${duration.toFixed(2)}s (${durationException.approvedAt})`);
+    if ((duration < 100 && !durationException) || duration > 135) errors.push(`rendered duration ${duration.toFixed(2)}s is outside the 100-135s distribution standard; preserve the complete narration and repair before release`);
   }
 
   if (script && timing) {

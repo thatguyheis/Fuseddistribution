@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 14, 2026-11-10. Owner: Nick Hughes.
+Version 15, 2026-11-11. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -54,7 +54,7 @@ Nick's personal and first party generations use the existing local procedures an
 | Blog QA pass | `qa.json` `pass: true`, score at least 85, mode `coin-history-automated`, stages include `qa-local-pass` and `qa-brain-pass` | `run-coin-history-drafts.py` |
 | Reel format | Coin/default: vertical 720 x 1280. New business presentations: reviewed `business-growth-v1`, 1080 x 1920 full bleed, 30 fps, H.264 CRF 20, AAC 192 kbps. Retain the 1080 master without recompression when it meets delivery limits. | `video/src/Root.tsx`, presentation-plan.mjs, render.mjs, prepare-buffer-youtube-media.mjs |
 | Reel script length | 280 to 330 words, target 110 to 130 seconds | `docs/COIN-HISTORY-SOP.md` |
-| Reel release duration | 100 to 135 seconds measured from the mastered MP4 | `video/scripts/release-reel.mjs:110` |
+| Reel release duration | 100 to 135 seconds measured from the mastered MP4. Explicit owner exceptions in `ops/reel-duration-exceptions.json` bind a shorter export to its slug, measured duration and exact MP4 SHA-256; other release gates remain required. | `video/scripts/release-reel.mjs:110` |
 | Reel ending | Spoken question card, 10 words or fewer, inside the hashed transcript | release gate, `run-coin-history-drafts.py` |
 | Reel file size | Target 44 MB, must be under 50,000,000 bytes (master). Public derivatives for X and Instagram must be under 25 MiB. | `scripts/render-missing-reels.sh`, Buffer planners |
 | Overnight reel batch | Two coin reels per launchd run at 01:00 and 04:00 Pacific; business-growth automation prepares three approved packages the prior evening and produces up to two pairs at 02:00 Pacific under one production owner. A date-bound, hash-bound Luna handoff is required; missing or stale handoff blocks the run instead of falling back to an old queue. Heavy rendering stays out of daytime hours. | `launchagents/com.nick.render-missing-reels.plist`, `scripts/write-business-reel-handoff.py`, `scripts/run-business-reel-queue.py`, Codex automation `daily-business-growth-blog-and-reel` |
