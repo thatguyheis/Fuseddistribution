@@ -1,3 +1,4 @@
+import {hookDurationLimit} from './lib/hook-duration-limit.mjs';
 import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
 import {processIsAlive} from './process-liveness.mjs';
 import {stagePresentation} from './presentation-plan.mjs';
@@ -147,9 +148,9 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
       run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice} --preflight-only`);
       const hookQa = JSON.parse(readFileSync(join(videoDir, '..', 'public', 'blog', slug, 'qa.json'), 'utf8'));
       const preflightHookSeconds = collectAudioDurations(videoDir, slug, 1)[0];
-      if (hookQa.attentionOptimizationVersion === 1 && (!Number.isFinite(preflightHookSeconds) || preflightHookSeconds > 3.5)) {
+      if (hookQa.attentionOptimizationVersion === 1 && (!Number.isFinite(preflightHookSeconds) || preflightHookSeconds > hookDurationLimit(join(videoDir, '..'), slug, script.segments[0].narration))) {
         const seconds = Number.isFinite(preflightHookSeconds) ? `${preflightHookSeconds.toFixed(2)}s` : 'unknown';
-        throw new Error(`HOOK_AUDIO_TOO_LONG: measured opening hook is ${seconds}; shorten it to 3.5s or less before generating remaining narration`);
+        throw new Error(`HOOK_AUDIO_TOO_LONG: measured opening hook is ${seconds}; repair it to the approved hook duration limit before generating remaining narration`);
       }
     }
     run(`node scripts/generate-audio.mjs --post=${slug} --voice=${voice}`);
@@ -179,8 +180,8 @@ async function renderPost(slug, musicTrack = 'none', reelN = null, voice = 'chat
   const editorialQa = JSON.parse(readFileSync(join(videoDir, '..', 'public', 'blog', slug, 'qa.json'), 'utf8'));
   const hookAudioSeconds = Number(audioDurations[0]);
   if (editorialQa.attentionOptimizationVersion === 1
-    && (!Number.isFinite(hookAudioSeconds) || hookAudioSeconds > 3.5)) {
-    throw new Error(`Measured hook audio is ${Number.isFinite(hookAudioSeconds) ? hookAudioSeconds.toFixed(2) : 'unknown'}s; shorten it to 3.5s or less before encoding`);
+    && (!Number.isFinite(hookAudioSeconds) || hookAudioSeconds > hookDurationLimit(join(videoDir, '..'), slug, script.segments[0].narration))) {
+    throw new Error(`Measured hook audio is ${Number.isFinite(hookAudioSeconds) ? hookAudioSeconds.toFixed(2) : 'unknown'}s; repair it to the approved hook duration limit before encoding`);
   }
   const retimed = retimeScriptToAudio(script, audioDurations);
   script = retimed.script;

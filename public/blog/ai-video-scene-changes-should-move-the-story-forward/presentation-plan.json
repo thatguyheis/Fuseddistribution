@@ -13,12 +13,12 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-0-hook.jpg",
-        "sha256": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
-        "weight": 1,
-        "title": "Can you spot this pattern in AI videos?",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/hero.jpg",
+        "sha256": "8a20d6d2cb9c54a5dab4c1b8dee55fcab30c195bb56582ae7f102a0475598e83",
+        "title": "Once you notice this pattern in AI videos, you can’t unsee it.",
         "eyebrow": "AI VIDEO",
         "credit": "Fused original vector graphic",
+        "weight": 1,
         "fit": "cover",
         "fullFrame": true
       }
@@ -34,6 +34,18 @@
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true
+      },
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-11063289.jpg",
+        "sha256": "10e46ceedb9b3ed175300ddecce24bc5c87400b3ab85072e70cd63e7efa7df7f",
+        "weight": 0.8,
+        "title": "A polished workspace is only context",
+        "eyebrow": "ILLUSTRATIVE STOCK",
+        "credit": "Amar  Preciado / Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/computer-and-a-laptop-with-editing-software-11063289/",
+        "fit": "cover",
+        "fullFrame": false
       }
     ],
     [
@@ -50,6 +62,18 @@
       }
     ],
     [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-30229850.jpg",
+        "sha256": "340e23311f648c26338082a8c36c1b9f87f366c2e3ca030d4496b98b94bd70cb",
+        "weight": 0.8,
+        "title": "What does the next image explain?",
+        "eyebrow": "ILLUSTRATIVE STOCK",
+        "credit": "Jakub Zerdzicki / Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/professional-video-editing-workspace-with-keyboard-30229850/",
+        "fit": "cover",
+        "fullFrame": false
+      },
       {
         "type": "photo",
         "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-3-question.jpg",
@@ -77,6 +101,18 @@
       }
     ],
     [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-8386687.jpg",
+        "sha256": "394f59261e2e0a1e0560dc34ef177126b66e3454a77b9bf0735ea0c31565e1db",
+        "weight": 0.8,
+        "title": "Review the cut against your notes",
+        "eyebrow": "ILLUSTRATIVE STOCK",
+        "credit": "Tara Winstead / Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/sticky-notes-scattered-on-white-desk-8386687/",
+        "fit": "cover",
+        "fullFrame": false
+      },
       {
         "type": "photo",
         "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-5-review.jpg",

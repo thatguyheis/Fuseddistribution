@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "usage": "Supporting illustrative stock; does not depict Fused customers or prove a customer result.",
+  "photos": [
+    {
+      "id": 11063289,
+      "query": "video editing computer",
+      "alt": "A professional video editing workspace featuring monitors, keyboard, and microphones in a studio setting.",
+      "photographer": "Amar  Preciado",
+      "pageUrl": "https://www.pexels.com/photo/computer-and-a-laptop-with-editing-software-11063289/",
+      "downloadUrl": "https://images.pexels.com/photos/11063289/pexels-photo-11063289.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "file": "outputs/nov12-stock-options/pexels-11063289.jpg",
+      "sha256": "10e46ceedb9b3ed175300ddecce24bc5c87400b3ab85072e70cd63e7efa7df7f",
+      "source": "Pexels",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "selectedForUse": true,
+      "localPath": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-11063289.jpg"
+    },
+    {
+      "id": 30229850,
+      "query": "video editing computer",
+      "alt": "A close-up of a video editing setup featuring a mechanical keyboard and color grading on a monitor.",
+      "photographer": "Jakub Zerdzicki",
+      "pageUrl": "https://www.pexels.com/photo/professional-video-editing-workspace-with-keyboard-30229850/",
+      "downloadUrl": "https://images.pexels.com/photos/30229850/pexels-photo-30229850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "file": "outputs/nov12-stock-options/pexels-30229850.jpg",
+      "sha256": "340e23311f648c26338082a8c36c1b9f87f366c2e3ca030d4496b98b94bd70cb",
+      "source": "Pexels",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "selectedForUse": true,
+      "localPath": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-30229850.jpg"
+    },
+    {
+      "id": 8386687,
+      "query": "sticky notes planning",
+      "alt": "Top view of a desk with blue sticky notes, a spiral notepad, and lined papers.",
+      "photographer": "Tara Winstead",
+      "pageUrl": "https://www.pexels.com/photo/sticky-notes-scattered-on-white-desk-8386687/",
+      "downloadUrl": "https://images.pexels.com/photos/8386687/pexels-photo-8386687.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "file": "outputs/nov12-stock-options/pexels-8386687.jpg",
+      "sha256": "394f59261e2e0a1e0560dc34ef177126b66e3454a77b9bf0735ea0c31565e1db",
+      "source": "Pexels",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "selectedForUse": true,
+      "localPath": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-8386687.jpg"
+    }
+  ]
+}

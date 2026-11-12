@@ -1,3 +1,6 @@
+import {approvedOwnerHook} from './lib/owner-hook.mjs';
+import {hookDurationLimit} from './lib/hook-duration-limit.mjs';
+import {fileURLToPath} from 'node:url';
 function wordCount(value) {
   return String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
 }
@@ -18,11 +21,15 @@ export function attentionReviewErrors(review, scriptText) {
   const endingBlock = section(scriptText, 'QUESTION|CTA');
   const endingText = field(endingBlock, 'Text(?:\\s+on\\s+screen)?');
   const endingNarration = field(endingBlock, 'Narration');
+  const slug = scriptText.match(/^# Reel Script:\s*([a-z0-9-]+)/m)?.[1];
+  const ownerHook = approvedOwnerHook(fileURLToPath(new URL('../../', import.meta.url)),slug);
+  const maxWords = ownerHook ? wordCount(ownerHook.spokenText) : 12;
+  const limit = hookDurationLimit(fileURLToPath(new URL('../../', import.meta.url)), slug, hookText);
   const questionHookRequired = review?.hook?.questionHookRequired === true;
 
   if (review?.version !== 1 || review?.pass !== true) errors.push('attention review must be version 1 and pass');
   if (!hookText || hookText !== review?.hook?.spokenText || !Number.isFinite(hookDuration)
-    || wordCount(hookText) > 12 || hookDuration > 4 || review?.hook?.spokenSeconds > 3.5
+    || wordCount(hookText) > maxWords || hookDuration > Math.max(4, limit) || review?.hook?.spokenSeconds > limit
     || review?.hook?.startsAtSeconds !== 0 || review?.hook?.specificViewerProblemOrBenefit !== true
     || review?.hook?.visibleWithoutSound !== true) {
     errors.push('hook must match the script and state a concise, visible problem or benefit in the first seconds');

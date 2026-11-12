@@ -13,12 +13,12 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-0-hook.jpg",
-        "sha256": "1ef62a40c64836f9c51167113168123438f78c9100a3ac33dda7e3b813e56060",
-        "weight": 1,
-        "title": "Why does AI help video creation?",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/hero.jpg",
+        "sha256": "4afa56e1f7300dc2d0800f5e3aae7ecee430bc803a9b36dfae9c63abe1293b72",
+        "title": "There’s a reason AI works well for video—and it’s not the visuals.",
         "eyebrow": "AI VIDEO",
-        "credit": "Fused original vector graphic",
+        "credit": "cottonbro studio / Pexels; Fused original type layout",
+        "weight": 1,
         "fit": "cover",
         "fullFrame": true
       }
@@ -34,19 +34,18 @@
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true
-      }
-    ],
-    [
+      },
       {
         "type": "photo",
-        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-2-audience.jpg",
-        "sha256": "090d66b2e90fd623ba529f8e0128f328e218caaebb697b845ccc4075cb1db9b8",
-        "weight": 1,
-        "title": "Name one viewer and one problem",
-        "eyebrow": "START HERE",
-        "credit": "Fused original vector graphic",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/pexels-5990265.jpg",
+        "sha256": "bea751233fd7ddf2db2a44d13fff4a23f7b977824ddd2fea9986da7ea3a53560",
+        "weight": 0.8,
+        "title": "Plan the story before choosing pictures",
+        "eyebrow": "ILLUSTRATIVE STOCK",
+        "credit": "cottonbro studio / Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-sticky-notes-on-whiteboard-5990265/",
         "fit": "cover",
-        "fullFrame": true
+        "fullFrame": false
       }
     ],
     [
@@ -65,6 +64,19 @@
     [
       {
         "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-honest.jpg",
+        "sha256": "3e4ec3ef8227b4f800ddb8f8865fdfd0b1fa19052652ebe85c56925b4aa1ea5a",
+        "weight": 1,
+        "title": "Keep the example honest",
+        "eyebrow": "ILLUSTRATIVE EXAMPLE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
         "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-4-path.jpg",
         "sha256": "da37c6628a53491c24e004e8bfe29ebe71858154ede139769748aed76c38a484",
         "weight": 1,
@@ -74,19 +86,6 @@
         "fit": "cover",
         "fullFrame": true,
         "reservedGraphic": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-5-payoff.jpg",
-        "sha256": "69d7580dd84cb098b44c25c2725e562be5b8c2edcaaaec2bb3af0e507344245b",
-        "weight": 1,
-        "title": "Promise one useful takeaway",
-        "eyebrow": "THE PAYOFF",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
       }
     ],
     [

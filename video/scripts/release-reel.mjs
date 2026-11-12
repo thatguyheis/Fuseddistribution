@@ -1,3 +1,5 @@
+import {approvedOwnerHook} from './lib/owner-hook.mjs';
+import {hookDurationLimit} from './lib/hook-duration-limit.mjs';
 import {approvedDurationException} from './lib/duration-exception.mjs';
 import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
 import {approveGeneratedBackgroundsForReel} from './generated-background-library.mjs';
@@ -108,6 +110,12 @@ export function evaluateReelRelease(slug, options = {}) {
       if (new Set(transitions).size < 2 || JSON.stringify(meta.enrichmentSummary?.transitions) !== JSON.stringify(transitions)) throw Error('Transition variety metadata does not match the composition');
       const captionData = JSON.parse(readFileSync(join(outDir, 'captions.json')));
       errors.push(...endingCaptionErrors(script, captionData));
+      const approvedHook=approvedOwnerHook(root,slug);
+      if(approvedHook) {
+        const normalized=value=>String(value).toLowerCase().replace(/[^a-z0-9]/g,'');
+        const recognized=(captionData[0] || []).map(chunk=>chunk.text).join(' ');
+        if(normalized(recognized)!==normalized(approvedHook.spokenText))errors.push('Recognized opening speech differs from the owner approved hook; inspect audio and recognition before release');
+      }
     } catch (error) { errors.push(`Enrichment verification failed: ${error.message}`); }
   }
   const timing = readJson(join(outDir, 'audio-timing.json'), errors, 'audio timing');
@@ -115,8 +123,8 @@ export function evaluateReelRelease(slug, options = {}) {
     const approval = readJson(join(root, 'public', 'blog', slug, 'qa.json'), errors, 'editorial approval');
     const hookSeconds = Number(timing?.audioDurations?.[0]);
     if (approval?.attentionOptimizationVersion === 1
-      && (!Number.isFinite(hookSeconds) || hookSeconds > 3.5)) {
-      errors.push(`spoken hook duration ${Number.isFinite(hookSeconds) ? hookSeconds.toFixed(2) : 'unknown'}s exceeds the 3.5s attention target`);
+      && (!Number.isFinite(hookSeconds) || hookSeconds > hookDurationLimit(root, slug, script?.segments?.[0]?.narration))) {
+      errors.push(`spoken hook duration ${Number.isFinite(hookSeconds) ? hookSeconds.toFixed(2) : 'unknown'}s exceeds its approved attention duration limit`);
     }
   } catch (error) {
     errors.push(`attention audio review failed: ${error.message}`);

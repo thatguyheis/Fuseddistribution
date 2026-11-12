@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "exceptions": {
+    "ai-video-scene-changes-should-move-the-story-forward": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-12T15:19:39.582886+00:00",
+      "spokenText": "Once you notice this pattern in AI videos, you can’t unsee it.",
+      "maxSeconds": 7,
+      "reason": "Nick explicitly requires this exact statement hook on 2026-11-12. Preserve its wording and normal narration speed; other attention and release checks still apply.",
+      "preserveExactText": true
+    },
+    "why-ai-video-works-better-with-story-structure": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-12T15:21:16.608404+00:00",
+      "spokenText": "There’s a reason AI works well for video—and it’s not the visuals.",
+      "maxSeconds": 8,
+      "reason": "Nick explicitly requires the originally approved statement hook verbatim, spoken and visible, on 2026-11-12.",
+      "preserveExactText": true
+    },
+    "test-your-ai-reel-with-the-sound-off": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-12T15:26:00.533980+00:00",
+      "spokenText": "The step that’s easy to skip? Watching your reel without sound.",
+      "maxSeconds": 8,
+      "reason": "Nick selected this hook direction and explicitly requires approved hooks to be preserved verbatim. Use natural pacing and verify encoded output.",
+      "preserveExactText": true
+    },
+    "give-ai-a-video-brief-before-asking-for-a-script": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-12T15:26:00.533984+00:00",
+      "spokenText": "Before you ask AI for a video, give it this.",
+      "maxSeconds": 8,
+      "reason": "Nick selected this hook direction and explicitly requires approved hooks to be preserved verbatim. Use natural pacing and verify encoded output.",
+      "preserveExactText": true
+    },
+    "connect-your-reel-ending-to-its-opening-promise": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-12T15:26:00.533985+00:00",
+      "spokenText": "Your AI reel can look finished—and still leave viewers hanging.",
+      "maxSeconds": 8,
+      "reason": "Nick selected this hook direction and explicitly requires approved hooks to be preserved verbatim. Use natural pacing and verify encoded output.",
+      "preserveExactText": true
+    }
+  }
+}

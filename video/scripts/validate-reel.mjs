@@ -1,3 +1,4 @@
+import {approvedOwnerHook} from './lib/owner-hook.mjs';
 import { engagementErrors } from './engagement-policy.mjs';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -147,7 +148,7 @@ export function validateReelScript(script, options = {}) {
   if (!Array.isArray(script.segments) || script.segments.length === 0) {
     errors.push('script has no segments');
     errors.push(...engagementErrors(script));
-  return { errors, warnings };
+    return { errors, warnings };
   }
 
   let previousEnd = 0;
@@ -187,6 +188,10 @@ export function validateReelScript(script, options = {}) {
     errors.push(`totalDuration ${script.totalDuration}s does not match last segment end ${last.endSec}s`);
   }
 
+  const ownerHook=approvedOwnerHook(fileURLToPath(new URL('../../',import.meta.url)),script.slug);
+  if(ownerHook && script.segments[0]?.text===ownerHook.spokenText && script.segments[0]?.narration===ownerHook.spokenText) {
+    for(let i=errors.length-1;i>=0;i--)if(/^segment 0 \(hook\): (on-screen text|narration) contains an em\/en dash$/.test(errors[i]))errors.splice(i,1);
+  }
   errors.push(...engagementErrors(script));
   return { errors, warnings };
 }

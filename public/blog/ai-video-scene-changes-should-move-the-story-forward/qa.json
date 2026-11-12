@@ -10,28 +10,30 @@
     "Reviewed current primary source claims and labeled fictional examples as illustrative.",
     "Reviewed the exact question hook, immediate early payoff, topic-specific original vector art, reserved graphic scene, CTA, and mobile safe areas.",
     "Verified exact sound excerpts with the approved rights catalog and local audio measurement before handoff.",
-    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates."
+    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates.",
+    "Nick requested this exact statement hook; preserved verbatim in narration and frame-zero hero, with a scoped natural speech allowance. Reviewed downloaded Pexels stock as illustrative context and corrected scene-to-narration mapping. Final encoded verification remains required."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
-    "questionHookRequired": true,
-    "spokenText": "Can you spot this pattern in AI videos?",
-    "visibleText": "Can you spot this pattern in AI videos?"
+    "questionHookRequired": false,
+    "spokenText": "Once you notice this pattern in AI videos, you can’t unsee it.",
+    "visibleText": "Once you notice this pattern in AI videos, you can’t unsee it."
   },
   "artifactSha256": {
     "verified.md": "524002eb10d79bd4c2321bace190913d6a9591c9c0f41e0c1acf4231c810cbb2",
     "index.html": "b944d9bf2b6937424e594fa68bc8fb4ea08756e839878efac9b49ba97601ef2c",
     "meta.json": "db8e3baa6e159f5cf250b8e4e63bbe2f45c82323084f32322f36cab4b5a2d2bd",
     "research.json": "6753eae543028ee5b781bc0fb52c63dcd74d00b75aa692d3a4f9a6d47d067741",
-    "hero.jpg": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
+    "hero.jpg": "8a20d6d2cb9c54a5dab4c1b8dee55fcab30c195bb56582ae7f102a0475598e83",
     "photo-post.jpg": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
-    "reel-script.md": "ec5e35230846df03fb77095cb24e1041af8035c273e7663e6efb93cae946fc86",
-    "reel-data.md": "b026e50172f78cbafbb51a1039fc21750d61ab3c862b8f8289c54c2dd0ebe404",
+    "reel-script.md": "aab1f0da6e2ea5241e25c05ed7bb9c4e0ab39c9360927c674a0687162a8cafb7",
+    "reel-data.md": "dc12cf320948bdd5a97d39bd7dc7346b4301213b597faead2c1452ca4ff50267",
     "social-copy.json": "44dd0690cb4d3054f9a098b0011eeb437fd6ed8239858c3041b89d9cd462c2cf",
     "enrichment-plan.json": "c28c83cff0cdba208e2cac0f012ccd432a67350b6977b1c261e26de7d6370fb6",
-    "attention-review.json": "e0575f8c944fd58f9cd037273b2da3042bd5f88fff32e642a8126a1e4512247a",
-    "presentation-plan.json": "1c336e5541206b6beb66a42320846f5f2eade90393664956a4a0d6f030ea7212",
-    "social-video.json": "a561453c4dae6b5420f726eb0cb8da7b68972690437abec1d75f3add9cb6effc"
+    "attention-review.json": "aae0f73876b681f513b1f1c0d0e5e4fc8b7e212b45f3e56c9aace8db3d20cc09",
+    "presentation-plan.json": "283ef5c11dea6ce50a428d3745b987a6e215b1daac4903a10fe2138b412219db",
+    "social-video.json": "a561453c4dae6b5420f726eb0cb8da7b68972690437abec1d75f3add9cb6effc",
+    "stock-image-sources.json": "21fc3410ddaee6554a97eb223ed1450c56157c350aa66827512b4ec83e2841c8"
   },
-  "reviewed_at": "2026-11-11T20:30:00-08:00"
+  "reviewed_at": "2026-11-12T15:22:51.517Z"
 }

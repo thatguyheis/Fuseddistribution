@@ -1,1 +1,50 @@
-{"version":1,"attentionOptimizationVersion":1,"hook":{"spokenText":"Can you spot this pattern in AI videos?","visibleText":"Can you spot this pattern in AI videos?","spokenSeconds":3.1,"startsAtSeconds":0,"questionHookRequired":true,"specificViewerProblemOrBenefit":true,"visibleWithoutSound":true,"visual":"Approved topic hero with the exact question at frame zero."},"payoffBeats":[{"scriptHeading":"## OVERLAY: Early payoff","paysOffHook":true},{"scriptHeading":"## OVERLAY: New picture, same point","paysOffHook":true},{"scriptHeading":"## OVERLAY: Ask what changed","paysOffHook":true},{"scriptHeading":"## OVERLAY: Show the next step","paysOffHook":true}],"cta":{"onScreenText":"Will your next scene add meaning?","spokenText":"Will your next scene add meaning?","primaryAction":"save","primaryActionCount":1,"fitsViewerValue":true},"hypothesis":"A contrast between decorative swaps and purposeful steps will make the scene test easy to remember.","metrics":{"platformMetrics":["average-watch-time","audience-retention-dips","saves-per-reach"],"comparison":"Compare with similar length business reels after retention data matures."},"pass":true}
+{
+  "version": 1,
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "spokenText": "Once you notice this pattern in AI videos, you can’t unsee it.",
+    "visibleText": "Once you notice this pattern in AI videos, you can’t unsee it.",
+    "spokenSeconds": 6.5,
+    "startsAtSeconds": 0,
+    "questionHookRequired": false,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Owner-approved exact hook visible on the hero at frame zero.",
+    "timingStatus": "Estimate pending measured Chatterbox hook preflight"
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Early payoff",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: New picture, same point",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Ask what changed",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Show the next step",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Will your next scene add meaning?",
+    "spokenText": "Will your next scene add meaning?",
+    "primaryAction": "save",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "A contrast between decorative swaps and purposeful steps will make the scene test easy to remember.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "saves-per-reach"
+    ],
+    "comparison": "Compare with similar length business reels after retention data matures."
+  },
+  "pass": true
+}

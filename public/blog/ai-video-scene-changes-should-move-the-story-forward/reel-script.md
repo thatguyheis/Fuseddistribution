@@ -5,8 +5,8 @@ content-kind: educate
 
 ---
 ## HOOK
-**Duration:** 4s
-Narration: Can you spot this pattern in AI videos?
+**Duration:** 7s
+Narration: Once you notice this pattern in AI videos, you can’t unsee it.
 
 ---
 ## OVERLAY: Early payoff

@@ -24,7 +24,10 @@
       "earlyPayoff": "It is not just the visuals. Show how a clear audience, useful example and payoff organize a scattered idea.",
       "angle": "Compare two fictional scripts about the same business task: a scattered tool-first script and a clear hook, example and takeaway. Demonstrate structure rather than claiming AI automatically improves performance.",
       "cta": "Which part slows you down: ideas, scripts, or editing?",
-      "graphic": "Labeled illustrative before/after storyboard with a clear hook, example and takeaway."
+      "graphic": "Labeled illustrative before/after storyboard with a clear hook, example and takeaway.",
+      "spokenHook": "There’s a reason AI works well for video—and it’s not the visuals.",
+      "visibleHook": "There’s a reason AI works well for video—and it’s not the visuals.",
+      "questionHookRequired": false
     },
     "ai-video-scene-changes-should-move-the-story-forward": {
       "number": 2,
@@ -35,12 +38,15 @@
       "earlyPayoff": "Changing the picture does not always advance the explanation. Demonstrate the difference immediately.",
       "angle": "Compare decorative image swaps with purposeful scene changes that answer a question, show evidence or demonstrate the next step. Use a fictional example without invented audience analytics.",
       "cta": "Save this before you build your next reel.",
-      "graphic": "Side-by-side scene timeline: decorative swaps versus meaningful steps; label as an illustrative comparison."
+      "graphic": "Side-by-side scene timeline: decorative swaps versus meaningful steps; label as an illustrative comparison.",
+      "spokenHook": "Once you notice this pattern in AI videos, you can’t unsee it.",
+      "visibleHook": "Once you notice this pattern in AI videos, you can’t unsee it.",
+      "questionHookRequired": false
     }
   },
   "productionRules": [
     "Create one complete blog/reel pair per selected topic, serially. Use GPT drafting and the established Chatterbox Standard voice, graphics, transitions, cleared sound effects and release gates.",
-    "Retain the approved creative hook as the headline/direction. Use hookQuestion as the short spoken and visible opening, then deliver earlyPayoff immediately. Do not make invented first-person experience or performance claims.",
+    "Use approvedHook verbatim as both the spoken and visible opening; do not use the older shortened hookQuestion alternative. Deliver earlyPayoff immediately after it. Do not make invented first-person experience or performance claims.",
     "Use only current primary sources for factual claims. The illustrations and before/after examples are fictional demonstrations, not measured audience results.",
     "The approved hero is visible at frame zero. Ensure its question matches the spoken hook and remains legible at phone size. Reserve the graphic scene panel so baked artwork and dynamic overlays never collide.",
     "Do not use topics held for another date as fallback or substitute unfinished older topics for this approved slate.",

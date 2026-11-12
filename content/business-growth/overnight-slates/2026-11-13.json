@@ -25,7 +25,10 @@
       "earlyPayoff": "Mute a fictional draft and check whether its topic, steps and final action remain understandable.",
       "angle": "Show a practical silent viewing check for opening clarity, captions, visual explanation and CTA. Treat it as an accessibility and clarity check, not a guaranteed reach improvement.",
       "cta": "Try the silent test on your latest reel.",
-      "graphic": "Three-check flowchart: understand the opening, follow the steps, identify the final action."
+      "graphic": "Three-check flowchart: understand the opening, follow the steps, identify the final action.",
+      "spokenHook": "The step that’s easy to skip? Watching your reel without sound.",
+      "visibleHook": "The step that’s easy to skip? Watching your reel without sound.",
+      "questionHookRequired": false
     },
     "give-ai-a-video-brief-before-asking-for-a-script": {
       "number": 4,
@@ -36,7 +39,10 @@
       "earlyPayoff": "A short brief with an audience, one problem, promised result and evidence to show.",
       "angle": "Turn a fictional business brief into a script and scene outline. Keep this distinct from the earlier one-task prompt guide: focus on audiovisual evidence and scene planning.",
       "cta": "What problem should your next video solve?",
-      "graphic": "Brief-to-script-to-scene flowchart with a single fictional business example."
+      "graphic": "Brief-to-script-to-scene flowchart with a single fictional business example.",
+      "spokenHook": "Before you ask AI for a video, give it this.",
+      "visibleHook": "Before you ask AI for a video, give it this.",
+      "questionHookRequired": false
     },
     "connect-your-reel-ending-to-its-opening-promise": {
       "number": 5,
@@ -47,12 +53,15 @@
       "earlyPayoff": "Show how a generic ending can leave the opening question unanswered, then close that loop.",
       "angle": "Compare a generic like-and-follow ending with a relevant next step that pays off the opening promise. Keep one CTA and avoid claiming guaranteed retention or conversions.",
       "cta": "Rewrite your next ending around one clear action.",
-      "graphic": "Hook promise, useful payoff and one-action CTA mapping table."
+      "graphic": "Hook promise, useful payoff and one-action CTA mapping table.",
+      "spokenHook": "Your AI reel can look finished—and still leave viewers hanging.",
+      "visibleHook": "Your AI reel can look finished—and still leave viewers hanging.",
+      "questionHookRequired": false
     }
   },
   "productionRules": [
     "Create one complete blog/reel pair per selected topic, serially. Use GPT drafting and the established Chatterbox Standard voice, graphics, transitions, cleared sound effects and release gates.",
-    "Retain the approved creative hook as the headline/direction. Use hookQuestion as the short spoken and visible opening, then deliver earlyPayoff immediately. Do not make invented first-person experience or performance claims.",
+    "Use approvedHook verbatim as both the spoken and visible opening; do not use the older shortened hookQuestion alternative. Deliver earlyPayoff immediately after it. Do not make invented first-person experience or performance claims.",
     "Use only current primary sources for factual claims. The illustrations and before/after examples are fictional demonstrations, not measured audience results.",
     "The approved hero is visible at frame zero. Ensure its question matches the spoken hook and remains legible at phone size. Reserve the graphic scene panel so baked artwork and dynamic overlays never collide.",
     "Do not use topics held for another date as fallback or substitute unfinished older topics for this approved slate.",

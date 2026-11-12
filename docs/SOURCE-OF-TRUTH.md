@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 15, 2026-11-11. Owner: Nick Hughes.
+Version 16, 2026-11-12. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -77,6 +77,10 @@ Nick's personal and first party generations use the existing local procedures an
 | Buffer scope | Only coin-history slugs (YouTube and X get `--slugs`; Instagram copies the YouTube queue) | `buffer-backlog-runner.mjs` `plannerArgs()` |
 
 ---
+
+Package preflight must verify presentation scene count against the parsed narration count and validate the exact presentation plan and asset hashes before handoff or a render attempt.
+
+Explicit owner hook wording must be used verbatim in speech and visible opening text and takes precedence over the default question-hook style. Record it in `ops/reel-hook-exceptions.json` with `preserveExactText: true`. Source approval rejects substituted wording; final hash-bound visual review must record `approvedHookVerification` confirming the spoken text and visible frame-zero hook against that exact record. Longer spoken openings require `ops/reel-hook-exceptions.json`, bound to the exact slug and text with an owner-approved duration allowance. The attention, render preflight and release checks use the same allowance; all other checks still apply.
 
 ## 4. Roles
 

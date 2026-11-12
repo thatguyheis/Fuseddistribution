@@ -64,7 +64,7 @@ const Shot: React.FC<{
     {shot.type === 'video'
       ? <OffthreadVideo src={staticFile(shot.src)} muted startFrom={Math.round((shot.trimBefore || 0) * fps)} style={imageStyle} />
       : <Img src={staticFile(shot.src)} style={imageStyle} />}
-    {!shot.fullFrame && <AbsoluteFill style={{background: 'linear-gradient(180deg,rgba(2,12,17,.87) 0%,rgba(2,12,17,.16) 31%,transparent 47%,rgba(2,12,17,.3) 72%,rgba(2,12,17,.95) 100%)'}} />}
+    {!shot.fullFrame && <AbsoluteFill style={{background: businessProfile ? 'linear-gradient(180deg,rgba(2,12,17,.87) 0%,rgba(2,12,17,.62) 31%,rgba(2,12,17,.62) 72%,rgba(2,12,17,.95) 100%)' : 'linear-gradient(180deg,rgba(2,12,17,.87) 0%,rgba(2,12,17,.16) 31%,transparent 47%,rgba(2,12,17,.3) 72%,rgba(2,12,17,.95) 100%)'}} />}
     {!shot.fullFrame && <AbsoluteFill style={{opacity: textOpacity}}>
       <div style={headingBlock}>
         <div style={{fontFamily: POPPINS, fontSize: businessProfile ? 25 : 23, fontWeight: 600, letterSpacing: businessProfile ? 2 : 5, color: '#58d6ff', marginBottom: businessProfile ? 18 : 22}}>{shot.eyebrow}</div>

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {approvedOwnerHook} from '../../../video/scripts/lib/owner-hook.mjs';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -259,7 +260,9 @@ function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers, allo
 
   const md = readText(reelScriptPath);
   const reelData = readText(reelDataPath);
-  validateTextSurface('reel-script.md', md, blockers, allowedFutureYears);
+  const ownerHook=approvedOwnerHook(resolve(BLOG_DIR,'../..'),slug);
+  const copySurface=ownerHook ? md.replaceAll(ownerHook.spokenText,ownerHook.spokenText.replace(/[—–]/g,',')) : md;
+  validateTextSurface('reel-script.md', copySurface, blockers, allowedFutureYears);
 
   let script;
   try {

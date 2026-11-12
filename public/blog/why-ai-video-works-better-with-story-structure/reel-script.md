@@ -5,8 +5,8 @@ content-kind: educate
 
 ---
 ## HOOK
-**Duration:** 4s
-Narration: Why does AI help video creation?
+**Duration:** 7s
+Narration: There’s a reason AI works well for video—and it’s not the visuals.
 
 ---
 ## OVERLAY: Early payoff

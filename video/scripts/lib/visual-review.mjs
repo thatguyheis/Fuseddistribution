@@ -1,3 +1,4 @@
+import {approvedOwnerHook} from './owner-hook.mjs';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {createHash} from 'node:crypto';
@@ -24,5 +25,11 @@ export function assertVisualReview(root,slug) {
   && (()=>{try{return createHash('sha256').update(readFileSync(join(dir,'visual-review-contact-sheet.jpg'))).digest('hex')===review.contactSheetSha256;}catch{return false;}})();
  const automated=review.reviewer==='automated-local-vision-v1' && (automatedV1||automatedV2);
  if(!baseValid || (review.reviewer==='automated-local-vision-v1'&&!automated)) throw Error(slug+': current encoded visual review is missing, blocked or stale');
+ const approved=approvedOwnerHook(root,slug);
+ if(approved && (review.approvedHookVerification?.expectedText!==approved.spokenText
+   || review.approvedHookVerification?.spokenMatch!==true
+   || review.approvedHookVerification?.visibleMatch!==true
+   || review.approvedHookVerification?.frameSeconds!==0))
+   throw Error(slug+': final encoded hook verification is missing or differs from owner approval');
  return review;
 }

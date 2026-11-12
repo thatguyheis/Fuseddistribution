@@ -1,1 +1,12 @@
-{"pass":true,"reviewedAt":"2026-11-11","reviewer":"Codex","profile":"business-growth-v1","frameZero":"scene-0-hook.jpg shows the exact approved hook question.","scenes":"Seven topic-specific original vector scenes reviewed full size and at phone size; graphic scene reserved.","rights":"Fused original vector graphic; no external image rights required.","closing":"scene-6-cta.jpg is the intended full-frame CTA artwork; QR not applicable."}
+{
+  "pass": true,
+  "reviewedAt": "2026-11-12T15:29:01.494457+00:00",
+  "reviewer": "Codex",
+  "profile": "business-growth-v1",
+  "frameZero": "Hero shows the exact owner approved statement hook; verified the actual exported 1080x1920 source image.",
+  "scenes": "Seven segments matched to seven narration sections. Reviewed stock supporting imagery and diagrams; dynamic graphic scene remains reserved.",
+  "rights": "Pexels supporting stock with photographer credit, source page, download URL and file hash recorded in stock-image-sources.json. Original Fused graphic elements retained.",
+  "closing": "scene-6-cta.jpg is the intended full-frame CTA artwork; QR not applicable.",
+  "distribution": "Revised encoded MP4 review pending; do not mark release ready from source assets alone.",
+  "heroSha256": "8a20d6d2cb9c54a5dab4c1b8dee55fcab30c195bb56582ae7f102a0475598e83"
+}
