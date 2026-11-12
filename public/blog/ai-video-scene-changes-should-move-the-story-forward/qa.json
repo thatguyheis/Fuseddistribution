@@ -1,0 +1,37 @@
+{
+  "slug": "ai-video-scene-changes-should-move-the-story-forward",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-11",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed current primary source claims and labeled fictional examples as illustrative.",
+    "Reviewed the exact question hook, immediate early payoff, topic-specific original vector art, reserved graphic scene, CTA, and mobile safe areas.",
+    "Verified exact sound excerpts with the approved rights catalog and local audio measurement before handoff.",
+    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can you spot this pattern in AI videos?",
+    "visibleText": "Can you spot this pattern in AI videos?"
+  },
+  "artifactSha256": {
+    "verified.md": "524002eb10d79bd4c2321bace190913d6a9591c9c0f41e0c1acf4231c810cbb2",
+    "index.html": "b944d9bf2b6937424e594fa68bc8fb4ea08756e839878efac9b49ba97601ef2c",
+    "meta.json": "db8e3baa6e159f5cf250b8e4e63bbe2f45c82323084f32322f36cab4b5a2d2bd",
+    "research.json": "6753eae543028ee5b781bc0fb52c63dcd74d00b75aa692d3a4f9a6d47d067741",
+    "hero.jpg": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
+    "photo-post.jpg": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
+    "reel-script.md": "ec5e35230846df03fb77095cb24e1041af8035c273e7663e6efb93cae946fc86",
+    "reel-data.md": "b026e50172f78cbafbb51a1039fc21750d61ab3c862b8f8289c54c2dd0ebe404",
+    "social-copy.json": "44dd0690cb4d3054f9a098b0011eeb437fd6ed8239858c3041b89d9cd462c2cf",
+    "enrichment-plan.json": "c28c83cff0cdba208e2cac0f012ccd432a67350b6977b1c261e26de7d6370fb6",
+    "attention-review.json": "e0575f8c944fd58f9cd037273b2da3042bd5f88fff32e642a8126a1e4512247a",
+    "presentation-plan.json": "1c336e5541206b6beb66a42320846f5f2eade90393664956a4a0d6f030ea7212",
+    "social-video.json": "a561453c4dae6b5420f726eb0cb8da7b68972690437abec1d75f3add9cb6effc"
+  },
+  "reviewed_at": "2026-11-11T20:30:00-08:00"
+}

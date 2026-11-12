@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-0-hook.jpg",
+        "sha256": "1ef62a40c64836f9c51167113168123438f78c9100a3ac33dda7e3b813e56060",
+        "weight": 1,
+        "title": "Why does AI help video creation?",
+        "eyebrow": "AI VIDEO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-1-early.jpg",
+        "sha256": "a95d90b8cfa4c06a90dd932fe3c9c4c7bed8267fe8190a63cff765c52bb064c0",
+        "weight": 1,
+        "title": "Structure tells each scene its job",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-2-audience.jpg",
+        "sha256": "090d66b2e90fd623ba529f8e0128f328e218caaebb697b845ccc4075cb1db9b8",
+        "weight": 1,
+        "title": "Name one viewer and one problem",
+        "eyebrow": "START HERE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-3-example.jpg",
+        "sha256": "fd12b68d4ce43c25bf8025b8534b069bec7dc0003e5d90945f04ff3f5fa98422",
+        "weight": 1,
+        "title": "Give the viewer one example",
+        "eyebrow": "MAKE IT CONCRETE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-4-path.jpg",
+        "sha256": "da37c6628a53491c24e004e8bfe29ebe71858154ede139769748aed76c38a484",
+        "weight": 1,
+        "title": "Give each scene one job",
+        "eyebrow": "BUILD THE PATH",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-5-payoff.jpg",
+        "sha256": "69d7580dd84cb098b44c25c2725e562be5b8c2edcaaaec2bb3af0e507344245b",
+        "weight": 1,
+        "title": "Promise one useful takeaway",
+        "eyebrow": "THE PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-6-review.jpg",
+        "sha256": "68f0c199f23d82c61e30de286a7f5da29eaf31f5aa00278abe94151c0d62d7f9",
+        "weight": 1,
+        "title": "Check words against the source",
+        "eyebrow": "REVIEW THE SEQUENCE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/images/scene-7-cta.jpg",
+        "sha256": "6d718156e1ff95200a9c5982ed7883bc36d612fccbddf68f9448546e2dd13533",
+        "weight": 1,
+        "title": "Which part slows you down?",
+        "eyebrow": "TRY ONE STRUCTURE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}

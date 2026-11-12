@@ -2,9 +2,8 @@
   "version": 1,
   "maxTopicsPerDay": 3,
   "slugs": [
-    "write-a-useful-ai-prompt-for-one-small-business-task",
-    "summarize-your-own-document-with-ai",
-    "draft-a-customer-email-with-ai-and-review-before-sending"
+    "why-ai-video-works-better-with-story-structure",
+    "ai-video-scene-changes-should-move-the-story-forward"
   ],
   "targetRendersPerDay": 2
 }

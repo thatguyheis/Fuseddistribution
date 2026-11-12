@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-0-hook.jpg",
+        "sha256": "f68f1909ad6d7b65c0aa6da756bb14c3b5ec66195ffe9d7997fc31f23887136a",
+        "weight": 1,
+        "title": "Can you spot this pattern in AI videos?",
+        "eyebrow": "AI VIDEO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-1-early.jpg",
+        "sha256": "6902b7329a244c83921b69f5044e164e46e6eecf45de943f2548786348842f61",
+        "weight": 1,
+        "title": "A new image is not a new idea",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-2-swap.jpg",
+        "sha256": "f6d41a44a4dfd8d6380803a1dd3e136c49faf88f08e52125cd16870096d149b9",
+        "weight": 1,
+        "title": "New picture, same point",
+        "eyebrow": "DECORATIVE SWAP",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-3-question.jpg",
+        "sha256": "a6c729c9395ab6f848604b0dbe250f1f5bb8cf7aad00b9f4738bfab96964d869",
+        "weight": 1,
+        "title": "Make the next scene answer something",
+        "eyebrow": "PURPOSEFUL CHANGE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-4-timeline.jpg",
+        "sha256": "70f75be3662a2b8fec1beee2b92c96db065935c7ab717bd6602ef96f2fac11d1",
+        "weight": 1,
+        "title": "Every cut should move the idea",
+        "eyebrow": "CHECK THE SEQUENCE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-5-review.jpg",
+        "sha256": "44adb888652938e913eb62468736b98f6bc24ec50dde5465ef33d6a22b4d4026",
+        "weight": 1,
+        "title": "Watch the transition with sound",
+        "eyebrow": "REVIEW THE CUT",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-6-cta.jpg",
+        "sha256": "5d1eb1bb03a7b68df105b789cbd7058c3bbd00f3918ffe8d9dc6a27fc07fa53a",
+        "weight": 1,
+        "title": "Will your next scene add meaning?",
+        "eyebrow": "SAVE THIS CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ]
+  ]
+}
