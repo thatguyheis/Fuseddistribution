@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "automationId": "daily-business-growth-blog-and-reel",
+  "productionDatePacific": "2026-11-13",
+  "preparationDatePacific": "2026-11-12",
+  "preparationTimePacific": "20:30",
+  "renderTimePacific": "02:00",
+  "targetSuccessfulRenders": 3,
+  "maxDistinctTopicAttempts": 3,
+  "topics": [
+    "test-your-ai-reel-with-the-sound-off",
+    "give-ai-a-video-brief-before-asking-for-a-script",
+    "connect-your-reel-ending-to-its-opening-promise"
+  ],
+  "approvedByOwner": true,
+  "approvalContext": "Nick selected topics 1 and 2 for tonight and asked to retain topics 3, 4 and 5 for the following night. This approves topic and hook direction; finished scripts, media and release still require normal review.",
+  "status": "approved-for-preparation",
+  "topicDetails": {
+    "test-your-ai-reel-with-the-sound-off": {
+      "number": 3,
+      "slug": "test-your-ai-reel-with-the-sound-off",
+      "title": "The Silent Test: Review Your AI Reel Without Sound",
+      "approvedHook": "The step that’s easy to skip? Watching your reel without sound.",
+      "hookQuestion": "Does your reel make sense without sound?",
+      "earlyPayoff": "Mute a fictional draft and check whether its topic, steps and final action remain understandable.",
+      "angle": "Show a practical silent viewing check for opening clarity, captions, visual explanation and CTA. Treat it as an accessibility and clarity check, not a guaranteed reach improvement.",
+      "cta": "Try the silent test on your latest reel.",
+      "graphic": "Three-check flowchart: understand the opening, follow the steps, identify the final action."
+    },
+    "give-ai-a-video-brief-before-asking-for-a-script": {
+      "number": 4,
+      "slug": "give-ai-a-video-brief-before-asking-for-a-script",
+      "title": "Give AI a Clear Video Brief Before Asking for a Script",
+      "approvedHook": "Before you ask AI for a video, give it this.",
+      "hookQuestion": "What should you give AI before a video?",
+      "earlyPayoff": "A short brief with an audience, one problem, promised result and evidence to show.",
+      "angle": "Turn a fictional business brief into a script and scene outline. Keep this distinct from the earlier one-task prompt guide: focus on audiovisual evidence and scene planning.",
+      "cta": "What problem should your next video solve?",
+      "graphic": "Brief-to-script-to-scene flowchart with a single fictional business example."
+    },
+    "connect-your-reel-ending-to-its-opening-promise": {
+      "number": 5,
+      "slug": "connect-your-reel-ending-to-its-opening-promise",
+      "title": "Connect Your Reel Ending to Its Opening Promise",
+      "approvedHook": "Your AI reel can look finished—and still leave viewers hanging.",
+      "hookQuestion": "Does your reel deliver on its opening promise?",
+      "earlyPayoff": "Show how a generic ending can leave the opening question unanswered, then close that loop.",
+      "angle": "Compare a generic like-and-follow ending with a relevant next step that pays off the opening promise. Keep one CTA and avoid claiming guaranteed retention or conversions.",
+      "cta": "Rewrite your next ending around one clear action.",
+      "graphic": "Hook promise, useful payoff and one-action CTA mapping table."
+    }
+  },
+  "productionRules": [
+    "Create one complete blog/reel pair per selected topic, serially. Use GPT drafting and the established Chatterbox Standard voice, graphics, transitions, cleared sound effects and release gates.",
+    "Retain the approved creative hook as the headline/direction. Use hookQuestion as the short spoken and visible opening, then deliver earlyPayoff immediately. Do not make invented first-person experience or performance claims.",
+    "Use only current primary sources for factual claims. The illustrations and before/after examples are fictional demonstrations, not measured audience results.",
+    "The approved hero is visible at frame zero. Ensure its question matches the spoken hook and remains legible at phone size. Reserve the graphic scene panel so baked artwork and dynamic overlays never collide.",
+    "Do not use topics held for another date as fallback or substitute unfinished older topics for this approved slate.",
+    "Create the actual packages and validate source hashes, exact sound excerpts and handoff before rendering. Topic approval is not a ready production handoff.",
+    "The following-night three-pair target is a one-night owner override; return to the normal two-pair target on subsequent dates.",
+    "Use the existing isolated Buffer media origin and verify live blog, embedded player, release READY, scheduled post IDs and retained videos."
+  ],
+  "heldForFollowingNight": []
+}

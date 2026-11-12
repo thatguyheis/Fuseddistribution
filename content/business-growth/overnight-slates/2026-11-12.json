@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "automationId": "daily-business-growth-blog-and-reel",
+  "productionDatePacific": "2026-11-12",
+  "preparationDatePacific": "2026-11-11",
+  "preparationTimePacific": "20:30",
+  "renderTimePacific": "02:00",
+  "targetSuccessfulRenders": 2,
+  "maxDistinctTopicAttempts": 3,
+  "topics": [
+    "why-ai-video-works-better-with-story-structure",
+    "ai-video-scene-changes-should-move-the-story-forward"
+  ],
+  "approvedByOwner": true,
+  "approvalContext": "Nick selected topics 1 and 2 for tonight and asked to retain topics 3, 4 and 5 for the following night. This approves topic and hook direction; finished scripts, media and release still require normal review.",
+  "status": "approved-for-preparation",
+  "topicDetails": {
+    "why-ai-video-works-better-with-story-structure": {
+      "number": 1,
+      "slug": "why-ai-video-works-better-with-story-structure",
+      "title": "Why AI Video Works Better With a Clear Story",
+      "approvedHook": "There’s a reason AI works well for video—and it’s not the visuals.",
+      "hookQuestion": "Why does AI help video creation?",
+      "earlyPayoff": "It is not just the visuals. Show how a clear audience, useful example and payoff organize a scattered idea.",
+      "angle": "Compare two fictional scripts about the same business task: a scattered tool-first script and a clear hook, example and takeaway. Demonstrate structure rather than claiming AI automatically improves performance.",
+      "cta": "Which part slows you down: ideas, scripts, or editing?",
+      "graphic": "Labeled illustrative before/after storyboard with a clear hook, example and takeaway."
+    },
+    "ai-video-scene-changes-should-move-the-story-forward": {
+      "number": 2,
+      "slug": "ai-video-scene-changes-should-move-the-story-forward",
+      "title": "The AI Video Pattern You Cannot Unsee: New Images Without New Meaning",
+      "approvedHook": "Once you notice this pattern in AI videos, you can’t unsee it.",
+      "hookQuestion": "Can you spot this pattern in AI videos?",
+      "earlyPayoff": "Changing the picture does not always advance the explanation. Demonstrate the difference immediately.",
+      "angle": "Compare decorative image swaps with purposeful scene changes that answer a question, show evidence or demonstrate the next step. Use a fictional example without invented audience analytics.",
+      "cta": "Save this before you build your next reel.",
+      "graphic": "Side-by-side scene timeline: decorative swaps versus meaningful steps; label as an illustrative comparison."
+    }
+  },
+  "productionRules": [
+    "Create one complete blog/reel pair per selected topic, serially. Use GPT drafting and the established Chatterbox Standard voice, graphics, transitions, cleared sound effects and release gates.",
+    "Retain the approved creative hook as the headline/direction. Use hookQuestion as the short spoken and visible opening, then deliver earlyPayoff immediately. Do not make invented first-person experience or performance claims.",
+    "Use only current primary sources for factual claims. The illustrations and before/after examples are fictional demonstrations, not measured audience results.",
+    "The approved hero is visible at frame zero. Ensure its question matches the spoken hook and remains legible at phone size. Reserve the graphic scene panel so baked artwork and dynamic overlays never collide.",
+    "Do not use topics held for another date as fallback or substitute unfinished older topics for this approved slate.",
+    "Create the actual packages and validate source hashes, exact sound excerpts and handoff before rendering. Topic approval is not a ready production handoff.",
+    "The following-night three-pair target is a one-night owner override; return to the normal two-pair target on subsequent dates.",
+    "Use the existing isolated Buffer media origin and verify live blog, embedded player, release READY, scheduled post IDs and retained videos."
+  ],
+  "heldForFollowingNight": [
+    "test-your-ai-reel-with-the-sound-off",
+    "give-ai-a-video-brief-before-asking-for-a-script",
+    "connect-your-reel-ending-to-its-opening-promise"
+  ]
+}
