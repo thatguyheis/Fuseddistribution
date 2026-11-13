@@ -46,7 +46,8 @@
         }
       ],
       "takeaway": "A checklist breakdown, not audience data",
-      "source": "Fused illustrative example, not measured audience results"
+      "source": "Fused illustrative example, not measured audience results",
+      "unitSingular": "check"
     },
     {
       "segmentIndex": 5,

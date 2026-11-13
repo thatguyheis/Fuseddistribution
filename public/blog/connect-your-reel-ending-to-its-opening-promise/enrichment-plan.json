@@ -41,7 +41,8 @@
         }
       ],
       "takeaway": "Count requests, not conversion results",
-      "source": "Fused illustrative example, not measured audience results"
+      "source": "Fused illustrative example, not measured audience results",
+      "unitSingular": "action"
     },
     {
       "segmentIndex": 5,

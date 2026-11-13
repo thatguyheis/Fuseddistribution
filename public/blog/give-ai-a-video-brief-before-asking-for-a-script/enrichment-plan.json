@@ -45,7 +45,8 @@
         }
       ],
       "takeaway": "Counts inputs, not predicted performance",
-      "source": "Fused illustrative example, not measured audience results"
+      "source": "Fused illustrative example, not measured audience results",
+      "unitSingular": "field"
     },
     {
       "segmentIndex": 5,

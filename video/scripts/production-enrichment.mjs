@@ -29,6 +29,8 @@ export function validateEnrichmentPlan(plan, segmentCount) {
     }
     if (['bar','pie'].includes(graphic.kind) && (!text(graphic.unit) || !text(graphic.period)
       || !graphic.rows.some(row => row.value > 0))) throw Error('Numeric chart requires unit, period and nonzero values');
+    if (plan.visualQualityVersion === 2 && ['bar','pie'].includes(graphic.kind)
+      && graphic.rows.some(row=>row.value===1) && !text(graphic.unitSingular)) throw Error('Numeric chart with a value of one requires unitSingular');
     if (graphic.kind === 'pie' && graphic.unit === '%' && Math.abs(graphic.rows.reduce((sum,row)=>sum+row.value,0)-100)>0.01) throw Error('Percentage pie slices must total 100');
   }
   if (new Set(plan.soundEffects.map(cue => cue.segmentIndex)).size < 2) throw Error('Sound cues must support two different body beats');

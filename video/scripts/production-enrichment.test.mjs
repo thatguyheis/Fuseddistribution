@@ -59,9 +59,16 @@ test('sound staging and release reject changed files and stale editorial approva
 test('visual v2 requires varied explanatory graphics and truthful pie structure',()=>{
  const data=plan();data.visualQualityVersion=2;
  assert.throws(()=>validateEnrichmentPlan(data,5),/two explanatory graphics/);
- data.graphics.push({...structuredClone(data.graphics[0]),segmentIndex:2,kind:'pie',unit:'checks',period:'Example checklist',rows:[{label:'Message',detail:'Two checks',value:2},{label:'Action',detail:'One check',value:1}]});
+ data.graphics.push({...structuredClone(data.graphics[0]),segmentIndex:2,kind:'pie',unit:'checks',unitSingular:'check',period:'Example checklist',rows:[{label:'Message',detail:'Two checks',value:2},{label:'Action',detail:'One check',value:1}]});
  assert.equal(validateEnrichmentPlan(data,5).graphics.length,2);
  data.graphics[1].unit='%';assert.throws(()=>validateEnrichmentPlan(data,5),/total 100/);
  data.graphics[1].rows[0].value=60;data.graphics[1].rows[1].value=40;
  assert.doesNotThrow(()=>validateEnrichmentPlan(data,5));
+});
+
+test('new counted charts cannot export grammatically incorrect singular unit labels',()=>{
+ const data=plan();data.visualQualityVersion=2;
+ data.graphics.push({segmentIndex:2,kind:'bar',title:'Example prompt fields',unit:'fields',period:'Two examples',source:'Counted illustrative examples',takeaway:'Counts inputs, not outcomes',rows:[{label:'Topic only',detail:'One input',value:1},{label:'Brief',detail:'Four inputs',value:4}]});
+ assert.throws(()=>validateEnrichmentPlan(data,5),/unitSingular/);
+ data.graphics[1].unitSingular='field';assert.doesNotThrow(()=>validateEnrichmentPlan(data,5));
 });

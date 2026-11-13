@@ -14,7 +14,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-0-hook.jpg",
-        "sha256": "0c5e7c042c432aae966bddbd3482c28c7a1f60bbe1ef71543f4fb9cc0dcc0842",
+        "sha256": "fe0ea22891abcaeba02244498c16e4a81e70baf6dfb8f75b5950a1e21908a8a4",
         "weight": 1,
         "title": "Before you ask AI for a video, give it this.",
         "eyebrow": "AI VIDEO WORKFLOW",
@@ -27,7 +27,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-1-body-1.jpg",
-        "sha256": "dc32a02e0b10b42bb1f0f98bba77a698995d6af75ea2596b8d08d696a1cbf6c0",
+        "sha256": "f23db50a391602f45a44627740c6c1687b2125526424ade94da8b03dacefa83d",
         "weight": 1,
         "title": "Give AI four useful inputs",
         "eyebrow": "EARLY PAYOFF",
@@ -41,7 +41,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-2-body-2.jpg",
-        "sha256": "8d6da78be42c79a05e3e57d7ce4616b73ee8af43bc062994d9bd2d777dc7ca62",
+        "sha256": "0597919d8cd88f4317211dd9cba73d20d4efdab00ce6efe8fb79784ecf09c59a",
         "weight": 1,
         "title": "Make the request concrete",
         "eyebrow": "MAKE THE PROBLEM VISIBLE",
@@ -54,7 +54,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-3-body-3.jpg",
-        "sha256": "9c40ec50fa4e6b305758924ac8d725ea72777d4862458eec2660d1ce00a9e1e2",
+        "sha256": "0a78918f5c6486fddaa5330c7d8e7233914819b7b074f3aa7e792e808474f56e",
         "weight": 1,
         "title": "Compare the information supplied",
         "eyebrow": "REVIEW THE MIDDLE",
@@ -68,7 +68,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-4-body-4.jpg",
-        "sha256": "64c4aa9bd2c494e25604b5f9f6054eb24d6c0ce0e601a501e86915b4f08b1c1a",
+        "sha256": "23f6cf0da23a5ebf903cd7ff2c387de051a817ebf73b803888e759e262e38b71",
         "weight": 1,
         "title": "Map words to visible evidence",
         "eyebrow": "KEEP THE ENDING SPECIFIC",
@@ -81,7 +81,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-5-body-5.jpg",
-        "sha256": "d914580a12c2fa241e768d0a2f53032ecad24ab9b5ec292f9f48da6914a1b2a5",
+        "sha256": "ca36437a62a1bbd962eb14d922d616f766c1521540d06541b615bfe12a57d9ad",
         "weight": 1,
         "title": "Review before you render",
         "eyebrow": "REVIEW THE EXPORT",
@@ -95,7 +95,7 @@
       {
         "type": "photo",
         "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/scene-6-closing.jpg",
-        "sha256": "b52cabc03d4aa085662b366aac02f79dba5410aef474b6c31735a1e0e25060e8",
+        "sha256": "9d87c0c605babe5b7768a78af946d942591cd18ae06e5565880c7cef720d860a",
         "weight": 1,
         "title": "What problem should your next video solve?",
         "eyebrow": "YOUR NEXT STEP",

@@ -23,3 +23,5 @@ Encoded output and release results are recorded separately per topic in `video/o
 ## Encoded review follow-up
 
 The first supervised export passed automated structural checks, but encoded inspection found a header divider crossing a three-line hook and one adjacent repeated caption word. The export was explicitly marked blocked. The source generator now omits that divider, caption QA sends unexpected adjacent repeats to independent small.en recognition, and release checks the final caption text again. It never silently deletes words to hide possible repeated speech. Recognition comparison also normalizes curly versus straight apostrophes to avoid rejecting an otherwise identical closing question. Follow-up video tests: 125 passed. Replacement encode and actual final verification remain required.
+
+The encoded bar chart also exposed a singular-unit label defect (one displayed with a plural unit). Visual v2 now requires explicit unitSingular when any numeric value is one; both bar and pie renderers use it. Regression and final video suite: 126 passed. The supervised finishing pass uses cached narration after the initial serial batch releases its lease.

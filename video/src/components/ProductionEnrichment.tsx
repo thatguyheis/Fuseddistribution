@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Sequence, staticFile, interpolate, useCurrentFrame,
 import {POPPINS} from '../fonts';
 
 type Row = {label:string; detail:string; value?:number};
-type Graphic = {segmentIndex:number; kind:'flow'|'table'|'bar'|'pie'; title:string; rows:Row[]; source:string; takeaway:string; unit?:string; period?:string};
+type Graphic = {segmentIndex:number; kind:'flow'|'table'|'bar'|'pie'; title:string; rows:Row[]; source:string; takeaway:string; unit?:string; unitSingular?:string; period?:string};
 type Cue = {segmentIndex:number; src:string; sourceStartSeconds:number; durationSeconds:number; gain:number};
 export type ProductionEnrichment = {version:number; sha256:string; graphics:Graphic[]; soundEffects:Cue[]};
 
@@ -33,12 +33,12 @@ export const ProductionEnrichmentLayer:React.FC<{plan:ProductionEnrichment; segm
               return <path key={index} d={`M120 120 L${x(a)} ${y(a)} A108 108 0 ${part*reveal>0.5?1:0} 1 ${x(b)} ${y(b)} Z`} fill={['#58d6ff','#ffcc66','#a79aff','#86efac'][index]} stroke="#0A1A2A" strokeWidth={4}/>;
             })}
           </svg>
-          <div>{graphic.rows.map((row,index)=><div key={index} style={{fontSize:28,marginBottom:16,color:['#58d6ff','#ffcc66','#a79aff','#86efac'][index]}}>{row.label}<div style={{fontSize:24,color:'#ffffff'}}>{row.value} {graphic.unit}</div></div>)}</div>
+          <div>{graphic.rows.map((row,index)=><div key={index} style={{fontSize:28,marginBottom:16,color:['#58d6ff','#ffcc66','#a79aff','#86efac'][index]}}>{row.label}<div style={{fontSize:24,color:'#ffffff'}}>{row.value} {row.value===1 ? graphic.unitSingular ?? graphic.unit : graphic.unit}</div></div>)}</div>
         </div> : graphic.rows.map((row,index) => {
           const reveal = interpolate(frame,[24+index*6,36+index*6],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
           const maximum = Math.max(...graphic.rows.map(item => item.value ?? 0),1);
           return <div key={index} style={{opacity:reveal,transform:`translateY(${(1-reveal)*16}px)`,padding:businessProfile?'8px 0':'12px 0',borderTop:index?'1px solid #ffffff30':undefined}}>
-            <div style={{display:'grid',gridTemplateColumns:'1fr 1.3fr',gap:20,fontSize:businessProfile?30:27,overflowWrap:'anywhere'}}><span>{graphic.kind==='flow'?`${index+1}. `:''}{row.label}</span><span style={{color:businessProfile?'#FFFFFF':'#afc6cf'}}>{graphic.kind==='bar'?`${row.value} ${graphic.unit}`:row.detail}</span></div>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1.3fr',gap:20,fontSize:businessProfile?30:27,overflowWrap:'anywhere'}}><span>{graphic.kind==='flow'?`${index+1}. `:''}{row.label}</span><span style={{color:businessProfile?'#FFFFFF':'#afc6cf'}}>{graphic.kind==='bar'?`${row.value} ${row.value===1 ? graphic.unitSingular ?? graphic.unit : graphic.unit}`:row.detail}</span></div>
             {graphic.kind==='bar'&&<div style={{height:businessProfile?14:12,background:'#ffffff20',marginTop:10}}><div style={{height:businessProfile?14:12,width:`${100*(row.value??0)/maximum*reveal}%`,background:'#58d6ff'}}/></div>}
           </div>;
         })}
