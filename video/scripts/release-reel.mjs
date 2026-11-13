@@ -1,4 +1,5 @@
 import {approvedOwnerHook} from './lib/owner-hook.mjs';
+import {assessCaptionQuality} from './caption-quality.mjs';
 import {hookDurationLimit} from './lib/hook-duration-limit.mjs';
 import {approvedDurationException} from './lib/duration-exception.mjs';
 import {prepareEnrichment, endingCaptionErrors} from './production-enrichment.mjs';
@@ -110,6 +111,10 @@ export function evaluateReelRelease(slug, options = {}) {
       if (new Set(transitions).size < 2 || JSON.stringify(meta.enrichmentSummary?.transitions) !== JSON.stringify(transitions)) throw Error('Transition variety metadata does not match the composition');
       const captionData = JSON.parse(readFileSync(join(outDir, 'captions.json')));
       errors.push(...endingCaptionErrors(script, captionData));
+      for(const [index,segment] of script.segments.entries()) {
+        const quality=assessCaptionQuality(segment.narration,captionData[index]??[],{question:segment.type==='question'});
+        if(quality.suspicious)errors.push(`Caption recognition needs repair in segment ${index}: ${quality.reasons.join(', ')}`);
+      }
       const approvedHook=approvedOwnerHook(root,slug);
       if(approvedHook) {
         const normalized=value=>String(value).toLowerCase().replace(/[^a-z0-9]/g,'');

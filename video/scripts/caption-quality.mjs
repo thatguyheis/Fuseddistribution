@@ -1,4 +1,4 @@
-const tokens = text => String(text ?? '').toLowerCase().match(/[\p{L}\p{N}]+(?:'[\p{L}\p{N}]+)*/gu) ?? [];
+const tokens = text => String(text ?? '').replace(/[‘’]/g,"'").toLowerCase().match(/[\p{L}\p{N}]+(?:'[\p{L}\p{N}]+)*/gu) ?? [];
 
 export function captionText(words) {
   return words.map(word => word.text).join(' ').replace(/\s+([,.!?;:])/g, '$1').trim();
@@ -19,6 +19,10 @@ export function assessCaptionQuality(narration, words, {question = false} = {}) 
   const actual = tokens(captionText(words));
   const reasons = [];
   if (!actual.length) reasons.push('no-recognized-words');
+  const expectedPairs = new Set(expected.slice(1).map((word,index)=>`${expected[index]} ${word}`));
+  if (actual.some((word,index)=>index>0 && word===actual[index-1] && !expectedPairs.has(`${word} ${word}`))) {
+    reasons.push('unexpected-adjacent-repeat');
+  }
   const counts = new Map();
   const expectedCounts = new Map();
   for (let i = 0; i + 2 < actual.length; i++) {

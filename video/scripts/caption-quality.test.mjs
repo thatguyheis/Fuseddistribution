@@ -114,3 +114,13 @@ function createRuntimeFixture(root,name,modelName) {
   writeFileSync(configPath,JSON.stringify({engine:'faster-whisper',packageVersion:'test',python,modelPath,modelRepository:`fixture/${modelName}`,modelRevision:`${name}-revision`,device:'cpu',computeType:'int8',cpuThreads:1,beamSize:1,wordTimestamps:true,language:'en',vadFilter:true,narrationPrompt:false}));
   return configPath;
 }
+
+test('unexpected adjacent word repeats require independent recognition, never silent deletion',()=>{
+ const result=assessCaptionQuality('Check what captions actually communicate without the voice.',words('Check what captions actually communicate communicate without the voice.'));
+ assert.ok(result.reasons.includes('unexpected-adjacent-repeat'));
+ assert.equal(assessCaptionQuality('That that example is fictional should be clear.',words('That that example is fictional should be clear.')).suspicious,false);
+});
+
+test('closing questions tolerate straight versus curly apostrophes without changing words',()=>{
+ assert.equal(assessCaptionQuality('What action completes your reel’s opening promise?',words("What action completes your reel's opening promise?"),{question:true}).suspicious,false);
+});

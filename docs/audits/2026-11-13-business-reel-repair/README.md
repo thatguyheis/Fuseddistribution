@@ -19,3 +19,7 @@ Preparation also recorded local QA as passed even though the minimal article HTM
 122 video tests and 18 queue tests passed before the supervised recovery run. Regression coverage includes invalid closing questions at handoff, missing shot weights in read-only validation, changed versus unchanged recovery fingerprints, numeric pie validation and absence of the circle fallback. All three real packages passed deterministic blog QA, approved-sources and the dated handoff. Source contact sheets were inspected before serial production.
 
 Encoded output and release results are recorded separately per topic in `video/out/<slug>/` and the production ledger. A source pass is not a completed render or publication claim.
+
+## Encoded review follow-up
+
+The first supervised export passed automated structural checks, but encoded inspection found a header divider crossing a three-line hook and one adjacent repeated caption word. The export was explicitly marked blocked. The source generator now omits that divider, caption QA sends unexpected adjacent repeats to independent small.en recognition, and release checks the final caption text again. It never silently deletes words to hide possible repeated speech. Recognition comparison also normalizes curly versus straight apostrophes to avoid rejecting an otherwise identical closing question. Follow-up video tests: 125 passed. Replacement encode and actual final verification remain required.

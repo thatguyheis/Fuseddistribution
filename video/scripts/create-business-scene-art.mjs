@@ -175,8 +175,6 @@ export function renderBusinessSceneSvg(scene) {
   <rect width="1080" height="1920" fill="#0A1A2A"/>
   <circle cx="700" cy="580" r="220" fill="url(#glow)"/><circle cx="164" cy="1500" r="275" fill="url(#glow)"/>
   <path d="M70 0v1920" stroke="url(#edge)" stroke-width="2"/>
-  <path d="M150 510h180M750 510h180" stroke="#58D6FF" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="540" cy="510" r="8" fill="#58D6FF"/>
   ${textLines([normalized.eyebrow.toUpperCase()], {x: 540, y: eyebrowY, fontSize: 25, lineHeight: 32, fill: BUSINESS_SCENE_ART.cyan, weight: 700, className: 'eyebrow'})}
   ${textLines(normalized.headlineLines, {x: 540, y: headingY, fontSize: normalized.headlineSize, lineHeight: normalized.headlineSize * 1.12, fill: BUSINESS_SCENE_ART.white, weight: 800, className: 'headline'})}
   ${detail}

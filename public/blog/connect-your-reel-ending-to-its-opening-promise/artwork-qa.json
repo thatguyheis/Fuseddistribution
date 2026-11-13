@@ -1,9 +1,9 @@
 {
   "pass": true,
-  "reviewedAt": "2026-11-13T15:18:59.420Z",
+  "reviewedAt": "2026-11-13T15:52:23.831Z",
   "reviewer": "Codex",
   "profile": "business-growth-v1",
   "visualQualityVersion": 2,
-  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required.",
-  "heroSha256": "a3941346fb9fab02adc9f0dc484ec95d2264da1bb30ca671d4fc741deb8005fc"
+  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required. Header dividers removed; encoded replacement review required.",
+  "heroSha256": "62a8d69ad726a06416a167057b789a0ffd29a03f846952cda13e613cf62f3a90"
 }

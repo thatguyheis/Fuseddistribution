@@ -121,3 +121,8 @@ test('unadorned scenes never receive a decorative target-circle fallback',()=>{
  const svg=renderBusinessSceneSvg(scene);
  assert.doesNotMatch(svg, /r="105"|r="56"|cy="1290"|cy="1180"/);
 });
+
+test('three-line owner hooks are not crossed by a decorative header divider',()=>{
+ const svg=renderBusinessSceneSvg({id:'owner-hook',kind:'hook',eyebrow:'AI VIDEO WORKFLOW',headline:'The step that’s easy to skip? Watching your reel without sound.',panel:{title:'A practical review',items:[{label:'Promise',value:'One clear lesson'}]}});
+ assert.doesNotMatch(svg,/M150 510h180|cy="510"/);
+});
