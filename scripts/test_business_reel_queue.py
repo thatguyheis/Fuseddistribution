@@ -19,6 +19,15 @@ SPEC.loader.exec_module(queue)
 
 
 class BusinessReelQueueTests(unittest.TestCase):
+    def test_only_changed_failed_package_is_eligible_for_automatic_retry(self):
+        approval = {'reel-script.md': 'new-source'}
+        current = queue.hashlib.sha256(json.dumps(approval, sort_keys=True).encode()).hexdigest()
+        self.assertFalse(queue.repaired_package_retry(approval, {'status':'render_failed','approvalSha256':current}))
+        self.assertTrue(queue.repaired_package_retry(approval, {'status':'render_failed','approvalSha256':'old-source'}))
+        self.assertTrue(queue.repaired_package_retry(approval, {'status':'approval_blocked','approvalSha256':'old-source'}))
+        self.assertFalse(queue.repaired_package_retry(approval, {'status':'rendered-awaiting-review','approvalSha256':'old-source'}))
+        self.assertFalse(queue.repaired_package_retry(approval, None))
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)

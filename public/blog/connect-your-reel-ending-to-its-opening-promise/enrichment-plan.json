@@ -2,25 +2,67 @@
   "version": 1,
   "graphics": [
     {
-      "segmentIndex": 5,
+      "segmentIndex": 1,
       "kind": "flow",
-      "title": "Promise map",
-      "source": "Illustrative workflow supported by the article sources",
-      "takeaway": "Keep one clear through-line",
+      "title": "The promise map",
       "rows": [
         {
           "label": "Opening",
-          "detail": "Name the promise"
+          "detail": "Name the useful promise"
         },
         {
-          "label": "Middle",
-          "detail": "Show the payoff"
+          "label": "Payoff",
+          "detail": "Show where it is delivered"
         },
         {
-          "label": "Ending",
-          "detail": "Choose one action"
+          "label": "Action",
+          "detail": "Apply that lesson once"
         }
-      ]
+      ],
+      "takeaway": "One lesson from beginning to end",
+      "source": "Fused editorial workflow; see article primary sources"
+    },
+    {
+      "segmentIndex": 3,
+      "kind": "bar",
+      "title": "Requests in two example endings",
+      "unit": "actions",
+      "period": "Illustrative closing card comparison",
+      "rows": [
+        {
+          "label": "Stacked asks",
+          "detail": "Like, follow, share, visit",
+          "value": 4
+        },
+        {
+          "label": "Focused ask",
+          "detail": "Define your next video problem",
+          "value": 1
+        }
+      ],
+      "takeaway": "Count requests, not conversion results",
+      "source": "Fused illustrative example, not measured audience results"
+    },
+    {
+      "segmentIndex": 5,
+      "kind": "table",
+      "title": "Check the finished loop",
+      "rows": [
+        {
+          "label": "Hook",
+          "detail": "Exact approved promise"
+        },
+        {
+          "label": "Body",
+          "detail": "Visible, useful payoff"
+        },
+        {
+          "label": "Close",
+          "detail": "One relevant spoken question"
+        }
+      ],
+      "takeaway": "A polished ending must still finish the lesson",
+      "source": "Fused editorial workflow; see article primary sources"
     }
   ],
   "soundEffects": [
@@ -38,5 +80,6 @@
       "durationSeconds": 0.35,
       "purpose": "Quiet emphasis when the review checklist is complete"
     }
-  ]
+  ],
+  "visualQualityVersion": 2
 }

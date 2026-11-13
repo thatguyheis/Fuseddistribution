@@ -42,13 +42,24 @@ The close should ask one useful question: “What problem should your next video
 
 A compact brief does not replace judgment. It makes judgment visible. Give AI a person, a problem, a result, and evidence to show. Then review whether the script and scenes actually keep that promise.
 
-Sources:
 
-- [TikTok for Business Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
-- [YouTube: Measure key moments for audience retention](https://support.google.com/youtube/answer/9314415)
-- [W3C Web Content Accessibility Guidelines](https://www.w3.org/TR/wcag/)
+## Read the chart honestly
 
+Compare two fictional requests. “Make a video about AI” supplies one field: a topic. The worked brief supplies four fields: audience, problem, result, and evidence. The bar chart counts those fields, one versus four. It does not measure model performance, content quality, leads, or views. Use the comparison to inspect whether enough instructions were supplied, not to make a marketing claim.
 
-Related:
+This review method is an editorial example supported by the production guidance below. It is a way to organize a review, not a promise of better business results.
 
-- [Fused Distribution home](/)
+Continue with [a clear story structure](/blog/why-ai-video-works-better-with-story-structure/) and [meaningful scene changes](/blog/ai-video-scene-changes-should-move-the-story-forward/).
+
+## Sources
+
+- [TikTok Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
+- [YouTube retention moments](https://support.google.com/youtube/answer/9314415)
+- [W3C captions guidance](https://www.w3.org/WAI/media/av/captions/)
+
+## Related
+
+- [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/)
+- [Make scene changes meaningful](/blog/ai-video-scene-changes-should-move-the-story-forward/)
+
+Read next: [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/).

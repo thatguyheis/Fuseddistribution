@@ -4,7 +4,7 @@ A reel can have a clean final card and still leave the viewer wondering what the
 
 ## Write the promise in one line
 
-Keep the approved opening visible and spoken: “Your AI reel can look finished—and still leave viewers hanging.” It names a production problem without claiming that every viewer will behave the same way. Write the promise beside the script so the ending can be tested against it.
+Keep the approved opening visible and spoken. It names a production problem without claiming that every viewer will behave the same way. Write the promise beside the script so the ending can be tested against it.
 
 ## Deliver the payoff early
 
@@ -42,13 +42,24 @@ Read the final three beats aloud: useful payoff, promise recap, one action. If t
 
 A finished-looking ending is not necessarily a useful ending. Make the opening promise explicit, answer it early, and give one action that follows from the lesson. Rewrite your next ending around one clear action.
 
-Sources:
 
-- [TikTok for Business Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
-- [YouTube: Measure key moments for audience retention](https://support.google.com/youtube/answer/9314415)
-- [W3C Web Content Accessibility Guidelines](https://www.w3.org/TR/wcag/)
+## Read the chart honestly
 
+This fictional comparison counts the requests on two closing cards. “Like, follow, share, and visit the link” contains four actions. “Define the problem for your next video” contains one. The bar values are four and one because those are the actions written in the examples. They are not engagement, conversion, or retention measurements.
 
-Related:
+This review method is an editorial example supported by the production guidance below. It is a way to organize a review, not a promise of better business results.
 
-- [Fused Distribution home](/)
+Continue with [a clear story structure](/blog/why-ai-video-works-better-with-story-structure/) and [meaningful scene changes](/blog/ai-video-scene-changes-should-move-the-story-forward/).
+
+## Sources
+
+- [TikTok Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
+- [YouTube retention moments](https://support.google.com/youtube/answer/9314415)
+- [W3C captions guidance](https://www.w3.org/WAI/media/av/captions/)
+
+## Related
+
+- [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/)
+- [Make scene changes meaningful](/blog/ai-video-scene-changes-should-move-the-story-forward/)
+
+Read next: [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/).

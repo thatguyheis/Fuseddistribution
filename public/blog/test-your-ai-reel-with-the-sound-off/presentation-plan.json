@@ -13,10 +13,11 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-0.jpg",
-        "sha256": "0c642a1dbf2df4b8e3972da3489388f6a9e7895d6e6425116487fddaa41c64eb",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-0-hook.jpg",
+        "sha256": "0a36cb148adba864f3daa3dd225d3823daf2116306868435ddd67c9723c77695",
+        "weight": 1,
         "title": "The step that’s easy to skip? Watching your reel without sound.",
-        "eyebrow": "SILENT REVIEW",
+        "eyebrow": "AI VIDEO WORKFLOW",
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true
@@ -25,58 +26,11 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-1.jpg",
-        "sha256": "9f4be787b5c343b81c46ec5407d9a50422b093706ff5a9877124ac2a1769bbc8",
-        "title": "Mute the draft. Check topic, steps, and final action.",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-1-body-1.jpg",
+        "sha256": "14e23aad49ac6997d5b8ea7206cea5b6f4b1f1393d5a979f2fda7ae19a9992f9",
+        "weight": 1,
+        "title": "See the lesson without sound",
         "eyebrow": "EARLY PAYOFF",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-2.jpg",
-        "sha256": "23341427d2159624f69e84a7df2d0f1c433ca8c57ae8ec1a83a4b7b2a7525200",
-        "title": "Can a viewer identify the topic?",
-        "eyebrow": "CHECK ONE",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-3.jpg",
-        "sha256": "6f0cf5847c6e5b216ac5e4de10f024d605fb7a9ec246b4acf377efc3df52acf6",
-        "title": "Can a viewer follow the steps?",
-        "eyebrow": "CHECK TWO",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-4.jpg",
-        "sha256": "42381356d05f7940707472f605a86298d7291915a96aa9c7f1b0bd48555eb5e1",
-        "title": "Can a viewer find the action?",
-        "eyebrow": "CHECK THREE",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-5.jpg",
-        "sha256": "277aa88d875a6779ddac22ef95e0409540a0469f1c57c9e5345ba3c2967932d4",
-        "title": "Three checks, one clear pass.",
-        "eyebrow": "RESERVED GRAPHIC",
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true,
@@ -86,14 +40,70 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-6.jpg",
-        "sha256": "bba42006e69a2276ce28a776c89398ba59c84aab97505d693d3ad962c5476137",
-        "title": "Try the silent test on your latest reel.",
-        "eyebrow": "TRY IT",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-2-body-2.jpg",
+        "sha256": "28259e7e3228c617460dc41a45ac7392355eab9c4f7b4c567e62e0613bd80bf7",
+        "weight": 1,
+        "title": "Show the missing step",
+        "eyebrow": "MAKE THE PROBLEM VISIBLE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-3-body-3.jpg",
+        "sha256": "b97204fe72daa338b37595adf8ca6a1eb167a0677b366f86141d0fec007e86e2",
+        "weight": 1,
+        "title": "Five checks, three groups",
+        "eyebrow": "REVIEW THE MIDDLE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-4-body-4.jpg",
+        "sha256": "4cc77bdf2e35cb9306631d2d804aefbf025db83769b6f5bd706458981b9fcfe2",
+        "weight": 1,
+        "title": "Fix the weak scene",
+        "eyebrow": "KEEP THE ENDING SPECIFIC",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-5-body-5.jpg",
+        "sha256": "6fb9b4a4b2eec202c65bca26d83da64651ff85422f0cd3e86bbb757f34f6913a",
+        "weight": 1,
+        "title": "Review the actual export",
+        "eyebrow": "REVIEW THE EXPORT",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-6-closing.jpg",
+        "sha256": "b03a36dcdfbe79f2e2e95d043029b2e2c6cd20f9e265a7540c3775e9a67a892d",
+        "weight": 1,
+        "title": "What disappears when you mute your latest reel?",
+        "eyebrow": "YOUR NEXT STEP",
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true
       }
     ]
-  ]
+  ],
+  "visualQualityVersion": 2
 }

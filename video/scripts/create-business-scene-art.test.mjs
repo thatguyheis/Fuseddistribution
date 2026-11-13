@@ -115,3 +115,9 @@ test('generator emits vector, full-size JPEGs and a source-hashed profile plan u
   assert.equal(generated.plan.segments[0][0].sha256, expected);
   assert.ok(planBytes.includes(Buffer.from('business-growth-v1')));
 });
+
+test('unadorned scenes never receive a decorative target-circle fallback',()=>{
+ const scene={id:'plain',kind:'body',eyebrow:'ONE LESSON',headline:'Show a meaningful comparison'};
+ const svg=renderBusinessSceneSvg(scene);
+ assert.doesNotMatch(svg, /r="105"|r="56"|cy="1290"|cy="1180"/);
+});

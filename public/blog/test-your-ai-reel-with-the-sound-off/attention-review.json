@@ -2,8 +2,8 @@
   "version": 1,
   "attentionOptimizationVersion": 1,
   "hook": {
-    "spokenText": "The step that’s easy to skip? Watching your reel without sound.",
-    "visibleText": "The step that’s easy to skip? Watching your reel without sound.",
+    "spokenText": "The step that\u2019s easy to skip? Watching your reel without sound.",
+    "visibleText": "The step that\u2019s easy to skip? Watching your reel without sound.",
     "spokenSeconds": 7,
     "startsAtSeconds": 0,
     "questionHookRequired": false,
@@ -22,7 +22,7 @@
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Keep the ending specific",
+      "scriptHeading": "## OVERLAY: Review the middle",
       "paysOffHook": true
     },
     {
@@ -31,8 +31,8 @@
     }
   ],
   "cta": {
-    "onScreenText": "Try the silent test on your latest reel.",
-    "spokenText": "Try the silent test on your latest reel.",
+    "onScreenText": "What disappears when you mute your latest reel?",
+    "spokenText": "What disappears when you mute your latest reel?",
     "primaryAction": "comment",
     "primaryActionCount": 1,
     "fitsViewerValue": true

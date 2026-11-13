@@ -1,0 +1,89 @@
+{
+  "slug": "connect-your-reel-ending-to-its-opening-promise",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "AI VIDEO WORKFLOW",
+      "headline": "Your AI reel can look finished—and still leave viewers hanging.",
+      "panel": {
+        "title": "A PRACTICAL REVIEW",
+        "items": [
+          {
+            "label": "Promise",
+            "value": "One clear lesson"
+          },
+          {
+            "label": "Outcome",
+            "value": "A checkable next step"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-1",
+      "kind": "body",
+      "eyebrow": "EARLY PAYOFF",
+      "headline": "Close the loop you opened",
+      "reservedGraphic": true
+    },
+    {
+      "id": "body-2",
+      "kind": "body",
+      "eyebrow": "MAKE THE PROBLEM VISIBLE",
+      "headline": "Separate payoff from action",
+      "panel": {
+        "title": "MAKE THE LESSON VISIBLE",
+        "items": [
+          {
+            "label": "Before",
+            "value": "A vague instruction"
+          },
+          {
+            "label": "After",
+            "value": "A concrete example"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-3",
+      "kind": "body",
+      "eyebrow": "REVIEW THE MIDDLE",
+      "headline": "One next step beats four asks",
+      "reservedGraphic": true
+    },
+    {
+      "id": "body-4",
+      "kind": "body",
+      "eyebrow": "KEEP THE ENDING SPECIFIC",
+      "headline": "Show the connection",
+      "panel": {
+        "title": "MAKE THE LESSON VISIBLE",
+        "items": [
+          {
+            "label": "Say it",
+            "value": "One useful point"
+          },
+          {
+            "label": "Show it",
+            "value": "The matching evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-5",
+      "kind": "body",
+      "eyebrow": "REVIEW THE EXPORT",
+      "headline": "Check the final frame",
+      "reservedGraphic": true
+    },
+    {
+      "id": "closing",
+      "kind": "cta",
+      "eyebrow": "YOUR NEXT STEP",
+      "headline": "What action would complete your reel’s opening promise?"
+    }
+  ]
+}

@@ -2,25 +2,71 @@
   "version": 1,
   "graphics": [
     {
-      "segmentIndex": 5,
+      "segmentIndex": 1,
       "kind": "flow",
-      "title": "Promise map",
-      "source": "Illustrative workflow supported by the article sources",
-      "takeaway": "Keep one clear through-line",
+      "title": "Four inputs for a useful brief",
       "rows": [
         {
-          "label": "Opening",
-          "detail": "Name the promise"
+          "label": "Audience",
+          "detail": "Who has the problem?"
         },
         {
-          "label": "Middle",
-          "detail": "Show the payoff"
+          "label": "Problem",
+          "detail": "What needs to change?"
         },
         {
-          "label": "Ending",
-          "detail": "Choose one action"
+          "label": "Result",
+          "detail": "What can viewers check?"
+        },
+        {
+          "label": "Evidence",
+          "detail": "What must they see?"
         }
-      ]
+      ],
+      "takeaway": "Define the lesson before the script",
+      "source": "Fused editorial workflow; see article primary sources"
+    },
+    {
+      "segmentIndex": 3,
+      "kind": "bar",
+      "title": "Fields supplied in this example",
+      "unit": "fields",
+      "period": "Two fictional prompt examples",
+      "rows": [
+        {
+          "label": "Topic only",
+          "detail": "Topic is the only instruction",
+          "value": 1
+        },
+        {
+          "label": "Useful brief",
+          "detail": "Audience, problem, result, evidence",
+          "value": 4
+        }
+      ],
+      "takeaway": "Counts inputs, not predicted performance",
+      "source": "Fused illustrative example, not measured audience results"
+    },
+    {
+      "segmentIndex": 5,
+      "kind": "table",
+      "title": "The brief becomes the review",
+      "rows": [
+        {
+          "label": "Promise",
+          "detail": "Does the hook name the problem?"
+        },
+        {
+          "label": "Evidence",
+          "detail": "Does each scene show the method?"
+        },
+        {
+          "label": "Next action",
+          "detail": "Does the ending follow the lesson?"
+        }
+      ],
+      "takeaway": "Keep brief, script, and scenes aligned",
+      "source": "Fused editorial workflow; see article primary sources"
     }
   ],
   "soundEffects": [
@@ -38,5 +84,6 @@
       "durationSeconds": 0.35,
       "purpose": "Quiet emphasis when the review checklist is complete"
     }
-  ]
+  ],
+  "visualQualityVersion": 2
 }

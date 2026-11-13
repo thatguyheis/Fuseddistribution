@@ -2,25 +2,72 @@
   "version": 1,
   "graphics": [
     {
-      "segmentIndex": 5,
+      "segmentIndex": 1,
       "kind": "flow",
-      "title": "Promise map",
-      "source": "Illustrative workflow supported by the article sources",
-      "takeaway": "Keep one clear through-line",
+      "title": "The silent review",
+      "rows": [
+        {
+          "label": "Mute",
+          "detail": "Remove the voice explanation"
+        },
+        {
+          "label": "Watch",
+          "detail": "Follow the visible method"
+        },
+        {
+          "label": "Check",
+          "detail": "Name the final action"
+        }
+      ],
+      "takeaway": "Pictures should carry the method",
+      "source": "Fused editorial workflow; see article primary sources"
+    },
+    {
+      "segmentIndex": 3,
+      "kind": "pie",
+      "title": "Five checks in this example",
+      "unit": "checks",
+      "period": "Example review checklist",
+      "rows": [
+        {
+          "label": "Message",
+          "detail": "Topic and next step",
+          "value": 2
+        },
+        {
+          "label": "Delivery",
+          "detail": "Captions and safe areas",
+          "value": 2
+        },
+        {
+          "label": "Action",
+          "detail": "Closing question",
+          "value": 1
+        }
+      ],
+      "takeaway": "A checklist breakdown, not audience data",
+      "source": "Fused illustrative example, not measured audience results"
+    },
+    {
+      "segmentIndex": 5,
+      "kind": "table",
+      "title": "Inspect the encoded file",
       "rows": [
         {
           "label": "Opening",
-          "detail": "Name the promise"
+          "detail": "Exact hook is readable"
         },
         {
           "label": "Middle",
-          "detail": "Show the payoff"
+          "detail": "Graphic adds an explanation"
         },
         {
           "label": "Ending",
-          "detail": "Choose one action"
+          "detail": "One clear action remains"
         }
-      ]
+      ],
+      "takeaway": "Review what viewers will actually see",
+      "source": "Fused editorial workflow; see article primary sources"
     }
   ],
   "soundEffects": [
@@ -38,5 +85,6 @@
       "durationSeconds": 0.35,
       "purpose": "Quiet emphasis when the review checklist is complete"
     }
-  ]
+  ],
+  "visualQualityVersion": 2
 }

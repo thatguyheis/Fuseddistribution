@@ -2,8 +2,8 @@
   "version": 1,
   "attentionOptimizationVersion": 1,
   "hook": {
-    "spokenText": "Your AI reel can look finished—and still leave viewers hanging.",
-    "visibleText": "Your AI reel can look finished—and still leave viewers hanging.",
+    "spokenText": "Your AI reel can look finished\u2014and still leave viewers hanging.",
+    "visibleText": "Your AI reel can look finished\u2014and still leave viewers hanging.",
     "spokenSeconds": 7,
     "startsAtSeconds": 0,
     "questionHookRequired": false,
@@ -22,7 +22,7 @@
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Keep the ending specific",
+      "scriptHeading": "## OVERLAY: Review the middle",
       "paysOffHook": true
     },
     {
@@ -31,8 +31,8 @@
     }
   ],
   "cta": {
-    "onScreenText": "Rewrite your next ending around one clear action.",
-    "spokenText": "Rewrite your next ending around one clear action.",
+    "onScreenText": "What action would complete your reel\u2019s opening promise?",
+    "spokenText": "What action would complete your reel\u2019s opening promise?",
     "primaryAction": "comment",
     "primaryActionCount": 1,
     "fitsViewerValue": true

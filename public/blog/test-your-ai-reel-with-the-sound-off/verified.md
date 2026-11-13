@@ -40,13 +40,24 @@ Watch once with sound and once muted. Write down the first moment where the topi
 
 The silent test is a small habit with a clear boundary. It does not promise more views. It helps you find whether the reel still explains itself when the voice track is unavailable. Try it on your latest reel, then repair the first unclear scene you find.
 
-Sources:
 
-- [TikTok for Business Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
-- [YouTube: Measure key moments for audience retention](https://support.google.com/youtube/answer/9314415)
-- [W3C Web Content Accessibility Guidelines](https://www.w3.org/TR/wcag/)
+## Read the chart honestly
 
+This example review contains five checks: topic, visible next step, accurate captions, readable safe areas, and one closing question. The pie graphic groups those checks into message (two), delivery (two), and action (one). These counts describe this checklist only. They do not measure viewer behavior, accessibility compliance, or expected performance.
 
-Related:
+This review method is an editorial example supported by the production guidance below. It is a way to organize a review, not a promise of better business results.
 
-- [Fused Distribution home](/)
+Continue with [a clear story structure](/blog/why-ai-video-works-better-with-story-structure/) and [meaningful scene changes](/blog/ai-video-scene-changes-should-move-the-story-forward/).
+
+## Sources
+
+- [TikTok Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
+- [YouTube retention moments](https://support.google.com/youtube/answer/9314415)
+- [W3C captions guidance](https://www.w3.org/WAI/media/av/captions/)
+
+## Related
+
+- [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/)
+- [Make scene changes meaningful](/blog/ai-video-scene-changes-should-move-the-story-forward/)
+
+Read next: [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/).

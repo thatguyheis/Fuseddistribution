@@ -1,12 +1,9 @@
 {
   "pass": true,
-  "reviewedAt": "2026-11-12T20:30:00-08:00",
+  "reviewedAt": "2026-11-13T15:18:58.942Z",
   "reviewer": "Codex",
   "profile": "business-growth-v1",
-  "frameZero": "Hero shows the exact owner-approved hook: Before you ask AI for a video, give it this.",
-  "scenes": "Seven original 1080x1920 scenes match the seven narration sections; scene 5 reserves the dynamic graphic panel.",
-  "rights": "Original Fused vector artwork; no stock assets used.",
-  "closing": "Scene 6 is the full-frame CTA artwork; QR not applicable.",
-  "distribution": "Encoded MP4 review remains an overnight delivery gate.",
-  "heroSha256": "0cba593b80d8c6df555c5bb07a4829dbda9da80d6579b95f4c3f86c019a7758b"
+  "visualQualityVersion": 2,
+  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required.",
+  "heroSha256": "0c5e7c042c432aae966bddbd3482c28c7a1f60bbe1ef71543f4fb9cc0dcc0842"
 }

@@ -1,12 +1,9 @@
 {
   "pass": true,
-  "reviewedAt": "2026-11-12T20:30:00-08:00",
+  "reviewedAt": "2026-11-13T15:18:58.260Z",
   "reviewer": "Codex",
   "profile": "business-growth-v1",
-  "frameZero": "Hero shows the exact owner-approved hook: The step that’s easy to skip? Watching your reel without sound.",
-  "scenes": "Seven original 1080x1920 scenes match the seven narration sections; scene 5 reserves the dynamic graphic panel.",
-  "rights": "Original Fused vector artwork; no stock assets used.",
-  "closing": "Scene 6 is the full-frame CTA artwork; QR not applicable.",
-  "distribution": "Encoded MP4 review remains an overnight delivery gate.",
-  "heroSha256": "0c642a1dbf2df4b8e3972da3489388f6a9e7895d6e6425116487fddaa41c64eb"
+  "visualQualityVersion": 2,
+  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required.",
+  "heroSha256": "0a36cb148adba864f3daa3dd225d3823daf2116306868435ddd67c9723c77695"
 }

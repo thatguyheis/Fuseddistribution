@@ -38,6 +38,15 @@ def in_window(now: dt.datetime) -> bool:
     return now.hour >= 0 and now.hour < 6
 
 
+def repaired_package_retry(approval: dict, checkpoint: dict | None) -> bool:
+    """One bounded retry may use newly approved inputs, never an unchanged failure."""
+    if not checkpoint or checkpoint.get('status') not in ('render_failed', 'release_qa_failed', 'approval_blocked', 'approval_changed'):
+        return False
+    previous = checkpoint.get('approvalSha256')
+    current = hashlib.sha256(json.dumps(approval, sort_keys=True).encode()).hexdigest()
+    return isinstance(previous, str) and bool(previous) and previous != current
+
+
 def atomic_json(path: Path, value: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + f".{os.getpid()}.tmp")
@@ -349,7 +358,7 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 successful.add(slug)
                 persist("topic_current", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
                 continue
-            retry_allowed = retry_failed and slug in attempted and slug in prior_failed and slug not in retried
+            retry_allowed = (retry_failed or repaired_package_retry(approval, checkpoint)) and slug in attempted and slug in prior_failed and slug not in retried
             if slug in attempted and not retry_allowed:
                 run_state["results"].append({"slug": slug, "status": "already_attempted_today"})
                 persist("topic_skipped_attempted", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))

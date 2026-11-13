@@ -1,9 +1,9 @@
 {
   "title": "The Silent Test: Review Your AI Reel Without Sound",
   "slug": "test-your-ai-reel-with-the-sound-off",
-  "description": "A practical silent viewing check for opening clarity, captions, visual explanation and one clear final action.",
-  "ogDescription": "A practical silent viewing check for opening clarity, captions, visual explanation and one clear final action.",
-  "alt": "The Silent Test: Review Your AI Reel Without Sound",
+  "description": "Review your AI reel without sound using five practical checks for clear messages, readable captions, safe layouts, and one useful final action before posting.",
+  "ogDescription": "Review your AI reel without sound using five practical checks for clear messages, readable captions, safe layouts, and one useful final action before posting.",
+  "alt": "Silent video review with readable captions",
   "squareCover": true,
   "date": "2026-11-13",
   "tags": [
@@ -12,21 +12,21 @@
     "Small Business"
   ],
   "brand": "tech",
-  "ctaLine": "Try the silent test on your latest reel.",
+  "ctaLine": "What disappears when you mute your latest reel?",
   "contentGraphic": {
-    "label": "A practical promise map",
+    "label": "The silent review",
     "rows": [
       {
-        "condition": "Opening",
-        "action": "Name the promise"
+        "condition": "Mute",
+        "action": "Remove the voice explanation"
       },
       {
-        "condition": "Middle",
-        "action": "Show the payoff"
+        "condition": "Watch",
+        "action": "Follow the visible method"
       },
       {
-        "condition": "Ending",
-        "action": "Choose one action"
+        "condition": "Check",
+        "action": "Name the final action"
       }
     ]
   }

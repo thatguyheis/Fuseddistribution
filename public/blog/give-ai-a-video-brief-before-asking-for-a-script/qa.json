@@ -4,13 +4,12 @@
   "pass": true,
   "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-12",
+  "reviewedAt": "2026-11-13T15:18:58.942Z",
   "reviewer": "Codex",
   "review_notes": [
-    "Reviewed current primary sources and labeled fictional examples as illustrative.",
-    "Verified exact owner hook in spoken and visible opening metadata.",
-    "Reviewed original topic-specific artwork, reserved graphic scene, CTA, mobile safe areas, and exact sound-effect catalog entries.",
-    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates."
+    "Reviewed rewritten topic-specific narration, exact approved hook, and one spoken closing question.",
+    "Three explanatory graphics use flow, comparison and count-based charts; example values are labeled and derived from the supplied examples. No audience results are invented.",
+    "Generated full-resolution scene art with reserved graphic space; removed the rejected automatic circle motif. Encoded output review remains pending."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -19,20 +18,21 @@
     "visibleText": "Before you ask AI for a video, give it this."
   },
   "artifactSha256": {
-    "verified.md": "9359fde834b5cbbf1853e94eb6e06afd6dcad3bc1075b6ae00d8819163c19e65",
-    "index.html": "121df00fabee809a21cb114d456310d470c8046a5dda21377328a8be84d34f40",
-    "meta.json": "5a60e8e913e9692ce6dd170cfb6cef86e69b2e1f5afa8f2a903de12457cff293",
+    "verified.md": "cc5291271efef8a46ab18fe7ec2da1fce5e1689a9f963d7dc71d0719084380d1",
+    "index.html": "1de0ef183b891073551f75557bf681085d0679a493b15e6fee4f4ee4a1cc3c7a",
+    "meta.json": "5b9a73c66a20be5400b5072f6134c4ac629fa51a15aa3feb7002a6efbf3a2029",
     "research.json": "27f4d45603fa2eb3d1f512b5e03dfe9f1a039115048ae24534a47c41125f46c9",
-    "hero.jpg": "0cba593b80d8c6df555c5bb07a4829dbda9da80d6579b95f4c3f86c019a7758b",
-    "photo-post.jpg": "0cba593b80d8c6df555c5bb07a4829dbda9da80d6579b95f4c3f86c019a7758b",
-    "reel-script.md": "3ad43448c4d8c7a5f929d953cafd74396752cf9260ed1603e3a020329c449f73",
+    "hero.jpg": "0c5e7c042c432aae966bddbd3482c28c7a1f60bbe1ef71543f4fb9cc0dcc0842",
+    "photo-post.jpg": "0c5e7c042c432aae966bddbd3482c28c7a1f60bbe1ef71543f4fb9cc0dcc0842",
+    "reel-script.md": "ba64441742878d5a247d0249cbed5fa4b64df9735a620cc2503c46ee59246799",
     "reel-data.md": "db9189313be15f48575894debfee9854382a2b172003ac2c7be698433f7ec14f",
     "social-copy.json": "b21d63349c109692a308347af90a22276041eb1984f39c41bc3476b3805aec65",
-    "enrichment-plan.json": "0f95448e2fad4adbae9a68ddd7e0b7ed4d2c9a6b8be9dfc2fe6e2801215a6d4a",
-    "attention-review.json": "dcccab5d5a3adb25b5acf84a9f64b0bf7fd2922fe9e65504f1345e8f0ef29810",
-    "presentation-plan.json": "6130571dc4db70b5ccf8a6405a7640a3d00562cb9998b71b3a5e45b5bde05abc",
+    "enrichment-plan.json": "8d80320c9072dbdc1c193b0ad0f66d1e1079f380db473bdd1a001e56403c899d",
+    "attention-review.json": "26438bd498c869ad52ee75650ffd0e9c3fa6bc9704de5d9743e1dea0f98185bf",
+    "presentation-plan.json": "e7465f3e4b8e247e622e488ce839eefbee0e4015457afa7295cbe0123e4ed078",
     "social-video.json": "ab6b8368b69217753b00b3fdd99bdb7f85392785b3e4af86fe4e6667a7ab3fa8",
     "stock-image-sources.json": "7044451b6692f9064fdbf3e46d5933648645cc33836bbf3e7da2bc24d085aa67"
   },
-  "reviewed_at": "2026-11-12T20:30:00-08:00"
+  "reviewed_at": "2026-11-13T15:18:58.942Z",
+  "visualQualityVersion": 2
 }

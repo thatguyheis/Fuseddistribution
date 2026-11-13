@@ -1,0 +1,89 @@
+{
+  "slug": "give-ai-a-video-brief-before-asking-for-a-script",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "AI VIDEO WORKFLOW",
+      "headline": "Before you ask AI for a video, give it this.",
+      "panel": {
+        "title": "A PRACTICAL REVIEW",
+        "items": [
+          {
+            "label": "Promise",
+            "value": "One clear lesson"
+          },
+          {
+            "label": "Outcome",
+            "value": "A checkable next step"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-1",
+      "kind": "body",
+      "eyebrow": "EARLY PAYOFF",
+      "headline": "Give AI four useful inputs",
+      "reservedGraphic": true
+    },
+    {
+      "id": "body-2",
+      "kind": "body",
+      "eyebrow": "MAKE THE PROBLEM VISIBLE",
+      "headline": "Make the request concrete",
+      "panel": {
+        "title": "MAKE THE LESSON VISIBLE",
+        "items": [
+          {
+            "label": "Before",
+            "value": "A vague instruction"
+          },
+          {
+            "label": "After",
+            "value": "A concrete example"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-3",
+      "kind": "body",
+      "eyebrow": "REVIEW THE MIDDLE",
+      "headline": "Compare the information supplied",
+      "reservedGraphic": true
+    },
+    {
+      "id": "body-4",
+      "kind": "body",
+      "eyebrow": "KEEP THE ENDING SPECIFIC",
+      "headline": "Map words to visible evidence",
+      "panel": {
+        "title": "MAKE THE LESSON VISIBLE",
+        "items": [
+          {
+            "label": "Say it",
+            "value": "One useful point"
+          },
+          {
+            "label": "Show it",
+            "value": "The matching evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "body-5",
+      "kind": "body",
+      "eyebrow": "REVIEW THE EXPORT",
+      "headline": "Review before you render",
+      "reservedGraphic": true
+    },
+    {
+      "id": "closing",
+      "kind": "cta",
+      "eyebrow": "YOUR NEXT STEP",
+      "headline": "What problem should your next video solve?"
+    }
+  ]
+}

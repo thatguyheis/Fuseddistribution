@@ -4,35 +4,35 @@
   "pass": true,
   "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-12",
+  "reviewedAt": "2026-11-13T15:18:58.260Z",
   "reviewer": "Codex",
   "review_notes": [
-    "Reviewed current primary sources and labeled fictional examples as illustrative.",
-    "Verified exact owner hook in spoken and visible opening metadata.",
-    "Reviewed original topic-specific artwork, reserved graphic scene, CTA, mobile safe areas, and exact sound-effect catalog entries.",
-    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates."
+    "Reviewed rewritten topic-specific narration, exact approved hook, and one spoken closing question.",
+    "Three explanatory graphics use flow, comparison and count-based charts; example values are labeled and derived from the supplied examples. No audience results are invented.",
+    "Generated full-resolution scene art with reserved graphic space; removed the rejected automatic circle motif. Encoded output review remains pending."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
     "questionHookRequired": false,
-    "spokenText": "The step that’s easy to skip? Watching your reel without sound.",
-    "visibleText": "The step that’s easy to skip? Watching your reel without sound."
+    "spokenText": "The step that\u2019s easy to skip? Watching your reel without sound.",
+    "visibleText": "The step that\u2019s easy to skip? Watching your reel without sound."
   },
   "artifactSha256": {
-    "verified.md": "494a3a3d65d11a62996a6e8a7a125ba91ff3de9adad3f60a6f01484dcbf36c80",
-    "index.html": "b33613975efe19f6a403f9dc70b3071aa2df9bd1763124a468d5f9eb5de617b5",
-    "meta.json": "ef296895da79028823077aab01a3bf37b6cbde05476a9e5db1eb1cdc547f33f7",
+    "verified.md": "c20f5964d4fde45c92443004edd275448753d095383d1420eab1703a7028f170",
+    "index.html": "d4f471d3aca6b7c2e8dab39eedbefc1249b4c5c6599453e118ea3e89dc3078e6",
+    "meta.json": "62ecda6df76071fe9758bfeb2d47bd477e8514203f8ed06b1c6f62253b8130b7",
     "research.json": "cc7ee356d90f953c8c3173a9c9eae407288d0899b7c6b18a1596b5b97af5a48e",
-    "hero.jpg": "0c642a1dbf2df4b8e3972da3489388f6a9e7895d6e6425116487fddaa41c64eb",
-    "photo-post.jpg": "0c642a1dbf2df4b8e3972da3489388f6a9e7895d6e6425116487fddaa41c64eb",
-    "reel-script.md": "e4b32994c33f6152cfb5ecbd451183434119a6443280c8587cfe33248d2b7586",
-    "reel-data.md": "0422c347f85a54ae9c8d87eafb76a843ec99642eef4e0fc7c79bd7c95a5517a0",
-    "social-copy.json": "6c09b582c017623d85957b518b79ac8dbff62139f57c650a9ede02c45949f129",
-    "enrichment-plan.json": "0f95448e2fad4adbae9a68ddd7e0b7ed4d2c9a6b8be9dfc2fe6e2801215a6d4a",
-    "attention-review.json": "2e80715656bbd6a1fd0f806ad9c533bf2e7cf800eaa9e36ce1873053627e6742",
-    "presentation-plan.json": "8c50fc5254e2fd369a296bee1e6a3202646537e89a0cc9d701fc9037c2f2f89c",
+    "hero.jpg": "0a36cb148adba864f3daa3dd225d3823daf2116306868435ddd67c9723c77695",
+    "photo-post.jpg": "0a36cb148adba864f3daa3dd225d3823daf2116306868435ddd67c9723c77695",
+    "reel-script.md": "a758e9f0e68b8b5419256451523b709b0e841dbc3152dac38d1ad76ded4781ae",
+    "reel-data.md": "436aa62582cf86f1b7f78392b550235f2c5f3828bfb67f46b5091ac496a74e35",
+    "social-copy.json": "e60dc79b36160959e91ee81a91131a100233301d245b2cbffc45e467c6c508e7",
+    "enrichment-plan.json": "44ecc525c317d579be0a131eab49e456bac2ba2ac956e07a9b5528acf9bfe394",
+    "attention-review.json": "20aba1a602863cc3301c0cf21e6e3df7f22b71991913f5f4aeed7a0478a99ed6",
+    "presentation-plan.json": "7cccfa6b7b5ed67019d0fd304753cea9a7eab3366bb4255e76a971e56bb4ce4d",
     "social-video.json": "c9e151cc2aa45e3793bda2880721eb83b5075a7640322e4ae79fe20bf00eae10",
     "stock-image-sources.json": "7044451b6692f9064fdbf3e46d5933648645cc33836bbf3e7da2bc24d085aa67"
   },
-  "reviewed_at": "2026-11-12T20:30:00-08:00"
+  "reviewed_at": "2026-11-13T15:18:58.260Z",
+  "visualQualityVersion": 2
 }

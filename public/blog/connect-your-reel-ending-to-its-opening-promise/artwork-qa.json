@@ -1,12 +1,9 @@
 {
   "pass": true,
-  "reviewedAt": "2026-11-12T20:30:00-08:00",
+  "reviewedAt": "2026-11-13T15:18:59.420Z",
   "reviewer": "Codex",
   "profile": "business-growth-v1",
-  "frameZero": "Hero shows the exact owner-approved hook: Your AI reel can look finished—and still leave viewers hanging.",
-  "scenes": "Seven original 1080x1920 scenes match the seven narration sections; scene 5 reserves the dynamic graphic panel.",
-  "rights": "Original Fused vector artwork; no stock assets used.",
-  "closing": "Scene 6 is the full-frame CTA artwork; QR not applicable.",
-  "distribution": "Encoded MP4 review remains an overnight delivery gate.",
-  "heroSha256": "1d5046f1d2b8050ac5994da613891653419bb1f085ffa407db5fa31b48acdc6d"
+  "visualQualityVersion": 2,
+  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required.",
+  "heroSha256": "a3941346fb9fab02adc9f0dc484ec95d2264da1bb30ca671d4fc741deb8005fc"
 }

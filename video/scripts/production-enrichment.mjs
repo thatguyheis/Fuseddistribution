@@ -14,18 +14,22 @@ export function validateEnrichmentPlan(plan, segmentCount) {
     throw Error('Enrichment requires version 1, an explanatory graphic and at least two purposeful sound cues');
   }
   const bodyIndex = index => Number.isInteger(index) && index > 0 && index < segmentCount - 1;
+  if (plan.visualQualityVersion === 2 && (plan.graphics.length < 2 || new Set(plan.graphics.map(item => item.kind)).size < 2)) {
+    throw Error('Business visual quality v2 requires at least two explanatory graphics in different forms');
+  }
   if (new Set(plan.graphics.map(graphic => graphic.segmentIndex)).size !== plan.graphics.length) throw Error('Use one composed graphic per scene');
   for (const graphic of plan.graphics) {
-    if (!bodyIndex(graphic.segmentIndex) || !['flow', 'table', 'bar'].includes(graphic.kind)
+    if (!bodyIndex(graphic.segmentIndex) || !['flow', 'table', 'bar', 'pie'].includes(graphic.kind)
       || !text(graphic.title) || graphic.title.length > 70 || !text(graphic.source)
       || graphic.source.length > 140 || !text(graphic.takeaway) || graphic.takeaway.length > 120 || !Array.isArray(graphic.rows)
       || graphic.rows.length < 2 || graphic.rows.length > 4) throw Error('Invalid explanatory graphic');
     for (const row of graphic.rows) {
       if (!text(row.label) || row.label.length > 55 || typeof row.detail !== 'string' || row.detail.length > 65
-        || (graphic.kind === 'bar' && (!Number.isFinite(row.value) || row.value < 0))) throw Error('Invalid graphic row');
+        || (['bar','pie'].includes(graphic.kind) && (!Number.isFinite(row.value) || row.value < 0))) throw Error('Invalid graphic row');
     }
-    if (graphic.kind === 'bar' && (!text(graphic.unit) || !text(graphic.period)
-      || !graphic.rows.some(row => row.value > 0))) throw Error('Bar chart requires unit, period and nonzero values');
+    if (['bar','pie'].includes(graphic.kind) && (!text(graphic.unit) || !text(graphic.period)
+      || !graphic.rows.some(row => row.value > 0))) throw Error('Numeric chart requires unit, period and nonzero values');
+    if (graphic.kind === 'pie' && graphic.unit === '%' && Math.abs(graphic.rows.reduce((sum,row)=>sum+row.value,0)-100)>0.01) throw Error('Percentage pie slices must total 100');
   }
   if (new Set(plan.soundEffects.map(cue => cue.segmentIndex)).size < 2) throw Error('Sound cues must support two different body beats');
   for (const cue of plan.soundEffects) {

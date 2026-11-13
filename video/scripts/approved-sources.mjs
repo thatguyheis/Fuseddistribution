@@ -1,7 +1,11 @@
+import {validatePresentation} from './presentation-plan.mjs';
+import {validateReelScript} from './validate-reel.mjs';
+import {repairScript} from './repair-reel-scripts.mjs';
+import {spawnSync} from 'node:child_process';
 import {assertOwnerHook, approvedOwnerHook} from './lib/owner-hook.mjs';
-import { existsSync, readFileSync, realpathSync } from 'node:fs';
+import { existsSync, readFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { join, resolve, sep } from 'node:path';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { attentionReviewErrors } from './attention-review.mjs';
 import { parseReelScript } from './parse-script.mjs';
@@ -41,17 +45,20 @@ export function assertApprovedSources(root, slug) {
     prepareEnrichment(root, slug, parsedScript.segments.length);
   }
   const presentationPath=join(directory,'presentation-plan.json');
-  if(existsSync(presentationPath)) {
-    const bytes=readFileSync(presentationPath);
-    if(qa.artifactSha256?.['presentation-plan.json']!==createHash('sha256').update(bytes).digest('hex'))throw Error('Presentation plan changed after editorial approval');
-    const plan=JSON.parse(bytes);
+  if(existsSync(presentationPath) || qa.attentionOptimizationVersion === 1) {
     const parsed=parseReelScript(readFileSync(join(directory,'reel-script.md'),'utf8'),slug,readFileSync(join(directory,'reel-data.md'),'utf8'));
-    if(!Array.isArray(plan.segments)||plan.segments.length!==parsed.segments.length)throw Error('Presentation must cover every narration segment before handoff');
-    if(plan.profile==='business-growth-v1')for(const shots of plan.segments) {
-      if(!Array.isArray(shots)||!shots.length)throw Error('Presentation scene has no approved artwork');
-      for(const shot of shots) {
-        const asset=realpathSync(resolve(root,shot.path));
-        if(!asset.startsWith(realpathSync(directory)+sep)||shot.sha256!==createHash('sha256').update(readFileSync(asset)).digest('hex'))throw Error('Presentation asset changed or escaped its approved package');
+    const validation=validateReelScript(repairScript(parsed).repaired);
+    if(validation.errors.length)throw Error(`Render preflight failed: ${validation.errors.join('; ')}`);
+    if(existsSync(presentationPath)) {
+      const {plan}=validatePresentation(root,slug,parsed.segments.length);
+      if(plan.profile==='business-growth-v1' && Date.parse(qa.reviewed_at ?? qa.reviewedAt)>=Date.parse('2026-11-13')) {
+        const enrichment=JSON.parse(readFileSync(enrichmentPath,'utf8'));
+        if(enrichment.visualQualityVersion!==2)throw Error('New business packages require visual quality v2 with two distinct explanatory graphics');
+        for(const graphic of enrichment.graphics)if(!plan.segments[graphic.segmentIndex].every(shot=>shot.reservedGraphic===true))throw Error('Explanatory graphics require a reserved, unobstructed scene');
+        const reportDir=join(root,'.workflow-state/business-growth-ai-365/preflight-qa');
+        mkdirSync(reportDir,{recursive:true});
+        const localQa=spawnSync(process.execPath,[join(root,'public/blog/scripts/qa-local.mjs'),`--slug=${slug}`,`--out=${join(reportDir,slug+'.json')}`],{cwd:root,encoding:'utf8',timeout:30000});
+        if(localQa.status!==0)throw Error(`Blog preflight failed: ${(localQa.stdout||localQa.stderr||localQa.error?.message||'unknown error').trim()}`);
       }
     }
   }

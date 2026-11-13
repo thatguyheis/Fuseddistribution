@@ -83,7 +83,7 @@ function validateScene(scene, index) {
   const eyebrow = boundedText(scene.eyebrow, `${scene.id} eyebrow`, 28, {required: true});
   const headline = boundedText(scene.headline, `${scene.id} headline`, MAX_HEADLINE_CHARS, {required: true});
   const detail = boundedText(scene.detail, `${scene.id} detail`, MAX_DETAIL_CHARS);
-  const headlineLines = wrapWords(headline, 10.6, 3, `${scene.id} headline`);
+  const headlineLines = wrapWords(headline, 780 / 64, 3, `${scene.id} headline`);
   const detailLines = detail ? wrapWords(detail, 25.5, 2, `${scene.id} detail`) : [];
   const headlineSize = Math.min(80, Math.floor(780 / Math.max(...headlineLines.map(lineWidthUnits))));
   if (headlineSize < 64) throw new Error(`${scene.id} headline cannot fit at 64 px or larger`);
@@ -140,9 +140,6 @@ function textLines(lines, {x, y, fontSize, lineHeight, fill = BUSINESS_SCENE_ART
 
 function panelMarkup(panel) {
   if (!panel) return '';
-  if (!panel.title && panel.items.length === 0) {
-    return '<g fill="none" stroke="#58D6FF" stroke-opacity=".82" stroke-linecap="round"><circle cx="540" cy="1290" r="105" stroke-width="5"/><circle cx="540" cy="1290" r="56" stroke-width="4"/><path d="M540 1185v-54M645 1290h84M435 1290h-84M540 1395v54" stroke-width="7"/><circle cx="540" cy="1290" r="12" fill="#FFFFFF" stroke="none"/><circle cx="540" cy="1131" r="9" fill="#58D6FF" stroke="none"/><circle cx="729" cy="1290" r="9" fill="#58D6FF" stroke="none"/><circle cx="351" cy="1290" r="9" fill="#58D6FF" stroke="none"/><circle cx="540" cy="1449" r="9" fill="#58D6FF" stroke="none"/></g>';
-  }
   const x = 150;
   const y = 885;
   const width = 780;
@@ -150,10 +147,6 @@ function panelMarkup(panel) {
   const titleMarkup = titleLines.length
     ? textLines(titleLines, {x: x + 42, y: y + 64, fontSize: 32, lineHeight: 36, fill: BUSINESS_SCENE_ART.cyan, weight: 700, anchor: 'start'})
     : '';
-  if (panel.items.length === 0) {
-    const height = 360;
-    return `<g><rect x="${x}" y="${y}" width="${width}" height="${height}" rx="36" fill="#10283D" stroke="#58D6FF" stroke-opacity="0.68" stroke-width="3"/><g fill="none" stroke="#58D6FF" stroke-opacity=".82" stroke-linecap="round"><circle cx="540" cy="1180" r="105" stroke-width="5"/><circle cx="540" cy="1180" r="56" stroke-width="4"/><path d="M540 1075v-54M645 1180h84M435 1180h-84M540 1285v54" stroke-width="7"/><circle cx="540" cy="1180" r="12" fill="#FFFFFF" stroke="none"/><circle cx="540" cy="1021" r="9" fill="#58D6FF" stroke="none"/><circle cx="729" cy="1180" r="9" fill="#58D6FF" stroke="none"/><circle cx="351" cy="1180" r="9" fill="#58D6FF" stroke="none"/><circle cx="540" cy="1339" r="9" fill="#58D6FF" stroke="none"/></g></g>`;
-  }
   let cursor = y + 64 + titleLines.length * 36 + 34;
   const rows = panel.items.map((item) => {
     const baseline = cursor;
@@ -187,7 +180,7 @@ export function renderBusinessSceneSvg(scene) {
   ${textLines([normalized.eyebrow.toUpperCase()], {x: 540, y: eyebrowY, fontSize: 25, lineHeight: 32, fill: BUSINESS_SCENE_ART.cyan, weight: 700, className: 'eyebrow'})}
   ${textLines(normalized.headlineLines, {x: 540, y: headingY, fontSize: normalized.headlineSize, lineHeight: normalized.headlineSize * 1.12, fill: BUSINESS_SCENE_ART.white, weight: 800, className: 'headline'})}
   ${detail}
-  ${panelMarkup(normalized.reservedGraphic ? null : normalized.panel ?? {title: '', titleLines: [], items: []})}
+  ${panelMarkup(normalized.reservedGraphic ? null : normalized.panel)}
   <path d="M150 1560h780" stroke="#58D6FF" stroke-opacity=".22" stroke-width="2"/>
   <circle cx="170" cy="1560" r="6" fill="#58D6FF"/><circle cx="910" cy="1560" r="6" fill="#58D6FF"/>
   </svg>`;

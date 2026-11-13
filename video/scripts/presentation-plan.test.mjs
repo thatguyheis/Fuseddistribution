@@ -17,3 +17,9 @@ test('business presentation does not require an unrelated coin folder',()=>{cons
 test('approved business profile carries 1080p safe-zone metadata into rendering',()=>{const f=fixture(false);f.plan.profile='business-growth-v1';f.plan.safeZones={width:1080,height:1920,captionBottomClearancePx:250,socialUiRightClearancePx:150};f.approve();const p=stagePresentation(f.root,f.slug,1);assert.equal(p.profile,'business-growth-v1');});
 
 test('business profile cannot be used for coin history or missing safe-zone approval',()=>{const coin=fixture(true);coin.plan.profile='business-growth-v1';coin.plan.safeZones={width:1080,height:1920,captionBottomClearancePx:250,socialUiRightClearancePx:150};coin.approve();assert.throws(()=>stagePresentation(coin.root,coin.slug,1),/cannot be used for coin history/);const missing=fixture(false);missing.plan.profile='business-growth-v1';missing.plan.safeZones={width:1080,height:1920,captionBottomClearancePx:250,socialUiRightClearancePx:100};missing.approve();assert.throws(()=>stagePresentation(missing.root,missing.slug,1),/clearances/);});
+
+test('read-only handoff validation rejects missing shot weights before staging',async()=>{
+ const {validatePresentation}=await import('./presentation-plan.mjs');
+ const f=fixture(false);delete f.plan.segments[0][0].weight;f.approve();
+ assert.throws(()=>validatePresentation(f.root,f.slug,1),/positive weight/);
+});

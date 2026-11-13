@@ -111,3 +111,14 @@ test('coin media gate requires two matching checks and a beat mapped to the epis
     assert.throws(()=>assertApprovedSources(value.root,value.slug),/scene is not tied to the episode identity/);
   } finally { rmSync(value.root,{recursive:true,force:true}); }
 });
+
+test('handoff rejects an approved source whose closing question cannot render',()=>{
+ const f=fixture();
+ const script=`# Reel Script: ${f.slug}\nformat: long-form\nengagement-policy: 1\ncontent-kind: educate\n\n---\n## HOOK\n**Duration:** 5s\nText: What should you check first?\nNarration: What should you check first?\n\n---\n## QUESTION\n**Duration:** 5s\nText: Try this useful review today.\nEngagement-beat: identity\nNarration: Try this useful review today.\n`;
+ writeFileSync(join(f.post,'reel-script.md'),script);
+ writeFileSync(join(f.post,'presentation-plan.json'),'{}');
+ const qa=JSON.parse(readFileSync(join(f.post,'qa.json')));
+ qa.artifactSha256['reel-script.md']=digest(join(f.post,'reel-script.md'));
+ writeFileSync(join(f.post,'qa.json'),JSON.stringify(qa));
+ assert.throws(()=>assertApprovedSources(f.root,f.slug),/question must be spoken verbatim/);
+});
