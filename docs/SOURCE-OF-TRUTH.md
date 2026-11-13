@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 19, 2026-11-13. Owner: Nick Hughes.
+Version 20, 2026-11-13. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -69,7 +69,7 @@ Nick's personal and first party generations use the existing local procedures an
 | Coin imagery | Owner photos first (`content/coin-library/catalog.json`). Never generate or sharpen coin details. Specimen claims must be visible in the crop. Every coin evidence image must match the episode identity at package intake and again before rendering, with matching hashes and local Gemma vision evidence. | `scripts/prepare-coin-history-batch.mjs`, `video/scripts/coin-image-relevance.mjs`, `video/scripts/approved-sources.mjs` |
 | Local model | Ollama `gemma3:4b` via `scripts/ollama-local-no-think.sh`. Coin drafting uses this local model; the separately authorized business automation uses GPT-5.6 Luna directly for writing and review. | coin worker env |
 | Buffer queue | 9 scheduled posts per channel (limit 10, 1 reserve slot). Channels: YouTube Shorts, X, Instagram. | `scripts/buffer-backlog-runner.mjs:22-24` |
-| Buffer CTA gate | Platform planners must apply `rotateQueue` to selected jobs before queue validation/publish; never hand-edit CTA metadata to bypass preflight. | `public/blog/scripts/prepare-buffer-*-queue.mjs`, `public/blog/scripts/lib/cta-rotation.mjs` |
+| Buffer CTA gate | Reconcile overdue IDs from all channel logs, including completed topics, before planning. Platform planners must apply `rotateQueue` to selected jobs before queue validation/publish; never hand-edit CTA metadata to bypass preflight. | `scripts/business-reel-status.py`, `public/blog/scripts/prepare-buffer-*-queue.mjs`, `public/blog/scripts/lib/cta-rotation.mjs` |
 | Buffer media gate | Before any API create request, fetch and consume the full public MP4 response. Require HTTPS, HTTP 200, `video/mp4`, a valid MP4 `ftyp` signature, complete body length, and the platform size limit. A passing local fetch does not prove Buffer can fetch through its own network path; if Buffer rejects the URL, confirm no post ID/live post exists and use only the documented recovery. | `public/blog/scripts/lib/buffer-media-verification.mjs`, `public/blog/scripts/buffer-live.mjs`, `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md` |
 | Buffer media origin | `https://fused-reel-media.luxraycoco.workers.dev/reels` and `/reels-x`, isolated read-only Worker backed by REELS_KV; deploy with `wrangler.media.jsonc`. Website links stay on fuseddistribution.com. API edits resend video assets and channel metadata. | media preparation defaults, reel-media-worker.js, buffer-live.mjs |
 | Buffer reuse | Same reel not reposted within 7 days | `buffer-backlog-runner.mjs` `repostAfterDays` |

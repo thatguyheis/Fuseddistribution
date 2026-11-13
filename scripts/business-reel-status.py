@@ -29,6 +29,31 @@ def lease_state(path):
     except OSError:
         return 'indeterminate'
 
+def buffer_delivery_records(root, now):
+    """Read each channel once; overdue IDs remain visible after a topic leaves the queue."""
+    records_by_slug = {}
+    due_ids = set()
+    for platform in ['youtube', 'x', 'instagram']:
+        log = read(root / f'.buffer-{platform}-scheduled.json', {})
+        for post in log.get('scheduled', []):
+            record = {key: post.get(key) for key in ['postId', 'status', 'dueAt', 'sentAt']}
+            record['platform'] = platform
+            records_by_slug.setdefault(post.get('slug'), []).append(record)
+            if post.get('status') not in ('scheduled', 'sending') or not post.get('postId') or not post.get('dueAt'):
+                continue
+            try:
+                if not isinstance(post['dueAt'], str):
+                    raise ValueError('Buffer dueAt must be an ISO timestamp')
+                due = dt.datetime.fromisoformat(post['dueAt'].replace('Z', '+00:00'))
+                if due.tzinfo is None:
+                    raise ValueError('Buffer dueAt requires a time zone')
+                if due <= now:
+                    due_ids.add(post['postId'])
+            except (ValueError, TypeError):
+                record['dueTimeInvalid'] = True
+    return records_by_slug, sorted(due_ids)
+
+
 def summary():
     now = dt.datetime.now(dt.timezone.utc)
     day = now.astimezone(ZoneInfo('America/Los_Angeles')).date().isoformat()
@@ -38,25 +63,10 @@ def summary():
     for key in ['queuedTopics', 'inProgressTopics']:
         slugs.update(item['slug'] for item in ledger.get(key, []) if item.get('slug'))
     topics = []
-    due_ids = []
+    records_by_slug, due_ids = buffer_delivery_records(ROOT, now)
     handoff = read(STATE / 'production/handoffs' / f'{day}.json', {})
     for slug in sorted(slugs):
-        records = []
-        for platform in ['youtube', 'x', 'instagram']:
-            log = read(ROOT / f'.buffer-{platform}-scheduled.json', {})
-            for post in log.get('scheduled', []):
-                if post.get('slug') != slug:
-                    continue
-                record = {key: post.get(key) for key in ['postId', 'status', 'dueAt', 'sentAt']}
-                record['platform'] = platform
-                records.append(record)
-                if post.get('status') != 'sent' and post.get('postId') and post.get('dueAt'):
-                    try:
-                        due = dt.datetime.fromisoformat(post['dueAt'].replace('Z', '+00:00'))
-                        if due <= now:
-                            due_ids.append(post['postId'])
-                    except ValueError:
-                        record['dueTimeInvalid'] = True
+        records = records_by_slug.get(slug, [])
         release = read(ROOT / 'video/out' / slug / 'release-qa.json', {})
         progress = read(STATE / 'production/topics' / f'{slug}.json', {})
         topics.append({'slug': slug, 'stage': progress.get('status', 'not-started'),

@@ -5,7 +5,7 @@
 1. Read `docs/SOURCE-OF-TRUTH.md`. It is the single source of truth for scope, standards, schedule, workflow and git policy, and it wins over every other SOP.
 2. Read `docs/HANDOFF-GPT-2026-10-22.md` for the coin-history operating handoff.
 3. Global repository scope remains **coin history only, 3 finished blog and reel pairs per day**. Switch: `ops/content-scope.json`.
-4. Nick separately authorized the Codex automation `daily-business-growth-blog-and-reel` to publish one business-growth pair per Pacific day from the v2 365-day plan. For that task only, also read `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`; this does not change the global scope switch or coin-history jobs.
+4. Nick separately authorized the Codex automation `daily-business-growth-blog-and-reel` to publish business-growth pairs from the v2 365-day plan under the daily target in SOURCE-OF-TRUTH. For that task only, also read `docs/BUSINESS-GROWTH-AUTOMATION-SOP.md`; this does not change the global scope switch or coin-history jobs.
 5. Episode rules: `docs/COIN-HISTORY-SOP.md`. Render detail: `video/REEL-SOP.md`.
 6. To change a general rule, edit SOURCE-OF-TRUTH and its enforcing code/config in the same change. Do not add dated banners to other files.
 
