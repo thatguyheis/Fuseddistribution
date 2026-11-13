@@ -52,7 +52,7 @@ The close should answer the opening question and invite one low-friction action.
 
 ## A small structure is a production advantage
 
-The practical benefit of story structure is control. You can review a draft scene by scene, replace a weak example without rebuilding the whole lesson, and compare future retention against videos of similar length. You can also explain the work to another person because the structure is visible. If your source is a document, [summarizing it with AI](/blog/summarize-your-own-document-with-ai/) follows the same rule: keep the source and review step visible.
+The practical benefit of story structure is control. You can review a draft scene by scene, replace a weak example without rebuilding the whole lesson, and compare future retention against videos of similar length. You can also explain the work to another person because the structure is visible. If your source is a document, [preparing a clear AI video brief](/blog/give-ai-a-video-brief-before-asking-for-a-script/) follows the same rule: keep the source and review step visible.
 
 AI can accelerate parts of production. It cannot decide what your audience needs to understand, which facts are approved, or whether an example makes an unsafe promise. Keep those decisions with a person. Start with one viewer, one problem, one example, and one payoff. Then let the visuals support that path.
 
@@ -64,6 +64,6 @@ Sources:
 ## Related
 
 - [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
-- [Summarize Your Own Document With AI](/blog/summarize-your-own-document-with-ai/)
+- [Give AI a Video Brief Before Asking for a Script](/blog/give-ai-a-video-brief-before-asking-for-a-script/)
 
 Read next: [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)

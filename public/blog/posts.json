@@ -45,6 +45,36 @@
     "imageAlt": "Silent video review with readable captions"
   },
   {
+    "slug": "ai-video-scene-changes-should-move-the-story-forward",
+    "title": "The AI Video Pattern You Cannot Unsee: New Images Without New Meaning",
+    "date": "2026-11-12",
+    "excerpt": "Learn when an AI video scene change adds meaning, evidence, or a next step, and when it is only a decorative image swap with no new idea to review.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Storytelling"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-video-scene-changes-should-move-the-story-forward/hero.jpg",
+    "imageAlt": "Decorative versus meaningful video scene changes"
+  },
+  {
+    "slug": "why-ai-video-works-better-with-story-structure",
+    "title": "Why AI Video Works Better With a Clear Story",
+    "date": "2026-11-12",
+    "excerpt": "Use a clear audience, example, and payoff to turn an AI video idea into a useful story that viewers can follow, check, remember, and act on.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/why-ai-video-works-better-with-story-structure/hero.jpg",
+    "imageAlt": "Clear story structure for AI video"
+  },
+  {
     "slug": "write-a-useful-ai-prompt-for-one-small-business-task",
     "title": "Write a Useful AI Prompt for One Small Business Task",
     "date": "2026-11-11",

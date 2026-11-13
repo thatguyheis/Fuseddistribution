@@ -11,7 +11,8 @@
     "Reviewed the exact question hook, immediate early payoff, topic-specific original vector art, reserved graphic scene, CTA, and mobile safe areas.",
     "Verified exact sound excerpts with the approved rights catalog and local audio measurement before handoff.",
     "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates.",
-    "Nick requested this exact statement hook; preserved verbatim in narration and frame-zero hero, with a scoped natural speech allowance. Reviewed downloaded Pexels stock as illustrative context and corrected scene-to-narration mapping. Final encoded verification remains required."
+    "Nick requested this exact statement hook; preserved verbatim in narration and frame-zero hero, with a scoped natural speech allowance. Reviewed downloaded Pexels stock as illustrative context and corrected scene-to-narration mapping. Final encoded verification remains required.",
+    "Nick approved blog-only publication of both November 12 drafts. Reviewed article text and generated HTML; withheld unreleased video player and replaced links to unpublished articles with the live AI video brief guide. Reel release approval remains separate."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -20,8 +21,8 @@
     "visibleText": "There’s a reason AI works well for video—and it’s not the visuals."
   },
   "artifactSha256": {
-    "verified.md": "acd64cea72df499a8c927a16d5fc088f8f59d28f5fa1b996da26310e72034eb6",
-    "index.html": "d34f3f9b6b3a4af13084f9da2bd9b873eb6631eae5dab1f11323622ad7230fdf",
+    "verified.md": "e755a3a9ee35bdea9f766a9132e1b87bfdce6a149232134a60232191cb1baf9b",
+    "index.html": "887b87161a926a6e6ab647ae79713413d52bc97855b819ef8f2be298e4a286a9",
     "meta.json": "b8d7dbca15a4970f09449200e5ba63eeb6b495b668b52caeb2172ad1924695a0",
     "research.json": "ca558beeac7781e984bf970d8ab3359ddb90e911ccaff1125a828c433f65d7cf",
     "hero.jpg": "4afa56e1f7300dc2d0800f5e3aae7ecee430bc803a9b36dfae9c63abe1293b72",
@@ -32,8 +33,8 @@
     "enrichment-plan.json": "6d9f1eafb3a5730e89917328863a31ba68dde692c212594d5ef897da60793611",
     "attention-review.json": "c89befd31df0de78573b4a48c965ef27e7d5869503e69a9a4c09c2dbabff217c",
     "presentation-plan.json": "c1ab2256fc61d9f7ff9ed9bb71b1d7a5598dbd8e96fb76981560a0e47ccd48ad",
-    "social-video.json": "2c0c2367ceef38a9e112e4794322b409723d9fb37439977d43899b76346fa59c",
+    "social-video.json": "53d67bb771334d982ac3c9eb9216a973c1bccaeaf9ac0e6efdb15d65d04f0209",
     "stock-image-sources.json": "8ae32752a474f4760e1a728327f6d4c962aa2e43019764bc48499cfddb17b090"
   },
-  "reviewed_at": "2026-11-12T15:22:51.492Z"
+  "reviewed_at": "2026-11-13T21:15:13.391379+00:00"
 }

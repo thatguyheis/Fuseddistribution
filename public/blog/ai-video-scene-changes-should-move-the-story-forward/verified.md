@@ -16,7 +16,7 @@ This test is useful because it does not require analytics or a special tool. Rea
 
 A meaningful scene change can show the next step in a process. In the estimate example, the first scene can show the incomplete request. The next can highlight the missing measurement and requested material. The next can show a draft that asks for those details without inventing a price.
 
-The images are still illustrative. They are not screenshots of a real customer account, and they do not prove that a business saved a certain number of minutes. Their purpose is to make the decision visible: identify the gap, ask for the missing fact, and review the draft. You can use the same discipline when [summarizing a document with AI](/blog/summarize-your-own-document-with-ai/).
+The images are still illustrative. They are not screenshots of a real customer account, and they do not prove that a business saved a certain number of minutes. Their purpose is to make the decision visible: identify the gap, ask for the missing fact, and review the draft. You can use the same discipline when [preparing an AI video brief](/blog/give-ai-a-video-brief-before-asking-for-a-script/).
 
 Another useful change answers a question. A scene can begin with “What is missing?” and then reveal a short checklist. A later scene can answer “What must not be invented?” with a clear list of unconfirmed price, deadline, or appointment. The change earns its place because the viewer can state what was added.
 
@@ -44,7 +44,7 @@ This kind of graphic is stronger than a fabricated dashboard because it explains
 
 A pair of good images can still make a confusing edit. Watch the transition with sound. Does the caption finish before the scene disappears? Does the next image arrive before the narration explains why? Is the graphic competing with the heading or the phone safe area?
 
-Inspect the opening as well. The approved question should be visible at frame zero and spoken in the opening. The graphic panel should have reserved space so a dynamic overlay does not cover the artwork or repeat its headline.
+Inspect the opening as well. The approved hook should be visible at frame zero and spoken in the opening. The graphic panel should have reserved space so a dynamic overlay does not cover the artwork or repeat its headline.
 
 ## Use retention as a review signal
 
