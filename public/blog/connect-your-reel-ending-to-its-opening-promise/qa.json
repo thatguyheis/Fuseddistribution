@@ -1,0 +1,38 @@
+{
+  "slug": "connect-your-reel-ending-to-its-opening-promise",
+  "score": 92,
+  "pass": true,
+  "blockers": [],
+  "mode": "codex-editorial",
+  "reviewedAt": "2026-11-12",
+  "reviewer": "Codex",
+  "review_notes": [
+    "Reviewed current primary sources and labeled fictional examples as illustrative.",
+    "Verified exact owner hook in spoken and visible opening metadata.",
+    "Reviewed original topic-specific artwork, reserved graphic scene, CTA, mobile safe areas, and exact sound-effect catalog entries.",
+    "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates."
+  ],
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": false,
+    "spokenText": "Your AI reel can look finished—and still leave viewers hanging.",
+    "visibleText": "Your AI reel can look finished—and still leave viewers hanging."
+  },
+  "artifactSha256": {
+    "verified.md": "ddf7da8d6a9b141d93ef21892b38b2f524ea10622345f454795477b083d58686",
+    "index.html": "17f9aff5423ffc3ac1894dc187f5688153e233ef9e132d02e11c4a6366d8286f",
+    "meta.json": "5eccfc827e1ebc7ae5623fd1dd8b3aecea295c5a5134998dac4674f80d9defd7",
+    "research.json": "649c459c0c11158d51f6a64de2ee4bcdc128a3b8fcd5743e73ffbf01e74bf2a6",
+    "hero.jpg": "1d5046f1d2b8050ac5994da613891653419bb1f085ffa407db5fa31b48acdc6d",
+    "photo-post.jpg": "1d5046f1d2b8050ac5994da613891653419bb1f085ffa407db5fa31b48acdc6d",
+    "reel-script.md": "0c34d3d86d22177ecfad38429b8bce3b23de928298da21d2ae0277948efcdc48",
+    "reel-data.md": "8f9db4a090b87ab02725c7840744ad10ed9152536c993fc40f029ba9b922ff8e",
+    "social-copy.json": "2efcb9226033a9813db98f09176d5ef14b6f1abbcbb01398be39ae5204d0298d",
+    "enrichment-plan.json": "0f95448e2fad4adbae9a68ddd7e0b7ed4d2c9a6b8be9dfc2fe6e2801215a6d4a",
+    "attention-review.json": "66fb844556b39cc52207f43915e1c082447317a132a7af608893cf6eb7f6f30f",
+    "presentation-plan.json": "b0a3a2e1b08e08da24d3656089b97a1b6f4e86cac110f7e2c318e4c7dc99d596",
+    "social-video.json": "80b01e488d3af86da709a12fc68df6d7387cc699ad9e4feb998caec0f7d700eb",
+    "stock-image-sources.json": "7044451b6692f9064fdbf3e46d5933648645cc33836bbf3e7da2bc24d085aa67"
+  },
+  "reviewed_at": "2026-11-12T20:30:00-08:00"
+}

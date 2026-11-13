@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-0.jpg",
+        "sha256": "1d5046f1d2b8050ac5994da613891653419bb1f085ffa407db5fa31b48acdc6d",
+        "title": "Your AI reel can look finished—and still leave viewers hanging.",
+        "eyebrow": "PROMISE CHECK",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-1.jpg",
+        "sha256": "e055018c88d366d384c5c69df9d04ce0ab5c6afab9b8db31e26c97678bd46dd7",
+        "title": "A generic close can leave the question open.",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-2.jpg",
+        "sha256": "51bef733e3a73afcf0be27de01011a0ed78643fdd0e3503916cdcc31c8350eb4",
+        "title": "Hook promise → useful payoff.",
+        "eyebrow": "MAP THE PROMISE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-3.jpg",
+        "sha256": "e733863b1a1b0cf8b64112db46463ee0e533092e1e9aef20325bde93a030dfff",
+        "title": "Show the next step, not only a logo.",
+        "eyebrow": "MAKE IT SPECIFIC",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-4.jpg",
+        "sha256": "dd5c265ccfb54ed27888cbf1f2cc0dbddeffe0371262f2eea5ed1f705ae10ea2",
+        "title": "Payoff and CTA are different jobs.",
+        "eyebrow": "ONE ACTION",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-5.jpg",
+        "sha256": "5f130a1a09cb8700439bc65663e0d61ce35747ab07760822ed35d0b8e73ded49",
+        "title": "Promise. Payoff. Action.",
+        "eyebrow": "RESERVED GRAPHIC",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/connect-your-reel-ending-to-its-opening-promise/images/scene-6.jpg",
+        "sha256": "993d826fdf33570b033915ba21680938226b0967afa85cf9e554def79ad0d98e",
+        "title": "Rewrite your next ending around one clear action.",
+        "eyebrow": "CLOSE THE LOOP",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

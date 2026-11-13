@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 5,
+      "kind": "flow",
+      "title": "Promise map",
+      "source": "Illustrative workflow supported by the article sources",
+      "takeaway": "Keep one clear through-line",
+      "rows": [
+        {
+          "label": "Opening",
+          "detail": "Name the promise"
+        },
+        {
+          "label": "Middle",
+          "detail": "Show the payoff"
+        },
+        {
+          "label": "Ending",
+          "detail": "Choose one action"
+        }
+      ]
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet transition into the first practical check"
+    },
+    {
+      "segmentIndex": 4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 2,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet emphasis when the review checklist is complete"
+    }
+  ]
+}

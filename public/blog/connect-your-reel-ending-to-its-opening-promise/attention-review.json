@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "spokenText": "Your AI reel can look finished—and still leave viewers hanging.",
+    "visibleText": "Your AI reel can look finished—and still leave viewers hanging.",
+    "spokenSeconds": 7,
+    "startsAtSeconds": 0,
+    "questionHookRequired": false,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Owner-approved exact hook visible on the hero at frame zero.",
+    "timingStatus": "Estimate pending measured Chatterbox hook preflight"
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Early payoff",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Make the problem visible",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Keep the ending specific",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Review the export",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Rewrite your next ending around one clear action.",
+    "spokenText": "Rewrite your next ending around one clear action.",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "An exact owner hook followed by an immediate practical check will make the production lesson easy to test.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare with similar length business reels after retention data matures."
+  },
+  "pass": true
+}

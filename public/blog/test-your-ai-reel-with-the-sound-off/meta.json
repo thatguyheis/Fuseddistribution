@@ -1,0 +1,33 @@
+{
+  "title": "The Silent Test: Review Your AI Reel Without Sound",
+  "slug": "test-your-ai-reel-with-the-sound-off",
+  "description": "A practical silent viewing check for opening clarity, captions, visual explanation and one clear final action.",
+  "ogDescription": "A practical silent viewing check for opening clarity, captions, visual explanation and one clear final action.",
+  "alt": "The Silent Test: Review Your AI Reel Without Sound",
+  "squareCover": true,
+  "date": "2026-11-13",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Small Business"
+  ],
+  "brand": "tech",
+  "ctaLine": "Try the silent test on your latest reel.",
+  "contentGraphic": {
+    "label": "A practical promise map",
+    "rows": [
+      {
+        "condition": "Opening",
+        "action": "Name the promise"
+      },
+      {
+        "condition": "Middle",
+        "action": "Show the payoff"
+      },
+      {
+        "condition": "Ending",
+        "action": "Choose one action"
+      }
+    ]
+  }
+}

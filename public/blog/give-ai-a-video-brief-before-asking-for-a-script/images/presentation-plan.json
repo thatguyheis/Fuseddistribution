@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-0-scene-0.jpg",
+        "sha256": "5ca607d5974f65180085b0b976ea8569ffa6f010308c448a46e4c8eec00fe1aa",
+        "weight": 1,
+        "title": "Give AI a clear video brief",
+        "eyebrow": "VIDEO BRIEF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-1-scene-1.jpg",
+        "sha256": "fd5bc99b8fae3823fdaf141f0255cf52bc066c1b3cc754b9b17eaec245f4797e",
+        "weight": 1,
+        "title": "Audience. Problem. Result. Evidence.",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-2-scene-2.jpg",
+        "sha256": "8b37c877d64d47e2da8997c8ffeb91784e59192d9695b04433417cc2048d7264",
+        "weight": 1,
+        "title": "Choose one real role.",
+        "eyebrow": "NAME THE VIEWER",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-3-scene-3.jpg",
+        "sha256": "6f35e1620e22f8cc76f2d410ea76b69a98322de80c6fde78ffbe6e8ba7424d91",
+        "weight": 1,
+        "title": "Show one fictional business task.",
+        "eyebrow": "BOUND THE PROBLEM",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-4-scene-4.jpg",
+        "sha256": "a83944c4c3660d836eeaf52fe99311e66580fa38bfb7c813b8e2e7c5ff72ef23",
+        "weight": 1,
+        "title": "Tell the script what viewers should see.",
+        "eyebrow": "SHOW THE EVIDENCE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-5-scene-5.jpg",
+        "sha256": "600205b2c7660e9ac9451e6ea98dadcfab4ab617a2c3e8d69ab384b86ca4c0c6",
+        "weight": 1,
+        "title": "Brief → script → scene.",
+        "eyebrow": "RESERVED GRAPHIC",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/give-ai-a-video-brief-before-asking-for-a-script/images/images/scene-6-scene-6.jpg",
+        "sha256": "4bdeb1ca576db98e32a54dea1e03c3e4635e0e1761c3a32c1d329360a1fbee76",
+        "weight": 1,
+        "title": "What problem should your next video solve?",
+        "eyebrow": "ONE QUESTION",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

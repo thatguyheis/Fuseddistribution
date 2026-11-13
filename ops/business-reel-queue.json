@@ -2,8 +2,9 @@
   "version": 1,
   "maxTopicsPerDay": 3,
   "slugs": [
-    "why-ai-video-works-better-with-story-structure",
-    "ai-video-scene-changes-should-move-the-story-forward"
+    "test-your-ai-reel-with-the-sound-off",
+    "give-ai-a-video-brief-before-asking-for-a-script",
+    "connect-your-reel-ending-to-its-opening-promise"
   ],
-  "targetRendersPerDay": 2
+  "targetRendersPerDay": 3
 }

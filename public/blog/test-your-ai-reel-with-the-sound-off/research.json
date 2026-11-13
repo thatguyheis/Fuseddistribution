@@ -1,0 +1,22 @@
+{
+  "slug": "test-your-ai-reel-with-the-sound-off",
+  "accessedAt": "2026-11-13",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "TikTok for Business describes a hook, body and close as a useful creative structure.",
+      "source": "https://ads.tiktok.com/business/en-US/creative-codes"
+    },
+    {
+      "id": "c2",
+      "claim": "YouTube Analytics provides key moments for audience retention and recommends reviewing moments that hold or lose attention.",
+      "source": "https://support.google.com/youtube/answer/9314415"
+    },
+    {
+      "id": "c3",
+      "claim": "WCAG includes requirements for prerecorded time-based media alternatives and captions in applicable contexts.",
+      "source": "https://www.w3.org/TR/wcag/"
+    }
+  ],
+  "notes": "All examples are fictional demonstrations. No performance, customer, or accessibility outcome is claimed."
+}

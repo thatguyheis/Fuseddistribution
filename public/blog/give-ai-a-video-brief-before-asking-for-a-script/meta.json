@@ -1,0 +1,33 @@
+{
+  "title": "Give AI a Clear Video Brief Before Asking for a Script",
+  "slug": "give-ai-a-video-brief-before-asking-for-a-script",
+  "description": "Turn a fictional business brief into a script and scene outline with one audience, one problem, one result and visible evidence.",
+  "ogDescription": "Turn a fictional business brief into a script and scene outline with one audience, one problem, one result and visible evidence.",
+  "alt": "Give AI a Clear Video Brief Before Asking for a Script",
+  "squareCover": true,
+  "date": "2026-11-13",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Small Business"
+  ],
+  "brand": "tech",
+  "ctaLine": "What problem should your next video solve?",
+  "contentGraphic": {
+    "label": "A practical promise map",
+    "rows": [
+      {
+        "condition": "Opening",
+        "action": "Name the promise"
+      },
+      {
+        "condition": "Middle",
+        "action": "Show the payoff"
+      },
+      {
+        "condition": "Ending",
+        "action": "Choose one action"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Connect Your Reel Ending to Its Opening Promise",
+  "slug": "connect-your-reel-ending-to-its-opening-promise",
+  "description": "Use a promise, payoff and one action to make an AI reel ending answer the reason the viewer started watching.",
+  "ogDescription": "Use a promise, payoff and one action to make an AI reel ending answer the reason the viewer started watching.",
+  "alt": "Connect Your Reel Ending to Its Opening Promise",
+  "squareCover": true,
+  "date": "2026-11-13",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Small Business"
+  ],
+  "brand": "tech",
+  "ctaLine": "Rewrite your next ending around one clear action.",
+  "contentGraphic": {
+    "label": "A practical promise map",
+    "rows": [
+      {
+        "condition": "Opening",
+        "action": "Name the promise"
+      },
+      {
+        "condition": "Middle",
+        "action": "Show the payoff"
+      },
+      {
+        "condition": "Ending",
+        "action": "Choose one action"
+      }
+    ]
+  }
+}

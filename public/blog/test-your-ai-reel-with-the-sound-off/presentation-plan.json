@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-0.jpg",
+        "sha256": "0c642a1dbf2df4b8e3972da3489388f6a9e7895d6e6425116487fddaa41c64eb",
+        "title": "The step that’s easy to skip? Watching your reel without sound.",
+        "eyebrow": "SILENT REVIEW",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-1.jpg",
+        "sha256": "9f4be787b5c343b81c46ec5407d9a50422b093706ff5a9877124ac2a1769bbc8",
+        "title": "Mute the draft. Check topic, steps, and final action.",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-2.jpg",
+        "sha256": "23341427d2159624f69e84a7df2d0f1c433ca8c57ae8ec1a83a4b7b2a7525200",
+        "title": "Can a viewer identify the topic?",
+        "eyebrow": "CHECK ONE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-3.jpg",
+        "sha256": "6f0cf5847c6e5b216ac5e4de10f024d605fb7a9ec246b4acf377efc3df52acf6",
+        "title": "Can a viewer follow the steps?",
+        "eyebrow": "CHECK TWO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-4.jpg",
+        "sha256": "42381356d05f7940707472f605a86298d7291915a96aa9c7f1b0bd48555eb5e1",
+        "title": "Can a viewer find the action?",
+        "eyebrow": "CHECK THREE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-5.jpg",
+        "sha256": "277aa88d875a6779ddac22ef95e0409540a0469f1c57c9e5345ba3c2967932d4",
+        "title": "Three checks, one clear pass.",
+        "eyebrow": "RESERVED GRAPHIC",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/test-your-ai-reel-with-the-sound-off/images/scene-6.jpg",
+        "sha256": "bba42006e69a2276ce28a776c89398ba59c84aab97505d693d3ad962c5476137",
+        "title": "Try the silent test on your latest reel.",
+        "eyebrow": "TRY IT",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

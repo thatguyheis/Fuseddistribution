@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "spokenText": "The step that’s easy to skip? Watching your reel without sound.",
+    "visibleText": "The step that’s easy to skip? Watching your reel without sound.",
+    "spokenSeconds": 7,
+    "startsAtSeconds": 0,
+    "questionHookRequired": false,
+    "specificViewerProblemOrBenefit": true,
+    "visibleWithoutSound": true,
+    "visual": "Owner-approved exact hook visible on the hero at frame zero.",
+    "timingStatus": "Estimate pending measured Chatterbox hook preflight"
+  },
+  "payoffBeats": [
+    {
+      "scriptHeading": "## OVERLAY: Early payoff",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Make the problem visible",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Keep the ending specific",
+      "paysOffHook": true
+    },
+    {
+      "scriptHeading": "## OVERLAY: Review the export",
+      "paysOffHook": true
+    }
+  ],
+  "cta": {
+    "onScreenText": "Try the silent test on your latest reel.",
+    "spokenText": "Try the silent test on your latest reel.",
+    "primaryAction": "comment",
+    "primaryActionCount": 1,
+    "fitsViewerValue": true
+  },
+  "hypothesis": "An exact owner hook followed by an immediate practical check will make the production lesson easy to test.",
+  "metrics": {
+    "platformMetrics": [
+      "average-watch-time",
+      "audience-retention-dips",
+      "comments-per-reach"
+    ],
+    "comparison": "Compare with similar length business reels after retention data matures."
+  },
+  "pass": true
+}

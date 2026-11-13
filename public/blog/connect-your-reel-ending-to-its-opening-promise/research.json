@@ -1,0 +1,22 @@
+{
+  "slug": "connect-your-reel-ending-to-its-opening-promise",
+  "accessedAt": "2026-11-13",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "TikTok for Business describes a hook, body and close structure with a clear CTA at the close.",
+      "source": "https://ads.tiktok.com/business/en-US/creative-codes"
+    },
+    {
+      "id": "c2",
+      "claim": "YouTube says retention top moments can be reviewed and compelling content may be introduced earlier when it appears late.",
+      "source": "https://support.google.com/youtube/answer/9314415"
+    },
+    {
+      "id": "c3",
+      "claim": "W3C describes captions and alternatives for prerecorded time-based media in its accessibility guidance.",
+      "source": "https://www.w3.org/TR/wcag/"
+    }
+  ],
+  "notes": "All examples are fictional demonstrations. No performance, customer, or accessibility outcome is claimed."
+}
