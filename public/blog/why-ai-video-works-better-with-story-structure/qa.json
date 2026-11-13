@@ -14,7 +14,8 @@
     "Nick requested this exact statement hook; preserved verbatim in narration and frame-zero hero, with a scoped natural speech allowance. Reviewed downloaded Pexels stock as illustrative context and corrected scene-to-narration mapping. Final encoded verification remains required.",
     "Nick approved blog-only publication of both November 12 drafts. Reviewed article text and generated HTML; withheld unreleased video player and replaced links to unpublished articles with the live AI video brief guide. Reel release approval remains separate.",
     "Reviewed expanded matching narration against the approved article, exact owner hook, one closing question, preserved licensed Pexels photographs, and three reserved explanatory graphics of distinct forms. Chart counts refer only to explicitly stated fictional examples. Encoded audio and visual release checks remain required.",
-    "Reviewed expanded matching narration against the approved article, exact owner hook, one closing question, preserved licensed Pexels photographs, and three reserved explanatory graphics of distinct forms. Chart counts refer only to explicitly stated fictional examples. Encoded audio and visual release checks remain required."
+    "Reviewed expanded matching narration against the approved article, exact owner hook, one closing question, preserved licensed Pexels photographs, and three reserved explanatory graphics of distinct forms. Chart counts refer only to explicitly stated fictional examples. Encoded audio and visual release checks remain required.",
+    "Reviewed matching article player configuration. Hosted media and final encoded visual/caption verification are required before deployment of the player. Narration and illustrations are unchanged."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -24,7 +25,7 @@
   },
   "artifactSha256": {
     "verified.md": "e755a3a9ee35bdea9f766a9132e1b87bfdce6a149232134a60232191cb1baf9b",
-    "index.html": "887b87161a926a6e6ab647ae79713413d52bc97855b819ef8f2be298e4a286a9",
+    "index.html": "1f95f766b99537a5f39ec7b9192deb113a7fd8afcbb7275d36ba3313ee08d6b2",
     "meta.json": "b8d7dbca15a4970f09449200e5ba63eeb6b495b668b52caeb2172ad1924695a0",
     "research.json": "ca558beeac7781e984bf970d8ab3359ddb90e911ccaff1125a828c433f65d7cf",
     "hero.jpg": "4afa56e1f7300dc2d0800f5e3aae7ecee430bc803a9b36dfae9c63abe1293b72",
@@ -35,8 +36,8 @@
     "enrichment-plan.json": "3c2e806d8b2cc3341b8638323a01af306eae525fe4ade42ba906f534ee4f0576",
     "attention-review.json": "406865a3fa4a9e1ef78028bc9ff0c3ac0c25dc456168bd561d4dc47d8026c1a1",
     "presentation-plan.json": "aa7ab77d60a7fa0e7c21e66265f6f6d0a887e6c6ecbccea1eb24c4f033a20845",
-    "social-video.json": "53d67bb771334d982ac3c9eb9216a973c1bccaeaf9ac0e6efdb15d65d04f0209",
+    "social-video.json": "8fe8ae1645ddd4edd5dcecfcdbdd34d55c1df122448c5f748bfb59042b8be2c2",
     "stock-image-sources.json": "8ae32752a474f4760e1a728327f6d4c962aa2e43019764bc48499cfddb17b090"
   },
-  "reviewed_at": "2026-11-13T21:17:44.660Z"
+  "reviewed_at": "2026-11-13T22:36:15.951367+00:00"
 }

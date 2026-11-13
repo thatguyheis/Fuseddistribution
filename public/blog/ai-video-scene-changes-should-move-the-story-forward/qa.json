@@ -13,7 +13,8 @@
     "Encoded MP4, caption, transition, final-card, hosted-byte, live-blog, and Buffer checks remain overnight delivery gates.",
     "Nick requested this exact statement hook; preserved verbatim in narration and frame-zero hero, with a scoped natural speech allowance. Reviewed downloaded Pexels stock as illustrative context and corrected scene-to-narration mapping. Final encoded verification remains required.",
     "Nick approved blog-only publication of both November 12 drafts. Reviewed article text and generated HTML; withheld unreleased video player and replaced links to unpublished articles with the live AI video brief guide. Reel release approval remains separate.",
-    "Reviewed expanded matching narration against the approved article, exact owner hook, one closing question, preserved licensed Pexels photographs, and three reserved explanatory graphics of distinct forms. Chart counts refer only to explicitly stated fictional examples. Encoded audio and visual release checks remain required."
+    "Reviewed expanded matching narration against the approved article, exact owner hook, one closing question, preserved licensed Pexels photographs, and three reserved explanatory graphics of distinct forms. Chart counts refer only to explicitly stated fictional examples. Encoded audio and visual release checks remain required.",
+    "Reviewed matching article player configuration. Hosted media and final encoded visual/caption verification are required before deployment of the player. Narration and illustrations are unchanged."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -23,7 +24,7 @@
   },
   "artifactSha256": {
     "verified.md": "ba27a8de14e2f7a8ee786126953c1c27ee90add3ef7815c143f9c172d1d10814",
-    "index.html": "f999b6b076f908ca4f4ac241712299f3e252bcfa6fc14128ac827adc7f0008dd",
+    "index.html": "d4bd392646dcf1f6811e10541d4dbba72837aa13b6e7c4aff257983aa28f0281",
     "meta.json": "db8e3baa6e159f5cf250b8e4e63bbe2f45c82323084f32322f36cab4b5a2d2bd",
     "research.json": "6753eae543028ee5b781bc0fb52c63dcd74d00b75aa692d3a4f9a6d47d067741",
     "hero.jpg": "8a20d6d2cb9c54a5dab4c1b8dee55fcab30c195bb56582ae7f102a0475598e83",
@@ -34,8 +35,8 @@
     "enrichment-plan.json": "43c4f5ade90fca8c6729d89da03af6b177a7b16bec8e581e314ff2816dc719f7",
     "attention-review.json": "9ac962097e7f48017c7e4268563f2b52182a295e3eba2fcc7cbf097be100024c",
     "presentation-plan.json": "ffff68ddd65e141797c56cd003ea6faac6ca762fb8513fbb55dfe6de4d5b8f39",
-    "social-video.json": "152b0ef913bae2e7a123f5a33abf4d0e44e48fe3bc6042f22a7f26e2c091deaf",
+    "social-video.json": "c7f9621fb1f748cc61ffea7431189325c05fae7965e3fafe489c7b73dc311844",
     "stock-image-sources.json": "21fc3410ddaee6554a97eb223ed1450c56157c350aa66827512b4ec83e2841c8"
   },
-  "reviewed_at": "2026-11-13T21:17:45.282Z"
+  "reviewed_at": "2026-11-13T22:36:16.022333+00:00"
 }

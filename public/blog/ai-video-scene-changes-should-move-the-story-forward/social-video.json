@@ -1,7 +1,9 @@
 {
   "version": 1,
-  "primaryVideo": {},
+  "primaryVideo": {
+    "url": "https://fused-reel-media.luxraycoco.workers.dev/reels/ai-video-scene-changes-should-move-the-story-forward/ai-video-scene-changes-should-move-the-story-forward.mp4"
+  },
   "platforms": {},
-  "updatedAt": "2026-11-13T21:15:13.471546+00:00",
-  "showPending": true
+  "updatedAt": "2026-11-13T22:36:15.951982+00:00",
+  "showPending": false
 }

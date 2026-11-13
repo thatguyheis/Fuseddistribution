@@ -1,7 +1,9 @@
 {
   "version": 1,
-  "primaryVideo": {},
+  "primaryVideo": {
+    "url": "https://fused-reel-media.luxraycoco.workers.dev/reels/why-ai-video-works-better-with-story-structure/why-ai-video-works-better-with-story-structure.mp4"
+  },
   "platforms": {},
-  "updatedAt": "2026-11-13T21:15:13.096608+00:00",
-  "showPending": true
+  "updatedAt": "2026-11-13T22:36:15.836248+00:00",
+  "showPending": false
 }
