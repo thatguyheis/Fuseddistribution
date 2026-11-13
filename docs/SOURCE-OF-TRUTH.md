@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 20, 2026-11-13. Owner: Nick Hughes.
+Version 21, 2026-11-13. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -156,7 +156,7 @@ Owner requests to generate now or manually authorize daytime production for the 
 | Commit | Every change to code, SOPs, plists or content is committed. Nothing lives only in the working tree overnight. |
 | Commit size | The pre-commit hook blocks over 250 files per commit and scans for secrets with gitleaks. Split large commits; never bypass with `--no-verify`. |
 | Never in git | Raw footage, renders, stock clips, archives, logs (see `.gitignore`). Secrets in any form. |
-| Push | Content commits (posts, reels metadata, sitemap, posts.json, topic history, social copy) may be pushed to `origin main` without asking (standing exception, 2026-06-10). Code, SOP, plist or config changes need Nick's explicit approval each time. Never force push. |
+| Push | Content commits (posts, reels metadata, sitemap, posts.json, topic history, social copy) may be pushed to `origin main` without asking (standing exception, 2026-06-10). Routine approved topic/slate selection and slugs-only edits to ops/business-reel-queue.json are editorial content metadata under the standing content-push exception. Code, SOP, plist and operating settings (including model, schedule, scope, limits and targets) still need Nick's explicit approval each time. Never force push. |
 | Deploy | `scripts/deploy-approved-blog.mjs`. Publish means: posts.json updated, commit, push, deploy, then `curl` the URL with `?cb=$(date +%s)` and get 200. |
 | Destructive git | Never `git reset --hard` in this repo. |
 
