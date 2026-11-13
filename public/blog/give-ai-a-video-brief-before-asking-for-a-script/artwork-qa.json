@@ -1,9 +1,10 @@
 {
   "pass": true,
-  "reviewedAt": "2026-11-13T16:29:48.837Z",
+  "reviewedAt": "2026-11-13T17:15:07.592031+00:00",
   "reviewer": "Codex",
   "profile": "business-growth-v1",
   "visualQualityVersion": 2,
-  "review": "Inspected exported 1080x1920 source contact sheet: exact hook, readable headings, reserved graphic panels, meaningful comparisons and one closing question. No decorative circle fallback. Final encoded output inspection remains required. Header dividers removed; encoded replacement review required.",
-  "heroSha256": "fe0ea22891abcaeba02244498c16e4a81e70baf6dfb8f75b5950a1e21908a8a4"
+  "review": "Inspected actual encoded opening, explanatory graphics, captions and final question at full and phone size. Exact hook preserved, no decorative target circles or headline-crossing dividers, correct counted chart labels. Final visual review and release QA pass.",
+  "heroSha256": "fe0ea22891abcaeba02244498c16e4a81e70baf6dfb8f75b5950a1e21908a8a4",
+  "encodedVideoSha256": "f7d85a7bbfb21b430dad49cf763be34fa632038793ef1b6082ddc9b60c0252b3"
 }

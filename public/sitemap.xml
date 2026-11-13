@@ -536,9 +536,27 @@
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/connect-your-reel-ending-to-its-opening-promise/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/give-ai-a-video-brief-before-asking-for-a-script/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fuseddistribution.com/blog/test-your-ai-reel-with-the-sound-off/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fuseddistribution.com/blog/write-a-useful-ai-prompt-for-one-small-business-task/</loc>

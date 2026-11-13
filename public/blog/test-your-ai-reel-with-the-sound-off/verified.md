@@ -47,7 +47,7 @@ This example review contains five checks: topic, visible next step, accurate cap
 
 This review method is an editorial example supported by the production guidance below. It is a way to organize a review, not a promise of better business results.
 
-Continue with [a clear story structure](/blog/why-ai-video-works-better-with-story-structure/) and [meaningful scene changes](/blog/ai-video-scene-changes-should-move-the-story-forward/).
+Continue with [writing a useful AI prompt](/blog/write-a-useful-ai-prompt-for-one-small-business-task/) and [guiding AI with one SOP](/blog/what-is-an-sop-and-why-ai-needs-one/).
 
 ## Sources
 
@@ -57,7 +57,7 @@ Continue with [a clear story structure](/blog/why-ai-video-works-better-with-sto
 
 ## Related
 
-- [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/)
-- [Make scene changes meaningful](/blog/ai-video-scene-changes-should-move-the-story-forward/)
+- [Build writing a useful AI prompt](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
+- [Guide AI with one SOP](/blog/what-is-an-sop-and-why-ai-needs-one/)
 
-Read next: [Build a clear story structure](/blog/why-ai-video-works-better-with-story-structure/).
+Read next: [Build writing a useful AI prompt](/blog/write-a-useful-ai-prompt-for-one-small-business-task/).

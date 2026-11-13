@@ -4,14 +4,14 @@
   "pass": true,
   "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-13T16:29:48.837Z",
+  "reviewedAt": "2026-11-13T17:15:07.592031+00:00",
   "reviewer": "Codex",
   "review_notes": [
-    "Reviewed rewritten topic-specific narration, exact approved hook, and one spoken closing question.",
-    "Three explanatory graphics use flow, comparison and count-based charts; example values are labeled and derived from the supplied examples. No audience results are invented.",
-    "Generated full-resolution scene art with reserved graphic space; removed the rejected automatic circle motif. Encoded output review remains pending.",
-    "Reviewed explicit singular and plural units for the counted example chart. Cached re-encode and encoded label check required.",
-    "Removed the decorative headline divider after encoded review found interference with three-line hooks. Narration and chart data unchanged."
+    "Reviewed primary sources, concrete topic-specific narration and honestly labeled example counts. No invented audience results.",
+    "Verified exact approved hook in source, encoded frame zero and independent speech recognition; final question is spoken and visible.",
+    "Inspected encoded graphics and captions at full resolution and phone size; target-circle filler and crossing dividers removed, singular/plural units correct.",
+    "Release READY: 118.123s; MP4 SHA256 f7d85a7bbfb21b430dad49cf763be34fa632038793ef1b6082ddc9b60c0252b3.",
+    "Verified complete hosted MP4 bytes match the approved master on Buffer media origins and the same-origin website player route; repaired internal links return HTTP 200."
   ],
   "attentionOptimizationVersion": 1,
   "hook": {
@@ -20,8 +20,8 @@
     "visibleText": "Before you ask AI for a video, give it this."
   },
   "artifactSha256": {
-    "verified.md": "cc5291271efef8a46ab18fe7ec2da1fce5e1689a9f963d7dc71d0719084380d1",
-    "index.html": "1de0ef183b891073551f75557bf681085d0679a493b15e6fee4f4ee4a1cc3c7a",
+    "verified.md": "2d9aad7a254a63840aaf3f5d92b181f5fe18ddf170e2aab70be68b705d0f72ce",
+    "index.html": "3de36e5749052850afec3aa4c1416707ceee313c3f0f6fbe6275db7ab53eb1d4",
     "meta.json": "5b9a73c66a20be5400b5072f6134c4ac629fa51a15aa3feb7002a6efbf3a2029",
     "research.json": "27f4d45603fa2eb3d1f512b5e03dfe9f1a039115048ae24534a47c41125f46c9",
     "hero.jpg": "fe0ea22891abcaeba02244498c16e4a81e70baf6dfb8f75b5950a1e21908a8a4",
@@ -35,6 +35,6 @@
     "social-video.json": "ab6b8368b69217753b00b3fdd99bdb7f85392785b3e4af86fe4e6667a7ab3fa8",
     "stock-image-sources.json": "7044451b6692f9064fdbf3e46d5933648645cc33836bbf3e7da2bc24d085aa67"
   },
-  "reviewed_at": "2026-11-13T16:29:48.837Z",
+  "reviewed_at": "2026-11-13T17:15:07.592031+00:00",
   "visualQualityVersion": 2
 }
