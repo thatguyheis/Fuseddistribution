@@ -14,19 +14,19 @@
   },
   "payoffBeats": [
     {
-      "scriptHeading": "## OVERLAY: Early payoff",
+      "scriptHeading": "## OVERLAY: Structure gives each scene a job",
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Show one example",
+      "scriptHeading": "## OVERLAY: Show one concrete example",
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Build the path",
+      "scriptHeading": "## OVERLAY: Keep the example honest",
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Review the sequence",
+      "scriptHeading": "## OVERLAY: Give each scene one job",
       "paysOffHook": true
     }
   ],
@@ -37,7 +37,7 @@
     "primaryActionCount": 1,
     "fitsViewerValue": true
   },
-  "hypothesis": "A direct question followed by a concrete story path will help viewers stay through the review step.",
+  "hypothesis": "The exact approved hook followed by a worked example and meaningful graphics may help viewers follow the lesson; evaluate against similar length videos.",
   "metrics": {
     "platformMetrics": [
       "average-watch-time",

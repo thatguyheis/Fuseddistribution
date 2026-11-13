@@ -26,11 +26,25 @@
     [
       {
         "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-1-early.jpg",
-        "sha256": "6902b7329a244c83921b69f5044e164e46e6eecf45de943f2548786348842f61",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-1-step-1.jpg",
+        "sha256": "3f8ef3f9f55e88f98057d0eb59a4e6c184f3e733849d4c6192a1a3a50292c12f",
         "weight": 1,
-        "title": "A new image is not a new idea",
+        "title": "A new picture is not a new idea",
         "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-2-step-2.jpg",
+        "sha256": "c3f1e3ab565abfdfd51553bc18e22175b779dabd1bde071cebc6612ee094b2d9",
+        "weight": 1,
+        "title": "Compare what the cut adds",
+        "eyebrow": "ILLUSTRATIVE EXAMPLE",
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true
@@ -46,61 +60,7 @@
         "sourceUrl": "https://www.pexels.com/photo/computer-and-a-laptop-with-editing-software-11063289/",
         "fit": "cover",
         "fullFrame": false
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-2-swap.jpg",
-        "sha256": "f6d41a44a4dfd8d6380803a1dd3e136c49faf88f08e52125cd16870096d149b9",
-        "weight": 1,
-        "title": "New picture, same point",
-        "eyebrow": "DECORATIVE SWAP",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-30229850.jpg",
-        "sha256": "340e23311f648c26338082a8c36c1b9f87f366c2e3ca030d4496b98b94bd70cb",
-        "weight": 0.8,
-        "title": "What does the next image explain?",
-        "eyebrow": "ILLUSTRATIVE STOCK",
-        "credit": "Jakub Zerdzicki / Pexels",
-        "sourceUrl": "https://www.pexels.com/photo/professional-video-editing-workspace-with-keyboard-30229850/",
-        "fit": "cover",
-        "fullFrame": false
       },
-      {
-        "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-3-question.jpg",
-        "sha256": "a6c729c9395ab6f848604b0dbe250f1f5bb8cf7aad00b9f4738bfab96964d869",
-        "weight": 1,
-        "title": "Make the next scene answer something",
-        "eyebrow": "PURPOSEFUL CHANGE",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
-      }
-    ],
-    [
-      {
-        "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-4-timeline.jpg",
-        "sha256": "70f75be3662a2b8fec1beee2b92c96db065935c7ab717bd6602ef96f2fac11d1",
-        "weight": 1,
-        "title": "Every cut should move the idea",
-        "eyebrow": "CHECK THE SEQUENCE",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true,
-        "reservedGraphic": true
-      }
-    ],
-    [
       {
         "type": "photo",
         "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-8386687.jpg",
@@ -112,31 +72,72 @@
         "sourceUrl": "https://www.pexels.com/photo/sticky-notes-scattered-on-white-desk-8386687/",
         "fit": "cover",
         "fullFrame": false
-      },
-      {
-        "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-5-review.jpg",
-        "sha256": "44adb888652938e913eb62468736b98f6bc24ec50dde5465ef33d6a22b4d4026",
-        "weight": 1,
-        "title": "Watch the transition with sound",
-        "eyebrow": "REVIEW THE CUT",
-        "credit": "Fused original vector graphic",
-        "fit": "cover",
-        "fullFrame": true
       }
     ],
     [
       {
         "type": "photo",
-        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/scene-6-cta.jpg",
-        "sha256": "5d1eb1bb03a7b68df105b789cbd7058c3bbd00f3918ffe8d9dc6a27fc07fa53a",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-3-step-3.jpg",
+        "sha256": "eaca79b4ecfb640db82c5d8e01888180511f7cf3971e83f617f935d9f2bbfa56",
         "weight": 1,
-        "title": "Will your next scene add meaning?",
-        "eyebrow": "SAVE THIS CHECK",
+        "title": "Name the missing information",
+        "eyebrow": "SCENE TEST",
         "credit": "Fused original vector graphic",
         "fit": "cover",
         "fullFrame": true,
         "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-4-step-4.jpg",
+        "sha256": "32ca533a31adc7de7047dbc23685482e1095387e971099ccf2505c58c834e562",
+        "weight": 1,
+        "title": "Show the next step",
+        "eyebrow": "WORKED COMPARISON",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-5-step-5.jpg",
+        "sha256": "3250b741b1efaad67d21b6f9393def97783dfd27427fdb88520723f48259e465",
+        "weight": 1,
+        "title": "Review the cut",
+        "eyebrow": "FINAL REVIEW",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      },
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/images/pexels-30229850.jpg",
+        "sha256": "340e23311f648c26338082a8c36c1b9f87f366c2e3ca030d4496b98b94bd70cb",
+        "weight": 0.8,
+        "title": "What does the next image explain?",
+        "eyebrow": "ILLUSTRATIVE STOCK",
+        "credit": "Jakub Zerdzicki / Pexels",
+        "sourceUrl": "https://www.pexels.com/photo/professional-video-editing-workspace-with-keyboard-30229850/",
+        "fit": "cover",
+        "fullFrame": false
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-6-cta.jpg",
+        "sha256": "93984182421bab22741e5e6e71afaaf2fc658c387e765ddf0b6017cb5528dca8",
+        "weight": 1,
+        "title": "Will your next scene add meaning?",
+        "eyebrow": "YOUR NEXT REEL",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
       }
     ]
   ]

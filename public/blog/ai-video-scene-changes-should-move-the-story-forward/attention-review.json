@@ -14,15 +14,15 @@
   },
   "payoffBeats": [
     {
-      "scriptHeading": "## OVERLAY: Early payoff",
+      "scriptHeading": "## OVERLAY: A new picture is not a new idea",
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: New picture, same point",
+      "scriptHeading": "## OVERLAY: Compare what the cut adds",
       "paysOffHook": true
     },
     {
-      "scriptHeading": "## OVERLAY: Ask what changed",
+      "scriptHeading": "## OVERLAY: Name the missing information",
       "paysOffHook": true
     },
     {
@@ -37,7 +37,7 @@
     "primaryActionCount": 1,
     "fitsViewerValue": true
   },
-  "hypothesis": "A contrast between decorative swaps and purposeful steps will make the scene test easy to remember.",
+  "hypothesis": "The exact approved hook followed by a worked example and meaningful graphics may help viewers follow the lesson; evaluate against similar length videos.",
   "metrics": {
     "platformMetrics": [
       "average-watch-time",

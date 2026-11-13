@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-0-hook.jpg",
+        "sha256": "205a94d49d3f2467ec91d5d0e89d27b68ec2a57a6fb03af16ed6a52dfc278c21",
+        "weight": 1,
+        "title": "Once you notice this pattern in AI videos, you can’t unsee it.",
+        "eyebrow": "AI VIDEO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-1-step-1.jpg",
+        "sha256": "3f8ef3f9f55e88f98057d0eb59a4e6c184f3e733849d4c6192a1a3a50292c12f",
+        "weight": 1,
+        "title": "A new picture is not a new idea",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-2-step-2.jpg",
+        "sha256": "c3f1e3ab565abfdfd51553bc18e22175b779dabd1bde071cebc6612ee094b2d9",
+        "weight": 1,
+        "title": "Compare what the cut adds",
+        "eyebrow": "ILLUSTRATIVE EXAMPLE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-3-step-3.jpg",
+        "sha256": "eaca79b4ecfb640db82c5d8e01888180511f7cf3971e83f617f935d9f2bbfa56",
+        "weight": 1,
+        "title": "Name the missing information",
+        "eyebrow": "SCENE TEST",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-4-step-4.jpg",
+        "sha256": "32ca533a31adc7de7047dbc23685482e1095387e971099ccf2505c58c834e562",
+        "weight": 1,
+        "title": "Show the next step",
+        "eyebrow": "WORKED COMPARISON",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-5-step-5.jpg",
+        "sha256": "3250b741b1efaad67d21b6f9393def97783dfd27427fdb88520723f48259e465",
+        "weight": 1,
+        "title": "Review the cut",
+        "eyebrow": "FINAL REVIEW",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/ai-video-scene-changes-should-move-the-story-forward/matching-art/images/scene-6-cta.jpg",
+        "sha256": "93984182421bab22741e5e6e71afaaf2fc658c387e765ddf0b6017cb5528dca8",
+        "weight": 1,
+        "title": "Will your next scene add meaning?",
+        "eyebrow": "YOUR NEXT REEL",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

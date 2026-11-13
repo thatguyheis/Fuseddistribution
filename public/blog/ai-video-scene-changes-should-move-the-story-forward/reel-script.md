@@ -9,29 +9,29 @@ content-kind: educate
 Narration: Once you notice this pattern in AI videos, you can’t unsee it.
 
 ---
-## OVERLAY: Early payoff
-**Duration:** 20s
-Narration: Changing the picture does not always advance the explanation. A phone, a desk, and a smiling person can look busy while the same broad claim stays still.
+## OVERLAY: A new picture is not a new idea
+**Duration:** 22s
+Narration: Changing the picture does not always advance the explanation. A phone, a desk, and a smiling person can look busy while the same broad claim stays still. Before adding another image, name the question this scene should answer. A useful sequence moves from a problem to a decision, then to an action the viewer can understand. The pictures support that path instead of replacing it.
 
 ---
-## OVERLAY: New picture, same point
-**Duration:** 20s
-Narration: A decorative swap changes appearance but adds no new idea. Use a simple test at every cut: what was visible before, what is visible now, and what fact or step changed.
+## OVERLAY: Compare what the cut adds
+**Duration:** 22s
+Narration: Imagine a fictional reel about replying to an incomplete estimate request. One version cuts between office photographs while repeating that AI saves time. Another shows the request, highlights a missing measurement, and reveals a draft asking for it. Both versions change images. Only the second makes the next step visible. These stock photos provide context; they are not evidence of a real customer result.
 
 ---
-## OVERLAY: Ask what changed
-**Duration:** 20s
-Narration: If the third answer is blank, the scene may be decorative. A purposeful change can answer a question, add evidence, demonstrate a step, or resolve confusion.
+## OVERLAY: Name the missing information
+**Duration:** 22s
+Narration: Use a simple test at every cut. What was visible before? What is visible now? What fact or step changed? If the third answer is blank, the change may be decorative. That is not always wrong: a quiet image can give a sentence room to land. But atmosphere should not be confused with instruction. Give the viewer something new they can explain in their own words.
 
 ---
 ## OVERLAY: Show the next step
-**Duration:** 20s
-Narration: For an incomplete estimate request, move from the request, to the missing measurement, to a reviewed draft that does not invent a price. Each scene adds something the viewer can name.
+**Duration:** 22s
+Narration: For the estimate example, build three purposeful steps: show the request, identify the missing measurement, then show a reviewed reply that asks for it without inventing a price. Compare that with three picture changes that repeat one claim. The chart counts distinct ideas in this fictional example: one repeated claim versus three steps. It does not predict retention, sales, or how a real audience will respond.
 
 ---
 ## OVERLAY: Review the cut
-**Duration:** 20s
-Narration: Watch the transition with sound. Check whether the caption finishes, whether the next image arrives at the right moment, and whether the graphic covers the heading. YouTube retention can show where to inspect later, but a dip does not prove its cause.
+**Duration:** 22s
+Narration: Now watch the actual transition with sound. Does the caption finish before the scene disappears? Does the next image arrive when the narration explains it? Keep graphics clear of the heading and the social controls. Watch again without sound to check whether the method remains visible. Later, use retention dips as clues for inspection, not proof of a cause. Save the scene test and use it before your next export.
 
 ---
 ## QUESTION

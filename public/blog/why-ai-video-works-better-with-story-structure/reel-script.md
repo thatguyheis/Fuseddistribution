@@ -9,29 +9,29 @@ content-kind: educate
 Narration: There’s a reason AI works well for video—and it’s not the visuals.
 
 ---
-## OVERLAY: Early payoff
-**Duration:** 20s
-Narration: It is not only the visuals. AI helps when a clear audience, useful example, and payoff tell each scene what job to do. Start with one viewer and one problem.
+## OVERLAY: Structure gives each scene a job
+**Duration:** 22s
+Narration: AI helps when a clear audience, useful example, and payoff tell each scene what job to do. Start with one viewer and one problem. Instead of asking for a video about AI, choose a repair shop owner who needs to turn an incomplete estimate request into a useful reply. Now the story has a decision to explain, rather than a collection of pictures.
 
 ---
-## OVERLAY: Show one example
-**Duration:** 20s
-Narration: Give the viewer one concrete example. Use a fictional request if real customer details are involved. Show what is known, what is missing, and what the next decision should be. The example makes the lesson checkable.
+## OVERLAY: Show one concrete example
+**Duration:** 22s
+Narration: Use a fictional request: can you estimate the front door repair? The message has no measurement, material, or requested date. Show those missing details on screen. Then show a draft asking for the information without inventing a price. Keep the same request throughout the reel so the viewer spends attention learning the method instead of learning a different example every few seconds.
 
 ---
-## OVERLAY: Keep it honest
-**Duration:** 20s
-Narration: Keep the example stable while the lesson develops. Do not turn a fictional demonstration into a customer result. Label conceptual graphics and keep unsupported numbers out of the story.
+## OVERLAY: Keep the example honest
+**Duration:** 22s
+Narration: Keep that demonstration honest. A fictional request illustrates a process; it is not proof that a customer saved time or earned money. Label it as an example. Separate the information you know from what someone still needs to confirm. This simple comparison gives the viewer a practical review rule: ask for the missing fact before making a commitment in the reply.
 
 ---
-## OVERLAY: Build the path
-**Duration:** 20s
-Narration: Then give the story a path: audience, example, method, check, and takeaway. A new picture should introduce a question, add evidence, demonstrate a step, or clarify the next action. If it only changes the background, it may be decoration.
+## OVERLAY: Give each scene one job
+**Duration:** 22s
+Narration: Give each scene a job: identify the audience, show the request, demonstrate the method, and check the result. In this worked example, one vague instruction becomes four explicit scene jobs. The bars count those instructions, not views or performance. A new image earns its place when it adds a step, evidence, or an answer that the viewer can name after the cut.
 
 ---
 ## OVERLAY: Review the sequence
-**Duration:** 20s
-Narration: Watch the sequence with the narration. Check names, dates, prices, links, and commitments against the source. Use a flow diagram when it clarifies the steps, and label fictional examples as illustrative. YouTube retention reports can show where to inspect, but they do not prove why a viewer stayed or left.
+**Duration:** 22s
+Narration: Finally, watch the sequence with the narration. Read the captions and check names, dates, prices, and promises against the source. Ask whether each image actually shows the point being spoken. Keep the useful explanation near the beginning. Retention reports can tell you where to inspect later, but they do not prove why somebody stayed or left. Start with the story, then improve the pictures.
 
 ---
 ## QUESTION

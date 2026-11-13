@@ -1,1 +1,86 @@
-{"version":1,"graphics":[{"segmentIndex":4,"kind":"flow","title":"A clear story path","source":"Illustrative workflow supported by TikTok Creative Codes and the article sources","takeaway":"Give each scene a job","rows":[{"label":"Audience","detail":"Name one viewer"},{"label":"Example","detail":"Show one task"},{"label":"Payoff","detail":"Answer the question"}]}],"soundEffects":[{"segmentIndex":1,"file":"youtube-open-and-close-window.mp3","sourceStartSeconds":0.4,"durationSeconds":0.35,"purpose":"Soft accent as the audience card appears"},{"segmentIndex":5,"file":"youtube-cartoon-metal-thunk.mp3","sourceStartSeconds":2,"durationSeconds":0.35,"purpose":"Quiet emphasis as the review checklist appears"}]}
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 1,
+      "kind": "flow",
+      "title": "Start with a useful story",
+      "rows": [
+        {
+          "label": "Viewer",
+          "detail": "Repair shop owner"
+        },
+        {
+          "label": "Problem",
+          "detail": "Incomplete estimate request"
+        },
+        {
+          "label": "Payoff",
+          "detail": "A reviewable reply"
+        }
+      ],
+      "takeaway": "Define the decision before the pictures",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    },
+    {
+      "segmentIndex": 3,
+      "kind": "table",
+      "title": "An honest worked example",
+      "rows": [
+        {
+          "label": "Known",
+          "detail": "A repair was requested"
+        },
+        {
+          "label": "Missing",
+          "detail": "Measurement, material, date"
+        },
+        {
+          "label": "Next step",
+          "detail": "Ask before promising"
+        }
+      ],
+      "takeaway": "An illustration is not a customer result",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    },
+    {
+      "segmentIndex": 4,
+      "kind": "bar",
+      "title": "Instructions in this example",
+      "unit": "jobs",
+      "unitSingular": "job",
+      "period": "Illustrative scene planning comparison",
+      "rows": [
+        {
+          "label": "Vague request",
+          "detail": "Make a video about AI",
+          "value": 1
+        },
+        {
+          "label": "Scene jobs",
+          "detail": "Audience, request, method, check",
+          "value": 4
+        }
+      ],
+      "takeaway": "Counts instructions, not audience results",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft accent as the audience card appears"
+    },
+    {
+      "segmentIndex": 5,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 2,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet emphasis as the review checklist appears"
+    }
+  ],
+  "visualQualityVersion": 2
+}

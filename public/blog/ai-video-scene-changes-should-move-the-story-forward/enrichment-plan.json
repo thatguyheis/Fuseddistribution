@@ -1,1 +1,86 @@
-{"version":1,"graphics":[{"segmentIndex":4,"kind":"table","title":"Decorative or meaningful?","source":"Illustrative comparison described in the article; not measured audience data","takeaway":"Name what the cut adds","rows":[{"label":"Decorative","detail":"New picture, same point"},{"label":"Meaningful","detail":"Adds a step or answer"}]}],"soundEffects":[{"segmentIndex":1,"file":"youtube-open-and-close-window.mp3","sourceStartSeconds":0.4,"durationSeconds":0.35,"purpose":"Soft accent as the contrast card appears"},{"segmentIndex":5,"file":"youtube-cartoon-metal-thunk.mp3","sourceStartSeconds":2,"durationSeconds":0.35,"purpose":"Quiet emphasis as the transition checklist appears"}]}
+{
+  "version": 1,
+  "graphics": [
+    {
+      "segmentIndex": 1,
+      "kind": "flow",
+      "title": "Move the explanation forward",
+      "rows": [
+        {
+          "label": "Problem",
+          "detail": "What needs an answer?"
+        },
+        {
+          "label": "Decision",
+          "detail": "What changed at this cut?"
+        },
+        {
+          "label": "Action",
+          "detail": "What happens next?"
+        }
+      ],
+      "takeaway": "The next image should add meaning",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    },
+    {
+      "segmentIndex": 3,
+      "kind": "table",
+      "title": "The three question scene test",
+      "rows": [
+        {
+          "label": "Before",
+          "detail": "What was visible?"
+        },
+        {
+          "label": "After",
+          "detail": "What is visible now?"
+        },
+        {
+          "label": "Change",
+          "detail": "What fact or step was added?"
+        }
+      ],
+      "takeaway": "A blank change needs a clearer job",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    },
+    {
+      "segmentIndex": 4,
+      "kind": "bar",
+      "title": "Distinct ideas in this example",
+      "unit": "ideas",
+      "unitSingular": "idea",
+      "period": "Fictional estimate reply comparison",
+      "rows": [
+        {
+          "label": "Picture swaps",
+          "detail": "One broad claim repeated",
+          "value": 1
+        },
+        {
+          "label": "Useful sequence",
+          "detail": "Request, missing fact, reply",
+          "value": 3
+        }
+      ],
+      "takeaway": "Counts ideas, not predicted retention",
+      "source": "Illustrative workflow and counts from the approved article examples; not audience statistics"
+    }
+  ],
+  "soundEffects": [
+    {
+      "segmentIndex": 1,
+      "file": "youtube-open-and-close-window.mp3",
+      "sourceStartSeconds": 0.4,
+      "durationSeconds": 0.35,
+      "purpose": "Soft accent as the contrast card appears"
+    },
+    {
+      "segmentIndex": 5,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 2,
+      "durationSeconds": 0.35,
+      "purpose": "Quiet emphasis as the transition checklist appears"
+    }
+  ],
+  "visualQualityVersion": 2
+}
