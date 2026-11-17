@@ -1,0 +1,13 @@
+{
+  "slug": "nextjs-env-file-public-browser-variables",
+  "blog_url": "https://fuseddistribution.com/blog/nextjs-env-file-public-browser-variables/",
+  "discussion_question": "Your API key is hidden in .env. Why can visitors still see it?",
+  "reel": {
+    "x": "Your API key is hidden in .env. Why can visitors still see it? https://fuseddistribution.com/blog/nextjs-env-file-public-browser-variables/",
+    "instagram": "Your API key is hidden in .env. Why can visitors still see it? Read the explanation at fuseddistribution.com.",
+    "youtube": "Your API key is hidden in .env. Why can visitors still see it? https://fuseddistribution.com/blog/nextjs-env-file-public-browser-variables/"
+  },
+  "article": {
+    "x": "Your .env File Does Not Make a Browser Variable Secret https://fuseddistribution.com/blog/nextjs-env-file-public-browser-variables/"
+  }
+}

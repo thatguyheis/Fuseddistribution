@@ -1,0 +1,153 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "nextjs-env-file-public-browser-variables",
+  "id": "T-04",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "generationRequest": "do 2 and 3",
+    "publicationRequest": "publish blog, and post to buffer today"
+  },
+  "approvedHook": "Your API key is hidden in .env. Why can visitors still see it?",
+  "approvedCta": "Check which variables your website sends to visitors.",
+  "narration": [
+    "Your API key is hidden in .env. Why can visitors still see it?",
+    "I built a Next.js example with dummy values. No real credentials or customer data were used.",
+    "One variable used the public prefix. The other stayed server only. I inspected the built browser JavaScript.",
+    "The public marker appeared in a browser file. The server marker did not appear in the browser files I checked.",
+    "In Next.js, the public prefix asks the build to include that value in code sent to visitors.",
+    "A private credential behind that public name would not stay secret. Visitors receive the browser code.",
+    "I keep private credentials on the server and send the browser only what the feature needs.",
+    "That does not replace authorization checks. Moving a key does not automatically secure a server endpoint.",
+    "So the filename is not the boundary. What matters is where the value ends up.",
+    "Check which variables your website sends to visitors."
+  ],
+  "scriptSha256": "e5959dfdd4f64fa67932105c5e25a93c83031d7ec0e5e9dce7a08a55f437d633",
+  "sha256": "e16f83f9cbc7da1f40c7ac31c7df0175ad47221a25af28a5f2f8fa815232303f",
+  "seconds": 63.0,
+  "bytes": 8424230,
+  "lufs": -17.74,
+  "truePeakDb": -1.4,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 25.966666666666665,
+      "meanAbsolutePixelError": 2.5516
+    },
+    {
+      "seconds": 27.133333333333333,
+      "meanAbsolutePixelError": 2.5007
+    },
+    {
+      "seconds": 32.03333333333333,
+      "meanAbsolutePixelError": 2.1175
+    },
+    {
+      "seconds": 34.86666666666667,
+      "meanAbsolutePixelError": 0.8458
+    }
+  ],
+  "visualReview": {
+    "sha256": "e16f83f9cbc7da1f40c7ac31c7df0175ad47221a25af28a5f2f8fa815232303f",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-04",
+      "segment": 1,
+      "heard": "Your A -P -I key is hidden in .env. Why can visitors still see it?",
+      "expected": "Your API key is hidden in .env. Why can visitors still see it?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 2,
+      "heard": "I built the next JS example with dummy values. No real credentials or customer data were used.",
+      "expected": "I built a Next.js example with dummy values. No real credentials or customer data were used.",
+      "score": 0.9375,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 3,
+      "heard": "One variable used the public prefix. The other stayed server only. I inspected the built browser JavaScript.",
+      "expected": "One variable used the public prefix. The other stayed server only. I inspected the built browser JavaScript.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 4,
+      "heard": "The public marker appeared in a browser file. The server marker did not appear in the browser files I checked.",
+      "expected": "The public marker appeared in a browser file. The server marker did not appear in the browser files I checked.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 5,
+      "heard": "In Next .js, the public prefix asks the build to include that value in code sent to visitors.",
+      "expected": "In Next.js, the public prefix asks the build to include that value in code sent to visitors.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 6,
+      "heard": "A private credential behind that public name would not stay secret. Visitors receive the browser code.",
+      "expected": "A private credential behind that public name would not stay secret. Visitors receive the browser code.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 7,
+      "heard": "I keep private credentials on the server and send the browser only what the feature needs.",
+      "expected": "I keep private credentials on the server and send the browser only what the feature needs.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 8,
+      "heard": "That does not replace authorization checks. Moving a key does not automatically secure a server endpoint.",
+      "expected": "That does not replace authorization checks. Moving a key does not automatically secure a server endpoint.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 9,
+      "heard": "So the file name is not the boundary. What matters is where the value ends up.",
+      "expected": "So the filename is not the boundary. What matters is where the value ends up.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-04",
+      "segment": 10,
+      "heard": "Check which variables your website sends to visitors.",
+      "expected": "Check which variables your website sends to visitors.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "997320178998088f82d5723e7ea6e536086870790782c8f0a0b1f4d8889dc58d",
+  "createdAt": "2026-11-17T21:14:57.438633+00:00"
+}

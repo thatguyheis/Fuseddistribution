@@ -1,0 +1,32 @@
+{
+  "reviewedAt": "2026-11-17T21:14:57.438633+00:00",
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets",
+      "checkedDate": "2026-11-17"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "checkedDate": "2026-11-17"
+    },
+    {
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+      "checkedDate": "2026-11-17"
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/environment-variables",
+      "checkedDate": "2026-11-17"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "6e49089ca2f0bf3e9a2849b8816a9e58b9bff4085068ccb882e21a3a639e49fc",
+    "reelSha256": "a9c17628d288476c9cf5667ef5c203a6a5dd5a5f41b755ce6c99df0c1f9ae0fa",
+    "note": "Dummy markers only for Next.js. GitHub example is configuration review, not an executed workflow or security guarantee."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Recorded local example only"
+    }
+  ]
+}

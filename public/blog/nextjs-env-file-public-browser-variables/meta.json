@@ -1,0 +1,28 @@
+{
+  "title": "Your .env File Does Not Make a Browser Variable Secret",
+  "slug": "nextjs-env-file-public-browser-variables",
+  "description": "Learn which Next.js environment variables reach browser bundles, inspect a real build with dummy values, and keep server credentials out of client code.",
+  "ogDescription": "Your .env File Does Not Make a Browser Variable Secret.",
+  "alt": "Next.js build compares browser environment markers",
+  "date": "2026-11-17",
+  "tags": [
+    "Security",
+    "Development",
+    "AI Tools"
+  ],
+  "brand": "tech",
+  "ctaLine": "Your API key is hidden in .env. Why can visitors still see it?",
+  "contentGraphic": {
+    "label": "One local teaching example",
+    "rows": [
+      {
+        "condition": "Browser bundle",
+        "action": "Inspect emitted JavaScript with dummy markers"
+      },
+      {
+        "condition": "Private credential",
+        "action": "Keep it on the server and review responses"
+      }
+    ]
+  }
+}

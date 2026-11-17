@@ -1,5 +1,35 @@
 [
   {
+    "slug": "github-secrets-workflow-code-access",
+    "title": "GitHub Secrets: Check Which Workflow Code Receives the Value",
+    "date": "2026-11-17",
+    "excerpt": "Check which GitHub Actions steps receive secrets, review token permissions and pinned action references, and understand what a local workflow review proves.",
+    "tags": [
+      "Security",
+      "Development",
+      "AI Tools"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/github-secrets-workflow-code-access/hero.jpg",
+    "imageAlt": "GitHub workflow checks permissions and actions"
+  },
+  {
+    "slug": "nextjs-env-file-public-browser-variables",
+    "title": "Your .env File Does Not Make a Browser Variable Secret",
+    "date": "2026-11-17",
+    "excerpt": "Learn which Next.js environment variables reach browser bundles, inspect a real build with dummy values, and keep server credentials out of client code.",
+    "tags": [
+      "Security",
+      "Development",
+      "AI Tools"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/nextjs-env-file-public-browser-variables/hero.jpg",
+    "imageAlt": "Next.js build compares browser environment markers"
+  },
+  {
     "slug": "ffprobe-check-mp4-container-video-audio",
     "title": "Use ffprobe to Check What an MP4 Contains",
     "date": "2026-11-17",

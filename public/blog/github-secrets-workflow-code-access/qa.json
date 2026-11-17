@@ -1,0 +1,28 @@
+{
+  "slug": "github-secrets-workflow-code-access",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-17T21:15:32.953772+00:00",
+  "review_notes": [
+    "Read the full article and checked its scope against approved narration and recorded evidence.",
+    "Measured charts describe only the isolated dummy Next.js build or the local GitHub YAML review; neither is represented as a production security audit.",
+    "Inspected the hero artwork and retained the encoded-frame, speech, caption and measured media review bound to the exact MP4 hash.",
+    "Article lint and qa-local passed. Nick authorized publishing both blogs and posting the reviewed reels to Buffer today."
+  ],
+  "artifactSha256": {
+    "verified.md": "77f0e13f79bdbd8119fc64b644253b06f23f75145e0a34fd76c76fee2b2248fe",
+    "index.html": "02978dfab627b3a3b904527339dc5c8e2cad3223f36081c0be9879744fec8653",
+    "meta.json": "75a8c3b718d6efbe737665d1e525df886d41b1d50a567082a20cc0d7b6e50beb",
+    "research.json": "e55eaed2a2a2e88aa0f6f140fc639e894749d164692e9615aa46ddd1143bd5ce",
+    "hero.jpg": "fb6ce914bcb59ec8219fb64f13ec71ea47f48dc52b5dc19e7fe7de7602333a70",
+    "photo-post.jpg": "877c9e55dbaed1769b11dd4ed448b232f088a7d1cea82d548d564fef09a04266",
+    "reel-script.md": "bdd2ac7ef3c140cecb2b5406f22685d8c5223bb61def8558a919f12ba9d89128",
+    "reel-data.md": "bff5807307acb89efff9f05132fd215cf6ebcaa574356cf409c32007f22f7263",
+    "social-copy.json": "772e149cae9f9f76de2043f769570d8e03234e1ee5a40a2d7926e3d7d4ee58ac",
+    "social-video.json": "73588cd499aaf25ace72a3d21941a3e150e1479deb926f7d48f3411ed84c1c56",
+    "images/evidence.jpg": "09d526bd9989b050e1ff73eb51e2a6eade34469173e71381b0bc5302b859ba51",
+    "images/measured-chart.png": "d8ad4f438daf94014b1bbdf7b6961db446d5ce5316485dfacaa8d08fa19700eb"
+  }
+}

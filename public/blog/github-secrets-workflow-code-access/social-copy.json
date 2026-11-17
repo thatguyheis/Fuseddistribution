@@ -1,0 +1,13 @@
+{
+  "slug": "github-secrets-workflow-code-access",
+  "blog_url": "https://fuseddistribution.com/blog/github-secrets-workflow-code-access/",
+  "discussion_question": "Your API key is stored in GitHub Secrets. Which code can use it?",
+  "reel": {
+    "x": "Your API key is stored in GitHub Secrets. Which code can use it? https://fuseddistribution.com/blog/github-secrets-workflow-code-access/",
+    "instagram": "Your API key is stored in GitHub Secrets. Which code can use it? Read the explanation at fuseddistribution.com.",
+    "youtube": "Your API key is stored in GitHub Secrets. Which code can use it? https://fuseddistribution.com/blog/github-secrets-workflow-code-access/"
+  },
+  "article": {
+    "x": "GitHub Secrets: Check Which Workflow Code Receives the Value https://fuseddistribution.com/blog/github-secrets-workflow-code-access/"
+  }
+}

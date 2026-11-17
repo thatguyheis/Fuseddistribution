@@ -334,3 +334,5 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 - python-find-missing-approval-file - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
 - chatterbox-reuse-audio-check-inputs - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
 - ffprobe-check-mp4-container-video-audio - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
+- nextjs-env-file-public-browser-variables - Nick approved manual security lesson and matching blog and Buffer publication. Brand: tech.
+- github-secrets-workflow-code-access - Nick approved manual security lesson and matching blog and Buffer publication. Brand: tech.

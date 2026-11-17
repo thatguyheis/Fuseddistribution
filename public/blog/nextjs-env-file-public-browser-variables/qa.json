@@ -1,0 +1,28 @@
+{
+  "slug": "nextjs-env-file-public-browser-variables",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-17T21:15:32.951328+00:00",
+  "review_notes": [
+    "Read the full article and checked its scope against approved narration and recorded evidence.",
+    "Measured charts describe only the isolated dummy Next.js build or the local GitHub YAML review; neither is represented as a production security audit.",
+    "Inspected the hero artwork and retained the encoded-frame, speech, caption and measured media review bound to the exact MP4 hash.",
+    "Article lint and qa-local passed. Nick authorized publishing both blogs and posting the reviewed reels to Buffer today."
+  ],
+  "artifactSha256": {
+    "verified.md": "dfeff2928304975ef1dde200d087b04d29593884053e2916c59056eb72fa5d15",
+    "index.html": "791bfda516ac2edb64be11e990940242daf3e20ccad2899137b7fb664acb3a29",
+    "meta.json": "6c4c02b08861430edb0cdaff5b4b425dec02ac04e56747cee5b774551366b045",
+    "research.json": "76868310a7df03c21401907a9ff641a89958c667203bff9277e7d7f7b864e3c9",
+    "hero.jpg": "c63f2a21b9be0c5a2cc7349e13b1f82c278ca6df8044090510577c1e41cf885c",
+    "photo-post.jpg": "eb385bb94ad1d39cd954dced7737e466da95f796877abc313d22a14de271585a",
+    "reel-script.md": "e5959dfdd4f64fa67932105c5e25a93c83031d7ec0e5e9dce7a08a55f437d633",
+    "reel-data.md": "31287d750451f8e0833b842d460d9b5f4c8704e866ba7f9f3096c9b0fb78ff4f",
+    "social-copy.json": "a5886d6626ace54ceaba80ddba77d8992921f9836091e74fb5668b337d2c34d6",
+    "social-video.json": "b82965529c6afebdc18099a642ffb6efc044dd68e94d3a31a76a9f1e53119b7b",
+    "images/evidence.jpg": "7bbb1f19b4e541f8fd789a88afe412d81c2f8444725d70186056311e3a235f63",
+    "images/measured-chart.png": "e96a34fc53ce4539df478265b51667ce8961e9227d6d21abe073c04f72b5d1ca"
+  }
+}

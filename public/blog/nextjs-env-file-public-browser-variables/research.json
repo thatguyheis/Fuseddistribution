@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-17T21:14:57.438633+00:00",
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+      "checkedDate": "2026-11-17"
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/environment-variables",
+      "checkedDate": "2026-11-17"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "997320178998088f82d5723e7ea6e536086870790782c8f0a0b1f4d8889dc58d",
+    "reelSha256": "e16f83f9cbc7da1f40c7ac31c7df0175ad47221a25af28a5f2f8fa815232303f",
+    "note": "Dummy markers only for Next.js. GitHub example is configuration review, not an executed workflow or security guarantee."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Recorded local example only"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "GitHub Secrets: Check Which Workflow Code Receives the Value",
+  "slug": "github-secrets-workflow-code-access",
+  "description": "Check which GitHub Actions steps receive secrets, review token permissions and pinned action references, and understand what a local workflow review proves.",
+  "ogDescription": "GitHub Secrets: Check Which Workflow Code Receives the Value.",
+  "alt": "GitHub workflow checks permissions and actions",
+  "date": "2026-11-17",
+  "tags": [
+    "Security",
+    "Development",
+    "AI Tools"
+  ],
+  "brand": "tech",
+  "ctaLine": "Your API key is stored in GitHub Secrets. Which code can use it?",
+  "contentGraphic": {
+    "label": "One local teaching example",
+    "rows": [
+      {
+        "condition": "Workflow step",
+        "action": "Review code before passing a secret"
+      },
+      {
+        "condition": "Action reference",
+        "action": "Pin a reviewed full commit hash"
+      }
+    ]
+  }
+}
