@@ -1,0 +1,28 @@
+{
+  "slug": "python-find-missing-approval-file",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-17T18:48:15.597249+00:00",
+  "review_notes": [
+    "Reviewed the complete article for alignment with the approved lesson and primary documentation.",
+    "Checked each local measured example against its recorded evidence; synthetic files and illustrative diagrams are labeled.",
+    "Inspected the generated hero graphics and exact corrected reel frames, including 16-18 seconds and late charts.",
+    "Nick authorized publishing the matching blogs and pushing to GitHub. Uses the approved manual short profile, with source and final media evidence preserved.",
+    "All deterministic article lint and QA checks passed. Full hosted-byte and live-page verification are required for completion."
+  ],
+  "artifactSha256": {
+    "verified.md": "4ac0cc3a541269181a99e947c3a1b91fb4a0be5ecf8a94d04c9065e1974058e9",
+    "index.html": "5e0b8958ea1d03a4fcdefb1be6907af340456534a0fd6010ed71ad0bb2dbc95e",
+    "meta.json": "d03ecd139e3f1a8579da420d1f48308ec9c0e15a61189d5b128767a422d6972f",
+    "research.json": "6d9b1a0f7368b2861fed39d19c6c3a1ccf3d1b36b48a0b40b6d56a6697bfe660",
+    "hero.jpg": "7eb98917b9dbb8d755f03bed17a18871789843c84a1ff70124380c283918e449",
+    "photo-post.jpg": "7f3cbf675dbf267ecc391043ac57098bddfa61935f6661ec9364112a7e626b67",
+    "reel-script.md": "c24eb864f1608b3b6b6632cbc6bbc6732f9798e49e09e5b98d486bf1118b14dc",
+    "reel-data.md": "39a98e26b8f76d92268dd84d6427c126cf1b3f96e5b3f97406f9b300c9f82743",
+    "social-copy.json": "7283c99a971c9786cd5779070084ffca4646fbee8266720fda9f71b16910f2f2",
+    "social-video.json": "bc9da173e7827ac5b368644e58a1571dea6fa264682ee33dbed2a99afa1585c3",
+    "images/evidence.jpg": "8ccb67c6cbbf275e1bf60768b5dd171903dd792df2b40795b24844db6f59efe8"
+  }
+}

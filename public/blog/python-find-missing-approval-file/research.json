@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-11-17T18:44:32.632132+00:00",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3.14/library/pathlib.html",
+      "checkedDate": "2026-11-17"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "a6b007b999e42e8856853188c1769f2e9a0d4aa3fc653612931ce851c0913d06",
+    "reelSha256": "c62583ec73d843b3db9d7e8785aa3da5d8eb01a1c92441dfc882ac2f7a68f179",
+    "note": "Synthetic teaching data is labeled; measured examples are not performance claims."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Actual recorded example only"
+    }
+  ]
+}

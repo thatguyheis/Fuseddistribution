@@ -1,0 +1,32 @@
+{
+  "title": "Use ffprobe to Check What an MP4 Contains",
+  "slug": "ffprobe-check-mp4-container-video-audio",
+  "description": "Inspect an MP4 with ffprobe to identify its video and audio codecs, measure duration, and compare the actual export with the next publishing requirement.",
+  "ogDescription": "Use ffprobe to Check What an MP4 Contains.",
+  "alt": "Measured video properties from ffprobe output",
+  "date": "2026-11-17",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Automation"
+  ],
+  "brand": "tech",
+  "ctaLine": "Your file ends in MP4. What does ffprobe say is inside?",
+  "contentGraphic": {
+    "label": "Illustrative check for look inside an mp4",
+    "rows": [
+      {
+        "condition": "Container",
+        "action": "Read the recorded file format"
+      },
+      {
+        "condition": "Streams",
+        "action": "Identify video and audio codecs"
+      },
+      {
+        "condition": "Duration",
+        "action": "Keep the measurement with the exact export"
+      }
+    ]
+  }
+}

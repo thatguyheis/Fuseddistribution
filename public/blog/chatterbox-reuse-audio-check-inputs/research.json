@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-17T18:44:32.632132+00:00",
+  "sources": [
+    {
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "checkedDate": "2026-11-17"
+    },
+    {
+      "url": "https://docs.python.org/3.14/library/hashlib.html",
+      "checkedDate": "2026-11-17"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "5b22e6d01d466872eb3c7d74c997e86267c4b6485a751ec35a00526d0268b729",
+    "reelSha256": "ef399839f5b379861ec577e6c0f253ae3d54f06784febb1e32c84b50d9dcf927",
+    "note": "Synthetic teaching data is labeled; measured examples are not performance claims."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Actual recorded example only"
+    }
+  ]
+}

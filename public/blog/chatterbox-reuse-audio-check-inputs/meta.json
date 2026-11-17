@@ -1,0 +1,32 @@
+{
+  "title": "Reuse Chatterbox Audio Only When Its Inputs Match",
+  "slug": "chatterbox-reuse-audio-check-inputs",
+  "description": "See when Chatterbox narration can be reused, how text and voice inputs affect a cache key, and why a saved filename does not prove that audio still matches.",
+  "ogDescription": "Reuse Chatterbox Audio Only When Its Inputs Match.",
+  "alt": "Chatterbox narration cache verifies matching inputs",
+  "date": "2026-11-17",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Automation"
+  ],
+  "brand": "tech",
+  "ctaLine": "Can I reuse Chatterbox audio after changing my script?",
+  "contentGraphic": {
+    "label": "Illustrative check for reuse the right narration",
+    "rows": [
+      {
+        "condition": "Inputs match",
+        "action": "Check text, reference bytes and settings"
+      },
+      {
+        "condition": "Audio matches",
+        "action": "Confirm the saved recording hash"
+      },
+      {
+        "condition": "Line changed",
+        "action": "Generate and review that line"
+      }
+    ]
+  }
+}

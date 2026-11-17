@@ -1,0 +1,153 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "ffprobe-check-mp4-container-video-audio",
+  "id": "T-02",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "generationRequest": "t2 and t3 are approved generate now",
+    "publicationRequest": "push, blog and to github"
+  },
+  "approvedHook": "Your file ends in MP4. What does ffprobe say is inside?",
+  "approvedCta": "Follow for more on growing your business with AI.",
+  "narration": [
+    "Your file ends in MP4. What does ffprobe say is inside?",
+    "I inspect a real Fused export. Its filename names a container, but does not identify every stream.",
+    "I run ffprobe and read its structured output, which records what the file actually contains.",
+    "Here, the video uses H.264 and the audio uses AAC. They are separate streams in one container.",
+    "Its measured duration is 120.75 seconds. That describes our source export, not this short lesson.",
+    "Its frame size is 1080 by 1920 pixels. Those measurements belong to this particular file.",
+    "I compare those facts with the destination requirements before uploading.",
+    "That does not guarantee acceptance. I still watch and listen to the export.",
+    "The file contains video and audio. Its name alone could not tell me their formats.",
+    "Follow for more on growing your business with AI."
+  ],
+  "scriptSha256": "bd67cec89d3807c3640ac6144b46fdbca81b3a8a056903b4e705877950c8a34e",
+  "sha256": "644b9835bd41f071092615d3664883c06887ece541b66cf5bab0db00e73f237b",
+  "seconds": 59.8,
+  "bytes": 7538539,
+  "lufs": -17.77,
+  "truePeakDb": -1.4,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 23.2,
+      "meanAbsolutePixelError": 2.2446
+    },
+    {
+      "seconds": 25.8,
+      "meanAbsolutePixelError": 2.2279
+    },
+    {
+      "seconds": 30.7,
+      "meanAbsolutePixelError": 2.5727
+    },
+    {
+      "seconds": 33.1,
+      "meanAbsolutePixelError": 1.9695
+    }
+  ],
+  "visualReview": {
+    "sha256": "644b9835bd41f071092615d3664883c06887ece541b66cf5bab0db00e73f237b",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-02",
+      "segment": 1,
+      "heard": "Your file ends in MP4. What does FFprobe say is inside?",
+      "expected": "Your file ends in MP4. What does ffprobe say is inside?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 2,
+      "heard": "I inspect a real fused export. Its file name names a container, but does not identify every stream.",
+      "expected": "I inspect a real Fused export. Its filename names a container, but does not identify every stream.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 3,
+      "heard": "I run ffprobe and read its structured output, which records what the file actually contains.",
+      "expected": "I run ffprobe and read its structured output, which records what the file actually contains.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 4,
+      "heard": "Here, the video uses H .264 and the audio uses AAC. They are separate streams in one container.",
+      "expected": "Here, the video uses H.264 and the audio uses AAC. They are separate streams in one container.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 5,
+      "heard": "It's measured duration is 120 .75 seconds. That describes our source export, not this short lesson.",
+      "expected": "Its measured duration is 120.75 seconds. That describes our source export, not this short lesson.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 6,
+      "heard": "Its frame size is 1080 by 1920 pixels. Those measurements belong to this particular file.",
+      "expected": "Its frame size is 1080 by 1920 pixels. Those measurements belong to this particular file.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 7,
+      "heard": "I compare those facts with the destination requirements before uploading.",
+      "expected": "I compare those facts with the destination requirements before uploading.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 8,
+      "heard": "That does not guarantee acceptance. I still watch and listen to the export.",
+      "expected": "That does not guarantee acceptance. I still watch and listen to the export.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 9,
+      "heard": "The file contains video and audio. Its name alone could not tell me their formats.",
+      "expected": "The file contains video and audio. Its name alone could not tell me their formats.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-02",
+      "segment": 10,
+      "heard": "Follow for more on growing your business with AI.",
+      "expected": "Follow for more on growing your business with AI.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "5b22e6d01d466872eb3c7d74c997e86267c4b6485a751ec35a00526d0268b729",
+  "createdAt": "2026-11-17T18:44:32.632132+00:00"
+}

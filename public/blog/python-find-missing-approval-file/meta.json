@@ -1,0 +1,32 @@
+{
+  "title": "Use Python to Find a Missing Approval File",
+  "slug": "python-find-missing-approval-file",
+  "description": "Use a real Python file check to name a missing approval file, understand what file presence proves, and keep permission separate from production checks.",
+  "ogDescription": "Use Python to Find a Missing Approval File.",
+  "alt": "Python checks five required production files",
+  "date": "2026-11-17",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Automation"
+  ],
+  "brand": "tech",
+  "ctaLine": "Can Python find a missing approval without asking AI?",
+  "contentGraphic": {
+    "label": "Illustrative check for find a missing approval file",
+    "rows": [
+      {
+        "condition": "Expected paths",
+        "action": "Check every required filename"
+      },
+      {
+        "condition": "Missing approval",
+        "action": "Hold the action and ask the owner"
+      },
+      {
+        "condition": "File present",
+        "action": "Read and verify the decision"
+      }
+    ]
+  }
+}

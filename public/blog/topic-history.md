@@ -328,3 +328,9 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 | 2026-10-12 | creating-an-approval-log-for-ai-assisted-work | AI workflow | Create a proportionate approval log for AI-assisted work |
 | 2026-10-01 | building-a-test-set-for-ai-customer-support-drafts | Business operations | Build a Test Set for AI Support Drafts |
 | 2026-10-01 | choosing-a-low-risk-first-ai-task-for-a-small-business | Business operations | Choose a Low Risk First AI Task |
+
+## Manual tech lessons published November 17, 2026
+
+- python-find-missing-approval-file - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
+- chatterbox-reuse-audio-check-inputs - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
+- ffprobe-check-mp4-container-video-audio - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.

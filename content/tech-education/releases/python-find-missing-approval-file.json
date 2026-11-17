@@ -1,0 +1,153 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "python-find-missing-approval-file",
+  "id": "T-01",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "generationRequest": "Approve T-01 preview first; hold T-02 and T-03 for my review",
+    "publicationRequest": "push, blog and to github"
+  },
+  "approvedHook": "Can Python find a missing approval without asking AI?",
+  "approvedCta": "Follow for more on growing your business with AI.",
+  "narration": [
+    "Can Python find a missing approval without asking AI?",
+    "I list 5 files this example expects: a script, source notes, caption notes, a checklist, and an approval file.",
+    "These are synthetic teaching files. The local Python check, and the results on screen, are real.",
+    "Python checks whether each expected path is a file. The result comes from the computer, not a model guessing.",
+    "4 out of 5 files exist. This 80 percent describes only our example, not content quality.",
+    "The missing item is approval.txt. A simple folder count would not identify which requirement was absent.",
+    "That gives me a reason to hold production and ask the owner for approval.",
+    "A file's presence is not permission. This check does not prove a video is valid or ready.",
+    "I use a small script for exact checks and keep a person responsible for approval.",
+    "Follow for more on growing your business with AI."
+  ],
+  "scriptSha256": "c24eb864f1608b3b6b6632cbc6bbc6732f9798e49e09e5b98d486bf1118b14dc",
+  "sha256": "c62583ec73d843b3db9d7e8785aa3da5d8eb01a1c92441dfc882ac2f7a68f179",
+  "seconds": 63.433333,
+  "bytes": 9115229,
+  "lufs": -17.76,
+  "truePeakDb": -1.33,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 31.8,
+      "meanAbsolutePixelError": 2.2815
+    },
+    {
+      "seconds": 34.266666666666666,
+      "meanAbsolutePixelError": 2.2988
+    },
+    {
+      "seconds": 39.13333333333333,
+      "meanAbsolutePixelError": 2.2057
+    },
+    {
+      "seconds": 42.233333333333334,
+      "meanAbsolutePixelError": 2.2322
+    }
+  ],
+  "visualReview": {
+    "sha256": "c62583ec73d843b3db9d7e8785aa3da5d8eb01a1c92441dfc882ac2f7a68f179",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-01",
+      "segment": 1,
+      "heard": "Can Python find a missing approval without asking AI?",
+      "expected": "Can Python find a missing approval without asking AI?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 2,
+      "heard": "list five files. This example expects a script, source notes, caption notes, a checklist, and an approval file.",
+      "expected": "I list 5 files this example expects: a script, source notes, caption notes, a checklist, and an approval file.",
+      "score": 0.972972972972973,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 3,
+      "heard": "These are synthetic teaching files. The local Python check and the results on screen are real.",
+      "expected": "These are synthetic teaching files. The local Python check, and the results on screen, are real.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 4,
+      "heard": "Python checks whether each expected path is a file. The result comes from the computer, not a model guessing.",
+      "expected": "Python checks whether each expected path is a file. The result comes from the computer, not a model guessing.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 5,
+      "heard": "4 out of 5 files exist. This 80 % describes only our example, not content quality.",
+      "expected": "4 out of 5 files exist. This 80 percent describes only our example, not content quality.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 6,
+      "heard": "The missing item is approval .text. A simple folder count would not identify which requirement was absent.",
+      "expected": "The missing item is approval.txt. A simple folder count would not identify which requirement was absent.",
+      "score": 0.9714285714285714,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 7,
+      "heard": "That gives me a reason to hold production and ask the owner for approval.",
+      "expected": "That gives me a reason to hold production and ask the owner for approval.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 8,
+      "heard": "A file's presence is not permission. This check does not prove a video is valid or ready.",
+      "expected": "A file's presence is not permission. This check does not prove a video is valid or ready.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 9,
+      "heard": "I use a small script for exact checks and keep a person responsible for approval.",
+      "expected": "I use a small script for exact checks and keep a person responsible for approval.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-01",
+      "segment": 10,
+      "heard": "Follow for more on growing your business with A .I.",
+      "expected": "Follow for more on growing your business with AI.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "a6b007b999e42e8856853188c1769f2e9a0d4aa3fc653612931ce851c0913d06",
+  "createdAt": "2026-11-17T18:44:32.632132+00:00"
+}

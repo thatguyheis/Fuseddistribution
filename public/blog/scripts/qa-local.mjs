@@ -7,6 +7,7 @@ import { parseReelScript } from '../../../video/scripts/parse-script.mjs';
 import { validateReelScript } from '../../../video/scripts/validate-reel.mjs';
 import { findUncitedSources } from './lib/sourced-stats.mjs';
 import { validateChart } from './build-chart-inject.mjs';
+import { validateManualTechShort } from './lib/manual-tech-short.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const BLOG_DIR = resolve(__dirname, '..');
@@ -263,6 +264,17 @@ function validateReelMarkdown(reelScriptPath, reelDataPath, slug, blockers, allo
   const ownerHook=approvedOwnerHook(resolve(BLOG_DIR,'../..'),slug);
   const copySurface=ownerHook ? md.replaceAll(ownerHook.spokenText,ownerHook.spokenText.replace(/[—–]/g,',')) : md;
   validateTextSurface('reel-script.md', copySurface, blockers, allowedFutureYears);
+
+  if (/^format: fused-tech-short-v1$/m.test(md)) {
+    try {
+      for (const error of validateManualTechShort(resolve(BLOG_DIR, '../..'), slug, md)) {
+        blockers.push(`manual tech short: ${error}`);
+      }
+    } catch (error) {
+      blockers.push(`manual tech short: ${error.message}`);
+    }
+    return;
+  }
 
   let script;
   try {

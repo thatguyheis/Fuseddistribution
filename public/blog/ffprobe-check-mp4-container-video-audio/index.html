@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use ffprobe to Check What an MP4 Contains | Fused</title>
+    <meta name="description" content="Inspect an MP4 with ffprobe to identify its video and audio codecs, measure duration, and compare the actual export with the next publishing requirement." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-11-17T00:00:00Z" />
+
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/" />
+    <meta property="og:title" content="Use ffprobe to Check What an MP4 Contains" />
+    <meta property="og:description" content="Use ffprobe to Check What an MP4 Contains." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Use ffprobe to Check What an MP4 Contains",
+      "description": "Inspect an MP4 with ffprobe to identify its video and audio codecs, measure duration, and compare the actual export with the next publishing requirement.",
+      "url": "https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/",
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Person",
+        "name": "Nick Hughes",
+        "url": "https://fuseddistribution.com/about/",
+        "sameAs": [
+          "https://www.facebook.com/fuseddistribution",
+          "https://www.instagram.com/fuseddistribution"
+        ],
+        "knowsAbout": ["web design","local SEO","AI automation","video marketing"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
+      },
+      "image": "https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/hero.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/ffprobe-check-mp4-container-video-audio/" }
+    }
+    </script>
+    <style>
+:root {
+  --bg: #07131a;
+  --panel: rgba(11, 24, 32, 0.82);
+  --line: rgba(87, 219, 255, 0.16);
+  --text: #ecf8fb;
+  --muted: #afc6cf;
+  --accent: #58d6ff;
+  --accent-2: #4dffb8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+    linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background:
+    linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+    repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+  pointer-events: none;
+}
+a { color: inherit; text-decoration: none; }
+.shell {
+  width: min(1220px, calc(100% - 32px)); margin: 18px auto 40px;
+  border-radius: 28px; overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42); position: relative;
+}
+.shell::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+    radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+  pointer-events: none;
+}
+.topbar, .main, .footer { position: relative; z-index: 1; }
+.topbar { z-index: 50; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 30px; background: rgba(7, 16, 22, 0.92);
+  backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.brand { display: flex; flex-direction: column; line-height: 1; }
+.brand-mark {
+  color: var(--accent); font-size: 1.95rem; font-weight: 900;
+  letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+}
+.brand-sub {
+  margin-top: 4px; color: rgba(236, 248, 251, 0.72); font-size: 0.75rem;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-pages {
+  padding: 8px 10px; border-radius: 999px;
+  border: 1px solid rgba(88, 214, 255, 0.18); background: rgba(7, 15, 23, 0.56);
+}
+.nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-pages a { padding: 9px 14px; border-radius: 999px; }
+.nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+.nav-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 160px; padding: 12px 18px; border-radius: 14px;
+  border: 1px solid rgba(88, 214, 255, 0.28); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+}
+.main { padding: 52px 54px 60px; }
+.article-wrap { max-width: 760px; margin: 0 auto; }
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 32px;
+}
+.back-link:hover { color: var(--accent); }
+.eyebrow {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+  font-size: 0.82rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.article-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 18px 0 24px; }
+.article-meta time { color: var(--muted); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pill {
+  padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(88, 214, 255, 0.18);
+  background: rgba(88, 214, 255, 0.08); color: rgba(236, 248, 251, 0.88);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+h1 {
+  margin: 0 0 4px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.05;
+}
+.article-hero { width: 100%; border-radius: 18px; overflow: hidden; margin: 28px 0 0; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-hero img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; }
+.article-hero figcaption { padding: 10px 14px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); background: rgba(7, 15, 23, 0.6); letter-spacing: 0.04em; }
+.article-hero figcaption a { color: rgba(175, 198, 207, 0.55); text-decoration: underline; }
+.article-photo { margin: 32px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: cover; object-position: center; }
+.article-photo figcaption { padding: 10px 16px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); letter-spacing: 0.04em; background: rgba(7, 16, 22, 0.6); }
+.article-divider { height: 1px; background: rgba(88, 214, 255, 0.12); margin: 32px 0; }
+.article-body { color: var(--muted); font-size: 1.08rem; line-height: 1.82; }
+.article-body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.55rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--text); margin: 40px 0 14px;
+}
+.article-body h3 { color: var(--text); font-size: 1.18rem; margin: 28px 0 10px; }
+.article-body p { margin: 0 0 20px; }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 20px; }
+.article-body li { margin-bottom: 8px; }
+.article-body strong { color: var(--text); }
+.article-body a { color: var(--accent); text-decoration: underline; }
+.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; overflow: hidden; }
+.chart-title { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-bottom: 18px; }
+.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+.stat-card { background: rgba(88, 214, 255, 0.04); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 14px; padding: 22px 18px; text-align: center; }
+.stat-card .stat-number { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2.4rem; letter-spacing: 0.03em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+.stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+.watch-list { display: flex; flex-direction: column; gap: 14px; margin: 32px 0; }
+.watch-list-item { padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.14); background: rgba(7, 20, 28, 0.74); }
+.watch-list-item strong { display: block; color: var(--accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.watch-list-item span { display: block; margin-top: 8px; color: var(--text); font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.social-video { margin: 42px 0 0; padding: 24px; border: 1px solid rgba(88, 214, 255, 0.2); border-radius: 20px; background: rgba(7, 20, 28, 0.74); }
+.social-video h2 { margin: 0 0 8px; color: var(--text); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.social-video > p { margin: 0 0 18px; color: var(--muted); }
+.social-video-player { position: relative; aspect-ratio: 9 / 16; width: min(100%, 360px); margin: 0 auto 20px; border-radius: 14px; overflow: hidden; background: #020608; }
+.social-video-player iframe, .social-video-player video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
+.social-video-pending { padding: 18px; border: 1px dashed rgba(88, 214, 255, 0.32); border-radius: 14px; color: var(--accent); text-align: center; font-weight: 800; letter-spacing: 0.04em; }
+.sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
+.sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
+.sources-block ol li { margin-bottom: 6px; }
+.sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+.faq-block { display: flex; flex-direction: column; gap: 12px; margin: 32px 0; }
+.faq-item { padding: 20px 24px; border-radius: 14px; border: 1px solid rgba(88, 214, 255, 0.12); background: rgba(7, 18, 26, 0.6); }
+.faq-q { font-weight: 700; color: var(--text); font-size: 1rem; margin-bottom: 8px; }
+.faq-a { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+.article-cta { margin-top: 48px; padding: 28px; border-radius: 22px; border: 1px solid rgba(88, 214, 255, 0.2); background: rgba(88, 214, 255, 0.05); text-align: center; }
+.article-cta p { margin: 0 0 18px; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 16px; border: 1px solid transparent; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.btn-primary { color: #041117; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 34px rgba(88, 214, 255, 0.18); }
+.footer { padding: 24px 28px 34px; color: rgba(175, 198, 207, 0.74); text-align: center; font-size: 0.92rem; }
+.nav-item { position: relative; }
+.nav-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px; border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; letter-spacing: 0.04em; color: rgba(239, 252, 255, 0.9); transition: color 0.15s; }
+.nav-toggle:hover, .nav-toggle:focus-visible, .nav-toggle.active, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+.nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+.nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+.nav-dropdown { display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(8, 16, 24, 0.97); backdrop-filter: blur(20px); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55); z-index: 200; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s; }
+.nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s; opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.nav-dropdown a { padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em; color: rgba(220, 240, 248, 0.78); transition: background 0.12s, color 0.12s; }
+.nav-dropdown a:hover, .nav-dropdown a:focus-visible, .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+.nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+@media (max-width: 1080px) { .topbar { flex-direction: column; align-items: flex-start; } .main { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 900px) { .nav-dropdown { left: 0; transform: translateY(-6px); } .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); } }
+@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] > [aria-hidden="true"] { transform: rotate(90deg); } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">AI Tools &middot; Video</div>
+
+          <h1>Use ffprobe to Check What an MP4 Contains</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-11-17">November 17, 2026</time>
+            <span class="pill">AI Tools</span>
+            <span class="pill">Video</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="/blog/ffprobe-check-mp4-container-video-audio/hero.jpg" alt="Measured video properties from ffprobe output" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+            <div class="math-box" role="img" aria-label="Illustrative check for look inside an mp4"><p><strong>Container</strong> &rarr; Read the recorded file format</p><p><strong>Streams</strong> &rarr; Identify video and audio codecs</p><p><strong>Duration</strong> &rarr; Keep the measurement with the exact export</p></div><p>Your file ends in MP4. What does ffprobe say is inside? I answer that question by inspecting an actual export rather than trusting its filename. In this example, a previously approved Fused reel contains H.264 video and AAC audio and measures about 120.75 seconds. Those are recorded properties of that source file, not a promise that a publishing platform will accept it.</p>
+            <!-- SOCIAL_VIDEO_START -->
+            <aside class="social-video" aria-label="Watch this reel on social media"><h2>Watch the reel</h2><p>Play the Fused reel here.</p><div class="social-video-player"><video controls playsinline preload="metadata"><source src="https://fuseddistribution.com/reels/ffprobe-check-mp4-container-video-audio/ffprobe-check-mp4-container-video-audio.mp4" type="video/mp4" />Your browser does not support embedded video. Use the links below to watch.</video></div></aside>
+            <!-- SOCIAL_VIDEO_END -->
+            <p>The companion lesson is a separate short video. Its duration is different from the source export used in the demonstration. Keeping that distinction visible matters when a graphic contains a large duration counter: the number explains the inspected artifact, not the length of every file in the workflow. Here is how I read the result and decide what to check next.</p>
+            <figure class="article-photo"><img src="/blog/ffprobe-check-mp4-container-video-audio/images/evidence.jpg" alt="Recorded evidence for look inside an mp4" loading="lazy" /><figcaption>Recorded Fused evidence, with the limits explained in the lesson.</figcaption></figure>
+            <h2>Separate the MP4 container from its streams</h2>
+            <p>I think of the container as the file&#39;s packaging and the streams as the media held inside it. That analogy helps explain why an extension alone cannot answer every upload question. A file named with an MP4 extension still needs inspection if I want to know the actual video and audio formats represented in the export.</p>
+            <p>The <a href="https://ffmpeg.org/ffprobe.html">official ffprobe documentation</a> describes gathering information about multimedia streams and their container. It also documents structured output that another program can read. I use that output to record specific properties rather than copying a filename into a status message and treating the job as complete.</p>
+            <p>The illustration in the reel shows one MP4 container and its video and audio streams. It is a teaching diagram based on the recorded output, not a screenshot of a publishing dashboard. The diagram explains the relationship between the parts; the separate evidence card contains the measured properties of the actual file.</p>
+            <h2>Read the result from one real Fused export</h2>
+            <p>For the demonstration, I inspected the previously approved reel about story structure in AI video. I kept its exact file hash with the run record and checked the same bytes again before preparing this lesson. That prevents a later file with a familiar name from silently replacing the source of the example.</p>
+            <p>The recorded ffprobe result identifies a video stream with codec_name h264 and an audio stream with codec_name aac. It also reports a width of 1080 pixels, a height of 1920 pixels, and a frame rate of 30 frames per second for the video. These values describe this particular source export. They are not presented as universal requirements for social media.</p>
+            <p>The container&#39;s format family appears in ffprobe&#39;s format output, alongside its measured duration and size. I keep the unrounded duration in the evidence record, while the reel uses 120.75 seconds for readability. Rounding the display should not replace the original measurement used by a production check.</p>
+            <h2>Ask ffprobe for the properties you need</h2>
+            <p>For a local file, I use an inspection command that requests format duration and stream information in JSON. A representative command is <code>ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate -of json example.mp4</code>. Replace the example filename with the file actually being checked.</p>
+            <p>That command is an inspection step. It does not convert the media or repair an export. I read the result, confirm which stream is video and which is audio, and keep the fields needed for the next decision. If the command reports a problem, I record that problem instead of inventing a successful result from the extension.</p>
+            <p>When automation consumes the output, I prefer checking named fields to searching the entire response for a reassuring word. Finding h264 somewhere is weaker than confirming that the video stream reports the expected codec. The same principle applies to duration: identify the measurement being used rather than treating every number in the response as interchangeable.</p>
+            <h2>Keep the duration attached to the correct file</h2>
+            <p>The inspected source reports 120.746667 seconds. The display counter rounds that to 120.75 seconds. I label the counter as one previously approved Fused file so the reader can tell that it is measured evidence, rather than a suggested target length for this new lesson.</p>
+            <p>A production record should connect that duration to the exact export. If I later replace a reel, I need a new measurement for the replacement bytes. Keeping the old duration beside a new file can make an upload checklist look complete while describing an artifact nobody is about to publish.</p>
+            <p>This is closely related to <a href="/blog/chatterbox-reuse-audio-check-inputs/">reusing the right Chatterbox narration</a>. In both cases, a name is only a reference. I need evidence that the referenced artifact still matches the current work. That principle helps separate a completed local file from a verified delivery package.</p>
+            <h2>Compare measurements with the destination requirements</h2>
+            <p>After inspection, I have facts to compare with the requirements of the destination I intend to use. I check the destination&#39;s current documentation or account interface for its actual requirements. This lesson does not claim a Facebook, Buffer, YouTube, Instagram, or X limit, because it demonstrates the local inspection step rather than a platform acceptance test.</p>
+            <p>I also distinguish the master export from a delivery copy. If a workflow creates a smaller file for a particular destination, I inspect that copy too. Measurements of the master do not establish the properties of a separate derivative, even when both files share most of their name.</p>
+            <p>Before uploading, I identify the exact local file, its measured properties, the intended destination, and the public media URL if delivery uses a link. That gives a failed upload investigation a concrete starting point. I can ask whether the local file, the hosted copy, or the destination&#39;s processing step is the part that needs repair.</p>
+            <h2>Inspection is followed by playback and delivery checks</h2>
+            <p>A readable metadata report is useful, but I do not treat it as a complete viewing review. I watch and listen to the export. I check the opening, captions, transitions, graphics, and ending against the approved script. A file can have plausible codecs and duration while still containing a design or narration mistake.</p>
+            <p>Our subtitle repair illustrates that boundary. The short preview needed clean caption replacement on cached chart frames. Metadata inspection alone would not reveal old words accumulating underneath a new phrase. The repair therefore included a separate rendering regression and inspection of actual decoded frames around the reported problem.</p>
+            <p>The broader <a href="/blog/why-ai-video-works-better-with-story-structure/">AI video story structure lesson</a> explains why each scene needs a clear job. Media inspection serves a different job: reporting what the file contains. I keep those checks separate so a pass in one area does not stand in for work that has not actually been reviewed.</p>
+            <h2>A practical file inspection record</h2>
+            <p>For a repeatable workflow, I keep the source filename as a locator, the file hash as an exact reference, the tool version, the requested fields, and the recorded output. I then write down which decision those properties support. That record is more useful than a generic message saying that the video looks ready.</p>
+            <p>If I change the export, I check the replacement. If I change only the blog&#39;s wording, I do not encode the same approved video again. If a hosted file differs from the local copy, I investigate delivery before asking the speech or rendering tools to redo completed work. Those boundaries keep repairs focused.</p>
+            <p>The opening question now has a concrete answer. In our source example, ffprobe reports H.264 video, AAC audio, and a measured duration of about 120.75 seconds. The filename could not establish those facts. Inspection gives me evidence for the next check, while playback and destination verification remain separate responsibilities.</p>
+            <h2>Sources and demonstration</h2>
+            <ul>
+            <li><a href="https://ffmpeg.org/ffprobe.html">Official ffprobe documentation</a>: container and stream inspection, selected fields, and JSON output.</li>
+            <li>Fused recorded inspection using ffprobe 8.1.1, checked again November 17, 2026: one previously approved source export, H.264 video, AAC audio, 1080 by 1920 pixels, and 120.746667 seconds.</li>
+            </ul>
+            <h2>Related</h2>
+            <ul>
+            <li><a href="/blog/why-ai-video-works-better-with-story-structure/">Why AI video works better with a clear story</a></li>
+            <li><a href="/blog/chatterbox-reuse-audio-check-inputs/">Reuse the right Chatterbox narration</a></li>
+            </ul>
+            <p>Read next: <a href="/blog/python-find-missing-approval-file/">Use Python to find a missing approval file</a>.</p>
+          </div>
+
+          <div class="article-cta">
+            <p>Your file ends in MP4. What does ffprobe say is inside?</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) { if (btn !== except) btn.setAttribute('aria-expanded', 'false'); });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(null); });
+        document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeAll(null); });
+      })();
+    </script>
+  </body>
+</html>

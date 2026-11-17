@@ -1,0 +1,12 @@
+{
+  "repo": "/Users/nick/projects/fuseddistribution",
+  "brand": "Fused Distribution",
+  "format": "C1994 method adapted for manual tech short reels",
+  "sourceBuilder": "Coins since 1994/tools/c1994_video_v2.py",
+  "sourceBuilderSha256": "852ec1e242c602153e99a1a923f7a2d80baa3533cadaadcdd1c5a3406463d429",
+  "voiceRuntime": "/Users/nick/projects/fuseddistribution/video/tts-runtime.json",
+  "voiceReference": "/Users/nick/projects/fuseddistribution/video/voice-sample/voice-reference.wav",
+  "approvalRequired": true,
+  "publishingAllowed": false,
+  "scheduledPipelineChangesAllowed": false
+}

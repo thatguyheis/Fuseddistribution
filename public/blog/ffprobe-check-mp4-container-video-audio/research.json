@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-11-17T18:44:32.632132+00:00",
+  "sources": [
+    {
+      "url": "https://ffmpeg.org/ffprobe.html",
+      "checkedDate": "2026-11-17"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "5b22e6d01d466872eb3c7d74c997e86267c4b6485a751ec35a00526d0268b729",
+    "reelSha256": "644b9835bd41f071092615d3664883c06887ece541b66cf5bab0db00e73f237b",
+    "note": "Synthetic teaching data is labeled; measured examples are not performance claims."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Actual recorded example only"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "ffprobe-check-mp4-container-video-audio",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-17T18:48:15.941323+00:00",
+  "review_notes": [
+    "Reviewed the complete article for alignment with the approved lesson and primary documentation.",
+    "Checked each local measured example against its recorded evidence; synthetic files and illustrative diagrams are labeled.",
+    "Inspected the generated hero graphics and exact corrected reel frames, including 16-18 seconds and late charts.",
+    "Nick authorized publishing the matching blogs and pushing to GitHub. Uses the approved manual short profile, with source and final media evidence preserved.",
+    "All deterministic article lint and QA checks passed. Full hosted-byte and live-page verification are required for completion."
+  ],
+  "artifactSha256": {
+    "verified.md": "d7c6e8dd6b200bbef1ed59e26742856bf1937fca757cb77eb58551590cd2a9d0",
+    "index.html": "12c013d13be7cae16d7270d5f4e8b8abb833a29169cbe58604df040c08b4f99d",
+    "meta.json": "62a28649f4ac28365d2cec2004a23039070293a32a8bb8c4fde75a934c307ad4",
+    "research.json": "c0ec59e7ff9b9520274d8658f9aa48a181ea9b7faec63a75ebe3bf64e99c2397",
+    "hero.jpg": "e79a5e265b9ff8a977f90536dd605e50bacc2b6632dadd6ed7d7fb0f9b6ad662",
+    "photo-post.jpg": "08778afde4548d706a7b40996c69f65cb51d592380aa83bb6fdc43995dc21476",
+    "reel-script.md": "bd67cec89d3807c3640ac6144b46fdbca81b3a8a056903b4e705877950c8a34e",
+    "reel-data.md": "0d6546b843c2c0a92e5489fe5e595e3e61e41279ff14c52850ead9164655ef57",
+    "social-copy.json": "3cdbd21b42693301cddc3470165ce2a673b31a8f3621438483c94b7d71ae1d07",
+    "social-video.json": "d31cdf78ec896b069505f0557561f6809712e01cc64d73fa90d595e42d353649",
+    "images/evidence.jpg": "113dd32dfd9dad0cd71010a760a0b6db555a6aedb3b212aa60764f9ed89694bf"
+  }
+}

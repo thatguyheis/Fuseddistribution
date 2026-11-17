@@ -1,5 +1,50 @@
 [
   {
+    "slug": "ffprobe-check-mp4-container-video-audio",
+    "title": "Use ffprobe to Check What an MP4 Contains",
+    "date": "2026-11-17",
+    "excerpt": "Inspect an MP4 with ffprobe to identify its video and audio codecs, measure duration, and compare the actual export with the next publishing requirement.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Automation"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ffprobe-check-mp4-container-video-audio/hero.jpg",
+    "imageAlt": "Measured video properties from ffprobe output"
+  },
+  {
+    "slug": "chatterbox-reuse-audio-check-inputs",
+    "title": "Reuse Chatterbox Audio Only When Its Inputs Match",
+    "date": "2026-11-17",
+    "excerpt": "See when Chatterbox narration can be reused, how text and voice inputs affect a cache key, and why a saved filename does not prove that audio still matches.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Automation"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/chatterbox-reuse-audio-check-inputs/hero.jpg",
+    "imageAlt": "Chatterbox narration cache verifies matching inputs"
+  },
+  {
+    "slug": "python-find-missing-approval-file",
+    "title": "Use Python to Find a Missing Approval File",
+    "date": "2026-11-17",
+    "excerpt": "Use a real Python file check to name a missing approval file, understand what file presence proves, and keep permission separate from production checks.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Automation"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/python-find-missing-approval-file/hero.jpg",
+    "imageAlt": "Python checks five required production files"
+  },
+  {
     "slug": "connect-your-reel-ending-to-its-opening-promise",
     "title": "Connect Your Reel Ending to Its Opening Promise",
     "date": "2026-11-13",

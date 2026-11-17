@@ -1,0 +1,28 @@
+{
+  "slug": "chatterbox-reuse-audio-check-inputs",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-17T18:48:15.882105+00:00",
+  "review_notes": [
+    "Reviewed the complete article for alignment with the approved lesson and primary documentation.",
+    "Checked each local measured example against its recorded evidence; synthetic files and illustrative diagrams are labeled.",
+    "Inspected the generated hero graphics and exact corrected reel frames, including 16-18 seconds and late charts.",
+    "Nick authorized publishing the matching blogs and pushing to GitHub. Uses the approved manual short profile, with source and final media evidence preserved.",
+    "All deterministic article lint and QA checks passed. Full hosted-byte and live-page verification are required for completion."
+  ],
+  "artifactSha256": {
+    "verified.md": "870121c61fc0ace9428efc8b0c10463f9c93f2958af947c9182c9e27b1d939a6",
+    "index.html": "791dd9c6207dc136cc0a58c15e0f101129f94fed74257082c39f17201b45f179",
+    "meta.json": "281c97ea35a6cf89a1610ca5ecb1b9e62f4125f765b9f296bc7a0a5d35ef6ce0",
+    "research.json": "7ba5c051c0cdcbf0198047aac3f38d9a39b7c3bee66d7fcd5267632898678d9d",
+    "hero.jpg": "11e4359aaf1f21e4865ff8af5edef70fe3eb64e3388a3ce79853b1713c0a1935",
+    "photo-post.jpg": "6a9371cbae326a3ea87d4626785f52e997c249c8c9db9452e6fdb4dc2a86a8e8",
+    "reel-script.md": "d4d321229e6a5a7ed46410c9c1a47e93a21e7062fe7590e4ed301a2ecf7ac8d0",
+    "reel-data.md": "c213279a3739a545b1bee48256c41f6eb90c3c28b97baf0021c07880e055c0be",
+    "social-copy.json": "85a6634af418de60c4b35a662ba2417bb26bf8317b6c4bc76d8e3c68965cf179",
+    "social-video.json": "e77317c0af9f09711c2e4d8fed0ac326d9d95a7e7240e81ff0b899ae9f81a933",
+    "images/evidence.jpg": "536fc86f6f8c2c3330161177f3b11dc0cb58f2be72480aee4dc1eef52175a165"
+  }
+}
