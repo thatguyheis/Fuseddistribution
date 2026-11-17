@@ -147,6 +147,8 @@ def norm_words(text):
     # Recognition may split these exact technical terms without changing speech.
     text = re.sub(r"\bfile\s+names?\b", lambda m: "filenames" if m.group().endswith("names") else "filename", text)
     text = re.sub(r"\bh\s*\.?\s*(264|265)\b", r"h\1", text)
+    text = re.sub(r"\ba\s+p\s+i\b", "api", text)
+    text = re.sub(r"\bnext\s*\.?\s*j\s*\.?\s*s\b", "nextjs", text)
     words, out = re.sub(r"[^a-z0-9 ]", "", text).split(), []
     for w in words:                                      # "30 125" and "30,125" both become 30125
         if w.isdigit() and out and out[-1].isdigit():

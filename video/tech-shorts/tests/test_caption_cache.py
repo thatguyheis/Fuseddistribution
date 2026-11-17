@@ -12,6 +12,12 @@ spec.loader.exec_module(renderer)
 
 
 class CaptionCacheTests(unittest.TestCase):
+    def test_technical_spelling_variants_preserve_other_names(self):
+        for actual, expected in [('A-P-I', 'API'), ('Next .js', 'Next.js'), ('Next J S', 'Next.js')]:
+            self.assertEqual(renderer.norm_words(actual), renderer.norm_words(expected))
+        for actual, different in [('API', 'IP'), ('Next.js', 'Nuxt.js')]:
+            self.assertNotEqual(renderer.norm_words(actual), renderer.norm_words(different))
+
     def test_multiple_phrases_and_expired_text_clear(self):
         self.assertTrue(renderer.verify_caption_rendering())
 
