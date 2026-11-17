@@ -70,6 +70,17 @@ node services/client-instructions/client/create-reel-plan.mjs services/client-in
 
 The CLI writes only the client's result to stdout. The client may save it. `AGENTS.example.md` describes the integration. Client URLs are treated as citations and are not fetched; supplied facts require human verification. Results are drafts with `reviewRequired: true`, not permission to render or publish unreviewed content. The service does not upload, delete, or revoke client files.
 
+## Client video publishing
+
+A client whose D1 row names a publish profile also gets `create_video_upload`, `list_videos`, `schedule_post` and `get_post_status`. The client uploads an MP4 (25 MiB maximum) through a one time `PUT /v1/uploads/<id>` link and schedules it to its own Buffer channels with no owner review. Files are stored in `REELS_KV` for 5 days and served by the `fused-reel-media` Worker. The Buffer key, organization and channel IDs live in one Worker secret per profile, `PUBLISH_PROFILE_<NAME>`, as JSON `{token, organizationId, channels, maxPending}`.
+
+```bash
+node services/client-instructions/scripts/operator.mjs set-publish client-id profile-name false   # last value: keep create_reel_plan?
+node services/client-instructions/scripts/operator.mjs set-publish client-id none true            # remove publishing
+```
+
+Client instructions are in `client/PUBLISH-README.md`. Design: `docs/superpowers/specs/2026-11-16-c1994-client-buffer-mcp-design.md`. Limits are 20 uploads and 30 posts per client per UTC day. There is no delete tool; posts are edited or cancelled in Buffer.
+
 ## Access and confidentiality checks
 
 - Every request and generation operation checks current D1 paid status and expiry. Access is checked again before releasing a generated result.

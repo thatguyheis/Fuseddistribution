@@ -138,6 +138,18 @@ function rotateToken(clientId) {
   console.log(`Rotated token for ${clientId}; the previous token is revoked. New credential saved to ${credentialPath}`);
 }
 
+function setPublish(clientId, profileName, reelText) {
+  identifier(clientId, "client ID");
+  if (profileName !== "none" && !/^[a-z0-9]{2,16}$/.test(profileName)) fail("Publish profile must be 2 to 16 lowercase letters or digits, or none.");
+  if (reelText !== "true" && reelText !== "false") fail("Reel access must be true or false.");
+  const profile = profileName === "none" ? "NULL" : sqlString(profileName);
+  execute(`UPDATE clients SET publish_profile = ${profile}, reel_enabled = ${reelText === "true" ? 1 : 0} WHERE id = ${sqlString(clientId)};`);
+  const result = query(`SELECT publish_profile, reel_enabled FROM clients WHERE id = ${sqlString(clientId)};`);
+  if (result.length !== 1) fail(`Client ${clientId} was not found.`);
+  if ((result[0].publish_profile || "none") !== profileName || (result[0].reel_enabled === 1) !== (reelText === "true")) fail("Publish settings could not be verified.");
+  console.log(`Client ${clientId}: publish_profile=${profileName}, reel_enabled=${reelText}. The Worker secret PUBLISH_PROFILE_${profileName.toUpperCase()} must exist for publishing to work.`);
+}
+
 function privateSourcePath(sourcePath) {
   if (!sourcePath) fail("Provide a private source file.");
   let absoluteSource;
@@ -259,13 +271,14 @@ try {
   else if (command === "client-status" && args.length === 1) clientStatus(...args);
   else if (command === "set-paid" && args.length === 4) setPaid(...args);
   else if (command === "rotate-token" && args.length === 1) rotateToken(...args);
+  else if (command === "set-publish" && args.length === 3) setPublish(...args);
   else if (command === "put-policy" && args.length === 3) putPolicy(...args);
   else if (command === "verify-policy" && args.length === 3) verifyPolicy(...args);
   else if (command === "put-playbook" && args.length === 3) putPlaybook(...args);
   else if (command === "verify-playbook" && args.length === 3) verifyPlaybook(...args);
   else if (command === "put-bundle") {
     fail("Raw instruction uploads are retired. No data was written. Use put-policy for private server-side policy JSON.");
-  } else fail("Usage: operator.mjs [--local] create-client <id> <policy> | client-status <id> | set-paid <id> <true|false> <actor> <reason> | rotate-token <id> | put-policy <name> <version> <private-json-file> | verify-policy <name> <version> <private-json-file> | put-playbook <name> <version> <private-markdown-file> | verify-playbook <name> <version> <private-markdown-file>");
+  } else fail("Usage: operator.mjs [--local] create-client <id> <policy> | client-status <id> | set-paid <id> <true|false> <actor> <reason> | rotate-token <id> | set-publish <id> <profile|none> <reel true|false> | put-policy <name> <version> <private-json-file> | verify-policy <name> <version> <private-json-file> | put-playbook <name> <version> <private-markdown-file> | verify-playbook <name> <version> <private-markdown-file>");
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;
