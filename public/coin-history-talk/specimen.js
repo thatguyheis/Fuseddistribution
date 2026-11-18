@@ -3,7 +3,8 @@
     const viewport = viewer.querySelector('.specimen-viewport');
     const flip = viewer.querySelector('[data-specimen-flip]');
     const reset = viewer.querySelector('[data-specimen-reset]');
-    if (!viewport || !flip || !reset) continue;
+    const spin = viewer.querySelector('[data-specimen-spin]');
+    if (!viewport || !flip || !reset || !spin) continue;
 
     const body = document.createElement('div');
     body.className = 'specimen-body';
@@ -28,6 +29,49 @@
     let pitch = initialPitch;
     let yaw = initialYaw;
     let drag;
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const turnDuration = 30000;
+    let spinning = !motion.matches;
+    let inView = false;
+    let frame = 0;
+    let lastTime = null;
+
+    function tick(time) {
+      if (lastTime !== null) {
+        yaw = (yaw + 360 * (time - lastTime) / turnDuration) % 360;
+        render();
+      }
+      lastTime = time;
+      frame = requestAnimationFrame(tick);
+    }
+    function syncSpin() {
+      spin.textContent = spinning ? 'Pause spin' : 'Start spin';
+      if (spinning && inView && !document.hidden) {
+        if (!frame) frame = requestAnimationFrame(tick);
+      } else {
+        cancelAnimationFrame(frame);
+        frame = 0;
+        lastTime = null;
+      }
+    }
+    function pauseSpin() {
+      spinning = false;
+      syncSpin();
+    }
+    spin.hidden = false;
+    spin.addEventListener('click', () => {
+      spinning = !spinning;
+      syncSpin();
+    });
+    motion.addEventListener('change', event => {
+      if (event.matches) pauseSpin();
+    });
+    new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      syncSpin();
+    }).observe(viewport);
+    document.addEventListener('visibilitychange', syncSpin);
+    viewer.querySelector('#inspect')?.addEventListener('click', pauseSpin);
     function render(animate = false) {
       if (sideLabel) {
         const facing = Math.cos(pitch * Math.PI / 180) * Math.cos(yaw * Math.PI / 180);
@@ -43,11 +87,13 @@
       return target + 360 * Math.round((current - target) / 360);
     }
     function resetView() {
+      pauseSpin();
       pitch = nearestAngle(pitch, initialPitch);
       yaw = nearestAngle(yaw, initialYaw);
       render(true);
     }
     function flipView() {
+      pauseSpin();
       const front = Math.cos(pitch * Math.PI / 180) * Math.cos(yaw * Math.PI / 180) >= 0;
       pitch = nearestAngle(pitch, front ? 180 : 0);
       yaw = nearestAngle(yaw, 0);
@@ -65,10 +111,12 @@
         default: return;
       }
       event.preventDefault();
+      pauseSpin();
       render(true);
     });
     viewport.addEventListener('pointerdown', event => {
       if (!event.isPrimary || event.button !== 0) return;
+      pauseSpin();
       drag = { id: event.pointerId, x: event.clientX, y: event.clientY, pitch, yaw };
       viewport.setPointerCapture(event.pointerId);
       viewport.setAttribute('data-dragging', '');

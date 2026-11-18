@@ -33,12 +33,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .masthead-inner, .masthead nav, .wordmark, .actions, .section-heading, .foot, .partner-inner { display: flex; align-items: center; }
 .masthead-inner { min-height: 78px; gap: 3rem; }
 .wordmark { display: inline-flex; gap: .75rem; align-items: center; text-decoration: none; font-size: 1.55rem; letter-spacing: -.045em; white-space: nowrap; }
-.seal {
-  position: relative; display: grid; place-items: center; flex: none; width: 36px; height: 36px;
-  border: 1px solid currentColor; border-radius: 50%; outline: 1px dotted currentColor; outline-offset: -4px;
-  font: italic 24px/1 var(--serif); color: var(--gold);
-}
-.seal::after { content: ""; position: absolute; width: 58%; height: 1px; background: currentColor; transform: rotate(-52deg); }
+.seal { display: block; flex: none; width: 36px; height: 36px; }
 .masthead nav { margin-left: auto; gap: clamp(1.1rem, 3vw, 2.6rem); }
 .masthead nav a, .shop-link, .primary, .text-link, .coin-controls button, .filters button { font-weight: 600; font-size: .91rem; }
 .masthead nav a { text-decoration: none; color: #e1e3d9; }
@@ -173,7 +168,7 @@ footer { border-top: 1px solid var(--dark-line); background: #102923; }
   .masthead nav a { display: inline-block; padding: .35rem 0; font-size: .86rem; }
   .shop-link { padding: .5rem .8rem; }
   .wordmark { font-size: 1.32rem; }
-  .seal { width: 30px; height: 30px; font-size: 21px; }
+  .seal { width: 30px; height: 30px; }
   .cover { grid-template-columns: 1fr; gap: 1.75rem; padding-block: 2.35rem 2rem; }
   .cover-copy { padding: 0; }
   h1 { font-size: clamp(4.2rem, 13vw, 5.5rem); margin-block: 1rem; }
@@ -195,6 +190,7 @@ footer { border-top: 1px solid var(--dark-line); background: #102923; }
   .story-meta h3 { font-size: 1.65rem; }
   .filters { gap: .35rem; }
   .filters button { padding: .45rem .61rem; }
+  .cover .plate-caption { flex-direction: column; align-items: flex-start; }
   .coin-controls button { padding: .5rem; }
   .plate-caption { gap: .5rem; }
   .plate-caption h2 { font-size: 1.14rem; }
@@ -223,7 +219,9 @@ dialog#inspection {
 .specimen-note { max-width: 55rem; margin-top: .7rem; color: #d4ded4; }
 body:has(#inspection[open]) { overflow: hidden; }
 @media (max-width: 460px) {
-  #inspection .plate { height: 78vw; }
+  #inspection .plate-caption { flex-direction: column; align-items: flex-start; }
+  #inspection .plate { height: min(78vw, 100cqw); }
+  #inspection .inspection-stage { container-type: inline-size; }
   #inspection .plate-mark, #inspection .plate-year { top: -.6rem; }
   #inspection .face-label, #inspection .drag-hint { bottom: -.4rem; }
 }
