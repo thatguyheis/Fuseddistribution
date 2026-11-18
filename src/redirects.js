@@ -1,6 +1,7 @@
 // Permanent (301) redirects, checked before static assets. Keys have no trailing slash.
 // Removed posts are also taken out of public/blog/posts.json.
 export const PERMANENT_REDIRECTS = new Map([
+  ["/projects/coinhistorytalk", "/coin-history-talk/"],
   // Retired 2026-11-04: Google Business Profile features Google removed (Messaging, July 2024; Q&A, replaced by Ask Maps).
   ["/blog/google-business-profile-messaging", "/blog/google-business-profile-setup/"],
   ["/blog/google-business-profile-messaging-setup-and-tips", "/blog/google-business-profile-setup/"],

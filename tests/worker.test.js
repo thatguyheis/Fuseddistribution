@@ -4,6 +4,12 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 const ORIGIN = "https://fuseddistribution.com";
 
 describe("Project phone previews", () => {
+  it.each(["/projects/coinhistorytalk", "/projects/coinhistorytalk/"])("opens the coin exhibit from %s", async (path) => {
+    const response = await SELF.fetch(ORIGIN + path, { redirect: "manual" });
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe(ORIGIN + "/coin-history-talk/");
+  });
+
   it("allows same-origin samples without allowing arbitrary external frames", async () => {
     // The test asset binding serves the reserve fixture at the root.
     const response = await SELF.fetch(`${ORIGIN}/`);

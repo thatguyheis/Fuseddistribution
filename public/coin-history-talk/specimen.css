@@ -1,0 +1,67 @@
+.specimen-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  container-type: inline-size;
+  perspective: 1000px;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: grab;
+}
+.specimen-viewport:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+.specimen-viewport[data-dragging] { cursor: grabbing; }
+.specimen-viewport:empty::before,
+.specimen-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: center / cover url("/coin-history-talk/img/fort-vancouver-obverse.webp");
+}
+.specimen-viewport:empty::before { content: ""; }
+.specimen-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.specimen-body {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+.specimen-body[data-settling] {
+  transition: transform 420ms cubic-bezier(.25,.8,.3,1);
+}
+.specimen-face {
+  backface-visibility: hidden;
+  transform: translateZ(2cqw);
+}
+.specimen-face-reverse {
+  background-image: url("/coin-history-talk/img/fort-vancouver-reverse.webp");
+  transform: rotateX(180deg) translateZ(2cqw);
+}
+.specimen-face::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at var(--light-x) var(--light-y), #fff4d824, transparent 62%);
+  box-shadow: inset -1px -2px 3px #1c201a80, inset 1px 1px 2px #efdfba99;
+}
+.specimen-rim {
+  position: absolute;
+  top: calc(50% - 2cqw);
+  left: calc(50% - 2.22cqw);
+  width: 4.44cqw;
+  height: 4cqw;
+  background: repeating-linear-gradient(90deg, #564f45 0%, #928776 8%, #bcb3a2 14%, #6a6155 23%, #514b43 25%);
+  transform: rotateZ(var(--segment)) translateY(-49.95cqw) rotateX(90deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .specimen-body[data-settling] { transition: none; }
+}
