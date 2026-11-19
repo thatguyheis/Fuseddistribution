@@ -199,6 +199,51 @@ footer { border-top: 1px solid var(--dark-line); background: #102923; }
   .partner-inner img { width: 104px; }
   .partner-inner > div { flex: 1 1 100%; }
 }
+
+.partner-credit {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .2rem .65rem;
+  align-items: baseline;
+  margin-top: 1.75rem;
+  padding-top: .85rem;
+  border-top: 1px solid #aab59656;
+  color: #c4d0c4;
+  font-size: .88rem;
+}
+.partner-credit a { color: var(--ivory); text-decoration-color: #899b87; }
+.hoard-feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #eae4d7;
+  border-block: 1px solid #c6bfab;
+}
+.hoard-plate { min-width: 0; position: relative; min-height: 24rem; }
+.hoard-plate img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: 57% 39%; }
+.hoard-plate figcaption { position: absolute; inset: auto 0 0; padding: 2.4rem 1rem .65rem; color: #fff; font-size: .82rem; background: linear-gradient(transparent, #101914ce); }
+.hoard-text { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1rem; padding: clamp(1.5rem, 3.3vw, 3.8rem); }
+.hoard-text h3 { font-size: clamp(2.2rem, 3.8vw, 4.25rem); letter-spacing: -.055em; line-height: 1.02; }
+.hoard-text > p:not(.kicker) { max-width: 32em; font-size: 1.05rem; line-height: 1.55; }
+.date-note { display: flex; align-items: center; gap: 1rem; max-width: 33rem; padding-top: .9rem; border-top: 1px solid #bab6a7; }
+.date-note img { width: clamp(74px, 8.6vw, 118px); height: auto; flex: none; }
+.date-note figcaption { color: #40534a; font-size: .91rem; line-height: 1.4; }
+.date-note strong { display: block; margin-bottom: .15rem; color: var(--ink); font-weight: 650; }
+.feature-link { color: #233c30; font-weight: 650; text-decoration-thickness: 1px; }
+@media (min-width: 1100px) {
+  .stories { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2rem 1.1rem; }
+  .story-meta h3 { font-size: clamp(1.3rem, 1.55vw, 1.65rem); }
+  .story-photo { aspect-ratio: 1.45; }
+}
+@media (max-width: 720px) {
+  .hoard-feature { grid-template-columns: 1fr; }
+  .hoard-plate { min-height: 0; aspect-ratio: 1.5; }
+  .hoard-text { gap: .8rem; }
+  .partner-credit { margin-top: 1.2rem; }
+}
+@media (max-width: 460px) {
+  .hoard-text h3 { font-size: clamp(2.1rem, 11vw, 3rem); }
+}
 @media (prefers-reduced-motion: reduce) { *, *::after { transition: none !important; } }
 .hero::before { opacity: .045; }
 .film-notes { margin-top: 1.1rem; border-color: #647a69; }
