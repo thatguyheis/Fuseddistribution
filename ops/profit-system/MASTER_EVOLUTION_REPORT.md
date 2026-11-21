@@ -1,3 +1,17 @@
+# November 21, 2026 personal Facebook learning
+
+Imported the owner-supplied Muse audit without altering it. It reports 83 original personal-profile reels for October 1 through November 19. Group-share copies and the separate Freebies Page are not pooled. These are Muse-reported dashboard observations, not a new independent Facebook extraction by Codex.
+
+Personal-profile view leader: Morgan O mint-mark reel, 694 views. Watch leader: Pittman Act, 23 seconds and 21% average watched. Best listed tech exposure: input quality, 400 views, followed by Gmail migration, 379, and Buffer verification, 354. Buffer platform leaders remain separate.
+
+Applied editorial priority: lead personal-profile proposals with a real coin-detail mystery and a documented historical paradox; preserve practical tech variety through a custom-domain email authentication check and a unit-price/carton-price AI quote example. Retain the leaked-key sequel as backup. Exact proposed hooks, CTAs, novelty and proof requirements are in content/tech-education/ada-personal-reel-proposals-2026-11-21.json. No queue, render template, operating SOP or schedule changed. No formal fitness winner was promoted.
+
+The proof-first hypothesis now has corroborating reported Facebook retention observations. Test labeled proof within two seconds with the exact approved hook and first-frame hero preserved, rather than adding a separate title-only scene. Require a control and three independent approved posts per arm, fixed D+7 comparison after actual D+1/D+3/D+7 captures, at least 15% median average-watch improvement with no decline in reported average percent watched. Do not treat one-minute views as full completions, engagement clicks as outbound clicks, or missing saves/follows as zero.
+
+Corrections retained alongside the source: the listed October coin cohort has median 429.5 views, not approximately 415; the Lincoln row reports one share despite the narrative top-three summary; the top tech label omits the 400-view input-quality reel. Muse's legacy GBP chat recommendation is held: Google retired that feature in 2024, and current text/WhatsApp eligibility must be checked. The customer-preference percentage has no supplied source and is excluded.
+
+Source and applied observations: ops/profit-system/evolution/sources/muse-facebook-audit-2026-11-20.md and ops/profit-system/evolution/feedback/2026-11-21-muse-facebook-personal-reels.json.
+
 # November 20, 2026 Buffer and ADA review
 
 Fresh Buffer evidence: 651 sent posts in the 90-day snapshot, with 511 mapped to slugs and 140 left unattributed. Capture: November 20, 22:47 Pacific. The prior valid saved snapshot was October 5. Existing four ADA generation records still lack post IDs and D+1/D+3/D+7 evidence, so lifecycle selection remains no_winner. Historical snapshots cannot be reconstructed from current lifetime totals.

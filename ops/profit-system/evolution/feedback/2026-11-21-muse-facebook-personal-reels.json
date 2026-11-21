@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "feedbackId": "muse-facebook-personal-reel-learning-2026-11-21",
+  "system": "algorithmic-darwinism-architect",
+  "recordedAt": "2026-11-21T15:56:48.069556+00:00",
+  "evidenceClass": "user_supplied_muse_dashboard_audit",
+  "independentlyVerifiedFacebookInsights": false,
+  "source": {
+    "path": "ops/profit-system/evolution/sources/muse-facebook-audit-2026-11-20.md",
+    "sha256": "41c8d88002decc73f7cba9cb832663da07718605ab510e1203e6463461c92fd4",
+    "reportedExtractionWindow": "2026-11-20 22:55-23:10 America/Los_Angeles",
+    "account": "Nicholas Hughes personal profile, Professional Mode",
+    "profileUrl": "https://www.facebook.com/Thatguyheis",
+    "effectivePeriod": "2026-10-01 through 2026-11-19",
+    "publishedOriginalReelsReported": 83,
+    "excludedGroupCopiesApprox": 151,
+    "metricsFreshness": "Per-post update time unavailable; extraction time is reported observation time."
+  },
+  "profileTop10": [
+    {
+      "rank": 1,
+      "reel": "[See the tiny O below the eagle (Morgan dollar O mint mark)](https://www.facebook.com/reel/1115278868105397)",
+      "publishedReported": "Oct 13, 12:31 PM",
+      "durationReported": "1:53",
+      "viewers": 604,
+      "views": 694,
+      "totalWatchReported": "1h 51m 07s",
+      "averageWatchReported": "11s",
+      "averagePercentWatchedReported": "9%",
+      "comments": 8,
+      "shares": 0
+    },
+    {
+      "rank": 2,
+      "reel": "[A president enters everyday pocket change (1909 Lincoln cent)](https://www.facebook.com/reel/2173166086883253)",
+      "publishedReported": "Oct 21, 8:33 AM",
+      "durationReported": "1:45",
+      "viewers": 607,
+      "views": 653,
+      "totalWatchReported": "51m 03s",
+      "averageWatchReported": "5s",
+      "averagePercentWatchedReported": "5%",
+      "comments": 1,
+      "shares": 1
+    },
+    {
+      "rank": 3,
+      "reel": "[Why did America put the word peace on a silver dollar?](https://www.facebook.com/reel/1086662984156269)",
+      "publishedReported": "Oct 14, 1:02 PM",
+      "durationReported": "1:49",
+      "viewers": 512,
+      "views": 561,
+      "totalWatchReported": "1h 30m 47s",
+      "averageWatchReported": "10s",
+      "averagePercentWatchedReported": "9%",
+      "comments": 3,
+      "shares": 0
+    },
+    {
+      "rank": 4,
+      "reel": "[America melted millions of silver dollars (Pittman Act)](https://www.facebook.com/reel/1415174240767346)",
+      "publishedReported": "Oct 14, 7:30 PM",
+      "durationReported": "1:50",
+      "viewers": 461,
+      "views": 503,
+      "totalWatchReported": "2h 59m 02s",
+      "averageWatchReported": "23s",
+      "averagePercentWatchedReported": "21%",
+      "comments": 6,
+      "shares": 0
+    },
+    {
+      "rank": 5,
+      "reel": "[For thirty five years\u2026 (Silver Eagle reverse redesign)](https://www.facebook.com/reel/2679057685883780)",
+      "publishedReported": "Nov 1, 12:03 PM",
+      "durationReported": "1:53",
+      "viewers": 446,
+      "views": 485,
+      "totalWatchReported": "49m 31s",
+      "averageWatchReported": "7s",
+      "averagePercentWatchedReported": "6%",
+      "comments": 1,
+      "shares": 1
+    },
+    {
+      "rank": 6,
+      "reel": "[Before AI can help, the raw material has to be right](https://www.facebook.com/reel/1441407974102284)",
+      "publishedReported": "Nov 1, 12:39 PM",
+      "durationReported": "unavailable",
+      "viewers": 372,
+      "views": 400,
+      "totalWatchReported": "22m 21s",
+      "averageWatchReported": "4s",
+      "averagePercentWatchedReported": "3%",
+      "comments": 1,
+      "shares": 1
+    },
+    {
+      "rank": 7,
+      "reel": "[Moving from personal Gmail to Google Workspace is not just a new inbox](https://www.facebook.com/reel/1000333919104165)",
+      "publishedReported": "Nov 7, 5:28 PM",
+      "durationReported": "1:57",
+      "viewers": 369,
+      "views": 379,
+      "totalWatchReported": "27m 39s",
+      "averageWatchReported": "5s",
+      "averagePercentWatchedReported": "4%",
+      "comments": 0,
+      "shares": 1
+    },
+    {
+      "rank": 8,
+      "reel": "[This half dollar pairs two educators (Carver-Washington)](https://www.facebook.com/reel/1079032538467880)",
+      "publishedReported": "Oct 20, 3:08 PM",
+      "durationReported": "2:05",
+      "viewers": 303,
+      "views": 356,
+      "totalWatchReported": "47m 39s",
+      "averageWatchReported": "9s",
+      "averagePercentWatchedReported": "7%",
+      "comments": 5,
+      "shares": 1
+    },
+    {
+      "rank": 9,
+      "reel": "[Did Buffer actually schedule your reel?](https://www.facebook.com/reel/2128691231353418)",
+      "publishedReported": "Nov 4, 4:34 PM",
+      "durationReported": "unavailable",
+      "viewers": 326,
+      "views": 354,
+      "totalWatchReported": "20m 22s",
+      "averageWatchReported": "4s",
+      "averagePercentWatchedReported": "3%",
+      "comments": 1,
+      "shares": 1
+    },
+    {
+      "rank": 10,
+      "reel": "[Wrong answer? Keep the evidence](https://www.facebook.com/reel/1429021125861098)",
+      "publishedReported": "Oct 8, 1:52 PM",
+      "durationReported": "2:01",
+      "viewers": 326,
+      "views": 353,
+      "totalWatchReported": "17m 09s",
+      "averageWatchReported": "3s",
+      "averagePercentWatchedReported": "3%",
+      "comments": 0,
+      "shares": 0
+    }
+  ],
+  "accountSeparation": {
+    "personalProfile": "Primary basis for personal-reel topic selection.",
+    "nicksFreebiesPage": "Separate 45-video Page population, not pooled.",
+    "buffer": "YouTube, Instagram and X remain separate platform baselines."
+  },
+  "observations": [
+    {
+      "finding": "Physical detail question is the Facebook profile view leader",
+      "supportingPostId": "1115278868105397",
+      "views": 694,
+      "averageWatchSecondsReported": 11,
+      "averagePercentWatchedReported": 9
+    },
+    {
+      "finding": "Historical paradox is the Facebook profile watch leader in the reported audit",
+      "supportingPostId": "1415174240767346",
+      "views": 503,
+      "averageWatchSecondsReported": 23,
+      "averagePercentWatchedReported": 21,
+      "totalWatchSecondsReported": 10742
+    },
+    {
+      "finding": "Best listed tech exposure is raw input quality, not Gmail migration",
+      "supportingPostId": "1441407974102284",
+      "views": 400,
+      "averageWatchSecondsReported": 4,
+      "durationUnavailable": true
+    },
+    {
+      "finding": "Migration and publishing verification are useful tech leads",
+      "postIds": [
+        "1000333919104165",
+        "2128691231353418"
+      ],
+      "views": [
+        379,
+        354
+      ]
+    }
+  ],
+  "qualifications": [
+    "Lifetime counts across ages are not causal treatment comparisons.",
+    "Muse reports 5-6-second drop-offs; retention screenshots/raw exports were not supplied. Do not relabel this as independently inspected by Codex.",
+    "One-minute views are not completion for videos longer than one minute.",
+    "Morgan engagement clicks are not established outbound link clicks.",
+    "Reach, saves, attributed follows and link clicks are unavailable. Viewers is kept distinct from reach.",
+    "Paid distribution split is unavailable; absence of a paid marker does not establish organic reach.",
+    "The audit scope ends November 19 but references a November 20 GBP reel; that reel is outside the ranking period.",
+    "Some low-view rows were not fully transcribed, so raw cohort counts/medians are reported approximations."
+  ],
+  "rejectedRecommendations": [
+    {
+      "recommendation": "Legacy Google Business Profile messaging toggle and more-than-half customer preference hook",
+      "reason": "Legacy chat retired July 31, 2024. Current text/WhatsApp options require account eligibility and an actual screen. No source was supplied for the customer-preference statistic.",
+      "sources": [
+        "https://support.google.com/business/answer/14919056",
+        "https://support.google.com/business/answer/15013580"
+      ]
+    }
+  ],
+  "appliedLearning": {
+    "status": "editorial_priorities_recorded",
+    "priorityFamilies": [
+      "coin physical-detail mystery",
+      "coin policy/history paradox",
+      "business migration and verifiable configuration",
+      "AI input structure and correctness"
+    ],
+    "championPromoted": false,
+    "numericalFitnessReward": null,
+    "policyChanged": false,
+    "sourceOfTruthChanged": false,
+    "note": "Record observational topic priority without an unsupported fitness score. Preserve existing required approvals and production gates."
+  },
+  "experiment": {
+    "id": "ADA-PERSONAL-PROOF-EARLY-01",
+    "status": "proposed_not_scheduled",
+    "control": "Hero/hook first with current body proof timing",
+    "treatment": "First frame remains hero with exact approved hook; overlay a readable physical detail or result immediately and show labeled proof within 2 seconds. No extra title-only scene.",
+    "measurement": "Actual D+1/D+3/D+7 observations, fixed D+7 decision; provider average watch seconds primary, provider average percent watched separate secondary. Keep definitions and video duration.",
+    "minimum": "3 independent approved posts per arm in one category and length band, not repost duplicates; no unapproved duplicate posts.",
+    "controls": [
+      "Matched length band, voice, caption format and posting windows",
+      "Counterbalance arms; topic differences remain a confound",
+      "Do not infer an optimum posting time from these lifetime leaders",
+      "Record group-share timing/copy IDs; changing owner distribution habits requires approval",
+      "No early stopping"
+    ],
+    "promotion": "At least 15 percent median watch-time improvement and no decline in median reported average percent watched; no winner unless release QA and all six D+7 records pass."
+  },
+  "auditConsistencyCorrections": [
+    {
+      "field": "October coin median",
+      "reportedApprox": 415,
+      "recomputedFromListedEightViews": 429.5,
+      "note": "429.5, not approximately 415; this is still a descriptive lifetime cohort, not age-adjusted evidence."
+    },
+    {
+      "field": "Top-three share summary",
+      "note": "Narrative says the three most-viewed reels have zero shares, but the Lincoln table row records one. Preserve the table and flag the discrepancy."
+    },
+    {
+      "field": "Top-tech summary",
+      "note": "Raw-input quality has 400 views versus Gmail migration 379; Gmail is not the highest-view tech entry in the supplied table."
+    },
+    {
+      "field": "One-minute view label",
+      "note": "A one-minute view is a sustained-watch threshold, not a completed view on videos longer than one minute."
+    }
+  ]
+}
