@@ -2,9 +2,8 @@
   "version": 1,
   "maxTopicsPerDay": 3,
   "slugs": [
-    "protect-google-workspace-business-email-with-spf-dkim-dmarc",
-    "summarize-your-own-document-with-ai",
-    "draft-a-customer-email-with-ai-and-review-before-sending"
+    "side-by-side-one-number-small-business-should-check-weekly",
+    "checking-names-and-numbers-in-whisper-transcripts"
   ],
   "targetRendersPerDay": 2
 }
