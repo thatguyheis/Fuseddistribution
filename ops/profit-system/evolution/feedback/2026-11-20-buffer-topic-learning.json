@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "feedbackId": "buffer-topic-learning-2026-11-20",
+  "system": "algorithmic-darwinism-architect",
+  "classification": "measured_observation_and_proposed_experiment",
+  "recordedAt": "2026-11-21T06:47:47.794Z",
+  "operatingDate": "2026-11-20",
+  "snapshot": {
+    "path": "ops/profit-system/buffer-metrics/2026-11-20.json",
+    "sha256": "13536a44f79f93ffdbd2e3cad04a9ce845a2c5cb45698c0a8d52c9acb22f3ed6",
+    "capturedAt": "2026-11-21T06:47:47.794Z",
+    "posts": 651,
+    "mappedPosts": 511,
+    "lookbackDays": 90
+  },
+  "observations": [
+    {
+      "slug": "nextjs-env-file-public-browser-variables",
+      "reviewedVideoSha256": "e16f83f9cbc7da1f40c7ac31c7df0175ad47221a25af28a5f2f8fa815232303f",
+      "durationSeconds": 63.0,
+      "approvedHook": "Your API key is hidden in .env. Why can visitors still see it?",
+      "approvedCta": "Check which variables your website sends to visitors.",
+      "posts": [
+        {
+          "postId": "6afcc472fa88ce86dcb04331",
+          "platform": "instagram",
+          "sentAt": "2026-11-18T01:01:39.618Z",
+          "ageHours": 77.77,
+          "ageBucket": "d3",
+          "externalLink": "https://www.instagram.com/reel/Df3RseFFrip/",
+          "views": 144,
+          "impressions": null,
+          "comments": 0,
+          "reactions": 0,
+          "shares": 0,
+          "saves": 0,
+          "bufferReportedAverageWatchSeconds": 4.38,
+          "derivedTotalWatchDividedByViewsSeconds": 3.98,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        },
+        {
+          "postId": "6afcc45dfa88ce86dcb03528",
+          "platform": "twitter",
+          "sentAt": "2026-11-18T01:00:44.296Z",
+          "ageHours": 77.78,
+          "ageBucket": "d3",
+          "externalLink": "https://x.com/290904877/status/2122857502781960581",
+          "views": null,
+          "impressions": 51,
+          "comments": 0,
+          "reactions": 0,
+          "shares": null,
+          "saves": null,
+          "bufferReportedAverageWatchSeconds": null,
+          "derivedTotalWatchDividedByViewsSeconds": null,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        },
+        {
+          "postId": "6afcc441843fae727bb66fd8",
+          "platform": "youtube",
+          "sentAt": "2026-11-18T01:00:44.362Z",
+          "ageHours": 77.78,
+          "ageBucket": "d3",
+          "externalLink": "https://www.youtube.com/shorts/OvNzxQDPFmI",
+          "views": 56,
+          "impressions": null,
+          "comments": 0,
+          "reactions": 1,
+          "shares": null,
+          "saves": null,
+          "bufferReportedAverageWatchSeconds": null,
+          "derivedTotalWatchDividedByViewsSeconds": null,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        }
+      ]
+    },
+    {
+      "slug": "github-secrets-workflow-code-access",
+      "reviewedVideoSha256": "a9c17628d288476c9cf5667ef5c203a6a5dd5a5f41b755ce6c99df0c1f9ae0fa",
+      "durationSeconds": 66.833333,
+      "approvedHook": "Your API key is stored in GitHub Secrets. Which code can use it?",
+      "approvedCta": "Review what your deployment workflow is allowed to access.",
+      "posts": [
+        {
+          "postId": "6afcc474fa88ce86dcb04406",
+          "platform": "instagram",
+          "sentAt": "2026-11-18T01:21:02.548Z",
+          "ageHours": 77.45,
+          "ageBucket": "d3",
+          "externalLink": "https://www.instagram.com/reel/Df3T6R1DzQ1/",
+          "views": 68,
+          "impressions": null,
+          "comments": 0,
+          "reactions": 0,
+          "shares": 0,
+          "saves": 0,
+          "bufferReportedAverageWatchSeconds": 1.9,
+          "derivedTotalWatchDividedByViewsSeconds": 1.79,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        },
+        {
+          "postId": "6afcc45f953f4c1b18bfa482",
+          "platform": "twitter",
+          "sentAt": "2026-11-18T01:20:20.926Z",
+          "ageHours": 77.46,
+          "ageBucket": "d3",
+          "externalLink": "https://x.com/290904877/status/2122862437858693608",
+          "views": null,
+          "impressions": 61,
+          "comments": 0,
+          "reactions": 0,
+          "shares": null,
+          "saves": null,
+          "bufferReportedAverageWatchSeconds": null,
+          "derivedTotalWatchDividedByViewsSeconds": null,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        },
+        {
+          "postId": "6afcc444843fae727bb6705b",
+          "platform": "youtube",
+          "sentAt": "2026-11-18T01:20:07.011Z",
+          "ageHours": 77.46,
+          "ageBucket": "d3",
+          "externalLink": "https://www.youtube.com/shorts/DEfKRS_UNbg",
+          "views": 18,
+          "impressions": null,
+          "comments": 0,
+          "reactions": 0,
+          "shares": null,
+          "saves": null,
+          "bufferReportedAverageWatchSeconds": null,
+          "derivedTotalWatchDividedByViewsSeconds": null,
+          "watchMeasurementPolicy": "Use the provider reported averageTimeWatched for this review. The snapshot derived quotient has a different denominator and is not interchangeable."
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "status": "provisional_topic_priority",
+    "measuredWinnerPromoted": false,
+    "fitnessEligible": false,
+    "reason": "Two same-age security posts provide a directional comparison only. Missing D+1 and D+7 observations, no matched three-sample treatment comparison, and no causal isolation. Older lifetime rankings are topic leads only.",
+    "priorityTopicIds": [
+      "ADA-TECH-20261120-A",
+      "ADA-TECH-20261120-B"
+    ]
+  },
+  "experiment": {
+    "id": "ADA-TECH-PROOF-EARLY-01",
+    "status": "proposed_pending_topic_approval",
+    "control": "Exact approved hero hook and current first evidence timing",
+    "mutation": "Keep exact approved hook spoken and visible, but show one readable redacted proof/result within the first two seconds. Keep narration, duration, voice, captions and posting window matched when practical.",
+    "primaryOutcome": "Same-platform provider-reported average watch time divided by measured video duration; this ratio is not a completion rate.",
+    "secondaryOutcomes": [
+      "D+3 views",
+      "Shares and saves per view, with denominators",
+      "Clicks or follows only when available"
+    ],
+    "decisionPolicy": "At least three comparable posts per treatment and 15 percent median improvement; no promotion from this pair. Record D+1, D+3 and D+7 at their actual times; never backfill historical snapshots.",
+    "qualityConstraints": [
+      "No blank opening",
+      "Exact approved hook and CTA preserved",
+      "No unapproved rerenders or reposts",
+      "Evidence labels and safe zones remain mandatory"
+    ]
+  },
+  "limitations": [
+    "Provider metrics can lag the network.",
+    "Views and X impressions are distinct metrics.",
+    "Current fitness report uses constant 50 for present watch data; it is not a retention rating. Do not use its composite as highest-rated video proof.",
+    "Snapshot averageViewDurationSeconds is derived from total watch time divided by views; raw averageTimeWatched differs.",
+    "No attribution for revenue, leads, causal creative effects or historical exact video bytes."
+  ]
+}

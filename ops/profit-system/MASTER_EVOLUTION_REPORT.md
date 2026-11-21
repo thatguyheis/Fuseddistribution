@@ -1,3 +1,17 @@
+# November 20, 2026 Buffer and ADA review
+
+Fresh Buffer evidence: 651 sent posts in the 90-day snapshot, with 511 mapped to slugs and 140 left unattributed. Capture: November 20, 22:47 Pacific. The prior valid saved snapshot was October 5. Existing four ADA generation records still lack post IDs and D+1/D+3/D+7 evidence, so lifecycle selection remains no_winner. Historical snapshots cannot be reconstructed from current lifetime totals.
+
+The November 17 security pair is verified sent on all three channels. At about 77.5 hours, the .env reel has 144 Instagram views and 56 YouTube views; the GitHub Secrets reel has 68 and 18. X reports 51 versus 61 impressions, so security does not have a universal cross-platform winner. Instagram reports average watch of 4.38 seconds versus 1.9 seconds on 63.0 and 66.83-second reels, respectively. Both have zero Instagram comments, saves and shares at capture. These are topic leads, not proof of improved conversion or a winning visual formula.
+
+Reviewed hash-matched encoded openings at 0, 3 and 8 seconds. The full hook card remains at three seconds; proof is visible in the sampled eight-second frame. Proposed experiment: retain exact approved hook and show readable evidence within two seconds. This is an editorial hypothesis based on the opening and short average watch, not a known drop-off timestamp. Native retention curves are unavailable in this snapshot.
+
+Applied learning: recorded all six exact Buffer IDs, source metrics and exact reel hashes in `evolution/feedback/2026-11-20-buffer-topic-learning.json`; ranked five next-topic proposals in `content/tech-education/ada-topic-proposals-2026-11-20.json`. First choices: credential revocation after exposure, then a measured AI refund-policy comparison. Topics remain proposed for Nick's approval; no production queue, schedule, voice, render gate or SOP rule changed. No measured champion or fitness reward was invented.
+
+Measurement caution: the snapshot derives average watch from total minutes divided by views, while Buffer supplies a distinct averageTimeWatched. This review uses the direct provider metric. The current partial fitness report assigns constant 50 when watch exists; it is not a retention ranking and was not used to select a winner. Correct these analyzer limitations before any automatic retention-based promotion.
+
+Detailed review: `ops/profit-system/evolution/buffer-topic-review-2026-11-20.md`.
+
 # September 11, 2026 owner feedback and efficiency correction
 
 The owner rewarded the LLC silver article diagram hero. FD-HERO-DIAGRAM-V1 is now the preferred editorial recipe for suitable new topics: article-derived decision cards, strong typography and reusable native SVG. The feedback record binds the source and JPEG hashes. One high_quality_delivery reward (+4) records explicit owner approval. No revenue, engagement uplift, render-time saving or measured creative winner is claimed. Existing matched-sample selection gates remain unchanged.

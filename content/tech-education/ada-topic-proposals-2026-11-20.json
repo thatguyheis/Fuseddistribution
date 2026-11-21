@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "date": "2026-11-20",
+  "status": "proposed_not_queued",
+  "ownerRequest": "Use Buffer results and ADA to build next topics",
+  "sourceFeedback": "ops/profit-system/evolution/feedback/2026-11-20-buffer-topic-learning.json",
+  "topics": [
+    {
+      "priority": 1,
+      "id": "ADA-TECH-20261120-A",
+      "topic": "An exposed API key: why deleting the file is not the recovery",
+      "hook": "You deleted the leaked API key. Why can it still work?",
+      "payoff": "Demonstrate revoking a dummy scoped credential, replacing it, and testing that the old credential fails. Clearly label simulation if no safe test environment is available.",
+      "cta": "Check which exposed credentials still need revoking.",
+      "evidenceBasis": [
+        "nextjs-env-file-public-browser-variables",
+        "github-secrets-workflow-code-access"
+      ],
+      "distinctFromPrevious": "Credential invalidation after exposure, rather than browser variable placement or workflow access.",
+      "requiredEvidence": [
+        "Current official provider revocation documentation",
+        "Safe disposable test credential and redacted before/after response, or explicitly labeled diagram"
+      ],
+      "visualPlan": "Redacted old credential ACCEPTED -> revoke -> DENIED, followed by a replacement-access flow; no credential text on screen."
+    },
+    {
+      "priority": 2,
+      "id": "ADA-TECH-20261120-B",
+      "topic": "Compare two AI assistants on the same refund-policy edge case",
+      "hook": "Both AIs sound right. Which one invented a refund?",
+      "payoff": "Use one synthetic refund policy and the exact same test cases. Show the policy violation before explaining a small scored comparison. No brand winner without recorded output.",
+      "cta": "Test one policy edge case before trusting the reply.",
+      "evidenceBasis": [
+        "claude-vs-chatgpt-for-small-business-which-is-better",
+        "using-ai-to-respond-to-google-reviews-automatically"
+      ],
+      "distinctFromPrevious": "New measured policy-adherence example, not a generic assistant comparison, prompt overview or website approval-file check.",
+      "requiredEvidence": [
+        "Synthetic policy and fixed test prompts",
+        "Full saved outputs, model versions, rubric and manual scoring",
+        "Check full historical comparison article for overlap before approval"
+      ],
+      "visualPlan": "Policy beside actual model response; highlight unsupported promise; bar chart of real scored cases with sample count."
+    },
+    {
+      "priority": 3,
+      "id": "ADA-TECH-20261120-C",
+      "topic": "Own the domain, not just the website login",
+      "hook": "You own the website. Who controls the domain?",
+      "payoff": "Explain registrar ownership, DNS and hosting as separate controls using a dummy redacted handover example.",
+      "cta": "Check who controls your domain renewal and recovery.",
+      "evidenceBasis": [
+        "website-handover-checklist-for-small-business-owners"
+      ],
+      "distinctFromPrevious": "Narrow registrar recovery/control demonstration, not another general handover checklist.",
+      "requiredEvidence": [
+        "Current official registrar account/recovery documentation",
+        "Redacted example or labeled flowchart",
+        "Compare the existing handover checklist before approval"
+      ],
+      "visualPlan": "Domain -> DNS -> hosting dependency flow and a three-row access checklist."
+    },
+    {
+      "priority": 4,
+      "id": "ADA-TECH-20261120-D",
+      "topic": "An AI review reply can promise something your business never offered",
+      "hook": "Did your AI reply just promise a refund?",
+      "payoff": "Demonstrate an approval-held review reply constrained by a synthetic business policy.",
+      "cta": "Check promises before you approve an AI reply.",
+      "evidenceBasis": [
+        "using-ai-to-respond-to-google-reviews-automatically"
+      ],
+      "distinctFromPrevious": "Specific promise detection, not broad review-response automation; hold if topic B is selected so the same payoff is not repeated.",
+      "requiredEvidence": [
+        "Synthetic review and policy",
+        "Saved unedited output and corrected draft",
+        "No real customer data or automatic reply publishing"
+      ],
+      "visualPlan": "Claim -> policy check -> owner approval flow."
+    },
+    {
+      "priority": 5,
+      "id": "ADA-TECH-20261120-E",
+      "topic": "Your personal AI login should not be the business handover plan",
+      "hook": "If you leave, can the business still access its AI work?",
+      "payoff": "Map shared assets, approved SOP, account ownership and documented export/recovery options without recommending password sharing.",
+      "cta": "Record where the business can recover its AI work.",
+      "evidenceBasis": [
+        "website-handover-checklist-for-small-business-owners",
+        "where-to-start-with-ai-low-cost-sop"
+      ],
+      "distinctFromPrevious": "Ownership and recovery of AI work, rather than choosing a first AI task or explaining what an SOP is.",
+      "requiredEvidence": [
+        "Current official export and workspace ownership documentation for selected tool",
+        "Synthetic handover map"
+      ],
+      "visualPlan": "Owner -> workspace -> SOP -> export/recovery diagram."
+    }
+  ],
+  "scheduleChanged": false
+}
