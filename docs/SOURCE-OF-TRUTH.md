@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 22, 2026-11-17. Owner: Nick Hughes.
+Version 23, 2026-11-21. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -23,11 +23,16 @@ Use `docs/REEL-PRODUCTION-RUNBOOK.md` for the compact production checklist and e
 
 ## 2. Business scope
 
+Nick's current brand split controls new topic selection and destination routing: **personal brand and personal page are tech, AI and business technology workflows; coin history, collecting and auction content belong to the Coins and Auctions Since 1994 client workflow.** Read `ops/editorial-brand-routing.json` before preparing a slate. Its two topic paths are separate. Personal Buffer creates enforce the personal metadata brand and reject coin-history workups. Never use the personal Buffer key, personal voice or personal page for a new client coin reel.
+
+The legacy coin scope/targets below describe existing Fused infrastructure, not permission to publish new coin content on Nick's personal channels. Do not transfer legacy queues into client production: a client candidate first needs a matching actual lot, current auction/outro, client approvals and the client SOP. Existing published posts and the legacy renderer are not migrated by this routing change. The existing business-growth exception and its schedule remain in place for eligible personal tech work.
+
+
 | Item | Decision (2026-10-22) |
 |---|---|
-| What we publish | **Coin history only.** One blog post plus one reel per episode. |
+| New topic destinations | **Personal: tech only. Client coin topics: Coins and Auctions Since 1994.** Separate SOPs, voices, approvals and posting accounts. |
 | Daily target | **3 finished pairs per Pacific day** (blog live and verified, reel passed release QA). |
-| Stopped | All other blog and reel types: local business marketing, website and SEO tips, AI and automation, accessibility, general silver investing. No new posts, no new reels, no Buffer scheduling of them. |
+| Personal exclusions | Coin history, collecting and auction topics. Client topic selection is not approval to render, upload or post. |
 | Existing non-coin posts | Stay live unless retired with a permanent redirect in `src/redirects.js`. Retired blog slugs must not be regenerated or registered. |
 | Brand | Fused Reserve (silver). Tag every new post `brand: "silver"`. |
 | Voice | Plain first person. No em dashes. No hyphenated words in prose. No AI buzzwords (list in `public/blog/BLOG-SOP.md`). |
@@ -76,7 +81,7 @@ Nick's personal and first party generations use the existing local procedures an
 | Buffer media origin | `https://fused-reel-media.luxraycoco.workers.dev/reels` and `/reels-x`, isolated read-only Worker backed by REELS_KV; deploy with `wrangler.media.jsonc`. Website links stay on fuseddistribution.com. API edits resend video assets and channel metadata. | media preparation defaults, reel-media-worker.js, buffer-live.mjs |
 | Buffer reuse | Same reel not reposted within 7 days | `buffer-backlog-runner.mjs` `repostAfterDays` |
 | Buffer window | Schedule between 13:00 and 23:59 Pacific, 20 minutes apart | `buffer-backlog-runner.mjs` |
-| Buffer scope | Only coin-history slugs (YouTube and X get `--slugs`; Instagram copies the YouTube queue) | `buffer-backlog-runner.mjs` `plannerArgs()` |
+| Buffer destination scope | Personal API creates require brand `tech` and reject coin-history workups. Legacy coin-only backlog cannot publish to personal channels. Client uses only the C1994 tool and account. | `ops/editorial-brand-routing.json`, `buffer-live.mjs`, `personal-content-route.mjs` |
 
 ---
 

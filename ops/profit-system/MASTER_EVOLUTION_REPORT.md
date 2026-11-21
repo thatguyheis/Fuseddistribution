@@ -1,3 +1,9 @@
+# Personal and client brand routing
+
+Nick's November 21 routing instruction supersedes the mixed personal slate below. Personal content is tech only. The personal ADA proposal file now contains the DKIM email check, unit/carton-price AI quote and leaked-key revocation backup. Coin briefs (V.D.B. and GSA sales) are in `Coins since 1994/Drafts/ada-topic-proposals-2026-11-21.json`, with no assigned lot or auction and no publication approval.
+
+The client video SOP and ChatGPT handoff were updated locally in the intentionally gitignored client folder. They retain the client intro, voice, approval process and Buffer account. Personal-profile historical coin metrics remain source observations, not client-account fitness. SOURCE-OF-TRUTH and `ops/editorial-brand-routing.json` record the destination split. The personal Buffer publisher now rejects non-tech metadata or a coin-history workup before creating a post. Seventeen scoped routing/media/capacity checks passed. This did not publish, transfer or reschedule any content.
+
 # November 21, 2026 personal Facebook learning
 
 Imported the owner-supplied Muse audit without altering it. It reports 83 original personal-profile reels for October 1 through November 19. Group-share copies and the separate Freebies Page are not pooled. These are Muse-reported dashboard observations, not a new independent Facebook extraction by Codex.

@@ -4,66 +4,10 @@
   "status": "ranked_proposals_not_queued",
   "sourceFeedback": "ops/profit-system/evolution/feedback/2026-11-21-muse-facebook-personal-reels.json",
   "profile": "Nicholas Hughes personal Facebook profile",
-  "selection": "For the personal-profile slate, prioritize the first two coin topics; preserve tech variety with the next two. For a tech-only slate, select priorities 3 and 4. This is topic selection advice, not a production or scheduling instruction.",
+  "selection": "Next personal pair: business-email DKIM check, then unit-price versus carton-price AI quote. Leaked-key revocation is the backup. Coin briefs are assigned to the client backlog, not this slate.",
   "topics": [
     {
       "priority": 1,
-      "id": "ADA-PERSONAL-20261121-01",
-      "category": "coin history",
-      "topic": "The three letters on some 1909 Lincoln cents",
-      "hook": "Why do some 1909 pennies have these three letters?",
-      "payoff": "Explain the V.D.B. placement/change with documented history and matched real specimens.",
-      "openingProof": "Real readable V.D.B. reverse crop with a small location label at frame zero, exact hook visible; pull back to the coin.",
-      "cta": "Would you check the date or the initials first?",
-      "basis": [
-        {
-          "postId": "2173166086883253",
-          "platform": "facebook",
-          "viewsReported": 653
-        },
-        {
-          "postId": "1115278868105397",
-          "platform": "facebook",
-          "viewsReported": 694
-        }
-      ],
-      "why": "Combines a successful coin-detail question with the Lincoln audience lead.",
-      "novelty": "Existing Lincoln article covers presidential portrait adoption, not a complete initials-location/removal lesson.",
-      "productionConditions": [
-        "Locate and identify owner-approved VDB and comparison coin images; never generate or alter details.",
-        "Map removal and restoration history to primary documentation before narration approval.",
-        "Do not imply every early 1909 cent carries the same mint mark or value."
-      ]
-    },
-    {
-      "priority": 2,
-      "id": "ADA-PERSONAL-20261121-02",
-      "category": "coin history",
-      "topic": "Why the government sold its stored Carson City dollars",
-      "hook": "Why did the government auction silver dollars it had kept for decades?",
-      "payoff": "Explain the GSA sale and how packaging connects to the documented disposal process, without conflating it with the Pittman melting program.",
-      "openingProof": "Identified real GSA holder/coin beside a dated source excerpt; show the object and historical question together.",
-      "cta": "Would you investigate the coin or its government holder first?",
-      "basis": [
-        {
-          "postId": "1415174240767346",
-          "platform": "facebook",
-          "viewsReported": 503,
-          "averageWatchSecondsReported": 23,
-          "averagePercentWatchedReported": 21
-        }
-      ],
-      "why": "Tests the historical policy-paradox family that holds attention, rather than copying only the highest-view topic.",
-      "novelty": "Stored-coin disposal process is a distinct event from silver-dollar melting and replacement.",
-      "primaryResearchLead": "https://www.gao.gov/assets/113058.pdf",
-      "productionConditions": [
-        "Source-check dates, inventory and sale mechanism with GAO/GSA records.",
-        "Require owner-approved matching coin and holder photography; no simulated coin details.",
-        "No scarcity or investment-return promises."
-      ]
-    },
-    {
-      "priority": 3,
       "id": "ADA-PERSONAL-20261121-03",
       "category": "practical tech",
       "topic": "Check whether your custom-domain business email is DKIM signed",
@@ -94,10 +38,12 @@
         "Capture actual test headers, remove personal addresses and IDs.",
         "Do not imply DKIM guarantees inbox placement, authentic intent or all-domain security.",
         "Do not change live DNS during content preparation."
-      ]
+      ],
+      "destinationBrand": "Nick personal brand / Fused Distribution",
+      "status": "ranked_proposal_pending_owner_approval"
     },
     {
-      "priority": 4,
+      "priority": 2,
       "id": "ADA-PERSONAL-20261121-04",
       "category": "practical AI",
       "topic": "Unit price versus carton price in an AI-generated quote",
@@ -123,10 +69,12 @@
         "Check the existing raw-material lesson/transcript before final approval to avoid repeating its example.",
         "Use synthetic data and show actual model output; do not invent a model mistake.",
         "Record prompt, model/version, expected result and output."
-      ]
+      ],
+      "destinationBrand": "Nick personal brand / Fused Distribution",
+      "status": "ranked_proposal_pending_owner_approval"
     },
     {
-      "priority": 5,
+      "priority": 3,
       "id": "ADA-PERSONAL-20261121-05",
       "category": "practical security",
       "topic": "Why deleting a leaked key does not revoke it",
@@ -153,10 +101,16 @@
         "Keep earlier November 20 proposal and exact evidence trail.",
         "No real production keys or unauthorized API changes.",
         "Do not present Facebook and Instagram views as equivalent."
-      ]
+      ],
+      "destinationBrand": "Nick personal brand / Fused Distribution",
+      "status": "ranked_proposal_pending_owner_approval"
     }
   ],
   "scheduleChanged": false,
   "globalScopeChanged": false,
-  "previousTechSlate": "content/tech-education/ada-topic-proposals-2026-11-20.json"
+  "previousTechSlate": "content/tech-education/ada-topic-proposals-2026-11-20.json",
+  "brand": "Nick personal brand / Fused Distribution",
+  "scope": "tech, AI, software and business technology workflows only",
+  "coinTopicsTransferredTo": "Coins since 1994/Drafts/ada-topic-proposals-2026-11-21.json",
+  "ownerRoutingInstruction": "Coin topics go to Coins and Auctions Since 1994; tech posts go to the personal page."
 }

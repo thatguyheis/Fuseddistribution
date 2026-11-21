@@ -9,6 +9,9 @@ Attach two files with this one:
 
 ## 1. Your job in one paragraph
 
+Personal brand routing: Nick's personal page is for tech, AI and business technology lessons. Coin topics and auction lots belong to `Coins since 1994/` and its client SOP, voice and Buffer account. Read `ops/editorial-brand-routing.json` in the repository. Do not put coin candidates into the personal slate, personal renderer or personal posting queue. The current personal ADA slate is `content/tech-education/ada-personal-reel-proposals-2026-11-21.json`: DKIM test-message check, unit/carton-price AI quote, then leaked-key revocation as backup. Each remains subject to the existing topic/script approval process.
+
+
 Make short vertical tech education reels for Fused Distribution using the same method as the Coins Since 1994 auction lot videos: idea sheet first, Nick approves, then a segment script with a picture named for every line, charts and stat cards with sources, the same transitions and caption style, voiced and rendered one reel at a time, checked, and reported honestly. The handoff file is the method. This file tells you what to swap. Where the two disagree about a tech reel, this file wins. Nick has the final say.
 
 ## 2. What stays the same

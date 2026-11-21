@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "authority": "Nick, 2026-11-21: coin content is client work; tech posts belong on my personal page.",
+  "scope": "Editorial topic, evidence and destination routing. Does not assign lots or authorize publishing.",
+  "personal": {
+    "brand": "Nick personal brand / Fused Distribution",
+    "allowedTopicCategories": [
+      "practical tech",
+      "practical AI",
+      "practical security"
+    ],
+    "excludedTopicCategories": [
+      "coin history",
+      "coin collecting",
+      "auction lots"
+    ],
+    "topicsPath": "content/tech-education/ada-personal-reel-proposals-2026-11-21.json",
+    "facebookProfile": "https://www.facebook.com/Thatguyheis",
+    "bufferWorkflow": "public/blog/scripts/buffer-live.mjs",
+    "voice": "Fused personal voice only",
+    "allowedMetadataBrands": [
+      "tech"
+    ],
+    "blockedWorkupDirectories": [
+      "content/coin-history"
+    ]
+  },
+  "client": {
+    "brand": "Coins and Auctions Since 1994",
+    "allowedTopicCategories": [
+      "coin history",
+      "coin collecting",
+      "auction lots"
+    ],
+    "topicsPath": "Coins since 1994/Drafts/ada-topic-proposals-2026-11-21.json",
+    "workflowRoot": "Coins since 1994",
+    "videoSop": "Coins since 1994/COINS-SINCE-1994-VIDEO-SOP.md",
+    "bufferWorkflow": "Coins since 1994/tools/c1994_buffer.mjs",
+    "voice": "C1994 reference only",
+    "requires": [
+      "matching actual auction lot",
+      "current auction date/outro",
+      "owner idea/script approval",
+      "owner final review and scheduling approval"
+    ]
+  },
+  "evidenceRule": "Keep source account, platform, period and metrics attached. Personal-profile coin observations may inspire client candidates but never count as client-account fitness.",
+  "legacyRule": "Existing published content is historical. Do not backfill client lots from legacy Fused coin queues or use personal credentials to publish client content.",
+  "enforcedBy": "public/blog/scripts/buffer-live.mjs before every personal Buffer create, including dry runs"
+}

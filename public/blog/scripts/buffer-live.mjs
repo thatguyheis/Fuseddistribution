@@ -3,6 +3,7 @@ import {assertCtaOrder, confirmedCtaHistory} from './lib/cta-rotation.mjs';
 import { boundedSentHistory } from './lib/buffer-scheduling-policy.mjs';
 import {assertFreeSlot, repairCadence} from './lib/buffer-cadence.mjs';
 import {assertVisualReview} from '../../../video/scripts/lib/visual-review.mjs';
+import { assertPersonalContentRoute } from './lib/personal-content-route.mjs';
 import { remainingBufferRequests, requireBufferRequestCapacity } from './lib/buffer-request-budget.mjs';
 import { existsSync, readFileSync, writeFileSync, mkdirSync, renameSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
@@ -472,6 +473,7 @@ async function publish(token, args) {
     if (!job.slug || !supportedChannelIds.has(job.channelId)) {
       throw new Error('Queue contains an invalid slug or unsupported channel.');
     }
+    assertPersonalContentRoute(repoRoot, job.slug);
     const previous = confirmedBySlug.get(job.slug);
     if (previous?.postId) {
       const live = livePosts.find((post) => post.id === previous.postId);

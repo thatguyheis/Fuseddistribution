@@ -211,16 +211,16 @@
   "appliedLearning": {
     "status": "editorial_priorities_recorded",
     "priorityFamilies": [
-      "coin physical-detail mystery",
-      "coin policy/history paradox",
-      "business migration and verifiable configuration",
-      "AI input structure and correctness"
+      "personal: business migration and verifiable configuration",
+      "personal: AI input structure and correctness",
+      "client candidate: coin physical-detail mystery",
+      "client candidate: coin policy/history paradox"
     ],
     "championPromoted": false,
     "numericalFitnessReward": null,
-    "policyChanged": false,
-    "sourceOfTruthChanged": false,
-    "note": "Record observational topic priority without an unsupported fitness score. Preserve existing required approvals and production gates."
+    "policyChanged": true,
+    "sourceOfTruthChanged": true,
+    "note": "Nick separated destinations. Topic routing is applied in SOURCE-OF-TRUTH, both SOPs and editorial-brand-routing.json. No new topic or publication approval is inferred."
   },
   "experiment": {
     "id": "ADA-PERSONAL-PROOF-EARLY-01",
@@ -257,5 +257,13 @@
       "field": "One-minute view label",
       "note": "A one-minute view is a sustained-watch threshold, not a completed view on videos longer than one minute."
     }
-  ]
+  ],
+  "ownerRoutingDecision": {
+    "date": "2026-11-21",
+    "personalScope": "tech only",
+    "coinScope": "Coins and Auctions Since 1994 client",
+    "clientTopicsPath": "Coins since 1994/Drafts/ada-topic-proposals-2026-11-21.json",
+    "personalTopicsPath": "content/tech-education/ada-personal-reel-proposals-2026-11-21.json",
+    "personalCoinPrioritySuperseded": true
+  }
 }
