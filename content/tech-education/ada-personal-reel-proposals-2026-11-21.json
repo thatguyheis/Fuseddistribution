@@ -71,9 +71,10 @@
         "Record prompt, model/version, expected result and output."
       ],
       "destinationBrand": "Nick personal brand / Fused Distribution",
-      "status": "manual_preview_ready_for_owner_review",
+      "status": "manual_reel_and_blog_published_buffer_scheduled",
       "manualPreviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-      "manualPreviewSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be"
+      "manualPreviewSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be",
+      "publicationReceipt": "content/tech-education/manual-reviews/2026-11-22.json"
     },
     {
       "priority": 3,
@@ -105,9 +106,10 @@
         "Do not present Facebook and Instagram views as equivalent."
       ],
       "destinationBrand": "Nick personal brand / Fused Distribution",
-      "status": "manual_preview_ready_for_owner_review",
+      "status": "manual_reel_and_blog_published_buffer_scheduled",
       "manualPreviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-      "manualPreviewSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f"
+      "manualPreviewSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f",
+      "publicationReceipt": "content/tech-education/manual-reviews/2026-11-22.json"
     }
   ],
   "scheduleChanged": false,
@@ -116,5 +118,6 @@
   "brand": "Nick personal brand / Fused Distribution",
   "scope": "tech, AI, software and business technology workflows only",
   "coinTopicsTransferredTo": "Coins since 1994/Drafts/ada-topic-proposals-2026-11-21.json",
-  "ownerRoutingInstruction": "Coin topics go to Coins and Auctions Since 1994; tech posts go to the personal page."
+  "ownerRoutingInstruction": "Coin topics go to Coins and Auctions Since 1994; tech posts go to the personal page.",
+  "latestDeliveryReceipt": "content/tech-education/manual-reviews/2026-11-22.json"
 }

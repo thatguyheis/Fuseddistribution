@@ -2,7 +2,7 @@
   "version": 1,
   "datePacific": "2026-11-22",
   "ownerRequest": "let's manualy generate and review reels here, so that we can get some done its been so long.",
-  "status": "approved_publication_in_progress",
+  "status": "two_blogs_live_and_six_buffer_posts_confirmed",
   "publishingAuthorized": true,
   "blogsGenerated": true,
   "items": [
@@ -40,8 +40,47 @@
       "proofVisibleAtFrameZero": true,
       "visualReview": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/work/2026-11-22-tech-01/reel-T-06/visual-review.json",
       "packageSha256": "da7a088d74ddc5f98e376a010c95d817aae9877be1e9db7df2e534b305db8bec",
-      "status": "approved_for_publication",
-      "blogUrl": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/"
+      "status": "blog_live_reel_scheduled",
+      "blogUrl": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/",
+      "blogLiveVerified": true,
+      "embedSha256Verified": true,
+      "bufferPosts": [
+        {
+          "platform": "youtube",
+          "postId": "6b031e49bf5d5a73b6a7228c",
+          "channelId": "6a3e63375ab6d2f1067461b2",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:00:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/ai-quote-unit-price-versus-carton-price/ai-quote-unit-price-versus-carton-price.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        },
+        {
+          "platform": "x",
+          "postId": "6b031e5dd5eabfb8ccc37b08",
+          "channelId": "6a3e73fb5ab6d2f10674b516",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:00:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/ai-quote-unit-price-versus-carton-price/ai-quote-unit-price-versus-carton-price.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        },
+        {
+          "platform": "instagram",
+          "postId": "6b031e68c72676f5e944df45",
+          "channelId": "6a67c5d64b2d03035f4f0228",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:00:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/ai-quote-unit-price-versus-carton-price/ai-quote-unit-price-versus-carton-price.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        }
+      ],
+      "liveVerification": {
+        "slug": "ai-quote-unit-price-versus-carton-price",
+        "blogUrl": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/",
+        "canonicalVerified": true,
+        "heroVerified": true,
+        "embeddedMediaUrl": "https://fuseddistribution.com/reels/ai-quote-unit-price-versus-carton-price/ai-quote-unit-price-versus-carton-price.mp4",
+        "embeddedMediaMatchesReviewedSha256": true
+      }
     },
     {
       "id": "T-07",
@@ -77,9 +116,50 @@
       "proofVisibleAtFrameZero": true,
       "visualReview": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/work/2026-11-22-tech-02/reel-T-07/visual-review.json",
       "packageSha256": "04410b88407d29227c12a10286163d8abf8e80e366361b5f6fe800612dbb076a",
-      "status": "approved_for_publication",
-      "blogUrl": "https://fuseddistribution.com/blog/deleting-a-leaked-api-key-does-not-revoke-it/"
+      "status": "blog_live_reel_scheduled",
+      "blogUrl": "https://fuseddistribution.com/blog/deleting-a-leaked-api-key-does-not-revoke-it/",
+      "blogLiveVerified": true,
+      "embedSha256Verified": true,
+      "bufferPosts": [
+        {
+          "platform": "youtube",
+          "postId": "6b031e4bd5eabfb8ccc376a2",
+          "channelId": "6a3e63375ab6d2f1067461b2",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:20:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/deleting-a-leaked-api-key-does-not-revoke-it/deleting-a-leaked-api-key-does-not-revoke-it.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        },
+        {
+          "platform": "x",
+          "postId": "6b031e5fd5eabfb8ccc37b6f",
+          "channelId": "6a3e73fb5ab6d2f10674b516",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:20:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/deleting-a-leaked-api-key-does-not-revoke-it/deleting-a-leaked-api-key-does-not-revoke-it.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        },
+        {
+          "platform": "instagram",
+          "postId": "6b031e6cd864a01105dcb532",
+          "channelId": "6a67c5d64b2d03035f4f0228",
+          "status": "scheduled",
+          "dueAt": "2026-11-22T21:20:00.000Z",
+          "videoUrl": "https://fused-reel-media.luxraycoco.workers.dev/reels/deleting-a-leaked-api-key-does-not-revoke-it/deleting-a-leaked-api-key-does-not-revoke-it.mp4",
+          "verifiedAt": "2026-11-22T16:56:02.786319+00:00"
+        }
+      ],
+      "liveVerification": {
+        "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+        "blogUrl": "https://fuseddistribution.com/blog/deleting-a-leaked-api-key-does-not-revoke-it/",
+        "canonicalVerified": true,
+        "heroVerified": true,
+        "embeddedMediaUrl": "https://fuseddistribution.com/reels/deleting-a-leaked-api-key-does-not-revoke-it/deleting-a-leaked-api-key-does-not-revoke-it.mp4",
+        "embeddedMediaMatchesReviewedSha256": true
+      }
     }
   ],
-  "publicationRequest": "Commit and push both to buffer, and finsh matching blogs, push that as well when done. NExt go ahead and help me pick new topics, and give me options which one to pic"
+  "publicationRequest": "Commit and push both to buffer, and finsh matching blogs, push that as well when done. NExt go ahead and help me pick new topics, and give me options which one to pic",
+  "completedAt": "2026-11-22T16:56:02.786319+00:00",
+  "deploymentVersion": "6e5d67a8-5381-49d2-8ba2-e9c631296080"
 }

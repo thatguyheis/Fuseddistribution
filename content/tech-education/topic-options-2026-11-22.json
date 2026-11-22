@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "datePacific": "2026-11-22",
+  "brand": "tech",
+  "status": "options_presented_pending_owner_selection",
+  "selected": [],
+  "recommended": [
+    1,
+    2
+  ],
+  "selectionPolicy": "Present options and wait for Nick to select the next pair. No approval or render completion is inferred from a proposal.",
+  "adaRationale": "Practical question, visible early proof and one small action from the existing personal-brand ADA feedback. These are editorial hypotheses, not measured winning topics.",
+  "options": [
+    {
+      "id": 1,
+      "topic": "Make an AI answer usable by an automation",
+      "hook": "Your AI answer looks right. Will your automation accept it?",
+      "outline": "Compare a prose-wrapped answer with valid JSON, then check required fields and types before passing it to the next step.",
+      "cta": "Validate one sample before connecting the next step.",
+      "proofPlan": "Record real JSON parser and field/type checks using synthetic contact data. Show actual accepted/rejected output, a field table and a decision flow.",
+      "sources": [
+        "https://docs.python.org/3/library/json.html",
+        "https://www.rfc-editor.org/rfc/rfc8259"
+      ],
+      "recommended": true
+    },
+    {
+      "id": 2,
+      "topic": "Retry automation without sending the same email twice",
+      "hook": "The automation retried. Did your customer get the email twice?",
+      "outline": "Show why an uncertain result needs reconciliation and how a stable job identity can prevent duplicate work in a local simulated outbox.",
+      "cta": "Check the first result before retrying the send.",
+      "proofPlan": "Use no real messages. Record a local simulated outbox with a stable job ID; show attempt count versus completed actions and a retry decision flow. Explain that provider support and durable state matter; an ID by itself is not a universal guarantee.",
+      "sources": [
+        "https://docs.stripe.com/api/idempotent_requests"
+      ],
+      "recommended": true
+    },
+    {
+      "id": 3,
+      "topic": "Check the QR code in the finished reel",
+      "hook": "Your QR code scans in the image. Will it scan in the video?",
+      "outline": "Compare the source QR with decoded final video frames and smaller phone-size samples.",
+      "cta": "Scan the final video before scheduling it.",
+      "proofPlan": "Use an approved public URL. Preserve the actual decoded results from source and encoded frames. Show dimensions and a delivery-check flow. Do not invent a failed scan or imply every device behaves alike.",
+      "sources": [
+        "https://github.com/zxing/zxing"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Why correct caption words can still appear late",
+      "hook": "Whisper got every word right. Why are the captions still late?",
+      "outline": "Separate word accuracy from timing by comparing an intentionally offset subtitle track with corrected alignment.",
+      "cta": "Check the timing on one spoken sentence.",
+      "proofPlan": "Use authorized local audio and actual encoded output. Label the deliberately introduced offset, show a timing timeline and a before/after timing table. This is different from caption overlap and name/number recognition.",
+      "sources": [
+        "https://github.com/openai/whisper"
+      ]
+    }
+  ]
+}

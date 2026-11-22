@@ -3,7 +3,7 @@
   "productionDatePacific": "2026-11-23",
   "selectedAt": "2026-11-22T15:45:40.797134+00:00",
   "selectedBy": "Codex under standing two-per-night personal-tech authorization",
-  "status": "manual_previews_completed_select_fresh_replacements",
+  "status": "awaiting_owner_next_topic_selection",
   "targetNewPairs": 2,
   "maxTopicsPerDay": 3,
   "notes": [
@@ -27,7 +27,10 @@
       "packageReady": false,
       "manualPreviewReady": true,
       "manualPreviewFile": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-01/reel-T-06-ai-quote-unit-price-versus-carton-price.mp4",
-      "manualPreviewSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be"
+      "manualPreviewSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be",
+      "status": "completed_manually_2026-11-22",
+      "blogLiveVerified": true,
+      "bufferScheduledVerified": true
     },
     {
       "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
@@ -44,10 +47,14 @@
       "packageReady": false,
       "manualPreviewReady": true,
       "manualPreviewFile": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-02/reel-T-07-deleting-a-leaked-api-key-does-not-revoke-it.mp4",
-      "manualPreviewSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f"
+      "manualPreviewSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f",
+      "status": "completed_manually_2026-11-22",
+      "blogLiveVerified": true,
+      "bufferScheduledVerified": true
     }
   ],
   "manualGenerationDatePacific": "2026-11-22",
   "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-  "nextPreparationAction": "Both selected reels were generated manually today for owner review. Choose and prepare TWO DIFFERENT fresh tech topics for November 23 under standing nightly authority. Do not regenerate these exports, rewrite their dates, or claim matching blogs/publishing are complete."
+  "nextPreparationAction": "Both prior selected reels and matching blogs are completed today; exact Buffer IDs and live embed checks are in the manual review receipt. Do not regenerate these exports or count them as November 23 production. Nick requested options before choosing the next pair; present the options and use his next selection to prepare two DIFFERENT topics.",
+  "nextTopicOptions": "content/tech-education/topic-options-2026-11-22.json"
 }
