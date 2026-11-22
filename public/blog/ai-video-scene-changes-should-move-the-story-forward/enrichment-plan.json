@@ -69,10 +69,10 @@
   "soundEffects": [
     {
       "segmentIndex": 1,
-      "file": "youtube-open-and-close-window.mp3",
-      "sourceStartSeconds": 0.4,
+      "file": "youtube-cartoon-metal-thunk.mp3",
+      "sourceStartSeconds": 1.88,
       "durationSeconds": 0.35,
-      "purpose": "Soft accent as the contrast card appears"
+      "purpose": "Soft step accent as the contrast card appears"
     },
     {
       "segmentIndex": 5,
