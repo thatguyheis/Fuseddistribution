@@ -73,9 +73,28 @@
     "summarize-your-own-document-with-ai",
     "why-ai-video-works-better-with-story-structure"
   ],
+  "deliveryRun": {
+    "checkedAt": "2026-11-22T22:19:00Z",
+    "reconciledDuePostIds": [
+      "6b031e49bf5d5a73b6a7228c",
+      "6b031e4bd5eabfb8ccc376a2",
+      "6b031e5dd5eabfb8ccc37b08",
+      "6b031e5fd5eabfb8ccc37b6f",
+      "6b031e68c72676f5e944df45",
+      "6b031e6cd864a01105dcb532"
+    ],
+    "reconciliation": "All six are sent with matching channels, external links and video assets.",
+    "eligibleSlug": "why-ai-video-works-better-with-story-structure",
+    "sourceReleaseQa": "approved-sources, release-reel READY, qa-local pass; exact MP4 SHA-256 41be32a457d64d7e3076fe34cb67ae74342f238c53c8982b064fdb1110fcf48d",
+    "hostedVerification": "reels and reels-x both returned complete 6984282-byte bodies with the exact local SHA-256",
+    "articleVerification": "canonical article and catalog returned HTTP 200 and contain the matching reel",
+    "bufferAttempt": "YouTube publish stopped before create: You have already scheduled the maximum number of posts YouTube allows in a day (2). No post ID returned.",
+    "result": "delivery_blocked_provider_daily_cap",
+    "nextAction": "Do not retry or schedule duplicates; resume after the provider daily cap resets and re-check live capacity."
+  },
   "limits": [
     "No new daytime TTS or encoding was started by this audit.",
-    "No Buffer post or blog publication was completed in this repair turn.",
+    "No new Buffer post was created; the provider rejected the eligible YouTube create before returning an ID.",
     "Candidates require actual current-source, encoded-media and delivery checks; stale readyForPosting alone is insufficient.",
     "Tomorrow production cannot be claimed successful before packages and the actual run pass."
   ],
