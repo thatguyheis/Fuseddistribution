@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "productionDatePacific": "2026-11-23",
+  "createdAt": "2026-11-22T17:54:57.900837+00:00",
+  "brand": "tech",
+  "status": "awaiting_owner_selection",
+  "requestedSelectionCount": 3,
+  "selected": [],
+  "recommended": [
+    1,
+    3,
+    4
+  ],
+  "ownerRequest": "Let's pick topics for tonights generation, give me 7 options and i'll pick the 3 we go with",
+  "selectionPolicy": "Nick will choose three. Do not select substitutes, render or change the production queue before the reply. The global recurring target is not changed by presenting options.",
+  "adaRationale": "Practical personal tech problems with readable proof early, one clear payoff and one small CTA. These are editorial hypotheses, not measured performance winners.",
+  "options": [
+    {
+      "id": 1,
+      "topic": "Turn meeting notes into confirmed actions",
+      "hook": "Did anyone actually agree to that deadline?",
+      "outline": "Use a synthetic meeting excerpt to separate suggestions from agreed tasks, owners and dates. Show the quote beside the action table.",
+      "cta": "Check the agreed owner and deadline before creating the task.",
+      "primarySources": [],
+      "renderApproved": false
+    },
+    {
+      "id": 2,
+      "topic": "Retry automation without duplicate emails",
+      "hook": "The automation retried. Did your customer get the email twice?",
+      "outline": "Demonstrate a local simulated outbox with a stable job identity and a check of the first result. Do not send real messages or imply all providers support idempotency.",
+      "cta": "Check the first result before retrying the send.",
+      "primarySources": [
+        "https://docs.stripe.com/api/idempotent_requests"
+      ],
+      "renderApproved": false
+    },
+    {
+      "id": 3,
+      "topic": "Hidden instructions inside documents",
+      "hook": "Your AI read the document. Whose instructions did it follow?",
+      "outline": "Use a harmless labeled document example to explain the distinction between source text and authorized instructions. Show an instruction-boundary flow. Do not claim any prompt makes injection impossible.",
+      "cta": "Treat document text as evidence, not permission.",
+      "primarySources": [
+        "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+      ],
+      "renderApproved": false
+    },
+    {
+      "id": 4,
+      "topic": "Shorter AI prompts with a master SOP",
+      "hook": "Why are you pasting your entire SOP into every AI request?",
+      "outline": "Compare a full pasted SOP with a focused task brief that retains governing instructions and a master SOP reference. Measure actual input size; do not promise equal output quality or cost savings without a matched test.",
+      "cta": "Keep one master SOP and prepare a focused task brief.",
+      "primarySources": [],
+      "renderApproved": false
+    },
+    {
+      "id": 5,
+      "topic": "Time zones in automated schedules",
+      "hook": "You scheduled nine a.m. Nine a.m. where?",
+      "outline": "Convert one dated event between named time zones and UTC, then show the actual timestamp and clock comparison. Do not alter real schedules.",
+      "cta": "Check the date and time zone before scheduling.",
+      "primarySources": [
+        "https://docs.python.org/3/library/zoneinfo.html"
+      ],
+      "renderApproved": false
+    },
+    {
+      "id": 6,
+      "topic": "Check a QR code after video export",
+      "hook": "Your QR code scans in the image. Will it scan in the video?",
+      "outline": "Test an approved public QR URL in source artwork, actual encoded frames and smaller viewing samples. Show actual decode results; do not invent a failure.",
+      "cta": "Scan the final video before scheduling it.",
+      "primarySources": [
+        "https://github.com/zxing/zxing"
+      ],
+      "renderApproved": false
+    },
+    {
+      "id": 7,
+      "topic": "Check whether AI citations support the claim",
+      "hook": "Your AI answer has sources. Do those sources actually support it?",
+      "outline": "Compare a claim with the exact passage in a real primary source. Use labeled illustrative claims or actual saved model output; never fabricate a model error. Show a claim-to-evidence table.",
+      "cta": "Open one source and check the exact claim.",
+      "primarySources": [],
+      "renderApproved": false
+    }
+  ]
+}

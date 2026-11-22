@@ -3,7 +3,7 @@
   "productionDatePacific": "2026-11-23",
   "selectedAt": "2026-11-22T16:59:51.832356+00:00",
   "selectedBy": "Nick",
-  "status": "manual_previews_and_blog_drafts_completed_select_fresh_replacements",
+  "status": "awaiting_owner_three_topic_selection",
   "targetNewPairs": 2,
   "maxTopicsPerDay": 3,
   "notes": [
@@ -14,8 +14,8 @@
   ],
   "manualGenerationDatePacific": "2026-11-22",
   "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-  "nextPreparationAction": "Nick requested these two reels manually on November 22; both final media and matching blog drafts are completed, with exact hashes and pending review/publication scope in currentManualReceipt. Do not regenerate them, count them as November 23 new production, or infer publication approval. At the existing 20:30 Luna pass prepare TWO DIFFERENT fresh personal-tech packages under standing nightly authority, with current evidence and full QA. Keep delivery/review of these existing files separate.",
-  "nextTopicOptions": "content/tech-education/topic-options-2026-11-22.json",
+  "nextPreparationAction": "Nick requested seven options and will choose three for tonight. Await his selection from nextTopicOptions; do not choose substitutes or arm an unapproved slate. Once selected, prepare exactly the approved topics under the dated owner scope and existing serial/QA safeguards. The prior two manual videos and matching blog drafts remain completed review inventory, not new nightly production.",
+  "nextTopicOptions": "content/tech-education/topic-options-2026-11-23.json",
   "previousCompletedTopics": [
     {
       "slug": "ai-quote-unit-price-versus-carton-price",
@@ -142,5 +142,6 @@
   "manualGenerationRequestedAt": "2026-11-22T17:22:02.830095+00:00",
   "manualGenerationRequest": "generate now",
   "currentManualReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json",
-  "manualCompletedAt": "2026-11-22T17:45:42.730031+00:00"
+  "manualCompletedAt": "2026-11-22T17:45:42.730031+00:00",
+  "requestedSelectionCount": 3
 }
