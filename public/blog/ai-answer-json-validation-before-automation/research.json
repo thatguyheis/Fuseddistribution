@@ -1,0 +1,23 @@
+{
+  "reviewedAt": "2026-11-22",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3/library/json.html",
+      "checkedDate": "2026-11-22"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259",
+      "checkedDate": "2026-11-22"
+    }
+  ],
+  "localEvidence": {
+    "file": "content/tech-education/2026-11-23/evidence/json-contract-results.json",
+    "classification": "Hand-authored synthetic fixtures; actual parser/contract outputs"
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Only the labeled local teaching example; no model accuracy or performance benchmark"
+    }
+  ]
+}

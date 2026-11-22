@@ -3,7 +3,7 @@
   "productionDatePacific": "2026-11-23",
   "selectedAt": "2026-11-22T16:59:51.832356+00:00",
   "selectedBy": "Nick",
-  "status": "owner_selected_requires_package_preparation",
+  "status": "manual_previews_and_blog_drafts_completed_select_fresh_replacements",
   "targetNewPairs": 2,
   "maxTopicsPerDay": 3,
   "notes": [
@@ -14,7 +14,7 @@
   ],
   "manualGenerationDatePacific": "2026-11-22",
   "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-  "nextPreparationAction": "At the existing November 22 20:30 Pacific Luna pass, finish exactly these two fresh sourced packages, validate all sources and media, update the production queue and write the ready November 23 handoff for the 02:00 serial runner. Evidence checks passed; article, artwork, enrichment, final script and render preflight are still required. Do not render the completed November 22 topics again.",
+  "nextPreparationAction": "Nick requested these two reels manually on November 22; both final media and matching blog drafts are completed, with exact hashes and pending review/publication scope in currentManualReceipt. Do not regenerate them, count them as November 23 new production, or infer publication approval. At the existing 20:30 Luna pass prepare TWO DIFFERENT fresh personal-tech packages under standing nightly authority, with current evidence and full QA. Keep delivery/review of these existing files separate.",
   "nextTopicOptions": "content/tech-education/topic-options-2026-11-22.json",
   "previousCompletedTopics": [
     {
@@ -93,7 +93,12 @@
       "topicApproved": true,
       "renderApproved": false,
       "packageReady": false,
-      "status": "selected_requires_package_preparation"
+      "status": "manual_media_and_blog_draft_completed_owner_review_pending",
+      "manualPreviewReady": true,
+      "manualPreviewFile": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-03/reel-T-08-ai-answer-json-validation-before-automation.mp4",
+      "manualPreviewSha256": "30b3e10223977b1ddc55aa6fc33a46164ad4a1ad0a263befeca3ccee472b9efa",
+      "manualGeneratedDatePacific": "2026-11-22",
+      "blogDraftComplete": true
     },
     {
       "optionId": 4,
@@ -126,7 +131,16 @@
       "topicApproved": true,
       "renderApproved": false,
       "packageReady": false,
-      "status": "selected_requires_package_preparation"
+      "status": "manual_media_and_blog_draft_completed_owner_review_pending",
+      "manualPreviewReady": true,
+      "manualPreviewFile": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-04/reel-T-09-whisper-correct-words-late-captions.mp4",
+      "manualPreviewSha256": "11800189d9df500b1185d35d15bed812407dc7febe2c1bbb0bf190812505535d",
+      "manualGeneratedDatePacific": "2026-11-22",
+      "blogDraftComplete": true
     }
-  ]
+  ],
+  "manualGenerationRequestedAt": "2026-11-22T17:22:02.830095+00:00",
+  "manualGenerationRequest": "generate now",
+  "currentManualReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json",
+  "manualCompletedAt": "2026-11-22T17:45:42.730031+00:00"
 }

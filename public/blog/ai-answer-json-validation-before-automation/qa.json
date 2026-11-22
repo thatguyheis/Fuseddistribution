@@ -1,0 +1,28 @@
+{
+  "slug": "ai-answer-json-validation-before-automation",
+  "mode": "codex-editorial",
+  "pass": false,
+  "score": 90,
+  "blockers": [
+    "Final owner listen/watch and publication authorization pending. Generation now was authorized; no new publication request was inferred."
+  ],
+  "reviewed_at": "2026-11-22T17:32:21.243852+00:00",
+  "review_notes": [
+    "Read the full sourced article, checked actual synthetic/local evidence and inspected hero and evidence graphics.",
+    "Both article drafts pass copy lint; final exact MP4 passed speech, decoded caption bands, codec, duration, size, sync and audio checks.",
+    "The caption delay is deliberately imposed; JSON inputs are hand-authored teaching fixtures, not captured AI errors.",
+    "Publishing gate remains closed pending owner media review and publication scope."
+  ],
+  "artifactSha256": {
+    "verified.md": "ce35f10c49f486f135264f1afb1510d9df1aae78dd6e2e9a4850a13ec4178b8f",
+    "index.html": "ef478dd028e4859628e068ff415a85e123ca8647feba9bfa853b880ca237df53",
+    "meta.json": "a6e74896a8275e677eec02959996a7aa3107acda79af810cbff1579d3b875f37",
+    "research.json": "da2d7f480a2adbf1e906f7dbd599af2c2c663af38e567394b6430fe85638a635",
+    "hero.jpg": "e0ee0da181f5ba2ff997ace38fa54c84e5ac7311ad58ca239f41a007f069dc3f",
+    "photo-post.jpg": "926497544f8afe6094fbcea169e3a494b9f9efac6218cdf2eff2d4813ce297d1",
+    "reel-script.md": "280eea8a4c6579f0998033f0af8803f6d38cc161b6171dc403cd4f1bcf9108ed",
+    "reel-data.md": "5e02de42a84e648079757ee57afabee02932e546097ec9c2658105ca0503eb18",
+    "social-copy.json": "03f82f2fce902d0bdd6b5dd3549b4800e727c013eca4adc423a0f2ca2493b364",
+    "images/evidence.jpg": "52a4388cd72f7f7e2abaf07e31e45550d5ee208853cb5add3acd5021ba7b952a"
+  }
+}

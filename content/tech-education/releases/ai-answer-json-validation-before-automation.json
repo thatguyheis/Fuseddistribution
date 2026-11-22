@@ -1,0 +1,156 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "ai-answer-json-validation-before-automation",
+  "id": "T-08",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "topicSelection": "Let's do 1 and 4",
+    "generationRequest": "generate now",
+    "publicationRequest": null
+  },
+  "publishingAuthorized": false,
+  "status": "final_media_passed_owner_review_pending",
+  "approvedHook": "Your AI answer looks right. Will your automation accept it?",
+  "approvedCta": "Validate one sample before connecting the next step.",
+  "narration": [
+    "Your AI answer looks right. Will your automation accept it?",
+    "My next step needs a contact name and email. A readable answer still has to meet that input contract.",
+    "These four samples are handwritten teaching data, not captured mistakes from an AI model.",
+    "The first puts a sentence before the data. Python rejects it as invalid JSON, before checking the fields.",
+    "The second is valid JSON but has no email field. Parsing successfully does not make the record complete.",
+    "The third puts a number in the email field. Our small contract requires text that is not blank instead.",
+    "The fourth supplies both fields as strings. It passes these checks, so the workflow can consider the next step.",
+    "That does not prove the email address exists, the information is accurate, or the person agreed to messages.",
+    "Check the format, then the required fields and types. Hold failed records and show a useful reason.",
+    "Validate one sample before connecting the next step."
+  ],
+  "scriptSha256": "280eea8a4c6579f0998033f0af8803f6d38cc161b6171dc403cd4f1bcf9108ed",
+  "sha256": "30b3e10223977b1ddc55aa6fc33a46164ad4a1ad0a263befeca3ccee472b9efa",
+  "seconds": 65.266667,
+  "bytes": 8773456,
+  "lufs": -17.87,
+  "truePeakDb": -1.41,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 20.666666666666668,
+      "meanAbsolutePixelError": 2.1161
+    },
+    {
+      "seconds": 24.833333333333332,
+      "meanAbsolutePixelError": 1.785
+    },
+    {
+      "seconds": 59.93333333333333,
+      "meanAbsolutePixelError": 2.2825
+    },
+    {
+      "seconds": 61.86666666666667,
+      "meanAbsolutePixelError": 2.4472
+    }
+  ],
+  "visualReview": {
+    "sha256": "30b3e10223977b1ddc55aa6fc33a46164ad4a1ad0a263befeca3ccee472b9efa",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-08",
+      "segment": 1,
+      "heard": "Your AI answer looks right. Will your automation accept it?",
+      "expected": "Your AI answer looks right. Will your automation accept it?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 2,
+      "heard": "My next step needs a contact name and email. A readable answer still has to meet that input contract.",
+      "expected": "My next step needs a contact name and email. A readable answer still has to meet that input contract.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 3,
+      "heard": "These four samples are handwritten teaching data, not captured mistakes from an AI model.",
+      "expected": "These four samples are handwritten teaching data, not captured mistakes from an AI model.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 4,
+      "heard": "The first puts a sentence before the data. Python rejects it as invalid, J -S -O -N, before checking the fields.",
+      "expected": "The first puts a sentence before the data. Python rejects it as invalid JSON, before checking the fields.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 5,
+      "heard": "The second is valid JSON but has no email field. Parsing successfully does not make the record complete.",
+      "expected": "The second is valid JSON but has no email field. Parsing successfully does not make the record complete.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 6,
+      "heard": "The third puts a number in the email field. Our small contract requires text that is not blank instead.",
+      "expected": "The third puts a number in the email field. Our small contract requires text that is not blank instead.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 7,
+      "heard": "The fourth supplies both fields and strings. It passes these checks so the workflow can consider the next step.",
+      "expected": "The fourth supplies both fields as strings. It passes these checks, so the workflow can consider the next step.",
+      "score": 0.9473684210526315,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 8,
+      "heard": "That does not prove the email address exists, the information is accurate, or the person agreed to messages.",
+      "expected": "That does not prove the email address exists, the information is accurate, or the person agreed to messages.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 9,
+      "heard": "Check the format, then the required fields and types. Hold failed records and show a useful reason.",
+      "expected": "Check the format, then the required fields and types. Hold failed records and show a useful reason.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-08",
+      "segment": 10,
+      "heard": "Validate one sample before connecting the next step.",
+      "expected": "Validate one sample before connecting the next step.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "0cdc0a0861cd3a2fca11a3e053b7d258d05ed7e905b7bad50dd771a856aad347",
+  "createdAt": "2026-11-22T17:32:21.243852+00:00"
+}

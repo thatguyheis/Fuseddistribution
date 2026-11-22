@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-11-22",
+  "sources": [
+    {
+      "url": "https://github.com/openai/whisper",
+      "checkedDate": "2026-11-22"
+    }
+  ],
+  "localEvidence": {
+    "file": "content/tech-education/2026-11-23/evidence/caption-offset-results.json",
+    "classification": "Actual recognized sentence; deliberately imposed delay. Original timings are estimates, not ground truth."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Only the labeled local teaching example; no model accuracy or performance benchmark"
+    }
+  ]
+}

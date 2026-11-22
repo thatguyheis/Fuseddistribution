@@ -2,7 +2,7 @@
   "datePacific": "2026-11-22",
   "productionDatePacific": "2026-11-23",
   "ownerReply": "Let's do 1 and 4",
-  "status": "selected_briefs_and_evidence_ready_for_evening_preparation",
+  "status": "superseded_by_completed_owner_requested_manual_generation",
   "automation": {
     "id": "daily-business-growth-blog-and-reel",
     "status": "ACTIVE",
@@ -63,5 +63,7 @@
     "source": "Actual authorized Chatterbox recording and small.en recognition from November 22, exact hashes in evidence/caption-offset-results.json",
     "warning": "The delayed track is intentionally imposed teaching data, not a measured Whisper failure. Original timings are estimates. Actual encoded comparison remains to be built and inspected."
   },
-  "nextAction": "Existing Luna preparation completes both selected packages, validates them, updates the queue and writes the exact dated handoff for the local serial runner. Do not count briefs or evidence alone as ready production."
+  "nextAction": "Review the completed November 22 manual files via the receipt. The next nightly pass prepares different fresh topics, not another export of these two.",
+  "manualOwnerRequest": "generate now",
+  "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json"
 }

@@ -1,0 +1,156 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "whisper-correct-words-late-captions",
+  "id": "T-09",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "topicSelection": "Let's do 1 and 4",
+    "generationRequest": "generate now",
+    "publicationRequest": null
+  },
+  "publishingAuthorized": false,
+  "status": "final_media_passed_owner_review_pending",
+  "approvedHook": "Whisper got every word right. Why are the captions still late?",
+  "approvedCta": "Check the timing on one spoken sentence.",
+  "narration": [
+    "Whisper got every word right. Why are the captions still late?",
+    "Words and timing are separate checks. I am using one short recording with its actual saved recognition output.",
+    "The recognized sentence matches the approved text. That is one checked example, not a guarantee about every recording.",
+    "For this demonstration, I deliberately move the caption track one second later. Every word stays the same.",
+    "This is an imposed delay, not an error measured in the original Whisper run. The labels make that distinction visible.",
+    "The decoded comparison frame comes from the same audio with original and deliberately delayed caption tracks.",
+    "The timing table shows the shift. The original timestamps are recognition estimates, so they still need review against the audio.",
+    "A correct timing file also needs the correct placement in the video. Inspect the actual encoded output.",
+    "If the words are right, check the timeline before generating another voice recording. Review the opening, scene changes and ending.",
+    "Check the timing on one spoken sentence."
+  ],
+  "scriptSha256": "dbf010e65cabd12f7df90e60a1fda4f5965478bbcd30ebf98c3aac8ea443a989",
+  "sha256": "11800189d9df500b1185d35d15bed812407dc7febe2c1bbb0bf190812505535d",
+  "seconds": 65.5,
+  "bytes": 9150182,
+  "lufs": -17.69,
+  "truePeakDb": -1.37,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 24.0,
+      "meanAbsolutePixelError": 2.518
+    },
+    {
+      "seconds": 25.733333333333334,
+      "meanAbsolutePixelError": 1.8693
+    },
+    {
+      "seconds": 59.86666666666667,
+      "meanAbsolutePixelError": 2.2136
+    },
+    {
+      "seconds": 61.9,
+      "meanAbsolutePixelError": 1.8664
+    }
+  ],
+  "visualReview": {
+    "sha256": "11800189d9df500b1185d35d15bed812407dc7febe2c1bbb0bf190812505535d",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-09",
+      "segment": 1,
+      "heard": "Whisper got every word right. Why are the captions still late?",
+      "expected": "Whisper got every word right. Why are the captions still late?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 2,
+      "heard": "Words and timing are separate checks. I am using one short recording with its actual saved recognition output.",
+      "expected": "Words and timing are separate checks. I am using one short recording with its actual saved recognition output.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 3,
+      "heard": "The recognized sentence matches the approved text. That is one checked example, not a guarantee about every recording.",
+      "expected": "The recognized sentence matches the approved text. That is one checked example, not a guarantee about every recording.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 4,
+      "heard": "For this demonstration, I deliberately move the caption track one second later. Every word stays the same.",
+      "expected": "For this demonstration, I deliberately move the caption track one second later. Every word stays the same.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 5,
+      "heard": "This is an imposed delay, not an error measured in the original whisper run. The labels make that distinction visible.",
+      "expected": "This is an imposed delay, not an error measured in the original Whisper run. The labels make that distinction visible.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 6,
+      "heard": "The decoded comparison frame comes from the same audio with original and deliberately delayed caption tracks.",
+      "expected": "The decoded comparison frame comes from the same audio with original and deliberately delayed caption tracks.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 7,
+      "heard": "The timing table shows the shift. The original timestamps are recognition estimates, so they still need review against the audio.",
+      "expected": "The timing table shows the shift. The original timestamps are recognition estimates, so they still need review against the audio.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 8,
+      "heard": "A correct timing file also needs the correct placement in the video. Inspect the actual encoded output.",
+      "expected": "A correct timing file also needs the correct placement in the video. Inspect the actual encoded output.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 9,
+      "heard": "If the words are right, check the timeline before generating another voice recording, review the opening, scene changes, and ending.",
+      "expected": "If the words are right, check the timeline before generating another voice recording. Review the opening, scene changes and ending.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-09",
+      "segment": 10,
+      "heard": "Check the timing on one spoken sentence.",
+      "expected": "Check the timing on one spoken sentence.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "1182a6efa548be46414f6604a03aca020b8ee61a6bba1f41d027b4cfc5805e42",
+  "createdAt": "2026-11-22T17:45:08.538061+00:00"
+}

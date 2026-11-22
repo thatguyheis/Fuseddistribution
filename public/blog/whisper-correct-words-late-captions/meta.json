@@ -1,0 +1,32 @@
+{
+  "title": "Whisper Got the Words Right. Why Are the Captions Still Late?",
+  "slug": "whisper-correct-words-late-captions",
+  "description": "Separate caption words from video timing with an actual recording and a deliberately delayed track. Check the final export before generating another voice.",
+  "ogDescription": "Separate caption words from video timing with an actual recording and a deliberately delayed track. Check the final export before generating another voice.",
+  "date": "2026-11-22",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "Video",
+    "Whisper"
+  ],
+  "alt": "Original and delayed caption tracks compared",
+  "ctaLine": "Whisper got every word right. Why are the captions still late?",
+  "contentGraphic": {
+    "label": "Deliberately imposed teaching offset",
+    "rows": [
+      {
+        "condition": "Original recognition",
+        "action": "First word starts at 0.08 seconds, an estimate"
+      },
+      {
+        "condition": "Deliberately delayed copy",
+        "action": "First word starts at 1.08 seconds"
+      },
+      {
+        "condition": "Final video",
+        "action": "Inspect actual encoded caption placement"
+      }
+    ]
+  }
+}

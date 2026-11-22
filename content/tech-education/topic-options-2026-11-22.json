@@ -2,7 +2,7 @@
   "version": 1,
   "datePacific": "2026-11-22",
   "brand": "tech",
-  "status": "owner_selected_for_2026-11-23_preparation",
+  "status": "selected_topics_generated_manually_pending_owner_review",
   "selected": [
     1,
     4
@@ -63,5 +63,6 @@
     }
   ],
   "ownerReply": "Let's do 1 and 4",
-  "selectedAt": "2026-11-22T16:59:51.832356+00:00"
+  "selectedAt": "2026-11-22T16:59:51.832356+00:00",
+  "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json"
 }

@@ -1,0 +1,31 @@
+{
+  "title": "Your AI Answer Looks Right. Will Your Automation Accept It?",
+  "slug": "ai-answer-json-validation-before-automation",
+  "description": "Check AI workflow inputs with a real Python example. Four synthetic contact records show why valid JSON still needs required fields, types and further review.",
+  "ogDescription": "Check AI workflow inputs with a real Python example. Four synthetic contact records show why valid JSON still needs required fields, types and further review.",
+  "date": "2026-11-22",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "Automation"
+  ],
+  "alt": "Four synthetic contact records checked locally",
+  "ctaLine": "Your AI answer looks right. Will your automation accept it?",
+  "contentGraphic": {
+    "label": "Hand-authored synthetic fixtures",
+    "rows": [
+      {
+        "condition": "Parse the input",
+        "action": "Reject prose outside the JSON object"
+      },
+      {
+        "condition": "Check the required fields",
+        "action": "Require name and email as nonempty strings"
+      },
+      {
+        "condition": "Before an external action",
+        "action": "Verify accuracy and authorization separately"
+      }
+    ]
+  }
+}
