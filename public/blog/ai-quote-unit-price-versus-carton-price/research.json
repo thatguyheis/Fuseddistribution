@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-11-22T16:51:57.943530+00:00",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3/library/decimal.html",
+      "checkedDate": "2026-11-22"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "da7a088d74ddc5f98e376a010c95d817aae9877be1e9db7df2e534b305db8bec",
+    "reelSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be",
+    "note": "Synthetic quote and independent Decimal calculation; actual saved assistant response has no exposed exact model identifier."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Recorded synthetic teaching example only"
+    }
+  ]
+}

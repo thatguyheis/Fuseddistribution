@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-22T16:51:57.943530+00:00",
+  "sources": [
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+      "checkedDate": "2026-11-22"
+    },
+    {
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+      "checkedDate": "2026-11-22"
+    }
+  ],
+  "localEvidence": {
+    "sourcePackageSha256": "04410b88407d29227c12a10286163d8abf8e80e366361b5f6fe800612dbb076a",
+    "reelSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f",
+    "note": "Dummy token and local in-memory registry only. Simulated result codes are not real HTTP requests or provider security tests."
+  },
+  "stats": [
+    {
+      "source_name": "Fused",
+      "claim": "Recorded synthetic teaching example only"
+    }
+  ]
+}

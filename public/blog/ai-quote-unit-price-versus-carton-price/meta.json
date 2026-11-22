@@ -1,0 +1,27 @@
+{
+  "title": "AI Quotes: Check the Unit Price Before the Carton Price",
+  "slug": "ai-quote-unit-price-versus-carton-price",
+  "description": "Check an AI quote by labeling price units, carton sizes and sales rules. A worked example shows why thirty requested items can total either USD 60 or USD 72.",
+  "ogDescription": "AI Quotes: Check the Unit Price Before the Carton Price.",
+  "alt": "Synthetic quote compares item and carton",
+  "date": "2026-11-22",
+  "tags": [
+    "AI Tools",
+    "Automation"
+  ],
+  "brand": "tech",
+  "ctaLine": "Would your AI quote use the unit price or the carton price?",
+  "contentGraphic": {
+    "label": "Synthetic worked example",
+    "rows": [
+      {
+        "condition": "Individual sales permitted",
+        "action": "30 items at USD 2 = USD 60"
+      },
+      {
+        "condition": "Whole cartons only",
+        "action": "3 cartons supply 36 items for USD 72"
+      }
+    ]
+  }
+}

@@ -336,3 +336,8 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 - ffprobe-check-mp4-container-video-audio - Nick approved manual topic, corrected short reel and matching blog publication. Brand: tech.
 - nextjs-env-file-public-browser-variables - Nick approved manual security lesson and matching blog and Buffer publication. Brand: tech.
 - github-secrets-workflow-code-access - Nick approved manual security lesson and matching blog and Buffer publication. Brand: tech.
+
+## Manual tech lessons November 22, 2026
+
+- ai-quote-unit-price-versus-carton-price - Owner approved synthetic quote lesson, matching blog and Buffer scheduling. Brand: tech.
+- deleting-a-leaked-api-key-does-not-revoke-it - Owner approved local dummy credential lesson, matching blog and Buffer scheduling. Brand: tech.

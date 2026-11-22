@@ -1,0 +1,157 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+  "id": "T-07",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "generationRequest": "let's manualy generate and review reels here, so that we can get some done its been so long.",
+    "publicationRequest": "Commit and push both to buffer, and finsh matching blogs, push that as well when done. NExt go ahead and help me pick new topics, and give me options which one to pic"
+  },
+  "approvedHook": "You deleted the leaked API key. Why can it still work?",
+  "approvedCta": "Check which exposed credentials still need revoking.",
+  "narration": [
+    "You deleted the leaked API key. Why can it still work?",
+    "Removing a key from a document changes that document. It does not automatically invalidate the credential at its provider.",
+    "This is a local teaching simulation with a dummy token. No real account or production credential is involved.",
+    "The simulated request succeeds before removal. It still succeeds after the document copy is cleared, because the registry still accepts it.",
+    "When the simulation revokes the token in that registry, the same request is denied. Removal and revocation are different actions.",
+    "For an actual exposure, follow the provider instructions to revoke or rotate the credential. GitHub recommends doing that first.",
+    "Update authorized services that need a replacement, then check that they work and the exposed credential no longer grants access.",
+    "Review the affected logs and copies without pasting the secret into another chat or screenshot.",
+    "This demonstration explains the boundary. It does not prove a real incident is resolved or test your provider.",
+    "Check which exposed credentials still need revoking."
+  ],
+  "scriptSha256": "10739682cdc225a004a2ae47b92d45aa719a8d6f8110c74eecc4e8bcad32fac4",
+  "sha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f",
+  "seconds": 72.733333,
+  "bytes": 9946027,
+  "lufs": -17.52,
+  "truePeakDb": -1.43,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 24.266666666666666,
+      "meanAbsolutePixelError": 2.0366
+    },
+    {
+      "seconds": 28.4,
+      "meanAbsolutePixelError": 2.0245
+    },
+    {
+      "seconds": 33.3,
+      "meanAbsolutePixelError": 1.5889
+    },
+    {
+      "seconds": 33.93333333333333,
+      "meanAbsolutePixelError": 2.0009
+    },
+    {
+      "seconds": 39.3,
+      "meanAbsolutePixelError": 2.1126
+    }
+  ],
+  "visualReview": {
+    "sha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-07",
+      "segment": 1,
+      "heard": "You deleted the leaked API key. Why can it still work?",
+      "expected": "You deleted the leaked API key. Why can it still work?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 2,
+      "heard": "Removing a key from a document changes that document. It does not automatically invalidate the credential at its provider.",
+      "expected": "Removing a key from a document changes that document. It does not automatically invalidate the credential at its provider.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 3,
+      "heard": "This is a local teaching simulation with a dummy token. No real account or production credential is involved.",
+      "expected": "This is a local teaching simulation with a dummy token. No real account or production credential is involved.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 4,
+      "heard": "The simulated request succeeds before removal. It still succeeds after the document copy is cleared because the registry still accepts it.",
+      "expected": "The simulated request succeeds before removal. It still succeeds after the document copy is cleared, because the registry still accepts it.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 5,
+      "heard": "When the simulation revokes the token in that registry, the same request is denied. Removal and revocation are different actions.",
+      "expected": "When the simulation revokes the token in that registry, the same request is denied. Removal and revocation are different actions.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 6,
+      "heard": "For an actual exposure, follow the provider instructions to revoke or rotate the credential. GitHub recommends doing that first.",
+      "expected": "For an actual exposure, follow the provider instructions to revoke or rotate the credential. GitHub recommends doing that first.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 7,
+      "heard": "Update authorized services that need a replacement, then check that they work and the exposed credential no longer grants access.",
+      "expected": "Update authorized services that need a replacement, then check that they work and the exposed credential no longer grants access.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 8,
+      "heard": "Review the affected logs and copies without pasting the secret into another chat or screenshot.",
+      "expected": "Review the affected logs and copies without pasting the secret into another chat or screenshot.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 9,
+      "heard": "This demonstration explains the boundary. It does not prove a real incident is resolved or tests your provider.",
+      "expected": "This demonstration explains the boundary. It does not prove a real incident is resolved or test your provider.",
+      "score": 0.9444444444444444,
+      "issues": []
+    },
+    {
+      "id": "T-07",
+      "segment": 10,
+      "heard": "Check which exposed credentials still need revoking.",
+      "expected": "Check which exposed credentials still need revoking.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "04410b88407d29227c12a10286163d8abf8e80e366361b5f6fe800612dbb076a",
+  "createdAt": "2026-11-22T16:51:57.943530+00:00"
+}

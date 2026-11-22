@@ -1,0 +1,27 @@
+{
+  "slug": "ai-quote-unit-price-versus-carton-price",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T16:52:42.656902+00:00",
+  "review_notes": [
+    "Read the full article and checked calculations, assumptions and source attribution against the approved narration and saved local evidence.",
+    "Quote example uses synthetic data with both sales rules; revocation example is an isolated in-memory simulation, not real provider traffic.",
+    "Inspected both new hero graphics; retained the encoded-frame, speech and caption reviews bound to the exact approved MP4.",
+    "Article lint and qa-local passed. Nick explicitly authorized matching blogs, Git push and Buffer scheduling."
+  ],
+  "artifactSha256": {
+    "verified.md": "b1b5aa97ea181f7cf267f115d5605a39af8f7c4cf1a5b196acb7d00d96a9520d",
+    "index.html": "91d0067833e4c05a58307a559614881a85ec73f69f133f6393c96c37d7496c23",
+    "meta.json": "c7b334efed1b0bd6bc2ae3db865b1a1cbc658391ca828e22afb560c2c267e7ad",
+    "research.json": "0047f85ba2109a9a4a9752213a510b9dcc3ac92f4cf5f3ab6033f4dcc54e284f",
+    "hero.jpg": "542354a108683ff2007b3aef560af971309eb04d359854b0d2a2008b0cfc4c4e",
+    "photo-post.jpg": "858a8f7c838fc2ba0707d5ee3d73a020cfa608cced605f22c665a3f9b51f49e2",
+    "reel-script.md": "bd7921ab7c38225e5099b83f15dd34ddf9edd87cc2b8b2a25ca2d7ca9a054bd6",
+    "reel-data.md": "f89ca344ab3da64517861cf9d94081bf82d8545d1353cec95ab4f2b716aca89e",
+    "social-copy.json": "cf22c94a9d78f57325dce023910ce960dc03845c5f6f6dacdbcca4ba41239400",
+    "social-video.json": "ed61697407e81b09604e5bf3927a47cfa0566f633c8ce1551eb34dd6066afe1a",
+    "images/evidence.jpg": "5b634e44ace3e8b033fa3d0a78f32ef9da1ba8b3a56ff98ceb5a748b8b7f9546"
+  }
+}

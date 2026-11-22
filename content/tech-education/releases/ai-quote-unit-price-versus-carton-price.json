@@ -1,0 +1,173 @@
+{
+  "profile": "fused-tech-short-v1",
+  "slug": "ai-quote-unit-price-versus-carton-price",
+  "id": "T-06",
+  "ownerApproval": {
+    "approvedBy": "Nick",
+    "generationRequest": "let's manualy generate and review reels here, so that we can get some done its been so long.",
+    "publicationRequest": "Commit and push both to buffer, and finsh matching blogs, push that as well when done. NExt go ahead and help me pick new topics, and give me options which one to pic"
+  },
+  "approvedHook": "Would your AI quote use the unit price or the carton price?",
+  "approvedCta": "Label the units before asking AI to calculate.",
+  "narration": [
+    "Would your AI quote use the unit price or the carton price?",
+    "This synthetic example lists twelve items per carton, twenty four dollars per carton, and a request for thirty items.",
+    "The unit price is two dollars. Thirty individual items would cost sixty dollars, before any extra charges.",
+    "But that answer needs a sales rule. Are individual items available, or must customers buy whole cartons?",
+    "With whole cartons only, thirty requested items require three cartons. That supplies thirty six items for seventy two dollars.",
+    "I give AI the quantity, currency, unit labels, and the rule about splitting cartons before requesting a quote.",
+    "Then I check its calculation against the source row. A confident sentence does not settle an ambiguous price.",
+    "These are made up prices, not a real supplier quote or a model accuracy benchmark.",
+    "The useful first step is making the sales unit explicit, so the customer gets the quantity and price they expect.",
+    "Label the units before asking AI to calculate."
+  ],
+  "scriptSha256": "bd7921ab7c38225e5099b83f15dd34ddf9edd87cc2b8b2a25ca2d7ca9a054bd6",
+  "sha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be",
+  "seconds": 64.6,
+  "bytes": 7933865,
+  "lufs": -17.65,
+  "truePeakDb": -1.4,
+  "checks": {
+    "captionRegression": true,
+    "decodedCaptionBands": true,
+    "decode": true,
+    "dimensions": true,
+    "fps": true,
+    "videoCodec": true,
+    "audioCodec": true,
+    "avSync": true,
+    "size": true,
+    "loudness": true,
+    "truePeak": true,
+    "duration": true,
+    "hookStartsAtZero": true,
+    "heroFirst": true,
+    "noAdditionalClipDuration": true
+  },
+  "captionBandChecks": [
+    {
+      "seconds": 15.9,
+      "meanAbsolutePixelError": 2.4968
+    },
+    {
+      "seconds": 16.0,
+      "meanAbsolutePixelError": 2.4969
+    },
+    {
+      "seconds": 16.5,
+      "meanAbsolutePixelError": 2.4683
+    },
+    {
+      "seconds": 17.0,
+      "meanAbsolutePixelError": 2.4056
+    },
+    {
+      "seconds": 17.5,
+      "meanAbsolutePixelError": 2.1656
+    },
+    {
+      "seconds": 18.0,
+      "meanAbsolutePixelError": 2.1659
+    },
+    {
+      "seconds": 18.333333333333332,
+      "meanAbsolutePixelError": 2.1663
+    },
+    {
+      "seconds": 29.166666666666668,
+      "meanAbsolutePixelError": 2.0942
+    },
+    {
+      "seconds": 32.166666666666664,
+      "meanAbsolutePixelError": 0.8462
+    }
+  ],
+  "visualReview": {
+    "sha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be",
+    "noAccumulatedSubtitlesInInspectedFrames": true
+  },
+  "speech": [
+    {
+      "id": "T-06",
+      "segment": 1,
+      "heard": "Would your AI quote use the unit price or the carton price?",
+      "expected": "Would your AI quote use the unit price or the carton price?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 2,
+      "heard": "This synthetic example lists 12 items per carton, $24 per carton, and a request for 30 items.",
+      "expected": "This synthetic example lists twelve items per carton, twenty four dollars per carton, and a request for thirty items.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 3,
+      "heard": "The unit price is $2. 30 individual items would cost $60 before any extra charges.",
+      "expected": "The unit price is two dollars. Thirty individual items would cost sixty dollars, before any extra charges.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 4,
+      "heard": "But that answer needs a sales rule. Are individual items available or must customers buy whole cartons?",
+      "expected": "But that answer needs a sales rule. Are individual items available, or must customers buy whole cartons?",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 5,
+      "heard": "With whole cartons only 30 requested items require three cartons that supplies 36 items for $72",
+      "expected": "With whole cartons only, thirty requested items require three cartons. That supplies thirty six items for seventy two dollars.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 6,
+      "heard": "I give AI the quantity, currency, unit labels, and the rule about splitting cartons before requesting a quote.",
+      "expected": "I give AI the quantity, currency, unit labels, and the rule about splitting cartons before requesting a quote.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 7,
+      "heard": "Then I check its calculation against the source row. A confident sentence does not settle an ambiguous price.",
+      "expected": "Then I check its calculation against the source row. A confident sentence does not settle an ambiguous price.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 8,
+      "heard": "These are made up prices, not a real supplier quote or a model accuracy benchmark.",
+      "expected": "These are made up prices, not a real supplier quote or a model accuracy benchmark.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 9,
+      "heard": "The useful first step is making the sales unit explicit so the customer gets the quantity and price they expect.",
+      "expected": "The useful first step is making the sales unit explicit, so the customer gets the quantity and price they expect.",
+      "score": 1.0,
+      "issues": []
+    },
+    {
+      "id": "T-06",
+      "segment": 10,
+      "heard": "Label the units before asking AI to calculate.",
+      "expected": "Label the units before asking AI to calculate.",
+      "score": 1.0,
+      "issues": []
+    }
+  ],
+  "sourcePackageSha256": "da7a088d74ddc5f98e376a010c95d817aae9877be1e9db7df2e534b305db8bec",
+  "createdAt": "2026-11-22T16:51:57.943530+00:00"
+}

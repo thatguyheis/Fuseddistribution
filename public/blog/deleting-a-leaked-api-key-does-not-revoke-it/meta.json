@@ -1,0 +1,28 @@
+{
+  "title": "Deleting a Leaked API Key Does Not Revoke It",
+  "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+  "description": "See why deleting a copied API key differs from revoking access. A labeled local simulation separates document removal, credential authority and recovery checks.",
+  "ogDescription": "Deleting a Leaked API Key Does Not Revoke It.",
+  "alt": "Dummy credential removal and revocation simulation",
+  "date": "2026-11-22",
+  "tags": [
+    "Security",
+    "Development",
+    "AI Tools"
+  ],
+  "brand": "tech",
+  "ctaLine": "You deleted the leaked API key. Why can it still work?",
+  "contentGraphic": {
+    "label": "Local in-memory simulation",
+    "rows": [
+      {
+        "condition": "Document copy removed",
+        "action": "Dummy registry still accepts token"
+      },
+      {
+        "condition": "Registry revokes token",
+        "action": "Dummy registry denies token"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+  "mode": "codex-editorial",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T16:52:42.659340+00:00",
+  "review_notes": [
+    "Read the full article and checked calculations, assumptions and source attribution against the approved narration and saved local evidence.",
+    "Quote example uses synthetic data with both sales rules; revocation example is an isolated in-memory simulation, not real provider traffic.",
+    "Inspected both new hero graphics; retained the encoded-frame, speech and caption reviews bound to the exact approved MP4.",
+    "Article lint and qa-local passed. Nick explicitly authorized matching blogs, Git push and Buffer scheduling."
+  ],
+  "artifactSha256": {
+    "verified.md": "83e154bbd0e617e4745eab610fb4f58a971298aff8b6f002406a9076479fa4af",
+    "index.html": "aab6752af1b6f3e1ab3faff57d6ee5d51b2d02ae32b12123b22b987b556bfa02",
+    "meta.json": "9bca794dfc3c43d5b0534f93679ac8c2df03cadbbf896a5512a4921c51bbd88b",
+    "research.json": "f4078ceaa402612c815cc6eca531a20230f7b8d480d989ae21c97c194d67a301",
+    "hero.jpg": "9c92d8a6487b0d092fea49035fac2bcced042ed7d9dc61074beba919b0c8b718",
+    "photo-post.jpg": "9e18e18156cd58edb2958b456802f26ca90cdbb66c35403c6c7fc5d475fb5961",
+    "reel-script.md": "10739682cdc225a004a2ae47b92d45aa719a8d6f8110c74eecc4e8bcad32fac4",
+    "reel-data.md": "5ac27ad61212463499784cc6207ddf7efd08d238b31b1b5b82a09d015af6f029",
+    "social-copy.json": "6a6373cf2082c17e141cab0fc1583c70f6dd7647b26d528382172ee117b8e8f2",
+    "social-video.json": "16d5247b571e458781cda82af12fc20f7bd8659c1979728052d031f707495a64",
+    "images/evidence.jpg": "a0f21523eb08fd08c3da2f9703b53ab3412e371e56f1611735654fabf27b570c"
+  }
+}

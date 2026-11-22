@@ -1,5 +1,34 @@
 [
   {
+    "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+    "title": "Deleting a Leaked API Key Does Not Revoke It",
+    "date": "2026-11-22",
+    "excerpt": "See why deleting a copied API key differs from revoking access. A labeled local simulation separates document removal, credential authority and recovery checks.",
+    "tags": [
+      "Security",
+      "Development",
+      "AI Tools"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/deleting-a-leaked-api-key-does-not-revoke-it/hero.jpg",
+    "imageAlt": "Dummy credential removal and revocation simulation"
+  },
+  {
+    "slug": "ai-quote-unit-price-versus-carton-price",
+    "title": "AI Quotes: Check the Unit Price Before the Carton Price",
+    "date": "2026-11-22",
+    "excerpt": "Check an AI quote by labeling price units, carton sizes and sales rules. A worked example shows why thirty requested items can total either USD 60 or USD 72.",
+    "tags": [
+      "AI Tools",
+      "Automation"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-quote-unit-price-versus-carton-price/hero.jpg",
+    "imageAlt": "Synthetic quote compares item and carton"
+  },
+  {
     "slug": "github-secrets-workflow-code-access",
     "title": "GitHub Secrets: Check Which Workflow Code Receives the Value",
     "date": "2026-11-17",

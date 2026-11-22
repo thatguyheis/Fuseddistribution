@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Quotes: Check the Unit Price Before the Carton Price</title>
+    <meta name="description" content="Check an AI quote by labeling price units, carton sizes and sales rules. A worked example shows why thirty requested items can total either USD 60 or USD 72." />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-11-22T00:00:00Z" />
+
+    <meta property="article:author" content="https://fuseddistribution.com/about/" />
+    <meta property="og:url" content="https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/" />
+    <meta property="og:title" content="AI Quotes: Check the Unit Price Before the Carton Price" />
+    <meta property="og:description" content="AI Quotes: Check the Unit Price Before the Carton Price." />
+    <meta property="og:image" content="https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/hero.jpg" />
+    <link rel="canonical" href="https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "AI Quotes: Check the Unit Price Before the Carton Price",
+      "description": "Check an AI quote by labeling price units, carton sizes and sales rules. A worked example shows why thirty requested items can total either USD 60 or USD 72.",
+      "url": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/",
+      "datePublished": "2026-11-22",
+      "dateModified": "2026-11-22",
+      "author": {
+        "@type": "Person",
+        "name": "Nick Hughes",
+        "url": "https://fuseddistribution.com/about/",
+        "sameAs": [
+          "https://www.facebook.com/fuseddistribution",
+          "https://www.instagram.com/fuseddistribution"
+        ],
+        "knowsAbout": ["web design","local SEO","AI automation","video marketing"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fused Distribution",
+        "@id": "https://fuseddistribution.com/#organization",
+        "logo": { "@type": "ImageObject", "url": "https://fuseddistribution.com/og-image.png" }
+      },
+      "image": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/hero.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://fuseddistribution.com/blog/ai-quote-unit-price-versus-carton-price/" }
+    }
+    </script>
+    <style>
+:root {
+  --bg: #07131a;
+  --panel: rgba(11, 24, 32, 0.82);
+  --line: rgba(87, 219, 255, 0.16);
+  --text: #ecf8fb;
+  --muted: #afc6cf;
+  --accent: #58d6ff;
+  --accent-2: #4dffb8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(88, 214, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 84% 14%, rgba(77, 255, 184, 0.08), transparent 18%),
+    linear-gradient(180deg, #041018 0%, #07131a 48%, #040b10 100%);
+}
+body::before {
+  content: ""; position: fixed; inset: 0;
+  background:
+    linear-gradient(120deg, rgba(88, 214, 255, 0.05), transparent 28%, transparent 68%, rgba(77, 255, 184, 0.05)),
+    repeating-linear-gradient(90deg, transparent 0, transparent 94px, rgba(255, 255, 255, 0.02) 95px);
+  pointer-events: none;
+}
+a { color: inherit; text-decoration: none; }
+.shell {
+  width: min(1220px, calc(100% - 32px)); margin: 18px auto 40px;
+  border-radius: 28px; overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, rgba(7, 17, 23, 0.96), rgba(5, 12, 17, 0.98));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42); position: relative;
+}
+.shell::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(88, 214, 255, 0.1), transparent 18%),
+    radial-gradient(circle at 26% 54%, rgba(77, 255, 184, 0.06), transparent 24%);
+  pointer-events: none;
+}
+.topbar, .main, .footer { position: relative; z-index: 1; }
+.topbar { z-index: 50; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 30px; background: rgba(7, 16, 22, 0.92);
+  backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.brand { display: flex; flex-direction: column; line-height: 1; }
+.brand-mark {
+  color: var(--accent); font-size: 1.95rem; font-weight: 900;
+  letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 0 16px rgba(88, 214, 255, 0.3);
+}
+.brand-sub {
+  margin-top: 4px; color: rgba(236, 248, 251, 0.72); font-size: 0.75rem;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.nav-pages, .nav-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-pages {
+  padding: 8px 10px; border-radius: 999px;
+  border: 1px solid rgba(88, 214, 255, 0.18); background: rgba(7, 15, 23, 0.56);
+}
+.nav a { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-pages a { padding: 9px 14px; border-radius: 999px; }
+.nav a:hover, .nav a:focus-visible, .nav a.active { color: var(--accent); }
+.nav-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 160px; padding: 12px 18px; border-radius: 14px;
+  border: 1px solid rgba(88, 214, 255, 0.28); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+}
+.main { padding: 52px 54px 60px; }
+.article-wrap { max-width: 760px; margin: 0 auto; }
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 32px;
+}
+.back-link:hover { color: var(--accent); }
+.eyebrow {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(88, 214, 255, 0.08); color: var(--accent);
+  font-size: 0.82rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.article-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 18px 0 24px; }
+.article-meta time { color: var(--muted); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pill {
+  padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(88, 214, 255, 0.18);
+  background: rgba(88, 214, 255, 0.08); color: rgba(236, 248, 251, 0.88);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+h1 {
+  margin: 0 0 4px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.05;
+}
+.article-hero { width: 100%; border-radius: 18px; overflow: hidden; margin: 28px 0 0; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-hero img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; }
+.article-hero figcaption { padding: 10px 14px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); background: rgba(7, 15, 23, 0.6); letter-spacing: 0.04em; }
+.article-hero figcaption a { color: rgba(175, 198, 207, 0.55); text-decoration: underline; }
+.article-photo { margin: 32px 0; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.06); }
+.article-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: cover; object-position: center; }
+.article-photo figcaption { padding: 10px 16px; font-size: 0.78rem; color: rgba(175, 198, 207, 0.55); letter-spacing: 0.04em; background: rgba(7, 16, 22, 0.6); }
+.article-divider { height: 1px; background: rgba(88, 214, 255, 0.12); margin: 32px 0; }
+.article-body { color: var(--muted); font-size: 1.08rem; line-height: 1.82; }
+.article-body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.55rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--text); margin: 40px 0 14px;
+}
+.article-body h3 { color: var(--text); font-size: 1.18rem; margin: 28px 0 10px; }
+.article-body p { margin: 0 0 20px; }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 20px; }
+.article-body li { margin-bottom: 8px; }
+.article-body strong { color: var(--text); }
+.article-body a { color: var(--accent); text-decoration: underline; }
+.chart-wrap { background: rgba(7, 20, 28, 0.8); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 16px; padding: 28px 20px 18px; margin: 36px 0; overflow: hidden; }
+.chart-title { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-bottom: 18px; }
+.chart-note { font-size: 0.72rem; color: rgba(175, 198, 207, 0.45); text-align: center; margin-top: 10px; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+.stat-card { background: rgba(88, 214, 255, 0.04); border: 1px solid rgba(88, 214, 255, 0.14); border-radius: 14px; padding: 22px 18px; text-align: center; }
+.stat-card .stat-number { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2.4rem; letter-spacing: 0.03em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+.stat-card .stat-label { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+.watch-list { display: flex; flex-direction: column; gap: 14px; margin: 32px 0; }
+.watch-list-item { padding: 16px 18px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.14); background: rgba(7, 20, 28, 0.74); }
+.watch-list-item strong { display: block; color: var(--accent); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.watch-list-item span { display: block; margin-top: 8px; color: var(--text); font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.social-video { margin: 42px 0 0; padding: 24px; border: 1px solid rgba(88, 214, 255, 0.2); border-radius: 20px; background: rgba(7, 20, 28, 0.74); }
+.social-video h2 { margin: 0 0 8px; color: var(--text); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
+.social-video > p { margin: 0 0 18px; color: var(--muted); }
+.social-video-player { position: relative; aspect-ratio: 9 / 16; width: min(100%, 360px); margin: 0 auto 20px; border-radius: 14px; overflow: hidden; background: #020608; }
+.social-video-player iframe, .social-video-player video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.social-video-links { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.social-video-links a { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border: 1px solid rgba(88, 214, 255, 0.25); border-radius: 12px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.social-video-links a:hover, .social-video-links a:focus-visible { background: rgba(88, 214, 255, 0.1); }
+.social-video-pending { padding: 18px; border: 1px dashed rgba(88, 214, 255, 0.32); border-radius: 14px; color: var(--accent); text-align: center; font-weight: 800; letter-spacing: 0.04em; }
+.sources-block { margin-top: 48px; padding: 24px; border-radius: 16px; border: 1px solid rgba(88, 214, 255, 0.1); background: rgba(7, 18, 26, 0.6); }
+.sources-block h3 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+.sources-block ol { margin: 0; padding-left: 20px; color: rgba(175, 198, 207, 0.5); font-size: 0.78rem; line-height: 1.7; }
+.sources-block ol li { margin-bottom: 6px; }
+.sources-block a { color: rgba(88, 214, 255, 0.6); text-decoration: underline; }
+.faq-block { display: flex; flex-direction: column; gap: 12px; margin: 32px 0; }
+.faq-item { padding: 20px 24px; border-radius: 14px; border: 1px solid rgba(88, 214, 255, 0.12); background: rgba(7, 18, 26, 0.6); }
+.faq-q { font-weight: 700; color: var(--text); font-size: 1rem; margin-bottom: 8px; }
+.faq-a { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+.article-cta { margin-top: 48px; padding: 28px; border-radius: 22px; border: 1px solid rgba(88, 214, 255, 0.2); background: rgba(88, 214, 255, 0.05); text-align: center; }
+.article-cta p { margin: 0 0 18px; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 16px; border: 1px solid transparent; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.btn-primary { color: #041117; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 34px rgba(88, 214, 255, 0.18); }
+.footer { padding: 24px 28px 34px; color: rgba(175, 198, 207, 0.74); text-align: center; font-size: 0.92rem; }
+.nav-item { position: relative; }
+.nav-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 9px 14px; border-radius: 999px; border: none; background: transparent; cursor: pointer; font-family: inherit; font-size: inherit; font-weight: 700; letter-spacing: 0.04em; color: rgba(239, 252, 255, 0.9); transition: color 0.15s; }
+.nav-toggle:hover, .nav-toggle:focus-visible, .nav-toggle.active, .nav-item:hover .nav-toggle, .nav-item:focus-within .nav-toggle { color: var(--accent); outline: none; }
+.nav-caret { font-size: 0.68rem; transition: transform 0.2s ease; display: inline-block; }
+.nav-item:hover .nav-caret, .nav-item:focus-within .nav-caret { transform: rotate(180deg); }
+.nav-dropdown { display: flex; flex-direction: column; position: absolute; top: calc(100% + 2px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 210px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(8, 16, 24, 0.97); backdrop-filter: blur(20px); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55); z-index: 200; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s ease 0.35s, visibility 0.25s ease 0.35s, transform 0.25s ease 0.35s; }
+.nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transition: opacity 0.18s ease 0s, visibility 0.18s ease 0s, transform 0.18s ease 0s; opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.nav-dropdown a { padding: 9px 14px; border-radius: 10px; font-size: 0.88rem; letter-spacing: 0.04em; color: rgba(220, 240, 248, 0.78); transition: background 0.12s, color 0.12s; }
+.nav-dropdown a:hover, .nav-dropdown a:focus-visible, .nav-dropdown a.active { background: rgba(97, 255, 215, 0.08); color: var(--accent); }
+.nav-dropdown-divider { height: 1px; background: rgba(255, 255, 255, 0.07); margin: 4px 6px; }
+@media (max-width: 1080px) { .topbar { flex-direction: column; align-items: flex-start; } .main { padding-left: 24px; padding-right: 24px; } }
+@media (max-width: 900px) { .nav-dropdown { left: 0; transform: translateY(-6px); } .nav-item:hover .nav-dropdown, .nav-item:focus-within .nav-dropdown { transform: translateY(0); } }
+@media (max-width: 680px) { .shell { width: calc(100% - 16px); margin: 8px auto 18px; border-radius: 22px; } .topbar { padding: 16px; } h1 { font-size: 2rem; } .stat-row { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] { grid-template-columns: 1fr !important; } .visual-type-before-after > [role="img"] > [aria-hidden="true"] { transform: rotate(90deg); } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">Fused</span>
+          <span class="brand-sub">Technology Solutions</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-pages">
+            <a href="/">Home</a>
+            <div class="nav-item" id="nav-tech">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-tech">
+                Technology Solutions <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-tech" role="menu">
+                <a href="/projects/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/process/" role="menuitem">How It Works</a>
+                <a href="/pricing/" role="menuitem">Pricing</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/projects/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-reserve">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-reserve">
+                Silver Reserve <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-reserve" role="menu">
+                <a href="/reserve/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/#how-it-works" role="menuitem">How It Works</a>
+                <a href="/reserve/#plans" role="menuitem">Plans</a>
+                <a href="/reserve/#benefits" role="menuitem">Benefits</a>
+                <a href="/reserve/#inventory" role="menuitem">Inventory</a>
+                <a href="/reserve/#join" role="menuitem">Join</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/reserve/faq/" role="menuitem">FAQ</a>
+              </div>
+            </div>
+            <div class="nav-item" id="nav-education">
+              <button class="nav-toggle" aria-expanded="false" aria-controls="dropdown-education">
+                Education <span class="nav-caret" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="nav-dropdown" id="dropdown-education" role="menu">
+                <a href="/education/" role="menuitem">Overview</a>
+                <div class="nav-dropdown-divider"></div>
+                <a href="/education/authority-assessment/" role="menuitem">Authority Assessment</a>
+              </div>
+            </div>
+            <a href="/blog/" class="active">Blog</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-cta" href="/#contact">Get Started</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="article-wrap">
+          <a class="back-link" href="/blog/">&larr; Back to Blog</a>
+
+          <div class="eyebrow">AI Tools &middot; Automation</div>
+
+          <h1>AI Quotes: Check the Unit Price Before the Carton Price</h1>
+
+          <div class="article-meta">
+            <time datetime="2026-11-22">November 22, 2026</time>
+            <span class="pill">AI Tools</span>
+            <span class="pill">Automation</span>
+          </div>
+
+          <figure class="article-hero">
+            <img src="/blog/ai-quote-unit-price-versus-carton-price/hero.jpg" alt="Synthetic quote compares item and carton" width="1200" height="630" fetchpriority="high" />
+          </figure>
+
+          <div class="article-divider"></div>
+
+          <div class="article-body">
+            <div class="math-box" role="img" aria-label="Synthetic worked example"><p><strong>Individual sales permitted</strong> &rarr; 30 items at USD 2 = USD 60</p><p><strong>Whole cartons only</strong> &rarr; 3 cartons supply 36 items for USD 72</p></div><p>Would your AI quote use the unit price or the carton price? Before I ask a model to draft a quote, I want the source row to answer that question. A price without a selling unit leaves a decision unresolved. The model can produce fluent wording while the business is still unclear about what the customer can buy.</p>
+            <!-- SOCIAL_VIDEO_START -->
+            <aside class="social-video" aria-label="Watch this reel on social media"><h2>Watch the reel</h2><p>Play the Fused reel here.</p><div class="social-video-player"><video controls playsinline preload="metadata"><source src="https://fuseddistribution.com/reels/ai-quote-unit-price-versus-carton-price/ai-quote-unit-price-versus-carton-price.mp4" type="video/mp4" />Your browser does not support embedded video. Use the links below to watch.</video></div></aside>
+            <!-- SOCIAL_VIDEO_END -->
+            <p>I use one synthetic example in this lesson: twelve items per carton, USD 24 per carton, and a customer asking for thirty items. The arithmetic gives two useful answers. Individual items would total USD 60. Whole cartons would total USD 72 and supply thirty six items. Which answer belongs in the quote depends on the sales rule. These are made up prices, not a supplier offer or a model accuracy benchmark.</p>
+            <figure class="article-photo"><img src="/blog/ai-quote-unit-price-versus-carton-price/images/evidence.jpg" alt="Synthetic quote row showing twelve items per carton, USD 24 per carton and thirty requested items" loading="lazy" /><figcaption>Synthetic teaching data. No customer or supplier record was used.</figcaption></figure>
+            <h2>Give every price a selling unit</h2>
+            <p>A worksheet can look tidy and still leave its most important labels unstated. A column called price does not tell the reader whether the amount applies to an item, a carton, an hour, or an entire job. I put that unit beside the value before handing the row to an AI assistant or another person.</p>
+            <p>For this example, the input is explicit: currency is USD, a carton contains twelve items, the carton price is 24, and the requested quantity is thirty items. I keep requested items separate from ordered cartons. That distinction makes it possible to explain why the delivered quantity can differ from the quantity in the customer&#39;s request.</p>
+            <p>The remaining question is whether a carton can be split. That is a business rule, so I do not ask the model to infer it from the numbers. If the source does not state the rule, the draft should flag the gap rather than quietly choose the answer that sounds convenient.</p>
+            <h2>Calculate the individual item case</h2>
+            <p>If individual sales are allowed at the same proportional price, divide USD 24 by twelve items. The example&#39;s unit price is USD 2. Multiply that by thirty requested items and the subtotal is USD 60. The delivered quantity in this case is exactly thirty items.</p>
+            <p>The word if matters. Dividing a carton price does not establish that a supplier sells individual items at that rate. The calculation describes the stated teaching scenario. A real supplier may have a separate individual price, a minimum quantity, or a different purchasing rule. I would need that information before turning the example into an actual offer.</p>
+            <p>I also label the result subtotal. The example does not supply tax, delivery, discounts, or other charges, so the calculation does not invent them. A quote that needs those fields should show them as unresolved until an approved source provides the values.</p>
+            <h2>Calculate the whole carton case</h2>
+            <p>If only whole cartons are available, thirty divided by twelve is two and a half cartons. Two cartons would supply only twenty four items, which is short of the requested quantity. The next whole number is three cartons. At USD 24 each, that totals USD 72 and supplies thirty six items.</p>
+            <p>The extra six items should be visible in the draft. They are part of the fulfillment choice, not a rounding detail to hide in the total. I want the reviewer to see the requested quantity, the quantity supplied, the number of cartons, and the price together before agreeing to the result.</p>
+            <p>This case does not prove that USD 72 is always the correct quote. It shows what follows from the whole carton rule in the synthetic row. The same numbers under the individual sale rule lead to USD 60. Naming the rule is what makes the answer checkable.</p>
+            <h2>Use the model to explain the calculation</h2>
+            <p>My example prompt gives the row and asks for both cases: calculate thirty items when individual sales are permitted, then calculate the order when only whole cartons are permitted. It also tells the assistant not to guess the sales policy or add unstated charges. That request makes the unresolved business decision visible.</p>
+            <p>The saved assistant response in this session returned USD 2 per item, USD 60 for the individual case, and three cartons containing thirty six items for USD 72 in the whole carton case. It asked for the selling policy to be confirmed. That is an actual saved response to synthetic inputs, not evidence that a particular model is consistently accurate.</p>
+            <p>I checked the result separately with Python&#39;s Decimal arithmetic. The <a href="https://docs.python.org/3/library/decimal.html">Python Decimal documentation</a> explains how decimal values can be represented and calculated without the binary approximation associated with some floating point values. Here the calculation is simple; the independent check establishes only the recorded example&#39;s arithmetic.</p>
+            <h2>Keep the source row beside the draft</h2>
+            <p>A polished paragraph is harder to review when the input has disappeared into a long chat. I keep the small source table with the output. The reviewer can then compare the price, unit, currency, quantity, and carton rule without reconstructing the conversation.</p>
+            <p>This is also a useful way to limit the task. The model can turn approved facts into readable wording, explain the two cases, and identify missing information. The person responsible for pricing still decides which selling rule applies and which totals are approved for a real customer.</p>
+            <p>The <a href="/blog/write-a-useful-ai-prompt-for-one-small-business-task/">lesson on writing one useful AI prompt</a> uses the same approach: define the job and the information the answer may use. Here the concrete improvement is adding the unit and fulfillment rule before requesting the calculation.</p>
+            <h2>Record assumptions before reusing a template</h2>
+            <p>If this becomes a recurring workflow, I would save fields for product, currency, price unit, pack size, requested quantity, selling rule, and exclusions. A missing field should leave the draft incomplete. The template should not silently inherit a previous customer&#39;s rule.</p>
+            <p>I would also keep an example of each supported case with its expected result. The two totals in this lesson make a small regression check: individual items produce 60, while whole cartons produce 72 and thirty six supplied items. If a later change gives a different result, inspect the input and calculation before sending the draft.</p>
+            <p>An SOP can hold those decisions in one place. The <a href="/blog/what-is-an-sop-and-why-ai-needs-one/">SOP introduction</a> explains why a repeatable instruction is more useful than rebuilding a process through repeated prompts. The rule here is specific: an unlabeled price does not become approved because AI has formatted it neatly.</p>
+            <h2>Make the next action small</h2>
+            <p>Start with one synthetic product row. Give it a currency, a selling unit and a quantity. Ask the assistant to show its assumptions, then verify the arithmetic and the fulfillment choice separately. Keep any unknown charge or policy visible.</p>
+            <p>The lesson&#39;s bar chart compares conditional subtotals, not business performance. Its flow explains how the sales rule changes the quantity supplied. Both graphics support the same practical point: label the units before asking AI to calculate.</p>
+            <h2>Sources and local evidence</h2>
+            <ul>
+            <li><a href="https://docs.python.org/3/library/decimal.html">Python Decimal documentation</a>.</li>
+            <li>Fused teaching calculation, November 22, 2026: twelve items per carton, USD 24 per carton, thirty requested items; verified totals of USD 60 and USD 72 under the stated conditions.</li>
+            <li>Saved Codex assistant response and independent Decimal output. The tool interface did not expose an exact model identifier, so this is not a named-model benchmark.</li>
+            </ul>
+            <h2>Related</h2>
+            <ul>
+            <li><a href="/blog/write-a-useful-ai-prompt-for-one-small-business-task/">Write a useful AI prompt for one task</a></li>
+            <li><a href="/blog/what-is-an-sop-and-why-ai-needs-one/">What is an SOP and why does AI need one?</a></li>
+            </ul>
+            <p>Read next: <a href="/blog/ffprobe-check-mp4-container-video-audio/">Check what an MP4 actually contains</a>.</p>
+          </div>
+
+          <div class="article-cta">
+            <p>Would your AI quote use the unit price or the carton price?</p>
+            <a class="btn btn-primary" href="/#contact">Talk to Fused</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy; 2026 Fused Technology Solutions. All rights reserved.
+        &nbsp;&middot;&nbsp;
+        <a href="/privacy/" style="color:inherit;opacity:0.7;text-decoration:underline;">Privacy Policy</a>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        var toggles = document.querySelectorAll('.nav-toggle');
+        function closeAll(except) {
+          toggles.forEach(function (btn) { if (btn !== except) btn.setAttribute('aria-expanded', 'false'); });
+        }
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(null); });
+        document.addEventListener('click', function (e) { if (!e.target.closest('.nav-item')) closeAll(null); });
+      })();
+    </script>
+  </body>
+</html>
