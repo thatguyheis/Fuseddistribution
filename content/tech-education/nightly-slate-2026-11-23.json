@@ -1,20 +1,21 @@
 {
   "version": 1,
   "productionDatePacific": "2026-11-23",
-  "selectedAt": "2026-11-22T16:59:51.832356+00:00",
+  "selectedAt": "2026-11-22T17:58:34.490703+00:00",
   "selectedBy": "Nick",
-  "status": "awaiting_owner_three_topic_selection",
-  "targetNewPairs": 2,
+  "status": "owner_selected_requires_package_preparation",
+  "targetNewPairs": 3,
   "maxTopicsPerDay": 3,
   "notes": [
-    "Owner selected options 1 and 4. Preserve exact selected hook and CTA.",
-    "Evidence was executed locally; all fixtures and the imposed caption shift are explicitly labeled.",
-    "These are selected briefs and narration seeds, not a ready handoff or completed exports.",
-    "Options 2 and 3 remain unselected and are not authorized substitutes."
+    "Nick selected exactly options 4, 3 and 7 in that order.",
+    "All three are production targets for this dated night, not two targets plus a standby.",
+    "Keep exact hooks and CTAs, hero at frame zero, two explanatory graphic forms and purposeful cleared sound cues.",
+    "Selected briefs are not render-ready packages. Complete sourced articles, scripts, artwork and real QA at the existing preparation pass.",
+    "The earlier manual JSON and caption reels remain review inventory and must not be regenerated."
   ],
   "manualGenerationDatePacific": "2026-11-22",
   "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-  "nextPreparationAction": "Nick requested seven options and will choose three for tonight. Await his selection from nextTopicOptions; do not choose substitutes or arm an unapproved slate. Once selected, prepare exactly the approved topics under the dated owner scope and existing serial/QA safeguards. The prior two manual videos and matching blog drafts remain completed review inventory, not new nightly production.",
+  "nextPreparationAction": "At the November 22 20:30 Pacific Luna pass prepare all THREE selected packages in order, research current primary sources, execute the scoped demos, finish blog/script/artwork/enrichment and pass real source/editorial QA. For the November 23 batch only, stage the active production queue with these three slugs, maxTopicsPerDay 3 and targetRendersPerDay 3, then write the exact dated ready handoff against that queue. If any package fails, report the precise shortfall and do not claim three are ready. Existing 02:00 local runner renders serially with the existing recovery, lease and safety limits. Later nights revert to the ordinary target of two when preparing their own fresh dated queues.",
   "nextTopicOptions": "content/tech-education/topic-options-2026-11-23.json",
   "previousCompletedTopics": [
     {
@@ -58,9 +59,14 @@
       "bufferScheduledVerified": true
     }
   ],
-  "ownerReply": "Let's do 1 and 4",
+  "ownerReply": "do 4, 3, and 7",
   "ownerSelectionSource": "content/tech-education/topic-options-2026-11-22.json",
-  "topics": [
+  "manualGenerationRequestedAt": "2026-11-22T17:22:02.830095+00:00",
+  "manualGenerationRequest": "generate now",
+  "currentManualReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json",
+  "manualCompletedAt": "2026-11-22T17:45:42.730031+00:00",
+  "requestedSelectionCount": 3,
+  "previousManualTopics": [
     {
       "optionId": 1,
       "slug": "ai-answer-json-validation-before-automation",
@@ -139,9 +145,107 @@
       "blogDraftComplete": true
     }
   ],
-  "manualGenerationRequestedAt": "2026-11-22T17:22:02.830095+00:00",
-  "manualGenerationRequest": "generate now",
-  "currentManualReceipt": "content/tech-education/manual-reviews/2026-11-22-json-caption-pair.json",
-  "manualCompletedAt": "2026-11-22T17:45:42.730031+00:00",
-  "requestedSelectionCount": 3
+  "topics": [
+    {
+      "id": 4,
+      "topic": "Shorter AI prompts with a master SOP",
+      "hook": "Why are you pasting your entire SOP into every AI request?",
+      "outline": "Compare a full pasted SOP with a focused task brief that retains governing instructions and a master SOP reference. Measure actual input size; do not promise equal output quality or cost savings without a matched test.",
+      "cta": "Keep one master SOP and prepare a focused task brief.",
+      "primarySources": [],
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7",
+      "slug": "shorter-ai-prompts-master-sop-task-brief",
+      "category": "ai-workflow-efficiency",
+      "promise": "Build a focused task brief while retaining access to the governing SOP.",
+      "visualSupport": "Actual measured input-size comparison plus a task-brief field table and rules-reference flow.",
+      "evidenceRequirements": [
+        "Use a labeled synthetic SOP and task, with the full governing rules retained and accessible.",
+        "Record actual character/word counts, or identify the exact tokenizer/model if showing tokens.",
+        "A smaller input does not prove equal quality, lower billed cost or better performance. Verify the task still obeys all applicable rules.",
+        "Do not imply a pasted path or URL makes the full SOP available to every AI. Verify source access in the actual environment."
+      ],
+      "optionId": 4,
+      "subject": "Shorter AI prompts with a master SOP",
+      "approvedHook": "Why are you pasting your entire SOP into every AI request?",
+      "preserveExactHook": true,
+      "approvedCta": "Keep one master SOP and prepare a focused task brief.",
+      "explanation": "Compare a full pasted SOP with a focused task brief that retains governing instructions and a master SOP reference. Measure actual input size; do not promise equal output quality or cost savings without a matched test.",
+      "payoff": "Build a focused task brief while retaining access to the governing SOP.",
+      "variety": "Different learner problem and mechanism from the just-completed JSON parsing and caption timing lessons.",
+      "packageReady": false,
+      "status": "selected_requires_package_preparation"
+    },
+    {
+      "id": 3,
+      "topic": "Hidden instructions inside documents",
+      "hook": "Your AI read the document. Whose instructions did it follow?",
+      "outline": "Use a harmless labeled document example to explain the distinction between source text and authorized instructions. Show an instruction-boundary flow. Do not claim any prompt makes injection impossible.",
+      "cta": "Treat document text as evidence, not permission.",
+      "primarySources": [
+        "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+      ],
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7",
+      "slug": "ai-document-hidden-instructions-prompt-injection",
+      "category": "ai-security",
+      "promise": "Explain why text inside a source document is not authorization to change the task.",
+      "visualSupport": "A harmless labeled document excerpt, legitimate task versus embedded instruction table, and a trust-boundary flow.",
+      "evidenceRequirements": [
+        "Use only a local harmless teaching example, with no live accounts, secrets or destructive tool actions.",
+        "Separate explanation from actual model behavior; show saved output only if a real run happened.",
+        "Do not claim a system prompt, delimiter, document label or retrieval setup prevents all prompt injection.",
+        "Use current OWASP primary guidance and preserve the exact selected hook."
+      ],
+      "optionId": 3,
+      "subject": "Hidden instructions inside documents",
+      "approvedHook": "Your AI read the document. Whose instructions did it follow?",
+      "preserveExactHook": true,
+      "approvedCta": "Treat document text as evidence, not permission.",
+      "explanation": "Use a harmless labeled document example to explain the distinction between source text and authorized instructions. Show an instruction-boundary flow. Do not claim any prompt makes injection impossible.",
+      "payoff": "Explain why text inside a source document is not authorization to change the task.",
+      "variety": "Different learner problem and mechanism from the just-completed JSON parsing and caption timing lessons.",
+      "packageReady": false,
+      "status": "selected_requires_package_preparation"
+    },
+    {
+      "id": 7,
+      "topic": "Check whether AI citations support the claim",
+      "hook": "Your AI answer has sources. Do those sources actually support it?",
+      "outline": "Compare a claim with the exact passage in a real primary source. Use labeled illustrative claims or actual saved model output; never fabricate a model error. Show a claim-to-evidence table.",
+      "cta": "Open one source and check the exact claim.",
+      "primarySources": [],
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7",
+      "slug": "ai-citations-check-source-supports-claim",
+      "category": "ai-research-literacy",
+      "promise": "Check whether a citation supports the exact claim rather than merely discussing the same subject.",
+      "visualSupport": "A real primary passage with a visible claim-to-evidence table and support/uncertainty decision flow.",
+      "evidenceRequirements": [
+        "Use labeled illustrative claims or an actual saved model response, never an invented model mistake.",
+        "Open the actual cited source and preserve URL, retrieval date and relevant context.",
+        "Respect quotation limits and distinguish supported, qualified and unverified statements.",
+        "Show actual results only; do not invent accuracy percentages or imply one verified claim validates the whole answer."
+      ],
+      "optionId": 7,
+      "subject": "Check whether AI citations support the claim",
+      "approvedHook": "Your AI answer has sources. Do those sources actually support it?",
+      "preserveExactHook": true,
+      "approvedCta": "Open one source and check the exact claim.",
+      "explanation": "Compare a claim with the exact passage in a real primary source. Use labeled illustrative claims or actual saved model output; never fabricate a model error. Show a claim-to-evidence table.",
+      "payoff": "Check whether a citation supports the exact claim rather than merely discussing the same subject.",
+      "variety": "Different learner problem and mechanism from the just-completed JSON parsing and caption timing lessons.",
+      "packageReady": false,
+      "status": "selected_requires_package_preparation"
+    }
+  ],
+  "ownerOverride": {
+    "productionDatePacific": "2026-11-23",
+    "topicCount": 3,
+    "defaultRecurringTarget": 2,
+    "scope": "Three selected blog/reel pairs for this night only; preserve the normal recurring target after this dated batch."
+  }
 }

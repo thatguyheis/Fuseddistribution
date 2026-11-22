@@ -3,9 +3,13 @@
   "productionDatePacific": "2026-11-23",
   "createdAt": "2026-11-22T17:54:57.900837+00:00",
   "brand": "tech",
-  "status": "awaiting_owner_selection",
+  "status": "owner_selected_requires_package_preparation",
   "requestedSelectionCount": 3,
-  "selected": [],
+  "selected": [
+    4,
+    3,
+    7
+  ],
   "recommended": [
     1,
     3,
@@ -44,7 +48,9 @@
       "primarySources": [
         "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
       ],
-      "renderApproved": false
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7"
     },
     {
       "id": 4,
@@ -53,7 +59,9 @@
       "outline": "Compare a full pasted SOP with a focused task brief that retains governing instructions and a master SOP reference. Measure actual input size; do not promise equal output quality or cost savings without a matched test.",
       "cta": "Keep one master SOP and prepare a focused task brief.",
       "primarySources": [],
-      "renderApproved": false
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7"
     },
     {
       "id": 5,
@@ -84,7 +92,11 @@
       "outline": "Compare a claim with the exact passage in a real primary source. Use labeled illustrative claims or actual saved model output; never fabricate a model error. Show a claim-to-evidence table.",
       "cta": "Open one source and check the exact claim.",
       "primarySources": [],
-      "renderApproved": false
+      "renderApproved": false,
+      "topicApproved": true,
+      "ownerReply": "do 4, 3, and 7"
     }
-  ]
+  ],
+  "selectedAt": "2026-11-22T17:58:34.490703+00:00",
+  "ownerReply": "do 4, 3, and 7"
 }

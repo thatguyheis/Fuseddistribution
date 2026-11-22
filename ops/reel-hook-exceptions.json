@@ -58,6 +58,33 @@
       "maxSeconds": 8,
       "reason": "Owner selected this exact proposed hook. Preserve speech and visible frame-zero wording, use natural pacing and verify actual encoded output.",
       "preserveExactText": true
+    },
+    "shorter-ai-prompts-master-sop-task-brief": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
+      "ownerReply": "do 4, 3, and 7",
+      "spokenText": "Why are you pasting your entire SOP into every AI request?",
+      "maxSeconds": 8,
+      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "preserveExactText": true
+    },
+    "ai-document-hidden-instructions-prompt-injection": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
+      "ownerReply": "do 4, 3, and 7",
+      "spokenText": "Your AI read the document. Whose instructions did it follow?",
+      "maxSeconds": 8,
+      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "preserveExactText": true
+    },
+    "ai-citations-check-source-supports-claim": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
+      "ownerReply": "do 4, 3, and 7",
+      "spokenText": "Your AI answer has sources. Do those sources actually support it?",
+      "maxSeconds": 8,
+      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "preserveExactText": true
     }
   }
 }
