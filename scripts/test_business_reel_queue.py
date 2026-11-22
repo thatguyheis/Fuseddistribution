@@ -281,12 +281,44 @@ class BusinessReelQueueTests(unittest.TestCase):
         run_dir = queue.PRODUCTION / "runs" / "2026-11-05"
         run_dir.mkdir(parents=True)
         (run_dir / "queue.json").write_text(json.dumps({"attemptedSlugs": [slug], "successfulSlugs": []}))
-        result = queue.run_queue(slugs, max_topics_per_day=2, target_renders_per_day=2,
+        result = queue.run_queue(slugs, max_topics_per_day=3, target_renders_per_day=2,
                                  clock=lambda: self.now, run_command=fake)
-        self.assertEqual([item["status"] for item in result["results"]], ["already_current", "rendered-awaiting-review"])
+        self.assertEqual([item["status"] for item in result["results"]], ["already_current", "rendered-awaiting-review", "rendered-awaiting-review"])
         render_slugs = [next(arg.split("=", 1)[1] for arg in args if arg.startswith("--post="))
                         for args, _ in calls if any("render.mjs" in arg for arg in args)]
-        self.assertEqual(render_slugs, ["second-pending"])
+        self.assertEqual(render_slugs, ["second-pending", "third-pending"])
+        self.assertNotIn("first-current", result["successfulSlugs"])
+        self.assertEqual(result["reusedSlugs"], ["first-current"])
+
+    def test_only_old_reusable_export_does_not_complete_todays_target(self):
+        slug = "old-valid-export"
+        self.write_approval(slug)
+        fake, calls = self.fake_commands()
+        with patch.object(queue, "render_is_current", return_value=True), patch.object(queue, "rendered_on_date", return_value=False):
+            result = queue.run_queue([slug], max_topics_per_day=1, target_renders_per_day=1,
+                                     clock=lambda: self.now, run_command=fake)
+        self.assertEqual(result["status"], "completed_with_failures")
+        self.assertEqual(result["successfulSlugs"], [])
+        self.assertEqual(result["targetShortfall"], 1)
+        self.assertFalse(any(any("render.mjs" in arg for arg in args) for args, _ in calls))
+
+    def test_render_date_uses_pacific_date_not_utc_or_checkpoint_date(self):
+        out = self.root / "video/out/example"
+        out.mkdir(parents=True)
+        meta = out / "render-meta.json"
+        meta.write_text(json.dumps({"renderedAt": "2026-11-05T07:30:00Z"}))
+        self.assertFalse(queue.rendered_on_date("example", "2026-11-05"))
+        self.assertTrue(queue.rendered_on_date("example", "2026-11-04"))
+        meta.write_text(json.dumps({"renderedAt": "2026-11-05T07:30:00"}))
+        self.assertFalse(queue.rendered_on_date("example", "2026-11-05"))
+
+    def test_repair_export_does_not_count_as_a_new_topic(self):
+        out = self.root / "video/out/example"
+        out.mkdir(parents=True)
+        (out / "render-meta.json").write_text(json.dumps({"renderedAt": "2026-11-05T10:00:00Z"}))
+        queue.save_topic("example", "2026-11-05", firstRenderedAt="2026-11-04T10:00:00Z")
+        self.assertFalse(queue.rendered_on_date("example", "2026-11-05"))
+        self.assertTrue(queue.rendered_on_date("example", "2026-11-04"))
 
     def test_global_render_lock_is_busy_unless_helper_proves_dead_owner(self):
         self.render_lock.mkdir()

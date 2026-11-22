@@ -21,6 +21,9 @@ export function assertApprovedSources(root, slug) {
   if (!qa.pass || (!automatedCoinApproval && qa.mode !== 'codex-editorial') || qa.score < 85 || qa.blockers?.length) {
     throw new Error('Editorial approval required');
   }
+  if (!automatedCoinApproval && (!Number.isFinite(Date.parse(qa.reviewed_at)) || !qa.review_notes?.length)) {
+    throw new Error('Editorial reviewed_at timestamp and review_notes required before handoff and deployment');
+  }
   if (approvedOwnerHook(root, slug)) {
     const source = readFileSync(join(directory,'reel-script.md'),'utf8');
     const hook = parseReelScript(source,slug,readFileSync(join(directory,'reel-data.md'),'utf8')).segments[0];
@@ -58,7 +61,7 @@ export function assertApprovedSources(root, slug) {
         const reportDir=join(root,'.workflow-state/business-growth-ai-365/preflight-qa');
         mkdirSync(reportDir,{recursive:true});
         const localQa=spawnSync(process.execPath,[join(root,'public/blog/scripts/qa-local.mjs'),`--slug=${slug}`,`--out=${join(reportDir,slug+'.json')}`],{cwd:root,encoding:'utf8',timeout:30000});
-        if(localQa.status!==0)throw Error(`Blog preflight failed: ${(localQa.stdout||localQa.stderr||localQa.error?.message||'unknown error').trim()}`);
+        if(localQa.status!==0)throw Error(`Blog preflight failed (exit=${localQa.status}, signal=${localQa.signal || 'none'}): ${[localQa.error?.message,localQa.stderr,localQa.stdout].filter(Boolean).map(value=>value.trim()).join(' | ') || 'no child output'}`);
       }
     }
   }

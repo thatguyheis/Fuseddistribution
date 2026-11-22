@@ -62,6 +62,8 @@ def summary():
     slugs = set(config.get('slugs', []))
     for key in ['queuedTopics', 'inProgressTopics']:
         slugs.update(item['slug'] for item in ledger.get(key, []) if item.get('slug'))
+    # Finished work may have left both the active queue and the stale ledger.
+    slugs.update(path.stem for path in (STATE / 'production/topics').glob('*.json'))
     topics = []
     records_by_slug, due_ids = buffer_delivery_records(ROOT, now)
     handoff = read(STATE / 'production/handoffs' / f'{day}.json', {})
@@ -69,8 +71,21 @@ def summary():
         records = records_by_slug.get(slug, [])
         release = read(ROOT / 'video/out' / slug / 'release-qa.json', {})
         progress = read(STATE / 'production/topics' / f'{slug}.json', {})
+        meta = read(ROOT / 'video/out' / slug / 'render-meta.json', {})
+        rendered_today = False
+        try:
+            rendered = dt.datetime.fromisoformat((progress.get('firstRenderedAt') or meta['renderedAt']).replace('Z', '+00:00'))
+            rendered_today = rendered.tzinfo is not None and rendered.astimezone(ZoneInfo('America/Los_Angeles')).date().isoformat() == day
+        except (ValueError, TypeError, KeyError, AttributeError):
+            pass
+        delivery_state = 'awaiting-delivery' if release.get('readyForPosting') else 'not-release-ready'
+        if records:
+            delivered = {row['platform'] for row in records if row.get('status') in ('scheduled', 'sending', 'sent')}
+            delivery_state = 'sent' if all(any(row['platform'] == platform and row.get('status') == 'sent' for row in records) for platform in ['youtube', 'x', 'instagram']) else 'scheduled' if len(delivered) == 3 else 'partial-delivery'
         topics.append({'slug': slug, 'stage': progress.get('status', 'not-started'),
                        'releaseReady': release.get('readyForPosting', False),
+                       'renderedAt': meta.get('renderedAt'), 'renderedToday': rendered_today,
+                       'deliveryState': delivery_state,
                        'log': progress.get('log'), 'detail': progress.get('detail'),
                        'buffer': records})
     return {'pacificDate': day, 'checkedAt': now.isoformat(),
@@ -79,6 +94,8 @@ def summary():
             'handoff': handoff,
             'queue': read(STATE / 'production/runs' / day / 'queue.json', {}),
             'targetRendersPerDay': config.get('targetRendersPerDay', 2),
+            'newRendersToday': sum(topic['renderedToday'] and topic['releaseReady'] for topic in topics),
+            'deliveryBacklog': [topic['slug'] for topic in topics if topic['releaseReady'] and topic['deliveryState'] in ('awaiting-delivery', 'partial-delivery')],
             'topics': topics, 'duePostIds': sorted(set(due_ids))}
 
 if __name__ == '__main__':

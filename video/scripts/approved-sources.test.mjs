@@ -62,6 +62,20 @@ test('rejects an automatic coin-history QA score below the release threshold', (
   }
 });
 
+test('editorial package must meet deployment review metadata before handoff', () => {
+  const value = fixture();
+  const path = join(value.post, 'qa.json');
+  const qa = JSON.parse(readFileSync(path, 'utf8'));
+  qa.mode = 'codex-editorial';
+  qa.reviewedAt = '2026-11-10';
+  writeFileSync(path, JSON.stringify(qa));
+  assert.throws(() => assertApprovedSources(value.root, value.slug), /reviewed_at timestamp/);
+  qa.reviewed_at = '2026-11-10T10:00:00Z';
+  qa.review_notes = ['Reviewed the exact source artifacts.'];
+  writeFileSync(path, JSON.stringify(qa));
+  assert.doesNotThrow(() => assertApprovedSources(value.root, value.slug));
+});
+
 function addCoinMediaGate(value) {
   const identity = '1909 Lincoln cent';
   const topic = 'Why Abraham Lincoln Appeared on the Cent in 1909';

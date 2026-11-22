@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "productionDatePacific": "2026-11-23",
+  "selectedAt": "2026-11-22T15:45:40.797134+00:00",
+  "selectedBy": "Codex under standing two-per-night personal-tech authorization",
+  "status": "selected_requires_package_preparation",
+  "targetNewPairs": 2,
+  "maxTopicsPerDay": 3,
+  "notes": [
+    "These are fresh topic briefs, not claims of completed source packages or permission to bypass review.",
+    "The prior DKIM brief overlaps the existing SPF/DKIM/DMARC package, so deliver that backlog instead of making a renamed duplicate.",
+    "Do not count old or repaired MP4s toward these two new-topic slots."
+  ],
+  "topics": [
+    {
+      "slug": "ai-quote-unit-price-versus-carton-price",
+      "topic": "Unit price versus carton price in an AI-generated quote",
+      "proposedHook": "Would your AI quote use the unit price or the carton price?",
+      "payoff": "Give one synthetic product row explicit units, quantity and price columns; compare a saved output to deterministic expected arithmetic.",
+      "sourceBriefId": "ADA-PERSONAL-20261121-04",
+      "productionConditions": [
+        "Check the existing raw-material lesson/transcript before final approval to avoid repeating its example.",
+        "Use synthetic data and show actual model output; do not invent a model mistake.",
+        "Record prompt, model/version, expected result and output."
+      ],
+      "renderApproved": false,
+      "packageReady": false
+    },
+    {
+      "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
+      "topic": "Why deleting a leaked key does not revoke it",
+      "proposedHook": "You deleted the leaked API key. Why can it still work?",
+      "payoff": "Explain removal versus credential revocation with a safe scoped test or clearly labeled diagram.",
+      "sourceBriefId": "ADA-PERSONAL-20261121-05",
+      "productionConditions": [
+        "Keep earlier November 20 proposal and exact evidence trail.",
+        "No real production keys or unauthorized API changes.",
+        "Do not present Facebook and Instagram views as equivalent."
+      ],
+      "renderApproved": false,
+      "packageReady": false
+    }
+  ]
+}

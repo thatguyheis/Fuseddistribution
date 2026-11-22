@@ -198,6 +198,18 @@ def normalized_sources(value: object) -> dict:
     return {key: digest for key, digest in value.items() if key.rsplit("/", 1)[-1] not in ignored}
 
 
+def rendered_on_date(slug: str, date: str) -> bool:
+    """Count actual exports by Pacific creation date, never by reuse/check date."""
+    try:
+        meta = json.loads((ROOT / "video/out" / slug / "render-meta.json").read_text())
+        path = PRODUCTION / "topics" / f"{slug}.json"
+        checkpoint = json.loads(path.read_text()) if path.exists() else {}
+        stamp = dt.datetime.fromisoformat((checkpoint.get("firstRenderedAt") or meta["renderedAt"]).replace("Z", "+00:00"))
+        return stamp.tzinfo is not None and stamp.astimezone(ZoneInfo("America/Los_Angeles")).date().isoformat() == date
+    except (OSError, ValueError, TypeError, KeyError, AttributeError):
+        return False
+
+
 def render_lock_busy() -> bool:
     # The legacy renderer may reclaim its own lock after a positively proven
     # dead PID. Missing/malformed PID, permission denial and all other outcomes
@@ -304,6 +316,8 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
     run_state = {"pacificDate": date, "requestedSlugs": slugs, "status": "starting", "results": [], "startedAt": start.isoformat()}
 
     def persist(status: str, **more: object) -> None:
+        more.update(newRendersToday=len(successful), reusedSlugs=sorted(reused),
+                    targetShortfall=max(0, target_renders_per_day - len(successful)))
         run_state.update(status=status, updatedAt=dt.datetime.now(dt.timezone.utc).isoformat(), **more)
         atomic_json(run_path, run_state)
 
@@ -318,6 +332,7 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
         and item.get("currentArtifactsValid") is not True
     }
     successful: set[str] = set()
+    reused: set[str] = set()
     run_state["attemptedSlugs"] = sorted(attempted)
     run_state["retriedSlugs"] = sorted(retried)
     run_state["results"] = prior.get("results", [])
@@ -355,8 +370,12 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
             if render_is_current(slug, approval, checkpoint):
                 item = {"slug": slug, "status": "already_current", "renderMeta": f"video/out/{slug}/render-meta.json"}
                 run_state["results"].append(item)
-                successful.add(slug)
-                persist("topic_current", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
+                if rendered_on_date(slug, date):
+                    successful.add(slug)
+                else:
+                    reused.add(slug)
+                persist("topic_current", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful),
+                        reusedSlugs=sorted(reused), newRendersToday=len(successful))
                 continue
             retry_allowed = (retry_failed or repaired_package_retry(approval, checkpoint)) and slug in attempted and slug in prior_failed and slug not in retried
             if slug in attempted and not retry_allowed:
@@ -405,12 +424,18 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                 persist("deferred_tts_circuit", currentSlug=slug, attemptedSlugs=sorted(attempted), reason=item["detail"] or "Chatterbox circuit is blocked")
                 return {**run_state, "status": "deferred_tts_circuit"}
             log_path = PRODUCTION / "runs" / date / f"{slug}.log"
+            try:
+                previous_meta = json.loads((ROOT / "video/out" / slug / "render-meta.json").read_text())
+            except (OSError, ValueError):
+                previous_meta = {}
+            first_rendered_at = (checkpoint or {}).get("firstRenderedAt") or previous_meta.get("renderedAt")
             if retry_allowed:
                 retried.add(slug)
             else:
                 attempted.add(slug)
             persist("render_started", currentSlug=slug, attemptedSlugs=sorted(attempted), retriedSlugs=sorted(retried))
-            save_topic(slug, date, status="rendering", log=str(log_path.relative_to(ROOT)))
+            save_topic(slug, date, status="rendering", firstRenderedAt=first_rendered_at,
+                       log=str(log_path.relative_to(ROOT)))
             render_args = ["node", "video/scripts/render.mjs", f"--post={slug}", "--voice=chatterbox", "--music=cycle"]
             presentation_plan = ROOT / "public/blog" / slug / "presentation-plan.json"
             if presentation_plan.is_file() and approval.get("presentation-plan.json") == digest(presentation_plan):
@@ -465,7 +490,10 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                        log=str(log_path.relative_to(ROOT)))
             persist("topic_finished", attemptedSlugs=sorted(attempted))
             if status == "rendered-awaiting-review":
-                successful.add(slug)
+                if rendered_on_date(slug, date):
+                    successful.add(slug)
+                else:
+                    reused.add(slug)
                 persist("topic_finished", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
             if len(successful) >= target_renders_per_day:
                 persist("completed_target", attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful))
@@ -481,7 +509,10 @@ def run_queue(slugs: list[str], *, max_topics_per_day: int = 3, target_renders_p
                     persist("deferred_tts_circuit", attemptedSlugs=sorted(attempted), reason="repeated Chatterbox runtime failure; stop heavy work")
                     return {**run_state, "status": "deferred_tts_circuit"}
         final = "completed" if len(successful) >= target_renders_per_day else "completed_with_failures"
-        persist(final, attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful), finishedAt=dt.datetime.now(dt.timezone.utc).isoformat())
+        persist(final, attemptedSlugs=sorted(attempted), successfulSlugs=sorted(successful),
+                reusedSlugs=sorted(reused), newRendersToday=len(successful),
+                targetShortfall=max(0, target_renders_per_day - len(successful)),
+                finishedAt=dt.datetime.now(dt.timezone.utc).isoformat())
         return run_state
     except BaseException as error:
         persist("exception", attemptedSlugs=sorted(attempted), error=f"{type(error).__name__}: {error}")

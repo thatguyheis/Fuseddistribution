@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('business_status', Path(__file__).with_name('business-reel-status.py'))
 status = importlib.util.module_from_spec(spec)
@@ -11,6 +12,23 @@ spec.loader.exec_module(status)
 
 
 class BusinessDeliveryStatusTests(unittest.TestCase):
+    def test_unqueued_ready_video_is_delivery_backlog_even_without_due_posts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state = root / '.workflow-state/business-growth-ai-365'
+            topic = state / 'production/topics'
+            topic.mkdir(parents=True)
+            (topic / 'orphan-ready.json').write_text(json.dumps({'status': 'rendered-awaiting-review'}))
+            out = root / 'video/out/orphan-ready'
+            out.mkdir(parents=True)
+            (out / 'release-qa.json').write_text(json.dumps({'readyForPosting': True}))
+            (out / 'render-meta.json').write_text(json.dumps({'renderedAt': '2026-01-01T12:00:00Z'}))
+            with patch.multiple(status, ROOT=root, STATE=state):
+                result = status.summary()
+            self.assertEqual(result['duePostIds'], [])
+            self.assertEqual(result['deliveryBacklog'], ['orphan-ready'])
+            self.assertEqual(result['newRendersToday'], 0)
+
     def test_overdue_posts_survive_removal_from_the_active_topic_queue(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

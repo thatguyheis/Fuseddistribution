@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "datePacific": "2026-11-22",
+  "checkedAt": "2026-11-22T15:48:05.280514+00:00",
+  "lastNight": {
+    "newReels": 0,
+    "requestedSlugs": [
+      "why-ai-video-works-better-with-story-structure",
+      "ai-video-scene-changes-should-move-the-story-forward"
+    ],
+    "reportedResult": "completed_with_failures; one reused old export, one preflight failure",
+    "proof": "The current November 22 queue attemptedSlugs is empty. Both exports date to November 13.",
+    "launchAgentInstalled": true,
+    "lastObservedExitCode": 1
+  },
+  "rootCauses": [
+    "Preparation rotated older completed packages instead of making fresh topics.",
+    "Runner counted already_current exports toward daily success.",
+    "Monitor treated duePostIds=[] as no delivery action even for unscheduled ready exports.",
+    "Some editorial records used reviewedAt instead of the reviewed_at deployment field; source preflight had not caught the mismatch.",
+    "The generic QA child error hid exit/signal/stderr behind a pass line. Current scene-change package now also has an unreviewed enrichment repair."
+  ],
+  "repairs": [
+    "Distinct Pacific first-export counting, preserve firstRenderedAt across repairs, explicit reused counts and target shortfall.",
+    "Handoff rejects an old-export slate without enough fresh candidates.",
+    "Status discovers ready-delivery candidates outside current queue/ledger.",
+    "Source preflight enforces canonical editorial metadata and preserves process diagnostics.",
+    "Updated existing 20:30 preparation and 03:15/06:15/14:15 health automations through the app tool, retaining GPT-5.6 Luna low.",
+    "Documented fresh preparation versus delivery, actual v2 plan path and selected two fresh November 23 briefs."
+  ],
+  "automations": [
+    {
+      "id": "daily-business-growth-blog-and-reel",
+      "name": "Daily personal tech preparation",
+      "status": "ACTIVE",
+      "model": "gpt-5.6-luna",
+      "reasoning": "low",
+      "schedule": "FREQ=DAILY;BYHOUR=20;BYMINUTE=30;BYSECOND=0"
+    },
+    {
+      "id": "finish-failed-overnight-reels-now",
+      "name": "Overnight tech delivery and health",
+      "status": "ACTIVE",
+      "model": "gpt-5.6-luna",
+      "reasoning": "low",
+      "schedule": "FREQ=DAILY;BYHOUR=3,6,14;BYMINUTE=15;BYSECOND=0"
+    }
+  ],
+  "nextRun": {
+    "preparation": "2026-11-22 20:30 America/Los_Angeles",
+    "render": "2026-11-23 02:00 America/Los_Angeles",
+    "recoveryHoursPacific": [
+      "03:00",
+      "04:00",
+      "05:00"
+    ],
+    "newSlate": "content/tech-education/nightly-slate-2026-11-23.json",
+    "packageState": "selected_requires_package_preparation; not release ready",
+    "topics": [
+      "AI quote: unit price versus carton price",
+      "Deleting a leaked API key does not revoke it"
+    ]
+  },
+  "deliveryBacklogCandidates": [
+    "ai-video-scene-changes-should-move-the-story-forward",
+    "checking-names-and-numbers-in-whisper-transcripts",
+    "draft-a-customer-email-with-ai-and-review-before-sending",
+    "google-workspace-custom-domain-email-for-small-business",
+    "move-personal-gmail-to-google-workspace-business-email",
+    "myth-check-one-number-small-business-should-check-weekly",
+    "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+    "side-by-side-one-number-small-business-should-check-weekly",
+    "summarize-your-own-document-with-ai",
+    "why-ai-video-works-better-with-story-structure"
+  ],
+  "limits": [
+    "No new daytime TTS or encoding was started by this audit.",
+    "No Buffer post or blog publication was completed in this repair turn.",
+    "Candidates require actual current-source, encoded-media and delivery checks; stale readyForPosting alone is insufficient.",
+    "Tomorrow production cannot be claimed successful before packages and the actual run pass."
+  ],
+  "validation": {
+    "pythonTestsPassed": 26,
+    "nodeTestsPassed": 5,
+    "currentQueueFreshCandidatesForNovember23": 0,
+    "confirmedActiveAutomations": 2
+  }
+}

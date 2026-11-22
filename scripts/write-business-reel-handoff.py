@@ -45,6 +45,25 @@ def handoff_path(date: str) -> Path:
     return PRODUCTION / "handoffs" / f"{date}.json"
 
 
+def fresh_topic_candidates(slugs: list[str], date: str) -> list[str]:
+    fresh = []
+    for slug in slugs:
+        out = ROOT / "video/out" / slug
+        if not (out / f"{slug}.mp4").exists():
+            fresh.append(slug)
+            continue
+        try:
+            meta = json.loads((out / "render-meta.json").read_text())
+            path = PRODUCTION / "topics" / f"{slug}.json"
+            checkpoint = json.loads(path.read_text()) if path.exists() else {}
+            stamp = dt.datetime.fromisoformat((checkpoint.get("firstRenderedAt") or meta["renderedAt"]).replace("Z", "+00:00"))
+            if stamp.tzinfo is not None and stamp.astimezone(PACIFIC).date().isoformat() == date:
+                fresh.append(slug)
+        except (OSError, ValueError, TypeError, KeyError, AttributeError):
+            pass
+    return fresh
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--queue-config", type=Path, default=ROOT / "ops/business-reel-queue.json")
@@ -91,6 +110,10 @@ def main() -> int:
                 or cap < 1 or target < 1 or target > cap or target > len(slugs)):
             raise ValueError("queue config has invalid slugs or daily limits")
 
+        fresh = fresh_topic_candidates(slugs, production_date)
+        if len(fresh) < target:
+            raise ValueError(f"Fresh-topic target shortfall: {len(fresh)}/{target}; prepare new packages and handle older exports as delivery/recovery backlog")
+
         approvals = {}
         for slug in slugs:
             result = subprocess.run(
@@ -111,6 +134,7 @@ def main() -> int:
             maxTopicsPerDay=cap,
             targetRendersPerDay=target,
             approvalFingerprints=approvals,
+            freshTopicSlugs=fresh,
         )
         atomic_json(handoff_path(production_date), manifest)
         print(json.dumps({"status": "ready", "date": production_date, "slugs": slugs,

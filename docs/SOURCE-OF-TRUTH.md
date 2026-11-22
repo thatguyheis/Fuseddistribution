@@ -1,6 +1,6 @@
 # Fused Source of Truth
 
-Version 23, 2026-11-21. Owner: Nick Hughes.
+Version 24, 2026-11-22. Owner: Nick Hughes.
 
 This file is the single reference for what Fused produces, the rules it follows, which jobs run, and how work moves from idea to posted reel. Every other SOP is detail. **When any other file disagrees with this one, this file wins.** Do not paste dated "supersedes" banners into other files; change the value here and in the code in the same commit.
 
@@ -103,6 +103,8 @@ Explicit owner hook wording must be used verbatim in speech and visible opening 
 Package preparation must decode and measure every exact sound-effect excerpt before handoff; schema validation alone does not prove the selected excerpt is audible. Reuse hash-valid rendered artifacts across production dates; delivery failures never require another encode.
 
 Owner requests to generate now or manually authorize daytime production for the explicitly selected topics. Run `python3 scripts/run-business-reel-queue.py --allow-daytime --slugs <approved-slugs>` immediately, serially. This manual path replaces the dated scheduler handoff requirement; source approvals, shared leases, bounded retries and release QA still apply. Do not defer an explicit manual request to the overnight window or ask for the same authorization again.
+
+Scheduled personal-tech production must create two distinct new pairs per Pacific day, with delivery backlog handled separately. Cached or repaired older topics never satisfy the fresh target; firstRenderedAt, newRendersToday, reusedSlugs and targetShortfall are enforced by run-business-reel-queue.py; write-business-reel-handoff.py rejects slates without enough fresh candidates. business-reel-status.py exposes unscheduled ready candidates even when no post is overdue. At 20:30 the Luna owner prepares fresh sourced packages from the real v2 plan and current ADA briefs, not a rotation of old exports. The 03:15/06:15/14:15 monitor completes independently eligible delivery and reports shortfalls. The canonical editorial reviewed_at and review_notes are required before handoff as well as deployment. See BUSINESS-GROWTH-AUTOMATION-SOP.md for the verified repair and exact paths.
 
 ## 5. Schedule
 
