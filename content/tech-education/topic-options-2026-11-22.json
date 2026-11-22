@@ -2,8 +2,11 @@
   "version": 1,
   "datePacific": "2026-11-22",
   "brand": "tech",
-  "status": "options_presented_pending_owner_selection",
-  "selected": [],
+  "status": "owner_selected_for_2026-11-23_preparation",
+  "selected": [
+    1,
+    4
+  ],
   "recommended": [
     1,
     2
@@ -58,5 +61,7 @@
         "https://github.com/openai/whisper"
       ]
     }
-  ]
+  ],
+  "ownerReply": "Let's do 1 and 4",
+  "selectedAt": "2026-11-22T16:59:51.832356+00:00"
 }

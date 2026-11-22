@@ -1,0 +1,114 @@
+{
+  "classification": "Actual existing recognized words; deliberately shifted teaching track, not an observed Whisper failure",
+  "expected": "Label the units before asking AI to calculate.",
+  "heard": "Label the units before asking AI to calculate.",
+  "wordSequenceMatches": true,
+  "originalAudio": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/work/2026-11-22-tech-01/reel-T-06/audio-fused-chatterbox-standard-expressive-v1/seg-10.wav",
+  "audioSha256": "0064c0c4fe03143171a1f5d6f10b77f909b2adea8fb2b7f86dcea89699259f51",
+  "wordsSha256": "71fa4be5c8ab3597814d248f777d49862aa65d5aaad3ac424e031b1f8bc97708",
+  "provenanceSha256": "d1aed7991c847d48d1b5f7c394cda3cdcf1296425e01d895c6a0148d71fbe754",
+  "recognizerModelRevision": "d1d751a5f8271d482d14ca55d9e2deeebbae577f",
+  "audioDuration": 4.04,
+  "deliberateOffsetSeconds": 1.0,
+  "originalWords": [
+    {
+      "text": "Label",
+      "startSec": 0.08,
+      "endSec": 0.76,
+      "probability": 0.8649553060531616
+    },
+    {
+      "text": "the",
+      "startSec": 0.76,
+      "endSec": 1.0,
+      "probability": 0.9891179203987122
+    },
+    {
+      "text": "units",
+      "startSec": 1.0,
+      "endSec": 1.28,
+      "probability": 0.9584702253341675
+    },
+    {
+      "text": "before",
+      "startSec": 1.28,
+      "endSec": 1.78,
+      "probability": 0.9903126955032349
+    },
+    {
+      "text": "asking",
+      "startSec": 1.78,
+      "endSec": 2.28,
+      "probability": 0.9989270567893982
+    },
+    {
+      "text": "AI",
+      "startSec": 2.28,
+      "endSec": 2.72,
+      "probability": 0.4988473951816559
+    },
+    {
+      "text": "to",
+      "startSec": 2.72,
+      "endSec": 3.24,
+      "probability": 0.9954383969306946
+    },
+    {
+      "text": "calculate.",
+      "startSec": 3.24,
+      "endSec": 3.66,
+      "probability": 0.9819388389587402
+    }
+  ],
+  "delayedWords": [
+    {
+      "text": "Label",
+      "startSec": 1.08,
+      "endSec": 1.76,
+      "probability": 0.8649553060531616
+    },
+    {
+      "text": "the",
+      "startSec": 1.76,
+      "endSec": 2.0,
+      "probability": 0.9891179203987122
+    },
+    {
+      "text": "units",
+      "startSec": 2.0,
+      "endSec": 2.28,
+      "probability": 0.9584702253341675
+    },
+    {
+      "text": "before",
+      "startSec": 2.28,
+      "endSec": 2.78,
+      "probability": 0.9903126955032349
+    },
+    {
+      "text": "asking",
+      "startSec": 2.78,
+      "endSec": 3.28,
+      "probability": 0.9989270567893982
+    },
+    {
+      "text": "AI",
+      "startSec": 3.28,
+      "endSec": 3.72,
+      "probability": 0.4988473951816559
+    },
+    {
+      "text": "to",
+      "startSec": 3.72,
+      "endSec": 4.24,
+      "probability": 0.9954383969306946
+    },
+    {
+      "text": "calculate.",
+      "startSec": 4.24,
+      "endSec": 4.66,
+      "probability": 0.9819388389587402
+    }
+  ],
+  "limits": "Original timestamps are recognizer estimates, not independently measured ground truth. Compare original audio and actual encoded sample before production approval. One second is the imposed offset, not a measured model error."
+}

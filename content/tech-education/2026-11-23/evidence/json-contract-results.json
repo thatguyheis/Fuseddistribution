@@ -1,0 +1,38 @@
+{
+  "classification": "Hand-authored synthetic fixtures, not captured AI output or a model benchmark",
+  "python": "3.14.5",
+  "contract": {
+    "name": "nonempty string",
+    "email": "nonempty string; no address or deliverability validation"
+  },
+  "results": [
+    {
+      "case": "prose_wrapped",
+      "input": "Here is your contact: {\"name\":\"Alex Example\",\"email\":\"alex@example.com\"}",
+      "parses": false,
+      "contractPass": false,
+      "reason": "Expecting value"
+    },
+    {
+      "case": "missing_field",
+      "input": "{\"name\":\"Alex Example\"}",
+      "parses": true,
+      "contractPass": false,
+      "reason": "name and email must be nonempty strings"
+    },
+    {
+      "case": "wrong_type",
+      "input": "{\"name\":\"Alex Example\",\"email\":42}",
+      "parses": true,
+      "contractPass": false,
+      "reason": "name and email must be nonempty strings"
+    },
+    {
+      "case": "matching_contract",
+      "input": "{\"name\":\"Alex Example\",\"email\":\"alex@example.com\"}",
+      "parses": true,
+      "contractPass": true,
+      "reason": "Required fields and string types present; does not verify email deliverability or consent"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "datePacific": "2026-11-22",
+  "productionDatePacific": "2026-11-23",
+  "ownerReply": "Let's do 1 and 4",
+  "status": "selected_briefs_and_evidence_ready_for_evening_preparation",
+  "automation": {
+    "id": "daily-business-growth-blog-and-reel",
+    "status": "ACTIVE",
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": "low",
+    "preparationTimePacific": "20:30",
+    "promptSha256": "d7e34a229f27ca9c70cdd4f5c16d8e261bde797a200f47a4e68e12b0094df04b",
+    "verifiedAt": "2026-11-22T17:00:39.891860+00:00",
+    "change": "Replaced stale completed-topic paragraph with the current owner-selected pair; schedule/model/limits unchanged."
+  },
+  "renderJob": {
+    "label": "com.nick.business-reel-production",
+    "installedVerified": true,
+    "startTimePacific": "02:00",
+    "recoveryTimesPacific": [
+      "03:00",
+      "04:00",
+      "05:00"
+    ],
+    "runner": "scripts/run-business-reel-queue.py",
+    "status": "waiting_for_evening_validated_packages_and_dated_handoff"
+  },
+  "readiness": {
+    "topicApproval": true,
+    "scriptSeeds": true,
+    "actualEvidenceChecks": true,
+    "sourceReview": true,
+    "fullBlogPackages": false,
+    "finalProductionScripts": false,
+    "sourceArtwork": false,
+    "enrichmentAndSoundPreflight": false,
+    "readyHandoff": false,
+    "finalVideos": false
+  },
+  "sources": [
+    {
+      "url": "https://docs.python.org/3/library/json.html",
+      "checkedDate": "2026-11-22",
+      "supports": "json.loads decoding and decoding error; separate explicit local application checks establish required fields/types."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259",
+      "checkedDate": "2026-11-22",
+      "supports": "JSON syntax and data interchange specification, not an application field contract."
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "checkedDate": "2026-11-22",
+      "supports": "Speech recognition model context, not proof that a particular file was correctly transcribed."
+    },
+    {
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "checkedDate": null,
+      "note": "Local runtime provenance identifies faster-whisper small.en revision d1d751a5f8271d482d14ca55d9e2deeebbae577f; current upstream capability claims need fresh review if added."
+    }
+  ],
+  "captionEvidence": {
+    "source": "Actual authorized Chatterbox recording and small.en recognition from November 22, exact hashes in evidence/caption-offset-results.json",
+    "warning": "The delayed track is intentionally imposed teaching data, not a measured Whisper failure. Original timings are estimates. Actual encoded comparison remains to be built and inspected."
+  },
+  "nextAction": "Existing Luna preparation completes both selected packages, validates them, updates the queue and writes the exact dated handoff for the local serial runner. Do not count briefs or evidence alone as ready production."
+}

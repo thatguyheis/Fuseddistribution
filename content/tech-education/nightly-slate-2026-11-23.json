@@ -1,17 +1,22 @@
 {
   "version": 1,
   "productionDatePacific": "2026-11-23",
-  "selectedAt": "2026-11-22T15:45:40.797134+00:00",
-  "selectedBy": "Codex under standing two-per-night personal-tech authorization",
-  "status": "awaiting_owner_next_topic_selection",
+  "selectedAt": "2026-11-22T16:59:51.832356+00:00",
+  "selectedBy": "Nick",
+  "status": "owner_selected_requires_package_preparation",
   "targetNewPairs": 2,
   "maxTopicsPerDay": 3,
   "notes": [
-    "These are fresh topic briefs, not claims of completed source packages or permission to bypass review.",
-    "The prior DKIM brief overlaps the existing SPF/DKIM/DMARC package, so deliver that backlog instead of making a renamed duplicate.",
-    "Do not count old or repaired MP4s toward these two new-topic slots."
+    "Owner selected options 1 and 4. Preserve exact selected hook and CTA.",
+    "Evidence was executed locally; all fixtures and the imposed caption shift are explicitly labeled.",
+    "These are selected briefs and narration seeds, not a ready handoff or completed exports.",
+    "Options 2 and 3 remain unselected and are not authorized substitutes."
   ],
-  "topics": [
+  "manualGenerationDatePacific": "2026-11-22",
+  "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
+  "nextPreparationAction": "At the existing November 22 20:30 Pacific Luna pass, finish exactly these two fresh sourced packages, validate all sources and media, update the production queue and write the ready November 23 handoff for the 02:00 serial runner. Evidence checks passed; article, artwork, enrichment, final script and render preflight are still required. Do not render the completed November 22 topics again.",
+  "nextTopicOptions": "content/tech-education/topic-options-2026-11-22.json",
+  "previousCompletedTopics": [
     {
       "slug": "ai-quote-unit-price-versus-carton-price",
       "topic": "Unit price versus carton price in an AI-generated quote",
@@ -53,8 +58,75 @@
       "bufferScheduledVerified": true
     }
   ],
-  "manualGenerationDatePacific": "2026-11-22",
-  "manualReviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
-  "nextPreparationAction": "Both prior selected reels and matching blogs are completed today; exact Buffer IDs and live embed checks are in the manual review receipt. Do not regenerate these exports or count them as November 23 production. Nick requested options before choosing the next pair; present the options and use his next selection to prepare two DIFFERENT topics.",
-  "nextTopicOptions": "content/tech-education/topic-options-2026-11-22.json"
+  "ownerReply": "Let's do 1 and 4",
+  "ownerSelectionSource": "content/tech-education/topic-options-2026-11-22.json",
+  "topics": [
+    {
+      "optionId": 1,
+      "slug": "ai-answer-json-validation-before-automation",
+      "topic": "Make an AI answer usable by an automation",
+      "category": "automation-input-validation",
+      "subject": "Make an AI answer usable by an automation",
+      "hook": "Your AI answer looks right. Will your automation accept it?",
+      "proposedHook": "Your AI answer looks right. Will your automation accept it?",
+      "approvedHook": "Your AI answer looks right. Will your automation accept it?",
+      "preserveExactHook": true,
+      "cta": "Validate one sample before connecting the next step.",
+      "promise": "Compare a prose-wrapped answer with valid JSON, then check required fields and types before passing it to the next step.",
+      "explanation": "Record real JSON parser and field/type checks using synthetic contact data. Show actual accepted/rejected output, a field table and a decision flow.",
+      "visualSupport": "Actual evidence table and decision flow",
+      "payoff": "Parse and validate the required fields before the next action.",
+      "variety": "Demonstrate a small input contract with synthetic fixtures",
+      "primarySources": [
+        "https://docs.python.org/3/library/json.html",
+        "https://www.rfc-editor.org/rfc/rfc8259"
+      ],
+      "sourceCheckedDate": "2026-11-22",
+      "scriptSeed": "content/tech-education/2026-11-23/json-script-seed.md",
+      "evidence": "content/tech-education/2026-11-23/evidence/json-contract-results.json",
+      "evidenceChecksPassed": true,
+      "productionConditions": [
+        "Record real JSON parser and field/type checks using synthetic contact data. Show actual accepted/rejected output, a field table and a decision flow.",
+        "Review final source artwork and encoded output. Keep exact hook and CTA.",
+        "Apply normal Chatterbox Standard, two explanatory graphics, sound rights, subtitle clearing and shared serial ownership checks."
+      ],
+      "topicApproved": true,
+      "renderApproved": false,
+      "packageReady": false,
+      "status": "selected_requires_package_preparation"
+    },
+    {
+      "optionId": 4,
+      "slug": "whisper-correct-words-late-captions",
+      "topic": "Why correct caption words can still appear late",
+      "category": "speech-and-captions",
+      "subject": "Why correct caption words can still appear late",
+      "hook": "Whisper got every word right. Why are the captions still late?",
+      "proposedHook": "Whisper got every word right. Why are the captions still late?",
+      "approvedHook": "Whisper got every word right. Why are the captions still late?",
+      "preserveExactHook": true,
+      "cta": "Check the timing on one spoken sentence.",
+      "promise": "Separate word accuracy from timing by comparing an intentionally offset subtitle track with corrected alignment.",
+      "explanation": "Use authorized local audio and actual encoded output. Label the deliberately introduced offset, show a timing timeline and a before/after timing table. This is different from caption overlap and name/number recognition.",
+      "visualSupport": "Actual original/delayed encoded comparison plus timing table and timeline",
+      "payoff": "Correct text does not guarantee correct timeline placement.",
+      "variety": "Explain timing with an actual recorded line and deliberately shifted teaching track",
+      "primarySources": [
+        "https://github.com/openai/whisper"
+      ],
+      "sourceCheckedDate": "2026-11-22",
+      "scriptSeed": "content/tech-education/2026-11-23/captions-script-seed.md",
+      "evidence": "content/tech-education/2026-11-23/evidence/caption-offset-results.json",
+      "evidenceChecksPassed": true,
+      "productionConditions": [
+        "Use authorized local audio and actual encoded output. Label the deliberately introduced offset, show a timing timeline and a before/after timing table. This is different from caption overlap and name/number recognition.",
+        "Review final source artwork and encoded output. Keep exact hook and CTA.",
+        "Apply normal Chatterbox Standard, two explanatory graphics, sound rights, subtitle clearing and shared serial ownership checks."
+      ],
+      "topicApproved": true,
+      "renderApproved": false,
+      "packageReady": false,
+      "status": "selected_requires_package_preparation"
+    }
+  ]
 }
