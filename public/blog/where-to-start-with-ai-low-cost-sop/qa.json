@@ -1,34 +1,40 @@
 {
   "slug": "where-to-start-with-ai-low-cost-sop",
-  "score": 92,
-  "pass": true,
-  "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-09",
-  "reviewer": "Codex",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T18:13:58.534493+00:00",
   "review_notes": [
-    "Reviewed article claims against linked OpenAI sources, the question hook, handoff guidance, one-action CTA, vector cover, and workflow graphic.",
-    "The article accurately distinguishes project files from scheduled-task file access and advises checking current free-tier limits.",
-    "The short reel was manually reviewed against the owner requested 45-second target. Automated duration gate is intentionally not used for this one-off."
+    "Read the complete matching article and checked its subject, assumptions, sources and locally recorded examples against the companion reel.",
+    "Reused existing final media: exact master review hash or explicit manual file review verified. Delivery files are separately recorded and verified; no voice or full reel was regenerated.",
+    "Inspected hero graphics; completed missing explanatory tables/flows and repaired article copy, source references or length where required.",
+    "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
-  "attentionOptimizationVersion": 1,
-  "hook": {
-    "questionHookRequired": true,
-    "spokenText": "Want to learn AI without a big bill?",
-    "visibleText": "Want to learn AI without a big bill?"
-  },
   "artifactSha256": {
     "verified.md": "21d0302415470ffa473281896303c37e9e3603c9defe1d1dbb22d17c5a338e8d",
-    "index.html": "939d4e3de18a5ef3c0973cc7c55e6a8717a2bba0b6f926ff6792a82c32534b47",
+    "index.html": "cbcaa5ff89cc13a71c4ebf90b49dc62e5a0cdf99f316f1539dd40ed6683c08ee",
     "meta.json": "0c3761d2c414c1033bc4fa0707cc88c46e206ef6ee4ad8528dcf169cd3791f46",
-    "research.json": "98ba8d4375680456a35a45367ce0747cdbd836ebba3024db5adefd07eae1ff74",
+    "research.json": "fdba2023e3312872b8a4f4773cb9b969caec9a6fce0763055481b1201905625f",
     "hero.jpg": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
     "photo-post.jpg": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
     "reel-script.md": "734a07ad3d87e5ec4643c7cd85c3e38436c7b73481f8231030182f77c844b29d",
     "reel-data.md": "56196a76ed1b8327208b35d2c96bd1fc24fb00f1b034490f7a84e9f1da8d4d43",
     "social-copy.json": "c8ee98cb034b65be4b0e5904ee5eb79efff50f732e7a8ecda6559b412aebae3b",
-    "enrichment-plan.json": "259d04a20246a8eb5390ef2377fb84d19821b27c493e390fa24c13a2d3a909a0",
-    "attention-review.json": "157c22431ce7087fa2bcbad0a415521ac0e3ee1322646c6800841a88395fd032",
-    "presentation-plan.json": "aadd0a68e08f65d159f3942d194a77a7d884d2b1195393f7b3528e7624464541"
+    "social-video.json": "ecdb23b1000e9caf29c536ffe8486d2d39ff4c88ede09c74a308597f7d34480c",
+    "images/scene-0-ai-hook.jpg": "1e1ffd0d142c507ad120222d8ef01a2283a24403a72a0eb5596a09083fda47ec",
+    "images/scene-4-handoff.svg": "ee1a2040d4841353aa661f262b131a7db287e98fb1d3ac3e47e384fb7320f855",
+    "images/scene-6-ai-cta.jpg": "c4c42bcae4aa6aaf3207480ad39ab4c39630f1707f7978e89a67da3c0105adf1",
+    "images/scene-2-free-pilot.jpg": "6511b0879fc9b00381221228474d4edfa9406656beef8082935c20e38a9a2605",
+    "images/scene-3-source-truth.svg": "4faf7c22653af7be8996256a81e5edcb44d1a9e49db3313d335842a373464e00",
+    "images/scene-3-source-truth.jpg": "cfd432c84dff3bcffdf825596029f9d5f9b547a7bb5047c9d2099475c6c11a64",
+    "images/scene-2-free-pilot.svg": "7488b6e2ff19680c738f30ad2e1e4751448181e6f3c9b9fc067f2c0e8c063119",
+    "images/scene-6-ai-cta.svg": "1c8c0b42d9cee28bbbed72a7475413f619cc90248ed7fb4958b0725938ae4b61",
+    "images/scene-4-handoff.jpg": "48eeaa0e35100cb6ad902f4da26d27e7014922cf3b2b6c5090f685e582271ac8",
+    "images/scene-0-ai-hook.svg": "385acad49db1fb7bc36ac97bb76361165e875687ce5ad23d950585622a42958a",
+    "images/scene-5-review.svg": "fee6951c9def6440556fbbd8c920a9d3f70a484d17e88a0ed412dc10592f364b",
+    "images/scene-1-choose-task.svg": "9fbc6f6ac4035be9984e20b0c127a0f1ef19d71096dc5956504bf9a410281c22",
+    "images/scene-1-choose-task.jpg": "030a0fd5a25cc92fd913cce74c82de6597ac4ce507db9580c4a0eba76edd4abe",
+    "images/scene-5-review.jpg": "7011d41f4b9b23d76b5537b7cf90d8a69d67c8e1ec725358e5ff435ab35747fa"
   }
 }

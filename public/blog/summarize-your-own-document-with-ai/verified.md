@@ -1,14 +1,14 @@
-# How to Summarize Your Own Document With AI
+# Create a Checked Summary of Your Own Document With AI
 
 ## Begin with a document you are allowed to share
 
 Can AI summarize a document without changing its meaning? It can help you make a first draft, but you still need to check the summary against the source. Begin with a document you have permission to use and that contains no information you should keep private. A public policy, product guide, or sanitized procedure is a safer first test than a customer file or personnel record.
 
-ChatGPT can work with common uploaded formats such as PDF, DOCX, TXT, Markdown, and spreadsheets, although available formats and limits depend on the plan and workspace. Check the [current file upload guide](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt) before choosing a file. If a file contains material outside the task, make a clean copy and remove it first.
+ChatGPT can work with common uploaded formats such as PDF, DOCX, TXT, Markdown, and spreadsheets, although available formats and limits depend on the plan and workspace. Check the [current file upload guide](https://learn.chatgpt.com/docs/use-chatgpt) before choosing a file. If a file contains material outside the task, make a clean copy and remove it first.
 
 ## Decide who will use the summary
 
-A useful summary depends on its purpose. A business owner scanning a procedure may need actions and exceptions. A new employee may need a plain-language overview and terms to learn. Someone preparing for a meeting may need decisions, dates, and open questions. State the reader and use before asking for a summary.
+A useful summary depends on its purpose. A business owner scanning a procedure may need actions and exceptions. A new employee may need a plain-language overview and terms to learn. Someone preparing for a meeting may need decisions, dates, and open questions. State the reader and use before requesting a summary.
 
 Without that direction, a model may produce a generic recap that hides the part you care about. Decide the length and shape too. You might ask for five bullet points, a short executive summary, or a table with “requirement,” “source section,” and “follow-up.” Be specific enough for someone else to review the result.
 
@@ -31,8 +31,6 @@ For a long policy, review the most important sections one at a time. Ask the mod
 Store the summary with a label showing that it is a draft and include the document title, version, date, or link. Keep the original as the source of truth. If the source changes, update the summary and check it again. Do not let an old summary silently become the current instruction.
 
 If another AI tool or coworker will use the result, pass along the source name and the sections that still need review. Different tools do not necessarily share chat history or saved files. For repeatable handoffs, see [how an SOP gives AI one clear process](/blog/what-is-an-sop-and-why-ai-needs-one/) and [how to schedule AI tasks around an SOP](/blog/schedule-ai-tasks-to-follow-your-sop/).
-
-## A practical review checklist
 
 ## Walk through a fictional procedure
 
@@ -68,9 +66,8 @@ The best first result is not the most polished paragraph. It is a summary that h
 
 ## Sources
 
-- [Uploading files and audio to ChatGPT](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt)
+- [Uploading files and audio to ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt)
 - [Does ChatGPT tell the truth?](https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth)
-- [Using Library to manage files in ChatGPT](https://help.openai.com/en/articles/20001052-using-library-to-manage-files-in-chatgpt)
 
 ## Related
 

@@ -1,35 +1,40 @@
 {
   "slug": "summarize-your-own-document-with-ai",
-  "score": 92,
-  "pass": true,
-  "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-10",
-  "reviewer": "Codex",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T18:13:58.534493+00:00",
   "review_notes": [
-    "Reviewed the 1100+ word article against current primary sources and labeled illustrative examples as fictional.",
-    "Reviewed the question-led seven-scene script, source labels, CTA, cleared sound effects, mobile-safe original art, and enrichment flow.",
-    "Package QA passes. Encoded MP4, audio, caption, and final-card review remains a separate overnight release gate.",
-    "Verified exact sound excerpts with ffmpeg: metal thunk begins at 2 seconds; removed silent 0.2-second selection."
+    "Read the complete matching article and checked its subject, assumptions, sources and locally recorded examples against the companion reel.",
+    "Reused existing final media: exact master review hash or explicit manual file review verified. Delivery files are separately recorded and verified; no voice or full reel was regenerated.",
+    "Inspected hero graphics; completed missing explanatory tables/flows and repaired article copy, source references or length where required.",
+    "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
-  "attentionOptimizationVersion": 1,
-  "hook": {
-    "questionHookRequired": true,
-    "spokenText": "Can AI summarize a document accurately?",
-    "visibleText": "Can AI summarize a document accurately?"
-  },
   "artifactSha256": {
-    "verified.md": "b896e1ef98e011a5cd4042dad2638943433bb7e8622206a1b4c345a28df19605",
-    "index.html": "5c5c711423acccc0cb317256fdb2333ac86828f84acc69a0863b53cc958aadd7",
-    "meta.json": "9ac12aca333f3b125a08af14f8989638febdc68a2cd5db35861c99e8ba278de5",
-    "research.json": "8a0f0d2d88183eec2f089394f4b0fe23593417593673730b6acbbc7fb91f6395",
+    "verified.md": "5955832c665ac70e7c5e8125ea03beb7d45ced612a0a6a1862a07550b964821a",
+    "index.html": "6175c0e12a3372ad635930da0a56376c6eb54a31c011589d62f6f7ceef58762a",
+    "meta.json": "634cc13be2f467e872aec0ea9e3ab8b37807fb2dca86e4f68981b9ecd25b12fb",
+    "research.json": "f240300dfd726037d782ebb4b34d08241eb972de244aae274b0c21d5cba749bd",
     "hero.jpg": "559a02939dc867e4380fac5827980fa3e007bd2dd5f72fabd70c4f221ed1cb5d",
     "photo-post.jpg": "db954e71a72ac3701788f5afc25d764ef3414c23da0218abe8870e86757aa514",
     "reel-script.md": "ba95831a587ccf392de593af7bb21516ddb8fff89332693d37c871b5721ae306",
     "reel-data.md": "d54023aa2da9078bd89c6126171199c091855aa169156450208a902aab4aadb6",
     "social-copy.json": "60454ccf167c40913df6507a0acdd97c18d376986d8dc67743f335c36d17db90",
-    "enrichment-plan.json": "8fbdbfd98aeeee3bdf72d1184cb8c71609cda367f76c0c3af18bf2f97112f4f9",
-    "attention-review.json": "541017206972c4ded8f6f6df2861da574264209b6e14325e50af6baed833583c",
-    "presentation-plan.json": "1a9a2a0663d0177bfa227a94b464d72ed7a021c2e8cf659557f5d6d89af0f073"
+    "social-video.json": "985aff1c6bc8f09127349b3fd88e089dbe9e64cc7e94459d44943f9df0ff14e9",
+    "images/scene-1-step-1.jpg": "813623226a23569ad09e0f0eb74fa9c3ec9d64af1d8ce6101af0266e9571cb36",
+    "images/scene-4-step-4.jpg": "5cfd0e20aaae7e3aafb5377abe79f0ffa04e26fb0d9e835a770283646ba3ea6f",
+    "images/scene-3-step-3.svg": "4990974122d3a8feace0da9dfc923aed33501173862a0417a951a85ec0f96453",
+    "images/scene-0-hook.jpg": "4f14f355cb5fde2c09020c33b673c3f433941e5b2014dfaac051bfd414a366ed",
+    "images/scene-6-cta.svg": "0b9cc9ffb5029c51bb4bcf4f49214402d9bff585bb14b21ee161c607f4000757",
+    "images/scene-6-cta.jpg": "6a96298f362d8b6b35c4a486ffa2fbb1e67906ad02a975cc18b2ffc9b5efd2ec",
+    "images/scene-0-hook.svg": "d4f496122a3b9423c6d116485757fc858b5c672520364d8eba4a6cb189e39571",
+    "images/scene-3-step-3.jpg": "af5f53f69435dd9c30bed05db77e512540a43d1532fe768e5448ab57ebc21a2e",
+    "images/scene-4-step-4.svg": "29fee81e4c96695558cc878e4d7859989c244207c422222b17e711c19b5fc345",
+    "images/scene-1-step-1.svg": "c839de1d713b60f94776fdbd83a6dad2a7a48616aab150b20760ec0d9f8261be",
+    "images/scene-2-step-2.svg": "0260aa0fb7ef05c4ade43950f71cfac190015fdfff534feaf6c8375ed860d420",
+    "images/scene-5-step-5.jpg": "70547692d48b2acb6be24a29e2a8e7d35dcb865b2de06502225af6a03b09b6c0",
+    "images/scene-5-step-5.svg": "6a2bb38f2b859003862f3d670d2fd2e33fcd0515388086d0ed73a8ecc5cec2d7",
+    "images/scene-2-step-2.jpg": "7ace7f7af25e25d0de618e63234b821539a9b1986c8a2aecbf8e900ed96d83d4"
   }
 }

@@ -5,8 +5,30 @@
   "ogDescription": "A practical guide to building trust, asking for introductions, and meeting new business contacts locally.",
   "alt": "Illustrated small business connection network graphic",
   "squareCover": true,
-  "date": "2026-11-02",
-  "tags": ["Small Business", "Networking", "Marketing"],
+  "date": "2026-11-22",
+  "tags": [
+    "Small Business",
+    "Networking",
+    "Marketing"
+  ],
   "brand": "tech",
-  "ctaLine": "Build a stronger online home for the relationships you are growing."
+  "ctaLine": "Build a stronger online home for the relationships you are growing.",
+  "originalDraftDate": "2026-11-02",
+  "contentGraphic": {
+    "label": "An illustrative introduction workflow",
+    "rows": [
+      {
+        "condition": "Explain the fit",
+        "action": "Name who you help and the problem you solve"
+      },
+      {
+        "condition": "Ask with permission",
+        "action": "Make an introduction easy to offer or decline"
+      },
+      {
+        "condition": "Follow through",
+        "action": "Thank the connector and respect privacy"
+      }
+    ]
+  }
 }

@@ -5,11 +5,29 @@
   "ogDescription": "Compare customer acquisition cost with customer outcomes using consistent costs, clear dates, and a fictional example before judging your weekly marketing results.",
   "alt": "Customer acquisition cost fictional comparison table",
   "brand": "tech",
-  "date": "2026-11-04",
+  "date": "2026-11-22",
   "tags": [
     "Business Growth",
     "Marketing Metrics",
     "Small Business"
   ],
-  "ctaLine": "Review the customer outcome beside acquisition cost."
+  "ctaLine": "Review the customer outcome beside acquisition cost.",
+  "originalDraftDate": "2026-11-04",
+  "contentGraphic": {
+    "label": "Fictional arithmetic, other costs excluded",
+    "rows": [
+      {
+        "condition": "Option A",
+        "action": "USD 30 contribution minus USD 20 acquisition cost = USD 10"
+      },
+      {
+        "condition": "Option B",
+        "action": "USD 90 contribution minus USD 30 acquisition cost = USD 60"
+      },
+      {
+        "condition": "Limit",
+        "action": "These illustrative remainders are not company profit"
+      }
+    ]
+  }
 }

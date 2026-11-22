@@ -341,3 +341,15 @@ Tracks every blog post angle by date. The cron agent reads this before picking t
 
 - ai-quote-unit-price-versus-carton-price - Owner approved synthetic quote lesson, matching blog and Buffer scheduling. Brand: tech.
 - deleting-a-leaked-api-key-does-not-revoke-it - Owner approved local dummy credential lesson, matching blog and Buffer scheduling. Brand: tech.
+
+## Recovered matching tech blogs November 22, 2026
+
+- ai-answer-json-validation-before-automation - Existing reviewed reel paired with its matching article and verified embed.
+- business-networking-retention-v2 - Existing reviewed reel paired with its matching article and verified embed.
+- checking-names-and-numbers-in-whisper-transcripts - Existing reviewed reel paired with its matching article and verified embed.
+- draft-a-customer-email-with-ai-and-review-before-sending - Existing reviewed reel paired with its matching article and verified embed.
+- myth-check-one-number-small-business-should-check-weekly - Existing reviewed reel paired with its matching article and verified embed.
+- protect-google-workspace-business-email-with-spf-dkim-dmarc - Existing reviewed reel paired with its matching article and verified embed.
+- side-by-side-one-number-small-business-should-check-weekly - Existing reviewed reel paired with its matching article and verified embed.
+- summarize-your-own-document-with-ai - Existing reviewed reel paired with its matching article and verified embed.
+- whisper-correct-words-late-captions - Existing reviewed reel paired with its matching article and verified embed.

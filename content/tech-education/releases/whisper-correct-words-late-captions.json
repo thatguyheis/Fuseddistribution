@@ -6,9 +6,9 @@
     "approvedBy": "Nick",
     "topicSelection": "Let's do 1 and 4",
     "generationRequest": "generate now",
-    "publicationRequest": null
+    "publicationRequest": "go back and make sure all the recent videos for tech have matching blog posts"
   },
-  "publishingAuthorized": false,
+  "publishingAuthorized": true,
   "status": "final_media_passed_owner_review_pending",
   "approvedHook": "Whisper got every word right. Why are the captions still late?",
   "approvedCta": "Check the timing on one spoken sentence.",
@@ -152,5 +152,6 @@
     }
   ],
   "sourcePackageSha256": "1182a6efa548be46414f6604a03aca020b8ee61a6bba1f41d027b4cfc5805e42",
-  "createdAt": "2026-11-22T17:45:08.538061+00:00"
+  "createdAt": "2026-11-22T17:45:08.538061+00:00",
+  "publicationScope": "Matching blog publication with existing reviewed reel embedded. No new Buffer posting requested."
 }

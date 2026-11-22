@@ -1,5 +1,139 @@
 [
   {
+    "slug": "whisper-correct-words-late-captions",
+    "title": "Whisper Got the Words Right. Why Are the Captions Still Late?",
+    "date": "2026-11-22",
+    "excerpt": "Separate caption words from video timing with an actual recording and a deliberately delayed track. Check the final export before generating another voice.",
+    "tags": [
+      "AI Tools",
+      "Video",
+      "Whisper"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/whisper-correct-words-late-captions/hero.jpg",
+    "imageAlt": "Original and delayed caption tracks compared"
+  },
+  {
+    "slug": "summarize-your-own-document-with-ai",
+    "title": "Create a Checked Summary of Your Own Document With AI",
+    "date": "2026-11-22",
+    "excerpt": "Use AI to summarize a business document by setting a reader and purpose, keeping source references, and checking every key detail against the original.",
+    "tags": [
+      "AI Tools",
+      "Small Business",
+      "Business Process"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/summarize-your-own-document-with-ai/hero.jpg",
+    "imageAlt": "Safe document summary review workflow graphic"
+  },
+  {
+    "slug": "side-by-side-one-number-small-business-should-check-weekly",
+    "title": "Cost per Lead Versus Customer Acquisition Cost",
+    "date": "2026-11-22",
+    "excerpt": "Compare cost per lead and customer acquisition cost with a fictional worksheet, consistent marketing spend, clear customer counts, and a stated review period.",
+    "tags": [
+      "Business Growth",
+      "Marketing Metrics",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/side-by-side-one-number-small-business-should-check-weekly/hero.jpg",
+    "imageAlt": "Lead and customer cost comparison worksheet"
+  },
+  {
+    "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
+    "title": "SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide",
+    "date": "2026-11-22",
+    "excerpt": "Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before enforcing a new policy across your domain.",
+    "tags": [
+      "Google Workspace",
+      "Business Email",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/hero.jpg",
+    "imageAlt": "Email authentication setup flow for Workspace"
+  },
+  {
+    "slug": "myth-check-one-number-small-business-should-check-weekly",
+    "title": "Does a Lower Customer Acquisition Cost Always Win?",
+    "date": "2026-11-22",
+    "excerpt": "Compare customer acquisition cost with customer outcomes using consistent costs, dates, and a fictional example before judging your weekly marketing results.",
+    "tags": [
+      "Business Growth",
+      "Marketing Metrics",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/myth-check-one-number-small-business-should-check-weekly/hero.jpg",
+    "imageAlt": "Customer acquisition cost fictional comparison table"
+  },
+  {
+    "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
+    "title": "Draft a Customer Email With AI, Then Review It",
+    "date": "2026-11-22",
+    "excerpt": "Use AI to draft a customer email from approved facts, then review names, privacy, and commitments before a person sends it. Keep a person in control.",
+    "tags": [
+      "AI Tools",
+      "Small Business",
+      "Business Process"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/draft-a-customer-email-with-ai-and-review-before-sending/hero.jpg",
+    "imageAlt": "A person reviews a customer email"
+  },
+  {
+    "slug": "checking-names-and-numbers-in-whisper-transcripts",
+    "title": "Checking Names and Numbers in Whisper Transcripts",
+    "date": "2026-11-22",
+    "excerpt": "Check Whisper transcripts against audio, verify names and numbers, preserve word timings, and review the ending before publishing your next business reel.",
+    "tags": [
+      "Whisper",
+      "AI Tools",
+      "Video Production"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/checking-names-and-numbers-in-whisper-transcripts/hero.jpg",
+    "imageAlt": "Whisper transcript names and numbers checklist"
+  },
+  {
+    "slug": "business-networking-retention-v2",
+    "title": "A Better Way to Ask Your Network for Introductions",
+    "date": "2026-11-22",
+    "excerpt": "Turn existing relationships and local groups into thoughtful business introductions, qualified leads, and professional connections for your small business.",
+    "tags": [
+      "Small Business",
+      "Networking",
+      "Marketing"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/business-networking-retention-v2/hero.jpg",
+    "imageAlt": "Illustrated small business connection network graphic"
+  },
+  {
+    "slug": "ai-answer-json-validation-before-automation",
+    "title": "Your AI Answer Looks Right. Will Your Automation Accept It?",
+    "date": "2026-11-22",
+    "excerpt": "Check AI workflow inputs with a real Python example. Four synthetic contact records show why valid JSON still needs required fields, types and further review.",
+    "tags": [
+      "AI Tools",
+      "Automation"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-answer-json-validation-before-automation/hero.jpg",
+    "imageAlt": "Four synthetic contact records checked locally"
+  },
+  {
     "slug": "deleting-a-leaked-api-key-does-not-revoke-it",
     "title": "Deleting a Leaked API Key Does Not Revoke It",
     "date": "2026-11-22",

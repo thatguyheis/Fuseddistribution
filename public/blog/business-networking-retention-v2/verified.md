@@ -1,4 +1,4 @@
-# How to Build Business Connections That Create Opportunities
+# A Better Way to Ask Your Network for Introductions
 
 Business networking is most useful when it helps people understand who you serve, trust how you work, and make a relevant introduction. That can start with customers and former coworkers you already know, or with people you meet through a neighborhood group, trade association, volunteer project, or local event.
 
@@ -66,7 +66,6 @@ Who could you help this week?
 
 - [LinkedIn and Ipsos, 2026 Small Business Study](https://business.linkedin.com/small-business/resources/2026-small-business-study)
 - [U.S. Small Business Administration, Local Assistance](https://www.sba.gov/local-assistance/)
-- [SCORE, 11 Ways to Find Your First Customers](https://www.score.org/articles/11-ways-find-your-first-customers/)
 
 ## Related
 

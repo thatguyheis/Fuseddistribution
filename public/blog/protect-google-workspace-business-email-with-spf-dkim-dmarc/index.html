@@ -6,7 +6,7 @@
     <title>SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide</title>
     <meta name="description" content="Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before enforcing a new policy across your domain." />
     <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2026-11-08T00:00:00Z" />
+    <meta property="article:published_time" content="2026-11-22T00:00:00Z" />
 
     <meta property="article:author" content="https://fuseddistribution.com/about/" />
     <meta property="og:url" content="https://fuseddistribution.com/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/" />
@@ -23,8 +23,8 @@
       "headline": "SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide",
       "description": "Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before enforcing a new policy across your domain.",
       "url": "https://fuseddistribution.com/blog/protect-google-workspace-business-email-with-spf-dkim-dmarc/",
-      "datePublished": "2026-11-08",
-      "dateModified": "2026-11-08",
+      "datePublished": "2026-11-22",
+      "dateModified": "2026-11-22",
       "author": {
         "@type": "Person",
         "name": "Nick Hughes",
@@ -274,7 +274,7 @@ h1 {
           <h1>SPF, DKIM, and DMARC for Google Workspace: A Simple Setup Guide</h1>
 
           <div class="article-meta">
-            <time datetime="2026-11-08">November 8, 2026</time>
+            <time datetime="2026-11-22">November 22, 2026</time>
             <span class="pill">Google Workspace</span>
             <span class="pill">Business Email</span>
           </div>
@@ -286,9 +286,9 @@ h1 {
           <div class="article-divider"></div>
 
           <div class="article-body">
-            <div class="math-box" role="img" aria-label="Email authentication rollout"><p><strong>SPF</strong> &rarr; Authorize senders</p><p><strong>DKIM</strong> &rarr; Sign outgoing mail</p><p><strong>DMARC</strong> &rarr; Monitor alignment</p><p><strong>Review</strong> &rarr; Fix sources before enforcement</p></div><p>After Gmail works on a custom domain, administrators should review how the domain identifies legitimate outgoing mail. SPF, DKIM, and DMARC are DNS-based email authentication mechanisms. They have different roles and should be configured using current Google Admin guidance and the domain&#39;s actual sending services.</p>
+            <div class="math-box" role="img" aria-label="Email authentication rollout"><p><strong>SPF</strong> &rarr; Authorize senders</p><p><strong>DKIM</strong> &rarr; Sign outgoing mail</p><p><strong>DMARC</strong> &rarr; Monitor alignment</p><p><strong>Review</strong> &rarr; Fix sources before enforcement</p></div><p>After Gmail works on a custom domain, administrators should review how the domain identifies legitimate outgoing mail. SPF, DKIM, and DMARC are DNS based email authentication mechanisms. They have different roles and should be configured using current Google Admin guidance and the domain&#39;s actual sending services.</p>
             <!-- SOCIAL_VIDEO_START -->
-            <aside class="social-video" aria-label="Reel publication status"><h2>Companion reel</h2><p>The companion reel will appear here after editorial review and release approval.</p><div class="social-video-pending" role="status" aria-live="polite">Pending editorial release</div></aside>
+            <aside class="social-video" aria-label="Watch this reel on social media"><h2>Watch the reel</h2><p>Play the Fused reel here.</p><div class="social-video-player"><video controls playsinline preload="metadata"><source src="https://fuseddistribution.com/reels/protect-google-workspace-business-email-with-spf-dkim-dmarc/protect-google-workspace-business-email-with-spf-dkim-dmarc.mp4" type="video/mp4" />Your browser does not support embedded video. Use the links below to watch.</video></div></aside>
             <!-- SOCIAL_VIDEO_END -->
             <p>These records can help receiving systems assess whether a message is authorized and aligned with the domain. They do not guarantee inbox placement, stop every impersonation attempt, or replace account security. A small business should inventory every service that sends mail before publishing or tightening policies.</p>
             <h2>SPF: list authorized sending sources</h2>
@@ -302,15 +302,27 @@ h1 {
             <p>A gradual rollout matters because legitimate systems may be missing from the initial inventory. If a strict policy is published before all senders are identified and aligned, real business email could be rejected or quarantined. Configure a reporting mailbox that someone will review, and use the evidence to update the sending inventory.</p>
             <h2>A cautious setup order</h2>
             <ol>
-            <li>List all services that send messages using the domain, including Workspace and any third-party tools.</li>
+            <li>List all services that send messages using the domain, including Workspace and any other tools.</li>
             <li>Configure the SPF record using current Google and sender-provider instructions. Confirm there is only one SPF record.</li>
             <li>Turn on DKIM for Workspace using the exact selector and DNS values from Admin. Test that messages are signed.</li>
             <li>Publish DMARC in monitoring mode with a working report address. Review reports for legitimate senders that are not aligned.</li>
             <li>Correct the sender configuration and observe results before considering a stricter DMARC policy.</li>
             </ol>
             <p>Keep a copy of the previous DNS values and make one deliberate change at a time. DNS propagation and provider interfaces vary. Ask the domain administrator for help if the organization has existing mail systems or legal retention requirements.</p>
+            <h2>Build a sender inventory before editing DNS</h2>
+            <p>I would start with a simple worksheet rather than a copied DNS example. Give each sending service a row with its purpose, owner, sending domain and current provider instructions. A row might describe employee mail, invoices or booking confirmations. These are example categories, not a claim about the services configured for your domain. Mark unknown senders as unresolved until the responsible administrator identifies them.</p>
+            <p>The worksheet helps separate an intended setup from a verified result. Record which source supplied each value and when it was checked. A proposed TXT value belongs in a planned-change column; the currently published value belongs in another. Do not call a record active merely because someone copied it into a note or saved an unfinished form.</p>
+            <h2>Review one change with its evidence</h2>
+            <p>For a small administrative handoff, I would keep the approved change, previous value, operator and check result together. That makes it possible to explain exactly what changed without reconstructing a chat. Keep credentials and private message details out of a public checklist or tutorial screenshot. Use an example domain when demonstrating the worksheet to other people.</p>
+            <p>Ask what the verification actually established. Finding a DNS value is one observation. Seeing the expected authentication result on a message is another. Record the message&#39;s sending service and the property checked, rather than turning a narrow result into a statement that every kind of business email is now protected. The current Google instructions remain the source for the specific technical checks and rollout sequence.</p>
+            <h2>Keep monitoring work assigned</h2>
+            <p>A monitoring plan needs an owner and a review habit. I would write down who checks the available reports, where unresolved sender questions are recorded and who may approve a later policy change. A calendar entry is only a reminder; it is not evidence that somebody reviewed the reports or corrected a sending service.</p>
+            <p>Use plain states such as planned, published, checked and unresolved. If a result differs from the expectation, preserve the evidence and return to the administrator responsible for that sender. Do not invent a passing result to close the checklist. The aim is a current record of the work, including what still needs attention.</p>
+            <h2>Use AI to organize approved facts</h2>
+            <p>An assistant can turn an approved sender inventory into a readable task list or help explain a provider&#39;s instructions. I would give it the relevant source and ask it to preserve unknown fields. The assistant should not generate a domain&#39;s final DNS values from a generic description or infer that a record was deployed from a proposed configuration.</p>
+            <p>Keep the source, the planned action and the actual check result separate. That makes this a useful continuation of the custom domain email lesson: a professional address is the beginning of a managed setup, and the supporting records need deliberate administrative work and verified results.</p>
             <h2>What these records do not replace</h2>
-            <p>Email authentication is one layer. Protect Workspace accounts with strong sign-in security, limit administrator access, keep recovery methods current, and train staff to verify unusual payment or credential requests through a second channel. Authentication records do not prove that a message&#39;s contents are honest; they help receiving systems assess how the message relates to the sending domain.</p>
+            <p>Email authentication is one layer. Protect Workspace accounts with strong sign in security, limit administrator access, keep recovery methods current, and train staff to verify unusual payment or credential requests through a second channel. Authentication records do not prove that a message&#39;s contents are honest; they help receiving systems assess how the message relates to the sending domain.</p>
             <p>The right setup reflects every service that sends mail for the domain. Start with an inventory, apply Google&#39;s current instructions, monitor the evidence, and tighten enforcement only when legitimate mail is accounted for.</p>
             <p>To compare Google Workspace plans, use the referral link below. This is a referral link. I may earn a reward. Review current eligibility and terms before signing up.</p>
             <p><a href="https://referworkspace.app.goo.gl/kSMy">Compare plans and sign up</a></p>

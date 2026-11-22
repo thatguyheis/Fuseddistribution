@@ -1,29 +1,26 @@
 {
   "slug": "business-networking-retention-v2",
-  "score": 92,
-  "pass": true,
-  "blockers": [],
   "mode": "codex-editorial",
-  "attentionOptimizationVersion": 1,
-  "reviewedAt": "2026-11-02",
-  "reviewer": "Codex",
-  "notes": [
-    "Unpublished comparison-only reel package based on the reviewed networking article and research.",
-    "New opening states the practical problem immediately and pays off with a repeatable three-part introduction request.",
-    "Two to four payoff beats and one comment action are mapped in attention-review.json.",
-    "Custom 9:16 flow graphic is conceptual and contains no measured values.",
-    "Measured narration revealed the original opening was 3.64 seconds; shortened it and added a pre-encode duration gate."
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T18:13:58.534493+00:00",
+  "review_notes": [
+    "Read the complete matching article and checked its subject, assumptions, sources and locally recorded examples against the companion reel.",
+    "Reused existing final media: exact master review hash or explicit manual file review verified. Delivery files are separately recorded and verified; no voice or full reel was regenerated.",
+    "Inspected hero graphics; completed missing explanatory tables/flows and repaired article copy, source references or length where required.",
+    "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
-    "verified.md": "e4c291566b470187067ee816d8b2e231bb626516beaacf33b2c3706377d8ddf5",
-    "index.html": "9aa6c3df71829d94795e84b6e39fa93cfb2f002e54071dd6c1e3bbf832472d2f",
-    "meta.json": "c359480f236517c427b9c6e4487438184a31d9e839c57c32fa8c10cb2c2569d4",
-    "research.json": "117777382961184571733c2b5616f8e27b7f3a825dd9d489c6cf6d1a8e23bf15",
+    "verified.md": "b673eb6ef4fda966b5b968725641d6061278f08767ed6aceded5e9927beff8dd",
+    "index.html": "59fa0c6b1b9b32846dfcd081e1c434385d141e885dddaed00a07cf315303a671",
+    "meta.json": "556d248215836553a8691f71af340e2b2030d87f5135912f3b708da583880609",
+    "research.json": "68c62d4f197db34e26374757e89f5df30aac4b1570d0238800ce237761837da3",
     "hero.jpg": "424aecb1978e8576d8c3330a037b70bac0a6384a590acb00b6a9871fd6815d37",
     "photo-post.jpg": "424aecb1978e8576d8c3330a037b70bac0a6384a590acb00b6a9871fd6815d37",
     "reel-script.md": "020f71223f83a95fdd3926d20f70f0925b1f382181e43cd04d9bcf9a01602a90",
     "reel-data.md": "504b22b6c8804c7e4bbe3a188b902b82dd2e4a408dcc15e3ba83645a45ef4077",
     "social-copy.json": "d565d6002db18c35398fdd3dc127257690a8c85da725655b839ff6346a22f2be",
-    "attention-review.json": "0f6ebc10433132bf87c176014a1eddc32890f055a38d034b681f0d4c762aaed9"
+    "social-video.json": "a6a1cc778ef48c693971eb0f40f0ed9f54181f8b60dc4f10a9bd28c19ce5cd46"
   }
 }

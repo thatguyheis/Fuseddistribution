@@ -3,8 +3,8 @@
   "datePacific": "2026-11-22",
   "ownerSelection": "Let's do 1 and 4",
   "ownerRequest": "generate now",
-  "status": "two_reels_and_blog_drafts_ready_for_owner_review",
-  "publishingAuthorized": false,
+  "status": "matching_blogs_publication_in_progress",
+  "publishingAuthorized": true,
   "blogsDrafted": true,
   "items": [
     {
@@ -104,5 +104,7 @@
     "preparationTimePacific": "20:30",
     "manualReceiptReferenced": true,
     "promptSha256": "fb0c45b1ad06a4f45ed9ce68a66a5245fbd524b8dac6258bb152aaefc0be9eb1"
-  }
+  },
+  "blogPublicationRequest": "go back and make sure all the recent videos for tech have matching blog posts",
+  "publicationScope": "Matching blog pages with reviewed reels embedded; no new Buffer posts."
 }

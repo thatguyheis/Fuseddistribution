@@ -5,11 +5,29 @@
   "ogDescription": "Check Whisper transcripts against the source audio, verify names and numbers, preserve word timings, and inspect captions before publishing your next business reel.",
   "alt": "Whisper transcript names and numbers checklist",
   "brand": "tech",
-  "date": "2026-11-04",
+  "date": "2026-11-22",
   "tags": [
     "Whisper",
     "AI Tools",
     "Video Production"
   ],
-  "ctaLine": "Replay the source before correcting the transcript."
+  "ctaLine": "Replay the source before correcting the transcript.",
+  "originalDraftDate": "2026-11-04",
+  "contentGraphic": {
+    "label": "Three different sources to compare",
+    "rows": [
+      {
+        "condition": "Approved narration",
+        "action": "What the voice was intended to say"
+      },
+      {
+        "condition": "Actual audio",
+        "action": "What was really spoken"
+      },
+      {
+        "condition": "Recognized transcript",
+        "action": "What the recognizer inferred"
+      }
+    ]
+  }
 }

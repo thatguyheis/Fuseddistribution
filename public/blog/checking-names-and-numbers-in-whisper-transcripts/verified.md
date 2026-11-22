@@ -44,11 +44,11 @@ After editing, check the caption file as a whole. Confirm that timestamps remain
 
 ## Reject invented ending speech
 
-One failure to check for is text after the real narration ends. Whisper may infer a phrase from room tone, a breath, a music tail, or silence. An ending caption is especially risky because viewers may treat it as a final instruction or claim. If the final words are not audible, remove them. Do not keep them because they make the caption sequence look complete.
+One failure to check for is text after the real narration ends. Whisper may infer a phrase from room tone, a breath, a music tail, or silence. An ending caption is especially risky because viewers may treat it as a final instruction or claim. If a second recognition check and audio review confirm that the words were not spoken, correct the caption text while preserving the original evidence. Do not keep them because they make the caption sequence look complete.
 
 The local runtime uses VAD, which is designed to filter portions of audio without speech. That can reduce silence related errors, but it cannot replace listening. OpenAI’s Whisper code also documents silence and hallucination related controls, including a threshold for skipping silent periods when a possible hallucination is detected. These are useful defenses, not proof that every remaining word is real.
 
-Use a hard ending check: play the last sentence and the following second or two of audio. Compare the last spoken word with the last caption word. If the caption continues after speech, delete the extra text and preserve the real ending time. If the ending question is part of the approved reel, verify it word for word and make sure the visible question matches the spoken question exactly.
+Use a hard ending check: play the last sentence and the following second or two of audio. Compare the last spoken word with the last caption word. If independent recognition and listening confirm text beyond the speech, correct the caption file and preserve both the original evidence and the real ending time. If the ending question is part of the approved reel, verify it word for word and make sure the visible question matches the spoken question exactly.
 
 ## A repeatable review checklist
 

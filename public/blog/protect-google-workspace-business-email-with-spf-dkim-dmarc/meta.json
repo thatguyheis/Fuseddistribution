@@ -5,7 +5,7 @@
   "ogDescription": "Learn how SPF, DKIM, and DMARC fit into Google Workspace email security, and what to check before en",
   "alt": "Email authentication setup flow for Workspace",
   "brand": "tech",
-  "date": "2026-11-08",
+  "date": "2026-11-22",
   "tags": [
     "Google Workspace",
     "Business Email",
@@ -32,5 +32,6 @@
         "action": "Fix sources before enforcement"
       }
     ]
-  }
+  },
+  "originalDraftDate": "2026-11-08"
 }

@@ -5,7 +5,7 @@
   "ogDescription": "Draft a customer email from approved facts, then get human review.",
   "alt": "A person reviews a customer email",
   "squareCover": true,
-  "date": "2026-11-11",
+  "date": "2026-11-22",
   "tags": [
     "AI Tools",
     "Small Business",
@@ -29,5 +29,6 @@
         "action": "Point to approved sources"
       }
     ]
-  }
+  },
+  "originalDraftDate": "2026-11-11"
 }

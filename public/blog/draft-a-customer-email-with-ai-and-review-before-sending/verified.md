@@ -30,8 +30,6 @@ For a simple reply, the reviewer can check the facts and send it. For a complain
 
 This distinction belongs in your [standard operating procedure](/blog/what-is-an-sop-and-why-ai-needs-one/). State which messages may use a draft, what data is allowed, who approves the final answer, and when the system must stop. If a tool or integration cannot show what it is about to send, keep that step manual. Use a [clear prompt for one bounded task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/) and include the approval step in the instructions.
 
-## Use a small review card
-
 ## Walk through a fictional customer question
 
 Imagine a customer writes, “Can someone visit Friday afternoon, and is there a call-out fee?” A made-up public service page says the business serves the customer’s town and is open on weekdays, but the page does not list Friday appointment availability or a fee. This is a fictional practice example. It is not an actual Fused service promise or a real customer exchange.

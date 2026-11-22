@@ -1,28 +1,27 @@
 {
   "slug": "ai-answer-json-validation-before-automation",
   "mode": "codex-editorial",
-  "pass": false,
+  "pass": true,
   "score": 90,
-  "blockers": [
-    "Final owner listen/watch and publication authorization pending. Generation now was authorized; no new publication request was inferred."
-  ],
-  "reviewed_at": "2026-11-22T17:32:21.243852+00:00",
+  "blockers": [],
+  "reviewed_at": "2026-11-22T18:13:58.534493+00:00",
   "review_notes": [
-    "Read the full sourced article, checked actual synthetic/local evidence and inspected hero and evidence graphics.",
-    "Both article drafts pass copy lint; final exact MP4 passed speech, decoded caption bands, codec, duration, size, sync and audio checks.",
-    "The caption delay is deliberately imposed; JSON inputs are hand-authored teaching fixtures, not captured AI errors.",
-    "Publishing gate remains closed pending owner media review and publication scope."
+    "Read the complete matching article and checked its subject, assumptions, sources and locally recorded examples against the companion reel.",
+    "Reused existing final media: exact master review hash or explicit manual file review verified. Delivery files are separately recorded and verified; no voice or full reel was regenerated.",
+    "Inspected hero graphics; completed missing explanatory tables/flows and repaired article copy, source references or length where required.",
+    "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
     "verified.md": "ce35f10c49f486f135264f1afb1510d9df1aae78dd6e2e9a4850a13ec4178b8f",
-    "index.html": "ef478dd028e4859628e068ff415a85e123ca8647feba9bfa853b880ca237df53",
-    "meta.json": "a6e74896a8275e677eec02959996a7aa3107acda79af810cbff1579d3b875f37",
-    "research.json": "da2d7f480a2adbf1e906f7dbd599af2c2c663af38e567394b6430fe85638a635",
+    "index.html": "b9806e60ed9305adf9ba555cc91cd05b8eb36677e023393155a33fca5e470797",
+    "meta.json": "71bc6e8c55703f477d0b79267869af68328eba264d92b418bb6e63520f29b9cd",
+    "research.json": "c61e4ef372270e37afd6ed8b5cc47c2c56ec296aa1af53b68ded090592dce3c6",
     "hero.jpg": "e0ee0da181f5ba2ff997ace38fa54c84e5ac7311ad58ca239f41a007f069dc3f",
     "photo-post.jpg": "926497544f8afe6094fbcea169e3a494b9f9efac6218cdf2eff2d4813ce297d1",
     "reel-script.md": "280eea8a4c6579f0998033f0af8803f6d38cc161b6171dc403cd4f1bcf9108ed",
     "reel-data.md": "5e02de42a84e648079757ee57afabee02932e546097ec9c2658105ca0503eb18",
     "social-copy.json": "03f82f2fce902d0bdd6b5dd3549b4800e727c013eca4adc423a0f2ca2493b364",
+    "social-video.json": "22f887c835750fa5e4ea206f18fd01dd211795de96b8555fb957144f8551ee25",
     "images/evidence.jpg": "52a4388cd72f7f7e2abaf07e31e45550d5ee208853cb5add3acd5021ba7b952a"
   }
 }

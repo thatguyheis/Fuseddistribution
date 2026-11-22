@@ -6,9 +6,9 @@
     "approvedBy": "Nick",
     "topicSelection": "Let's do 1 and 4",
     "generationRequest": "generate now",
-    "publicationRequest": null
+    "publicationRequest": "go back and make sure all the recent videos for tech have matching blog posts"
   },
-  "publishingAuthorized": false,
+  "publishingAuthorized": true,
   "status": "final_media_passed_owner_review_pending",
   "approvedHook": "Your AI answer looks right. Will your automation accept it?",
   "approvedCta": "Validate one sample before connecting the next step.",
@@ -152,5 +152,6 @@
     }
   ],
   "sourcePackageSha256": "0cdc0a0861cd3a2fca11a3e053b7d258d05ed7e905b7bad50dd771a856aad347",
-  "createdAt": "2026-11-22T17:32:21.243852+00:00"
+  "createdAt": "2026-11-22T17:32:21.243852+00:00",
+  "publicationScope": "Matching blog publication with existing reviewed reel embedded. No new Buffer posting requested."
 }

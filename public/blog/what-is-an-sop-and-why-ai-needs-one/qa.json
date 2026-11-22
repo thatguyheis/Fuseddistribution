@@ -1,33 +1,44 @@
 {
   "slug": "what-is-an-sop-and-why-ai-needs-one",
-  "score": 92,
-  "pass": true,
-  "blockers": [],
   "mode": "codex-editorial",
-  "reviewedAt": "2026-11-09",
-  "reviewer": "Codex",
+  "pass": true,
+  "score": 90,
+  "blockers": [],
+  "reviewed_at": "2026-11-22T18:13:58.534493+00:00",
   "review_notes": [
-    "Reviewed the article definitions, current ChatGPT project and scheduled-task behavior, process diagram, one question hook, and single-action CTA.",
-    "The article clearly separates an SOP from a prompt and avoids unsupported performance claims."
+    "Read the complete matching article and checked its subject, assumptions, sources and locally recorded examples against the companion reel.",
+    "Reused existing final media: exact master review hash or explicit manual file review verified. Delivery files are separately recorded and verified; no voice or full reel was regenerated.",
+    "Inspected hero graphics; completed missing explanatory tables/flows and repaired article copy, source references or length where required.",
+    "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
-  "attentionOptimizationVersion": 1,
-  "hook": {
-    "questionHookRequired": true,
-    "spokenText": "Why does AI keep forgetting your process?",
-    "visibleText": "Why does AI keep forgetting your process?"
-  },
   "artifactSha256": {
     "verified.md": "b823f5a667226884852683def2d76438be4a9e81fa502eff13898d4934866e58",
-    "index.html": "e4b057881be65b12d7b1e9a1b7c8d1a671d5146a3d255f3c5a2abb59ec79c902",
+    "index.html": "ea6459580b673c81d9579e25fe6116b18f903d9fc9e845192882ad847628457e",
     "meta.json": "ffcd4bbf8dc4b267d7f12f814252d78d884098a9a9b3a2dbfd301359c9946f03",
-    "research.json": "1d8940860e4dea04c3ac24733977e97a449cc6ff09f5414fa75bc47e62fce757",
+    "research.json": "4ae4f12dc4476833088458314ad4a77b621c798cba9f79a172ed4354ff91cbe6",
     "hero.jpg": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
     "photo-post.jpg": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
     "reel-script.md": "24f6338dd2d68577d07f815f3ae92fbe06572c21dd0fc7629855aea42e9bedce",
     "reel-data.md": "191ada8d2bff1c5e0ad8e2e5e0818782b42b421b384d051372c258803eeb126b",
     "social-copy.json": "89d4eb04f494cc6dcc2337217e907dfc8f691258735d285b5375461c8c512204",
-    "enrichment-plan.json": "7354dd4c567decb8517a9cd2a8bfd1ac2972e2d1324c64d41664f7337b124994",
-    "attention-review.json": "ec96ad0ef870637ea930a2b7a6233d7bd5a0f6967bee07d93db97bb64eac512c",
-    "presentation-plan.json": "de1b456bca567e990468c29eda5df1739ea527ec97ac054b095301d341db37eb"
+    "social-video.json": "9c198d8b8e573115e329175cc701c4c1bb08b2b19fe0af7ba623866c84a9d29b",
+    "images/scene-4-handoff.svg": "1e7c97327a286a585b9da5ce998c5838dbfad1910b40d717e04e2ae90fa38d0c",
+    "images/scene-6-improve.svg": "4f5c15ff25fddf895756fdd7c78c70f825ed1dad4eba98f32874dc013b404ca7",
+    "images/scene-5-stop-rules.jpg": "608e2a537ef4e4872d8112dbd031df0a10214dea6e6b8eec04c795d1410ecb8f",
+    "images/scene-8-sop-cta.jpg": "d06050f6c63498bf6274eb54177aac8ddef161e849fa7af4310b1981741a64c4",
+    "images/scene-8-sop-cta.svg": "d8e45d7938e1686d1a93fe769cdd68b1b63996e38c243b93e391f5e946768192",
+    "images/scene-5-stop-rules.svg": "f978a3f7ebb90c36d5d0b2ce5e65e28b796a8e7a2d788096082dd8ba11412abf",
+    "images/scene-6-improve.jpg": "b6579beba324e557cd7950ced271778c7ec57578c1d902d7bfbf009f9ecb5e85",
+    "images/scene-4-handoff.jpg": "a6fd3707ea1a63070e2a70591c4c742497d4eb56b7c7270d07de6b2e8d327141",
+    "images/scene-2-prompt.svg": "7b750fbf35db52176d606950e7ff17eb36b30d1f56dd26e0b1fb2baaab2dd1f8",
+    "images/scene-7-start.jpg": "4619125957e50d9e91493d7e7b44ca8a60da0a88eef96970ca55bda18996b1a2",
+    "images/scene-3-one-rulebook.jpg": "20a8ef624e0afd468f154c65ba474eea697b00a46d327ab822467f520bbb825c",
+    "images/scene-1-define.svg": "54da58397026c4870f9f9c77d7513a1633865d1fe60535451f3e4bbf57799c7a",
+    "images/scene-0-sop-hook.jpg": "ad1123591e09989f4d43284a8579504b3abf2ab7276b46e07a390ccf33861794",
+    "images/scene-0-sop-hook.svg": "a0a407735c0f6e53ed4fc7a1bc42b99f1ba0bf579ff10c18bcfe647f46a270f5",
+    "images/scene-1-define.jpg": "c136c333b42fe29f57f725b8783620f65d0f4a6f14270445becae6d209a0094e",
+    "images/scene-3-one-rulebook.svg": "d4698deaa244dfc54a9bf3bae546ba3bd7187d4b8b7436d3a0152e366bf26630",
+    "images/scene-7-start.svg": "994cb876fcaa682dfb054c2675d4bb96aa276642c77d5837249a0ee3fe447ac4",
+    "images/scene-2-prompt.jpg": "101ad9eb7ce565fa738ca8d26cf3849dc9ffcc06d48c6b4db6b0ccf1baba3cfd"
   }
 }

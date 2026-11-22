@@ -1,5 +1,9 @@
 {
-  "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
-  "showPending": true,
-  "status": "pending-render-hosting-and-release-approval"
+  "version": 1,
+  "primaryVideo": {
+    "url": "https://fused-reel-media.luxraycoco.workers.dev/reels/protect-google-workspace-business-email-with-spf-dkim-dmarc/protect-google-workspace-business-email-with-spf-dkim-dmarc.mp4"
+  },
+  "platforms": {},
+  "showPending": false,
+  "updatedAt": "2026-11-22T18:11:55.025496+00:00"
 }

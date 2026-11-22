@@ -1,11 +1,11 @@
 {
-  "title": "How to Summarize Your Own Document With AI",
+  "title": "Create a Checked Summary of Your Own Document With AI",
   "slug": "summarize-your-own-document-with-ai",
   "description": "Use AI to summarize a business document by setting a reader and purpose, keeping source references, and checking every key detail against the original.",
   "ogDescription": "Summarize a safe business file and verify its key details.",
   "alt": "Safe document summary review workflow graphic",
   "squareCover": true,
-  "date": "2026-11-11",
+  "date": "2026-11-22",
   "tags": [
     "AI Tools",
     "Small Business",
@@ -29,5 +29,6 @@
         "action": "Choose what they need to do"
       }
     ]
-  }
+  },
+  "originalDraftDate": "2026-11-11"
 }
