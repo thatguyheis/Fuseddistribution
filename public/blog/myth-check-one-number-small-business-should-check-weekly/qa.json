@@ -1,4 +1,11 @@
 {
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Does the lowest acquisition cost win?",
+    "visibleText": "Does the lowest acquisition cost win?"
+  },
   "slug": "myth-check-one-number-small-business-should-check-weekly",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +19,11 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "attention-review.json": "b0d2937c0aeca8d4522977d3985a65cd5d1982d11a09e8e075a6c36ab1456de9",
+    "presentation-plan.json": "e80cfe1b181185c32f0b75361637cca7784d6b91be4651464914aba8225d4908",
+    "enrichment-plan.json": "5585d031dc017ff41500bc83ee3051123e75d9348f11956ee6df79829498af3e",
+    "scene-art-spec.json": "7a10271d72c22b76889e37ffae32063223c52f89693c5ecbde8209dcc75b91a9",
+    "artwork-qa.json": "539e995488cc068a428f562434c1b943dc3e5298d427c40bfc2e1d0db88cf323",
     "verified.md": "5cf2bc09f82e74e6ba6cdca28af8f8c996c8f8adc61e7486e7958e40f5a8b3f0",
     "index.html": "5b74fec9720e2972a14e8127894e0c59b53b4e91c758a7584dd6093edfb45659",
     "meta.json": "ae022af6e5463ed306a6827b3044c84ff4d8e09863ff307f8a276638eb7f8c80",

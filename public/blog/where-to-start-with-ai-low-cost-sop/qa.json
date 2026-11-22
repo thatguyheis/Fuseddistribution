@@ -1,4 +1,12 @@
 {
+  "reviewedAt": "2026-11-09",
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Want to learn AI without a big bill?",
+    "visibleText": "Want to learn AI without a big bill?"
+  },
   "slug": "where-to-start-with-ai-low-cost-sop",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +20,9 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "enrichment-plan.json": "259d04a20246a8eb5390ef2377fb84d19821b27c493e390fa24c13a2d3a909a0",
+    "attention-review.json": "157c22431ce7087fa2bcbad0a415521ac0e3ee1322646c6800841a88395fd032",
+    "presentation-plan.json": "aadd0a68e08f65d159f3942d194a77a7d884d2b1195393f7b3528e7624464541",
     "verified.md": "21d0302415470ffa473281896303c37e9e3603c9defe1d1dbb22d17c5a338e8d",
     "index.html": "cbcaa5ff89cc13a71c4ebf90b49dc62e5a0cdf99f316f1539dd40ed6683c08ee",
     "meta.json": "0c3761d2c414c1033bc4fa0707cc88c46e206ef6ee4ad8528dcf169cd3791f46",

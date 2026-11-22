@@ -3,7 +3,7 @@
   "datePacific": "2026-11-22",
   "ownerSelection": "Let's do 1 and 4",
   "ownerRequest": "generate now",
-  "status": "matching_blogs_publication_in_progress",
+  "status": "matching_blogs_live_with_verified_reel_embeds",
   "publishingAuthorized": true,
   "blogsDrafted": true,
   "items": [
@@ -16,7 +16,7 @@
       "spokenWords": 169,
       "packageSha256": "0cdc0a0861cd3a2fca11a3e053b7d258d05ed7e905b7bad50dd771a856aad347",
       "blogDraft": "/Users/nick/projects/fuseddistribution/public/blog/ai-answer-json-validation-before-automation/index.html",
-      "status": "final_media_passed_owner_review_pending",
+      "status": "blog_live_with_reviewed_reel_embed",
       "file": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-03/reel-T-08-ai-answer-json-validation-before-automation.mp4",
       "sha256": "30b3e10223977b1ddc55aa6fc33a46164ad4a1ad0a263befeca3ccee472b9efa",
       "seconds": 65.266667,
@@ -50,7 +50,10 @@
         "action": "Simplified the phrase to text that is not blank and regenerated only segment 6.",
         "preserved": "Original package and scripts in source-history; original audio and recognition archived by the existing input-key repair mechanism.",
         "result": "All ten speech checks passed; no comparator or QA threshold was changed."
-      }
+      },
+      "blogUrl": "https://fuseddistribution.com/blog/ai-answer-json-validation-before-automation/",
+      "blogLiveVerified": true,
+      "embeddedMediaSha256Verified": true
     },
     {
       "id": "T-09",
@@ -61,7 +64,7 @@
       "spokenWords": 164,
       "packageSha256": "1182a6efa548be46414f6604a03aca020b8ee61a6bba1f41d027b4cfc5805e42",
       "blogDraft": "/Users/nick/projects/fuseddistribution/public/blog/whisper-correct-words-late-captions/index.html",
-      "status": "final_media_passed_owner_review_pending",
+      "status": "blog_live_with_reviewed_reel_embed",
       "file": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/Out/2026-11-22-tech-04/reel-T-09-whisper-correct-words-late-captions.mp4",
       "sha256": "11800189d9df500b1185d35d15bed812407dc7febe2c1bbb0bf190812505535d",
       "seconds": 65.5,
@@ -88,12 +91,15 @@
       "minimumSpeechScore": 1.0,
       "speechSegmentsPassed": 10,
       "visualReview": "/Users/nick/Documents/ChatGPT/Fused Tech Reels/work/2026-11-22-tech-04/reel-T-09/visual-review.json",
-      "blogDraftComplete": true
+      "blogDraftComplete": true,
+      "blogUrl": "https://fuseddistribution.com/blog/whisper-correct-words-late-captions/",
+      "blogLiveVerified": true,
+      "embeddedMediaSha256Verified": true
     }
   ],
   "updatedAt": "2026-11-22T17:45:08.538061+00:00",
   "completedAt": "2026-11-22T17:45:42.730031+00:00",
-  "registeredOrDeployed": false,
+  "registeredOrDeployed": true,
   "newBufferPostsCreated": 0,
   "noDuplicateRenderScheduled": true,
   "matchingBlogDraftsComplete": true,
@@ -106,5 +112,7 @@
     "promptSha256": "fb0c45b1ad06a4f45ed9ce68a66a5245fbd524b8dac6258bb152aaefc0be9eb1"
   },
   "blogPublicationRequest": "go back and make sure all the recent videos for tech have matching blog posts",
-  "publicationScope": "Matching blog pages with reviewed reels embedded; no new Buffer posts."
+  "publicationScope": "Matching blog pages with reviewed reels embedded; no new Buffer posts.",
+  "blogPublicationCompletedAt": "2026-11-22T18:18:36.045300+00:00",
+  "blogPairAudit": "content/tech-education/audits/2026-11-22-blog-reel-pairs.json"
 }

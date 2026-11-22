@@ -1,4 +1,12 @@
 {
+  "reviewedAt": "2026-11-09",
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Why does AI keep forgetting your process?",
+    "visibleText": "Why does AI keep forgetting your process?"
+  },
   "slug": "what-is-an-sop-and-why-ai-needs-one",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +20,9 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "enrichment-plan.json": "7354dd4c567decb8517a9cd2a8bfd1ac2972e2d1324c64d41664f7337b124994",
+    "attention-review.json": "ec96ad0ef870637ea930a2b7a6233d7bd5a0f6967bee07d93db97bb64eac512c",
+    "presentation-plan.json": "de1b456bca567e990468c29eda5df1739ea527ec97ac054b095301d341db37eb",
     "verified.md": "b823f5a667226884852683def2d76438be4a9e81fa502eff13898d4934866e58",
     "index.html": "ea6459580b673c81d9579e25fe6116b18f903d9fc9e845192882ad847628457e",
     "meta.json": "ffcd4bbf8dc4b267d7f12f814252d78d884098a9a9b3a2dbfd301359c9946f03",

@@ -1,4 +1,12 @@
 {
+  "reviewedAt": "2026-11-10",
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Would you send an AI reply unchecked?",
+    "visibleText": "Would you send an AI reply unchecked?"
+  },
   "slug": "draft-a-customer-email-with-ai-and-review-before-sending",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +20,9 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "enrichment-plan.json": "b408dd0e02d362b89a382cf18d439ebdfb7ffc28b305ebcd02011f168fe5580c",
+    "attention-review.json": "e2e9e33032fb6c0da9719c6a07eec538c27d2cb1a82fa77c8d713ba9fb02df11",
+    "presentation-plan.json": "acc0d1cec2a770d6c8e09b35fcc3709b955605f15bc4c3496d89bef5284179fe",
     "verified.md": "7be414d59d8f243e1427b91e849271cb55b7ecdfd11b32d63bc6cb36d1eee38b",
     "index.html": "73f64e417fe83e20997a704ecdde0aa4910b62875bbd534b662208cc28806a49",
     "meta.json": "6b061113ed3baa8c1190cfb741ecec7fffd11da093fe774aa81a497bd9a3b96c",

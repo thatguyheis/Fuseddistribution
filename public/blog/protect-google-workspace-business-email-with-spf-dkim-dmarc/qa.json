@@ -1,4 +1,11 @@
 {
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can someone spoof your business email address?",
+    "visibleText": "Can someone spoof your business email address?"
+  },
   "slug": "protect-google-workspace-business-email-with-spf-dkim-dmarc",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +19,12 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "enrichment-plan.json": "f0f2263b007d42e99097908293615cab96f1a45a37690f6a2109e19b720507e1",
+    "attention-review.json": "c6bfb5f800ddc1ed9afde1a7baae81cf1f623a1d4ec35d0aa90bf7f5786beff8",
+    "presentation-plan.json": "a11c686e21f5c10b7459cf567c3ac18f618eafd6fd62ff06cd5c7e8c19e305c1",
+    "scene-art-spec.json": "9f08aa471a457149ee46e6ffa23da131f144ba1054a710bd5efa2bb147feef6c",
+    "artwork-qa.json": "b592294ab1d81fe79e384cdb6d0a38956def88b0ee92f241519c0ba2e8a3c7f5",
+    "qr-verification.json": "d5783b508826658ff1dfa6d0911948053099fcbdccb8ce007159ee5fde771e92",
     "verified.md": "643b48d56a2d32f52e81105e6bbc38d9a94d290f01bff5851ca6f770979c70a9",
     "index.html": "fa8d3213baf78a8025e9103ffa3681b801a4c193435e7b65384428070c784f2d",
     "meta.json": "9ae46b3c8faaedfe77b2e8c2f9b86a91d52581a4522c828f4e291617e71d19d7",

@@ -1,4 +1,14 @@
 {
+  "attentionOptimizationVersion": 1,
+  "reviewedAt": "2026-11-02",
+  "reviewer": "Codex",
+  "notes": [
+    "Unpublished comparison-only reel package based on the reviewed networking article and research.",
+    "New opening states the practical problem immediately and pays off with a repeatable three-part introduction request.",
+    "Two to four payoff beats and one comment action are mapped in attention-review.json.",
+    "Custom 9:16 flow graphic is conceptual and contains no measured values.",
+    "Measured narration revealed the original opening was 3.64 seconds; shortened it and added a pre-encode duration gate."
+  ],
   "slug": "business-networking-retention-v2",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +22,7 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "attention-review.json": "0f6ebc10433132bf87c176014a1eddc32890f055a38d034b681f0d4c762aaed9",
     "verified.md": "b673eb6ef4fda966b5b968725641d6061278f08767ed6aceded5e9927beff8dd",
     "index.html": "59fa0c6b1b9b32846dfcd081e1c434385d141e885dddaed00a07cf315303a671",
     "meta.json": "556d248215836553a8691f71af340e2b2030d87f5135912f3b708da583880609",

@@ -1,4 +1,11 @@
 {
+  "reviewer": "Codex",
+  "attentionOptimizationVersion": 1,
+  "hook": {
+    "questionHookRequired": true,
+    "spokenText": "Can you trust every Whisper transcript?",
+    "visibleText": "Can you trust every Whisper transcript?"
+  },
   "slug": "checking-names-and-numbers-in-whisper-transcripts",
   "mode": "codex-editorial",
   "pass": true,
@@ -12,6 +19,11 @@
     "Article copy lint and deterministic qa-local passed. Current owner request authorizes matching blog publication and embedding, not new Buffer scheduling."
   ],
   "artifactSha256": {
+    "attention-review.json": "2af0c2daa4ff074fc35873b6e2568e0f40ec55eda4dc9c221bdfdb78b21d4216",
+    "presentation-plan.json": "1b0a4c68811bd006287bb0c7fad8dd72866f5bc7de8613f24e3cc6e61634949b",
+    "enrichment-plan.json": "2d5145577cd7e48c35566199b966205446be8fe48b7141828cd3d40cd8e86841",
+    "scene-art-spec.json": "fd986321c0b38900fa1011a155fe5356e76ff3e56662413d919e47766cb55f5f",
+    "artwork-qa.json": "c5eca19e97caee8e7b2d8673cd8694016b0b4c04db24a7897ebc3b17da440852",
     "verified.md": "4e3e8ecca8830af25d66a19748644e95041b4c921590ceb5a328b3a7c621ac92",
     "index.html": "9beeae256ef9500506cc61d4a91b6d0556742905b4d857bfae50c11628bbfe47",
     "meta.json": "bd14b1e052ea8f8265cebc40ffc39b642558ac32514144bdd2eb5150dac6b8a1",
