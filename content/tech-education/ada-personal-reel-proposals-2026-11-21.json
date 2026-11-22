@@ -71,7 +71,9 @@
         "Record prompt, model/version, expected result and output."
       ],
       "destinationBrand": "Nick personal brand / Fused Distribution",
-      "status": "ranked_proposal_pending_owner_approval"
+      "status": "manual_preview_ready_for_owner_review",
+      "manualPreviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
+      "manualPreviewSha256": "98c3d87d89c26fc9d8369b9214e26caa15271678aec0f537c496398d98e2f6be"
     },
     {
       "priority": 3,
@@ -103,7 +105,9 @@
         "Do not present Facebook and Instagram views as equivalent."
       ],
       "destinationBrand": "Nick personal brand / Fused Distribution",
-      "status": "ranked_proposal_pending_owner_approval"
+      "status": "manual_preview_ready_for_owner_review",
+      "manualPreviewReceipt": "content/tech-education/manual-reviews/2026-11-22.json",
+      "manualPreviewSha256": "cd5cb550f22b74aa3642757e96f6de4b5567faa4880d1a0d15d293f83b384e5f"
     }
   ],
   "scheduleChanged": false,

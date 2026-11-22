@@ -142,6 +142,15 @@ def cmd_tts(cfg, lots):
 
 
 # ---------------------------------------------------------------- whisper
+def whole_number_words(number):
+    ones = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen']
+    tens = ['', '', 'twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety']
+    value = int(number)
+    if value < 20: return ones[value]
+    if value < 100: return tens[value // 10] + (' ' + ones[value % 10] if value % 10 else '')
+    return ones[value // 100] + ' hundred' + (' ' + whole_number_words(value % 100) if value % 100 else '')
+
+
 def norm_words(text):
     text = text.lower().replace("-", " ").replace("%", " percent ")   # the transcriber writes "90%" for "90 percent"
     # Recognition may split these exact technical terms without changing speech.
@@ -149,6 +158,10 @@ def norm_words(text):
     text = re.sub(r"\bh\s*\.?\s*(264|265)\b", r"h\1", text)
     text = re.sub(r"\ba\s+p\s+i\b", "api", text)
     text = re.sub(r"\bnext\s*\.?\s*j\s*\.?\s*s\b", "nextjs", text)
+    # Canonicalize only unambiguous small whole numbers and whole dollar amounts.
+    # Raw recognition/timings stay unchanged; differing values and units stay distinct.
+    text = re.sub(r"\$(\d{1,3})\b(?!\.\d)", lambda m: whole_number_words(m.group(1)) + ' dollars', text)
+    text = re.sub(r"(?<![a-z0-9.])\d{1,3}\b(?!\.\d)", lambda m: whole_number_words(m.group()), text)
     words, out = re.sub(r"[^a-z0-9 ]", "", text).split(), []
     for w in words:                                      # "30 125" and "30,125" both become 30125
         if w.isdigit() and out and out[-1].isdigit():
