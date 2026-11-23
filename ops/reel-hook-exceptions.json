@@ -4,7 +4,7 @@
     "ai-video-scene-changes-should-move-the-story-forward": {
       "approvedBy": "Nick",
       "approvedAt": "2026-11-12T15:19:39.582886+00:00",
-      "spokenText": "Once you notice this pattern in AI videos, you can\u2019t unsee it.",
+      "spokenText": "Once you notice this pattern in AI videos, you can’t unsee it.",
       "maxSeconds": 7,
       "reason": "Nick explicitly requires this exact statement hook on 2026-11-12. Preserve its wording and normal narration speed; other attention and release checks still apply.",
       "preserveExactText": true
@@ -12,7 +12,7 @@
     "why-ai-video-works-better-with-story-structure": {
       "approvedBy": "Nick",
       "approvedAt": "2026-11-12T15:21:16.608404+00:00",
-      "spokenText": "There\u2019s a reason AI works well for video\u2014and it\u2019s not the visuals.",
+      "spokenText": "There’s a reason AI works well for video—and it’s not the visuals.",
       "maxSeconds": 8,
       "reason": "Nick explicitly requires the originally approved statement hook verbatim, spoken and visible, on 2026-11-12.",
       "preserveExactText": true
@@ -20,7 +20,7 @@
     "test-your-ai-reel-with-the-sound-off": {
       "approvedBy": "Nick",
       "approvedAt": "2026-11-12T15:26:00.533980+00:00",
-      "spokenText": "The step that\u2019s easy to skip? Watching your reel without sound.",
+      "spokenText": "The step that’s easy to skip? Watching your reel without sound.",
       "maxSeconds": 8,
       "reason": "Nick selected this hook direction and explicitly requires approved hooks to be preserved verbatim. Use natural pacing and verify encoded output.",
       "preserveExactText": true
@@ -36,7 +36,7 @@
     "connect-your-reel-ending-to-its-opening-promise": {
       "approvedBy": "Nick",
       "approvedAt": "2026-11-12T15:26:00.533985+00:00",
-      "spokenText": "Your AI reel can look finished\u2014and still leave viewers hanging.",
+      "spokenText": "Your AI reel can look finished—and still leave viewers hanging.",
       "maxSeconds": 8,
       "reason": "Nick selected this hook direction and explicitly requires approved hooks to be preserved verbatim. Use natural pacing and verify encoded output.",
       "preserveExactText": true
@@ -61,29 +61,29 @@
     },
     "shorter-ai-prompts-master-sop-task-brief": {
       "approvedBy": "Nick",
-      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
-      "ownerReply": "do 4, 3, and 7",
-      "spokenText": "Why are you pasting your entire SOP into every AI request?",
+      "approvedAt": "2026-11-23T21:23:24.667638+00:00",
+      "ownerReply": "looks good publish to my personal buffer",
+      "spokenText": "Your SOP has six rules. This customer reply needs three.",
       "maxSeconds": 8,
-      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "reason": "Claude v3 rewrite approved by Nick after watching the final reels; replaces GPT hook: Why are you pasting your entire SOP into every AI request?",
       "preserveExactText": true
     },
     "ai-document-hidden-instructions-prompt-injection": {
       "approvedBy": "Nick",
-      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
-      "ownerReply": "do 4, 3, and 7",
-      "spokenText": "Your AI read the document. Whose instructions did it follow?",
+      "approvedAt": "2026-11-23T21:23:24.667638+00:00",
+      "ownerReply": "looks good publish to my personal buffer",
+      "spokenText": "Text inside a document can steer your AI.",
       "maxSeconds": 8,
-      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "reason": "Claude v3 rewrite approved by Nick after watching the final reels; replaces GPT hook: Your AI read the document. Whose instructions did it follow?",
       "preserveExactText": true
     },
     "ai-citations-check-source-supports-claim": {
       "approvedBy": "Nick",
-      "approvedAt": "2026-11-22T17:58:34.490703+00:00",
-      "ownerReply": "do 4, 3, and 7",
-      "spokenText": "Your AI answer has sources. Do those sources actually support it?",
+      "approvedAt": "2026-11-23T21:23:24.667638+00:00",
+      "ownerReply": "looks good publish to my personal buffer",
+      "spokenText": "The link was real. The source was official. The claim was still wrong.",
       "maxSeconds": 8,
-      "reason": "Owner selected this exact proposed hook for the November 23 overnight batch. Preserve spoken and frame-zero visible text; verify actual duration and encoded output.",
+      "reason": "Claude v3 rewrite approved by Nick after watching the final reels; replaces GPT hook: Your AI answer has sources. Do those sources actually support it?",
       "preserveExactText": true
     }
   }
