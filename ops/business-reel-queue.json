@@ -2,8 +2,9 @@
   "version": 1,
   "maxTopicsPerDay": 3,
   "slugs": [
-    "why-ai-video-works-better-with-story-structure",
-    "ai-video-scene-changes-should-move-the-story-forward"
+    "shorter-ai-prompts-master-sop-task-brief",
+    "ai-document-hidden-instructions-prompt-injection",
+    "ai-citations-check-source-supports-claim"
   ],
-  "targetRendersPerDay": 2
+  "targetRendersPerDay": 3
 }

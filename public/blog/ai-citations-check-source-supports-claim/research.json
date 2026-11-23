@@ -1,0 +1,17 @@
+{
+  "slug": "ai-citations-check-source-supports-claim",
+  "accessedAt": "2026-11-22",
+  "claims": [
+    {
+      "id": "s1",
+      "claim": "A citation should be checked against the source passage and its context rather than treated as proof merely because it is present.",
+      "source": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "id": "s2",
+      "claim": "NIST describes trustworthy AI evaluation as context dependent and requiring attention to validity and reliability.",
+      "source": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    }
+  ],
+  "notes": "Primary sources opened and checked on 2026-11-22. Examples are synthetic and do not claim model performance."
+}

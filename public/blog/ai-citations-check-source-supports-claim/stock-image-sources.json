@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "usage": "Supporting illustrative stock; does not depict Fused customers or prove a customer result.",
+  "photos": [
+    {
+      "id": 5990265,
+      "query": "sticky notes planning",
+      "alt": "Close-up of a whiteboard with colorful sticky notes for task organization and planning.",
+      "photographer": "cottonbro studio",
+      "pageUrl": "https://www.pexels.com/photo/close-up-photo-of-sticky-notes-on-whiteboard-5990265/",
+      "downloadUrl": "https://images.pexels.com/photos/5990265/pexels-photo-5990265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "file": "outputs/nov12-stock-options/pexels-5990265.jpg",
+      "sha256": "bea751233fd7ddf2db2a44d13fff4a23f7b977824ddd2fea9986da7ea3a53560",
+      "source": "Pexels",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "selectedForUse": true,
+      "localPath": "public/blog/why-ai-video-works-better-with-story-structure/images/pexels-5990265.jpg"
+    }
+  ]
+}

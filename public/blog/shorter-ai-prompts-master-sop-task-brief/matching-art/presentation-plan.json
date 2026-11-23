@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "source": "fused-original-business-scene-art",
+  "profile": "business-growth-v1",
+  "mode": "all-scenes",
+  "safeZones": {
+    "width": 1080,
+    "height": 1920,
+    "captionBottomClearancePx": 250,
+    "socialUiRightClearancePx": 150
+  },
+  "segments": [
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-0-hook.jpg",
+        "sha256": "c802b35b39e329f4c72bf1bacb36bd9ba566f1d0928165ea4ae6fcb705044c57",
+        "weight": 1,
+        "title": "There’s a reason AI works well for video—and it’s not the visuals.",
+        "eyebrow": "AI VIDEO",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-1-step-1.jpg",
+        "sha256": "29e1c81c379d0186a90eae815df5dfc0bfaf7241eb4c80b6c54621dd186cc518",
+        "weight": 1,
+        "title": "Structure gives each scene a job",
+        "eyebrow": "EARLY PAYOFF",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-2-step-2.jpg",
+        "sha256": "564d9afbad304b142fe1fc0ccf54c8c31ceb3fd50a213d8c31718d007dc4e008",
+        "weight": 1,
+        "title": "Show one concrete example",
+        "eyebrow": "ILLUSTRATIVE EXAMPLE",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-3-step-3.jpg",
+        "sha256": "026b81fba7f21e4aa0a2ad35d3e7b2b1beb2a85dd449d045669dfd2dc2ee71d1",
+        "weight": 1,
+        "title": "Keep the example honest",
+        "eyebrow": "SCENE TEST",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-4-step-4.jpg",
+        "sha256": "a53a88a8981acca2101a8243391630d5141edb4b0f792f0f32ef1fa4ee5db044",
+        "weight": 1,
+        "title": "Give each scene one job",
+        "eyebrow": "WORKED COMPARISON",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true,
+        "reservedGraphic": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-5-step-5.jpg",
+        "sha256": "ecc4f8d17e8321ec96b81d6bc7dee248eed89fa409fab94759c70b962791b091",
+        "weight": 1,
+        "title": "Review the sequence",
+        "eyebrow": "FINAL REVIEW",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ],
+    [
+      {
+        "type": "photo",
+        "path": "public/blog/why-ai-video-works-better-with-story-structure/matching-art/images/scene-6-cta.jpg",
+        "sha256": "92aed170fd9372161b0d20a0763cfe36c591caa7cdf9f40b7c054da60d90737a",
+        "weight": 1,
+        "title": "Which part slows you down?",
+        "eyebrow": "YOUR NEXT REEL",
+        "credit": "Fused original vector graphic",
+        "fit": "cover",
+        "fullFrame": true
+      }
+    ]
+  ]
+}

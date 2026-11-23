@@ -1,0 +1,17 @@
+{
+  "slug": "ai-document-hidden-instructions-prompt-injection",
+  "accessedAt": "2026-11-22",
+  "claims": [
+    {
+      "id": "s1",
+      "claim": "Prompt injection occurs when untrusted input influences a model to follow unintended instructions.",
+      "source": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+    },
+    {
+      "id": "s2",
+      "claim": "OWASP describes prompt injection as a risk that can lead to unintended behavior, including data exposure or unauthorized actions.",
+      "source": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+    }
+  ],
+  "notes": "Primary sources opened and checked on 2026-11-22. Examples are synthetic and do not claim model performance."
+}
