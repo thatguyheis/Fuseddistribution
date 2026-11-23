@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "productionDatePacific": "2026-11-23",
+  "preparedAt": "2026-11-22T20:55:00-08:00",
+  "status": "ready",
+  "selectedBy": "Nick",
+  "selectionOrder": [
+    "shorter-ai-prompts-master-sop-task-brief",
+    "ai-document-hidden-instructions-prompt-injection",
+    "ai-citations-check-source-supports-claim"
+  ],
+  "targetNewPairs": 3,
+  "newPackagesPrepared": 3,
+  "reusedPackagesInNewSlots": 0,
+  "standbyPrepared": false,
+  "research": {
+    "primarySourcesChecked": true,
+    "sourceAccessDate": "2026-11-22",
+    "syntheticExamplesLabeled": true
+  },
+  "gates": {
+    "approvedSources": "passed",
+    "editorialHashes": "passed",
+    "localQa": "passed",
+    "tts": "deferred_to_overnight_runner",
+    "encoding": "deferred_to_overnight_runner",
+    "encodedMp4Qa": "pending_overnight_render"
+  },
+  "queue": {
+    "path": "ops/business-reel-queue.json",
+    "maxTopicsPerDay": 3,
+    "targetRendersPerDay": 3,
+    "handoff": ".workflow-state/business-growth-ai-365/production/handoffs/2026-11-23.json"
+  },
+  "delivery": {
+    "newDeliveryReady": 0,
+    "existingBacklogRemainsSeparate": true,
+    "backlogSource": "scripts/business-reel-status.py"
+  },
+  "notes": [
+    "Exact owner hooks and CTAs are preserved in the package metadata and script.",
+    "The existing November 22 manual JSON and caption reels were not regenerated or counted.",
+    "The overnight serial runner owns Chatterbox, encoding, release QA and delivery monitoring."
+  ]
+}
