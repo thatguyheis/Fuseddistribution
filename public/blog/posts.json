@@ -1,5 +1,50 @@
 [
   {
+    "slug": "ai-citations-check-source-supports-claim",
+    "title": "The Link Was Real. The AI Claim Was Still Wrong.",
+    "date": "2026-11-23",
+    "excerpt": "The link was real and the source was official. The AI claim was still wrong. Open the source and test the strongest word.",
+    "tags": [
+      "AI Research",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-citations-check-source-supports-claim/hero.jpg",
+    "imageAlt": "RFC 8259 section 4 passage about duplicate names in JSON objects"
+  },
+  {
+    "slug": "ai-document-hidden-instructions-prompt-injection",
+    "title": "Text Inside a Document Can Steer Your AI",
+    "date": "2026-11-23",
+    "excerpt": "Text inside a document can steer your AI. OWASP lists prompt injection first for 2026. Ask who asked before any action.",
+    "tags": [
+      "AI Security",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-document-hidden-instructions-prompt-injection/hero.jpg",
+    "imageAlt": "OWASP 2026 Top 10 list with LLM01 Prompt Injection first"
+  },
+  {
+    "slug": "shorter-ai-prompts-master-sop-task-brief",
+    "title": "Your SOP Has Six Rules. This AI Reply Needs Three.",
+    "date": "2026-11-23",
+    "excerpt": "Your SOP has six rules. This customer reply needs three. Send AI a short task brief instead of the whole manual.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/shorter-ai-prompts-master-sop-task-brief/hero.jpg",
+    "imageAlt": "Six rule estimate desk SOP with three rules highlighted for one reply"
+  },
+  {
     "slug": "whisper-correct-words-late-captions",
     "title": "Whisper Got the Words Right. Why Are the Captions Still Late?",
     "date": "2026-11-22",

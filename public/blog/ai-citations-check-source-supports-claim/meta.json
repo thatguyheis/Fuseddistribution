@@ -1,1 +1,33 @@
-{"title":"Check Whether an AI Citation Supports the Claim","slug":"ai-citations-check-source-supports-claim","description":"Open the cited primary source and compare the exact passage with the exact claim before treating an AI answer as supported evidence in context.","ogDescription":"Open the cited primary source and compare the exact passage with the exact claim before treating an AI answer as supported evidence in context.","alt":"AI citation source support review guide","squareCover":true,"date":"2026-11-23","tags":["AI Research","Small Business"],"brand":"tech","ctaLine":"Open one source and check the exact claim.","contentGraphic":{"label":"A clear story path","rows":[{"condition":"Audience","action":"Name one viewer"},{"condition":"Example","action":"Show one task"},{"condition":"Payoff","action":"Answer the question"}]}}
+{
+  "title": "The Link Was Real. The AI Claim Was Still Wrong.",
+  "slug": "ai-citations-check-source-supports-claim",
+  "description": "A real, official citation can still fail to support an AI claim. Open the source, find the sentence, and test the strongest word.",
+  "ogDescription": "Open the source, find the sentence, test the strongest word. A worked RFC 8259 example.",
+  "date": "2026-11-23",
+  "brand": "tech",
+  "tags": [
+    "AI Research",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "RFC 8259 section 4 passage about duplicate names in JSON objects",
+  "ctaLine": "Open the source and test the strongest word.",
+  "contentGraphic": {
+    "label": "Source check on one AI claim",
+    "rows": [
+      {
+        "condition": "Claim",
+        "action": "Every reader rejects duplicates"
+      },
+      {
+        "condition": "RFC 8259 section 4",
+        "action": "Names SHOULD be unique; readers differ"
+      },
+      {
+        "condition": "Fixed line",
+        "action": "Keep names unique; readers differ"
+      }
+    ]
+  },
+  "author": "Nick"
+}

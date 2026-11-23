@@ -1,69 +1,75 @@
-# Why AI Video Works Better With a Clear Story
+# Your SOP Has Six Rules. This AI Reply Needs Three.
 
-AI can help you make a video image, rewrite a sentence, or suggest a sequence. That does not give the video a reason to exist. A useful reel still needs a viewer, a problem, and an answer that arrives in a sensible order.
+Pasting your whole SOP into every AI request feels safe. You give the tool everything, so it can't miss anything. In practice it hands the AI a pile of rules that have nothing to do with the job in front of it, and leaves it to guess which ones matter.
 
-TikTok for Business describes a simple hook, body, and close structure for creative work. YouTube gives creators a way to inspect retention and identify moments where viewers stayed, rewatched, or left. Those tools do not guarantee a result, but they point to a practical lesson: organize the explanation before you decorate it.
+A better habit: keep one master SOP per desk, and send the AI a short task brief with only the rules that change this one reply. If you haven't written a master SOP yet, start with [what an SOP is and why AI needs one](/blog/what-is-an-sop-and-why-ai-needs-one/).
 
-## Start with one viewer and one video problem
+## The teaching example: one desk, six rules
 
-The first decision is not which AI tool to open. It is who the video is for and what that person is trying to do. A small business owner might need to explain how a customer request moves from an inbox to an estimate. A staff member might need to understand what information is missing before a reply can be sent. These are different viewers and different stories.
+I wrote a made up estimate desk procedure for a repair shop. It has six numbered rules covering estimates, billing, repairs and warranties.
 
-Write the problem as a question. For example: “How do I turn a vague estimate request into a reviewable draft?” That question gives the video a boundary. It also gives you a useful test: by the end, can the viewer explain the next step without guessing? For a related workflow, see [how to write a useful AI prompt](/blog/write-a-useful-ai-prompt-for-one-small-business-task/).
+![The six rule estimate desk procedure used as a teaching example](images/master-sop.jpg "Teaching example. A made up repair shop procedure with six numbered rules.")
 
-Avoid starting with a broad promise such as “AI will transform your business.” It is too large to prove in one short video. A narrower promise is easier to illustrate and easier for a person to check.
+Then a single inquiry comes in. A customer wants a door repaired. They didn't give the size, and they didn't say what material they want.
 
-## Give the viewer one concrete story example
+Read the six rules against that message. Rule 1 applies: ask for the dimensions. Rule 2 applies: ask for the material. Rule 3 applies: don't quote a price before an approved estimate. Billing disputes, the service ledger and warranty questions have nothing to do with this reply.
 
-An example turns an abstract lesson into something a viewer can follow. Use a fictional request if the real task contains customer information. Imagine a repair shop receives this note: “Can you send an estimate for the front door?” The note does not include measurements, material, access details, or a requested time.
+Six rules in the manual. Three that touch this job.
 
-The video can show what a useful process does with that incomplete request. It identifies what is known, lists what is missing, and prepares a draft that does not invent a price or appointment. The example is not a customer result. It is a demonstration of the decision the viewer should make.
+## Write the brief
 
-Keep the example stable while the lesson develops. If the request changes in every scene, the viewer has to spend attention learning the example instead of learning the method.
+The task brief names the job, lists the three rules, and points to the full procedure as reference.
 
-## Make each scene do one job
+![The four line task brief for the door repair inquiry](images/task-brief.jpg "Teaching example. The brief keeps the three rules this reply needs and references the full procedure.")
 
-A scene should introduce a question, add evidence, demonstrate a step, or clarify the next action. If it only changes the background, it may be decoration rather than explanation. AI makes it easy to produce many attractive images, so the story needs a stricter rule: every image must earn its place.
+I measured both inputs locally with `wc -m`. The full pasted input, procedure plus question, is 386 characters. The brief is 165 characters. Less than half.
 
-One simple outline is audience, example, method, check, and takeaway. The audience scene says who needs the lesson. The example scene makes the problem visible. The method scene shows the repeatable action. The check scene names what a person must verify. The takeaway gives the viewer a sentence they can use.
+![Character counts measured with wc -m](images/character-count.jpg "Measured on the teaching files, November 23, 2026. This counts the text typed into the request, not anything the tool reads from an attachment.")
 
-This order also keeps the promise honest. You are not claiming that a model automatically understands a business. You are showing how a person can give a tool a bounded task and inspect the result.
+Be clear about what that number means. It measures the text I typed into the request. If your tool reads the attached procedure, that attachment still takes space. The brief isn't about saving characters. It's about telling the AI which rules matter right now, in the order they matter.
 
-## Deliver the payoff early
+## Keep the master SOP attached
 
-The opening question should be followed by an answer before the viewer has to wait through a long introduction. In this lesson, the early payoff is simple: AI helps video creation when the story tells each scene what job to do. The visuals matter, but they serve the explanation.
+The brief doesn't replace the manual. It points to it. The last line, "Consult the attached estimate desk procedure", tells the tool where the full rules live if it needs them.
 
-YouTube’s retention guidance describes top moments, spikes, and dips as clues for reviewing what held attention or caused confusion. If your strongest explanation arrives at the end, test whether a shorter version can move that explanation earlier. Do not treat a retention graph as proof of why a person behaved a certain way. Use it as a prompt for review.
+Two things to check in your own workspace:
 
-## Use graphics to explain, not to decorate
+1. Ask the tool to find the pricing rule in the attachment, and compare its wording with your copy. If it can't find it, the tool isn't reading the attachment.
+2. If the tool can't open the attachment, paste the needed rule into the brief itself. Never drop a price, safety or privacy rule just to keep the brief short.
 
-A flow diagram can show the difference between a scattered request and a structured one. The labels should be plain: choose the viewer, show the example, state the payoff. Do not add invented percentages or a fake analytics dashboard to make the graphic look authoritative.
+## Check the draft against the brief
 
-When a number matters, include its source, unit, and period. When no number is needed, use a checklist or flow. A conceptual diagram is honest when it is labeled as illustrative and does not pretend to measure audience behavior.
+The brief also gives you a short checklist for the output. For this reply there are two checks:
 
-## Review the words and the images together
+- Did the draft ask for both details, the size and the material?
+- Did it hold the price?
 
-Read the script aloud while watching the scene plan. If the narration says “now we identify the missing detail” while the image shows a generic laptop, the visual is not helping. Replace it with a simple missing-information card or a fictional form with sensitive fields removed.
+If both are yes, the brief did its job. If either is no, fix the draft by hand or ask for that one change. A person sends the reply, not the AI. For the full review routine, see [drafting a customer email with AI and reviewing it before sending](/blog/draft-a-customer-email-with-ai-and-review-before-sending/).
 
-Check names, dates, prices, links, and commitments against the source. Ask whether a viewer could mistake a fictional example for a real customer story. Make that boundary visible in the article and reel when it matters.
+## When to split a brief
 
-## Close with one useful action
+If a task needs more than six rules, it's probably two tasks. A reply that asks for missing details and also settles a billing dispute should be two drafts, each with its own short brief. That keeps every draft easy to check.
 
-The close should answer the opening question and invite one low-friction action. Do not ask viewers to like, comment, follow, and share at once. For this lesson, the action is a question: which part slows you down, ideas, scripts, or editing? The answer can guide the next tutorial without pretending that the first video solved every production problem.
+A quick test for any brief:
 
-## A small structure is a production advantage
+- Every rule in it changes this reply.
+- Every rule about price, privacy, safety or legal terms that applies is in it.
+- The output line says the format, length and who signs it.
+- You can check each rule against one line in the draft.
 
-The practical benefit of story structure is control. You can review a draft scene by scene, replace a weak example without rebuilding the whole lesson, and compare future retention against videos of similar length. You can also explain the work to another person because the structure is visible. If your source is a document, [preparing a clear AI video brief](/blog/give-ai-a-video-brief-before-asking-for-a-script/) follows the same rule: keep the source and review step visible.
+## Get the templates
 
-AI can accelerate parts of production. It cannot decide what your audience needs to understand, which facts are approved, or whether an example makes an unsafe promise. Keep those decisions with a person. Start with one viewer, one problem, one example, and one payoff. Then let the visuals support that path.
+I put the master SOP example, the task brief template and ten more AI SOPs into a free pack. Read them on the [example AI SOPs page](/ai-sops/), or download the PDF from there. For writing the request itself, [how to write a useful AI prompt for one small business task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/) covers the rest.
 
-Sources:
+## Sources and local evidence
 
-- [TikTok for Business Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
-- [YouTube: Measure key moments for audience retention](https://support.google.com/youtube/answer/9314415)
+- Fused teaching files, November 23, 2026: estimate-procedure.txt (six rules), full-input.txt (386 characters), task-brief.txt (165 characters), counted with `wc -m`. The procedure and the inquiry are made up teaching examples, not customer data.
+- No claim is made about answer quality, cost or speed. The example shows a method, not a measured result.
 
 ## Related
 
-- [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
-- [Give AI a Video Brief Before Asking for a Script](/blog/give-ai-a-video-brief-before-asking-for-a-script/)
+- [What is an SOP and why AI needs one](/blog/what-is-an-sop-and-why-ai-needs-one/)
+- [Write a useful AI prompt for one small business task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
+- [Schedule AI tasks to follow your SOP](/blog/schedule-ai-tasks-to-follow-your-sop/)
 
-Read next: [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
+Read next: [Draft a customer email with AI and review it before sending](/blog/draft-a-customer-email-with-ai-and-review-before-sending/).

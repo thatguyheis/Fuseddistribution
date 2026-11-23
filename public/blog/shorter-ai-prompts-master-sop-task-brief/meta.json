@@ -1,1 +1,33 @@
-{"title":"Use a Focused AI Task Brief With a Master SOP","slug":"shorter-ai-prompts-master-sop-task-brief","description":"Keep one master SOP and prepare a focused task brief when the environment can actually access that source and its governing instructions and rules.","ogDescription":"Keep one master SOP and prepare a focused task brief when the environment can actually access that source and its governing instructions and rules.","alt":"Focused AI task brief with SOP","squareCover":true,"date":"2026-11-23","tags":["AI Workflow","Small Business"],"brand":"tech","ctaLine":"Keep one master SOP and prepare a focused task brief.","contentGraphic":{"label":"A clear story path","rows":[{"condition":"Audience","action":"Name one viewer"},{"condition":"Example","action":"Show one task"},{"condition":"Payoff","action":"Answer the question"}]}}
+{
+  "title": "Your SOP Has Six Rules. This AI Reply Needs Three.",
+  "slug": "shorter-ai-prompts-master-sop-task-brief",
+  "description": "Keep one master SOP, then send AI a short task brief with only the rules that change this reply. A worked example with a free template.",
+  "ogDescription": "Send AI only the rules that change this reply. Worked example plus a free task brief template.",
+  "date": "2026-11-23",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Six rule estimate desk SOP with three rules highlighted for one reply",
+  "ctaLine": "Send the rules this reply needs, not the whole manual.",
+  "contentGraphic": {
+    "label": "Teaching example: one inquiry, six rules",
+    "rows": [
+      {
+        "condition": "Master SOP",
+        "action": "6 numbered rules"
+      },
+      {
+        "condition": "This reply",
+        "action": "Needs rules 1, 2 and 3"
+      },
+      {
+        "condition": "Task brief",
+        "action": "165 characters vs 386 pasted"
+      }
+    ]
+  },
+  "author": "Nick"
+}

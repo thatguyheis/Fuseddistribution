@@ -1,17 +1,7 @@
 {
   "slug": "shorter-ai-prompts-master-sop-task-brief",
-  "accessedAt": "2026-11-22",
-  "claims": [
-    {
-      "id": "s1",
-      "claim": "A prompt is input text supplied to a language model; a shorter input is not evidence of equal output quality or lower cost.",
-      "source": "https://platform.openai.com/docs/guides/prompt-engineering"
-    },
-    {
-      "id": "s2",
-      "claim": "The model context window limits how much input can be processed in one request.",
-      "source": "https://platform.openai.com/docs/guides/text-generation"
-    }
-  ],
-  "notes": "Primary sources opened and checked on 2026-11-22. Examples are synthetic and do not claim model performance."
+  "accessedAt": "2026-11-23",
+  "sources": [],
+  "localEvidence": "Teaching files and screenshots in Fused Tech Reels/Raw/evidence; character counts via wc -m",
+  "notes": "Written by Claude as content owner 2026-11-23 to replace a copied template package."
 }

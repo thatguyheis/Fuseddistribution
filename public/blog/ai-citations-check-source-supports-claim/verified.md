@@ -1,69 +1,72 @@
-# Why AI Video Works Better With a Clear Story
+# The Link Was Real. The AI Claim Was Still Wrong.
 
-AI can help you make a video image, rewrite a sentence, or suggest a sequence. That does not give the video a reason to exist. A useful reel still needs a viewer, a problem, and an answer that arrives in a sensible order.
+An AI answer with a citation looks finished. The link opens, the title matches, the publisher is official. Most quick checks stop right there.
 
-TikTok for Business describes a simple hook, body, and close structure for creative work. YouTube gives creators a way to inspect retention and identify moments where viewers stayed, rewatched, or left. Those tools do not guarantee a result, but they point to a practical lesson: organize the explanation before you decorate it.
+That check proves the source exists. It doesn't prove the source says what the answer claims. To check that, you have to open the source, find the sentence, and test the strongest word in the claim. If you use AI for research or drafting, pair this with [building AI prompts that actually work](/blog/how-to-build-ai-prompts-that-actually-work/) so you ask for sources in the first place.
 
-## Start with one viewer and one video problem
+## The teaching example
 
-The first decision is not which AI tool to open. It is who the video is for and what that person is trying to do. A small business owner might need to explain how a customer request moves from an inbox to an estimate. A staff member might need to understand what information is missing before a reply can be sent. These are different viewers and different stories.
+Here's a draft line I wrote for this lesson, in the style of an AI answer:
 
-Write the problem as a question. For example: “How do I turn a vague estimate request into a reviewable draft?” That question gives the video a boundary. It also gives you a useful test: by the end, can the viewer explain the next step without guessing? For a related workflow, see [how to write a useful AI prompt](/blog/write-a-useful-ai-prompt-for-one-small-business-task/).
+> Every JSON reader rejects duplicate names. (Source: RFC 8259, The JSON Data Interchange Format)
 
-Avoid starting with a broad promise such as “AI will transform your business.” It is too large to prove in one short video. A narrower promise is easier to illustrate and easier for a person to check.
+RFC 8259 is the official JSON standard. The citation is real, the title matches, and the publisher, the IETF, checks out. A link checker would pass it.
 
-## Give the viewer one concrete story example
+## Open the source and find the sentence
 
-An example turns an abstract lesson into something a viewer can follow. Use a fictional request if the real task contains customer information. Imagine a repair shop receives this note: “Can you send an estimate for the front door?” The note does not include measurements, material, access details, or a requested time.
+Section 4 of RFC 8259 covers objects. The sentence about names is short.
 
-The video can show what a useful process does with that incomplete request. It identifies what is known, lists what is missing, and prepares a draft that does not invent a price or appointment. The example is not a customer result. It is a demonstration of the decision the viewer should make.
+![RFC 8259 section 4 text about duplicate names](images/rfc8259-section-4.jpg "Screenshot of rfc-editor.org, RFC 8259 section 4, checked November 23, 2026.")
 
-Keep the example stable while the lesson develops. If the request changes in every scene, the viewer has to spend attention learning the example instead of learning the method.
+It says: "The names within an object SHOULD be unique." Should, not must. In standards writing, that's a recommendation, not a requirement.
 
-## Make each scene do one job
+Keep reading and it gets more specific. When names aren't unique, "the behavior of software that receives such an object is unpredictable. Many implementations report the last name/value pair only. Other implementations report an error or fail to parse the object, and some implementations report all of the name/value pairs, including duplicates."
 
-A scene should introduce a question, add evidence, demonstrate a step, or clarify the next action. If it only changes the background, it may be decoration rather than explanation. AI makes it easy to produce many attractive images, so the story needs a stricter rule: every image must earn its place.
+## Test the strongest word
 
-One simple outline is audience, example, method, check, and takeaway. The audience scene says who needs the lesson. The example scene makes the problem visible. The method scene shows the repeatable action. The check scene names what a person must verify. The takeaway gives the viewer a sentence they can use.
+The draft's strongest word is "every". Every JSON reader rejects duplicates.
 
-This order also keeps the promise honest. You are not claiming that a model automatically understands a business. You are showing how a person can give a tool a bounded task and inspect the result.
+The standard says the opposite: many readers keep the last value, some report an error, and some report all the pairs. So "every reader rejects duplicates" is false. One word broke the claim, even though the link, the title and the publisher were all correct.
 
-## Deliver the payoff early
+Words to watch for: every, always, never, all, only, must, guaranteed, best. In standards and policy documents, watch should versus must, may versus will, and some versus all.
 
-The opening question should be followed by an answer before the viewer has to wait through a long introduction. In this lesson, the early payoff is simple: AI helps video creation when the story tells each scene what job to do. The visuals matter, but they serve the explanation.
+## Fix the line
 
-YouTube’s retention guidance describes top moments, spikes, and dips as clues for reviewing what held attention or caused confusion. If your strongest explanation arrives at the end, test whether a shorter version can move that explanation earlier. Do not treat a retention graph as proof of why a person behaved a certain way. Use it as a prompt for review.
+The fixed line says only what the source supports:
 
-## Use graphics to explain, not to decorate
+![The draft line before and after the source check](images/claim-before-after.jpg "Teaching example. The fixed line matches what RFC 8259 section 4 says.")
 
-A flow diagram can show the difference between a scattered request and a structured one. The labels should be plain: choose the viewer, show the example, state the payoff. Do not add invented percentages or a fake analytics dashboard to make the graphic look authoritative.
+Keep names unique, because JSON readers handle duplicate names differently. Same citation. Now the citation supports the sentence.
 
-When a number matters, include its source, unit, and period. When no number is needed, use a checklist or flow. A conceptual diagram is honest when it is labeled as illustrative and does not pretend to measure audience behavior.
+Put the original sentence and the source passage side by side when you make a change like this. Anyone who reads your draft later can see exactly why the wording changed.
 
-## Review the words and the images together
+## The source check, step by step
 
-Read the script aloud while watching the scene plan. If the narration says “now we identify the missing detail” while the image shows a generic laptop, the visual is not helping. Replace it with a simple missing-information card or a fictional form with sensitive fields removed.
+1. Find the claim and the source it cites.
+2. Open the source. Don't stop at the title or the publisher.
+3. Find the exact sentence that should support the claim, and copy it next to the claim.
+4. Find the strongest word in the claim.
+5. Ask whether the source sentence justifies that word.
+6. If it doesn't, rewrite the claim to match the source, or remove it.
+7. Keep the source sentence and the link with the final text.
 
-Check names, dates, prices, links, and commitments against the source. Ask whether a viewer could mistake a fictional example for a real customer story. Make that boundary visible in the article and reel when it matters.
+No source sentence, no claim. Numbers have to match too, including the unit and the year. The same habit works when you [summarize your own document with AI](/blog/summarize-your-own-document-with-ai/): ask for the lines the summary relied on, and spot check them.
 
-## Close with one useful action
+Try it on the sentence your next business decision depends on. It takes a couple of minutes.
 
-The close should answer the opening question and invite one low-friction action. Do not ask viewers to like, comment, follow, and share at once. For this lesson, the action is a question: which part slows you down, ideas, scripts, or editing? The answer can guide the next tutorial without pretending that the first video solved every production problem.
+## Get the SOP
 
-## A small structure is a production advantage
+This source check is SOP 6 in my free [example AI SOPs](/ai-sops/), along with an AI output review checklist you can run on any draft before it leaves your business.
 
-The practical benefit of story structure is control. You can review a draft scene by scene, replace a weak example without rebuilding the whole lesson, and compare future retention against videos of similar length. You can also explain the work to another person because the structure is visible. If your source is a document, [preparing a clear AI video brief](/blog/give-ai-a-video-brief-before-asking-for-a-script/) follows the same rule: keep the source and review step visible.
+## Sources
 
-AI can accelerate parts of production. It cannot decide what your audience needs to understand, which facts are approved, or whether an example makes an unsafe promise. Keep those decisions with a person. Start with one viewer, one problem, one example, and one payoff. Then let the visuals support that path.
-
-Sources:
-
-- [TikTok for Business Creative Codes](https://ads.tiktok.com/business/en-US/creative-codes)
-- [YouTube: Measure key moments for audience retention](https://support.google.com/youtube/answer/9314415)
+- [RFC 8259, The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259.html), section 4, IETF, December 2017. Checked November 23, 2026.
+- The draft line is a made up teaching example in the style of an AI answer. No claim is made about how often any AI tool produces unsupported citations.
 
 ## Related
 
-- [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
-- [Give AI a Video Brief Before Asking for a Script](/blog/give-ai-a-video-brief-before-asking-for-a-script/)
+- [How to build AI prompts that actually work](/blog/how-to-build-ai-prompts-that-actually-work/)
+- [Summarize your own document with AI](/blog/summarize-your-own-document-with-ai/)
+- [Draft a customer email with AI and review it before sending](/blog/draft-a-customer-email-with-ai-and-review-before-sending/)
 
-Read next: [Write a Useful AI Prompt for One Small Business Task](/blog/write-a-useful-ai-prompt-for-one-small-business-task/)
+Read next: [How to build AI prompts that actually work](/blog/how-to-build-ai-prompts-that-actually-work/).

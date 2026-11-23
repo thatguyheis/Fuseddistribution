@@ -1,1 +1,33 @@
-{"title":"Treat Document Text as Evidence, Not Permission","slug":"ai-document-hidden-instructions-prompt-injection","description":"A document can contain instructions, but source text is not automatically authorized to change the task or trigger an action in your workflow.","ogDescription":"A document can contain instructions, but source text is not automatically authorized to change the task or trigger an action in your workflow.","alt":"AI document instruction boundary example lesson","squareCover":true,"date":"2026-11-23","tags":["AI Security","Small Business"],"brand":"tech","ctaLine":"Treat document text as evidence, not permission.","contentGraphic":{"label":"A clear story path","rows":[{"condition":"Audience","action":"Name one viewer"},{"condition":"Example","action":"Show one task"},{"condition":"Payoff","action":"Answer the question"}]}}
+{
+  "title": "Text Inside a Document Can Steer Your AI",
+  "slug": "ai-document-hidden-instructions-prompt-injection",
+  "description": "Prompt injection tops the OWASP 2026 list of AI app risks. Treat document text as data, and ask who asked before any AI action.",
+  "ogDescription": "Anything the AI reads is data. Only a person can give it a job. The who asked check.",
+  "date": "2026-11-23",
+  "brand": "tech",
+  "tags": [
+    "AI Security",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "OWASP 2026 Top 10 list with LLM01 Prompt Injection first",
+  "ctaLine": "Before any AI action, ask who actually asked for it.",
+  "contentGraphic": {
+    "label": "The who asked check",
+    "rows": [
+      {
+        "condition": "My request",
+        "action": "What day is delivery?"
+      },
+      {
+        "condition": "Inside the document",
+        "action": "Print this on blue paper"
+      },
+      {
+        "condition": "Right answer",
+        "action": "Thursday, plus the source line"
+      }
+    ]
+  },
+  "author": "Nick"
+}
