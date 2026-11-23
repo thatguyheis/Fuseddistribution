@@ -1,0 +1,9 @@
+{
+  "slug": "ai-one-example-matches-your-format",
+  "accessedAt": "2026-11-23",
+  "sources": [],
+  "localEvidence": [
+    "Local runs 2026-11-23, gemma-e2b via LiteRT on Nick's Mac, temperature 1.0; raw outputs in Raw/evidence/T-16 - One good example/runs.json (rules only 180 words). Teaching note, made up customer."
+  ],
+  "notes": "Written by Claude as content owner."
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Our AI Gave the Same Price Four Times. It Was Wrong Every Time.",
+  "slug": "ai-same-price-four-times-wrong-every-time",
+  "description": "A local AI model gave the same wrong total four times in a row. Showing the steps fixed it. Consistent is not the same as correct.",
+  "ogDescription": "Same answer every time doesn't mean the right answer. A real pricing test on a local model.",
+  "date": "2026-11-24",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Four AI runs showing the same wrong total of 190 dollars",
+  "ctaLine": "Check the math against your price list.",
+  "contentGraphic": {
+    "label": "Teaching quote, right total $235",
+    "rows": [
+      {
+        "condition": "Normal reply",
+        "action": "Two totals: $195 and $235"
+      },
+      {
+        "condition": "Fixed format",
+        "action": "$190, four runs in a row"
+      },
+      {
+        "condition": "Steps shown",
+        "action": "$235 Tuesday, 3 of 3 runs"
+      }
+    ]
+  },
+  "author": "Nick"
+}

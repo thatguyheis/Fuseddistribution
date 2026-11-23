@@ -85,6 +85,42 @@
       "maxSeconds": 8,
       "reason": "Claude v3 rewrite approved by Nick after watching the final reels; replaces GPT hook: Your AI answer has sources. Do those sources actually support it?",
       "preserveExactText": true
+    },
+    "ai-graded-its-own-work-wrong-article": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-23T22:49:13.718711+00:00",
+      "ownerReply": "all approved, push to blog and git. Next schedule to buffer.",
+      "spokenText": "Our AI graded its own blog post 90 out of 100. It was the wrong article.",
+      "maxSeconds": 8,
+      "reason": "Claude v3 reel approved by Nick after watching.",
+      "preserveExactText": true
+    },
+    "ai-same-price-four-times-wrong-every-time": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-23T22:49:13.718711+00:00",
+      "ownerReply": "all approved, push to blog and git. Next schedule to buffer.",
+      "spokenText": "Our AI gave the same price four times in a row. It was wrong every time.",
+      "maxSeconds": 8,
+      "reason": "Claude v3 reel approved by Nick after watching.",
+      "preserveExactText": true
+    },
+    "ai-one-example-matches-your-format": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-23T22:49:13.718711+00:00",
+      "ownerReply": "all approved, push to blog and git. Next schedule to buffer.",
+      "spokenText": "I asked AI for one ledger entry. It gave me 180 words.",
+      "maxSeconds": 8,
+      "reason": "Claude v3 reel approved by Nick after watching.",
+      "preserveExactText": true
+    },
+    "automate-it-means-a-list-of-steps": {
+      "approvedBy": "Nick",
+      "approvedAt": "2026-11-23T22:49:13.718711+00:00",
+      "ownerReply": "all approved, push to blog and git. Next schedule to buffer.",
+      "spokenText": "Automation is not a robot. It's a list of steps you stop doing by hand.",
+      "maxSeconds": 8,
+      "reason": "Claude v3 reel approved by Nick after watching.",
+      "preserveExactText": true
     }
   }
 }

@@ -1,0 +1,33 @@
+{
+  "title": "Our AI Graded Its Own Work. It Was the Wrong Article.",
+  "slug": "ai-graded-its-own-work-wrong-article",
+  "description": "Our AI pipeline reviewed its own blog post and scored it 90. The body was a different article. Why the writer and reviewer must be separate.",
+  "ogDescription": "A real AI self review that passed the wrong article, and the three checks that catch it.",
+  "date": "2026-11-24",
+  "brand": "tech",
+  "tags": [
+    "AI Workflow",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Archived page with the citations URL but an older post's title",
+  "ctaLine": "Never let the writer grade its own work.",
+  "contentGraphic": {
+    "label": "What the self review missed",
+    "rows": [
+      {
+        "condition": "URL",
+        "action": "AI citations check"
+      },
+      {
+        "condition": "Body",
+        "action": "An older video post"
+      },
+      {
+        "condition": "Review",
+        "action": "Score 90, pass true"
+      }
+    ]
+  },
+  "author": "Nick"
+}

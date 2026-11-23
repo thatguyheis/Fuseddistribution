@@ -1,0 +1,33 @@
+{
+  "title": "Automation Is Not a Robot. It's a List of Steps.",
+  "slug": "automate-it-means-a-list-of-steps",
+  "description": "Before you buy an AI tool, write down the steps you already do. Mark which repeat, automate one at a time, and keep approvals with a person.",
+  "ogDescription": "Write the steps first. Rule, pattern and copy steps can be automated. Judgment stays with you.",
+  "date": "2026-11-24",
+  "brand": "tech",
+  "tags": [
+    "AI Automation",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Six step list for an estimate request marked rule, pattern, copy and judgment",
+  "ctaLine": "Write the step list before you buy a tool.",
+  "contentGraphic": {
+    "label": "Estimate request, six steps",
+    "rows": [
+      {
+        "condition": "Rule, pattern, copy",
+        "action": "Can be automated"
+      },
+      {
+        "condition": "Judgment",
+        "action": "Approve and send stay with a person"
+      },
+      {
+        "condition": "Order",
+        "action": "One step at a time"
+      }
+    ]
+  },
+  "author": "Nick"
+}

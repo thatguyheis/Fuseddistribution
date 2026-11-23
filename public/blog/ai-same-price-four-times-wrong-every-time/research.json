@@ -1,0 +1,9 @@
+{
+  "slug": "ai-same-price-four-times-wrong-every-time",
+  "accessedAt": "2026-11-23",
+  "sources": [],
+  "localEvidence": [
+    "Local runs 2026-11-23, gemma-e2b via LiteRT on Nick's Mac, temperature 1.0 unless noted; raw outputs in Raw/evidence/T-15 - Same question, two answers/runs.json. Teaching prices, not a supplier quote. No claim about how often any model gets math wrong."
+  ],
+  "notes": "Written by Claude as content owner."
+}

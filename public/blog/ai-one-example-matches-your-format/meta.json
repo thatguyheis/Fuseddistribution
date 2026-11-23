@@ -1,0 +1,33 @@
+{
+  "title": "I Asked AI for One Line. It Gave Me 180 Words.",
+  "slug": "ai-one-example-matches-your-format",
+  "description": "Rules alone got three options and a date placeholder. One real example fixed the format, and two facts fixed the rest. A real local model test.",
+  "ogDescription": "Rules say what you want. One example shows what done looks like. A real ledger line test.",
+  "date": "2026-11-24",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "AI output with three options compared with the final one line ledger entry",
+  "ctaLine": "Put one real example in every SOP.",
+  "contentGraphic": {
+    "label": "One ledger line, three runs",
+    "rows": [
+      {
+        "condition": "Rules only",
+        "action": "180 words, 3 options"
+      },
+      {
+        "condition": "+ one example",
+        "action": "Right format, wrong year"
+      },
+      {
+        "condition": "+ two facts",
+        "action": "One correct line"
+      }
+    ]
+  },
+  "author": "Nick"
+}

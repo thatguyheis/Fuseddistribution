@@ -1,5 +1,65 @@
 [
   {
+    "slug": "ai-graded-its-own-work-wrong-article",
+    "title": "Our AI Graded Its Own Work. It Was the Wrong Article.",
+    "date": "2026-11-24",
+    "excerpt": "Our AI graded its own blog post 90 out of 100. It was the wrong article. Here's the check that catches it.",
+    "tags": [
+      "AI Workflow",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-graded-its-own-work-wrong-article/hero.jpg",
+    "imageAlt": "Archived page with the citations URL but an older post's title"
+  },
+  {
+    "slug": "ai-same-price-four-times-wrong-every-time",
+    "title": "Our AI Gave the Same Price Four Times. It Was Wrong Every Time.",
+    "date": "2026-11-24",
+    "excerpt": "Our AI gave the same price four times in a row. It was wrong every time. Showing the steps fixed it.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-same-price-four-times-wrong-every-time/hero.jpg",
+    "imageAlt": "Four AI runs showing the same wrong total of 190 dollars"
+  },
+  {
+    "slug": "ai-one-example-matches-your-format",
+    "title": "I Asked AI for One Line. It Gave Me 180 Words.",
+    "date": "2026-11-24",
+    "excerpt": "I asked AI for one ledger entry and got 180 words. One real example fixed the format. Two facts fixed the rest.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-one-example-matches-your-format/hero.jpg",
+    "imageAlt": "AI output with three options compared with the final one line ledger entry"
+  },
+  {
+    "slug": "automate-it-means-a-list-of-steps",
+    "title": "Automation Is Not a Robot. It's a List of Steps.",
+    "date": "2026-11-24",
+    "excerpt": "Automation is not a robot. It's a list of steps you stop doing by hand. Write the steps before you buy a tool.",
+    "tags": [
+      "AI Automation",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/automate-it-means-a-list-of-steps/hero.jpg",
+    "imageAlt": "Six step list for an estimate request marked rule, pattern, copy and judgment"
+  },
+  {
     "slug": "ai-citations-check-source-supports-claim",
     "title": "The Link Was Real. The AI Claim Was Still Wrong.",
     "date": "2026-11-23",
