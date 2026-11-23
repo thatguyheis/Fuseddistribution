@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "productionDatePacific": "2026-11-25",
+  "selectedAt": "2026-11-23T23:01:04.175801+00:00",
+  "selectedBy": "Nick",
+  "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
+  "status": "owner_selected",
+  "publishOn": "2026-11-25",
+  "targetNewPairs": 2,
+  "selection": [
+    {
+      "option": 1,
+      "slug": "the-automation-that-failed-quietly",
+      "topic": "The automation that failed quietly",
+      "hook": "Our automation stopped posting for days, and nothing told us.",
+      "format": "Real incident",
+      "evidence": "Real July pipeline logs: commits made, push failed, no alert. Clean out tokens, paths, names.",
+      "sop": "New SOP 16: check the result, not the status (add to pack, /ai-sops/, Muse folder)"
+    },
+    {
+      "option": 2,
+      "slug": "ai-invented-a-statistic",
+      "topic": "AI invented a statistic",
+      "hook": "AI will invent a statistic and say it with total confidence.",
+      "format": "Corrects a misconception",
+      "evidence": "Real draft with an unsourced number and our sourced-stats gate blocking it. No claims about how often models do this.",
+      "sop": "SOP 6, SOP 8"
+    }
+  ],
+  "notes": [
+    "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
+    "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+  ]
+}

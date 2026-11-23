@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "productionDatePacific": "2026-11-26",
+  "selectedAt": "2026-11-23T23:01:04.175801+00:00",
+  "selectedBy": "Nick",
+  "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
+  "status": "owner_selected",
+  "publishOn": "2026-11-26",
+  "targetNewPairs": 2,
+  "selection": [
+    {
+      "option": 3,
+      "slug": "your-ai-doesnt-know-what-day-it-is",
+      "topic": "Your AI doesn't know what day it is",
+      "hook": "Ask your AI what today's date is. Then ask it what's new.",
+      "format": "Explains how it works",
+      "evidence": "Local Gemma run asking for the latest version of a tool vs the real current page. If the answer is current, report it and switch example; never fake.",
+      "sop": "SOP 4"
+    },
+    {
+      "option": 4,
+      "slug": "are-you-sure-flips-the-ai-answer",
+      "topic": "\"Are you sure?\" flips the answer",
+      "hook": "Ask AI \"are you sure?\" and watch it change a right answer.",
+      "format": "Explains how it works",
+      "evidence": "Local Gemma: correct answer, then 'are you sure?', saved runs with settings and real count. If it holds, report and switch example; never fake.",
+      "sop": "SOP 8"
+    }
+  ],
+  "notes": [
+    "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
+    "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+  ]
+}

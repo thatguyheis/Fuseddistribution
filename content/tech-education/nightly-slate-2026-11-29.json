@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "productionDatePacific": "2026-11-29",
+  "selectedAt": "2026-11-23T23:01:04.175801+00:00",
+  "selectedBy": "Nick",
+  "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
+  "status": "owner_selected",
+  "publishOn": "2026-11-29",
+  "targetNewPairs": 2,
+  "selection": [
+    {
+      "option": 9,
+      "slug": "ai-meeting-notes-that-are-useful",
+      "topic": "AI meeting notes that are useful",
+      "hook": "Your AI meeting summary is missing the only two things that matter.",
+      "format": "One task",
+      "evidence": "Teaching transcript summarized two ways: decisions and owners vs plain recap.",
+      "sop": "SOP 11"
+    },
+    {
+      "option": 10,
+      "slug": "write-down-every-ai-mistake-for-a-week",
+      "topic": "Write down every AI mistake for a week",
+      "hook": "For one week, write down every mistake your AI makes.",
+      "format": "One task",
+      "evidence": "Real Nov 23 automation audit as example log.",
+      "sop": "SOP 12"
+    }
+  ],
+  "notes": [
+    "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
+    "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+  ]
+}

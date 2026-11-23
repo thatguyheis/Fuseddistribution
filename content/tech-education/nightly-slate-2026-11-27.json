@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "productionDatePacific": "2026-11-27",
+  "selectedAt": "2026-11-23T23:01:04.175801+00:00",
+  "selectedBy": "Nick",
+  "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
+  "status": "owner_selected",
+  "publishOn": "2026-11-27",
+  "targetNewPairs": 2,
+  "selection": [
+    {
+      "option": 5,
+      "slug": "swap-the-names-before-you-paste-into-ai",
+      "topic": "Swap the names before you paste",
+      "hook": "Before you paste that email into AI, swap the names out.",
+      "format": "One task",
+      "evidence": "Teaching example: message redacted with placeholders, same useful reply, names put back.",
+      "sop": "SOP 9"
+    },
+    {
+      "option": 6,
+      "slug": "local-ai-vs-cloud-ai",
+      "topic": "Local AI vs cloud AI",
+      "hook": "Some of our AI runs on a computer on a desk, not in the cloud.",
+      "format": "Compares two options",
+      "evidence": "Real local Gemma server (LiteRT :9379) on Nick's Mac, one task timed, what leaves the machine and what doesn't.",
+      "sop": "SOP 9, SOP 10"
+    }
+  ],
+  "notes": [
+    "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
+    "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+  ]
+}

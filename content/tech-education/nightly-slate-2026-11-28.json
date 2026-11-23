@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "productionDatePacific": "2026-11-28",
+  "selectedAt": "2026-11-23T23:01:04.175801+00:00",
+  "selectedBy": "Nick",
+  "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
+  "status": "owner_selected",
+  "publishOn": "2026-11-28",
+  "targetNewPairs": 2,
+  "selection": [
+    {
+      "option": 7,
+      "slug": "ai-drafts-a-person-sends",
+      "topic": "AI drafts, a person sends",
+      "hook": "Our AI writes every follow up message. It has never sent one.",
+      "format": "Our own setup",
+      "evidence": "Real Muse handoff rule: drafts only, Nick approves sends.",
+      "sop": "SOP 10, SOP 7"
+    },
+    {
+      "option": 8,
+      "slug": "our-ai-follows-a-file-not-a-chat",
+      "topic": "Our AI follows a file, not a chat",
+      "hook": "Every night our AI reads the same one page file before it starts.",
+      "format": "Our own setup",
+      "evidence": "Real CLAUDE-NIGHTLY-PASS.md with a dated change and the reason.",
+      "sop": "SOP 1, SOP 2"
+    }
+  ],
+  "notes": [
+    "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
+    "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+  ]
+}
