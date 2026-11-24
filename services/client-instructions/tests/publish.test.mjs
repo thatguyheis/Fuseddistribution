@@ -22,7 +22,7 @@ function setup(options = {}) {
   const db = new DatabaseSync(":memory:");
   for (const file of readdirSync(migrations).sort()) db.exec(readFileSync(path.join(migrations, file), "utf8"));
   const add = db.prepare("INSERT INTO clients (id, token_hash, paid, bundle_name, status_actor, status_reason, publish_profile, reel_enabled) VALUES (?, ?, 1, 'p', 't', 't', ?, ?)");
-  add.run("coin-client", sha(tokens.coin), "c1994", 0);
+  add.run("c1994", sha(tokens.coin), "c1994", 0);
   add.run("other-client", sha(tokens.other), "c1994", 0);
   add.run("plain-client", sha(tokens.plain), null, 1);
   const kv = new Map();
@@ -91,7 +91,7 @@ async function uploaded(state, bearer = tokens.coin) {
 test("publish tools appear only for a client with a publish profile", async () => {
   const { env } = setup();
   const names = async bearer => (await rpc(env, "tools/list", {}, bearer)).body.result.tools.map(tool => tool.name);
-  assert.deepEqual(await names(tokens.coin), ["create_video_upload", "list_videos", "schedule_post", "get_post_status"]);
+  assert.deepEqual(await names(tokens.coin), ["create_video_upload", "list_videos", "schedule_post", "get_post_status", "get_video_workflow_update"]);
   assert.deepEqual(await names(tokens.plain), ["create_reel_plan"]);
   const refused = await rpc(env, "tools/call", { name: "schedule_post", arguments: {} }, tokens.plain);
   assert.ok(refused.body.error || refused.body.result.isError);
@@ -157,7 +157,7 @@ test("upload link refuses wrong key, wrong content, reuse, expiry and inactive c
   state.db.prepare("UPDATE publish_videos SET upload_expires_at = '2020-01-01T00:00:00.000Z' WHERE id = ?").run(expired.video_id);
   assert.equal(await status(expired.upload_url), 403);
   const revoked = await call(state.env, "create_video_upload", upload);
-  state.db.prepare("UPDATE clients SET paid = 0 WHERE id = 'coin-client'").run();
+  state.db.prepare("UPDATE clients SET paid = 0 WHERE id = 'c1994'").run();
   assert.equal(await status(revoked.upload_url), 403);
   assert.equal(state.kv.size, 1);
 });
@@ -197,4 +197,42 @@ test("a missing or malformed publish profile fails closed", async () => {
   const state = setup();
   state.env.PUBLISH_PROFILE_C1994 = "{not json";
   assert.equal((await call(state.env, "create_video_upload", upload)).error, "Service unavailable.");
+});
+
+test("workflow update checks client identity, version and archive integrity on each download", async () => {
+  const { env, db } = setup();
+  const archive = Uint8Array.of(80, 75, 3, 4);
+  const digest = sha(archive);
+  env.C1994_WORKFLOW_SHA256 = digest;
+  let stored = archive;
+  env.REELS_KV.get = async (key, type) => {
+    assert.equal(key, `client-workflows/c1994/${digest}.zip`);
+    assert.equal(type, "arrayBuffer");
+    return stored;
+  };
+  const tool = "get_video_workflow_update";
+  const update = await call(env, tool);
+  assert.equal(update.status, "update_available");
+  assert.equal(update.sha256, digest);
+  assert.equal((await call(env, tool, { installed_version: "old" })).download_url, update.download_url);
+  const current = await call(env, tool, { installed_version: update.version });
+  assert.equal(current.status, "current");
+  assert.equal(current.download_url, undefined);
+  const otherTools = (await rpc(env, "tools/list", {}, tokens.other)).body.result.tools;
+  assert.ok(!otherTools.some(t => t.name === tool));
+  const get = (token, url = update.download_url) => worker.fetch(new Request(url, {
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+  }), env);
+  assert.equal((await get()).status, 401);
+  assert.equal((await get(tokens.other)).status, 403);
+  assert.equal((await get(tokens.coin, update.download_url + ".old")).status, 404);
+  const result = await get(tokens.coin);
+  assert.equal(result.headers.get("Content-Type"), "application/zip");
+  assert.equal(sha(new Uint8Array(await result.arrayBuffer())), digest);
+  stored = null;
+  assert.equal((await get(tokens.coin)).status, 503);
+  stored = Uint8Array.of(0);
+  assert.equal((await get(tokens.coin)).status, 503);
+  db.exec("UPDATE clients SET paid=0 WHERE id='c1994'");
+  assert.equal((await get(tokens.coin)).status, 403);
 });

@@ -83,12 +83,23 @@ async function createPlan(raw, request, env, requestId) {
   }
   throw new ServiceError(422, "A suitable plan could not be produced. Refine the brief and try again.");
 }
+// Only the Coins & Auctions installation receives its approved client distribution.
+function hasWorkflow(client) {
+  return client.id === "c1994" && client.publish_profile === "c1994";
+}
+function workflowRelease(env) {
+  const sha256 = env.C1994_WORKFLOW_SHA256;
+  if (!/^[a-f0-9]{64}$/.test(sha256 ?? "")) throw new ServiceError(503, "Workflow release is unavailable.");
+  const version = `v3-${sha256.slice(0, 12)}`;
+  const path = `/v1/workflows/c1994/${sha256}.zip`;
+  return { sha256, version, path, key: `client-workflows/c1994/${sha256}.zip` };
+}
 function server(request, env, requestId, client) {
   const mcp = new McpServer({ name: "fused-reel-service", version: "2.1.0" });
   // Publish tools exist only for clients whose D1 row names a publish profile.
   if (client.publish_profile) {
     const origin = new URL(request.url).origin;
-    const publishTool = (name, description, inputSchema, run) => mcp.registerTool(name, { description, inputSchema }, async (args) => {
+    const publishTool = (name, description, inputSchema, run, annotations) => mcp.registerTool(name, { description, inputSchema, annotations }, async (args) => {
       try {
         // Every call rechecks current access; the tool list alone grants nothing.
         const current = await authorize(request, env);
@@ -108,6 +119,20 @@ function server(request, env, requestId, client) {
       (args, current) => schedulePost(args, current, env, () => authorize(request, env)));
     publishTool("get_post_status", "Check a post created by schedule_post: scheduled, sent or error, with the live link once sent.", StatusSchema,
       (args, current) => postStatus(args, current, env));
+    if (hasWorkflow(client)) {
+      publishTool("get_video_workflow_update",
+        "Check the approved Coins & Auctions V3 video workflow. Pass installed_version when known. To install an update, GET the ZIP with your existing Fused bearer credential, verify its SHA256, and extract into a new version folder. Read START-HERE.md.",
+        z.strictObject({ installed_version: z.string().trim().min(1).max(80).optional() }),
+        (args, current) => {
+          if (!hasWorkflow(current)) throw new ServiceError(403, "Workflow access is inactive.");
+          const release = workflowRelease(env);
+          const status = args.installed_version === release.version ? "current" : "update_available";
+          const result = { status, version: release.version, sha256: release.sha256,
+            changes: "Archival V3 visuals, word timed captions, Linux preview support and a Lot 876 example." };
+          if (status === "update_available") result.download_url = origin + release.path;
+          return result;
+        }, { readOnlyHint: true, destructiveHint: false, idempotentHint: true });
+    }
   }
   if (client.reel_enabled === 0) return mcp;
   mcp.registerTool("create_reel_plan", {
@@ -131,6 +156,22 @@ export default {
     const requestId = crypto.randomUUID();
     // Retire the file route even for paid users. There is no private-file API.
     if (path === "/v1/instructions/reel") return reply(410, { error: "Instruction downloads are retired. Use create_reel_plan through MCP or POST /v1/reels/plan." });
+    if (path.startsWith("/v1/workflows/")) {
+      try {
+        const client = await authorize(request, env);
+        if (!hasWorkflow(client)) throw new ServiceError(403, "Workflow access is inactive.");
+        const release = workflowRelease(env);
+        if (path !== release.path) throw new ServiceError(404, "Workflow version unavailable. Check for updates.");
+        if (request.method !== "GET") throw new ServiceError(405, "Use GET.");
+        const archive = await env.REELS_KV.get(release.key, "arrayBuffer");
+        if (!archive || await hash(archive) !== release.sha256) throw new ServiceError(503, "Workflow archive is unavailable.");
+        return new Response(archive, { headers: { ...HEADERS, "Content-Type": "application/zip",
+          "Content-Disposition": `attachment; filename="c1994-${release.version}.zip"` } });
+      } catch (error) {
+        const failure = safeError(error);
+        return reply(failure.status, { error: failure.message, requestId });
+      }
+    }
     if (path.startsWith("/v1/uploads/")) {
       try {
         if (request.method !== "PUT") throw new ServiceError(405, "Use PUT.");

@@ -29,6 +29,7 @@
     }
   ],
   "vars": {
+    "C1994_WORKFLOW_SHA256": "02128265425dc35e40c007999c1250fa4fd6e5cab1ba867ee8c608d737292ea6",
     "DAILY_RUN_LIMIT": "20",
     "MEDIA_BASE_URL": "https://fused-reel-media.luxraycoco.workers.dev"
   },

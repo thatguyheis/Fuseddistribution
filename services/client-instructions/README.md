@@ -94,3 +94,17 @@ Client instructions are in `client/PUBLISH-README.md`. Design: `docs/superpowers
 The selected Cloudflare model is `@cf/meta/llama-3.3-70b-instruct-fp8-fast`, using its documented JSON mode. Private policy validation is independent of model compliance. The deployed test profile is `pilot-smoke`; it must remain unpaid after verification.
 
 Hosted verification passed: paid MCP and HTTPS generation, retired file `410`, removed tool rejection, unpaid `403`, and old-token `401` after rotation. The automated suite also checks extraction attempts, revocation during generation and safe client installation. Tightening policy values can increase draft rejections; test policy changes against representative briefs before uploading them. `put-policy` makes the newest version active for every client assigned that policy name; validate a separate test policy before promoting changes.
+
+## Coins & Auctions workflow updates
+
+The active `c1994` client on the `c1994` publish profile can call `get_video_workflow_update` with no arguments on first use. For later checks, pass the exact `installed_version` returned when the last update was installed. Other clients cannot list this tool or use the download link. The existing four publishing tools operate separately.
+
+**Prompt for Sam**
+
+> Use fused_publish to check get_video_workflow_update for this coin project. If an update is available, download it from the same Fused MCP host with my existing FUSED_INSTRUCTIONS_TOKEN in the Authorization bearer header. Verify the SHA256 before extracting it into a new .fused-workflows folder named for the returned version. Read START-HERE.md, run the renderer check from the coin project in my Linux environment, and show me the Lot 876 example stills. Record the installed version after the check passes. Stop at preview.
+
+**Releasing the next update**
+
+1. From the repo root run `python3 services/client-instructions/scripts/build-workflow-release.py 'Coins since 1994' /tmp/c1994-release.zip` using a new output filename for each build. The script includes only the client guide, renderer pair, launcher and reference material. It prints the archive SHA256.
+2. Upload the archive to private KV under `client-workflows/c1994/<full-sha256>.zip` using `wrangler kv key put --binding REELS_KV --remote --config services/client-instructions/wrangler.jsonc --path <archive> <key>`. Keep the previous object for rollback. The public reel server serves only MP4 paths.
+3. Set `C1994_WORKFLOW_SHA256` in the service config to the new digest and revise the change summary in the tool. Run `npm run client-instructions:test`, deploy the client instructions Worker and verify the authenticated ZIP matches the digest. Downloads are private and use the same bearer header as MCP.
