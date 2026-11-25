@@ -4,7 +4,7 @@
   "selectedAt": "2026-11-23T23:01:04.175801+00:00",
   "selectedBy": "Nick",
   "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
-  "status": "owner_selected",
+  "status": "published",
   "publishOn": "2026-11-25",
   "targetNewPairs": 2,
   "selection": [
@@ -31,5 +31,13 @@
     "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
     "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
     "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
-  ]
+  ],
+  "publishedAt": "2026-11-24T21:25:00-08:00",
+  "publishRecord": {
+    "commit": "5f11a67f",
+    "deployVersion": "c270009e-e2cc-4378-b0af-911c13af4fb6",
+    "pushed": false,
+    "pushBlocker": "pre-push worktree hygiene gate: 3 untracked C1994 v3.1 files in services/client-instructions/ (pending Nick approval, not touched)",
+    "media": "Out/2026-11-24-approved-three-v3/*_v2.mp4"
+  }
 }
