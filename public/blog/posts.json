@@ -1,5 +1,35 @@
 [
   {
+    "slug": "the-automation-that-failed-quietly",
+    "title": "Our Automation Stopped Backing Up for Three Days. Nothing Told Us.",
+    "date": "2026-11-25",
+    "excerpt": "Our blog automation said done every morning while its GitHub backup failed for three days. What broke, and the result check that catches it.",
+    "tags": [
+      "AI Workflow",
+      "Automation",
+      "SOPs"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/the-automation-that-failed-quietly/hero.jpg",
+    "imageAlt": "Git log of 16 commits that never reached GitHub, July 14 to July 17"
+  },
+  {
+    "slug": "ai-invented-a-statistic",
+    "title": "AI Will Invent a Statistic and Say It With Total Confidence",
+    "date": "2026-11-25",
+    "excerpt": "Our AI wrote a draft with six statistics and no sources. Our checker blocked it and caught five. How to check every number before you post.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/ai-invented-a-statistic/hero.jpg",
+    "imageAlt": "AI draft line crediting a study by Qualtrics with 86 percent, circled in red"
+  },
+  {
     "slug": "ai-graded-its-own-work-wrong-article",
     "title": "Our AI Graded Its Own Work. It Was the Wrong Article.",
     "date": "2026-11-24",

@@ -1,0 +1,33 @@
+{
+  "title": "Our Automation Stopped Backing Up for Three Days. Nothing Told Us.",
+  "slug": "the-automation-that-failed-quietly",
+  "description": "Our blog automation said done every morning while its GitHub backup failed for three days. What broke, and the result check that catches it.",
+  "ogDescription": "A real automation that failed quietly for three days, and the one habit that catches it: check the result, not the status.",
+  "date": "2026-11-25",
+  "brand": "tech",
+  "tags": [
+    "AI Workflow",
+    "Automation",
+    "SOPs"
+  ],
+  "alt": "Git log of 16 commits that never reached GitHub, July 14 to July 17",
+  "ctaLine": "Check the result, not the status.",
+  "contentGraphic": {
+    "label": "What the job checked vs what mattered",
+    "rows": [
+      {
+        "condition": "Job ran",
+        "action": "Checked every morning"
+      },
+      {
+        "condition": "Copy reached GitHub",
+        "action": "Never checked, failed 3 days"
+      },
+      {
+        "condition": "Changes stuck",
+        "action": "16 on one computer"
+      }
+    ]
+  },
+  "author": "Nick"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ai-invented-a-statistic",
+  "accessedAt": "2026-11-23",
+  "sources": [
+    {
+      "name": "BrightLocal Local Consumer Review Survey 2026",
+      "url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "accessed": "2026-11-23"
+    }
+  ],
+  "stats": [
+    {
+      "statement": "49% of consumers trust online reviews as much as personal recommendations",
+      "source_name": "BrightLocal Local Consumer Review Survey 2026",
+      "source_url": "https://www.brightlocal.com/research/local-consumer-review-survey/",
+      "quote": "it still sits at a significant 49% today"
+    },
+    {
+      "statement": "QUOTED AI OUTPUT, NOT A CITED FACT: the Aug 5 2026 draft sentence 'A study by Qualtrics found that 86% ...' is shown as an example of an unsourced AI claim. The article says the AI had no source for it.",
+      "source_name": "Qualtrics",
+      "source_url": "",
+      "quote": "(from our blocked draft, not from Qualtrics)"
+    }
+  ],
+  "localEvidence": [
+    ".workflow-blocked/2026-08-05/how-to-get-repeat-customers-104350-blocked/ (verified.md, qa.json; no research.json)",
+    "sourced-stats.mjs re-run 2026-11-23: flags Mailchimp, Forrester Research, Zendesk, Incentive Marketing Association, Qualtrics; misses 'A Nielsen study found that 80%'",
+    "Commit 341f0f2e (2026-07-08): live post had said 92% and credited BrightLocal; replaced with the 2026 survey's 49%"
+  ],
+  "notes": "Written by Claude as content owner. The six draft statistics are quoted as examples of unsourced AI output, not as facts. Evidence in Fused Tech Reels/Raw/evidence/T-19 - AI invented a statistic/."
+}

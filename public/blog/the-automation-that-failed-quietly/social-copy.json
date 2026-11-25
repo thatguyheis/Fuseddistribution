@@ -1,0 +1,14 @@
+{
+  "slug": "the-automation-that-failed-quietly",
+  "blog_url": "https://fuseddistribution.com/blog/the-automation-that-failed-quietly/",
+  "discussion_question": "Comment \"grow\" and I'll send you the example SOPs. What's one automation you run that you've never checked by hand?",
+  "reel": {
+    "youtube": "Our blog automation said done every morning while its GitHub backup failed for three days. Check the result, not the status. https://fuseddistribution.com/blog/the-automation-that-failed-quietly/",
+    "x": "Our automation stopped backing up our posts for three days, and nothing told us. The job checked that it ran, not that the copy arrived. https://fuseddistribution.com/blog/the-automation-that-failed-quietly/",
+    "instagram": "Our automation stopped backing up our posts for three days, and nothing told us. The job checked that it ran, not that the copy arrived. Comment \"grow\" and I'll send you the example SOPs.\nfuseddistribution.com",
+    "facebook": "Our automation stopped backing up our posts for three days, and nothing told us. The job checked that it ran, not that the copy arrived. Comment \"grow\" and I'll send you the example SOPs.\nfuseddistribution.com"
+  },
+  "article": {
+    "x": "Our Automation Stopped Backing Up for Three Days. Nothing Told Us. https://fuseddistribution.com/blog/the-automation-that-failed-quietly/"
+  }
+}

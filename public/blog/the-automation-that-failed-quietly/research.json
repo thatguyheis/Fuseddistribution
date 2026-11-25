@@ -1,0 +1,12 @@
+{
+  "slug": "the-automation-that-failed-quietly",
+  "accessedAt": "2026-11-23",
+  "sources": [],
+  "stats": [],
+  "localEvidence": [
+    "git log 5b69f0e1..1be046a0 (16 commits, Jul 14 09:22 to Jul 17 12:20, 2026), run 2026-11-23",
+    "Incident notes docs/superpowers/plans/2026-07-17-pipeline-incident-hardening.md lines 20, 21, 40",
+    "curl result check of https://fuseddistribution.com/blog/ai-graded-its-own-work-wrong-article/ on 2026-11-23: 200 and correct title"
+  ],
+  "notes": "Written by Claude as content owner. Evidence in Fused Tech Reels/Raw/evidence/T-18 - Automation failed quietly/."
+}

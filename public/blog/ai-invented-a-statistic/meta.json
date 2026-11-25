@@ -1,0 +1,33 @@
+{
+  "title": "AI Will Invent a Statistic and Say It With Total Confidence",
+  "slug": "ai-invented-a-statistic",
+  "description": "Our AI wrote a draft with six statistics and no sources. Our checker blocked it and caught five. How to check every number before you post.",
+  "ogDescription": "A real AI draft with six confident, unsourced numbers. Our checker caught five. Here's the habit that catches the sixth.",
+  "date": "2026-11-25",
+  "brand": "tech",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "AI draft line crediting a study by Qualtrics with 86 percent, circled in red",
+  "ctaLine": "No source, no number.",
+  "contentGraphic": {
+    "label": "One AI draft, August 2026",
+    "rows": [
+      {
+        "condition": "Numbers with a company name",
+        "action": "6"
+      },
+      {
+        "condition": "Sources given to the AI",
+        "action": "None"
+      },
+      {
+        "condition": "Caught by our checker",
+        "action": "5 of 6"
+      }
+    ]
+  },
+  "author": "Nick"
+}
