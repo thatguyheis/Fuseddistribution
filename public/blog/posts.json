@@ -1,5 +1,20 @@
 [
   {
+    "slug": "your-ai-doesnt-know-what-day-it-is",
+    "title": "Does your AI know what changed today?",
+    "date": "2026-11-26",
+    "excerpt": "We asked our local AI for today's date and the latest FFmpeg release. It couldn't say. The release page had both in one line.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/your-ai-doesnt-know-what-day-it-is/hero.jpg",
+    "imageAlt": "Local AI reply saying it has no access to the current date, next to the FFmpeg 9.1 release listing"
+  },
+  {
     "slug": "the-automation-that-failed-quietly",
     "title": "Our Automation Stopped Backing Up for Three Days. Nothing Told Us.",
     "date": "2026-11-25",

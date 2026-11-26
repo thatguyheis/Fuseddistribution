@@ -1,0 +1,13 @@
+{
+  "slug": "your-ai-doesnt-know-what-day-it-is",
+  "accessedAt": "2026-11-25",
+  "sources": [
+    {
+      "url": "https://ffmpeg.org/download.html",
+      "quote": "9.1 was released on 2026-11-20. It is the latest stable FFmpeg release from the 9.1 release branch",
+      "accessed": "2026-11-24, rechecked 2026-11-25"
+    }
+  ],
+  "localEvidence": "Fused Tech Reels/Drafts/2026-11-24-approved-three-v3/evidence: prompt.txt, gemma.json (gemma-e2b,gpu, temperature 0, max_tokens 90), ffmpeg-download.html saved copy, evidence card renders",
+  "notes": "Reel rendered 2026-11-24 (approved-three-v3 batch). Blog written and checked by Claude, nightly 2026-11-25."
+}

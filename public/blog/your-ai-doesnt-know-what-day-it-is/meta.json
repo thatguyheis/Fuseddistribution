@@ -2,5 +2,32 @@
   "title": "Does your AI know what changed today?",
   "slug": "your-ai-doesnt-know-what-day-it-is",
   "brand": "tech",
-  "description": "We asked our local AI for the current date and latest FFmpeg release, then checked the release page ourselves."
+  "description": "We asked our local AI for the current date and latest FFmpeg release, then checked the release page ourselves.",
+  "ogDescription": "Our local AI said it couldn't know today's date or the latest FFmpeg version. The release page had both in one line.",
+  "date": "2026-11-26",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Local AI reply saying it has no access to the current date, next to the FFmpeg 9.1 release listing",
+  "ctaLine": "Recent question? Get the date and the link.",
+  "contentGraphic": {
+    "label": "One question, November 24, 2026",
+    "rows": [
+      {
+        "condition": "Asked our local AI",
+        "action": "Today's date and latest FFmpeg"
+      },
+      {
+        "condition": "AI answer",
+        "action": "No date, no version"
+      },
+      {
+        "condition": "Release page",
+        "action": "9.1, released Nov 20, 2026"
+      }
+    ]
+  },
+  "author": "Nick"
 }
