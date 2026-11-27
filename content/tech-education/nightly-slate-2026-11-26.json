@@ -4,7 +4,7 @@
   "selectedAt": "2026-11-23T23:01:04.175801+00:00",
   "selectedBy": "Nick",
   "source": "Fused Tech Reels/Drafts/2026-11-25-topic-options.md",
-  "status": "owner_selected",
+  "status": "published",
   "publishOn": "2026-11-26",
   "targetNewPairs": 2,
   "selection": [
@@ -30,6 +30,7 @@
   "notes": [
     "Nick approved all 10 options on 2026-11-23 and asked to start generation immediately.",
     "Use Hook A exactly. Storyboards for options 1 and 2 are in the source doc.",
-    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published."
+    "Status flow: owner_selected -> staged (built, QA passed, not published) -> published.",
+    "Published by Claude nightly 2026-11-26: T-20 deployed 21:05 (version 446f617f), T-21 deployed 23:21 (version 0fda0c6f). Commits local only until the pre-push gate clears."
   ]
 }
