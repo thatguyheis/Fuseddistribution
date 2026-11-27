@@ -1,0 +1,11 @@
+{
+  "name": "fused-coin-review",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-09",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "fuseddistribution.com/coin-review/*", "zone_name": "fuseddistribution.com" }],
+  "durable_objects": { "bindings": [{ "name": "DAYS", "class_name": "ShiftLog" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ShiftLog"] }],
+  "rules": [{ "type": "Text", "globs": ["**/*.html", "**/*.css", "**/*.client.js"], "fallthrough": true }]
+}

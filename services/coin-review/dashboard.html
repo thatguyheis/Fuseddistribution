@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Coin production desk | Fused Distribution</title><link rel="stylesheet" href="/coin-review/dashboard.css"></head>
+<body><header><div class="frame bar"><div class="brand">Fused <span>Distribution</span></div><span class="role" id="role"></span></div></header>
+<main class="frame"><div class="headline"><div><p class="kicker">Coins &amp; Auctions Since 1994</p><h1>Production desk</h1></div><label>Shift date · Pacific<input type="date" id="day"></label></div>
+<div class="board">
+<section class="log"><div class="section-head"><h2>Daily work log</h2><button id="refresh" class="quiet">Refresh log</button></div><p id="status" role="status">Loading shift…</p>
+<div id="groups"></div></section>
+<aside><h2>Shift guide</h2><h3>Choose five standout lots</h3><p>Start with the highest published estimates in the primary sale. Favor older, individually graded coins in exceptional condition, distinctive varieties and clear images of both faces and the holder. Skip generic bulk lots. Leave missing estimates blank.</p><p><a href="https://auctions.coinssince1994.com/" target="_blank" rel="noreferrer">Open the auction catalog ↗</a></p>
+<details open><summary>Auction workflow v3.1</summary><ol><li>Save the full original gallery, lot URL and source record in the lot’s Raw folder.</li><li>At shift opening, generate two hooks, one topic and two closing questions per lot. Get Nick’s Gate 1 choices.</li><li>Lint the script, fix errors, then build voice, timings and scenes. Run check and assets. Get Nick’s Gate 2 selection.</li><li>Render and run QA. Watch with sound. Verify lot details, captions, credits, closing question and dated outro. Upload the finished MP4 under 25 MB.</li></ol></details>
+<details open><summary>Specialized projects</summary><ul><li>Export a vault intro or dated outro and test it on a lot clip.</li><li>Gather cleared stock for one story. Include sources, rights and credits in the ZIP.</li><li>Cut a captioned short for Under the Loupe, Check Your Change or a Vancouver shop tour.</li></ul></details></aside>
+</div></main>
+<dialog id="editor"><form id="taskForm"><div class="section-head"><p id="slotLabel" class="kicker"></p><button id="close" class="quiet" type="button" aria-label="Close editor">Close</button></div><h2 id="taskHeading">Task details</h2>
+<label>Title<input id="title" required maxlength="160" autocomplete="off"></label><div id="lotFields"><label>Lot number<input id="lot" maxlength="30"></label><label>Official lot URL<input type="url" id="source" maxlength="1500"></label></div>
+<label>Workflow step<select id="stage"></select></label><label>Work notes or handoff<textarea id="notes" rows="2" maxlength="1200"></textarea></label>
+<div id="existing"></div><p id="previous" class="feedback" hidden></p>
+<div id="uploadControls"><label>Finished file · under 25 MB<input type="file" id="file"></label><small id="formats"></small></div>
+<div id="reviewControls"><label>Reviewer feedback<textarea id="feedback" rows="2" maxlength="1200"></textarea></label></div>
+<p id="formMsg" role="status"></p><div class="actions" id="actions"></div></form></dialog>
+<script type="module" src="/coin-review/dashboard.js"></script></body></html>
