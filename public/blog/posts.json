@@ -1,5 +1,20 @@
 [
   {
+    "slug": "swap-the-names-before-you-paste-into-ai",
+    "title": "Swap the Names Before You Paste Into AI",
+    "date": "2026-11-27",
+    "excerpt": "We swapped the names out before asking our AI for a reply. The swap worked. Then the reply told the customer to call her own number.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/swap-the-names-before-you-paste-into-ai/hero.jpg",
+    "imageAlt": "AI reply that says Please call us at [Phone], where [Phone] stands for the customer's own number"
+  },
+  {
     "slug": "are-you-sure-flips-the-ai-answer",
     "title": "I Asked Our AI \"Are You Sure?\" It Said Yes and Changed Its Answer",
     "date": "2026-11-26",

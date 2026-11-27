@@ -1,0 +1,33 @@
+{
+  "title": "Swap the Names Before You Paste Into AI",
+  "slug": "swap-the-names-before-you-paste-into-ai",
+  "brand": "tech",
+  "description": "We swapped a customer's details for placeholders before asking our AI for a reply. The swap worked. The reply put her phone number in the wrong place.",
+  "ogDescription": "No real detail reached our AI. But the reply said \"call us at [Phone]\", and [Phone] was the customer's own number.",
+  "date": "2026-11-27",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "AI reply that says Please call us at [Phone], where [Phone] stands for the customer's own number",
+  "ctaLine": "Swap out, read, then swap back.",
+  "contentGraphic": {
+    "label": "One teaching example, November 26, 2026",
+    "rows": [
+      {
+        "condition": "Real details in the request",
+        "action": "0"
+      },
+      {
+        "condition": "AI reply",
+        "action": "\"Please call us at [Phone]\""
+      },
+      {
+        "condition": "After find and replace",
+        "action": "The customer's own number"
+      }
+    ]
+  },
+  "author": "Nick"
+}
