@@ -1,3 +1,4 @@
+import {filePicker,photoHeaders} from '/coin-review/file-picker.js';
 const base = '/coin-review/';
 const $ = id => document.getElementById(id);
 const make = (tag, text, css) => { const el = document.createElement(tag); if (text) el.textContent = text; if (css) el.className = css; return el; };
@@ -67,8 +68,11 @@ if (invite) {
     const btn=make('button',label,secondary?'quiet':'');
     btn.type='submit'; btn.value=name; $('actions').append(btn);
   }
+  const picked=filePicker($('projectFiles'));
+  const isPhoto=file=>file.type.startsWith('image/') || /\.(jpe?g|png|webp|heic|heif|avif)$/i.test(file.name);
   function open(t,desc) {
     selected=t;
+    picked.clear();
     const canEdit=role==='worker' && !['In review','Approved'].includes(t.status);
     $('taskForm').reset(); $('actions').replaceChildren(); $('existing').replaceChildren(); $('formMsg').textContent='';
     $('slotLabel').textContent=desc + ' · ' + t.status;
@@ -88,8 +92,12 @@ if (invite) {
       const reel=t.slot<=5 || $('projectType').value==='Finished video';
       const ready=$('stage').value===finalStage;
       $('hook').required=$('cta').required=canEdit && reel && ready;
-      $('file').accept=reel ? '.mp4' : '.mp4,.mov,.zip,.png,.jpg,.jpeg,.webp';
-      $('formats').textContent=reel ? 'MP4 video' : 'Upload an image, video or ZIP. Bundle multiple raw files and their credits in one ZIP.';
+      $('file').multiple=t.slot>5;
+      $('file').onchange=()=>{
+        if(t.slot>5){picked.add($('file').files);$('file').value='';}
+      };
+      $('file').accept=t.slot<=5 ? '.mp4' : (reel ? '.mp4,image/*' : '.mp4,.mov,.zip,image/*');
+      $('formats').textContent=reel ? (t.slot<=5 ? 'MP4 video' : 'Choose an MP4 and any supporting photos. You can add more photos before submitting.') : 'Choose multiple photos together or add them in batches. You can also attach a video or ZIP.';
       if (canEdit) {
         $('actions').replaceChildren();
         action(ready ? 'Submit for review' : 'Save unfinished draft', ready ? 'submit':'save');
@@ -126,6 +134,15 @@ if (invite) {
       const link=make('a','Download submitted file'); link.href=src+'&download=1'; $('existing').append(link);
     }
 
+    for(const [index,photo] of (t.photos || []).entries()){
+      const row=make('p');
+      const link=make('a','Photo '+(index+1)+' · '+photo.name);
+      link.href=base+'days/'+day+'/'+t.slot+'/photos?id='+photo.id;
+      link.target='_blank';link.rel='noopener';
+      const download=make('a','Download');
+      download.href=link.href+'&download=1';
+      row.append(link,document.createTextNode(' · '),download);$('existing').append(row);
+    }
     if (!$('reviewControls').hidden) { action('Request changes','changes',true); action('Approve','approve'); }
     $('editor').showModal();
   }
@@ -135,7 +152,7 @@ if (invite) {
     if (!intent || (intent==='publish' && (!$('bufferControls').open || $('bufferControls').hidden))) return;
     const route='/'+selected.slot;
     const send=(path,body)=>api(route+path,{method:'POST',headers:{'Content-Type':'application/json','If-Match':String(selected.version)},body:JSON.stringify(body)});
-    busy=true; $('bufferControls').querySelector('button').disabled=true; $('actions').querySelectorAll('button').forEach(b=>b.disabled=true); $('close').disabled=true;
+    busy=true; $('file').disabled=true; $('projectFiles').inert=true; $('bufferControls').querySelector('button').disabled=true; $('actions').querySelectorAll('button').forEach(b=>b.disabled=true); $('close').disabled=true;
     try {
       if (intent==='publish') {
         const due = new Date($('due').value);
@@ -153,10 +170,21 @@ if (invite) {
       } else if (['changes','approve'].includes(intent)) {
         await send('/decision',{status:intent==='approve'?'Approved':'Changes requested', feedback:$('feedback').value});
       } else {
-        const f=$('file').files[0];
-        if (intent==='submit' && !f && !selected.media) throw Error('Choose the finished file to submit.');
-        if (f && (f.size<12 || f.size>=25000000)) throw Error('Choose a file smaller than 25 MB.');
+        const entries=picked.entries;
+        const photos=entries.filter(p=>isPhoto(p.file));
+        const primary=entries.filter(p=>!isPhoto(p.file));
+        if(primary.length>1)throw Error('Choose one video or ZIP alongside your photos.');
+        const f=selected.slot<=5 ? $('file').files[0] : primary[0]?.file;
+        const reel=selected.slot<=5 || $('projectType').value==='Finished video';
+        if(intent==='submit' && reel && !(f ? /\.mp4$/i.test(f.name) : selected.type==='video/mp4'))throw Error('Choose the finished MP4 to submit.');
+        if(intent==='submit' && !f && !selected.media && !photos.length && !selected.photos?.length)throw Error('Choose files to submit.');
+        if([...(f?[f]:[]),...photos.map(p=>p.file)].some(file=>file.size<1 || file.size>=25000000))throw Error('Each file must be smaller than 25 MB.');
         selected=await send('',Object.fromEntries(['title','lot','hook','cta','notes','stage','projectType'].map(k=>[k,$(k).value])));
+        for(const [index,item] of photos.entries()){
+          if(selected.photos?.some(p=>p.id===item.id))continue;
+          $('formMsg').textContent='Uploading photo '+(index+1)+' of '+photos.length+'…';
+          selected=await api(route+'/photos?id='+item.id,{method:'POST',headers:{...photoHeaders(item),'If-Match':String(selected.version)},body:item.file});
+        }
         if (f) {
           const types={mp4:'video/mp4',mov:'video/quicktime',zip:'application/zip',jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp'};
           $('formMsg').textContent='Uploading file…';
@@ -167,7 +195,7 @@ if (invite) {
       }
       $('editor').close(); await load();
     } catch(err) { $('formMsg').textContent=err.message; }
-    finally { busy=false; $('bufferControls').querySelector('button').disabled=$('bufferControls').hidden; $('close').disabled=false; $('actions').querySelectorAll('button').forEach(b=>b.disabled=false); }
+    finally { busy=false; $('file').disabled=false; $('projectFiles').inert=false; $('bufferControls').querySelector('button').disabled=$('bufferControls').hidden; $('close').disabled=false; $('actions').querySelectorAll('button').forEach(b=>b.disabled=false); }
   };
   $('editor').addEventListener('cancel',e=>{if (busy) e.preventDefault();});
   $('editor').addEventListener('close',()=> { if (!$('editor').open) $('existing').replaceChildren(); });

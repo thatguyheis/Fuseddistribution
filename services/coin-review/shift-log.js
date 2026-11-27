@@ -1,3 +1,4 @@
+import { readPhoto, storePhoto, servePhoto, validPhotoId } from './photos.js';
 import { publishPlan, stageVideo, schedule, allScheduled, videoWorkflow } from './publishing.js';
 const maxFile = 25000000;
 const chunkSize = 512 * 1024;
@@ -64,12 +65,30 @@ export class ShiftLog {
     if (!slot && request.method === 'GET') return Response.json({ role, tasks: this.list() });
     if (!slot) return reply('Not found', 404);
     const task = this.get(slot);
+    if (action === 'photos') {
+      if (slot<=5) return reply('Photos are available for specialized projects.',400);
+      const url=new URL(request.url);
+      const id=url.searchParams.get('id');
+      if (!validPhotoId(id))return reply('Invalid photo identifier.',400);
+      const existing=task.photos?.find(p=>p.id===id);
+      if(request.method==='GET')return servePhoto(this.sql,String(slot),existing,url.searchParams.has('download'));
+      if(request.method!=='POST' || role!=='worker')return reply('Forbidden',403);
+      if(existing)return Response.json(task);
+      if(!task.title || ['Approved','In review'].includes(task.status) || String(task.version)!==request.headers.get('If-Match'))return conflict();
+      const upload=await readPhoto(request,id,maxFile-1);
+      if(upload instanceof Response)return upload;
+      if(this.get(slot).version!==task.version)return conflict();
+      return this.storage.transactionSync(()=>{
+        storePhoto(this.sql,String(slot),upload);
+        return this.save({...task,photos:[...(task.photos || []),upload.info]});
+      });
+    }
     if (request.method === 'GET' && action === 'media') return this.play(task, request);
     if (request.method !== 'POST' || (['decision','publish'].includes(action) ? role !== 'reviewer' : role !== 'worker')) return reply('Forbidden', 403);
     if (String(task.version) !== request.headers.get('If-Match')) return conflict();
     if (action === 'media') return this.upload(task, request);
     if (action === 'submit') {
-      if (!task.media || task.stage !== final || ['Approved','In review'].includes(task.status)) return conflict();
+      if ((!task.media && !task.photos?.length) || task.stage !== final || ['Approved','In review'].includes(task.status)) return conflict();
       if ((task.slot <= 5 || task.projectType === 'Finished video') && task.type !== 'video/mp4') return reply('Attach a finished MP4.', 400);
       return this.save({ ...task, status:'In review' });
     }

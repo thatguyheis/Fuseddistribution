@@ -1,3 +1,4 @@
+import {filePicker,photoHeaders} from '/coin-review/file-picker.js';
 const base='/coin-review/highlights/';
 const el=id=>document.getElementById(id);
 const fullInvite=()=>/^#[A-Za-z0-9_-]{43}$/.test(location.hash);
@@ -13,36 +14,43 @@ if (location.pathname.startsWith(base)) {
     } catch(e) { document.querySelector('main').textContent=e.message; }
   } else if (el('highlightForm')) {
     const form=el('highlightForm');
-    let photo=null, id=crypto.randomUUID();
-    function pick(file) {
-      photo=file || null;
-      el('photoName').textContent=photo ? photo.name : '';
-      el('removePhoto').hidden=!photo;
-      id=crypto.randomUUID();
+    let id=crypto.randomUUID(), finalAttempt=false;
+    function edited() {
+      if(finalAttempt){id=crypto.randomUUID();finalAttempt=false;}
     }
+    const picked=filePicker(el('staffFiles'),edited);
     el('cameraButton').onclick=()=>el('camera').click();
     el('fileButton').onclick=()=>el('library').click();
     for(const input of [el('camera'),el('library')]) input.onchange=()=>{
-      if(input.files[0])pick(input.files[0]);
+      picked.add(input.files);
       input.value='';
     };
-    el('removePhoto').onclick=()=>pick(null);
-    form.oninput=()=>{id=crypto.randomUUID();};
+    form.oninput=edited;
     form.onsubmit=async event=>{
       event.preventDefault();
       const data=new FormData(form);
       const message=el('formStatus');
-      if(!String(data.get('highlight')).trim() && !photo){message.textContent='Describe the highlight or attach a photo.';return;}
-      if(photo){
-        if(photo.size>12*1024*1024){message.textContent='Choose a photo under 12 MB.';return;}
-        data.set('photo',photo);
-      }
+      const photos=picked.entries;
+      if(!String(data.get('highlight')).trim() && !photos.length){message.textContent='Describe the highlight or attach photos.';return;}
+      if(photos.some(p=>p.file.size>12*1024*1024)){message.textContent='Each photo must be 12 MiB or smaller.';return;}
+      data.set('photoIds',JSON.stringify(photos.map(p=>p.id)));
       const controls=Array.from(form.elements);
       controls.forEach(c=>c.disabled=true);
       message.textContent='Sending request…';
       try {
+        for(const [index,item] of photos.entries()){
+          if(item.uploadedFor===id)continue;
+          message.textContent='Uploading photo '+(index+1)+' of '+photos.length+'…';
+          const response=await fetch(base+'requests/'+id+'/photos/'+item.id,{method:'PUT',headers:photoHeaders(item),body:item.file});
+          if(!response.ok)throw Error(item.file.name+' · '+await response.text());
+          item.uploadedFor=id;
+        }
+        finalAttempt=true;
         const r=await fetch(base+'requests/'+id,{method:'POST',body:data});
-        if(!r.ok)throw Error(await r.text() || 'The request could not be sent. Please retry.');
+        if(!r.ok){
+          if(r.status===409)for(const item of photos)delete item.uploadedFor;
+          throw Error(await r.text() || 'The request could not be sent. Please retry.');
+        }
         const receipt=await r.json();
         el('reference').textContent='The production desk received your request. Reference '+receipt.id.slice(0,8).toUpperCase()+'.';
         form.hidden=true;el('confirmation').hidden=false;el('another').focus();
@@ -50,7 +58,7 @@ if (location.pathname.startsWith(base)) {
       finally{controls.forEach(c=>c.disabled=false);}
     };
     el('another').onclick=()=>{
-      form.reset();pick(null);el('formStatus').textContent='';
+      form.reset();picked.clear();id=crypto.randomUUID();finalAttempt=false;el('formStatus').textContent='';
       form.hidden=false;el('confirmation').hidden=true;form.elements.role.focus();
     };
   }
@@ -72,8 +80,12 @@ if (location.pathname.startsWith(base)) {
     if(item.deadline)add('p','Content deadline · '+display(item.deadline,item.deadlineTime),entry);
     const submitted=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',dateStyle:'medium',timeStyle:'short'}).format(new Date(item.submitted));
     add('small','Received '+submitted+' PT · '+item.id.slice(0,8).toUpperCase(),entry);
-    if(item.photo) {
-      const link=add('a','Open submitted photo',entry);link.href=base+'requests/'+item.id+'/photo';link.target='_blank';link.rel='noopener';
+    const photos=item.photos?.length ? item.photos : (item.photo?[item.photo]:[]);
+    for(const [index,photo] of photos.entries()){
+      const label=photo.name ? 'Photo '+(index+1)+' · '+photo.name : 'Open submitted photo';
+      const link=add('a',label,entry);
+      link.href=base+'requests/'+item.id+(photo.id?'/photos/'+photo.id:'/photo');
+      link.target='_blank';link.rel='noopener';
     }
   }
   async function load(append=false) {

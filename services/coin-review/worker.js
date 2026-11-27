@@ -1,3 +1,4 @@
+import filePickerClient from './file-picker.client.js';
 import highlightForm from './highlight-form.html';
 import highlightsClient from './highlights.client.js';
 import { HighlightRequests, validRequestId } from './highlights.js';
@@ -67,14 +68,16 @@ async function highlightRoute(request, env, url, deskRole) {
     internal = new Request('https://requests.internal/list'+url.search);
   } else if (segments[0] === 'requests' && validRequestId(segments[1])) {
     const id = segments[1];
-    if (segments.length === 2 && request.method === 'POST') {
+    const photoId = segments[3];
+    const uploadPhoto = segments.length === 4 && segments[2] === 'photos' && validRequestId(photoId);
+    if ((segments.length === 2 && request.method === 'POST') || (uploadPhoto && request.method === 'PUT')) {
       target = id;
       // Forward only the multipart body and its transport headers.
       const contentHeaders = new Headers();
-      for (const k of ['Content-Type','Content-Length']) if (request.headers.has(k)) contentHeaders.set(k,request.headers.get(k));
-      internal = new Request('https://requests.internal/'+id,{method:'POST',headers:contentHeaders,body:request.body});
-    } else if (segments.length === 3 && segments[2] === 'photo' && request.method === 'GET' && deskRole) {
-      target = id; internal = new Request('https://requests.internal/'+id);
+      for (const k of ['Content-Type','Content-Length','X-Photo-Name']) if (request.headers.has(k)) contentHeaders.set(k,request.headers.get(k));
+      internal = new Request('https://requests.internal/'+id+(uploadPhoto?'?photo='+photoId:''),{method:request.method,headers:contentHeaders,body:request.body});
+    } else if (((segments.length === 3 && segments[2] === 'photo') || uploadPhoto) && request.method === 'GET' && deskRole) {
+      target = id; internal = new Request('https://requests.internal/'+id+(uploadPhoto?'?photo='+photoId:''));
     }
   }
   if (!internal) return respond('Unavailable with this link.',403);
@@ -93,6 +96,7 @@ export default {
     const method = request.method;
     if (method !== 'GET' && request.headers.get('Origin') !== url.origin) return respond('Forbidden', 403);
     if (method === 'GET' && path === root + 'dashboard.css') return respond(css, 200, 'text/css');
+    if (method === 'GET' && path === root + 'file-picker.js') return respond(filePickerClient,200,'text/javascript');
     if (method === 'GET' && path === root + 'dashboard.js') return respond(client, 200, 'text/javascript');
     if (path === root + 'session' && method === 'POST') {
       const token = request.headers.get('X-Invite');
@@ -129,7 +133,7 @@ export default {
       try { await checkPublisher(env); return respond('Buffer publisher connected', 200); }
       catch { return respond('Buffer publisher unavailable', 503); }
     }
-    const route = /^\/coin-review\/days\/(\d{4}-\d{2}-\d{2})(?:\/([1-8])(?:\/(media|decision|publish|submit))?)?$/.exec(path);
+    const route = /^\/coin-review\/days\/(\d{4}-\d{2}-\d{2})(?:\/([1-8])(?:\/(media|decision|publish|submit|photos))?)?$/.exec(path);
     if (!route || !validDay(route[1])) return respond('Not found', 404);
     const trusted = new Request(request);
     trusted.headers.set('X-Desk-Role', role);

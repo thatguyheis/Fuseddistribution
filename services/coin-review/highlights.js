@@ -1,3 +1,4 @@
+import { photoFormat, validPhotoId, readPhoto, storePhoto, servePhoto } from './photos.js';
 // Each request keeps its photo in its own object. A separate indexed object lists
 // all completed requests independently of shift dates, daily slots and photo sizes.
 const maxPhoto = 12 * 1024 * 1024;
@@ -23,15 +24,6 @@ export function parseDetails(form, hasPhoto) {
   }
   return details;
 }
-function photoFormat(bytes) {
-  const tag = (a,b) => String.fromCharCode(...bytes.subarray(a,b));
-  if (bytes[0]===255 && bytes[1]===216 && bytes[2]===255) return ['image/jpeg','jpg'];
-  if ([137,80,78,71,13,10,26,10].every((v,i)=>bytes[i]===v)) return ['image/png','png'];
-  if (tag(0,4)==='RIFF' && tag(8,12)==='WEBP') return ['image/webp','webp'];
-  if (tag(4,8)==='ftyp' && ['heic','heix','hevc','hevx','mif1','msf1'].includes(tag(8,12))) return ['image/heif','heif'];
-  if (tag(4,8)==='ftyp' && ['avif','avis'].includes(tag(8,12))) return ['image/avif','avif'];
-  return null;
-}
 export class HighlightRequests {
   constructor(ctx, env) { this.storage = ctx.storage; this.sql = ctx.storage.sql; this.env = env; }
   inbox() {
@@ -54,7 +46,13 @@ export class HighlightRequests {
     }
     if (!validRequestId(url.pathname.slice(1))) return fail('Not found.',404);
     this.sql.exec('CREATE TABLE IF NOT EXISTS submission (id INTEGER PRIMARY KEY, data TEXT NOT NULL)');
-    if (request.method === 'GET') return this.photo();
+    const photoId = url.searchParams.get('photo');
+    if (request.method === 'GET') {
+      if (!photoId) return this.photo();
+      const info=this.details()?.photos?.find(p=>p.id===photoId);
+      return servePhoto(this.sql,'request',info);
+    }
+    if (request.method === 'PUT' && validPhotoId(photoId)) return this.stagePhoto(request,photoId);
     const id = url.pathname.slice(1);
     let data = this.details();
     if (!data) {
@@ -64,18 +62,24 @@ export class HighlightRequests {
       try { form = await request.formData(); } catch { return fail('Invalid request form.'); }
       const photo = form.get('photo');
       if (photo && (typeof photo === 'string' || !photo.size || photo.size > maxPhoto)) return fail('Choose a photo under 12 MB.',413);
+      let ids;
+      try { ids=JSON.parse(form.get('photoIds') || '[]'); } catch {return fail('Invalid photo selection.');}
+      if (!Array.isArray(ids) || !ids.every(validPhotoId) || new Set(ids).size!==ids.length || (photo && ids.length)) return fail('Invalid photo selection.');
       let fields;
-      try { fields = parseDetails(form, Boolean(photo)); } catch (error) { return fail(error.message); }
+      try { fields = parseDetails(form, Boolean(photo || ids.length)); } catch (error) { return fail(error.message); }
       const bytes = photo ? new Uint8Array(await photo.arrayBuffer()) : null;
       const format = bytes && photoFormat(bytes);
       if (photo && !format) return fail('Choose a JPEG, PNG, WebP, HEIF or AVIF photo.',415);
       // A single synchronous transaction commits the metadata and every part of the
       // photo. An interrupted index update can be retried with the same request ID.
       this.sql.exec('CREATE TABLE IF NOT EXISTS photo (part INTEGER PRIMARY KEY, bytes BLOB NOT NULL)');
+      this.prepareStaging();
+      const photos=ids.map(pid=>this.sql.exec('SELECT meta FROM staged_photos WHERE id=?',pid).toArray()[0]).map(row=>row && JSON.parse(row.meta));
+      if(photos.some(p=>!p))return fail('A photo upload is incomplete. Please resend.',409);
       data = this.storage.transactionSync(() => {
         const existing = this.details();
         if (existing) return existing;
-        const entry = {...fields,id,submitted:new Date().toISOString(),photo:format ? {type:format[0],extension:format[1],size:bytes.length} : null};
+        const entry = {...fields,id,photos,submitted:new Date().toISOString(),photo:format ? {type:format[0],extension:format[1],size:bytes.length} : null};
         if (bytes) for(let pos=0;pos<bytes.length;pos+=524288) this.sql.exec('INSERT INTO photo VALUES(?,?)',pos/524288,bytes.slice(pos,pos+524288).buffer);
         this.sql.exec('INSERT INTO submission VALUES(1,?)',JSON.stringify(entry));
         return entry;
@@ -86,13 +90,43 @@ export class HighlightRequests {
     if (!registered.ok) return fail('Could not complete the handoff. Please retry.',503);
     return Response.json({id:data.id},{status:201});
   }
+  prepareStaging() {
+    this.sql.exec('CREATE TABLE IF NOT EXISTS staged_photos(id TEXT PRIMARY KEY,meta TEXT NOT NULL)');
+  }
+  async stagePhoto(request,id) {
+    const saved=this.details();
+    if(saved)return saved.photos?.some(p=>p.id===id) ? new Response(null,{status:204}) : fail('This request was already submitted.',409);
+    const upload=await readPhoto(request,id,maxPhoto);
+    if(upload instanceof Response)return upload;
+    await this.storage.setAlarm(Date.now()+86400000);
+    return this.storage.transactionSync(()=>{
+      if(this.details())return fail('This request was already submitted.',409);
+      this.prepareStaging();
+      if(!this.sql.exec('SELECT 1 FROM staged_photos WHERE id=?',id).toArray().length) {
+        storePhoto(this.sql,'request',upload);
+        this.sql.exec('INSERT INTO staged_photos VALUES(?,?)',id,JSON.stringify(upload.info));
+      }
+      return new Response(null,{status:204});
+    });
+  }
+  alarm() {
+    const kept=this.details()?.photos || [];
+    this.prepareStaging();
+    const ids=new Set(kept.map(photo=>photo.id));
+    this.storage.transactionSync(()=>{
+      for(const row of this.sql.exec('SELECT id FROM staged_photos').toArray()) {
+        if(!ids.has(row.id))this.sql.exec('DELETE FROM photo_blobs WHERE owner=? AND id=?','request',row.id);
+      }
+      this.sql.exec('DELETE FROM staged_photos');
+    });
+  }
   details() {
     const row = this.sql.exec('SELECT data FROM submission WHERE id=1').toArray()[0];
     return row ? JSON.parse(row.data) : null;
   }
   photo() {
     const data = this.details();
-    if (!data?.photo) return fail('Photo unavailable.',404);
+    if (!data?.photo) return servePhoto(this.sql,'request',data?.photos?.[0]);
     const sql = this.sql;
     let offset = 0;
     const body = new ReadableStream({pull(controller){

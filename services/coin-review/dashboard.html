@@ -19,7 +19,7 @@
 <label>Hook (copy and paste)<textarea id="hook" rows="2" maxlength="1000"></textarea></label><label>CTA (copy and paste)<textarea id="cta" rows="2" maxlength="1000"></textarea></label>
 <label>Work notes or handoff<textarea id="notes" rows="2" maxlength="1200"></textarea></label>
 <div id="existing"></div><p id="previous" class="feedback" hidden></p>
-<div id="uploadControls"><label>File · under 25 MB<input type="file" id="file"></label><small id="formats"></small></div>
+<div id="uploadControls"><label>File · under 25 MB<input type="file" id="file"></label><small id="formats"></small><ul id="projectFiles" class="file-list"></ul></div>
 <div id="reviewControls"><label>Reviewer feedback<textarea id="feedback" rows="2" maxlength="1200"></textarea></label></div>
 <p class="receipt" id="receipt" hidden></p>
 <details class="buffer" id="bufferControls"><summary>Schedule with Buffer</summary><label>Post caption<textarea id="caption" rows="3" maxlength="2200"></textarea></label><fieldset class="channels"><legend>Channels</legend><label><input type="checkbox" value="instagram"> Instagram</label><label><input type="checkbox" value="facebook"> Facebook</label><label><input type="checkbox" value="youtube"> YouTube</label></fieldset><label>YouTube title<input id="ytTitle" maxlength="100"></label><label>Publish time (<span id="timezone"></span>)<input type="datetime-local" id="due"></label><small>Choose a time at least 15 minutes ahead and within four days and 23 hours.</small><div class="actions"><button type="submit" value="publish">Approve and push to Buffer</button></div></details>
