@@ -6,7 +6,7 @@
   "preview_urls": false,
   "services": [{ "binding": "PUBLISHER", "service": "fused-client-instructions" }],
   "routes": [{ "pattern": "fuseddistribution.com/coin-review/*", "zone_name": "fuseddistribution.com" }],
-  "durable_objects": { "bindings": [{ "name": "DAYS", "class_name": "ShiftLog" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ShiftLog"] }],
+  "durable_objects": { "bindings": [{ "name": "DAYS", "class_name": "ShiftLog" }, { "name": "HIGHLIGHTS", "class_name": "HighlightRequests" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ShiftLog"] }, { "tag": "v2", "new_sqlite_classes": ["HighlightRequests"] }],
   "rules": [{ "type": "Text", "globs": ["**/*.html", "**/*.css", "**/*.client.js"], "fallthrough": true }]
 }

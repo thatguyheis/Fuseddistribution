@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Request a video highlight | Coins &amp; Auctions Since 1994</title><link rel="stylesheet" href="/coin-review/dashboard.css"></head>
+<body><header><div class="frame bar"><div class="brand">Fused <span>Distribution</span></div></div></header>
+<main class="frame intake"><p class="kicker">Coins &amp; Auctions Since 1994</p><h1>Request a video highlight</h1><p>Tell the social team what you’d like featured in a video or reel, or send a photo from the shop.</p>
+<form id="highlightForm" class="log">
+<div class="field-pair"><label>Your role<select name="role" required><option value="">Choose your role</option><option>Streamer</option><option>Back office</option><option>Social media</option><option>Other</option></select></label>
+<label>Your name or handle (optional)<input name="name" maxlength="100" autocomplete="name"></label></div>
+<label>What would you like highlighted?<textarea name="highlight" rows="3" maxlength="2400" placeholder="A coin, show segment, viewer question or moment to capture"></textarea></label>
+<fieldset><legend>Photo</legend><p>Add a photo, a written request, or both.</p>
+<div class="photo-actions"><button id="cameraButton" type="button" class="quiet">Take a photo</button><button id="fileButton" type="button" class="quiet">Choose a photo</button><button type="button" id="removePhoto" class="quiet" hidden>Remove photo</button></div>
+<input hidden type="file" id="camera" accept="image/*" capture="environment"><input hidden type="file" id="library" accept="image/*"><p id="photoName" role="status"></p></fieldset>
+<div class="field-pair"><label>Content deadline (optional)<input name="deadline" type="date"></label><label>Deadline time (Pacific, optional)<input name="deadlineTime" type="time"></label></div>
+<fieldset><legend>Show details (optional)</legend><label>Show name<input name="showName" maxlength="160"></label>
+<label>Streaming platform<input name="platform" maxlength="100" list="platforms" placeholder="Choose or type a platform"><datalist id="platforms"><option value="Whatnot"><option value="TikTok LIVE"><option value="YouTube Live"><option value="Facebook Live"><option value="Instagram Live"></datalist></label>
+<div class="field-pair"><label>Show date<input type="date" name="showDate"></label><label>Show time (Pacific)<input type="time" name="showTime"></label></div></fieldset>
+<p id="formStatus" role="status"></p><button type="submit">Send highlight request</button></form>
+<section class="log" id="confirmation" hidden aria-live="polite"><h2>Request received</h2><p id="reference"></p><button type="button" id="another" class="quiet">Send another request</button></section></main>
+<script type="module" src="/coin-review/highlights/app.js"></script></body></html>

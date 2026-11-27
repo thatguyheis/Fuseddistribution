@@ -1,3 +1,6 @@
+import highlightForm from './highlight-form.html';
+import highlightsClient from './highlights.client.js';
+import { HighlightRequests, validRequestId } from './highlights.js';
 import guide from './guide.html';
 import workflowPanel from './workflow-panel.html';
 import { checkPublisher, workflowArchive } from './publishing.js';
@@ -6,7 +9,7 @@ import css from './dashboard.css';
 import client from './dashboard.client.js';
 import { ShiftLog } from './shift-log.js';
 
-export { ShiftLog };
+export { ShiftLog, HighlightRequests };
 const root = '/coin-review/';
 const cookieName = '__Secure-coin_review';
 const encoder = new TextEncoder();
@@ -34,6 +37,55 @@ function validDay(day) {
   const parsed = new Date(day + 'T12:00:00Z');
   return Number.isFinite(+parsed) && parsed.toISOString().slice(0, 10) === day;
 }
+const intake = root + 'highlights/';
+const staffCookie = '__Secure-coin_highlights';
+function cookieValue(request, name) {
+  const prefix = name + '=';
+  return (request.headers.get('Cookie') || '').split(';').map(s => s.trim()).find(s => s.startsWith(prefix))?.slice(prefix.length);
+}
+function validStaffKey(candidate, env) {
+  return typeof env.HIGHLIGHT_INVITE === 'string' && /^[A-Za-z0-9_-]{43}$/.test(candidate || '') && candidate === env.HIGHLIGHT_INVITE;
+}
+async function highlightRoute(request, env, url, deskRole) {
+  const path = url.pathname.slice(intake.length);
+  if (path === 'app.js' && request.method === 'GET') return respond(highlightsClient,200,'text/javascript');
+  if (path === 'session' && request.method === 'POST') {
+    const token = request.headers.get('X-Invite');
+    if (!validStaffKey(token,env)) return respond('Invalid staff invitation.',403);
+    return respond(null,204,'text/plain',{'Set-Cookie':staffCookie+'='+token+'; Secure; HttpOnly; SameSite=Strict; Path='+intake+'; Max-Age=43200'});
+  }
+  const canSubmit = deskRole || validStaffKey(cookieValue(request,staffCookie),env);
+  if (!path && request.method === 'GET') {
+    const access = shell.replace('/coin-review/dashboard.js',intake+'app.js').replace('the review desk','the highlight request form');
+    return respond(canSubmit ? highlightForm : access,200,'text/html; charset=utf-8');
+  }
+  if (!canSubmit) return respond('Open your staff request link to continue.',403);
+  const segments = path.split('/');
+  let target, internal;
+  if (path === 'inbox' && request.method === 'GET' && deskRole) {
+    target = 'inbox';
+    internal = new Request('https://requests.internal/list'+url.search);
+  } else if (segments[0] === 'requests' && validRequestId(segments[1])) {
+    const id = segments[1];
+    if (segments.length === 2 && request.method === 'POST') {
+      target = id;
+      // Forward only the multipart body and its transport headers.
+      const contentHeaders = new Headers();
+      for (const k of ['Content-Type','Content-Length']) if (request.headers.has(k)) contentHeaders.set(k,request.headers.get(k));
+      internal = new Request('https://requests.internal/'+id,{method:'POST',headers:contentHeaders,body:request.body});
+    } else if (segments.length === 3 && segments[2] === 'photo' && request.method === 'GET' && deskRole) {
+      target = id; internal = new Request('https://requests.internal/'+id);
+    }
+  }
+  if (!internal) return respond('Unavailable with this link.',403);
+  try {
+    const store = env.HIGHLIGHTS.get(env.HIGHLIGHTS.idFromName(target));
+    const result = await store.fetch(internal);
+    const output = new Response(result.body,result);
+    for (const [key,value] of Object.entries(headers)) output.headers.set(key,value);
+    return output;
+  } catch { return respond('The highlight inbox is unavailable. Please retry.',503); }
+}
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -47,9 +99,13 @@ export default {
       if (!await roleFor(token, env)) return respond('This invitation is invalid or has expired.', 403);
       return respond(null, 204, 'text/plain', { 'Set-Cookie': cookieName + '=' + token + '; Secure; HttpOnly; SameSite=Strict; Path=' + root + '; Max-Age=43200' });
     }
-    const cookie = (request.headers.get('Cookie') || '').split(';').map(s => s.trim()).find(s => s.startsWith(cookieName + '='));
-    const role = await roleFor(cookie?.slice(cookieName.length + 1), env);
-    if (method === 'GET' && path === root) return respond(role ? page.replace('<!-- workflow panel -->', role === 'worker' ? workflowPanel : '') : shell, 200, 'text/html; charset=utf-8');
+    const role = await roleFor(cookieValue(request,cookieName),env);
+    if (path.startsWith(intake)) return highlightRoute(request,env,url,role);
+    if (method === 'GET' && path === root) {
+      const invitation = /^[A-Za-z0-9_-]{43}$/.test(env.HIGHLIGHT_INVITE || '') ? intake+'#'+env.HIGHLIGHT_INVITE : intake;
+      const deskPage = role && page.replace('<!-- workflow panel -->',role === 'worker' ? workflowPanel : '').replace('<!-- staff invitation -->',invitation);
+      return respond(deskPage || shell,200,'text/html; charset=utf-8');
+    }
     if (!role) return respond('Open your full invitation link to continue.', 403);
     if (path === root + 'workflow' || path === root + 'workflow/archive') {
       if (role !== 'worker') return respond('Sam’s submission link is required.', 403);
