@@ -14,6 +14,7 @@ test('partial retry keeps receipts and reuses the staged video for outstanding c
   const youtube = {service:'youtube',status:'scheduled',post_id:'first'};
   const publication = {videoId:'same-video',posts:[youtube,{service:'facebook',status:'rejected'}]};
   const env = {C1994_PUBLISH_TOKEN:'test',PUBLISHER:{async fetch(req) {
+    assert.equal(req.headers.get('host'), new URL(req.url).host);
     const {params} = await req.json();
     assert.deepEqual(params.arguments.channels,['facebook']);
     assert.equal(params.arguments.video_id,publication.videoId);

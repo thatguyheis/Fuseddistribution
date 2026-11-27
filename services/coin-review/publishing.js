@@ -6,7 +6,8 @@ async function rpc(env, method, params) {
   if (!env.PUBLISHER || !env.C1994_PUBLISH_TOKEN) throw Error('Publishing connection is unavailable.');
   const response = await env.PUBLISHER.fetch(new Request(origin + '/mcp', {
     method: 'POST',
-    headers: { Authorization: 'Bearer ' + env.C1994_PUBLISH_TOKEN, 'Content-Type':'application/json', Accept:'application/json, text/event-stream', 'MCP-Protocol-Version':'2025-11-25' },
+    // Service bindings do not synthesize the network Host header checked by the MCP server.
+    headers: { Host: new URL(origin).host, Authorization: 'Bearer ' + env.C1994_PUBLISH_TOKEN, 'Content-Type':'application/json', Accept:'application/json, text/event-stream', 'MCP-Protocol-Version':'2025-11-25' },
     body: JSON.stringify({jsonrpc:'2.0', id:1, method, params})
   }));
   if (!response.ok) throw Error('Publishing service returned HTTP ' + response.status + '.');
