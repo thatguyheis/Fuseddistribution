@@ -101,10 +101,10 @@ The active `c1994` client on the `c1994` publish profile can call `get_video_wor
 
 **Prompt for Sam**
 
-> Use fused_publish to check get_video_workflow_update for this coin project. If an update is available, download it from the same Fused MCP host with my existing FUSED_INSTRUCTIONS_TOKEN in the Authorization bearer header. Verify the SHA256 before extracting it into a new .fused-workflows folder named for the returned version. Read START-HERE.md, run the renderer check from the coin project in my Linux environment, and show me the Lot 876 example stills. Record the installed version after the check passes. Stop at preview.
+> Use fused_publish to check get_video_workflow_update for this coin project. If an update is available, download it from the same Fused MCP host with my existing FUSED_INSTRUCTIONS_TOKEN in the Authorization bearer header. Verify the SHA256 before extracting it into a new .fused-workflows folder named for the returned version. Read START-HERE.md, run the V3.1 check-env from the coin project in my Linux environment, and show me the Lot 870 V3.1 example contact sheet. From now on run lint and check before every render. Record the installed version after the check passes. Stop at preview.
 
 **Releasing the next update**
 
-1. From the repo root run `python3 services/client-instructions/scripts/build-workflow-release.py 'Coins since 1994' /tmp/c1994-release.zip` using a new output filename for each build. The script includes only the client guide, renderer pair, launcher and reference material. It prints the archive SHA256.
+1. From the repo root run `python3 services/client-instructions/scripts/build-workflow-release-v3.1.py 'Coins since 1994' /tmp/c1994-release.zip` (V3.1 since 2026-11-27; the V3 script is kept for rollback) using a new output filename for each build. The script includes only the client guide, renderer pair, launcher and reference material. It prints the archive SHA256.
 2. Upload the archive to private KV under `client-workflows/c1994/<full-sha256>.zip` using `wrangler kv key put --binding REELS_KV --remote --config services/client-instructions/wrangler.jsonc --path <archive> <key>`. Keep the previous object for rollback. The public reel server serves only MP4 paths.
 3. Set `C1994_WORKFLOW_SHA256` in the service config to the new digest and revise the change summary in the tool. Run `npm run client-instructions:test`, deploy the client instructions Worker and verify the authenticated ZIP matches the digest. Downloads are private and use the same bearer header as MCP.

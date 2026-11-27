@@ -90,7 +90,7 @@ function hasWorkflow(client) {
 function workflowRelease(env) {
   const sha256 = env.C1994_WORKFLOW_SHA256;
   if (!/^[a-f0-9]{64}$/.test(sha256 ?? "")) throw new ServiceError(503, "Workflow release is unavailable.");
-  const version = `v3-${sha256.slice(0, 12)}`;
+  const version = `v3.1-${sha256.slice(0, 12)}`;
   const path = `/v1/workflows/c1994/${sha256}.zip`;
   return { sha256, version, path, key: `client-workflows/c1994/${sha256}.zip` };
 }
@@ -121,14 +121,14 @@ function server(request, env, requestId, client) {
       (args, current) => postStatus(args, current, env));
     if (hasWorkflow(client)) {
       publishTool("get_video_workflow_update",
-        "Check the approved Coins & Auctions V3 video workflow. Pass installed_version when known. To install an update, GET the ZIP with your existing Fused bearer credential, verify its SHA256, and extract into a new version folder. Read START-HERE.md.",
+        "Check the approved Coins & Auctions V3.1 video workflow. Pass installed_version when known. To install an update, GET the ZIP with your existing Fused bearer credential, verify its SHA256, and extract into a new version folder. Read START-HERE.md.",
         z.strictObject({ installed_version: z.string().trim().min(1).max(80).optional() }),
         (args, current) => {
           if (!hasWorkflow(current)) throw new ServiceError(403, "Workflow access is inactive.");
           const release = workflowRelease(env);
           const status = args.installed_version === release.version ? "current" : "update_available";
           const result = { status, version: release.version, sha256: release.sha256,
-            changes: "Archival V3 visuals, word timed captions, Linux preview support and a Lot 876 example." };
+            changes: "V3.1: lint and check gates that block renders until they pass (filler, hedging, closing call to action, cutouts with no white space, context photos, no empty frames, map only for spoken places, red circle, variety), automatic cutouts, new cutout scenes and whip and zoom transitions, and a Lot 870 example." };
           if (status === "update_available") result.download_url = origin + release.path;
           return result;
         }, { readOnlyHint: true, destructiveHint: false, idempotentHint: true });
