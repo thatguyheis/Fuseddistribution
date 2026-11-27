@@ -1,0 +1,33 @@
+{
+  "title": "I Asked Our AI \"Are You Sure?\" It Said Yes and Changed Its Answer",
+  "slug": "are-you-sure-flips-the-ai-answer",
+  "brand": "tech",
+  "description": "We asked our local AI ten questions, then asked \"are you sure?\" every time. Every reply started with the same yes, right or wrong.",
+  "ogDescription": "Our AI said 17 times 24 is 372. Asked \"are you sure?\", it said \"Yes, I am sure\" and changed its answer to 408.",
+  "date": "2026-11-26",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Saved conversation where the local AI answers 372, then says Yes, I am sure and gives 408",
+  "ctaLine": "Check the work, not the confidence.",
+  "contentGraphic": {
+    "label": "Ten questions, November 25, 2026",
+    "rows": [
+      {
+        "condition": "First answers right",
+        "action": "9 of 10"
+      },
+      {
+        "condition": "Right answers changed after \"are you sure?\"",
+        "action": "0 of 9"
+      },
+      {
+        "condition": "Replies that began \"Yes, I am sure\"",
+        "action": "10 of 10"
+      }
+    ]
+  },
+  "author": "Nick"
+}

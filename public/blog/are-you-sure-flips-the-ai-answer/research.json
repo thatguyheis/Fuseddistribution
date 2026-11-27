@@ -1,0 +1,13 @@
+{
+  "slug": "are-you-sure-flips-the-ai-answer",
+  "accessedAt": "2026-11-26",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2310.13548",
+      "quote": "five state-of-the-art AI assistants consistently exhibit sycophancy across four varied free-form text-generation tasks",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "localEvidence": "Fused Tech Reels/Raw/evidence/T-21 - Are you sure flips the answer: temp0/runs.jsonl, temp0/settings.json, results.md (gemma-e2b,gpu, temperature 0, max_tokens 160, 2026-11-25 22:02 PST)",
+  "notes": "Evidence and draft 2026-11-25. Voiced, rendered and published by Claude nightly 2026-11-26."
+}
