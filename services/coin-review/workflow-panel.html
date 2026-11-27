@@ -1,0 +1,14 @@
+<section class="workflow-panel" aria-labelledby="workflowHeading">
+  <div><h2 id="workflowHeading">Video generation workflow</h2><p id="workflowSummary" role="status">Checking the Fused release…</p></div>
+  <button type="button" id="workflowCheck" aria-haspopup="dialog">Check for updates</button>
+</section>
+<dialog id="workflowDialog" aria-labelledby="workflowTitle">
+  <div class="section-head"><h2 id="workflowTitle">Video workflow setup</h2><button type="button" id="workflowClose" class="quiet">Close</button></div>
+  <p id="workflowVersion"></p><p id="workflowChanges"></p>
+  <label for="setupPrompt">One-paste setup instructions</label>
+  <p>Open the Coins &amp; Auctions project in Codex on Sam’s workstation. Paste this prompt into the project chat so it can download the release and check the local installation.</p>
+  <textarea id="setupPrompt" rows="6" readonly></textarea>
+  <div class="actions"><button type="button" id="copySetup">Copy setup prompt</button> <a id="workflowDownload" download>Download ZIP</a></div>
+  <p id="workflowFeedback" role="status"></p>
+  <button type="button" id="confirmInstall" class="quiet">Confirm setup passed on Sam’s workstation</button>
+</dialog>

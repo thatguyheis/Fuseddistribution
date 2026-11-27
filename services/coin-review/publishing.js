@@ -23,6 +23,21 @@ async function tool(env, name, args) {
   if (result.isError) throw Error(text || 'Publishing request declined.');
   return JSON.parse(text);
 }
+export async function videoWorkflow(env, installedVersion) {
+  const result = await tool(env, 'get_video_workflow_update', installedVersion ? {installed_version:installedVersion} : {});
+  if (!['current','update_available'].includes(result.status) || !/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,79}$/.test(result.version || '') ||
+      !/^[a-f0-9]{64}$/.test(result.sha256 || '') || typeof result.changes !== 'string') throw Error('Invalid workflow release.');
+  return {status:result.status, version:result.version, sha256:result.sha256, changes:result.changes};
+}
+export async function workflowArchive(env, version) {
+  const release = await videoWorkflow(env);
+  if (release.version !== version) return new Response('A newer release is available. Check for updates again.', {status:409});
+  const archive = await env.PUBLISHER.fetch(new Request(origin + '/v1/workflows/c1994/' + release.sha256 + '.zip', {
+    headers:{Host:new URL(origin).host, Authorization:'Bearer ' + env.C1994_PUBLISH_TOKEN}
+  }));
+  if (!archive.ok) throw Error('Workflow download failed.');
+  return new Response(archive.body, {headers:{'Content-Type':'application/zip', 'Content-Disposition':'attachment; filename="c1994-' + release.version + '.zip"'}});
+}
 export async function checkPublisher(env) {
   const result = await rpc(env, 'tools/list', {});
   if (!['schedule_post','create_video_upload'].every(name => result.tools?.some(tool => tool.name === name))) throw Error('Scheduling is unavailable for this account.');

@@ -1,6 +1,9 @@
 const base = '/coin-review/';
 const $ = id => document.getElementById(id);
 const make = (tag, text, css) => { const el = document.createElement(tag); if (text) el.textContent = text; if (css) el.className = css; return el; };
+window.addEventListener('hashchange', () => {
+  if (/^#[A-Za-z0-9_-]{43}$/.test(location.hash)) location.reload();
+});
 const invite = location.hash.slice(1);
 if (invite) {
   history.replaceState(null, '', location.pathname + location.search);
@@ -10,6 +13,7 @@ if (invite) {
     location.replace(location.pathname);
   } catch (e) { document.body.replaceChildren(make('main', e.message, 'entry')); }
 } else if ($('groups')) {
+  enableWorkflowUpdates();
   const finalStage='Final draft ready for approval and push';
   const draftStage='Draft unfinished';
   const stageFor=t=>[draftStage,finalStage].includes(t.stage) ? t.stage : (['Approved','In review'].includes(t.status) ? finalStage : draftStage);
@@ -169,4 +173,67 @@ if (invite) {
   $('editor').addEventListener('close',()=> { if (!$('editor').open) $('existing').replaceChildren(); });
   $('close').onclick=()=>$('editor').close();
   $('refresh').onclick=load; $('day').onchange=load; await load();
+}
+
+function enableWorkflowUpdates() {
+  const check = $('workflowCheck');
+  if (!check) return;
+  const dialog = $('workflowDialog');
+  let release;
+  function display(data) {
+    release = data;
+    const available = data.status === 'update_available';
+    check.classList.toggle('available', available);
+    check.textContent = available ? 'Update available · Get setup instructions' : 'Check for updates';
+    $('workflowSummary').textContent = available
+      ? data.version + ' is ready to download.' + (data.installed ? ' Last confirmed: ' + data.installed + '.' : ' First installation for Sam.')
+      : data.version + ' is confirmed installed.';
+    $('workflowVersion').textContent = data.version;
+    $('workflowChanges').textContent = data.changes;
+    $('workflowDownload').href = base + 'workflow/archive?version=' + encodeURIComponent(data.version);
+    $('confirmInstall').hidden = !available;
+    $('setupPrompt').value = [
+      'Install the current Coins & Auctions Since 1994 video workflow in this coin project on my workstation. The desk showed ' + data.version + '. Complete the setup in this session.',
+      'Use the existing Fused MCP connection (fused_publish or fused_reel) to call get_video_workflow_update with no arguments to obtain the latest version, download_url and SHA-256. If the connection needs configuration, use the project’s existing FUSED_INSTRUCTIONS_TOKEN environment credential and https://fused-client-instructions.luxraycoco.workers.dev/mcp. Keep the credential out of chat, files you commit and command output.',
+      'Download the ZIP from that exact Fused HTTPS host using the existing bearer credential. Verify its SHA-256 against the MCP result before extracting. Install it in .fused-workflows/<returned-version>/ under this project. Preserve prior versions and my media. If this version is already there, verify its files against the checked archive and reuse it.',
+      'Read the release’s START-HERE.md. From the coin project root, use the project Python environment to run python .fused-workflows/<returned-version>/tools/preview.py check-env, substituting the actual version. Resolve missing dependencies in the project’s local environment and rerun the check. If access or a required permission is missing, tell me exactly what is needed.',
+      'Only after check-env passes, record the exact installed version in .fused-workflows/installed-version.txt, show the bundled example contact sheet and report the version, folder and check result. Use this release for future lot previews, including its lint, scene checks and owner approvals. Stop at setup and preview.'
+    ].join('\n\n');
+  }
+  async function refresh(open = false) {
+    check.disabled = true;
+    try {
+      const response = await fetch(base+'workflow', {cache:'no-store'});
+      if (!response.ok) throw Error();
+      display(await response.json());
+      $('workflowFeedback').textContent = '';
+      if (open) dialog.showModal();
+    } catch {
+      $('workflowSummary').textContent = 'Could not check the current release. Try again.';
+      check.textContent = 'Retry update check';
+      check.classList.remove('available');
+    } finally { check.disabled = false; }
+  }
+  check.onclick = () => refresh(true);
+  $('workflowClose').onclick = () => dialog.close();
+  $('copySetup').onclick = async () => {
+    try {
+      await navigator.clipboard.writeText($('setupPrompt').value);
+      $('workflowFeedback').textContent = 'Copied. Paste into the project chat in Codex.';
+    } catch {
+      $('setupPrompt').focus(); $('setupPrompt').select();
+      $('workflowFeedback').textContent = 'The prompt is selected. Use your browser’s Copy command.';
+    }
+  };
+  $('confirmInstall').onclick = async () => {
+    $('confirmInstall').disabled = true;
+    try {
+      const response = await fetch(base+'workflow',{method:'POST',headers:{'If-Match':release.version}});
+      if (!response.ok) throw Error(await response.text());
+      display(await response.json());
+      $('workflowFeedback').textContent = 'Installation confirmed for Sam’s desk.';
+    } catch (error) { $('workflowFeedback').textContent = error.message; }
+    finally { $('confirmInstall').disabled = false; }
+  };
+  refresh();
 }

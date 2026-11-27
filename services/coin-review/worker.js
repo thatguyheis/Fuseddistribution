@@ -1,5 +1,6 @@
 import guide from './guide.html';
-import { checkPublisher } from './publishing.js';
+import workflowPanel from './workflow-panel.html';
+import { checkPublisher, workflowArchive } from './publishing.js';
 import page from './dashboard.html';
 import css from './dashboard.css';
 import client from './dashboard.client.js';
@@ -48,8 +49,25 @@ export default {
     }
     const cookie = (request.headers.get('Cookie') || '').split(';').map(s => s.trim()).find(s => s.startsWith(cookieName + '='));
     const role = await roleFor(cookie?.slice(cookieName.length + 1), env);
-    if (method === 'GET' && path === root) return respond(role ? page : shell, 200, 'text/html; charset=utf-8');
+    if (method === 'GET' && path === root) return respond(role ? page.replace('<!-- workflow panel -->', role === 'worker' ? workflowPanel : '') : shell, 200, 'text/html; charset=utf-8');
     if (!role) return respond('Open your full invitation link to continue.', 403);
+    if (path === root + 'workflow' || path === root + 'workflow/archive') {
+      if (role !== 'worker') return respond('Sam’s submission link is required.', 403);
+      try {
+        let result;
+        if (path.endsWith('/archive') && method === 'GET') {
+          result = await workflowArchive(env, url.searchParams.get('version'));
+        } else if (path === root + 'workflow' && ['GET','POST'].includes(method)) {
+          const settings = env.DAYS.get(env.DAYS.idFromName('sam-workflow-settings'));
+          result = await settings.fetch(new Request('https://desk.internal/workflow', {
+            method, headers:{'If-Match':request.headers.get('If-Match') || ''}
+          }));
+        } else return respond('Method unavailable.', 405);
+        const output = new Response(result.body, result);
+        for (const [key,value] of Object.entries(headers)) output.headers.set(key,value);
+        return output;
+      } catch { return respond('Could not reach the workflow service. Check again shortly.', 503); }
+    }
     if (path === root + 'project-guide' && method === 'GET') return respond(guide, 200, 'text/html; charset=utf-8');
     if (path === root + 'publisher' && method === 'GET' && role === 'reviewer') {
       try { await checkPublisher(env); return respond('Buffer publisher connected', 200); }

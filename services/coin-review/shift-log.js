@@ -1,4 +1,4 @@
-import { publishPlan, stageVideo, schedule, allScheduled } from './publishing.js';
+import { publishPlan, stageVideo, schedule, allScheduled, videoWorkflow } from './publishing.js';
 const maxFile = 25000000;
 const chunkSize = 512 * 1024;
 const unfinished = 'Draft unfinished';
@@ -48,6 +48,16 @@ export class ShiftLog {
   }
   async fetch(request) {
     const parts = new URL(request.url).pathname.split('/');
+    if (parts[1] === 'workflow') {
+      const installed = await this.storage.get('installedWorkflow');
+      const release = await videoWorkflow(this.env, installed);
+      if (request.method === 'POST') {
+        if (request.headers.get('If-Match') !== release.version) return reply('The release changed. Check for updates before confirming setup.', 409);
+        await this.storage.put('installedWorkflow', release.version);
+        return Response.json({...release, status:'current', installed:release.version});
+      }
+      return Response.json({...release, installed:installed || null});
+    }
     const slot = Number(parts[4]);
     const action = parts[5];
     const role = request.headers.get('X-Desk-Role');
