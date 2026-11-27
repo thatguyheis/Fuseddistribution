@@ -1,5 +1,20 @@
 [
   {
+    "slug": "local-ai-vs-cloud-ai",
+    "title": "Some of Our AI Runs on a Desk, Not in the Cloud",
+    "date": "2026-11-27",
+    "excerpt": "Some of our AI runs on a Mac on a desk. We timed it, watched its network connections, and read what the cloud providers keep.",
+    "tags": [
+      "AI Tools",
+      "SOPs",
+      "Small Business"
+    ],
+    "brand": "tech",
+    "author": "Nick",
+    "image": "/blog/local-ai-vs-cloud-ai/hero.jpg",
+    "imageAlt": "Network connections of our local AI server during a request, showing only a connection from the Mac to itself"
+  },
+  {
     "slug": "swap-the-names-before-you-paste-into-ai",
     "title": "Swap the Names Before You Paste Into AI",
     "date": "2026-11-27",

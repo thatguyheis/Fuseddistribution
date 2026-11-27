@@ -1,0 +1,23 @@
+{
+  "slug": "local-ai-vs-cloud-ai",
+  "accessedAt": "2026-11-27",
+  "sources": [
+    {
+      "url": "https://developers.openai.com/api/docs/guides/your-data",
+      "quote": "data sent to the OpenAI API is not used to train or improve OpenAI models",
+      "accessed": "2026-11-26"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/your-data",
+      "quote": "By default, abuse monitoring logs are generated for all API feature usage and retained for up to 30 days",
+      "accessed": "2026-11-26"
+    },
+    {
+      "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+      "quote": "we automatically delete inputs and outputs on our backend within 30 days of receipt or generation",
+      "accessed": "2026-11-26"
+    }
+  ],
+  "localEvidence": "Fused Tech Reels/Raw/evidence/T-23 - Local AI vs cloud AI: local/runs.jsonl, local/sockets_*.txt, results.md, cloud_sources.md. gemma-e2b,gpu, temperature 0, 2026-11-26 21:07 PST.",
+  "notes": "Built and published by Claude nightly 2026-11-26 for 2026-11-27. 17 x 24 = 372 from T-21 evidence (2026-11-25)."
+}

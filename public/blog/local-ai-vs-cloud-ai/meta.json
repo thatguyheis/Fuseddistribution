@@ -1,0 +1,33 @@
+{
+  "title": "Some of Our AI Runs on a Desk, Not in the Cloud",
+  "slug": "local-ai-vs-cloud-ai",
+  "brand": "tech",
+  "description": "We timed one task on our local AI and watched its network connections. Then we read what two cloud providers say happens to your text.",
+  "ogDescription": "Our local AI answered in about two seconds and its only connection was the Mac to itself. Here's when we still use the cloud.",
+  "date": "2026-11-27",
+  "tags": [
+    "AI Tools",
+    "SOPs",
+    "Small Business"
+  ],
+  "alt": "Network connections of our local AI server during a request, showing only a connection from the Mac to itself",
+  "ctaLine": "Private and simple stays local.",
+  "contentGraphic": {
+    "label": "One task, November 26, 2026",
+    "rows": [
+      {
+        "condition": "Local AI, three runs",
+        "action": "2.28 s, 2.01 s, 1.98 s"
+      },
+      {
+        "condition": "Connections out of the Mac",
+        "action": "None seen"
+      },
+      {
+        "condition": "OpenAI API abuse logs",
+        "action": "Kept up to 30 days by default"
+      }
+    ]
+  },
+  "author": "Nick"
+}
