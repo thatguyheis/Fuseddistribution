@@ -1,13 +1,17 @@
+import { publishPlan, stageVideo, schedule, allScheduled } from './publishing.js';
 const maxFile = 25000000;
 const chunkSize = 512 * 1024;
-const stages = ['Sourcing', 'Gate 1', 'Voice and scenes', 'Gate 2', 'Rendering', 'Quality check', 'In progress', 'Blocked'];
-const allowed = ['video/mp4', 'application/zip', 'image/jpeg', 'image/png'];
+const unfinished = 'Draft unfinished';
+const final = 'Final draft ready for approval and push';
+const projectTypes = ['Finished video', 'Intro', 'Outro', 'Raw files'];
+const allowed = ['video/mp4', 'application/zip', 'image/jpeg', 'image/png', 'image/webp', 'video/quicktime'];
 const reply = (message, status) => new Response(message, { status });
 const conflict = () => reply('This item changed. Refresh the log before editing it again.', 409);
 const clean = (value, max) => typeof value === 'string' && value.length <= max ? value.trim() : null;
 function fileMatches(type, bytes) {
   const sig = (...values) => values.every((v, i) => bytes[i] === v);
-  if (type === 'video/mp4') return bytes.length >= 12 && String.fromCharCode(...bytes.slice(4, 8)) === 'ftyp';
+  if (type === 'image/webp') return sig(82,73,70,70) && String.fromCharCode(...bytes.slice(8,12)) === 'WEBP';
+  if (type === 'video/mp4' || type === 'video/quicktime') return bytes.length >= 12 && String.fromCharCode(...bytes.slice(4, 8)) === 'ftyp';
   if (type === 'application/zip') return sig(80, 75, 3, 4) || sig(80, 75, 5, 6);
   if (type === 'image/jpeg') return sig(255, 216, 255);
   return type === 'image/png' && sig(137, 80, 78, 71, 13, 10, 26, 10);
@@ -20,19 +24,10 @@ function mediaRange(header, size) {
   const end = match[1] && match[2] ? Math.min(Number(match[2]), size - 1) : size - 1;
   return start <= end && start < size ? [start, end] : null;
 }
-function catalogUrl(input) {
-  if (!input) return '';
-  try {
-    const url = new URL(input);
-    if (url.protocol === 'https:' && !url.username && !url.password && !url.port && url.hostname === 'auctions.coinssince1994.com') {
-      url.hash = '';
-      return url.toString();
-    }
-  } catch {}
-  return null;
-}
 export class ShiftLog {
-  constructor(ctx) {
+  constructor(ctx, env) {
+    this.env = env;
+    this.publishing = new Set();
     this.storage = ctx.storage;
     this.sql = ctx.storage.sql;
     this.sql.exec('CREATE TABLE IF NOT EXISTS tasks (slot INTEGER PRIMARY KEY, data TEXT NOT NULL)');
@@ -60,15 +55,21 @@ export class ShiftLog {
     if (!slot) return reply('Not found', 404);
     const task = this.get(slot);
     if (request.method === 'GET' && action === 'media') return this.play(task, request);
-    if (request.method !== 'POST' || (action === 'decision' ? role !== 'reviewer' : role !== 'worker')) return reply('Forbidden', 403);
+    if (request.method !== 'POST' || (['decision','publish'].includes(action) ? role !== 'reviewer' : role !== 'worker')) return reply('Forbidden', 403);
     if (String(task.version) !== request.headers.get('If-Match')) return conflict();
     if (action === 'media') return this.upload(task, request);
+    if (action === 'submit') {
+      if (!task.media || task.stage !== final || ['Approved','In review'].includes(task.status)) return conflict();
+      if ((task.slot <= 5 || task.projectType === 'Finished video') && task.type !== 'video/mp4') return reply('Attach a finished MP4.', 400);
+      return this.save({ ...task, status:'In review' });
+    }
     const length = Number(request.headers.get('Content-Length'));
-    if (!length || length > 12000) return reply('Invalid form size.', 400);
+    if (!length || length > 28000) return reply('Invalid form size.', 400);
     let input;
     try { input = await request.json(); } catch { return reply('Invalid form.', 400); }
     if (!input || typeof input !== 'object') return reply('Invalid form.', 400);
     if (this.get(slot).version !== task.version) return conflict();
+    if (action === 'publish') return this.publish(task, input);
     if (action === 'decision') {
       if (task.status !== 'In review') return conflict();
       const note = clean(input.feedback, 1200);
@@ -79,18 +80,53 @@ export class ShiftLog {
     const title = clean(input.title, 160);
     const notes = clean(input.notes, 1200);
     const lot = clean(input.lot || '', 30);
-    const source = catalogUrl(clean(input.source || '', 1500) ?? 'invalid');
-    if (!title || notes === null || lot === null || source === null || !stages.includes(input.stage)) return reply('Check the title, stage and official catalog link.', 400);
-    if (slot <= 5 && (!lot || !source)) return reply('Enter the lot number and its official listing link.', 400);
-    if (slot <= 5 && this.list().some(other => other.slot !== slot && other.slot <= 5 && (other.source === source || other.lot.toLowerCase() === lot.toLowerCase()))) return reply('That lot already has a row in this shift.', 409);
-    return this.save({ ...task, title, lot, source, notes, stage: input.stage, status: task.status === 'Changes requested' ? task.status : 'Draft' });
+    const hook = clean(input.hook ?? '', 1000);
+    const cta = clean(input.cta ?? '', 1000);
+    const projectType = slot > 5 ? input.projectType : '';
+    if (!title || notes === null || lot === null || hook === null || cta === null || ![unfinished, final].includes(input.stage)) return reply('Check the title and workflow step.', 400);
+    if (slot > 5 && !projectTypes.includes(projectType)) return reply('Choose a specialized project type.', 400);
+    if (slot <= 5 && !lot) return reply('Enter a lot number.', 400);
+    if (slot <= 5 && this.list().some(other => other.slot !== slot && other.slot <= 5 && other.lot?.toLowerCase() === lot.toLowerCase())) return reply('That lot already has a row in this shift.', 409);
+    if (input.stage === final && (slot <= 5 || projectType === 'Finished video') && (!hook || !cta)) return reply('Paste the hook and CTA for the finished video.', 400);
+    return this.save({ ...task, title, lot, hook, cta, projectType, notes, stage: input.stage, status: task.status === 'Changes requested' ? task.status : 'Draft' });
+  }
+  async publish(task, input) {
+    if (!['Approved', 'In review'].includes(task.status) || task.type !== 'video/mp4' || (task.projectType && task.projectType !== 'Finished video')) return reply('Only a finished MP4 can be pushed to Buffer.', 400);
+    if (this.publishing.has(task.slot)) return reply('Scheduling is already in progress. Refresh shortly.', 409);
+    if (task.publication?.state === 'Scheduled') return Response.json(task);
+    let plan;
+    try { plan = publishPlan(input); } catch (error) { return reply(error.message, 400); }
+    const publication = task.publication || {};
+    if (publication.attempted && publication.plan.channels.slice().sort().join() !== plan.channels.slice().sort().join()) return reply('Keep the original channels when retrying a push.', 400);
+    if (publication.expires && Date.parse(plan.due_at) > Date.parse(publication.expires) - 3600000 && publication.attempted) return reply('This staged video expires too early. Check its existing posts in Buffer before scheduling another copy.', 409);
+    this.publishing.add(task.slot);
+    task.status = 'Approved';
+    task.publication = publication;
+    Object.assign(publication, { plan, state:'Sending', message:'' });
+    this.save(task);
+    try {
+      if (!publication.videoId || (!publication.attempted && Date.parse(publication.expires) < Date.parse(plan.due_at) + 3600000)) {
+        const bytes = await this.play(task, new Request('https://desk.internal/media')).arrayBuffer();
+        Object.assign(publication, await stageVideo(this.env, task, bytes));
+      }
+      // Persist the stable video ID before any external scheduling attempt. The publisher
+      // deduplicates each video/channel even if this request ends before the receipt arrives.
+      publication.attempted = true;
+      this.save(task);
+      publication.posts = await schedule(this.env, publication, plan);
+      publication.state = allScheduled(plan, publication.posts) ? 'Scheduled' : 'Needs attention';
+    } catch (error) {
+      publication.state = 'Needs attention';
+      publication.message = error.message.slice(0, 320);
+    } finally { this.publishing.delete(task.slot); }
+    return this.save(task);
   }
   async upload(task, request) {
     if (!task.title || ['Approved','In review'].includes(task.status)) return conflict();
     const size = Number(request.headers.get('Content-Length'));
     const type = request.headers.get('Content-Type');
     if (!Number.isInteger(size) || size < 12 || size >= maxFile) return reply('Choose a file smaller than 25 MB.', 413);
-    if (!allowed.includes(type) || (task.slot <= 5 && type !== 'video/mp4')) return reply('Unsupported file type.', 415);
+    if (!allowed.includes(type) || ((task.slot <= 5 || task.projectType === 'Finished video') && type !== 'video/mp4')) return reply('Unsupported file type.', 415);
     const reader = request.body?.getReader();
     if (!reader) return reply('Missing file.', 400);
     const id = crypto.randomUUID();
@@ -119,7 +155,7 @@ export class ShiftLog {
       }
       if (total !== size || (used && !write())) return reply('Incomplete or invalid file.', 400);
       if (this.get(task.slot).version !== task.version) return conflict();
-      const response = this.save({ ...task, media: id, size, type, status: 'In review' });
+      const response = this.save({ ...task, media: id, size, type, status: task.stage === final ? 'In review' : 'Draft' });
       saved = true;
       return response;
     } finally {
@@ -138,6 +174,10 @@ export class ShiftLog {
     const headers = { 'Content-Type': task.type, 'Accept-Ranges': 'bytes', 'Content-Length': String(last - first + 1) };
     if (range) headers['Content-Range'] = 'bytes ' + first + '-' + last + '/' + task.size;
     if (task.type === 'application/zip') headers['Content-Disposition'] = 'attachment; filename="project-assets.zip"';
+    if (new URL(request.url).searchParams.has('download')) {
+      const ext = { 'image/jpeg':'jpg','image/png':'png','image/webp':'webp','video/mp4':'mp4','video/quicktime':'mov','application/zip':'zip' }[task.type];
+      headers['Content-Disposition'] = 'attachment; filename="' + (task.title.replace(/[^a-zA-Z0-9_-]/g,'-').slice(0,80) || 'asset') + '.' + ext + '"';
+    }
     let pos = first;
     const sql = this.sql;
     const stream = new ReadableStream({

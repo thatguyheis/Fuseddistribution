@@ -10,7 +10,9 @@ if (invite) {
     location.replace(location.pathname);
   } catch (e) { document.body.replaceChildren(make('main', e.message, 'entry')); }
 } else if ($('groups')) {
-  const stages = ['Sourcing','Gate 1','Voice and scenes','Gate 2','Rendering','Quality check','In progress','Blocked'];
+  const finalStage='Final draft ready for approval and push';
+  const draftStage='Draft unfinished';
+  const stageFor=t=>[draftStage,finalStage].includes(t.stage) ? t.stage : (['Approved','In review'].includes(t.status) ? finalStage : draftStage);
   let role, tasks = [], selected, day, busy = false;
   const api = async (path = '', options) => {
     const res = await fetch(base + 'days/' + day + path, options);
@@ -20,7 +22,7 @@ if (invite) {
   const today = new Intl.DateTimeFormat('en-CA', { timeZone:'America/Los_Angeles', year:'numeric',month:'2-digit',day:'2-digit' }).formatToParts(new Date());
   const field = part => today.find(p => p.type === part).value;
   $('day').value = [field('year'),field('month'),field('day')].join('-');
-  for (const name of stages) $('stage').add(new Option(name,name));
+
   function draw() {
     $('role').textContent = role === 'reviewer' ? 'Nick · Reviewer' : 'Sam · Production';
     $('groups').replaceChildren();
@@ -36,9 +38,9 @@ if (invite) {
         const label = make('span');
         const desc = slot <= 5 ? 'Lot video ' + slot : 'Project ' + (slot-5);
         label.append(make('b', t.title || desc));
-        if (t.title) label.append(make('small',[t.lot ? 'Lot ' + t.lot : desc,t.stage].filter(Boolean).join(' · ')));
+        if (t.title) label.append(make('small',[t.lot ? 'Lot ' + t.lot : desc,t.projectType,stageFor(t)].filter(Boolean).join(' · ')));
         const css = {'In review':'pending','Approved':'approved','Changes requested':'changes'}[t.status] || '';
-        b.append(label,make('span',t.status,'tag ' + css));
+        b.append(label,make('span',t.publication?.state ? 'Buffer · '+t.publication.state : t.status,'tag ' + css));
         b.onclick = () => open(t,desc);
         group.append(b);
       }
@@ -67,56 +69,104 @@ if (invite) {
     $('taskForm').reset(); $('actions').replaceChildren(); $('existing').replaceChildren(); $('formMsg').textContent='';
     $('slotLabel').textContent=desc + ' · ' + t.status;
     $('taskHeading').textContent=t.title || desc;
-    for (const id of ['title','lot','source','notes','stage']) {
-      $(id).value=t[id] || (id==='stage' ? (t.slot<=5?'Sourcing':'In progress') : '');
+    for (const id of ['title','lot','hook','cta','notes','stage','projectType']) {
+      $(id).value = id==='stage' ? stageFor(t) : id==='projectType' ? (t.projectType || (t.type && t.type!=='video/mp4' ? 'Raw files':'Finished video')) : t[id] || '';
       $(id).disabled=!canEdit;
     }
     $('lotFields').hidden=t.slot>5;
-    $('lot').required=$('source').required=t.slot<=5;
+    $('projectFields').hidden=t.slot<=5;
+    $('lot').required=t.slot<=5;
     $('previous').hidden=!t.feedback;
     $('previous').textContent=t.feedback ? 'Reviewer feedback · ' + t.feedback : '';
     $('uploadControls').hidden=!canEdit;
     $('reviewControls').hidden=role!=='reviewer' || t.status!=='In review';
-    $('file').accept=t.slot<=5 ? '.mp4' : '.mp4,.zip,.png,.jpg,.jpeg';
-    $('formats').textContent=t.slot<=5 ? 'MP4 video' : 'MP4 video, ZIP asset kit, JPEG or PNG';
+    function configureEntry() {
+      const reel=t.slot<=5 || $('projectType').value==='Finished video';
+      const ready=$('stage').value===finalStage;
+      $('hook').required=$('cta').required=canEdit && reel && ready;
+      $('file').accept=reel ? '.mp4' : '.mp4,.mov,.zip,.png,.jpg,.jpeg,.webp';
+      $('formats').textContent=reel ? 'MP4 video' : 'Upload an image, video or ZIP. Bundle multiple raw files and their credits in one ZIP.';
+      if (canEdit) {
+        $('actions').replaceChildren();
+        action(ready ? 'Submit for review' : 'Save unfinished draft', ready ? 'submit':'save');
+      }
+    }
+    configureEntry();
+    $('stage').onchange=$('projectType').onchange=configureEntry;
+    const pub=t.publication;
+    const plan=pub?.plan;
+    $('bufferControls').hidden=role!=='reviewer' || !['Approved','In review'].includes(t.status) || t.type!=='video/mp4' || (t.projectType && t.projectType!=='Finished video') || pub?.state==='Scheduled';
+    $('bufferControls').open=false;
+    $('bufferControls').querySelector('button').disabled=$('bufferControls').hidden;
+    $('bufferControls').querySelector('button').textContent=pub?.attempted ? 'Retry Buffer push' : t.status==='Approved' ? 'Push to Buffer' : 'Approve and push to Buffer';
+    $('receipt').hidden=!pub;
+    $('receipt').textContent=pub ? ['Buffer · '+pub.state,pub.message,...(pub.posts || []).map(p=>[p.service,p.status,p.due_at,p.post_id,p.error].filter(Boolean).join(' · '))].filter(Boolean).join('\n') : '';
+    $('caption').value=plan?.caption ?? ([t.hook || t.title,t.cta,t.slot<=5?'https://auctions.coinssince1994.com':''].filter(Boolean).join('\n\n'));
+    $('ytTitle').value=plan?.youtube_title ?? (t.title || '').slice(0,100);
+    $('timezone').textContent=Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (plan?.due_at) {
+      const d=new Date(plan.due_at);
+      $('due').value=new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16);
+    }
+    for(const box of document.querySelectorAll('.channels input')) {
+      box.checked=plan ? plan.channels.includes(box.value) : true;
+      box.disabled=!!pub?.attempted;
+    }
     if (t.media) {
       const src=base+'days/'+day+'/'+t.slot+'/media?v='+encodeURIComponent(t.media);
-      if (t.type==='video/mp4') {
+      if (t.type.startsWith('video/')) {
         const v=make('video'); v.controls=true; v.preload='metadata'; v.playsInline=true; v.src=src; $('existing').append(v);
       } else if (t.type.startsWith('image/')) {
         const i=make('img'); i.alt=t.title; i.src=src; $('existing').append(i);
-      } else { const a=make('a','Download submitted ZIP'); a.href=src; $('existing').append(a); }
+      }
+      const link=make('a','Download submitted file'); link.href=src+'&download=1'; $('existing').append(link);
     }
-    if (canEdit) { action('Save work log','save',true); action('Submit for review','submit'); }
+
     if (!$('reviewControls').hidden) { action('Request changes','changes',true); action('Approve','approve'); }
     $('editor').showModal();
   }
   $('taskForm').onsubmit=async e=>{
     e.preventDefault(); if (busy) return;
     const intent=e.submitter?.value;
-    if (!intent) return;
+    if (!intent || (intent==='publish' && (!$('bufferControls').open || $('bufferControls').hidden))) return;
     const route='/'+selected.slot;
     const send=(path,body)=>api(route+path,{method:'POST',headers:{'Content-Type':'application/json','If-Match':String(selected.version)},body:JSON.stringify(body)});
-    busy=true; $('actions').querySelectorAll('button').forEach(b=>b.disabled=true); $('close').disabled=true;
+    busy=true; $('bufferControls').querySelector('button').disabled=true; $('actions').querySelectorAll('button').forEach(b=>b.disabled=true); $('close').disabled=true;
     try {
-      if (['changes','approve'].includes(intent)) {
+      if (intent==='publish') {
+        const due = new Date($('due').value);
+        if (!Number.isFinite(+due)) throw Error('Choose a publishing date and time.');
+        const data = await send('/publish',{caption:$('caption').value, youtube_title:$('ytTitle').value,
+          channels:Array.from(document.querySelectorAll('.channels input:checked'), box=>box.value),due_at:due.toISOString()});
+        if (data.publication?.state!=='Scheduled') {
+          $('editor').close();
+          await load();
+          open(data, $('slotLabel').textContent.split(' · ')[0]);
+          $('bufferControls').open=true;
+          $('formMsg').textContent=data.publication?.message || 'Check the channel results before retrying.';
+          return;
+        }
+      } else if (['changes','approve'].includes(intent)) {
         await send('/decision',{status:intent==='approve'?'Approved':'Changes requested', feedback:$('feedback').value});
       } else {
         const f=$('file').files[0];
-        if (intent==='submit' && (!f || f.size<12 || f.size>=25000000)) throw Error('Choose a finished file smaller than 25 MB.');
-        selected=await send('',Object.fromEntries(['title','lot','source','notes','stage'].map(k=>[k,$(k).value])));
-        if (intent==='submit') {
-          const types={mp4:'video/mp4',zip:'application/zip',jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png'};
+        if (intent==='submit' && !f && !selected.media) throw Error('Choose the finished file to submit.');
+        if (f && (f.size<12 || f.size>=25000000)) throw Error('Choose a file smaller than 25 MB.');
+        selected=await send('',Object.fromEntries(['title','lot','hook','cta','notes','stage','projectType'].map(k=>[k,$(k).value])));
+        if (f) {
+          const types={mp4:'video/mp4',mov:'video/quicktime',zip:'application/zip',jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',webp:'image/webp'};
           $('formMsg').textContent='Uploading file…';
           await api(route+'/media',{method:'POST',headers:{'Content-Type':types[f.name.split('.').pop().toLowerCase()]||'application/octet-stream','If-Match':String(selected.version)},body:f});
+        } else if (intent==='submit') {
+          await send('/submit',{});
         }
       }
       $('editor').close(); await load();
     } catch(err) { $('formMsg').textContent=err.message; }
-    finally { busy=false; $('close').disabled=false; $('actions').querySelectorAll('button').forEach(b=>b.disabled=false); }
+    finally { busy=false; $('bufferControls').querySelector('button').disabled=$('bufferControls').hidden; $('close').disabled=false; $('actions').querySelectorAll('button').forEach(b=>b.disabled=false); }
   };
   $('editor').addEventListener('cancel',e=>{if (busy) e.preventDefault();});
-  $('editor').addEventListener('close',()=> $('existing').replaceChildren());
+  $('editor').addEventListener('close',()=> { if (!$('editor').open) $('existing').replaceChildren(); });
   $('close').onclick=()=>$('editor').close();
   $('refresh').onclick=load; $('day').onchange=load; await load();
 }

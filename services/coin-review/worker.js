@@ -1,3 +1,5 @@
+import guide from './guide.html';
+import { checkPublisher } from './publishing.js';
 import page from './dashboard.html';
 import css from './dashboard.css';
 import client from './dashboard.client.js';
@@ -48,7 +50,12 @@ export default {
     const role = await roleFor(cookie?.slice(cookieName.length + 1), env);
     if (method === 'GET' && path === root) return respond(role ? page : shell, 200, 'text/html; charset=utf-8');
     if (!role) return respond('Open your full invitation link to continue.', 403);
-    const route = /^\/coin-review\/days\/(\d{4}-\d{2}-\d{2})(?:\/([1-8])(?:\/(media|decision))?)?$/.exec(path);
+    if (path === root + 'project-guide' && method === 'GET') return respond(guide, 200, 'text/html; charset=utf-8');
+    if (path === root + 'publisher' && method === 'GET' && role === 'reviewer') {
+      try { await checkPublisher(env); return respond('Buffer publisher connected', 200); }
+      catch { return respond('Buffer publisher unavailable', 503); }
+    }
+    const route = /^\/coin-review\/days\/(\d{4}-\d{2}-\d{2})(?:\/([1-8])(?:\/(media|decision|publish|submit))?)?$/.exec(path);
     if (!route || !validDay(route[1])) return respond('Not found', 404);
     const trusted = new Request(request);
     trusted.headers.set('X-Desk-Role', role);

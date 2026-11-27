@@ -4,6 +4,7 @@
   "compatibility_date": "2026-11-09",
   "workers_dev": false,
   "preview_urls": false,
+  "services": [{ "binding": "PUBLISHER", "service": "fused-client-instructions" }],
   "routes": [{ "pattern": "fuseddistribution.com/coin-review/*", "zone_name": "fuseddistribution.com" }],
   "durable_objects": { "bindings": [{ "name": "DAYS", "class_name": "ShiftLog" }] },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["ShiftLog"] }],
